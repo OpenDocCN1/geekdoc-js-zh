@@ -528,7 +528,7 @@ console.log(nextStudent);
 
 
 
-在作用域的开始，如果任何标识符来自函数声明，该变量将自动初始化为其关联的函数引用。如果任何标识符来自 `var`我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。声明（相对于 `let/const`），该变量将自动初始化为 `undefined` 以便使用；否则，变量将保持未初始化状态（即处于“暂时性死区”TDZ），直到其完整的声明和初始化执行完毕。
+在作用域的开始，如果任何标识符来自函数声明，该变量将自动初始化为其关联的函数引用。如果任何标识符来自 `var` 声明（相对于 `let/const`），该变量将自动初始化为 `undefined` 以便使用；否则，变量将保持未初始化状态（即处于“暂时性死区”TDZ），直到其完整的声明和初始化执行完毕。
 
 在 `for (let student of students) {` 语句中，`students` 是一个必须查找的源引用。但这种查找将如何处理呢，因为函数作用域找不到这样的标识符？
 
@@ -1611,7 +1611,8 @@ const studentName = "Suzy";
 
 这看起来像是一条简单的告诫，直到你考虑到循环中重复执行声明语句意味着什么。考虑一下：
 
-```javascript我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。var keepGoing = true;
+```javascript
+var keepGoing = true;
 while (keepGoing) {
   let value = Math.random();
   if (value > 0.5) {
@@ -3137,7 +3138,8 @@ student();
 
 仅仅存在但从未被访问的变量不会产生闭包：
 
-```javascript我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。function lookupStudent(studentID) {
+```javascript
+function lookupStudent(studentID) {
   return function nobody(){
     var msg = "Nobody's here.";
     console.log(msg);

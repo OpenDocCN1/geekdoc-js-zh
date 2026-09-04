@@ -1467,7 +1467,8 @@ height: 400px;
 
 
 
-```xml我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。<?xml version="1.0" encoding="UTF-8?>
+```xml
+<?xml version="1.0" encoding="UTF-8?>
 <rss version="2.0" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84#"
 xmlns:ymaps="http://api.maps.yahoo.com/Maps/VI/AnnotatedMaps.xsd">
 <channel>
@@ -1981,7 +1982,7 @@ JavaScript 成功以及今天普及的关键之一是它使用的简单语法。
 
 
 
-#我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。第8章
+# 第8章
 
 Flash 地图支持自定义 SWF 流、叠加和标记。正如你将在接下来的章节中学到的，这使你能够在你的组合（mashup）中引入真正独特且有效的元素。SWF 是 Flash 的编译输出，通常意味着在其他 Web 技术中无法比拟的交互式和动态元素。
 
@@ -7966,7 +7967,8 @@ public function removeTrafficOverlay():void
 
 
 
-```xml我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。<?xml version="1.0" encoding="utf-8"?>
+```xml
+<?xml version="1.0" encoding="utf-8"?>
 <mxml:Application xmlns="http://www.adobe.com/2006/mxml" horizontalAlign="center" verticalAlign="middle" xmlns:local="***">
 
 <!-- Create MapConnector namespace from local connection class -->

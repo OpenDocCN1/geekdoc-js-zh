@@ -2067,7 +2067,7 @@ Popover API 解决了所有这些问题。只需两个属性，你就能获得�
 
 这里发生的是：
 
--我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。在关闭状态下，弹出层向上偏移且完全透明。
+- 在关闭状态下，弹出层向上偏移且完全透明。
 - 当打开时（`:popover-open`），它移动到位置并淡入。
 - `@starting-style` 定义了进入过渡开始的帧。
 - `transition-behavior: allow-discrete` 允许在弹出层从 DOM 流中移除之前播放关闭动画。

@@ -1,5 +1,5 @@
 
-# 使用 MEAN 栈编写现代 Web 应用：Mongo、Express、AngularJS 和 Node.js：开发与设计我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。987654321
+# 使用 MEAN 栈编写现代 Web 应用：Mongo、Express、AngularJS 和 Node.js：开发与设计 987654321
 
 送给爸爸妈妈，
 
@@ -243,7 +243,7 @@ Yammer（微软旗下）是首批宣传它的团队之一。根据 `davetech.com
 
 
 
-PayPal 一直我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。 Node.js 在企业界的头号粉丝。它甚至举办了第一场专门针对企业的 Node 会议（NodeDay）。PayPal 用户体验总监 Bill Scott 多次评论 Node 如何让产品能够多次迭代。PayPal 的开发速度之快，以至于他的团队会同时开发四个或五个不同的产品，并实施其中最好的。在 Java 时代，他们会将所有的鸡蛋都放在一个篮子里，而且结果是成功了。
+PayPal 一直  Node.js 在企业界的头号粉丝。它甚至举办了第一场专门针对企业的 Node 会议（NodeDay）。PayPal 用户体验总监 Bill Scott 多次评论 Node 如何让产品能够多次迭代。PayPal 的开发速度之快，以至于他的团队会同时开发四个或五个不同的产品，并实施其中最好的。在 Java 时代，他们会将所有的鸡蛋都放在一个篮子里，而且结果是成功了。
 
 最重要的是，企业组织终于找到了一个开发者喜欢的工作平台。如今开发者很难找寻，留住优秀的人意味着要让他们保持开心。JavaScript 拥有一个热情的社区，这个社区已经迅速成长为最大的开源社区。
 
@@ -878,7 +878,7 @@ $scope.posts = [
 
 
 
-在下一章中，你将为此应用程序构建一个 API 来持久化帖子。然后在第我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。5 章中，你会将此 Angular 应用与你构建的 Node API 集成。
+在下一章中，你将为此应用程序构建一个 API 来持久化帖子。然后在第 5 章中，你会将此 Angular 应用与你构建的 Node API 集成。
 
 # 第 4 章：构建 Node.js API
 
@@ -2151,7 +2151,7 @@ var token = jwt.encode({username: 'dickeyxxxx'}, 'supersecretkey')
 
 `eJ1c1c2YVmFtZS6ImRpRy2tZlh4Ec39.01R5He-k2RyvFZ6_JBOTAg90EeczndumWEgc`
 
-它包含了你传递给`encode`第一个参数的对象，并我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。第二个参数进行签名。重要的是要理解 JWT 并不加密该对象，只是对其进行签名。我将利用本部分的剩余部分来解释 JWT 的底层工作原理。如果这对你来说太复杂了也没关系；重要的是理解 JWT 是签名而非加密，而不是它是如何工作的。
+它包含了你传递给`encode`第一个参数的对象，并 第二个参数进行签名。重要的是要理解 JWT 并不加密该对象，只是对其进行签名。我将利用本部分的剩余部分来解释 JWT 的底层工作原理。如果这对你来说太复杂了也没关系；重要的是理解 JWT 是签名而非加密，而不是它是如何工作的。
 
 所有的 JWT 都被分为三个部分，用点（`.`）分隔开。
 
@@ -2504,7 +2504,7 @@ app.post('/session', function (req, res, next) {
 
 
 
-首先，它使用 Mongoose 的`findOne()`方法查找匹配的用户名。如果找到了，它会将密码与发送进的密码进行比我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。。如果一切成功，它将构建一个 JWT 并将其返回，否则发送 401 头部或错误响应。你可以像之前一样继续使用`curl`。
+首先，它使用 Mongoose 的`findOne()`方法查找匹配的用户名。如果找到了，它会将密码与发送进的密码进行比 。如果一切成功，它将构建一个 JWT 并将其返回，否则发送 401 头部或错误响应。你可以像之前一样继续使用`curl`。
 
 现在将`GET /user`端点更新为数据库查找也变得简单：
 
@@ -2840,7 +2840,8 @@ router.post('/', function (req, res, next) {
 
 
 
-```javascript我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。res.json(201, post)
+```javascript
+res.json(201, post)
 ```
 
 现在你在 Angular 应用中需要做的更改很简单；你只需要在创建帖子的请求中发送 `X-Auth` 头部。你可以直接将其添加到 posts 控制器中，但更好的方法是全局地为所有请求添加该头部，这样你就不需要一直记住要这样做了。更新`ng/user.svc.js`为以下代码：
@@ -3613,7 +3614,8 @@ describe('making a post', function () {
 
 
 
-```javascript我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。browser.get('http://localhost:3001')
+```javascript
+browser.get('http://localhost:3001')
 ```
 
 现在你应该能够无错误地运行测试服务器和开发服务器了。
@@ -3997,7 +3999,8 @@ describe('controllers.api.posts', function () {
 
 
 
-```javascript我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。beforeEach(function (done) {
+```javascript
+beforeEach(function (done) {
   Post.remove({})
 })
 
@@ -4641,7 +4644,7 @@ describe('posts.ctrl', function () {
 
 ## 测试间谍（TESTING SPIES）
 
-在到目前为止构建的测试中，你只是在检查数据是否已填充。然而，有时你需要检查函数是否被调用过。间谍（Spies）我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。完成这项任务的有用工具。间谍封装了一个现有函数，并可以告诉你是否有东西调用了它，以及使用了什么参数。JavaScript 中最流行的间谍工具是 Sinon，Sinon 与 Mocha 和 Chai 集成得非常好。
+在到目前为止构建的测试中，你只是在检查数据是否已填充。然而，有时你需要检查函数是否被调用过。间谍（Spies） 完成这项任务的有用工具。间谍封装了一个现有函数，并可以告诉你是否有东西调用了它，以及使用了什么参数。JavaScript 中最流行的间谍工具是 Sinon，Sinon 与 Mocha 和 Chai 集成得非常好。
 
 首先在以下位置安装 `karma-sinon-chai` 插件：
 
@@ -5320,7 +5323,8 @@ workerIds().forEach(function (id) {
 
 
 
-```text我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。Aug 23 23:09:42 mean-sample-social-app[3044]: Server 3146 listening on 3000
+```text
+Aug 23 23:09:42 mean-sample-social-app[3044]: Server 3146 listening on 3000
 Aug 23 23:09:52 mean-sample-social-app[3044]: Client connected
 Aug 23 23:09:56 mean-sample-social-app[3044]: restarting all workers
 Aug 23 23:10:02 mean-sample-social-app[3044]: stopping 3146

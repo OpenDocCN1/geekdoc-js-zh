@@ -895,7 +895,7 @@ close(XML_FILE);
 
 
 
-现在我们已经我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。 `XML::Simple` 模块有了高层理解，让我们详细查看列表 2.9 所示的将输入 XML 文件转换为 HTML 的程序。
+现在我们已经  `XML::Simple` 模块有了高层理解，让我们详细查看列表 2.9 所示的将输入 XML 文件转换为 HTML 的程序。
 
 ### 问题：生成和解析 XML 文档
 
@@ -1172,7 +1172,7 @@ $VAR = {
 
 
 
-这些解析器非常快速且高效，因为它们简单地读取 XML我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。并分块（chunks）将数据返回给程序。应用程序随后决定如何处理这些数据块——处理它们或丢弃它们——并允许解析器继续运行。这些操作一直持续，直到所有 XML 数据被读取完毕，或者解析器退出（由于错误或用户定义的命令）。
+这些解析器非常快速且高效，因为它们简单地读取 XML 并分块（chunks）将数据返回给程序。应用程序随后决定如何处理这些数据块——处理它们或丢弃它们——并允许解析器继续运行。这些操作一直持续，直到所有 XML 数据被读取完毕，或者解析器退出（由于错误或用户定义的命令）。
 
 现在我们已经讨论了 XML 解析器背后的一些理论，让我们来看一些示例。
 
@@ -2512,7 +2512,8 @@ sub start_element {
 
 - 使用`require_feature`函数设置解析器必须支持的功能。此方法将查询 SAX.ini 中的所有解析器，并返回支持这些功能的最后一个安装的解析器，如下所示：
 
-```perl我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。use XML::SAX::ParserFactory;
+```perl
+use XML::SAX::ParserFactory;
 
 my $factory = XML::SAX::ParserFactory->new();
 
@@ -3621,7 +3622,8 @@ sub end_element {
 
 
 
-```perl我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。sub end_document {
+```perl
+sub end_document {
     $total_transactions = $deposit_count + $withdrawal_count;
     $output_dep = sprintf("%.2f", $total_deps);
     $output_wd = sprintf("%.2f", $total_withdrawals);
@@ -4159,7 +4161,8 @@ $db_server[0]{hostname}
 
 
 
-```text我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。Configuration Information
+```text
+Configuration Information
 User: mark
 Password: mark's password
 
@@ -4429,7 +4432,7 @@ DOM 是一个独立于平台和编程语言的标准，旨在提供一种支持 
 
 
 
-# XML::DOM我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。模块应用示例
+# XML::DOM 模块应用示例
 
 ## 网络嗅探器日志格式
 
@@ -4766,7 +4769,7 @@ Destination Hostname: smtp_server
 
 
 
-Perl我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。程序的第一步是创建一个新的 `XML::DOM` 解析器对象，命名为 `$parser`。我们需要一个解析器对象，以便调用 `parsefile`。其次，我们调用 `parsefile` 方法，它解析参数中指定的 XML 文档并返回一个我们命名为 `$doc` 的 `XML::DOM::Document` 对象。这个 `XML::DOM::Document` 对象具有由节点对象组成的树结构。`getElement` 方法允许我们直接访问作为整个文档根元素的节点。`getChildNodes()` 方法返回所有根元素子节点的数组，因此我们现在可以访问 XML 文档中的所有元素。
+Perl 程序的第一步是创建一个新的 `XML::DOM` 解析器对象，命名为 `$parser`。我们需要一个解析器对象，以便调用 `parsefile`。其次，我们调用 `parsefile` 方法，它解析参数中指定的 XML 文档并返回一个我们命名为 `$doc` 的 `XML::DOM::Document` 对象。这个 `XML::DOM::Document` 对象具有由节点对象组成的树结构。`getElement` 方法允许我们直接访问作为整个文档根元素的节点。`getChildNodes()` 方法返回所有根元素子节点的数组，因此我们现在可以访问 XML 文档中的所有元素。
 
 +   7. 实例化一个新的 `XML::DOM` 解析器。
 
@@ -7042,7 +7045,7 @@ XML 文档过滤的主题有许多应用。例如，假设您的公司与其他�
 
 
 
-一种方法我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。将您的 XML 文档转换为另一公司偏好的格式。如果两家公司都同意使用通用的 DTD 或 XML 模式，这个过程会比现在更顺畅。但是，可以使用一些变通方法来方便数据传输。在这种情况下，您可以遵循类似于上一节讨论的方法：开发一个与另一公司偏好格式匹配的 DTD 或 XML 模式。然后，开发一个 XSLT 样式表，将您的 XML 文档转换为符合不同的 DTD 或 XML 模式。
+一种方法 将您的 XML 文档转换为另一公司偏好的格式。如果两家公司都同意使用通用的 DTD 或 XML 模式，这个过程会比现在更顺畅。但是，可以使用一些变通方法来方便数据传输。在这种情况下，您可以遵循类似于上一节讨论的方法：开发一个与另一公司偏好格式匹配的 DTD 或 XML 模式。然后，开发一个 XSLT 样式表，将您的 XML 文档转换为符合不同的 DTD 或 XML 模式。
 
 ## 将 XML 转换为以支持不同的 HTML 文档
 
@@ -8798,7 +8801,7 @@ AxKit 支持的另一种相关技术是可扩展服务器页面 (XSP)。XSP 是�
 
 
 
-另一种在网络上分发信息的方法尝试构建一个分布式对象基础设施并分发包含数据的对象。实际上有三种基于对象分布理念的实现。这三种方法分别是通用对象请求代理器架构（CORBA）、远程方法调用（RMI）和分布式组件对象模型（DCOM）。这些方法的问题在于，每个实现都选择了不同的协议来传输对象。例如，CORBA我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。开发者决定使用 Internet-ORB 协议（IIOP），DCOM 开发者决定使用对象远程过程调用（ORPC），而 RMI 开发者决定使用 Java 远程方法协议（JRMP）。这些方法的主要问题是缺乏互操作性。按照这种方案，CORBA 只能与 CORBA 通信，RMI 只能与 RMI 通信，DCOM 只能与 DCOM 通信。没有一种方法可以直接与网络通信——每种方法都需要一个提供特殊套接字接口的额外协议层。
+另一种在网络上分发信息的方法尝试构建一个分布式对象基础设施并分发包含数据的对象。实际上有三种基于对象分布理念的实现。这三种方法分别是通用对象请求代理器架构（CORBA）、远程方法调用（RMI）和分布式组件对象模型（DCOM）。这些方法的问题在于，每个实现都选择了不同的协议来传输对象。例如，CORBA 开发者决定使用 Internet-ORB 协议（IIOP），DCOM 开发者决定使用对象远程过程调用（ORPC），而 RMI 开发者决定使用 Java 远程方法协议（JRMP）。这些方法的主要问题是缺乏互操作性。按照这种方案，CORBA 只能与 CORBA 通信，RMI 只能与 RMI 通信，DCOM 只能与 DCOM 通信。没有一种方法可以直接与网络通信——每种方法都需要一个提供特殊套接字接口的额外协议层。
 
 如你所见，早期在网络上交换数据的方法都有其各自的问题。为了解决大部分（如果不是全部）这些问题，开发了新的基于 XML 的 Web 服务协议。这些协议中最重要的一个将在下一节中讨论。
 

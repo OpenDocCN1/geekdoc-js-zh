@@ -1,5 +1,5 @@
 
-# HTML5 和 JavaScript Windows我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。8 应用实战
+# HTML5 和 JavaScript Windows 8 应用实战
 
 Greg Weinberg  
 Neil Rowe  
@@ -339,7 +339,7 @@ Microsoft Windows 是世界上最流行的操作系统。Windows 占据了 90% �
 
 
 
-点击`Downloads`链接以 ZIP我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。文件格式下载最新版本的代码。
+点击`Downloads`链接以 ZIP 文件格式下载最新版本的代码。
 
 # 第 1 章 构建 Windows Store 应用
 
@@ -7211,7 +7211,8 @@ function addSeedData() {
 
 
 
-```js我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。moviesDataSource.count().then(function (count) {
+```js
+moviesDataSource.count().then(function (count) {
   if (count > 0) {
     complete();
   } else {
@@ -8138,7 +8139,7 @@ Alert 页面控件是在页面的 body 中声明式创建的，就像其他标�
 
 
 
-## 使用 Visual Studio 创建新的页面控件我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。当你向项目添加名为`anotherPage.html`的页面控件时，你会得到以下三个文件：
+## 使用 Visual Studio 创建新的页面控件 当你向项目添加名为`anotherPage.html`的页面控件时，你会得到以下三个文件：
 
 - `anotherPage.html`
 - `anotherPage.js`
@@ -8425,7 +8426,7 @@ WL.login().then(
 
 `$111.1` 中的 `WL.init()` 方法调用时带有两个参数：`redirect_uri` 和一个 `scopes` 数组。`redirect_uri` 必须与你在上一节中配置的重定向域名完全匹配。下一节将讨论 `scopes` 数组。
 
-# 指定作用域我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。你传递给 `WL.init()` 方法的 `scopes` 数组决定了你有权限访问的信息。你可以从 Windows Live 用户账户中提取出各种有趣且令人不安的信息，包括用户的生日、电子邮件地址、邮寄地址、照片和联系人。
+# 指定作用域 你传递给 `WL.init()` 方法的 `scopes` 数组决定了你有权限访问的信息。你可以从 Windows Live 用户账户中提取出各种有趣且令人不安的信息，包括用户的生日、电子邮件地址、邮寄地址、照片和联系人。
 
 以下是作用域（scopes）的部分列表：
 
@@ -8727,7 +8728,7 @@ getCount: function () {
 
 
 
-重要点我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。，每当你调用远程 Web 服务时，都需要包含身份令牌。该令牌标识了发起远程 Web 请求的用户。
+重要点 ，每当你调用远程 Web 服务时，都需要包含身份令牌。该令牌标识了发起远程 Web 请求的用户。
 
 # 在 Web 服务中验证身份令牌
 

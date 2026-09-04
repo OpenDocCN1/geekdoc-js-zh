@@ -5943,7 +5943,7 @@ if (ProcessFile($File, %Config)) {
 
 
 
-#我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。发现打开的文件
+# 发现打开的文件
 
 每个机器维护每个用户当前共享的文件和目录列表。当你需要跟踪用户打开了哪些资源时，此列表将非常有价值。示例 4.7 连接到指定的机器（如果没有指定则为本地机器）并获取打开资源的列表。你可以轻松想象此脚本有多实用。如果有人以某些用户的身份登录破解了网络安全，你可以快速发现他们在哪些服务器上打开了文件。图 4.1 展示了这一点。
 
@@ -6507,7 +6507,8 @@ perl procmon.pl -install -m Server -u MonitorDaemon -p AdminPassword
 
 
 
-```perl我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。01. use Time::Local;
+```perl
+01. use Time::Local;
 02. use Getopt::Long;
 03. use Win32::Daemon;
 04. use Win32::OLE qw ( in );
@@ -7864,7 +7865,7 @@ perl\bin\perl.exe %LOGONSERVER
 
 
 
-##我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。修改变量
+## 修改变量
 
 通常来说，登录脚本不需要修改环境变量。通常，脚本会查询此类变量以便做出逻辑决策。例如，登录脚本可能会查询`Temp`变量以确定临时文件目录路径，以便进行清理。这种查询很常见，但从登录脚本设置环境变量并不常见。然而，该规则也有例外，例如当登录脚本想要记录用户登录的时间和日期时。
 
@@ -8127,7 +8128,8 @@ scripts\accountants.pl
 
 
 
-```perl我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。31. my $Result = 0;
+```perl
+31. my $Result = 0;
 32. my $NewTime = 0;
 33. my $Count = 0;
 34. my $User = '';
@@ -12277,7 +12279,7 @@ perl IISWebDump.pl webserver/W3SVC/1
 
 
 
-#我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。示例 9.10 延续
+# 示例 9.10 延续
 
 ```perl
 76. -\n
@@ -12858,7 +12860,8 @@ perl WMI_Run.pl \server notepad.exe c:\temp\MyFile.txt
 
 
 
-```perl我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。01. use Win32::OLE qw{ in };
+```perl
+01. use Win32::OLE qw{ in };
 02. use Win32::OLE::Variant;
 03. $Machine = ".* unless $Machine = shift ARGV;
 04. $Machine = s#^[\\/]+# if ($ARGV[0] -= m#([\\/]{2})#);
@@ -14333,7 +14336,7 @@ http://www.cpan.org/
 
 
 
-`\,我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。228`
+`\, 228`
 
 `\, 228`
 
@@ -15287,7 +15290,7 @@ ISBN: 1-57780-240-2
 
 《无线局域网》涵盖了如何以及为何从私有解决方案迁移到 `802.11` 标准，并解释了如何通过无线局域网实现显著的成本节省。《网络性能基准》专注于网络基准原则的真实实施，不仅展示了如何衡量和评估网络性能，还展示了如何提高网络性能。书中包含了提供网络基准测量的真实方法和步骤的章节。此外，还将提供正确记录和构建基准的方法。
 
-#我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。电子商务经济
+# 电子商务经济
 
 作者：Soon-Yong Choi、Andrew Whinston、Dale Stahl
 

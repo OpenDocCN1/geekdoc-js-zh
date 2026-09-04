@@ -1,6 +1,6 @@
 
 
-#我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。你的第一个 Meteor 应用：Meteor JavaScript 框架初学者指南
+# 你的第一个 Meteor 应用：Meteor JavaScript 框架初学者指南
 
 ![](img/00071.jpeg)
 

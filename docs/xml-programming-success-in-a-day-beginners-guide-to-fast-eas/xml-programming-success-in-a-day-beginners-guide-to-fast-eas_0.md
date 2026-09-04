@@ -1,6 +1,6 @@
 
 
-#我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。一天速成 XML 编程：快速、简单、高效学习 XML 编程初学者指南
+# 一天速成 XML 编程：快速、简单、高效学习 XML 编程初学者指南
 
 ![](img/cover.jpeg)
 
@@ -1085,7 +1085,8 @@ name = "value"
 
 
 
-```xml我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。<?xml version="1.0"?>
+```xml
+<?xml version="1.0"?>
 <contact-information>
   <address category="home">
     <name>Wendy Dawn</name>

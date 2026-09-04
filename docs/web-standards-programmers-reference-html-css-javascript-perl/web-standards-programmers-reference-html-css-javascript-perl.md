@@ -1,5 +1,5 @@
 
-# Web 标准程序员参考：HTML、CSS、JavaScript、Perl、Python 和 PHP我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。![](img/ea4c23f2b3e13f96b01d42b20650d1b3_0_0.png)
+# Web 标准程序员参考：HTML、CSS、JavaScript、Perl、Python 和 PHP ![](img/ea4c23f2b3e13f96b01d42b20650d1b3_0_0.png)
 
 ![](img/ea4c23f2b3e13f96b01d42b20650d1b3_0_1.png)
 
@@ -5469,7 +5469,7 @@ tr td ol { color: red; }
 
 
 
-你还可以使用选择器来定义元素类，类可以被任何元素采用。假设你的页面上有两个不同背景区域，一个我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。浅色的，一个是深色的。你希望在浅色区域使用深色文本，在深色区域使用浅色文本。你可以定义 `light_area` 和 `dark_area` 类，以确保区域内应用了正确的文本样式。
+你还可以使用选择器来定义元素类，类可以被任何元素采用。假设你的页面上有两个不同背景区域，一个 浅色的，一个是深色的。你希望在浅色区域使用深色文本，在深色区域使用浅色文本。你可以定义 `light_area` 和 `dark_area` 类，以确保区域内应用了正确的文本样式。
 
 要通过选择器指定类，需要在选择器后面加上一个点和类名。例如，此样式将匹配任何类为 `dark_area` 的段落标签：
 
@@ -6651,7 +6651,7 @@ line-height: <number> | <length> | <percentage>
 
 
 
-该属性设置了所应用元素周围框的大小。`normal` 值将行高设置为当前字体的默认值。指定一个数字（例如 `1.2em`）会导致当前行高乘以指定的数字。绝我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。长度（例如 `px`）会导致行高被设置为绝对值。百分比值的处理方式与数字相同；该百分比应用于当前字体的基线之上。
+该属性设置了所应用元素周围框的大小。`normal` 值将行高设置为当前字体的默认值。指定一个数字（例如 `1.2em`）会导致当前行高乘以指定的数字。绝 长度（例如 `px`）会导致行高被设置为绝对值。百分比值的处理方式与数字相同；该百分比应用于当前字体的基线之上。
 
 例如，以下两种定义都设置了一个类来使文本呈双倍行距：
 
@@ -6985,7 +6985,7 @@ form *:active {
 
 
 
-然而，截至本书时，用户代理我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。轮廓的支持非常不稳定，甚至根本不存在。如果你打算在文档中使用轮廓，你应该在观众预期使用的所有平台上对代码进行大量测试。
+然而，截至本书时，用户代理 轮廓的支持非常不稳定，甚至根本不存在。如果你打算在文档中使用轮廓，你应该在观众预期使用的所有平台上对代码进行大量测试。
 
 ## 总结
 
@@ -7548,7 +7548,8 @@ p.static { width: 400px; height: 200px; border: 1pt solid black; position: stati
 
 
 
-```css我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。p.nudge-right { position: relative; left: 25px; }
+```css
+p.nudge-right { position: relative; left: 25px; }
 ```
 
 # 元素定位
@@ -8091,7 +8092,7 @@ s = new String();
 
 
 
-# JavaScript我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。语言
+# JavaScript 语言
 
 显式设置变量的类型有助于确保它始终包含你预期的数据。如果任其自然发展，JavaScript 会根据需要调整变量的类型，可能会导致舍入误差或更严重的错误。
 
@@ -8541,7 +8542,7 @@ with (Math) {
 
 
 
-不使用 `with`我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。语句的相同代码如下：
+不使用 `with` 语句的相同代码如下：
 
 ```javascript
 y = Math.random(200);
@@ -9500,7 +9501,8 @@ node.replaceChild(node.childNodes[i], node.childNodes[j]);
 
 
 
-```javascript我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。node.replaceChild(tempnode, node.childNodes[i]);
+```javascript
+node.replaceChild(tempnode, node.childNodes[i]);
 ```
 
 #### 输出
@@ -9896,7 +9898,7 @@ function hidenreveal(list) {
 
 
 
-## 输出结果我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。此示例的结果是生成一个包含可折叠列表的文档。当点击列表头（UL 文本）时，列表会展开或折叠。列表的两种状态显示在图 22-1（折叠）和图 22-2（展开）中。
+## 输出结果 此示例的结果是生成一个包含可折叠列表的文档。当点击列表头（UL 文本）时，列表会展开或折叠。列表的两种状态显示在图 22-1（折叠）和图 22-2（展开）中。
 
 ![](img/ea4c23f2b3e13f96b01d42b20650d1b3_347_0.png)
 
@@ -13162,7 +13164,8 @@ print
 
 
 
-```bash我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。#!/bin/bash
+```bash
+#!/bin/bash
 
 # 输出运行的命令
 echo -e "Command: $0"
@@ -23308,7 +23311,7 @@ myString.capitalize()
 
 
 
-# Python我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。语言参考
+# Python 语言参考
 
 ## sys 模块
 

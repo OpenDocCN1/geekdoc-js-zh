@@ -2918,7 +2918,7 @@ WCAG 文档在多个层面上都存在争议。首先，许多设计师（即使
 
 此外，位于，（为了增强无障碍性而添加）。
 
-这些许多功能我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。专门为了增强无障碍而添加的，正如我们讨论的那样，并且应该继续实践。
+这些许多功能 专门为了增强无障碍而添加的，正如我们讨论的那样，并且应该继续实践。
 
 我们的酒店位于`Avenida Rafael Sur`，就在`dazzling white beaches`附近。
 
@@ -5048,7 +5048,7 @@ Shakespeare Quotation
 
 
 
-## 第我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。12 章：XSL——样式化 XML
+## 第 12 章：XSL——样式化 XML
 
 在这里我们找到了一个匹配源 XML 文档中`<famous_quote>`元素的`<xsl:template>`元素。因此，模板应用于`<famous_quote>`元素。在这种情况下，在输出树中创建一个`<h1>`标签。然后，`<xsl:value-of>`元素应用于匹配 XPath 表达式的元素，这意味着当前的上下文元素——`<famous_quote>`元素的内容。该内容的值，字符串 To or not to be 应用于 XSL 代码中早的`<xsl:templates>`元素指示的输出树位置。
 
@@ -7782,7 +7782,7 @@ RDF 是用于表示属性和属性值的模型。例如，资源可以包括一�
 
 
 
-如果你想更详细地查看 RDF，当前版本我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。一个名为“Resource Description Schema Specification 1.0”的候选建议书，位于`http://www.w3.org/TR/2000/CR/rdf-schema-20000327`。
+如果你想更详细地查看 RDF，当前版本 一个名为“Resource Description Schema Specification 1.0”的候选建议书，位于`http://www.w3.org/TR/2000/CR/rdf-schema-20000327`。
 
 RDF 也是 CC/PP 的基础，其语义是叠加在 RDF 之上的。
 
@@ -8076,7 +8076,7 @@ XForms 可能会导致各种 XForms 模块的顺序化生产，从一个核心�
 
 在定义模块之前，需要一些预备信息；具体来说语法规范、属性类型和属性集合名称。
 
-#我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。语法规范
+# 语法规范
 
 首先需要注意的是，抽象模块定义并不是用形式化语法编写的。然而，W3C 借用了 DTD 作者们应该熟悉的规范。
 

@@ -1,5 +1,5 @@
 
-# HTML5 Windows我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。8 应用开发初学者指南
+# HTML5 Windows 8 应用开发初学者指南
 
 ![](img/cover.jpg)
 
@@ -2835,7 +2835,8 @@ Windows 8 中的留白与 Web 应用中的留白几乎相同，只不过你需�
 
 
 
-```css我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。/* overall dimensions */
+```css
+/* overall dimensions */
 #textListMediaQueue {
     margin-left: 10px;
     width: 18px; /*18 px to account scrollbar*/
@@ -4041,7 +4042,8 @@ Windows 8 内置了一个控件，用于帮助用户（以及开发者）管理�
 
 
 
-```javascript我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。var data = [
+```javascript
+var data = [
     { ‘name’: ‘Castillo de Rumba’, ‘address’: ‘334 Main Street’, ‘category’: ‘Italian’ },
     { ‘name’: “Bob’s Diner”, ‘address’: ‘12 Town Street’, ‘category’: ‘Diner’ },
     { ‘name’: ‘Italian Feast’, ‘address’: ‘503 Rich Street’, ‘category’: ‘Italian’ },
@@ -4464,7 +4466,7 @@ if (setting == Windows.UI.Notifications.NotificationSetting.enabled) {
 
 
 
-你可能需要对代码进行一些重构以使其更高效。在本书章前面的“在你的应用中调用 Toast”代码中，`createToastNotifier`我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。的调用位于结尾 —— 你可能想在开头调用它，如果它未启用，则短路（short-circuit）整个函数。如往常一样，什么构成良好的模式和实践取决于你的具体情况。
+你可能需要对代码进行一些重构以使其更高效。在本书章前面的“在你的应用中调用 Toast”代码中，`createToastNotifier` 的调用位于结尾 —— 你可能想在开头调用它，如果它未启用，则短路（short-circuit）整个函数。如往常一样，什么构成良好的模式和实践取决于你的具体情况。
 
 ## 当你的应用程序未运行时通知用户
 
@@ -6545,7 +6547,7 @@ function getPosition() {
 
 
 
-Windows我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。8 是一个“触摸优先”的操作系统。预装 Windows 8 的机器很大程度上都开启了触摸屏，而平板电脑自然也带有触摸屏。
+Windows 8 是一个“触摸优先”的操作系统。预装 Windows 8 的机器很大程度上都开启了触摸屏，而平板电脑自然也带有触摸屏。
 
 因此，你可能会预期 `WinRT` 拥有大部分支持触摸的 API 和工具，而你的想法是正确的。`WinJS` 中的所有用户控件都是支持触摸的，并且有一个非常稳健的触摸 API。所有这些内容将在第 6 章中进行详细介绍。
 
@@ -7186,7 +7188,7 @@ WACK 基本上是一个自动化测试套件，它在相当于基准电脑（当
 
 ![check.png](img/check.png) Windows Store 风格应用 API 使用测试：测试应用是否使用了任何不合的 API。
 
-![check.png](img/check.png) Windows我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。兼容性修复测试：验证应用没有使用任何 Windows 兼容性修复。
+![check.png](img/check.png) Windows 兼容性修复测试：验证应用没有使用任何 Windows 兼容性修复。
 
 ![check.png](img/check.png) OS 版本检查逻辑测试：测试应用如何检查运行它的 Windows 版本。
 
@@ -7658,7 +7660,7 @@ Google AdSense 在 Windows 8 中运行良好。因为它是外部内容，所以
 
 
 
-卖广告不是赚钱的唯一方法。通过一个始终免费的 App 吸引用户，但我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。“更多相同的内容”（More of the Same™）收费是另一种明智的策略，而且通常疏远的人更少。（等等，让我重新检查一下源码——源文本在这里重复了，我将继续按照提供的逻辑流进行）。
+卖广告不是赚钱的唯一方法。通过一个始终免费的 App 吸引用户，但 “更多相同的内容”（More of the Same™）收费是另一种明智的策略，而且通常疏远的人更少。（等等，让我重新检查一下源码——源文本在这里重复了，我将继续按照提供的逻辑流进行）。
 
 卖广告不是赚钱的唯一方法。通过一个始终免费的 App 吸引用户，但对“更多相同的内容”收费是另一种明智的策略，而且通常疏远的人更少。卖广告不是赚钱的唯一方法。通过一个始终免费的 App 吸引用户，但对“更多相同的内容”收费是另一种明智的策略，而且通常疏远的人更少。卖广告不是赚钱的唯一方法。通过一个始终免费的 App 吸引用户，但对“更多相同的内容”收费是另一种明智的策略，而且通常疏远的人更少。卖广告不是赚钱的唯一方法。通过一个始终免费的 App 吸引用户，但对“更多相同的内容”收费是另一种明智的策略，而且通常疏远的人更少。卖广告不是赚钱的唯一方法。通过一个始终免费的 App 吸引用户，但对“更多相同的内容”收费是另一种明智的策略，而且通常疏远的人更少。卖广告不是赚钱的唯一方法。通过一个始终免费的 App 吸引用户，但对“更多相同的内容”收费是另一种明智的策略，而且通常疏远的人更少。卖广告不是赚钱的唯一方法。通过一个始终免费的 App 吸引用户，但对“更多相同的内容”收费是另一种明智的策略，而且通常疏远的人更少。
 

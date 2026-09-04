@@ -255,7 +255,7 @@
 
 
 
--我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。使用 Visual Studio 测试应用状态 317
+- 使用 Visual Studio 测试应用状态 317
 - 使用会话存储存储 318
 - 为不同窗口尺寸设计 320
 - 设置最小应用宽度 320
@@ -482,7 +482,7 @@ Windows 8.1 包含了重要的向后兼容破坏。与 Windows 8 不同，Window
 
 
 
-- Windows Store 应用的元素我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。- 使用 Visual Studio 构建 Windows Store 应用
+- Windows Store 应用的元素 - 使用 Visual Studio 构建 Windows Store 应用
 - 调试 Windows Store 应用
 - 发布到 Windows Store
 
@@ -9560,7 +9560,7 @@ tasksTable.lookup(id).done(
 
 
 
-你将想要检索的记录的`id`传递给`lookup()`方法。该`id`应该我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。一个整数，并代表主键值。
+你将想要检索的记录的`id`传递给`lookup()`方法。该`id`应该 一个整数，并代表主键值。
 
 如果没有匹配的记录，则会返回错误并执行 promise 错误函数。
 
@@ -11769,7 +11769,7 @@ lvSearchResults.itemDataSource = emptyList.dataSource;
 
 
 
-`Indexer.query()` 方法返回一组查询结果。查询结果我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。一个 ID 数组，对应于匹配搜索查询的笔记的唯一键（keys）。
+`Indexer.query()` 方法返回一组查询结果。查询结果 一个 ID 数组，对应于匹配搜索查询的笔记的唯一键（keys）。
 
 通过调用 `getAll()` 方法从文件系统检索所有笔记。任何未包含搜索查询结果中的笔记都会被丢弃。剩余的笔记显示在 `ListView` 中。
 
@@ -12135,7 +12135,7 @@ function insert(item, user, request) {
 
 
 
-`if (item.name.length ===我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。0) {`
+`if (item.name.length === 0) {`
 
 ```
 request.respond(statusCodes.BAD_REQUEST, "You fool! Task name is required!");
@@ -12449,7 +12449,8 @@ lvFiles.addEventListener("iteminvoked", function (evt) {
 
 
 
-```javascript我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。}
+```javascript
+}
 ```
 
 ```javascript
@@ -12794,7 +12795,7 @@ render: function () {
 
 
 
-```javascript我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。  this.renderPlayer();
+```javascript   this.renderPlayer();
 
 }
 ```
