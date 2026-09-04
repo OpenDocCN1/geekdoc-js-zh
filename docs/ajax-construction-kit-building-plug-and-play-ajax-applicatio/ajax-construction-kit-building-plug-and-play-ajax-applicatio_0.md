@@ -1,5 +1,5 @@
-# Ajax构建工具包：即插即用Ajax应用构建指南 (Negus Live Linux系列)
 
+# Ajax 构建工具包：即插即用 Ajax 应用构建指南（Negus Live Linux 系列）
 
 ## 概述
 
@@ -9,36 +9,36 @@
 
 使用 Ajax 构建工具包的十个完整应用，您可以：
 
-*   动态加载 Web 数据
-*   动态填充列表
-*   接入 RSS 新闻源
-*   使用自动完成减少输入错误
-*   通过实时验证创建响应更快的图形用户界面
-*   构建用于查看图像的杀手级界面
-*   通过流畅的弹出窗口展示信息或广告
-*   提供最新的天气预报
-*   构建电子商务产品运费计算器
-*   为您的网站添加评分工具
+- 动态加载 Web 数据
+- 动态填充列表
+- 接入 RSS 新闻源
+- 使用自动完成减少输入错误
+- 通过实时验证创建响应更快的图形用户界面
+- 构建用于查看图像的杀手级界面
+- 通过流畅的弹出窗口展示信息或广告
+- 提供最新的天气预报
+- 构建电子商务产品运费计算器
+- 为您的网站添加评分工具
 
 以及更多……
 
 ## 随书 CD-ROM 包含
 
-*   您的完整 Ajax 项目：在 Windows、Mac OS X 或 Linux 系统上运行 CD 中包含的 Ajax 项目（HTML、JavaScript 和 PHP 源代码）。
-*   您的完整 Ajax 环境：将 CD 作为 Ubuntu Linux Live CD 启动，立即开始使用 Ajax 项目（无需安装）。
-*   CD 上包含的即用工具包括 XAMPP Web 服务器、Firefox Web 浏览器和 Bluefish HTML 编辑器。
+- 您的完整 Ajax 项目：在 Windows、Mac OS X 或 Linux 系统上运行 CD 中包含的 Ajax 项目（HTML、JavaScript 和 PHP 源代码）。
+- 您的完整 Ajax 环境：将 CD 作为 Ubuntu Linux Live CD 启动，立即开始使用 Ajax 项目（无需安装）。
+- CD 上包含的即用工具包括 XAMPP Web 服务器、Firefox Web 浏览器和 Bluefish HTML 编辑器。
 
 ### 系统要求
 
-*   平台：Windows、Linux、Mac（OS X 或更高版本）
-*   处理器：基于 Intel 的处理器（Pentium 或更高）
-*   内存：128 MB RAM 或更多
-*   磁盘空间：无需；可选 USB 闪存盘存储数据
-*   光驱：CD 读取器
+- 平台：Windows、Linux、Mac（OS X 或更高版本）
+- 处理器：基于 Intel 的处理器（Pentium 或更高）
+- 内存：128 MB RAM 或更多
+- 磁盘空间：无需；可选 USB 闪存盘存储数据
+- 光驱：CD 读取器
 
 ## Negus Live Linux 系列
 
-您的实用、动手指南，通过自由软件获得真实成果
+您的实用、动手指南，通过自由软件获得真实成果。
 
 将本书 CD 中的自由软件和示例添加到您的 Windows、Mac OS X 或 Linux 系统中，跟随书中描述的项目进行操作。或者直接启动 CD，使用一套完整、预打包的自由软件工具来播放、显示和修改这些项目。从新手开始，尝试示例……最终掌握专业的 Ajax 增强型 Web 内容！
 
@@ -48,111 +48,173 @@
 
 1
 
-
 ---
 
-
-
-
-
-
-
 ## 第 4 章 使用 Ajax 动态填充列表：股票选择器
-## 挑战：显示选定的股票信息
-## 设计：设计股票选择器
-## 整合股票选择器
-## 测试选择器
-## 为选择器进行极致的 Ajax 改造
-## 总结
+
+### 挑战：显示选定的股票信息
+
+### 设计：设计股票选择器
+
+### 整合股票选择器
+
+### 测试选择器
+
+### 为选择器进行极致的 Ajax 改造
+
+### 总结
 
 ## 第 5 章 接入 RSS 新闻源
-## 挑战：动态查询新闻源
-## 设计：设计新闻源应用
-## 整合新闻源应用
-## 测试新闻源
-## 为新闻源进行极致的 Ajax 改造
-## 总结
+
+### 挑战：动态查询新闻源
+
+### 设计：设计新闻源应用
+
+### 整合新闻源应用
+
+### 测试新闻源
+
+### 为新闻源进行极致的 Ajax 改造
+
+### 总结
 
 ## 第 6 章 通过自动完成读取用户心思
-## 挑战：预判数据输入
-## 设计：设计自动完成应用
-## 整合完成器应用
-## 测试完成器
-## 为完成器进行极致的 Ajax 改造
-## 总结
+
+### 挑战：预判数据输入
+
+### 设计：设计自动完成应用
+
+### 整合完成器应用
+
+### 测试完成器
+
+### 为完成器进行极致的 Ajax 改造
+
+### 总结
 
 ## 第 7 章 通过实时验证创建响应式图形界面
-## 挑战：实时检查用户输入
-## 设计：设计验证器应用
-## 整合验证器应用
-## 测试验证器
-## 为验证器进行极致的 Ajax 改造
-## 总结
+
+### 挑战：实时检查用户输入
+
+### 设计：设计验证器应用
+
+### 整合验证器应用
+
+### 测试验证器
+
+### 为验证器进行极致的 Ajax 改造
+
+### 总结
 
 ## 第 8 章 图像查看的杀手级界面
-## 挑战：动态加载图像
-## 设计：设计动态图像查看器
-## 整合图像生成器应用
-## 测试图像生成器
-## 为图像生成器进行极致的 Ajax 改造
-## 总结
+
+### 挑战：动态加载图像
+
+### 设计：设计动态图像查看器
+
+### 整合图像生成器应用
+
+### 测试图像生成器
+
+### 为图像生成器进行极致的 Ajax 改造
+
+### 总结
 
 ## 第 9 章 通过精美弹出窗口呈现信息
-## 挑战：创建关联弹出窗口
-## 设计：设计信息弹出应用
-## 整合通知器应用
-## 测试通知器
-## 为通知器进行极致的 Ajax 改造
-## 总结
+
+### 挑战：创建关联弹出窗口
+
+### 设计：设计信息弹出应用
+
+### 整合通知器应用
+
+### 测试通知器
+
+### 为通知器进行极致的 Ajax 改造
+
+### 总结
 
 ## 第 10 章 使用 Ajax 预测天气
-## 挑战：收集动态天气信息
-## 设计：设计天气预报器
-## 整合预报器应用
-## 测试预报器
-## 为预报器进行极致的 Ajax 改造
-## 总结
+
+### 挑战：收集动态天气信息
+
+### 设计：设计天气预报器
+
+### 整合预报器应用
+
+### 测试预报器
+
+### 为预报器进行极致的 Ajax 改造
+
+### 总结
 
 ## 第 11 章 构建 Ajax 运费计算器
-## 挑战：获取实时运费
-## 设计：设计运输器应用
-## 客户端请求
-## 服务器响应
-## 理解客户端与服务器的对话
-## 整合运输器应用
-## 运输器网页
-## 运输器服务器脚本
-## 测试运输器
-## 为运输器进行极致的 Ajax 改造
-## 总结
+
+### 挑战：获取实时运费
+
+### 设计：设计运输器应用
+
+### 客户端请求
+
+### 服务器响应
+
+### 理解客户端与服务器的对话
+
+### 整合运输器应用
+
+### 运输器网页
+
+### 运输器服务器脚本
+
+### 测试运输器
+
+### 为运输器进行极致的 Ajax 改造
+
+### 总结
 
 ## 第 12 章 为你的网站添加 Ajax 驱动的评分系统
-## 挑战：为网站添加评分功能
-## 设计：设计评分器应用
-## 整合评分器应用
-## 测试评分器
-## 为评分器进行极致的 Ajax 改造
-## 总结
+
+### 挑战：为网站添加评分功能
+
+### 设计：设计评分器应用
+
+### 整合评分器应用
+
+### 测试评分器
+
+### 为评分器进行极致的 Ajax 改造
+
+### 总结
 
 ## 第三部分：附录
-## 附录 A Ajax 的过去、现在与未来
-## 通往 Ajax 之路
-## Ajax 热潮
-## Ajax 的未来是什么？
-## 附录 B 快速而粗略的 XMLHttpRequest 参考
-## 方法
-## 属性
-## 事件
-## 附录 C 使用 Live Linux CD
-## Live CD 内部
-## 运行 Live CD
-## 直接在 Windows PC 上运行 Live CD
-## 直接在 Mac PC 上运行 Live CD
-## 以其他方式运行 Live CD
 
+### 附录 A Ajax 的过去、现在与未来
 
+#### 通往 Ajax 之路
 
+#### Ajax 热潮
 
+#### Ajax 的未来是什么？
+
+### 附录 B 快速而粗略的 XMLHttpRequest 参考
+
+#### 方法
+
+#### 属性
+
+#### 事件
+
+### 附录 C 使用 Live Linux CD
+
+#### Live CD 内部
+
+#### 运行 Live CD
+
+#### 直接在 Windows PC 上运行 Live CD
+
+#### 直接在 Mac PC 上运行 Live CD
+
+#### 以其他方式运行 Live CD
 
 | 索引 |
 
@@ -162,7 +224,7 @@
 
 ## Negus Live Linux 系列
 
-您的实用、动手指南，助您通过免费软件获得实际成果
+您的实用、动手指南，助您通过免费软件获得实际成果。
 
 将本书 CD 中的免费软件和示例添加到您的 Windows、Mac OS X 或 Linux 系统中，以便跟随书中描述的项目进行操作。或者直接启动 CD，使用一套完整、预打包的免费软件工具来播放、显示和修改这些项目。从新手开始，尝试示例……最终创建出专业的支持 Ajax 的 Web 内容！
 
@@ -178,9 +240,9 @@
 
 ## 关于作者
 
-Michael Morrison 是一位作家、开发者、玩具发明家，并撰写了多本涵盖 Java、Web 脚本、游戏开发和移动设备等主题的书籍。Michael 的一些著名写作项目包括《JavaScript 圣经》第 6 版（Wiley，2006 年）、《24 小时学会 HTML 和 CSS》第 7 版（Sams Publishing，2005 年）、《手机游戏编程入门》（Sams Publishing，2004 年）和《Java  unleashed》（Sams Publishing，1997 年）。Michael 是多个网络课程的讲师，包括 DigitalThink 的 Java 2 系列入门、JavaBeans 程序员系列和 Win32 编程系列（[www.digitalthink.com](http://www.digitalthink.com)）。
+Michael Morrison 是一位作家、开发者、玩具发明家，并撰写了多本涵盖 Java、Web 脚本、游戏开发和移动设备等主题的书籍。Michael 的一些著名写作项目包括《JavaScript 圣经》第 6 版（Wiley，2006 年）、《24 小时学会 HTML 和 CSS》第 7 版（Sams Publishing，2005 年）、《手机游戏编程入门》（Sams Publishing，2004 年）和《Java unleashed》（Sams Publishing，1997 年）。Michael 是多个网络课程的讲师，包括 DigitalThink 的 Java 2 系列入门、JavaBeans 程序员系列和 Win32 编程系列（[`www.digitalthink.com`](http://www.digitalthink.com)）。
 
-除了作为作家和技术顾问的主要职业外，Michael 还是 Stalefish Labs（[www.stalefishlabs.com](http://www.stalefishlabs.com)）的创始人，这是一家专注于游戏、玩具和互动媒体的娱乐公司。当他不粘在电脑前、玩滑板、打曲棍球或与妻子 Masheed 一起看电影时，Michael 喜欢在他的锦鲤池边闲逛。
+除了作为作家和技术顾问的主要职业外，Michael 还是 Stalefish Labs（[`www.stalefishlabs.com`](http://www.stalefishlabs.com)）的创始人，这是一家专注于游戏、玩具和互动媒体的娱乐公司。当他不粘在电脑前、玩滑板、打曲棍球或与妻子 Masheed 一起看电影时，Michael 喜欢在他的锦鲤池边闲逛。
 
 ## 引言
 
@@ -194,21 +256,16 @@ Michael Morrison 是一位作家、开发者、玩具发明家，并撰写了多
 
 好吧，这本书主要是关于 Ajax 的，但这到底意味着什么？这意味着在相对较少的页数中，你将学会如何使用 Ajax 完成以下操作：
 
-*   为基于 Web 的图书阅读器动态加载电子书章节（第 3 章）
-*   即时选择和查看实时股票报价（第 4 章）
-
-
-
-
-
-*   将任意网页转换为能理解 RSS 新闻源的新闻聚合器（第 5 章）
-*   为你的网站添加自动补全功能（第 6 章）
-*   实时验证表单数据并查找位置信息（第 7 章）
-*   创建一个“Web 2.0”图像查看器，让你的页面处理图像的方式更现代化（第 8 章）
-*   使用信息弹出窗口动态显示小块内容（第 9 章）
-*   为任意链接添加实时天气状况弹出窗口（第 10 章）
-*   通过美国邮政服务 Ajax 请求即时计算运费（第 11 章）
-*   在你的网页中融入一个动画五星评分系统（第 12 章）
+- 为基于 Web 的图书阅读器动态加载电子书章节（第 3 章）
+- 即时选择和查看实时股票报价（第 4 章）
+- 将任意网页转换为能理解 RSS 新闻源的新闻聚合器（第 5 章）
+- 为你的网站添加自动补全功能（第 6 章）
+- 实时验证表单数据并查找位置信息（第 7 章）
+- 创建一个“Web 2.0”图像查看器，让你的页面处理图像的方式更现代化（第 8 章）
+- 使用信息弹出窗口动态显示小块内容（第 9 章）
+- 为任意链接添加实时天气状况弹出窗口（第 10 章）
+- 通过美国邮政服务 Ajax 请求即时计算运费（第 11 章）
+- 在你的网页中融入一个动画五星评分系统（第 12 章）
 
 这些正是 Ajax 能够实现的动态应用类型。更重要的是，本书采用了一种“构建工具包”的方法，引导你将这些功能添加到 Ajax 应用中。虽然你在探索本书提供的众多示例时最终会学到很多关于 Ajax 的知识，但本书的重点并非教你 Ajax，而是向你展示如何用 Ajax 做出酷炫的事情。有时这需要你学习全新的内容，有时则只需复制粘贴代码。关键在于，这本书是关于“动手实践”的。
 
@@ -230,16 +287,16 @@ Michael Morrison 是一位作家、开发者、玩具发明家，并撰写了多
 
 好吧，这本书主要是关于 Ajax 的，但这到底意味着什么？这意味着在相对较少的篇幅内，你将学会如何用 Ajax 完成以下事情：
 
-*   为基于 Web 的电子书阅读器动态加载电子书章节（第 3 章）
-*   即时选择并查看实时股票报价（第 4 章）
-*   将任意网页转换为能理解 RSS 新闻源的新闻聚合器（第 5 章）
-*   为你的网站添加自动补全功能（第 6 章）
-*   实时验证表单数据并查找位置信息（第 7 章）
-*   创建一个“Web 2.0”图像查看器，让你的页面处理图像的方式更现代化（第 8 章）
-*   使用信息弹出窗口动态显示小块内容（第 9 章）
-*   为任意链接添加实时天气状况弹出窗口（第 10 章）
-*   通过美国邮政服务 Ajax 请求即时计算运费（第 11 章）
-*   在你的网页中融入一个动画五星评分系统（第 12 章）
+- 为基于 Web 的电子书阅读器动态加载电子书章节（第 3 章）
+- 即时选择并查看实时股票报价（第 4 章）
+- 将任意网页转换为能理解 RSS 新闻源的新闻聚合器（第 5 章）
+- 为你的网站添加自动补全功能（第 6 章）
+- 实时验证表单数据并查找位置信息（第 7 章）
+- 创建一个“Web 2.0”图像查看器，让你的页面处理图像的方式更现代化（第 8 章）
+- 使用信息弹出窗口动态显示小块内容（第 9 章）
+- 为任意链接添加实时天气状况弹出窗口（第 10 章）
+- 通过美国邮政服务 Ajax 请求即时计算运费（第 11 章）
+- 在你的网页中融入一个动画五星评分系统（第 12 章）
 
 这些正是 Ajax 能够实现的动态应用类型。更重要的是，本书采用了一种“构建工具包”的方法，引导你将这些功能添加到 Ajax 应用中。虽然你在探索本书提供的众多示例时最终会学到很多关于 Ajax 的知识，但本书的重点并非教你 Ajax，而是向你展示如何用 Ajax 做出酷炫的事情。有时这需要你学习全新的内容，有时则只需复制粘贴代码。关键在于，这本书是关于“动手实践”的。
 
@@ -249,24 +306,21 @@ Michael Morrison 是一位作家、开发者、玩具发明家，并撰写了多
 
 我不想骗你——本书的性质决定了它在展示各种 Ajax 示例时，会频繁涉及 JavaScript 和 PHP。然而，本书最初的目标是让任何具备 HTML 和 CSS（层叠样式表）知识的人都能读懂，而不一定需要脚本编程背景（无论是客户端 JavaScript 还是服务器端 PHP）。我不完全确定这个目标是否现实，但它促使我竭尽全力，在示例中提供足够的 Ajax 知识，使其易于理解，同时又不会吓跑脚本新手。
 
-
-
-
 话虽如此，要读懂本书，你绝对需要对 HTML 有所了解。CSS 虽然不那么关键，但也会时不时出现，因此最好将 CSS 基础知识视为一项前提条件。在此基础上，了解一些 JavaScript 会对你有很大帮助，因为它是 Ajax 的基础。不过，我相信即使你对 Web 脚本知识有限，也能在本书中灵活应对 JavaScript 代码，并最终带走一整套可随时复用的 Ajax 实用工具。书中出现的 PHP 代码非常简单，我会详细解释其原理，因此即使你对 PHP 一无所知，也完全能够理解。
 
 ### 本书的组织结构
 
 尽管本书遵循 Negus Live Linux 系列丛书的宗旨，力求快速提供动手实践经验，但其组织结构略有不同寻常。全书分为三个部分：
 
-*   第一部分，“Ajax 训练营”——本书的这一部分毫不浪费时间，只铺垫足够的基础知识，让你不会被后续密集的 Ajax 示例应用所淹没。你将探索几个真实的商业 Ajax 应用，并熟悉随书光盘附带的 Ajax 工具包。读完这一部分后，你将迫不及待地想看到 Ajax 的实际应用。
+- 第一部分，“Ajax 训练营”——本书的这一部分毫不浪费时间，只铺垫足够的基础知识，让你不会被后续密集的 Ajax 示例应用所淹没。你将探索几个真实的商业 Ajax 应用，并熟悉随书光盘附带的 Ajax 工具包。读完这一部分后，你将迫不及待地想看到 Ajax 的实际应用。
+- 第二部分，“构建真实的 Ajax 应用”——本书的这一部分（也是剩余部分）完全专注于使用 Ajax 解决实际问题。从在数据输入表单中动态将邮政编码解析为城市/州，到在页面中嵌入交互式五星评分系统，这一部分毫不拖泥带水，直击要害。别误会，这仍然是一本有趣的读物，但不要指望看到一堆教程式的说教或关于 Ajax 历史的论文。这一部分尤其注重实践！
+- 第三部分，“附录”——这一部分提供了你可能觉得有用的额外信息。附录 A，“Ajax 的过去、现在和未来”，描绘了 Ajax 的起源和发展方向。这对于理解如何为网页添加 Ajax 功能并非关键，但确实能为当前围绕 Ajax 的热议增添一些视角。附录 B，“快速而粗略的 XMLHttpRequest 参考”正是如此——它是作为 Ajax 核心的 JavaScript 对象的参考。由于 Ajax 工具包的存在，本书大部分内容实际上隐藏了这个对象，但如果你想深入挖掘我的代码并修改工具包本身，就需要了解 `XMLHttpRequest` 对象。
 
-*   第二部分，“构建真实的 Ajax 应用”——本书的这一部分（也是剩余部分）完全专注于使用 Ajax 解决实际问题。从在数据输入表单中动态将邮政编码解析为城市/州，到在页面中嵌入交互式五星评分系统，这一部分毫不拖泥带水，直击要害。别误会，这仍然是一本有趣的读物，但不要指望看到一堆教程式的说教或关于 Ajax 历史的论文。这一部分尤其注重实践！
-
-*   第三部分，“附录”——这一部分提供了你可能觉得有用的额外信息。附录 A，“Ajax 的过去、现在和未来”，描绘了 Ajax 的起源和发展方向。这对于理解如何为网页添加 Ajax 功能并非关键，但确实能为当前围绕 Ajax 的热议增添一些视角。附录 B，“快速而粗略的 XMLHttpRequest 参考”正是如此——它是作为 Ajax 核心的 JavaScript 对象的参考。由于 Ajax 工具包的存在，本书大部分内容实际上隐藏了这个对象，但如果你想深入挖掘我的代码并修改工具包本身，就需要了解 `XMLHttpRequest` 对象。
-
-    最后，附录 C，“使用 Live Linux CD”，可以说是所有附录中最实用的一个，因为它详细解释了如何使用随书附带的 Live Linux CD。如果你从未使用过甚至从未听说过 Live CD，完全不用担心，也无需成为 Linux 专家或安装 Linux。附录 C 介绍了 Live CD 的作用，并指导你如何根据特定的硬件配置使用它。
+最后，附录 C，“使用 Live Linux CD”，可以说是所有附录中最实用的一个，因为它详细解释了如何使用随书附带的 Live Linux CD。如果你从未使用过甚至从未听说过 Live CD，完全不用担心，也无需成为 Linux 专家或安装 Linux。附录 C 介绍了 Live CD 的作用，并指导你如何根据特定的硬件配置使用它。
 
 ### 关于本书的光盘
+
+
 
 随书附带的光盘将 Live CD 引入了 Ajax 的图景。该光盘包含一个可启动的 Ubuntu（Linux 变体）操作系统，其中包含 Apache Web 服务器以及本书中介绍的所有 Ajax 示例应用。更有趣的是，光盘启动后，你可以直接从光盘运行这些应用，这相当强大，因为否则你需要自己搭建并运行 Web 服务器。
 
@@ -278,22 +332,17 @@ Live Linux CD 可在多种计算机硬件上运行，例如标准 PC 架构（i3
 
 ## 第一部分：Ajax 训练营
 
-|  
-
-&#124;   &#124; 第 1 章 Ajax 与勇敢的新万维网 &#124;
-
- |
-
-|  
-
-&#124;   &#124; 第 2 章 Ajax 应用内部探秘 &#124;
-
- |
+| 章节 |
+| --- |
+| 第 1 章 Ajax 与勇敢的新万维网 |
+| 第 2 章 Ajax 应用内部探秘 |
 
 ### 第 1 章：Ajax 与勇敢的新万维网
 
-Ajax 卡通形象
+#### Ajax 卡通形象
 
+| 图片 | 说明 |
+| --- | --- |
 | ![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcgl0zwovlmdoc29uy3a-.jpg) | Ajax 公司是一家虚构的公司，由米高梅（MGM）用来戏仿华纳兄弟的 Acme 公司，后者在《哔哔鸟》卡通片中频繁出现。Ajax 公司主要出现在《猫和老鼠》卡通片中。 |
 
 前几天，我在一家快餐店等餐时，开始质疑“快”这个字为何会出现在这家店的描述中。我本想找个座位翻翻杂志，而不是在拥挤的大厅里闲逛等待我的“快”餐。这种情况让我想到了 Ajax，以及它如何改善整体 Web 体验。是的，以一种可以说是扭曲的方式，我们可以透过油腻的汉堡包装纸来看 Ajax。稍后你就会明白这一点。
@@ -302,28 +351,19 @@ Ajax 卡通形象
 
 ### 与 Ajax 共进晚餐
 
-
-
-
-
 ## 第一部分：Ajax 训练营
 
-|  
-
-&#124;   &#124; 第 1 章 Ajax 与一个勇敢的新万维网 &#124;
-
- |
-
-|  
-
-&#124;   &#124; 第 2 章 深入 Ajax 应用 &#124;
-
- |
+| 章节 |
+| --- |
+| 第 1 章 Ajax 与一个勇敢的新万维网 |
+| 第 2 章 深入 Ajax 应用 |
 
 ## 第 1 章 Ajax 与一个勇敢的新万维网
 
-Ajax 卡通形象
+#### Ajax 卡通形象
 
+| 图片 | 说明 |
+| --- | --- |
 | ![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcgl0zwovlmdoc29uy3a-.jpg) | Ajax 公司是一个虚构的公司，由米高梅（MGM）用作对华纳兄弟的 Acme 公司的戏仿，Acme 公司在《哔哔鸟》卡通片中频繁出现。Ajax 公司主要出现在《猫和老鼠》卡通片中。 |
 
 前几天我在一家快餐店等餐，开始质疑为什么“快餐”这个词会出现在这家店的描述中。我渴望能坐下来翻翻杂志，而不是在拥挤的大厅里闲逛等待我的“快餐”。这种情况让我想到了 Ajax，以及它如何改善整体网络体验。是的，可以说以一种扭曲的方式，我们可以透过油腻的汉堡包装纸来看待 Ajax。稍后你就会明白。
@@ -340,12 +380,11 @@ Ajax 卡通形象
 
 除了我热爱美食，尤其是外出就餐之外，这个讨论的重点是 Ajax 是一种 Web 开发技术，它可以将你的网页升级为坐下用餐的体验。传统的 Web 应用程序迫使你在服务器搜索或处理数据时等待。Ajax 则不然。Ajax Web 应用程序在后台进行数据处理，让你在此期间继续与网页交互。这似乎是一个微妙的区别，但并非如此。问问你自己，你是愿意在一家不那么快的快餐店排队，还是愿意在一家舒适的餐厅里放松地坐在桌旁？
 
-Note
+#### 注意
 
+| 图片 | 说明 |
+| --- | --- |
 | ![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcgl0zwovlmdoc29uy3a-.jpg) | 我对 Ajax 的餐厅类比有一个小问题，它暗示 Ajax Web 应用程序在某种程度上比传统 Web 应用程序慢。但事实并非如此。Ajax 应用程序在原始数据处理方面并不更快或更慢。事实上，它们常常给人更快的印象，因为处理通常在后台进行，而你甚至没有意识到。 |
-
-
-
 
 前几天我在一家快餐店等餐时，开始思考为什么“快餐”这个词会出现在这家店的描述里。我本想找个座位翻翻杂志，而不是挤在拥挤的大厅里等我的“快”餐。这种情况让我想到了 Ajax，以及它如何改善整体网络体验。是的，用一种可以说有点扭曲的方式，我们可以透过油腻的汉堡包装纸来看 Ajax。稍后你就会明白。
 
@@ -357,20 +396,24 @@ Note
 
 ##### Figure 1.1. 在全方位服务的餐厅里，准备食物的时间相对不被注意，因为你可以自由享受用餐体验。
 
-![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcglhyc2wl2suahnmmwkwyze-.jpg)
+![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcglhy2cwl2suahnmmwkwyze-.jpg)
 
 除了我热爱美食，尤其是外出就餐之外，这个讨论的重点是：Ajax 是一种 Web 开发技术，它能够将你的网页升级为坐下用餐的体验。传统的 Web 应用程序迫使你在服务器搜索或处理数据时等待。而 Ajax 则不然。Ajax Web 应用程序会在后台进行数据处理，同时让你继续与网页交互。这看起来可能是一个微妙的区别，但事实并非如此。问问你自己：你宁愿在一家并不快的快餐店排队，还是在一家坐下用餐的餐厅里放松地坐在舒适的桌边？
 
-注意
+#### 注意
 
+| 图片 | 说明 |
+| --- | --- |
 | ![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcgl0zwovlmdoc29uy3a-.jpg) | 我用餐厅类比 Ajax 的一个小问题是，它暗示 Ajax Web 应用程序比传统 Web 应用程序慢。事实并非如此。Ajax 应用程序在原始数据处理速度上既不快也不慢。实际上，它们往往给人更快的印象，因为处理通常在后台进行，而你甚至没有意识到。 |
 
 ### Ajax、斯汀与异步性
 
 1983 年，警察乐队发行了专辑《Synchronicity》，随后销量数百万张，并推出了《Every Breath You Take》等热门歌曲。我敢打赌斯汀从未想过，几十年后他的专辑标题会成为众多技术书籍和文章中的反派。事实证明，同步性是 Web 用户界面的祸根，因为它意味着一个任务必须完成才能开始另一个任务。在同步网页中，你不能在任务 A 完全完成之前开始任务 B，即使任务 A 需要一段时间。例如，一个同步的在线音乐服务不会允许你在它忙着提供歌曲下载时继续浏览音乐。
 
-注意
+#### 注意
 
+| 图片 | 说明 |
+| --- | --- |
 | ![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcgl0zwovlmdoc29uy3a-.jpg) | 斯汀可能从未将专辑《Synchronicity》与技术世界联系起来的一个原因是，这张专辑实际上指的是瑞士心理学家卡尔·荣格提出的一个心理学原理。在这个语境中，Synchronicity 指的是“有意义的巧合”，即两个看似无关的事情之间有着比单纯巧合更深的联系。如果我在解释技术性计算机话题方面比解释心理学原理更擅长，我表示歉意。 |
 
 另一个与 Ajax 更相关的例子是在线购物车中的运费，这通常是购物交易的关键部分，在某些情况下甚至决定了商品是否值得购买。从一个曾在网上买过汽车的人的角度来说——运费可以成就或毁掉一笔在线交易。问题是，许多购物车设计成在计算并显示运费之前，先收集你的所有信息，在很多情况下包括你的信用卡号。我不知道你怎么想，但如果我还没有决定购买，我绝不会输入我的信用卡号。
@@ -381,12 +424,10 @@ Note
 
 正如我已经提到的，冻结的用户界面只是传统 Web 应用程序问题的一部分。等式的另一面是，每次服务器响应都必须重新加载页面。更具体地说，当服务器返回运费时，页面必须重新加载以反映变化，因为服务器响应的是整个网页。基于服务器响应的每一次页面更改都需要刷新页面。这是一个非常烦人的问题，不仅因为页面重新加载/刷新需要时间，而且每次更改时页面都会闪烁和跳动。
 
-注意
+#### 注意
 
-
-
-
-
+| 图片 | 说明 |
+| --- | --- |
 | ![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcgl0zwovlmdoc29uy3a-.jpg) | 关于是否应该为整个 Web 应用版本号，存在广泛的争论。将如此多样化的庞然大物强行塞入编号系统非常困难，就像你不会把高速公路系统标为“Autobahn 3.0”一样。然而，Web 应用的设计确实存在离散的、演进式的步骤，这一总体观点是完全成立的。所以，高速公路的类比或许并非完全不恰当——把传统 Web 应用想象成土路，而基于 Ajax 的 Web 应用则是柏油州际公路。 |
 
 此外，还有一个显著的效率问题：每次页面重新加载时，整个页面的内容都必须重新发送，即使只更新了一小部分数据（例如运费）。这既浪费带宽，也浪费用户的时间。这类 Web 应用通常被称为 Web 1.0 应用。Ajax 在引领新一代应用（即 Web 2.0 应用）方面发挥着重要作用，这些应用“感觉”更像真正的桌面应用。
@@ -395,7 +436,9 @@ Ajax 通过将服务器请求和响应缩减为仅包含你所需的确切数据
 
 ##### 图 1.2. Ajax 使得在不中断用户体验的情况下计算运费成为可能。
 
-[[查看完整尺寸图片]](mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wlmzwawlnywnhmc9rx2hzddfsmdjj.jpg)![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcglhy2cwl2suahnmmwkwyzi-.jpg)
+[查看完整尺寸图片](mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wlmzwawlnywnhmc9rx2hzddfsmdjj.jpg)
+
+![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcglhy2cwl2suahnmmwkwyzi-.jpg)
 
 ### Ajax 究竟是什么？
 
@@ -407,22 +450,26 @@ Ajax 真正的核心是一个 JavaScript 对象，它使得与 Web 服务器进�
 
 目前，你不需要详细了解实现 Ajax 的 JavaScript 对象的具体细节。下一章将更详细地介绍 Ajax 的具体细节以及如何编写 Ajax 代码。
 
-注意
+#### 注意
 
+| 图片 | 说明 |
+| --- | --- |
 | ![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcgl0zwovlmdoc29uy3a-.jpg) | 请记住，本书的宗旨是为你提供一个即插即用的 Ajax 框架，以最大限度地减少代码开发。你只需对 Ajax 代码及其工作原理有最基本的了解，就能重用本书中的代码。不仅如此，你还可以使用附带的 Linux 光盘直接在电脑上尝试许多示例。 |
 
 ### 现实世界中的 Ajax
 
 本书本质上是不具备交互性的，我可以证明这一点。用手指点击这里，你就会明白我的意思。看，没有出现新页面。考虑到印刷页面是静态的，我鼓励你花点时间在线尝试一些真正的 Ajax 应用，感受它们与传统 Web 应用的区别。接下来的几节将介绍一些更受欢迎且引人注目的 Ajax 应用，并帮助你了解它们从 Ajax 中获益最多的具体功能：
 
-*   Google Suggest
-*   Netflix
-*   Flickr
-*   Google Maps
+- Google Suggest
+- Netflix
+- Flickr
+- Google Maps
 
 由于你可能已经在使用其中一些 Web 应用，当你发现 Ajax 如何使特定功能成为可能时，你会更有洞察力。在完成这个小小的现实世界之旅后，你将重新审视运费计算器示例，该示例基于附带的 Linux 光盘中提供的一个真实 Ajax 应用。
 
 #### Google Suggest
+
+
 
 Google Suggest（[`labs.google.com/suggest/`](http://labs.google.com/suggest/)）是一个相对简单但功能强大的 Ajax 应用的绝佳示例。你会发现，“功能强大”可能是你在探索 Ajax 及其众多可能性时经常想到的词。Google Suggest 是常规的 Google 搜索引擎，但增加了一个建议性文本输入功能，该功能试图根据实际的 Google 搜索数据帮助你缩小搜索范围。
 
@@ -430,23 +477,21 @@ Google Suggest（[`labs.google.com/suggest/`](http://labs.google.com/suggest/)�
 
 当你尝试 Google Suggest 时，从开发角度来看，关键要注意的是它如何在你输入每个字符时无缝地与服务器进行往返通信。想想看，这相当惊人。多么响应迅速的用户界面！这正是 Ajax 旨在赋予现代 Web 应用的“感觉”。第 6 章“通过自动补全读懂用户心思”将再次讨论 Google Suggest，并向你展示如何使用 Ajax 实现你自己的“自动补全”功能。但不必等到第 6 章，现在就去试试 Google Suggest 吧。
 
-#### Netflix
+### Netflix
 
 很可能你已经在不知不觉中享受了 Ajax 带来的舒适体验。如果你使用 Netflix（[`www.netflix.com/`](http://www.netflix.com/)）租借电影，那么从用户角度来看，你已经算得上是 Ajax 老手了。Netflix 使用 Ajax 实现了一个流行的技巧：当鼠标指针悬停在某个信息（此处为电影图标）上时，会自动弹出一个窗口。
 
 如果你只是将鼠标悬停在电影的小图标上，就会弹出一个窗口，显示完整的电影描述和相关电影信息。所有这些电影数据都是在悬停开始时通过 Ajax 在后台从服务器检索的。从用户的角度来看，这完全是锦上添花，因为你甚至没有意识到服务器通信正在进行，直到它结束（弹出窗口出现）。Ajax 再次以完全无缝的方式增加了显著的可用性功能。
 
-
-
-
 关于使用 Ajax 实现弹出窗口，一个有趣的现象是：Netflix 的弹出窗口会在鼠标指针移开相关电影后自动消失。这有助于让用户感觉弹出窗口纯粹是信息性的，而不是那种必须点击才能关闭的烦人广告弹窗——在 Netflix 中，这些弹窗确实是用户界面中受欢迎的补充。即使你没有 Netflix 账户，也能体验 Netflix 上的 Ajax——只需访问 [`www.netflix.com/`](http://www.netflix.com/)，点击“浏览选集”找到一些电影并悬停鼠标即可。顺便提一下，你可以在第 9 章“使用精美弹窗呈现信息”中学习如何将信息性弹窗注入到自己的页面中。
 
-注意
+> **注意**
+>
+> ![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcgl0zwovlmdoc29uy3a-.jpg)
+>
+> 关于 Ajax 用于显示弹出窗口的另一个有趣用法，请查看 [`www.theinvisiblead.com/`](http://www.theinvisiblead.com/) 上的 Invisible Ad 广告服务。这是一个非常非传统的广告概念，涉及一个由微小方块组成的巨大网格，你必须用鼠标悬停才能查看广告。这种广告被称为像素广告，因为你实际上是为屏幕上的每个广告空间像素付费。是开创性的？还是愚蠢的？由你来评判！
 
-| ![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcgl0zwovlmdoc29uy3a-.jpg) | 关于 Ajax 用于显示弹出窗口的另一个有趣用法，请查看 [`www.theinvisiblead.com/`](http://www.theinvisiblead.com/) 上的 Invisible Ad 广告服务。这是一个非常非传统的广告概念，涉及一个由微小方块组成的巨大网格，你必须用鼠标悬停才能查看广告。这种广告被称为像素广告，因为你实际上是为屏幕上的每个广告空间像素付费。是开创性的？还是愚蠢的？由你来评判！ |
-| --- | --- |
-
-#### Flickr
+### Flickr
 
 毫无疑问，到目前为止我最喜欢的商业 Ajax 应用是 Flickr（[`www.flickr.com/`](http://www.flickr.com/)），它最大限度地使用了 Ajax 技术。如果你不熟悉它，Flickr 是一个在线照片分享社区。Flickr 之所以如此特别，在于它彻底地使用 Ajax 来赋予其桌面应用的感觉。在 Flickr 中，很少有任务需要页面重新加载，或者让你在服务器请求/响应期间无所事事地等待。图 1.3 展示了在 Flickr 中编辑照片说明是多么直观，这要归功于 Ajax 的大量运用。
 
@@ -458,7 +503,7 @@ Google Suggest（[`labs.google.com/suggest/`](http://labs.google.com/suggest/)�
 
 Flickr 在使用 Ajax 方面并不止于照片说明编辑。Ajax 以各种巧妙的方式渗透到 Flickr 的用户界面中。我可以再花几页篇幅来详细讲解，或者我也可以直接让你自己去尝试。你需要创建一个免费的 Flickr 账户才能真正体验其用户界面，但这只需要几个简单的步骤。你可以从 [`www.flickr.com/`](http://www.flickr.com/) 开始。
 
-#### Google Maps
+### Google Maps
 
 我必须承认，将 Flickr 称为我最喜欢的商业 Ajax 应用让我有点心痛，因为还有另一个我钟爱的应用。我说的是 Google Maps（[`maps.google.com/`](http://maps.google.com/)），它在很多方面都是 Ajax 应用的教父。就在几年前，全球的 Web 开发者还在挠头思考 Google Maps 怎么可能做到它正在做的事情，而且速度如此之快。事实证明，Google Maps 的秘诀过去是、现在仍然是 Ajax。在我看来，Google Maps 仍然是在后台处理数据以改善用户体验的终极范例。
 
@@ -472,19 +517,15 @@ Google Maps 采用的主要技巧是不断预测并在需要之前加载地图�
 
 本章前面部分你已经了解了 Ajax 解决的主要问题。从这些问题出发，可以列出一系列 Ajax 非常有意义的场景。通过分析这个场景列表，也可以确定 Ajax 何时不是理想的解决方案。使用这个列表作为基础，尝试判断 Ajax 是否真正有助于你的网页。请理解，这个列表并非包罗万象，而是旨在作为评估 Ajax 实际用途的通用指南。如下所示：
 
-*   首先也是最重要的，Ajax 总是涉及服务器通信，或者更具体地说，数据从服务器流向客户端 Web 浏览器。如果你的网页不需要访问 Web 服务器获取某种数据，那么使用 Ajax 就没有意义。你当然仍然可以使用 JavaScript 让页面更具交互性，但 Ajax 并非严格必要。
+- 首先也是最重要的，Ajax 总是涉及服务器通信，或者更具体地说，数据从服务器流向客户端 Web 浏览器。如果你的网页不需要访问 Web 服务器获取某种数据，那么使用 Ajax 就没有意义。你当然仍然可以使用 JavaScript 让页面更具交互性，但 Ajax 并非严格必要。
+- Ajax 的关键点之一是无需刷新/重新加载即可更新页面。如果你的应用程序本质上需要打开一个新页面，例如在一系列离散页面中链接到一个新页面，那么 Ajax 可能不是答案。另一方面，也许你可以将多个页面合并成一个由 Ajax 驱动的、无需重新加载的页面。
 
-*   Ajax 的关键点之一是无需刷新/重新加载即可更新页面。如果你的应用程序本质上需要打开一个新页面，例如在一系列离散页面中链接到一个新页面，那么 Ajax 可能不是答案。另一方面，也许你可以将多个页面合并成一个由 Ajax 驱动的、无需重新加载的页面。
-
-    注意
-
-    | ![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcgl0zwovlmdoc29uy3a-.jpg) | 有些人错误地将任何高度响应的 Web 用户界面称为“Ajax 用户界面”。严格来说，至少在我看来，这样的界面必须涉及服务器通信才能算作 Ajax 解决方案。这并不是说响应式用户界面与 Ajax 没有紧密联系，因为它们确实有。但事实仍然是，Ajax 是关于异步从服务器获取数据。我并不是在语义上对什么是 Ajax、什么不是 Ajax 吹毛求疵；我只是想帮助你了解何时使用 Ajax 是有意义的。 |
-    | --- | --- |
-
-
-
-
-*   Ajax 的另一个关键点是异步通信，即 Ajax 如何在后台传输数据，以便前台可以处理其他事务。如果你的应用程序明确要求一件事必须在另一件事之前发生，那么 Ajax 可能不是一个好主意。例如，某些用户输入数据块必须在继续之前进行验证，在这种情况下，你可能确实需要打开一个新页面或让用户等待数据验证完成。无论哪种情况，Ajax 都帮不上什么忙。
+  > **注意**
+  >
+  > ![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcgl0zwovlmdoc29uy3a-.jpg)
+  >
+  > 有些人错误地将任何高度响应的 Web 用户界面称为“Ajax 用户界面”。严格来说，至少在我看来，这样的界面必须涉及服务器通信才能算作 Ajax 解决方案。这并不是说响应式用户界面与 Ajax 没有紧密联系，因为它们确实有。但事实仍然是，Ajax 是关于异步从服务器获取数据。我并不是在语义上对什么是 Ajax、什么不是 Ajax 吹毛求疵；我只是想帮助你了解何时使用 Ajax 是有意义的。
+- Ajax 的另一个关键点是异步通信，即 Ajax 如何在后台传输数据，以便前台可以处理其他事务。如果你的应用程序明确要求一件事必须在另一件事之前发生，那么 Ajax 可能不是一个好主意。例如，某些用户输入数据块必须在继续之前进行验证，在这种情况下，你可能确实需要打开一个新页面或让用户等待数据验证完成。无论哪种情况，Ajax 都帮不上什么忙。
 
 我在这里想强调的是，Ajax 在正确使用时非常强大，但知道何时使用它同样重要。以上三点应作为评估是否值得将 Ajax 引入应用程序的指南。此外，你在本书后续章节中探索的示例将进一步阐明 Ajax 应在何时以及如何融入你的网页。
 
@@ -504,9 +545,11 @@ Google Maps 采用的主要技巧是不断预测并在需要之前加载地图�
 
 [[查看完整尺寸图片]](mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wlmdwcglqywnhmc9rx2hzddfsmdhj.jpg)![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcglhy2owl2suahnnmxawyzg-.jpg)
 
-注意
-
-| ![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcgl0zwovlmdoc29uy3a-.jpg) | USPS Web Tools API 允许你通过 Ajax 获取运费，同时还支持运输信息的验证。例如，你可以利用 USPS 服务器根据邮政编码查找城市和州，从而完全消除两项用户输入信息，将订单输入提升到一个全新的水平。你将在第 11 章“构建 Ajax 运费计算器”中了解更多关于 USPS Web Tools API 的内容，届时我们将在真实 Ajax 应用的背景下更详细地剖析运费计算器示例。 |
+> **注意**
+>
+> ![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcgl0zwovlmdoc29uy3a-.jpg)
+>
+> USPS Web Tools API 允许你通过 Ajax 获取运费，同时还支持运输信息的验证。例如，你可以利用 USPS 服务器根据邮政编码查找城市和州，从而完全消除两项用户输入信息，将订单输入提升到一个全新的水平。你将在第 11 章“构建 Ajax 运费计算器”中了解更多关于 USPS Web Tools API 的内容，届时我们将在真实 Ajax 应用的背景下更详细地剖析运费计算器示例。
 
 一旦邮政编码完全输入，并且我移动到用户界面中的下一个字段（电话号码），运费就会神奇地出现，结账总额也会被计算出来（参见图 1.6）。这个运费是在后台直接从美国邮政服务服务器获取的，然后显示在页面上，没有任何明显的延迟或页面中断。
 
@@ -530,14 +573,13 @@ Google Maps 采用的主要技巧是不断预测并在需要之前加载地图�
 
 任何为网络开发应用程序的人都应该思考如何让他们的应用程序变得更好：更具交互性、更直观、更不像旧式网络。我们正站在一个激动人心的新网络的边缘，它有潜力抹去网络应用和桌面应用之间的界限。仔细想想，这种区别又有什么关系呢？应用程序只是用计算机做一些有用或有趣的事情的一种方式，而 Ajax 是一种可以让许多在线应用程序显著改进的工具。本书的其余部分将向你展示如何利用 Ajax 让你的应用程序变得更好。
 
-### 第 2 章 Ajax 应用内部探秘
+## 第 2 章 Ajax 应用内部探秘
 
-海上 Ajax
+### 海上 Ajax
 
-| ![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcgl0zwovlmdoc29uy3a-.jpg) | 美国海军多年来有多艘舰船以 Ajax 命名，第一艘 USS Ajax 于 1864 年下水。最近的一艘 USS Ajax 是一艘修理船，曾在第二次世界大战和越南战争中服役，最终于 1986 年退役。 |
-
-
-
+> ![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcgl0zwovlmdoc29uy3a-.jpg)
+>
+> 美国海军多年来有多艘舰船以 Ajax 命名，第一艘 USS Ajax 于 1864 年下水。最近的一艘 USS Ajax 是一艘修理船，曾在第二次世界大战和越南战争中服役，最终于 1986 年退役。
 
 如果说有什么让我讨厌的，那就是那些花前五章为后续内容打基础的计算机书籍。太多书感觉像是要教你一点所有东西，而不是专注于手头的一个主题。因此，本章开头只做一点铺垫，然后直接深入 Ajax 的核心。如果你觉得自己需要复习一下 HTML 和 CSS，或者觉得快速学习 JavaScript 或 XML 教程会有帮助，那么尽管停下来去复习吧。但别指望我会浪费你整个下午手把手带你过这些主题——我们还有 Ajax 的事情要处理。
 
@@ -545,14 +587,14 @@ Google Maps 采用的主要技巧是不断预测并在需要之前加载地图�
 
 本章中 Booker 应用程序使用了以下文件，它们位于随书附带的 live Linux CD-ROM 的 `chap02` 示例代码文件夹中：
 
-*   `booker.html`——主网页
-*   `ajaxkit.js`——Ajax 工具包的核心 Ajax 函数
-*   `domkit.js`——Ajax 工具包的 DOM 相关函数
-*   `book_alicewonderland.xml`——《爱丽丝梦游仙境》XML 电子书
-*   `book_frankenstein.xml`——《弗兰肯斯坦》XML 电子书
-*   `book_mobydick.xml》——《白鲸》XML 电子书
-*   `book_warandpeace.xml》——《战争与和平》XML 电子书
-*   `book_warofworlds》——《世界大战》XML 电子书
+- `booker.html`——主网页
+- `ajaxkit.js`——Ajax 工具包的核心 Ajax 函数
+- `domkit.js`——Ajax 工具包的 DOM 相关函数
+- `book_alicewonderland.xml`——《爱丽丝梦游仙境》XML 电子书
+- `book_frankenstein.xml`——《弗兰肯斯坦》XML 电子书
+- `book_mobydick.xml`——《白鲸》XML 电子书
+- `book_warandpeace.xml`——《战争与和平》XML 电子书
+- `book_warofworlds`——《世界大战》XML 电子书
 
 ### Ajax 的基本要素
 
@@ -560,27 +602,29 @@ Google Maps 采用的主要技巧是不断预测并在需要之前加载地图�
 
 ##### 图 2.1. HTML、CSS、JavaScript、XML 以及像 PHP 这样的服务器程序共同协调 Ajax 请求和响应。
 
+
+
 ![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcglmawcwl2cuahnmmmkwyze-.jpg)
 
 注意图中 Ajax 请求/响应过程有序展开，如数字 1 到 3 所示。在接下来的几节中，当你了解更多关于不同 Ajax 组件如何组合在一起时，请记住这张图。
 
-#### HTML 和 CSS
+## HTML 和 CSS
 
 没有一点 HTML 就很难创建任何网页，因为它是网络的语言。在 Ajax 应用程序中，HTML 仍然作为页面内容的结构部分，例如文本、图像、表单字段等。事实上，Ajax 应用程序中的大部分 HTML 代码并没有什么特别之处——有趣的事情主要发生在 JavaScript 代码中，我稍后会讲到。
 
 如果你在过去几年中做过任何网页创建，你可能已经对层叠样式表（CSS）以及它们对创建视觉吸引人的网页有多重要有了认识。CSS 允许你将网页的外观与其结构清晰地分离，最终结果是页面更易于维护，更不用说更美观了。CSS 进入 Ajax 画面是因为它提供了一种应用样式来动态改变 HTML 内容外观和感觉的方法。例如，你可能想通过 Ajax 请求对数据库验证数据后，高亮显示一个无效的数据输入字段。在这个例子中，高亮显示将通过 CSS 在 HTML 表单元素上执行。
 
-#### JavaScript
+## JavaScript
 
 JavaScript 在 Ajax 中的工作是协调等式客户端的一切，包括浏览器必须执行的任何和所有逻辑。不要忘记 Ajax 的本质是客户端（浏览器）和服务器（Web 服务器）之间的数据交换，所以在设计和构建 Ajax 应用程序时，你总是要从客户端/服务器通信的角度思考。JavaScript 代码在浏览器上运行，用于发起 Ajax 请求并处理服务器返回的结果数据。
 
 你使用 JavaScript 来打包用户数据以发送到服务器，以及接收服务器的响应并以有意义的方式呈现给用户。当然，这意味着 HTML 和 CSS 在 Ajax 应用程序的 JavaScript 代码中占有重要地位，JavaScript 通常利用文档对象模型（DOM）根据 Ajax 响应动态修改 HTML 元素。图 2.1 中的虚线表示 JavaScript 使用 DOM 动态修改 HTML 和 CSS 代码的能力。
 
-注意
+> **注意**
+>
+> 你不需要理解如何用 JavaScript 编程就能在自己的网页中重用本书中的示例。然而，如果不深入 JavaScript 代码，就不可能深入探索 Ajax，所以如果你打算将任何示例代码提升到另一个层次，对 JavaScript 有一个粗略的理解是很重要的。
 
-你不需要理解如何用 JavaScript 编程就能在自己的网页中重用本书中的示例。然而，如果不深入 JavaScript 代码，就不可能深入探索 Ajax，所以如果你打算将任何示例代码提升到另一个层次，对 JavaScript 有一个粗略的理解是很重要的。
-
-#### XML 和 Ajax 数据
+## XML 和 Ajax 数据
 
 好了，你知道 Ajax 网页仍然由 HTML 和 CSS 组成，并且可以通过巧妙的 JavaScript 代码动态调整，这些代码管理 Ajax 请求和响应。我还没有解释在 Ajax 请求/响应序列中客户端和服务器之间发送的数据的性质。部分原因是 Ajax 事务中的数据格式并不是一成不变的。你可以自由使用多种数据格式来满足每个应用程序的特定需求。换句话说，你可以为每个 Ajax 应用程序仔细定制数据的表示。
 
@@ -588,13 +632,13 @@ JavaScript 在 Ajax 中的工作是协调等式客户端的一切，包括浏览
 
 虽然 XML 是一件非常好的事情，但它并不是解决每个 Ajax 问题的神奇方案。事实上，使用纯文本数据作为 Ajax 数据交换格式是完全可接受的，并且在许多情况下是可取的。例如，将数据作为简单的名称/值对传递给服务器非常简洁，就像你在 URL 中经常看到的那样，例如：
 
-```
+```text
 fname=Michael&lname=Morrison
 ```
 
 将其与相同信息的 XML 结构进行比较：
 
-```
+```xml
 <fname>Michael</fname>
 <lname>Morrison</lname>
 ```
@@ -603,12 +647,9 @@ fname=Michael&lname=Morrison
 
 底线是，在 Ajax 应用程序中穿梭的数据格式完全取决于应用程序的特定需求。在整本书中，你会遇到使用多种不同数据类型的应用程序，包括纯文本、XML 和另一种称为 JSON（JavaScript 对象表示法）的类型。
 
-#### PHP 和服务器
+## PHP 和服务器
 
 Ajax 的一个经常被新手误解的方面是，它完全依赖于一个服务器程序来接受请求并以某种方式响应。服务器程序是熟悉的异步 JavaScript + XML 配方中的隐藏成分，你通常看到它与术语 Ajax 相关联。在实际层面上，这意味着你不能仅仅用一些 JavaScript 代码组装一个网页就搞出一个 Ajax 应用程序——必须有一个服务器端组件来响应来自客户端的请求。
-
-
-
 
 Ajax 应用中服务器程序的作用完全取决于具体的 Ajax 应用，但通常你会发现，大多数 Ajax 服务器程序负责查找某些信息并将其返回给客户端。例如，一个 Ajax 员工目录应用可能会将员工 ID 传递给服务器，服务器程序在数据库中查找该 ID，并返回员工的姓名和联系信息。或者，就像你在上一章思考的例子中那样，关于待运物品的信息可能被传递给服务器，然后服务器查找运费并返回。
 
@@ -616,9 +657,9 @@ Ajax 应用中服务器程序的作用完全取决于具体的 Ajax 应用，但
 
 PHP 代码以及所有服务器端脚本的有趣之处在于，它们最终都会将数据传回客户端。在使用 PHP 时，你必须始终牢记，无论你做什么，最终都会归结为将数据传回浏览器。在 Ajax 应用中，PHP 脚本将数据传回 Ajax 请求。
 
-## 第 2 章 Ajax 应用内部
+# 第 2 章 Ajax 应用内部
 
-海上 Ajax
+## 海上 Ajax
 
 | ![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcgl0zwovlmdoc29uy3a-.jpg) | 多年来，美国海军有多艘舰船以 Ajax 命名，第一艘 USS Ajax 于 1864 年下水。最近的一艘 USS Ajax 是一艘修理船，曾在第二次世界大战和越南战争中服役，最终于 1986 年退役。 |
 
@@ -628,45 +669,44 @@ PHP 代码以及所有服务器端脚本的有趣之处在于，它们最终都�
 
 本章中 Booker 应用使用了以下文件，它们位于随书附带的 Linux 光盘的 `chap02` 示例代码文件夹中：
 
-*   `booker.html`——主网页
-*   `ajaxkit.js`——Ajax 工具包的核心 Ajax 函数
-*   `domkit.js`——Ajax 工具包的 DOM 相关函数
-*   `book_alicewonderland.xml`——爱丽丝梦游仙境 XML 电子书
-*   `book_frankenstein.xml`——弗兰肯斯坦 XML 电子书
-*   `book_mobydick.xml》——白鲸记 XML 电子书
-*   `book_warandpeace.xml`——战争与和平 XML 电子书
-*   `book_warofworlds`——世界大战 XML 电子书
+- `booker.html`——主网页
+- `ajaxkit.js`——Ajax 工具包的核心 Ajax 函数
+- `domkit.js`——Ajax 工具包的 DOM 相关函数
+- `book_alicewonderland.xml`——爱丽丝梦游仙境 XML 电子书
+- `book_frankenstein.xml`——弗兰肯斯坦 XML 电子书
+- `book_mobydick.xml`——白鲸记 XML 电子书
+- `book_warandpeace.xml`——战争与和平 XML 电子书
+- `book_warofworlds`——世界大战 XML 电子书
 
-### Ajax 的核心要素
+## Ajax 的核心要素
 
 你现在可能已经很好地理解了 Ajax 与其说是一种单一技术，不如说是其他技术的特定应用。理解这些其他技术如何在 Ajax 应用的上下文中协同工作，对于理解如何构建和修改你自己的 Ajax 应用非常重要。因此，让我们探讨一下构成 Ajax 的组件技术。图 2.1 展示了在典型的 Ajax 应用中，主要 Ajax 技术是如何协同工作的。
 
-##### 图 2.1. HTML、CSS、JavaScript、XML 以及像 PHP 这样的服务器程序共同协作，协调 Ajax 请求和响应。
+### 图 2.1
+
+HTML、CSS、JavaScript、XML 以及像 PHP 这样的服务器程序共同协作，协调 Ajax 请求和响应。
 
 ![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcglmawcwl2cuahnmmmkwyze-.jpg)
 
 注意图中 Ajax 请求/响应过程有序展开，如数字 1 到 3 所示。在接下来的几节中，当你了解更多关于不同 Ajax 组件如何协同工作的内容时，请记住这张图。
 
-#### HTML 和 CSS
+### HTML 和 CSS
 
 没有一点 HTML 就很难创建任何网页，因为它是网络的语言。在 Ajax 应用中，HTML 仍然作为页面内容的结构部分，例如文本、图像、表单字段等。事实上，Ajax 应用中的大部分 HTML 代码并没有什么特别之处——有趣的事情主要发生在 JavaScript 代码中，我稍后会讲到。
 
 如果你在过去几年中做过任何网页创建，你可能已经对层叠样式表（CSS）及其对创建视觉吸引人的网页的重要性有所了解。CSS 允许你将网页的外观与其结构清晰分离，最终结果是页面更易于维护，更不用说更美观了。CSS 进入 Ajax 画面，因为它为你提供了一种应用样式来动态改变 HTML 内容外观和感觉的方法。例如，你可能希望在通过 Ajax 请求对数据库进行数据验证后，高亮显示一个无效的数据输入字段。在这个例子中，高亮显示将通过 CSS 在 HTML 表单元素上执行。
 
-#### JavaScript
+### JavaScript
 
 JavaScript 在 Ajax 中的工作是协调客户端的一切，包括浏览器必须执行的所有逻辑。不要忘记，Ajax 的本质是客户端（浏览器）和服务器（Web 服务器）之间的数据交换，因此在设计和构建 Ajax 应用时，你总是要从客户端/服务器通信的角度思考。JavaScript 代码在浏览器上运行，用于发起 Ajax 请求并处理服务器返回的结果数据。
 
 你使用 JavaScript 将用户数据打包发送到服务器，以及接收服务器的响应并以有意义的方式呈现给用户。当然，这意味着 HTML 和 CSS 在 Ajax 应用的 JavaScript 代码中占据重要地位，JavaScript 通常利用文档对象模型（DOM）根据 Ajax 响应动态更改 HTML 元素。图 2.1 中的虚线表示 JavaScript 使用 DOM 动态更改 HTML 和 CSS 代码的能力。
 
-注意
+> **注意**
+>
+> 你不需要理解如何用 JavaScript 编程，就能在自己的网页中重用本书中的示例。然而，如果不深入 JavaScript 代码，就不可能深入探索 Ajax，因此如果你打算将任何示例代码提升到另一个层次，对 JavaScript 有一个粗略的理解是很重要的。
 
-你不需要理解如何用 JavaScript 编程，就能在自己的网页中重用本书中的示例。然而，如果不深入 JavaScript 代码，就不可能深入探索 Ajax，因此如果你打算将任何示例代码提升到另一个层次，对 JavaScript 有一个粗略的理解是很重要的。
-
-#### XML 和 Ajax 数据
-
-
-
+### XML 和 Ajax 数据
 
 好的，那么你知道一个 Ajax 网页仍然由 HTML 和 CSS 构成，并且可以通过管理 Ajax 请求和响应的巧妙 JavaScript 代码进行动态调整。我还没有解释在 Ajax 请求/响应序列中客户端和服务器之间发送的数据的本质。部分原因在于 Ajax 事务中的数据格式并非一成不变。你可以自由使用多种数据格式来满足每个应用程序的特定需求。换句话说，你可以根据每个 Ajax 应用程序精心定制数据的表示形式。
 
@@ -674,13 +714,13 @@ JavaScript 在 Ajax 中的工作是协调客户端的一切，包括浏览器必
 
 虽然 XML 非常好，但它并不是解决每个 Ajax 问题的神奇方案。事实上，使用纯文本数据作为 Ajax 数据交换格式是完全可接受的，并且在许多情况下是可取的。例如，像 URL 中常见的那样，将数据作为简单的名称/值对传递给服务器非常简洁，比如：
 
-```
+```text
 fname=Michael&lname=Morrison
 ```
 
 将其与相同信息的 XML 结构进行比较：
 
-```
+```xml
 <fname>Michael</fname>
 <lname>Morrison</lname>
 ```
@@ -689,7 +729,7 @@ fname=Michael&lname=Morrison
 
 底线是，在 Ajax 应用程序中穿梭的数据格式完全取决于应用程序的特定需求。在本书中，你将遇到使用多种不同数据类型的应用程序，包括纯文本、XML 以及另一种称为 JSON（JavaScript 对象表示法）的类型。
 
-#### PHP 与服务器
+### PHP 与服务器
 
 Ajax 的一个常被新手误解的方面是，它完全依赖于服务器程序接受请求并以某种方式响应。服务器程序是熟悉的异步 JavaScript + XML 配方中的隐藏成分，这个配方通常与 Ajax 术语相关联。在实际层面上，这意味着你不能仅仅用一些 JavaScript 代码组装一个网页就搞出一个 Ajax 应用程序——必须有一个服务器端组件来响应来自客户端的请求。
 
@@ -699,36 +739,43 @@ Ajax 应用程序中服务器程序的角色完全取决于每个 Ajax 应用程
 
 关于 PHP 代码以及所有服务器端脚本的有趣之处在于，它们最终都会将数据传回客户端。在使用 PHP 时，你必须始终记住，无论你在做什么，最终都会将数据传回浏览器。在 Ajax 应用程序的情况下，PHP 脚本将数据传回 Ajax 请求。
 
-### Ajax 请求生命周期
+## Ajax 请求生命周期
 
-每个 Ajax 请求都会经历一个可预测的生命周期，在开始深入了解 Ajax 应用程序的内部机制之前，理解这一点很重要。Ajax 生命周期中的每个里程碑都对应于 `XMLHttpRequest` 对象内的一个不同状态，该对象是作为 Ajax 核心的 JavaScript 对象。你稍后将了解的 Ajax 工具包会屏蔽掉 `XMLHttpRequest` 对象的大部分内部工作原理，但了解它的一些工作方式仍然值得。关于该对象的完整剖析，请查看附录 B，“快速而粗略的 XMLHttpRequest 参考”。
+每个 Ajax 请求都会经历一个可预测的生命周期，在开始深入了解 Ajax 应用程序的内部机制之前，理解这一点很重要。Ajax 生命周期中的每个里程碑都对应于 `XMLHttpRequest` 对象内的一个不同状态，该对象是作为 Ajax 核心的 JavaScript 对象。你稍后将了解的 Ajax 工具包会屏蔽掉 `XMLHttpRequest` 对象的大部分内部工作原理，但了解它的一些工作方式仍然值得。关于该对象的完整剖析，请查看附录 B，“快速而粗略的 `XMLHttpRequest` 参考”。
 
 以下是 Ajax 请求从创建到提交再到成功响应所经历的五个状态：
 
-1.  `UNINITIALIZED`——请求未初始化。
-2.  `LOADING`——请求已初始化。
-3.  `LOADED`——请求已发送，正在等待服务器确认。
-4.  `INTERACTIVE`——正在从服务器下载响应数据。
-5.  `COMPLETE`——请求/响应周期完成。
+1. `UNINITIALIZED`——请求未初始化。
+2. `LOADING`——请求已初始化。
+3. `LOADED`——请求已发送，正在等待服务器确认。
+4. `INTERACTIVE`——正在从服务器下载响应数据。
+5. `COMPLETE`——请求/响应周期完成。
 
 生命周期中每个状态的大写名称直接对应于 `XMLHttpRequest` 对象的内部状态。关于这个生命周期的好消息是，你通常只关心最后一个状态 `COMPLETE`，这是有道理的，因为直到请求完成并且其结果数据可用时，你才需要采取任何操作。然而，从诊断的角度来看，窥视事务并确保其按预期在生命周期中进展通常是有帮助的。因此，本书附带的 CD-ROM 上提供的 Ajax 工具包包含一个诊断功能，可以在 Ajax 请求发生时直观地显示每个状态。
 
-注意
-
-| ![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcgl0zwovlmdoc29uy3a-.jpg) | 考虑到 Booker 示例应用程序的性质，你可能会认为这是一个使用同步应用程序的绝佳机会，因为除了等待书籍加载之外，没有太多事情可做。但是，如果在下载书籍的过程中你改变了主意呢？如果用户界面在加载过程中没有阻止你进行其他选择，那会好得多。通过使用 Ajax，你可以在加载一本书的同时自由选择另一本书。在这种情况下，当前的 Ajax 请求会被取消，第二本书会立即开始加载。 |
+> **注意**
+>
+> ![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcgl0zwovlmdoc29uy3a-.jpg)
+>
+> 考虑到 Booker 示例应用程序的性质，你可能会认为这是一个使用同步应用程序的绝佳机会，因为除了等待书籍加载之外，没有太多事情可做。但是，如果在下载书籍的过程中你改变了主意呢？如果用户界面在加载过程中没有阻止你进行其他选择，那会好得多。通过使用 Ajax，你可以在加载一本书的同时自由选择另一本书。在这种情况下，当前的 Ajax 请求会被取消，第二本书会立即开始加载。
 
 图 2.2 显示了一个名为 Booker 的 Ajax 示例应用程序，它正在执行请求的过程中。Booker 示例应用程序是一个简单的电子书阅读器。
 
-##### 图 2.2\. 页面顶部的诊断栏显示了书籍查看器示例中 Ajax 请求的状态。
+### 图 2.2
 
-[[查看全尺寸图像]](mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wlmdwcglqywnhmc9rx2hzddjsmdjj.jpg)![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcglhy2owl2suahnnmnawyzi-.jpg)
+页面顶部的诊断栏显示了书籍查看器示例中 Ajax 请求的状态。
 
+[[查看全尺寸图像]](mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wlmdwcglqywnhmc9rx2hzddjsmdjj.jpg)
 
-
+![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcglhy2owl2suahnnmnawyzi-.jpg)
 
 在此示例中，H.G. 威尔斯所著的《世界大战》一书的全文正通过 Ajax 请求加载并显示。由于该书有几百千字节大小，请求完成需要一些时间，具体取决于连接速度。图 2.2 展示了应用处于 `INTERACTIVE`（“正在下载响应...”）状态，这意味着服务器响应（书籍文本）正在下载。请注意，书籍文本将要显示的区域包含消息“加载中...”，以表明目前没有内容显示是有原因的。片刻之后，请求状态变为 `COMPLETE`（“请求完成！”），书籍文本出现在页面的主要部分（参见图 2.3）。
 
-##### 图 2.3. 请求完成后，电子书的完整文本出现。
+### 图 2.3
+
+请求完成后，电子书的完整文本出现。
+
+
 
 [[查看完整尺寸图片]](mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wlmdwcglqywnhmc9rx2hzddjsmdnj.jpg)![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcglhy2owl2suahnnmnawyzm-.jpg)
 
@@ -750,16 +797,16 @@ Ajax 应用程序中服务器程序的角色完全取决于每个 Ajax 应用程
 
 我的便捷 Ajax 工具包由几个 JavaScript 文件组成，每个文件都包含 JavaScript 函数和相关的辅助代码：
 
-*   `ajaxkit.js`——核心 Ajax
-*   `domkit.js`——DOM（文档对象模型）
-*   `modalimgkit.js`——模态图片
-*   `validatekit.js`——数据验证
-*   `infowinkit.js`——信息窗口
-*   `ratingkit.js`——五星评级
+- `ajaxkit.js`——核心 Ajax
+- `domkit.js`——DOM（文档对象模型）
+- `modalimgkit.js`——模态图片
+- `validatekit.js`——数据验证
+- `infowinkit.js`——信息窗口
+- `ratingkit.js`——五星评级
 
 所谓“辅助代码”，是指这些文件提供了预构建的代码，旨在让某些任务变得极其简单。并非所有文件都会包含在你开发的每个 Ajax 驱动的网页中——你可以根据需要按需使用。例如，以下是将前两个文件导入页面的代码，必须放在页面的 `<head>` 中：
 
-```
+```html
 <script type="text/javascript" src="ajaxkit.js"> </script>
 <script type="text/javascript" src="domkit.js"> </script>
 ```
@@ -772,7 +819,7 @@ Ajax 应用程序中服务器程序的角色完全取决于每个 Ajax 应用程
 
 工具包的 `ajaxkit.js` 部分仅包含两个 JavaScript 函数，分别用于处理提交 Ajax 请求和更新 Ajax 诊断栏：
 
-```
+```javascript
 ajaxSendRequest(type, url, handler, postDataType, postData)
 ajaxUpdateState()
 ```
@@ -785,7 +832,7 @@ ajaxUpdateState()
 
 为了展示 `ajaxSendRequest()` 函数使用起来并不太难，以下是 Booker 电子书查看器示例中使用的确切 Ajax 请求：
 
-```
+```javascript
 ajaxSendRequest("GET", "book_" + title + ".txt", handleRequest);
 ```
 
@@ -793,11 +840,9 @@ ajaxSendRequest("GET", "book_" + title + ".txt", handleRequest);
 
 `ajaxUpdateState()` 函数用于更新你在图 2.2 和图 2.3 中看到的 Ajax 诊断栏。你最终会在创建的自定义处理函数中调用此函数来响应请求，如下所示：
 
-```
+```javascript
 ajaxUpdateState();
 ```
-
-
 
 调用 JavaScript 函数，就是告诉该函数执行其设计好的任务。处理函数（handler function）就是响应某个事件而被调用的函数。例如，鼠标点击事件处理函数会在每次鼠标点击时被调用。类似地，每个 Ajax 应用都有一个自定义的请求处理函数，每当请求状态发生变化时就会被调用。这就是为什么在本章稍早部分学习请求状态如此重要。你将在“拆解电子书阅读器”一节中重新审视请求状态，并确切了解它们如何融入 Ajax 工具包的方程式中。
 
@@ -805,13 +850,13 @@ ajaxUpdateState();
 
 回到 Ajax 工具包的各个组成部分，`domkit.js` 文件包含多个执行不同 DOM 任务的函数。例如，`replaceText()` 函数负责更改页面上某个元素的文本：
 
-```
+```javascript
 replaceText(elem, text)
 ```
 
 如果你之前做过任何 JavaScript 编程，可能熟悉大多数 HTML 元素的 `innerHTML` 属性，它用于更改页面上元素的值。按照现代 Web 标准，使用该属性被认为已经过时，现在鼓励你在大多数情况下使用 DOM 的新特性来更改元素内容。然而，这种新方法并不像设置单个属性那么简单。为了避免让你重复编写多行不必要的代码，我选择创建一个名为 `replaceText()` 的函数来为你完成内容替换。你只需传入元素及其新内容，`replaceText()` 函数会处理其余部分。例如，下面这行代码将存储在 `firstName` 中的元素内容更改为 `"Michael"`：
 
-```
+```javascript
 replaceText(firstName, "Michael");
 ```
 
@@ -819,7 +864,7 @@ replaceText(firstName, "Michael");
 
 与 `replaceText()` 类似的是 `getText()` 函数，它使用 DOM 提取 HTML 元素的内容：
 
-```
+```javascript
 getText(elem);
 ```
 
@@ -827,7 +872,7 @@ getText(elem);
 
 `domkit.js` 文件还包含四个用于确定浏览器窗口客户区大小的函数，这在精心放置页面元素时非常有用：
 
-```
+```javascript
 getClientWidth()
 getClientHeight()
 getClientLeft()
@@ -838,7 +883,7 @@ getClientTop()
 
 `domkit.js` 文件中的最后一个函数用于获取浏览器存储的 cookie 关联数据：
 
-```
+```javascript
 getCookieData(cookieName)
 ```
 
@@ -848,7 +893,7 @@ getCookieData(cookieName)
 
 工具包的 `modalimgkit.js` 部分包含一个单一的 JavaScript 函数，用于为网页添加模态图像支持：
 
-```
+```javascript
 initModal()
 ```
 
@@ -858,7 +903,7 @@ initModal()
 
 工具包的 `validatekit.js` 部分提供了几个用于验证不同类型用户输入的有用函数：
 
-```
+```javascript
 validateNonEmpty(inputControl, helpControl)
 validateInteger(inputControl, helpControl)
 validateNumber(inputControl, helpControl)
@@ -874,7 +919,7 @@ validateDate(inputControl, helpControl)
 
 工具包的 `infowinkit.js` 部分包含用于向页面添加 Ajax 驱动的信息弹出窗口的函数：
 
-```
+```javascript
 initInfoWindow(width, height)
 showInfoWindow(infoURL, evt)
 ```
@@ -885,7 +930,7 @@ showInfoWindow(infoURL, evt)
 
 工具包的 `ratingkit.js` 部分实现了一个五星评分系统，可以添加到任何网站，包括为多个项目添加评分支持：
 
-```
+```javascript
 initRatings()
 setRating(id, rating)
 ```
@@ -900,130 +945,148 @@ setRating(id, rating)
 
 Booker 示例有些独特，因为它不需要在服务器端进行任何自定义开发。由于所有 Ajax 请求所做的只是从 Web 服务器加载整个电子书文本文件，因此只需要服务器本身即可。如果应用要提取一本书的某一部分（例如单个章节），那么你可能需要在服务器上开发一个自定义程序。
 
-
-
 当然，客户端仍然需要一些自定义编程，以响应用户从选择列表中选择电子书的操作。然后，这段自定义代码必须异步从服务器加载电子书，并将其显示在页面上。从很多方面来看，这是所有 Ajax 请求中最基础的一种，因为你不需要向服务器传递任何信息——只需在发起 Ajax 请求时指定电子书文本文件的名称即可。稍后会详细说明这一点；我们先重新审视一下这些电子书。
 
 ### 电子书
 
 在 Booker 示例中，电子书以原始文本文件的形式提供，扩展名为熟悉的 `.txt`。你可以像处理其他文本文件一样，在 Linux 系统上用 Vi、Emacs 或 Pico，在 Windows 系统上用记事本，在 Mac 系统上用 TextEdit 打开和编辑这些文件。示例应用程序中包含以下书籍及其对应的文本文件：
 
-*   《爱丽丝梦游仙境》——`book_alicewonderland.txt`
-*   《弗兰肯斯坦》——`book_frankenstein.txt`
-*   《白鲸》——`book_mobydick.txt`
-*   《战争与和平》——`book_warandpeace.txt`
-*   《世界大战》——`book_warofworlds.txt`
+- 《爱丽丝梦游仙境》——`book_alicewonderland.txt`
+- 《弗兰肯斯坦》——`book_frankenstein.txt`
+- 《白鲸》——`book_mobydick.txt`
+- 《战争与和平》——`book_warandpeace.txt`
+- 《世界大战》——`book_warofworlds.txt`
 
 你可能已经注意到电子书文本文件的命名模式非常清晰，它们都遵循 `book_AbbrevTitle.txt` 的形式，其中 `AbbrevTitle` 是书籍的缩写标题。通过遵循统一的电子书文件名格式，当用户从页面上的选择列表中进行选择时，以编程方式加载每本书就变得容易得多。更具体地说，你可以使用以下公式以编程方式构建文件名：
 
-```
+```javascript
 "book_" + AbbrevTitle + ".txt"
-"
+```
 
 稍后你会看到，这实际上正是处理加载电子书以响应选择变化的代码的工作方式。
 
 ### Booker 网页
 
-Booker 示例应用程序中的所有繁重工作都在 booker.html 网页中完成，该页面包含 HTML 和 JavaScript 代码，以及一些零散的 CSS 样式。然而，在深入代码之前，让我们再看一下应用程序的实际运行情况，如图 2.4 所示，这次加载的是电子书《弗兰肯斯坦》。
+Booker 示例应用程序中的所有繁重工作都在 `booker.html` 网页中完成，该页面包含 HTML 和 JavaScript 代码，以及一些零散的 CSS 样式。然而，在深入代码之前，让我们再看一下应用程序的实际运行情况，如图 2.4 所示，这次加载的是电子书《弗兰肯斯坦》。
 
 #### 图 2.4. 请求完成后，电子书的完整文本会显示出来。
 
 [[查看全尺寸图片]](mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wlmdwcglqywnhmc9rx2hzddjsmdrj.jpg)![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcglhy2owl2suahnnmnawyzq-.jpg)
 
-尽管 JavaScript 代码出现在实际 HTML 文档的开头附近，但先查看 body 部分的 HTML 代码更有意义：
+尽管 JavaScript 代码出现在实际 HTML 文档的开头附近，但先查看 `body` 部分的 HTML 代码更有意义：
 
 代码视图：
 
-```
+```html
 <body style="background:#EEEEEE"
   onload="document.getElementById('book').selectedIndex = 0;
+
   loadBook(document.getElementById('book').options[
   document.getElementById('book').selectedIndex].value)">
+
   <div id="ajaxState" style="display:block"></div>
+
   <br />
+
   <div style="margin-left:10%">选择书籍：
+
     <select id="book" onchange=
       "loadBook(this.options[this.selectedIndex].value)">
+
       <option value="alicewonderland">《爱丽丝梦游仙境》——刘易斯·卡罗尔</option>
+
       <option value="frankenstein">《弗兰肯斯坦》——玛丽·雪莱</option>
+
       <option value="mobydick">《白鲸》——赫尔曼·梅尔维尔</option>
+
       <option value="warandpeace">《战争与和平》——列夫·托尔斯泰</option>
+
       <option value="warofworlds">《世界大战》——H.G. 威尔斯</option>
+
     </select>
+
   </div>
-  <br />
-  <div id="booktext" style="margin-left:10%; margin-right:10%;
-    padding:2%; background:#FFFFFF; border:thin solid #333333">
-    </div>
-</body> 
 ```
 
-这段代码的主体部分由电子书选择列表组成，它出现在 `<select>` 标签内。注意，每本书的缩写标题被指定为每个电子书 `<option>` 标签的 `value` 属性。这样，JavaScript 代码就能够根据选择列表中的值（`alicewonderland`）拼出书籍文本文件的名称（`book_alicewonderland.txt`）。
 
-往下看页面，你会看到一个 ID 为 `booktext` 的 `div` 元素。这个 `div` 元素用于在通过 Ajax 请求加载电子书后保存其文本内容。换句话说，这个 `div` 是页面的主要区域。应用于该 `div` 的各种 CSS 样式使其在页面中居中显示，文本与边缘保持一定间距，并带有可见的边框。这个 `div` 元素的 ID 在页面的 JavaScript 代码中被用来设置通过 Ajax 请求加载后的电子书文本。
 
-回头再看一下选择列表，页面中可能最关键的一段代码是选择列表的 `onchange` 事件处理程序，它包含以下 JavaScript 代码行：
+```html
+<br />
 
+<div id="booktext" style="margin-left:10%; margin-right:10%;
+  padding:2%; background:#FFFFFF; border:thin solid #333333">
+</div>
 ```
+
+这段代码的主体部分由电子书选择列表组成，它出现在`<select>`标签内。注意，每本书的缩写标题被指定为每个电子书`<option>`标签的`value`属性。这样，JavaScript 代码就能够根据选择列表中的值（`alicewonderland`）拼出书籍文本文件的名称（`book_alicewonderland.txt`）。
+
+往下看页面，你会看到一个 ID 为`booktext`的`div`元素。这个`div`元素用于在通过 Ajax 请求加载电子书后保存其文本内容。换句话说，这个`div`是页面的主要区域。应用于该`div`的各种 CSS 样式使其在页面中居中显示，文本与边缘保持一定间距，并带有可见的边框。这个`div`元素的 ID 在页面的 JavaScript 代码中被用来设置通过 Ajax 请求加载后的电子书文本。
+
+回头再看一下选择列表，页面中可能最关键的一段代码是选择列表的`onchange`事件处理程序，它包含以下 JavaScript 代码行：
+
+```javascript
 loadBook(this.options[this.selectedIndex].value)
 ```
 
-这段代码根据选择列表中的选择变化来加载电子书。它将当前选中电子书的值传递给自定义的 `loadBook()` 函数。该函数的代码如下：
+这段代码根据选择列表中的选择变化来加载电子书。它将当前选中电子书的值传递给自定义的`loadBook()`函数。该函数的代码如下：
 
-```
+```javascript
 function loadBook(title) {
   replaceText(document.getElementById("booktext"), "加载中...");
+
   ajaxSendRequest("GET", "book_" + title + ".txt", handleRequest);
 }
 ```
 
-啊，两个熟悉的函数！如果你还记得之前关于 Ajax 工具包的讨论，`replaceText()` 和 `ajaxSendRequest()` 函数都已经解释过了。简单回顾一下，`replaceText()` 函数用于设置任何 HTML 元素的内容。在这里，它被用来将主 `div` 元素（`booktext`）的内容设置为文本“加载中...”，以便用户知道电子书正在加载。实际的 Ajax 请求由 `ajaxSendRequest()` 函数发起，它使用 `GET` 请求方法。`ajaxSendRequest()` 函数的第二个参数是要加载的电子书的文件名，其形式为 `book_AbbrevTitle.txt`。最后，最后一个参数是自定义处理函数，当 Ajax 请求完成（即电子书加载完毕）时被调用。
+啊，两个熟悉的函数！如果你还记得之前关于 Ajax 工具包的讨论，`replaceText()`和`ajaxSendRequest()`函数都已经解释过了。简单回顾一下，`replaceText()`函数用于设置任何 HTML 元素的内容。在这里，它被用来将主`div`元素（`booktext`）的内容设置为文本“加载中...”，以便用户知道电子书正在加载。实际的 Ajax 请求由`ajaxSendRequest()`函数发起，它使用`GET`请求方法。`ajaxSendRequest()`函数的第二个参数是要加载的电子书的文件名，其形式为`book_AbbrevTitle.txt`。最后一个参数是自定义处理函数，当 Ajax 请求完成（即电子书加载完毕）时被调用。
 
 好吧，如果上一段让你感觉像是一记技术重拳，我在此深表歉意。我并不完全期望你能像我抛出这些代码一样迅速理解其中的每一个细微差别。随着你看到更多的 Ajax 应用程序，一切都会变得更加自然和熟悉。好消息是，在此期间，你只需要理解代码中的几个关键点，就能根据自己的目的进行定制。我们将在下一节中讨论这一点。
 
-在 Booker 应用程序的这次旋风式检查中，下一个重要环节是 `handleRequest()` 函数，它是 Ajax 请求完成时调用的自定义函数。其代码如下：
+在 Booker 应用程序的这次旋风式检查中，下一个重要环节是`handleRequest()`函数，它是 Ajax 请求完成时调用的自定义函数。其代码如下：
 
-```
+```javascript
 function handleRequest() {
   if (request.readyState == 4 && request.status == 200) {
     replaceText(document.getElementById("booktext"),
       request.responseText);
   }
+
   ajaxUpdateState();
 }
 ```
 
-希望这段代码比你预期的要简单一些。函数内的第一行代码检查请求是否成功完成。这涉及查看 `request` 对象的 `readyState` 和 `status` 属性的值。这是非常标准的 Ajax 代码，你会在每个 Ajax 应用程序中看到完全相同的写法。所检查的具体值与标准的 `XMLHttpRequest` 对象直接相关，附录 B 对此进行了详细说明。请随意研究该附录，以了解更多关于 Ajax 工具包底层工作原理的信息。不过，现在你只需知道 `if` 语句只是检查请求是否顺利完成即可。
+希望这段代码比你预期的要简单一些。函数内的第一行代码检查请求是否成功完成。这涉及查看`request`对象的`readyState`和`status`属性的值。这是非常标准的 Ajax 代码，你会在每个 Ajax 应用程序中看到完全相同的写法。所检查的具体值与标准的`XMLHttpRequest`对象直接相关，附录 B 对此进行了详细说明。请随意研究该附录，以了解更多关于 Ajax 工具包底层工作原理的信息。不过，现在你只需知道，`if`语句只是检查请求是否顺利完成即可。
 
+在`if`语句中，调用了`replaceText()`函数，将页面上的主`div`元素（`booktext`）设置为刚刚加载的电子书文本。这段代码的关键在于请求对象的`responseText`属性，它包含了来自请求的响应数据。在处理 Ajax 请求的结果时，对于原始文本数据，你总是使用`responseText`属性；对于 XML 数据，则使用`responseXML`属性。
 
+`handleRequest()`函数中最后一行有意义的代码是调用`ajaxUpdateStatus()`函数，该函数用于更新 Ajax 诊断栏。非常重要的一点是，这个函数必须放在`if`语句之外，这样每次`XMLHttpRequest`对象的状态发生变化时它都会被调用。有一件事我还没提到，就是这个函数需要在页面上放置一个特殊的`div`元素。如果你回头查看 Booker 应用程序页面的 HTML 代码，会看到一个像这样编码的`div`元素：
 
-
-在 `if` 语句中，调用了 `replaceText()` 函数，将页面上的主 `div` 元素（`booktext`）设置为刚刚加载的电子书文本。这段代码的关键在于请求对象的 `responseText` 属性，它包含了来自请求的响应数据。在处理 Ajax 请求的结果时，对于原始文本数据，你总是使用 `responseText` 属性；对于 XML 数据，则使用 `responseXML` 属性。
-
-`handleRequest()` 函数中最后一行有意义的代码是调用 `ajaxUpdateStatus()` 函数，该函数用于更新 Ajax 诊断栏。非常重要的一点是，这个函数必须放在 `if` 语句之外，这样每次 `XMLHttpRequest` 对象的状态发生变化时它都会被调用。有一件事我还没提到，就是这个函数需要在页面上放置一个特殊的 `div` 元素。如果你回头查看 Booker 应用程序页面的 HTML 代码，会看到一个像这样编码的 `div` 元素：
-
-```
+```html
 <div id="ajaxState" style="display:block"></div>
 ```
 
-`ajaxUpdateStatus()` 函数会查找一个 ID 为 `ajaxState` 的 `div` 元素，然后相应地设置该 `div` 的背景颜色和内容。要隐藏 Ajax 诊断栏，只需将 `div` 元素的 `style` 属性改为 `display:none`。之后如果需要，可以再将样式改回 `display:block` 来重新显示诊断栏。当你完成 Ajax 应用程序的开发，准备彻底移除诊断栏时，只需完全删除这个 `div` 元素，以及调用 `ajaxUpdateStatus()` 的代码。
+`ajaxUpdateStatus()`函数会查找一个 ID 为`ajaxState`的`div`元素，然后相应地设置该`div`的背景颜色和内容。要隐藏 Ajax 诊断栏，只需将`div`元素的`style`属性改为`display:none`。之后如果需要，可以再将样式改回`display:block`来重新显示诊断栏。当你完成 Ajax 应用程序的开发，准备彻底移除诊断栏时，只需完全删除这个`div`元素，以及调用`ajaxUpdateStatus()`的代码。
 
-还有一点我尚未解释的维护工作是 `body` 元素的 `onload` 事件处理程序，它非常重要，因为它确定了最初选择的是哪本电子书，并确保书籍被正确加载。以下是设置在 `onload` 事件处理程序中的代码：
+还有一点我尚未解释的维护工作是`body`元素的`onload`事件处理程序，它非常重要，因为它确定了最初选择的是哪本电子书，并确保书籍被正确加载。以下是设置在`onload`事件处理程序中的代码：
 
-```
+```javascript
 document.getElementById('book').selectedIndex = 0;
+
 loadBook(document.getElementById('book').options[
   document.getElementById('book').selectedIndex].value);
 ```
 
-第一行将选择列表中的选中项设置为列表中的第一项（索引 `0`）。你使用 `0` 表示第一项，因为选择列表的索引从 `0` 开始递增。如果你想选择第二项，可以将 `selectedIndex` 属性设置为 `1`。
+第一行将选择列表中的选中项设置为列表中的第一项（索引`0`）。你使用`0`表示第一项，因为选择列表的索引从`0`开始递增。如果你想选择第二项，可以将`selectedIndex`属性设置为`1`。
 
-第二行和第三行代码实际上只是一行代码，因为太长而分成了两行。由于需要两次使用 `getElementById()` 函数来获取选择列表对象，代码显得有些杂乱。如果你用名称替换 `getElementById()` 函数调用，代码会更容易理解。以下是将选择列表对象重命名为 `sel` 后的简化代码：
+第二行和第三行代码实际上只是一行代码，因为太长而分成了两行。由于需要两次使用`getElementById()`函数来获取选择列表对象，代码显得有些杂乱。如果你用名称替换`getElementById()`函数调用，代码会更容易理解。以下是将选择列表对象重命名为`sel`后的简化代码：
 
-```
+```javascript
 sel.selectedIndex = 0;
+
 loadBook(sel.options[sel.selectedIndex].value);
 ```
+
+
 
 现在，希望你能明白 `loadBook()` 函数是如何接收当前选中电子书的值了。更具体地说，它接收的是当前选中电子书的缩写标题。如果你还记得之前的讨论，`loadBook()` 函数会使用这个缩写标题来构建电子书的文件名，并将其作为 Ajax 请求的一部分传递。
 
@@ -1035,11 +1098,9 @@ loadBook(sel.options[sel.selectedIndex].value);
 
 以下是一些相对容易修改应用程序的方法：
 
-*   **添加更多内容**——你可以通过将新的电子书文本文件复制到 Web 服务器，然后为每本新书添加一个新的选择列表选项，轻松地大幅扩展应用程序的内容。只需确保每个 `<option>` 标签的 `value` 属性（例如 `warofworlds`）与你用于文本文件名的书籍缩写标题（`book_warofworlds.txt`）匹配即可。
-
-*   **更改电子书内容的呈现方式**——如果你想让电子书对所有读者更易访问，可以考虑增大字体大小，甚至选择更适合阅读的不同字体。由于所有书籍内容都流入 ID 为 `booktext` 的 `div` 元素，你可以通过向该 `div` 元素添加一些 CSS 字体样式来轻松改变整本书的外观。
-
-*   **关闭 Ajax 诊断栏**——在向公众发布应用程序之前，别忘了关闭 Ajax 诊断栏。为此，只需从页面的 HTML 部分移除 ID 为 `ajaxState` 的 `div` 元素，然后移除 JavaScript `handleRequest()` 函数中调用 `ajaxUpdateState()` 的那行代码。
+- **添加更多内容**——你可以通过将新的电子书文本文件复制到 Web 服务器，然后为每本新书添加一个新的选择列表选项，轻松地大幅扩展应用程序的内容。只需确保每个 `<option>` 标签的 `value` 属性（例如 `warofworlds`）与你用于文本文件名的书籍缩写标题（`book_warofworlds.txt`）匹配即可。
+- **更改电子书内容的呈现方式**——如果你想让电子书对所有读者更易访问，可以考虑增大字体大小，甚至选择更适合阅读的不同字体。由于所有书籍内容都流入 ID 为 `booktext` 的 `div` 元素，你可以通过向该 `div` 元素添加一些 CSS 字体样式来轻松改变整本书的外观。
+- **关闭 Ajax 诊断栏**——在向公众发布应用程序之前，别忘了关闭 Ajax 诊断栏。为此，只需从页面的 HTML 部分移除 ID 为 `ajaxState` 的 `div` 元素，然后移除 JavaScript `handleRequest()` 函数中调用 `ajaxUpdateState()` 的那行代码。
 
 如果你觉得对 Booker 应用程序的另一个很酷的改进可能是每次加载并显示一本电子书的一个章节，那么你肯定想对了，因为下一章正是要解决这个挑战。
 
@@ -1049,24 +1110,20 @@ loadBook(sel.options[sel.selectedIndex].value);
 
 ## 第二部分：构建真实世界的 Ajax 应用程序
 
--   第 3 章 动态加载 Web 数据：一个 XML 电子书查看器
--   第 4 章 使用 Ajax 动态填充列表：一个股票选择器
--   第 5 章 接入 RSS 新闻源
--   第 6 章 通过自动补全读懂用户心思
--   第 7 章 使用实时验证创建响应式图形用户界面
--   第 8 章 一个杀手级的图像查看界面
--   第 9 章 使用精美弹出窗口呈现信息
--   第 10 章 使用 Ajax 预测天气
--   第 11 章 构建一个 Ajax 运费计算器
--   第 12 章 为你的网站添加 Ajax 驱动的评分系统
+- 第 3 章 动态加载 Web 数据：一个 XML 电子书查看器
+- 第 4 章 使用 Ajax 动态填充列表：一个股票选择器
+- 第 5 章 接入 RSS 新闻源
+- 第 6 章 通过自动补全读懂用户心思
+- 第 7 章 使用实时验证创建响应式图形用户界面
+- 第 8 章 一个杀手级的图像查看界面
+- 第 9 章 使用精美弹出窗口呈现信息
+- 第 10 章 使用 Ajax 预测天气
+- 第 11 章 构建一个 Ajax 运费计算器
+- 第 12 章 为你的网站添加 Ajax 驱动的评分系统
 
+## 第 3 章 动态加载网络数据：一个 XML 电子书阅读器
 
-
-
-
-### 第 3 章 动态加载网络数据：一个 XML 电子书阅读器
-
-街机中的 Ajax
+### 街机中的 Ajax
 
 | ![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcgl0zwovlmdoc29uy3a-.jpg) | 在 Web 之前，“Ajax”这个术语就曾与交互性和计算联系在一起。1987 年，科乐美（Konami）发布了一款同名竖版卷轴太空射击游戏。在游戏《Ajax》中，你交替控制一架直升机和一架战斗机，发射各种导弹、激光和炸弹。 |
 
@@ -1074,17 +1131,17 @@ loadBook(sel.options[sel.selectedIndex].value);
 
 本章在前一章 Booker 示例的基础上，引导你重新设计应用程序，使用 XML 作为电子书数据格式。除了了解 XML 如何融入实际的 Ajax 应用程序之外，你还能感受到当减少每次请求交换的数据量时，应用程序的响应速度会提升多少。
 
-本章 Booker 应用程序使用了以下文件，它们位于随书附带的 Linux Live CD-ROM 的`chap03`示例代码文件夹中：
+本章 Booker 应用程序使用了以下文件，它们位于随书附带的 Linux Live CD-ROM 的 `chap03` 示例代码文件夹中：
 
-* `booker.html` — 主 Web 页面
-* `booker.php` — 用于从电子书中加载章节的服务器脚本
-* `ajaxkit.js` — Ajax 工具包的核心 Ajax 函数
-* `domkit.js` — Ajax 工具包的 DOM 相关函数
-* `book_alicewonderland.xml` — 《爱丽丝梦游仙境》XML 电子书
-* `book_frankenstein.xml` — 《弗兰肯斯坦》XML 电子书
-* `book_mobydick.xml` — 《白鲸》XML 电子书
-* `book_warandpeace.xml` — 《战争与和平》XML 电子书
-* `book_warofworlds.xml` — 《世界大战》XML 电子书
+- `booker.html` — 主 Web 页面
+- `booker.php` — 用于从电子书中加载章节的服务器脚本
+- `ajaxkit.js` — Ajax 工具包的核心 Ajax 函数
+- `domkit.js` — Ajax 工具包的 DOM 相关函数
+- `book_alicewonderland.xml` — 《爱丽丝梦游仙境》XML 电子书
+- `book_frankenstein.xml` — 《弗兰肯斯坦》XML 电子书
+- `book_mobydick.xml` — 《白鲸》XML 电子书
+- `book_warandpeace.xml` — 《战争与和平》XML 电子书
+- `book_warofworlds.xml` — 《世界大战》XML 电子书
 
 ### 挑战：以更小的块加载数据
 
@@ -1094,9 +1151,8 @@ loadBook(sel.options[sel.selectedIndex].value);
 
 因此，我们评估了第一个 Booker 应用程序存在一些问题，本着动态数据加载的精神，Ajax 肯定能提供解决方案。确实，借助 Ajax 的一点帮助，可以只动态加载你需要的内容，对于电子书来说，就是单个章节。这一改变可谓一举两得，因为每次只加载一章数据的新方法，由于每次 Ajax 请求中传输的数据量大大减少，从而带来了显著的性能提升。因此，挑战在于开发一个改进版的 Booker，使其一次只加载一章。
 
-注意
-
-| ![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcgl0zwovlmdoc29uy3a-.jpg) | 将电子书分解为单个页面（而不仅仅是章节）也并非不可行。然而，页面的长度该如何定义？实体印刷书在不同尺寸和字体下打印时，页数显然并不相同。Web 浏览器在显示信息量方面更是千差万别。因此，将章节作为分解电子书组成部分的度量单位是合理的。之后，如果你想以编程方式对章节进行分页，以适应特定浏览器窗口并提高可读性，那完全没问题。但就组织和加载 XML 电子书而言，按章节处理是正确的方式。 |
+> **注意：**  
+> ![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcgl0zwovlmdoc29uy3a-.jpg) 将电子书分解为单个页面（而不仅仅是章节）也并非不可行。然而，页面的长度该如何定义？实体印刷书在不同尺寸和字体下打印时，页数显然并不相同。Web 浏览器在显示信息量方面更是千差万别。因此，将章节作为分解电子书组成部分的度量单位是合理的。之后，如果你想以编程方式对章节进行分页，以适应特定浏览器窗口并提高可读性，那完全没问题。但就组织和加载 XML 电子书而言，按章节处理是正确的方式。
 
 在进入新电子书阅读器应用程序的设计阶段之前，有必要稍微退一步，重新评估原始的 Booker 应用程序，看看它是如何工作的。这样做，你将更准确地了解在设计新应用程序时所面临的挑战。
 
@@ -1110,69 +1166,7 @@ loadBook(sel.options[sel.selectedIndex].value);
 
 进入新版 Booker 的挑战是：首先将电子书重新格式化为高度结构化的 XML 文档，然后重新设计 Web 页面，使其能够加载单个章节而不是整本书。这还将涉及一些用户界面更改，因为用户现在需要能够在书籍的章节之间导航。事实证明，这种看似微妙的数据格式变化对 Booker 应用程序的设计和实现产生了重大影响。
 
-# 第二部分：构建真实的 Ajax 应用程序
-
-| | 第 3 章 动态加载网络数据：一个 XML 电子书阅读器 |
-| | 第 4 章 使用 Ajax 动态填充列表：一个股票选择器 |
-| | 第 5 章 接入 RSS 新闻源 |
-| | 第 6 章 通过自动补全读懂用户心思 |
-| | 第 7 章 使用实时验证创建响应式 GUI |
-| | 第 8 章 一个杀手级的图像查看界面 |
-| | 第 9 章 使用炫酷弹出窗口呈现信息 |
-| | 第 10 章 使用 Ajax 预测天气 |
-
-
-
-
-
-- 第 11 章 构建一个 Ajax 运费计算器
-- 第 12 章 为你的网站添加一个基于 Ajax 的评分系统
-
-## 第 3 章 动态加载 Web 数据：一个 XML 电子书阅读器
-
-街机中的 Ajax
-
-> ![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcgl0zwovlmdoc29uy3a-.jpg) 在 Web 之前，Ajax 这个术语就已经与交互性和计算联系在一起。1987 年，Konami 发布了一款同名的纵向卷轴太空射击游戏。在游戏《Ajax》中，你交替控制一架直升机和一架战斗机，发射各种类型的导弹、激光和炸弹。
-
-上一章探讨了使用 Ajax 动态加载数据的基础知识，但电子书示例的效率相当低下，因为它要求你等待整本书加载完成后才能阅读任何内容。Booker 应用程序也只演示了如何加载原始文本文件，这在处理 Ajax 方程中的 XML 部分时作用不大。实际上，以 XML 形式处理电子书更有意义，因为这样你可以挑选和处理你想要的信息。更具体地说，按章节访问 XML 电子书相对简单，从而缩短了每次 Ajax 请求的传输时间，并通过一次只显示一章来提高书籍的可读性。
-
-本章在上一章 Booker 示例的基础上，引导你重新设计应用程序，使用 XML 作为电子书数据格式。除了了解 XML 如何融入实际的 Ajax 应用程序之外，你还会感受到当减少每次请求交换的数据量时，应用程序的响应速度会提升多少。
-
-本章中 Booker 应用程序使用的文件如下，它们位于随书附带的 Linux CD-ROM 的`chap03`示例代码文件夹中：
-
-*   `booker.html` — 主 Web 页面
-*   `booker.php` — 用于从电子书中加载章节的服务器脚本
-*   `ajaxkit.js` — Ajax 工具包的核心 Ajax 函数
-*   `domkit.js` — Ajax 工具包的 DOM 相关函数
-*   `book_alicewonderland.xml` — 《爱丽丝梦游仙境》XML 电子书
-*   `book_frankenstein.xml` — 《弗兰肯斯坦》XML 电子书
-*   `book_mobydick.xml` — 《白鲸》XML 电子书
-*   `book_warandpeace.xml` — 《战争与和平》XML 电子书
-*   `book_warofworlds.xml` — 《世界大战》XML 电子书
-
-### 挑战：以更小的块加载数据
-
-如果你在读完上一章后暂停了一个月，试图阅读《战争与和平》电子书，那么你会很快发现 Booker 示例应用程序在性能上有些不足。问题在于，该应用程序将电子书视为一大块原始文本，当你尝试阅读像《战争与和平》这样真正厚重的书籍（大小超过 3MB）时，这相当笨重。我不知道你的网络连接情况，但即使是宽带连接，在加载 3MB 的文本文件时也会哼哼唧唧，慢慢吞吞。
-
-原始 Booker 应用程序不仅存在传输时间问题，而且试图将整本书显示在一个页面上本身就存在严重的可用性问题。这样想吧——一本实体印刷书首先被分成章节，然后再进一步分成页面。这不仅为你提供了一个放置书签以记住阅读位置的好地方，而且在阅读了一大段文字后翻页，也能起到有益的心理休息作用。但 Booker 不是这样。整部 3MB 的小说被塞进浏览器中一个巨大的虚拟页面。除非你是某种超人的速读高手，否则你几乎会立刻讨厌这种阅读方式。
-
-因此，我们评估了第一个 Booker 应用程序存在一些问题，本着动态数据加载的精神，Ajax 肯定能提供解决方案。确实，借助 Ajax 的一点帮助，可以只动态加载你需要的内容，对于电子书来说，就是单个章节。这一改变可谓一举两得，因为每次只加载一章数据的新方法，由于每次 Ajax 请求中传输的数据量大大减少，从而显著提升了性能。因此，挑战在于开发一个改进版的 Booker，一次只加载一章。
-
-> **注意：** ![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcgl0zwovlmdoc29uy3a-.jpg) 考虑将电子书分解为单个页面（而不仅仅是章节）也并非不可能。然而，页面的长度该如何定义？实体印刷书在不同尺寸和字体下打印时，页数肯定不同。Web 浏览器在显示信息量方面更加多样化。因此，将章节作为分解电子书组成部分的度量单位是合理的。之后，如果你想以编程方式对章节进行分页，以适应特定浏览器窗口以获得更好的可读性，那完全没问题。但就组织和加载 XML 电子书而言，按章节处理是正确的方式。
-
-在进入新电子书阅读器应用程序的设计阶段之前，值得先退一步，重新审视原始的 Booker 应用程序，看看它是如何工作的。这样做，你将更准确地了解在设计新应用程序时面临的挑战。
-
-首先，图 3.1 展示了主 Booker HTML Web 页面如何包含一个带有可用电子书的选择列表。从选择列表中选择一本书会导致整本书的内容加载到列表下方的区域（`div`）中，该区域占据了页面的大部分。
-
-**图 3.1.** 原始 Booker 应用程序在用户从列表中选择书籍时加载整本电子书的文本。
-
-[[查看完整尺寸图片]](mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wlmdwcglqywnhmc9rx2hzddnsmdfj.jpg)![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcglhy2owl2suahnnm3awyze-.jpg)
-
-在幕后，Booker Web 页面使用 Ajax 请求动态加载书籍文本，以响应用户在列表中的选择。从 Ajax 的角度来看，原始 Booker 应用程序代表了所有 Ajax 请求中最简单的一种，因为它处理的是未格式化的数据（原始文本），并且数据直接从服务器上的文件（电子书文本文件）获取；不需要特殊的服务器程序在处理数据后再响应请求。
-
-进入新版本 Booker 的挑战是：首先将电子书重新格式化为高度结构化的 XML 文档，然后重新设计 Web 页面，使其能够加载单个章节而不是整本书。这还将涉及一些用户界面更改，因为用户现在需要能够在书籍的章节之间导航。事实证明，这种看似微妙的数据格式变化对 Booker 应用程序的设计和实现产生了重大影响。
-
-# 第二部分：构建真实的 Ajax 应用程序
+## 第二部分：构建真实的 Ajax 应用程序
 
 - 第 3 章 动态加载 Web 数据：一个 XML 电子书阅读器
 - 第 4 章 使用 Ajax 动态填充列表：一个股票选择器
@@ -1180,97 +1174,74 @@ loadBook(sel.options[sel.selectedIndex].value);
 - 第 6 章 通过自动补全读懂用户心思
 - 第 7 章 使用实时验证创建响应式图形用户界面
 - 第 8 章 一个杀手级的图像查看界面
+- 第 9 章 使用炫酷弹出窗口呈现信息
+- 第 10 章 使用 Ajax 预测天气
+- 第 11 章 构建一个 Ajax 运费计算器
+- 第 12 章 为你的网站添加 Ajax 驱动的评分系统
 
+## 第 3 章 动态加载网络数据：一个 XML 电子书阅读器
 
+### 街机中的 Ajax
 
+| ![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcgl0zwovlmdoc29uy3a-.jpg) | 在 Web 之前，Ajax 这个术语就已经与交互性和计算联系在一起。1987 年，Konami 发布了一款同名的纵向卷轴太空射击游戏。在游戏《Ajax》中，你交替控制一架直升机和一架战斗机，发射各种类型的导弹、激光和炸弹。 |
 
+上一章探讨了使用 Ajax 动态加载数据的基础知识，但电子书示例的效率相当低下，因为它要求你等待整本书加载完成后才能阅读任何内容。Booker 应用程序也只演示了如何加载原始文本文件，这在处理 Ajax 方程中的 XML 部分时作用不大。实际上，以 XML 形式处理电子书更有意义，因为这样你可以挑选和处理你想要的信息。更具体地说，按章节访问 XML 电子书相对简单，从而缩短了每次 Ajax 请求的传输时间，并通过一次只显示一章来提高书籍的可读性。
 
-|   | 第 9 章 使用炫酷弹出窗口呈现信息 |
-|
-|  
-|   | 第 10 章 使用 Ajax 预测天气 |
-|
-|  
-|   | 第 11 章 构建 Ajax 运费计算器 |
-|
-|  
-|   | 第 12 章 为你的网站添加 Ajax 驱动的评分系统 |
-|
+本章在上一章 Booker 示例的基础上，引导你重新设计应用程序，使用 XML 作为电子书数据格式。除了了解 XML 如何融入实际的 Ajax 应用程序之外，你还会感受到当减少每次请求交换的数据量时，应用程序的响应速度会提升多少。
 
-### 第 3 章 动态加载网络数据：一个 XML 电子书阅读器
+本章中 Booker 应用程序使用的文件如下，它们位于随书附带的 Linux CD-ROM 的 `chap03` 示例代码文件夹中：
 
-街机中的 Ajax
-
-| ![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcgl0zwovlmdoc29uy3a-.jpg) | 这并非 Ajax 这个术语首次与交互性和计算联系在一起。1987 年，Konami 发布了一款同名纵向卷轴太空射击游戏。在 Ajax 这款游戏中，你交替控制直升机和战斗机，发射各种导弹、激光和炸弹。 |
-
-上一章探讨了使用 Ajax 动态加载数据的基础知识，但电子书示例的效率相当低下，因为它要求你等待整本书加载完毕才能阅读任何内容。Booker 应用也只演示了如何加载原始文本文件，这在处理 Ajax 方程中的 XML 部分时作用有限。实际上，以 XML 形式处理电子书更有意义，因为这样你可以挑选想要处理的信息。更具体地说，按章节访问 XML 电子书相对简单，从而缩短每次 Ajax 请求的传输时间，并通过一次只显示一章来提高书籍的可读性。
-
-本章在前一章 Booker 示例的基础上，指导你重新设计应用，使用 XML 作为电子书数据格式。除了了解 XML 如何融入实际的 Ajax 应用之外，你还会感受到当减少每次请求交换的数据量时，应用的响应速度会提升多少。
-
-本章 Booker 应用使用了以下文件，它们位于随书附带的 Linux 光盘的 `chap03` 示例代码文件夹中：
-
-*   `booker.html` — 主网页
-*   `booker.php` — 用于从电子书中加载章节的服务器脚本
-*   `ajaxkit.js` — Ajax 工具包的核心 Ajax 函数
-*   `domkit.js` — Ajax 工具包的 DOM 相关函数
-*   `book_alicewonderland.xml` — 《爱丽丝梦游仙境》XML 电子书
-*   `book_frankenstein.xml` — 《弗兰肯斯坦》XML 电子书
-*   `book_mobydick.xml` — 《白鲸》XML 电子书
-*   `book_warandpeace.xml` — 《战争与和平》XML 电子书
-*   `book_warofworlds.xml` — 《世界大战》XML 电子书
+- `booker.html` — 主 Web 页面
+- `booker.php` — 用于从电子书中加载章节的服务器脚本
+- `ajaxkit.js` — Ajax 工具包的核心 Ajax 函数
+- `domkit.js` — Ajax 工具包的 DOM 相关函数
+- `book_alicewonderland.xml` — 《爱丽丝梦游仙境》XML 电子书
+- `book_frankenstein.xml` — 《弗兰肯斯坦》XML 电子书
+- `book_mobydick.xml` — 《白鲸》XML 电子书
+- `book_warandpeace.xml` — 《战争与和平》XML 电子书
+- `book_warofworlds.xml` — 《世界大战》XML 电子书
 
 ### 挑战：以更小的数据块加载数据
 
-如果你在读完上一章后暂停了一个月，试图阅读《战争与和平》电子书，那么你会很快发现 Booker 示例应用的性能有些不足。问题在于，该应用将电子书视为一整块原始文本，当你尝试阅读像《战争与和平》这样超过 3MB 的厚重书籍时，这相当笨重。我不知道你的网络连接情况，但即使是我的宽带连接，在加载一个 3MB 的文本文件时也会哼哼唧唧，慢慢吞吞。
+如果你在读完上一章后暂停了一个月，试图阅读《战争与和平》电子书，那么你会很快发现 Booker 示例应用程序在性能上有些不足。问题在于，该应用程序将电子书视为一大块原始文本，当你尝试阅读像《战争与和平》这样真正厚重的书籍（大小超过 3MB）时，这相当笨重。我不知道你的网络连接情况，但即使是宽带连接，在加载 3MB 的文本文件时也会哼哼唧唧，慢慢吞吞。
 
-原始 Booker 应用不仅存在传输时间问题，而且试图在一页上显示整本书还存在严重的可用性问题。这样想吧——一本实体印刷书首先被分成章节，然后进一步分成页面。这不仅为你提供了一个放置书签以记住阅读位置的好地方，而且在阅读一大段文字后翻页也有助于心理上的休息。但 Booker 并非如此。整部 3MB 的小说被塞进浏览器中一个巨大的虚拟页面。除非你是某种超人的速读高手，否则你几乎会立刻讨厌这种阅读方式。
+原始 Booker 应用程序不仅存在传输时间问题，而且试图将整本书显示在一个页面上本身就存在严重的可用性问题。这样想吧——一本实体印刷书首先被分成章节，然后再进一步分成页面。这不仅为你提供了一个放置书签以记住阅读位置的好地方，而且在阅读了一大段文字后翻页，也能起到有益的心理休息作用。但 Booker 不是这样。整部 3MB 的小说被塞进浏览器中一个巨大的虚拟页面。除非你是某种超人的速读高手，否则你几乎会立刻讨厌这种阅读方式。
 
-因此，我们评估了第一个 Booker 应用存在一些问题，本着动态数据加载的精神，Ajax 肯定能提供解决方案。确实，借助 Ajax 的一点帮助，可以只动态加载你需要的内容，对于电子书来说，就是单个章节。这一改变可谓一举两得，因为每次只加载一章数据的新方法，由于每次 Ajax 请求中传输的数据量大幅减少，从而显著提升了性能。因此，挑战在于开发一个改进版的 Booker，使其一次只加载一章。
+因此，我们评估了第一个 Booker 应用程序存在一些问题，本着动态数据加载的精神，Ajax 肯定能提供解决方案。确实，借助 Ajax 的一点帮助，可以只动态加载你需要的内容，对于电子书来说，就是单个章节。这一改变可谓一举两得，因为每次只加载一章数据的新方法，由于每次 Ajax 请求中传输的数据量大幅减少，从而显著提升了性能。因此，挑战在于开发一个改进版的 Booker，一次只加载一章。
 
-注意
+> **注意：**  
+> ![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcgl0zwovlmdoc29uy3a-.jpg) 考虑将电子书分解为单个页面（而不仅仅是章节）也并非不可能。然而，页面的长度该如何定义？实体印刷书在不同尺寸和字体下打印时，页数肯定不同。Web 浏览器在显示信息量方面更加多样化。因此，将章节作为分解电子书组成部分的度量单位是合理的。之后，如果你想以编程方式对章节进行分页，以适应特定浏览器窗口以获得更好的可读性，那完全没问题。但就组织和加载 XML 电子书而言，按章节处理是正确的方式。 |
 
-| ![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcgl0zwovlmdoc29uy3a-.jpg) | 考虑将电子书拆分为单独的页面（而不仅仅是章节）也并非不可行。然而，页面的长度该如何定义？实体印刷书在不同尺寸和字体下打印时，页数显然不同。Web 浏览器在显示信息量方面更是千差万别。因此，将章节作为拆分电子书组件的度量单位是合理的。如果你以后想以编程方式对章节进行分页，以适应特定浏览器窗口以获得更好的可读性，那完全没问题。但就组织和加载 XML 电子书而言，章节是最佳选择。 |
+在进入新电子书阅读器应用程序的设计阶段之前，值得先退一步，重新审视原始的 Booker 应用程序，看看它是如何工作的。这样做，你将更准确地了解在设计新应用程序时面临的挑战。
 
-在进入新版电子书阅读器的设计阶段之前，有必要稍微退一步，重新审视原始的 Booker 应用，看看它是如何工作的。这样做，你将更准确地了解在设计新应用时面临的挑战。
+首先，图 3.1 展示了主 Booker HTML Web 页面如何包含一个带有可用电子书的选择列表。从选择列表中选择一本书会导致整本书的内容加载到列表下方的区域（`div`）中，该区域占据了页面的大部分。
 
-首先，图 3.1 展示了主 Booker HTML 网页包含一个选择列表，其中列出了可用的电子书。从选择列表中选择一本书会导致整本书的内容加载到列表下方的区域（`div`）中，该区域占据了页面的大部分空间。
-
-##### 图 3.1. 原始 Booker 应用在用户从列表中选择书籍时加载整本电子书的文本。
+##### 图 3.1 原始 Booker 应用程序在用户从列表中选择书籍时加载整本电子书的文本。
 
 [[查看完整尺寸图片]](mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wlmdwcglqywnhmc9rx2hzddnsmdfj.jpg)![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcglhy2owl2suahnnm3awyze-.jpg)
 
-在幕后，Booker 网页使用 Ajax 请求动态加载书籍文本，以响应用户在列表中的选择。从 Ajax 的角度来看，原始 Booker 应用代表了最简单的 Ajax 请求之一，因为它处理的是未格式化的数据（原始文本），并且数据直接从服务器上的文件（电子书文本文件）获取；无需特殊的服务器程序在处理请求之前对数据进行处理。
+在幕后，Booker Web 页面使用 Ajax 请求动态加载书籍文本，以响应用户在列表中的选择。从 Ajax 的角度来看，原始 Booker 应用程序代表了所有 Ajax 请求中最简单的一种，因为它处理的是未格式化的数据（原始文本），并且数据直接从服务器上的文件（电子书文本文件）获取；不需要特殊的服务器程序在处理数据后再响应请求。
 
-新版 Booker 面临的挑战是：首先将电子书重新格式化为高度结构化的 XML 文档，然后重新设计网页，使其能够加载单个章节而不是整本书。这还将涉及一些用户界面更改，因为用户现在需要能够在书籍的章节之间导航。事实证明，这种看似微妙的数据格式变化对 Booker 应用的设计和实现产生了重大影响。
+进入新版本 Booker 的挑战是：首先将电子书重新格式化为高度结构化的 XML 文档，然后重新设计 Web 页面，使其能够加载单个章节而不是整本书。这还将涉及一些用户界面更改，因为用户现在需要能够在书籍的章节之间导航。事实证明，这种看似微妙的数据格式变化对 Booker 应用程序的设计和实现产生了重大影响。
 
 ### 设计：设计一个 XML 电子书阅读器
 
-
-
-
 好的，你正在改造 Booker 应用程序，使其能够通过 Ajax 请求使用 XML 数据格式加载电子书。这意味着你首先需要为书籍设计一种合适的 XML 格式，以便能够轻松地一次读取一个章节。确定了 XML 格式后，你需要弄清楚在 Ajax 请求过程中，服务器和客户端之间究竟传输了什么内容。显然，章节文本会被发送，但由于电子书现在将以更智能的方式格式化，你还应该能够将章节标题作为请求的一部分接收。然后，你可以将章节名称作为标题显示在章节文本上方，让页面更有真实书籍的感觉。
 
-注意
-
-|  |  |
-|--|--|
-| ![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcgl0zwovlmdoc29uy3a-.jpg) | 如果你不熟悉 XML，不用担心，因为一旦看到实际应用，它非常容易理解。事实上，你在用 HTML 创建网页时已经间接使用了 XML。HTML，或者更确切地说，它的更正式的表亲 XHTML，可以被视为 XML 的一种特定应用。 |
+> **注意：**  
+> ![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcgl0zwovlmdoc29uy3a-.jpg) 如果你不熟悉 XML，不用担心，因为一旦看到实际应用，它非常容易理解。事实上，你在用 HTML 创建网页时已经间接使用了 XML。HTML，或者更确切地说，它的更正式的表亲 XHTML，可以被视为 XML 的一种特定应用。
 
 ### 客户端请求
 
 因此，改造后的 Booker 应用程序设计的一个重要部分，就是弄清楚客户端和服务器之间需要传输哪些信息，以及服务器再返回给客户端哪些信息。你可能还记得，每本电子书都存储在自己的文件中。在最初的 Booker 应用程序中，书籍的缩写标题作为 Ajax 请求的一部分发送——这样请求就知道要打开哪个文件，从而决定加载哪本书。在新版本中，你不再请求整本书，而是请求书中的单个章节。因此，除了缩写标题之外，你还需要传递章节信息。为了简单高效，章节可以用数字指定，其中 `0` 表示第一章，`1` 表示第二章，以此类推。
 
-注意
-
-|  |  |
-|--|--|
-| ![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcgl0zwovlmdoc29uy3a-.jpg) | 由于许多书籍包含“章节”，例如引言、序言、后记等，因此在从 XML 文档加载章节时，最好使用不同的术语来指代章节的“编号”。更合理的做法是将这个数字称为章节索引。因此，如果一本书在第一章之前有引言和序言，它们的章节索引将分别是 `0`、`1` 和 `2`。 |
+> **注意：**  
+> ![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcgl0zwovlmdoc29uy3a-.jpg) 由于许多书籍包含“章节”，例如引言、序言、后记等，因此在从 XML 文档加载章节时，最好使用不同的术语来指代章节的“编号”。更合理的做法是将这个数字称为章节索引。因此，如果一本书在第一章之前有引言和序言，它们的章节索引将分别是 `0`、`1` 和 `2`。
 
 总结一下，在新版 Booker 应用程序中，客户端必须向服务器发送以下两条信息才能发起电子书请求：
 
-*   缩写标题（例如 `alicewonderland`）
-
-*   章节索引（例如 `0`）
+- 缩写标题（例如 `alicewonderland`）
+- 章节索引（例如 `0`）
 
 现在，让我们将注意力转向服务器端，看看它在收到客户端请求后需要做什么。
 
@@ -1280,7 +1251,7 @@ loadBook(sel.options[sel.selectedIndex].value);
 
 虽然你可以就此打住，并顺利构建一个支持离散章节的电子书查看器，但还缺少一个关键信息。要理解缺少了什么，重要的是评估应用程序的用户界面将如何工作。想一想，实体书是基于翻页的概念运作的。尽管电子书查看器不会将书籍拆分成页面，但像翻页一样在章节间移动的概念是个好主意。这可以通过“上一章”和“下一章”按钮来实现，如图 3.2 所示。
 
-#### 图 3.2. “上一章”和“下一章”按钮提供了一种直观的方式来浏览电子书中的章节。
+#### 图 3.2 “上一章”和“下一章”按钮提供了一种直观的方式来浏览电子书中的章节。
 
 [[查看完整尺寸图片]](mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wlmzwawlnzmlhmc9nx2hzddnsmdjj.jpg)![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcglmawcwl2cuahnmm2kwyzi-.jpg)
 
@@ -1290,13 +1261,10 @@ loadBook(sel.options[sel.selectedIndex].value);
 
 因此，回顾 Booker 应用程序中服务器到客户端的数据传输部分，以下是发送的内容：
 
-*   章节编号（例如 `Chapter I`）
-
-*   章节标题（例如 `Down the Rabbit-Hole`）
-
-*   章节文本（例如 `Alice was beginning to...`）
-
-*   总章节数（例如 `12`）
+- 章节编号（例如 `Chapter I`）
+- 章节标题（例如 `Down the Rabbit-Hole`）
+- 章节文本（例如 `Alice was beginning to...`）
+- 总章节数（例如 `12`）
 
 明确了服务器的响应后，现在可以整合整个客户端-服务器对话，并更深入地探究数据在其中是如何表示的。
 
@@ -1304,41 +1272,40 @@ loadBook(sel.options[sel.selectedIndex].value);
 
 将应用程序的整个数据传输回路整合起来，得到图 3.3，它展示了信息从客户端到服务器，再从服务器返回客户端的流程，所有这些都属于单个 Ajax 请求的一部分。
 
-#### 图 3.3. Ajax 请求中客户端和服务器之间的数据流是 Booker 应用程序设计的关键部分。
+#### 图 3.3 Ajax 请求中客户端和服务器之间的数据流是 Booker 应用程序设计的关键部分。
 
 ![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcglmawcwl2cuahnmm2kwyzm-.jpg)
 
 该图揭示了多条信息如何在客户端和服务器之间双向传输。从最初的 Booker 应用程序中你已经知道，通过 Ajax 请求的 URL 向服务器发送信息并不困难。例如，在旧版 Booker 中，电子书的缩写标题是通过以下 URL 发送的：
 
-```
-booker.php?title=alicewonderland
-```
+```text
+
+
+
+`booker.php?title=alicewonderland`
 
 你可以将章节索引作为第二个参数添加到 URL 中，用与号（`&`）与标题分隔，如下所示：
 
-```
-booker.php?title=alicewonderland&chapIndex=0
-```
-
-
-
-
+`booker.php?title=alicewonderland&chapIndex=0`
 
 这涵盖了从客户端到服务器的数据传输。从服务器返回客户端的数据则要复杂得多，因为它包含整章的文本，以及其他书籍信息，包括章节编号、章节标题和总章节数。这些数据需要相当复杂的格式化，以确保能在客户端干净地提取出来。事实证明，XML 为格式化这些数据提供了完美的解决方案。即使你不是 XML 专家，我认为你解读以下代码也不会有太大困难：
 
-```
+```xml
 <bookData>
   <chapNum>第一章</chapNum>
   <chapTitle>掉进兔子洞</chapTitle>
   <chapText>爱丽丝开始感到非常厌倦，她坐在姐姐旁边，在河岸上无事可做……
+
   </chapText>
   <totalChapters>12</totalChapters>
 </bookData>
 ```
 
-注意
-
-| ![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcgl0zwovlmdoc29uy3a-.jpg) | 这些 XML 代码没有任何标准或官方性质。它们纯粹是为 Booker 应用程序而创建的。XML 的一个关键优势是，它允许你为任何目的创建任何你需要的语言。知道了这一点，你可以轻松地将 `<bookData>` 标签重命名为 `<eBookInfo>` 或 `<booker>`，只要在整个应用程序代码中一致地使用该标签名称即可。 |
+> **注意**
+>
+> ![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcgl0zwovlmdoc29uy3a-.jpg)
+>
+> 这些 XML 代码没有任何标准或官方性质。它们纯粹是为 Booker 应用程序而创建的。XML 的一个关键优势是，它允许你为任何目的创建任何你需要的语言。知道了这一点，你可以轻松地将 `<bookData>` 标签重命名为 `<eBookInfo>` 或 `<booker>`，只要在整个应用程序代码中一致地使用该标签名称即可。
 
 如你所见，服务器响应中包含的章节信息使用 XML 标签进行编码，这些标签清晰地描述了每条信息。在这个例子中，章节文本被特意精简，以使代码更易于阅读。
 
@@ -1352,37 +1319,42 @@ booker.php?title=alicewonderland&chapIndex=0
 
 开始构建这个增强版 Booker 应用程序的最佳方法是将其分解为各个组成部分。以下是该应用程序的三个主要组件：
 
-*   XML 文件（`book_alicewonderland.xml`、`book_frankenstein.xml` 等）
-*   HTML 网页（`booker.html`）
-*   PHP 服务器脚本（`booker.php`）
+- XML 文件（`book_alicewonderland.xml`、`book_frankenstein.xml` 等）
+- HTML 网页（`booker.html`）
+- PHP 服务器脚本（`booker.php`）
 
 接下来的几节将更详细地探讨 Booker 拼图中的这些部分，揭示使它们工作的代码。
 
-注意
-
-| ![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcgl0zwovlmdoc29uy3a-.jpg) | 哎呀！又要学一门新技术——PHP。其实不然。虽然了解 PHP 肯定大有裨益，但你完全不必是 PHP 程序员也能理解并定制这个应用程序或本书中的任何其他应用程序。我有意将示例应用程序中的所有 PHP 代码设计得极其简单和精简。你遇到的大部分 PHP 代码都是“样板”代码，这意味着你无需触碰它们就能对应用程序进行调整和定制。当有机会微调 PHP 代码时，我会明确告诉你具体位置和原因。 |
+> **注意**
+>
+> ![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcgl0zwovlmdoc29uy3a-.jpg)
+>
+> 哎呀！又要学一门新技术——PHP。其实不然。虽然了解 PHP 肯定大有裨益，但你完全不必是 PHP 程序员也能理解并定制这个应用程序或本书中的任何其他应用程序。我有意将示例应用程序中的所有 PHP 代码设计得极其简单和精简。你遇到的大部分 PHP 代码都是“样板”代码，这意味着你无需触碰它们就能对应用程序进行调整和定制。当有机会微调 PHP 代码时，我会明确告诉你具体位置和原因。
 
 #### XML 电子书
 
 在最初的 Booker 示例中，电子书被指定为带有常见 `.txt` 文件扩展名的纯文本文件。应用程序将每本电子书的所有数据作为一个巨大的文本块打开并显示。新的 Booker 应用程序要求电子书以 XML 数据格式编码，这种格式能清晰地区分章节以及书名、作者、章节标题等其他信息。与文本文件类似，XML 文件可以在任何文本编辑器中打开和编辑。你可以将 XML 文件视为类似于 HTML 网页文件，只不过你处理的是自定义词汇（标签集），而不是 `<html>`、`<p>`、`<div>` 等。所有 XML 文件的扩展名都是 `.xml`。
 
-注意
-
-| ![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcgl0zwovlmdoc29uy3a-.jpg) | 在关于 XML 的讨论中，你经常会看到“文件”和“文档”这两个术语互换使用。一般来说，它们意思相同。有时它们的不同之处在于，当一段 XML 代码不一定与硬盘上的文件相关时。例如，完全有可能（而且很有用！）动态生成 XML 代码，在这种情况下就没有文件的概念。在这种情况下，使用更抽象的术语“文档”来指代 XML 代码更为合理。我在本书中倾向于遵循这一术语用法。 |
+> **注意**
+>
+> ![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcgl0zwovlmdoc29uy3a-.jpg)
+>
+> 在关于 XML 的讨论中，你经常会看到“文件”和“文档”这两个术语互换使用。一般来说，它们意思相同。有时它们的不同之处在于，当一段 XML 代码不一定与硬盘上的文件相关时。例如，完全有可能（而且很有用！）动态生成 XML 代码，在这种情况下就没有文件的概念。在这种情况下，使用更抽象的术语“文档”来指代 XML 代码更为合理。我在本书中倾向于遵循这一术语用法。
 
 那么，用什么 XML 词汇来表示一本电子书呢？虽然市面上有一些标准的电子书词汇，但它们往往相当复杂，对于这个例子来说过于繁琐，所以我认为最好创建我们自己的词汇。与其逐条解释每个标签的含义，不如直接看一本实际书籍的摘录：
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
+
 <ebook>
   <title>爱丽丝梦游仙境</title>
   <author>刘易斯·卡罗尔</author>
   <chapters>
     <chapter num="第一章" title="掉进兔子洞">
-    爱丽丝开始感到非常厌倦，她坐在姐姐旁边，在河岸上无事可做……
+      爱丽丝开始感到非常厌倦，她坐在姐姐旁边，在河岸上无事可做……
     </chapter>
     <chapter num="第二章" title="眼泪池">
-    &#39;越来越奇怪了！&#39;爱丽丝喊道（她惊讶得一时忘了怎么说话……
+      &#39;越来越奇怪了！&#39;爱丽丝喊道（她惊讶得一时忘了怎么说话……
     </chapter>
     ...
   </chapters>
@@ -1393,7 +1365,7 @@ booker.php?title=alicewonderland&chapIndex=0
 
 它的工作原理如下：每本电子书的代码都包含在一个 `ebook` 元素中，该元素由开始和结束标签组成，如下所示：
 
-```
+```xml
 <ebook>
   ...
 </ebook>
@@ -1401,72 +1373,71 @@ booker.php?title=alicewonderland&chapIndex=0
 
 在 `ebook` 元素内部，你放置另一个容器元素（`chapters`）来容纳章节集合。以下是添加了 `chapters` 元素后的电子书代码：
 
-```
+```xml
 <ebook>
   <chapters>
-  ...
+    ...
   </chapters>
 </ebook>
 ```
 
 然后，电子书的每个章节使用 `<chapter>` 标签进行编码，该标签有两个属性用于设置章节编号和标题：`num` 和 `title`。除了这两个属性外，`<chapter>` 标签本身还作为章节文本的容器。因此，单个章节看起来像这样：
 
-
-
-
-
-```
+```xml
 <chapter num="第二章" title="眼泪的池塘">
-“越来越奇怪了！”爱丽丝喊道（她惊讶得一时之间完全忘记了如何说话……
+  “越来越奇怪了！”爱丽丝喊道（她惊讶得一时之间完全忘记了如何说话……
 </chapter>
 ```
 
-章节文本中奇怪的`&#39;`是经过特殊编码的撇号（'），目的是避免混淆 XML 文档处理器。另一种编码这种元素（在 XML 中也称为实体）的方法是使用 XML 的标准撇号实体`&apos;`。电子书中的引号字符也需要类似的编码，此时应使用`&#34;`代替实际的引号（"）。
+章节文本中奇怪的 `&#39;` 是经过特殊编码的撇号（'），目的是避免混淆 XML 文档处理器。另一种编码这种元素（在 XML 中也称为实体）的方法是使用 XML 的标准撇号实体 `&apos;`。电子书中的引号字符也需要类似的编码，此时应使用 `&#34;` 代替实际的引号（"）。
 
 现在你已经了解了电子书 XML 文档的一般结构以及如何用 XML 编码每一章，你可以将两者结合起来，更好地理解整本书的代码。以下是 H.G.威尔斯所著《世界大战》的部分代码：
 
-代码视图：
+**代码视图：**
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
+
 <ebook>
   <title>世界大战</title>
   <author>H. G. 威尔斯</author>
   <chapters>
-  <chapter num="" title="引言">
-  但如果这些世界有人居住，谁将居住其中？……是我们还是他们是世界的主宰？……万物又是如何为人类创造的？
-  ——开普勒（引自《忧郁的解剖》）
-  </chapter>
-  <chapter num="第一部 第一章"
-  title="战争前夕">
-  火星人降临
+    <chapter num="" title="引言">
+      但如果这些世界有人居住，谁将居住其中？……是我们还是他们是世界的主宰？……万物又是如何为人类创造的？
 
-  在十九世纪的最后几年，没有人会相信这个世界正被比人类更高级、却同样会死的智慧生命密切监视着……
-  </chapter>
-  <chapter num="第一部 第二章"
-  title="流星">
-  随后，第一颗流星坠落的夜晚来临了。清晨时分，它被看到从温彻斯特上空向东疾驰，在大气层中留下一道火焰。数百人一定看到了它，并把它当作一颗普通的流星……
-  </chapter>
-  ...
- </chapters>
-</ebook> 
+      ——开普勒（引自《忧郁的解剖》）
+    </chapter>
+
+    <chapter num="第一部 第一章" title="战争前夕">
+      火星人降临
+
+      在十九世纪的最后几年，没有人会相信这个世界正被比人类更高级、却同样会死的智慧生命密切监视着……
+    </chapter>
+
+    <chapter num="第一部 第二章" title="流星">
+      随后，第一颗流星坠落的夜晚来临了。清晨时分，它被看到从温彻斯特上空向东疾驰，在大气层中留下一道火焰。数百人一定看到了它，并把它当作一颗普通的流星……
+    </chapter>
+
+    ...
+  </chapters>
+</ebook>
 ```
 
 希望现在你对 XML 代码有了更多理解，因为你已经看到了两本不同书籍的部分代码，它们采用了相同的格式。值得注意的是，《世界大战》有点特殊，因为它分为两“部”。与其为了不同的章节划分方式而修改整个数据格式，不如将部号合并到章节编号中。与其他一些电子书不同，这本书还同时使用了章节编号和章节标题，这有助于说明这两部分信息的必要性。
 
 虽然我不得不承认这毫无乐趣可言，但我手动将上一章中的五本示例电子书转换成了你刚刚学到的 XML 格式。直到我遇到那本巨兽（字面意义上的！）《白鲸》之前，一切都还轻松——它竟然有 102 章！更别提《战争与和平》了，这部史诗级巨著为 Booker 应用程序提供了绝佳的压力测试。最终你会发现，将电子书编码为 XML 是定制 Booker 应用程序以满足自身需求中最耗时的部分。
 
-本章前面我提到过，XML 文件虽然实际上是文本文件，但扩展名是`.xml`。以下是更新后的 Booker 应用程序中使用的示例电子书及其对应的文件名：
+本章前面我提到过，XML 文件虽然实际上是文本文件，但扩展名是 `.xml`。以下是更新后的 Booker 应用程序中使用的示例电子书及其对应的文件名：
 
-*   《爱丽丝梦游仙境》——`book_alicewonderland.xml`
-*   《弗兰肯斯坦》——`book_frankenstein.xml`
-*   《白鲸》——`book_mobydick.xml`
-*   《战争与和平》——`book_warandpeace.xml`
-*   《世界大战》——`book_warofworlds.xml`
+- 《爱丽丝梦游仙境》——`book_alicewonderland.xml`
+- 《弗兰肯斯坦》——`book_frankenstein.xml`
+- 《白鲸》——`book_mobydick.xml`
+- 《战争与和平》——`book_warandpeace.xml`
+- 《世界大战》——`book_warofworlds.xml`
 
-这些电子书的命名方式与你之前看到的缩写标题相同——唯一的变化是扩展名从`.txt`变成了`.xml`。这意味着你可以通过以下公式以编程方式构建 XML 电子书的文件名：
+这些电子书的命名方式与你之前看到的缩写标题相同——唯一的变化是扩展名从 `.txt` 变成了 `.xml`。这意味着你可以通过以下公式以编程方式构建 XML 电子书的文件名：
 
-```
+```javascript
 "book_" + AbbrevTitle + ".xml"
 ```
 
@@ -1474,15 +1445,17 @@ booker.php?title=alicewonderland&chapIndex=0
 
 #### Booker 网页
 
-尽管 Booker 应用程序有服务器端组件，但大部分工作发生在客户端，即应用程序的 HTML 网页部分`booker.html`。图 3.4 展示了在 Web 浏览器中运行的全新 Booker 应用程序，其中显示了提供章节导航按钮的更新后用户界面。
+尽管 Booker 应用程序有服务器端组件，但大部分工作发生在客户端，即应用程序的 HTML 网页部分 `booker.html`。图 3.4 展示了在 Web 浏览器中运行的全新 Booker 应用程序，其中显示了提供章节导航按钮的更新后用户界面。
 
-##### 图 3.4. 现在只显示单个电子书章节，并提供了向前和向后浏览其他章节的按钮。
+##### 图 3.4：现在只显示单个电子书章节，并提供了向前和向后浏览其他章节的按钮
 
 [[查看完整尺寸图片]](mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wlmdwcglqywnhmc9rx2hzddnsmdrj.jpg)![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcglhy2owl2suahnnm3awyzq-.jpg)
 
-注意
-
-| ![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcgl0zwovlmdoc29uy3a-.jpg) | 如果你想知道 Booker 应用程序中的 Ajax 诊断栏去哪了，答案是我把它隐藏了，以免干扰图片。事实上，诊断栏在本书剩余的所有应用程序中都不会出现。你仍然可以通过在网页 HTML 代码中移除 Ajax 状态`div`（ID 为`ajaxState`）的样式`display:none`来轻松启用示例中的诊断栏，或者如果你想保留样式以便稍后禁用该栏，也可以将样式改为`display:block`。 |
+> **注意**
+>
+> ![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcgl0zwovlmdoc29uy3a-.jpg)
+>
+> 如果你想知道 Booker 应用程序中的 Ajax 诊断栏去哪了，答案是我把它隐藏了，以免干扰图片。事实上，诊断栏在本书剩余的所有应用程序中都不会出现。你仍然可以通过在网页 HTML 代码中移除 Ajax 状态 `div`（ID 为 `ajaxState`）的样式 `display:none` 来轻松启用示例中的诊断栏，或者如果你想保留样式以便稍后禁用该栏，也可以将样式改为 `display:block`。
 
 该图展示了应用程序的几个新用户界面方面。首先，注意章节标题显示在电子书选择列表的正下方。这个区域实际上可以同时显示章节编号和章节标题，但在《世界大战》的引言中，只显示了章节编号（`INTRO`）。
 
@@ -1492,19 +1465,18 @@ booker.php?title=alicewonderland&chapIndex=0
 
 好了，我已经铺垫得够久了，现在让我们来看看页面主体的代码，它建立了用户界面并连接了脚本事件：
 
-代码视图：
+**代码视图：**
 
-
-
-
-
-```
+```html
 <body style="background:#EEEEEE"
   onload="document.getElementById('book').selectedIndex = 0;
   loadChapter(document.getElementById('book').options[
   document.getElementById('book').selectedIndex].value, 0)">
+
   <div id="ajaxState" style="display:none"></div>
+
   <br />
+
   <div style="margin-left:10%">Select book:
     <select id="book"
       onchange="loadChapter(this.options[
@@ -1521,10 +1493,14 @@ booker.php?title=alicewonderland&chapIndex=0
         H.G. Wells</option>
     </select>
   </div>
+
   <br />
+
   <div id="chapinfo" style="margin-left:10%; font-size:large">
   </div>
+
   <br />
+
   <div style="margin-left:10%">
     <input id="homeButton" type="button" value="<<"
       style="width:60px"
@@ -1533,246 +1509,339 @@ booker.php?title=alicewonderland&chapIndex=0
       value="< Previous" style="width:120px"
       onclick="prevChapter()" />
   </div>
+
   <br />
+
   <div id="chaptext"
     style="margin-left:10%; margin-right:10%; padding:2%;
     background:#FFFFFF; border:thin solid #333333"></div>
+
   <br />
+
   <div style="margin-left:10%">
     <input id="nextButton" type="button" value="Next >"
-      style="width:120px" onclick="nextChapter()"   />
+      style="width:120px" onclick="nextChapter()" />
     <input id="endButton" type="button" value=">>"
       style="width:60px"
       onclick="curchapIndex = (totalChapters - 2);
       nextChapter()" />
   </div>
-</body> 
+</body>
 ```
 
-再次强调，我意识到对于一本声称你不需要了解任何 JavaScript 的书来说，这段代码的 JavaScript 含量相当高。但请记住，重点是让你能够在自己的应用程序中重用这段代码。而且，即使你不一定理解每一行代码的工作原理，这也是完全可行的。即便如此，还是值得大致描绘一下发生了什么，以便你对如何进行修改有所了解。另外，别忘了所有这些代码（以及本节剩余的代码）都位于随书附带的 Linux 光盘上的 `booker.html` 文件中。
 
-首先，用户界面由几个 `div` 元素组织而成，这些元素提供了一种清晰组织章节信息和导航按钮的好方法。与之前版本的应用程序类似，使用 `<select>` 标签在 HTML 中编码了一个包含电子书的选择列表。在这个版本中，更值得关注的是导航按钮，它们使用 `<input>` 标签编码。
 
-“上一章”和“下一章”导航按钮的功能是通过调用 `prevChapter()` 和 `nextChapter()` JavaScript 函数实现的，你马上就会看到这些函数。首页（`<<`）和末页（`>>`）按钮也使用了相同的函数，但借助了 `curChapIndex` 变量，该变量用于跟踪当前章节的索引。稍后当你进入应用程序的 JavaScript 代码时，就会看到这个变量是如何工作的。
 
-Booker 网页 `<body>` 中的另一个非常重要的代码段是根据选择列表中的选择变化来加载电子书的代码：
+再次强调，我意识到对于一本声称你不需要了解任何 JavaScript 的书来说，这段代码的 JavaScript 含量相当高。但请记住，重点是让你能够在自己的应用程序中重用这段代码。而且，即使你不一定理解每一行代码的工作原理，这也是完全可行的。即便如此，还是值得大致描绘一下发生了什么，以便你对如何进行修改有所了解。另外，别忘了所有这些代码（以及本节剩余的代码）都位于随书附带的 Linux 光盘上的`booker.html`文件中。
+
+首先，用户界面由几个`div`元素组织而成，这些元素提供了一种清晰组织章节信息和导航按钮的好方法。与之前版本的应用程序类似，使用`<select>`标签在 HTML 中编码了一个包含电子书的选择列表。在这个版本中，更值得关注的是导航按钮，它们使用`<input>`标签编码。
+
+“上一章”和“下一章”导航按钮的功能是通过调用`prevChapter()`和`nextChapter()` JavaScript 函数实现的，你马上就会看到这些函数。首页（`<<`）和末页（`>>`）按钮也使用了相同的函数，但借助了`curChapIndex`变量，该变量用于跟踪当前章节的索引。稍后当你进入应用程序的 JavaScript 代码时，就会看到这个变量是如何工作的。
+
+Booker 网页`<body>`中的另一个非常重要的代码段是根据选择列表中的选择变化来加载电子书的代码：
 
 ```
 loadChapter(this.options[this.selectedIndex].value, 0)
 ```
 
-这段代码与之前版本应用程序的选择变化代码相同，只是除了当前选中的电子书（`this.options[this.selectedIndex].value`）之外，还传递了章节索引（`0`）。函数名也从 `loadBook()` 改为了 `loadChapter()`，以表明只加载一个章节。在 `<body>` 标签的 `onload` 事件处理程序中也有一个类似的 `loadChapter()` 函数调用，该调用负责在页面首次打开时加载列表中第一本电子书的第一章。
+这段代码与之前版本应用程序的选择变化代码相同，只是除了当前选中的电子书（`this.options[this.selectedIndex].value`）之外，还传递了章节索引（`0`）。函数名也从`loadBook()`改为了`loadChapter()`，以表明只加载一个章节。在`<body>`标签的`onload`事件处理程序中也有一个类似的`loadChapter()`函数调用，该调用负责在页面首次打开时加载列表中第一本电子书的第一章。
 
-以下是 `loadChapter()` 函数的代码，该函数通过 Ajax 请求，根据简化的电子书标题和章节索引加载单个章节：
+以下是`loadChapter()`函数的代码，该函数通过 Ajax 请求，根据简化的电子书标题和章节索引加载单个章节：
 
-```
+```javascript
 function loadChapter(title, chapIndex) {
+
   // Could be a new book, so initialize the navigation buttons
+
   if (chapIndex == 0) {
+
     document.getElementById("homeButton").disabled = true;
+
     document.getElementById("prevButton").disabled = true;
+
     document.getElementById("nextButton").disabled = false;
+
     document.getElementById("endButton").disabled = false;
+
   }
 
   // Set the current chapter index
+
   curchapIndex = chapIndex;
 
   // Clear the previous chapter text
+
   replaceText(document.getElementById("chaptext"),
+
     "Loading...");
 
   // Send the Ajax request to load the new chapter
+
   var bookURL = "booker.php?title=" +
+
     encodeURIComponent(title) +
+
     "&chapIndex=" + encodeURIComponent(chapIndex);
+
   ajaxSendRequest("GET", bookURL, handleRequest);
+
 }
 ```
 
-函数的前几行初始化导航按钮，使其在第一本书的第一章时正确启用或禁用。然后存储当前章节索引，因为你需要记住它才能成功地从一章导航到下一章。章节文本区域还承担了加载章节时的状态通知功能，在章节加载期间设置为 `"Loading..."`。一旦章节加载完成，该文本将被替换为实际的章节文本。最后，通过将简化的标题和章节索引打包到 URL 中，使用 `GET` 请求方法发送实际的 Ajax 请求。注意，熟悉的 `handleRequest()` 函数被指定为请求处理程序，这意味着当请求完成时它会被调用。
+函数的前几行初始化导航按钮，使其在第一本书的第一章时正确启用或禁用。然后存储当前章节索引，因为你需要记住它才能成功地从一章导航到下一章。章节文本区域还承担了加载章节时的状态通知功能，在章节加载期间设置为`"Loading..."`。一旦章节加载完成，该文本将被替换为实际的章节文本。最后，通过将简化的标题和章节索引打包到 URL 中，使用`GET`请求方法发送实际的 Ajax 请求。注意，熟悉的`handleRequest()`函数被指定为请求处理程序，这意味着当请求完成时它会被调用。
 
-`handleRequest()` 函数承担了 Booker 应用程序中的大部分工作，在本例中包括接收 XML 书籍数据、提取重要信息以及相应地更新页面上的元素。在探索此函数的代码之前，让我们快速回顾一下 Ajax 响应中从服务器返回的 XML 数据的格式：
+`handleRequest()`函数承担了 Booker 应用程序中的大部分工作，在本例中包括接收 XML 书籍数据、提取重要信息以及相应地更新页面上的元素。在探索此函数的代码之前，让我们快速回顾一下 Ajax 响应中从服务器返回的 XML 数据的格式：
 
-```
+```xml
 <bookData>
+
   <chapNum />
+
   <chapTitle>INTRO</chapTitle>
+
   <chapText>
+
   But who shall dwell in these worlds if they be
+
   inhabited? .  .  .  Are we or they Lords of the
+
   World? .  .  .  And how are all things made for man?
+
   — KEPLER (quoted in The Anatomy of Melancholy)
+
   </chapText>
+
   <totalChapters>28</totalChapters>
+
 </bookData>
 ```
 
-这是必须由 `handleRequest()` 函数处理的一种 XML 数据示例，其代码如下：
+这是必须由`handleRequest()`函数处理的一种 XML 数据示例，其代码如下：
 
-Code View:
+**Code View:**
 
-```
+```javascript
 function handleRequest() {
+
   if (request.readyState == 4 && request.status == 200) {
+
     // Store the XML response data
+
     var xmlData = request.responseXML.getElementsByTagName(
+
       "bookData")[0];
 
     // Store the total number of chapters
+
     totalChapters =
+
 getText(xmlData.getElementsByTagName("totalChapters")[0]);
 
     // Display the chapter info
+
     var chapNum = getText(xmlData.getElementsByTagName(
+
       "chapNum")[0]);
+
     var chapTitle =
+
 getText(xmlData.getElementsByTagName("chapTitle")[0]);
+
     var chapInfo;
+
     if (chapNum.length > 0 && chapTitle.length > 0)
+
       chapInfo = chapNum + " : " + chapTitle;
+
    else
+
      chapInfo = chapNum + chapTitle;
+
    replaceText(document.getElementById("chapinfo"), chapInfo);
 
    // Display the chapter text
+
    replaceText(document.getElementById("chaptext"),
+
      getText(xmlData.getElementsByTagName("chapText")[0]));
+
  }
+
  ajaxUpdateState();
-} 
+
+}
 ```
 
-代码首先检查 Ajax 请求是否成功完成，然后将 XML 数据缩减到第一个 `bookData` 元素，在本例中这是唯一的 `bookData` 元素。接着，使用 JavaScript DOM 函数从 XML 数据中仔细提取每一段数据。例如，总章节数通过以下代码行获取并存储在 `totalChapters` 变量中：
+代码首先检查 Ajax 请求是否成功完成，然后将 XML 数据缩减到第一个`bookData`元素，在本例中这是唯一的`bookData`元素。接着，使用 JavaScript DOM 函数从 XML 数据中仔细提取每一段数据。例如，总章节数通过以下代码行获取并存储在`totalChapters`变量中：
 
-
-
-
-
-```
+```javascript
 totalChapters =
+
   getText(xmlData.getElementsByTagName("totalChapters")[0]);
 ```
 
-如果章节总数恰好是用不同的标签名（比如 `<NumberOfChapters>`）编码在 XML 中的，那么上一行代码只需改为：
+如果章节总数恰好是用不同的标签名（比如`<NumberOfChapters>`）编码在 XML 中的，那么上一行代码只需改为：
 
-```
+```javascript
 totalChapters =
+
   getText(xmlData.getElementsByTagName("NumberOfChapters")[0]);
 ```
 
 这就是一个示例，展示了如何修改应用程序的 XML 处理代码，而不必深入探究使其工作的 DOM 函数的细节。
 
-注意
+### 注意
 
-| ![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcgl0zwovlmdoc29uy3a-.jpg) | Booker 应用程序中使用的 `getText()` 和 `replaceText()` 函数并非标准的 JavaScript DOM 函数，而是本书附带的 `domkit.js` 文件中的辅助函数。上一章解释了这些函数以及 Ajax 工具包中其他函数的相关性。 |
+| ![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcgl0zwovlmdoc29uy3a-.jpg) | Booker 应用程序中使用的`getText()`和`replaceText()`函数并非标准的 JavaScript DOM 函数，而是本书附带的`domkit.js`文件中的辅助函数。上一章解释了这些函数以及 Ajax 工具包中其他函数的相关性。 |
 
-`handleRequest()` 函数中的其余代码涉及从 XML 数据中提取信息片段，并将其显示在页面上的每个 `div` 元素中。该代码足够智能，能够检查章节编号和章节标题是否存在，如果两者都存在，则将它们合并在一起。否则，只显示指定的那一项。这是一种巧妙的方式，可以应对有些书有章节编号、有些有章节标题、有些两者都有的情况。
+`handleRequest()`函数中的其余代码涉及从 XML 数据中提取信息片段，并将其显示在页面上的每个`div`元素中。该代码足够智能，能够检查章节编号和章节标题是否存在，如果两者都存在，则将它们合并在一起。否则，只显示指定的那一项。这是一种巧妙的方式，可以应对有些书有章节编号、有些有章节标题、有些两者都有的情况。
 
-网页中你尚未看到的唯一部分是响应导航按钮点击的两个函数：`prevChapter()` 和 `nextChapter()`。我们先从 `prevChapter()` 函数开始，其代码如下：
+网页中你尚未看到的唯一部分是响应导航按钮点击的两个函数：`prevChapter()`和`nextChapter()`。我们先从`prevChapter()`函数开始，其代码如下：
 
-```
+```javascript
 function prevChapter() {
+
   if (curchapIndex > 0) {
+
     curchapIndex—;
+
     document.getElementById("nextButton").disabled = false;
+
     document.getElementById("endButton").disabled = false;
+
   }
+
   if (curchapIndex == 0) {
+
     document.getElementById("homeButton").disabled = true;
+
     document.getElementById("prevButton").disabled = true;
+
   }
+
   loadChapter(document.getElementById('book').options[
+
     document.getElementById('book').selectedIndex].value,
+
       curchapIndex);
+
 }
 ```
 
-该函数中的大部分代码用于根据当前章节是否为第一章，智能地启用或禁用导航按钮。执行完导航按钮逻辑后，调用 `loadChapter()` 函数，并使用当前章节索引来指定要加载的章节。
+该函数中的大部分代码用于根据当前章节是否为第一章，智能地启用或禁用导航按钮。执行完导航按钮逻辑后，调用`loadChapter()`函数，并使用当前章节索引来指定要加载的章节。
 
-`nextChapter()` 函数与 `prevChapter()` 非常相似，只是角色反转，专注于最后一章而非第一章。换句话说，如果当前章节是最后一章，那么 `nextChapter()` 函数需要禁用“下一章”按钮。以下代码展示了如何使用 `totalChapters` 变量作为判断当前章节是否为最后一章的依据：
+`nextChapter()`函数与`prevChapter()`非常相似，只是角色反转，专注于最后一章而非第一章。换句话说，如果当前章节是最后一章，那么`nextChapter()`函数需要禁用“下一章”按钮。以下代码展示了如何使用`totalChapters`变量作为判断当前章节是否为最后一章的依据：
 
-```
+```javascript
 function nextChapter() {
+
   if (curchapIndex  < (totalChapters - 1)) {
+
     curchapIndex++;
+
     document.getElementById("homeButton").disabled = false;
+
     document.getElementById("prevButton").disabled = false;
+
   }
+
   if (curchapIndex == (totalChapters - 1)) {
+
     document.getElementById("nextButton").disabled = true;
+
     document.getElementById("endButton").disabled = true;
+
   }
+
   loadChapter(document.getElementById('book').options[
+
     document.getElementById('book').selectedIndex].value,
+
       curchapIndex);
+
 }
 ```
 
 至此，全新改版的 Booker 应用程序的客户端部分就介绍完了。剩下的只是快速浏览一下服务器端脚本，与客户端相比，这简直是小菜一碟。
 
-#### Booker 服务器端脚本
+## Booker 服务器端脚本
 
-Booker 应用程序服务器端的 PHP 脚本负责读取整个电子书 XML 文件，然后动态生成一个仅包含网页所需相关章节信息的 XML 文档。这些章节信息通过 Ajax 响应传回客户端。以下是服务器端 PHP 脚本 `booker.php` 的代码：
+Booker 应用程序服务器端的 PHP 脚本负责读取整个电子书 XML 文件，然后动态生成一个仅包含网页所需相关章节信息的 XML 文档。这些章节信息通过 Ajax 响应传回客户端。以下是服务器端 PHP 脚本`booker.php`的代码：
 
-```
+```php
 <?php
+
 header('Content-Type: text/xml');
 
 // 将电子书 XML 数据解析为结构
+
 $rawBook = file_get_contents("book_" . $_REQUEST['title'] .
+
   ".xml");
+
 $xml = new SimpleXmlElement($rawBook);
 
 $chap = $xml->chapters->chapter[intval($_REQUEST['chapIndex'])];
+
 $xmlChapter = '<?xml version="1.0" encoding="utf-8"?>';
+
 $xmlChapter .= '<bookData>';
+
 $xmlChapter .= '<chapNum>' . $chap['num'] . '</chapNum>';
+
 $xmlChapter .= '<chapTitle>' . $chap['title'] . '</chapTitle>';
+
 $xmlChapter .= '<chapText>' . $chap . '</chapText>';
+
 $count = 0;
+
 foreach ($xml->chapters->chapter as $chapter) {
+
   $count++;
+
 }
+
 $xmlChapter .= '<totalChapters>' . $count . '</totalChapters>';
+
 $xmlChapter .= '</bookData>';
 
 // 生成书籍信息 XML 文档
+
 echo $xmlChapter;
+
 ?>
 ```
 
 诚然，如果你对 PHP 一无所知，这段代码看起来可能非常陌生。与其试图教你一门新语言（这显然超出了本书的范围和领域），不如让我来充当翻译。代码开头部分确定了返回的数据是 XML 数据格式；这一点至关重要，这样服务器在通过 Ajax 响应将数据传回客户端时，才能正确地打包数据。
 
-脚本中的第一大部分代码负责将整个电子书从 XML 文件读入一个可进一步处理的数据结构中。`$_REQUEST['title']` 这一行代码是 PHP 脚本获取 Ajax 请求 URL 中发送的 `title` 参数的地方。还记得这段代码吗：
+脚本中的第一大部分代码负责将整个电子书从 XML 文件读入一个可进一步处理的数据结构中。`$_REQUEST['title']`这一行代码是 PHP 脚本获取 Ajax 请求 URL 中发送的`title`参数的地方。还记得这段代码吗：
 
-```
+```text
 booker.php?title=warofworlds&chapIndex=0
 ```
 
-代码 `$_REQUEST['title']` 获取的是该 URL 中发送的 `title` 值。类似地，要获取 `chapIndex` 参数的值，可以使用以下代码：
+代码`$_REQUEST['title']`获取的是该 URL 中发送的`title`值。类似地，要获取`chapIndex`参数的值，可以使用以下代码：
 
-```
+```php
 $_REQUEST['chapIndex']
 ```
 
-回到脚本中解析 XML 电子书的部分，代码构建了一个文件名（例如 `book_warofworlds.xml`），并将其读入一个 XML 数据结构。接着，主要的大段代码开始运行，深入 XML 代码中查找由脚本的 `chapIndex` 参数指定的章节。这段代码实际上同时在进行 XML 的读取和写入——它遍历整个电子书，寻找特定的章节信息，然后编写一个新的 XML 文档来包含这些信息。最终结果就是你在上一节中看到的带有 `<bookData>` 标签的简洁 XML 响应数据。
+回到脚本中解析 XML 电子书的部分，代码构建了一个文件名（例如`book_warofworlds.xml`），并将其读入一个 XML 数据结构。接着，主要的大段代码开始运行，深入 XML 代码中查找由脚本的`chapIndex`参数指定的章节。这段代码实际上同时在进行 XML 的读取和写入——它遍历整个电子书，寻找特定的章节信息，然后编写一个新的 XML 文档来包含这些信息。最终结果就是你在上一节中看到的带有`<bookData>`标签的简洁 XML 响应数据。
 
 要真正理解服务器端脚本的工作原理，最好在文本编辑器中打开一个电子书 XML 文件，然后逐行对照脚本中最后一大段代码来研究标签。你会开始发现一种模式：每个标签和属性都被有条不紊地解析，其相关数据被提取并打包到新的 XML 标签中。
 
 当脚本完成构建包含章节信息的新 XML 文档后，数据通过一行代码返回给客户端：
 
-```
+```php
 echo $xmlChapter;
 ```
+
+
+
 
 我知道，对于脚本所做的大量工作来说，这有点虎头蛇尾，但 PHP 就是这样。真正的精彩还在下一节，届时你将让应用程序跑起来。不过在此之前，让我们快速了解一下如何测试 PHP 脚本。
 
 你知道 Booker 应用程序的 Ajax 请求由一个 URL 组成，该 URL 向 PHP 脚本传递参数。你也知道该脚本负责返回一个 XML 文档作为对该请求的响应。在 Ajax 请求的上下文之外研究该响应会非常有帮助，也就是说，你可以直接在 Web 浏览器中查看 PHP 脚本生成的内容。只需将 Ajax 请求的 URL 作为浏览器中网页的地址输入即可，如下所示：
-
-
-
-
 
 [`www.yourdomain.com/booker.php?title=warofworlds&chapIndex=0`](http://www.yourdomain.com/booker.php?title=warofworlds&chapIndex=0)
 
@@ -1792,7 +1861,7 @@ echo $xmlChapter;
 
 [[查看完整尺寸图片]](mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wlmdwcglqywnhmc9rx2hzddnsmdzj.jpg)![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcglhy2owl2suahnnm3awyzy-.jpg)
 
-> **注意：** ![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcgl0zwovlmdoc29uy3a-.jpg) 在某个时候，你可能需要考虑通过查看服务器日志来了解 Ajax 请求的具体情况。你需要查阅特定 Web 服务器的文档，但所有 Web 服务器都包含日志，以便你了解发出了哪些请求以及是否出现了问题。你也可以使用 JavaScript 调试器（如 Firebug）直接在 Web 浏览器中查看与 Ajax 请求相关的类似信息。
+> **注意：** ![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wlmdoc29uy3a-.jpg) 在某个时候，你可能需要考虑通过查看服务器日志来了解 Ajax 请求的具体情况。你需要查阅特定 Web 服务器的文档，但所有 Web 服务器都包含日志，以便你了解发出了哪些请求以及是否出现了问题。你也可以使用 JavaScript 调试器（如 Firebug）直接在 Web 浏览器中查看与 Ajax 请求相关的类似信息。
 
 注意图中，章节编号和标题出现在选择列表下方，这有助于让页面更像一本真正的书。下方是“首页”和“上一章”导航按钮，它们最初是禁用的，因为从第一章无法向后移动。
 
@@ -1800,7 +1869,7 @@ echo $xmlChapter;
 
 ##### 图 3.7\. “下一章”和“结尾”导航按钮出现在章节底部，允许你在电子书中向前导航。
 
-[[查看完整尺寸图片]](mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wlmdwcglqywnhmc9rx2hzddnsmddj.jpg)![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcglhy2owl2suahnnm3awyzc-.jpg)
+[[查看完整尺寸图片]](mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wlmdwcglqywnhmc9rx2hzddnsmd.jpg)![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcglhy2owl2suahnnm3awyzc-.jpg)
 
 点击“下一章”按钮会跳转到下一章，如图 3.8 所示。
 
@@ -1820,29 +1889,34 @@ Booker 应用程序的一个潜在变体是数据驱动的博客工具。例如�
 
 请记住，每本电子书的 XML 文件包含给定章节的三个主要信息：编号、标题和文本。唯一不太符合博客概念的信息是章节编号，它可以很容易地被重新用作博客的日期/时间。因此，可以像编写电子书一样编写博客文档，但将博客日期和时间指定为章节编号，博客标题作为章节标题，博客文本作为章节文本。以下是一个这样的文档示例：
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
+
 <ebook>
   <title>Michael's Sports Blog</title>
   <author>Michael Morrison</author>
+
   <chapters>
     <chapter num="01/16/2007 8:00pm"
-    title="Predators Have Most Wins">
-    After last night&#39;s win against conference rival Calgary,
-    the Nashville Predators are now the first team to reach 32
-    wins in the NHL this season, and are only one point behind
-    Anaheim in the entire league. Go Preds!
+      title="Predators Have Most Wins">
+      After last night&#39;s win against conference rival Calgary,
+      the Nashville Predators are now the first team to reach 32
+      wins in the NHL this season, and are only one point behind
+      Anaheim in the entire league. Go Preds!
     </chapter>
+
     <chapter num="12/31/2006 11:30pm"
-    title="Titans Eliminate Themselves">
-    In a loss that will haunt the franchise until next season,
-    the Tennessee Titans&#39; miraculous season turn-around came
-    to a screeching halt as they lost to the Patriots in Week 17
-    and eliminated themselves from the playoffs.
+      title="Titans Eliminate Themselves">
+      In a loss that will haunt the franchise until next season,
+      the Tennessee Titans&#39; miraculous season turn-around came
+      to a screeching halt as they lost to the Patriots in Week 17
+      and eliminated themselves from the playoffs.
     </chapter>
   </chapters>
 </ebook>
 ```
+
+
 
 诚然，你可能会认为应该修改 XML 词汇表，使博客 XML 代码不再包含 `<ebook>` 和 `<chapter>` 这样的标签，但这并不关键。如果你觉得可以随意修改 XML 词汇表，那就尽管去做。但即使不这样做，仅仅通过更改 XML 文件的内容，你也能完成很多事情。
 
@@ -1852,11 +1926,7 @@ Booker 应用程序的一个潜在变体是数据驱动的博客工具。例如�
 
 ## 第 4 章 使用 Ajax 动态填充列表：股票选择器
 
-Covert Ajax
-
-
-
-
+### Covert Ajax
 
 | ![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcgl0zwovlmdoc29uy3a-.jpg) | 谁能想到 Ajax 竟然与中东冲突有关联？1953 年，英国和美国合作实施了一项秘密行动，推翻了伊朗首相穆罕默德·摩萨台。阿贾克斯行动在短期内取得了成功，但并未能稳定伊朗与西方的关系，1979 年的伊斯兰革命及随后的历史事件已经证明了这一点。 |
 
@@ -1866,11 +1936,11 @@ Covert Ajax
 
 本章的 Picker 应用使用了以下文件，它们位于本书配套的 Linux 光盘的 `chap04` 示例代码文件夹中：
 
-*   `picker.html`——主网页
-*   `quoter.php`——用于加载股票报价的服务器脚本
-*   `ajaxkit.js`——Ajax 工具包的核心 Ajax 函数
-*   `domkit.js`——Ajax 工具包的 DOM 相关函数
-*   `stocks.xml`——股票选择的 XML 列表
+* `picker.html`——主网页
+* `quoter.php`——用于加载股票报价的服务器脚本
+* `ajaxkit.js`——Ajax 工具包的核心 Ajax 函数
+* `domkit.js`——Ajax 工具包的 DOM 相关函数
+* `stocks.xml`——股票选择的 XML 列表
 
 ### 挑战：显示选中的股票信息
 
@@ -1884,14 +1954,14 @@ Covert Ajax
 
 值得澄清的是，创建允许用户导航层级数据的选择列表并不一定需要 Ajax。你会在很多地方看到国家/州/城市的例子，完全没有借助 Ajax。完全可以将这些数据直接硬编码到网页的 JavaScript 代码中。问题是，每次想要更新选择选项时，你都必须编辑网页，而在某些情况下这根本不可能。Ajax 应用背后的一个关键概念是让用户界面由数据驱动，在这里意味着根据从服务器获取的数据动态构建选择列表。
 
-注意
+#### 注意
 
 | ![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcgl0zwovlmdoc29uy3a-.jpg) | 如果你阅读其他 Ajax 资料，最终会遇到一个使用常见国家/州/城市数据的 Ajax 选择列表示例。虽然这些数据本身非常适合层级选择用户界面，但从 Ajax 的角度来看并不一定好，因为国家、州和城市很少变化。阿拉巴马州不会每隔几年就被划入另一个国家。因此，我认为在静态数据上使用数据驱动编程技术没有意义，除非目标仅仅是让应用更易于维护——这本身是一个值得称赞的目标。我努力让本书中的示例都有价值，本章的选择列表示例也不例外。 |
 
 如果你思考一下多级选择列表技术的数据驱动特性，就会发现有很多应用场景可以使用它。例如，一个可按部门或安全级别导航的公司目录。另一个是按部门（如服装、五金等）组织的产品目录。一个引起我注意的应用是投资服务，它以热门、冷门和安全股票列表的形式提供建议。倒不是说我特别渴望使用这样的服务，但它提供了一个在两个方面使用 Ajax 的机会：
 
-*   动态填充选择列表
-*   获取实时股票报价
+* 动态填充选择列表
+* 获取实时股票报价
 
 第一个任务是本章的真正重点，而第二个任务则是创建满足 Ajax 实际需求的应用所带来的额外好处。
 
@@ -1899,20 +1969,16 @@ Covert Ajax
 
 在这个应用中，你实际上有两个级联的 Ajax 请求：
 
-*   第一个 Ajax 请求根据选中的股票类型（热门、冷门或安全）从服务器获取股票列表。
-*   第二个 Ajax 请求根据股票列表中选中的股票，获取该股票的最新信息。
+* 第一个 Ajax 请求根据选中的股票类型（热门、冷门或安全）从服务器获取股票列表。
+* 第二个 Ajax 请求根据股票列表中选中的股票，获取该股票的最新信息。
 
 如果这听起来像是一个大胆的挑战，不必过于担心，因为 Ajax 提供了一条清晰的路径，可以轻松完成这些任务。关键在于设计简单，以免代码失控。
 
 ## 第 4 章 使用 Ajax 动态填充列表：股票选择器
 
-秘密 Ajax
+### 秘密 Ajax
 
 | ![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcgl0zwovlmdoc29uy3a-.jpg) | 谁能想到 Ajax 竟然与中东冲突有关联？1953 年，英国和美国合作实施了一项秘密行动，推翻了伊朗首相穆罕默德·摩萨台。阿贾克斯行动在短期内取得了成功，但并未能稳定伊朗与西方的关系，1979 年的伊斯兰革命及随后的历史事件已经证明了这一点。 |
-
-
-
-
 
 网页中一个相当常见的用户界面设计是使用多选列表让用户选择层级数据。一个很好的例子是城市/州/国家选择，其中一个列表中的国家列表决定了另一个列表中哪些州可以被选择，进而决定了第三个列表中哪些城市可以被选择。其思想是根据一个列表中的选择来约束用户在另一个列表中的可能选项。虽然这个功能完全可以仅用客户端 JavaScript 代码实现，但为了根据从服务器获取的数据动态构建选择列表，Ajax 是必不可少的。
 
@@ -1920,11 +1986,11 @@ Covert Ajax
 
 本章的 Picker 应用使用了以下文件，它们位于本书附带的 Linux 光盘的 `chap04` 示例代码文件夹中：
 
-*   `picker.html` — 主网页
-*   `quoter.php` — 用于加载股票报价的服务器脚本
-*   `ajaxkit.js` — Ajax 工具包的核心 Ajax 函数
-*   `domkit.js` — Ajax 工具包的 DOM 相关函数
-*   `stocks.xml` — 股票选择的 XML 列表
+* `picker.html` — 主网页
+* `quoter.php` — 用于加载股票报价的服务器脚本
+* `ajaxkit.js` — Ajax 工具包的核心 Ajax 函数
+* `domkit.js` — Ajax 工具包的 DOM 相关函数
+* `stocks.xml` — 股票选择的 XML 列表
 
 ### 挑战：显示选定的股票信息
 
@@ -1938,14 +2004,14 @@ Covert Ajax
 
 值得澄清的是，你并不需要 Ajax 来创建允许用户导航层级数据的选择列表。你随处可见的国家/州/城市示例完全没有借助 Ajax。完全可以将这些数据直接硬编码在网页的 JavaScript 代码中。问题是，每次你想更新选择选项时，都必须编辑网页，而在某些情况下这根本不可能。Ajax 应用背后的一个关键概念是让用户界面由数据驱动，在这里意味着根据从服务器获取的数据动态构建选择列表。
 
-注意
+#### 注意
 
 | ![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcgl0zwovlmdoc29uy3a-.jpg) | 如果你阅读其他 Ajax 资料，最终会遇到一个使用常见的国家/州/城市数据的 Ajax 选择列表示例。虽然这些数据本身非常适合层级选择用户界面，但从 Ajax 的角度来看并不一定好，因为国家、州和城市很少变化。阿拉巴马州并不会每隔几年就被划入另一个国家。因此，我认为在静态数据上使用数据驱动编程技术没有意义，除非目标仅仅是让应用更易于维护——这本身是一个值得称赞的目标。我努力让本书中的示例具有实际意义，本章的选择列表示例也不例外。 |
 
 如果你思考一下多选列表技术的数据驱动特性，就会发现有很多应用场景可以使用它。一个按部门或安全分类可导航的公司目录是一种可能。另一个是按部门组织的产品目录，比如服装、五金等。一个引起我注意的应用是投资服务，它以热门、冷门和安全股票列表的形式提供建议。倒不是说我特别渴望使用这样的服务，但它提供了在两个层面使用 Ajax 的机会：
 
-*   动态填充选择列表
-*   获取实时股票报价
+* 动态填充选择列表
+* 获取实时股票报价
 
 第一个任务是本章的真正重点，而第二个任务则是创建一个具有实际需求且可由 Ajax 满足的应用所带来的额外好处。
 
@@ -1953,8 +2019,8 @@ Covert Ajax
 
 在这个应用中，你实际上有两个级联的 Ajax 请求：
 
-*   第一个 Ajax 请求根据选定的股票类型（热门、冷门或安全）从服务器获取股票列表。
-*   第二个 Ajax 请求根据股票列表中的选定股票获取特定股票的最新信息。
+* 第一个 Ajax 请求根据选定的股票类型（热门、冷门或安全）从服务器获取股票列表。
+* 第二个 Ajax 请求根据股票列表中的选定股票获取特定股票的最新信息。
 
 如果这听起来像是一个大胆的挑战，不必过于担心，因为 Ajax 提供了一条清晰的路径来完成这些任务，不会太麻烦。关键在于设计一个简单的方案，使代码不至于失控。
 
@@ -1965,10 +2031,6 @@ Covert Ajax
 第一个请求是响应用户从第一个选择列表中选择股票类型而发起的。当选定类型后，会向服务器发出请求，获取与该特定类型匹配的股票列表。此时你所要做的就是根据选定的类型获取股票列表。这个股票列表用于填充第二个选择列表，而第二个选择列表恰好是第二个 Ajax 请求的基础。
 
 第二个请求在用户从第二个选择列表（股票列表）中选择一只股票时发起。该请求从一个提供金融数据的 Web 服务实时查询股票信息。除非你恰好运行一个金融股票报价服务器，否则这个请求将是向第三方服务发出的，而不是像第一个请求那样提供你自己的数据。服务器返回的最新股票信息随后显示在网页上。图 4.2 粗略展示了应用的用户界面如何转化为 Ajax 请求。
-
-
-
-
 
 ##### 图 4.2\. Picker 应用程序的用户界面由两个选择列表和一个包含所选股票信息的文本区域组成。
 
@@ -2014,7 +2076,7 @@ quoter.php?symbol=EBAY
 
 第一个 Ajax 请求期望从服务器返回一个 XML 文档，其中包含应用程序使用的整个股票列表，包括所有股票类型。以下是该 XML 代码的示例：
 
-```
+```xml
 <stocks>
   <hot>
     <stock>AAPL</stock>
@@ -2034,15 +2096,18 @@ quoter.php?symbol=EBAY
 </stocks>
 ```
 
-如你所见，股票被组织成由 `<hot>`、`<cold>` 和 `<safe>` 等标签定义的组。在每个股票类型的标签组中，你可以找到各个股票，它们使用 `<stock>` 标签编码。需要注意的是，股票代码用于标识股票，而不是实际的公司名称。这是一个关键的设计决策，因为股票的代码是用于查询任何给定股票的依据，并且可以被视为股票的唯一标识符。
+
+
+
+如你所见，股票被组织成由`<hot>`、`<cold>`和`<safe>`等标签定义的组。在每个股票类型的标签组中，你可以找到各个股票，它们使用`<stock>`标签编码。需要注意的是，股票代码用于标识股票，而不是实际的公司名称。这是一个关键的设计决策，因为股票的代码是用于查询任何给定股票的依据，并且可以被视为股票的唯一标识符。
 
 在实际的股票列表数据文件中，我为每种股票类型包含了五只股票，但你可以根据需要包含任意数量。正如你将在本章后面看到的，Picker 应用程序会读取给定类型中的所有股票，并将它们添加到第二个选择列表中，因此股票列表 XML 数据中包含的股票数量实际上没有硬性限制。
 
-或许更令人感兴趣的是服务器响应第二个 Ajax 请求返回的 XML 数据。该响应数据包含详细的股票信息，由第三方 Web 服务 webserviceX.net 生成。以下是发送给 webserviceX.net 的股票报价请求所生成的 XML 数据示例：
+或许更令人感兴趣的是服务器响应第二个 Ajax 请求返回的 XML 数据。该响应数据包含详细的股票信息，由第三方 Web 服务`webserviceX.net`生成。以下是发送给`webserviceX.net`的股票报价请求所生成的 XML 数据示例：
 
 代码视图：
 
-```
+```xml
 <string>
   <StockQuotes>
     <Stock>
@@ -2067,19 +2132,15 @@ quoter.php?symbol=EBAY
 </string>
 ```
 
-
-
-
-
 股票信息可能比你预期的要详细一些，而且它确实包含了 Picker 应用真正需要的更多信息。不过，既然数据已经存在，你最好尽可能多地利用它。具体来说，Picker 应用最终使用了 Ajax 响应中返回的股票信息的以下数据：
 
-*   股票名称（`<Name>`）
-*   最新报价（`<Last>`）
-*   市值（`<MktCap>`）
-*   交易量（`<Volume>`）
-*   价格变动百分比（`<PercentageChange>`）
-*   市盈率（`<P-E>`）
-*   报价日期和时间（`<Date>`和`<Time>`）
+- 股票名称（`<Name>`）
+- 最新报价（`<Last>`）
+- 市值（`<MktCap>`）
+- 交易量（`<Volume>`）
+- 价格变动百分比（`<PercentageChange>`）
+- 市盈率（`<P-E>`）
+- 报价日期和时间（`<Date>`和`<Time>`）
 
 这些都是潜在投资者可能想了解的关于某只推荐股票的信息。现在你只需要弄清楚如何将这些数据整合到应用本身中。
 
@@ -2087,9 +2148,9 @@ quoter.php?symbol=EBAY
 
 与本书中的许多示例 Ajax 应用一样，Picker 应用包含三个主要组件：
 
-*   XML 文件（`stocks.xml`）
-*   HTML 网页（`picker.html`）
-*   PHP 服务器脚本（`quoter.php`）
+- XML 文件（`stocks.xml`）
+- HTML 网页（`picker.html`）
+- PHP 服务器脚本（`quoter.php`）
 
 除了应用的这三个部分之外，一个第三方金融 Web 服务负责提供实时股票数据。尽管该服务是应用的重要组成部分，但它不需要独立的组件，只需在 HTML 网页中发起 Ajax 请求的代码以及 PHP 服务器脚本中处理将响应转发回页面的代码即可。这种安排是必要的，因为 Ajax 请求不允许直接访问其他域上的资源。
 
@@ -2099,7 +2160,7 @@ quoter.php?symbol=EBAY
 
 股票 XML 文件完全由你生成，负责根据选择的股票类型控制应用中显示的股票。以下是示例`stocks.xml`文件的完整代码，其中包含一个或多或少随机挑选的股票列表：
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <stocks>
   <hot>
@@ -2123,7 +2184,7 @@ quoter.php?symbol=EBAY
     <stock>GE</stock>
     <stock>MSFT</stock>
   </safe>
-</stocks> 
+</stocks>
 ```
 
 > **注意：** 我强烈建议你不要把这些股票推荐当作赌注！将股票标记为热门、冷门或安全在很大程度上是随机的，所以如果你把养老钱投在苹果（AAPL）股票上而 iPhone 最终失败，可别怪我。
@@ -2138,15 +2199,18 @@ quoter.php?symbol=EBAY
 
 Picker 应用的 HTML 网页（`picker.html`）在用户界面方面相对简单，主要由两个选择列表和几个用于保存详细股票信息的`div`和`span`元素组成。图 4.4 显示了 Picker 应用在 Web 浏览器中打开，两个选择列表和股票信息都可见。
 
-##### 图 4.4. Picker 网页由两个选择列表和一个显示股票信息的区域组成。
+##### 图 4.4. Picker 网页由两个选择列表和一个显示股票信息的区域组成
 
 结合此图，查看页面正文的 HTML 代码：
 
-```
+```html
 <body onload="document.getElementById(
   'stocktype').selectedIndex = 0; loadStockList()">
+
   <div id="ajaxState" style="display:none"></div>
+
   <br />
+
   <div>选择类型：
     <select id="stocktype" onchange="loadStockList()">
       <option value="hot">热门股票</option>
@@ -2154,27 +2218,37 @@ Picker 应用的 HTML 网页（`picker.html`）在用户界面方面相对简单
       <option value="safe">安全股票</option>
     </select>
   </div>
+
   <br />
+
   <div>选择股票：
     <select id="stock"
-onchange="loadStockInfo(this[this.selectedIndex].value);">
+      onchange="loadStockInfo(this[this.selectedIndex].value);">
     </select>
   </div>
+
   <br />
+
   <div id="stockname" style="font-size:large; font-weight:bold">
   </div>
+
   股价：<span id="stockprice" style="font-weight:bold">
   </span><br />
+
   市值：<span id="stockcap" style="font-weight:bold">
   </span><br />
+
   交易量：<span id="stockvolume"
-  style="font-weight:bold"></span><br />
+    style="font-weight:bold"></span><br />
+
   涨跌幅：<span id="stockchange" style="font-weight:bold">
   </span><br />
+
   市盈率：<span id="stockpe" style="font-weight:bold">
   </span><br />
+
   <div id="stockdatetime" style="font-style:italic"></div>
-</body> 
+</body>
 ```
 
 第一个选择列表（`stocktype`）使用固定选项编码了不同的股票类型。这些股票类型用作动态填充第二个选择列表（`stock`）的基础，该列表最初为空。
@@ -2183,25 +2257,20 @@ onchange="loadStockInfo(this[this.selectedIndex].value);">
 
 页面正文中唯一的 JavaScript 代码位于`<body>`标签的`onload`事件处理程序和选择列表的`onchange`事件处理程序中。`onload`代码负责初始设置第一个股票类型为第一个选择，然后根据该选择加载股票列表。后一步通过调用`loadStockList()`函数完成，你马上就会看到这个函数。现在，只需知道该函数发起 Ajax 请求，从服务器加载股票列表。
 
+当用户在第一选择列表中选择不同的股票类型时，`loadStockList()`函数也会被调用。这个操作触发了`onchange`事件，从而导致调用`loadStockList()`。类似的情况也发生在第二个列表发生变化时，不过这次调用的是`loadStockInfo()`函数，用于发起 Ajax 请求加载单个股票的信息。当前选中的股票作为唯一参数传递给该函数。
 
+`loadStockList()`函数仅发送一个 Ajax 请求来获取`stocks.xml`文件的内容：
 
-
-当用户在第一选择列表中选择不同的股票类型时，`loadStockList()` 函数也会被调用。这个操作触发了 `onchange` 事件，从而导致调用 `loadStockList()`。类似的情况也发生在第二个列表发生变化时，不过这次调用的是 `loadStockInfo()` 函数，用于发起 Ajax 请求加载单个股票的信息。当前选中的股票作为唯一参数传递给该函数。
-
-`loadStockList()` 函数仅发送一个 Ajax 请求来获取 `stocks.xml` 文件的内容：
-
-```
+```javascript
 function loadStockList() {
   // Send the Ajax request to load the new stock list
   ajaxSendRequest("GET", "stocks.xml", handleStockListRequest);
 }
 ```
 
-这段代码中需要注意的关键点是请求处理程序的名称，即 `handleStockListRequest()`。该函数负责在 Ajax 请求完成后进行处理。其代码如下：
+这段代码中需要注意的关键点是请求处理程序的名称，即`handleStockListRequest()`。该函数负责在 Ajax 请求完成后进行处理。其代码如下：
 
-代码视图：
-
-```
+```javascript
 function handleStockListRequest() {
   if (request.readyState == 4 && request.status == 200) {
     // Store the XML response data
@@ -2234,15 +2303,16 @@ function handleStockListRequest() {
     // Load the info for the first stock in the list
     loadStockInfo(stockSel[0].value);
   }
+
   ajaxUpdateState();
-} 
+}
 ```
 
-我知道这个函数相当庞大，但从实际功能来看，它并不复杂。请回顾 `stocks.xml` 文件，了解该函数处理的数据类型。该函数的目标是深入 `stocks.xml` 数据，获取与给定股票类型（热门、冷门或安全）相关的股票列表。更具体地说，这些股票列表出现在给定的股票类型标签（`<hot>`、`<cold>` 或 `<safe>`）内。
+我知道这个函数相当庞大，但从实际功能来看，它并不复杂。请回顾`stocks.xml`文件，了解该函数处理的数据类型。该函数的目标是深入`stocks.xml`数据，获取与给定股票类型（热门、冷门或安全）相关的股票列表。更具体地说，这些股票列表出现在给定的股票类型标签（`<hot>`、`<cold>`或`<safe>`）内。
 
-在最初从服务器获取 XML 数据后，`handleStockListRequest()` 函数将 XML 数据缩减到特定的股票类型。例如，热门股票的 XML 数据子集如下所示：
+在最初从服务器获取 XML 数据后，`handleStockListRequest()`函数将 XML 数据缩减到特定的股票类型。例如，热门股票的 XML 数据子集如下所示：
 
-```
+```xml
 <hot>
   <stock>AAPL</stock>
   <stock>LUV</stock>
@@ -2252,22 +2322,25 @@ function handleStockListRequest() {
 </hot>
 ```
 
-现在代码即将遍历 `<hot>` 标签内的股票列表，用热门股票填充选择列表。但在执行此操作之前，必须清空列表，以确保之前显示的股票消失。清空股票列表后，再用剩余的 XML 数据中的股票填充。在这个例子中，这意味着向股票选择列表中添加五只股票。填充股票列表后，选择项设置为新列表中的第一只股票。
+现在代码即将遍历`<hot>`标签内的股票列表，用热门股票填充选择列表。但在执行此操作之前，必须清空列表，以确保之前显示的股票消失。清空股票列表后，再用剩余的 XML 数据中的股票填充。在这个例子中，这意味着向股票选择列表中添加五只股票。填充股票列表后，选择项设置为新列表中的第一只股票。
 
-这里变得有趣了，因为你已经动态填充了股票列表，但还没有任何股票信息可以显示。你需要显示新列表中第一只股票的信息。这通过调用 `loadStockInfo()` 函数实现，该函数接受第一只股票的值作为唯一参数。这个函数调用会发起第二个 Ajax 请求，其任务是获取指定股票的信息。
+这里变得有趣了，因为你已经动态填充了股票列表，但还没有任何股票信息可以显示。你需要显示新列表中第一只股票的信息。这通过调用`loadStockInfo()`函数实现，该函数接受第一只股票的值作为唯一参数。这个函数调用会发起第二个 Ajax 请求，其任务是获取指定股票的信息。
 
-以下是 `loadStockInfo()` 函数的代码：
+以下是`loadStockInfo()`函数的代码：
 
-```
+```javascript
 function loadStockInfo(stock) {
   // Clear the previous stock info text
   replaceText(document.getElementById("stockname"),
     "Loading...");
+
   replaceText(document.getElementById("stockprice"), "");
   replaceText(document.getElementById("stockcap"), "");
   replaceText(document.getElementById("stockvolume"), "");
   replaceText(document.getElementById("stockchange"), "");
+
   document.getElementById("stockchange").style.color = "#000000";
+
   replaceText(document.getElementById("stockpe"), "");
   replaceText(document.getElementById("stockdatetime"), "");
 
@@ -2277,56 +2350,83 @@ function loadStockInfo(stock) {
 }
 ```
 
-除了清空页面上的股票显示元素以准备显示新股票信息外，这个函数与 `loadStockList()` 一样简洁。注意，股票名称的 `div` 元素被设置为 "`Loading...`"，以便用户知道数据正在传输中。其他所有元素在请求完成前都被清空。请求完成后，股票信息的 Ajax 请求由 `handleStockInfoRequest()` 函数处理，其代码如下：
+除了清空页面上的股票显示元素以准备显示新股票信息外，这个函数与`loadStockList()`一样简洁。注意，股票名称的`div`元素被设置为`"Loading..."`，以便用户知道数据正在传输中。其他所有元素在请求完成前都被清空。请求完成后，股票信息的 Ajax 请求由`handleStockInfoRequest()`函数处理，其代码如下：
 
 代码视图：
 
-```
+```javascript
 function handleStockInfoRequest() {
-  if (request.readyState == 4 && request.status == 200) {
-    // Store the XML response data
-    var xmlData = request.responseXML.getElementsByTagName(
-      "Stock")[0];
+```
 
-    // Display the detailed stock info
-    replaceText(document.getElementById("stockname"),
-      getText(xmlData.getElementsByTagName("Name")[0]) +
+
+
+
+```javascript
+if (request.readyState == 4 && request.status == 200) {
+  // Store the XML response data
+  var xmlData = request.responseXML.getElementsByTagName("Stock")[0];
+
+  // Display the detailed stock info
+  replaceText(
+    document.getElementById("stockname"),
+    getText(xmlData.getElementsByTagName("Name")[0]) +
       " (" +
       getText(xmlData.getElementsByTagName("Symbol")[0]) +
-      ")");
-    replaceText(document.getElementById("stockprice"),
-      "$" + getText(xmlData.getElementsByTagName("Last")[0]));
-    replaceText(document.getElementById("stockcap"),
-      "$" + getText(xmlData.getElementsByTagName("MktCap")[0]));
-    replaceText(document.getElementById("stockvolume"),
-      getText(xmlData.getElementsByTagName("Volume")[0]) +
-      " shares");
-    replaceText(document.getElementById("stockchange"),
-      getText(xmlData.getElementsByTagName(
-        "PercentageChange")[0]));
-    if (getText(
-      xmlData.getElementsByTagName(
-      "PercentageChange")[0]).charAt(0) == '+')
-      document.getElementById("stockchange").style.color = "#009900";
-    else if (getText(
-      xmlData.getElementsByTagName(
-      "PercentageChange")[0]).charAt(0) == '-')
-      document.getElementById("stockchange").style.color = "#990000";
-    replaceText(document.getElementById("stockpe"),
-      getText(xmlData.getElementsByTagName("P-E")[0]));
-    replaceText(document.getElementById("stockdatetime"),
-      getText(xmlData.getElementsByTagName("Time")[0]) + " - " +
-      getText(xmlData.getElementsByTagName("Date")[0]));
-  }
-  ajaxUpdateState();
-} 
+      ")"
+  );
+
+  replaceText(
+    document.getElementById("stockprice"),
+    "$" + getText(xmlData.getElementsByTagName("Last")[0])
+  );
+
+  replaceText(
+    document.getElementById("stockcap"),
+    "$" + getText(xmlData.getElementsByTagName("MktCap")[0])
+  );
+
+  replaceText(
+    document.getElementById("stockvolume"),
+    getText(xmlData.getElementsByTagName("Volume")[0]) + " shares"
+  );
+
+  replaceText(
+    document.getElementById("stockchange"),
+    getText(xmlData.getElementsByTagName("PercentageChange")[0])
+  );
+
+  if (
+    getText(xmlData.getElementsByTagName("PercentageChange")[0]).charAt(0) ==
+    "+"
+  )
+    document.getElementById("stockchange").style.color = "#009900";
+  else if (
+    getText(xmlData.getElementsByTagName("PercentageChange")[0]).charAt(0) ==
+    "-"
+  )
+    document.getElementById("stockchange").style.color = "#990000";
+
+  replaceText(
+    document.getElementById("stockpe"),
+    getText(xmlData.getElementsByTagName("P-E")[0])
+  );
+
+  replaceText(
+    document.getElementById("stockdatetime"),
+    getText(xmlData.getElementsByTagName("Time")[0]) +
+      " - " +
+      getText(xmlData.getElementsByTagName("Date")[0])
+  );
+}
+
+ajaxUpdateState();
 ```
 
 请记住，该函数处理的是以下格式的 XML 数据：
 
 代码视图：
 
-```
+```xml
 <string>
   <StockQuotes>
     <Stock>
@@ -2348,28 +2448,32 @@ function handleStockInfoRequest() {
       <Name>STARBUCKS CP</Name>
     </Stock>
   </StockQuotes>
-</string> 
+</string>
 ```
 
 了解了这种数据格式后，你可以更容易地看到 JavaScript 代码是如何遍历 XML 数据并根据 XML 标签名称提取相关信息的。例如，以下两行代码用于获取当前股票价格并将其设置为股票价格 `span` 元素的值：
 
+```javascript
+replaceText(
+  document.getElementById("stockprice"),
+  "$" + getText(xmlData.getElementsByTagName("Last")[0])
+);
 ```
-replaceText(document.getElementById("stockprice"),
-  "$" + getText(xmlData.getElementsByTagName("Last")[0]));
-```
-
-
 
 这段代码不仅从 XML 代码的 `<Last>` 标签中获取股票价格，还在值前附加了一个美元符号（`$`），以明确表示这是一个货币值。
 
-`handleStockInfoRequest()` 函数中另一段有趣的代码与股票百分比变化的显示方式有关。百分比会以绿色或红色显示，以便更清晰地指示百分比变化是上涨还是下跌。以下是根据百分比变化值处理颜色调整的代码：
+`handleStockInfoRequest()`函数中另一段有趣的代码与股票百分比变化的显示方式有关。百分比会以绿色或红色显示，以便更清晰地指示百分比变化是上涨还是下跌。以下是根据百分比变化值处理颜色调整的代码：
 
-```
-if (getText(xmlData.getElementsByTagName(
-  "PercentageChange")[0]).charAt(0) == '+')
+```javascript
+if (
+  getText(xmlData.getElementsByTagName("PercentageChange")[0]).charAt(0) ==
+  "+"
+)
   document.getElementById("stockchange").style.color = "#009900";
-else if (getText(xmlData.getElementsByTagName(
-  "PercentageChange")[0]).charAt(0) == '-')
+else if (
+  getText(xmlData.getElementsByTagName("PercentageChange")[0]).charAt(0) ==
+  "-"
+)
   document.getElementById("stockchange").style.color = "#990000";
 ```
 
@@ -2381,20 +2485,24 @@ else if (getText(xmlData.getElementsByTagName(
 
 在本章前面，我解释了 Picker 应用需要一个服务器端脚本来绕过无法直接向第三方域发起 Ajax 客户端请求的限制。第三方域很重要，因为 Picker 应用依赖它来提供实时股票信息。可以使用 PHP 脚本作为某种安全代理，代表客户端接受 Ajax 请求，从第三方服务器获取股票数据，然后将数据响应给客户端。这样，Ajax 请求本身完全针对你自己的域，因此符合 Ajax 的安全限制。
 
-我所说的第三方 Web 服务是 webserviceX.net，它提供多个基于 XML 的数据源。其中一个数据源是股票报价源，你指定一个股票代码，服务器就会返回一个包含股票详细信息的 XML 文档。你在本章中已经多次看到这个 XML 文档中的代码，但还没有看到那个使得通过 Ajax 请求接收代码成为可能的 PHP 脚本。以下是 `quoter.php` 服务器脚本的代码：
+我所说的第三方 Web 服务是 webserviceX.net，它提供多个基于 XML 的数据源。其中一个数据源是股票报价源，你指定一个股票代码，服务器就会返回一个包含股票详细信息的 XML 文档。你在本章中已经多次看到这个 XML 文档中的代码，但还没有看到那个使得通过 Ajax 请求接收代码成为可能的 PHP 脚本。以下是`quoter.php`服务器脚本的代码：
 
-```
+```php
 <?php
+
 header('Content-Type: text/xml');
 
 // 从服务器加载 XML 股票报价数据
-$xml = html_entity_decode(file_get_contents(
-  "http://www.webservicex.net/stockquote.asmx/GetQuote?symbol="
-  . $_REQUEST['symbol']));
+$xml = html_entity_decode(
+  file_get_contents(
+    "http://www.webservicex.net/stockquote.asmx/GetQuote?symbol=" .
+      $_REQUEST['symbol']
+  )
+);
 
-//
-返回 XML 股票报价数据
+// 返回 XML 股票报价数据
 echo $xml;
+
 ?>
 ```
 
@@ -2406,7 +2514,7 @@ echo $xml;
 
 [`www.yourdomain.com/quoter.php?symbol=SBUX`](http://www.yourdomain.com/quoter.php?symbol=SBUX)
 
-假设 `quoter.php` 文件存储在你的服务器上，将这一行代码中的域名改为你自己的域名，然后在 Web 浏览器中输入该 URL。你也可以直接在本书附带的 live Linux CD 上尝试这个技巧。无论哪种方式，图 4.5 显示了 PHP 脚本生成的 XML 响应数据。
+假设`quoter.php`文件存储在你的服务器上，将这一行代码中的域名改为你自己的域名，然后在 Web 浏览器中输入该 URL。你也可以直接在本书附带的 live Linux CD 上尝试这个技巧。无论哪种方式，图 4.5 显示了 PHP 脚本生成的 XML 响应数据。
 
 ##### 图 4.5. 你可以通过在浏览器中直接打开 Quoter PHP 脚本来查看其返回的 XML 股票信息。
 
@@ -2440,10 +2548,6 @@ Picker 应用现已组装完毕，可以进行测试了。要在你自己的浏�
 
 ### 给 Picker 来一次极致的 Ajax 改造
 
-
-
-
-
 Picker 应用在呈现用于选择股票推荐的动态用户界面方面做得相当不错，并且为每只股票选择提供了硬数据。该应用的两级选择列表设计当然也能在投资之外带来好处。我喜欢的一个想法是使用这样的应用来跟踪某种收藏，比如电影收藏。
 
 当你从更抽象的角度思考 Picker 应用时，你会开始感受到它如何应用于其他类型的数据。以电影收藏为例，股票类型可以转换为电影类型，例如动作片、恐怖片、喜剧片等。在每个电影类型中，你可以使用类似的 XML 编码方法列出你的个人电影。然而，在这种情况下，并没有像股票代码那样有既定的标准来用简写唯一表示一部电影。相反，你可能只想直接列出完整的电影名称，因为为每部电影想出一个“股票代码”可能很困难。
@@ -2458,35 +2562,36 @@ Picker 应用在呈现用于选择股票推荐的动态用户界面方面做得�
 
 代码视图：
 
-```
+```xml
 <trynt>
   <movie-imdb>
     <search>Raising Arizona</search>
     <matched-id>tt0093822</matched-id>
-    <matched-url>http://www.imdb.com/title/tt0093822/
-    </matched-url>
+    <matched-url>http://www.imdb.com/title/tt0093822/</matched-url>
     <matched-title>Raising Arizona (1987)</matched-title>
     <data>
-       <movie-id>
-         <data>
-           <id>tt0093822</id>
-           <score>6</score>
-         </data>
-       </movie-id>
-       <movie-title>
-         <data>
-           <id>Raising Arizona (1987)</id>
-           <score>6</score>
-         </data>
-       </movie-title>
+      <movie-id>
+        <data>
+          <id>tt0093822</id>
+          <score>6</score>
+        </data>
+      </movie-id>
+      <movie-title>
+        <data>
+          <id>Raising Arizona (1987)</id>
+          <score>6</score>
+        </data>
+      </movie-title>
     </data>
   </movie-imdb>
-</trynt> 
+</trynt>
 ```
+
+
 
 诚然，除了电影年份之外，并没有太多有用的信息，而且年份不幸地与电影名称放在同一个字段中，这使得提取起来稍微困难一些。然而，这段代码中极其有用的是指向 IMDb 中该电影的链接。这意味着你可以动态构建一个指向该电影的链接，作为电影收藏页面上显示的电影信息的一部分。让你的应用只需点击一下就能获取人们想知道的关于一部电影的任何信息，这为应用增添了一个非常巧妙的功能。
 
-要将 Picker 应用转变为电影收藏应用，重新设计 `stocks.xml` 文件中的 XML 标签以使其适用于 `movies.xml` 文件，绝对不是一个坏主意。只需记住，网页中的每个标签引用也需要修改。然而，在你开始拆解代码之前，也许值得尝试纯粹通过将电影数据插入现有框架来修改应用。别忘了修改应用网页中的第一个选择列表，使其列出电影类型而不是股票类型。
+要将 Picker 应用转变为电影收藏应用，重新设计`stocks.xml`文件中的 XML 标签以使其适用于`movies.xml`文件，绝对不是一个坏主意。只需记住，网页中的每个标签引用也需要修改。然而，在你开始拆解代码之前，也许值得尝试纯粹通过将电影数据插入现有框架来修改应用。别忘了修改应用网页中的第一个选择列表，使其列出电影类型而不是股票类型。
 
 ### 总结
 
@@ -2494,7 +2599,7 @@ Picker 应用在呈现用于选择股票推荐的动态用户界面方面做得�
 
 ## 第 5 章 接入 RSS 新闻源
 
-古希腊的 Ajax
+### 古希腊的 Ajax
 
 | ![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcgl0zwovlmdoc29uy3a-.jpg) | 并非要贬低异步 Web 应用的重要性，但 Ajax 在历史上曾有过更重大的意义。我指的是古希腊，那里有一位名叫 Ajax 的传奇希腊英雄，在特洛伊战争中扮演了重要角色。Ajax 传奇般的力量和勇气被希腊诗人荷马在史诗《伊利亚特》中记载。 |
 
@@ -2502,26 +2607,23 @@ Picker 应用在呈现用于选择股票推荐的动态用户界面方面做得�
 
 本章展示了 Ajax 如何使动态查询新闻源以获取新闻条目，然后将这些条目显示在页面上成为可能。你在本章中探索的示例应用提供了一个简单的界面，用于从多个新闻服务中进行选择，在这种情况下，新闻条目列表会更新以反映所选来源。与通过 Ajax 动态检索新闻条目几乎同样酷的是，在 Ajax 请求执行期间显示的简洁小巧的“加载”图像。
 
-本章中新闻源应用使用的文件如下，它们位于本书附带的 Linux 光盘的 `chap05` 示例代码文件夹中：
+本章中新闻源应用使用的文件如下，它们位于本书附带的 Linux 光盘的`chap05`示例代码文件夹中：
 
-*   `newsfeeder.html`——主网页
-*   `newsfeeder.php`——用于加载新闻源的服务器脚本
-*   `newsfeeder.css`——用于格式化新闻源的样式表
-*   `ajaxkit.js`——Ajax 工具包的核心 Ajax 函数
-*   `domkit.js`——Ajax 工具包的 DOM 相关函数
-*   `newspaper.gif`——每个新闻条目旁边显示的报纸图标
-*   `wait.gif`——Ajax 请求期间显示的动画“加载”图标
+- `newsfeeder.html`——主网页
+- `newsfeeder.php`——用于加载新闻源的服务器脚本
+- `newsfeeder.css`——用于格式化新闻源的样式表
+- `ajaxkit.js`——Ajax 工具包的核心 Ajax 函数
+- `domkit.js`——Ajax 工具包的 DOM 相关函数
+- `newspaper.gif`——每个新闻条目旁边显示的报纸图标
+- `wait.gif`——Ajax 请求期间显示的动画“加载”图标
 
 ### 挑战：动态查询新闻源
 
 本章的挑战是使用 Ajax 动态查询新闻源 Web 服务以获取数据（新闻条目），然后将这些新闻条目显示在页面上。更具体地说，新闻条目是新闻故事的标题，因此你实际需要显示的是作为每个新闻故事链接的新闻标题。事实证明，新闻源中的每个新闻条目都包含标题和链接等信息，因此新闻源提供了你应对挑战所需的所有数据。
 
-
-
-
 在深入探讨挑战本身之前，我们首先需要花点时间了解新闻源以及它们如何融入网络体系。驱动大多数新闻源运行的技术是 RSS。这项技术允许你聚合网络内容，这意味着你可以订阅网站，并轻松了解某个网站的新发布内容，而无需实际访问它。尽管对 RSS 这个缩写有多种解释，但最新且可能最准确的是“真正简易聚合”（Really Simple Syndication）。RSS 新闻源实际上是编码新闻信息的 XML 文档；你将在本章稍后部分了解更多关于 RSS 新闻源的具体格式。
 
-注意
+#### 注意
 
 | ![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcgl0zwovlmdoc29uy3a-.jpg) | RSS 及其不同版本的历史相当复杂，因此只需说明 RSS 2.0 是最新且最常用的 RSS 版本即可。你也可能会看到 Atom 格式的新闻源，它与 RSS 2.0 非常相似。 |
 
@@ -2529,7 +2631,7 @@ Picker 应用在呈现用于选择股票推荐的动态用户界面方面做得�
 
 尽管它们的功能不如独立的新闻聚合器应用程序那么全面，但大多数现代网络浏览器都提供了查看新闻源的内置支持。图 5.1 显示了在 Firefox 浏览器中查看的主要 Wired News 新闻源。
 
-##### 图 5.1. 你可以在大多数网络浏览器中直接查看 RSS 新闻源，无需任何特殊插件或软件。
+##### 图 5.1：你可以在大多数网络浏览器中直接查看 RSS 新闻源，无需任何特殊插件或软件
 
 [[查看全尺寸图片]](mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wlmdwcglqzmlhmc9nx2hzddvsmdfj.jpg)![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcglmawowl2cuahnnnxawyze-.jpg)
 
@@ -2541,7 +2643,7 @@ Picker 应用在呈现用于选择股票推荐的动态用户界面方面做得�
 
 ## 第 5 章 利用 RSS 新闻源
 
-古希腊的 Ajax
+### 古希腊的 Ajax
 
 | ![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcgl0zwovlmdoc29uy3a-.jpg) | 并非要贬低异步网络应用的重要性，但 Ajax 在历史上曾有过更重要的含义。我指的是古希腊，那里有一位名叫 Ajax 的传奇希腊英雄在特洛伊战争中扮演了重要角色。Ajax 传奇般的力量和勇气被希腊诗人荷马在史诗《伊利亚特》中记载。 |
 
@@ -2549,15 +2651,15 @@ Picker 应用在呈现用于选择股票推荐的动态用户界面方面做得�
 
 本章展示了 Ajax 如何使动态查询新闻源以获取新闻条目，然后将这些条目显示在页面上成为可能。你在本章中探索的示例应用程序提供了一个简单的界面，用于从多个新闻服务中进行选择，在这种情况下，新闻条目列表会更新以反映所选来源。与通过 Ajax 动态检索新闻条目几乎一样酷的是，在 Ajax 请求执行期间显示的巧妙的小“加载”图像。
 
-本章的 News Feeder 应用程序使用了以下文件，它们位于本书附带的 Linux 光盘的 `chap05` 示例代码文件夹中：
+本章的 News Feeder 应用程序使用了以下文件，它们位于本书附带的 Linux 光盘的`chap05`示例代码文件夹中：
 
-*   `newsfeeder.html`——主网页
-*   `newsfeeder.php`——用于加载新闻源的服务器脚本
-*   `newsfeeder.css`——用于格式化新闻源的样式表
-*   `ajaxkit.js`——Ajax 工具包的核心 Ajax 函数
-*   `domkit.js`——Ajax 工具包的 DOM 相关函数
-*   `newspaper.gif`——显示在每个新闻条目旁边的报纸图标
-*   `wait.gif`——在 Ajax 请求期间显示的动画“加载”图标
+- `newsfeeder.html`——主网页
+- `newsfeeder.php`——用于加载新闻源的服务器脚本
+- `newsfeeder.css`——用于格式化新闻源的样式表
+- `ajaxkit.js`——Ajax 工具包的核心 Ajax 函数
+- `domkit.js`——Ajax 工具包的 DOM 相关函数
+- `newspaper.gif`——显示在每个新闻条目旁边的报纸图标
+- `wait.gif`——在 Ajax 请求期间显示的动画“加载”图标
 
 ### 挑战：动态查询新闻源
 
@@ -2565,7 +2667,7 @@ Picker 应用在呈现用于选择股票推荐的动态用户界面方面做得�
 
 在深入探讨挑战本身之前，我们首先需要花点时间了解新闻源以及它们如何融入网络体系。驱动大多数新闻源运行的技术是 RSS。这项技术允许你聚合网络内容，这意味着你可以订阅网站，并轻松了解某个网站的新发布内容，而无需实际访问它。尽管对 RSS 这个缩写有多种解释，但最新且可能最准确的是“真正简易聚合”（Really Simple Syndication）。RSS 新闻源实际上是编码新闻信息的 XML 文档；你将在本章稍后部分了解更多关于 RSS 新闻源的具体格式。
 
-注意
+#### 注意
 
 | ![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcgl0zwovlmdoc29uy3a-.jpg) | RSS 及其不同版本的历史相当复杂，因此只需说明 RSS 2.0 是最新且最常用的 RSS 版本即可。你也可能会看到 Atom 格式的新闻源，它与 RSS 2.0 非常相似。 |
 
@@ -2573,10 +2675,7 @@ Picker 应用在呈现用于选择股票推荐的动态用户界面方面做得�
 
 尽管它们的功能不如独立的新闻聚合器应用程序那么全面，但大多数现代网络浏览器都提供了查看新闻源的内置支持。图 5.1 显示了在 Firefox 浏览器中查看的主要 Wired News 新闻源。
 
-
-
-
-##### 图 5.1\. 你可以在大多数网页浏览器中直接查看 RSS 新闻源，无需任何特殊插件或软件。
+##### 图 5.1：你可以在大多数网页浏览器中直接查看 RSS 新闻源，无需任何特殊插件或软件
 
 [[查看完整尺寸图片]](mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wlmdwcglqzmlhmc9nx2hzddvsmdfj.jpg)![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcglmawowl2cuahnnnxawyze-.jpg)
 
@@ -2590,17 +2689,17 @@ Picker 应用在呈现用于选择股票推荐的动态用户界面方面做得�
 
 News Feeder 应用程序的设计始于 Ajax 请求，该请求将数据从新闻源服务器传输到应用程序。这个请求以新闻源服务器的 URL 开始，然后返回一个包含新闻源详细信息的 XML 文档，其中包括带有链接和发布日期的单个新闻条目列表。Ajax 请求由用户从选择列表中选择一个新闻源触发。
 
-鉴于每个新闻源都有自己的 URL，并作为 Ajax 请求的基础，你需要一种方法将新闻源 URL 与新闻源名称关联起来，以便用户选择新闻源。`<option>` 标签的 `value` 属性是存储新闻源 URL 的理想位置，它让你能够轻松构建新闻源选择列表。
+鉴于每个新闻源都有自己的 URL，并作为 Ajax 请求的基础，你需要一种方法将新闻源 URL 与新闻源名称关联起来，以便用户选择新闻源。`<option>`标签的`value`属性是存储新闻源 URL 的理想位置，它让你能够轻松构建新闻源选择列表。
 
 新闻源选择列表是 News Feeder 用户界面的主要组成部分。该界面由两部分组成：新闻源选择列表和用于在成功加载后显示新闻源数据的区域。此处的新闻源数据包括新闻源标题和作为每个新闻故事链接的单个新闻条目列表。图 5.2 展示了 News Feeder 用户界面如何融入新闻源 Ajax 请求。
 
-##### 图 5.2\. News Feeder 应用程序的用户界面由一个选择列表和一个包含新闻源标题及单个新闻条目链接的区域组成。
+##### 图 5.2：News Feeder 应用程序的用户界面由一个选择列表和一个包含新闻源标题及单个新闻条目链接的区域组成
 
 ![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcglmawcwl2cuahnmnwkwyzi-.jpg)
 
-之前我提到过，应用程序应该使用一个动画图片来让用户知道 Ajax 请求正在忙于下载新闻源数据。图 5.3 展示了这个动画图片 `wait.gif` 的样子。
+之前我提到过，应用程序应该使用一个动画图片来让用户知道 Ajax 请求正在忙于下载新闻源数据。图 5.3 展示了这个动画图片`wait.gif`的样子。
 
-##### 图 5.3\. News Feeder 应用程序使用一个动画“加载中”图片（`wait.gif`）来让用户知道 Ajax 请求正在处理中。
+##### 图 5.3：News Feeder 应用程序使用一个动画“加载中”图片（`wait.gif`）来让用户知道 Ajax 请求正在处理中
 
 ![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcglmawowl2cuahnnnxawyzm-.jpg)
 
@@ -2610,13 +2709,13 @@ News Feeder 应用程序的设计始于 Ajax 请求，该请求将数据从新�
 
 #### 客户端请求
 
-如果没有安全限制，News Feeder 应用程序中的客户端请求将是 Ajax 方程中最可预测的部分，因为它只需对 URL 执行一个 `GET` 请求，无需特殊参数或其他任何东西。然而，无法直接对远程 Web 服务器发出 Ajax 请求，这意味着你必须创建自己的服务器脚本来接受 Ajax 请求并完成它。
+如果没有安全限制，News Feeder 应用程序中的客户端请求将是 Ajax 方程中最可预测的部分，因为它只需对 URL 执行一个`GET`请求，无需特殊参数或其他任何东西。然而，无法直接对远程 Web 服务器发出 Ajax 请求，这意味着你必须创建自己的服务器脚本来接受 Ajax 请求并完成它。
 
 获取新闻源数据所需的只是新闻源 Web 服务器的 URL。因此，News Feeder 客户端请求必须将新闻源的 URL 发送到你的服务器脚本，然后该脚本负责获取数据并以 Ajax 响应的形式返回。这一切的关键在于找到合适的 RSS 新闻源，也就是找到它们的 URL。
 
 如果你开始留意你访问的网站，你可能会在主菜单或导航链接附近看到一个“联合供稿”链接，甚至可能是一个 RSS 图标。这就是你找到新闻源 URL 的方法，而这个 URL 就是你通过 Ajax 加载新闻源所需的全部内容。
 
-注意
+#### 注意
 
 | ![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcgl0zwovlmdoc29uy3a-.jpg) | 大多数以内容驱动的网站（如新闻网站）都提供针对不同兴趣的众多新闻源。例如，《今日美国》提供了超过 30 种不同的体育新闻源，从大学曲棍球到赛马。要访问它们，只需滚动到《今日美国》主页（[`www.usatoday.com/`](http://www.usatoday.com/)）的底部，然后点击那个橙色的小 XML 图标。这个图标通常被用来代替较新的 RSS 图标。 |
 
@@ -2626,30 +2725,29 @@ News Feeder 应用程序的设计始于 Ajax 请求，该请求将数据从新�
 
 因此，News Feeder 应用程序确实需要一个服务器上的 PHP 脚本，但其唯一作用是从远程服务器获取新闻源数据，然后通过 Ajax 响应将其传回客户端。你可以将 News Feeder 的服务器脚本视为一个代理，因为它充当了客户端 JavaScript 代码与实际托管新闻源的远程服务器之间的中间人。再次强调，关键在于你的 Ajax 代码只能向你的服务器发出请求，当你需要从其他地方请求数据时，这是一个大问题。解决方案是让服务器脚本检索数据，然后让该脚本作为响应 Ajax 请求的基础。
 
-
-
-
 我一直在提到的第三方（远程）服务器可以是任何以 RSS 格式提供数据源的服务器。你会发现，只要稍加探索，大多数主流网站都会以 RSS 格式提供新闻源。当你找到一个新闻源时，只需记下浏览器中的 URL——这就是你在发起 RSS Ajax 请求时需要填入代码中的 URL。
 
 #### 理解客户端与服务器之间的对话
 
 如果你将所学到的关于新闻阅读器（News Feeder）应用内部通信的知识整合起来，就会得到如图 5.4 所示的数据流。
 
-##### 图 5.4. 新闻阅读器应用在收到带有新闻源 URL 的请求后，返回 XML 新闻源数据。
+##### 图 5.4：新闻阅读器应用在收到带有新闻源 URL 的请求后，返回 XML 新闻源数据
 
 ![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcglmawcwl2cuahnmnwkwyzu-.jpg)
 
 作为 Ajax 请求参数发送给服务器的数据是新闻源数据源的 URL。虽然这些数据始终以 URL 的形式出现，但它可以有多种形式。例如，以下是《科学美国人》网站关联的新闻源 URL：[`www.sciam.com/xml/sciam.xml`](http://www.sciam.com/xml/sciam.xml)。
 
-请注意，这个 URL 引用了一个特定的 XML 文档 `sciam.xml`。考虑到 RSS 源实际上是 XML 文档，这很合理，但新闻源 URL 并不总是引用 XML 文件。例如，以下是《连线》新闻的 URL：[`feeds.wired.com/wired/topheadlines`](http://feeds.wired.com/wired/topheadlines)。
+请注意，这个 URL 引用了一个特定的 XML 文档`sciam.xml`。考虑到 RSS 源实际上是 XML 文档，这很合理，但新闻源 URL 并不总是引用 XML 文件。例如，以下是《连线》新闻的 URL：[`feeds.wired.com/wired/topheadlines`](http://feeds.wired.com/wired/topheadlines)。
 
 在这个例子中，URL 是一个路径而非文件名。关键在于，你无法总是预测新闻源 URL 的确切形式。好消息是，你通常可以直接获取并使用网站提供的联合供稿 URL。
 
 一旦你知道了新闻源 Web 服务器的 URL，就需要将其打包成一个更大的 URL，作为 Ajax 请求的一部分提交给新闻阅读器服务器脚本。以下是一个示例：
 
 ```
-newsfeeder.php?rssurl=http://www.sciam.com/xml/sciam.xml
-```
+
+
+
+`newsfeeder.php?rssurl=http://www.sciam.com/xml/sciam.xml`
 
 这段代码展示了新闻源 URL 如何作为单个参数（`rssurl`）被打包到 URL 中。整个 URL 被用作 Ajax 请求的基础，此时你的服务器脚本 `newsfeeder.php` 会获取 `rssurl` 参数，并使用其中包含的 URL 来获取源信息。
 
@@ -2657,97 +2755,153 @@ newsfeeder.php?rssurl=http://www.sciam.com/xml/sciam.xml
 
 代码视图：
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
+
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/">
+
 <channel>
+
   <title>Scientific American - Official RSS Feed</title>
+
   <link>http://www.sciam.com/</link>
+
   <image>
+
     <url>http://www.sciam.com/media/logo/SAlogo_144px.gif</url>
+
     <title>Scientific American.com</title>
-     <link>http://www.sciam.com/</link>
+
+    <link>http://www.sciam.com/</link>
+
     <width>144</width>
+
     <height>45</height>
+
   </image>
+
   <description>Science news and technology updates from
+
     Scientific American</description>
+
   <language>en-us</language>
+
   <managingEditor>editors@sciam.com</managingEditor>
-    <dc:publisher>Scientific American</dc:publisher>
+
+  <dc:publisher>Scientific American</dc:publisher>
+
   <copyright>Copyright 1996-2007 Scientific American</copyright>
+
   <item>
+
     <title>News: Snake Bites the Toxic Toad That Feeds It—and
+
       Spreads Its Poison</title>
+
     <link>http://www.sciam.com/article.cfm?chanID=sa003&amp;
+
       articleID=6FD96483-E7F2-99DF-3C8A12ACF6BB25D8&amp;
+
       ref=rss</link>
+
     <guid>http://www.sciam.com/article.cfm?chanID=sa003&amp;
+
       articleID=6FD96483-E7F2-99DF-3C8A12ACF6BB25D8&amp;
+
       ref=rss</guid>
+
     <author>JR Minkel &lt;editors@sciam.com&gt;</author>
+
     <dc:date>2007-01-29T17:00:00-05:00</dc:date>
+
   </item>
+
   <item>
+
     <title>News: Did Honest Abe Have Nerves of Glass?</title>
+
     <link>http://www.sciam.com/article.cfm?chanID=sa003&amp;
+
       articleID=6FD6E124-E7F2-99DF-3E0EDA7A34E03A06&amp;
+
       ref=rss</link>
+
     <guid>http://www.sciam.com/article.cfm?chanID=sa003&amp;
+
       articleID=6FD6E124-E7F2-99DF-3E0EDA7A34E03A06&amp;
+
       ref=rss</guid>
+
     <author>Nikhil Swaminathan &lt;editors@sciam.com&gt;</author>
+
     <dc:date>2007-01-29T17:00:00-05:00</dc:date>
+
   </item>
+
 ...
+
 </channel>
-</rss> 
+
+</rss>
 ```
 
 乍一看，这段代码有点吓人，但出于我们的目的，大部分内容可以忽略。请记住，新闻阅读器应用的挑战在于显示链接到实际新闻故事的新闻条目列表。你可以从 XML 文档中提取这些数据，而忽略许多其他细节。为了说明这一点，请浏览代码并找到 `<item>` 标签。然后在该标签下方找到名为 `<title>`、`<link>` 和 `<dc:date>` 的标签。代码如下所示：
 
-```
+```xml
 ...
-  <item>
-    <title>News: Snake Bites the Toxic Toad That Feeds It—and
-      Spreads Its Poison</title>
-    <link>http://www.sciam.com/article.cfm?chanID=sa003&amp;
-      articleID=6FD96483-E7F2-99DF-3C8A12ACF6BB25D8&amp;
-      ref=rss</link>
+
+<item>
+
+  <title>News: Snake Bites the Toxic Toad That Feeds It—and
+
+    Spreads Its Poison</title>
+
+  <link>http://www.sciam.com/article.cfm?chanID=sa003&amp;
+
+    articleID=6FD96483-E7F2-99DF-3C8A12ACF6BB25D8&amp;
+
+    ref=rss</link>
+
 ...
-    <dc:date>2007-01-29T17:00:00-05:00</dc:date>
-  </item>
+
+  <dc:date>2007-01-29T17:00:00-05:00</dc:date>
+
+</item>
+
 ...
 ```
 
 `<title>` 标签存储单个新闻条目的标题，而 `<link>` 标签存储其关联的链接。`<dc:date>` 标签实际上可以简单地视为 `<date>` 标签，因为 `dc` 部分是一个命名空间前缀，严格来说并非标签名称的一部分。大多数 RSS 源实际上使用 `<pubDate>` 标签来编码发布日期，而不是 `<date>` 标签，因此在处理 XML 数据时，最好同时考虑这两种情况。同样重要的是，要考虑新闻条目可能没有这两个标签的情况，因为发布日期在 RSS 文档中是可选的。所有这些关于 RSS 标签的讨论，归根结底就是你可以遍历代码，提取特定的标签及其内容，从而轻松构建新闻条目列表。
 
-注意
-
-| ![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcgl0zwovlmdoc29uy3a-.jpg) | 在 RSS 新闻源中使用两种不同的标签来编码发布日期的原因很复杂，与相互竞争的规范以及 RSS 格式快速演变有关。与其给你上一堂枯燥且不必要的 RSS 历史课，不如简单地说，你遇到 `<pubDate>` 标签的频率远高于 `<date>`（`<dc:date>`），但支持两者仍然值得，因为一些知名网站确实使用了 `<date>`。 |
+> **注意**
+>
+> ![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcgl0zwovlmdoc29uy3a-.jpg)
+>
+> 在 RSS 新闻源中使用两种不同的标签来编码发布日期的原因很复杂，与相互竞争的规范以及 RSS 格式快速演变有关。与其给你上一堂枯燥且不必要的 RSS 历史课，不如简单地说，你遇到 `<pubDate>` 标签的频率远高于 `<date>`（`<dc:date>`），但支持两者仍然值得，因为一些知名网站确实使用了 `<date>`。
 
 当然，你还需要获取新闻源的名称，甚至可能还需要获取其网站的链接。这些信息也包含在 `<title>` 和 `<link>` 标签中，但这次这些标签出现在 `<channel>` 标签之下；一个独立的新闻源有时也被称为频道（channel），就像电视频道一样。因此，再次查看《科学美国人》的代码，以下是包含新闻源标题和链接的代码：
 
-```
+```xml
 ...
+
 <channel>
+
   <title>Scientific American - Official RSS Feed</title>
+
   <link>http://www.sciam.com/</link>
+
 ...
 ```
 
 总结一下，为了新闻阅读器应用的目的，需要从 RSS（XML）新闻源文档中提取以下信息：
 
-*   新闻源标题（`<channel>` 内的 `<title>`）
-*   新闻源链接（`<channel>` 内的 `<link>`）
-*   新闻条目标题（`<item>` 内的 `<title>`）
-*   新闻条目链接（`<item>` 内的 `<link>`）
-*   新闻条目发布日期（`<item>` 内的 `<pubDate>` 或 `<date>`）
+- 新闻源标题（`<channel>` 内的 `<title>`）
+- 新闻源链接（`<channel>` 内的 `<link>`）
+- 新闻条目标题（`<item>` 内的 `<title>`）
+- 新闻条目链接（`<item>` 内的 `<link>`）
+- 新闻条目发布日期（`<item>` 内的 `<pubDate>` 或 `<date>`）
 
 前两条信息在任何给定的新闻源文档中只出现一次，而后两条信息如果有多个新闻条目（通常如此）则可以出现多次。当有多个新闻条目时，每个条目都有自己的 `<item>` 标签。
-
-
-
 
 尽管我可以花更多时间深入讲解 RSS 数据格式的细节，但我不会这么做；这完全没有必要。你已经掌握了构建新闻阅读器应用所需的所有知识，那么让我们开始吧！
 
@@ -2755,99 +2909,125 @@ newsfeeder.php?rssurl=http://www.sciam.com/xml/sciam.xml
 
 你可能已经准备好迎接新闻阅读器应用的主要部分：一个网页和一个服务器脚本。然而，还有第三个组成部分，即 CSS 样式表。样式表并非绝对必要，但它确实能让显示的新闻信息看起来更加美观。因此，以下是该应用所需的组件：
 
-*   HTML 网页（`newsfeeder.html`）
-*   CSS 样式表（`newsfeeder.css`）
-*   PHP 服务器脚本（`newsfeeder.php`）
+- HTML 网页（`newsfeeder.html`）
+- CSS 样式表（`newsfeeder.css`）
+- PHP 服务器脚本（`newsfeeder.php`）
 
 请记住，对于每个不同的新闻源 URL，远程服务器也参与其中。从某种意义上说，这个远程服务器并不是应用的一部分，因为你无需担心任何文件或其他资源，但它确实在应用的功能中扮演着关键角色。因此，在接下来的几节中，当你处理新闻阅读器应用的文件时，请理解它们仍然依赖于远程服务器来获取实际的新闻源数据。
 
 #### 新闻阅读器网页
 
-新闻阅读器网页（`newsfeeder.html`）无疑是应用中最关键的部分，因为它负责解析从 PHP 服务器脚本返回的 RSS 数据，并以有意义的方式显示这些数据。如图 5.5 所示，该页面包含一个新闻源选择列表，后跟一个`div`元素，该元素包含当前所选新闻源的链接标题，以及每个链接新闻项的列表。
+新闻阅读器网页（`newsfeeder.html`）无疑是应用中最关键的部分，因为它负责解析从 PHP 服务器脚本返回的 RSS 数据，并以有意义的方式显示这些数据。如图 5.5 所示，该页面包含一个新闻源选择列表，后跟一个 `div` 元素，该元素包含当前所选新闻源的链接标题，以及每个链接新闻项的列表。
 
 ##### 图 5.5. 新闻阅读器网页由一个新闻源选择列表和与当前所选源相关的信息组成。
 
 [[查看完整尺寸图片]](mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wlmdwcglqzmlhmc9nx2hzddvsmdzj.jpg)![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcglmawowl2cuahnnnxawyzy-.jpg)
 
-HTML 代码在`<body>`标签中建立了新闻阅读器网页的用户界面，其代码如下：
+HTML 代码在 `<body>` 标签中建立了新闻阅读器网页的用户界面，其代码如下：
 
 代码视图：
 
-```
+```html
 <body onload="loadFeed()">
+
   <div id="ajaxState" style="display:none"></div>
+
   <br />
+
   <div>选择你的新闻：
+
     <select id="feed" onchange="loadFeed()">
+
       <option value="http://feeds.wired.com/wired/topheadlines">
+
         Wired News</option>
-      <option value=
-        "http://feeds.engadget.com/weblogsinc/engadget">
+
+      <option value="http://feeds.engadget.com/weblogsinc/engadget">
+
         Engadget</option>
-     <option value=
-       "http://feeds.ziffdavis.com/ziffdavis/extremetech">
-       ExtremeTech</option>
-     <option value=
-       "http://feeds.feedburner.com/ajaxian">Ajaxian</option>
-     <option value="http://www.sciam.com/xml/sciam.xml">
-       Scientific American</option>
-     <option value="http://news.google.com/?output=rss">
-       Google News</option>
-     <option value=
-       "http://www.michaelmorrison.com/mambo/index2.php?
-       option=com_rss&feed=RSS2.0&no_html=1">
-       Michael Morrison 的博客</option>
-   </select>
- </div>
- <br />
- <div id="feedcontent"></div>
-</body> 
+
+      <option value="http://feeds.ziffdavis.com/ziffdavis/extremetech">
+
+        ExtremeTech</option>
+
+      <option value="http://feeds.feedburner.com/ajaxian">Ajaxian</option>
+
+      <option value="http://www.sciam.com/xml/sciam.xml">
+
+        Scientific American</option>
+
+      <option value="http://news.google.com/?output=rss">
+
+        Google News</option>
+
+      <option value="http://www.michaelmorrison.com/mambo/index2.php?
+
+        option=com_rss&feed=RSS2.0&no_html=1">
+
+        Michael Morrison 的博客</option>
+
+    </select>
+
+  </div>
+
+  <br />
+
+  <div id="feedcontent"></div>
+
+</body>
 ```
 
-如果排除由`<select>`标签创建的选择列表，你会发现这段代码非常简洁。实际上，页面上只有两个可见元素：选择列表（`feed`）和一个用于显示动态加载的新闻源信息的`div`元素（`feedcontent`）。
+如果排除由 `<select>` 标签创建的选择列表，你会发现这段代码非常简洁。实际上，页面上只有两个可见元素：选择列表（`feed`）和一个用于显示动态加载的新闻源信息的 `div` 元素（`feedcontent`）。
 
-网页主体中不应被忽视的一段代码是`onload`事件处理程序，它负责通过调用`loadFeed()`函数加载选择列表中第一个新闻源的数据。在你看到`loadFeed()`函数之前，值得指出的是，你可以完全自定义新闻阅读器应用，使用你找到的新闻源，而无需处理页面中的任何其他代码。换句话说，你可以在不查看任何剩余 JavaScript 代码的情况下完全自定义应用——只需添加新的`<option>`标签或修改现有的`<option>`标签，使用不同的新闻源标题和 URL。
+网页主体中不应被忽视的一段代码是 `onload` 事件处理程序，它负责通过调用 `loadFeed()` 函数加载选择列表中第一个新闻源的数据。在你看到 `loadFeed()` 函数之前，值得指出的是，你可以完全自定义新闻阅读器应用，使用你找到的新闻源，而无需处理页面中的任何其他代码。换句话说，你可以在不查看任何剩余 JavaScript 代码的情况下完全自定义应用——只需添加新的 `<option>` 标签或修改现有的 `<option>` 标签，使用不同的新闻源标题和 URL。
 
-如果你想更深入地了解应用背后的工作原理，那么当然需要深入研究 JavaScript 代码。以下是`loadFeed()`函数的代码，它负责发起加载新闻源数据的 Ajax 请求：
+如果你想更深入地了解应用背后的工作原理，那么当然需要深入研究 JavaScript 代码。以下是 `loadFeed()` 函数的代码，它负责发起加载新闻源数据的 Ajax 请求：
 
-```
+```javascript
 function loadFeed() {
+
   // 清除之前的新闻源内容
+
   document.getElementById("feedcontent").innerHTML =
+
     "<img src='wait.gif' alt='加载中...' />";
 
   // 发送 Ajax 请求以加载新的新闻源内容
+
   ajaxSendRequest("GET", "newsfeeder.php?rssurl=" +
+
     encodeURIComponent(document.getElementById('feed').options[
+
     document.getElementById('feed').selectedIndex].value),
+
     handleFeedRequest);
+
 }
 ```
 
-`loadFeed()`函数做的第一件事是应用中最有趣的功能之一，即在请求处理期间显示动画“加载”图像（`wait.gif`）。这个图像之前在图 5.3 中展示过，但在上下文中看更有意义——请查看图 5.6。
+`loadFeed()` 函数做的第一件事是应用中最有趣的功能之一，即在请求处理期间显示动画“加载”图像（`wait.gif`）。这个图像之前在图 5.3 中展示过，但在上下文中看更有意义——请查看图 5.6。
 
 ##### 图 5.6. 使用动画“加载”图像让用户知道新闻源 Ajax 请求正在处理中。
 
 [[查看完整尺寸图片]](mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wlmdwcglqzmlhmc9nx2hzddvsmddj.jpg)![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcglmawowl2cuahnnnxawyzc-.jpg)
 
-回到`loadFeed()`代码，“加载”图像通过更改 ID 为`feedcontent`的`div`，使其包含一个`<img>`标签来显示。这一更改通过设置`div`元素的`innerHTML`属性实现。你可以使用`innerHTML`属性动态更改页面上元素的内容。稍后你将在显示新闻源标题和新闻项的代码中再次看到这个属性的使用，这些内容同样放在同一个 feed 内容`div`中。
+回到 `loadFeed()` 代码，“加载”图像通过更改 ID 为 `feedcontent` 的 `div`，使其包含一个 `<img>` 标签来显示。这一更改通过设置 `div` 元素的 `innerHTML` 属性实现。你可以使用 `innerHTML` 属性动态更改页面上元素的内容。稍后你将在显示新闻源标题和新闻项的代码中再次看到这个属性的使用，这些内容同样放在同一个 feed 内容 `div` 中。
 
-`loadFeed()`函数中的最后一段代码负责发出 Ajax 请求。这段代码构建了一个用于与 PHP 服务器脚本`newsfeeder.php`通信的 URL，其中包含`rssurl`参数，该参数包含新闻源 URL。Ajax 处理函数设置为`handleFeedRequest()`，正是这个函数承担了应用中的主要工作。
+`loadFeed()` 函数中的最后一段代码负责发出 Ajax 请求。这段代码构建了一个用于与 PHP 服务器脚本 `newsfeeder.php` 通信的 URL，其中包含 `rssurl` 参数，该参数包含新闻源 URL。Ajax 处理函数设置为 `handleFeedRequest()`，正是这个函数承担了应用中的主要工作。
 
-注意
+> **注意**
+>
+> ![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcgl0zwovlmdoc29uy3a-.jpg)
+>
+> 在这一点上，我必须告诉你一个小秘密——这是本书中第一次使用 `innerHTML` 属性来更改网页内容。我有点内疚，因为这个属性并未被万维网联盟（W3C）正式认可为 Web 标准，因此其使用存在一定争议。然而，它非常方便，并被无数专家开发者在众多网站中使用，因此这个属性不太可能很快消失。另一种选择是纯粹通过 DOM 应用程序编程接口（API）函数来修改页面内容。后一种技术更受青睐，至少从标准角度来看如此，但在大多数情况下它更复杂。我选择了简单的方式，因此使用了 `innerHTML` 属性。如果你想了解更多关于 `innerHTML` 与 DOM API 的争论，只需在 Web 上搜索“innerHTML”和“DOM”。你会发现大量强烈的观点！
 
-| ![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcgl0zwovlmdoc29uy3a-.jpg) | 在这一点上，我必须告诉你一个小秘密——这是本书中第一次使用`innerHTML`属性来更改网页内容。我有点内疚，因为这个属性并未被万维网联盟（W3C）正式认可为 Web 标准，因此其使用存在一定争议。然而，它非常方便，并被无数专家开发者在众多网站中使用，因此这个属性不太可能很快消失。另一种选择是纯粹通过 DOM 应用程序编程接口（API）函数来修改页面内容。后一种技术更受青睐，至少从标准角度来看如此，但在大多数情况下它更复杂。我选择了简单的方式，因此使用了`innerHTML`属性。如果你想了解更多关于`innerHTML`与 DOM API 的争论，只需在 Web 上搜索“innerHTML”和“DOM”。你会发现大量强烈的观点！ |
+在进入 `handleFeedRequest()` 函数的代码之前，还有一小段代码值得提及。我指的是 `loadFeed()` 函数下方预加载 `wait.gif` 图像的代码：
 
-在进入`handleFeedRequest()`函数的代码之前，还有一小段代码值得提及。我指的是`loadFeed()`函数下方预加载`wait.gif`图像的代码：
-
-```
+```javascript
 var waitImage = new Image();
+
 waitImage.src = "wait.gif";
 ```
-
-
-
-
 
 这段代码的意义在于，你不希望在加载“加载中”图片时出现任何明显的延迟。这张图片的全部意义就是让用户知道后台正在发生有意义的事情。因此，我们通过在页面渲染之前预加载图片来尽快启动这个过程。之所以能这样做，是因为图片预加载代码出现在任何其他 JavaScript 函数之外，这意味着它会在页面加载时自动运行。
 
@@ -2855,55 +3035,69 @@ waitImage.src = "wait.gif";
 
 代码视图：
 
-```
+```javascript
 function handleFeedRequest() {
-  if (request.readyState == 4 && request.status == 200) {
-    // 存储 XML 响应数据
-    var xmlData = request.responseXML;
+```
 
-    // 从提要标题开始生成提要内容
-    var feedContent = "";
-    var channelElem = xmlData.getElementsByTagName("channel")[0];
-    feedContent += "<div class='feedtitle'><a href='" +
-      getText(channelElem.getElementsByTagName("link")[0]) +
-      "'>" + getText(channelElem.getElementsByTagName(
-      "title")[0]) + "</a></div>";
 
-    // 现在以无序列表的形式生成提要项目列表
-    feedContent += "<ul>";
-    var feedItems = channelElem.getElementsByTagName("item");
-    for (var i = 0; i < feedItems.length; i++) {
-      var itemTitle =
-getText(feedItems[i].getElementsByTagName("title")[0]);
-      var itemLink = getText(feedItems[i].getElementsByTagName(
-        "link")[0]);
-      var itemPubDate =
-getText(feedItems[i].getElementsByTagName("pubDate")[0]);
-      if (itemPubDate == "")
-        itemPubDate = getText(feedItems[i].getElementsByTagName(
-          "date")[0]);
-      if (itemPubDate == "")
-        feedContent += "<li><a href='" + itemLink + "'>" +
-          itemTitle + "</a></li>";
-      else
-        feedContent += "<li><a href='" + itemLink + "'>" +
-          itemTitle + " <span class='itemdate'>(" +
-          itemPubDate + ")</span></a></li>";
-    }
-    feedContent += "</ul>";
 
-    // 显示提要内容
-    document.getElementById("feedcontent").innerHTML = feedContent;
+```javascript
+if (request.readyState == 4 && request.status == 200) {
+  // 存储 XML 响应数据
+  var xmlData = request.responseXML;
+
+  // 从提要标题开始生成提要内容
+  var feedContent = "";
+
+  var channelElem = xmlData.getElementsByTagName("channel")[0];
+
+  feedContent += "<div class='feedtitle'><a href='" +
+    getText(channelElem.getElementsByTagName("link")[0]) +
+    "'>" + getText(channelElem.getElementsByTagName("title")[0]) +
+    "</a></div>";
+
+  // 现在以无序列表的形式生成提要项目列表
+  feedContent += "<ul>";
+
+  var feedItems = channelElem.getElementsByTagName("item");
+
+  for (var i = 0; i < feedItems.length; i++) {
+    var itemTitle =
+      getText(feedItems[i].getElementsByTagName("title")[0]);
+
+    var itemLink =
+      getText(feedItems[i].getElementsByTagName("link")[0]);
+
+    var itemPubDate =
+      getText(feedItems[i].getElementsByTagName("pubDate")[0]);
+
+    if (itemPubDate == "")
+      itemPubDate =
+        getText(feedItems[i].getElementsByTagName("date")[0]);
+
+    if (itemPubDate == "")
+      feedContent += "<li><a href='" + itemLink + "'>" +
+        itemTitle + "</a></li>";
+    else
+      feedContent += "<li><a href='" + itemLink + "'>" +
+        itemTitle + " <span class='itemdate'>(" +
+        itemPubDate + ")</span></a></li>";
   }
-  ajaxUpdateState();
-} 
+
+  feedContent += "</ul>";
+
+  // 显示提要内容
+  document.getElementById("feedcontent").innerHTML = feedContent;
+}
+
+ajaxUpdateState();
 ```
 
 诚然，这里的代码量不小，但理解起来并不算太难。只需记住，它基本上是在动态构建一段 HTML 代码。换句话说，该函数正在构建网页的一部分，以便将其插入到提要内容的 `div` 中进行显示。生成的 HTML 代码包含新闻提要的标题，该标题同时也作为指向新闻来源网站的链接。HTML 代码还包含一个无序（项目符号）列表，其中每个新闻项目由一个带链接的标题和一个发布日期组成。需要注意的是，生成的 HTML 代码包含几个 CSS 样式表类引用，这有助于样式表知道它应用于哪些内容。
 
 在 `handleFeedRequest()` 函数的末尾，你会看到一行代码，最终将动态生成的 HTML 代码插入到页面中：
 
-```
+```javascript
 document.getElementById("feedcontent").innerHTML = feedContent;
 ```
 
@@ -2911,17 +3105,17 @@ document.getElementById("feedcontent").innerHTML = feedContent;
 
 新闻提要页面的外观主要由 `newsfeeder.css` 样式表提供，该样式表通过以下链接在网页头部引用：
 
-```
+```html
 <link rel="stylesheet" type="text/css" href="newsfeeder.css" />
 ```
 
 `newsfeeder.css` 样式表与新闻提要的其他源文件位于同一个 `chap05` 文件夹中。下一节将快速介绍这个样式表，并解释它如何影响新闻提要应用程序的最终外观。
 
-#### 新闻提要样式表
+## 新闻提要样式表
 
 我首先承认，在一本关于 Ajax 的书中列出 CSS 样式表代码，我其实很不情愿。然而，新闻提要应用程序是一个极好的例子，展示了样式表如何用相对少量的代码为应用程序增添大量魅力。如果你不相信，可以看看图 5.7，它展示了没有样式表时的新闻提要应用程序。
 
-##### 图 5.7. 移除样式表后，新闻提要应用程序看起来有些单调。
+### 图 5.7. 移除样式表后，新闻提要应用程序看起来有些单调
 
 [[查看完整尺寸图片]](mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wlmdwcglqzmlhmc9nx2hzddvsmdhj.jpg)![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcglmawowl2cuahnnnxawyzg-.jpg)
 
@@ -2929,22 +3123,22 @@ document.getElementById("feedcontent").innerHTML = feedContent;
 
 以下是用于在新闻提要应用程序中设置新闻提要标题样式的 CSS 代码：
 
-```
+```css
 div.feedtitle {
-  padding-left : 5px;
-  background-color : #EEEEEE;
-  font-size : 22px;
-  font-weight : bold;
+  padding-left: 5px;
+  background-color: #EEEEEE;
+  font-size: 22px;
+  font-weight: bold;
 }
 
 div.feedtitle a {
-  color : #666677;
-  text-decoration : none;
+  color: #666677;
+  text-decoration: none;
 }
 
 div.feedtitle a:hover {
-  color : #333344;
-  text-decoration : none;
+  color: #333344;
+  text-decoration: none;
 }
 ```
 
@@ -2952,85 +3146,86 @@ div.feedtitle a:hover {
 
 类似的 CSS 样式也应用于无序列表中出现的各个新闻项目：
 
-```
+```css
 li {
-  font-size : 18px;
-  padding-left : 25px;
-  background : url(newspaper.gif) no-repeat;
-  list-style : none;
+  font-size: 18px;
+  padding-left: 25px;
+  background: url(newspaper.gif) no-repeat;
+  list-style: none;
 }
 ```
 
 这段代码负责在列表中的每个项目旁边显示整洁的小报纸图标（参见图 5.5）。每个列表项也是一个链接，因此将相同的通用“链接悬停”着色概念应用于新闻项目是合理的，就像对提要标题所做的那样。以下是相应的 CSS 代码：
 
-```
+```css
 a:link {
-  color : #333344;
-  text-decoration : none;
+  color: #333344;
+  text-decoration: none;
 }
 
 a:visited {
-  color : #9999AA;
-  text-decoration : none;
+  color: #9999AA;
+  text-decoration: none;
 }
 
-a:hover, a:active {
-  background : #EEEEEE;
-  text-decoration : none;
+a:hover,
+a:active {
+  background: #EEEEEE;
+  text-decoration: none;
 }
 ```
 
 最后，你可能已经注意到，每个新闻项目的发布日期以斜体显示，并且颜色很浅，以免与标题竞争。以下是负责新闻项目发布日期外观的 CSS 样式：
 
-```
+```css
 span.itemdate {
-  font-style : italic;
-  color : #CCCCDD;
+  font-style: italic;
+  color: #CCCCDD;
 }
 ```
 
 至此，新闻提要应用程序的样式表就介绍完了。剩下的只有 PHP 服务器脚本，这个应用程序就完成了。
 
-#### 新闻提要服务器脚本
+## 新闻提要服务器脚本
 
 你见过田径接力赛中一名运动员将接力棒交给另一名运动员吗？这基本上就是 `newsfeeder.php` 服务器脚本为新闻提要应用程序所做的事情。它跑去从远程服务器获取新闻提要 RSS 数据，然后迅速返回并将这些数据交给客户端 JavaScript 代码。服务器脚本知道从哪个服务器获取 RSS 数据，这要归功于 Ajax 请求中传递给它的一个 URL 参数（`rssurl`）。以下是这个 PHP 脚本的代码：
 
-```
+```php
 <?php
+
 header('Content-type: text/xml;');
 
 // 返回 RSS 提要数据
 echo file_get_contents($_REQUEST['rssurl']);
+
 ?>
 ```
 
-注意
-
-
-
-
-
-| ![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcgl0zwovlmdoc29uy3a-.jpg) | 请记住，这个“代理”服务器脚本的目的是绕过无法向远程服务器发出 Ajax 请求的限制。如果不存在这个安全限制，服务器脚本就没有必要存在，客户端可以直接对新闻源 URL 发出 Ajax 请求。然而，限制远程请求权限仅限于服务器是有充分理由的：安全！让客户端脚本自由发起远程请求过于危险，因此创建自己的 Ajax 代理是为更安全的 Web 付出的微小代价。 |
+> **注意**
+>
+> ![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcgl0zwovlmdoc29uy3a-.jpg)
+>
+> 请记住，这个“代理”服务器脚本的目的是绕过无法向远程服务器发出 Ajax 请求的限制。如果不存在这个安全限制，服务器脚本就没有必要存在，客户端可以直接对新闻源 URL 发出 Ajax 请求。然而，限制远程请求权限仅限于服务器是有充分理由的：安全！让客户端脚本自由发起远程请求过于危险，因此创建自己的 Ajax 代理是为更安全的 Web 付出的微小代价。
 
 设置响应头以 XML 格式发送响应后，这个脚本实际上只包含一行代码。`file_get_contents()` 函数从指定的 URL 检索数据，这正是你需要的功能。因此，该脚本所做的只是将新闻源 URL 传入此函数，并将结果回显给客户端。最终结果是一个格式清晰的 RSS 新闻源文档，作为 Ajax 请求的响应发送回客户端。
 
-### 测试新闻阅读器
+## 测试新闻阅读器
 
 当你首次打开新闻阅读器网页时，应用程序会加载选择列表中的第一个新闻源，恰好是 Wired News 的头条新闻。图 5.8 显示了选中该新闻源时的应用程序界面。
 
-##### 图 5.8\. 新闻阅读器应用程序首先加载选择列表中的第一个新闻源。
+### 图 5.8. 新闻阅读器应用程序首先加载选择列表中的第一个新闻源
 
 [[查看完整尺寸图片]](mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wlmdwcglqzmlhmc9nx2hzddvsmdlj.jpg)![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcglmawowl2cuahnnnxawyzk-.jpg)
 
 当你在选择列表中选择另一个新闻源来切换时，会在发出 Ajax 请求期间显示动画“加载”图片。图 5.9 显示了新闻源从 Wired News 切换到 Engadget 的过程。
 
-##### 图 5.9\. 当你切换新闻源时，会显示动画“加载”图片，让你知道页面正在后台处理某些操作。
+### 图 5.9. 当你切换新闻源时，会显示动画“加载”图片，让你知道页面正在后台处理某些操作
 
 [[查看完整尺寸图片]](mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wlmdwcglqzmlhms9nx2hzddvsmdbj.jpg)![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcglmawoxl2cuahnnnxawyza-.jpg)
 
 新闻源的大小通常不大，因此新新闻源的显示不会花费太长时间。当显示完成时，新新闻源的信息会替换页面上的“加载”图片，如图 5.10 所示。
 
-##### 图 5.10\. 当新选中的新闻源加载完成后，新闻源信息会替换页面上的“加载”图片。
+### 图 5.10. 当新选中的新闻源加载完成后，新闻源信息会替换页面上的“加载”图片
 
 [[查看完整尺寸图片]](mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wlmdwcglqzmlhms9nx2hzddvsmdfj.jpg)![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcglmawoxl2cuahnnnxawyze-.jpg)
 
@@ -3038,7 +3233,7 @@ echo file_get_contents($_REQUEST['rssurl']);
 
 除了提供有趣的小工具新闻外，Engadget 网页也是一个很好的例子，展示了拥有 RSS 新闻源的网站如何让你轻松聚合该源。查看 Engadget 网页的右上角，你会看到标准的橙色 RSS 图标。点击此图标，你将获得 Engadget 新闻源的 URL，顺便说一句，这是一个不错的源！
 
-### 给新闻阅读器来一次极致的 Ajax 改造
+## 给新闻阅读器来一次极致的 Ajax 改造
 
 本书中的任何应用程序都不是真正完整的。我的意思是，示例应用程序都旨在作为你自行实验 Ajax 的起点。新闻阅读器应用程序也不例外，事实上它是一个极佳的可定制应用程序示例。
 
@@ -3048,15 +3243,17 @@ echo file_get_contents($_REQUEST['rssurl']);
 
 如果你选择将新闻源嵌入到包含其他内容的页面中，很可能希望限制页面上显示的新闻条目数量。例如，你可能只想显示前五条或前十条新闻条目。要限制显示条数，请将 `handleFeedRequest()` 函数中的 `for` 循环改为：
 
-```
+```javascript
 for (var i = 0; (i < feedItems.length) && (i < numItems); i++) {
 ```
 
 在这段代码中，`numItems` 变量控制显示的新闻条目数量。你可以使用变量，也可以直接硬编码一个数字，例如：
 
-```
+```javascript
 for (var i = 0; (i < feedItems.length) && (i < 10); i++) {
 ```
+
+
 
 这个示例将新闻条目数量限制为十条。`for` 循环仍然会检查 `feedItems` 数组的长度，以防新闻源中的条目少于十条，此时只显示可用的条目数量。
 
@@ -3068,11 +3265,7 @@ for (var i = 0; (i < feedItems.length) && (i < 10); i++) {
 
 ## 第 6 章 利用自动补全读懂用户心思
 
-Ajax 纯种赛马
-
-
-
-
+### Ajax 纯种赛马
 
 | ![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcgl0zwovlmdoc29uy3a-.jpg) | 如果你在 20 世纪 30 年代的澳大利亚是个赌徒，你对“Ajax”的看法可能会截然不同。你本可以靠押注冠军纯种赛马 Ajax 大赚一笔——它因连续赢得 18 场比赛而被铭记，后来入选了澳大利亚赛马名人堂。 |
 
@@ -3080,24 +3273,24 @@ Ajax 纯种赛马
 
 本章将引导你设计和开发一个自动补全应用程序，该程序使用 Ajax 在服务器端动态查找用户输入，并协助完成可能的输入补全。从某种意义上说，你可以将这个应用程序视为一种初级形式的 Web 人工智能，因为它赋予文本输入控件猜测用户正在输入什么的能力。这个应用程序既简单又强大，是添加到你的 Ajax 工具箱中的一个非常实用的工具。
 
-本章中 Completer 应用程序使用了以下文件，它们位于随书附带的 live Linux CD-ROM 的`chap06`示例代码文件夹中：
+本章中 `Completer` 应用程序使用了以下文件，它们位于随书附带的 live Linux CD-ROM 的 `chap06` 示例代码文件夹中：
 
-*   `completer.html`——主 Web 页面
-*   `completer.php`——用于查找自动补全文本的服务器脚本
-*   `ajaxkit.js`——Ajax 工具包的核心 Ajax 函数
-*   `domkit.js`——Ajax 工具包的 DOM 相关函数
+- `completer.html`——主 Web 页面
+- `completer.php`——用于查找自动补全文本的服务器脚本
+- `ajaxkit.js`——Ajax 工具包的核心 Ajax 函数
+- `domkit.js`——Ajax 工具包的 DOM 相关函数
 
 ### 挑战：预测数据输入
 
-本章的挑战是创建一个功能类似于 Google Suggest 所推广的自动补全特性的应用程序。在继续之前，快速查看一下 Google Suggest 以确切了解其工作原理会很有帮助。因此，请将浏览器指向[`www.google.com/webhp?complete=1&hl=en`](http://www.google.com/webhp?complete=1&hl=en)，并尝试执行一次搜索。
+本章的挑战是创建一个功能类似于 Google Suggest 所推广的自动补全特性的应用程序。在继续之前，快速查看一下 Google Suggest 以确切了解其工作原理会很有帮助。因此，请将浏览器指向 [`www.google.com/webhp?complete=1&hl=en`](http://www.google.com/webhp?complete=1&hl=en)，并尝试执行一次搜索。
 
-注意
-
-| ![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcgl0zwovlmdoc29uy3a-.jpg) | Google Suggest 在 Google 的 Google Labs 区域内仍被视为一个实验性项目，这就是为什么它的 URL 如此晦涩。如果 Google Suggest 将来被提升为 Google 搜索引擎的主流功能，你可能会看到这个 URL 变得更易读。 |
+> **注意**
+>
+> | ![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcgl0zwovlmdoc29uy3a-.jpg) | Google Suggest 在 Google 的 Google Labs 区域内仍被视为一个实验性项目，这就是为什么它的 URL 如此晦涩。如果 Google Suggest 将来被提升为 Google 搜索引擎的主流功能，你可能会看到这个 URL 变得更易读。 |
 
 Google Suggest 实际上相当复杂，它会动态显示一个下拉列表，供你选择建议的搜索短语。Google Suggest 之所以有趣，是因为它还显示了每个建议的命中次数，从而让你对建议的重要性有所衡量。Google Suggest 不会以任何方式操作文本字段本身，除非你从下拉列表中选择了一个建议。
 
-你在本章中开发的 Completer 应用程序在自动补全特性上采取了与 Google Suggest 略有不同的方法。为了了解它的工作方式，让我们看看另一个提供自动补全功能的实用网站：Lyricsfly.com。请随意浏览到[`www.lyricsfly.com/`](http://www.lyricsfly.com/)，其实际效果如图 6.1 所示。
+你在本章中开发的 `Completer` 应用程序在自动补全特性上采取了与 Google Suggest 略有不同的方法。为了了解它的工作方式，让我们看看另一个提供自动补全功能的实用网站：Lyricsfly.com。请随意浏览到 [`www.lyricsfly.com/`](http://www.lyricsfly.com/)，其实际效果如图 6.1 所示。
 
 ##### 图 6.1. Lyricsfly.com 是一个使用自动补全功能的音乐歌词搜索引擎。
 
@@ -3105,91 +3298,33 @@ Google Suggest 实际上相当复杂，它会动态显示一个下拉列表，�
 
 在图中，我点击了“Song”链接以专门搜索歌曲。同时请注意图中 Lyricsfly.com 与 Google Suggest 的主要区别——Lyricsfly.com 在给出建议时，实际上会将建议的文本添加到文本字段中。这意味着如果你不想使用下拉列表，就可以不用。事实上，如果你不介意继续输入并精确定位歌曲，你甚至根本不需要下拉列表。诚然，下拉列表很有帮助，并且它确实传达了额外信息，如艺术家，但它对于自动补全功能并非必需。图 6.2 展示了如果你继续输入歌曲名称，Lyricsfly.com 中的下拉列表最终如何解析为单首歌曲。
 
-##### 图 6.2. 你在[Lyricsfly.com](http://Lyricsfly.com)中输入得越多，下拉列表就越不重要。
+##### 图 6.2. 你在 [Lyricsfly.com](http://Lyricsfly.com) 中输入得越多，下拉列表就越不重要。
 
 [[查看完整尺寸图像]](mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wlmdwcglqzmlhmc9nx2hzddzsmdnj.jpg)![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcglmawowl2cuahnnnnawyzm-.jpg)
 
 在这张图中，我输入了足够多的歌曲名称，将下拉列表缩减为单首歌曲。当然，整个想法是防止用户输入太多内容，但你可以理解，即使没有下拉列表，自动补全功能也能相当合理地运行。
 
-展示如何在没有下拉列表的情况下实现自动补全的主要目的是为 Completer 示例应用程序设定挑战。动态创建和管理自定义下拉列表相当复杂，而我希望这个示例尽可能简洁。本书后面会介绍 Ajax 驱动的自定义弹出窗口，但现在我想坚持使用简单的用户界面，避免一堆繁琐的开销代码。因此，我们将放弃下拉列表，纯粹在文本输入控件内创建一个自动补全功能。
+展示如何在没有下拉列表的情况下实现自动补全的主要目的是为 `Completer` 示例应用程序设定挑战。动态创建和管理自定义下拉列表相当复杂，而我希望这个示例尽可能简洁。本书后面会介绍 Ajax 驱动的自定义弹出窗口，但现在我想坚持使用简单的用户界面，避免一堆繁琐的开销代码。因此，我们将放弃下拉列表，纯粹在文本输入控件内创建一个自动补全功能。
 
 这意味着该应用程序在任何给定时间只会建议一个单词或短语，但你会看到，即使是一个建议的短语也能极大地帮助应用程序变得更实用、更直观。
 
-因此，Completer 应用程序当前的任务是仅为文本输入控件提供自动补全功能。就这一挑战对 Ajax 的影响而言，应用程序的客户端部分负责在用户键入每个字符时，将用户输入的文本发送给服务器。服务器接收给定的输入文本，并在其可能的补全（建议）列表中找到最匹配项。然后服务器将补全的剩余部分返回给客户端，以便将其添加到文本输入控件中并选中。
+因此，`Completer` 应用程序当前的任务是仅为文本输入控件提供自动补全功能。就这一挑战对 Ajax 的影响而言，应用程序的客户端部分负责在用户键入每个字符时，将用户输入的文本发送给服务器。服务器接收给定的输入文本，并在其可能的补全（建议）列表中找到最匹配项。然后服务器将补全的剩余部分返回给客户端，以便将其添加到文本输入控件中并选中。
 
-为了让应用程序稍微有点教育意义，Completer 使用了一份著名历史人物列表作为其自动补全功能的基础。这意味着用户将开始输入一个名字，应用程序会迅速（理想情况下）用其最佳猜测填充文本字段，猜测这个人可能是谁。如果用户对建议满意，就无需再输入。如果不满意，用户可以选择继续输入，应用程序将再次尝试补全。除非用户输入速度太快，Ajax 请求跟不上，否则每次按键（实际上是释放按键，但这不是重点）都会发出一个请求。
+为了让应用程序稍微有点教育意义，`Completer` 使用了一份著名历史人物列表作为其自动补全功能的基础。这意味着用户将开始输入一个名字，应用程序会迅速（理想情况下）用其最佳猜测填充文本字段，猜测这个人可能是谁。如果用户对建议满意，就无需再输入。如果不满意，用户可以选择继续输入，应用程序将再次尝试补全。除非用户输入速度太快，Ajax 请求跟不上，否则每次按键（实际上是释放按键，但这不是重点）都会发出一个请求。
 
-总之，Completer 应用程序会为用户输入的每个字符发出一个 Ajax 请求，试图自动补全一个历史人物的名字。一旦成功输入名字，用户可以点击一个按钮，在流行的在线百科全书 Wikipedia 上查看该历史人物的传记。应用程序中的 Wikipedia 部分只是成功使用 Ajax 输入历史人物名字的一个象征性奖励。
-
-## 第 6 章 用自动补全读懂用户的心思
-
-纯种赛马 Ajax
-
-
-
-
-
-| ![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcgl0zwovlmdoc29uy3a-.jpg) | 如果你在 20 世纪 30 年代的澳大利亚是个赌徒，你对“阿贾克斯”的看法可能大不相同。你可以通过押注冠军纯种赛马阿贾克斯大赚一笔，这匹马因连续赢得 18 场比赛而被铭记，后来入选了澳大利亚赛马名人堂。 |
-
-当阿贾克斯首次出现在网络舞台上时，它最直接受益的例子之一就是 Google Suggest，它利用 Ajax 通过尝试自动补全搜索文本来帮助你执行搜索。Google Suggest 是一个特别引人注目的 Ajax 示例，因为它既微妙又强大——这是一个难以结合的组合。许多技术性的网络改进最终都因其技术优点而分散了网络体验的注意力，但 Ajax 并非如此。Google Suggest 的自动补全功能是众多 Ajax 特性之一，这些特性在不干扰网络体验的情况下显著改善了它。
-
-本章将引导你设计和开发一个自动补全应用程序，该程序使用 Ajax 动态地在服务器上查找用户输入，并协助可能的输入补全。在某些方面，你可以将这个应用程序视为一种原始形式的网络人工智能，因为它赋予文本输入控件猜测用户正在输入什么的能力。这个应用程序既简单又强大，是添加到你的 Ajax 武器库中的一个非常方便的工具。
-
-本章中 Completer 应用程序使用了以下文件，它们位于本书附带的 Linux 光盘的 `chap06` 示例代码文件夹中：
-
-*   `completer.html` — 主网页
-*   `completer.php` — 用于查找自动补全文本的服务器脚本
-*   `ajaxkit.js` — Ajax 工具包的核心 Ajax 函数
-*   `domkit.js` — Ajax 工具包的 DOM 相关函数
-
-### 挑战：预测数据输入
-
-本章的挑战是创建一个功能类似于 Google Suggest 推广的自动补全特性的应用程序。在进一步深入之前，快速查看一下 Google Suggest 以确切了解其工作原理会很有帮助。因此，将浏览器指向 [`www.google.com/webhp?complete=1&hl=en`](http://www.google.com/webhp?complete=1&hl=en) 并尝试执行一次搜索。
-
-注意
-
-| ![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcgl0zwovlmdoc29uy3a-.jpg) | Google Suggest 在 Google 的 Google Labs 区域内仍被视为一个实验性项目，这就是为什么它有一个如此晦涩的 URL。如果 Google Suggest 被提升为 Google 搜索引擎的主流用途，你可能会看到这个 URL 变得更易读。 |
-
-Google Suggest 实际上相当复杂，它会动态显示一个下拉列表，供你选择建议的搜索短语。Google Suggest 之所以有趣，是因为它还显示了每个建议的命中次数，从而让你对建议的重要性有所衡量。Google Suggest 不会以任何方式操作文本字段本身，除非你从下拉列表中选择了一个建议。
-
-你在本章中开发的 Completer 应用程序在自动补全特性上采取了与 Google Suggest 略有不同的方法。为了了解它的工作方式，让我们看看另一个提供自动补全功能的便捷网站：Lyricsfly.com。请随意浏览 [`www.lyricsfly.com/`](http://www.lyricsfly.com/)，其实际效果如 图 6.1 所示。
-
-##### 图 6.1. Lyricsfly.com 是一个使用自动补全功能的音乐歌词搜索引擎。
-
-[[查看完整尺寸图片]](mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wlmdwcglqzmlhmc9nx2hzddzsmdjj.jpg)![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcglmawowl2cuahnnnnawyzi-.jpg)
-
-在图中，我点击了“Song”链接以专门搜索歌曲。同时请注意图中 Lyricsfly.com 与 Google Suggest 的主要区别——Lyricsfly.com 在提出建议时实际上会将建议的文本添加到文本字段中。这意味着如果你不想使用下拉列表，也可以不使用。事实上，如果你不介意继续输入并锁定歌曲，你根本不需要下拉列表。诚然，下拉列表有很大帮助，并且它确实传达了额外信息，如艺术家，但它对于自动补全特性并非必需。图 6.2 展示了如果你继续输入歌曲名称，Lyricsfly.com 中的下拉列表最终如何解析为单个歌曲。
-
-##### 图 6.2. 你在 [Lyricsfly.com](http://Lyricsfly.com) 中输入得越多，下拉列表就越不重要。
-
-[[查看完整尺寸图片]](mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wlmdwcglqzmlhmc9nx2hzddzsmdnj.jpg)![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcglmawowl2cuahnnnnawyzm-.jpg)
-
-在这张图中，我输入了足够多的歌曲名称，将下拉列表减少到只剩一首歌。当然，整个想法是防止用户输入太多内容，但你可以理解，即使没有下拉列表，自动补全特性也能相当好地运行。
-
-展示如何在没有下拉列表的情况下实现自动补全的主要目的是为 Completer 示例应用程序设定挑战。动态创建和管理自定义下拉列表相当复杂，我希望尽可能保持这个示例的简洁。本书后面会介绍 Ajax 驱动的自定义弹出窗口，但现在我想坚持使用一个简单的用户界面，避免一堆繁琐的开销代码。因此，我们将放弃下拉列表，纯粹在文本输入控件内创建一个自动补全特性。
-
-这意味着该应用程序在任何给定时间只会建议一个单词或短语，但你会看到，即使是一个建议的短语也能在很大程度上使应用程序更有帮助和更直观。
-
-因此，Completer 应用程序当前的任务是仅为文本输入控件提供自动补全特性。就这一挑战对 Ajax 的影响而言，应用程序的客户端部分负责在用户键入每个字符时将输入的文本发送给服务器。服务器接收给定的输入文本，并在其可能的补全（建议）列表中找到最匹配的项。然后服务器将补全的剩余部分返回给客户端，以便将其添加到文本输入控件中并选中。
-
-为了使应用程序具有一定的教育意义，Completer 使用了一份著名历史人物列表作为其自动补全功能的基础。这意味着用户将开始输入一个名字，应用程序将迅速（理想情况下）用其最佳猜测填充文本字段，猜测这个人可能是谁。如果用户对建议满意，则无需再输入。如果不满意，用户可以选择继续输入，应用程序将再次尝试补全。除非用户输入速度太快，Ajax 请求跟不上，否则每次按键（实际上是释放键，但这不是重点）都会发出一个请求。
-
-总之，Completer 应用程序为用户输入的每个字符发出一个 Ajax 请求，以尝试自动补全一个历史人物的名字。一旦成功输入名字，用户可以点击一个按钮，在流行的在线百科全书 Wikipedia 上查看该历史人物的传记。应用程序的 Wikipedia 方面只是成功使用 Ajax 输入历史名字的一个象征性奖励。
+总之，`Completer` 应用程序会为用户输入的每个字符发出一个 Ajax 请求，试图自动补全一个历史人物的名字。一旦成功输入名字，用户可以点击一个按钮，在流行的在线百科全书 Wikipedia 上查看该历史人物的传记。应用程序中的 Wikipedia 部分只是成功使用 Ajax 输入历史人物名字的一个象征性奖励。
 
 ### 设计：设计一个自动补全应用程序
 
+你已经对 `Completer` 应用中客户端与服务器之间来回传递的数据有了基本了解，甚至知道用户界面主要由一个文本输入控件组成。图 6.3 展示了用户界面如何融入应用中的每个 Ajax 请求。
 
-
-
-你已经对 Completer 应用中客户端与服务器之间来回传递的数据有了基本了解，甚至知道用户界面主要由一个文本输入控件组成。图 6.3 展示了用户界面如何融入应用中的每个 Ajax 请求。
-
-### 图 6.3. 用户输入的每个字符都会触发一个 Ajax 请求，并返回一个补全字符串。
+#### 图 6.3. 用户输入的每个字符都会触发一个 Ajax 请求，并返回一个补全字符串。
 
 ![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcglmawcwl2cuahnmnmkwyzq-.jpg)
 
 该图展示了一个文本输入控件如何同时作为 Ajax 请求的源和目标。虽然这起初看起来不寻常，但当你考虑到文本输入控件扮演两个角色时，就完全合理了：它既接受用户输入，又通过猜测用户正在输入的内容来尝试向用户提供信息。这里需要注意的关键点是，图中补全文本被高亮（选中），这意味着如果用户输入另一个字符，它将覆盖补全文本。这当然会触发另一个 Ajax 请求，并带来新的响应和新的补全文本。如此循环往复，直到用户得到所需的输入。
 
-关于 Completer 应用中 Ajax 请求的数据，一个有趣的点是它非常简单。没有任何 XML 或任何数据格式。实际上，你每次只向服务器发送几个字符。为了让你明白我的意思，让我们快速看一个涉及美国历史著名人物托马斯·爱迪生的例子。你会在文本框中输入 `t` 或 `T` 来开始输入这个名字。此时文本框包含以下内容：
+关于 `Completer` 应用中 Ajax 请求的数据，一个有趣的点是它非常简单。没有任何 XML 或任何数据格式。实际上，你每次只向服务器发送几个字符。为了让你明白我的意思，让我们快速看一个涉及美国历史著名人物托马斯·爱迪生的例子。你会在文本框中输入 `t` 或 `T` 来开始输入这个名字。此时文本框包含以下内容：
 
 ```
 T
@@ -3201,7 +3336,7 @@ T
 Tecumseh
 ```
 
-特库姆塞是著名的肖尼族印第安领袖，死于 1812 年战争。Completer 应用最初建议 `Tecumseh` 这个名字，因为在可能的补全列表中，`Tecumseh` 按字母顺序排在 `Thomas Edison` 之前。你将在本章稍后看到这个列表，但现在希望你能明白列表的字母顺序如何影响补全过程。
+特库姆塞是著名的肖尼族印第安领袖，死于 1812 年战争。`Completer` 应用最初建议 `Tecumseh` 这个名字，因为在可能的补全列表中，`Tecumseh` 按字母顺序排在 `Thomas Edison` 之前。你将在本章稍后看到这个列表，但现在希望你能明白列表的字母顺序如何影响补全过程。
 
 如果你继续输入另一个字母，这次是 `h`，文本 `ecumseh` 立即被 `h` 替换，得到以下内容：
 
@@ -3214,6 +3349,8 @@ Th
 ```
 Theodore Roosevelt
 ```
+
+
 
 显然，`Theodore Roosevelt` 更接近 `Thomas Edison`，但按字母顺序仍在它之前，这就是为什么建议了这个名字。事实证明，再输入一个字符就足以最终锁定爱迪生先生：
 
@@ -3233,9 +3370,7 @@ Thomas Edison
 
 Completer 应用的客户端请求非常简单，它会在用户输入时，将用户输入的内容发送出去。这些用户输入只是原始文本字符，没有任何特殊格式。在许多情况下，输入只有几个字符，但在没有自动补全匹配且用户继续输入的情况下，可能会更多。即便如此，也只是几十个字符，而不是几百个。
 
-注意
-
-| ![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcgl0zwovlmdoc29uy3a-.jpg) | 幸运的是，发送多少字符对 Ajax 请求来说并不重要，尽管发送的数据越多，请求传输所需的时间就越长。但总体而言，你仍然是在处理相对少量的数据。 |
+> **注意：** ![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcgl0zwovlmdoc29uy3a-.jpg) 幸运的是，发送多少字符对 Ajax 请求来说并不重要，尽管发送的数据越多，请求传输所需的时间就越长。但总体而言，你仍然是在处理相对少量的数据。
 
 在继续讨论服务器响应细节之前，有必要解决一个关于 Completer 这类 Ajax 应用所提出的担忧。我指的是 Completer 能够根据用户输入的字符发出一连串请求。虽然 Completer 的服务器端脚本简单且快速，仅依赖于 PHP 代码中嵌入的数据，但数据量更大的应用可能会从数据库中获取补全文本。这意味着每次用户输入一个字符，都会访问一次数据库，这可能是一个问题。
 
@@ -3251,7 +3386,7 @@ Completer 应用中的服务器脚本的任务是，根据用户输入的文本�
 
 虽然你可能已经弄清楚了这种特定的客户端到服务器通信交换，但图 6.4 精确展示了 Ajax 请求及其后续响应如何与浏览器（客户端）和 Web 服务器相关联。
 
-### 图 6.4. Completer 应用涉及未格式化的用户输入和补全文本在客户端与服务器之间来回流动。
+### 图 6.4. Completer 应用涉及未格式化的用户输入和补全文本在客户端与服务器之间来回流动
 
 ![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcglmawcwl2cuahnmnmkwyzu-.jpg)
 
@@ -3262,10 +3397,6 @@ completer.php?input=T
 ```
 
 此时，服务器响应并尝试猜测用户正在输入 `Tecumseh`，但事实并非如此。如果用户继续输入字符 `h`，则以下 URL 作为 Ajax 补全请求：
-
-
-
-
 
 ```
 completer.php?input=Th
@@ -3283,8 +3414,8 @@ completer.php?input=Tho
 
 Completer 应用不仅数据交换简单直接，应用的结构也非常简单，只包含两个文件：
 
-*   HTML 网页（`completer.html`）
-*   PHP 服务器脚本（`completer.php`）
+- HTML 网页（`completer.html`）
+- PHP 服务器脚本（`completer.php`）
 
 这两个文件直接对应应用的客户端（`completer.html`）和服务器端（`completer.php`）；没有需要处理的数据源或第三方 Web 服务。Completer 网页发出 Ajax 请求，由 PHP 服务器脚本直接处理，然后返回数据，由页面中的 JavaScript 代码处理。
 
@@ -3294,50 +3425,71 @@ Completer 应用不仅数据交换简单直接，应用的结构也非常简单�
 
 Completer 应用的 HTML 网页（`completer.html`）拥有极其简单的用户界面，仅由一个文本输入控件和一个用于查找输入的历史名称的按钮组成。图 6.5 显示了该页面在 Web 浏览器中打开，等待用户输入的状态。
 
-##### 图 6.5. Completer 网页以一个空的文本输入框开始，等待用户输入历史名称。
+##### 图 6.5. Completer 网页以一个空的文本输入框开始，等待用户输入历史名称
 
 [[查看完整尺寸图片]](mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wlmdwcglqzmlhmc9nx2hzddzsmdzj.jpg)![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcglmawowl2cuahnnnnawyzy-.jpg)
 
 这个用户界面主要通过 HTML 代码的 body 部分建立，如下所示：
 
-代码视图：
-
-```
+```html
 <body onload="document.getElementById('name').value = '';
+
   document.getElementById('name').focus()">
+
   <div id="ajaxState" style="display:none"></div>
+
   <br />
+
   <div>
+
     Enter a historical name:
+
     <input id="name" type="text" size="32"
+
       onkeyup="getCompletion(this, event)" />
+
     <input id="learnButton" type="button" value="Learn More..." onclick="showBiography()" />
+
   </div>
-</body> 
+
+</body>
 ```
 
 这段代码揭示了页面由两个输入控件组成——一个文本框和一个按钮。注意，文本框在 body 的 `onload` 事件处理器中被清空，并且焦点也被设置到它上面。对于任何初始操作用户输入文本的网页来说，后一个操作是个好主意。Google 就是这种策略的一个好例子——焦点总是设置在搜索文本框上。
 
 另外注意，文本输入控件的 `onkeyup` 事件处理器被设置为调用 `getCompletion()` 函数。这个函数负责发起一个 Ajax 请求，从 Web 服务器获取补全建议。以下是它的代码：
 
-```
+```javascript
 function getCompletion(inputControl, evt) {
+
   evt = evt ? evt : (event ? event : null);
+
   if (evt) {
+
     // Ignore keys that don't factor in to the text entry
+
     var key = evt.charCode ? evt.charCode : evt.keyCode;
+
     if (key < 32 || (key >= 33 && key <= 46) ||
+
      (key >= 112 && key <= 123))
+
       return;
 
     // Store away the current input
+
     currentInput = inputControl.value;
 
     // Send the Ajax request to load the completion
+
     ajaxSendRequest("GET", "completer.php?input=" +
+
       encodeURIComponent(inputControl.value),
+
       handleCompletionRequest);
+
   }
+
 }
 ```
 
@@ -3347,44 +3499,65 @@ function getCompletion(inputControl, evt) {
 
 如果用户输入确实有效，它会被存储在一个名为 `currentInput` 的全局变量中。然后根据文本框中的文本组装 Ajax 请求的服务器 URL，并将请求发送到服务器。注意，当 Ajax 请求返回响应时，`handleCompletionRequest()` 函数负责处理回调。以下是该函数的代码：
 
-代码视图：
-
-```
+```javascript
 function handleCompletionRequest() {
+
   if (request.readyState == 4 && request.status == 200) {
+
     // Grab the response text and kill any trailing whitespace
+
     var completion = request.responseText.replace(/\s*$/g, "");
 
     // Only issue an Ajax request if the input control still
+
     // has the current input
+
     var inputControl = document.getElementById("name");
+
     if (completion && (inputControl.value == currentInput)) {
+
       if (inputControl.setSelectionRange) {
+
         // Add the completion to the input control for non-IE
+
         // browsers
+
         var inputLen = inputControl.value.length;
+
         inputControl.value += completion;
+
         inputControl.setSelectionRange(inputLen,
+
           inputControl.value.length);
+
       }
+
       else if (inputControl.createTextRange) {
+
         // Add the completion to the input control for IE
+
         var sel = inputControl.createTextRange();
+
         sel.text += completion;
+
         sel.moveStart("character", -completion.length);
+
         sel.moveEnd("character", 0);
+
         sel.select();
+
       }
+
     }
+
   }
+
   ajaxUpdateState();
-} 
+
+}
 ```
 
 `handleCompletionRequest()` 函数接收每个 Ajax 服务器响应，并负责将补全文本小心地插入到文本框中并选中它。虽然这个任务听起来很简单，但浏览器的不兼容性再次导致了两个分支的代码：一个用于兼容 IE，另一个用于兼容其他浏览器。不幸的是，在 Web 发展的这个阶段，我们仍然在处理像在文本框中选中文本这样简单的事情时采用完全不同的方法。但抱怨并不能让这个应用更快地运行起来！
-
-
-
 
 回顾 `handleCompletionRequest()` 函数开头附近，你会看到一行代码，它处理服务器响应文本并将其存储在 `completion` 变量中。这种处理是必要的，因为响应文本在从服务器发送到客户端的过程中会附带一些额外字符。这些字符出现在文本末尾，很可能是 PHP 脚本中 `echo` 命令的结果，尽管它本不应在文本末尾追加换行符、新行或其他任何字符。无论如何，在继续处理之前，标准文本 `replace()` 方法被用来修剪响应文本末尾的多余字符。
 
@@ -3392,17 +3565,22 @@ function handleCompletionRequest() {
 
 尽管两个特定于浏览器的代码分支在细节上有所不同，但它们都执行相同的操作：
 
-*   将补全内容追加到文本框中用户输入的末尾。
-*   选中文本框中的补全内容，这样如果用户输入另一个字符，补全内容将自动被擦除。
+- 将补全内容追加到文本框中用户输入的末尾。
+- 选中文本框中的补全内容，这样如果用户输入另一个字符，补全内容将自动被擦除。
 
 这就完成了自动补全功能的客户端部分，但这还不是 Completer 网页的终点。如果你回顾页面主体的 HTML 代码，会看到一个名为 `showBiography()` 的函数，它在用户点击“了解更多”按钮时被调用。以下是该函数的代码：
 
-```
+```javascript
 function showBiography() {
+
   // 根据输入的历史人物姓名打开维基百科链接
+
   if (document.getElementById("name").value != "")
+
     window.location = "http://en.wikipedia.org/wiki/" +
+
       encodeURIComponent(document.getElementById("name").value);
+
 }
 ```
 
@@ -3416,42 +3594,75 @@ Completer 应用程序的服务器端涉及一个名为 `completer.php` 的 PHP 
 
 以下是 `completer.php` 服务器脚本的简化代码：
 
-代码视图：
-
-```
+```php
 <?php
+
 $people = array(
+
   "Abraham Lincoln",
+
   "Adam Smith",
+
   "Adolf Hitler",
+
   "Albert Einstein",
+
   "Alexander Fleming",
+
   "Alexander Graham Bell",
+
   "Alexander Hamilton",
+
   "Alexander the Great",
+
   "Alfred T. Mahan",
+
 ...
+
   "William Harvey",
+```
+
+
+
+```php
   "William Shakespeare",
+
   "William T.G. Morton",
+
   "William the Conqueror",
+
   "Willis Haviland Carrier",
+
   "Woodrow Wilson",
+
   "Ziryab"
+
 );
+
 $input = strtolower($_GET['input']);
+
 $inputLen = strlen($input);
 
 if ($inputLen > 0) {
+
   for ($i = 0; $i < count($people); $i++) {
+
     if (strtolower(substr($people[$i], 0, $inputLen)) ==
+
       $input) {
+
       echo substr($people[$i], $inputLen,
+
         strlen($people[$i]) - $inputLen);
+
       break;
+
     }
+
   }
+
 }
+
 ?>
 ```
 
@@ -3469,13 +3680,17 @@ Completer 应用程序的测试非常简单，因为你只需开始输入，然�
 
 ##### 图 6.6. 在 Completer 应用程序的文本框中输入单个字符会尝试进行补全。
 
-[[查看完整尺寸图片]](mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wlmdwcglqzmlhmc9nx2hzddzsmddj.jpg)![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcglmawowl2cuahnnnnawyzc-.jpg)
+[[查看完整尺寸图片]](mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wlmdwcglqzmlhmc9nx2hzddzsmddj.jpg)
+
+![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcglmawowl2cuahnnnnawyzc-.jpg)
 
 第一个找到的以 `C` 开头的历史人物是查理曼大帝，这在图中显而易见。由于补全文本是自动选中的，如果该姓名不是正确的匹配，你可以继续输入。继续输入字符 `o`，结果会得到不同的姓名，正如你所料（参见图 6.7）。
 
 ##### 图 6.7. 随着你继续输入字符，应用程序会持续寻找最佳的补全匹配。
 
-[[查看完整尺寸图片]](mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wlmdwcglqzmlhmc9nx2hzddzsmdhj.jpg)![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcglmawowl2cuahnnnnawyzg-.jpg)
+[[查看完整尺寸图片]](mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wlmdwcglqzmlhmc9nx2hzddzsmddj.jpg)
+
+![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcglmawowl2cuahnnnnawyzg-.jpg)
 
 啊，孔子说这就是我想要的姓名，所以我将停止输入，点击“了解更多”按钮，进一步了解这位中国哲学家。
 
@@ -3483,19 +3698,17 @@ Completer 应用程序的测试非常简单，因为你只需开始输入，然�
 
 ### 为 Completer 进行极致的 Ajax 改造
 
-
-
-
-
 Completer 应用程序是本书中适用范围最广的示例之一，因为它几乎可以应用于任何文本输入，只要能够以某种方式预测用户可能输入的内容。当您考虑在自己的页面中使用自动补全功能时，关键在于找出那些足够可预测、可以用单词或短语列表建模的文本输入，但也不能过于可预测，以至于选择列表更适合您的需求。
 
 举一个自动补全可能大材小用的例子：帮助用户输入美国的一个州。由于州的数量有限且相对较少，让用户从州列表中选择可能更有意义。另一方面，也许您想用自动补全来帮助用户输入宠物的名字。虽然这最终可能是自动补全的一个可行应用，但可能的宠物名字列表过于庞大且开放，可能不值得尝试提供帮助。关键在于，自动补全无疑是一个极其有用的用户输入工具，但在假设使用自动补全合理之前，您应该仔细考虑具体的输入类型。
 
 发完这点小牢骚后，我想说，对于 Completer 应用程序，您首先应该尝试的是完全更换补全列表。想一些其他文本输入场景，能够酷炫地帮助用户。然后更改 `completer.php` 服务器脚本中的数据集；只需确保列表保持字母顺序。应用程序将立即开始尝试使用您的新补全列表来自动补全文本输入。
 
-提示
-
-| ![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcglwlnavamhzaxrnyw--.jpg) | 如果您正在为 Completer 应用程序构建一个单词和/或短语列表，而它们尚未按字母顺序排列，我有一个小技巧可以节省您的时间和精力。您需要访问 Microsoft Word，但考虑到如今 Microsoft Office 的普及程度，这应该不会太难。在 Word 中创建一个新文档，然后将您的补全列表复制粘贴进去。选中所有补全项，然后点击 Word 菜单中的“表格”。接着从“表格”菜单中选择“排序”。会弹出一个对话框。确保选中“升序”单选按钮，然后点击“确定”。瞧！您的列表现在已按字母顺序排列。 |
+> **提示**
+>
+> ![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcglwlnavamhzaxrnyw--.jpg)
+>
+> 如果您正在为 Completer 应用程序构建一个单词和/或短语列表，而它们尚未按字母顺序排列，我有一个小技巧可以节省您的时间和精力。您需要访问 Microsoft Word，但考虑到如今 Microsoft Office 的普及程度，这应该不太难。在 Word 中创建一个新文档，然后将您的补全列表复制粘贴进去。选中所有补全项，然后点击 Word 菜单中的“表格”。接着从“表格”菜单中选择“排序”。会弹出一个对话框。确保选中“升序”单选按钮，然后点击“确定”。瞧！您的列表现在已按字母顺序排列。
 
 将 Completer 应用程序应用到您自己网站的另一个实用可能性是，为您的网站添加一个上下文相关的搜索框。例如，假设您运营一个专注于极限运动的网站。您可以提供一个搜索框，使用自动补全来建议极限运动术语和人物。您已经知道如何通过自动补全帮助用户在文本控件中输入文本，所以您唯一缺少的是将输入文本路由到 Google 并执行搜索的技巧。
 
@@ -3505,8 +3718,9 @@ Completer 应用程序是本书中适用范围最广的示例之一，因为它�
 
 您剩下的任务是将页面重定向到 Google URL。假设您的应用程序中的文本输入控件仍然具有 ID `name`，就像 Completer 应用程序中一样，以下代码获取输入文本，将其空格转换为加号（`+`），构建一个 Google 搜索 URL，并将浏览器重定向到该 URL：
 
-```
-var searchText = document.getElementById("name").value.replace(  " ", "+");
+```javascript
+var searchText = document.getElementById("name").value.replace(" ", "+");
+
 window.location = "http://www.google.com/search?q=" + searchText;
 ```
 
@@ -3518,9 +3732,11 @@ window.location = "http://www.google.com/search?q=" + searchText;
 
 ## 第 7 章：通过实时验证创建响应式 GUI
 
-Ajax 清洁剂
+### Ajax 清洁剂
 
-| ![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcgl0zwovlmdoc29uy3a-.jpg) | 您知道它迟早会来，那还等什么呢？也许 Ajax 这个词最广为人知的用法是 1947 年由高露洁-棕榄推出的万能清洁剂。这种清洁剂以强大的希腊英雄 Ajax 命名，从而产生了 Ajax 产品的口号：“比污垢更强！” |
+> ![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcgl0zwovlmdoc29uy3a-.jpg)
+>
+> 您知道它迟早会来，那还等什么呢？也许 Ajax 这个词最广为人知的用法是 1947 年由高露洁-棕榄推出的万能清洁剂。这种清洁剂以强大的希腊英雄 Ajax 命名，从而产生了 Ajax 产品的口号：“比污垢更强！”
 
 Ajax 真正杀手级应用之一是实时用户输入验证，这意味着用户输入的数据在输入时就被检查有效性。这可以显著提高用户界面的效率，因为错误在发生时就被捕获，从而无需提交整个表单来发现是否存在问题。此外，当应用程序在数据输入方面给予用户即时反馈时，会让人感觉更智能。事实证明，许多实时验证技巧在技术上并不需要 Ajax，但在某些需要从服务器加载数据作为验证一部分的情况下，Ajax 仍然发挥作用。
 
@@ -3528,20 +3744,16 @@ Ajax 真正杀手级应用之一是实时用户输入验证，这意味着用户
 
 本章的 Validator 应用程序使用了以下文件，它们位于本书配套的 live Linux CD-ROM 的 `chap07` 示例代码文件夹中：
 
-*   `validator.html` — 主网页
-*   `ziplookup.php` — 根据邮政编码查找城市/州的服务器脚本
-*   `ajaxkit.js` — Ajax 工具包的核心 Ajax 函数
-*   `domkit.js` — Ajax 工具包的 DOM 相关函数
-*   `validatekit.js` — Ajax 工具包的验证函数
-*   `wait.gif` — 在 Ajax 请求期间显示的动画“加载”图标
+- `validator.html` — 主网页
+- `ziplookup.php` — 根据邮政编码查找城市/州的服务器脚本
+- `ajaxkit.js` — Ajax 工具包的核心 Ajax 函数
+- `domkit.js` — Ajax 工具包的 DOM 相关函数
+- `validatekit.js` — Ajax 工具包的验证函数
+- `wait.gif` — 在 Ajax 请求期间显示的动画“加载”图标
 
 ### 挑战：实时检查用户输入
 
 本章提出的挑战相当广泛——通过立即消除输入错误来改善从用户处获取信息的过程。如果您使用过像 Microsoft Word 这样的文字处理器（它带有实时拼写检查器），那么您就会理解这个功能有多方便。在很多方面，上一章的自动补全应用程序可以被认为与实时验证器大致相似。不过，自动补全更多是关于提高效率，而不是纠正错误，尽管这两项任务常常相辅相成。
-
-
-
-
 
 要查看实际验证器的运行效果，可以试试谷歌的 Gmail 在线邮件服务，网址是 [`mail.google.com/`](http://mail.google.com/)。Gmail 的邀请功能允许你向朋友发送加入 Gmail 的邀请。邀请请求需要填写你朋友的电子邮件地址，这正是你需要在文本框中输入的内容。如果电子邮件地址格式不正确，Gmail 会在电子邮件地址文本框下方显示一条“无效地址”的消息。
 
@@ -3553,30 +3765,33 @@ Gmail 的验证并不像某些 Ajax 应用那样激进，这一点从你必须�
 
 以下是验证器应用计划验证的数据类型：
 
-*   整数
-*   数字
-*   电话号码
-*   电子邮件地址
-*   日期
-*   邮政编码
+- 整数
+- 数字
+- 电话号码
+- 电子邮件地址
+- 日期
+- 邮政编码
 
 验证的关键不仅仅是弹出一个烦人的警告框来告知用户输入有误。事实上，警告框是通知用户输入问题的最糟糕方式。更好的做法是在表单中悄悄提供帮助字段，这些字段在验证未出现问题时不可见，一旦出现验证问题，就显示帮助文本。例如，当用户输入无效日期时，你可以显示帮助文本：
 
+```text
+请输入日期（例如，01/14/1975）。
 ```
-"请输入日期（例如，01/14/1975）。"
-```
+
+
+
 
 当数据错误时帮助文本出现，一旦数据修正，帮助文本就会神奇地消失。
 
 当然，“神奇”之处在于支持帮助文本功能的验证代码。这段代码是本书附带的 CD-ROM 上 Ajax 工具包中 `validatekit.js` 文件的一部分，也是验证器示例应用程序源代码文件的一部分。正如在第 2 章“深入 Ajax 应用”中最初提到的，`validatekit.js` 文件提供了几个 JavaScript 函数，可用于验证不同类型的数据。更具体地说，`validatekit.js` 文件公开了以下可用于验证用户输入数据的 JavaScript 函数：
 
-*   `validateNonEmpty()`——数据是否为空？
-*   `validateInteger()`——数据是否为有效的整数？
-*   `validateNumber()`——数据是否为有效的数字？
-*   `validateZipCode()`——数据是否为有效的邮政编码？
-*   `validatePhone()`——数据是否为有效的电话号码？
-*   `validateEmail()`——数据是否为有效的电子邮件地址？
-*   `validateDate()`——数据是否为有效的日期？
+- `validateNonEmpty()`——数据是否为空？
+- `validateInteger()`——数据是否为有效的整数？
+- `validateNumber()`——数据是否为有效的数字？
+- `validateZipCode()`——数据是否为有效的邮政编码？
+- `validatePhone()`——数据是否为有效的电话号码？
+- `validateEmail()`——数据是否为有效的电子邮件地址？
+- `validateDate()`——数据是否为有效的日期？
 
 如你所见，这些函数恰好与验证器应用计划验证的数据类型完美匹配。这意味着挑战变得简单多了，因为你现在有了标准的 JavaScript 函数来验证每种数据类型。挑战主要变成了如何将这些函数连接到验证器页面上的 HTML 元素，以便文本框中的数据能够正确传递给这些 JavaScript 函数。此外，你还需要为每个文本框创建用于显示帮助文本的 HTML 元素，以便验证函数能够显示帮助文本。
 
@@ -3588,7 +3803,7 @@ Gmail 的验证并不像某些 Ajax 应用那样激进，这一点从你必须�
 
 ## 第 7 章 通过实时验证创建响应式图形用户界面
 
-Ajax 清洁剂
+### Ajax 清洁剂
 
 | ![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcgl0zwovlmdoc29uy3a-.jpg) | 你早就知道这一天迟早会来，那还等什么呢？也许 Ajax 这个词最广为人知的用法是 1947 年由高露洁-棕榄公司推出的万能清洁剂。这种清洁剂以强大的希腊英雄 Ajax 命名，从而产生了 Ajax 产品的口号：“比泥土更强！” |
 
@@ -3598,17 +3813,12 @@ Ajax 真正杀手级应用之一是实时用户输入验证，这意味着用户
 
 本章验证器应用使用的以下文件位于本书附带的 Linux 实时 CD-ROM 的 `chap07` 示例代码文件夹中：
 
-*   `validator.html`——主网页
-
-
-
-
-
-*   `ziplookup.php` — 基于邮政编码查询城市/州的服务器脚本
-*   `ajaxkit.js` — Ajax 工具包的核心 Ajax 函数
-*   `domkit.js` — Ajax 工具包的 DOM 相关函数
-*   `validatekit.js` — Ajax 工具包的验证函数
-*   `wait.gif` — Ajax 请求期间显示的动画“加载”图标
+- `validator.html`——主网页
+- `ziplookup.php`——基于邮政编码查询城市/州的服务器脚本
+- `ajaxkit.js`——Ajax 工具包的核心 Ajax 函数
+- `domkit.js`——Ajax 工具包的 DOM 相关函数
+- `validatekit.js`——Ajax 工具包的验证函数
+- `wait.gif`——Ajax 请求期间显示的动画“加载”图标
 
 ### 挑战：实时检查用户输入
 
@@ -3624,30 +3834,30 @@ Gmail 的验证并不像某些 Ajax 应用那样激进，这一点从你必须�
 
 以下是验证器应用计划验证的数据类型：
 
-*   整数
-*   数字
-*   电话号码
-*   电子邮件地址
-*   日期
-*   邮政编码
+- 整数
+- 数字
+- 电话号码
+- 电子邮件地址
+- 日期
+- 邮政编码
 
 验证的关键不仅仅是弹出一个烦人的警告框来告知用户其输入有误。事实上，警告框是通知用户输入问题的最糟糕方式。更好的做法是在表单上悄悄提供帮助字段，这些字段在未出现验证问题时不可见，一旦出现验证问题，则显示帮助文本。例如，当用户输入无效日期时，你可以显示帮助文本：
 
-```
-"请输入一个日期（例如，01/14/1975）。"
+```text
+请输入一个日期（例如，01/14/1975）。
 ```
 
 当数据错误时帮助文本出现，一旦数据被修正，帮助文本就会神奇地消失。
 
 当然，这种“神奇”之处在于支持帮助文本功能的验证代码。这段代码是本书附带光盘中 Ajax 工具包的一部分，包含在 `validatekit.js` 文件中，同时也是验证器示例应用程序源代码文件的一部分。正如在第 2 章“深入 Ajax 应用”中最初提到的，`validatekit.js` 文件提供了几个可用于验证不同类型数据的 JavaScript 函数。更具体地说，`validatekit.js` 文件暴露了以下可用于验证用户输入数据的 JavaScript 函数：
 
-*   `validateNonEmpty()` — 数据是否为空？
-*   `validateInteger()` — 数据是否为有效的整数？
-*   `validateNumber()` — 数据是否为有效的数字？
-*   `validateZipCode()` — 数据是否为有效的邮政编码？
-*   `validatePhone()` — 数据是否为有效的电话号码？
-*   `validateEmail()` — 数据是否为有效的电子邮件地址？
-*   `validateDate()` — 数据是否为有效的日期？
+- `validateNonEmpty()`——数据是否为空？
+- `validateInteger()`——数据是否为有效的整数？
+- `validateNumber()`——数据是否为有效的数字？
+- `validateZipCode()`——数据是否为有效的邮政编码？
+- `validatePhone()`——数据是否为有效的电话号码？
+- `validateEmail()`——数据是否为有效的电子邮件地址？
+- `validateDate()`——数据是否为有效的日期？
 
 如你所见，这些函数恰好与验证器应用计划验证的数据类型完美匹配。这意味着挑战变得容易多了，因为你现在有了可用于验证每种数据类型的标准 JavaScript 函数。挑战主要变成了如何将这些函数连接到验证器页面上的 HTML 元素，以便文本框中的数据能够正确路由到这些 JavaScript 函数。此外，你还需要为每个文本框创建用于显示帮助文本的 HTML 元素，以便验证函数能够显示帮助文本。
 
@@ -3663,26 +3873,23 @@ Gmail 的验证并不像某些 Ajax 应用那样激进，这一点从你必须�
 
 图 7.1 展示了该应用用户界面的粗略示意图，显示了帮助字段如何排列在每个输入文本框旁边。
 
-##### 图 7.1\. 验证器应用的用户界面由多个文本框及其关联的帮助文本字段组成。
+##### 图 7.1\. 验证器应用的用户界面由多个文本框及其关联的帮助文本字段组成
 
 ![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcglmawcwl2cuahnmn2kwyzi-.jpg)
-
-
-
 
 你可以在图中看到每个文本框如何与特定类型的数据相关联，例如电话号码、电子邮件地址等。每个文本框旁边的帮助字段用于传达关于该文本框中数据有效性的帮助信息。唯一的例外是邮政编码的帮助字段，它同时承担了通过 Ajax 请求检索到的城市和州的显示字段的双重职责。
 
 说到邮政编码字段的 Ajax 请求，显示一个动画“加载”图像会非常方便，让用户知道应用程序正在根据邮政编码查找城市和州。这个图像 `wait.gif` 显示在图 7.2 中。
 
-##### 图 7.2\. 验证器应用程序使用了一个动画“加载”图像（`wait.gif`）来让用户知道 Ajax 请求正在处理中。
+##### 图 7.2\. 验证器应用程序使用了一个动画“加载”图像（`wait.gif`）来让用户知道 Ajax 请求正在处理中
 
 ![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcglhy2owl2suahnnn3awyzm-.jpg)
 
 “加载”图像显示在同一个字段中，该字段也包含邮政编码的帮助文本，我认为这实际上让该字段承担了三重职责。以下三条信息能够在输入邮政编码的过程中不同时间出现在邮政编码的帮助字段中：
 
-*   当邮政编码无效时，显示帮助文本。
-*   当执行 Ajax 请求时，显示“加载”图像。
-*   在成功的 Ajax 请求后，显示动态加载的城市和州。
+- 当邮政编码无效时，显示帮助文本。
+- 当执行 Ajax 请求时，显示“加载”图像。
+- 在成功的 Ajax 请求后，显示动态加载的城市和州。
 
 这看起来似乎有很多事情与邮政编码及其辅助字段相关，但验证器应用程序处理起来并不复杂。请记住，该应用程序实际上只处理一个 Ajax 请求，这也有助于简化事情。现在你已经准备好进一步了解邮政编码的 Ajax 请求了。
 
@@ -3692,9 +3899,9 @@ Gmail 的验证并不像某些 Ajax 应用那样激进，这一点从你必须�
 
 一旦用户离开了邮政编码文本框，你就可以自由地将输入作为 Ajax 请求的一部分发送。这个用户输入只是原始文本字符，没有任何特殊格式。已经执行的整数验证确实确保了邮政编码文本由五个整数组成，但该文本仍然被认为是未格式化的，因为它没有以 XML 或任何其他标准数据格式进行编码。
 
-注意
-
-| ![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcgl0zwovlmdoc29uy3a-.jpg) | 我意识到还有一种更长的邮政编码格式 `#####-####`，它可能出现在这里。为了简单起见，我选择坚持使用基本的五位邮政编码，其形式为 `#####`。 |
+> **注意**
+>
+> 我意识到还有一种更长的邮政编码格式 `#####-####`，它可能出现在这里。为了简单起见，我选择坚持使用基本的五位邮政编码，其形式为 `#####`。
 
 这就是你需要了解的关于从客户端发送到服务器进行邮政编码查找的最小数据量。现在让我们讨论服务器返回的内容。
 
@@ -3708,13 +3915,13 @@ Gmail 的验证并不像某些 Ajax 应用那样激进，这一点从你必须�
 
 验证器应用程序中的 Ajax 请求用于将用户输入的邮政编码传送到服务器，然后接收城市和州作为返回。图 7.3 有助于直观地说明这种数据传输。
 
-##### 图 7.3\. 验证器应用程序涉及未格式化的邮政编码以及格式化的城市和州数据在客户端和服务器之间来回流动。
+##### 图 7.3\. 验证器应用程序涉及未格式化的邮政编码以及格式化的城市和州数据在客户端和服务器之间来回流动
 
 ![](img/mtizys9yzdjyzznhzzgwmdc1cy9lown0mg04as9wcglmawcwl2cuahnmn2kwyzq-.jpg)
 
 作为 Ajax 请求参数发送到服务器的数据是用户输入的邮政编码。邮政编码的格式已经过验证，但尚未检查它是否确实与城市和州匹配。邮政编码请求由 `ziplookup.php` 服务器脚本处理。以下是一个 Ajax 请求 URL 的示例，它将邮政编码 85250 作为唯一参数发送到服务器脚本：
 
-```
+```text
 ziplookup.php?zipCode=85250
 ```
 
@@ -3722,7 +3929,7 @@ ziplookup.php?zipCode=85250
 
 城市和州数据以紧凑的 XML 文档形式返回，该文档实际上包含邮政编码的城市、州、区号和时区（假设邮政编码成功匹配）。以下是这样一个 XML 文档的实际示例：
 
-```
+```xml
 <NewDataSet>
   <Table>
     <CITY>Scottsdale</CITY>
@@ -3734,14 +3941,17 @@ ziplookup.php?zipCode=85250
 </NewDataSet>
 ```
 
+
+
+
 即使你不是 XML 专家，这段代码也不难理解。你真正感兴趣的只有 `<CITY>` 和 `<STATE>` 标签，因为它们包含邮政编码对应的城市和州。剩下的任务就是在客户端从这些数据中提取城市和州。
 
 ### 整合验证器应用程序
 
 除了标准工具包 JavaScript 文件（包括 `validatekit.js`）之外，验证器应用程序仅包含两个组件：
 
-*   HTML 网页（`validator.html`）
-*   PHP 服务器脚本（`ziplookup.php`）
+- HTML 网页（`validator.html`）
+- PHP 服务器脚本（`ziplookup.php`）
 
 当然，应用程序的另一个主要组成部分是第三方位置 Web 服务，它负责根据邮政编码提供城市/州数据。尽管该服务是应用程序的重要组成部分，但它不需要一个独立的组件，除了 HTML 网页中发起 Ajax 请求的代码和 PHP 服务器脚本中处理将响应中继回页面的代码。这种安排是必要的，因为 Ajax 请求不允许直接访问位于其他域上的资源。
 
@@ -3749,97 +3959,150 @@ ziplookup.php?zipCode=85250
 
 #### 验证器网页
 
-
-
-
 Validator 应用程序的 HTML 网页 `validator.html` 由一系列文本框输入字段组成，每个字段旁边都有一个非输入文本字段，用作帮助消息的显示区域。文本框创建为 `input` 元素，而帮助消息字段创建为 `span` 元素。图 7.4 展示了在 Web 浏览器中打开的 Validator 应用程序，其中空白文本字段等待用户输入，所有帮助消息都指示字段缺少数据。
 
 ##### 图 7.4. Validator 网页由一系列文本框输入控件及其后的文本显示区域组成。
 
 [[查看完整尺寸图像]](ys8wohawzzmxcjm1mjjlzgftdc9zyzc4cjlnmgkvywmuamdwa3a3czvhadbsav9jmhqv.jpg)![](img/ys8wohawzzmxcjm1mjjlzgftdc9zyzc4cjlnmgkvywnrcddzmghqnxauawnnmc8-.jpg)
 
-注意
-
-| ![](img/ys8wohawzzmxcjm1mjjlzgftdc9zyzc4cjlnmgkvdgmucg9zagpwawdll24-.jpg) | 应用程序最初不会像图中那样自动显示帮助消息。相反，“请输入一个值。”这条帮助消息直到你实际离开某个输入控件且未输入任何内容时才会出现。 |
+> **注意**
+>
+> ![](img/ys8wohawzzmxcjm1mjjlzgftdc9zyzc4cjlnmgkvdgmucg9zagpwawdll24-.jpg)
+>
+> 应用程序最初不会像图中那样自动显示帮助消息。相反，“请输入一个值。”这条帮助消息直到你实际离开某个输入控件且未输入任何内容时才会出现。
 
 了解了图中所示的 Validator 应用程序布局后，请查看网页正文的 HTML 代码：
 
 代码视图：
 
-```
+```html
 <body onload="document.getElementById('something').focus()">
+
   <div id="ajaxState" style="display:none; font-style:italic">
+
   </div>
+
   <br />
+
   <div>
+
     Enter something:
+
     <input id="something" type="text" size="32" onblur=
+
       "validateNonEmpty(this,
+
 document.getElementById('something_help'))" />
+
     <span id="something_help" class="help"></span>
+
   </div>
+
   <div>
+
     Enter an integer:
+
     <input id="integer" type="text" size="32" onblur=
+
       "validateInteger(this,
+
       document.getElementById('integer_help'))" />
+
     <span id="integer_help" class="help"></span>
+
   </div>
+
   <div>
+
     Enter a number:
+
     <input id="number" type="text" size="32" onblur=
+
       "validateNumber(this,
+
       document.getElementById('number_help'))" />
+
     <span id="number_help" class="help"></span>
+
   </div>
+
   <div>
+
     Enter a phone number:
+
     <input id="phone" type="text" size="32" onblur=
+
       "validatePhone(this,
+
       document.getElementById('phone_help'))" />
+
     <span id="phone_help" class="help"></span>
+
   </div>
+
   <div>
+
     Enter an email address:
+
     <input id="email" type="text" size="32" onblur=
+
       "validateEmail(this,
+
       document.getElementById('email_help'))" />
+
     <span id="email_help" class="help"></span>
+
   </div>
+
   <div>
+
     Enter a date:
+
     <input id="date" type="text" size="32" onblur=
+
       "validateDate(this,
+
       document.getElementById('date_help'))" />
+
     <span id="date_help" class="help"></span>
+
   </div>
+
   <div>
+
     Enter a ZIP code:
+
     <input id="zipcode" type="text" size="16"
+
       onblur="if (validateZipCode(this,
+
         document.getElementById('zipcode_help')))
+
         getCityState(this.value);" />
+
     <span id="zipcode_help" class="help"></span>
+
   </div>
-</body> 
+
+</body>
 ```
 
 通过 `onload` 事件处理程序将焦点设置到页面上的第一个文本框后，页面正文继续创建每个文本框 `input` 及其关联的帮助消息 `span` 对。这些代码中除了 `onblur` 事件处理程序外，没有特别不寻常的地方，该处理程序在输入焦点离开输入控件时被调用。因此，当用户通过 Tab 键离开文本框或单击页面上的其他位置时，文本框会收到一个 `onblur` 事件通知。此时，你可以调用一个函数来验证文本框中的输入值。
 
 Validator 应用程序中负责验证的函数都是 `validatekit.js` Ajax 工具包文件的一部分，该文件必须通过以下代码行导入到网页中（放置在页面的 head 部分）：
 
-```
+```html
 <script type="text/javascript" src="validatekit.js"> </script>
 ```
 
 该文件提供的每个函数都接受相同的两个函数参数：
 
-*   包含要验证值的输入控件
-*   用于显示帮助文本的帮助控件
+- 包含要验证值的输入控件
+- 用于显示帮助文本的帮助控件
 
 要了解这些参数如何传递到验证函数中，请查看调用整数验证函数的代码：
 
-```
+```javascript
 validateInteger(this, document.getElementById('integer_help'))
 ```
 
@@ -3847,10 +4110,13 @@ validateInteger(this, document.getElementById('integer_help'))
 
 如果你密切关注页面上的帮助控件，可能会注意到每个 `span` 元素都应用了一个名为 `help` 的 CSS 样式类。这个样式类只是将字体颜色改为红色（`#FF0000`），并将字体样式改为 `italic`，这使得帮助消息在页面上更加突出。以下是 Validator 网页内部样式表的代码，其中包含了 `span.help` 样式类：
 
-```
+```css
 <style type="text/css">
+
   div { padding-bottom:5px; }
+
   span.help { color:#AA0000; font-style:italic; }
+
 </style>
 ```
 
@@ -3858,24 +4124,33 @@ validateInteger(this, document.getElementById('integer_help'))
 
 尽管 Validator 的内部样式表有助于让页面看起来更好一些，但在 Ajax 方面并没有太大帮助。启动 Validator 应用程序 Ajax 请求的代码包含在邮政编码文本框的 `onblur` 事件处理程序中。虽然这段代码就在你刚刚看到的列表中，但如果将其从 `onblur` 属性中提取出来，会更容易理解：
 
-```
+```javascript
 if (validateZipCode(this,
+
   document.getElementById('zipcode_help')))
+
   getCityState(this.value);
 ```
 
 这段代码首先验证邮政编码输入数据，看它是否确实是一个五位数字。这是通过调用 `validateZipCode()` 函数完成的。该函数的返回值指示数据是有效（`true`）还是无效（`false`）。如果数据有效，则调用 `getCityState()` 函数来启动 Ajax 请求。以下是该函数的代码：
 
-```
+```javascript
 function getCityState(zipCode) {
+
   // 显示等待图像
+
   document.getElementById("zipcode_help").innerHTML =
+
     "<img src='wait.gif'
+
     alt='Looking up ZIP code...' />";
 
   // 发送 Ajax 请求以加载城市/州信息
+
   ajaxSendRequest("GET", "ziplookup.php?zipCode=" + zipCode,
+
     handleCityStateRequest);
+
 }
 ```
 
@@ -3883,35 +4158,49 @@ function getCityState(zipCode) {
 
 `getCityState()` 函数中的第二个任务是实际提交 Ajax 请求，这涉及将邮政编码打包到 `ziplookup.php` 服务器脚本的 URL 中。`handleCityStateRequest()` 函数被指定为邮政编码 Ajax 请求的请求处理程序。以下是它的代码：
 
-```
+```javascript
 function handleCityStateRequest() {
+
   if (request.readyState == 4 && request.status == 200) {
+
     // 存储 XML 响应数据
+
     var xmlData = request.responseXML;
 
     // 显示城市/州结果
+
     if (xmlData != null &&
+
       getText(xmlData.getElementsByTagName("CITY")[0]) != "")
+
       document.getElementById("zipcode_help").innerHTML =
+
         "<span style='font-weight:bold'>" +
+
         getText(xmlData.getElementsByTagName("CITY")[0]) +
+
         ", " +
+
         getText(xmlData.getElementsByTagName("STATE")[0]) +
+
         "</span>";
+
     else
+
       document.getElementById("zipcode_help").innerHTML =
+
         "Could not find the ZIP code.";
+
   }
+
   ajaxUpdateState();
+
 }
 ```
 
-
-
-
 该函数在 Ajax 请求完成时被调用，其任务是从响应数据中提取城市和州信息，并在页面上显示它们，以替代“加载”图片。城市/州数据的提取借助了 `getText()` Ajax 工具函数（位于 `domkit.js` 文件中）的一点帮助。请注意，XML 元素名称 `CITY` 和 `STATE` 被用作访问城市和州数据的基础。这些数据不仅被提取出来，还通过动态构建的 HTML 代码进行了精心格式化。如果一切顺利，生成的 HTML 代码看起来像这样：
 
-```
+```html
 <span style='font-weight:bold'>Scottsdale, AZ</span>
 ```
 
@@ -3925,17 +4214,23 @@ function handleCityStateRequest() {
 
 我所说的第三方 Web 服务是 webserviceX.net，它提供多个基于 XML 的数据源。第 4 章中的选择器应用程序使用该服务获取实时股票报价，而验证器则使用它获取邮政编码的详细信息。在这种情况下，你指定一个邮政编码，服务器会响应一个包含其详细信息的 XML 文档，包括关联的城市和州。你已经看到了这个 XML 文档中的代码，但还没有看到使通过 Ajax 请求接收该代码成为可能的 PHP 脚本。以下是 `ziplookup.php` 服务器脚本的代码：
 
-```
+```php
 <?php
+
 header('Content-Type: text/xml');
 
 // 从服务器加载 XML 位置数据
+
 $xml = html_entity_decode(file_get_contents(
+
   "http://www.webservicex.net/uszip.asmx/GetInfoByZIP?USZip=" .
+
   $_REQUEST['zipCode']));
 
 // 返回 XML 位置数据
+
 echo $xml;
+
 ?>
 ```
 
@@ -3945,9 +4240,11 @@ echo $xml;
 
 虽然我确信你迫不及待地想测试这个应用程序，但让我们先花点时间单独测试一下 PHP 脚本。你在前面的章节中已经看到如何通过直接在浏览器中打开 PHP 脚本来完成此操作——以下是测试 ZIPLookUp 脚本的示例 URL：
 
-```
+```text
 http://www.yourdomain.com/ziplookup.php?zipCode=94965
 ```
+
+
 
 假设 `ziplookup.php` 文件存储在你的服务器上，请将这一行代码中的域名改为你自己的域名，然后在 Web 浏览器中输入该 URL。图 7.5 显示了 PHP 脚本生成的 XML 响应数据。
 
@@ -3963,7 +4260,7 @@ http://www.yourdomain.com/ziplookup.php?zipCode=94965
 
 ##### 图 7.6. 输入无效数据后离开输入控件，会在控件旁边显示一条帮助消息。
 
-[[查看完整尺寸图片]](ys8wohawzzmxcjm1mjjlzgftdc9zyzc4cjlnmgkvywmuamdwa3a3czdhadbsav9jmhqv.jpg)![](img/ys8wohawzzmxcjm1mjjlzgftdc9zyzc4cjlnmgkvywnrcddzmghqn3auawnnmc8-.jpg)
+[[查看完整尺寸图片]](ys8wohawzzmxcjm1mjjlzgftdc9zyzc4cjlnmgkvywmuamdwa3a3czdhadbsav9jmhqv.jpg)![](img/ys8wohawzzmxcjm1mjjlzgftdc9zyzc4cjlnmgkvywnrcddzmghqnn3auawnnmc8-.jpg)
 
 当然，文本“more data”并不构成有效的整数，这解释了图中的帮助消息。
 
@@ -3987,9 +4284,6 @@ http://www.yourdomain.com/ziplookup.php?zipCode=94965
 
 [[查看完整尺寸图片]](ys8wohawzzmxcjm1mjjlzgftdc9zyzc4cjlnmgkvywmuamdwa3a3czbhadfsav9jmhqv.jpg)![](img/ys8wohawzzmxcjm1mjjlzgftdc9zyzc4cjlnmgkvywnrcddzmwhqmhauawnnmc8-.jpg)
 
-
-
-
 成功固然好，但当地址中找不到邮政编码时会发生什么？回想一下应用程序的代码，会显示一条帮助信息来提示这一点。图 7.10 展示了当输入的邮政编码没有对应的真实城市和州时，所显示的帮助信息。
 
 ##### 图 7.10\. 一个没有对应真实城市和州的邮政编码会显示一条帮助信息，提示无法找到该邮政编码。
@@ -4002,40 +4296,42 @@ http://www.yourdomain.com/ziplookup.php?zipCode=94965
 
 ### 为验证器进行极致的 Ajax 改造
 
-验证器应用程序是本书中较为直接实用的示例之一，因为智能数据录入是一种常见需求。`validatekit.js`文件为数据录入表单中常用的数据类型提供了函数。扩展验证器示例的第一步是将验证函数应用到你自己的用户输入表单中。这很简单，只需通过以下`<script>`标签将`validatekit.js`文件导入到你的页面中：
+验证器应用程序是本书中较为直接实用的示例之一，因为智能数据录入是一种常见需求。`validatekit.js` 文件为数据录入表单中常用的数据类型提供了函数。扩展验证器示例的第一步是将验证函数应用到你自己的用户输入表单中。这很简单，只需通过以下 `<script>` 标签将 `validatekit.js` 文件导入到你的页面中：
 
-```
+```html
 <script type="text/javascript" src="validatekit.js"> </script>
 ```
 
 然后，通过调用相应的验证函数并传递 HTML 元素的 ID，来编写用于验证的 HTML 元素。例如，如果你想验证一个人的年龄以确保它是一个整数，你可以创建以下文本框和帮助字段：
 
-```
+```html
 <input id="age" type="text" size="4"
   onblur="validateInteger(this,
   document.getElementById('age_help'))" />
+
 <span id="age_help" class="help"></span>
 ```
 
 你不必为帮助文本关联样式类，但这确实能让用户界面看起来更美观。以下是一个可用于美化帮助字段的帮助样式示例：
 
-```
+```html
 <style type="text/css">
   span.help { color:#AA0000; font-style:italic; }
 </style>
 ```
 
-请记住，此样式必须放在网页的 head 部分，刚才看到的`<script>`标签也必须放在那里。这个样式只是让帮助文本变为斜体并显示为红色。你可以轻松添加更多样式或调整这些样式以获得不同的外观。
+请记住，此样式必须放在网页的 head 部分，刚才看到的 `<script>` 标签也必须放在那里。这个样式只是让帮助文本变为斜体并显示为红色。你可以轻松添加更多样式或调整这些样式以获得不同的外观。
 
 这个年龄验证器的一个问题是，它没有考虑用户输入一个不合理的年龄。例如，因为验证只检查输入是否为整数，如果用户输入年龄为 -5 或 212，则不会显示帮助文本。除非有人发现了青春之泉，否则超过 100 岁的年龄很可能被视为无效。你可以通过创建一个只允许正整数的全新验证函数来处理负年龄，但在这种特定情况下，范围验证更有意义。
 
 年龄范围验证首先检查输入值是否为整数，然后进一步检查该整数是否在可接受的范围内，例如 1 到 120。以下是你如何组合一个验证函数来执行此任务：
 
-```
+```javascript
 function validateAge(inputControl, helpControl) {
   // 首先检查输入值是否为整数
   if (!validateInteger(inputControl, helpControl))
     return false;
+
   // 然后检查输入值是否在指定范围内
   if (inputControl.value < 1 || inputControl.value > 120) {
     if (helpControl != null)
@@ -4050,23 +4346,26 @@ function validateAge(inputControl, helpControl) {
 }
 ```
 
-注意，这个函数首先调用`validateInteger()`函数来检查并确保输入确实是一个有效的整数。如果输入不是整数，就没有必要继续执行范围检查。如果输入是整数，则执行范围检查。范围检查的结果是简单地设置或清除帮助控件中的文本。帮助控件会检查是否为`null`值，以防你忘记或决定不包含帮助控件，在这种情况下你不希望发生错误。
+注意，这个函数首先调用 `validateInteger()` 函数来检查并确保输入确实是一个有效的整数。如果输入不是整数，就没有必要继续执行范围检查。如果输入是整数，则执行范围检查。范围检查的结果是简单地设置或清除帮助控件中的文本。帮助控件会检查是否为 `null` 值，以防你忘记或决定不包含帮助控件，在这种情况下你不希望发生错误。
 
-即使你的 JavaScript 经验不足或完全没有经验，你也应该能够找出`validateAge()`函数的关键部分，并根据需要进行修改。例如，你可以通过简单地更改这行代码来改变验证检查的范围：
+即使你的 JavaScript 经验不足或完全没有经验，你也应该能够找出 `validateAge()` 函数的关键部分，并根据需要进行修改。例如，你可以通过简单地更改这行代码来改变验证检查的范围：
 
-```
+```javascript
 if (inputControl.value < 1 || inputControl.value > 120) {
 ```
 
 假设你想验证一个 NFL（美国国家橄榄球联盟）四分卫评分，其范围必须在 0 到 158 之间。以下是更改范围测试代码行的方法：
 
-```
+```javascript
 if (inputControl.value < 0 || inputControl.value > 158) {
 ```
 
-注意
 
-| ![](img/ys8wohawzzmxcjm1mjjlzgftdc9zyzc4cjlnmgkvdgmucg9zagpwawdll24-.jpg) | 请不要问为什么 NFL 四分卫评分范围是 0 到 158（实际上是 158.33），而不是更合理的 0 到 10。这是一个复杂的计算，涉及传球完成率、每次尝试码数、每次尝试达阵数等变量。除非你是一个彻头彻尾的（美式）足球迷，否则只需接受这个范围并继续。否则，可以随时在 [`en.wikipedia.org/wiki/Passer_rating`](http://en.wikipedia.org/wiki/Passer_rating) 了解更多信息。 |
+
+
+## 注意
+
+| ![](img/ys8wohawzzmxcjm1mjjlzgftdc9zyzc4cjlnmgkvdgmucg9zagpwawdll24-.jpg) | 请不要问为什么 NFL 四分卫评分范围是 0 到 158（实际上是 158.33），而不是更合理的 0 到 10。这是一个复杂的计算，涉及传球完成率、每次尝试码数、每次尝试达阵数等变量。除非你是一个彻头彻尾的（美式）足球迷，否则只需接受这个范围并继续。否则，可以随时在[`en.wikipedia.org/wiki/Passer_rating`](http://en.wikipedia.org/wiki/Passer_rating)了解更多信息。 |
 
 希望你能看到，基于我提供的基础函数集来构建你自己的验证函数并不十分困难。
 
@@ -4078,12 +4377,9 @@ if (inputControl.value < 0 || inputControl.value > 158) {
 
 尽管本书展示了许多有趣的 Ajax 应用程序，其中一些具有令人印象深刻的视觉效果和实时数据源，但从纯粹实用的角度来看，很少有像验证器应用程序那样立即可用的。该应用程序的用户界面非常基础，但真正出色的是其可用性。当输入无效数据时出现的帮助文本虽然微妙，但很有说服力。而且，这些帮助信息会立即出现，无需你提交任何数据——这就是“Ajax”式的做法，即使没有显式发起 Ajax 服务器请求。当然，验证器应用程序确实涉及一个 Ajax 服务器请求来获取邮政编码对应的城市和州，但事实是，该应用程序在整个过程中都营造了一种“Ajax”的感觉，即使验证完全在客户端进行。
 
-
-
-
 ## 第 8 章 图像查看的杀手级界面
 
-Ajax 与早期管道技术
+### Ajax 与早期管道技术
 
 很难相信，但 Ajax 的起源竟可追溯到 16 世纪的管道技术。1596 年，约翰·哈灵顿爵士为英国女王伊丽莎白一世发明了一种名为“Ajax”的抽水马桶。这种 Ajax 马桶设计在英国并未流行，但在法国取得了一定成功。直到近 200 年后，现代 S 型存水弯马桶设计才出现。
 
@@ -4093,14 +4389,14 @@ Ajax 与早期管道技术
 
 本章的 Imaginator 应用程序使用了以下文件，这些文件位于本书附带的 Linux Live CD-ROM 的`chap08`示例代码文件夹中：
 
-*   `imaginator.html` — 主网页
-*   `smokiesXX.jpg` — 大烟山示例图像系列
-*   `smokiesXX_thumb.jpg` — 大烟山示例图像缩略图系列
-*   `domkit.js` — Ajax 工具包的 DOM 相关函数
-*   `modalimgkit.js` — Ajax 工具包的模态图像相关函数
-*   `modalimgkit.css` — 模态图像的样式表
-*   `modalimgkit_wait.gif` — 加载模态图像时显示的“加载中”动画图标
-*   `modalimgkit_gray.png` — 在前景查看模态图像时，背景页面上显示的透明灰色图像
+- `imaginator.html` — 主网页
+- `smokiesXX.jpg` — 大烟山示例图像系列
+- `smokiesXX_thumb.jpg` — 大烟山示例图像缩略图系列
+- `domkit.js` — Ajax 工具包的 DOM 相关函数
+- `modalimgkit.js` — Ajax 工具包的模态图像相关函数
+- `modalimgkit.css` — 模态图像的样式表
+- `modalimgkit_wait.gif` — 加载模态图像时显示的“加载中”动画图标
+- `modalimgkit_gray.png` — 在前景查看模态图像时，背景页面上显示的透明灰色图像
 
 ### 挑战：动态加载图像
 
@@ -4120,17 +4416,13 @@ Ajax 与早期管道技术
 
 `initModal()`函数的美妙之处在于，它会自动扫描页面，找到图像链接，然后修改它们，使其使用动态的 Ajax 风格图像查看器。由于该函数会自动处理页面上找到的每一个图像链接，你只需调用一次即可激活动态图像查看器，无需做其他任何事情。
 
-**注意：** `modalimgkit.js`文件中的“modal”一词指的是动态图像查看器使用了模态窗口，这种窗口在可见时会阻止你与父窗口进行交互。模态窗口在现代操作系统中通过对话框大量使用。例如，大多数 Windows 应用程序中的“关于”框就是一个模态窗口。动态图像查看器使用模态窗口，这样你在查看图像时就不会意外点击背景中的窗口。
-
-
-
-
+> **注意：** `modalimgkit.js`文件中的“modal”一词指的是动态图像查看器使用了模态窗口，这种窗口在可见时会阻止你与父窗口进行交互。模态窗口在现代操作系统中通过对话框大量使用。例如，大多数 Windows 应用程序中的“关于”框就是一个模态窗口。动态图像查看器使用模态窗口，这样你在查看图像时就不会意外点击背景中的窗口。
 
 | ![](img/ys8wohawzzmxcjm1mjjlzgftdc9zyzc4cjlnmgkvdgmucg9zagpwawdll24-.jpg) | 如果你好奇的话，还有其他类似 Ajax 风格的图像查看工具包可供免费下载和使用。其中一些甚至比这里介绍的更强大。然而，你很难找到像这个一样紧凑且易于使用的。我的目标是在提供流畅视觉功能的同时，尽可能简化并最小化代码。有时候，少即是多！ |
 
 ## 第 8 章：一个杀手级的图像查看界面
 
-Ajax 与早期管道
+### Ajax 与早期管道
 
 | ![](img/ys8wohawzzmxcjm1mjjlzgftdc9zyzc4cjlnmgkvdgmucg9zagpwawdll24-.jpg) | 难以置信，但 Ajax 的起源可以追溯到 16 世纪的管道系统。1596 年，约翰·哈灵顿爵士为英格兰女王伊丽莎白一世发明了一种名为“Ajax”的抽水马桶。Ajax 马桶的设计在英国并未流行，但在法国取得了一定成功。现代 S 型存水弯马桶的设计直到近 200 年后才出现。 |
 
@@ -4138,16 +4430,16 @@ Ajax 与早期管道
 
 本章将介绍一个流畅的“Ajax”图像查看器，它无需在另一个页面中打开缩略图的全尺寸版本，从而彻底解决了“后退”按钮和重新加载的问题。我一直在引用“Ajax”这个词，因为从技术上讲，你并不需要 Ajax 来实现这个图像查看功能。当你深入本章的挑战时，你会明白原因，但要知道本章展示了一个完美的 Ajax 风格效果示例，而它实际上并不涉及 Ajax 请求。
 
-本章的 Imaginator 应用程序使用了以下文件，它们位于本书附带的 Linux 光盘的 `chap08` 示例代码文件夹中：
+本章的 Imaginator 应用程序使用了以下文件，它们位于本书附带的 Linux 光盘的`chap08`示例代码文件夹中：
 
-*   `imaginator.html` — 主网页
-*   `smokiesXX.jpg` — 大雾山示例图像系列
-*   `smokiesXX_thumb.jpg` — 大雾山示例图像的缩略图系列
-*   `domkit.js` — Ajax 工具包的 DOM 相关函数
-*   `modalimgkit.js` — Ajax 工具包的模态图像相关函数
-*   `modalimgkit.css` — 模态图像的样式表
-*   `modalimgkit_wait.gif` — 加载模态图像时显示的动画“加载”图标
-*   `modalimgkit_gray.png` — 在前台查看模态图像时，背景页面上显示的透明灰色图像
+- `imaginator.html` — 主网页
+- `smokiesXX.jpg` — 大雾山示例图像系列
+- `smokiesXX_thumb.jpg` — 大雾山示例图像的缩略图系列
+- `domkit.js` — Ajax 工具包的 DOM 相关函数
+- `modalimgkit.js` — Ajax 工具包的模态图像相关函数
+- `modalimgkit.css` — 模态图像的样式表
+- `modalimgkit_wait.gif` — 加载模态图像时显示的动画“加载”图标
+- `modalimgkit_gray.png` — 在前台查看模态图像时，背景页面上显示的透明灰色图像
 
 ### 挑战：动态加载图像
 
@@ -4157,33 +4449,27 @@ Ajax 与早期管道
 
 那么 Ajax 能帮助解决这个问题吗？并不完全。Ajax 在这个场景中的问题在于，它是围绕向服务器查询文本数据的概念设计的。你可能很清楚，图像是二进制的，而不是文本。如果你对两者的区别感到好奇，可以尝试将一张图像拖放到你最喜欢的文本编辑器中。你会看到一堆毫无意义的乱码字符，因为图像格式并不适合文本表示。因此，尝试通过 Ajax 请求图像会遇到严重的问题。
 
-我们已经确定 Ajax 不能用于通过请求动态加载图像，这很遗憾，因为这样做肯定能解决“加载新页面查看图像”的困境。但这并不意味着我们别无选择。实际上，标准 JavaScript `Image` 对象中的一种机制使得在不发出 Ajax 请求的情况下实现 Ajax 的总体效果成为可能。我指的是 `Image` 对象中的 `onload` 事件，它会在图像加载完成时通知你。这个事件在很多方面类似于 Ajax 请求，因为它会在图像加载完成时发出通知。
+我们已经确定 Ajax 不能用于通过请求动态加载图像，这很遗憾，因为这样做肯定能解决“加载新页面查看图像”的困境。但这并不意味着我们别无选择。实际上，标准 JavaScript `Image`对象中的一种机制使得在不发出 Ajax 请求的情况下实现 Ajax 的总体效果成为可能。我指的是`Image`对象中的`onload`事件，它会在图像加载完成时通知你。这个事件在很多方面类似于 Ajax 请求，因为它会在图像加载完成时发出通知。
 
-`Image` 对象中另一个辅助 `onload` 事件处理程序的组件是 `complete` 成员变量，它是一个布尔值（`true`/`false`），用于告知图像是否已加载完成。当与 `onload` 事件处理程序结合使用时，`complete` 成员变量为你提供了构建“Ajax”图像查看器所需的一切。
+`Image`对象中另一个辅助`onload`事件处理程序的组件是`complete`成员变量，它是一个布尔值（`true`/`false`），用于告知图像是否已加载完成。当与`onload`事件处理程序结合使用时，`complete`成员变量为你提供了构建“Ajax”图像查看器所需的一切。
 
-尽管我相信你会喜欢关于 `onload` 事件处理程序和 `complete` 成员变量的深入讨论，尤其是如果你不是 JavaScript 高手，但我还是免去你的痛苦。相反，我很高兴地告诉你，我已经构建了一些 JavaScript 代码，让你几乎不费吹灰之力就能将流畅的图像查看器注入到你的页面中。说真的，你会惊讶于本章示例的极度简单。
+尽管我相信你会喜欢关于`onload`事件处理程序和`complete`成员变量的深入讨论，尤其是如果你不是 JavaScript 高手，但我还是免去你的痛苦。相反，我很高兴地告诉你，我已经构建了一些 JavaScript 代码，让你几乎不费吹灰之力就能将流畅的图像查看器注入到你的页面中。说真的，你会惊讶于本章示例的极度简单。
 
-支持图像查看器的代码包含在 `modalimgkit.js` 文件中，该文件是本书光盘中 Ajax 工具包的一部分，也是 Imaginator 示例应用程序的源代码文件之一。正如最初在第 2 章“Ajax 应用程序内部”中提到的，`modalimg.js` 文件提供了一个单一的 JavaScript 函数，你可以用它自动将整个页面上的图像链接转换为 Ajax 风格的图像查看器链接。这个函数叫做 `initModal()`，它必须在包含图像链接的页面的 `body` 的 `onload` 事件处理程序中被调用。
+支持图像查看器的代码包含在`modalimgkit.js`文件中，该文件是本书光盘中 Ajax 工具包的一部分，也是 Imaginator 示例应用程序的源代码文件之一。正如最初在第 2 章“Ajax 应用程序内部”中提到的，`modalimg.js`文件提供了一个单一的 JavaScript 函数，你可以用它自动将整个页面上的图像链接转换为 Ajax 风格的图像查看器链接。这个函数叫做`initModal()`，它必须在包含图像链接的页面的`body`的`onload`事件处理程序中被调用。
 
-`initModal()` 函数的美妙之处在于，它会自动扫描页面，找到图像链接，然后修改它们，使其使用动态的 Ajax 风格图像查看器。由于该函数会自动处理页面上找到的每一个图像链接，你只需调用它一次即可激活动态图像查看器。
+`initModal()`函数的美妙之处在于，它会自动扫描页面，找到图像链接，然后修改它们，使其使用动态的 Ajax 风格图像查看器。由于该函数会自动处理页面上找到的每一个图像链接，你只需调用它一次即可激活动态图像查看器。
 
-注意
+### 注意
 
-
-
-
-
-| ![](img/ys8wohawzzmxcjm1mjjlzgftdc9zyzc4cjlnmgkvdgmucg9zagpwawdll24-.jpg) | `modalimgkit.js` 文件中的“modal”一词指的是动态图像查看器使用了模态窗口，这种窗口在显示时会阻止你与父窗口进行交互。模态窗口在现代操作系统中通过对话框被广泛使用。例如，大多数 Windows 应用程序中的“关于”框就是一个模态窗口。动态图像查看器使用模态窗口，这样你在查看图像时就不会意外点击到背景窗口。 |
-
-注意
+| ![](img/ys8wohawzzmxcjm1mjjlzgftdc9zyzc4cjlnmgkvdgmucg9zagpwawdll24-.jpg) | `modalimgkit.js`文件中的“modal”一词指的是动态图像查看器使用了模态窗口，这种窗口在显示时会阻止你与父窗口进行交互。模态窗口在现代操作系统中通过对话框被广泛使用。例如，大多数 Windows 应用程序中的“关于”框就是一个模态窗口。动态图像查看器使用模态窗口，这样你在查看图像时就不会意外点击到背景窗口。 |
 
 | ![](img/ys8wohawzzmxcjm1mjjlzgftdc9zyzc4cjlnmgkvdgmucg9zagpwawdll24-.jpg) | 如果你好奇的话，还有其他 Ajax 风格的图像查看器工具包可供免费下载和使用。其中一些甚至比这里介绍的更强大。然而，你很难找到一个像这个一样紧凑且易于使用的。我的目标是尽可能简化和最小化代码，同时仍然提供流畅的视觉功能。有时候少即是多！ |
 
 ### 设计：设计一个动态图像查看器
 
-本章的示例应用程序名为 Imaginator，其主要任务是演示使用本书附带的 Ajax 工具包中的模态图像查看器是多么简单。Imaginator 应用程序只需呈现几个带链接的缩略图，然后正确调用 `initModal()` 函数来启动图像查看器。之后，一切都会自动进行。
+本章的示例应用程序名为 Imaginator，其主要任务是演示使用本书附带的 Ajax 工具包中的模态图像查看器是多么简单。Imaginator 应用程序只需呈现几个带链接的缩略图，然后正确调用`initModal()`函数来启动图像查看器。之后，一切都会自动进行。
 
-你还需要在 Imaginator 页面中包含 `modalimgkit.js` JavaScript 文件，以及其关联的样式表 `modalimgkit.css`。该样式表定义了模态图像窗口使用的样式，以便在屏幕上显示图像时获得干净的外观。
+你还需要在 Imaginator 页面中包含`modalimgkit.js` JavaScript 文件，以及其关联的样式表`modalimgkit.css`。该样式表定义了模态图像窗口使用的样式，以便在屏幕上显示图像时获得干净的外观。
 
 Imaginator 应用程序呈现一系列缩略图，作为动态图像查看的基础，这意味着点击其中任意一张图片都会加载与该缩略图关联的全尺寸图像，并跟踪加载状态。Imaginator 页面始终保持在视图中，尽管在图像查看器显示图像时，它会被一个透明的灰色覆盖层遮挡。图 8.1 显示了在任何给定时间，缩略图系列中只有一张图片能够以全尺寸查看。
 
@@ -4191,7 +4477,7 @@ Imaginator 应用程序呈现一系列缩略图，作为动态图像查看的基
 
 ![](img/ys8wohawzzmxcjm1mjjlzgftdc9zyzc4cjlnmgkvzmnncdhzmghnmwkuawlmmc8-.jpg)
 
-这张图没有显示的是，当全尺寸图像显示时，整个 Imaginator 网页会被图像查看器自动禁用。不仅如此，在图像加载过程中还会显示一个动画“加载”图像，以提示用户正在等待图像加载。这个图像是图像查看器的一部分，但你可以随意将其更改为其他内容。图 8.2 显示了图像查看器使用的 `modalimgkit_wait.gif` 图像。
+这张图没有显示的是，当全尺寸图像显示时，整个 Imaginator 网页会被图像查看器自动禁用。不仅如此，在图像加载过程中还会显示一个动画“加载”图像，以提示用户正在等待图像加载。这个图像是图像查看器的一部分，但你可以随意将其更改为其他内容。图 8.2 显示了图像查看器使用的`modalimgkit_wait.gif`图像。
 
 ##### 图 8.2. Imaginator 使用的动态图像查看器利用了一个动画“加载”图像（`modalimgkit_wait.gif`）来让用户知道图像正在加载。
 
@@ -4201,7 +4487,7 @@ Imaginator 应用程序呈现一系列缩略图，作为动态图像查看的基
 
 ### 组装 Imaginator 应用程序
 
-得益于 Ajax 工具包中的图像查看器，组装 Imaginator 应用程序非常简单——该应用程序仅由一个 HTML 网页和几张图片组成。更具体地说，网页 `imaginator.html` 包含一系列缩略图，每个缩略图都链接到其全尺寸版本。图 8.3 显示了 Imaginator 应用程序，其中显示了一个全尺寸的模态图像，背景中可以看到一系列缩略图。
+得益于 Ajax 工具包中的图像查看器，组装 Imaginator 应用程序非常简单——该应用程序仅由一个 HTML 网页和几张图片组成。更具体地说，网页`imaginator.html`包含一系列缩略图，每个缩略图都链接到其全尺寸版本。图 8.3 显示了 Imaginator 应用程序，其中显示了一个全尺寸的模态图像，背景中可以看到一系列缩略图。
 
 ##### 图 8.3. Imaginator 网页由一系列缩略图组成，这些缩略图链接到它们的全尺寸对应图片。
 
@@ -4212,66 +4498,79 @@ Imaginator 网页的主体负责在页面上排列缩略图并建立到全尺寸
 代码视图：
 
 ```
+
+
+
+```html
 <body onload="initModal()">
+
   <p>以下是一些最近去大烟山旅行时拍摄的照片。</p>
+
   <table>
     <tr>
-      <td><a href="smokies01.jpg"><img src="smokies01_thumb.jpg"
-        alt="大烟山" style="border:none"/>
-        </a></td>
-      <td><a href="smokies02.jpg"><img src="smokies02_thumb.jpg"
-        alt="大烟山" style="border:none"/>
-        </a></td>
-      <td><a href="smokies03.jpg"><img src="smokies03_thumb.jpg"
-        alt="大烟山" style="border:none"/>
-        </a></td>
-      <td><a href="smokies04.jpg"><img src="smokies04_thumb.jpg"
-        alt="大烟山" style="border:none"/>
-        </a></td>
-      <td><a href="smokies05.jpg"><img src="smokies05_thumb.jpg"
-        alt="大烟山" style="border:none"/>
-        </a></td>
+      <td>
+        <a href="smokies01.jpg">
+          <img src="smokies01_thumb.jpg" alt="大烟山" style="border:none"/>
+        </a>
+      </td>
+      <td>
+        <a href="smokies02.jpg">
+          <img src="smokies02_thumb.jpg" alt="大烟山" style="border:none"/>
+        </a>
+      </td>
+      <td>
+        <a href="smokies03.jpg">
+          <img src="smokies03_thumb.jpg" alt="大烟山" style="border:none"/>
+        </a>
+      </td>
+      <td>
+        <a href="smokies04.jpg">
+          <img src="smokies04_thumb.jpg" alt="大烟山" style="border:none"/>
+        </a>
+      </td>
+      <td>
+        <a href="smokies05.jpg">
+          <img src="smokies05_thumb.jpg" alt="大烟山" style="border:none"/>
+        </a>
+      </td>
     </tr>
   </table>
-</body> 
+
+</body>
 ```
 
-整个应用程序中最重要的代码是主体中的第一行代码，它调用了 Ajax 工具包中的 `initModal()` 函数来初始化动态图像查看器。该函数位于文件 `modalimgkit.js` 中，其作用是处理页面上的所有图像链接，使它们使用 Ajax 风格的图像查看器，而不是传统的链接方式。`initModal()` 函数还会预加载模态图像使用的图像，包括动画“加载”图标（`modalimgkit_wait.gif`）和透明灰色背景图像（`modalimgkit_gray.png`）。
+整个应用程序中最重要的代码是主体中的第一行代码，它调用了 Ajax 工具包中的`initModal()`函数来初始化动态图像查看器。该函数位于文件`modalimgkit.js`中，其作用是处理页面上的所有图像链接，使它们使用 Ajax 风格的图像查看器，而不是传统的链接方式。`initModal()`函数还会预加载模态图像使用的图像，包括动画“加载”图标（`modalimgkit_wait.gif`）和透明灰色背景图像（`modalimgkit_gray.png`）。
 
-页面主体中的其余代码是纯 HTML 代码，将 `<a>` 标签包裹在 `<img>` 标签周围，以创建带链接的缩略图。请注意，缩略图都以 `_thumb` 作为文件名后缀。你不必使用完全相同的命名约定，但在命名相关文件（如缩略图和全尺寸图像对）时建立一些一致性是非常好的做法。
+页面主体中的其余代码是纯 HTML 代码，将`<a>`标签包裹在`<img>`标签周围，以创建带链接的缩略图。请注意，缩略图都以`_thumb`作为文件名后缀。你不必使用完全相同的命名约定，但在命名相关文件（如缩略图和全尺寸图像对）时建立一些一致性是非常好的做法。
 
-之前我提到过，你需要从 Ajax 工具包中将图像查看器文件导入到 Imaginator 网页中。这些文件包括一个 CSS 样式表和一个 JavaScript 文件。以下是导入样式表（名为 `modalimgkit.css`）的方法：
+之前我提到过，你需要从 Ajax 工具包中将图像查看器文件导入到 Imaginator 网页中。这些文件包括一个 CSS 样式表和一个 JavaScript 文件。以下是导入样式表（名为`modalimgkit.css`）的方法：
 
-```
+```html
 <link rel="stylesheet" type="text/css" href="modalimgkit.css" />
 ```
 
 类似地，`modalimgkit.js` JavaScript 文件通过以下代码行导入：
 
-```
+```html
 <script type="text/javascript" src="modalimgkit.js"> </script>
 ```
 
 这两行代码都必须放在页面的 head 部分。为了确保你理解文件的导入方式，以下是 Imaginator 网页的完整 head 部分：
 
-```
+```html
 <head>
   <title>Imaginator</title>
 
-  <link rel="stylesheet" type="text/css"
-    href="modalimgkit.css" />
+  <link rel="stylesheet" type="text/css" href="modalimgkit.css" />
+
   <script type="text/javascript" src="domkit.js"> </script>
   <script type="text/javascript" src="modalimgkit.js"> </script>
 </head>
 ```
 
-这段代码显示 Imaginator 网页还包含了 Ajax 工具包中的 `domkit.js` 文件，该文件提供了几个辅助函数，用于执行标准的 JavaScript DOM 任务，例如确定客户端窗口大小、获取和替换元素文本等。
+这段代码显示 Imaginator 网页还包含了 Ajax 工具包中的`domkit.js`文件，该文件提供了几个辅助函数，用于执行标准的 JavaScript DOM 任务，例如确定客户端窗口大小、获取和替换元素文本等。
 
-
-
-
-
-Imaginator 应用中唯一缺失的另外两个要素是图像查看器所需的两张图片。你已经见过其中一张，即 `modalimgkit_wait`，它作为加载图像时显示的动画“加载”图片。另一张是 `modalimgkit_gray.png`，这是一张带有透明度的微小灰色图片，用于在查看图像时将背景窗口变灰。这张图片通过在图像查看器窗口中图像背后重复平铺，能够使整个背景变灰。这种视觉技巧是通过图像查看器的 CSS 样式表实现的。你只需确保这两张图片与 Imaginator 网页位于同一文件夹中。
+Imaginator 应用中唯一缺失的另外两个要素是图像查看器所需的两张图片。你已经见过其中一张，即`modalimgkit_wait`，它作为加载图像时显示的动画“加载”图片。另一张是`modalimgkit_gray.png`，这是一张带有透明度的微小灰色图片，用于在查看图像时将背景窗口变灰。这张图片通过在图像查看器窗口中图像背后重复平铺，能够使整个背景变灰。这种视觉技巧是通过图像查看器的 CSS 样式表实现的。你只需确保这两张图片与 Imaginator 网页位于同一文件夹中。
 
 当你点击模态图像的链接时，微小的灰色透明图片会在背景中平铺，使底层页面呈现“禁用”外观，同时在模态图像加载期间，页面中央会显示动画“加载”图片。一旦模态图像加载完成，它会替换掉动画图片。当你点击关闭模态图像时，它和灰色透明背景图片都会消失。
 
@@ -4305,7 +4604,7 @@ Imaginator 应用的关键在于，你无需离开原始页面即可查看全尺
 
 你可能会想，既然图像查看器非常专注于解决一个特定问题，那么 Imaginator 应用还能有多少改造空间。虽然你当然可以考虑通过支持标题或带注释的音频片段来增强图像查看器本身，但这只会让事情变得复杂，或者至少需要相当大的开发工作量。
 
-对于 Imaginator 应用来说，更合适的极致改造是尝试使用你自己的图像。事实上，最好的实验方式是拿一个已有缩略图的页面，在不做其他更改的情况下直接试用图像查看器。你只需在页面头部添加两行导入代码，然后在 body 的 `onload` 事件处理程序中添加 `initModal()` 函数调用。然后确保将源文件（`modalimgkit.css` 和 `modalimgkit.js`）以及图像（`modalimgkit_wait.gif` 和 `modalimgkit_gray.png`）复制到包含你页面的文件夹中，就可以开始了。这是一个很好的测试，因为它展示了动态图像查看器真正即插即用的特性。
+对于 Imaginator 应用来说，更合适的极致改造是尝试使用你自己的图像。事实上，最好的实验方式是拿一个已有缩略图的页面，在不做其他更改的情况下直接试用图像查看器。你只需在页面头部添加两行导入代码，然后在 body 的`onload`事件处理程序中添加`initModal()`函数调用。然后确保将源文件（`modalimgkit.css`和`modalimgkit.js`）以及图像（`modalimgkit_wait.gif`和`modalimgkit_gray.png`）复制到包含你页面的文件夹中，就可以开始了。这是一个很好的测试，因为它展示了动态图像查看器真正即插即用的特性。
 
 另一种改造 Imaginator 应用的有趣方式是尝试不同的动画“加载”图片。如果你是一位巧妙的图形设计师，你或许可以自己制作一个。对于我们其他人来说，有一个非常酷的在线工具，可以让你生成自定义的 Ajax“加载”图片。该网站名为 AjaxLoad.info（[`www.ajaxload.info/`](http://www.ajaxload.info/)），你可以在图 8.7 中看到它的实际效果。
 
@@ -4315,7 +4614,7 @@ Imaginator 应用的关键在于，你无需离开原始页面即可查看全尺
 
 使用这个工具，你可以选择指示器（图标）的类型及其背景和前景颜色，然后工具会为你生成一张动画图片。你甚至可以查看预览，以便在下载最终结果之前微调图像。
 
-一旦你找到喜欢的动画“加载”图片，只需将其复制到 Imaginator 文件夹（或你自己的网页文件夹）中现有的 `modalimgkit_wait.gif` 图片上。替换 GIF 文件会立即替换图像查看器中的图片，但如果你在复制图片之前已经打开了 Imaginator 页面，则可能需要刷新浏览器。
+一旦你找到喜欢的动画“加载”图片，只需将其复制到 Imaginator 文件夹（或你自己的网页文件夹）中现有的`modalimgkit_wait.gif`图片上。替换 GIF 文件会立即替换图像查看器中的图片，但如果你在复制图片之前已经打开了 Imaginator 页面，则可能需要刷新浏览器。
 
 ### 总结
 
@@ -4323,12 +4622,9 @@ Imaginator 应用的关键在于，你无需离开原始页面即可查看全尺
 
 ## 第 9 章 使用流畅的弹出窗口呈现信息
 
-Ajax 小镇
+### Ajax 小镇
 
 | ![](img/ys8wohawzzmxcjm1mjjlzgftdc9zyzc4cjlnmgkvdgmucg9zagpwawdll24-.jpg) | 如果你想去 Ajax 看看，可以前往加拿大安大略省中南部，那里有一个名为 Ajax 的小镇。Ajax 位于安大略湖畔，被认为是多伦多的一个郊区。这个镇名源于二战期间那里的一家军火工厂。由于它作为二战军火供应商的角色，该镇以赢得二战英国首次重大海战的军舰 HMS Ajax 命名。 |
-
-
-
 
 Ajax 在网络上最显著的应用之一，就是当你点击或悬停在一个链接上时自动弹出的窗口。尽管弹出窗口带有负面标签，但 Ajax 弹出窗口技术如果使用得当，会非常方便。例如，这种弹出窗口可以在悬停链接时显示，并在用户实际点击链接之前提供页面预览。甚至更好的是，你可以扩展“链接”的概念，使其直接在弹出窗口中共享信息，而不是链接到一个全新的页面。这可以简化网站的导航。除非有值得加载的完整页面信息，否则用户不会被带到新页面——小段信息可以在弹出窗口中显示。
 
@@ -4336,15 +4632,15 @@ Ajax 在网络上最显著的应用之一，就是当你点击或悬停在一个
 
 本章的 Informer 应用程序使用了以下文件，它们位于随书附带的 Live Linux CD-ROM 的`chap09`示例代码文件夹中：
 
-*   `snapper.html`——Snapper 主网页
-*   `informer.html`——Informer 主网页
-*   `skateXXX.html`——与滑板相关的一系列示例网页
-*   `skateXXX.jpg`——一系列滑板示例图片
-*   `ajaxkit.js`——Ajax 工具包的核心 Ajax 函数
-*   `domkit.js`——Ajax 工具包的 DOM 相关函数
-*   `infowinkit.js`——信息窗口相关函数
-*   `infowinkit.css`——信息窗口的样式表
-*   `infowinkit_wait.gif`——加载信息到信息窗口时显示的动画“加载”图标
+- `snapper.html`——Snapper 主网页
+- `informer.html`——Informer 主网页
+- `skateXXX.html`——与滑板相关的一系列示例网页
+- `skateXXX.jpg`——一系列滑板示例图片
+- `ajaxkit.js`——Ajax 工具包的核心 Ajax 函数
+- `domkit.js`——Ajax 工具包的 DOM 相关函数
+- `infowinkit.js`——信息窗口相关函数
+- `infowinkit.css`——信息窗口的样式表
+- `infowinkit_wait.gif`——加载信息到信息窗口时显示的动画“加载”图标
 
 ### 挑战：创建链接弹出窗口
 
@@ -4354,9 +4650,9 @@ Ajax 在网络上最显著的应用之一，就是当你点击或悬停在一个
 
 在某些情况下，将 Ajax 请求的结果直接显示在当前页面上可能会分散注意力。可以类比本书中的侧边栏或注释框。侧边栏或注释框旨在提供某种补充信息。然而，它们被放置在页面中央，穿插在主要章节文本中，从而争夺你的注意力。如果你能随意打开或关闭注释，而不是让它与主要讨论在视觉上竞争，那会好得多。
 
-注意
-
-| ![](img/ys8wohawzzmxcjm1mjjlzgftdc9zyzc4cjlnmgkvdgmucg9zagpwawdll24-.jpg) | 这个注释确实有点分散注意力，因为它占用了印刷页面上宝贵的空间，并打断了主要章节文本的流畅性。当然，你可以忽略它，但你显然没有，否则你不会读这句话。如果你能用手指轻点页面让这个注释框消失，那就太好了。不幸的是，我还没想出如何将 Ajax 注入印刷页面！ |
+> **注意**
+>
+> 这个注释确实有点分散注意力，因为它占用了印刷页面上宝贵的空间，并打断了主要章节文本的流畅性。当然，你可以忽略它，但你显然没有，否则你不会读这句话。如果你能用手指轻点页面让这个注释框消失，那就太好了。不幸的是，我还没想出如何将 Ajax 注入印刷页面！
 
 我要表达的观点是，当你有一些额外信息要呈现，但又不想干扰当前正在查看的页面时，弹出窗口会非常方便。此外，如果你不必在前端加载这些额外信息，而是只在需要时加载，那将极其方便。Ajax 使得按需获取这些信息成为可能，然后将其显示在仅临时占用屏幕空间的弹出窗口中。
 
@@ -4366,15 +4662,15 @@ Ajax 在网络上最显著的应用之一，就是当你点击或悬停在一个
 
 这项技术的一个好例子是 Snap Preview 网站（[`www.snap.com/`](http://www.snap.com/)），它显示一个弹出窗口，呈现链接页面的预览。虽然你可以用 Ajax 编写自己的自定义悬停预览窗口，但没有必要，因为 Snap Preview 实际上是一个自动化该过程的在线服务。Snap Preview 允许你将网页上的所有链接转换为 Snap Preview 链接。
 
-注意
-
-| ![](img/ys8wohawzzmxcjm1mjjlzgftdc9zyzc4cjlnmgkvdgmucg9zagpwawdll24-.jpg) | 另一个类似 Snap Preview 的服务是 Kontera（[`www.kontera.com/`](http://www.kontera.com/)），它使用悬停弹出窗口来显示与链接相关的广告。尽管 Kontera 链接仍然是基于广告的弹出窗口，但它们比毫无预警就出现的弹出窗口要少得多。 |
+> **注意**
+>
+> 另一个类似 Snap Preview 的服务是 Kontera（[`www.kontera.com/`](http://www.kontera.com/)），它使用悬停弹出窗口来显示与链接相关的广告。尽管 Kontera 链接仍然是基于广告的弹出窗口，但它们比毫无预警就出现的弹出窗口要少得多。
 
 要为自己的页面启用 Snap 功能，你必须先在[`www.snap.com`](http://www.snap.com)向 Snap 注册你的网站。
 
 除了向 Snap 注册外，Snap 注册过程还会为你提供将 Snap Preview 功能添加到页面所需的 JavaScript 代码。这个 Snap Preview JavaScript 代码片段包含在一个标准的`<script>`标签中。以下是这样一个片段的示例，必须将其放置在网页的头部才能使用 Snap Preview 功能：
 
-```
+```html
 <script defer="defer" id="snap_preview_anywhere"
   type="text/javascript"
   src="http://spa.snap.com/snap_preview_anywhere.js?
@@ -4384,20 +4680,24 @@ Ajax 在网络上最显著的应用之一，就是当你点击或悬停在一个
 
 这段代码实际上是我整理的一个示例网页（`snapper.html`）的一部分，用于演示使用 Snap Preview 是多么简单。以下是页面正文的代码：
 
-```
+```html
 <body>
   <p>Here are some links:</p>
+
   <p><a href="http://www.usatoday.com/">USA Today</a></p>
+
   <p><a href="http://www.amazon.com/">Amazon.com</a></p>
-  <p><a href="http://www.nhl.com/">National Hockey League</a></p>
-  <p><a href="http://www.snopes.com/">Snopes.com</a></p>
-  <p><a href="http://www.michaelmorrison.com/">Michael's Web
-site</a></p>
-</body>
 ```
 
 
 
+```html
+<p><a href="http://www.nhl.com/">National Hockey League</a></p>
+
+<p><a href="http://www.snopes.com/">Snopes.com</a></p>
+
+<p><a href="http://www.michaelmorrison.com/">Michael's Web site</a></p>
+```
 
 如你所见，这段代码本身与 Snap Preview 功能并无特定关联——Snap Preview 脚本会自动修改页面上的每个链接，使其使用该功能。图 9.1 展示了带有预览弹出窗口的页面效果。
 
@@ -4413,16 +4713,16 @@ site</a></p>
 
 支持信息弹出窗口的代码位于 `infowinkit.js` 文件中，该文件作为本书附带的 CD-ROM 上 Ajax 工具包的一部分，同时也是 Informer 示例应用程序的源代码文件之一。正如第 2 章“深入 Ajax 应用程序”中最初提到的，`infowinkit.js` 文件提供了两个用于支持动态信息弹出窗口的 JavaScript 函数：
 
-*   `initInfoWindow()`——为整个页面初始化信息弹出窗口
-*   `showInfoWindow()`——在弹出窗口中显示特定动态加载的信息
+- `initInfoWindow()`——为整个页面初始化信息弹出窗口
+- `showInfoWindow()`——在弹出窗口中显示特定动态加载的信息
 
-`initInfoWindow()` 函数用于初始化信息弹出窗口，必须在包含信息链接的页面 body 的 `onload` 事件处理程序中调用。然后，在每个信息链接的 `onclick` 事件处理程序中调用 `showInfoWindow()` 函数；这实际上会导致弹出窗口显示。随着本章后面深入 Informer 应用程序的具体细节，你将了解更多关于这两个函数的细节。
+`initInfoWindow()` 函数用于初始化信息弹出窗口，必须在包含信息链接的页面 `body` 的 `onload` 事件处理程序中调用。然后，在每个信息链接的 `onclick` 事件处理程序中调用 `showInfoWindow()` 函数；这实际上会导致弹出窗口显示。随着本章后面深入 Informer 应用程序的具体细节，你将了解更多关于这两个函数的细节。
 
 回到 Informer 应用程序相关的挑战，我们知道信息弹出窗口用于共享信息。在这个特定示例中，你将创建一个关于滑板运动的网页，使用信息弹出窗口来描述所涉及的主要装备。思路是页面上的主要内容仅提及每件装备，而每件装备的具体细节则委托给信息链接（弹出窗口）。因此，你将在页面上的几段文本周围包裹信息链接，使这些文本与信息弹出窗口相关联。
 
 ## 第 9 章 使用炫酷弹出窗口呈现信息
 
-Ajax 小镇
+### Ajax 小镇
 
 | ![](img/ys8wohawzzmxcjm1mjjlzgftdc9zyzc4cjlnmgkvdgmucg9zagpwawdll24-.jpg) | 如果你想去 Ajax 小镇，可以前往加拿大安大略省中南部，那里有 Ajax 镇。它位于安大略湖畔，被认为是多伦多的一个郊区。镇名源于二战期间那里的一家军火工厂。由于作为二战军火供应商的角色，该镇以赢得二战英国首次重大海战的军舰 HMS Ajax 命名。 |
 
@@ -4432,24 +4732,21 @@ Ajax 在网络上最显著的应用之一，就是当点击或悬停在链接上
 
 本章 Informer 应用程序使用了以下文件，它们位于本书附带的 Linux 版 CD-ROM 的 `chap09` 示例代码文件夹中：
 
-*   `snapper.html`——Snapper 主网页
-*   `informer.html`——Informer 主网页
-*   `skateXXX.html`——与滑板相关的一系列示例网页
-*   `skateXXX.jpg`——一系列滑板示例图片
-*   `ajaxkit.js`——Ajax 工具包的核心 Ajax 函数
-*   `domkit.js`——Ajax 工具包的 DOM 相关函数
-*   `infowinkit.js`——Ajax 工具包的信息窗口相关函数
-*   `infowinkit.css`——信息窗口的样式表
-*   `infowinkit_wait.gif`——在信息加载到信息窗口时显示的动画“加载”图标
+- `snapper.html`——Snapper 主网页
+- `informer.html`——Informer 主网页
+- `skateXXX.html`——与滑板相关的一系列示例网页
+- `skateXXX.jpg`——一系列滑板示例图片
+- `ajaxkit.js`——Ajax 工具包的核心 Ajax 函数
+- `domkit.js`——Ajax 工具包的 DOM 相关函数
+- `infowinkit.js`——Ajax 工具包的信息窗口相关函数
+- `infowinkit.css`——信息窗口的样式表
+- `infowinkit_wait.gif`——在信息加载到信息窗口时显示的动画“加载”图标
 
 ### 挑战：创建链接弹出窗口
 
 尽管我完全同意弹出窗口已成为 Web 短暂历史中最负面的“创新”之一，但有时对负面事物稍加改造也能带来积极效果。“有用”和“烦人”之间只有一线之隔。不幸的是，弹出窗口在很大程度上偏向于后者。Ajax 提供了一个机会，让我们以更有用、更不突兀的方式使用弹出窗口。
 
 请记住，Ajax 的杀手级特性是它能够向服务器查询零散的数据片段，而不是完整的网页。本书已经提供了大量示例，说明动态加载电子书的一章、股票报价或经过验证的用户输入片段，而无需向服务器发起完整的往返全页请求，是多么高效。然而，到目前为止的思路是从服务器加载一段信息，并以某种方式显示在当前页面上。但如果使用当前页面进行显示并不合理呢？
-
-
-
 
 在某些情况下，直接将 Ajax 请求的结果显示在当前页面上可能会分散注意力。可以类比本书中的侧边栏或注释框。侧边栏或注释框旨在提供某种补充信息，但它们被放置在页面主章节文本的中间，从而争夺你的注意力。如果你能随意开启或关闭注释，而不是被迫与它在视觉上争夺主要讨论的注意力，那会好得多。
 
@@ -4473,7 +4770,7 @@ Ajax 在网络上最显著的应用之一，就是当点击或悬停在链接上
 
 除了向 Snap 注册之外，Snap 注册过程还会为你提供必要的 JavaScript 代码，以便将 Snap Preview 功能添加到你的页面中。这个 Snap Preview JavaScript 代码片段包含在一个标准的 `<script>` 标签内。以下是这样一个片段的示例，必须将其放置在网页的头部才能使用 Snap Preview 功能：
 
-```
+```html
 <script defer="defer" id="snap_preview_anywhere"
   type="text/javascript"
   src="http://spa.snap.com/snap_preview_anywhere.js?
@@ -4483,20 +4780,27 @@ Ajax 在网络上最显著的应用之一，就是当点击或悬停在链接上
 
 这段代码实际上是我整理的一个示例网页（`snapper.html`）的一部分，用于演示使用 Snap Preview 是多么容易。以下是页面主体的代码：
 
-```
+```html
 <body>
   <p>这里有一些链接：</p>
+
   <p><a href="http://www.usatoday.com/">今日美国</a></p>
+
   <p><a href="http://www.amazon.com/">亚马逊</a></p>
+
   <p><a href="http://www.nhl.com/">国家冰球联盟</a></p>
+
   <p><a href="http://www.snopes.com/">Snopes.com</a></p>
+
   <p><a href="http://www.michaelmorrison.com/">迈克尔的网站</a></p>
 </body>
 ```
 
+
+
 如你所见，这段代码没有任何特定内容与 Snap Preview 功能相关联——Snap Preview 脚本会自动修改页面上的每个链接，使其使用该功能。图 9.1 显示了结果页面在预览弹出窗口出现时的样子。
 
-##### 图 9.1. Snap Preview 弹出窗口在你悬停在页面上的任何链接时出现，提供链接页面的小型预览。
+##### 图 9.1. Snap Preview 弹出窗口在你悬停在页面上的任何链接时出现，提供链接页面的小型预览
 
 [[查看完整尺寸图片]](ys8wohawzzmxcjm1mjjlzgftdc9zyzc4cjlnmgkvzmmuamdwz3a5cznhadbsav9pmhqv.jpg)![](img/ys8wohawzzmxcjm1mjjlzgftdc9zyzc4cjlnmgkvzmnncdlzmghqm3auawlnmc8-.jpg)
 
@@ -4506,14 +4810,12 @@ Ajax 在网络上最显著的应用之一，就是当点击或悬停在链接上
 
 本章的重点是信息弹出窗口，它们不适用于指向其他页面的传统链接。这里的想法是创建一个特殊的“弹出链接”或“信息链接”，仅在你想要显示一条信息时使用。这使得可以通过鼠标点击而不是悬停来触发弹出窗口，从而最大限度地减少对页面可用性的任何潜在负面影响。好消息是，我已经编写了大部分使信息弹出窗口成为可能的代码。
 
-支持信息弹出窗口的代码是 `infowinkit.js` 文件的一部分，该文件包含在本书附带的 CD-ROM 上的 Ajax 工具包中，也是 Informer 示例应用程序的源代码文件的一部分。正如最初在第 2 章“深入 Ajax 应用程序”中提到的，`infowinkit.js` 文件提供了两个用于支持动态信息弹出窗口的 JavaScript 函数：
+支持信息弹出窗口的代码是`infowinkit.js`文件的一部分，该文件包含在本书附带的 CD-ROM 上的 Ajax 工具包中，也是 Informer 示例应用程序的源代码文件的一部分。正如最初在第 2 章“深入 Ajax 应用程序”中提到的，`infowinkit.js`文件提供了两个用于支持动态信息弹出窗口的 JavaScript 函数：
 
-*   `initInfoWindow()`——为整个页面初始化信息弹出窗口
-*   `showInfoWindow()`——在弹出窗口中显示特定动态加载的信息
+- `initInfoWindow()`——为整个页面初始化信息弹出窗口
+- `showInfoWindow()`——在弹出窗口中显示特定动态加载的信息
 
-`initInfoWindow()` 函数用于初始化信息弹出窗口，必须在包含信息链接的页面主体的 `onload` 事件处理程序中调用。然后，对于每个信息链接，在其 `onclick` 事件处理程序中调用 `showInfoWindow()` 函数；这实际上是导致弹出窗口显示的原因。随着本章后面深入 Informer 应用程序的具体细节，你将了解更多关于这两个函数的细节。
-
-
+`initInfoWindow()`函数用于初始化信息弹出窗口，必须在包含信息链接的页面主体的`onload`事件处理程序中调用。然后，对于每个信息链接，在其`onclick`事件处理程序中调用`showInfoWindow()`函数；这实际上是导致弹出窗口显示的原因。随着本章后面深入 Informer 应用程序的具体细节，你将了解更多关于这两个函数的细节。
 
 回到与 Informer 应用相关的挑战，你知道信息弹出窗口用于共享信息。在这个特定示例中，你将创建一个关于滑板运动的网页，使用信息弹出窗口来描述所涉及的主要装备。其思路是页面上的主要内容仅提及每件装备，而每件装备的具体细节则委托给信息链接（弹出窗口）。因此，你将在页面上的几段文本周围包裹信息链接，使这些文本与信息弹出窗口相关联。
 
@@ -4521,7 +4823,7 @@ Ajax 在网络上最显著的应用之一，就是当点击或悬停在链接上
 
 Informer 应用实际上只是一个普通的网页，其中包含一些特殊链接，这些链接借助信息弹出窗口变得有趣。由于信息链接通过鼠标点击触发，相关的弹出窗口会出现在被点击的链接上方。图 9.2 展示了 Informer 应用的概念用户界面，其中包含一个出现在信息链接上方的弹出窗口。
 
-##### 图 9.2. Informer 应用的用户界面由一个包含特殊信息链接的标准网页组成，这些链接能够触发弹出窗口。
+##### 图 9.2. Informer 应用的用户界面由一个包含特殊信息链接的标准网页组成，这些链接能够触发弹出窗口
 
 ![](img/ys8wohawzzmxcjm1mjjlzgftdc9zyzc4cjlnmgkvzmnncdlzmghnngkuawlmmc8-.jpg)
 
@@ -4529,11 +4831,11 @@ Informer 应用实际上只是一个普通的网页，其中包含一些特殊�
 
 因此，应用的设计不仅涉及导入适当的 JavaScript 代码，还包括为弹出窗口创建内容。好消息是，这些内容是纯 HTML 代码，不需要特殊的脚本。
 
-尽管 Informer 应用中的 Ajax 请求发生在 `infowinkit.js` 文件内部，但评估代表信息弹出窗口发出请求所涉及的内容是值得的。接下来的几节将快速探讨与信息弹出窗口相关的 Ajax 请求和响应。
+尽管 Informer 应用中的 Ajax 请求发生在`infowinkit.js`文件内部，但评估代表信息弹出窗口发出请求所涉及的内容是值得的。接下来的几节将快速探讨与信息弹出窗口相关的 Ajax 请求和响应。
 
 #### 客户端请求
 
-Informer 应用中弹出窗口显示的信息是从充当迷你网页的独立文件中加载的。例如，点击滑板轮的链接将显示一个弹出窗口，其中包含轮子的图片及其描述。这张图片和描述存储在一个 HTML 文件中，例如 `skatewheels.html`，当弹出窗口显示时，会通过 Ajax 请求动态加载。因此，信息弹出窗口的客户端请求仅包含信息网页的 URL。
+Informer 应用中弹出窗口显示的信息是从充当迷你网页的独立文件中加载的。例如，点击滑板轮的链接将显示一个弹出窗口，其中包含轮子的图片及其描述。这张图片和描述存储在一个 HTML 文件中，例如`skatewheels.html`，当弹出窗口显示时，会通过 Ajax 请求动态加载。因此，信息弹出窗口的客户端请求仅包含信息网页的 URL。
 
 请记住，客户端请求中发送的网页 URL 实际上并不引用一个完整的网页。这是因为生成的 HTML 内容将被注入到现有的弹出窗口中，而不是作为真正的网页在浏览器中打开。你可以将信息窗口的 HTML 内容视为一个 HTML 文档“片段”。
 
@@ -4547,7 +4849,7 @@ Informer 应用中弹出窗口显示的信息是从充当迷你网页的独立�
 
 得益于 Ajax 工具包，Informer 应用使用了非常直接的 Ajax 通信。图 9.3 展示了将内容动态加载到信息弹出窗口的过程，涉及发送 URL 并获取 HTML 代码（内容）作为响应。
 
-##### 图 9.3. Informer 应用使用 URL 作为客户端请求的基础，从而由服务器交付信息内容。
+##### 图 9.3. Informer 应用使用 URL 作为客户端请求的基础，从而由服务器交付信息内容
 
 ![](img/ys8wohawzzmxcjm1mjjlzgftdc9zyzc4cjlnmgkvzmnncdlzmghnnwkuawlmmc8-.jpg)
 
@@ -4555,33 +4857,32 @@ Informer 应用中的客户端请求仅包含代表信息内容的 HTML 文件�
 
 我在提及信息内容时对“页面”一词加了引号，因为它更像是一个 HTML 文档片段，而不是一个完整的页面。以下是描述滑板轮的信息内容示例：
 
-```
+```html
 <table>
- <tr>
-   <td rowspan="2"><img src='skatewheels.jpg'
-     alt='Skateboard wheels' /></td>
-   <td style="font-weight:bold; background-color:#CCCCCC">
-     Skateboard Wheels</td>
- </tr>
- <tr>
-   <td>Although other materials have been used in the past,
-     modern skateboard wheels are all manufactured out of
-     urethane. Urethane skateboard wheels come in a variety of
-     different sizes and hardnesses for varying terrain.
-   </td>
- </tr>
+  <tr>
+    <td rowspan="2"><img src='skatewheels.jpg'
+      alt='Skateboard wheels' /></td>
+    <td style="font-weight:bold; background-color:#CCCCCC">
+      Skateboard Wheels</td>
+  </tr>
+  <tr>
+    <td>Although other materials have been used in the past,
+      modern skateboard wheels are all manufactured out of
+      urethane. Urethane skateboard wheels come in a variety of
+      different sizes and hardnesses for varying terrain.
+    </td>
+  </tr>
 </table>
 ```
 
-该内容存储在文件 `skatewheels.html` 中，包含一张图片、一个标题和描述性文本。HTML 代码作为服务器响应返回给 Informer，然后被插入到弹出窗口中，以提供关于滑板轮的额外信息。
+该内容存储在文件`skatewheels.html`中，包含一张图片、一个标题和描述性文本。HTML 代码作为服务器响应返回给 Informer，然后被插入到弹出窗口中，以提供关于滑板轮的额外信息。
 
 ### 整合 Informer 应用
 
 Informer 应用大量使用了 Ajax 工具包中的信息窗口支持，该工具包包含在随附的 CD-ROM 中。除了 Ajax 工具包，Informer 应用还需要其他几个组件：
 
-*   HTML 网页（`informer.html`）
-
-*   信息内容页面
+- HTML 网页（`informer.html`）
+- 信息内容页面
 
 Informer 的 HTML 网页是包含信息链接的网页，而信息内容页面则描述特定的内容片段，并用于驱动弹出窗口。接下来的几节将更详细地介绍 Informer 应用的这些部分。
 
@@ -4589,7 +4890,7 @@ Informer 的 HTML 网页是包含信息链接的网页，而信息内容页面�
 
 Informer 应用由多个 HTML 文件组成，但其中只有一个作为应用的主网页。主 Informer 页面包含信息链接，如图 9.4 所示。
 
-##### 图 9.4. Informer 网页包含一段文本，其中包含信息链接，点击这些链接会启动一个信息弹出窗口。
+##### 图 9.4. Informer 网页包含一段文本，其中包含信息链接，点击这些链接会启动一个信息弹出窗口
 
 [[查看完整尺寸图片]](ys8wohawzzmxcjm1mjjlzgftdc9zyzc4cjlnmgkvzmmuamdwz3a5czzhadbsav9pmhqv.jpg)![](img/ys8wohawzzmxcjm1mjjlzgftdc9zyzc4cjlnmgkvzmnncdlzmghqnnauawlnmc8-.jpg)
 
@@ -4597,34 +4898,35 @@ Informer 应用由多个 HTML 文件组成，但其中只有一个作为应用�
 
 代码视图：
 
-
-
-
 ```html
 <body onload="initInfoWindow(325, 200)">
   <div id="ajaxState" style="display:none"></div>
-  <br />
-  <h2>信息窗口 - 滑板基础</h2>
-  <p>滑板运动在过去几年中作为美国青少年的一项主要运动显著增长。虽然滑板所需的装备相当简单，但对于这项运动的新手来说，仍然需要一定程度的了解。无论你计划进行哪种类型的滑板运动，你无疑都需要滑板的核心组件，包括
-    <a href="#" class="info"
-    onclick="return showInfoWindow('skatedeck.html', event)">
-    板面</a>、<a href="#" class="info"
-    onclick="return showInfoWindow('skatetrucks.html',
-    event)">支架</a>和<a href="#" class="info"
-    onclick="return showInfoWindow('skatewheels.html',
-    event)">轮子</a>。
-    此外，考虑购买<a href="#"
-    class="info" onclick="return showInfoWindow(
-    'skatehelmet.html', event)">
-    头盔</a>和<a href="#" class="info"
-    onclick="return showInfoWindow('skatepads.html', event)">
-    护具</a>也是个好主意，特别是如果你计划滑越较高的障碍物，如垂直坡道和混凝土碗池。
-  </p>
 
-</body> 
+  <br />
+
+  <h2>信息窗口 - 滑板基础</h2>
+
+  <p>滑板运动在过去几年中作为美国青少年的一项主要运动显著增长。虽然滑板所需的装备相当简单，但对于这项运动的新手来说，仍然需要一定程度的了解。无论你计划进行哪种类型的滑板运动，你无疑都需要滑板的核心组件，包括
+
+    <a href="#" class="info"
+      onclick="return showInfoWindow('skatedeck.html', event)">
+      板面</a>、<a href="#" class="info"
+      onclick="return showInfoWindow('skatetrucks.html',
+      event)">支架</a>和<a href="#" class="info"
+      onclick="return showInfoWindow('skatewheels.html',
+      event)">轮子</a>。
+
+    此外，考虑购买<a href="#"
+      class="info" onclick="return showInfoWindow(
+      'skatehelmet.html', event)">
+      头盔</a>和<a href="#" class="info"
+      onclick="return showInfoWindow('skatepads.html', event)">
+      护具</a>也是个好主意，特别是如果你计划滑越较高的障碍物，如垂直坡道和混凝土碗池。
+  </p>
+</body>
 ```
 
-此代码片段中第一个重要的代码是页面主体的 `onload` 事件处理程序，它调用了 Ajax 工具包中的 `initInfoWindow()` 函数。注意，该函数传入了两个参数（325 和 200），分别是弹出窗口的宽度（325）和高度（200），单位为像素。这个宽度和高度在应用程序的整个生命周期中保持不变，意味着一旦初始设置好宽度和高度，弹出窗口的大小就不会改变。
+此代码片段中第一个重要的代码是页面主体的`onload`事件处理程序，它调用了 Ajax 工具包中的`initInfoWindow()`函数。注意，该函数传入了两个参数（325 和 200），分别是弹出窗口的宽度（325）和高度（200），单位为像素。这个宽度和高度在应用程序的整个生命周期中保持不变，意味着一旦初始设置好宽度和高度，弹出窗口的大小就不会改变。
 
 下一个值得关注的代码是通过熟悉的锚标签（`<a>`）创建信息链接的代码。以下是出现在主体 HTML 代码中的一个信息链接示例：
 
@@ -4633,15 +4935,15 @@ Informer 应用由多个 HTML 文件组成，但其中只有一个作为应用�
   onclick="return showInfoWindow('skatedeck.html', event)">板面</a>
 ```
 
-注意，`href` 属性通常指向链接的 URL，但这里设置为 `"#"`。这基本上告诉链接它不链接到任何地方。相反，该链接作为信息弹出窗口的触发器，通过 `onclick` 事件处理程序调用 `showInfoWindow()` 函数来显示。当用户点击链接文本“板面”时，`showInfoWindow()` 函数被调用，弹出窗口显示。
+注意，`href`属性通常指向链接的 URL，但这里设置为`"#"`。这基本上告诉链接它不链接到任何地方。相反，该链接作为信息弹出窗口的触发器，通过`onclick`事件处理程序调用`showInfoWindow()`函数来显示。当用户点击链接文本“板面”时，`showInfoWindow()`函数被调用，弹出窗口显示。
 
-`showInfoWindow()` 函数的第一个参数是要显示的页面的 URL。如果你还记得之前的内容，信息页面实际上是页面片段，因为它们旨在显示在现有的弹出窗口中。你将在下一节中了解更多关于这些页面结构的信息。该函数的第二个参数是标准的 JavaScript `event` 对象，用于传递鼠标点击的坐标。
+`showInfoWindow()`函数的第一个参数是要显示的页面的 URL。如果你还记得之前的内容，信息页面实际上是页面片段，因为它们旨在显示在现有的弹出窗口中。你将在下一节中了解更多关于这些页面结构的信息。该函数的第二个参数是标准的 JavaScript`event`对象，用于传递鼠标点击的坐标。
 
-注意
+> **注意**
+>
+> | ![](img/ys8wohawzzmxcjm1mjjlzgftdc9zyzc4cjlnmgkvdgmucg9zagpwawdll24-.jpg) | 实际上，“标准”的 JavaScript`event`对象并不那么标准，这意味着它并非在所有浏览器中都受支持。然而，Ajax 工具包足够智能，能够处理浏览器的不一致性并适当调整事件处理代码。 |
 
-| ![](img/ys8wohawzzmxcjm1mjjlzgftdc9zyzc4cjlnmgkvdgmucg9zagpwawdll24-.jpg) | 实际上，“标准”的 JavaScript `event` 对象并不那么标准，这意味着它并非在所有浏览器中都受支持。然而，Ajax 工具包足够智能，能够处理浏览器的不一致性并适当调整事件处理代码。 |
-
-请记住，`showInfoWindow()` 函数最终负责发出加载信息内容的 Ajax 请求。为了更好地理解 `showInfoWindow()` 函数如何导致 Ajax 请求，请查看 `infowinkit.js` 文件中该函数的以下代码片段：
+请记住，`showInfoWindow()`函数最终负责发出加载信息内容的 Ajax 请求。为了更好地理解`showInfoWindow()`函数如何导致 Ajax 请求，请查看`infowinkit.js`文件中该函数的以下代码片段：
 
 ```javascript
 function showInfoWindow(infoURL, evt) {
@@ -4651,11 +4953,11 @@ function showInfoWindow(infoURL, evt) {
 }
 ```
 
-注意，通过 `infoURL` 参数，正在加载的“页面”的 URL 被直接传递给 Ajax 请求。这证明了信息弹出窗口的 Ajax 请求仅仅涉及加载一个 HTML 文件。
+注意，通过`infoURL`参数，正在加载的“页面”的 URL 被直接传递给 Ajax 请求。这证明了信息弹出窗口的 Ajax 请求仅仅涉及加载一个 HTML 文件。
 
-在 Informer 页面主体的 HTML 代码中，另一个需要注意的小细节是将信息链接的 `class` 属性设置为 `"info"`。`info` 样式表类在 `infowinkit.css` 文件中定义，它用于使信息链接的样式与标准链接略有不同。这些链接提供了视觉提示，表明它们的功能超出常规。更具体地说，信息链接显示为双下划线，并且在悬停时还会高亮显示。
+在 Informer 页面主体的 HTML 代码中，另一个需要注意的小细节是将信息链接的`class`属性设置为`"info"`。`info`样式表类在`infowinkit.css`文件中定义，它用于使信息链接的样式与标准链接略有不同。这些链接提供了视觉提示，表明它们的功能超出常规。更具体地说，信息链接显示为双下划线，并且在悬停时还会高亮显示。
 
-为了使 `info` 样式类生效，必须使用以下代码行将 `infowinkit.css` 样式表导入到 Informer 网页（`informer.html`）的头部：
+为了使`info`样式类生效，必须使用以下代码行将`infowinkit.css`样式表导入到 Informer 网页（`informer.html`）的头部：
 
 ```html
 <link rel="stylesheet" type="text/css" href="infowinkit.css" />
@@ -4674,25 +4976,30 @@ function showInfoWindow(infoURL, evt) {
   <title>Informer</title>
 
   <link rel="stylesheet" type="text/css" href="infowinkit.css" />
+
   <script type="text/javascript" src="ajaxkit.js"> </script>
+
   <script type="text/javascript" src="domkit.js"> </script>
+
   <script type="text/javascript" src="infowinkit.js"> </script>
 </head>
 ```
+
+
 
 这段代码揭示了 Informer 网页还包含了 Ajax 工具包中的 `ajaxkit.js` 和 `domkit.js` 文件，这些文件提供了与 Ajax 和 JavaScript DOM 相关的几个辅助函数。
 
 有了 Informer 应用程序的核心部分，你只缺少信息弹出窗口本身的内容了。
 
-#### 信息内容页面
+### 信息内容页面
 
 如果你回头查看 Informer 网页主体的代码，你会注意到有五个与滑板装备部件内容相关的信息链接。每个链接都引用了一个 HTML 文件，其中包含要在信息弹出窗口中显示的内容。以下是 Informer 页面引用的 HTML 文件：
 
-*   `skatedeck.html`
-*   `skatetrucks.html`
-*   `skatewheels.html`
-*   `skatehelmet.html`
-*   `skatepads.html`
+- `skatedeck.html`
+- `skatetrucks.html`
+- `skatewheels.html`
+- `skatehelmet.html`
+- `skatepads.html`
 
 每个文件都代表一个迷你网页，当点击链接时，该网页会显示在弹出窗口中。尽管这些文件是文档片段而不是完整的网页，但你仍然可以在 Web 浏览器中打开并查看它们，看看它们的样子。图 9.5 显示了直接在 Web 浏览器中查看的 `skatedeck.html` 文件。
 
@@ -4700,28 +5007,26 @@ function showInfoWindow(infoURL, evt) {
 
 [[查看完整尺寸图像]](ys8wohawzzmxcjm1mjjlzgftdc9zyzc4cjlnmgkvzmmuamdwz3a5czdhadbsav9pmhqv.jpg)![](img/ys8wohawzzmxcjm1mjjlzgftdc9zyzc4cjlnmgkvzmnncdlzmghqn3auawlnmc8-.jpg)
 
-该图显示了滑板板面的信息内容包含一张图片、一个标题和一段文字。我在谈论内容文件时多次使用了“片段”一词。我这么说是因为这些文件中没有普通网页中的 `<html>`、`<head>` 或 `<body>` 标签。相反，内容“页面”只包含足够描述内容的 HTML 代码。为了让你明白我的意思，请看下面 图 9.5 中显示的 `skatedeck.html` 文件的代码：
+该图显示了滑板板面的信息内容包含一张图片、一个标题和一段文字。我在谈论内容文件时多次使用了“片段”一词。我这么说是因为这些文件中没有普通网页中的 `<html>`、`<head>` 或 `<body>` 标签。相反，内容“页面”只包含足够描述内容的 HTML 代码。为了让你明白我的意思，请看下面图 9.5 中显示的 `skatedeck.html` 文件的代码：
 
 ```html
 <table>
- <tr>
-   <td rowspan="2"><img src='skatedeck.jpg'
-     alt='滑板板面' /></td>
-   <td style="font-weight:bold; background-color:#CCCCCC">
-     滑板板面</td>
- </tr>
- <tr>
-   <td>板面是滑板最重要的部分，通常由七层硬枫木制成。这些层被胶合并压制成型，然后切割并加工成所需的形状。
-   </td>
- </tr>
+  <tr>
+    <td rowspan="2"><img src='skatedeck.jpg'
+      alt='滑板板面' /></td>
+    <td style="font-weight:bold; background-color:#CCCCCC">
+      滑板板面</td>
+  </tr>
+  <tr>
+    <td>板面是滑板最重要的部分，通常由七层硬枫木制成。这些层被胶合并压制成型，然后切割并加工成所需的形状。
+    </td>
+  </tr>
 </table>
 ```
 
-注意
 
 
-
-
+## 注意
 
 | ![](img/ys8wohawzzmxcjm1mjjlzgftdc9zyzc4cjlnmgkvdgmucg9zagpwawdll24-.jpg) | 我坦率地承认，我违反了不使用表格进行布局的基本原则，但在这种情况下，用表格来布置滑板内容更简洁、更简单。如果你想成为设计纯粹主义者，放弃表格改用 CSS，请便。 |
 
@@ -4769,7 +5074,7 @@ function showInfoWindow(infoURL, evt) {
 
 关于信息弹出窗口的用途，我其实只是触及了皮毛。我鼓励你去寻找自己独特的应用——只需记住，其主要好处是能够在临时窗口中显示小块 HTML 内容，而不是像传统链接那样打开全新的网页。
 
-注意
+## 注意
 
 | ![](img/ys8wohawzzmxcjm1mjjlzgftdc9zyzc4cjlnmgkvdgmucg9zagpwawdll24-.jpg) | 要知道，信息弹出窗口的大小一旦初始化就不会改变，因此最好尽量让所有内容文件的大小大致相同。这样，它们都可以在单个弹出窗口中显示，只需最少的滚动。理想情况下，应该没有任何滚动，但这在所有浏览器中都很难保证。 |
 
@@ -4777,19 +5082,9 @@ function showInfoWindow(infoURL, evt) {
 
 本章探讨了 Ajax 开发中一个既流行又具争议的领域。虽然弹出窗口在不恰当使用时确实令人反感，但如果谨慎使用并出于有意义的目的，它们也可以非常有用。基于 Ajax 的弹出窗口比标准弹出窗口更有趣，因为它们允许你从服务器动态加载小块数据，而无需打开一个全新的网页。本章引导你开发了一个示例应用程序，该程序使用了本书 Ajax 工具包内置的信息弹出窗口支持。希望你喜欢使用信息弹出窗口，因为这还不是你最后一次见到它们。
 
-## 第 10 章 用 Ajax 预测天气
-
-Ajax 的另一面
-
-| ![](img/ys8wohawzzmxcjm1mjjlzgftdc9zyzc4cjlnmgkvdgmucg9zagpwawdll24-.jpg) | 如果你觉得希腊勇士 Ajax 很厉害，那么纽约街头恶棍 Ajax 呢？在 1979 年的电影《战士帮》中，Ajax 是一个特别好斗的街头帮派成员的名字，他总是随时准备打架。如果这听起来还不够吓人，那么他的无指皮手套和黑色背心可能会吓到你的时尚感！ |
-
-
-
-
-
 ## 第 10 章 使用 Ajax 预测天气
 
-Ajax：另一位勇士
+### Ajax：另一位勇士
 
 | ![](img/ys8wohawzzmxcjm1mjjlzgftdc9zyzc4cjlnmgkvdgmucg9zagpwawdll24-.jpg) | 如果你认为希腊勇士 Ajax 很厉害，那么纽约街头恶棍 Ajax 呢？在 1979 年的电影《战士帮》中，Ajax 是一个特别好斗的街头帮派成员的名字，他总是准备打架。如果这听起来还不够吓人，那么也许他的无指皮手套和黑色背心会吓到你的时尚感！ |
 
@@ -4799,13 +5094,13 @@ Ajax：另一位勇士
 
 本章的 Forecaster 应用程序使用了以下文件，它们位于随书附带的 Live Linux CD-ROM 的`chap10`示例代码文件夹中：
 
-*   `forecaster.html` — 主网页
-*   `forecaster.php` — 用于加载天气预报的服务器脚本
-*   `ajaxkit.js` — Ajax 工具包的核心 Ajax 函数
-*   `domkit.js` — Ajax 工具包的 DOM 相关函数
-*   `infowinkit.js` — Ajax 工具包的信息窗口相关函数
-*   `infowinkit.css` — 信息窗口的样式表
-*   `infowinkit_wait.gif` — 在信息窗口加载信息时显示的动画“加载”图标
+- `forecaster.html` — 主网页
+- `forecaster.php` — 用于加载天气预报的服务器脚本
+- `ajaxkit.js` — Ajax 工具包的核心 Ajax 函数
+- `domkit.js` — Ajax 工具包的 DOM 相关函数
+- `infowinkit.js` — Ajax 工具包的信息窗口相关函数
+- `infowinkit.css` — 信息窗口的样式表
+- `infowinkit_wait.gif` — 在信息窗口加载信息时显示的动画“加载”图标
 
 ### 挑战：收集动态天气信息
 
@@ -4819,10 +5114,6 @@ Ajax：另一位勇士
 
 此挑战中涉及的 Ajax 请求必须以某种方式根据特定位置查询天气服务以获取天气数据。事实证明，邮政编码足以标识一个位置，因此成为查询天气数据的一个很好的数据。然后，Ajax 响应包含天气数据，您必须以某种方式处理这些数据，以便在弹出窗口中显示有意义的天气信息。
 
-
-
-
-
 尽管[天气网](http://Weather.com)在信息质量上无可匹敌，但请记住，你需要在浏览器中导航到该网站，然后输入你想要查询天气报告的地点。如果你不想失去当前浏览页面的上下文，而是希望在不离开页面的情况下快速获取天气更新，这就成了一个问题。这时，弹出窗口就派上了用场。通过在弹出窗口中显示天气数据，你可以让用户继续专注于手头的任务，而不会因为离开页面而分散注意力。或许更重要的是，你消除了用户离开你网站的一个借口。
 
 因此，你的目标并不是创建一个比[天气网](http://Weather.com)等纯天气网站更丰富或更全面的天气替代方案。你的目标是将实时天气数据注入到现有网站的上下文中，从而在不使用户离开你舒适页面的前提下，添加一些有用的新内容。信息弹出窗口是显示天气数据的关键，它不会与正在查看的主页面竞争。
@@ -4831,7 +5122,7 @@ Ajax：另一位勇士
 
 ### 设计：设计一个天气预报器
 
-你为应对动态天气挑战而开发的应用程序称为 Forecaster，其设计在很大程度上围绕本书 Ajax 工具包中 `infowinkit.js` 文件现有的信息窗口支持展开。事实上，Forecaster 应用程序在结构上与第 9 章中开发的 Informer 应用程序非常相似，不同之处在于它请求特定位置的实时天气信息，而不是预构建的 HTML 内容文件。图 10.1 让你了解 Forecaster 应用程序的用户界面是如何构建的。
+你为应对动态天气挑战而开发的应用程序称为 Forecaster，其设计在很大程度上围绕本书 Ajax 工具包中`infowinkit.js`文件现有的信息窗口支持展开。事实上，Forecaster 应用程序在结构上与第 9 章中开发的 Informer 应用程序非常相似，不同之处在于它请求特定位置的实时天气信息，而不是预构建的 HTML 内容文件。图 10.1 让你了解 Forecaster 应用程序的用户界面是如何构建的。
 
 ##### 图 10.1. Forecaster 应用程序的用户界面由一个包含信息链接的网页组成，这些链接会触发一个包含实时天气信息的弹出窗口。
 
@@ -4841,7 +5132,7 @@ Ajax：另一位勇士
 
 为了使 Ajax 天气请求正常工作，你实际上需要以结构化格式（如 XML）访问实时天气数据。事实证明，你可以使用互联网上的多个天气源来完成此任务。我喜欢的一个服务是雅虎天气提供的 RSS 天气源。这些天气数据以 RSS 格式提供，这是一种特定的 XML 数据格式，传统上用于共享新闻，如第 5 章“接入 RSS 新闻源”所示。然而，RSS 源也可以用于其他类型的数据，在这种情况下，雅虎天气使用 RSS 来提供天气数据。
 
-注意
+## 注意
 
 | ![](img/ys8wohawzzmxcjm1mjjlzgftdc9zyzc4cjlnmgkvdgmucg9zagpwawdll24-.jpg) | RSS（真正简易聚合）是一种 XML 数据格式，旨在以一致的方式表示新闻故事。一个典型的 RSS 文档（或源）包含多个新闻故事，并附带详细信息，如标题、描述、发布日期以及在线文章的链接。RSS 格式实际上可以超越新闻领域，对于任何定期变化的文本信息都很有用。有许多第三方应用程序（称为 RSS 阅读器）允许你在单个视图中查看和访问多个 RSS 源。 |
 
@@ -4875,10 +5166,6 @@ Ajax：另一位勇士
 
 ![](img/ys8wohawzzmxcjm1mjjlzgftdc9zyzc4cjlnmgkvzmnncdbzmghnngkuawlmms8-.jpg)
 
-
-
-
-
 该图揭示了 Ajax 请求如何生成一个响应，将天气内容传回浏览器（客户端）。我特意将这种天气信息称为“内容”而非“数据”，因为两者存在细微差别。“数据”通常指未经任何特定方式编码或格式化的原始信息，而“内容”则常指经过某种处理的数据。在此特定案例中，天气信息被归类为内容，因为它以 HTML 代码的形式从服务器返回，并可直接在弹出窗口中显示。
 
 回到图中所示的 Ajax 请求，你将某个地点的邮政编码与 Ajax 请求一起传递，方法是将它作为单个参数打包到 URL 中。以下是一个 URL 示例，用于将邮政编码传递给 Forecaster 应用的 PHP 脚本：
@@ -4887,96 +5174,136 @@ Ajax：另一位勇士
 forecaster.php?zipCode=37205
 ```
 
-这段代码表明，负责处理 Ajax 天气请求的 PHP 脚本位于名为 `forecaster.php` 的文件中。该脚本负责从 Yahoo! Weather 服务器检索 RSS 天气数据，仅提取所需的天气信息，然后将这些信息返回给客户端。你将在稍后标题为“Forecaster 服务器脚本”的部分中，确切了解该脚本如何实现这种天气魔法。
+
+
+这段代码表明，负责处理 Ajax 天气请求的 PHP 脚本位于名为`forecaster.php`的文件中。该脚本负责从 Yahoo! Weather 服务器检索 RSS 天气数据，仅提取所需的天气信息，然后将这些信息返回给客户端。你将在稍后标题为“Forecaster 服务器脚本”的部分中，确切了解该脚本如何实现这种天气魔法。
 
 从服务器返回的天气数据实际上比 Forecaster 应用所需的详细得多，这就是服务器脚本仅提取部分数据返回给客户端的原因。恰好 Yahoo! Weather 服务提供了一块预格式化的天气信息，可以轻松地与其余天气数据分开访问。这块信息被格式化为 HTML 代码，可直接在弹出窗口中显示。以下是该代码的示例：
 
-```
+```html
 <img src="http://us.i1.yimg.com/us.yimg.com/i/us/we/52/30.gif"/>
+
 <br />
+
 <b>Current Conditions:</b><br />
+
 Partly Cloudy, 66 F<br /><br />
+
 <b>Forecast:</b><br />
+
 Wed - Partly Cloudy. High: 69 Low: 42<br />
+
 Thu - Sunny. High: 61 Low: 32<br /><br />
+
 <a href="http://weather.yahoo.com/forecast/37205_f.html">
+
   Full Forecast at Yahoo! Weather</a><br />
+
 (provided by The Weather Channel)<br />
 ```
 
 如你所见，由于多个 HTML 标签的存在，这段代码已经格式化好，可以直接显示。
 
-预格式化的天气信息在主 RSS 天气源中使用 `<description>` 标签进行标识。换句话说，你刚才看到的代码在 RSS XML 代码中被包含在 `<description>` 和 `</description>` 标签之间。以下是一个简化的 RSS 天气源文档，展示了 `<description>` 标签的使用方式：
+预格式化的天气信息在主 RSS 天气源中使用`<description>`标签进行标识。换句话说，你刚才看到的代码在 RSS XML 代码中被包含在`<description>`和`</description>`标签之间。以下是一个简化的 RSS 天气源文档，展示了`<description>`标签的使用方式：
 
-代码视图：
+**代码视图：**
 
-```
+```xml
 <rss version="2.0"
-xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0"
+  xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0"
   xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#">
+
   <channel>
+
     <title>Yahoo! Weather - Nashville, TN</title>
+
     <link>http://weather.yahoo.com/forecast/37205_f.html</link>
+
     <description>Yahoo! Weather for Nashville, TN</description>
+
     ...
+
     <item>
+
       <title>Conditions for Nashville, TN at 10:53 am CST</title>
+
       <geo:lat>36.11</geo:lat>
+
       <geo:long>-86.68</geo:long>
+
       ...
+
       <description><![CDATA[
+
         <img src="http://us.i1.yimg.com/us.yimg.com/i/us/we/52/
           30.gif" /><br />
+
         <b>Current Conditions:</b><br />
+
         Partly Cloudy, 66 F<br /><br />
+
         <b>Forecast:</b><br />
+
         Wed - Partly Cloudy. High: 69 Low: 42<br />
+
         Thu - Sunny. High: 61 Low: 32<br /><br />
+
         <a href="http://weather.yahoo.com/forecast/37205_f.html">
+
           Full Forecast at Yahoo! Weather</a><br />
+
         (provided by The Weather Channel)<br />
+
       ]]></description>
+
       ...
+
     </item>
+
   </channel>
-</rss> 
+
+</rss>
 ```
 
-这段代码揭示了 `<description>` 标签如何嵌入在天气源的 RSS 代码中，以及它如何存储天气信息的 HTML 编码版本。Forecaster 服务器脚本的任务就是提取 `<description>` 标签的内容，并将其作为 Ajax 响应返回给客户端。
+这段代码揭示了`<description>`标签如何嵌入在天气源的 RSS 代码中，以及它如何存储天气信息的 HTML 编码版本。Forecaster 服务器脚本的任务就是提取`<description>`标签的内容，并将其作为 Ajax 响应返回给客户端。
 
-### 整合 Forecaster 应用
+## 整合 Forecaster 应用
 
 除了 Ajax 工具包提供的支持功能（如信息弹出窗口）外，Forecaster 应用由两个组件组成：
 
-*   HTML 网页（`forecaster.html`）
-
-*   PHP 服务器脚本（`forecaster.php`）
+- HTML 网页（`forecaster.html`）
+- PHP 服务器脚本（`forecaster.php`）
 
 接下来的两节将更详细地探讨 Forecaster 拼图中的这些部分。希望你已经对它们的功能有了不错的了解，甚至可能知道它们是如何实现的。
 
-#### Forecaster 网页
+### Forecaster 网页
 
 Forecaster 应用的 HTML 网页由一段文本组成，其中散布着天气信息链接（城市）。该页面看似简单，没有任何输入控件。然而，点击任何一个链接的城市，就会发现 Forecaster 比最初看到的要复杂得多。图 10.4 展示了用户界面的快速预览，这将帮助你理解实现它所需的 HTML 代码。
 
-##### 图 10.4. Forecaster 网页由一段文本组成，其中包含用于将城市与其各自的实时天气信息连接起来的信息链接。
+#### 图 10.4. Forecaster 网页由一段文本组成，其中包含用于将城市与其各自的实时天气信息连接起来的信息链接。
 
 [[查看完整尺寸图片]](ys8wohawzzmxcjm1mjjlzgftdc9zyzc4cjlnmgkvzmmuamdwz3awczvhadbsav9pmxqv.jpg)![](img/ys8wohawzzmxcjm1mjjlzgftdc9zyzc4cjlnmgkvzmnncdbzmghqnxauawlnms8-.jpg)
 
 以下是图中页面（`forecaster.html`）背后的 HTML 代码：
 
-代码视图：
+**代码视图：**
 
-```
+```html
 <body onload="initInfoWindow(300, 240)">
+
   <div id="ajaxState" style="display:none"></div>
+
   <br />
+
   <h2>Forecaster - Traveling the U.S.</h2>
+
   <p>A great way to get the full cultural experience of
     traveling is to hit the road and cover as much terrain as
     possible. Within the U.S., it is possible to experience the
     full range of climates, which can often make planning
     difficult in terms of preparing for different kinds of
     weather.
+
     For example, let's say you start your trip in <a href="#"
     class="info" onclick="return showInfoWindow(
     'forecaster.php?zipCode=10001', event)">New York City</a>
@@ -4984,8 +5311,8 @@ Forecaster 应用的 HTML 网页由一段文本组成，其中散布着天气信
     <a href="#" class="info" onclick="return showInfoWindow(
     'forecaster.php?zipCode=94129', event)">San Francisco</a>.
     Depending upon the time of year, you will experience quite a
-    variety of different weather. If your trip cuts deep into
-    the south, you'll come to understand why <a href="#"
+    variety of different weather. If your trip cuts deep into the
+    south, you'll come to understand why <a href="#"
     class="info" onclick="return showInfoWindow(
     'forecaster.php?zipCode=30301', event)">Atlanta</a> is
     affectionately known as Hotlanta. Cruising west, you'll need
@@ -5002,69 +5329,79 @@ Forecaster 应用的 HTML 网页由一段文本组成，其中散布着天气信
     'forecaster.php?zipCode=80012', event)">Denver</a> at the
     foot of the Rockies is sure to energize you for the final
     push toward California.
-  </p> </body> 
+
+  </p> </body>
 ```
 
 第一行代码立即执行一项非常重要的任务：初始化信息弹出窗口并设置其默认大小（300x240）。页面中的其余代码创建了文本段落并定义了天气信息链接。由于信息链接直接嵌入在文本段落中，因此有点难以辨认，我们单独看一个链接：
 
-```
+```html
 <a href="#" class="info"
- onclick="return showInfoWindow('forecaster.php?zipCode=94129',
- event)">San Francisco</a>
+  onclick="return showInfoWindow('forecaster.php?zipCode=94129',
+  event)">San Francisco</a>
 ```
 
-
-
-
-此链接用于弹出一个包含邮政编码 94129（位于加利福尼亚州旧金山）当前天气信息的窗口。请注意，邮政编码作为参数（`zipCode`）传递给 `forecaster.php` 服务器脚本。服务器脚本和邮政编码的完整 URL 被传入 `showInfoWindow()` 函数，该函数是 Ajax Toolkit 中用于显示信息弹出窗口的函数。
+此链接用于弹出一个包含邮政编码 94129（位于加利福尼亚州旧金山）当前天气信息的窗口。请注意，邮政编码作为参数（`zipCode`）传递给`forecaster.php`服务器脚本。服务器脚本和邮政编码的完整 URL 被传入`showInfoWindow()`函数，该函数是 Ajax Toolkit 中用于显示信息弹出窗口的函数。
 
 虽然 Forecaster 网页的主体部分是精彩内容所在，但页面头部同样重要，因为它导入了所需的 JavaScript 和 CSS 文件。以下是页面头部：
 
-```
+```html
 <head>
+
   <title>Forecaster</title>
 
   <link rel="stylesheet" type="text/css" href="infowinkit.css" />
+
   <script type="text/javascript" src="ajaxkit.js"> </script>
+
   <script type="text/javascript" src="domkit.js"> </script>
+
   <script type="text/javascript" src="infowinkit.js"> </script>
+
 </head>
 ```
 
 CSS 文件和三个 JavaScript 文件都是本书 Ajax Toolkit 的一部分，该工具包提供了许多有用的 Ajax 函数。
 
-#### Forecaster 服务器脚本
+### Forecaster 服务器脚本
 
 由于 Forecaster 应用程序中的天气信息最终是从远程服务器（Yahoo! Weather）加载的，因此无法直接从客户端发出 Ajax 请求。为了绕过这一限制并访问远程服务器上的信息，必须使用 Forecaster 服务器脚本。不仅如此，该服务器脚本还扮演着另一个角色：它必须提取天气数据的特定部分，并仅将这些数据返回给客户端。换句话说，客户端不需要 Yahoo! Weather 数据源的全部内容。
 
-Forecaster PHP 服务器脚本期望接收一个邮政编码，然后使用该邮政编码请求特定位置的天气数据。以下是 `forecaster.php` 服务器脚本的代码：
+Forecaster PHP 服务器脚本期望接收一个邮政编码，然后使用该邮政编码请求特定位置的天气数据。以下是`forecaster.php`服务器脚本的代码：
 
-```
+```php
 <?php
+
 header('Content-Type: text/xml');
 
 // Parse the XML weather data into a structure
+
 $rawFeed =
 file_get_contents("http://weather.yahooapis.com/forecastrss?p=" .
   $_REQUEST["zipCode"]);
+
 $xml = new SimpleXmlElement($rawFeed);
+
 echo "<div>" . $xml->channel->item->description . "</div>";
+
 ?>
 ```
 
-请记住，此脚本的任务是从 Yahoo! Weather 服务检索 XML（RSS）文档，提取 `<description>` 标签内的内容，然后将该 HTML 代码传递给客户端。客户端只需在弹出窗口中显示天气 HTML 代码即可。实际上，客户端将这些细节委托给了 Ajax Toolkit 中的信息弹出窗口支持。
+请记住，此脚本的任务是从 Yahoo! Weather 服务检索 XML（RSS）文档，提取`<description>`标签内的内容，然后将该 HTML 代码传递给客户端。客户端只需在弹出窗口中显示天气 HTML 代码即可。实际上，客户端将这些细节委托给了 Ajax Toolkit 中的信息弹出窗口支持。
 
-服务器脚本首先确保响应被当作 XML 处理。然后，脚本中的第二段代码从天气服务加载 RSS/XML 天气文档，并确保传递 `zipCode` 参数，以便服务知道天气位置。天气服务返回的原始 XML 数据随后被转换为结构化的 XML 对象，以便轻松访问各个元素。
+服务器脚本首先确保响应被当作 XML 处理。然后，脚本中的第二段代码从天气服务加载 RSS/XML 天气文档，并确保传递`zipCode`参数，以便服务知道天气位置。天气服务返回的原始 XML 数据随后被转换为结构化的 XML 对象，以便轻松访问各个元素。
 
-最后一段代码是脚本实际返回天气信息的地方，该信息作为 Ajax 天气信息请求的响应。格式化的 HTML 天气代码被包裹在 HTML `div` 元素中，然后返回给客户端。
+最后一段代码是脚本实际返回天气信息的地方，该信息作为 Ajax 天气信息请求的响应。格式化的 HTML 天气代码被包裹在 HTML `div`元素中，然后返回给客户端。
 
 在继续测试完成的 Forecaster 应用程序之前，首先单独测试 PHP 脚本非常重要。你在前面的章节中已经看到过这种做法，但在任何涉及自定义服务器脚本的 Ajax 应用程序中，这始终是一个重要步骤。以下是测试 Forecaster 脚本的示例 URL：
 
-```
+```text
 http://www.yourdomain.com/forecaster.php?zipCode=94129
 ```
 
-假设 `forecaster.php` 文件存储在你的服务器上，请将这一行代码中的域名改为你自己的域名，然后在 Web 浏览器中输入该 URL。你也可以直接在本书附带的 Live CD 上尝试这个技巧。无论你从何处访问该脚本，图 10.5 显示了 PHP 脚本生成的 HTML 响应数据。
+
+
+假设`forecaster.php`文件存储在你的服务器上，请将这一行代码中的域名改为你自己的域名，然后在 Web 浏览器中输入该 URL。你也可以直接在本书附带的 Live CD 上尝试这个技巧。无论你从何处访问该脚本，图 10.5 显示了 PHP 脚本生成的 HTML 响应数据。
 
 ##### 图 10.5. 你可以通过在浏览器中直接打开 Forecaster PHP 脚本来查看其返回的 HTML 天气信息。
 
@@ -5078,7 +5415,7 @@ http://www.yourdomain.com/forecaster.php?zipCode=94129
 
 ##### 图 10.6. Forecaster 应用程序启动时，天气弹出窗口处于隐藏状态，因为尚未点击任何城市。
 
-[[查看完整尺寸图片]](ys8wohawzzmxcjm1mjjlzgftdc9zyzc4cjlnmgkvzmmuamdwz3awczdhadbsav9pmxqv.jpg)![](img/ys8wohawzzmxcjm1mjjlzgftdc9zyzc4cjlnmgkvzmnncdbzmghqn3auawlnms8-.jpg)
+[[查看完整尺寸图片]](ys8wohawzzmxcjm1mjjlzgftdc9zyzc4cjlnmgkvzmmuamdwz3awczdhadbsav9pmxqv.jpg)![](img/ys8wohawzzmxcjm1mjjlzgftdc9zyzc4cjlnmgkvzmnncdbzmghqnn3auawlnms8-.jpg)
 
 请注意，在此图中，页面上没有出现任何与天气相关的内容，这意味着天气不会以任何方式干扰主要内容。这一点很重要，因为天气信息旨在作为补充和自愿获取的内容——随时可用，但由用户自行决定是否查看。
 
@@ -5102,16 +5439,13 @@ http://www.yourdomain.com/forecaster.php?zipCode=94129
 
 [[查看完整尺寸图片]](ys8wohawzzmxcjm1mjjlzgftdc9zyzc4cjlnmgkvzmmuamdwz3awczbhadfsav9pmxqv.jpg)![](img/ys8wohawzzmxcjm1mjjlzgftdc9zyzc4cjlnmgkvzmnncdbzmwhqmhauawlnms8-.jpg)
 
-
-
-
 所以，华氏 61 度或许真的不足以成为“热兰大”这个别名的理由，但你要考虑到我们说的是二月份。等到七月份再回头看看 Forecaster 应用，你就会明白我的意思了。
 
 ### 给 Forecaster 来一次极致的 Ajax 改造
 
 改造 Forecaster 应用最快最简单的方法是尝试一些不同的城市。例如，将网页中的一个城市换成你自己的家乡，并确保在城市的信息链接中将邮政编码替换为你自己的邮政编码。更具体地说，一定要修改传入`showInfoWindow()`函数的 URL，使其引用你的邮政编码。举个例子，如果你的邮政编码是 92024（加利福尼亚州恩西尼塔斯），你需要将信息链接的`onclick`事件处理程序中的`showInfoWindow()`函数修改为：
 
-```
+```html
 onclick="return showInfoWindow('forecaster.php?zipCode=92024',
   event)"
 ```
@@ -5122,18 +5456,22 @@ onclick="return showInfoWindow('forecaster.php?zipCode=92024',
 
 例如，以下字段可以在雅虎天气订阅源中访问，以获取未出现在`<description>`标签中的信息：
 
-```
+```xml
 <wind chill="57" direction="230" speed="7" />
+
 <atmosphere humidity="72" visibility="1609" pressure="30.22"
   rising="0" />
+
 <astronomy sunrise="6:28 am" sunset="5:38 pm" />
 ```
 
 在这里，你可以在第一个`<wind>`标签中看到风寒指数、风向和风速。第二个标签（`<atmosphere>`）涉及大气条件，如湿度、能见度、气压以及气压的上升或下降程度。最后，第三个标签（`<astronomy>`）提供了该地点的日出和日落时间。为了帮助理解前两个标签，另一个标签指定了天气数据的单位：
 
-```
+```xml
 <units temperature="F" distance="mi" pressure="in" speed="mph" />
 ```
+
+
 
 这行代码让你知道所有温度都以华氏度表示，距离以英里为单位，气压以英寸为单位，风速以英里/小时为单位。在组装自定义天气数据视图时，你可以提取这些单位并将其附加到天气值上，以提供更多细节，使数值更有意义。
 
@@ -5143,7 +5481,7 @@ onclick="return showInfoWindow('forecaster.php?zipCode=92024',
 
 ## 第 11 章 构建一个 Ajax 运费计算器
 
-高海拔的 Ajax
+### 高海拔的 Ajax
 
 | ![](img/ys8wohawzzmxcjm1mjjlzgftdc9zyzc4cjlnmgkvdgmucg9zagpwawdll24-.jpg) | 如果你热衷于高端滑雪，你可能熟悉作为山脉名称的 Ajax。位于科罗拉多州豪华小镇阿斯彭正南方的阿斯彭山，是阿斯彭/斯诺马斯滑雪区的所在地。当地人有时将阿斯彭山称为 Ajax。 |
 
@@ -5153,11 +5491,11 @@ onclick="return showInfoWindow('forecaster.php?zipCode=92024',
 
 本章中 Shipper 应用使用的以下文件位于本书附带的 Linux live CD-ROM 的`chap11`示例代码文件夹中：
 
-*   `shipper.html`——主网页
-*   `shipper.php`——用于加载运费的服务器脚本
-*   `ajaxkit.js`——Ajax 工具包的核心 Ajax 函数
-*   `domkit.js`——Ajax 工具包的 DOM 相关函数
-*   `wait.gif`——加载运费时显示的动画“加载”图标
+- `shipper.html`——主网页
+- `shipper.php`——用于加载运费的服务器脚本
+- `ajaxkit.js`——Ajax 工具包的核心 Ajax 函数
+- `domkit.js`——Ajax 工具包的 DOM 相关函数
+- `wait.gif`——加载运费时显示的动画“加载”图标
 
 ### 挑战：获取实时运费
 
@@ -5166,38 +5504,6 @@ onclick="return showInfoWindow('forecaster.php?zipCode=92024',
 当然，考虑到确定一件物品的运费涉及多个信息，这并不太令人惊讶。你需要知道出发地和目的地（邮政编码），以及物品本身的详细信息，如尺寸和重量。然后，你还需要从几种可能的运输选项中选择，例如包裹邮寄或优先邮件。所有这些信息都必须仔细地嵌入到 USPS Web 服务能够理解的 XML 文档中。
 
 为了让 Shipper 应用具有实用感，其用户界面模拟了一个购物车，其中你已经选择了要购买的具体商品，并准备结账。然而，为了简单起见，你无法控制购物车的内容。换句话说，Shipper 应用仅专注于接收目的地运输信息，以便动态计算运费。构建一个功能完整的购物车超出了本章的范围。
-
-
-
-尽管在 Shipper 应用程序中，用户无法操作购物车的内容，但目的地邮政编码和运输方式都是可更改的。这就引出了 Ajax 的用武之地。每当邮政编码或运输方式发生变化时，就会向 USPS Web 服务发起一个 Ajax 请求，以获取新的运费并更新购物车。由于应用程序已经知道购物车中商品的价格，因此可以更新购物车。所以，只需将商品价格与运费相加，即可显示购物车总价。
-
-同样，尽管应用程序给人一种功能完备的购物车的错觉，但它实际上只是利用静态购物车数据结合动态运输信息（邮政编码和运输方式），通过 Ajax 获取运费并更新交易总价。这使得挑战紧密围绕当前主题——使用 Ajax 从 USPS Web 服务动态获取运费。
-
-## 第 11 章 构建 Ajax 运费计算器
-
-Ajax 在高海拔
-
-| ![](img/ys8wohawzzmxcjm1mjjlzgftdc9zyzc4cjlnmgkvdgmucg9zagpwawdll24-.jpg) | 如果你喜欢豪华滑雪，你可能熟悉 Ajax 在山脉中的应用。它位于科罗拉多州阿斯彭豪华小镇的正南方，阿斯彭山是阿斯彭/斯诺马斯滑雪区的所在地。当地人有时将阿斯彭山称为 Ajax。 |
-
-你是否厌倦了在线购物体验中，你对某件商品感兴趣，但需要知道运费才能确定是否真的划算？问题是，大多数购物车直到结账流程的最后一步，在你输入姓名、地址、出生日期、母亲 maiden name、童年最爱的宠物以及他们在完成购买前能获取的任何其他个人数据之后，才告诉你运费。如果在结账流程早期，尤其是在输入信用卡信息之前，并且最好无需重新加载页面就能知道运费，那该多好？正如你可能猜到的，Ajax 提供了一种更好的方式。
-
-本章通过展示如何使用 Ajax 在用户甚至没有意识到的情况下动态确定运费，来解决运费问题。不仅如此，运费直接从美国邮政服务（USPS）的运费 Web 服务获取，这意味着你无需猜测或处理可能过时的查找表——你直接从源头获取信息。本章中的 Shipper 示例应用程序明确展示了 Ajax 如何优雅地解决一个常见问题，并巧妙地改善任何涉及运费计算的 Web 应用的用户体验。
-
-本章中 Shipper 应用程序使用的文件位于随书附带的 Linux live CD-ROM 的`chap11`示例代码文件夹中：
-
-*   `shipper.html`——主网页
-*   `shipper.php`——用于加载运费的服务器脚本
-*   `ajaxkit.js`——Ajax 工具包的核心 Ajax 函数
-*   `domkit.js`——Ajax 工具包的 DOM 相关函数
-*   `wait.gif`——加载运费时显示的动画“加载”图标
-
-### 挑战：获取实时运费
-
-本章的挑战理论上简单，但实践上有些棘手。棘手之处在于，用于获取运费信息的 Web 服务并不像本书中你看到的其他一些 Web 服务那样容易访问。更具体地说，本章中的 Shipper 应用程序使用美国邮政服务 Web 工具来获取运费。问题在于，USPS Web 服务要求你提交一个相当详细的 XML 文档才能获得运费。
-
-当然，考虑到确定运输一件物品的成本涉及多个信息，这并不太令人惊讶。你有出发地和目的地（邮政编码），以及物品本身的详细信息，如尺寸和重量。然后你必须从几种可能的运输选项中选择，例如包裹邮递或优先邮件。所有这些信息都必须仔细地放入 USPS Web 服务能够理解的 XML 文档中。
-
-为了使 Shipper 应用程序具有实用感，其用户界面模拟了一个购物车，其中你已经选择了要购买的特定商品并准备结账。然而，为了简单起见，你不提供对购物车内容的控制。换句话说，Shipper 应用程序仅专注于接收目的地运输信息，以便动态计算运费。构建一个功能完备的购物车超出了本章的范围。
 
 尽管在 Shipper 应用程序中，用户无法操作购物车的内容，但目的地邮政编码和运输方式都是可更改的。这就引出了 Ajax 的用武之地。每当邮政编码或运输方式发生变化时，就会向 USPS Web 服务发起一个 Ajax 请求，以获取新的运费并更新购物车。由于应用程序已经知道购物车中商品的价格，因此可以更新购物车。所以，只需将商品价格与运费相加，即可显示购物车总价。
 
@@ -5217,10 +5523,7 @@ Ajax 在高海拔
 
 Shipper 应用程序的另一个微妙之处在图中没有显示，即使用动画“加载”图像来指示 Ajax 请求的状态。当在 USPS 服务器上查询运费时，该图像会代替运费显示。图 11.2 展示了这个小图像`wait.gif`的样子。
 
-
-
-
-##### 图 11.2\. Shipper 应用程序使用了一个小型的动画“加载”图像（`wait.gif`），让用户知道 Ajax 请求正在处理中。
+##### 图 11.2. Shipper 应用程序使用了一个小型的动画“加载”图像（`wait.gif`），让用户知道 Ajax 请求正在处理中。
 
 ![](img/ys8wohawzzmxcjm1mjjlzgftdc9zyzc4cjlnmgkvzmnncdfzmghqmnauawlnms8-.jpg)
 
@@ -5238,30 +5541,32 @@ Shipper 应用程序的客户端请求是本书中遇到的较为棘手的 Ajax 
 
 我已经提到过，Shipper 应用程序只需要传递邮政编码和运输方式，以便从 USPS Web 服务器获取实时运费。虽然从应用程序的角度来看这可能是正确的，但从 USPS 的角度来看却完全不是这样。要确定邮寄一件物品的费用，需要更多的信息。更具体地说，USPS 国内费率 Web 服务需要以下信息才能成功返回运费：
 
-*   用户 ID
-*   密码
-*   运输方式
-*   出发地邮政编码
-*   目的地邮政编码
-*   物品重量（磅）
-*   物品重量（盎司）
-*   容器类型
-*   尺寸
-*   可机加工性（在正常包装限制内）
+- 用户 ID
+- 密码
+- 运输方式
+- 出发地邮政编码
+- 目的地邮政编码
+- 物品重量（磅）
+- 物品重量（盎司）
+- 容器类型
+- 尺寸
+- 可机加工性（在正常包装限制内）
 
 前两项信息是你的 USPS Web Tools 账户的用户 ID 和密码，即使是测试 Shipper 应用程序也需要这些信息。事实上，在运行该应用程序之前，你必须先获取自己的用户 ID。正如我之前所说，USPS 在允许访问其 Web 服务方面比你在本书中遇到的其他服务要严格得多。相应地，你可以安全地从服务器脚本中引用你的 USPS 用户 ID 和密码，而不是从客户端网页中引用，这为 Shipper 应用程序提供了额外的安全措施。
 
-注意
-
-| ![](img/ys8wohawzzmxcjm1mjjlzgftdc9zyzc4cjlnmgkvdgmucg9zagpwawdll24-.jpg) | 出于测试目的，你很可能只会被分配一个用户 ID 而没有密码，这意味着在发出运费请求时，你可以将密码留空。 |
-| --- | --- |
+> **注意**
+>
+> ![](img/ys8wohawzzmxcjm1mjjlzgftdc9zyzc4cjlnmgkvdgmucg9zagpwawdll24-.jpg)
+>
+> 出于测试目的，你很可能只会被分配一个用户 ID 而没有密码，这意味着在发出运费请求时，你可以将密码留空。
 
 你应该对后续的信息有了一定的了解，因为我们已经讨论了很多关于运输方式和邮政编码的内容。然而，值得指出的是，Shipper 应用程序将出发地邮政编码硬编码为 USPS 测试所需的测试邮政编码。在生产环境中，你将把这个邮政编码更改为你实际寄送包裹的邮政编码。
 
-注意
-
-| ![](img/ys8wohawzzmxcjm1mjjlzgftdc9zyzc4cjlnmgkvdgmucg9zagpwawdll24-.jpg) | 当我说应用程序“硬编码”某条信息时，我只是指应用程序在内部设置该信息，而不是允许用户选择或输入它。这主要是为了简化 Shipper 应用程序，尽管即使在生产应用程序中，某些硬编码的信息也不太可能改变。 |
-| --- | --- |
+> **注意**
+>
+> ![](img/ys8wohawzzmxcjm1mjjlzgftdc9zyzc4cjlnmgkvdgmucg9zagpwawdll24-.jpg)
+>
+> 当我说应用程序“硬编码”某条信息时，我只是指应用程序在内部设置该信息，而不是允许用户选择或输入它。这主要是为了简化 Shipper 应用程序，尽管即使在生产应用程序中，某些硬编码的信息也不太可能改变。
 
 传递给 USPS Web 服务的两个重量值是为了将包裹重量分解为不同的单位分量。这些重量是结合使用的，这意味着一个重 4 磅 3 盎司的包裹会得到“磅”值为 4，“盎司”值为 3。换句话说，这并不意味着你要以不同单位提供总重量。再举一个例子，如果一个包裹重 6 磅 0 盎司，那么“磅”值为 6，“盎司”值为 0。Shipper 应用程序再次硬编码了这些值，因为它只是模拟一个购物车，并假设你在结账流程的这一点上已经选择了一件商品。
 
@@ -5283,31 +5588,33 @@ Shipper 应用程序的客户端请求是本书中遇到的较为棘手的 Ajax 
 
 Shipper 应用程序中的 Ajax 请求用于将用户输入的邮政编码和运输方式，以及若干其他固定的 USPS 运输信息，传递到服务器。作为回报，PHP 服务器脚本向 Shipper 客户端网页返回一个单一的运费。图 11.3 有助于直观地说明这种数据传输。
 
-
-
-
-
 ##### 图 11.3. Shipper 应用涉及将多条发货信息发送到服务器，并将单一运费返回给客户端。
 
 ![](img/ys8wohawzzmxcjm1mjjlzgftdc9zyzc4cjlnmgkvzmnncdfzmghnm2kuawlmms8-.jpg)
 
 在进一步深入 Shipping 应用的细节之前，非常重要的一点是：你必须先在 USPS 测试服务器上测试任何使用 USPS Web Tools 的应用，之后才能获准使用生产服务器。实际上，这意味着你在测试应用时只能使用一套非常特定的测试数据。也就是说，你即将看到的 Shipper 应用的测试数据并非随意选取——而是由 USPS 专门提供，用于其测试服务器。
 
-注意
-
-| ![](img/ys8wohawzzmxcjm1mjjlzgftdc9zyzc4cjlnmgkvdgmucg9zagpwawdll24-.jpg) | 如果你在使用 USPS 测试服务器时偏离了标准的 USPS 测试数据，Shipper 应用将无法正常工作。在获得 USPS 验证并访问其生产服务器之前，你无法尝试全面的测试数据（邮政编码）。关于如何获得验证的更多信息，请参见本章后面的“为 Shipper 进行极致的 Ajax 改造”一节。 |
+> **注意**
+>
+> ![](img/ys8wohawzzmxcjm1mjjlzgftdc9zyzc4cjlnmgkvdgmucg9zagpwawdll24-.jpg)
+>
+> 如果你在使用 USPS 测试服务器时偏离了标准的 USPS 测试数据，Shipper 应用将无法正常工作。在获得 USPS 验证并访问其生产服务器之前，你无法尝试全面的测试数据（邮政编码）。关于如何获得验证的更多信息，请参见本章后面的“为 Shipper 进行极致的 Ajax 改造”一节。
 
 USPS 强加的测试数据甚至限制你只能使用特定的出发地邮政编码和特定的目的地邮政编码。以下是一个 Ajax 请求 URL 的示例，它使用标准的 USPS 测试数据集来为 Shipper 应用获取运费数据：
 
-```
+```text
 shipper.php?userID=YOURUSPSUSERID&origZip=10022&destZip=20008&
+
 weightLb=10&weightOz=5&container=Flat%20Rate%20Box%20&
+
 size=Large&mailService=Priority%20Mail
 ```
 
-首先，请注意这是一个很长的 URL，尽管它在页面上被分成了多行。所有这些信息应该至少有些熟悉，因为你已经了解了 USPS 国内运费请求所需的各个部分。有一点我还没有完全解释清楚，那就是用户 ID，你会注意到它被设置为 `YOURUSPSUSERID`。你可能还注意到 URL 中没有指定密码。这是怎么回事？
 
-为了访问 USPS Web Tools，你需要拥有自己的用户 ID，该 ID 由 USPS 颁发给你，并且 USPS 对用户 ID 的共享非常严格。这就是为什么我不能直接在这里打印我的 ID 供你使用。因此，在继续之前，我建议你（免费）注册你自己的 USPS Web Tools 用户 ID，网址为 [`www.usps.com/webtools/`](http://www.usps.com/webtools/)。获得此 ID 后，你就可以将其插入到你刚才看到的 URL 中，以完成一个 Shipper Ajax 请求 URL。
+
+首先，请注意，这是一个很长的 URL，尽管它在页面上被分成了多行。所有这些信息应该至少有些熟悉，因为你已经了解了 USPS 国内运费请求所需的各个部分。有一点我还没有完全解释清楚，那就是用户 ID。你会注意到它被设置为 `YOURUSPSUSERID`。你可能还注意到 URL 中没有指定密码。这是怎么回事？
+
+为了访问 USPS Web Tools，你需要拥有自己的用户 ID。该 ID 由 USPS 颁发给你，并且 USPS 对用户 ID 的共享非常严格。这就是为什么我不能直接在这里打印我的 ID 供你使用。因此，在继续之前，我建议你（免费）注册你自己的 USPS Web Tools 用户 ID，网址为 [`www.usps.com/webtools/`](http://www.usps.com/webtools/)。获得此 ID 后，你就可以将其插入到你刚才看到的 URL 中，以完成一个 Shipper Ajax 请求 URL。
 
 在 USPS Web 服务应用的测试阶段，不需要提供密码，这就是为什么 URL 中没有指定密码。在生产环境中，你当然会使用密码；`shipper.php` 服务器脚本通过请求 URL 中的 `password` 参数接受密码。
 
@@ -5315,108 +5622,154 @@ size=Large&mailService=Priority%20Mail
 
 你刚刚看到了 Ajax 请求的 URL，现在让我们把注意力转向 USPS 请求，它要求发货信息以 XML 格式呈现：
 
-```
+```text
 http://testing.shippingapis.com/ShippingAPITest.dll?API=RateV2&
+
 XML=<RateV2Request%20USERID="YOURUSPSUSERID"%20PASSWORD="">
+
 <Package%20ID="0"><Service>All</Service><ZipOrigination>10022
+
 </ZipOrigination><ZipDestination>20008</ZipDestination><Pounds>
+
 10</Pounds><Ounces>5</Ounces><Container>Flat%20Rate%20Box
+
 </Container><Size>Large</Size><Machinable>true</Machinable>
+
 </Package></RateV2Request>
 ```
 
 哎呀！我知道你在想，这看起来是一团糟的 XML 代码。当以 URL 的形式挤在一起时，确实如此。但让我们添加一些换行和制表符，以更传统的 XML 视图来展示它：
 
-```
+```xml
 http://testing.shippingapis.com/ShippingAPITest.dll?API=RateV2&
+
 XML=
+
 <RateV2Request USERID="YOURUSPSUSERID" PASSWORD="">
+
   <Package ID="0">
+
     <Service>All</Service>
+
     <ZipOrigination>10022</ZipOrigination>
+
     <ZipDestination>20008</ZipDestination>
+
     <Pounds>10</Pounds>
+
     <Ounces>5</Ounces>
+
     <Container>Flat Rate Box</Container>
+
     <Size>Large</Size>
+
     <Machinable>true</Machinable>
+
   </Package>
+
 </RateV2Request>
 ```
 
 现在，USPS 请求 URL 应该更容易理解了。实际上，Ajax 请求数据已经被格式化为一个符合 USPS 国内运费请求格式的 XML 文档。唯一没有直接映射到你传递的数据的两个信息是 `<Service>` 和 `<Machinable>` 标签，它们用于指示你想要所有运输方式（服务）的运费，并且包裹确实是可机加工的（包装方面没有异常）。
 
-当此请求发送到 USPS 服务器后，会返回另一个不同的 XML 文档：
+当此请求发送到 USPS 服务器后，会返回另一个不同的 XML 文档。
 
-代码视图：
+### 代码视图
 
-```
+```xml
 <RateV2Response>
+
   <Package ID="0">
+
     <ZipOrigination>10022</ZipOrigination>
+
     <ZipDestination>20008</ZipDestination>
+
     <Pounds>10</Pounds>
+
     <Ounces>5</Ounces>
+
     <Size>LARGE</Size>
+
     <Machinable>TRUE</Machinable>
+
     <Zone>3</Zone>
+
     <Postage>
+
       <MailService>Express Mail to PO Addressee</MailService>
+
       <Rate>39.20</Rate>
+
     </Postage>
+
     <Postage>
+
       <MailService>Priority Mail</MailService>
+
       <Rate>8.95</Rate>
+
     </Postage>
+
     <Postage>
+
       <MailService>Parcel Post</MailService>
+
       <Rate>7.80</Rate>
+
     </Postage>
+
     <Postage>
+
       <MailService>Bound Printed Matter</MailService>
+
       <Rate>3.53</Rate>
+
     </Postage>
+
     <Postage>
+
       <MailService>Media Mail</MailService>
+
       <Rate>5.14</Rate>
+
     </Postage>
+
     <Postage>
+
       <MailService>Library Mail</MailService>
+
       <Rate>4.91</Rate>
+
     </Postage>
+
   </Package>
-</RateV2Response> 
+
+</RateV2Response>
 ```
 
 这个响应文档重复了部分原始请求信息，但也包含了大量的运费信息。实际上，因为请求中指定了 `All` 作为运输方式，所以响应包含了所有可能运输方式的运费。而且由于运费是 XML 格式，在 PHP 代码中提取特定费率并不困难。例如，`server.php` 脚本在查询 Priority Mail 运输方式时会返回以下数据：
 
-```
+```text
 8.95
 ```
 
 希望你现在开始理解数据在 Shipper 应用中是如何传输的。为了确保你没有在 URL 和 XML 代码的旋风中被搞晕，以下是该过程的工作原理总结：
 
-1.  你的客户端网页通过包含发货信息的 URL 向你的 PHP 服务器脚本发出 Ajax 请求。
-
-2.  你的 PHP 服务器脚本构建另一个包含 XML 发货信息的 URL，并向 USPS 国内运费 Web 服务发出请求。
-
-3.  USPS 国内运费 Web 服务返回一个包含所有运输方式运费的 XML 文档。
-
-4.  你的 PHP 服务器脚本解析出所需运输方式的运费，并将其返回给你的客户端网页。
-
-5.  结束。
+1. 你的客户端网页通过包含发货信息的 URL 向你的 PHP 服务器脚本发出 Ajax 请求。
+2. 你的 PHP 服务器脚本构建另一个包含 XML 发货信息的 URL，并向 USPS 国内运费 Web 服务发出请求。
+3. USPS 国内运费 Web 服务返回一个包含所有运输方式运费的 XML 文档。
+4. 你的 PHP 服务器脚本解析出所需运输方式的运费，并将其返回给你的客户端网页。
+5. 结束。
 
 但这并不是真正的结束，因为你还没有看到实现这一切的代码。显然，是时候把所有东西整合起来了。
 
-### 整合 Shipper 应用
-
-
-
+## 整合 Shipper 应用
 
 尽管看似是一个相当复杂的数据通信模型，但 Shipper 应用程序在组件和部件方面却非常简单。实际上，除了标准的 Ajax Toolkit 文件外，该应用程序仅包含两个文件：
 
-*   HTML 网页（`shipper.html`）
-*   PHP 服务器脚本（`shipper.php`）
+- HTML 网页（`shipper.html`）
+- PHP 服务器脚本（`shipper.php`）
 
 接下来的几节将更详细地探讨 Shipper 应用程序拼图中的这两个部分。
 
@@ -5424,120 +5777,214 @@ XML=
 
 Shipper 应用程序的 HTML 网页由几个文本输入字段组成，允许用户输入运输信息。这些字段大多是为了支持购物车结账的概念而设置的装饰性元素。邮政编码字段显然在应用程序的功能中扮演着重要角色，运输方式选择框也是如此。图 11.4 展示了 Shipper 应用程序在输入无效邮政编码时的使用情况，以便显示邮政编码输入控件右侧的错误信息显示区域。
 
-##### 图 11.4. Shipper 网页由多个输入控件和显示区域组成，尽管邮政编码输入和运费输出字段是最重要的。
+##### 图 11.4：Shipper 网页由多个输入控件和显示区域组成，尽管邮政编码输入和运费输出字段是最重要的。
 
-[[查看完整尺寸图像]](ys8wohawzzmxcjm1mjjlzgftdc9zyzc4cjlnmgkvzmmuamdwz3axczrhadbsav9pmxqv.jpg)![](img/ys8wohawzzmxcjm1mjjlzgftdc9zyzc4cjlnmgkvzmnncdfzmghqnhauawlnms8-.jpg)
+[[查看完整尺寸图像]](ys8wohawzzmxcjm1mjjlzgftdc9zyzc4cjlnmgkvzmmuamdwz3axczrhadbsav9pmxqv.jpg)
+
+![](img/ys8wohawzzmxcjm1mjjlzgftdc9zyzc4cjlnmgkvzmnncdfzmghqnhauawlnms8-.jpg)
 
 根据图中所示的 Shipper 应用程序布局，请查看 `shipper.html` 网页主体部分的 HTML 代码：
 
-代码视图：
+### 代码视图
 
-```
+```html
 <body onload="initForm()">
+
   <div id="ajaxState" style="display:none"></div>
+
   <br />
+
   <table width="500px">
+
     <tr>
+
       <td class="heading" colspan="3">Shipping Information</td>
+
     </tr>
+
     <tr>
+
       <td class="label">Name:</td>
+
       <td class="value" colspan="2"><input type="text"
+
         id="name" size="30" /></td>
+
     </tr>
+
     <tr>
+
       <td class="label">Address 1:</td>
+
       <td class="value" colspan="2"><input type="text"
+
         id="addr1" size="30" /></td>
+
     </tr>
+
     <tr>
+
       <td class="label">Address 2:</td>
+
       <td class="value" colspan="2"><input type="text"
+
         id="addr2" size="30" /></td>
+
     </tr>
+
     <tr>
+
       <td class="label">City:</td>
+
       <td class="value" colspan="2"><input type="text"
+
         id="city" size="20" /></td>
+
     </tr>
+
     <tr>
+
       <td class="label">State/Province/Region:</td>
+
       <td class="value" colspan="2"><input type="text"
+
         id="state" size="3" /></td>
+
     </tr>
+
     <tr>
+
       <td class="label">ZIP/Postal Code:</td>
+
       <td class="value"><input type="text" id="zipCode" size="10"
+
         onchange="getShipRate()" /></td>
+
       <td class="label" width="50%"><span id="zipCodeErr"
+
         style="font-size:80%; color:#BB0000;"></span></td>
+
     </tr>
+
     <tr>
+
       <td class="label">Country:</td>
+
       <td class="value" colspan="2"><input type="text"
+
          id="country" size="25" value="USA"
+
          readonly="readonly" /></td>
+
     </tr>
+
     <tr>
+
       <td class="label">Phone Number:</td>
+
       <td class="value" colspan="2"><input type="text" id="phone"
+
         size="10" /></td>
+
     </tr>
+
   </table>
+
   <br />
+
   <table width="500px">
+
     <tr>
+
       <td colspan="3" class="heading">Order Summary</td>
+
    </tr>
+
    <tr>
+
       <td class="label">Item:</td>
+
       <td class="label"><span id="item"></span></td>
+
       <td class="label"><span id="price"></span></td>
+
    </tr>
+
    <tr>
+
       <td class="label">Shipping & Handling:</td>
+
       <td class="label">
+
         <select id="mailService" onchange="getShipRate()">
+
           <option value="Parcel Post">Parcel Post</option>
+
           <option value="Priority Mail" selected="selected">
+
             Priority Mail</option>
+
           <option value="Express Mail to PO Addressee">
+
             Express Mail</option>
+
         </select>
+
        </td>
+
        <td class="label"><span id="shiprate">0.00</span></td>
+
     </tr>
+
     <tr>
+
        <td class="label">Total:</td>
+
        <td class="label"></td>
+
        <td class="label"><span id="total"></span></td>
+
     </tr>
+
   </table>
+
   <table width="500px">
+
     <tr>
+
        <td class="heading"><input type="button"
+
          value="Proceed with Checkout" /></td>
+
     </tr>
+
    </table>
- </body> 
+
+ </body>
 ```
 
 这段 HTML 代码的大部分内容都用于各个输入字段的标签和文本框。唯一重要的输入字段是邮政编码输入控件，它在 `onchange` 事件处理程序中调用了 `getShipRate()` 函数。以下是这段代码，以防你在大列表中难以找到它：
 
-```
+```html
 <input type="text" id="zipCode" size="10";
   onchange="getShipRate()" />
 ```
 
 紧跟在邮政编码 `input` 元素之后的是一个 `span` 元素，用于显示邮政编码错误信息。你需要继续往下看代码，才能遇到另一个感兴趣的元素，即邮件服务（运输方式）选择列表。该列表包含三个可能的选项（包裹邮寄、优先邮件和寄往邮政收件人的快递邮件），并且也在 `onchange` 事件中调用了 `getShipRate()` 函数。以下是这个列表单独提取出来的代码：
 
-```
+```html
 <select id="mailService" onchange="getShipRate()">
+
   <option value="Parcel Post">Parcel Post</option>
+
   <option value="Priority Mail" selected="selected">
+
     Priority Mail</option>
+
   <option value="Express Mail to PO Addressee">
+
     Express Mail</option>
+
 </select>
 ```
 
@@ -5545,26 +5992,38 @@ Shipper 应用程序的 HTML 网页由几个文本输入字段组成，允许用
 
 最后，代码末尾附近的“Proceed with Checkout”按钮仅用于装饰，表示完成在线订单还有最后一步。
 
-回到 Shipper 网页主体 HTML 代码的开头，你可能注意到了在 body 的 `onload` 事件处理程序中调用了 `initForm()` 函数。以下是该函数的代码：
+回到 Shipper 网页主体 HTML 代码的开头，你可能注意到了在 `body` 的 `onload` 事件处理程序中调用了 `initForm()` 函数。以下是该函数的代码：
 
-```
+```javascript
 function initForm() {
+
   replaceText(document.getElementById("item"), itemDesc);
+
   replaceText(document.getElementById("price"), itemPrice);
+
 }
 ```
+
+
+
 
 这段代码的目的是在页面首次加载时，初始设置页面上的商品描述和价格值。这两条信息都不会直接影响运费，尽管价格确实会影响订单总额的计算。
 
 商品描述和价格与几个其他运输相关变量一起硬编码在网页中。以下是设置这些变量值的代码：
 
-```
+```javascript
 var origZip = "10022"; // Origination ZIP code
+
 var itemDesc = "Popcorn Holiday Feast";
+
 var itemPrice = 29.99;
+
 var weightLb = "10";
+
 var weightOz = "5";
+
 var container = "Flat Rate Box";
+
 var size = "Large";
 ```
 
@@ -5572,29 +6031,43 @@ var size = "Large";
 
 之前我提到了 `getShipRate()` 函数，它被调用来发起获取运费的 Ajax 请求。以下是该函数的代码：
 
-
-
-
-```
+```javascript
 function getShipRate() {
+
   // Display the wait image
+
   document.getElementById("shiprate").innerHTML =
+
     "<img src='wait.gif' alt='Looking up shipping rate...' />";
 
   // Assemble the shipping info request string
+
   var shipInfo = "userID=YOURUSPSUSERID" +
+
     "&origZip=" + encodeURIComponent(origZip) +
+
     encodeURIComponent(
+
     document.getElementById("zipCode").value) +
+
     "&weightLb=" + encodeURIComponent(weightLb) +
+
     "&weightOz=" + encodeURIComponent(weightOz) +
+
     "&container=" + encodeURIComponent(container) +
+
     "&size=" + encodeURIComponent(size) +
+
     "&mailService=" +
+
     encodeURIComponent(
+
     document.getElementById("mailService").value);
+
   ajaxSendRequest("GET", "shipper.php?" + shipInfo,
+
     handleRequest);
+
 }
 ```
 
@@ -5602,21 +6075,35 @@ function getShipRate() {
 
 Ajax 运输请求由 `handleRequest()` 函数处理，该函数负责从服务器脚本接收单个运费，并相应地更新页面。以下是该函数的代码：
 
-```
+```javascript
 function handleRequest() {
+
   ajaxUpdateState();
+
   if (request.readyState == 4 && request.status == 200) {
+
     var shipRate = request.responseText;
+
     if (parseFloat(shipRate) != 0.0) {
+
       replaceText(document.getElementById("zipCodeErr"), "");
+
       updateTotal(shipRate);
+
     }
+
     else {
+
       replaceText(document.getElementById("zipCodeErr"),
+
         "Cannot ship to this ZIP code.");
+
       updateTotal("0.00");
+
     }
+
   }
+
 }
 ```
 
@@ -5624,11 +6111,15 @@ function handleRequest() {
 
 坚持住，我们快完成 Shipper 网页的代码了。以下是最后一段你需要了解的代码，即 `updateTotal()` 函数：
 
-```
+```javascript
 function updateTotal(shipRate) {
+
   document.getElementById("shiprate").innerHTML = shipRate;
+
   var total = itemPrice + parseFloat(shipRate);
+
   replaceText(document.getElementById("total"), "$" + total);
+
 }
 ```
 
@@ -5640,27 +6131,47 @@ function updateTotal(shipRate) {
 
 虽然这听起来可能需要大量杂乱的代码，但 Shipper 应用程序的 PHP 服务器脚本实际上并不复杂，如下面的代码所示：
 
-```
+```php
 // Generate an XML document for the USPS server request
+
 $uspsRequest =
+
   "http://testing.shippingapis.com/ShippingAPITest.dll?";
+
 $uspsRequest .= "API=RateV2&XML=";
+
 $uspsRequest .= "<RateV2Request%20USERID=\"";
+
 $uspsRequest .= $_REQUEST["userID"];
+
 $uspsRequest .= "\"%20PASSWORD=\"";
+
 $uspsRequest .= $_REQUEST["password"] . "\">";
+
 $uspsRequest .= "<Package%20ID=\"0\"><Service>" . "All";
+
 $uspsRequest .= "</Service>";
+
 $uspsRequest .= "<ZipOrigination>" . $_REQUEST["origZip"];
+
 $uspsRequest .= "</ZipOrigination>";
+
 $uspsRequest .= "<ZipDestination>" . $_REQUEST["destZip"];
+
 $uspsRequest .= "</ZipDestination>";
+
 $uspsRequest .= "<Pounds>" . $_REQUEST["weightLb"] . "</Pounds>";
+
 $uspsRequest .= "<Ounces>" . $_REQUEST["weightOz"] . "</Ounces>";
+
 $uspsRequest .= "<Container>" . urlencode($_REQUEST["container"]);
+
 $uspsRequest .= "</Container>";
+
 $uspsRequest .= "<Size>" . $_REQUEST["size"] . "</Size>";
+
 $uspsRequest .= "<Machinable>" . "true" . "</Machinable>";
+
 $uspsRequest .= "</Package></RateV2Request>";
 ```
 
@@ -5668,25 +6179,37 @@ $uspsRequest .= "</Package></RateV2Request>";
 
 准备好 USPS 请求 XML 文档后，脚本继续发出请求，并接收返回的响应 XML 文档：
 
-```
+```php
 // Parse the shipping response data into a structure
+
 $rawShipping = file_get_contents($uspsRequest);
+
 $xml = new SimpleXmlElement($rawShipping);
 ```
 
 现在，XML 响应数据存储在 PHP 变量 `$xml` 中，可以开始解析出与 `mailService` 参数中传递的运输方式相匹配的特定运费：
 
-```
+```php
 // Return the rate for the appropriate mail service
+
 $rate = 0;
+
 if ($xml->Package->Postage != null) {
+
   foreach ($xml->Package->Postage as $postage) {
+
     if ($postage->MailService == $_REQUEST['mailService']) {
+
       $rate = $postage->Rate;
+
       break;
+
     }
+
   }
+
 }
+
 echo $rate;
 ```
 
@@ -5694,29 +6217,34 @@ echo $rate;
 
 虽然我确信你已经迫不及待地想从这些代码中解脱出来，测试一下 Shipper 应用程序，但让我们先花点时间单独测试一下 PHP 脚本，然后再继续。你在前面的章节中已经看到过如何通过直接在浏览器中打开 PHP 脚本来完成测试——下面是一个用于测试 Shipper 脚本的示例 URL：
 
-```
+```text
 http://www.yourdomain.com/shipper.php?userID=YOURUSPSUSERID&
+
 origZip=10022&destZip=20008&weightLb=10&weightOz=5&container=
+
 Flat%20Rate%20Box&size=Large&mailService=Priority%20Mail
 ```
 
 假设 `shipper.php` 文件存储在你的服务器上，请将这一行代码中的域名改为你自己的，将 `YOURUSPSUSERID` 替换为你的用户 ID，然后将 URL 输入到你的 Web 浏览器中。或者，直接在随书附带的 live CD 上使用以下 URL，仍然要确保将 `YOURUSPSUSERID` 替换为你自己的用户 ID：
 
-```
+```text
 http://localhost/chap11/shipper/shipper.php?
+
 userID=YOURUSPSUSERID&origZip=10022&destZip=20008&weightLb=10&
+
 weightOz=5&container=Flat%20Rate%20Box&size=Large&mailService=
+
 Priority%20Mail
 ```
+
+
+
 
 图 11.5 显示了 PHP 脚本生成的运费。
 
 ##### 图 11.5\. Shipper PHP 脚本返回的唯一信息就是单个运费。
 
 [[查看完整尺寸图片]](ys8wohawzzmxcjm1mjjlzgftdc9zyzc4cjlnmgkvzmmuamdwz3axczvhadbsav9pmxqv.jpg)![](img/ys8wohawzzmxcjm1mjjlzgftdc9zyzc4cjlnmgkvzmnncdfzmghqnxauawlnms8-.jpg)
-
-
-
 
 尽管在 URL 中尝试不同的运输信息（例如不同的始发地和目的地邮政编码）会很有趣，但 USPS 测试服务器仅支持你在此处看到的测试数据。你必须获得 USPS 的验证，并迁移到其生产服务器，才能进行更全面的测试。你将在本章后面的“为 Shipper 进行极致的 Ajax 改造”一节中了解如何获得验证。
 
@@ -5728,15 +6256,15 @@ Priority%20Mail
 
 ##### 图 11.6. Shipper 应用程序启动时，整个用户界面为空白，除了默认的“国家”字段（无法从美国更改）。
 
-[[查看完整尺寸图片]](ys8wohawzzmxcjm1mjjlzgftdc9zyzc4cjlnmgkvzmmuamdwz3axczzhadbsav9pmxqv.jpg)![](img/ys8wohawzzmxcjm1mjjlzgftdc9zyzc4cjlnmgkvzmnncdfzmghqnnauawlnms8-.jpg)
+[[查看完整尺寸图片]](ys8wohawzzmxcjm1mjjlzgftdc9zyzc4cjlnmgkvzmmuamdwz3axczvhadbsav9pmxqv.jpg)![](img/ys8wohawzzmxcjm1mjjlzgftdc9zyzc4cjlnmgkvzmnncdfzmghqnnauawlnms8-.jpg)
 
-用户界面最初是空白的，因此你可以随意输入信息，就像在完成在线购买的结账流程一样。或者，为了节省时间，直接跳转到页面上的邮政编码字段。首先尝试输入一个在现实世界中（目前）甚至不存在的邮政编码，例如 20080。图 11.7 显示了应用程序如何显示错误/帮助消息，以指示该邮政编码的运费信息不存在。
+用户界面最初是空白的，因此你可以随意输入信息，就像在完成在线购买的结账流程一样。或者，为了节省时间，直接跳转到页面上的邮政编码字段。首先尝试输入一个在现实世界中（目前）甚至不存在的邮政编码，例如`20080`。图 11.7 显示了应用程序如何显示错误/帮助消息，以指示该邮政编码的运费信息不存在。
 
 ##### 图 11.7. 输入无效的邮政编码会在邮政编码字段旁边显示错误/帮助消息。
 
 [[查看完整尺寸图片]](ys8wohawzzmxcjm1mjjlzgftdc9zyzc4cjlnmgkvzmmuamdwz3axczdhadbsav9pmxqv.jpg)![](img/ys8wohawzzmxcjm1mjjlzgftdc9zyzc4cjlnmgkvzmnncdfzmghqn3auawlnms8-.jpg)
 
-实际上，对于测试目的，除了 20008（华盛顿特区）之外，你输入的任何邮政编码都被视为无效，因此你可以输入几乎任何内容并得到错误消息。要查看成功的运费计算，请输入 20008 作为邮政编码，然后离开邮政编码字段。图 11.8 显示了动态检索到的运费和重新计算的订单总额。
+实际上，对于测试目的，除了`20008`（华盛顿特区）之外，你输入的任何邮政编码都被视为无效，因此你可以输入几乎任何内容并得到错误消息。要查看成功的运费计算，请输入`20008`作为邮政编码，然后离开邮政编码字段。图 11.8 显示了动态检索到的运费和重新计算的订单总额。
 
 ##### 图 11.8. 输入有效的邮政编码会导致成功的 Ajax 请求获取运费，同时也会计算订单总额。
 
@@ -5760,7 +6288,7 @@ Priority%20Mail
 
 由于 Shipper 应用程序的运输选项基于美国邮政服务的运输方式，因此它高度依赖于美国邮政服务国内费率计算器 Web 服务，该服务是 USPS Web Tools ([`www.usps.com/webtools/`](http://www.usps.com/webtools/))的一部分。与本书中使用的许多其他第三方 Web 服务不同，USPS Web Tools 受到严格控制，只能通过仔细协调你的开发工作与 USPS 来使用。
 
-更具体地说，你必须经过验证过程，才能超越 USPS 测试服务器上有限的测试数据，并在 USPS 生产服务器上试用你的应用程序。此验证由 USPS 互联网客户服务中心（ICCC）执行，可通过 icustomercare@usps.com 或 1-800-344-7779（美国东部时间上午 7:00 至晚上 11:00）联系。在联系 ICCC 以获取生产服务器访问权限之前，你必须已经是注册的 USPS Web Tools 用户（拥有 ID），并且已经使用国内费率 Web 工具服务器测试了应用程序。因此，Shipper 极致改造的第一部分就是获得 USPS 生产服务器的访问权限，以便你可以尝试各种测试邮政编码。
+更具体地说，你必须经过验证过程，才能超越 USPS 测试服务器上有限的测试数据，并在 USPS 生产服务器上试用你的应用程序。此验证由 USPS 互联网客户服务中心（ICCC）执行，可通过`icustomercare@usps.com`或`1-800-344-7779`（美国东部时间上午 7:00 至晚上 11:00）联系。在联系 ICCC 以获取生产服务器访问权限之前，你必须已经是注册的 USPS Web Tools 用户（拥有 ID），并且已经使用国内费率 Web 工具服务器测试了应用程序。因此，Shipper 极致改造的第一部分就是获得 USPS 生产服务器的访问权限，以便你可以尝试各种测试邮政编码。
 
 注意
 
@@ -5768,9 +6296,11 @@ Priority%20Mail
 
 在你通过 ICCC 验证并获得国内费率 Web 工具生产服务器的 URL 后，请务必通过更改`shipper.php`文件开头附近的以下代码行，将 Shipper 应用程序改为使用生产服务器：
 
-```
+```php
 $uspsRequest =
+
   "http://testing.shippingapis.com/ShippingAPITest.dll?
+
   API=RateV2&";
 ```
 
@@ -5780,37 +6310,44 @@ $uspsRequest =
 
 首先，你需要导入两个相关的 Ajax Toolkit 文件，如下所示：
 
-```
+```html
 <script type="text/javascript" src="ajaxkit.js"> </script>
+
 <script type="text/javascript" src="domkit.js"> </script>
 ```
 
+然后，你需要确保邮政编码输入字段有一个`input`文本元素，以及一个用于邮政编码错误消息的`span`元素。如果你已经有一个邮政编码`input`元素，请确保添加一个类似于 Shipper 应用程序中的`onchange`事件处理程序。以下是 Shipper 网页中的相关代码：
 
-
-然后，你需要确保邮政编码输入字段有一个 `input` 文本元素，以及一个用于邮政编码错误消息的 `span` 元素。如果你已经有一个邮政编码 `input` 元素，请确保添加一个类似于 Shipper 应用程序中的 `onchange` 事件处理程序。以下是 Shipper 网页中的相关代码：
-
-```
+```html
 <td class="value"><input type="text" id="zipCode" size="10"
+
   onchange="getShipRate()" /></td>
+
 <td class="label" width="50%"><span id="zipCodeErr"
+
   style="font-size:80%; color:#BB0000;"></span></td>
 ```
 
-请注意，邮政编码输入元素调用 `getShipRate()` 函数，以动态从 USPS 服务器获取运费。你之前已经见过这个函数，所以这里不再重复。不过，你需要将其代码以及响应处理函数 `handleRequest()` 复制并粘贴到页面的 head 部分。
+请注意，邮政编码输入元素调用`getShipRate()`函数，以动态从 USPS 服务器获取运费。你之前已经见过这个函数，所以这里不再重复。不过，你需要将其代码以及响应处理函数`handleRequest()`复制并粘贴到页面的 head 部分。
 
-你可能已经有一个用于选择运输方式的 `select` 元素，但如果没有，你需要将其添加到页面中。以下是 Shipper 应用程序中用于选择 USPS 运输方式的选项列表：
+你可能已经有一个用于选择运输方式的`select`元素，但如果没有，你需要将其添加到页面中。以下是 Shipper 应用程序中用于选择 USPS 运输方式的选项列表：
 
-```
+```html
 <select id="mailService" onchange="getShipRate()">
+
   <option value="Parcel Post">Parcel Post</option>
+
   <option value="Priority Mail" selected="selected">
+
     Priority Mail</option>
+
   <option value="Express Mail to PO Addressee">
+
     Express Mail</option>
 </select>
 ```
 
-极其重要的是，要注意每个选项的 `value` 必须与 USPS Web Tools 的 Domestic Rates 文档中指定的运输方式完全一致。这一点很重要，因为 Shipper 应用程序使用该值作为费率请求的基础，这意味着它必须与某种运输方式完全匹配，查询才能正常工作。换句话说，`value=`"`US Priority Mail`" 是行不通的，因为运输方式是 "`Priority Mail`"，而不是 "`US Priority Mail`"。
+极其重要的是，要注意每个选项的`value`必须与 USPS Web Tools 的 Domestic Rates 文档中指定的运输方式完全一致。这一点很重要，因为 Shipper 应用程序使用该值作为费率请求的基础，这意味着它必须与某种运输方式完全匹配，查询才能正常工作。换句话说，`value="US Priority Mail"`是行不通的，因为运输方式是`Priority Mail`，而不是`US Priority Mail`。
 
 注意
 
@@ -5818,27 +6355,35 @@ $uspsRequest =
 
 最后，Shipper 应用程序中有几个“购物车”变量，你需要提供或连接到现有的购物车字段：
 
-```
+```javascript
 var origZip = "10022"; // 出发地邮政编码
+
 var itemDesc = "Popcorn Holiday Feast";
+
 var itemPrice = 29.99;
+
 var weightLb = "10";
+
 var weightOz = "5";
+
 var container = "Flat Rate Box";
+
 var size = "Large";
 ```
+
+
 
 请记住，这些变量中的大多数都会以某种方式与购物车中已输入或选择的真实数据相关联。我选择在 Shipper 应用程序中将它们设为静态，只是为了简化问题；我的目标是展示如何使用 Ajax 计算运费，而不是构建一个完整的购物车。
 
 如果你遵循这些通用设计指南，你应该能够将 Ajax 动态运费查询集成到自己的网站中，而不会遇到太多麻烦。
 
-### 总结
+## 总结
 
 本章探讨了运费的动态查询，这显然属于需要 Ajax 解决方案的问题范畴。在购物车中，仅仅为了查询在线购买的运费而从一个页面导航到另一个页面，这完全没有必要。不仅如此，确定运费所需提供的全部信息就是你的邮政编码。本章中的 Shipper 应用程序演示了如何巧妙运用 Ajax，对购物车或任何其他需要实时计算运费并呈现给用户的应用程序进行微妙但实质性的改进。
 
-## 第 12 章：为你的网站添加基于 Ajax 的评分系统
+# 第 12 章：为你的网站添加基于 Ajax 的评分系统
 
-卡通中的 Ajax 再次出现
+## 卡通中的 Ajax 再次出现
 
 | ![](img/ys8wohawzzmxcjm1mjjlzgftdc9zyzc4cjlnmgkvdgmucg9zagpwawdll24-.jpg) | MGM 的 Ajax 公司并不是 Ajax 在卡通中唯一一次出现。《Duckman》是 20 世纪 90 年代中期 USA Network 的一档常规节目，其中有一个名为 Ajax Duckman 的角色，他是主角 Eric Duckman 的儿子。Ajax Duckman 由音乐家 Dweezil Zappa 配音，在剧中是一个有点懒散的青少年。 |
 
@@ -5846,27 +6391,23 @@ var size = "Large";
 
 就如何利用 Ajax 为网页上的任何内容添加五星评分而言，本章无疑是本书中最具雄心的章节。所谓“雄心”，我的意思是，Rater 示例应用程序在使用 Ajax 方面要先进得多，因为它必须能够将多个评分读写到服务器上的文件或数据库中，同时防止同一用户重复投票。好消息是，这些复杂性中的绝大部分都隐藏在 Ajax Toolkit 中，这意味着你的工作主要归结为正确使用 Toolkit，而不是自己构建评分代码。
 
-本章中 Rater 应用程序使用的文件如下，它们位于本书附带的 Linux 光盘的 `chap12` 示例代码文件夹中：
+本章中 Rater 应用程序使用的文件如下，它们位于本书附带的 Linux 光盘的`chap12`示例代码文件夹中：
 
-*   `rater.html`——Rater 主网页
-*   `cookiereset.html`——用于模拟不同用户的 Cookie 重置网页
-*   `ajaxkit.js`——Ajax Toolkit 的核心 Ajax 函数
-*   `domkit.js`——Ajax Toolkit 的 DOM 相关函数
-*   `ratingkit.js`——Ajax Toolkit 的评分相关函数
-*   `ratingkit.php`——用于保存和加载评分的服务器脚本
-*   `ratingkit.css`——五星评分的样式表
-*   `star.gif`——用于表示五星评分的星形图片
-*   `star_sm.gif`——用于表示较小五星评分的较小星形图片
+- `rater.html`——Rater 主网页
+- `cookiereset.html`——用于模拟不同用户的 Cookie 重置网页
+- `ajaxkit.js`——Ajax Toolkit 的核心 Ajax 函数
+- `domkit.js`——Ajax Toolkit 的 DOM 相关函数
+- `ratingkit.js`——Ajax Toolkit 的评分相关函数
+- `ratingkit.php`——用于保存和加载评分的服务器脚本
+- `ratingkit.css`——五星评分的样式表
+- `star.gif`——用于表示五星评分的星形图片
+- `star_sm.gif`——用于表示较小五星评分的较小星形图片
 
-### 挑战：为网站添加评分功能
+## 挑战：为网站添加评分功能
 
 判断某件物品重要性的一个便捷方法是，考虑如果你被困在荒岛上，只能携带有限数量的物品，它是否会被选中。例如，如果你只能带一张音乐 CD 去听，在可能多年无人陪伴（但希望有足够的电池来播放 CD 播放器！）的情况下，你会选择哪张 CD？
 
-希望你不会真的需要做出荒岛 CD 的选择。除此之外，你可能会发现，在 [Amazon.com](http://Amazon.com) 上为你最喜欢的 CD 评分会很有用，这样其他人就能做出更明智的音乐购买决策。[Amazon.com](http://Amazon.com) 允许你使用五星评分系统对音乐 CD 以及几乎所有在售商品进行评分。如果你现在就在电脑旁，不妨花点时间访问 [Amazon.com](http://Amazon.com) 并查看一张音乐 CD。这将让你了解在线评分系统是如何工作的。
-
-
-
-
+希望你不会真的需要做出荒岛 CD 的选择。除此之外，你可能会发现，在[Amazon.com](http://Amazon.com)上为你最喜欢的 CD 评分会很有用，这样其他人就能做出更明智的音乐购买决策。[Amazon.com](http://Amazon.com)允许你使用五星评分系统对音乐 CD 以及几乎所有在售商品进行评分。如果你现在就在电脑旁，不妨花点时间访问[Amazon.com](http://Amazon.com)并查看一张音乐 CD。这将让你了解在线评分系统是如何工作的。
 
 如果你留意艺术家姓名和 CD 标题下方的五颗星，会发现星星旁边有一个数字，显示有多少顾客给出了评分。这一点非常重要，因为它能让你了解评分的可信度——如果只有少数人评价了该商品，那么评分可能意义不大。
 
@@ -5880,8 +6421,8 @@ var size = "Large";
 
 在评分组件的客户端 JavaScript 代码（包含在`ratingkit.js`中）中，以下两个函数用于控制评分系统：
 
-*   `initRatings()`——初始化页面上所有商品的评分
-*   `setRating()`——对单个商品进行评分投票
+- `initRatings()`——初始化页面上所有商品的评分
+- `setRating()`——对单个商品进行评分投票
 
 在 PHP 服务器脚本（`ratingkit.php`）的帮助下，这些函数可以让你对页面上任意数量的商品进行评分。不仅如此，该评分组件还足够智能，能够将同一台计算机上的投票次数限制为每个用户仅一次。它通过巧妙使用 Cookie 来实现这一点，Cookie 提供了一种完美的机制来记住用户是否执行了某个操作（例如对特定商品进行评分）。
 
@@ -5891,62 +6432,7 @@ var size = "Large";
 
 开发完 Rater 应用后，你将掌握重用评分组件来评价任何类型网页内容的能力。
 
-## 第 12 章 为你的网站添加基于 Ajax 的评分系统
-
-Ajax 再次出现在卡通中
-
-| ![](img/ys8wohawzzmxcjm1mjjlzgftdc9zyzc4cjlnmgkvdgmucg9zagpwawdll24-.jpg) | MGM 的 Ajax 公司并不是 Ajax 唯一一次出现在卡通中。《Duckman》是 20 世纪 90 年代中期美国电视网的一档常规节目，其中有一个名叫 Ajax Duckman 的角色，他是主角 Eric Duckman 的儿子。Ajax Duckman 由音乐家 Dweezil Zappa 配音，在剧中是一个有些懒散的青少年。 |
-
-许多流行网站的一个日益流行的功能是能够对事物进行评分。亚马逊可能开创了这一趋势，它提供了对产品进行评分和撰写评论的功能。此后，各种不同类型的网站都提供了某种评分系统，无论是用于评价电影、音乐、照片、博客文章还是其他任何内容。只要能在网上发布，就能被评分。我想，在内心深处，我们大多数人都是评论家，因此能够对任何事物进行评分的想法，在某种程度上满足了分享批评（很多时候是赞美）的需求。诚然，将世界上的一切简化为五星评分可能并不公平，但它能让你快速了解人们对某件事物的看法。
-
-毫无疑问，本章是本书中最具雄心的章节，因为它利用 Ajax 为网页上的任何内容添加五星评分。所谓“雄心”，我的意思是 Rater 示例应用在使用 Ajax 方面相当先进，因为它必须能够读取和写入多个评分到服务器上的文件或数据库，同时防止同一用户重复投票。好消息是，这种复杂性的绝大部分都隐藏在 Ajax 工具包中，这意味着你的工作主要归结为正确使用工具包，而不是自己构建评分代码。
-
-本章 Rater 应用使用的文件如下，它们位于本书附带的 Linux CD-ROM 的`chap12`示例代码文件夹中：
-
-*   `rater.html`——Rater 主网页
-*   `cookiereset.html`——用于模拟不同用户的 Cookie 重置网页
-*   `ajaxkit.js`——Ajax 工具包的核心 Ajax 函数
-*   `domkit.js`——Ajax 工具包的 DOM 相关函数
-*   `ratingkit.js`——Ajax 工具包的评分相关函数
-*   `ratingkit.php`——用于保存和加载评分的服务器脚本
-*   `ratingkit.css`——五星评分的样式表
-*   `star.gif`——用于表示五星评分的星星图片
-*   `star_sm.gif`——用于表示较小五星评分的较小星星图片
-
-### 挑战：为网站添加评分功能
-
-
-
-
-
-判断一个物品重要性的便捷方法是，想象如果你被困在荒岛上，只能带有限数量的物品，它是否会被选中。例如，如果你只能带一张音乐 CD，在可能多年无人陪伴的荒岛上听（但愿有足够的电池给 CD 播放器供电！），你会选哪张 CD？
-
-希望你不会真的需要做这个荒岛 CD 选择。退一步说，你可能会觉得在[亚马逊](http://Amazon.com)上为你最喜欢的 CD 评分很有用，这样其他人就能做出更明智的音乐购买决策。[亚马逊](http://Amazon.com)允许你使用五星评分系统对音乐 CD 以及几乎所有在售商品进行评分。如果你现在手边有电脑，花点时间访问[亚马逊](http://Amazon.com)并查看一张音乐 CD，这会让你了解在线评分系统是如何运作的。
-
-如果你看到艺术家姓名和 CD 标题下方的五颗星，会注意到星星旁边有一个数字，显示有多少顾客给出了评分。这非常重要，因为它能让你了解评分的准确度——如果只有少数人评分，那么这个评分可能意义不大。
-
-提到这个评分示例的真正原因，是想指出[亚马逊](http://Amazon.com)的评分方式在选择评分时采用了相当简陋的用户界面。我指的是用于选择评分的下拉列表，它允许你选择星级的文字描述，比如“五星”或“四星”。除了[亚马逊](http://Amazon.com)还支持与评分配套的文字评论外，你还必须预览并确认评分后才能生效。如果能在主商品页面上直接点击五星来评分，那将直观高效得多。诚然，这无法满足撰写评论的需求，但并非每个人都想写评论——有时你只需要一个快速的“即评即走”评分。
-
-本章的挑战是使用 Ajax 将一个交互式五星评分组件集成到网页中，使用户无需离开页面即可对项目进行投票。这与你已学到的关于 Ajax 的知识一致，即当只需修改少量数据时，尽量减少页面重新加载。在这种情况下，你只需向服务器提交一条评分数据，然后在投票处理后查看总评分统计。这完全在 Ajax 的能力范围内。
-
-你可能已经好奇的一个棘手问题是评分投票的持久化存储。回想一下你目前看到的所有 Ajax 示例应用，这是第一个需要记住用户提交内容的。更具体地说，评分应用必须在服务器上存储每个项目每次投票后的结果。幸运的是，我为你提供了一个预构建的评分组件，它处理了在服务器上以 XML 文档存储评分数据的所有细节。如果你愿意，我还提供了一些关于使用数据库代替 XML 文件的想法。
-
-我所说的这个评分组件包含在本书附带的 CD-ROM 中的 Ajax 工具包中。该组件包括客户端和服务器端代码，以及一些图片和一个样式表。在幕后，一个基于 Ajax 的五星评分系统比你想象的要复杂一些，这就是为什么需要这么多文件才能实现这个魔法。
-
-在评分组件的客户端 JavaScript 代码（包含在`ratingkit.js`中）中，使用了以下两个函数来控制评分系统：
-
-*   `initRatings()`——初始化页面上所有项目的评分
-*   `setRating()`——为单个项目提交评分投票
-
-在 PHP 服务器脚本（`ratingkit.php`）的帮助下，这些函数可以让你为页面上任意多个项目分配评分。不仅如此，该评分组件还足够智能，能够限制每台计算机上每个用户只能投一票。它通过巧妙使用 Cookie 来实现这一点，Cookie 提供了一种完美的机制来记住用户是否执行了某个操作（例如对特定项目评分）。
-
-希望我已经说服你，通过提供预构建组件，我已经完成了评分工作的大部分重担。那么评分应用挑战还剩下什么？评分应用的挑战在于正确设置可评分项目的 HTML 代码，使它们与评分组件连接并正确提交投票。此外，评分组件中包含几个 CSS 评分类，必须仔细分配给评分页面上的元素，评分才能正常工作。
-
-为了保持评分应用的 HTML 代码尽可能简单，并且不涉及大量额外图片或其他资源，被评分的项目是名人名言。评分网页由五条名人名言组成，因此有五个不同的评分——每条名言一个。评分网页需要为每条名言包含一个唯一的评分组件，并正确标识它，以便对该名言的投票存储在服务器上供将来检索。当一切就绪后，评分应用将允许全球无数用户对他们最喜欢的名言进行投票，所有评分投票在服务器上汇总，投票总数显示在页面上。
-
-开发完评分应用后，你将掌握重用该评分组件来对任何类型的 Web 内容进行评分的能力。
-
-### 设计：设计评分应用
+## 设计：设计评分应用
 
 评分应用的设计从名言本身开始，因为在这个特定示例中，它们是驱动评分过程的核心。由于名言只是文本，将它们包裹在`div`元素中就足够了，无需特殊格式或其他代码。尽管评分紧跟在名言下方，但在 HTML 代码中，评分和名言之间没有直接关联。
 
@@ -5954,20 +6440,17 @@ Ajax 再次出现在卡通中
 
 项目 ID 至关重要，因为它会与评分投票一起存储，因此用于将存储的评分与页面上的名言关联起来。说到页面上的名言，图 12.1 展示了评分用户界面的基本布局，包括名言及其各自的评分。
 
-##### 图 12.1. 评分应用的用户界面由几条文本名言组成，每条名言附带一个评分组件。
+### 图 12.1 评分应用的用户界面由几条文本名言组成，每条名言附带一个评分组件
 
 ![](img/ys8wohawzzmxcjm1mjjlzgftdc9zyzc4cjlnmgkvzmnncdjzmghnm2kuawlmms8-.jpg)
 
 该图显示每条名言后面紧跟着一个评分及其相关的辅助文本。辅助文本最初只是提示你点击评分以提交投票。一旦你投票，辅助文本会变为显示该评分已获得的投票数。因此，辅助文本具有双重作用——首先作为提示，然后作为显示评分信息的方式。
 
-
-
-
 Ajax 工具包中提供的评分组件处理了 Rater 应用程序中所有 Ajax 请求的细节。本章的目标不是剖析评分组件的内部工作原理，而是向您展示如何使用它来将评分功能集成到网页中。即便如此，快速了解一下 Ajax 在组件中如何以客户端请求和服务器响应的形式工作也是值得的。
 
 ### 客户端请求
 
-评分组件涉及两种不同的客户端请求：一种用于初始获取页面上所有评分的评分信息，另一种用于对特定评分进行投票。第一个请求在页面初始加载时仅发生一次，而第二个请求如果页面上有多个评分，则可以发生多次。当然，评分组件确实使用 cookie 来防止您对某个评分进行多次投票。但事实仍然是，每个评分上的每次投票都会产生一个 Ajax 请求。
+评分组件涉及两种不同的客户端请求：一种用于初始获取页面上所有评分的评分信息，另一种用于对特定评分进行投票。第一个请求在页面初始加载时仅发生一次，而第二个请求如果页面上有多个评分，则可以发生多次。当然，评分组件确实使用 Cookie 来防止您对某个评分进行多次投票。但事实仍然是，每个评分上的每次投票都会产生一个 Ajax 请求。
 
 当对所有评分发出 Ajax 请求时，客户端无需传递任何信息。换句话说，Ajax 请求的 URL 仅包含从 XML 文件读取评分并返回结果的 PHP 服务器脚本。
 
@@ -5983,21 +6466,23 @@ Ajax 工具包中评分组件的服务器响应根据请求的不同而有很大
 
 为了帮助您了解 Rater 应用程序（评分组件）中客户端和服务器之间发生的数据流，请查看图 12.2。
 
-#### 图 12.2. Rater 应用程序后台的两个 Ajax 请求：用于初始化评分和提交新的评分投票。
+#### 图 12.2 Rater 应用程序后台的两个 Ajax 请求：用于初始化评分和提交新的评分投票
 
 ![](img/ys8wohawzzmxcjm1mjjlzgftdc9zyzc4cjlnmgkvzmnncdjzmghnngkuawlmms8-.jpg)
 
 该图揭示了初始评分请求不涉及从客户端传输数据，但返回一个包含所有评分的完整 XML 文档。由于提交 Ajax 请求时不需要参数，因此请求的 URL 仅仅是 PHP 服务器脚本的名称：
 
-```
-ratingkit.php
-```
+``` 
+
+
+
+# `ratingkit.php`
 
 尽管从客户端流向服务器的数据非常少，但反向返回的数据却有趣得多。以下是响应 XML 文档的一个示例：
 
-代码视图：
+## 代码视图
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <ratings>
   <rating>
@@ -6025,24 +6510,24 @@ ratingkit.php
     <avg>4</avg>
     <votes>1</votes>
   </rating>
- </ratings> 
+</ratings>
 ```
 
 这个 XML 文档的结构非常简单，它包含一个评分列表，每个评分有三条不同的数据：
 
-*   项目 ID（`<id>`）
-*   评分平均值（`<avg>`）
-*   投票数（`<votes>`）
+- 项目 ID（`<id>`）
+- 评分平均值（`<avg>`）
+- 投票数（`<votes>`）
 
 这些信息足以描述单个项目的评分。XML 文档中的每个 `<rating>` 标签对应一个项目的评分。整个文档作为评分的数据格式，这意味着如果您打开服务器上生成的 `ratings.xml` 文件，您将看到相同的 XML 代码。需要注意的是，该文件充当您网站上所有评分的主要数据库，可能跨多个页面。关键是项目 ID，它允许您在网站上的任何位置使用评分，只要它们被正确标识。
 
-注意
-
-| ![](img/ys8wohawzzmxcjm1mjjlzgftdc9zyzc4cjlnmgkvdgmucg9zagpwawdll24-.jpg) | 正如您将在本章后面的“给 Rater 一个极致的 Ajax 改造”部分中了解到的，项目 ID 可以是您想要的任何文本。尽管 Rater 应用程序使用名称作为 ID，但您也可以轻松地使用数字或字母与数字的组合。重要的是使用唯一且易于与项目关联的项目 ID。例如，一本书的评分项目 ID 可以使用该书的国际标准书号（ISBN），这样 ID 就能保证唯一，并且与书有明显的关联。 |
+> **注意**
+>
+> 正如您将在本章后面的“给 Rater 一个极致的 Ajax 改造”部分中了解到的，项目 ID 可以是您想要的任何文本。尽管 Rater 应用程序使用名称作为 ID，但您也可以轻松地使用数字或字母与数字的组合。重要的是使用唯一且易于与项目关联的项目 ID。例如，一本书的评分项目 ID 可以使用该书的国际标准书号（ISBN），这样 ID 就能保证唯一，并且与书有明显的关联。
 
 如果您想查看网站上存储的评分 XML 数据，只需在浏览器中输入评分组件的 PHP 服务器脚本（`ratingkit.php`），不带任何参数或其他内容。图 12.3 显示了通过直接打开服务器脚本在浏览器中显示的评分 XML 代码。
 
-#### 图 12.3. 直接输入评分组件的 PHP 服务器脚本 URL 会显示评分 XML 文档。
+#### 图 12.3. 直接输入评分组件的 PHP 服务器脚本 URL 会显示评分 XML 文档
 
 [[查看完整尺寸图片]](ys8wohawzzmxcjm1mjjlzgftdc9zyzc4cjlnmgkvzmmuamdwz3ayczvhadbsav9pmxqv.jpg)![](img/ys8wohawzzmxcjm1mjjlzgftdc9zyzc4cjlnmgkvzmnncdjzmghqnxauawlnms8-.jpg)
 
@@ -6052,13 +6537,13 @@ Rater 应用程序中使用的另一个 Ajax 请求涉及存储新的评分。�
 
 回到评分提交请求，服务器的响应包括新计算出的评分平均值和已投出的总票数。虽然 XML 肯定可以用来格式化这些返回数据，但并没有必要。因此，数据以冒号分隔的对形式返回，如下所示：
 
-```
+```text
 4.5:2
 ```
 
 这是对您刚才看到的 XML 数据中的第一个引文进行最后一次投票后返回的数据。如果您回头查看那些数据，您会看到以下代码：
 
-```
+```xml
 <rating>
   <id>twain</id>
   <avg>4.5</avg>
@@ -6066,16 +6551,14 @@ Rater 应用程序中使用的另一个 Ajax 请求涉及存储新的评分。�
 </rating>
 ```
 
-
-
 因此，服务器对已投出的评分投票的响应，只是返回刚刚写入 XML 文件的一些数据：`<avg>` 和 `<votes>` 内容。
 
 ### 构建评分应用程序
 
 除了随书附带的 CD-ROM 中包含的 Ajax 工具包中的几个文件外，评分应用程序由一个 Web 页面和一个非必需的辅助 Web 页面组成：
 
-*   HTML Web 页面（`rater.html`）
-*   Cookie 重置 Web 页面（`cookiereset.html`）
+- HTML Web 页面（`rater.html`）
+- Cookie 重置 Web 页面（`cookiereset.html`）
 
 评分应用程序包含在评分 Web 页面（`rater.html`）中，而 Cookie 重置 Web 页面（`cookiereset.html`）是一个独立的辅助页面，用于清除评分 cookie 以进行测试。接下来的几节将更详细地检查这些文件。
 
@@ -6083,81 +6566,71 @@ Rater 应用程序中使用的另一个 Ajax 请求涉及存储新的评分。�
 
 评分 Web 页面使用了五个独立的评分，每个评分应用于页面中出现在该评分之前的文本引用。其理念是，您可以阅读一段引用，然后立即对其进行评分。图 12.4 显示了评分 Web 页面，其中已有几个评分投票，但还有一些项目处于未评分状态。
 
-##### 图 12.4. 评分 Web 页面显示了几段引用，每段引用都附带一个五星评分组件。
+##### 图 12.4. 评分 Web 页面显示了几段引用，每段引用都附带一个五星评分组件
 
 [[查看全尺寸图像]](ys8wohawzzmxcjm1mjjlzgftdc9zyzc4cjlnmgkvzmmuamdwz3ayczzhadbsav9pmxqv.jpg)![](img/ys8wohawzzmxcjm1mjjlzgftdc9zyzc4cjlnmgkvzmnncdjzmghqnnauawlnms8-.jpg)
 
 如果您仔细观察该图，您会发现穆罕默德·阿里引用的评分显示为更大的星星和文字。这展示了评分组件如何支持两种不同的大小。实际上，评分组件的小版本和大版本之间的区别仅在于使用了不同的 CSS 样式类。
 
-评分 Web 页面的实际代码确实有点长，所以请做好准备。请记住，代码清单长的主要原因是因为页面使用了五个不同的评分，每个评分都需要几行代码。以下是评分页面主体的简化代码，所有有趣的事情都发生在这里：
+评分 Web 页面的实际代码确实有点长，所以请做好准备。请记住，代码清单长的主要原因是页面使用了五个不同的评分，每个评分都需要几行代码。以下是评分页面主体的简化代码，所有有趣的事情都发生在这里：
 
-代码视图：
+## 代码视图
 
-```
+```html
 <body onload="initRatings()">
   <div id="ajaxState" style="display:none"></div>
   <br />
-  <div>A banker is a fellow who lends you his umbrella when the
+  <div>
+    A banker is a fellow who lends you his umbrella when the
     sun is shining, but wants it back the minute it begins to
     rain.<br />
-    - Mark Twain</div>
-  <div>
-    <span class="rating-label-small">Rating:</span>
-    <span class="inline-rating">
-      <ul class="star-rating small-star">
-        <li id="twain-rating" class="current-rating"
-style="width:0%">Rating</li>
-        <li><a href="javascript:setRating('twain', 1);"
-          class="one-star">1</a></li>
-        <li><a href="javascript:setRating('twain', 2);"
-          class="two-stars">2</a></li>
-        <li><a href="javascript:setRating('twain', 3);"
-          class="three-stars">3</a></li>
-        <li><a href="javascript:setRating('twain', 4);"
-          class="four-stars">4</a></li>
-        <li><a href="javascript:setRating('twain', 5);"
-          class="five-stars">5</a></li>
-     </ul>
-   </span>
-   <span id="twain-info" class="rating-info-small">
-     (click to vote)</span>
+    - Mark Twain
   </div>
-  <hr />
-  <div>Learn from yesterday, live for today, hope for tomorrow.
-   The important thing is not to stop questioning.<br />
-   - Albert Einstein</div>
   <div>
     <span class="rating-label-small">Rating:</span>
     <span class="inline-rating">
       <ul class="star-rating small-star">
-        <li id="einstein-rating" class="current-rating"
-          style="width:0%">Rating</li>
-        <li><a href="javascript:setRating('einstein', 1);"
-          class="one-star">1</a></li>
-        <li><a href="javascript:setRating('einstein', 2);"
-          class="two-stars">2</a></li>
-        <li><a href="javascript:setRating('einstein', 3);"
-          class="three-stars">3</a></li>
-        <li><a href="javascript:setRating('einstein', 4);"
-          class="four-stars">4</a></li>
-        <li><a href="javascript:setRating('einstein', 5);"
-          class="five-stars">5</a></li>
+        <li id="twain-rating" class="current-rating" style="width:0%">Rating</li>
+        <li><a href="javascript:setRating('twain', 1);" class="one-star">1</a></li>
+        <li><a href="javascript:setRating('twain', 2);" class="two-stars">2</a></li>
+        <li><a href="javascript:setRating('twain', 3);" class="three-stars">3</a></li>
+        <li><a href="javascript:setRating('twain', 4);" class="four-stars">4</a></li>
+        <li><a href="javascript:setRating('twain', 5);" class="five-stars">5</a></li>
       </ul>
     </span>
-    <span id="einstein-info" class="rating-info-small">
-      (click to vote)</span>
+    <span id="twain-info" class="rating-info-small">(click to vote)</span>
+  </div>
+  <hr />
+  <div>
+    Learn from yesterday, live for today, hope for tomorrow.
+    The important thing is not to stop questioning.<br />
+    - Albert Einstein
+  </div>
+  <div>
+    <span class="rating-label-small">Rating:</span>
+    <span class="inline-rating">
+      <ul class="star-rating small-star">
+        <li id="einstein-rating" class="current-rating" style="width:0%">Rating</li>
+        <li><a href="javascript:setRating('einstein', 1);" class="one-star">1</a></li>
+        <li><a href="javascript:setRating('einstein', 2);" class="two-stars">2</a></li>
+        <li><a href="javascript:setRating('einstein', 3);" class="three-stars">3</a></li>
+        <li><a href="javascript:setRating('einstein', 4);" class="four-stars">4</a></li>
+        <li><a href="javascript:setRating('einstein', 5);" class="five-stars">5</a></li>
+      </ul>
+    </span>
+    <span id="einstein-info" class="rating-info-small">(click to vote)</span>
   </div>
   ...
-</body> 
+</body>
 ```
 
-这段代码的关键在于仔细使用 CSS 样式类来定义评分。这些类定义在 `ratingkit.css` 样式表中，并负责当您将鼠标拖过评分星星时产生的动画悬停效果。这种实现五星评分的 CSS 方法最初由 Komodo Media 的 Rogie King 创建，其网站位于 [`www.komodomedia.com`](http://www.komodomedia.com)/。这段代码运行得非常好，以至于我将其用作 Ajax 工具包中评分组件的基础。
+这段代码的关键在于仔细使用 CSS 样式类来定义评分。这些类定义在 `ratingkit.css` 样式表中，并负责当您将鼠标拖过评分星星时产生的动画悬停效果。这种实现五星评分的 CSS 方法最初由 Komodo Media 的 Rogie King 创建，其网站位于 [`www.komodomedia.com`](http://www.komodomedia.com)。这段代码运行得非常好，以至于我将其用作 Ajax 工具包中评分组件的基础。
 
 评分 Web 页面中的每个评分都创建为一个无序列表，其中评分中的每个星星都是列表中的一个项目。巧妙之处在于列表项是水平显示而不是垂直显示，这使得星星水平排列。这看起来可能是一种奇怪的列表使用方式，确实如此，但最终对于评分来说效果很好。诀窍在于为列表应用适当的样式，以便悬停效果按预期工作。
 
 第一步是创建一个包含评分标签的 `span` 元素，该标签只是静态文本：
 
-```
+```html
 <span class="rating-label-small">Rating:</span>
 ```
 
@@ -6165,63 +6638,59 @@ style="width:0%">Rating</li>
 
 下一步是创建另一个 `span` 元素，作为评分组件的外壳：
 
-```
+```html
 <span class="inline-rating">
 ```
 
 在这个 `span` 元素内，您然后添加无序列表容器元素 `ul`，如下所示：
 
-```
+```html
 <ul class="star-rating small-star">
 ```
 
 这个 `ul` 元素被样式化为小评分组件，意味着它将使用 `star_sm.gif` 图像文件中的较小星星图像。如果您想改用较大的评分组件，只需去掉 `small-star` 类，使代码看起来像这样：
 
-```
+```html
 <ul class="star-rating">
 ```
 
 到目前为止，评分组件完全是通用的，没有特定于某个项目的代码。随着第一个列表项的添加，这种情况即将改变，这是一个控制可见星星数量的特殊项目：
 
-```
- <li id="twain-rating" class="current-rating"
-style="width:0%">Rating</li>
+```html
+<li id="twain-rating" class="current-rating" style="width:0%">Rating</li>
 ```
 
 现在您看到了第一个特定于项目的评分证据，因为项目 ID `twain` 通过其 `id` 属性（`twain-rating`）用于标识评分。
 
 接下来是星星本身，它们都被编码为 `li` 列表元素：
 
-```
- <li><a href="javascript:setRating('twain', 1);"
-     class="one-star">1</a></li>
-   <li><a href="javascript:setRating('twain', 2);"
-     class="two-stars">2</a></li>
-   <li><a href="javascript:setRating('twain', 3);"
-     class="three-stars">3</a></li>
-   <li><a href="javascript:setRating('twain', 4);"
-     class="four-stars">4</a></li>
-   <li><a href="javascript:setRating('twain', 5);"
-     class="five-stars">5</a></li>
+```html
+<li><a href="javascript:setRating('twain', 1);" class="one-star">1</a></li>
+<li><a href="javascript:setRating('twain', 2);" class="two-stars">2</a></li>
+<li><a href="javascript:setRating('twain', 3);" class="three-stars">3</a></li>
+<li><a href="javascript:setRating('twain', 4);" class="four-stars">4</a></li>
+<li><a href="javascript:setRating('twain', 5);" class="five-stars">5</a></li>
 ```
 
 这里的每一行代码代表五星评分中的一颗星。每颗星不仅作为评分的视觉指示，还充当触发评分投票的触发器。这一点从每个列表项中的链接调用 `setRating()` 函数可以明显看出。`setRating()` 函数接受评分项 ID 作为其第一个参数，此处为 `twain`，后跟要设置的评分。因此，`setRating()` 函数的第二个参数是要为该评分设置的星星数量。
 
 现在您可以关闭评分组件的主要部分，如下所示：
 
-
-
-```
- </ul>
+```html
+</ul>
 </span>
 ```
 
 剩下的唯一代码是用于评分右侧辅助文本的最后一个 `span` 元素：
 
-```
+```html
 <span id="twain-info" class="rating-info-small">
-  (click to vote)</span>
+  (click to vote)
+</span>
 ```
+
+
+
 
 请注意，这段代码使用了 `rating-info-small` CSS 样式类，对应的是小型评分组件。如果你正在创建大型评分组件，请将此样式改为 `rating-info`。
 
@@ -6243,7 +6712,7 @@ Cookie 重置网页（`cookiereset.html`）是 Rater 应用的一个辅助工具
 
 Cookie 重置网页之所以缺乏兴奋感，是因为它除了清除与五个语录评分相关的五个 cookie 的值之外，什么也不做。以下是该页面 `cookiereset.html` 的完整 HTML 代码，它将阐明 cookie 清除过程：
 
-```
+```html
 <html>
   <head>
     <title>Rater - Cookie Reset</title>
@@ -6255,10 +6724,9 @@ Cookie 重置网页之所以缺乏兴奋感，是因为它除了清除与五个�
       document.cookie = "shaw-rating=";
     </script>
   </head>
-
- <body>
-   <p>The cookies are reset.</p>
- </body>
+  <body>
+    <p>The cookies are reset.</p>
+  </body>
 </html>
 ```
 
@@ -6300,22 +6768,17 @@ Rater 应用是一个相当有趣的测试对象，因为它涉及存储在服�
 
 ##### 图 12.10. 评分组件还支持更大的版本，同时使用更大的星星图片和更大的文本。
 
-
-
-
-
 [[查看完整尺寸图片]](ys8wohawzzmxcjm1mjjlzgftdc9zyzc4cjlnmgkvzmmuamdwz3ayczjhadfsav9pmxqv.jpg)![](img/ys8wohawzzmxcjm1mjjlzgftdc9zyzc4cjlnmgkvzmnncdjzmwhqmnauawlnms8-.jpg)
 
 Rater 应用和评分组件的真正强大之处在于，可以让许多人同时对项目进行评分。尽管该组件通过使用 cookie 来防止同一台机器重复投票，但你可以通过加载一个特殊的网页来清除评分 cookie，从而绕过这一限制。如果在浏览器中打开 `cookiereset.html` 网页，它将清除 Rater 网页的所有 cookie，从而让你能够以其他人在自己电脑上看到的方式查看该页面。
 
-注意
-
-| ![](img/ys8wohawzzmxcjm1mjjlzgftdc9zyzc4cjlnmgkvdgmucg9zagpwawdll24-.jpg) | 如果多次使用 Cookie 重置网页，请务必刷新该页面，并在重置 cookie 后也刷新 Rater 网页。否则，cookie 的更改将不会生效。 |
-| --- | --- |
+> **注意：**
+>
+> 如果多次使用 Cookie 重置网页，请务必刷新该页面，并在重置 cookie 后也刷新 Rater 网页。否则，cookie 的更改将不会生效。
 
 图 12.11 展示了 Rater 应用在引文上进行了多次投票后的效果。实际上，该图显示了所有评分的平均值，这意味着每条引文都已被投票。
 
-##### 图 12.11\. 通过重置 cookie，你可以再次对项目进行投票，从而绕过每台计算机只能投一票的限制。
+##### 图 12.11. 通过重置 cookie，你可以再次对项目进行投票，从而绕过每台计算机只能投一票的限制。
 
 [[查看完整尺寸图片]](ys8wohawzzmxcjm1mjjlzgftdc9zyzc4cjlnmgkvzmmuamdwz3aycznhadfsav9pmxqv.jpg)![](img/ys8wohawzzmxcjm1mjjlzgftdc9zyzc4cjlnmgkvzmnncdjzmwhqm3auawlnms8-.jpg)
 
@@ -6327,16 +6790,19 @@ Rater 应用和评分组件的真正强大之处在于，可以让许多人同�
 
 将评分组件添加到自己的页面的第一步是导入相应的 Ajax Toolkit 文件。需要将以下代码添加到包含评分的页面的 head 部分：
 
-```
+```html
 <link rel="stylesheet" type="text/css" href="ratingkit.css" />
+
 <script type="text/javascript" src="ajaxkit.js"> </script>
+
 <script type="text/javascript" src="domkit.js"> </script>
+
 <script type="text/javascript" src="ratingkit.js"> </script>
 ```
 
 这段代码导入了评分 CSS 样式表以及几个 JavaScript 文件，这些都是评分组件正常工作所必需的。接下来要做的是在 `<body>` 标签的 `onload` 事件处理程序中调用 `initRatings()` 函数，如下所示：
 
-```
+```html
 <body onload="initRatings()">
 ```
 
@@ -6346,23 +6812,17 @@ Rater 应用和评分组件的真正强大之处在于，可以让许多人同�
 
 现在，你有了一个项目 ID 来唯一标识每个项目的评分，这就是将评分添加到页面所需的全部内容。以下是第一个产品（项目 ID 为 1）的小型评分代码：
 
-```
+```html
 <div>
   <span class="rating-label-small">评分：</span>
   <span class="inline-rating">
     <ul class="star-rating small-star">
-      <li id="1-rating" class="current-rating"
-        style="width:0%">评分</li>
-      <li><a href="javascript:setRating('1', 1);"
-        class="one-star">1</a></li>
-      <li><a href="javascript:setRating('1', 2);"
-        class="two-stars">2</a></li>
-      <li><a href="javascript:setRating('1', 3);"
-        class="three-stars">3</a></li>
-      <li><a href="javascript:setRating('1', 4);"
-        class="four-stars">4</a></li>
-      <li><a href="javascript:setRating('1', 5);"
-        class="five-stars">5</a></li>
+      <li id="1-rating" class="current-rating" style="width:0%">评分</li>
+      <li><a href="javascript:setRating('1', 1);" class="one-star">1</a></li>
+      <li><a href="javascript:setRating('1', 2);" class="two-stars">2</a></li>
+      <li><a href="javascript:setRating('1', 3);" class="three-stars">3</a></li>
+      <li><a href="javascript:setRating('1', 4);" class="four-stars">4</a></li>
+      <li><a href="javascript:setRating('1', 5);" class="five-stars">5</a></li>
     </ul>
   </span>
   <span id="1-info" class="rating-info-small">
@@ -6374,23 +6834,17 @@ Rater 应用和评分组件的真正强大之处在于，可以让许多人同�
 
 页面中的每个评分都必须正确设置所有这些项目 ID 引用。为了确保你理解其工作原理，让我们快速浏览产品目录，直到找到项目 ID 为 379 的产品。以下是为此项目添加评分组件的代码：
 
-```
+```html
 <div>
   <span class="rating-label-small">评分：</span>
   <span class="inline-rating">
     <ul class="star-rating small-star">
-      <li id="379-rating" class="current-rating"
-        style="width:0%">评分</li>
-      <li><a href="javascript:setRating('379', 1);"
-        class="one-star">1</a></li>
-      <li><a href="javascript:setRating('379', 2);"
-        class="two-stars">2</a></li>
-      <li><a href="javascript:setRating('379', 3);"
-        class="three-stars">3</a></li>
-      <li><a href="javascript:setRating('379', 4);"
-        class="four-stars">4</a></li>
-      <li><a href="javascript:setRating('379', 5);"
-        class="five-stars">5</a></li>
+      <li id="379-rating" class="current-rating" style="width:0%">评分</li>
+      <li><a href="javascript:setRating('379', 1);" class="one-star">1</a></li>
+      <li><a href="javascript:setRating('379', 2);" class="two-stars">2</a></li>
+      <li><a href="javascript:setRating('379', 3);" class="three-stars">3</a></li>
+      <li><a href="javascript:setRating('379', 4);" class="four-stars">4</a></li>
+      <li><a href="javascript:setRating('379', 5);" class="five-stars">5</a></li>
     </ul>
   </span>
   <span id="379-info" class="rating-info-small">
@@ -6398,32 +6852,29 @@ Rater 应用和评分组件的真正强大之处在于，可以让许多人同�
 </div>
 ```
 
+
+
+
+
 希望这段代码能让你清楚地了解项目 ID 在评分代码中的位置。你可以根据需要多次粘贴这段代码来创建不同的评分，只要每次小心地更改项目 ID 即可。
 
-注意
+### 注意
 
+| 图片 | 说明 |
+|------|------|
 | ![](img/ys8wohawzzmxcjm1mjjlzgftdc9zyzc4cjlnmgkvdgmucg9zagpwawdll24-.jpg) | 另一个极其简单的快速评分改造是，将星星图片替换为你自己的图片。大星星和小星星图片分别存储在 `star.gif` 和 `star_sm.gif` 文件中。每个文件都包含三种不同的星星，用于悬停效果。这些星星在 GIF 图片中垂直排列，并且大小相同（大星星 25x25，小星星 10x10）。如果你使用相同大小的图片，并以相同方式垂直排列，就可以轻松改变评分组件的整体外观——只需将你自己的星星图片文件覆盖 `star.gif` 和/或 `star_sm.gif` 即可。 |
-| --- | --- |
 
 在自己的页面中重用评分组件并不是唯一值得考虑的极致改造。尽管评分组件本身已经很好用，但你可能对使用 XML 文件在服务器上存储评分数据的方式并不完全满意。我选择这种方法主要是因为我不想让应用变得比必要更复杂，而引入数据库会带来相当多的额外复杂性。但这并不是一个坏主意。
-
-
-
-
 
 如果你对 MySQL 或其他数据库有一定经验，可能会考虑重写 `ratingkit.php` 服务器脚本，使其使用数据库而非 XML 文件来读写评分数据。这里不深入 MySQL 实现的具体编码细节，只为你描绘一个大致思路。
 
 简而言之，要将 Ajax 工具包中的评分组件改为使用 MySQL 数据库存储和检索评分（而非 XML 文件），需要执行以下步骤：
 
-1.  创建一个名为 `rating` 的数据库表，包含以下字段：`id`、`avg` 和 `votes`。这些字段与 `ratings.xml` 文件中同名标签一一对应。
-
-2.  修改 `ratingkit.php`，使其建立数据库连接，而非打开 XML 文件。
-
-3.  修改 `ratingkit.php`，使其通过数据库查询读取 `rating` 表中的所有行，而非读取 `ratings.xml` 文件。
-
-4.  修改 `ratingkit.php`，使其遍历 XML 数据结构中评分数据的代码改为遍历数据库查询返回的行。
-
-5.  修改 `ratingkit.php`，使其修改 `rating` 表中的相应行来存储评分，而非写入 XML 文件。
+1. 创建一个名为 `rating` 的数据库表，包含以下字段：`id`、`avg` 和 `votes`。这些字段与 `ratings.xml` 文件中同名标签一一对应。
+2. 修改 `ratingkit.php`，使其建立数据库连接，而非打开 XML 文件。
+3. 修改 `ratingkit.php`，使其通过数据库查询读取 `rating` 表中的所有行，而非读取 `ratings.xml` 文件。
+4. 修改 `ratingkit.php`，使其遍历 XML 数据结构中评分数据的代码改为遍历数据库查询返回的行。
+5. 修改 `ratingkit.php`，使其修改 `rating` 表中的相应行来存储评分，而非写入 XML 文件。
 
 我意识到这个步骤列表非常笼统，需要相当丰富的 MySQL 经验才能执行。但说实话，这正是关键所在——如果你没有足够的 MySQL 技能来完成这项工作，我更希望你坚持使用 XML 文件方案。相信我，对于有数据库技能的人来说，这只是一个非常基础的数据库挑战。如果你像我一样缺乏数据库技能，那就继续使用 XML 版本吧，它应该足以满足你的需求。
 
@@ -6433,94 +6884,29 @@ Rater 应用和评分组件的真正强大之处在于，可以让许多人同�
 
 ## 第三部分：附录
 
-|  
-
-&#124;   &#124; 附录 A Ajax 的过去、现在与未来 &#124;
-
- |
-
-|  
-
-&#124;   &#124; 附录 B 快速而粗略的 XMLHttpRequest 参考 &#124;
-
- |
-
-|  
-
-&#124;   &#124; 附录 C 使用 Live Linux CD &#124;
-
- |
-
-## 附录 A. Ajax 的过去、现在与未来
-
-也许你根本不在乎 Ajax 从何而来，但以防万一，我觉得上一堂简短的历史课或许值得。通过更深入地了解 Ajax 的起源，你或许能更好地评估它在 Web 开发未来中将扮演的角色。这是一项非常令人兴奋的技术，但在许多方面仍处于探索阶段。那么，Ajax 究竟从何而来，又将走向何方？让我们一探究竟。
-
-### Ajax 之路
-
-归根结底，Ajax 只是一个用来描述现有技术特定应用的术语。这种特定应用已经存在了几年，但直到 2005 年 2 月才被赋予一个朗朗上口的名字。命名者是 Jesse James Garrett，他需要一种更高效的方式向雇主 Adaptive Path 的客户描述一种 Web 解决方案。一天在淋浴时，Garrett 想到了 Ajax 这个名字，并沿用至今。人们开始认为 Ajax 实际上是 Asynchronous JavaScript and XML 的缩写（AJAX），但这并不完全正确。尽管 Ajax 这个名字确实指的是一种涉及异步 JavaScript 和 XML 的开发方法，但“Ajax”一词严格来说并非缩写。
-
-令人惊讶的是，Garrett 这个朗朗上口的名字可以追溯到微软的远程脚本技术，该技术于 1998 年在 Internet Explorer 4 和 Netscape Navigator 4 中正式引入。Outlook Web Access 是一个利用微软远程脚本技术的功能性应用程序，在当时无疑是开创性的。再往前推几年，`iframe`（Internet Explorer）和 `layer`（Netscape Navigator）元素早在 1996 年就支持了 Web 内容的异步加载。`iframe` 和 `layer` 元素与巧妙的 JavaScript 编码相结合，催生了动态 HTML（DHTML）的概念，在 Ajax 技术出现之前流行了数年。
-
-## 第三部分：附录
-
-|  
-
-&#124;   &#124; 附录 A Ajax 的过去、现在与未来 &#124;
-
- |
-
-|  
-
-&#124;   &#124; 附录 B 快速而粗略的 XMLHttpRequest 参考 &#124;
-
- |
-
-|  
-
-&#124;   &#124; 附录 C 使用 Live Linux CD &#124;
-
- |
-
-## 附录 A. Ajax 的过去、现在与未来
-
-也许你根本不在乎 Ajax 从何而来，但以防万一，我觉得上一堂简短的历史课或许值得。通过更深入地了解 Ajax 的起源，你或许能更好地评估它在 Web 开发未来中将扮演的角色。这是一项非常令人兴奋的技术，但在许多方面仍处于探索阶段。那么，Ajax 究竟从何而来，又将走向何方？让我们一探究竟。
-
-### Ajax 之路
-
-归根结底，Ajax 只是一个用来描述现有技术特定应用的术语。这种特定应用已经存在了几年，但直到 2005 年 2 月才被赋予一个朗朗上口的名字。命名者是 Jesse James Garrett，他需要一种更高效的方式向雇主 Adaptive Path 的客户描述一种 Web 解决方案。一天在淋浴时，Garrett 想到了 Ajax 这个名字，并沿用至今。人们开始认为 Ajax 实际上是 Asynchronous JavaScript and XML 的缩写（AJAX），但这并不完全正确。尽管 Ajax 这个名字确实指的是一种涉及异步 JavaScript 和 XML 的开发方法，但“Ajax”一词严格来说并非缩写。
-
-令人惊讶的是，Garrett 这个朗朗上口的名字可以追溯到微软的远程脚本技术，该技术于 1998 年在 Internet Explorer 4 和 Netscape Navigator 4 中正式引入。Outlook Web Access 是一个利用微软远程脚本技术的功能性应用程序，在当时无疑是开创性的。再往前推几年，`iframe`（Internet Explorer）和 `layer`（Netscape Navigator）元素早在 1996 年就支持了 Web 内容的异步加载。`iframe` 和 `layer` 元素与巧妙的 JavaScript 编码相结合，催生了动态 HTML（DHTML）的概念，在 Ajax 技术出现之前流行了数年。
-
-
-
-
-Ajax 的真正诞生是在 2000 年，当时微软在 Internet Explorer 5 中添加了`XMLHTTPRequest`对象。这项技术又花了几年时间才成熟到可以一致使用的程度，即便如此，也需要一个突破性的应用程序才能让所有人真正看到 Ajax 的力量。
-
-## 第三部分：附录
-
 | 链接 |
 |------|
 | 附录 A Ajax 的过去、现在和未来 |
 | 附录 B 快速而粗略的 XMLHttpRequest 参考 |
 | 附录 C 使用 Live Linux CD |
 
-## 附录 A. Ajax 的过去、现在和未来
+## 附录 A. Ajax 的过去、现在与未来
 
 也许你根本不在乎 Ajax 从何而来，但以防万一你在意，我想上一堂简短的历史课或许值得。通过多了解一些 Ajax 的起源，你希望能更有能力评估它在 Web 开发未来中将扮演的角色。这是一项非常令人兴奋的技术，但在许多方面仍处于探索状态。那么 Ajax 究竟从何而来，又将走向何方？让我们一探究竟。
 
 ### Ajax 之路
 
-归根结底，Ajax 只是一个用来描述现有技术特定应用的术语。这种特定应用已经存在了几年，但直到 2005 年 2 月才被赋予了一个朗朗上口的名字。命名者是杰西·詹姆斯·加勒特（Jesse James Garrett），他需要一种更高效的方式向他的雇主 Adaptive Path 的客户描述一个 Web 解决方案。加勒特有一天在淋浴时想到了 Ajax 这个名字，并沿用至今。人们开始认为 Ajax 实际上是 Asynchronous JavaScript and XML 的缩写（AJAX），但这并不完全正确。尽管 Ajax 这个名字确实指的是一种涉及异步 JavaScript 和 XML 的开发方法，但"Ajax"严格来说并不是一个缩写。
+归根结底，Ajax 只是一个用来描述现有技术特定应用的术语。这种特定应用已经存在了几年，但直到 2005 年 2 月才被赋予了一个朗朗上口的名字。命名者是杰西·詹姆斯·加勒特（Jesse James Garrett），他需要一种更高效的方式向他的雇主 Adaptive Path 的客户描述一个 Web 解决方案。加勒特有一天在淋浴时想到了 Ajax 这个名字，并沿用至今。人们开始认为 Ajax 实际上是 Asynchronous JavaScript and XML 的缩写（AJAX），但这并不完全正确。尽管 Ajax 这个名字确实指的是一种涉及异步 JavaScript 和 XML 的开发方法，但“Ajax”严格来说并不是一个缩写。
 
-令人惊讶的是，通往加勒特这个朗朗上口名字的道路可以追溯到微软的远程脚本技术，该技术于 1998 年在 Internet Explorer 4 和 Netscape Navigator 4 中正式引入。一个使用微软远程脚本技术的功能性应用程序是 Outlook Web Access，它在当时无疑是开创性的。再往前几年，`iframe`（Internet Explorer）和`layer`（Netscape Navigator）元素早在 1996 年就支持了 Web 内容的异步加载。`iframe`和`layer`元素与巧妙的 JavaScript 编码相结合，引入了动态 HTML（DHTML）的概念，在 Ajax 技术出现之前流行了数年。
+令人惊讶的是，通往加勒特这个朗朗上口名字的道路可以追溯到微软的远程脚本技术，该技术于 1998 年在 Internet Explorer 4 和 Netscape Navigator 4 中正式引入。一个使用微软远程脚本技术的功能性应用程序是 Outlook Web Access，它在当时无疑是开创性的。再往前几年，`iframe`（Internet Explorer）和 `layer`（Netscape Navigator）元素早在 1996 年就支持了 Web 内容的异步加载。`iframe` 和 `layer` 元素与巧妙的 JavaScript 编码相结合，引入了动态 HTML（DHTML）的概念，在 Ajax 技术出现之前流行了数年。
 
-Ajax 的真正诞生是在 2000 年，当时微软在 Internet Explorer 5 中添加了`XMLHTTPRequest`对象。这项技术又花了几年时间才成熟到可以一致使用的程度，即便如此，也需要一个突破性的应用程序才能让所有人真正看到 Ajax 的力量。
+Ajax 的真正诞生是在 2000 年，当时微软在 Internet Explorer 5 中添加了 `XMLHTTPRequest` 对象。这项技术又花了几年时间才成熟到可以一致使用的程度，即便如此，也需要一个突破性的应用程序才能让所有人真正看到 Ajax 的力量。
 
 ### Ajax 热潮
 
 重大的技术转变很少凭空发生。就 Ajax 而言，需要一个现实世界的例子来展示这项技术有多么引人注目。这个例子过去是，现在仍然是 Google Maps。2005 年 2 月以测试版形式发布的 Google Maps 让许多 Web 开发者目瞪口呆，他们惊叹于地图如何能够实时拖动。怎么可能有那么多数据如此快速地传输？事实证明，正是 Ajax 的巧妙运用让 Google Maps 显得如此响应迅速。实际上，该应用程序试图预测你的下一步操作，并异步预加载地图数据。
 
-Note
+### 注意
 
 | 图片 | 说明 |
 |------|------|
@@ -6530,18 +6916,15 @@ Note
 
 ### Ajax 的未来是什么？
 
-鉴于 Ajax 的迅速崛起，在我们规划未来道路时，有必要正确看待事物。可以肯定的是，我们科技行业的许多人仍然没有从 90 年代末的互联网泡沫破裂中吸取教训。"非理性繁荣"一词被用来描述导致当时科技股不受控制上涨的心态。问题很大一部分在于人们抓住下一个"大创意"，仿佛它会改变我们所知的世界。当然，互联网整体上已经相当程度地改变了世界，但我们许多人倾向于夸大每一项新进展，仿佛它独自承载着难以想象的进步、效率、财富等承诺。Ajax 就是这些新进展之一。
+鉴于 Ajax 的迅速崛起，在我们规划未来道路时，有必要正确看待事物。可以肯定的是，我们科技行业的许多人仍然没有从 90 年代末的互联网泡沫破裂中吸取教训。“非理性繁荣”一词被用来描述导致当时科技股不受控制上涨的心态。问题很大一部分在于人们抓住下一个“大创意”，仿佛它会改变我们所知的世界。当然，互联网整体上已经相当程度地改变了世界，但我们许多人倾向于夸大每一项新进展，仿佛它独自承载着难以想象的进步、效率、财富等承诺。Ajax 就是这些新进展之一。
 
 如果以更广阔的视角观察，就会发现 Ajax 只是 Web 演进中的一项进步。我并非试图低估这项进步的重要性，但我要提醒大家，我们都不应该被新鲜感冲昏头脑。Ajax 确实承诺了一个更响应、最终更可用的 Web，这值得一些兴奋。但与此同时，我们不要忘记它解决的是一个非常具体的问题，并非每个 Web 应用都会遇到。Ajax 不是你可以向每个开发的网页发射的魔法子弹。
 
 当我们冒险进入 Web 加 Ajax 的未知未来时，我们限制 Ajax 使用的程度可能最终对 Ajax 的持续成功起到关键作用。这涉及多种原因，其中之一是，尽管通常传输的信息更少，但 Ajax 实际上可能给服务器带来更大的工作负载。当然，你消除了每次请求发送整个页面数据的情况，但你选择了发送几十个请求而不是一个。根据具体的服务器配置，多个小请求可能比单个大请求更容易造成瓶颈。
 
-所有这一切都说明，你在处理未来的 Web 项目时应该知道，Ajax 是一个非常方便的工具，但归根结底它只是一个工具。那句老话"手里拿着锤子，看什么都像钉子"在这里完全适用。仅仅因为你拥有将 Ajax 注入你所做的一切的知识和代码，并不一定意味着这样做是正确的。同时，即使是结构合理的最小 Ajax 应用也可以非常引人注目，并显著提高应用的可用性。如果我们都能带着一点创造性的克制来使用 Ajax，未来的 Web 肯定会成为一个更宜居、更宜工作的地方。
+所有这一切都说明，你在处理未来的 Web 项目时应该知道，Ajax 是一个非常方便的工具，但归根结底它只是一个工具。那句老话“手里拿着锤子，看什么都像钉子”在这里完全适用。仅仅因为你拥有将 Ajax 注入你所做的一切的知识和代码，并不一定意味着这样做是正确的。同时，即使是结构合理的最小 Ajax 应用也可以非常引人注目，并显著提高应用的可用性。如果我们都能带着一点创造性的克制来使用 Ajax，未来的 Web 肯定会成为一个更宜居、更宜工作的地方。
 
-## 附录 B. 快速而粗略的 XMLHttpRequest 参考
-
-
-
+## 附录 B. 快速而粗略的 `XMLHttpRequest` 参考
 
 尽管本书的主要前提是让您能够使用 Ajax，而无需深入了解异步 JavaScript 编码的繁琐细节，但书中的示例可能会激发您深入 Ajax 编程的兴趣。如果是这样，您将需要彻底理解 `XMLHttpRequest` 对象——该对象包含了实现 Ajax 的核心功能。本附录为您提供了 `XMLHttpRequest` 对象的简明参考，以及一些关于如何最佳使用其方法和属性的有用提示。有关核心 JavaScript 语言支持的所有对象的完整参考，请参阅 [`developer.mozilla.org/en/docs/Core_JavaScript_1.5_Reference`](http://developer.mozilla.org/en/docs/Core_JavaScript_1.5_Reference)。
 
@@ -6551,23 +6934,26 @@ Note
 
 以下是 `XMLHttpRequest` 对象支持的主要方法：
 
-*   `open()`
-*   `send()`
-*   `abort()`
-*   `overrideMimeType()`
-*   `setRequestHeader()`
-*   `getAllResponseHeaders()`
-*   `getResponseHeader()`
+- `open()`
+- `send()`
+- `abort()`
+- `overrideMimeType()`
+- `setRequestHeader()`
+- `getAllResponseHeaders()`
+- `getResponseHeader()`
 
 在这些方法中，前两个是最重要且最常用的。接下来的几节将更详细地探讨这些方法。
 
 #### `open()`
 
-```
+```javascript
 open(method, url[, async[, userName[, password]]])
 ```
 
-`open()` 方法打开一个服务器请求并为其即将进行的通信做好准备。两个必需参数（`method` 和 `url`）分别指定请求方法和服务器连接的 URL。请求方法参数可以是 `"GET"` 或 `"POST"`，具体取决于您是进行相当简单的数据检索请求（`"GET"`），还是需要作为请求的一部分向服务器发送大量数据（`"POST"`）。如果您只是发送少量信息，仍然可以使用 `"GET"` 方法，但对于较大的数据提交请求（超过 512 字节），`"POST"` 是最佳选择。
+
+
+
+`open()` 方法打开一个服务器请求，并为其即将进行的通信做好准备。两个必需参数（`method` 和 `url`）分别指定请求方法和服务器连接的 URL。请求方法参数可以是 `"GET"` 或 `"POST"`，具体取决于您是进行相当简单的数据检索请求（`"GET"`），还是需要作为请求的一部分向服务器发送大量数据（`"POST"`）。如果您只是发送少量信息，仍然可以使用 `"GET"` 方法，但对于较大的数据提交请求（超过 512 字节），`"POST"` 是最佳选择。
 
 > **提示：** ![](img/ys8wohawzzmxcjm1mjjlzgftdc9zyzc4cjlnmgkvcgnqcglzcghnas4vda--.jpg) 另一个判断 Ajax 请求应使用 `"GET"` 还是 `"POST"` 的便捷方法是评估请求是否会导致服务器上的数据发生变化。如果服务器状态因请求而改变，则应使用 `"POST"`；否则，使用 `"GET"`。
 
@@ -6581,112 +6967,107 @@ open(method, url[, async[, userName[, password]]])
 
 以下是一个创建 `XMLHttpRequest` 对象并调用 `open()` 方法建立异步请求的简单示例：
 
-```
+```javascript
 var request = new XMLHttpRequest;
+
 request.open("GET", "processSomeStuff.php", true);
 ```
 
 `XMLHttpRequest` 对象的两个方面与 `open()` 方法密切相关：`send()` 方法和 `onreadystatechange` 事件处理程序。必须在调用 `open()` 方法之后调用 `send()` 方法，才能实际执行 Ajax 请求。`onreadystatechange` 事件被分配给您自己编写的回调方法，当 Ajax 请求完成时会自动调用该方法。换句话说，您必须编写自己的函数，该函数将在 Ajax 请求完成其工作时被调用。这个函数就是您处理从完成的 Ajax 请求返回的数据的地方。
 
-#### `send()`
+### `send()`
 
-```
+```javascript
 send(content)
 ```
 
 `send()` 方法负责实际向服务器发送请求进行处理。在调用 `send()` 之前，必须已经通过调用 `open()` 准备好连接。`send()` 方法的唯一参数 `content` 是作为请求的一部分发送到服务器的数据。在许多情况下，您只是严格地发出服务器请求而不发送任何数据，此时将 `null` 传递给 `send()` 方法是完全可以接受的，如下所示：
 
-```
+```javascript
 request.send(null);
 ```
 
-在使用 `"GET"` 请求方法时，通常会将 `null` 传递给 `send()` 方法。而 `"POST"` 方法则专门设计用于向服务器传递数据，在这种情况下，您需要在 content 参数中包含有意义的数据。
+在使用 `"GET"` 请求方法时，通常会将 `null` 传递给 `send()` 方法。而 `"POST"` 方法则专门设计用于向服务器传递数据，在这种情况下，您需要在 `content` 参数中包含有意义的数据。
 
-通过 content 参数传递给 `send()` 方法的内容可以是字符串、无符号字节数组或 XML DOM 对象。在许多情况下，您只需向该方法传递一个字符串，此时它通常采用熟悉的 `"POST"` 风格的名/值对，如下例所示：
+通过 `content` 参数传递给 `send()` 方法的内容可以是字符串、无符号字节数组或 XML DOM 对象。在许多情况下，您只需向该方法传递一个字符串，此时它通常采用熟悉的 `"POST"` 风格的名/值对，如下例所示：
 
-```
+```javascript
 request.send("artist=phish&album=rift&track=weigh");
 ```
 
 需要注意的是，对于异步请求，您需要在调用 `send()` 方法之前设置 `onreadystatechange` 事件处理程序。否则，您的事件处理程序回调方法将永远不会被调用，Ajax 效果将完全丧失。以下是设置此处理程序的示例，该操作必须在调用 `send()` 方法之前进行：
 
-```
+```javascript
 request.onreadystatechange = yourHandler;
 ```
 
 请记住，当 Ajax 请求完成时，会自动调用 `yourHandler()` 函数，以便您对请求返回的数据进行有用的处理。
 
-#### `abort()`
+### `abort()`
 
-```
+```javascript
 abort()
 ```
 
 `abort()` 方法停止服务器请求。在超时情况下，当您选择放弃一个耗时较长的请求时，此方法非常有用。您也可以调用 `abort()` 方法来确保在重用请求对象执行另一个请求之前重置它。以下是调用 `abort()` 方法终止 Ajax 请求的示例：
 
-```
+```javascript
 request.abort();
 ```
 
-#### `overrideMimeType()`
+### `overrideMimeType()`
 
-```
+```javascript
 overrideMimeType(type)
 ```
 
-
-
-
-
 `overrideMimeType()` 方法提供了一种手段，用于覆盖服务器响应请求时返回数据的 MIME 类型。当你期望获取 XML 数据，但由于某种原因无法让服务器配合时，这个方法会非常有用。例如，服务器可能因为 XML 数据格式不完全规范而拒绝返回 XML，此时服务器会通过 `responseText` 属性以原始文本形式返回数据。如果你调用 `overrideMimeType()` 方法并将 MIME 类型指定为 `"text/xml"`，服务器将尝试在 `responseXML` 属性中返回 XML 数据：
 
-```
+```javascript
 request.overrideMimeType("text/xml");
 ```
 
-注意
+> **注意：** `overrideMimeType()` 方法应在调用 `open()` 方法之后、调用 `send()` 方法之前调用。
 
-| ![](img/ys8wohawzzmxcjm1mjjlzgftdc9zyzc4cjlnmgkvdgmucg9zagpwawdll24-.jpg) | `overrideMimeType()` 方法应在调用 `open()` 方法之后、调用 `send()` 方法之前调用。 |
+### `setRequestHeader()`
 
-#### `setRequestHeader()`
-
-```
+```javascript
 setRequestHeader(label, value)
 ```
 
 `setRequestHeader()` 方法用于向请求头添加一个标签/值对。对于普通的 `GET` 请求，此方法并非必需，但在进行 `POST` 请求时至关重要。例如，以下请求头设置让服务器知道 `POST` 请求中的数据将以编码 URL 的形式发送：
 
-```
+```javascript
 request.setRequestHeader("Content-Type",
   "application/x-www-form-urlencoded");
 ```
 
 XML 是另一种常用于发起 `POST` 请求的数据格式。如果你计划在 `POST` 请求中将 XML 数据传递给服务器，则需要设置以下请求头：
 
-```
+```javascript
 request.setRequestHeader("Content-Type",
   "text/xml");
 ```
 
 是否需要设置请求头最终取决于你的具体请求。如果你的请求是 `POST`，则始终应该设置它。否则，对于 `GET` 请求，不设置任何请求头也完全没问题。
 
-#### `getAllResponseHeaders()`
+### `getAllResponseHeaders()`
 
-```
+```javascript
 getAllResponseHeaders()
 ```
 
 `getAllResponseHeaders()` 方法返回与响应相关的所有响应头，结果是一个字符串，包含一系列由换行符分隔的标签/值对。可能更有用的是 `getResponseHeader()` 方法，它返回特定头标签的单个值。
 
-#### `getResponseHeader()`
+### `getResponseHeader()`
 
-```
+```javascript
 getResponseHeader(headerLabel)
 ```
 
 `getResponseHeader()` 方法接受特定头的标签，并返回该标签对应的头字符串值。例如，你可以通过获取 `"Content-Type"` 标签的响应头来确定请求的内容类型，如下所示：
 
-```
+```javascript
 var header = request.getResponseHeader("Content-Type");
 ```
 
@@ -6702,138 +7083,123 @@ var header = request.getResponseHeader("Content-Type");
 
 以下是 `XMLHttpRequest` 对象支持的主要方法：
 
-*   `open()`
-
-*   `send()`
-
-*   `abort()`
-
-*   `overrideMimeType()`
-
-*   `setRequestHeader()`
-
-*   `getAllResponseHeaders()`
-
-*   `getResponseHeader()`
+- `open()`
+- `send()`
+- `abort()`
+- `overrideMimeType()`
+- `setRequestHeader()`
+- `getAllResponseHeaders()`
+- `getResponseHeader()`
 
 在这些方法中，前两个是最重要且最常用的。接下来的几节将更详细地探讨这些方法。
 
-#### `open()`
+### `open()`
 
-```
+```javascript
 open(method, url[, async[, userName[, password]]])
 ```
 
 `open()` 方法打开一个服务器请求，并为即将进行的通信做好准备。两个必需参数（`method` 和 `url`）分别指定请求方法和服务器连接的 URL。请求方法参数可以是 `"GET"` 或 `"POST"`，具体取决于你是进行相当简单的数据检索请求（`"GET"`），还是需要将大量数据作为请求的一部分发送到服务器（`"POST"`）。如果只是发送少量信息，你仍然可以使用 `GET` 方法，但对于较大的数据提交请求（超过 512 字节），`POST` 是最佳选择。
 
-提示
-
-| ![](img/ys8wohawzzmxcjm1mjjlzgftdc9zyzc4cjlnmgkvcgnqcglzcghnas4vda--.jpg) | 另一种判断 Ajax 请求应使用 `GET` 还是 `POST` 的便捷方法是评估请求是否会导致服务器上的数据发生变化。如果请求导致服务器状态改变，则应使用 `POST`；否则，使用 `GET`。 |
+> **提示：** ![](img/ys8wohawzzmxcjm1mjjlzgftdc9zyzc4cjlnmgkvcgnqcglzcghnas4vda--.jpg) 另一种判断 Ajax 请求应使用 `GET` 还是 `POST` 的便捷方法是评估请求是否会导致服务器上的数据发生变化。如果请求导致服务器状态改变，则应使用 `POST`；否则，使用 `GET`。
 
 `url` 参数可以指定为绝对（完整）或相对 URL，但请记住，无论哪种情况，URL 都必须与生成请求的 JavaScript 代码的 URL 匹配。换句话说，Ajax 连接只能向与 Ajax 脚本代码本身相同的服务器发起请求。这是 `XMLHttpRequest` 对象的一个安全限制，但旨在保护用户免受恶意 Ajax 编码者的侵害。
 
 `open()` 方法的第三个参数 `async` 是一个可选的布尔值，用于确定请求是否以异步方式处理。默认值 `true` 表示异步（Ajax）请求，而 `false` 表示同步请求。在实践中，这意味着同步请求会让脚本在继续执行其他操作之前等待响应，而异步请求则在后台进行，仅在完成时报告。在极少数情况下，同步请求可能是有意义的，例如在允许用户继续执行任务之前等待绝对关键的数据，但在绝大多数情况下，你会希望使用异步请求。此外，异步性正是 Ajax 如此酷的原因。
 
-注意
-
-| ![](img/ys8wohawzzmxcjm1mjjlzgftdc9zyzc4cjlnmgkvdgmucg9zagpwawdll24-.jpg) | 大多数支持 Ajax 的浏览器将 Ajax 请求限制为 HTTP 请求（`http:` 协议），这意味着你无法使用 `file:` 协议从本地硬盘测试 Ajax 脚本。当然，你始终可以在本地安装一个 Web 服务器，这样你就可以使用 `http:` 协议打开 Ajax 页面。 |
+> **注意：** ![](img/ys8wohawzzmxcjm1mjjlzgftdc9zyzc4cjlnmgkvdgmucg9zagpwawdll24-.jpg) 大多数支持 Ajax 的浏览器将 Ajax 请求限制为 HTTP 请求（`http:` 协议），这意味着你无法使用 `file:` 协议从本地硬盘测试 Ajax 脚本。当然，你始终可以在本地安装一个 Web 服务器，这样你就可以使用 `http:` 协议打开 Ajax 页面。
 
 `open()` 的最后两个参数完全是可选的，最终取决于你的服务器是否需要用户名和密码来执行请求。
 
 以下是一个创建 `XMLHttpRequest` 对象并调用 `open()` 方法建立异步请求的简单示例：
 
-```
+```javascript
 var request = new XMLHttpRequest;
+
 request.open("GET", "processSomeStuff.php", true);
 ```
 
-
-
-
-
 `XMLHttpRequest` 对象的两个方面与 `open()` 方法紧密相关：`send()` 方法和 `onreadystatechange` 事件处理程序。`send()` 方法必须在 `open()` 方法之后调用，才能实际执行 Ajax 请求。`onreadystatechange` 事件被分配给你自己编写的回调方法，当 Ajax 请求完成时，该方法会自动被调用。换句话说，你必须编写自己的函数，该函数会在 Ajax 请求完成其任务时被调用。这个函数就是用来处理从完成的 Ajax 请求返回的数据的地方。
 
-#### `send()`
+### `send()`
 
-```
+```javascript
 send(content)
 ```
 
 `send()` 方法负责实际向服务器发送请求进行处理。在调用 `send()` 之前，必须已经通过调用 `open()` 准备好连接。`send()` 方法的唯一参数 `content` 是要作为请求的一部分发送到服务器的数据。在许多情况下，你只是严格地发起服务器请求而不发送任何数据，此时将 `null` 传递给 `send()` 方法是完全可以接受的，如下所示：
 
-```
+```javascript
 request.send(null);
 ```
 
-在使用 `"GET"` 请求方法时，通常会将 `null` 传递给 `send()` 方法。而 `"POST"` 方法则专门设计用于向服务器传递数据，在这种情况下，你需要在 content 参数中包含有意义的数据。
+在使用 `"GET"` 请求方法时，通常会将 `null` 传递给 `send()` 方法。而 `"POST"` 方法则专门设计用于向服务器传递数据，在这种情况下，你需要在 `content` 参数中包含有意义的数据。
 
-通过 content 参数传递给 `send()` 方法的内容可以是字符串、无符号字节数组或 XML DOM 对象。在许多情况下，你只需向该方法传递一个字符串，此时它通常采用熟悉的 `POST` 风格名称/值对，如下例所示：
+通过 `content` 参数传递给 `send()` 方法的内容可以是字符串、无符号字节数组或 XML DOM 对象。在许多情况下，你只需向该方法传递一个字符串，此时它通常采用熟悉的 `POST` 风格名称/值对，如下例所示：
 
-```
+```javascript
 request.send("artist=phish&album=rift&track=weigh");
 ```
 
 需要注意的是，对于异步请求，你需要在调用 `send()` 方法之前设置 `onreadystatechange` 事件处理程序。否则，你的事件处理程序回调方法将永远不会被调用，Ajax 效果将完全丢失。以下是设置此处理程序的示例，该设置必须在调用 `send()` 方法之前完成：
 
-```
+```javascript
 request.onreadystatechange = yourHandler;
 ```
 
 请记住，当 Ajax 请求完成时，会自动调用 `yourHandler()` 函数，以便你可以对请求返回的数据进行有用的处理。
 
-#### `abort()`
+### `abort()`
 
-```
+```javascript
 abort()
 ```
 
 `abort()` 方法停止服务器请求。当你在超时情况下选择放弃一个耗时较长的请求时，此方法非常有用。你也可以调用 `abort()` 方法来确保在重用请求对象执行另一个请求之前将其重置。以下是调用 `abort()` 方法终止 Ajax 请求的示例：
 
-```
+```javascript
 request.abort();
 ```
 
-#### `overrideMimeType()`
+### `overrideMimeType()`
 
-```
+```javascript
 overrideMimeType(type)
 ```
 
 `overrideMimeType()` 方法提供了一种手段，可以覆盖服务器响应请求返回的数据的 MIME 类型。当你期望 XML 但由于某种原因无法让服务器配合时，此方法非常有用。例如，服务器可能因为 XML 数据格式不完全正确而拒绝返回 XML，此时服务器会通过 `responseText` 属性以原始文本形式返回数据。如果你调用 `overrideMimeType()` 方法并将 `"text/xml"` 指定为 MIME 类型，服务器将尝试在 `responseXML` 属性中返回 XML 数据：
 
-```
+```javascript
 request.overrideMimeType("text/xml");
 ```
 
-注意
+> **注意：** `overrideMimeType()` 方法应在调用 `open()` 方法之后、调用 `send()` 方法之前调用。
 
-| ![](img/ys8wohawzzmxcjm1mjjlzgftdc9zyzc4cjlnmgkvdgmucg9zagpwawdll24-.jpg) | `overrideMimeType()` 方法应在调用 `open()` 方法之后、调用 `send()` 方法之前调用。 |
+### `setRequestHeader()`
 
-#### `setRequestHeader()`
-
-```
+```javascript
 setRequestHeader(label, value)
 ```
 
+
+
 `setRequestHeader()` 方法用于向请求头添加一个标签/值对。此方法对于普通的 `GET` 请求不是必需的，但在进行 `POST` 请求时至关重要。例如，以下请求头设置让服务器知道 `POST` 请求中的数据将以编码 URL 的形式发送：
 
-```
-request.setRequestHeader("Content-Type",
-  "application/x-www-form-urlencoded");
+```javascript
+request.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 ```
 
 XML 是发起 `POST` 请求的另一种流行数据格式。如果你计划在 `POST` 请求中将 XML 数据传递给服务器，则需要设置以下请求头：
 
-```
-request.setRequestHeader("Content-Type",
-  "text/xml");
+```javascript
+request.setRequestHeader("Content-Type", "text/xml");
 ```
 
 设置请求头的必要性最终取决于你的具体请求。如果你的请求是 `POST`，则始终应该设置它。否则，对于 `GET` 请求，不设置任何请求头也应该没问题。
 
 #### `getAllResponseHeaders()`
 
-```
+```javascript
 getAllResponseHeaders()
 ```
 
@@ -6841,13 +7207,13 @@ getAllResponseHeaders()
 
 #### `getResponseHeader()`
 
-```
+```javascript
 getResponseHeader(headerLabel)
 ```
 
 `getResponseHeader()` 方法接受特定头的标签，并返回该标签对应的头字符串值。例如，你可以通过获取 `"Content-Type"` 标签的响应头来确定请求的内容类型，如下所示：
 
-```
+```javascript
 var header = request.getResponseHeader("Content-Type");
 ```
 
@@ -6857,11 +7223,11 @@ var header = request.getResponseHeader("Content-Type");
 
 方法只是 `XMLHttpRequest` 方程的一半。几个属性也发挥着作用，并且对于成功执行 Ajax 请求实际上非常重要。以下是 `XMLHttpRequest` 对象支持的最重要的属性：
 
-*   `readyState`
-*   `status`
-*   `statusText`
-*   `responseText`
-*   `responseXML`
+- `readyState`
+- `status`
+- `statusText`
+- `responseText`
+- `responseXML`
 
 这些属性很重要，因为它们告诉你关于 Ajax 请求状态和状况的关键信息，例如请求是否完成且成功，同时还存储 Ajax 请求返回的数据。所有这些属性都是只读的，这意味着你不能设置它们的值。前三个属性与请求的状态和状况有关，而后两个属性用于访问请求返回的实际数据。接下来的几节将深入探讨这些属性的工作原理。
 
@@ -6869,37 +7235,31 @@ var header = request.getResponseHeader("Content-Type");
 
 `readyState` 属性反映了请求的当前状态，是你跟踪请求进度的主要手段。该属性在请求执行过程中会经历一系列值，最后一个值表示请求已完成。以下是 `readyState` 属性的可能值，按出现顺序排列：
 
-*   `0`—未初始化
-*   `1`—加载中
-*   `2`—已加载
-*   `3`—交互中
-*   `4`—已完成
+- `0`—未初始化
+- `1`—加载中
+- `2`—已加载
+- `3`—交互中
+- `4`—已完成
 
 在这些属性值中，最后一个值通常是你唯一关心的，因为它表示请求已完成。然而，在检测成功的 Ajax 请求时，`readyState` 属性值为 `4` 并不是故事的终点。你还需要考虑 `status` 属性。
 
-注意
-
-| ![](img/ys8wohawzzmxcjm1mjjlzgftdc9zyzc4cjlnmgkvdgmucg9zagpwawdll24-.jpg) | 每次 `readyState` 属性的值发生变化时，都会调用分配给 `onreadystatechange` 事件处理程序的自定义回调方法。这就是为什么在根据请求采取行动之前，必须在回调方法中检查 `readyState` 属性是否等于 `4` 的原因——你需要确认请求已完成才能进行任何操作。 |
+> **注意：** ![](img/ys8wohawzzmxcjm1mjjlzgftdc9zyzc4cjlnmgkvdgmucg9zagpwawdll24-.jpg) 每次 `readyState` 属性的值发生变化时，都会调用分配给 `onreadystatechange` 事件处理程序的自定义回调方法。这就是为什么在根据请求采取行动之前，必须在回调方法中检查 `readyState` 属性是否等于 `4` 的原因——你需要确认请求已完成才能进行任何操作。
 
 #### `status`
-
-
-
-
 
 `status` 属性跟踪当前的 HTTP 服务器状态，它可以取多种不同的值，包括表示“未找到”的 `404` 或表示“成功”的 `200`。实际上，从 Ajax 的角度来看，你最关心的就是 `status` 值为 `200`，这表示请求已成功执行。虽然其他状态码也可能出现，但你主要关注 `200`，因为其他任何值都意味着出现了问题。
 
 通常你会检查 `status` 属性是否等于 `200`（成功），同时检查 `readyState` 属性是否等于 `4`（完成）。如果这两个属性都符合条件，你就知道请求已成功完成，可以开始处理请求数据了。
 
-#### statusText
+#### `statusText`
 
 `statusText` 属性包含与当前状态码相关联的字符串消息。例如，成功状态码 `200` 对应的状态文本是 `"OK"`。如果请求失败并返回了非 `200` 的状态码，你可以考虑显示状态文本用于诊断或错误处理。
 
-#### responseText
+#### `responseText`
 
 `responseText` 属性是用于存储 Ajax 请求返回数据的属性对中的一半。之所以说是一半，是因为另一个名为 `responseXML` 的属性能够以与 `responseText` 不同的格式返回数据。如果你打算以原始文本形式接收请求数据，那么 `responseText` 就是你想要使用的属性，因为它直接为你提供一个包含数据的文本字符串。
 
-#### responseXML
+#### `responseXML`
 
 响应数据属性对的另一半是 `responseXML` 属性，它将请求返回的数据格式化为一个兼容 DOM 的 XML 文档节点对象。由于 `responseXML` 属性提供的是一个 DOM 节点对象，你可以使用所有极其强大且灵活的 DOM 方法和属性来探索和操作数据。虽然通过 `responseText` 属性以原始文本形式处理 Ajax 请求数据是完全可行且经常有用的，但正是 `responseXML` 提供的 XML 请求数据结构赋予了 Ajax 强大的能力。
 
@@ -6917,13 +7277,10 @@ Live CD 是一张包含完整计算机操作系统的可移动光盘。该 CD �
 
 这张 Live CD 是一张经过重新制作的 Ubuntu Linux Live CD，已进行适配以包含以下组件：
 
-*   Ajax Construction Kit 示例——本书中描述的所有示例应用程序都包含在 Live CD 中。
-
-*   Web 服务器——Live CD 中包含了 XAMPP 服务器。只需单击一下，你就可以启动服务器，在本地计算机上或通过网络从其他浏览器尝试 Ajax 示例。
-
-*   工具——Live CD 还包含了 Firefox 浏览器（用于显示示例）和 Bluefish 编辑器（用于修改代码）。由于这是一张功能齐全的桌面 Live CD，你还可以使用其他命令行工具和应用程序。
-
-*   文档——顶部面板中的链接让你可以访问有用的 Ajax、PHP 和 XAMPP 文档，以便在处理代码时查阅参考资料。
+- Ajax Construction Kit 示例——本书中描述的所有示例应用程序都包含在 Live CD 中。
+- Web 服务器——Live CD 中包含了 XAMPP 服务器。只需单击一下，你就可以启动服务器，在本地计算机上或通过网络从其他浏览器尝试 Ajax 示例。
+- 工具——Live CD 还包含了 Firefox 浏览器（用于显示示例）和 Bluefish 编辑器（用于修改代码）。由于这是一张功能齐全的桌面 Live CD，你还可以使用其他命令行工具和应用程序。
+- 文档——顶部面板中的链接让你可以访问有用的 Ajax、PHP 和 XAMPP 文档，以便在处理代码时查阅参考资料。
 
 将 Ajax Construction Kit CD 作为 Live CD 使用意味着，在重启 PC 后，你无需任何特殊配置即可获得显示、使用和修改 Ajax 项目所需的所有软件。然而，如果你不想（或不允许）重启正在使用的 PC，Live CD 还提供了其他处理代码的方式。
 
@@ -6933,17 +7290,10 @@ Live CD 是一张包含完整计算机操作系统的可移动光盘。该 CD �
 
 对于一台配备至少 256MB 内存和 Pentium III 650MHz（或更高）处理器的普通 PC，Live CD 应该能运行得相当不错。具体操作如下：
 
-1.  将 CD 插入标准 PC 并重启。
-
-2.  在启动画面按回车键选择“启动或安装”。
-
-3.  几分钟后桌面出现（请耐心等待），打开“启动 LAMPP”图标以启动服务器。
-
-4.  服务器运行后，打开“启动项目”图标以查看和处理项目。
-
-
-
-
+1. 将 CD 插入标准 PC 并重启。
+2. 在启动画面按回车键选择“启动或安装”。
+3. 几分钟后桌面出现（请耐心等待），打开“启动 LAMPP”图标以启动服务器。
+4. 服务器运行后，打开“启动项目”图标以查看和处理项目。
 
 此时，你应该能看到 Firefox 浏览器打开到索引页面，你可以从该页面运行本书中的所有代码示例。Live CD 的 Ubuntu 桌面以及 Ajax 构造套件组件显示在图 C.1 中。
 
@@ -6967,26 +7317,26 @@ Live CD 是一张包含完整计算机操作系统的可移动光盘。该 CD �
 
 如果“网络设置”窗口告诉你无线网卡未配置，请打开一个终端窗口（通过顶部面板中的终端图标）进行一些侦探工作。输入以下命令，尝试确定你使用的无线网卡类型：
 
-```
-$ lspci -v |grep -i wireless
+```bash
+$ lspci -v | grep -i wireless
 ```
 
 执行命令后，你可能会看到类似这样的内容：
 
-```
+```text
 02:02.0 Network controller: Intel Corporation PRO/Wireless
 2200BG Network Connection (rev 05)
 ```
 
-在这个例子中，无线网卡是 Intel PRO/Wireless 2200BG 卡。有了这些信息，去你最喜欢的搜索引擎（假设你有某台机器可以上网，或者可以临时连接到有线网络）搜索无线网卡型号和单词 Linux（例如“Linux 2200BG”）。这个例子找到了 ipw2200 驱动项目。我将继续这个例子。首先检查驱动是否已加载：
+在这个例子中，无线网卡是 Intel PRO/Wireless 2200BG 卡。有了这些信息，去你最喜欢的搜索引擎（假设你有某台机器可以上网，或者可以临时连接到有线网络）搜索无线网卡型号和单词 Linux（例如“Linux 2200BG”）。这个例子找到了 `ipw2200` 驱动项目。我将继续这个例子。首先检查驱动是否已加载：
 
-```
-$ lsmod |grep ipw2200
+```bash
+$ lsmod | grep ipw2200
 ```
 
 该命令的匹配结果会显示驱动确实已加载：
 
-```
+```text
 ipw2200     115652   0
 ```
 
@@ -7009,11 +7359,15 @@ ipw2200     115652   0
 刚刚描述的过程也可以用于将你的 Ajax 项目文件和文件夹复制到另一台计算机系统（例如 Windows 机器）上，以便在该机器上处理或运行项目。如果是这种情况，你可能希望选择诸如 `.zip` 之类的归档类型，以确保你可以在新系统上提取文件。
 
 > **注意：** ![](img/ys8wohawzzmxcjm1mjjlzgftdc9zyzc4cjlnmgkvdgmucg9zagpwawdll24-.jpg) 如果你想备份整个 Web 服务器（`/opt/lampp`），你可能需要从命令行而不是从归档管理器窗口进行备份。这是因为你可能需要 root 权限才能访问某些文件。以下是一个命令，你可以用它来将整个 XAMPP 服务器（包括 Ajax 项目）备份到你的 USB 磁盘。第二个命令用于恢复：
-> 
-> ```
+
+> ```bash
 > $ sudo tar cvfz /media/usbdisk/lampp-backup.tar.gz /opt/lamp
+>
 > $ cd / ; sudo tar xvfz /media/usbdisk/lampp-backup.tar.gz
 > ```
+
+
+
 
 ### 直接在 Windows PC 上运行 Live CD
 
@@ -7021,25 +7375,14 @@ ipw2200     115652   0
 
 要在 Windows 系统上安装并运行 XAMPP 服务器和本书中的代码示例，请执行以下操作：
 
-1.  在运行的 Windows 系统中，插入本书附带的 Live CD。
-
-2.  在资源管理器窗口中打开 Live CD，并导航到 `\Windows` 文件夹。
-
-
-
-
-
-3.  从光盘的 `\Windows` 文件夹中，打开 XAMPP 安装程序（`xampp-win32-1.6.0a-installer.exe`）并按照安装说明进行操作。该程序适用于 Windows 2000、NT 和 XP Professional。如果需要帮助，请参阅 XAMPP for Windows 常见问题解答（[www.apachefriends.org/en/faq-xampp-windows.html](http://www.apachefriends.org/en/faq-xampp-windows.html)）。
-
-4.  如果选择了所有默认选项，软件将被解压，并且桌面上会出现一个 XAMPP 控制面板图标。打开该图标。
-
-5.  当 XAMPP 控制面板应用程序窗口出现时，选择 Apache 和 MySql 的“启动”按钮。（如果 Windows 提示您解除端口封锁，如果您只想在桌面上使用服务器，则无需执行此操作。）
-
-6.  将 Ajax 构建工具包光盘插入光驱，并浏览到 Windows 文件夹（例如 `D:\Windows`）。
-
-7.  打开 `Examples` 文件夹，选择“编辑”、“全选”和“编辑”、“复制”。使用资源管理器窗口，浏览到 XAMPP 窗口中的 `htdocs` 文件夹。该文件夹位于您的硬盘上，通常类似于 `C:\Program Files\xampp\htdocs`。然后选择“编辑”、“粘贴”。
-
-8.  所有 Ajax 项目就位后，您就可以开始使用它们了。在您机器上的任何 Web 浏览器中，输入以下网址以打开 Ajax 构建工具包示例：
+1. 在运行的 Windows 系统中，插入本书附带的 Live CD。
+2. 在资源管理器窗口中打开 Live CD，并导航到 `\Windows` 文件夹。
+3. 从光盘的 `\Windows` 文件夹中，打开 XAMPP 安装程序（`xampp-win32-1.6.0a-installer.exe`）并按照安装说明进行操作。该程序适用于 Windows 2000、NT 和 XP Professional。如果需要帮助，请参阅 XAMPP for Windows 常见问题解答（[www.apachefriends.org/en/faq-xampp-windows.html](http://www.apachefriends.org/en/faq-xampp-windows.html)）。
+4. 如果选择了所有默认选项，软件将被解压，并且桌面上会出现一个 XAMPP 控制面板图标。打开该图标。
+5. 当 XAMPP 控制面板应用程序窗口出现时，选择 Apache 和 MySql 的“启动”按钮。（如果 Windows 提示您解除端口封锁，如果您只想在桌面上使用服务器，则无需执行此操作。）
+6. 将 Ajax 构建工具包光盘插入光驱，并浏览到 Windows 文件夹（例如 `D:\Windows`）。
+7. 打开 `Examples` 文件夹，选择“编辑”、“全选”和“编辑”、“复制”。使用资源管理器窗口，浏览到 XAMPP 窗口中的 `htdocs` 文件夹。该文件夹位于您的硬盘上，通常类似于 `C:\Program Files\xampp\htdocs`。然后选择“编辑”、“粘贴”。
+8. 所有 Ajax 项目就位后，您就可以开始使用它们了。在您机器上的任何 Web 浏览器中，输入以下网址以打开 Ajax 构建工具包示例：
 
     ```
     http://localhost/index.html
@@ -7055,30 +7398,27 @@ Live CD 可以在较新的基于 Intel 的 Mac 计算机（如 Mac Mini）上启
 
 如果您更希望在 Mac OS X 中原生运行代码示例，那么您很幸运。Apache 已包含在新的 Mac 系统中，因此您只需进行一些配置，添加示例，然后启动服务器即可。具体操作如下：
 
-1.  打开终端窗口，成为 root 用户（`su -`），并使用任何文本编辑器编辑 `/etc/httpd/httpd.conf` 文件。您需要搜索四行代码，并删除每行前面的注释字符（`#`），以便为 Apache 服务器启用 PHP 和 Perl。以下是取消注释后的行内容：
+1. 打开终端窗口，成为 root 用户（`su -`），并使用任何文本编辑器编辑 `/etc/httpd/httpd.conf` 文件。您需要搜索四行代码，并删除每行前面的注释字符（`#`），以便为 Apache 服务器启用 PHP 和 Perl。以下是取消注释后的行内容：
 
     ```
     LoadModule perl_module  libexec/httpd/libperl.so
+
     LoadModule php4_module  libexec/httpd/libphp4.so
+
     AddModule mod_perl.c
+
     AddModule mod_php4.c
     ```
 
     关闭终端窗口，返回 OS X 桌面。
 
-2.  插入 Live CD，然后从光盘中打开 Windows 文件夹下的 Examples 文件夹。您应该能看到所有 Ajax 代码示例文件和文件夹。
-
-3.  打开文件浏览器（选择 Macintosh HD 图标），导航到您的个人文件夹。从您的 `home` 文件夹中，打开 `Sites` 文件夹。
-
-4.  将 `Sites` 文件夹中现有的 `index.html` 文件重命名为其他名称（例如 `index-original.html`）。
-
-5.  选择 `Examples` 文件夹中的所有内容，然后将其拖放到您的 Sites 文件夹中。
-
-6.  打开 `系统偏好设置` 文件夹，选择 `共享` 文件夹（位于“互联网与网络”下）。
-
-7.  在共享窗口中，选择“个人 Web 共享”。这将启动 Apache Web 服务器，并开始提供 Ajax 代码示例。
-
-8.  在共享窗口中，选择“...您的个人网站位于...”后面显示的链接，该链接应类似于以下内容：
+2. 插入 Live CD，然后从光盘中打开 Windows 文件夹下的 Examples 文件夹。您应该能看到所有 Ajax 代码示例文件和文件夹。
+3. 打开文件浏览器（选择 Macintosh HD 图标），导航到您的个人文件夹。从您的 `home` 文件夹中，打开 `Sites` 文件夹。
+4. 将 `Sites` 文件夹中现有的 `index.html` 文件重命名为其他名称（例如 `index-original.html`）。
+5. 选择 `Examples` 文件夹中的所有内容，然后将其拖放到您的 Sites 文件夹中。
+6. 打开 `系统偏好设置` 文件夹，选择 `共享` 文件夹（位于“互联网与网络”下）。
+7. 在共享窗口中，选择“个人 Web 共享”。这将启动 Apache Web 服务器，并开始提供 Ajax 代码示例。
+8. 在共享窗口中，选择“...您的个人网站位于...”后面显示的链接，该链接应类似于以下内容：
 
     ```
     http://10.0.0.1/~user
@@ -7092,20 +7432,22 @@ Ajax 代码示例应出现在浏览器窗口中，可供使用。
 
 如今，由于存在大量开源和专有软件，人们已经开发出各种在不同环境中运行软件的方法。如果 Live CD 和 Windows 方式不适合您使用 Ajax 构建工具包光盘，以下是一些其他方法，您可以通过该光盘设置软件以配合本书使用：
 
-*   **带模拟器的 Windows 桌面**——使用虚拟化软件，例如 VMPlayer（[www.vmware.com](http://www.vmware.com)）或 QEMU（[www.qemu.org](http://www.qemu.org)），您可以将 Live CD 作为虚拟客户端运行。实际上，Live CD 将在 Windows 或 Linux 桌面的一个窗口中运行。
-
-*   **您现有的 Web 服务器**——您可以将光盘上 `/Windows/Examples` 文件夹中的项目复制到您自己的 Web 服务器上，以便在那里运行代码。
-
-*   **任何硬盘分区**——如果您的硬盘上有 Windows 或 Linux 分区之外的可用空间，您可以将 Live CD 的全部内容安装到计算机的硬盘上。除非您有现有磁盘分区之外的可用磁盘空间，或者您不介意擦除计算机上某个硬盘的内容，否则这个过程可能有点棘手。这是因为您需要调整现有磁盘分区的大小才能完成操作。
+- **带模拟器的 Windows 桌面**——使用虚拟化软件，例如 VMPlayer（[www.vmware.com](http://www.vmware.com)）或 QEMU（[www.qemu.org](http://www.qemu.org)），您可以将 Live CD 作为虚拟客户端运行。实际上，Live CD 将在 Windows 或 Linux 桌面的一个窗口中运行。
+- **您现有的 Web 服务器**——您可以将光盘上 `/Windows/Examples` 文件夹中的项目复制到您自己的 Web 服务器上，以便在那里运行代码。
+- **任何硬盘分区**——如果您的硬盘上有 Windows 或 Linux 分区之外的可用空间，您可以将 Live CD 的全部内容安装到计算机的硬盘上。除非您有现有磁盘分区之外的可用磁盘空间，或者您不介意擦除计算机上某个硬盘的内容，否则这个过程可能有点棘手。这是因为您需要调整现有磁盘分区的大小才能完成操作。
 
     不过，一旦您有了可用的磁盘或分区，实际安装 Live CD 的过程就非常简单了。只需从 Live CD 桌面选择“安装”图标。安装程序将引导您完成安装 Live CD 的过程，这样您就可以从硬盘上使用其内容了。
 
-*   **任何 Linux 系统**——完整的 XAMPP 堆栈和 Ajax 示例都包含在光盘上的一个 tar 归档文件中（`/Linux/xampp-linux-1.6-Ajax.tar.gz`）。您可以将该归档文件的内容解压到几乎任何尚未运行 Web 服务器的 Linux 系统上，并使用该系统上的项目。以 root 用户身份，插入光盘后，以下命令会将归档文件解压到您的 `/opt` 文件夹并启动服务器：
+- **任何 Linux 系统**——完整的 XAMPP 堆栈和 Ajax 示例都包含在光盘上的一个 tar 归档文件中（`/Linux/xampp-linux-1.6-Ajax.tar.gz`）。您可以将该归档文件的内容解压到几乎任何尚未运行 Web 服务器的 Linux 系统上，并使用该系统上的项目。以 root 用户身份，插入光盘后，以下命令会将归档文件解压到您的 `/opt` 文件夹并启动服务器：
 
     ```
     # cd /opt ; tar xvfz /media/disk/Linux/xampp-linux-1.6-Ajax.tar.gz
+
     # /opt/lampp/lampp start
     ```
+
+
+
 
 请记住，Live CD 主要是作为学习编写 Ajax 代码的教育工具而设置的。尽管 XAMPP 可以用作专业质量的 Web 服务器，但目前尚未针对安全性进行配置。在公共网络上使用示例代码或 Web 服务器之前，请务必采取措施锁定该内容的安全性。
 
@@ -7117,65 +7459,45 @@ Ajax 代码示例应出现在浏览器窗口中，可供使用。
 
 [A] [B] [C] [D] [E] [F] [G] [H] [I] [J] [K] [L] [M] [N] [O] [P] [Q] [R] [S] [T] [U] [V] [W] [X] [Y] [Z]
 
-`abort()` 方法
-
-年龄验证器应用程序
-
-Ajax 构建工具包 Live CD
-
-     备份数据
-
-     内容
-
-     安装到硬盘
-
-     启动
-
-     网络设置
-
-     概述
-
-     作为虚拟客户端运行
-
-
-
-
-
-- 从 Web 服务器运行
-- 在 Mac OS X 上运行
-- 在 Windows PC 上运行
-- tar 归档文件
-
+- `abort()` 方法
+- 年龄验证器应用程序
+- Ajax 构建工具包 Live CD
+  - 备份数据
+  - 内容
+  - 安装到硬盘
+  - 启动
+  - 网络设置
+  - 概述
+  - 作为虚拟客户端运行
+  - 从 Web 服务器运行
+  - 在 Mac OS X 上运行
+  - 在 Windows PC 上运行
+  - tar 归档文件
 - 流行文化中的 Ajax
-    - 加拿大 Ajax
-    - 电影《战士帮》中的 Ajax 角色
-    - Ajax 清洁剂
-    - Ajax 公司
-    - Ajax Duckman（电视角色）
-    - 希腊英雄 Ajax
-    - Ajax 山
-    - 赛马 Ajax
-    - Ajax 马桶
-    - Ajax 电子游戏
-    - USS Ajax 号
-
-- ajaxkit.js 文件 2nd 3rd 4th
-    - Completer 应用程序
-    - Forecaster 应用程序
-    - Informer 应用程序
-    - News Feeder 应用程序
-    - Rater 应用程序
-
-- ajaxSendRequest() 函数 2nd 3rd
-- ajaxUpdateState() 函数
-- ajaxUpdateStatus() 函数
+  - 加拿大 Ajax
+  - 电影《战士帮》中的 Ajax 角色
+  - Ajax 清洁剂
+  - Ajax 公司
+  - Ajax Duckman（电视角色）
+  - 希腊英雄 Ajax
+  - Ajax 山
+  - 赛马 Ajax
+  - Ajax 马桶
+  - Ajax 电子游戏
+  - USS Ajax 号
+- `ajaxkit.js` 文件
+  - Completer 应用程序
+  - Forecaster 应用程序
+  - Informer 应用程序
+  - News Feeder 应用程序
+  - Rater 应用程序
+- `ajaxSendRequest()` 函数
+- `ajaxUpdateState()` 函数
+- `ajaxUpdateStatus()` 函数
 - 动画“加载中”图片
-
 - 预判数据输入 参见 [Completer 应用程序（自动补全）.]
-
 - 应用程序 [参见具体应用程序.]
-
-- 异步通信 2nd
+- 异步通信
 - Atom 新闻源
 - 自动补全应用程序 参见 [Completer 应用程序（自动补全）.]
 
@@ -7184,132 +7506,105 @@ Ajax 构建工具包 Live CD
 [A] [B] [C] [D] [E] [F] [G] [H] [I] [J] [K] [L] [M] [N] [O] [P] [Q] [R] [S] [T] [U] [V] [W] [X] [Y] [Z]
 
 - 备份
-    - Ajax Construction Kit 现场 CD 数据
-    - XAMPP 服务器
-
+  - Ajax Construction Kit 现场 CD 数据
+  - XAMPP 服务器
 - 博客，Booker 应用程序（电子书阅读器）
-
-- <body> 标签（HTML）
-    - Completer 应用程序（自动补全）
-    - Forecaster 应用程序
-    - Imaginator 应用程序
-    - informer.html 网页
-    - News Feeder 应用程序
-    - Rater 应用程序
-    - shipper.html 网页
-    - snapper.html 网页
-
-- book_alicewonderland.xml 文件
-- book_frankenstein.xml 文件
-- book_mobydick.xml 文件
-- book_warofworlds 文件
-
-- <bookData> 标签（XML）
-
+- `<body>` 标签（HTML）
+  - Completer 应用程序（自动补全）
+  - Forecaster 应用程序
+  - Imaginator 应用程序
+  - informer.html 网页
+  - News Feeder 应用程序
+  - Rater 应用程序
+  - shipper.html 网页
+  - snapper.html 网页
+- `book_alicewonderland.xml` 文件
+- `book_frankenstein.xml` 文件
+- `book_mobydick.xml` 文件
+- `book_warofworlds` 文件
+- `<bookData>` 标签（XML）
 - Booker 应用程序（电子书阅读器）
-    - booker.html 网页 2nd 3rd
-        - ajaxSendRequest() 函数
-        - ajaxUpdateStatus() 函数
-        - 代码清单
-        - handleRequest() 函数 2nd
-        - loadBook() 函数
-        - loadChapter() 函数
-        - nextChapter() 函数
-        - prevChapter() 函数
-        - replaceText() 函数
-    - booker.php 服务器脚本
-    - 客户端请求
-    - 客户端/服务器对话
-    - 自定义
-    - 数据驱动的博客工具
-    - 电子书文件
-    - 文件 2nd
-    - 以小数据块加载数据
-    - 概述
-    - 请求
-    - 服务器响应
-    - 测试
-    - XML 电子书
-
-- booker.html 网页 2nd 3rd
-    - ajaxSendRequest() 函数
-    - ajaxUpdateStatus() 函数
+  - `booker.html` 网页
+    - `ajaxSendRequest()` 函数
+    - `ajaxUpdateStatus()` 函数
     - 代码清单
-    - handleRequest() 函数 2nd
-    - loadBook() 函数
-    - loadChapter() 函数
-    - nextChapter() 函数
-    - prevChapter() 函数
-    - replaceText() 函数
-- booker.php 脚本
+    - `handleRequest()` 函数
+    - `loadBook()` 函数
+    - `loadChapter()` 函数
+    - `nextChapter()` 函数
+    - `prevChapter()` 函数
+    - `replaceText()` 函数
+  - `booker.php` 服务器脚本
+  - 客户端请求
+  - 客户端/服务器对话
+  - 自定义
+  - 数据驱动的博客工具
+  - 电子书文件
+  - 文件
+  - 以小数据块加载数据
+  - 概述
+  - 请求
+  - 服务器响应
+  - 测试
+  - XML 电子书
+- `booker.html` 网页
+  - `ajaxSendRequest()` 函数
+  - `ajaxUpdateStatus()` 函数
+  - 代码清单
+  - `handleRequest()` 函数
+  - `loadBook()` 函数
+  - `loadChapter()` 函数
+  - `nextChapter()` 函数
+  - `prevChapter()` 函数
+  - `replaceText()` 函数
+- `booker.php` 脚本
 
 ## 索引
 
 [A] [B] [C] [D] [E] [F] [G] [H] [I] [J] [K] [L] [M] [N] [O] [P] [Q] [R] [S] [T] [U] [V] [W] [X] [Y] [Z]
 
 - 计算运费 另请参见 [Shipper 应用程序（运费计算器）.]
-
 - 层叠样式表 参见 [CSS（层叠样式表）.]
-
 - CD 参见 [现场 CD.]
-
-- <channel> 标签（XML）
-
-- <chapter> 标签（XML）
-
+- `<channel>` 标签（XML）
+- `<chapter>` 标签（XML）
 - 客户端/服务器对话 另请参见 [请求;; 响应.]
-    - Completer 应用程序
-    - Forecaster 应用程序
-    - Informer 应用程序
-    - News Feeder 应用程序
-    - Picker 应用程序
-    - Rater 应用程序
-    - Shipper 应用程序
-    - Validator 应用程序
-
-- 命令，modprobe
-
+  - Completer 应用程序
+  - Forecaster 应用程序
+  - Informer 应用程序
+  - News Feeder 应用程序
+  - Picker 应用程序
+  - Rater 应用程序
+  - Shipper 应用程序
+  - Validator 应用程序
+- `modprobe` 命令
 - COMPLETE 状态（请求）
-
 - Completer 应用程序（自动补全）
-    - ajaxkit.js 文件
-    - 预判数据输入的挑战
-    - 客户端请求
-    - 客户端/服务器对话
-    - completer.html 网页 2nd
-        - <body> 标签
-        - getCompletion() 函数
-        - handleCompletionRequest() 函数
-        - onkeyup 事件处理程序
-        - onload 事件处理程序
-        - showBiography() 函数
-
-
-
-
-
-- `completer.php` 服务器脚本 `第 2 版`
-  - 上下文相关的搜索框
-  - `domkit.js` 文件
-  - 概述
-  - 服务器响应
-  - 测试
-  - 用户界面
-  - 何时使用自动补全
-- `completer.html` 网页 `第 2 版`
-  - `<body>` 标签
-  - `getCompletion()` 函数
-  - `handleCompletionRequest()` 函数
-  - `onkeyup` 事件处理程序
-  - `onload` 事件处理程序
-  - `showBiography()` 函数
-- `completer.php` 服务器脚本 `第 2 版`
+  - `ajaxkit.js` 文件
+  - 预判数据输入的挑战
+  - 客户端请求
+  - 客户端/服务器对话
+  - `completer.html` 网页
+    - `<body>` 标签
+    - `getCompletion()` 函数
+    - `handleCompletionRequest()` 函数
+    - `onkeyup` 事件处理程序
+    - `onload` 事件处理程序
+    - `showBiography()` 函数
+  - `completer.php` 服务器脚本
+    - 上下文相关的搜索框
+    - `domkit.js` 文件
+    - 概述
+    - 服务器响应
+    - 测试
+    - 用户界面
+    - 何时使用自动补全
 - 为 Ajax 构造套件 Live CD 配置网络
 - 上下文相关的搜索框
-- `cookiereset.html` 网页 `第 2 版`
+- `cookiereset.html` 网页
 - CSS（层叠样式表）
   - `infowinkit.css` 文件
-  - `newsfeeder.css` 样式表 `第 2 版`
+  - `newsfeeder.css` 样式表
   - 概述
   - `ratingkit.css` 文件
 - 自定义 Booker 应用程序（电子书阅读器）
@@ -7321,12 +7616,12 @@ Ajax 构建工具包 Live CD
 - 数据输入，预判 参见 [Completer 应用程序（自动补全）。]
 - `<date>` 标签（XML）
 - `<description>` 标签（XML）
-- 诊断栏，开启/关闭 `第 2 版`
+- 诊断栏，开启/关闭
 - 文档（XML）
-- `domkit.js` 文件 `第 2 版` `第 3 版` `第 4 版`
+- `domkit.js` 文件
   - Completer 应用程序
   - Forecaster 应用程序
-  - Imaginator 应用程序 `第 2 版`
+  - Imaginator 应用程序
   - Informer 应用程序
   - News Feeder 应用程序
   - Rater 应用程序
@@ -7360,7 +7655,7 @@ Ajax 构建工具包 Live CD
     - `modalimgkit.js`
     - `ratingkit.js`
     - `validatekit.js`
-  - Booker 应用程序 `第 2 版`
+  - Booker 应用程序
     - `booker.html`
     - 自定义
     - 电子书文件
@@ -7369,8 +7664,8 @@ Ajax 构建工具包 Live CD
     - `completer.php`
   - Forecaster 应用程序
     - `forecaster.html` 网页
-    - `forecaster.php` `第 2 版`
-  - Imaginator 应用程序 `第 2 版`
+    - `forecaster.php`
+  - Imaginator 应用程序
     - `domkit.js` 文件
     - `modalimgkit.css` 文件
     - `modalimgkit.js` 文件
@@ -7401,8 +7696,8 @@ Ajax 构建工具包 Live CD
   - 客户端/服务器对话
   - 详细天气预报
   - `domkit.js` 文件
-  - `forecaster.html` 网页 `第 2 版`
-  - `forecaster.php` 服务器脚本 `第 2 版` `第 3 版`
+  - `forecaster.html` 网页
+  - `forecaster.php` 服务器脚本
   - `infowinkit.css` 文件
   - `infowinkit.js` 文件
   - `infowinkit_wait.gif` 文件
@@ -7410,13 +7705,8 @@ Ajax 构建工具包 Live CD
   - 服务器响应
   - 测试
   - 用户界面
-- `forecaster.html` 网页 `第 2 版`
-
-
-
-
-
-- `forecaster.php` 服务器脚本 第 2 处 第 3 处
+- `forecaster.html` 网页
+- `forecaster.php` 服务器脚本
 - 函数 [参见具体函数。]
 - Ajax 的未来
 
@@ -7433,15 +7723,15 @@ Ajax 构建工具包 Live CD
 - `getClientWidth()` 函数
 - `getCompletion()` 函数
 - `getCookieData()` 函数
-- `getElementById()` 函数 第 2 处
+- `getElementById()` 函数
 - `getResponseHeader()` 方法
 - `getShipRate()` 函数
 - `getText()` 函数
 - Gmail 验证
 - Google
   - Gmail 验证
-  - Google 地图 第 2 处
-  - Google 建议 第 2 处
+  - Google 地图
+  - Google 建议
 
 ## 索引
 
@@ -7450,7 +7740,7 @@ Ajax 构建工具包 Live CD
 - `handleCityStateRequest()` 函数
 - `handleCompletionRequest()` 函数
 - `handleFeedRequest()` 函数
-- `handleRequest()` 函数 第 2 处 第 3 处
+- `handleRequest()` 函数
 - `handleStockInfoRequest()` 函数
 - `handleStockListRequest()` 函数
 - 硬盘，在硬盘上安装 Ajax Construction Kit 现场版
@@ -7470,19 +7760,19 @@ Ajax 构建工具包 Live CD
   - 向其中添加图像
   - 动画“加载中”图像
   - 动态加载图像的挑战
-  - `domkit.js` 文件 第 2 处
-  - `imaginator.html` 网页 第 2 处
+  - `domkit.js` 文件
+  - `imaginator.html` 网页
   - `modalimg.js` 文件
-  - `modalimgkit.css` 文件 第 2 处
-  - `modalimgkit.js` 文件 第 2 处
-  - `modalimgkit_gray.png` 文件 第 2 处
-  - `modalimgkit_wait.gif` 文件 第 2 处
+  - `modalimgkit.css` 文件
+  - `modalimgkit.js` 文件
+  - `modalimgkit_gray.png` 文件
+  - `modalimgkit_wait.gif` 文件
   - 概述
   - `smokiesXX.jpg` 文件
   - `smokiesXX_thumb.jpg` 文件
   - 测试
   - 用户界面
-- `imaginator.html` 网页 第 2 处
+- `imaginator.html` 网页
 - IMDb（互联网电影数据库）
 - Informer 应用程序（弹出窗口）
   - 弹出窗口的优势
@@ -7490,31 +7780,31 @@ Ajax 构建工具包 Live CD
   - 客户端请求
   - 客户端/服务器对话
   - `domkit.js` 文件
-  - `informer.html` 网页 第 2 处
-  - `infowinkit.css` 文件 第 2 处
-  - `infowinkit.js` 文件 第 2 处 第 3 处
+  - `informer.html` 网页
+  - `infowinkit.css` 文件
+  - `infowinkit.js` 文件
   - `infowinkit_wait.gif` 文件
   - 修改其内容
   - 概述
   - 服务器响应
-  - `skateXXX.html` 网页 第 2 处
+  - `skateXXX.html` 网页
   - `skateXXX.jpg` 文件
   - 测试
   - 用户界面
-- `informer.html` 网页 第 2 处
+- `informer.html` 网页
 - `infowinkit.css` 文件
   - Forecaster 应用程序
-  - Informer 应用程序 第 2 处
+  - Informer 应用程序
 - `infowinkit.js` 文件
   - Forecaster 应用程序
-  - Informer 应用程序 第 2 处 第 3 处
+  - Informer 应用程序
 - `infowinkit_wait.gif` 文件
   - Forecaster 应用程序
   - Informer 应用程序
 - `initForm()` 函数
-- `initInfoWindow()` 函数 第 2 处
-- `initModal()` 函数 第 2 处 第 3 处
-- `initRatings()` 函数 第 2 处
+- `initInfoWindow()` 函数
+- `initModal()` 函数
+- `initRatings()` 函数
 - `<input>` 标签（HTML）
 - 输入验证
   - 年龄验证
@@ -7531,25 +7821,19 @@ Ajax 构建工具包 Live CD
   - 概述
   - `XMLHttpRequest` 对象
     - `abort()` 方法
-
-
-
-
-
-- `getAllResponseHeaders()` 方法
-- `getResponseHeader()` 方法
-- `onreadystatechange` 事件
-- `open()` 方法
-- `overrideMimeType()` 方法
-- 概述
-- `readyState` 属性
-- 请求生命周期
-- `responseText` 属性
-- `responseXML` 属性
-- `send()` 方法
-- `setRequestHeader()` 方法
-- `status` 属性
-- `statusText` 属性
+    - `getAllResponseHeaders()` 方法
+    - `getResponseHeader()` 方法
+    - `onreadystatechange` 事件
+    - `open()` 方法
+    - `overrideMimeType()` 方法
+    - `readyState` 属性
+    - 请求生命周期
+    - `responseText` 属性
+    - `responseXML` 属性
+    - `send()` 方法
+    - `setRequestHeader()` 方法
+    - `status` 属性
+    - `statusText` 属性
 - 荣格，卡尔
 
 ## 索引
@@ -7563,9 +7847,9 @@ Ajax 构建工具包 Live CD
 [A] [B] [C] [D] [E] [F] [G] [H] [I] [J] [K] [L] [M] [N] [O] [P] [Q] [R] [S] [T] [U] [V] [W] [X] [Y] [Z]
 
 - 启动 Ajax 构建工具包 Live CD
-- `<li>` 标签 (HTML)
+- `<li>` 标签（HTML）
 - 请求生命周期
-- `<link>` 标签 (XML)
+- `<link>` 标签（XML）
 - Live CD
   - Ajax 构建工具包 Live CD
     - 备份数据
@@ -7582,12 +7866,12 @@ Ajax 构建工具包 Live CD
   - Live Linux CD
 - `loadBook()` 函数
 - `loadChapter()` 函数
-- `LOADED` 状态 (请求)
+- LOADED 状态（请求）
 - `loadFeed()` 函数
 - 加载
   - 小块数据
   - 动态图像 参见 [Imaginator 应用程序（图像查看器）。]
-- `LOADING` 状态 (请求)
+- LOADING 状态（请求）
 - `loadStockInfo()` 函数
 - `loadStockList()` 函数
 - 日志，服务器
@@ -7598,8 +7882,8 @@ Ajax 构建工具包 Live CD
 [A] [B] [C] [D] [E] [F] [G] [H] [I] [J] [K] [L] [M] [N] [O] [P] [Q] [R] [S] [T] [U] [V] [W] [X] [Y] [Z]
 
 - Mac OS X
-- 地图 (Google) 第 2 版
-- 方法 (`XMLHttpRequest` 对象)
+- 地图（Google）
+- 方法（`XMLHttpRequest` 对象）
   - `abort()`
   - `getAllResponseHeaders()`
   - `getResponseHeader()`
@@ -7610,10 +7894,10 @@ Ajax 构建工具包 Live CD
 - Microsoft 远程脚本技术
 - 模态窗口
 - `modalimg.js` 文件
-- `modalimgkit.css` 文件 第 2 版
-- `modalimgkit.js` 文件 第 2 版 第 3 版
-- `modalimgkit_gray.png` 文件 第 2 版
-- `modalimgkit_wait.gif` 文件 第 2 版
+- `modalimgkit.css` 文件
+- `modalimgkit.js` 文件
+- `modalimgkit_gray.png` 文件
+- `modalimgkit_wait.gif` 文件
 - `modprobe` 命令
 - 摩萨台，穆罕默德
 - 电影收藏应用程序，从 Picker 应用程序创建
@@ -7636,38 +7920,32 @@ Ajax 构建工具包 Live CD
   - 在网页中嵌入新闻源
   - 文件列表
   - 新闻聚合器
-  - `newsfeeder.css` 样式表 第 2 版
-  - `newsfeeder.html` 网页 第 2 版
+  - `newsfeeder.css` 样式表
+  - `newsfeeder.html` 网页
     - `<body>` 标签
     - `getElementById()` 函数
     - `handleFeedRequest()` 函数
     - `loadFeed()` 函数
     - `onload` 事件处理程序
-  - `newsfeeder.php` 服务器脚本 第 2 版
+  - `newsfeeder.php` 服务器脚本
   - `newspaper.gif` 文件
   - 动态查询新闻源
   - 服务器响应
   - 测试
   - 用户界面设计
   - `wait.gif` 文件
-- `newsfeeder.css` 样式表 第 2 版
-- `newsfeeder.html` 网页 第 2 版
+- `newsfeeder.css` 样式表
+- `newsfeeder.html` 网页
   - `<body>` 标签
   - `getElementById()` 函数
   - `handleFeedRequest()` 函数
   - `loadFeed()` 函数
   - `onload` 事件处理程序
-- `newsfeeder.php` 服务器脚本 第 2 版
+- `newsfeeder.php` 服务器脚本
 - `newspaper.gif` 文件
-
-
-
-
-`nextChapter()` 函数
-
-`NFL` 四分卫评分验证器应用
-
-`nitRatings()` 函数
+- `nextChapter()` 函数
+- NFL 四分卫评分验证器应用
+- `initRatings()` 函数
 
 ## 索引
 
@@ -7693,7 +7971,7 @@ Ajax 构建工具包 Live CD
     - `statusText` 属性
 - `onblur` 事件处理程序
 - `onkeyup` 事件处理程序
-- 在线购物车 第 2 页
+- 在线购物车
 - `onload` 事件处理程序
   - Completer 应用（自动补全）
   - Informer 应用（弹出窗口）
@@ -7703,7 +7981,7 @@ Ajax 构建工具包 Live CD
 - `onreadystatechange` 事件
 - `open()` 方法
 - Operation Ajax
-- `<option>` 标签 (XML)
+- `<option>` 标签（XML）
 - Orkut
 - `overrideMimeType()` 方法
 
@@ -7713,21 +7991,21 @@ Ajax 构建工具包 Live CD
 
 - PHP
   - `booker.php` 脚本
-  - `completer.php` 服务器脚本 第 2 页
-  - `forecaster.php` 脚本 第 2 页 第 3 页
-  - `newsfeeder.php` 脚本 第 2 页
-  - 概述 第 2 页
+  - `completer.php` 服务器脚本
+  - `forecaster.php` 脚本
+  - `newsfeeder.php` 脚本
+  - 概述
   - `quoter.php` 服务器脚本
   - `ratingkit.php` 服务器脚本
   - `server.php` 服务器脚本
-  - `ziplookup.php` 服务器脚本 第 2 页
+  - `ziplookup.php` 服务器脚本
 - Picker 应用（股票选择器）
   - 客户端请求
   - 客户端/服务器对话
   - 从中创建电影收藏应用
   - 文件
   - 目标
-  - `picker.html` 网页 第 2 页
+  - `picker.html` 网页
     - 代码清单
     - `handleStockInfoRequest()` 函数
     - `handleStockListRequest()` 函数
@@ -7740,7 +8018,7 @@ Ajax 构建工具包 Live CD
   - `stocks.xml` 文件
   - 测试
   - 用户界面
-- `picker.html` 网页 第 2 页
+- `picker.html` 网页
   - 代码清单
   - `handleStockInfoRequest()` 函数
   - `handleStockListRequest()` 函数
@@ -7770,8 +8048,8 @@ Ajax 构建工具包 Live CD
     - 客户端/服务器对话
     - 详细天气预报
     - `domkit.js` 文件
-    - `forecaster.html` 网页 第 2 页
-    - `forecaster.php` 服务器脚本 第 2 页 第 3 页
+    - `forecaster.html` 网页
+    - `forecaster.php` 服务器脚本
     - `infowinkit.css` 文件
     - `infowinkit.js` 文件
     - `infowinkit_wait.gif` 文件
@@ -7786,7 +8064,7 @@ Ajax 构建工具包 Live CD
   - `responseXML`
   - `status`
   - `statusText`
-- `<pubDate>` 标签 (XML)
+- `<pubDate>` 标签（XML）
 
 ## 索引
 
@@ -7795,10 +8073,7 @@ Ajax 构建工具包 Live CD
 - 动态查询新闻源
 - `quoter.php` 脚本
 
-
-
-
-`quoter.php` 服务器脚本
+- `quoter.php` 服务器脚本
 
 ## 索引
 
@@ -7811,19 +8086,19 @@ Ajax 构建工具包 Live CD
   - 更改图像
   - 客户端请求
   - 客户端/服务器对话
-  - `cookiereset.html` 网页 第 2 版
+  - `cookiereset.html` 网页
   - `domkit.js` 文件
   - 项目 ID
   - MySQL 数据库
   - 概述
-  - `rater.html` 网页 第 2 版
+  - `rater.html` 网页
     - `<body>` 标签
     - `initRatings()` 函数
     - `<li>` 标签
     - `setRating()` 函数
     - `<span>` 标签
     - `<ul>` 标签
-  - `ratingkit.css` 文件 第 2 版
+  - `ratingkit.css` 文件
   - `ratingkit.js` 文件
   - `ratingkit.php` 服务器脚本
   - 服务器响应
@@ -7831,7 +8106,7 @@ Ajax 构建工具包 Live CD
   - `star_sm.gif` 文件
   - 测试
   - 用户界面
-- `rater.html` 网页 第 2 版
+- `rater.html` 网页
   - `<body>` 标签
   - `initRatings()` 函数
   - `<li>` 标签
@@ -7839,14 +8114,14 @@ Ajax 构建工具包 Live CD
   - `<span>` 标签
   - `<ul>` 标签
 - 评分系统 参见[评分应用（评分系统）.]
-- `ratingkit.css` 文件 第 2 版
-- `ratingkit.js` 文件 第 2 版
+- `ratingkit.css` 文件
+- `ratingkit.js` 文件
 - `ratingkit.php` 服务器脚本
 - `readyState` 属性（`XMLHttpRequest` 对象）
 - 实时验证 参见[输入验证.]
 - 实际应用
   - Flickr
-  - Google 地图 第 2 版
+  - Google 地图
   - Google 建议
   - 隐形广告服务
   - Netflix
@@ -7854,7 +8129,7 @@ Ajax 构建工具包 Live CD
 - Ajax 技术之间的关系
 - 重新加载网页
 - 远程脚本技术
-- `replaceText()` 函数 第 2 版 第 3 版
+- `replaceText()` 函数
 - 请求
   - Booker 应用
   - Completer 应用
@@ -7906,15 +8181,15 @@ Ajax 构建工具包 Live CD
     - 客户端/服务器对话
     - `domkit.js` 文件
     - 文件列表
-    - `newsfeeder.css` 样式表 第 2 版
-    - `newsfeeder.html` 网页 第 2 版
-    - `newsfeeder.php` 服务器脚本 第 2 版
+    - `newsfeeder.css` 样式表
+    - `newsfeeder.html` 网页
+    - `newsfeeder.php` 服务器脚本
     - `newspaper.gif` 文件
     - 服务器响应
     - 测试
     - 用户界面设计
     - `wait.gif` 文件
-  - 概述 第 2 版
+  - 概述
   - 动态查询
   - 科学美国人网站
   - 今日美国网站
@@ -7926,509 +8201,292 @@ Ajax 构建工具包 Live CD
   - 从 Web 服务器
   - 在 Windows PC 上
 
-
-
-
+## 索引
 
 [A] [B] [C] [D] [E] [F] [G] [H] [I] [J] [K] [L] [M] [N] [O] [P] [Q] [R] [S] [T] [U] [V] [W] [X] [Y] [Z]
 
-《科学美国人》新闻推送
-
-脚本
-
-    `booker.php`
-
-    `completer.php` 第 2 次
-
-    `forecaster.php` 第 2 次 第 3 次
-
-    `newsfeeder.php` 第 2 次
-
-    `quoter.php`
-
-    `ratingkit.php`
-
-    `server.php` 服务器脚本
-
-    `ziplookup.php`
-
-`<select>` 标签 (HTML) 第 2 次
-
-`send()` 方法
-
-`server.php` 服务器脚本
-
-服务器
-
-    对话 参见 [客户端/服务器对话.]
-
-    `logs`
-
-    响应 参见 [响应.]
-
-    角色
-
-    脚本 参见 [脚本.]
-
-    XAMPP 服务器，备份
-
-`setRating()` 函数 第 2 次
-
-`setRequestHeader()` 方法
-
-Shipper 应用程序（运费计算器）
-
-    访问 USPS 生产服务器
-
-    获取实时运费的挑战
-
-    客户端请求
-
-    客户端/服务器对话
-
-    概述
-
-    服务器响应
-
-    `server.php` 服务器脚本
-
-    `shipper.html` 网页
-
-        `<body>` 标签
-
-        `getShipRate()` 函数
-
-        `handleRequest()` 函数
-
-        `initForm()` 函数
-
-        `<select>` 元素
-
-        `updateTotal()` 函数
-
-    测试
-
-    用户界面
-
-    `wait.gif` 图片
-
-`shipper.html` 网页
-
-    `<body>` 标签
-
-    `getShipRate()` 函数
-
-    `handleRequest()` 函数
-
-    `initForm()` 函数
-
-    `<select>` 元素
-
-    `updateTotal()` 函数
-
-运费计算器 参见 [Shipper 应用程序（运费计算器）.]
-
-购物车 第 2 次
-
-`showBiography()` 函数
-
-`showInfoWindow()` 函数 第 2 次 第 3 次
-
-弹出窗口的大小
-
-`skateXXX.html` 网页 第 2 次
-
-`skateXXX.jpg` 文件
-
-`smokiesXX.jpg` 文件
-
-`smokiesXX_thumb.jpg` 文件
-
-Snap Preview 服务
-
-`snapper.html` 网页
-
-`<span>` 标签 (HTML)
-
-`star.gif` 文件
-
-`star_sm.gif` 文件
-
-`status` 属性 (`XMLHttpRequest` 对象)
-
-`statusText` 属性 (`XMLHttpRequest` 对象)
-
-股票选择器 参见 [Picker 应用程序（股票选择器）.]
-
-`<stock>` 标签 第 2 次
-
-`stocks.xml` 文件 第 2 次
-
-`strtolower()` 函数
-
-样式表 参见 [CSS（层叠样式表）.]
-
-Suggest (Google)
-
-Symbol Lookup
-
-同步性
-
-同步性
+- 《科学美国人》新闻推送
+- 脚本
+  - `booker.php`
+  - `completer.php`
+  - `forecaster.php`
+  - `newsfeeder.php`
+  - `quoter.php`
+  - `ratingkit.php`
+  - `server.php` 服务器脚本
+  - `ziplookup.php`
+- `<select>` 标签（HTML）
+- `send()` 方法
+- `server.php` 服务器脚本
+- 服务器
+  - 对话 参见 [客户端/服务器对话.]
+  - `logs`
+  - 响应 参见 [响应.]
+  - 角色
+  - 脚本 参见 [脚本.]
+  - XAMPP 服务器，备份
+- `setRating()` 函数
+- `setRequestHeader()` 方法
+- Shipper 应用程序（运费计算器）
+  - 访问 USPS 生产服务器
+  - 获取实时运费的挑战
+  - 客户端请求
+  - 客户端/服务器对话
+  - 概述
+  - 服务器响应
+  - `server.php` 服务器脚本
+  - `shipper.html` 网页
+    - `<body>` 标签
+    - `getShipRate()` 函数
+    - `handleRequest()` 函数
+    - `initForm()` 函数
+    - `<select>` 元素
+    - `updateTotal()` 函数
+  - 测试
+  - 用户界面
+  - `wait.gif` 图片
+- `shipper.html` 网页
+  - `<body>` 标签
+  - `getShipRate()` 函数
+  - `handleRequest()` 函数
+  - `initForm()` 函数
+  - `<select>` 元素
+  - `updateTotal()` 函数
+- 运费计算器 参见 [Shipper 应用程序（运费计算器）.]
+- 购物车
+- `showBiography()` 函数
+- `showInfoWindow()` 函数
+- 弹出窗口的大小
+- `skateXXX.html` 网页
+- `skateXXX.jpg` 文件
+- `smokiesXX.jpg` 文件
+- `smokiesXX_thumb.jpg` 文件
+- Snap Preview 服务
+- `snapper.html` 网页
+- `<span>` 标签（HTML）
+- `star.gif` 文件
+- `star_sm.gif` 文件
+- `status` 属性（`XMLHttpRequest` 对象）
+- `statusText` 属性（`XMLHttpRequest` 对象）
+- 股票选择器 参见 [Picker 应用程序（股票选择器）.]
+- `<stock>` 标签
+- `stocks.xml` 文件
+- `strtolower()` 函数
+- 样式表 参见 [CSS（层叠样式表）.]
+- Suggest (Google)
+- Symbol Lookup
+- 同步性
+- 同步性
 
 ## 索引
 
 [A] [B] [C] [D] [E] [F] [G] [H] [I] [J] [K] [L] [M] [N] [O] [P] [Q] [R] [S] [T] [U] [V] [W] [X] [Y] [Z]
 
-标签 (HTML)
-
-    `<body>`
-
-        Completer 应用程序
-
-        Forecaster 应用程序
-
-        Imaginator 应用程序
-
-        `informer.html` 网页
-
-        News Feeder 应用程序
-
-        Rater 应用程序
-
-        `shipper.html` 网页
-
-        `snapper.html` 网页
-
-    `<head>`
-
-    `<input>`
-
-    `<li>`
-
-    `<select>` 第 2 次
-
-    `<span>`
-
-    `<ul>`
-
-标签 (XML)
-
-    `<bookData>`
-
-    `<channel>`
-
-    `<chapter>`
-
-    `<date>`
-
-    `<description>`
-
-    `<ebook>`
-
-    `<link>`
-
-    `<option>`
-
-    `<pubDate>`
-
-    `<stock>` 第 2 次
-
-    `<title>`
-
-测试
-
-    Booker 应用程序
-
-    Complete 应用程序
-
-    Forecaster 应用程序
-
-    Imaginator 应用程序
-
-    Informer 应用程序
-
-    News Feeder 应用程序
-
-    Picker 应用程序
-
-    Rater 应用程序
-
-    Shipper 应用程序
-
-    Validator 应用程序
-
-`<title>` 标签 (XML)
-
-工具包
-
-    `ajaxkit.js` 文件
-
-    `domkit.js` 文件
-
-    `infowinkit.js` 文件
-
-    `modalimgkit.js` 文件
-
-    概述
-
-    `ratingkit.js` 文件
-
-    `validatekit.js` 文件
-
-TRYNT Movie IMDb Web 服务
-
-
-
-
-
-打开/关闭诊断栏 第 2 处
+- 标签（HTML）
+  - `<body>`
+    - Completer 应用程序
+    - Forecaster 应用程序
+    - Imaginator 应用程序
+    - `informer.html` 网页
+    - News Feeder 应用程序
+    - Rater 应用程序
+    - `shipper.html` 网页
+    - `snapper.html` 网页
+  - `<head>`
+  - `<input>`
+  - `<li>`
+  - `<select>`
+  - `<span>`
+  - `<ul>`
+- 标签（XML）
+  - `<bookData>`
+  - `<channel>`
+  - `<chapter>`
+  - `<date>`
+  - `<description>`
+  - `<ebook>`
+  - `<link>`
+  - `<option>`
+  - `<pubDate>`
+  - `<stock>`
+  - `<title>`
+- 测试
+  - Booker 应用程序
+  - Complete 应用程序
+  - Forecaster 应用程序
+  - Imaginator 应用程序
+  - Informer 应用程序
+  - News Feeder 应用程序
+  - Picker 应用程序
+  - Rater 应用程序
+  - Shipper 应用程序
+  - Validator 应用程序
+- `<title>` 标签（XML）
+- 工具包
+  - `ajaxkit.js` 文件
+  - `domkit.js` 文件
+  - `infowinkit.js` 文件
+  - `modalimgkit.js` 文件
+  - 概述
+  - `ratingkit.js` 文件
+  - `validatekit.js` 文件
+- TRYNT Movie IMDb Web 服务
+- 打开/关闭诊断栏
 
 ## 索引
 
 [A] [B] [C] [D] [E] [F] [G] [H] [I] [J] [K] [L] [M] [N] [O] [P] [Q] [R] [S] [T] [U] [V] [W] [X] [Y] [Z]
 
-`<ul>` 标签 (HTML)
-
-UNINITIALIZED 状态 (请求)
-
-`updateTotal()` 函数
-
-《今日美国》新闻源
-
-用户界面
-
-     Completer 应用
-
-     Forecaster 应用
-
-     Imaginator 应用
-
-     Informer 应用
-
-     News Feeder 应用
-
-     Picker 应用
-
-     Rater 应用
-
-     Shipper 应用
-
-     Validator 应用
-
-USPS Web 工具 第 2 处
-
-USS Ajax
+- `<ul>` 标签（HTML）
+- UNINITIALIZED 状态（请求）
+- `updateTotal()` 函数
+- 《今日美国》新闻源
+- 用户界面
+  - Completer 应用
+  - Forecaster 应用
+  - Imaginator 应用
+  - Informer 应用
+  - News Feeder 应用
+  - Picker 应用
+  - Rater 应用
+  - Shipper 应用
+  - Validator 应用
+- USPS Web 工具
+- USS Ajax
 
 ## 索引
 
 [A] [B] [C] [D] [E] [F] [G] [H] [I] [J] [K] [L] [M] [N] [O] [P] [Q] [R] [S] [T] [U] [V] [W] [X] [Y] [Z]
 
-`validateAge()` 函数
-
-`validateDate()` 函数 第 2 处
-
-`validateEmail()` 函数 第 2 处
-
-`validateInteger()` 函数 第 2 处 第 3 处
-
-`validatekit.js` 文件 第 2 处
-
-`validateNonEmpty()` 函数 第 2 处
-
-`validateNumber()` 函数 第 2 处
-
-`validatePhone()` 函数 第 2 处
-
-`validateZipCode()` 函数 第 2 处 第 3 处
-
-验证输入 参见 [输入验证.]
-
-Validator 应用 (输入验证)
-
-     `ajaxkit.js` 文件
-
-     将验证函数应用于其他用户输入表单
-
-     客户端请求
-
-     客户端/服务器对话
-
-     数据类型
-
-     `domkit.js` 文件
-
-     概述
-
-     服务器响应
-
-     测试
-
-     用户界面
-
-     `validatekit.js` 文件
-
-     `validator.html` 网页 第 2 处
-
-         代码清单
-
-         `getCityState()` 函数
-
-         `getElementById()` 函数
-
-         `handleCityStateRequest()` 函数
-
-         `onblur` 事件处理程序
-
-         `onload` 事件处理程序
-
-         `validateInteger()` 函数
-
-         `validateZipCode()` 函数
-
-     `wait.gif` 文件 第 2 处
-
-     `ziplookup.php` 脚本
-
-     `ziplookup.php` 服务器脚本
-
-`validator.html` 网页 第 2 处
-
-     代码清单
-
-     `getCityState()` 函数
-
-     `getElementById()` 函数
-
-     `handleCityStateRequest()` 函数
-
-     `onblur` 事件处理程序
-
-     `onload` 事件处理程序
-
-     `validateInteger()` 函数
-
-     `validateZipCode()` 函数
-
-value 属性 (`<option>` 标签)
-
-Web 版本号
-
-查看图像 参见 [Imaginator 应用 (图像查看器).]
+- `validateAge()` 函数
+- `validateDate()` 函数
+- `validateEmail()` 函数
+- `validateInteger()` 函数
+- `validatekit.js` 文件
+- `validateNonEmpty()` 函数
+- `validateNumber()` 函数
+- `validatePhone()` 函数
+- `validateZipCode()` 函数
+- 验证输入 参见 [验证器应用程序（输入验证）.]
+- Validator 应用（输入验证）
+  - `ajaxkit.js` 文件
+  - 将验证函数应用于其他用户输入表单
+  - 客户端请求
+  - 客户端/服务器对话
+  - 数据类型
+  - `domkit.js` 文件
+  - 概述
+  - 服务器响应
+  - 测试
+  - 用户界面
+  - `validatekit.js` 文件
+  - `validator.html` 网页
+    - 代码清单
+    - `getCityState()` 函数
+    - `getElementById()` 函数
+    - `handleCityStateRequest()` 函数
+    - `onblur` 事件处理程序
+    - `onload` 事件处理程序
+    - `validateInteger()` 函数
+    - `validateZipCode()` 函数
+    - `wait.gif` 文件
+    - `ziplookup.php` 脚本
+    - `ziplookup.php` 服务器脚本
+- `validator.html` 网页
+  - 代码清单
+  - `getCityState()` 函数
+  - `getElementById()` 函数
+  - `handleCityStateRequest()` 函数
+  - `onblur` 事件处理程序
+  - `onload` 事件处理程序
+  - `validateInteger()` 函数
+  - `validateZipCode()` 函数
+- value 属性（`<option>` 标签）
+- Web 版本号
+- 查看图像 参见 [Imaginator 应用（图像查看器）.]
 
 ## 索引
 
 [A] [B] [C] [D] [E] [F] [G] [H] [I] [J] [K] [L] [M] [N] [O] [P] [Q] [R] [S] [T] [U] [V] [W] [X] [Y] [Z]
 
-`wait.gif` 文件 第 2 处 第 3 处 第 4 处
-
-勇士队
-
-天气预报窗口 参见 [Forecaster 应用 (天气预报窗口).]
-
-网页，重新加载 [另请参阅特定页面 (例如 `newsfeeder.html`).]
-
-Web 服务器
-
-     从 Ajax Construction Kit 光盘运行
-
-     XAMPP 服务器，备份
-
-网站
-
-     Flickr
-
-     Google 地图 第 2 处
-
-     Google 建议
-
-     隐形广告服务
-
-     Netflix
-
-     Orkut
-
-     购物车
-
-Web 版本号
-
-webserviceX.net
-
-窗口
-
-     模态窗口
-
-     弹出窗口 另请参阅 [Imaginator 应用 (图像查看器).]
-
-         优点
-
-         Kontera 服务
-
-         概述
-
-         大小
-
-         Snap Preview 服务
-
-    天气预报窗口 参见 [Forecaster 应用 (天气预报窗口).]
-
-Windows，运行 Ajax Construction Kit 光盘
+- `wait.gif` 文件
+- 勇士队
+- 天气预报窗口 参见 [Forecaster 应用（天气预报窗口）.]
+- 网页，重新加载 [另请参阅特定页面（例如 `newsfeeder.html`）.]
+- Web 服务器
+  - 从 Ajax Construction Kit 光盘运行
+  - XAMPP 服务器，备份
+- 网站
+  - Flickr
+  - Google 地图
+  - Google 建议
+  - 隐形广告服务
+  - Netflix
+  - Orkut
+  - 购物车
+- Web 版本号
+- webserviceX.net
+- 窗口
+  - 模态窗口
+  - 弹出窗口 另请参阅 [Imaginator 应用（图像查看器）.]
+    - 优点
+    - Kontera 服务
+    - 概述
+    - 大小
+    - Snap Preview 服务
+    - 天气预报窗口 参见 [Forecaster 应用（天气预报窗口）.]
+- Windows，运行 Ajax Construction Kit 光盘
 
 ## 索引
 
 [A] [B] [C] [D] [E] [F] [G] [H] [I] [J] [K] [L] [M] [N] [O] [P] [Q] [R] [S] [T] [U] [V] [W] [X] [Y] [Z]
 
-XAMPP 服务器，备份
+- XAMPP 服务器，备份
+- XML（可扩展标记语言）
+  - 文档
+  - 文件
+  - 概述
+  - 标签
+    - `<bookData>`
+    - `<channel>`
+    - `<chapter>`
+    - `<date>`
+    - `<description>`
+    - `<ebook>`
+    - `<link>`
+    - `<option>`
+    - `<pubDate>`
+    - `<stock>`
+    - `<title>`
+  - XML 电子书（Booker 应用程序）
+- `.xml` 文件扩展名
+- `XMLHttpRequest` 对象
+  - `abort()` 方法
+  - `getAllResponseHeaders()` 方法
+  - `getResponseHeader()` 方法
+  - `onreadystatechange` 事件
+  - `open()` 方法
+  - `overrideMimeType()` 方法
+  - 概述
+  - `readyState` 属性
+  - 请求生命周期
+  - `responseText` 属性
+  - `responseXML` 属性
+  - `send()` 方法
+  - `setRequestHeader()` 方法
+  - `status` 属性
+  - `statusText` 属性
 
-XML (可扩展标记语言)
-
-     文档
-
-     文件
-
-     概述
-
-    标签
-
-         `<bookData>`
-
-
-
-
-
-         `<channel>`
-         `<chapter>`
-         `<date>`
-         `<description>`
-         `<ebook>`
-         `<link>`
-         `<option>`
-         `<pubDate>`
-         `<stock>` 第 2 版
-         `<title>`
-     XML 电子书（Booker 应用程序）
-`.xml` 文件扩展名
-`XMLHttpRequest` 对象
-     `abort()` 方法
-     `getAllResponseHeaders()` 方法
-     `getResponseHeader()` 方法
-     `onreadystatechange` 事件
-     `open()` 方法
-     `overrideMimeType()` 方法
-     概述
-     `readyState` 属性
-     请求生命周期
-     `responseText` 属性
-     `responseXML` 属性
-     `send()` 方法
-     `setRequestHeader()` 方法
-     `status` 属性
-     `statusText` 属性
 ## 索引
+
 [A] [B] [C] [D] [E] [F] [G] [H] [I] [J] [K] [L] [M] [N] [O] [P] [Q] [R] [S] [T] [U] [V] [W] [X] [Y] [Z]
-雅虎的符号查询
+
+- 雅虎的符号查询
+
 ## 索引
+
 [A] [B] [C] [D] [E] [F] [G] [H] [I] [J] [K] [L] [M] [N] [O] [P] [Q] [R] [S] [T] [U] [V] [W] [X] [Y] [Z]
-邮政编码验证器 参见 [验证器应用程序（输入验证）.]
-`ziplookup.php` 服务器脚本 第 2 版
+
+- 邮政编码验证器 参见 [验证器应用程序（输入验证）.]
+- `ziplookup.php` 服务器脚本
 

@@ -1,11 +1,7 @@
+
 # JavaScript GUI 设计编程：基于 JS 和 React 的高级设计解决方案
 
-
-
 ![](img/image_rsrcAE8.jpg)
-
-
-
 
 # 第一章：理解 Web 应用程序中的 GUI 设计
 
@@ -14,7 +10,9 @@
 图形用户界面 (GUI) 是一种视觉界面，允许用户通过按钮、图标、窗口和菜单等图形元素与软件进行交互。与需要文本命令的命令行界面 (CLI) 不同，GUI 提供了一种直观且视觉丰富的体验，使计算对更广泛的人群更加可用。
 
 ### GUI 概述
+
 GUI 由多个元素组成，通过实现交互增强用户体验。这些元素包括：
+
 - 窗口：显示内容并允许用户交互的矩形区域。
 - 图标：文件、应用程序或功能的小图形表示。
 - 菜单：允许用户选择操作的选项列表。
@@ -25,77 +23,88 @@ GUI 由多个元素组成，通过实现交互增强用户体验。这些元素�
 GUI 将用户操作（如点击、拖放和手势）翻译为软件响应，实现了与程序的无缝交互。
 
 ### GUI 在 Web 应用中的重要性
+
 GUI 设计在 Web 应用中起着至关重要的作用，影响着可用性、可访问性和用户满意度。以下是 GUI 重要的原因：
 
 #### 1. 提升用户体验 (UX)
+
 良好的 GUI 设计增强了可用性，使应用程序更加直观。通过利用层次、对比和对齐等设计原则，开发者可以创建视觉美观且功能强大的界面。
 
-#### 2. 更广泛的人群的可访问性
+#### 2. 更广泛人群的可访问性
 
+图形界面比基于文本的系统更具包容性。通过屏幕阅读器、高对比度模式和自适应界面等功能，GUI 让不同能力的用户都能访问数字内容，确保了平等访问。
 
+#### 3. 更快的学习曲线
 
-
-图形界面比基于文本的系统更具包性。通过屏幕阅读器、高对比度模式和自适应界面等功能，GUI 了不同能力的用户，确保了对数字内容的平等访问。
-
-### 3. 更快的学习曲线
 与命令行界面相比，GUI 的学习曲线要短得多。用户无需预先的技术知识即可导航应用程序，因为大多数交互都依赖于通用的符号和行为。
 
-### 4. 高效的任务执行
+#### 4. 高效的任务执行
+
 通过基于 GUI 的应用程序，用户可以更高效地执行复杂任务。拖放功能、工具栏和上下文菜单简化了交互，减少了完成某项操作所需的步骤。
 
-### 5. 增强生产力与参与度
+#### 5. 增强生产力与参与度
+
 交互式视觉元素鼓励用户参与，使应用程序更加动态。用户可以使用标签页界面、可调整大小的窗口和仪表板布局进行多任务处理。
 
 #### GUI 的现实应用
+
 GUI 在现代技术中无处不在，涵盖了各种行业和平台：
 
-* 操作系统：Windows、mac、带有图形环境的 Linux 发行版。
+* 操作系统：Windows、macOS、带有图形环境的 Linux 发行版。
 * Web 应用程序：电子商务网站、SaaS 平台、仪表盘。
 * 移动应用程序：具有交互式设计的 iOS 和 Android 应用。
 * 设计软件：Photoshop、Illustrator、Figma 和 Sketch。
 * 游戏开发：视频游戏中的界面，包括菜单和 HUD。
 
-理解 GUI 基础知识对于旨在创建响应且视觉良好的 Web 应用程序的开发者来说至关重要。
+理解 GUI 基础知识对于旨在创建响应式且视觉良好的 Web 应用程序的开发者来说至关重要。
 
 ## 1.2 Web 开发中 GUI 设计的演变
 
-#### 早期文本文本界面 (1960s - 1970s)
-在图形界面出现之前，早期计算完全依赖命令行界面 (`CLI`)。这些基于文本的系统要求用户输入精确的命令来与软件交互。尽管 CLI 功能强大，但对非技术用户来说并不直观。
+### 早期文本界面 (1960s - 1970s)
+
+在图形界面出现之前，早期计算完全依赖命令行界面 (`CLI`)。这些基于文本的系统要求用户输入精确的命令来与软件交互。尽管 `CLI` 功能强大，但对非技术用户来说并不直观。
 
 这一时期的关键进展：
-* 1963 年：Ivan Sutherland 开发了 Sketchpad，这是最早的图形界面之一。
-* 1969 年：UNIX 引入了基于 CLI 的操作系统，影响了未来的 GUI。
 
-#### GUI 的诞生 (1980s)
+* 1963 年：Ivan Sutherland 开发了 Sketchpad，这是最早的图形界面之一。
+* 1969 年：UNIX 引入了基于 `CLI` 的操作系统，影响了未来的 GUI。
+
+### GUI 的诞生 (1980s)
+
 从文本界面到 GUI 的转变彻底改变了计算领域。Xerox PARC 开创了第一个 GUI，其特点是窗口、图标和菜单，启发了未来的发展。
 
 * 1981 年：Xerox Star 引入了第一个商业 GUI。
 * 1984 年：苹果的 Macintosh 将 GUI 引入消费市场，普及了桌面隐喻。
 * 1985 年：微软发布了 Windows 1.0，在 MS-DOS 之上整合了图形外壳。
 
-#### GUI 在 Web 应用程序中的崛起 (1990s)
-随着万网的出现，图形界面从桌面环境扩展到浏览器和 Web 应用程序。
+### GUI 在 Web 应用程序中的崛起 (1990s)
+
+随着万维网的出现，图形界面从桌面环境扩展到浏览器和 Web 应用程序。
 
 关键里程碑：
+
 * 1993 年：Mosaic 发布，这是第一个支持文本旁图片的浏览器。
 * 1995 年：引入了 `JavaScript`，实现了交互式 Web 元素。
 * 1996 年：引入了 `CSS`，改进了网页样式。
 
 在这个时代，静态网页占据主导，交互性有限。表单、按钮和超链接是主要的 GUI 元素。
 
-#### 动态和交互式 Web GUI (2000s)
+### 动态和交互式 Web GUI (2000s)
+
 在 `JavaScript` 和后端技术的推动下，2000 年标志着向动态 Web 应用程序转变。
 
-* 2005 年：AJAX（异步 JavaScript 和 XML）允许在不刷新页面的进行实时更新。
+* 2005 年：AJAX（异步 `JavaScript` 和 XML）允许在不刷新页面的情况下进行实时更新。
 * 2006 年：`jQuery` 简化了 `DOM` 操作和事件处理。
 * 2007 年：苹果 iPhone 引入了基于触摸的 GUI，影响了移动 Web 设计。
 
 通过 `AngularJS` 和 `Backbone.js` 等框架，开发者可以使用模块化组件构建复杂的 Web 应用程序。
 
-#### 现代 GUI 设计趋势 (2010s - 现在)
+### 现代 GUI 设计趋势 (2010s - 现在)
+
 如今的 Web 应用程序专注于以用户为中心的设计、响应性和性能。
 
 关键进展：
+
 * 2013 年：`React` 引入了基于组件的 UI 架构。
 * 2014 年：Google 的 `Material Design` 为一致性和访问性设定了新标准。
 * 2016 年：`Vue.js` 因其在 GUI 开发中的易用性而流行。
@@ -104,79 +113,96 @@ GUI 在现代技术中无处不在，涵盖了各种行业和平台：
 现代 GUI 强调灵活性、可扩展性和跨平台兼容性，确保跨设备的无缝用户体验。
 
 ## 1.3 CLI、GUI 和 TUI 界面之间的区别
+
 理解 `CLI`（命令行界面）、`GUI`（图形用户界面）和 `TUI`（基于文本的用户界面）之间的区别对于设计以用户为中心的应用程序至关重要。
 
 ### 1. CLI (命令行界面)
+
 `CLI` 要求用户使用键盘输入命令。由于其高效性，受到开发者、系统管理员和高级用户的青睐。
 
 #### CLI 的特性
+
 * 无图形元素的文本环境。
 * 需要对命令和语法的知识。
 * 提供对系统功能的直接访问。
 * 支持脚本化自动化。
 
 #### 优点
+
 * 速度：与 GUI 操作相比，执行速度更快。
 * 资源效率：消耗极少的系统资源。
 * 自动化：支持批处理和脚本。
 
 #### 缺点
+
 * 学习曲线陡峭：需要熟悉命令。
-* 访问性有限：对初不友好。
+* 访问性有限：对新手不友好。
 * 容易出错：用户必须输入精确命令以避免错误。
 
 示例：
+
 * UNIX/Linux Terminal
 * Windows 命令提示符
 * `PowerShell`
 
 ### 2. GUI (图形用户界面)
+
 `GUI` 提供了一个带有按钮、菜单和图标等交互元素的视觉界面，使所有技能水平的用户都能使用。
 
 #### GUI 的特性
+
 * 使用图形元素进行导航和交互。
 * 支持鼠标、触摸和手势输入。
 * 提供实时反馈和动态更新。
 * 允许多任务处理和复杂交互。
 
 #### 优点
+
 * 用户友好：直观且易于学习。
 * 增强访问性：支持视觉和音频辅助。
 * 多任务：用户可以同时执行多个操作。
 
 #### 缺点
+
 * 资源密集：消耗更多内存和处理能力。
 * 性能较慢：GUI 应用程序可能有更高的延迟。
 * 开发复杂度：需要更多的设计考虑。
 
 示例：
+
 * Windows, macOS, Linux（图形环境）
 * Chrome 和 Firefox 等浏览器
 * 移动应用程序
 
 ### 3. TUI (基于文本的用户界面)
-`TUI` 也称为 `CUI`（字符用户界面），结合了 CLI 和 GUI 的元素，使用基于文本的菜单和交互窗口。
+
+`TUI` 也称为 `CUI`（字符用户界面），结合了 `CLI` 和 `GUI` 的元素，使用基于文本的菜单和交互窗口。
 
 #### TUI 的特性
+
 * 使用文本字符创建伪图形元素。
 * 允许带有菜单驱动交互的键盘导航。
-* 用于无法完全 GUI 的环境。
+* 用于无法完全运行 GUI 的环境。
 
 #### 优点
+
 * 资源消耗低：在低功耗硬件上运行。
-* 比 CLI 更直观：通过菜单导航更简单。
-* 比 GUI 快：没有沉重的图形渲染。
+* 比 `CLI` 更直观：通过菜单导航更简单。
+* 比 `GUI` 快：没有沉重的图形渲染。
 
 #### 缺点
-* 比 GUI 灵活灵活：图形能力有限。
+
+* 比 `GUI` 灵活性差：图形能力有限。
 * 需要键盘导航：没有鼠标交互。
 
 示例：
+
 * Midnight Commander（文件管理器）
 * 基于文本的系统设置工具
 * 基于 `ncurses` 的应用程序
 
 #### 差异总结
+
 | 特性 | CLI | GUI | TUI |
 | :--- | :--- | :--- | :--- |
 | 交互 | 键盘命令 | 鼠标、触摸、键盘 | 键盘导航 |
@@ -187,10 +213,6 @@ GUI 在现代技术中无处不在，涵盖了各种行业和平台：
 
 每个界面都有不同的用途，因此开发者根据易用性、效率和访问性需求选择正确的方法至关重要。
 
-
-
-
-
 ## 1.4 GUI 设计的核心原则：可用性、无障碍性与美学
 
 设计图形用户界面（GUI）需要对可用性、无障碍性和美学进行仔细关注。这些原则确保了用户能够直观、高效且舒适地与软件交互。一个设计良好的 GUI 不仅仅是为了应用程序在视觉上具有吸引力，更是为了提供最佳的用户体验。
@@ -198,37 +220,45 @@ GUI 在现代技术中无处不在，涵盖了各种行业和平台：
 ## GUI 设计中的可用性
 
 ### 可用性的定义
-可用性是指用户在与界面交互时实现其目标的程易用程度和效率。高可用性的界面可确保用户能够以最小的努力进行导航、理解并完成任务。
+
+可用性是指用户在与界面交互时实现其目标的容易程度和效率。高可用性的界面可确保用户能够以最小的努力进行导航、理解并完成任务。
 
 ### 核心可用性原则
+
 几项可用性原则指导着有效的 GUI 设计：
 
 #### 1. 可学习性
+
 * 用户应该能够快速掌握如何与界面交互。
 * 按钮、菜单和输入字段等常见 GUI 组件应遵循标准惯例。
 * 熟悉的布局和设计模式可以降低学习曲线。
 
 #### 2. 效率
+
 * 设计良好的 GUI 应该允许用户快速执行任务。
 * 键盘快捷键、拖放功能和自动补全功能可以提高效率。
 * 应尽可能缩短加载时间，以防止用户产生焦虑。
 
 #### 3. 一致性
+
 * 设计的一致性确保用户不需要反复学习新的交互方式。
 * 统一的配色方案、字体、按钮位置和 UI 组件有助于创建可预测的体验。
 * 多平台（桌面、移动端、网页）的一致性增强了可用性。
 
 #### 4. 反馈与可见性
+
 * 界面应对用户操作提供清晰的反馈。
-* 按钮在点击时应改变状态，表单字段在获得焦点时应亮，处理操作时应显示加载指示。
+* 按钮在点击时应改变状态，表单字段在获得焦点时应亮起，处理操作时应显示加载指示器。
 * 错误信息应该是清晰的，说明发生了什么以及如何修复。
 
 #### 5. 错误预防与恢复
+
 * 设计良好的 GUI 通过智能设计减少用户错误。
 * 确认框（例如，“你确定要删除此项吗？”）可以防止误操作。
-* 销和重做功能允许用户从错误中恢复。
+* 撤销和重做功能允许用户从错误中恢复。
 
 #### 6. 最小认知负载
+
 * 用户不应被过量的信息所淹没。
 * 应优先考虑重要功能，而次要功能应易于访问但不具干扰。
 * 将相关项目分组并使用清晰的标签可以减少认知负载。
@@ -246,32 +276,40 @@ GUI 在现代技术中无处不在，涵盖了各种行业和平台：
 ## GUI 设计中的无障碍性
 
 ### 无障碍性的定义
+
 GUI 设计中的无障碍性确保不同能力的人士可以使用应用程序，包括视觉、听觉、运动和认知障碍人士。
 
 ### 关键的无障碍考量
-GUI 应该通过结合无障碍设计原则来适应化的用户：
+
+GUI 应该通过结合无障碍设计原则来适应多样化的用户：
 
 #### 1. 键盘导航
+
 * 用户应该能够在不使用鼠标的情况下仅使用键盘进行导航。
 * 基于 Tab 的导航和快捷键提高了运动障碍用户的访问无障碍性。
 
 #### 2. 屏幕阅读器兼容性
+
 * 应用程序应包含用于屏幕阅读器的 `ARIA`（无障碍富互联网应用程序）属性。
 * 语义化 HTML 元素（例如 `<button>`、`<label>`、`<nav>`）增强了辅助技术的兼容性。
 
 #### 3. 颜色对比与可读性
+
 * 文字与背景颜色的组合应易于区分。
 * 高对比度模式提高了低视力用户的可读性。
 
 #### 4. 可调字体大小
+
 * 用户应该能够修改文本大小以提高可读性。
 * 响应式字体确保文本在不同设备上的正确缩放。
 
 #### 5. 字幕与音频描述
+
 * 视频和音频内容应包含字幕或文本记录。
 * 图片应提供替代文本 (`alt text`)。
 
 ### Web 无障碍标准
+
 * `WCAG`（网页内容无障碍指南）：定义了使网页应用程序无障碍的原则。
 * `ADA`（美国残疾人法）：要求软件和网站对残障人士可用。
 * `Section 508`：美国政府数字无障碍标准。
@@ -289,30 +327,37 @@ GUI 应该通过结合无障碍设计原则来适应化的用户：
 ## GUI 设计中的美学
 
 ### 美学设计的定义
+
 美学设计是指 GUI 的视觉吸引力，包括配色方案、排版、间距和图形元素。美丽的界面会增强用户的参与度和满意度。
 
 ### 核心美学原则
+
 几项设计原则影响着美学：
 
 #### 1. 简单性
+
 * 清洁、不杂乱的界面可以提高可读性和导航。
 * 应避免过度的动画、颜色和效果。
 
 #### 2. 平衡与对齐
+
 * 适当的间距和对齐创建了具有吸引力的布局。
 * 网格系统和一致的间距改进了设计结构。
 
 #### 3. 色彩心理
+
 * 颜色会引起情感并引导用户行为。
 * 蓝色与信任相关（例如 `Facebook`、`LinkedIn`），而红色可以表示紧急情况（例如错误信息）。
 
 #### 4. 排版
+
 * 字体选择影响可读性和品牌形象。
 * 现代网页应用优选无衬线字体（例如 `Roboto`、`Open Sans`）。
 
 #### 5. 视觉层次结构
+
 * 重要元素应通过尺寸、颜色和对比脱颖而出。
-* 按钮和 `CTAs`（行动号召）应当显目。
+* 按钮和 `CTAs`（行动号召）应当显眼。
 
 ### 美学设计应用：真实案例
 
@@ -327,11 +372,13 @@ GUI 应该通过结合无障碍设计原则来适应化的用户：
 ## 1.5 GUI 设计模式与标准
 
 ### GUI 设计模式的定义
-GUI 设计模式是常见界面设计问题的可复解决方案。它们提供了跨应用程序的一致性并改进了可用性。
+
+GUI 设计模式是常见界面设计问题的可复用解决方案。它们提供了跨应用程序的一致性并改进了可用性。
 
 ### 常见 GUI 设计模式
 
 #### 1. 导航模式
+
 导航模式帮助用户高效地在应用程序中移动。
 
 | 模式 | 描述 | 示例 |
@@ -341,6 +388,7 @@ GUI 设计模式是常见界面设计问题的可复解决方案。它们提供�
 | 面包屑导航 | 显示用户在网站内的位置。 | `Amazon`, `eBay` |
 
 #### 2. 表单设计模式
+
 表单对于用户输入至关重要，设计良好的表单可以提高可用性。
 
 | 模式 | 描述 | 示例 |
@@ -350,17 +398,13 @@ GUI 设计模式是常见界面设计问题的可复解决方案。它们提供�
 | 多步骤表单 | 将长表单拆分为多个步骤。 | `LinkedIn` 注册 |
 
 #### 3. 反馈模式
+
 反馈模式确保用户能收到来自系统的清晰通信。
 
 | 模式 | 描述 | 示例 |
 | :--- | :--- | :--- |
 | Snackbar/Toast 消息 | 自动消失的临时消息。 | `Gmail` 的“消息已发送”提示 |
-
-
-
-
-
-| 进度指示 | 显示加载进度。 | YouTube 视频缓冲条 |
+| 进度指示器 | 显示加载进度。 | YouTube 视频缓冲条 |
 | 错误消息 | 对输入错误进行清晰解释。 | Twitter 的字符限制警告 |
 
 ### GUI 标准与指南
@@ -368,25 +412,29 @@ GUI 设计模式是常见界面设计问题的可复解决方案。它们提供�
 多个机构为设计用户友好的界面提供了指南：
 
 #### 1. Material Design (Google)
+
 - 关注深度、动态效果和大胆的色彩。
 - 用于 Android 应用程序和 Web 框架。
 
 #### 2. Human Interface Guidelines (Apple)
+
 - 鼓励简单、清晰和深度感。
 - 用于 macOS 和 iOS 应用程序。
 
 #### 3. Microsoft Fluent Design
+
 - 强调透明性、分层和动态效果。
 - 应用于 Windows 和微软应用程序。
 
 ### 现实世界的 GUI 模式
+
 - 模态窗口：用于用户确认（例如，在 Gmail 中删除项目）。
 - 悬停效果：在鼠标悬停在元素上时提供额外信息（例如 Google Docs 中的工具提示）。
 - 卡片式布局：用于内容分组（例如 Pinterest、Trello）。
 
 遵循既定的模式和标准可以确保一致性、易用性和无缝的用户体验。
 
-GUI 设计是易用性、无障碍性和美学的结合，并在最佳实践和标准化模式的指导。掌握这些原则可以确保应用程序是直观的、包性的且具有视觉吸引力的。
+GUI 设计是易用性、无障碍性和美学的结合，并在最佳实践和标准化模式的指导下进行。掌握这些原则可以确保应用程序是直观的、包容性的且具有视觉吸引力的。
 
 # 第 2 章
 
@@ -394,34 +442,40 @@ GUI 设计是易用性、无障碍性和美学的结合，并在最佳实践和�
 
 ## 2.1 JavaScript 在现代 GUI 开发中的角色
 
-JavaScript 在现代图形用户界面（GUI）开发中起着性作用，特别是在 Web 应用程序中。作为 Web 端主要的脚本语言，JavaScript Enables 创建动态、交互且用户友好的界面。与定义网页结构和呈现的静态 HTML 和 CSS 不同，JavaScript 引入了行为，使 Web 应用程序更具吸引力和响应性。
+JavaScript 在现代图形用户界面（GUI）开发中起着核心作用，特别是在 Web 应用程序中。作为 Web 端主要的脚本语言，JavaScript 实现了创建动态、交互且用户友好的界面。与定义网页结构和呈现的静态 HTML 和 CSS 不同，JavaScript 引入了行为，使 Web 应用程序更具吸引力和响应性。
 
 ### 为什么 GUI 开发离不开 JavaScript
 
 GUI 开发涉及设计允许用户高效与数字系统交互的界面。JavaScript 成为 GUI 开发的领先技术有几个原因：
 
 1. **客户端执行**
+
    - JavaScript 直接在浏览器中运行，减少了对服务器请求并提升了性能。
    - 允许实时用户交互，无需刷新整个页面。
 
 2. **事件驱动编程**
+
    - JavaScript 支持事件驱动编程，这意味着用户操作（如点击、按键和鼠标移动）会触发特定的响应。
    - 启用下拉菜单、弹出窗口和拖放功能等交互元素。
 
 3. **文档对象模型 (DOM) 的操作**
+
    - `DOM` 是网页结构的表示，JavaScript 提供了动态操纵它的能力。
    - 开发者可以修改 HTML 元素、更新内容并应用动画，无需重新加载页面。
 
 4. **异步能力 (AJAX, Fetch API, WebSockets)**
+
    - JavaScript 允许 Web 应用程序在后台获取和发送数据，而不干扰用户体验。
-   - 对于实时应用（如聊天应用、实时通知和交互式仪表板）关重要。
+   - 对于实时应用（如聊天应用、实时通知和交互式仪表板）至关重要。
 
 5. **丰富的库和框架生态系统**
+
    - 流行的 JavaScript 框架如 `React`、`Angular` 和 `Vue.js` 简化了 GUI 开发。
    - 这些框架提供了复用组件、状态管理和性能优化，使 UI 开发变得高效。
 
 6. **跨平台和移动兼容性**
-   - JavaScript 支持渐式 Web 应用程序 (PWAs)，允许 Web 应用程序像原生移动应用一样运行。
+
+   - JavaScript 支持渐进式 Web 应用程序 (PWAs)，允许 Web 应用程序像原生移动应用一样运行。
    - 通过 `React Native` 和 `Electron` 等工具，可以使用 JavaScript 构建移动和桌面应用程序。
 
 ### JavaScript 在不同类型 GUI 应用中的角色
@@ -499,15 +553,12 @@ JavaScript 提供了许多内置功能，使 GUI 开发高效且具有交互性�
 document.getElementById("myButton").innerHTML = "Clicked!";
 ```
 
-
-
-
-
 ```javascript
 document.getElementById("myButton").innerText = "Clicked!";
 ```
 
 #### 关键 DOM 特性：
+
 - 选择元素 (`getElementById`, `querySelector`)
 - 修改元素 (`text`, `attributes`, `styles`)
 - 动态地添加和移除元素
@@ -525,6 +576,7 @@ document.getElementById("myButton").addEventListener("click", function() {
 ```
 
 常见事件：
+
 - 点击 (`click`)、双击 (`dblclick`)、鼠标移入 (`mouseover`)、鼠标移出 (`mouseout`) 鼠标事件
 - 按键按下 (`keydown`)、按键释放 (`keyup`)、击键 (`keypress`) 键盘事件
 - 改变 (`change`)、输入 (`input`)、提交 (`submit`) 表单事件
@@ -565,18 +617,25 @@ function Button() {
 }
 ```
 
-## JavaScript 对浏览器的渲染的影响
+## JavaScript 对浏览器渲染的影响
 
 当浏览器加载页面时，会经历一系列步骤来显示内容。浏览器的渲染流水线（Rendering Pipeline）非常复杂，包含以下关键阶段：
 
 1. **解析 (Parsing)**：
+
    - 解析 HTML 构建 DOM 树，解析 CSS 构建 CSSOM。
+
 2. **布局 (Layout)**：
-   - 计算元素的几何位置和大小（重绘/Reflow）。
+
+   - 计算元素的几何位置和大小（重排/Reflow）。
    - 确保流畅的界面。
+
 3. **绘制 (Painting)**：
+
    - 将元素绘制为像素（Pixels）。
+
 4. **合成 (Compositing)**：
+
    - 将不同的层合并到屏幕上。
 
 ## 性能优化技巧
@@ -585,7 +644,7 @@ function Button() {
 
 | 优化技术 | 作用 |
 | :--- | :--- |
-| 使用 `DocumentFragment` | 减少 DOM 操作次数，避免重绘 |
+| 使用 `DocumentFragment` | 减少 DOM 操作次数，避免重排 |
 | 使用 `requestAnimationFrame` | 同步显示刷新率 |
 | 使用 CSS 动画 | 利用 GPU 加速，减少 JS 负担 |
 
@@ -606,11 +665,11 @@ function Button() {
 <script src="script.js" defer></script>
 ```
 
-### 2. 重绘 (Reflow)
+### 2. 重排 (Reflow)
 
-JavaScript 修改 DOM 属性时会触发重绘，这可能导致性能下降。
+JavaScript 修改 DOM 属性时会触发重排，这可能导致性能下降。
 
-示例：频繁重绘 DOM
+示例：频繁重排 DOM
 
 ```javascript
 // 性能较差：频繁修改
@@ -618,9 +677,6 @@ boxes.forEach(box => {
   box.style.width = i + "px";
 });
 ```
-
-
-
 
 JavaScript 的灵活性带来了安全风险，特别是在基于 Web 的 GUI 应用中。
 
@@ -630,7 +686,7 @@ JavaScript 的灵活性带来了安全风险，特别是在基于 Web 的 GUI �
 | :--- | :--- |
 | 跨站脚本 (XSS) | 注入到网页中的恶意脚本 |
 | 跨站请求伪造 (CSRF) | 代表用户执行的未经授权的操作 |
-| 点击劫持 (Clickjacking) | 用户被诱点击隐藏的 UI 元素 |
+| 点击劫持 (Clickjacking) | 用户被诱导点击隐藏的 UI 元素 |
 
 ## 预防措施
 
@@ -645,7 +701,7 @@ JavaScript 的灵活性带来了安全风险，特别是在基于 Web 的 GUI �
 ### 常见的浏览器不一致
 
 - 某些功能在 `Chrome` 中可用，但在 `Safari` 或 `Internet Explorer` 中不可用。
-- 浏览器处理 JavaScript 事件的方式存在。
+- 浏览器处理 JavaScript 事件的方式存在差异。
 - CSS 和 JavaScript 的渲染性能在不同设备上有所不同。
 
 ### 解决方案
@@ -671,14 +727,14 @@ JavaScript GUI 开发严重依赖 `React`、`Angular`、`Vue.js` 等框架，这
 
 - 频繁的更新要求开发者保持最新状态。
 - 大型框架带来的性能开销。
-- 锁入问题：切换框架需要大量的重写。
+- 锁定问题：切换框架需要大量的重写。
 
 ### 替代方案
 
 - 尽可能使用 `Vanilla JavaScript`。
-- 偏于使用轻量级框架，如 `Preact` 或 `Svelte`。
+- 偏向使用轻量级框架，如 `Preact` 或 `Svelte`。
 
-虽然 JavaScript 对于 GUI 开发不可或缺，但它存在性能瓶颈、安全风险、浏览器不一致和内存效率下的问题——特别在大规模或桌面应用中。优化 JavaScript 执行、利用 `Web Workers`、`Virtual DOM` 和服务端计算，并遵循最佳安全实践，可以缓解这些挑战。
+虽然 JavaScript 对于 GUI 开发不可或缺，但它存在性能瓶颈、安全风险、浏览器不一致和内存效率低下的问题——特别是在大规模或桌面应用中。优化 JavaScript 执行、利用 `Web Workers`、`Virtual DOM` 和服务端计算，并遵循最佳安全实践，可以缓解这些挑战。
 
 # 第 3 章
 
@@ -688,7 +744,7 @@ JavaScript GUI 开发严重依赖 `React`、`Angular`、`Vue.js` 等框架，这
 
 ### React 简介
 
-`React` 是由 `Facebook`（现为 `Meta`）开发的开源 JavaScript 库，用于构建用户界面，特别是单页应用 (`SPAs`)）。自 2013 年发布以来，`React` 通过允许开发者高效地创建动态、可扩展且高度交互的用户界面，彻底改变了前端开发。
+`React` 是由 `Facebook`（现为 `Meta`）开发的开源 JavaScript 库，用于构建用户界面，特别是单页应用 (`SPAs`)。自 2013 年发布以来，`React` 通过允许开发者高效地创建动态、可扩展且高度交互的用户界面，彻底改变了前端开发。
 
 与传统的 JavaScript 方法（每次更新都需要直接进行 `DOM manipulation`）不同，`React` 引入了基于组件的架构，提高了性能、可维护性和可扩展性。
 
@@ -698,12 +754,14 @@ JavaScript GUI 开发严重依赖 `React`、`Angular`、`Vue.js` 等框架，这
 
 ### 1. 基于组件的架构
 
-`React` 最强大的优势之一是其基于组件的结构，它允许开发者构建复用的 UI 元素。
+`React` 最强大的优势之一是其基于组件的结构，它允许开发者构建可复用的 UI 元素。
 
 - **什么是组件？**
+
   - 组件是控制 `UI` 部分的独立、可复用的代码块。
   - 每个组件都有自己的逻辑、渲染和样式，使开发更加模块化。
   - 示例：按钮组件可以在应用程序的多个部分复用而无需冗余。
+
 - **React 中的组件类型**
 
 | 组件类型 | 描述 | 示例 |
@@ -711,7 +769,7 @@ JavaScript GUI 开发严重依赖 `React`、`Angular`、`Vue.js` 等框架，这
 | 函数组件 | 返回 `JSX`（UI 元素）的简单 JavaScript 函数。 | `function Button() { return <button>Click Me</button>; }` |
 | 类组件 | 具有内部状态管理的更复杂的组件。 | `class Button extends React.Component { render() { return <button>Click Me</button>; }}` |
 
-这种模块化方法提高了了可维护性并加快了开发速度。
+这种模块化方法提高了可维护性并加快了开发速度。
 
 ### 2. 虚拟 DOM 提升性能
 
@@ -813,16 +871,11 @@ const [count, setCount] = useState(0);
 return <p>{count}</p>;
 ```
 
-`React` 自动更新更新更改的元素，提高了效率。
+`React` 自动更新更改的元素，提高了效率。
 
 ### 2. 可复用组件 vs. 过程化代码
 
 原生 JavaScript 方法
-
-```javascript
-
-
-
 
 ```javascript
 function createButton(label) {
@@ -832,7 +885,7 @@ function createButton(label) {
 }
 ```
 
-## React 方法（可复用组件）
+React 方法（可复用组件）
 
 ```javascript
 function Button({ label }) {
@@ -894,14 +947,14 @@ React 不需要 `jQuery`，因为它内置了状态管理和组件处理机制�
 | DOM 操作 | 手动操作 | 虚拟 DOM |
 | 组件复用性 | 无内置支持 | 完全基于组件 |
 | 状态管理 | 使用变量 | `useState` Hook |
-| 性能 | 对于大型 UI 较较慢 | 通过虚拟 DOM 经过优化 |
+| 性能 | 对于大型 UI 较慢 | 通过虚拟 DOM 经过优化 |
 | 事件处理 | 使用 `addEventListener` | 使用 JSX 内联处理器 |
 
 React 通过提供优化的渲染、可复用的组件和结构化的状态管理简化了 GUI 开发。与传统的 JavaScript 方法相比，它更快且更具扩展性。
 
 # 3.3 虚拟 DOM 和 React 的调和过程
 
-### React 中的虚拟 DOM DOM
+### React 中的虚拟 DOM
 
 React 最强大的功能之一是虚拟 DOM（`VDOM`），这是一种显著提高用户界面渲染效率的机制。JavaScript 中传统的 DOM 操作可能很慢，特别是当 UI 频繁更新时。React 的虚拟 DOM 通过减少对实际 DOM 的直接操作次数来优化这一过程，从而带来更好的性能和更流畅的 UI 更新。
 
@@ -924,7 +977,7 @@ React 最强大的功能之一是虚拟 DOM（`VDOM`），这是一种显著提�
 
 ### 为什么虚拟 DOM 很重要？
 
-- **性能优化**：直接更新真实 DOM 是昂贵的的，因为每次更改都会触发重新计算、重流和重绘。虚拟 DOM 批量处理更改以避免过度更新。
+- **性能优化**：直接更新真实 DOM 是昂贵的，因为每次更改都会触发重新计算、重排和重绘。虚拟 DOM 批量处理更改以避免过度更新。
 - **高效的 UI 更新**：虚拟 DOM 允许 React 仅重新渲染必要的组件，使 UI 更新变得流畅快速。
 - **更好的开发者体验**：开发者可以专注于编写声明式的 UI 逻辑，而 React 在后台处理高效的渲染。
 
@@ -961,7 +1014,7 @@ React 的 diff 算法设计得非常高效。React 并不是比较树中的每�
 
 2. **基于 Key 的列表调和**：
    - 在渲染列表时，React 使用特殊的 `key` 属性来高效跟踪元素。
-   - 如果缺少 `key` 或 `key` 频繁变化，React 可能会不必要的重新渲染组件。
+   - 如果缺少 `key` 或 `key` 频繁变化，React 可能会不必要地重新渲染组件。
 
 示例：优化的列表渲染
 ```javascript
@@ -994,7 +1047,7 @@ function Counter() {
 
 ### React 虚拟 DOM Diff 如何提高性能
 
-| 特性 |传统 DOM | React 虚拟 DOM |
+| 特性 | 传统 DOM | React 虚拟 DOM |
 | :--- | :--- | :--- |
 | 更新 | 直接更改真实 DOM | 先更新虚拟 DOM |
 | 性能 | 慢（需要重新渲染整个 UI） | 快（计算所需的最小更改） |
@@ -1022,13 +1075,9 @@ npm -v  # 显示 npm 版本
 
 ## 使用 Create React App 创建 React 项目
 
-
-
-
-
 启动 React 项目最简单的方法是使用 Create React App (CRA)。
 
-## 全局安装 Create React App
+### 全局安装 Create React App
 
 ```sh
 npm install -g create-react-app
@@ -1058,14 +1107,14 @@ npm start
 
 在设置好新的 React 项目后，你会看到以下目录结构：
 
-```perl
+```text
 my-app
 │── node_modules/      # 包含项目依赖
 │── public/            # 存储静态文件，如图像和 HTML
 │── src/               # React 组件的主要源码
 │── .gitignore         # Git 忽略的文件
 │── package.json       # 项目元数据和依赖
-│── README.md         # 项目文档
+│── README.md          # 项目文档
 │── yarn.lock / package-lock.json  # 依赖的锁文件
 ```
 
@@ -1075,7 +1124,7 @@ my-app
 | :--- | :--- |
 | `src/index.js` | 应用入口点 |
 | `src/App.js` | 主 React 组件（可修改） |
-| `public/index.html` | 主 HTML 文件（React 挂载于） |
+| `public/index.html` | 主 HTML 文件（React 挂载于此） |
 | `package.json` | 列出依赖、脚本和元数据 |
 
 ### 安装额外的依赖
@@ -1113,9 +1162,9 @@ npm install @mui/material @emotion/react @emotion/styled
 
 # 3.5 JSX：用于 GUI 组件的 JavaScript 语法
 
-## JSX JSX
+## JSX 简介
 
-JSX（JavaScript XML）是 JavaScript 的语法扩展，用于 React 中定义 UI 组件。它允许开发者在 JavaScript 中直接编写类似 HTML 的代码，使创建和管理图形用户界面（GUI）变得更容易。React 不需要使用 JSX，但它通过简化 UI 组件的定义提高了可读性、可维护性和性能。
+JSX（JavaScript XML）是 JavaScript 的语法扩展，用于 React 中定义 UI 组件。它允许开发者在 JavaScript 中直接编写类似 HTML 的代码，使创建和管理图形用户界面（GUI）变得更容易。React 不强制使用 JSX，但它通过简化 UI 组件的定义提高了可读性、可维护性和性能。
 
 ### 为什么 JSX 在 GUI 设计中很重要
 
@@ -1220,7 +1269,7 @@ React、Angular 和 Vue 是 GUI 开发中最流行的三个 JavaScript 框架。
 | :--- | :--- | :--- | :--- |
 | React | Facebook (Meta) | 2013 | 单页应用 (SPA) 的 UI 组件 |
 | Angular | Google | 2010 | 大规模企业级应用 |
-| Vue.js | 尤奇予 | 2014 | 渐进式 Web 应用 |
+| Vue.js | 尤雨溪 | 2014 | 渐进式 Web 应用 |
 
 ### React vs Angular vs Vue：关键区别
 
@@ -1230,7 +1279,7 @@ React、Angular 和 Vue 是 GUI 开发中最流行的三个 JavaScript 框架。
 
 | 方面 | React | Angular | Vue |
 | :--- | :--- | :--- | :--- |
-| 复杂度 | 易于学习 | 学习曲线陡峭 | 简单且对初友好 |
+| 复杂度 | 易于学习 | 学习曲线陡峭 | 简单且对初学者友好 |
 | 语法 | JSX (JavaScript XML) | TypeScript | HTML 模板 |
 | 设置 | 轻量级 | 重量（样板代码） | 极简 |
 
@@ -1262,13 +1311,7 @@ React、Angular 和 Vue 是 GUI 开发中最流行的三个 JavaScript 框架。
 | :--- | :--- | :--- | :--- |
 | 人气 | 使用最广泛 | 专注于企业级 | 快速增长中 |
 | 社区支持 | 巨大 | Google 支持 | 强大的开源社区 |
-
-
-
-
-
 | 就业市场 | 高需求 | 企业级工作 | 需求增长 |
-| :--- | :--- | :--- | :--- |
 
 结论：`React` 拥有最大的生态系统，`Angular` 主导企业级应用，而 `Vue` 正在快速增长。
 
@@ -1278,24 +1321,24 @@ React、Angular 和 Vue 是 GUI 开发中最流行的三个 JavaScript 框架。
 | :--- | :--- |
 | React | 动态 Web 应用、单页应用 (SPA)、社交媒体平台 |
 | Angular | 大型企业级应用、企业仪表板 |
-| Vue | 轻级 Web 应用、小型项目、渐进式 Web 应用 (PWA) |
+| Vue | 轻量级 Web 应用、小型项目、渐进式 Web 应用 (PWA) |
 
 ## 你应该选择哪？
 
 1. 选择 React，如果：
    - 你想要一个灵活、轻量且高性能的 UI 框架。
-   - 你偏于模块化组件和 `Virtual DOM` 优化。
+   - 你偏好模块化组件和 `Virtual DOM` 优化。
    - 你正在构建一个现代 Web 应用或 SPA。
 2. 选择 Angular，如果：
    - 你正在开发架构复杂的企业级应用。
    - 你需要内置功能，如依赖注入、`RxJS` 和 `TypeScript`。
-   - 你偏于完整的 MVC 框架。
+   - 你偏好完整的 MVC 框架。
 3. 选择 Vue，如果：
    - 你为中小型项目需要一个轻量、易学习的框架。
    - 你想要双向数据绑定和简单的状态管理。
    - 你正在构建渐进式 Web 应用 (PWA)。
 
-`React` 在性能、可扩展性和活性之间取得了平衡，使其成为现代 Web GUI 开发的首选。
+`React` 在性能、可扩展性和活跃度之间取得了平衡，使其成为现代 Web GUI 开发的首选。
 
 # 第 4 章
 # 使用 JavaScript 设计基础 GUI 组件
@@ -1309,7 +1352,7 @@ HTML（超文本标记语言）是 Web 应用中任何图形用户界面（GUI�
 在 GUI 开发中，HTML 提供：
 - UI 元素的语义结构。
 - 交互组件，如按钮、表单和输入字段。
-- 跨设备和浏览器的无性和兼容性。
+- 跨设备和浏览器的通用性和兼容性。
 
 ## 理解 GUI 设计中的核心 HTML 元素
 
@@ -1320,13 +1363,13 @@ HTML 元素是 Web 界面的构建块。让我们探索 GUI 开发中常用的�
 
 | 元素 | 描述 | 示例 |
 | :--- | :--- | :--- |
-| `<div>` | 用于分组 UI 元素的通用容器 | `<div class="container">...</</div>` |
+| `<div>` | 用于分组 UI 元素的通用容器 | `<div class="container">...</div>` |
 | `<header>` | 定义页面的页眉部分 | `<header>My Website</header>` |
 | `<main>` | 包含网页的主要内容 | `<main>Content here...</main>` |
 | `<section>` | 分组网页内的相关内容 | `<section>Article section...</section>` |
 | `<footer>` | 定义网页的页脚 | `<footer>© 2025 My Website</footer>` |
 
-这些元素有助于创建创建结构化且易读的 GUI。
+这些元素有助于创建结构化且易读的 GUI。
 
 ### 2. 交互性元素
 这些元素增强了交互性，允许用户点击、输入并与 GUI 交互。
@@ -1454,21 +1497,10 @@ const submitButton = document.createElement("button");
 submitButton.innerText = "Submit";
 // 将元素添加到表单
 form.appendChild(nameInput);
-```
-
-
-
-
-```javascript
 form.appendChild(submitButton);
-```
-
 // 将表单添加到文档正文
-
-```javascript
 document.body.appendChild(form);
 ```
-
 这段代码动态生成了一个包含输入字段和提交按钮的表单。
 
 ## 总结：JavaScript 在 GUI 开发中的作用
@@ -1480,9 +1512,9 @@ document.body.appendChild(form);
 | 添加交互 | 局限于表单元素 | 通过事件监听器实现完全交互 |
 | 动态更新 UI | 需要刷新页面 | 无需重新加载页面即可工作 |
 
-● HTML 为 GUI 组件提供了基础结构。
-● JavaScript 通过动态创建、修改和处理事件来增强交互性。
-● 通过将两者结合使用，开发者可以构建出功能完全且响应式的用户界面。
+- HTML 为 GUI 组件提供了基础结构。
+- JavaScript 通过动态创建、修改和处理事件来增强交互性。
+- 通过将两者结合使用，开发者可以构建出功能完全且响应式的用户界面。
 
 这些知识为使用由 JavaScript 驱动的 GUI 组件构建现代、动态且交互式的 Web 奠定了基础。
 
@@ -1494,9 +1526,9 @@ document.body.appendChild(form);
 
 ### 为什么事件处理很重要？
 
-● 增强用户体验：根据用户操作提供动态反馈。
-● 防止默认行为：停止不必要的行为，例如表单提交导致的页面刷新。
-● 创建响应式界面：允许在不重新加载网页的情况下实时更新。
+- 增强用户体验：根据用户操作提供动态反馈。
+- 防止默认行为：停止不必要的行为，例如表单提交导致的页面刷新。
+- 创建响应式界面：允许在不重新加载网页的情况下实时更新。
 
 ## 理解 JavaScript 中的事件监听器
 
@@ -1508,9 +1540,9 @@ JavaScript 使用 `addEventListener()` 方法来监听用户操作，并在事�
 element.addEventListener("event", function);
 ```
 
-● `element` – 绑定事件监听器的 HTML 元素。
-● `event` – 事件类型（例如 `click`、`mouseover`、`keydown`）。
-● `function` – 事件发生时执行的函数。
+- `element` – 绑定事件监听器的 HTML 元素。
+- `event` – 事件类型（例如 `click`、`mouseover`、`keydown`）。
+- `function` – 事件发生时执行的函数。
 
 ## 常见 GUI 事件及其用例
 
@@ -1522,8 +1554,6 @@ element.addEventListener("event", function);
 | `change` | 用户更改输入值 | 更新下拉菜单 |
 | `submit` | 用户提交表单 | 表单验证 |
 | `dblclick` | 用户双击元素 | 展开项目 |
-
-***
 
 ### 处理点击事件
 
@@ -1542,7 +1572,7 @@ button.addEventListener("click", function() {
 
 ### 处理鼠标事件
 
-### 示例：悬停效果
+#### 示例：悬停效果
 
 ```javascript
 const button = document.getElementById("myButton");
@@ -1560,7 +1590,7 @@ button.addEventListener("mouseout", function() {
 
 键盘事件允许用户使用按键而不是鼠标进行交互。
 
-### 示例：检测按键按下
+#### 示例：检测按键按下
 
 ```javascript
 document.addEventListener("keydown", function(event) {
@@ -1574,7 +1604,7 @@ document.addEventListener("keydown", function(event) {
 
 表单事件处理对于验证和实时更新至关重要。
 
-### 示例：防止表单提交
+#### 示例：防止表单提交
 
 ```javascript
 const form = document.getElementById("myForm");
@@ -1590,7 +1620,7 @@ form.addEventListener("submit", function(event) {
 
 与其为多个元素单独添加事件监听器，事件委托允许高效地处理事件。
 
-### 示例：处理多个按钮的点击事件
+#### 示例：处理多个按钮的点击事件
 
 ```javascript
 document.addEventListener("click", function(event) {
@@ -1610,9 +1640,9 @@ document.addEventListener("click", function(event) {
 
 ### GUI 中拖放的用例
 
-● 文件上传：将文件拖入指定区域进行上传。
-● 重新排序项目：排列列表、任务或 UI 组件。
-● 可定制化布局：在页面内动态移动元素。
+- 文件上传：将文件拖入指定区域进行上传。
+- 重新排序项目：排列列表、任务或 UI 组件。
+- 可定制化布局：在页面内动态移动元素。
 
 ### 基础拖放事件
 
@@ -1622,8 +1652,6 @@ document.addEventListener("click", function(event) {
 | `dragover` | 当被拖拽元素位于有效放置目标上方时 |
 | `drop` | 当被拖拽元素释放到有效目标时 |
 | `dragend` | 当拖拽动作完成时 |
-
-***
 
 ### 创建简单的拖放示例
 
@@ -1652,7 +1680,7 @@ draggable.addEventListener("dragstart", function(event) {
 <div id="dropzone" style="width: 200px; height: 200px; background: lightgray;">放在在这里</div>
 ```
 
-### 第 4 步：处理放置 事件
+### 第 4 步：处理放置事件
 
 ```javascript
 const dropzone = document.getElementById("dropzone");
@@ -1677,21 +1705,27 @@ dropzone.addEventListener("drop", function(event) {
 
 ### 动画的常见用途
 
-● 悬停效果：按钮在悬停时改变颜色。
-● 页面过渡：页面之间的平滑导航。
-● 加载指示：旋转器和进度条。
+- 悬停效果：按钮在悬停时改变颜色。
+- 页面过渡：页面之间的平滑导航。
+- 加载指示：旋转器和进度条。
 
 ### 使用 CSS 动画
 
-CSS 提供了一种制作 UI 元素的简单方法。
+CSS 提供了一种制作 UI 元素动画的简单方法。
 
 ### 示例：按钮悬停动画
 
 ```css
 button {
   background-color: blue;
-  transition: background-color 0.3s ease;
+```
+
+
+
+```css
+transition: background-color 0.3s ease;
 }
+
 button:hover {
   background-color: red;
 }
@@ -1707,6 +1741,7 @@ JavaScript 允许实现超出 CSS 能力的复杂动画。
 
 ```javascript
 const box = document.getElementById("box");
+
 function moveRight() {
   let position = 0;
   const interval = setInterval(() => {
@@ -1715,16 +1750,13 @@ function moveRight() {
     box.style.left = position + "px";
   }, 20);
 }
+
 box.addEventListener("click", moveRight);
 ```
 
 点击框将使用 JavaScript 动画使其向右移动。
 
 ## 使用 `requestAnimationFrame()` 实现更平滑的动画
-
-
-
-
 
 对于性能优化的动画，请使用 `requestAnimationFrame()`。
 
@@ -1735,6 +1767,7 @@ function animateBox(timestamp) {
   box.style.transform = `translateX(${Math.sin(timestamp / 200) * 100}px)`;
   requestAnimationFrame(animateBox);
 }
+
 requestAnimationFrame(animateBox);
 ```
 
@@ -1746,9 +1779,7 @@ requestAnimationFrame(animateBox);
 
 通过掌握这些技术，开发者可以在 JavaScript 中创建高度动态且用户友好的 GUI。
 
-# 第 5 章
-
-# 理解 GUI 应用中的状态管理
+# 第 5 章：理解 GUI 应用中的状态管理
 
 ## 5.1 什么是状态？在 GUI 应用中的重要性
 
@@ -1892,6 +1923,7 @@ import { useState } from "react";
 
 function Counter() {
   const [count, setCount] = useState(0);
+
   return (
     <div>
       <p>Count: {count}</p>
@@ -1937,6 +1969,7 @@ function reducer(state, action) {
 
 function Counter() {
   const [state, dispatch] = useReducer(reducer, { count: 0 });
+
   return (
     <div>
       <p>Count: {state.count}</p>
@@ -1956,13 +1989,8 @@ function Counter() {
 - 对于简单的 UI 更新来说大材小用（请改用 `useState`）。
 
 - 状态是 GUI 应用的关键部分，影响 UI 如何动态更新。
-
-
-
-
-
--   原生 JavaScript 手动管理状态，但缺乏结构化的工具。
--   React 的 `useState` 非常适合简单的状态管理，而 `useReducer` 则更适合复杂的逻辑。
+- 原生 JavaScript 手动管理状态，但缺乏结构化的工具。
+- React 的 `useState` 非常适合简单的状态管理，而 `useReducer` 则更适合复杂的逻辑。
 
 通过使用 React Hooks，开发者可以高效地管理状态，从而提高 GUI 应用程序的性能、可扩展性和用户体验。
 
@@ -2047,6 +2075,7 @@ function counterReducer(state = initialState, action) {
 
 // 创建 Redux Store
 const store = createStore(counterReducer);
+
 export default store;
 ```
 
@@ -2084,6 +2113,7 @@ import { useSelector, useDispatch } from "react-redux";
 function Counter() {
   const count = useSelector((state) => state.count);
   const dispatch = useDispatch();
+
   return (
     <div>
       <p>Count: {count}</p>
@@ -2099,7 +2129,7 @@ export default Counter;
 ## 使用 Redux 的优势
 
 - 中心化状态 – 所有数据都存储在单一位置，使调试更容易。
-- 可预测性 – 由于状态变化通过 actions 和 redu 发生，行为是可预测的。
+- 可预测性 – 由于状态变化通过 actions 和 reducers 发生，行为是可预测的。
 - 中间件支持 – 支持异步状态更新（例如用于 API 请求的 `redux-thunk`）。
 - 模板代码 – 需要多个文件来处理 actions、reducers 和 store 设置。
 - 小型应用的开销 – 对于状态管理需求最小的应用并不理想。
@@ -2123,7 +2153,7 @@ export default Counter;
 ### 基础示例：在 React 中使用 MobX
 
 ```sh
-npm install mobx mobx-lite
+npm install mobx mobx-react-lite
 ```
 
 #### store.js
@@ -2133,12 +2163,15 @@ import { makeAutoObservable } from "mobx";
 
 class CounterStore {
   count = 0;
+
   constructor() {
     makeAutoObservable(this);
   }
+
   increment() {
     this.count++;
   }
+
   decrement() {
     this.count--;
   }
@@ -2151,7 +2184,7 @@ export default new CounterStore();
 
 ```javascript
 import React from "react";
-import { observer } from "mobx-lite";
+import { observer } from "mobx-react-lite";
 import counterStore from "./store";
 
 const Counter = observer(() => (
@@ -2164,7 +2197,10 @@ const Counter = observer(() => (
 
 export default Counter;
 ```
-自动状态跟踪 – 设置极少 – 比 Redux 可预测性较低
+
+- 自动状态跟踪
+- 设置极少
+- 比 Redux 可预测性较低
 
 ## 2. Zustand: 轻量级替代方案
 
@@ -2173,7 +2209,7 @@ export default Counter;
 ### 为什么要使用 Zustand？
 
 - 不需要 Provider – 无需 `Provider` 组件即可工作。
--  API – 使用 hooks 轻松更新。
+- 简单的 API – 使用 hooks 轻松更新。
 
 ### 基础示例：使用 Zustand
 
@@ -2203,6 +2239,7 @@ import useStore from "./store";
 
 function Counter() {
   const { count, increment, decrement } = useStore();
+
   return (
     <div>
       <p>Count: {count}</p>
@@ -2214,7 +2251,10 @@ function Counter() {
 
 export default Counter;
 ```
-快速且轻量 – 无模板代码 – 生态系统有限
+
+- 快速且轻量
+- 无模板代码
+- 生态系统有限
 
 ## 3. Recoil: 适用于 React 的状态管理
 
@@ -2246,12 +2286,6 @@ export const counterState = atom({
 
 ```javascript
 import { useRecoilState } from "recoil";
-```
-
-
-
-
-```javascript
 import { counterState } from "./store";
 
 function Counter() {
@@ -2266,7 +2300,10 @@ function Counter() {
   );
 }
 ```
-非常适合 React 开发者。比 `Redux` 更易于使用。目前仍处于实验阶段。
+
+- 非常适合 React 开发者
+- 比 `Redux` 更易于使用
+- 目前仍处于实验阶段
 
 ## 最终比较
 
@@ -2318,7 +2355,7 @@ JavaScript 样式包括内联样式、`CSS-in-JS` 库和 `Styled Components`。
 2. **遵循命名规范（例如 BEM）**：防止大型项目中的类冲突。
 ```css
 .button { background-color: blue; }
-.button--primary { background-color: dark; }
+.button--primary { background-color: darkblue; }
 .button--disabled { opacity: 0.5; }
 ```
 3. **使用 CSS 变量进行主题**：有助于高效创建浅色/深色模式。
@@ -2450,7 +2487,6 @@ const Button = styled.button`
   border-radius: 5px;
   border: none;
   cursor: pointer;
-
   &:hover {
     background-color: ${props => (props.primary ? "darkblue" : "darkgray")};
   }
@@ -2466,9 +2502,6 @@ function App() {
 }
 ```
 
-
-
-
 Styled Components 在 React 应用中处理基于组件的样式效果最好，而传统的 CSS 则更适合全局样式和布局管理。
 
 - 像 `Bootstrap`、`Tailwind` 和 `Material UI` 等 CSS 框架简化了 GUI 设计。
@@ -2477,7 +2510,7 @@ Styled Components 在 React 应用中处理基于组件的样式效果最好，�
 
 使用最佳样式实践可以确保 GUI 应用是响应式的、可扩展的且易维护的。
 
-# 6.4 用于组件样式的 CSS-in-JS 和 Emotion.js
+## 6.4 用于组件样式的 CSS-in-JS 和 Emotion.js
 
 ### CSS-in-JS 简介
 
@@ -2531,16 +2564,16 @@ Emotion 支持两种组件样式的主要方式：
 import styled from "@emotion/styled";
 
 const Button = styled.button`
-background-color: ${(props) => (props.primary ? "blue" : "gray")};
-color: white;
-padding: 10px 20px;
-border: none;
-border-radius: 5px;
-cursor: pointer;
-font-size: 16px;
-&:hover {
-background-color: ${(props) => (props.primary ? "darkblue" : "darkgray")};
-}
+  background-color: ${(props) => (props.primary ? "blue" : "gray")};
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  &:hover {
+    background-color: ${(props) => (props.primary ? "darkblue" : "darkgray")};
+  }
 `;
 
 function App() {
@@ -2572,14 +2605,14 @@ Emotion 允许使用 `css` `prop` 来定义内联样式，而无需创建单独�
 import { css } from "@emotion/react";
 
 const buttonStyle = css`
-background-color: green;
-color: white;
-padding: 12px;
-border: none;
-cursor: pointer;
-&:hover {
-background-color: darkgreen;
-}
+  background-color: green;
+  color: white;
+  padding: 12px;
+  border: none;
+  cursor: pointer;
+  &:hover {
+    background-color: darkgreen;
+  }
 `;
 
 function App() {
@@ -2599,10 +2632,10 @@ export default App;
 
 | 特性 | Emotion.js | Styled Components |
 | :--- | :--- | :--- |
-| 性能 | 渲染更快且样式经过优化 | 销销略大 |
+| 性能 | 渲染更快且样式经过优化 | 开销略大 |
 | 主题支持 | 优秀 | 良好 |
-| CSS Prop 支持 | | |
-| 基于组件的样式 | | |
+| CSS Prop 支持 | 是 | 否 |
+| 基于组件的样式 | 是 | 是 |
 
 ### 何时使用 Emotion.js？
 
@@ -2623,7 +2656,7 @@ Emotion.js 提供了两者的结合——一个具有高性能和极佳灵活性
 - **提高无障碍性**：深色模式在低光环境下可减少眼睛疲劳。
 - **增强用户体验**：用户可以根据自己的偏好自定义 `UI`。
 
-*** 实现主题的方法
+### 实现主题的方法
 
 有多种方法可以在 GUI 中实现动态主题：
 
@@ -2639,16 +2672,18 @@ CSS 变量允许在亮色和深色之间切换。
 
 ```css
 :root {
---bg-color: white;
---text-color: black;
+  --bg-color: white;
+  --text-color: black;
 }
+
 [data-theme="dark"] {
---bg-color: black;
---text-color: white;
+  --bg-color: black;
+  --text-color: white;
 }
+
 body {
-background-color: var(--bg-color);
-color: var(--text-color);
+  background-color: var(--bg-color);
+  color: var(--text-color);
 }
 ```
 
@@ -2701,6 +2736,7 @@ export function useTheme() {
 ```jsx
 function App() {
   const { theme, toggleTheme } = useTheme();
+
   return (
     <div style={{ backgroundColor: theme === "dark" ? "black" : "white" }}>
       <button onClick={toggleTheme}>切换主题</button>
@@ -2738,33 +2774,27 @@ import styled from "@emotion/styled";
 import { useState } from "react";
 
 const Container = styled.div`
-background-color: ${(props) => props.theme.bg};
-color: ${(props) => props.theme.text};
-padding: 20px;
+  background-color: ${(props) => props.theme.bg};
+  color: ${(props) => props.theme.text};
+  padding: 20px;
 `;
-```
 
+function App() {
+  const [isDark, setIsDark] = useState(false);
 
-
-
-
-```javascript
-const [isDark, setIsDark] = useState(false);
-
-return (
-  <ThemeProvider theme={isDark ? darkTheme : lightTheme}>
-    <Container>
-      <button onClick={() => setIsDark(!isDark)}>Toggle Theme</button>
-    </Container>
-  </ThemeProvider>
-);
+  return (
+    <ThemeProvider theme={isDark ? darkTheme : lightTheme}>
+      <Container>
+        <button onClick={() => setIsDark(!isDark)}>Toggle Theme</button>
+      </Container>
+    </ThemeProvider>
+  );
 }
 
 export default App;
 ```
 
 优点：在 styled components 中原生工作。
-
 缺点：需要 `Emotion.js` 依赖。
 
 - `Emotion.js` 是一个强大的 CSS-in-JS 库，允许基于组件的样式化。
@@ -2910,6 +2940,7 @@ document.addEventListener("keydown", function(event) {
 ```javascript
 const textarea = document.getElementById("commentBox");
 const counter = document.getElementById("charCount");
+
 textarea.addEventListener("input", function() {
   counter.innerText = `Characters: ${textarea.value.length}`;
 });
@@ -2950,6 +2981,7 @@ import { useState } from "react";
 
 function Form() {
   const [name, setName] = useState("");
+
   return (
     <div>
       <input
@@ -2974,10 +3006,12 @@ function Form() {
 ```jsx
 function Form() {
   const [email, setEmail] = useState("");
+
   function handleSubmit(event) {
     event.preventDefault();
     alert(`Email Submitted: ${email}`);
   }
+
   return (
     <form onSubmit={handleSubmit}>
       <input
@@ -3002,12 +3036,14 @@ function Form() {
 ```jsx
 function Form() {
   const [formData, setFormData] = useState({ name: "", email: "" });
+
   function handleChange(event) {
     setFormData({
       ...formData,
       [event.target.name]: event.target.value,
     });
   }
+
   return (
     <form>
       <input
@@ -3031,10 +3067,6 @@ function Form() {
 这种方法的优点是：
 - 简化了大型表单的状态管理。
 - 对于处理多个字段具有可扩展性。
-
-
-
-
 
 - 基于组件的设计提高了 UI 的可重用性和可扩展性。
 - JavaScript 事件监听器实现了交互式用户体验。
@@ -3065,22 +3097,23 @@ function Form() {
 
 ```html
 <form id="userForm">
-<input type="email" id="email" placeholder="Enter 邮箱" />
-<span id="error-message" style="color: red;"></span>
-<button type="submit">Submit</button>
+  <input type="email" id="email" placeholder="Enter 邮箱" />
+  <span id="error-message" style="color: red;"></span>
+  <button type="submit">Submit</button>
 </form>
 
 <script>
 document.getElementById("userForm").addEventListener("submit", function(event) {
-event.preventDefault();
-const email = document.getElementById("email").value;
-const errorMessage = document.getElementById("error-message");
-if (!email.includes("@") || !email.includes(".")) {
-errorMessage.innerText = "邮箱格式无效!";
-} else {
-errorMessage.innerText = "";
-alert("表单提交成功!");
-}
+  event.preventDefault();
+  const email = document.getElementById("email").value;
+  const errorMessage = document.getElementById("error-message");
+
+  if (!email.includes("@") || !email.includes(".")) {
+    errorMessage.innerText = "邮箱格式无效!";
+  } else {
+    errorMessage.innerText = "";
+    alert("表单提交成功!");
+  }
 });
 </script>
 ```
@@ -3120,31 +3153,33 @@ import React from "react";
 import { useForm } from "react-hook-form";
 
 function UserForm() {
-const {
-  register,
-  handleSubmit,
-  formState: { errors },
-} = useForm();
-const onSubmit = (data) => {
-alert(JSON.stringify(data, null, 2));
-};
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
 
-return (
-<form onSubmit={handleSubmit(onSubmit)}>
-<input {...register("name", { required: "名称必填项" })} placeholder="Name" />
-{errors.name && <span style={{ color: "red" }}>{errors.name.message}</span>}
-<input
-{...register("email", {
-required: "邮箱必填项",
-pattern: { value: /^\S+@\S+$/i, message: "邮箱格式无效" },
-})}
-placeholder="Email"
-/>
-{errors.email && <span style={{ color: "red" }}>{errors.email.message}</span>}
-<button type="submit">Submit</button>
-</form>
-);
+  const onSubmit = (data) => {
+    alert(JSON.stringify(data, null, 2));
+  };
+
+  return (
+    <form onSubmit={handleSubmit(onSubmit)}>
+      <input {...register("name", { required: "名称必填项" })} placeholder="Name" />
+      {errors.name && <span style={{ color: "red" }}>{errors.name.message}</span>}
+      <input
+        {...register("email", {
+          required: "邮箱必填项",
+          pattern: { value: /^\S+@\S+$/i, message: "邮箱格式无效" },
+        })}
+        placeholder="Email"
+      />
+      {errors.email && <span style={{ color: "red" }}>{errors.email.message}</span>}
+      <button type="submit">Submit</button>
+    </form>
+  );
 }
+
 export default UserForm;
 ```
 
@@ -3169,28 +3204,29 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 
 const schema = yup.object().shape({
-name: yup.string().required("名称必填项"),
-email: yup.string().email("邮箱无效").required("邮箱必填项"),
-password: yup.string().min(6, "密码至少包含 6 个字符"),
+  name: yup.string().required("名称必填项"),
+  email: yup.string().email("邮箱无效").required("邮箱必填项"),
+  password: yup.string().min(6, "密码至少包含 6 个字符"),
 });
 
 function UserForm() {
-const { register, handleSubmit, formState: { errors } } = useForm({
-resolver: yupResolver(schema),
-});
+  const { register, handleSubmit, formState: { errors } } = useForm({
+    resolver: yupResolver(schema),
+  });
 
-return (
-<form onSubmit={handleSubmit((data) => alert(JSON.stringify(data)))}>
-<input {...register("name")} placeholder="Name" />
-{errors.name && <<span>>{errors.name.message}</span>}
-<input {...register("email")} placeholder="Email" />
-{errors.email && <<span>{errors.email.message}</span>}
-<input type="password" {...register("password")} placeholder="Password" />
-{errors.password && <<span>{errors.password.message}</span>}
-<button type="submit">Submit</button>
-</form>
-);
+  return (
+    <form onSubmit={handleSubmit((data) => alert(JSON.stringify(data)))}>
+      <input {...register("name")} placeholder="Name" />
+      {errors.name && <span>{errors.name.message}</span>}
+      <input {...register("email")} placeholder="Email" />
+      {errors.email && <span>{errors.email.message}</span>}
+      <input type="password" {...register("password")} placeholder="Password" />
+      {errors.password && <span>{errors.password.message}</span>}
+      <button type="submit">Submit</button>
+    </form>
+  );
 }
+
 export default UserForm;
 ```
 
@@ -3213,20 +3249,23 @@ export default UserForm;
 
 ```jsx
 import React, { useRef } from "react";
+
 function Form() {
-const nameRef = useRef();
-function handleSubmit(event) {
-event.preventDefault();
-alert(`Name: ${nameRef.current.value}`);
+  const nameRef = useRef();
+
+  function handleSubmit(event) {
+    event.preventDefault();
+    alert(`Name: ${nameRef.current.value}`);
+  }
+
+  return (
+    <form onSubmit={handleSubmit}>
+      <input ref={nameRef} placeholder="Enter Name" />
+      <button type="submit">Submit</button>
+    </form>
+  );
 }
 
-return (
-<form onSubmit={handleSubmit}>
-<input ref={nameRef} placeholder="Enter Name" />
-<button type="submit">Submit</button>
-</form>
-);
-}
 export default Form;
 ```
 
@@ -3240,14 +3279,17 @@ export default Form;
 
 ```jsx
 import React, { useState, useCallback } from "react";
-function OptimizedForm() {
-const [text, setText] = useState("");
-const handleChange = useCallback((event) => {
-setText(event.target.value);
-}, []);
 
-return <input type="text" value={text} onChange={handleChange} />;
+function OptimizedForm() {
+  const [text, setText] = useState("");
+
+  const handleChange = useCallback((event) => {
+    setText(event.target.value);
+  }, []);
+
+  return <input type="text" value={text} onChange={handleChange} />;
 }
+
 export default OptimizedForm;
 ```
 
@@ -3264,29 +3306,25 @@ import React, { useState } from "react";
 import { debounce } from "lodash";
 
 function SearchBox() {
-const [query, setQuery] = useState("");
-const handleSearch = debounce((text) => {
-console.log("Searching for:", text);
-}, 500); // 等待 500ms 后调用函数
+  const [query, setQuery] = useState("");
 
-return <input onChange={(e) => handleSearch(e.target.value)} placeholder="Search..." />;
+  const handleSearch = debounce((text) => {
+    console.log("Searching for:", text);
+  }, 500); // 等待 500ms 后调用函数
+
+  return <input onChange={(e) => handleSearch(e.target.value)} placeholder="Search..." />;
 }
+
 export default SearchBox;
 ```
 
 防止过度的重新渲染。提高基于 API 的输入性能。
 
-# 第 8 章
-
-# 实现响应式与自适应 GUI
+# 第 8 章：实现响应式与自适应 GUI
 
 ## 8.1 响应式 UI 与自适应 UI 的区别
 
 ### 简介
-
-
-
-
 
 现代 Web 应用需要在各种设备、屏幕尺寸和分辨率之间无缝运行。这就是响应式设计和自适应设计大显用场，它们确保了一致且用户友体验。
 
@@ -3296,23 +3334,26 @@ export default SearchBox;
 
 ### 响应式 UI 的主要特性：
 
-- 使用单一设计在所有设备上流式调整。依赖 CSS 媒体查询和弹性网格。
-- 确保在不同屏幕尺寸之间平滑过渡。现代 Web 应用的首选。
+- 使用单一设计在所有设备上流式调整。
+- 依赖 CSS 媒体查询和弹性网格。
+- 确保在不同屏幕尺寸之间平滑过渡。
+- 现代 Web 应用的首选。
 
 ### 响应式 UI 示例：
 
 ```css
 /* 默认样式 */
 .container {
-width: 100%;
-max-width: 1200px;
-margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
+
 /* 响应式调整 */
 @media (max-width: 768px) {
-.container {
-padding: 20px;
-}
+  .container {
+    padding: 20px;
+  }
 }
 ```
 
@@ -3324,15 +3365,20 @@ padding: 20px;
 
 ### 自适应 UI 的主要特性：
 
-- 针对不同的屏幕尺寸使用多个固定布局。通过设备检测决定显示哪种布局。对不同设备上的 UI 有更多控制权。在特定屏幕尺寸下性能更好。
+- 针对不同的屏幕尺寸使用多个固定布局。
+- 通过设备检测决定显示哪种布局。
+- 对不同设备上的 UI 有更多控制权。
+- 在特定屏幕尺寸下性能更好。
 
 ### 自适应 UI 示例：
 
 ```html
 <!-- 桌面布局 -->
 <link rel="stylesheet" media="screen and (min-width: 1024px)" href="desktop.css">
+
 <!-- 平板布局 -->
 <link rel="stylesheet" media="screen and (max-width: 1023px) and (min-width: 768px)" href="tablet.css">
+
 <!-- 手机布局 -->
 <link rel="stylesheet" media="screen and (max-width: 667px)" href="mobile.css">
 ```
@@ -3360,9 +3406,9 @@ CSS 媒体查询允许开发者根据屏幕尺寸、分辨率和方向应用不�
 
 ```css
 @media (max-width: 768px) {
-body {
-background-color: lightgray;
-}
+  body {
+    background-color: lightgray;
+  }
 }
 ```
 
@@ -3383,21 +3429,23 @@ background-color: lightgray;
 
 ```css
 .container {
-width: 90%;
-margin: auto;
+  width: 90%;
+  margin: auto;
 }
+
 /* 平板电脑 */
 @media (max-width: 768px) {
-.container {
-width: 100%;
-padding: 10px;
+  .container {
+    width: 100%;
+    padding: 10px;
+  }
 }
-}
+
 /* 手机 */
 @media (max-width: 480px) {
-.container {
-flex-direction: column;
-}
+  .container {
+    flex-direction: column;
+  }
 }
 ```
 
@@ -3409,15 +3457,16 @@ CSS Grid 和 Flexbox 让创建流式布局变得更加容易。
 
 ```css
 .container {
-display: flex;
-flex-wrap: wrap;
-justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
+
 /* 在较小屏幕上堆叠元素 */
 @media (max-width: 600px) {
-.container {
-flex-direction: column;
-}
+  .container {
+    flex-direction: column;
+  }
 }
 ```
 
@@ -3425,8 +3474,8 @@ flex-direction: column;
 
 ```css
 .grid-container {
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 ```
 
@@ -3440,8 +3489,8 @@ grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 
 ```css
 img {
-max-width: 100%;
-height: auto;
+  max-width: 100%;
+  height: auto;
 }
 ```
 
@@ -3465,11 +3514,11 @@ height: auto;
 
 ```javascript
 window.addEventListener("resize", function() {
-if (window.innerWidth < 600) {
-document.body.style.backgroundColor = "lightblue";
-} else {
-document.body.style.backgroundColor = "white";
-}
+  if (window.innerWidth < 600) {
+    document.body.style.backgroundColor = "lightblue";
+  } else {
+    document.body.style.backgroundColor = "white";
+  }
 });
 ```
 
@@ -3484,13 +3533,14 @@ document.body.style.backgroundColor = "white";
 ```html
 <button id="menu-btn">☰ 菜单</button>
 <nav id="mobile-menu" style="display: none;">
-<a href="#">首页</a>
-<a href="#">关于</a>
+  <a href="#">首页</a>
+  <a href="#">关于</a>
 </nav>
+
 <script>
 document.getElementById("menu-btn").addEventListener("click", function() {
-const menu = document.getElementById("mobile-menu");
-menu.style.display = menu.style.display === "none" ? "block" : "none";
+  const menu = document.getElementById("mobile-menu");
+  menu.style.display = menu.style.display === "none" ? "block" : "none";
 });
 </script>
 ```
@@ -3505,13 +3555,14 @@ JavaScript 可以根据窗口大小动态调整 UI 元素。
 
 ```javascript
 function adjustLayout() {
-const cards = document.querySelectorAll(".card");
-if (window.innerWidth < 600) {
-cards.forEach(card => card.style.width = "100%");
-} else {
-cards.forEach(card => card.style.width = "45%");
+  const cards = document.querySelectorAll(".card");
+  if (window.innerWidth < 600) {
+    cards.forEach(card => card.style.width = "100%");
+  } else {
+    cards.forEach(card => card.style.width = "45%");
+  }
 }
-}
+
 window.addEventListener("resize", adjustLayout);
 adjustLayout(); // 页面加载时运行函数
 ```
@@ -3526,14 +3577,17 @@ adjustLayout(); // 页面加载时运行函数
 
 ```javascript
 function adjustFontSize() {
-const heading = document.querySelector("h1");
-heading.style.fontSize = window.innerWidth < 600 ? "20px" : "40px";
+  const heading = document.querySelector("h1");
+  heading.style.fontSize = window.innerWidth < 600 ? "20px" : "40px";
 }
+
 window.addEventListener("resize", adjustFontSize);
 adjustFontSize(); // 初始化运行函数
 ```
 
-提高较小屏幕上的可读性。
+
+
+# 提高较小屏幕上的可读性
 
 - 响应式 UI 流式调整，而自适应 UI 加载不同的布局。
 - CSS 媒体查询和流式布局使界面适应屏幕尺寸。
@@ -3552,27 +3606,22 @@ React 提供了多个 UI 库，简化了创建响应式和自适应用户界面�
 - 开发更快 – 减少编写 CSS 的时间。
 - 一致性 – 确保跨设备的设计统一性。
 - 可访问性 – 许多库内置了无障碍功能。
-
-
-
-
-性能优化 – 优化 – 许多框架针对响应性和轻量化性能进行了优化。
+- 性能优化 – 许多框架针对响应性和轻量化性能进行了优化。
 
 ### 1. Material UI (MUI)
 
-Material UI (MUI) 是一个基于 Google Material Design 原的 React UI 框架。它提供了遵循行业标准的预构建响应式组件。
+Material UI (MUI) 是一个基于 Google Material Design 原则的 React UI 框架。它提供了遵循行业标准的预构建响应式组件。
 
-### 主要特性：
+#### 主要特性：
 
 - 用于响应式的网格系统
 - 预构建组件，如按钮、对话框和表单
 - 支持浅色/深色模式主题
 
-### 示例：Material UI 中的响应式网格
+#### 示例：Material UI 中的响应式网格
 
 ```jsx
 import React from "react";
-
 import { Container, Grid, Paper } from "@mui/material";
 
 function ResponsiveGrid() {
@@ -3596,11 +3645,15 @@ function ResponsiveGrid() {
 export default ResponsiveGrid;
 ```
 
-### 为什么使用 Material UI？
+#### 为什么使用 Material UI？
 
-内置响应式网格系统 | 高度可定制 | 支持函数组件和类组件 | 某些组件需要额外的样式进行自定义
+| 优点 | 缺点 |
+| :--- | :--- |
+| 内置响应式网格系统 | 某些组件需要额外的样式进行自定义 |
+| 高度可定制 | |
+| 支持函数组件和类组件 | |
 
-安装：
+#### 安装：
 
 ```sh
 npm install @mui/material @emotion/react @emotion/styled
@@ -3610,17 +3663,16 @@ npm install @mui/material @emotion/react @emotion/styled
 
 Bootstrap 是最广泛使用的 CSS 框架之一，React-Bootstrap 将 Bootstrap 组件集成到 React 中。
 
-### 主要特性：
+#### 主要特性：
 
 - 响应式网格系统（基于 Flexbox）
 - 预构建 UI 组件
-- 易的主题化和自定义
+- 易于主题化和自定义
 
-### 示例：使用 React-Bootstrap 进行响应式设计
+#### 示例：使用 React-Bootstrap 进行响应式设计
 
 ```jsx
 import React from "react";
-
 import { Container, Row, Col, Button } from "react-bootstrap";
 
 function BootstrapGrid() {
@@ -3641,11 +3693,15 @@ function BootstrapGrid() {
 export default BootstrapGrid;
 ```
 
-### 为什么使用 React-Bootstrap？
+#### 为什么使用 React-Bootstrap？
 
-如果你已经在使用 Bootstrap，则非常熟悉 | 在灵活性和易用性之间平衡良好 | 适用于移动优先设计 | 比其他某些库重
+| 优点 | 缺点 |
+| :--- | :--- |
+| 如果你已经在使用 Bootstrap，则非常熟悉 | 比其他某些库重 |
+| 在灵活性和易用性之间平衡良好 | |
+| 适用于移动优先设计 | |
 
-安装：
+#### 安装：
 
 ```sh
 npm install react-bootstrap bootstrap
@@ -3655,17 +3711,16 @@ npm install react-bootstrap bootstrap
 
 Chakra UI 是一个现代、轻量级且响应式的 React 组件库，具有灵活的样式系统。
 
-### 主要特性：
+#### 主要特性：
 
 - 内置响应式设计实用程序
 - 高度可定制的组件
 - 支持深色模式和主题
 
-### 示例：Chakra UI 中的响应式按钮
+#### 示例：Chakra UI 中的响应式按钮
 
 ```jsx
 import React from "react";
-
 import { Button, Box } from "@chakra-ui/react";
 
 function ChakraResponsive() {
@@ -3681,11 +3736,15 @@ function ChakraResponsive() {
 export default ChakraResponsive;
 ```
 
-### 为什么使用 Chakra UI？
+#### 为什么使用 Chakra UI？
 
-最易定制 | 内置主题支持 | 支持响应式属性（`size`, `spacing`） | 新的库，组件比 Material UI 少
+| 优点 | 缺点 |
+| :--- | :--- |
+| 最易定制 | 新的库，组件比 Material UI 少 |
+| 内置主题支持 | |
+| 支持响应式属性（`size`, `spacing`） | |
 
-安装：
+#### 安装：
 
 ```sh
 npm install @chakra-ui/react @emotion/react @emotion/styled framer-motion
@@ -3695,17 +3754,16 @@ npm install @chakra-ui/react @emotion/react @emotion/styled framer-motion
 
 Ant Design (AntD) 是一个专业的 UI 框架，拥有一套全面的预构建组件。
 
-### 主要特性：
+#### 主要特性：
 
 - 结构化强且组件丰富
 - 针对大型应用程序进行了优化
 - 带有内置 Grid 和 Flexbox 工具的响应式布局
 
-### 示例：Ant Design 响应式布局
+#### 示例：Ant Design 响应式布局
 
 ```jsx
 import React from "react";
-
 import { Layout, Menu } from "antd";
 
 const { Header, Content, Footer } = Layout;
@@ -3730,11 +3788,15 @@ function AntDLayout() {
 export default AntDLayout;
 ```
 
-### 为什么使用 Ant Design？
+#### 为什么使用 Ant Design？
 
-最适合企业级应用 | 文档齐全且稳定 | UI 组件丰富 | 某些组件需要额外的样式
+| 优点 | 缺点 |
+| :--- | :--- |
+| 最适合企业级应用 | 某些组件需要额外的样式 |
+| 文档齐全且稳定 | |
+| UI 组件丰富 | |
 
-安装：
+#### 安装：
 
 ```sh
 npm install antd
@@ -3770,6 +3832,7 @@ npm install antd
 .container {
   padding: 10px;
 }
+
 /* 较大的屏幕 */
 @media (min-width: 768px) {
   .container {
@@ -3778,7 +3841,7 @@ npm install antd
 }
 ```
 
-## 2. 使用流式网格系统
+### 2. 使用流式网格系统
 
 使用 CSS Grid 或 Flexbox 创建可扩展的布局。
 
@@ -3790,9 +3853,11 @@ npm install antd
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
 .item {
   flex: 1 1 100%;
 }
+
 /* 桌面视图 */
 @media (min-width: 768px) {
   .item {
@@ -3801,9 +3866,11 @@ npm install antd
 }
 ```
 
-## 3. 性能优化图像
+### 3. 性能优化图像
 
-使用响应式图片 (`srcset`) | 懒加载图片以提高页面速度 | 使用压缩图片 (WebP, AVIF)
+- 使用响应式图片 (`srcset`)
+- 懒加载图片以提高页面速度
+- 使用压缩图片 (WebP, AVIF)
 
 #### 示例：响应式图片加载
 
@@ -3811,13 +3878,17 @@ npm install antd
 <img src="image-small.jpg" srcset="image-large.jpg 1024w, image-medium.jpg 768w" alt="Responsive">
 ```
 
-## 4. 确保按钮和输入框适用于移动端
+### 4. 确保按钮和输入框适用于移动端
 
-最小点击目标：48px × 48px | 在移动端避免依赖悬停的 UI | 字体大小使用 `rem` 代替 `px`
+- 最小点击目标：48px × 48px
+- 在移动端避免依赖悬停的 UI
+- 字体大小使用 `rem` 代替 `px`
 
-## 5. 减少 JavaScript 以获得更快的性能
+### 5. 减少 JavaScript 以获得更快的性能
 
-避免阻塞脚本 | 使用轻量级 UI 框架 | 减少影响性能的动画
+- 避免阻塞脚本
+- 使用轻量级 UI 框架
+- 减少影响性能的动画
 
 - 使用 Material UI、Bootstrap 或 Chakra UI 等响应式 UI 库来实现可扩展组件。
 - 应用移动优先设计策略以获得更好的用户体验。
@@ -3825,9 +3896,7 @@ npm install antd
 
 通过遵循这些实践，开发者可以构建高度响应、自适应且用户友好的 Web 应用程序。
 
-# 第 9 章
-
-# 在 GUI 中集成 API 和实时数据
+# 第 9 章：在 GUI 中集成 API 和实时数据
 
 现代 GUI 通常依赖外部数据源来为用户提供动态且交互的体验。API（应用程序编程接口）允许应用程序实时获取、处理和显示数据。本章将探索如何在 GUI 应用中集成 API，包括获取数据、理解 REST 和 GraphQL，以及有效地显示 API 响应。
 
@@ -3836,7 +3905,6 @@ npm install antd
 ### API 数据获取简介
 
 API 允许 GUI 应用程序从远程服务器、数据库或外部服务请求并检索数据。常见用例包括：
-
 - 从数据库获取用户数据。
 - 从公共 API 获取天气更新。
 - 显示实时股票价格。
@@ -3849,12 +3917,7 @@ API 允许 GUI 应用程序从远程服务器、数据库或外部服务请求�
 | 方法 | 描述 | 最佳用例 |
 | :--- | :--- | :--- |
 | `fetch()` | 用于发送 HTTP 请求的内置 JavaScript API | 简单的 API 请求 |
-
-
-
-
-
-| `axios` | 适用于浏览器和 Node.js 的基于 promise 的 HTTP 客户端 |get 更好的错误处理处理 API 请求 |
+| `axios` | 适用于浏览器和 Node.js 的基于 promise 的 HTTP 客户端 | 更好的错误处理处理 API 请求 |
 | `useEffect()` | 用于在组件挂载时获取数据的 React Hook | 在 React 函数组件中获取数据 |
 
 ### 使用 `fetch()` 获取 API 数据（原生 JavaScript）
@@ -3890,6 +3953,7 @@ npm install axios
 
 ```javascript
 import axios from "axios";
+
 axios.get("https://jsonplaceholder.typicode.com/users")
   .then(response => console.log(response.data))
   .catch(error => console.error("API Error:", error));
@@ -3909,6 +3973,7 @@ import axios from "axios";
 
 function UserList() {
   const [users, setUsers] = useState([]);
+
   useEffect(() => {
     axios.get("https://jsonplaceholder.typicode.com/users")
       .then(response => setUsers(response.data))
@@ -3974,7 +4039,6 @@ function UserList() {
 ### 优化 API 请求
 
 为了防止不必要的 API 调用并提高性能：
-
 - 使用缓存机制（例如将结果存储在状态或本地存储中）。
 - 对搜索输入进行 API 防抖处理（例如使用 `lodash.debounce()`）。
 - 对大数据集进行分页，而不是一次性获取所有数据。
@@ -4018,9 +4082,9 @@ fetch("https://api.example.com/users")
 
 ### GraphQL API 概述
 
-GraphQL 是一种用于 API 的查询语言，允许客户端请求它们需要的数据。。
+GraphQL 是一种用于 API 的查询语言，允许客户端请求它们需要的数据。
 
- 示例：用户的 GraphQL 查询
+#### 示例：用户的 GraphQL 查询
 
 ```graphql
 {
@@ -4038,6 +4102,7 @@ GraphQL 是一种用于 API 的查询语言，允许客户端请求它们需要�
 
 ```javascript
 import { request, gql } from "graphql-request";
+
 const query = gql`
 {
   users {
@@ -4047,6 +4112,7 @@ const query = gql`
   }
 }
 `;
+
 request("https://api.example.com/graphql", query)
   .then(data => console.log(data))
   .catch(error => console.error("Error fetching users:", error));
@@ -4074,16 +4140,15 @@ request("https://api.example.com/graphql", query)
 ### 异步 UI 更新简介
 
 在现代 GUI 应用中，许多交互依赖于异步操作，例如：
-
 - 从 API 获取数据。
 - 在不刷新页面的情况下提交表单。
 - 动态加载新内容（例如无限滚动）。
 
-由于 JavaScript 是单线程的，这些操作必须异步异步处理，以防止 UI 阻塞并确保流畅的用户体验。
+由于 JavaScript 是单线程的，这些操作必须异步处理，以防止 UI 阻塞并确保流畅的用户体验。
 
-## 理解 JavaScript 中的异步操作
+### 理解 JavaScript 中的异步操作
 
-### 1. 回调函数 (Callbacks)
+#### 1. 回调函数 (Callbacks)
 
 回调是作为参数传递稍后执行的函数。
 
@@ -4101,9 +4166,9 @@ fetchData((message) => {
 });
 ```
 
- 回调地狱：回调可能会变得深度嵌套，导致代码难以维护。
+回调地狱：回调可能会变得深度嵌套，导致代码难以维护。
 
-### 2. Promises (.then() 和 .catch() )
+#### 2. Promises (.then() 和 .catch() )
 
 Promises 允许更清晰地处理异步任务。
 
@@ -4123,9 +4188,9 @@ fetchData().then((message) => console.log(message));
 
 与回调相比提高了可读性。
 
-### 3. Async/Await（现代方法）
+#### 3. Async/Await（现代方法）
 
-async 和 await 通过让异步操作看起来像同步一样来了异步操作。
+`async` 和 `await` 通过让异步操作看起来像同步一样来简化异步操作。
 
 #### 示例：使用 async/await 获取数据
 
@@ -4142,11 +4207,9 @@ async function displayData() {
 displayData();
 ```
 
-
-
 比 `.then()` 链更易于阅读和维护。
 
-## 在 React 中处理异步 UI 更新
+### 在 React 中处理异步 UI 更新
 
 在 React 中，UI 更新不应阻塞渲染。通常使用 `useEffect()` 钩子来处理 API 调用而不冻结 UI。
 
@@ -4175,7 +4238,7 @@ function UserList() {
 - 处理 API 获取，而不阻塞渲染。
 - 在数据可用之前显示加载状态。
 
-## 优化异步 UI 更新
+### 优化异步 UI 更新
 
 1. **使用骨架屏 (Skeleton Screens)**：在数据加载时显示占位符。
 2. **缓存数据**：避免不必要的 API 调用（例如 `localStorage`）。
@@ -4193,7 +4256,7 @@ WebSockets 允许客户端与服务器之间的双向通信，实现无需轮询
 - 比轮询更高效（减少不必要的请求）。
 - 客户端与服务器之间的持久连接。
 
-## 在 JavaScript 中设置 WebSockets
+### 在 JavaScript 中设置 WebSockets
 
 `WebSocket` API 实现了实时数据传输。
 
@@ -4201,12 +4264,15 @@ WebSockets 允许客户端与服务器之间的双向通信，实现无需轮询
 
 ```javascript
 const socket = new WebSocket("wss://example.com/socket");
+
 socket.onopen = () => {
   console.log("WebSocket connection established");
 };
+
 socket.onmessage = (event) => {
   console.log("Received:", event.data);
 };
+
 socket.onclose = () => {
   console.log("WebSocket connection closed");
 };
@@ -4214,7 +4280,7 @@ socket.onclose = () => {
 
 当新数据到达时，高效更新 UI。
 
-## 在 React 中实现 WebSockets
+### 在 React 中实现 WebSockets
 
 使用 React 和 WebSockets，我们可以实时更新 UI。
 
@@ -4229,6 +4295,7 @@ function ChatApp() {
     socket.onmessage = (event) => {
       setMessages(prevMessages => [...prevMessages, event.data]);
     };
+
     return () => socket.close();
   }, []);
 
@@ -4238,6 +4305,7 @@ function ChatApp() {
     </ul>
   );
 }
+
 export default ChatApp;
 ```
 
@@ -4251,7 +4319,7 @@ export default ChatApp;
 
 ## 9.5 在 React 中实现 CRUD 操作
 
-## 理解 GUI 应用中的 CRUD
+### 理解 GUI 应用中的 CRUD
 
 CRUD（创建、读取、更新、删除）操作允许应用程序动态管理数据。
 
@@ -4262,11 +4330,11 @@ CRUD（创建、读取、更新、删除）操作允许应用程序动态管理�
 | Update | `PUT` 或 `PATCH` | `/users/:id` |
 | Delete | `DELETE` | `/users/:id` |
 
-## 在 React 中实现 CRUD
+### 在 React 中实现 CRUD
 
 使用 React Hooks (`useState`, `useEffect`) 和 `axios`，我们可以实现 CRUD 操作。
 
-### 1. 获取数据（读取）
+#### 1. 获取数据（读取）
 
 ```jsx
 import React, { useState, useEffect } from "react";
@@ -4274,6 +4342,7 @@ import axios from "axios";
 
 function UserList() {
   const [users, setUsers] = useState([]);
+
   useEffect(() => {
     axios.get("https://jsonplaceholder.typicode.com/users")
       .then(response => setUsers(response.data));
@@ -4285,21 +4354,24 @@ function UserList() {
     </ul>
   );
 }
+
 export default UserList;
 ```
 
 显示来自 API 的用户列表。
 
-### 2. 创建新用户（创建）
+#### 2. 创建新用户（创建）
 
 ```jsx
 function CreateUser() {
   const [name, setName] = useState("");
+
   const handleSubmit = (event) => {
     event.preventDefault();
     axios.post("https://jsonplaceholder.typicode.com/users", { name })
       .then(response => console.log("User created:", response.data));
   };
+
   return (
     <form onSubmit={handleSubmit}>
       <input type="text" value={name} onChange={e => setName(e.target.value)} />
@@ -4311,15 +4383,17 @@ function CreateUser() {
 
 创建新用户并将数据发送到服务器。
 
-### 3. 更新用户数据（更新）
+#### 3. 更新用户数据（更新）
 
 ```jsx
 function UpdateUser({ userId }) {
   const [name, setName] = useState("");
+
   const handleUpdate = () => {
     axios.put(`https://jsonplaceholder.typicode.com/users/${userId}`, { name })
       .then(response => console.log("User updated:", response.data));
   };
+
   return (
     <div>
       <input type="text" value={name} onChange={e => setName(e.target.value)} />
@@ -4331,7 +4405,7 @@ function UpdateUser({ userId }) {
 
 更新服务器上的用户数据。
 
-### 4. 删除用户（删除）
+#### 4. 删除用户（删除）
 
 ```jsx
 function DeleteUser({ userId }) {
@@ -4339,6 +4413,7 @@ function DeleteUser({ userId }) {
     axios.delete(`https://jsonplaceholder.typicode.com/users/${userId}`)
       .then(() => console.log("User deleted"));
   };
+
   return <button onClick={handleDelete}>Delete</button>;
 }
 ```
@@ -4351,9 +4426,7 @@ function DeleteUser({ userId }) {
 
 通过实现这些概念，开发者可以使用 React 构建高度动态、实时且具有交互性的 GUI 应用。
 
-# 第 10 章
-
-# GUI 开发中的性能优化
+# 第 10 章：GUI 开发中的性能优化
 
 优化 GUI 应用的性能可以确保流畅的用户体验、更快的加载速度以及提高效率。基于 JavaScript 的 UI 中的性能瓶颈会导致界面卡顿、渲染缓慢、过度重新渲染和内存泄漏。在本章中，我们将探索识别瓶颈的技术，并使用记忆化（memoization）和懒加载（lazy loading）优化 React 应用。
 
@@ -4361,9 +4434,9 @@ function DeleteUser({ userId }) {
 
 ### 常见的 JavaScript GUI 性能问题
 
-1. **不必要的重绘和重流** – 频繁的 DOM 会减慢 UI。
+1. **不必要的重绘和重流** – 频繁的 DOM 操作会减慢 UI。
 2. **React 组件中过度重新渲染** – 导致 UI 卡顿和内存泄漏。
-3. **阻塞 JavaScript 执行** – 大型型同步任务会冻结 UI。
+3. **阻塞 JavaScript 执行** – 大型同步任务会冻结 UI。
 4. **低效的 API 调用** – 未优化的网络请求会减慢数据获取。
 5. **大型 JavaScript 包** – 增加了页面加载时间。
 
@@ -4397,27 +4470,22 @@ React DevTools 有助于识别不必要的重新渲染：
 `Lighthouse` 是 Chrome 内置的性能审核工具。
 
 运行 Lighthouse：
-1. 打开 Chrome DevTools > 往到 `Lighthouse` 标签页。
+1. 打开 Chrome DevTools > 导航到 `Lighthouse` 标签页。
 2. 选择 `Performance` 并点击 `Generate Report`。
 3. 审查需要改进的区域（JavaScript 执行时间、阻塞渲染资源等）。
 
 ### 需要监控的关键性能指标
 
 | 指标 | 描述 | 理想值 |
-
-
-
-
-
-| 首次内容绘制 (FCP) | 渲染第一个可见元素所需的时间 | < 1.8s |
 | :--- | :--- | :--- |
+| 首次内容绘制 (FCP) | 渲染第一个可见元素所需的时间 | < 1.8s |
 | 可交互时间 (TTI) | 用户交互产生响应之前的时间 | < 5s |
 | JavaScript 执行时间 | 页面加载时 JavaScript 运行所需的时间 | 尽可能减少 |
 | 组件重新渲染时间 | React 组件重新渲染所需的时间 | 保持每帧低于 16ms |
 
 一旦确定了瓶颈，下一步是使用记忆化（memoization）和懒加载（lazy loading）优化 React 应用。
 
-* *
+---
 
 ## 10.2 使用 React 的记忆化和懒加载进行优化
 
@@ -4431,7 +4499,7 @@ React DevTools 有助于识别不必要的重新渲染：
 - `useMemo()` – 对高开销计算进行记忆化。
 - `useCallback()` – 对函数进行记忆化，避免在每次渲染时重新创建它们。
 
-* *
+---
 
 ### 使用 `React.memo()` 优化组件渲染
 
@@ -4447,6 +4515,7 @@ function ChildComponent({ name }) {
 
 function ParentComponent() {
   const [count, setCount] = useState(0);
+
   return (
     <div>
       <button onClick={() => setCount(count + 1)}>Increment</button>
@@ -4458,12 +4527,13 @@ function ParentComponent() {
 
 问题：即使 `name` 从不改变，`ChildComponent` 也会重新渲染。
 
-* *
+---
 
 #### 使用 `React.memo()` 的优化版本
 
 ```jsx
 import React, { memo, useState } from "react";
+
 const ChildComponent = memo(({ name }) => {
   console.log("Child Rendered!");
   return <p>Hello, {name}</p>;
@@ -4471,6 +4541,7 @@ const ChildComponent = memo(({ name }) => {
 
 function ParentComponent() {
   const [count, setCount] = useState(0);
+
   return (
     <div>
       <button onClick={() => setCount(count + 1)}>Increment</button>
@@ -4480,9 +4551,9 @@ function ParentComponent() {
 }
 ```
 
-现在，只有当 `name` true 时，`ChildComponent` 才会重新渲染。
+现在，只有当 `name` 发生变化时，`ChildComponent` 才会重新渲染。
 
-* *
+---
 
 ### 使用 `useMemo()` 进行高开销计算
 
@@ -4499,23 +4570,25 @@ function ExpensiveComponent({ num }) {
 
 问题：每次父组件重新渲染时计算都会运行，即使 `num` 没有改变。
 
-* *
+---
 
 #### 使用 `useMemo()` 的优化版本
 
 ```jsx
 import React, { useMemo } from "react";
+
 function ExpensiveComponent({ num }) {
   const result = useMemo(() => {
     return Array.from({ length: 1e7 }, () => num).reduce((acc, val) => acc + val, 0);
   }, [num]);
+
   return <p>Computed: {result}</p>;
 }
 ```
 
 现在，只有当 `num` 改变时计算才会运行。
 
-* *
+---
 
 ### 使用 `useCallback()` 缓存函数
 
@@ -4532,23 +4605,25 @@ function ParentComponent() {
 
 问题：`handleClick` 每次渲染都会重新创建，导致子组件重新渲染。
 
-* *
+---
 
 #### 使用 `useCallback()` 的优化版本
 
 ```jsx
 import React, { useCallback } from "react";
+
 function ParentComponent() {
   const handleClick = useCallback(() => {
     console.log("Button Clicked");
   }, []);
+
   return <button onClick={handleClick}>Click Me</button>;
 }
 ```
 
 现在，`handleClick` 在不同渲染之间保持不变。
 
-* *
+---
 
 ### 2. 使用 `React.lazy()` 懒加载组件
 
@@ -4558,7 +4633,9 @@ function ParentComponent() {
 
 ```jsx
 import React, { Suspense, lazy } from "react";
+
 const LazyComponent = lazy(() => import("./HeavyComponent"));
+
 function App() {
   return (
     <Suspense fallback={<p>Loading...</p>}>
@@ -4570,7 +4647,7 @@ function App() {
 
 通过按需加载组件提高性能。
 
-* *
+---
 
 ### 结论
 
@@ -4580,9 +4657,9 @@ function App() {
 
 通过实现这些优化技术，开发者可以显著增强 GUI 性能，确保 React 应用的流畅和高效。
 
-# 10.3 为 GUI 性能优化图像和资源
+## 10.3 为 GUI 性能优化图像和资源
 
-## GUI 开发中资源优化简介
+### GUI 开发中资源优化简介
 
 图像、字体和其他媒体资源在 GUI 应用中起着重要作用，但如果不进行优化，它们会减慢加载速度并影响用户体验。资源优化确保应用程序快速加载。
 
@@ -4594,15 +4671,15 @@ function App() {
 4. 过多的 HTTP 请求——每个资源都需要单独请求。
 5. 阻塞渲染的字体和样式表——延迟渲染。
 
-## 1. 选择正确的图像格式
+### 1. 选择正确的图像格式
 
 选择正确的图像格式可以显著减少文件大小。
 
 | 格式 | 适用场景 | 优点 | 缺点 |
 | :--- | :--- | :--- | :--- |
-| JPEG | 照片、大图像 | 广泛支持 | |
+| JPEG | 照片、大图像 | 广泛支持 | 有损压缩 |
 | PNG | 具有透明度的图形 | 质量高、支持透明 | 文件大小较大 |
-| WebP | 通用、网页图像 | 比 PNG 小 30%、高质量 | |
+| WebP | 通用、网页图像 | 比 PNG 小 30%、高质量 | 旧浏览器支持有限 |
 | AVIF | 下一代压缩 | 比 WebP 更优、体积最小 | 浏览器支持有限 |
 | SVG | 图标、插图 | 可缩放、无质量损失 | 不适合复杂图像 |
 
@@ -4619,13 +4696,13 @@ function App() {
 
 确保与不支持 WebP 的浏览器兼容。
 
-* *
+---
 
-## 2. 压缩技术
+### 2. 压缩技术
 
 在不损失质量的情况下缩小图像大小至关重要。
 
-### 推荐的压缩工具
+#### 推荐的压缩工具
 
 | 工具 | 用途 |
 | :--- | :--- |
@@ -4636,9 +4713,9 @@ function App() {
 
 上传前使用 TinyPNG 等工具。对于动态图像优化，使用 Cloudinary 或 Imgix。
 
-* *
+---
 
-## 3. 为了性能懒加载图像
+### 3. 为了性能懒加载图像
 
 懒加载在图像进入视口时延迟加载，减少初始加载时间。
 
@@ -4650,11 +4727,13 @@ function App() {
 
 减少带宽消耗。提升感知加载时间。
 
-## 4. 使用内容分发网络 (CDN)
+---
+
+### 4. 使用内容分发网络 (CDN)
 
 CDN 从距离用户最近的服务器缓存并交付图像和服务，减少延迟。
 
-### 流行的 CDN 提供商
+#### 流行的 CDN 提供商
 
 - Cloudflare
 - AWS CloudFront
@@ -4662,31 +4741,26 @@ CDN 从距离用户最近的服务器缓存并交付图像和服务，减少延�
 
 使用 CDN 托管图像、字体和脚本。
 
-* *
+---
 
-# 10.4 服务端渲染 (SSR) 与 客户端渲染 (CSR)
+## 10.4 服务端渲染 (SSR) 与 客户端渲染 (CSR)
 
-## 理解 GUI 开发中的渲染
+### 理解 GUI 开发中的渲染
 
 渲染决定了 UI 组件如何在 Web 应用中被处理和显示。主要有两种渲染方式：
-
-
-
-
-
-- 客户端渲染 (CSR) – 浏览器获取一个极的 HTML 页面，并使用 `JavaScript` 动态渲染内容。
+- 客户端渲染 (CSR) – 浏览器获取一个极简的 HTML 页面，并使用 `JavaScript` 动态渲染内容。
 - 服务端渲染 (SSR) – 服务器在将页面发送到浏览器之前生成完整的 HTML 页面。
 
-## 1. 客户端渲染 (CSR)
+### 1. 客户端渲染 (CSR)
 
 在 `CSR` 中，`JavaScript` 运行在客户端，用于动态生成和更新 UI 组件。
 
-### CSR 的优点
+#### CSR 的优点
 - 初始页面加载更快，因为只加载了必要的资源。
 - 顺滑、动态的用户交互（对于 SPA - 单页应用非常理想）。
 - 对于具有复杂客户端逻辑的应用效率高。
 
-### CSR 的缺点
+#### CSR 的缺点
 - 默认情况下 SEO 效果较差（搜索引擎难以处理由 `JavaScript` 渲染的内容）。
 - 初始内容渲染慢（在 `JavaScript` 加载之前显示空白页）。
 
@@ -4697,6 +4771,7 @@ import React, { useState, useEffect } from "react";
 
 function Users() {
   const [users, setUsers] = useState([]);
+
   useEffect(() => {
     fetch("https://jsonplaceholder.typicode.com/users")
       .then(res => res.json())
@@ -4713,16 +4788,16 @@ function Users() {
 
 UI 在获取到 `JavaScript` 资源包后动态加载。
 
-## 2. 服务端渲染 (SSR)
+### 2. 服务端渲染 (SSR)
 
 在 `SSR` 中，服务器在将 `HTML` 发送到客户端之前进行生成，从而改进了 SEO 和性能。
 
-### SSR 的优点
+#### SSR 的优点
 - 初始加载时间更快（HTML 在到达浏览器之前已完全渲染）。
 - 对 SEO 友好（搜索引擎可以轻松爬取内容）。
-- 在慢网络和设备设备上性能更好。
+- 在慢网络和设备上性能更好。
 
-### SSR 的缺点
+#### SSR 的缺点
 - 服务器负载增加（服务器必须处理每一个请求）。
 - 与 `CSR` 相比，页面切换较慢。
 
@@ -4750,7 +4825,7 @@ export default Users;
 
 HTML 在服务器上预渲染，改进了 SEO。
 
-## 3. CSR vs SSR：该用哪一个？
+### 3. CSR vs SSR：该用哪一个？
 
 | 因素 | CSR (客户端) | SSR (服务端) |
 | :--- | :--- | :--- |
@@ -4759,31 +4834,35 @@ HTML 在服务器上预渲染，改进了 SEO。
 | 性能 | 交互式应用更好 | 静态内容更好 |
 | 服务器负载 | 极小 | 较高 |
 
-对于交互式仪表板、实时应用使用 `CSR`。对于 SEO 型网站（例如博客、电子商务）使用 `SSR`。
+对于交互式仪表板、实时应用使用 `CSR`。对于 SEO 导向型网站（例如博客、电子商务）使用 `SSR`。
 
 ## 10.5 GUI 性能问题的分析与调试
 
 ### 性能分析与调试工具
+
 优化性能需要对缓慢的 UI 元素进行性能分析和调试。
 
 ### 1. Chrome DevTools – 性能剖析
+
 - 打开 `DevTools` (`F12`) > 导航到 `Performance` 标签页。
 - 点击 `Record` 并与 UI 交互。
 - 分析绘制时间 (paint times)、`JavaScript` 执行和布局偏移 (layout shifts)。
 - 检测慢脚本、过多的重绘。
 
 ### 2. React DevTools – 组件渲染剖析
+
 - 打开 `React DevTools` > 进入 `Profiler` 标签页。
 - 点击 `Record`，与 UI 交互。
 - 识别渲染过于频繁的组件。
 - 使用 `React.memo()` 和 `useMemo()` 优化缓慢的组件。
 
-#### 3. Lighthouse – 页面速度
+### 3. Lighthouse – 页面速度
+
 - 打开 `DevTools` > 进入 `Lighthouse` 标签页。
 - 运行性能审计。
 - 识别加载缓慢的资源、阻塞渲染的脚本。
 
-## 4. 常见的 GUI 性能修复
+### 4. 常见的 GUI 性能修复
 
 | 问题 | 解决方案 |
 | :--- | :--- |
@@ -4803,28 +4882,31 @@ HTML 在服务器上预渲染，改进了 SEO。
 ## 11.1 什么是 Web 无障碍？
 
 ### Web 无障碍简介
+
 Web 无障碍确保所有用户（包括残障人士）都能有效地导航、理解和与 Web 应用程序交互。它是包容性设计的一个重要方面，使视觉、听觉、运动和认知障碍人士能够无障碍地使用数字界面。
 
 ### 为什么 Web 无障碍很重要？
+
 - **包容性**：为所有人提供平等的内容访问和服务。
 - **法律合规性**：许多国家执行无障碍法律，如 `ADA`（美国残疾人法）和 `WCAG`（网页内容无障碍指南）。
 - **更好的用户体验**：提高所有用户的导航、可读性和可用性。
 - **SEO 收益**：搜索引擎会优先考虑无障碍网站。
 
 ### 理解 WCAG 指南
+
 网页内容无障碍指南 (`WCAG`) 为创建无障碍 Web 应用提供了框架。`WCAG` 构建在四个原则之上，被称为 `POUR`：
 
 | 原则 | 描述 | 示例 |
 | :--- | :--- | :--- |
-| 可感知 (Perceivable)| 用户必须能够感知信息 | 图片的替代文本、视频字幕 |
-| 可操作 (Operable)| 用户必须能够导航和交互 | 键盘导航、无时间限制的内容 |
-| 可理解 (Understandable)| 内容应易于阅读和理解 | 清晰的指令、可读的字体 |
-| 健壮 (Robust)| 与辅助技术兼容 | 兼容屏幕阅读器和浏览器 |
+| 可感知 (Perceivable) | 用户必须能够感知信息 | 图片的替代文本、视频字幕 |
+| 可操作 (Operable) | 用户必须能够导航和交互 | 键盘导航、无时间限制的内容 |
+| 可理解 (Understandable) | 内容应易于阅读和理解 | 清晰的指令、可读的字体 |
+| 健壮 (Robust) | 与辅助技术兼容 | 兼容屏幕阅读器和浏览器 |
 
 `WCAG` 级：
 - `A`：基础无障碍。
 - `AA`：推荐标准（许多地区法律合规性的要求）。
-- `AAA`：最高无无障碍。
+- `AAA`：最高无障碍。
 
 ### GUI 应用中常见的无障碍障碍
 
@@ -4835,21 +4917,29 @@ Web 无障碍确保所有用户（包括残障人士）都能有效地导航、�
 | 非语义化 HTML | 屏幕阅读器无法正确解释元素 | 使用正确的 `HTML5` 语义化元素 |
 | 表单不可访问 | 用户无法正常导航表单 | 添加标签和焦点指示 |
 
-### 无无障碍最佳实践
-使用语义化 `HTML`（使用 `<button>`, `<nav>`, `<header>` 代替 `<div>`）。为图片提供替代文本 (`alt`)。确保足够的颜色对比度。确保内容可以通过键盘操作（无需鼠标）。使用 `ARIA` 属性增强无障碍性（下一节介绍）。
+### 无障碍最佳实践
+
+- 使用语义化 `HTML`（使用 `<button>`, `<nav>`, `<header>` 代替 `<div>`）。
+- 为图片提供替代文本 (`alt`)。
+- 确保足够的颜色对比度。
+- 确保内容可以通过键盘操作（无需鼠标）。
+- 使用 `ARIA` 属性增强无障碍性（下一节介绍）。
 
 ## 11.2 为 GUI 实现 ARIA
 
 ### 什么是 ARIA (无障碍富交互互联网应用)？
+
 `ARIA`（Accessible Rich Internet Applications）是一组在原生 `HTML` 元素不足时改进无障碍访问的属性。`ARIA` 帮助辅助技术解释复杂的 UI，如模态框、工具提示和交互式组件。
 
 ### ARIA 角色、属性和状态
+
 ARIA 属性分为三类：
 1. **角色 (Roles)**：定义元素的用途（例如 `alert`, `dialog`）。
 2. **属性 (Properties)**：提供额外的上下文（例如 `aria-label`, `aria-labelledby`）。
 3. **状态 (States)**：定义 UI 变化（例如 `aria-expanded`, `aria-hidden`）。
 
 ### 1. ARIA 角色
+
 `ARIA` 角色帮助定义元素的功能。
 
 | ARIA 角色 | 目的 | 使用示例 |
@@ -4861,18 +4951,14 @@ ARIA 属性分为三类：
 当 HTML 元素没有提供足够的语义时，使用 `ARIA` 角色。
 
 ### 2. ARIA 属性
+
 `ARIA` 属性为元素提供额外信息。
 
 | ARIA 属性 | 用法 | 示例 |
 | :--- | :--- | :--- |
 | `aria-label` | 为没有可见文本的元素标签 | `<button aria-label="关闭">X</button>` |
-
-
-
-
-
-| aria-labelledby | 将元素与标签关联 | <div aria-labelledby="title">内容</div> |
-| aria-describedby | 为元素提供描述 | <input aria-describedby="error-msg"> |
+| `aria-labelledby` | 将元素与标签关联 | `<div aria-labelledby="title">内容</div>` |
+| `aria-describedby` | 为元素提供描述 | `<input aria-describedby="error-msg">` |
 
 最佳实践：在依赖 ARIA 属性之前，优先使用原生 HTML 标签。
 
@@ -4882,9 +4968,9 @@ ARIA 状态表示用于辅助技术的 UI 变化。
 
 | ARIA 状态 | 用法 | 示例 |
 | :--- | :--- | :--- |
-| aria-expanded="true/false" | 表示内容是否展开 | <button aria-expanded="true">菜单</button> |
-| aria-hidden="true/false" | 从屏幕阅读器中隐藏元素 | <div aria-hidden="true">隐藏内容</div> |
-| aria-checked="true/false" | 表示复选框是否被选中 | <input type="checkbox" aria-checked="true"> |
+| `aria-expanded="true/false"` | 表示内容是否展开 | `<button aria-expanded="true">菜单</button>` |
+| `aria-hidden="true/false"` | 从屏幕阅读器中隐藏元素 | `<div aria-hidden="true">隐藏内容</div>` |
+| `aria-checked="true/false"` | 表示复选框是否被选中 | `<input type="checkbox" aria-checked="true">` |
 
 使用 ARIA 状态动态更新 UI 的可访问性。
 
@@ -4896,7 +4982,6 @@ ARIA 状态表示用于辅助技术的 UI 变化。
 import React, { useState } from "react";
 
 function AccessibleDropdown() {
-
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -4927,10 +5012,9 @@ export default AccessibleDropdown;
 ### 为什么键盘导航至关重要？
 
 许多用户依赖键盘导航而不是鼠标，包括：
-
-* 使用屏幕阅读器的视障用户。
-* 行动能力不便的用户。
-* 偏好使用快捷键的高级用户。
+- 使用屏幕阅读器的视障用户。
+- 行动能力不便的用户。
+- 偏好使用快捷键的高级用户。
 
 ### 1. 让 GUI 具有键盘可访问性
 
@@ -4938,17 +5022,16 @@ export default AccessibleDropdown;
 | :--- | :--- |
 | 确保焦点可见性 | 使用 `:focus` 样式（`outline: 2px solid blue;`） |
 | 使用 `tabindex` 进行导航 | 确保所有交互元素都有 `tabindex="0"` |
-| 提供跳过链接 | <a href="#main" class="skip-link">跳过到内容</a> |
+| 提供跳过链接 | `<a href="#main" class="skip-link">跳过到内容</a>` |
 
 通过使用 `Tab` 和 `Shift+Tab` 键进行导航进行测试。
 
 ### 2. 让 GUI 友好屏幕阅读器
 
 屏幕阅读器将文本转换为语音。为了提高兼容性：
-
-* 使用适当的语义化 HTML（例如，按钮使用 `<button>` 而不是 `<div>`）。
-* 确保表单标签清晰（`<label for="name">名称：</label>`）。
-* 避免使用 `display: none;` 隐藏元素（请改用 `aria-hidden="true"`）。
+- 使用适当的语义化 HTML（例如，按钮使用 `<button>` 而不是 `<div>`）。
+- 确保表单标签清晰（`<label for="name">名称：</label>`）。
+- 避免使用 `display: none;` 隐藏元素（请改用 `aria-hidden="true"`）。
 
 #### 示例：屏幕阅读器友好型表单
 
@@ -4959,21 +5042,20 @@ export default AccessibleDropdown;
 
 确保屏幕阅读器能够理解输入字段。
 
-***
+---
 
 ### 测试可访问性
 
 使用这些工具测试可访问性：
-
-* Lighthouse (Chrome 开发者工具) – 可访问性审计。
-* Axe DevTools – 检测 ARIA 问题。
-* NVDA (Windows), VoiceOver (Mac) – 屏幕阅读器测试。
+- Lighthouse (Chrome 开发者工具) – 可访问性审计。
+- Axe DevTools – 检测 ARIA 问题。
+- NVDA (Windows), VoiceOver (Mac) – 屏幕阅读器测试。
 
 运行可访问性审计以确保符合 WCAG 标准。
 
-* 网络可访问性确保了所有用户的包容性设计。
-* ARIA 角色、属性和状态提升了 UI 的可访问性。
-* 键盘导航和屏幕阅读器支持对于可用性至关重要。
+- 网络可访问性确保了所有用户的包容性设计。
+- ARIA 角色、属性和状态提升了 UI 的可访问性。
+- 键盘导航和屏幕阅读器支持对于可用性至关重要。
 
 通过实现这些技术，开发者可以创建完全可访问、用户友好且符合法规的 GUI 应用。
 
@@ -4981,7 +5063,7 @@ export default AccessibleDropdown;
 
 ### 颜色对比与字体可读性简介
 
-适当的颜色对比字体可读性对于确保所有用户（包括视觉受障者）能够轻松阅读和操作图形用户界面 (GUI) 关关重要。对比度低、字体过小或字体选择不当会导致许多用户（包括色盲、视力低下或认知障碍患者）无法使用应用程序。
+适当的颜色对比和字体可读性对于确保所有用户（包括视觉受障者）能够轻松阅读和操作图形用户界面 (GUI) 至关重要。对比度低、字体过小或字体选择不当会导致许多用户（包括色盲、视力低下或认知障碍患者）无法使用应用程序。
 
 ### 1. 理解颜色对比
 
@@ -5014,8 +5096,9 @@ export default AccessibleDropdown;
 ### 3. 选择可访问的颜色
 
 某些用户会有色盲或难以区分相似色调的问题。为了适应他们：
-
-不要仅依赖颜色来传达含义。在使用颜色的同时使用图案、文本标签或图标。确保 UI 元素之间有足够的对比度。
+- 不要仅依赖颜色来传达含义。
+- 在使用颜色的同时使用图案、文本标签或图标。
+- 确保 UI 元素之间有足够的对比度。
 
 #### 示例：糟糕 vs 良好的对比度
 
@@ -5045,9 +5128,9 @@ export default AccessibleDropdown;
 
 #### 4.1 选择可读的字体
 
-数字界面应使用无衬线字体，如 Arial, Helvetica, Roboto。
-正文避免使用脚本或装饰性字体。
-确保字母和行之间有适当的间距。
+- 数字界面应使用无衬线字体，如 Arial, Helvetica, Roboto。
+- 正文避免使用脚本或装饰性字体。
+- 确保字母和行之间有适当的间距。
 
 | 字体类型 | 最佳用例 |
 | :--- | :--- |
@@ -5055,7 +5138,7 @@ export default AccessibleDropdown;
 | 衬线字体 (如 Times New Roman, Georgia) | 长文本内容、印刷媒体 |
 | 等宽字体 (如 Courier, Consolas) | 代码段、技术内容 |
 
-***
+---
 
 ### 4.2 最佳字体大小和间距
 
@@ -5070,7 +5153,10 @@ export default AccessibleDropdown;
 
 ### 4.3 字体可读性的最佳实践
 
-在文本和背景之间使用适当的对比度。确保文本不会过于拥挤或间距过密。在主字体不可用时提供备用字体。允许用户调整字体大小而不破坏布局。
+- 在文本和背景之间使用适当的对比度。
+- 确保文本不会过于拥挤或间距过密。
+- 在主字体不可用时提供备用字体。
+- 允许用户调整字体大小而不破坏布局。
 
 #### 示例：良好 vs 糟糕的字体使用
 
@@ -5110,19 +5196,13 @@ body {
 4. 用户控制 – 允许用户根据其需求定制体验。
 5. 辅助技术支持 – 确保与屏幕阅读器、语音控制和替代输入设备的兼容性。
 
-为可访问性设计可以提高人的可用性。
+为可访问性设计可以提高所有人的可用性。
 
 ### 2. 实现包容性 UI 元素
 
 | UI 元素 | 最佳实践 |
 | :--- | :--- |
-
-
-
-
-
 | 导航 | 确保标题、标签和焦点指示器清晰 |
-| :--- | :--- |
 | 表单 | 使用 `<label>` 元素和清晰的输入描述 |
 | 按钮与链接 | 提供描述性文本（ `aria-label`, `title` ） |
 | 媒体（图像、视频） | 提供说明、转录和替代文本 (alt text) |
@@ -5162,16 +5242,17 @@ body {
 
 某些用户由于视觉敏感，倾向于深色模式或高对比度主题。
 
-允许用户在亮色和深色主题之间切换。确保两种模式下的对比度均保持高水平。
+- 允许用户在亮色和深色主题之间切换。
+- 确保两种模式下的对比度均保持高水平。
 
 #### 示例：CSS 深色模式支持
 
 ```css
 @media (prefers-color-scheme: dark) {
-body {
-  background-color: black;
-  color: white;
-}
+  body {
+    background-color: black;
+    color: white;
+  }
 }
 ```
 
@@ -5197,9 +5278,7 @@ body {
 
 通过遵循这些指南，开发者可以创建适用于所有人、易用且包容的 GUI 应用。
 
-# 第 12 章
-
-# GUI 应用的测试与调试
+# 第 12 章：GUI 应用的测试与调试
 
 ## 12.1 测试 GUI 应用的重要性
 
@@ -5219,7 +5298,7 @@ GUI 测试确保图形用户界面 (GUI) 按照预期工作，提供无缝无错
 
 | 测试类型 | 描述 | 示例 |
 | :--- | :--- | :--- |
-| 测试 | 测试单个组件或函数 | 检查 `React` 按钮是否渲染正确 |
+| 单元测试 | 测试单个组件或函数 | 检查 `React` 按钮是否渲染正确 |
 | 集成测试 | 测试不同组件之间如何交互 | 确保表单正确提交数据 |
 | 端到端 (E2E) 测试 | 模拟真实用户交互 | 在浏览器中检查登录和导航 |
 | 回归测试 | 确保新更新不会破坏现有功能 | 在新代码更改后运行旧测试用例 |
@@ -5245,10 +5324,7 @@ GUI 测试确保图形用户界面 (GUI) 按照预期工作，提供无缝无错
 | 特性 | Jest | React Testing Library |
 | :--- | :--- | :--- |
 | 目的 | `JavaScript` 测试框架 | UI 组件测试 |
-| 快速执行 | | |
-| Mock 支持 | | |
-| 与 React 兼容 | | |
-| 关注点 | 单元测试和集成测试 | 测试 UI 行为 |
+| 优势 | 快速执行、Mock 支持、与 React 兼容 | 关注用户行为而非实现细节 |
 
 `Jest` 提供了测试框架，而 `React Testing Library` 帮助高效测试 `React` 组件。
 
@@ -5316,6 +5392,7 @@ import React, { useState } from "react";
 
 function Form() {
   const [name, setName] = useState("");
+
   return (
     <form>
       <input
@@ -5346,6 +5423,8 @@ test("updates input value on change", () => {
 });
 ```
 
+
+
 确保输入字段更新正确。
 
 ## 12.3 调试 JavaScript 和 React GUI 问题
@@ -5370,10 +5449,6 @@ test("updates input value on change", () => {
 | API 数据未显示 | 获取问题或状态更新错误 | 检查 API 响应和状态更新 |
 | DOM 元素未更新 | `React` 状态更新不正确 | 确保正确使用 `useState()` 和 `useEffect()` |
 
-
-
-
-
 ### 3. 使用 `console.log()` 调试 JavaScript
 
 调试 JavaScript 最简单的方法是使用：
@@ -5384,7 +5459,7 @@ console.log("Debugging:", variable);
 
 使用 Chrome DevTools 中的断点进行更深层次分析。
 
-* * *
+---
 
 ### 4. 使用 React DevTools 调试 React
 
@@ -5394,7 +5469,7 @@ console.log("Debugging:", variable);
 
 使用 `React DevTools` 跟踪状态变化。
 
-* * *
+---
 
 ### 5. 修复常见的 React 错误
 
@@ -5404,10 +5479,11 @@ console.log("Debugging:", variable);
 
 ```jsx
 const [count, setCount] = useState(0);
+
 setCount(count + 1); // 始终使用 setter 函数
 ```
 
-* * *
+---
 
 #### 错误："Cannot read property of undefined"
 原因：缺少 props 或对象引用错误。
@@ -5417,7 +5493,7 @@ setCount(count + 1); // 始终使用 setter 函数
 console.log(user?.name); // 防止 "undefined" 错误
 ```
 
-* * *
+---
 
 #### 错误："Too many re-renders"
 原因：状态更新中出现无限循环。
@@ -5429,9 +5505,9 @@ useEffect(() => {
 }, []); // 空数组防止无限重新渲染
 ```
 
-● GUI 测试确保应用程序无 bug 且流畅。
-● `Jest` 和 `React Testing Library` 提供了稳健的单元测试。
-● Chrome DevTools 和 `React DevTools` 等调试工具有助于解决 UI 问题。
+- GUI 测试确保应用程序无 bug 且流畅。
+- `Jest` 和 `React Testing Library` 提供了稳健的单元测试。
+- Chrome DevTools 和 `React DevTools` 等调试工具有助于解决 UI 问题。
 
 通过编写测试和进行有效的调试，开发者可以创建高质量、稳定且可靠的 GUI 应用。
 
@@ -5442,10 +5518,10 @@ useEffect(() => {
 自动化测试确保了 UI 功能验证的一致性、可靠性和可扩展性。与手动测试不同，自动化有助于在多个浏览器和设备上更快速、更高效地测试复杂场景。
 
 ### 自动化 GUI 测试的优势：
-● 通过自动运行测试来节省时间。
-● 通过消除人为错误提高准确性。
-● 通过在不同环境中测试确保跨浏览器兼容性。
-● 支持更新后进行回归测试。
+- 通过自动运行测试来节省时间。
+- 通过消除人为错误提高准确性。
+- 通过在不同环境中测试确保跨浏览器兼容性。
+- 支持更新后进行回归测试。
 
 ### 比较：Selenium vs. Cypress
 
@@ -5459,23 +5535,24 @@ useEffect(() => {
 
 使用 `Selenium` 进行全自动化和多语言支持。使用 `Cypress` 进行快速执行的前端测试。
 
-* * *
+---
 
 ### 1. 使用 Selenium 进行自动化测试
 
-### 安装 Selenium
+#### 安装 Selenium
 `Selenium` 需要 `WebDriver` 来控制浏览器。
 
-#### 安装 Selenium 和 WebDriver
+##### 安装 Selenium 和 WebDriver
 ```sh
 pip install selenium  # Python
+
 npm install selenium-webdriver  # Node.js
 ```
 下载 `WebDriver`（例如，用于 Chrome 的 `ChromeDriver`）。
 
-* * *
+---
 
-### 在 Python 中编写基础的 Selenium 测试
+#### 在 Python 中编写基础的 Selenium 测试
 
 ```python
 from selenium import webdriver
@@ -5496,12 +5573,13 @@ driver.quit()
 ```
 自动化网站导航和交互。
 
-* * *
+---
 
-### JavaScript (Node.js) 中的 Selenium
+#### JavaScript (Node.js) 中的 Selenium
 
 ```javascript
 const { Builder, By } = require("selenium-webdriver");
+
 (async function example() {
   let driver = await new Builder().forBrowser("chrome").build();
   await driver.get("https://example.com");
@@ -5512,28 +5590,28 @@ const { Builder, By } = require("selenium-webdriver");
 ```
 支持跨多种编程语言工作。
 
-* * *
+---
 
 ### 2. 使用 Cypress 进行自动化测试
 
-### 安装 Cypress
+#### 安装 Cypress
 `Cypress` 是一个基于 JavaScript 的端端测试框架。
 
-#### 安装 Cypress
+##### 安装 Cypress
 ```sh
 npm install cypress --save-dev
 ```
-运行 `Cypress` UI 以更于管理测试：
+运行 `Cypress` UI 以便于管理测试：
 
 ```sh
 npx cypress open
 ```
 
-* * *
+---
 
-### 编写 Cypress 测试
+#### 编写 Cypress 测试
 
-#### 示例：测试登录页面
+##### 示例：测试登录页面
 
 ```javascript
 describe("Login Test", () => {
@@ -5548,7 +5626,7 @@ describe("Login Test", () => {
 ```
 在真实浏览器中测试用户登录功能。
 
-* * *
+---
 
 ### Cypress vs. Selenium：该用哪一个？
 
@@ -5559,7 +5637,7 @@ describe("Login Test", () => {
 | 跨浏览器测试（Chrome, Firefox, Edge, Safari） | Selenium |
 | 同时测试 API + UI 交互 | Cypress |
 
-* * *
+---
 
 ## 12.5 GUI 项目的持续集成与部署
 
@@ -5575,32 +5653,34 @@ describe("Login Test", () => {
 3. 部署 – 推送到生产环境或测试环境。
 
 流行的 CI/CD 工具：
-● GitHub Actions
-● Jenkins
-● GitLab CI/CD
-● CircleCI
+- GitHub Actions
+- Jenkins
+- GitLab CI/CD
+- CircleCI
 
-* * *
+---
 
 ### 3. 使用 GitHub Actions 设置 CI/CD
 GitHub Actions 自动化测试和部署。
 
-###  1 ：创建 `.github/workflows/ci.yml` 文件
+#### 步骤 1：创建 `.github/workflows/ci.yml` 文件
 
 ```yaml
 name: CI Pipeline
+
 on:
   push:
     branches:
       - main
+
 jobs:
   test:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        use: actions/checkout@v3
+        uses: actions/checkout@v3
       - name: Install Node.js
-        use: actions/setup-node@v3
+        uses: actions/setup-node@v3
         with:
           node-version: 16
       - name: Install Dependencies
@@ -5611,7 +5691,7 @@ jobs:
 每当代码推送到 main 分支时运行测试。
 
 ### 4. 使用 GitHub Actions 部署 React GUI
-### 步骤 1：在 `ci.yml` 中添加部署任务
+#### 步骤 1：在 `ci.yml` 中添加部署任务
 
 ```yaml
 deploy:
@@ -5619,27 +5699,29 @@ deploy:
   runs-on: ubuntu-latest
   steps:
     - name: Deploy to Production
-      use: peaceiris/actions-gh-pages@v3
+      uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./build
 ```
 在测试通过后部署应用。
 
-* * *
+---
 
 ### 5. 将 Cypress 集成到 CI/CD
-### 将 Cypress 添加到 GitHub Actions
+#### 将 Cypress 添加到 GitHub Actions
 
 ```yaml
 name: Cypress Tests
+
 on: [push, pull_request]
+
 jobs:
   cypress-run:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        use: actions/checkout@v3
+        uses: actions/checkout@v3
       - name: Install Dependencies
         run: npm install
       - name: Run Cypress Tests
@@ -5650,20 +5732,18 @@ jobs:
 ### 6. 使用 Vercel 部署 React GUI
 `Vercel` 自动化 React 和 Next.js 的部署。
 
-### 步骤 1：安装 Vercel CLI
+#### 步骤 1：安装 Vercel CLI
 ```sh
 npm install -g vercel
 ```
 
-### 步骤 2：部署项目
+#### 步骤 2：部署项目
 ```sh
 vercel --prod
 ```
 将项目立即部署到线上 URL。
 
-
-
-
+---
 
 在构建仪表板（Dashboard）之前，请考虑以下因素：
 
@@ -5874,6 +5954,7 @@ import { TextField } from "@mui/material";
 
 function FilterComponent({ onFilter }) {
   const [date, setDate] = useState("");
+
   return (
     <TextField
       type="date"
@@ -5910,10 +5991,13 @@ const data = [
 
 function TableComponent() {
   const [order, setOrder] = useState("asc");
+
   const handleSort = () => {
     setOrder(order === "asc" ? "desc" : "asc");
   };
+
   const sortedData = [...data].sort((a, b) => (order === "asc" ? a.sales - b.sales : b.sales - a.sales));
+
   return (
     <Table>
       <TableHead>
@@ -5948,8 +6032,7 @@ export default TableComponent;
 
 通过集成这些功能，开发者可以在 `React` 中创建功能性强、交互性高且视觉吸引的仪表板。
 
-
-
+---
 
 ```jsx
 <Drawer variant="persistent" open={open}>
@@ -5957,10 +6040,8 @@ export default TableComponent;
 </Drawer>
 </>
 );
-
 export default Sidebar;
 ```
-
 在不增加全局复杂性的情况下管理 UI 状态。
 
 ## 3. 使用 Context API 管理全局看板状态
@@ -5979,6 +6060,7 @@ export const DashboardContext = createContext();
 export function DashboardProvider({ children }) {
   const [theme, setTheme] = useState("light");
   const [filters, setFilters] = useState({ dateRange: null, category: "all" });
+
   return (
     <DashboardContext.Provider value={{ theme, setTheme, filters, setFilters }}>
       {children}
@@ -5997,6 +6079,7 @@ import { DashboardContext } from "../DashboardContext";
 
 function FilterComponent() {
   const { filters, setFilters } = useContext(DashboardContext);
+
   return (
     <select value={filters.category} onChange={(e) => setFilters({ ...filters, category: e.target.value })}>
       <option value="all">All</option>
@@ -6008,7 +6091,6 @@ function FilterComponent() {
 
 export default FilterComponent;
 ```
-
 在无需层层传递（prop drilling）的情况下管理整个看板设置。
 
 ## 4. 使用 Redux 构建大型看板
@@ -6027,6 +6109,7 @@ npm install @reduxjs/toolkit react-redux
 
 ```jsx
 import { configureStore, createSlice } from "@reduxjs/toolkit";
+
 const dashboardSlice = createSlice({
   name: "dashboard",
   initialState: { filters: { category: "all", date: null } },
@@ -6036,6 +6119,7 @@ const dashboardSlice = createSlice({
     },
   },
 });
+
 export const { updateFilters } = dashboardSlice.actions;
 export default configureStore({ reducer: { dashboard: dashboardSlice.reducer } });
 ```
@@ -6047,9 +6131,11 @@ export default configureStore({ reducer: { dashboard: dashboardSlice.reducer } }
 ```jsx
 import { useSelector, useDispatch } from "react-redux";
 import { updateFilters } from "../store";
+
 function Dashboard() {
   const filters = useSelector((state) => state.dashboard.filters);
   const dispatch = useDispatch();
+
   return (
     <div>
       <select onChange={(e) => dispatch(updateFilters({ ...filters, category: e.target.value }))}>
@@ -6060,29 +6146,31 @@ function Dashboard() {
   );
 }
 ```
-
 针对具有多个数据源的大型看板进行了优化。
 
 ## 5. 使用 WebSockets 实时数据更新
 
-对于对于实时更新（例如：股票价格、用户活动追踪、IoT 数据），`WebSockets` 是必不可少的。
+对于实时更新（例如：股票价格、用户活动追踪、IoT 数据），`WebSockets` 是必不可少的。
 
 #### 示例：使用 WebSockets 进行实时数据更新
 
 ```jsx
 import { useState, useEffect } from "react";
+
 function LiveData() {
   const [data, setData] = useState(null);
+
   useEffect(() => {
     const socket = new WebSocket("wss://example.com/realtime");
     socket.onmessage = (event) => setData(JSON.parse(event.data));
     return () => socket.close();
   }, []);
+
   return <p>Live Data: {data ? data.value : "Loading..."}</p>;
 }
+
 export default LiveData;
 ```
-
 确保实时响应性。
 
 # 13.5 部署看板
@@ -6109,7 +6197,6 @@ npm install -g vercel
 ```sh
 vercel --prod
 ```
-
 立即提供在线看板 URL。
 
 ## 3. 部署到 Netlify
@@ -6133,7 +6220,6 @@ npm run build
 ```sh
 netlify deploy --prod
 ```
-
 简单的拖拽式部署。
 
 ## 4. 使用 GitHub Actions 部署
@@ -6146,10 +6232,12 @@ netlify deploy --prod
 
 ```yaml
 name: Deploy React Dashboard
+
 on:
   push:
     branches:
       - main
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -6163,7 +6251,6 @@ jobs:
       - name: Deploy to Vercel
         run: vercel --prod --token ${{ secrets.VERCEL_TOKEN }}
 ```
-
 在每次推送到 main 分支时自动部署。
 
 ## 5. 使用 Docker 部署可扩展应用
@@ -6186,7 +6273,6 @@ CMD ["npx", "serve", "-s", "build"]
 docker build -t react-dashboard .
 docker run -p 3000:3000 react-dashboard
 ```
-
 确保跨云环境的部署一致性。
 
 - 高效的状态管理（React State、`Context API`, `Redux`）防止了不必要的渲染。
@@ -6233,7 +6319,6 @@ npx create-react-app react-chat-app
 cd react-chat-app
 npm install socket.io-client @mui/material @emotion/react @emotion/styled
 ```
-
 安装 WebSocket 客户端和用于样式设置的 Material UI。
 
 ### 2. 创建聊天 UI 布局
@@ -6244,6 +6329,7 @@ npm install socket.io-client @mui/material @emotion/react @emotion/styled
 import React from "react";
 import ChatWindow from "./components/ChatWindow";
 import { Box } from "@mui/material";
+
 function App() {
   return (
     <Box display="flex" justifyContent="center" alignItems="center" height="100vh">
@@ -6251,9 +6337,9 @@ function App() {
     </Box>
   );
 }
+
 export default App;
 ```
-
 将聊天窗口在页面上居中。
 
 ### 3. 实现聊天窗口组件
@@ -6263,47 +6349,40 @@ export default App;
 ```jsx
 import React, { useState } from "react";
 import { Box, TextField, Button, List, ListItem, ListItemText } from "@mui/material";
+
 function ChatWindow() {
   const [messages, setMessages] = useState([]);
   const [message, setMessage] = useState("");
+
   const sendMessage = () => {
     if (message.trim() !== "") {
       setMessages([...messages, { text: message, sender: "You" }]);
+      setMessage("");
     }
-  }
-}
-```
+  };
 
-
-
-
-
-```javascript
-setMessage("");
-}
-
-};
-
-return (
-  <Box width="400px" height="500px" border="1px solid #ccc" borderRadius="8px" p={2} display="flex" flexDirection="column">
-    <List style={{ flex: 1, overflowY: "auto" }}>
-      {messages.map((msg, index) => (
-        <ListItem key={index}>
-          <ListItemText primary={msg.text} secondary={msg.sender} />
-        </ListItem>
-      ))}
-    </List>
-    <Box display="flex">
-      <TextField fullWidth value={message} onChange={(e) => setMessage(e.target.value)} placeholder="Type a message..." />
-      <Button onClick={sendMessage} variant="contained">Send</Button>
+  return (
+    <Box width="400px" height="500px" border="1px solid #ccc" borderRadius="8px" p={2} display="flex" flexDirection="column">
+      <List style={{ flex: 1, overflowY: "auto" }}>
+        {messages.map((msg, index) => (
+          <ListItem key={index}>
+            <ListItemText primary={msg.text} secondary={msg.sender} />
+          </ListItem>
+        ))}
+      </List>
+      <Box display="flex">
+        <TextField fullWidth value={message} onChange={(e) => setMessage(e.target.value)} placeholder="Type a message..." />
+        <Button onClick={sendMessage} variant="contained">Send</Button>
+      </Box>
     </Box>
-  </Box>
+  );
 }
 
 export default ChatWindow;
+```
 显示消息并允许输入。
 
-***
+---
 
 ## 14.2 设置实时消息 WebSocket
 
@@ -6316,7 +6395,7 @@ export default ChatWindow;
 - 高效的数据传输（减少带宽消耗）。
 - 支持多用户聊天应用。
 
-***
+---
 
 ### 2. 使用 Node.js 设置 WebSocket 服务器
 
@@ -6358,10 +6437,9 @@ io.on("connection", (socket) => {
 
 server.listen(5000, () => console.log("Server running on port 5000"));
 ```
-
 消息广播。
 
-***
+---
 
 ### 3. 在 React 中连接 WebSocket
 
@@ -6423,10 +6501,9 @@ function ChatWindow() {
 
 export default ChatWindow;
 ```
-
 现在消息可以实时发送和接收！
 
-***
+---
 
 ## 14.3 实现用户认证与状态检测
 
@@ -6471,10 +6548,9 @@ function Login({ setUser }) {
 }
 export default Login;
 ```
-
 现在用户可以使用 Google 登录了。
 
-***
+---
 
 ### 2. 使用 WebSocket 检测在线用户
 
@@ -6493,10 +6569,9 @@ io.on("connection", (socket) => {
   });
 });
 ```
-
 现在应用可以跟踪在线用户！
 
-***
+---
 
 ## 14.4 使用 React Context 优化聊天性能
 
@@ -6508,7 +6583,6 @@ io.on("connection", (socket) => {
 - 认证和状态检测应该是可访问的。
 
 解决方案：使用 React Context
-
 - 提供全局状态管理，避免属性层层传递（prop drilling）。
 - 高效更新特定组件。
 - 通过隔离状态变化来减少重新渲染。
@@ -6556,7 +6630,6 @@ export function ChatProvider({ children }) {
   );
 }
 ```
-
 高效管理全局聊天状态。避免了不必要的属性传递。
 
 ### 步骤 2：用 Chat Context 包裹 App
@@ -6580,22 +6653,15 @@ function App() {
 
 export default App;
 ```
-
 现在所有组件都可以通过 `ChatContext` 访问聊天状态。
 
 ### 步骤 3：在聊天窗口中使用 Context
 
 修改 `ChatWindow.js`:
 
-
-
-
-
-```javascript
+```jsx
 import React, { useContext, useState } from "react";
-
 import { ChatContext } from "../ChatContext";
-
 import { Box, TextField, Button, List, ListItem, ListItemText } from "@mui/material";
 
 function ChatWindow() {
@@ -6628,7 +6694,6 @@ function ChatWindow() {
 
 export default ChatWindow;
 ```
-
 使用 context 管理消息，避免了属性层传递（prop drilling）。
 
 ## 使用 `useMemo()` 和 `useCallback()` 优化性能
@@ -6640,7 +6705,6 @@ export default ChatWindow;
 ```jsx
 const memoizedMessages = useMemo(() => messages, [messages]);
 ```
-
 确保 `messages` 列表仅在 `messages` 变化时重新渲染。
 
 ### 2. 使用 `useCallback()` 优化发送函数
@@ -6652,7 +6716,6 @@ const sendMessage = useCallback((message) => {
   setMessages((prev) => [...prev, msgData]);
 }, [user]);
 ```
-
 防止函数在每次渲染时都重新创建。
 
 ## 14.5 聊天应用的托管与部署
@@ -6677,7 +6740,6 @@ npm install -g vercel
 ```sh
 vercel --prod
 ```
-
 Vercel 会立即提供实时聊天应用的 URL。
 
 ## 3. 在 Heroku 上部署 WebSocket 服务器
@@ -6701,7 +6763,6 @@ heroku create react-chat-server
 ```sh
 git push heroku main
 ```
-
 现在 WebSocket 服务器已在 Heroku 上上线。
 
 ## 4. 使用 Docker 部署以实现可扩展性
@@ -6724,7 +6785,6 @@ CMD ["node", "server.js"]
 docker build -t chat-app .
 docker run -p 5000:5000 chat-app
 ```
-
 确保跨云提供商的平滑部署。
 
 ## 5. 使用 Firebase 部署可扩展的聊天应用
@@ -6751,7 +6811,6 @@ firebase init hosting
 ```sh
 firebase deploy
 ```
-
 Firebase 自动化了部署和数据库扩展。
 
 ## 6. 使用 GitHub Actions 自动化部署
@@ -6777,7 +6836,6 @@ jobs:
       - name: Deploy to Vercel
         run: vercel --prod --token ${{ secrets.VERCEL_TOKEN }}
 ```
-
 每次向 `main` 分支推送时都会自动部署。
 
 - `React Context API` 优化了聊天性能，减少了不必要的重新渲染。
@@ -6821,7 +6879,6 @@ npx create-react-app react-ecommerce
 cd react-ecommerce
 npm install @mui/material @emotion/react @emotion/styled
 ```
-
 `Material UI` 将帮助设计交互式 UI。
 
 ### 3. 创建产品卡片组件
@@ -6852,7 +6909,6 @@ function ProductCard({ product, onAddToCart }) {
 
 export default ProductCard;
 ```
-
 产品卡片包含图片、价格、评分、数量选择器和购物车按钮。
 
 ### 4. 显示多个产品
@@ -6883,7 +6939,6 @@ function ProductList({ onAddToCart }) {
 
 export default ProductList;
 ```
-
 动态显示多个产品卡片。
 
 ## 15.2 实现加入购物车功能
@@ -6903,13 +6958,7 @@ export default ProductList;
 ```jsx
 import React from "react";
 import { Box, List, ListItem, ListItemText, Button, Typography } from "@mui/material";
-```
 
-
-
-
-
-```javascript
 function Cart({ cartItems, onRemoveFromCart }) {
   const total = cartItems.reduce((acc, item) => acc + item.price * item.quantity, 0);
 
@@ -6979,7 +7028,7 @@ export default App;
 
 为了具有更好的可扩展性，我们将购物车状态移动到 Context API。
 
-##### 步骤 1：创建购物车 Context
+#### 步骤 1：创建购物车 Context
 
 `CartContext.js`
 
@@ -7085,6 +7134,8 @@ npm install @stripe/react-stripe-js @stripe/stripe-js
 
 `CheckoutForm.js`
 
+
+
 ```jsx
 import React, { useState } from "react";
 import { CardElement, useStripe, useElements } from "@stripe/react-stripe-js";
@@ -7125,6 +7176,7 @@ function CheckoutForm({ totalAmount }) {
 
 export default CheckoutForm;
 ```
+
 使用 `Stripe` 处理支付提交。
 
 ### 步骤 4：用 Stripe Provider 包裹结算页面
@@ -7149,17 +7201,19 @@ function App() {
 
 export default App;
 ```
+
 现在结算页面已连接到 `Stripe`。
 
 ## 5. 在后端处理支付流程
 
-Stripe 支付需要后端服务器来安全地处理交易。
+`Stripe` 支付需要后端服务器来安全地处理交易。
 
 ### 步骤 1：在后端安装 Stripe
 
 ```sh
 npm install stripe cors dotenv
 ```
+
 后端将处理实际的支付处理。
 
 ### 步骤 2：创建 Stripe 支付路由
@@ -7191,6 +7245,7 @@ app.post("/create-payment-intent", async (req, res) => {
 
 app.listen(5000, () => console.log("Server running on port 5000"));
 ```
+
 安全地处理支付。
 
 ### 6. 连接前端到后端
@@ -7202,10 +7257,6 @@ const handleSubmit = async (event) => {
   event.preventDefault();
   setLoading(true);
 ```
-
-
-
-
 
 ```javascript
 const response = await fetch("http://localhost:5000/create-payment-intent", {
@@ -7226,7 +7277,7 @@ setLoading(false);
 };
 ```
 
-现在，前端已通过 Stripe API 安全地处理了支付！
+现在，前端已通过 `Stripe` API 安全地处理了支付！
 
 ***
 
@@ -7237,6 +7288,7 @@ setLoading(false);
 现代用户在各种设备上购物。响应式布局确保了无缝的体验。
 
 移动端 UX 的关键因素：
+
 - 使用响应式网格系统（Material UI 的 `Grid` 或 `CSS Flexbox`）。
 - 优化图像（使用 `WebP` 格式以减小文件大小）。
 - 确保按钮触控友好（足够大以便于点击）。
@@ -7288,6 +7340,7 @@ return (
   </Box>
 );
 ```
+
 移动端优化的结账确保了更好的用户体验。
 
 ***
@@ -7300,7 +7353,7 @@ return (
 
 ***
 
-- Stripe API 集成实现了安全交易。
+- `Stripe` API 集成实现了安全交易。
 - 后端安全地处理支付意图。
 - 响应式设计确保了跨设备的流畅体验。
 - 移动端友好的结账提高了转化率。
@@ -7318,6 +7371,7 @@ return (
 在部署之前，必须针对速度、安全和效率对 GUI 应用进行优化。
 
 生产环境就绪检查清单：
+
 - 最小化 JavaScript 包大小（摇树优化、 懒加载）。
 - 启用缓存和压缩以加快加载。
 - 保护应用程序（HTTPS、环境变量、CORS）。
@@ -7383,6 +7437,7 @@ app.use(express.static("build", { maxAge: "1y" }));
 ```jsx
 navigator.serviceWorker.register("/service-worker.js");
 ```
+
 通过提供缓存资源缩短加载时间。
 
 ***
@@ -7395,6 +7450,7 @@ navigator.serviceWorker.register("/service-worker.js");
 const cors = require("cors");
 app.use(cors({ origin: "https://yourfrontend.com" }));
 ```
+
 防止获取 API 时出现安全问题。
 
 ***
@@ -7406,6 +7462,7 @@ app.use(cors({ origin: "https://yourfrontend.com" }));
 适用于：`Next.js` 和 `React` 应用（无服务器部署）。
 
 特性：
+
 - 自动集成 GitHub（推送到代码时部署）。
 - 快速的全球 CDN（为了性能）。
 
@@ -7420,6 +7477,7 @@ npm install -g vercel
 ```sh
 vercel --prod
 ```
+
 自动生成生产环境 URL。
 
 ***
@@ -7429,6 +7487,7 @@ vercel --prod
 适用于：静态网站和 JAMstack 应用。
 
 特性：
+
 - 拖放式部署。
 - 包含自定义域名和 SSL。
 
@@ -7443,6 +7502,7 @@ npm install -g netlify-cli
 ```sh
 netlify deploy --prod
 ```
+
 简单、快速的部署。
 
 ***
@@ -7452,6 +7512,7 @@ netlify deploy --prod
 适用于：具有扩展性的高流量应用。
 
 特性：
+
 - 通过 `CloudFront` 使用全球 CDN。
 - 按需付费。
 
@@ -7467,6 +7528,7 @@ aws s3 sync build s3://your-bucket-name
 ```sh
 aws cloudfront create-invalidation --distribution-id <ID> --paths "/*"
 ```
+
 确保高可用性和快速的性能。
 
 ***
@@ -7476,6 +7538,7 @@ aws cloudfront create-invalidation --distribution-id <ID> --paths "/*"
 适用于：需要自定义后端和数据库的全栈应用。
 
 特性：
+
 - 支持 Docker 部署。
 - 用于扩展的托管 Kubernetes。
 
@@ -7490,6 +7553,7 @@ snap install doctl
 ```sh
 doctl apps create --spec app.yaml
 ```
+
 适用于前端和后端托管。
 
 ***
@@ -7501,6 +7565,7 @@ doctl apps create --spec app.yaml
 `Webpack` 为生产环境打包 JavaScript、CSS 和资源。
 
 通过以下方式优化性能：
+
 - 最小化 JavaScript 文件。
 - 移除未使用代码（摇树优化）。
 - 懒加载组件以减少初始加载。
@@ -7528,6 +7593,7 @@ module.exports = {
   },
 };
 ```
+
 减小 JavaScript 和 CSS 体积以加快加载。
 
 ***
@@ -7536,17 +7602,13 @@ module.exports = {
 
 `Babel` 将现代 JavaScript 转换为旧版本以实现兼容性。
 
-
-
-
-
-### 第 1 ：安装 Babel
+### 步骤 1：安装 Babel
 
 ```sh
 npm install @babel/core @babel/preset-env babel-loader --save-dev
 ```
 
-### 第 2 ：在 Webpack 中配置 Babel
+### 步骤 2：在 Webpack 中配置 Babel
 
 修改 `webpack.config.js`：
 
@@ -7568,6 +7630,7 @@ module.exports = {
   },
 };
 ```
+
 确保兼容旧浏览器。
 
 ### 4. 懒加载加快页面加载
@@ -7588,11 +7651,17 @@ function App() {
 }
 export default App;
 ```
+
 通过仅在需要时加载组件来提高性能。
 
 ## 最终生产环境优化清单
 
-启用 gzip 压缩（`npm install compression`）。使用 CDN 托管资源（`CloudFront`、`Cloudflare` 等）。懒加载非关键组件（`React.lazy()`）。优化 Webpack 包大小（`tree shaking`）。压缩 JavaScript 和 CSS（`TerserPlugin`、`CssMinimizerPlugin`）。从 CDN 提供静态资源（`AWS S3` + `CloudFront`）。
+- 启用 gzip 压缩（`npm install compression`）。
+- 使用 CDN 托管资源（`CloudFront`、`Cloudflare` 等）。
+- 懒加载非关键组件（`React.lazy()`）。
+- 优化 Webpack 包大小（`tree shaking`）。
+- 压缩 JavaScript 和 CSS（`TerserPlugin`、`CssMinimizerPlugin`）。
+- 从 CDN 提供静态资源（`AWS S3` + `CloudFront`）。
 
 - `Vercel`、`Netlify`、`AWS` 和 `DigitalOcean` 根据项目需求提供不同的托管选项。
 - `Webpack` 和 `Babel` 优化 JavaScript 性能和兼容性。
@@ -7608,6 +7677,7 @@ export default App;
 持续集成 (CI) 和持续部署 (CD) 自动化了 GUI 应用的构建、测试和部署过程。CI/CD 流水线确保新的代码更改经过彻底测试，并且在无需人工干预的情况下自动部署。
 
 GUI 项目使用 CI/CD 的优势：
+
 - 自动化测试和部署。
 - 减少发布过程中的人为错误。
 - 确保更新快速且可靠。
@@ -7633,9 +7703,9 @@ CI/CD 流水线通常包含以下步骤：
 
 ## 2. 使用 GitHub Actions 设置 CI/CD 流水线
 
-### 第 1 步：添加 GitHub Workflow
+### 步骤 1：添加 GitHub Workflow
 
-在项目中项目中创建 `.github/workflows` 文件夹并添加 `ci-cd.yml`：
+在项目中创建 `.github/workflows` 文件夹并添加 `ci-cd.yml`：
 
 ```yaml
 name: Deploy GUI App
@@ -7658,11 +7728,12 @@ jobs:
         - name: Deploy to Vercel
           run: vercel --prod --token ${{ secrets.VERCEL_TOKEN }}
 ```
+
 当推送到 `main` 分支时自动部署更改。
 
 ## 3. 在 CI/CD 中运行 UI 测试
 
-使用 `Cypress` 进行 UI 测试。修改工作流以包含 `Cypress` 端端测试：
+使用 `Cypress` 进行 UI 测试。修改工作流以包含 `Cypress` 端到端测试：
 
 ```yaml
 - name: Run Cypress Tests
@@ -7671,6 +7742,7 @@ jobs:
     start: npm start
     wait-on: "http://localhost:3000"
 ```
+
 确保 GUI 组件在部署前功能正常。
 
 ## 4. 使用 GitHub Actions 部署到 AWS
@@ -7683,6 +7755,7 @@ jobs:
     aws s3 sync build/ s3://your-bucket-name
     aws cloudfront create-invalidation --distribution-id <CLOUDFRONT_ID> --paths "/*"
 ```
+
 针对高流量应用优化。
 
 ## 5. 回滚失败的部署
@@ -7700,19 +7773,21 @@ vercel rollback
 ```sh
 aws s3 sync previous-build/ s3://your-bucket-name
 ```
+
 确保生产环境的稳定性。
 
 # 16.5 GUI 应用的维护与扩展
 
 ## 1. GUI 应用维护的最佳实践
 
-### 保持依赖更新
+### 1.1 保持依赖更新
 
 使用 `Dependabot` 自动化依赖更新。
 
 ### 1.2 监控应用性能
 
 使用监控工具：
+
 - `Google Lighthouse` (性能审计)。
 - `New Relic` (实时监控)。
 - `Sentry` (错误跟踪)。
@@ -7726,15 +7801,18 @@ Sentry.init({
   integrations: [new Sentry.BrowserTracing()],
 });
 ```
+
 生产环境中记录错误。
 
-## 2.  GUI 应用
+## 2. 扩展 GUI 应用
 
 随着用户增长，会出现性能瓶颈。
 
 ### 2.1 针对高流量优化
 
-使用 `CDN` 缓存静态资源。懒加载组件减少初始加载。使用服务器渲染 (`SSR`) 加快加载。
+- 使用 `CDN` 缓存静态资源。
+- 懒加载组件减少初始加载。
+- 使用服务器渲染 (`SSR`) 加快加载。
 
 #### 示例：启用懒加载
 
@@ -7750,6 +7828,7 @@ function App() {
 }
 export default App;
 ```
+
 减少初始加载时间。
 
 ### 2.2 使用负载均衡器扩展
@@ -7762,7 +7841,7 @@ export default App;
 aws elb create-load-balancer --load-balancer-name MyAppLB --listeners Protocol=HTTP,LoadBalancerPort=80,InstanceProtocol=HTTP,InstancePort=3000
 ```
 
-### 2.3 针对大规模规模应用使用微服务
+### 2.3 针对大规模应用使用微服务
 
 不要使用单体前端，将 UI 组件拆分为独立的微服务。
 
@@ -7787,6 +7866,7 @@ npm install -g firebase-tools
 firebase init hosting
 firebase deploy
 ```
+
 将 GUI 应用部署到全局 CDN。
 
 ### 3. 自动化安全更新
@@ -7805,6 +7885,7 @@ npm audit fix
 - name: Run Security Audit
   run: npm audit --production
 ```
+
 确保依赖项安全。
 
 ### 4. 持续性能测试
@@ -7819,12 +7900,13 @@ npm audit fix
 - name: Run Lighthouse Audit
   run: npx lighthouse-ci http://localhost:3000 --preset=desktop
 ```
+
 确保 GUI 应用保持快速且响应迅速。
 
-
-
-
-CI/CD 流水线自动化测试和部署。扩展策略（如 `CDNs`、负载均衡和微服务）可以提高性能。监控工具确保应用程序的稳定性。安全审计保护应用程序免受漏洞影响。
+- CI/CD 流水线自动化测试和部署。
+- 扩展策略（如 `CDNs`、负载均衡和微服务）可以提高性能。
+- 监控工具确保应用程序的稳定性。
+- 安全审计保护应用程序免受漏洞影响。
 
 通过实施这些策略，你可以确保你的 `GUI` 应用程序准备就绪、可扩展，并且对于不断增长的用户群体安全性。
 
@@ -7842,17 +7924,14 @@ CI/CD 流水线自动化测试和部署。扩展策略（如 `CDNs`、负载均�
 
 关键方面：
 
-● 减少阴影和渐变的扁平化设计。
-
-● 关注字体和间距。
-
-● 无缝深色模式与自适应主题。
+- 减少阴影和渐变的扁平化设计。
+- 关注字体和间距。
+- 无缝深色模式与自适应主题。
 
 示例：Google 的 `Material Design` 和 Apple 的 `Flat UI`
 
-● `Material UI`：使用分层卡片、微妙的阴影。
-
-● Apple 的 `Flat UI`：优先考虑清晰度、间距和色彩对比。
+- `Material UI`：使用分层卡片、微妙的阴影。
+- Apple 的 `Flat UI`：优先考虑清晰度、间距和色彩对比。
 
 ***
 
@@ -7862,11 +7941,9 @@ CI/CD 流水线自动化测试和部署。扩展策略（如 `CDNs`、负载均�
 
 示例：
 
-● 按钮悬停效果
-
-● 加载动画
-
-● 页面过渡
+- 按钮悬停效果
+- 加载动画
+- 页面过渡
 
 #### 示例：在 React 中添加微交互
 
@@ -7890,11 +7967,9 @@ function AnimatedButton() {
 
 `VUI` 在 `GUI` 中的应用：
 
-● 应用中的语音控制导航。
-
-● AI 驱动的语音搜索。
-
-● 无手用户交互。
+- 应用中的语音控制导航。
+- AI 驱动的语音搜索。
+- 无手用户交互。
 
 #### 示例：在 JavaScript 中添加语音识别
 
@@ -7914,11 +7989,9 @@ recognition.start();
 
 深色模式的好处：
 
-● 减少低光环境下的眼睛疲劳。
-
-● 延长 OLED 的电池寿命。
-
-● 增强 UI 美学。
+- 减少低光环境下的眼睛疲劳。
+- 延长 OLED 的电池寿命。
+- 增强 UI 美学。
 
 #### 示例：在 React 中启用深色模式
 
@@ -7934,7 +8007,9 @@ document.body.className = theme;
 
 现代 `GUI` 必须在各种设备上保持响应，包括：
 
-Web (`React`, `Angular`, `Vue`) 移动端 (`React Native`, `Flutter`) 可穿戴设备与智能电视
+- Web (`React`, `Angular`, `Vue`)
+- 移动端 (`React Native`, `Flutter`)
+- 可穿戴设备与智能电视
 
 #### 示例：使用 Material UI 进行响应式设计
 
@@ -7954,11 +8029,9 @@ return <div style={{ width: isMobile ? "100%" : "400px" }}>Content</div>;
 
 示例：
 
-● 电子商务推荐（`Amazon`、`Netflix`）。
-
-● 基于用户习惯的动态仪表板布局。
-
-● AI 驱动的智能助手。
+- 电子商务推荐（`Amazon`、`Netflix`）。
+- 基于用户习惯的动态仪表板布局。
+- AI 驱动的智能助手。
 
 #### 示例：使用 AI 进行个性化推荐
 
@@ -7975,9 +8048,8 @@ AI 预测用户偏好并据此定制 UI。
 
 示例：
 
-● 客户支持聊天机器人。
-
-● AI 驱动的入引导助手。
+- 客户支持聊天机器人。
+- AI 驱动的引导助手。
 
 #### 示例：实现基础 AI 聊天机器人
 
@@ -8028,11 +8100,9 @@ AR 将数字内容叠加在真实世界环境上。
 
 AR 在 `GUI` 中的应用：
 
-● 电子商务（试穿衣服、家具）。
-
-● 带有真实世界叠加的导航应用。
-
-● AI 驱动的搜索。
+- 电子商务（试穿衣服、家具）。
+- 带有真实世界叠加的导航应用。
+- AI 驱动的搜索。
 
 #### 示例：使用 WebXR 的 AR (JavaScript)
 
@@ -8050,9 +8120,8 @@ VR 将传统的 2D `GUI` 替换为完全沉浸式的 3D 环境。
 
 VR 在 `GUI` 中的应用：
 
-● 游戏、训练模拟。
-
-● 虚拟工作空间与协作工具。
+- 游戏、训练模拟。
+- 虚拟工作空间与协作工具。
 
 #### 示例：使用 React 360 的 VR UI
 
@@ -8076,9 +8145,8 @@ AppRegistry.registerComponent("VRDashboard", () => VRDashboard);
 
 示例：
 
-● Neuralink 的脑控光标。
-
-● 残障人士的辅助技术。
+- Neuralink 的脑控光标。
+- 残障人士的辅助技术。
 
 未来预测：10-20 年后，我们可能会拥有脑控 `GUI` 界面！
 
@@ -8090,35 +8158,27 @@ WebAssembly (`WASM`) 是一种低级二进制格式，能够在 Web 应用中实
 
 为什么 WebAssembly 对 GUI 开发非常重要
 
-● 高性能——对于复杂计算，比 JavaScript 快。
-
-● 在浏览器中运行——无需额外安装。
-
-● 与 JavaScript 交互性——可以在 Web 应用中与 JS 协作。
-
-● 开启新的用例——游戏、视频编辑、实时 3D 渲染等。
+- 高性能——对于复杂计算，比 JavaScript 快。
+- 在浏览器中运行——无需额外安装。
+- 与 JavaScript 交互性——可以在 Web 应用中与 JS 协作。
+- 开启新的用例——游戏、视频编辑、实时 3D 渲染等。
 
 ## 1. WebAssembly 如何在 JavaScript 应用中工作
 
 传统 JavaScript 与 WebAssembly
 
 | 特性 | JavaScript | WebAssembly |
-| :--- | --- | :--- |
-| 性能 | 解释执行，复杂计算较慢 | 编译执行，近原生速度 |
-
-
-
-
-| 内存管理 | 垃圾回收 | 手动内存管理 |
 | :--- | :--- | :--- |
+| 性能 | 解释执行，复杂计算较慢 | 编译执行，近原生速度 |
+| 内存管理 | 垃圾回收 | 手动内存管理 |
 | 语言支持 | 仅 JavaScript | C, C++, Rust, Go |
 | 使用场景 | Web UI、轻量级应用 | 游戏、3D、视频处理 |
 
-**最佳方案：** 使用 `JavaScript` 处理 交互，使用 `WASM` 处理密集型计算。
+**最佳方案：** 使用 `JavaScript` 处理交互，使用 `WASM` 处理密集型计算。
 
 ## 2. 在 JavaScript GUI 中使用 WebAssembly
 
-###  1 ：安装 WebAssembly 编译器
+### 步骤 1：安装 WebAssembly 编译器
 
 对于 Rust：
 
@@ -8132,7 +8192,7 @@ rustup target add wasm32-unknown-unknown
 emcc mycode.cpp -o mycode.wasm
 ```
 
-###  2 ：在 JavaScript 中加载 WebAssembly
+### 步骤 2：在 JavaScript 中加载 WebAssembly
 
 ```javascript
 fetch("mycode.wasm")
@@ -8147,7 +8207,7 @@ fetch("mycode.wasm")
 
 ## 3. 示例：在 JavaScript 中运行 WebAssembly 函数
 
-###  1 ：编写 Rust 代码
+### 步骤 1：编写 Rust 代码
 
 保存为 `math.rs`：
 
@@ -8164,7 +8224,7 @@ pub fn add(a: i32, b: i32) -> i32 {
 wasm-pack build --target web
 ```
 
-###  2 ：在 JavaScript 中 Go WASM
+### 步骤 2：在 JavaScript 中调用 WASM
 
 ```javascript
 import init, { add } from "./math_bg.wasm";
@@ -8178,14 +8238,17 @@ init().then(() => {
 ## 4. WebAssembly 在 GUI 中的真实应用场景
 
 ### 浏览器中的视频编辑
+
 - `Figma` 使用 `WebAssembly` 高效处理图像。
 - `Google Earth Web` 使用 `WASM` 进行实时 3D 渲染。
 
 ### 游戏与 3D 图形
+
 - `Unity WebGL` 允许使用 `WASM` 在浏览器中运行 AAA 级游戏。
 - `Babylon.js` 集成 `WebAssembly` 以实现高性能图形渲染。
 
 ### Web GUI 中的机器学习
+
 - `TensorFlow.js` + `WASM` 加速浏览器中的深度学习模型运行。
 
 ## 5. WebAssembly 在 JavaScript GUI 开发中的未来
@@ -8199,15 +8262,17 @@ init().then(() => {
 GUI 领域不断演变，开发者必须紧跟趋势。
 
 **未来 GUI 开发的关键技能：**
+
 1. AI 与机器学习集成
 2. 用于高性能 UI 的 WebAssembly
 3. AR/VR 与 3D UI 界面
 4. 基于语音和手势的交互
 5. 跨平台与自适应 UI 开发
 
-## 2. 学习 驱动的 GUI 框架
+## 2. 学习 AI 驱动的 GUI 框架
 
 值得关注的工具：
+
 - `OpenAI Codex` + `React` – AI 辅助 UI 生成。
 - `TensorFlow.js` – 用于动态 UI 行为的 AI 模型。
 - `Figma AI Plugins` – 自动生成 UI 组件。
@@ -8228,4 +8293,3 @@ GUI 领域不断演变，开发者必须紧跟趋势。
 - 开发者应该保持适应能力并拥抱新兴技术。
 
 GUI 设计的未来是交互式、智能化且沉浸式的。
-

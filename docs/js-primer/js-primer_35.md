@@ -1,3 +1,4 @@
+
 # 第一部分：结束语
 
 > 原文：[`jsprimer.net/basic/other-parts/`](https://jsprimer.net/basic/other-parts/)
@@ -6,7 +7,7 @@
 
 在第一部分中，并没有介绍 ECMAScript 的所有语法或内置对象。还有许多未介绍的语法和内置对象也非常有用。
 
-例如，[Proxy](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Proxy) 和 [Reflect](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Reflect) 这样的内置对象可以为对象的基本操作（如获取或设置属性等）定义自定义行为。此外，`Object` 的内置对象也有一个名为 [Object.defineProperty](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty) 的方法，它可以修改对象的描述符（descriptor）。通过修改对象的描述符，可以设置对象的元操作，例如禁止修改对象的属性等。
+例如，[`Proxy`](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Proxy) 和 [`Reflect`](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Reflect) 这样的内置对象可以为对象的基本操作（如获取或设置属性等）定义自定义行为。此外，`Object` 的内置对象也有一个名为 [`Object.defineProperty`](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty) 的方法，它可以修改对象的描述符（descriptor）。通过修改对象的描述符，可以设置对象的元操作，例如禁止修改对象的属性等。
 
 除了这些之外，这些 API 更多地用于创建库而不是应用程序。此外，它们不会在第二部分的用例中出现，因此本书中省略了这些内容。当您需要时，查找并记住这些 API 的用法将是明智的选择。
 

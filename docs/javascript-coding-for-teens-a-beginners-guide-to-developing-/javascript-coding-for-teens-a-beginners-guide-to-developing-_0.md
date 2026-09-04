@@ -1,9 +1,5 @@
+
 # 青少年 JavaScript 编码：网站与游戏开发初学者指南
-
-
-
-
-
 
 Copyright © 2021 by Rockridge Press, 加利福尼亚州埃默利维尔。未经出版者书面许可，本书不得以任何形式或通过手段（电子、机械、复印、录制、扫描或其他）进行复制、存储在检索系统中或传输，除非符合 1976 年美国版权法第 107 节或 108 节的规定。向出版者申请许可的请求请发送至：Permissions Department, Rockridge Press, 6005 Shellmound Street, Suite 175, Emeryville, CA 94608。
 
@@ -16,13 +12,19 @@ Rockridge Press 以多种电子和印刷格式出版其书籍。印刷版中出�
 商标：Rockridge Press 和 Rockridge Press Logo 是 Callisto Media Inc. 及其/关联公司在美国和其他国家的商标或注册商标，未经书面许可不得使用。所有其他商标均为其所有者的财产。Rockridge Press 与书中提到的任何产品或供应商均无关联。
 
 内页及封面设计：Lisa Schreiber
+
 艺术制作：Janice Ackerman
+
 编辑：Andrea Leptinsky
+
 制作经理：Martin Worthington
+
 插图 ©2021 Carl Wein
 
 平装本 ISBN：978-1-64876-111-9
+
 电子书 ISBN：978-1-64876-112-6
+
 R0
 
 我将本书献给 Frank 和 May Yueh，感谢他们在向编程职业转型期间对我的支持。
@@ -92,6 +94,7 @@ add(20, 30); // 50
 `return` 关键字实际上同时承担两个作用：
 
 1. 它从函数输出一个值。
+
 2. 它停止函数的执行。
 
 你可能会发现自己不想在某个特定点之后执行代码，或者想做一个决定并停止所有后续操作。
@@ -215,13 +218,7 @@ function playedInTournament(tournament, player) {
 };
 ```
 
-
-
-现在，你需要找到某个玩家是否参加过某场比赛。对象中有一个 `players` 键。目标是检查该玩家是否存在于数组中。你立刻知道
-
-![Image 31](img/index-72_1.jpg)
-
-需要一个 for 循环。该数组嵌套在对象中，因此必须通过它的键名 `players` 来访问。还需要检查该玩家是否参加了该比赛。用编程术语来表达，这需要一个 `if` 条件。
+现在，你需要找到某个玩家是否参加过某场比赛。对象中有一个 `players` 键。目标是检查该玩家是否存在于数组中。你立刻知道需要一个 for 循环。该数组嵌套在对象中，因此必须通过它的键名 `players` 来访问。还需要检查该玩家是否参加了该比赛。用编程术语来表达，这需要一个 `if` 条件。
 
 ```javascript
 function playedInTournament(tournament, player) {
@@ -331,8 +328,6 @@ function tournamentsPlayed(tournaments, player) {
 
 这一次，你需要检查玩家是否参加了该比赛。不仅如此，你必须记录这种情况发生的次数。确定一个玩家是否参加了某场特定的比赛是一项大量工作。每个比赛条目都需要搜索内部数组。但这个问题已经在 `playedInTournament` 中解决了。可以重用该函数。
 
-![Image 32](img/index-74_1.jpg)
-
 ```javascript
 var currentTournament = tournaments[i];
 
@@ -358,7 +353,9 @@ console.log(tournamentsPlayed(tournaments, 'superb'));
 ### 赢得比赛的次数
 
 现在，更进一步。检查并查看特定玩家参加过团队获胜比赛的次数。为了清楚地做到这一点，你需要：
+
 1. 一个循环
+
 2. 一个累加变量来跟踪获胜的比赛次数
 
 ```javascript
@@ -378,16 +375,12 @@ function tournamentsWon(tournaments, player) {
 ```
 
 与 `gamesPlayed` 相比情况有点不同。需要两个条件：
+
 1. 玩家参加了比赛
+
 2. 团队获胜了
 
 幸运的是，`playedInTournament` 可以用于第一个条件。对于第二个条件，每个条目都有比赛结果，位于键 `win` 中。只有当该特定玩家参加时，两个条件都为真，才能将该场比赛计为胜利。在这一
-
-![Image 33](img/index-75_1.jpg)
-
-![Image 34](img/index-75_2.jpg)
-
-在这种情况下，使用 AND 运算符 `&&` 来同时断言这两个条件。
 
 ```javascript
 function tournamentsWon(tournaments, player) {
@@ -437,8 +430,6 @@ function playerWinRate(tournaments, player) {
 
   var percentage = (won / total) * 100;
 
-![Image 35](img/index-76_1.jpg)
-
   return parseInt(percentage);
 }
 ```
@@ -460,8 +451,11 @@ console.log(playerWinRate(tournaments, 'superb'));
 到目前为止，你解决了许多挑战。许多简单的函数被编写并组合在一起解决棘手的挑战。最后一个！
 
 已经有一个计算每个玩家胜率的函数。只需比较胜率即可发现谁参加下一场比赛。这次需要三个参数：
+
 1. 团队的比赛表现及其活跃玩家
+
 2. 一个玩家
+
 3. 另一个用于比较的玩家
 
 ```javascript
@@ -482,8 +476,6 @@ function whoShouldPlay(tournaments, player1, player2) {
 
   var player2WinRate = playerWinRate(tournaments, player2);
 
-![Image 36](img/index-77_1.jpg)
-
   var benchedPlayer;
 
   var activePlayer;
@@ -500,9 +492,6 @@ function whoShouldPlay(tournaments, player1, player2) {
 ```
 
 但这还不够，因为还需要处理相反的情况。在这种情况下，你不需要 `else if`。只有两个选项。一个 `else` 语句将完美工作。
-
-
-
 
 为了满足管理层的要求，为每个玩家的状态添加一个带有友好消息的 `console.log`。
 
@@ -535,9 +524,13 @@ whoShouldPlay(tournaments, 'smirk', 'superb');
 这次练习整合了你到目前为止学 JavaScript 的每一个技术方面。但你可能已经注意到，你解决问题的方法同样重要。你将一个大挑战拆解成了五个更容易处理的挑战：
 
 1. 比较两个玩家之间的胜率。
+
 2. 计算玩家的胜率。
+
 3. 计算玩家参加的比赛总场次。
+
 4. 计算玩家的获胜场次。
+
 5. 检查玩家是否参加了比赛。
 
 所有这些部分的总和创造了一个复杂问题的简单解决方案。
@@ -547,9 +540,13 @@ whoShouldPlay(tournaments, 'smirk', 'superb');
 这一章是“买一送二”的。你不仅学习了函数，还略略体验了程序员用来用简单方法解决挑战性问题的策略类型。
 
 1. 哪些品质让函数在编程时时变得备受青睐？
+
 2. 函数需要什么关键字才能输出暴露在函数之外的值？
+
 3. 如果没有显式的返回，函数会输出什么？
+
 4. 什么是作用域？
+
 5. JavaScript 使用什么种类型的作用域？用你自己的话解释。
 
 ## 调试
@@ -574,7 +571,9 @@ function test(description, actual, expected) {
 这是一个非常基础的函数，让你：
 
 1. 为自己快速写一条关于将测试什么的消息。
+
 2. 比较两个值。
+
 3. 知道你是否得到了预期的结果。如果没有，打印出你计算的结果与你预期的结果。
 
 在开始处理真正的调试问题之前，是时候让这个测试函数投入行动了。为了这样做，你将故意创建一个错误的 `add` 函数，并看看你的测试函数会给你什么输出。
@@ -627,10 +626,6 @@ function includes(arrOrStr, item) {
 // ... (其余的逻辑)
 ```
 
-
-
-
-
 `parseInt` 函数接收一个数字并将其转换为整数。从技术上讲，它不会四舍五入或向下取整。它移除了数字中的小数部分。然而，更重要的是，它是将字符串形式的数字转换为实际数据类型数字的方法。
 
 ```javascript
@@ -639,6 +634,7 @@ parseInt('1322.23423'); // 1322
 ```
 
 ### PARFLOAT
+
 与 `parseInt` 解析数字和字符串形式数字一样，`parseFloat` 也这样做，但它保留了原始数字中所有的小数值。
 
 ```javascript
@@ -647,9 +643,11 @@ parseFloat('1322.23423'); // 1322.23423
 ```
 
 ### 字符串
+
 在本书范围内，大多数字符串操作将予以省略。但仍有两个重要的操作需要注意。
 
 #### 通过索引访问
+
 对于某些算法，逐个元素地检查字符串是非常重要的。这可以通过索引访问每个字符来实现。字符串和数组通过索引访问元素的方式是相同的。
 
 ```javascript
@@ -659,6 +657,7 @@ dog[2]; // 's'
 ```
 
 #### 转小写和大大写
+
 将字符转换为全小写或全大写可以分别使用 `toLowerCase` 和 `toUpperCase` 完成。
 
 ```javascript
@@ -670,9 +669,11 @@ dog.toUpperCase(); // 'MISU'
 等等！为什么在变量名后面使用了这个函数？嗯，从技术上讲，这是一个方法（method）。我们将深入探讨这种差异的目的和原因。目前，只需知道方法是用这种语法调用的。
 
 ### 数组
+
 修改数组是非常常见的的操作，因此 JavaScript 包含了许多内置操作来按我们所需的方式修改它们。
 
 #### 插入
+
 数组中的项通过索引访问。
 
 ```javascript
@@ -689,6 +690,7 @@ animals[0]; // 'pig'
 ```
 
 #### PUSH
+
 一种常见操作是在数组末尾插入。数组方法名是 `push`。
 
 ```javascript
@@ -698,6 +700,7 @@ sampleArray; // [10]
 ```
 
 #### POP
+
 另一个常见操作是使用方法 `pop` 删除数组的最后一项。
 
 ```javascript
@@ -707,6 +710,7 @@ sampleArray; // [2]
 ```
 
 #### SHIFT
+
 可以使用 `shift` 方法删除数组的第一个元素。
 
 ```javascript
@@ -716,6 +720,7 @@ sampleArray; // [10]
 ```
 
 #### UNSHIFT
+
 最后一种数组操作是 `unshift`，它将元素插入到数组前端。
 
 ```javascript
@@ -725,9 +730,11 @@ sampleArray; // [5, 2, 10]
 ```
 
 ### 对象
+
 与数组相比，对象的修改程度并不相同。这是出于更高级的技术原因。但对象仍然支持插入、替换和删除。
 
 #### 插入和替换
+
 对象值的插入是通过等号完成的。
 
 ```javascript
@@ -747,6 +754,7 @@ animals; // { dog: 'not sparky' }
 ```
 
 #### 删除
+
 从对象中删除元素是一个不常用的操作。`delete` 运算符删除对象中的键值对。
 
 ```javascript
@@ -758,6 +766,7 @@ animals; // { }
 ```
 
 ### 变异
+
 修改数据类型而非总是创建新版本的想法被称为“可变性”（mutability）。操作可以是变异的，这意味着它修改了现有的数据。数据也可以被称为“不可变的”（immutable），意味着它从根本上无法被修改。
 
 在下面的示例中，当使用数组和对象操作时，我们没有向新变量赋值或重新赋值。这是因为 `push`、`pop`、`shift` 和 `unshift` 是修改现有数组的操作。所展示的操作是改变现有数据结构的操作。
@@ -779,6 +788,7 @@ animals; // 5
 返回值为 5 是因为在将 lizard 推入之后，新数组的长度。但这可能不是想要的输出。更有可能，想要的输出是数组本身。
 
 #### 字符串是不可变的
+
 ```javascript
 var animal = 'd';
 animal += 'og';
@@ -796,9 +806,11 @@ animal; // 'd'
 由于 JavaScript 的字符串是不可变的，字符串拼接不会修改 `animal`。
 
 ### 数据操作实战
+
 当你看到数据操作运行时，理解它会变得容易得多。我们还将介绍你将遇到最常见的数据操作策略。让我们开始吧！
 
 #### 构建新数组
+
 获取一个数组并以某种形式对其进行修改，是所有程序中最常见的操作之一。在许多情况下，构建一个全新的数组比修改现有数组更有优势。
 
 给定以下数组，创建一个技能水平高于 5 的玩家名称数组。
@@ -813,6 +825,7 @@ var players = [
 ```
 
 这是预期的输出：
+
 ```javascript
 ['smirk', 'tired', 'ANS']
 ```
@@ -858,10 +871,6 @@ console.log(getSkilledPlayers(players));
 
 为了保险起见，可以写一个表格来查看每次迭代后值是如何变化的。
 
-
-
-
-
 `PLAYER.NAME`
 
 `PLAYER.SKILL`
@@ -871,10 +880,15 @@ console.log(getSkilledPlayers(players));
 `SKILLEDPLAYERS`
 
 | 名称 | 技能 | 条件 | 结果 |
+
 |---|---|---|---|
+
 | 1 | superb | 3 | false | [] |
+
 | 2 | smirk | 7 | true | `['smirk']` |
+
 | 3 | tired | 6 | true | `['smirk', 'tired']` |
+
 | 4 | ANS | 9 | true | `['smirk', 'tired', 'ANS']` |
 
 ## 黑客提示 (HACK HINT)
@@ -1099,10 +1113,6 @@ console.log(playerAboveSkillAndAge(players, 2, 16));
 ## 程序员检查清单 (CODER’S CHECKLIST)
 
 你走过了很长的路！你现在正式完成了编程基础的学习。未来，你将学习更多特定于 JavaScript 的特性。这意味着面向对象编程和网站编程。
-
-
-
-
 
 # 将狗作为 JavaScript 对象
 
@@ -1352,13 +1362,12 @@ sparky.stealCatFood();
 
 创建方法是拆分复杂方法的直接方法。鼓励创建新的、更小的方法，即使该方法本身没有在其他地方或被任何对象实例使用。
 
-
-
-
-
 ### 4. 在方法内部调用另一个方法的语法是什么？
+
 ### 5. 创建构造函数的语法是什么？
+
 ### 6. 什么是对象实例？
+
 ### 7. 初始化对象实例的语法是什么？
 
 ## 调试
@@ -1409,7 +1418,7 @@ var layna = new Person('Layna');
 var andrew = new Person('Andrew');
 var chat = new ChatProgram();
 chat.message(andrew, 'Hi Layna, how's it going?');
-chat.message(layna, 'I'm doing great');
+chat.message(layna, 'I\'m doing great');
 chat.message(layna, 'What about you?');
 chat.message(andrew, 'I just came back from the doctor'); chat.message(layna, 'Wow, this conversation is really boring'); chat.message(andrew, 'That was really mean, why would you say something like that?');
 chat.message(layna, 'I have better things to do');
@@ -1425,8 +1434,11 @@ chat.printLog();
 编码检查清单 » 让我们回顾一下涵盖过的的话题。面向对象编程并不是 JavaScript 特有的，但它是第一个一个在所有编程语言中并不通用的主题（实现方式不同）。面向对象编程是解决编程挑战的众多策略之一。随着你在编程工具箱中积累了更多技术，你将发现解决问题有多种方法。发现最佳解决办法需要经验和直觉。如果你有一个不确定的主意，尽管去尝试一试吧！编程的核心就在于从过去的错误中学习。以下是本章中所学内容的快速回顾。
 
 - 什么是对象
+
 - 什么是对象实例
+
 - 如何创建实例变量
+
 - 如何创建方法
 
 ![Image 46](img/index-107_1.jpg)
@@ -1451,7 +1463,7 @@ chat.printLog();
 
 ![Image 47](img/index-109_1.jpg)
 
-#### HTML 标签
+#### HTML 标筓
 
 注意单词周围的角括号了吗？那是 `HTML` 语法。
 
@@ -1462,8 +1474,11 @@ chat.printLog();
 只有角括号的标签被称为起始标签，而另一个带有斜杠的被称为结束标签。一个起始标签必须有一个对应的结束标签。
 
 ```html
+
 <html>
+
 </html>
+
 ```
 
 在起始标签和结束标签之间可以放置任何数量的内容。`HTML` 变得可以变得得极其复杂！
@@ -1473,26 +1488,39 @@ chat.printLog();
 由于本书的重点是 JavaScript，所以只会涵盖少数几个 `HTML` 标签。
 
 ```html
+
 <html>
+
 <head>
+
 </head>
+
 <body>
+
 <div>
+
 Hello!
+
 </div>
+
 </body>
+
 </html>
+
 ```
 
 `html` 标签是主标签，它包裹了文件中的所有 `HTML` 内容。`head` 标签是多用途的。它通常是插入非视觉 `HTML` 的地方。`body` 标签是放置视觉元素的地方。`div` 是一个没有重要作用角色的标签。它仅被用于封装其内部的元素。
 
-#### HTML 属性：CLASS 和 ID
+#### HTML 属性：CLASS AND ID
 
 有很多不同的 `HTML` 属性。应用它们的语法是属性名、等号和值（双引号）。作为一种概念，它与对象数据结构中的键值对非常相似。
 
 ```html
+
 <div class="container">
+
 I am content in a div
+
 ```
 
 `class` 和 `id` 属性在 `HTML` 中非常重要。在与 JavaScript 协作时，常用的策略是通过它们的类或 `id` 查找 HTML 元素。
@@ -1522,20 +1550,35 @@ I am content in a div
 注意位置不是互联网 URL？那是指向 HTML 文件的目录路径。在确认文件运行后，修改 HTML。
 
 ```html
+
 <html>
+
 <head>
+
 </head>
+
 <body>
+
 <div>
+
 Hello!
+
 ![Image 51](img/index-113_1.jpg)
+
 ![Image 52](img/index-113_2.jpg)
+
 </div>
+
 <div class="container">
+
 I am EXTREMELY cool
+
 </div>
+
 </body>
+
 </html>
+
 ```
 
 修改后，页面没有变化。为什么浏览器不承认我们非常酷这一实？那是因为浏览器加载了文件的旧版本。为了看到更新，请刷新页面。
@@ -1562,25 +1605,41 @@ JavaScript 有许多与浏览器相关的函数可以使用。`document` 是一�
 `document` 对象上一个被广泛使用的方法是 `document.getElementsByClassName`。如果我们让 `div` HTML 元素带有 `class` 属性，`document.getElementsByClassName` 就能施展它的魔法！
 
 ```html
+
 <html>
+
 <head>
+
 </head>
+
 <body
+
 ![Image 55](img/index-115_1.jpg)
+
 <div class="cool-message">
+
 Hello!
+
 </div>
+
 <div class="cool-message">
+
 I am EXTREMELY cool
+
 </div>
+
 </body>
+
 </html
+
 ```
 
 `document.getElementsByClassName` 接受一个参数。它是类的字符串名称。类 `cool-message` 被添加到了 `div` 元素中。该属性将用于识别 HTML 元素。在开发者控制中使用以下代码。运行代码后，输入变量名以在控制台中显示其值。
 
 ```javascript
+
 var divElements = document.getElementsByClassName('cool-message');
+
 ```
 
 运行代码后，再次在控制台中输入变量名 `divElements` 以显示其值。
@@ -1594,28 +1653,47 @@ var divElements = document.getElementsByClassName('cool-message');
 与 `document.getElementsByClassName` 通过 `class` 属性获取 HTML 元素一样，`document.getElementById` 通过 `id` 属性选择元素。为了让元素被 `document.getElementById` 选中，请修改 HTML。添加一个带有 `id` 属性的 `div` 元素。
 
 ```html
+
 <html>
+
 <head>
+
 </head>
+
 <body
+
 ![Image 56](img/index-116_1.jpg)
+
 <div class="cool-message">
+
 Hello!
+
 </div>
+
 <div class="cool-message">
+
 I am EXTREMELY cool
+
 </div>
+
 <div id="occupation">
+
 That is because I am a programmer
+
 </div>
+
 </body>
+
 </html
+
 ```
 
 刷新页面。在开发者控制台中输入以下代码。再次在控制台中输入变量后，返回值应该指向第三行文本。
 
 ```javascript
+
 var divElement = document.getElementById('occupation');
+
 ```
 
 注意 `document.getElementById` 返回的是一个单个元素。它没有返回像 `document.getElementsByClassName` 那样的类数组数据结构。这是因为 `document.getElementById` 每次只能选择一个元素。
@@ -1633,26 +1711,45 @@ HTML 元素内部有许多方法和属性，就像 `document` 对象一样。这
 ![Image 57](img/index-117_1.jpg)
 
 ```html
+
 <html>
+
 <head>
+
 </head>
+
 <body>
+
 <div class="cool-message">
+
 Hello!
+
 </div>
+
 <div class="cool-message">
+
 I am EXTREMELY cool
+
 </div>
+
 <div id="occupation">
+
 That is because I am a programmer
+
 </div>
+
 </body>
+
 </html
+
 ```
 
 ```javascript
+
 var divElement = document.getElementById('occupation');
+
 divElement.innerHTML;
+
 ```
 
 ### 使用 INNERHTML 注入新文本
@@ -1660,8 +1757,11 @@ divElement.innerHTML;
 `innerHTML` 是对象上的一个属性。就像对象上的任何键值对一样，它可以被重新赋值。这允许修改内部的文本。
 
 ```javascript
+
 var divElement = document.getElementById('occupation');
+
 divElement.innerHTML += ' and love building things';
+
 ```
 
 ![Image 58](img/index-118_1.jpg)
@@ -1673,8 +1773,11 @@ divElement.innerHTML += ' and love building things';
 就像 `innerHTML` 可以更新一样，`class` 和 `id` 属性也可以更改。更新 HTML 元素的 `id` 很容易的。关键是 `id`。
 
 ```javascript
+
 var divElement = document.getElementById('occupation');
+
 divElement.id = 'new-id';
+
 ```
 
 ### 更新属性 CLASS
@@ -1682,27 +1785,45 @@ divElement.id = 'new-id';
 更新 `class` 比 `id` 更复杂。这是因为通常会分配多个类。回到 HTML 文件。现在，`div` 元素只有一个 `class`。
 
 ```html
+
 <html>
+
 <head>
+
 </head>
+
 <body>
+
 <div class="cool-message">
+
 Hello!
+
 </div>
+
 <div class="cool-message">
+
 I am EXTREMELY cool
+
 </div>
+
 <div id="occupation">
+
 That is because I am a programmer
+
 </div>
+
 </body>
+
 </html
+
 ```
 
 向现有 HTML 元素添加类的方法是 `classList.add`。它接受一个参数，即要追加的类名。
 
 ```javascript
+
 var divElements = document.getElementsByClassName('cool-message');
+
 ```
 
 ![Image 59](img/index-119_1.jpg)
@@ -1710,14 +1831,19 @@ var divElements = document.getElementsByClassName('cool-message');
 ![Image 60](img/index-119_1.jpg)
 
 ```javascript
+
 divElements[0].classList.add('new-class');
+
 ```
 
 移除类的方法是 `classList.remove`，它接受一个要移除的类的参数。
 
 ```javascript
+
 var divElements = document.getElementsByClassName('cool-message');
+
 divElements[0].classList.remove('new-class');
+
 ```
 
 ### 修改类的目的
@@ -1730,15 +1856,18 @@ divElements[0].classList.remove('new-class');
 
 ![Image 62](img/index-120_2.jpg)
 
-`document` 对象也有创建 HTML 元素的方法。当你制作游戏时，这将变得特别重要！
+`document` 对象也有创建 HTML元素的方法。当你制作游戏时，这将变得特别重要！
 
 ### DOCUMENT.CREATEELEMENT
 
 使用 `document.createElement`，JavaScript 可以创建 HTML。它接受一个参数，即 HTML 标签的字符串名称。因为我们没有学习太多 HTML，我们将使用 `document.createElement` 创建 `div` 元素。
 
 ```javascript
+
 var div = document.createElement('div');
+
 div.innerHTML = 'I am a new div!';
+
 ```
 
 已经通过 `innerHTML` 创建了：“I am a new div!” 但在哪里？你创建了它，但还没有把它放在任何地方！
@@ -1748,10 +1877,15 @@ div.innerHTML = 'I am a new div!';
 用 JavaScript 创建的 HTML 元素需要手动添加到页面。这就是使用 `append` 方法的地方。它存在于使用任何 HTML 选择器获取的 HTML 对象上，例如 `document.getElementsByClassName` 和 `document.getElementById`。
 
 ```javascript
+
 var div = document.createElement('div');
+
 div.innerHTML = 'I am a new div!';
+
 var divElements = document.getElementsByClassName('cool-message');
+
 divElements.append(div);
+
 ```
 
 哎呀！为什么这不起作用？那是因为 `document.getElementsByClassName` 返回一个类数组数据结构。
@@ -1763,10 +1897,15 @@ divElements.append(div);
 可以通过索引访问类数组数据结构中的元素。
 
 ```javascript
+
 var div = document.createElement('div');
+
 div.innerHTML = 'I am a new div!';
+
 var divElements = document.getElementsByClassName('cool-message');
+
 divElements[1].append(div);
+
 ```
 
 你刚刚用纯 JavaScript 制作了 HTML！我觉得这很酷。
@@ -1779,27 +1918,49 @@ divElements[1].append(div);
 JavaScript 也可以用于移除 HTML 元素。修改 HTML 文件，添加一个新的 `div` 元素，该元素具有一个 `id` 属性和一些 `innerHTML`。
 
 ```html
+
 <html>
+
 <head>
+
 </head>
+
 <body>
+
 <div class="cool-message">
+
 Hello!
+
 </</div>
+
 <div class="cool-message">
+
 I am EXTREMELY cool
+
 </div>
+
 <div id="occupation">
+
 That is because I am a programmer
+
 </div>
+
 <div id="untrue-message">
+
 ![Image 65](img/index-122_1.jpg)
+
 ![Image 66](img/index-122_2.jpg)
+
 Just kidding, programmers are losers
+
 </div>
+
 </body>
+
 </html>
-```
+
+
+
 
 程序员（Programmers）是失败者？看到这个虚假的陈述让我热血沸腾。我要求从页面移除该 `div`。包含该语句的 `div` 有一个 `id`。这意味着可以使用 `document.getElementById` 来指向该 HTML 元素。
 
@@ -1815,31 +1976,48 @@ Just kidding, programmers are losers
 
 #### HTML SCRIPT 标签
 
-HTML `script` 标签允许你将 JavaScript 代码放置在 HTML 文件中。起始标签和结束标签之间的代码会在页面加载时自动运行。为了获得
+HTML `script` 标签允许你将 JavaScript 代码放置在 HTML 文件中。起始标签和结束标签之间的代码会在页面加载时自动运行。为了获得最最一致的结果，请将脚本放在 `body` 标签下。
 
 ![Image 67](img/index-123_1.jpg)
 
-最最一致的结果，请将脚本放在 `body` 标签下。
-
 ```html
+
 <html>
+
 <head>
+
 </head>
+
 <body>
+
 <div class="cool-message">
+
 Hello!
-</</div>
-<div class="cool-message">
-I am EXTREMELY cool
-</</div>
-<div id="occupation">
-That is because I am a programmer
+
 </div>
+
+<div class="cool-message">
+
+I am EXTREMELY cool
+
+</div>
+
+<div id="occupation">
+
+That is because I am a programmer
+
+</div>
+
 <script>
+
 console.log('Hi! I have been automatically invoked in the browser')
+
 </script>
+
 </body>
+
 </html>
+
 ```
 
 刷新页面。你会发现，通过在 `script` 标签中封装 JavaScript 代码，代码 `console.log` 已经被自动调用。
@@ -1851,27 +2029,45 @@ console.log('Hi! I have been automatically invoked in the browser')
 在了解如何在页面加载时运行代码后，你已经准备好编写有意义的代码。首先，移除 HTML 文件中的所有视觉内容。只留一个带有 `id` 的空 `div`。
 
 ```html
+
 <html>
+
 <head>
+
 </head>
+
 <body>
+
 <div id="container">
+
 </div>
+
 </body>
+
 <script>
+
 </script>
+
 </body>
+
 </html>
+
 ```
 
 在 `script` 标签内部，你可以利用数据结构、循环和 HTML 操作的理解来重新创建你最初硬编码的内容。第一步是创建一个函数，它将创建带有 `innerHTML` 文本内容的 `div` 元素。
 
 ```javascript
+
 function createDivWithText(text) {
+
   var div = document.createElement('div');
+
   div.innerHTML = text;
+
   return div;
+
 }
+
 ```
 
 接下来 是一个要添加到页面的文本数组。
@@ -1881,9 +2077,13 @@ function createDivWithText(text) {
 此时，有了一个创建 HTML 的函数和一个文本数组。听起来你需要一个 `for` 循环，不是吗？
 
 ```javascript
+
 for (var i = 0; i < htmlText.length; i++) {
+
   var newDiv = createDivWithText(htmlText[i]);
+
 }
+
 ```
 
 但你要对这个 `newDiv` 做什么？你需要一个地方插入它！这就是使用 `document.getElementById` 的地方。
@@ -1891,86 +2091,82 @@ for (var i = 0; i < htmlText.length; i++) {
 记得那个 `id` 为 "container" 的空 `div` 吗？用 JavaScript 指向该 `div`，然后逐一个追加新创建的 `div` 元素。
 
 ```javascript
+
 function createDivWithText(text) {
+
   var div = document.createElement('div');
+
   div.innerHTML = text;
+
   return div;
+
 }
 
 var htmlText = ['Hello!', 'I am EXTREMELY cool', 'That is because I am a programmer'];
+
 var container = document.getElementById('container');
 
 for (var i = 0; i < htmlText.length; i++) {
+
   var newDiv = createDivWithText(htmlText[i]);
+
   container.append(newDiv);
+
 }
+
 ```
 
 将所有内容整合在一起，HTML 文件看起来如下：
 
 ```html
+
 <html>
+
 <head>
+
 </head>
+
 <body>
+
 <div id="container">
+
 </div>
+
 </body>
+
 <script>
+
 function createDivWithText(text) {
+
   var div = document.createElement('div');
+
   div.innerHTML = text;
+
   return div;
+
 }
+
 var htmlText = ['Hello!', 'I am EXTREMELY cool', 'That is because I am a programmer'];
+
 var container = document.getElementById('container');
+
 for (var i = 0; i < htmlText.length; i++) {
+
   var newDiv = createDivWithText(htmlText[i]);
+
   container.append(newDiv);
+
 }
+
 </script>
+
 </body>
+
 </html>
+
 ```
 
 整合在一起后，HTML 文件看起来是这样：
-
-刷新页面。你会发现，通过在 `script` 标签中封装 JavaScript 代码，代码 `console.log` 已经被自动调用。
-
-将 JavaScript 放入 HTML 文件的能力赋予了程序员创建动态网站的能力。浏览器确实是 JavaScript 大放异潮的地方
-
-#### 批量更新 HTML (#index_split_000.html_p7)
-
-到目前为止，页面的更新是在开发者控制台中完成的。但显然，这并不是程序员构建网站的方式！为了运行成千上行的代码，程序员需要能够将 JavaScript 写入文件并让代码自动运行。
-
-#### HTML SCRIPT 标签
-
-HTML script 标签允许你将 JavaScript 代码放置在 HTML 文件中。起始标签和结束标签之间的代码会在页面加载时自动运行。为了
-
-![Image 67](img/index-123_1.jpg)
-
-一致的结果，请将脚本放在 `body` 标签下。
-
-```html
-<html>
-<head>
-</head>
-<body>
-<div class="cool-message">
-Hello!
-</</div>
-<div class="cool-message">
-I am EXTREMELY cool
-</div>
-<div id="occupation">
-That is because I am a programmer
-</div>
-<script>
-console.log('Hi! I have been automatically invoked in the browser')
-</script>
-</body>
-</html>
-```
 
 刷新页面。你会发现，通过在 `script` 标签中封装 JavaScript 代码，代码 `console.log` 已经被自动调用。
 
@@ -1981,27 +2177,45 @@ console.log('Hi! I have been automatically invoked in the browser')
 在了解如何在页面加载时运行代码后，你已经准备好编写有意义的代码。首先，移除 HTML 文件中的所有视觉内容。只留一个带有 `id` 的空 `div`。
 
 ```html
+
 <html>
+
 <head>
+
 </head>
+
 <body>
+
 <div id="container">
+
 </div>
+
 </body>
+
 <script>
+
 </script>
+
 </body>
+
 </html>
+
 ```
 
 在 `script` 标签内部，你可以利用对数据结构、循环和 HTML 操作的理解来重新创建你最初硬编码的内容。第一步是创建一个函数，它将创建带有 `innerHTML` 文本内容的 `div` 元素。
 
 ```javascript
+
 function createDivWithText(text) {
+
   var div = document.createElement('div');
+
   div.innerHTML = text;
+
   return div;
+
 }
+
 ```
 
 接下来 是一个要添加到页面的文本数组。
@@ -2011,9 +2225,13 @@ function createDivWithText(text) {
 此时，有了一个创建 HTML 的函数和一个文本数组。听起来你需要一个 `for` 循环，不是吗？
 
 ```javascript
+
 for (var i = 0; i < htmlText.length; i++) {
+
   var newDiv = createDivWithText(htmlText[i]);
+
 }
+
 ```
 
 但你要对这个 `newDiv` 做什么？你需要一个地方插入它！这就是使用 `document.getElementById` 的地方。
@@ -2021,52 +2239,82 @@ for (var i = 0; i < htmlText.length; i++) {
 记得那个 `id` 为 "container" 的空 `div` 吗？用 JavaScript 指向该 `div`，然后逐一个追加新创建的 `div` 元素。
 
 ```javascript
+
 function createDivWithText(text) {
+
   var div = document.createElement('div');
+
   div.innerHTML = text;
+
   return div;
+
 }
 
 var htmlText = ['Hello!', 'I am EXTREMELY cool', 'That is because I am a programmer'];
+
 var container = document.getElementById('container');
 
 for (var i = 0; i < htmlText.length; i++) {
+
   var newDiv = createDivWithText(htmlText[i]);
+
   container.append(newDiv);
+
 }
+
 ```
 
 将所有内容整合在一起，HTML 文件看起来如下：
 
 ```html
+
 <html>
+
 <head>
+
 </head>
+
 <body>
+
 <div id="container">
+
 </div>
+
 </body>
+
 <script>
+
 function createDivWithText(text) {
+
   var div = document.createElement('div');
+
   div.innerHTML = text;
+
   return div;
+
 }
+
 var htmlText = ['Hello!', 'I am EXTREMELY cool', 'That is because I am a programmer'];
+
 var container = document.getElementById('container');
+
 for (var i = 0; i < htmlText.length; i++) {
+
   var newDiv = createDivWithText(htmlText[i]);
+
   container.append(newDiv);
+
 }
+
 </script>
+
 </body>
+
 </html>
+
 ```
 
 整合在一起后，HTML 文件看起来是这样：
-
-
-
 
 刷新后，点击按钮将弹出一个警框，正如预期那样。
 
@@ -2077,6 +2325,7 @@ for (var i = 0; i < htmlText.length; i++) {
 `addEventListener` 方法的第二个参数是一个函数，它有自己的参数。这通常被称为事件对象。要查看它是什么样的，可以在函数内部使用 `console.log`。
 
 ```javascript
+
 // index.js
 
 var button = document.getElementById('clickable-button'); button.addEventListener('click', function (event) {
@@ -2084,6 +2333,7 @@ var button = document.getElementById('clickable-button'); button.addEventListene
 console.log(event);
 
 });
+
 ```
 
 哇，信息量真大！不用担心事件中存在的信息。目前，只需要知道 `addEventListener` 提供了关于点击事件的信息即可。
@@ -2103,6 +2353,7 @@ CSS 与 JavaScript 的配合工作得非常好。在页面上创建元素有两�
 将 CSS 样式应用到页面有两种方法。一种是使用 `style` 标签。CSS 可以封装在其中，样式将通过属性类应用。在这里，为按钮添加了 `hide` 类名，并关联相应的 CSS 使按钮不可见。
 
 ```html
+
 <html
 
 <head>
@@ -2116,6 +2367,7 @@ opacity: 0;
 }
 
 </style>
+
 </head>
 
 <body>
@@ -2129,6 +2381,7 @@ opacity: 0;
 <script src="index.js"></script>
 
 </html>
+
 ```
 
 在浏览器中检查此内容，按钮现在消失了！但如果你检查页面，按钮仍然在那里！它只是不可见。
@@ -2138,16 +2391,19 @@ opacity: 0;
 创建一个带有 `.css` 扩展名的新文件。我的文件名为 `styles.css`。
 
 ```css
+
 .hide {
 
 opacity: 0;
 
 }
+
 ```
 
 然后使用 `link` 标签导入它。什么都不应该发生变化！
 
 ```html
+
 <html
 
 <head>
@@ -2167,6 +2423,7 @@ opacity: 0;
 <script src="index.js"></script>
 
 </html>
+
 ```
 
 ## 使用 CSS 显示和隐藏元素
@@ -2174,6 +2431,7 @@ opacity: 0;
 CSS 可以用于隐藏元素，而 JavaScript 可以操作 HTML，包括类和 `ids`。这意味着你可以使用代码显示和隐藏元素！让我们就这样做。添加一个带有 `hide` 类和 `id` 的 HTML 元素，以便可以使用 `getElementById` 获取它。
 
 ```html
+
 <html
 
 <head>
@@ -2199,11 +2457,13 @@ Click me!
 <script src="index.js"></script>
 
 </html>
+
 ```
 
 然后，在 JavaScript 文件中，为按钮事件监听器添加行为，从 HTML 元素中移除该类。
 
 ```javascript
+
 // index.js
 
 ![Image 74](img/index-132_1.jpg)
@@ -2213,6 +2473,7 @@ var button = document.getElementById('clickable-button'); button.addEventListene
 var hiddenElement = document.getElementById('content'); hiddenElement.classList.remove('hide');
 
 });
+
 ```
 
 点击按钮后，隐藏的内容应该显示出来。
@@ -2228,6 +2489,7 @@ var hiddenElement = document.getElementById('content'); hiddenElement.classList.
 需要一个带有 `div` 的 HTML 文件。这个 `div` 将包含用户输入的按键。还需要一个指向 `index.js` 文件的 `script` 标签。
 
 ```html
+
 <html
 
 <head>
@@ -2245,11 +2507,13 @@ var hiddenElement = document.getElementById('content'); hiddenElement.classList.
 <script src="index.js"></script>
 
 </html>
+
 ```
 
 在 `index.js` 中，添加用于记录按键事件监听器。在之前的事件监听器示例中，你需要将监听器附加到按钮上。但在这里，位置并不重要。所有的按键都应该被记录。事件监听器应该添加到整个 `document`。
 
 ```javascript
+
 // index.js
 
 document.addEventListener('keydown', function(event) {
@@ -2259,6 +2523,7 @@ console.log(event);
 ![Image 75](img/index-133_1.jpg)
 
 });
+
 ```
 
 刷新页面并按下“a”键后，可以在开发者控制台中看到按键事件的事件对象。
@@ -2266,6 +2531,7 @@ console.log(event);
 事件对象包含大量信息，但 `key` 属性包含了重要信息。它包含了按键名称。
 
 ```javascript
+
 // index.js
 
 document.addEventListener('keydown', function(event) {
@@ -2273,6 +2539,7 @@ document.addEventListener('keydown', function(event) {
 console.log(event.key);
 
 });
+
 ```
 
 通过 `console.log`，可以在开发者控制台中看到按键事件的事件对象。通过 `console.log`，可以在开发者控制台中看到按键事件的事件对象。
@@ -2280,6 +2547,7 @@ console.log(event.key);
 等待，刷新页面并按下“a”键后，可以在开发者控制台中看到按键事件的事件对象。
 
 ```javascript
+
 // index.js
 
 document.addEventListener('keydown', function(event) {
@@ -2291,220 +2559,19 @@ var div = document.getElementById('text');
 div.innerHTML += event.key;
 
 });
+
 ```
 
 
 
-
-
 ```javascript
+
 var div = document.getElementById('delete-all');
 
 div.innerHTML = '';
 
 });
-```
 
-## 编码检查清单 » 让我们复习一下涵盖过的主题
-
-自`第 1 章`以来，你已经走了很长一段路，不是吗？通过建立编程基础的先备知识，你终于开始接近现代程序员所面临的工作和挑战！以下是你在本章中学到的内容。
-
-*   HTML 基础，包括标签、页面上的文本和属性
-*   如何在页面加载时运行 JavaScript 代码
-*   开发者控制台
-*   JavaScript HTML 选择器
-*   使用 JavaScript 修改 HTML 元素
-*   事件监听器
-
-![Image 79](img/index-137_1.jpg)
-
-# 第 10 章
-
-## 游戏时间
-
-你做到了！你的工具箱现在包含了编程基础、面向对象编程和 Web 特定的 JavaScript。你已经涵盖了这本书所提供的所有基础知识。尽管如此，如果你不对这些知识做任何事情，它们又有什么用处呢？让我们通过创建一个游戏来结束课程——一个运行在浏览器上的游戏。
-
-### 浏览器上的吊单词游戏
-
-我们选择的游戏是“吊单词”（Hangman）。当然，你已经在终端里做过吊单词了。基础知识是不变的。但当涉及到浏览器时，某些实现部分是棘手的！
-
-### 吊单词游戏：终端 vs 浏览器
-
-浏览器和终端之间的主要区别在于图形。不再使用 `console.log`，而是需要修改 HTML。例如，判断玩家是否输了的方法是完全相同的。
-
-```javascript
-Hangman.prototype.playerLost = function () {
-  return this.remainingBadGuesses === 0;
-};
-```
-
-另一方面，显示已猜字符的方式将完全不同。在浏览器上，一个 `console.log` 可再也不够了！
-
-```javascript
-Hangman.prototype.showGuessedCharacters = function() {
-  var str = '';
-  for (var i = 0; i < this.charactersGuessed.length; i++) {
-    var currChar = this.charactersGuessed[i];
-    str += currChar;
-    str += ' ';
-  }
-  console.log('你目前猜了以下字符：');
-  console.log(str);
-};
-```
-
-内容必须使用 HTML 进行视觉化表达。就像你需要使用巧妙的技巧来解决算法一样，你需要发挥创意来操纵 HTML。
-
-### 吊单词游戏的实现
-
-吊单词游戏的任何规则都没有改变。之前章节中大多数较小的挑战都是那样的。区别在于实现方式。
-
-在开始之前，重新回顾游戏条件。这是一个来自`面向对象编程`章节的完全相同的模板。
-
-**需要跟踪的变量：**
-*   秘密单词
-*   已猜字符
-*   输掉游戏之前的错误猜测总数
-
-**终止条件：**
-*   如果玩家犯了六次错误猜测，则玩家输了。
-*   如果玩家猜中了秘密单词中的所有字符，则玩家赢。
-
-**吊单词游戏循环：**
-*   显示已猜的字符。
-*   提示玩家猜一个字符。
-*   将猜到的字符添加到字符库中。
-*   揭示秘密单词中猜对的字符。
-
-**游戏边界：**
-*   防止重复猜测。
-*   防止非字母猜测。
-*   在猜词时忽略大小写。
-
-## 游戏图形
-
-你需要向玩家显示他们在玩游戏时正在发生什么。之前在终端上用原始文本完成的所有操作，现在必须在浏览器上通过 HTML 操作完成。为了做到，你将实现以下规则：
-
-1.  **当游戏开始时**
-    *   a. 为秘密单词留出空格
-    *   b. 显示已猜字母的空间
-    *   c. 用于向玩家显示游戏反馈的消息栏
-    *   d. 绳子上的吊单词进度
-2.  **当玩家猜一个字符时**
-    *   a. 如果字符正确
-        *   使用消息栏中的消息通知他们
-        *   在秘密单词区域揭示该字符
-        *   添加到已猜字符列表
-    *   b. 如果字符错误
-        *   使用消息告诉他们
-        *   在人物身上添加一个身体部位
-        *   添加到已猜字符列表
-    *   c. 如果字符之前猜过
-        *   使用消息告诉他们
-        *   忽略该猜测
-3.  **检查玩家是赢了还是输了**
-    *   a. 如果既没赢也没输，继续游戏
-    *   b. 如果赢了，打开游戏结束界面并告诉他们赢了
-    *   c. 如果输了，打开游戏结束界面并告诉他们输了
-    *   d. 如果赢了或输了，允许重置游戏
-
-### HTML 文件
-
-在编码之前，需要一个 HTML 文件，否则 JavaScript 将无物可操纵！这里是完整的文件。这包含了 CSS 和 JavaScript 的导入，使用了 `link` 和 `script` 标签。每个部分将分别单独检查。
-
-```html
-<html>
-<head>
-<link rel="stylesheet" href="hangman.css">
-<link rel="stylesheet" href="person.css">
-</head>
-<body>
-<div>
-  <div id="rope">
-  |
-  </div>
-  <div id="pole">
-  </div>
-</div>
-<div>
-<div id="person">
-  <div id="head" class="appendage intact"> o
-  </div>
-```
-（注：此处原文代码块不完整，已根据指令保留格式且未翻译代码内容）
-
-*修正：由于原文提供的 HTML 代码块在 `</div>` 处截断，我将严格按照原文内容进行输出。重新审视原文，原文中的 HTML 代码块确实在 `</div>` 处结束。*
-
-```html
-<html>
-<head>
-<link rel="stylesheet" href="hangman.css">
-<link rel="stylesheet" href="person.css">
-</head>
-<body>
-<div>
-  <div id="rope">
-  |
-  </div>
-  <div id="pole">
-  </div>
-</div>
-<div>
-<div id="person">
-  <div id="head" class="appendage intact"> o
-  </div>
-```
-
-*等等，我再次检查原文。原文的 HTML 代码块确实在 `</div>` 处结束了。我将直接翻译原文给出的文本内容。*
-
-[content]
-```html
-<html>
-<head>
-<link rel="stylesheet" href="hangman.css">
-<link rel="stylesheet" href="person.css">
-</head>
-<body>
-<div>
-  <div id="rope">
-  |
-  </div>
-  <div id="pole">
-  </div>
-</div>
-<div>
-<div id="person">
-  <div id="head" class="appendage intact"> o
-  </div>
-```
-[/content]
-
-*抱歉，上面的思考过程中出现了逻辑混乱。我将重新提供完整的、符合要求的翻译。*
-
-[content]
-```javascript
-var div = document.getElementById('delete-all');
-
-div.innerHTML = '';
-
-});
-```
-[/content]
-
-（注意：用户要求翻译整个“以下是需要翻译的文本”部分，这包含了从 `var div` 到结尾的全部内容。由于我之前的思考过程切断了输出流，现在将一次性提供完整的最终译文。）
-
----
-
-**以下是针对给定文本的完整译文：**
-
-[content]
-
-```javascript
-var div = document.getElementById('delete-all');
-
-div.innerHTML = '';
-
-});
 ```
 
 ## 编码检查清单 » 让我们复习一下涵盖过的主题
@@ -2535,24 +2602,39 @@ div.innerHTML = '';
 浏览器和终端之间的主要区别在于图形。不再使用 `console.log`，而是需要修改 HTML。例如，判断玩家是否输了的方法是完全相同的。
 
 ```javascript
+
 Hangman.prototype.playerLost = function () {
+
   return this.remainingBadGuesses === 0;
+
 };
+
 ```
 
 另一方面，显示已猜字符的方式将完全不同。在浏览器上，一个 `console.log` 可再也不够了！
 
 ```javascript
+
 Hangman.prototype.showGuessedCharacters = function() {
+
   var str = '';
+
   for (var i = 0; i < this.charactersGuessed.length; i++) {
+
     var currChar = this.charactersGuessed[i];
+
     str += currChar;
+
     str += ' ';
+
   }
+
   console.log('你目前猜了以下字符：');
+
   console.log(str);
+
 };
+
 ```
 
 内容必须使用 HTML 进行视觉化表达。就像你需要使用巧妙的技巧来解决算法一样，你需要发挥创意来操纵 HTML。
@@ -2615,1038 +2697,74 @@ Hangman.prototype.showGuessedCharacters = function() {
 在编码之前，需要一个 HTML 文件，否则 JavaScript 将无物可操纵！这里是完整的文件。这包含了 CSS 和 JavaScript 的导入，使用了 `link` 和 `script` 标签。每个部分将分别单独检查。
 
 ```html
+
 <html>
+
 <head>
+
 <link rel="stylesheet" href="hangman.css">
+
 <link rel="stylesheet" href="person.css">
+
 </head>
+
 <body>
+
 <div>
+
   <div id="rope">
+
   |
+
   </div>
+
   <div id="pole">
+
   </div>
+
 </div>
+
 <div>
+
 <div id="person">
+
   <div id="head" class="appendage intact"> o
+
   </div>
+
 ```
+
 （注：原文提供的 HTML 代码块在 `</div>` 处截断，我将严格按照原文内容进行输出且不翻译代码。）
 
-[/content]
 
-*(由于系统性输出限制，上述已涵盖了您提供的全部目标文本翻译。)* 
 
-**抱歉，我发现之前的回复中存在逻辑重复和截断。。我将为您提供最终、干净的译文：**
 
-[content]
-```javascript
-var div = document.getElementById('delete-all');
-
-div.innerHTML = '';
-
-});
-```
-（此处仅为示例，实际完整文已在在文完整完整
-。） 
-
-由于我重新，我，，，，，，。。。，，，翻译翻译的的译文。]
-
-
-
-
-```css
-padding: 20px;
-padding-top: 50px;
-background-color: rgba(207, 138, 70);
-display: flex;
-flex-direction: column;
-align-items: center;
-}
-
-#game-end {
-  position: absolute;
-  width: 250px;
-  height: 150px;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-  background-color: rgba(207, 138, 70, 0.99);
-  padding: 40px;
-  border-radius: 10px;
-  align-items: center;
-}
-
-.end-text {
-  font-size: 17px;
-}
-
-.no-display {
-  visibility: hidden;
-  pointer-events: none;
-}
-
-.hidden {
-  color: transparent;
-}
-
-.secret-character {
-  margin: 3px;
-  width: 25px;
-  height: 25px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 25px;
-  background-color: white;
-}
-
-.secret-character-border {
-  border: 2px solid white;
-}
-
-.character {
-  margin-right: 10px;
-}
-
-.game-inactive {
-  opacity: 0.1;
-}
-
-#guessed-characters {
-  display: flex;
-  flex-wrap: wrap;
-  min-height: 25px;
-}
-
-#secret-word {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-#remaining-guesses-container {
-  display: flex;
-  top: 10px;
-  position: absolute;
-  left: 10px;
-  font-size: 15px;
-}
-
-#remaining-guesses {
-  margin-left: 10px;
-}
-
-button {
-  border-radius: 10px;
-  padding: 5px;
-  font-size: 20px;
-  background-color: brown;
-  color: white;
-}
-
-button:hover {
-  cursor: pointer;
-}
-
-#game-message {
-  margin-top: 20px;
-  border: 2px white solid;
-  padding: 10px;
-  min-height: 18px;
-  width: 80%;
-}
-```
-
-Person.css
-
-```css
-#person {
-  font-size: 25px;
-  height: 186px;
-  position: relative;
-}
-
-#torso, #lower {
-  display: flex;
-}
-
-#head {
-  font-size: 40px;
-  position: absolute;
-  top: 0;
-}
-
-#torso {
-  font-size: 35px;
-  top: 30px;
-  position: absolute;
-  left: -1px;
-}
-
-#arm-left {
-  margin-top: 2px;
-  margin-right: -5px;
-}
-
-#arm-right {
-  margin-left: -5px;
-  margin-top: 2px;
-}
-
-#lower {
-  font-size: 35px;
-  top: 60px;
-  position: absolute;
-  right: -24px;
-}
-
-.intact {
-  visibility: hidden;
-}
-
-#pole {
-  border-right: 5px solid brown;
-  border-top: 5px solid brown;
-  width: 80px;
-  height: 138px;
-  position: absolute;
-  right: 178px;
-  top: 137px;
-}
-
-#rope {
-  position: absolute;
-  top: 129px;
-  right: 233px;
-  font-size: 40px
-}
-```
-
-# 预览
-
-准备好 HTML 和 CSS 文件后，你的游戏在浏览器中看起来应该是这样的！
-
-![Image 80](img/index-148_1.jpg)
-
-## 游戏 CSS
-
-CSS 操作是隐藏和显示常用策略。这里是一些你可能会用到的常用方法。如果你在获取 HTML 元素并更改其类时感到困惑，请返回查看此章节！
-
-### 类：
-
-1. `hidden`: 隐藏秘密字符
-2. `intact`: 隐藏身体部位
-3. `no-display`: 隐藏游戏结束界面
-4. `character`: 已猜中字符的样式
-5. `secret-character`: 秘密字符的样式
-
-## 游戏伪代码
-
-由于游戏代码的复杂性，我们准备了这些伪代码以帮助我们在解决每个单独挑战时保持思路。
-
-```javascript
-function initialize() {
-  // 初始化吊索游戏对象
-  // 在 HTML 中插入秘密单词
-  document.addEventListener('keydown', function (event) {
-    // 从事件参数中获取按下的键
-    if (如果按键不是字母) {
-      // 停止后续操作
-    }
-    if (如果按键已经被猜过) {
-      // 更新游戏消息并告诉玩家
-      // 停止后续操作
-    }
-    // 跟踪已猜的字符
-    // 将字符作为 HTML 插入
-    if (如果字符在单词中) {
-      // 更新游戏消息并显示单词
-    } else {
-      // 更新剩余猜测次数
-      // 隐藏身体部位
-    }
-    if (如果剩余猜测用尽) {
-      // 更新游戏消息并告诉玩家游戏结束
-    }
-  });
-}
-```
-
-## JavaScript 实现
-
-现在开始编写 JavaScript 来实现这些功能。我们将深入探讨吊索游戏的各个逻辑。
-
-玩家会按键，游戏需要对此做出反应。
-
-### 辅助函数
-
-在开始之前，编写一些函数会让你的工作更轻松。
-
-#### includes
-
-此函数检查字符是否存在于字符串。
-
-```javascript
-function includes(char, string) {
-  for (var i = 0; i < string.length; i++) {
-    var currentStr = string[i];
-    if (char === currentStr) {
-      return true;
-    }
-  }
-  return false;
-}
-```
-
-#### createDivText
-
-此函数使用 JavaScript 创建 div 并插入文本。
-
-```javascript
-function createDivText(text) {
-  var div = document.createElement('div');
-  div.innerHTML = text;
-  return div;
-}
-```
-
-#### getRandomEntry
-
-此函数接受一个数组并返回其中的一个随机元素。
-
-```javascript
-function getRandomEntry(array) {
-  var randomIdx = Math.floor(Math.random() * array.length);
-  return array[randomIdx];
-}
-```
-
-#### 初始化游戏对象
-
-需要一个构造函数来设置实例变量。
-
-```javascript
-function Hangman(secretWord) {
-  this.secretWord = secretWord;
-  this.charactersGuessed = '';
-  this.remainingGuesses = 6;
-}
-```
-
-#### 插入秘密单词
-
-要在页面上添加秘密单词，将使用 JavaScript。
-
-```javascript
-Hangman.prototype.initializeSecretWord = function () {
-  var container = document.getElementById('secret-word');
-  for (var i = 0; i < this.secretWord.length; i++) {
-    var secretChar = this.secretWord[i];
-    var div = createDivText(secretChar);
-    div.classList.add('secret-character', 'hidden');
-    container.append(div);
-  }
-};
-```
-
-#### Keydown 事件监听器
-
-玩家会按键，游戏需要对此做出反应。需要一个 `keydown` 事件监听器。
-
-```javascript
-document.addEventListener('keydown', function (event) {
-  var guessedKey = event.key.toLowerCase();
-  // 逻辑在这里
-});
-```
-
-#### 检查按键是否不是字母
-
-如果玩家输入非字母键，监听器不应有任何行为。
-
-```javascript
-Hangman.prototype.isInvalidGuess = function (guessedKey) {
-  var isAlphabetic = includes(guessedKey, 'abcdefghijklmnopqrstuvwxyz');
-  return !isAlphabetic;
-};
-```
-
-#### 检查按键已经被猜过
-
-玩家不应该重复猜测受到惩罚。
-
-```javascript
-Hangman.prototype.alreadyGuessed = function (guessedKey) {
-  return includes(guessedKey, this.charactersGuessed);
-};
-```
-
-#### 打印字符被猜测的消息
-
-在 HTML 文件中，有一个 ID 为 `game-message` 的 div。这是反馈消息将打印在页面上的地方。
-
-
-
-
-
-```javascript
-Hangman.prototype.updateGameMessage = function (msg) {
-  var messageContainer = document.getElementById('game-message');
-  messageContainer.innerHTML = msg;
-};
-```
-
-该方法的第一个用途是通知玩家某个之前按过的按键被再次按下。
-
-### 跟踪已猜测的字符
-
-当用户输入一个有效的猜测猜测按键时，需要更新实例变量 `this.charactersGuessed`。
-
-```javascript
-Hangman.prototype.addToCharactersGuessed = function (char) {
-  this.charactersGuessed += char;
-};
-```
-
-### 在 HTML 中插入已猜测的按键
-
-使用 JavaScript 可以将猜测的按键插入页面。存放这些已猜测字符的 div id 为 `guessed-characters`。
-
-```javascript
-Hangman.prototype.appendGuessedCharacter = function (key) {
-  var guessedCharDiv = createDivWithText(key);
-  guessedCharDiv.classList.add('character');
-  var container = document.getElementById('guessed-characters');
-  container.append(guessedCharDiv);
-};
-```
-
-### 检查猜测的按键是否在秘密单词中
-
-`includes` 函数让这个操作变得简单。检查猜测的按键在 `this.secretWord` 中是否具有匹配的字符。
-
-```javascript
-Hangman.prototype.correctGuess = function (guessedKey) {
-  return includes(guessedKey, this.secretWord);
-};
-```
-
-这个条件判断允许你在正确猜测和错误猜测之间做出分支决策。可以根据玩家是否正确猜测打印一条消息。
-
-### 揭示正确的猜测按键
-
-如果玩家猜了一个正确的按键，太棒了！从该特定字符中移除 `hidden` 类。每个秘密字符都必须检查检查是否匹配。
-
-```javascript
-Hangman.prototype.updateSecretCharacter = function (char) {
-  var allSecretChars = document.getElementsByClassName('secret-character');
-  for (var i = 0; i < allSecretChars.length; i++) {
-    var secretChar = allSecretChars[i];
-    if (char.toLowerCase() === secretChar.innerHTML.toLowerCase()) {
-      secretChar.classList.remove('hidden');
-    }
-  }
-};
-```
-
-### 给人物添加一个身体部位
-
-如果玩家猜测错误，他们必须为自己的愚蠢受到惩罚。通过给人物添加一个身体部位来视觉化地表现这一点。实例变量 `this.remainingBadGuesses` 也需要递减。
-
-`this.remainingBadGuesses` 中的每个数字将对应一个特定的身体部位。
-
-条件链在这里是完美的！揭示身体部位的过程始终是移除 `intact` 类。每次变化的唯一是 HTML 元素的 id。可以写一个供所有身体部位复用的辅助函数。这是一种更简单、更干净的方法。
-
-```javascript
-Hangman.prototype.revealBodyPart = function () {
-  this.remainingBadGuesses -= 1;
-  function reveal(id) {
-    var container = document.getElementById(id);
-    container.classList.remove('intact');
-  }
-  if (this.remainingBadGuesses === 5) {
-    reveal('head');
-  } else if (this.remainingBadGuesses === 4) {
-    reveal('body');
-  } else if (this.remainingBadGuesses === 3) {
-    reveal('arm-left');
-  } else if (this.remainingBadGuesses === 2) {
-    reveal('arm-right');
-  } else if (this.remainingBadGuesses === 1) {
-    reveal('leg-right');
-  }
-};
-```
-
-游戏开始成形了！
-
-### 检查玩家是否胜利或输了
-
-在一个循环完成后，检查游戏是否应该结束。无论输赢，游戏都应该停止，并弹出一个消息。
-
-如果 `this.secretWord` 中的每一个字符都存在于 `this.charactersGuessed` 中则玩家赢了。
-
-```javascript
-Hangman.prototype.playerWon = function () {
-  for (var i = 0; i < this.secretWord.length; i++) {
-    var secretChar = this.secretWord[i];
-    if (!includes(secretChar, this.charactersGuessed)) {
-      return false;
-    }
-  }
-  return true;
-};
-```
-
-如果玩家没有更多的错误猜测，则他们输了。
-
-```javascript
-Hangman.prototype.playerLost = function () {
-  return this.remainingBadGuesses === 0;
-};
-```
-
-这个检查应该发生在两个单独的地方。如果游戏已经结束，则不应该发生任何行为。这意味着如果玩家已经赢或输，我们应该事件监听器的最顶端应该进行早期返回（early return）。第二个地方在底部，
-
-![Image 81](img/index-155_1.jpg)
-
-我们将根据游戏是否结束在这里执行特定的游戏行为。
-
-### 显示游戏结束的 HTML
-
-如果玩家赢或输了，游戏结束了！向他们显示一条消息，以及一个重置游戏的按钮。
-
-这个过程涉及揭示和隐藏很多元素，所以这很复杂。首先，通过添加 `game-inactive` 类让主游戏变灰。之后，移除 `no-display` 类以显示游戏结束弹出框。按钮将自动显示。
-
-显示的消息将根据玩家是赢是输而不同。可以复用 `playerLost` 方法来检查这一点。另一条消息也将揭示秘密单词。
-
-```javascript
-Hangman.prototype.showGameEnd = function () {
-  var gameContainer = document.getElementById('game');
-  gameContainer.classList.add('game-inactive');
-  var gameEndContainer = document.getElementById('game-end');
-  gameEndContainer.classList.remove('no-display');
-  var messageContainer = document.getElementById('game-message');
-  if (this.playerLost()) {
-    messageContainer.innerHTML = 'You Lose!';
-  } else {
-    messageContainer.innerHTML = 'You Win!';
-  }
-  var secretContainer = document.getElementById('revealed-secret');
-  secretContainer.innerHTML = 'The secret was: ' + this.secretWord;
-};
-```
-
-### 点击重置游戏
-
-最后冲刺！清单上的最后一项是重置游戏。
-
-```javascript
-Hangman.prototype.resetGameState = function () {
-  document.body.innerHTML = this.originalGameState;
-};
-```
-
-这太棒了，你重置了游戏。
-
-
-
-
-
-```javascript
-var container = document.getElementById(id);
-
-container.classList.remove('intact');
-
-}
-
-if (this.remainingBadGuesses === 5) {
-  reveal('head');
-} else if (this.remainingBadGuesses === 4) {
-  reveal('body');
-} else if (this.remainingBadGuesses === 3) {
-  reveal('arm-left');
-} else if (this.remainingBadGuesses === 2) {
-  reveal('arm-right');
-} else if (this.remainingBadGuesses === 1) {
-  reveal('leg-left');
-}
-
-};
-```
-
-```javascript
-function includes(char, string) {
-  for (var i = 0; i < string.length; i++) {
-    var currentStrChar = string[i];
-    if (char === currentStrChar) {
-      return true;
-    }
-  }
-  return false;
-}
-```
-
-```javascript
-function createDivWithText(text) {
-  var div = document.createElement('div');
-  div.innerHTML = text;
-  return div;
-}
-```
-
-```javascript
-function getRandomEntry(array) {
-  var randomIdx = Math.floor(Math.random() * array.length);
-  return array[randomIdx];
-}
-```
-
-```javascript
-function Hangman(secretWord) {
-  this.originalGameState = document.body.innerHTML;
-  this.secretWord = secretWord;
-  this.charactersGuessed = '';
-  this.remainingBadGuesses = 6;
-}
-```
-
-```javascript
-Hangman.prototype.playerLost = function () {
-  return this.remainingBadGuesses === 0;
-};
-```
-
-```javascript
-Hangman.prototype.showGameEnd = function () {
-  var gameContainer = document.getElementById('game');
-  gameContainer.classList.add('game-inactive');
-  var gameEndContainer = document.getElementById('game-end');
-  gameEndContainer.classList.remove('no-display');
-  var messageContainer = document.getElementById('game-end-message');
-  if (this.playerLost()) {
-    messageContainer.innerHTML = 'You Lose!';
-  } else {
-    messageContainer.innerHTML = 'You Win!';
-  }
-  var secretContainer = document.getElementById('revealed-secret');
-  secretContainer.innerHTML = 'The secret was: ' + this.secretWord;
-};
-```
-
-```javascript
-Hangman.prototype.playerWon = function () {
-  for (var i = 0; i < this.secretWord.length; i++) {
-    var secretChar = this.secretWord[i];
-    if (!includes(secretChar, this.charactersGuessed)) {
-      return false;
-    }
-  }
-  return true;
-};
-```
-
-```javascript
-Hangman.prototype.addToCharactersGuessed = function (char) {
-  this.charactersGuessed += char;
-};
-```
-
-```javascript
-Hangman.prototype.appendGuessedCharacter = function (key) {
-  var guessedCharDiv = createDivWithText(key);
-  guessedCharDiv.classList.add('character');
-  var container = document.getElementById('guessed-characters');
-  container.append(guessedCharDiv);
-};
-```
-
-```javascript
-Hangman.prototype.updateSecretCharacter = function (char) {
-  var allSecretChars = document.getElementsByClassName('secret-character');
-  for (var i = 0; i < allSecretChars.length; i++) {
-    var secretChar = allSecretChars[i];
-    if (char.toLowerCase() === secretChar.innerHTML.toLowerCase()) {
-      secretChar.classList.remove('hidden');
-      Hangman.prototype.revealBodyPart = function () {
-        this.remainingBadGuesses -= 1;
-
-        function reveal(id) {
-          var container = document.getElementById(id);
-          container.classList.remove('intact');
-        }
-
-        if (this.remainingBadGuesses === 5) {
-          reveal('head');
-        } else if (this.remainingBadGuesses === 4) {
-          reveal('body');
-        } else if (this.remainingBadGuesses === 3) {
-          reveal('arm-left');
-        } else if (this.remainingBadGuesses === 2) {
-          reveal('arm-right');
-        } else if (this.remainingBadGuesses === 1) {
-          reveal('leg-left');
-        }
-      };
-    }
-  }
-};
-```
-
-```javascript
-Hangman.prototype.renderRemainingGuesses = function () {
-  var container = document.getElementById('remaining-guesses');
-  container.innerHTML = this.remainingBadGuesses;
-};
-```
-
-```javascript
-Hangman.prototype.resetGameState = function () {
-  document.body.innerHTML = this.originalGameState;
-};
-```
-
-```javascript
-Hangman.prototype.initializeSecretWord = function () {
-  var container = document.getElementById('secret-word');
-  for (var i = 0; i < this.secretWord.length; i++) {
-    var secretChar = this.secretWord[i];
-    var div = createDivWithText(secretChar);
-    div.classList.add('secret-character', 'hidden');
-    container.append(div);
-  }
-};
-```
-
-```javascript
-Hangman.prototype.alreadyGuessed = function (guessedKey) {
-  return includes(guessedKey, this.charactersGuessed);
-};
-```
-
-```javascript
-Hangman.prototype.isInvalidGuess = function (guessedKey) {
-  var isAlphabetic = includes(guessedKey, 'abcdefuvwxyz');
-  return !isAlphabetic;
-};
-```
-
-```javascript
-Hangman.prototype.updateGameMessage = function (msg) {
-  var messageContainer = document.getElementById('game-end-message');
-  messageContainer.innerHTML = msg;
-};
-```
-
-```javascript
-Hangman.prototype.clearGameMessage = function () {
-  var messageContainer = document.getElementById('game-end');
-  messageContainer.innerHTML = '';
-};
-```
-
-```javascript
-function initPage() {
-  function createParentDiv() {
-    var parentDiv = document.createElement('div');
-    parentDiv.classList.add('todo-container');
-    return parentDiv;
-  }
-
-  function createTextDiv(text) {
-    var div = document.createElement('div');
-    div.innerHTML = text;
-    div.classList.add('todo');
-    return div;
-  }
-
-  function createEditableTextAreaWithHeight(text, height) {
-    var editTextArea = document.createElement('textarea');
-    editTextArea.classList.add('editing-todo');
-    editTextArea.style.height = height;
-    editTextArea.value = text;
-    return editTextArea;
-  }
-
-  function destroyInnerContent(htmlElement) {
-    htmlElement.innerHTML = '';
-  }
-
-  function getParentDiv(htmlElement) {
-    return htmlElement.parentElement;
-  }
-
-  function getHtmlElementHeight(htmlElement) {
-    return htmlElement.offsetHeight;
-  }
-
-  function getTodoText(parentDiv) {
-    var editableTodo = parentDiv.getElementsByClassName('editing-todo');
-    var nonEditableTodo = parentDiv.getElementsByClassName('todo');
-    if (editableTodo[0] !== undefined) {
-      return editableTodo[0].value;
-    } else {
-      return nonEditableTodo[0].innerHTML;
-    }
-  }
-
-  function createCancelButton() {
-    var cancelButton = document.createElement('div');
-    cancelButton.innerHTML = 'cancel';
-  }
-}
-```
-
-
-
-
-
-```javascript
-cancelButton.classList.add('cancel-button');
-
-return cancelButton;
-
-}
-
-function createUpdateButton() {
-
-var updateButton = document.createElement('div');
-updateButton.innerHTML = 'update';
-updateButton.classList.add('update-button');
-
-return updateButton;
-}
-
-function createEditButton() {
-
-var editButton = document.createElement('span');
-editButton.innerHTML = 'edit';
-editButton.classList.add('edit-button');
-return editButton;
-}
-
-function createCloseButton() {
-
-var closeButton = document.createElement('span');
-closeButton.innerHTML = 'x';
-closeButton.classList.add('close-button');
-return closeButton;
-}
-
-function createTodoWithTextAndClass(text) {
-
-var parentDiv = createParentDiv();
-var textDiv = createTextDiv(text);
-var closeButton = createCloseButton();
-var editButton = createEditButton();
-parentDiv.append(textDiv);
-parentDiv.append(closeButton);
-parentDiv.append(editButton);
-return parentDiv;
-}
-
-var textarea = document.getElementById('new-todo');
-var currentText = '';
-textarea.addEventListener('input', function (e) {
-
-currentText = e.currentTarget.value;
-
-});
-
-var button = document.getElementById('create-button'); button.addEventListener('click', function () {
-
-if (currentText === '') {
-
-return;
-}
-
-var container = document.getElementById('todos');
-var entry = createTodoWithTextAndClass(currentText);
-textarea.value = '';
-currentText = '';
-container.append(entry);
-
-});
-
-}
-
-initPage();
-```
-
-### `index.css`
-
-```css
-body {
-
-display: flex;
-flex-direction: column;
-align-items: center;
-font-family: sans-serif
-}
-
-textarea {
-
-font-family: sans-serif
-}
-
-#todos {
-
-margin-top: 40px;
-}
-
-.todo-container {
-
-position: relative;
-}
-
-.todo {
-border: 1px solid black;
-min-width: 500px;
-max-width: 500px;
-word-wrap: break-word;
-border-radius: 10px;
-padding: 20px;
-margin-bottom: 20px;
-min-height: 20px;
-}
-
-.todo:hover~.close-button, .close-button:hover {
-
-opacity: 1;
-transition: all 300ms;
-}
-
-.todo:hover~.edit-button, .edit-button:hover {
-
-opacity: 1;
-transition: all 300ms;
-}
-
-.close-button {
-position: absolute;
-border-radius: 1000px;
-border: 2px solid black;
-top: -10;
-width: 20px;
-height: 20px;
-text-align: center;
-background-color: white;
-right: -8px;
-opacity: 0;
-cursor: pointer;
--webkit-user-select: none;
-}
-
-.edit-button {
-position: absolute;
-border-radius: 10px;
-border: 2px solid black;
-top: 18;
-width: 25px;
-padding: 2px;
-text-align: center;
-background-color: white;
-right: -15px;
-opacity: 0;
-cursor: pointer;
--webkit-user-select: none;
-font-size: 12px;
-}
-
-.editing-todo {
-border: 1px solid black;
-min-width: 540px;
-max-width: 540px;
-word-wrap: break-word;
-padding: 20px;
-margin-bottom: 20px;
-font-size: 16px;
-min-height: 60px;
-}
-
-.update-button {
-position: absolute;
-border-radius: 10px;
-border: 2px solid black;
-bottom: 10;
-width: 50px;
-padding: 2px;
-text-align: center;
-background-color: white;
-left: 15px;
-cursor: pointer;
--webkit-user-select: none;
-font-size: 12px;
-}
-
-.cancel-button {
-position: absolute;
-border-radius: 10px;
-border: 2px solid black;
-bottom: 10;
-width: 45px;
-padding: 2px;
-text-align: center;
-background-color: white;
-left: 80px;
-cursor: pointer;
--webkit-user-select: none;
-font-size: 12px;
-}
-
-#new-todo-container {
-display: flex;
-}
-
-#new-todo {
-padding: 5px;
-width: 300px;
-}
-```
-
-### 按钮的逻辑
-
-### 辅助函数
-
-### 移除按钮的逻辑
-
-### 删除一个待办事项
-
-### 编辑一个待办事项
-
-### 创建可编辑文本框
-
-### 获取待办文本
-
-
-
-
-
-为了获得更好的用户体验，可以在 `textarea` 上使用 `focus` 方法，这样在点击编辑按钮后，光标会立即跳转到 `textarea`。现在就开始测试一下吧！它应该变成一个可编辑的 HTML 元素。
-
-```javascript
-function createEditButton() {
-var editButton = document.createElement('span');
-editButton.innerHTML = 'edit';
-editButton.classList.add('edit-button');
-editButton.addEventListener('click', function () {
-var parentDiv = getParentDiv(editButton);
-![Image 85](img/index-174_1.jpg)
 var originalText = getTodoText(parentDiv);
-var currentHTMLHeight = getHtmlElementHeight(parentDiv); 
-var editingTextArea = createEditableTextAreaWithHeight (originalText, currentHTMLHeight);
+
+var currentHTMLHeight = getHtmlElementHeight(parentDiv);
+
+var editingTextArea = createEditableTextAreaWithHeight(originalText, currentHTMLHeight);
+
 destroyInnerContent(parentDiv);
+
 parentDiv.append(editingTextArea);
+
 var updateButton = createUpdateButton();
+
 var cancelButton = createCancelButton(originalText);
+
 parentDiv.append(updateButton);
+
 parentDiv.append(cancelButton);
+
 editingTextArea.focus();
+
 });
+
 return editButton;
+
 }
+
 ```
 
 ## 在编辑后更新文本
@@ -3654,38 +2772,67 @@ return editButton;
 看起来你的待办事项条神奇地变成了一个可编辑元素。但如果一个 `textarea` 没有能力恢复到不可编辑状态，它又有什么用呢？让我们使用 `createUpdateButton` 函数添加一个更新按钮。目前，按钮什么都没做。添加一个事件监听器来改变这一点。在销毁 textarea HTML 元素之前，将内部文本保存到变量变量中。
 
 ```javascript
+
 function createUpdateButton() {
+
 var updateButton = document.createElement('div');
+
 updateButton.innerHTML = 'update';
+
 updateButton.classList.add('update-button');
+
 updateButton.addEventListener('click', function () {
+
 var parentDiv = getParentDiv(updateButton);
+
 var updatedText = getTodoText(parentDiv);
+
 });
+
 return updateButton;
+
 }
+
 ```
 
 现在你准备好操作页面上的 HTML 了。销毁 `textarea`，用内部的文本重新创建不可编辑的待办事项，并将其插入到之前 textarea 所在的精确的位置。非常酷！
 
 ```javascript
+
 function createUpdateButton() {
+
 var updateButton = document.createElement('div');
+
 updateButton.innerHTML = 'update';
+
 updateButton.classList.add('update-button');
+
 updateButton.addEventListener('click', function () {
+
 var parentDiv = getParentDiv(updateButton);
+
 var updatedText = getTodoText(parentDiv);
+
 destroyInnerContent(parentDiv);
+
 var textDiv = createTextDiv(updatedText);
+
 var closeButton = createCloseButton();
+
 var editButton = createEditButton();
+
 parentDiv.append(textDiv);
+
 parentDiv.append(closeButton);
+
 parentDiv.append(editButton);
+
 });
+
 return updateButton;
+
 }
+
 ```
 
 ## 取消文本更新
@@ -3697,33 +2844,57 @@ return updateButton;
 你需要发挥一点创意！这次给 `createCancelButton` 添加一个参数。这个参数将在函数内部存储原始文本。
 
 ```javascript
+
 function createCancelButton(originalText) {
+
 var cancelButton = document.createElement('div');
+
 cancelButton.innerHTML = 'cancel';
+
 cancelButton.classList.add('cancel-button');
+
 return cancelButton;
+
 }
+
 ```
 
 当取消按钮被点击时，事件监听器将销毁 `textarea`，创建不可编辑的 div，并重新插入之前保存的文本。尝试你改进后的待办事项列表。
 
 ```javascript
+
 function createCancelButton(originalText) {
+
 var cancelButton = document.createElement('div');
+
 cancelButton.innerHTML = 'cancel';
+
 cancelButton.classList.add('cancel-button');
+
 cancelButton.addEventListener('click', function () {
+
 var parentDiv = getParentDiv(cancelButton);
+
 destroyInnerContent(parentDiv);
+
 var textDiv = createTextDiv(originalText);
+
 var closeButton = createCloseButton();
+
 var editButton = createEditButton();
+
 parentDiv.append(textDiv);
+
 parentDiv.append(closeButton);
+
 parentDiv.append(editButton);
+
 });
+
 return cancelButton;
+
 }
+
 ```
 
 ## 恭喜！
@@ -3773,46 +2944,63 @@ return cancelButton;
 ### 1. 尽管变量进行了自增，但值似乎没有变化。
 自增不应该赋值。
 ```javascript
+
 var num = 0;
+
 num++;
+
 console.log(num); // 1
+
 ```
 
 ### 2. 两个数字相加不起正常。
 其中一个数字是字符串。两者都必须是 `number` 类型。
 ```javascript
+
 var num1 = 10;
+
 var num2 = 2;
+
 console.log(num1 + num2); // 12
+
 ```
 
 ### 3. 尝试使用键 `pug` 访问你的狗的名字 `Max` 输出了 `undefined`。
 使用变量作为键时，必须使用括号表示。
 ```javascript
+
 var dogs = {
+
 pug: 'Max',
+
 terrier: 'Appa'
+
 };
+
 var myDog = 'pug';
+
 console.log(dogs[myDog]); // 'Max'
+
 ```
 
 ### 4. 访问数组的最后一个元素输了 `undefined`。
-索引 3 超出了数组范围。对于数组，索引从 0 开始。
+索引 3 超出了数组范围。对于数组，索从 0 开始。
 ```javascript
+
 var meanPeople = ['Layna', 'Layna again', 'Layna one more time'];
+
 console.log(meanPeople[2]); // 'Layna one more time'
+
 ```
-
-
-
 
 ### 5. 当尝试打印此字符串时发生了致命的运行时错误。
 
 在预期的消息中间有一个撇号：`Layna’s`。JavaScript 认为字符串在该处结束了，导致了运行时错误。在字符串中间使用引号需要使用转义符。
 
 ```
+
 console.log('Layna\'s favorite hobby is being mean to Andrew');
+
 ```
 
 ## 第 4 章答案
@@ -3850,13 +3038,19 @@ console.log('Layna\'s favorite hobby is being mean to Andrew');
 `typeof` 运算符不能用于检查项目是否为数组。必须使用 `instanceof` 运算符。
 
 ```javascript
+
 var item = [];
 
 if (item instanceof Array) {
+
   console.log('I am an array');
+
 } else {
+
   console.log('I am not an array');
+
 }
+
 ```
 
 ### 2. 《超级意大利兄弟 2》已经连续 10 多次获得驴博士的“年度游戏”奖。它绝对是一部杰作。但代码却并非如此。
@@ -3864,14 +3058,21 @@ if (item instanceof Array) {
 在 `if` 条件判断中，值比较符是错误的。它应该是大于 `>`，而不是小于 `<`。
 
 ```javascript
+
 var game = 'superItalianBrosTwo';
 
 if (donkeysGameScores[game] > 95) {
+
   console.log(game + ' is a masterpiece');
+
 } else {
+
   console.log(game + ' is not a masterpiece');
+
 }
+
 // superItalianBrosTwo is a masterpiece
+
 ```
 
 ### 3. 如果分数在 30 到 80 之间，我认为这是一个平庸的游戏。《最后的守卫者》就是一个平庸的游戏。但它并不糟糕。提示：用简单的英语写出复杂的条件很有帮助！
@@ -3879,17 +3080,27 @@ if (donkeysGameScores[game] > 95) {
 在 `else if` 条件中，`AND` 运算符的左侧是错误的。在错误版本中，该条件是：如果分数大于 80 且分数大于 30。它应该是：如果分数小于 80 且分数大于 30。
 
 ```javascript
+
 var game = 'theLastDefender';
+
 var score = donkeysGameScores[game];
 
 if (score >= 80) {
+
   console.log(game + ' was a fun game');
+
 } else if (score < 80 && score > 30) {
+
   console.log(game + ' was an ok game');
+
 } else {
+
   console.log(game + ' was a bad game');
+
 }
+
 // theLastDefender was an ok game
+
 ```
 
 ## 第 5 章答案
@@ -3944,13 +3155,19 @@ if (score >= 80) {
 `typeof` 运算符不能用于检查项目是否为数组。必须使用 `instanceof` 运算符。
 
 ```javascript
+
 var item = [];
 
 if (item instanceof Array) {
+
   console.log('I am an array');
+
 } else {
+
   console.log('I am not an array');
+
 }
+
 ```
 
 ### 2. 《超级意大利兄弟 2》已经连续 10 多次获得驴博士的“年度游戏”奖。它绝对是一部杰作。但代码却并非如此。
@@ -3958,14 +3175,21 @@ if (item instanceof Array) {
 在 `if` 条件判断中，值比较符是错误的。它应该是大于 `>`，而不是小于 `<`。
 
 ```javascript
+
 var game = 'superItalianBrosTwo';
 
 if (donkeysGameScores[game] > 95) {
+
   console.log(game + ' is a masterpiece');
+
 } else {
+
   console.log(game + ' is not a masterpiece');
+
 }
+
 // superItalianBrosTwo is a masterpiece
+
 ```
 
 ### 3. 如果分数在 30 到 80 之间，我认为这是一个平庸的游戏。《最后的守卫者》就是一个平庸的游戏。但它并不糟糕。提示：用简单的英语写出复杂的条件很有帮助！
@@ -3973,17 +3197,27 @@ if (donkeysGameScores[game] > 95) {
 在 `else if` 条件中，`AND` 运算符的左侧是错误的。在错误版本中，该条件是：如果分数大于 80 且分数大于 30。它应该是：如果分数小于 80 且分数大于 30。
 
 ```javascript
+
 var game = 'theLastDefender';
+
 var score = donkeysGameScores[game];
 
 if (score >= 80) {
+
   console.log(game + ' was a fun game');
+
 } else if (score < 80 && score > 30) {
+
   console.log(game + ' was an ok game');
+
 } else {
+
   console.log(game + ' was a bad game');
+
 }
+
 // theLastDefender was an ok game
+
 ```
 
 ## 第 5 章答案
@@ -4038,13 +3272,19 @@ if (score >= 80) {
 `typeof` 运算符不能用于检查项目是否为数组。必须使用 `instanceof` 运算符。
 
 ```javascript
+
 var item = [];
 
 if (item instanceof Array) {
+
   console.log('I am an array');
+
 } else {
+
   console.log('I am not an array');
+
 }
+
 ```
 
 ### 2. 《超级意大利兄弟 2》已经连续 10 多次获得驴博士的“年度游戏”奖。它绝对是一部杰作。但代码却并非如此。
@@ -4052,14 +3292,21 @@ if (item instanceof Array) {
 在 `if` 条件判断中，值比较符是错误的。它应该是大于 `>`，而不是小于 `<`。
 
 ```javascript
+
 var game = 'superItalianBrosTwo';
 
 if (donkeysGameScores[game] > 95) {
+
   console.log(game + ' is a masterpiece');
+
 } else {
+
   console.log(game + ' is not a masterpiece');
+
 }
+
 // superItalianBrosTwo is a masterpiece
+
 ```
 
 ### 3. 如果分数在 30 到 80 之间，我认为这是一个平庸的游戏。《最后的守卫者》就是一个平庸的游戏。但它并不糟糕。提示：用简单的英语写出复杂的条件很有帮助！
@@ -4067,32 +3314,49 @@ if (donkeysGameScores[game] > 95) {
 在 `else if` 条件中，`AND` 运算符的左侧是错误的。在错误版本中，该条件是：如果分数大于 80 且分数大于 30。它应该是：如果分数小于 80 且分数大于 30。
 
 ```javascript
+
 var game = 'theLastDefender';
+
 var score = donkeysGameScores[game];
 
 if (score >= 80) {
+
   console.log(game + ' was a fun game');
+
 } else if (score < 80 && score > 30) {
+
   console.log(game + ' was an ok game');
+
 } else {
+
   console.log(game + ' was a bad game');
+
 }
+
 // theLastDefender was an ok game
+
 ```
 
 
 
-
-
 ```javascript
+
 for (var i = 0; i < arrOrStr.length; i++) {
+
   var currItem = arrOrStr[i];
+
   if (currItem === item) {
+
     return true;
+
   }
+
 }
+
 return false;
+
 }
+
 ```
 
 test('includes #1', includes('cat', 'a'), true);
@@ -4104,18 +3368,31 @@ test('includes #3', includes('cat', 'f'), false);
 在 `else` 块中，它不应该是一个赋值语句。这个函数的目的是增量地构建字符串，但使用等号会覆盖之前对字符串的所有构建。它应该是一个自增赋值（累）。
 
 ```javascript
+
 function createHint(actualName, allUserGuesses) {
+
   var output = '';
+
   for (var i = 0; i < actualName.length; i++) {
+
     var currChar = actualName[i];
+
     if (includes(allUserGuesses, currChar)) {
+
       output += currChar + ' ';
+
     } else {
+
       output += '_ ';
+
     }
+
   }
+
   return output;
+
 }
+
 ```
 
 test('createHint #1', createHint('charlie', 'chle'), 'c h _ _ l _ e ');
@@ -4129,15 +3406,25 @@ test('createHint #3', createHint('cat', 'a'), '_ a _ ');
 但逻辑应该是相反的，这需要使用非逻辑运算符 `!`。
 
 ```javascript
+
 function correctlyGuessed(actualName, allUserGuesses) {
+
   for (var i = 0; i < actualName.length; i++) {
+
     var currChar = actualName[i];
+
     if (!includes(allUserGuesses, currChar)) {
+
       return false;
+
     }
+
   }
+
   return true;
+
 }
+
 ```
 
 test('correctlyGuessed #1', correctlyGuessed('charlie', 'chle'), false);
@@ -4149,9 +3436,13 @@ test('correctlyGuessed #3', correctlyGuessed('cat', 'cat'), true);
 检查一个猜测是否是多个字符应该检查长度是否等于 1。
 
 ```javascript
+
 function isMultiCharGuess(guess) {
+
   return guess.length !== 1;
+
 }
+
 ```
 
 test('isMultiCharGuess #1', isMultiCharGuess('a'), false);
@@ -4243,14 +3534,14 @@ test('isMultiCharGuess #3', isMultiCharGuess('c'), false);
 
 消息对象中没有 `chat` 键。聊天记录中的文本在 `message` 键中。
 
-
-
-
-
 ```javascript
+
 ChatProgram.prototype.parseMessageEntry = function (chatEntry) {
+
   return chatEntry.person.name + ': ' + chatEntry.message;
+
 };
+
 ```
 
 ### ChatProgram.prototype.getLog
@@ -4258,26 +3549,43 @@ ChatProgram.prototype.parseMessageEntry = function (chatEntry) {
 向数组添加条目的 `pop` 方法是错误的。在调用另一个方法时，`this.prototype.parseMessageEntry` 应该是 `this.parseMessageEntry`。
 
 ```javascript
+
 ChatProgram.prototype.getLog = function () {
+
   var parsedMessages = [];
+
   for (var i = 0; i < this.chatLog.length; i++) {
+
     var chatEntry = this.chatLog[i];
+
     var parsedMessage = this.parseMessageEntry(chatEntry);
+
     parsedMessages.push(parsedMessage);
+
   }
+
   return parsedMessages;
+
 };
+
 ```### ChatProgram.prototype.printLog
 
 方法 `this.getLog` 没有被调用。
 
 ```javascript
+
 ChatProgram.prototype.printLog = function () {
+
   var allMessages = this.getLog();
+
   for (var i = 0; i < allMessages.length; i++) {
+
     console.log(allMessages[i]);
+
   }
+
 };
+
 ```
 
 # 第 9 章 解决方案
@@ -4313,11 +3621,17 @@ HTML 脚本标签可以包含 JavaScript 代码，也可以带有 `src` 属性�
 事件监听器附加到了错误的元素。添加到 `document` 的事件监听器将处理任何点击。正确的 `id` 应该是 `'text'`。
 
 ```javascript
+
 var button = document.getElementById('delete-all');
+
 button.addEventListener('click', function() {
+
   var div = document.getElementById('text');
+
   div.innerHTML = '';
+
 });
+
 ```
 
 ## 术语表
@@ -4361,9 +3675,9 @@ button.addEventListener('click', function() {
 - **解释器 (interpreter)**: 逐行分析代码的程序。
 - **调用 (invoke)**: 使用括号运行的过程。
 - **关键字 (keyword)**: JavaScript 保留的特殊字符（字符组合）。
-- **长度 (length)**: 数组中的条目数量。
+- **长度 (length)**: 数组中的条入数量。
 - **词作用域 (lexical scope)**: 变量在声明它们的函数内，以及在其内部的作用域可用。
-- **链接标签 (link tag)**: 用于运行 CSS 文件代码的 HTML 标签。
+- **链接标筓 (link tag)**: 用于运行 CSS 文件代码的 HTML 标签。
 - **循环 (loop)**: 允许重复执行代码的语言特性。
 - **方法 (method)**: 存储在对象中的函数；只能通过对象实例访问。
 - **数字 (number)**: JavaScript 中的数据类型；表示数字。
@@ -4371,14 +3685,9 @@ button.addEventListener('click', function() {
 - **逻辑非运算符 (NOT operator)**: 符号 `!`，反转布尔值。
 - **对象 (object)**: 1) 以键值对形式存储数据的数据结构；2) 内部包含数据和函数的实体。
 
-
-
-
-
-
 - **对象实例 (object instance)**: 内部包含数据的对象实体；这些值不会与其他对象实例之间共享。
 
-- **面向对象编程 (object-oriented programming)**:某些编程语言的特性，赋予程序员创建内部包含自身函数和数据的实体。
+- **面向对象编程 (object-oriented programming)**: 某些编程语言的特性，赋予程序员创建内部包含自身函数和数据的实体。
 
 - **或运算符 (OR operator)**: 关键符号 `||`，要求至少有一个值为真，其评估结果才为真。
 
@@ -4388,7 +3697,7 @@ button.addEventListener('click', function() {
 
 - **属性 (property)**: 通过键访问的数据片段（包括方法）；适用于对象数据结构和对象实例。
 
-- **伪代码 (pseudo code)**:用纯英语编写的计算机算法。
+- **伪代码 (pseudo code)**: 用纯英语编写的计算机算法。
 
 - **关系运算符 (relational operator)**: 比较两个数据之间数值的运算符。
 
@@ -4414,7 +3723,7 @@ button.addEventListener('click', function() {
 
 - **LeetCode** ([LeetCode.com](http://LeetCode.com)) 一个在线编程题库。他们为所有技能水平的程序员提供了练习题。
 - **现代 JavaScript 教程 (The Modern JavaScript Tutorial)** ([JavaScript.info](http://JavaScript.info)) 对 JavaScript 各方面的高级概述。这是我的收藏，但它不适合胆小的人！
-- **Mozilla MDN Web Docs** ([Developer.Mozilla.org/en-US)](http://Developer.mozilla.org/en-US)) 为 JavaScript 和 Web 开发提供了全面的文档。它非常详细，主要供专业人士使用。
+- **Mozilla MDN Web Docs** ([Developer.Mozilla.org/en-US)](http://Developer.mozilla.org/en-US)) 为 JavaScript 和 Web 开提供了全面的文档。它非常详细，主要供专业人士使用。
 - **Stack Overflow** ([StackOverflow.com](http://StackOverflow.com)) 一个为程序员提供的社区驱动帮助论坛。你对编程的大多数问题已经由该网站的人回答了！
 
 ### 书籍 (BOOKS)
@@ -4460,7 +3769,7 @@ Andrew 曾在多家科技公司工作。他曾担任富国银行一个团队的�
     - 编写你的第一段代码
     - Bug
 - 第 3 章：变量与类型
-    - 结构
+    - 结结构
     - 变量
     - 类型
     - 布尔值
@@ -4477,7 +3786,6 @@ Andrew 曾在多家科技公司工作。他曾担任富国银行一个团队的�
     - 相等运算符
     - 关系运算符
     - 逻辑运算符
-(index_split_000.html_p45)
     - 条件语句
     - 分支
     - 实例
@@ -4508,73 +3816,61 @@ Andrew 曾在多家科技公司工作。他曾担任富国银行一个团队的�
     - 对象
     - 突变
     - 实例
-
-
-
-
-
-# 更新数组中的对象
-# 破解代码
-## 调试
-# 程序员检查清单
-
-# 第 8 章：面向对象编程
-## 作为实体的对象
-## 作为 JavaScript 对象
-## JavaScript 对象实现
-## 实战中的面向对象编程
-## 破解代码
-## 调试
-## 程序员检查清单
-
-# 第 9 章：JavaScript 与 Web
-## Web 的抽象层次
-### HTML：超文本标记语言
-## 浏览器
-## 文档
-## HTML 选择器
-## HTML 操作
-## 创建 HTML 元素
-## 在 HTML 中运行 JavaScript
-#### 批量更新 HTML
-## `script` 标签导入
-## JavaScript 事件监听器
-## 使用 CSS 隐藏元素
-## 实战特定浏览器 JavaScript
-## 破解代码
-## 调试
-## 程序员检查清单
-
-# 第 10 章：游戏时间
-## 浏览器中的挂钩游戏
-## 挂钩游戏：终端 vs 浏览器
-## 挂钩游戏实现
-### HTML 文件
-## Game CSS 文件
-## 游戏 CSS
-## 游戏伪代码
-## 游戏实现
-
-# 第 11 章：终点：网站升级
-## 不完整的待办事项代码
-### 辅助函数
-## 删除待办事项条目
-## 编辑待办事项条目
-## 编辑后的文本
-## 取消文本更新
-## 恭喜！
-
-## 答案页
-### 第 3 章答案
-## 第 4 章答案
-## 第 5 章答案
-## 第 6 章答案
-## 第 7 章答案
-## 第 8 章答案
-## 第 9 章答案
-
-# 术语表
-# 资源
-# 致谢
-# 关于作者
-
+    - 更新数组中的对象
+    - 破解代码
+    - 调试
+    - 程序员检查清单
+- 第 8 章：面向对象编程
+    - 作为实体的对象
+    - 作为 JavaScript 对象
+    - JavaScript 对象实现
+    - 实战中的面向对象编程
+    - 破解代码
+    - 调试
+    - 程序员检查清单
+- 第 9 章：JavaScript 与 Web
+    - Web 的抽象层次
+    - HTML：超文本标记语言
+    - 浏览器
+    - 文档
+    - HTML 选择器
+    - HTML 操作
+    - 创建 HTML 元器
+    - 在 HTML 中运行 JavaScript
+    - 批量更新 HTML
+    - `script` 标签导入
+    - JavaScript 事件监听器
+    - 使用 CSS 隐藏元素
+    - 实战特定浏览器 JavaScript
+    - 破解代码
+    - 调试
+    - 程序员检查清单
+- 第 10 章：游戏时间
+    - 浏览器中的挂钩游戏
+    - 挂钩游戏：终端 vs 浏览器
+    - 挂钩游戏实现
+    - HTML 文件
+    - Game CSS 文件
+    - 游戏 CSS
+    - 游戏伪代码
+    - 游戏实现
+- 第 11 章：终点：网站升级
+    - 不完整的待办事项代码
+    - 辅助函数
+    - 删除待办事项条目
+    - 编辑待办事项条目
+    - 编辑后的文本
+    - 取消文本更新
+    - 恭喜！
+    - 答案页
+    - 第 3 章答案
+    - 第 4 章答案
+    - 第 5 章答案
+    - 第 6 章答案
+    - 第 7 章答案
+    - 第 8 章答案
+    - 第 9 章答案
+- 术语表
+- 资源
+- 致谢
+- 关于作者

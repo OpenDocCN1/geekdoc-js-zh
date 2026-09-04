@@ -1,13 +1,9 @@
+
 # JavaScript Hacks：JavaScript 技巧、窍门与技术
-
-
 
 ![](img/cover.jpeg)
 
-
 # 第一章 引言
-
-引言
 
 我编写代码已经 30 多年了。我每天仍然能发现关于编程的新知识。这里是我多年来总结的一些 JavaScript 技巧、窍门和方法。
 
@@ -49,6 +45,7 @@ window.onload = function() {
 一些研究似乎表明，浏览器厂商在意识到数组每次都需要计算后，现在已经采取了变通方法为你缓存数组长度，然而，我仍然喜欢这样做。这也是一个良好的习惯，因为你永远不知道用户使用的浏览器有多旧。
 
 未缓存
+
 ```javascript
 for (i = 0; i < array.length; i++) {
   //执行某些操作
@@ -56,6 +53,7 @@ for (i = 0; i < array.length; i++) {
 ```
 
 已缓存
+
 ```javascript
 var len = array.length;
 for (var i = 0; i < len; i++) {
@@ -65,7 +63,7 @@ for (var i = 0; i < len; i++) {
 
 ## 二分查找
 
-这是我在 80 年代使用的一种技巧，那时的时的计算机比现在慢得多。它只适用于按字母顺序排序的数组，但你也可以修改这段代码，使其适用于根据某个键（key）按字母顺序排序的对象数组。
+这是我在 80 年代使用的一种技巧，那时的计算机比现在慢得多。它只适用于按字母顺序排序的数组，但你也可以修改这段代码，使其适用于根据某个键（`key`）按字母顺序排序的对象数组。
 
 它的工作原理是这样的：想象你有一本电话簿，你想找某个名字。你不会从字母 A 开始一直找，直到找到你要找的那个。但在编程中，我们经常这样做，即只用一个 `for` 循环遍历每一个名字，直到找到我们想要的那个。对于电话簿，我们随机打开一页，然后根据落脚的位置向前或向后翻页。这段代码查看数组中间或一半位置的元素。根据要查找的名字大于还是小于中间元素的值，它会丢弃数组的后半部分或部分。它不断丢弃数组的一半，直到找到想要的那个。
 
@@ -113,11 +111,17 @@ console.log(array);
 
 ```javascript
 var array = [11, 22, 33, 44, 55, 66];
+array.length = 3;
+console.log(array);
 ```
 
+# 第三章 条件语句
 
+## 三元运算符
 
+三元运算符是 `if-else` 语句的简写。
 
+### 旧写法
 
 ```javascript
 var age = 19;
@@ -131,20 +135,24 @@ if (age > 20) {
 }
 ```
 
-## 新写法
+### 新写法
+
 ```javascript
-var age = 19
+var age = 19;
 canDrink = (age > 20) ? true : false;
-Console.log(canDrink);
+console.log(canDrink);
 ```
 
 其公式为：
+
 `variable = (condition) ? 符合条件 : 不符合条件`
 
 ### 方法的三元运算符
+
 你也可以使用三元运算符来调用方法。
 
-## 旧写法
+#### 旧写法
+
 ```javascript
 if (success) {
   avatar.start();
@@ -153,15 +161,18 @@ if (success) {
 }
 ```
 
-## 新写法
+#### 新写法
+
 ```javascript
 success ? avatar.start() : avatar.stop();
 ```
 
 ### Switch vs If
+
 使用 `switch` 语句代替系列的 `if-then` 语句会让代码更具可读性，并在某些情况下加快执行速度。
 
-## 旧写法
+#### 旧写法
+
 ```javascript
 if (color == "red") {
   //执行某些操作
@@ -180,7 +191,8 @@ if (color == "yellow") {
 }
 ```
 
-## 新写法
+#### 新写法
+
 ```javascript
 switch (color) {
   case "red":
@@ -201,10 +213,10 @@ switch (color) {
 }
 ```
 
-# 第四章
-## 函数
+# 第四章 函数
 
 ## 假设参数
+
 如果你想能够向函数发送不固定数量的参数，只需让参数部分为空，然后使用 `arguments` 关键字来访问传入的任何参数。值得注意的是，尽管 `arguments` 行为像一个数组，但它并不是真正的 JavaScript 数组。
 
 ```javascript
@@ -229,6 +241,7 @@ sum3(1, 2, 3, 4, 5, 6, 7, 8, 9);
 ```
 
 ## 对象 vs 参数
+
 很多时候我在编写类时，我最终会向构造函数传递 10 到 15 个参数。其中一些参数是可选的，因此当我以后想添加必填参数时，我必须回去修改大量代码。我发现，某些情况下，将单个对象作为唯一参数可以节省大量时间。
 
 ```javascript
@@ -254,6 +267,7 @@ doAttack2(attackObj);
 ```
 
 ## 默认值
+
 使用双管道符 (`||`) `or` 关键字为变量设置默认值。如果没有为该变量传递值，则会设置默认值。
 
 ```javascript
@@ -264,6 +278,7 @@ function User(name, age) {
 ```
 
 ## 简写函数
+
 你可以使用双箭头符号来创建一个函数。
 
 ```javascript
@@ -271,13 +286,13 @@ function calcCircumference(diameter) {
   return Math.PI * diameter
 }
 
-calcCircumference = diameter => (Math.PI * diameter;)
+calcCircumference = diameter => (Math.PI * diameter);
 ```
 
-# 第五章
-## 数字
+# 第五章 数字
 
 ## 偶数还是奇数？
+
 如果将一个数字除以 2 没有余数，它就是偶数，否则是奇数。
 
 ```javascript
@@ -287,6 +302,7 @@ function isEven(num) {
 ```
 
 ## 能被...除？
+
 使用此函数判断一个数字是否能被另一个数字除而没有余数。
 
 ```javascript
@@ -296,6 +312,7 @@ function isDivisbleBy(num, div) {
 ```
 
 ## 获取最大值或最小值
+
 使用 JavaScript 的内置数学函数获取数组中的最大或最小数字。
 
 ```javascript
@@ -306,10 +323,13 @@ var minInNumbers = Math.min.apply(Math, numbers);
 console.log("max", maxInNumbers);
 console.log("min=" + minInNumbers);
 ```
+
 **输出：**
+
 122222
 
 ## 随机范围
+
 该函数将返回一个范围内的随机整数。
 
 ```javascript
@@ -319,6 +339,7 @@ function random(start, end) {
 ```
 
 ## 小数
+
 该代码将数字保留到特定的小数。
 
 ```javascript
@@ -328,6 +349,7 @@ function toDecimal(num) {
 ```
 
 ## 字符串转数字
+
 使用加号运算符将字符串转换为数字。
 
 ```javascript
@@ -336,10 +358,10 @@ function toNumber(str) {
 }
 ```
 
-# 第六章
-## 对象
+# 第六章 对象
 
 ## 数组转对象
+
 使用 `...` 关键字将数组转换为对象。
 
 ```javascript
@@ -347,16 +369,19 @@ var obj = {...['fish', 'chicken']}
 ```
 
 ## 多行文本
+
 使用反引号代替转义字符。
 
-## 旧写法
+### 旧写法
+
 ```javascript
 var lorem = 'Lorem ipsum dolor amet, consectetur\n' +
 'adipisicing elit, sed tempor incididunt\n' +
 'ut labore magna aliqua';
 ```
 
-## 新写法
+### 新写法
+
 ```javascript
 var lorem = `Lorem ipsum dolor amet, consectetur
 adipisicing elit, sed tempor incididunt
@@ -364,6 +389,7 @@ ut labore magna aliqua`;
 ```
 
 ## 随机字符串
+
 该函数用于生成测试数据和指定长度的随机字符串。
 
 ```javascript
@@ -381,6 +407,7 @@ makeRandString(10);
 ```
 
 ## 删除双空格
+
 有时用户输入会产生双空格。此函数会移除这些双空格。
 
 ```javascript
@@ -393,12 +420,13 @@ function removeDoubleSpaces(text) {
 ```
 
 ## 克隆对象
-```
+
 ```javascript
 var obj = "It was the best of times, it was the worst of times";
 ```
 
 ## 替换所有
+
 此函数通过指针或搜索词分割字符串，然后使用替换关键字作为分隔符将数组重新组合成字符串。
 
 ```javascript
@@ -409,10 +437,10 @@ function replaceAll(haystack, needle, replace) {
 }
 ```
 
-# 第七章
-## 字符串
+# 第七章 字符串
 
 ## 首字母大写
+
 将单词的首字母大写。
 
 ```javascript
@@ -422,6 +450,7 @@ function capFirstLetter(word) {
 ```
 
 ## 获取单词
+
 将句子拆分为数组。
 
 ```javascript
@@ -431,6 +460,7 @@ function getWords(sentence) {
 ```
 
 ## 全大写单词
+
 合并并将每个单词的首字母大写。
 
 ```javascript
@@ -445,6 +475,7 @@ function capAllWords(sentence) {
 ```
 
 ## 字符串查找字符串
+
 使用此函数判断一个字符串是否包含另一个字符串。
 
 ```javascript
@@ -453,11 +484,7 @@ function contains(haystack, needle) {
 }
 ```
 
-
-
-
-
-# 杂杂
+# 杂项
 
 ## console.log 的快捷方式
 
@@ -465,7 +492,6 @@ function contains(haystack, needle) {
 
 ```javascript
 var cl = console.log.bind(document);
-
 cl('shorter to type');
 ```
 
@@ -485,7 +511,6 @@ cl(1 + 1);
 
 ```javascript
 var person={'name':'Hero','hp':100};
-
 console.table(person);
 ```
 
@@ -508,13 +533,14 @@ class Person2 {
     this.firstName = firstName;
     this.lastName = lastName;
   }
+
   sayName() {
     console.log("Hi "+this.firstName);
   }
 }
 
 var player = new Person('Bob', 'Smith');
-var player2=new Person2('Bob','Smith');
+var player2 = new Person2('Bob','Smith');
 player2.sayName();
 ```
 
@@ -530,6 +556,7 @@ class Person2 {
     this.firstName = firstName;
     this.lastName = lastName;
   }
+
   sayName() {
     console.log("Hi " + this.firstName);
   }
@@ -539,6 +566,7 @@ class Superman extends Person2 {
   constructor(firstName, lastName) {
     super(firstName, lastName);
   }
+
   fly() {
     console.log("up up and away");
   }
@@ -561,6 +589,7 @@ class Person {
     this.name = name;
     this.nextPerson = null;
   }
+
   sayName() {
     console.log(this.name);
     if (this.nextPerson) {
@@ -570,7 +599,6 @@ class Person {
 }
 
 var names = ['Aubrey', 'Marlin', 'Brittanie', 'Summer', 'Araceli', 'Jolie', 'Denyse'];
-
 var firstPerson = null;
 var previousPerson = null;
 
@@ -589,6 +617,7 @@ for (var i = 0; i < len; i++) {
   }
   previousPerson = person;
 }
+
 // 调用第一个人的 sayName 函数
 // 启动链式反应
 firstPerson.sayName();
@@ -605,12 +634,14 @@ class Person {
     this.nextPerson = null;
     this.previousPerson = null;
   }
+
   sayName() {
     console.log(this.name);
     if (this.nextPerson) {
       this.nextPerson.sayName();
     }
   }
+
   removeByName(name) {
     if (this.name == name) {
       this.previousPerson.nextPerson = this.nextPerson;
@@ -622,10 +653,8 @@ class Person {
 }
 
 var names = ['Aubrey', 'Marlin', 'Brittanie', 'Summer', 'Araceli', 'Jolie', 'Denyse'];
-
 var firstPerson = null;
 var lastPerson = null;
-
 var len = names.length;
 for (var i = 0; i < len; i++) {
   //创建一个新人物
@@ -642,6 +671,7 @@ for (var i = 0; i < len; i++) {
   }
   lastPerson = person;
 }
+
 firstPerson.removeByName('Summer');
 firstPerson.sayName();
 ```
@@ -680,6 +710,7 @@ function checkPlayerHealth(hitPoints) {
   var isAlive = !!hitPoints;
   return isAlive;
 }
+
 console.log(checkPlayerHealth(100));
 console.log(checkPlayerHealth(0));
 ```
@@ -694,6 +725,7 @@ console.log(checkPlayerHealth(0));
 function getUrl() {
   return window.location.href;
 }
+
 console.log(getUrl());
 ```
 
@@ -720,7 +752,6 @@ var name=localStorage.getItem('monsterName');
 var monsterObj = { 'name':'orc','health':100,'defense':20 };
 //将对象存入
 localStorage.setItem('monster', JSON.stringify(monsterObj));
-
 //从存储中检索对象
 var monsterObj = localStorage.getItem('monster');
 var monster=JSON.parse(monsterObj);
@@ -741,4 +772,3 @@ console.log(b) //world
 ```
 
 希望你喜欢这些 JavaScript 代码段，如果你有任何问题或发现错误，请通过以下方式联系我：[WilliamClarkson.net](https://www.williamclarkson.net/code)
-

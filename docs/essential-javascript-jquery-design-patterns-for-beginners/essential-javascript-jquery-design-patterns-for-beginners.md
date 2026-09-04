@@ -1,7 +1,5 @@
+
 # 初学者必备 JavaScript 与 jQuery 设计模式
-
-
-
 
 ## 简介
 
@@ -21,23 +19,22 @@
 
 在本书中，我们将探讨一些流行的JavaScript设计模式，并探索为什么某些模式可能比其他模式更适合你的项目。请记住，模式不仅适用于原生JavaScript，也适用于jQuery或Dojo等抽象库。在我们开始之前，让我们先看看软件设计中“模式”的准确定义。
 
-
 ## 什么是模式？
 
 模式是一种可复用的解决方案，可应用于软件设计中反复出现的问题——在我们特定的情况下，是指编写JavaScript应用程序。看待模式的另一种方式是将其视为你解决问题的模板——这些模板可用于多种不同情境。为了思考一个模式可能有多大用处，让我们设想一下，如果你编写一个脚本，其中写着“对每个项目发出警报”，如果发出警报本身很复杂，那么这样做总比说“为项目1执行此操作”、“为项目2执行此操作”、“对项目3再做一次同样的操作”更能得到可维护的代码，即，如果执行大部分工作的代码存在于更少的地方，维护起来就会显著容易得多。
 
 你可能会问，为什么理解模式并熟悉它们很重要。设计模式主要有三个好处。
 
-1.  **模式是经过验证的解决方案：** 它们为解决软件开发中的问题提供了可靠的方法，这些方案反映了帮助定义和改进它们的开发者的经验和见解。
-2.  **模式可以轻松复用：** 模式通常反映了一个开箱即用的解决方案，可以根据自身需求进行调整。这一特性使其相当稳健。
-3.  **模式具有表现力：** 当你观察一个模式时，其呈现的解决方案通常具有一套固定的结构和“词汇”，可以帮助相当优雅地表达非常庞大的解决方案。
+1. **模式是经过验证的解决方案：** 它们为解决软件开发中的问题提供了可靠的方法，这些方案反映了帮助定义和改进它们的开发者的经验和见解。
+2. **模式可以轻松复用：** 模式通常反映了一个开箱即用的解决方案，可以根据自身需求进行调整。这一特性使其相当稳健。
+3. **模式具有表现力：** 当你观察一个模式时，其呈现的解决方案通常具有一套固定的结构和“词汇”，可以帮助相当优雅地表达非常庞大的解决方案。
 
 模式**并非**精确的解决方案。重要的是要记住，模式的作用仅仅是为我们提供一个解决方案框架。模式并不能解决所有设计问题，也不能取代优秀的软件设计师，然而，它们**确实**能支持设计师。接下来，我们将看看模式能为我们提供的一些其他优势。
 
--   **复用模式有助于防止可能导致应用程序开发过程中出现重大问题的微小问题。** 这意味着，当你的代码更多地依赖经过验证的模式时，你可以花更少的时间担心代码架构，而花更多的时间专注于整体解决方案的质量。这是因为模式可以鼓励你以更结构化和有组织的方式编码，从而大大减少将来为整洁目的而重构它的需要。
--   **模式可以提供通用的解决方案，其记录方式使它们不必与特定问题绑定。** 这种通用方法意味着，无论你使用何种应用程序（在许多情况下，甚至是编程语言），设计模式都可以应用于改进代码结构。
--   **某些模式实际上可以通过避免重复来减少代码的整体文件大小占用。** 通过鼓励开发者更仔细地审视他们的解决方案，寻找可以立即减少重复的领域，例如，减少执行类似过程的函数数量，转而使用单个通用函数，可以减小代码库的整体规模。
--   **经常使用的**模式可以随着时间的推移，通过利用其他使用这些模式的开发者回馈给设计模式社区的集体经验而得到改进。在某些情况下，这导致全新设计模式的创建，而在其他情况下，它可以导致提供关于如何最好地使用特定模式的改进指南。这可以确保基于模式的解决方案比临时解决方案更健壮。
+- **复用模式有助于防止可能导致应用程序开发过程中出现重大问题的微小问题。** 这意味着，当你的代码更多地依赖经过验证的模式时，你可以花更少的时间担心代码架构，而花更多的时间专注于整体解决方案的质量。这是因为模式可以鼓励你以更结构化和有组织的方式编码，从而大大减少将来为整洁目的而重构它的需要。
+- **模式可以提供通用的解决方案，其记录方式使它们不必与特定问题绑定。** 这种通用方法意味着，无论你使用何种应用程序（在许多情况下，甚至是编程语言），设计模式都可以应用于改进代码结构。
+- **某些模式实际上可以通过避免重复来减少代码的整体文件大小占用。** 通过鼓励开发者更仔细地审视他们的解决方案，寻找可以立即减少重复的领域，例如，减少执行类似过程的函数数量，转而使用单个通用函数，可以减小代码库的整体规模。
+- **经常使用的**模式可以随着时间的推移，通过利用其他使用这些模式的开发者回馈给设计模式社区的集体经验而得到改进。在某些情况下，这导致全新设计模式的创建，而在其他情况下，它可以导致提供关于如何最好地使用特定模式的改进指南。这可以确保基于模式的解决方案比临时解决方案更健壮。
 
 ## “模式”性测试、原型模式与三法则
 
@@ -49,22 +46,20 @@
 
 或者，分享模式的个人可能没有时间或兴趣去经历“模式”性过程，而是可能发布他们原型模式的简要描述。这种模式的简要描述被称为模式片段。
 
-
-
 完整记录一个合格模式所涉及的工作可能相当艰巨。回顾设计模式领域最早的一些工作，一个模式如果做到以下几点，就可能被认为是“好的”：
 
--   **解决特定问题** - 模式不应仅仅捕捉原则或策略，它们需要捕捉解决方案。这是好模式最基本的要求之一。
--   **该问题的解决方案不能是显而易见的** - 你通常会发现，问题解决技巧试图从众所周知的基本原理推导出来。最好的设计模式通常间接提供问题的解决方案——这是处理最具挑战性的设计问题时的一种必要方法。
--   **描述的概念必须经过验证** - 设计模式需要证明其能如所述那样发挥作用，如果没有这个证明，该设计就不能被认真考虑。如果一个模式本质上是高度推测性的，那么可能只有勇敢的人才会尝试使用它。
--   **必须描述一种关系** - 在某些情况下，一个模式可能看似描述了一种模块类型。尽管实现可能看起来如此，但模式的官方描述必须描述更深层的系统结构和机制，以解释其与代码的关系。
+- **解决特定问题** - 模式不应仅仅捕捉原则或策略，它们需要捕捉解决方案。这是好模式最基本的要求之一。
+- **该问题的解决方案不能是显而易见的** - 你通常会发现，问题解决技巧试图从众所周知的基本原理推导出来。最好的设计模式通常间接提供问题的解决方案——这是处理最具挑战性的设计问题时的一种必要方法。
+- **描述的概念必须经过验证** - 设计模式需要证明其能如所述那样发挥作用，如果没有这个证明，该设计就不能被认真考虑。如果一个模式本质上是高度推测性的，那么可能只有勇敢的人才会尝试使用它。
+- **必须描述一种关系** - 在某些情况下，一个模式可能看似描述了一种模块类型。尽管实现可能看起来如此，但模式的官方描述必须描述更深层的系统结构和机制，以解释其与代码的关系。
 
 如果你认为一个不符合完整模式准则的原始模式不值得研究，这无可厚非，但事实远非如此。许多原始模式实际上相当不错。我并不是说所有原始模式都值得一看，但确实存在相当多有用的模式，它们可能在未来项目中对你有所帮助。在选择过程中，请参考上述列表并运用最佳判断力，你将不会出错。
 
 一个模式要生效，另一个额外要求是它必须展示一些反复出现的现象。这通常可以通过至少三个关键领域来界定，称为*三的法则*。要使用此法则展示重现性，必须证明：
 
-1.  **目的适用性** - 该模式如何被视为成功？
-2.  **有用性** - 该模式为何被视为成功？
-3.  **可应用性** - 该设计是否因其更广泛的可适用性而值得成为一个模式？如果是，这需要解释。在审查或定义模式时，牢记上述几点很重要。
+1. **目的适用性** - 该模式如何被视为成功？
+2. **有用性** - 该模式为何被视为成功？
+3. **可应用性** - 该设计是否因其更广泛的可适用性而值得成为一个模式？如果是，这需要解释。在审查或定义模式时，牢记上述几点很重要。
 
 ## 设计模式的结构
 
@@ -74,18 +69,18 @@
 
 **一个设计模式必须包含：**
 
--   **模式名称**和**描述**
--   **上下文概述** – 模式在响应用户需求时有效的上下文。
--   **问题陈述** – 陈述所解决的问题，以便我们理解模式的意图。
--   **解决方案** – 描述如何通过一系列易于理解的步骤和观念来解决用户的问题。
--   **设计** – 描述模式的设计，特别是用户与其交互的行为。
--   **实现** – 模式如何实现的指南。
--   **插图** – 模式中类的视觉表示（例如图表）。
--   **示例** – 模式的最小形式实现。
--   **共同要求** – 支持所描述模式的使用可能需要哪些其他模式？
--   **关系** – 这个模式类似于哪些模式？它是否与任何其他模式非常相似？
--   **已知用法** – 该模式是否在“野外”使用？如果是，在哪里以及如何使用？
--   **讨论** – 团队或作者对模式令人兴奋的好处的看法。
+- **模式名称**和**描述**
+- **上下文概述** – 模式在响应用户需求时有效的上下文。
+- **问题陈述** – 陈述所解决的问题，以便我们理解模式的意图。
+- **解决方案** – 描述如何通过一系列易于理解的步骤和观念来解决用户的问题。
+- **设计** – 描述模式的设计，特别是用户与其交互的行为。
+- **实现** – 模式如何实现的指南。
+- **插图** – 模式中类的视觉表示（例如图表）。
+- **示例** – 模式的最小形式实现。
+- **共同要求** – 支持所描述模式的使用可能需要哪些其他模式？
+- **关系** – 这个模式类似于哪些模式？它是否与任何其他模式非常相似？
+- **已知用法** – 该模式是否在“野外”使用？如果是，在哪里以及如何使用？
+- **讨论** – 团队或作者对模式令人兴奋的好处的看法。
 
 设计模式是一种相当强大的方法，可以在组织或团队创建或维护解决方案时，让所有开发人员保持一致。如果你或你的公司曾考虑开发自己的模式，请记住，尽管在规划和撰写阶段可能有很高的初始成本，但这项投资的回报可能是相当值得的。然而，在开发新模式之前，务必彻底研究，因为你可能会发现，使用或在现有的、经过验证的模式基础上构建，比从头开始更有益。
 
@@ -103,12 +98,12 @@
 
 如果你想尝试撰写设计模式（即使只是为了体验整个过程的学习经验），我有以下建议：
 
--   **牢记实用性**：确保你的模式描述的是针对反复出现问题的、经过验证的解决方案，而不仅仅是未经验证的推测性解决方案。
--   **确保借鉴最佳实践**：你的设计决策应基于你从理解最佳实践中得出的原则。
--   **你的设计模式应对用户透明**：设计模式应完全对任何类型的用户体验透明。它们主要是为了服务于使用它们的开发人员，不应强加使用模式时不会发生的用户体验行为变化。
--   **请记住，原创性在模式设计中*并非*关键**：撰写模式时，你不需要是所记录解决方案的原始发现者，也不必担心你的设计与其他模式的小部分重叠。如果你的设计足够强大，具有广泛的有用适用性，它就有机会被认可为一个合适的模式。
--   **了解模式与设计之间的区别**：设计模式通常借鉴经过验证的最佳实践，并作为设计师创建解决方案的模型。*模式的作用是指导设计师做出最佳设计选择，以便他们能够满足用户的需求。*
--   **你的模式需要有一组强大的示例**：一个好的模式描述需要伴随同样强大的示例，以展示你的模式成功应用。为了展示广泛的用途，体现良好设计原则的示例是理想的。
+- **牢记实用性**：确保你的模式描述的是针对反复出现问题的、经过验证的解决方案，而不仅仅是未经验证的推测性解决方案。
+- **确保借鉴最佳实践**：你的设计决策应基于你从理解最佳实践中得出的原则。
+- **你的设计模式应对用户透明**：设计模式应完全对任何类型的用户体验透明。它们主要是为了服务于使用它们的开发人员，不应强加使用模式时不会发生的用户体验行为变化。
+- **请记住，原创性在模式设计中*并非*关键**：撰写模式时，你不需要是所记录解决方案的原始发现者，也不必担心你的设计与其他模式的小部分重叠。如果你的设计足够强大，具有广泛的有用适用性，它就有机会被认可为一个合适的模式。
+- **了解模式与设计之间的区别**：设计模式通常借鉴经过验证的最佳实践，并作为设计师创建解决方案的模型。*模式的作用是指导设计师做出最佳设计选择，以便他们能够满足用户的需求。*
+- **你的模式需要有一组强大的示例**：一个好的模式描述需要伴随同样强大的示例，以展示你的模式成功应用。为了展示广泛的用途，体现良好设计原则的示例是理想的。
 
 模式撰写是在创建具有普适性、具体性且最重要的是有用的模式之间取得精心平衡。尝试确保在撰写模式时，你涵盖尽可能广泛的应用领域，这样你就会顺利。我希望这个关于撰写模式的简要介绍能给你一些见解，这将帮助你在本书后续章节的学习过程中。
 
@@ -116,10 +111,8 @@
 
 如果我们认为模式代表最佳实践，那么反模式则代表一个吸取的教训。反模式一词由 Andrew Koenig 于 1995 年在当年 11 月的《C++ 报告》中首创。它受到四人组的《设计模式》一书的启发，该书发展了软件领域的设计模式概念。在 Koenig 的报告中，提出了两种反模式的概念。反模式：
 
--   描述了对特定问题的*糟糕*解决方案，导致了糟糕情况的发生。
--   描述*如何*摆脱上述情况以及如何从那里转向好的解决方案。
-
-
+- 描述了对特定问题的*糟糕*解决方案，导致了糟糕情况的发生。
+- 描述*如何*摆脱上述情况以及如何从那里转向好的解决方案。
 
 关于这个话题，亚历山大在探讨如何在良好设计结构与良好上下文之间实现良好平衡的难点时写道：
 
@@ -131,10 +124,10 @@
 
 总而言之，反模式是值得记录的糟糕设计。JavaScript 中的反模式示例如下：
 
--   - 通过在全局上下文中定义大量变量来污染命名空间
+- 通过在全局上下文中定义大量变量来污染命名空间。
 - 向 `setTimeout` 或 `setInterval` 传递字符串而不是函数，因为这会在内部触发使用 `eval()`。
-- 针对 `Object` 对象进行原型设计（这是一个特别糟糕的反模式）
-- 以内联形式使用 JavaScript，因为这不灵活
+- 针对 `Object` 对象进行原型设计（这是一个特别糟糕的反模式）。
+- 以内联形式使用 JavaScript，因为这不灵活。
 - 使用 `document.write`，而更合适的是使用原生 DOM 替代方案，如 `document.createElement`。多年来，`document.write` 被严重滥用，且有很多缺点，包括如果它在页面加载后执行，实际上会覆盖你所在的页面，而 `document.createElement` 则不会。你可以在[这里](https://example.com)看到一个实际示例。它也不适用于 XHTML，这是选择使用更兼容 DOM 的方法（如 `document.createElement`）的另一个原因。
 
 了解反模式对于成功至关重要。一旦你能够识别此类反模式，你就能够重构代码以消除它们，从而立即时你解决方案的整体质量得到提升。
@@ -185,40 +178,43 @@
 | *建造者* | 将对象构造与其表示分离，总是创建相同类型的对象。 |
 | *原型* | 一个完全初始化的实例，用于复制或克隆。 |
 | *单例* | 一个只有一个实例的类，具有全局访问点。 |
-
 | | |
 |---|---|
 | **结构型** | 基于构建块（对象）的思想。 |
 | **类** | |
 | *适配器* | 匹配不同类的接口，因此即使接口不兼容，类也可以协同工作 |
 | **对象** | |
-| *适配器* | 匹配不同类的接口，因此即使接口不兼容，类也可以协同工作 |
-| *桥接* | 将对象的接口与其实现分离，因此两者可以独立变化 |
-| *组合* | 简单和复合对象的结构，使总对象不仅仅是其部分的总和。 |
-| *装饰器* | 动态地为对象添加替代处理。 |
-| *外观* | 一个隐藏整个子系统复杂性的单一类。 |
-| *享元* | 一个细粒度的实例，用于高效共享包含在其他地方的信息。 |
-| *代理* | 代表真实对象的占位符对象。 |
 
-| | |
+
+
+| 适配器 | 匹配不同类的接口，因此即使接口不兼容，类也可以协同工作 |
 |---|---|
-| **行为型** | 基于对象相互作用和协作的方式。 |
-| **类** | |
-| *解释器* | 一种在应用程序中包含语言元素以匹配目标语言语法的方式。 |
-| *模板方法* | 在一个方法中创建算法的骨架，然后将确切步骤推迟到子类。 |
-| **对象** | |
+| 桥接 | 将对象的接口与其实现分离，因此两者可以独立变化 |
+| 组合 | 简单和复合对象的结构，使总对象不仅仅是其部分的总和。 |
+| 装饰器 | 动态地为对象添加替代处理。 |
+| 外观 | 一个隐藏整个子系统复杂性的单一类。 |
+| 享元 | 一个细粒度的实例，用于高效共享包含在其他地方的信息。 |
+| 代理 | 代表真实对象的占位符对象。 |
 
+| 行为型 | 基于对象相互作用和协作的方式。 |
+|---|---|
+| 类 | |
+| 解释器 | 一种在应用程序中包含语言元素以匹配目标语言语法的方式。 |
+| 模板方法 | 在一个方法中创建算法的骨架，然后将确切步骤推迟到子类。 |
+
+| 对象 | |
+|---|---|
 | 模式 | 描述 |
-| :--- | :--- |
-| **责任链** | 一种在对象链中传递请求的方式，以找到可以处理该请求的对象。 |
-| **命令** | 将命令请求封装为一个对象，以实现请求的记录和/或排队，并为未处理的请求提供错误处理。 |
-| **迭代器** | 在不知道集合内部工作原理的情况下，顺序访问集合中的元素。 |
-| **中介者** | 定义类之间的简化通信，以防止一组类相互显式引用。 |
-| **备忘录** | 捕获对象的内部状态，以便以后能够恢复它。 |
-| **观察者** | 一种通知多个类有关更改的方式，以确保类之间的一致性。 |
-| **状态** | 在对象状态改变时改变其行为。 |
-| **策略** | 将算法封装在一个类中，将选择与实现分离。 |
-| **访问者** | 在不改变类的情况下向类添加新操作。 |
+|:---|:---|
+| 责任链 | 一种在对象链中传递请求的方式，以找到可以处理该请求的对象。 |
+| 命令 | 将命令请求封装为一个对象，以实现请求的记录和/或排队，并为未处理的请求提供错误处理。 |
+| 迭代器 | 在不知道集合内部工作原理的情况下，顺序访问集合中的元素。 |
+| 中介者 | 定义类之间的简化通信，以防止一组类相互显式引用。 |
+| 备忘录 | 捕获对象的内部状态，以便以后能够恢复它。 |
+| 观察者 | 一种通知多个类有关更改的方式，以确保类之间的一致性。 |
+| 状态 | 在对象状态改变时改变其行为。 |
+| 策略 | 将算法封装在一个类中，将选择与实现分离。 |
+| 访问者 | 在不改变类的情况下向类添加新操作。 |
 
 ## JavaScript 中的设计模式
 
@@ -228,20 +224,18 @@
 
 每种模式的复杂程度各不相同，然而我已尽力使我的解释尽可能简单，以便初学者和中级开发人员都能从材料中受益。
 
-
-
 ## 我们将探讨的模式
 
--   创建型模式
--   构造器模式
--   单例模式
--   模块模式
--   揭示模块模式
--   原型模式
--   DRY 模式
--   外观模式
--   工厂模式
--   装饰器模式
+- 创建型模式
+- 构造器模式
+- 单例模式
+- 模块模式
+- 揭示模块模式
+- 原型模式
+- DRY 模式
+- 外观模式
+- 工厂模式
+- 装饰器模式
 
 ### 创建型模式
 
@@ -258,6 +252,7 @@ var newObject = new MyClass();
 “构造器”这个短语对大多数开发者来说都很熟悉，不过如果你是初学者，在深入探讨专门针对它的模式之前，回顾一下构造器是什么会很有用。构造器用于创建特定类型的对象。这种范式可以在许多编程语言中找到，包括 JavaScript。你可能熟悉的一些原生构造器包括 `Object` 和 `Array`。
 
 你也可以定义自定义构造器，为你自己的对象类型定义属性和方法。
+
 让我们来看一个汽车的构造器。
 
 ```javascript
@@ -330,7 +325,7 @@ console.log(singletonTest.pointX); // outputs 5
 
 #### 模块模式
 
-现在让我们来看看流行的*模块*模式。模块模式被定义为一种为 JavaScript “类”概念提供私有和公共封装的方式。它们的工作前提是“类”实际上被定义为一个函数（为简单起见，我们称之为类）。
+现在让我们来看看流行的模块模式。模块模式被定义为一种为 JavaScript “类”概念提供私有和公共封装的方式。它们的工作前提是“类”实际上被定义为一个函数（为简单起见，我们称之为类）。
 
 你为这个类决定使用的参数实际上是构造器的参数。在类内部定义的局部变量和函数都成为私有成员。类的返回方法（即仍然是一个函数）返回一个包含你的公共方法和变量的对象。
 
@@ -416,37 +411,35 @@ var myRevealingModule = function(){
 myRevealingModule.get();
 ```
 
-
-
 ### 原型模式
 
-原型模式基于原型继承的概念，我们创建对象并使其作为其他对象的原型。原型对象本身实际上被用作构造函数创建的每个对象的蓝图。如果使用的构造函数的原型包含一个名为“name”的属性（如下面的代码示例所示），那么由同一构造函数创建的每个对象也将具有相同的属性。
+原型模式基于原型继承的概念，我们创建对象并使其作为其他对象的原型。原型对象本身实际上被用作构造函数创建的每个对象的蓝图。如果使用的构造函数的原型包含一个名为 `name` 的属性（如下面的代码示例所示），那么由同一构造函数创建的每个对象也将具有相同的属性。
 
-查看现有文献（非JavaScript特定）中关于原型模式的定义，你*可能*会找到一些超出该语言范围的概念引用，例如类。现实是，原型继承完全避免了使用类。理论上，不存在“定义”对象或核心对象。我们只是创建现有功能对象的副本。
+查看现有文献（非 JavaScript 特定）中关于原型模式的定义，你可能会找到一些超出该语言范围的概念引用，例如类。现实是，原型继承完全避免了使用类。理论上，不存在“定义”对象或核心对象。我们只是创建现有功能对象的副本。
 
-使用原型模式的核心优势之一在于，我们利用JavaScript原生提供的优势，而不是试图模仿其他语言的特性（某些设计模式的实现会这样做）。
+使用原型模式的核心优势之一在于，我们利用 JavaScript 原生提供的优势，而不是试图模仿其他语言的特性（某些设计模式的实现会这样做）。
 
 这不仅是一种实现继承的简便方法，还能带来性能提升。在对象中定义函数时，它们都是通过引用创建的（因此所有子对象指向同一个函数），而不是创建各自的独立副本。
 
-对于感兴趣的人来说，如ECMAScript 5标准中定义的真正原型继承，需要使用`Object.create`，这是一个相对较新的原生方法。`Object.create`创建一个具有指定原型的对象，该对象可包含指定的属性（即`Object.create(prototype, optionalDescriptorObjects)`）。
+对于感兴趣的人来说，如 ECMAScript 5 标准中定义的真正原型继承，需要使用 `Object.create`，这是一个相对较新的原生方法。`Object.create` 创建一个具有指定原型的对象，该对象可包含指定的属性（即 `Object.create(prototype, optionalDescriptorObjects)`）。
 
 我们也可以在下面的示例中看到这一点：
 
-```
+```javascript
 // 无需大写，因为它不是构造函数
 var someCar = {
   drive: function() {};
   name: 'Mazda 3'
 };
 
-// 使用Object.create生成一辆新车
+// 使用 Object.create 生成一辆新车
 var anotherCar = Object.create(someCar);
 anotherCar.name = 'Toyota Camry';
 ```
 
-### DRY原则
+### DRY 原则
 
-**免责声明：** DRY本质上是一种思维方式，许多模式旨在通过其设计达到一定程度的DRY。在本节中，我们将探讨代码的DRY含义，同时也将介绍基于相同概念的DRY设计模式。
+**免责声明：**DRY 本质上是一种思维方式，许多模式旨在通过其设计达到一定程度的 DRY。在本节中，我们将探讨代码的 DRY 含义，同时也将介绍基于相同概念的 DRY 设计模式。
 
 开发大型应用程序时，开发者经常面临的挑战之一是多次编写相似的代码。有时这发生是因为你的脚本或应用程序可能有多种类似的方式来执行某项操作。
 
@@ -456,13 +449,13 @@ DRY（Don't Repeat Yourself，不要重复自己）的创建正是为了简化�
 
 这里要掌握的关键概念是，如果你有一段执行特定任务的代码，你不应该在你的应用程序或脚本中多次编写该代码。
 
-当DRY成功应用时，修改系统中的任何元素不会改变其他逻辑上不相关的元素。你代码中逻辑相关的元素会统一改变，从而保持同步。
+当 DRY 成功应用时，修改系统中的任何元素不会改变其他逻辑上不相关的元素。你代码中逻辑相关的元素会统一改变，从而保持同步。
 
-由于前面介绍的其他模式展示了JavaScript中DRY的方面，让我们看看如何使用jQuery编写DRY代码。请注意，在使用jQuery的地方，你可以轻松地使用原生JavaScript替换选择器，因为jQuery在抽象层面上就是JavaScript。
+由于前面介绍的其他模式展示了 JavaScript 中 DRY 的方面，让我们看看如何使用 jQuery 编写 DRY 代码。请注意，在使用 jQuery 的地方，你可以轻松地使用原生 JavaScript 替换选择器，因为 jQuery 在抽象层面上就是 JavaScript。
 
-### 非DRY
+### 非 DRY
 
-```
+```javascript
 /*让我们在数组中存储一些默认值*/
 var defaultSettings = {};
 defaultSettings['carModel']     = 'Mercedes';
@@ -473,7 +466,7 @@ defaultSettings['carTint']      = 'Metallic Blue';
 
 如果一个复选框被点击，我们来处理这些数据：
 
-```
+```javascript
 $('.someCheckbox').click(function(){
 
     if (this.checked)
@@ -496,7 +489,9 @@ $('.someCheckbox').click(function(){
 
 ### DRY
 
-```
+
+
+```javascript
 $('.someCheckbox').click(function(){
     var checked = this.checked;
     /*
@@ -521,7 +516,7 @@ $('.someCheckbox').click(function(){
 
 此模式既简化了类的接口，也将类与其使用的代码解耦。外观模式通常被认为是开发者模式工具包中的重要组成部分——它们可以通过创建便捷的例程来简化复杂系统的使用，从而使库工具更容易理解。
 
-外观模式的一个例子是在创建统一的JavaScript API中常见，这些API通常旨在所有浏览器中提供一致的体验。外观模式为我们提供了一种间接与子系统交互的能力，这种方式可能比直接访问子系统更不容易出错。
+外观模式的一个例子是在创建统一的 JavaScript API 中常见，这些 API 通常旨在所有浏览器中提供一致的体验。外观模式为我们提供了一种间接与子系统交互的能力，这种方式可能比直接访问子系统更不容易出错。
 
 外观模式的优点包括易于使用，并且通常在实现时占用较小的内存空间。然而，它也有一些陷阱——当连续使用外观模式时效率较低，并且每次调用都必须进行新的检查以确定可用于附加事件监听器的功能。让我们来看看该模式的实际应用：
 
@@ -529,7 +524,7 @@ $('.someCheckbox').click(function(){
 
 我们通过创建一个通用方法来实现这一点，该方法可以在代码中使用，用于检查功能的存在，从而提供安全且跨浏览器兼容的解决方案。
 
-```
+```javascript
 var addMyEvent = function(el,ev,fn){
 
     if(el.addEventListener){
@@ -553,7 +548,7 @@ var addMyEvent = function(el,ev,fn){
 
 在我们的示例中，让我们使用原始构造函数模式示例中的代码，看看如果使用工厂模式进行优化会是什么样子：
 
-```
+```javascript
 var Car = (function() {
     var Car = function (model, year, miles){
         this.model = model;
@@ -573,8 +568,6 @@ var mondeo = new Car("Ford Mondeo", 2010, 5000);
 
 装饰器模式是创建子类的替代方案。此模式可用于将对象包装在另一个具有相同接口的对象中，允许你既向方法添加行为，又将方法调用传递给原始对象（即装饰器的构造函数）。
 
-
-
 装饰器模式用于需要在已重写方法上不断添加新功能时。这可以通过将多个装饰器堆叠在一起来实现。
 
 使用装饰器模式的主要好处是什么？如果我们仔细查看第一个定义，我提到装饰器是子类化的一种替代方案。当脚本运行时，子类化会添加影响原始类所有实例的行为，而装饰则不会。
@@ -583,7 +576,7 @@ var mondeo = new Car("Ford Mondeo", 2010, 5000);
 
 让我们来看一些实现装饰器模式的代码：
 
-```
+```javascript
 //The class we're going to decorate
 function Macbook(){
 	this.cost = function(){
@@ -616,7 +609,7 @@ console.log( myMacbook.cost() );
 
 ## jQuery 中的设计模式
 
-现在我们已经了解了流行设计模式的普通 JavaScript 实现，让我们转换思路，看看这些设计模式在使用 jQuery 实现时可能是什么样子。jQuery（如你所知）目前是最流行的 JavaScript 库，它在普通 JavaScript 之上提供了一层"语法糖"，其语法可以更容易一眼理解。
+现在我们已经了解了流行设计模式的普通 JavaScript 实现，让我们转换思路，看看这些设计模式在使用 jQuery 实现时可能是什么样子。jQuery（如你所知）目前是最流行的 JavaScript 库，它在普通 JavaScript 之上提供了一层“语法糖”，其语法可以更容易一眼理解。
 
 在我们深入本节之前，重要的是要记住，许多普通 JavaScript 设计模式可以与 jQuery 混合使用，因为 jQuery 本质上仍然是 JavaScript。
 
@@ -626,9 +619,9 @@ jQuery 是一个在模式领域中很有趣的讨论话题，因为该库本身�
 
 ### 延迟初始化
 
-**延迟初始化**是一种设计模式，其策略是延迟任何昂贵的进程（例如对象的创建）直到第一次需要它们时。一个例子是 jQuery 中的 .ready() 函数，它只在 DOM 完全加载后才执行函数。
+延迟初始化是一种设计模式，其策略是延迟任何昂贵的进程（例如对象的创建）直到第一次需要它们时。一个例子是 jQuery 中的 `.ready()` 函数，它只在 DOM 完全加载后才执行函数。
 
-```
+```javascript
 $(document).ready(function(){
     $('#content').fadeIn();
 });
@@ -636,18 +629,18 @@ $(document).ready(function(){
 
 ### 组合模式
 
-**组合模式**描述了一组可以以与单个对象实例相同方式处理的对象。实现此模式允许您以统一的方式处理单个对象和组合。在 jQuery 中，当我们访问或对单个 DOM 元素或一组 DOM 元素执行操作时，我们可以以统一的方式处理两者。这在下面的代码示例中得到证明：
+组合模式描述了一组可以以与单个对象实例相同方式处理的对象。实现此模式允许您以统一的方式处理单个对象和组合。在 jQuery 中，当我们访问或对单个 DOM 元素或一组 DOM 元素执行操作时，我们可以以统一的方式处理两者。这在下面的代码示例中得到证明：
 
-```
+```javascript
 $('#someDiv').addClass('active'); // a single element
 $('div').addClass('active');       // a collection of elements
 ```
 
 ### 包装器模式
 
-**包装器模式**是一种将类的*接口*翻译成兼容接口的模式。包装器基本上允许通常由于其不兼容接口而无法一起工作的类协同运行。包装器将其接口的调用翻译成对原始接口的调用，实现这一目标所需的代码通常非常少。
+包装器模式是一种将类的接口翻译成兼容接口的模式。包装器基本上允许通常由于其不兼容接口而无法一起工作的类协同运行。包装器将其接口的调用翻译成对原始接口的调用，实现这一目标所需的代码通常非常少。
 
-```
+```javascript
 $('.container').css({
         opacity: .5 //apply opacity in modern browsers (eg. Chrome, FireFox) but use filter for IE
     });
@@ -655,9 +648,9 @@ $('.container').css({
 
 ### 外观模式
 
-**外观模式**在 OOP（面向对象编程）中非常常用，其中外观是一个对象，它提供对更大段代码（例如类库）的更简化的接口。外观在 jQuery 库中随处可见，使方法更易于使用和理解，也更易读。以下是 jQuery $.ajax() 的外观：
+外观模式在 OOP（面向对象编程）中非常常用，其中外观是一个对象，它提供对更大段代码（例如类库）的更简化的接口。外观在 jQuery 库中随处可见，使方法更易于使用和理解，也更易读。以下是 jQuery `$.ajax()` 的外观：
 
-```
+```javascript
 $.get();
 $.post();
 $.getJSON();
@@ -666,9 +659,9 @@ $.getScript();
 
 ### 观察者模式
 
-**观察者模式**是指主体（对象）维护其依赖项的列表，这些依赖项被称为观察者，并在状态发生任何变化时自动通知它们。这通常通过调用它们的方法之一来完成。观察者模式可以被认为是 PubSub（发布/订阅模式）的一个子集。
+观察者模式是指主体（对象）维护其依赖项的列表，这些依赖项被称为观察者，并在状态发生任何变化时自动通知它们。这通常通过调用它们的方法之一来完成。观察者模式可以被认为是 PubSub（发布/订阅模式）的一个子集。
 
-```
+```javascript
 //Here jQuery makes use of its event system on top of DOM events
 $('.button').click(function(){})
 $('.button').trigger('click', function(){})
@@ -676,63 +669,63 @@ $('.button').trigger('click', function(){})
 
 ### 迭代器模式
 
-**迭代器模式**是一种设计模式，其中迭代器（允许我们遍历集合中所有元素的对象）按顺序访问聚合对象的元素，而无需暴露其底层形式。
+迭代器模式是一种设计模式，其中迭代器（允许我们遍历集合中所有元素的对象）按顺序访问聚合对象的元素，而无需暴露其底层形式。
 
-迭代器封装了特定迭代发生的内部结构——在 jQuery 的 .each() 迭代器的情况下，您实际上能够使用 .each() 背后的底层代码来遍历集合，而无需看到或理解在幕后提供此功能的代码。
+迭代器封装了特定迭代发生的内部结构——在 jQuery 的 `.each()` 迭代器的情况下，您实际上能够使用 `.each()` 背后的底层代码来遍历集合，而无需看到或理解在幕后提供此功能的代码。
 
-```
+```javascript
 $.each(function(){});
 $('.items').each(function(){});
 ```
 
-一个有趣的附带说明是，jQuery 的 'each' 方法与 ECMAScript 5 的做法相反，但将来某个时候可能会改变。
+一个有趣的附带说明是，jQuery 的 `each` 方法与 ECMAScript 5 的做法相反，但将来某个时候可能会改变。
 
 ### 策略模式
 
-**策略模式**是一种模式，其中脚本可以在运行时选择特定算法。此模式的目的是能够提供一种清晰定义算法族、将每个算法封装为对象并使它们易于互换的方式。
+策略模式是一种模式，其中脚本可以在运行时选择特定算法。此模式的目的是能够提供一种清晰定义算法族、将每个算法封装为对象并使它们易于互换的方式。
 
-可以说，这种模式提供的最大好处是它允许算法独立于使用它们的客户端而变化。一个例子是 jQuery 的 toggle() 允许您绑定两个或更多处理程序到匹配的元素，以便在交替点击时执行。
+可以说，这种模式提供的最大好处是它允许算法独立于使用它们的客户端而变化。一个例子是 jQuery 的 `toggle()` 允许您绑定两个或更多处理程序到匹配的元素，以便在交替点击时执行。
 
 策略模式允许在函数内部使用独立于客户端的替代算法。
 
-```
+```javascript
 $('#container').toggle(function(){}, function(){});
 ```
 
 ### 代理模式
 
-**代理模式**——代理基本上是一个充当其他东西接口的类。代理可以充当几乎任何东西的接口：文件、资源、内存中的对象、难以复制的其他东西等。jQuery 的 .proxy() 函数接受一个函数作为输入，并返回一个新函数，该函数将始终具有特定的上下文。
+代理模式——代理基本上是一个充当其他东西接口的类。代理可以充当几乎任何东西的接口：文件、资源、内存中的对象、难以复制的其他东西等。jQuery 的 `.proxy()` 函数接受一个函数作为输入，并返回一个新函数，该函数将始终具有特定的上下文。
 
 这与提供接口作为代理模式的概念平行。
 
-```
+```javascript
 $.proxy(function(){}, obj);
 ```
 
 ### 构建器模式
 
-**构建器模式**的主要概念是抽象创建对象所涉及的步骤，以便这些步骤的不同实现能够构造对象的不同表示。
+构建器模式的主要概念是抽象创建对象所涉及的步骤，以便这些步骤的不同实现能够构造对象的不同表示。
 
 下面是 jQuery 如何利用此模式允许使用字符串定义构造您可能希望附加到文档主体的元素的示例。
 
-```
+```javascript
 $('<div class="foo">bar</div>');
 ```
 
 ### 原型模式
 
-*原型模式*用于您希望创建的对象由原型实例确定，该实例被克隆以产生新对象时。本质上，此模式用于避免以标准方式创建新对象，当此过程可能昂贵或过于复杂时。在以下扩展 jQuery.fn 对象以创建最小插件的代码示例中，底层原型代码使这成为可能：
+原型模式用于您希望创建的对象由原型实例确定，该实例被克隆以产生新对象时。本质上，此模式用于避免以标准方式创建新对象，当此过程可能昂贵或过于复杂时。在以下扩展 `jQuery.fn` 对象以创建最小插件的代码示例中，底层原型代码使这成为可能：
 
-```
+```javascript
 $.fn.plugin = function(){}
 $('#container').plugin();
 ```
 
 ### 享元模式
 
-*享元模式*是一种设计模式，其中一个对象试图通过与其他相似对象尽可能共享信息来最小化使用的内存量。这是一种在大量利用对象时使用简单重复表示可能使用量被视为不可接受的内存的方式。对象的状态通常有可共享的方面，这些方面通常存储在外部数据结构中，在需要时临时传递给享元对象，这是常见的做法。
+享元模式是一种设计模式，其中一个对象试图通过与其他相似对象尽可能共享信息来最小化使用的内存量。这是一种在大量利用对象时使用简单重复表示可能使用量被视为不可接受的内存的方式。对象的状态通常有可共享的方面，这些方面通常存储在外部数据结构中，在需要时临时传递给享元对象，这是常见的做法。
 
-```
+```javascript
 // The userConfig is shared here:
 $.fn.plugin = function(userConfig){
     userConfig = $.extend({
@@ -742,13 +735,11 @@ $.fn.plugin = function(userConfig){
 });
 ```
 
-
-
-这里需要补充说明的是，JavaScript中的原型继承使用了**差分继承**，在原型链中只定义对象一次，直到它们被覆盖。这有助于节省内存。
+这里需要补充说明的是，JavaScript 中的原型继承使用了差分继承，在原型链中只定义对象一次，直到它们被覆盖。这有助于节省内存。
 
 ## 结论
 
-以上就是这本关于JavaScript和jQuery设计模式世界的入门读物——希望你们觉得它有用。本书内容并非对该领域的全面深入探讨，但应为你们提供了足够的信息，以便在日常项目中开始使用所涵盖的设计模式。
+以上就是这本关于 JavaScript 和 jQuery 设计模式世界的入门读物——希望你们觉得它有用。本书内容并非对该领域的全面深入探讨，但应为你们提供了足够的信息，以便在日常项目中开始使用所涵盖的设计模式。
 
 设计模式使得复用成功的设计和架构变得更加容易。每个开发者都应该了解设计模式，这一点很重要，但了解如何以及何时使用它们同样至关重要。明智地实现正确的模式值得付出努力，但反之亦然。实现不当的模式对项目可能收效甚微。
 
@@ -756,43 +747,59 @@ $.fn.plugin = function(userConfig){
 
 如果我进一步激发了你对这个领域的兴趣，并且你想了解更多关于设计模式的知识，那么有许多优秀的书籍可供选择，它们既涵盖通用的软件开发领域，也涉及特定的语言。
 
-对于JavaScript开发者，我推荐查阅以下两本书：
+对于 JavaScript 开发者，我推荐查阅以下两本书：
 
-- 1. Ross Harmes 和 Dustin Diaz 著的《*Pro JavaScript Design Patterns*》。
-- 2. Stoyan Stefanov 著的《*JavaScript Patterns*》
+1. Ross Harmes 和 Dustin Diaz 著的《Pro JavaScript Design Patterns》。
+
+2. Stoyan Stefanov 著的《JavaScript Patterns》。
 
 如果你已经吸收了我这本迷你书中的大部分信息，我想你会发现阅读这些书是你学习过程中合乎逻辑的下一步（当然，是在你自己尝试了一些模式示例之后）: )
 
-感谢阅读《*Essential JavaScript & jQuery Design Patterns*》。欲获取更多关于JavaScript、jQuery和用户界面设计的免费学习材料，请访问我的官方网站 http://addyosmani.com 获取我最新的教育资源。
+感谢阅读《Essential JavaScript & jQuery Design Patterns》。欲获取更多关于 JavaScript、jQuery 和用户界面设计的免费学习材料，请访问我的官方网站 http://addyosmani.com 获取我最新的教育资源。
 
 ## 参考资料
 
-- 1. Design Principles and Design Patterns - Robert C Martin http://www.objectmentor.com/resources/articles/Principles_and_Patterns.pdf
-- 2. Ralph Johnson - Special Issue of ACM On Patterns and Pattern Languages - http://www.cs.wustl.edu/~schmidt/CACM-editorial.html
-- 3. Hillside Engineering Design Patterns Library - http://hillside.net/patterns/
-- 4. Pro JavaScript Design Patterns - Ross Harmes and Dustin Diaz http://jsdesignpatterns.com/
-- 5. Design Pattern Definitions - http://en.wikipedia.org/wiki/Design_Patterns
-- 6. Patterns and Software Terminology http://www.cmcrossroads.com/bradapp/docs/patterns-intro.html
-- 7. Reap the benefits of Design Patterns - Jeff Juday http://articles.techrepublic.com.com/5100-10878_11-5173591.html
-- 8. JavaScript Design Patterns - Subramanyan Guhan http://www.slideshare.net/rmsguhan/javascript-design-patterns
-- 9. What Are Design Patterns and Do I Need Them? - James Moaoriello http://www.developer.com/design/article.php/1474561
-- 10. Software Design Patterns - Alex Barnett http://alexbarnett.net/blog/archive/2007/07/20/software-design-patterns.aspx
-- 11. Evaluating Software Design Patterns - Gunni Rode http://www.rode.dk/thesis/
-- 12. SourceMaking Design Patterns http://sourcemaking.com/design_patterns
-- 13. The Singleton - Prototyp.ical http://prototyp.ical.ly/index.php/2007/03/01/javascript-design-patterns-1-the-singleton/
-- 14. JavaScript Patterns - Stoyan Stefanov - http://www.slideshare.net/stoyan/javascript-patterns
-- 15. Stack Overflow - Design Pattern Implementations in JavaScript (discussion) http://stackoverflow.com/questions/24642/what-are-some-examples-of-design-pattern-implementations-using-javascript
-- 16. The Elements of a Design Pattern - Jared Spool http://www.uie.com/articles/elements_of_a_design_pattern/
-- 17. Stack Overflow - Examples of Practical JS Design Patterns (discussion) http://stackoverflow.com/questions/3722820/examples-of-practical-javascript-object-oriented-design-patterns
-- 18. Design Patterns in JavaScript Part 1 - Nicholas Zakas http://www.webreference.com/programming/javascript/ncz/column5/
-- 19. Stack Overflow - Design Patterns in jQuery http://stackoverflow.com/questions/3631039/design-patterns-used-in-the-jquery-library
-- 20. Classifying Design Patterns By AntiClue - Elyse Neilson http://www.anticlue.net/archives/000198.htm
-- 21. Design Patterns, Pattern Languages and Frameworks - Douglas Schmidt http://www.cs.wustl.edu/~schmidt/patterns.html
-- 22. Show Love To The Module Pattern - Christian Heilmann http://www.wait-till-i.com/2007/07/24/show-love-to-the-module-pattern/
-- 23. JavaScript Design Patterns - Mike G. http://www.lovemikeg.com/2010/09/29/javascript-design-patterns/
-- 24. Software Designs Made Simple - Anoop Mashudanan http://www.scribd.com/doc/16352479/Software-Design-Patterns-Made-Simple
-- 25. JavaScript Design Patterns - Klaus Komenda http://www.klauskomenda.com/code/javascript-programming-patterns/
-- 26. Design Patterns Explained - http://c2.com/cgi/wiki?DesignPatterns
-- 27. Working with GoF's Design Patterns In JavaScript http://aspalliance.com/1782_Working_with_GoFs_Design_Patterns_in_JavaScript_Programming.all
-- 28. Design Patterns by Gamma, Helm supplement http://exciton.cs.rice.edu/javaresources/DesignPatterns/
+1. Design Principles and Design Patterns - Robert C Martin http://www.objectmentor.com/resources/articles/Principles_and_Patterns.pdf
+2. Ralph Johnson - Special Issue of ACM On Patterns and Pattern Languages - http://www.cs.wustl.edu/~schmidt/CACM-editorial.html
+3. Hillside Engineering Design Patterns Library - http://hillside.net/patterns/
+4. Pro JavaScript Design Patterns - Ross Harmes and Dustin Diaz http://jsdesignpatterns.com/
+5. Design Pattern Definitions - http://en.wikipedia.org/wiki/Design_Patterns
+6. Patterns and Software Terminology http://www.cmcrossroads.com/bradapp/docs/patterns-intro.html
+7. Reap the benefits of Design Patterns - Jeff Juday http://articles.techrepublic.com.com/5100-10878_11-5173591.html
+8. JavaScript Design Patterns - Subramanyan Guhan http://www.slideshare.net/rmsguhan/javascript-design-patterns
+9. What Are Design Patterns and Do I Need Them? - James Moaoriello http://www.developer.com/design/article.php/1474561
+10. Software Design Patterns - Alex Barnett http://alexbarnett.net/blog/archive/2007/07/20/software-design-patterns.aspx
+11. Evaluating Software Design Patterns - Gunni Rode http://www.rode.dk/thesis/
+12. SourceMaking Design Patterns http://sourcemaking.com/design_patterns
+13. The Singleton - Prototyp.ical http://prototyp.ical.ly/index.php/2007/03/01/javascript-design-patterns-1-the-singleton/
+14. JavaScript Patterns - Stoyan Stefanov - http://www.slideshare.net/stoyan/javascript-patterns
 
+
+
+- 15. Stack Overflow - Design Pattern Implementations in JavaScript (discussion) http://stackoverflow.com/questions/24642/what-are-some-examples-of-design-pattern-implementations-using-javascript
+
+- 16. The Elements of a Design Pattern - Jared Spool http://www.uie.com/articles/elements_of_a_design_pattern/
+
+- 17. Stack Overflow - Examples of Practical JS Design Patterns (discussion) http://stackoverflow.com/questions/3722820/examples-of-practical-javascript-object-oriented-design-patterns
+
+- 18. Design Patterns in JavaScript Part 1 - Nicholas Zakas http://www.webreference.com/programming/javascript/ncz/column5/
+
+- 19. Stack Overflow - Design Patterns in jQuery http://stackoverflow.com/questions/3631039/design-patterns-used-in-the-jquery-library
+
+- 20. Classifying Design Patterns By AntiClue - Elyse Neilson http://www.anticlue.net/archives/000198.htm
+
+- 21. Design Patterns, Pattern Languages and Frameworks - Douglas Schmidt http://www.cs.wustl.edu/~schmidt/patterns.html
+
+- 22. Show Love To The Module Pattern - Christian Heilmann http://www.wait-till-i.com/2007/07/24/show-love-to-the-module-pattern/
+
+- 23. JavaScript Design Patterns - Mike G. http://www.lovemikeg.com/2010/09/29/javascript-design-patterns/
+
+- 24. Software Designs Made Simple - Anoop Mashudanan http://www.scribd.com/doc/16352479/Software-Design-Patterns-Made-Simple
+
+- 25. JavaScript Design Patterns - Klaus Komenda http://www.klauskomenda.com/code/javascript-programming-patterns/
+
+- 26. Design Patterns Explained - http://c2.com/cgi/wiki?DesignPatterns
+
+- 27. Working with GoF's Design Patterns In JavaScript http://aspalliance.com/1782_Working_with_GoFs_Design_Patterns_in_JavaScript_Programming.all
+
+- 28. Design Patterns by Gamma, Helm supplement http://exciton.cs.rice.edu/javaresources/DesignPatterns/

@@ -1,117 +1,53 @@
+
 # 精通 React：初学者指南 (计算机科学大师)
 
-
-
-
-
-
-
-
 ![](img/d0ee73892dd0a882274507b07de0217c_0_0.png)
-
 
 # Sufyan bin Uzayr
 
 ![](img/d0ee73892dd0a882274507b07de0217c_0_1.png)
 
-
 *Mastering React* 帮助读者掌握 React JavaScript 框架，以实现更快速、更稳健的前端开发。
 
-React 是一个用于创建连贯、廉价且可定制界面设计的 JavaScript 框架。它使得通过“模块”（即较小、独立的代码片段）创建复杂的用户界面成为可能。使用 React 的主要目标是更容易更容易创建视觉界面。
+React 是一个用于创建连贯、廉价且可定制界面设计的 JavaScript 框架。它使得通过“模块”（即较小、独立的代码片段）创建复杂的用户界面成为可能。使用 React 的主要目标是更容易创建视觉界面。
 
 React 由 Facebook 开发，并于 2013 年向公众发布。它驱动了一些最流行的应用程序，包括 Facebook 和 Instagram。它使用虚拟 DOM（JavaScript 文档对象模型），提高了应用程序的性能。JavaScript 中的虚拟 DOM 比传统的 DOM 更快。React 既可以作为独立框架，也可以与其他平台结合使用。它采用组件和数据模式来提高清晰度，同时也有助于维护大型应用程序。
 
-由于 React 是基于组件的，它在开发过程中为您节省了时间和金钱。其设计可以被分分为可重用的模块，这些模块可以用于动态调整界面。
+由于 React 是基于组件的，它在开发过程中为您节省了时间和金钱。其设计可以被分为可重用的模块，这些模块可以用于动态调整界面。
 
-前端开发行业以惊人的速度闻名。不能指望企业每年修改其应用程序以跟上技术创新的步伐。这就是为什么企业偏于 React。
+前端开发行业以惊人的速度闻名。不能指望企业每年修改其应用程序以跟上技术创新的步伐。这就是为什么企业偏向 React。
 
 React 简化了许多事情，其生态系统充满了宝贵的子框架和工具。React 是目前最强大的前端框架之一。因此，学习 React 开发从长远来看可以为任何人的职业提供未来保障，甚至产生即时收益。本书用易于理解的语言解释了 React 的概念。
 
 通过 *Mastering React*，学习 React 变得轻而易举，读者无疑将在本书的帮助下提升职业水平。
 
-
-
-
-
-
-
-
-
-
-
 ***“精通计算机科学”系列书籍由 Sufyan bin Uzayr 领导的 Zeba Academy 团队成员撰写。***
 
 ***Zeba Academy 是一家教育科技创业企业，主要为 STEM 领域的学习者开发课程和内容，并为全球大学和机构提供教育咨询。欲了解更多，请访问 https://zeba.academy***
 
-
-
-
-
-
-
-
-
-
-
-
 作者：Zeba Academy 团队成员，由 Sufyan bin Uzayr 领导。
 
+## “src” 文件夹内部
 
+### 如何使用
 
+示例代码
 
+### React Router 中的组件
 
-
-
-作者：Zeba Academy 团队成员，由 Sufyan bin Uzayr 领导。
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## “src” 文件夹内部 85
-### 如何使用 85
-示例代码 86
-
-### React Router 中的组件 88
-
-
-
-
-### Hooks 规则 137
-
-
-
-
-
-
-
-
+### Hooks 规则
 
 ![](img/d0ee73892dd0a882274507b07de0217c_18_0.png)
 
-
 **xix**
 
-关于作者
+## 关于作者
 
 Sufyan bin Uzayr 是一位作家、程序员和创业者，在行业内拥有十多年的经验。在过去，他撰写过几本书，涵盖了从历史到计算机/IT 等广泛领域。
 
 Sufyan 是 Parakozm 的董事，Parakozm 是一家专业的跨国 IT 公司，专注于教育科技（EdTech）解决方案。他还运营 Zeba Academy，这是一个专注于 STEM 领域的在线学习与教学垂直平台。
 
-Sufyan 精通多种技术，如 JavaScript、Dart、WordPress、Drupal、Linux 和 Python。他拥有拥有多个学位，包括管理学、IT、文学和政治科学学位。
+Sufyan 精通多种技术，如 `JavaScript`、`Dart`、`WordPress`、`Drupal`、`Linux` 和 `Python`。他拥有多个学位，包括管理学、IT、文学和政治科学学位。
 
 Sufyan 是一个数字游民，生活分布在四个国家。他曾在世界各地的大学和教育机构生活并授教。Sufyan 对技术、政治、文学、历史和体育有着浓厚的兴趣，在空闲时间，他喜欢向青少年教授编程和英语。
 
@@ -130,19 +66,19 @@ Sufyan 是一个数字游民，生活分布在四个国家。他曾在世界各�
 
 ### 什么是 REACT？
 
-React（也称为 React.js 或 ReactJS）是一个用于构建用户界面（UI）或其组件的前端 JavaScript 库。由 Facebook（一个流行的社交媒体平台）以及个人开发者和公司社区负责维护和开发。它基于开发页面或应用程序。然而，ReactJS 仅关注状态的监督以及状态到 DOM 的执行，因此创建……
+React（也称为 `React.js` 或 `ReactJS`）是一个用于构建用户界面（UI）或其组件的前端 JavaScript 库。由 Facebook（一个流行的社交媒体平台）以及个人开发者和公司社区负责维护和开发。它基于开发页面或应用程序。然而，`ReactJS` 仅关注状态的监督以及状态到 DOM 的执行，因此创建……
 
-React 应用通常需要使用额外的库来进行路由，以及某些客户端功能。在模型-视图-控制器（MVC）架构中，被称为“视图层”的层负责应用程序的外观。ReactJS 可以被轻易地标记为畅销品。这个 JavaScript 库于 2013 年发布，迅速赢得了大众喜爱和名。它被 Apple、PayPal 和 Netflix 等大多数公司使用；超过 32,000 个网站是在 ReactJS 框架的帮助下设计并构建的。
+React 应用通常需要使用额外的库来进行路由，以及某些客户端功能。在模型-视图-控制器（MVC）架构中，被称为“视图层”的层负责应用程序的外观。`ReactJS` 可以被轻易地标记为畅销品。这个 JavaScript 库于 2013 年发布，迅速赢得了大众喜爱和名。它被 Apple、PayPal 和 Netflix 等大多数公司使用；超过 32,000 个网站是在 `ReactJS` 框架的帮助下设计并构建的。
 
 ### 让我们通过实际示例来理解这一点
 
-假设你的一个朋友在 Facebook 上发布了一张照片。现在你想点赞这张图片，并想查看旁边的评论。现在，当你正在浏览评论时，你发现点赞数增加了 100，与此同时，你已经在没有刷新页面的情况下点赞了这张照片。这种神奇数字的变化归于 ReactJS 的使用。
+假设你的一个朋友在 Facebook 上发布了一张照片。现在你想点赞这张图片，并想查看旁边的评论。现在，当你正在浏览评论时，你发现点赞数增加了 100，与此同时，你已经在没有刷新页面的情况下点赞了这张照片。这种神奇数字的变化归于 `ReactJS` 的使用。
 
 React 是一个用于构建用户界面的指示性、组织良好且灵活的 JavaScript 库。它是 MVC 中的“V”。
 
 React 使用了一种启发式的范式，使其更容易对你的应用程序进行推理，并旨在同时具有有效性和活性。它为应用程序的不同状态创建简单的视图，当你的数据变化时，React 将负责更新并渲染恰合适的组件。指示性视图让你的代码更具读性且更容易调试。
 
-React 应用是通过多个组件完成的，每个组件单独负责渲染一小部分。ReactJS 可以轻易地标记为畅销品。于 2013 年发布，这个 JavaScript 库迅速赢得了大众喜爱和名。为了使用 React，这里有一个 ES6 示例：
+React 应用是通过多个组件完成的，每个组件单独负责渲染一小部分。`ReactJS` 可以轻易地标记为畅销品。于 2013 年发布，这个 JavaScript 库迅速赢得了大众喜爱和名。为了使用 React，这里有一个 ES6 示例：
 
 ```javascript
 import React, { Component } from 'react';
@@ -160,11 +96,7 @@ class App extends Component {
 export default App;
 ```
 
-
-
-
-
-## React **5** 简介
+## React 简介
 
 - Facebook 有一个不受限制的 Chrome 扩展，可用于调试 React 应用。这使得 React Web 应用的调试变得更快、更简单。
 
@@ -178,23 +110,23 @@ DOM 被称为“文档对象模型”（Document Object Model）。简单来说�
 
 ## React 的核心特性有哪些？
 
-最初我们查看了它为什么如此流行，现在让我们仔细了解 ReactJS 的特性。这将帮助我们明确 ReactJS 是如何运行的。
+最初我们查看了它为什么如此流行，现在让我们仔细了解 `ReactJS` 的特性。这将帮助我们明确 `ReactJS` 是如何运行的。
 
 1. **虚拟 DOM**：React 的这一属性有助于加速应用开发过程并提供弹性。该算法简化了 React 计算机生成（虚拟）内存中对网页的重复操作。因此，原始 DOM 由虚拟 DOM 进行表征。每当应用发生更改或更新时，虚拟 DOM 都会通过更新被修改的模块来重新提取整个 UI。这减少了开发所需的时间和成本。
 
-2. **JavaScript XML 或 JSX**：这是一种定义应用程序界面结构的标记语法。它创建了类似于 HTML 的语法，并被开发者用于创建 React 模块。JSX 是 ReactJS 最出色的特性之一，因为开发者编写这些构建块非常简单。
+2. **JavaScript XML 或 JSX**：这是一种定义应用程序界面结构的标记语法。它创建了类似于 HTML 的语法，并被开发者用于创建 React 模块。JSX 是 `ReactJS` 最出色的特性之一，因为开发者编写这些构建块非常简单。
 
-3. **React Native**：使用原生模块而非 Web 模块来简化 Android 和 iOS 的原生 ReactJS 开发。大多数情况下，此功能将 React 代码转换为兼容 iOS 或 Android 平台的渲染代码，并提供对它们原生特性的访问。
+3. **React Native**：使用原生模块而非 Web 模块来简化 Android 和 iOS 的原生 `ReactJS` 开发。大多数情况下，此功能将 React 代码转换为兼容 iOS 或 Android 平台的渲染代码，并提供对它们原生特性的访问。
 
-4. **单向数据绑定**：这意味着 React 使用单向数据流，迫使开发者使用回调函数来编辑模块，避免他们直接编辑。从单点监控数据流是通过一个名为 Flux 的 JS 应用架构模块实现的。它确实允许开发者更好地地管理应用，并使其更加灵活和高效。
+4. **单向数据绑定**：这意味着 React 使用单向数据流，迫使开发者使用回调函数来编辑模块，避免他们直接编辑。从单点监控数据流是通过一个名为 Flux 的 JS 应用架构模块实现的。它确实允许开发者更好地管理应用，并使其更加灵活和高效。
 
-5. **指示性 UI**：这意味着 React 使用单向数据流，迫使开发者使用回调函数来编辑模块，避免他们直接编辑。从单点监控数据流是通过一个名为 Flux 的 JS 应用架构实现的。它确实允许开发者更好地地管理应用，并使其更加灵活和高效。这一特性使 React 代码更易于理解且更容易修复错误。ReactJS 是开发既令人兴奋又具有吸引力的 UI 的最佳平台，不仅适用于 Web 应用，也适用于移动应用。
+5. **指示性 UI**：这一特性使 React 代码更易于理解且更容易修复错误。`ReactJS` 是开发既令人兴奋又具有吸引力的 UI 的最佳平台，不仅适用于 Web 应用，也适用于移动应用。
 
-6. **基于模块的方式**：这简单是指基于 ReactJS 构建的应用程序的用户界面由多个模块组成，每个模块都有用 JavaScript 编写的特定逻辑。由于此，开发者可以在应用之间传输数据而不会导致 DOM 阻塞。ReactJS 模块在决定应用图形和关系方面起着巨大作用。
+6. **基于模块的方式**：这简单是指基于 `ReactJS` 构建的应用程序的用户界面由多个模块组成，每个模块都有用 JavaScript 编写的特定逻辑。由于此，开发者可以在应用之间传输数据而不会导致 DOM 阻塞。`ReactJS` 模块在决定应用图形和关系方面起着巨大作用。
 
 ## React 历史：2010–2017
 
-回到 2011 年，Facebook 的开发者在代码维护方面面临一些问题。随着 Facebook Ads 应用拥的功能不断增加，团队需要更多的人来使其良好运行。团队成员和应用功能的增长增加了他们作为一家公司的运营压力。随着时间的推移，他们的应用变得难以处理，因为需要大量的持续更新。最终，Facebook 的工程师无法跟上这些层如而来的更新。他们的代码需要紧急升级以变得更加高效。
+回到 2011 年，Facebook 的开发者在代码维护方面面临一些问题。随着 Facebook Ads 应用拥有的功能不断增加，团队需要更多的人来使其良好运行。团队成员和应用功能的增长增加了他们作为一家公司的运营压力。随着时间的推移，他们的应用变得难以处理，因为需要大量的持续更新。最终，Facebook 的工程师无法跟上这些层出不穷的更新。他们的代码需要紧急升级以变得更加高效。
 
 ### 2010：React 的第一个密码
 
@@ -202,26 +134,29 @@ Facebook 将 Xhp 引入到其 php 技术栈中并将其开源。Xhp 允许创建
 
 ### 2011：React 的初始标准
 
-FaxJS 由 Jordan Walke 创建，它是 React 的最初模型；它在 Facebook 上实现了一个实验元素。
+`FaxJS` 由 Jordan Walke 创建，它是 React 的最初模型；它在 Facebook 上实现了一个实验元素。
 
 ### 2012：Facebook 上的新进展
 
 - Facebook Ads 变得难以实现，因此 Facebook 需要为它开发出良好的健壮性。Jordan Walke 开发了原型并形成了 React。
+
 - **4 月 9 日**：Instagram 被 Facebook 收购。Instagram 想要实现 Facebook 的新技术。借此，Facebook 承担了将 React 从 Facebook 分离并使其开源的负担。大部分工作由 Facebook 开发者 Pete Hunt 完成。
+
 - **9 月 8 日-12 日**：旧金山 TechCrunch Disrupt，Mark Zuckerberg：“我们巨大的错误是过度押注 HTML5。”他承认 Facebook 很快就会提供更好的体验。
 
 ### 2013：盛大的启动年
 
-- **5 月 29 日-31 日**：美国 JS 大。Jordan Walke 介绍了 React。React 开源。趣闻：观众们并不相信。大多数人认为 React 是一个巨大的倒退。这是因为大部分“早期采用者”参加了这次会议，而 React 针对的是“创新者”。React 的创建者及时意识到了这个问题，并决定之后启动“React 巡回”，将黑者变为支持者。
-- **6 月 2 日**：ReactJS（由 Facebook 元）已可用 JSFiddle。
+- **5 月 29 日-31 日**：美国 JS 大会。Jordan Walke 介绍了 React。React 开源。趣闻：观众们并不相信。大多数人认为 React 是一个巨大的倒退。这是因为大部分“早期采用者”参加了这次会议，而 React 针对的是“创新者”。React 的创建者及时意识到了这个问题，并决定之后启动“React 巡回”，将黑者变为支持者。
+
+- **6 月 2 日**：`ReactJS`（由 Facebook 开发）已可用 `JSFiddle`。
+
 - **7 月 30 日**：React 和 JavaScript XML 用于 Ruby on Rails。
-- **8 月 19 日**：#React 和 JavaScript XML 用于 Python 应用和框架。
+
+- **8 月 19 日**：React 和 JavaScript XML 用于 Python 应用和框架。
+
 - **9 月 14 日-15 日**：JSConfEU 2013。Pete Hunt 关于重新思考最佳实践的演讲。
+
 - **12 月 17 日**：David Nolen 介绍了基于 React 的 OM。描述了 React 是多么棒——这接触了早期采用者。这个对象展示了 React 如何比其他替代方案更好，从而提升了 React 的认可度。
-
-
-
-
 
 ## React 简介
 
@@ -229,97 +164,127 @@ FaxJS 由 Jordan Walke 创建，它是 React 的最初模型；它在 Facebook �
 
 React 已经获得了越来越多的声誉，并正处于进入其潜在用户“早期大多数”阶段的过程中。在此时，他们需要一个新的关注点，而不是仅仅依赖其技术优势，这个关注点就是：React 如何保持稳定？通过关注这一点，他们旨在吸引像 Netflix 这样的企业关注。
 
-- **2014 年初**：reactjsworldtour 系列活动正在进行中，旨在建立社区并“将黑粉转变为支持者”。
-- **1月2日**：React Developer Tools 开发了 Chrome 开发者工具的扩展。
+- **2014 年初**：`reactjsworldtour` 系列活动正在进行中，旨在建立社区并“将黑粉转变为支持者”。
+
+- **1月2日**：`React Developer Tools` 开发了 Chrome 开发者工具的扩展。
+
 - **2月**：宣布了 Atom —— 一款为 21 世纪设计的可黑客的文本编辑器。
+
 - **4月7日–9日**：2014 年 React 伦敦大会。
-- **6月**：ReactiveX.io 诞生。
-- **7月13日**：React Hot Loader 发布。React Hot Loader 是一个插件，允许 React 组件在不丢失状态的情况下进行热重载。
-- **12月12日**：PlanOut：一种用于在线试验的语言。宣布 PlanOut 0.5，其中包含一个基于 React 的 PlanOut 语言编辑器，并使解释器在功能上与 Facebook 内部使用的新版 PlanOut 平。
+
+- **6月**：`ReactiveX.io` 诞生。
+
+- **7月13日**：`React Hot Loader` 发布。`React Hot Loader` 是一个插件，允许 React 组件在不丢失状态的情况下进行热重载。
+
+- **12月12日**：PlanOut：一种用于在线试验的语言。宣布 PlanOut 0.5，其中包含一个基于 React 的 PlanOut 语言编辑器，并使解释器在功能上与 Facebook 内部使用的新版 PlanOut 平台一致。
 
 ### 2015：React 趋稳定
 
 - **2015 年初**：Flipboard 发布了 React Canvas。
+
 - **1月**：Netflix 喜欢 React。
+
 - **2015 年初**：Airbnb 使用 React。
+
 - **1月28日–29日**：2015 年 Reactjs 大会 —— Facebook 在 2015 年 Reactjs 大会上通过一次技术讲座发布了第一个版本的 React Native。
+
 - **2月**：在 Reactjs 大会上引入了 Relay 和 GraphQL。
+
 - **3月25日**：Facebook 宣布 iOS 版 React Native 已开源并在 GitHub 上可用。
+
 - **6月2日**：Redux 发布。
-- **9月2日**：React Developer Tools 的第一个稳定原始版本发布。
+
+- **9月2日**：`React Developer Tools` 的第一个稳定原始版本发布。
+
 - **9月14日**：Android 版 React Native 发布。
 
 ### 2016：React 进入主流
 
 - **3月**：Mobx 的引入。
+
 - **2月22日–23日**：2016 年 Reactjs 大会，旧金山。
+
 - **2月22日–23日**：Isaac Salier-Hellendag 在 2016 年 React.js 大会上介绍了 Draftjs。
+
 - **3月**：React Storybook 的引入。
+
 - **6月2日–3日**：2016 年 ReactEurope 活动。
+
 - **7月11日**：引入 React 的错误代码系统。
+
 - **11月**：Blueprint 总结 —— 一个用于 Web 的 React UI 工具包。
 
 ### 2017：进一步增强之年
 
 - **2017 年初**：Airbnb 引入了一个名为 React Sketch 的新开源库。
+
 - **4月19日**：React Fiber 在 F8 2017 上开源。
+
 - **9月**：对 React、Jest、Flow 和 Immutable.js 重新许可。
-- **9月26日**：#React 16：错误边界、端口（portals）、片段（fragments）和 Fiber 架构。
-- **10月**：#Netflix 移除了客户端 Reactjs。
-- **11月28日**：#React v16.2.0：改进了对片段（fragments）的支持。
+
+- **9月26日**：React 16：错误边界、端口（portals）、片段（fragments）和 Fiber 架构。
+
+- **10月**：Netflix 移除了客户端 Reactjs。
+
+- **11月28日**：React v16.2.0：改进了对片段（fragments）的支持。
 
 ## 优缺点
 
-ReactJS 是一个被广泛使用的免费开源 JavaScript 库。它让你能够以极少的努力和代码创建令人惊叹的 Web 应用。它的主要目标是开发能够提高应用效率的 UI。ReactJS 有重要的优点和缺点。
+`ReactJS` 是一个被广泛使用的免费开源 JavaScript 库。它让你能够以极少的努力和代码创建令人惊叹的 Web 应用。它的主要目标是开发能够提高应用效率的 UI。`ReactJS` 有重要的优点和缺点。
 
 ### 优点
 
-1. **易于学习和使用**：ReactJS 非常容易理解和应用。它的文档、教程和培训资源更易理解。任何具有 JavaScript 背景的人都可以轻松上手，并在几天内开始使用 React 创建 Web 应用。它允许你只需导入 React 库即可获得访问，然后可以直接使用函数组件。
-2. **创建动态 Web 应用变得更简单**：使用 HTML 字符串制作动态 Web 应用是有问题的，因为这需要复杂的代码，而 ReactJS 解决了这个问题并使其变得简单。它需要更少的代码并增加了产品的功能。它包含了几个让网站更具动态的概念。我们将在其他章节中考虑这一点。
-3. **可复用组件**：一个 ReactJS Web 应用是由不同的组件构建而成的，每个组件都有自己的逻辑和控制。这些组件负责获取较小的、可复用的 HTML 代码，可以在任何需要它们的地方进一步复用。这些可填充代码使得你的应用程序更易开发和维护。它允许你直接在应用程序上添加功能，为你的项目提供更多属性。
-4. **性能增强**：ReactJS 由于虚拟 DOM（文档对象模型）提升了性能。DOM 是一个处理 HTML、XML 或 XHTML 的跨平台编程 API（应用程序接口）。当 DOM 更新时，主要问题就会出现，这降低了应用的性能。因此，通过引入虚拟 DOM，它完全存在于内存中，是 浏览器 DOM 的表示。当我们刻画 React 组件时，我们没有直接写入 DOM。作为写入虚拟组件的替代方案，React 将转换为 DOM，从而带来更平滑、更快的性能。
-5. **便捷工具的支持**：ReactJS 因为提供了一个实用的工具集而流行。这些技术让开发人员的工作更加理性、更简单。React Developer Tools 被认为是 Chrome 和 Firefox 的开发者扩展，允许你查看虚拟 DOM 中的 React 组件树结构。它还允许你选择特定的机制并检查和编辑它们当前的 props 和 state。
-6. **对 SEO 友好**：传统的 JavaScript 框架在 SEO 上存在问题。搜索引擎通常难以处理 JavaScript 密集应用。ReactJS 解决了这个问题，让应用更容易被发现。结果是，React 可以在服务器上运行，并将结果返回浏览器。
-7. **拥有库的优势**：目前大多数开发者选择了 ReactJS，因为它提供了一个丰富的 JavaScript 库。这为开发者提供了所需的灵活性。
+1. **易于学习和使用**：`ReactJS` 非常容易理解和应用。它的文档、教程和培训资源更易理解。任何具有 JavaScript 背景的人都可以轻松上手，并在几天内开始使用 React 创建 Web 应用。它允许你只需导入 React 库即可获得访问，然后可以直接使用函数组件。
 
-关于 ReactJS 的优缺点，可以简单地总结为三点：
+2. **创建动态 Web 应用变得更简单**：使用 HTML 字符串制作动态 Web 应用是有问题的，因为这需要复杂的代码，而 `ReactJS` 解决了这个问题并使其变得简单。它需要更少的代码并增加了产品的功能。它包含了几个让网站更具动态的概念。我们将在其他章节中考虑这一点。
 
-8. **代码测试范围**：ReactJS 应用非常容易测试。它提供的原生工具允许开发者测试和调试他们的代码。
+3. **可复用组件**：一个 `ReactJS` Web 应用是由不同的组件构建而成的，每个组件都有自己的逻辑和控制。这些组件负责获取较小的、可复用的 HTML 代码，可以在任何需要它们的地方进一步复用。这些可填充代码使得你的应用程序更易开发和维护。它允许你直接在应用程序上添加功能，为你的项目提供更多属性。
+
+4. **性能增强**：`ReactJS` 由于虚拟 DOM（文档对象模型）提升了性能。DOM 是一个处理 HTML、XML 或 XHTML 的跨平台编程 API（应用程序接口）。当 DOM 更新时，主要问题就会出现，这降低了应用的性能。因此，通过引入虚拟 DOM，它完全存在于内存中，是浏览器 DOM 的表示。当我们刻画 React 组件时，我们没有直接写入 DOM。作为写入虚拟组件的替代方案，React 将转换为 DOM，从而带来更平滑、更快的性能。
+
+5. **便捷工具的支持**：`ReactJS` 因为提供了一个实用的工具集而流行。这些技术让开发人员的工作更加理性、更简单。`React Developer Tools` 被认为是 Chrome 和 Firefox 的开发者扩展，允许你查看虚拟 DOM 中的 React 组件树结构。它还允许你选择特定的机制并检查和编辑它们当前的 props 和 state。
+
+6. **对 SEO 友好**：传统的 JavaScript 框架在 SEO 上存在问题。搜索引擎通常难以处理 JavaScript 密集应用。`ReactJS` 解决了这个问题，让应用更容易被发现。结果是，React 可以在服务器上运行，并将结果返回浏览器。
+
+7. **拥有库的优势**：目前大多数开发者选择了 `ReactJS`，因为它提供了一个丰富的 JavaScript 库。这为开发者提供了所需的灵活性。
+
+8. **代码测试范围**：`ReactJS` 应用非常容易测试。它提供的原生工具允许开发者测试和调试他们的代码。
 
 论点：安全、易用、进步。该库背后的核心理念是“通过频繁变化的图形来设计大型应用程序”；它很好地处理了任务。它为开发者提供了操作生成的 DOM，这比真实的 DOM 更快且对用户友好。
 
 ### 缺点
 
 1. **开发门槛高**：高门槛既有优点也有缺点。在缺点方面，由于情况变化非常快，有些工程师对必须不断学习新方法感到不满。他们可能会发现接受所有这些变化具有挑战性，特别是当频繁更新时。
+
 2. **文档不足**：这是另一个在重复保持技术更新中常见的缺点。React 技术的更新如此快，以至于没有时间编写良好的文档。为了克服这个问题，开发者随着新版本和工具的演进自行编写命令。
-3. **仅负责视图**：ReactJS 只维护和开发应用程序的用户界面，其他都不负责。因此你仍然需要指定其他技术来获取完整的开发工具集。
-4. **JSX 是障碍**：ReactJS 使用 JSX。它是一种 HTML 与 JavaScript 混合的语法扩展。这种策略有其优势，但开发社区的某些成员认为 JSX 是一个障碍，特别是对新开发者来说。开发者对它的学习难度表示不满。
 
+3. **仅负责视图**：`ReactJS` 只维护和开发应用程序的用户界面，其他都不负责。因此你仍然需要指定其他技术来获取完整的开发工具集。
 
+4. **JSX 是障碍**：`ReactJS` 使用 JSX。它是一种 HTML 与 JavaScript 混合的语法扩展。这种策略有其优势，但开发社区的某些成员认为 JSX 是一个障碍，特别是对新开发者来说。开发者对它的学习难度表示不满。
 
+## 精通 React
 
-
-## 14 精通 React
-
-Angular 或 Ember 是（JS）框架，其中某些决策已经预先为你做好了。而 React 只是一个库，你需要自己做出所有的裁决。它强调帮助你使用组件来构建用户界面。ReactJS 是一个 UI 库，帮助接管 UI 执行管理的细致任务。
+`Angular` 或 `Ember` 是（JS）框架，其中某些决策已经预先为你做好了。而 React 只是一个库，你需要自己做出所有的裁决。它强调帮助你使用组件来构建用户界面。`ReactJS` 是一个 UI 库，帮助接管 UI 执行管理的细致任务。
 
 - 由于它仅仅是一个库，你不需要像框架那样在代码结构上持有特定的偏见（opinionated）。
-- 通过使用 React，你可以使用最新的纯 JavaScript，因为 React 鼓励这样做；而且使用 Babel，你可以在今天编写 JavaScript 语法的未来实现。
-- React 有一个专门的库来处理 DOM（React-DOM），它的运行极快，因为它没有直接操作 DOM（最慢的过程之一）。相反，它使用了一种名为**虚拟 DOM** 的技术。它主要将 DOM 保留在 JavaScript 中（这比处理 DOM 要快）。React 将此虚拟 DOM 与实际 DOM 进行比较，找出更新实际 DOM 所需的最少更改，并进行相应的更新。这就是为什么它速度极快。
+
+- 通过使用 React，你可以使用最新的纯 JavaScript，因为 React 鼓励这样做；而且使用 `Babel`，你可以在今天编写 JavaScript 语法的未来实现。
+
+- React 有一个专门的库来处理 DOM（`React-DOM`），它的运行极快，因为它没有直接操作 DOM（最慢的过程之一）。相反，它使用了一种名为**虚拟 DOM** 的技术。它主要将 DOM 保留在 JavaScript 中（这比处理 DOM 要快）。React 将此虚拟 DOM 与实际 DOM 进行比较，找出更新实际 DOM 所需的最少更改，并进行相应的更新。这就是为什么它速度极快。
+
 - React 拥有庞大的开源库生态系统供选择，这为其提供的自由来说是不可思议的。
+
 - React 采用基于组件的方法。在这里，DOM 中的每个元素都可以是一个组件。这认可了代码片段和概念孤立的最优原则，使其易于调试、维护和复用！
 
-现在你已经了解了 ReactJS 框架的优势和最佳实践，那么大多数中大型公司利用 ReactJS 开发设施来设计其网站的用户界面，这就不足意外了。所以，如果你正在寻找一个能够完全理解你的需求并为你的 ReactJS 项目提供最佳结果的 ReactJS 开发者。
+现在你已经了解了 `ReactJS` 框架的优势和最佳实践，那么大多数中大型公司利用 `ReactJS` 开发设施来设计其网站的用户界面，这就不足为奇了。所以，如果你正在寻找一个能够完全理解你的需求并为你的 `ReactJS` 项目提供最佳结果的 `ReactJS` 开发者。
 
 ## 第 2 章 React 基础
 
-
-
 在本章中，我们将学习 React 中的 JSX 是什么，以及如何在 React 中使用 JSX。我们建议在 React 中使用 JSX。我们还将明确用户界面（UI）应该什么样子。JSX 可能会让你想起模板语言，但它是由完整的 JavaScript 附加概念组成的。对于想要学习前端开发的学生来说，JSX 是 HTML、CSS 和 JavaScript 之后的首选，它是一个可以让你轻松创建第一个项目的框架。
 
-大多数学习者从 ReactJS 开始。原因是因为它非常流行，并且很容易通过框架进行操作。所以，当你已经使用 Create React App 来设置你的新任务时，你可能会发现某些支持的内容或某些新颖的东西。
+大多数学习者从 `ReactJS` 开始。原因是因为它非常流行，并且很容易通过框架进行操作。所以，当你已经使用 Create React App 来设置你的新任务时，你可能会发现某些支持的内容或某些新颖的东西。
 
-组成文件将具有显式的扩展名，这对于非 ReactJS 开发者是不使用的，它是 `.jsx`。为什么不是 `.js` 呢？ReactJS 中使用的 JSX 语法具体是什么？与 JS 相比改进了哪些方面？
+组成文件将具有显式的扩展名，这对于非 `ReactJS` 开发者是不使用的，它是 `.jsx`。为什么不是 `.js` 呢？`ReactJS` 中使用的 JSX 语法具体是什么？与 JS 相比改进了哪些方面？
 
 这正是我将在本章为你解释的内容。我将向你展示 JSX 是什么、它有什么用途、如何在 JSX 中使用循环，以及 JSX 和 HTML 区别。
 
@@ -329,9 +294,9 @@ JSX 的全称是“JavaScript XML”，它是基于“ES6”（JavaScript 的最
 
 当有人编写 React 代码时，他们可能会发现 JavaScript 中嵌入了一些可疑的 HTML 类型代码。这种可疑的 HTML 类型代码是什么？它在 React 函数中是如何运行的？这些简短的奇怪的 HTML 类代码并不是 HTML（超文本标记语言），而是“JavaScript XML”，一种基于 ES6 的 JavaScript 语法扩展。JSX，或 JavaScript XML，是一种标记形式，允许你通过将 HTML 标签转换为 React 元素（组件），在 React 库中编写 HTML。
 
-利用 JSX 可以你在 JavaScript 中编写 HTML 元素，然后将其渲染到 DOM（文档对象模型）。JSX（JavaScript XML）是一种 React 特有的 XML/HTML 类型语法，它包含了 ECMAScript，以允许 XML/HTML 类型内容与 JavaScript/React 代码结合。这种组合被认为由处理器（如 Babel 等转译器）使用，将限制在 JavaScript 文档中的 HTML 类型内容转换为 JavaScript 引擎识别的典型 JavaScript 模块。
+利用 JSX 可以你在 JavaScript 中编写 HTML 元素，然后将其渲染到 DOM（文档对象模型）。JSX（JavaScript XML）是一种 React 特有的 XML/HTML 类型语法，它包含了 ECMAScript，以允许 XML/HTML 类型内容与 JavaScript/React 代码结合。这种组合被认为由处理器（如 `Babel` 等转译器）使用，将限制在 JavaScript 文档中的 HTML 类型内容转换为 JavaScript 引擎识别的典型 JavaScript 模块。
 
-使用 JSX，你可以在与 JavaScript 代码相同的文件中编写简短的 HTML/XML 类结构（例如，类 DOM 的层级结构块），Babel 将将这些表达式翻译成真实的 JavaScript 代码。作为之前提到的将 JavaScript 放入 HTML 的替代方案，JSX 让我们能够将 HTML 放入 JavaScript 中。
+使用 JSX，你可以在与 JavaScript 代码相同的文件中编写简短的 HTML/XML 类结构（例如，类 DOM 的层级结构块），`Babel` 将这些表达式翻译成真实的 JavaScript 代码。作为之前提到的将 JavaScript 放入 HTML 的替代方案，JSX 让我们能够将 HTML 放入 JavaScript 中。
 
 JSX 是作为 DeNA Co., Ltd.（全球主要社交游戏提供商之一）的一个研究项目形成的。Kazuho Oku 和 Goro Fuji 是主要开发者（即 GFX）。
 
@@ -348,7 +313,7 @@ var nav = (
 );
 ```
 
-#` 处是其他页面的地址，需要超链接，Babel 将其转换为以下组件：
+`#` 处是其他页面的地址，需要超链接，`Babel` 将其转换为以下组件：
 
 ```javascript
 var nav = React.createElement(
@@ -412,33 +377,36 @@ var nav = React.createElement(
 var HTMLLi = React.createElement('li', {className:'bar'}, 'foo');
 ```
 
-
-
-
-
-## 掌握 React
-
 //: React 节点，表示自定义的 HTML DOM 节点
+
+```javascript
 var HTMLCustom = React.createElement('foo-bar', {
   className: 'bar'
 }, 'foo');
+```
 
-如果你习惯使用 JSX 作为 `React.createElement()` 的替代（假设你已设置 Babel）来构建这些 React 节点，你只需要将 `React.createElement()` 函数调用替换为类似于 HTML/XML 的标签，这些标签指示了你希望计算机生成的虚拟 DOM 显示的 HTML。上面显示的代码可以用 JSX 如下所示编写。
+如果你习惯使用 JSX 作为 `React.createElement()` 的替代（假设你已设置 `Babel`）来构建这些 React 节点，你只需要将 `React.createElement()` 函数调用替换为类似于 HTML/XML 的标签，这些标签指示了你希望计算机生成的虚拟 DOM 显示的 HTML。上面显示的代码可以用 JSX 如下所示编写。
 
 //: React 节点，表示一个真实的 HTML DOM 节点
+
+```javascript
 var HTMLli = <li className="bar">foo</li>;
+```
 
 //: React 节点，表示一个自定义的 HTML DOM 节点
-var HTMLCustom = <foo-bar className="bar">foo</foo-bar>;
 
-可以观察到，JSX 并不是 JavaScript 字符串格式，它就像你在 `.html` 扩展名的文档中进行格式化一样。JSX 经常会被 Babel 转换回 `React.createElement()` 函数调用。这种转换发生在随后的 JSFiddle 中（即 Babel 将 JSX 翻译为 JavaScript，然后 React 生成 DOM 节点）。
+```javascript
+var HTMLCustom = <foo-bar className="bar">foo</foo-bar>;
+```
+
+可以观察到，JSX 并不是 JavaScript 字符串格式，它就像你在 `.html` 扩展名的文档中进行格式化一样。JSX 经常会被 `Babel` 转换回 `React.createElement()` 函数调用。这种转换发生在随后的 JSFiddle 中（即 `Babel` 将 JSX 翻译为 JavaScript，然后 React 生成 DOM 节点）。
 
 如果你检查上述 JSfiddle 中形成的确定 HTML，它将表现如下：
 
 ```html
 <body>
   <div id="app1"><li class="bar" data-reactid=".0">foo</li></div>
-  <div id="app2"><foo-bar class="bar" data-reactid=".1">foo</foo-bar></div
+  <div id="app2"><foo-bar class="bar" data-reactid=".1">foo</foo-bar></div>
 </body>
 ```
 
@@ -453,19 +421,19 @@ var HTMLCustom = <foo-bar className="bar">foo</foo-bar>;
 - 样式属性取一个驼峰命名式的实体（例如，`onclick` 被写为 `onChange`）
 - 为了刻画 HTML 元素，必须确保 HTML 标签必须小写
 
-`ReactDOM.render()` 函数也可以用于将 JSX 术渲染到 DOM。实际上，在 Babel 转换 JSX 之后，它所做的只是渲染由 `createElement()` 创建的节点。再次，JSX 只是关于必须编写 `createElement()` 函数调用的一种观点。在代码示例中，我正使用 JSX 表达式将 `<li>` 元素和自定义的 `<foo-bar>` 元素渲染到 DOM。一旦渲染到 DOM，HTML 将如下所示：
+`ReactDOM.render()` 函数也可以用于将 JSX 渲染到 DOM。实际上，在 `Babel` 转换 JSX 之后，它所做的只是渲染由 `createElement()` 创建的节点。再次，JSX 只是关于必须编写 `createElement()` 函数调用的一种观点。在代码示例中，我正使用 JSX 表达式将 `<li>` 元素和自定义的 `<foo-bar>` 元素渲染到 DOM。一旦渲染到 DOM，HTML 将如下所示：
 
 ```html
 <body>
   <div id="app1"><li class="bar" data-reactid=".0">foo</li></div>
-  <div id="app2"><foo-bar class="bar" data-reactid=".1">foo</foo-bar></div
-</div>
+  <div id="app2"><foo-bar class="bar" data-reactid=".1">foo</foo-bar></div>
 </body>
 ```
 
-请记住，你 JavaScript 文件中的 JSX 会被 Babel 接收，Babel 将代码转换为 React 节点（即 `React.createElement()` 函数调用），然后通过这些节点形成 React（即虚拟 DOM），作为生成真实 HTML 节点的模板。React 节点被弯曲为实际 DOM 节点并进一步到 HTML 页面 DOM 中的那部分是在调用 `ReactDOM.render()` 之后发生的。
+请记住，你 JavaScript 文件中的 JSX 会被 `Babel` 接收，`Babel` 将代码转换为 React 节点（即 `React.createElement()` 函数调用），然后通过这些节点形成 React（即虚拟 DOM），作为生成真实 HTML 节点的模板。React 节点被弯曲为实际 DOM 节点并进一步到 HTML 页面 DOM 中的那部分是在调用 `ReactDOM.render()` 之后发生的。
 
 ### 注意事项
+
 - 你正在解析的 DOM 元素内部的任何 DOM 节点将被移除/替换。
 - `ReactDOM.render()` 不调整你正在翻译的 DOM 组件节点。
 - 渲染到 HTML DOM 只是 React 的选择之一，还提供了其他的渲染 API。例如，在服务器端渲染为字符串（即 `ReactDOM.renderToString()`）也是可能的。
@@ -506,7 +474,6 @@ ReactDOM.render(reactNode, document.getElementById('app1'));
 
 一旦你理解了 `{}` 括号逃逸了 JSX，这里并没有复杂的。`{}` 括号纯粹告诉 JSX 内容是 JavaScript，以便最终被 JavaScript 引擎解析（例如 `2+2`）。注意，只要结果是有效的 JavaScript，`{}` 括号可以在 JSX 中的任何地方。
 
-
 当你想要生成元素列表时，可以使用 `map()` 方法。让我们看看代码：
 
 ```javascript
@@ -516,7 +483,7 @@ render() {
     <ul>
       {children.map((value, index) => {
         return <li key={index}>{value}</li>
-      ))}
+      })}
     </ul>
   );
 }
@@ -544,12 +511,7 @@ JSX 和 HTML 之间的主要区别在于，如果你想创建兄弟元素，它�
 
 另一个区别是，在 HTML 中我们可以添加 class 关键字来定义 CSS 的各种类，但在 JSX 中，这个关键字已经被占用了；这就是为什么开发者不得不寻找其他的。在 JSX 中，我们必须提及 `className` 来定义用于样式的类名。这类似于该属性，比如 HTML 中的 `onclick` 和 JSX 中的 `onClick`。
 
-
-
-
-
 ## 精通 React
-
 
 *ReactJS | 设置开发环境*
 
@@ -558,12 +520,12 @@ JSX 和 HTML 之间的主要区别在于，如果你想创建兄弟元素，它�
 因此，最初的步骤是安装 NodeJS。
 
 - **步骤 1：** 安装 NodeJS 必须访问其官方下载链接。下载并安装新版本的 NodeJS。一旦你已经在电脑上设置好了 NodeJS 文件，你就需要设置 React 骨架（Boilerplate）。
+
 - **步骤 2：** 如果你想为旧版本和最新版本设置 React 环境，请根据你的 node 版本遵循相应的步骤。
 
-对于包含“Node < 8.10”和“npm < 5.6”的旧版本：设置 React 骨架，我们将全局安装该模板。要安装 React 骨架，请在终端或命令提示符中输入以下行：“`npm install -g create-react-app”。
+对于包含“Node < 8.10”和“npm < 5.6”的旧版本：设置 React 骨架，我们将全局安装该模板。要安装 React 骨架，请在终端或命令提示符中输入以下行：`npm install -g create-react-app`。
 
-
-react.js 文件是构建 React 基础和编写 React 元素所需的主文件。当你打算在 HTML （即 DOM）中渲染元素时，你同样需要 react-dom.js 文件。react-dom.js 文件挂载在 react.js 文件上，必须与 react.js 文件一起使用。
+`react.js` 文件是构建 React 基础和编写 React 元素所需的主文件。当你打算在 HTML （即 DOM）中渲染元素时，你同样需要 `react-dom.js` 文件。`react-dom.js` 文件挂载在 `react.js` 文件上，必须与 `react.js` 文件一起使用。
 
 这是一个适当包含 React 的 HTML 文档示例：
 
@@ -579,8 +541,7 @@ react.js 文件是构建 React 基础和编写 React 元素所需的主文件。
 </html>
 ```
 
-
-通过加载到 HTML 页面加载的 react.js 文件和 react-dom.js 文件，可能会形成 React 节点/组件，然后将它们渲染到 DOM 中。下面的 HTML 创建了一个 Hello_Message React 模块，该模块包含一个 React div 节点，并被渲染到 `<div id="app"></div>` 组件内部的 DOM 中。
+通过加载到 HTML 页面加载的 `react.js` 文件和 `react-dom.js` 文件，可能会形成 React 节点/组件，然后将它们渲染到 DOM 中。下面的 HTML 创建了一个 Hello_Message React 模块，该模块包含一个 React div 节点，并被渲染到 `<div id="app"></div>` 组件内部的 DOM 中。
 
 ```html
 <!DOCTYPE html>
@@ -590,7 +551,7 @@ react.js 文件是构建 React 基础和编写 React 元素所需的主文件。
 <script src="https://fb.me/react-dom-15.2.0.js"></script>
 </head>
 <body>
-<div id="app"></</div>
+<div id="app"></div>
 <script>
 var HelloMessage = React.createClass({
   displayName: 'HelloMessage',
@@ -607,7 +568,7 @@ ReactDOM.render(React.createElement(HelloMessage,{name: 'John' }), document.getE
 
 这种设置就是你使用 React 所需的所有。然而，这种设置不允许使用 JSX。下一节将讨论 JSX 的用法。
 
-*注意*：提供了一种名为 react-with-addons.js 的备用 react.js 文件，它包含了用于设计 React 应用的各种实用组件。可以使用“addons”文件来代替 react.js 文档。
+*注意*：提供了一种名为 `react-with-addons.js` 的备用 `react.js` 文件，它包含了用于设计 React 应用的各种实用组件。可以使用“addons”文件来代替 `react.js` 文档。
 
 尝试不要将 `<body>` 元素作为你 React 应用的根节点。你应该始终在 `<body>` 中放入一个根 `<div>`，给它分配一个“ID”，并将 `<div>` 渲染到 `<body>` 中。这为 React 提供了一个它自己自由运行的环境，而无需担心其他可能需要对 `<body>` 元素的子元素进行修改。
 
@@ -623,7 +584,7 @@ ReactDOM.render(React.createElement(HelloMessage,{name: 'John' }), document.getE
 <script src="https://fb.me/react-dom-15.2.0.js"></script>
 </head>
 <body>
-<div id="app"></</div>
+<div id="app"></div>
 <script>
 var HelloMessage = React.createClass({
   displayName: 'HelloMessage',
@@ -640,21 +601,23 @@ ReactDOM.render(React.createElement(HelloMessage,{name: 'John' }), document.getE
 
 可选情况下，通过 Babel 使用 JSX，可以通过提取 `React.createElement()` JavaScript 函数调用来简化 React 组件的形成，使其也可以写成更像普通 HTML 的样式和语法。
 
-作为编写以下内容的替代方案，即 React.createElement()：
+作为编写以下内容的替代方案，即 `React.createElement()`：
+
 `return React.createElement('div',null,'Hello ' + this.props.name);`
 
 使用 JSX，可以写如下：
+
 `return <div>Hello {this.props.name}</div>;`
 
-此后，Babel 将其翻译回使用 `React.createElement()` 的代码，以便 JavaScript 引擎进行分析。
+此后，`Babel` 将其翻译回使用 `React.createElement()` 的代码，以便 JavaScript 引擎进行分析。
 
-已经说明，你可以将 JSX 视为一种 HTML 形式，你可以直接在 JavaScript 中编写它，但需要通过 Babel 进行转换步骤，转换为浏览器可以顺利编译和运行的 ECMAScript 5 代码。换句话说，Babel 将将 JSX 解析为 `React.createElement` 函数调用。
+已经说明，你可以将 JSX 视为一种 HTML 形式，你可以直接在 JavaScript 中编写它，但需要通过 `Babel` 进行转换步骤，转换为浏览器可以顺利编译和运行的 ECMAScript 5 代码。换句话说，`Babel` 将将 JSX 解析为 `React.createElement` 函数调用。
 
 目前，只需理解 JSX 是一种可选的抽象，在你设计 React 元素时提供便利，并且它不会在 ES5 浏览器中运行。
 
 ### 通过 Babel 转换 JSX
 
-通常，Babel 被配置为在开发时自动处理你的 JavaScript 文件。因此，使用 browser.js 从未作为一种生产环境解决方案。
+通常，`Babel` 被配置为在开发时自动处理你的 JavaScript 文件。因此，使用 `browser.js` 从未作为一种生产环境解决方案。
 
 在所示的 HTML 文件中，我们一直在设计 HelloMessage 模块，使用 JSX 非常高效。在浏览器中转换 JSX 指定了 `<script>` 类型为 `type="text/babel"`。
 
@@ -667,7 +630,7 @@ ReactDOM.render(React.createElement(HelloMessage,{name: 'John' }), document.getE
 <script src="https://cdn.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
 </head>
 <body>
-<div id="app"></</div>
+<div id="app"></div>
 <script type="text/babel">
 var HelloMessage = React.createClass({
   render: function() {
@@ -690,25 +653,19 @@ ReactDOM.render(<HelloMessage name="John" />, document.getElementById('app'));
 - 你可以控制 JavaScript 在 HTML 中的完全影响，并避免使用或学习脚本语言。
 - JSX 不是一种模板解决方案或答案。
 - JSX 是一种声明式语法，用于表示或显示用户界面组件或模块的树形结构。
-
 - 编译器会搜索并发现你在编码时可能会错过的 HTML 错误。
 - JSX 促进了内联样式的想法，这可能是件好事。
-
 - JSX 规范正在编写中，以便任何人都可以作为 ECMAScript 的一种 XML 语法扩展来使用，且没有声明的语义。
 
-
-
-
-
-## React 基础 31
+## React 基础
 
 ### 在 React 中使用 ES6 和 ES*
 
-Babel 并不是 React 的。事实上，Babel 的作用甚至不是作为一个 JSX 转换器。Babel 首先是一个 JavaScript 编译程序。它接收 ES* 代码并将其转换为可以在不支持 ES* 代码的浏览器中运行的代码。今天，Babel 通常将 ES6 和 ES7 代码转换为 ES5 代码。在进行这种 ECMAScript 转换时，顺便将 JSX 术语转换为 `React.createElement()` 调用是非常小道的做法。这就是我们在上一节中检查过的内容。
+`Babel` 并不是 React 的。事实上，`Babel` 的作用甚至不是作为一个 JSX 转换器。`Babel` 首先是一个 JavaScript 编译程序。它接收 ES* 代码并将其转换为可以在不支持 ES* 代码的浏览器中运行的代码。今天，`Babel` 通常将 ES6 和 ES7 代码转换为 ES5 代码。在进行这种 ECMAScript 转换时，顺便将 JSX 术语转换为 `React.createElement()` 调用是非常小道的做法。这就是我们在上一节中检查过的内容。
 
-鉴于 Babel 是转换 JSX 的一系列步骤，它让你编写可以在未来的 ES* 版本中运行的代码。
+鉴于 `Babel` 是转换 JSX 的一系列步骤，它让你编写可以在未来的 ES* 版本中运行的代码。
 
-在提到的 HTML 页面中，熟悉的 `HelloMessage` 模块被再次编写，以利用 ES6 类的优势。Babel 不仅转换 JSX 语法，还将将 ES6 类语法转换为 ES5 语法，然后这些就可以被 ES5 浏览器引擎分析了。
+在提到的 HTML 页面中，熟悉的 `HelloMessage` 模块被再次编写，以利用 ES6 类的优势。`Babel` 不仅转换 JSX 语法，还将将 ES6 类语法转换为 ES5 语法，然后这些就可以被 ES5 浏览器引擎分析了。
 
 ```html
 <!DOCTYPE html>
@@ -744,7 +701,7 @@ ReactDOM.render(<HelloMessage name="John" />, document.getElementById('app'));
 </html>
 ```
 
-在上述提到的 HTML 文件的代码中，Babel 接收的是：
+在上述提到的 HTML 文件的代码中，`Babel` 接收的是：
 
 ```javascript
 class HelloMessage extends React.Component {
@@ -855,17 +812,13 @@ var HelloMessage = (function (_Component) {
 })(_React.Component);
 ```
 
-## 精通 React 32
+## 精通 React
 
-## React 基础 33
+## React 基础
 
-### 什么是组件？ 34
+### 什么是组件？
 
-## React 基础 35
-
-
-
-
+## React 基础
 
 ## 精通 React
 
@@ -879,7 +832,7 @@ var HelloMessage = (function (_Component) {
 
 ```javascript
 function Welcome(props) {
-  return <<h1>Hello, {props.name}</h1>;
+  return <h1>Hello, {props.name}</h1>;
 }
 
 const element = <Welcome name="world" />;
@@ -920,10 +873,10 @@ ReactDOM.render(
 
 | API 方法 | 示例 | 说明 |
 | :--- | :--- | :--- |
-| setState() | `this.setState({mykey: 'my new value'});` <br> `this.setState(function(previousState, currentProps) { return {myInteger: previousState.myInteger+2}; });` | 用于重新渲染组件及其子机制的主要技术。 |
-| replaceState() | `this.replaceState({mykey: 'my new value'});` | 类似于 setState()，但不合并旧状态，而是使用发送的新对象将其擦除。 |
-| forceUpdate() | `this.forceUpdate(function(){callback});` | 调用 forceUpdate() 将强制组件调用 `render()`，跳过 `shouldComponentUpdate()`。 |
-| isMounted() | `this.isMounted()` | 如果组件已渲染到 DOM，isMounted() 返回 true，否则返回 false。 |
+| `setState()` | `this.setState({mykey: 'my new value'});` <br> `this.setState(function(previousState, currentProps) { return {myInteger: previousState.myInteger+2}; });` | 用于重新渲染组件及其子机制的主要技术。 |
+| `replaceState()` | `this.replaceState({mykey: 'my new value'});` | 类似于 `setState()`，但不合并旧状态，而是使用发送的新对象将其擦除。 |
+| `forceUpdate()` | `this.forceUpdate(function(){callback});` | 调用 `forceUpdate()` 将强制组件调用 `render()`，跳过 `shouldComponentUpdate()`。 |
+| `isMounted()` | `this.isMounted()` | 如果组件已渲染到 DOM，`isMounted()` 返回 true，否则返回 false。 |
 
 *注意*
 
@@ -935,11 +888,7 @@ ReactDOM.render(
 
 解释组件 props 的简单方法是说它们在功能上等同于……（文本继续）
 
-
-
-
-
-## React 基础 41
+## React 基础
 
 ```javascript
 var Badge = React.createClass({
@@ -972,7 +921,7 @@ ReactDOM.render(<BadgeList />, document.getElementById('app'));
 
 根据对 React 的研究，状态应该包含部分事件处理程序可能会转换以触发用户界面更新的数据。在实际应用中，这些数据往往是极微小的且可以 JSON 化的。在构建一个有状态的组件时，仔细考虑其状态可能的微小描述，并仅在 `this.state` 中累积这些属性。在 `render()` 内部，只需计算在当前状态运行时创建所需的任何其他信息。你会发现以这种方式编写应用倾向于产生最正确的应用，因为将冗余或计算出的值累积到状态中，意味着你需要清晰地保持它们同步，而不是依赖 React 为你计算。
 
-## 精通 React 42
+## 精通 React
 
 关于 React 组件状态，你需要记住的几点：
 
@@ -993,7 +942,7 @@ ReactDOM.render(<BadgeList />, document.getElementById('app'));
 
 修改状态需要一个事件监听器；在本示例中，点击 `<span>` 节点的点击事件将运行 `changeMood` 方法。为此，我使用 `this.setState()` 根据当前的情绪/状态循环到下一个状态。在状态通知后（即 `setState()` 合并了更改），组件将重新渲染自身，用户界面也将随之改变。
 
-## 状态的基础 43
+## 状态的基础
 
 关于组件状态，应该记住以下点：
 
@@ -1029,7 +978,7 @@ ReactDOM.render(<BadgeList />, document.getElementById('app'));
 5. 状态应该只理解描述 UI 所需的最少数据，它不应该包含计算数据、其他 React 组件或来自 props 的重复数据。
 6. 如果可能应避免使用状态。也就是说，无状态组件是理想的，有状态组件增加了复杂度。React 文档建议：“一种常见的形状是形成许多只渲染数据的无状态组件，并在它们上方放置一个有状态的组件，后者将其状态传递给子组件。有状态组件总结了所有的协作逻辑，而无状态组件以指示的方式处理数据。”
 
-创建无状态函数组件
+### 创建无状态函数组件
 
 当一个模块完全是 props 的结果而没有状态时，该组件可以写成纯函数，避免形成一个 React 组件类。在下面的示例中，`TheComponent` 是一个通过 `React.createElement()` 生成结果的作用。
 
@@ -1050,13 +999,10 @@ var TheComponent = function MyComponent(props) {
 }), app);
 ```
 
-
-
-
-
-## 第3 章：React 组件
+## 第 3 章：React 组件
 
 ### 本章内容
+
 - 组件
 - 条件渲染
 - 样式处理
@@ -1101,36 +1047,47 @@ ReactDOM.render(<Garage />, document.getElementById('root'));
 每个组件都有几个“生命周期方法”，你可以重写这些方法并在特定时间运行代码。你可以将此生命周期图示作为速查表。在下面的列表中，标记了常用的生命周期方法。其余方法适用于相对罕少的使用场景。
 
 ### 挂载 (Mounting)
+
 当组件实例被生成并放入 DOM 时，以下方法和概念将以下方式被调用：
+
 - `constructor()`
 - `static getDerivedStateFromProps()`
 - `render()`
 - `componentDidMount()`
 
 *注意*：这些方法被认为是过时的，你应该在新代码中避免使用它们：
+
 - `UNSAFE_componentWillMount()`
 
 ### 更新 (Updating)
+
 更新可以通过 props 或 state 的变化触发。当组件重新渲染时，这些方法按以下顺序被调用：
+
 - `static getDerivedStateFromProps()`
 - `shouldComponentUpdate()`
 - `render()`
 - `getSnapshotBeforeUpdate()`
-- `DidDidUpdate()`
+- `componentDidUpdate()`
 - `UNSAFE_componentWillUpdate()`
 - `UNSAFE_componentWillReceiveProps()`
 
 ### 卸载 (Unmounting)
+
 当组件从 DOM 中移除时，会调用此方法：
+
 - `componentWillUnmount()`
 
 ### 错误处理 (Error Handling)
+
 当在渲染期间、生命周期过程中或任何子组件的构造函数存在错误时，会调用这些方法：
+
 - `static getDerivedStateFromError()`
 - `componentDidCatch()`
 
 ## 其他 API
+
 每个组件还提供了其他几个 API：
+
 - `setState()`
 - `forceUpdate()`
 - 类属性 (Class Properties)
@@ -1141,9 +1098,10 @@ ReactDOM.render(<Garage />, document.getElementById('root'));
 - `state`
 - 引用 (Reference)
 
-本节的概念涵盖了你在设计 React 组件时会遇到的绝用例。
+本节的概念涵盖了你在设计 React 组件时会遇到的绝大多数用例。
 
 ### render()
+
 `render()` 方法是类组件中唯一的本质概念。调用时，它应该检查或演示 `this.props` 和 `this.state` 并返回以下类型之一：
 
 - **React 元素 (React Elements)**：通常通过 JSX 形成。例如，`<div />` 和 `<MyComponent />` 分别是指令 React 渲染 DOM 节点或其他用户定义组件的 React 元素。
@@ -1157,13 +1115,16 @@ ReactDOM.render(<Garage />, document.getElementById('root'));
 *注意*：如果 `shouldComponentUpdate()` 返回 false 值，则 `render()` 将不会被调用。
 
 ### constructor()
+
 `constructor(props)`。如果你不需要初始化状态也不绑定方法，则不需要为 React 组件实现构造函数。React 组件的构造函数会在挂载之前调用。在构造 `React.Component` 子类时，你应该调用 `super(props)`。否则，`this.props` 将是 undefined。
 
 通常，React 构造函数仅用于两个目的：
+
 1. 通过给 `this.state` 赋值来初始化本地状态。
 2. 将事件处理器绑定到实例。
 
 *注意*：避免将 props 到 state！这是一个基础错误：
+
 ```javascript
 constructor(props) {
   super(props);
@@ -1171,19 +1132,18 @@ constructor(props) {
   this.state = { color: props.color };
 }
 ```
+
 问题在于，这既是不必要的（你可以直接使用 `this.props.color`），而且会产生错误（prop 的更新不会反映在 state 中）。只有当你忽略 prop 的修改时才使用这些模式，在这种情况下将 prop 重命名为 `initialColor` 或 `defaultColor` 是合理的。
 
 ### componentDidMount()
+
 `componentDidMount()` 在组件挂载（插入范式）后立即被调用。需要 DOM 节点的初始化应该放在这里。如果你需要从远程端加载数据，这是实例化网络请求的好地方。这种技术是设置任何订阅的好地方，如果你这样做了，请不要忘记在 `componentWillUnmount()` 中取消订阅。你可以在 `componentDidMount()` 中立即调用 `setState()`，这会触发额外的渲染。尽管如此，它会在浏览器更新屏幕之前进行渲染，这保证了尽管在这种情况下 `render()` 会被调用两次，用户也不会看到中间状态。请谨慎使用，因为会反复产生性能问题，并且在大多数情况下，你应该能够在 `constructor()` 中分配初始状态。
 
 ### componentDidUpdate()
-- `componentDidUpdate(prevProps, prevState, snapshot)` 在更新发生后立即被调用。该概念不会在初始渲染时调用。然而，在模态和工具提示等场景中，当你需要在产生依赖其大小或位置的内容之前测量 DOM 节点时，它可能是至关重要的。
 
+`componentDidUpdate(prevProps, prevState, snapshot)` 在更新发生后立即被调用。该概念不会在初始渲染时调用。然而，在模态和工具提示等场景中，当你需要在产生依赖其大小或位置的内容之前测量 DOM 节点时，它可能是至关重要的。
 
-
-
-
-## React 组件 53
+## React 组件
 
 利用此机会在组件更新后对 DOM 进行操作，同时这也是进行网络请求的好时机，只要你比较了当前的 props 和之前的 props 即可（例如，如果 props 没有发生变化，则可能不需要网络请求）。
 
@@ -1201,6 +1161,8 @@ componentDidUpdate(prevProps) {
 如果你试图将某些状态“镜像”到从上层传递的 prop，请考虑直接使用该 prop 代替。阅读更多关于为什么将 props 复制到 state 会导致错误的原因。
 
 如果你的组件实现了 `getSnapshotBeforeUpdate()` 生命周期方法（这很罕见），它返回的值将作为第三个“快照”参数传递给 `componentDidUpdate()`。否则，该参数将为 `undefined`。
+
+
 
 *注意*：如果 `shouldComponentUpdate()` 组件返回 `false`，则 `componentDidUpdate()` 不会被调用。
 
@@ -1258,11 +1220,9 @@ static getDerivedStateFromProps(props, state)
 
 ```javascript
 getSnapshotBeforeUpdate()
-
 ```
 
-getSnapshotBeforeUpdate(prevProps, prevState)
-```
+`getSnapshotBeforeUpdate(prevProps, prevState)`
 
 `getSnapshotBeforeUpdate()` 在渲染输出提交到 DOM 之前调用。它返回的值将作为第三个“快照”参数传递给 `componentDidUpdate()`。否则，该参数将为 `undefined`。
 
@@ -1270,74 +1230,70 @@ getSnapshotBeforeUpdate(prevProps, prevState)
 
 ```javascript
 class ScrollingList extends React.Component {
+
   constructor(props) {
+
     super(props);
+
     this.listRef = React.createRef();
+
   }
 
   getSnapshotBeforeUpdate(prevProps, prevState) {
+
     // 捕获滚动位置以便我们可以调整新项目
+
     return this.listRef.current.scrollHeight;
+
   }
+
 }
+
 ```
 
 示例：
 
 ```javascript
 class ScrollingList extends React.Component {
+
   constructor(props) {
+
     super(props);
-  this.listRef = React.createRef();
+
+    this.listRef = React.createRef();
+
   }
 
   getSnapshotBeforeUpdate(prevProps, prevState) {
+
     // 捕获滚动位置以便我们可以调整新项目
+
     return this.listRef.current.scrollHeight;
+
   }
 
   componentDidUpdate(prevProps, prevState, snapshot) {
+
     if (snapshot !== null) {
+
       // 调整滚动使得新项目不会推出旧项目
+
       const delta = this.listRef.current.scrollHeight - snapshot;
+
       this.listRef.current.scrollTop += delta;
+
     }
+
   }
 
   render() {
+
     return <div ref={this.listRef}>{/* 内容 */}</div>;
+
   }
+
 }
-```
 
-`getSnapshotBeforeUpdate()` 在渲染输出提交到 DOM 之前调用。它返回的值将作为第三个“快照”参数传递给 `componentDidUpdate()`。否则，该参数将为 `undefined`。
-
-示例：
-
-```javascript
-class ScrollingList extends React.Component {
-  constructor(props) {
-    super(props);
-  this.listRef = React.createRef();
-  }
-
-  getSnapshotBeforeUpdate(prevProps, prevState) {
-    // 捕获滚动位置以便我们可以调整新项目
-    return this.listRef.current.scrollHeight;
-  }
-
-  componentDidUpdate(prevProps, prevState, snapshot) {
-    if (snapshot !== null) {
-      // 调整滚动使得新项目不会推出旧项目
-      const delta = this.listRef.current.scrollHeight - snapshot;
-      this.listRef.current.scrollTop += delta;
-    }
-  }
-
-  render() {
-    return <div ref={this.listRef}>{/* 内容 */}</div>;
-  }
-}
 ```
 
 `getSnapshotBeforeUpdate()` 在渲染输出提交到 DOM 之前调用。它返回的值将作为第三个“快照”参数传递给 `componentDidUpdate()`。否则，该参数将为 `undefined`。
@@ -1346,28 +1302,92 @@ class ScrollingList extends React.Component {
 
 ```javascript
 class ScrollingList extends React.Component {
+
   constructor(props) {
+
     super(props);
-  this.listRef = React.createRef();
+
+    this.listRef = React.createRef();
+
   }
 
   getSnapshotBeforeUpdate(prevProps, prevState) {
+
     // 捕获滚动位置以便我们可以调整新项目
+
     return this.listRef.current.scrollHeight;
+
   }
 
   componentDidUpdate(prevProps, prevState, snapshot) {
+
     if (snapshot !== null) {
+
       // 调整滚动使得新项目不会推出旧项目
+
       const delta = this.listRef.current.scrollHeight - snapshot;
+
       this.listRef.current.scrollTop += delta;
+
     }
+
   }
 
   render() {
+
     return <div ref={this.listRef}>{/* 内容 */}</div>;
+
   }
+
 }
+
+```
+
+`getSnapshotBeforeUpdate()` 在渲染输出提交到 DOM 之前调用。它返回的值将作为第三个“快照”参数传递给 `componentDidUpdate()`。否则，该参数将为 `undefined`。
+
+示例：
+
+```javascript
+class ScrollingList extends React.Component {
+
+  constructor(props) {
+
+    super(props);
+
+    this.listRef = React.createRef();
+
+  }
+
+  getSnapshotBeforeUpdate(prevProps, prevState) {
+
+    // 捕获滚动位置以便我们可以调整新项目
+
+    return this.listRef.current.scrollHeight;
+
+  }
+
+  componentDidUpdate(prevProps, prevState, snapshot) {
+
+    if (snapshot !== null) {
+
+      // 调整滚动使得新项目不会推出旧项目
+
+      const delta = this.listRef.current.scrollHeight - snapshot;
+
+      this.listRef.current.scrollTop += delta;
+
+    }
+
+  }
+
+  render() {
+
+    return <div ref={this.listRef}>{/* 内容 */}</div>;
+
+  }
+
+}
+
 ```
 
 ## 错误边界
@@ -1390,29 +1410,40 @@ static getDerivedStateFromError(error)
 
 ```javascript
 class ErrorBoundary extends React.Component {
+
   constructor(props) {
+
     super(props);
+
     this.state = { hasError: false };
+
   }
 
   static getDerivedStateFromError(error) {
-    // 更新状态，以便下次渲染时显示备用用户界面。
+
+    // 更新状态，以便下次渲�时显示备用用户界面。
+
     return { hasError: true };
+
   }
 
   render() {
+
     if (this.state.hasError) {
+
       // 你可以渲染任何自定义的备用 UI
+
       return <h1>Something went wrong.</h1>;
+
     }
+
     return this.props.children;
+
   }
+
 }
+
 ```
-
-
-
-
 
 ## 掌握 React
 
@@ -1420,7 +1451,9 @@ class ErrorBoundary extends React.Component {
 
 ### componentDidCatch()
 
+```javascript
 componentDidCatch(error, info)
+```
 
 该生命周期在后代组件抛出错误后被调用。它接收两个参数：
 
@@ -1431,33 +1464,55 @@ componentDidCatch() 在“提交”（commit）阶段被调用，因此允许副
 
 ```javascript
 class ErrorBoundary extends React.Component {
+
   constructor(props) {
+
     super(props);
+
     this.state = { hasError: false };
+
   }
 
   static getDerivedStateFromError(error) {
+
     // 更新状态，以便下次渲染时显示备用 UI。
+
     return { hasError: true };
+
   }
 
   componentDidCatch(error, info) {
+
     // 示例 "componentStack":
+
     //  in ComponentThatThrows (created by App)
+
     //  in ErrorBoundary (created by App)
+
     //  in div (created by App)
+
     //  in App
+
     logComponentStackToService(info.componentStack);
+
   }
 
   render() {
+
     if (this.state.hasError) {
+
       // 你可以渲染任何自定义的备用 UI
+
       return <h1>出错了。</h1>;
+
     }
+
     return this.props.children;
+
   }
+
 }
+
 ```
 
 React 的生产环境和开发环境构建在 componentDidCatch() 处理错误的方式存在细微差异。
@@ -1474,7 +1529,9 @@ React 的生产环境和开发环境构建在 componentDidCatch() 处理错误�
 
 ### UNSAFE_componentWillMount()
 
+```javascript
 UNSAFE_componentWillMount()
+```
 
 *注意*：此生命周期之前被称为 componentWillMount 生命周期周期。该名称将一直有效到版本 17。若要自动更新模块，请使用 `rename-unsafe-lifecycles` codemod。
 
@@ -1484,7 +1541,9 @@ UNSAFE_componentWillMount() 在挂载发生前被触发。它在 `render()` 之�
 
 ### UNSAFE_componentWillReceiveProps()
 
+```javascript
 UNSAFE_componentWillReceiveProps(nextProps)
+```
 
 *注意*：此生命周期以前被称为 componentWillReceiveProps，该术语在版本 17 发布之前将保持有效。使用 `rename-unsafe-lifecycles` codemod 自动更新你的组件。
 
@@ -1498,7 +1557,9 @@ UNSAFE_componentWillReceiveProps() 在已挂载组件接收到新 prop 之前停
 
 ### UNSAFE_componentWillUpdate()
 
-UNAFE_componentWillUpdate(nextProps, nextState)
+```javascript
+UNSAFE_componentWillUpdate(nextProps, nextState)
+```
 
 *注意*：此生命周期以前被称为 componentWillUpdate。该名称在版本 17 发布之前将保持有效。使用 `rename-unsafe-lifecycles` codemod 自动更新你的组件。
 
@@ -1510,31 +1571,36 @@ UNAFE_componentWillUpdate(nextProps, nextState)
 
 ### setState()
 
+```javascript
 setState(updater, [callback])
+```
 
 setState() 同样是异步的，同一周期内的多次调用可能会合并。例如，如果在同一个周期内多次尝试增加项目数量，这将导致：
 
 ```javascript
 Object.assign(
+
   previousState,
+
   {quantity: state.quantity + 1},
+
   {quantity: state.quantity + 1},
+
   ...
+
 )
+
 ```
 
 后续的调用将覆盖同一周期内先调的值，因此数量只会增加一次。
 
-
-
-
-
-## React 组件 63
-
 ```javascript
 this.setState((state) => {
+
   return {quantity: state.quantity + 1};
+
 });
+
 ```
 
 更多详情，请参阅[状态和生命周期指南]。
@@ -1562,12 +1628,17 @@ component.forceUpdate(callback)
 
 ```javascript
 class CustomButton extends React.Component {
+
   // ...
+
 }
 
 CustomButton.defaultProps = {
+
   color: 'blue'
+
 };
+
 ```
 
 ## 精通 React 64
@@ -1576,17 +1647,24 @@ CustomButton.defaultProps = {
 
 ```javascript
 render() {
+
   return <CustomButton />; // props.color 将设置为 blue
+
 }
+
 ```
 
 如果 `props.color` 被设置为 `null`，则它将保持为 `null`：
 
 ```javascript
 displayName
+
 render() {
+
   return <CustomButton color={null} />; // props.color 将保持为 null
+
 }
+
 ```
 
 `displayName` 字符串用于调试信息。通常情况下，你不需要显式地设置它，因为它是从描述组件的函数或类的名称中推断出来的。如果你想在调试趋势中显示不同的名称，或者在构建高阶组件时，你可能需要明显地设置它；详情请参阅[通过显示名称轻松调试]。
@@ -1615,30 +1693,46 @@ React 中的条件渲染与 JavaScript 中条件的工作方式类似，因为�
 
 ```javascript
 function UserGreeting(props) {
+
   return <h1>欢迎 </h1>;
+
 }
 
 function GuestGreeting(props) {
+
   return <h1>请登录。</h1>;
+
 }
+
 ```
 
 我们将创建一个 `Greeting` 组件，根据用户是否已登录来显示这两个组件之一：
 
 ```javascript
 function Greeting(props) {
+
   const isLoggedIn = props.isLoggedIn;
+
   if (isLoggedIn) {
+
     return <UserGreeting />;
+
   }
+
   return <GuestGreeting />;
+
 }
 
 ReactDOM.render(
+
   // 尝试更改为 isLoggedIn={true}:
+
   <Greeting isLoggedIn={false} />,
+
   document.getElementById('root')
+
 );
+
 ```
 
 在 CodePen 平台上尝试一下。给出的示例根据 `isLoggedIn` prop 的值渲染渲染不同的问候语。
@@ -1651,55 +1745,92 @@ ReactDOM.render(
 
 ```javascript
 function LoginButton(props) {
+
   return (
+
     <button onClick={props.onClick}>
+
       登录
+
     </button>
+
   );
+
 }
 
 function LogoutButton(props) {
+
   return (
+
     <button onClick={props.onClick}>
+
       退出
+
     </button>
+
   );
+
 }
+
 ```
 
 在下面的示例中，我们将形成一个名为 `LoginControl` 的状态组件。它将根据其现有状态渲染 `<LoginButton />` 或 `<LogoutButton />`。它还将渲染之前示例中的 `<Greeting />`：
 
 ```javascript
 class LoginControl extends React.Component {
+
   constructor(props) {
+
     super(props);
+
     this.state = {isLoggedIn: false};
+
   }
 
   handleLogin() {
+
     this.setState({isLoggedIn: true});
+
   }
 
   handleLogout() {
+
     this.setState({isLoggedIn: false});
+
   }
 
   render() {
+
     const isLoggedIn = this.state.isLoggedIn;
+
     let button;
+
     if (isLoggedIn) {
+
       button = <LogoutButton onClick={this.handleLogout} />;
+
     } else {
+
       button = <LoginButton onClick={this.handleLogin} />;
+
     }
+
     return (
+
       <div>
+
         <Greeting />
+
         {button}
+
       </div>
+
     );
+
   }
+
 }
+
 ```
 
 ## React 组件 67
@@ -1710,13 +1841,21 @@ class LoginControl extends React.Component {
 
 ```javascript
 function Mailbox(props) {
+
   const isLoggedIn = props.isLoggedIn;
+
   return (
+
     <div>
+
       {isLoggedIn ? <UserGreeting /> : <GuestGreeting />}
+
     </div>
+
   );
+
 }
+
 ```
 
 ## 精通 React 68
@@ -1725,14 +1864,14 @@ function Mailbox(props) {
 const messages = ['React', 'Re: React', 'Re: React'];
 
 ReactDOM.render(
+
   <Mailbox messages={messages} />,
+
   document.getElementById('root')
+
 );
+
 ```
-
-
-
-
 
 ## 精通 React
 
@@ -1759,40 +1898,59 @@ ReactDOM.render(
 import styled from "styled-components"; // 我们安装的 styled 组件库在这里是必要的！
 
 // 此组件将在容器中渲染落地页内容。
+
 const Landing = (props)=>{ // 一个函数组件
+
 return (
+
   <Container>
+
     <Content>
+
       <Content>
+
     </Content>
+
   </Container>
+
 );
+
 }
 
 export default Landing;
+
 ```
 
 要创建第二个组件，请打开 components 文件夹中的 Header.js 文件。向文件中添加以下代码：
 
 ```javascript
 import styled from "styled-components";
+
 // 此组件将在样式化之前渲染 Navbar。
+
 const Header = (props)=>{
+
 return (
+
   <Nav>
+
     Header
+
   </Nav>
+
 );
+
 }
 
 export default Header;
+
 ```
 
 ### 将组件路由到主应用
 
 为了开始工作，让我们打开 App.js，它是我们应用的基础。然后，我们用下面的代码替换其中的所有内容，以生成一个 app-app 函数，该函数将加载我们的样式组件并将其渲染为落地页。
 
-在你的 Web 应用中设计好组件/页面后，你可能需要暴露它们并允许用户在它们之间导航。为了实现这一点，你需要一个专用的路由器。
+在你的 Web 应用中设计好组件/页面后，你可能需要暴露它们并允用户在它们之间导航。为了实现这一点，你需要一个专用的路由器。
 
 - *React Router* 是简单的 ReactJs 应用（如单页 Web 应用）中组件/页面视图动态路由的标准库。
 - *React Router* 保持 UI 和 URL 的同步，为用户在 Web 应用中提供无缝导航。
@@ -1803,24 +1961,41 @@ export default Header;
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 
 // Router、Switch 和 Route 将帮助我们在我们创建的组件和主 App.js 之间移动。
+
 import Landing from "./components/Landing" // 这是导入在 Landing.js 文件中创建的组件。
+
 import Header from "./components/Header" // 这是导入在 Header.js 文件中创建的组件。
+
 import './App.css'; 加载一组定义的 CSS，它将定义落地页中 HTML 元素的行为。
 
 function App() {
+
   //主应用
+
   return(
+
     <div>
+
       <Router>
+
         <Switch>
+
           <Route exact path="/">
+
           </Route>
+
         </Switch>
+
       </Router>
+
     </div>
+
   )
+
 }
+
 export default App;
+
 ```
 
 此组件将在样式化之前渲染一个 Navbar。现在由于我们已经创建了组件，是时候将它们路由到 App.js 了。要做到这一点，请如下所示在 *Route 标签* 之间添加代码：
@@ -1834,25 +2009,43 @@ export default App;
 
 ```javascript
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
+
 import Landing from "./components/Landing";
+
 import Header from "./components/Header";
+
 import './App.css'
 
 function App() {
+
   return(
+
     <div>
+
       <Router>
+
         <Switch>
+
           <Route path="/">
+
             <Landing/>
+
             <Header/>
+
           </Route>
+
         </Switch>
+
       </Router>
+
     </div>
+
   )
+
 }
+
 export default App;
+
 ```
 
 ### 现在进行样式设计
@@ -1865,23 +2058,36 @@ export default App;
 
 ```html
 <BgImage/>< {/*此处应该是落地页背景图像的占位符*/}
+
 <CTA>
+
   <LogoOne src="images/cta-logo-one.svg" alt='' /> {/*此处应该是你的 logo-one 的占位符，将被样式化为图像*/}
+
   <Signup>在此获取所有</Signup>
+
   <Description>{/*此处应该是段落文本的占位符，将被样式化为 p 标签*/}
+
     订阅 Disney+ 可获得 Raya 和直播 IPL 赛事的优先访问。
+
     截至 2020 年 5 月 3 日，Disney+ 和 Disney 组合的价格将增加 2 美元。
+
   </Description>
+
   <LogoTwo src ="images/cta-logo-two.png" alt='' /> {/*此处应该是你的 logo-two 的占位符，将被样式化为图像*/}
+
 </CTA>
+
 ```
 
 接下来，在 Nav 标签之间添加以下代码。
 
 ```html
 <Nav>
+
   Header
+
 </Nav>
+
 ```
 
 让我们为设计的组件（Landing 和 Header）添加一些酷的属性，并根据它们包含的内容使用 styled components 对它们进行样式处理。
@@ -1908,12 +2114,19 @@ React 组件 **77**
 
 ```css
 font-size: 25px;
+
 padding: 16.5px 0;
+
 border: 1px solid transparent;
+
 border-radius: 4px;
+
 &:hover{
+
     background-color: #0483ee;
+
 }
+
 ```
 
 ### 样式化描述
@@ -1922,13 +2135,21 @@ border-radius: 4px;
 
 ```javascript
 {/*用于作为 p 标签中需要被样化的文本段落的占位符。这将渲染经过样式的段落*/}
+
 const Description = styled.p`
+
 color: hsla(0, 0%, 95.3%, 1);
+
 font-size: 14px;
+
 margin: 0 0 24px;
+
 line-height: 1.5em;
+
 letter-spacing: 1.5;
+
 `;
+
 ```
 
 ### 样式化 LOGTWO
@@ -1937,15 +2158,25 @@ LogoTwo 中的图像在样式需求上应该与样式化 LogoOne 的类似。
 
 ```javascript
 {/*它被样式化为图像以渲染 img 标签*/}
+
 {/*CSS 定义了高度、宽度、边距*/}
+
 const LogoTwo = styled.img`
+
 margin-bottom: 23px;
+
 max-width: 750px;
+
 min-height: 67px;
+
 display: inline-block;
+
 vertical-align: top;
+
 width: 90%;
+
 `;
+
 ```
 
 在 *export default Header* 代码之后立即编辑 Header.js 文件，以样式化我们 Header 组件中的 Nav 和 Logo。
@@ -1956,37 +2187,66 @@ width: 90%;
 
 ```javascript
 {/*样式化 .nav 以渲染 Nav 标签*/}
+
 const Nav = styled.nav`
+
 position: fixed; //将 nav 函数设置为固定，
+
 无论任何滚动行为如何。
+
 top: 0;
+
 left: 0;
+
 right: 0;
+
 height: 70px; //定义导航栏的高度
+
 background-color: #090b13; //为导航栏背景设置颜色
+
 display: flex;
+
 justify-content: space-between; //在 nav 元素之间创建空间
+
 align-items: center;
+
 padding: 0 36px;
+
 letter-spacing: 18px;
+
 z-index: 3; //相对于其他元素设置导航栏的优先级
+
 `;
+
 ```
 
 ```javascript
 {/*使用 .a 样式化 Logo 以将图像作为锚点渲染*/}
+
 const Logo = styled.a`
+
 padding: 0;
+
 width: 80px;
+
 margin-top: 4px;
+
 max-height: 70px;
+
 display: inline-block;
+
 font-size: 0;
+
 img{
+
 display: block;
+
 width: 100%;
+
 };
+
 `;
+
 ```
 
 ### 总结
@@ -1999,13 +2259,21 @@ width: 100%;
 
 ```javascript
 render() {
+
   const count = 0;
+
   return (
+
     <div>
+
       {count && <h1>Messages: {count}</h1>}
+
     </div>
+
   );
+
 }
+
 ```
 
 ### 使用条件运算符进行内联 If-Else
@@ -2014,29 +2282,48 @@ render() {
 
 ```javascript
 render() {
+
   const isLoggedIn = this.state.isLoggedIn;
+
   return (
+
     <div>
+
       用户当前{isLoggedIn ? '处于' : '未'} 登录状态。
+
     </div>
+
   );
+
 }
+
 ```
 
 它也可以用于较大的表达式，尽管其发生的情况并不直观。
 
 ```javascript
 render() {
+
   const isLoggedIn = this.state.isLoggedIn;
+
   return (
+
     <div>
+
       {isLoggedIn
+
         ? <LogoutButton onClick={this.handleLogoutClick} />
+
         : <LoginButton onClick={this.handleLoginClick} />
+
       }
+
     </div>
+
   );
+
 }
+
 ```
 
 **80** 精通 React
@@ -2051,49 +2338,82 @@ render() {
 
 ```javascript
 function WarningBanner(props) {
+
   if (!props.warn) {
+
     return null;
+
   }
+
   return (
+
     <div className="warning">
+
       警告！
+
     </div>
+
   );
+
 }
 
 class Page extends React.Component {
+
   constructor(props) {
+
     super(props);
+
     this.state = {showWarning: true};
+
     this.handleToggleClick = this.handleToggleClick.bind(this);
+
   }
 
   handleToggleClick() {
+
     this.setState(state => ({
+
       showWarning: !state.showWarning
+
     }));
+
   }
+
 ```
 
 **81** React 组件
 
 ```javascript
 render() {
+
   return (
+
     <div>
+
       <WarningBanner warn={this.state.showWarning} />
+
       <button onClick={this.handleToggleClick}>
+
         {this.state.showWarning ? '隐藏' : '显示'}
+
       </button>
+
     </div>
+
   );
+
 }
+
 }
 
 ReactDOM.render(
+
   <Page />,
+
   document.getElementById('root')
+
 );
+
 ```
 
 ### 在 React 中样式化组件
@@ -2123,7 +2443,7 @@ React 是一个用于用户界面的优秀库。使用 React 构建用户界面�
 
 ### 导入图像
 
-在本章中，我们将学习如何在 React 组件和 HTML 文件中使用“img”标签使用图像或图片。
+在本章中，我们将学习如何在 React 组件和 HTML 文件中使用“img”标筓使用图像或图片。
 
 ### 在 public 文件夹中
 
@@ -2221,7 +2541,7 @@ React Router
 - 路由
 - Router 和查询参数
 
-React Router 是 React 中路由的标准库。它赋予了 React 应用中各种组件视图之间导航的能力；它允许更改浏览器 URL 并保持用户界面与 URL 同步。它是基于 React 构建的标准库系统，也用于使用 React Router 包 (RRP) 在 React 应用中生成路由。它为浏览器提供了带有要在网页上显示的数据或信息的同步 URL。它维护了应用的标准结构和行为，主要用于开发单页 Web 应用。
+React Router 是 React 中路由的标准库。它赋予了 React 应用中各种组件视图之间导航的能力；它允许更改浏览器 URL 并保持用户界面与 URL 同步。它是基于 React 构建的标准库系统，也用于使用 React Router 包 (RRP) 在 React 应用中生成路由。它为浏览器提供了带有要在网页上显示的数据或信息的同步 URL。它维护了应用的标标准结构和行为，主要用于开发单页 Web 应用。
 
 路由是根据用户的操作或请求将其引导到不同页面的方式。ReactJS Router 主要用于开发单页应用。React Router 用于定义应用中的多个路由。当用户在浏览器中输入精确的 URL 时，如果该 URL 路径匹配路由文件中的任何“路由”，用户将被重定向到该路由。
 
@@ -2307,10 +2627,15 @@ HTML5 history API（应用程序接口）被 `BrowserRouter` 用于保持用户�
 
 ```jsx
 <Route
+
   exact
+
   path="/items"
+
   component={Items}
+
 />
+
 ```
 
 在此示例中，当路径匹配当前位置时，将返回 `Items` 组件。
@@ -2321,20 +2646,30 @@ HTML5 history API（应用程序接口）被 `BrowserRouter` 用于保持用户�
 
 ```jsx
 <Route
+
   exact
+
   path="/items"
+
   render={() => (<<div><em>List of Items</em></div>)}
+
 />
+
 ```
 
-在上面的示例中，当现有位置与路由完全匹配时，将形成一个 React 元素并将字符串 "List of Items" 渲染到浏览器中。
+在上面的示例，当现有位置与路由完全匹配时，将形成一个 React 元素并将字符串 "List of Items" 渲染到浏览器中。
 
 ```jsx
 const cat = {category: "food"}
+
 <Route
+
   exact path="/items"
+
   render={props =>  <Items {...props} data={cat}/>}
+
 />
+
 ```
 
 在第二个示例中，`data` 信息代表传递给 `Items` 组件的额外属性。在这里，`cat` 作为额外属性传递。
@@ -2345,6 +2680,7 @@ const cat = {category: "food"}
 
 ```jsx
 <Route children={props => <Items {...props}/>}/>
+
 ```
 
 在上面的情况下，`Items` 组件始终会被渲染。
@@ -2355,13 +2691,21 @@ const cat = {category: "food"}
 
 ```jsx
 <Route
+
   path="/items"
+
   render={() => (<<div><em>List of the items</em></div>)}
+
 />
+
 <Route
+
   path="/items/3"
+
   render={() => (<<div>Item with id of 3</div>)}
+
 />
+
 ```
 
 在浏览器中，当您导航到 `/items/3` 时，，两个 `Route` 组件中的 React 元素都将如所示所示被渲染：
@@ -2375,15 +2719,25 @@ const cat = {category: "food"}
 
 ```jsx
 <Switch>
+
   <Route
+
     path="/items"
+
     render={() => (<<div><em>List of the items</em></div>)}
+
   />
+
   <Route
+
     path="/items/4.5"
+
     render={() => (<<div>Item with id of 4.5</div>)}
+
   />
+
 </Switch>
+
 ```
 
 在浏览器中，只有 "List of Items" 会渲染，这是因为 `Switch` 组件只匹配与当前位置匹配的第一个路由。在这个示例中，当 `/items/4.5` 进入浏览器地址栏时，路由 `/items` 已经匹配了。
@@ -2396,18 +2750,31 @@ const cat = {category: "food"}
 
 ```jsx
 export const Home = () => (
+
   <div>
+
     Home Component
+
     <ul>
+
       <li>
+
         <Link to="/items">Items</Link>
+
       </li>
+
       <li>
+
         <Link to="/category">Category</Link>
+
       </li>
+
     </ul>
+
   </div>
+
 );
+
 ```
 
 `Home` 组件包含通向 `Items` 和 `Categories` 的链接。`<Link/>` 组件可以作为 `to` 属性来用于重定向。该属性可以是字符串，也可以是 `location` 对象。如要在您的机器上设置示例，请在此处[复制]项目并运行 `npm install && start`。点击 "Items" 链接将触发用户界面变化并更新地址栏中的 URL。
@@ -2432,22 +2799,39 @@ export const Home = () => (
 
 ```jsx
 export const Category = ({match}) => (
+
   <div>
+
     <h1>Category Component</h1>
+
     <h5>Click on a category</h5>
+
     <ul>
+
       <li>
+
         <Link to={`${match.url}/shoes`}>Shoe</Link>
+
       </li>
+
       <li>
+
         <Link to={`${match.url}/food`}>Foods</Link>
+
       </li>
+
       <li>
+
         <Link to={`${match.url}/dresses`}>Dress</Link>
+
       </li>
+
     </ul>
+
   </div>
+
 );
+
 ```
 
 根据上面的代码片段，当点击 "Category" 链接时，将匹配路由路径并形成一个 `match` 对象，然后作为属性发送给 `Category` 组件。
@@ -2468,27 +2852,39 @@ export const Category = ({match}) => (
 
 ```jsx
 <Route
+
   path={`${match.path}/:categoryName`}
+
   render={props => (
+
     <<div>
+
       {props.match.params.categoryName} category
+
     </div>
+
   )}
+
 />
+
 ```
 
 当你检查上述代码段中 `path` 属性的值时，你会注意到我们使用了 `:categoryName`，这是路由名称中的一个变量。提供的 URL 中的路径参数是 `categoryName`，它收集了 '/category' 之后出现的内容。
 
 `:categoryName` 是给定 URL 中的路径参数，它捕获 '/category' 之后的所有内容。
 
-通过这种方式将值传递给 `path` 属性，避免了我们硬编码所有不同的分类路由，并注意到使用模板字符串来构建正确的路径。
+通过这种方式将值传递给 `path` 属避免了我们硬编码所有不同的分类路由，并注意到使用模板字符串来构建正确的路径。
 
 像 `category/shoes` 的 `pathname` 会形成一个像下面的参数对象：
 
 ```json
+
 {
+
   categoryName: "shoe"
+
 }
+
 ```
 
 路由示例中的 `render` prop 运行内联 `render`，显示包含在 `props` 内的匹配对象中的 `categoryName` 参数。
@@ -2503,19 +2899,20 @@ export const Category = ({match}) => (
 
 ```jsx
 <Redirect to={{pathname: '/login', state: {from: props.location}}} />
+
 ```
 
 在这里，`Redirect` 组件或模块将对象中提供的 `pathname` (/login) 替换栈中的当前位置，并将用户尝试访问的位置保存在 `state` 属性中。`state` 中的值可以从 `Login` 组件内部通过 `this.props.location.state` 获取。
 
 例如，如果用户尝试在先登录的情况下导航到 /admin（一个受保护路由），他们将被重定向到登录页面。成功登录后，他们将被重定向到 /admin，即他们最初想要访问的路由。
 
-### 自定义路由
+### 自定路由
 
 为了实现受保护路由的概念，我们必须首先理解如何形成自定义路由。自定义路由是“在组件内部嵌套路由”的一种高级说法，这通常在需要选择是否应该渲染组件时使用。
 
 在受保护路由的情况下，只有在用户登录时才获取指定的路由；否则，用户应被引导到登录页面。
 
-让我们在另一个示例中进一步探索自定义路由：在此处复制项目并运行 `npm install && npm start` 进行设置。私有路由与其他所有路由组合在一起，如下所示。私有路由具有 `path`、`components` 以及 `authenticated` props。让我们来看看这个私有（自定义）路由。
+让我们在另一个示例中进一步探索自定路由：在此处复制项目并运行 `npm install && npm start` 进行设置。私有路由与其他所有路由组合在一起，如下所示。私有路由具有 `path`、`components` 以及 `authenticated` props。让我们来看看这个私有（自定义）路由。
 
 我们在参数列表中解构了 `props` 并将组件重命名为 `Component`，我们通过将其传递给 `...rest` 和 `render` props 来使用 `Route` 组件。我们在 `render` prop 中编写代码，判断在用户登录时是否渲染组件以及如果渲染，应该渲染哪一个。否则，用户将被送回登录页面。
 
@@ -2557,27 +2954,45 @@ URL 中问号 (?) 后的任何单词都被视为参数。多个参数可以通�
 
 ```jsx
 class ProductDetail extends React.Component {
+
   state = {
+
     product: undefined
+
   }
 
   async componentDidMount() {
+
     const product1 = await api.getProduct(`/products/${this.props.match.params.id}`);
+
     this.setState({
+
       product1,
+
     });
+
   }
 
   render() {
+
     return (
+
       <React.Fragment>
+
         {this.state.product &&
+
           <div>{this.state.product1.name}</div>
+
         }
+
       </React.Fragment>
+
     );
+
   }
+
 }
+
 ```
 
 这里最有趣的部分是我们是如何获取路由参数的：`this.props.match.params.id`。`match` 对象包含一个指向我们路由参数 id 的 `params` 对象。
@@ -2586,6 +3001,7 @@ class ProductDetail extends React.Component {
 
 ```jsx
 <Route path='/products/:id' component={ProductDetail}/>
+
 ```
 
 上面我们定义了路由 /products/:id，因此我们将通配符设置为 :id，这使得能够在代码中通过输入 `this.props.match.params.id` 来访问它。
@@ -2604,39 +3020,63 @@ class ProductDetail extends React.Component {
 
 ```javascript
 import React from 'react';
+
 import { parse } from 'query-string';
 
 class Products extends React.Component {
+
   state = {
+
     products: []
+
   };
 
   async componentDidMount() {
+
     const { location: { search } } = this.props;
+
     const { page, pageSize } = search;
+
     const products = await api.getProducts(`/products?page=${page}&pageSize=${pageSize}`);
+
     this.setState({
+
       products,
+
     });
+
   }
 
   render() {
+
     return (
+
       <React.Fragment>
+
         {this.props.products.map(product => <<div>{product.name}</div>)}
+
       </React.Fragment>
+
     );
+
   }
+
 }
+
 ```
 
 如上所示，我们可以通过 `location` 对象访问查询参数，该对象位于 `search` 对象上，代表我们的参数如下：
 
 ```json
+
 {
+
   page: 1,
+
   pageSize: 22
+
 }
+
 ```
 
 ## 程序化路由
@@ -2645,67 +3085,119 @@ class Products extends React.Component {
 
 ```javascript
 import React from "react";
+
 import {
+
   BrowserRouter as Router,
+
   Link,
+
   useLocation
+
 } from "react-router-dom";
 
 // React Router 对于你应该如何
+
 // 分析 URL 查询字符串没有任何偏好。
+
 //
+
 // 如果你使用简单的 key=value 查询字符串
+
 // 且不需要支持 IE 11，你可以使用
+
 // 浏览器内置的 URLSearchParams API。
+
 //
+
 // 如果查询字符串包含数组或对象
+
 // 语法，你可能需要自带自己的
+
 // 查询解析函数。
 
 export default function QueryParamsExample() {
+
   return (
+
     <Router>
+
       <QueryParamsDemo />
+
     </Router>
+
   );
+
 }
 
 // 一个自定义 hook，基于 useLocation 构建，用于为你你
+
 // 解析查询字符串。
+
 function useQuery() {
+
   const { search } = useLocation();
+
   return React.useMemo(() => new URLSearchParams(search), [search]);
+
 }
 
 function QueryParamsDemo() {
+
   let query = useQuery();
+
   return (
+
     <<div>
+
       <div>
+
         <h2>账户部分</h2>
+
         <ul>
+
           <li><Link to="/account?name=netflix">Netflix Account</Link></li>
+
           <li><Link to="/account?name=zillow-group">Zillow Group</Link></li>
+
           <li><Link to="/account?name=yahoo">Yahoo</Link></li>
+
           <li><Link to="/account?name=modus-create">Modus Create</Link></li>
+
         </ul>
+
         <Child name={query.get("name")} />
+
       </div>
+
     </div>
+
   );
+
 }
 
 function Child({ name }) {
+
   return (
+
     <div>
+
       {name ? (
+
         <h3>查询字符串中的 <code>{name}</code> 是 "{name}"</h3>
+
       ) : (
+
         <h3>查询字符串中没有 name</h3>
+
       )}
+
     </div>
+
   );
+
 }
+
 ```
 
 Logo：Taylor and Francis, Taylor and Francis Group, http://taylorandfrancis.com.
@@ -2722,7 +3214,7 @@ React 理念由三个核心方法组成——用户事件、状态管理和渲�
 
 程序化路由的效果是针对特定页面的，因为没有更改路由，或者在其他时候，可能会产生更改路由的需求。当有这种需要时，它不会通过点击链接触发，因此我们并不总是需要使用 `Link` 组件，而且在那种情况下使用 `Link` 组件并不是最优的。
 
-有时我们想要执行特定的操作：我们只在某些事件发生或用户完成某个活动时（例如提交引导你到新页面的表单）才跳转到不同的路由，我们将这种操作称为程序化导航。
+有时我们想要执特定的操作：我们只在某些事件发生或用户完成某个活动时（例如提交引导你到新页面的表单）才跳转到不同的路由，我们将这种操作称为程序化导航。
 
 ### 什么是程序化导航？
 
@@ -2744,32 +3236,43 @@ Code-sandbox: https://codesandbox.io/s/gallant-meeting?file=/src/App.js
 
 ```javascript
 import React, { useState } from 'react';
+
 import { Redirect } from 'react-router-dom';
+
 import { userLogin } from './userAction';
+
 import Form from './Form';
 
 const Login = () => {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const handleLogin = async (userDetail) => {
-    const success = await userLogin(userDetail);
-    if(success) setIsLoggedIn(true);
-  }
-  if (isLoggedIn) {
-    return <Redirect to='/profiles' />
-  }
-  return (
-    <>
-      <h1>登录</h1>
-      <Form onSubmit={handleLogin} />
-    </>
-  )
+
+
+
+```javascript
+const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+const handleLogin = async (userDetail) => {
+  const success = await userLogin(userDetail);
+  if (success) setIsLoggedIn(true);
 }
+
+if (isLoggedIn) {
+  return <Redirect to='/profiles' />
+}
+
+return (
+  <>
+    <h1>登录</h1>
+    <Form onSubmit={handleLogin} />
+  </>
+)
+}
+
 export default Login;
 ```
 
-### 使用 history.push() 方法
+### 使用 `history.push()` 方法
 
-`history.push()` 是另一种方法或技术，我们使用渲染组件时提供的 history props。换句话说，这适用于组件由 React Router 渲染时，绕过了组件 prop。如果是这种情况，React Router 向组件发送三个 props：`location`、`match` 和 `history`。
+`history.push()` 是另一种方法或技术，我们使用渲染组件时提供的 `history` props。换句话说，这适用于组件由 React Router 渲染时，绕过了组件 prop。如果是这种情况，React Router 向组件发送三个 props：`location`、`match` 和 `history`。
 
 我们将关注 `history` prop，它在底层维护所有的会话历史，并为我们提供了改变它的方法。
 
@@ -2787,6 +3290,7 @@ const Login = props => {
     const success = await userLogin(userDetail);
     if (success) props.history.push("/profile");
   };
+
   return (
     <>
       <h1>登录</h1>
@@ -2794,20 +3298,15 @@ const Login = props => {
     </>
   );
 };
+
 export default Login;
 ```
 
-### 使用 withRouter 方法
+### 使用 `withRouter` 方法
 
 我们之前提到，为了让组件访问 `props.history.push`，它必须是由 React Router 渲染的。在其他情况下，情况并非如此。因此，我们自己渲染组件。为了让组件可以使用 `history` 属性或属性，React Router 团队形成了高阶组件（HOC）`withRouter`，通过用该 HOC 包裹来表达这些属性。
 
 Code-sandbox: https://codesandbox.io/s/silent-rain-l19lg?file=/src/App.js
-
-
-
-
-
-## 程序化导航 109
 
 ```javascript
 import React from 'react';
@@ -2818,7 +3317,7 @@ import Form from './Form';
 const Login = (props) => {
   const handleLogin = async (userDetail) => {
     const success = await userLogin(userDetail);
-    if(success) props.history.push('/profile');
+    if (success) props.history.push('/profile');
   }
 
   return (
@@ -2832,7 +3331,7 @@ const Login = (props) => {
 export default withRouter(Login);
 ```
 
-### 使用 useHistory Hook
+### 使用 `useHistory` Hook
 
 在 React Router (v5.1) 和 React (v16.8) 的当前版本中，我们有了一个名为 `useHistory` hook 的新方法或过程，它利用了 React Hooks 的功能，用于函数组件中的程序化导航。`useHistory` hook 让你访问 `history` 实例，无论组件是否由 React Router 渲染，都可以使用它在页面间跳转，从而消除了对 `withRouter` 的需求。
 
@@ -2841,13 +3340,11 @@ export default withRouter(Login);
 ```javascript
 import { useHistory } from "react-router-dom";
 
-const HomeButton = =>{
+const HomeButton = () => {
   let history = useHistory();
-
   const handleClick = () => {
     history.push("/home");
   }
-
   return (
     <button type="button" onClick={handleClick}>
       去首页
@@ -2858,11 +3355,9 @@ const HomeButton = =>{
 export default HomeButton;
 ```
 
-掌握 React
-
 ### 结论
 
-此部分的重点是分享如何使用 React Router 包安全地导航。由于 React 提供了一种声明式技术来设计用户界面，当 `Link` 无法使用时，`Redirect` 是导航的建议选项，语义上是正确的。此外，随着 `useHistory` 以及其他 API 在 5.2 版本中的引入，只要你理解如何 React Hooks，程序化导航变得变得简单。例如，这里是用户提交表单后如何进行程序化导航的方法：
+此部分的重点是分享如何使用 React Router 包安全地导航。由于 React 提供了一种声明式技术来设计用户界面，当 `Link` 无法使用时，`Redirect` 是导航的建议选项，语义上是正确的。此外，随着 `useHistory` 以及其他 API 在 5.2 版本中的引入，只要你理解如何 React Hooks，程序化导航变得简单。例如，这里是用户提交表单后如何进行程序化导航的方法：
 
 ```javascript
 import React, { useState } from 'react'
@@ -2870,16 +3365,13 @@ import { useHistory } from 'react-router-dom'
 
 export function NewForm() {
   let [name, setName] = useState('Spartacus')
-
   // useHistory() 返回一个导航对象
   let navigation = useHistory()
-
   let handleSubmit = (e) => {
     e.preventDefault()
     // 你也可以调用 navigation.navigate() 来导航到新页面
     navigation.navigate('/thankyou/' + encodeURIComponent(name))
   }
-
   return (
     <form onSubmit={handleSubmit}>
       <h1>输入你的名字</h1>
@@ -2895,8 +3387,6 @@ export function Thankyou({ name }) {
   )
 }
 ```
-
-程序 React
 
 ### 内置
 
@@ -2946,15 +3436,11 @@ function Login() {
 }
 ```
 
-掌握 React
-
 ### 懒加载 (Lazy Loading)
 
 懒加载并不是一个新概念。它已经存在一段时间了。本质上，懒加载意味着组件或部分代码必须在需要时才被加载。它也被代码分割和数据获取。当我们构建一个应用程序时，随着项目规模的扩大，生成的包往往会变得非常巨大。这会损害低带宽连接用户（如移动端用户）访问程序的加载时间。因此，只加载你需要的应用程序部分是一个好主意。
 
-我们这是什么意思？想象你的应用程序包含许多路由，其中某些路由你可能经常访问，而某些不怎么访问。如果你引导你的应用程序在首次加载时仅加载用户所需的路由，那么你可以在用户请求时引入更多路由。这被称为*懒加载*，我们生成一个作为初始应用的包，随后在访问特定路由时生成许多小包。我们需要 Webpack 和 React 在此共同工作。
-
-程序化导航
+这是什么意思？想象你的应用程序包含许多路由，其中某些路由你可能经常访问，而某些不怎么访问。如果你引导你的应用程序在首次加载时仅加载用户所需的路由，那么你可以在用户请求时引入更多路由。这被称为*懒加载*，我们生成一个作为初始应用的包，随后在访问特定路由时生成许多小包。我们需要 Webpack 和 React 在此共同工作。
 
 准确地关于 React，它打包了完整的代码并同时部署所有代码。通常，这并不是一个坏主意，因为 React SPAs（单页应用）相对较小，并且对演示没有影响，但如果我们有一个巨大的应用程序，例如一个带有客户门户、管理门户等的内容管理系统，在这种情况下，加载整个程序似乎不是一个好主意。它将是一个巨大的应用并会导致大量不需要的数据传输，使网站加载缓慢。
 
@@ -2962,22 +3448,16 @@ function Login() {
 
 在这一部分，我将解释懒加载的优势以及如何在 React 中实现它。
 
-
-
-
-
-## 114 精通 React
-
 该网站消耗了他们大量的数据，通过适当的懒加载，可以进行改进并减少一半的数据量。
 
 *注意*：这并非通用情况，小型单页应用的大小通常只有 KB 级。
 
-### 懒加载的缺点
+#### 懒加载的缺点
 
 1. 为了实现懒加载，需要在现有代码的基础上添加额外的行，这使得代码变得有些复杂。
 2. 懒加载可能会因为对上传内容的索引不当，而影响网站在搜索引擎上的排名。
 
-### 如何在 React 中安装懒加载组件
+#### 如何在 React 中安装懒加载组件
 
 随着前端应用包大小（bundle size）的增加，开发者或设计师开始研究并寻找更活跃的方法将包更快速地加载到客户端。代码分割和懒加载是大幅减少客户端初始加载时间的两种方法。
 
@@ -2989,7 +3469,7 @@ function Login() {
 
 为了执行这些代码分割和慢加载方法，我们研究了四个不同的库。让我们逐一查看这些库。
 
-custom-component.js 将将在后续示例中使用
+`custom-component.js` 将在后续示例中使用
 
 ```javascript
 /* custom-component.js */
@@ -3000,22 +3480,19 @@ const CustomComponent = ({ label }) => {
     console.log(`${label} created`);
     return () => console.log(`${label} destroyed`);
   }, []);
-
   return <div>{label}</div>;
 };
 
 export default CustomComponent;
 ```
 
-## 115 程序化导航
+### `React.lazy`
 
-### React.lazy
+React 中的这个新函数允许你通过代码切分（code splitting）懒地加载 React 组件，而无需任何额外库的帮助。懒加载是首先渲染需要的或关键的用户界面项，然后稍后缓慢打开非关键项。它现在已完全整合到 React 核心库本身中。我们之前使用 *react-loadable* 来实现这一点，但现在我们必须在 React 核心中使用 `React.lazy()`。
 
-react 中的这个新函数允许你通过代码切分（code piercing）懒地加载 react 组件，而无需任何额外库的帮助。懒加载是首先渲染需要的或关键的用户界面项，然后稍后缓慢打开非关键项。它现在已完全整合到 react 核心库本身中。我们之前使用 *react-loadable* 来实现这一点，但现在我们必须在 react 核心中使用 *react.lazy()*。
+在 16.6 版本中，React 提供了对懒加载组件的内置支持，并且 `React.lazy` 函数接收一个基于 promise 的函数并返回它。
 
-在 16.6 版本中，React 提供了对懒加载组件的内置支持，并且 React.lazy 函数接收一个基于 promise 的函数并返回它。
-
-以默认方式导出你的组件（这里是我们的 CustomComponent）。该库尚尚支持命名导出。
+以默认方式导出你的组件（这里是我们的 `CustomComponent`）。该库尚不支持命名导出。
 
 调用 `const LazyLoadedComponent = React.lazy(() => import('./custom-component.js'))`
 
@@ -3024,7 +3501,7 @@ react 中的这个新函数允许你通过代码切分（code piercing）懒地�
 在下面的示例中，我使用了 promise 和一个超时来显示加载效果：
 
 ```javascript
-<Suspense /> 是一个 react 组件，它包含一个 fallback 属性，该属性接受任何其他 react 组件。
+<Suspense /> 是一个 React 组件，它包含一个 fallback 属性，该属性接受任何其他 React 组件。
 
 import React, { Suspense } from "react";
 import ReactDOM from "react-dom";
@@ -3038,7 +3515,7 @@ const CustomComponent = React.lazy(
 );
 
 /* 等待 500 ms 渲染组件 */
-const CustomComponent-1 = React.lazy(
+const CustomComponent2 = React.lazy(
   () =>
     new Promise((resolve, reject) =>
       setTimeout(() => resolve(import("./custom-component")), 5500)
@@ -3048,21 +3525,16 @@ const CustomComponent-1 = React.lazy(
 function App() {
   return (
     <>
-```
-
-## 116 精通 React
-
-```javascript
-<Suspense fallback={<div>Loading</div>}>
-  <CustomComponent label="Component 2" />
-  <CustomComponent2 label="Component 3" />
-</Suspense>
-</>
-);
+      <Suspense fallback={<div>Loading</div>}>
+        <CustomComponent label="Component 2" />
+        <CustomComponent2 label="Component 3" />
+      </Suspense>
+    </>
+  );
 }
 ```
 
-像上面的示例那样，将所有的自定义（用户定义）组件封装在一个 suspense 中，会导致你的用户界面显示加载指示器，直到最耗长的组件上传完成为止。
+像上面的示例那样，将所有的自定义（用户定义）组件封装在一个 `Suspense` 中，会导致你的用户界面显示加载指示器，直到最耗时的组件上传完成为止。
 
 在上面的示例中，Component 2 将被创建，但在 Component 3 加载之前它不会显示。
 
@@ -3092,11 +3564,9 @@ const SettingsPage = React.lazy(() => import('../pages/settings'));
 </Route>
 ```
 
-### react-loadable
+### `react-loadable`
 
-react-loadable 拥有从 SSR（服务端渲染）到自定义渲染的大功能或属性。它的用法与 @loadable/components 类似，带有额外的属性。
-
-## 117 程序化导航
+`react-loadable` 拥有从 SSR（服务端渲染）到自定义渲染的大功能或属性。它的用法与 `@loadable/components` 类似，带有额外的属性。
 
 - 它为你提供的，
 - 内置的延迟（delay）、超时（timeout）属性
@@ -3138,64 +3608,18 @@ const TimeoutComponent = Loadable({
     ),
   loading: ({ error }) => (error ? <div>Loading...</div> : <div>Error...</div>),
 });
-```
 
-## 118 精通 React
-
-```javascript
 function App() {
   return (
     <>
-      <CustomComponent label="Component 1" />
+      <CustomComponent1 label="Component 1" />
       <CustomComponent2 label="Component 2" />
       <ErrorComponent label="Component 3" />
       <TimeoutComponent label="Component 4" />
     </>
   );
 }
-```
 
-react-loadable
-
-react-loadable 拥有从 SSR 到自定义渲染的大功能或属性。它的用法与 @loadable/components 类似，带有额外的属性。
-
-- 它为你提供的，
-- 内置的延迟（delay）、超时（timeout）属性
-- 使用自定义渲染组件代替导入组件
-- SSR
-- 预取（Prefetching）
-
-```javascript
-import Loadable from "react-loadable";
-
-const CustomComponent1 = Loadable({
-  loader: () =>
-    new Promise((resolve, reject) =>
-      setTimeout(() => resolve(import("./custom-component")), 1000)
-    ),
-  loading: ({ pastDelay }) => (pastDelay ? <div>Loading...</div> : null),
-});
-
-const CustomComponent2 = Loadable({
-  loader: () =>
-    new Promise((resolve, reject) =>
-      setTimeout(() => resolve(import("./custom-component")), 5000)
-    ),
-  loading: ({ error }) => (error ? <div>Loading...</div> : <div>could't be loaded!</div>),
-});
-
-const ErrorComponent = Loadable({
-  loader: () =>
-    new Promise((resolve, reject) =>
-      setTimeout(() => resolve(import("./custom-component")), 500)
-    ),
-  loading: ({ timedOut }) => (timedOut ? <div>Loading...</div> : <div>Timeout...</div>),
-});
-```
-
-## 119 程序化导航
-
-```javascript
 export default function App() {
   return <LoadableComponent />;
 }
@@ -3205,90 +3629,31 @@ export default function App() {
 
 ```javascript
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch }
-"react-router-dom";
-import Home from './ './';
-
- Contact from './ './';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Home from './Home';
+import Contact from './Contact';
 import Products from './Products';
 
-constconst = () => import('./Home/index');
-const contact = () => import('./Contact/index
+const HomeRoute = () => import('./Home/index');
+const ContactRoute = () => import('./Contact/index');
+const ProductsRoute = () => import('./Products/index');
 
-
-
-const = () => (
-
-  div>></>
-
-);const Main = () => (
-
+const Main = () => (
   <>
+    <Switch>
+      <Route exact path="/" component={HomeRoute} />
+      <Route path="/contact" component={ContactRoute} />
+      <Route path="/products" component={ProductsRoute} />
+    </Switch>
+  </>
+);
+```
 
-<<
-< path path path={={}}}={={}
+### 使用 React Suspense (React 16.6+)
 
+从 React 16.6 开始，React 增加了执行懒加载的 `React.Suspense`。
 
-<<={={truetrue}}}}}
-
-<<Route={={={={}}}}
-
-
-
-
-
-</</</>);););
-
-
-
- Main;;
-
-
-
-
-
-
-  22 React
-
-
-
-
-
-
-
-需要需要需要
-
-要遵循此部分，你需要：
-- 最新的 Node 版本
-- create-react-app 工具
-
-通用指令如下：
-- 我们将分别使用 React suspense 和不使用它来执行懒加载。
-- 首先，使用 npm create-react-app 创建应用：
-*npm create-react-app my-app*
-
-现在在项目根目录下运行以下指令启动应用程序：
-*npm start*
-
-默认 React 应用将运行在 http://localhost:3000
-
-假设目录结构如下
-
-|-src
-|-components
-|-Admin.js
-|-Customer.js
-|-Home.js
-|-app.js
-|-index.js
-
-App 将首先渲染 app.js，它将有一个输入值，然后将接收到的输入作为 props 传递给 Home，Home 然后渲染 Home.js。我们将根据获得的 props 渲染 Admin 或 Customer。
-
-使用 React Suspense (React 16.6+)
-
-从 React 16.6 开始，react 增加了执行懒加载的 React Suspense。
-
-在我们的 Home.js 中，我们将懒加载 Admin 和 Customer
+在我们的 `Home.js` 中，我们将懒加载 `Admin` 和 `Customer`
 
 ```javascript
 import React, { Suspense } from "react";
@@ -3296,21 +3661,14 @@ import React, { Suspense } from "react";
 const Customer = React.lazy(() => import("./Customer.js"));
 const Admin = React.lazy(() => import("./Admin.js"));
 
-// 代替普通的导入语句，我们将使用
-上述上述方法进行懒加载
-```
-
-
-
-
-
-## 程序化导航 **121**
+// 代替普通的导入语句，我们将使用上述方法进行懒加载
 
 export default (props) => {
   if (props.user === "admin") {
     return (
       // 在主组件加载之前会渲染回退组件（fallback component）
-      <Suspense fallback={<div>Loading</div>}> <Admin />
+      <Suspense fallback={<div>Loading</div>}>
+        <Admin />
       </Suspense>
     );
   } else if (props.user === "customer") {
@@ -3327,32 +3685,26 @@ export default (props) => {
 
 ---
 
-### 如果使用 React Suspense
+### 如果不使用 React Suspense
 
 如果你使用的是低于 16.6 的 React 版本，将无法使用 `Suspense` 组件。最好是利用 Suspense 并升级到最新版本。如果你尚无法更新但仍想使用此功能，可以构建自己的 React Suspense 组件。我将使用高阶组件（HOC）。
 
-#### 我们的 HOC (lazyLoader.js)
+#### 我们的 HOC (`lazyLoader.js`)
 
 ```javascript
 const lazyLoader = (importComp) => {
   return class extends React.Component {
     state = {
-      component: null; //初始化-状态
+      component: null // 初始化状态
     };
 
     // 加载组件并设置为状态
     componentDidMount() {
-      importComp().then((comp) => setState({
+      importComp().then((comp) => this.setState({
         component: comp.default
       }));
     }
-```
 
----
-
-**122** 精通 React
-
-```javascript
     // 渲染组件
     render() {
       const C = this.state.component;
@@ -3364,18 +3716,17 @@ const lazyLoader = (importComp) => {
 export default lazyLoader;
 ```
 
-#### 我们的调用组件，在 Home.js 中
+#### 我们的调用组件，在 `Home.js` 中
 
 ```javascript
 import React from "react";
 import { lazyLoader } from "./lazyLoader";
 
 const Customer = lazyLoader(() => import("./Customer.js"));
-
 const Admin = lazyLoader(() => import("./Admin.js"));
 
-// 代替普通的 import 语句，我们将使用
-// 上述方法进行懒加载
+// 代替普通的 import 语句，我们将使用上述方法进行懒加载
+
 export default (props) => {
   if (props.user === "admin") {
     return <Admin />;
@@ -3395,19 +3746,12 @@ export default (props) => {
 const lazyLoader = (importComp, fallback) => {
   return class extends React.Component {
     state = {
-      component: null, //初始化-状态
+      component: null, // 初始化状态
     };
 
     // 加载组件并设置为状态
     componentDidMount() {
-```
-
----
-
-**123** 程序化导航
-
-```javascript
-      importComp().then((comp) => setState({
+      importComp().then((comp) => this.setState({
         component: comp.default
       }));
     }
@@ -3422,9 +3766,7 @@ const lazyLoader = (importComp, fallback) => {
       ) : (
         <div>loading</div>
       );
-      // 如果组件未加载，则返回
-      // 回退组件；如果未提供 fallback，则
-      // 使用默认加载
+      // 如果组件未加载，则返回回退组件；如果未提供 fallback，则使用默认加载
     }
   };
 };
@@ -3432,12 +3774,9 @@ const lazyLoader = (importComp, fallback) => {
 export default lazyLoader;
 ```
 
-![](img/d0ee73892dd0a882274507b07de0217c_144_0.png)
-Logo: Taylor and Francis, Taylor and Francis Group, http://taylorandfrancis.com.
-
 ---
 
-**125** 第 7 章 高级工具
+## 第 7 章 高级工具
 
 ### 本章内容摘要
 - 高级工具
@@ -3447,21 +3786,17 @@ Logo: Taylor and Francis, Taylor and Francis Group, http://taylorandfrancis.com.
 
 ## CONTEXT API
 
-Context 提供了一种在组件层级结构中传递数据的方法，而无需在每一个层级手动传递 props。在典型的 React 应用程序中，数据通过 props 从上到下（即从父组件到子组件）传递，但对于应用程序内多个组件都所需的特定类型的 props（例如：语言选择、用户界面主题），这种用法可能会出现问题。Context 允许你在跨组件间像这样进行进行数据通信，而无需直接穿过树形结构的每一层来发送 prop。
+Context 提供了一种在组件层级结构中传递数据的方法，而无需在每一个层级手动传递 props。在典型的 React 应用程序中，数据通过 props 从上到下（即从父组件到子组件）传递，但对于应用程序内多个组件都所需的特定类型的 props（例如：语言选择、用户界面主题），这种用法可能会出现问题。Context 允许你在跨组件间像这样进行数据通信，而无需直接穿过树形结构的每一层来发送 prop。
 
 ### 什么是 React 的 Context API（应用程序编程接口）？
 
-React Context API（应用程序编程接口）是 React 应用程序以功能方式定义全局（外部）变量的方法，这些变量可以被传递。这是另一种跨代“prop 钻”（prop drilling）的方式：从祖组件到子组件到父组件，以此此类推。使用 Redux，Context 也认为是一种更简单、轻量的状态管理方法。DOI: 10.1201/9781003309369-7
+React Context API（应用程序编程接口）是 React 应用程序以功能方式定义全局（外部）变量的方法，这些变量可以被传递。这是另一种跨代“prop 钻”（prop drilling）的方式：从祖组件到子组件到父组件，以此类推。使用 Redux，Context 也被认为是一种更简单、轻量的状态管理方法。
 
----
-
-**126** 精通 React
-
-Context API 是 React 16.3 版本中添加的一种（新）属性，它可以让你轻松方便地在整个应用程序（或其任何部分）中状态。
+Context API 是 React 16.3 版本中添加的一种（新）属性，它可以让你轻松方便地在整个应用程序（或其任何部分）中管理状态。
 
 ### Context API：它是如何工作的？
 
-`React.createContext()` 是返回一个消费者（consumer）和一个生产者（provider）的语法。生产者顾如其名，为整个应用程序提供状态。消费者则是。
+`React.createContext()` 是返回一个消费者（consumer）和一个生产者（provider）的语法。生产者顾名思义，为整个应用程序提供状态。消费者则是消费状态。
 
 Context API 会取代 Redux 吗？
 
@@ -3480,7 +3815,7 @@ import React, { createContext, useState } from "react";
 
 const UserContext = createContext();
 
-Provider = ({ children }) => {
+const Provider = ({ children }) => {
   const [name, setName] = useState("John Doe");
   const [age, setAge] = useState(1);
   const happyBirthday = () => setAge(age + 1);
@@ -3498,31 +3833,19 @@ Provider = ({ children }) => {
 ### 使用 Provider 模式和 Context API 构建/设计应用程序
 
 1. **解释应用程序的不同部分**：在这个示例中，我们意图更改主题并根据所选语言进行翻译。我们有以下组件：
-- <LanguageSelection/> – 有一个“选择语言”标签和一个包含语言列表的下拉菜单。
-- <ThemeContainer/> – 有一个“更改主题”标签、主题类型和一个切换按钮。
-- <Content/> – 仅显示内容“Hello world!!”
+- `<LanguageSelection/>` – 有一个“选择语言”标签和一个包含语言列表的下拉菜单。
+- `<ThemeContainer/>` – 有一个“更改主题”标签、主题类型和一个切换按钮。
+- `<Content/>` – 仅显示内容“Hello world!!”
 
 2. **文档树**：我们可以这样想象这棵树：
 
-Document Tree
+父组件无非是 provider，它的状态中拥有语言和主题。更改语言和主题。基于此，所有子组件都可以直接消费数据和 API。
 
-Document Tree
-
-父组件无非是 provider，它的状态中拥有语言和主题。
-
-
-
-
-
-## 高级工具 129
-
-更改语言和主题。基于此，所有子组件都可以直接消费数据和 API。
-
-3. <AppProvider/>
+3. `<AppProvider/>`
 
 ```javascript
 import React, { createContext } from "react";
-import { getLocaleCode, getlocaleByCode } from "./data";
+import { getLocaleCode, getLocaleByCode } from "./data";
 import AppContext from "./appContext";
 
 class AppProvider extends React.Component {
@@ -3532,9 +3855,9 @@ class AppProvider extends React.Component {
     theme: "light"
   };
 
-  updateLocalCode = async e => {
+  updateLocaleCode = async e => {
     try {
-      const localeObj = await getlocaleByCode(e.target.value);
+      const localeObj = await getLocaleByCode(e.target.value);
       this.setState({ localeObj });
     } catch (err) {
       console.log(err);
@@ -3550,7 +3873,7 @@ class AppProvider extends React.Component {
       <AppContext.Provider
         value={{
           state: this.state,
-          updateLocale: this.updateLocalCode,
+          updateLocale: this.updateLocaleCode,
           updateTheme: this.updateTheme
         }}
       >
@@ -3562,7 +3885,7 @@ class AppProvider extends React.Component {
   componentDidMount = async () => {
     try {
       const localeCodes = await getLocaleCode();
-      const localeObj = await getlocaleByCode();
+      const localeObj = await getLocaleByCode();
       this.setState({ localeCodes, localeObj });
     } catch (err) {
       console.log(err);
@@ -3573,11 +3896,11 @@ class AppProvider extends React.Component {
 export default AppProvider;
 ```
 
-如你所见，在这个组件中，我们暴露了 "updateLocale" 和 "updateTheme" 状态。在状态中，我们包含了显示在 UI 中的所有数据，而 "updateLocale" 和 "updateTheme" 是将由消费者调用的回调函数。这里 "updateLocale" 保存了 updateLocaleCode 方法定义——它的作用是更改语言。"updateTheme" 拥有方法 "updateTheme" 的定义，用于在浅色或深色主题之间切换
+如你所见，在这个组件中，我们暴露了 "updateLocale" 和 "updateTheme" 状态。在状态中，我们包含了显示在 UI 中的所有数据，而 "updateLocale" 和 "updateTheme" 是将由消费者调用的回调函数。这里 "updateLocale" 保存了 `updateLocaleCode` 方法定义——它的作用是更改语言。"updateTheme" 拥有方法 `updateTheme` 的定义，用于在浅色或深色主题之间切换。
 
 4. 让我们快速检查这三个组件的渲染情况：
 
-A. 语言选择 (LanguageSelection)
+A. 语言选择 (`LanguageSelection`)
 
 ```javascript
 render() {
@@ -3603,9 +3926,9 @@ render() {
 }
 ```
 
-我们正在使用渲染属性 (render props) 并通过 {context.state.localeObj.languageLabel} 访问数据。此外，在更改选择时，我们通过 {context.updateLocale} 调用回调函数。
+我们正在使用渲染属性 (render props) 并通过 `{context.state.localeObj.languageLabel}` 访问数据。此外，在更改选择时，我们通过 `{context.updateLocale}` 调用回调函数。
 
-B. 主题容器 (ThemeContainer)
+B. 主题容器 (`ThemeContainer`)
 
 ```javascript
 render() {
@@ -3616,7 +3939,6 @@ render() {
           <label className="labels">
             {context.state.localeObj.themeLabel}:
           </label>
-            ............
           <label className="switch">
             <input type="checkbox" onChange={context.updateTheme} />
             <span className="slider round" />
@@ -3628,7 +3950,7 @@ render() {
 }
 ```
 
-C. 内容 (Content)
+C. 内容 (`Content`)
 
 ```javascript
 render() {
@@ -3642,18 +3964,18 @@ render() {
 }
 ```
 
-我们在 ThemeContainer 和 Content 中访问数据，同时根据 ThemeContainer 中的切换按钮调用回调函数 {context.updateTheme}。
+我们在 `ThemeContainer` 和 `Content` 中访问数据，同时根据 `ThemeContainer` 中的切换按钮调用回调函数 `{context.updateTheme}`。
 
 ### API (应用程序编程接口)
-
-*创建 “React.createContext” 的语法*
-`const UserContext = React.createContext(defaultValue);`
 
 #### 创建上下文对象 (Context Object)
 
 当 React 显示订阅了此 Context 方法的组件/模块时，它将从层级结构中上方最匹配的 Provider 中读取当前上下文值。
 
-只有当组件/函数在层级结构上方没有匹配的 Provider 时，参数才为默认值。这个默认值对于在不包装组件的情况下对组件进行孤立的测试非常有帮助。*注意：* 将 undefined 作为 Provider 值不会导致消费组件使用 defaultValue。
+只有当组件/函数在层级结构上方没有匹配的 Provider 时，参数才为默认值。这个默认值对于在不包装组件的情况下对组件进行孤立的测试非常有帮助。*注意：* 将 `undefined` 作为 Provider 值不会导致消费组件使用 `defaultValue`。
+
+*创建 “React.createContext” 的语法*
+`const UserContext = React.createContext(defaultValue);`
 
 #### Context.Provider
 
@@ -3661,7 +3983,7 @@ render() {
 
 每个 Context 对象都分配了一个 Provider React 组件，它允许其消费订阅了上下文更改/变更的组件。
 
-Provider 组件接收一个 `value` 属性，并传递到作为该 Provider 后代的消费组件中。单个 Provider 可以链接到多个消费者。Providers 可以被嵌套以覆盖更深层的值。每一个作为 Provider 后代的消费者在每当 Provider 的 `value` 属性发生变化时，都会重新渲染。从 Provider 到其后代（包括 .contextType）的传播不受 `shouldComponentUpdate` 方法的影响，因此消费者可能会跳过更新。更改通过使用相同的算法比较新旧值来确定。*注意*：确定修改的方式可能会在将对象作为值时导致某些错误。
+Provider 组件接收一个 `value` 属性，并传递到作为该 Provider 后代的消费组件中。单个 Provider 可以链接到多个消费者。Providers 可以被嵌套以覆盖更深层的值。每一个作为 Provider 后代的消费者在每当 Provider 的 `value` 属性发生变化时，都会重新渲染。从 Provider 到其后代（包括 `.contextType`）的传播不受 `shouldComponentUpdate` 方法的影响，因此消费者可能会跳过更新。更改通过使用相同的算法比较新旧值来确定。*注意*：确定修改的方式可能会在将对象作为值时导致某些错误。
 
 #### Class.contextType
 
@@ -3680,31 +4002,35 @@ class MyClass extends React.Component {
     // ...
   }
 }
+
 MyClass.contextType = UserContext;
 ```
-（注：由于原文此部分代码不完整且存在重复，此处保留核心结构翻译逻辑，实际应用中应根据完整代码补全。但根据提供的文本，该部分存在大量重复的描述，以下为根据指令“不要重复输出原文”原则进行清理后的逻辑翻译）
 
-Hooks are introduced in the version of React 16.8 (a JavaScript library). Hooks are generally used as it allows you to use state and other React features without creating a class for it. It doesn’t work inside classes. It allows using functional components of the lifecycle, states, etc. also provides a few built-in Hooks like useState, useEffect etc., whereas you can also create hooks on your own. Hooks allow you to reuse stateful logic without changing your component sequence. This makes it easy to manipulate and share Hooks among many components or among the community. Before moving ahead, note that you can try Hooks in a few components without rewriting any existing code.
+## Hooks
 
-Hooks allow you to break into a different component of several smaller function-based figures on what the pieces have been mapped (such as setting a subscription or detecting the data), despite making a split based on lifecycle methods. You can also choose from managing the component’s initial state with a reducer to make it more predictable.
+Hooks 在 React 16.8 版本中引入（一个 JavaScript 库）。Hooks 通常被使用，因为它允许你在不创建 class 的情况下使用 state 和其他 React 特性。它不能在 class 内部工作。它允许使用函数组件的生命周期、state 等，也提供了一些内置的 Hooks，如 `useState`、`useEffect` 等，而你也可以创建自己的 hooks。Hooks 允许你在不改变组件层次结构的情况下复用有状态的逻辑。这使得在许多组件之间或在社区中操作和共享 Hooks 变得容易。在继续之前，请注意，你可以在一些组件中尝试 Hooks，而无需重写任何现有代码。
+
+Hooks 允许你根据相关功能将组件拆分为更小的函数（例如设置订阅或获取数据），而不是基于生命周期方法进行拆分。你也可以选择使用 reducer 来管理组件的初始 state，使其更加可预测。
 
 ### State Hook
 
-It is a built-in Hook (useState) that is used to create a React state for the functional components. This hook has been called inside the function component to add some local state to it. It lets you build your own Hooks to reuse stateful behavior between different functional component units.
+它是一个内置的 Hook (`useState`)，用于为函数组件创建 React state。这个 hook 在函数组件内部被调用，以向它添加一些局部 state。它让你构建自己的 Hooks 以在不同的函数组件单元之间复用有状态的行为。
 
-Now we will go through the built-in hooks first.
+现在我们将首先浏览内置的 hooks。
 
-This example renders a counter. Whenever the button is clicked, it increases the value.
+此示例渲染一个计数器。每当按钮被点击时，它会增加值。
 
 ```javascript
 import React, { useState } from 'react';
+
 function Exmp1() {
-  // Declaring a new state variable, which called as "count"
-  const [count, set_Count] = useState(0);
+  // 声明一个新的 state 变量，称为 "count"
+  const [count, setCount] = useState(0);
+
   return (
     <div>
       <p>You clicked {count} times</p>
-      <button onClick={() => set_Count(count + 1)}>
+      <button onClick={() => setCount(count + 1)}>
         Click it
       </button>
     </div>
@@ -3712,43 +4038,38 @@ function Exmp1() {
 }
 ```
 
-
-
-
-## 掌握 React
-
 在这里，`useState` 是一个 Hook。在名为 `Exmp1` 的函数中，我们声明了一个新的状态变量，称之为“count”。它在函数组件/模块内部被调用，以向它提供一些本地/初始状态。在上面的示例中，它是 0，因为计数器被设置为零，所以每次点击按钮时，计数器的值都会增加 1。你可以从事件处理程序或其他地方调用这个 `Exmp1` 函数。
 
-### 声明多个状态变量
+#### 声明多个状态变量
 
 ```javascript
 function ExampleWithStates() {
   // 声明多个状态变量！
-  const [age, set_Age] = useState(42);
-  const [fruit, set_Fruit] = useState('banana');
-  const [todos, set_Todos] = useState([{ text: 'Learn Hooks and React' }]);
+  const [age, setAge] = useState(42);
+  const [fruit, setFruit] = useState('banana');
+  const [todos, setTodos] = useState([{ text: 'Learn Hooks and React' }]);
   // ...
 }
 ```
 
 ### Effect Hook
 
-它也是一种内置的 Hook（`useEffect`），它告诉 React 你的组件在渲染后需要执行某些操作，并添加了在任何后续渲染时从函数组件中执行副作用的能力。Effects 声明在（函数或主）组件内部，以便访问其 props 和状态。它的作用与每个后续渲染都相同——
+它也是一种内置的 Hook (`useEffect`)，它告诉 React 你的组件在渲染后需要执行某些操作，并添加了在任何后续渲染时从函数组件中执行副作用的能力。Effects 声明在（函数或主）组件内部，以便访问其 props 和状态。它的作用与每个后续渲染都相同——
 
-- componentDidMount
-- componentDidUpdate
-- componentWillUnmount
+- `componentDidMount`
+- `componentDidUpdate`
+- `componentWillUnmount`
 
 示例：
 
 ```javascript
 import React, { useState, useEffect } from 'react';
 
-function Friend_Status(props) {
-  const [isOnline, set_Is_Online] = useState(null);
+function FriendStatus(props) {
+  const [isOnline, setIsOnline] = useState(null);
 
   function handleStatusChange(status) {
-    setIsOnline(status._is_Online);
+    setIsOnline(status.isOnline);
   }
 
   useEffect(() => {
@@ -3761,12 +4082,11 @@ function Friend_Status(props) {
   if (isOnline === null) {
     return 'Loading...';
   }
-
   return isOnline ? 'Online' : 'Offline';
 }
 ```
 
-在这里我们创建了一个新的状态，更新了 ChatAPI 中的值：它是在线还是离线，状态在名为 `FriendStatus(props)` 的函数中被设置为 `null`。Hooks 是函数，因此在 `useEffect` hook 中，我们以函数的形式传递参数，以便在每次后续渲染后更新值。
+在这里我们创建了一个新的状态，更新了 `ChatAPI` 中的值：它是在线还是离线，状态在名为 `FriendStatus(props)` 的函数中被设置为 `null`。Hooks 是函数，因此在 `useEffect` hook 中，我们以函数的形式传递参数，以便在每次后续渲染后更新值。
 
 ### Hooks 规则
 
@@ -3777,15 +4097,15 @@ Hooks (React) 是 JavaScript 函数，但强制了两个额外的规则：
 
 ## 构建你自己的（自定义）HOOK
 
-有时，我们需要在组件之间复用某些带状态的逻辑，因此我们定义了自己的 hook，，称为自定义 Hook（Custom Hooks）。它允许你这样做，但无需添加更多组件。自定义 Hook 是一个名称以“use”关键字开头的 JavaScript 函数。
+有时，我们需要在组件之间复用某些带状态的逻辑，因此我们定义了自己的 hook，称为自定义 Hook（Custom Hooks）。它允许你这样做，但无需添加更多组件。自定义 Hook 是一个名称以“use”关键字开头的 JavaScript 函数。
 
-例如，下方的 `useFriend_Status` 是我们的第一个自定义 hook。
+例如，下方的 `useFriendStatus` 是我们的第一个自定义 hook。
 
 ```javascript
 import React, { useState, useEffect } from 'react';
 
 function useFriendStatus(friendID) {
-  const [isOnline, setIsOnline] = useState('/0');
+  const [isOnline, setIsOnline] = useState(null);
 
   function handleStatusChange(status) {
     setIsOnline(status.isOnline);
@@ -3802,7 +4122,7 @@ function useFriendStatus(friendID) {
 }
 ```
 
-我们的 `useFriendStatus` hook 旨在向我们更新朋友的状态。它接受 `FriendID` 作为参数并返回在线或离线的值。
+我们的 `useFriendStatus` hook 旨在向我们更新朋友的状态。它接受 `friendID` 作为参数并返回在线或离线的值。
 
 ## REACT.JS 渲染属性 (RENDER PROPS)
 
@@ -3810,7 +4130,7 @@ function useFriendStatus(friendID) {
 
 ```javascript
 <DataProvider render={data => (
-  <h1>Hello {data}</<h1>>
+  <h1>Hello {data}</h1>
 )}/>
 ```
 
@@ -3832,11 +4152,11 @@ cd foldername
 
 ```javascript
 <DataProvider render={data => (
-  <h1>Hello {data}</<h1>>
+  <h1>Hello {data}</h1>
 )}/>
 ```
 
-### 对于跨切关注点，使用渲染属性
+### 对于横切关注点，使用渲染属性
 
 组件是 React 中代码复用的基本单元，但要将一个组件封装的状态或操作共享给需要相同状态的其他组件并不总是很清晰的。现在考虑一个例子，以下组件跟踪 Web 应用程序中的鼠标位置：
 
@@ -3869,6 +4189,15 @@ class MouseTracker extends React.Component {
 `MouseTracker` 组件封装了与监听鼠标移动事件以及存储 (x, y) 位置的所有行为，但它并不是真正复用的。让我们考虑一个例子，我们有一个组件会渲染一个在屏幕上追逐鼠标的图片：
 
 ```javascript
+class Cat extends React.Component {
+  render() {
+    const mouse = this.props.mouse;
+    return (
+      <img src="/cat.jpg" style={{ position: 'absolute', left: mouse.x, top: mouse.y }} />
+    );
+  }
+}
+
 class Mouse extends React.Component {
   constructor(props) {
     super(props);
@@ -3901,109 +4230,11 @@ class Mouse extends React.Component {
 }
 ```
 
-这种方法方法虽然适用于我们特定的用例，但我们没有实现以真正复用的方式封装行为的目标。每当我们为不同的用例需要鼠标位置时，都必须设计一个新的组件（即是另一个 `MouseWithCat`）来专门为该用例渲染内容。
-
-```javascript
-class Cat extends React.Component {
-  render() {
-    const mouse = this.props.mouse;
-    return (
-      <img src="/cat.jpg" style={{ position: 'absolute', left: mouse.x, top: mouse.y }} />
-    );
-  }
-}
-
-class MouseWithCat extends React.Component {
-  constructor(props) {
-    super(props);
-    this.handleMouseMove = this.handleMouseMove.bind(this);
-    this.state = { x: 0, y: 0 };
-  }
-
-  handleMouseMove(event) {
-    this.setState({
-      x: event.clientX,
-      y: event.clientY
-    });
-  }
-
-  render() {
-    return (
-      <div style={{ height: '100vh' }} onMouseMove={this.handleMouseMove}>
-        <h1>Move the mouse around!</h1>
-        <p>The mouse position is {this.state.x}, {this.state.y}</p>
-      </div>
-    );
-  }
-}
-
-class MouseTracker extends React.Component {
-  render() {
-    return (
-      <div>
-        <h1>Move the mouse around!</h1>
-        <MouseWithCat />
-      </div>
-    );
-  }
-}
-```
+这种方法虽然适用于我们特定的用例，但我们没有实现以真正复用的方式封装行为的目标。每当我们为不同的用例需要鼠标位置时，都必须设计一个新的组件（即另一个 `MouseWithCat`）来专门为该用例渲染内容。
 
 为了让它是复用的，我们必须使用 `mouse={{ x, y }}` prop 来告诉组件鼠标的坐标。
 
-```javascript
-class Mouse extends React.Component {
-  render() {
-    const mouse = this.props.mouse;
-    return (
-      <img src="/cat.jpg" style={{ position: 'absolute', left: mouse.x, top: mouse.y }} />
-    );
-  }
-}
-
-class MouseWithCat extends React.Component {
-  constructor(props) {
-    super(props);
-    this.handleMouseMove = this.handleMouseMove.bind(this);
-    this.state = { x: 0, y: 0 };
-  }
-
-  handleMouseMove(event) {
-    this.setState({
-      x: event.clientX,
-      y: event.clientY
-    });
-  }
-
-  render() {
-    return (
-      <div style={{ height: '100vh' }} onMouseMove={this.handleMouseMove}>
-        <h1>Move the mouse around!</h1>
-        <p>The mouse position is {this.state.x}, {this.state.y}</p>
-      </div>
-    );
-  }
-}
-
-class MouseTracker extends React.Component {
-  render() {
-    return (
-      <div>
-        <h1>Move the mouse around!</h1>
-        <MouseWithCat />
-      </div>
-    );
-  }
-}
-```
-
-
-
-
-
-## 高级工具 **143**
-
-这正是渲染属性（render prop）大显身手的地方：与其其在 `<Mouse>` 组件内部硬编码一个 `<Cat>` 并从根本上修改其显示输出，不如提供一个函数属性，让 `<Mouse>` 使用该属性来选择渲染的内容——即动态地使用渲染属性。
+这正是渲染属性（render prop）大显身手的地方：与其在 `<Mouse>` 组件内部硬编码一个 `<Cat>` 并从根本上修改其显示输出，不如提供一个函数属性，让 `<Mouse>` 使用该属性来选择渲染的内容——即动态地使用渲染属性。
 
 ```javascript
 class Cat extends React.Component {
@@ -4031,7 +4262,7 @@ class Mouse extends React.Component {
 
   render() {
     return (
-      <div style={{ height: '101vh' }} onMouseMove={this.handleMouseMove}>
+      <div style={{ height: '100vh' }} onMouseMove={this.handleMouseMove}>
         {/*
         尽管提供了 <Mouse> 渲染内容的静态表示，
         但仍要使用 'render' 属性来动态地明确要渲染的内容。
@@ -4041,11 +4272,7 @@ class Mouse extends React.Component {
     );
   }
 }
-```
 
-**144** 精通 React
-
-```javascript
 class MouseTracker extends React.Component {
   render() {
     return (
@@ -4069,7 +4296,7 @@ class MouseTracker extends React.Component {
 关于渲染属性的一个有趣点是，你可以使用带有渲染属性的普通组件来实现高阶组件（HOC）。考虑一个例子：如果你倾向于使用 `withMouse` HOC 而不是 `<Mouse>` 组件，你可以轻松地使用带有渲染属性的普通 `<Mouse>` 来定义它：
 
 ```javascript
-// 如果由于某些原因你确实一个 HOC，你可以
+// 如果由于某些原因你确实需要一个 HOC，你可以
 // 使用带有渲染属性的普通组件来创建一个！
 function withMouse(Component) {
   return class extends React.Component {
@@ -4086,11 +4313,9 @@ function withMouse(Component) {
 
 使用渲染属性允许你采用任一种模式。
 
-**145** 高级工具
-
 ### 渲染属性之外
 
-至关重要的一点是，因为这种模式被称为*渲染属性*（render props），你并不一定要使用渲染属性来使用它。事实上，渲染属性是任何作为函数的属性，组件/方法使用它来决定渲染什么。
+至关重要的一点是，因为这种模式被称为*渲染属性*（render props），你并不一定要使用名为 `render` 的属性来使用它。事实上，渲染属性是任何作为函数的属性，组件/方法使用它来决定渲染什么。
 
 虽然上面的示例用于渲染，但我们同样可以轻松地使用 `children` 属性！
 
@@ -4112,11 +4337,11 @@ function withMouse(Component) {
 
 你将在 *react-motion* API 中看到这种技术/方法。
 
-由于这种技术/方法有点奇怪，在创建这样的 API 时，你绝对应该在 `propTypes` 中明确指出子级级应该是一个函数。
+由于这种技术/方法有点奇怪，在创建这样的 API 时，你绝对应该在 `propTypes` 中明确指出子级应该是一个函数。
 
 ```javascript
 Mouse.propTypes = {
-  children: PropTypes.func.required
+  children: PropTypes.func.isRequired
 };
 ```
 
@@ -4124,9 +4349,7 @@ Mouse.propTypes = {
 
 在配合 `React.PureComponent` 使用渲染属性时要注意。如果你在 `render` 方法内部定义函数，使用渲染属性可能会限制使用 `React.PureComponent` 带来的优势。这就是为什么对于新属性，浅属性比较将始终返回 `false`，而且在这种情况下，每次渲染都会为渲染属性生成一个新值。
 
-**146** 精通 React
-
-例如，如果 `Mouse` 继承自 React，继续使用上面的 `<Mouse>` 组件/模块的 `React.PureComponent` 而不是 `React.Component`，我们的示例将如下所示：
+例如，如果 `Mouse` 继承自 `React.PureComponent` 而不是 `React.Component`，继续使用上面的 `<Mouse>` 组件/模块，我们的示例将如下所示：
 
 ```javascript
 class Mouse extends React.PureComponent {
@@ -4150,14 +4373,9 @@ class MouseTracker extends React.Component {
 }
 ```
 
-
-
-
-测试你的代码 **151**
-
 ## 测试简述
 
-测试（Challenging）是对代码如何实施的逐行审查。应用程序的测试套件包含各种代码片段，用于验证应用程序是否运行有效且无故障。当代码更新时，测试也会很有帮助。在升级一段代码后，你可能运行测试以确保更新没有破坏现有的应用程序功能。
+测试是对代码如何实施的逐行审查。应用程序的测试套件包含各种代码片段，用于验证应用程序是否运行有效且无故障。当代码更新时，测试也会很有帮助。在升级一段代码后，你可能运行测试以确保更新没有破坏现有的应用程序功能。
 
 ## 为什么要测试？
 
@@ -4197,14 +4415,14 @@ class MouseTracker extends React.Component {
 
 测试是非常棒的且应该执行的部分，但它也有优缺点。
 
-### *优点*
+### 优点
 
 - 它避免了意外的退化。
 - 它允许开发者关注现有任务，而不是担心过去。
 - 它允许应用程序进行模块化构建，否则这种构建将过于复杂。
 - 它减少了对手动确认的需求。
 
-### *缺点*
+### 缺点
 
 - 你需要编写更多代码，并进行修复和维护。
 - 非关键测试失败可能会导致应用程序在持续集成过程中被排除。
@@ -4221,13 +4439,17 @@ Jest 和 Enzyme 配合得很好，因此在本文中，我们将同时使用它�
 
 在这一部分，我们将安装 Jest 并为它编写测试。如果你是 ReactJS 的初学者，我推荐使用 Create React App，因为它是开箱即用的并自带了 Jest。
 
-`npm init react-app my-app`
+```bash
+npx create-react-app my-app
+```
 
-我们需要安装 Enzyme、enzyme-adapter-react-16 以及 react-test-renderer（版本取决于你正在使用的 React 版本）。
+我们需要安装 Enzyme、`enzyme-adapter-react-16` 以及 `react-test-renderer`（版本取决于你正在使用的 React 版本）。
 
-`npm install --save-dev enzyme enzyme-adapter-react-16 react-test-renderer`
+```bash
+npm install --save-dev enzyme enzyme-adapter-react-16 react-test-renderer
+```
 
-注意，由于我们创建项目时使用了 Jest 和 Enzyme，我们需要在项目的 src 文件夹中创建一个 `setupTest.js` 文件。该文件看起来如下：
+注意，由于我们创建项目时使用了 Jest 和 Enzyme，我们需要在项目的 `src` 文件夹中创建一个 `setupTests.js` 文件。该文件看起来如下：
 
 ```javascript
 import { configure } from "enzyme";
@@ -4237,7 +4459,7 @@ configure({ adapter: new Adapter() });
 
 这个重要的 Enzyme 配置设置了运行我们测试的连接器。
 
-在继续之前，让我们学习一些基础知识。本章中经常了一些关键属性，你需要清除它们或测试它们。你将一个函数或方法传递给此技术，测试运行器将执行该判定并作为一个测试块。
+在继续之前，让我们学习一些基础知识。本章中经常用到一些关键属性，你需要清除它们或测试它们。你将一个函数或方法传递给此技术，测试运行器将执行该判定并作为一个测试块。
 
 - **Describe**: 用于分组测试。
 - **Expect**: 用于进行断言（assertions）。
@@ -4246,9 +4468,9 @@ configure({ adapter: new Adapter() });
 
 ## 创建测试
 
-Jest 如何知道哪些是测试文件，哪些不是？第一个规则是 `__test__` 文件夹中的任何文件都被视为被测试的。如果你将文件放在任何目录下，Jest 都会尝试运行它。第二个规则是 Jest 会查找任何带有 `.spec.js` 或 `.test.js` 后缀的文件。
+Jest 如何知道哪些是测试文件，哪些不是？第一个规则是 `__tests__` 文件夹中的任何文件都被视为被测试的。如果你将文件放在任何目录下，Jest 都会尝试运行它。第二个规则是 Jest 会查找任何带有 `.spec.js` 或 `.test.js` 后缀的文件。
 
-让我们打开 App.test.js 来编写我们的第一个测试。
+让我们打开 `App.test.js` 来编写我们的第一个测试。
 
 ```javascript
 describe("App", () => {
@@ -4266,27 +4488,28 @@ describe("App", () => {
 
 *运行代码*
 
-`npm run test`
-
+```bash
+npm run test
 /* 或者 */
-
-`npm test`
+npm test
+```
 
 终端中的输出应该是这样的：
 
 ```
-  PASS src/App.test.js
+PASS src/App.test.js
   ✓ renders without crashing (34ms)
   ✓ renders Account header (13ms)
-
 Test Suites: 1 passed, 1 total
-Tests: 2 passed, 2 total
-Snapshots: 0 total
-Time: 11.239s, estimated 16s
 ```
 
 
 
+Tests: 2 passed, 2 total
+
+Snapshots: 0 total
+
+Time: 11.239s, estimated 16s
 
 ## 156 精通 React
 
@@ -4302,7 +4525,7 @@ it("renders Account header", () => {
 
 修改文本文件后却必须手动再次运行 `npm test` 有点令人沮丧。Jest 有一个非常好的属性叫做 `watch mode`（监听模式），它可以分别监听文件变化并运行测试。要以监听模式运行 Jest，你可以运行 `npm test -- --watch` 或 `jest --watch`，我建议在本节的剩余时间内让 Jest 在终端窗口中运行。
 
-### 模拟函数 (Mocking Function) #
+### 模拟函数 (Mocking Function)
 
 模拟（Mock）是一个模块或对象的真实复制品或相似物，没有任何真实的内部工作机制。它可能具有微小或简单的功能，但与真实物体相比，它只是一个模拟。Jest 可以手动或自动生成它。
 
@@ -4318,7 +4541,7 @@ it("renders Account header", () => {
 
 ## 157 测试你的代码
 
-### 测试 React 组件 #
+### 测试 React 组件
 
 这一节将结合我们目前所获得的所有知识，来理解如何测试 React 组件。测试涉及确保组件的输出没有在无意中改变为其他内容。以正确的方式创建组件是确保测试成功的最有效的方法。
 
@@ -4374,13 +4597,13 @@ it("renders correctly with no error message", () => {
 
 在本节中，我们将介绍如何使用快照测试（snapshot testing）来测试 React 组件，这是另一种非常极佳的方法论或方法。
 
-### 快照测试 (Snapshot Testing) #
+### 快照测试 (Snapshot Testing)
 
 快照测试捕捉组件在某一时刻的代码，以便将其与保存在测试旁边的参考快照文件进行匹配。它被用于跟踪应用程序 UI 的修改。快照的实际代码表示是一个 JSON 文件，该 JSON 包含了创建快照时组件的记录。在测试期间，Jest 将此 JSON 文件的内容与测试期间组件的输出进行匹配，如果匹配，则测试通过；如果不匹配，则测试失败。
 
 要将 Enzyme wrapper 更改为某种格式，我们需要安装 `enzyme-to-json`：
 
-`npm install --save dev-to-json`
+`npm install --save-dev enzyme-to-json`
 
 让我们编写快照测试并首次运行；组件的快照将保存在 `__snapshots__` 目录。
 
@@ -4404,7 +4627,6 @@ src/App.test.js (30.696s)
 × renders correctly (44ms)
 ● renders correctly
 expect(received).toMatchSnapshot()
-
 Snapshot name: 'renders correctly'
 - received
 + Displays the Users Account Details
@@ -4428,20 +4650,12 @@ Execute all test suites related to changed files.
 Watch Usage: Press 'w' to show more.
 › Press u to update the failing snapshots.
 
-```javascript
-
 ### 什么是 NOCK?
 
-- Nock 是一个 Node.js 的 HTTP（超文本标记协议）服务器模拟和期望库。
+- Nock 是一个 Node.js 的 HTTP（超文本传输协议）服务器模拟和期望库。
 - Nock 可用于测试执行 HTTP 请求的模块。
 - Nock 通过重写 Node 的 `HTTP.request` 函数来工作。此外，它也重写了 `HTTP.ClientRequest` 以覆盖直接使用它的模块或组件。
 - Nock 让我们通过拦截外部 HTTP 请求来避免上述挑战，使我们能够返回自定义响应以测试不同的场景，或者将真实的响应存储为“固件（fixtures）”，即返回可靠响应的预制数据。
-
-```
-
-
-
-
 
 ## 测试你的代码 161
 
@@ -4581,10 +4795,6 @@ Create React Project（或 CRA）创建或设计的 React 应用程序默认已�
 npm install --save-dev @testing-library/react jest
 ```
 
-
-
-
-
 ## 166 精通 React
 
 ### 安装 React Testing Library 和 Jest
@@ -4635,7 +4845,7 @@ test('renders learn react link', () => {
 然后打开你的终端并运行 `npm run test` 命令。你会看到整个 `document.body` 树渲染到了你的控制台中：
 
 ```html
-<<body>
+<body>
   <div>
     <div class="App">
       <header class="App-header">
@@ -4654,7 +4864,7 @@ test('renders learn react link', () => {
       </header>
     </div>
   </div>
-</</body>
+</body>
 ```
 
 由 React Testing Library 渲染的文档主体：
@@ -4671,17 +4881,17 @@ expect(linkElement).toBeInTheDocument();
 
 如果未找到链接元素，Jest 将测试失败。
 
-*React Testing Library 查找元素的方法*
+### React Testing Library 查找元素的方法
 
 你的大部分 React 测试用例都应该使用查找元素的技术。除了 `getByText()` 方法外，React Testing Library 还为你提供了几种通过特定属性或函数查找元素的方法：
 
-- **getByText()**: 通过其 `textContent` 值查找
-- **getByRole()**: 通过其 role 属性值查找
-- **getByLabelText()**: 通过其 label 属性值查找
-- **getByPlaceholderText()**: 通过其 placeholder 属性值查找
-- **getByAltText()**: 通过其 alt 属性值查找
-- **getByDisplayValue()**: 通过其 value 属性，通常用于 `<input>` 元素
-- **getByTitle()**: 通过其 title 属性值查找
+- `getByText()`: 通过其 `textContent` 值查找
+- `getByRole()`: 通过其 role 属性值查找
+- `getByLabelText()`: 通过其 label 属性值查找
+- `getByPlaceholderText()`: 通过其 placeholder 属性值查找
+- `getByAltText()`: 通过其 alt 属性值查找
+- `getByDisplayValue()`: 通过其 value 属性，通常用于 `<input>` 元素
+- `getByTitle()`: 通过其 title 属性值查找
 
 当这些技术不再足够时，可以使用 `getByTestId()` 方法，它允许你通过 `data-testid` 属性查找元素：
 
@@ -4731,32 +4941,29 @@ test("toggle theme", async () => {
 });
 ```
 
+## Redux 173
 
-
-
-Redux **173**
-
-在 index.js 文件中，我们将渲染 App 组件并将其传递给 store：
+在 `index.js` 文件中，我们将渲染 App 组件并将其传递给 store：
 
 ```javascript
 import React from 'react'
 import ReactDOM from 'react-dom'
-import App from './components/App' ownimport storeFactory from './store'
+import App from './components/App'
+import storeFactory from './store'
 
 const store = storeFactory()
 
 const render = () =>
   ReactDOM.render(
-    <App store={store}/>,
+    <App store={store} />,
     document.getElementById('react-container')
   )
 
 store.subscribe(render)
-
 render()
 ```
 
-这是 ./index.js 文件。在这里，我们可以借助 `storeFactory` 来创建 store，并将 App 组件渲染到文档中。当 App 渲染到 store 时，它将作为一个属性传递给 store。现在，每当 store 发生变化时，render 函数就会被调用或触发，从而用新的状态数据准确地更新用户界面。
+这是 `./index.js` 文件。在这里，我们可以借助 `storeFactory` 来创建 store，并将 App 组件渲染到文档中。当 App 渲染到 store 时，它将作为一个属性传递给 store。现在，每当 store 发生变化时，render 函数就会被调用或触发，从而用新的状态数据准确地更新用户界面。
 
 既然我们已经将 store 传递或处理给了 App，我们就必须继续将其传递给需要它的子组件。
 
@@ -4779,7 +4986,7 @@ App 组件是根组件。它从 props 中获取 store 并显式地传递给它�
 
 既然我们已经从 App 传递了 store，就可以在子组件内部使用它。记住，我们可以借助 `store.getState` 从 store 中读取状态，也可以使用 `store.dispatch` 向 store 派发动作。
 
-**174** 精通 React
+## 174 精通 React
 
 通过使用 AddColorForm 组件，我们可以让 store 派发 ADD_COLOR 动作。当用户提交表单时，我们从引用中获取颜色和标题，并利用这些信息生成并派发一个新的 ADD_COLOR 动作：
 
@@ -4789,7 +4996,6 @@ import { addColor } from '../actions'
 
 const AddColorForm = ({store}) => {
   let _title, _color
-
   const submit = e => {
     e.preventDefault()
     store.dispatch(addColor(_title.value, _color.value))
@@ -4797,7 +5003,6 @@ const AddColorForm = ({store}) => {
     _color.value = '#000000'
     _title.focus()
   }
-
   return (
     <form className="add-color" onSubmit={submit}>
       <input ref={input => _title = input}
@@ -4828,13 +5033,12 @@ import { rateColor, removeColor } from '../actions'
 import { sortFunction } from '../lib/array-helpers'
 ```
 
-**175** Redux
+## 175 Redux
 
 ```javascript
 const ColorList = ({ store }) => {
   const { colors, sort } = store.getState()
   const sortedColors = [...colors].sort(sortFunction(sort))
-
   return (
     <div className="color-list">
       {(colors.length === 0) ?
@@ -4862,9 +5066,12 @@ ColorList.propTypes = {
   store: PropTypes.object
 }
 
-export default ColorList. 现在 store 已经一直传递到组件树的 ColorList。此组件直接与 store 交互或通信。每当颜色被移除或评分时，这些动作都会被转发到 store。store 也用于获取之前的原始颜色。这些颜色会被分别复制和排序，并根据 store 的 `sort` 属性保存为 `sortedColors`。然后使用 `sortedColors` 来创建用户界面。如果你的组件树很小（例如颜色组织器），这种技术非常棒。这种策略的缺点是，我们必须手动将 store 传递给子组件。此外，ColorList、AddColorForm 以及 SortMenu 都需要这样做。
+export default ColorList
+```
 
-**176** 精通 React
+现在 store 已经一直传递到组件树的 ColorList。此组件直接与 store 交互或通信。每当颜色被移除或评分时，这些动作都会被转发到 store。store 也用于获取之前的原始颜色。这些颜色会被分别复制和排序，并根据 store 的 `sort` 属性保存为 `sortedColors`。然后使用 `sortedColors` 来创建用户界面。如果你的组件树很小（例如颜色组织器），这种技术非常棒。这种策略的缺点是，我们必须手动将 store 传递给子组件。此外，ColorList、AddColorForm 以及 SortMenu 都需要这样做。
+
+## 176 精通 React
 
 既然我们已经将 store 传递或处理给了 App，我们就必须继续将其传递给需要它的子组件。
 
@@ -4882,15 +5089,13 @@ ColorList 组件可以通过 store 的 `getState` 函数获取原始颜色并对
 
 然后使用 `sortedColors` 来创建用户界面。如果你的组件树很小（例如颜色组织器），这种技术非常棒。这种策略的缺点是，我们必须手动将 store 传递给子组件。此外，ColorList、AddColorForm 以及 SortMenu 都需要这样做。
 
-**177** Redux
+## 177 Redux
 
 在上一节中，我们引入了一个重要的 Redux 规则：应用状态应该存储在单个不可变对象中。不可变意味着该状态不会改变。我们最终将通过替换整个对象来更新它。为了做到这一点，我们需要关于变化的指令。这就是动作所提供的：关于应用状态应该变化的指令，以及进行这些变化所需的数据。动作是更新 Redux 应用状态的唯一方式。动作为提供了关于应该变化的指令，但我们也可以把它们看作是随时间变化的历史收据。
 
 对于颜色组织器来说，用户需要能够添加颜色、评分、移除颜色或对颜色列表排序。在这里我们定义了
 
-
-
-**178 精通 React**
+## 178 精通 React
 
 每个这些操作类型（action types）对应一个字符串值。action 是一个 JavaScript 对象，至少包含一个 `type` 字段：
 
@@ -4910,7 +5115,6 @@ action type 是一个定义了应该发生什么的字符串。`ADD_COLOR` 是�
 
 ```javascript
 import C from "./constants"
-
 { type: C.ADD_COLOR }
 ```
 
@@ -4992,11 +5196,11 @@ const action = {
 console.log(sort(state, action)) // "SORTED_TITLE"
 ```
 
-总结一下，状态更新由 reducers 处理。Red 是接收状态作为第一个参数、 action 作为第二个参数的纯函数。Reducers 不产生副作用，并且将它们的参数视为不可变的。在 Redux 中，模块化是通过 reducers 实现的。在本节中，我们看到了 reducers 如何被组合。
+总结一下，状态更新由 reducers 处理。Reducer 是接收状态作为第一个参数、 action 作为第二个参数的纯函数。Reducers 不产生副作用，并且将它们的参数视为不可变的。在 Redux 中，模块化是通过 reducers 实现的。在本节中，我们看到了 reducers 如何被组合。
 
 ## STORE（存储）
 
-在 Redux 中，store 是持有应用程序状态并处理状态更新的地方。Flux 模式允许许多 store，Redux 只有一个 store。为了创建一个单个 reducer，我们必须组合 colors 和 sort reducers。Redux 有一个函数来实现这一点 `combineReducers`，它将所有的 reducers 组合成一个 reducer。字段名称与传入的 reducer 名称匹配。
+在 Redux 中，store 是持有应用程序状态并处理状态更新的地方。Flux 模式允许多个 store，Redux 只有一个 store。为了创建一个单个 reducer，我们必须组合 colors 和 sort reducers。Redux 有一个函数来实现这一点 `combineReducers`，它将所有的 reducers 组合成一个 reducer。字段名称与传入的 reducer 名称匹配。
 
 也可以使用初始数据创建 store。在不传递状态的情况下调用 colors reducer 会返回一个空数组：
 
@@ -5040,10 +5244,7 @@ console.log(
 // Length of colors array after ADD_COLOR 4
 ```
 
-
-
-
-Redux 183
+## Redux 183
 
 ```javascript
 console.log(
@@ -5116,9 +5317,7 @@ store.dispatch({
 
 ```javascript
 const logState = () => console.log('next state', store.getState())
-
 const unsubscribeLogger = store.subscribe(logState)
-
 // 当准备好取消订阅监听器时调用
 unsubscribeLogger()
 ```
@@ -5186,14 +5385,12 @@ import { addColor } from '../actions'
 
 const ColorForm = ({store}) => {
   let _title, _color
-
   const submit = e => {
     e.preventDefault()
     store.dispatch(addColor(_title.value, _color.value))
     _title.value = ''
     _color.value = '#00000'
   }
-
   return (
     <form onSubmit={submit}>
       <input ref={el => _title = el} type="text" />
@@ -5220,44 +5417,33 @@ import AddColorForm from './AddColorForm'
 import { sortFunction } from '../lib/array-helpers'
 
 class App extends Component {
-
   getChildContext() {
-
     return {
-```
+      store: this.props.store
+    }
+  }
 
+  componentWillMount() {
+    this.unsubscribe = store.subscribe(
+      () => this.forceUpdate()
+    )
+  }
 
+  componentWillUnmount() {
+    this.unsubscribe()
+  }
 
-
-188 掌握 React
-
-store: this.props.store
-
-}
-
-}
-
-componentWillMount() {
-  this.unsubscribe = store.subscribe(
-    () => this.forceUpdate()
-  )
-}
-
-componentWillUnmount() {
-  this.unsubscribe()
-}
-
-render() {
-  const { colors, sort } = store.getState()
-  const sortedColors = [...colors].sort(sortFunction(sort))
-  return (
-    <div className="app">
-      <SortMenu />
-      <AddColorForm />
-      <ColorList colors={sortedColors} />
-    </div>
-  )
-}
+  render() {
+    const { colors, sort } = store.getState()
+    const sortedColors = [...colors].sort(sortFunction(sort))
+    return (
+      <div className="app">
+        <SortMenu />
+        <AddColorForm />
+        <ColorList colors={sortedColors} />
+      </div>
+    )
+  }
 }
 
 App.propTypes = {
@@ -5269,6 +5455,7 @@ App.childContextTypes = {
 }
 
 export default App
+```
 
 刚开始，为组件添加上下文需要使用 `getChildContext` 周期生命方法。它将返回定义上下文的对象。在这种场景下，我们将 store 添加到上下文中，可以通过 `props` 访问。
 
@@ -5301,11 +5488,11 @@ const AddColorForm = (props, { store }) => {
     </form>
   )
 }
-```
 
 AddColorForm.contextTypes = {
   store: PropTypes.object
 }
+```
 
 上下文对象作为第二个参数（props 之后）传递给无状态函数组件。我们可以使用对象解构直接从参数对象中获取 store。为了使用 store，我们必须在 `AddColorForm` 实例上定义 `contextTypes`。这是我们告诉 React 该组件将使用哪些上下文变量的地方。这是一个必少的步骤。没有它，无法从上下文中获取 store。让我们看看如何在类组件中使用上下文。颜色组件可以直接获取 store 并派发 `RATE_COLOR` 和 `REMOVE_COLOR` action：
 
@@ -5346,7 +5533,6 @@ class Color extends Component {
     )
   }
 }
-```
 
 Color.contextTypes = {
   store: PropTypes.object
@@ -5364,6 +5550,7 @@ Color.defaultProps = {
 }
 
 export default Color
+```
 
 `ColorList` 现在是一个组件类，并可以通过 `this.context` 访问上下文。颜色现在通过 `store.getState` 直接从 store 中读取。适用于无状态函数组件的规则同样适用。必须在实例上定义 `contextTypes`。从上下文中获取 store 是减少样板代码的一种良好方法，但并不是每个应用程序都必须的。Redux 的创建者 Dan Abramov 甚至建议这些模式不需要被盲从地遵循。分离容器组件（containers）和展示组件（presentational components）通常是一个明智的主意，但不应将其视为金科律。只有当它能显著降低代码库的复杂性时才这样做。
 
@@ -5395,7 +5582,7 @@ const action = type => store.dispatch({type})
 
 到目前为止，我们的 Saga 没有什么不同。它只是记录了消息然后返回。
 
-##异步调用
+## 异步调用
 
 现在让我们添加更真实的演示。为了演示异步调用，我们将在 UI 组件中添加额外的按钮和 `onIncrementAsync` 回调：
 
@@ -5439,7 +5626,8 @@ function render() {
 
 - 对于每一个 `INCREMENT_ASYNC` action，我们需要启动一个执行以下操作的任务：
 - 等待一秒增加计数器
-- 将以下代码添加到 `sagas.js` 组件中：
+
+将以下代码添加到 `sagas.js` 组件中：
 
 ```javascript
 import { put, takeEvery } from 'redux-saga/effects'
@@ -5458,10 +5646,6 @@ export function* watchIncrementAsync() {
   yield takeEvery('INCREMENT_ASYNC', incrementAsync)
 }
 ```
-
-
-
-
 
 ## 194 精通 React
 
@@ -5549,17 +5733,12 @@ Redux Saga 还提供了一系列复合函数，用于在分发某些调用时产
 
 我们需要测试我们的 `incrementAsync` Saga 以确保它执行了预期的任务。
 
-
-
-
-
 ## 198 精通 React
 
 *创建另一个 Sagas.spec.js*
 
 ```javascript
 import test from 'tape'
-
 import { incrementAsync } from './sagas'
 
 test('incrementAsync Saga test', (assert) => {
@@ -5581,13 +5760,15 @@ yield delay(1000)
 yield put({type: 'INCREMENT'})
 ```
 
+
+
 因此，如果我们连续三次调用生成器的 `next` 方法/函数，得到如下结果：
 
-`generator.next() // => { done: false, value: <result of calling delay(1000)> }`
-
-`generator.next() // => { done: false, value: <result of calling put({type: 'INCREMENT'})> }`
-
-`generator.next() // => { done: true, value: undefined }`
+```
+generator.next() // => { done: false, value: <result of calling delay(1000)> }
+generator.next() // => { done: false, value: <result of calling put({type: 'INCREMENT'})> }
+generator.next() // => { done: true, value: undefined }
+```
 
 前两次调用返回 `yield` 表达式的结果。在第三次调用中，由于没有更多的 `yield`，`done` 字段被设置为 `true`。由于 `incrementAsync` 生成器没有返回任何（没有 `return` 语句），`value` 字段被设置为 `undefined` 或 `void`。
 
@@ -5637,9 +5818,10 @@ export function* incrementAsync() {
 
 ## 200 精通 React
 
-`put({type: 'INCREMENT'}) // => { PUT: {type: 'INCREMENT'} }`
-
-`call(delay, 1000) // => { CALL: {fn: delays, args: [1000]}} }`
+```
+put({type: 'INCREMENT'}) // => { PUT: {type: 'INCREMENT'} }
+call(delay, 1000) // => { CALL: {fn: delays, args: [1000]}} }
+```
 
 发生的是中间件会检查每个产出 Effect 的类型，然后决定如何实现该 Effect。如果 Effect 类型是 `PUT`，它将向 Store 一个 action。如果 Effect 是 `CALL`，它将调用指定的函数。
 
@@ -5674,7 +5856,7 @@ test('incrementAsync Saga test', (assert) => {
 
 以下是 HTML 表单及其属性的描述：
 
--   **submit**: 用于提交表单数据。
+- **submit**: 用于提交表单数据。
 - **reset**: 用于清除表单字段。
 
 提供的文本似乎是关于表单元素和基于 JavaScript 交互的技术指南。要点如下：
@@ -5721,9 +5903,7 @@ function create(){
 </html>
 ```
 
-
-
-204 掌握 React
+## 204 掌握 React
 
 ```html
 <table>
@@ -5773,7 +5953,7 @@ function create_account(){
 </html>
 ```
 
-205 表单
+## 205 表单
 
 ## JAVASCRIPT 中的事件冒泡与捕获
 
@@ -5827,7 +6007,7 @@ function create_account(){
 
 这种安排的发生是因为对事件冒泡的感知。因此，事件冒泡就是这样。
 
-207 表单
+## 207 表单
 
 ### 停止冒泡
 
@@ -5859,7 +6039,7 @@ function create_account(){
 
 为了阻止事件处理器的默认行为，由于我们需要在事件被处理时停止冒泡，我们可以使用 `stopPropagation()`。
 
-208 掌握 React
+## 208 掌握 React
 
 ### 事件捕获
 
@@ -5905,7 +6085,7 @@ function create_account(){
 
 这种安排的发生是因为对事件冒泡的感知。因此，事件冒泡就是这样。
 
-209 表单
+## 209 表单
 
 ### 事件捕获
 
@@ -5937,7 +6117,7 @@ function create_account(){
 
 为了阻止事件处理器的默认行为，由于我们需要在事件被处理时停止冒泡，我们可以使用 `stopPropagation()`。
 
-210 掌握 React
+## 210 掌握 React
 
 ### 事件捕获
 
@@ -5975,10 +6155,6 @@ function create_account(){
 
 *抱歉，由于提供的原始文本中存在严重的文本重复（207、208、209、210的内容几乎完全相同），我已按照要求翻译了文本中出现的每一部分。*
 
-
-
-
-
 ## 210 进阶 React
 
 App 的根目录。在纯 React 或 Flux 应用程序中，建议将状态存储在尽可能少的对象中。在 Redux 中，这是一条规则。当你听到必须将状态保存在一个地方时，这看起来可能是一个不合理的要求，特别是当你拥有不同类型的数据时。让我们考虑如何在一个具有许多不同类型数据的 App 中实现这一点，并将来看一个状态分布在不同组件中的社交媒体 App。该 App 本身拥有用户状态。所有所有的消息都存储在下方的状态中，每条消息都有自己的状态，而所有帖子都保存在 posts 组件下。
@@ -6013,9 +6189,10 @@ HTML DOM 允许 JavaScript 修改 HTML 元素的样式。
 ### 更改 HTML 样式
 
 要修改或更改 HTML 元素的样式，使用此语法：
+
 `document.getElementById(id).style.property = new style`
 
-随后的示例更改了 <p> 元素的样式：
+随后的示例更改了 `<p>` 元素的样式：
 
 示例：
 
@@ -6033,6 +6210,7 @@ HTML DOM 允许 JavaScript 修改 HTML 元素的样式。
 ### 使用事件
 
 HTML DOM 允许你在事件发生时执行代码。事件是浏览器在事情发生时创建的：
+
 - 元素被点击
 - 页面已加载
 - 输入字段被更改
@@ -6096,6 +6274,7 @@ HTML 示例：
 数据验证是确认输入是清洁、正确且有效的过程。
 
 典型的验证任务包括：
+
 - 用户是否填写了所有强制字段？
 - 用户是否填写了有效日期？
 - 用户是否在数字字段中填写了文本？
@@ -6111,6 +6290,7 @@ Web 浏览器在输入发送到服务器之前执行客户端验证。
 HTML5 引入了一种新的 HTML 验证方法，称为约束验证（constraint validation）。
 
 HTML 约束验证基于：
+
 - 约束验证 HTML 输入特性
 - 约束验证 CSS 伪类
 - 约束验证 DOM 属性和方法
@@ -6127,10 +6307,6 @@ HTML 约束验证基于：
 | type | 指定输入元素的类型。 |
 
 完整列表，请参阅 HTML 输入属性。
-
-
-
-
 
 表单 215
 
@@ -6166,13 +6342,14 @@ HTML 约束验证基于：
 所有的动画都应该相对于一个容器元素进行。
 
 示例：
+
 ```html
 <div id="container">
   <div id="animate">我的动画将从这里开始</div>
 </div>
 ```
 
-216 精通 React
+## 216 精通 React
 
 ### 为元素设置样式
 
@@ -6181,6 +6358,7 @@ HTML 约束验证基于：
 动画元素应该通过 `style = “position: absolute;”` 来构建。
 
 示例：
+
 ```css
 #container {
   width: 400px;
@@ -6218,6 +6396,7 @@ function frame() {
 ### 使用 JavaScript 创建完整动画
 
 示例：
+
 ```javascript
 function myMove() {
   let id = null;
@@ -6238,11 +6417,12 @@ function myMove() {
 }
 ```
 
-217 表单
+## 217 表单
 
 当事件发生时可以执行 JavaScript，例如用户点击 HTML 元素时。为了在用户点击元素时执行代码，请在 HTML 事件属性中添加 JavaScript 代码：`onclick=JavaScript`
 
 HTML 事件示例：
+
 - 当用户点击鼠标时
 - 当网页加载完成时
 - 当图像加载完成后
@@ -6254,6 +6434,7 @@ HTML 事件示例：
 在下面的示例中，当用户点击 `<h1>` 元素时，该元素的内容会改变：
 
 示例：
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -6266,6 +6447,7 @@ HTML 事件示例：
 在下面的示例中，从事件处理程序中调用了一个函数：
 
 示例：
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -6284,7 +6466,7 @@ HTML 事件示例：
 
 React 中的表单验证允许在用户未按照预期输入类型正确填写表单时，显示错误或 Bug 消息。在 React 中有许多方法可以验证表单；但本节将侧重于创建一个带有验证规则的验证函数。以下代码假设用户熟悉制作 React 表单所需的技巧和元素。验证规则用于 `handleChange` 函数中，该函数处理用户输入。React 函数组件是一个接收 props 并返回 React 元素的简单函数。在引入 Hooks 之后，编写函数组件已成为现代应用中编写 React 组件的标准方式。
 
-219 表单
+## 219 表单
 
 ### 为元素设置样式
 
@@ -6292,6 +6474,7 @@ React 中的表单验证允许在用户未按照预期输入类型正确填写�
 - 动画元素应该设计为 `style = “position: absolute;”`。
 
 示例：
+
 ```css
 #container {
   width: 400px;
@@ -6327,6 +6510,7 @@ function frame() {
 ### 设计完整动画
 
 示例：
+
 ```javascript
 function myMove() {
   let id = null;
@@ -6347,12 +6531,14 @@ function myMove() {
 }
 ```
 
-220 精通 React
+## 220 精通 React
 
 ### addEventListener() 过程
 
 示例：
+
 添加当用户点击按钮时触发的事件监听器：
+
 ```javascript
 document.getElementById("myBtn").addEventListener("click", displayDate);
 ```
@@ -6374,6 +6560,7 @@ document.getElementById("myBtn").addEventListener("click", displayDate);
 ### 向元素添加事件处理器
 
 示例：当用户点击元素时，弹出“Hello_World!”：
+
 ```javascript
 element.addEventListener("click", function(){
   alert("Hello_World!");
@@ -6383,15 +6570,17 @@ element.addEventListener("click", function(){
 你也可以引用外部的“命名”函数：
 
 示例：当用户点击元素时，弹出“Hello_World!”：
+
 ```javascript
 element.addEventListener("click", displayDate);
 ```
 
-221 表单
+## 221 表单
 
 ## DOM 节点
 
 根据 W3C DOM 标准，HTML 文中的一切都是节点：
+
 - 整个文档是文档节点
 - 每个 HTML 元素都是元素节点
 - HTML 元素内部文本是文本节点
@@ -6406,7 +6595,7 @@ element.addEventListener("click", displayDate);
 
 节点树中的节点以层次方式连接。父节点、子节点和兄弟节点术语用于定义这些关系。
 
-222 精通 React
+## 222 精通 React
 
 在节点树中，顶部节点被称为根节点（或 root node）。每个节点都只有一个父节点（根节点除外）。节点可以有多个子节点。兄弟节点（兄弟或姐妹）是具有相同父节点的节点。
 
@@ -6425,12 +6614,15 @@ element.addEventListener("click", displayDate);
 ### 节点树
 
 从上面的 HTML 可以：
+
 - `<html>` 是根节点
 - `<html>` 没有父节点
 - `<html>` 是 `<head>` 和 `<body>` 的父节点
 - `<head>` 是 `<html>` 的第一个子节点
 - `<body>` 是 `<html>` 的最后一个子节点
+
 并且：
+
 - `<head>` 有一个子节点：`<title>`
 - `<title>` 有一个子节点（文本节点）："DOM Tutorials"
 - `<body>` 有两个子节点：`<h1>` 和 `<p>`
@@ -6440,17 +6632,15 @@ element.addEventListener("click", displayDate);
 ### 在节点间导航
 
 你可以使用以下节点属性通过 JavaScript 在节点间进行导航：
+
 - `parentNode`
 - `childNodes[nodenumber]`
 - `firstChild`
+- `lastChild`
+- `nextSibling`
+- `previousSibling`
 
-
-
-lastChild
-nextSibling
-previousSibling
-
-子节点与节点值
+### 子节点与节点值
 
 DOM 处理中一个常见的错误是期望元素节点包含文本。
 
@@ -6585,6 +6775,7 @@ myTitle = document.getElementById("demo").childNodes[0].nodeValue;
   document.getElementById("id02").innerHTML = document.getElementById("id01").nodeName;
 </script>
 ```
+
 *注意*：`nodeName` 始终持有元素的大写标签名。
 
 ## nodeValue 属性
@@ -6633,6 +6824,7 @@ element.addEventListener("mouseout", myThirdFunction);
 `addEventListener()` 函数允许你向任何 HTML DOM 对象添加事件监听器，例如 document、HTML 元素、window 对象或其他支持事件的对象（如 XMLHttpRequest 对象）。
 
 示例：
+
 当用户调整窗口大小时，添加一个触发的事件监听器：
 
 ```javascript
@@ -6648,6 +6840,7 @@ window.addEventListener("resize", function(){
 ```javascript
 element.addEventListener("click", function(){
   myFunction(p1, p2);
+});
 ```
 
 ## 冒泡还是捕获？
@@ -6675,9 +6868,6 @@ document.getElementById("myDiv").addEventListener("click", myFunction, true);
 ```javascript
 element.removeEventListener("mousemove", myFunction);
 ```
-
-
-
 
 ## 掌握 React
 
@@ -6825,11 +7015,8 @@ function validate(frm) {
     return flag;
 }
 ```
+
 *(注：由于原文后续部分的 JavaScript 逻辑描述较为混乱且存在重复，翻译时已根据语境进行了结构梳理，以确保逻辑通顺)*
-
-
-
-
 
 表 237
 
@@ -6843,7 +7030,7 @@ function validate(frm) {
     <input type="submit" value="Check Voting eligibility">
     <input type="reset" value="Cancel">
 </form>
-</div
+</div>
 ```
 
 上述 validation.js 存在一个问题：在显示错误或故障消息后，如果我们传递了正确的值，它仍然显示之前的错误或故障消息。但在输入正确内容后，不应显示错误或故障消息。
@@ -6864,6 +7051,7 @@ document.getElementById("ageErr").innerHTML = "";
 可以通过浏览器设置阻止 JavaScript 代码等等。如果浏览器中禁用了 JavaScript，用户就可以发送错误的输入。由于表单验证逻辑没有在服务端编写，因此客户端表单逻辑将失效。
 
 可视化显示如何在浏览器中阻止 JavaScript 代码：
+
 - 在 Chrome 浏览器中：前往设置 -> 隐私和安全 -> 设置 -> JavaScript -> 阻止
 - 在 Firefox 中：在地址栏输入“about:config” -> 点击“接受风险并继续” -> 在搜索框输入“JavaScript” -> 双击“javascript.enabled”在“true”和“false”之间切换
 
@@ -6882,8 +7070,8 @@ document.getElementById("ageErr").innerHTML = "";
     <div style='text-align: center'>
         <h1 style='color: blue'>印度选举委员会</h1>
         <form action="checkvoter" method="post" onsubmit="return validate(this)">
-            Name: <input type="text" name="pname"><span style="color: red" id="pnameErr"></</span><br><br>
-            Age: <input type="password" name="page"><span style="color: red" id="pageErr"></</span><br><br>
+            Name: <input type="text" name="pname"><span style="color: red" id="pnameErr"></span><br><br>
+            Age: <input type="password" name="page"><span style="color: red" id="pageErr"></span><br><br>
             <input type="submit" value="Check Voting eligibility">
             <input type="reset" value="Cancel">
         </form>
@@ -6907,6 +7095,7 @@ document.getElementById("ageErr").innerHTML = "";
 编写客户端和服务端的表单验证，但仅当客户端验证未完成时启用服务端验证。客户端（浏览器）向服务器发送一个标记，表示客户端表单验证是否完成。为了这一目的，我们应该在 HTML 表单中使用隐藏字段。通过隐藏字段的支持，表单页面可以随请求向服务器或 servlet 发送客户端验证是否实现。
 
 在 HTML 文件的 `<form>` 标签内部：
+
 ```html
 <form>
     <!-- 隐藏字段 -->
@@ -6915,6 +7104,7 @@ document.getElementById("ageErr").innerHTML = "";
 ```
 
 在 JavaScript 文件的函数内部：
+
 ```javascript
 function validate(frm) {
     // 将 vflag 值设置为 "yes"，表示
@@ -6925,6 +7115,7 @@ function validate(frm) {
 ```
 
 在 Servlet 组件或模块中，读取该数据并检查标记的值：
+
 ```java
 String vstatus = null;
 // 获取客户端验证状态
@@ -6984,25 +7175,17 @@ function matchpass(){
     if(firstpassword==secondpassword){
         return true;
     }
+    else{
+        alert("password must be the same!");
+        return false;
+    }
 }
 </script>
 ```
 
-
-
-
-
 ## 掌握 React
 
-```javascript
-}
-else{
-    alert("password must be the same!");
-    return false;
-}
-}
-</script>
-
+```html
 <form name="f1" action="register.jsp" onsubmit="return matchpass()">
     密码:<input type="password" name="password"/><br/>
     再次输入密码:<input type="password" name="password2"/><br/>
@@ -7027,12 +7210,14 @@ function validate(){
     }
 }
 ```
+
 ```html
 <form name="myform" onsubmit="return validate()" >
     数字: <input type="text" name="num"><span id="numloc"></span><br/>
     <input type="submit" value="submit">
 </form>
 ```
+
 *立即测试*
 
 带图片的 JavaScript 验证
@@ -7060,16 +7245,17 @@ function validate(){
     return status;
 }
 ```
+
 ```html
 <form name="f1" action="#" onsubmit="return validate()">
     <table>
         <tr>
             <td>输入姓名:</td>
-            <td><input type="text" name="name"/><span id="nameloc"></</span></td>
+            <td><input type="text" name="name"/><span id="nameloc"></span></td>
         </tr>
         <tr>
             <td>输入密码:</td>
-            <td><input type="password" name="password"/><span id="passwordloc"></</span></td>
+            <td><input type="password" name="password"/><span id="passwordloc"></span></td>
         </tr>
         <tr>
             <td colspan="2"><input type="submit" value="注册"/></td>
@@ -7094,131 +7280,94 @@ function validate(){
 
 - *鸡翅的5大健康益处。(2022年7月7日)。TheSite.Org. https://www.thesite.org/health-benefits-of-chicken-wings/
 - *20道 JavaScript 面试题 - 第2部分 | 理论与实践*。(2019年3月15日)。Soshace. https://soshace.com/30-javascript-interview-questions-part-2/
-- Abiodun, A. D. (2020年6月24日). *使用 Jest 测试 React 应用程序的实用指南》。Smashing Magazine. https://www.smashingmagazine.com/2020/06/practical-guide-testing-react-applications-jest/
-- Atto, E. (2020年4月20日). *理解 React 路由的基础知识》。Medium. https://medium.com/the-andela-way/understanding-the-fundamentals-of-routing-in-react-b29f806b157e
+- Abiodun, A. D. (2020年6月24日). *使用 Jest 测试 React 应用程序的实用指南。* Smashing Magazine. https://www.smashingmagazine.com/2020/06/practical-guide-testing-react-applications-jest/
+- Atto, E. (2020年4月20日). *理解 React 路由的基础知识。* Medium. https://medium.com/the-andela-way/understanding-the-fundamentals-of-routing-in-react-b29f806b157e
 - Borges, R. (n.d.). *(JAVASCRIPT) - 使用 React 和 Redux 学习 React 功能 Web 开发 - Algoritmo e Programação - 38*。Passei Direto. 2022年7月11日，https://www.passeidireto.com/arquivo/107550538/javascript-learning-react-functional-web-development-with-react-and-redux/38
-- Catal, M. (2019年10月13日). *如何在 React 中设置加载组件》。Medium. https://atcatal.medium.com/lazy-loading-in-react-a43ea2bdd
+- Catal, M. (2019年10月13日). *如何在 React 中设置加载组件。* Medium. https://atcatal.medium.com/lazy-loading-in-react-a43ea2bdd
 - *使用 Redux 进行复杂状态管理 - Pro React - PDF 下载*。(n.d.)。Docobook.Com. 2022年7月11日，检索自https://docebook.com/complex-state-management-with-redux-pro-react.html
 - *条件渲染*。(n.d.)。React。2022年7月11日，检索自https://reactjs.org/docs/conditional-rendering.html
 - *React 中的 Context api*。(n.d.)。2022年7月11日，检索自https://www.tutorialpoint.com/context-api-in-react
-- Dashora, S. (2022年3月24日). *如何将类组件与 React》。ProgressiveWebNinja. https://progressiveninja.com/how-to-use-react-with-class-components/
+- Dashora, S. (2022年3月24日). *如何将类组件与 React。* ProgressiveWebNinja. https://progressiveninja.com/how-to-use-react-with-class-components/
 - *分层录入*。(n.d.)。2022年7月11日，检索自https://usermanuals.com/
 - *事件冒泡与捕获* (n.d.)。2022年7月11日，检索自https://www.tutorialpoint.com/context-api-in-react
-
-
-
-
 
 ## 参考文献 247
 
 - Laichenkov, Y. (2022, 4月11). *使用 Playwright & Odottaa 进行 API 测试*. Medium. https://elaichenkov.medium.com/api-testing-with-playwright-odottaa-77451917342f
-
 - *React 中的懒加载*. (n.d.). LoginRadius Blog. 检索于2022年7月11日，来自 https://www.loginradius.com/blog/engineering/lazy-loading-in-react/
-
 - *学习 React: 使用 React 和 Redux 进行功能性 Web 开发[第一版.] *1491954620, 9781491954621 - DOKUMEN.PUB*. (n.d.). Dokumen.Pub. 检索于2022年7月11日，来自 https://dokumen.pub/learning-react-functional-web-development-with-react-and-redux-1ed-1491954620-9781491954621.html
-
 - Maurya, P. (2019, 12月14日). *如何在 ReactJS 中导入或使用图像*. https://www.tutorialswebsite.com/how-to-import-or-use-images-in-reactjs/
-
 - *MFC*. (n.d.). 入门. 检索于2022年7月11日，来自 https://www.tutorialpoint.com/mfc/mfc_getting_started.htm
-
 - Myntra PPMP. (n.d.). Vinculum Knowledge Central. 检索于2022年7月11日，来自 https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000198514-myntra-ppmp
-
 - *Swift 中 UserDefaults 的威力*. (2019, 3月3日). Swift by Sundell. https://www.swiftbysundell.com/articles/the-power-of-userdefaults-in-swift/
-
 - *程序化导航 – Navi*. (n.d.). Frontend Armory. 检索于2022年7月11日，来自 https://frontarm.com/navi/en/guides/programmatic-navigation/
-
 - *使用 React Router 进行程序化导航*. (2021, 1月12日). Telerik Blogs. https://www.telerik.com/blogs/programmatically-navigate-with-react-router
-
 - *React 书 - 路由和查询参数*. (n.d.). 检索于2022年7月11日，来自 https://softchris.github.io/books/react/router-parameters/
-
 - *React 表单验证*. (n.d.). Educative: 软件开发人员交互式课程. 检索于2022年7月11日，来自 https://www.educative.io/answers/react-form-validation
 
-- *React Render Props* 解释*_culiu9261*的博客*-CSDN*博客. (2001, 6月11日). https://blog.csdn.net/culiu9261/article/details/107539020
 
+
+# 参考文献
+
+- *React Render Props* 解释 *culiu9261* 的博客 *-CSDN* 博客. (2001, 6月11日). https://blog.csdn.net/culiu9261/article/details/107539020
 - *React Router*. (n.d.). javatpoint. 检索于2022年7月11日，来自 https://www.javatpoint.com/react-router
-
 - *React Testing Library – 带 JavaScript 代码示例的教程*. (2021, 3月7日). freeCodeCamp.Org. https://www.freecodecamp.org/news/react-testing-library-tutorial-javascript-example-code/
-
 - *React.Component*. (n.d.). React. 检索于2022年7月11日，来自 https://reactjs.org/docs/react-component.html
-
 - *React.js Render Props*. (2021, 3月15日). GeeksforGeeks. https://www.geeksforeks.org/react-js-render-props/
-
 - React Enlightenment. (2020, 3月28日). *8.2 处理组件状态*. https://www.mianshigee.com/tutorial/ReactEnlightenment/react-state-8.2.md
-
 - ReactEnlightenment.com. (n.d.). *3.1 使用 react.js & react-dom.js*. React Enlightenment [草稿]. 检索于2022年7月11日，来自 https://reactenlightenment.com/react-basic-setup/3.1.html
-
 - ReactEnlightenment.com. (n.d.). *3.2 通过 Babel 使用 JSX*. React Enlightenment [草稿]. 检索于2022年7月11日，来自 https://reactenlightenment.com/react-basic-setup/3.2.html
-
 - ReactEnlightenment.com. (n.d.). *7.1 什么是组件属性?* Enlightenment. 检索于2022年7月11日，来自 https://www.reactenlightenment.com/react-props/7.1.html
-
 - ReactEnlightenment.com. (n.d.). *8.2 处理组件状态*. Enlightenment. 检索于2022年7月11日，来自 https://www.reactenlightenment.com/react-state/8.2.html
-
 - ReactEnlightenment.com. (n.d.). *8.3 状态与属性的区别*. React Enlightenment [草稿]. 检索于2022年7月11日，来自 https://reactenlightenment.com/react-state/8.3.html
-
 - *reactjs - 为什么是懒加载？* (2019, 11月5日). Stack Overflow. https://stackoverflow.com/questions/5871241/why-is-lazy-loading-the-default
-
 - redux-saga. (n.d.). *redux-saga/BeginnerTutorial.md* @ GitHub. 检索于2022年7月11日，来自 https://github.com/redux-saga/blob/master/docs/BeginnerTutorial.md
-
 - *Render Props*. (n.d.). React. 检索于2022年7月11日，来自 https://reactjs.org/docs/props.
-
 - risalat. (2020, 8月3日). *如何清除水箱中的藻类：完整指南*. Reef Craze. https://reefcraze.com/algae-in-a-reef-tank/
-
 - roc. (n.d.). *Extracting Components Visletolist Addtodo*. 检索于2022年7月11日，来自 https://roclv.gitbooks.io/redux-getting-started/content/23.extracting-components-visletolist-addtodo
-
 - S.M., it1921458 B (2021, 5月31日). *React js.* Medium. https://mediumulner.com/react-js-5c642083 (注：此处链接似乎有乱码)
-
 - Saraf, P. (2020, 10月12日). *React Context API。大家好！今天我们要……*. Medium. https://medium.com/cleverprogrammer/the-react-context-api-36da59aa
-
 - Sharma, V., & View Complete. (2019, 6月28日). *Microsoft Dynamics AX*. Posting Profiles. https://dynamicsaxsharma.blogspot.com/2019/06/posting-profiles.html
-
 - Singh, M. (2021, 6月15日). *恰迪加尔前五 React JS 机构*. Training Mohali. https://traininginmohali.com/chandigarh/top-5-react-js-training-institutes-in-chandigarh
-
 - Sketch Me! (2021, 3月19日). App Store. https://apps.apple.com/gb/app/sketch-me/id36436578
-
 - softchris. (n.d.). *react-book/lazy-loading.md* @ master - softchris/react-book. 检索于2022年7月11日，来自 https://github.com/softchris/react-book/blob/master/4-routing/lazy-loading.md
-
 - *开始使用 Context API*. (2021, 8月11日). DEV Community. https://dev.to/pankajkumar/start-working-with-react-context-api-38h
-
 - *在 React 中样式化组件*. (2020, 5月14日). Smashing Magazine. https://www.smashingmagazine.com/2020/05/styling-components-react/
-
 - *掌握 React 配置*. (2016, 5月25日). Telerik Blogs. https://www.telerik.com/blogs/taming-react-setup
-
 - *现在是学习农业的最佳机*. (2022, 6月20日). 悉尼大学. https://www.sydney.edu.au/science/news-and-events/2022/06/20/there-s-never-been-a-better-time-to-study-agriculture.html
-
 - *65 道 React 面试题 – 带 JavaScript 代码示例的教程*. (2021, 3月7日). freeCodeCamp.Org. https://www.freecodecamp.org/news/react-testing-library-tutorial-javascript-example-code/
-
 - *处理组件状态*. (见 React Enlightenment.com/react-state-8.2.md
 
-## 参考文献 248
+# 索引
 
-## 索引 251
+## A
 
-### A
-- 动作载荷 (Action payload), 211
+- 动作载荷 (`Action payload`), 211
 - 自动数据, 213
 - 更改样式, 212
 - 动画代码, 216, 219
 - 向元素添加事件处理器, 221
 - 语法, 220–221
-- 应用程序接口 (API), 3, 11
+- 应用程序接口 (`API`), 3, 11
 - 方法, 37–38
-- class.contexttype, 133–134
+- `class.contexttype`, 133–134
 - 组件, 50
 - context API (*见* Context API)
-- context.displayname, 134
-- context.provider, 132
+- `context.displayname`, 134
+- `context.provider`, 132
 - 创建语法, 132
 - 其他 API, 61–63
 - React context, 125–126
 
-### B
-- Babel, 28, 31–34
+## B
+
+- `Babel`, 28, 31–34
 - 在浏览器中转换, 29–30
 - 使用 JSX, 30
 - 测试块, 153–154
 - 布尔值/null, 50
-- BrowserRouter, 88–90
-- 构建/设计应用，提供者模式 AppProvider, 129–130
+- `BrowserRouter`, 88–90
+- 构建/设计应用，提供者模式 `AppProvider`, 129–130
 - 内容, 131–132
 - 文档树, 128–129
 - 解释应用程序的各个, 128
@@ -7226,6 +7375,7 @@ function validate(){
 - 主题容器, 131
 
 ### Hooks
+
 - 构建自己的（自定义）, 137–138
 - 声明多个状态变量, 136
 - 效应 hook, 136–137
@@ -7233,34 +7383,29 @@ function validate(){
 - 规则, 137
 - 状态 hook, 135–136
 
+## C
 
-
-
-
-**252** 索引
-
-C
-- 行动号召 (CTA) 区域，75–76
+- 行动号召 (`CTA`) 区域，75–76
 - 注意事项，145–147
-- 子元素属性 (Children prop), 92
+- 子元素属性 (`Children prop`), 92
 - 类属性
-  - defaultProps，63–64
-- ColorList 组件，174–175
-- componentDidCatch(), 57–59
-- componentDidMount(), 52–53
-- 组件属性 (Component prop), 38–40, 91
+  - `defaultProps`，63–64
+- `ColorList` 组件，174–175
+- `componentDidCatch()`, 57–59
+- `componentDidMount()`, 52–53
+- 组件属性 (`Component prop`), 38–40, 91
   - 备注，41
   - 发送，40–41
-- 组件状态 (Component state),41
+- 组件状态 (`Component state`), 41
 - 创建无状态函数
   - 组件，44–45
-  - 属性 (props),44
+  - 属性 (`props`), 44
   - React 组成部分状态，42
-  - 状态 (state),44
-  - state *与*  props 的共同点，43
+  - 状态 (`state`), 44
+  - state *与* props 的共同点，43
   - 工作，42–43
 - 组件测试，151–152
-- 内容 (Content),131–132
+- 内容 (`Content`), 131–132
 - 内容区域样式，74–75
 - Context API，125
   - 构建/设计应用，provider 模式，128–132
@@ -7269,37 +7414,39 @@ C
   - React, context API，125–126
   - 工作原理，126
   - 将取代 Redux，126
-- 创建 React 项目 (CRA)，165–166
+- 创建 React 项目 (`CRA`)，165–166
 - 创建组件，70–71
 - 交叉关注问题，使用 render props，139–145
 - CSS 和 SCSS 样式，82
 - CSS modules，82
 
-D
-- Describe 方法，154
-- displayName 字符串，64
-- 文档对象模型 (DOM)，3, 5
-  - 节点 (nodes),221
+## D
+
+- `Describe` 方法，154
+- `displayName` 字符串，64
+- 文档对象模型 (`DOM`)，3, 5
+  - 节点 (`nodes`), 221
   - 根节点，224–225
   - 在 window 对象上添加事件处理器，227
   - 在同一元素上添加多个事件处理器，226–227
-  - nodeName 属性，225–226
-  - nodeType 属性，226
-  - nodeValue 的属性，226
+  - `nodeName` 属性，225–226
+  - `nodeType` 属性，226
+  - `nodeValue` 的属性，226
   - 更新，5
   - 虚拟 DOM，5
 - DOM HTML 树，221
 
-E
+## E
+
 - 更容易管理 CSS，69
 - Effect hook，136–137
-- 元素变量 (Element variables),66–67
+- 元素变量 (`Element variables`), 66–67
   - 消除类名错误，68
-- Enzyme，152–153
-- 错误边界 (Error boundaries)
+- `Enzyme`, 152–153
+- 错误边界 (`Error boundaries`)
   - commit 阶段，58–59
-  - componentDidCatch(),58–59
-  - getDerivedStateFromError(),57
+  - `componentDidCatch()`, 58–59
+  - `getDerivedStateFromError()`, 57
   - 参数，58
   - render 阶段，58
 - 与 React 使用 ES6 和 ES，31–34
@@ -7313,11 +7460,12 @@ E
   - 示例，208
 - 现有组成部分确认
   - 选项，36–37
-- Expect 方法，154
+- `Expect` 方法，154
 
-F
-- forceUpdate(),63
-- 表单 (Forms)，201–202；*另见* DOM 根节点
+## F
+
+- `forceUpdate()`, 63
+- 表单 (`Forms`)，201–202；*另见* DOM 根节点
   - 动作，210–211
   - payload 数据，211–213
 - 动画代码
@@ -7334,20 +7482,22 @@ F
   - 登录表单，202–203
   - 注册表单，203–205
   - 提交表单，202
-  - 样式元素，216,218–219
+  - 样式元素，216, 218–219
   - 验证，218
   - 验证逻辑 (*见* 表单的 验证逻辑)
 
-G
-- getByText() 方法，168–169
-- getDerivedStateFromProps，54–55
-- getSnapshotBeforeUpdate(),55
-- Greeting 组件，65
+## G
 
-H
+- `getByText()` 方法，168–169
+- `getDerivedStateFromProps`, 54–55
+- `getSnapshotBeforeUpdate()`, 55
+- `Greeting` 组件，65
+
+## H
+
 - 处理图片
   - 如何使用，85
-  - App.js，85
+  - `App.js`, 85
   - 代码，86
   - 导入图片，83
   - 在 SRC 文件夹内，85
@@ -7355,10 +7505,10 @@ H
   - 注意，84
   - 摘要，86
   - 使用 public 文件夹，84
-- App.js，85
-- index.html，84–85
-- HashRouter，88–89
-- Header.js，70
+- `App.js`, 85
+- `index.html`, 84–85
+- `HashRouter`, 88–89
+- `Header.js`, 70
 - Hooks
   - 构建自己的 (自定义)，137–138
   - 声明多个变量，136
@@ -7366,322 +7516,325 @@ H
   - 概述，134–135
   - 规则，137
   - state hook，135–136
-  - HTML5
-    - 表单验证，232
-    - 客户端，Java Web 应用，232–233
-    - 客户端，匹配页面，JavaScript，233
-    - JavaScript 示例，241
-    - 使用 getElementById 表单验证，137–139
-  - history API，90
-- Hyperlinked 和 Babel，17–18
+- HTML5
+  - 表单验证，232
+  - 客户端，Java Web 应用，232–233
+  - 客户端，匹配页面，JavaScript，233
+  - JavaScript 示例，241
+  - 使用 `getElementById` 表单验证，137–139
+- history API, 90
+- Hyperlinked 和 Babel, 17–18
 
-I
-- 增量同步 (Incremental sync)，194
-- 增量 Saga，194–200
-- 指示 UI (Indicative UI)，6–7
-- 使用 Inline && 运算符，67–68
-- InnerHTML，224
-- 实例属性，64
-- 状态 (state)，64
-- isExact，94
-- 迭代 *对比* 真实环境，150
+## I
 
-J
-- JavaScript (JS)，205；*另见* JavaScript (JSX)
-  - 代码，149
-  - 代码解释，206
-  - 示例，205–206
-  - 事件冒泡，205
-  - 事件捕获，208
-  - 代码解释，208–209
-  - 示例，208
-  - 状态 (state)，209–210
-- JavaScript (JSX)，6
-  - 特性，18–19
-  - 创建 React 节点，19–21
-  - 描述，15–18
-  - *对比* HTML，24–25
-  - className，25
-  - 事件监听器，25
-  - 安装/设置，26
-  - 自闭合标签，25
-  - HTML 页面，26–28
-  - for 循环，23–24
-  - React 中，19
-  - 渲染 JSX 到 DOM，21–22
-  - 备注，22
-  - 使用 JavaScript 表达式，22–23
-  - 在浏览器中转换，29–30
-  - 使用 JSX，30
-- Java web 应用.HTML5，232
-- Jest，153
-  - 运行代码，155
-  - 跳过/隔离测试，155–156
-  - Mock 函数，156
-  - 运行测试的过程，153–154
-  - 快照测试，157–160
-  - 测试 React 组件，157–158
-- JSFiddle，20,34
-- JSS，82
+- 增量同步 (`Incremental sync`), 194
+- 增量 Saga, 194–200
+- 指示 UI (`Indicative UI`), 6–7
+- 使用 Inline `&&` 运算符, 67–68
+- `InnerHTML`, 224
+- 实例属性, 64
+- 状态 (`state`), 64
+- `isExact`, 94
+- 迭代 *对比* 真实环境, 150
 
-L
-- Landing.js，70
-- 语言，130–131
-- 后进先 (LIFO)，108
-- 懒加载 (Lazy loading)，112–113
-  - 优势，113–114
-  - 缺点，114
-  - 重要性，113
-  - 安装 React 组件，114
-  - 准备工作，119–121
-  - React-loadable，116–118
-  - React-loadable-visibility，118–119
-  - 不使用 React suspense，121–123
-- 旧版生命周期方法，59–61
-- 生命周期周期方法 (Lifecycle methods)，53–56
-- Link，93–94
-- 登录表单，202–203
-- 退出和登录按钮，66–67
+## J
 
-M
-- Mock，150,156
-- 模型视图控制器 (MVC)，2, 172
-- 基于模块的方式，7
-- Mount 方法，154
+- JavaScript (`JS`), 205；*另见* JavaScript (`JSX`)
+  - 代码, 149
+  - 代码解释, 206
+  - 示例, 205–206
+  - 事件冒泡, 205
+  - 事件捕获, 208
+  - 代码解释, 208–209
+  - 示例, 208
+  - 状态 (`state`), 209–210
+- JavaScript (`JSX`), 6
+  - 特性, 18–19
+  - 创建 React 节点, 19–21
+  - 描述, 15–18
+  - *对比* HTML, 24–25
+  - `className`, 25
+  - 事件监听器, 25
+  - 安装/设置, 26
+  - 自闭合标签, 25
+  - HTML 页面, 26–28
+  - for 循环, 23–24
+  - React 中, 19
+  - 渲染 JSX 到 DOM, 21–22
+  - 备注, 22
+  - 使用 JavaScript 表达式, 22–23
+  - 在浏览器中转换, 29–30
+  - 使用 JSX, 30
+- Java web 应用.HTML5, 232
+- `Jest`, 153
+  - 运行代码, 155
+  - 跳过/隔离测试, 155–156
+  - Mock 函数, 156
+  - 运行测试的过程, 153–154
+  - 快照测试, 157–160
+  - 测试 React 组件, 157–158
+- `JSFiddle`, 20, 34
+- `JSS`, 82
 
-N
-- 嵌套路由 (Nested routing)，94
-  - 类组件，95–97
-  - 组件，95
-  - 自定义路由，97–98
-  - 属性，94–95
-  - 保护路由，97
-Nock
-  - 添加 nock，161
-  - 创建 New React App (CRA)，166
-  - 默认 CRA 测试代码，166
-  - 渲染的元素调试，React Testing Libraries，167
-  - 查找元素的方法，167–168
-  - 描述，160–161
-  - 安装 React Testing Library 和 Jest，166
-  - 概述，165
-  - 测试用户设计的事件，React testing library，168–169
-  - 使用 React Testing Library，165
-  - 使用 nock，161–163
-  - 使用 nock back，163–165
-Nodes
-- DOM 根，224–225
-  - 在 window 对象上添加事件处理器，227
-  - 在同一元素上添加多个事件处理器，226–227
-  - nodeName 属性，225–226
-  - nodeType 属性，226
-  - nodeValue 的属性，226
-  - 节点间导航，222
-  - 根节点值，223–224
-  - 树关系，222
+## L
 
-O
-- 单向数据绑定 (1-Way Data Binding)，6
-- 其他 API，61–63
+- `Landing.js`, 70
+- 语言, 130–131
+- 后进先 (`LIFO`), 108
+- 懒加载 (`Lazy loading`), 112–113
+  - 优势, 113–114
+  - 缺点, 114
+  - 重要性, 113
+  - 安装 React 组件, 114
+  - 准备工作, 119–121
+  - `React-loadable`, 116–118
+  - `React-loadable-visibility`, 118–119
+  - 不使用 React suspense, 121–123
+- 旧版生命周期方法, 59–61
+- 生命周期周期方法 (`Lifecycle methods`), 53–56
+- `Link`, 93–94
+- 登录表单, 202–203
+- 退出和登录按钮, 66–67
 
-P
-- 参数 (Params)，94
-- 传递 (Passing)，227
-- 传送门 (Portals)，50
-- 防止组件渲染，80–81
-- 编程化导航，105
-- 路由 (route)，106
-- 使用 history hook，109–110
-- 使用 router 的，106–107
+## M
 
-R
+- Mock, 150, 156
+- 模型视图控制器 (`MVC`), 2, 172
+- 基于模块的方式, 7
+- `Mount` 方法, 154
+
+## N
+
+- 嵌套路由 (`Nested routing`), 94
+  - 类组件, 95–97
+  - 组件, 95
+  - 自定义路由, 97–98
+  - 属性, 94–95
+  - 保护路由, 97
+- Nock
+  - 添加 nock, 161
+  - 创建 New React App (`CRA`), 166
+  - 默认 CRA 测试代码, 166
+  - 渲染的元素调试，React Testing Libraries, 167
+  - 查找元素的方法, 167–168
+  - 描述, 160–161
+  - 安装 React Testing Library 和 Jest, 166
+  - 概述, 165
+  - 测试用户设计的事件，React testing library, 168–169
+  - 使用 React Testing Library, 165
+  - 使用 nock, 161–163
+  - 使用 nock back, 163–165
+- Nodes
+  - DOM 根, 224–225
+    - 在 window 对象上添加事件处理器, 227
+    - 在同一元素上添加多个事件处理器, 226–227
+    - `nodeName` 属性, 225–226
+    - `nodeType` 属性, 226
+    - `nodeValue` 的属性, 226
+    - 节点间导航, 222
+    - 根节点值, 223–224
+    - 树关系, 222
+
+## O
+
+- 单向数据绑定 (`1-Way Data Binding`), 6
+- 其他 API, 61–63
+
+## P
+
+- 参数 (`Params`), 94
+- 传递 (`Passing`), 227
+- 传送门 (`Portals`), 50
+- 防止组件渲染, 80–81
+- 编程化导航, 105
+- 路由 (`route`), 106
+- 使用 history hook, 109–110
+- 使用 router 的, 106–107
+
+## R
+
 - React；*另见* 个条目
-  - 优势，4–5
-  - 易于学习使用，11
-  - 性能，11–12
-  - 可复用组件，11
-  - 易手工具，12
-  - 测试代码，11–13
-  - 描述，1–2
-  - 缺点，13
-  - 发展，13
-  - 历史，13
-  - 框架，13–14
-  - 诞生，8
-  - 诞生，8
-  - Facebook 推出，8
-  - 2010，7
-  - 2011，7
-  - 2012，7
-  - 2013，8
-  - 2014，9
-  - 2015，9–10
-  - 2016，10
-  - 2017，10
-  - 实际示例，2–3
-- ReactJS，3–5, 171
-- React 组件，35–36, 47–48
-  - 组件属性，38–40
-  - 备注，40
-  - 创建 React 组件，36–38
-  - 备注，38
-  - 生命周期，48
-  - 数组和片段，50–53
-  - 挂载，49
-  - 卸载，49–50
-  - 更新，49
-  - 发送组件属性，40–41
-  - 备注，41
-- React 组成部分状态，42
-- React 构造函数的两个目的，51
-- React context API，125–126
-- 工作原理，126
-- ReactDOM.render(),22
-- ReactJS，3–5, 171
-- render props，138–139
-- 设置开发环境，26
-- UI 库，13–14
-- React 模块状态，43
-- React Native，6
-- React-router (核心库)，88
-- React-router-dom (Web 应用)，88
-- React-router 变体，88
-- React-router-native (Android 和 iOS 应用)，88
-- React Routers，71–73, 87–88
-  - 组件，88–89
-  - 子元素属性，92
-  - 历史，89–90
-  - 链接，93–94
-  - 属性，91
-  - 渲染属性，91–92
-
-
-
-
-
-**256** 索引
-
-- 路由器 (routers), 89
-- 路由 (routes), 90–91
-- 切换 (switch), 92–93
+  - 优势, 4–5
+  - 易于学习使用, 11
+  - 性能, 11–12
+  - 可复用组件, 11
+  - 易手工具, 12
+  - 测试代码, 11–13
+  - 描述, 1–2
+  - 缺点, 13
+  - 发展, 13
+  - 历史, 13
+  - 框架, 13–14
+  - 诞生, 8
+  - 诞生, 8
+  - Facebook 推出, 8
+  - 2010, 7
+  - 2011, 7
+  - 2012, 7
+  - 2013, 8
+  - 2014, 9
+  - 2015, 9–10
+  - 2016, 10
+  - 2017, 10
+  - 实际示例, 2–3
+- `ReactJS`, 3–5, 171
+- React 组件, 35–36, 47–48
+  - 组件属性, 38–40
+  - 备注, 40
+  - 创建 React 组件, 36–38
+  - 备注, 38
+  - 生命周期, 48
+  - 数组和片段, 50–53
+  - 挂载, 49
+  - 卸载, 49–50
+  - 更新, 49
+  - 发送组件属性, 40–41
+  - 备注, 41
+- React 组成部分状态, 42
+- React 构造函数的两个目的, 51
+- React context API, 125–126
+- 工作原理, 126
+- `ReactDOM.render()`, 22
+- `ReactJS`, 3–5, 171
+- render props, 138–139
+- 设置开发环境, 26
+- UI 库, 13–14
+- React 模块状态, 43
+- `React Native`, 6
+- `React-router` (核心库), 88
+- `React-router-dom` (Web 应用), 88
+- React-router 变体, 88
+- `React-router-native` (Android 和 iOS 应用), 88
+- React Routers, 71–73, 87–88
+  - 组件, 88–89
+  - 子元素属性, 92
+  - 历史, 89–90
+  - 链接, 93–94
+  - 属性, 91
+  - 渲染属性, 91–92
+- 路由器 (`routers`), 89
+- 路由 (`routes`), 90–91
+- 切换 (`switch`), 92–93
 - 安装, 88
 - 性, 88
 - 嵌套路由 (*参见* Nested routing)
 - 以及查询参数, 98
 - 处理路由和查询参数, 99–103
 - 获取查询字符串值, JavaScript
-- 使用 URLSearchParams 的 JS, 98
+- 使用 `URLSearchParams` 的 JS, 98
 - 从 URL 获取参数,
 - React 应用, 99
 - 传递参数, 99
 - React Testing Library, 150, 165–168
 - Redux
-    - action (actions), 177–178
-    - 命名规范, 178
-    - 负载数据 (payload data), 178–179
+  - action (`actions`), 177–178
+  - 命名规范, 178
+  - 负载数据 (`payload data`), 178–179
 - 添加到 React, 185
 - 显式传递 store, 185–187
 - 通过 context 传递 store, 187–191
 - 显式传递 store, 172–173
-- 默认导出 AddColorForm, 174–175
-- 默认导出 AddColorList, 175–176
-- 导出默认 App, 173–174
-- 还原器 (reducers), 179–180
-- 排序 reducer (sort reducer), 180–181
-- 规则 (rule), 210
-- Sagas, 侧效应 (side-effects), 191–192
-    - 进行异步调用, 192–193
-    - 解释时间, 194–200
-- 状态 (state), 176–177
+- 默认导出 `AddColorForm`, 174–175
+- 默认导出 `AddColorList`, 175–176
+- 导出默认 `App`, 173–174
+- 还原器 (`reducers`), 179–180
+- 排序 reducer (`sort reducer`), 180–181
+- 规则 (`rule`), 210
+- Sagas, 侧效应 (`side-effects`), 191–192
+  - 进行异步调用, 192–193
+  - 解释时间, 194–200
+- 状态 (`state`), 176–177
 - store, 181–183
 - 订阅, 183–185
 - Redux Saga 中间件, 194–197
 - 渲染组件树, 149
 - 渲染 props, 145
-- render() 方法, 51
+- `render()` 方法, 51
 - Render prop, 91–92
-- 可复现的样式 (Reproducible styles), 69
-- reset (), 202
-- rootSaga, 194–195
-- 路由器 (Routers), 89
-- 路由 (Routes), 90–91, 106
-    - 使用 history hook, 109–110
-    - 使用 history.push() 方法, 107–108
-    - 使用 redirect 组件, 106–107
-    - 使用 with router 方法, 108–109
+- 可复现的样式 (`Reproducible styles`), 69
+- `reset()`, 202
+- `rootSaga`, 194–195
+- 路由器 (`Routers`), 89
+- 路由 (`Routes`), 90–91, 106
+  - 使用 history hook, 109–110
+  - 使用 `history.push()` 方法, 107–108
+  - 使用 redirect 组件, 106–107
+  - 使用 with router 方法, 108–109
 - 路由组件, 主应用, 71–73
 - 运行完备应用, 149
 
-S
+## S
+
 - Sagas, 194
-- setState(), 51, 61–63
-- 浅拷贝方法 (Shallow method), 154
-- shouldComponentUpdate(), 54
-- 注册表单 (Signup form), 203–205
+- `setState()`, 51, 61–63
+- 浅拷贝方法 (`Shallow method`), 154
+- `shouldComponentUpdate()`, 54
+- 注册表单 (`Signup form`), 203–205
 - 简单且活泼的设计, 69
 - 简单的 JavaScript 错误信息, 235–236
-- 简单性 (Simplicity), Context API, 126
-- 快照测试 (Snapshot test), 152
+- 简单性 (`Simplicity`), Context API, 126
+- 快照测试 (`Snapshot test`), 152
 - 开发服务器, 70
-- 状态与生命周期指南 (State and Lifecycle Guide), 63
+- 状态与生命周期指南 (`State and Lifecycle Guide`), 63
 - State hook, 135–136
 - 字符串与数字, 50
 - Styled components, 68, 82
-    - 优势, 68–69
-    - 创建和样式化, 常见网页, 69
-    - 安装, 69
-    - 启动开发服务器, 70
+  - 优势, 68–69
+  - 创建和样式化, 常见网页, 69
+  - 安装, 69
+  - 启动开发服务器, 70
 - 样式; *参见* Styled components
-    - 背景图片, 75
-    - 行动号召 (CTA) 区域, 75–76
-    - React 中的组件, 81
-    - 容器 (container), 74–75
-    - 描述, 77
-    - React 应用的含义, 81–82
-    - 策略, 82
-    - 摘要 (synopsis), 78–80
-    - 样式化 LogoOne, 76
-    - 注册按钮, 76–77
-    - 样式化 LogoTwo, 77
-    - 样式化 nav 函数, 78
-    - 现在的样式, 73–74
-- submit (), 202
+  - 背景图片, 75
+  - 行动号召 (`CTA`) 区域, 75–76
+  - React 中的组件, 81
+  - 容器 (`container`), 74–75
+  - 描述, 77
+  - React 应用的含义, 81–82
+  - 策略, 82
+  - 摘要 (`synopsis`), 78–80
+  - 样式化 `LogoOne`, 76
+  - 注册按钮, 76–77
+  - 样式化 `LogoTwo`, 77
+  - 样式化 nav 函数, 78
+  - 现在的样式, 73–74
+- `submit()`, 202
 - 提交表单, 202
-- 切换 (Switch), 92–93
+- 切换 (`Switch`), 92–93
 
-**257** 索引
+## T
 
-T
 - 测试代码, 151
-    - 优势, 152
-    - 组件测试, 151–152
-    - 描述, 151
-    - 缺点, 152
-    - 快照测试, 152
-    - 理解为什么, 151
-    - 单元测试, 151
-- ThemeContainer, 131
-- 权衡 (Trade-offs)
-    - 迭代速度 *对比* 真实环境, 150
-    - 模拟 (mock), 150
-    - 推荐工具, 150
+  - 优势, 152
+  - 组件测试, 151–152
+  - 描述, 151
+  - 缺点, 152
+  - 快照测试, 152
+  - 理解为什么, 151
+  - 单元测试, 151
+- `ThemeContainer`, 131
+- 权衡 (`Trade-offs`)
+  - 迭代速度 *对比* 真实环境, 150
+  - 模拟 (`mock`), 150
+  - 推荐工具, 150
 
-U
+## U
+
 - 单元测试, 151
-- UNSAFE_componentWillMount(), 59
-- UNSAFE_componentWillReceiveProps(), 60
-- UNSAFE_componentWillUpdate(), 60
+- `UNSAFE_componentWillMount()`, 59
+- `UNSAFE_componentWillReceiveProps()`, 60
+- `UNSAFE_componentWillUpdate()`, 60
 - URL, 94, 98–99
-- 用户界面 (UIs), 47–48, 171
+- 用户界面 (`UIs`), 47–48, 171
 
-V
-- 表单验证逻辑 (Validation logic)
-    - 方案 1, 228
-    - 方案 4, 229–230
-    - 方案 3, 229
-    - 方案 2, 228–229
-    - 客户端和服务端验证,
-    - 仅在未进行客户端认证时在服务端验证, 239–241
+## V
+
+- 表单验证逻辑 (`Validation logic`)
+  - 方案 1, 228
+  - 方案 4, 229–230
+  - 方案 3, 229
+  - 方案 2, 228–229
+  - 客户端和服务端验证,
+  - 仅在未进行客户端认证时在服务端验证, 239–241
 - 代码解释, 244
 - JavaScript 表单验证示例, 241
 - JavaScript 重输密码认证, 241–242
@@ -7689,19 +7842,20 @@ V
 - 客户端表单验证, 232
 - 使用 HTML5 的表单验证, 232
 - 客户端, Java Web 应用的 HTML, 232–233
-- 客户端, 婚姻应用 input.html 页面, JavaScript, 233
+- 客户端, 婚姻应用 `input.html` 页面, JavaScript, 233
 - JavaScript 示例, 241
-- 使用 getElementId 的 JavaScript 验证, Java 应用, 237
-- 使用 getElementId 的 JavaScript 认证, Java 应用, 237–239
-- 简单的 JavaScript 代码 (validation.js), 233–237
+- 使用 `getElementId` 的 JavaScript 验证, Java 应用, 237
+- 使用 `getElementId` 的 JavaScript 认证, Java 应用, 237–239
+- 简单的 JavaScript 代码 (`validation.js`), 233–237
 - 服务端表单验证逻辑, 230–232
 - 来自客户端和服务端的验证逻辑, 239
-- 虚拟 DOM (Virtual DOM), 5–6
+- 虚拟 DOM (`Virtual DOM`), 5–6
 
-W
-- 使用 JSFiddle 编写 React, 34
+## W
 
-Y
-- Yield expression call(delay, 1000), 199–200
-- Yield expression delay(1000), 199–200
+- 使用 `JSFiddle` 编写 React, 34
 
+## Y
+
+- Yield expression `call(delay, 1000)`, 199–200
+- Yield expression `delay(1000)`, 199–200

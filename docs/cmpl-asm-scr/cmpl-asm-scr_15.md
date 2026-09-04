@@ -1,22 +1,23 @@
+
 # 第十三章：静态类型检查和推断
 
 > 原文：[`keleshev.com/compiling-to-assembly-from-scratch/13-static-type-checking-and-inference`](https://keleshev.com/compiling-to-assembly-from-scratch/13-static-type-checking-and-inference)
 
-从头开始编译汇编
+## 从头开始编译汇编
 
 by 弗拉基米尔·凯列舍夫
 
-在本章中，我们将为我们的语言实现一个带有 *局部类型推断* 的类型检查器。局部类型推断意味着局部变量不需要类型注解，因此你可以编写如下代码：
+在本章中，我们将为我们的语言实现一个带有*局部类型推断*的类型检查器。局部类型推断意味着局部变量不需要类型注解，因此你可以编写如下代码：
 
 ```js
 let a = [1, 2, 3];
 ```
 
-`a` 的类型将被推断为 `Array<number>`。
+`a`的类型将被推断为`Array<number>`。
 
-我们的类型检查器将涵盖 `number`、`boolean`、`void` 和 `Array<T>` 等类型，其中 `T` 可以是任何其他类型，例如 `Array<Array<boolean>>`。在类型检查函数调用时，我们还将处理函数类型，如 `(x: boolean, y: number) => number`。
+我们的类型检查器将涵盖`number`、`boolean`、`void`和`Array<T>`等类型，其中`T`可以是任何其他类型，例如`Array<Array<boolean>>`。在类型检查函数调用时，我们还将处理函数类型，如`(x: boolean, y: number) => number`。
 
-首先，我们需要引用不同的类型来操作它们。我们将以类似 AST 节点的方式表示它们，使用一个名为 `Type` 的接口，并为每种类型实现一个类。
+首先，我们需要引用不同的类型来操作它们。我们将以类似 AST 节点的方式表示它们，使用一个名为`Type`的接口，并为每种类型实现一个类。
 
 ```js
 interface Type {
@@ -25,107 +26,24 @@ interface Type {
 }
 ```
 
-我们将需要相等性和一个 `toString` 方法来能够显示类型错误。
+我们将需要相等性和一个`toString`方法来能够显示类型错误。
 
-类型构造函数签名摘要及示例
+## 类型构造函数签名摘要及示例
 
 | 类型构造函数签名 | 示例 |
 | --- | --- |
+| `BooleanType()` | `boolean` |
+| `NumberType()` | `number` |
+| `VoidType()` | `void` |
+| `ArrayType(element: Type)` | `Array<number>` |
+| `FunctionType(parameters: Map<string, Type>, returnType: Type)` | `(x: boolean, y: number) => number` |
 
+为这些数据类实现`toString`和`equals`是直接的。然而，`FunctionType`需要一些注释：
 
+- 首先，JavaScript 中的`Map`保留了元素的顺序，这对于在调用点匹配参数位置非常重要。
+- 当比较两个`FunctionType`的实例时，忽略参数名称是有意义的，因为`(x: boolean, y: number) => number`与`(p1: boolean, p2: number) => number`是相同的类型。
 
-```js
-BooleanType()
-```
-
-
-
-```js
-boolean
-```
-
-
-
-|  |  |
-| --- | --- |
-
-
-
-```js
-NumberType()
-```
-
-
-
-```js
-number
-```
-
-
-
-|  |  |
-| --- | --- |
-
-
-
-```js
-VoidType()
-```
-
-
-
-```js
-void
-```
-
-
-
-|  |  |
-| --- | --- |
-
-
-
-```js
-ArrayType(element: Type)
-```
-
-
-
-```js
-Array<number>
-```
-
-
-
-|  |  |
-| --- | --- |
-
-
-
-```js
-FunctionType(
-  parameters: Map<string, Type>,
-  returnType: Type,
-)
-```
-
-
-
-```js
-(x: boolean,
- y: number)
-  => number
-```
-
-
-
-为这些数据类实现 `toString` 和 `equals` 是直接的。然而，`FunctionType` 需要一些注释：
-
-+   首先，JavaScript 中的 `Map` 保留了元素的顺序，这对于在调用点匹配参数位置非常重要。
-
-+   当比较两个 `FunctionType` 的实例时，忽略参数名称是有意义的，因为 `(x: boolean, y: number) => number` 与 `(p1: boolean, p2: number) => number` 是相同的类型。
-
-我们的语言将改变以允许函数进行类型注解。我们首先将我们的 `Function` AST 节点更改为存储其签名作为 `FunctionType`，而不是仅参数名称：
+我们的语言将改变以允许函数进行类型注解。我们首先将我们的`Function` AST 节点更改为存储其签名作为`FunctionType`，而不是仅参数名称：
 
 ```js
 class Function implements AST {
@@ -139,14 +57,14 @@ class Function implements AST {
 }
 ```
 
-我们还需要更改我们的语法和解析器。在引入必要的标记后，我们可以为类型定义以下语法。
+我们还需要更改我们的语法和解析器。在引入必要的标记后，我们可以为类型定义以下语法：
 
 ```js
 arrayType <- ARRAY LESS_THAN type GREATER_THAN
 type <- VOID | BOOLEAN | NUMBER | arrayType
 ```
 
-`type` 规则是递归的，就像 `expression` 和 `statement` 一样。
+`type`规则是递归的，就像`expression`和`statement`一样。
 
 接下来，我们需要更改函数的语法和解析器，以包含可选的类型注解：
 
@@ -161,7 +79,7 @@ functionStatement <-
     blockStatement
 ```
 
-我们允许函数参数和函数返回类型具有可选的类型注解。为什么是可选的？一些语言可以推断参数和返回类型，但我们这样做是为了以后可以不修改地使用相同的解析器与动态类型一起使用。如果缺少类型注解，我们将其默认为 `number`，这也为我们与测试套件的向后兼容性提供了一些支持。
+我们允许函数参数和函数返回类型具有可选的类型注解。为什么是可选的？一些语言可以推断参数和返回类型，但我们这样做是为了以后可以不修改地使用相同的解析器与动态类型一起使用。如果缺少类型注解，我们将其默认为`number`，这也为我们与测试套件的向后兼容性提供了一些支持。
 
 现在，解析器将接受具有类型注解的函数，如下所示：
 
@@ -171,7 +89,7 @@ function pair(x: number, y: number): Array<number> {
 }
 ```
 
-对于此类函数，解析器将生成一个具有 `FunctionType` 签名的 `Function` 节点，如下所示：
+对于此类函数，解析器将生成一个具有`FunctionType`签名的`Function`节点，如下所示：
 
 ```js
 new Function(
@@ -188,7 +106,7 @@ new Function(
 )
 ```
 
-接下来，对于类型检查，我们将使用一个函数来断言两个类型相同，否则抛出异常以指示错误。我们称之为 `assertType`：
+接下来，对于类型检查，我们将使用一个函数来断言两个类型相同，否则抛出异常以指示错误。我们称之为`assertType`：
 
 ```js
 function assertType(expected: Type, got: Type): void {
@@ -217,9 +135,8 @@ class TypeChecker implements Visitor<Type> {
 
 它维护两个环境：
 
-+   `locals`——一个存储函数中局部变量类型的环境，
-
-+   `functions`——一个存储每个函数签名的环境。
+- `locals`——一个存储函数中局部变量类型的环境；
+- `functions`——一个存储每个函数签名的环境。
 
 由于在我们的语言中函数不是一等公民：它们不能被赋值给变量并传递，因此我们需要为这些变量提供两个独立的环境。所以，当我们遇到一个`Call`时，我们将在`functions`映射中查找函数，当我们遇到一个`Id`时，我们将在`locals`映射中查找非函数类型。
 
@@ -407,17 +324,19 @@ class TypeChecker implements Visitor<Type> {
 
 当检查返回语句时，我们推断返回值的类型，并将其与函数注释中的类型进行比较，我们方便地将这个类型保存在`currentFunctionReturnType`实例变量中。
 
+
+
 ```js
- visitReturn(node: Return) {
- let type = node.term.visit(this);
- if (this.currentFunctionReturnType) {
- assertType(this.currentFunctionReturnType, type);
- return new VoidType();
- } else {
- throw TypeError(
- "Return statement outside of any function");
- }
- }
+visitReturn(node: Return) {
+  let type = node.term.visit(this);
+  if (this.currentFunctionReturnType) {
+    assertType(this.currentFunctionReturnType, type);
+    return new VoidType();
+  } else {
+    throw TypeError(
+      "Return statement outside of any function");
+  }
+}
 ```
 
 ## If 和 While
@@ -425,18 +344,18 @@ class TypeChecker implements Visitor<Type> {
 当检查`If`和`While`时，我们会访问每个内部节点以确保它们的类型被检查，但我们不强制执行任何类型。`conditional`可以被检查为布尔类型，但在 TypeScript（以及许多其他语言）中，这并不是必需的。我们也可以强制分支内的语句返回`void`，但这通常也不是必需的。
 
 ```js
- visitIf(node: If) {
- node.conditional.visit(this);
- node.consequence.visit(this);
- node.alternative.visit(this);
- return new VoidType();
- }
+visitIf(node: If) {
+  node.conditional.visit(this);
+  node.consequence.visit(this);
+  node.alternative.visit(this);
+  return new VoidType();
+}
 
- visitWhile(node: While) {
- node.conditional.visit(this);
- node.body.visit(this);
- return new VoidType();
- }
+visitWhile(node: While) {
+  node.conditional.visit(this);
+  node.body.visit(this);
+  return new VoidType();
+}
 ```
 
 然而，如果我们有一个三元条件操作，我们需要确保两个分支返回相同的数据类型。
@@ -449,14 +368,14 @@ class TypeChecker implements Visitor<Type> {
 
 ```js
 function wrongReturnType(x: boolean): Array<number> {
- if (x) {
- return [42];
- }
+  if (x) {
+    return [42];
+  }
 }
 
 function main() {
- var a = wrontReturnType(false);
- a[0]; // Segmentation fault
+  var a = wrontReturnType(false);
+  a[0]; // Segmentation fault
 }
 ```
 

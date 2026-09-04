@@ -1,3 +1,4 @@
+
 # 结束语
 
 > 原文：[`jsprimer.net/outro/`](https://jsprimer.net/outro/)
@@ -10,8 +11,8 @@
 
 如果您能在博客或 Twitter 等地方写下阅读本书的感受，我们将非常高兴。
 
-+   Twitter 的标签：[#jsprimer](https://twitter.com/search?f=realtime&q=%23jsprimer)
++ Twitter 的标签：[#jsprimer](https://twitter.com/search?f=realtime&q=%23jsprimer)
 
 如果您想直接发送阅读感想或反馈，请使用以下反馈表单。
 
-+   [jsprimer.net 的感想/反馈](https://forms.gle/YAqr1oPBs1KShFSPA)
++ [jsprimer.net 的感想/反馈](https://forms.gle/YAqr1oPBs1KShFSPA)

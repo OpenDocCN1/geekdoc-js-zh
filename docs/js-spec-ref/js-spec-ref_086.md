@@ -1,10 +1,5 @@
-# 11.2 Modernizr
 
-*   概述
-*   CSS 的新增 class
-*   JavaScript 侦测
-*   加载器
-*   参考链接
+# 11.2 Modernizr
 
 ## 概述
 
@@ -12,15 +7,13 @@
 
 首先，从 modernizr.com 下载这个库。下载的时候，可以选择所需要的模块。然后，将它插入 HTML 页面的头部，放在 head 标签之中。
 
-```js
+```html
 <!DOCTYPE html>
 <html class="no-js" lang="en">
-
 <head>
   <meta charset="utf-8">
   <script src="js/modernizr.js"></script>
 </head>
-
 </html>
 ```
 
@@ -28,19 +21,19 @@
 
 使用 Modernizr 以后，首先会把 html 元素的 class 替换掉。以 chrome 浏览器为例，新增的 class 大概是下面的样子。
 
-```js
+```html
 <html class="js no-touch postmessage history multiplebgs boxshadow opacity cssanimations csscolumns cssgradients csstransforms csstransitions fontface localstorage sessionstorage svg inlinesvg blobbuilder blob bloburls download formdata">
 ```
 
 IE 7 则是这样：
 
-```js
+```html
 <html class="js no-touch postmessage no-history no-multiplebgs no-boxshadow no-opacity no-cssanimations no-csscolumns no-cssgradients no-csstransforms no-csstransitions fontface localstorage sessionstorage no-svg no-inlinesvg wf-loading no-blobbuilder no-blob no-bloburls no-download no-formdata">
 ```
 
 然后，就可以针对不同的 CSS class，指定不同的样式。
 
-```js
+```css
 .button {
    background: #000;
    opacity: 0.75;
@@ -57,9 +50,7 @@ IE 7 则是这样：
 
 ```js
 Modernizr.cssgradients; //True in Chrome, False in IE7
-
 Modernizr.fontface; //True in Chrome, True in IE7
-
 Modernizr.geolocation; //True in Chrome, False in IE7
 
 if (Modernizr.canvas){

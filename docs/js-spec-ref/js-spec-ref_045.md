@@ -1,8 +1,5 @@
-# 6.6 同域限制和 window.postMessage 方法
 
-*   概述
-*   iframe 与主页面的通信
-*   参考链接
+# 6.6 同域限制和 window.postMessage 方法
 
 ## 概述
 
@@ -144,6 +141,8 @@ window.onload = function() {
 
 ## 参考链接
 
-*   Mozilla Developer Network, [Window.postMessage](https://developer.mozilla.org/en-US/docs/Web/API/window.postMessage)
-*   Jakub Jankiewicz, [Cross-Domain LocalStorage](http://jcubic.wordpress.com/2014/06/20/cross-domain-localstorage/)
-*   David Baron, [setTimeout with a shorter delay](http://dbaron.org/log/20100309-faster-timeouts): 利用 window.postMessage 可以实现 0 毫秒触发回调函数
+*   Mozilla Developer Network, [Window.postMessage](https://developer.mozilla.org/en-US/docs/Web/API/window.postMessage)
+
+*   Jakub Jankiewicz, [Cross-Domain LocalStorage](http://jcubic.wordpress.com/2014/06/20/cross-domain-localstorage/)
+
+*   David Baron, [setTimeout with a shorter delay](http://dbaron.org/log/20100309-faster-timeouts): 利用 window.postMessage 可以实现 0 毫秒触发回调函数

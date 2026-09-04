@@ -1,35 +1,18 @@
+
 # Jquery 入门指南
-
-
 
 ```xml
 <embed src="OEBPS/cover.xml">
 ```
 
-
-
-
-
-
-
-
-
 ![image](img/publisher.jpg)
-
-
-
-
-
-
-
-
 
 我们所有的书目都在 authorcloudware.com 和其他数字供应商提供数字格式版本。可以通过联系 info@merclearning.com 获取本书目的的配套文件（图表和代码列表）。MERCURY LEARNING AND INFORMATION 对购买者的唯一义务是根据缺陷材料或工艺缺陷更换光盘，而不是基于产品的操作或功能。
 
 我想将这本书献给我的父母——愿这能给他们的生活带来快乐和幸福。
 
-<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.1/jquery-ui.min.js">
-</script>
+```html
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.1/jquery-ui.min.js"></script>
 ```
 
 你必须使用第二个 `<script>` 元素，因为第一个 `<script>` 元素无法正常工作。列表 1 显示了当你启动 HTML 页面并尝试拖放任何图像时，Web 检查器中的输出。
@@ -83,46 +66,33 @@ var pElements2 = jQuery("p");
 <head>
   <meta charset="utf-8" />
   <title>Hello World</title>
-<script src="http://code.jquery.com/jquery-2.0.0b1.js">
-</script>
-<script src="http://code.jquery.com/jquery-migrate-1.1.0.js">
-</script>
+  <script src="http://code.jquery.com/jquery-2.0.0b1.js"></script>
+  <script src="http://code.jquery.com/jquery-migrate-1.1.0.js"></script>
 </head>
 <body>
   <p id="Steve">Hello World From a Paragraph</p>
   <script>
-```
-
-
-
-
-```javascript
-$(document).ready(function(){
-  // get the 'id' value
-  var pId = $("p").attr("id");
-  // get the text in the <p> element
-  var pText = $("p").text();
-  console.log (pId+" says "+pText);
-  // update the text in the <p> element
-  $("p").text("Goodbye World From a Paragraph");
-  pText = $("p").text();
-  console.log(pId+" says "+pText);
-});
-```
-
-</script>
-
-</</body>
+    $(document).ready(function(){
+      // get the 'id' value
+      var pId = $("p").attr("id");
+      // get the text in the <p> element
+      var pText = $("p").text();
+      console.log(pId+" says "+pText);
+      // update the text in the <p> element
+      $("p").text("Goodbye World From a Paragraph");
+      pText = $("p").text();
+      console.log(pId+" says "+pText);
+    });
+  </script>
+</body>
 </html>
+```
 
 列表 1.1 使用此代码片段引用两个 jQuery 文件：
 
 ```html
-<script src="http://code.jquery.com/jquery-2.0.0b1.js">
-</script>
-
-<script  src="http://code.jquery.com/jquery-migrate-1.1.0.js">
-</script>
+<script src="http://code.jquery.com/jquery-2.0.0b1.js"></script>
+<script src="http://code.jquery.com/jquery-migrate-1.1.0.js"></script>
 ```
 
 重要：HTML `<body>` 元素中的第一个 HTML `<script>` 元素以此行开始：
@@ -178,10 +148,8 @@ $("p").text("Goodbye World From a Paragraph");
 <head>
   <meta charset="utf-8" />
   <title>jQuery and Modifying Elements</title>
-  <script src="http://code.jquery.com/jquery-2.0.0b1.js">
-  </script>
-  <script src="http://code.jquery.com/jquery-migrate-1.1.0.js">
-  </script>
+  <script src="http://code.jquery.com/jquery-2.0.0b1.js"></script>
+  <script src="http://code.jquery.com/jquery-migrate-1.1.0.js"></script>
 </head>
 <body>
   <p style="color:red" id="Steve">Hello From Paragraph One</p>
@@ -207,21 +175,13 @@ $("p").text("Goodbye World From a Paragraph");
 列表 1.2 使用此代码片段引用两个 jQuery 文件：（由于上所述，为了简洁省略）
 
 `var pId1   = $("p:first").attr('id');`
-
 `var pText1 = $("p:first").text();`
-
 `var pId2   = $("p:last").attr('id');`
-
 `var pText2 = $("p:last").text();`
-
 `$("p:first").html(pText2);`
-
 `$("p:last").html(pText1);`
-
 `$("p").text("Goodbye World From a Paragraph");`
-
 `$("#myInput").val()`
-
 `$("#myInput").text("new value");`
 
 图 1.1 显示了 `JQModifyElements1.html` 的结果。
@@ -237,9 +197,7 @@ $("p").text("Goodbye World From a Paragraph");
 有许多 jQuery 函数可以执行复杂的操作。本节包含一些实用的代码片段，说明了部分：
 
 `$('p:eq(3)').text('index equals three');`
-
 `$('p:gt(3)').text('index is greater than three');`
-
 `$('p:lt(3)').text('index is less than three');`
 
 ### jQuery 中的属性与属性
@@ -255,7 +213,7 @@ $("p").text("Goodbye World From a Paragraph");
 
 jQuery 为属性提供了 `.prop()` 方法，为属性提供了 jQuery `.attr()` 方法。遗憾的是，jQuery 文档对 `.prop()` 方法和 `.attr()` 方法的描述是完全相同的：
 
-“获取匹配元素集合中第一个元素的属性值，或为每个匹配元素设置一个或多个属性。”
+“获取匹配元素集合中第一个元素的属性值，或为每个匹配元元素设置一个或多个属性。”
 
 然而，好消息在以下述述中：
 
@@ -293,7 +251,7 @@ $("img").attr({
 
 注意，jQuery `attr()` 方法的语法与 jQuery `css()` 方法非常相似，因此当你理解其中一个函数时，也会理解另一个。
 
-### 使用自定义属性
+### 使用自定属性
 
 HTML5 支持自定义属性，前提是属性名称以字符串 `data-` 开头，后跟属性名称。虽然你现在可能不需要使用自定义属性，但 jQuery Mobile 高度依赖自定义属性，因此此功能非常有用。
 
@@ -409,7 +367,6 @@ jQuery 文档对这两个方法提供了简洁明了的解释：
 也许这个非正式的解释可以澄清这种差异：
 
 `{select-something-here}.append(and-append-stuff-from-here)`
-
 `{specify-stuff-here}.appendTo(and-append-that-stuff-here)`
 
 
@@ -486,14 +443,14 @@ $("#submit-button").removeAttr("disabled");
 
 ## 在 jQuery 中处理点击事件
 
-jQuery 支持各种类型的事件和用户手势，你可以将它们“绑定”到（你编写的）自定义代码上，每当这些事件或手势发生时，代码就会执行。在 jQuery Mobile 中可以检测并绑定的事件将在 jQuery Mobile 章节中讨论。
+jQuery 支持各种类型的事件和用户手势，你可以将它们“绑定”到（你编写的）自定�代码上，每当这些事件或手势发生时，代码就会执行。在 jQuery Mobile 中可以检测并绑定的事件将在 jQuery Mobile 章节中讨论。
 
 `click()` 函数允许你使用以下语法处理点击事件：
 
 ```javascript
 $("#button1").click(function() {
       // 执行某些操作
-}
+});
 ```
 
 处理事件有多种技术，这里展示了推荐的技巧：
@@ -524,10 +481,8 @@ $("#button1").on("click"), function() {
 <head>
    <meta charset="utf-8" />
    <title>使用 jQuery 检测点击事件</title>
-   <script src="http://code.jquery.com/jquery-2.0.0b1.js">
-    </script>
-   <script src="http://code.jquery.com/jquery-migrate-1.1.0.js">
-    </script>
+   <script src="http://code.jquery.com/jquery-2.0.0b1.js"></script>
+   <script src="http://code.jquery.com/jquery-migrate-1.1.0.js"></script>
 </head>
 <body>
    <div id="div1">第一个 div 元素 </div>
@@ -565,38 +520,6 @@ $("#div1").click(function() {
 ```
 
 每当用户点击上述 HTML `<div>` 元素时，它的点击计数和总点击计数都会加 1，并且两个 HTML `<div>` 元素的文本都会更新为对应单个 `<div>` 元素的点击次数以及总和。
-
-列表 1.5 引用了所需的 jQuery 文件，紧接着是一些 CSS 样式定义以及两个 HTML `<div>` 元素。这里显示了为第一个 HTML `<div>` 元素添加点击事件监听器的代码（对于第二个 HTML `<div>` 元素使用了类似的 jQuery 代码）：
-
-```javascript
-$("#div1").click(function() {
-      ++click1;
-      ++total;
-      $(this).text("Clicked: "+click1+" total: "+total);
-      $("#div2").text("Clicked: "+click2+" total: "+total);
-});
-```
-
-每当用户点击上述 HTML `<div>` 元素时，它的点击计数和总点击计数都会加 1，并且两个 HTML `<div>` 元素的文本都会更新为对应单个 `<div>` 元素的点击次数以及总和。
-
-列表 1.5 引用了所需的 jQuery 文件，紧接着是一些 CSS 样式定义以及两个 HTML `<div>` 元素。这里显示了为第一个 HTML `<div>` 元素添加点击事件监听器的代码（对于第二个 HTML `<div>` 元素使用了类似的 jQuery 代码）：
-
-```javascript
-$("#div1").click(function() {
-      ++click1;
-      ++total;
-      $(this).text("Clicked: "+click1+" total: "+total);
-      $("#div2").text("Clicked: "+click2+" total: "+total);
-});
-```
-
-*(注：由于提供的原文中存在大量重复段落，翻译已根据“不要重复输出原文”的原则进行了去重处理，确保逻辑连贯且不冗余。)*
-
-
-
-
-
-关于 jQuery 最新版本的更多信息可以参阅本书的序言。
 
 ## jQuery 函数链式调用 (#toc.html_toc-h1-0005)
 
@@ -682,6 +605,8 @@ $('document').ready(function(){
     var accelEvent = e.originalEvent,
         acceler = accelEvent.accelerationIncludingGravity,
         x = acceler.x, y = acceler.y, z = acceler.z;
+  });
+});
 ```
 
 为了简单起见，颜色数组仅包含三种颜色，以下代码计算 0 到 2 之间的数字，以确定方向的颜色：
@@ -736,15 +661,6 @@ y 方向和 z 方向的相应值以类似的方式计算。
 * 使用 `click()` 函数
 * jQuery 函数链式调用
 * 使用 jQuery 获取加速度计
-
-
-
-
-本章的第一部分包含代码示例，展示了如何创建阴影效果、如何渲染圆角矩形，以及如何使用线性渐变和径向渐变。本章的第二部分涵盖 CSS3 变换（缩放、旋转、倾斜和平移），以及演示如何将变换应用于 HTML 元素和 JPG 文件的代码示例。
-
-本章的第三部分涵盖 CSS3 2D 图形，例如线性渐变、径向渐变和 CSS3 变换。
-
-你可以在桌面或笔记本电脑上基于 Webkit 的浏览器中运行本章的代码示例。你也可以在移动设备上查看它们，前提是你运行的浏览器支持代码示例中所使用的 CSS3 功能。为了方便起见，本章中的许多代码示例都附带了在 Sprint Nexus S 4G 和 Asus Prime Android ICS 10 英寸平板上的运行截图（两者均运行 Android ICS 系统），这让你能够将这些截图与桌面和笔记本电脑上基于 Webkit 的浏览器渲染的相应图像进行对比。在第 10 章中，你将学习创建可以启动 HTML5 Web 页面的 Android 应用程序的过程。
 
 ## CSS3 支持与 CSS3 属性的浏览器前缀
 
@@ -803,7 +719,7 @@ CSS3 采用模块化方法，涉及多个子规范，以扩展现有的 CSS2 功
 *   多列布局
 *   选择器
 
-通过 CSS3，你可以创建带有圆角和阴影效果的框；使用线性渐变和径向渐变创建丰富的图形效果；检测竖屏和横屏；使用媒体查询选择器检测移动设备类型；以及生成多列文本渲染和格式。
+通过 CSS3，你可以创建带有圏角和阴影效果的框；使用线性渐变和径向渐变创建丰富的图形效果；检测竖屏和横屏；使用媒体查询选择器检测移动设备类型；以及生成多列文本渲染和格式。
 
 此外，CSS3 还允许你使用伪类（在下一节描述）定义复杂的选择规则、`:first-child`、`:last-type` 以及基于属性的模式匹配。
 
@@ -840,24 +756,15 @@ CSS3 `:nth-child()` 伪类既强大又实用，其格式如下：
 下面的列表提供了使用 `nth-child()` 伪类的各种示例，用以匹配 HTML `<div>` 元素子元素的不同子（该元素也可以被其他 HTML 元素替换）：
 
 *   `div:nth-child(1)`：匹配第一个子元素
-
-
-
-
-
-`div:nth-child(2)` 匹配第二个子元素。
-
-`div:nth-child(:even)` 匹配偶数子元素。
-
-`div:nth-child(:odd)` 匹配奇数子元素。
+*   `div:nth-child(2)`：匹配第二个子元素
+*   `div:nth-child(:even)`：匹配偶数子元素
+*   `div:nth-child(:odd)`：匹配奇数子元素
 
 `nth-child()` 伪类的有趣且强大之处在于它支持形如 `an+b` 的线性表达式，其中 `a` 是正整数，而 `b` 是非负整数，如下所示（使用一个 HTML5 的 `<div>` 元素）：
 
-`div:nth-child(3n)` 匹配从位置 0 开始的每第三个子元素。
-
-`div:nth-child(3n+1)` 匹配从位置 1 开始的每第三个子元素。
-
-`div:nth-child(3n+2)` 匹配从位置 2 开始的每第三个子元素。
+*   `div:nth-child(3n)`：匹配从位置 0 开始的每第三个子元素
+*   `div:nth-child(3n+1)`：匹配从位置 1 开始的每第三个子元素
+*   `div:nth-child(3n+2)`：匹配从位置 2 开始的每第三个子元素
 
 另一个非常有用的伪类涉及 `:hover`，它可以轻松创建美观的视觉效果。以下 CSS3 `:hover` 伪类的示例展示了当用户用鼠标悬停在关联元素上时，改变 `id` 属性值为 `text1` 的元素的字体大小：
 
@@ -918,7 +825,7 @@ CSS3 阴影效果对于创建生动的视觉效果非常有用。你可以将阴
 
 ### 使用 RGB 和 HSL 指定颜色
 
-在我们深入研究 CSS3 有趣的功能之前，你需要知道如何表示颜色。一种方法是使用 `(R, G, B)` 三元组，它们代表颜色的红、绿、蓝分量。例如，三元组 `(255, 0, 0)`、`(255, 255, 0)` 和 `(0, 0, 255)` 分别代表红色、黄色和蓝色。指定颜色的其他方法包括：十六进制三元组 `(F, 0, 0)` 和 `(FF, 0, 0)`；十进制三元组 `(100%, 0%, 0)` 或字符串 `#F00`。你也可以使用 `(R, G, B, A)`，其中第四个分量指定透明度，这是一个 00（透明）到 1（不透明）之间的小数。
+在我们深入研究 CSS3 有趣的功能之前，你需要知道如何表示颜色。一种方法是使用 `(R, G, B)` 三元组，它们代表颜色的红、绿、蓝分量。例如，三元组 `(255, 0, 0)`、`(255, 255, 0)` 和 `(0, 0, 255)` 分别代表红色、黄色和蓝色。指定颜色的其他方法包括：十六进制三元组 `(F, 0, 0)` 和 `(FF, 0, 0)`；十进制三元组 `(100%, 0%, 0)` 或字符串 `#F00`。你也可以使用 `(R, G, B, A)`，其中第四个分量指定透明度，这是一个 0（透明）到 1（不透明）之间的小数。
 
 然而，还有颜色的 HSL（色相、饱和度和亮度）表示法，其中第一个分量是 0 到 360 之间的角度（0 度是北），另外两个分量是 0 到 100 之间的百分比。例如，`(0, 100%, 50%)`、`(120, 100%, 50%)` 和 `(240, 100%, 50%)` 分别代表红色、绿色和蓝色。第一个分量 `(R, G, B, A)` 中的第四个分量指定透明度，这是一个 0（透明）到 1（不透明）之间的小数。
 
@@ -938,7 +845,7 @@ CSS3 阴影效果对于创建生动的视觉效果非常有用。你可以将阴
 
 #### CSS3 阴影效果
 
-CSS3 阴影效果对于创建生动的视觉效果非常有用。你可以将阴影效果应用于文本以及矩形区域。CSS3 还能让你轻松渲染带有圆角的矩形，因此你不需要 `JPG` 文件即可创建这种效果。
+CSS3 阴影效果对于创建生动的视觉效果非常有用。你可以将阴影效果应用于文本以及矩形区域。CSS3 还能让你轻松渲染带有圏角的矩形，因此你不需要 `JPG` 文件即可创建这种效果。
 
 #### CSS3 阴影效果
 
@@ -950,7 +857,11 @@ CSS3 阴影效果对于创建生动的视觉效果非常有用。你可以将阴
 
 #### CSS3 阴影效果
 
-CSS  阴效果可以使页面更具吸引力。
+CSS3 阴影效果对于创建生动的视觉效果非常有用。你可以将阴影效果应用于文本以及矩形区域。CSS3 还能让你轻松渲染带有圆角的矩形，因此你不需要 `JPG` 文件即可创建这种效果。
+
+#### CSS3 阴影效果
+
+CSS 阴影效果可以使页面更具吸引力。
 
 #### Listing 2.1 Shadow.html
 ```html
@@ -986,17 +897,11 @@ CSS  阴效果可以使页面更具吸引力。
 
 *(注：由于提供的原始文本中存在大量重复的段落和不完整的代码片段，译文已根据“不要重复输出原文”的原则，对逻辑内容进行了整合和去重，并翻译了核心技术说明。)*
 
-
-
-
-
 ```css
 text-shadow: 2px 4px 5px #f00;
   -webkit-transform: rotate(-170deg);
 }
-
 /* 'transform' 稍后解释 */
-
 #text1:hover, #text2:hover, #text3:hover,
 #text4:hover, #text5:hover, #text6:hover {
   -webkit-transform : scale(2) rotate(-45deg);
@@ -1004,7 +909,7 @@ text-shadow: 2px 4px 5px #f00;
 }
 ```
 
-Listing 2.2 中的第一个选择器指定了 24 的 `font-size`，并使用 `text-shadow` 渲染具有蓝色背景的文本（由十六进制值 `#00f` 表示）。`text-shadow` 属性指定了从左到右的阴影 x 坐标、y 坐标、模糊半径和颜色。第二个选择器指定了 32 的 `font-size` 和红色阴影背景（`#f00`）。第三个选择器通过在 `text-shadow` 属性中指定多个组件创建了更丰富的视觉效果，这些组件是通过对不同组件的不同值进行实验而选择的。
+Listing 2.2 中的第一个选择器指定了 24 的 `font-size`，并使用 `text-shadow` 渲染具有蓝色背景的文本（由十六进制值 `#00f` 表示）。`text-shadow` 属性指指定了从左到右的阴影 x 坐标、y 坐标、模糊半径和颜色。第二个选择器指定了 32 的 `font-size` 和红色阴影背景（`#f00`）。第三个选择器通过在 `text-shadow` 属性中指定多个组件创建了更丰富的视觉效果，这些组件是通过对不同组件的不同值进行实验而选择的。
 
 最后的 CSS3 选择器会在用户悬停在六个文本字符串之一上时创建一个动画效果，动画的细节将在本章稍后部分介绍。
 
@@ -1075,9 +980,6 @@ a.anchor {
 }
 ```
 
-
-
-
 ```css
 {
   font-size: 32px;
@@ -1086,7 +988,6 @@ a.anchor {
   -webkit-border-radius: 4px;
   border-radius: 4px;
 }
-
 #line3 {
   width: 50%;
   font-size: 32px;
@@ -1095,7 +996,6 @@ a.anchor {
   -webkit-border-radius: 4px;
   border-radius: 4px;
 }
-
 #line4 {
   width: 50%;
   font-size: 32px;
@@ -1104,14 +1004,12 @@ a.anchor {
   -webkit-border-radius: 4px;
   border-radius: 4px;
 }
-
 #outline {
   font-size: 2.0em;
   font-weight: bold;
   color: #fff;
   text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
 }
-
 h3 {
   width: 50%;
   position: relative;
@@ -1119,14 +1017,12 @@ h3 {
   font-size: 32px;
   font-family: helvetica, ariel;
 }
-
 h3 a {
   position: relative;
   color: red;
   text-decoration: none;
   -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), color-stop(50%, rgba(0,0,0,0.5)), to(rgba(0,0,0,0)));
 }
-
 h3:after {
   content: "This is a Line of Gradient Text";
   color: blue;
@@ -1199,7 +1095,6 @@ CSS 样式表 `RadialGradient1.css` 包含了五个 CSS 选择器，用以匹配
 ```
 
 `#radial1` 选择器包含一个使用 `-webkit-` 前缀定义径向渐变的 `background` 属性，它指定了：
-
 *   起点 (500, 40%)
 *   起始半径 0
 *   终点 (301, 25%)
@@ -1213,15 +1108,11 @@ CSS 样式表 `RadialGradient1.css` 包含了五个 CSS 选择器，用以匹配
 
 ![image](img/fig2.5.jpg)
 
-
-
-
 ```css
 img.scaled {
   -webkit-box-shadow: 10px 10px 5px #800;
   box-shadow: 10px 10px 5px #800;
 }
-
 img.scaled:hover {
   -webkit-transform : scale(2);
   transform : scale(2);
@@ -1258,7 +1149,6 @@ img {
   -webkit-transition: -webkit-transform 1.0s ease;
   transition: transform 1.0s ease;
 }
-
 img.mystyle:hover {
   -webkit-transform : scaleX(1.5) scaleY(0.5);
   transform : scaleX(1.5) scaleY(0.5);
@@ -1349,6 +1239,8 @@ img.trans2:hover {
 transition: transform 1.0s ease;
 ```
 
+
+
 四个选择器 `img.trans1`、`img.trans2`、`img.trans3` 和 `img.trans4` 分别创建红、黄、绿、蓝深色的背景投影效果，正如你在前一节中看到的那样。
 
 选择器 `img.trans1:hover` 指定了一个变换属性，当用户用鼠标悬停在第一个 `<img>` 元素上时，会执行缩放效果和位移效果，如下所示。
@@ -1359,7 +1251,7 @@ transition: transform 1.0s ease;
 
 ***图 2.8*** 基于 CSS3 的 JPG 文件缩放和位移效果。
 
-## CSS3 媒体查询](#toc.html_toc-h1-0014)
+## CSS3 媒体查询
 
 CSS3 媒体查询是非常用的逻辑表达式，允许检测具有不同物理属性和方向的移动应用程序。例如，通过 CSS3 媒体查询，你可以更改应用程序的尺寸和布局，使其在智能手机和平板上都能正确显示。
 
@@ -1373,10 +1265,6 @@ CSS3 媒体查询是非常用的逻辑表达式，允许检测具有不同物理
 *   分辨率
 
 CSS3 媒体查询是布尔表达式，包含一个或多个“简单项”（使用 and 或 or 连接），这些项评估结果为真或假。
-
-
-
-
 
 例如，以下 `link` 元素仅当设备为屏幕且设备最大宽度为 `480px` 时才会加载 CSS 样式表 `mystuff.css`：
 
@@ -1413,7 +1301,7 @@ document.getElementById("img1").style.height = "300px";
 
 尽管这是一个非常简单的例子，但希望这段代码能让你体会 CSS3 媒体查询的能力。
 
-## 总结 (#toc.html_toc-h1-0016)
+## 总结
 
 本章向你展示了如何创建图形效果、阴影效果以及如何在 CSS3 中使用变换（transforms）。你学习了如何创建可以应用于 HTML 元素的动画效果，并看到了如何定义 CSS3 选择器来执行以下操作：
 
@@ -1423,9 +1311,9 @@ document.getElementById("img1").style.height = "300px";
 *   使用 `translate()`、`rotate()`、`skew()` 和 `scale()` 方法
 *   创建基于 CSS3 的动画效果
 
-## 第 3 章 (#toc.html_toc-3)
+## 第 3 章
 
-### 使用 JQUERY 和 CSS3 实现动画效果 (#toc.html_toc-3)
+### 使用 JQUERY 和 CSS3 实现动画效果
 
 本章向你展示了如何创建动画效果并为用户提供交互的 HTML5 网页。你将看到一组创建各种动画效果的 `jQuery` 函数，你可以轻松地将它们整合到你的 HTML5 网页中。这个内容广泛的章节旨在为你提供许多动画效果，以及一系列代码示例和代码片段，你可以将它们整合到你的其他 HTML5 网页中。
 
@@ -1435,11 +1323,11 @@ document.getElementById("img1").style.height = "300px";
 
 注意，本章涵盖了 `jQuery` 动画效果，第七章包含了某些使用 `jQuery Mobile` 的对应动画效果，这两个章节都包含了基于 CSS3 的动画效果。由于空间限制，本章仅涵盖了 `jQuery` 可用的部分功能。你可以通过在线 `jQuery` 文档或搜索额外的教程和文章来了解更多 `jQuery` 动画。
 
-## 在 jQuery 中处理 CSS3 选择器 (#toc.html_toc-h1-0017)
+## 在 jQuery 中处理 CSS3 选择器
 
 本节包含代码示例，阐明了如何使用 `jQuery` 通过操作 CSS 类程序化地创建视觉效果，例如圆角、渐变和阴影效果。
 
-### jQuery 中的基础动画效果 (#toc.html_toc-h1-0018)
+### jQuery 中的基础动画效果
 
 本节包含代码片段而非完整的列表，这些代码片段阐明了如何使用 `hide()` 和 `show()` 创建动画，以及如何设置动画速度。请记住本节仅涵盖了可用功能集的一部分。务必阅读在线文档以了解其他功能。
 
@@ -1449,7 +1337,6 @@ document.getElementById("img1").style.height = "300px";
 $("#myButton1").click(function() {
   $("#myButton2").hide();
 });
-
 $("#myButton1").dblclick(function() {
   $("#myButton2").show();
 });
@@ -1486,18 +1373,14 @@ $("#myDiv1").toggle(
 
 `addClass()` 方法添加 CSS 类，而 `toggleClass()` 方法则“切换” CSS 类；即：如果类不存在则添加它，如果已经包含则移除它。其他相关的 `jQuery` 方法包括使用淡入淡出效果的 `fadeClass()` 和创建滑动效果的 `slideClass()`。
 
-## 使用回调函数 (#toc.html_toc-h2-0020)
+## 使用回调函数
 
 许多 `jQuery` 函数（包括 `hide()`、`show()`、`toggle()` 和滑动相关的函数）允许你指定一个回调函数，该函数将在指定的操作完成后执行。例如，你可以定义以下代码块：
 
 ```javascript
 $("#myButton1").click(function() {
   $("#myButton2").hide('slow',
-```
-
-
-
-```javascript
+);
 function callback() {
   // do something else
 });
@@ -1521,9 +1404,7 @@ jQuery 与淡入（fade）和滑动（slide）相关的效果很容易创建，�
 这三个 jQuery 函数 `.fadeIn()`、`.fadeOut()` 和 `.fadeToggle()` 方法可以指定三个参数，其语法所示：
 
 `jQuery(list-of-elements).fadeIn(speed);`
-
 `jQuery(list-of-elements).fadeOut(speed);`
-
 `jquery(list-of-elements).fadeTo(speed);`
 
 下方的代码块说明了如何使用这三个 jQuery 函数：
@@ -1532,11 +1413,9 @@ jQuery 与淡入（fade）和滑动（slide）相关的效果很容易创建，�
 $("#something").click(function() {
   $(this).fadeIn('slow');
 });
-
 $("#something").click(function() {
   $(this).fadeOut('slow');
 });
-
 $("#something").click(function() {
   $(this).fadeTo('slow', .65);
 });
@@ -1624,9 +1503,7 @@ $(this).find("span").fadeOut(2000).fadeIn("slow").fadeOut("fast").fadeIn(2000).f
 jQuery 的 `slideUp()`、`slideDown()` 和 `slideToggle()` 方法可以指定三个参数，它们的语法如下：
 
 `jQuery(elements).slideUp([speed], [easing], [callback]);`
-
 `jQuery(elements).slideDown([speed], [easing], [callback]);`
-
 `jQuery(elements).slideToggle([speed], [easing], [callback]);`
 
 `milliseconds` 值指定动画效果的持续时间，`callback` 是在动画完成后执行的可选 JavaScript 函数。
@@ -1683,9 +1560,6 @@ jQuery 的 `slideUp()`、`slideDown()` 和 `slideToggle()` 方法可以指定三
 需要记住的一点是，对于具有 CSS 内边距（padding）、外边距（margin）属性或未设置固定宽度的元素，滑动效果并不总是按预期工作（可能会出现某些抖动）。请尝试这些场景，看看结果行为是否符合你的预期，或者对你的 Web 页面来说是可以接受的。
 
 ## jQuery 中的缓动函数
-
-
-
 
 jQuery 支持一组被称为“缓动”（easing）函数，这些函数提供了不同类型的动画效果。通俗来说，缓动函数使用某种方程作为动画效果的路径。例如，你可以使用线性方程来创建恒速运动的动画。你也可以使用二次方程（二阶多项式，其通用形式为 `a*x*x+b*x+c`）来创建具有加速度的动画效果，或用于二次贝塞尔曲线，并使用三次方程用于三次贝塞尔曲线。
 
@@ -1770,16 +1644,13 @@ $("#myDiv").click(function() {
 
 Listing 3.3 显示了 `QButtonAnimation1.html` 的内容，并说明了如何创建由 `hover` 伪类触发的按钮相关动画。
 
-
-
-
 列表 3.3 包含一个 HTML `<style>` 元素，其中包含一个 CSS3 keyframes 定义（你也可以将其移动到单独 CSS 样式表中），随后是两个类型为按钮的 HTML `<input>` 元素，这两个元素都在 列表 3.3 中的 `<script>` 元素中定义了点击事件处理程序。
 
 当用户点击任何一个按钮时，CSS3 keyframes 定义就会应用到该按钮上。这反过来通过 `translate()`、`rotate()` 和 `skew()` 函数的组合，为相关选择器指定的时段（无论是 2 秒还是 4 秒）创建动画效果。此外，点击处理程序还创建了一个持续 500 毫秒的淡出效果。
 
 当你在浏览器中启动 HTML Web 页面 `JQButtonAnimation1.html` 时，每当你悬停在任一个按钮上，都会看到动画效果。
 
-## 使用 CSS3 和 jQuery 进行 2D 变换](#toc.html_toc-h2-0026)
+## 使用 CSS3 和 jQuery 进行 2D 变换
 
 本节中的代码示例向你展示了如何使用 jQuery 的 `css()` 函数基于用户触发的事件，直接对元素应用 CSS 变换。
 
@@ -1793,21 +1664,18 @@ Listing 3.3 显示了 `QButtonAnimation1.html` 的内容，并说明了如何创
   left: 50px;
   top: 150px;
 }
-
 #inner1 {
   float: left;
   background-color:#F00;
   width: 200px;
   height:150px;
 }
-
 #inner2 {
   float: left;
   background-color:#FF0;
   width: 200px;
   height:150px;
 }
-
 #inner3 {
   float: left;
   background-color:#00F;
@@ -1868,11 +1736,11 @@ Listing 3.3 显示了 `QButtonAnimation1.html` 的内容，并说明了如何创
 
 `$("div").css({height: '300px', 'webkit-transform': 'scale(0.5, 0.5) skew(-10deg, 20deg)'});`
 
-如你所见，高度属性设置为 300px，并且当用户点击 `<div>` 元素时，应用了变换。请记住，你可以将 列表 3.5 中点击处理程序所引用的 CSS 代码移动到单独的样式表中。这使得在单个文件中维护 CSS 代码变得更加容易，你还可以在多个 HTML 页面中引用同一个样式表。
+如你所见，高度属属性设置为 300px，并且当用户点击 `<div>` 元素时，应用了变换。请记住，你可以将 列表 3.5 中点击处理程序所引用的 CSS 代码移动到单独的样式表中。这使得在单个文件中维护 CSS 代码变得更加容易，你还可以在多个 HTML 页面中引用同一个样式表。
 
 除了 CSS3 2D 动画效果外，你显然还可以创建 3D 动画效果。通过尝试 列表 3.5 中的代码，并添加来自以下来源的 3D 效果：`http://code.google.com/p/`，你可以对 第 2 章 进行实验。图 3.1 在浏览器中显示 `JQTransforms2D1.html`。列表 3.4 和 列表 3.5 涉及到鼠标相关功能以及如何通过编程方式处理事件。列表 3.6 在下一节展示了如何使用 jQuery 和 CSS3 在 HTML5 页面中根据鼠标当前位置渲染 `<div>` 元素。
 
-## jQuery 跟随鼠标示例](#toc.html-h1-002)
+## jQuery 跟随鼠标示例
 
 本节中的代码示例通过展示如何通过编程方式创建 `<div>` 元素并将其添加到 DOM 中，扩展了前节介绍的功能。列表 3.6 显示了 `JQFollowMouse.html` 在 MacBook 上的内容。
 
@@ -1883,7 +1751,7 @@ Listing 3.3 显示了 `QButtonAnimation1.html` 的内容，并说明了如何创
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>跟随鼠标</title>
+  <title>跟随鼠</title>
   <script src="http://code.jquery.com/jquery-2.0.0b1.js"></script>
   <script src="http://code.jquery.com/jquery-migrate-1.1.0.js"></script>
 </head>
@@ -1899,7 +1767,6 @@ Listing 3.3 显示了 `QButtonAnimation1.html` 的内容，并说明了如何创
       var currColor = "";
       var rectColors = Array('#ff00', '#ffff0', '#00ff', '#00ff');
       var newNode;
-
       $(document).mousemove(function(e) {
         ++moveCount;
         // 用户正在移动鼠标吗？
@@ -1935,19 +1802,15 @@ Listing 3.3 显示了 `QButtonAnimation1.html` 的内容，并说明了如何创
 </html>
 ```
 
-
-
-
-
-Listing 3.6 初始化了一些 JavaScript 变量，然后使用 jQuery 的 `css()` 方法动态创建一个 HTML `<div>` 元素，该元素的左上角坐标与 `mousemove` 事件发生点的坐标相同，从而创建了一个跟随鼠标的效果。需要注意的关键点是，事件对象（在此代码示例中称为 `e`）允许我们访问当前移动位置的坐标。我们可以使用属性 `e.pageX` 和 `e.pageY` 分别设置 CSS 属性 `left` 和 `top`。
+Listing 3.6 初始化了一些 JavaScript 变量，然后使用 jQuery 的 `css()` 方法动态创建一个 HTML `<div>` 元素，该元素的左上角坐标与 `mousemove` 事件发生点的坐标相同，从而创建了一个跟随鼠标的效果。需要注意的关�点是，事件对象（在此代码示例中称为 `e`）允许我们访问当前移动位置的坐标。我们可以使用属性 `e.pageX` 和 `e.pageY` 分别设置 CSS 属性 `left` 和 `top`。
 
 同样请注意在 Listing 3.6 中，HTML `<body>` 元素之后紧跟着一个空的 HTML `<div>` 元素。需要这个元素是因为众，在脚本之后添加的 UI 元素在某些旧版浏览器中会消失。解决方案是包含这个空 `<div>` 元素，然后向该元素添加内容。
 
-## 使用 jQuery 处理其他事件 (#toc.html_toc-h1-0023)
+## 使用 jQuery 处理其他事件
 
 你已经见过了说明如何使用 jQuery 处理各种事件的代码示例。jQuery 为鼠标相关事件提供了广泛支持，并像接下来的两节描述的那样，支持键盘事件。
 
-### 处理鼠标事件 (#toc.html_toc-h2-0027)
+### 处理鼠标事件
 
 jQuery 支持以下你可能熟悉的常用鼠标事件：`mousedown`、`mouseenter`、`mouseleave`、`mousemove`、`mouseout`、`mouseover` 和 `mouseup`。你可以使用以下 jQuery 代码结构在 jQuery 中检测这些鼠标事件：
 
@@ -1955,27 +1818,21 @@ jQuery 支持以下你可能熟悉的常用鼠标事件：`mousedown`、`mouseen
 $("#myInput").mousedown(function() {
   // do something
 });
-
 $("#myInput").mouseenter(function() {
   // do something
 });
-
 $("#myInput").mouseleave(function() {
   // do something
 });
-
 $("#myInput").mousemove(function() {
   // do something
 });
-
 $("#myInput").mouseout(function() {
   // do something
 });
-
 $("#myInput").mouseover(function() {
   // do something
 });
-
 $("#myInput").mouseup(function() {
   // do something
 });
@@ -1983,13 +1840,13 @@ $("#myInput").mouseup(function() {
 
 你可以将所需的任何代码片段包含在 HTML 页面中，然后添加处理逻辑以提供预期的功能。
 
-### 处理键盘事件 (#toc.html_toc-h2-0028)
+### 处理键盘事件
 
 你也可以在 jQuery 中检测 `keypress`、`keyup` 和 `keydown` 事件。例如，这段代码在用户点击大写“Z”键时显示一个警报：
 
 ```javascript
 $("#myInput").keypress(function(e) {
-  if (e.which == 90) alert ('Z was typed.')
+  if (e.which == 90) alert ('Z was typed.');
 });
 ```
 
@@ -1997,14 +1854,13 @@ $("#myInput").keypress(function(e) {
 
 你还可以添加许多其他效果，包括本章之前代码示例中提供的动画效果。
 
-![image](img/cd.jpg) ## CD 额外代码示例 (#toc.html_toc-h1-0024)
+![image](img/cd.jpg) ## CD 额外代码示例
 
 HTML5 页面 `JQSlideShow1.html` 阐述了如何使用 jQuery 创建包含 JPG 图像的幻灯片，它使用以下代码块来确定下一个 HTML `<img>` 元素（当到达最右侧的图像时，它会循环到列表的第一张图像），并添加 `show` 属性，如下：
 
 ```javascript
 next = curr.next().length ? curr.next() :
        curr.parent().children(':first');
-
 next.addClass("show");
 ```
 
@@ -2032,14 +1888,13 @@ jQuery 插件 `PFold` 提供了一种良好的折叠效果，可以在此处下�
 
 *[`tympanus.net/Development/PFold/`](http://tympanus.net/Development/PFold/)*
 
-## 动画：比较 CSS3 与 jQuery (#toc.html_h1-0025)
+## 动画：比较 CSS3 与 jQuery
 
 HTML5 页面 `JQSlideShow1.html` 阐述了如何使用 jQuery 创建包含 JPG 图像的幻灯片，它使用以下代码块来确定下一个 HTML `<img>` 元素（当到达最右侧的图像时，它会循环到列表的第一张图像），并添加 `show` 属性，如下：
 
 ```javascript
 next = curr.next().length ? curr.next() :
        curr.parent().children(':first');
-
 next.addClass("show");
 ```
 
@@ -2067,7 +1922,7 @@ http://dev.opera.com/articles/view/css3-vs-jquery-animations/#comments
 
 “尽管上面的结果表明你应该使用 CSS3 进行动画，但请记住我们在文章早些时候讨论的优缺点。你需要考虑到很大比例的人仍然在使用 Internet Explorer 7 和 8，因此如果你的动画绝对需要在这些旧浏览器中正常工作，就应该使用 jQuery。”
 
-## 总结 (#toc.html_toc-h1-0026)
+## 总结
 
 本章介绍了 jQuery 图形和动画效果，并提供了说明如何使用 jQuery 函数创建简单动画效果的代码示例。特别是，你学习了如何执行以下操作：
 
@@ -2087,31 +1942,26 @@ http://dev.opera.com/articles/view/css3-vs-jquery-animations/#comments
 -   设置速度
 -   切换 `hide()` 和 `show()`
 -   jQuery 淡入淡出和滑动效果
-
-
-
-
-
-*   `fadeIn()` 和 `fadeOut()` 函数
-*   `jQuery` 的 `slideUp()` 和 `slideDown()` 函数
-*   `jQuery` 中的缓动函数
-*   使用 `animate()` 自定义 CSS 动画
-*   创建图片幻灯片
-*   基于 CSS3 的动画效果
-*   使用 CSS3 的简单滑动效果
-*   使用 CSS3 更新多个属性
-*   使用 CSS 的滑动效果
-*   使用 CSS3 keyFrames 和 2D 变换的动画效果
-*   使用 CSS3 和 `jQuery` 进行 2D 变换
-*   使用 CSS3 和 `jQuery` 进行 3D 变换
-*   使用 `jQuery` 的鼠标跟随示例
-*   你的第一个绘画程序
+-   `fadeIn()` 和 `fadeOut()` 函数
+-   `jQuery` 的 `slideUp()` 和 `slideDown()` 函数
+-   `jQuery` 中的缓动函数
+-   使用 `animate()` 自定义 CSS 动画
+-   创建图片幻灯片
+-   基于 CSS3 的动画效果
+-   使用 CSS3 的简单滑动效果
+-   使用 CSS3 更新多个属性
+-   使用 CSS 的滑动效果
+-   使用 CSS3 keyFrames 和 2D 变换的动画效果
+-   使用 CSS3 和 `jQuery` 进行 2D 变换
+-   使用 CSS3 和 `jQuery` 进行 3D 变换
+-   使用 `jQuery` 的鼠标跟随示例
+-   你的第一个绘画程序
 
 下一章将为你介绍各种 `jQuery UI` 控件，以及展示如何在 HTML5 页面中渲染某些 `jQuery UI` 控件的代码示例。
 
 # jQuery UI 控件
 
-本章将为你介绍各种 `jQuery UI` 控件，以及展示如何在 HTML5 页面中渲染某些 `jQuery UI` 控件的代码示例。使用这些 UI 控件的理由很简单：它们不需要像编写 way 自定义 UI 控件那样花费大量精力，你也不需要维护这些控件的代码。此外，这些 UI 控件在多种浏览器上运行良好。
+本章将为你介绍各种 `jQuery UI` 控件，以及展示如何在 HTML5 页面中渲染某些 `jQuery UI` 控件的代码示例。使用这些 UI 控件的理由很简单：它们不需要像编写 way 自定 UI 控件那样花费大量精力，你也不需要维护这些控件的代码。此外，这些 UI 控件在多种浏览器上运行良好。
 
 你将看到使用 `jQuery` 渲染折叠面板、按钮、组合框、日期选择器、进度条、滑动条和标签页的示例。此外，你将学习如何通过处理涉及 `jQuery UI` 控件的用户触发事件。通过查阅 `jQuery` 首页，你可以了解更多可用 UI 控件。
 
@@ -2192,9 +2042,6 @@ http://dev.opera.com/articles/view/css3-vs-jquery-animations/#comments
 </body>
 </html>
 ```
-
-
-
 
 启动列表 4.1 中的 HTML5 页面，并点击渲染后的手风琴控件中的每个“文件夹”，这将显示当前选中文件夹的内容，并隐藏该手风琴中其他文件夹的内容。
 
@@ -2362,9 +2209,6 @@ jQuery 允许为复选框和单选按钮添加事件处理器，以便你可以�
 </html>
 ```
 
-
-
-
 图 4.3 MacBook 上 Chrome 浏览器中的复选框/按钮。
 
 ## 组合框 (Combo Boxes)
@@ -2400,7 +2244,7 @@ jQuery 支持 HTML 组合框，你可以为其绑定事件处理器以检测与�
     <div>
       <fieldset id="ComboBoxInfo">
         <label for="ComboBox"><strong>我的组合框：</strong></label>
-        <select id="ComboBox" >
+        <select id="ComboBox">
           <option value="1">值 1</option>
           <option value="2">值 2</option>
           <option value="3">值 3</option>
@@ -2421,7 +2265,6 @@ jQuery 支持 HTML 组合框，你可以为其绑定事件处理器以检测与�
         // 显示选中的值
         $("#selected1").val(
           $("#ComboBox option:selected").text());
-        );
       });
     });
   </script>
@@ -2550,7 +2393,6 @@ jQuery 支持“日期选择器”，允许你设置过去、现在和未来的�
       $("#text1").val($("#progressBar1").progressbar("value"));
       $("#newValue").bind("change", function() {
         var newVal = $("#newVal").val();
-        $("#progressBar1").progressbar("option", "value", parseInt(newVal));
       });
     });
   </script>
@@ -2558,1275 +2400,21 @@ jQuery 支持“日期选择器”，允许你设置过去、现在和未来的�
 </html>
 ```
 
-你可以指定一个未来的日期，并且当你想要更改该日期时，jQuery 将显示相对于该日期的上一个月和下个月，如下所示：
 
-```javascript
-// 设置日期为未来
-var futureDate = "07/07/2017";
-$("#date3").datepicker("setDate",futureDate);
+
+进入`/path/to/xxx`目录，找到`xxx.json`。
+
+在表达式`cvar = avar + bvar`中，加法运算符（`+`）将`avar`与`bvar`相加，得到它们的和`cvar`
+
+在`List.of(arg0, arg1, arg2)`中，`List`接口的工厂方法`of()`接受一系列的元素，返回包含它们的只读列表。
+
+之后我们这样调用`cmd`命令：`cmd arg0 arg1 arg2`。
+
+```
+if (condVar > someVal) {console.log("xxx")}
 ```
 
 
-
-
-```javascript
-$(document).ready(function() {
-    $("#progressBarDiv1").progressbar({ value: 40 });
-
-    $("#text1").val($("#progressBarDiv1").progressbar("value"));
-
-    $("#newValue").bind("change", function() {
-        var newVal = $("#newVal").val();
-        $("#progressBarDiv1").progressbar("option", "value",
-            parseInt(newVal));
-    });
-});
-```
-
-如你所见，前面的代码块为第二个 HTML `<input>` 字段绑定了更改事件。当用户输入新值时，进度条将使用该值进行更新。
-
-图 4.6 显示在 MacBook 的 Chrome 浏览器中渲染列表 4.7 中 `JQUIProgressBar1.html` 的结果。
-
-![image](img/fig4.6.jpg)
-
-**图 4.6** MacBook 上 Chrome 浏览器中的进度条。
-
-![image](img/cd.jpg) **CD 额外代码示例**
-
-HTML5 页面 `JQUISlider1.html` 展示了如何在 HTML Web 页面中渲染水平和垂直滑动块，这里显示了一个关键代码块：
-
-```javascript
-$(document).ready(function() {
-    $("#sliderDiv1").slider({
-        orientation: 'horizontal',
-        min: 0,
-        max: 200,
-        step: 10,
-        value: 100
-    });
-}
-```
-
-jQuery 滑动块的一个简单用途是使用它们来控制动画效果的速度（也可以通过旋转器实现）。
-
-HTML5 页面 `JQUIAnimSlider1.html` 演示了如何使用滑动块组件来控制动画效果。
-
-目前，jQuery 不提供滚动面板组件，但你仍然可以使用一些选项。其中一种方案是使用 HTML5 进度条，它们易于使用并提供了一些“合理”的功能。如果 HTML5 进度条不能满足你的需求，可以使用支持滚动面板组件的 jQuery 插件，例如 `jScrollPane` 插件，其主页在此：
-
-[`jscrollpane.kelvinluck.com/`](http://jscrollpane.kelvinluck.com/)
-
-`jScrollPane` 插件提供了 `jScrollPane-<version>.min.js` JavaScript 文件，以及一个 CSS 样式表 (`jScrollPane.css`)，你可以用自己的自定义对其进行覆盖。
-
-该插件提供了 20 多个演示，向你展示如何创建滚动条（水平、垂直或两者）、箭头按钮的使用、其 `scrollTo` 和 `scrollBy` 方法、如何在 `IFRAME` 中设置滚动条以及各种其他效果。
-
-jQuery 标签组件支持各种选项、方法和事件，HTML5 页面 `JQUITabs.html` 演示了如何在 HTML Web 页面中渲染标签。
-
-jQuery UI 为切换不同主题提供了很好的支持，这些主题由应用于组件和文本的不同外观视觉效果组成。你可以在这些网站上找到关于 jQuery 主题的良信息：
-
-[`jqueryui.com/docs/Theming`](http://jqueryui.com/docs/Theming)
-
-[`jqueryui.com/docs/Theming/API`](http://jqueryui.com/docs/Theming/API)
-
-[`jqueryui.com/docs/Theming#Using_Theme_Roller_and_Themes`](http://jqueryui.com/docs/Theming#Using_Theme_Roller_and_Themes)
-
-HTML5 页面 `JQUIThemes1.html` 演示了如何为一组组件动态为 HTML Web 页面应用不同的主题：
-
-[`midnightprogrammer.net/post/Change-Page-Themes-Dynamically-Using-JQuery-Theme-Roller.asp`](http://midnightprogrammer.net/post/Change-Page-Themes-Dynamically-Using-JQuery-Theme-Roller.asp)x
-
-![image](img/note.jpg) 从 jQuery UI 1.9 版本起不再支持主题切换器，但你可以使用 github 上的“Super-Theme-Switcher”：
-
-[`github.com/harborhoffer/Super-Theme-Switcher`](https://github.com/harborhoffer/Super-Theme-Switcher)
-
-创建“爆炸”效果
-
-以下示例纯属娱乐，你甚至可能发现 jQuery `effect()` 函数有很好的用途，它能让你创建一些很棒的视觉效果：
-
-```javascript
-$(document).ready(function() {
-    // ... code logic ...
-});
-```
-
-
-
-本章第三部分包含一个代码示例，展示了如何通过 `jQuery` 实现 JPG 文件的拖放（这比“纯”HTML5 拖放 API 更简单）、一个在 `jQuery` 中调用某些 HTML5 文件 API 的示例，最后 是一个用于获取用户地理位置信息的 jQuery 插件。你还将学习到 `jStorage` 和 `jStore` 这两个 jQuery 插件，它们在 `HTML5 Storage APIs` 之上提供了一层抽象。本章的最后部分提供了对 History APIs 的概览，这是一项 HTML5 技术，其 W3C 状态为 WD（工作草案）。
-
-如果你有选择（也许是出于“奢侈”），那么在有更简单的替代方案时，你可能倾向于编码的便利性，而不是被冗长而乏味的代码示例所“困住”。例如，使用 `jQuery` 实现 HTML5 拖放（DnD）的代码示例比直接调用现有 HTML5 DnD API 的代码示例要直观得多。
-
-简单代码示例的另一个优势是，它们能快速向你介绍许多 HTML5 技术，之后你将处于更好的位置来探索这些 HTML5 技术的细微差别。另一种场景是将 `jQuery Mobile` 与其他工具包结合，例如 `PhoneGap`（在第 10 章 中讨论）或 `appMobi`（本书未讨论）。如 `PhoneGap` 等工具包提供了硬件功能支持；你也可以将 `PhoneGap` 与 `jQuery Mobile` 结合。你的应用程序需求和限制将决定你为移动 Web 应用选择工具包（如果有）。
-
-通常，`jQuery` 和 `jQuery Mobile` 可能与其他工具包配合，但你应该检查在线论坛以查看可能影响你 Web 应用的问题。最后，如果你不想使用 jQuery 插件，可以进行网络搜索，寻找在线教程，这些教程说明如何使用纯 HTML5 API 为书中涵盖的所有 HTML5 技术创建 HTML5 网页。
-
-## W3C 审核流程的阶段
-
-如果你不熟悉 W3C 流程的各个阶段，下面提供了以下简要描述（从早期阶段到最终阶段）。
-
-WD（“Working Draft”，工作草案）文档是公开的标准的第一种形式。意见被广泛接受，但不保证会被采纳，且该文档可能与其最终形式有显著差异。
-
-LC（“Last Call”，最后征求）状态涉及创建一个工作组对所有关于规范意见回复的公开记录。该阶段还处理有关规范的错误报告。顺便提一下，HTML5 于 2011 年 5 月在 W3C 达到了 LC 状态。
-
-CR（“Candidate Recommendation”，候选建议）状态比 WD 文档更确定，主要功能已经定稿。其目标是寻求开发社区就该标准的实现程度提供协助。
-
-PR（“Proposed Recommendation”，建议建议）状态意味着该标准已通过了之前的两个阶段，此时文档提交给 W3C 进行最终批准。
-
-REC（“Recommendation”，建议）状态是批准过程的最终阶段，可以比比许多其他行业中发布的技术标准。规范成为 W3C 建议的标准是“有两个 100% 完成且完全互操作的实现”。
-
-回想，第 1 章 描述了一些创建规范的组，并提供了有关本章所讨论技术 API 的详细信息。
-
-## 处于 W3C 建议状态 (REC) 的 HTML5 APIs
-
-你可能会惊讶地发现 SVG 和 MathML 拥有 REC 状态。这两项技术都很成熟，并包含在 HTML5 伞下。然而，本书均未涵盖这两个主题。
-
-## HTML5 地理定位
-
-地理定位允许用户共享他们的当前位置，该位置可以通过以下方法确定：
-
-*   手机基站
-*   设备上的 GPS 硬件
-*   IP 地址
-*   无线网络连接
-
-实际使用的方法取决于浏览器和设备的能力。浏览器随后确定位置并将其传回 Geolocation API。注意，W3C 地理定位规范提到，不能保证 Geolocation API 会返回设备的实际位置。
-
-`geolocation` 对象是 `window.navigator` 的子对象，你可以通过以下类型的代码块检查你的浏览器是否支持地理定位：
-
-```
-if(window.navigator.geolocation) {
-  // 支持地理定位
-} else {
-  // 不支持地理定位
-}
-```
-
-W3C 地理定位 API 允许你在运行在设备上的浏览器浏览器会话中获取地理位置信息。`geolocation` 对象在全局 `window.navigator` 对象可用，通过 `window.navigator.geolocation` 访问。
-
-注意，地理定位 API 需要用户允许 Web 应用程序访问位置信息：
-
-*   `geolocation` 对象包含以下三个方法：
-*   `getCurrentPosition(successCallback, errorCallback, options)`
-*   `watchPosition(successCallback, errorCallback, options)`
-*   `clearWatch(watchId)`
-
-`getCurrentPosition()` 方法尝试获取地理位置信息。如果成功，它将使用 `successCallback` 方法；否则，它调用参数列表中的 `errorCallback` 方法。
-
-`watchPosition()` 方法定期获取地理位置，它还会返回一个 `watchId` 值。成功和失败通过参数列表中的两个 JavaScript 方法处理。
-
-最后，`clearWatch(watchId)` 方法根据 `watchId` 的值停止监听过程。
-
-前两个方法的主要区别是，`watchPosition()` 方法在调用时立即返回一个值，且返回的值唯一标识该监听操作。
-
-这里是显示桌面和移动浏览器地理定位支持的表格：
-
-*[`caniuse.com/geolocation`](http://caniuse.com/geolocation)*
-
-## 使用 getCurrentPosition() 获取位置
-
-`PositionOptions` 对象是一个可选参数，可以传递给 `getCurrentPosition()` 方法和 `watchPosition()` 方法。`PositionOptions` 对象的所有属性也是可选的。
-
-例如，你可以通过以下 JavaScript 代码块定义 `PositionOptions` 对象的实例：
-
-```
-var options = {
-  enableHighAccuracy: true,
-  maximumAge: 60000,
-  timeout: 45000
-};
-```
-
-接下来，我们可以通过指定 JavaScript 成功函数、JavaScript 错误函数以及之前定义的 `options` 变量来调用 `getCurrentPosition()` 方法，如下：
-
-```
-navigator.geolocation.getCurrentPosition(successCallback, errorCallback, options);
-```
-
-## 使用 watchPosition() 跟踪位置
-
-当应用程序需要在每次更改位置时更新位置时，此方法非常有用。监听操作是一个异步操作，调用如下：
-
-```
-var watchID = null;
-var options = { enableHighAccuracy: true, timeout: 30000 };
-
-if (window.navigator.geolocation) {
-  watchID = navigator.geolocation.watchPosition(
-    successCallback, errorCallback, options);
-} else {
-  alert('您的浏览器不支持地理定位。');
-}
-
-function successCallback(position) {
-  console.log("成功获取设备位置");
-}
-
-// 获取位置错误
-function errorCallback(error) {
-  console.log("获取位置错误");
-}
-```
-
-
-
-
-
-如果浏览器支持地理定位（Geolocation），JavaScript 变量 `watcher` 将通过调用 `geolocation` 对象的 `watchPosition()` 方法来初始化。请注意用于处理成功或失败的 JavaScript 函数 `successCallback()` 和 `errorCallback()`。（在案例中，这些函数仅简单地在浏览器的控制台中显示一条消息）。
-
-W3C 地理定位 API 提供了一种方法，通过向 `clearWatch()` 方法传递 `watchId` 来清除监听操作，如下所示：
-
-```javascript
-navigator.geolocation.clearWatch(watcher);
-```
-
-在创建一个新的监听操作后，您可以在成功获取设备位置后移除该监听，如下所示：
-
-```javascript
-function successCallback(position) {
-  navigator.geolocation.clearWatch(watcher);
-  // 在此处对位置进行某些操作
-}
-```
-
-如您所见，JavaScript 函数 `successCallback()` 的作用仅仅是“清除” JavaScript 变量 `watcher`。关键点在于，在您清除此变量之前，您将持续接收信息。
-
-您可以进行 Google 搜索以找到各种支持地理定位的 JavaScript 插件。如果您倾向于使用 jQuery 插件进行地理定位，有几个可选选择，包括这一个：
-
-[`mobile.tutsplus.com/tutorials/mobile-web-apps/html5-geolocation/`](http://mobile.tutsplus.com/tutorials/mobile-web-apps/html5-geolocation/)
-
-## HTML5 跨源资源共享 (CORS)
-
-简而言，“同源策略”允许来自相同站点和协议的脚本执行，它们可以不受限制地访问彼此的方法和属性。该策略还限制了 AJAX 调用仅限于与页面相同的源（但存在一个“漏洞”，在动态加载 `<script>` 标签时可以绕过此限制）。
-
-作为一个简单的例子，以下这对 URL 来自同一站点但协议不同，因此它们不符合“同源策略”的标准：
-
-- [`foo.com`](http://foo.com)
-- [`foo.com`](https://foo.com)
-
-另一方面，跨源资源共享 (CORS) 规定了 Web 服务器允许不同域名的 Web 页面访问资源的方式。尽管 CORS 比“同源策略”更灵活，但它并不允许任何所有请求访问资源。
-
-简单来说，CORS 规范通过客户端和服务器之间简单的标头交换，为跨域通信提供了支持。
-
-CORS 规范的一些新 HTTP 标头是 `Options`、`Origin` 和 `Access-Control-Allow-Origin`。当提供了适当的 CORS 标头时，CORS 向其他域发送异步 HTTP 请求变得可能。
-
-请记住：不存在单一的 CORS API，但任何使用跨源功能的 API 都可以被称为 CORS API。在实践中，CORS API 使用 `XMLHttpRequest` 对象作为发送和接收 CORS 所需标头的“容器”，还使用了 `withCredentials` 属性，该属性可用于程序化地判断 `XMLHttpRequest` 对象是否支持 CORS。
-
-要获取有关 CORS 的详细描述，请进行互联网搜索，您将找到许多此类信息的免费文章。
-
-## W3C 候选建议状态 (CR) 中的 HTML5 API
-
-本章的这一部分包含一组处于候选建议（Candidate Recommendation）状态的 HTML5 API。尽管 HTML5 技术 Navigation Timing、RDFa 和 Selectors 拥有 CR 状态，但本书并未讨论它们。
-
-## 电池 API (The Battery API)
-
-电池 API 由 DAP（设备 API）工作组维护，该组提供有关主机设备电池状态的信息。来自 `Battery1.html` 的以下简单代码片段向您展示如何在每次电量变化时将电量写入控制台：
-
-```javascript
-navigator.battery.onlevelchange = function () {
-  console.log(navigator.battery.level);
-};
-```
-
-下一节包含一个基于 AJAX 的代码示例，展示了如何使用下文描述的新 `FormData` 对象配合 XHR2。
-
-## XMLHttpRequest Level 2 (XHR2)
-
-`XMLHttpRequest` Level 2 规范支持以下新功能：
-
-- 处理如 `File`、`Blob` 和 `FormData` 字节流的上传和下载
-- 在上传和下载期间显示进度事件
-- 创建跨源请求
-- 创建匿名请求（不带 HTTP Referrer）
-- 为请求设置超时
-
-在查看 XHR2 代码示例之前，我们将从一个展示如何发送简单 AJAX 请求的代码示例开始，接着是一个使用 jQuery 的 AJAX 请求。
-
-### 不使用 jQuery 发起 AJAX 调用
-
-本节中的代码示例展示了您如何发起“传统的” AJAX 调用。稍后，我们将查看如何使用 jQuery 完成相同的任务。此示例的目的是说明 jQuery（再次）让您能够编写更简单、易于维护、调试和通过附加功能进行增强的代码（这些您已经从整本书看到的代码示例中知道了）。
-
-![image](img/note.jpg) *您必须从实际的 Web 服务器启动 BasicAjax1.html（而不是文件导航器），因为此网页读取了名为 sample.xml 的本地文件的内容。* 
-
-***列表 5.1 BasicAjax1.html***
-
-```html
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8 />
-  <title>Ajax</title>
-  <script>
-    var xmlHTTP, myFile;
-    var url = "http://localhost:8080/sample.xml";
-    function loadXML(url) {
-      if (window.XMLHttpRequest) {
-        // Chrome, Firefox, Safari
-        xmlHTTP = new XMLHttpRequest();
-      } else {
-        // IE5
-        xmlHTTP = newObject("XMLHTTP");
-      }
-      xmlHTTP.onreadystatechange = callback;
-      xmlHTTP.open("GET", url);
-      xmlHTTP.send();
-    }
-    function init() {
-      loadXML(myFile, function() {
-        if(xmlHTTP.readyState==4 && xmlHTTP.status==200) {
-          document.getElementById("myDiv").innerHTML = xmlHTTP.responseText;
-        }
-      });
-    }
-  </script>
-</head>
-<body onload="init()">
-  <div id="myDiv"></div>
-</body>
-</html>
-```
-
-列表 5.1 包含一个在 页面加载时执行的 JavaScript 函数 `init()`。`init()` 函数调用 `loadXML()` 函数，并传入一个在 AJAX 请求完成后执行的 JavaScript 函数。
-
-`loadXML()` 函数包含了初始化 JavaScript 变量 `xmlhttp` 的条件逻辑，随后是一个设置回调函数名称、指定 GET 方法和 `url` 变量中的 URL（代码示例中未显示）并发送实际 AJAX 请求的代码块，如下：
-
-```javascript
-xmlHTTP.onreadystatechange = callback;
-xmlHTTP.open("GET", url);
-xmlHTTP.send();
-```
-
-当 AJAX 请求完成后，列表 5.1 中的 HTML `<div>` 元素将用 AJAX 请求返回的数据进行更新。在代码示例中， XML  `sample.xml` 是一个包含 3 个矩形的 SVG 文档，如下：
-
-```xml
-<?xml version='1.0' encoding='iso-8859-1'?>
-<svg xmlns="http://www.w3.org/2000/svg"
-      xmlns:xlink="http://www.w3.org/1999/xlink"
-      width="100%" height="100%">
-  <rect x="50" y="10" width="100" height="200" stroke="blue" fill="red" />
-  <rect x="200" y="10" width="100" height="200" stroke="blue" fill="green" />
-  <rect x="350" y="10" width="100" height="200" stroke="blue" fill="blue" />
-</svg>
-```
-
-
-
-
-
-如果你是 AJAX 的新手，那么 Listing 5.1 中的代码可能看起来复杂，甚至可能让人困惑。幸运的是，jQuery 通过屏蔽底层细节简化了创建 AJAX 请求的过程，正如你将在节中看到的那样。
-
-## 使用 jQuery 调用 AJAX (#toc.html_toc-h2-0033)
-
-此示例是 Listing 5.1 的修改版本，它在代码中添加了 jQuery 功能。有几个 jQuery 方法提供了基于 AJAX 的功能，包括 `jQuery.load()`、`jQuery.get()`、`jQuery.post()` 和 `jQuery.ajax()`。
-
-![image](img/note.jpg) *你必须从实际 Web 服务器（而不是文件管理器）启动* `JQueryAjax1.html` *因为此 Web 页面读取了名为 sample.xml 的本地文件内容。*
-
-Listing 5.2 显示了 `JQueryAjax1.html` 的内容，它说明了如何在 HTML Web 页面中使用这些 jQuery AJAX 方法中的第一个，以产生与 Listing 5.1 相同的结果。
-
-***LISTING 5.2 JQueryAjax1.html***
-
-```html
-<!DOCTYPE html>
-<html>
-<head>
- <meta charset=utf-8 />
- <title>JQuery Ajax</title>
-  <script src="http://code.jquery.com/jquery-2.0.0b1.js"></script>
-  <script src="http://code.jquery.com/jquery-migrate-1.1.0.js"></script>
-</head>
-<body>
-  <div id="myDiv"></div>
-  <script>
-    var url = "http://localhost:8080/sample.xml";
-    $(document).ready(function() {
-      $("#myDiv").load(url, function() {});
-    });
-  </script>
-</body>
-</html>
-```
-
-Listing 5.2 仅包含一行通过 `jQuery. load()` 方法执行 AJAX 请求的代码，如下所示：
-
-```javascript
-$("#myDiv").load(url, function() {});
-```
-
-执行 Listing 5.2 中代码的结果与执行 Listing 5.1 的结果相同。`id` 属性为 `myDiv` 的 HTML `div` 元素的内容被 `sample.xml` 的内容替换，并渲染三个基于 SVG 的矩形。
-
-或者，你可以如下所示使用 `jQuery.ajax()` 方法：
-
-```javascript
-$.ajax({
-  url: url,
-  type: "get",
-  success: GotData,
-  dataType: 'xml'
-});
-```
-
-在前面的代码块中，你还需要定义一个名为 `GotData()` 的 JavaScript 函数，并在其中处理 Ajax 调用结果。
-
-正如你所预期的，jQuery 提供了更多的 AJAX 功能。具体来说，jQuery 提供了对以下回调钩的支持：
-
-- `beforeSend()`
-- `fail()`
-- `dataFilter()`
-- `done()`
-- `always()`
-
-`beforeSend()`、`error()` 和 `done()` 函数的命名直观，且行为符合预期。`dataFilter()` 回调是第一个接收到数据的回调；在它完成处理后，将调用 `done()` 回调。最后，无论 AJAX 用的结果是成功还是错误，都会调用 `always()` 回调。
-
-这是一个使用链式调用结合上述几个 API 发起 AJAX 请求的简洁 jQuery 代码示例：
-
-```javascript
-// 在发送请求后立即分配处理器，
-// 并获取此请求的 jqxhr 对象的引用
-var jqxhr = $.ajax( "example.php" )
-    .done(function() { alert("success"); })
-    .fail(function() { alert("error"); })
-    .always(function() { alert("complete"); });
-//在此处执行其他工作 …
-// 为上述请求设置另一个完成函数
-jqxhr.always(function() { alert("second complete"); });
-```
-
-如果你想探索 jQuery 中更多相关 AJAX 功能，这里是 jQuery AJAX 方法的列表：
-
-- [`api.jquery.com/category/ajax/`](http://api.jquery.com/category/ajax/)
-- [`api.jquery.com/ajaxComplete/`](http://api.jquery.com/ajaxComplete/)
-
-下一节包含一个使用新 `FormData` 对象的代码示例。
-
-## 使用 XMLHttpRequest Level 2 (XHR2) 的 AJAX 请求 (#toc.html_toc-h2-0034)
-
-Listing 5.3 显示了 `AjaxForm.html`，它说明了如何使用新的 `FormData` 对象创建一个 HTML5 Web 页面。
-
-***LISTING 5.3 AjaxForm.html***
-
-```html
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<title>Ajax Form</title>
-<script>
-function sendForm(form) {
-  var formData = new FormData(form);
-  var xhr = new XMLHttpRequest();
-  xhr.open("POST", "ajax.php", true);
-  xhr.onload = function(e) {
-    // do something
-  };
-  xhr.send(formData);
-}
-</script>
-</head>
-<body>
-<form id="myform" action="ajax.php" onsubmit="sendForm(this); return false;">
-<input type="text" name="username">
-<input type="number" name="age">
-<input type="submit" value="Submit">
-</form>
-</body>
-</html>
-```
-
-Listing 5.3 显示了 `AjaxForm.html`，它说明了如何使用新的 `FormData` 对象创建一个 HTML5 Web 页面。
-
-
-
-
-
-# jQuery 和 HTML5 拖放操作
-
-在 jQuery 中，拖放操作异常简单：对于一个 HTML 元素只需要一行代码。
-
-`Listing 5.4` 显示了 HTML5 Web 页面 `JQDragAndDrop1.html` 的内容，该页面演示了如何使用 jQuery 轻松地创建一个带有拖放功能的 HTML5 Web 页面。
-
-### 列表 5.4 JQDragAndDrop1.html
-
-```html
-<!doctype html>
-<html lang="en">
-<head>
- <meta charset=utf-8 />
- <title>JQuery DnD</title>
-<style>
-  div[id^="draggable"] {
-    position:relative; width: 100px; height: 100px;
-  }
-  #draggable1 { background: red; }
-  #draggable2 { background: yellow; }
-  #draggable3 { background: blue; }
-</style>
-  <script src="http://code.jquery.com/jquery-2.0.0b1.js">
-  </script>
-  <script src="http://code.jquery.com/jquery-migrate-1.1.0.js">
-  </script>
-<!-- version 1.8.9 of jQuery UI causes an error:
-<script src="http://ajax.googleapis.com/ajax/libs/jqueryui
-                               1.8.9/jquery-ui.min.js">
-</script>
--->
-<script src="http://ajax.googleapis.com/ajax/libs/jqueryui
-                               1.10.1/jquery-ui.min.js">
-</script>
-  <script
-    src="http://code.jquery.com/jquery-ui-1.8.14.custom.min.js">
-  </script>
-</head>
-<body>
-  <div id="content" style="height: 400px;">
-    <div id="draggable1">
-        <img src="sample1.png" width="100" height="100" />
-    </div>
-    <div id="draggable2">
-        <img src="sample2.png" width="100" height="100" />
-    </div>
-    <div id="draggable3">
-        <img src="sample3.png" width="100" height="100" />
-    </div>
-  </div>
-  <script
-    $(document).ready(function() {
-      $('#draggable1').draggable();
-      $('#draggable2').draggable();
-      $('#draggable3').draggable();
-    });
-  </script>
-</body>
-</html>
-```
-
-`Listing 5.4` 包含一段 jQuery 代码，它使用此类代码段使得三个 HTML `div` 元素（定义在 `body` 元素中）变为可拖拽的：
-
-```javascript
-$('#draggable2').draggable();
-```
-
-`body` 元素包含三个 `div` 元素，每个元素都包含一张 PNG 图片，你可以在屏幕上拖动这些图片。
-
-![image](img/fig5.1.jpg)
-
-**图 5.1** MacBook 上的 Chrome 浏览器中的三张图片。
-
-`图 5.1` 显示了在 MacBook 的 Chrome 浏览器中渲染 `Listing 5.4` 的结果。
-
-`图 5.2` 展示了在 MacBook 的 Chrome 浏览器中将 `Listing 5.4` 中的图片拖动到不同位置的示例。
-
-![image](img/fig5.2.jpg)
-
-**图 5.2** MacBook 上的 Chrome 浏览器中的三张被拖动的图片。
-
-关于 jQuery 拖放（包括选项列表）的更多信息可以在此处获取：`http://jqueryui.com/demos/draggable/`。这里列出了几个用于拖放功能的 jQuery 插件：`http://plugins.com/projects/type=45`。你也可以在 HTML5 DnD 中配合使用 jQuery Mobile，尽管我们不会讨论相关示例（由于空间限制），但你可以进行互联网搜索查找教程和代码示例，或者从此链接中的详情开始：`http://www.plugins.com/Scripts/View/Jquery-Drag-Drop/`。
-
-# jQuery 和 HTML5 本地存储
-
-HTML5 提供了本地存储（local storage）和会话存储（session storage），使 Web 页面能够本地存储。虽然书中没有讨论这些内容，但你可以通过互联网搜索来了解它们的功能。本节介绍了 jQuery 插件，它们为本地存储和会话存储提供了一层抽象。
-
-jQuery 插件 `jStorage` 是一个跨浏览器插件，允许你使用 jQuery 语法管理本地存储中的数据，其主页在此：`http://www.jstorage.info/`。`jStorage` API 允许你获取、设置和删除存储中的数据。你还可以检查存储是否可用，以及存储数据的大小（以字节为单位）。为了方便起见，这里列出了命名直观的 `jStorage` API：`$.jStorage.set(key, value)`、`$.jStorage.get(key)`、`$.jStorage.deleteKey(key)`、`$.jStorage.flush()`、`$.jStorage.index()`、`$.storageStorage()`storage()`()`$.StorageStorage()`()`()``Storage.re()`()`Init()`jStorage.storageAvailable()`。
-
-如果本地存储或会话存储不可用（例如在 IE6 或 IE7 中），`jStorage` 会添加填充程序（polyfills）来支持此功能。`Listing 5.5` 显示了 `JQJStorage1.html` 的内容，并演示了如何使用 `jStorage` 保存数据。
-
-**列表 5.5 JQJStorage1.html**
-
-```html
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset=utf-8 />
-  <title>JStorage Example</title>
-  <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.1/jquery-ui.min.js">
-  <script src="http://code.jquery.com/jquery-2.0.0b1.js"></script>
-  <script src="http://code.jquery.com/jquery-migrate-1.1.0.js"></script>
-  <script src="http://code.jquery.com/jquery-ui-1.8.14.custom.min.js"></script>
-  <script src="jstorage.js"></script>
-</head>
-<body>
-  $(document).ready(function() {
-    // 检查存储中是否存在 "key"
-    var value = jStorage.get("key");
-    if(!value){
-      // 从服务器加载数据
-      value = load_data_from_server()
-      // 保存值
-      jStorage.set("key",value)
-    }
-  });
-  <div id="content"></div>
-</body>
-</html>
-```
-
-`Listing 5.5` 中的核心功能位于一个 JavaScript 代码块中，通过条件逻辑检查存储中是否存在数据项 `key`。如果该值不存在，则调用 `load_data_from_server()` 函数（该函数未实现），并将结果存储在本地存储中。你也可以使用用于 HTML5 存储的 jQuery 插件 `jStore`。
-
-# HTML5 本地存储库
-
-有很多本地存储的 JavaScript 工具包，其中一些使用了 jQuery（另一些则没有）。本节简要介绍一些可用工具包。
-
-*lscache* 使用 HTML5 localStorage 模拟 memcache 功能，在客户端浏览器缓存数据，并为每个数据项设置过期时间。`lscache` 的首页在此：`https://github.com/pamelafox/lscache`。如果超过 localStorage 限制（约 5MB），将移除接近过期的项目。如果 localStorage 不可用，`lscache` 不缓存任何内容（所有缓存请求都返回 `null`）。`lscache` 方法包括 `set()`、`get()`、`remove()` 和 `flush()`，且此处提供一个 jQuery `lscache` 插件：`https://github.com/mckamey`。
-
-*YQL LocalCache* 是一个用于 YQL 的封装器以支持本地存储，其首页在此：`https://github.com/phunkei/autoStorage`。一个使用 YQL LocalCache 使用自解释参数的调用示例在此：
-
-```javascript
-yqlcache.get({
-  yql: 'select * from flickr.photos.search where text="warsaw"',
-  id: 'myphotos',
-})
-```
-
-
-
-
-
-```javascript
-cacheage: ( 60*60*1000 ),
-  callback: function(data) {
-    console.log(data);
-  }
-});
-```
-
-`callback` 中返回的数据是一个包含两个属性的对象：`data`（YQL 数据）和 `type`（缓存数据为 `cached`，新缓存数据为 `freshcache`）。你可以在这里获取额外的代码示例：
-
-[`github.com/codepo8/yql-localcache`](https://github.com/codepo8/yql-localcache)
-
-`Savify` 是一个 jQuery 插件，用于在用户填写表单时自动记录其进度。它的主页在此处：
-
-[`github.com/blackcoat/Savify`](https://github.com/blackcoat/Savify)
-
-## jQuery 和 HTML5 文件 API
-
-HTML5 File APIs 允许你在文件系统上创建、读取和写入文件。第一步是获取 HTML5 `FileSystem` 的访问权限，之后你就可以执行文件相关操作。你可以在这里阅读这些 API 并查看一些代码示例（并确保检查你的目标浏览器是否支持）：
-
-[`blueimp.github.com/jQuery-File-Upload/`](http://blueimp.github.com/jQuery-File-Upload/)
-
-[`www.htmlgoodies.com/html5/other/responding-to-html5-filereader-events.html`](http://www.htmlgoodies.com/html5/other/responding-to-html5-filereader-events.html)
-
-![image](img/cd.jpg) CD 包含 HTML Web 页面 `JQFileInfo1.html`，它说明了如何使用 `jQuery` 来显示用户选择的文件属性。一个更有趣（且有用）的示例是列表 5.6 中的 `JQFileUpload2.html`，它说明了如何使用 `jQuery` 和 `XHR2` 上传文件。
-
-### 列表 5.6 JQFileUpload2.html
-
-```html
-<!DOCTYPE HTML>
-<html lang="en">
-<head>
-  <meta charset=utf-8 />
-  <title>File Upload with XHR2</title>
-  <script src="http://code.jquery.com/jquery-2.0.0b1.js"></script>
-  <script src="http://code.jquery.com/jquery-migrate-1.1.0.js"></script>
-</head>
-<body>
-  <script>
-    $(document).ready(function () {
-      var url = "http://localhost:8080/";
-      $("body").on("change", '#fileUploader', function() {
-        // 准备 post 数据
-        var data = new FormData();
-        data.append('uploadfile', this.files[0]);
-        // 调用 jQuery .ajax 方法：
-        $.ajax({
-          url: url,
-          type: 'POST',
-          contentType: false,
-          processData: false,
-          data: data,
-          success:  function(data) {
-            //在此处做些什么
-          },  
-          dataType: 'text'
-        });
-      });
-    });
-  </script>
-  <div>
-    <input id="fileUploader" type="file" multiple />
-  </div>
-</body>
-</html>
-```
-
-列表 5.6 包含一个 HTML `<input>` 字段，允许用户从文件系统选择文件。选择文件后，会触发 jQuery 的 `change` 事件，并创建且填充一个 `XHR2` 对象（前文已讨论过），所示：
-
-```javascript
-var data = new FormData();
-data.append('uploadfile', this.files[0]);
-```
-
-选中的文件通过 jQuery 的 `.ajax()` 方法上传，该方法包含一个 `success` 函数，该函数在 AJAX 请求完成后会被调用。请注意，你必须将 `contentType` 和 `processData` 的值设置为 `false`，否则你将在 Web 检查器中收到以下错误：`Uncaught TypeError: Illegal invocation`。
-
-以下链接提供了关于这两个参数的解释：
-
-[`stackoverflow.com/questions/1243170/html5-formdata-upload-with-rubyonrails`](http://stackoverflow.com/questions/1243170/html5-formdata-upload-with-rubyonrails)
-
-### jQuery-filedrop
-
-如果你想在 HTML5 页面中使用 jQuery 插件上传文件，有几种可选的插件，例如跨浏览器插件 `jquery-filedrop`。它的主页在此处：
-
-[`github.com/weixiyen/jquery-filedrop`](https://github.com/weixiyen/jquery-filedrop)
-
-## HTML5 History APIs
-
-在 HTML5 之前，浏览器对历史相关的 API 提供的功能有限。你可以找到浏览器历史中的项目数量、前进和后退以及几个链接，所示：
-
-```javascript
-console.log(history.length);
-console.log(history.forward());
-console.log(history.back());
-console.log(history.go(-2));
-```
-
-有几个新的 API 可用，所示：
-
-```javascript
-history.pushState(data, title, url);
-history.replaceState(data, title, url);
-```
-
-`history.pushState()` 方法中的参数如下：
-* `data` 是某种类型的结构化数据，被分配给历史记录。
-* `title` 是历史下拉菜单中项目的名称，由浏览器的后和前进按钮显示。
-* `url` 是显示在地址栏中的（可选）URL。
-
-`history.replaceState()` 方法中的参数与 `history.pushState()` 方法相同，不同在于前者更新浏览器历史记录中已存在的信息。此外，还有一个新的 `popstate` 事件，它在用户查看其历史记录时发生，你可以按照以下方式使用它：
-
-```javascript
-window.addEventListener("popstate", function(event) {
-  //在此处做些什么
-});
-```
-
-请记住，不同的浏览器以不同的方式实现 HTML5 浏览器历史，因此以下 JavaScript 工具包非常有用：
-
-[`github.com/balupton/History.js/`](https://github.com/balupton/History.js/)
-
-`History.js` 工具包支持 `jQuery`、`MooTools` 和 `Prototype`。在 HTML5 浏览器中，你可以直接修改 URL 而无需求助于哈希值（例如 `example.com/#foo/`）。此外，更改片段不会触发页面刷新。
-
-## HTML5 离线 Web 应用程序
-
-离线 Web 应用程序的目的很简单：用户即使在没有连接互联网也可以操作应用程序。当用户访问互联网时，他们的数据更改将同步，以确保所有内容处于一致状态。
-
-包含演示、额外链接和类教程信息的网站在此处：
-
-[`appcachefacts.info/`](http://appcachefacts.info/)
-
-HTML5 规范要求一个所谓的“清单文件”（建议后缀为 `.appcache`），它包含以下三个部分：
-* `CACHE`：将要缓存的文件列表
-* `NETWORK`：缓存之外的、只能在线访问的文件
-* `FALLBACK`：指定当用户尝试访问未缓存资源时显示的资源
-
-作为一个简单的示例，列表 5.7 了一个了一个名为 `MyApp.appcache` 的示例清单文件的内容。
-
-### 列表 5.7 MyApp.appcache
-
-```text
-CACHE MANIFEST
-# Version 1.0.0
-CACHE:
-Index.html
-Cachedstuff.html
-Mystyle.css
-Myimage.jpg
-NETWORK:
-*
-FALLBACK:
-/noncached.html
-```
-
-你必须确保清单文件以以下 MIME 类型提供：`text/cache-manifest`。
-
-其次，使用离线功能的 Web 应用程序必须在其一个页面顶部引用清单文件：
-
-```html
-<html lang="en" manifest="mymanifest.manifest">
-```
-
-如果你有一个由提供商托管的 Web 页面，可以通过执行以下命令验证该 Web 页面包含正确的 MIME 类型：
-
-```bash
-curl –I http://www.myprovider.com/mymanifest.manifest
-```
-
-## 检测在线和离线状态
-
-在 HTML5 Web 页面中确定应用程序是否离线的简单方法是使用以下代码片段：
-
-```javascript
-if(navigator.online) {
-  // 程序在线
-} else {
-  // 程序离线
-}
-```
-
-对于使用 `jQuery Mobile` 的移动应用程序，你可以使用以下代码块：
-
-```javascript
-$(document).bind("offline", function() {
-  // 程序离线
-});
-```
-
-如上述代码块所示，绑定 `offline` 事件对于处理用户正在查看应用程序时应用程序变为离线的情况非常有用。
-
-
-
-
-
-此外，你只有在在线时才会向服务器发送数据，并在离线时通过 `HTML5 LocalStorage` 在本地存储数据。
-
-jQuery 插件 `jquery-offline` 是一个跨浏览器插件，让你可以使用 jQuery 语法编写离线应用程序。它的主页在这里：
-
-[`github.com/wycats/jquery-offline`](https://github.com/wycats/jquery-offline)
-
-## 总结
-
-本章概述了各种 HTML5 技术，并根据它们目前的 W3C 状态对其进行了分类。为了方便起见，下面按字母顺序列出了这些 HTML5 技术：
-
-*   CORS
-*   AJAX (XHR2)
-*   拖放
-*   File APIs
-*   表单
-*   地理位置信息
-
-# 第 6 章
-
-## 单页应用简介
-
-本章介绍了单页应用，通常称为 `SPAs`。本章的第一部分简要讨论了在 JavaScript 中创建单页应用的理由。`XHR2` 部分包含与 AJAX 相关的示例，从一个通用的 AJAX 代码示例开始，随后是一个基于 jQuery 的 AJAX 代码示例。本章的第二部分概述了 `BackboneJS` 和 `Twitter Bootstrap`。本章第三部分包含了 `Jade`、`MongoDB`、`Mongoose` 和 `NodeJS` 的简要介绍。本章最后部分提供了一个极简 `SPA` 的代码，你可以用自己的自定义代码对其进行增强。
-
-## 什么是 SPA？
-
-让我们对 Web 应用程序架构进行一次旋风式的“回顾”。首先是服务器向网站交付静态页面，后来演变为可以向网站交付动态生成的 Web 页面（使用 `PHP` 等语言）的服务器。接着是 `AJAX` 的出现，它提供了部分页面刷新功能，这种方式效率更高而且提供了更好的用户体验。然后，出现了一系列基于 Comet 的解决方案，以使浏览器和服务器之间的通信更高效。最近，`HTML5 WebSockets` 通过使用 `WebSocket` 协议的持久 `TCP` 连接，在浏览器和服务器之间提供了双向全双工异步通信。这是对所有早期 Web 应用基础的 `HTTP` 协议的改进。
-
-在此期间，人们设计了多种在浏览器和服务器之间划分代码的策略。其中一种方法涉及“厚服务器”，其中大多数操作（如生成动态 Web 页面和用户身份验证/校验）都在服务器上执行，并配合“薄客户端”（或浏览器），后者从服务器渲染 Web 页面，但额外的功能有限。
-
-### 现代 Web 架构
-
-最近，JavaScript 工具包大量出现，使人们能够使用“厚客户端”和“薄服务器”开发 Web 应用。尽管架构具有多样性（即使在最近的网站之间），但许多现代 Web 应用具有以下架构：
-
-*   `DOM`（包含只读数据）
-*   Models（包含应用程序的状态和数据）
-*   Modules（小型独立子系统）
-*   Views（它们通过通知观察模型的变化）
-
-`SPAs` 基于上述现代 Web 应用的特征：它们有一个处理数据的模型层和一个从模型中读取数据的视图层，因此它们可以在不涉及服务器往返的情况下重绘 UI，这可以给 `SPAs` 带来更具“原生感”的感觉。更少的往返减少了服务器的负载，这显然是另一个优势。
-
-然而，请记住以下几点。首先，`SPA` 没有“规范”，而且 `SPA` 正随着社区人士的贡献随时间的推移而不断演变和改进。其次，某些使用 `SPA` 的工具包也会使用 `AJAX`，这可能破坏了 `SPA` 的“理想”设计。因此，不同的工具包（以及基于这些工具包的应用程序）对 `SPA` 有不同的实现，这反过来增加了你找到适合你特定需求的工具包的可能性。
-
-### MVC 和 MV 模式
-
-`MVC`（模型-视图-控制器）模式有完善的文档（有大量的在线信息），并且已经流行多年；然而，控制器的概念在 `SPAs` 和某些 JavaScript 工具包中可能不存在。“传统的” Web 应用使用页面刷新在独立视图之间进行导航，而基于 `SPA` 的 JavaScript Web 应用可以（通过 `AJAX`）从服务器检索数据，并在同一个 Web 页面的不同视图中动态渲染数据。`Routers`（路由器）用于导航目的，因为在 `SPA` Web 应用中导航到不同视图时，URL 不会更新。
-
-尽管控制器通常在模型变化时更新视图（反之亦然），但大多数 JavaScript `MVC` 框架在控制器的使用上倾向于与 `MVC` 模式有所不同。随着设计在社区中演变，根据个人偏好和经验出现了各种变体。由于没有哪个个人或组织推广 `MVC` 理念，这些变体可以自由共存。
-
-与你在在线文章中读到的相反，`BackboneJS` 并没有 `MVC` 模式：当前版本中缺失控制器。（另外注意，早期版本中的 `Controller` 对象在后期版本中重命名为 `Router` 对象。）某些类似控制器的逻辑位于 `BackboneJS` 视图中以及 `BackboneJS` 路由器中（后者用于管理应用程序状态）。`BackboneJS` 视图在模型发生变化时接收通知，并据此更新视图。`BackboneJS` 最好被归类为具有 `MV` 架构。
-
-此外，还有其他模型，例如 `MVP`（模型-视图-演示者）模式和 `MVVM`（模型-视图-视图模型，用于 `.NET` 框架和 `KnockoutJS`）。`MVP` 似乎更适合有大量大型视图的 Web 应用，其中演示者（Presenter）的角色与控制器重叠。
-
-你可以在这里了解更多关于 `MVC` 和 `MVP` 的信息：
-
-[`martinfowler.com/eaaDev/uiArchs.html`](http://martinfowler.com/eaaDev/uiArchs.html)
-
-### 在 SPA 中生成 Web 页面
-
-正如你所知，许多 Web 页面是在服务器上动态生成的，并将这些页面发送到浏览器。在现代 Web 应用中，一种解决方案是使用客户端模板生成 Web 页面。另一种解决方案是使用代码；这是更传统的方法。服务器渲染和客户端渲染 Web 页面的区别有助于强化这样一个事实：*服务器*渲染特定的 Web 页面，但*客户端*渲染随后的更新。
-
-### 在 SPA 中处理模型相关事件
-
-处理模型数据变化的两种主要方案是观察者（observers）和事件发射器（event emitters），这两种方法之间没有太大区别。当发生变化时，“绑定”到该变化事件的代码会被触发。例如，事件是在对象上注册的：
-
-```
-MyApp.on('change', function() { ... });
-```
-
-而观察者是通过全局名称注册的：
-
-```
-Framework.registerObserver(window.MyApp,'change',function(){...});
-```
-
-观察者通常具有某种名称解析系统，你使用字符串来引用对象。通常为观察者添加一个全局名称解析系统（使用字符串而不是直接访问对象），以便使用观察者，观察者只有在它们所引用的对象实例化后才能注册。
-
-### 用于 SPA 的客户端技术
-
-
-
-
-
-简而言之，SPA（单页应用）的客户端技术包括如 `jQuery`、`BackboneJS` 和 `Jade` 等工具包。然而，你完全可以使用其他工具包，例如 `BackBoneJS` 的变体（如 `Spine`、`Vertebrae` 等），或完全不同的工具包（如 `EmberJS`）。除了 `Jade` 之外，还有其他模板引擎，包括 `Mustache` 和 `Handlebars`。请在互联网上搜索这些工具包的信息以及功能对比。
-
-# BackboneJS
-
-Backbone.js 是一个用于开发结构化 Web 的开源 JavaScript 工具包，其主页在此：
-
-*http://Backbone.js.org/*
-
-尽管 `Backbone.js` 没有基于 MVC（模型-视图-控制器）模式，但它们之间有一些相似之处。`Backbone.js` 提供了具有键值绑定和自定义事件的 `models`（模型）、具有枚举函数 API 的 `collections`（集合）以及具有声明式事件处理的 `views`（视图），这一切都通过 RESTful JSON 接口与你现有的 API 连接。`Backbone.js` 是 `DocumentCloud` 的开源组件，并在 GitHub 上以 MIT 软件许可发布，你可以在那里找到源代码、在线测试套件、示例应用程序、教程列表以及使用 `Backbone.js` 的真实项目。
-
-从其 GitHub 仓库下载 `Backbone.js`：
-
-*https://github.com/documentcloud/backbone/*
-
-## BackboneJS 简介绍
-
-以下子节将为你提供关于 `BackboneJS` 中模型（models）、视图（views）、集合（collections）和路由器（routers）的简单概述。在读完本节后，你可以搜索在线教程来查看 `BackboneJS` 应用的示例。
-
-### 什么是模型（Model）？
-
-根据 Backbone 作者的说法：
-
-“模型是任何 JavaScript 应用的核心，包含了交互数据以及围绕它的大部分逻辑：转换、验证、计算属性和访问控制。”
-
-每当你创建一个模型的新实例时，就会调用 `initialize()` 方法（这在 `BackboneJS` 中实例化新视图时也是如此）。下面的代码块显示了一个简单的示例：
-
-```javascript
-Vehicle = Backbone.Model.extend({
-    initialize: function(){
-        alert("I am a vehicle");
-    }
-});
-
-var vehicle = new Vehicle;
-```
-
-你可以通过两种方式之一在模型中设置参数。一种方法是使用构造函数，如下：
-
-```javascript
-var vehicle = new Vehicle({model: "Ford", make: "Mustang"});
-```
-
-另一种方法是使用 `set` 方法，如下：
-
-```javascript
-vehicle.set({make: "Ford", model: "Mustang"});
-```
-
-在设置属性/值对后，你可以如下所示检索它们的值：
-
-```javascript
-var make  = vehicle.get("make");  // "Mustang"
-var model = vehicle.get("model"); // "Ford"
-```
-
-你还可以通过以下方式设置默认值：
-
-```javascript
-Vehicle = Backbone.Model.extend({
-    defaults: {
-        make:   "Ford",
-        model:  "Mustang"
-    },  
-    initialize: function(){
-        alert("I am a vehicle");
-    }  
-});
-```
-
-### 模型更改（Model Changes）
-
-你可以监听模型的变化，并在检测到变化时执行代码。
-
-例如，这里是 `initialize` 方法的新内容：
-
-```javascript
-initialize: function(){
-    alert("I am a vehicle");
-    this.bind("change:model", function(){
-        var model = this.get("model");
-        alert("Changed my model to " + model);
-    });
-}
-```
-
-还有许多其他用于操作模型的功能，你可以在在线文档中查阅。
-
-### 什么是视图（View）？
-
-简单来说，`Backbone` 视图提供了应用程序中数据模型的视觉表示。此外，`Backbone` 视图监听事件并对模型的变化做出响应，以确保给定视图中的数据与其关联的模型保持同步。
-
-```javascript
-SearchView = Backbone.View.extend({
-    initialize: function(){
-        alert("A view of a vehicle.");
-    }
-});
-
-// initialize 函数类似于构造函数，
-// 它在实例化 Backbone View 时总是被调用
-var search_view = new SearchView();
-```
-
-### 什么是集合（Collection）？
-
-`BackboneJS` 中的 `Collection`（集合）是模型的有序集合。`Collections` 之所以有用是因为你可以在它们内部包含方法，用于从服务器获取数据，在返回集合之前对数据进行准备，并为调试/测试设置示例集合。
-
-此外，你还可以为集合添加事件监听器并将视图挂载到集合上，而在简单的 JavaScript 数组中无法做到这一点。
-
-作为一个简单的示例，我们可以使用上一节中创建的 `Vehicle` 模型在 `Backbone` 中创建如下所示的 `Collection`：
-
-```javascript
-var Cars = Backbone.Collection.extend({
-  model: Vehicle
-});
-
-var vehicle1 = new Vehicle({ make: "Ford",  model: "Mustang"  });
-var vehicle2 = new Vehicle({ make: "GM",     model: "Camaro"    });
-var vehicle3 = new Vehicle({ make: "GM",   model: "Corvette" });
-var myCars = new Cars([ vehicle1, vehicle2, vehicle3]);
-console.log( myCars.models ); // [vehicle1, vehicle2, vehicle3]
-```
-
-### 什么是路由器（Router）？
-
-`BackboneJS` 路由器用于映射需要可书签的 URL 碎片。请记住，路由应该至少包含一条路由。
-
-作为一个简单的示例，以下代码定义了一个 `Router`：
-
-```javascript
-var MyAppRouter = Backbone.Router.extend({
-  routes: {
-    "*": "defaultRoute"
-  },
-  defaultRoute: function( actions ){
-    // 传递的变量与路由匹配
-    alert( actions );
-  }
-});
-
-// 初始化路由器
-var appRouter = new MyAppRouter();
-
-// 启动 Backbone 历史（可书签 URL 需要）
-Backbone.history.start();
-```
-
-到此，对 `BackboneJS` 的简要介绍结束。下一节提供了一些实用的链接。
-
-## 有用链接
-
-`BackboneJS` 教程合集在此：
-
-*http://backbonutorials.com/*
-
-使用 `Backbone` 配合 `jQuery Mobile` 的示例：
-
-*http://coenraets.org/blog/2012/03/using-backbone-js-with-jquery-mobile/*
-
-*http://weblog.bocoup.com/organizing-your-backbone-js-application-with-modules/**
-
-# Backbone Boilerplate（骨架模板）
-
-`Backbone-boilerplate` 是一个开源 JavaScript 工具包，提供了类似于 `HTML5 Boilerplate` 等工具包的“样板”功能。其主页在此：
-
-*https://github.com/tbranyen/backbone-boilerplate*
-
-`Backbone-boilerplate` 的安装说明包含在此发行版的 `readme.md` 文件中：
-
-*https://github.com/backbone-boilerplate/grunt-bbb*
-
-安装过程相当冗长（超出了本章的限制），但如果你计划在代码中大量使用 `BackboneJS`，那么探索这个工具包是值得的。
-
-## Backbone 的变体
-
-有很多 `BackboneJS` 的变体（它们也是 `Backbone` 的扩展），这里列出了其中一些：
-
-`pine.js`
-
-`joint.js`
-
-`ligament.js`
-
-`vertebrae.js`
-
-`bones.js`（提供服务端功能）
-
-`hambone.js`
-
-`shinbone.js`
-
-
-
-
-
-由于本章篇幅限制，无法对这些工具包进行讨论，但你可以通过互联网查找有关这些工具包的信息。
-
-BackboneJS 的另一个变体是 SpineJS，它使用了控制器（尽管它是基于 BackboneJS 的）。SpineJS 中的控制器在 Web 应用中充当“胶水”，并提供了传统控制器的功能。
-
-下面的 SpineJS 代码块定义了一个具有三个函数的控制器。该控制器同步模型的更改以更新 `views`（反之亦然）。将此代码与你在本章之前看到的 BackboneJS 代码块进行比较：
-
-```javascript
-// Controllers inherit from Spine.Controller:
-
-var RecipesController = Spine.Controller.sub({
-
-  init: function(){
-    this.item.bind('update',  this.proxy(this.render));
-    this.item.bind('destroy', this.proxy(this.remove));
-  },
-  render: function(){
-    // Handle templating
-    this.replace($('#recipeTemplate').tmpl(this.item));
-    return this;
-  },
-  remove: function(){
-    this.$el.remove();
-    this.release();
-  }
-});
-```
-
-## EmberJS (#toc.html_toc-h1-0057)
-
-除了 BackboneJS 之外，还有各种工具包可用，其中最流行的是 EmberJS，其首页在此：
-
-*[`emberjs.com/`](http://emberjs.com/)
-
-EmberJS 应用在初始页面加载期间会下载所需的所有内容，这与 SPA（单页应用）是一致的。需要注意的是，EmberJS 采用了 MVC 模式，并非常强调路由器以及模板引擎。EmberJS 专注于处理“重型工作”，以应对一些更繁重的 JavaScript 任务。相比之下，BackboneJS 的方法要极简得多（但可以通过 Backbone Boilerplate 进行增强）。
-
-作为一个简单的示例，下面的代码块向你了如何在 EmberJS 中定义 JavaScript 对象。
-
-```javascript
-Person = Ember.Object.extend({
-  greeting: function(msg) {
-    alert(msg);
-  }
-});
-
-var person = Person.create();
-
-// alert message: My Name is Dave
-person.greeting("My name is Dave");
-
-var person = Person.create({
-  name: "Jeanine Smith",
-  greeting: function() {
-    this.greeting("My name is " + this.get('name'));
-  }
-});
-
-// alert message: My Name is Jeanine
-person.greeting();
-```
-
-你可以在 EmberJS 中扩展对象，如下所示：
-
-```javascript
-var HappyPerson = Person.extend({
-  greeting: function(msg) {
-    this._super(greeting.toUpperCase());
-  }
-});
-```
-
-你可以在 EmberJS 中添加事件监听器，如下所示：
-
-```javascript
-person.addObserver('name', function() {
-  // do something after a name change
-});
-
-person.set('name', 'Oswald');
-```
-
-关于 BackboneJS 和 EmberJS 的详细对比在此：
-
-*[`www.i-programmer.info/programming/htmlcss/4966-creating-web-apps-the-camera-api.html`](http://www.i-programmer.info/programming/htmlcss/4966-creating-web-apps-the-camera-api.html)*
-
-如果 BackboneJS 和 EmberJS 不符合你的需求，你可以搜索其他工具包。你还可以找到许多讨论各种工具包优点的在线文章，有时你还能找到提供直接对比各种工具包的文章。需要注意的是，可用的工具包非常多。如果时间有限，你可能需要将分析限制在少数工具包上，以便对其进行适当评估。
-
-## Twitter Bootstrap (#toc.html_toc-h1-0058)
-
-Twitter Bootstrap 是一个用于创建网站和 Web 应用的开源项目。该工具包包含了基于 HTML 和 CSS 的 UI 控制设计模板（例如表单、按钮、图表、导航等）以及用户交互。
-
-目前，Twitter Bootstrap 是 GitHub 上关注度最高、分叉（fork）最多的仓库，你可以在此处下载它：
-
-*[`twitter.github.com/Bootstrap/`](http://twitter.github.com/Bootstrap/)*
-
-*[`blog.getBootstrap.com/`](http://blog.getBootstrap.com/)*
-
-Twitter Bootstrap 的初设计目的是作为记录最佳实践的指南，并帮助不同技能水平的人。Bootstrap 支持新的 HTML5 元素和语法，你可以将 Bootstrap 作为完整的工具包或用于启动更复杂的项目。
-
-Twitter Bootstrap 最初是为现代浏览器设计的，但它已将其支持扩展到所有主流浏览器（包括 IE7）。此外，Twitter Bootstrap 2.0 支持平板电脑和智能手机，其响应式设计意味着组件会根据一系列分辨率和设备进行缩放，从而提供一致的体验。此外，Twitter Bootstrap 提供了自定义的 `jQuery` 插件，并构建在 LESS 工具包之上。Twitter Bootstrap 2.0 的一些功能包括工具提示、样式化的状态按钮、更多的表格和表单样式以及改进后的结构。
-
-## 极简主义 SPA (#toc.html_toc-h1-0059)
-
-
-
-
-
-本章剩余部分将向你展示如何设置几个服务器端工具包来创建一个非常简单的 SPA。你将看到“裸露”代码，这些代码为 SPA 提供了一个起点，使用户能够查看他们的朋友读过的书籍以及其他信息，例如评论、有趣的书籍引言等。此应用程序使用了以下技术：
-
-- Jade
-- MongoDB
-- Mongoose
-- NodeJS
-
-本章的下一节将对前列表中尚未讨论过的技术进行高级描述。本章的最后一部分包含代码块，它们将帮助你理解 SPA 应用程序的逻辑。建议在此 SPA 中包含额外的工具包（如 BackboneJS 和 jQuery），这样你就可以扩展你的技能了。
-
-## Jade
-
-Jade 是一种流行的 NodeJS 模板语言，其主页在此：
-
-[`jade-lang.com/`](http://jade-lang.com/)
-
-在此处下载 Jade：
-
-[`github.com/visionmedia/jade#readme`](https://github.com/visionmedia/jade#readme)
-
-在解压 Jade 分包后，你可以使用以下命令创建一个的 Jade JavaScript 文件：
-
-```
-make jade.js
-```
-
-请注意，你也可以通过 npm（NodeJS 的包管理器）如下如下安装 Jade：
-
-```bash
-npm install jade
-```
-
-### Jade 代码示例
-
-Jade 使用 HTML 标签来生成 HTML 元素，使用 `#` 语法生成 id 属性，使用 `.` 语法生成 class 属性。缩进指定了元素的嵌套。例如，下面的 Jade 代码块：
-
-```html
-html
-  head
-  body
-    div
-    div#myid
-    div.myclass
-      p my paragraph
-```
-
-会生成以下 HTML：
-
-```html
-<html>
-  <head></head>
-  <body>
-    <div></div>
-    <div id="myid"></div>
-    <div class="myclass"></div>
-    <p>my paragraph</p>
-  </body>
-</html>
-```
-
-Jade 支持插值，因此你可以将数据传递给 Jade 文档。例如，假设你有以下数据：
-
-`{fname: john, lname: smith}`
-
-并且你有这个 Jade 元素：
-
-```jade
-div #user #{fname} #{lname}
-```
-
-那么结果就是这个 HTML 元素：
-
-```html
-<div id="user">john smith</div>
-```
 
 Jade 还支持注释（单行和多行）、条件逻辑、“case”语句、过滤器和迭代。
 
@@ -3836,14 +2424,23 @@ Jade 还支持注释（单行和多行）、条件逻辑、“case”语句、�
 
 ```jade
 doctype 5
+
 html
+
   head
+
     title= title
+
     link(rel='stylesheet', href='/css/style.css')
+
     script(src='/js/jquery-1.8.2.min.js')
+
     script(src='/js/client.js')
+
     script(src='/js/templates.js')
+
   body  
+
     block content
 ```
 
@@ -3855,19 +2452,33 @@ html
 
 ```jade
 extends layout
+
 block content
+
   h1= title
+
   - if (user.id)
+
     p Hello #{user.name}, and welcome to #{title}
+
     p
+
       a(href='/managebooks') My Book List
+
     p
+
       a(href='/logout') Logout
+
     #bookhistory
+
   - else
+
     div
+
       a(href='/login') Login with password
+
     div
+
       a(href='/register') Register
 ```
 
@@ -3886,6 +2497,7 @@ block content
 
 ```jade
 h1
+
 a(href='http://www.google.com/') Google Page
 ```
 
@@ -3893,9 +2505,13 @@ a(href='http://www.google.com/') Google Page
 
 ```jade
 doctype5
+
 html(lang='en')
+
   head
+
     title= title
+
   body!= body
 ```
 
@@ -3903,6 +2519,7 @@ html(lang='en')
 
 ```jade
 div#navigation
+
   a(href='/') home
 ```
 
@@ -3912,14 +2529,23 @@ div#navigation
 
 ```javascript
 var express = require('express');
+
 var app = express.createServer();
+
 app.configure(function () {
+
   app.set('views', __dirname + '/views');
+
   app.set('view engine', 'jade');
+
 });
+
 app.get('/', function(req, res) {
+
   res.render('index.jade', { pageTitle: 'Jade Example', layout: false });
+
 });
+
 app.listen(9000);
 ```
 
@@ -3927,7 +2553,9 @@ app.listen(9000);
 
 ```javascript
 app.get('/', function(req, res) {
+
   res.render('index.jade', { pageTitle: 'Jade Example', layout: false });
+
 });
 ```
 
@@ -3966,13 +2594,21 @@ MongoDB 是一种流行的 NoSQL 数据库，其主页在此：
 
 ```bash
 mongo
+
 > use db
+
 switched to db db
+
 > users = db.users
+
 db.users
+
 > users.find();
+
 > users.insert({firstName:'a', lastName:'b'});
+
 > users.find()
+
 {
   "_id" : ObjectId("509425f82685d84f9c41c858"),
   "firstName": "a",
@@ -3985,10 +2621,6 @@ db.users
 ## NodeJS
 
 NodeJS 是一种执行 JavaScript 的流行的服务器技术。你可以从其主页下载并安装 NodeJS：
-
-
-
-
 
 [`nodejs.org/`](http://nodejs.org/)
 
@@ -4003,7 +2635,7 @@ npm install mongoose
 
 为了向你展示可以在不使用模板引擎（如 `Jade`）的情况下使用 NodeJS，列表 6.4 显示了 `HelloWorld.js` 的内容，当用户在浏览器中导航到 `localhost:5000` 时，该文件会显示文本字符串“Hello World”。
 
-***列表 6.4 HelloWorld.js***
+**列表 6.4 HelloWorld.js**
 
 ```javascript
 //创建一个应用服务器
@@ -4015,7 +2647,9 @@ var app = express();
 //向客户端发送 'Hello World' 
 
 app.get('/', function(req, res) {
+
     res.send('Hello World');
+
 });
 
 app.listen(5000);
@@ -4069,6 +2703,7 @@ Mongoose 中允许的 `SchemaTypes` 有：`String`、`Number`、`Date`、`Buffer
 
 ```javascript
 var mongoose = require('mongoose'),
+
     db = mongoose.createConnection('localhost', 'test');
 ```
 
@@ -4076,9 +2711,13 @@ var mongoose = require('mongoose'),
 
 ```javascript
 var personSchema = new mongoose.Schema({
+
     id:         Schema.Types.ObjectId,
+
     firstName: String,
+
     lastName:  String
+
 })
 ```
 
@@ -4086,8 +2725,11 @@ var personSchema = new mongoose.Schema({
 
 ```javascript
 personSchema.methods.pname = function () {
+
   var fullname = this.firstname+" "+this.lastname;
+
   console.log(fullname);
+
 }
 ```
 
@@ -4103,6 +2745,7 @@ var Person = db.model('Person', personSchema);
 
 ```javascript
 var p1 = new Person({ firstName: 'John', lastname: 'Smith' })
+
 var p2 = new Person({ firstName: 'Jane', lastname: 'Jones' })
 ```
 
@@ -4110,15 +2753,23 @@ var p2 = new Person({ firstName: 'Jane', lastname: 'Jones' })
 
 ```javascript
 p1.save(function (error) {
+
     if (error) {
+
         console.log("error saving p1");
+
     }
+
 });
 
 p2.save(function (error) {
+
     if (error) {
+
         console.log("error saving p2");
+
     }
+
 });
 ```
 
@@ -4126,12 +2777,19 @@ p2.save(function (error) {
 
 ```javascript
 mongoose.model('User', {
+
   properties: ['first, 'last'],
+
   cast:      {age: Number},
+
   indexes:   ['first', 'last'],
+
   setters:   {first: function(){} },
+
   getters:    {full_name: function(){} },
+
   methods:   {save: function() }
+
 });
 ```
 
@@ -4143,9 +2801,13 @@ SPA 代码示例创建了三个 Mongoose 模式来表示用户、书籍以及用
 
 ```javascript
 var userSchema = new mongoose.Schema({
+
   firstName: String,
+
   lastName: String,
+
   books: [Object]
+
 });
 ```
 
@@ -4153,9 +2815,13 @@ var userSchema = new mongoose.Schema({
 
 ```javascript
 var bookSchema = new mongoose.Schema({
+
   title: String,
+
   author: String,
+
   comments: [Object]
+
 });
 ```
 
@@ -4163,22 +2829,23 @@ var bookSchema = new mongoose.Schema({
 
 ```javascript
 var commentSchema = new mongoose.Schema({
+
   user: Schema.Types.ObjectId,
+
   book: Schema.Types.ObjectId,
+
   text: String
+
 });
 ```
 
-
-
-
-
 ```javascript
-  , app = express.createServer()
+, app = express.createServer()
 
-  , mongoose = require('mongoose')
+, mongoose = require('mongoose')
 
-  , db = mongoose.createConnection('localhost', 'test');
+, db = mongoose.createConnection('localhost', 'test');
+
 /* models */
 
 mongoose.connect('mongodb://127.0.0.1/sampledb');
@@ -4194,62 +2861,107 @@ var userSchema = ...
 var bookSchema = ...
 
 var commentSchema = ...
+
 var Book    = db.model('Book', bookSchema);
+
 var User     = db.model('User', userSchema);
+
 var Comment = db.model('Comment', commentSchema);
 
 // 一本新书，一个新用户，以及关于
+
 // 新用户对新书的评论：
+
 var b1 = new Book({bookAuthor:  'Oswald Campesato',
+
                    bookTitle:   'HTML5 Canvas and CSS3 Graphics',
+
                    bookPubDate: '07/30/2012'
+
                    });
+
 var u1 = new User({firstName:  'John', lastname: 'Smith'});
+
 var c1 = new Comment(
+
          {userid: u1, bookid: b1, comment: "Great book!"});
 
 // 将用户 u1 添加到读过这本书的用户列表（在 b1 中）:
+
 b1.users.push(u1);
 
 // 将书籍 b1 添加到用户 u1 读过的书籍列表（在 u1 中）:
+
 u1.books.push(b1);
 
 //显示书籍
+
 app.get('/showbooks', function(req,res){
+
   console.log("finding books");
+
     Book.find({}, function(error, data){
+
       res.json(data);
+
     });
+
 });
 
 //显示用户
+
 app.get('/showusers', function(req,res){
+
   console.log("finding users");
+
     User.find({}, function(error, data){
+
       res.json(data);
+
     });
+
 });
 
 // 添加用户的示例 URL：
+
 //http://localhost:3003/adduser/tom/smith
+
 app.get('/adduser/:first/:last/:username', function(req, res){
+
   console.log("adding user");
+
   var user_data = {
+
         first_name: req.params.first
+
     , last_name: req.params.last
+
     , username: req.params.username
+
   };
+
   var user = new User(user_data);
+
   user.save( function(error, data){
+
     if(error){
+
         res.json(error);
+
     }
+
     else{
+
         res.json(data);
+
     }
+
   });
+
 });
+
 app.listen(3003);
+
 console.log("listening on port %d", app.address().port);
 ```
 
@@ -4257,32 +2969,45 @@ Listing 6.5 整合了你在本章早些看到的许多代码片段。还存在�
 
 ```javascript
 // 添加用户的示例 URL：
+
 //http://localhost:3003/adduser/tom/smith
 
 app.get('/adduser/:first/:last/:username', function(req, res){
+
   var user_data = {
+
         first_name: req.params.first
+
     , last_name: req.params.last
+
     , username: req.params.username
+
   };
+
   var user = new User(user_data);
+
   user.save( function(error, data){
+
     if(error){
+
         res.json(error);
+
     }
+
     else{
+
         res.json(data);
+
     }
+
   });
+
 });
 ```
 
-
-
-
 jQuery Mobile 本质上是 jQuery 插件和组件的集合，允许你编写可以在多个平台上运行的移动 Web 应用。你已经知道 jQuery 专注于桌面 Web 应用程序；相比之下，jQuery Mobile（包含 CSS 样式表和 JavaScript 库）是为移动设备设计的。然而，jQuery Mobile 依赖“基础”jQuery 库，在 Web 页面引用 jQuery Mobile 库之前，必须先引用 jQuery。此外，jQuery Mobile 使用了 HTML5 和 CSS3 功能（如过渡和动画）以及用于导航的小型图标。
 
-jQuery Mobile 依赖于带有 `data-` 前缀的自定义属性。如果你不知道，自定义属性是 HTML5 中引入的新特性，并且始终具有此类前缀。这种对自定义数据属性的支持为 HTML5 标记提供了某些 XML 中可用的功能。这使得代码能够处理自定义标签及其值，同时通过验证。
+jQuery Mobile 依赖于带有 `data-` 前缀的自定属性。如果你不知道，自定义属性是 HTML5 中引入的新特性，并且始终具有此类前缀。这种对自定义数据属性的支持为 HTML5 标记提供了某些 XML 中可用的功能。这使得代码能够处理自定义标签及其值，同时通过验证。
 
 一个简单的 jQuery Mobile 页面具有以下结构：
 
@@ -4298,7 +3023,9 @@ jQuery Mobile 依赖于带有 `data-` 前缀的自定义属性。如果你不知
 
 ```javascript
 $(document).ready() {
+
   // do something here
+
 }
 ```
 
@@ -4306,7 +3033,9 @@ $(document).ready() {
 
 ```javascript
 $(selector).live('pageinit', (function(event){
+
   // do something here
+
 }));
 ```
 
@@ -4330,7 +3059,7 @@ jQuery Mobile 提供了许多实用的功能，将简化创建移动应用程序
 
 *   按钮
 *   表单元素
-*   列表视图
+*   列表视视图
 *   页面和对话框
 *   工具栏
 
@@ -4340,32 +3069,55 @@ jQuery Mobile 提供了许多实用的功能，将简化创建移动应用程序
 
 列表 7.1 显示了 `JQMHelloWorld1.html` 的内容，它说明了在桌面浏览器、平板电脑或智能手机上渲染时，如何在 HTML5 Web 页面中显示“Hello World”消息。
 
-***列表 7.1 JQMHelloWorld1.html***
+**列表 7.1 JQMHelloWorld1.html**
 
 ```html
 <!DOCTYPE html>
+
 <html lang="en">
+
   <head>
+
     <meta charset="utf-8" />
+
     <title>Hello World from jQuery Mobile</title>
+
     <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+
     <script src="http://code.jquery.com/jquery-2.0.0b1.js"></script>
+
     <script src="http://code.jquery.com/jquery-migrate-1.1.0.js"></script>
+
     <script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+
   </head>
+
   <body>
+
     <div data-role="page">
+
       <div data-role="header">
+
         <h2>This is the Header</h2>
+
       </div>
+
       <div data-role="content">
+
         <p>Hello World from a Simple jQuery Mobile Page</p>
+
       </div>
+
       <div data-role="footer">
+
         <h2>This is the Footer</h2>
+
       </div>
+
     </div>
+
   </body>
+
 </html>
 ```
 
@@ -4383,21 +3135,19 @@ jQuery Mobile 提供了许多实用的功能，将简化创建移动应用程序
 
 你之前已经学过 jQuery Mobile 如何使用额外的标签和 CSS 类增强移动 Web 页面。jQuery Mobile 在列表 7.1 的 HTML5 Web 页面中“注入”了各种 CSS 类（属于 jQuery Mobile 的）。通常情况下，你不需要担心这些细节；但如果你需要更深入地理解这些细节，可以深入研究 jQuery Mobile 的源码。光盘上的 HTML5 页面 `JQMHelloWorld1Enhanced.html` 展示了 jQuery 如何“增强”HTML5 Web 页面 `HelloWorld1.html` 的内容。
 
-
-
-
-
 正如你在之前的代码示例所示，jQuery Mobile 中的每个页面视图都由一个带有 `data-role="page"` 属性的 HTML `<div>` 元素定义，并包含一个可选的头部（header）、一个必需的内容元素（content）和一个可选的页脚（footer）。
 
 页面之间的导航非常简单：只需在 jQuery Mobile 应用中为带有 `data-role="content"` 属性的 `<div>` 元素添加链接即可，如下：
 
 ```html
 <div data-role="content">
+
   <p>A second page view<a href="#home">Home</a>a></p>
+
 </div>
 ```
 
-当用户点击链接时会发生页面视图之间的切换，jQuery Mobile 会自动处理切换所需的细节。本章节后面将提供一个包含多个页面视图的 jQuery Mobile Web 页面的完整示例（以及如何在页面视图之间导航）。
+当用户点击链接时会发生页面视图之间的切换，jQuery Mobile 会自动处理切换所需的细节。本章节后面将提供一个包含多个页面视视图的 jQuery Mobile Web 页面的完整示例（以及如何在页面视图之间导航）。
 
 ## jQuery Mobile 自定义属性
 
@@ -4444,59 +3194,101 @@ jQuery Mobile 内部功能使用基于 AJAX 的异步方法调用，因此它区
 
 列表 7.2 显示了 `JQMPageEvents1.html` 的内容，说明了页面事件执行的序列。
 
-***列表 7.2 JQMPageEvents1.html***
+**列表 7.2 JQMPageEvents1.html**
 
 ```html
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
+
   <meta charset="utf-8">
+
   <title>JQuery Mobile Page Events</title>
+
   <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.min.css">
+
   <script src="http://code.jquery.com/jquery-1.6.4/jquery.min.js"></script>
+
   <script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile.min.js"></script>
+
 </head>
+
 <body>
+
   <div data-role="page" id="page1">
+
     <div data-role="header">
+
       <h3>jQuery Mobile Page Events</h3>
+
     </div>
+
     <div data-role="content">
+
       <p>A second page view<a href="#home">Home</a>a></p>
+
     </div>
+
     <div data-role="footer">
+
       <h3>Footer</h3>
+
     </div>
+
   </div>
+
   <script>
+
     $(page1).live("pagebeforecreate", function() {
+
       console.log("pagebeforecreate");
+
     });
+
     $(page1).live("pagecreate", function() {
+
       console.log("pagecreate");
+
     });
+
     $(page1).live("pageinit", function() {
+
       console.log("pageinit");
+
     });
+
     $(page1).live("pagebeforehide", function() {
+
       console.log("pagebeforehide");
+
     });
+
     $(page1).live("pagebeforeshow", function() {
+
       console.log("pagebeforeshow");
+
     });
+
     $(page1).live("pagehide", function() {
+
       console.log("pagehide");
+
     });
+
     $(page1).live("pageshow", function() {
+
       console.log("pageshow");
+
     });
+
   </script>
+
 </body>
+
 </html>
 ```
-
-
-
 
 接下来，jQuery Mobile 会搜索带有 `data-` 属性的子元素，并为它们添加主题类、适当的 ARIA 角色，并在必要时为第一页之外的所有页面页头添加返回按钮。
 
@@ -4518,7 +3310,9 @@ jQuery Mobile 在执行后立即在 `document` 对象上触发 `mobileinit` 事�
 
 ```javascript
 $(document).bind('mobileinit',function () {
+
     $.mobile.page.prototype.options.keepNative = "input,textarea";
+
 });
 ```
 
@@ -4526,13 +3320,15 @@ $(document).bind('mobileinit',function () {
 
 ## jQuery Mobile 选项与自定义
 
-jQuery Mobile 为各种对象提供了选项和方法，包括 `.mobile`、`.mobile.path` 和 `.mobile.history`。你有许多可以为移动应用程序配置的选项，我们将在本节中介绍其中几个。一个明显有用的方法是 jQuery Mobile 的 `pageLoading()` 方法，它可以显示和隐藏 jQuery Mobile 的加载对话框。你使用布尔值 `true` 调用此方法来隐藏对话框，并在不带参数调用此方法来显示对话框，所示：
+jQuery Mobile 为各种对象提供了选项和方法，包括 `.mobile`、`.mobile.path` 和 `.mobile.history`。你有许多可以为移动应用程配置的选项，我们将在本节中介绍其中几个。一个明显有用的方法是 jQuery Mobile 的 `pageLoading()` 方法，它可以显示和隐藏 jQuery Mobile 的加载对话框。你使用布尔值 `true` 调用此方法来隐藏对话框，并在不带参数调用此方法来显示对话框，所示：
 
 ```javascript
 // 显示页面加载对话框
+
 $.mobile.pageLoading();
 
 // 隐藏加载对话框
+
 $.mobile.pageLoading(true);
 ```
 
@@ -4540,6 +3336,7 @@ $.mobile.pageLoading(true);
 
 ```javascript
 $.mobile.loadingMessage = "wait a few moments ";
+
 $.mobile.defaultPageTransition = "pop";
 ```
 
@@ -4547,8 +3344,11 @@ $.mobile.defaultPageTransition = "pop";
 
 ```javascript
 $.extent($.mobile, {
+
     "loadingMessage" = "wait a few moments",
+
     "defaultPageTransition" = "pop"
+
 });
 ```
 
@@ -4572,7 +3372,9 @@ changePage(to, transition, back, changeHash);
 
 ```javascript
 $(".back-btn").bind("click", function () {
+
     changePage("#first", "flip", true, false);
+
 });
 ```
 
@@ -4604,51 +3406,85 @@ $("[data']")
 
 ```html
 LISTING 7.3: JMMultiPageViews1.html
+
 <!DOCTYPE html>
+
 <html>
+
 <head>
+
   <meta charset="utf-8" />
+
   <title>jQuery Mobile: Page Views</title>
+
   <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+
   <script src="http://code.jquery.com/jquery-2.0.0b1.js"></script>
+
   <script src="http://code.jquery.com/jquery-migrate-1.1.0.js"></script>
+
   <script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+
 </head>
+
 <body>
+
 <div data-role="page" id="first">
+
   <h1>First Page</h1>
+
   <a href="#second" class="btn">Go to Second Page</a>
+
 </div>
+
 <div data-role="page" id="second">
+
   <h1>Second Page</h1>
+
   <a href="#first" class="btn back-btn">Go to First Page</a>
+
 </div>
+
 </body>
+
 </html>
 ```
 
-
-
-
-
 ```html
 <div data-role="page" id="home">
+
   <div data-role="header"><h1>首页页头</h1></div>
+
   <div data-role="content">
+
     <p>这是主页的内容</p>
+
     <p><a href="#about">点击此处获取更多信息</a></p>
+
   </div>
+
   <div data-role="footer"><h1>首页页脚</h1></div>
+
 </div>
+
 <div data-role="page" id="about">
+
   <div data-role="header"><h1>关于此页的页头</h1></div>
+
   <div data-role="content">
+
     <p>第二个视图（目前就是全部）</p>
+
     <a href="#home">点击此处或点击“返回”按钮回到首页</a>
+
   </div>
+
   <div data-role="footer"><h1>关于此页的页脚</h1></div>
+
 </div>
+
 </body>
+
 </html>
 ```
 
@@ -4664,7 +3500,9 @@ jQuery Mobile 框架会在每个页面视图上自动生成返回按钮和主页
 
 ```html
 <div data-role="header" data-backbtn="false">
+
   <h1>页头</h1>
+
 </div>
 ```
 
@@ -4690,28 +3528,51 @@ jQuery Mobile 可以通过三种方式动态定位页头和页脚工具栏：
 
 ```html
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
+
   <meta charset="utf-8" />
+
   <title>jQueryMobile 中的固定页头和页脚</title>
+
   <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.1.1.0.min.css" />
+
   <script src="http://code.jquery.com/jquery-2.0.0b1.js"></script>
+
   <script src="http://code.jquery.com/jquery-migrate-1.1.0.js"></script>
+
   <script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+
 </head>
+
 <body>
+
   <div id="page1" data-role="page">
+
     <header data-role="header" data-position="fixed">
+
       <h1>jQuery Mobile</h1>
+
     </header>
+
     <div class="content" data-role="content">
+
       <h3>内容区域。</h3>
+
     </div>
+
     <footer data-role="footer" data-position="fixed">
+
       <h3>固定页脚</h3>
+
     </footer>
+
   </div>
+
 </body>
+
 </html>
 ```
 
@@ -4721,15 +3582,25 @@ jQuery Mobile 可以通过三种方式动态定位页头和页脚工具栏：
 
 ```html
 <section id="page1" data-role="page">
+
   <header data-role="header" data-position="fixed">
+
     <h1>jQuery Mobile</h1>
+
   </header>
+
   <div class="content" data-role="content">
+
     <h3>内容区域。</h3>
+
   </div>
+
   <footer data-role="footer" data-position="fixed">
+
     <h3>固定页脚</h3>
+
   </footer>
+
 </section>
 ```
 
@@ -4740,10 +3611,6 @@ jQuery Mobile 可以通过三种方式动态定位页头和页脚工具栏：
 ![image](img/fig7.5.jpg)
 
 **图 7.5** MacBook 上的固定页头/页脚。
-
-
-
-
 
 jQuery Mobile 按钮元素或类型为 `submit`、`reset`、`button` 或 `image` 的输入元素不需要 `data-role="button"` 属性，因为 jQuery Mobile 会自动将这些元素视为基于链接的按钮。
 
@@ -4757,9 +3624,13 @@ jQuery Mobile 会渲染按钮，移除按钮之间的间距（以及外阴投影
 
 ```html
 <div data-role="controlgroup">
+
   <a href="index1.html" data-role="button">One</a>
+
   <a href="index2.html" data-role="button">Two</a>
+
   <a href="index3.html" data-role="button">Three</a>
+
 </div>
 ```
 
@@ -4769,8 +3640,11 @@ jQuery Mobile 框架允许你通过一种名为 `ui-grid` 的区块样式类约�
 
 ```html
 <div class="ui-grid-a">
+
   <div class="ui-block-a">Block 1 and text inside will wrap</div></div>
+
   <div class="ui-block-b">Block 2 and text inside will wrap</div></div>
+
 </div>
 ```
 
@@ -4778,9 +3652,13 @@ jQuery Mobile 框架允许你通过一种名为 `ui-grid` 的区块样式类约�
 
 ```html
 <div class="ui-grid-b">
+
   <div class="ui-block-a">Block 1 and text inside will wrap</div></div>
+
   <div class="ui-block-b">Block 2 and text inside will wrap</div></div>
+
   <div class="ui-block-c">Block 3 and text inside will wrap</div></div>
+
 </div>
 ```
 
@@ -4796,7 +3674,9 @@ jQuery Mobile 拥有完善的主题系统，涉及标记为“a”到“e”的�
 
 ```html
 <div data-role="footer" class="ui-bar">
+
   <a href="left.html" data-icon="arrow-l" data-role="button" data-theme="a">Left</a>
+
 </div>
 ```
 
@@ -4806,61 +3686,107 @@ jQuery Mobile 拥有完善的主题系统，涉及标记为“a”到“e”的�
 
 ```html
 <!DOCTYPE html>
+
 <html lang="en">
+
   <head>
+
     <meta charset="utf-8" />
+
     <title>Multiple Buttons and Themes in jQuery Mobile</title>
+
     <link rel="stylesheet" href="CSS3Background1.css" />
+
     <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+
     <script src="http://code.jquery.com/jquery-2.0.0b1.js"></script>
+
     <script src="http://code.jquery.com/jquery-migrate-1.1.0.js"></script>
+
     <script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+
   </head>
+
   <body>
+
     <div id="page1" data-role="page">
+
       <div data-role="header">
+
         <!-- 此按钮出现在左侧 -->
+
         <a href="abc.html" data-icon="arrow-l" data-theme="b">Index</a>
+
         <h1>Rendering Buttons in Mobile</h1>
+
         <!-- 此按钮出现在右侧 -->
+
         <a href="def.html" data-icon="plus" data-theme="e">Add</a>
+
       </div>
+
       <div class="content" data-role="content">
+
         <div data-role="controlgroup" data-type="horizontal">
+
           <a href="index1.html" data-role="button">One</a>
+
           <a href="index2.html" data-role="button">Two</a>
+
           <a href="index3.html" data-role="button">Three</a>
+
           <a href="index4.html" data-role="button">Four</a>
+
           <a href="index5.html" data-role="button">Five</a>
+
         </div>
+
         <a href="index6.html" class="shadow" data-role="button">Vertical1</a>
+
         <a href="index7.html" class="shadow" data-role="button">Vertical2</a>
+
         <a href="index8.html" class="shadow" data-role="button">Vertical3</a>
+
         <div data-role="controlgroup">
+
           <a href="index6.html" data-role="button">Vertical1</a>
+
           <a href="index7.html" data-role="button">Vertical2</a>
+
           <a href="index8.html" data-role="button">Vertical3</a>
+
         </div>
+
         <div>
+
           <a href="index9.html" data-role="button" id="cancel" data-inline="true">Cancel</a>
+
           <a href="index10.html" data-role="button" id="submit" data-inline="true" data-theme="b">Save</a>
+
         </div>
+
       </div>
+
       <div data-role="footer" class="ui-bar">
+
         <!-- 显示四个键 -->
+
         <a href="left.html" data-icon="arrow-l" data-theme="a">Left</a>
+
         <a href="up.html" data-icon="arrow-u" data-theme="b">Up</a>
-        <a href="down.html" data-icon="arrow-d" data-theme="c">Down</a>
+
+        <a href="down.html" data-icon="arrow-d" data-theme="c">Down</a
+
         <a href="right.html" data-icon="arrow-r" data-theme="e">Right</a>
+
       </div>
+
     </div>
+
   </body>
+
 </html>
 ```
-
-
-
-
 
 列表 7.5 中底部的四个 HTML `<a>` 元素渲染了四个方向箭头，因为它们具有 `data-icon` 属性，且值分别设置为 `arrow-l`、`arrow-u`、`arrow-d` 和 `arrow-r`。此外，这四个 HTML `<a>` 元素为 `data-theme` 属性指定了不同的值，并根据每个预定义的 jQuery Mobile 主题的视觉显示进行渲染。
 
@@ -4870,24 +3796,43 @@ jQuery Mobile 拥有完善的主题系统，涉及标记为“a”到“e”的�
 
 ```css
 #cancel, #submit, .shadow {
+
   background-color:white;
+
   background-image:
+
     -webkit-radial-gradient(red 4px, transparent 18px),
+
     -webkit-repeating-radial-gradient(red 2px,  green 4px,
+
                                yellow 8px, blue 12px,
+
                                      transparent 28px,
+
                                      green 20px, red 24px,
+
                                      transparent 28px,
+
                                      transparent 32px),
+
     -webkit-repeating-radial-gradient(red 2px,  green 4px,
+
                                      yellow 8px, blue 12px,
+
                                      transparent 28px,
+
                                      green 20px, red 24px,
+
                                      transparent 28px,
+
                                      transparent 32px);
+
   background-size: 50px 60px, 70px 80px;
+
   background-position: 0 0;
+
   -webkit-box-shadow:  30px 30px 30px #400;
+
 }
 ```
 
@@ -4914,35 +3859,65 @@ jQuery Mobile 支持列表视图（在移动应用程序中非常常见）以及
 
 ```html
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
+
   <meta charset="utf-8" />
+
   <title>List Views in jQuery Mobile</title>
+
   <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+
   <script src="http://code.jquery.com/jquery-2.0.0b1.js"></script>
+
   <script src="http://code.jquery.com/jquery-migrate-1.1.0.js"></script>
+
   <script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+
 </head>
+
 <body>
+
   <div data-role="page">
+
     <div data-role="header"><h2>This is the Header</h2></div>
+
     <div data-role="content">
+
       <h3>Simple Unordered List Example</h3>
+
       <ul data-role="listview">
+
         <li><a href="#">Unordered Item 1</a></li>
+
         <li><a href="#">Unordered Item 2</a></li>
+
         <li><a href="#">Unordered Item 3</a></li>
+
       </ul>
+
       <h3>Simple Ordered List Example</h3>
+
       <ol data-role="listview">
+
         <li><a href="#">Ordered Item 1</a></li>
+
         <li><a href="#">Ordered Item 2</a></li>
+
         <li><a href="#">Ordered Item 3</a></li>
+
       </ol>
+
     </div>
+
     <div data-role="footer"></div>
+
   </div>
+
 </body>
+
 </html>
 ```
 
@@ -4960,59 +3935,99 @@ jQuery Mobile 支持列表视图（在移动应用程序中非常常见）以及
 
 要指定导航栏，请对块级元素（如 `<nav>` 元素）应用 `data-role="navigation"`。导航元素内的锚点标签将被格式化为按钮组。jQuery Mobile 将自动处理按钮的激活和非激活状态，如 HTML5 页面 NavigationBar.html 所示。
 
-jQuery Mobile 允许你显示和隐藏菜单列表，你还可以使用过渡效果在菜单列表显示或隐藏时创建动画效果。HTML5 页面 Menu.html 阐述了如何创建一个滑动菜单。
+jQuery Mobile 允许你显示和隐藏菜列表，你还可以使用过渡效果在菜单列表显示或隐藏时创建动画效果。HTML5 页面 Menu.html 阐述了如何创建一个滑动菜单。
 
 jQuery Mobile 使用 AJAX 进行表单提交，并将尝试将服务器响应集成到应用程序 DOM 中，提供预期的过渡效果。如果你希望防止 jQuery Mobile 使用 AJAX 处理表单，请对 `form` 标签应用 `data-ajax="false"` 属性。
 
-
-
-
-
 ```html
 <head>
+
   <script src="http://code.jquery.com/jquery-migrate-1.1.0.js"></script>
+
   <script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+
 </head>
+
 <<body>
+
   <script>
+
     var xmlData = "", count = 0;
+
     $("#page1").live('pageinit', (function(event){
+
       $.ajax({
+
         url: 'http://localhost:9000/sample.xml',
+
         dataType: 'xml',
+
         success: function(data) {
+
           $(data)
+
             .find('svg')
+
             .children()
+
             .each(function() {
+
               var node = $(this);
+
               var x      = node.attr('x');
+
               var y      = node.attr('y');
+
               var width  = node.attr('width');
+
               var height = node.attr('height');
+
               var stroke = node.attr('stroke');
+
               var fill   = node.attr('fill');
+
               // 其他处理在此...
+
               ++count;
+
               console.log("element: "+node);
+
             });
+
           console.log("element count: "+count);
+
         },
+
         error: function() {
+
           alert('未找到数据');
+
         }
+
       })
+
     })
+
     );
+
   </script>
+
   <div id="page1" data-role="page">
+
     <div data-role="header">页眉</div>
+
     <div data-role="content">
+
       <p>来自 jQuery Mobile 的 Hello World</p>
+
     </div>
+
     <div data-role="footer">页脚</div>
+
   </div>
+
 </</body>
+
 </html>
 ```
 
@@ -5020,12 +4035,19 @@ jQuery Mobile 使用 AJAX 进行表单提交，并将尝试将服务器响应集
 
 ```javascript
 var node = $(this);
+
 var x      = node.attr('x');
+
 var y      = node.attr('y');
+
 var width  = node.attr('width');
+
 var height = node.attr('height');
+
 var stroke = node.attr('stroke');
+
 var fill   = node.attr('fill');
+
 ```
 
 为了说明起，这段代码假设 示例 7.9 中的 XML 文档 `sample.xml` 包含上述代码指定的属性的 XML 元素。
@@ -5033,12 +4055,18 @@ var fill   = node.attr('fill');
 **示例 7.9 sample.xml**
 ```xml
 <?xml version='1.0' encoding='iso-8859-1'
+
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%">
+
   <rect x="50" y="10" width="100" height="200" stroke="blue" fill="red" />
+
   <rect x="200" y="10" width="100" height="200" stroke="blue" fill="green" />
+
   <rect x="350" y="10" width="100" height="200" stroke="blue" fill="blue" />
+
 </svg>
-```
+
+
 
 将 示例 7.8 和 7.9 中的文件放在同一目录下，并启动一个在端口 `9000` 上提供服务的 Web 服务器。在笔记本电脑或桌机的 Chrome 浏览器中打开 示例 7.8 中的 HTML 页面，打开 Chrome 开发者工具，并检查 Chrome 控制台的内容。你将看到类似图 7.8](#ch07.html_fig7.8) 的内容，它显示了 MacBook 上 Chrome 浏览器中 Chrome 开发者工具的内容。
 
@@ -5132,15 +4160,11 @@ var fill   = node.attr('fill');
       $("#geobutton").bind("vmousedown",function(event, ui){
         findUserLocation();
       });
-    })
-  );
+    }));
   </script>
 </body>
 </html>
 ```
-
-
-
 
 在本章中，你学习了 jQuery Mobile 的各种功能，并并通过代码示例了解了如何处理事件、创建具有多个视图的 Web 页面以及如何使用 HTML 组件创建表单。你还学习了如何使用 CSS3 阴影和渐变效果（你在第 3 章中学习过）为 jQuery Mobile Web 页面中的按钮样式。你学习了如何在使用 jQuery Mobile 的 HTML 页面中实现以下操作：
 
@@ -5175,7 +4199,6 @@ $("body").bind("tap", function () {
   console.log("Tap Event on the body Element");
   return false;
 });
-
 $("body").bind("taphold", function () {
   console.log("Tap Hold Event on the body Element");
   return false;
@@ -5189,7 +4212,6 @@ jQuery 事件处理程序内部的 `return false` 语句等同于在 jQuery 事�
 代码列表 8.1 显示了 `JQMSwipeEvents1.html` 的内容，说明了如何在 jQuery Mobile 中处理点击事件以及左滑和右滑事件。
 
 ***代码列表 8.1  JQMSwipe-TapEvents1.html***
-
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -5221,7 +4243,6 @@ jQuery 事件处理程序内部的 `return false` 语句等同于在 jQuery 事�
           console.log("Tap Event on the body Element");
           return false;
         });
-
         $("body").bind("taphold", function () {
           console.log("Tap Hold Event on the body Element");
           return false;
@@ -5231,9 +4252,6 @@ jQuery 事件处理程序内部的 `return false` 语句等同于在 jQuery 事�
   </body>
 </html>
 ```
-
-
-
 
 处理用户手势的语法使用了 `jQuery.bind` 方法。例如，你可以使用以下代码段通过 `jGestures` 插件绑定滑动手势：
 
@@ -5295,7 +4313,7 @@ $("#page1").live('pageinit', (function(event,ui){
     $("#content").removeClass('portrait landscape')
     .addClass (e.orientation ? 'landscape' : 'portrait');
   });
-});
+}));
 ```
 
 注意，`orientationchange` 事件绑定到 `window` 对象。在当前示例中，竖屏模式下背景颜色设置为红色，宽度设置为 320px；而横屏模式下背景颜色设置为蓝色，宽度设置为 480px。
@@ -5320,7 +4338,7 @@ $("#page1").live('pageinit', (function(event,ui){
 
 ## 使用 jQuery Mobile 使用动画效果
 
-你可以使用 jQuery Mobile 创建各种基于 jQuery 的动画效果，包括淡入效果、滑动效果和自定义动画。创建动画效果的方法（jQuery 和 jQuery Mobile 共有）包括：`animation()`、`clearQueue()`、`delay()`、`dequeue()`、`fadeIn()`、`fadeOut()`、`fadeTo()`、`fadeToggle()`、`hide()`、`queue()`、`show()`、`slideDown()`、`slideToggle()`、`slideUp()`、`stop()` 和 `toggle()`。
+你可以使用 jQuery Mobile 创建各种基于 jQuery 的动画效果，包括淡入效果、滑动效果和自定�动画。创建动画效果的方法（jQuery 和 jQuery Mobile 共有）包括：`animation()`、`clearQueue()`、`delay()`、`dequeue()`、`fadeIn()`、`fadeOut()`、`fadeTo()`、`fadeToggle()`、`hide()`、`queue()`、`show()`、`slideDown()`、`slideToggle()`、`slideUp()`、`stop()` 和 `toggle()`。
 
 本节包含代码示例，说明了如何在 jQuery Mobile 中创建其中一些动画效果。
 
@@ -5352,8 +4370,6 @@ jQuery 的 `.fadeIn()` 和 `.fadeOut()` 方法为创建简单动画提供了方�
   </script>
 </body>
 ```
-
-
 
 每当用户点击右侧的图片时，第一张图片会缓慢显示：
 
@@ -5418,7 +4434,7 @@ HTML5 页面 `JQMSlideUpDown1.html` 包含一个 `<style>` 元素，它使用 CS
 ```javascript
 $("#page1").click(function() {
     // handle a click event on the page
-}
+});
 ```
 
 jQuery Mobile 代码的核心由一行代码组成，它使用方法链创建一个多部分动画效果，每当用户点击矩形时，该效果会：1) 将背景颜色变为红色，2) 执行为期 2 秒的“显示”和“隐藏”动画效果，随后是 3) 持续 2 秒的“滑动”效果，如下所示：
@@ -5442,7 +4458,7 @@ jQuery Mobile 使用基于 WebKit 的 CSS3 变换来实现页面过渡，基于 
 
 *   fade：简单地在之前的内容之上淡入页面或对话框
 *   flip：动画页面翻页效果，将当前视图旋转出，并让反面的另一侧视图进来
-*   pop：页面从屏幕中心弹入视图
+*   pop：页面从屏幕中心弹入视视图
 *   slide：从左侧或右侧滑入，将之前的内容推开
 *   slidedown：从顶部向下滑动，覆盖当前内容上方
 *   slideup：向上滑动到顶部，显示下方的后续内容
@@ -5471,19 +4487,19 @@ jQuery Mobile 还提供了 `animationComplete` 事件，这在你添加或移除
 </body>
 ```
 
-代码列表 8.2 包含了 jQuery Mobile 页面的代码。当你点击第一个页面视图中的链接时，你将看到由第一页内容 `<div>`（其 `id` 属性为 first）中的以下片段创建的滑动效果：
+代码列表 8.2 包含了 jQuery Mobile 页面的代码。当你点击第一个页面视视图中的链接时，你将看到由第一页内容 `<div>`（其 `id` 属性为 first）中的以下片段创建的滑动效果：
 
 ```html
 <a href="#second" data-transition="slidedown">Go to Page Two
 ```
 
-第二个页面视图显示以下文本：You saw a slidedown effect Go to Page #1 via ‘flip’.当你点击之前的链接时，你将看到由第二个页面内容 `<div>`（其 `id` 属性为 second）中的以下片段创建的翻页效果：
+第二个页面视视图显示以下文本：You saw a slidedown effect Go to Page #1 via ‘flip’。当你点击之前的链接时，你将看到由第二个页面内容 `<div>`（其 `id` 属性为 second）中的以下片段创建的翻页效果：
 
 ```html
 <a href="#first" data-transition="flip" data-direction="reverse">
 ```
 
-注意，jQuery Mobile 将尝试在使用自动返回按钮或隐藏对话框时使用反向过渡。这个简单的示例说明了在不同页面视图之间导航时可以创建的一些页面效果。你可以尝试许多过渡效果，以找到适合你要求的效果。
+注意，jQuery Mobile 将尝试在使用自动返回按钮或隐藏对话框时使用反向过渡。这个简单的示例说明了在不同页面视视图之间导航时可以创建的一些页面效果。你可以尝试许多过渡效果，以找到适合你要求的效果。
 
 图 8.5 显示了在 MacBook 的 Chrome 浏览器上横屏渲染 代码列表 8.2 中 `JQMTransition1.html` 的结果。
 
@@ -5517,30 +4533,21 @@ jQuery Mobile 还提供了 `animationComplete` 事件，这在你添加或移除
             })
             $("#sample2").hover(function() {
                 $(this).css({'position':'relative',
-```
-
-
-
-
-```javascript
-                'width':'200px',
-                'height':'200px'
-             });
-});
-
-$("#button1").click(function() {
-    $("#sample2").slideDown(800);
-});
-
-$("#button2").click(function() {
-    $("#sample2").css({'position':'relative',
-                       'width':'100px',
-                       'height':'100px'
-                      });
-});
-)
-)
-</script>
+                             'width':'200px',
+                             'height':'200px'
+                            });
+            });
+        });
+        $("#button1").click(function() {
+            $("#sample2").slideDown(800);
+        });
+        $("#button2").click(function() {
+            $("#sample2").css({'position':'relative',
+                               'width':'100px',
+                               'height':'100px'
+                              });
+        });
+    </script>
 </body
 ```
 
@@ -5665,11 +4672,7 @@ LISTING 8.5 QMSetchSolidDOM1.html
 </body>
 ```
 
-
-
-
-
-Listing 8.5 包含了 jQuery Mobile 代码，绑定了 `vmousedown`、`vmouseup` 和 `vmousemove` 虚拟事件。该代码使用前两个虚拟鼠标事件来判断 `vmousemove` 事件是否伴随着 `vmousedown` 事件；如果后者为真，则会在程序化在用户鼠标的当前位置创建一个新的 HTML `<div>` 元素，并将其插入 DOM 中。
+Listing 8.5 包含了 jQuery Mobile 代码，绑定了 `vmousedown`、`vmouseup` 和 `vmousemove` 虚拟事件。该代码使用前两个虚拟鼠标事件来判断 `vmousemove` 事件是否伴随着 `vmousedown` 事件；如果后者为真，则会在程序化在用户鼠当前位置创建一个新的 HTML `<div>` 元素，并将其插入 DOM 中。
 
 Figure 8.10 显示了 MacBook 上 Chrome 浏览器横屏模式下的 `JQMSketchSolidDynamicDOM1.html`。
 
@@ -5680,7 +4683,6 @@ Figure 8.10 显示了 MacBook 上 Chrome 浏览器横屏模式下的 `JQMSketchS
 ![image](img/cd.jpg) 在之前的章节中，你已经学习了如何使用 CSS3 创建 HTML5 Web 页面来创建一个 3D 立方体，当用户将鼠标悬停在立方体的三个面中的任意一个上时，这些面会移动。CD 上的 HTML5 Web 页面 `JQM3DCube1.html` 演示了如何使用 CSS3 渲染一个 3D 立方体。
 
 ### LISTING 8.6 JQM3DCube1.html
-
 ```html
 <<body>
     <div data-role="page" id="page1">
@@ -5713,7 +4715,6 @@ Listing 8.6 包含了 jQuery Mobile 代码，其中包含三个 HTML `<div>` 元
 此代码示例中所有的实际“动作”发生在 CSS3 样式表 `JQM3DCube1.css` 中，其部分内容在 Listing 8.7 中。
 
 ### LISTING 8.7 JQM3DCube1.css
-
 ```css
 /* animation effects */
 #right:hover {
@@ -5782,10 +4783,6 @@ CD 包含了其他几个使用类似 jQuery Mobile 技术的代码示例。你�
 
 本章概述了 HTML5 Canvas，这是一种允许你编写直接在 Web 页面部分绘制图形的程序的技术。HTML5 Canvas 支持多种 API 来渲染 2D 形状以及各种图形效果。虽然网上有很多关于 Canvas 和 CSS3 的教程（你可以通过快速搜索确认），但很少有教程同时提供 HTML5 Canvas 和 CSS3 效果的代码示例。
 
-
-
-
-
 还有一点需要记住：`HTML5 Canvas` 对 `jQuery` 或 `jQuery Mobile` 没有任何形式的“依赖”。如果有必要，你可以创建包含 `HTML5 Canvas` 的混合 HTML5 移动应用，可以结合工具包（如 `PhoneGap`），也可以不需要工具包。
 
 ## 什么是 HTML5 Canvas？
@@ -5844,7 +4841,6 @@ CD 包含了其他几个使用类似 jQuery Mobile 技术的代码示例。你�
 现在你已经理解了 HTML5 Canvas 坐标系，让我们来看看 [Listing 9.1] 内容，它显示了一个最小的 HTML5 Web 页面，准备好渲染基于 HTML5 Canvas 的图形。书书中每个基于 Canvas 的代码示例都使用 [Listing 9.1] 中显示的代码（或某些变体）。注意，如果你在浏览器会话中启动此代码，你将只看到一个空白屏幕。
 
 ***Listing 9.1 Canvas1.html***
-
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -5882,14 +4878,6 @@ var elem = document.getElementById('myCanvas');
 var context = elem.getContext('2d');
 ```
 
-
-
-
-
-```javascript
-var context = elem.getContext('2d');
-```
-
 如果你将示例 9.1 运行在不支持 HTML5 Canvas 的浏览器中，屏幕将显示文本消息“No support for Canvas.（不支持 Canvas）”。
 
 由于在加载事件期间执行了一个匿名 JavaScript 函数，每当你启动该网页时，都会执行以下代码段：
@@ -5908,7 +4896,7 @@ window.addEventListener('load', function () {
 
 本节包含各种代码示例，用于阐述如何在 HTML5 Canvas 中渲染 2D 形状。本节引入了许多概念，因此在深入研究代码示例之前，让我们先看看本节中用到的一些 HTML5 Canvas API。第 2 章 包含一个描述指定颜色多种方式的章节，该章节的内容与本章中的代码示例相关（如果你需要，现在可以快速回顾其内容）。
 
-HTML5 Canvas 提供了用于渲染矩形的 `fillRect()` 方法，它需要四个参数：矩形的左上角顶点（由其 `x` 坐标和 `y` 坐标定义）、矩形的宽度以及目标矩形的高度。`Canvas fill()` API 如下：
+HTML5 Canvas 提供了用于渲�矩形的 `fillRect()` 方法，它需要四个参数：矩形的左上角顶点（由其 `x` 坐坐标和 `y` 坐标定义）、矩形的宽度以及目标矩形的高度。`Canvas fill()` API 如下：
 
 ```javascript
 context.fillRect(x, y, width, height);
@@ -5945,7 +4933,6 @@ context.shadowColor = "rgba(0,0,64,1.0)";
 示例 9.2 中的 HTML5 网页 `RandRectanglesShadow.html`（为了起见省略了代码部分）使用了这种技术来渲染一组带有阴影效果的随机生成矩形。
 
 **示例 9.2 RandRectanglesShadow.html**
-
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -5992,10 +4979,6 @@ context.shadowColor = "rgba(0,0,64,1.0)";
 </html>
 ```
 
-
-
-
-
 ## HTML5 Canvas 线性渐变
 
 HTML5 Canvas 提供了两种主要的颜色渐变（类似于 SVG 和 CSS3）：*线性渐变*和*径向渐变*。
@@ -6015,7 +4998,6 @@ context.createLinearGradient(startX, startY, endX, endY);
 ![image](img/cd.jpg) [Listing 9.4] 中的 HTML5 页面 `LGradRectangles1.html` 展示了如何渲染一组具有水平、垂直和对角线线性渐变的矩形。[Listing 9.3] 引用了 CSS3 样式 `HoverAnimation1.css`，该样式每当用户用鼠标悬停在该 HTML5 `<canvas>` 元素上时，会将基于 CSS3 关键帧的 2D 动画应用到该元素。[Listing 9.4] 也引用了 CSS3 样式 `HoverAnimation2.css`，其工作方式类似。然而，该样式表对 [Listing 9.3] 中的第二个 HTML5 `<canvas>` 元素应用了 CSS3 3D 动画效果。由于这些 CSS 样式表中的动画技术已在第 2 章讨论过，我们将在本章中省略它们，但完整的源代码可以在 CD 上找到。
 
 ### LISTING 9.3 LGradRectangles1.html
-
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -6087,7 +5069,7 @@ context.createLinearGradient(startX, startY, endX, endY);
 context.createRadialGradient(startCenterX, startCenterY, startRadius, endCenterX, endRadius);
 ```
 
-*径向*颜色渐变可以与向池塘中丢石头产生的波纹效应相比，每个“波纹”都有按渐变变化的颜色。每个波纹对应一个颜色停止元素。例如，如果你定义一个起始颜色为 `#FF0000`（红色）且结束颜色为 `#000000`（黑色）的径向渐变，那么生成的颜色渐变将（径向地）从红色过渡到黑色。径向渐变也可以包含多个起始/停止组合。需要注意的是，径向渐变按*线性*方式改变颜色，但渲染的颜色是以组扩展圆形绘制的。注意，“径向渐变”和“径向颜色渐变”在书中是互换使用的。
+*径向*颜色渐变可以与向池塘中丢石头产生的波纹效应相比，每个“波纹”都有按渐变变化的颜色。每个波纹对应一个颜色停止元素。例如，如果你定义一个起始颜色为 `#FF0000`（红色）且结束颜色为 `#000000`（黑色）的径向渐变，那么生成的颜色渐变将（径向地）从红色过渡到黑色。径向渐变也可以包含多个起始/停止组合。需要注意的是，径向渐变按*线性*方式改变颜色，但渲的颜色是以组扩展圆形绘制的。注意，“径向渐变”和“径向颜色渐变”在书中是互换使用的。
 
 ![image](img/cd.jpg) HTML5 页面 `RGradRectangles1.html` 使用线性和径向渐变在 HTML5 `<canvas>` 元素中渲染线段、矩形和圆形，可以在 CD 上找到。
 
@@ -6096,14 +5078,24 @@ gradient1 = context.createRadialGradient(
                                             currentX,
                                             currentY,
                                             0,
-                                            currentX+rectWidth,
-                                            currentY+rectHeight);
+```
+
+
+
+currentX+rectWidth,
+
+currentY+rectHeight);
 
 gradient1.addColorStop(0, '#f00');
+
 gradient1.addColorStop(1, '#00f');
+
 context.fillStyle = gradient1;
+
 context.fillRect(currentX, currentY,
+
                  rectWidth, rectHeight);
+
 ```
 
 `RGradRectangles1.html` 与 Listing 9.3 类似，但使用的是径向渐变（而不是线性渐变），通过调用 `addColorStop()` 方法向径向渐变添加四个“颜色停止值”。
@@ -6111,10 +5103,6 @@ context.fillRect(currentX, currentY,
 ![image](img/fig9.4.jpg)
 
 ***图 9.4*** iPad3 上的径向渐变矩形
-
-
-
-
 
 图 9.4 显示了在 iPad3 上横屏模式下，基于 `RGradRectangles1.html` 的一组带有径向渐变的矩形。
 
@@ -6132,10 +5120,15 @@ HTML5 Canvas 允许你通过以下方法对 2D 形状和文本字符串进行旋
 以下代码段说明了你可以在上述 Canvas 方法中使用的示例值，其中 `context` 是引用 HTML5 `<canvas>` 元素上下文的 JavaScript 变量：
 
 ```javascript
+
 context.rotate(30*Math.PI/180);
+
 context.scale(0.8, 0.4);
+
 context.translate(100, 200);
+
 context.transform(1, 0, 0.5, 1, 0, 0);
+
 ```
 
 上述代码块中的 `rotate()` 方法引用了 JavaScript 常量 `Math.PI`，其值代表 PI 弧度。如果你忘记了，PI 弧度等于 180 度，因此 `2*PI` 弧度是 360 度，`PI/2` 弧度是 90 度。因此，`Math.PI/6` 弧度（或 `30*Math.PI/180`）等于 30 度。你不需要了解更多弧度的知识，但如果你想阅读提供额外示例教程，可以自行搜索。
@@ -6156,7 +5149,7 @@ CD 中的 HTML5 Web 页面 `JCanvasSamples1.html` 展示了如何使用 `jCanvas
 
 ![image](img/fig9.5.jpg)
 
-***图 9.5***iPad3 上的 jQuery jCanvas 插件。
+***图 9.5*** iPad3 上的 jQuery jCanvas 插件。
 
 图 9.5 显示了在 iPad3 上横屏模式渲染 `JCanvasSamples1.html` 的结果。
 
@@ -6173,91 +5166,172 @@ CD 中的 HTML5 Web 页面 `JCanvasSamples1.html` 展示了如何使用 `jCanvas
 ***列表 9.4 JQMCanvas1.html***
 
 ```html
+
 <!DOCTYPE html>
+
 <html lang="en">
+
   <head>
+
     <meta charset="utf-8">
+
     <title>JQueryMobile and Canvas Graphics</title>
+
     <link rel="stylesheet" href="JQMCanvas1.css" />
+
     <link rel="stylesheet"
+
       href="http://code.jquery.com/mobile/1.1.0/
+
                               jquery.mobile-1.1.0.min.css" />
+
     <script src="http://code.jquery.com/jquery-2.0.0b1.js">
+
     </script>
+
     <script
+
       src="http://code.jquery.com/jquery-migrate-1.1.0.js">
+
     </script>
+
     <script
+
 src="http://code.jquery.com/mobile/1.1.0/
+
                               jquery.mobile-1.1.0.min.js">
+
     </script>
+
     <script>
+
       var tapCount = 0;
+
       var xCoord = 0, yCoord = 0;
+
       var rectWidth = 20, rectHeight = 20;
+
       var rectColors = Array('#ff0', '#0f', '#0f');
+
       var elem, context;
+
       var gradient1 = '-webkit-gradient(radial, 25%, 50%, 20%, from(red), color-stop(0.05, orange), color-stop(0.4, yellow), color-stop(0.6, red), color-stop(0.9, blue), to(#fff))
+
       var gradient2 = '-webkit-gradient(radial, 25%, 50%, 20%, from(blue), color-stop(0.05, orange), color-stop(0.4, red), color-stop(0.6, black), color-stop(0.9, blue), to(#f0))
+
       var gradient3 = '-webkit-gradient(radial, 25%, 50%, 20%, from(blue), color-stop(0.05, yellow), color-stop(0.4, green), color-stop(0.6, red), color-stop(0.9, blue), to(#fff))
+
       var gradient4 = '-webkit-gradient(radial, 25%, 50%, 20%, from(blue), color-stop(0.05, yellow), color-stop(0.2, green), color-stop(0.6, blue), color-stop(0.8, red), to(#fff))
+
       var currentBG;
+
       $("#page1").live('pageinit', (function(event){
+
         // 获取画布元素
+
         elem = document.getElementById('MyCanvas');
+
         if (!elem || !elem.getContext) {
+
           return;
+
         }
+
         // 获取画布 2d 环境
+
         context = elem.getContext('2d');
+
         if (!context) {
+
           return;
+
         }
+
         // 用户点击了 MyCanvas...
+
         $("#MyCanvas").live('vmousedown',function(event) {
+
           xCoord = 0.40*(event.clientX)*window.devicePixelRatio;
+
           yCoord = 0.40*(event.clientY)*window.devicePixelRatio;
+
           context.fillStyle = rectColors[++tapCount%rectColors.length];
+
           context.fillRect(xCoord, yCoord, rectWidth, rectHeight);
+
           $("#MyCanvas").hide("slow");
+
         });
+
         // 这让 MyCanvas 可见
+
         $("#tapInside").live('tap',function(event) {
+
           $("#MyCanvas").show("slow");
+
         });
+
         $("#CanvasParent").live('vmousedown',function(event) {
+
           if(tapCount % 4 == 0) {
+
             currentBG = gradient1;
+
           } else if(tapCount % 4 == 1) {
+
             currentBG = gradient2;
+
           } else if(tapCount % 4 == 2) {
+
             currentBG = gradient3;
+
           } else {
+
             currentBG = gradient4;
+
           }
+
           newNode = $('<div').css({
+
             'position':'absolute',
+
             'background': currentBG,
+
             'width':rectWidth+'px',
+
             'height':rectHeight+'px',
+
             'top': event.clientY,
+
             'left': event.clientX
+
           });
+
           //将新矩形附加到 CanvasParent
+
           $("#CanvasParent").append(newNode);
+
         }
+
       })
+
     );
+
     </script>
+
     <style>
+
       #tapInside { color: #f00; }
+
       #MyCanvas  { width: 80%; height: 30%; }
+
     </style>
+
   </head>
+
   </body>
+
 ```
-
-
 
 
 
@@ -6326,10 +5400,6 @@ newNode = $('<div>').css({'position':'absolute',
 
 注意，在前面的代码中 `position` 被设置为 `absolute`，这意味着这个 `<div>` 元素将会被保留。最后，当用户点击任何一个 `<div>` 元素时，代码将使它们消失。
 
-
-
-
-
 ![image](img/cd.jpg) HTML5 页面 `LRGradQCBezier1.html` 展示了如何渲染带有线性渐变着色的二次贝塞尔曲线以及带有径向渐变的三次贝塞尔曲线。光盘中提供了两个 CSS 样式表 `CSS3Background4.css` 和 `HoverAnimation1.css`。
 
 HTML5 页面 `LRGradQCBezier1.html` 中定义的三次贝塞尔曲线是根据几个计算点使用六个颜色停止点通过径向渐变渲染的，如下：
@@ -6388,14 +5458,20 @@ http://code.google.com/p/easeljs-graphics
 
 ### 总结 (#toc.html_toc-h1-0094)
 
-本章介绍了 HTML5 Canvas，并展示了使用 HTML5 `<canvas>` 元素创建 2D 形状的示例。你还学习了如何将 HTML5 Canvas 与 jQuery 自定义代码结合，以便使用 Canvas 的 2D 形状操作 HTML5 Web 页面。特别是，你学习了如何在 HTML5 Canvas 中实现以下操作：
+本章介�了 HTML5 Canvas，并展示了使用 HTML5 `<canvas>` 元素创建 2D 形状的示例。你还学习了如何将 HTML5 Canvas 与 jQuery 自定义代码结合，以便使用 Canvas 的 2D 形状操作 HTML5 Web 页面。特别是，你学习了如何在 HTML5 Canvas 中实现以下操作：
 
 * 渲染线段、矩形和圆形
+
 * 创建线性和径向渐变
+
 * 创建贝塞尔曲线
+
 * 显示 JPG 文件
+
 * 使用 `jCanvas`（一个用于 jQuery 插件）
+
 * 将 HTML5 Canvas 与 CSS3 结合
+
 * 将 HTML5 Canvas 与 jQuery Mobile 结合
 
 # 第 10 章 (#toc.html_toc-10)
@@ -6406,7 +5482,7 @@ http://code.google.com/p/easeljs-graphics
 
 正如你很快会发现的，基于 Android 的示例比基于 iOS 的示例要多。代码示例的移动平台选择纯粹出于风格考虑。然而，每个基于 Android 的代码示例都有对应的 iOS 版本，反之亦然。
 
-本章的第一部分概述了如何使用“手动”方法而不是 PhoneGap 等工具包来开发移动应用程序。该节的代码示例使用了你在之前章节中见过的代码，并向你展示了如何创建基于 Android 的移动应用程序。如果你心心勃勃，可以为所有示例创建 iOS 版本！
+本章的第一部分概述了如何使用“手动”方法而不是 PhoneGap 等工具包来开发移移动应用程序。该节的代码示例使用了你在之前章节中见过的代码，并向你展示了如何创建基于 Android 的移动应用程序。如果你心心勃勃，可以为所有示例创建 iOS 版本！
 
 本章的第二部分包含了基于 Android 的示例，展示了如何将原生 Android 应用与 CSS3、SVG 和 HTML5 Canvas 结合。该节包含一个渲染支持鼠标的折线图示例，每当用户点击折线图下方的按钮时，其值就可以更新。请记住，代码示例后的讨论进展得很快，因为 HTML Web 页面包含简单的标记，CSS3 选择器包含你以前见过的代码，并且讨论了 SVG 形状。
 
@@ -6416,15 +5492,14 @@ http://code.google.com/p/easeljs-graphics
 
 如果你不熟悉本章提到的任何移动平台，你仍然可以完成本章中的示例，因为它们由基于 HTML5 的代码组成。在移动平台上创建基于 HTML5 的移动应用的步骤顺序本质上独立于实际代码。
 
-
-
-
 如果你对 Android 并不熟悉，可以阅读本书的附录，其中包含了本章代码示例中 Android 特有概念的简要概述。每当你遇到不清楚的 Android 概念时，都可以参考相应的章节。
 
 本节的代码示例向你展示如何在 Android 应用程序中启动 HTML5 Web 页面（该页面还引用了 CSS3 样式表）。核心思想包含三个步骤：
 
 1. 修改 Android `Activity` 类以实例化一个 Android `WebView` 类，以及一些与 JavaScript 相关的设置。
+
 2. 引用 Android 项目 `assets/www` 子目录下的 HTML5 Web 页面。
+
 3. 将 HTML5 Web 页面、CSS 样式表和 JavaScript 文件复制到 Android 项目的 `assets/www` 子目录中。
 
 在步骤 3 中，你可能会创建一个分级目录集，其中包含相同类型（HTML、CSS 或 JavaScript）的文件，这与你在 Web 应用程序中组织文件的方式非常相似。
@@ -6468,6 +5543,7 @@ http://code.google.com/p/easeljs-graphics
 </body>
 </html>
 ``` （等待，已更正）
+
 列表 10.2 是一个简单的 HTML Web 页面，它引用了 CSS 样式表 `AndroidCSS3.css`（在光盘上可用），以及一个 HTML `div` 元素（其 `id` 属性值为 `outer`），作为另外四个 HTML `div` 元素的“容器”。
 
 ![image](img/cd.jpg) CSS 样式表 `AndroidCSS3.css` 包含一个用于为 `id` 值为 `outer` 的 HTML `div` 元素设置样式的 CSS 选择器，随后是四个选择器器 `11``22`````` `radial4` 列表 10.2 中对应的 HTML `div` 元素。这些选择器的内容应该非常熟悉（你可以回顾前面的章节中关于 CSS3 渐变的材料），因此我们在本节中不再涵盖它们的内容。
@@ -6475,40 +5551,71 @@ http://code.google.com/p/easeljs-graphics
 ### 列表 10.3: AndroidCSS3Activity.java
 
 ```java
+
 package com.iquarkt.css3;
 
 import android.app.Activity;
+
 import android.os.Bundle;
+
 import android.webkit.WebChromeClient;
+
 import android.webkit.WebSettings;
+
 import android.webkit.WebView;
+
 import android.webkit.WebClient;
 
 public class AndroidCSS3Activity extends Activity
+
 {
+
     /** 当 activity 首次创建时调用。 */
+
     @Override
+
     public void onCreate(Bundle savedInstanceState)
+
     {   
+
       super.onCreate(savedInstanceState);
+
       setContentView(R.layout.main);
+
       // 获取声明的 WebView 持有器的引用
+
       WebView webview = (WebView) this.findViewById(R.id.webview);
+
       // 获取设置
+
       WebSettings webSettings = webview.getSettings();
+
       // 启用 JavaScript 用于交互
+
       webSettings.setJavaScriptEnabled(true);
+
       // 使缩放控件可见
+
       webSettings.setBuiltInZoomControls(true);
+
       // 允许触摸选择/取消选择数据系列
+
       webview.requestFocusFromTouch();
+
       // 设置客户端
+
       webview.setWebViewClient(new WebViewClient());
+
       webview.setWebChromeClient(new WebChromeClient());
+
       // 加载 URL
+
       webview.loadUrl("file:///android_asset/AndroidCSS3.html");
+
     }
+
 }
+
 ```
 
 ![image](img/fig10.1.jpg) **图 10.1** 带有 Android ICS 的 Asus Prime 平板上基于 CSS3 的 3D 立体。
@@ -6516,7 +5623,9 @@ public class AndroidCSS3Activity extends Activity
 Listing 10.3 定义了一个扩展标准 Android `Activity` 类的 Java 类 `AndroidCSS3Activity`。该类包含 `onCreate()` 方法，该方法“指向”XML 文档 `main.xml`（在 Listing 10.2 中显示），以便我们可以通过 `R.id.webview` 获取其 `WebView` 子元素的引用（这是 Listing 10.2 中 `WebView` 元素的引用），所示：
 
 ```
+
 WebView webview = (WebView) this.findViewById(R.id.webview);
+
 ```
 
 接下来，`WebSettings` 类的 `webSettings` 实例允许我们设置各种属性，如 Listing 10.4 代码中的注释行所示。
@@ -6524,7 +5633,9 @@ WebView webview = (WebView) this.findViewById(R.id.webview);
 最后一行代码加载了 HTML Web 页面 `AndroidCSS3.html`（位于 `assets/www` 子目录）的内容，所示：
 
 ```java
+
 webview.loadUrl("file:///android_asset/AndroidCSS3.html");
+
 ```
 
 Figure 10.1 显示了带有 Android ICS 的 Asus Prime 平板上基于 CSS3 的 Android 应用程序。
@@ -6533,26 +5644,42 @@ Figure 10.1 显示了带有 Android ICS 的 Asus Prime 平板上基于 CSS3 的 
 
 本节的示例向你展示如何创建一个 Android 移动应用程序，用于渲染嵌入 HTML5 Web 页面中的 SVG 代码。现在启动 Eclipse 并创建一个名为 `AndroidSVG1` 的 Android 项目，确保选择的是 Android 3.1 或更高版本，这对于渲染 SVG 元素是必要的。
 
-上一节的示例包含四个自定义文件，而本节中的 Android/SVG 示例包含两个文件：Listing 10.4 中的 HTML 页面 `AndroidSVG1.html` 和光盘上提供的 Java 类 `AndroidSVG1Activity`。
+上一节的示例包含四个自定文件，而本节中的 Android/SVG 示例包含两个文件：Listing 10.4 中的 HTML 页面 `AndroidSVG1.html` 和光盘上提供的 Java 类 `AndroidSVG1Activity`。
 
 ![image](img/cd.jpg) **列表 10.4 AndroidSVG1.html**
 
 ```html
+
 <!doctype html>
+
 <html>
+
 <head>
+
   <title>HTML5 SVG</title>
+
 </head>
+
 <body>
+
   <h1>HTML5 SVG</h1>
+
   <svg>
+
     <ellipse cx="300" cy="50" rx="80" ry="40" fill="red" stroke="black" stroke-width="3" />
+
     <line x1="100" y1="20" x2="300" y2="350" stroke="black" stroke-width="8" />
+
     <path d="M0,0 C200,150 400,300 20,250" fill="none" stroke="red" stroke-width="4" />
+
     <path d="M200,150 C0,0 400,300 20,250" fill="none" stroke="blue" stroke-width="12" />
+
   </svg>
+
 </body>
+
 </html>
+
 ```
 
 
@@ -6573,75 +5700,145 @@ Figure 10.1 显示了带有 Android ICS 的 Asus Prime 平板上基于 CSS3 的 
 ***列表 10.5 AndroidCanvas1.html***
 
 ```html
+
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
+
  <meta charset="utf-8" />
+
  <title>HTML5 Canvas Example</title>
+
 <script>
+
  function draw() {
+
    var basePointX  = 10;
+
    var basePointY  = 80;
+
    var currentX    = 0;
+
    var currentY    = 0;
+
    var startAngle  = 0;
+
    var endAngle    = 0;
+
    var radius      = 120;
+
    var lineLength  = 200;
+
    var lineWidth    = 1;
+
    var lineCount   = 200;
+
    var lineColor  = "";
+
    var hexArray    = new Array('0','1','2','3','4','5','6','7','8','9','a','b','c','d','e','f');
+
    var can = document.getElementById('canvas1');
+
    var ctx = can.getContext('2d');
+
    // render a text string...
+
    ctx.font = "bold 26px helvetica, arial, sans-serif";
+
    ctx.shadowColor = "#333333";
+
    ctx.shadowOffsetX = 2;
+
    ctx.shadowOffsetY = 2;
+
    ctx.shadowBlur = 2;
+
    ctx.fillStyle = 'red';
+
    ctx.fillText("HTML5 Canvas/Android", 0, 30);
+
    for(var r=0; r<lineCount; r++) {
+
        currentX = basePointX+r;
+
        currentY = basePointY+r;
+
        startAngle = (360-r/2)*Math.PI/180;
+
        endAngle   = (360+r/2)*Math.PI/180;
+
        // render the first line segment...
+
        lineColor = '#' + hexArray[r%16] + '00';
+
        ctx.strokeStyle = lineColor;
+
        ctx.lineWidth   = lineWidth;
+
        ctx.beginPath();
+
        ctx.moveTo(currentX, currentY+2*r);
+
        ctx.lineTo(currentX+lineLength, currentY+2*r);
+
        ctx.closePath();
+
        ctx.stroke();
+
        ctx.fill();
+
        // render the second line segment...
+
        lineColor = '#' + '0' + hexArray[r%16] + '0';
+
        ctx.beginPath();
+
        ctx.moveTo(currentX, currentY);
+
        ctx.lineTo(currentX+lineLength, currentY);
+
        ctx.closePath();
+
        ctx.stroke();
+
        ctx.fill();
+
        // render the arc...
+
        lineColor = '#' + '00'+ hexArray[(2*r)%16];
+
        ctx.beginPath();
+
        ctx.fillStyle = lineColor;
+
        ctx.moveTo(currentX, currentY);
+
        ctx.arc(currentX, currentY, radius, startAngle, endAngle, false);
+
        ctx.closePath();
+
        ctx.stroke();
+
        ctx.fill();
+
    }
+
  }
+
 </script>
+
 </head>
+
 <body onload="draw()">
+
   <canvas id="canvas1" width="300px" height="200px"></canvas>
+
 </</body>
+
 </html>
+
 ```
 
 列表 10.5 包含了一些模板化的 HTML 标记和一个 JavaScript 函数 `draw()`，该函数会在 页面加载到 Android 浏览器时执行。`draw()` 函数包含 JavaScript 代码，用于将一组线和弧绘制到 HTML5 `<canvas>` 元素中，该元素的 `id` 属性值为 `canvas1`。你可以查看这些代码。
@@ -6660,42 +5857,79 @@ HTML 页面 `index.html` 位于项目的 `assets/www` 子目录中，其内容�
 ### 列表 10.7 index.html
 
 ```html
+
 <!DOCTYPE HTML>
+
 <html
+
   <head>
+
     <meta name="viewport" content="width=320; user-scalable=no" />
+
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+
     <title>PhoneGap</title>
+
     <link rel="stylesheet" href="master.css" type="text/css" media="screen" title="no title" charset="utf-8">
+
     <script src="phonegap-1.0.0.js"></script>
+
     <script src="main.js"></script>
+
   </head>
+
   <body onload="init();" id="stage" class="theme">
+
     <h1>Welcome to PhoneGap!</h1>
+
     <h2>此文件位于 assets/www/index.html</h2>
+
     <div id="info">
+
       <h4>Platform: <span id="platform"> &nbsp;</span, Version: <span id="version">&nbsp;</span></h4>
+
       <h4>UUID: <span id="uuid"> &nbsp;</span, Name: <span id="name">&nbsp;</span></h4>
+
       <h4>Width: <span id="width"> &nbsp;</span, Height: <span id="height">&nbsp;</span>, Color Depth: <span id="colorDepth"></</span></h4>
+
     </div>
+
     <dl id="accel-data">
+
       <dt>X:</dt><dd id="x">&nbsp;</dd>
+
       <dt>Y:</dt><dd id="y">&nbsp;</dd>
+
       <dt>Z:</dt><dd id="z">&nbsp;</dd>
+
     </dl>
+
     <a href="#" class="btn large" onclick="toggleAccel();">切换加速度计</a>
+
     <a href="#" class="btn large" onclick="getLocation();">获取位置</a>
+
     <a href="tel://411" class="btn large">拨打 411</a>
+
     <a href="#" class="btn large" onclick="beep();">蜂鸣</a>
+
     <a href="#" class="btn large" onclick="vibrate();">震动</a>
+
     <a href="#" class="btn large" onclick="show_pic();">获取照片</a>
+
     <a href="#" class="btn large" onclick="get_contacts();">获取手机联系人</a>
+
     <a href="#" class="btn large" onclick="check_network();">检查网络</a>
+
     <div id="viewport" class="viewport" style="display: none;">
+
       <img style="width:60px;height:60px" id="test_img" src="" />
+
     </div>
+
   </body>
+
 </html>
+
 ```
 
 列表 10.7 的第一部分包含一个 `<script>` 元素，它包含了 JavaScript 文件 `phonegap.js`，该文件定义了构成 PhoneGap 核心功能的函数。
@@ -6707,34 +5941,57 @@ HTML 页面 `index.html` 位于项目的 `assets/www` 子目录中，其内容�
 ### 列表 10.8 main.js
 
 ```javascript
+
 var deviceInfo = function() {
+
   document.getElementById("platform").innerHTML = device.platform;
+
   document.getElementById("version").innerHTML = device.version;
+
   document.getElementById("uuid").innerHTML = device.uuid;
+
   document.getElementById("name").innerHTML = device.name;
+
   document.getElementById("width").innerHTML = device.width;
+
   document.getElementById("height").innerHTML = device.height;
+
   document.getElementById("colorDepth").innerHTML = device.colorDepth;
+
 };
 
 function dump_pic(data) {
+
   var viewport = document.getElementById('viewport');
+
   viewport.style.display = "";
+
   viewport.style.position = "absolute";
+
   viewport.style.top = "10px";
+
   viewport.style.left = "10px";
+
   document.getElementById("test_img").src = "data:image/jpeg;base64," + data;
+
 }
 
 function fail(msg) {
+
   alert(msg);
+
 }
 
 function show_pic() {
+
   navigator.camera.getPicture(dump_pic, fail, {
+
     quality: 50
+
   });
+
 }
+
 ```
 
 
@@ -6747,47 +6004,89 @@ CSS 表格 `ThreeDCube1.css` 与第 2 章 中的 CSS 文件 `3DCube1.css` 相同
 ### 列表 10.9 index.html
 
 ```html
+
 <!DOCTYPE html>
+
 <html>
+
 <head>
+
   <title>CSS 3D Cube Example</title>
+
   <link href="ThreeDCube1.css" rel="stylesheet" type="text/css">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" />
+
   <meta charset="utf-8">
+
   <!-- iPad/iPhone specific css below, add after your main css >
+
   <link rel="stylesheet" media="only screen and (max-device-width: 1024px)" href="ipad.css" type="text/css" />
+
   <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="iphone.css" type="text/css" />
+
   -->
+
   <!-- If your application is targeting iOS BEFORE 4.0 you MUST put json2.js from http://www.JSON.org/json2.js into your www directory and include it here -->
+
   <script src="phonegap-1.3.0.js"></script>
+
   <script type="text/javascript">
+
     // If you want to prevent dragging, uncomment this section
+
     /*
+
     function preventBehavior(e)
+
     {
+
       e.preventDefault();
+
     };
+
     document.addEventListener("touchmove", preventBehavior, false);
+
     */
+
     function onBodyLoad()
+
     {
+
       document.addEventListener("deviceready", onDeviceReady, false);
+
     }
+
     function onDeviceReady()
+
     {
+
       // do your thing!
+
       //navigator.notification.alert("PhoneGap is working")
+
     }
+
   </script>
+
 </head>
+
 <body onload="onBodyLoad()">
+
   <div id="outer">
+
     <div id="top">Text1</div>
+
     <div id="left">Text2</div>
+
     <div id="right">Text3</div>
+
   </div>
+
 </body>
+
 </html>
+
 ```
 
 列表 10.9 是将来自第 2 章 的 HTML 页面 `3DCube1.html`（它本质上是一组 HTML `<div>` 元素）与你在 Xcode 中使用 PhoneGap 插件创建移动应用程序时自动生成的 HTML 页面 `index.html` 结合而的结果。
@@ -6852,7 +6151,7 @@ CSS 表格 `ThreeDCube1.css` 与第 2 章 中的 CSS 文件 `3DCube1.css` 相同
 # 按钮, 71–73
 
 ## C
-# 复选框与单选框, 74–76
+# 复选框与单选桂, 74–76
 
 # `click()` 函数, 12
 
@@ -7047,7 +6346,7 @@ CSS 表格 `ThreeDCube1.css` 与第 2 章 中的 CSS 文件 `3DCube1.css` 相同
 
 # jQuery 的 `append()` 和 `appendTo()` 方法, 10–11
 
-# 处理自定义属性, 8
+# 处理自定属性, 8
 
 # 有用的 jQuery 代码块, 8–9
 
@@ -7100,7 +6399,7 @@ LC（最后调用）状态，88
 ## M
 方法链，2
 模型 (Model)，112
-更改，113
+更改, 113
 Modernizr，22
 MongoDB，123–124
 Mongoose，125–131
@@ -7164,3 +6463,5 @@ WD（工作草案）文档，88
 ## X
 Xcode，224
 
+
+```

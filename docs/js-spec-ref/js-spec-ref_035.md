@@ -1,21 +1,9 @@
-# 5.4 Text 节点和 DocumentFragment 节点
 
-*   Text 节点的概念
-*   Text 节点的属性
-    *   data
-    *   wholeText
-    *   length
-    *   nextElementSibling
-    *   previousElementSibling
-    *   Text 节点的方法
-        *   appendData()，deleteData()，insertData()，replaceData()，subStringData()
-        *   remove()
-        *   splitText()，normalize()
-    *   DocumentFragment 节点
+# 5.4 Text 节点和 DocumentFragment 节点
 
 ## Text 节点的概念
 
-Text 节点代表 Element 节点和 Attribute 节点的文本内容。如果一个节点只包含一段文本，那么它就有一个 Text 子节点，代表该节点的文本内容。通常我们使用 Element 节点的 firstChild、nextSibling 等属性获取 Text 节点，或者使用 Document 节点的 createTextNode 方法创造一个 Text 节点。
+Text 节点代表 Element 节点和 Attribute 节点的文本内容。如果一个节点只包含一段文本，那么它就有一个 Text 子节点，代表该节点的文本内容。通常我们使用 Element 节点的 `firstChild`、`nextSibling` 等属性获取 Text 节点，或者使用 Document 节点的 `createTextNode` 方法创造一个 Text 节点。
 
 ```js
 // 获取 Text 节点
@@ -193,7 +181,7 @@ var li = document.createElement("li");
 li.textContent = "Hello World";
 docFrag.appendChild(li);
 
-document.queryselector('ul').appendChild(docFrag);
+document.querySelector('ul').appendChild(docFrag);
 ```
 
 上面代码创建了一个 DocumentFragment 节点，然后将一个 li 节点添加在它里面，最后将 DocumentFragment 节点移动到原文档。
@@ -201,14 +189,17 @@ document.queryselector('ul').appendChild(docFrag);
 一旦 DocumentFragment 节点被添加进原文档，它自身就变成了空节点（textContent 属性为空字符串）。如果想要保存 DocumentFragment 节点的内容，可以使用 cloneNode 方法。
 
 ```js
-document.queryselector('ul').(docFrag.cloneNode(true));
+document.querySelector('ul').appendChild(docFrag.cloneNode(true));
 ```
 
 DocumentFragment 节点对象没有自己的属性和方法，全部继承自 Node 节点和 ParentNode 接口。也就是说，DocumentFragment 节点比 Node 节点多出以下四个属性。
 
 *   children：返回一个动态的 HTMLCollection 集合对象，包括当前 DocumentFragment 对象的所有子元素节点。
+
 *   firstElementChild：返回当前 DocumentFragment 对象的第一个子元素节点，如果没有则返回 null。
-*   lastElementChild：返回当前 DocumentFragment 对象的最后一个子元素节点，如果没有则返回 null。
+
+*   lastElementChild：返回当前 DocumentFragment 对象的最后一个子元节点，如果没有则返回 null。
+
 *   childElementCount：返回当前 DocumentFragment 对象的所有子元素数量。
 
 另外，Node 节点的所有方法，都接受 DocumentFragment 节点作为参数（比如 Node.appendChild、Node.insertBefore）。这时，DocumentFragment 的子节点（而不是 DocumentFragment 节点本身）将插入当前节点。

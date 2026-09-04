@@ -1,19 +1,11 @@
+
 # 考试与面试Javascript练习：初学者代码示例
 
+![](`img/9e93faabf29d7f96ad3dab9b04710783_0_0.png`)
 
+## 初学者编码示例
 
-
-
-![](img/9e93faabf29d7f96ad3dab9b04710783_0_0.png)
-
-
-
-
-# ## 初学者编码示例
 JAKE BOND
-
-
-
 
 ```html
 <!DOCTYPE html>
@@ -28,7 +20,6 @@ JAKE BOND
 </html>
 ```
 
-
 ```javascript
 function capital_letter(str) {
   str = str.split(" ");
@@ -41,9 +32,7 @@ function capital_letter(str) {
 console.log(capital_letter("Write a JavaScript program to capitalize the first letter of each word of a given string."));
 ```
 
-
 Write A JavaScript Program To Capitalize The First Letter Of Each Word Of A Given String.
-
 
 ### HTML 代码
 
@@ -72,11 +61,11 @@ console.log(time_convert(450));
 console.log(time_convert(1441));
 ```
 
-
 1:11
-7:30
-24:1
 
+7:30
+
+24:1
 
 ### HTML 代码
 
@@ -93,7 +82,6 @@ console.log(time_convert(1441));
 </html>
 ```
 
-
 ```javascript
 function vowel_Count(str) {
     return str.replace(/[^aeiou]/gi, "").length;
@@ -103,10 +91,9 @@ console.log(vowel_Count("Python"));
 console.log(vowel_Count("htmlresource.com"));
 ```
 
-
 1
-5
 
+5
 
 ### HTML 代码
 
@@ -123,7 +110,6 @@ console.log(vowel_Count("htmlresource.com"));
 </html>
 ```
 
-
 ```javascript
 function without_first_last(str) {
     return str.substring(1, str.length - 1);
@@ -134,8 +120,7 @@ console.log(without_first_last("abc"));
 console.log(without_first_last("abcde"));
 ```
 
-# 输出：
-
+### 输出
 
 ### HTML 代码
 
@@ -152,7 +137,6 @@ console.log(without_first_last("abcde"));
 </html>
 ```
 
-
 ```javascript
 function concatenate(str1, str2) {
   str1 = str1.substring(1, str1.length);
@@ -163,11 +147,13 @@ function concatenate(str1, str2) {
 console.log(concatenate("ABC", "DEF"));
 console.log(concatenate("HELLO", "WORLD"));
 ```
+
 BCDEF
+
 elloorld
 
-
 预期输出：'e'
+
 ### HTML 代码
 
 ```html
@@ -181,7 +167,6 @@ elloorld
 </body>
 </html>
 ```
-
 
 ```javascript
 function findFirstRepeatedChar(str) {
@@ -203,11 +188,9 @@ function findFirstRepeatedChar(str) {
 console.log(findFirstRepeatedChar("abac"));
 ```
 
-
-
 示例字符串："Web Development"
-预期输出：'Development'
 
+预期输出：'Development'
 
 ```html
 <!DOCTYPE html>
@@ -221,7 +204,6 @@ console.log(findFirstRepeatedChar("abac"));
 </body>
 </html>
 ```
-
 
 ```javascript
 function longest_word(str) {
@@ -239,8 +221,8 @@ console.log(longest_word("Web Development"));
 
 Development
 
-
 示例字符串：'quick fox'
+
 预期输出：4
 
 ### HTML 代码
@@ -277,9 +259,7 @@ console.log(vowel_count("quick fox"));
 
 4
 
-
 质数是一个只有1和自身两个因数的正整数
-
 
 ```html
 <!DOCTYPE html>
@@ -315,7 +295,9 @@ console.log(is_prime(37));
 ```
 
 true
+
 ### 获取数据类型
+
 ### HTML 代码
 
 ```html
@@ -352,9 +334,10 @@ console.log(get_data_type(false));
 ```
 
 number
-string
-Boolean
 
+string
+
+Boolean
 
 ### HTML 代码
 
@@ -395,9 +378,6 @@ console.log(find_second_lowest_second_largest([1,2,3,4]));
 
 2,3
 
-
-
-
 ### 求一个长度为二的正整数的两个数字
 
 ### HTML 代码
@@ -407,7 +387,7 @@ console.log(find_second_lowest_second_largest([1,2,3,4]));
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>计算一个长度为二的正整数两个数字之和的 JavaScript 程序。</title>
+  <title>计算一个长度为二的正整数两个数字之和的 JavaScript 程序</title>
 </head>
 <body>
 </body>
@@ -424,12 +404,11 @@ console.log(add_two_digits(25))
 console.log(add_two_digits(50))
 ```
 
-# 输出:
+### 输出
 
 7
 
 5
-
 
 ### HTML 代码
 
@@ -459,7 +438,6 @@ console.log(leapyear(1800));
 console.log(leapyear(100));
 ```
 
-
 true
 
 true
@@ -469,6 +447,7 @@ false
 false
 
 false
+
 ### 检查给定的正整数是否为 3 的倍数或 7 的倍数
 
 ### HTML 代码
@@ -479,7 +458,7 @@ false
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>检查给定正整数是否为 3 的倍数或 7 的倍数的 JavaScript 程序。</title>
+    <title>检查给定正整数是否为 3 的倍数或 7 的倍数的 JavaScript 程序</title>
 </head>
 <body>
 
@@ -507,14 +486,13 @@ console.log(test37(10));
 console.log(test37(11));
 ```
 
-
 true
 
 true
 
 false
-false
 
+false
 
 ### HTML 代码
 
@@ -524,14 +502,14 @@ false
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>检查字符串是否以 'Java' 开头，否则返回 false 的 JavaScript 程序。</title>
+  <title>检查字符串是否以 'Java' 开头，否则返回 false 的 JavaScript 程序</title>
 </head>
 <body>
 </body>
 </html>
 ```
 
-### JAVASCRIPT_spec_str(str)
+### JAVASCRIPT 代码
 
 ```javascript
 function start_spec_str(str)
@@ -555,11 +533,9 @@ console.log(start_spec_str("Java"));
 console.log(start_spec_str("Python"));
 ```
 
-
 true
 
 true
-
 
 ### 两个给定的整数 - 检查是否在 50..99 范围内
 
@@ -571,7 +547,7 @@ true
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>检查两个给定的整数是否在 50..99 范围内（包含）的 JavaScript 程序。如果其中一个在范围内，则返回 true。</title>
+    <title>检查两个给定的整数是否在 50..99 范围内（包含）的 JavaScript 程序。如果其中一个在范围内，则返回 true</title>
 </head>
 <body>
 </body>
@@ -597,12 +573,9 @@ console.log(check_numbers(52, 80));
 console.log(check_numbers(15, 99));
 ```
 
-
 false
 
 true
-
-
 
 ### HTML 代码
 
@@ -644,13 +617,14 @@ console.log(near_100(90, -89));
 console.log(near_100(90, 90));
 ```
 
-
 90
 
 89
 
 false
+
 ### 正整数 - 检查是否为 3 的倍数或 7 的倍数
+
 ### HTML 代码
 
 ```html
@@ -659,7 +633,7 @@ false
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
-<title>检查正整数是否为 3 的倍数或 7 的倍数的 JavaScript 程序。</title>
+<title>检查正整数是否为 3 的倍数或 7 的倍数的 JavaScript 程序</title>
 </head>
 <body>
 </body>
@@ -683,14 +657,13 @@ console.log(test37(10));
 console.log(test37(11));
 ```
 
-
 true
 
 true
-false
 
 false
 
+false
 
 ### HTML 代码
 
@@ -700,7 +673,7 @@ false
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>检查字符串是否以 'Java' 开头，否则返回 false 的 JavaScript 程序。</title>
+  <title>检查字符串是否以 'Java' 开头，否则返回 false 的 JavaScript 程序</title>
 </head>
 <body>
 </body>
@@ -731,7 +704,6 @@ console.log(start_spec_str("Java"));
 console.log(start_spec_str("Python"));
 ```
 
-
 true
 
 true
@@ -739,6 +711,7 @@ true
 false
 
 ### 两个数的乘法和除法
+
 ### HTML 代码
 
 ```html
@@ -759,12 +732,11 @@ body {margin: 30px;}
 <input type="button" onclick="divideBy()" Value="除法" />
 </form>
 <p>结果是 : <br>
-<span id="result"></span>
+<span id="result</span>
 </p>
 </body>
 </html>
 ```
-
 
 ```javascript
 function multiplyBy()
@@ -784,7 +756,7 @@ function divideBy()
 
 ### 输出
 
-![](img/9e93faabf29d7f96addab9b04710783_46_0.png)
+![](`img/9e93faabf29d7f96addab9b04710783_46_0.png`)
 
 ### 使用 JavaScript 将温度在摄氏和华氏之间转换
 
@@ -803,6 +775,7 @@ function divideBy()
 ```
 
 ### JAVASCRIPT 代码
+
 ```javascript
 function cToF(celsius)
 {
@@ -823,6 +796,4 @@ cToF(60);
 fToC(45);
 ```
 
-
 60°C 是 140 °F。
-

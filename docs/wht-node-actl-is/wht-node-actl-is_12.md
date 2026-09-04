@@ -1,4 +1,5 @@
-# 可写流
+
+ # 可写流 
 
 > 原文：[`www.thenodebook.com/streams/writable-streams`](https://www.thenodebook.com/streams/writable-streams)
 
@@ -28,8 +29,8 @@
 
 ```js
 import { Writable } from "stream";
- const writable = new Writable({
- highWaterMark: 8192, // 8KB buffer threshold
+const writable = new Writable({
+  highWaterMark: 8192, // 8KB buffer threshold
 });
 ```
 
@@ -39,8 +40,8 @@ import { Writable } from "stream";
 
 ```js
 const objectWritable = new Writable({
- objectMode: true,
- highWaterMark: 50, // buffer up to 50 objects
+  objectMode: true,
+  highWaterMark: 50, // buffer up to 50 objects
 });
 ```
 
@@ -50,7 +51,7 @@ const objectWritable = new Writable({
 
 ```js
 const stringWritable = new Writable({
- decodeStrings: false, // keep strings as strings
+  decodeStrings: false, // keep strings as strings
 });
 ```
 
@@ -70,12 +71,12 @@ const stringWritable = new Writable({
 
 ```js
 function writeData(writable, data) {
- if (!writable.write(data)) {
- writable.once("drain", () => {
- // Buffer drained, safe to write more
- continueWriting();
- });
- }
+  if (!writable.write(data)) {
+    writable.once("drain", () => {
+      // Buffer drained, safe to write more
+      continueWriting();
+    });
+  }
 }
 ```
 
@@ -87,9 +88,9 @@ function writeData(writable, data) {
 
 ```js
 writable.on("finish", () => {
- console.log("All data written");
+  console.log("All data written");
 });
- writable.write("some data");
+writable.write("some data");
 writable.end(); // signals end of writes
 ```
 
@@ -99,7 +100,7 @@ writable.end(); // signals end of writes
 
 ```js
 writable.on("close", () => {
- console.log("Stream closed");
+  console.log("Stream closed");
 });
 ```
 
@@ -107,7 +108,7 @@ writable.on("close", () => {
 
 ```js
 writable.on("error", (err) => {
- console.error("Write error:", err);
+  console.error("Write error:", err);
 });
 ```
 
@@ -115,7 +116,7 @@ writable.on("error", (err) => {
 
 ```js
 writable.on("pipe", (src) => {
- console.log("Something is piping into me");
+  console.log("Something is piping into me");
 });
 ```
 
@@ -131,10 +132,11 @@ writable.on("pipe", (src) => {
 
 ```js
 import { createReadStream, createWriteStream } from "fs";
- const readable = createReadStream("input.dat");
+const readable = createReadStream("input.dat");
 const writable = createWriteStream("output.dat");
- readable.on("data", (chunk) => {
- writable.write(chunk);
+
+readable.on("data", (chunk) => {
+  writable.write(chunk);
 });
 ```
 
@@ -148,13 +150,13 @@ const writable = createWriteStream("output.dat");
 
 ```js
 readable.on("data", (chunk) => {
- const canContinue = writable.write(chunk);
- if (!canContinue) {
- readable.pause();
- writable.once("drain", () => {
- readable.resume();
- });
- }
+  const canContinue = writable.write(chunk);
+  if (!canContinue) {
+    readable.pause();
+    writable.once("drain", () => {
+      readable.resume();
+    });
+  }
 });
 ```
 
@@ -174,23 +176,27 @@ readable.on("data", (chunk) => {
 
 ```js
 class SimplifiedWritable {
- constructor(options) {
- this.highWaterMark = options.highWaterMark || 16384;
- this.buffer = [];
- this.bufferSize = 0;
- this.writing = false;
- }
- write(chunk) {
- this.buffer.push(chunk);
- this.bufferSize += chunk.length;
- if (!this.writing) {
- this._processBuffer();
- }
- return this.bufferSize < this.highWaterMark;
- }
- _processBuffer() {
- // writes chunks to destination
- }
+  constructor(options) {
+    this.highWaterMark = options.highWaterMark || 16384;
+    this.buffer = [];
+    this.bufferSize = 0;
+    this.writing = false;
+  }
+
+  write(chunk) {
+    this.buffer.push(chunk);
+    this.bufferSize += chunk.length;
+
+    if (!this.writing) {
+      this._processBuffer();
+    }
+
+    return this.bufferSize < this.highWaterMark;
+  }
+
+  _processBuffer() {
+    // writes chunks to destination
+  }
 }
 ```
 
@@ -202,7 +208,7 @@ class SimplifiedWritable {
 
 **默认的 16KB**对于大多数用例来说是一个合理的折中方案。它足够大，以至于你不会在典型的写入操作中不断遇到背压，但足够小，以至于如果目标较慢，你不会缓冲大量数据。
 
-当你忽略背压时会发生什么？假设你向一个正在向慢速目标写入的 Writable 流写入了一百万个 1KB 的数据块。你调用`write()`一百万次而不检查返回值。每次调用都会向内部缓冲区添加 1KB。缓冲区增长到 1GB。现在你的进程在内存中就有**1GB 的数据**仅为此流的缓冲区等待写入。
+当你忽略背压时会发生什么？假设你向一个正在向慢速目标写入的`Writable`流写入了一百万个 1KB 的数据块。你调用`write()`一百万次而不检查返回值。每次调用都会向内部缓冲区添加 1KB。缓冲区增长到 1GB。现在你的进程在内存中就有**1GB 的数据**仅为此流的缓冲区等待写入。
 
 如果你同时处理多个文件，或者处理多个并发 HTTP 请求，这种内存使用会成倍增加。你可能在所有流中都有 10GB 或更多的缓冲写入数据。在某个时刻，操作系统的内存分配器可能跟不上了，你的进程会因**内存不足错误**而崩溃。
 
@@ -229,6 +235,8 @@ class SimplifiedWritable {
 如果在这个过程中缓冲区大小降至`highWaterMark`以下，并且缓冲区大小之前在或高于`highWaterMark`，则流会发出`drain`事件。这是**背压已缓解**的信号。
 
 一个更详细的心智模型：
+
+
 
 ```js
 class DetailedWritable {
@@ -276,17 +284,17 @@ class DetailedWritable {
 
 这仍然是一个简化的版本，但它展示了核心流程。`write()`方法将块添加到缓冲区，如果缓冲区超过`highWaterMark`，则返回`false`。`_doWrite()`方法一次处理一个缓冲块，调用`_write()`并在回调执行后再处理下一个块。当缓冲区为空且`needDrain`为`true`时，会触发`drain`事件。
 
-缓冲区是 **生产者**（调用 `write()` 的代码）和底层目的地（`_write()` 中的代码）之间的 **队列**。生产者可以尽可能快地向队列中添加内容，但如果目的地较慢，队列就会增长。反压机制（`write()` 返回 `false`，`drain` 事件）是反馈循环，告诉生产者在队列变得过大时减速。
+缓冲区是**生产者**（调用`write()`的代码）和底层目的地（`_write()`中的代码）之间的**队列**。生产者可以尽可能快地向队列中添加内容，但如果目的地较慢，队列就会增长。反压机制（`write()`返回`false`，`drain`事件）是反馈循环，告诉生产者在队列变得过大时减速。
 
-流不会 **强制** 反压 - 它只是 **信号**。即使 `write()` 返回 `false`，你仍然继续调用 `write()`，流会继续缓冲。它不会抛出错误。它不会丢弃数据。它只是会继续增长缓冲区，直到内存耗尽。这个设计选择是有意为之的 - 它给应用程序提供了灵活性，以决定如何处理反压。一些应用程序可能具有硬实时约束，并选择丢弃数据而不是暂停。其他应用程序可能会选择更积极地缓冲，因为它们有额外的内存。但 **默认的正确行为是在 `write()` 返回 `false` 时暂停**。
+流不会**强制**反压——它只是**信号**。即使`write()`返回`false`，你仍然继续调用`write()`，流会继续缓冲。它不会抛出错误，也不会丢弃数据。它只是会继续增长缓冲区，直到内存耗尽。这个设计选择是有意为之的——它给应用程序提供了灵活性，以决定如何处理反压。一些应用程序可能具有硬实时约束，并选择丢弃数据而不是暂停。其他应用程序可能会选择更积极地缓冲，因为它们有额外的内存。但**默认的正确行为是在`write()`返回`false`时暂停**。
 
-缓冲区使用的内存是除了块本身使用的内存之外的。每个写入请求都是一个对象，它包含块、编码、回调和其他元数据。对于大量的小写入，这些对象的开销可能是相当大的。这就是为什么将小写入批处理到更大的块中可以提高性能的原因之一 - 更少的写入请求意味着更少的对象开销。
+缓冲区使用的内存是除了块本身使用的内存之外的。每个写入请求都是一个对象，它包含块、编码、回调和其他元数据。对于大量的小写入，这些对象的开销可能是相当大的。这就是为什么将小写入批处理到更大的块中可以提高性能的原因之一——更少的写入请求意味着更少的对象开销。
 
-`cork()` 和 `uncork()` 方法是专门设计来优化在执行许多小写入时的缓冲。
+`cork()`和`uncork()`方法是专门设计来优化在执行许多小写入时的缓冲。
 
-当你调用 `writable.cork()` 时，流进入 **corked 状态**。在这个状态下，所有写入都会被缓冲，并且根本不会调用 `_write()`。这个想法是，你即将进行一系列小写入，你希望将它们全部缓冲起来，然后一次性写入。
+当你调用`writable.cork()`时，流进入**corked状态**。在这个状态下，所有写入都会被缓冲，并且根本不会调用`_write()`。这个想法是，你即将进行一系列小写入，你希望将它们全部缓冲起来，然后一次性写入。
 
-在完成所有写入后，你调用 `writable.uncork()`。这将刷新缓冲的写入。如果流的 `_writev()` 方法已实现（允许一次性写入多个块），`uncork()` 将使用所有缓冲的块调用 `_writev()`。否则，它将为每个块重复调用 `_write()`。
+在完成所有写入后，你调用`writable.uncork()`。这将刷新缓冲的写入。如果流的`_writev()`方法已实现（允许一次性写入多个块），`uncork()`将使用所有缓冲的块调用`_writev()`。否则，它将为每个块重复调用`_write()`。
 
 这里有一个例子：
 
@@ -298,9 +306,9 @@ writable.write("line 3\n");
 writable.uncork();
 ```
 
-没有使用 `cork()`，每次 `write()` 调用可能会立即调用 `_write()`，导致三个独立的 I/O 操作。使用 `cork()` 后，所有三个写入都会被缓冲，当调用 `uncork()` 时，它们会一起写入（如果实现了 `_writev()`），或者在没有停顿的情况下顺序写入。
+没有使用`cork()`，每次`write()`调用可能会立即调用`_write()`，导致三个独立的 I/O 操作。使用`cork()`后，所有三个写入都会被缓冲，当调用`uncork()`时，它们会一起写入（如果实现了`_writev()`），或者在没有停顿的情况下顺序写入。
 
-当你进行许多小写入时，这可以显著提高性能，因为它减少了系统调用的次数。在三次单独的 `write()` 系统调用中写入三个 8 字节块比在一次调用中写入一个 24 字节块要慢。
+当你进行许多小写入时，这可以显著提高性能，因为它减少了系统调用的次数。在三次单独的`write()`系统调用中写入三个 8 字节块比在一次调用中写入一个 24 字节块要慢。
 
 然而，`cork()`和`uncork()`在大多数应用程序代码中并不需要考虑。它们在实现生成许多小数据块的库或协议处理程序时最有用。对于典型应用程序代码，直接调用`write()`就足够了。
 
@@ -316,7 +324,8 @@ writable.uncork();
 
 ```js
 import { Writable } from "stream";
- class NullWritable extends Writable {
+
+class NullWritable extends Writable {
  _write(chunk, encoding, callback) {
  callback(); // write completes immediately
  }
@@ -393,9 +402,9 @@ class BatchWritable extends Writable {
 
 `chunks`参数是一个对象数组，每个对象都有一个`chunk`属性（数据）和一个`encoding`属性。您可以一次性处理它们并完成时调用回调。
 
-实现 `_writev()` 是可选的。如果你没有实现它，流将为每个缓冲块调用一次 `_write()`。但是，如果你的底层目标有一个批处理写入的 API（例如，具有多行的 SQL `INSERT` 或支持捆绑多个消息的网络协议），实现 `_writev()` 可以**显著提高性能**。
+实现`_writev()`是可选的。如果你没有实现它，流将为每个缓冲块调用一次`_write()`。但是，如果你的底层目标有一个批处理写入的 API（例如，具有多行的 SQL `INSERT`或支持捆绑多个消息的网络协议），实现`_writev()`可以**显著提高性能**。
 
-`_final()` 钩子在流结束时被调用（在调用 `end()` 之后并且所有缓冲写入都已处理），但在发出 `finish` 事件之前。它对于清理或最终操作很有用，例如关闭文件描述符或刷新缓冲区。
+`_final()`钩子在流结束时被调用（在调用`end()`之后并且所有缓冲写入都已处理），但在发出`finish`事件之前。它对于清理或最终操作很有用，例如关闭文件描述符或刷新缓冲区。
 
 ```js
 class CleanupWritable extends Writable {
@@ -411,14 +420,15 @@ class CleanupWritable extends Writable {
 }
 ```
 
-`_final()` 回调必须在最终化完成后被调用，以表示最终化完成。在它被调用后，流发出 `finish` 事件。
+`_final()`回调必须在最终化完成后被调用，以表示最终化完成。在它被调用后，流发出`finish`事件。
 
 一个更现实的自定义可写流，它以自定义格式写入日志文件：
 
 ```js
 import { Writable } from "stream";
 import { open, write as fsWrite } from "fs";
- class LogWritable extends Writable {
+
+class LogWritable extends Writable {
  constructor(filename, options) {
  super(options);
  this.filename = filename;
@@ -455,9 +465,9 @@ import { open, write as fsWrite } from "fs";
 }
 ```
 
-此流在构造函数中打开一个用于追加的文件。当调用 `_write()` 时，它使用时间戳格式化块，并使用低级 `fs.write()` 函数将块写入文件。在 `_final()` 中，它关闭文件描述符。
+此流在构造函数中打开一个用于追加的文件。当调用`_write()`时，它使用时间戳格式化块，并使用低级`fs.write()`函数将块写入文件。在`_final()`中，它关闭文件描述符。
 
-注意 `_write()` 如何处理文件尚未打开的情况，通过等待 `open` 事件。这是当底层资源初始化是异步时的**常见模式**。
+注意`_write()`如何处理文件尚未打开的情况，通过等待`open`事件。这是当底层资源初始化是异步时的**常见模式**。
 
 实现这样的自定义可写流让你**完全控制**数据去向和数据处理方式。你可以将数据写入数据库、外部 API、压缩流，或任何其他地方。可写接口足够灵活，可以适应任何目标。
 
@@ -465,31 +475,35 @@ import { open, write as fsWrite } from "fs";
 
 在理解了可写流内部工作原理的基础上，以下是应用代码中正确写入它们的实用模式。
 
-**最重要的规则**：始终检查 `write()` 的返回值。如果它返回 `false`，暂停你的数据源，并在继续之前等待 `drain`。
+**最重要的规则**：始终检查`write()`的返回值。如果它返回`false`，暂停你的数据源，并在继续之前等待`drain`。
 
 在从流中读取并写入另一个流的上下文中的模式：
 
 ```js
 import { createReadStream, createWriteStream } from "fs";
- const reader = createReadStream("input.txt");
+
+const reader = createReadStream("input.txt");
 const writer = createWriteStream("output.txt");
- reader.on("data", (chunk) => {
+
+reader.on("data", (chunk) => {
  const ok = writer.write(chunk);
  if (!ok) {
  reader.pause();
  }
 });
- writer.on("drain", () => {
+
+writer.on("drain", () => {
  reader.resume();
 });
- reader.on("end", () => {
+
+reader.on("end", () => {
  writer.end();
 });
 ```
 
-我们调用 `write()` 并捕获返回值。如果它是 `false`，我们暂停读取器。当写入器的 `drain` 事件触发时，我们恢复读取器。这确保了写入器的缓冲区永远不会无限制地增长。
+我们调用`write()`并捕获返回值。如果它是`false`，我们暂停读取器。当写入器的`drain`事件触发时，我们恢复读取器。这确保了写入器的缓冲区永远不会无限制地增长。
 
-当你完成写入后，你必须调用 `end()` 来表示不再写入更多数据。你可以选择性地将一个最终块传递给 `end()`：
+当你完成写入后，你必须调用`end()`来表示不再写入更多数据。你可以选择性地将一个最终块传递给`end()`：
 
 ```js
 writer.end("final chunk");
@@ -502,7 +516,7 @@ writer.write("final chunk");
 writer.end();
 ```
 
-在调用 `end()` 之后，流会处理任何剩余的缓冲写入，如果实现了 `_final()`，则调用 `_final()`，然后发出 `finish` 事件。在那个时刻，调用 `write()` 将会抛出错误。
+在调用`end()`之后，流会处理任何剩余的缓冲写入，如果实现了`_final()`，则调用`_final()`，然后发出`finish`事件。在那个时刻，调用`write()`将会抛出错误。
 
 错误是特定的**写入后结束错误**，其外观如下：
 
@@ -511,9 +525,9 @@ writer.end();
 writer.write("more data"); // throws ERR_STREAM_WRITE_AFTER_END
 ```
 
-当你有异步代码写入流，并且代码的另一部分在异步写入完成之前调用 `end()` 时，这是一个**常见错误**。你需要确保在调用 `end()` 之前所有写入都已完成。
+当你有异步代码写入流，并且代码的另一部分在异步写入完成之前调用`end()`时，这是一个**常见错误**。你需要确保在调用`end()`之前所有写入都已完成。
 
-在应用程序代码中，`cork()` 和 `uncork()` 有特定的用途。如果你正在快速连续进行许多小写入，你可以使用 `cork()` 来缓冲它们，并使用 `uncork()` 来刷新：
+在应用程序代码中，`cork()`和`uncork()`有特定的用途。如果你正在快速连续进行许多小写入，你可以使用`cork()`来缓冲它们，并使用`uncork()`来刷新：
 
 ```js
 writer.cork();
@@ -523,7 +537,7 @@ for (let i = 0; i < 1000; i++) {
 writer.uncork();
 ```
 
-但在实践中，你很少需要手动这样做。如果你使用 `pipe()` 或 `pipeline()`，背压会自动处理。如果你直接写入流，流中的缓冲已经提供了一些批处理。**`Cork` 主要用于生成结构化输出的库代码**，如 HTTP/2 帧编码器或数据库协议处理程序。
+但在实践中，你很少需要手动这样做。如果你使用`pipe()`或`pipeline()`，背压会自动处理。如果你直接写入流，流中的缓冲已经提供了一些批处理。**`Cork`主要用于生成结构化输出的库代码**，如 HTTP/2 帧编码器或数据库协议处理程序。
 
 一个不可避免需要手动处理背压的场景是当你从**非流式源**生成数据时。例如，遍历一个数组并将每个元素写入：
 
@@ -541,46 +555,51 @@ async function writeArray(writable, array) {
 }
 ```
 
-此函数将每个数组元素写入流。如果 `write()` 返回 `false`，它将在继续之前等待 `drain` 事件。这确保了即使数组很大且流很慢，流缓冲区也不会溢出。
+此函数将每个数组元素写入流。如果`write()`返回`false`，它将在继续之前等待`drain`事件。这确保了即使数组很大且流很慢，流缓冲区也不会溢出。
 
-另一种模式是使用具有异步迭代的可写流。Node.js 提供了一个 `stream.Writable.toWeb()` 方法，它创建一个 `WritableStream`（来自 WHATWG Streams 标准），这可以与异步迭代一起使用。但这是一个更高级的话题，我们将在现代网络 API 的上下文中进行讨论。
+另一种模式是使用具有异步迭代的可写流。Node.js提供了一个`stream.Writable.toWeb()`方法，它创建一个`WritableStream`（来自 WHATWG Streams 标准），这可以与异步迭代一起使用。但这是一个更高级的话题，我们将在现代网络 API 的上下文中进行讨论。
 
-可写流通过 `write()` 返回值和 `drain` 事件内置了流控制。**尊重这种流控制是强制性的**。这是在轻负载下工作但重负载时崩溃的代码与在生产环境中可靠工作的代码之间的区别。
+可写流通过`write()`返回值和`drain`事件内置了流控制。**尊重这种流控制是强制性的**。这是在轻负载下工作但重负载时崩溃的代码与在生产环境中可靠工作的代码之间的区别。
 
 一个将所有内容结合起来的完整示例：我们将编写一个程序，读取一个大型 CSV 文件，解析每一行，转换数据，并将其写入数据库。我们将使用可写流并正确处理背压。
+
+
 
 ```js
 import { createReadStream } from "fs";
 import { Writable } from "stream";
 import { pipeline } from "stream/promises";
- class DatabaseWriter extends Writable {
- constructor(db) {
- super({ objectMode: true });
- this.db = db;
- }
- async _write(row, encoding, callback) {
- try {
- await this.db.insert(row);
- callback();
- } catch (err) {
- callback(err);
- }
- }
+
+class DatabaseWriter extends Writable {
+  constructor(db) {
+    super({ objectMode: true });
+    this.db = db;
+  }
+
+  async _write(row, encoding, callback) {
+    try {
+      await this.db.insert(row);
+      callback();
+    } catch (err) {
+      callback(err);
+    }
+  }
 }
- async function importCSV(filename, db) {
- const reader = createReadStream(filename);
- const parser = parseCSV(); // hypothetical CSV parser
- const writer = new DatabaseWriter(db);
- await pipeline(reader, parser, writer);
- console.log("Import complete");
+
+async function importCSV(filename, db) {
+  const reader = createReadStream(filename);
+  const parser = parseCSV(); // hypothetical CSV parser
+  const writer = new DatabaseWriter(db);
+  await pipeline(reader, parser, writer);
+  console.log("Import complete");
 }
 ```
 
-此示例使用 `pipeline()`，它自动处理背压。`DatabaseWriter` 是一个自定义的可写流，它将每一行写入数据库。`_write()` 方法是异步的，这是允许的 - 你可以使用异步函数或从 `_write()` 返回承诺，Node.js 将等待它们解决后再处理下一个块。
+此示例使用`pipeline()`，它自动处理背压。`DatabaseWriter`是一个自定义的可写流，它将每一行写入数据库。`_write()`方法是异步的，这是允许的——你可以使用异步函数或从`_write()`返回承诺，Node.js 将等待它们解决后再处理下一个块。
 
-注意，我们并没有手动检查 `write()` 的返回值或监听 `drain` 事件。这是因为 `pipeline()` 会为我们处理这些。这是**大多数流代码的推荐模式**：使用 `pipeline()` 或 `pipe()`，让 Node.js 处理背压，并专注于转换逻辑。
+注意，我们并没有手动检查`write()`的返回值或监听`drain`事件。这是因为`pipeline()`会为我们处理这些。这是**大多数流代码的推荐模式**：使用`pipeline()`或`pipe()`，让 Node.js 处理背压，并专注于转换逻辑。
 
-但当你不能使用 `pipeline()` - 当你处理多个来源或目的地，或者当你与非流式 API 集成时 - 你需要手动处理背压。当你这样做时，模式总是相同的：**检查 `write()`，当它返回 `false` 时暂停，当 `drain` 触发时恢复**。
+但当你不能使用`pipeline()`——当你处理多个来源或目的地，或者当你与非流式 API 集成时——你需要手动处理背压。当你这样做时，模式总是相同的：**检查`write()`，当它返回`false`时暂停，当`drain`触发时恢复**。
 
 ## 缓冲区溢出的机制
 
@@ -592,7 +611,7 @@ import { pipeline } from "stream/promises";
 
 ```js
 readable.on("data", (chunk) => {
- writable.write(chunk); // ignoring return value
+  writable.write(chunk); // ignoring return value
 });
 ```
 
@@ -610,13 +629,14 @@ readable.on("data", (chunk) => {
 
 ```js
 readable.on("data", (chunk) => {
- const ok = writable.write(chunk);
- if (!ok) {
- readable.pause();
- }
+  const ok = writable.write(chunk);
+  if (!ok) {
+    readable.pause();
+  }
 });
- writable.on("drain", () => {
- readable.resume();
+
+writable.on("drain", () => {
+  readable.resume();
 });
 ```
 
@@ -628,11 +648,11 @@ readable.on("data", (chunk) => {
 
 但这里有一个值得探讨的微妙之处。`highWaterMark`**不是一个硬限制**。缓冲区可以超过`highWaterMark`。`highWaterMark`控制的是`write()`何时返回`false`。如果你用一个 10MB 的块调用`write()`，并且缓冲区为空，该块将被缓冲，缓冲区大小现在是 10MB，远远超过了 16KB 的`highWaterMark`。但`write()`在这个调用上会返回`false`，表示背压。
 
-这意味着实际的峰值内存使用量是 **`highWaterMark` 加上最大单个块的大小**。如果你以 64KB 的块进行流式传输，并且 `highWaterMark` 为 16KB，则峰值缓冲区约为 80KB。如果你以 1MB 的块进行流式传输，则峰值缓冲区约为 1MB。这就是为什么**选择合适的块大小很重要**，尤其是在内存受限的环境中。
+这意味着实际的峰值内存使用量是**`highWaterMark`加上最大单个块的大小**。如果你以 64KB 的块进行流式传输，并且`highWaterMark`为 16KB，则峰值缓冲区约为 80KB。如果你以 1MB 的块进行流式传输，则峰值缓冲区约为 1MB。这就是为什么**选择合适的块大小很重要**，尤其是在内存受限的环境中。
 
 有另一种场景，忽略背压会导致问题：**从多个生产者向单个可写流写入**。假设你有 10 个并发操作都在向同一个日志文件流写入。如果它们都不尊重背压，并且每个都以尽可能快的速度产生数据，缓冲区将增长以容纳所有 10 个流的输出。一个流的 16KB 缓冲区可能变成 160KB 或更多。在繁忙的服务器上，如果有数百或数千个并发操作，这可能会导致内存泄漏。
 
-解决方案是相同的：尊重背压。每个生产者都会检查 `write()` 的返回值，并在返回 `false` 时暂停。可写流会发出一次 `drain` 事件，然后所有暂停的生产者都会恢复。缓冲区保持有界。
+解决方案是相同的：尊重背压。每个生产者都会检查`write()`的返回值，并在返回`false`时暂停。可写流会发出一次`drain`事件，然后所有暂停的生产者都会恢复。缓冲区保持有界。
 
 ## 可写流中的错误处理
 
@@ -640,42 +660,46 @@ readable.on("data", (chunk) => {
 
 可写流中的错误可能在多个点发生。底层目的地可能失败——磁盘可能已满，网络可能断开，可能发生权限错误。数据本身可能对目的地无效。当尝试操作时，流可能处于无效状态。
 
-当在 `_write()`、`_writev()` 或 `_final()` 中发生错误时，错误会被传递给回调。流通过发出一个 `error` 事件来处理这个问题。在发出 `error` 事件后，流进入一个**错误状态**。任何缓冲的写入都会被丢弃，并且进一步的写入将抛出错误。
+当在`_write()`、`_writev()`或`_final()`中发生错误时，错误会被传递给回调。流通过发出一个`error`事件来处理这个问题。在发出`error`事件后，流进入一个**错误状态**。任何缓冲的写入都会被丢弃，并且进一步的写入将抛出错误。
 
 这看起来像：
 
 ```js
 class FailingWritable extends Writable {
- _write(chunk, encoding, callback) {
- callback(new Error("Write failed"));
- }
+  _write(chunk, encoding, callback) {
+    callback(new Error("Write failed"));
+  }
 }
- const writable = new FailingWritable();
- writable.on("error", (err) => {
- console.error("Stream error:", err.message);
+
+const writable = new FailingWritable();
+
+writable.on("error", (err) => {
+  console.error("Stream error:", err.message);
 });
- writable.write("test"); // triggers error event
+
+writable.write("test"); // triggers error event
 writable.write("more"); // throws ERR_STREAM_DESTROYED
 ```
 
-第一个 `write()` 触发 `error` 事件。之后，流被销毁，后续的写入将抛出异常。
+第一个`write()`触发`error`事件。之后，流被销毁，后续的写入将抛出异常。
 
-如果你没有附加 `error` 事件监听器，错误将被抛出，可能会使你的进程崩溃。**你必须始终将错误处理程序附加到流上**，尤其是在生产代码中。未处理的流错误是 Node.js 进程意外崩溃的最常见原因之一。
+如果你没有附加`error`事件监听器，错误将被抛出，可能会使你的进程崩溃。**你必须始终将错误处理程序附加到流上**，尤其是在生产代码中。未处理的流错误是 Node.js 进程意外崩溃的最常见原因之一。
 
 在流管道中优雅地处理错误的模式，我们将在管道子章节中深入探讨。但就目前而言，要明白**错误处理是必不可少的**。你创建或接收的每个可写流都必须有一个错误处理程序。
 
-另一个错误场景是在调用 `end()` 之后调用 `write()`。这是一个**编程错误**，而不是运行时错误。它表明你的代码逻辑中存在一个错误。当你调用 `end()` 时，你是在告诉流“没有更多的写入。”如果你随后调用 `write()`，流将抛出 `ERR_STREAM_WRITE_AFTER_END` 错误。
+另一个错误场景是在调用`end()`之后调用`write()`。这是一个**编程错误**，而不是运行时错误。它表明你的代码逻辑中存在一个错误。当你调用`end()`时，你是在告诉流“没有更多的写入。”如果你随后调用`write()`，流将抛出`ERR_STREAM_WRITE_AFTER_END`错误。
 
-这通常发生在异步代码中，其中多个代码路径正在写入同一个流，其中一个路径调用 `end()`，而另一个路径仍有写入待处理。修复方法是协调你的代码，确保只有在所有写入都完成后才调用 `end()`。这可能涉及使用 `Promise.all()` 等待所有异步写入，或者使用计数器来跟踪待处理的写入。
+这通常发生在异步代码中，其中多个代码路径正在写入同一个流，其中一个路径调用`end()`，而另一个路径仍有写入待处理。修复方法是协调你的代码，确保只有在所有写入都完成后才调用`end()`。这可能涉及使用`Promise.all()`等待所有异步写入，或者使用计数器来跟踪待处理的写入。
 
 问题的例子：
 
 ```js
 async function buggyWrite(writable) {
- setTimeout(() => {
- writable.write("async write");
- }, 100);
- writable.end(); // called before async write
+  setTimeout(() => {
+    writable.write("async write");
+  }, 100);
+
+  writable.end(); // called before async write
 }
 ```
 
@@ -683,30 +707,31 @@ async function buggyWrite(writable) {
 
 ```js
 async function correctWrite(writable) {
- await new Promise((resolve) => {
- setTimeout(() => {
- writable.write("async write", resolve);
- }, 100);
- });
- writable.end();
+  await new Promise((resolve) => {
+    setTimeout(() => {
+      writable.write("async write", resolve);
+    }, 100);
+  });
+
+  writable.end();
 }
 ```
 
-现在只有在异步写入完成后才会调用 `end()`。
+现在只有在异步写入完成后才会调用`end()`。
 
-此外，还有 `destroy()` 方法，它强制关闭流并可选择发出错误。调用 `writable.destroy(err)` 立即将流置于已销毁状态，丢弃缓冲写入，并发出 `error`（如果提供了 `err`）然后是 `close`。
+此外，还有`destroy()`方法，它强制关闭流并可选择发出错误。调用`writable.destroy(err)`立即将流置于已销毁状态，丢弃缓冲写入，并发出`error`（如果提供了`err`）然后是`close`。
 
 ```js
 writable.destroy(new Error("Aborted"));
 ```
 
-当你需要取消正在进行的流操作时，这很有用，比如当用户取消文件上传时。`destroy()` 不等待缓冲写入完成——它是一个 **立即的、强制性的关闭**。
+当你需要取消正在进行的流操作时，这很有用，比如当用户取消文件上传时。`destroy()`不等待缓冲写入完成——它是一个**立即的、强制性的关闭**。
 
-`destroyed` 属性告诉你流是否已被销毁：
+`destroyed`属性告诉你流是否已被销毁：
 
 ```js
 if (!writable.destroyed) {
- writable.write("data");
+  writable.write("data");
 }
 ```
 
@@ -716,49 +741,49 @@ if (!writable.destroyed) {
 
 可写流公开了几个属性，让你可以内省其当前状态。这些对于调试、监控以及关于流控制的运行时决策很有用。
 
-`writableLength` 属性告诉你当前有多少字节（或在 `objectMode` 中是对象）被缓冲：
+`writableLength`属性告诉你当前有多少字节（或在`objectMode`中是对象）被缓冲：
 
 ```js
 console.log(writable.writableLength);
 ```
 
-如果这个值接近 `writableHighWaterMark`，你知道即将发出背压信号。你可能使用这个来实施软速率限制或向用户提供上传进度的反馈。
+如果这个值接近`writableHighWaterMark`，你知道即将发出背压信号。你可能使用这个来实施软速率限制或向用户提供上传进度的反馈。
 
-`writableHighWaterMark` 属性公开了 `highWaterMark` 值：
+`writableHighWaterMark`属性公开了`highWaterMark`值：
 
 ```js
 console.log(writable.writableHighWaterMark);
 ```
 
-这是确定 `write()` 返回 `false` 的阈值。它在流构建期间设置，通常不会改变，但你可以读取它来了解流的缓冲行为。
+这是确定`write()`返回`false`的阈值。它在流构建期间设置，通常不会改变，但你可以读取它来了解流的缓冲行为。
 
-`writable` 属性是一个布尔值，指示是否安全调用 `write()`：
+`writable`属性是一个布尔值，指示是否安全调用`write()`：
 
 ```js
 if (writable.writable) {
- writable.write("data");
+  writable.write("data");
 }
 ```
 
-如果流已被销毁或结束，这是 `false`。在尝试写入之前这是一个快速检查。
+如果流已被销毁或结束，这是`false`。在尝试写入之前这是一个快速检查。
 
-`writableEnded` 属性告诉你是否已调用 `end()`：
+`writableEnded`属性告诉你是否已调用`end()`：
 
 ```js
 console.log(writable.writableEnded);
 ```
 
-即使 `finish` 事件尚未触发，在调用 `end()` 之后这也是 `true` 的。这表明不再接受更多的写入。
+即使`finish`事件尚未触发，在调用`end()`之后这也是`true`的。这表明不再接受更多的写入。
 
-`writableFinished` 属性告诉你是否已发出 `finish` 事件：
+`writableFinished`属性告诉你是否已发出`finish`事件：
 
 ```js
 console.log(writable.writableFinished);
 ```
 
-在所有写入都已处理并且 `finish` 事件已触发后，这是 `true` 的。这表明流已经完成了其工作。
+在所有写入都已处理并且`finish`事件已触发后，这是`true`的。这表明流已经完成了其工作。
 
-`writableCorked` 属性告诉你 `cork()` 被调用而没有相应 `uncork()` 的次数：
+`writableCorked`属性告诉你`cork()`被调用而没有相应`uncork()`的次数：
 
 ```js
 writable.cork();
@@ -766,9 +791,9 @@ writable.cork();
 console.log(writable.writableCorked); // 2
 ```
 
-这主要用于调试 `cork()`/`uncork()` 的使用。
+这主要用于调试`cork()`/`uncork()`的使用。
 
-`writableObjectMode` 属性告诉你流是否处于 `objectMode`：
+`writableObjectMode`属性告诉你流是否处于`objectMode`：
 
 ```js
 console.log(writable.writableObjectMode);
@@ -776,31 +801,28 @@ console.log(writable.writableObjectMode);
 
 这在构建期间设置，不会改变。当编写处理字节流和对象流的通用代码时很有用。
 
-这些属性让你能够了解流的内部状态。在大多数应用程序代码中，你不需要它们。但在调试流问题或实现通用流工具时，它们是 **无价的**。
+这些属性让你能够了解流的内部状态。在大多数应用程序代码中，你不需要它们。但在调试流问题或实现通用流工具时，它们是**无价的**。
 
 ## 深入探讨：写入请求队列
 
 理解在队列结构中如何内部管理写入请求有助于你推理性能和内存使用。
 
-当你调用 `write()` 时，数据块及其相关元数据被封装在一个 **写入请求对象** 中。此对象包含：
+当你调用`write()`时，数据块及其相关元数据被封装在一个**写入请求对象**中。此对象包含：
 
-+   数据块本身（`Buffer`、字符串或对象）
+- 数据块本身（`Buffer`、字符串或对象）
+- 编码（如果它是字符串）
+- 写入完成时调用的回调（可选）
+- 队列中下一个写入请求的引用
 
-+   编码（如果它是字符串）
+这些写入请求对象形成一个**链表**。链表的头部是当前正在处理写入请求。尾部是最最近添加的请求。当你调用`write()`时，一个新的写入请求被追加到尾部。
 
-+   写入完成时调用的回调（可选）
+当`_write()`完成（当其回调被调用时），当前写入请求从列表的头部移除，下一个请求成为新的头部。如果有下一个请求，则再次调用`_write()`并使用该请求的数据块。如果没有下一个请求，队列就为空，流等待更多的`write()`调用。
 
-+   队列中下一个写入请求的引用
+这个队列结构对内存使用有影响。每个写入请求对象都有**开销**——指针、元数据、闭包。对于小写入，这种开销相对于数据块大小可能是显著的。如果你使用 1 字节的数据块调用`write()`一百万次，你将有一百万个写入请求对象，每个对象有 50-100 字节的开销。那只是队列结构就需要 50-100 MB 的内存，尽管实际数据只有 1 MB。
 
-这些写入请求对象形成一个 **链表**。链表的头部是当前正在处理写入请求。尾部是最最近添加的请求。当你调用 `write()` 时，一个新的写入请求被追加到尾部。
+这就是为什么**批量处理小写入可以提高性能**。与其进行一百万个 1 字节写入，不如进行 1000 个 1KB 写入。数据是相同的，但队列开销是 1/1000。
 
-当 `_write()` 完成（当其回调被调用时），当前写入请求从列表的头部移除，下一个请求成为新的头部。如果有下一个请求，则再次调用 `_write()` 并使用该请求的数据块。如果没有下一个请求，队列就为空，流等待更多的 `write()` 调用。
-
-这个队列结构对内存使用有影响。每个写入请求对象都有 **开销** - 指针、元数据、闭包。对于小写入，这种开销相对于数据块大小可能是显著的。如果你使用 1 字节的数据块调用 `write()` 一百万次，你将有一百万个写入请求对象，每个对象有 50-100 字节的开销。那只是队列结构就需要 50-100 MB 的内存，尽管实际数据只有 1 MB。
-
-这就是为什么 **批量处理小写入可以提高性能**。与其进行一百万个 1 字节写入，不如进行 1000 个 1KB 写入。数据是相同的，但队列开销是 1/1000。
-
-`cork()` 和 `uncork()` 方法与此队列交互。当你封口一个流时，`write()` 仍然创建写入请求对象并将它们追加到队列中，但不会调用 `_write()`。请求累积。当你解封时，如果实现了 `_writev()`，所有累积的请求将在一个调用中传递给 `_writev()`。否则，为每个请求重复调用 `_write()`。
+`cork()`和`uncork()`方法与此队列交互。当你封口一个流时，`write()`仍然创建写入请求对象并将它们追加到队列中，但不会调用`_write()`。请求累积。当你解封时，如果实现了`_writev()`，所有累积的请求将在一个调用中传递给`_writev()`。否则，为每个请求重复调用`_write()`。
 
 封口写入序列：
 
@@ -812,7 +834,7 @@ writable.write("c"); // creates request, queues it
 writable.uncork(); // calls _writev(["a", "b", "c"])
 ```
 
-无 `cork()`：
+无`cork()`：
 
 ```js
 writable.write("a"); // creates request, calls _write("a")
@@ -821,9 +843,9 @@ writable.write("c"); // creates request, queues it
 // as each _write completes, the next is called
 ```
 
-区别在于，在封口的情况下，如果 `_writev()` 被高效实现，**所有三个数据块都可以在一个 I/O 操作中写入**。在未封口的情况下，每个数据块分别写入，导致需要进行三个 I/O 操作。
+区别在于，在封口的情况下，如果`_writev()`被高效实现，**所有三个数据块都可以在一个 I/O 操作中写入**。在未封口的情况下，每个数据块分别写入，导致需要进行三个 I/O 操作。
 
-对于某些目的地，如网络套接字或文件，显著减少 I/O 操作的数量可以显著提高吞吐量。对于其他目的地，如内存数组，这并不重要。这就是为什么 `_writev()` 是可选的——它是一种只有在目的地从批量处理中受益时才值得优化的优化。
+对于某些目的地，如网络套接字或文件，显著减少 I/O 操作的数量可以显著提高吞吐量。对于其他目的地，如内存数组，这并不重要。这就是为什么`_writev()`是可选的——它是一种只有在目的地从批量处理中受益时才值得优化的优化。
 
 ## 可写入流的对象模式
 
@@ -831,102 +853,113 @@ writable.write("c"); // creates request, queues it
 
 在`objectMode`模式下，`highWaterMark`是以**对象计数**来衡量的，而不是以字节计数。默认值为 16 个对象。当你向一个`objectMode`流写入对象时，流会根据每个对象在内存中的大小，将缓冲区计数增加 1。
 
-这意味着在`objectMode`中的`highWaterMark**不是一个内存限制**。它是一个计数限制。如果你写入 16 个对象，每个对象是一个 10MB 的缓冲区，那么流已经缓冲了 160MB 的数据，尽管`highWaterMark`是 16。
+这意味着在`objectMode`中的`highWaterMark`**不是一个内存限制**。它是一个计数限制。如果你写入 16 个对象，每个对象是一个 10MB 的缓冲区，那么流已经缓冲了 160MB 的数据，尽管`highWaterMark`是 16。
 
-这是故意的。`objectMode`是为了那些每个数据块代表一个**逻辑工作单元**的场景而设计的，你希望限制正在传输的单元数量，而不是总字节数。例如，如果你正在处理数据库行，你可能希望一次缓冲 100 行，无论每行是 100 字节还是 10KB。
 
-实现`objectMode`的`Writable`与字节流相同，只是你在选项中设置`objectMode: true`：
+
+这是故意的。`objectMode` 是为了那些每个数据块代表一个**逻辑工作单元**的场景而设计的，你希望限制正在传输的单元数量，而不是总字节数。例如，如果你正在处理数据库行，你可能希望一次缓冲 100 行，无论每行是 100 字节还是 10KB。
+
+实现 `objectMode` 的 `Writable` 与字节流相同，只是你在选项中设置 `objectMode: true`：
 
 ```js
 class RowWriter extends Writable {
- constructor(db, options) {
- super({ ...options, objectMode: true });
- this.db = db;
- }
- async _write(row, encoding, callback) {
- try {
- await this.db.insert(row);
- callback();
- } catch (err) {
- callback(err);
- }
- }
+  constructor(db, options) {
+    super({ ...options, objectMode: true });
+    this.db = db;
+  }
+
+  async _write(row, encoding, callback) {
+    try {
+      await this.db.insert(row);
+      callback();
+    } catch (err) {
+      callback(err);
+    }
+  }
 }
 ```
 
-每次调用`write()`都会传递一个行对象。`_write()`方法接收行并将其插入数据库。在`objectMode`中，`encoding`参数被忽略（它总是`'buffer'`），但它仍然被传递以保持签名的一致性。
+每次调用 `write()` 都会传递一个行对象。`_write()` 方法接收行并将其插入数据库。在 `objectMode` 中，`encoding` 参数被忽略（它总是 `'buffer'`），但它仍然被传递以保持签名的一致性。
 
-一种常见的模式是将字节流转换为`objectMode`流，使用`Transform`。例如，解析 JSON 行：
+一种常见的模式是将字节流转换为 `objectMode` 流，使用 `Transform`。例如，解析 JSON 行：
 
 ```js
 import { Transform } from "stream";
- class JSONLineParser extends Transform {
- constructor(options) {
- super({ ...options, objectMode: true });
- this.buffer = "";
- }
- _transform(chunk, encoding, callback) {
- this.buffer += chunk.toString();
- const lines = this.buffer.split("\n");
- this.buffer = lines.pop(); // incomplete line
- for (const line of lines) {
- if (line.trim()) {
- try {
- this.push(JSON.parse(line));
- } catch (err) {
- return callback(err);
- }
- }
- }
- callback();
- }
+
+class JSONLineParser extends Transform {
+  constructor(options) {
+    super({ ...options, objectMode: true });
+    this.buffer = "";
+  }
+
+  _transform(chunk, encoding, callback) {
+    this.buffer += chunk.toString();
+    const lines = this.buffer.split("\n");
+    this.buffer = lines.pop(); // incomplete line
+
+    for (const line of lines) {
+      if (line.trim()) {
+        try {
+          this.push(JSON.parse(line));
+        } catch (err) {
+          return callback(err);
+        }
+      }
+    }
+
+    callback();
+  }
 }
 ```
 
-这个`Transform`读取字节数据块，将它们累积成行，并推送解析后的 JSON 对象。输出是一个`objectMode`流，尽管输入是字节流。
+这个 `Transform` 读取字节数据块，将它们累积成行，并推送解析后的 JSON 对象。输出是一个 `objectMode` 流，尽管输入是字节流。
 
-`objectMode`流对于构建可组合的数据管道至关重要，其中每个阶段处理逻辑记录而不是字节块。它们在**ETL**（提取、转换、加载）系统、日志处理、数据导入/导出以及处理结构化数据的任何地方都很常见。
+`objectMode` 流对于构建可组合的数据管道至关重要，其中每个阶段处理逻辑记录而不是字节块。它们在**ETL**（提取、转换、加载）系统、日志处理、数据导入/导出以及处理结构化数据的任何地方都很常见。
 
-## `_final()`钩子的详细说明
+## `_final()` 钩子的详细说明
 
-`_final()`方法值得更多关注，因为它经常被误解。它**不是一个析构函数**。当流被销毁时不会调用它。它在流正常结束时被调用，在所有写入完成后，但在`finish`事件发出之前。
+`_final()` 方法值得更多关注，因为它经常被误解。它**不是一个析构函数**。当流被销毁时不会调用它。它在流正常结束时被调用，在所有写入完成后，但在 `finish` 事件发出之前。
 
-`_final()`方法的目的是在流被认为完成之前执行任何清理或最终写入。例如，如果你正在写入一个压缩文件，`_final()`就是写入最终压缩脚注的地方。如果你正在累积数据以进行批量写入，`_final()`就是刷新那个批次的地方。
+`_final()` 方法的目的是在流被认为完成之前执行任何清理或最终写入。例如，如果你正在写入一个压缩文件，`_final()` 就是写入最终压缩脚注的地方。如果你正在累积数据以进行批量写入，`_final()` 就是刷新那个批次的地方。
 
-一个累积写入并在批次中刷新的`Writable`：
+一个累积写入并在批次中刷新的 `Writable`：
 
 ```js
 class BatchingWritable extends Writable {
- constructor(batchSize, options) {
- super(options);
- this.batchSize = batchSize;
- this.batch = [];
- }
- _write(chunk, encoding, callback) {
- this.batch.push(chunk);
- if (this.batch.length >= this.batchSize) {
- this._flush(callback);
- } else {
- callback();
- }
- }
- _final(callback) {
- if (this.batch.length > 0) {
- this._flush(callback);
- } else {
- callback();
- }
- }
- _flush(callback) {
- const data = Buffer.concat(this.batch);
- this.batch = [];
- // write data to destination
- callback();
- }
+  constructor(batchSize, options) {
+    super(options);
+    this.batchSize = batchSize;
+    this.batch = [];
+  }
+
+  _write(chunk, encoding, callback) {
+    this.batch.push(chunk);
+
+    if (this.batch.length >= this.batchSize) {
+      this._flush(callback);
+    } else {
+      callback();
+    }
+  }
+
+  _final(callback) {
+    if (this.batch.length > 0) {
+      this._flush(callback);
+    } else {
+      callback();
+    }
+  }
+
+  _flush(callback) {
+    const data = Buffer.concat(this.batch);
+    this.batch = [];
+    // write data to destination
+    callback();
+  }
 }
 ```
 
-`_write()`方法将数据块添加到批次中。当批次达到`batchSize`时，它会被刷新。`_final()`方法确保在流结束时，任何剩余的未完成批次都会被刷新。
+`_write()` 方法将数据块添加到批次中。当批次达到 `batchSize` 时，它会被刷新。`_final()` 方法确保在流结束时，任何剩余的未完成批次都会被刷新。
 
 **如果没有 `_final()`，当流结束时，部分批次将会丢失**。`finish` 事件会触发，但最后几个块没有被写入目标。这是自定义可写流中常见的**错误**，这些流执行批处理或缓冲。
 
@@ -936,12 +969,12 @@ class BatchingWritable extends Writable {
 
 ```js
 async _final(callback) {
- try {
- await this.flushAsync();
- callback();
- } catch (err) {
- callback(err);
- }
+  try {
+    await this.flushAsync();
+    callback();
+  } catch (err) {
+    callback(err);
+  }
 }
 ```
 
@@ -949,7 +982,7 @@ async _final(callback) {
 
 ```js
 async _final() {
- await this.flushAsync();
+  await this.flushAsync();
 }
 ```
 
@@ -961,36 +994,44 @@ async _final() {
 
 ```js
 import { Writable } from "stream";
- class RateLimitedWritable extends Writable {
- constructor(dest, bytesPerSecond, options) {
- super(options);
- this.dest = dest;
- this.bytesPerSecond = bytesPerSecond;
- this.tokens = bytesPerSecond;
- this.lastRefill = Date.now();
- }
- _write(chunk, encoding, callback) {
- this._refillTokens();
- if (this.tokens >= chunk.length) {
- this.tokens -= chunk.length;
- this.dest.write(chunk, encoding, callback);
- } else {
- const wait = ((chunk.length - this.tokens) / this.bytesPerSecond) * 1000;
- setTimeout(() => {
- this.tokens = 0;
- this.dest.write(chunk, encoding, callback);
- }, wait);
- }
- }
- _refillTokens() {
- const now = Date.now();
- const elapsed = (now - this.lastRefill) / 1000;
- this.tokens = Math.min(
- this.bytesPerSecond,
- this.tokens + elapsed * this.bytesPerSecond
- );
- this.lastRefill = now;
- }
+
+class RateLimitedWritable extends Writable {
+  constructor(dest, bytesPerSecond, options) {
+    super(options);
+    this.dest = dest;
+    this.bytesPerSecond = bytesPerSecond;
+    this.tokens = bytesPerSecond;
+    this.lastRefill = Date.now();
+  }
+
+  _write(chunk, encoding, callback) {
+    this._refillTokens();
+
+    if (this.tokens >= chunk.length) {
+      this.tokens -= chunk.length;
+      this.dest.write(chunk, encoding, callback);
+    } else {
+      const wait =
+        ((chunk.length - this.tokens) / this.bytesPerSecond) * 1000;
+
+      setTimeout(() => {
+        this.tokens = 0;
+        this.dest.write(chunk, encoding, callback);
+      }, wait);
+    }
+  }
+
+  _refillTokens() {
+    const now = Date.now();
+    const elapsed = (now - this.lastRefill) / 1000;
+
+    this.tokens = Math.min(
+      this.bytesPerSecond,
+      this.tokens + elapsed * this.bytesPerSecond
+    );
+
+    this.lastRefill = now;
+  }
 }
 ```
 
@@ -1000,7 +1041,7 @@ import { Writable } from "stream";
 
 这种模式可以适应各种速率限制场景：限制每秒对 API 的请求次数、节流日志写入、调整数据导出等。
 
-注意，如果写入被延迟，此实现不会立即调用回调。回调会被传递给 `setTimeout`，最终传递给目标 `write()` 调用。这意味着可写流内部队列在等待时会被阻塞。这是**正确的行为** - 如果正在速率限制写入，流应该发出背压信号，这是自然发生的，因为回调只有在延迟写入完成后才会被调用。
+注意，如果写入被延迟，此实现不会立即调用回调。回调会被传递给 `setTimeout`，最终传递给目标 `write()` 调用。这意味着可写流内部队列在等待时会被阻塞。这是**正确的行为**——如果正在速率限制写入，流应该发出背压信号，这是自然发生的，因为回调只有在延迟写入完成后才会被调用。
 
 ## 多个写入器之间的背压
 
@@ -1024,22 +1065,23 @@ import { Writable } from "stream";
 
 在使用可写流的代码中调试内存问题需要系统性的方法。假设你的应用程序的内存使用量随时间增长，你怀疑它与流有关。你如何诊断它？
 
-首先，检查你是否尊重背压。在你的`write()`调用中添加日志：
+首先，检查你是否尊重背压。在你的 `write()` 调用中添加日志：
 
 ```js
 const ok = writable.write(chunk);
+
 if (!ok) {
- console.log("Backpressure! Buffer size:", writable.writableLength);
+  console.log("Backpressure! Buffer size:", writable.writableLength);
 }
 ```
 
 如果你看到“Backpressure!”消息，但你的代码没有暂停，那就是问题所在。你正在**忽略背压**。
 
-如果你正确地暂停了，但内存仍在增长，请定期检查`writableLength`：
+如果你正确地暂停了，但内存仍在增长，请定期检查 `writableLength`：
 
 ```js
 setInterval(() => {
- console.log("Buffer size:", writable.writableLength);
+  console.log("Buffer size:", writable.writableLength);
 }, 1000);
 ```
 
@@ -1050,13 +1092,14 @@ setInterval(() => {
 ```js
 const v8 = require("v8");
 const fs = require("fs");
- const snapshot = v8.writeHeapSnapshot();
+
+const snapshot = v8.writeHeapSnapshot();
 console.log("Heap snapshot written to", snapshot);
 ```
 
-在 Chrome DevTools 中加载快照以查看对象分配。寻找大量`Buffer`对象或写入请求对象。如果你看到与流相关的大量小对象，那么你已经找到了泄漏。
+在 Chrome DevTools 中加载快照以查看对象分配。寻找大量 `Buffer` 对象或写入请求对象。如果你看到与流相关的大量小对象，那么你已经找到了泄漏。
 
-另一个有用的工具是`--trace-gc`标志，它记录垃圾回收事件：
+另一个有用的工具是 `--trace-gc` 标志，它记录垃圾回收事件：
 
 ```js
 node --trace-gc app.js
@@ -1064,7 +1107,7 @@ node --trace-gc app.js
 
 如果你看到频繁的 GC 周期和高内存使用，尽管 GC 正在运行，这意味着你分配的速度比 GC 可以回收的速度快，这与无界缓冲区增长一致。
 
-对于生产监控，跟踪`writable.writableLength`作为一个指标。如果它始终接近`writableHighWaterMark`，你经常遇到背压，这可能会表明你的管道存在瓶颈。
+对于生产监控，跟踪 `writable.writableLength` 作为一个指标。如果它始终接近 `writableHighWaterMark`，你经常遇到背压，这可能会表明你的管道存在瓶颈。
 
 ## 实用模式：组合多个可写对象
 
@@ -1074,12 +1117,14 @@ node --trace-gc app.js
 
 ```js
 function writeToAll(writables, chunk) {
- const results = writables.map((w) => w.write(chunk));
- return results.every((r) => r === true);
+  const results = writables.map((w) => w.write(chunk));
+  return results.every((r) => r === true);
 }
- const ok = writeToAll([writable1, writable2], chunk);
+
+const ok = writeToAll([writable1, writable2], chunk);
+
 if (!ok) {
- // at least one stream signaled backpressure
+  // at least one stream signaled backpressure
 }
 ```
 
@@ -1089,23 +1134,27 @@ if (!ok) {
 
 ```js
 class FanOutWritable extends Writable {
- constructor(destinations, options) {
- super(options);
- this.destinations = destinations;
- }
- _write(chunk, encoding, callback) {
- let pending = this.destinations.length;
- let error = null;
- const done = (err) => {
- if (err) error = err;
- if (--pending === 0) {
- callback(error);
- }
- };
- this.destinations.forEach((dest) => {
- dest.write(chunk, encoding, done);
- });
- }
+  constructor(destinations, options) {
+    super(options);
+    this.destinations = destinations;
+  }
+
+  _write(chunk, encoding, callback) {
+    let pending = this.destinations.length;
+    let error = null;
+
+    const done = (err) => {
+      if (err) error = err;
+
+      if (--pending === 0) {
+        callback(error);
+      }
+    };
+
+    this.destinations.forEach((dest) => {
+      dest.write(chunk, encoding, done);
+    });
+  }
 }
 ```
 
@@ -1119,14 +1168,14 @@ class FanOutWritable extends Writable {
 
 **默认的 16KB** 对于大多数场景来说是一个合理的平衡。它足够大，可以避免典型的写入模式产生过多的背压信号，但足够小，以至于你不会缓冲不合理数量的数据。
 
-如果你正在写入大块数据，考虑 **将 `highWaterMark` 增加以匹配**。如果你的块大小为 1MB，16KB 的 `highWaterMark` 意味着每次写入都会触发背压信号，这是低效的。将 `highWaterMark` 设置为 2MB 或 4MB 给流留出一些空间。
+如果你正在写入大块数据，考虑**将 `highWaterMark` 增加以匹配**。如果你的块大小为 1MB，16KB 的 `highWaterMark` 意味着每次写入都会触发背压信号，这是低效的。将 `highWaterMark` 设置为 2MB 或 4MB 给流留出一些空间。
 
-如果你在一个 **内存受限的环境** 中运行（如具有严格限制的 Docker 容器或嵌入式设备），考虑将 `highWaterMark` 减小以减少内存占用。将其设置为 4KB 或 8KB 意味着在任何给定时间缓冲的数据更少。
+如果你在一个**内存受限的环境**中运行（如具有严格限制的 Docker 容器或嵌入式设备），考虑将 `highWaterMark` 减小以减少内存占用。将其设置为 4KB 或 8KB 意味着在任何给定时间缓冲的数据更少。
 
 如果你正在同时处理许多流，将每个流的 `highWaterMark` 乘以并发流的数量，以估计总缓冲内存使用量。如果你有 1000 个并发的 HTTP 响应流，并且每个流都有一个 16KB 的 `highWaterMark`，那么仅用于流缓冲的潜在缓冲内存就有 16MB。如果这太多，降低 `highWaterMark`。
 
-对于 `objectMode` 流，`highWaterMark` 控制的是 **对象数量**，而不是字节大小。根据你希望有多少对象在传输中选择一个值。对于数据库写入，100 或 1000 可能是合理的。对于文件解析，10 或 50 可能是合适的。没有通用的答案——这取决于你对象的大小和你的吞吐量需求。
+对于 `objectMode` 流，`highWaterMark` 控制的是**对象数量**，而不是字节大小。根据你希望有多少对象在传输中选择一个值。对于数据库写入，100 或 1000 可能是合理的。对于文件解析，10 或 50 可能是合适的。没有通用的答案——这取决于你对象的大小和你的吞吐量需求。
 
-一种技术是使 `highWaterMark` **可配置** 并根据观察到的性能进行调整。从默认值开始，测量吞吐量和内存使用情况，并根据需要进行调整。
+一种技术是使 `highWaterMark` **可配置**并根据观察到的性能进行调整。从默认值开始，测量吞吐量和内存使用情况，并根据需要进行调整。
 
-记住`highWaterMark`是一个**阈值，而不是限制**。缓冲区可以超过`highWaterMark`，尤其是如果数据块很大。所以不要将`highWaterMark`视为严格的内存预算——将其视为一个信号点。
+记住 `highWaterMark` 是一个**阈值，而不是限制**。缓冲区可以超过 `highWaterMark`，尤其是如果数据块很大。所以不要将 `highWaterMark` 视为严格的内存预算——将其视为一个信号点。

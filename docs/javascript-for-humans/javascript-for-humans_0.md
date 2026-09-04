@@ -1,19 +1,15 @@
+
 # 面向人类的 JavaScript
-
-
 
 ![](img/cover_image.jpg)
 
 ![](img/index-1_1.jpg)
-
-
 
 ![](img/index-2_1.jpg)
 
 献给父神
 
 ![](img/index-3_1.jpg)
-
 
 ![](img/index-4_1.jpg)
 
@@ -29,11 +25,6 @@
 - [do while 使用 and..............................................................96]
 - [do while 使用 Not Or And...................................................97]
 - [do while location.href..........................................................99]
-
-
-
-
-
 - 下拉菜单................100
 - 或者或昵称................102
 - 查找单词, Cat................104
@@ -89,7 +80,7 @@
 
 `ourProject` 文件夹将存放我们所有的 `js`、`html` 和 `css` 文件。
 
-- 在**桌面**上**右键点击**并选择**新建文件夹** 
+- 在**桌面**上**右键点击**并选择**新建文件夹**
 - 将该**文件夹****重命名**为
 
 ## `ourProject`
@@ -103,20 +94,25 @@
 我们可以从许多编辑器中选择编写 JavaScript，包括 Windows 自带的记事本，但记事本不如较新的替代方案。让我们来看看优秀且免费的 JavaScript 编辑器。
 
 ### VS CODE
+
 https://code.visualstudio.com/
 
 ### ATOM
+
 https://atom.io/
 
 ### BRACKETS
+
 http://brackets.io/
 
 ![](img/index-9_1.jpg)
 
 ### Sublime
+
 https://www.sublimetext.com/
 
 ### Notepad++
+
 https://notepad-plus-plus.org/downloads/
 
 VS Code 是许多人的最爱。在我们下载并安装编辑器（如 VS Code）之后，我们将创建 `.html` 文件。
@@ -136,7 +132,7 @@ VS Code 是许多人的最爱。在我们下载并安装编辑器（如 VS Code�
 
 将此 `First.html` 文件保存到 `ourProject` 文件夹中。
 
-# 第一个 HTML 页面 
+# 第一个 HTML 页面
 
 ```html
 <html>
@@ -151,7 +147,7 @@ VS Code 是许多人的最爱。在我们下载并安装编辑器（如 VS Code�
 
 将此 `First.html` 文件保存到 `ourProject` 文件夹中。
 
-# 第一个 HTML 页面 
+# 第一个 HTML 页面
 
 ```html
 <html>
@@ -215,10 +211,6 @@ function ourMessage() {
 ```
 
 正如我们在过去两页中中学到的；我们可以在 **head** 中**定义**我们的函数，也可以在 **body** 中定义。任何一种都是可以的。如上所示，我们的函数目前非常简单，作为消息代码的容器。
-
-
-
-
 
 在 JavaScript 中，`functions`是由 `EVENTS`（事件）触发的。
 
@@ -511,11 +503,15 @@ function dateGetDayName() {
   if (theDay == 2) { return "Tuesday"; }
   if (theDay == 3) { return "Wednesday"; }
 ```
+
 ![](img/index-33_1.jpg)
+
 ```html
 if (theDay == 4) { return "Thursday"; }
 ```
+
 ![](img/index-34_1.jpg)
+
 ```html
 }
 function showInfo() {
@@ -533,10 +529,15 @@ document.write(dateGetDayName())
 ![](img/index-35_1.jpg)
 
 <!--
+
 正如上面所示，我们的代码很快变得复杂。
+
 让我们简化代码和编程方式。
+
 让我们把函数定义在外部文件中。
+
 我们可以这样保持代码的整洁。
+
 -->
 
 ![](img/index-36_1.jpg)
@@ -569,13 +570,10 @@ function dateGetDayName() {
 
 ![](img/index-38_1.jpg)
 
-
-
-
-
 # 获取星期，使用 `dateGetDayName.js`
 
 ## 文件
+
 ```html
 <html
 <head>
@@ -591,6 +589,7 @@ function dateGetDayName() {
 </body>
 </html>
 ```
+
 ![](img/index-41_1.jpg)
 
 # 获取星期，使用参数
@@ -610,10 +609,13 @@ function dateGetDayName() {
 </body>
 </html>
 ```
+
 <!-- 我们在函数中使用参数，而不是在函数中定义它。相反，它在使用函数时定义它的。 -->
+
 ![](img/index-42_1.jpg)
 
 # 保存为 dateGetMonthName.js
+
 ```javascript
 function dateGetMonthName() {
   let theDate = new Date();
@@ -656,9 +658,11 @@ function dateGetMonthName() {
   }
 }
 ```
+
 ![](img/index-44_1.jpg)
 
 # 获取月份，使用 2 个参数
+
 ```html
 <html
 <head>
@@ -674,9 +678,11 @@ function dateGetMonthName() {
 </body>
 </html>
 ```
+
 ![](img/index-45_1.jpg)
 
 # 获取星期，获取月份，使用 2 个参数
+
 ```html
 <html
 <head>
@@ -694,9 +700,11 @@ function dateGetMonthName() {
 </body>
 </html>
 ```
+
 ![](img/index-46_1.jpg)
 
 # 使用样式为月份和星期的 Div 定位
+
 ```html
 <html
 <head>
@@ -726,9 +734,11 @@ function dateGetMonthName() {
 </body>
 </html>
 ```
+
 ![](img/index-48_1.jpg)
 
 # 使用 onclick 事件获取月份和星期
+
 ```html
 <html
 <head>
@@ -758,10 +768,13 @@ function dateGetMonthName() {
 </body>
 </html>
 ```
+
 <!-- 记得点击 div 以激活 -->
+
 ![](img/index-50_1.jpg)
 
 # 获取月份，获取星期，样式美化
+
 ```html
 <html
 <head>
@@ -797,9 +810,11 @@ function dateGetMonthName() {
 </body>
 </html>
 ```
+
 ![](img/index-52_1.jpg)
 
 # 获取月份，获取星期，更多样式
+
 ```html
 <html
 <head>
@@ -839,9 +854,11 @@ function dateGetMonthName() {
 </body>
 </html>
 ```
+
 ![](img/index-54_1.jpg)
 
 # 保存为 ourStyle.css
+
 ```css
 div {
   border: 5px solid rgb(0,0,0);
@@ -867,10 +884,13 @@ div:hover {
   width: 80px;
 }
 ```
+
 /* 我们将此文件作为 ourStyle.css 保存在 css 文件夹中。我们在 ourProject 文件夹中创建一个名为 css 的文件夹。我们将 ourStyle.css 保存在 css 文件夹内。 */
+
 ![](img/index-56_1.jpg)
 
 # 获取月份，获取星期，外部 CSS
+
 ```html
 <html
 <head>
@@ -889,11 +909,8 @@ div:hover {
 </html>
 ```
 
-
-
-
-
 <div id="dayDiv" class="dayStyle" onclick="showInfo('dayDiv', dateGetDayName(), 'Today is ')">Day</div
+
 </body></html>
 
 <!-- 记得点击 div 以激活代码 -->
@@ -909,7 +926,9 @@ function showInfo(whichDiv, functionName, ourText) {
 ```
 
 // 因为我们在许多脚本中反复使用 `showInfo`，所以我们将其封装了一个独立的函数以便调用。
+
 // 我们将此文件保存为 `showInfo.js`
+
 // 我们将此文件保存在 `ourProject` 文件夹下的 `js` 文件夹中
 
 ![](img/index-59_1.jpg)
@@ -921,7 +940,8 @@ function showInfo(whichDiv, functionName, ourText) {
 <head>
     <script src="../js/dateGetDayName.js"></script>
     <script src="../js/dateGetMonthName.js"></script>
-    <script src="../js/showInfo.js"></script>
+    <script src="../js/timeGetLocalTime.js"></script>
+    <script src="showInfo.js"></script>
     <link rel="stylesheet" href="../css/ourStyle.css">
 </head>
 <body>
@@ -954,6 +974,7 @@ function activateTimer() {
 ```
 
 ![](img/index-62_1.jpg)
+
 ![](img/index-63_1.jpg)
 
 获取日期，获取月份，获取时间，点击事件
@@ -1053,10 +1074,6 @@ function messageFromDay() {
 </html>
 ```
 
-
-
-
-
 `<script src="../js/showInfo.js"></script>` 在接下来的 2 页页中，我们将首先创建一个简单的 `js` 和 `html` 文件。然后，我们的 `index.html` 文件将引用我们创建的 `html` 文件。
 
 ![](img/index-76_1.jpg)
@@ -1121,16 +1138,19 @@ function ourSimpleFunction()
 ### ourProject 的文件结构
 
 文件结构显示了我们保存 `index.html` 文件的位置。
+
 当我们打开 `index.html` 文件时，可以点击链接打开我们的应用程序之一。我们可以随时添加更多链接。
 
 ![](img/index-80_1.jpg)
 
 ### 我们 js 文件的文件结构
+
 `ourProject` 文件夹中的 `js` 文件夹包含了我们的 JavaScript `library`！
 
 ![](img/index-81_1.jpg)
 
 ### 我们 html 文件的文件结构
+
 `ourProject` 文件夹中的 `html` 文件夹包含了我们的 `html` 文件，这些文件会触发库中的 `js` 文件！
 
 ![](img/index-82_1.jpg)
@@ -1138,7 +1158,9 @@ function ourSimpleFunction()
 ### 文件结构的优势
 
 随着我们向 `js` 库文件夹添加越来越多的 `js` 函数，我们可以在 `html` 文件夹中添加更多的 `html` 文件来触发它们。
+
 然后我们可以在 `index.html` 文件中创建`超链接`来激活我们的 `html` 文件。
+
 现在创建复杂项目对我们变得非常简单，因为我们有了良好的结构！
 
 ![](img/index-83_1.jpg)
@@ -1173,6 +1195,7 @@ let ourMath = new mathFunctions();
 </body>
 </html>
 ```
+
 <!-- 注意我们引用了创建的名为 `ourMath` 的类，然后使用点符号。接着是函数名。 -->
 
 ![](img/index-85_1.jpg)
@@ -1180,15 +1203,23 @@ let ourMath = new mathFunctions();
 ### 类方法很有用，但是..
 
 我们需要使用类方法来编程吗？
+
 不需要！
+
 但如果我们喜欢使用它，我们就可以这样做，因为类方法在很多领域都很有用，我们用得越频繁，就越熟悉。
 
 只使用函数方法好吗？
+
 是的！
+
 如果只需要函数，我们就使用函数！
+
 我们保持每个函数的简单！
+
 我们让每个函数只做一件事！
+
 以后，我们可以将所有相关的函数放在一个文件中。现在，我们使用独立的文件，因为这让思考每个函数变得更容易。
+
 正如此，让我们再次展示示例，使用函数方法作为我们的设计模式。
 
 ![](img/index-86_1.jpg)
@@ -1222,17 +1253,23 @@ function mathNumberSquare(number)
 ### 将所有 js 文件合并为一个
 
 我们打开包含许多 `js` 文件的 `js` 文件夹。
+
 在地址栏输入 `cmd`
+
 这会在...打开我们的 `js` 文件夹
 
 ## 命令行提示符
 
 ### 我们输入单词
+
 ```bash
 copy *.js combine.js
 ```
+
 并按回车
+
 它将创建一个名为 `combine.js` 的新文件
+
 这个新文件将我们所有的 `.js` 文件包含在一个文件中。这可以让我们部署网站变得简单得多！
 
 ![](img/index-89_1.jpg)
@@ -1240,7 +1277,9 @@ copy *.js combine.js
 # JavaScript 基础教程
 
 这是一个简单的 JavaScript 教程集合，教授了 JavaScript 编程的基础。
+
 当我们学习接下来几页的每个教程时，可以将它们添加到我们的 js 库中，并创建一个 html 文件来激活它们，我们还可以向我们的 `index.html` 文件添加入口。
+
 在书结束时，我们将拥有一个非常令人深刻的 js 库文件夹，有一个相应的 html 文件夹来激活我们的脚本，以及一个 `index.html` 文件让一切都变得更容易找到。
 
 ![](img/index-90_1.jpg)
@@ -1270,6 +1309,7 @@ copy *.js combine.js
 ![](img/index-91_1.jpg)
 
 询问并命名
+
 ```html
 <html>
 <head>
@@ -1290,6 +1330,7 @@ copy *.js combine.js
 ![](img/index-92_1.jpg)
 
 日期和时间
+
 ```html
 <html>
 <head>
@@ -1311,6 +1352,7 @@ copy *.js combine.js
 ![](img/index-93_1.jpg)
 
 do 循环询问输入名字
+
 ```html
 <html>
 <head>
@@ -1335,6 +1377,7 @@ do 循环询问输入名字
 ![](img/index-94_1.jpg)
 
 do 循环询问密码和位置
+
 ```html
 <html>
 <head>
@@ -1363,6 +1406,7 @@ do 循环询问密码和位置
 ![](img/index-95_1.jpg)
 
 do 循环使用与逻辑
+
 ```html
 <html>
 <head>
@@ -1386,10 +1430,6 @@ do 循环使用与逻辑
 ```
 
 ![](img/index-96_1.jpg)
-
-
-
-
 
 ![](img/index-97_1.jpg)
 
@@ -1821,10 +1861,6 @@ function janeInfo()
 </html>
 ```
 
-
-
-
-
 ```html
 </script></head>
 <body>
@@ -1834,6 +1870,7 @@ function janeInfo()
 </body>
 </html>
 ```
+
 ![](img/index-116_1.jpg)
 
 ### 数组排序 (sort)
@@ -1859,6 +1896,7 @@ document.write(people.sort());
 </body>
 </html>
 ```
+
 ![](img/index-117_1.jpg)
 
 ### if 多条件判断
@@ -1890,6 +1928,7 @@ function howold()
 </body>
 </html>
 ```
+
 ![](img/index-119_1.jpg)
 
 ### 文本框值 (textbox value)
@@ -1911,9 +1950,14 @@ function ourText()
 </body>
 </html>
 ```
+
 ![](img/index-120_1.jpg)
 
 ### 输入姓名，转为小写 (toLowerCase)
+
+
+
+### 将文本转换为小写
 
 ```html
 <html>
@@ -1937,6 +1981,7 @@ function ourLower()
 </body>
 </html>
 ```
+
 ![](img/index-121_1.jpg)
 
 ### 字符串拼接 (combining strings)
@@ -1960,6 +2005,7 @@ music();
 </body>
 </html>
 ```
+
 ![](img/index-122_1.jpg)
 
 ### 字符串拼接提示 (combining strings prompt)
@@ -1981,13 +2027,14 @@ function askFullName()
 </body>
 </html>
 ```
+
 ![](img/index-123_1.jpg)
 
 ### while 倒计时 (count down)
 
 ```html
 <html>
-<head><title> while 计数器 </title>
+<head><title> while 计数器</title>
 <script>
 function countDown()
 {
@@ -2004,13 +2051,14 @@ function countDown()
 </body>
 </html>
 ```
+
 ![](img/index-124_1.jpg)
 
 ### while 递增 (count up)
 
 ```html
 <html>
-<head><title> while 计数器 </title>
+<head><title> while 计数器</title>
 <script>
 function countUp()
 {
@@ -2027,13 +2075,14 @@ function countUp()
 </body>
 </html>
 ```
+
 ![](img/index-125_1.jpg)
 
 ### 快速数学题 (quick math question)
 
 ```html
 <html>
-<head><title> while 计数器 </title>
+<head><title> while 计数器</title>
 <script>
 function question1()
 {
@@ -2055,13 +2104,14 @@ function question1()
 </body>
 </html>
 ```
+
 ![](img/index-126_1.jpg)
 
 ### 哪些队赢了？ (which teams won?)
 
 ```html
 <html>
-<head><title> if else AND </title>
+<head><title> if else AND</title>
 <script>
 function teams()
 {
@@ -2089,7 +2139,8 @@ function teams()
 </body>
 </html>
 ```
-（注：`teams` 函数的源代码高度碎片化/损坏；我已根据指令保留了核心逻辑和变量。）
+
+（注：`teams()` 函数的源代码高度碎片化/损坏；我已根据指令保留了核心逻辑和变量。）
 
 ### 以 JSON 格式显示全部 (show all as JSON)
 
@@ -2181,30 +2232,15 @@ function showRecord(criteria1, criteria2) {
   theDiv.innerHTML = output;
 }
 </script>
-</body>
-</html>
-```
-
-
-
-
-
-![](img/index-135_1.jpg)
-
-```javascript
-}
-}
-theDiv.innerHTML = output;
-}
-</script>
 <button id="b1" onclick="showRecord(1990, 1980)">显示</button>
-<div id="theDisplay"></div>
-</body></html
+<div id="theDisplay</div>
+</body</html>
 <!-- 显示记录用于，过滤， <=, >=, && -->
 ```
 
-![](img/index-136_1.jpg)
-显示记录
+![](img/index-135_1.jpg)
+
+### 显示记录
 
 ```html
 <html><body><script>
@@ -2223,10 +2259,6 @@ function showIt() {
   let output = '';
   for(let i = 0; i < myRecord.length; i++) {
     output += myRecord[ i ].person + " has";
-```
-
-![](img/index-137_1.jpg)
-```javascript
     output += myRecord[ i ].eyeColor + "color eyes";
     output += '<br>';
   }
@@ -2234,13 +2266,16 @@ function showIt() {
 }
 </script>
 <button id="b1" onclick="showIt()">插入</button>
-<div id="display"></div>
+<div id="display</div>
 </body>
-</html
+</html>
 ```
 
+![](img/index-136_1.jpg)
+![](img/index-137_1.jpg)
 ![](img/index-138_1.jpg)
-小时和分钟
+
+### 小时和分钟
 
 ```html
 <html><head><script>
@@ -2260,20 +2295,18 @@ function displayIt(where, whichOne) {
   //显示答案
   document.getElementById(where).innerHTML = whichOne;
 }
+</script</head><body>
+<button onclick="displayIt('div1', Hours());"> 小时</button>
+<button onclick="displayIt('div2', Minutes());"> 分钟</button>
+<div id="div1</div><div id="div2</div>
+</body>
+</html>
 ```
 
 ![](img/index-139_1.jpg)
-```html
-</script></head><body>
-<button onclick="displayIt('div1', Hours());"> 小时 </button>
-<button onclick="displayIt('div2', Minutes());"> 分钟 </button>
-<div id="div1"></div><div id="div2"></div>
-</body>
-</html
-```
-
 ![](img/index-140_1.jpg)
-日期 月份消息
+
+### 日期 月份消息
 
 ```html
 <html><head><script>
@@ -2295,10 +2328,7 @@ function months() {
   else if(month== 11) { month= "December"; }
   return month;
 }
-```
 
-![](img/index-141_1.jpg)
-```javascript
 function messageMonth() {
   let text;
   if(months() == "March") { text = "三月。春天。"; }
@@ -2311,22 +2341,21 @@ function messageMonth() {
   else if(months() == "October") { text = "十月。天气变凉了"; }
   else if(months() == "November") { text = "十一月。"; }
   else if(months() == "December") { text = "十二月。季节"; }
-```
-
-![](img/index-142_1.jpg)
-```javascript
   else if(months() == "January") { text = "一月。下雪了"; }
   else if(months() == "February") { text = "二月。冷冷冷"; }
   document.getElementById("monthDisplay").innerHTML = text;
 }
-</script></head>
+</script</head>
 <body onload="messageMonth();">
-<div id="monthDisplay"></div>
-</body></html
+<div id="monthDisplay</div>
+</body</html>
 ```
 
+![](img/index-141_1.jpg)
+![](img/index-142_1.jpg)
 ![](img/index-143_1.jpg)
-小时 消息
+
+### 小时 消息
 
 ```html
 <html><head><script>
@@ -2348,22 +2377,20 @@ function messageHours() {
     hoursMessage = "是下午";
   }
   else if(theHours() >= 18 && theHours() <= 23) {
-```
-
-![](img/index-144_1.jpg)
-```javascript
     hoursMessage = "是夜间";
   }
   document.getElementById("hoursDisplay").innerHTML = hoursMessage;
 }
-</script></head>
+</script</head>
 <body onload="messageHours();">
-<div id="hoursDisplay"></div>
-</body></html
+<div id="hoursDisplay</div>
+</body</html>
 ```
 
+![](img/index-144_1.jpg)
 ![](img/index-145_1.jpg)
-class simple
+
+### class simple
 
 ```html
 <html><body><script>
@@ -2379,11 +2406,12 @@ class simple
 let david = new Person("David","Thompson"); 
 david.greet();
 </script>
-</body></html
+</body</html>
 ```
 
 ![](img/index-146_1.jpg)
-class
+
+### class
 
 ```html
 <html><head><script>
@@ -2402,22 +2430,20 @@ class
   }
 }
 function displayIt(where, whichOne) {
-```
-
-![](img/index-147_1.jpg)
-```javascript
   document.getElementById(where).innerHTML = whichOne;
 }
 let david = new Person("David","Thompson");
 </script><body>
 <button onclick="displayIt('div1', david.greet())">嗨</button>
 <button onclick="displayIt('div2', david.bye())">再见</button>
-<div id="div1"></div><div id="div2"></div>
+<div id="div1</div><div id="div2</div>
 </body>
 ```
 
+![](img/index-147_1.jpg)
 ![](img/index-148_1.jpg)
-class inheritance, extends
+
+### class inheritance, extends
 
 ```html
 <html><head><script>
@@ -2436,10 +2462,7 @@ class inheritance, extends
     return this.speed;
   }
 }
-```
 
-![](img/index-149_1.jpg)
-```javascript
 # class Cat extends Animal {
   constructor(kind, name, size, weight, speed, tailSize) {
     super(kind, name, size, weight, speed);
@@ -2458,10 +2481,7 @@ class inheritance, extends
 function show(where, whichOne) {
   document.getElementById(where).innerHTML = whichOne;
 }
-```
 
-![](img/index-150_1.jpg)
-```javascript
 let felix = new Cat('tiger', 'Felix', 'Medium', '10.0', '80', 'long');
 //让 felix 使用自定义函数
 felix.meow();
@@ -2473,21 +2493,17 @@ felix.saySpeed();
 </head>
 <body>
 <button onclick="show('display', felix.meow())">喵喵</button>
-<button onclick="show('display', felix.eat())">吃 </button>
-```
-
-![](img/index-151_1.jpg)
-```html
+<button onclick="show('display', felix.eat())">吃</button>
 <button onclick="show('display', felix.sayKind())">种类</button>
 <button onclick="show('display', felix.tailWag())">摇尾</button>
 <button onclick="show('display', felix.saySpeed())">速度</button>
-<div id="display"></div>
-</body></html
+<div id="display</div>
+</body</html>
 ```
 
-
-
-
+![](img/index-149_1.jpg)
+![](img/index-150_1.jpg)
+![](img/index-151_1.jpg)
 
 ```javascript
 let theSalutation = "Bye " + this.firstName + " " + this.lastName;
@@ -2497,7 +2513,7 @@ return theSalutation;
 
 ![](img/index-153_1.jpg)
 
-# class Alien extends Person
+### class `Alien` extends `Person`
 
 ```javascript
 class Alien extends Person {
@@ -2517,8 +2533,6 @@ function displayIt(where, whichOne) {
 }
 ```
 
-![](img/index-154_1.jpg)
-
 ```html
 let superman = new Alien("Clark","Kent", "Kal-El");
 </script>
@@ -2527,16 +2541,17 @@ let superman = new Alien("Clark","Kent", "Kal-El");
   <button onclick="displayIt('div1', superman.greet())">问候</button>
   <button onclick="displayIt('div2', superman.bye())">告别</button>
   <button onclick="displayIt('div3', superman.alienGreeting())">外星问候</button>
-  <div id="div1"></div>
-  <div id="div2"></div>
-  <div id="div3"></div>
+  <div id="div1</div>
+  <div id="div2</div>
+  <div id="div3</div>
 </body>
 </html>
 ```
 
+![](img/index-154_1.jpg)
 ![](img/index-155_1.jpg)
 
-# 华氏度转为氏度
+### 华氏度转为氏度
 
 ```html
 <html>
@@ -2552,24 +2567,20 @@ function convertButton() {
   inputCentigrade = f2c(inputCentigrade);
   document.getElementById("answer").textContent = inputCentigrade;
 }
-</script></head>
+</script</head>
 <body>
-```
-
-![](img/index-156_1.jpg)
-
-```html
 <input type="text" id="inputDegrees" value="0.0">
 <input type="button" value="C to F" onclick ="convertButton();">
 <br>
-<textarea id="answer"></textarea>
+<textarea id="answer</textarea>
 </body>
 </html>
 ```
 
+![](img/index-156_1.jpg)
 ![](img/index-157_1.jpg)
 
-# 简单的类和 this
+### 简单的类和 this
 
 ```html
 <html>
@@ -2595,7 +2606,7 @@ let somethingToWrite = new ourText();
 
 ![](img/index-158_1.jpg)
 
-# 键盘控制
+### 键盘控制
 
 ```html
 <html>
@@ -2613,9 +2624,6 @@ function whichKeyPressed(event) {
     alert("按了 Escape 键");
   } else if(event.keyCode === 32) {
     alert("按了空格键");
-```
-![](img/index-159_1.jpg)
-```javascript
   } else if(event.keyCode === 65) {
     alert("按了字母 a");
   }
@@ -2626,9 +2634,10 @@ function whichKeyPressed(event) {
 </html>
 ```
 
+![](img/index-159_1.jpg)
 ![](img/index-160_1.jpg)
 
-# 键盘，移动文本
+### 键盘，移动文本
 
 ```html
 <html>
@@ -2651,9 +2660,6 @@ function moveRight( ) {
 }
 
 function moveUp() {
-```
-![](img/index-161_1.jpg)
-```javascript
   textToMove.style.top = parseInt(textToMove.style.top)-8 + 'px';
 }
 
@@ -2664,14 +2670,11 @@ function moveDown() {
 </head>
 <body onload="whenLoads( );">
 <center><br>
-  <input type="button" id="leftButton" value="左" onmousedown="moveLeft( );"></button><br>
-  <input type="button" id="rightButton" value="右" onmousedown="moveRight( );"></button><br>
-```
-![](img/index-162_1.jpg)
-```html
-  <input type="button" id="upButton" value="上" onmousedown="moveUp( );"></button>
+  <input type="button" id="leftButton" value="左" onmousedown="moveLeft( );</button><br>
+  <input type="button" id="rightButton" value="右" onmousedown="moveRight( );</button><br>
+  <input type="button" id="upButton" value="上" onmousedown="moveUp( );</button>
   <br>
-  <input type="button" id="downButton" value="下" onmousedown="moveDown( );"></button>
+  <input type="button" id="downButton" value="下" onmousedown="moveDown( );</button>
   <br>
   <div id="theDiv">这段文字可以移动</div>
 </center>
@@ -2681,7 +2684,7 @@ function moveDown() {
 
 ![](img/-index-163_1.jpg)
 
-# 保存为 timeGetTime.js
+### 保存为 timeGetTime.js
 
 ```javascript
 function theHours() {
@@ -2696,9 +2699,6 @@ function theHours() {
     hours = 2; // am
   } else if(hours == 3) {
     hours = 3; // am
-```
-![](img/index-164_1.jpg)
-```javascript
   } else if(hours == 4) {
     hours = 4; // am
   } else if(hours == 5) {
@@ -2770,9 +2770,7 @@ function theMinutes() {
     return minutes;
   }
 }
-```
-![](img/index-165_1.jpg)
-```javascript
+
 function amOrpm() {
   let date = new Date();
   let hours = date.getHours();
@@ -2782,13 +2780,7 @@ function amOrpm() {
     return "pm";
   }
 }
-```
 
-
-
-
-
-```javascript
 {
   halfOfDay = "pm";
 } else if(hours == 13) {
@@ -2800,7 +2792,6 @@ function amOrpm() {
 } else if(hours == 16) {
   halfOfDay = "pm";
 } else if(hours == 17) {
-![](img/index-172_1.jpg)
   halfOfDay = "pm";
 } else if(hours == 18) {
   halfOfDay = "pm";
@@ -2815,10 +2806,7 @@ function amOrpm() {
 } else if (hours == 23) {
   return halfOfDay;
 }
-```
-![](img/index-173_1.jpg)
 
-```javascript
 function theSeconds() {
   let date = new Date();
   let seconds = date.getSeconds();
@@ -2831,7 +2819,6 @@ function theSeconds() {
   } else if(seconds == 3) {
     return seconds = "03";
   } else if(seconds == 4) {
-![](img/index-174_1.jpg)
   } else if(seconds == 5) {
     return seconds = "05";
   } else if(seconds == 6) {
@@ -2845,37 +2832,41 @@ function theSeconds() {
   }
   return seconds;
 }
-```
 
-```javascript
 function timeKeepGettingTime() {
-![](img/index-175_1.jpg)
   timeFunctionUpdates();
   t = setInterval('timeFunctionUpdates()',500);
 }
-```
 
-```javascript
 function timeFunctionUpdates() {
   document.getElementById("showTime").innerHTML = theHours() + ":" + theMinutes() + ":" + theSeconds() + " " + amOrpm();
 }
 ```
 
 // 我们将此文件保存为 `js` 文件夹下的 `timeGetTime.js`。
+
 // 接下来的页面将此脚本。
 
+![](img/index-164_1.jpg)
+![](img/index-165_1.jpg)
+![](img/index-172_1.jpg)
+![](img/index-173_1.jpg)
+![](img/index-174_1.jpg)
+![](img/index-175_1.jpg)
 ![](img/index-176_1.jpg)
-持续获取时间使用了 `timeGetTime.js`
+
+### 持续获取时间使用了 timeGetTime.js
 
 ```html
 <html
 <body style="background-color:rgb(140, 192, 192);">
-  <script src="../js/timeGetTime.js"></script>
+  <script src="../js/timeGetTime.js</script>
   <button onclick="timeKeepGettingTime();">时间</button>
   <div id="showTime" style="font-size:100pt">时间</div>
 </body>
 </html>
 ```
+
 <!-- 保存为 `ourProject` 文件夹下 `html` 文件夹中的 `timeGetTime.html` -->
 
 ![](img/index-177_1.jpg)
@@ -2920,4 +2911,3 @@ function displayTimeMessage() {
   document.getElementById("hoursDisplay").innerHTML = messageHours();
 }
 ```
-

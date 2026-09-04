@@ -1,93 +1,114 @@
+
 # Topalian JavaScript 机器人 AI 实战
-
-
-
-
-
-
-
-
 
 **作者**
 
 **Christopher Andrew Topalian**
 
-
-
 **献给**
+
 **圣父上帝（天父）**
 
-
-
 你好
+
 你好，伙计
+
 你怎么样？
+
 玩得开心吗，你呢？
+
 极棒
 
 你好
+
 你好，伙计
+
 你怎么样？
+
 玩得开心吗，你呢？
+
 极棒
+
 很不错
 
 你好
+
 你好，伙计
+
 你怎么样？
+
 玩得开心吗，你呢？
+
 极棒
+
 很不错
 
 你好
+
 你好，伙计
+
 你怎么样？
+
 玩得开心吗，你呢？
+
 极棒
+
 很不错
+
 天气怎么样？
+
 今天天气很好朗。
 
-
-
-
 地球是个好地方
+
 你还有关于它的更多信息吗？
 
 嗯，它有陆地也有水
 
 地球是个好地方
+
 你还有关于它的更多信息吗？
+
 嗯，它有陆地也有水
+
 有趣，请继续。
 
 地球是个好地方
+
 你还有关于它的更多信息吗？
+
 嗯，它有陆地也有水
+
 有趣，请继续。
 
 地球是个值得游玩的地方
 
 地球是个好地方
+
 你还有关于它的更多信息吗？
+
 嗯，它有陆地也有水
+
 有趣，请继续。
+
 地球是个值得游玩的地方
+
 那很有趣。
 
 Christopher Topalian
-
 
 200+200
 
 发送
 
 200+200
+
 400
 
 发送
 
 脚本音乐与科学学院
+
 CollegeOfScripting.weebly.com
 
 Christopher Topalian
@@ -99,31 +120,24 @@ Christopher Topalian
 发送
 
 (16*4) + (400/16) * 750
+
 18814
 
 发送
 
 脚本音乐与科学学院
+
 CollegeOfScripting.weebly.com
-
-
-
-
-
 
 **-->**
 
-
 **https://github.com/ChristopherAndrewTopalia**
 
-
 **<!-- Topalian_JavaScript_Robot_AI.html-->**
-
 
 **<html>**
 
 **<head>**
-
 
 **<title> Topalian JavaScript 机器人 AI </title>**
 
@@ -138,142 +152,224 @@ CollegeOfScripting.weebly.com
 **<script>**
 
 **function calculate(input)**
+
 **{**
+
 **try**
+
 **{**
+
 ![](img/3e986e3c8d5087a94f9df94cc12e8768_14_0.png)
 
 **return eval(input);**
 
 **}**
+
 **catch(error)**
+
 **{**
 
 **return null;**
 
 **}**
+
 **}**
 
 **function createRobot()**
-**{**
-**let context=null;**
-**let mainDiv=ce('div');**
-**mainDiv.id= 'mainDiv';**
-**mainDiv.className= 'mainDiv';**
-**document.body.append(mainDiv);**
-**//-//**
 
+**{**
+
+**let context=null;**
+
+**let mainDiv=ce('div');**
+
+**mainDiv.id= 'mainDiv';**
+
+**mainDiv.className= 'mainDiv';**
+
+**document.body.append(mainDiv);**
+
+**//-//**
 
 **let chatBox=ce('div');**
+
 **chatBox.id= 'chatBox';**
+
 **chatBox.innerHTML= '';**
+
 **chatBox.className= 'chatBox';**
+
 **mainDiv.append(chatBox);**
+
 **//-//**
+
 **let lineBreakOutput=ce('hr');**
+
 **mainDiv.append(lineBreakOutput);**
+
 **//-//**
+
 **let userInput=ce('input');**
+
 **userInput.id= 'userInput';**
+
 **userInput.className= 'userInput';**
+
 **userInput.style.type= 'text';**
 
-
 **userInput.placeholder='Type Words';**
+
 **mainDiv.append(userInput);**
+
 **//-//**
+
 **let sendButton=ce('button');**
+
 **sendButton.innerHTML= 'Send';**
+
 **sendButton.id= 'sendButton';**
+
 **sendButton.className= 'sendButton';**
+
 **mainDiv.append(sendButton);**
+
 **//-//**
+
 **// Enter activates a click on send button**
+
 **userInput.onkeydown=function(event)**
+
 **{**
 
 **if (event.key === 'Enter')**
+
 **{**
 
 **// prevent Enter key**
+
 **event.preventDefault();**
+
 **// trigger a click on send button**
+
 **sendButton.click();**
+
 **}**
+
 **};**
 
 **sendButton.onclick=function()**
+
 **{**
 
 **// display what person typed in chatBox**
 
 **chatBox.innerHTML+=`<span style='color: aqua;'>${userInput.value}</span><br>`;**
+
 **let userQuestion=userInput.value.trim();**
+
 **if (userQuestion)**
+
 **{**
+
 **let responseObj=responses.find(function(obj)**
+
 **{**
+
 **return obj.keywords.some(function(keyword)**
+
 **{**
 
 **// lowercase and remove punctuation**
 
 **let cleanInput=userQuestion.toLowerCase().replace(/[^\w\s\]/g,'');**
+
 **let cleanKeyword=keyword.toLowerCase();**
+
 **// check for exact match of cleaned input and cleaned keyword**
+
 **return cleanInput === cleanKeyword;**
+
 **});**
+
 **});;**
+
 **if (responseObj)**
+
 **{**
 
 **let randomIndex=Math.floor(Math.random() * responseObj.responses.length);**
+
 **chatBox.innerHTML+=`<span style='color: aqua;'>${responseObj.responses[randomIndex]}</span><br>`;**
+
 **if (responseObj.keywords.indexOf('bye') !== -1)**
+
 **{**
+
 **context=null;**
+
 **chatBox.scrollTop=chatBox.scrollHeight;**
+
 **}**
+
 **else**
 
 **{**
+
 **context=responseObj.keywords;**
+
 **chatBox.scrollTop=chatBox.scrollHeight;**
+
 **}**
+
 **}**
+
 **else**
+
 **{**
+
 **let result=calculate(userQuestion);**
+
 **if (result !== null)**
+
 **{**
+
 **chatBox.innerHTML+=`<span style='color: aqua;'>${result}</span><br>`;**
+
 **}**
+
 **}**
 
+**ge('chatBox').scrollTop = ge('chatBox').scrollHeight;**
 
+**} else {**
 
+**let randomIndex = Math.floor(Math.random() * randomResponses.length);**
 
+**ge('chatBox').innerHTML += `<span style='color: aqua;'>${randomResponses[randomIndex]}</span><br>`;**
 
-```javascript
-ge('chatBox').scrollTop = ge('chatBox').scrollHeight;
-} else {
-    let randomIndex = Math.floor(Math.random() * randomResponses.length);
-    ge('chatBox').innerHTML += `<span style 'color: aqua;'>${randomResponses[randomIndex]}</span><br>`;
-    ge('chatBox').scrollTop = ge('chatBox').scrollHeight;
-}
-}
+**ge('chatBox').scrollTop = ge('chatBox').scrollHeight;**
 
-userInput.value = '';
-}
-};
-</script>
-</head>
-<body onload='createRobot()'>
-</body>
-</html>
+**}**
+
+**}**
+
+**userInput.value = '';**
+
+**}**
+
+**};**
+
+**</script>**
+
+**</head>**
+
+**<body onload='createRobot()'>**
+
+**</body>**
+
+**</html>**
+
 ```
-
-```javascript
 // 
 https://github.com/ChristopherAndrewTopalian
 
@@ -405,21 +501,21 @@ let responses = [
 ];
 ```
 
-
-
-
-
-
 **更多教程：**
 
 - **CollegeOfScripting.weebly.com**
-- **CollegeOfScripting.wordpress.com**
-- **Youtube.com/ScriptingCollege**
-- **Twitter.com/CollegeOfScript**
-- **GitHub.com/ChristopherTopalian**
-- **GitHub.com/ChristopherAndrewTopalian**
-- **Sites.google.com/view/CollegeOfScripting**
 
+- **CollegeOfScripting.wordpress.com**
+
+- **Youtube.com/ScriptingCollege**
+
+- **Twitter.com/CollegeOfScript**
+
+- **GitHub.com/ChristopherTopalian**
+
+- **GitHub.com/ChristopherAndrewTopalian**
+
+- **Sites.google.com/view/CollegeOfScripting**
 
 **献给父神上帝**
 
@@ -440,4 +536,3 @@ let responses = [
 **写下它、输入它、说出它、看到它、梦见它。**
 
 **CollegeOfScripting.weebly.com**
-

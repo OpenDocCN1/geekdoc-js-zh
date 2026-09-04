@@ -1,20 +1,14 @@
+
 # 7.8 Page Visibility API
-
-*   属性
-*   VisibilityChange 事件
-*   参考链接
-
-PageVisibility API 用于判断页面是否处于浏览器的当前窗口，即是否可见。
-
-使用这个 API，可以帮助开发者根据用户行为调整程序。比如，如果页面处于当前窗口，可以让程序每隔 15 秒向服务器请求数据；如果不处于当前窗口，则让程序每隔几分钟请求一次数据。
 
 ## 属性
 
-这个 API 部署在 document 对象上，提供以下两个属性。
+PageVisibility API 用于判断页面是否处于浏览器的当前窗口，即是否可见。使用这个 API，可以帮助开发者根据用户行为调整程序。比如，如果页面处于当前窗口，可以让程序每隔 15 秒向服务器请求数据；如果不处于当前窗口，则让程序每隔几分钟请求一次数据。
 
-*   document.hidden：返回一个布尔值，表示当前是否被隐藏。
+这个 API 部署在 `document` 对象上，提供以下两个属性。
 
-*   document.visibilityState：表示页面当前的状态，可以取三个值，分别是 visibile（页面可见）、hidden（页面不可见）、prerender（页面正处于渲染之中，不可见）。
+*   `document.hidden`：返回一个布尔值，表示当前是否被隐藏。
+*   `document.visibilityState`：表示页面当前的状态，可以取三个值，分别是 `visibile`（页面可见）、`hidden`（页面不可见）、`prerender`（页面正处于渲染之中，不可见）。
 
 这两个属性都带有浏览器前缀。使用的时候，必须进行前缀识别。
 
@@ -38,7 +32,7 @@ function getHiddenProp(){
 
 ## VisibilityChange 事件
 
-当页面的可见状态发生变化时，会触发 VisibilityChange 事件（带有浏览器前缀）。
+当页面的可见状态发生变化时，会触发 `VisibilityChange` 事件（带有浏览器前缀）。
 
 ```js
 document.addEventListener("visibilitychange", function() {

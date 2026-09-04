@@ -1,16 +1,9 @@
+
 # JavaScript Web Applications：jQuery 开发者迁移状态至客户端指南
-
-
-
-
 
 ![](img/70056c57235f980195f2d4ad3ecd9a7b_0_0.png)
 
-
-
-
 www.allitebooks.com
-
 
 构建能够为 Web 带来桌面体验的应用程序需要将状态从服务器移动到客户端——这并非一项简单任务。这本实操书籍将引导精通 JavaScript 的开发者完成创建尖端应用的所有步骤，包括结构、模板、框架、与服务器通信以及许多其他问题。
 
@@ -18,36 +11,24 @@ www.allitebooks.com
 
 - 使用模型-视图-控制器（MVC）模式，学习如何管理应用程序内部的依赖关系
 - 了解模板和数据绑定简介
-- 学习远程数据、Ajax 和跨域请求
-- 使用 WebSockets 和 Node.js 创建实时应用程序
+- 学习远程数据、`Ajax` 和跨域请求
+- 使用 `WebSockets` 和 `Node.js` 创建实时应用程序
 - 接收拖放的文件并带有进度指示的上传数据
-- 使用主流框架和库，包括 jQuery、Spine 和 Backbone
+- 使用主流框架和库，包括 `jQuery`、`Spine` 和 `Backbone`
 - 使用控制台编写测试来调试你的应用程序
 - 获取部署最佳实践，如缓存和压缩化
 
 > “强烈推荐此书，《JavaScript Web Applications》对于希望使用最先进现代工具创建现代应用的开发者来说，是一份无价价值的参考书。我都不记得向多少读者推荐过这本书了！”
-—Addy Osmani
-JavaScript 开发者，AOL
+>
+> —Addy Osmani
+>
+> JavaScript 开发者，AOL
 
-Alex MacCaw 是一位 Ruby/JavaScript 开发者兼企业家。他编写过一个 JavaScript 框架（Spine），并开发过大型应用程序，包括 Taskforce 和 Socialmod。Alex 常在纽约、旧金山和柏林的 Ruby/Rails 大会议上演讲。
-
+Alex MacCaw 是一位 Ruby/JavaScript 开发者兼企业家。他编写过一个 JavaScript 框架（`Spine`），并开发过大型应用程序，包括 Taskforce 和 Socialmod。Alex 常在纽约、旧金山和柏林的 Ruby/Rails 大会议上演讲。
 
 ![](img/70056c57235f980195f2d4ad3ecd9a7b_1_0.png)
 
-
-
-
-
 www.allitebooks.com
-
-
-
-
-
-
-
-
-
 
 [LSI]
 
@@ -55,106 +36,97 @@ www.allitebooks.com
 
 www.allitebooks.com
 
-
-序言 ................................................................. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . xi
-
-
-
-
-
-
-
-
-
-
-- FUBCs ... 80
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # 前言
 
-JavaScript 从 1995 年作为 Netscape 开发者工具的卑微起步，到如今的高性能 JIT 解释器已经走过了很长的道路。即使在五年前，开发者仍被 Ajax 和黄色渐变技术所震撼；而现在，复杂的 JavaScript 应用代码量已达数十万。
+JavaScript 从 1995 年作为 Netscape 开发者工具的卑微起步，到如今的高性能 JIT 解释器已经走过了很长的道路。即使在五年前，开发者仍被 `Ajax` 和黄色渐变技术所震撼；而现在，复杂的 JavaScript 应用代码量已达数十万。
 
-在过去的一年里，出现了一种新型 JavaScript 应用程序，它们提供了人们在桌面端习惯的体验，但在 Web 端曾是闻所未过的。每当用户与应用程序交互时缓慢的页面请求已经消失；取而代之的是，JavaScript 引擎现在如此强大，我们我们可以在客户端保持状态，从而提供更快速、更佳的体验。
+在过去的一年里，出现了一种新型 JavaScript 应用程序，它们提供了人们在桌面端习惯的体验，但在 Web 端曾是闻所未过的。每当用户与应用程序交互时缓慢的页面请求已经消失；取而代之的是，JavaScript 引擎现在如此强大，我们可以在客户端保持状态，从而提供更快速、更佳的体验。
 
-改进的不只是 JavaScript 引擎；CSS3 和 HTML5 尚未完成草稿阶段，但它们已经被现代浏览器（如 Safari、Chrome、Firefox 以及在某种程度上的 IE）所支持。迁移到客户端并不是一项简单的任务，它需要与服务器端应用完全不同的开发方法。你需要考虑结构、模板等许多内容。
+改进的不只是 JavaScript 引擎；`CSS3` 和 `HTML5` 尚未完成草稿阶段，但它们已经被现代浏览器（如 Safari、Chrome、Firefox 以及在某种程度上的 IE）所支持。迁移到客户端并不是一项简单的任务，它需要与服务器端应用完全不同的开发方法。你需要考虑结构、模板等许多内容。
 
-本书不是为初学者准备的，所以如果你不熟悉该语言的基础知识，我建议你读读关于该主题的许多优秀书籍之一，例如 Douglas Crockford 写的《JavaScript：精良部分》。本书针对具有某些 JavaScript 经验的开发者（可能在使用 jQuery 等库），他们希望开始构建更多的 JavaScript 应用程序。此外，书的某些章节——特别是附录——也将是有有用的参考。
+本书不是为初学者准备的，所以如果你不熟悉该语言的基础知识，我建议你读读关于该主题的许多优秀书籍之一，例如 Douglas Crockford 写的《JavaScript：精良部分》。本书针对具有某些 JavaScript 经验的开发者（可能在使用 `jQuery` 等库），他们希望开始构建更多的 JavaScript 应用程序。此外，书的某些章节——特别是附录——也将是有用的参考。
 
 # 本书的结构
 
-## 第 1 章从讨论 JavaScript 的历史开始，涵盖了其当前实现方式的一些底层影响。随后，我们将为你介绍 MVC 模式，并探索 JavaScript 的构造函数、原型继承以及如何创建你自己的类库。
+## 第 1 章
 
-## 第 2 章对浏览器事件进行了简要入门介绍，包括它们的历史、API 和行为。我们将介绍如何使用 jQuery 绑定事件、使用委托以及创建自定义事件。我们还将通过 PubSub 模式探索非 DOM 事件。
+从讨论 JavaScript 的历史开始，涵盖了其当前实现方式的一些底层影响。随后，我们将为你介绍 MVC 模式，并探索 JavaScript 的构造函数、原型继承以及如何创建你自己的类库。
 
-## 第 3 章解释了如何在应用程序中使用模型，以及如何管理远程数据。我们将解释为什么命名空间很重要，然后构建我们自己的 ORM 库来管理数据。接下来，我们将涵盖如何使用 JSONP 和跨域技术加载远程数据。最后，你将学习如何使用 HTML5 Local Storage 持久化数据并将其提交到 RESTful 服务器。
+## 第 2 章
 
-## 第 4 章演示了如何使用控制器在客户端持久化状态。我们将讨论如何使用模块封装逻辑并防止全局污染，然后涵盖如何整洁地连接控制器与视图、监听事件并操作 DOM。最后，我们将讨论路由、使用 URL 的哈希片段（hash fragment），以及使用新的 HTML5 History API，确保揭示这两种方法的优缺点。
+对浏览器事件进行了简要入门介绍，包括它们的历史、API 和行为。我们将介绍如何使用 `jQuery` 绑定事件、使用委托以及创建自定义事件。我们还将通过 PubSub 模式探索非 DOM 事件。
 
-## 第 5 章我们将介绍 JavaScript 模板。我们涵盖了动态渲染视图的不同方式，以及模板库以及应该将模板存储在哪里（内联在页面中或远程）。随后，我们将介绍数据绑定——连接模型和视图。
+## 第 3 章
 
-## 第 6 章深入探讨使用 CommonJS 模块进行依赖管理。你将学习 CommonJS 后的后的历史、如何在浏览器中创建 CommonJS 模块以及各种模块加载器库（如 RequireJS）。接下来，我们将讨论如何自动封装、提高性能并节省时间。最后，我们将涵盖 CommonJS 的各种替代方案，如 Sprockets 和 LABjs。
+解释了如何在应用程序中使用模型，以及如何管理远程数据。我们将解释为什么命名空间很重要，然后构建我们自己的 ORM 库来管理数据。接下来，我们将涵盖如何使用 `JSONP` 和跨域技术加载远程数据。最后，你将学习如何使用 `HTML5 Local Storage` 持久化数据并将其提交到 RESTful 服务器。
 
-## 第 7 章介绍 HTML5 File API。我们将涵盖浏览器支持、多文件上传、接收拖入的文件。接下来，我们将使用 blobs 和 slices 处理文件并在浏览器中显示结果。我们将涵盖使用新的 XMLHttpRequest Level 2 规范在浏览器中上传，最后介绍如何结合 jQuery 进行上传。
+## 第 4 章
 
-## 第 8 章回顾实时应用和 WebSockets 的激动进展。首先，本章涵盖了实时技术的波动历史及其在浏览器中的当前支持。然后，我们将进入 WebSockets 的细节及其实现、浏览器支持和 JavaScript API。接下来，我们将演示一个使用 WebSockets 连接服务器和客户端的简单 RPC 服务器。随后介绍 Socket.IO 并学习实时如何影响应用的架构和用户体验。
+演示了如何使用控制器在客户端持久化状态。我们将讨论如何使用模块封装逻辑并防止全局污染，然后涵盖如何整洁地连接控制器与视图、监听事件并操作 DOM。最后，我们将讨论路由、使用 URL 的哈希片段（hash fragment），以及使用新的 `HTML5 History API`，确保揭示这两种方法的优缺点。
 
-## 第 9 章涵盖测试与调试，这是 JavaScript 开发的关键组成部分。我们将看看跨浏览器测试的问题、应该测试哪些浏览器、单元测试以及 QUnit 和 Jasmine 等测试库。接下来，我们将介绍自动化测试和持续集成服务器（如 Selenium）。随后，我们将进入调试领域，探索 Firefox 和 WebKit 的检查器、控制台以及使用 JavaScript 调试。
+## 第 5 章
 
-## 第 10 章涵盖 JavaScript 应用的另一个重要但被忽视的部分：部署。我们主要考虑性能以及如何使用缓存、混压缩、Gzip 压缩和其他技术来减少应用程序的初始加载时间。最后，我们将简要介绍如何使用 CDN 代替提供静态内容以及如何使用浏览器内置审计器，这对于改进网站性能非常有帮助。
+我们将介绍 JavaScript 模板。我们涵盖了动态渲染视图的不同方式，以及模板库以及应该将模板存储在哪里（内联在页面中或远程）。随后，我们将介绍数据绑定——连接模型和视图。
 
-## 第 11 章接下来的三章将为你介绍一些流行的 JavaScript 开发库。Spine 是一个轻量级符合 MVC 的库，它使用了书中涵盖的许多概念：类、事件、模型和控制器。最后，我们将构建一个示例联系人管理器应用程序，以展示在本章中学到的内容。
+## 第 6 章
 
+深入探讨使用 `CommonJS` 模块进行依赖管理。你将学习 `CommonJS` 的历史、如何在浏览器中创建 `CommonJS` 模块以及各种模块加载器库（如 `RequireJS`）。接下来，我们将讨论如何自动封装、提高性能并节省时间。最后，我们将涵盖 `CommonJS` 的各种替代方案，如 `Sprockets` 和 `LABjs`。
 
+## 第 7 章
 
+介绍 `HTML5 File API`。我们将涵盖浏览器支持、多文件上传、接收拖入的文件。接下来，我们将使用 blobs 和 slices 处理文件并在浏览器中显示结果。我们将涵盖使用新的 `XMLHttpRequest Level 2` 规范在浏览器中上传，最后介绍如何结合 `jQuery` 进行上传。
 
+## 第 8 章
 
-# 第 12 章
+回顾实时应用和 `WebSockets` 的激动进展。首先，本章涵盖了实时技术的波动历史及其在浏览器中的当前支持。然后，我们将进入 `WebSockets` 的细节及其实现、浏览器支持和 JavaScript API。接下来，我们将演示一个使用 `WebSockets` 连接服务器和客户端的简单 RPC 服务器。随后介绍 `Socket.IO` 并学习实时如何影响应用的架构和用户体验。
 
-Backbone 是一个用于构建 JavaScript 应用程序极其流行的库，本章将为你提供深入的介绍。我们将带你了解 Backbone 的核心概念和类，例如模型（models）、集合（collections）、控制器（controllers）和视图（views）。接下来，我们将探索使用 RESTful JSON 查询与服务器同步数据，以及如何对 Backbone 服务器做出适当响应。最后，我们将构建一个待事项列表应用程序示例，展示该库的大许多功能。
+## 第 9 章
+
+涵盖测试与调试，这是 JavaScript 开发的关键组成部分。我们将看看跨浏览器测试的问题、应该测试哪些浏览器、单元测试以及 `QUnit` 和 `Jasmine` 等测试库。接下来，我们将介绍自动化测试和持续集成服务器（如 `Selenium`）。随后，我们将进入调试领域，探索 Firefox 和 WebKit 的检查器、控制台以及使用 JavaScript 调试。
+
+## 第 10 章
+
+涵盖 JavaScript 应用的另一个重要但被忽视的部分：部署。我们主要考虑性能以及如何使用缓存、混压缩、`Gzip` 压缩和其他技术来减少应用程序的初始加载时间。最后，我们将简要介绍如何使用 `CDN` 代替提供静态内容以及如何使用浏览器内置审计器，这对于改进网站性能非常有帮助。
+
+## 第 11 章
+
+接下来的三章将为你介绍一些流行的 JavaScript 开发库。`Spine` 是一个轻量级符合 MVC 的库，它使用了书中涵盖的许多概念：类、事件、模型和控制器。最后，我们将构建一个示例联系人管理器应用程序，以展示在本章中学到的内容。
+
+## 第 12 章
+
+`Backbone` 是一个用于构建 JavaScript 应用程序极其流行的库，本章将为你提供深入的介绍。我们将带你了解 `Backbone` 的核心概念和类，例如模型（models）、集合（collections）、控制器（controllers）和视图（views）。接下来，我们将探索使用 RESTful JSON 查询与服务器同步数据，以及如何对 `Backbone` 服务器做出适当响应。最后，我们将构建一个待事项列表应用程序示例，展示该库的许多功能。
 
 ## 第 13 章
 
-本章介绍了 JavaScriptMVC 库，这是一个基于 jQuery 的流行 JavaScript 应用程序框架。你将学习 JavaScriptMVC 的所有基础知识，如类、模型和控制器，以及如何使用客户端模板来渲染视图。本章以一个实用的 CRUD 列表示例结束，展示了如何使用 JavaScriptMVC 轻松地创建抽象、可复用且内存安全的组件。
+本章介绍了 `JavaScriptMVC` 库，这是一个基于 `jQuery` 的流行 JavaScript 应用程序框架。你将学习 `JavaScriptMVC` 的所有基础知识，如类、模型和控制器，以及如何使用客户端模板来渲染视图。本章以一个实用的 CRUD 列表示例结束，展示了如何使用 `JavaScriptMVC` 轻松地创建抽象、可复用且内存安全的组件。
 
 ## 附录 A
 
-本附录提供了 jQuery 的简要介绍，如果你觉得需要复习一下该库，这将会非常有帮助。书中的大多数示例都使用了 jQuery，因此熟悉它非常重要。我们将涵盖大部分核心 API，例如 DOM 遍历、DOM 操作以及事件的绑定、触发和委托。接下来，我们将介绍 jQuery 的 AJAX API，进行 GET 和 POST JSON 请求。然后我们将介绍 jQuery 扩展以及如何使用封装来确保你正在构建一个良好的 Web 程序。最后，我们将查看一个实用示例：创建一个 Growl jQuery 插件。
+本附录提供了 `jQuery` 的简要介绍，如果你觉得需要复习一下该库，这将会非常有帮助。书中的大多数示例都使用了 `jQuery`，因此熟悉它非常重要。我们将涵盖大部分核心 API，例如 DOM 遍历、DOM 操作以及事件的绑定、触发和委托。接下来，我们将介绍 `jQuery` 的 AJAX API，进行 GET 和 POST JSON 请求。然后我们将介绍 `jQuery` 扩展以及如何使用封装来确保你正在构建一个良好的 Web 程序。最后，我们将查看一个实用示例：创建一个 Growl `jQuery` 插件。
 
 ## 附录 B
 
-附录涵盖了 Less，它是 CSS 的超集，通过变量、混合（mixins）、操作和嵌套规则扩展了其语法。Less 确实可以减少你需要编写的 CSS 数量——尤其是涉及 CSS3 特定规则时。本附录涵盖了 Less 主要语法增强，以及如何使用命令行工具和 JavaScript 库将文件编译为 CSS。
+附录涵盖了 `Less`，它是 CSS 的超集，通过变量、混合（mixins）、操作和嵌套规则扩展了其语法。`Less` 确实可以减少你需要编写的 CSS 数量——尤其是涉及 `CSS3` 特定规则时。本附录涵盖了 `Less` 主要语法增强，以及如何使用命令行工具和 JavaScript 库将文件编译为 CSS。
 
 ## 附录 C
 
-最后一个附录是 CSS3 参考。它提供了关于 CSS3 的背景，解释了供应商前缀，并带你了解规范中的主要新增。在 CSS3 特性中，本附录涵盖了圆角、rgba 颜色、投影投影、渐变和变换。它以关于使用 Modernizr 进行优雅降级（graceful degradation）的讨论以及使用新 box-sizing 规范的实用示例结束。
+最后一个附录是 `CSS3` 参考。它提供了关于 `CSS3` 的背景，解释了供应商前缀，并带你了解规范中的主要新增。在 `CSS3` 特性中，本附录涵盖了圆角、rgba 颜色、投影、渐变和变换。它以关于使用 `Modernizr` 进行优雅降级（graceful degradation）的讨论以及使用新 `box-sizing` 规范的实用示例结束。
 
 ## 本书使用的约定
 
 书中使用了以下排版约定：
 
 - *斜体*
-> 表示新术语、URL、电子邮件地址、文件名、文件扩展和事件。
+  > 表示新术语、URL、电子邮件地址、文件名、文件扩展和事件。
 
 - **等宽字体**
-> 表示广义上的计算机代码，包括命令、数组、元素、语句、选项、开关、变量、属性、键、函数、类型、类、命名空间、方法、模块、属性、参数、值、对象、事件处理器、XML 标签、HTML 标签、宏、文件内容以及命令输出。
+  > 表示广义上的计算机代码，包括命令、数组、元素、语句、选项、开关、变量、属性、键、函数、类型、类、命名空间、方法、模块、属性、参数、值、对象、事件处理器、XML 标签、HTML 标签、宏、文件内容以及命令输出。
 
 - **等宽粗体**
-> 显示用户应字输入的命令或其他文本。
+  > 显示用户应字输入的命令或其他文本。
 
 - *等宽斜体*
-> 显示应由用户提供的值或由上下文确定的值替换的文本。
+  > 显示应由用户提供的值或由上下文确定的值替换的文本。
 
 ![](img/70056c57235f980195f2d4ad3ecd9a7b_16_0.png)
 
@@ -172,7 +144,7 @@ Backbone 是一个用于构建 JavaScript 应用程序极其流行的库，本�
 
 ## 代码约定
 
-在整本书中，我们将使用 `assert()` 和 `assertEquals()` 函数来演示变量的值或函数调用的结果。`assert()` 是指示特定变量解析为 `true` 的简写；这是一个常见的模式，在自动化测试中特别流行。`assert()` 两个参数：一个值和一个可选消息。如果值不等于 `true`，函数将抛出错误：
+在整本书中，我们将使用 `assert()` 和 `assertEquals()` 函数来演示变量的值或函数调用的结果。`assert()` 是指示特定变量解析为 `true` 的简写；这是一个常见的模式，在自动化测试中特别流行。`assert()` 接受两个参数：一个值和一个可选消息。如果值不等于 `true`，函数将抛出错误：
 
 ```javascript
 var assert = function(value, msg) {
@@ -204,21 +176,21 @@ assertEquals( 1, 1 );
 
 ## jQuery 示例
 
-书中的许多示例依赖于 jQuery，这是一个极其流行的 JavaScript 库，它简化了事件、DOM 遍历、操作和 Ajax。出于各种原因我决定这样做，但主要因为 jQuery 清晰地阐明了示例，并且更接近大多数人在现实世界中编写的 JavaScript。
+书中的许多示例依赖于 `jQuery`，这是一个极其流行的 JavaScript 库，它简化了事件、DOM 遍历、操作和 Ajax。出于各种原因我决定这样做，但主要因为 `jQuery` 清晰地阐明了示例，并且更接近大多数人在现实世界中编写的 JavaScript。
 
-如果你没有用过 jQuery，我强烈建议你去尝试。它有一个非常优秀的 API，为 DOM 提供了良好的抽象。附录 A 中包含了简短的 jQuery 入门指南。
+如果你没有用过 `jQuery`，我强烈建议你去尝试。它有一个非常优秀的 API，为 DOM 提供了良好的抽象。附录 A 中包含了简短的 `jQuery` 入门指南。
 
 ## Holla
 
-Holla 作为本书的配套应用，是一个 JS 群聊天应用。Holla 是一个很好的示例应用，因为它涵盖了书中涉及的各种最佳实践。其他方面，Holla 将向你展示如何：
+`Holla` 作为本书的配套应用，是一个 JS 群聊天应用。`Holla` 是一个很好的示例应用，因为它涵盖了书中涉及的各种最佳实践。其他方面，`Holla` 将向你展示如何：
 
-- 使用 CSS3 和 HTML5 创建漂亮的界面
+- 使用 `CSS3` 和 `HTML5` 创建漂亮的界面
 - 拖拽上传文件
-- 使用 Less 布局代码
-- 使用 WebSockets 向客户端推送数据
+- 使用 `Less` 布局代码
+- 使用 `WebSockets` 向客户端推送数据
 - 创建状态应用程序
 
-从 Holla 的 GitHub 仓库下载代码。书中的许多示例取自 Holla；参见图 1。
+从 `Holla` 的 GitHub 仓库下载代码。书中的许多示例取自 `Holla`；参见图 1。
 
 ![](img/70056c57235f980195f2d4ad3ecd9a7b_18_0.png)
 
@@ -246,7 +218,8 @@ O'Reilly Media 已本书上传到 Safari Books Online 服务。要完全数字�
 
 请将有关本书的意见和问题发送给出版社：
 
-# 第1章
+# 第 1 章
+
 MVC 与类
 
 ## 早期阶段
@@ -315,30 +288,26 @@ var user = User.find("foo");
 user.destroy();
 ```
 
-
-
-
-
 ```javascript
-own// helper.js
+// helper.js
 var helper = {};
 helper.formatDate = function(){ /* ... */ };
 
 // template.html
 <div>
 ${helper.formatDate(this.date)}
-</div
+</div>
 ```
 
 此外，所有的表现逻辑都命名在 `helper` 变量下，这防止了冲突并保持了代码的整洁和可扩展性。
 
 不必过多担心关于视图和模板的细节——我们将在第 5 章中详细介绍。本节的目的是让你熟悉视图是如何与 MVC 架构模式关联的。
 
-# 控制器 (The Controller)
+## 控制器
 
 控制器是模型和视图之间的胶水剂。控制器从视图接收事件和输入，处理这些输入（可能涉及模型），并相应地更新视图。控制器会在页面加载时为视图添加事件监听器，例如检测表单提交或按钮点击。然后，当用户与你的应用程序交互时，事件会触发控制器内部的动作。
 
-你不需要任何特殊的库或框架来实现控制器；这里有一个使用原生 jQuery 的示例：
+你不需要任何特殊的库或框架来实现控制器；这里有一个使用原生 `jQuery` 的示例：
 
 ```javascript
 var Controller = {};
@@ -354,20 +323,20 @@ var Controller = {};
   $(function(){
     $("#view .name").click(nameClick);
   });
-}(jquery));
+}(jQuery));
 ```
 
 我们正在创建一个命名在 `Controller` 变量下的用户控制器。然后，我们使用匿名函数来封装作用域，防止全局作用域被污染。当页面加载时，我们为视图元素添加了点击事件监听器。
 
 如你所见，控制器不需要库或框架。然而，为了符合 MVC 的架构要求，它们必须与模型和视图分离。控制器和状态将在第 4 章中进行更详细的介绍。
 
-# 迈向模块化：创建类 (Toward Modularity, Creating Classes)
+## 迈向模块化：创建类
 
 在进入 MVC 的细节之前，我们将介绍一些基础概念，例如 JavaScript 类（classes）和事件。这将为你在学习一些更高级的概念之前奠下坚实的基础。
 
 JavaScript 对象字面量对于静态类来说是没问题的，但创建具有继承和实例的经典类通常很有用。需要强调的是，JavaScript 是一种原型语言，并不包含原生的类实现。不过，可以很容易地模拟这种支持。
 
-JavaScript 中的类经常声誉不佳，被批评为不是“JavaScript 方式”的一部分，而这个术语基本上没有任何意义。在结构化方法论或继承模式方面，jQuery 实际上是毫无用的。这可能导致 JavaScript 开发者认为他们不应该考虑结构——即类是不可用的或不应该被使用的。事实上，类只是另一种工具，作为一个实用主义者，我相信它们在 JavaScript 中的用法与其他任何其他现代语言是一样的。
+JavaScript 中的类经常声誉不佳，被批评为不是“JavaScript 方式”的一部分，而这个术语基本上没有任何意义。在结构化方法论或继承模式方面，`jQuery` 实际上是毫无用的。这可能导致 JavaScript 开发者认为他们不应该考虑结构——即类是不可用的或不应该被使用的。事实上，类只是另一种工具，作为一个实用主义者，我相信它们在 JavaScript 中的用法与其他任何其他现代语言是一样的。
 
 相比于类定义，JavaScript 拥有构造函数（constructor functions）和 `new` 运算符。构造函数可以在实例化时指定对象的初始属性和值。任何 JavaScript 函数都可以用构造函数。我们使用 `new` 运算符配合构造函数来创建新实例。
 
@@ -385,7 +354,10 @@ var alice = new Person('alice');
 按照惯例，构造函数通常使用驼峰命名法，以区别于普通函数。这很重要，因为你永远不想在没有 `new` 前缀的情况下调用构造函数。
 
 -   不要这样做！
+
+```javascript
 Person('bob'); // => undefined
+```
 
 该函数将返回 `undefined`，由于上下文是全局（window）对象，你无意中创建了一个全局变量 `name`。请始终使用 `new` 关键字调用构造函数。
 
@@ -420,7 +392,7 @@ var person = new Person;
 
 令人困惑的是，由于一个从未实现的 JavaScript 2 规范，`class` 是一个保留关键字。通用的惯例是将类变量命名为 `_class` 或 `klass`。
 
-## 为类添加函数
+### 为类添加函数
 
 向构造函数添加类函数与在 JavaScript 中向任何对象添加属性（property）是一致的：
 
@@ -458,7 +430,6 @@ var ORMModule = {
 }
 ```
 
-
 ```javascript
 }
 var Person = new Class;
@@ -468,7 +439,7 @@ Person.include(ORMModule);
 Asset.include(ORMModule);
 ```
 
-## 使用原型实现类继承
+### 使用原型实现类继承
 
 我们已经大量使用了原型（prototype），但还没有对其进行真正的解释。让我们仔细观察它到底是什么，以及如何使用它在类中实现某种形式的继承。
 
@@ -511,7 +482,7 @@ dog.wag();
 dog.breath(); // 继承的属性
 ```
 
-## 为我们的类库添加继承
+### 为我们的类库添加继承
 
 让我们为自定义的类库添加继承。我们在创建新类时将传递一个可选的父类：
 
@@ -522,7 +493,7 @@ var Class = function(parent){
   }
 
   // 修改 klass 的原型
-  if (subclass) {
+  if (parent) {
     var subclass = function() { };
     subclass.prototype = parent.prototype;
     klass.prototype = new subclass;
@@ -531,7 +502,7 @@ var Class = function(parent){
   klass.prototype.init = function(){};
 
   // 快捷方式
-  klass.fn.parent = klass;
+  klass.fn = klass.prototype;
   klass.super = klass.__proto__;
 
   /* include/extend 代码... */
@@ -545,7 +516,7 @@ var Class = function(parent){
 现在，我们可以通过向 `Class` 传递父类来执行简单的继承：
 
 ```javascript
-var Animal = new Class({
+var Animal = new Class;
 Animal.include({
   breath: function(){
     console.log('breath');
@@ -561,7 +532,7 @@ var tommy = new Cat;
 tommy.breath();
 ```
 
-## 函数调用
+### 函数调用
 
 和 JavaScript 中的其他一切一样，函数仅仅是对象。然而，与其他对象不同，它们是可以被调用的。函数内部的上下文（即 `this` 的值）取决于它在何处以及如何被调用。
 
@@ -581,7 +552,7 @@ function.call(this, 1, 2, 3);
 
 你为什么要想要改变上下文？这是一个很好的问题，因为语言在不允许显式更改上下文的情况下运行得很好。JavaScript 使用上下文来共享状态，特别是在处理事件回调时。（我个人觉得这是该语言设计中的一个错误，因为现在要改变它太晚了，所以你需要学习它是如何工作的。）
 
-jQuery 在其整个 API 中利用 `apply()` 和 `call()` 来更改上下文——例如，在使用事件处理程序或使用 `each()` 迭代时。起初可能会令人困惑，但当你理解了发生了什么时，它是非常有用的：
+`jQuery` 在其整个 API 中利用 `apply()` 和 `call()` 来更改上下文——例如，在使用事件处理程序或使用 `each()` 迭代时。起初可能会令人困惑，但当你理解了发生了什么时，它是非常有用的：
 
 ```javascript
 $('.click').click(function() {
@@ -601,18 +572,14 @@ $('.').each(function() {
 var clicky = {
   wasClicked: function() {
     /* */
-  };
-},
+  },
+  addListeners: function() {
+    /* ... */
+  }
+};
+```
 
-addListeners: function() {
-  /* ... */
-}
-```（注：提供的 OCR 文本末尾包含重复循环，我已经根据提供的唯一片段清理了逻辑流。）
-
-
-
-
-## 添加私有函数
+### 添加私有函数
 
 到目前为止，我们在类中添加的任何属性对外界开放，并且可以随时更改。现在，让我们探索如何向类中添加私有属性。
 
@@ -622,21 +589,20 @@ JavaScript 确实支持不可变属性；然而，这并没有在所有浏览器
 
 ```javascript
 var Person = function(){
+  (function() {
+    var findById = function() { /*...*/ };
 
-(function() {
-  var findById = function() { /*...*/ };
-
-  Person.find = function(id) {
-    if (typeof id == "integer")
-      return findById(id);
-  };
-})();
+    Person.find = function(id) {
+      if (typeof id == "integer")
+        return findById(id);
+    };
+  })();
 }
 ```
 
-我们将类的属性封装在一个匿名函数中，然后创建局部变量 (findById)，这些变量只能在当前作用域内访问。Person 变量定义在全局作用域中，因此可以从任何地方访问。
+我们将类的属性封装在一个匿名函数中，然后创建局部变量 (findById)，这些变量只能在当前作用域内访问。`Person` 变量定义在全局作用域中，因此可以从任何地方访问。
 
-永远不要在不使用 var 操作符的情况下定义变量，因为总是总是创建一个全局变量。如果你需要定义全局变量，请在全局作用域中定义或作为 window 的属性进行定义。
+永远不要在不使用 `var` 操作符的情况下定义变量，因为总是总是创建一个全局变量。如果你需要定义全局变量，请在全局作用域中定义或作为 `window` 的属性进行定义。
 
 ```javascript
 (function(exports){
@@ -649,9 +615,9 @@ var Person = function(){
 assertEqual(foo, "bar");
 ```
 
-## 类库
+### 类库
 
-正如书中的许多概念一样，理解类背后的理论是好的，但在实践中，你通常会使用库。jQuery 不原生支持类，但可以通过像 HJS 这样的插件轻松添加。HJS 允许通过向 $.Class.create 传递一组属性来定义类：
+正如书中的许多概念一样，理解类背后的理论是好的，但在实践中，你通常会使用库。`jQuery` 不原生支持类，但可以通过像 HJS 这样的插件轻松添加。HJS 允许通过向 `$.Class.create` 传递一组属性来定义类：
 
 ```javascript
 var Person = $.Class.create({
@@ -663,6 +629,7 @@ var Person = $.Class.create({
 ```
 
 要继承类，在创建时将父类作为参数传递：
+
 ```javascript
 var Student = $.Class.create(Person, {
   price: function() { /*...*/ }
@@ -675,11 +642,12 @@ alex.pay();
 ```
 
 要添加属性，直接将其设置在类上：
+
 ```javascript
 Person.find = function(id) { /*...*/ };
 ```
 
-HJS 的 API 包含了几个工具函数，它们是 clone() 和 equal() 的灵感：
+HJS 的 API 包含了几个工具函数，它们是 `clone()` 和 `equal()` 的灵感：
 
 ```javascript
 var alex = new Student("Alex");
@@ -690,7 +658,7 @@ var bill = alex.clone();
 assert(alex.equal(bill));
 ```
 
-HJS 不是你唯一的选择，Spine 也有类的实现。要使用它，请在页面中引入 spine.js：
+HJS 不是你唯一的选择，`Spine` 也有类的实现。要使用它，请在页面中引入 `spine.js`：
 
 ```html
 <script src="http://macman.github.com/spine/spine.js"></script>
@@ -711,11 +679,11 @@ var person = Person.init();
 </script>
 ```
 
-Spine 的类 API 与我们在整个章节中构建的库相似。使用 extend() 添加类属性，使用 include() 添加实例属性。要进行继承，请将父类传递给 Spine.Classantiator。
+`Spine` 的类 API 与我们在整个章节中构建的库相似。使用 `extend()` 添加类属性，使用 `include()` 添加实例属性。要进行继承，请将父类传递给 `Spine.Class`。
 
-如果你将目光扩大到 jQuery 之外，Prototype 绝对值得检查。它有一个出色的类 API，是许多其他库的灵感。
+如果你将目光扩大到 `jQuery` 之外，`Prototype` 绝对值得检查。它有一个出色的类 API，是许多其他库的灵感。
 
-jQuery 的 John Resig 写了一篇关于实现库经典继承的有趣文章。它非常值得阅读，特别是如果你对 JavaScript 原型系统背后的细节感兴趣。
+`jQuery` 的 John Resig 写了一篇关于实现库经典继承的有趣文章。它非常值得阅读，特别是如果你对 JavaScript 原型系统背后的细节感兴趣。
 
 # 第 2 章
 
@@ -723,11 +691,11 @@ jQuery 的 John Resig 写了一篇关于实现库经典继承的有趣文章。�
 
 事件是你的 JavaScript 应用的核心，驱动着一切，并在用户与你的应用程序交互时提供第一个接触点。然而，这正是 JavaScript 非标准化的诞生暴露其丑陋之处。在浏览器战争的高峰时期，Netscape 和微软故意选择了不兼容的事件模型。尽管它们后来被 W3C 标准化，但 Internet Explorer 直到最新的发布版本 IE9 都保留了其不同的实现。
 
-幸运的是，我们有像 jQuery 和 Prototype 这样优秀的库来平息这些混乱，为你提供一个适用于所有事件实现的 API。了解背后发生的事情是值得的，因此我在这里介绍各种流行库的 W3C 模型。
+幸运的是，我们有像 `jQuery` 和 `Prototype` 这样优秀的库来平息这些混乱，为你提供一个适用于所有事件实现的 API。了解背后发生的事情是值得的，因此我在这里介绍各种流行库的 W3C 模型。
 
 ## 监听事件
 
-事件围绕一个名为 addEventListener() 的函数展开，它接受三个参数：type（例如 click）、listener（即回调函数）和 useCapture（我们稍后会介绍）。使用前两个参数，我们可以将函数附加到 DOM 元素上，当该元素上触发特定事件（如点击）时，该函数会被调用：
+事件围绕一个名为 `addEventListener()` 的函数展开，它接受三个参数：type（例如 click）、listener（即回调函数）和 useCapture（我们稍后会介绍）。使用前两个参数，我们可以将函数附加到 DOM 元素上，当该元素上触发特定事件（如点击）时，该函数会被调用：
 
 ```javascript
 var button = document.getElementById("createButton");
@@ -735,7 +703,7 @@ var button = document.getElementById("createButton");
 button.addEventListener("click", function() { /*...*/ }, false);
 ```
 
-我们可以使用 removeEventListener() 移除监听器，传递与 addEventListener 相同的参数。如果监听器是匿名的且没有它的引用，则在不销毁元素的情况下无法移除：
+我们可以使用 `removeEventListener()` 移除监听器，传递与 `addEventListener` 相同的参数。如果监听器是匿名的且没有它的引用，则在不销毁元素的情况下无法移除：
 
 ```javascript
 var div = document.getElementById("div");
@@ -745,68 +713,55 @@ div.addEventListener("click", listener, false);
 div.removeEventListener("click", listener, false);
 ```
 
-（注：原文中存在多处重复段落，已根据要求去重，仅翻译一次）
+### 事件对象
 
+当事件触发时，会创建一个事件对象并传递给处理器。该对象包含反映事件执行时环境的属性：
 
-
-
-反映事件执行时环境的属性：
-
-- button
-  指示按了哪个（或哪些）鼠标按钮的值
-
-- ctrlKey
-  表示是否按下了 Ctrl 键的布尔值
-
-- altKey
-  表示是否按下了 Alt 键的布尔值
-
-- shiftKey
-  表示是否按下了 Shift 键的布尔值
-
-- metaKey
-  表示是否按下了 Meta 键的布尔值
+- `button`
+  > 指示按了哪个（或哪些）鼠标按钮的值
+- `ctrlKey`
+  > 表示是否按下了 Ctrl 键的布尔值
+- `altKey`
+  > 表示是否按下了 Alt 键的布尔值
+- `shiftKey`
+  > 表示是否按下了 Shift 键的布尔值
+- `metaKey`
+  > 表示是否按下了 Meta 键的布尔值
 
 键盘事件特定的属性：
 
-- isChar
-  表示事件是否包含键字符的布尔值
-
-- charCode
-  按下的按键的 Unicode 值（仅用于 keypress 事件）
-
-- keyCode
-  非字符按键的 Unicode 值
-
-- which
-  按下的按键的 Unicode 值，无论其是否为字符
+- `isChar`
+  > 表示事件是否包含键字符的布尔值
+- `charCode`
+  > 按下的按键的 Unicode 值（仅用于 keypress 事件）
+- `keyCode`
+  > 非字符按键的 Unicode 值
+- `which`
+  > 按下的按键的 Unicode 值，无论其是否为字符
 
 事件发生的位置：
 
-- pageX, pageY
-  相对于页面（即视口）的事件坐标
-
-- screenX, screenY
-  相对于屏幕的事件坐标
+- `pageX`, `pageY`
+  > 相对于页面（即视口）的事件坐标
+- `screenX`, `screenY`
+  > 相对于屏幕的事件坐标
 
 与事件相关的元素：
 
-- currentTarget
-  在泡泡阶段内的当前 DOM 元素
+- `currentTarget`
+  > 在冒泡阶段内的当前 DOM 元素
+- `target`, `originalTarget`
+  > 原始 DOM 元素
+- `relatedTarget`
+  > 参与事件的另一个 DOM 元素（如果有）
 
-- target, originalTarget
-  原始 DOM 元素
-
-- relatedTarget
-  参与事件的另一个 DOM 元素（如果有）
-
-这些属性在不同的浏览器中有所异，特别是是不符合 W3C 标准的浏览器。幸运的是，jQuery 和 Prototype 等库会平滑这些差异。
+这些属性在不同的浏览器中有所异，特别是是不符合 W3C 标准的浏览器。幸运的是，`jQuery` 和 `Prototype` 等库会平滑这些差异。
 
 ## 事件库
 
-很有可能你最终会使用一个 JavaScript 库来进行事件管理——否则，浏览器之间的不性实在太多。我将向你展示如何使用 jQuery 的事件管理 API，尽管还有许多其他选择，例如 Prototype、MooTools 和 YUI。请参考它们各自的 API 获取深度文档。
+很有可能你最终会使用一个 JavaScript 库来进行事件管理——否则，浏览器之间的不一致实在太多。我将向你展示如何使用 `jQuery` 的事件管理 API，尽管还有许多其他选择，例如 `Prototype`、`MooTools` 和 `YUI`。请参考它们各自的 API 获取深度文档。
 
-jQuery 的 API 有一个用于跨浏览器事件监听器的 bind() 函数。在 jQuery 实例上调用此函数，传入事件名称和处理器：
+`jQuery` 的 API 有一个用于跨浏览器事件监听器的 `bind()` 函数。在 `jQuery` 实例上调用此函数，传入事件名称和处理器：
 
 ```javascript
 jQuery("#element").bind(eventName, handler);
@@ -820,7 +775,7 @@ jQuery("#element").bind("click", function(event) {
 });
 ```
 
-jQuery 为 click、submit 和 mouseover 等事件类型提供了一些快捷方法。它们看起来像这样：
+`jQuery` 为 `click`、`submit` 和 `mouseover` 等事件类型提供了一些快捷方法。它们看起来像这样：
 
 ```javascript
 jQuery("#myDiv").click(function() {
@@ -828,7 +783,7 @@ jQuery("#myDiv").click(function() {
 });
 ```
 
-注意的是，在开始向元素添加事件之前，该元素必须已经存在——也就是说，你应该在页面加载后执行此操作。你只需要监听窗口的 load 事件，然后开始添加监听器：
+注意的是，在开始向元素添加事件之前，该元素必须已经存在——也就是说，你应该在页面加载后执行此操作。你只需要监听窗口的 `load` 事件，然后开始添加监听器：
 
 ```javascript
 jQuery(window).bind("load", function() {
@@ -836,9 +791,9 @@ jQuery(window).bind("load", function() {
 });
 ```
 
-然而，有一个 window's load 更好的可以监听的事件，那就是 DOMContentLoaded。它在 DOM 准备绪时触发，在页面图像和样式表下载之前触发。这意味着事件总会在用户与页面交互之前触发。
+然而，有一个 window's load 更好的可以监听的事件，那就是 `DOMContentLoaded`。它在 DOM 准备就绪时触发，在页面图像和样式表下载之前触发。这意味着事件总会在用户与页面交互之前触发。
 
-DOMContentLoaded 事件并不是每个浏览器中都支持，因此 jQuery 使用一个 ready() 函数对其进行了抽象，该函数具有跨浏览器支持：
+`DOMContentLoaded` 事件并不是每个浏览器中都支持，因此 `jQuery` 使用一个 `ready()` 函数对其进行了抽象，该函数具有跨浏览器支持：
 
 ```javascript
 jQuery.ready(function() {
@@ -846,7 +801,7 @@ jQuery.ready(function() {
 });
 ```
 
-事实上，你可以跳过 ready() 函数，直接将处理器传递给 jQuery 对象：
+事实上，你可以跳过 `ready()` 函数，直接将处理器传递给 `jQuery` 对象：
 
 ```javascript
 jQuery(function() {
@@ -856,7 +811,7 @@ jQuery(function() {
 
 ## 上下文切换
 
-关于事件，经常让人困惑的一点是处理器在被调用时上下文是如何变化的。当使用浏览器原生 addEventListener() 时，上下文会从本地切换到目标 HTML 元素：
+关于事件，经常让人困惑的一点是处理器在被调用时上下文是如何变化的。当使用浏览器原生 `addEventListener()` 时，上下文会从本地切换到目标 HTML 元素：
 
 ```javascript
 new function() {
@@ -869,15 +824,15 @@ new function() {
 };
 ```
 
-为了保留原始上下文，将处理器封装在一个匿名函数中并保留对它的引用。我们在第 1 章中介绍过这种模式，当时我们使用一个代理函数来维护当前上下文。这是一个常用模式，jQuery 包含一个 proxy() 函数——只需在你希望它被调用的函数和上下文中使用它即可：
+为了保留原始上下文，将处理器封装在一个匿名函数中并保留对它的引用。我们在第 1 章中介绍过这种模式，当时我们使用一个代理函数来维护当前上下文。这是一个常用模式，`jQuery` 包含一个 `proxy()` 函数——只需在你希望它被调用的函数和上下文中使用它即可：
 
 ```javascript
-$("#signform").submit(.proxy(function() { /* ... */ }, this));
+$("#signform").submit($.proxy(function() { /* ... */ }, this));
 ```
 
 ## 事件委托
 
-你可能已经注意到，由于事件会向上泡泡，我们只需要在父元素上添加监听器并检查事件即可。这正是 SproutCore 等框架减少应用程序中事件监听器数量的技巧：
+你可能已经注意到，由于事件会向上冒泡，我们只需要在父元素上添加监听器并检查事件即可。这正是 SproutCore 等框架减少应用程序中事件监听器数量的技巧：
 
 ```javascript
 // 在 ul 列表上委托事件
@@ -889,7 +844,7 @@ list.addEventListener("click", function(e) {
 }, false);
 ```
 
-jQuery 有一种非常棒的方法来实现这一点：只需向 delegate() 函数传递一个子选择器、事件类型和处理器。这种方法的替代方案是为每个 li 添加点击事件。然而，通过使用 delegate()，你减少了事件监听器的数量，提升了性能：
+`jQuery` 有一种非常棒的方法来实现这一点：只需向 `delegate()` 函数传递一个子选择器、事件类型和处理器。这种方法的替代方案是为每个 li 添加点击事件。然而，通过使用 `delegate()`，你减少了事件监听器的数量，提升了性能：
 
 ```javascript
 // 不要这样做！这为每个 'li' 元素添加了监听器（开销大）
@@ -907,7 +862,7 @@ $("ul").delegate("li", "click", /* ... */);
 
 除了原生事件，你还可以创建自己的自定义事件。这对于应用程序不同部分之间的通信非常有用。
 
-要触发自定义事件，使用 trigger() 方法：
+要触发自定义事件，使用 `trigger()` 方法：
 
 ```javascript
 $("#element").trigger("myEvent", { data: "value" });
@@ -931,10 +886,9 @@ $("#element").bind("click.plugin", function() {
 $("#element").off("click.plugin"); // 仅移除插件处理器
 ```
 
+### 示例：标签切换
 
 ```javascript
-));
-
 // 绑定到自定义事件
 element.bind("change.tabs", function(e, tagName){
   element.find("li").removeClass("active");
@@ -946,7 +900,6 @@ var firstName = element.find("li:first").attr("data-tab");
 element.trigger("change.tabs", firstName);
 
 return this;
-} // 从 ; 修正而来
 ```
 
 看看使用自定义事件处理器后代码变得整洁了多少？这意味着我们可以拆分标签切换处理器，而且它具有让插件更易扩展的优势。例如，我们现在可以通过在观察的列表上触发 `change.tabs` 事件来程序化地更改标签：
@@ -980,7 +933,7 @@ $(window).bind("hashchange", function() {
 
 发布者和订阅者的解耦允许你的应用程序不断增长，而不会引入大量的依赖关系和耦合，从而提高了维护便利性并添加了额外功能。
 
-那么，在应用程序中到底如何实现 Pub/Sub 呢？你只需要记录与事件关联的处理器，然后一种调用它们的方法。这是一个示例 PubSub 对象，你可以用它来添加和触发事件监听器：
+那么，在应用程序中到底如何实现 Pub/Sub 呢？你只需要记录与事件关联的处理器，然后一种调用它们的方法。这是一个示例 `PubSub` 对象，你可以用它来添加和触发事件监听器：
 
 ```javascript
 var PubSub = {
@@ -1024,9 +977,12 @@ PubSub.publish("wem");
 ```
 
 你可以通过分隔符（如冒号 `:`）来对事件命名命名：
-`PubSub.subscribe("user:create", function(){ /* ... */ });`
 
-如果你正在使用 jQuery，Ben Alman 提供了一个更简单的库。事实上它非常简单，以至于我们可以将其内联 Tiny：
+```javascript
+PubSub.subscribe("user:create", function(){ /* ... */ });
+```
+
+如果你正在使用 `jQuery`，Ben Alman 提供了一个更简单的库。事实上它非常简单，以至于我们可以将其内联 Tiny：
 
 ```javascript
 /*
@@ -1054,7 +1010,7 @@ PubSub.publish("wem");
 }(jQuery);
 ```
 
-该 API 接收的参数与 jQuery 的 `bind()` 和 `trigger()` 函数相同。唯一的区别是函数直接位于 jQuery 对象上，并且被称为 `publish()` 和 `subscribe()`：
+该 API 接收的参数与 `jQuery` 的 `bind()` 和 `trigger()` 函数相同。唯一的区别是函数直接位于 `jQuery` 对象上，并且被称为 `publish()` 和 `subscribe()`：
 
 ```javascript
 $.subscribe("/some/topic", function(event, a, b, c) {
@@ -1064,7 +1020,7 @@ $.subscribe("/some/topic", function(event, a, b, c) {
 $.publish("/some/topic", "a", "b", "c");
 ```
 
-我们一直在使用 Pub/Sub 处理全局事件，但将其范围化也同样简单。让我们取之前创建的 PubSub 对象并将其范围化到一个对象中：
+我们一直在使用 Pub/Sub 处理全局事件，但将其范围化也同样简单。让我们取之前创建的 `PubSub` 对象并将其范围化到一个对象中：
 
 ```javascript
 // 添加 PubSub
@@ -1076,34 +1032,41 @@ myPubSub.subscribe("test", function() {
 });
 ```
 
-（注：原文中存在大量重复的段落，根据指令“不要重复输出原文”，此处仅保留核心逻辑并进行去重。）
+# 第 3 章
 
+## 模型与数据
 
+模型是 JavaScript 应用程序的核心。它们包含数据，以及处理这些数据的逻辑。在服务器端，模型通常直接映射到数据库表。在客户端，模型则代表应用程序的状态。
 
-JavaScript 数据类型。这个额外层的优势是，我们可以通过添加自定义的函数和属性来增强基础数据的功能。这使我们能够在添加诸如验证、观察者、持久化和服务器回调的同时，仍然能够复用大量代码。
+模型不仅仅是数据容器。它们还封装了与数据相关的业务逻辑，例如验证、计算属性和访问控制。通过将这些逻辑放在模型中，我们可以保持控制器和视图的简洁。
 
-## 原型继承
+## 为什么需要模型？
 
-我们将使用 `Object.create()` 来构建 ORM，这与我们在第 1 章中介绍的基于类（class-based）示例有些不同。这将允许我们使用基于原型继承，而不是使用构造函数和 `new` 关键字。
+在传统的服务器端 MVC 架构中，模型负责与数据库交互。在客户端，模型扮演着类似的角色，但它们与本地存储、远程 API 或内存中的数据集合交互。
 
-`Object.create()` 接收一个参数，即原型对象，并返回一个带有指定原型对象的新对象。换句话说，如果你给它一个对象，它会返回一个新对象，该新对象继承自你指定的对象。
+使用模型的好处包括：
 
-`Object.create()` 最近被添加到 ECMAScript 第 5 版中，因此在某些浏览器（如 IE）中尚未实现。然而，这并不是问题，因为如果满足条件，我们可以轻松添加支持：
+- **关注点分离**：数据逻辑与 UI 逻辑分离。
+- **可复用性**：模型可以在不同的视图和控制器中复用。
+- **可测试性**：独立的模型易于进行单元测试。
+- **数据一致性**：集中管理数据状态，避免数据不一致。
+
+## 命名空间
+
+在构建大型应用程序时，命名空间至关重要。它可以防止全局变量污染，并使代码组织更加清晰。
 
 ```javascript
-if (typeof Object.create !== "function") {
-  Object.create = function(o) {
-    function F() {
-      F.prototype = o;
-      return new F();
-    }
-  };
-}
+var App = App || {};
+App.Models = App.Models || {};
+App.Views = App.Views || {};
+App.Controllers = App.Controllers || {};
 ```
 
-上面的示例取自 Douglas Crockford 关于原型继承的文章。如果你想了解关于 JavaScript 原型和继承背后的更深入的解释，可以查阅它。
+## 构建 ORM 库
 
-我们将创建一个 `Model` 对象，它将负责创建新的模型和实例：
+我们将构建一个简单的 ORM（对象关系映射）库来管理客户端数据。这个库将提供创建、读取、更新、删除（CRUD）操作，以及事件触发机制。
+
+### 基础 Model 类
 
 ```javascript
 var Model = {
@@ -1122,20 +1085,38 @@ var Model = {
     object.created();
     this.inherited(object);
     return object;
+  },
+
+  init: function() {
+    var instance = Object.create(this.prototype);
+    instance.parent = this;
+    instance.init.apply(instance, arguments);
+    return instance;
   }
-},
+};
 ```
 
+### 原型继承
+
+我们将使用 `Object.create()` 来构建 ORM，这与我们在第 1 章中介绍的基于类（class-based）示例有些不同。这将允许我们使用基于原型继承，而不是使用构造函数和 `new` 关键字。
+
+`Object.create()` 接收一个参数，即原型对象，并返回一个带有指定原型对象的新对象。换句话说，如果你给它一个对象，它会返回一个新对象，该新对象继承自你指定的对象。
+
+`Object.create()` 最近被添加到 ECMAScript 第 5 版中，因此在某些浏览器（如 IE）中尚未实现。然而，这并不是问题，因为如果满足条件，我们可以轻松添加支持：
+
 ```javascript
-init: function() {
-  var instance = Object.create(this.prototype);
-  instance.parent = this;
-  instance.init.apply(instance, arguments);
-  return instance;
+if (typeof Object.create !== "function") {
+  Object.create = function(o) {
+    function F() {}
+    F.prototype = o;
+    return new F();
+  };
 }
 ```
 
-如果你不熟悉 `Object.create()`，这看起来可能很望而却步，让我们拆解一下。`create()` 函数返回一个继承自 `Model` 对象的新对象；我们将用它来创建新模型。`init()` 函数返回一个继承自 `Model.prototype` 的新对象——即 `Model` 对象的实例：
+上面的示例取自 Douglas Crockford 关于原型继承的文章。如果你想了解关于 JavaScript 原型和继承背后的更深入的解释，可以查阅它。
+
+我们将创建一个 `Model` 对象，它将负责创建新的模型和实例：
 
 ```javascript
 var Asset = Model.create();
@@ -1143,14 +1124,14 @@ var User = Model.create();
 var user = User.init();
 ```
 
-## 添加 ORM 属性
+### 添加 ORM 属性
 
 现在，如果我们向 `Model` 添加属性，它们将出现在所有继承它的模型中：
 
 ```javascript
 // 添加对象属性
 jQuery.extend(Model, {
-  find: function(){
+  find: function(){}
 });
 
 // 添加实例属性
@@ -1168,13 +1149,16 @@ jQuery.extend(Model.prototype, {
 ```
 
 `jQuery.extend()` 只是手动对属性进行循环遍历的一种简写方式，这与我们在 `load()` 函数中执行的操作类似。现在，我们的对象属性和实例属性正在向下传播到各个模型中：
+
+```javascript
 assertEqual(typeof Asset.find, "function");
+```
 
 事实上，我们将添加很多属性，所以我们不妨 `extend()` 和 `include()` `Model` 对象的一部分：
 
 ```javascript
 var Model = {
-  /* 略略 ... */
+  /* ... */
   extend: function(o) {
     var extended = o.extended;
     jQuery.extend(this, o);
@@ -1185,7 +1169,7 @@ var Model = {
     var included = o.included;
     jQuery.extend(this.prototype, o);
     if (included) included(this);
-  };
+  }
 };
 ```
 
@@ -1210,7 +1194,7 @@ Model.include({
 var asset = Asset.init({"name": "foo.png"});
 ```
 
-## 持久化记录
+### 持久化记录
 
 我们需要一种持久化记录的方法——即保存已创建实例的引用，以便以后访问它们。我们将使用设置在 `Model` 上的 `records` 对象来实现。当我们保存一个实例时，将其添加到该对象中；当删除实例时，将其从对象中移除：
 
@@ -1268,14 +1252,11 @@ Model.include({
 });
 ```
 
+## 远程数据
 
-如果你正在显示分页列表，为什么不预加载下一页并让过渡瞬时完成呢？或者，更好的方法是直接显示一个滚动列表，并在列表滚动时自动加载并插入数据（无限滚动模式）。用户感到的延迟越低就越好。
+现代 Web 应用程序很少将所有数据都存储在客户端。大多数情况下，数据存储在服务器上，需要通过网络请求获取。本节将介绍如何高效地加载和管理远程数据。
 
-当你获取新数据时，请确保 UI 不会被阻塞。显示某种形式的加载指示器，但要确保界面仍然可用的。只有极少数（如果有的话，根本没有）场景需要阻塞 UI。
-
-数据可以存在于初始页面中，也可以通过 Ajax 或 JSONP 使用单独的 HTTP 请求加载。就我个人而言，我推荐后两种技术，因为包含数据列表会增加页面大小，而并行请求加载速度更快。AJAX 和 JSON 还允许你缓存 HTML 页面，而不是为每个请求都动态渲染它。
-
-## 内联包含数据 (Including Data Inline)
+### 内联包含数据
 
 由于我在上一段中提到的原因，我并不依赖这种方法，但在特定情况下它是很有用的，特别是对于加载极少的数据量。这种技术的优点是实现起来非常简单。
 
@@ -1284,7 +1265,7 @@ Model.include({
 ```ruby
 <script type="text/javascript">
 var User = {};
-User.records = <%= @users.to_json %>;
+User.records = <%= raw @users.to_json %>;
 </script>
 ```
 
@@ -1299,23 +1280,23 @@ User.records = [{"first_name": "Alex"}];
 
 JavaScript 可以原封地评估该 JSON，因为它的结构与 JavaScript 对象相同。
 
-## 使用 Ajax 加载数据 (Loading Data with Ajax)
+### 使用 Ajax 加载数据
 
 当你有后台请求时，这可能是你首先想到的加载数据的方法，而且这很有道理：它是经过尝试、测试的，并且受到了所有现代浏览器的支持。但并不是说 Ajax 没有缺点——它非标准的历史导致了 API 不一致，而且由于浏览器的安全限制，从不同域加载数据是比较棘手的。
 
-如果你需要一份关于 Ajax 和 `XMLHttpRequest` 类的简要入门指南，请阅读 Mozilla 开发者的文章“入门”。在很大情况下，你最终会使用像 jQuery 这样的库，它抽象了 Ajax 的 API，处理了浏览器之间的差异。正因如此，我们在这里将介绍 jQuery 的 API，而不是原始的 `XMLHttpRequest` 类。
+如果你需要一份关于 Ajax 和 `XMLHttpRequest` 类的简要入门指南，请阅读 Mozilla 开发者的文章“入门”。在很大情况下，你最终会使用像 `jQuery` 这样的库，它抽象了 Ajax 的 API，处理了浏览器之间的差异。正因如此，我们在这里将介绍 `jQuery` 的 API，而不是原始的 `XMLHttpRequest` 类。
 
-jQuery 的 Ajax API 由一个低级函数 `jQuery.ajax()` 和它的几个高级抽象组成，这减少了你需要编写的代码量。`$.ajax()` 接收一个包含请求参数、内容类型和回调等设置的哈希（hash）。一旦你调用该函数，请求就会在后台异步发送。
+`jQuery` 的 Ajax API 由一个低级函数 `jQuery.ajax()` 和它的几个高级抽象组成，这减少了你需要编写的代码量。`$.ajax()` 接收一个包含请求参数、内容类型和回调等设置的哈希（hash）。一旦你调用该函数，请求就会在后台异步发送。
 
 - **url**: URL 所在。默认值为当前页面。
 - **success**: 请求成功时被调用的函数。从服务器返回的任何数据将作为参数传递。
 - **contentType**: 设置请求的 `Content-Type` 头部。如果请求包含数据，默认值为 `application/x-www-form-urlencoded`，这对于大多数情况都是的。
-- **data**: 要发送到服务器的数据。如果它不是字符串，jQuery 将对其进行序列化和 URL 编码。
+- **data**: 要发送到服务器的数据。如果它不是字符串，`jQuery` 将对其进行序列化和 URL 编码。
 - **type**: 使用的 HTTP 方法：GET、POST 或 DELETE。默认值是 GET。
-- **dataType**: 你期望从服务器返回的数据类型。jQuery 需要知道这一点，以便它知道如何处理结果。如果你没有指定 `dataType`，jQuery 将根据响应的 MIME 类型进行一些智能猜测。支持的值有：
+- **dataType**: 你期望从服务器返回的数据类型。`jQuery` 需要知道这一点，以便它知道如何处理结果。如果你没有指定 `dataType`，`jQuery` 将根据响应的 MIME 类型进行一些智能猜测。支持的值有：
     - **text**: 纯文本响应；不需要处理。
-    - **script**: jQuery 将响应作为 JavaScript 进行评估。
-    - **json**: jQuery 将响应作为 JSON 进行评估，使用严格解析器。
+    - **script**: `jQuery` 将响应作为 JavaScript 进行评估。
+    - **json**: `jQuery` 将响应作为 JSON 进行评估，使用严格解析器。
     - **jsonp**: 对于 JSON 响应，我们稍后详细介绍。
 
 例如，让我们做一个简单的 Ajax 请求，它会提醒服务器返回的任何数据：
@@ -1330,11 +1311,12 @@ jQuery.ajax({
 });
 ```
 
-然而，所有这些选项都有点冗长。幸运的是，jQuery 有几个快捷方式。
+然而，所有这些选项都有点冗长。幸运的是，`jQuery` 有几个快捷方式。
+
 `jQuery.get()` 接收一个 URL 以及可选的数据和回调：
 
 ```javascript
-jquery.get("/ajax/endpoint", function(data){
+jQuery.get("/ajax/endpoint", function(data){
   $("#ajaxResult").text(data);
 });
 ```
@@ -1342,36 +1324,36 @@ jquery.get("/ajax/endpoint", function(data){
 或者，如果我们想在 GET 请求中发送几个查询参数：
 
 ```javascript
-jquery.get("/ajax/endpoint", {foo: "bar"}, function(data){
+jQuery.get("/ajax/endpoint", {foo: "bar"}, function(data){
   /* ... */
-}
+});
 ```
 
-如果我们期望从服务器获取 JSON，我们需要改用 `jQuery.JSON()`，它会将结果的 `dataType` 选项设置为 "json"：
+如果我们期望从服务器获取 JSON，我们需要改用 `jQuery.getJSON()`，它会将结果的 `dataType` 选项设置为 "json"：
 
 ```javascript
-jquery.JSON("/json/endpoint", function(json){
+jQuery.getJSON("/json/endpoint", function(json){
   /* ... */
-}
+});
 ```
 
 同样，还有一个 `jQuery.post()` 函数，它也接收 URL、数据和回调：
 
 ```javascript
-jquery.post("/users", {first_name: "Alex"}, function(result){
+jQuery.post("/users", {first_name: "Alex"}, function(result){
   /* AJAX POST 成功了 */
 });
 ```
 
 如果你想使用其他 HTTP 方法——DELETE、HEAD 和 OPTIONS——你将不得不使用更低级的 `jQuery.ajax()` 函数。
 
-这是对 jQuery Ajax API 的简要概述，但如果你需要更多信息，请阅读完整文档。
+这是对 `jQuery` Ajax API 的简要概述，但如果你需要更多信息，请阅读完整文档。
 
 Ajax 的局限性是同源策略（same origin policy），它限制了请求到同源域。虽然同源策略对于 Web 的安全至关重要，但对于尝试访问远程资源的开发者来说很不方便。其他技术（如 Flash 和 Java）已经实现了解决问题的方法，现在 Ajax 通过一个名为 CORS（跨源资源共享）的标准来追赶。CORS 允许你突破同源策略。
 
-CORS 跨器的支持情况：
+#### CORS 浏览器支持情况
 
-- IE >= 8（有权限制）
+- IE >= 8（有限制）
 - Firefox >= 3
 - Safari: 完全支持
 - Chrome: 完全支持
@@ -1402,24 +1384,23 @@ req.open("POST", "/endpoint", true);
 req.setRequestHeader("Authorization", oauth_signature);
 ```
 
-遗憾的是，虽然 CORS 适用于 Internet Explorer 8 及更高版本，但微软选择忽略该工作组。微软创建了自己的对象 `XMLHttpRequest`，并在跨域请求时替代 `XMLHttpRequest`。虽然它的接口与 `XMLHttpRequest` 相似，但它有许多限制和局限。例如，GET 和 POST 方法有效，不支持身份验证或自定义头部，最后是致命的一点——只支持 "Content-Type: text/plain"。
+遗憾的是，虽然 CORS 适用于 Internet Explorer 8 及更高版本，但微软选择忽略该工作组。微软创建了自己的对象 `XDomainRequest`，并在跨域请求时替代 `XMLHttpRequest`。虽然它的接口与 `XMLHttpRequest` 相似，但它有许多限制和局限。例如，GET 和 POST 方法有效，不支持身份验证或自定义头部，最后是致命的一点——只支持 "Content-Type: text/plain"。
 
+### JSONP
 
-
-
-
-# JSONP
-
-JSONP（或带填充的 JSONP）是在 CORS 标准化之前创建的，是从远程服务器获取数据的另一种方式。其核心思想是：使用一个 `<script>` 标签指向一个 JSON 端点，其中返回的数据被封装在一个函数调用中。`<script>` 标签不受任何跨域限制，且这种技术在几乎所有的浏览器中都得到了支持。
+JSONP（或带填充的 JSON）是在 CORS 标准化之前创建的，是从远程服务器获取数据的另一种方式。其核心思想是：使用一个 `<script>` 标签指向一个 JSON 端点，其中返回的数据被封装在一个函数调用中。`<script>` 标签不受任何跨域限制，且这种技术在几乎所有的浏览器中都得到了支持。
 
 因此，我们有一个指向远程服务器的脚本：
 
-```
+```html
 <script src="http://example.com/data.json"></script>
 ```
 
 然后，端点 `data.json` 返回一个被封装在函数调用中的 JSON 对象：
-`jsonCallback({"data": "foo"})`
+
+```javascript
+jsonCallback({"data": "foo"})
+```
 
 我们定义一个全局可用的函数。一旦脚本加载，该函数就会被调用：
 
@@ -1429,18 +1410,19 @@ window.jsonCallback = function(result){
 }
 ```
 
-就目前而言，这是一个相当复杂的过程。幸运的是，jQuery 将其封装在一个简洁的 API 中：
+就目前而言，这是一个相当复杂的过程。幸运的是，`jQuery` 将其封装在一个简洁的 API 中：
+
 ```javascript
-$.getJSON("http://example.com/data.json?callback=", function(result){
+$.getJSON("http://example.com/data.json?callback=?", function(result){
   // 对结果进行处理
 });
 ```
 
-JSONP 将上述 URL 中的最后一个问号替换为它创建的临时函数的随机名称。你的服务器需要读取 `callback` 参数并将其作为返回的封装函数的名称。
+`JSONP` 将上述 URL 中的最后一个问号替换为它创建的临时函数的随机名称。你的服务器需要读取 `callback` 参数并将其作为返回的封装函数的名称。
 
-# 跨域请求的安全
+### 跨域请求的安全
 
-如果你向任何域名开放服务器以允许跨源请求或 JSONP，你必须认真考虑安全问题。通常，跨源策略策略会阻止攻击者调用 Twitter 的 API 并获取你的个人数据。CORS 和 JSONP 改变了这一切。在普通的 Ajax 请求中，你的会话 Cookie 会随请求一起，你将登录 Twitter API。任何潜在的攻击者对你的账户拥有完全控制权；因此，安全考虑至关重要。
+如果你向任何域名开放服务器以允许跨源请求或 JSONP，你必须认真考虑安全问题。通常，跨源策略会阻止攻击者调用 Twitter 的 API 并获取你的个人数据。CORS 和 JSONP 改变了这一切。在普通的 Ajax 请求中，你的会话 Cookie 会随请求一起，你将登录 Twitter API。任何潜在的攻击者对你的账户拥有完全控制权；因此，安全考虑至关重要。
 
 考虑到这一点，如果你无法控制哪些域名可以访问你的 API，在使用 CORS/JSONP 时需要注意以下关键点：
 
@@ -1451,7 +1433,7 @@ JSONP 将上述 URL 中的最后一个问号替换为它创建的临时函数的
 
 ## 填充 ORM
 
-向 ORM 填充数据非常简单。我们只需要从服务器获取数据，然后更新我们的模型记录。让我们为 Model 对象添加一个 `populate()` 函数，它将遍历任何给定的值，创建实例并更新记录对象：
+向 ORM 填充数据非常简单。我们只需要从服务器获取数据，然后更新我们的模型记录。让我们为 `Model` 对象添加一个 `populate()` 函数，它将遍历任何给定的值，创建实例并更新记录对象：
 
 ```javascript
 Model.extend({
@@ -1469,6 +1451,7 @@ Model.extend({
 ```
 
 现在，我们可以使用数据请求的结果调用 `Model.populate()` 函数：
+
 ```javascript
 $.getJSON("/assets", function(result){
   Asset.populate(result);
@@ -1477,7 +1460,7 @@ $.getJSON("/assets", function(result){
 
 服务器返回的任何记录现在都可以在我们的 ORM 中可用。
 
-## 本存储数据
+## 本地存储数据
 
 在过去，本地数据存储非常麻烦。可用的选项只有 Cookies 和像 Adobe Flash 这样的插件。Cookies 的 API 过旧，无法存储更多数据，并且会在每次请求时将所有数据发送回服务器，增加了不必要的开销。对于 Flash，尽量避免使用插件。
 
@@ -1529,14 +1512,15 @@ localStorage.setItem("serData", JSON.stringify(object));
 var result = JSON.parse(localStorage.getItem("serData"));
 ```
 
-如果超过配额（通常为 5 MB），将抛出 QUOTA_EXCEEDED 错误。
+如果超过配额（通常为 5 MB），将抛出 `QUOTA_EXCEEDED` 错误。
+
+### 向 RESTful 服务器提交数据
+
+如果我们遵循 REST 规范，我们希望在创建记录时使用 HTTP POST，在更新记录时使用 PUT。让我们为 `Model` 实例添加两个函数——`createRemote()` 和 `updateRemote()`——它们将向我们的服务器发送正确的 HTTP 请求：
 
 
 
-
-如果我们遵循 REST 规范，我们希望在创建记录时使用 HTTP POST，在更新记录时使用 PUT。让我们为 Model 实例添加两个函数——`createRemote()` 和 `updateRemote()`——它们将向我们的服务器发送正确的 HTTP 请求：
-
-```
+```javascript
 Model.include({
   createRemote: function(url, callback){
     $.post(url, this.attributes(), callback);
@@ -1556,7 +1540,7 @@ Model.include({
 现在，如果我们在一个 `Asset` 实例上调用 `createRemote()`，它的属性将会被 POST 到服务器：
 
 - // 使用方法：
-  Asset.init({name: "jason.txt"}).createRemote("/assets");
+  `Asset.init({name: "jason.txt"}).createRemote("/assets");`
 
 # 第 4 章
 
@@ -1578,7 +1562,7 @@ Model.include({
 
 模块模式是封装逻辑和通过匿名函数防止全局命名空间污染的一种极佳方法，匿名函数可以说是 JavaScript 最强大的特性。我们只需创建一个匿名函数并立即执行它。位于函数内部的所有代码都在闭包内部运行，为我们的应用程序变量提供了一个局部且私有的环境：
 
-```
+```javascript
 function() {
   /* ... */
 }();
@@ -1590,25 +1574,24 @@ function() {
 
 模块内部的变量定义是局部的，因此无法在全局命名空间之外访问。然而，应用程序的全局变量仍然可用，并且可以在模块内部方便地访问和操作。并不清楚哪些全局变量正在被模块使用，特别是当你的大型应用程序增长时。
 
-此外，隐式全局变量（implied globals）解析速度较，因为 JavaScript 解释器必须向上遍历作用链来解析它们。局部变量的访问总是更快、更高效。
+此外，隐式全局变量（implied globals）解析速度较慢，因为 JavaScript 解释器必须向上遍历作用链来解析它们。局部变量的访问总是更快、更高效。
 
 幸运的是，我们的模块为解决这些问题提供了一种简单的方法。通过将全局变量作为参数传递给匿名函数，我们可以将它们导入代码中，这比隐式全局变量更清晰、也更快：
 
-```
+```javascript
 function($) {
   /* ... */
 }(jQuery);
 ```
 
-在上面的示例中，我们将全局 `jQuery` 导入模块中并将其别命名为 `$`。模块内部访问了哪些全局变量一目了然，它们的查找速度更快。事实上，每你想使用 jQuery 的快捷方式时这都是推荐的做法，它确保了你的代码不会与其他任何库冲突。
+在上面的示例中，我们将全局 `jQuery` 导入模块中并将其别命名为 `$`。模块内部访问了哪些全局变量一目了然，它们的查找速度更快。事实上，每当你想使用 jQuery 的快捷方式时这都是推荐的做法，它确保了你的代码不会与其他任何库冲突。
 
 ## 全局导出
 
 在导出全局变量时，我们可以使用类似的技术。理想情况下，你应该尽可能少使用全局变量，但总会有需要它们的时候。我们可以将页面的 `window` 导入到模块中，直接在其上设置属性，从而全局暴露变量：
 
-```
+```javascript
 (function($, exports){
-
   exports.Foo = "wem";
 })(jQuery, window);
 ```
@@ -1619,7 +1602,7 @@ function($) {
 
 使用局部上下文（context）是结构化模块的有用方法，特别是在为事件注册回调时。目前，我们模块内部的上下文是全局的——这等同于 `window`：
 
-```
+```javascript
 function(){
   assertEqual(this, window);
 }
@@ -1627,7 +1610,7 @@ function(){
 
 如果我们想限制上下文范围，我们需要开始向一个对象添加函数。例如：
 
-```
+```javascript
 function(){
   var mod = {};
 
@@ -1641,7 +1624,7 @@ function(){
 
 现在 `contextFunction()` 内部的上下文是相对于 `mod` 对象的局部的。我们可以开始使用它，而不必担心创建全局变量。为了让你更好地了解在实践中如何使用它，让我们充实那个示例：
 
-```
+```javascript
 function($) {
   var mod = {};
 
@@ -1653,7 +1636,7 @@ function($) {
 
 让我们先利用机会清理一下我们的库，让我们的控制器变得整洁一些。`Controller` 类不需要是一个构造函数，因为在生成子控制器时所需的上下文切换在这里是没有必须的：
 
-```
+```javascript
 // 使用全局上下文，而不是 window 
 // 对象，来创建全局变量
 var exports = this;
@@ -1745,33 +1728,31 @@ jQuery(function($) {
       "input[type=search]": "searchInput",
       "form": "searchForm"
     },
-  },
 
-  // 实例化时调用
-  init: function(element){
-```
+    // 实例化时调用
+    init: function(element){
+      this.el = $(element);
+      this.refreshElements();
+      this.searchForm.submit(this.proxy(this.search));
+    },
 
-```javascript
-this.el = $(element);
-this.refreshElements();
-this.searchForm.submit(this.proxy(this.search));
+    search: function() {
+      console.log("Searching:", this.searchInput.val());
+    },
 
-search: function() {
-  console.log("Searching:", this.searchInput.val());
-},
+    // 私有
+    $: function(selector){
+      // 需要一个 `el` 属性，并限制查询范围
+      return $(selector, this.el);
+    },
 
-// 私有
-$: function(selector){
-  // 需要一个 `el` 属性，并限制查询范围
-  return $(selector, this.el);
-},
-
-// 设置局部变量
-refreshElements: function() {
-  for (var key in this.elements) {
-    this[this.elements[key]] = $(key);
-  }
-}
+    // 设置局部变量
+    refreshElements: function() {
+      for (var key in this.elements) {
+        this[this.elements[key]] = $(key);
+      }
+    }
+  });
 });
 ```
 
@@ -1821,11 +1802,7 @@ var Events = {
 
 你可以在本书的附带文件 `assets/ch04/finished_controller.html` 中看到此处的完整示例。
 
-
-
-
-```
-}
+```javascript
 };
 ```
 
@@ -1833,23 +1810,24 @@ var Events = {
 
 ```javascript
 var StateMachine = function(){
-StateMachine.fn = StateMachine.prototype;
+  StateMachine.fn = StateMachine.prototype;
 
-// 添加事件绑定/触发
-$.extend(StateMachine.fn, Events);
+  // 添加事件绑定/触发
+  $.extend(StateMachine.fn, Events);
 
-StateMachine.fn.add = function(controller){
-  this.bind("change", function(e, current){
-    if (controller == current)
-      controller.activate();
-    else
-      controller.deactivate();
-  });
+  StateMachine.fn.add = function(controller){
+    this.bind("change", function(e, current){
+      if (controller == current)
+        controller.activate();
+      else
+        controller.deactivate();
+    });
+  };
+
+  controller.active = $.proxy(function() {
+    this.trigger("change", controller);
+  }, this);
 };
-
-controller.active = $.proxy(function() {
-  this.trigger("change", controller);
-}, this);
 ```
 
 状态机的 `add()` 函数将控制器传递给状态列表，并创建一个 `activate()` 函数。当 `activate()` 被调用时，状态机将切换到该控制器。状态机会将调用激活状态控制器的 `activate()`，并对所有其他控制器调用 `deactivate()`。我们可以通过创建两个示例、将它们添加到状态机中并激活其中一个来观察其工作原理：
@@ -1980,12 +1958,9 @@ window.addEventListener("hashchange", function(){
 }, false);
 ```
 
-在我们的控制器的 `activate()` 函数内部，我们可以设置并显示其视图，添加并显示元素。同样，在 `deactivate()` 函数内部，我们可以销毁任何隐藏视图的内容。CSS 类提供了当视图激活时隐藏和显示视图的良好方法——例如使用 `.active` 类，并在取消激活时将其移除。
+在控制器的 `activate()` 函数内部，我们可以设置并显示其视图，添加并显示元素。同样，在 `deactivate()` 函数内部，我们可以销毁任何隐藏视图的内容。CSS 类提供了当视图激活时隐藏和显示视图的良好方法——例如使用 `.active` 类，并在取消激活时将其移除。
 
 （注：由于原文文本中存在部分重复的逻辑描述和代码，翻译时已按要求进行了整合，确保逻辑连贯）
-
-
-
 
 主机、端口和协议。或者，你可以指定一个绝对 URL，出于安全考虑，它被限制在与当前位置相同的域内。
 
@@ -1997,22 +1972,22 @@ History API 还包含另外几个功能。`history.replaceState()` 的作用与 
 
 之前提到的 `popstate` 事件会在页面加载或调用 `history.pushState()` 时触发。在后者的情况下，事件状态将包含一个 `state` 属性，它持有传递给 `history.pushState()` 的数据对象：
 
-```
+```javascript
 window.addEventListener("popstate", function(event){
-if (event.state) {
-  // 调用了 history.pushState()
-}
+  if (event.state) {
+    // 调用了 history.pushState()
+  }
 });
 ```
 
 你可以监听该事件并确保你的应用程序页面与 URL 保持一致。如果你正在使用 jQuery，需要注意该事件没有归一化。因此，访问状态对象时，你需要访问原始事件：
 
-```
+```javascript
 $(window).bind("popstate", function(event){
-event = event.originalEvent;
-if (event.state) {
-  // 调用了 history.pushState()
-}
+  event = event.originalEvent;
+  if (event.state) {
+    // 调用了 history.pushState()
+  }
 });
 ```
 
@@ -2032,7 +2007,7 @@ if (event.state) {
 
 创建视图的一种方法是通过 JavaScript 实用实现的。你可以使用 `document.createElement()` 创建 DOM 元素，设置其内容并将其附加到页面。当需要重绘视图时，清空视图并重复该过程即可：
 
-```
+```javascript
 var views = document.getElementById("views");
 views.innerHTML = ""; // 清空元素
 
@@ -2040,7 +2015,7 @@ var container = document.createElement("div");
 container.id = "user";
 ```
 
-```
+```javascript
 var name = document.createElement("span");
 name.innerHTML = data.name;
 
@@ -2049,14 +2024,15 @@ views.appendChild(container);
 ```
 
 或者，为了更简洁的 API，使用 jQuery：
-`$("#views").empty();`
 
-```
+```javascript
+$("#views").empty();
+
 var container = $("div").attr({id: "user"});
 var name = $("span").text(data.name);
 ```
 
-```
+```javascript
 $("#views").append(container);
 ```
 
@@ -2104,142 +2080,6 @@ var template = '<li><a href="${url}">${getName()}</a></li>';
 var element = jQuery.tpl(template, object);
 
 $('body').append(element);
-```
-
-History API 还包含另外几个功能。`history.replaceState()` 的作用与 `history.pushState()` 完全相同，但它不会向历史栈中添加条目。你可以使用 `history.back()` 和 `history.forward()` 函数在浏览器历史记录中导航。
-
-之前提到的 `popstate` 事件会在页面加载或调用 `history.pushState()` 时触发。在后者的情况下，事件状态将包含一个 `state` 属性，它持有传递给 `history.pushState()` 的数据对象：
-
-```javascript
-window.addEventListener("popstate", function(event){
-if (event.state) {
-  // 调用了 history.pushState()
-}
-});
-```
-
-你可以监听该事件并确保你的应用程序页面与 URL 保持一致。如果你正在使用 jQuery，需要注意该事件没有归一化。因此，访问状态对象时，你需要访问原始事件：
-
-```
-$(window).bind("popstate", function(event){
-event = event.originalEvent;
-if (event.state) {
-  // 调用了 history.pushState()
-}
-});
-```
-
-# 第 5 章
-
-## 视图与模板 (Views and Templating)
-
-视图是应用程序的界面；它们是终端用户实际交互和看到的内容。在我们的案例中，视图是由应用程序控制器管理的无逻辑 HTML 片段，控制器处理事件处理程序并交叉数据。在这里，通过将逻辑直接包含在视图中来破坏 MVC 抽象是非常诱惑的。不要屈服于这种诱惑！你最终会得到毫无意义的意大利面代码。
-
-当将服务器端应用程序迁移到客户端时，你必须做的最大的架构变化之一就是视图。传统上，你可以只需将服务器端数据与 HTML 片段进行插值，创建新页面。然而，JavaScript 应用中的视图在某种程度上是不同的。
-
-首先，你必须将视图所需的任何数据传输到客户端，因为你无法访问服务器端变量。这通常通过 Ajax 调用完成，返回一个 JSON 对象，然后由你的应用程序模型加载。你不应该在服务器端预渲染任何 HTML，而是应该将所有这些工作委托给客户端。这将确保你的客户端应用程序在渲染视图时不依赖服务器，保持其界面的敏捷。
-
-然后，你将这些数据加载到视图中，可以通过使用 JavaScript 动态创建 DOM 元素或使用模板。我将在下面详细阐述这两个选项。
-
-## 动态渲染视图 (Dynamically Rendering Views)
-
-创建视图的一种方法是通过 JavaScript 实用实现的。你可以使用 `document.createElement()` 创建 DOM 元素，设置其内容并将其附加到页面。当需要重绘视图时，清空视图并重复该过程即可：
-
-```
-var views = document.getElementById("views");
-views.innerHTML = ""; // 清空元素
-
-var container = document.createElement("div");
-container.id = "user";
-```
-
-```
-var name = document.createElement("span");
-name.innerHTML = data.name;
-
-container.appendChild(name);
-views.appendChild(container);
-```
-
-或者，为了更简洁的 API，使用 jQuery：
-`$("#views").empty();`
-
-```
-var container = $("div").attr({id: "user"});
-var name = $("span").text(data.name);
-```
-
-```
-$("#views").append(container);
-```
-
-只有当你需要渲染非常小的、可能只有几个元素时，我才会建议这样做。在控制器中放置元素会损害应用程序的 MVC 架构。与其从头创建元素，我建议在页面包含静态 HTML——在需要时隐藏和显示它。这将控制器中特定视图的代码保持最少，并且你可以根据需要更新元素的内容。例如，让我们创建一个 HTML 片段作为我们的视图：
-
-```html
-<div id="views">
-  <div class="groups"> ...</div>
-  <div class="user">
-    <span></span>
-  </div>
-</div>
-```
-
-现在，我们可以使用 jQuery 选择器来更新视图并切换元素的显示：
-
-```javascript
-$("#views").hide();
-
-var container = $("#views .user");
-container.find("span").text(data.name);
-container.show();
-```
-
-这种方法更优，因为它让视图和控制器尽可能分离。
-
-## 模板 (Templates)
-
-如果你在 HTML 中插值变量，你会觉得很熟悉。那里有很多模板库——你的选择可能取决于你使用哪一个。然而，它们大多数共享相似的语法，我将在下面描述。
-
-JavaScript 模板的核心是可以取带有插值变量的 HTML 片段并与 JavaScript 对象结合，用对象的值替换这些模板变量。总来说，JavaScript 模板的工作方式与其他语言的库相同，例如 PHP 的 Smarty、Ruby 的 Erb 和 Python 的字符串格式。
-
-我们将使用 `jQuery.tpl` 作为模板库示例。如果你没有使用 jQuery，或者想使用不同的模板库，这些示例应该是很有用的；大多数库的模板语法非常相似，甚至相同。如果你想要一个很好的替代方案，查看 Mustache，它在许多语言中有实现。
-
-由 Microsoft 创建的 `jQuery.tpl` 是一个模板插件，并在 John Resig 的原始工作中有完整文档。该库有一个主函数：`jQuery.tpl()`，你可以向其传递模板和一些数据。它渲染你可以附加到文档的模板。如果数据是一个数组，则为数组中的每个数据渲染模板；否则，渲染一个简单的模板：
-
-```javascript
-var object = {
-  url: "http://example.com",
-  getName: function() { return "Trevor" }
-};
-
-var template = '<li><a href="${url}">${getName()}</a></li>';
-
-var element = jQuery.tpl(template, object);
-
-$('body').append(element);
-```
-
-History API 还包含另外几个功能。`history.replaceState()` 的作用与 `history.pushState()` 完全相同，但它不会向历史栈中添加条目。你可以使用 `history.back()` 和 `history.forward()` 函数在浏览器历史记录中导航。
-
-之前提到的 `popstate` 事件会在页面加载或调用 `history.pushState()` 时触发。在后者的情况下，事件状态将包含一个 `state` 属性，它持有传递给 `history.pushState()` 的数据对象：
-
-```javascript
-window.addEventListener("popstate", function(event){
-if (event.state) {
-  // 调用了 history.pushState()
-}
-});
-```
-
-你可以监听该事件并确保你的应用程序页面与 URL 保持一致。如果你正在使用 jQuery，需要注意该事件没有归一化。因此，访问状态对象时，你需要访问原始事件：
-
-```
-$(window).bind("popstate", function(event){
-event = event.originalEvent;
-if (event.state) {
-  // 调用了 history.pushState()
-}
-});
 ```
 
 ## 模板辅助函数 (Template Helpers)
@@ -2250,15 +2090,11 @@ if (event.state) {
 <div>
 ${this.data.replace(
 /((http|https):\/\/[\w*?&\=\.##%-]+)(?|\w*?&\=\.##%"-]*))/g,
-'<a target="blank" href="$1">$2</a')}
+'<a target="blank" href="$1">$2</a>}
 </div>
 ```
 
-与其将函数注入到视图中，我们应该抽象并命名空间，保持逻辑与视图分离。在这些案例中，我们将创建一个单独
-
-
-
-`helpers.js` 文件，包含了应用程序所有的辅助函数，例如 `autoLink()` 函数。然后，我们使用我们的辅助函数来清理视图：
+与其将函数注入到视图中，我们应该抽象并命名空间，保持逻辑与视图分离。在这些案例中，我们将创建一个单独 `helpers.js` 文件，包含了应用程序所有的辅助函数，例如 `autoLink()` 函数。然后，我们使用我们的辅助函数来清理视图：
 
 ```javascript
 // helper.js
@@ -2280,10 +2116,10 @@ helper.autoLink = function(data) {
 
 在存储视图模板时，有几种选择：
 
--   内联在 JavaScript 中
--   内联在自定义 script 标签中
--   远程加载
--   内联在 HTML 中
+- 内联在 JavaScript 中
+- 内联在自定义 script 标签中
+- 远程加载
+- 内联在 HTML 中
 
 然而，其中某些方法在遵循 MVC 架构方面表现更好。我个人主张将模板内联存储在自定义 script 标签中，原因如下文所述。
 
@@ -2306,7 +2142,7 @@ helper.autoLink = function(data) {
   var data = {
     getName: function() { return 'Bob' };
   };
-  var element = $("someTemplate").tmpl(data);
+  var element = $("#someTemplate").tmpl(data);
   element.appendTo($(body));
 </script>
 ```
@@ -2380,13 +2216,13 @@ User.trigger = function(ev) {
   if ((calls = this.callbacks)) return this;
   if ((list = this.callbacks[ev])) return this;
   jQuery.each(list, function() {
+  });
 }
 
 User.create = function(name) {
   this.records.push(new User(name));
   this.trigger("change");
 }
-
 ```
 
 ```html
@@ -2395,23 +2231,19 @@ User.create = function(name) {
 </script>
 ```
 
-<script>
-  User.bind("change", function() {
-    var template = $("#userTmpl").tpl(User.records);
-    $("#users").empty();
-    $("#users").append(template);
-  });
-</script>
+```javascript
+User.bind("change", function() {
+  var template = $("#userTmpl").tpl(User.records);
+  $("#users").empty();
+  $("#users").append(template);
+});
+```
 
 ```html
 <ul id="users"></ul>
 ```
 
-现在，每当我们更改 User 的记录时，User 的更改事件就会被触发，调用我们的模板并重绘用户列表。这非常有用，因为我们可以创建和更新用户，而无需担心更新视图，这将自动完成。例如，让我们创建一个新用户：User.create(" Seaborn");
-
-
-
-
+现在，每当我们更改 User 的记录时，User 的更改事件就会被触发，调用我们的模板并重绘用户列表。这非常有用，因为我们可以创建和更新用户，而无需担心更新视图，这将自动完成。例如，让我们创建一个新用户：`User.create(" Seaborn");`
 
 不仅是这种情况的实际操作需要一个特定的管理系统——性能方面也是如此。你的浏览器需要为它的每个 JavaScript 文件发送 HTTP 请求——尽管它可以异步执行操作，但建立连接的成本是巨大的。每个连接都带有 HTTP 头部（如 cookie）的开销，并且必须启动 TCP 握手。如果你的应用程序通过 SSL 使用，情况会更加糟糕。
 
@@ -2421,8 +2253,8 @@ User.create = function(name) {
 
 显然，需要一个标准来确保代码的可操作性，允许我们能够在所有环境中使用库。Kevin Dangor 发起了 CommonJS 倡议来实现这一目标。它始于 Kevin 的一篇博客文章，他提倡 JavaScript 解释器和开发者应该拥有一个共享标准，并团结在一起编写一些规范：
 
-JavaScript 需要一种包含其他模块的方法，并让这些模块存在独立的命名空间中。命名空间有很多简单的方法，但没有标准的程序化方法来加载（一次）模块。
-
+> JavaScript 需要一种包含其他模块的方法，并让这些模块存在独立的命名空间中。命名空间有很多简单的方法，但没有标准的程序化方法来加载（一次）模块。
+>
 > [这] 不是一个技术问题。这是一个关于人们聚集在一起并决定向前迈进、开始构建更大更酷的事物的问题。
 
 一个邮件列表被建立了，CommonJS 诞生了。它在主要参与者的支持下迅速聚集了势头。它现在是 JavaScript 的事实标准，拥有一套日益增长的标准，包括 IO 接口、Socket 流和单元测试。
@@ -2440,7 +2272,7 @@ exports.per = function(value, total) {
 
 ```javascript
 // application.js
-var Maths = require(".mathjs");
+var Maths = require("./mathjs");
 assertEqual(Maths.per(50, 100), 50 );
 ```
 
@@ -2464,9 +2296,9 @@ require.define("maths", function(require, exports) {
 ```javascript
 // application.js
 require.define("application", function(require, exports) {
-  var per = require(".maths").per;
+  var per = require("./maths").per;
   assertEqual(per(50, 100), 50 );
-}, [".maths"]); // 列出依赖项 (maths.js)
+}, ["./maths"]); // 列出依赖项 (maths.js)
 ```
 
 模块可以被模块加载库加载并在浏览器中执行。这真的是件大事。现在我们已经把代码拆分成了独立的模块组件，这是良好应用程序设计的秘诀，但我们还获得了依赖管理、作用域隔离和命名空间。事实上，相同的模块可以在浏览器、服务器、桌面应用程序以及任何其他符合 CommonJS 的环境中运行。换句话说，现在可以在服务器和客户端之间共享相同的代码了！
@@ -2534,9 +2366,6 @@ require("lib/jquery.js", function() {
 
 设置 `data-main` 属性要求 RequireJS 将脚本标签视为 `require()` 并调用该属性的值。在这种情况下，它会加载 `lib/application.js` 脚本，该脚本反过来加载我们应用程序的其余部分。
 
-
-
-
 使用 `require.define()` 时，直接使用基础的 `define()` 函数即可。只要模块位于不同的文件中，它们就不需要显式命名。依赖项首先以字符串数组的形式出现，紧接着是一个包含实际模块的回调函数。就像 RequireJS 的 `require()` 函数一样，依赖项作为参数传递给回调函数：
 
 ```javascript
@@ -2565,13 +2394,14 @@ define(function(require, exports) {
 
 我们还在手动将模块封装成传输格式，虽然这对于异步加载是必须的，但非常繁琐。让我们使用服务器端工具只获取一个资源来加载所有模块，从而一石二鸟，这要高效得多。可用的构建工具也是智能的——它们不会随意地打包模块，而是通过静态分析模块来递归解析它们的依赖关系。它们还会负责将模块封装在传输格式中，节省一些输入工作。
 
-除了合并，许多构建工具还支持压缩（minification），这进一步减小了请求体积。事实上，某些工具——如 `rack-modlur` 和 `Transporter`——与你的 Web 服务器集成，在首次请求它们时自动处理模块处理。
+除了合并，许多构建工具还支持压缩（minification），这进一步减小了请求体积。事实上，某些工具——如 `rack-modulr` 和 `Transporter`——与你的 Web 服务器集成，在首次请求它们时自动处理模块处理。
 
-例如，这里有一个使用 `rack-modul` 的 Rack CommonJS 模块服务器：
+例如，这里有一个使用 `rack-modulr` 的 Rack CommonJS 模块服务器：
+
 ```ruby
-require "rack/modul"
+require "rack/modulr"
 
-use Rack::Modul, :source => "lib", :hosted_at => "lib"
+use Rack::Modulr, :source => "lib", :hosted_at => "lib"
 run Rack::Directory.new("public")
 ```
 
@@ -2593,7 +2423,7 @@ require.define("math")....
 // = require "states"
 ```
 
-在上面的示例中，`jquery.js` 在 Sprockets 的加载路径中，而 `states.js` 是相对于当前文件的引用。Sprockets 足够聪明，可以只包含一次库，无论需要多久。与所有的 CommonJS 模块封装器一样，sprocketsets 支持缓存和压缩。在开发期间，你的服务器可以在页面加载过程中按需解析并合并文件。当网站上线时，JavaScript 文件会被预合并并静态提供，从而提高性能。
+在上面的示例中，`jquery.js` 在 Sprockets 的加载路径中，而 `states.js` 是相对于当前文件的引用。Sprockets 足够聪明，可以只包含一次库，无论需要多久。与所有的 CommonJS 模块封装器一样，Sprockets 支持缓存和压缩。在开发期间，你的服务器可以在页面加载过程中按需解析并合并文件。当网站上线时，JavaScript 文件会被预合并并静态提供，从而提高性能。
 
 尽管 Sprockets 是一个命令行工具，但也有一些与 Rack 和 Rails 的集成，例如 `rack-sprockets`。甚至还有一些 PHP 的实现。Sprockets 的缺点（实际上所有这些模块封装器的缺点）是，你所有的 JavaScript 文件都需要预处理，要么通过服务器，要么通过命令行工具完成。
 
@@ -2610,20 +2440,7 @@ $LAB
 </script>
 ```
 
-在上面的示例中，所有脚本都并行加载，但 LABjs 确保 `jquery.js` 在 `jquery-js` 和 `vapor.js` 之前执行。该 API 极其简单简洁，但如果你想了解 LABjs 的更多高级功能，例如支持，
-
-LABjs 是目前最简单的依赖管理解决方案之一。它不需要任何服务器端的参与或 CommonJS 模块。使用 LABjs 加载脚本可以减少页面加载期间的资源阻塞，这是优化网站性能的一种简单且有效的方法。默认情况下，LABjs 会尽可能并行加载并执行脚本。然而，如果某些脚本有依赖关系，你可以轻松指定顺序：
-
-```html
-<script>
-$LAB
-.script('/js/jquery.js').wait()
-.script('/js/jquery-ui.js')
-.script('/js/vapor.js');
-</script>
-```
-
-在上面的示例中，所有脚本都并行加载，但 LABjs 确保 `jquery.js` 在 `jquery-js` 和 `vapor.js` 之前执行。该 API 极其简单简洁，但如果你想了解 LABjs 的更多高级功能，例如支持，
+在上面的示例中，所有脚本都并行加载，但 LABjs 确保 `jquery.js` 在 `jquery-ui.js` 和 `vapor.js` 之前执行。该 API 极其简单简洁，但如果你想了解 LABjs 的更多高级功能，例如支持，
 
 一个需要注意的问题是 HTML5 背后的主要安全考虑是只有用户选择的文件可以被访问。这可以通过拖放文件来实现，
 
@@ -2636,7 +2453,7 @@ $LAB
 文件输入自 Web 诞生以来一直存在，是让用户文件的传统方式。HTML5 改进了它们，减少了一些缺点。长期以来让开发者头疼的问题之一是允许多个文件上传。过去，开发者不得不采用复杂的多个文件输入或依赖 Adobe Flash 等插件。HTML5 通过 `multiple` 属性解决了这个问题。通过在文件输入上指定 `multiple`，你是在指示浏览器允许用户选择多个文件。不支持 HTML5 的旧浏览器将简单地忽略该属性：
 
 ```html
-<input type="file">
+<input type="file" multiple>
 ```
 
 但 UI 并不完美；要选择多个文件，用户需要按住 Shift 键。例如，Facebook 发现 85% 上传照片的用户只上传一张。通过在上传过程中添加一个如何选择多张照片的提示（如图 7-1 所示），指标从 85% 降到了 40%。
@@ -2645,12 +2462,10 @@ $LAB
 
 只读的 `files` 属性返回一个 `FileList`，你可以遍历它并执行验证，然后告知用户结果：
 
-
-
 ```javascript
 var input = $("input[type=file]");
 
-input.change(function({
+input.change(function(){
   var files = this.files;
 
   for (var i=0; i < files.length; i++)
@@ -2668,7 +2483,7 @@ input.change(function({
 
 拖放支持最初最初由微软在 1999 年为 Internet Explorer 5.0 “设计”并实现的，从那以后 IE 一直支持该功能。HTML5 规范仅仅记录了已经存在的内容，现在 Safari、Firefox 和 Chrome 也已添加了支持，模拟了微软的实现。然而，委婉地说，该规范相当混乱，需要费一番功夫“跳圈子”才能满足那些往往毫无意义的要求。
 
-与拖放相关的事件至少有七个：dragstart、drag、dragover、dragenter、dragleave、drop 和 dragend。我将在下文章节中详细介绍每一个事件。
+与拖放相关的事件至少有七个：`dragstart`、`drag`、`dragover`、`dragenter`、`dragleave`、`drop` 和 `dragend`。我将在下文章节中详细介绍每一个事件。
 
 即使你的浏览器不支持 HTML5 文件 API，你可能仍然可以使用拖放 API。目前，浏览器要求如下：
 
@@ -2691,7 +2506,7 @@ input.change(function({
 现在我们必须让该可拖元素带有一些数据。我们可以通过监听 `dragstart` 事件并调用事件的 `setData()` 函数来实现：
 
 ```javascript
-var element = $("dragstart");
+var element = $("#dragme");
 element.bind("dragstart", function(event){
   // 我们不想使用 jQuery 的抽象层
   event = event.originalEvent;
@@ -2699,11 +2514,11 @@ element.bind("dragstart", function(event){
   event.dataTransfer.effectAllowed = "move";
   event.dataTransfer.setData("text/plain", $(this).text());
   event.dataTransfer.setData("text/html", $(this).html());
-  event.dataTransfer.setDataImage("images/drag.png", -10, -10);
+  event.dataTransfer.setDragImage("images/drag.png", -10, -10);
 });
 ```
 
-jQuery 提供了事件的抽象，它并不包含我们需要的 `dataTransfer` 对象。方便的是，抽象后的事件有一个 `original` 属性，我们可以用它来访问拖/放 API。
+jQuery 提供了事件的抽象，它并不包含我们需要的 `dataTransfer` 对象。方便的是，抽象后的事件有一个 `originalEvent` 属性，我们可以用它来访问拖/放 API。
 
 如上所示，事件拥有一个 `dataTransfer` 对象，该对象拥有各种拖放函数。在这种情况下，我们在拖动事件上设置了一些文本和 `text/html` 数据。当元素被放开且并触发 `drop` 事件时，我们可以读取这些数据。同样，如果元素被拖到浏览器之外，其他应用程序可以根据它们支持的文件类型来处理被投放的数据。
 
@@ -2718,7 +2533,7 @@ event.dataTransfer.setData("text/plain", "http://example.com");
 多个链接由换行符分隔：
 
 ```javascript
-event.dataTransfer.setData("text-uri-list", "http://example.com\nhttp://google.com");
+event.dataTransfer.setData("text/uri-list", "http://example.com\nhttp://google.com");
 event.dataTransfer.setData("text/plain", "http://example.com\nhttp://google.com");
 ```
 
@@ -2746,24 +2561,21 @@ $("#preview").bind("dragstart", function(e){
 
 `drop` 事件也用于处理文件的下载。不过，使用它并无害，尽管其他浏览器未来将支持它。`DownloadURL` 格式是一个用冒号（:`）分隔的文件信息列表：mime、名称和位置。
 
-
-
-
-
 ```javascript
-$("textarea").copy().bind(function(event){
+$("textarea").bind("copy", function(event){
   event.stopPropagation();
   event.preventDefault();
 
   var cd = event.originalEvent.clipboardData;
 
   // For IE
-  if (cd ) cd = window.clipboardData;
+  if (!cd) cd = window.clipboardData;
 
   // For Firefox
-  if (cd ) return;
+  if (!cd) return;
 
   cd.setData("text/plain", $(this).text());
+});
 ```
 
 按照浏览器创新的速度，这种支持很快可能就会标准化。如果你想为你的应用程序添加复制/粘贴支持，你应该自己去查看当前的状况。
@@ -2784,16 +2596,16 @@ $("textarea").bind("paste", function(event){
   var cd = event.clipboardData;
 
   // For IE
-  if (cd ) cd = window.clipboardData;
+  if (!cd) cd = window.clipboardData;
 
   // For Firefox
-  if (cd ) return;
+  if (!cd) return;
 
   $("#result").text(cd.getData("text/plain"));
 
   // Safari event support file pasting
   var files = cd.files;
-}
+});
 ```
 
 WebKit 的每夜版本允许你访问 `clipboardData` 上的 `files` 属性，从而支持向应用程序中粘贴文件。我预计一旦规范标准化，其他浏览器也会跟进。
@@ -2897,8 +2709,9 @@ while (pos < file.size) {
 }
 ```
 
+上传。但在这种情况下并非如此——上传的是纯粹的文件数据。为了传递有关文件的信息，我们可以设置自定义标头，例如 `X-File-Name`。我们的服务器可以读取这些标头并正确处理文件：
 
-上传。但在这种情况下并非如此——上传的是纯粹的文件数据。为了传递有关文件的信息，我们可以设置自定义标头，例如 X-File-Name。我们的服务器可以读取这些标头并正确处理文件：
+
 
 ```javascript
 ajax({
@@ -3058,7 +2871,7 @@ var uploadFile = function(file){
 
 这非常简单！要查看完整示例，请检查 `assets/ch07/dragdro-upload.html`。
 
-## 第8章
+## 第 8 章
 
 ### 实时 Web
 
@@ -3070,15 +2883,12 @@ var uploadFile = function(file){
 
 实时 Web 正在快速变化，每天都有新技术涌现。跟上这些发展并使用正确的工具至关重要。
 
-
-
-
-* * Safari >= 5
+* Safari >= 5
 * iOS >= 4.2
 * Firefox >= 4
 * Opera >= 11*
 
-尽管 Firefox 和 Opera 提供了 WebSocket 的实现，但由于最近的安全考量，该功能目前被禁用了。不过，所有问题都会得到解决的，可能在本书出版时就已经处理好了。你可以使用 Comet 和 Adobe Flash 等旧技术进行平滑降。目前对 IE 的支持完全不在考虑范围内，可能要等到 IE9 之后才会添加。
+尽管 Firefox 和 Opera 提供了 WebSocket 的实现，但由于最近的安全考量，该功能目前被禁用了。不过，所有问题都会得到解决的，可能在本书出版时就已经处理好了。你可以使用 Comet 和 Adobe Flash 等旧技术进行平滑降级。目前对 IE 的支持完全不在考虑范围内，可能要等到 IE9 之后才会添加。
 
 检测对 WebSockets 的支持非常简单：
 
@@ -3087,7 +2897,7 @@ var supported = ("WebSocket" in window);
 if (supported) alert("WebSockets are supported");
 ```
 
-从浏览器的角度来看，WebSocket API 既清晰又符合逻辑。你使用 `WebSocket` 类实例化一个新的 socket，并传递服务器端点——在本例中为 ws://example.com：
+从浏览器的角度来看，WebSocket API 既清晰又符合逻辑。你使用 `WebSocket` 类实例化一个新的 socket，并传递服务器端点——在本例中为 `ws://example.com`：
 
 ```javascript
 var socket = new WebSocket("ws://example.com");
@@ -3166,27 +2976,27 @@ WebSockets 通过向你的服务器执行 HTTP “升级”（upgrade）请求�
 
 从设计之初，WebSockets 就设计为与防火墙和代理良好协作，使用流行的端口和 HTTP 头部进行初始连接。然而，在 Web 世界中情况很少如此简单。某些代理会更改 WebSocket 升级标头，导致其失效。另一些则不允许长连接，并在一段时间后超时。事实上，协议草案的最新更新（版本 76）无意中破坏了与反向代理和网关的兼容性。你可以采取以下步骤让你的 WebSockets 有最大的成功机会：
 
-- 使用安全的 WebSocket 连接 (wss)。代理不会干预加密连接，而且你还有一个额外好处是数据免受监听者的攻击。
-- 在你的 WebSocket 服务器前方使用 TCP 负载均衡器，而不是 HTTP 负载均衡器。只有当负载均衡器主动宣布支持 WebSocket 时，才考虑 HTTP 均衡器。
-- 不要假设浏览器支持它就能工作。相反，如果连接没有快速建立，则让其超时，平滑降级到不同的传输线路，如 Comet 或轮询（polling）。
+* 使用安全的 WebSocket 连接 (`wss`)。代理不会干预加密连接，而且你还有一个额外好处是数据免受监听者的攻击。
+* 在你的 WebSocket 服务器前方使用 TCP 负载均衡器，而不是 HTTP 负载均衡器。只有当负载均衡器主动宣布支持 WebSocket 时，才考虑 HTTP 均衡器。
+* 不要假设浏览器支持它就能工作。相反，如果连接没有快速建立，则让其超时，平滑降级到不同的传输线路，如 Comet 或轮询（polling）。
 
 那么，有哪些服务器选项呢？幸运的是，在 Ruby、Python 和 Java 等语言中有许多实现。确保任何实现至少支持协议的 76 版本，因为这在客户端中是最常见的。
 
-- Node.js
-    - node-Web-server
-    - Socket.IO
-    - Ruby
-    - EventMachine
-    - Cram
-    - Sunshowers
-    - Python
-    - Twisted
-    - Apache module
-    - PHP
-    - php-Web
-    - Java
-    - Jetty
-    - Google Go
+* Node.js
+    * node-Web-server
+    * Socket.IO
+* Ruby
+    * EventMachine
+    * Cram
+    * Sunshowers
+* Python
+    * Twisted
+    * Apache module
+* PHP
+    * php-Web
+* Java
+    * Jetty
+* Google Go
 
 ## 实时架构
 
@@ -3194,28 +3004,24 @@ WebSockets 通过向你的服务器执行 HTTP “升级”（upgrade）请求�
 
 实时架构是事件驱动的。通常情况下，事件由用户交互驱动：用户更改记录，事件在系统中传播，直到数据被推送到连接的客户端。当你考虑让你的应用程序实时化时，你需要考虑两个问题：
 
-- 哪些模型是实时的？
-- 当模型实例更改时，哪些用户需要通知？
+* 哪些模型是实时的？
+* 当模型实例更改时，哪些用户需要通知？
 
 可能当模型发生变化时，你需要向所有连接的客户端发送通知。这对于每个客户端看到相同信息的实时活动是可能的。然而，常见的情况是资源与特定的用户相关联。你需要通知这些用户该资源的变化。
 
 让我们考虑另一个聊天室场景：
 
-- 用户在房间中发布了一条新消息。
-- Ajax 请求被发送到服务器，并创建一个 Chat 记录。
-- Chat 模型的保存回调，使用我们的方法更新客户端。
-- 我们搜索与该 Chat 记录房间的所有用户——这些是我们需要通知的人。
-- 5. 一条说明发生了什么（Chat 记录已创建）的更新被推送到相关的用户。
-
-
-
-
+* 用户在房间中发布了一条新消息。
+* Ajax 请求被发送到服务器，并创建一个 Chat 记录。
+* Chat 模型的保存回调，使用我们的方法更新客户端。
+* 我们搜索与该 Chat 记录房间的所有用户——这些是我们需要通知的人。
+* 一条说明发生了什么（Chat 记录已创建）的更新被推送到相关的用户。
 
 具体细节取决于你选择的后端。然而，如果你正在使用 Rails，Holla 是一个很好的例子。当 Message 记录被创建时，JuggernautObserver 会更新相关的客户端。
 
-这引出了我们的下一个问题：我们如何向特定用户发送通知呢？嗯，一种极的方法是使用 PubSub（发布/订阅）模式：客户端订阅特定的通道，而服务器向这些通道发布。用户订阅一个包含标识符的唯一通道，可能是用户的数据库 ID；服务器只需要向该唯一通道发布，即可向该特定用户发送通知。
+这引出了我们的下一个问题：我们如何向特定用户发送通知呢？嗯，一种极好的方法是使用 PubSub（发布/订阅）模式：客户端订阅特定的通道，而服务器向这些通道发布。用户订阅一个包含标识符的唯一通道，可能是用户的数据库 ID；服务器只需要向该唯一通道发布，即可向该特定用户发送通知。
 
-例如，特定用户可以订阅以下通道：observer/0765F0ED-96E6-476D-B82D-BE8DA33F4EC4
+例如，特定用户可以订阅以下通道：`observer/0765F0ED-96E6-476D-B82D-BE8DA33F4EC4`
 
 其中随机数字组合是当前登录用户的唯一标识符。要向该特定用户发送通知，服务器只需向该通道发布即可。
 
@@ -3223,7 +3029,7 @@ WebSockets 通过向你的服务器执行 HTTP “升级”（upgrade）请求�
 
 一旦通知被推送到客户端，你就能看到 MVC 架构的魅力。让我们回到聊天示例。我们发送给客户端的通知可能像这样：
 
-```
+```json
 {
   "class": "Chat",
   "type": "create",
@@ -3238,11 +3044,11 @@ WebSockets 通过向你的服务器执行 HTTP “升级”（upgrade）请求�
 
 ## 感知速度
 
-速度是 UI 设计中至关但经常被忽视的部分，因为它对用户体验（UX）有巨大影响，并对收入产生直接影响。以下公司一直在研究其影响：
+速度是 UI 设计中至关重要但经常被忽视的部分，因为它对用户体验（UX）有巨大影响，并对收入产生直接影响。以下公司一直在研究其影响：
 
-- Amazon：每增加 100 ms加载时间会导致销售额下降 1%（来源：Greg Linden, Amazon）。
-- Google：每增加 500 ms加载时间会导致搜索量减少 20%（来源：Marissa Mayer, Google）。
-- Yahoo!：每增加 400 ms加载时间会导致在页面加载之前点击“返回”的人数增加 5–9%（来源：Nicole Sullivan, Yahoo!）。
+* Amazon：每增加 100 ms 加载时间会导致销售额下降 1%（来源：Greg Linden, Amazon）。
+* Google：每增加 500 ms 加载时间会导致搜索量减少 20%（来源：Marissa Mayer, Google）。
+* Yahoo!：每增加 400 ms 加载时间会导致在页面加载之前点击“返回”的人数增加 5–9%（来源：Nicole Sullivan, Yahoo!）。
 
 感知速度与实际速度一样重要，因为这是用户会注意到的时刻。所以，关键在于让应用程序变快，即使它实际上如此。这种能力是 JavaScript 程序的优势之一——UI 不会被阻塞，即使后台请求需要一些时间。
 
@@ -3260,17 +3066,13 @@ WebSockets 通过向你的服务器执行 HTTP “升级”（upgrade）请求�
 
 所有开发者在编程时都会在不同程度上进行测试。即使只是手动运行代码也是一种测试形式。然而，我们在这里要介绍的是 JavaScript 中的自动化测试——即编写会自动运行的特定断言。自动化测试不会消除你代码中的 bug，但它是有效减少缺陷数量并防止旧 bug 回到库中的措施。有很多资源可供参考。
 
-
-
-
-
 ## 单元测试
 
 手动测试类似于集成测试，确保你的应用程序在高级层面上运行正常。单元测试要低级得多，它确保背后的特定代码段按预期执行。单元测试更有可能发现跨浏览器问题，但它允许你快速解决这些问题，因为你只需要检查小部分代码。
 
 单元测试的另一个优势是它为自动化铺平了道路。我们将在本章稍后的部分详细介绍这一点，但测试使得设置持续集成服务器成为可能，在每次提交代码时都运行应用程序的测试。这比手动运行整个应用程序快得多，并且可以确保对某部分代码的更改不会对应用程序的其他部分产生副作用。
 
-市有很多用于单元测试的 JavaScript 库，它们各有优缺点。我们将介绍最流行的几个，但通用原则适用于你选择的任何库。
+市面上有很多用于单元测试的 JavaScript 库，它们各有优缺点。我们将介绍最流行的几个，但通用原则适用于你选择的任何库。
 
 ## 断言 (Assertions)
 
@@ -3286,7 +3088,7 @@ var assert = function(value, msg) {
 }
 ```
 
-它接收一个值和一个可选的消息。如果该值的求值为为假，则断言失败：
+它接收一个值和一个可选的消息。如果该值的求值为假，则断言失败：
 
 ```javascript
 // 断言失败
@@ -3440,8 +3242,6 @@ test("attributes", function() {
 });
 ```
 
-
-
 ```javascript
 jasmine.getEnv().execute();
 </script>
@@ -3492,14 +3292,14 @@ describe("Model", function() {
 
 一个规范以 `it()` 函数开始，该函数接收规范的名称和包含断言（assertions）的匿名函数。断言是通过将相关值传递给 `expect()` 函数创建的，然后调用一个匹配器（matcher），例如以下之一：
 
-- `expect(x).toEqual(y)`：通过 x 和 y 比较对象或原始类型，如果它们是等值的则通过。
-- `expect(x).toBe(y)`：通过 x 和 y 比较对象或原始类型，如果它们是同一个对象则通过。
-- `expect(x).toMatch(pattern)`：将 x 与字符串或正则表达式模式进行比较，如果匹配则通过。
-- `expect(x).toBeNull()`：如果 x 为 null 则通过。
-- `expect(x).toBeTruthy()`：如果 x 求值为为 true 则通过。
-- `expect(x).toBeFalsy()`：如果 x 求值为为 false 则通过。
-- `expect(x).toContain(y)`：如果数组或字符串包含 y 则通过。
-- `expect(fn).toThrow(e)`：如果 fn 抛出异常 e 则通过。
+* `expect(x).toEqual(y)`：通过 x 和 y 比较对象或原始类型，如果它们是等值的则通过。
+* `expect(x).toBe(y)`：通过 x 和 y 比较对象或原始类型，如果它们是同一个对象则通过。
+* `expect(x).toMatch(pattern)`：将 x 与字符串或正则表达式模式进行比较，如果匹配则通过。
+* `expect(x).toBeNull()`：如果 x 为 null 则通过。
+* `expect(x).toBeTruthy()`：如果 x 求值为 true 则通过。
+* `expect(x).toBeFalsy()`：如果 x 求值为 false 则通过。
+* `expect(x).toContain(y)`：如果数组或字符串包含 y 则通过。
+* `expect(fn).toThrow(e)`：如果 fn 抛出异常 e 则通过。
 
 Jasmine 包含了许多其他匹配器，甚至允许你编写自定义匹配器。图 9 显示了使用上述规范运行 Jasmine 测试的概览。
 
@@ -3539,100 +3339,19 @@ browser.button(name => "login").click
 ```ruby
 class SeleniumTest < Test::Unit::TestCase
   def setup
+    @selenium = Selenium::Client::Driver.new \
+    :host = "localhost", \
+    :port = 4444, \
+    :browser = "chrome", \
+    :url = "http://example.com/index.html", \
+    :timeout = 30
+  end
+end
 ```
 
-![](img/70056c5723f980195f2d4ecd9ab138_0.png)
+![](img/70056c57235f980195f2d4ad3ecd9a7b_138_0.png)
+
 图 9-4. 使用 Selenium 记录指令
-
-```ruby
-@selenium = Selenium::Client::Driver.new \
-:host = "localhost", \
-:port = 4444, \
-:browser = "chrome", \
-:url = "http://example.com/index.html", \
-:timeout = 30
-```
-
-```javascript
-@selenium = Selenium::Client::Driver.new
-:host = "localhost",
-:port = 4444,
-:browser = "chrome",
-:url = "http://example.com/index.html",
-:timeout = 30
-```
-
-```javascript
-@selenium = Selenium::Client::Driver.new
-:host = "localhost",
-:port = 4444,
-:browser = "chrome",
-:url = "http://example.com/index.html",
-:timeout = 30
-```
-
-```javascript
-@selenium = Selenium::Client::Driver.new
-:host = "localhost",
-:port = 4444,
-:browser = "chrome",
-:url = "http://example.com/index.html",
-:timeout = 30
-```
-
-```javascript
-@selenium = Selenium::Client::Driver.new
-:host = "localhost",
-:port = 4444,
-:browser = "chrome",
-:url = "http://example.com/index.html",
-:timeout = 30
-```
-
-```javascript
-@selenium = Selenium::Client::Driver.new
-:host = "localhost",
-:port = 4444,
-:browser = "chrome",
-:url = "http://example.com/index.html",
-:timeout = 30
-```
-
-```javascript
-@selenium = Selenium::Client::Driver.new
-:host = "localhost",
-:port = 4444,
-:browser = "chrome",
-:url = "http://example.com/index.html",
-:timeout = 30
-```
-
-```javascript
-@selenium = Selenium::Client::Driver.new
-:host = "localhost",
-:port = 4444,
-:browser = "chrome",
-:url = "http://example.com/index.html",
-:timeout = 30
-```
-
-```javascript
-@selenium = Selenium::Client::Driver.new
-:host = "localhost",
-:port = 4444,
-:browser = "chrome",
-:url = "http://example.com/index.html",
-:timeout = 30
-```
-
-```javascript
-@selenium = Selenium::Client::Driver.new
-:host = "localhost",
-:port = 4444,
-:browser = "chrome",
-:url = "http://example.com/index.html",
-:timeout = 30
-```
 
 ## 无头测试 (Headless Testing)
 
@@ -3650,9 +3369,9 @@ Zombie.js 是一个无头库，旨在利用 Node.js 的性能和异步特性。�
 
 虽然你的测试套件和客户端 JavaScript 都运行在同一个引擎上，但 Zombie 使用了 V8 的另一个功能——上下文（contexts），它将它们分离，使它们不会混合全局变量/状态。这类似于 Chrome 在其进程中打开每个标签页的方式。
 
-上下文的另一个优点是可以并行运行多个测试，每个测试使用它自己的 Browser 对象。一个测试可以检查 DOM 内容，而另一个测试在等待页面请求返回，从而缩短完成整个测试套件的时间。你需要使用异步测试框架，例如出色的 Vjs，并注意哪些测试必须并行运行，哪些必须顺序执行。
+上下文的另一个优点是可以并行运行多个测试，每个测试使用它自己的 Browser 对象。一个测试可以检查 DOM 内容，而另一个测试在等待页面请求返回，从而缩短完成整个测试套件的时间。你需要使用异步测试框架，例如出色的 Vows，并注意哪些测试必须并行运行，哪些必须顺序执行。
 
-Zombie.js 提供了一个类似于真实 Web浏览器的 Browser 对象：它在页面之间维护状态（Cookie、历史记录、网络存储），并提供对当前窗口的访问。此外，它提供了操作窗口的方法、像用户一样操作（使用页面、填写表单、点击提示等）以及检查窗口内容（使用 XPath 或 CSS 选择器）。
+Zombie.js 提供了一个类似于真实 Web 浏览器的 Browser 对象：它在页面之间维护状态（Cookie、历史记录、网络存储），并提供对当前窗口的访问。此外，它提供了操作窗口的方法、像用户一样操作（使用页面、填写表单、点击提示等）以及检查窗口内容（使用 XPath 或 CSS 选择器）。
 
 例如，填写用户名和密码，提交表单，然后测试元素的内容：
 
@@ -3666,8 +3385,6 @@ pressButton("Sign Me Up!", function(err, browser) {
   assert.equal(browser.text("title"), "Welcome to Brains Depot");
 });
 ```
-
-
 
 此示例是不完整的。显然，你需要引入 Zombie.js 库，创建一个新的 Browser（浏览器），并在与其进行交互之前加载页面。你还想要处理好那个 `err` 参数。
 
@@ -3700,7 +3417,7 @@ vows.describe("Zombie lunch").addBatch({
 
 你还可以触发 DOM 事件——例如，模拟鼠标点击——或者响应确认提示和警告框。你可以查看请求和响应的历史，类似于 WebKit 网页检查器中的“资源”（Resources）选项卡。尽管 Zombie 运行在 Node.js 上，但它可以向任何 Web 服务器发送 HTTP 请求，因此你完全可以使用它来测试你的 Ruby 或 Python 应用。
 
-# Ichabod
+## Ichabod
 
 命名富有想象力的 Ichabod 库是运行无头测试的另一种替代方案，如果你追求简单和快速，它是一个极佳的解决方案。
 
@@ -3726,12 +3443,14 @@ $ ichabod --jasmine .tests/index.html
 ```
 
 > ...
+
 耗时 0.393 秒
+
 1 个测试，5 个断言，0 次失败
 
 Ichabod 将加载你所有的测试，并直接从命令行在无图形界面的版本 WebKit 中运行它们。
 
-# 分布式测试
+## 分布式测试
 
 跨浏览器测试的一种解决方案是将问题外包给专门的浏览器集群。
 
@@ -3747,15 +3466,15 @@ TestSwarm 并没有使用插件和扩展在低层与浏览器集成，而是采�
 
 另一种方法是使用像 Sauce Labs 这样的公司在云端管理并运行所有浏览器。只需上传 Selenium 测试，他们的服务就会完成其余工作，在不同的浏览器和平台上运行测试，确保它们全部通过。
 
-# 提供支持
+## 提供支持
 
 对于你为应用程序编写的许多测试，可能会存在 Bug。最好的做法是接受这个事实，并为用户遇到 Bug 和错误做好准备。为用户提供一种提交 Bug 报告的方法，并建立工单系统来管理支持请求。
 
-# 检查器 (Inspectors)
+## 检查器 (Inspectors)
 
 JavaScript 的开发和调试已经从过去的 `alert()` 调用进步了许多。大多数主流浏览器现在都都包含了强大的元素检查器和调试器，这极大地简化并改进了 Web 开发。接下来我们将介绍两个主要的检查器，但通用概念应该适用于你选择使用的任何检查器。
 
-# 网页检查器 (Web Inspector)
+## 网页检查器 (Web Inspector)
 
 Web Inspector 在 Safari 和 Google Chrome 浏览器中均可用。检查器的界面在两个浏览器之间略有不同，但功能相当一致。
 
@@ -3769,20 +3488,15 @@ Chrome 在“查看”工具下有一个开发者工具栏，可以使用它来�
 
 图 9-8 所示的 Web Inspector 是一个非常有用的工具，让你能够检查元素、调试 JavaScript 等。我们将详细介绍它的功能，但这里是其功能的概览：
 
-- 元素 (Elements)
-- 资源 (Resources)
-- 网络 (Network)
-- 脚本 (Scripts)
-
-# 时间线 (Timeline)
-
-渲染详细视图
-
-# 审计 (Audits)
-
-代码和内存 (Memory)
-
-# 控制台 (Console)
+* 元素 (Elements)
+* 资源 (Resources)
+* 网络 (Network)
+* 脚本 (Scripts)
+* 时间线 (Timeline)
+* 渲染详细视图
+* 审计 (Audits)
+* 代码和内存 (Memory)
+* 控制台 (Console)
 
 执行 JavaScript 和日志
 
@@ -3790,9 +3504,9 @@ Chrome 在“查看”工具下有一个开发者工具栏，可以使用它来�
 
 图 9-8. Safari 的检查器
 
-# 火虫 (Firebug)
+## 火虫 (Firebug)
 
-Firefox 原生不包含检查器，但有一个非常出插件可以完成这项工作：见图 9-9。
+Firefox 原生不包含检查器，但有一个非常出色的插件可以完成这项工作：见图 9-9。
 
 ![](img/70056c57235f980195f2d4ad3ecd9a7b_145_1.png)
 
@@ -3800,12 +3514,11 @@ Firefox 原生不包含检查器，但有一个非常出插件可以完成这项
 
 你会发现尽管各种组件与 Web Inspector 中的名称不同，但它们的功能非常相似：
 
-- HTML
-- CSS
-- Script
-- Net
-
-# 控制台 (Console)
+* HTML
+* CSS
+* Script
+* Net
+* 控制台 (Console)
 
 Firebug 团队开发了一个不依赖 Firefox 的版本——Firebug Lite。它拥有 Firebug 的大部分功能，以及相同的外观，并且兼容所有主流浏览器。Firebug Lite 对于 Internet Explorer 特别有用（它比 IE 内置工具好得多）。Firebug Lite 不需要任何安装，可以通过简单的脚本标签添加到网页中：
 
@@ -3815,8 +3528,6 @@ Firebug 团队开发了一个不依赖 Firefox 的版本——Firebug Lite。它
 
 或者，你可以从 Firebug Lite 网站安装收藏脚本（bookmarklet）。
 
-
-
 ```javascript
 var slice = Array.prototype.slice;
 var args = slice.call(arguments, 0);
@@ -3825,7 +3536,7 @@ console.log.apply(console, args);
 };
 ```
 
-App.log() 函数会在其参数前面加上字符串 "App"，然后将调用传递给 console.log()。
+`App.log()` 函数会在其参数前面加上字符串 "App"，然后将调用传递给 `console.log()`。
 
 在用控制台（console）进行日志记录时，请记住变量 `console` 可能未被定义。在不支持 `console` 的浏览器中（例如 Internet Explorer 或没有安装 Firefox 的 Firefox），`console` 对象将未定义，如果你尝试使用它会导致错误。这就是在应用程序内部记录日志时使用像 `App.log()` 这样的代理函数的好处。
 
@@ -3840,7 +3551,7 @@ console.trace();
 
 ## 控制台辅助函数 (Console Helpers)
 
-控制台还包含了一些快捷键和辅助函数，以节省输入时间。例如，$0$ 到 $4 变量包含了 Web Inspector 或 Firebug 中当前和之前的三个选中的节点。相信我，当你想要访问并操作元素时，这极极有用处：
+控制台还包含了一些快捷键和辅助函数，以节省输入时间。例如，`$0` 到 `$4` 变量包含了 Web Inspector 或 Firebug 中当前和之前的三个选中的节点。相信我，当你想要访问并操作元素时，这极其有用处：
 
 ```javascript
 // $0 是当前选中的元素
@@ -3858,7 +3569,7 @@ jquery($0).css({background: "black"});
 $("user").addEventListener("click", function() { /* ... */ });
 ```
 
-`$` 函数返回匹配给定 CSS 选择器的元素数组。这与 `document.querySelectorAll()` 类似。同样地，如果你使用 Prototype 或 MooTools，这些库会覆盖此函数：
+`$$` 函数返回匹配给定 CSS 选择器的元素数组。这与 `document.querySelectorAll()` 类似。同样地，如果你使用 Prototype 或 MooTools，这些库会覆盖此函数：
 
 ```javascript
 // 选择类名为 .users 的元素
@@ -3941,15 +3652,25 @@ var test = function(){
 128 | 第 9 章：测试与调试
 
 | Elements | Resources | Scripts | Timeline | Profiles | Storage | Search Resources |
+
 |---|---|---|---|---|---|---|---|
+
 | All | Documents | Stylesheets | Images | Scripts | XHR | Fonts | Other |
+
 | /stylesheets | 29ms | 57ms | 86ms | 114ms | 143ms | 200ms | 228ms | 257ms | 285ms |
+
 | screen.css | /stylesheets | | | | | | | | |
+
 | highlight.css | /stylesheets | | | | | | | | |
+
 | print.css | /stylesheets | | | | | | | | |
+
 | query.js | /scripts | | | | | | | | |
+
 | jasmine.png | /images | | | | | | | | |
+
 | firebug.png | /images | | | | | | | | |
+
 | test.png | /images | | | | | | | | |
 
 图 9-12. 使用 Web Inspector 分析网络请求
@@ -3988,11 +3709,7 @@ console.profileEnd();
 
 ![](img/70056c57235f980195f2d4ad3ecd9a7b_152_0.png)
 
-
-
-
-
-## 第10 章：部署
+## 第 10 章：部署
 
 妥善部署你的 Web 应用程序与开发本身同样重要；如果你构建了下一个 Facebook，但它的加载速度慢到让用户无法实际使用，那么构建也就毫无意义。用户希望你的网站尽可能可靠、快速，并具有良好的可用性。部署 JavaScript 和 HTML 文件听起来很简单——毕竟它们终是静态资源——但实际上有很多需要做的。这是 Web 应用程序构建过程中经常被忽视的部分。
 
@@ -4046,9 +3763,9 @@ HTTP 1.1 引入了一类新的头部 `Cache-Control`，为开发者提供更高�
 
 查看完整的选项列表，请访问规范。你现在可能使用的列在下方：
 
-- max-age: 指定资源被视为新鲜的最长时间（以秒为单位）。与绝对的 `Expires` 不同，此指令是相对于请求时间的。
-- no-store: 将资源标记为可缓存。默认情况下，它对动态内容关闭的。
-- must-revalidate: 关闭缓存。
+* max-age: 指定资源被视为新鲜的最长时间（以秒为单位）。与绝对的 `Expires` 不同，此指令是相对于请求时间的。
+* no-store: 将资源标记为可缓存。默认情况下，它对动态内容关闭的。
+* must-revalidate: 关闭缓存。
 
 在资源上添加 `Last-Modified` 头部也有帮助。通过 `If-Modified-Since` 头部，服务器可以返回 304（未修改）状态：
 
@@ -4097,8 +3814,6 @@ JavaScript 代码压缩在不改变任何功能的情况下，减少脚本中的
 压缩的额外益处是混淆你的代码。虽然确实，有足够动力的人可能可以重建它，但对于普通观察者来说，这是一道门槛。
 
 市场上有很多压缩库，但我建议你选择一个带有可以解释代码的 JavaScript 引擎的库。YUI Compressor 是我喜欢的，因为它维护良好且支持良好。由 Yahoo! 工程师 Julien Lecom 创建，他的目标是比对源代码进行智能优化更进一步缩小 JavaScript 文件体积。假设我们有以下函数：
-
-
 
 ```javascript
 function per(value, total) {
@@ -4150,10 +3865,10 @@ Google 为许多流行的开源 JavaScript 库提供了免费的 CDN 和加载�
 
 ```html
 <!-- jQuery 库的最小化版本 -->
-<script src="/ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
 
 <!-- jquery UI 的最小化版本 -->
-<script src="/ajax.googleapis.com/ajax/libs/jqueryui/1.8.6/jqueryui-min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.6/jqueryui-min.js"></script>
 ```
 
 你会注意到，在示例中我们没有指定一个为人知的技巧，而是使用了 `//`。这确保了脚本是通过与宿主页面相同的协议获取的。换句话说，如果你的页面是通过 HTTPS 安全加载的，那么脚本文件也将如此，从而消除任何安全警告。不带方案的相对 URL 是有效的且符合 RTF 规范的。更重要的是，它得到了全方位的支持；协议相关的 URL 在 Internet Explorer 3.0 中也能工作。
@@ -4222,15 +3937,13 @@ var User = Spine.Class.create({
 var User = User.init("Martina");
 ```
 
-
-
-
-
 ## 扩展类 (Extending Classes)
 
-在创建期间设置类和实例属性的同时，你还可以使用 `include()` 和 `extend()` 并传入一个对象字量：
 
-```
+
+在创建期间设置类和实例属性的同时，你还可以使用 `include()` 和 `extend()` 并传入一个对象字面量：
+
+```javascript
 User.include({
   // 实例属性
 });
@@ -4240,7 +3953,7 @@ User.extend({
 });
 ```
 
-`include()` 和 `extend()` 为模块铺了道路，模块是可以多次包含的可复代码段：
+`include()` 和 `extend()` 为模块铺平了道路，模块是可以多次包含的可复用代码段：
 
 ```javascript
 var ORM = {
@@ -4255,7 +3968,7 @@ var ORM = {
 User.extend(ORM);
 ```
 
-当模块被包含或扩展时，你可以接收到一个回调。在上面的示例中，当调用 `User.extend()` 且上下文为 `User` 时，`extend` 函数将被调用。同样，如果模块有一个 `included` 属性，当该模块被包含在类内部时，它会被调用。
+当模块被包含或扩展时，你可以接收到一个回调。在上面的示例中，当调用 `User.extend()` 且上下文为 `User` 时，`extended` 函数将被调用。同样，如果模块有一个 `included` 属性，当该模块被包含在类内部时，它会被调用。
 
 由于我们使用的是基于原型的继承，我们添加到类中的任何属性都将在运行时动态反映到所有子类中：
 
@@ -4288,7 +4001,7 @@ var User = Spine.Class.create({
 
 ## 上下文 (Context)
 
-上下文的变化在 JavaScript 程序中随处可见，因此 `Spine.Class` 包含了一些控制作用的实用方法。为了演示这个问题，请看这个示例：
+上下文的变化在 JavaScript 程序中随处可见，因此 `Spine.Class` 包含了一些控制作用域的实用方法。为了演示这个问题，请看这个示例：
 
 ```javascript
 var Controller = Spine.Class.create({
@@ -4314,6 +4027,7 @@ var Controller = Spine.Class.create({
     $("#destroy").click(this.proxy(this.destroy));
   },
   destroy: function() {
+  }
 });
 ```
 
@@ -4331,11 +4045,11 @@ var Controller = Spine.Class.create({
 });
 ```
 
-`proxyAll()` 接收多个函数名，并在调用时，它将重写它们，使用当前作用域对函数进行代理。这将确保 `destroy()` 或 `render()` 始终在本地上下执行。
+`proxyAll()` 接收多个函数名，并在调用时，它将重写它们，使用当前作用域对函数进行代理。这将确保 `destroy()` 或 `render()` 始终在本地上下文执行。
 
 ## 事件 (Events)
 
-事件是 Spine 的核心，并且经常内部使用。Spine 的功能包含在 `Spine.Events` 模块中，它可以包含任何需要的地方。例如，让我们为一个 Spine 类添加一些事件支持：
+事件是 Spine 的核心，并且经常内部使用。Spine 的功能包含在 `Spine.Events` 模块中，它可以包含在任何需要的地方。例如，让我们为一个 Spine 类添加一些事件支持：
 
 ```javascript
 var User = Spine.Class.create();
@@ -4344,9 +4058,9 @@ User.extend(Spine.Events);
 
 `Spine.Events` 提供了三个处理事件的函数：
 
-- bind(eventName, callback)
-- trigger(eventName, [*data])
-- unbind(eventName, [callback])
+- `bind(eventName, callback)`
+- `trigger(eventName, [*data])`
+- `unbind(eventName, [callback])`
 
 如果你用过 jQuery 的事件 API，这看起来会让你非常熟悉。例如，让我们在 `User` 类上绑定并触发一个事件：
 
@@ -4372,11 +4086,11 @@ User.bind("countChange", function(count) {
 User.trigger("countChange", 5);
 ```
 
-你通常会将 Spine 的事件与数据绑定结合使用，将你的应用程序模型（models）与其视图（views）连接起来。我们将在后面第156页的“构建联系人管理器”部分详细介绍这一点。
+你通常会将 Spine 的事件与数据绑定结合使用，将你的应用程序模型与其视图连接起来。我们将在后面第156页的“构建联系人管理器”部分详细介绍这一点。
 
 ## 模型 (Models)
 
-如果你看一眼 Spine 的源码，你会发现它大部分内容都在处理模型（models），这是完全合理的——模型是任何 MVC 应用的核心部分。模型负责存储和操作你的应用程序数据，而 Spine 通过提供一个完整的 ORM 简化了这一点。
+如果你看一眼 Spine 的源码，你会发现它大部分内容都在处理模型，这是完全合理的——模型是任何 MVC 应用的核心部分。模型负责存储和操作你的应用程序数据，而 Spine 通过提供一个完整的 ORM 简化了这一点。
 
 通过 ID 获取只是获取它们的一种方式。通常情况下，遍历所有记录或返回过滤后的子集是很有用的。Spine 允许你使用 `all()`、`select()` 和 `each()` 来实现这一点：
 
@@ -4391,19 +4105,21 @@ var pending = Task.select(function(task){ return !task.done; });
 Task.each(function(task){ /* ... */ });
 ```
 
-此外，Spine 还提供了了一些辅助方法通过属性查找记录：
+此外，Spine 还提供了一些辅助方法通过属性查找记录：
 
+```javascript
 // 查找具有指定属性值的第一个任务
 Task.findByAttribute(name, value); // Object
 
 // 查找所有具有指定属性值的任务
 Task.findAllByAttribute(name, value); // [Object]
+```
 
 ## 事件 (Events)
 
 你可以绑定模型事件，以便在记录更改时获取回调：
 
-如果一个记录被触发，它将传递传递给事件回调。你可以为模型绑定监听器以接收每个记录的全局回调，你也可以为特定记录绑定监听器：
+如果一个记录被触发，它将传递给事件回调。你可以为模型绑定监听器以接收每个记录的全局回调，你也可以为特定记录绑定监听器：
 
 ```javascript
 Task.bind("save", function(record) {
@@ -4419,20 +4135,13 @@ Task.first().updateAttributes({name: "Tea with the Queen"});
 
 虽然你显然可以使用 `trigger()` 创建自定义事件，但以下事件是可用的：
 
-save
-
-记录已保存（无论是创建或更新）
-
-
-
-
-
-- update: 记录已更新
-- create: 记录已创建
-- destroy: 记录已销毁
-- change: 以上任一操作；记录已创建/更新/销毁
-- refresh: 所有记录失效并被替换
-- error: 验证失败
+- `save`：记录已保存（无论是创建或更新）
+- `update`：记录已更新
+- `create`：记录已创建
+- `destroy`：记录已销毁
+- `change`：以上任一操作；记录已创建/更新/销毁
+- `refresh`：所有记录失效并被替换
+- `error`：验证失败
 
 你会发现，在创建应用程序时，模型事件至关重要，特别是在将模型绑定到视图时。
 
@@ -4440,7 +4149,7 @@ save
 
 验证通过最简单的方式实现：重写模型实例的 `validate()` 函数。每当保存记录时，都会调用 `validate()`。如果 `validate()` 返回了任何内容，则验证将失败。否则，保存将无阻地继续并持久化记录。包含到本地内存：
 
-```
+```javascript
 Task.include({
   validate: function() {
     if (!this.name) return "Name required"
@@ -4450,7 +4159,7 @@ Task.include({
 
 如果验证失败，你应该从 `validate()` 中返回一个带有说明的字符串。使用此消息通知用户发生了什么以及如何纠正：
 
-```
+```javascript
 Task.bind("error", function(record, msg) {
   // 非常基础的错误通知
   alert("Task didn't save: " + msg);
@@ -4465,7 +4174,7 @@ Spine 的记录始终持久化在内存中，但你可以选择不同的存储�
 
 使用 Local Storage 极其简单。只需包含 `spine.model.local.js` JavaScript 文件，并使用 `Spine.Model.Local` 扩展你的模型即可：
 
-```
+```javascript
 // 使用本地存储保存
 Task.extend(Spine.Model.Local);
 Task.fetch();
@@ -4473,30 +4182,30 @@ Task.fetch();
 
 记录不会自动从浏览器的本地存储中检索，因此你需要调用 `fetch()` 来为你的模型填充预存在的数据。这通常在应用程序中其他所有初始化完成后完成。一旦模型被填充了新数据，就会触发 `refresh` 事件：
 
-```
+```javascript
 Task.bind("refresh", function(){
  // 新任务！
  renderTemplate(Task.all());
 });
 ```
 
-使用 Ajax 持久化也类似；只需包含 `spine.model.ajax` js 脚本并使用 `Spine.Model.Ajax` 扩展你的模型：
+使用 Ajax 持久化也类似；只需包含 `spine.model.ajax.js` 脚本并使用 `Spine.Model.Ajax` 扩展你的模型：
 
-```
+```javascript
 // 保存到服务器
 Task.extend(Spine.Model.Ajax);
 ```
 
 默认情况下，Spine 会检测模型名称并使用一些基本的复数规则来生成 URL。对于上面的示例，Task 模型的 URL 将是 `/tasks`。你可以通过在类上提供自己的 `url` 属性来重写此默认行为：
 
-```
+```javascript
 // 添加自定义 URL
 Task.extend({
  url: "/tasks"
 });
 ```
 
-```
+```javascript
 // 从服务器获取新任务
 Task.fetch();
 ```
@@ -4522,7 +4231,9 @@ Content-Length: 66
 Content-Type: application/json
 ```
 
+```json
 {"id": "44E1DB33-2455-4728-AEA2-ECBD724B5E7B", "name": "Buy eggs"}
+```
 
 同样，销毁记录将触发对服务器的 DELETE 请求，而更新记录将触发 PUT 请求。对于 PUT 和 DELETE 请求，记录的 ID 被引用在 URL 中：
 
@@ -4534,7 +4245,9 @@ Content-Length: 71
 Content-Type: application/json
 ```
 
+```json
 {"id": "44E1DB33-2455-4728-AEA2-ECBD724B5E7B", "name": "Buy more eggs"}
+```
 
 Spine 在 Ajax 同步方面的数据比大多数其他库都多。它在记录于客户端保存后向服务器发送请求，因此客户端永远不需要等待响应。你的客户端与服务器完全解耦——也就是说，它不需要服务器存在即可运行。
 
@@ -4544,12 +4257,7 @@ Spine 在 Ajax 同步方面的数据比大多数其他库都多。它在记录�
 
 # 控制器
 
-每当验证失败时，模型的 `error` 事件就会被触发。回调将接收无效的记录和错误消息。
-
-
-
-
-事件对象会被传递给回调函数，这在示例中非常有用，因为我们可以借知道按了哪个键。此外，可以从事件的 `target` 属性获取目标元素。
+事件对象会被传递给回调函数，这在示例中非常有用，因为我们可以借此知道按了哪个键。此外，可以从事件的 `target` 属性获取目标元素。
 
 ## 控制器事件
 
@@ -4567,12 +4275,11 @@ var Sidebar = Spine.Controller.create({
   click: function(e) {
     this.trigger("change", $(e.target).attr("data-name"));
   }
-  //
 });
 ```
 
 ```javascript
-var Sidebar = Spine.bind({init: $("#sidebar")});
+var Sidebar = Spine.Controller.init({el: $("#sidebar")});
 sidebar.bind("change", function(name) {
   console.log("Sidebar changed:", name);
 });
@@ -4586,22 +4293,16 @@ Spine 允许你在全局范围内绑定触发事件。这是 PubSub（发布/订
 
 ```javascript
 var Sidebar = Spine.Controller.create({
-  proxied: ["change"]
-});
-```
-
-```javascript
-init: function(){
-  this.App.bind("change", this.change);
-},
-```
-
-```javascript
-change: function(name){ /* ... */ }
+  proxied: ["change"],
+  init: function(){
+    this.App.bind("change", this.change);
+  },
+  change: function(name){ /* ... */ }
 });
 ```
 
 Spine 的控制器将 `Spine.App` 别名为简短的 `this.App`，这为你节省了一些输入量。
+
 从上面的示例中可以看出，Sidebar 控制器绑定到了全局事件 `change`。其他控制器或脚本可以触发此事件，并传递任何需要的数据：
 
 ```javascript
@@ -4612,31 +4313,25 @@ Spine.App.trigger("change", "messages");
 
 现在我们已经涵盖了控制器中所有的可用选项，让我们来看一些典型的用例：
 
-渲染模式（Render Pattern）是绑定模型和视图的一种非常有效的方法。当控制器实例化时，它会在相关的模型上添加一个事件监听器，并在模型刷新或更改时调用回调函数。该回调将更新 `el`，通常是用渲染后的模板替换其内容：
+渲染模式是绑定模型和视图的一种非常有效的方法。当控制器实例化时，它会在相关的模型上添加一个事件监听器，并在模型刷新或更改时调用回调函数。该回调将更新 `el`，通常是用渲染后的模板替换其内容：
 
 ```javascript
 var Tasks = Spine.Controller.create({
   init: function() {
     Task.bind("refresh change", this.proxy(this.render));
   },
-},
-```
-
-```javascript
-template: function(items) {
-  return("#tasksTemplate").tpl(items));
-},
-```
-
-```javascript
-render: function() {
-  this.el.html(this.template(Task.all()));
-}
+  template: function(items) {
+    return $("#tasksTemplate").tpl(items);
+  },
+  render: function() {
+    this.el.html(this.template(Task.all()));
+  }
 });
 ```
 
 这种简单但粗暴的数据绑定方法会在每单条记录发生变化时都更新每个元素。对于简单且小的列表来说这是没问题的，但你可能需要对单个元素进行更多控制，例如为它们添加事件处理器。
-这就是元素模式（Element Pattern）登场的地方。
+
+这就是元素模式登场的地方。
 
 ## 元素模式
 
@@ -4647,83 +4342,54 @@ var TasksItem = Spine.Controller.create({
   // 将点击事件委托给本地处理器
   events: {
     "click": "click"
-  }
+  },
+  // 确保函数具有正确的上下文
+  proxied: ["render", "remove"],
+  // 将事件绑定到记录
+  init: function() {
+    this.item.bind("update", this.render);
+    this.item.bind("destroy", this.remove);
+  },
+  // 渲染元素
+  render: function(item) {
+    if (item) this.item = item;
+    this.el.html(this.template(this.item));
+    return this;
+  },
+  // 使用模板，在此处通过 jQuery.tpl
+  template: function(items) {
+    return $("#tasksTemplate").tpl(items);
+  },
+  // 在元素被销毁后调用
+  remove: function() {
+    this.el.remove();
+  },
+  // 我们对事件有精细的控制，
+  // 也能轻松访问记录
+  click: function() { /* ... */ }
 });
-```
 
-```javascript
-// 确保函数具有正确的上下文
-proxied: ["render", "remove"],
-
-// 将事件绑定到记录
-init: function() {
-  this.item.bind("update", this.render);
-  this.item.bind("destroy", this.remove);
-}
-```
-
-```javascript
-// 渲染元素
-render: function(item) {
-  if (item) this.item = item;
-
-  this.el.html(this.template(this.item));
-  return this;
-}
-```
-
-```javascript
-// 使用模板，在此处通过 jQuery.js
-template: function(items) {
-  return($("#tasksTemplate").tpl(items));
-}
-```
-
-```javascript
-// 在元素被销毁后调用
-remove: function() {
-  this.el.remove();
-}
-```
-
-```javascript
-// 我们对事件有精细的控制，
-// 也能轻松访问记录
-click: function() { /* ... */ }
-```
-
-```javascript
 var Tasks = Spine.Controller.create({
   proxied: ["addAll", "addOne"],
-
   init: function() {
     Task.bind("refresh", this.addAll);
     Task.bind("create", this.addOne);
   },
-
-  addOne: function() {
+  addOne: function(item) {
     var task = TasksItem.init({item: item});
     this.el.append(task.render().el);
   },
-
-  All: function() {
+  addAll: function() {
     Task.each(this.addOne);
   }
-}
+});
 ```
-
-在上面的示例中，`Tasks` 负责在记录初始创建时添加，而 `TasksItem` 负责记录的更新。
-
-元素模式本质上赋予你与渲染模式相同的功能，但提供了更多的控制。它由两个控制器组成：一个控制项目集合，另一个处理每个单独的项目。让我们直接深入代码，让你直观了解它是如何工作的：
 
 ## 侧边栏控制器
 
 现在来看看 Sidebar 控制器，它负责列出联系人并跟踪当前的一个。每当联系人发生变化时，Sidebar 控制器必须更新自己以反映这些变化。此外，侧边栏有一个“新建联系人”按钮，它会监听该按钮并在点击时创建新的空白项。
 
-这是一个完整的控制器代码。初看这部分代码可能会让人压力——尤其是如果你不熟悉 Spine 的话——但它有大量的注释，所以仔细观察就能理解：
-
-
-
+这是一个完整的控制器代码。初看这部分代码可能会让人感到压力——尤其是如果你不熟悉 Spine 的话——但它有大量的注释，所以仔细观察就能理解：
 
 ```javascript
 // When the current contact changes, i.e., when a new contact is created
@@ -4734,7 +4400,6 @@ this.App.bind("show:contact", this.list.change);
 ```javascript
 // Renderer whenever contacts are populated or changed
 Contact.bind("refresh change", this.render);
-};
 ```
 
 ```javascript
@@ -4750,7 +4415,6 @@ create: function() {
   var item = Contact.create();
   this.App.trigger("edit:contact", item);
 }
-));
 ```
 
 你会注意到控制器的 `init()` 函数正在使用一个名为 `Spine.List` 的类，这是我们还没有介绍过的。`Spine.List` 是一个非常适合生成记录列表的实用工具。此外，`Spine.List` 会跟踪当前选中的条目，并在用户选择不同的条目时通过更改事件通知监听者。
@@ -4771,7 +4435,7 @@ create: function() {
 </script>
 ```
 
-我们使用 `jQuery.tpl` 进行模板化，如果你读过第 5 章，你应该会熟悉它。`Spine.List` 将使用此模板来渲染每个条目，如果它与当前选中的条目相关，它将在 `li>` 上设置 `current` 类。
+我们使用 `jQuery.tpl` 进行模板化，如果你读过第 5 章，你应该会熟悉它。`Spine.List` 将使用此模板来渲染每个条目，如果它与当前选中的条目相关，它将在 `li` 上设置 `current` 类。
 
 # Contacts Controller (Contacts Controller)
 
@@ -4779,7 +4443,6 @@ create: function() {
 
 ```javascript
 jQuery(function(){
-
   window.Contacts = Spine.Controller.create({
     // 填充内部元素属性
     elements: {
@@ -4787,40 +4450,32 @@ jQuery(function(){
       ".show .content": "showContent",
       ".edit": "editEl"
     },
-
     proxied: ["render", "show"],
-
     init: function() {
       // 初始视图显示联系人
       this.show();
-
       // 当联系人更改时渲染视图
       Contact.bind("change", this.render);
-
       // 绑定全局事件
       this.App.bind("show:contact", this.show);
     },
-
     change: function(item) {
       this.current = item;
       this.render();
     },
-
     render: function() {
       this.showContent.html($("#contactTemplate").tpl(this.current));
     },
-
-  show: function(item) {
-    if (item && item.model) this.change(item);
-
-    this.showEl.show();
-    this.editEl.hide();
-  }
+    show: function(item) {
+      if (item && item.model) this.change(item);
+      this.showEl.show();
+      this.editEl.hide();
+    }
   });
 });
 ```
 
-每当在侧边栏中选择一个新的联系人时，全局的 `show:contact` 事件就会触发。我们在 `Contacts` 中绑定了此事件，执行 `show()` 函数，并向其传递新选的联系人。我们重新渲染 `showCont` <div>，用当前选中的联系人替换它。
+每当在侧边栏中选择一个新的联系人时，全局的 `show:contact` 事件就会触发。我们在 `Contacts` 中绑定了此事件，执行 `show()` 函数，并向其传递新选的联系人。我们重新渲染 `showContent` <div>，用当前选中的联系人替换它。
 
 你可以看到我们引用了 `#contactTemplate` 模板，它将向我们的用户显示联系人的当前联系信息。让我们把该模板添加到页面中：
 
@@ -4828,9 +4483,8 @@ jQuery(function(){
 <script type="text/x-jquery-tmpl" id="contactTemplate">
 <label>
   <span>姓名</span>
-  ${first_name} ${$last_name}
+  ${first_name} ${last_name}
 </label>
-
 <label>
   <span>邮箱</span>
   {{if email}}
@@ -4842,60 +4496,51 @@ jQuery(function(){
 </script>
 ```
 
-我们现在已经拥有了显示联系人的功能，但如何编辑和删除它们呢？让我们重写 `Contacts` 控制器来实现这些功能。主要的区别在于，我们将在点击 `.opt Edit` 和 `.optSave` 编辑器时，在“显示”和“编辑”两种应用状态之间切换。我们还将在队列中加入一个新模板：`#editContactTemplate`。在保存记录时，我们将读取编辑表单的输入并更新记录的属性：
+我们现在已经拥有了显示联系人的功能，但如何编辑和删除它们呢？让我们重写 `Contacts` 控制器来实现这些功能。主要的区别在于，我们将在点击 `.optEdit` 和 `.optSave` 时，在“显示”和“编辑”两种应用状态之间切换。我们还将加入一个新模板：`#editContactTemplate`。在保存记录时，我们将读取编辑表单的输入并更新记录的属性：
 
 ```javascript
-jquery(function() {
+jQuery(function() {
   window.Contacts = Spine.Controller.create({
     // 填充元素属性
     elements: {
-      "show": "showEl",
-      "edit": "editEl",
-      "show .content": "showContent",
-      "edit .content": "editContent"
+      ".show": "showEl",
+      ".edit": "editEl",
+      ".show .content": "showContent",
+      ".edit .content": "editContent"
     },
-
     // 委托事件
     events: {
       "click .optEdit": "edit",
       "click .optDelete": "destroy",
       "click .optSave": "save"
     },
-
     proxied: ["render", "show"],
-
     init: function() {
       this.show();
       Contact.bind("change", this.render);
       this.App.bind("show:contact", this.show);
     },
-
     change: function(item) {
       this.current = item;
       this.render();
     },
-
     render: function() {
       this.showContent.html($("#contactTemplate").tpl(this.current));
     },
-
     show: function(item) {
       if (item && item.model) this.change(item);
       this.showEl.show();
       this.editEl.hide();
     },
-
     edit: function(item) {
       this.current = item;
       this.editContent.html($("#editContactTemplate").tpl(this.current));
       this.showEl.hide();
       this.editEl.show();
     },
-
     destroy: function() {
       // 删除逻辑...
     },
-
     save: function() {
       var attrs = $("#editContactForm").serialize();
       this.current.update(attrs);
@@ -4903,37 +4548,10 @@ jquery(function() {
   });
 });
 ```
-*(注：由于原文代码块在结尾不完整，翻译时保持了逻辑结构的的对应性)*
-
-你可以看到我们引用了 `#contactTemplate` 模板，它将向我们的用户显示联系人的当前联系信息。让我们把该模板添加到页面中：
-
-```html
-<script type="text/x-jquery-tmpl" id="contactTemplate">
-<label>
-  <span>姓名</span>
-  ${first_name} ${$last_name}
-</label>
-
-<label>
-  <span>邮箱</span>
-  {{if email}}
-    ${email}
-  {{else}}
-    <div class="empty"></div>
-  {{/if}}
-</label>
-</script>
-```
-
-我们现在已经拥有了显示联系人的功能，但如何编辑和删除它们呢？让我们重写 `Contacts` 控制器来实现这些功能。主要的区别在于，我们将在点击 `.opt Edit` 和 `.optSave` 编辑器时，在“显示”和“编辑”两种应用状态之间切换。我们还将在队列中加入一个新模板：`#editContactTemplate`。在保存记录时，我们将读取编辑表单的输入并更新记录的属性：
-
-*(注：此处根据原文提供的代码片段进行了结构性对齐，保持了翻译逻辑)*
 
 ## Models（模型）
 
 让我们从可能是 MVC 中最关键的组件开始：模型。模型存储数据的地方。将模型视为对事实的抽象。
-
-
 
 应用程序的原始数据，添加工具函数和事件。你可以通过调用 Backbone.Model 上的 `extend()` 函数来创建 Backbone 模型：
 
@@ -4945,13 +4563,12 @@ var User = Backbone.Model.extend({
 });
 ```
 
-`extend()` 的第一个参数接收一个对象，该对象将成为模型的实例属性。第二个参数是一个可选的类属性哈希（hash）。你可以多次调用 `extend()` 来生成模型的子类，它们继承了所有所有的类属性和实例属性：
+`extend()` 的第一个参数接收一个对象，该对象将成为模型的实例属性。第二个参数是一个可选的类属性哈希。你可以多次调用 `extend()` 来生成模型的子类，它们继承了所有的类属性和实例属性：
 
 ```javascript
 var User = Backbone.Model.extend({
   // 实例属性
   instanceProperty: "foo",
-
   // 类属性
   classProperty: "bar"
 });
@@ -4993,27 +4610,25 @@ assertEqual(user.attributes, {name: "Donna Moss"});
 
 `set(attrs, [options])` 接收一个应用于实例的属性哈希，而 `get(attr)` 接收单个参数——属性名称——并返回其值。实例通过一个名为 `attributes` 的本地哈希来跟踪其当前属性。你不应该直接操作它；就像 `set()` 和 `get()` 函数一样，确保触发了适当的验证和事件。
 
-你可以使用 `validate()` 函数验证实例属性。默认情况下，它是未定义的（undefined），你可以重写它来添加任何自定义验证逻辑：
+你可以使用 `validate()` 函数验证实例属性。默认情况下，它是未定义的，你可以重写它来添加任何自定义验证逻辑：
 
 ```javascript
 var User = Backbone.Model.extend({
   validate: function(atts) {
-    if (atts.email || atts.email.length < 3) {
+    if (!atts.email || atts.email.length < 3) {
       return "email must be at least 3 chars";
     }
   }
 });
 ```
 
-如果模型和属性有效，则不要从 `validate()` 返回任何内容；如果属性无效，你可以返回一个描述错误的字符串或一个 `Error` 实例。如果验证失败，`set()` 和 `save()` 函数将停止执行并触发一个 `Error` 事件。你可以绑定到错误事件，以确保在任何验证失败时收到通知：
+如果模型和属性有效，则不要从 `validate()` 返回任何内容；如果属性无效，你可以返回一个描述错误的字符串或一个 `Error` 实例。如果验证失败，`set()` 和 `save()` 函数将停止执行并触发一个 `error` 事件。你可以绑定到错误事件，以确保在任何验证失败时收到通知：
 
 ```javascript
 var user = new User;
-
 user.bind("error", function(model, error) {
   // 处理错误
 });
-
 user.set({email: "ga"});
 ```
 
@@ -5021,7 +4636,7 @@ user.set({email: "ga"});
 // 或者在特定的 set 操作上添加错误处理器
 user.set({email: "ga"}, {error: function(model,error) {
   // ...
-});
+}});
 ```
 
 使用默认哈希指定默认属性。在创建模型实例时，任何未指定的属性都将被设置为它们的默认值：
@@ -5040,12 +4655,12 @@ assertEquals((new Chat).get("from"), "anonymous");
 
 ## 集合
 
-在 Backbone 中，模型实例的数组存储在集合（collections）中。可能无法立即看出为什么将集合与模型分离是有用的，但实际上这是一个非常常见的场景。例如，如果你在重新创建一个 Twitter，会有两个集合：Followers（粉丝者）和 Followees（关注者），它们都由 User 实例填充。虽然两个集合都由同一个模型填充，但每个集合都包含一个不同的 User 实例数组；因此，它们是独立的集合。
+在 Backbone 中，模型实例的数组存储在集合中。可能无法立即看出为什么将集合与模型分离是有用的，但实际上这是一个非常常见的场景。例如，如果你在重新创建一个 Twitter，会有两个集合：Followers（粉丝者）和 Followees（关注者），它们都由 User 实例填充。虽然两个集合都由同一个模型填充，但每个集合都包含一个不同的 User 实例数组；因此，它们是独立的集合。
 
 像模型一样，你可以通过扩展 `Backbone.Collection` 来创建一个集合：
 
 ```javascript
-var users = Backbone.Collection.extend({
+var Users = Backbone.Collection.extend({
   model: User
 });
 ```
@@ -5055,17 +4670,15 @@ var users = Backbone.Collection.extend({
 在创建集合时，你可以可选地传递一个初始模型数组。与 Backbone 的方式类似，如果你定义了 `initialize` 函数，它将在实例化时被调用：
 
 ```javascript
-var users = new Users({name: "Toby Ziegler"}, {name: "Josh Lyman"});
+var users = new Users([{name: "Toby Ziegler"}, {name: "Josh Lyman"}]);
 ```
 
 或者，你可以使用 `add()` 函数向集合中添加模型：
 
 ```javascript
 var users = new Users();
-
 // 添加单个模型
 users.add({name: "Donna Moss"});
-
 // 或者添加一个模型数组
 users.add([{name: "Josiah Bartlet"}, {name: "Charlie Young"}]);
 ```
@@ -5108,14 +4721,13 @@ Backbone 在渲染视图方面非常出色。你可以自己生成元素，也�
 new TodoView({model: new Todo()});
 ```
 
-每个视图都有一个 `render()` 函数，默认情况下这是一个空函数（no-op）。每当视图需要重绘时，都应该调用此函数。你应该用特定于你视图的功能来重写此函数，处理模板并更新 `el` 中的任何 HTML：
+每个视图都有一个 `render()` 函数，默认情况下这是一个空函数。每当视图需要重绘时，都应该调用此函数。你应该用特定于你视图的功能来重写此函数，处理模板并更新 `el` 中的任何 HTML：
 
 ```javascript
 var TodoView = Backbone.View.extend({
   template: _.template("#todo-template"),
-  
   render: function() {
-    $(this.el).html(this.model.toJSON());
+    $(this.el).html(this.template(this.model.toJSON()));
     return this;
   }
 });
@@ -5123,26 +4735,22 @@ var TodoView = Backbone.View.extend({
 
 ## 事件委托
 
-通过委托（delegation），Backbone 视图为在 `el` 上添加事件处理器提供了一个方便的快捷方式。你可以在视图中设置事件及其相应的回调哈希：
+通过委托，Backbone 视图为在 `el` 上添加事件处理器提供了一个方便的快捷方式。你可以在视图中设置事件及其相应的回调哈希：
 
 ```javascript
 var TodoView = Backbone.View.extend({
   events: {
     "change input[type=checkbox]" : "toggleDone",
     "click .destroy" : "clear",
-  }
+  },
+  toggleDone: function(event){ /* ... */},
+  clear: function(event){ /* ... */ }
 });
 ```
 
+事件哈希格式为 `"eventType selector": "callback"`。选择器是可选的，如果没有提供，事件将直接绑定到 `el`。如果提供了选择器，则事件将进行委托，这基本上意味着它将动态绑定到任何匹配选择器的 `el` 子元素上。委托利用了事件冒泡，这意味着无论 `el` 的内容是否发生变化，事件仍然会触发。
 
-},
-  toggleDone: function(event){ /* ... */},
-  clear: function(event){ /* ... */ }
-};
-
-事件哈希格式为 "eventType: 'callback'"。选择器是可选的，如果没有提供，事件将直接绑定到 `el`。如果提供了选择器，则事件将进行委托，这基本上意味着它将动态绑定到任何匹配选择器的 `el` 子元素上。委托利用了事件冒泡，这意味着无论 `el` 的内容是否发生变化，事件仍然会触发。
-
-回调是一个字符串，它指向当前视图（view）实例函数的名称。当视图的回调被触发时，它们会在当前视图的上下文中调用，而不是在当前目标或窗口的上下文中调用。这非常有用，因为你可以从任何回调中直接访问 `this.el` 和 `this.model`，例如上面示例中的 `toggleDone()` 和 `clear()` 函数。
+回调是一个字符串，它指向当前视图实例函数的名称。当视图的回调被触发时，它们会在当前视图的上下文中调用，而不是在当前目标或窗口的上下文中调用。这非常有用，因为你可以从任何回调中直接访问 `this.el` 和 `this.model`，例如上面示例中的 `toggleDone()` 和 `clear()` 函数。
 
 ## 绑定与上下文
 
@@ -5151,26 +4759,24 @@ var TodoView = Backbone.View.extend({
 ```javascript
 var TodoView = Backbone.View.extend({
   initialize: function() {
-    _bindAll(this, 'render', 'close');
+    _.bindAll(this, 'render', 'close');
     this.model.bind('change', this.render);
   },
-
   close: function(){ /* ... */ }
 });
 ```
 
-需要注意的是事件回调中的上下文变化。Underscore 提供了一个实用的函数来获取它们：`_.bindAll(context, functionNames)`。该函数绑定了一个上下文和一组函数名（字符串形式）。`.bindAll()` 确保在指定的上下文中绑定你指定的所有函数。这对于事件回调特别有用，因为它们的上下文总是在变化。在上面的示例中，`render()` 和 `close()` 函数将始终在 `TodoView` 的实例上下执行。
+需要注意的是事件回调中的上下文变化。Underscore 提供了一个实用的函数来处理它们：`_.bindAll(context, functionNames)`。该函数绑定了一个上下文和一组函数名（字符串形式）。`_.bindAll()` 确保在指定的上下文中绑定你指定的所有函数。这对于事件回调特别有用，因为它们的上下文总是在变化。在上面的示例中，`render()` 和 `close()` 函数将始终在 `TodoView` 的实例上下文执行。
 
-处理模型销毁的方法类似。你的视图只需要绑定到模型的 `delete` 事件，在触发时移除 `el`：
+处理模型销毁的方法类似。你的视图只需要绑定到模型的 `destroy` 事件，在触发时移除 `el`：
 
 ```javascript
 var TodoView = Backbone.View.extend({
   initialize: function() {
-    _bindAll(this, 'render', 'remove');
+    _.bindAll(this, 'render', 'remove');
     this.model.bind('change', this.render);
-    this.model.bind('delete', this.remove);
+    this.model.bind('destroy', this.remove);
   },
-
   remove: function(){
     $(this.el).remove();
   }
@@ -5183,49 +4789,41 @@ var TodoView = Backbone.View.extend({
 
 Backbone 控制器将应用程序的状态与 URL 的哈希片段连接起来，提供可共享、可书签的 URL。从本质上，控制器连接了一组路由以及导航到这些路由时将调用的函数。
 
-路由是一个哈希对象——键由路径、参数和通配符（splats）组成——值被设置为与路由关联的函数：
+路由是一个哈希对象——键由路径、参数和通配符组成——值被设置为与路由关联的函数：
 
 ```javascript
 routes: {
   // 匹配：
   "help": "help", // #help
-  "search/query": "search", // #search/kiwis
-  "search/query/p:page": "search", // #search/kiwis/p7
-  "file/path": "file" // #file/any/path.txt
+  "search/:query": "search", // #search/kiwis
+  "search/:query/p:page": "search", // #search/kiwis/p7
+  "file/*path": "file" // #file/any/path.txt
 }
 ```
 
-你从上面的示例中可以看到参数以 `:` 开头，然后是参数名称。路由中的任何参数都会在路由调用时传递给它的操作（action）。由 `*` 指定的通配符是一个通配符，匹配任何内容。与参数一样，通配符会将匹配到的值传递给其路由的操作。
+你从上面的示例中可以看到参数以 `:` 开头，然后是参数名称。路由中的任何参数都会在路由调用时传递给它的操作。由 `*` 指定的通配符是一个通配符，匹配任何内容。与参数一样，通配符会将匹配到的值传递给其路由的操作。
 
-路由按照它们在哈希中指定的反序进行解析。换句话说，你最通用的“捕获”路由应该位于路由哈希的末尾。
+路由按照它们在哈希中指定的顺序进行解析。换句话说，你最通用的“捕获”路由应该位于路由哈希的末尾。
 
-按照惯例，控制器是通过扩展 `Backbone.Controller` 创建的，并传入一个实例属性对象：
+按照惯例，控制器是通过扩展 `Backbone.Router` 创建的，并传入一个实例属性对象：
 
 ```javascript
-var BackboneController = Backbone.Controller.extend({
+var AppRouter = Backbone.Router.extend({
   routes: {
-    "index",
+    "": "index",
     "help": "help", // #help
-    "search/query": "search", // #search/kiwis
-    "search/query/p:page": "search" // #search/kiwis/p7
+    "search/:query": "search", // #search/kiwis
+    "search/:query/p:page": "search" // #search/kiwis/p7
   },
-
   index: function() { /* ... */ },
   help: function() {
+    // ...
+  },
+  search: function(query, page) {
     // ...
   }
 });
 ```
-
-172 | 第 12 章：Backbone 库
-
-```javascript
-sync: function(id) {
-  // ...
-}
-```
-
-注意，你可以在不使用模型或事件回调的情况下渲染 Backbone 视图。你可以轻松地从 `initialize()` 中调用 `render()` 函数，在视图首次实例化时渲染它。然而，我一直在介绍模型和视图的集成，因为这是视图的典型用例——绑定能力是 Backbone 最有用且强大的功能之一。
 
 ## 与服务器同步
 
@@ -5246,7 +4844,7 @@ Backbone 将创建、读取、更新和删除（CRUD）操作映射到以下方�
 | 操作 | 方法 | 端点 |
 | :--- | :--- | :--- |
 | create | POST | /collection |
-| read | GET | /collection[id] |
+| read | GET | /collection[/id] |
 | update | PUT | /collection/[id] |
 | delete | DELETE | /collection/[id] |
 
@@ -5257,30 +4855,24 @@ Backbone 将创建、读取、更新和删除（CRUD）操作映射到以下方�
 ```javascript
 var user = new User();
 user.set({name: 'Bernard'});
-
 user.save(null, {success: function() {
   // 用户保存成功
 }});
 ```
 
-所有的 `save` 调用都是异步的，但你可以通过传递 `success` 和 `failure` 选项来监听 Ajax 请求回调。如果 Backbone 使用 jQuery，传递给 `save()` 的任何选项也将将传递给 `$.ajax`。换句话说，在保存模型时，可以使用任何 jQuery 的 Ajax 选项（例如 `timeout`）。
+所有的 `save` 调用都是异步的，但你可以通过传递 `success` 和 `error` 选项来监听 Ajax 请求回调。如果 Backbone 使用 jQuery，传递给 `save()` 的任何选项也将传递给 `$.ajax`。换句话说，在保存模型时，可以使用任何 jQuery 的 Ajax 选项（例如 `timeout`）。
 
-
-
-
-如果服务器返回错误且保存失败，模型上将触发一个错误事件。如果成功，模型将使用服务器的响应进行更新：
+如果服务器返回错误且保存失败，模型上将触发一个 `error` 事件。如果成功，模型将使用服务器的响应进行更新：
 
 ```javascript
 var user = new User();
-
 user.bind("error", function(){
   // 服务器返回了错误！
 });
-
 user.save({email: "Invalid email"});
 ```
 
-你可以使用 `fetch()` 函数刷新模型，该函数将向服务器请求模型的属性（通过 GET 请求）。如果模型的远程表示与与其当前属性不同，则会触发更改事件（change event）：
+你可以使用 `fetch()` 函数刷新模型，该函数将向服务器请求模型的属性（通过 GET 请求）。如果模型的远程表示与其当前属性不同，则会触发更改事件：
 
 ```javascript
 var user = Users.get(1);
@@ -5296,17 +4888,16 @@ var Followers = Backbone.Collection.extend({
   model: User,
   url: "/followers"
 });
-
 Followers.fetch();
 ```
 
-集合的 `fetch()` 函数将向服务器发送 GET 请求——在本例中是到 `/followers`——获取远程模型。当模型数据从服务器返回时，集合将刷新，并触发刷新操作。
+集合的 `fetch()` 函数将向服务器发送 GET 请求——在本例中是到 `/followers`——获取远程模型。当模型数据从服务器返回时，集合将刷新，并触发 `reset` 事件。
 
-你可以使用 `refresh()` 函数刷新集合，并传入模型对象数组。这在你初次设置页面时非常有用。与其在页面加载时发起另一个 GET 请求，你可以通过 `refresh()` 内联传递一个 JSON 对象。例如，在 Rails 中它看起来会是这样：
+你可以使用 `reset()` 函数刷新集合，并传入模型对象数组。这在你初次设置页面时非常有用。与其在页面加载时发起另一个 GET 请求，你可以通过 `reset()` 内联传递一个 JSON 对象。例如，在 Rails 中它看起来会是这样：
 
 ```html
 <script type="text/javascript">
-Followers.refresh(<%= @users.to_json %>);
+Followers.reset(<%= @users.to_json %>);
 </script>
 ```
 
@@ -5323,9 +4914,12 @@ Followers.refresh(<%= @users.to_json %>);
 | delete | DELETE | /collection/id |
 
 Backbone 在发送模型之前会将它们序列化为 JSON。我们的 User 模型看起来如下：
-{"name": "Yasmine"}
 
-注意，数据并不是由当前模型固定的，这一点在 Rails 与 Backbone 配合时特别容易产生困惑。我将介绍一些将 Rails 与 Backbone 集成的策略，如果你没有使用该框架，可以随时跳到下一节。
+```json
+{"name": "Yasmine"}
+```
+
+注意，数据并不是由当前模型名称固定的，这一点在 Rails 与 Backbone 配合时特别容易产生困惑。我将介绍一些将 Rails 与 Backbone 集成的策略，如果你没有使用该框架，可以随时跳到下一节。
 
 在你的 CRUD 方法内部，你应该使用原始的、无前缀的参数。例如，这是我们的 Rails 控制器 `update` 方法的工作方式：
 
@@ -5337,24 +4931,24 @@ def update
 end
 ```
 
-显然，你应该通过使用 `attr` 访问对属性进行白名单处理，保护你的模型免受恶意输入。除了 `destroy`，每个控制器方法都应该返回记录的 JSON 表示。
+显然，你应该通过使用 `attr_accessible` 对属性进行白名单处理，保护你的模型免受恶意输入。除了 `destroy`，每个控制器方法都应该返回记录的 JSON 表示。
 
 将属性序列化为 JSON 也是一个问题，因为默认情况下，Rails 会用模型名前缀任何记录数据，如下：
 
 ```json
-{"user": "Daniela"}
+{"user": {"name": "Daniela"}}
 ```
 
 遗憾的是，Backbone 不会在记录的 JSON 序列化中包含模型名称。你需要通过创建一个文件来确保 Rails 正确执行此操作：
 
 ```ruby
 # config/initializers/json.rb
-ActiveRecord::Base.include_root_json = false
+ActiveRecord::Base.include_root_in_json = false
 ```
 
 ## 自定义行为 (Custom Behavior)
 
-Backbone.sync 是每当尝试向服务器保存或读取模型时调用的函数。你可以覆盖它的默认行为（发送 Ajax 请求），以便使用不同的持久化策略，例如 WebSockets、XML 传输或 Local Storage。例如，让我们用一个空操作函数替换 `Backbone.sync()`，它只记录调用它时的参数：
+`Backbone.sync` 是每当尝试向服务器保存或读取模型时调用的函数。你可以覆盖它的默认行为（发送 Ajax 请求），以便使用不同的持久化策略，例如 WebSockets、XML 传输或 Local Storage。例如，让我们用一个空操作函数替换 `Backbone.sync()`，它只记录调用它时的参数：
 
 ```javascript
 Backbone.sync = function(method, model, options) {
@@ -5363,21 +4957,21 @@ Backbone.sync = function(method, model, options) {
 };
 ```
 
-如你所见，Backbone.sync() 接收一个 method、model 和 options，这些对象具有以下属性： 
+如你所见，`Backbone.sync()` 接收一个 method、model 和 options，这些对象具有以下属性：
 
-- **method**: CRUD 方法（create, read, update 或 delete）
-- **model**: 要保存的模型（或要读取的集合）
-- **options**: 请求选项，包括成功和失败回调
+- `method`：CRUD 方法（create, read, update 或 delete）
+- `model`：要保存的模型（或要读取的集合）
+- `options`：请求选项，包括成功和失败回调
 
 Backbone 期望你唯一做的就是调用 `options.success()` 或 `options.error()` 回调。
 
 还可以针对每个模型或集合覆盖 `sync` 函数，而不是全局覆盖：
 
 ```javascript
-Todo.prototype.sync = function(method, model, options) { /* ... };
+Todo.prototype.sync = function(method, model, options) { /* ... */ };
 ```
 
-自定义 Backbone.sync() 函数的一个良好示例是在本地适配器中。包含该适配器并在相关模型或集合上设置 `localStorage` 可以让 Backbone 使用 HTML5 localStorage 而不是后端。如底示例示例所示，Backbone.sync() 根据方法对 `store` 对象进行 CRUD 操作，最后带有相应的模型调用 `options.success()`：
+自定义 `Backbone.sync()` 函数的一个良好示例是在本地存储适配器中。包含该适配器并在相关模型或集合上设置 `localStorage` 可以让 Backbone 使用 HTML5 localStorage 而不是后端。如下示例所示，`Backbone.sync()` 根据方法对 `store` 对象进行 CRUD 操作，最后带有相应的模型调用 `options.success()`：
 
 ```javascript
 // 保存来自 "todos" 命名空间的所有 todo 事项。
@@ -5386,7 +4980,7 @@ Todos.prototype.localStorage = new Store("todos");
 // 覆盖 Backbone.sync() 以委托给模型或集合的属性，该属性应该是 Store 的实例。
 Backbone.sync = function(method, model, options) {
   var resp;
-  var store = model.localStorage || collection.localStorage;
+  var store = model.localStorage || model.collection.localStorage;
 
   switch (method) {
     case "read": resp = model ? store.find(model) : store.findAll(); break;
@@ -5405,83 +4999,75 @@ Backbone.sync = function(method, model, options) {
 
 ## 构建待办列表 (Building a To-Do List)
 
-让我们通过一个简单的待办事项应用将学到的 Backbone 付实践。我们希望用户能够对 todos 进行 CRUD 操作，并希望项目在刷新后仍保持持久化。你可以使用下面的示例构建应用程序，或者查看 assets/todos 中完成的应用程序。
+让我们通过一个简单的待办事项应用将学到的 Backbone 付诸实践。我们希望用户能够对 todos 进行 CRUD 操作，并希望项目在刷新后仍保持持久化。你可以使用下面的示例构建应用程序，或者查看 assets/todos 中完成的应用程序。
 
 初始页面结构如下；我们在 todos.js 中加载了 CSS、JavaScript 库以及我们的 Backbone 应用：
 
 ```html
-<html
+<html>
 <head>
-  <link href="styles.css" media="all" type="text/css">
-  <script src="jquery.js"></script>
+  <link href="styles.css" media="all" type="text/css" rel="stylesheet">
   <script src="jquery.js"></script>
   <script src="underscore.js"></script>
   <script src="backbone.js"></script>
   <script src="backbone.localstorage.js"></script>
   <script src="todos.js"></script>
 </head>
-
 <body>
   <div id="todoapp">
     <div class="title">
       <h1>Todos</h1>
     </div>
-  </div>
-
-  <div class="content">
-    <div id="create-todo">
-      <input id="new-todo" placeholder="What needs to be done?" type="text" />
+    <div class="content">
+      <div id="create-todo">
+        <input id="new-todo" placeholder="What needs to be done?" type="text" />
+      </div>
     </div>
-  </div>
-
-  <div id="todos">
-    <ul id="todo-list"></ul>
+    <div id="todos">
+      <ul id="todo-list"></ul>
+    </div>
   </div>
 </body>
 </html>
 ```
 
-页面结构非常简单；它包含一个创建新 todos 的输入框 (#new-todo) 和一个显示现有 todos 的列表 (#todo-list)。
+页面结构非常简单；它包含一个创建新 todos 的输入框 (`#new-todo`) 和一个显示现有 todos 的列表 (`#todo-list`)。
 
-现在转向 todos.js 脚本，这是我们 Backbone 应用所在地。我们将所有内容封装在 jQuery() 中，确保它在页面加载后运行：
+现在转向 todos.js 脚本，这是我们 Backbone 应用所在地。我们将所有内容封装在 `jQuery()` 中，确保它在页面加载后运行：
 
 ```javascript
 // todos.js
 jQuery(function($) {
   // 应用在这里...
-})
+});
 ```
 
-创建一个具有 content 和 done 属性的基础 Todo 模型。我们提供了一个 `toggle()` 辅助方法来反转模型的 done 属性：
+创建一个具有 `content` 和 `done` 属性的基础 Todo 模型。我们提供了一个 `toggle()` 辅助方法来反转模型的 `done` 属性：
 
 ```javascript
 window.Todo = Backbone.Model.extend({
   defaults: {
     done: false
   },
-
   toggle: function() {
     this.save({done: !this.get("done")});
   }
 });
 ```
 
-我们将 Todo 模型设置在 window 对象上以确保它是全局可用的。此外，通过使用这种模式，很容易看出脚本声明了哪些全局变量——只需查看脚本中的 window 引用。
+我们将 Todo 模型设置在 `window` 对象上以确保它是全局可用的。此外，通过使用这种模式，很容易看出脚本声明了哪些全局变量——只需查看脚本中的 `window` 引用。
 
 下一步是设置 TodoList 集合，存储 Todo 模型数组：
 
 ```javascript
 window.TodoList = Backbone.Collection.extend({
   model: Todo,
-
-  // 保存 "todos" 命名空间下的所有 todo-事项。
+  // 保存 "todos" 命名空间下的所有 todo 事项。
   localStorage: new Store("todos"),
-
-  // 过滤已完成的 todo-事项列表。
+  // 过滤已完成的 todo 事项列表。
   done: function() {
     return this.filter(function(todo) { return todo.get('done'); });
   },
-
   remaining: function() {
     return this.without.apply(this, this.done());
   }
@@ -5491,200 +5077,140 @@ window.TodoList = Backbone.Collection.extend({
 window.Todos = new TodoList();
 ```
 
-我们使用了 Backbone 本存储程序 (backbone.localstorage.js)，它要求我们在任何集合或模型上设置 localStorage 属性以存储数据。TodoList 中的另外两个函数 `done()` 和 `remaining()` 负责过滤集合，返回已完成或未完成的 todo-model。因为只有一个 TodoList，我们实例化了一个全局可用的实例：window.Todos。
+我们使用了 Backbone 本地存储适配器 (`backbone.localstorage.js`)，它要求我们在任何集合或模型上设置 `localStorage` 属性以存储数据。TodoList 中的另外两个函数 `done()` 和 `remaining()` 负责过滤集合，返回已完成或未完成的 todo 模型。因为只有一个 TodoList，我们实例化了一个全局可用的实例：`window.Todos`。
 
-现在是显示单个-todos 的视图，TodoView。它将绑定到 Todo 模型的更改事件，并在被触发时重新渲染：
+现在是显示单个 todos 的视图，`TodoView`。它将绑定到 Todo 模型的更改事件，并在被触发时重新渲染：
 
 ```javascript
 window.TodoView = Backbone.View.extend({
-  // 视图是一个列表 标签。
+  // 视图是一个列表标签。
   tagName: "li",
+  // 缓存单个项目的模板函数。
+  template: $("#item-template").template(),
+  // 将事件委托到视图函数
+  events: {
+    "change .check" : "toggleDone",
+    "dblclick .todo-content" : "edit",
+    "click .todo-destroy" : "destroy",
+    "keypress .todo-input" : "updateOnEnter",
+    "blur .todo-input" : "close"
+  },
+  initialize: function() {
+    // 确保函数在正确的作用域内调用
+    _.bindAll(this, 'render', 'remove');
+    // 监听模型变化
+    this.model.bind('change', this.render);
+    this.model.bind('destroy', this.remove);
+  },
+  render: function() {
+    // 使用存储的模板更新 el
+    var element = $.tmpl(this.template, this.model.toJSON());
+    $(this.el).html(element);
+    return this;
+  },
+  // 当勾选框被选中时，切换模型的状态
+  toggleDone: function() {
+    this.model.toggle();
+  },
+  // 将此视图切换到“编辑”模式，显示输入框。
+  edit: function() {
+    $(this.el).addClass('editing');
+    this.input.focus();
+  },
+  // 关闭“编辑”模式，将更改保存到 todo。
+  close: function() {
+    this.model.save({content: this.input.val()});
+    $(this.el).removeClass('editing');
+  },
+  // 如果按了“回车键”，我们就完成了对项目的编辑。
+  // 在输入框上触发 blur 事件，触发 close
+  updateOnEnter: function(e) {
+    if (e.keyCode == 13) e.target.blur();
+  },
+  // 当模型销毁时移除元素
+  remove: function() {
+    $(this.el).remove();
+  },
+  // 当点击 '.todo-destroy' 时销毁模型
+  destroy: function() {
+    this.model.destroy();
+  }
 });
 ```
 
+你可以看到视图的事件处理，用于管理更新、完成和删除待办事项。例如，每当勾选框发生变化时，`toggleDone` 就会触发，切换模型的 `done` 属性。反之，这会触发模型的 `change` 事件，导致视图渲染。
 
-
-
-```javascript
-// 缓存单个项目的模板函数。
-template: $("#item-template").template();
-```
-
-```javascript
-// 将事件委托到视图函数
-events: {
-  "change" : "toggleDone",
-  "dblclick.todo-content" : "edit",
-  "click.todo-destroy" : "destroy",
-  "keypress.todo-input" : "updateOnEnter",
-  "blur.todo-input" : "close"
-}
-```
-
-```javascript
-initialize:function() {
-  // 确保函数在正确的作用域内调用
-  _bindAll(this, 'render', 'remove');
-```
-
-```javascript
-// 监听模型变化
-this.model.bind('change', this.render);
-this.model.bind('destroy', this.remove);
-```
-
-```javascript
-render:function() {
-  // 使用存储的模板更新 el
-  var element = jquery.tpl(this.template, this.model.toJSON());
-  $(this.el).html(element);
-  return this;
-}
-```
-
-```javascript
-// 当勾选框被选中时，切换模型的状态
-toggledone:function() {
-  this.model.toggle();
-```
-
-```javascript
-// 将此视图切换到“编辑”模式，显示输入框。
-nedit:function() {
-  $(this.el).addClass('editing');
-  this.input.focus();
-```
-
-```javascript
-// 关闭“编辑”模式，将更改保存到-do。
-close:function() {
-  this.model.save({content: this.input.val()});
-  $(this.el).removeClass('editing');
-```
-
-```javascript
-// 如果按了“回车键”，我们就完成了对项目的编辑。
-// 在输入框上触发 blur 事件，触发 close
-updateOnEnter:function(e) {
-  if (e.keyCode == 13) e.target.blur();
-}
-```
-
-```javascript
-// 当模型销毁时移除元素
-remove:function() {
-  $(this.el).remove();
-}
-```
-
-```javascript
-// 当点击 '.todo-destroy' 时销毁模型
-destroy: function() {
-  this.model.destroy();
-}
-```
-
-你可以看到到视图的事件防抖，用于管理更新、完成和删除待办事项。例如，每当勾选框发生变化时，toggleDone 就会触发，切换模型的 done 属性。反之，这会触发模型的 change 事件，导致视图渲染。
-
-我们使用 jQuery.tpl 进行 HTML 模板处理，每当视图渲染时，用重新生成的模板替换 el 的内容。模板引用了一个 ID 为 #item-template 的元素，我们尚未定义它。现在我们来定义它吧，将模板放置在 index.html 的 body 标签内：
+我们使用 `jQuery.tpl` 进行 HTML 模板处理，每当视图渲染时，用重新生成的模板替换 `el` 的内容。模板引用了一个 ID 为 `#item-template` 的元素，我们尚未定义它。现在我们来定义它吧，将模板放置在 index.html 的 `body` 标签内：
 
 ```html
 <script type="text/template" id="item-template">
-  <div class="todo {{if done}}\{{/if}}">
-    <div class="class" title="Double click to edit...">
+  <div class="todo {{if done}}done{{/if}}">
+    <div class="todo-content" title="Double click to edit...">
       <input class="check" type="checkbox" {{if done}}checked{{/if}} />
-      <div class="todo-content">${content}</</div>
+      <span class="todo-content">${content}</span>
       <span class="todo-destroy"></span>
     </div>
-  </div>
-  <div class="edit">
-    <input class="todo-input" type="text" value="${content}" />
+    <div class="edit">
+      <input class="todo-input" type="text" value="${content}" />
+    </div>
   </div>
 </script>
 ```
 
-如果你读过第 5 章（该章深入介绍了 jQuery.tpl），这种模板语法应该看起来看起来非常熟悉。本质上，我们在 #todo-content 和 #todo-input 元素内部操作待办事项的内容。此外，我们还确保勾选框具有正确的“选中”状态。
+如果你读过第 5 章（该章深入介绍了 `jQuery.tpl`），这种模板语法应该看起来非常熟悉。本质上，我们在 `.todo-content` 和 `.todo-input` 元素内部操作待办事项的内容。此外，我们还确保勾选框具有正确的“选中”状态。
 
-Todo 是相当独立自包含的——我们只需要在实例化时给它一个模型，并将其 el 属性附加到待办列表中。这是 AppView 的基本工作，它确保通过实例化 Todo 实例来填充我们的待办列表。AppView 执行的另一个角色是在当用户在 #new-todo 输入框按下回车键时，创建新的 Todo 记录：
+Todo 是相当独立自包含的——我们只需要在实例化时给它一个模型，并将其 `el` 属性附加到待办列表中。这是 `AppView` 的基本工作，它确保通过实例化 Todo 实例来填充我们的待办列表。`AppView` 执行的另一个角色是在当用户在 `#new-todo` 输入框按下回车键时，创建新的 Todo 记录：
 
 ```javascript
 // 我们的整体 AppView 是顶层 UI 部分。
 window.AppView = Backbone.View.extend({
+  // 不是生成新元素，而是绑定到 HTML 中已经存在的元素。
+  el: "#todoapp",
+  events: {
+    "keypress #new-todo": "createOnEnter",
+    "click .todo-clear a": "clearCompleted"
+  },
+  // 在初始化时，我们绑定到 `Todos` 集合上的相关事件，
+  // 当项目添加或更改时。通过加载
+  // 可能存储在 `localStorage` 中的任何预现有待办事项来开始
+  initialize: function() {
+    _.bindAll(this, 'addOne', 'addAll', 'render');
+    this.input = this.$("#new-todo");
+    Todos.bind('add', this.addOne);
+    Todos.bind('reset', this.addAll);
+    Todos.fetch();
+  },
+  // 通过为单个项目创建视图并将其元素附加到 `<ul>` 来向列表添加单个待办事项。
+  addOne: function(todo) {
+    var view = new TodoView({model: todo});
+    this.$("#todo-list").append(view.render().el);
+  },
+  // 添加 Todos 集合中的所有项目。
+  addAll: function() {
+    Todos.each(this.addOne);
+  },
+  // 如果按了“回车键”，创建新的 Todo 模型
+  createOnEnter: function(e) {
+    if (e.keyCode != 13) return;
+    Todos.create({content: this.input.val()});
+    this.input.val('');
+  },
+  // 清除已完成的 todo 事项
+  clearCompleted: function() {
+    _.each(Todos.done(), function(todo) { todo.destroy(); });
+    return false;
+  }
+});
 ```
 
 ```javascript
-// 不是生成新元素，而是绑定到 el 的骨架上
-// HTML 中已经存在的元素。
-el: "#todoapp", {
-```
-
-```javascript
-events:
-  keypress "new-todo": "createEnter",
-  click .todo-clear a: "clearCompleted"
-},
-```
-
-构建待办事项列表 | 181
-
-```javascript
-// 在初始化时，我们绑定到 `Todos` 集合上的相关事件，
-// 当项目添加或更改时。通过加载
-// 可能存储在 `localStorage` 中的任何预现有待办事项来开始
-initialize: function() {
-  _.bind(this, 'addone', 'toadd', 'render');
-}
-```
-
-```javascript
-this.input = this("#new-todo");
-```
-
-```javascript
-Todos.bind('add', this.addone);
-Todos.bind('refresh', this.addall);
-```
-
-```javascript
-Todos.fetch();
-```
-
-```javascript
-// 通过为单个项目创建视图并将其元素附加到 `<ul>` 来向列表添加单个待办事项。
-addone: function(todo) {
-  var view = new TodoView(model: todo);
-  this.$("#todo-list").append(view.render().el);
-}
-```
-
-```javascript
-// 添加 Todos 集合中的所有项目。
-addall: function() {
-  // 根据上下文省略了实现
-}
-```
-
-```javascript
-// 如果按了“回车键”，我们就完成了对项目的编辑。
-// 在输入框上触发 blur 事件，触发 close
-updateOnEnter:function(e) {
-  if (e.keyCode == 13) e.target.blur();
-}
-```
-
-```javascript
-// 当模型销毁时移除元素
-remove:function() {
-  $(this.el).remove();
-}
-```
-
-
-```javascript
-return "I am " + this.name + ".";
-}
-));
-var paypal = new Person("Payal");
+var Person = function(name) {
+  this.name = name;
+  this.speak = function() {
+    return "I am " + this.name + ".";
+  };
+};
+var payal = new Person("Payal");
 assertEquals(payal.speak(), 'I am Payal.');
 ```
 
@@ -5693,7 +5219,7 @@ assertEquals(payal.speak(), 'I am Payal.');
 使用 `this._super` 调用基方法。以下代码重写了 person 以提供一个更“高级”的问候：
 
 ```javascript
-Person("ClassyPerson", {
+$.Class("ClassyPerson", {
   speak : function(){
     return "Salutations, " + this._super();
   }
@@ -5707,22 +5233,20 @@ assertEquals(fancypants.speak(), 'Salutations, I am Mr. Fancy.')
 
 ## 代理 (Proxies)
 
-类回调方法返回一个已正确设置 "this" 的函数，类似于 $proxy。以下代码创建了一个 Click 类，用于计算被点击的次数：
+类回调方法返回一个已正确设置 "this" 的函数，类似于 `$.proxy`。以下代码创建了一个 Click 类，用于计算被点击的次数：
 
 ```javascript
 $.Class("Click", {
   init : function(){
     this.clickCount = 0;
   },
-
   clicked: function(){
     this.clickCount++;
   },
-
   listen: function(el){
     el.click(this.callback('clicked'));
   }
-})
+});
 ```
 
 ```javascript
@@ -5733,7 +5257,7 @@ clicky.listen($('#bar'));
 
 ## 静态继承
 
-Class 允许你定义可继承的静态属性和方法。以下代码允许你通过调用 `Person.findOne(ID, success(person))` 从服务器获取 person 实例。成功后将回调返回一个 Person 实例，该实例拥有 speak 方法：
+Class 允许你定义可继承的静态属性和方法。以下代码允许你通过调用 `Person.findOne(ID, success(person))` 从服务器获取 person 实例。成功后将回调返回一个 Person 实例，该实例拥有 `speak` 方法：
 
 ```javascript
 $.Class("Person",{
@@ -5754,21 +5278,22 @@ $.Class("Person",{
 ```javascript
 Person.findOne(5, function(person){
   assertEquals( person.speak(), "I am Payal. ");
-})
+});
 ```
 
 ## 内省 (Introspection)
 
 Class 提供了命名空间支持以及对类名和命名空间对象的访问：
-$.Class("Jupiter.Person");
 
+```javascript
+$.Class("Jupiter.Person");
 Jupiter.Person.shortName; // 'Person'
 Jupiter.Person.fullName; // 'Jupiter.Person'
-Jupiter.Person.namespace; //--> Jupiter
+Jupiter.Person.namespace; // Jupiter
+```
 
 ```javascript
 var person = new Jupiter.Person();
-
 person.Class.shortName; // 'Person'
 ```
 
@@ -5780,24 +5305,22 @@ person.Class.shortName; // 'Person'
 $.Class("Model",{
   findOne : function(id, success){
     $.get('/' + this.fullName.toLowerCase() + '/' + id,
-    this.callback(function(attrs){
-      success( new this( attrs ) );
-    })
+      this.callback(function(attrs){
+        success( new this( attrs ) );
+      }), 'json'
+    );
   },
-  'json',
   init : function(attrs){
     $.extend(this, attrs)
   }
-})
+});
 ```
 
 ```javascript
-Model("Person",{
-```
-
-```javascript
-speak : function(){
-  return "I am "+this.name+".";
+$.Model("Person",{
+  speak : function(){
+    return "I am "+this.name+".";
+  }
 });
 ```
 
@@ -5808,7 +5331,7 @@ Person.findOne(5, function(person){
 ```
 
 ```javascript
-Model("Task");
+$.Model("Task");
 ```
 
 ```javascript
@@ -5823,17 +5346,17 @@ Task.findOne(5,function(task){
 
 JavaScriptMVC 的模型及其关联插件提供了许多组织模型数据的工具，例如验证、关联、列表等。但其核心功能集中在服务封装、类型转换和事件上。
 
-## 属性与可对象 (Attributes and Observables)
+## 属性与可观测对象 (Attributes and Observables)
 
 对于模型层而言，至关重要的是获取和设置模型数据属性的能力，以及监听模型实例变化的能力。观察者模式是 MVC 方法的核心——视图监听模型的变化。
 
 幸运的是，使用 JavaScriptMVC 可以轻松让任何数据变为可观测的。分页就是一个很好的例子。页面上存在多个分页控件是非常常见的。例如，一个控件可能提供“下一页”和“上一页”按钮；另一个控件可能详细说明当前页查看的项（例如“显示项目 1-20”）。所有分页控件都需要完全相同的数据：
 
-- offset: 要显示的第一个项的索引
-- limit: 显示的项目数量
-- count: 项目的总数
+- `offset`：要显示的第一个项的索引
+- `limit`：显示的项目数量
+- `count`：项目的总数
 
-我们可以使用 JavaScriptMVC 的 $.Model 来对这些数据进行建模：
+我们可以使用 JavaScriptMVC 的 `$.Model` 来对这些数据进行建模：
 
 ```javascript
 var paginate = new $.Model({
@@ -5843,18 +5366,20 @@ var paginate = new $.Model({
 });
 ```
 
-现在 paginate 变量是可观测的。我们可以将其传递给分页控件，它们可以读取、写入并监听变化。你可以像平常一样读取属性，或者使用 model.attr(NAME)：
+现在 `paginate` 变量是可观测的。我们可以将其传递给分页控件，它们可以读取、写入并监听变化。你可以像平常一样读取属性，或者使用 `model.attr(NAME)`：
 
 ```javascript
 assertEquals(paginate.offset, 0);
 assertEquals(paginate.attr('limit'), 20);
 ```
 
-如果点击点击下一个 attr(NAME)，我们需要增加 offset。通过 `model.attr` 更改属性值。以下代码将 offset 移动到下一页：
+如果点击“下一页”，我们需要增加 `offset`。通过 `model.attr` 更改属性值。以下代码将 `offset` 移动到下一页：
 
 ```javascript
 paginate.attr('offset', 20);
 ```
+
+
 
 当一个控件改变 paginate 的状态时，需要通知其他控件。你可以通过 `model.bind(ATTR, success(val))` 绑定特定的属性变化并更新控件：
 
@@ -5864,7 +5389,7 @@ paginate.bind('updated.attr', function(ev, newVal) {
 })
 ```
 
-你也可以通过绑定 'updated.attr' 事件来监听任何属性变化：
+你也可以通过绑定 `updated.attr` 事件来监听任何属性变化：
 
 ```javascript
 paginate.bind('updated.attr', function(ev, newVal) {
@@ -5872,7 +5397,7 @@ paginate.bind('updated.attr', function(ev, newVal) {
 })
 ```
 
-以下是接受 paginate 数据的 nextPrev-插件：
+以下是接受 paginate 数据的 nextPrev 插件：
 
 ```javascript
 $.fn.nextPrev = function(paginate) {
@@ -5910,9 +5435,9 @@ $.fn.nextPrev = function(paginate) {
 
 其次，防止负数 offset 或超过总数的逻辑是在插件中完成的。为了解决这个问题，我们需要创建一个分页类，在其中我们可以对 limit、offset 和 count 的取值添加额外的约束。
 
-## 扩展模型 (Extending Models)
+## 扩展模型
 
-JavaScriptMVC 继承自 $.Class。因此，你通过继承 $.Model(NAME, STATIC, PROTOTYPE) 来创建一个模型类：
+JavaScriptMVC 继承自 `$.Class`。因此，你通过继承 `$.Model(NAME, STATIC, PROTOTYPE)` 来创建一个模型类：
 
 ```javascript
 $.Model('Paginate', {
@@ -5924,21 +5449,21 @@ $.Model('Paginate', {
 
 有几种方法可以让 Paginate 模型变得更有用。接下来讨论的方法可以限制 count 和 offsets 的设置值。
 
-## Setter 方法 (Setters)
+## Setter 方法
 
-Setter 方法是命名为 setNAME 的原型方法。它们在调用 `model.attr(NAME, val)` 时被触发，并带有成功和错误的回调。通常，该方法应该返回应该设置在模型实例上的值，或者调用带有消息的错误回调。Success 用于异步过程。
+Setter 方法是命名为 `setNAME` 的原型方法。它们在调用 `model.attr(NAME, val)` 时被触发，并带有成功和错误的回调。通常，该方法应该返回应该设置在模型实例上的值，或者调用带有消息的错误回调。Success 用于异步过程。
 
 Paginate 模型使用 setter 防止设置无效的 count 和 offset 值。例如，我们确保该值不是负数：
 
 ```javascript
-$.Model('Paginate',
-  setCount : function(newCount, success, error) {
+$.Model('Paginate', {
+  setCount: function(newCount, success, error) {
     return newCount < 0 ? 0 : newCount;
   },
-  setOffset : function(newOffset, success, error) {
+  setOffset: function(newOffset, success, error) {
     return newOffset < 0 ? Math.min(newOffset, !isNaN(this.count - 1) ? this.count : Infinity) : newOffset;
   }
-);
+});
 ```
 
 现在，nextPrev 插件可以肆无忌惮地设置 offset：
@@ -5953,18 +5478,18 @@ this.delegate('prev', 'click', function() {
 });
 ```
 
-## 默认值 (Defaults)
+## 默认值
 
-我们可以通过设置静态 defaults 属性为 Paginate 实例添加默认值。创建一个新的 Paginate 实例时，如果没有提供值，它将使用默认值初始化：
+我们可以通过设置静态 `defaults` 属性为 Paginate 实例添加默认值。创建一个新的 Paginate 实例时，如果没有提供值，它将使用默认值初始化：
 
 ```javascript
 $.Model('Paginate', {
-  defaults : {
+  defaults: {
     count: Infinity,
     offset: 0,
     limit: 100
   },
-  count: function(newCount, success, error) { ... },
+  setCount: function(newCount, success, error) { ... },
   setOffset: function(newOffset, success, error) { ... }
 });
 ```
@@ -5977,53 +5502,61 @@ assertEquals(paginate.count, 500);
 
 通过添加辅助方法，Paginate 模型可以更轻松地移动到下一页或上一页，并判断是否可行。
 
-## 辅助方法 (Helper Methods)
+## 辅助方法
 
-这些是帮助设置或获取有用数据的原型方法。以下完整的 Paginate 模型包含了 next 和 prev 方法，可以在可能的情况下移动到下一页和上一页。它还提供了 canNext 和 canPrev 方法，返回实例是否可以移动到下一页：
-
-```javascript
-next : function() {
-```
-
-
+这些是帮助设置或获取有用数据的原型方法。以下完整的 Paginate 模型包含了 `next` 和 `prev` 方法，可以在可能的情况下移动到下一页和上一页。它还提供了 `canNext` 和 `canPrev` 方法，返回实例是否可以移动到下一页：
 
 ```javascript
-this.attr('offset', this.offset+this.limit);
-prev : function() {
-  this.attr('offset', this.offset - this.limit)
-},
-canNext : function() {
-  return this.offset > this.count
-},
-canPrev : function() {
-  return this.query('offset') > 0
-}
-}
+$.Model('Paginate', {
+  defaults: {
+    count: Infinity,
+    offset: 0,
+    limit: 100
+  },
+  setCount: function(newCount, success, error) {
+    return newCount < 0 ? 0 : newCount;
+  },
+  setOffset: function(newOffset, success, error) {
+    return newOffset < 0 ? Math.min(newOffset, !isNaN(this.count - 1) ? this.count : Infinity) : newOffset;
+  },
+  next: function() {
+    this.attr('offset', this.offset + this.limit);
+  },
+  prev: function() {
+    this.attr('offset', this.offset - this.limit)
+  },
+  canNext: function() {
+    return this.offset < this.count
+  },
+  canPrev: function() {
+    return this.attr('offset') > 0
+  }
+});
 ```
 
 因此，我们的 jQuery 组件变得更加精细了：
 
 ```javascript
 $.fn.nextPrev = function(paginate) {
+  var self = this;
   this.delegate('.next', 'click', function() {
-    paginate.attr('offset', paginate.offset+paginate.limit);
+    paginate.next();
   });
   this.delegate('.prev', 'click', function() {
-    paginate.attr('offset', paginate.offset-paginate.limit)
+    paginate.prev()
+  });
+  paginate.bind('updated.attr', function() {
+    self.find('.prev')[paginate.canPrev() ? 'addClass' : 'removeClass']('enabled');
+    self.find('.next')[paginate.canNext() ? 'addClass' : 'removeClass']('enabled');
   });
 };
-var self = this;
-paginate.bind('updated.attr', function() {
-  self.find('.prev')[paginate.canPrev() ? 'addClass' : 'removeClass']('enabled');
-  self.find('.next')[paginate.canNext() ? 'addClass' : 'removeClass']('enabled');
-});
 ```
 
 # 服务封装
 
-我们刚刚看到 $.Model 对于客户端状态建模是很有用的。然而，对于大多数应用程序来说，关键数据在服务器上，而不是在客户端。客户端需要在服务器上进行创建、检索、更新和删除（CRUD）操作。维护客户端和服务器数据的双重性是一项棘手的工作；$.Model 简化了这个问题。
+我们刚刚看到 `$.Model` 对于客户端状态建模是很有用的。然而，对于大多数应用程序来说，关键数据在服务器上，而不是在客户端。客户端需要在服务器上进行创建、检索、更新和删除（CRUD）操作。维护客户端和服务器数据的双重性是一项棘手的工作；`$.Model` 简化了这个问题。
 
-$.Model 非常灵活。它可以与各种服务和数据类型配合工作。这里仅涵盖了 $.Model 如何与常见且流行的服务及数据类型工作：表现层状态转移（REST）和 JSON。
+`$.Model` 非常灵活。它可以与各种服务和数据类型配合工作。这里仅涵盖了 `$.Model` 如何与常见且流行的服务及数据类型工作：表现层状态转移（REST）和 JSON。
 
 REST 服务使用 URL 和 HTTP 动词 POST、GET、PUT 和 DELETE 分别创建、检索、更新和删除数据。例如，允许你创建、检索、更新和删除任务的服务可能如下：
 
@@ -6038,120 +5571,98 @@ REST 服务使用 URL 和 HTTP 动词 POST、GET、PUT 和 DELETE 分别创建�
 以下连接到任务服务，允许我们从服务器创建、检索、更新和删除任务：
 
 ```javascript
-$Model("Task",
-  create : "POST /tasks.json",
-  findOne : "GET /tasks/{id}.json",
-  findAll : "GET /tasks.json",
-  update : "PUT /tasks/{id}.json",
-  destroy : "DELETE /tasks/{id}.json"
-);
+$.Model("Task", {
+  create: "POST /tasks.json",
+  findOne: "GET /tasks/{id}.json",
+  findAll: "GET /tasks.json",
+  update: "PUT /tasks/{id}.json",
+  destroy: "DELETE /tasks/{id}.json"
+});
 ```
 
-让我们逐通过使用 Model CRUD 任务所需的每一个步骤。
+让我们逐步通过使用 Model CRUD 任务所需的每一个步骤。
 
-# 创建任务
+## 创建任务
 
 ```javascript
 new Task({ name: 'do the dishes'}).save(
-  success( task, data ),
-  error( jqXHR)
+  success(task, data),
+  error(jqXHR)
 ) //=> taskDeferred
 ```
 
 要在服务器上创建模型的实例，首先使用 `new Model(attributes)` 创建一个实例。然后调用 `save()` 检查任务是否具有 ID。在这种情况下，它没有 ID，因此 `save()` 会带任务属性发送一个创建请求。它接受两个参数：
 
-- success
-如果保存成功，将被调用的函数。Success 调用时会传入任务实例和服务器返回的数据。
-
-- error
-如果请求出错，将被调用的函数。它调用时会传入 jQuery 封装的 XHR 对象。
+- **success**: 如果保存成功，将被调用的函数。Success 调用时会传入任务实例和服务器返回的数据。
+- **error**: 如果请求出错，将被调用的函数。它调用时会传入 jQuery 封装的 XHR 对象。
 
 `save()` 返回一个解析为已创建任务的延迟对象（deferred）。
 
-# 获取任务
+## 获取单个任务
 
 ```javascript
 Task.findOne(params,
-  success( task ),
-  error( jqXHR)
+  success(task),
+  error(jqXHR)
 ) //=> taskDeferred
 ```
 
 从服务器检索单个任务。它接受三个参数：
 
-- params
-传递给服务器的数据；通常是一个像 `{id: 2}` 这样的 ID：
-
-- success
-如果请求成功，将被调用的函数。Success 调用时会传入任务实例。
-
-- error
-如果请求出错，将被调用的函数。
+- **params**: 传递给服务器的数据；通常是一个像 `{id: 2}` 这样的 ID。
+- **success**: 如果请求成功，将被调用的函数。Success 调用时会传入任务实例。
+- **error**: 如果请求出错，将被调用的函数。
 
 `findOne()` 返回一个解析为任务的延迟对象。
 
-# 获取任务
+## 获取任务列表
 
 ```javascript
 Task.findAll(params,
-  success( tasks ),
-  error( jXHR)
-// tasksDeferred
+  success(tasks),
+  error(jqXHR)
+) //=> tasksDeferred
 ```
 
 从服务器检索任务数组。它接受三个参数：
 
-- params
-传递给服务器的数据。通常是一个空对象 (`{}`)` 或过滤器 `{limit: 20, offset: 100}`。
-
-- success
-如果请求成功，将被调用的函数。Success 调用时会传入一个任务实例数组。
-
-- error
-如果请求出错，将被调用的函数。
+- **params**: 传递给服务器的数据。通常是一个空对象 (`{}`) 或过滤器 `{limit: 20, offset: 100}`。
+- **success**: 如果请求成功，将被调用的函数。Success 调用时会传入一个任务实例数组。
+- **error**: 如果请求出错，将被调用的函数。
 
 `findAll()` 返回一个解析为任务数组的延迟对象。
 
-# 更新任务
+## 更新任务
 
 ```javascript
 task.attr('name','take out recycling');
 task.save(
-  success( task, data ),
-  error( jXHR)
+  success(task, data),
+  error(jqXHR)
 )// taskDeferred
 ```
 
 要更新服务器，首先使用 `attr` 修改模型实例的属性。然后调用 `save()`。`save()` 接受相同的参数并返回与创建任务案例相同的延迟对象。
 
-# 删除任务
+## 删除任务
 
 ```javascript
 task.destroy(
-  success( task, data ),
-  error( jXHR)
+  success(task, data),
+  error(jqXHR)
 )// taskDeferred
 ```
 
 `destroy()` 删除服务器上的任务。`destroy()` 接受两个参数：
 
-- success
-如果保存成功，将被调用的函数。Success 调用时会传入任务实例和服务器返回的数据。
-
-- error
-如果请求出错，将被调用的函数。
+- **success**: 如果保存成功，将被调用的函数。Success 调用时会传入任务实例和服务器返回的数据。
+- **error**: 如果请求出错，将被调用的函数。
 
 与 `save()` 类似，`destroy()` 返回一个解析为已删除任务的延迟对象。
 
-*(注：由于您提供的后半部分英文文本存在大量乱码或重复的占位符，译文已根据意图翻译了清晰的逻辑部分。)*
+# 待定对象
 
-
-
-
-
-# 待定对象 (Deferreds)
-
-发起 Ajax 请求并使用模板渲染结果是一种极其常见的行为。使用之前 $.Model 章节中的 Task 模型，我们可以这样渲染任务：
+发起 Ajax 请求并使用模板渲染结果是一种极其常见的行为。使用之前 `$.Model` 章节中的 Task 模型，我们可以这样渲染任务：
 
 ```javascript
 Task.findAll({}, function(tasks) {
@@ -6159,7 +5670,7 @@ Task.findAll({}, function(tasks) {
 })
 ```
 
-$.View 支持待定对象（[http://api.jquery.com/category/deferred-object/](），这提供了非常强大、真实且高性能的语法。如果在传递给 $.View 的数据或 jQuery 修饰符中发现了待定对象，$.View 将异步加载模板，直到所有待定对象和模板都加载完成后后才会渲染模板。
+`$.View` 支持待定对象（[http://api.jquery.com/category/deferred-object/](http://api.jquery.com/category/deferred-object/)），这提供了非常强大、真实且高性能的语法。如果在传递给 `$.View` 的数据或 jQuery 修饰符中发现了待定对象，`$.View` 将异步加载模板，直到所有待定对象和模板都加载完成后后才会渲染模板。
 
 模型的 `findOne`、`save` 和 `destroy` 返回的是待定对象（deferrals）。这允许我们将多个任务重写为一个：
 
@@ -6178,13 +5689,14 @@ $('#app').html('/views/app.ejs', {
 
 # 打包、预加载与性能
 
-默认情况下，$.View 同步加载模板，因为它预期你正在执行：
+默认情况下，`$.View` 同步加载模板，因为它预期你正在执行：
 
 - 将模板放在 `<script>` 标签中
 - 将模板与你的 JavaScript 构建包一起放置
 - 预加载模板
 
 JavaScriptMVC 不建议将模板放在 `<script>` 标签中。脚本模板使得在不同的 JavaScript 应用程序之间渲染模板变得困难。如果你的应用程序不需要立即使用模板，它们会降低加载性能。
+
 JavaScriptMVC 建议初始将使用的模板与应用程序 JavaScript 打包，并预加载稍后需要的模板。
 
 StealJS 是 JavaScriptMVC 的构建系统，它可以处理并打包模板，将其添加到压缩后的生产环境构建中。只需将 `steal.views(PATH, ...)` 指向你的模板：
@@ -6193,9 +5705,9 @@ StealJS 是 JavaScriptMVC 的构建系统，它可以处理并打包模板，将
 steal.views('tasks.ejs', 'task.ejs');
 ```
 
-稍后当 $.View 查找该模板时，它将使用缓存副本，从而节省额外的 Ajax 请求。
+稍后当 `$.View` 查找该模板时，它将使用缓存副本，从而节省额外的 Ajax 请求。
 
-对于不是立即使用的模板，可以使用 jQuery.get 对其进行预加载和缓存。只需提供模板的 URL 并指定 `dataType` 为 `'view'`（最好在初始页面加载后一段时间内执行）：
+对于不是立即使用的模板，可以使用 `jQuery.get` 对其进行预加载和缓存。只需提供模板的 URL 并指定 `dataType` 为 `'view'`（最好在初始页面加载后一段时间内执行）：
 
 ```javascript
 $(window).load(function() {
@@ -6230,11 +5742,14 @@ $.fn.tooltip = function() {
 
   $(el).show();
   return this;
-});
+};
 ```
 
 要使用它，先将要显示的元素添加到页面，然后在它上调用 tooltip：
-$"<div class='tooltip'>Some Info</>".appendTo(document.body).tooltip()
+
+```javascript
+$("<div class='tooltip'>Some Info</div>").appendTo(document.body).tooltip()
+```
 
 但这段代码有一个问题。你能发现吗？这里有一个提示：如果你的应用程序是长运行的，并且创建了许多此类提示元素怎么办？
 
@@ -6242,23 +5757,23 @@ $"<div class='tooltip'>Some Info</>".appendTo(document.body).tooltip()
 
 这是一个非常容易犯的错误。jQuery 会从页面中移除的元素中移除所有事件处理器，因此开发者通常不需要担心解绑事件处理器。但在这种情况下，我们绑定到了组件外部的物体——文档（document），并且没有撤销事件处理器。
 
-然而，在模型-视图-控制器（MVC）架构中，控制器监听视图，视图监听模型。你不断在监听组件外部的事件。例如，$. 章节中的 `nextPrev` 组件监听分页模式下的更新：
+然而，在模型-视图-控制器（MVC）架构中，控制器监听视图，视图监听模型。你不断在监听组件外部的事件。例如，`$.Model` 章节中的 `nextPrev` 组件监听分页模型的更新：
 
 ```javascript
 paginate.bind('updated.attr', function() {
-  self.find('.prev').canPrev() ? 'addClass' : 'removeClass')('enabled');
-  self.find('.next') ? 'addClass' : 'removeClass')('enabled');
+  self.find('.prev')[paginate.canPrev() ? 'addClass' : 'removeClass']('enabled');
+  self.find('.next')[paginate.canNext() ? 'addClass' : 'removeClass']('enabled');
 });
 ```
 
-但它没有撤销分页监听！忘记移除事件处理器是潜在的错误源。然而，tooltip 和 nextPrev 都不会报错。相反的是，两者都会静默地扼杀应用程序的性能。坦率地说，$.Controller 让这一切变得简单且有条理。以下是我们如何写 tooltip：
+但它没有撤销分页监听！忘记移除事件处理器是潜在的错误源。然而，tooltip 和 nextPrev 都不会报错。相反的是，两者都会静默地扼杀应用程序的性能。坦率地说，`$.Controller` 让这一切变得简单且有条理。以下是我们如何写 tooltip：
 
 ```javascript
 $.Controller('Tooltip', {
   init: function() {
     this.element.show();
   },
-  $(document).on("click", function(el, ev) {
+  "{document} click": function(el, ev) {
     if(ev.target == this.element[0]){
       this.element.remove()
     }
@@ -6266,9 +5781,9 @@ $.Controller('Tooltip', {
 });
 ```
 
-当文档被点击且元素从 DOM 中移除时，$.Controller 会自动撤销文档点击处理程序。
+当文档被点击且元素从 DOM 中移除时，`$.Controller` 会自动撤销文档点击处理程序。
 
-$.Controller 也可以对 nextPrev 组件执行相同的操作，绑定到分页模型：
+`$.Controller` 也可以对 nextPrev 组件执行相同的操作，绑定到分页模型：
 
 ```javascript
 $.Controller('nextPrev', {
@@ -6276,83 +5791,83 @@ $.Controller('nextPrev', {
 });
 ```
 
+## 模板化动作
 
+`$.Controller` 支持模板化动作。模板化动作可以用于绑定到其他对象、自定义事件类型或自定义选择器。
 
+Controller 会将你的动作中看起来像 `{OPTION}` 的部分替换为控制器选项或窗口中的值。
 
-
-## 模板化动作 (Templated Actions)
-
-$.Controller 支持模板化动作。模板化动作可以用于绑定到其他对象、自定义事件类型或自定义选择器。
-
-Controller 会将你的动作中看起来像 {OPTION} 的部分替换为控制器选项或窗口中的值。
-
-以下是一个菜单的的骨架，你可以对其进行自定义以便在不同的事件上显示子菜单：
+以下是一个菜单的骨架，你可以对其进行自定义以便在不同的事件上显示子菜单：
 
 ```javascript
 $.Controller("Menu",{
-  li (openEvent) : function(){
+  defaults: {
+    openEvent: 'click'
+  },
+  "li {openEvent}": function(){
     // 显示子元素
   }
 });
 
 // 创建一个点击时显示子元素的菜单
-("#clickMenu").menu(openEvent: 'click');
+$("#clickMenu").menu({openEvent: 'click'});
 
 // 创建一个在鼠标悬入时显示子元素的菜单
-("#hoverMenu").menu(openEvent: 'mouseenter');
+$("#hoverMenu").menu({openEvent: 'mouseenter'});
 ```
 
 我们可以进一步增强菜单，允许自定义菜单元素标签：
 
 ```javascript
 $.Controller("Menu",{
-  defaults : "menuTag",
-});
-{
-  "{menuTag}\ (openEvent)\ : function(){
+  defaults: {
+    menuTag: "li",
+    openEvent: 'click'
+  },
+  "{menuTag} {openEvent}": function(){
     // 显示子元素
   }
 });
 
-("#divMenu").menu(menuTag : "div")
+$("#divMenu").menu({menuTag: "div"})
 ```
 
-模板化动作允许你绑定到控制器元素之外的元素或对象。例如，来自 $.Model 的 Task 模型在创建新 Task 时会产生 "created" 事件。我们可以让我们的组件列表监听任务的创建，然后自动将这些任务添加到列表中：
+模板化动作允许你绑定到控制器元素之外的元素或对象。例如，来自 `$.Model` 的 Task 模型在创建新 Task 时会产生 "created" 事件。我们可以让我们的组件列表监听任务的创建，然后自动将这些任务添加到列表中：
 
 ```javascript
 $.Controller("List", {
-  defaults :
-  template: "items.ejs"
-},{
-  init : function(){
+  defaults: {
+    template: "items.ejs"
+  },
+  init: function(){
     this.element.html(this.options.template, this.options.model.findAll());
-  }
-  "{Task}" : function(Task, ev, newTask){
+  },
+  "{model} created": function(Model, ev, newTask){
     this.element.append(this.options.template, [newTask])
   }
 })
 ```
 
-"Task create" 会带有 Task 模型、created 事件和新创建的 Task 被调用。该函数使用模板渲染任务列表（在这种情况下只有一个任务），并将生成的 HTML 添加到元素中。
+`"{model} created"` 会带有 Model 模型、created 事件和新创建的 Task 被调用。该函数使用模板渲染任务列表（在这种情况下只有一个任务），并将生成的 HTML 添加到元素中。
 
 但让 List 与任何模型工作会更好。我们不再硬编码任务，而是让控制器接收一个模型作为选项：
 
 ```javascript
 $.Controller("List", {
-  defaults : {
+  defaults: {
     template: "items.ejs",
     model: null
   },
-  init : function(){
+  init: function(){
     this.element.html(this.options.template, this.options.model.findAll() );
   },
-  "model created" : function(Model, newItem) {
+  "{model} created": function(Model, ev, newItem) {
     this.element.append(this.options.template, [newItem]);
   }
 });
 
 // 创建任务列表
-$('tasks').list({model: Task, template: "tasks.ejs"});
+$('#tasks').list({model: Task, template: "tasks.ejs"});
 ```
 
 ## 整合一切：抽象的 CRUD 列表
@@ -6360,49 +5875,48 @@ $('tasks').list({model: Task, template: "tasks.ejs"});
 我们现在增强列表，不仅在创建项目时添加它们，而且在它们销毁时更新和移除它们。为了做到，我们首先监听更新和销毁：
 
 ```javascript
-"model updated" : function(Model, updatedItem) {
+"{model} updated": function(Model, ev, updatedItem) {
   // 查找并更新 updatedItem 的 LI
 },
-"model destroyed" : function(Model, destroyedItem) {
+"{model} destroyed": function(Model, ev, destroyedItem) {
   // 查找并移除 destroyedItem 的 LI
 }
 ```
 
-你会注意到我们有一个问题。通过某种方式，我们需要找到代表特定实例的元素。幸运的是，$.Model 和 $.View 我们可以非常容易地用实例标记元素并找到该元素。
+你会注意到我们有一个问题。通过某种方式，我们需要找到代表特定实例的元素。幸运的是，`$.Model` 和 `$.View` 我们可以非常容易地用实例标记元素并找到该元素。
 
 要在 EJS 视图中用模型实例标记元素，只需将模型实例写入元素中即可。以下可能是 tasks.ejs：
 
 ```html
-<% (var i = 0; i < this.length; i++) { %>
+<% for(var i = 0; i < this.length; i++) { %>
 <% var task = this[i]; %>
-<li id="<%= task.name %>"><%= task %></li>
+<li><%= task %></li>
 <% } %>
 ```
 
-tasks.ejs 遍历任务列表。对于每个任务，它会创建一个带有任务名称的 li 元素。它还通过 `<li><%= task %></li>` 将任务添加到元素的 jQuery 数据中。
+tasks.ejs 遍历任务列表。对于每个任务，它会创建一个 li 元素。它还通过 `<li><%= task %></li>` 将任务添加到元素的 jQuery 数据中。
 
-为了以后根据给定模型实例获取该元素，调用 `modelInstance.elements([[CONTENT]])`。这共同返回代表模型实例的 jQuery 包装元素。
+为了以后根据给定模型实例获取该元素，调用 `modelInstance.elements()`。这将返回代表模型实例的 jQuery 包装元素。
 
 将它们整合在一起，列表变为：
 
 ```javascript
 $.Controller("List", {
-  defaults : {
+  defaults: {
     template: "items.ejs",
     model: null
   },
-  init : function() {
+  init: function() {
     this.element.html(this.options.template, this.options.model.findAll() );
   },
-  "{model} created" : function(Model, ev, newItem) {
+  "{model} created": function(Model, ev, newItem) {
     this.element.append(this.options.template, [newItem])
   },
-  "{model} updated" : function(Model, ev, updatedItem) {
-    updatedItem.elements.replaceWith(this.options.template, [updatedItem])
+  "{model} updated": function(Model, ev, updatedItem) {
+    updatedItem.elements().replaceWith(this.options.template, [updatedItem])
   },
-  "{model} destroyed" : function(Model, ev, destroyedItem) {
-    destroyedItem.elements(this.element)
-    this.remove()
+  "{model} destroyed": function(Model, ev, destroyedItem) {
+    destroyedItem.elements(this.element).remove()
   }
 });
 
@@ -6418,10 +5932,6 @@ $("#tasks").list({model: Task, template: "tasks.ejs"});
 
 已经开发了许多库来让 DOM 操作变得更简单，但很少有库像 jQuery 这样受欢迎并受赞誉。这也是理由的：jQuery 的 API 非常优秀，而且库轻量且具有命名空间，因此它不会与你使用的任何其他东西发生冲突。此外，jQuery 易于扩展；开发了大量的插件，从 JavaScript 验证到进度条。
 
-*(注：原文中该段存在大量重复，此处已按要求保留核心内容)*
-
-
-
 ```javascript
 var element = $("p");
 element.addClass("bar");
@@ -6432,20 +5942,20 @@ element.text("Some content");
 
 ```javascript
 // 添加一个元素
-newDiv = $("div");
+var newDiv = $("<div>");
 $("body").append(newDiv);
 ```
 
 ```javascript
 // 将元素作为第一个子元素
-$(".container").prepend($("#
+$(".container").prepend($("#child"));
 ```
 
 或者，你可以在元素之前/之后插入元素：
 
 ```javascript
 // 在另一个元素之后插入元素
-$(".container").after($("child"));
+$(".container").after($("#child"));
 ```
 
 ```javascript
@@ -6484,8 +5994,11 @@ $("#foo").css("color", "#0000");
 ```
 
 ```javascript
-// 或者传递一个哈来设置多个样式
+// 或者传递一个哈希来设置多个样式
 $("#foo").css({
+  color: "#000",
+  background: "#fff"
+});
 ```
 
 jQuery 为常用的样式更改提供了许多快捷方法：
@@ -6519,12 +6032,10 @@ var getHtml = $("#bar").html();
 $("#bar").html("<p>Hi</p>");
 ```
 
-```text
 `text()` 函数也是如此，尽管参数经过了转义：
 
 ```javascript
 var getText = $("#bar").text();
-
 $("#bar").text("Plain text contents");
 ```
 
@@ -6555,7 +6066,7 @@ $(".click").click(function(){ /* ... */ });
 你非常可能用到的事件之一是 `document.ready`。它在页面加载时触发，即在图像等元素加载之前 DOM 准备就绪时。jQuery 为该事件提供了快捷方法——只需向 jQuery 对象传递一个函数：
 
 ```javascript
-jquery(function(){
+$(function(){
   // 在 document.ready 时执行
 });
 ```
@@ -6583,40 +6094,31 @@ $(".click").click(function() {
 ```javascript
 $(".click").click($.proxy(function() {
   // 上下文已改变
-  this;}));
+  this.clickedClick();
+}, this));
 ```
 
 关于事件委托和上下文的进一步解释，请参阅第 2 章。
 
 # Ajax
 
-Ajax（或 `XMLHttpRequest`）是另一个在不同浏览器中实现完全不同的特性。由于 jQuery 抽象了它们，
-
-
-稍后可以使用后者来添加一些效果。当页面加载时，我们将追加容器 div：
+Ajax（或 `XMLHttpRequest`）是另一个在不同浏览器中实现完全不同的特性。由于 jQuery 抽象了它们，稍后可以使用后者来添加一些效果。当页面加载时，我们将追加容器 div：
 
 ```javascript
 // = require <jquery>
 // = require <jquery.ui>
-```
 
-```javascript
 (function(){
   var container = $("<div />");
   container.attr({id: "growl"});
-});
-```
 
-```javascript
-$(function(){
-  // 在页面加载时，追加 div
-  $("body").append(container);
-});
-```
+  $(function(){
+    // 在页面加载时，追加 div
+    $("body").append(container);
+  });
 
-```javascript
-/* ... */
-}(jQuery);
+  /* ... */
+}(jQuery));
 ```
 
 现在是插件的登录逻辑。每当我们有新消息时，都会向容器元素添加一个 div。我们为消息添加了掉落效果，然后在经过一段时间计时后，将其淡出并移除——就像 OS X 上 Growl 的行为一样：
@@ -6626,27 +6128,19 @@ $.growl = function(body){
   // 创建 Growl div
   var msg = $("<div />").addClass("msg");
   msg.html(body);
-```
 
-```javascript
-// 将其添加到列表
-container.append(msg);
-```
+  // 将其添加到列表
+  container.append(msg);
 
-```javascript
-// 添加掉落效果，然后移除
-msg.show("drop", {
-  direction: "down",
-  distance: 50,
-  delay(2000),
-  fadeOut(300, function(){
+  // 添加掉落效果，然后移除
+  msg.show("drop", {
+    direction: "down",
+    distance: 50
+  }).delay(2000).fadeOut(300, function(){
     $(this).remove();
   });
-});
-```
 
-```javascript
-return msg;
+  return msg;
 };
 ```
 
@@ -6669,26 +6163,22 @@ return msg;
   min-height: 30px;
   padding: 10px;
   margin-bottom: 10px;
-
   border: 1px solid #171717;
   color: #E4E4E4;
   text-shadow: 0 -1px 1px #0A131A;
   font-weight: bold;
   font-size: 15px;
-
   background: #141517;
   background: -webkit-gradient(
     linear, left top, left bottom,
     from(rgba(255, 255, 255, 0.1)),
     color-stop(0.8, rgba(255, 255, 255, 0)),
     rgba(0, 0, 0, 0.8));
-
   -webkit-box-shadow: inset 0 1px 1px #8EE8E8;
-  moz-box-shadow: inset 0 1px 1px #8EE8E8;
+  -moz-box-shadow: inset 0 1px 1px #8EE8E8;
   box-shadow: inset 0 1px 1px #8EE8E8;
-
   -webkit-border-radius: 7px;
-  moz-border-radius: 7px;
+  -moz-border-radius: 7px;
   border-radius: 7px;
 }
 ```
@@ -6715,9 +6205,9 @@ return msg;
 
 你可以写这样的：
 
-```css
+```less
 .panel {
-  vbg-gradient(#FFF, #CCC);
+  .bg-gradient(#FFF, #CCC);
 }
 ```
 
@@ -6739,12 +6229,12 @@ header {
 }
 ```
 
-# 混合器 (Mixins)
+# 混合器
 
 Less 混合器的行为非常像 C 语言宏。基本上，你定义一个混合器，它可以接收可选参数，如下：
 
 ```less
-.vbg-gradient(@fc: #FFF, @tc: #CCC) {
+.bg-gradient(@fc: #FFF, @tc: #CCC) {
   background: @fc;
   background: -webkit-gradient(linear, left top, left bottom, from(@fc), to(@tc));
   background: -moz-linear-gradient(top, @fc, @tc);
@@ -6758,7 +6248,7 @@ Less 混合器的行为非常像 C 语言宏。基本上，你定义一个混合
 
 由于 CSS3 尚未完成标准化进程，浏览器厂商指定了自己的前缀，例如 -webkit 和 -moz。这在某种程度上是因为我们可以立即开始使用这些功能，但这种语法非常冗长，因为你需要为不同的浏览器定义两次或三次样式。
 
-```css
+```less
 div {
   p {
     color: red;
@@ -6766,15 +6256,11 @@ div {
 }
 ```
 
-
-
-
-
 ## 附录 C
 
 ## CSS3 参考
 
-在 CSS2.1 中制作精美的界面是非常棘手的的，因为这通常涉及大量的额外标记、图像和 JavaScript。CSS3 试图解决这些问题，提供了各种非常实用的属性和选择器，帮助你创建惊艳的用户界面。
+在 CSS2.1 中制作精美的界面是非常棘手的，因为这通常涉及大量的额外标记、图像和 JavaScript。CSS3 试图解决这些问题，提供了各种非常实用的属性和选择器，帮助你创建惊艳的用户界面。
 
 通常在设计 Web 应用程序时，我会跳过 Photoshop，直接进入 CSS3 和 HTML5。现在有了这些强大的技术，设计静态的 PSD 原型似乎有些多余了。客户也倾向于喜欢这一点，因为他们可以与产品的 HTML 原型进行交互，从而对用户体验有更好的感受。
 
@@ -6804,9 +6290,9 @@ div {
 
 ```css
 #prefix-example {
--moz-box-shadow: 0 3px 5px #FFF;
--webkit-box-shadow: 0 3px 5px #FFF;
--box-shadow: 0 3px 5px #FFF;
+  -moz-box-shadow: 0 3px 5px #FFF;
+  -webkit-box-shadow: 0 3px 5px #FFF;
+  box-shadow: 0 3px 5px #FFF;
 }
 ```
 
@@ -6829,15 +6315,15 @@ CSS3 为你提供了指定颜色的新方法，包括 Alpha 透明度。
 
 HSL 取三个值：
 
-### 色相 (Hue)
+### 色相
 
 色环上的角度；0（或 360）是红色，120 是绿色，240 是蓝色。之间的数字创建不同的色调。
 
-### 饱和度 (Saturation)
+### 饱和度
 
 百分比值；100% 显示全色。
 
-### 亮度 (Lightness)
+### 亮度
 
 同样是百分比；0% 是暗（黑色），100% 是亮（白色），50% 是平均值。
 
@@ -6858,7 +6344,6 @@ HSL 取三个值：
 - Opera: 完全支持
 - Safari: 完全支持
 - IE: 完全支持
-- Opera: 完全支持
 
 ## 圆角
 
@@ -6868,15 +6353,10 @@ HSL 取三个值：
 
 ```css
 border-radius: 20px;
-
 // 水平，垂直
 border-radius: 20px 20px;
-
 // 左上, 右上, 右下, 左下
 border-radius: 20px 20px 20px 20px;
-```
-
-```css
 border-radius: 50px 50%;
 ```
 
@@ -6886,7 +6366,7 @@ border-radius: 50px 50%;
 - Chrome: 完全支持
 - Safari: 完全支持
 
-## 投影 (Drop Shadows)
+## 投影
 
 以前，制作投影唯一的方法是使用图像。CSS3 增加了对 `box-shadow` 的支持，这变得简单得多。你还可以通过逗号分隔多个阴影：
 
@@ -6922,7 +6402,7 @@ h1 {
 - IE: 不支持
 - Opera: 完全支持
 
-## 渐变 (Gradients)
+## 渐变
 
 以前，渐变是通过重复背景图像实现的。这意味着它们有固定的宽度或高度，并且你需要图像编辑器来修改它们。
 
@@ -6946,51 +6426,51 @@ background: linear-gradient(left, #CCC, #DDD, #FFF);
 background: linear-gradient(-45deg, #CCC, #FFF);
 ```
 
-
-
 如果你想对渐变过渡的起始位置有更多控制，可以使用颜色停止（color stops）。只需在颜色旁边指定百分比或像素值即可：
 
-linear-gradient(white , #DDD 20%, black)
+```css
+linear-gradient(white, #DDD 20%, black)
+```
 
 你还可以在透明度之间进行过渡：
 
-radial-gradient( rgba(255, 255, 255, .8) , transparent ) 。它很快将与标准对齐。
+```css
+radial-gradient(rgba(255, 255, 255, .8), transparent)
+```
 
 Safari 有完全不同的语法。但目前，使用方法如下：
 
-```
-// -webkit-gradient(<type>, <point> [<radius]?, <point> [,radius]>
-//, [stop>];
-webkit-gradient(linear, left top, left bottom,
-from(#FF), color-stop(10%, #DDD), to(#CCC));
+```css
+// -webkit-gradient(<type>, <point> [<radius]?, <point> [,radius]?, [stop>]);
+-webkit-gradient(linear, left top, left bottom, from(#FF), color-stop(10%, #DDD), to(#CCC));
 ```
 
 尽管大多数浏览器都支持 CSS 标准，但每个浏览器都会在语法前加上其厂商名称：
 
-- Firefox: 使用 -moz-
-- Chrome: 使用 -webkit-
+- Firefox: 使用 `-moz-`
+- Chrome: 使用 `-webkit-`
 - Safari: 替代实现
-- IE >= 10: 使用 -ms-
-- Opera >= 11.1: 使用 -o-
+- IE >= 10: 使用 `-ms-`
+- Opera >= 11.1: 使用 `-o-`
 
 因此，渐变的跨浏览器工作方式如下：
 
-```
+```css
 #gradient-example {
-/* Fallback /
-background: #FFF;
-/* Chrome < 10, Safari < 5.1 *
-background: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#CCC));
-/* Chrome > 10, Safari >= 5.1 *
-background: -webkit-linear-gradient(#FFF, #CCC);
-/* Firefox = 3.6 *
-background: -moz-linear-gradient(#FFF, #CCC);
-/* Opera >= 11.1 *
-background: -o-linear-gradient(#FFF, #CCC);
-/* IE >= 10 *
-background: -ms-linear-gradient(#FFF, #CCC);
-/* The standard */
-background: linear-gradient(#FFF, #CCC);
+  /* Fallback */
+  background: #FFF;
+  /* Chrome < 10, Safari < 5.1 */
+  background: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#CCC));
+  /* Chrome > 10, Safari >= 5.1 */
+  background: -webkit-linear-gradient(#FFF, #CCC);
+  /* Firefox >= 3.6 */
+  background: -moz-linear-gradient(#FFF, #CCC);
+  /* Opera >= 11.1 */
+  background: -o-linear-gradient(#FFF, #CCC);
+  /* IE >= 10 */
+  background: -ms-linear-gradient(#FFF, #CCC);
+  /* The standard */
+  background: linear-gradient(#FFF, #CCC);
 }
 ```
 
@@ -7000,10 +6480,12 @@ background: linear-gradient(#FFF, #CCC);
 
 就像你可以在 CSS3 中指定多个阴影一样，你也可以指定多个背景。为了有许多背景图像，你必须创建大量的嵌套元素——即过多的额外标记。CSS3 允许你向背景样式提供一个逗号分隔的列表，极大地减少了所需的标记数量：
 
+```css
 background: url(snowflakes.png) top repeat-x,
-url(chimney.png) bottom no-repeat,
--moz-linear-gradient(white, #CCC),
-#CCC;
+            url(chimney.png) bottom no-repeat,
+            -moz-linear-gradient(white, #CCC),
+            #CCC;
+```
 
 浏览器支持：
 
@@ -7017,44 +6499,44 @@ url(chimney.png) bottom no-repeat,
 
 CSS3 为你提供了一系列新的选择器来定位元素：
 
-- :first-child: 选择选择器中的第一个项目
-- :last-child: 选择选择器中的最后一个项目
-- :only-child: 选择只有一个子元素的元素
-- :target: 选择当前 URL 哈希值中目标的元素
-- :checked: 选择已选中的复选框
+- `:first-child`: 选择选择器中的第一个项目
+- `:last-child`: 选择选择器中的最后一个项目
+- `:only-child`: 选择只有一个子元素的元素
+- `:target`: 选择当前 URL 哈希值中目标的元素
+- `:checked`: 选择已选中的复选框
 
 我想要更详细地介绍的选择器列在下方。
 
-## 第 n 个子元素 (Nth Child)
+## 第 n 个子元素
 
-:nth-child 允许你对每 n 个子元素进行交替样式。例如，这选择了每第三个子元素：
+`:nth-child` 允许你对每 n 个子元素进行交替样式。例如，这选择了每第三个子元素：
 
-```
-#example:nth-child( 3 n ) { /* ... */
+```css
+#example:nth-child(3n) { /* ... */ }
 ```
 
 你可以用它来选择偶数或奇数子元素：
 
 ```css
 /* 偶数子元素 */
-#example:nth-child( 2 n ) { /* ... */ }
-#example:nth-child( even ) { /* ... */ }
+#example:nth-child(2n) { /* ... */ }
+#example:nth-child(even) { /* ... */ }
 ```
 
 ```css
 /* 奇数子元素 */
 #example:nth-child(2n+1) { /* ... */ }
-#example:nth-child( odd ) { /* ... */ }
+#example:nth-child(odd) { /* ... */ }
 ```
 
 你还可以反转选择器：
 
 ```css
-/* 子元素 */
-#example:nth-last-child( 1 )
+/* 最后一个子元素 */
+#example:nth-last-child(1)
 ```
 
-事实上，:first-child 等于 :nth-child(1)，而 :last-child 等于 :nth-last-child(1)。
+事实上，`:first-child` 等于 `:nth-child(1)`，而 `:last-child` 等于 `:nth-last-child(1)`。
 
 ## 直接后代
 
@@ -7067,11 +6549,11 @@ CSS3 为你提供了一系列新的选择器来定位元素：
 
 ## 选择器否定
 
-你可以使用 :not 否定选择器，可以对其传递一个简单的选择器。目前，否定不支持更复杂的选择器，如 :not(h1 + p)：
+你可以使用 `:not` 否定选择器，可以对其传递一个简单的选择器。目前，否定不支持更复杂的选择器，如 `:not(h1 + p)`：
 
 ```css
 /* 仅限直接后代元素，排除带有 "current" 类的 */
-#example > :not(.current) { display: none
+#example > :not(.current) { display: none }
 ```
 
 浏览器支持：
@@ -7082,18 +6564,18 @@ CSS3 为你提供了一系列新的选择器来定位元素：
 - IE: 完全支持
 - Opera: 完全支持
 
-## 过渡 (Transitions)
+## 过渡
 
 CSS 增加了对过渡的支持，让你可以在样式变化时创建简单的动画。你需要向 transition 属性传递持续时间、属性和可选的动画类型。你可以以秒（s）或毫秒（ms）指定持续时间：
 
 ```css
-/*持续时间，属性，动画类型（可选） */
-transition: 1.5s opacity-out
+/* 持续时间，属性，动画类型（可选） */
+transition: 1.5s opacity ease-out;
 ```
 
 ```css
 /* 多重过渡 */
-transition: 2s opacity, .5s height,.5s width
+transition: 2s opacity, .5s height, .5s width;
 ```
 
 在第一个示例中，当透明度变化时（例如应用了某种样式），原始值和新值将产生动画效果。有多种类型的计时函数：
@@ -7103,7 +6585,7 @@ transition: 2s opacity, .5s height,.5s width
 - ease-out
 - ease-in-out
 
-或者，你可以使用三次贝塞尔曲线指定自定义的计时序列，它描述了动画序列，例如 cubic-bezier(x1, y1, x2, y2)：
+或者，你可以使用三次贝塞尔曲线指定自定义的计时序列，它描述了动画序列，例如 `cubic-bezier(x1, y1, x2, y2)`：
 
 ```css
 #transition-example {
@@ -7117,7 +6599,7 @@ transition: 2s opacity, .5s height,.5s width
 
 ```css
 #transition-example {
-  width:50px;
+  width: 50px;
   height: 50px;
   background: red;
   -webkit-transition: 2s ease-in-out;
@@ -7125,45 +6607,40 @@ transition: 2s opacity, .5s height,.5s width
   -o-transition: 2s ease-in-out;
   transition: 2s ease-in-out;
 }
-```
 
-```css
 #transition-example:hover {
   background: blue;
 }
 ```
 
-出于某种原因，只有当至少有一个渐变具有 alpha 透明度时，你才能在渐变之间进行过渡。你无法在某些值之间进行过渡，例如 height:0 到 height:auto。
+出于某种原因，只有当至少有一个渐变具有 alpha 透明度时，你才能在渐变之间进行过渡。你无法在某些值之间进行过渡，例如 `height:0` 到 `height:auto`。
 
 浏览器支持：
 
-- Firefox: 使用 -moz-
-- Chrome: 使用 -webkit-
-- Safari: 使用 -webkit-
-- IE >= 10: 使用 -ms-
-- Opera: 使用 -o-
+- Firefox: 使用 `-moz-`
+- Chrome: 使用 `-webkit-`
+- Safari: 使用 `-webkit-`
+- IE >= 10: 使用 `-ms-`
+- Opera: 使用 `-o-`
 
 ## 边框图像
 
-通过 **border-image**，你可以使用图像作为元素的边界。第一个参数指定图像的 URL，后续参数描述如何切割图像。最后部分是拉伸值，它描述了边和中间切片的如何缩放和平铺。可用的拉伸值为 *round*、repeat* 和 stretch：
+通过 **border-image**，你可以使用图像作为元素的边界。第一个参数指定图像的 URL，后续参数描述如何切割图像。最后部分是拉伸值，它描述了边和中间切片的如何缩放和平铺。可用的拉伸值为 `round`、`repeat` 和 `stretch`：
 
 ```css
 border-image: url(border.png) 14 14 14 14 round;
-```
-
-```css
-border-image: url(border.png) 14 14 14 14 stretch
+border-image: url(border.png) 14 14 14 14 stretch;
 ```
 
 浏览器支持：
 
-- Firefox: 使用 -moz-
-- Chrome: 使用 -webkit-
-- Safari: 使用 -webkit-
+- Firefox: 使用 `-moz-`
+- Chrome: 使用 `-webkit-`
+- Safari: 使用 `-webkit-`
 - IE: 不支持
 - Opera: 不支持
 
-## 盒模型 (Box Sizing)
+## 盒模型
 
 你是否曾经想让 100% 的宽度包含其内边距？在传统的盒模型中，计算宽度时不包含内边距和边框。然而，通过将 box-sizing 设置为 `border-box`——而不是默认的 content-box——你可以更改尺寸的计算方式：
 
@@ -7194,8 +6671,8 @@ transform: skew(30deg, -10deg);
 元素的位置可以通过 x 或 y 轴进行平移：
 
 ```css
-translateX(30px);
-transformY(500px);
+transform: translateX(30px);
+transform: translateY(500px);
 ```
 
 你可以使用 scale 变换增加或缩小元素的大小。默认情况下，元素的缩放比例为 1：
@@ -7212,31 +6689,26 @@ transform: rotate(30deg) skewX(30deg);
 
 浏览器支持：
 
-- Firefox: 使用 -moz-
-- Chrome: 使用 -webkit-
-- Safari: 使用 -webkit-
+- Firefox: 使用 `-moz-`
+- Chrome: 使用 `-webkit-`
+- Safari: 使用 `-webkit-`
 - IE 8: 不支持
 - Opera: 不支持
 
+## 弹性盒模型
 
+CSS3 引入了弹性盒模型，这是一种新的布局模式，允许你创建灵活的、响应式的布局。通过设置 `display: -webkit-box` 或 `display: -moz-box`，然后将方向设置为等量扩展，子元素将以此方式排列。默认情况下，所有子元素都会扩展以适应父元素。然而，你也可以通过设置 `box-flex` 属性来更改此行为。
 
+通过将 `box-flex` 设置为 0，你指定了该元素不应扩展；而如果你将 flex 设置为 1 或更高，该元素将扩展以适应可用内容空间。例如，侧边栏的 flex 属性可以为 0，而主内容的 flex 属性可以为 1：
 
-
--moz-box-align: stretch;
-}
-
-我们将显示模式设置为 -webkit-box 或 -moz-box，然后将方向设置为等量扩展（expand），子元素将以此方式排列。默认情况下，所有子元素都会扩展以适应父元素。然而，你也可以通过设置 box-flex 属性来更改此行为。
-
-通过将 box-flex 设置为 0，你指定了该元素不应扩展；而如果你将 flex 设置为 1 或更高，该元素将扩展以适应可用内容空间。例如，侧边栏的 flex 属性可以为 0，而主内容的 flex 属性可以为 1：
-
-```
+```css
 #sidebar {
   -webkit-box-flex: 0;
   -moz-box-flex: 0;
   box-flex: 0;
-
   width: 200px;
 }
+
 #content {
   -webkit-box-flex: 1;
   -moz-box-flex: 1;
@@ -7246,21 +6718,21 @@ transform: rotate(30deg) skewX(30deg);
 
 浏览器支持：
 
-- Firefox: 使用 -moz-
-- Chrome: 使用 -webkit-
-- Safari: 使用 -webkit-
-- IE >= 10: 使用 -ms-
+- Firefox: 使用 `-moz-`
+- Chrome: 使用 `-webkit-`
+- Safari: 使用 `-webkit-`
+- IE >= 10: 使用 `-ms-`
 - Opera: 不支持
 
 # 字体
 
-@font-face 允许你使用自定义字体在网页上显示文本。因此，你不再需要依赖于已安装的有限数量系统字体。
+`@font-face` 允许你使用自定义字体在网页上显示文本。因此，你不再需要依赖于已安装的有限数量系统字体。
 
 支持的字体格式有 TrueType 和 OpenType。字体受相同的域策略限制——文件必须与使用它的页面位于同一域。
 
-你可以像这样指定 @font-face，为其赋予一个 font-family 以及字体所在的 URL 路径：
+你可以像这样指定 `@font-face`，为其赋予一个 font-family 以及字体所在的 URL 路径：
 
-```
+```css
 @font-face {
   font-family: "Bitstream Vera Serif Bold";
   src: url("/fonts/VeraSeB.ttf");
@@ -7269,7 +6741,7 @@ transform: rotate(30deg) skewX(30deg);
 
 然后，你可以像使用任何其他字体一样使用它：
 
-```
+```css
 #font-example {
   font-family: "Bitstream Vera Serif Bold";
 }
@@ -7285,13 +6757,13 @@ transform: rotate(30deg) skewX(30deg);
 - IE >= 9: 完全支持
 - Opera: 完全支持
 
-# 优雅降级 (Graceful Degradation)
+# 优雅降级
 
 如果你正确编写 CSS，你的应用程序将实现优雅降级。在不支持 CSS3 的浏览器中它仍然可以工作——只是外观不会那么漂亮。
 
 优雅降级的关键在于浏览器会忽略它们不理解的内容，例如未知的 CSS 属性、值和选择器。CSS 属性会相互覆盖，因此如果在同一个规则中定义了两次同一个属性，第一个属性会被覆盖。你应该将符合 CSS 2.1 标准的属性放在前面，这样如果支持 rgba，它就会被覆盖：
 
-```
+```css
 #example-gd {
   background: white;
   background: rgba(255, 255, 255, .75);
@@ -7300,10 +6772,10 @@ transform: rotate(30deg) skewX(30deg);
 
 厂商前缀呢？同样的规则适用。只需为每个浏览器包含前缀——它将使用它理解的那一个。你应该将不带前缀的版本放在最后，因为当浏览器的 CSS3 支持标准化并移除前缀时，将使用它：
 
-```
+```css
 #example-gd {
   background: #FFF;
-  background: -webkit-gradient(linear, left top, left bottom,#FFF), to(#CCC);
+  background: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#CCC));
   background: -webkit-linear-gradient(#FFF, #CCC);
   background: -moz-linear-gradient(#FFF, #CCC);
   background: linear-gradient(#FFF, #CCC);
@@ -7314,10 +6786,11 @@ transform: rotate(30deg) skewX(30deg);
 
 Modernizr 用于检测对各种 CSS3 属性的支持，允许你可以在样式表中针对特定的浏览器行为：
 
-```
+```css
 .multiplebggs div p {
   /* 针对支持多重背景浏览器的属性 */
 }
+
 .no-multiplebggs div p {
   /* 针对不支持的浏览器的可选备用属性 */
 }
@@ -7325,13 +6798,13 @@ Modernizr 用于检测对各种 CSS3 属性的支持，允许你可以在样式�
 
 Modernizr 检测到支持的一些特性包括：
 
-- @font-face
-- rgba()
-- hsla()
-- border-image:
-- border-radius:
-- box-shadow:
-- text-shadow:
+- `@font-face`
+- `rgba()`
+- `hsla()`
+- `border-image`
+- `border-radius`
+- `box-shadow`
+- `text-shadow`
 - 多重背景
 - 弹性盒模型
 - CSS 动画
@@ -7341,14 +6814,14 @@ Modernizr 检测到支持的一些特性包括：
 
 要查看完整列表或下载 Modernizr，请访问项目页面。
 
-使用 Modernizr 非常简单——只需包含 JavaScript 文件并在 <html> 标签中添加 `no-js` 类：
+使用 Modernizr 非常简单——只需包含 JavaScript 文件并在 `<html>` 标签中添加 `no-js` 类：
 
 ```html
 <script src="javascript/modernizr.js"></script>
 <html class="no-js">
 ```
 
-Modernizr 为 <html> 标签添加一些类，你可以在选择器中使用这些类来针对特定的浏览器行为：
+Modernizr 为 `<html>` 标签添加一些类，你可以在选择器中使用这些类来针对特定的浏览器行为：
 
 ```css
 /* 当弹性盒模型不可用时使用备用布局 */
@@ -7361,15 +6834,15 @@ Modernizr 为 <html> 标签添加一些类，你可以在选择器中使用这�
 
 Google Chrome Frame (GCF) 是一个 Internet Explorer 扩展，允许你将 IE 的渲染器切换到 Google Chrome 的渲染器 Chromium。
 
-一旦安装了扩展，你可以在页面的 <head> 中通过 meta 标签启用 GCF：
+一旦安装了扩展，你可以在页面的 `<head>` 中通过 meta 标签启用 GCF：
 
-```
+```html
 <meta http-equiv="X-UA-Compatible" content="chrome=1">
 ```
 
-或者，另一种方法是在响应头头部中添加该设置：
+或者，另一种方法是在响应头中添加该设置：
 
-```
+```http
 X-UA-Compatible: chrome=1
 ```
 
@@ -7377,15 +6850,15 @@ X-UA-Compatible: chrome=1
 
 第一步是包含 GCF JavaScript：
 
-```
-<script src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">
+```html
+<script src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js"></script>
 ```
 
 在页面加载处理程序或页面底部，我们需要调用 CFInstall：
 
 ```javascript
 <script>
-jQuery(function({
+jQuery(function(){
   CFInstall.check({
     mode: "overlay",
   });
@@ -7395,9 +6868,9 @@ jQuery(function({
 
 CFInstall 接受多个选项：
 
-- mode Inline（内联）、overlay（覆盖）或 popup（弹出）
-- destination 安装后要跳转的地址，通常是当前页面
-- node 元素的 ID
+- **mode**: Inline（内联）、overlay（覆盖）或 popup（弹出）
+- **destination**: 安装后要跳转的地址，通常是当前页面
+- **node**: 元素的 ID
 
 一旦安装了 GCF，浏览器将使用 Chromium 引擎。这允许你使用旧版本 IE 不支持的现代 CSS 特性。
 
@@ -7527,45 +7000,41 @@ header {
 
 这种方法比使用浮动要简洁得多且更具响应性。
 
-
-
 ```css
-padding: 10px 10px 7px 20px;
-border-bottom: 1px solid #cdcdcc;
-cursor: pointer;
+.sidebar li {
+  padding: 10px 10px 7px 20px;
+  border-bottom: 1px solid #cdcdcc;
+  cursor: pointer;
+  -moz-box-shadow: 0 1px 1px #fcfcfc;
+  -webkit-box-shadow: 0 1px 1px #fcfcfc;
+  box-shadow: 0 1px 1px #fcfcfc;
+}
 
-moz-box-shadow: 0 1px 1px #fcfcfc;
--webkit-box-shadow: 0 1px 1px #fcfcfc;
-box-shadow: 0 1px 1px #fcfcfc;
-```
-
-```css
 #content .sidebar li.active {
-color: #ffffff;
-text-shadow: 0 1px 1px #46677f;
-
--webkit-box-shadow: none;
-moz-box-shadow: none;
-
-background: #7bb5db;
--webkit-background-gradient(linear, left top, left bottom,
-from(#7bb5db), to(#4775b8));
-background-webkit-linear-gradient(top, #7bb5db, #4775b8);
-background-moz-linear-gradient(top, #7bb5db, #4775b8);
-linear-gradient(top, #7bb5db, #4775b8);
+  color: #ffffff;
+  text-shadow: 0 1px 1px #46677f;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  background: #7bb5db;
+  background: -webkit-gradient(linear, left top, left bottom, from(#7bb5db), to(#4775b8));
+  background: -webkit-linear-gradient(top, #7bb5db, #4775b8);
+  background: -moz-linear-gradient(top, #7bb5db, #4775b8);
+  background: linear-gradient(top, #7bb5db, #4775b8);
+}
 ```
 
 让我们在 HTML 标记中添加一些示例菜单：
 
 ```html
 <div class="sidebar">
-<ul>
-  <h3>频道 (Channels)</h3>
-  <li class="active">开发者 (Developers)</li>
-  <li>销售 (Sales)</li>
-  <li>市场部 (Marketing)</li>
-  <li>运维 (Ops/)</li>
-</ul>
+  <ul>
+    <h3>频道 (Channels)</h3>
+    <li class="active">开发者 (Developers)</li>
+    <li>销售 (Sales)</li>
+    <li>市场部 (Marketing)</li>
+    <li>运维 (Ops)</li>
+  </ul>
 </div>
 ```
 
@@ -7573,13 +7042,12 @@ linear-gradient(top, #7bb5db, #4775b8);
 
 ```css
 .main {
-  moz-box-shadow: inset 0 1px 3px #7f7f7f;
+  -moz-box-shadow: inset 0 1px 3px #7f7f7f;
   -webkit-box-shadow: inset 0 1px 3px #7f7f7f;
   box-shadow: inset 0 1px 3px #7f7f7f;
-
-/*/* 我们希望 .main 尽可能地扩展 */
+  /* 我们希望 .main 尽可能地扩展 */
   -webkit-box-flex: 1;
-  moz-box-flex: 1;
+  -moz-box-flex: 1;
   box-flex: 1;
 }
 ```
@@ -7592,104 +7060,105 @@ linear-gradient(top, #7bb5db, #4775b8);
 
 正如我之前提到的，由于我们必须使用厂商前缀，CSS3 语法相当冗长且重复。我们可以使用 Less 混入（mixins）来清理它。例如：
 
-```css
+```less
 #content .sidebar h3 {
-  vbg-gradient(#FFF, #DDFE0);
-  box-shadow(0, -5px, 10px, #E4E4E4);
+  .bg-gradient(#FFF, #DDFE0);
+  .box-shadow(0, -5px, 10px, #E4E4E4);
 }
 ```
+
+
 
 请参附录 B 获取更多信息，并查看 Holla 样式表获取良好的示例。
 
 ## 索引
 
-# 符号
+### 符号
 
-- $ 快捷键, jQuery, 50
-- $() 函数, 126
-- $() 函数, 126
-- $x() 函数, 127
-- ($) 大括号, 匿名函数, 50
-- _ (下划线), 私有属性前缀, 16
-- __bindAll(), 171
-- pushState() 和 replaceState() history API, 173
+- `$` 快捷键, jQuery, 50
+- `$()` 函数, 126
+- `$x()` 函数, 127
+- `($)` 大括号, 匿名函数, 50
+- `_` (下划线), 私有属性前缀, 16
+- `__bindAll()`, 171
+- `pushState()` 和 `replaceState()` history API, 173
 - Underscore's AP, 165
 - WebSocket API, 99
 - XMLHttpRequest API, 92
-- App.log() 函数, 126
-- append(), 210
-- apply(), 12
-- arguments 变量, 14
+- `App.log()` 函数, 126
+- `append()`, 210
+- `apply()`, 12
+- `arguments` 变量, 14
 - 断言库, 110
-- assert() 函数, 109
-- assertEqual() 函数, 110
+- `assert()` 函数, 109
+- `assertEqual()` 函数, 110
 - 断言类型, 112
 - 断言, 109
-- async 属性, 134
-- async 属性, Backbone 库模型, 166
-- defer 属性, 134
+- `async` 属性, 134
+- `async` 属性, Backbone 库模型, 166
+- `defer` 属性, 134
 - HTML5 中的文件, 82
 - JavaScriptMVC 库模型, 189–191
-- multiple 属性, 82
-- originalEvent 属性, 84
+- `multiple` 属性, 82
+- `originalEvent` 属性, 84
 - 返回, 46
 - 验证实例的属性, 167
 - 白名单, 176
 - 审计员, 部署, 138
-- autoLink() 函数, 69
+- `autoLink()` 函数, 69
 
-# A
+### A
 
-- Access-Control-Allow-Origin 头部, 42
-- Access-Control-Request-Headers 头部, 42
-- addEventListener(),19, 24
+- `Access-Control-Allow-Origin` 头部, 42
+- `Access-Control-Request-Headers` 头部, 42
+- `addEventListener()`, 19, 24
 - 处理引用, 37
 - Adobe Flash, 44
-- after() 函数, 114
+- `after()` 函数, 114
 - Ajax
-- 爬虫, 62
-- 查询, 212
-- 使用其加载数据, 39–42
-- 进度, 93
-- 同步与 Spine, 150
-- ajax() 函数, 212
-- ajaxError 事件, 150
+  - 爬虫, 62
+  - 查询, 212
+  - 使用其加载数据, 39–42
+  - 进度, 93
+  - 同步与 Spine, 150
+- `ajax()` 函数, 212
+- `ajaxError` 事件, 150
 - alpha 透明度, 225
 - AMD 格式, 77
 - Apache Web 服务器, 相对过期日期, 134
 
-# APIs
+### APIs
 
 - History API, 63
 - HTML5 APIs, 81
 - jQuery.tmpl 模板 API, 68
 - jQuery 选择器 API, 207
 
-# B
+### B
 
 - Backbone 库, 165–183
-- 集合, 167
-- 控制器, 172
-- 模型, 165
-- 与服务器同步, 174–177 我们听到对改进索引的建议。请发送至 index@oreilly.com。
-- 待办列表, 178–183
-- 视图, 169
-- Backbone.sync() 函数, 174, 176
+  - 集合, 167
+  - 控制器, 172
+  - 模型, 165
+  - 与服务器同步, 174–177
+  - 待办列表, 178–183
+  - 视图, 169
+- `Backbone.sync()` 函数, 174, 176
 - 背景, CSS3, 228
-- before 事件, 87
-- beforeEach() 函数, 114
-- before 事件, 88
-- bind() 函数, 15, 23, 57, 211
+- `before` 事件, 87
+- `beforeEach()` 函数, 114
+- `before` 事件, 88
+- `bind()` 函数, 15, 23, 57, 211
 - 绑定, 关于, 70
 - blobs 以及如此, 96
 - CSS3 中的 border, 232
-- border-radius 样式, 225
+- `border-radius` 样式, 225
 - box, 弹性盒模型: CSS3, 233
 - box sizing, CSS3, 232
-- box-shadow 样式, 226
+- `box-shadow` 样式, 226
 - 断点, 127
 - 浏览器, 99
--  CommonJS 模块, 75
+- CommonJS 模块, 75
 - 复制和粘贴, 87
 - CSS3, 222–244
 - 拖放, 83
@@ -7697,7 +7166,7 @@ linear-gradient(top, #7bb5db, #4775b8);
 - 文件, 81
 - Firebug-on, 124
 - 优雅降级, 223
-- hashchange 事件, 61
+- `hashchange` 事件, 61
 - 本地存储, 47
 - 性能, 134
 - 上传文件, 91
@@ -7705,14 +7174,14 @@ linear-gradient(top, #7bb5db, #4775b8);
 - 冒泡, Spine, 132
 - hash 的, 170
 - jQuery 有一些迭代器, 209
-- Model.created() 回调, 38
+- `Model.created()` 回调, 38
 - 注册事件, 51
 - Spine 库, 143
 - 默认拖放, 85
 - Cappuccino, 89, 165
 - CDNs (内容分发网络), 138
-- change 事件, 59, 151, 175
-- change() 函数, 71
+- `change` 事件, 59, 151, 175
+- `change()` 函数, 71
 - 聊天室, 103
 - Chrome Web 检查器, 123
 - class, 关键字, 7
@@ -7721,61 +7190,61 @@ linear-gradient(top, #7bb5db, #4775b8);
 - 向类添加方法, 8
 - 类库中的范围, 14
 - JavaScriptMVC 库, 186–189
-- 调用基方法, 187
-- 实例化, 186
-- 模型示例, 188
-- 代理, 187
-- 静态继承, 187
+  - 调用基方法, 187
+  - 实例化, 186
+  - 模型示例, 188
+  - 代理, 187
+  - 静态继承, 187
 - MVC 模式, 6
 - Spine 库, 142–145
-- Spine.List, 159
+- `Spine.List`, 159
 - WebSockets, 99
-- XMLHttpRequest 类, 40
-- click() 回调, 15
+- `XMLHttpRequest` 类, 40
+- `click()` 回调, 15
 - 客户端模板, JavaScript 库, 197–200
-- $.View 和模板, 198
-- 基本用法, 197
-- 延迟, 199
-- jQuery 修饰符, 198
-- 从 script 标签加载, 198
-- 打包, 加载和性能, 199
-- clipboardData 对象, 87
-- clipboardData 属性, 88
+  - `$.View` 和模板, 198
+  - 基本用法, 197
+  - 延迟, 199
+  - jQuery 修饰符, 198
+  - 从 script 标签加载, 198
+  - 打包, 加载和性能, 199
+- `clipboardData` 对象, 87
+- `clipboardData` 属性, 88
 - 集合
 
-# C
+### C
 
-- Cache-Controller, 135
+- `Cache-Controller`, 135
 - 缓存, 部署, 134
-- ajax() 函数, 212
+- `ajax()` 函数, 212
 - Backbone, 177
 - 绑定模型事件, 147
-- click() 回调, 15
+- `click()` 回调, 15
 - 事件回调中的上下文变化, 171
 - 事件回调, 151
 - 扩展和包含回调, 9
 - 填充: Backbone 库, 175
 - 颜色
-- CSS 扩展, 219
-- CSS3, 224
+  - CSS 扩展, 219
+  - CSS3, 224
 - Comet 技术, 97
 - CommonJS
-- 模块加载器, 76
+  - 模块加载器, 76
 - CommonJS 倡议, 74
 - 压缩, Gzip, 137
 - 合并, 78
 - 控制台, 调试, 125
-- console.error(), 125
-- console.log(function), 125
-- console.profile(function) 和 console.profileEnd, 129
-- console.time(name), 125
-- console.timeEnd(name), 131
-- console.warn(), 125
+- `console.error()`, 125
+- `console.log(function)`, 125
+- `console.profile(function)` 和 `console.profileEnd`, 129
+- `console.time(name)`, 125
+- `console.timeEnd(name)`, 131
+- `console.warn()`, 125
 - 构造函数, 6
 - Spine 库中的联系人管理器, 156–163
-- Contacts 模型, 157
-- Contacts 控制器, 160
-- Sidebar 控制器, 158
+  - Contacts 模型, 157
+  - Contacts 控制器, 160
+  - Sidebar 控制器, 158
 - 内容分发网络 (CDNs), 138
 - 内容, 57–56
 - 抽象为库, 52
@@ -7788,181 +7257,178 @@ linear-gradient(top, #7bb5db, #4775b8);
 - Backbone 库, 172
 - Spine 库联系人管理器中的 contacts 控制器, 160
 - JavaScriptMVC, 200–205
-- 实例化, 202
-- 概述, 202
-- 模板化操作, 204
+  - 实例化, 202
+  - 概述, 202
+  - 模板化操作, 204
 - 在文档后加载控制器, 53
 - 模块模式, 50
 - 路由, 64
-
-- Ajax 爬虫, 62
-- 检测 hash 变化, 61
-- HTML5 History API, 63
-- URL 的 hash, 60
-- Spine 库, 150–156
-- 状态机, 58
-
-
-
-
-
+  - Ajax 爬虫, 62
+  - 检测 hash 变化, 61
+  - HTML5 History API, 63
+  - URL 的 hash, 60
+  - Spine 库, 150–156
+  - 状态机, 58
 - 上下文变化, 171
 - 代理, 151
 - 事件捕获, 20
 - 事件–30
-- ajaxError 事件, 150
-- Backbone , 170
-- 取, 21
-- change 事件, 59, 71, 159, 171, 175
-- click 事件, 91
-- 上下文变化, 24
-- 控制器和事件监听器, 5
-- 复制粘贴事件, 87
-- 自定义事件, 25–27
-- 委托, 54, 152
-- document.ready 事件, 211, 213
-- DOMContentLoaded 事件, 129
-- 拖放放置, 83
-- dragner 事件, 85
-- dragover 事件, 85
-- dragstart 事件, 84
-- drop 事件, 95
-- error 事件, 148, 167
-- 事件绑定: JavaScriptMVC
+  - `ajaxError` 事件, 150
+  - Backbone, 170
+  - 取, 21
+  - `change` 事件, 59, 71, 159, 171, 175
+  - `click` 事件, 91
+  - 上下文变化, 24
+  - 控制器和事件监听器, 5
+  - 复制粘贴事件, 87
+  - 自定义事件, 25–27
+  - 委托, 54, 152
+  - `document.ready` 事件, 211, 213
+  - `DOMContentLoaded` 事件, 129
+  - 拖放放置, 83
+  - `dragner` 事件, 85
+  - `dragover` 事件, 85
+  - `dragstart` 事件, 84
+  - `drop` 事件, 95
+  - `error` 事件, 148, 167
+  - 事件绑定: JavaScriptMVC
     - 控制器, 203
-- 事件字面量, 263
-- 事件对象, 21
-- Spine 库控制器中的全局事件, 153
-- ...的哈希, 170
-- hashchange 事件, 61
-- jQuery, 211
-- keydown 事件, 152
-- 监听, 19
-- load 事件, 93
-- 非 DOM 事件, 27–30
-- onhashchange 事件, 173
-- open 事件, 99
-- 排序, 20
-- 粘贴事件, 88
-- popstate 事件, 64
-- progress 事件, 93, 94
+  - 事件字面量, 263
+  - 事件对象, 21
+  - Spine 库控制器中的全局事件, 153
+  - ...的哈希, 170
+  - `hashchange` 事件, 61
+  - jQuery, 211
+  - `keydown` 事件, 152
+  - 监听, 19
+  - `load` 事件, 93
+  - 非 DOM 事件, 27–30
+  - `onhashchange` 事件, 173
+  - `open` 事件, 99
+  - 排序, 20
+  - 粘贴事件, 88
+  - `popstate` 事件, 64
+  - `progress` 事件, 93, 94
 - 期望管理, 105
-- Expires Header, 134
+- `Expires Header`, 134
 - 导出, 全局导出, 50
-- extend() 函数, 8, 143, 166
+- `extend()` 函数, 8, 143, 166
 - 扩展
-    - CSS, 217–220
-    - jQuery, 213
+  - CSS, 217–220
+  - jQuery, 213
 - 结束方法, JavaScriptMVC 库, 191
 - 扩展, 包装, 214
 
-## F
-- fetch() 函数, 175
-- fetchRemote() 函数, 32
-- FileReaderObject, 89
+### F
+
+- `fetch()` 函数, 175
+- `fetchRemote()` 函数, 32
+- `FileReaderObject`, 89
 - 文件, 81–96
-    - 浏览器支持, 81
-    - 复制与粘贴, 87–89
-    - 自定义浏览按钮, 91
-    - 拖放放置, 83–86
-    - 获取信息, 81
-    - 输入, 82
-    - jQuery 拖放上传器, 95–96
-    - 读取, 89
-    - 上传, 91–94
-- find() 函数, 36, 37
+  - 浏览器支持, 81
+  - 复制与粘贴, 87–89
+  - 自定义浏览按钮, 91
+  - 拖放放置, 83–86
+  - 获取信息, 81
+  - 输入, 82
+  - jQuery 拖放上传器, 95–96
+  - 读取, 89
+  - 上传, 91–94
+- `find()` 函数, 36, 37
 - 有限状态机 (FMSs), 58
 - Firebug, 124, 138
 - Firebox, 125
 - Firebug 和 YLow
 - Flyscript, 179
 - 关注者和被关注集合, 167
-- FormData 实例, 92
+- `FormData` 实例, 92
 - FSMs (有限状态机), 58
 - FUBCs (闪烁的异常事件), 80
 
-## functions
+### Functions
+
 - 添加私有函数, 16
 - 添加到类, 7
-- AfterEach() 函数, 114
-- ajax() 函数, 212
+- `AfterEach()` 函数, 114
+- `ajax()` 函数, 212
 - 匿名函数, 16, 50
-- App.log() 函数, 126
-- append() 函数, 210
-- assert() 函数, 210
-- assertEqual() 函数, 110
-- autoLink() 函数, 69
-- Backbone.sync() 函数, 174, 176
-- BeforeEach() 函数, 114
-- bind() 函数, 15, 23, 57, 211
-- change() 函数, 71
-- clear() 函数, 127
-- comparator() 函数, 169
-- console.log() 函数, 125
+- `App.log()` 函数, 126
+- `append()` 函数, 210
+- `assert()` 函数, 210
+- `assertEqual()` 函数, 110
+- `autoLink()` 函数, 69
+- `Backbone.sync()` 函数, 174, 176
+- `BeforeEach()` 函数, 114
+- `bind()` 函数, 15, 23, 57, 211
+- `change()` 函数, 71
+- `clear()` 函数, 127
+- `comparator()` 函数, 169
+- `console.log()` 函数, 125
 - 构造函数, 6
-- create() 函数, 37, 142, 150
-- created() 函数, 143
-- css() 函数, 210
-- dataTransfer.getData() 函数, 86
-- deactivate() 函数, 59
-- define() 函数, 78
-- undelegate() 函数, 24, 57
-- describe() 函数, 114
-- destroy() 函数, 4, 144, 147
-- dir() 函数, 127
-- empty() 函数, 211
-- equals() 函数, 112
-- exists() 函数, 146
-- expect() 函数, 115
-- extend() 函数, 8, 143, 146, 166
-- fetch() 函数, 175
-- fetchRemote() 函数, 32
-- find() 函数, 36, 146
+- `create()` 函数, 37, 142, 150
+- `created()` 函数, 143
+- `css()` 函数, 210
+- `dataTransfer.getData()` 函数, 86
+- `deactivate()` 函数, 59
+- `define()` 函数, 78
+- `undelegate()` 函数, 24, 57
+- `describe()` 函数, 114
+- `destroy()` 函数, 4, 144, 147
+- `dir()` 函数, 127
+- `empty()` 函数, 211
+- `equals()` 函数, 112
+- `exists()` 函数, 146
+- `expect()` 函数, 115
+- `extend()` 函数, 8, 143, 146, 166
+- `fetch()` 函数, 175
+- `fetchRemote()` 函数, 32
+- `find()` 函数, 36, 146
 - 函数调用, 12
 - 视图内部通用辅助函数, 68
-- get() 函数, 166
-- getData() 函数, 288
+- `get()` 函数, 166
+- `getData()` 函数, 288
 - getter 和 setter 函数, 211
 - 全局变量和函数, 4
-- history.back() 和 history.forward() 函数, 64
-- history.pushState() 函数, 63
-- include() 函数, 8, 52, 133, 146
-- init() 函数, 34, 55, 142, 151
-- initialize() 实例函数, 166, 168
-- inspect() 函数, 127
-- it() 函数, 114
-- jQuery.ajax() 函数, 40
-- jQuery.tmpl() 函数, 67
-- keys() 函数, 127
-- load() 函数, 52, 74
-- Math.random() 函数, 36
-- module() 函数, 111
-- Object.create() 函数, 33, 142
-- post() 函数, 47
-- proxy() 函数, 14, 52, 144
-- proxyAll() 函数, 144
-- ready() 函数, 23
-- refresh() 函数, 175
-- remove() 函数, 168
-- removeEventListener(), 函数, 19
-- render() 函数, 171
-- require() 函数, 74
-- slice() 函数, 290
-- stopImmediate(), 函数, 21
-- stopPropagation() 函数, 21
-- text() 函数, 211
-- toJSON() 函数, 170
-- trigger() 函数, 25
-- update() 函数, 37
-- uploadFile() 函数, 95
-- validate() function, 167
-- values() function, 127
+- `history.back()` 和 `history.forward()` 函数, 64
+- `history.pushState()` 函数, 63
+- `include()` 函数, 8, 52, 133, 146
+- `init()` 函数, 34, 55, 142, 151
+- `initialize()` 实例函数, 166, 168
+- `inspect()` 函数, 127
+- `it()` 函数, 114
+- `jQuery.ajax()` 函数, 40
+- `jQuery.tmpl()` 函数, 67
+- `keys()` 函数, 127
+- `load()` 函数, 52, 74
+- `Math.random()` 函数, 36
+- `module()` 函数, 111
+- `Object.create()` 函数, 33, 142
+- `post()` 函数, 47
+- `proxy()` 函数, 14, 52, 144
+- `proxyAll()` 函数, 144
+- `ready()` 函数, 23
+- `refresh()` 函数, 175
+- `remove()` 函数, 168
+- `removeEventListener()`, 函数, 19
+- `render()` 函数, 171
+- `require()` 函数, 74
+- `slice()` 函数, 290
+- `stopImmediate()`, 函数, 21
+- `stopPropagation()` 函数, 21
+- `text()` 函数, 211
+- `toJSON()` 函数, 170
+- `trigger()` 函数, 25
+- `update()` 函数, 37
+- `uploadFile()` 函数, 95
+- `validate()` function, 167
+- `values()` function, 127
 
-## G
+### G
+
 - GCF (Google Chrome Frame), 237
-- get() 函数, 166
-- getData() 函数, 88
-- getJSON() 函数, 212
+- `get()` 函数, 166
+- `getData()` 函数, 88
+- `getJSON()` 函数, 212
 - getter 和 setters 函数, 211
 - global export, 50
 - global import, 50
@@ -7974,7 +7440,8 @@ linear-gradient(top, #7bb5db, #4775b8);
 - GUID generators, 36
 - Gzip 压缩, 137
 
-## H
+### H
+
 - hash, default, 167
 - detecting hash changes, 61
 - events and callbacks, 170
@@ -7985,564 +7452,526 @@ linear-gradient(top, #7bb5db, #4775b8);
 - history, JavaScript, 1
 - real-time Web, 97
 - History API, 63
-- history.back() 和 history.forward() 函数, 64
-- history.pushState() 函数, 63
+- `history.back()` 和 `history.forward()` 函数, 64
+- `history.pushState()` 函数, 63
 - Holla, 104
 - rendering, 65
 - templating, 181
 
-## HTML
+### HTML
+
 - drag and drop, 83
 - HTML5 APIs, 81
 - local storage, 45
 - HTTP requests, performance, 133
 
-## I
+### I
+
 - ID support, 36
-- If-Modified-Since Header, 135
-- If-None-match Header, 136
+- `If-Modified-Since` Header, 135
+- `If-None-match` Header, 136
 - images, border in CSS, 232
 - immutable properties, 16
 - import, global, 50
-- include(), 8, 52, 133, 146
+- `include()`, 8, 52, 133, 146
 - including data inline, 39
 - inheritance
-    - adding inheritance to class libraries, 11
-    - using prototype 的 class inheritance, 10
-    - prototypal inheritance, 33
-    - static inheritance: JavaScriptMVC 库, 187
+  - adding inheritance to class libraries, 11
+  - using prototype 的 class inheritance, 10
+  - prototypal inheritance, 33
+  - static inheritance: JavaScriptMVC 库, 187
 - init 方法, 202
-- init() 函数, 34, 55, 142, 151
-- initialize() 实例函数, 166, 168
+- `init()` 函数, 34, 55, 142, 151
+- `initialize()` 实例函数, 166, 168
 - inputs, files, 82
-- inspect(), 127
+- `inspect()`, 127
 - inspectors, 122
 - interfaces (见 views)
 - invocation, function, 12
 - interpolating variables, 67
 
-## J
+### J
+
 - Jasmine, 113–115
 - JavaScript, history, 1
 - JavaScriptMVC 库, 185–206
-- minification, 136
-- abstract CRUD list, 205
-- classes, 186–189
-- calling base methods, 187
-- instantiation, 186
-- example, 188
-- proxies, 187
-- static inheritance, 187
-- client-side templates, 197–200
-- $.View 和 subtemplates, 198
-- basic use, 197
-- deferreds, 199
-- modifiers, 198
-- loading from a script tag, 198
-- packaging, preloading and performance, 199
-- controllers, 200–205
-- event binding, 203
-- models, 189–96
-- overview, 202
-- templated actions, 204
-- attributes and observers, 189
-- CRUD events, 196
-- extending, 191
-- helper methods, 192
-- service, 193
-- setters, 195
-- type conversion, 196
-- setup, 186
+  - minification, 136
+  - abstract CRUD list, 205
+  - classes, 186–189
+    - calling base methods, 187
+    - instantiation, 186
+    - example, 188
+    - proxies, 187
+    - static inheritance, 187
+  - client-side templates, 197–200
+    - `$.View` 和 subtemplates, 198
+    - basic use, 197
+    - deferreds, 199
+    - modifiers, 198
+    - loading from a script tag, 198
+    - packaging, preloading and performance, 199
+  - controllers, 200–205
+    - event binding, 203
+  - models, 189–96
+    - overview, 202
+    - templated actions, 204
+    - attributes and observers, 189
+    - CRUD events, 196
+    - extending, 191
+    - helper methods, 192
+    - service, 193
+    - setters, 195
+    - type conversion, 196
+  - setup, 186
 - jQuery, 207–216
-- $ , 50
-- Ajax, 212
-- apply() and call(), 12
-- being a good citizen, 213
-- DOM manipulation, 209
-- DOM traversals, 208
-- drag-and-drop uploader, 95–96
-- events, 211
-- extensions, 213
-- Growl plug-in, 11
-- custom events, 25
-- selector, 35
-- jQuery(), 257
-- jquery.ajax(), 40
-- jquery.bind(), 203
-- jquery.js plugin-in, 91
-- jquery.delegate, 203
-- jquery.extend(), 34
-- jquery.fn object, 213
-- jquery.get(), 200
-- jquery.js, 79
-- jquery.prototype, 213
-- jquery.proxy(), 52, 216
-- jquery.tmpl, 181
-- jquery.tmpl library, 67
-- jquery.upload plugin-in, 93
+  - `$`, 50
+  - Ajax, 212
+  - `apply()` and `call()`, 12
+  - being a good citizen, 213
+  - DOM manipulation, 209
+  - DOM traversals, 208
+  - drag-and-drop uploader, 95–96
+  - events, 211
+  - extensions, 213
+  - Growl plug-in, 11
+  - custom events, 25
+  - selector, 35
+  - `jQuery()`, 257
+  - `jquery.ajax()`, 40
+  - `jquery.bind()`, 203
+  - `jquery.js plugin-in`, 91
+  - `jquery.delegate`, 203
+  - `jquery.extend()`, 34
+  - `jquery.fn object`, 213
+  - `jquery.get()`, 200
+  - `jquery.js`, 79
+  - `jquery.prototype`, 213
+  - `jquery.proxy()`, 52, 216
+  - `jquery.tmpl`, 181
+  - `jquery.tmpl library`, 67
+  - `jquery.upload plugin-in`, 93
 - JSMin, 136
 - JSON objects, 39
 - JSONP (with padding), 43
+- 适配器, 177
+- 向 ORM 添加, 46
+- 日志级别, 125
+- Modernizr, 236
+- 修改时间 (mtime), 135
+- 模块化，MVC 模式与类, 6
+- 模块模式, 50
+- 模块传输格式, 75
+- `module()` 函数, 111
+- 模块
 
+### M
 
+- MacRuby, 121
+- 手册, 109
+- 匹配器, 115
+- `Math.random()` 函数, 36
+- 消息，发送与接收, 99
+- 代码压缩 (minification)
+  - 关于, 78
+  - 部署, 136
+- mixins, CSS 扩展, 218
+- model ID, 168
+- model属性, 168
+- `Model.created()` 回调, 38
+- models–48
+- 替代方案, 79
+- 浏览器, 75
+- 声明 CommonJS, 74
+- 模块加载器, 76
+- 总结, 78
+- mod_delete, 138
+- `multiple` 属性, 82
+- Mustache, 67
+- MVC 模式, 1–17
+  - 关于, 2
+  - 向类库添加继承, 11
+  - 向类库添加方法, 8
+  - 添加私有函数, 16
+  - 为应用构建结构, 2
+  - 类函数, 7
+  - 使用原型进行类继承, 10
+  - 类库, 16
+  - 类, 6
+  - 控制类库中的作用域, 14
+  - 函数调用, 12
+  - JavaScript 历史, 1
+  - 命名空间, 31
+- 命名空间
+  - CommonJS 计划, 74
+  - 自定义事件, 25
+  - 重要性, 73
+  - 内省, 188
+  - MVC 模式, 31
+  - 命名空间污染, 50
+  - 变量定义与全局命名空间, 50
+- JavaScriptMVC 库类示例, 188
+- 加载数据, 38–43
+  - 包含数据行, 39
+  - JSON, 43
+  - 跨域请求安全, 43
+  - 通过 Ajax, 39–42
+- MVC 模式与命名空间, 31
+- ORMs, 32–36
+- 填充 ORMs, 44
+- Spine 库, 145–150
+- 在本地存储数据, 44
+- 向服务器提交新记录, 46
+- CSS3 中的否定选择器, 230
+- 嵌套规则，CSS 扩展, 218
+- 网络请求, 128
+- new 运算符, 6
+- next own prev 方法, 192
+- Node.js, 101, 220
+- 非 DOM 事件, 27–30
+- nth-child, CSS3, 229
 
+### O
 
-适配器, 177
-向 ORM 添加, 46
-日志级别, 125
+- 面向对象语言，JavaScript 作为一种, 2
+- 对象关系映射器（见 ORMs）
+- `Object.create()` 函数, 33, 142
+- 对象
+  - `clipboardData` 对象, 87
+  - `dataTransfer` 对象, 84, 86
+  - event 对象, 21, 153
+  - `FileReader` 对象, 89
+  - JavaScript 对象字面量, 6
+  - jQuery. 对象, 213
+  - JSON 对象, 39
+  - `localStorage` 和 `sessionStorage` 对象, 45
+  - 属性与命名空间, 31
+  - 原型对象, 10
+- `onhashchange` 事件, 173
+- `onmessage`, 99
+- `onopen` 事件, 99
+- Growl jQuery 插件, 214
+- JS 插件, 16
+- jQuery 插件与自定义事件, 25
+- `jquery.browse.js` 插件, 91
+- `jQuery.tmpl` 库, 67
+- `jquery.upload` 插件, 93
+- Selenium, 116
+- `poststate` 事件, 64
+- 填充
+  - 集合: Backbone 库, 175
+  - ORMs, 44
+- `post()` 函数, 47
+- CSS3 前缀, 224
+- 预加载
+  - 数据, 38
+  - 智能预加载, 105
+- `prepend()` 函数, 210
+- 渲染 HTML, 65
+- 私有函数, 16
+- 分析, 调试, 129–131
+- progress 事件
+  - 关于, 94
+  - Ajax, 93
+- 运算符
+  - new 对象, 6
+  - var 对象, 16
+- `options.error()` 回调, 177
+- `options.success()` 回调, 177
+- order, 事件, 20
+- `OriginalEvent` 属性, 84
+- ORMs (对象关系映射器), 32–36
+  - 添加本地存储, 46
+  - 添加 ORM 属性, 35
+  - 持久化, 35
+  - 填充, 44
+  - 原型继承, 33
+- 属性
+  - 添加 ORM 属性, 34
+  - 添加类, 8
+  - bubbles 事件, 22
+  - 类, 17
+  - `clipboardData` 属性, 88
+  - 定义类, 16
+  - `el` 属性, 151
+  - event 属性, 52
+  - 不可变属性, 16
+  - keyboard 事件, 22
+  - model 属性, 168
+  - 原型对象, 10
+  - Spine 库, 143
+  - url 继承, 174
+  - 使用原类的继承, 10
+  - ORMs, 33
+- 代理快捷, 151
+- 代理
+  - JavaScriptMVC 库类, 187
+  - Spine 库控制器, 151
+  - WebSockets, 100
+- `proxy()` 函数, 24, 52, 144
+- `proxyAll()` 函数, 144
 
-Modernizr, 236
-修改时间 (mtime), 135
-模块化，MVC 模式与类, 6
-模块模式, 50
-模块传输格式, 75
-module() 函数, 111
-模块
+### P
 
-# M
+- 打包, JavaScriptMVC 客户端模板模板, 199
+- Pagerank 算法, 139
+- 分页控制, 189
+- 粘贴, 88
+- 性能
+  - 部署, 133
+  - JavaScriptMVC 客户端模板模板, 199
+  - 感知速度, 105
+- 持久化
+  - 记录: ORMs, 35
+  - Spine 库模型, 148
+- 插件
+  - Adobe Flash, 44
+- 发布/订阅
+  - 全局事件, 153
+  - 模式, 104
+- `pushState()` 和 `replaceState()` 历史, 173
+- rgb 样式, 224
+- Rhino, 74
+- CSS3 圆角, 225
+- 路由, 172
+- 路由, 60
+  - Ajax 爬虫, 62
+  - 检测 变化, 61
+  - HTML5 API, 63
+  - URL 的 hash, 60
+- RPC 脚本, 100
 
-MacRuby, 121
-手册, 109
-匹配器, 115
-Math.random() 函数, 36
-消息，发送与接收, 99
-代码压缩 (minification)
-关于, 78
-部署, 136
-mixins, CSS 扩展, 218
-model ID, 168
-model属性, 168
-Model.created() 回调, 38
-models–48
+### R
 
-替代方案, 79
-浏览器, 75
-声明 CommonJS, 74
-模块加载器, 76
-总结, 78
-mod_delete, 138
-multiple 属性, 82
-Mustache, 67
-MVC 模式, 1–17
+- Rack, Less, 220
+- rack 命令, 79
+- 读取文件, 89
+- `ready()` 函数, 23
+- 实时 Web, 97–105
+  - 历史, 97
+  - 感知速度, 105
+  - WebSockets, 98–103
+- record 特性, 131
+- 持久化记录, 35
+- 向服务器提交新记录, 47
+- 引用, 处理, 37
+- `refresh()` 函数, 175
+- 向事件注册回调, 51
+- 相对过期, 134
+- `remove()` 函数, 168
+- `EventListener()`, 19
+- render 模式, 154
+- `render()` 函数, 171
+- Backbone 库视图, 170
+- 动态渲染视图, 65
+- 内联模板, 70
+- 网络请求, 128
+- 同源策略, 41
+- 跨域请求安全, 43
+- `require()` 函数, 74
+- RequireJS, 77
 
-关于, 2
-向类库添加继承, 11
-向类库添加方法, 8
-添加私有函数, 16
-为应用构建结构, 2
-类函数, 7
-使用原型进行类继承, 10
-类库, 16
-类, 6
-控制类库中的作用域, 14
-函数调用, 12
-JavaScript 历史, 1
-命名空间, 31
+### S
 
-添加 ID 支持, 36
-添加本地存储 ORM, 46
-处理引用, 37
-Backbone 库, 165
-绑定, 71
-Spine 模型管理器中的联系人
-库, 157
-弹性布局模型: CSS3, 233
-JavaScriptMVC 库, 189–196
-属性与观察者, 189–199
-CRUD 事件, 196
-扩展模型, 191
-辅助方法, 192
-服务封装, 193–195
-setters, 191
-类型转换, 196
+- Safari, Web Inspector, 123
+- 同源策略, 41
+- `same()` 函数, 112
+- Sauce Layers, 222
+- `save()` 函数, 146, 194
+- 作用域
+  - 类库, 14
+  - 上下文, 51
+- 脚本标签
+  - 关于, 73
+  - 模板, 199
+- 脚本，性能, 134
+- CSS3 选择器, 229
+- self 变量, 212
+- `send()` 函数, 92
+- 服务器推送, 98
+- 服务器端应用，视图, 65
+- 服务器端验证, 150
+- 向其提交新记录, 47
+- 与服务器同步: Backbone 库, 174–177
+- 本地存储, 44
+- `set()` 函数, 166
+- `setData()` 函数, 84
+- setters, JavaScriptMVC 库, 191
+- 影子
+  - CSS3 阴影, 226
+  - CSS3 文字阴影, 227
+- 快捷方式，事件类型, 23
+- `show:contact` 事件, 160
+- Spine 库联系管理器, 158
+- 本地存储, 44, 46
+- 模板, 69
+- 向服务器提交新记录, 47
+- `slice()` 函数, 90
+- 切片和二进制, 90
+- Socket.IO, 102
+- 实时 Web 速度, 105
+- SpiderMonkey, 74
+- Spine 库, 141–163
+  - 类实现, 17
+  - 类, 142–145
+  - 内容, 144
+  - 扩展, 143
+  - 实例化, 142
 
-# N
+### T
 
-命名空间
-CommonJS 计划, 74
-自定义事件, 25
-重要性, 73
-内省, 188
-MVC 模式, 31
-命名空间污染, 50
-变量定义与全局命名空间, 50
+- 标签，从脚本标签加载: JavaScriptMVC 客户端模板, 198
+- （另见脚本标签）
+- `Task.fetch()`, 149
+- teardown 函数, 114
+- teardown 选项, 112
+- 模板操作，JavaScriptMVC 库控制器, 204
+- 模板, 66–70
+- 联系人管理器, 156–163
+  - App 控制器, 163
+  - 联系模型, 157
+  - Contacts 控制器, 160
+  - Sidebar 控制器, 158
+- 控制器, 150–156
+  - 控制器事件, 153
+  - 事件委托, 152
+  - element element, 154
+  - 全局事件, 153
+  - 代理, 151
+  - render 模式, 154
+- 事件, 145
+- 模型, 145–150
+  - 事件, 147
+  - 获取记录, 147
+  - 持久化, 148
+  - 验证, 148
+- 设置, 141
+- `Spine.App`, 153
+- `Spine.Events`, 153
+- `Spine.List` 类, 159
+- 板, 172
+- Sprockets, 79
+- SproutCore, 165
+- 状态机，控制器, 58
+- 状态与控制器, 49
+- 静态继承，JavaScriptMVC 库类, 187
+- 关于, 66
+- 辅助方法, 68
+- HTML, 181
+- 作为原型对象, 10
+- 脚本标签, 199
+- 存储, 69
+- 模板接口, 197
+- 视图, 4
+- 测试, 107–122
+  - （见调试）
+  - 关于, 107
+  - 分布式测试, 121
+  - 驱动程序, 115
+  - 无头测试, 118–121
+    - Ichabod 库, 121
+    - Zombie.js, 119
+  - 支持, 122
+  - 单元测试, 109–115
+    - 断言, 109
+    - Jasmine, 113–115
+    - QUnit, 110
+  - TestSwarm, 121
+- 调试, 129–131
+- 函数, 231
+- 待办事项列表, Backbone 库, 178–183
+- `toggleClass()`, 53
+- `toJSON()` 函数, 170
+- 工具提示, 200
+- 转换, CSS3, 232
+- `transitionend`, 231
+- 过渡, CSS3, 230
+- `trigger()` 函数, 25
+- Twitter, Ajax 爬虫, 62
+- 类型转换
+  - JavaMVC 库模型, 196
+  - 测试, 109
 
-JavaScriptMVC 库类示例, 188
-加载数据, 38–43
-包含数据行, 39
-JSON, 43
-跨域请求安全, 43
-通过 Ajax, 39–42
-MVC 模式与命名空间, 31
-ORMs, 32–36
-填充 ORMs, 44
-Spine 库, 145–150
-在本地存储数据, 44
-向服务器提交新记录, 46
+### 视图
 
-CSS3 中的否定选择器, 230
-嵌套规则，CSS 扩展, 218
-网络请求, 128
-new 运算符, 6
-next  own prev 方法, 192
-Node.js, 101, 220
-非 DOM 事件, 27–30
-nth-child, CSS3, 229
+- 关于, 4
+- Backbone 库, 169
+- 控制器, 55
+- 动态渲染, 65
+- JavaScriptMVC 库客户端客户端模板, 197–200
+- Vows.js, 119
 
-# 0
+### W
 
-面向对象语言，JavaScript 作为一种, 2
-对象关系映射器（见 ORMs）
-Object.create() 函数, 33, 142
-对象
+- Watir, 116
+- Web Inspector, 123
+- 本书书的网页, xviii
+- Websocket-js, 100
+- WebKit, 87
+- WebKitTransitionEvent, 231
+- WebSockets, 98–103
+- 白名单
+  - 域的, 443
+  - 属性白名单, 176
+- 通配符, 172
+- 封装
+  - 扩展, 214
+  - 模块, 78
 
-clipboardData 对象, 87
-dataTransfer 对象, 84, 86
-event 对象, 21, 153
-FileReader 对象, 89
-JavaScript 对象字面量, 6
-jQuery. 对象, 213
-JSON 对象, 39
-localStorage 和 sessionStorage 对象, 45
-属性与命名空间, 31
-原型对象, 10
-onhashchange 事件, 173
-onmessage, 99
-onopen 事件, 99
+### U
 
-Growl jQuery 插件, 214
-JS 插件, 16
-jQuery 插件与自定义事件, 25
-jquery.browse.js 插件, 91
-jQuery.tmpl 库, 67
-jquery.upload 插件, 93
-Selenium, 116
-poststate 事件, 64
-填充
-集合: Backbone 库, 175
-ORMs, 44
-post() 函数, 47
-CSS3 前缀, 224
-预加载
-数据, 38
-智能预加载, 105
-prepend() 函数, 210
-渲染 HTML, 65
-私有函数, 16
-分析, 调试, 129–131
-progress 事件
-关于, 94
-Ajax, 93
+- ULs, Fms, 58
+- underscore (), 变量属性前缀, 16
+- underscore.js, 169
+- 单元测试, 109–115
+  - 断言, 109
+  - asmine, 113–115
+  - QUnit, 110
+- `update()` 函数, 37
+- 上传器, Query 拖拽式上传器, 53–96
+- `upload()` 函数, 95
+- 上传文件, 91–94
+- url 实例属性, 174
+- URLs, 路由和 URL 哈, 60
+- `User.extend()`, 143
+- UX（用户体验）, 105
 
-运算符
-new 对象, 6
-var 对象, 16
-options.error() 回调, 177
-options.success() 回调, 177
-order, 事件, 20
+### X
 
-OriginalEvent 属性, 84
-ORMs (对象关系映射器), 32–36
-添加本地存储, 46
-添加 ORM 属性, 35
-持久化, 35
-填充, 44
-原型继承, 33
+- XDomainRequest, 42
+- XMLHttpRequest API, 92
+- HttpRequest 类, 40
 
-属性
-添加 ORM 属性, 34
-添加类, 8
-bubbles 事件, 22
-类, 17
-clipboardData 属性, 88
-定义类, 16
-el 属性, 151
-event 属性, 52
-不可变属性, 16
-keyboard 事件, 22
-model 属性, 168
-原型对象, 10
-Spine 库, 143
-url 继承, 174
-使用原类的继承, 10
-ORMs, 33
-代理快捷, 151
-代理
-JavaScriptMVC 库类, 187
-Spine 库控制器, 151
-WebSockets, 100
-proxy() 函数, 24, 52, 144
-proxyAll() 函数, 144
+### Y
 
-# P
+- Yabble, 76
+- YSlow, 138
+- YUI Compressor, 166
 
-打包, JavaScriptMVC 客户端模板
-模板, 199
-Pagerank 算法, 139
-分页控制, 189
-粘贴, 88
-性能
-部署, 133
-JavaScriptMVC 客户端模板
-模板, 199
-感知速度, 105
-持久化
-记录: ORMs, 35
-Spine 库模型, 148
-插件
-Adobe Flash, 44
+### V
 
-发布/订阅
-全局事件, 153
-模式, 104
-pushState() 和 replaceState() 历史, 173
-rgb 样式, 224
-Rhino, 74
-CSS3 圆角, 225
-路由, 172
-路由, 60
-Ajax 爬虫, 62
-检测 变化, 61
-HTML5 API, 63
-URL 的 hash, 60
-RPC 脚本, 100
+- JavaScript 引擎, 119
+- `validate()` 函数, 167
+- 验证, Spine 库模型, 148
+- `values()` 函数, 127
+- var 运算符, 16
+- 变量
+  - `arguments` 变量, 14
+  - CSS 扩展, 217
+  - 全局变量和函数, 4
+  - 插值, 67
+  - 命名空间, 31
+  - 变量定义和全局命名空间, 50
 
-# R
+### Z
 
-Rack, Less, 220
-rack 命令, 79
-读取文件, 89
-ready() 函数, 23
-实时 Web, 97–105
-历史, 97
-感知速度, 105
-WebSockets, 98–103
-record 特性, 131
-持久化记录, 35
-向服务器提交新记录, 47
-引用, 处理, 37
-refresh() 函数, 175
-向事件注册回调, 51
-相对过期, 134
-remove() 函数, 168
-EventListener(), 19
-render 模式, 154
-render() 函数, 171
-Backbone 库视图, 170
-动态渲染视图, 65
-内联模板, 70
-网络请求, 128
-同源策略, 41
-跨域请求安全, 43
-require() 函数, 74
-RequireJS, 77
+- Zepto.js, 165
+- Zombie.js, 119
 
-# S
-
-Safari, Web Inspector, 123
-同源策略, 41
-same() 函数, 112
-Sauce Layers, 222
-save() 函数, 146, 194
-作用域
-类库, 14
-上下文, 51
-脚本标签
-关于, 73
-模板, 199
-脚本，性能, 134
-CSS3 选择器, 229
-self 变量, 212
-send() 函数, 92
-服务器推送, 98
-服务器端应用，视图, 65
-服务器端验证, 150
-向其提交新记录, 47
-与服务器同步: Backbone 库, 174–177
-本地存储, 45
-set() 函数, 166
-setData() 函数, 84
-setters, JavaScriptMVC 库, 191
-影子
-CSS3 阴影, 226
-CSS3 文字阴影, 227
-快捷方式，事件类型, 23
-show:contact 事件, 160
-Spine 库联系管理器, 158
-本地存储, 44, 46
-模板, 69
-向服务器提交新记录, 47
-slice() 函数, 90
-切片和二进制, 90
-Socket.IO, 102
-实时 Web 速度, 105
-SpiderMonkey, 74
-Spine 库, 141–163
-类实现, 17
-类, 142–145
-内容, 144
-扩展, 143
-实例化, 142
-
-# T
-
-标签，从脚本标签加载: JavaScriptMVC 客户端模板, 198
-（另见脚本标签）
-Task.fetch(), 149
-teardown 函数, 114
-teardown 选项, 112
-模板操作，JavaScriptMVC 库控制器, 204
-模板, 66–70
-
-联系人管理器, 156–163
-App 控制器, 163
-联系模型, 157
-Contacts 控制器, 160
-Sidebar 控制器, 158
-控制器, 150–156
-控制器事件, 153
-事件委托, 152
-element element, 154
-全局事件, 153
-代理, 151
-render 模式, 154
-事件, 145
-模型, 145–150
-事件, 147
-获取记录, 147
-持久化, 148
-验证, 148
-设置, 141
-Spine.App, 153
-Spine.Events, 153
-Spine.List 类, 159
-板 , 172
-Sprockets, 79
-SproutCore, 165
-状态机，控制器, 58
-状态与控制器, 49
-静态继承，JavaScriptMVC 库类, 187
-关于, 66
-辅助方法, 68
-HTML, 181
-作为原型对象, 10
-脚本标签, 199
-存储, 69
-模板接口, 197
-视图, 4
-测试, 107–122
-（见调试）
-关于, 107
-分布式测试, 121
-驱动程序, 115
-无头测试, 118–121
-Ichabod 库, 121
-Zombie.js, 119
-支持, 122
-单元测试, 109–115
-断言, 109
-Jasmine, 113–115
-QUnit, 110
-TestSwarm, 121
-
-
-
-
-调试，129–131
-函数，231
-待办事项列表，Backbone 库，178–183
-toggleClass(),53
-toJSON() 函数，170
-工具提示，200
-转换，CSS3，232
-transitionend，231
-过渡，CSS3，230
-trigger() 函数，25
-Twitter，Ajax 爬虫，62
-类型转换
-JavaMVC 库模型，196
-测试，109
-
-视图
-关于，4
-Backbone 库，169
-控制器，55
-动态渲染，65
-JavaScriptMVC 库客户端客户端模板，197–200
-Vows.js，119
-
-# W
-
-Watir，116
-Web Inspector，123
-本书书的网页，xviii
-Websocket-js，100
-WebKit，87
-WebKitTransitionEvent，231
-WebSockets，98–103
-白名单
-域的，443
-属性白名单，176
-通配符，172
-封装
-扩展，214
-模块，78
-
-# U
-
-ULs, Fms，58
-underscore (), 变量属性前缀，16
-underscore.js，169
-单元测试，109–115
-断言，109
-asmine，113–115
-QUnit，110
-update() 函数，37
-上传器，Query 拖拽式上传器，53–96
-upload() 函数，95
-上传文件，91–94
-url 实例属性，174
-URLs，路由和 URL 哈，60
-User.extend()，143
-UX（用户体验），105
-
-# X
-
-XDomainRequest，42
-XMLHttpRequest API，92
-HttpRequest 类，40
-
-# Y
-
-Yabble，76
-YSlow，138
-YUI Compressor，166
-
-# V
-
-JavaScript 引擎，119
-validate() 函数，167
-验证，Spine 库模型，148
-values() 函数，127
-var 运算符，16
-变量
-arguments 变量，14
-CSS 扩展，217
-全局变量和函数，4
-插值，67
-命名空间，31
-变量定义和全局命名空间，50
-
-# Z
-
-Zepto.js，165
-Zombie.js，119
-
-# 关于作者
+## 关于作者
 
 Alex MacCaw 是一位 Ruby/JavaScript 开发者兼企业家。他编写了一个 JavaScript 框架 Spine；开发了包括 Taskforce 和 Socialmood 在内的大型应用程序；并参与过开源工作。他在纽约、旧金山和柏林的 Ruby/Rails 会上进行演讲。除了编程，他目前正带着一台尼康 D90 相机和冲浪板环游世界。
 
-# 版后
+## 版后
 
 《JavaScript Web Applications》封面上的动物是一只长耳鸮。
 
@@ -8553,4 +7982,3 @@ Alex MacCaw 是一位 Ruby/JavaScript 开发者兼企业家。他编写了一个
 长耳鸮不筑自己的巢；相反，它们栖在喜鹊、乌鸦、鹰和松鼠遗弃的树巢中。在繁殖季节（通常发生在 3 月中旬到 6 月初），它们倾向于分散并具有领地意识；而在冬季，它们聚群栖息以保暖，通常是 7–50 只鸟一组。
 
 封面图片来自 Wood's Animate Creations。封面字体是 Adobe ITC Garamond。正字体是 Linotype Birka；标题字体是 Adobe Myriad Condensed；代码字体是 LucasFonts TheSansMonoCondensed。
-

@@ -1,50 +1,59 @@
+
 # JSON：Javascript 对象表示法
 
-
-
-
-# 关于本教程
+## 关于本教程
 
 JSON 或 JavaScript 对象表示法（JavaScript Object Notation）是一种轻量级的、基于文本的开放标准，专为人类可读的数据交换而设计。JSON 格式最初由道格拉斯·克罗克福特（Douglas Crockford）制定，并在 RFC 4627 中进行了描述。JSON 的官方互联网媒体类型是 `application/json`。JSON 的文件名扩展名是 `.json`。
 
 本教程将帮助您了解 JSON 及其在各种编程语言（如 PHP、PERL、Python、Ruby、Java 等）中的使用。
 
-# 目标读者
+## 目标读者
 
 本教程旨在帮助初学者理解 JavaScript 对象表示法（JSON）的基本功能，以开发数据交换格式。完成本教程后，您将对 JSON 及其与 JavaScript、Ajax、Perl 等的使用有良好的理解。
 
-# 前提条件
+## 前提条件
 
 在继续学习本教程之前，您应该对 Web 应用程序通过 HTTP 的工作方式有基本的了解，并且我们假设您具备基本的 JavaScript 知识。
 
-
-# 1. JSON – 概述
+## 1. JSON – 概述
 
 JSON 或 JavaScript 对象表示法（JavaScript Object Notation）是一种轻量级的、基于文本的开放标准，专为人类可读的数据交换而设计。JSON 使用的约定为程序员所熟知，包括 C、C++、Java、Python、Perl 等。
 
 -   JSON 代表 JavaScript 对象表示法。
+
 -   该格式由道格拉斯·克罗克福特（Douglas Crockford）制定。
+
 -   它是为人类可读的数据交换而设计的。
+
 -   它是从 JavaScript 脚本语言扩展而来的。
+
 -   文件名扩展名是 **.json**。
+
 -   JSON 互联网媒体类型是 **application/json**。
+
 -   统一类型标识符是 `public.json`。
 
-# JSON 的用途
+## JSON 的用途
 
 -   用于编写基于 JavaScript 的应用程序，包括浏览器扩展和网站。
+
 -   JSON 格式用于通过网络连接序列化和传输结构化数据。
+
 -   它主要用于在服务器和 Web 应用程序之间传输数据。
+
 -   Web 服务和 API 使用 JSON 格式来提供公共数据。
+
 -   它可以与现代编程语言一起使用。
 
-# JSON 的特性
+## JSON 的特性
 
 -   JSON 易于读写。
+
 -   它是一种轻量级的基于文本的交换格式。
+
 -   JSON 与语言无关。
 
-# JSON 简单示例
+## JSON 简单示例
 
 以下示例展示了如何使用 JSON 存储与书籍主题和版本相关的信息。
 
@@ -53,8 +62,6 @@ JSON 或 JavaScript 对象表示法（JavaScript Object Notation）是一种轻�
     "book": [
     {
 ```
-
-
 
 ## JSON
 
@@ -116,7 +123,9 @@ JSON 或 JavaScript 对象表示法（JavaScript Object Notation）是一种轻�
 让我们快速了解一下JSON的基本语法。JSON语法基本上被视为JavaScript语法的子集；它包括以下内容：
 
 -   数据以名称/值对的形式表示。
+
 -   花括号保存对象，每个名称后跟':'（冒号），名称/值对由','（逗号）分隔。
+
 -   方括号保存数组，值由','（逗号）分隔。
 
 下面是一个简单的例子：
@@ -142,6 +151,7 @@ JSON 或 JavaScript 对象表示法（JavaScript Object Notation）是一种轻�
 JSON支持以下两种数据结构：
 
 -   **名称/值对的集合：** 这种数据结构得到不同编程语言的支持。
+
 -   **值的有序列表：** 它包括数组、列表、向量或序列等。
 
 ## 3. JSON – 数据类型
@@ -149,28 +159,43 @@ JSON支持以下两种数据结构：
 JSON格式支持以下数据类型：
 
 | 类型 | 描述 |
+
 | :--- | :--- |
+
 | Number | JavaScript中的双精度浮点数格式 |
+
 | String | 带反斜杠转义的双引号Unicode |
+
 | Boolean | true或false |
+
 | Array | 值的有序序列 |
+
 | Value | 可以是字符串、数字、true或false、null等 |
+
 | Object | 键值对的无序集合 |
+
 | Whitespace | 可以在任何一对标记之间使用 |
+
 | null | 空值 |
 
 ### Number
 
 -   它是JavaScript中的双精度浮点数格式，具体取决于实现。
--   不使用八进制和十六进制格式。
+
+-   不使用八进制和十六进格式。
+
 -   数字中不使用NaN或Infinity。
 
 下表显示了数字类型：
 
 | 类型 | 描述 |
+
 | :--- | :--- |
+
 | Integer | 数字1-9，0，正数或负数 |
+
 | Fraction | 小数，如.3, .9 |
+
 | Exponent | 指数，如e, e+, e-, E, E+, E- |
 
 ![](img/dfcbe7259b4ea609a027cf7c8440bcf5_9_0.png)
@@ -192,20 +217,31 @@ var obj = {"marks": 97}
 ### String
 
 -   它是零个或多个带反斜杠转义的双引号Unicode字符的序列。
+
 -   字符是单个字符字符串，即长度为1的字符串。
 
 下表显示了可以在JSON文档字符串中使用的各种特殊字符：
 
 | 类型 | 描述 |
+
 | :--- | :--- |
+
 | " | 双引号 |
+
 | \ | 反斜杠 |
+
 | / | 正斜杠 |
+
 | b | 退格 |
+
 | f | 换页 |
+
 | n | 换行 |
+
 | r | 回车 |
+
 | t | 水平制表符 |
+
 | u | 四个十六进制数字 |
 
 ### 语法
@@ -243,9 +279,13 @@ var obj = {"name": "Amit", "marks": 97, "distinction": true}
 ### Array
 
 -   它是值的有序集合。
+
 -   它们被括在方括号中，这意味着数组以'['开始，以']'结束。
+
 -   值由','（逗号）分隔。
+
 -   数组索引可以从0或1开始。
+
 -   当键名是连续的整数时，应该使用数组。
 
 ### 语法
@@ -273,9 +313,13 @@ var obj = {"name": "Amit", "marks": 97, "distinction": true}
 ### Object
 
 -   它是名称/值对的无序集合。
+
 -   对象被括在花括号中，即它以'{'开始，以'}'结束。
+
 -   每个名称后跟':'（冒号），键/值对由','（逗号）分隔。
+
 -   键必须是字符串，并且应该彼此不同。
+
 -   当键名是任意字符串时，应该使用对象。
 
 ### 语法
@@ -343,10 +387,15 @@ else
 它包括：
 
 -   数字（整数或浮点数）
+
 -   字符串
+
 -   布尔值
+
 -   数组
+
 -   对象
+
 -   null
 
 ### 语法
@@ -370,7 +419,9 @@ var k = null;
 JSON对象可以使用JavaScript创建。让我们看看使用JavaScript创建JSON对象的各种方式：
 
 -   创建空对象：
+
 -   创建新对象：
+
 -   创建一个具有字符串值的属性**bookname**和数值属性**price**的对象。使用'.'运算符访问属性：
 
 ```javascript
@@ -443,11 +494,10 @@ for(i=0;i<books.Pascal.length;i++)
 </html>
 ```
 
-
-
 ## JSON 数组对象
 
 | 名称 | Pascal Made Simple | 名称 | Guide to Pascal | 名称 | Scala for the Impatient | 名称 | Scala in Depth |
+
 | 价格 | 700 | 价格 | 400 | 价格 | 1000 | 价格 | 1300 |
 
 ## 5. JSON – Schema
@@ -455,8 +505,11 @@ for(i=0;i<books.Pascal.length;i++)
 JSON Schema 是一种基于 JSON 的格式规范，用于定义 JSON 数据的结构。它是在 IETF 草案下编写的，该草案已于 2011 年过期。JSON Schema:
 
 -   描述你现有的数据格式。
+
 -   清晰、人类和机器可读的文档。
+
 -   完整的结构验证，适用于自动化测试。
+
 -   完整的结构验证，用于验证客户端提交的数据。
 
 ### JSON Schema 验证库
@@ -464,15 +517,25 @@ JSON Schema 是一种基于 JSON 的格式规范，用于定义 JSON 数据的�
 目前有几种不同编程语言的验证器可用。目前可用的最完整且最合规的 JSON Schema 验证器是 JSV。
 
 | 语言 | 库 |
+
 | :--- | :--- |
+
 | C | WJElement (LGPLv3) |
+
 | Java | json-schema-validator (LGPLv3) |
+
 | .NET | Json.NET (MIT) |
+
 | ActionScript 3 | Frigga (MIT) |
+
 | Haskell | aeson-schema (MIT) |
+
 | Python | Jsonschema |
+
 | Ruby | autoparse (ASL 2.0); ruby-jsonschema (MIT) |
+
 | PHP | php-json-schema (MIT). json-schema (Berkeley) |
+
 | JavaScript | Orderly (BSD); JSV; json-schema; Matic (MIT); Dojo; Persevere (修改版 BSD 或 AFL 2.0); schema.js. |
 
 ## JSON Schema 示例
@@ -507,29 +570,44 @@ JSON Schema 是一种基于 JSON 的格式规范，用于定义 JSON 数据的�
 让我们看看可以在此模式中使用的各种重要关键字：
 
 | 关键字 | 描述 |
+
 | :--- | :--- |
+
 | $schema | `$schema` 关键字声明此模式是按照草案 v4 规范编写的。 |
+
 | title | 你将使用此关键字为模式设置标题。 |
+
 | description | 对模式的简要描述。 |
+
 | type | `type` 关键字定义了对我们的 JSON 数据的第一个约束：它必须是一个 JSON 对象。 |
+
 | properties | 定义在 JSON 文件中使用的各种键及其值类型、最小值和最大值。 |
+
 | required | 保留必需属性的列表。 |
+
 | minimum | 这是要施加在值上的约束，表示可接受的最小值。 |
+
 | exclusiveMinimum | 如果存在 `exclusiveMinimum` 且布尔值为 true，则实例必须严格大于 `minimum` 的值才有效。 |
+
 | maximum | 这是要施加在值上的约束，表示可接受的最大值。 |
+
 | exclusiveMaximum | 如果存在 `exclusiveMaximum` 且布尔值为 true，则实例必须严格小于 `maximum` 的值才有效。 |
+
 | multipleOf | 如果数字实例除以该关键字值的结果是整数，则该实例对 `multipleOf` 有效。 |
+
 | maxLength | 字符串实例的长度定义为其字符的最大数量。 |
+
 | minLength | 字符串实例的长度定义为其字符的最小数量。 |
+
 | pattern | 如果正则表达式成功匹配实例，则认为字符串实例有效。 |
 
 15
 
-![img/dfcbe7259b4ea609a027cf7c8440bcf5_19_0.png](img/dfcbe7259b4ea609a027cf7c8440bcf5_19_0.png)
+![](img/dfcbe7259b4ea609a027cf7c8440bcf5_19_0.png)
 
 ## JSON
 
-你可以在 http://json-schema.org 查看可用于定义 JSON 模式的完整关键字列表。上述模式可用于测试以下 JSON 代码的有效性：
+你可以在 http://json-schema.org 查看可用用于定义 JSON 模式的完整关键字列表。上述模式可用于测试以下 JSON 代码的有效性：
 
 ```
 [
@@ -597,9 +675,13 @@ XML 和 JSON 的独立示例：
 ### JSON 函数
 
 | 函数 | 描述 |
+
 | --- | --- |
+
 | json_encode | 返回值的 JSON 表示形式。 |
+
 | json_decode | 解码 JSON 字符串。 |
+
 | json_last_error | 返回发生的最后一个错误。 |
 
 ### 在 PHP 中编码 JSON (json_encode)
@@ -615,6 +697,7 @@ string json_encode ( $value [, $options = 0 ] )
 #### 参数
 
 -   **value**：要编码的值。此函数仅适用于 UTF-8 编码的数据。
+
 -   **options**：此可选值是一个位掩码，由 `JSON_HEX_QUOT`、`JSON_HEX_TAG`、`JSON_HEX_AMP`、`JSON_HEX_APOS`、`JSON_NUMERIC_CHECK`、`JSON_PRETTY_PRINT`、`JSON_UNESCAPED_SLASHES`、`JSON_FORCE_OBJECT` 组成。
 
 ### 示例
@@ -669,18 +752,19 @@ PHP `json_decode()` 函数用于在 PHP 中解码 JSON。此函数将 json 解�
 mixed json_decode ($json [,$assoc = false [, $depth = 512 [, $options = 0 ]]])
 ```
 
-
-
 ## JSON
 
 ## 参数
 
 -   **json_string**：这是一个编码字符串，必须是 UTF-8 编码的数据。
+
 -   **assoc**：这是一个布尔类型参数，当设置为 TRUE 时，返回的对象将被转换为关联数组。
+
 -   **depth**：这是一个整数类型参数，用于指定递归深度。
+
 -   **options**：这是一个整数类型的 JSON 解码位掩码，支持 JSON_BIGINT_AS_STRING。
 
-## 示例
+### 示例
 
 以下示例展示了如何使用 PHP 来解码 JSON 对象：
 
@@ -732,11 +816,17 @@ $make install
 ### JSON 函数
 
 | 函数 | 库 |
+
 | :--- | :--- |
+
 | encode_json | 将给定的 Perl 数据结构转换为 UTF-8 编码的二进制字符串。 |
+
 | decode_json | 解码 JSON 字符串。 |
+
 | to_json | 将给定的 Perl 数据结构转换为 JSON 字符串。 |
+
 | from_json | 接收一个 JSON 字符串并尝试解析它，返回结果引用。 |
+
 | convert_blessed | 使用此函数并设置为 true 值，以便 Perl 可以使用对象类上的 TO_JSON 方法将对象转换为 JSON。 |
 
 ### 在 Perl 中编码 JSON (encode_json)
@@ -865,8 +955,11 @@ $python setup.py install
 ### JSON 函数
 
 | 函数 | 库 |
+
 | :--- | :--- |
+
 | encode | 将 Python 对象编码为 JSON 字符串表示形式。 |
+
 | decode | 将 JSON 编码的字符串解码为 Python 对象。 |
 
 ### 在 Python 中编码 JSON (encode)
@@ -1013,17 +1106,22 @@ pp obj
 JSON.simple 在解码或解析时将实体从左侧映射到右侧，在编码时将实体从右侧映射到左侧。
 
 | JSON | Java |
+
 | --- | --- |
+
 | 字符串 | java.lang.String |
+
 | 数字 | java.lang.Number |
+
 | true\|false | java.lang.Boolean |
+
 | null | null |
+
 | 数组 | java.util.List |
+
 | 对象 | java.util.Map |
 
 解码时，*java.util.List* 的默认具体类是 *org.json.simple.JSONArray*，*java.util.Map* 的默认具体类是 *org.json.simple.JSONObject*。
-
-
 
 ## 在Java中编码JSON
 
@@ -1153,9 +1251,11 @@ AJAX是Asynchronous JavaScript and XML（异步JavaScript和XML）的缩写，�
 任何使用AJAX更新的数据都可以使用JSON格式存储在Web服务器上。使用AJAX是为了让JavaScript能够在必要时检索这些JSON文件，解析它们，并执行以下操作之一：
 
 - 在将解析后的值显示在网页上之前，将其存储在变量中以进行进一步处理。
+
 - 它直接将数据分配给网页中的DOM元素，使它们显示在网站上。
 
 **示例**
+
 以下代码展示了如何结合使用JSON与AJAX。将其保存为**ajax.htm**文件。这里，加载函数`loadJSON()`被异步地用于上传JSON数据。
 
 ```html
@@ -1212,7 +1312,9 @@ function loadJSON()
 ### 板球运动员详情
 
 | 姓名 | 国家 |
+
 | --- | --- |
+
 | Sachin | India |
 
 # 更新详情：
@@ -1222,5 +1324,7 @@ function loadJSON()
 ### 板球运动员详情
 
 | 姓名 | 国家 |
+
 | --- | --- |
+
 | Brett | Australia |

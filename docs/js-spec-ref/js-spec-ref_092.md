@@ -1,29 +1,9 @@
+
 # 12.1 jQuery 概述
 
 jQuery 是目前使用最广泛的 JavaScript 函数库。据[统计](http://w3techs.com/technologies/details/js-jquery/all/all)，全世界 57.5%的网站使用 jQuery，在使用 JavaScript 函数库的网站中，93.0%使用 jQuery。它已经成了开发者必须学会的技能。
 
 jQuery 的最大优势有两个。首先，它基本是一个 DOM 操作工具，可以使操作 DOM 对象变得异常容易。其次，它统一了不同浏览器的 API 接口，使得代码在所有现代浏览器均能运行，开发者不用担心浏览器之间的差异。
-
-*   jQuery 的加载
-*   jQuery 基础
-    *   jQuery 对象
-    *   jQuery 构造函数
-    *   jQuery 构造函数返回的结果集
-    *   链式操作
-    *   $(document).ready()
-    *   $.noConflict 方法
-    *   jQuery 实例对象的方法
-        *   结果集的过滤方法
-        *   DOM 相关方法
-        *   添加、复制和移动网页元素的方法
-        *   动画效果方法
-        *   其他方法
-    *   事件处理
-        *   事件绑定的简便方法
-        *   on 方法，trigger 方法，off 方法
-        *   event 对象
-        *   一次性事件
-    *   参考链接
 
 ## jQuery 的加载
 
@@ -41,9 +21,13 @@ window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js" type="tex
 目前常用的 jQuery CDN 有以下这些。
 
 *   [Google CDN](https://developers.google.com/speed/libraries/devguide#jquery)
+
 *   [Microsoft CDN](http://www.asp.net/ajax/cdn#jQuery_Releases_on_the_CDN_0)
+
 *   [jQuery CDN](http://jquery.com/download/#jquery-39-s-cdn-provided-by-maxcdn)
+
 *   [CDNJS CDN](http://cdnjs.com/libraries/jquery/)
+
 *   [jsDelivr CDN](http://www.jsdelivr.com/#!jquery)
 
 上面这段代码最好放到网页尾部。如果需要支持 IE 6/7/8，就使用 jQuery 1.x 版，否则使用最新版。
@@ -78,7 +62,7 @@ $('body') instanceof jQuery
 
 上面代码表示，由于 jQuery 返回的不是 DOM 对象，所以没有 DOM 属性 nodeType。它返回的是 jQuery 对象的实例。
 
-（1）CSS 选择器作为参数
+#### CSS 选择器作为参数
 
 jQuery 构造函数的参数，主要是 CSS 选择器，就像上面的那个例子。下面是另外一些 CSS 选择器的例子。
 
@@ -99,7 +83,7 @@ $("[title^='Tom']")
 
 本书不讲解 CSS 选择器，请读者参考有关书籍和 jQuery 文档。
 
-（2）DOM 对象作为参数
+#### DOM 对象作为参数
 
 jQuery 构造函数的参数，还可以是 DOM 对象。它也会被转为 jQuery 对象的实例。
 
@@ -116,7 +100,7 @@ $(document.body) instanceof jQuery
 $([document.body, document.head])
 ```
 
-（3）HTML 代码作为参数
+#### HTML 代码作为参数
 
 如果直接在 jQuery 构造函数中输入 HTML 代码，返回的也是 jQuery 实例。
 
@@ -158,7 +142,7 @@ $('<input/>')
 .val('bar')
 ```
 
-（4）第二个参数
+#### 第二个参数
 
 默认情况下，jQuery 将文档的根元素（html）作为寻找匹配对象的起点。如果要指定某个网页元素（比如某个 div 元素）作为寻找的起点，可以将它放在 jQuery 函数的第二个参数。
 
@@ -172,7 +156,7 @@ $('li', someElement);
 
 jQuery 的核心思想是“先选中某些网页元素，然后对其进行某种处理”（find something, do something），也就是说，先选择后处理，这是 jQuery 的基本操作模式。所以，绝大多数 jQuery 操作都是从选择器开始的，返回一个选中的结果集。
 
-（1）length 属性
+#### length 属性
 
 jQuery 对象返回的结果集是一个类似数组的对象，包含了所有被选中的网页元素。查看该对象的 length 属性，可以知道到底选中了多少个结果。
 
@@ -196,7 +180,7 @@ if ($('div.foo')) { ... }
 if ($('div.foo').length) { ... }
 ```
 
-（2）下标运算符
+#### 下标运算符
 
 jQuery 选择器返回的是一个类似数组的对象。但是，使用下标运算符取出的单个对象，并不是 jQuery 对象的实例，而是一个 DOM 对象。
 
@@ -207,7 +191,7 @@ $('li')[0] instanceof Element // true
 
 上面代码表示，下标运算符取出的是 Element 节点的实例。所以，通常使用下标运算符将 jQuery 实例转回 DOM 对象。
 
-（3）is 方法
+#### is 方法
 
 is 方法返回一个布尔值，表示选中的结果是否符合某个条件。这个用来验证的条件，可以是 CSS 选择器，也可以是一个函数，或者 DOM 元素和 jQuery 实例。
 
@@ -223,7 +207,7 @@ $('li').is(function() {
 });
 ```
 
-（4）get 方法
+#### get 方法
 
 jQuery 实例的 get 方法是下标运算符的另一种写法。
 
@@ -231,7 +215,7 @@ jQuery 实例的 get 方法是下标运算符的另一种写法。
 $('li').get(0) instanceof Element // true
 ```
 
-（5）eq 方法
+#### eq 方法
 
 如果想要在结果集取出一个 jQuery 对象的实例，不需要取出 DOM 对象，则使用 eq 方法，它的参数是实例在结果集中的位置（从 0 开始）。
 
@@ -241,7 +225,7 @@ $('li').eq(0) instanceof jQuery // true
 
 由于 eq 方法返回的是 jQuery 的实例，所以可以在返回结果上使用 jQuery 实例对象的方法。
 
-（6）each 方法，map 方法
+#### each 方法，map 方法
 
 这两个方法用于遍历结果集，对每一个成员进行某种操作。
 
@@ -273,7 +257,7 @@ $("input").map(function (index, element){
 
 上面代码表示，将所有 input 元素依次取出值，然后通过 get 方法得到一个包含这些值的数组，最后通过数组的 join 方法返回一个逗号分割的字符串。
 
-（8）内置循环
+#### 内置循环
 
 jQuery 默认对当前结果集进行循环处理，所以如果直接使用 jQuery 内置的某种方法，each 和 map 方法是不必要的。
 
@@ -366,7 +350,7 @@ jQuery 使用美元符号（$）指代 jQuery 对象。某些情况下，其他�
 
 选择器选出一组符合条件的网页元素以后，jQuery 提供了许多方法，可以过滤结果集，返回更准确的目标。
 
-（1）first 方法，last 方法
+#### first 方法，last 方法
 
 first 方法返回结果集的第一个成员，last 方法返回结果集的最后一个成员。
 
@@ -376,7 +360,7 @@ $("li").first()
 $("li").last()
 ```
 
-（2）next 方法，prev 方法
+#### next 方法，prev 方法
 
 next 方法返回紧邻的下一个同级元素，prev 方法返回紧邻的上一个同级元素。
 
@@ -390,7 +374,7 @@ $("li").last().prev('.item')
 
 如果 next 方法和 prev 方法带有参数，表示选择符合该参数的同级元素。
 
-（3）parent 方法，parents 方法，children 方法
+#### parent 方法，parents 方法，children 方法
 
 parent 方法返回当前元素的父元素，parents 方法返回当前元素的所有上级元素（直到 html 元素）。
 
@@ -416,7 +400,7 @@ $('div > .selected')
 
 上面这三个方法都接受一个选择器作为参数。
 
-（4）siblings 方法，nextAll 方法，prevAll 方法
+#### siblings 方法，nextAll 方法，prevAll 方法
 
 siblings 方法返回当前元素的所有同级元素。
 
@@ -432,7 +416,7 @@ $('li').first().nextAll()
 $('li').last().prevAll()
 ```
 
-（5）closest 方法，find 方法
+#### closest 方法，find 方法
 
 closest 方法返回当前元素，以及当前元素的所有上级元素之中，第一个符合条件的元素。find 方法返回当前元素的所有符合条件的下级元素。
 
@@ -443,7 +427,7 @@ $('div').find('li')
 
 上面代码中的 find 方法，选中所有 div 元素下面的 li 元素，等同于$('li', 'div')。由于这样写缩小了搜索范围，所以要优于$('div li')的写法。
 
-（6）find 方法，add 方法，addBack 方法，end 方法
+#### find 方法，add 方法，addBack 方法，end 方法
 
 add 方法用于为结果集添加元素。
 
@@ -463,7 +447,7 @@ end 方法用于返回原始的结果集。
 $('li').first().end()
 ```
 
-（7）filter 方法，not 方法，has 方法
+#### filter 方法，not 方法，has 方法
 
 filter 方法用于过滤结果集，它可以接受多种类型的参数，只返回与参数一致的结果。
 
@@ -489,7 +473,7 @@ not 方法的用法与 filter 方法完全一致，但是返回相反的结果�
 $('li').not('.item')
 ```
 
-has 方法与 filter 方法作用相同，但是只过滤出子元素符合条件的元素。
+has 方法与 filter 方法作用相同，但是只过滤出子元符合条件的元素。
 
 ```js
 $("li").has("ul")
@@ -501,7 +485,7 @@ $("li").has("ul")
 
 许多方法可以对 DOM 元素进行处理。
 
-（1）html 方法和 text 方法
+#### html 方法和 text 方法
 
 html 方法返回该元素包含的 HTML 代码，text 方法返回该元素包含的文本。
 
@@ -549,7 +533,7 @@ $('li').html(function (i, v){
 // <li>1: World</li>
 ```
 
-（2）addClass 方法，removeClass 方法，toggleClass 方法
+#### addClass 方法，removeClass 方法，toggleClass 方法
 
 addClass 方法用于添加一个类，removeClass 方法用于移除一个类，toggleClass 方法用于折叠一个类（如果无就添加，如果有就移除）。
 
@@ -559,7 +543,7 @@ $('li').removeClass('special')
 $('li').toggleClass('special')
 ```
 
-（3）css 方法
+#### css 方法
 
 css 方法用于改变 CSS 设置。
 
@@ -583,7 +567,7 @@ $('li').css({
 
 上面两种形式都可以用于赋值，jQuery 赋值器基本上都是如此。
 
-（4）val 方法
+#### val 方法
 
 val 方法返回结果集第一个元素的值，或者设置当前结果集所有元素的值。
 
@@ -593,7 +577,7 @@ $('input[type="text"]').val()
 $('input[type="text"]').val('new value')
 ```
 
-（5）prop 方法，attr 方法
+#### prop 方法，attr 方法
 
 首先，这里要区分两种属性。
 
@@ -642,7 +626,7 @@ if ( elem.checked ) { /*...*/ };
 if ( $(elem).is(":checked") ) { /*...*/ };
 ```
 
-（6）removeProp 方法，removeAttr 方法
+#### removeProp 方法，removeAttr 方法
 
 removeProp 方法移除某个 DOM 属性，removeAttr 方法移除某个 HTML 属性。
 
@@ -651,7 +635,7 @@ $("a").prop("oldValue",1234).removeProp('oldValue')
 $('a').removeAttr("title")
 ```
 
-（7）data 方法
+#### data 方法
 
 data 方法用于在一个 DOM 对象上储存数据。
 
@@ -669,7 +653,7 @@ $("body").data("foo");
 
 jQuery 方法提供一系列方法，可以改变元素在文档中的位置。
 
-（1）append 方法，appendTo 方法
+#### append 方法，appendTo 方法
 
 append 方法将参数中的元素插入当前元素的尾部。
 
@@ -689,7 +673,7 @@ $("<p>World</p>").appendTo("div")
 
 上面代码返回与前一个例子一样的结果。
 
-（2）prepend 方法，prependTo 方法
+#### prepend 方法，prependTo 方法
 
 prepend 方法将参数中的元素，变为当前元素的第一个子元素。
 
@@ -723,7 +707,7 @@ $("<p></p>").prependTo("div")
 // <div><p></p></div>
 ```
 
-（3）after 方法，insertAfter 方法
+#### after 方法，insertAfter 方法
 
 after 方法将参数中的元素插在当前元素后面。
 
@@ -743,7 +727,7 @@ $("<p></p>").insertAfter("div")
 
 上面代码返回与前一个例子一样的结果。
 
-（4）before 方法，insertBefore 方法
+#### before 方法，insertBefore 方法
 
 before 方法将参数中的元素插在当前元素的前面。
 
@@ -763,7 +747,7 @@ $("<p></p>").insertBefore("div")
 
 上面代码返回与前一个例子一样的结果。
 
-（5）wrap 方法，wrapAll 方法，unwrap 方法，wrapInner 方法
+#### wrap 方法，wrapAll 方法，unwrap 方法，wrapInner 方法
 
 wrap 方法将参数中的元素变成当前元素的父元素。
 
@@ -815,7 +799,7 @@ $("p").wrapInner('<strong></strong>')
 // <p><strong>Hello</strong></p>
 ```
 
-（6）clone 方法
+#### clone 方法
 
 clone 方法克隆当前元素。
 
@@ -825,7 +809,7 @@ var clones = $('li').clone();
 
 对于那些有 id 属性的节点，clone 方法会连 id 属性一起克隆。所以，要把克隆的节点插入文档的时候，务必要修改或移除 id 属性。
 
-（7）remove 方法，detach 方法，replaceWith 方法
+#### remove 方法，detach 方法，replaceWith 方法
 
 remove 方法移除并返回一个元素，取消该元素上所有事件的绑定。detach 方法也是移除并返回一个元素，但是不取消该元素上所有事件的绑定。
 
@@ -846,17 +830,24 @@ jQuery 提供一些方法，可以很容易地显示网页动画效果。但是�
 
 如果将 jQuery.fx.off 设为 true，就可以将所有动画效果关闭，使得网页元素的各种变化一步到位，没有中间过渡的动画效果。
 
-（1）动画效果的简便方法
+#### 动画效果的简便方法
 
 jQuery 提供以下一些动画效果方法。
 
 *   show：显示当前元素。
+
 *   hide：隐藏当前元素。
+
 *   toggle：显示或隐藏当前元素。
+
 *   fadeIn：将当前元素的不透明度（opacity）逐步提升到 100%。
+
 *   fadeOut：将当前元素的不透明度逐步降为 0%。
+
 *   slideDown：以从上向下滑入的方式显示当前元素。
+
 *   slideUp：以从下向上滑出的方式隐藏当前元素。
+
 *   slideToggle：以垂直滑入或滑出的方式，折叠显示当前元素。
 
 上面这些方法可以不带参数调用，也可以接受毫秒或预定义的关键字作为参数。
@@ -898,7 +889,7 @@ $('p').fadeOut(300, function() {
 
 上面代码表示，p 元素以 300 毫秒的速度淡出，然后调用回调函数，将其从 DOM 中移除。
 
-（2）animate 方法
+#### animate 方法
 
 上面这些动画效果方法，实际上都是 animate 方法的简便写法。在幕后，jQuery 都是统一使用 animate 方法生成各种动画效果。
 
@@ -919,7 +910,7 @@ $('div').animate({
 
 上面代码表示，animate 方法的第一个参数是一个对象，表示动画结束时相关 CSS 属性的值，第二个参数是动画持续的毫秒数，第三个参数是动画结束时的回调函数。需要注意的是，第一个参数对象的成员名称，必须与 CSS 属性名称一致，如果 CSS 属性名称带有连字号，则需要用“骆驼拼写法”改写。
 
-（3）stop 方法，delay 方法
+#### stop 方法，delay 方法
 
 stop 方法表示立即停止执行当前的动画。
 
@@ -983,17 +974,29 @@ $('li').click(function (e){
 这样绑定事件的简便方法有如下一些：
 
 *   click
+
 *   keydown
+
 *   keypress
+
 *   keyup
+
 *   mouseover
+
 *   mouseout
+
 *   mouseenter
+
 *   mouseleave
+
 *   scroll
+
 *   focus
+
 *   blur
+
 *   resize
+
 *   hover
 
 如果不带参数调用这些方法，就是触发相应的事件，从而引发回调函数的运行。
@@ -1033,7 +1036,7 @@ $(selector).mouseenter(handlerIn).mouseleave(handlerOut)
 
 除了简便方法，jQuery 还提供事件处理的通用方法。
 
-（1）on 方法
+#### on 方法
 
 on 方法是 jQuery 事件绑定的统一接口。事件绑定的那些简便方法，其实都是 on 方法的简写形式。
 
@@ -1081,7 +1084,7 @@ $("ul" ).on("click", {name: "张三"}, function (event){
 
 上面代码在发生 click 事件之后，会通过 event 对象的 data 属性，在控制台打印出所传入的数据（即“张三”）。
 
-（2）trigger 方法
+#### trigger 方法
 
 trigger 方法用于触发回调函数，它的参数就是事件的名称。
 
@@ -1091,7 +1094,7 @@ $('li').trigger('click')
 
 上面代码触发 li 元素的 click 事件回调函数。与那些简便方法一样，trigger 方法只触发回调函数，而不会引发浏览器的默认行为。
 
-（3）off 方法
+#### off 方法
 
 off 方法用于移除事件的回调函数。
 
@@ -1101,7 +1104,7 @@ $('li').off('click')
 
 上面代码移除 li 元素所有的 click 事件回调函数。
 
-（4）事件的名称空间
+#### 事件的名称空间
 
 同一个事件有时绑定了多个回调函数，这时如果想移除其中的一个回调函数，可以采用“名称空间”的方式，即为每一个回调函数指定一个二级事件名，然后再用 off 方法移除这个二级事件的回调函数。
 
@@ -1136,15 +1139,21 @@ $(document).on('click', function (e){
 event 对象有以下属性：
 
 *   type：事件类型，比如 click。
+
 *   which：触发该事件的鼠标按钮或键盘的键。
+
 *   target：事件发生的初始对象。
+
 *   data：传入事件对象的数据。
+
 *   pageX：事件发生时，鼠标位置的水平坐标（相对于页面左上角）。
+
 *   pageY：事件发生时，鼠标位置的垂直坐标（相对于页面左上角）。
 
 event 对象有以下方法：
 
 *   preventDefault：取消浏览器默认行为。
+
 *   stopPropagation：阻止事件向上层元素传播。
 
 ### 一次性事件
@@ -1171,6 +1180,9 @@ function handler(e) {
 ## 参考链接
 
 *   Elijah Manor, [Do You Know When You Are Looping in jQuery?](http://www.elijahmanor.com/2013/01/yo-dawg-i-herd-you-like-loops-so-jquery.html)
+
 *   Craig Buckler, [How to Create One-Time Events in JavaScript](http://www.sitepoint.com/create-one-time-events-javascript/)
+
 *   jQuery Fundamentals, [jQuery Basics](http://jqfundamentals.com/chapter/jquery-basics)
+
 *   jQuery Fundamentals, [Animating Your Pages with jQuery](http://jqfundamentals.com/chapter/effects)

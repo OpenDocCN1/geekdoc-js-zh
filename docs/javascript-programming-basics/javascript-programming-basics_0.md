@@ -1,19 +1,20 @@
+
 # JavaScript 编程入门指南
-
-
 
 ![](img/cover00083.jpeg)
 
-
 ## JavaScript 教程
+
 这节 JavaScript 课程让初学者和专家都能轻松学习 JavaScript。
 
 ### 什么是 JavaScript 以及它是如何工作的？
+
 JavaScript 是一种用于计算机的动态编程语言。它是一种轻量级跨平台的基于对象的脚本语言。
 
 借助 JavaScript，我们可以让网站更具活力和吸引力。
 
 Netscape 员工 Brendan Eich 在 1995 年设计了它。它是一种用于创建交互式网站的编程语言。它最常见的用途包括：
+
 * 客户端验证。
 * 动态下拉菜单。
 * 显示当前日期和时间。
@@ -26,12 +27,14 @@ Netscape 员工 Brendan Eich 在 1995 年设计了它。它是一种用于创建
 * 移动设备的游戏和应用开发。
 
 ## JavaScript 的特性
+
 * JavaScript 是一种基于对象的脚本语言。
 * 该语言区分大小写。
 * 它非常轻量。
 * 在 JavaScript 中，每条语句后面必须跟一个分号（`;`）。
 
 ## JavaScript 的优势
+
 * JavaScript 是一种解释型脚本语言。不需要编译器，因为没有编译过程。JavaScript 由浏览器作为 HTML 标签进行解释。
 * JavaScript 是一种简单的编程语言。对任何人来说都非常容易学习。它用于创建动态且吸引人的网站。
 * 因为 JavaScript 运行在客户端，它降低了网站服务器的负载。
@@ -42,16 +45,21 @@ Netscape 员工 Brendan Eich 在 1995 年设计了它。它是一种用于创建
 ## JavaScript 
 
 ### 欢迎学习 JavaScript
+
 ```html
 <script>
   document.write("Hello JavaScript by TutorialandExample");
 </script>
 ```
+
 **输出：**
+
 Welcome to JavaScript
+
 Hello JavaScript by TutorialandExample
 
 ### JavaScript 示例
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -63,8 +71,11 @@ Hello JavaScript by TutorialandExample
 </body>
 </html>
 ```
+
 **输出：**
+
 Welcome to JavaScript（注：此处原文为英文，保持输出）
+
 Hello Friends
 
 可以通过在代码中使用 `<script>...</script>` 包含 JavaScript 语句来实现 JavaScript。
@@ -79,16 +90,21 @@ Hello Friends
 </body>
 </html>
 ```
+
 **输出：**
+
 Hello World
 
 在 JavaScript 中，代码可以写在三个地方：
+
 1. 在 HTML 的 `<body>`...`</body>` 标签之间。
 2. 在 HTML 的 `<head>`...`</head>` 标签之间。
 3. 在 `.js` 文件中（外部 JavaScript）。
 
 #### 举例说明（写在 body 标签之间的代码）
+
 在下例示例中，`<body>` 标签包含了 JavaScript 代码。
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -101,7 +117,9 @@ Hello World
 ```
 
 #### 示例 2（在 head 标签之间的代码）
-我们将在下例的 `()` 中创建函数 `msg`。在 JavaScript 中，你必须在函数名后编写函数体来定义函数。要调用函数，我们必须先创建一个事件。在这种情况下，我们正在使用单击事件来调用 `msg()` 函数。
+
+我们将在下例的 `()` 中创建函数 `msg()`。在 JavaScript 中，你必须在函数名后编写函数体来定义函数。要调用函数，我们必须先创建一个事件。在这种情况下，我们正在使用单击事件来调用 `msg()` 函数。
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -122,9 +140,11 @@ Hello World
 ```
 
 ### 外部 JavaScript 文件
+
 我们可以创建一个包含在 HTML 中的的 JavaScript 文件。由于单个文件可以在多个页面中使用，因此它允许代码复用并提高网页性能。该文件必须具有 `.js` 扩展名。
 
 **示例：**
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -141,16 +161,20 @@ Hello World
 ```
 
 ## JavaScript 注释
+
 JavaScript 中的注释用于描述代码，例如警告或建议，以便用户理解代码。
 
 ### 类型
+
 1. 单行注释
 2. 多行注释
 
 #### 单行注释
+
 双斜杠 `//` 用于表示单行注释。在程序运行时，双斜杠到行尾之间的任何文本都将被忽略。
 
 **在语句之前添加的示例：**
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -164,6 +188,7 @@ JavaScript 中的注释用于描述代码，例如警告或建议，以便用户
 ```
 
 **在语句之后添加的示例：**
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -177,12 +202,15 @@ JavaScript 中的注释用于描述代码，例如警告或建议，以便用户
 </body>
 </html>
 ```
+
 **输出：** 30
 
 #### 多行注释
+
 单行和多行注释都可以通过多行注释实现。跨行的注释以 `/*` 开始，以 `*/` 结束。JavaScript 会忽略其中的文本。
 
 **示例：**
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -196,15 +224,20 @@ JavaScript 中的注释用于描述代码，例如警告或建议，以便用户
 ```
 
 ## JavaScript 变量
+
 值（`"Ram"`）和表达式（`x+y`）存储在变量中。在使用之前必须先声明变量。声明变量使用 `var` 关键字，如下：`var name;`。
 
 变量有两种类型：
+
 1. 局部变量
 2. 全局变量
 
 ### 局部变量
+
 它定义在函数或块内部。
+
 **示例：**
+
 ```javascript
 <script>
   function() {
@@ -214,8 +247,11 @@ JavaScript 中的注释用于描述代码，例如警告或建议，以便用户
 ```
 
 ### 全局变量
+
 它具有全局作用域，意味着可以在 JavaScript 代码的任何地方定义。在函数外部声明变量。
+
 **示例：**
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -236,8 +272,11 @@ JavaScript 中的注释用于描述代码，例如警告或建议，以便用户
 ```
 
 ### 在 JavaScript 中于函数内部声明全局变量
+
 要在函数内部声明 JavaScript 全局变量，我们必须使用 `window` 对象。
+
 **示例：**
+
 ```javascript
 <script>
   function a() {
@@ -245,10 +284,6 @@ JavaScript 中的注释用于描述代码，例如警告或建议，以便用户
   }
 </script>
 ```
-
-
-
-
 
 ```javascript
 window.value=50; //使用 window 对象声明全局变量
@@ -379,7 +414,9 @@ if(x>30){
 </body>
 </html>
 ```
+
 **输出**
+
 Value of x is greater than 30
 
 ### if else 语句
@@ -387,6 +424,7 @@ Value of x is greater than 30
 如果任一条件为真或假（此处不满足时），则使用 `if else` 语句。
 
 #### 语法
+
 ```javascript
 if(condition)
 {
@@ -397,9 +435,11 @@ else
   // 语句组
 }
 ```
+
 ![Image 2.jpg](img/image00076.jpeg)
 
 **示例**
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -416,7 +456,9 @@ else{
 </body>
 </html>
 ```
+
 **输出**
+
 X is even number
 
 ### if else if
@@ -424,6 +466,7 @@ X is even number
 它仅仅查看内容以检查在许多表达式中该表达式是否为真。`else if` 是 `if else` 语句的更复杂版本。
 
 #### 语法
+
 ```javascript
 If (condition1)
 {
@@ -444,6 +487,7 @@ else
 ```
 
 **示例**
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -466,7 +510,9 @@ else{
 </body>
 </html>
 ```
+
 **输出**
+
 x is equal to 50
 
 # JavaScript 语句
@@ -476,6 +522,7 @@ x is equal to 50
 ![Image 3.jpg](img/image0077.jpeg)
 
 #### 语法
+
 ```javascript
 switch (expression)
 {
@@ -488,9 +535,11 @@ switch (expression)
   default: statements(s)
 }
 ```
+
 注意：在 `switch-case` 语句中，`break` 语句非常重要。
 
 **示例**
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -516,7 +565,9 @@ document.write(result);
 </body>
 </html>
 ```
+
 **输出**
+
 B Grade
 
 # JavaScript 循环
@@ -534,6 +585,7 @@ B Grade
 ![Image 4.jpg](img/image00078.jpeg)
 
 #### 语法
+
 ```javascript
 while(condition){
   // 如果表达式为真，则执行语句
@@ -541,6 +593,7 @@ while(condition){
 ```
 
 **示例**
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -555,16 +608,27 @@ while (i<=10) {
 </body>
 </html>
 ```
+
 **输出**
+
 1
+
 2
+
 3
+
 4
+
 5
+
 6
+
 7
+
 8
+
 9
+
 10
 
 ### For 循环
@@ -574,6 +638,7 @@ while (i<=10) {
 ![Image 5.jpg](img/image00079.jpeg)
 
 #### 语法
+
 ```javascript
 for (initialization; condition; increment)
 {
@@ -582,6 +647,7 @@ for (initialization; condition; increment)
 ```
 
 **示例**
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -594,18 +660,31 @@ for (i=1; i<=12; i++) {
 </body>
 </html>
 ```
+
 **输出**
+
 1
+
 2
+
 3
+
 4
+
 5
+
 6
+
 7
+
 8
+
 9
+
 10
+
 11
+
 12
 
 ### do while 循环
@@ -615,6 +694,7 @@ for (i=1; i<=12; i++) {
 ![Image 6.jpg](img/image00080.jpeg)
 
 #### 语法
+
 ```javascript
 do{
   // 待执行的代码
@@ -624,6 +704,7 @@ while (condition);
 ```
 
 **示例**
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -638,19 +719,22 @@ do{
 </body>
 </html>
 ```
+
 **输出**
+
 11
+
 12
+
 13
+
 14
+
 15
 
 # JavaScript 函数
 
 在 `<script>.....</script>` 标签内定义新函数是 JavaScript 的一个重要功能。`function` 关键字用于在 JavaScript 中声明函数。
-
-
-
 
 为了重用代码，我们多次调用 JavaScript 方法。
 
@@ -685,6 +769,7 @@ function msg() {
 ```
 
 #### 输出
+
 Hello world!（你好，世界！）
 
 ## 带参数的函数
@@ -708,6 +793,7 @@ function getcube(number) {
 ```
 
 #### 输出
+
 27
 
 #### 示例
@@ -750,6 +836,7 @@ function getInfo() {
 ```
 
 #### 输出
+
 Hello Raj! How are you?（你好，Raj！你你好吗？）
 
 ## Function() 构造函数
@@ -836,6 +923,7 @@ objectName.objectProperty = propertyValue;
 我们使用 `write()` 方法来记录对象，以便在文档上写入任何内容。`Document.write("Hello world")`
 
 #### 示例
+
 以下示例展示了如何 创建一个对象。
 
 ```html
@@ -859,7 +947,9 @@ objectName.objectProperty = propertyValue;
 ```
 
 #### 输出
+
 Book Name is : 5 points someone
+
 Book Author is : ChetanBhagat
 
 ## 对象的方法 (Methods of an Object)
@@ -896,8 +986,11 @@ function book(title,author){
 ```
 
 #### 输出
+
 Book Title is:  Points Someone
+
 Book Author is : ChetanBhagat
+
 Book Price is : 150
 
 ## JavaScript 数组 (Javascript array)
@@ -905,9 +998,11 @@ Book Price is : 150
 数组用于在单个单元或内存区域表示元素集合。进入数组的每个元素都存储在数组中，索引从零开始。我们可以通过索引来存储数据。在 JavaScript 中，我们必须使用 `new` 关键字声明数组。我们使用 `new Array(n)`。数组中的槽位由 `n` 表示。
 
 #### 语法
+
 ```javascript
 array = new array(n);
 ```
+
 注意：当我们在 JavaScript 中指定大小构建数组时，我们会构建大小为零的对象。
 
 #### 示例
@@ -932,9 +1027,13 @@ array = new array(n);
 ```
 
 #### 输出
+
 Ajay
+
 Abhay
+
 Arun
+
 Shipra
 
 #### 示例
@@ -972,22 +1071,20 @@ String 对象用于处理字符字符串。它是用于存储和处理文本的�
 在 JavaScript 中，有两种方法创建字符串：
 
 1. 字符串字面量。
-
-
-
-
-
-## 2. 使用 new 关键字。
+2. 使用 `new` 关键字。
 
 ### 字符串字面量
+
 字符串字面量是通过双引号创建的。
 
 #### 语法
+
 ```javascript
 var stringname="string value";
 ```
 
 #### 示例
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -999,16 +1096,21 @@ document.write(str);
 </body>
 </html>
 ```
+
 #### 输出
+
 `Hello String Literal`
 
 ### 使用 new 关键字
+
 #### 语法
+
 ```javascript
 var stringname=new String("new keyword")
 ```
 
 #### 示例
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -1020,19 +1122,23 @@ document.write(stringname);
 </body>
 </html>
 ```
+
 #### 输出
+
 `Hello String`
 
 ### 字符串属性
+
 这里列出了字符串对象的属性列表及其描述。
 
 1. `constructor`。
 2. `length`。
 3. `prototype`。
 
-**构造函数 (Constructor)**– 它它为你提供一个指向最初创建该对象的字符串函数的引用。
+**构造函数 (Constructor)**– 它为你提供一个指向最初创建该对象的字符串函数的引用。
 
 #### 语法
+
 ```javascript
 string.constructor
 ```
@@ -1040,6 +1146,7 @@ string.constructor
 **长度 (Length)** - 返回字符串中的字符数。
 
 #### 语法
+
 ```javascript
 string.length
 ```
@@ -1047,17 +1154,21 @@ string.length
 **原型 (Prototype)**– 它允许向任何对象添加属性和方法（如 Number、Boolean、string 和数据等）。这是一个大多数对象都可以访问的全局属性。
 
 #### 语法
+
 ```javascript
 object.prototype.name = value
 ```
 
 ### JavaScript 字符串中还可以可用方法：
+
 ![](img/image00082.jpeg)
 
 #### charAt()
+
 这是一个从指定索引处获取字符的方法。
 
 #### 示例
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -1075,9 +1186,11 @@ document.writeln("<br />str.charAt(4) is: " + str.charAt(4));
 ```
 
 #### concat(str)
+
 该方法在合并两个或多个字符串后返回一个新字符串。
 
 #### 示例
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -1093,6 +1206,7 @@ document.write(z);
 ```
 
 #### 这里是 concat(str) 的另一个示例
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -1108,9 +1222,11 @@ document.write("Concatenated String : " + c);
 ```
 
 #### indexOf(str)
+
 字符串索引 - `indexOf(str)` 方法返回给定字符串的索引位置。
 
 #### 示例
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -1125,9 +1241,11 @@ document.write(y);
 ```
 
 #### lastIndexOf(str)
+
 字符串 `lastIndexOf(str)` 方法返回字符串的最后一个索引点。
 
 #### 示例
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -1142,7 +1260,9 @@ document.write(n);
 ```
 
 #### match()
+
 #### 示例
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -1158,9 +1278,11 @@ document.write(find );
 ```
 
 #### toLowerCase()
+
 将指定的字符串转换为小写字母。
 
 #### 示例
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -1175,9 +1297,11 @@ document.write(y);
 ```
 
 #### toUpperCase()
+
 将指定的字符串转换为大写字母。
 
 #### 示例
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -1192,9 +1316,11 @@ document.write(y);
 ```
 
 #### valueOf()
+
 它返回字符串对象的原始值。
 
 #### 示例
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -1206,4 +1332,3 @@ document.write(str.valueOf( ));
 </body>
 </html>
 ```
-

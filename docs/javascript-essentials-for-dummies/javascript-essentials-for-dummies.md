@@ -1,23 +1,15 @@
+
 # JavaScript初学者入门指南
 
+## 温习核心概念
 
+## 启动你的技能扩展
 
-
-
-
-
-
-温习核心概念
-启动你的技能扩展
-寻找常见问题的解决方案
-
+## 寻找常见问题的解决方案
 
 ![](img/d7cbed725c071566e0fc4bb4166ff642_0_0.png)
 
-
 如需查看此书的快速备查表（Cheat Sheet），请访问 www.dummies.com 并在搜索框中搜索“JavaScript Essentials For Dummies Cheat Sheet”。
-
-
 
 # 引言
 
@@ -84,11 +76,11 @@ HTML 和 CSS 是非常的技术，你可以用它们创建看起来惊艳的页�
 
 好了，是时候卷起袖子开始写代码了。
 
-### <script> 标签
+### `<script>` 标签
 
 JavaScript 的基本容器是：
 
-```
+```html
 <script>
   JavaScript 代码放在这里
 </script>
@@ -150,22 +142,21 @@ JavaScript 的基本容器是：
 alert("Hello JavaScript World!");
 ```
 
-这被称为语句（statement），每个语句都旨在执行单一的 JavaScript 任务。你的脚本范围将从只有几个语句的简单程序到由数百条语句组成的大型项目。
-
-
+这被称为语句（`statement`），每个语句都旨在执行单一的 JavaScript 任务。你的脚本范围将从只有几个语句的简单程序到由数百条语句组成的大型项目。
 
 在示例中，该语句运行 JavaScript 的 `alert()` 方法，该方法会向用户显示括号内包含任何消息（可以是欢迎信息、您网站新功能的公告、促销活动广告等）。
+
 图 1-1 显示了当你打开该文件时出现的消息。
 
 ![](img/d7cbed725c071566e0fc4bb4166ff642_18_0.png)
 
 **图 1-1：** 当你打开包含示例脚本的 HTML 文件时，会显示这个“alert”消息。
 
-浏览器是如何知道要运行该 JavaScript 语句的？当浏览器处理（口语中称为*解析*，parses）一个页面时，它基本上是从 HTML 文件的开始处开始一行一行地向下工作。如果它遇到了 `<script>` 标签，它就知道后面将出现一个或多个 JavaScript 语句，并在读取到这些语句后，按照顺序自动执行它们。唯一的例外是 JavaScript 语句被包含在*函数*（function）中，我将在第 5 章中进行解释。
+浏览器是如何知道要运行该 JavaScript 语句的？当浏览器处理（口语中称为*解析*，`parses`）一个页面时，它基本上是从 HTML 文件的开始处开始一行一行地向下工作。如果它遇到了 `<script>` 标签，它就知道后面将出现一个或多个 JavaScript 语句，并在读取到这些语句后，按照顺序自动执行它们。唯一的例外是 JavaScript 语句被包含在*函数*（`function`）中，我将在第 5 章中进行解释。
 
-警告 JavaScript 编程的核心准则之一是“一条语句一行”。也就是说，每个语句必须只出现在单行中，且每行不应超过一个语句。我在上一句的第二部分说“应该”，是因为只要你用分号（`;`）将每个语句隔开来，就可以将多个语句放在同一行中。虽然在少数情况下有必要在一行中放置两个或多个语句，但在编程的大部分时间内，你应该避免这样做，因为包含多个语句的行な难以阅读和排查故障。
+> **警告** JavaScript 编程的核心准则之一是“一条语句一行”。也就是说，每个语句必须只出现在单行中，且每行不应超过一个语句。我在上一句的第二部分说“应该”，是因为只要你用分号（`;`）将每个语句隔开来，就可以将多个语句放在同一行中。虽然在少数情况下有必要在一行中放置两个或多个语句，但在编程的大部分时间内，你应该避免这样做，因为包含多个语句的行难以阅读和排查故障。
 
-## 示例 #2：向页面写入文本
+### 示例 #2：向页面写入文本
 
 JavaScript 最强大的功能之一是能够动态地向网页写入文本，甚至是 HTML 标签。也就是说，当网络浏览器加载页面时，文本（无论内容如何）会被插入到页面中。这有什么用呢？首先，它对于时间敏感的数据是非常理想的。例如，你可能希望显示日期和网页最后修改的时间，以便访问者知道页面的新旧程度。这里有一段仅显示了脚本的代码：
 
@@ -192,7 +183,7 @@ JavaScript 最强大的功能之一是能够动态地向网页写入文本，甚
 
 **图 1-2：** 当你打开文件时，文本显示了文件最后修改的日期和时间。
 
-此脚本使用了 document 对象，这是一个内置的 JavaScript 结构，指向脚本所在的 HTML 文件（document）（有关 document 对象的更多信息，请参阅第 6 章）。`document.write()` 语句告诉浏览器将括号内的任何内容插入网页。`document.lastModified` 部分返回文件最后更改并保存的日期和时间。
+此脚本使用了 `document` 对象，这是一个内置的 JavaScript 结构，指向脚本所在的 HTML 文件（`document`）（有关 `document` 对象的更多信息，请参阅第 6 章）。`document.write()` 语句告诉浏览器将括号内的任何内容插入网页。`document.lastModified` 部分返回文件最后更改并保存的日期和时间。
 
 ### 入门准备
 
@@ -233,9 +224,9 @@ JavaScript 编程的基本要求与 HTML 完全相同：一个文本编辑器和
 - **Chrome (桌面版):** 打开设置，点击隐私和安全，点击网站设置，然后选择“不允许使用 JavaScript”。
 - **Chrome (Android):** 打开设置，点击网站设置，点击 JavaScript。
 - **Edge:** 打开设置，点击设置菜单，点击 Cookie 和网站权限，点击 JavaScript，然后关闭允许开关。
-- **Safari (macOS):** 打开设置，点击高级，选择“在菜单栏显示开发菜单”，然后关闭设置。选择开发 禁用 JavaScript。
+- **Safari (macOS):** 打开设置，点击高级，选择“在菜单栏显示开发菜单”，然后关闭设置。选择开发 > 禁用 JavaScript。
 - **Safari (iOS 或 iPadOS):** 打开设置，点击 Safari，点击高级，然后关闭 JavaScript 开关。
-- **Firefox (桌面版):** 在地址栏输入 `about:config` 并按回车。如果 Firefox 显示警告页面，点击接受风险并继续显示高级偏好。在搜索偏好项中输入 `javascript.enabled`。在该偏好的右侧，点击切换按钮将值从 true 改为 false。
+- **Firefox (桌面版):** 在地址栏输入 `about:config` 并按回车。如果 Firefox 显示警告页面，点击接受风险并继续显示高级偏好。在搜索偏好项中输入 `javascript.enabled`。在该偏好的右侧，点击切换按钮将值从 `true` 改为 `false`。
 
 ### 处理非常旧的浏览器
 
@@ -246,28 +237,24 @@ JavaScript 编程的基本要求与 HTML 完全相同：一个文本编辑器和
 
 那么，那少数不支持 ES6 的浏览器该怎么办？
 
-首先，要知道不支持 ES6 特性的浏览器数量每天都在减少。诚然，现在是 2%（实际上是 1.7%），但六个月后将变为 1%，一年后将变为 0.5%，以此此类推，直到数字小到无法测量。
+首先，要知道不支持 ES6 特性的浏览器数量每天都在减少。诚然，现在是 2%（实际上是 1.7%），但六个月后将变为 1%，一年后将变为 0.5%，以此类推，直到数字小到无法测量。
 
-其次，不支持 ES6 的浏览器百分比随地区而异（例如在非洲许多国家更高），并随环境而异。大多数的
+其次，不支持 ES6 的浏览器百分比随地区而异（例如在非洲许多国家更高），并随环境而异。大多数那些运行不能完全支持 ES6 的浏览器的人正在使用 Internet Explorer 11，而其中大多数人处于无法升级的环境中（例如，某些企业环境）。
 
-
-
-那些运行不能完全支持 ES6 的浏览器的人正在使用 Internet Explorer 11，而其中大多数人处于无法升级的环境中（例如，某些企业环境）。
-
-如果运气不佳，你的网页有很大比例的用户在这些旧浏览器上运行，那么你可能需要放弃 ES6 的强大特性，转而使用 ECMAScript 5 中经过久验证的特性。为此，当我介绍每个新的 JavaScript 特性时，我都会指出哪些是随 ES6 引入的，如果你倾向于使用 ES5，我会告诉你是否有简单的回退方案或变通方法（在 JavaScript 术语中被称为 polyfill，补丁）。
+如果运气不佳，你的网页有很大比例的用户在这些旧浏览器上运行，那么你可能需要放弃 ES6 的强大特性，转而使用 ECMAScript 5 中经过久验证的特性。为此，当我介绍每个新的 JavaScript 特性时，我都会指出哪些是随 ES6 引入的，如果你倾向于使用 ES5，我会告诉你是否有简单的回退方案或变通方法（在 JavaScript 术语中被称为 `polyfill`，补丁）。
 
 ### 为代码编写注释
 
 一个仅包含几行的脚本通常易于阅读和理解。然而，你的脚本不会长期保持简单，这些更长、更复杂的作品将变得相应难以阅读。（如果你在首次编写代码几周或几个月后再次查看代码，这种难度会变得格外严峻。）为了帮助你解读自己的代码，在整个脚本中大量使用注释是一种良好的编程习惯。注释是描述或解释某个语句或一组语句的文本。浏览器会忽略注释，因此你可以根据需要添加尽可能多的注释。
 
-对于简短的单行注释，请使用双斜杠（//）。将 // 放在行的开头，然后在其后输入你的注释。这是一个示例：
+对于简短的单行注释，请使用双斜杠（`//`）。将 `//` 放在行的开头，然后在其后输入你的注释。这是一个示例：
 
-```
+```javascript
 // 显示页面最后修改的日期和时间
 document.write("This page was last modified on " + document.lastModified);
 ```
 
-你也可以使用 // 注释编写两或三行文本，只要每行都以 // 开头即可。然而，如果你的注释超过了这种长度，最好使用以 `/*` 开头并以 `*/` 结尾的多行注释。这是一个示例：
+你也可以使用 `//` 注释编写两或三行文本，只要每行都以 `//` 开头即可。然而，如果你的注释超过了这种长度，最好使用以 `/*` 开头并以 `*/` 结尾的多行注释。这是一个示例：
 
 ```javascript
 /*
@@ -276,7 +263,7 @@ document.write("This page was last modified on " + document.lastModified);
 */
 ```
 
-**警告** 虽然在刚开始时添加很多注释是可以的，但你不需要对每个内容都添加注释。如果一个语句是微不足道的，或者其目的显而易见，请忘记注释并继续写吧。
+> **警告** 虽然在刚开始时添加很多注释是可以的，但你不需要对每个内容都添加注释。如果一个语句是微不足道的，或者其目的显而易见，请忘记注释并继续写吧。
 
 ### 迁移到外部 JavaScript 文件
 
@@ -289,7 +276,7 @@ document.write("This page was last modified on " + document.lastModified);
 关于使用外部 JavaScript 文件，需要注意以下几点：
 
 - 文件必须使用纯文本格式。
-- 命名文件时使用 .js 扩展名。
+- 命名文件时使用 `.js` 扩展名。
 - 不要在文件内部使用 `<script>` 标签。只需像在 HTML 文件中一样直接输入你的语句。
 - 浏览器执行外部文件中语句的规则与 HTML 文件内语句的规则完全相同。也就是说，函数之外的语句会在浏览器遇到你的文件引用时自动执行，而函数内部的语句在函数被调用之前不会执行。（不确定什么是“函数”吗？你将在第 5 章中获得完整信息。）
 
@@ -340,13 +327,13 @@ document.write("This page is Copyright " + new Date().getFullYear());
 </html>
 ```
 
-![](img/d7cbed725c071566e0fc4bb416ff642_25_0.png)
+![](img/d7cbed725c071566e0fc4bb4166ff642_25_0.png)
 
 **图 1-3** 此页面使用外部文件。
 
 ## 第 2 章：使用变量编程
 
-**在本章中**
+### 在本章中
 
 - 理解变量
 - 为变量赋值
@@ -368,31 +355,25 @@ document.write("This page is Copyright " + new Date().getFullYear());
 
 接下来的三个章节将详细介绍这些。
 
-### 使用 let 声明变量
+### 使用 `let` 声明变量
 
-
-
-在编程术语中，创建变量的过程被称为“声明”（declaring）。所有声明的意义实际上是你为变量提供一个名称，并告诉浏览器在内存中留出一块空间，以存储你最终存入变量中的任何值。在 JavaScript 中，声明变量时你使用 `let` 关键字，后面跟着一个空格、变量名以及通常的行尾分号。例如，要声明一个变量 `interestRate`，你可以使用以下语句：
+在编程术语中，创建变量的过程被称为“声明”（`declaring`）。所有声明的意义实际上是你为变量提供一个名称，并告诉浏览器在内存中留出一块空间，以存储你最终存入变量中的任何值。在 JavaScript 中，声明变量时你使用 `let` 关键字，后面跟着一个空格、变量名以及通常的行尾分号。例如，要声明一个变量 `interestRate`，你可以使用以下语句：
 
 ```javascript
 let interestRate;
 ```
 
 > **记住** 在你的脚本中声明变量时，请记住以下几点：
-
-- **变量只声明一次：** 尽管你可以在脚本中根据需要多次使用一个变量，但你只需要声明该变量一次。尝试多次声明同一个变量会导致错误。
-
-- **使用注释描述每个变量：** 变量往往会增多到难以记住每个变量代表什么的程度。你可以在变量声明后紧跟着添加注释，从而使每个变量的用途变得清晰，如下：
-
-```javascript
-let interestRate; // 用于贷款计算的年利率
-```
-
-- **在运行变量之前声明它：** 如果你在声明变量之前就使用它，将会得到错误。
-
-> **记住** 在上述两个项中，当我说你会“得到错误”时，我的意思并不是屏幕上会弹出一个错误消息。你唯一会注意到的是你的脚本没有运行。要读取错误消息，你需要访问浏览器的 Web 开发工具，我将在第 9 章中详细介绍这项任务。
-
-- **在运行变量之前紧邻声明它：** 如果你遵循这一简单规则，你的编程和调试（参考第 9 章）生活将变得容易得多：在变量第一次使用之前（或尽可能靠近第一次使用的地方）声明它。
+>
+> - **变量只声明一次：** 尽管你可以在脚本中根据需要多次使用一个变量，但你只需要声明该变量一次。尝试多次声明同一个变量会导致错误。
+> - **使用注释描述每个变量：** 变量往往会增多到难以记住每个变量代表什么的程度。你可以在变量声明后紧跟着添加注释，从而使每个变量的用途变得清晰，如下：
+>
+> ```javascript
+> let interestRate; // 用于贷款计算的年利率
+> ```
+>
+> - **在运行变量之前声明它：** 如果你在声明变量之前就使用它，将会得到错误。
+> - **在运行变量之前紧邻声明它：** 如果你遵循这一简单规则，你的编程和调试（参考第 9 章）生活将变得容易得多：在变量第一次使用之前（或尽可能靠近第一次使用的地方）声明它。
 
 > **记住** `let` 关键字是在 ECMAScript 2015 (ES6) 中引入的。如果你需要支持非常老旧浏览器——我指的是 Internet Explorer 11 及更早版本——请改用 `var` 关键字。
 
@@ -404,7 +385,7 @@ let interestRate; // 用于贷款计算的年利率
 variableName = value;
 ```
 
-这是一个为名为 `interestRate` 的变量赋值值 0.06 的示例：
+这是一个为名为 `interestRate` 的变量赋值值 `0.06` 的示例：
 
 ```javascript
 interestRate = 0.06;
@@ -428,13 +409,13 @@ interestRate = 0.06 / 12;
 interestRate = interestRate / 12;
 ```
 
-这种语句看起来可能有点不符合逻辑。一个东西怎么能等于它自己除以 12 呢？理解此类语句的秘密在于记住，浏览器总是先评估语句的右侧——即等号 (`=`) 右侧的表达式。换句话说，它获取 `interestRate` 的当前值（0.06），并将其除以 12。最后，得到的结果会被存储在 `interestRate` 中。关于运算符和表达式的更深入讨论，请查看第 3 章。
+这种语句看起来可能有点不符合逻辑。一个东西怎么能等于它自己除以 12 呢？理解此类语句的秘密在于记住，浏览器总是先评估语句的右侧——即等号 (`=`) 右侧的表达式。换句话说，它获取 `interestRate` 的当前值（`0.06`），并将其除以 12。最后，得到的结果会被存储在 `interestRate` 中。关于运算符和表达式的更深入讨论，请查看第 3 章。
 
 > **记住** 由于这种“先评估表达式、后存储结果”的行为，JavaScript 的赋值语句不应被读为“变量等于表达式”。相反，将它们视为“变量被设置为表达式”或“变量取表达式所给的值”会更符合逻辑。这样读取赋值语句有助于强化一个重要概念：表达式的结果正在被存储在变量中。
 
-### 检查另一种声明变量的方法：const
+### 检查另一种声明变量的方法：`const`
 
-“variable”（变量）一词意味着赋给变量的值是允许改变的，这你声明的大多数变量都是如此。大多数是，但不是所有。有时，你的脚本可能需要使用一个保持不变的值。例如，假设你正在构建一个将英里转换为公里的计算器。转换因子是 1.60934，该值在你的整个脚本运行期间将保持不变。
+“variable”（变量）一词意味着赋给变量的值是允许改变的，这你声明的大多数变量都是如此。大多数是，但不是所有。有时，你的脚本可能需要使用一个保持不变的值。例如，假设你正在构建一个将英里转换为公里的计算器。转换因子是 `1.60934`，该值在你的整个脚本运行期间将保持不变。
 
 为了便于阅读，将此类值存储在变量中是一种良好的编程习惯。然而，如果你在此声明中使用 `let`，你可能会面临在代码某处意外更改该值的风险，因为用 `let` 声明的变量是可以改变的。
 
@@ -444,18 +425,18 @@ interestRate = interestRate / 12;
 const variableName = value;
 ```
 
-注意，与 `let` 不同，当你用 `const` 声明变量时，必须为它赋值。这是一个声明变量 `milesToKilometers` 并为其赋值 1.60934 的示例：
+注意，与 `let` 不同，当你用 `const` 声明变量时，必须为它赋值。这是一个声明变量 `milesToKilometers` 并为其赋值 `1.60934` 的示例：
 
 ```javascript
 const milesToKilometers = 1.60934;
 ```
 
 > **记住** 使用 `const` 相比 `let` 有什么实际优势吗？是的，有两个：
+>
+> - 使用 `const` 关键字提醒你正在处理一个不会改变的值。
+> - 如果你尝试更改用 `const` 声明的变量的值，将产生错误。
 
-- 使用 `const` 关键字提醒你正在处理一个不会改变的值。
-- 如果你尝试更改用 `const` 声明的变量的值，将产生错误。
-
-**提示** 鉴于这些优势，许多 JavaScript 程序员使用 `const` 声明每个变量，并只对他们知道会变化的变量使用 `let`。随着代码的进展，如果你发现某个变量需要更改，可以回去将 `const` 改为 `let`。
+> **提示** 鉴于这些优势，许多 JavaScript 程序员使用 `const` 声明每个变量，并只对他们知道会变化的变量使用 `let`。随着代码的进展，如果你发现某个变量需要更改，可以回去将 `const` 改为 `let`。
 
 ### 在语句中使用变量
 
@@ -467,7 +448,7 @@ interestRate = interestRate / 12;
 document.write(interestRate);
 ```
 
-这段代码声明了一个值为 0.06 的变量 `interestRate`；它将该值除以 12并将结果存储在变量中。`document.write()` 语句显示变量的当前值，如图 2-1 所示。
+这段代码声明了一个值为 `0.06` 的变量 `interestRate`；它将该值除以 12并将结果存储在变量中。`document.write()` 语句显示变量的当前值，如图 2-1 所示。
 
 以下代码显示了一个稍不同的示例：
 
@@ -479,23 +460,21 @@ document.write("欢迎访问我的网站，” + firstName);
 
 该脚本使用 `prompt()` 方法（稍后会介绍）询问用户的名字，如图 2-2 所示。当用户点击 OK 时，他们的名字被存储在 `firstName` 变量中。随后，脚本使用 `document.write()` 语句结合 `firstName` 变量显示个性化的欢迎消息，如图 2-3 所示。
 
-
-
 > 记住，当你需要从用户获取数据时，请运行 `prompt()` 方法：
-
-```javascript
-prompt(string, default);
-```
-
-以下是各个部分的含义：
-
-- string：一个字符串，用于指示用户在提示框中输入什么内容。
-- default：一个可选字符串，用于指定在提示框中显示的初始值。
-
-`prompt()` 方法始终会返回一个值：
-
-- 如果用户点击“确定”，`prompt()` 返回用户在提示文本框中输入的值。
-- 如果用户点击“取消”，`prompt()` 返回 `null`。
+>
+> ```javascript
+> prompt(string, default);
+> ```
+>
+> 以下是各个部分的含义：
+>
+> - `string`：一个字符串，用于指示用户在提示框中输入什么内容。
+> - `default`：一个可选字符串，用于指定在提示框中显示的初始值。
+>
+> `prompt()` 方法始终会返回一个值：
+>
+> - 如果用户点击“确定”，`prompt()` 返回用户在提示文本框中输入的值。
+> - 如果用户点击“取消”，`prompt()` 返回 `null`。
 
 ### 变量命名：规则与最佳实践
 
@@ -505,14 +484,10 @@ prompt(string, default);
 
 JavaScript 的变量规则很少：
 
-- 第一个字符必须是字母或下划线 (_)。不能使用数字作为第一个字符。
-
+- 第一个字符必须是字母或下划线 (`_`)。不能使用数字作为第一个字符。
 - 变量名的其余部分可以包含任何字母、数字或下划线。不能使用任何其他字符，包括空格、符号和标点符号。
-
 - 与 JavaScript 的其他部分一样，变量名对大小写敏感。也就是说，名为 `InterestRate` 的变量被视为与名为 `interestRate` 的变量完全不同的变量。
-
 - 变量长度没有限制。
-
 - 你不能使用 JavaScript 的保留字作为变量名（例如 `let`、`const`、`var`、`alert` 或 `prompt`）。所有的编程语言都有一组语言内部使用的词，这些词不能用变量名，因为这样做会导致混乱（或更糟）。
 
 ### 良好变量名的建议
@@ -520,13 +495,9 @@ JavaScript 的变量规则很少：
 声明变量的过程并不费脑，但这并不意味着你应该随手输入脑子里想到的任何变量名。多花几秒钟时间遵循以下指南想出一个好名字：
 
 - 让你的名称具有描述性。诚然，使用仅几个字符的名字会让输入更简单，但我保证，当你以后查看脚本时，你不会记得这些变量代表什么。例如，如果你想让一个变量代表账户号码，请使用 `accountNumber` 或 `accountNum`，而不是 `acnm` 或 `accnum`。
-
-- 使用不带空格的多个单词。创建描述性变量名的最佳方法是使用多个单词。然而，因为 JavaScript 不喜欢名称中出现空格，你需要某种方式来分隔单词以保持名称的可读性。使用多单词变量名的两种标准约定是驼峰命名法（camelCase），即将单词挤在一起并将每个单词的首字母大写（例如 `lastName`），或者用下划线分隔每个单词（例如 `last_name`）。我更倾向于前一种风格，因此我在书中一直都使用它。
-
+- 使用不带空格的多个单词。创建描述性变量名的最佳方法是使用多个单词。然而，因为 JavaScript 不喜欢名称中出现空格，你需要某种方式来分隔单词以保持名称的可读性。使用多单词变量名的两种标准约定是驼峰命名法（`camelCase`），即将单词挤在一起并将每个单词的首字母大写（例如 `lastName`），或者用下划线分隔每个单词（例如 `last_name`）。我更倾向于前一种风格，因此我在书中一直都使用它。
 - 使用不同的命名规范。为 JavaScript 变量使用一种命名规范，为 HTML 标识符和 CSS 类使用另一种规范。例如，如果你对多单词的 JavaScript 变量使用驼峰命名法，则使用连字符来分隔 id 值和类名中的单词。
-
 - 将你的变量名与 JavaScript 关键字区分开。尽量让你的变量名看起来与 JavaScript 的关键字和其他内置术语（如 `alert`）尽可能不同。区分变量名有助于避免当看到一个术语却不记得它是变量还是 JavaScript 词汇时可能产生的混乱。
-
 - 不要让你的名字太长。虽然应该摒弃短小而晦涩的变量名，转而使用更长、描述性的名称，但这并不意味着你应该使用整个句子。极长的名字是低效的，因为输入需要花费长时间，而且它们很危险，因为名称越长，你越可能拼错。2 到 4 个单词、8 到 20 个字符的名字就足够了。
 
 ### 理解字面量类型
@@ -553,8 +524,11 @@ let todaysQuestion = "What color is your parachute?";
 ```
 
 - **浮点数**：这些具有小数部分的数字。因此，你通过先写整数部分，然后是小数点，最后是小数部分来表示浮点数，如这些示例所示：
+
 ```
-0
+0.0
+3.14159
+-273.15
 ```
 
 ### 指数计数法
@@ -568,21 +542,21 @@ let todaysQuestion = "What color is your parachute?";
 4.56e-3
 ```
 
-- 1.23e+4 等于 1.23 乘以 10^4。
-- 4.56e-3 等于 4.56 乘以 10^-3，即十六进制进制。
+- `1.23e+4` 等于 `1.23` 乘以 `10^4`。
+- `4.56e-3` 等于 `4.56` 乘以 `10^-3`。
 
 ### 十六进制整数值
 
-十六进制系统使用数字 0 到 9 和字母 A 到 F（或 a 到 f），这些字母代表数字 10 到 15。在 JavaScript 中指定十六进制数时，该数字以 0x（或 0X）开头，如下：
+十六进制系统使用数字 0 到 9 和字母 A 到 F（或 a 到 f），这些字母代表数字 10 到 15。在 JavaScript 中指定十六进制数时，该数字以 `0x`（或 `0X`）开头，如下：
 
 ```
 0x23
-xff
+0xff
 ```
 
 ### 使用字符串字面量
 
-字符串字面量是一个或多个字母、数字或标点符号的序列，由双引号（""）或单引号（''）包围。这里是一些示例：
+字符串字面量是一个或多个字母、数字或标点符号的序列，由双引号（`""`）或单引号（`''`）包围。这里是一些示例：
 
 ```javascript
 "JavaScript Essentials";
@@ -591,11 +565,11 @@ xff
 "What's the good word?";
 ```
 
-记住连续的引号 "" 或 '' 被称为空字符串。它代表一个不包含任何字符的字符串。
+记住连续的引号 `""` 或 `''` 被称为空字符串。它代表一个不包含任何字符的字符串。
 
 ### 在字符串中使用引号
 
-上一节的最后一个示例显示，在由另一种引号（如 "）包围的字符串内部插入一个或多个引号实例（如 '）是允许的。当你需要将一个字符串嵌入另一个字符串时，嵌套引号会非常有用，这非常常见（特别是在 HTML 标签中使用部分 JavaScript 时）。这里有一个示例：
+上一节的最后一个示例显示，在由另一种引号（如 `"`）包围的字符串内部插入一个或多个引号实例（如 `'`）是允许的。当你需要将一个字符串嵌入另一个字符串时，嵌套引号会非常有用，这非常常见（特别是在 HTML 标签中使用部分 JavaScript 时）。这里有一个示例：
 
 ```html
 onsubmit="processForm('testing')";
@@ -603,34 +577,34 @@ onsubmit="processForm('testing')";
 
 然而，在字符串内部插入与闭合字符串相同的引号是不允许的，如此示例所示：
 
-> This is "illegal" in JavaScript."; 理解转义序列
+> This is "illegal" in JavaScript.";
 
-如果你必须在由双引号包围的字符串内部包含（例如）双引号，怎么办？嵌套相同类型的引号的情况很少见，但如果你在双引号前面加一个反斜杠 (\)，就是可能的，如下所示：
+### 理解转义序列
+
+如果你必须在由双引号包围的字符串内部包含（例如）双引号，怎么办？嵌套相同类型的引号的情况很少见，但如果你在双引号前面加一个反斜杠 (`\`)，就是可能的，如下所示：
 
 > "The double quotation mark (\") encloses this string."
 
-这种 \" 组合被称为转义序列。你可以将反斜杠与其他许多字符组合以形成其他转义序列，每个转义序列都能让浏览器表示一个其本身是违法的或无法通过其他方式表示的字符。
+这种 `\"` 组合被称为转义序列。你可以将反斜杠与其他许多字符组合以形成其他转义序列，每个转义序列都能让浏览器表示一个其本身是违法的或无法通过其他方式表示的字符。
 
 表 2-1 列出了最常用的转义序列。
-
-
 
 ### 表 2-1 常见的 JavaScript 转义序列
 
 | 转义序列 | 它代表的字符 |
 |---|---|
-| \' | 单引号 |
-| \" | 双引号 |
-| \b | 退格 |
-| \f | 换页符 |
-| \n | 换行 |
-| \r | 回车 |
-| \t | 制表符 |
-| \\ | 反斜杠 |
+| `\'` | 单引号 |
+| `\"` | 双引号 |
+| `\b` | 退格 |
+| `\f` | 换页符 |
+| `\n` | 换行 |
+| `\r` | 回车 |
+| `\t` | 制表符 |
+| `\\` | 反斜杠 |
 
 以下代码展示了一个示例脚本，它使用 `\n` 转义序列在警告框中显示多行文本。
 
-```
+```javascript
 alert("This is line 1.\nSo what. This is line 2.");
 ```
 
@@ -638,33 +612,31 @@ alert("This is line 1.\nSo what. This is line 2.");
 
 ![](img/d7cbed725c071566e0fc4bb4166ff642_44_0.png)
 
-图 2-4：使用 \n 转义序列允许你对文本进行格式，使其在不同的行显示。
+图 2-4：使用 `\n` 转义序列允许你对文本进行格式，使其在不同的行显示。
 
 学习如何组合两个或多个字符串字面量，请查看第 3 章。此外，JavaScript 有一系列很好的字符串处理功能，我在第 8 章中讨论了它们。
 
 ### 使用布尔字面量
 
-布尔值是所有字面量数据类型中最简单的，因为它们只能取两个值之一：true 或 false。这种简单性可能让布尔值看起来并不特别，但在 JavaScript 编程中，测试特定变量或条件是否为真或假的能力是无价的。
+布尔值是所有字面量数据类型中最简单的，因为它们只能取两个值之一：`true` 或 `false`。这种简单性可能让布尔值看起来并不特别，但在 JavaScript 编程中，测试特定变量或条件是否为真或假的能力是无价的。
 
 你可以直接将布尔字面量赋值给变量，如下：
 
-```
+```javascript
 taskCompleted = true;
 ```
 
 或者，你也可以通过表达式隐式地处理布尔值：
 
-```
+```javascript
 currentMonth === "August"
 ```
 
 比较表达式 `currentMonth === "August"` 询问：变量 `currentMonth` 的值是否等于字符串 "August"？如果是，该表达式求值为布尔值 `true`；如果不是，表达式求值为 `false`。我在第 3 章中讨论了更多关于比较的内容。
 
-## 第 3 章
+## 第 3 章：构建表达式
 
-### 构建表达式
-
-本章内容
+### 本章内容
 
 - 理解什么是表达式
 - 弄懂数值表达式
@@ -678,19 +650,18 @@ currentMonth === "August"
 
 ### 理解表达式的结构
 
-一个 JavaScript 表达式接收一个或多个输入（例如账单总额和小费百分比），并以某种方式将它们结合——例如使用乘法。在表达式术语中，输入被称为操作数（operands），它们通过称为运算符（operators）的特殊符号进行组合。
+一个 JavaScript 表达式接收一个或多个输入（例如账单总额和小费百分比），并以某种方式将它们结合——例如使用乘法。在表达式术语中，输入被称为操作数（`operands`），它们通过称为运算符（`operators`）的特殊符号进行组合。
 
 - **操作数**：表达式的输入值。换句话说，它是表达式处理以产生结果的原始数据。它可以是一个数字、字符串、函数结果（参见第 5 章）或对象属性（参见第 6 章）。
-
 - **运算符**：代表对一个或多个操作数执行特定操作的符号。例如，`*` 运算符表示乘法，`+` 运算符表示加法。我在整个章节中都会讨论各种 JavaScript 运算符。
 
 例如，这里有一个计算小费并将结果赋值给变量的表达式：
 
-```
+```javascript
 tipAmount = billTotal * tipPercentage;
 ```
 
-表达式是等号 (=) 右侧的所有内容。在这里，`billTotal` 和 `tipPercentage` 是操作数，乘号 (`*`) 是运算符。
+表达式是等号 (`=`) 右侧的所有内容。在这里，`billTotal` 和 `tipPercentage` 是操作数，乘号 (`*`) 是运算符。
 
 ### 创建数值表达式
 
@@ -698,35 +669,35 @@ tipAmount = billTotal * tipPercentage;
 
 表 3-1 列出了你可以在 JavaScript 表达式中使用的基本算术运算符。
 
-JavaScript 还带有几个额外的运算符，它们结合了一些算术运算符和赋值运算符，赋值运算符就是谦虚的等号 (=)，它用于给变量赋值。表 3-2 列出了这些所谓的算术赋值运算符。
+JavaScript 还带有几个额外的运算符，它们结合了一些算术运算符和赋值运算符，赋值运算符就是谦虚的等号 (`=`)，它用于给变量赋值。表 3-2 列出了这些所谓的算术赋值运算符。
 
 ### 表 3-1 JavaScript 算术运算符
 
-| 运算符名称 | 示例结果 |
-|---|---|---|
-| + 加法 | 10 + 4 14 |
-| ++ 递增 | 10++ 11 |
-| - 减法 | 10 - 4 6 |
-| - 取反 | -10 -10 |
-| - 递减 | 10-- 9 |
-| * 乘法 | 10 * 4 40 |
-| / 除法 | 10 / 4 2.5 |
-| % 取模 | 10 % 4 2 |
+| 运算符 | 名称 | 示例 | 结果 |
+|---|---|---|---|
+| `+` | 加法 | `10 + 4` | `14` |
+| `++` | 递增 | `10++` | `11` |
+| `-` | 减法 | `10 - 4` | `6` |
+| `-` | 取反 | `-10` | `-10` |
+| `--` | 递减 | `10--` | `9` |
+| `*` | 乘法 | `10 * 4` | `40` |
+| `/` | 除法 | `10 / 4` | `2.5` |
+| `%` | 取模 | `10 % 4` | `2` |
 
 ### 表 3-2 JavaScript 算术赋值运算符
 
-| 运算符示例 | 等效于 |
+| 运算符 | 示例 | 等效于 |
 |---|---|---|
-| += x += y | x = x + y |
-| -= x -= y | x = x - y |
-| *= x *= y | x = x * y |
-| /= x /= y | x = x / y |
-| ^= x ^= y | x = x ^ y |
-| %= x %= y | x = x % y |
+| `+=` | `x += y` | `x = x + y` |
+| `-=` | `x -= y` | `x = x - y` |
+| `*=` | `x *= y` | `x = x * y` |
+| `/=` | `x /= y` | `x = x / y` |
+| `^=` | `x ^= y` | `x = x ^ y` |
+| `%=` | `x %= y` | `x = x % y` |
 
 ### 构建字符串表达式
 
-字符串表达式是指其中至少有一个操作数是字符串，且表达式的结果是另一个字符串的表达式。字符串表达式在意义上很直接，因为只有一个运算符需要处理：拼接 (+)。你使用这个运算符来连接字符串。例如，"Hello" + "World" 返回 "HelloWorld"。
+字符串表达式是指其中至少有一个操作数是字符串，且表达式的结果是另一个字符串的表达式。字符串表达式在意义上很直接，因为只有一个运算符需要处理：拼接 (`+`)。你使用这个运算符来连接字符串。例如，`"Hello" + "World"` 返回 `"HelloWorld"`。
 
 ### 构建比较表达式
 
@@ -734,16 +705,16 @@ JavaScript 还带有几个额外的运算符，它们结合了一些算术运算
 
 ### 表 3-3 比较运算符
 
-| 运算符名称 | 示例结果 |
-|---|---|
-| == 等于 | 10 == 4 false |
-| != 不等于 | 10 != 4 true |
-| > 大于 | 10 > 4 true |
-| < 小于 | 10 < 4 false |
-| >= 大于等于 | 10 >= 4 true |
-| <= 小于等于 | 10 <= 4 false |
-| === 严格相等 | 10 === 4 false |
-| !== 严格不等 | 10 !== 4 true |
+| 运算符 | 名称 | 示例 | 结果 |
+|---|---|---|---|
+| `==` | 等于 | `10 == 4` | `false` |
+| `!=` | 不等于 | `10 != 4` | `true` |
+| `>` | 大于 | `10 > 4` | `true` |
+| `<` | 小于 | `10 < 4` | `false` |
+| `>=` | 大于等于 | `10 >= 4` | `true` |
+| `<=` | 小于等于 | `10 <= 4` | `false` |
+| `===` | 严格相等 | `10 === 4` | `false` |
+| `!==` | 严格不等 | `10 !== 4` | `true` |
 
 ### 构建逻辑表达式
 
@@ -751,11 +722,11 @@ JavaScript 还带有几个额外的运算符，它们结合了一些算术运算
 
 ### 表 3-4 逻辑运算符
 
-| 运算符名称 通用语法 | 返回值 |
-|---|---|---|
-| && 与 | expr1&&expr2 | 如果 expr1 和 expr2 都为真，否则为假 |
-| || 或 | expr1||expr2 | 如果 expr1 或 expr2 为真，则为真；否则为假 |
-| ! 非 | !expr | 如果 expr 为假则为真，反之 |
+| 运算符 | 名称 | 通用语法 | 返回值 |
+|---|---|---|---|
+| `&&` | 与 | `expr1 && expr2` | 如果 `expr1` 和 `expr2` 都为真，否则为假 |
+| `||` | 或 | `expr1 || expr2` | 如果 `expr1` 或 `expr2` 为真，则为真；否则为假 |
+| `!` | 非 | `!expr` | 如果 `expr` 为假则为真，反之 |
 
 ### 理解运算符优先级
 
@@ -771,29 +742,26 @@ JavaScript 使用的优先级由我在本章为止涵盖的各种表达式运算
 
 ### 表 3-5 JavaScript 运算符优先级表
 
-| 运算符操作 | 优先级 | 顺序 |
-|---|---|---|
-| ++ | 递增 | 第一 | R -> L |
-| -- | 递减 | 第一 | R -> L |
-
 | 运算符 | 操作 | 优先级 | 求值顺序 |
-| --- | --- | --- | --- |
-| - | 否定 | 第一 | R -> L |
-| ! | 逻辑 (NOT) | 第一 | R -> L |
-| *, /, % | 乘法、除法、取模 | 第二 | L -> R |
-| +, - | 加法、减法 | 第三 | L -> R |
-| + | 字符串拼接 | 第三 | L -> R |
-| <, <= | 小于、小于等于 | 第四 | L -> R |
-| >, >= | 大于、大于等于 | 第四 | L -> R |
-| == | 等于 | 第五 | L -> R |
-| != | 不等 | 第五 | L -> R |
-| === | 严格相等 | 第五 | L -> R |
-| !== | 严格不等于 | 第五 | L -> R |
-| && | 与 (AND) | 第六 | L -> R |
-| || | 逻辑 (OR) | 第六 | L -> R |
-| ? | 三元运算符 | 第七 | R -> L |
-| = | 赋值 | 第八 | R -> L |
-| +=, -=, *= /= | 算术赋值 | 第八 | R -> L |
+|---|---|---|---|
+| `++` | 递增 | 第一 | R -> L |
+| `--` | 递减 | 第一 | R -> L |
+| `-` | 否定 | 第一 | R -> L |
+| `!` | 逻辑 (NOT) | 第一 | R -> L |
+| `*`, `/`, `%` | 乘法、除法、取模 | 第二 | L -> R |
+| `+`, `-` | 加法、减法 | 第三 | L -> R |
+| `+` | 字符串拼接 | 第三 | L -> R |
+| `<`, `<=` | 小于、小于等于 | 第四 | L -> R |
+| `>`, `>=` | 大于、大于等于 | 第四 | L -> R |
+| `==` | 等于 | 第五 | L -> R |
+| `!=` | 不等 | 第五 | L -> R |
+| `===` | 严格相等 | 第五 | L -> R |
+| `!==` | 严格不等于 | 第五 | L -> R |
+| `&&` | 与 (AND) | 第六 | L -> R |
+| `||` | 逻辑 (OR) | 第六 | L -> R |
+| `?` | 三元运算符 | 第七 | R -> L |
+| `=` | 赋值 | 第八 | R -> L |
+| `+=`, `-=`, `*=`, `/=` | 算术赋值 | 第八 | R -> L |
 
 ### 控制优先级
 
@@ -801,7 +769,7 @@ JavaScript 使用的优先级由我在本章为止涵盖的各种表达式运算
 
 JavaScript 计算的第一次尝试可能看起来像这样：
 
-```
+```javascript
 retailPrice = totalPrice / 1 + taxRate;
 ```
 
@@ -809,15 +777,13 @@ retailPrice = totalPrice / 1 + taxRate;
 
 为了得到正确答案，你必须覆盖优先级，以便先执行 `1 + taxRate` 加法。你通过在表达式的该部分加上括号来覆盖优先级，如下代码所示：
 
-```
+```javascript
 const retailPrice = totalPrice / (1 + taxRate);
 ```
 
 通常情况下，你可以使用括号来控制 JavaScript 计算表达式的顺序。括号内的项总是先计算；括号外的项按顺序计算（根据优先级）。
 
-## 第 4 章
-
-### 控制 JavaScript 的流
+## 第 4 章：控制 JavaScript 的流
 
 ### 本章内容
 
@@ -829,7 +795,7 @@ const retailPrice = totalPrice / (1 + taxRate);
 
 这种逐条语句的流看起来很合理，但它的局限性非常大。如果你想让你的代码测试某些条件，并根据测试结果跳转到特定的代码块该怎么办？如果你想让你的代码重复执行某些语句，并且每次重复都会发生一些变化呢？运行测试的代码和自我重复的代码都统属于**控制 JavaScript 的流**的范畴。在本章中，你将探索这个迷人且强大的主题。
 
-### 使用 if 语句进行决策
+### 使用 `if` 语句进行决策
 
 一个智能的脚本会对其环境进行测试，然后根据每个测试的结果决定下一步做什么什么。例如，假设你声明了一个变量，稍后你将其用作表达式中的除数。在表达式中使用它之前，你应该对该变量进行测试，以确保变量的值不是 0。
 
@@ -837,17 +803,17 @@ const retailPrice = totalPrice / (1 + taxRate);
 
 在 JavaScript 中，简单的真/假决策由 `if` 语句处理。你可以使用单行语法：
 
-```
+```javascript
 if (expression) statement;
 ```
 
 或者使用块语法：
 
-```
+```javascript
 if (expression) {
-statement1;
-statement2;
-...
+  statement1;
+  statement2;
+  ...
 }
 ```
 
@@ -855,7 +821,7 @@ statement2;
 
 ![](img/d7cbed725c071566e0fc4bb4166ff642_55_0.png)
 
-> 提示 这里是一个很好的地方说明，JavaScript 将以下值定义为 false 的等价物：0、""（即空字符串）、null 和 undefined。其他所有内容都是 true 的等价物。
+> **提示** 这里是一个很好的地方说明，JavaScript 将以下值定义为 `false` 的等价物：`0`、`""`（即空字符串）、`null` 和 `undefined`。其他所有内容都是 `true` 的等价物。
 
 记住，这是你第一次遇到 JavaScript 的大括号（`{` 和 `}`），所以请花一点时间理解它们的作用，因为它们经常出现。大括号包围了你想让 JavaScript 视为单个实体的一个或多个语句。这个实体本身就是一种语句，整体——大括号以及它们包含的代码——被称为**块语句**。此外，任何由一个语句（如 `if`）后跟一个块语句组成的 JavaScript 结构都称为**复合语句**。而且，为了让你保持警觉，请注意包含括号的行末尾不以分号结束。
 
@@ -863,14 +829,15 @@ statement2;
 
 考虑以下示例：
 
-```
+```javascript
 if (totalSales != 0) {
   const grossMargin = (totalSales - totalExpenses) / totalSales;
 }
 ```
+
 *(注：原文示例代码中 if 后面多了一个冗余的括号，此处保留原样)*
 
-```
+```javascript
 if (totalSales != 0) {
   const grossMargin = (totalSales - totalExpenses) / totalSales;
 }
@@ -878,11 +845,11 @@ if (totalSales != 0) {
 
 这段代码假设之前已经计算了销售额（`totalSales`）和费用（`totalExpenses`）。代码现在计算利润，即销售额减费用除以销售额。代码使用 `if` 测试 `totalSales` 是否不零。如果 `totalSales != 0` 表达式返回真，则执行计算。
 
-### 使用 if...else 进行分支
+### 使用 `if...else` 进行分支
 
 使用 `if` 语句进行决策为你的 JavaScript 武器库增加了一种强大的新武器。然而，简单的 `if` 语句有一个重要的局限性：假的结果只会跳过一个或多个语句；它不会执行任何内容。这在很多情况下是可以的，但有时你需要在条件返回真时运行一组语句，而在结果为假时运行另一组语句。为了处理这些情况，你需要使用 `if...else` 语句：
 
-```
+```javascript
 if (expression) {
   statements-if-true
 } else {
@@ -894,7 +861,7 @@ if (expression) {
 
 作为一个例子，考虑以下代码：
 
-```
+```javascript
 let discountRate;
 if (currMonth === "December") {
   discountRate = 0.2;
@@ -904,11 +871,11 @@ if (currMonth === "December") {
 const discountedPrice = regularPrice * (1 - discountRate);
 ```
 
-这段代码计算物品的折扣价格，折扣取决于月份是否为 12 月。代码假设之前脚本设置了当前月份（`currMonth`）和物品的原价（`regularPrice`）。在声明 `discountRate` 变量后，`if...else` 语句检查 `currMonth` 是否等于 "December"。如果是，将 `discountRate` 设置为 0.2；否则，将 `discountRate` 设置为 0.1。最后，代码使用 `discountRate` 值计算 `discountedPrice`。
+这段代码计算物品的折扣价格，折扣取决于月份是否为 12 月。代码假设之前脚本设置了当前月份（`currMonth`）和物品的原价（`regularPrice`）。在声明 `discountRate` 变量后，`if...else` 语句检查 `currMonth` 是否等于 "December"。如果是，将 `discountRate` 设置为 `0.2`；否则，将 `discountRate` 设置为 `0.1`。最后，代码使用 `discountRate` 值计算 `discountedPrice`。
 
 ![](img/d7cbed725c071566e0fc4bb4166ff642_58_0.png)
 
-> 提示 当你对每个块中的语句进行缩进时，if...else 语句会更容易读，就像我在示例中做的那样。这种缩进让你轻松识别在结果为真时运行哪个块，在结果为假时运行哪个块。
+> **提示** 当你对每个块中的语句进行缩进时，`if...else` 语句会更容易读，就像我在示例中做的那样。这种缩进让你轻松识别在结果为真时运行哪个块，在结果为假时运行哪个块。
 
 ### 理解代码循环的价值
 
@@ -918,7 +885,7 @@ const discountedPrice = regularPrice * (1 - discountRate);
 
 在编码中引入效率的最佳方法之一是避免重复造轮子。例如，考虑以下代码段：
 
-```
+```javascript
 let sum = 0;
 let num = prompt("Type a number:", 1);
 sum += Number(num);
@@ -933,7 +900,7 @@ document.write("The total of your numbers is " + sum);
 
 这段代码除了有点没用外，还充漫着低效的气息，因为大部分代码都是由以下两行重复三次：
 
-```
+```javascript
 num = prompt("Type a number:", 1);
 sum += Number(num);
 ```
@@ -942,11 +909,11 @@ sum += Number(num);
 
 是的，这样做会更高效。但好消息是，这不仅可行，而且 JavaScript 还为你提供了多种不同的方法来执行这种所谓的“循环”。我将在本章的剩余部分中研究这些每种方法。
 
-### 使用 while 循环
+### 使用 `while` 循环
 
 JavaScript 循环结构中最直接的是 `while` 循环，它使用以下语法：
 
-```
+```javascript
 while (expression) {
   statements
 }
@@ -958,15 +925,15 @@ while (expression) {
 
 让我们仔细查看 `while` 循环是如何工作的：
 
-- 1. 求值 `while` 语句中的表达式。
-- 2. 如果 `expression` 为 `true`，继续执行第 3 步；如果 `expression` 为 `false`，跳转到第 5 步。
-- 3. 执行块中的每条语句。
-- 4. 返回第 1 步。
-- 5. 退出循环（即执行 `while` 块之后的下一个语句）。
+1. 求值 `while` 语句中的表达式。
+2. 如果 `expression` 为 `true`，继续执行第 3 步；如果 `expression` 为 `false`，跳转到第 5 步。
+3. 执行块中的每条语句。
+4. 返回第 1 步。
+5. 退出循环（即执行 `while` 块之后的下一个语句）。
 
 下面的代码演示如何使用 `while` 重写上一节所示的低效代码：
 
-```
+```javascript
 let sum = 0;
 let counter = 1;
 let num;
@@ -984,7 +951,7 @@ document.write("The total of your numbers is " + sum);
 
 当你知道要运行多少次时，`while` 语句并不是最好的循环选择。对于这种情况，请使用下一节介绍的 `for` 语句。`while` 语句的最佳用法是脚本具有某些自然产生的条件，你可以将其转换为比较表达式。一个很好的例子是当你提示用户输入值时。你通常希望一直提示用户，直到他们点击“取消”按钮。设置这种最简单的方法是将 `prompt` 放在 `while` 循环内部，如下所示：
 
-```
+```javascript
 let sum = 0;
 let num = prompt("Type a number or click Cancel", 1);
 while (num != null) {
@@ -994,13 +961,13 @@ while (num != null) {
 document.write("The total of your numbers is " + sum);
 ```
 
-第一个 `prompt` 方法显示一个类似[图 4-1](#图-4-1)所示的对话框来获取初始值；然后将其存储在 `num` 变量中。
+第一个 `prompt` 方法显示一个类似图 4-1 所示的对话框来获取初始值；然后将其存储在 `num` 变量中。
 
 **图 4-1：** 设置你的 `while` 表达式，以便用户点击“取消”按钮时停止提示。
 
 然后 `while` 语句检查以下表达式：
 
-```
+```javascript
 num != null
 ```
 
@@ -1009,11 +976,11 @@ num != null
 - 如果用户输入了一个数字，此表达式返回 `true`，循环继续。在这种情况下，`num` 的值被加到 `sum` 变量中，并提示用户下一个数字。
 - 如果用户点击“取消”，`prompt` 返回的值为 `null`，循环停止。
 
-### 使用 for 循环
+### 使用 `for` 循环
 
 尽管 `while` 是最直接的，当你知道要运行多少次循环时，通常会使用 `for` 循环。`for` 的结构如下：
 
-```
+```javascript
 for (start; expression; increment) {
   statements
 }
@@ -1028,7 +995,7 @@ for (start; expression; increment) {
 
 `for` 循环通常比 `while` 更高效，因为计数器的变量声明、初始化和增加都发生在 `for` 语句中。作为一个示例，下面的代码展示了如何使用 `for` 重写之前的低效代码：
 
-```
+```javascript
 let sum = 0;
 for (let counter = 1; counter <= 3; counter++) {
   num = prompt("Type a number:");
@@ -1062,9 +1029,7 @@ for (let counter = 1; counter < 4; counter += 1) {
 document.write("The average is " + sum / 3);
 ```
 
-此循环的目的是向用户询问三个数字，然后显示这些数值的平均值。`for` 语句被设置为循环三次。（注意 `counter < 4` 之后，循环块的第一件事是使用 `switch` 确定 `ordinal` 变量的值：如果 `counter` 为 1，`ordinal` 被设置为 "first"；如果 `counter` 为 2，它变为 "second"；以此此类推。这些值使得脚本在每次通过循环时都能带有提示信息（查看[图 4-2](#图-4-2)）。每次循环，用户输入一个数字，
-
-该值会被加到 `sum` 变量中。当循环退出时，显示平均值。
+此循环的目的是向用户询问三个数字，然后显示这些数值的平均值。`for` 语句被设置为循环三次。（注意 `counter < 4` 之后，循环块的第一件事是使用 `switch` 确定 `ordinal` 变量的值：如果 `counter` 为 1，`ordinal` 被设置为 "first"；如果 `counter` 为 2，它变为 "second"；以此类推。这些值使得脚本在每次通过循环时都能带有提示信息（查看图 4-2）。每次循环，用户输入一个数字，该值会被加到 `sum` 变量中。当循环退出时，显示平均值。
 
 ![](img/d7cbed725c071566e0fc4bb4166ff642_66_0.png)
 
@@ -1072,7 +1037,7 @@ document.write("The average is " + sum / 3);
 
 也可以使用 `for` 循环进行倒计时。你可以通过使用减赋值运算符而不是加赋值运算符来实现这一点：
 
-```
+```javascript
 for (let counter = start; counterExpression; counter -= 1) {
   statements
 }
@@ -1080,26 +1045,25 @@ for (let counter = start; counterExpression; counter -= 1) {
 
 在这种情况下，你必须将 `counter` 变量初始化为你想要用于循环计数器的最大值，并使用 `counterExpression` 来比较 `counter` 的值与你想要结束循环的最小值。
 
-在接下来的示例中，我使用一个递减计数器让用户按倒序排列他们喜喜三种 CSS 颜色：
+在接下来的示例中，我使用一个递减计数器让用户按倒序排列他们喜欢三种 CSS 颜色：
 
-```
+```javascript
 for (let rank = 3; rank >= 1; rank -= 1) {
   let ordinal;
   let color;
   switch (rank) {
     case 1:
       ordinal = "first";
-```
-
-break;
+      break;
     case 2:
       ordinal = "second";
       break;
     case 3:
       ordinal = "third";
-
-color = prompt("What reason is your " + ordinal + "- favorite CSS color?", "");
-document.write(rank + " " + color + "<br>");
+  }
+  color = prompt("What reason is your " + ordinal + "- favorite CSS color?", "");
+  document.write(rank + " " + color + "<br>");
+}
 ```
 
 循环通过将 `rank` 变量从 3 减到 1 来运行。循环的每次迭代都会提示用户输入一种喜爱的 CSS 颜色，该颜色会被写入页面，并使用 `rank` 的当前值创建一个倒序列表，如图 4-3 所示。
@@ -1111,18 +1075,18 @@ document.write(rank + " " + color + "<br>");
 ![](img/d7cbed725c071566e0fc4bb4166ff642_67_1.png)
 
 > 没有理由规定 `for` 循环计数器只能递增或递减。你实际上可以自由任何表达式来调整循环计数器的值。例如，假设你想让循环计数器只遍历奇数 1, 3, 5, 7 和 9。这里有一个可以实现该功能的语句：
+>
+> ```javascript
+> for (let counter = 1; counter <= 9; counter += 2)
+> ```
+>
+> 表达式 `counter += 2` 使用加赋值运算符告诉 JavaScript 增加 `counter` 变量。
 
-```
-for (let counter = 1; counter <= 9; counter += 2)
-```
-
-表达式 `counter += 2` 使用加赋值运算符告诉 JavaScript 增加 `counter` 变量。
-
-### 使用 do...while 循环
+### 使用 `do...while` 循环
 
 JavaScript 有第三种也是最后一种类型的循环，我把它留到最后是因为你并不会经常使用它。要理解你何时可能会使用它，请考虑这段代码片段：
 
-```
+```javascript
 let sum = 0;
 let num = prompt("Type a number or click Cancel:", 1);
 while (num != null) {
@@ -1135,7 +1099,7 @@ while (num != null) {
 
 这看起来很合理，但如果你的代码要求用户至少输入一个值呢？以下展示了更改代码以确保循环至少执行一次的方法：
 
-```
+```javascript
 let sum = 0;
 let num = 0;
 while (num != null || sum === 0) {
@@ -1149,7 +1113,7 @@ document.write("Total of your numbers is " + sum);
 
 这种方法可行，但你也可以使用 `do...while` 循环来确保代码至少执行一次。以下是一种方法：
 
-```
+```javascript
 let sum = 0;
 let num = 0;
 do {
@@ -1160,6 +1124,8 @@ document.write("Total of your numbers is " + sum);
 ```
 
 ## 第 5 章：利用函数的威力
+
+### 本章内容
 
 - 了解函数
 - 创建和使用函数
@@ -1198,7 +1164,7 @@ function name(arguments) {
 - 在页面加载后
 - 响应事件（例如用户点击按钮）
 
-# 当浏览器解析 `<script>` 标签时
+#### 当浏览器解析 `<script>` 标签时
 
 调用函数最简单的方法是在你的脚本中包含一个仅由函数名加括号组成的语句（假设你的函数没有使用参数）。下面的代码提供了一个示例（我列出了整个页面，向你展示函数及其调用的语句出现在页面代码中的位置）。
 
@@ -1217,27 +1183,20 @@ function name(arguments) {
         console.log("Good day!");
       }
     }
+    displayGreeting();
   </script>
-```
-
-
-```
-}
-}
-displayGreeting();
-</script>
 </head>
 <body>
 </html>
 ```
 
-`<script>` 标签包含一个名为 `displayGreeting` 的函数，该函数根据当前时间判断是否为早上，并向控制台写入问候信息（请查看图 5-1；你将在第 9 章学习控制台）。该函数由紧接在函数之后的 `displayGreeting` 语句调用。
+`<script>` 标签包含一个名为 `displayGreeting` 的函数，该函数根据当前时间判断是否为早上，并向控制台写入问候信息（请查看图 5-1；你将在第 9 章学习控制台）。该函数由紧接在函数之后的 `displayGreeting()` 语句调用。
 
 ![](img/d7cbed725c071566e0fc4bb4166ff642_74_0.png)
 
-图 5-1：在解析 `<script>` 标签时调用函数的示例。
+**图 5-1：** 在解析 `<script>` 标签时调用函数的示例。
 
-### 当页面加载完成后
+#### 当页面加载完成后
 
 如果你的函数引用了页面元素，那么在页面的 `<head>` 部分内部调用该函数将不起作用，因为当浏览器解析脚本时，页面的其余部分尚未加载，因此你的元素引用将失败。
 
@@ -1250,10 +1209,10 @@ displayGreeting();
   <meta charset="utf-8">
   <title>页面加载后调用函数</title>
   <script>
-  function makeBackgroundRed() {
-    document.body.style.backgroundColor = "red";
-    console.log("The background is now red.");
-  }
+    function makeBackgroundRed() {
+      document.body.style.backgroundColor = "red";
+      console.log("The background is now red.");
+    }
   </script>
 </head>
 <body>
@@ -1269,7 +1228,7 @@ displayGreeting();
 
 在函数中，`document.body` 是 `<body>` 元素的引用，它在页面完全加载之前并不“存在”。这意味着如果你尝试在初始脚本中调用该函数，将得到错误。为了正确执行该函数，在 `<body>` 元素的底部会出现第二个 `<script>` 标签，该脚本通过以下语句调用该函数：
 
-```
+```javascript
 makeBackgroundRed();
 ```
 
@@ -1279,7 +1238,7 @@ makeBackgroundRed();
 
 **图 5-2：** 在页面加载后调用函数的示例。
 
-### 当事件触发时
+#### 当事件触发时
 
 JavaScript 函数响应某些事件被调用的常用方式之一。事件是一个如此重要的话题，以我在第 6 章中花了大量篇幅讲解它们。现在，请看一个相对直接的应用：当用户点击按钮时执行函数。以下代码展示了实现方法：
 
@@ -1302,13 +1261,9 @@ JavaScript 函数响应某些事件被调用的常用方式之一。事件是一
   <button onclick="makeBackgroundRed()">
     Make Background Red
   </button>
-```
-
-```html
-</button>
-<button onclick="makeBackgroundWhite()">
-  Make Background White
-</button>
+  <button onclick="makeBackgroundWhite()">
+    Make Background White
+  </button>
 </body>
 </html>
 ```
@@ -1387,7 +1342,7 @@ onclick="backgroundColor('red')"
 
 字符串 `'red'` 被插入到函数括号中，因此该值被传递给了函数。另一个按钮传递了值 `'white'`，函数结果随之改变。
 
-警告：在示例代码的两个 onclick 属性中，注意传递给函数的值被单引号 (') 包围。这是因为整个 onclick 的值是用双引号 (") 包围的。
+> **警告** 在示例代码的两个 `onclick` 属性中，注意传递给函数的值被单引号 (`'`) 包围。这是因为整个 `onclick` 的值是用双引号 (`"`) 包围的。
 
 ### 向函数传递两个或多个值
 
@@ -1426,11 +1381,12 @@ function changeColors(newBackColor, newForegroundColor) {
 
 
 
-html
+```html
 <button onclick="changeColors('white', 'red')">
   白色背景，红色文字
 </button>
 <body>
+</body>
 </html>
 ```
 
@@ -1445,9 +1401,9 @@ html
 - 你可以使用它们来控制代码的执行时机。
 - 你可以使用它们来将重复的代码合并到一个例程中。
 
-函数为 JavaScript 带来的第三个主要好处是，你可以使用它们来执行计算并返回结果。例如，这是一个计算餐厅账单小的函数：
+函数为 JavaScript 带来的第三个主要好处是，你可以使用它们来执行计算并返回结果。例如，这是一个计算餐厅账单小费的函数：
 
-```
+```javascript
 function calculateTip(preTip, tipPercent) {
   const tipResult = preTip * tipPercent;
   return tipResult;
@@ -1457,27 +1413,27 @@ const preTipTotal = 100.00;
 const tipPercentage = 0.15;
 ```
 
-```
+```javascript
 const tipCost = calculateTip(preTipTotal, tipPercentage);
 const totalBill = preTipTotal + tipCost;
 document.write("Your total bill is $" + totalBill);
 ```
 
-名为 `calculateTip` 的函数接受两个参数：
-`preTip` 是小费之前的账单总，`tipPercent` 是用于计算小费的百分比。该函数声明了一个名为 `tipResult` 的变量，并使用它来存储计算结果——`preTip` 乘以 `tipPercent`。
+名为 `calculateTip` 的函数接受两个参数：`preTip` 是小费之前的账单总额，`tipPercent` 是用于计算小费的百分比。该函数声明了一个名为 `tipResult` 的变量，并使用它来存储计算结果——`preTip` 乘以 `tipPercent`。
+
 此示例的关键在于函数的第二行：
 
-```
+```javascript
 return tipResult;
 ```
 
 `return` 语句是 JavaScript 将值传回调用函数语句的方式。该语句位于函数之后：
 
-```
+```javascript
 tipCost = calculateTip(preTipTotal, tipPercentage);
 ```
 
-该语句首先将 `preTipTotal` 的值（在脚本早之前初始化为 100.00）和 `tipPercentage`（在早之前初始化为 0.15）传递给 `calculateTip` 函数。当该函数返回结果时，整个表达式 `calculateTip(preTipTotal, tipPercentage)` 会被该结果替换，这意味着它被存储在 `tipCost` 变量中。然后 `preTipTotal` 和 `tipCost` 相加，结果存储在 `totalBill` 中，`document.write` 语句显示最终计算结果（查看图 5-4）。
+该语句首先将 `preTipTotal` 的值（在脚本早先初始化为 100.00）和 `tipPercentage`（在早先初始化为 0.15）传递给 `calculateTip` 函数。当该函数返回结果时，整个表达式 `calculateTip(preTipTotal, tipPercentage)` 会被该结果替换，这意味着它被存储在 `tipCost` 变量中。然后 `preTipTotal` 和 `tipCost` 相加，结果存储在 `totalBill` 中，`document.write` 语句显示最终计算结果（查看图 5-4）。
 
 ![](img/d7cbed725c071566e0fc4bb4166ff642_82_0.png)
 
@@ -1485,9 +1441,9 @@ tipCost = calculateTip(preTipTotal, tipPercentage);
 
 ### 使用匿名函数
 
-让我们再次看看本章早之前的函数语法：
+让我们再次看看本章早先的函数语法：
 
-```
+```javascript
 function functionName([arguments]) {
   JavaScript statements
 }
@@ -1497,7 +1453,7 @@ function functionName([arguments]) {
 
 然而，创建一个没有名字的函数也是可能的：
 
-```
+```javascript
 function ([arguments]) {
   JavaScript statements
 }
@@ -1518,16 +1474,16 @@ function ([arguments]) {
 
 ### 将匿名函数赋值给变量
 
-上一节的示例代码定义了命名函数 `calculateTip()`，并在稍后使用 `tipCost` 变量来存储函数结果。这是一个不需要命名函数的完美示例，因为你从未在地方中使用函数名来计算 `tipCost` 值。在不需要的情况下向命名空间添加标识符被称为“污染命名空间”，这在现代 JavaScript 编程中是一个大忌。
+上一节的示例代码定义了命名函数 `calculateTip()`，并在稍后使用 `tipCost` 变量来存储函数结果。这是一个不需要命名函数的完美示例，因为你从未在别处使用函数名来计算 `tipCost` 值。在不需要的情况下向命名空间添加标识符被称为“污染命名空间”，这在现代 JavaScript 编程中是一个大忌。
 
 你可以重写这段代码来使用匿名函数：
 
-```
+```javascript
 const preTipTotal = 100.00;
 const tipPercentage = 0.15;
 ```
 
-```
+```javascript
 // 使用匿名函数声明 tipCost
 const tipCost = function (preTip, tipPercent) {
   const tipResult = preTip * tipPercent;
@@ -1547,7 +1503,7 @@ document.write("Your total bill is $" + totalBill);
 
 再次，你有两个不需要命名的函数，因此可以通过将回调替换为匿名函数将它们从命名空间中移除。以下是修改后的代码：
 
-```
+```html
 <body>
 <button id="bgRed">
   将背景变为红色
@@ -1583,7 +1539,7 @@ function ([arguments]) {
 
 你可以使用这种：
 
-```
+```javascript
 ([arguments]) => {
   JavaScript statements
 }
@@ -1596,21 +1552,12 @@ function ([arguments]) {
 > 记住，箭头函数是 ES6 的发明，所以如果你需要支持非常旧的浏览器（例如 Internet Explorer 11），请使用它们。
 
 例如，这里是之前的一个匿名函数（“将匿名函数赋值给变量”部分）：
+
 ```javascript
 // 使用匿名函数声明 tipCost
 const tipCost = function (preTip, tipPercent) {
   const tipResult = preTip * tipPercent;
   return (tipResult);
-}
-```
-
-
-
-```javascript
-// Declare tipCost using an anonymous function
-const tipCost = function (preTip, tipPercent) {
-  const tipResult = preTip * tipPercent;
-  return (tipResult); // Fixed variable
 }
 ```
 
@@ -1693,16 +1640,16 @@ document.getElementById('bgRed').addEventListener(
 
 你通过以下泛型表达式中的语法来引用属性：
 
-```
+```javascript
 object.property
 ```
 
-- **object: 拥有该属性的对象**
-- **property: 你想要操作的属性的名称**
+- **object:** 拥有该属性的对象
+- **property:** 你想要操作的属性的名称
 
 例如，考虑以下表达式：
 
-```
+```javascript
 document.location
 ```
 
@@ -1730,15 +1677,15 @@ const message = "The current address is " + document.location + ".";
 
 某些属性是“只读的”，这意味着你的代码只能读取当前值而不能更改它。然而，许多属性是“可读可写的”，这意味着你也可以更改它们的值。要更改属性的值，请使用以下泛型语法：
 
-```
+```javascript
 object.property = value
 ```
 
 这些是各个部分的含义：
 
-- **object: 拥有该属性的对象**
-- **property: 你想要更改的属性的名称**
-- **value: 字面量值（如字符串或数字）或返回你想要设置的属性值的表达式**
+- **object:** 拥有该属性的对象
+- **property:** 你想要更改的属性的名称
+- **value:** 字面量值（如字符串或数字）或返回你想要设置的属性值的表达式
 
 这是一个示例：
 
@@ -1753,18 +1700,18 @@ document.location = newAddress;
 
 要运行方法，请从以下泛型表达式开始，最简单的情况是它不带参数：
 
-```
+```javascript
 object.method()
 ```
 
 这些是各个部分的含义：
 
-- **object: 拥有该方法的对象**
-- **method: 你想要执行的方法名称**
+- **object:** 拥有该方法的对象
+- **method:** 你想要执行的方法名称
 
 如果方法需要参数，使用以下泛型语法：
 
-```
+```javascript
 object.method(argument1, argument2, ...)
 ```
 
@@ -1823,8 +1770,6 @@ confirm("Do you want to go back?");
 
 元素代表文档中的标签，因此你在代码中会不断使用它们。本节将介绍引用一个或多个元素的多种方法。
 
-
-
 ### 通过 id 指定元素
 
 如果你想在脚本中处理某个特定的元素，可以先通过 `id` 属性为它分配一个标识符，然后直接引用该元素：
@@ -1835,7 +1780,7 @@ confirm("Do you want to go back?");
 
 完成后，你就可以使用 document 对象的 `getElementById()` 方法在代码中引用该元素了：
 
-```
+```javascript
 document.getElementById(id)
 ```
 
@@ -1843,7 +1788,7 @@ document.getElementById(id)
 
 例如，以下语句返回了上一个 `<div>` 标签的引用（即 id 为 "kale-quotations" 的那个）：
 
-```
+```javascript
 document.getElementById("kale-quotations")
 ```
 
@@ -1857,7 +1802,7 @@ document.getElementById("kale-quotations")
 
 返回具有相同标签的元素集合的机制是 `getElementsByTagName()` 方法：
 
-```
+```javascript
 document.getElementsByTagName(tag)
 ```
 
@@ -1865,7 +1810,7 @@ document.getElementsByTagName(tag)
 
 该方法返回一个类数组的集合，其中包含了文档中所有使用指定标签的元素。（请参阅第 7 章以了解数组是如何工作的。另外请查看本章后半部分的“处理元素集合”内容）。例如，若要返回一个包含当前页面中所有 `<div>` 元素的集合，你会使用以下语句：
 
-```
+```javascript
 const divs = document.getElementsByTagName("div");
 ```
 
@@ -1873,7 +1818,7 @@ const divs = document.getElementsByTagName("div");
 
 你可以处理的另一个元素集合是页面中所有使用相同类（class）的元素集合。用于返回所有共享特定类名的元素的 JavaScript 工具是 `getElementsByClassName()` 方法：
 
-```
+```javascript
 document.getElementsByClassName(class)
 ```
 
@@ -1881,7 +1826,7 @@ document.getElementsByClassName(class)
 
 该方法返回一个类数组的集合，包含了文档中所有使用指定类名的元素。集合的顺序与元素在文档中出现的顺序一致。这里有一个示例：
 
-```
+```javascript
 const keywords = document.getElementsByClassName("keyword");
 ```
 
@@ -1889,7 +1834,7 @@ const keywords = document.getElementsByClassName("keyword");
 
 你在 CSS 中使用的相同选择器和组合符也可以用于 JavaScript 代码中，通过使用 document 对象的 `querySelector()` 和 `querySelectorAll()` 方法来引用页面元素：
 
-```
+```javascript
 document.querySelector(selector)
 document.querySelectorAll(selector)
 ```
@@ -1900,7 +1845,7 @@ document.querySelectorAll(selector)
 
 例如，以下语句返回所有作为 `<article>` 元素直接子元素的 `<section>` 元素集合：
 
-```
+```javascript
 const articles = document.querySelectorAll("article > section");
 ```
 
@@ -1922,7 +1867,7 @@ const articles = document.querySelectorAll("article > section");
 
 现在考虑以下语句：
 
-```
+```javascript
 divs = document.getElementsByTagName("div");
 ```
 
@@ -1930,14 +1875,14 @@ divs = document.getElementsByTagName("div");
 
 你也可以直接使用它们的 `id` 值来引用元素。例如，以下语句是等价的：
 
-```
+```javascript
 const firstDiv = divs[0];
 const firstDiv = divs.div1;
 ```
 
 要学习集合中有多少个项目，请使用 `length` 属性：
 
-```
+```javascript
 const totalDivs = divs.length;
 ```
 
@@ -1966,7 +1911,7 @@ for (const d of divs) {
 
 ![](img/d7cbed725c071566e0fc4bb4166ff642_100_0.png)
 
-FIGURE 6-3：遍历 div 元素的输出。
+**图 6-3：** 遍历 div 元素的输出。
 
 > 警告：`for...of` 循环是 ECMAScript 2015 (ES6) 的新增功能。如果你需要支持 Internet Explorer 等旧浏览器，请使用普通的 `for` 循环：
 
@@ -2008,13 +1953,13 @@ JavaScript 中的一项常见任务是处理元素的子元素、父元素或兄
 
 要返回父元素的所有子元素，你可以使用 `children` 属性：
 
-```
+```javascript
 parent.children
 ```
 
 注意：parent 是父元素。例如，以下语句将 body 元素的所有子元素存储在变量中：
 
-```
+```javascript
 const bodyChildElements = document.body.children;
 ```
 
@@ -2022,7 +1967,7 @@ const bodyChildElements = document.body.children;
 
 ![](img/d7cbed725c071566e0fc4bb4166ff642_102_0.png)
 
-FIGURE 6-4：控制台中显示的 `bodyChildElements` 变量的值。
+**图 6-4：** 控制台中显示的 `bodyChildElements` 变量的值。
 
 这里是输出：
 
@@ -2030,22 +1975,20 @@ FIGURE 6-4：控制台中显示的 `bodyChildElements` 变量的值。
 HTMLCollection { 0: header, 1: main, length: 2 }
 ```
 
-
-
 数字 0 和 1 是每个子元素的索引数字。例如，你可以使用 `bodyChildElements[0]` 来引用集合中的第一个元素，在本例中它是页头元素。
 
 ### 获取第一个子节点
 
 如果你像我在上一节描述的那样，使用父元素的 `childNodes` 或 `children` 属性来返回父元素的子节点，你可以通过在集合变量名后加上 `[0]` 来引用结果集合中的第一项。例如：
 
-```
+```javascript
 bodyChildren[0]
 bodyChildElements[0]
 ```
 
 然而，DOM 提供了一种更直接的路径来获取第一个子节点：
 
-```
+```javascript
 parent.firstChild
 ```
 
@@ -2053,14 +1996,14 @@ parent.firstChild
 
 例如，假设你想处理本节开头 HTML 示例中 `main` 元素的第一个子节点。以下是一些可以实现该功能的代码：
 
-```
+```javascript
 const content = document.getElementById("page-content");
 const firstContentNode = content.firstChild;
 ```
 
 在这个示例中，生成的节点是一个文本节点（`<main>` 和 `<p>` 标签之间的空白）。如果你想获取第一个子元素节点，请改用 `firstElementChild` 属性：
 
-```
+```javascript
 parent.firstElementChild
 ```
 
@@ -2068,9 +2011,9 @@ parent.firstElementChild
 
 要获取本节开头代码中 `main` 元素的第一个子元素节点，你可以这样操作：
 
-```
+```javascript
 const content = document.getElementById("page-content");
-const firstContentChildElement = content.firstChildChild;
+const firstContentChildElement = content.firstElementChild;
 ```
 
 在这个示例中，这段代码返回了 `p` 元素。
@@ -2079,7 +2022,7 @@ const firstContentChildElement = content.firstChildChild;
 
 如果你的代码需要处理最后一个子节点，请使用父元素的 `lastChild` 属性：
 
-```
+```javascript
 parent.lastChild
 ```
 
@@ -2087,14 +2030,14 @@ parent.lastChild
 
 例如，假设你想处理本节开头 HTML 示例中 `p` 元素的最后一个子节点。以下是可以实现该功能的代码：
 
-```
+```javascript
 const para = document.querySelector("main > p");
 const lastChildNode = para.lastChild;
 ```
 
 在这个示例中，生成的节点是一个代表问号（？）以及 `</p>` 标签之前空白的文本节点。如果你想获取最后一个子元素节点，请改用 `lastElementChild` 属性：
 
-```
+```javascript
 parent.lastElementChild
 ```
 
@@ -2102,7 +2045,7 @@ parent.lastElementChild
 
 要获取本节开头代码中 `p` 元素的最后一个子元素节点，你可以这样操作：
 
-```
+```javascript
 const para = document.querySelector("main > p");
 const lastChildElementElement = para.lastElementChild;
 ```
@@ -2113,7 +2056,7 @@ const lastChildElementElement = para.lastElementChild;
 
 如果你的代码需要处理子元素的父元素，请使用子元素的 `parentNode` 属性：
 
-```
+```javascript
 child.parentNode
 ```
 
@@ -2121,7 +2064,7 @@ child.parentNode
 
 例如，假设你想处理本节开头 HTML 示例中 `h1` 元素的父元素。以下是可以实现该功能的代码：
 
-```
+```javascript
 const childElement = document.querySelector("h1");
 const parentElement = childElement.parentNode;
 ```
@@ -2137,7 +2080,7 @@ const parentElement = childElement.parentNode;
 
 要返回特定元素的前一个兄弟元素，请使用 `previousElementSibling` 属性：
 
-```
+```javascript
 element.previousElementSibling
 ```
 
@@ -2145,7 +2088,7 @@ element.previousElementSibling
 
 例如，以下语句将 `main` 元素的前兄弟元素存储在变量中：
 
-```
+```javascript
 const currElement = document.querySelector("main");
 const prevSib = currElement.previousElementSibling;
 ```
@@ -2154,7 +2097,7 @@ const prevSib = currElement.previousElementSibling;
 
 要返回特定元素的后一个兄弟元素，请使用 `nextElementSibling` 属性：
 
-```
+```javascript
 element.nextElementSibling
 ```
 
@@ -2162,7 +2105,7 @@ element.nextElementSibling
 
 例如，以下语句将 `main` 元素的后一个兄弟元素存储在变量中：
 
-```
+```javascript
 const currElement = document.querySelector("main");
 const nextSib = currElement.nextElementSibling;
 ```
@@ -2213,8 +2156,6 @@ const elementToRemove = document.querySelector(".old-element");
 elementToRemove.remove();
 ```
 
-
-
 在本示例中，代码创建了一个新的 `nav` 元素，将其插入到 `main` 元素之前，然后添加了一个标题：
 
 ```javascript
@@ -2229,7 +2170,7 @@ newNav.innerHTML = "<h2>Navigation</h2>";
 
 - **向元素中仅插入文本：** 使用 `insertAdjacentText()` 方法：
 
-```
+```javascript
 element.insertAdjacentText(location, text)
 ```
 
@@ -2241,7 +2182,7 @@ element.insertAdjacentText(location, text)
 
 - **向元素中插入标签和文本：** 使用 `insertAdjacentHTML()` 方法：
 
-```
+```javascript
 element.insertAdjacentHTML(location, data)
 ```
 
@@ -2319,6 +2260,7 @@ element.classList
 ```
 
 注意：`element` 是你正在操作的元素。
+
 返回的类列表是一个类数组对象，包含一个 `add()` 方法，你可以用它向元素的现有的类中添加新类：
 
 ```javascript
@@ -2367,8 +2309,6 @@ document.querySelector("main").prepend(newNav);
 newNav.innerHTML = "<h2>Navigation</h2>";
 ```
 
-
-
 ### 移除属性
 
 要从元素中移除属性，请使用元素的 `removeAttribute()` 方法：
@@ -2400,7 +2340,7 @@ headerImage.removeAttribute("id");
 
 为什么网页不会自动响应事件呢？它们为什么只是静静地呆在那里？因为网页默认是静态的，这意味着它们忽略了周围发生的所有事件。作为一名 Web 开发人员，你的任务就是通过让你的网页“监听”特定事件的发生来改变这种行为。你通过设置名为“事件处理器”（event handlers）的特殊代码块来实现。一个事件处理器由两部分组成：
 
-- **事件监听器（Event listener）：** 告诉 Web 器的指令，让它关注特定元素上发生的特定事件（监听监听）。
+- **事件监听器（Event listener）：** 告诉 Web 浏览器的指令，让它关注特定元素上发生的特定事件（监听监听）。
 - **回调函数（Callback function）：** 当 Web 浏览器检测到事件发生时执行的代码。
 
 你通过使用元素对象的 `addEventListener()` 方法设置事件处理器，来配置代码以监听并响应事件。以下是语法：
@@ -2492,13 +2432,15 @@ keyInput.addEventListener('keypress', function(e) {
 });
 ```
 
+## 第 7 章
 
+### 数组
 
 ### 填充数组
 
 在声明数组之后，你就可以开始向其填充你想要存储的数据值。以下是执行此操作的通用语法：
 
-```
+```javascript
 arrayName[index] = value;
 ```
 
@@ -2512,7 +2454,7 @@ JavaScript 愿意在数组中放入几乎任何类型的数据，包括数字、
 
 例如，以下是几个语句，它们声明了一个名为 `dogPhotos` 的新数组，然后向数组输入五个字符串值：
 
-```
+```javascript
 const dogPhotos = new Array(5);
 dogPhotos[0] = "dog-1";
 dogPhotos[1] = "dog-2";
@@ -2523,7 +2465,7 @@ dogPhotos[4] = "dog-5";
 
 要引用数组值（例如，在表达式中使用它），你需要指定相应的索引：
 
-```
+```javascript
 strURL + dogPhotos[3]
 ```
 
@@ -2533,7 +2475,7 @@ strURL + dogPhotos[3]
 
 第一种方法使用以下通用格式的 `Array()` 构造函数：
 
-```
+```javascript
 const arrayName = new Array(value1, value2, ...);
 ```
 
@@ -2544,13 +2486,13 @@ const arrayName = new Array(value1, value2, ...);
 
 这里是一个示例：
 
-```
+```javascript
 const dogPhotos = new Array("dog-1", "dog-2", "dog-3", "dog-4", "dog-5");
 ```
 
 JavaScript 还支持创建**数组字面量**（array literals）。你通过在方括号中包含一个或多个值来创建数组字面量。以下是通用格式：
 
-```
+```javascript
 const arrayName = [value1, value2, ...];
 ```
 
@@ -2561,7 +2503,7 @@ const arrayName = [value1, value2, ...];
 
 一个示例：
 
-```
+```javascript
 const dogPhotos= ["dog-1", "dog-2", "dog-3", "dog-4", "dog-5"];
 ```
 
@@ -2571,7 +2513,7 @@ const dogPhotos= ["dog-1", "dog-2", "dog-3", "dog-4", "dog-5"];
 
 你可以使用循环和某种计数器变量通过程序化访问数组的索引来填充数组。这里是一个示例：
 
-```
+```javascript
 const dogPhotos = [];
 for (let counter = 0; counter < 5; counter += 1) {
   dogPhotos[counter] = "dog-" + (counter + 1);
@@ -2580,7 +2522,7 @@ for (let counter = 0; counter < 5; counter += 1) {
 
 `for()` 循环内部的语句使用变量 `counter` 作为数组的索引。例如，当 `counter` 为 0 时，语句看起来如下：
 
-```
+```javascript
 dogPhotos[0] = "dog-" + (0 + 1);
 ```
 
@@ -2602,7 +2544,7 @@ Array 对象的 `forEach()` 方法为数组中的每个元素运行回调函数�
 
 你可以使用以下任何一种语法：
 
-```
+```javascript
 array.forEach(namedFunction);
 array.forEach(function (value, index, array) { code });
 array.forEach((value, index, array) => { code });
@@ -2632,7 +2574,7 @@ console.log("Element " + index + " has the value " + value);
 
 创建一个存储更新值的新数组最简单的方法是使用 Array 对象的 `map()` 方法。有三种语法可以使用：
 
-```
+```javascript
 array.map(namedFunction);
 array.map(function(value, index, array) { code });
 array.map((value, index, array) => { code });
@@ -2663,7 +2605,7 @@ console.log(tempsCelsius);
 
 一种常见的模式是对数组中的每个元素执行累加操作，以产生一个值。例如，你可能想要知道库存单位的总和。有三种语法可以使用：
 
-```
+```javascript
 array.reduce(namedFunction, initialValue);
 array.reduce(function(accumulator, value) { code }, initialValue);
 array.reduce((accumulator, value) => { code }, initialValue);
@@ -2695,7 +2637,7 @@ console.log("Total units in stock: " + totalUnits);
 
 要在数组中搜索符合条件的元素，请使用 Array 对象的 `find` 方法。有三种语法可以使用：
 
-```
+```javascript
 array.find(namedFunction);
 array.find(function (value, index, array) { code });
 array.find((value, index, array) => { code });
@@ -2731,8 +2673,6 @@ const stock = products.find((currentProduct) => {
 });
 ```
 
-
-
 ```javascript
 // 输出结果
 if (stock) {
@@ -2765,17 +2705,14 @@ array.length
 | 方法语法 | 描述 |
 | --- | --- |
 | `array.concat(array1, array2, ...)` | 获取一个或多个现有数组的元素，并将它们合并到现有数组中以创建一个新数组。 |
-
-| 方法 | 语法 | 描述 |
-| --- | --- | --- |
-| join() | `array.join(separator)` | 获取数组中的现有值并将其合并成一个字符串。 |
-| pop() | `array.pop()` | 从数组删除最后一个元素并返回该元素的值。 |
-| push() | `array.push(value1, value2, ...)` | 在数组末尾添加一个或多个元素。 |
-| reverse() | `array.reverse()` | 反转指定数组中元素的顺序。 |
-| shift() | `array.shift()` | 从数组中删除第一个元素并返回该元素的值。 |
-| slice() | `array.slice(start, end)` | 返回一个包含现有数组元素子集的新数组。 |
-| sort() | `array.sort()` | 对指定的数组进行排序。 |
-| unshift() | `array.unshift(value1, value2, ...)` | 在数组开头插入一个或多个值并返回数组的新长度。 |
+| `array.join(separator)` | 获取数组中的现有值并将其合并成一个字符串。 |
+| `array.pop()` | 从数组删除最后一个元素并返回该元素的值。 |
+| `array.push(value1, value2, ...)` | 在数组末尾添加一个或多个元素。 |
+| `array.reverse()` | 反转指定数组中元素的顺序。 |
+| `array.shift()` | 从数组中删除第一个元素并返回该元素的值。 |
+| `array.slice(start, end)` | 返回一个包含现有数组元素子集的新数组。 |
+| `array.sort()` | 对指定的数组进行排序。 |
+| `array.unshift(value1, value2, ...)` | 在数组开头插入一个或多个值并返回数组的新长度。 |
 
 ## 第 8 章
 
@@ -2816,52 +2753,6 @@ myFunction().length;
 ### 使用字符串模板
 
 在深入研究 String 对象的属性和方法之前，请花几秒检查一种特殊的字符串类型，它旨在解决三个与字符串相关的问题……
-
-（注：由于提供的文本存在大量重复和 OCR 错误，以下为根据逻辑流经过去重和清理后的翻译内容）
-
----
-
-## 第 8 章
-
-### 编码字符串与日期
-
-本章内容
-
-- 组合字符串
-- 处理日期
-- 调整时间
-
-尽管你的 JavaScript 代码会花费大量时间处理 HTML 标签和 CSS 属性等网页小摆件，但它还会执行许多幕后工作，这些工作需要操纵字符串以及处理日期和时间。为了帮助你完成这些任务，在本章中将探索 JavaScript 的两个内置对象：*String* 对象和 *Date* 对象。你将研究每个对象最重要的属性，并掌握最常用的方法。
-
-### 操纵字符串
-
-到目前为止，我在书中已经使用了几十个字符串示例。这些不仅包括字符串字面量（例如 "JavaScript Essentials For Dummies"），还包括返回字符串的方法（例如 `prompt()` 方法）。因此，到现在应该很清楚，字符串在所有 JavaScript 编程中都起着重要作用，很少有脚本是不以某种方式处理字符串的。
-
-正因如此，精通操纵字符串是非常有意义的，这包括在字符串中定位文本以及从字符串中提取文本。你将在本节中了解到所有这些以及更多内容。
-
-你所处理的任何字符串——无论是字符串字面量还是返回字符串的方法或函数的结果——都是一个 String 对象。例如，以下两个语句是等价的：
-
-```javascript
-const bookName = new String("JavaScript Essentials For Dummies");
-const bookName = "JavaScript Essentials For Dummies";
-```
-
-这意味着在应用 String 对象的属性和方法时你有很大的灵活性。例如，String 对象有一个 `length` 属性，我将在下一节中描述它。以下是所有使用该属性的合法 JavaScript 表达式：
-
-```javascript
-bookName.length;
-"JavaScript Essentials For Dummies".length;
-prompt("Enter the name:").length;
-myFunction().length;
-```
-
-最后一个示例假设 `myFunction()` 返回一个字符串值。
-
-### 使用字符串模板
-
-在深入研究 String 对象的属性和方法之前，请花几秒检查一种特殊的字符串类型，它旨在解决三个与字符串相关的问题……
-
-
 
 表 8-1 列出了几种用于在较大的字符串查找子字符串的 String 对象方法。
 
@@ -2869,26 +2760,26 @@ myFunction().length;
 
 | 方法 | 功能 |
 | --- | --- |
-| string.endsWith(substring, start) | 测试子字符串是否出现在字符串的末尾 |
-| string.includes(substring, start) | 测试子字符串是否出现在字符串中 |
-| string.indexOf(substring, start) | 在字符串中搜索子字符串第一次出现的位置 |
-| string.lastIndexOf(substring, start) | 在字符串中搜索子字符串最后一次出现的位置 |
-| string.startsWith(substring, start) | 测试子字符串是否出现在字符串的开头
+| `string.endsWith(substring, start)` | 测试子字符串是否出现在字符串的末尾 |
+| `string.includes(substring, start)` | 测试子字符串是否出现在字符串中 |
+| `string.indexOf(substring, start)` | 在字符串中搜索子字符串第一次出现的位置 |
+| `string.lastIndexOf(substring, start)` | 在字符串中搜索子字符串最后一次出现的位置 |
+| `string.startsWith(substring, start)` | 测试子字符串是否出现在字符串的开头 |
 
 ### 学习提取子字符串的方法
 
-查找子字符串一方面，你通常也需要提取子字符串。例如，如果用户输入了电子邮件地址，你可能需要提取用户名（@ 符号左侧的部分）或域名（@ 符号右侧的部分）。对于这类操作，JavaScript 提供了六种方法，如表 8-2 所示。
+查找子字符串另一方面，你通常也需要提取子字符串。例如，如果用户输入了电子邮件地址，你可能需要提取用户名（@ 符号左侧的部分）或域名（@ 符号右侧的部分）。对于这类操作，JavaScript 提供了六种方法，如表 8-2 所示。
 
- 表 8-2 用于提取子字符串的 String 对象方法
+### 表 8-2 用于提取子字符串的 String 对象方法
 
 | 方法 | 功能 |
 | --- | --- |
-| string.charAt(index) | 返回字符串中由 `index` 指定索引处的字符 |
-| string.charCodeAt(index) | 返回 `string` 中由 `index` 指定索引处的字符的编码 |
-| string.slice(start, end) | 返回 `string` 中从 `start` 指定索引位置开始到在 `end` 指定索引位置之前结束的子字符串 |
-| string.split(separator, limit) | 返回一个数组，其中每个项目都是 `string` 中的子字符串，这些子字符串由分隔符分隔 |
-| string.substr(start, length) | 返回 `string` 中从 `start` 指定索引位置开始且长度为 `length` 个字符的子字符串 |
-| string.substring(start, end) | 返回 `string` 中从 `start` 指定索引位置开始到在 `end` 指定索引位置之前结束的子字符串 |
+| `string.charAt(index)` | 返回字符串中由 `index` 指定索引处的字符 |
+| `string.charCodeAt(index)` | 返回 `string` 中由 `index` 指定索引处的字符的编码 |
+| `string.slice(start, end)` | 返回 `string` 中从 `start` 指定索引位置开始到在 `end` 指定索引位置之前结束的子字符串 |
+| `string.split(separator, limit)` | 返回一个数组，其中每个项目都是 `string` 中的子字符串，这些子字符串由分隔符分隔 |
+| `string.substr(start, length)` | 返回 `string` 中从 `start` 指定索引位置开始且长度为 `length` 个字符的子字符串 |
+| `string.substring(start, end)` | 返回 `string` 中从 `start` 指定索引位置开始到在 `end` 指定索引位置之前结束的子字符串 |
 
 ### 处理日期和时间
 
@@ -2896,11 +2787,9 @@ myFunction().length;
 
 你会感到惊讶的。日期和时间可能会变得奇怪，但如果你始终记住以下三个关键点，处理起来就会变得容易得多：
 
--   JavaScript 时间是以毫秒（秒的千分之一）为单位的。具体来说，JavaScript 通过计算从 1970 年 1 月 1 日到目标日期时间之间经过的毫秒数来测量时间。例如，你可能会遇到 2001 年 1 月 1 日这个日期，并想：“啊，是的，新千年的开始。”然而，JavaScript 遇到该日期想的是“978220800000”。
-
--   在 JavaScript 世界中，时间始于格林尼治标准时间 1970 年 1 月 1 日午。之前的日期在毫秒上为负值。
-
--   由于你的 JavaScript 程序运行在用户的浏览器中，日期和时间几乎总是用户的本地日期和时间。也就是说，你的脚本的日期和时间将不是你页面所在服务器的时间。这意味着你永远无法知道用户查看你页面时是什么时间。
+- JavaScript 时间是以毫秒（秒的千分之一）为单位的。具体来说，JavaScript 通过计算从 1970 年 1 月 1 日到目标日期时间之间经过的毫秒数来测量时间。例如，你可能会遇到 2001 年 1 月 1 日这个日期，并想：“啊，是的，新千年的开始。”然而，JavaScript 遇到该日期想的是“978220800000”。
+- 在 JavaScript 世界中，时间始于格林尼治标准时间 1970 年 1 月 1 日午夜。之前的日期在毫秒上为负值。
+- 由于你的 JavaScript 程序运行在用户的浏览器中，日期和时间几乎总是用户的本地日期和时间。也就是说，你的脚本的日期和时间将不是你页面所在服务器的时间。这意味着你永远无法知道用户查看你页面时是什么时间。
 
 ### 学习 Date 对象使用的参数
 
@@ -2957,34 +2846,32 @@ const date = new Date();
 
 | 方法语法 | 返回 |
 |---|---|
-| getFullYear() | 四位数年份（1999、2000 及以后） |
-| getMonth() | 月份；从 0（一月）到 11（十二月） |
-| getDate() | 月中的几；从 1 到 31 |
-| getDay() | 星期几；从 0（星期日）到 6（星期六） |
-| getHours() | 小时；从 0（午夜）到 23（晚上 11:00 点） |
-| getMinutes() | 分钟；从 0 到 59 |
-| getSeconds() | 秒；从 0 到 59 |
-| getMilliseconds() | 毫秒；从 0 到 999 |
-| getTime() | 自 1970 年 1 月 1 日起的毫秒数 |
+| `getFullYear()` | 四位数年份（1999、2000 及以后） |
+| `getMonth()` | 月份；从 0（一月）到 11（十二月） |
+| `getDate()` | 月中的几日；从 1 到 31 |
+| `getDay()` | 星期几；从 0（星期日）到 6（星期六） |
+| `getHours()` | 小时；从 0（午夜）到 23（晚上 11:00 点） |
+| `getMinutes()` | 分钟；从 0 到 59 |
+| `getSeconds()` | 秒；从 0 到 59 |
+| `getMilliseconds()` | 毫秒；从 0 到 999 |
+| `getTime()` | 自 1970 年 1 月 1 日起的毫秒数 |
 
-### 设置
+### 设置日期
 
 进行日期运算时，通常需要更改现有 Date 对象的值。例如，电子商务脚本可能需要计算销售日期 90 天后的日期。简单的方法是创建一个 Date 对象，然后使用表达式或字面量来更改年份、月份或日期的其他组件。你可以通过表 8-5 所列的 Date 对象方法来实现。
 
- 表 8-5 设置日期的 Date 对象方法
+### 表 8-5 设置日期的 Date 对象方法
 
 | 方法语法 | 设置什么 |
 |---|---|
-| setFullYear(yyyy) | 四位数年份（1999、2000 及以后） |
-| setMonth(mth) | 月份；从 0（一月）到 11（十二月） |
-| setDate(dd) | 月中的几；从 1 到 31 |
-| setHours(hh) | 小时；从 0（午夜）到 23（晚上 11:00 点） |
-| setMinutes(mm) | 分钟；从 0 到 59 |
-| setSeconds(ss) | 秒；从 0 到 59 |
-| setMilliseconds(ms) | 毫秒；从 0 到 999 |
-| setTime(ms) | 自 1970 年 1 月 1 日起的毫秒数 |
-
-
+| `setFullYear(yyyy)` | 四位数年份（1999、2000 及以后） |
+| `setMonth(mth)` | 月份；从 0（一月）到 11（十二月） |
+| `setDate(dd)` | 月中的几日；从 1 到 31 |
+| `setHours(hh)` | 小时；从 0（午夜）到 23（晚上 11:00 点） |
+| `setMinutes(mm)` | 分钟；从 0 到 59 |
+| `setSeconds(ss)` | 秒；从 0 到 59 |
+| `setMilliseconds(ms)` | 毫秒；从 0 到 999 |
+| `setTime(ms)` | 自 1970 年 1 月 1 日起的毫秒数 |
 
 ## 第 9 章
 
@@ -2996,7 +2883,7 @@ const date = new Date();
 - 设置断点
 - 逐行执行 JavaScript 代码
 
-JavaScript 和现代网页浏览器提供了大量许多顶级的调试工具，可以减轻解决程序问题时的负担。在本章中，你将深入研究这些工具，探索它们如何帮助你发现并修复大多数编程错误。你还将研究许多技巧和方法，这些方法对于帮助你从源避免编码错误大有帮助。
+JavaScript 和现代网页浏览器提供了大量许多顶级的调试工具，可以减轻解决程序问题时的负担。在本章中，你将深入研究这些工具，探索它们如何帮助你发现并修复大多数编程错误。你还将研究许多技巧和方法，这些方法对于帮助你从源头避免编码错误大有帮助。
 
 ### 布局你的调试工具
 
@@ -3029,58 +2916,61 @@ JavaScript 和现代网页浏览器提供了大量许多顶级的调试工具，
 
 ### 调试 101：使用控制台
 
-如果你的网页运行异常——例如，页面空白或缺少元素——你应该检查你的 HTML 代码以确保它是正确的。（常见的 HTML 错误包括没有用大于号 (> ) 结束标签、未包含闭合标签以及属性值缺少闭合引号。）如果你的 HTML 检查无误，那么很有可能是你的 JavaScript 代码有问题。你如何知道呢？进入控制台窗口是你的第一步。
 
-控制台是一个交互式浏览器窗口，可以显示警告和错误、显示 console.log() 语句的输出，并允许你在无需运行整个脚本的情况下执行表达式和语句。控制台是浏览器最方便的调试工具之一，因此你需要学会操作它。
 
-#### 让控制台显示在屏幕上
+# 第 9 章 调试
+
+如果你的网页运行异常——例如，页面空白或缺少元素——你应该检查你的 HTML 代码以确保它是正确的。（常见的 HTML 错误包括没有用大于号（`>`）结束标签、未包含闭合标签以及属性值缺少闭合引号。）如果你的 HTML 检查无误，那么很有可能是你的 JavaScript 代码有问题。你如何知道呢？进入控制台窗口是你的第一步。
+
+控制台是一个交互式浏览器窗口，可以显示警告和错误、显示`console.log()`语句的输出，并允许你在无需运行整个脚本的情况下执行表达式和语句。控制台是浏览器最方便的调试工具之一，因此你需要学会操作它。
+
+## 让控制台显示在屏幕上
 
 要显示控制台，打开浏览开发工具，然后点击 Console 标签。你也可以使用以下键盘快捷键：
 
-- Windows 版 Chrome：按下 Ctrl+Shift+J。
-- Mac 版 Chrome：按下 Option+⌘J。
-- Windows 版 Firefox：按下 Ctrl+Shift+K。
-- Mac 版 Firefox：按下 Option+⌘K。
-- Microsoft Edge：按下 Ctrl+Shift+J。
-- Safari：按下 Option+⌘+C。
+- Windows 版 Chrome：按下`Ctrl+Shift+J`。
+- Mac 版 Chrome：按下`Option+⌘J`。
+- Windows 版 Firefox：按下`Ctrl+Shift+K`。
+- Mac 版 Firefox：按下`Option+⌘K`。
+- Microsoft Edge：按下`Ctrl+Shift+J`。
+- Safari：按下`Option+⌘+C`。
 
-#### 在控制台中打印程序数据
+## 在控制台中打印程序数据
 
-你可以使用特殊控制台对象的 `console.log()` 方法在控制台中打印文本和表达式值：
+你可以使用特殊控制台对象的`console.log()`方法在控制台中打印文本和表达式值：
 
 ```
 console.log(output)
 ```
 
-**注意**：output 是你想在控制台中打印的表达式。
+**注意**：`output`是你想在控制台中打印的表达式。
 
 输出表达式可以是文本字符串、变量、对象属性、函数结果，或这些者的任何组合。
 
-你还可以使用方便的 `console.table()` 方法以易读的表格格式输出值：
+你还可以使用方便的`console.table()`方法以易读的表格格式输出值：
 
 ```
 console.table(output)
 ```
 
-**注意**：output 是你想要在控制台中查看的数组或对象（以变量或字面量形式存在）。
+**注意**：`output`是你想要在控制台中查看的数组或对象（以变量或字面量形式存在）。
 
 为了调试，你通常使用控制台来关注属性的值。当脚本执行完成后，你可以打开控制台查看值。
 
-### 在控制台中运行代码
+## 在控制台中运行代码
 
-控制台的强大功能之一是它是交互式的，这意味着你不仅可以读取浏览器或 console.log() 生成的消息，还可以直接在控制台中输入代码。此功能有许多用途：
+控制台的强大功能之一是它是交互式的，这意味着你不仅可以读取浏览器或`console.log()`生成的消息，还可以直接在控制台中输入代码。此功能有许多用途：
 
 - 你可以尝试某些表达式以确定它们对脚本的影响。
 - 当脚本暂停时，你可以输出变量当前值。
 - 当脚本暂停时，你可以更改变量的值。例如，如果你注意到一个零值即将用作除数，你可以将该变量改为非零以避免脚本崩溃。
+- 当脚本暂停时，你可以运行函数或方法以判断它在当前条件下是否符合预期。
 
-当脚本暂停时，你可以运行函数或方法以判断它在当前条件下是否符合预期。
-
-每个浏览器的 Console 标签都包含一个文本框（通常由大于号 > 提示符标记），可以使用它输入表达式或语句。
+每个浏览器的 Console 标签都包含一个文本框（通常由大于号`>`提示符标记），可以使用它输入表达式或语句。
 
 ![](img/d7cbed725c071566e0fc4bb4166ff642_151_0.png)
 
-提示 你可以通过分号分隔每个语句，在控制台中执行多个语句。例如，你可以通过输入类似下面的语句来测试 for 循环：
+**提示**：你可以通过分号分隔每个语句，在控制台中执行多个语句。例如，你可以通过输入类似下面的语句来测试`for`循环：
 
 ```
 for (let i=1; i < 10; i += 1){console.log(i**2); console.log(i**3);}
@@ -3088,13 +2978,11 @@ for (let i=1; i < 10; i += 1){console.log(i**2); console.log(i**3);}
 
 ![](img/d7cbed725c071566e0fc4bb4166ff642_151_1.png)
 
-提示 如果你想在控制台中重复早前的代码执行，或者想运行一些与之前运行的代码非常相似的代码，可以调用你在当前浏览器会话中使用过的语句和表达式。按下向上箭头可以向上滚动之前执行的代码；按下向下箭头可以向前滚动代码。
+**提示**：如果你想在控制台中重复早前的代码执行，或者想运行一些与之前运行的代码非常相似的代码，可以调用你在当前浏览器会话中使用过的语句和表达式。按下向上箭头可以向上滚动之前执行的代码；按下向下箭头可以向前滚动代码。
 
-### 将代码进入中断模式
+## 将代码进入中断模式
 
-在中途暂停代码允许你检查某些元素，例如变量的当前值和
-
-属性。它还允许一次执行一条程序代码，以便你可以监控脚本的执行流程。
+在中途暂停代码允许你检查某些元素，例如变量的当前值和属性。它还允许一次执行一条程序代码，以便你可以监控脚本的执行流程。
 
 当你暂停代码时，JavaScript 会进入断点模式（break mode），这意味着浏览器会显示调试工具，并突出显示 JavaScript 即将执行的当前语句。图 9-2 显示了 Chrome 调试器（Sources 标签页）中处于断点模式的脚本。
 
@@ -3104,49 +2992,45 @@ for (let i=1; i < 10; i += 1){console.log(i**2); console.log(i**3);}
 
 脚本变量的当前值
 
-**图 9-2:** 当你调用断点模式时，网页浏览器会显示调试工具，并突出显示它即将执行的语句。
+**图 9-2**：当你调用断点模式时，网页浏览器会显示调试工具，并突出显示它即将执行的语句。
 
-### 调用断点模式
+## 调用断点模式
 
 JavaScript 提供了两种进入断点模式的方法：
 
 - 通过设置断点
-- 使用 `debugger` 语句
+- 使用`debugger`语句
 
-### 设置断点
+## 设置断点
 
 如果你大致知道某个地方发生了错误或逻辑缺陷，可以通过设置断点在脚本的特定语句进入断点模式。以下是设置断点的步骤：
 
-1. 显示你的 Web浏览器的开发者工具并切换到调试工具（例如 Chrome 中的 Sources 标签页）。
+1. 显示你的 Web 浏览器的开发者工具并切换到调试工具（例如 Chrome 中的 Sources 标签页）。
 2. 打开包含你要调试的 JavaScript 代码的文件。具体操作取决于你的浏览器：在 Chrome（以及大多数浏览器）中，你有两个选择：
-- 在左侧面板中，点击 HTML 文件（如果你的 JavaScript 代码位于 HTML 文件中的 `<script>` 元素内）或 JavaScript (.js) 文件（如果你的代码存在于外部 JavaScript 文件中）。
-- 按 Ctrl+P (Windows) 或 Cmd+P (macOS)，然后点击列表中出现的文件。
+   - 在左侧面板中，点击 HTML 文件（如果你的 JavaScript 代码位于 HTML 文件中的`<script>`元素内）或 JavaScript（.js）文件（如果你的代码存在于外部 JavaScript 文件中）。
+   - 按`Ctrl+P`（Windows）或`Cmd+P`（macOS），然后点击列表中出现的文件。
 3. 找到你想要进入断点模式的语句。JavaScript 将运行到该语句之前的每一行代码，但不包括该语句。
 4. 点击语句左侧的行号来设置断点，如图 9-3 所示。
 
-### 禁用断点
-
-“Whitier 杀杀了那条和谐大道，”Bert 不经心地回答道。
-
-生成一个新随机句子
+## 禁用断点
 
 ![](img/d7cbed725c071566e0fc4bb4166ff642_154_0.png)
 
 点击行号设置断点 取消选择以禁用断点 图 9-3: 点击行号
 
-图 9-3: 在浏览器的调试工具中，点击行号以在该语句上设置断点。
+**图 9-3**：在浏览器的调试工具中，点击行号以在该语句上设置断点。
 
 要移除断点，大多数浏览器提供了三种选择：
 
-- 要临时禁用断点，在“断点”（Breakpoints）列表中取消选择断点的复选框。
-- 要临时禁用所有断点，点击“禁用断点”（Deactivate Breakpoint）按钮。Chrome 版本的此按钮在此边边显示。再次点击此按钮可重新激活所有断点。
+- 要临时禁用断点，在"断点"（Breakpoints）列表中取消选择断点的复选框。
+- 要临时禁用所有断点，点击"禁用断点"（Deactivate Breakpoint）按钮。Chrome 版本的此按钮在此边边显示。再次点击此按钮可重新激活所有断点。
 - 要移除断点，点击语句的行号。
 
-# 添加 `debugger` 语句
+## 添加 `debugger` 语句
 
-在开发网页时，你通常会通过发送各种测试值或在不同条件下尝试测试脚本的健壮性。在许多情况下，你可能希望进入断点模式以确保一切正常。你可以在特定语句处设置断点，但如果你关闭文件，断点将会丢失。对于更持久的方法，你可以在脚本中包含一个 `debugger` 语句。每当 JavaScript 遇到 `debugger` 语句时，会自动进入断点模式。
+在开发网页时，你通常会通过发送各种测试值或在不同条件下尝试测试脚本的健壮性。在许多情况下，你可能希望进入断点模式以确保一切正常。你可以在特定语句处设置断点，但如果你关闭文件，断点将会丢失。对于更持久的方法，你可以在脚本中包含一个`debugger`语句。每当 JavaScript 遇到`debugger`语句时，会自动进入断点模式。
 
-这里有一段包含 `debugger` 语句的代码：
+这里有一段包含`debugger`语句的代码：
 
 ```javascript
 // 将句子添加到 <div> 中
@@ -3158,14 +3042,14 @@ const randomBlue = parseInt(Math.random() * 128);
 debugger;
 ```
 
-### 退出断点模式
+## 退出断点模式
 
 要退出断点模式，你可以在浏览器的调试工具中使用以下方法之一：
 
-- 点击“恢复”（Resume）按钮。Chrome 版本的此按钮在此边边显示。
-- 按浏览器的“恢复”快捷键。在 Chrome（以及大多数浏览器）中，按 F8 或按 Ctrl+\ (Windows) 或 Cmd+\ (macOS)。
+- 点击"恢复"（Resume）按钮。Chrome 版本的此按钮在此边边显示。
+- 按浏览器的"恢复"快捷键。在 Chrome（以及大多数浏览器）中，按`F8`或按`Ctrl+\`（Windows）或`Cmd+\`（macOS）。
 
-### 逐行执行代码
+## 逐行执行代码
 
 常见的（也是最实用的）调试技术之一是一次执行一条语句地逐行通过代码。这样做让你感受程序的流程，以确保循环和函数调用等操作执行正常。你可以使用四种技术：
 
@@ -3183,12 +3067,12 @@ debugger;
 
 要一次执行一条语句地通过代码，请设置一个断点，然后在代码进入断点模式后，执行以下操作之一来单执行单条语句：
 
-- 点击“单步”（Step）按钮。Chrome 版本的此按钮在此边边显示。
-- 按浏览器的“单步”快捷键。在 Chrome 中（大多数浏览器，Firefox 除外，Firefox 在编写本文时尚不支持“单步”；请改用“单入”按钮），按 F9。
+- 点击"单步"（Step）按钮。Chrome 版本的此按钮在此边边显示。
+- 按浏览器的"单步"快捷键。在 Chrome 中（大多数浏览器，Firefox 除外，Firefox 在编写本文时尚不支持"单步"；请改用"单入"按钮），按`F9`。
 
-继续单步执行，直到脚本结束或直到你准备好恢复正常执行（通过点击“恢复”）。
+继续单步执行，直到脚本结束或直到你准备好恢复正常执行（通过点击"恢复"）。
 
-# 单入某些代码
+### 单入某些代码
 
 在所有主流浏览器中（Firefox 除外），单入某些代码与一次执行一条语句通过代码完全相同。区别在于当语句异步执行时（即它在延迟后执行操作，而不是立即执行）。
 
@@ -3199,21 +3083,21 @@ debugger;
 2 console.log('Inside the setTimeout() block internal!');
 3 }, 5000);
 4 console.log('Outside the setTimeout() block internal!');
-``````
+```
 
-这段代码使用 `setTimeout()` 在五秒后执行一个匿名函数。假设你在 `setTimeout()` 语句（第 1 行）进入断点模式。使用“单步”（Step）和“单入”（Step Into）有什么区别？
+这段代码使用`setTimeout()`在五秒后执行一个匿名函数。假设你在`setTimeout()`语句（第 1 行）进入断点模式。使用"单步"（Step）和"单入"（Step Into）有什么区别？
 
-- **单步**: 点击“单步”按钮不会带你进入第 2 行，因为你可能……因为 `setTimeout()` 是异步的，单步实际上忽略了匿名函数并直接带你进入第 4 行。
-- **单入**: 点击“单入”按钮*会*带你进入第 2 行，但在指定的延迟之后（在本例中为五秒）。然后你可以根据需要逐行执行该匿名函数。
+- **单步**：点击"单步"按钮不会带你进入第 2 行，因为你可能……因为`setTimeout()`是异步的，单步实际上忽略了匿名函数并直接带你进入第 4 行。
+- **单入**：点击"单入"按钮`会`带你进入第 2 行，但在指定的延迟之后（在本例中为五秒）。然后你可以根据需要逐行执行该匿名函数。
 
 要单入代码，请设置一个断点，然后在代码进入断点模式后，执行以下操作之一：
 
-- 点击“单入”（Step Into）按钮。Chrome 版本的此按钮在此边边显示。
-- 按浏览器的“单入”快捷键。在 Chrome（以及大多数浏览器）中，按 F11 或按 Ctrl+ (Windows) 或 Cmd+ (macOS)。
+- 点击"单入"（Step Into）按钮。Chrome 版本的此按钮在此边边显示。
+- 按浏览器的"单入"快捷键。在 Chrome（以及大多数浏览器）中，按`F11`或按`Ctrl+`（Windows）或`Cmd+`（macOS）。
 
 ![](img/d7cbed725c071566e0fc4bb4166ff642_158_0.png)
 
-注意 我在这里对“单入”的描述在编写本文时不适用于 Firefox。相反，Firefox 的“单入”功能类似于我在上一节描述的“单步”功能。
+**注意**：我在这里对"单入"的描述在编写本文时不适用于 Firefox。相反，Firefox 的"单入"功能类似于我在上一节描述的"单步"功能。
 
 ### 跨过某些代码
 
@@ -3221,23 +3105,19 @@ debugger;
 
 跨过函数，首先执行代码到达你想跳过的函数调用，或者在函数调用处设置断点并刷新网页。当你处于断点模式时，可以使用以下任何一种技术来跨过函数：
 
-- 点击“跨过”（Step Over）按钮。Chrome 版本的此按钮在此边边显示。
-- 按浏览器的“跨过”快捷键。在 Chrome（以及大多数浏览器）中，按 F10 或按 Ctrl+' (Windows) 或 Cmd+' (macOS)。
+- 点击"跨过"（Step Over）按钮。Chrome 版本的此按钮在此边边显示。
+- 按浏览器的"跨过"快捷键。在 Chrome（以及大多数浏览器）中，按`F10`或按`Ctrl+'`（Windows）或`Cmd+'`（macOS）。
 
 ### 跳出某些代码
 
+我总是无意中进入了那些我本想跳过的函数。如果函数很短，我就直接逐行执行它，直到回到原始代码。然而，如果函数很长，我不想浪费时间逐行执行每一个语句。相反，我通过以下任何方法调用"跳出"（Step Out）功能：
 
-
-我总是无意中进入了那些我本想跳过的函数。如果函数很短，我就直接逐行执行它，直到回到原始代码。然而，如果函数很长，我不想浪费时间逐行执行每一个语句。相反，我通过以下任何方法调用“跳出”（Step Out）功能：
-
-- **点击“跳出”按钮。** Chrome 版本的此按钮显示在侧边栏。
-
-- **按下浏览器的“跳出”快捷键。** 在 Chrome（以及大多数浏览器）中，按下 Shift+F11 或按下 Ctrl+Shift+； (Windows) 或 ⌘ Shift+； (macOS)。
+- **点击"跳出"按钮。** Chrome 版本的此按钮显示在侧边栏。
+- **按下浏览器的"跳出"快捷键。** 在 Chrome（以及大多数浏览器）中，按下`Shift+F11`或按下`Ctrl+Shift+;`（Windows）或`⌘ Shift+;`（macOS）。
 
 JavaScript 会执行函数的剩余部分，然后在函数调用后的第一行重新进入断点模式。
 
-## 第 10 章
-处理表单数据
+# 第 10 章 处理表单数据
 
 - 本章内容
 - 编写文本框
@@ -3245,11 +3125,11 @@ JavaScript 会执行函数的剩余部分，然后在函数调用后的第一行
 - 监控和触发表单事件
 - 处理表单数据
 
-在本章中，你将学习如何通过将 HTML 表单接入某些 JavaScript 代码来“接线”。你将探索各种与表单相关的对象，然后直接开始处理文本字段、复选框、单选按钮和选择列表。你还将深入探索表单事件的有用世界，甚至学习如何使用快捷键增强你的表单控件。最后，你将大显身，学习如何使用 Web Storage API 存储表单数据。
+在本章中，你将学习如何通过将 HTML 表单接入某些 JavaScript 代码来"接线"。你将探索各种与表单相关的对象，然后直接开始处理文本字段、复选框、单选按钮和选择列表。你还将深入探索表单事件的有用世界，甚至学习如何使用快捷键增强你的表单控件。最后，你将大显身，学习如何使用 Web Storage API 存储表单数据。
 
-### 编写文本字段
+## 编写文本字段
 
-基于文本的字段是最常用的表单元素，大部分都使用 `<input>` 标签。`input` 元素拥有大量属性，但从编码的角度来看，你通常只感兴趣其中四个：
+基于文本的字段是最常用的表单元素，大部分都使用`<input>`标签。`input`元素拥有大量属性，但从编码的角度来看，你通常只感兴趣其中四个：
 
 ```html
 <input id="textField" type="text" name="txtName" value="defaultValue">
@@ -3257,22 +3137,22 @@ JavaScript 会执行函数的剩余部分，然后在函数调用后的第一行
 
 以下是各个部分的含义：
 
-- textId：文本字段的唯一标识符
-- textType：你想要在表单使用的文本字段类型
-- textName：分配给字段的名称
-- textValue：字段的初始值（如果有的话）
+- `textId`：文本字段的唯一标识符
+- `textType`：你想要在表单使用的文本字段类型
+- `textName`：分配给字段的名称
+- `textValue`：字段的初始值（如果有的话）
 
 ### 按字段类型引用
 
-一种常见的表单脚本技术是对每个相同类型的字段执行某种操作。例如，你可能想对所有 URL 字段应用样式。这里是用于选择所有给定类型 `input` 元素的 JavaScript 选择器：
+一种常见的表单脚本技术是对每个相同类型的字段执行某种操作。例如，你可能想对所有 URL 字段应用样式。这里是用于选择所有给定类型`input`元素的 JavaScript 选择器：
 
 ```javascript
 document.querySelectorAll('input[type=fieldType]')
 ```
 
-注意：`fieldType` 是你想要选择的类型属性值，例如 text 或 url。
+**注意**：`fieldType`是你想要选择的类型属性值，例如`text`或`url`。
 
-这里是一个示例，JavaScript 返回所有使用类型 `url` 的 `input` 元素的集合：
+这里是一个示例，JavaScript 返回所有使用类型`url`的`input`元素的集合：
 
 HTML：
 
@@ -3298,7 +3178,9 @@ const urlFields = document.querySelectorAll('input[type=url]');
 console.log(urlFields);
 ```
 
-### 获取文本字段值你的你的脚本可以使用字段对象的某个与值相关的属性来获取任何文本字段的当前值：
+### 获取文本字段值
+
+你的脚本可以使用字段对象的某个与值相关的属性来获取任何文本字段的当前值：
 
 ```javascript
 field.value
@@ -3326,7 +3208,7 @@ console.log(searchString);
 
 ### 设置文本字段值
 
-要更改文本字段的值，请将新字符串分配给字段对象的 `value` 属性：
+要更改文本字段的值，请将新字符串分配给字段对象的`value`属性：
 
 ```javascript
 field.value = value
@@ -3334,8 +3216,8 @@ field.value = value
 
 以下是各个部分的含义：
 
-- field：你想操作的表单字段对象的引用
-- value：你想要分配给文本字段的字符串
+- `field`：你想操作的表单字段对象的引用
+- `value`：你想要分配给文本字段的字符串
 
 这里有一个示例：
 
@@ -3345,8 +3227,7 @@ HTML：
 <label for="homepage-field">
   Type your homepage address:
 </label>
-<input id="homepage-field" name="homepage" type="url"
-value="HTTPS://PAULMCFEDRIES.COM/**/">
+<input id="homepage-field" name="homepage" type="url" value="HTTPS://PAULMCFEDRIES.COM/**/">
 ```
 
 JavaScript：
@@ -3357,13 +3238,13 @@ const homepageURL = homepageField.value;
 homepageField.value = homepageURL.toLowerCase();
 ```
 
-HTML 定义了一个类型为 `url` 的 `input` 元素，其默认值为全大写字母。JavaScript 代码获取一个 URL，将其转换为全小写字母，然后返回到同一个 `url` 字段。如图 10-1 所示，文本框现在显示为全小写字母。
+HTML 定义了一个类型为`url`的`input`元素，其默认值为全大写字母。JavaScript 代码获取一个 URL，将其转换为全小写字母，然后返回到同一个`url`字段。如图 10-1 所示，文本框现在显示为全小写字母。
 
-**图 10-1**：脚本将 `input` 元素的默认文本转换为全小写字母。
+**图 10-1**：脚本将`input`元素的默认文本转换为全小写字母。
 
-### 编写复选框
+## 编写复选框
 
-我们在 Web 表单中使用复选框来切换设置的开启（即复选框被选中）和关闭状态。你通过在表单中包含以下版本的 `<input>` 标签来创建复选框：
+我们在 Web 表单中使用复选框来切换设置的开启（即复选框被选中）和关闭状态。你通过在表单中包含以下版本的`<input>`标签来创建复选框：
 
 ```html
 <input id="isChecked" type="checkbox" name="checkName" value="checkValue">
@@ -3371,8 +3252,8 @@ HTML 定义了一个类型为 `url` 的 `input` 元素，其默认值为全大�
 
 这里是各个部分：
 
-- isChecked：复选框的唯一标识符
-- checked：当此可选属性存在时，复选框初始为选中
+- `isChecked`：复选框的唯一标识符
+- `checked`：当此可选属性存在时，复选框初始为选中
 
 ### 引用复选框
 
@@ -3382,9 +3263,9 @@ HTML 定义了一个类型为 `url` 的 `input` 元素，其默认值为全大�
 document.querySelectorAll('input[type=checkbox]')
 ```
 
- 获取复选框状态
+### 获取复选框状态
 
-你的代码想要知道复选框是否被选中。这是 `checked` 属性：
+你的代码想要知道复选框是否被选中。这是`checked`属性：
 
 ```javascript
 checkbox.checked
@@ -3410,11 +3291,11 @@ if (autoCheckBox.checked) {
 }
 ```
 
-JavaScript 代码将复选框的引用存储在 `autoCheckBox` 变量中。`if` 语句检查 `checked` 属性并在控制台中输出。
+JavaScript 代码将复选框的引用存储在`autoCheckBox`变量中。`if`语句检查`checked`属性并在控制台中输出。
 
 ### 设置复选框状态
 
-要将复选框设置为选中或取消选中，请将布尔表达式分配给 `checked` 属性：
+要将复选框设置为选中或取消选中，请将布尔表达式分配给`checked`属性：
 
 ```javascript
 checkbox.checked = true
@@ -3440,11 +3321,11 @@ document.querySelector('form').addEventListener('click', event => {
 });
 ```
 
-此事件处理器在点击表单内的任何内容时运行，并将点击事件作为参数传递。然后代码使用 `:checked` 选择器返回所有具有 `checked` 属性的复选框元素集合，`length` 告诉你有多少个。
+此事件处理器在点击表单内的任何内容时运行，并将点击事件作为参数传递。然后代码使用`:checked`选择器返回所有具有`checked`属性的复选框元素集合，`length`告诉你有多少个。
 
-### 编写单选按钮
+## 编写单选按钮
 
-你使用以下 `<input>` 标签变体创建单选按钮：
+你使用以下`<input>`标签变体创建单选按钮：
 
 ```html
 <input id="radioId" type="radio" name="radioGroup" value="radioValue" [checked]>
@@ -3452,10 +3333,10 @@ document.querySelector('form').addEventListener('click', event => {
 
 以下是各个部分：
 
-- radioId：单选按钮的唯一标识符
-- radioGroup：分配给单选按钮组的名称。使用相同名称的单选按钮都属于该组。
-- radioValue：分配给单选按钮的值。如果在提交表单时该单选按钮被选中，则提交中将包含该值。
-- checked：当此可选属性存在时，单选按钮初始为选中。
+- `radioId`：单选按钮的唯一标识符
+- `radioGroup`：分配给单选按钮组的名称。使用相同名称的单选按钮都属于该组。
+- `radioValue`：分配给单选按钮的值。如果在提交表单时该单选按钮被选中，则提交中将包含该值。
+- `checked`：当此可选属性存在时，单选按钮初始为选中。
 
 ### 引用单选按钮
 
@@ -3464,8 +3345,6 @@ document.querySelector('form').addEventListener('click', event => {
 ```javascript
 document.querySelectorAll('input[type=radio]')
 ```
-
-
 
 如果你想获取特定表单中的单选按钮，可以使用表单 id 值的后代选择器或子选择器：
 
@@ -3479,21 +3358,21 @@ document.querySelectorAll('#formid input[type=radio]')
 document.querySelectorAll('#formid > input[type=radio]')
 ```
 
-如果你只需要特定组中的单选按钮，使用以下 JavaScript 选择器，其中 `radioGroup` 是该组的共同名称：
+如果你只需要特定组中的单选按钮，使用以下 JavaScript 选择器，其中`radioGroup`是该组的共同名称：
 
 ```javascript
 document.querySelectorAll('[input[name=radioGroup]')
 ```
 
-## 获取单选按钮状态
+### 获取单选按钮状态
 
-如果你的代码需要知道某个单选按钮是否被选中或未选中，你需要确定单选按钮的状态。你可以通过检查单选按钮的 `checked` 属性来实现，如下：
+如果你的代码需要知道某个单选按钮是否被选中或未选中，你需要确定单选按钮的状态。你可以通过检查单选按钮的`checked`属性来实现，如下：
 
 ```
 radio.checked
 ```
 
-如果单选按钮被选中，`checked` 属性返回 `true`；如果未选中则返回 `false`。
+如果单选按钮被选中，`checked`属性返回`true`；如果未选中则返回`false`。
 
 例如，考虑以下 HTML：
 
@@ -3502,38 +3381,37 @@ radio.checked
   <fieldset>
     <legend>
       选择交付方式
-    </legend>
+   </legend>
     <label>
       <input type="radio" id="carrier-pigeon" name="delivery" value="pigeon" checked>信鸽快递
-    </label>
+   </label>
     <label>
       <input type="radio" id="pony-express" name="delivery" value="pony">驿马快递
-    </label>
+   </label>
     <label>
       <input type="radio" id="snail-mail" name="delivery" value="postal">蜗政
-    </label>
-  </fieldset>
+   </label>
+ </fieldset>
 </form>
 ```
 
 ```html
 <label>
-  <input type="radio" id="some-punk" name="delivery"
-value="bikecourier">骑自行车的某个浪子
+  <input type="radio" id="some-punk" name="delivery" value="bikecourier">骑自行车的某个浪子
 </label>
 </fieldset>
 </form>
 ```
 
-如果你的代码需要知道组中哪一个单选按钮被选中，可以通过对该组应用 `:checked` 选择器，然后获取返回对象的 `value` 属性：
+如果你的代码需要知道组中哪一个单选按钮被选中，可以通过对该组应用`:checked`选择器，然后获取返回对象的`value`属性：
 
 ```javascript
 const deliveryMethod = document.querySelector('input[name=delivery]:checked').value;
 ```
 
-## 设置单选按钮状态
+### 设置单选按钮状态
 
-要将单选按钮字段设置为选中或未选中状态，请为 `checked` 属性分配一个布尔表达式：
+要将单选按钮字段设置为选中或未选中状态，请为`checked`属性分配一个布尔表达式：
 
 ```
 radio.checked = true|false
@@ -3546,13 +3424,13 @@ const firstRadioButton = document.querySelectorAll('input[name=delivery]')[0];
 firstRadioButton.checked = true;
 ```
 
-此代码使用 `querySelectorAll()` 返回交付组中所有单选按钮的 `NodeList` 集合；然后使用 `[0]` 引用中的第一个元素。接着将该元素的 `checked` 属性设置为 `true`。
+此代码使用`querySelectorAll()`返回交付组中所有单选按钮的`NodeList`集合；然后使用`[0]`引用中的第一个元素。接着将该元素的`checked`属性设置为`true`。
 
-### 编写选择列表
+## 编写选择列表
 
-选择列表是 HTML 表单中常见的元素，因为它们允许 开发者在一个紧凑的控件中显示大量的选择，而大多数用户都知道如何操作。
+选择列表是 HTML 表单中常见的元素，因为它们允许开发者在一个紧凑的控件中显示大量的选择，而大多数用户都知道如何操作。
 
-要创建列表容器，使用 `<select>` 标签：
+要创建列表容器，使用`<select>`标签：
 
 ```html
 <select id="selectId" name="selectName" size="selectSize" [multiple]>
@@ -3560,12 +3438,12 @@ firstRadioButton.checked = true;
 
 以下是各个部分：
 
-- selectId：选择列表的唯一标识符。
-- selectName：你想要分配给选择列表的名称。
-- selectSize：列表框中可见的行数（可选）。如果你省略此值，浏览器将把列表显示为下拉框。
-- multiple：当此可选属性存在时，允许用户在列表中选择多个选项。
+- `selectId`：选择列表的唯一标识符。
+- `selectName`：你想要分配给选择列表的名称。
+- `selectSize`：列表框中可见的行数（可选）。如果你省略此值，浏览器将把列表显示为下拉框。
+- `multiple`：当此可选属性存在时，允许用户在列表中选择多个选项。
 
-对于列表中的每个项目，在 `<select>` 和 `</select>` 标签之间添加 `<option>` 标签：
+对于列表中的每个项目，在`<select>`和`</select>`标签之间添加`<option>`标签：
 
 ```html
 <option value="optionValue" [selected]>
@@ -3573,18 +3451,18 @@ firstRadioButton.checked = true;
 
 以下是各个部分：
 
-- optionValue：你想要分配给列表选项的值。
-- selected：当此可选属性存在时，列表选项初始状态为被选中。
+- `optionValue`：你想要分配给列表选项的值。
+- `selected`：当此可选属性存在时，列表选项初始状态为被选中。
 
-## 引用选择列表选项
+### 引用选择列表选项
 
-如果你的代码需要处理选择列表中的所有选项，请使用选择列表对象的 `options` 属性：
+如果你的代码需要处理选择列表中的所有选项，请使用选择列表对象的`options`属性：
 
 ```javascript
 document.querySelector(list).options
 ```
 
-要处理列表中的特定选项，使用 JavaScript 的方括号运算符 `[]` 来指定选项位置的索引：
+要处理列表中的特定选项，使用 JavaScript 的方括号运算符`[]`来指定选项位置的索引：
 
 ```javascript
 document.querySelector(list).options[n]
@@ -3592,10 +3470,10 @@ document.querySelector(list).options[n]
 
 以下是各个部分：
 
-- **list**：你想要操作的 select 元素。
-- **n**：选项在列表中的索引（0 是第一个选项，1 是第二个，以此此类推）。
+- `list`：你想要操作的 select 元素。
+- `n`：选项在列表中的索引（0 是第一个选项，1 是第二个，以此此类推）。
 
-要获取选项的文本（显示在列表中的内容），使用 `text` 属性：
+要获取选项的文本（显示在列表中的内容），使用`text`属性：
 
 ```javascript
 document.querySelector(list).options[2].text
@@ -3603,13 +3481,13 @@ document.querySelector(list).options[2].text
 
 ### 获取被选选项
 
-如果你的代码需要知道某个特定的单选按钮是否被选中或未选中，检查 `checked` 属性，如下：
+如果你的代码需要知道某个特定的单选按钮是否被选中或未选中，检查`checked`属性，如下：
 
 ```
 option.checked
 ```
 
-如果单选按钮被选中，`checked` 属性返回 `true`；如果未选中则返回 `false`。
+如果单选按钮被选中，`checked`属性返回`true`；如果未选中则返回`false`。
 
 例如，考虑以下选择列表：
 
@@ -3624,62 +3502,44 @@ option.checked
 </select>
 ```
 
-如果你的代码需要知道组中的哪个选项被选中，可以通过对该组应用 `:checked` 选择器来实现：
+如果你的代码需要知道组中的哪个选项被选中，可以通过对该组应用`:checked`选择器来实现：
 
 ```javascript
 const selectedOption = document.querySelector('input[name=color]:checked');
 ```
 
-（注：提供的 OCR 文本在后半部分存在大量的重复和交织。我已经根据提示提供的文本片段重构了逻辑流，以确保技术文档的连贯性。）*
+## 表单事件
 
-
-
-html
-<label for="pwd">密码:</label>
-<input id="pwd" type="password" name="password">
-</form>
-```
-
-# JavaScript
-
-```javascript
-document.querySelector('form').addEventListener('click', () => {
-  console.log('感谢点击表单！');
-});
-```
-
-此示例监听整个表单元素的点击事件，但你也可以为按钮、输入元素、复选框、单选按钮等元素创建点击事件处理程序。
-
-# 设置焦点
+### 设置焦点
 
 一个可以提高表单页面用户体验的简单功能，是在页面加载时为第一个表单字段设置焦点。设置焦点可以省去用户在第一个字段内进行那个恼人的点击操作。
 
-要实现这一点，请在你希望启动时获得焦点的元素上运行 JavaScript 的 `focus()` 方法：
+要实现这一点，请在你希望启动时获得焦点的元素上运行 JavaScript 的`focus()`方法：
 
 ```
 field.focus()
 ```
 
-这是一个示例，展示如何在启动时为 id 为 `user` 的文本字段设置焦点：
+这是一个示例，展示如何在启动时为 id 为`user`的文本字段设置焦点：
 
-HTML:
+HTML：
 
 ```html
 <form>
-<label for="user">用户名:</label>
+<label for="user">用户名</label>
 <input id="user" type="text" name="username">
-<label for="pwd">密码:</label>
+<label for="pwd">密码</label>
 <input id="pwd" type="password" name="password">
 </form>
 ```
 
-# JavaScript
+JavaScript：
 
 ```javascript
 document.querySelector('#user').focus();
 ```
 
-# 监控焦点事件
+### 监控焦点事件
 
 与其设置焦点，你可能更想监控特定字段何时获得焦点（例如，通过用户点击或使用 Tab 键进入该字段）。你可以通过在字段上设置一个焦点事件处理程序来监控这一点：
 
@@ -3697,15 +3557,15 @@ document.querySelector('#user').addEventListener('focus', () => {
 });
 ```
 
-# 监控失去焦点（blur）事件
+### 监控失去焦点（blur）事件
 
-设置元素焦点的相反操作是让元素失去焦点（blur），这会移除元素上的焦点。你可以通过在元素上运行 `blur()` 方法来让元素失去焦点，导致其失去焦点：
+设置元素焦点的相反操作是让元素失去焦点（blur），这会移除元素上的焦点。你可以通过在元素上运行`blur()`方法来让元素失去焦点，导致其失去焦点：
 
 ```
 field.blur()
 ```
 
-然而，与其让元素失去焦点，你可能更会在特定元素失去焦点时运行某些代码（例如，通过用户点击或 Tab 键离开字段）。你可以通过设置 `blur()` 事件处理程序来监控特定的失去焦点元素：
+然而，与其让元素失去焦点，你可能更会在特定元素失去焦点时运行某些代码（例如，通过用户点击或 Tab 键离开字段）。你可以通过设置`blur()`事件处理程序来监控特定的失去焦点元素：
 
 ```javascript
 field.addEventListener('blur', () => {
@@ -3723,13 +3583,12 @@ document.querySelector('#user').addEventListener('blur', () => {
 
 ### 监听元素变化
 
-表单最有用的事件之一是 `change` 事件，当字段的值或状态以某种方式被修改时，该事件就会触发。该事件的触发取决于元素的类型：
+表单最有用的事件之一是`change`事件，当字段的值或状态以某种方式被修改时，该事件就会触发。该事件的触发取决于元素的类型：
 
-- 对于 `textarea` 元素和各种文本相关的输入元素，当元素失去焦点时会触发 `change` 事件。
+- 对于`textarea`元素和各种文本相关的输入元素，当元素失去焦点时会触发`change`事件。
+- 对于复选框、单选按钮、选择列表和选择器，当用户点击元素以修改选择或值时，`change`事件会立即触发。
 
-- 对于复选框、单选按钮、选择列表和选择器，当用户点击元素以修改选择或值时，`change` 事件会立即触发。
-
-你通过设置一个 `change()` 事件处理程序来监听字段的更改事件：
+你通过设置一个`change()`事件处理程序来监听字段的更改事件：
 
 ```javascript
 field.addEventListener('change', () => {
@@ -3739,14 +3598,14 @@ field.addEventListener('change', () => {
 
 这是一个示例：
 
-# HTML:
+HTML：
 
 ```html
 <label for="bgcolor">选择背景颜色</label>
 <input id="bgcolor" type="color" name="bg-color" value="#ffffff">
 ```
 
-# JavaScript:
+JavaScript：
 
 ```javascript
 document.querySelector('#bgcolor').addEventListener('change', (event) => {
@@ -3755,29 +3614,29 @@ document.querySelector('#bgcolor').addEventListener('change', (event) => {
 });
 ```
 
-HTML 代码设置了一个颜色选择器。JavaScript 代码为颜色选择器应用了 `change` 事件处理程序。当选择器上触发 `change` 事件时，代码通过引用 `event.target.value` 将新颜色值存储在 `backgroundColor` 变量中，其中 `event.target` 指向绑定监听器的元素（在此例为颜色选择器）。代码随后该颜色应用到 `body` 元素的 `backgroundColor` 属性。
+HTML 代码设置了一个颜色选择器。JavaScript 代码为颜色选择器应用了`change`事件处理程序。当选择器上触发`change`事件时，代码通过引用`event.target.value`将新颜色值存储在`backgroundColor`变量中，其中`event.target`指向绑定监听器的元素（在此例为颜色选择器）。代码随后该颜色应用到`body`元素的`backgroundColor`属性。
 
 ### 处理表单数据
 
-我之前没有涵盖的一个表单事件，它是非常重要的：`submit` 事件，它在表单数据准备发送到服务器时触发。
+我之前没有涵盖的一个表单事件，它是非常重要的：`submit`事件，它在表单数据准备发送到服务器时触发。
 
 然而，如果你的脚本仅在本地处理表单数据——也就是说，你不需要将数据发送到服务器——那么你就不需要担心提交表单。相反，在表单中添加一个按钮，并使用该按钮的点击事件处理程序以你需要的任何方式处理表单数据会更加直接。
 
 这是一个示例：
 
-HTML:
+HTML：
 
 ```html
 <form>
   <fieldset>
     <legend>
       设置
-    </legend>
+   </legend>
     <label for="background-color">选择背景颜色</label>
     <input id="background-color" type="color" name="bg-color" value="#ffffff">
     <label for="text-color">选择文字颜色</label>
     <input id="text-color" type="color" name="text-color" value="#000000">
-    <label for="font-stack">选择字体:</label>
+    <label for="font-stack">选择字体</label>
     <select id="font-stack" name="font-stack">
       <option value="Georgia, Times New Roman, serif">已选衬线</option>
       <option value="Verdana, Tahoma, sans-serif">无衬线</option>
@@ -3786,13 +3645,13 @@ HTML:
       <option value="Script MT, cursive">手体</option>
       <option value="Luminari, fantasy">幻想</option>
       <option value="Impact, charcoal">冲击</option>
-    </select>
+   </select>
     <button>保存设置</button>
-  </fieldset>
+ </fieldset>
 </form>
 ```
 
-# JavaScript:
+JavaScript：
 
 ```javascript
 // 监听 #background-color 选择器的变化
@@ -3800,16 +3659,19 @@ document.querySelector('#background-color').addEventListener('change', function(
   const backgroundColor = this.value;
   document.body.backgroundColor = backgroundColor;
 });
+
 // 监听 #text-color 选择器的变化
 document.querySelector('#text-color').addEventListener('change', function() {
   const textColor = this.value;
   document.body.color = textColor;
 });
+
 // 监听 #font-stack 选择列表的变化
 document.querySelector('#font-stack').addEventListener('change', function() {
   const fontStack = this.selectedOptions[0].value;
   document.body.fontFamily = fontStack;
 });
+
 // 监听按钮被点击
 document.querySelector('button').addEventListener('click', () => {
   // 将数据存储在 JavaScript 对象中
@@ -3818,23 +3680,21 @@ document.querySelector('button').addEventListener('click', () => {
     textColor: document.querySelector('#text-color').value,
     fontStack: document.querySelector('#font-stack').selectedOptions[0].value
   };
+
   // 将设置保存到本地存储中
   localStorage.setItem('user-settings', JSON.stringify(settings));
 });
 ```
 
-# 第 11 章
-### 十种调试策略
+# 第 11 章 十种调试策略
 
 - 使用控制台、断点和其他开发辅助工具进行调试
 - 编写易于调试的代码
 - 巧妙利用注释进行调试
 
-### 进入你的开发工具
+## 进入你的开发工具
 
-所有的网页页面调试都从访问浏览器开发工具开始。在每个浏览器中，打开开发工具最快的方法是右键点击页面元素并选择“检查”。你也可以按 Ctrl+Shift+I (Windows) 或 Option+I (macOS)。
-
-
+所有的网页页面调试都从访问浏览器开发工具开始。在每个浏览器中，打开开发工具最快的方法是右键点击页面元素并选择"检查"。你也可以按`Ctrl+Shift+I`（Windows）或`Option+I`（macOS）。
 
 ## 控制台是你最好的调试伙伴
 
@@ -3844,6 +3704,12 @@ document.querySelector('button').addEventListener('click', () => {
 console.log(output);
 ```
 
+
+
+# JavaScript 调试与开发指南
+
+## 控制台输出
+
 将 `output` 替换为你想要在控制台中打印的表达式。输出表达式可以是文本字符串、变量、对象属性、函数结果，或这些者的任何组合。
 
 ## 给你的代码一个“休息”（断点）
@@ -3851,7 +3717,7 @@ console.log(output);
 暂停代码可以让你看到正在发生什么，并在控制台中运行某些命令。你有两种方法在执行中途暂停代码：
 
 - **设置断点。** 在开发者工具中，打开包含 JavaScript 代码的文件，找到你想要暂停的语句，然后点击该语句左侧的行号。
-- **添加 debugger 语句。** 在你的 JavaScript 代码中，在你想要暂停的语句之前的的一行添加 `debugger` 语句。
+- **添加 `debugger` 语句。** 在你的 JavaScript 代码中，在你想要暂停的语句之前的一行添加 `debugger` 语句。
 
 ### 逐行执行代码
 
@@ -3875,7 +3741,7 @@ console.log(output);
 
 ### 注释掉问题语句
 
-如果某个语句给你带来麻烦，你可以在行首放置两个斜杠（//）来临时禁用它。这告诉 JavaScript 将该行视为注释。如果你有多个语句需要跳过，可以在第一条语句的开头放置 `/*`，在最后一条语句的结尾放置 `*/`。
+如果某个语句给你带来麻烦，你可以在行首放置两个斜杠（`//`）来临时禁用它。这告诉 JavaScript 将该行视为注释。如果你有多个语句需要跳过，可以在第一条语句的开头放置 `/*`，在最后一条语句的结尾放置 `*/`。
 
 ### 使用注释记录你的脚本
 
@@ -3883,556 +3749,244 @@ console.log(output);
 
 ## 索引
 
-## 符号
+### 符号
 
-- - (减号), 27
-- " (引号)
+- `-` (减号), 27
+- `"` (引号)
   - 内部处理, 118-120
   - 字符串字面量, 28
-- ' (单引号)
-  - onclick 属性, 63
+- `'` (单引号)
+  - `onclick` 属性, 63
   - 字符串字面量, 28
-- / (除法运算符), 20
-- * (多行注释), 13-41
-- // (双斜杠), 13
-- ; (分号), 7
-- \ (反斜杠), 29
-- _ (下划线), 24
-- ` (反引号), 119
-- || (或运算符), 35
-- + (连接符号), 33
-- + (加号), 27
-- = (等号), 19-20
-- => (箭头函数), 70
-- ! (非运算符), 35
-- && (与运算符), 35
-- * (乘法符号), 32
-- [] (括号运算符), 150
-- {} (大括号) if 语句和，40-41 作为函数的一部分, 56
+- `/` (除法运算符), 20
+- `/*` (多行注释), 13-41
+- `//` (双斜杠), 13
+- `;` (分号), 7
+- `\` (反斜杠), 29
+- `_` (下划线), 24
+- `` ` `` (反引号), 119
+- `||` (或运算符), 35
+- `+` (连接符号), 33
+- `+` (加号), 27
+- `=` (等号), 19-20
+- `=>` (箭头函数), 70
+- `!` (非运算符), 35
+- `&&` (与运算符), 35
+- `*` (乘法符号), 32
+- `[]` (括号运算符), 150
+- `{}` (大括号)
+  - `if` 语句和, 40-41
+  - 作为函数的一部分, 56
 
-## A
+### A
 
-- - add() 方法, 95
-- addEvent.Listener() 方法, 100
-- after() 方法, 90
-- alert() 方法, 7-8
-- 与 运算符 (&&), 35
+- `add()` 方法, 95
+- `addEventListener()` 方法, 100
+- `after()` 方法, 90
+- `alert()` 方法, 7-8
+- `&&` (与运算符), 35
 - 匿名函数
   - 赋值给变量, 67-68
   - 概览, 66-70
   - 用替换函数调用, 68-70
-- append() 方法, 90
-  - 参数
-    - 定义, 61
-    - 用于 Date 对象, 124
-    - 函数, 56
-    - 位置, 93
+- `append()` 方法, 90
+- 参数
+  - 定义, 61
+  - 用于 `Date` 对象, 124
+  - 函数, 56
+  - 位置, 93
 - 算术赋值运算符, 32-33
 - 数组
   - 声明, 106
-  - 元素和 80
-  - 索引数字和 105
+  - 元素和, 80
+  - 索引数字和, 105
   - 迭代
-    - find() 方法, 112-114
-    - ForEach 方法, 109-110
-    - map() 方法, 110-111
-    - reduce() 方法, 111-112
-  - length 属性, 114
+    - `find()` 方法, 112-114
+    - `forEach()` 方法, 109-110
+    - `map()` 方法, 110-111
+    - `reduce()` 方法, 111-112
+  - `length` 属性, 114
   - 操作方法, 114-115
   - 概览, 105
   - 填充, 106-109
   - 通过类名和标签名指定元素, 80
-- 箭头函数 (=), 70
+- `=>` (箭头函数), 70
 - 属性
   - HTML, 97-99
-  - id, 79
-  - <img> 标签, 97
-  - onclick, 61, 63
+  - `id`, 79
+  - `<img>` 标签, 97
+  - `onclick`, 61, 63
   - 单选按钮状态, 147-148
-  - 单引号和 63
-  - src, 15
-  - 反引号 (`), 119
-  - 反斜杠 (\), 29
-  - before() 方法, 91
-  - 块语句, 40-41
-  - 块语法, 40
-  - blur 事件, 156
-  - blur() 方法, 156
-  - <body> 标签, 1
-  - 布尔
-    - 事件值, 102
-    - 表达式
-    - 赋值给对象, 153
-    - 运算符, 34
-    - 字面量, 30
-    - 大括号 ({})
-    - if 语句和, 40-41
-    - 作为函数的一部分, 56
-    - 括号运算符 ([]), 150
-    - 模式
-    - debugger 语句, 136-137
-    - 进入, 135-137
-    - 退出, 137
-    - 概览, 134-137
-    - Into 按钮, 138-139
-    - Out 按钮, 140
-    - Step Over 按钮, 139-140
-    - 逐执行, 162
-    - 调试策略, 162
-    - 概览, 135-136
-  - 控制台
-    - 访问, 132
-    - 概览, 130-133
-    - 打印数据, 132-133
-    - 运行代码, 133
-    - 测试代码, 162
-    - console.log() 方法
-    - 调试策略, 163
-    - 概览, 132-133
-  - const 关键字, 21–22
-  - 构造函数, 106
-  - 控制 JavaScript 循环
-    - for ... of, 82-83
-    - for, 83, 109
-    - 填充数组, 108-109
-    - do ... while 循环, 51-53
-    - for, 47-51, 83, 109
-    - 导入, 43-44
-    - 结构, 47
-    - while, 44-46
-    - 概览, 39
-  - 语句
-    - if, 40-41
-    - else, 41-42
-    - 变量, 47-48
-    - 表达式, 47
-    - 更新表达式, 47
-  - CSS (层叠样式表)
-    - 为元素添加类, 94-96
-    - 修改元素样式, 94-97
-    - 移除类, 96
-    - 切换类, 97
-  - change() 事件处理器, 157
-  - 子 (对象模型) 添加元素, 89-91
-  - Chrome, 129-130
-  - 类元素和添加, 94–96
-  - 通过名称指定, 80
-  - 移除, 96
-  - 切换, 97
-  - classList 属性, 95–97
-  - 代码
-    - 添加到网页, 5-10
-    - 不支持的浏览器, 10-12
-  --
-    - 调试策略, 164
-    - 概览, 13-14
-    - 语法, 13-14
-    - 用于描述动作, 19
-    - 调试, 137-140
-  - 效率
-    - do ... while 循环, 51-53
-    - if 语句, 40-41
-    - else 语句, 41-42
-    - 重要性, 43-44
-    - for 循环, 47-51, 83, 109
-    - for ... of 循环, 82-83
-    - 循环, 43-44
-    - 循环和数组, 108-109
-    - 概览, 39
-    - while 循环, 44-46
-  - 缩进
-    - 调试策略, 163
-    - 语法, 42
-  - 暂停
-    - 调试策略, 162
-    - 概览, 134-137
-    - 运行, 133
-    - 测试, 162
-  - 比较表达式和运算符, 34
-  - 复合语句, 41
-  - concat() 方法, 115
-  - 连接符号 (+), 33
-  - const 关键字, 21–22
-  - 构造函数, 106
-  - ECMAScript 6 和, 12
-  - 在...启用 JavaScript, 10-12
-  - 与 JavaScript, 10-13
-  - 过时的
-    - 匿名函数, 67
-    - 箭头函数, 70
-    - 与 for 循环, 83
-    - 概览, 12-13
-  - 解析 <script> 标签, 57-58
-  - 作为测试代码的要求, 10
-  - 调试策略中的 Web 开发工具, 161
-  - 概览, 129-131
-
-## C
-
-- 回调函数概览, 100
-- 用匿名函数替换, 68-71
-- change() 事件处理器, 157
+  - 单引号和, 63
+  - `src`, 15
+  - 反引号 (`` ` ``), 119
+  - 反斜杠 (`\`), 29
+- `before()` 方法, 91
+- 块语句, 40-41
+- 块语法, 40
+- `blur` 事件, 156
+- `blur()` 方法, 156
+- `<body>` 标签, 1
+- 布尔
+  - 事件值, 102
+  - 表达式赋值给对象, 153
+  - 运算符, 34
+  - 字面量, 30
+- 大括号 (`{}`)
+  - `if` 语句和, 40-41
+  - 作为函数的一部分, 56
+- 括号运算符 (`[]`), 150
+- 断点模式
+  - `debugger` 语句, 136-137
+  - 进入, 135-137
+  - 退出, 137
+  - 概览, 134-137
+  - Step Into 按钮, 138-139
+  - Step Out 按钮, 140
+  - Step Over 按钮, 139-140
+  - 逐步执行, 162
+  - 调试策略, 162
+  - 概览, 135-136
+- 控制台
+  - 访问, 132
+  - 概览, 130-133
+  - 打印数据, 132-133
+  - 运行代码, 133
+  - 测试代码, 162
+- `console.log()` 方法
+  - 调试策略, 163
+  - 概览, 132-133
+- `const` 关键字, 21–22
+- 构造函数, 106
+- 控制 JavaScript 循环
+  - `for...of`, 82-83
+  - `for`, 83, 109
+  - 填充数组, 108-109
+  - `do...while` 循环, 51-53
+  - `for`, 47-51, 83, 109
+  - 导入, 43-44
+  - 结构, 47
+  - `while`, 44-46
+  - 概览, 39
+- 语句
+  - `if`, 40-41
+  - `else`, 41-42
+  - 变量, 47-48
+  - 表达式, 47
+  - 更新表达式, 47
+- CSS (层叠样式表)
+  - 为元素添加类, 94-96
+  - 修改元素样式, 94-97
+  - 移除类, 96
+  - 切换类, 97
+- `change()` 事件处理器, 157
 - 子 (对象模型) 添加元素, 89-91
 - Chrome, 129-130
 - 类元素和添加, 94–96
 - 通过名称指定, 80
 - 移除, 96
 - 切换, 97
-- classList 属性, 95–97
+- `classList` 属性, 95–97
+- 代码
+  - 添加到网页, 5-10
+  - 不支持的浏览器, 10-12
+  - 注释, 13-14
+  - 调试策略, 164
+  - 概览, 13-14
+  - 语法, 13-14
+  - 用于描述动作, 19
+  - 调试, 137-140
+- 效率
+  - `do...while` 循环, 51-53
+  - `if` 语句, 40-41
+  - `else` 语句, 41-42
+  - 重要性, 43-44
+  - `for` 循环, 47-51, 83, 109
+  - `for...of` 循环, 82-83
+  - 循环, 43-44
+  - 循环和数组, 108-109
+  - 概览, 39
+  - `while` 循环, 44-46
+- 缩进
+  - 调试策略, 163
+  - 语法, 42
+- 暂停
+  - 调试策略, 162
+  - 概览, 134-137
+  - 运行, 133
+  - 测试, 162
+- 比较表达式和运算符, 34
+- 复合语句, 41
+- `concat()` 方法, 115
+- 连接符号 (`+`), 33
+- `const` 关键字, 21–22
+- 构造函数, 106
+- ECMAScript 6 和, 12
+- 在...启用 JavaScript, 10-12
+- 与 JavaScript, 10-13
+- 过时的
+  - 匿名函数, 67
+  - 箭头函数, 70
+  - 与 `for` 循环, 83
+  - 概览, 12-13
+- 解析 `<script>` 标签, 57-58
+- 作为测试代码的要求, 10
+- 调试策略中的 Web 开发工具, 161
+- 概览, 129-131
+
+### C
+
+- 回调函数概览, 100
+- 用匿名函数替换, 68-71
+- `change()` 事件处理器, 157
+- 子 (对象模型) 添加元素, 89-91
+- Chrome, 129-130
+- 类元素和添加, 94–96
+- 通过名称指定, 80
+- 移除, 96
+- 切换, 97
+- `classList` 属性, 95–97
 - CSS (层叠样式表)
   - 为元素添加类, 94-96
   - 修改元素样式, 94-97
   - 移除类, 96
   - 切换类, 97
 
-## D
+### D
 
-数据类型
-  - 布尔字面量, 30
-  - 浮点数, 27
-  - 整数, 26
-  - 数字字面量
-    - 指数计数法, 27
-    - 十六进制整数值, 27-28
-  - 字符串字面量
-    - 转义序列, 29-30
-    - 概览, 28-30
-    - 字符串中的引号, 28
-Date() 函数, 125
+#### 数据类型
 
-日期和时间
-  - Date 对象
-    - 参数, 124
-    - 方法, 126
-    - 概览, 125-126
-    - 设置日期, 126-127
-    - 指定, 125
-    - 概览, 123-127
-
-debugger 语句, 162
-
-
-
-## 调试
-中断模式
-
-- 断点, 135-136
-- debugger 语句, 136-137
-- 进入, 135-137
-- 退出, 137
-- 概述, 134-137
-- 步入（Step Into）按钮, 138-139
-- 步出（Step Out）按钮, 140
-- 步过（Step Over）按钮, 139-140
-- 逐步执行代码, 162
-- 分解复杂任务, 163
-
-## 代码
-- 注释, 164
-- 概述, 137-140
-
-## 控制台
-
-- 访问, 132
-- 概述, 130-133
-- 在其中打印程序数据, 132-133
-- 在其中运行代码, 133
-- 在其中测试代码, 162
-
-- 代码缩进, 163
-- 监控变量和对象属性值, 163
-- 网络工具, 131
-
-## 语句
-- 注释, 164
-- 概述, 138-140
-- 缩短, 163
-
-- 策略, 161-164
-- 浏览器中的 Web 开发工具
-  - 作为调试策略, 161
-  - 概述, 129-131
-
-- Web 存储工具, 131
-- 声明
-  - 数组, 106
-  - 变量
-    - 使用 const, 21-22
-    - 使用 let, 18-19
-
-- 浏览器中的开发工具, 129-131
-- 除法运算符 (/), 20
-- do ... while 循环
-  - 概述, 51-53
-  - while 循环, 44-46
-- document 对象, 9
-
-## 文档对象模型 (DOM) 元素
-
-- 作为子元素添加, 89-91
-- 添加文本和标签, 91-92
-- 类 (class), 添加到, 94-96
-- 类 (class), 移除, 96
-- 类 (class), 切换, 97
-- 集合, 81-83
-- 创建, 89
-- 插入 HTML , 92-93
-- 修改, 92-93
-- 概述, 89-92, 94
-- 移除, 93
-- 通过类名指定, 80
-- 通过 id 属性指定, 79
-- 通过选择器方法指定, 80-81
-- 通过标签名指定, 79-80
-- 样式, 修改, 94-97
-
-## 层级
-
-- 子节点, 84-87
-- 获取父元素的子元素, 84-87
-- 获取子元素的父元素, 87
-- 获取元素的兄弟元素, 87-88
-- 概述, 83-84
-
-- 监听页面事件, 100-103
-
-## 对象
-
-- 方法, 76-77
-- 概述, 73-77
-- 属性, 74-76
-- 概述, 77-78
-
-##  HTML 属性
-
-- 概述, 97-99
-- 读取值, 98
-- 移除, 99
-- 设置值, 98-99
-
-- document.body 函数, 59
-- document.lastModified 语句, 9-10
-
-## document.write() 语句
-
-- 概述, 9-10
-- 变量, 22-23
-
-- 双斜线 (//), 13
-
-## E
-
-### ECMAScript 5
-- 概述, 13
-- var 关键字, 19
-
-### ECMAScript 6
-- 新功能, 67, 70
-- 概述, 12
-
-### Edge, 130
-
-## 元素
-
-- 作为子元素添加, 89–91
-- 添加文本和标签, 91–92
-- 按钮, 61
-- 修改样式, 94–97
-- 与子元素, 87
-- 类
-  - 添加到, 94–96
-  - 移除, 96
-  - 切换, 97
-- 集合, 81–83
-- 创建, 89
-- 监听表单数据变化事件, 156–157
-- 修改, 92–93
-- 概述, 89–92, 94
-- 父元素, 84–87
-- 移除, 93
-- 与兄弟元素, 87–88
-- 指定
-  - 通过类名, 80
-  - 通过 id 属性, 79
-  - 通过选择器方法, 80–81
-  - 通过标签名, 79–80
-- 等号 (=), 19–20
-- ES 5, 13, 19
-- ES 6, 12, 67, 70
-- 转义序列 (\n), 29–30
-
-- 事件
-  - 执行函数和, 60-61
-  - 监听, 100-103
-
-- 表单数据
-  - 监听元素变化, 156-157
-  - 监控失去焦点 (blur), 156
-  - 监控聚焦 (focus), 155-156
-  - 概述, 154-157
-  - 设置焦点, 155
-- 执行函数
-  - 浏览器解析 <script> 标签, 57-58
-  - 事件和, 60-61
-  - 加载页面, 58-59
-  - 概述, 56-57
-  - 使用匿名函数替换, 68-70
-
-- 指数符号, 27
-
-## 表达式
-- 布尔, 赋值给对象, 153
-- 比较, 34
-- 控制, 37
-- 计数器, 47
-- 定义, 31
-- 在 do while 循环中, 52
-- 逻辑, 34–35
-- NOT 运算符, 35
-- 数值, 32
-- 运算符和, 31–32
-- AND 运算符, 35
-- OR 运算符, 35
-- 优先级, 35–37
-- 概述, 35–37
-- 字符串, 26
-- 结构, 31–32
-- 在 while 循环中, 44
-- 提取字符串, 122–23
-
-## F
-- 文件, 14–16
-- find() 方法, 112–114
-- Firefox, 130
+- 布尔字面量, 30
 - 浮点数, 27
+- 整数, 26
+- 数字字面量
+  - 指数计数法, 27
+  - 十六进制整数值, 27-28
+- 字符串字面量
+  - 转义序列, 29-30
+  - 概览, 28-30
+  - 字符串中的引号, 28
 
-## JavaScript 流，控制循环
-- for ... ..., 82–83
-- do while, 51–53
-- for, 47–51, 83, 109
-- 重要性, 43–44
-- 使用数组填充, 108–109
-- 结构, 47
-- while, 44–46
-- 概述, 39
-- if, 40–41
-- if.else, 41–42
-- 焦点事件, 155–156
-- focus() 方法, 155–156
-- for ... 循环, 82–83
-- for 循环（旧版浏览器）, 83
-- 概述, 47–51
-- 使用数组填充, 109
-- forEach() 方法, 109–110
+- `Date()` 函数, 125
 
-## 表单数据
-- 复选框
-  - 获取状态, 145–146
-  - 概述, 144–147
-  - 引用, 145
-  - 设置状态, 146
-- 事件
-  - 监听元素变化, 156–157
-  - 监控失去焦点 (blur), 156
-  - 监控聚焦 (focus), 155–156
-  - 概述, 154–157
-  - 设置焦点, 155
-- 处理, 158–160
-- 单选按钮
-  - 获取状态, 148–149
-  - 概述, 147–150
-  - 引用, 148
-  - 设置状态, 150
-- 选择列表
-  - 修改选项, 153–154
-  - 获取选项, 152–153
-  - 概述, 150–154
-  - 引用选项, 151–152
-- 提交, 158–160
-- 文本框获取值, 143–144
-- 概述, 141–144
-- 按类型引用, 142
+#### 日期和时间
 
-## 函数
-- 匿名
-  - 赋值给变量, 67–68
-  - 概述, 66–70
-  - 替换函数调用, 68–70
-- 参数, 56
-- 箭头, 70–72
-- 回调 (callback), 68–100
-- Date(), 125
-- 定义, 8
-- document.body, 59
-- 执行
-  - 浏览器解析 <script> 标签, 57–58
-  - 事件和, 60–61
-  - 加载页面, 58–59
-  - 概述, 56–57
-- find(), 112–114
-- forEach(), 109–110
-- map(), 110–111
-- 命名, 66
-- 概述, 55
-- reduce(), 111–112
-- 结构, 55–56
-- 值和
-  - 从获取, 64–66
-  - 传递给, 61–64
+- `Date` 对象
+  - 参数, 124
+  - 方法, 126
+  - 概览, 125-126
+  - 设置日期, 126-127
+  - 指定, 125
+  - 概览, 123-127
 
-## G
-- getAttribute() 方法, 98
+- `debugger` 语句, 162
 
-## H
-- 处理器, 61
-- <head> 标签, 6
-- headerImage 变量, 98
-- 十进制整数值, 27-58
-- 层级
-  - 子节点, 84-87
-  - 获取父元素的子元素, 84-87
-  - 获取子元素的父元素, 87
-  - 获取元素的兄弟元素, 87-88
-- HTML (超文本标记语言)
-- <body> 标签, 6
-- 按钮元素, 61
-- 调试工具, 130-131
-- <head> 标签, 6
-- JavaScript 对比, 1
-- <script> 标签
-  - 用向用户显示消息, 7-8
-  - 位置, 6
-  - 概述, 5
-  - 向页面写入文本, 8-10
-  - 调整属性, 97-99
+#### 调试
 
-## I
-- id 属性, 79
-- if 语句, 40-41
-- if.else 语句, 41-42
-- <img> 标签, 97
+##### 中断模式
 
-- 代码缩进
-  - 作为调试策略, 163
-- 语法, 42
-- 索引值, 105
-- innerHTML 属性, 91-92
-
-- <input> 标签
-- 单选按钮, 147
-- 文本框获取值, 143–144
-- 概述, 141–144
-- 按类型引用, 142
-
-- 代码缩进
-  - 作为调试策略, 163
-- 语法, 42
-- 索引值, 105
-- innerHTML 属性, 91-92
-
-## 调试
 - 断点, 135-136
-- debugger 语句, 136-137
+- `debugger` 语句, 136-137
 - 进入, 135-137
 - 退出, 137
 - 概述, 134-137
@@ -4442,11 +3996,12 @@ debugger 语句, 162
 - 逐步执行代码, 162
 - 分解复杂任务, 163
 
-## 代码
+##### 代码
+
 - 注释, 164
 - 概述, 137-140
 
-## 控制台
+##### 控制台
 
 - 访问, 132
 - 概述, 130-133
@@ -4458,7 +4013,8 @@ debugger 语句, 162
 - 监控变量和对象属性值, 163
 - 网络工具, 131
 
-## 语句
+##### 语句
+
 - 注释, 164
 - 概述, 138-140
 - 缩短, 163
@@ -4467,28 +4023,29 @@ debugger 语句, 162
 - 浏览器中的 Web 开发工具
   - 作为调试策略, 161
   - 概述, 129-131
-
 - Web 存储工具, 131
-- 声明
-  - 数组, 106
-  - 变量
-    - 使用 const, 21-22
-    - 使用 let, 18-19
+
+#### 声明
+
+- 数组, 106
+- 变量
+  - 使用 `const`, 21-22
+  - 使用 `let`, 18-19
 
 - 浏览器中的开发工具, 129-131
-- 除法运算符 (/), 20
-- do ... while 循环
+- 除法运算符 (`/`), 20
+- `do...while` 循环
   - 概述, 51-53
-  - while 循环, 44-46
-- document 对象, 9
+  - `while` 循环, 44-46
+- `document` 对象, 9
 
-## 文档对象模型 (DOM) 元素
+#### 文档对象模型 (DOM) 元素
 
 - 作为子元素添加, 89-91
 - 添加文本和标签, 91-92
-- 类 (class), 添加到, 94-96
-- 类 (class), 移除, 96
-- 类 (class), 切换, 97
+- 类 (`class`), 添加到, 94-96
+- 类 (`class`), 移除, 96
+- 类 (`class`), 切换, 97
 - 集合, 81-83
 - 创建, 89
 - 插入 HTML, 92-93
@@ -4496,12 +4053,12 @@ debugger 语句, 162
 - 概述, 89-92, 94
 - 移除, 93
 - 通过类名指定, 80
-- 通过 id 属性指定, 79
+- 通过 `id` 属性指定, 79
 - 通过选择器方法指定, 80-81
 - 通过标签名指定, 79-80
 - 样式, 修改, 94-97
 
-## 层级
+#### 层级
 
 - 子节点, 84-87
 - 获取父元素的子元素, 84-87
@@ -4511,43 +4068,45 @@ debugger 语句, 162
 
 - 监听页面事件, 100-103
 
-## 对象
+#### 对象
 
 - 方法, 76-77
 - 概述, 73-77
 - 属性, 74-76
 - 概述, 77-78
 
-## HTML 属性
+#### HTML 属性
 
 - 概述, 97-99
 - 读取值, 98
 - 移除, 99
 - 设置值, 98-99
 
-- document.body 函数, 59
-- document.lastModified 语句, 9-10
+- `document.body` 函数, 59
+- `document.lastModified` 语句, 9-10
 
-## document.write() 语句
+#### `document.write()` 语句
 
 - 概述, 9-10
 - 变量, 22-23
 
-- 双斜线 (//), 13
+- 双斜线 (`//`), 13
 
-## E
+### E
 
-### ECMAScript 5
+#### ECMAScript 5
+
 - 概述, 13
-- var 关键字, 19
+- `var` 关键字, 19
 
-### ECMAScript 6
+#### ECMAScript 6
+
 - 新功能, 67, 70
 - 概述, 12
 
-### Edge, 130
+#### Edge, 130
 
-## 元素
+### 元素
 
 - 作为子元素添加, 89–91
 - 添加文本和标签, 91–92
@@ -4568,13 +4127,13 @@ debugger 语句, 162
 - 与兄弟元素, 87–88
 - 指定
   - 通过类名, 80
-  - 通过 id 属性, 79
+  - 通过 `id` 属性, 79
   - 通过选择器方法, 80–81
   - 通过标签名, 79–80
-- 等号 (=), 19–20
+- 等号 (`=`), 19–20
 - ES 5, 13, 19
 - ES 6, 12, 67, 70
-- 转义序列 (\n), 29–30
+- 转义序列 (`\n`), 29–30
 
 - 事件
   - 执行函数和, 60-61
@@ -4582,12 +4141,12 @@ debugger 语句, 162
 
 - 表单数据
   - 监听元素变化, 156-157
-  - 监控失去焦点 (blur), 156
-  - 监控聚焦 (focus), 155-156
+  - 监控失去焦点 (`blur`), 156
+  - 监控聚焦 (`focus`), 155-156
   - 概述, 154-157
   - 设置焦点, 155
 - 执行函数
-  - 浏览器解析 <script> 标签, 57-58
+  - 浏览器解析 `<script>` 标签, 57-58
   - 事件和, 60-61
   - 加载页面, 58-59
   - 概述, 56-57
@@ -4595,13 +4154,14 @@ debugger 语句, 162
 
 - 指数符号, 27
 
-## 表达式
+### 表达式
+
 - 布尔, 赋值给对象, 153
 - 比较, 34
 - 控制, 37
 - 计数器, 47
 - 定义, 31
-- 在 do while 循环中, 52
+- 在 `do...while` 循环中, 52
 - 逻辑, 34–35
 - NOT 运算符, 35
 - 数值, 32
@@ -4612,35 +4172,38 @@ debugger 语句, 162
 - 概述, 35–37
 - 字符串, 26
 - 结构, 31–32
-- 在 while 循环中, 44
+- 在 `while` 循环中, 44
 - 提取字符串, 122–23
 
-## F
+### F
+
 - 文件, 14–16
-- find() 方法, 112–114
+- `find()` 方法, 112–114
 - Firefox, 130
 - 浮点数, 27
 
-## JavaScript 流，控制循环
-- for ... ..., 82–83
-- do while, 51–53
-- for, 47–51, 83, 109
+### JavaScript 流，控制循环
+
+- `for...of`, 82–83
+- `do...while`, 51–53
+- `for`, 47–51, 83, 109
 - 重要性, 43–44
 - 使用数组填充, 108–109
 - 结构, 47
-- while, 44–46
+- `while`, 44–46
 - 概述, 39
-- if, 40–41
-- if.else, 41–42
+- `if`, 40–41
+- `if...else`, 41–42
 - 焦点事件, 155–156
-- focus() 方法, 155–156
-- for ... 循环, 82–83
-- for 循环（旧版浏览器）, 83
+- `focus()` 方法, 155–156
+- `for...of` 循环, 82–83
+- `for` 循环（旧版浏览器）, 83
 - 概述, 47–51
 - 使用数组填充, 109
-- forEach() 方法, 109–110
+- `forEach()` 方法, 109–110
 
-## 表单数据
+### 表单数据
+
 - 复选框
   - 获取状态, 145–146
   - 概述, 144–147
@@ -4648,8 +4211,8 @@ debugger 语句, 162
   - 设置状态, 146
 - 事件
   - 监听元素变化, 156–157
-  - 监控失去焦点 (blur), 156
-  - 监控聚焦 (focus), 155–156
+  - 监控失去焦点 (`blur`), 156
+  - 监控聚焦 (`focus`), 155–156
   - 概述, 154–157
   - 设置焦点, 155
 - 处理, 158–160
@@ -4668,40 +4231,43 @@ debugger 语句, 162
 - 概述, 141–144
 - 按类型引用, 142
 
-## 函数
+### 函数
+
 - 匿名
   - 赋值给变量, 67–68
   - 概述, 66–70
   - 替换函数调用, 68–70
 - 参数, 56
 - 箭头, 70–72
-- 回调 (callback), 68–100
-- Date(), 125
+- 回调 (`callback`), 68–100
+- `Date()`, 125
 - 定义, 8
-- document.body, 59
+- `document.body`, 59
 - 执行
-  - 浏览器解析 <script> 标签, 57–58
+  - 浏览器解析 `<script>` 标签, 57–58
   - 事件和, 60–61
   - 加载页面, 58–59
   - 概述, 56–57
-- find(), 112–114
-- forEach(), 109–110
-- map(), 110–111
+- `find()`, 112–114
+- `forEach()`, 109–110
+- `map()`, 110–111
 - 命名, 66
 - 概述, 55
-- reduce(), 111–112
+- `reduce()`, 111–112
 - 结构, 55–56
 - 值和
   - 从获取, 64–66
   - 传递给, 61–64
 
-## G
-- getAttribute() 方法, 98
+### G
 
-## H
+- `getAttribute()` 方法, 98
+
+### H
+
 - 处理器, 61
-- <head> 标签, 6
-- headerImage 变量, 98
+- `<head>` 标签, 6
+- `headerImage` 变量, 98
 - 十进制整数值, 27-58
 - 层级
   - 子节点, 84-87
@@ -4709,66 +4275,100 @@ debugger 语句, 162
   - 获取子元素的父元素, 87
   - 获取元素的兄弟元素, 87-88
 - HTML (超文本标记语言)
-- <body> 标签, 6
+- `<body>` 标签, 6
 - 按钮元素, 61
 - 调试工具, 130-131
-- <head> 标签, 6
+- `<head>` 标签, 6
 - JavaScript 对比, 1
-- <script> 标签
+- `<script>` 标签
   - 用向用户显示消息, 7-8
   - 位置, 6
   - 概述, 5
   - 向页面写入文本, 8-10
   - 调整属性, 97-99
 
-## I
-- id 属性, 79
-- if 语句, 40-41
-- if.else 语句, 41-42
-- <img> 标签, 97
+### I
+
+- `id` 属性, 79
+- `if` 语句, 40-41
+- `if...else` 语句, 41-42
+- `<img>` 标签, 97
 
 - 代码缩进
   - 作为调试策略, 163
 - 语法, 42
 - 索引值, 105
-- innerHTML 属性, 91-92
+- `innerHTML` 属性, 91-92
 
-prompt(), 22-23
+- `<input>` 标签
+  - 单选按钮, 147
+  - 文本框获取值, 143–144
+  - 概述, 141–144
+  - 按类型引用, 142
 
-push(), 115
+### J
 
-remove()
+- JavaScript
+  - 添加到网页, 5-10
+  - 调试策略, 161-164
+  - 启用, 10-12
+  - 执行, 56-61
+  - 文件, 14-16
+  - 概述, 1-4
 
-- 类, 96
-- , 93
-- removeAttribute(), 99
-- reverse(), 115
-- 选择器, 80-81
-- setAttribute(), 98-99
-- shift(), 115
-- slice(), 115
-- sort(), 115
-- string.charAt(), 122
-- string.charCodeAt(), 122
-- string.slice(), 122
-- string.split(), 123
-- string.substr(), 123
-- string.substring(), 123
-- unshift(), 115
+### M
+
+- `map()` 方法, 110-111
+- `Math` 对象, 77-78
+- 方法
+  - `add()`, 95
+  - `addEventListener()`, 100
+  - `after()`, 90
+  - `alert()`, 7-8
+  - `append()`, 90
+  - `before()`, 91
+  - `blur()`, 156
+  - `change()`, 157
+  - `concat()`, 115
+  - `Date()`, 125
+  - `find()`, 112-114
+  - `focus()`, 155-156
+  - `forEach()`, 109-110
+  - `getAttribute()`, 98
+  - `map()`, 110-111
+  - `pop()`, 115
+  - `prepend()`, 90
+  - `prompt()`, 22-23
+  - `push()`, 115
+  - `reduce()`, 111-112
+  - `remove()`, 93, 96
+  - `removeAttribute()`, 99
+  - `reverse()`, 115
+  - `setAttribute()`, 98-99
+  - `shift()`, 115
+  - `slice()`, 115
+  - `sort()`, 115
+  - `string.charAt()`, 122
+  - `string.charCodeAt()`, 122
+  - `string.slice()`, 122
+  - `string.split()`, 123
+  - `string.substr()`, 123
+  - `string.substring()`, 123
+  - `unshift()`, 115
 - Microsoft Edge, 130
-- 减号 (-), 27
-- 多行注释 (/*), 13-14
-- 乘法符号 (*), 32
+- 减号 (`-`), 27
+- 多行注释 (`/*`), 13-14
+- 乘法符号 (`*`), 32
 
-# N
+### N
 
-- \n (转义序列), 29-30
+- `\n` (转义序列), 29-30
 - 命名函数, 66
 - 命名空间, 67
 - 下一个兄弟节点, 87
 - 节点，子节点, 84–87
-- <noscript> 标签, 11
-- NOT 运算符 (!), 35
+- `<noscript>` 标签, 11
+- NOT 运算符 (`!`), 35
 - 空字符串, 28
 - 数值
   - 表达式, 32–33
@@ -4777,84 +4377,88 @@ remove()
     - 十进制整数值, 27–28
   - 概述, 26–28
 
-# O
+### O
 
-## objects
+#### objects
 
-### Date
-  - 参数参数, 124
-  - 方法, 126
-  - 概述, 125–126
-  - 设置日期, 126–127
-  - 指定日期和时间, 125
+##### Date
 
-### document, 9
-  - 方法, 76–77
-  - 监控值, 163
-  - 概述, 73–77
-  - 属性, 74–76
+- 参数, 124
+- 方法, 126
+- 概述, 125–126
+- 设置日期, 126–127
+- 指定日期和时间, 125
 
-### Strings
-  - 确定长度, 121
-  - 操作, 117–118
-  - 子字符串, 121–123
-  - 模板, 118–120
+##### document, 9
 
-### onclick属性
-  - 示例代码, 63
-  - 概述, 61
+- 方法, 76–77
+- 监控值, 163
+- 概述, 73–77
+- 属性, 74–76
+
+##### Strings
+
+- 确定长度, 121
+- 操作, 117–118
+- 子字符串, 121–123
+- 模板, 118–120
+
+##### `onclick` 属性
+
+- 示例代码, 63
+- 概述, 61
 
 - 操作数和运算符, 31–52
 - 选择列表中的选项
   - 更改, 153–154
   - 获取, 152–153
   - 引用, 151–152
-- 逻辑或运算符 (||), 35
+- 逻辑或运算符 (`||`), 35
 
-# P
+### P
 
 - 父节点 (文档对象模型), 83–84
-- 解析，浏览器和 <script> 标签, 57–58
-- 加号 (+), 27
+- 解析，浏览器和 `<script>` 标签, 57–58
+- 加号 (`+`), 27
 - 污染命名空间, 67
-- pop() 方法, 115
+- `pop()` 方法, 115
 - 填充数组
   - 使用循环, 108–109
   - 概述, 106–109
-- prepend() 方法, 90
+- `prepend()` 方法, 90
 - 上一个兄弟节点, 87–88
 - 程序数据，在 Console 中打印, 132–133
-- prompt() 方法, 22–23
-  - 属性
-    - 数组长度, 114
-    - 复选框状态, 145–147
-    - classList, 95–97
-    - innerHTML, 91–92
-    - 监控对象值, 163
-- push() 方法, 115
+- `prompt()` 方法, 22–23
+- 属性
+  - 数组长度, 114
+  - 复选框状态, 145–147
+  - `classList`, 95–97
+  - `innerHTML`, 91–92
+  - 监控对象值, 163
+- `push()` 方法, 115
 
-# Q
+### Q
 
-- 引号 (")
+- 引号 (`"`)
   - 处理内部, 118–120
   - 字符串字面量, 28
 
-# R
+### R
 
-- reduce() 方法, 111-112
+- `reduce()` 方法, 111-112
 - 引用表单数据
   - 复选框, 145
   - 选择列表, 151-152
   - 文本字段, 142
-  - remove() 方法, 93, 96
-  - removeAttribute() 方法, 99
-  - 留关键字, 24
-  - reverse() 方法, 115
+- `remove()` 方法, 93, 96
+- `removeAttribute()` 方法, 99
+- 保留关键字, 24
+- `reverse()` 方法, 115
 
-# S
+### S
 
 - Safari, 130
-- <script> 标签
+- `<script>` 标签
   - 浏览器解析, 57-58
   - 向用户显示消息, 7-8
   - 执行函数和, 57-58
@@ -4862,23 +4466,23 @@ remove()
   - 位置, 6, 79
   - 概述, 5
   - 向页面写入文本, 8-10
-- <select> 标签, 150
+- `<select>` 标签, 150
 - 选择列表
   - 更改选项, 153-154
   - 获取选项, 152-153
   - 概述, 150-154
   - 引用选项, 151-152
-- 分号 (;); 7
-- setAttribute() 方法, 98-99
-- shift() 方法, 115
+- 分号 (`;`), 7
+- `setAttribute()` 方法, 98-99
+- `shift()` 方法, 115
 - 兄弟节点 (文档对象模型), 83-84
-- 单引号 ('
-  - onclick 属性, 63
+- 单引号 (`'`)
+  - `onclick` 属性, 63
   - 字符串字面量, 28
-  - 单行语法, 40
-- slice() 方法, 115
-- sort() 方法, 115
-- src 属性, 15
+- 单行语法, 40
+- `slice()` 方法, 115
+- `sort()` 方法, 115
+- `src` 属性, 15
 - 起值, 47
 - 复选框状态, 145-147
 - 语句
@@ -4892,30 +4496,30 @@ remove()
 - 缩进
   - 作为调试策略, 163
   - 概述, 42
-  - document.lastModified, 9–10
-  - document.write(), 9, 22–23
-    - 在其中，8, 56
-    - if, 40–41
-    - else, 41–42
+- `document.lastModified`, 9–10
+- `document.write()`, 9, 22–23
+  - 在其中, 8, 56
+  - `if`, 40–41
+  - `else`, 41–42
 - 循环
-  - for ... of, 82–83
-  - do ... while, 52
-  - for, 44
+  - `for...of`, 82–83
+  - `do...while`, 52
+  - `for`, 44
 - 方法
-  - alert(), 7–8
-  - find(), 112–114
-  - forEach(), 109–110
-  - map(), 110–111
-  - reduce(), 111–112
+  - `alert()`, 7–8
+  - `find()`, 112–114
+  - `forEach()`, 109–110
+  - `map()`, 110–111
+  - `reduce()`, 111–112
   - 多重, 8
   - 缩短, 163
   - Out/Over 和, 137-140
   - 使用变量, 22-23
-  - Into (开发工具), 138-139
-  - Out (开发工具), 140
-  - Over (开发工具), 139
-  - string.charAt(), 122
-  - string.charCodeAt(), 122
+  - Step Into (开发工具), 138-139
+  - Step Out (开发工具), 140
+  - Step Over (开发工具), 139
+  - `string.charAt()`, 122
+  - `string.charCodeAt()`, 122
 - 字符串
   - 包含 3
   - 字面量
@@ -4923,10 +4527,10 @@ remove()
     - 概述, 28–30
     - 字符串中的引号, 28
   - 方法
-    - string.slice(), 122
-    - string.split(), 123
-    - string.substr(), 123
-    - string.substring(), 123
+    - `string.slice()`, 122
+    - `string.split()`, 123
+    - `string.substr()`, 123
+    - `string.substring()`, 123
   - 多行, 119–120
   - null, 28
   - 对象
@@ -4934,30 +4538,30 @@ remove()
     - 操作, 117–118
     - 子字符串, 121–123
     - 模板, 118–120
-  - prompt() 方法，部分, 23
+  - `prompt()` 方法，部分, 23
   - 子字符串
     - 提取, 122–123
     - 查找, 121–122
   - 元素的样式，更改, 94–97
 - 减法赋值, 50
 - 语法
-  - addEventListener() 方法, 100
+  - `addEventListener()` 方法, 100
   - 块, 40
-  - Date() 函数, 125
+  - `Date()` 函数, 125
   - 声明数组, 106
-  - for ... of 循环, 82–83
+  - `for...of` 循环, 82–83
   - 对象, 74–77
   - 单行, 40
 - 标签
   - 添加到元素, 91–92
-  - <body>, 6
-  - <head>, 6
-  - <img>, 97
-  - <input>
-  - 单选按钮, 147–148
-  - 文本字段, 141–145
-  - <noscript>, 11
-  - <script>
+  - `<body>`, 6
+  - `<head>`, 6
+  - `<img>`, 97
+  - `<input>`
+    - 单选按钮, 147–148
+    - 文本字段, 141–145
+  - `<noscript>`, 11
+  - `<script>`
     - 浏览器解析, 57–58
     - 向用户显示消息, 7–8
     - 执行函数和, 57–58
@@ -4966,7 +4570,7 @@ remove()
     - 代码中的位置, 6
     - 概述, 5
     - 向页面写入文本, 8–10
-  - <select>, 150
+  - `<select>`, 150
   - 按名称指定元素, 79–80
   - 模板，字符串, 118–120
 - 文本
@@ -4979,7 +4583,7 @@ remove()
   - 按类型引用, 142
   - 值和, 142–144
 - 时间和日期
-  - Date 对象
+  - `Date` 对象
     - 参数, 124
     - 方法, 126
     - 概述, 125–126
@@ -4990,15 +4594,15 @@ remove()
   - 浏览器中的开发工具, 129–131
 - Torvalds, Linus, 2
 
-# U
+### U
 
-- 下划线 (_), 24
-- unshift() 方法, 115
+- 下划线 (`_`), 24
+- `unshift()` 方法, 115
 - 用户，向其显示消息
   - 概述, 7–8
   - 提示, 22–23
 
-# V
+### V
 
 - 值
   - 布尔事件, 102
@@ -5024,10 +4628,10 @@ remove()
     - 概述, 26
     - 字符串字面量, 28–30
   - 声明
-    - 使用 const, 21–22
-    - 使用 let, 18–19
+    - 使用 `const`, 21–22
+    - 使用 `let`, 18–19
     - 定义, 7
-  - Header, 98
+  - `headerImage`, 98
   - 命名
     - 示例, 24–25
     - 概述, 24–25
@@ -5039,20 +4643,22 @@ remove()
     - 包含在字符串中, 119–120
     - 监控, 163
   - 存储在, 19–20
-  - var 关键字, 19
+  - `var` 关键字, 19
 
-web 浏览器断点模式
+### W
+
+- Web 浏览器断点模式
   - 断点, 135–136
-  - debugger 语句, 136
+  - `debugger` 语句, 136
   - 进入, 135–137
   - 退出, 137
   - 概述, 134–137
   - 逐步执行代码, 162
 
-Console
+- Console
   - 访问, 132
   - 概述, 130–133
-  - 在其中中打印程序数据, 132–133
+  - 在其中打印程序数据, 132–133
   - 在其中运行代码, 133
   - 在其中测试代码, 162
 
@@ -5062,20 +4668,25 @@ Console
 - 过时的
   - 匿名函数和, 67
   - 箭头函数和, 70
-  - for 循环和, 83
+  - `for` 循环和, 83
   - 概述, 12–13
-- 解析 <script> 标签, 57–58
+- 解析 `<script>` 标签, 57–58
 - 作为测试代码的要求, 10
 
-web 开发工具在作为调试策略, 161 概述, 129–131
+- Web 开发工具在作为调试策略, 161 概述, 129–131
+- Web 开发工具在浏览器作为调试策略, 161 概述, 129–131
 
-web 开发工具在浏览器作为调试策略, 161 概述, 129–131
+- 网页代码到，添加, 5–10
+- 向用户显示消息 概述, 7–8
+- 执行函数和, 58–59
+- 监听事件, 100–103
+- 加载, 58–59
+- 时间敏感数据，在网页上显示, 9
+- 向页面写入文本, 8–10
 
-- 网页代码到，添加, 5–10 向用户显示消息 概述, 7–8 执行函数和, 58–59 监听事件, 100–103 加载, 58–59 时间敏感数据，在网页上显示, 9 向页面写入文本, 8–10
-
-- while 循环 do ... while, 51–53 概述, 44–46
-
-
+- `while` 循环
+  - `do...while`, 51–53
+  - 概述, 44–46
 
 ## 作者致谢
 
@@ -5155,7 +4766,7 @@ Dummies 是参考类别的全球领导者，也是世界上最受信任和备受
 | 美国 $24.99 | 美国 $24.99 | 美国 $24.99 | 美国 $24.99 | 美国 $24.99 | 美国 $24.99 |
 | 加拿 $29.99 | 加拿 $29.99 | 加拿 $29.99 | 加拿 $29.99 | 加拿 $29.99 | 加拿 $29.99 |
 | 英国 £19.99 | 英国 £17.99 | 英国 £17.99 | 英国 £16.99 | 英国 £16.99 | 英国 £17.99 |
-| 冥想 | 怀孕 | 缝纫 | 钩钩针 | 营养 | |
+| 冥想 | 怀孕 | 缝纫 | 钩针 | 营养 | |
 | --- | --- | --- | --- | --- | --- |
 | 978111251763 | 978111252349 | 978111257902 | 978111252153 | 978111252751 | 978111253046 |
 | 美国 $24.99 | 美国 $24.99 | 美国 $24.99 | 美国 $24.99 | 美国 $24.99 | |
@@ -5211,9 +4822,7 @@ Dummies 是参考类别的全球领导者，也是世界上最受信任和备受
 创建你自己的 dummies 书封面
 
 ![](img/d7cbed725c071566e0fc4bb4166ff642_238_1.png)
-[/content]
 
-[content]
 # WILEY 终端用户许可协议
 
-请访问 www://www.wiley.com/go/eula 以访问 Wiley 的电子书 EULA。
+请访问 `www://www.wiley.com/go/eula` 以访问 Wiley 的电子书 EULA。

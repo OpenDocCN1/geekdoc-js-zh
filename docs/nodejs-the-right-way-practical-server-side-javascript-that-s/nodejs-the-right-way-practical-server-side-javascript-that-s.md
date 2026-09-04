@@ -1,124 +1,143 @@
+
 # Node.js 正确之道：可扩展的服务器端 JavaScript 实践
 
-
-
-
-
-
-
-
-
-
 Jacquelyn Carter 编
-
-
 
 # 对 Node.js the Right Way 的早期赞誉
 
 《Node.js the Right Way》确实是上手现代服务器端 JavaScript 编程的正确方式。它远超 JavaScript 和 Node 的基础机制，展示了开发一个高质量服务器端应用程序真正需要什么。
 
 - Allen Wirfs-Brock
+
 ECMAScript 语言规范项目编辑
 
 如果你才刚开始学习 Node，请跳过其他所有内容——这是你唯一需要的书。
 
 - Rick Waldron
+
 Bocoup, LLC 软件工程师
 
 终于，有一本书告诉我们 Node.js 远不止是一个为文青人准备的简陋 Web 级应用服务器了。
 
 - Eric Redmond
+
 《七周七数据库》合著者
 
 《Node.js the Right Way》是一本非常棒的读物，快速展示了 Node 的灵活性和强大。对于任何对探索服务器基础设施世界的 JavaScript 开发者来说，它都是完美的。
 
 - Xavi Ramirez
+
 Baydin, Inc.
 
 《Node.js the Right Way》是一本好读的书，迅速演示了 Node 的灵活性和威力。通过跳过“Hello World”而采用实用示例，Wilson 提供了一个详尽且引人入胜的介绍。
 
 - Daniel Renfro
+
 Vistaprint 首席软件工程师
 
 这本书是解释 Node 的绝佳方式。我甚至在个人项目使用了 Jim 的一些示例代码（特别是第 7 章）。
 
 - Mitchell Foley
+
 Google 软件工程师
 
-
-
-
-
-
-
-
-
-
 - 制作本书的团队包括：
+
 Jacquelyn Carter（编辑）
+
 Candace Cunningham（校对）
+
 David J Kelly（排字）
+
 Janet Furlow（制作）
+
 Juliet Benda（版权）
+
 Ellie Callahan（支持）
 
-
-
-
-
 - 致谢 ... vii
+
 - 前言 ... ix
+
 Node 的利基市场 2
+
 Node 应用如何工作 3
+
 Node.js 开发的各个方面 5
+
 获取 Node.js 7
+
 为 Node.js 事件循环编程 10
+
 针对 Node.js 事件循环编程 11
+
 创建子进程 13
+
 捕获数据 15
+
 异步处理文件 17
+
 结语
 
 监听 24
+
 实现协议 28
+
 创建客户端 31
+
 扩展类 32
+
 处理.js 35
 
 ZeroMQ 的优势 42
+
 使用 npm 模块 44
+
 发布消息 48
+
 订阅 52
+
 处理请求 54
+
 推送与拉取消息 59
 
 CouchDB 的优势 66
+
 创建单页应用 67
+
 使用 Passport 进行身份验证 70
+
 授权 API 73
+
 使用生成器处理数据 75
+
 Reduce 81
 
 Express 的优势 88
+
 使用 Express 88
+
 处理 RESTful API 94
+
 使用生成器进行流控制 99
+
 使用 Promise 101
 
 在 Redis 中存储会话 108
+
 使用 Session 身份验证 110
+
 使用中间件 113
+
 客户端 116
+
 MVC 模式 120
+
 结语 125
-
-
-
-
 
 # 健壮的消息传递
 
-随后，在第 4 章*健壮的消息服务*（Robust Messaging Services）第 41 页，我们将离开 Node 核心进入第三方库领域。你将使用 npm 来导入和构建 OMQ（读作 "Zero-M-Q"）——这是一个用于开发网络应用程序的高效、低延迟库。通过 OMQ，我们将使用几种重要的模式来开发程序，例如发布/订阅和请求/响应。我们将创建一组协同工作的程序套件，你将学习使用集群工具来管理它们。
+随后，在第 4 章*健壮的消息服务*（Robust Messaging Services）第 41 页，我们将离开 Node 核心进入第三方库领域。你将使用 `npm` 来导入和构建 ØMQ（读作 "Zero-M-Q"）——这是一个用于开发网络应用程序的高效、低延迟库。通过 ØMQ，我们将使用几种重要的模式来开发程序，例如发布/订阅和请求/响应。我们将创建一组协同工作的程序套件，你将学习使用集群工具来管理它们。
 
 ## 访问数据库
 
@@ -138,7 +157,7 @@ Node 对编写 HTTP 服务器有极佳的支持，在第 6 章*可扩展的 Web 
 
 # 关于写作的切
 
-在编写此书时，npm 拥有超过 43,000 个模块，平均增长率每天新增 100 多个新模块。由于 Node.js 周围的生态系统和社区增长和变化如此迅速，本书并不尝试涵盖所有内容。相反，这本短书将教你上手并开始编码所需的精要知识。
+在编写此书时，`npm` 拥有超过 43,000 个模块，平均增长率每天新增 100 多个新模块。由于 Node.js 周围的生态系统和社区增长和变化如此迅速，本书并不尝试涵盖所有内容。相反，这本短书将教你上手并开始编码所需的精要知识。
 
 本书也紧贴 Node.js 主题。你将学习很多关于 Node 进程集群以及如何编写可扩展 Web 服务的知识，但对于 HTML、CSS 和浏览器 JavaScript 等前端关注点将涉及较少。
 
@@ -156,11 +175,12 @@ JavaScript 语言是当今广泛使用的语言中最被误解的语言之一。
 
 书中的示例包含 JavaScript、shell 会话以及少量 HTML/XML 摘录。在大多数情况下，代码列表是完整的——你可以随心意欲地运行。
 
-示例和片段根据语言规则进行语法高亮。shell 命令以 $ 为前缀。
+示例和片段根据语言规则进行语法高亮。shell 命令以 `$` 为前缀。
 
 当你编写 Node.js 代码时，你应该始终处理错误和异常，即使你只是将它们重新抛出。你将在全书中学习如何这样做。然而，某些代码示例缺乏错误处理。这仅仅是为了提高可读性和节省空间——你应该始终处理自己的错误。
 
 1. http://www.modulecounts.com/
+
 2. http://cygwin.com/
 
 # 在线资源
@@ -219,13 +239,9 @@ Node 的哲学是给你对事件循环和系统资源的底层访问。或者用
 
 图 3—Node.js 事件循环
 
+只要还有任务未完成，Node 的事件循环就会持续旋转。每当事件发生时，Node 就会调用任何正在监听该事件的 `回调函数`（事件处理器）。
 
-
-
-
-只要还有任务未完成，Node 的事件循环就会持续旋转。每当事件发生时，Node 就会调用任何正在监听该事件的 回调函数（事件处理器）。
-
-作为一名 Node 开发者，你的工作就是创建在响应事件时执行的回调函数。任何数量的回调函数都可以响应任何事件，但在任何时间，只会有一个回调函数在执行。
+作为一名 Node 开发者，你的工作就是创建在响应事件时执行的 `回调函数`。任何数量的 `回调函数` 都可以响应任何事件，但在任何时间，只会有一个 `回调函数` 在执行。
 
 你的程序可能可能执行的所有其他操作——例如等待来自文件的数据或传入的 HTTP 请求——都由 Node 在后台以并行方式处理。你的应用程序代码永远不会与任何其他内容同时执行。在运行期间，它将始终获得 Node JavaScript 引擎的全部关注。
 
@@ -233,7 +249,7 @@ Node 的哲学是给你对事件循环和系统资源的底层访问。或者用
 
 其他系统试图通过同时运行大量代码来获得并行性，通常是通过创建许多线程来实现。但 Node.js 不一样。对于 JavaScript 来说，Node 是一个单线程环境。在任何时刻，你的代码中最多只有一行在执行。
 
-Node 通过使用非阻塞技术处理绝大多数 I/O 任务来解决这一问题。你不需要逐行等待操作完成，而是创建一个回调函数，当操作最终成功或失败时，该函数就会被调用。
+Node 通过使用非阻塞技术处理绝大多数 I/O 任务来解决这一问题。你不需要逐行等待操作完成，而是创建一个 `回调函数`，当操作最终成功或失败时，该函数就会被调用。
 
 你的代码应该完成它需要的工作，然后迅速将控制权交回事件循环，以便 Node 可以处理其他事情。我们将在书中开发这些方面的实用示例，从第 9 页的第 2 章“处理文件系统”开始。
 
@@ -260,9 +276,13 @@ Node 的单线程事件循环也是如此。从多线程的角度来看，一次
 Node.js 是一个大奇的话题，所以让我们把它拆解为不同的方面。我们可能会讨论的 Node.js 开发有许多方面，从基础的 JavaScript 语法到版本控制不一。本书特别关注以下五个方面：
 
 - 实用编程
+
 - 架构与核心
+
 - 模式
+
 - JavaScript 特性（JavaScriptisms）
+
 - 支持代码
 
 让我们简要探索其中的每一个。
@@ -272,9 +292,6 @@ Node.js 是一个大奇的话题，所以让我们把它拆解为不同的方面
 实用编程的核心在于产生具有有用用途的实际代码。与文件系统交互、建立 socket 连接或提供 Web 应用程序都是实用编程的示例。
 
 其余每个章节将涵盖这些内容。每个章节中，我们都会讨论 Node 的某些特性。
-
-
-
 
 ## 为 Node.js 事件循环编写程序
 
@@ -309,11 +326,11 @@ console.log("Now watching target.txt for changes...");
 
 Node 的模块实现基于 CommonJS 模块规范²。模块可以依赖于模块，就像其他编程环境中的库一样，这些库导入或 #include 其他库。在第 3 章“使用 Sockets 网络”第 23 页，你将学习如何创建自己的模块。
 
-接下来，我们调用 `fs` 模块的 `watch()` 方法，它会轮询目标文件的变化，并在发生变化时调用提供的回调函数。
+接下来，我们调用 `fs` 模块的 `watch()` 方法，它会轮询目标文件的变化，并在发生变化时调用提供的 `回调函数`。
 
-在 JavaScript 中，函数是一等公民。这意味着它们可以赋值给变量，并作为参数传递给其他函数。我们的回调函数是一个 `anonymous`（匿名）函数；它没有名字。
+在 JavaScript 中，函数是一等公民。这意味着它们可以赋值给变量，并作为参数传递给其他函数。我们的 `回调函数` 是一个 `anonymous`（匿名）函数；它没有名字。
 
-回调函数在文件每次变化时调用 `console.log()` 向标准输出打印消息。让我们试一下。
+`回调函数` 在文件每次变化时调用 `console.log()` 向标准输出打印消息。让我们试一下。
 
 回到命令行并使用 `node` 启动监控程序，如下所示：
 
@@ -339,9 +356,13 @@ $ touch target.txt
 要运行程序，Node 执行了以下操作：
 
 - 它加载脚本，一直运行到最后一行，在控制台中产生 *Now watching* 消息。
+
 - 由于调用了 `watch()`，它看到还有更多工作要做。
+
 - 它 等待某事的发生，即 `fs` 模块观察到文件的变化。
-- 当检测到变化时，它执行回调函数。
+
+- 当检测到变化时，它执行 `回调函数`。
+
 - 它判断程序尚未结束，并恢复等待。
 
 Node.js 程序会经历这些步骤；事件循环不断旋转，直到没有可做的事或程序通过其他方式退出。例如，如果抛出异常且未被捕获，进程将退出。接下来我们将看到它是如何工作的。
@@ -378,7 +399,7 @@ Now watching target.txt for changes...
 
 ## 产生子进程
 
-让我们通过产生子进程来进一步增强我们的程序。我们将使用 child-process 模块及其 `spawn()` 方法。
+让我们通过产生子进程来进一步增强我们的程序。我们将使用 `child_process` 模块及其 `spawn()` 方法。
 
 打开编辑器并输入以下内容：
 
@@ -421,7 +442,7 @@ Watching target.txt for changes...
 
 记住，使用 Harmony 特性（如 `let`），你的代码需要 `--harmony` 标志。例如，`const` 不需要该标志，但 `let` 需要。
 
-接下来，注意我们在开头添加了一个新的 `require()`。调用('child_process') 返回子进程模块。我们只对 `spawn()` 方法感兴趣，因此将其赋值给一个同名的常量并忽略模块的其他部分。
+接下来，注意我们在开头添加了一个新的 `require()`。调用 `require('child_process')` 返回子进程模块。我们只对 `spawn()` 方法感兴趣，因此将其赋值给一个同名的常量并忽略模块的其他部分。
 
 ```javascript
 spawn = require('child_process').spawn,
@@ -429,7 +450,7 @@ spawn = require('child_process').spawn,
 
 记住，函数在 JavaScript 中是一等公民，所以我们可以像这里这样将它们赋值给变量。
 
-接下来，查看给 `fs.watch()` 的回调函数。
+接下来，查看给 `fs.watch()` 的 `回调函数`。
 
 ```javascript
 function() {
@@ -443,11 +464,10 @@ function() {
 `spawn()` 返回的对象是一个 `ChildProcess`³其 `stdin`、`stdout` 和 `stderr` 属性是用于读取或写入数据的流（Streams）。我们想要
 
 + 1. http://nodejs.org/api/fs.html
+
 2. http://wiki.creativecommons.org/wiki/Modules/1.1
+
 3. http://nodejs.org/api/child_process.html
-
-
-
 
 将子进程的标准输出直接重定向到我们自己的标准输出流中。这就是 `pipe()` 方法所的作用。
 
@@ -455,7 +475,7 @@ function() {
 
 ## 从 EventEmitter 捕获数据
 
-EventEmitter 是 Node.⁴ 中一个非常重要的类。它提供了一个用于分发事件和通知监听器的通道。你在 Node 中会遇到的很多对象都继承自 EventEmitter，就像我们在上一节中看到的 Streams（流）一样。
+`EventEmitter` 是 Node.⁴ 中一个非常重要的类。它提供了一个用于分发事件和通知监听器的通道。你在 Node 中会遇到的很多对象都继承自 `EventEmitter`，就像我们在上一节中看到的 Streams（流）一样。
 
 现在，让我们修改之前的程序，通过通过监听流上的事件来捕获子进程的输出。打开前一节中的 `watcher-spawn.js` 文件（即 `spawn-js`），找到对 `fs.watch()` 的调用。将其替换为：
 
@@ -483,9 +503,9 @@ Now watching target.txt for changes...
 [ '-rw-r--r-', '0B', 'target.txt' ]
 ```
 
-新的回调函数开头与之前相同，创建一个子进程并将其赋值给一个变量。它还创建了一个 `output` 变量，用于缓冲来自子进程的输出。
+新的 `回调函数` 开头与之前相同，创建一个子进程并将其赋值给一个变量。它还创建了一个 `output` 变量，用于缓冲来自子进程的输出。
 
-接下来，我们添加事件监听器。事件监听器是一个回调函数，当指定类型的事件被分发时就会会被调用。由于 Stream 类继承自 EventEmitter，因此我们可以监听子进程标准输出流的事件。
+接下来，我们添加事件监听器。事件监听器是一个 `回调函数`，当指定类型的事件被分发时就会会被调用。由于 Stream 类继承自 `EventEmitter`，因此我们可以监听子进程标准输出流的事件。
 
 > ⁴ http://nodejs.org/api/events.html
 
@@ -497,7 +517,7 @@ ls.stdout.on('data', function(chunk) {
 
 `on()` 方法为指定的事件类型添加监听器。我们监听 `data` 事件，是因为我们对流中输出的数据感兴趣。
 
-事件可以随带额外信息，这些信息以参数的形式传递给回调。特别是 `data` 事件会传递一个 `buffer` 对象。每当我们获得一个数据块时，就会将其追加到我们的 `output` 中。
+事件可以随带额外信息，这些信息以参数的形式传递给 `回调函数`。特别是 `data` 事件会传递一个 `buffer` 对象。每当我们获得一个数据块时，就会将其追加到我们的 `output` 中。
 
 `Buffer` 是 Node 表示二进制数据的方式。它指向由 Node 原生核心分配的一块内存，位于 JavaScript 引擎之外。`Bufffer` 可以调整大小，并且需要通过编码和解码来与 JavaScript 字符串进行转换。
 
@@ -512,9 +532,9 @@ ls.on('close', function() {
 });
 ```
 
-当子进程退出且其所有流都已刷新（flush）后，它会触发一个 `close` 事件。当这里的回调被调用时，我们通过分割一个或多个空白字符序列（使用正则表达式 `/\s+/`）来解析输出数据。最后，我们使用 `console.dir()` 来报告第一、第五和第九字段（索引为 0、4 和 8），它们分别对应于权限、大小和文件名。
+当子进程退出且其所有流都已刷新（flush）后，它会触发一个 `close` 事件。当这里的 `回调函数` 被调用时，我们通过分割一个或多个空白字符序列（使用正则表达式 `/\s+/`）来解析输出数据。最后，我们使用 `console.dir()` 来报告第一、第五和第九字段（索引为 0、4 和 8），它们分别对应于权限、大小和文件名。
 
-在文件监控这个很小的问题空间内，我们已经看到了 Node 的许多功能。你现在已经知道了如何使用 Node 类，包括 `EventEmitter`、`Stream`、`ChildProcess` 和 `Buffer`。你还拥有编写异步回调函数和为事件循环编写代码的亲身经验。
+在文件监控这个很小的问题空间内，我们已经看到了 Node 的许多功能。你现在已经知道了如何使用 Node 类，包括 `EventEmitter`、`Stream`、`ChildProcess` 和 `Buffer`。你还拥有编写异步 `回调函数` 和为事件循环编写代码的亲身经验。
 
 让我们在文件系统之旅的下一阶段扩展这些概念：读取和写入文件。
 
@@ -522,7 +542,7 @@ ls.on('close', function() {
 
 ## 异步读写文件
 
-在本章早的早些时候，我们编写了一系列可以监控文件变化的 Node 程序。现在，让我们探索 Node 读写文件的方法。在此，我们将看到 Node 中两种常见的错误处理模式：`EventEmitter` 上的 `error` 事件和 `err` 回调。
+在本章早的早些时候，我们编写了一系列可以监控文件变化的 Node 程序。现在，让我们探索 Node 读写文件的方法。在此，我们将看到 Node 中两种常见的错误处理模式：`EventEmitter` 上的 `error` 事件和 `err` `回调函数`。
 
 在 Node 中读写文件有几种方法。最简单的方法是一次读取或写入整个文件。这种技术对于小文件效果良好。其他方法通过创建 `Streams` 或在 `buffer` 中分阶段内容来读写。这里是一个一次性处理整个文件方法的示例：
 
@@ -535,11 +555,7 @@ fs.readFile('target.txt', function (err, data) {
   }
 ```
 
-
-
-
-
-这些函数依赖于我们在本章中使用相同类型的回调参数。它们默认都是异步的，但许多函数都提供了对等的 *Sync*（同步）版本。
+这些函数依赖于我们在本章中使用相同类型的 `回调函数` 参数。它们默认都是异步的，但许多函数都提供了对等的 *Sync*（同步）版本。
 
 ## Node 程序的两个阶段
 
@@ -555,11 +571,11 @@ fs.readFile('target.txt', function (err, data) {
 
 ## 总结
 
-在本章中，我们使用 Node 按照 Node 的事件、异步、以回调为导向的方式执行文件操作。你学习了如何监控文件变化，以及读取和写入文件。你还学习了如何创建子进程以及访问命令行参数。
+在本章中，我们使用 Node 按照 Node 的事件、异步、以 `回调函数` 为导向的方式执行文件操作。你学习了如何监控文件变化，以及读取和写入文件。你还学习了如何创建子进程以及访问命令行参数。
 
-在此过程中，我们涵盖了 `EventEmitter` 类。我们使用 `on()` 方法来监听事件并在回调函数中处理它们。我们使用了 `Streams`——这是一种特殊的 `EventEmitter`——来以缓冲块的形式处理数据，或将其直接管道（pipe）到其他流中。
+在此过程中，我们涵盖了 `EventEmitter` 类。我们使用 `on()` 方法来监听事件并在 `回调函数` 中处理它们。我们使用了 `Streams`——这是一种特殊的 `EventEmitter`——来以缓冲块的形式处理数据，或将其直接管道（pipe）到其他流中。
 
-哦，我们不要忘记错误。你学习了 Node 向回调函数传递 `err` 参数的约定，以及如何从 `EventEmitter` 捕获错误事件。
+哦，我们不要忘记错误。你学习了 Node 向 `回调函数` 传递 `err` 参数的约定，以及如何从 `EventEmitter` 捕获错误事件。
 
 在继续阅读本书时，请记住这些模式。第三方库可能有不同的风格，但你在这里学到的概念会在整个 Node 生态系统中反复出现。
 
@@ -572,6 +588,7 @@ fs.readFile('target.txt', function (err, data) {
 我们在本章中开发的各种示例程序缺少许多安全检查。考虑以下问题，以及你将如何更改代码来解决它们：
 
 - 在文件监控示例中，如果目标文件不存在会怎样？
+
  如果 如果被监控的文件被删除了会怎样？
 
 ## 扩展功能
@@ -579,11 +596,14 @@ fs.readFile('target.txt', function (err, data) {
 在我们文件监控器程序的早期示例中，我们从 `process.argv` 获取了要监控的文件名。考虑以下问题：
 
 - 相反，你如何从 `process.argv` 获取要启动的进程？
+
 - 如何从 `process.argv` 向启动的进程传递任意数量的额外参数（例如 `node --harmony watcher-hw.js -l -h`）？
 
 # 第 3 章
 
-## Node.js 是为了网络编程而生的。在本章中，我们将探索 Node 对底层 socket 连接的内置支持。TCP socket 成了现代网络应用程序的骨干，理解它们对于我们在书的其余部分进行更复杂的网络操作将大有裨益。
+## 使用 Sockets 进行网络连接
+
+Node.js 是为了网络编程而生的。在本章中，我们将探索 Node 对底层 socket 连接的内置支持。TCP socket 成了现代网络应用程序的骨干，理解它们对于我们在书的其余部分进行更复杂的网络操作将大有裨益。
 
 当你开发基于 socket 的服务器和客户端时，你将学习到以下 Node.js 方面。
 
@@ -602,7 +622,6 @@ JavaScript 语言拥有一种有趣的继承模型。你将学习 Node 用于在
 ## 支持代码
 
 测试对于确保我们的程序按照我们预期的方式运行至关重要。在本章中，我们将开发一个故意表现糟糕的测试服务器，以探测我们协议的边缘情况。
-
 
 首先，我们将开发一个简单且完整的 TCP 服务器程序。然后，随着我们解决健壮性、模块化和可测试性等问题，我们将迭代地改进服务器。
 
@@ -627,7 +646,7 @@ server = net.createServer(function(connection) {
 server.listen(5432);
 ```
 
-`net.createServer()` 接收一个回调函数并返回一个 `Server` 对象。当另一个端点连接时，Node.js 会调用该回调函数。`connection` 参数是一个用于发送或接收数据的 `Socket` 对象。
+`net.createServer()` 接收一个 `回调函数` 并返回一个 `Server` 对象。当另一个端点连接时，Node.js 会调用该 `回调函数`。`connection` 参数是一个用于发送或接收数据的 `Socket` 对象。
 
 调用 `server.listen()` 会绑定指定的端口。在这种情况下，我们绑定 TCP 端口 5432。图 4 Node.js 服务器绑定 TCP socket 监听在第 25 页显示了这种基础设置。图中显示了我们的 Node.js 进程绑定了一个 TCP 端口。数量的客户端（可以是 Node 进程）都可以连接到该端口。
 
@@ -656,9 +675,6 @@ server = net.createServer(function(connection) {
 });
 ```
 
-
-
-
 ```javascript
 // cleanup
 connection.on('close', function() {
@@ -679,15 +695,15 @@ server.listen(5432, function() {
 });
 ```
 
-将该文件保存为 `net-watcher.js`。这里的大部分代码都取自书中之前的示例，但它们看起来应该非常熟悉。`net-watcher` 程序的新颖部分位于 `createServer()` 回调函数内部。该回调函数做了三件事：
+将该文件保存为 `net-watcher.js`。这里的大部分代码都取自书中之前的示例，但它们看起来应该非常熟悉。`net-watcher` 程序的新颖部分位于 `createServer()` `回调函数` 内部。该 `回调函数` 做了三件事：
 
 - 它报告连接已建立（通过 `connection.write` 向客户端报告，同时也向控制台报告）。
 
-- 它开始监听目标文件，并保存返回的 watcher 对象。此回调使用 `connection.write` 向客户端发送更改信息。
+- 它开始监听目标文件，并保存返回的 watcher 对象。此 `回调函数` 使用 `connection.write` 向客户端发送更改信息。
 
 - 它监听连接的关闭事件，以便报告订阅者已断开连接并使用 `watcher.close()` 停止监控文件。
 
-最后，注意最后传递给 `server.listen()` 的回调函数。Node 在成功绑定端口 5432 并准备好接收连接后会调用此函数。
+最后，注意最后传递给 `server.listen()` 的 `回调函数`。Node 在成功绑定端口 5432 并准备好接收连接后会调用此函数。
 
 ## 使用 Telnet 连接到 TCP Socket 服务器
 
@@ -721,6 +737,7 @@ Subscriber connected.
 ```
 
 在 telnet 终端中，片刻后你应该能看到类似下面的一行：
+
 File 'target.txt' changed: Sat Jan 12 2013 12:35:52 GMT-0500 (EST)
 
 你可以通过输入 `Ctrl-]` 然后 `Ctrl-C` 来杀死 telnet 会话。如果你这样做，你将在第一个终端中看到这一行：
@@ -787,6 +804,7 @@ Unix sockets 比 TCP sockets 快，因为它们不需要调用网络硬件。然
 消息如下：
 
 - 当连接建立时，客户端接收到：Now watching target.txt for changes...
+
 - 每当目标文件更改时，客户端接收到：File 'target.txt' changed: Sat Jan 12 2013 12:35:52 GMT-0500 (EST)
 
 `type` 字段指示指定的文件现在正被监控。`timestamp` 字段包含一个代表自1970 年 1 月 1 日午夜以来毫秒数的整数值。这是一个易于处理的格式。
@@ -844,10 +862,6 @@ Escape character is '^'
 
 现在我们准备好处理这些消息的客户端程序了。
 
-
-
-
-
 ## 创建 Socket 客户端连接
 
 在本章目前为止，我们已经探索了 Node socket 的服务端。在这里，我们将编写一个 Node 客户端程序，用于接收来自我们的 `net-watcher-json-service` 程序的 JSON 消息。我们将从一个简单的实现开始，并在本章后续章节中对其进行改进。
@@ -855,7 +869,7 @@ Escape character is '^'
 打开编辑器并插入以下内容：
 
 ```javascript
-/net-watcher-json-client.js
+net-watcher-json-client.js
 "use strict";
 const net = require('net');
 const client = net.connect({port: 5432});
@@ -876,7 +890,7 @@ client.on('data', function(data) {
 
 此短程序使用 `net.connect()` 创建到 localhost 端口 5432 的客户端连接，然后等待数据。`client` 对象是一个 `Socket`，就像我们在服务端看到的入站连接一样。
 
-每当发生 `data` 事件时，我们的回调函数就会获取接收到的 buffer 对象，解析 JSON 消息，然后向控制台打印适当的消息。
+每当发生 `data` 事件时，我们的 `回调函数` 就会获取接收到的 buffer 对象，解析 JSON 消息，然后向控制台打印适当的消息。
 
 要运行该程序，请确保 `net-watcher-json-service` 正在运行。在另一个终端中，运行客户端：
 
@@ -935,7 +949,7 @@ client.on('data', function(data) {
 打开编辑器并输入以下内容：
 
 ```javascript
-/networking/net-watcher-json-test-service.js
+networking/net-watcher-json-test-service.js
 "use strict";
 const net = require('net');
 
@@ -997,10 +1011,10 @@ at EventEmitter.emit (events.js:96)
 
 ## Node 中的继承
 
-首先，让我们看看 Node 是如何处理的。以下代码设置 LDJClient 继承自 EventEmitter：
+首先，让我们看看 Node 是如何处理的。以下代码设置 `LDJClient` 继承自 `EventEmitter`：
 
 ```javascript
-/networking/ldj.js
+networking/ldj.js
 const events = require('events'),
 util = require('util');
 // 客户端构造函数
@@ -1012,12 +1026,9 @@ util.inherits(LDJClient, events.EventEmitter);
 
 `LDJClient` 是一个构造函数，这意味着其他代码应该调用 `new LDJClient(stream)` 来获取实例。`stream` 参数是一个发射 `data` 事件的对象，例如 Socket 连接。
 
-在构造函数内部，我们在 *this* 上调用 EventEmitter 构造函数。该行代码相当于在具有经典继承的语言中调用 *super()*。
+在构造函数内部，我们在 *this* 上调用 `EventEmitter` 构造函数。该行代码相当于在具有经典继承的语言中调用 *super()*。
 
 最后，我们使用 `util.inherits` 让 `LDJClient` 的原型父对象成为 `EventEmitter` 的原型。如果这听起来很晦懂，别担心。它就像在具有经典继承的语言中说“class LDJClient inherits from EventEmitter”一样。
-
-
-
 
 ## 第 3 章. 使用 Sockets 进行网络连接 • 36
 
@@ -1145,14 +1156,11 @@ client.on('message', function(message) {
 
 （此处省略了原文中重复出现的代码块，逻辑已在上方整合）
 
-
-
-
 # 第 4 章
 
 ## 健壮的消息服务
 
-当你编写 Node.js 程序时，你通常使用的不仅仅是核心库。Node.js 的包管理器 npm 提供了丰富的社区开发模块集合可供你使用。在本章中，你将学习如何充分利用第三方模块。
+当你编写 Node.js 程序时，你通常使用的不仅仅是核心库。Node.js 的包管理器 `npm` 提供了丰富的社区开发模块集合可供你使用。在本章中，你将学习如何充分利用第三方模块。
 
 特别地，我们将探索如何在 Node 中编写健壮的消息服务。在上一上章节中，我们已经接触了网络化应用开发的开端，现在是时候将其提升到新的高度了。创建这些消息应用程序将让你接触到 Node.js 开发的以下方面。
 
@@ -1166,11 +1174,11 @@ Node.js 是单线程的，但你仍然可以通过运行更多进程来利用多
 
 ## JavaScript 特性（JavaScriptisms）
 
-JavaScript 中的函数是变长的（variadic）。这意味着它们可以用任意数量的参数进行调用，无论你是否计划接收这些参数。我们将使用的消息库利用了这一特性向你的回调函数发送消息数据。
+JavaScript 中的函数是变长的（variadic）。这意味着它们可以用任意数量的参数进行调用，无论你是否计划接收这些参数。我们将使用的消息库利用了这一特性向你的 `回调函数` 发送消息数据。
 
 ## 支持代码
 
-npm 是 Node 生态系统中不可或缺的一部分。你将学习如何使用和管理通过 npm 提供的模块。有时模块具有 npm 之外的依赖；你也将学习如何构建这些依赖。
+`npm` 是 Node 生态系统中不可或缺的一部分。你将学习如何使用和管理通过 `npm` 提供的模块。有时模块具有 `npm` 之外的依赖；你也将学习如何构建这些依赖。
 
 为了创建我们健壮的消息服务，我们将使用一个名为 ØMQ 的跨平台库（读作 "Zero-M-Q"）。MQ 代表消息队列。ØMQ 提供了高扩展性和低延迟的消息传递。凭借其基于事件循环的模型，ØMQ 与 Node.js 的配合就像花生酱配配果酱一样恰当。
 
@@ -1178,23 +1186,25 @@ npm 是 Node 生态系统中不可或缺的一部分。你将学习如何使用�
 
 ## ØMQ 的优势
 
-问为什么我们使用 ØMQ 进行消息传递而不是自己编写一切是合理的。答案是 Node 社区信了 Unix 哲学：“只做好一件事”。提交者保持 Node 核心精小且紧凑，将其他一切留给通过 npm 发布模块的更广泛的开发者。
+问为什么我们使用 ØMQ 进行消息传递而不是自己编写一切是合理的。答案是 Node 社区信了 Unix 哲学：“只做好一件事”。提交者保持 Node 核心精小且紧凑，将其他一切留给通过 `npm` 发布模块的更广泛的开发者。
 
 尽管 Node.js 核心对绑定和连接套接字提供了极好的底层支持，但它忽略了更高级的消息模式。ØMQ 的目的是暴露高级别的消息模式，并为你处理许多底层网络问题。参考以下示例：
 
 - 如果 ØMQ 端点由于任何原因断开连接（例如网络抖动或进程重启），它们会自动重新连接。
+
 - ØMQ 只投递消息，因此你不需要创建缓冲区来处理分块数据。
+
 - ØMQ 的低开销协议处理了许多路由细节，例如将响应发送回正确的客户端。
 
-使用 ØMQ 就像使用任何良好的库一样，你的应用程序可以专注于真正重要的事情。现在，让我们用 npm 设置好一切，这样我们就可以使用 ØMQ 在 Node 中快速构建健壮的消息应用程序。
+使用 ØMQ 就像使用任何良好的库一样，你的应用程序可以专注于真正重要的事情。现在，让我们用 `npm` 设置好一切，这样我们就可以使用 ØMQ 在 Node 中快速构建健壮的消息应用程序。
 
 ## 使用 npm 导入外部模块
 
-npm 是你通往日益增长的开源 Node 模块池的门户。它们涵盖了从流解析、连接池到会话管理的所有功能。你很少编写一个不使用 npm 至少一个模块的 Node 应用。我们将在本书中使用许多外部模块，`zmq`（ØMQ 的 Node 绑定）就是第一个。
+`npm` 是你通往日益增长的开源 Node 模块池的门户。它们涵盖了从流解析、连接池到会话管理的所有功能。你很少编写一个不使用 `npm` 至少一个模块的 Node 应用。我们将在本书中使用许多外部模块，`zmq`（ØMQ 的 Node 绑定）就是第一个。
 
-由 npm 管理的模块可以是纯 JavaScript，也可以是 JavaScript 与原生插件代码的结合.¹ 插件是动态链接的共享对象——它们为与 C 或 C++ 编写的原生库协同工作提供了胶水。
+由 `npm` 管理的模块可以是纯 JavaScript，也可以是 JavaScript 与原生插件代码的结合.¹ 插件是动态链接的共享对象——它们为与 C 或 C++ 编写的原生库协同工作提供了胶水。
 
-绝大多数模块仅通过 npm 命令行工具即可安装，即使它们包含插件。但少数模块（如 `zmq` 模块）也有额外的要求。要在 Node 中使用 ØMQ，你必须先安装 ØMQ 基础库；然后你可以通过 npm 引入 `zmq` 模块。
+绝大多数模块仅通过 `npm` 命令行工具即可安装，即使它们包含插件。但少数模块（如 `zmq` 模块）也有额外的要求。要在 Node 中使用 ØMQ，你必须先安装 ØMQ 基础库；然后你可以通过 `npm` 引入 `zmq` 模块。
 
 ## 安装 ØMQ 基础库
 
@@ -1223,12 +1233,14 @@ patching file tests/test_disconnect_inproc.cpp
 
 ## 安装 zmq Node 模块
 
-一旦你安装了 ØMQ 基础库，就可以使用 npm 下载 `zmq` Node 模块。
+一旦你安装了 ØMQ 基础库，就可以使用 `npm` 下载 `zmq` Node 模块。
 
 创建一个名为 `messaging` 的目录并在命令行中导航到该目录。然后安装 `zmq`：
 
 1. http://nodejs.org/api/addons.html
+
 2. http://www.zeromq.org/intro-get-the-software
+
 3. http://brew.sh
 
 ```bash
@@ -1288,10 +1300,6 @@ console.log('Listening for zmq subscribers...');
 重要的是，我们只调用一次 `fs.watch()`。我们在上一章节的服务器会为每个连接的客户端调用一次 `watch()`。这里我们只有一个文件系统监听器，它调用发布者的 `send()` 方法。
 
 ØMQ 通过处理缓冲区和重连等许多底层细节，让一切变得更简单。让我们看看使用 ØMQ 代替原始 TCP 实现一个监听器会变得简单多少。
-
-
-
-
 
 ## 第 4 章 健壮的消息传递服务 • 46
 
@@ -1361,6 +1369,7 @@ $ touch target.txt
 ```
 
 在订阅者终端中，你应该看到类似这样的输出：
+
 File 'target.txt' changed at Wed May 22 2013 21:34:10 GMT-0400 (EDT)
 
 到目前为止，一切看起来非常棒。发布者和订阅者程序能够成功与 PUB/SUB 套接对进行通信。
@@ -1401,6 +1410,8 @@ REQ/REP 对是同步步通信的。一个请求进来，然后发送一个回复
 
 让我们看看它是如何工作的。打开编辑器并输入以下内容：
 
+
+
 ```javascript
 messaging/zmq-rep.js
 "use strict";
@@ -1409,7 +1420,7 @@ const
   zmq = require('zmq');
 
 // 创建响应者端点
-  responder = zmq.socket('rep');
+responder = zmq.socket('rep');
 
 // 监听 TCP 端口 5433
 responder.bind('tcp://*:5433');
@@ -1417,7 +1428,7 @@ responder.bind('tcp://*:5433');
 // 处理传入的请求
 responder.on("message", function(data) {
   let request = JSON.parse(data);
-  console.log("Received request: ' + request.path);
+  console.log("Received request: " + request.path);
 
   // 读取文件
   fs.readFile(request.path, function(err, content) {
@@ -1438,9 +1449,9 @@ process.on('SIGINT', function () {
 
 将此文件保存为 `zmq-rep.js`。响应者绑定到 TCP 端口 5433 并等待传入的请求。
 
-## 第 4 章 健壮的消息传递服务 • 50
+## 第 4 章 健壮的消息传递服务
 
-按照常例在终端中使用 --harmony 启动程序：
+按照常例在终端中使用 `--harmony` 启动程序：
 
 ```
 $ node --harmony zmq-rep.js
@@ -1449,7 +1460,7 @@ Listening for requests...
 
 看起来我们的响应者准备好了！但为了连接它，我们需要开发一个客户端，让我们编写一个。
 
-## 发起请求
+### 发起请求
 
 创建一个与响应者工作的请求者非常短。打开编辑器并输入以下内容：
 
@@ -1468,17 +1479,17 @@ requester.on("message", function(data) {
   console.log("Received response: " + response);
 });
 
-requester.connect("tcp://localhost:5432");
+requester.connect("tcp://localhost:5433");
 // 发送内容请求
-console.log("Sending request for ' + filename);
+console.log("Sending request for " + filename);
 requester.send(JSON.stringify({
   path: filename
-})));
+}));
 ```
 
 将文件保存为 `zmq-req.js`。该程序首先创建一个用于传入消息事件（回复）的 ZeroMQ REQ Socket。
 
-让我们看看这些 REQ 和 REP 套接字是如何协同工作的。在第一个终端中保持 zmq-rep 程序运行的同时，在另一个终端运行它：
+让我们看看这些 REQ 和 REP 套接字是如何协同工作的。在第一个终端中保持 `zmq-rep` 程序运行的同时，在另一个终端运行它：
 
 ```
 $ node --harmony zmq-req.js target.txt
@@ -1488,15 +1499,11 @@ Received response: { content: '', timestamp: 1370271311810, pid: 32730 }
 
 成功！REP 端点接收了请求，处理了它，并返回了回复。
 
-
-
-
-
-# 大规模交易同步
+### 大规模交易同步
 
 在 Node 中使用 ZeroMQ REP/REQ 套接对时存在一个限制。应用程序的每个端点一次只能处理一个请求或一个响应。不存在并行性。
 
-我们可以通过对请求端程序进行微小修改来观察这一点。打开上节节中的 `zmq-filer-req.js` 文件。找到发送请求的代码并将其封装在如下循环中：
+我们可以通过对请求端程序进行微小修改来观察这一点。打开上节中的 `zmq-filer-req.js` 文件。找到发送请求的代码并将其封装在如下循环中：
 
 ```javascript
 for (let i=1; i<=3; i++) {
@@ -1536,40 +1543,40 @@ Sending response content
 
 出于这个原因，简单的 REQ/REP 对可能无法满足你对高性能 Node.js 的需求。接下来我们将使用更高级的 ZeroMQ 套接类型构建一个 Node 进程集群，以扩展我们的吞吐量。
 
-# 路由与处理消息
+### 路由与处理消息
 
 我们探索的 REQ/REP 对通过顺序操作使得请求/响应逻辑易于编码。给定的请求端或响应端一次只会感知一条消息。ZeroMQ 包含了更高级的套接字类型 ROUTER 和 DEALER。让我们探索这些；然后我们就可以准备好构建我们的 Node.js 集群了。
 
-## 路由消息
+#### 路由消息
 
-你可以将 ROUTER 套接字认为是一个并行的 REP 套接字。ROUTER 套接字不是一次只回复一个消息，而是可以同时处理许多请求。它记得每个请求来自哪个连接，并据此路由消息。
+你可以将 `ROUTER` 套接字认为是一个并行的 `REP` 套接字。`ROUTER` 套接字不是一次只回复一个消息，而是可以同时处理许多请求。它记得每个请求来自哪个连接，并据此路由消息。
 
-回想《实现消息协议》第 28 页，每当你进行网络编程时，你都在与一个或多个协议打交道。ZeroMQ 使用 ZeroMQ 消息传输协议交换消息。该协议使用一系列低开销的*帧*（frames）来组成消息。ROUTER 套接字使用这些帧将响应消息路由回到发布请求的连接。
+回想《实现消息协议》第 28 页，每当你进行网络编程时，你都在与一个或多个协议打交道。ZeroMQ 使用 ZeroMQ 消息传输协议交换消息。该协议使用一系列低开销的`frames`（帧）来组成消息。`ROUTER` 套接字使用这些帧将响应消息路由回到发布请求的连接。
 
-大多数时候，你的 Node 程序可以忽略 ZeroMQ 帧的底层细节，因为较简单的套接字类型每个消息只需要帧。但 ROUTER 套接字类型使用了多个帧。
+大多数时候，你的 Node 程序可以忽略 ZeroMQ 帧的底层细节，因为较简单的套接字类型每个消息只需要帧。但 `ROUTER` 套接字类型使用了多个帧。
 
-这是一个如何在 Node 中创建 ROUTER 套接字的示例，带有一个处理所有入站消息的处理器。
+这是一个如何在 Node 中创建 `ROUTER` 套接字的示例，带有一个处理所有入站消息的处理器。
 
 ```javascript
 const zmq = require('zmq');
 router = zmq.socket('router');
 router.on('message', function() {
-  let frames = Array.prototype.slice.call(null, arguments);
+  let frames = Array.prototype.slice.call(arguments);
 // ...
 });
 ```
 
-之前，我们的消息处理器会接收一个数据参数，但注意这个处理函数没有接收任何参数。`zmq` 模块实际上将消息的所有帧作为处理函数的参数传递给处理函数。它可以这样做是因为 JavaScript 函数是变长的的——它们在被调用时可以接收任意数量的参数。
+之前，我们的消息处理器会接收一个数据参数，但注意这个处理函数没有接收任何参数。`zmq` 模块实际上将消息的所有帧作为处理函数的参数传递给处理函数。它可以这样做是因为 JavaScript 函数是变长的——它们在被调用时可以接收任意数量的参数。
 
-函数内部的 `arguments` 对象是一个类数组对象，包含了所有传入的参数。使用 `Array.prototype.call(null, arguments)` 返回一个具有相同内容的真实 JavaScript Array 实例。
+函数内部的 `arguments` 对象是一个类数组对象，包含了所有传入的参数。使用 `Array.prototype.slice.call(null, arguments)` 返回一个具有相同内容的真实 JavaScript `Array` 实例。
 
-现在我们可以获取所有的帧了，让我们 DEALER 套接字类型。
+现在我们可以获取所有的帧了，让我们看看 `DEALER` 套接字类型。
 
-## 处理消息
+#### 处理消息
 
-如果说 ROUTER 套接字是并行的 REP 套接字，那么 DEALER 就是并行的 REQ。DEALER 套接字可以并行发送多个请求。
+如果说 `ROUTER` 套接字是并行的 `REP` 套接字，那么 `DEALER` 就是并行的 `REQ`。`DEALER` 套接字可以并行发送多个请求。
 
-让我们看看 dealer 和 router 在 Node 中是如何协同工作的。看看这段代码示例：
+让我们看看 `dealer` 和 `router` 在 Node 中是如何协同工作的。看看这段代码示例：
 
 ```javascript
 const zmq = require('zmq'),
@@ -1577,40 +1584,40 @@ router = zmq.socket('router'),
 dealer = zmq.socket('dealer');
 
 router.on('message', function() {
-  let frames = Array.prototype.slice.call(null, arguments);
+  let frames = Array.prototype.slice.call(arguments);
   dealer.send(frames);
 });
 dealer.on('message', function() {
-  let frames = Array.prototype.slice.call(null, arguments);
+  let frames = Array.prototype.slice.call(arguments);
   router.send(frames);
 });
 ```
 
-在这里我们同时创建了 ROUTER 套接字和 DEALER 套接字。无论哪一个接收到消息，它都会提取帧并发送到另一个套接字。
+在这里我们同时创建了 `ROUTER` 套接字和 `DEALER` 套接字。无论哪一个接收到消息，它都会提取帧并发送到另一个套接字。
 
-这意味着进入 router 的入站请求将传递给 dealer 发送到它的连接中。同样，进入 dealer 的入站响应将转发回 router，router 将每个响应引导回请求它的连接。
+这意味着进入 `router` 的入站请求将传递给 `dealer` 发送到它的连接中。同样，进入 `dealer` 的入站响应将转发回 `router`，`router` 将每个响应引导回请求它的连接。
 
-代码示例没有包含任何对 `bind()` 或 `connect()` 的调用，所以它还不是一个功能性示例。尽管如此，你可以在第 54 页的图7看到我们追求的基本结构：一个同时使用 ROUTER 和 DEALER ZMQ 套接字的 Node.js 程序。
+代码示例没有包含任何对 `bind()` 或 `connect()` 的调用，所以它还不是一个功能性示例。尽管如此，你可以在图 7 中看到我们追求的基本结构：一个同时使用 `ROUTER` 和 `DEALER` ZMQ 套接字的 Node.js 程序。
 
-图中中间的方框是 Node 程序。一个入站 REQ 套接字连接到 ROUTER。当它发出请求消息时，ROUTER 将其传递给 DEALER。DEALER 选择连接到它的 REP 套接字之一转发请求。
+图中中间的方框是 Node 程序。一个入站 `REQ` 套接字连接到 `ROUTER`。当它发出请求消息时，`ROUTER` 将其传递给 `DEALER`。`DEALER` 选择连接到它的 `REP` 套接字之一转发请求。
 
 ![](img/4fd6c7ecbcaceceafb5f645d145c46f5_69_0.png)
 
-图7—一个使用 ROUTER 和 DEALER ZeroMQ 套接字的 Node.js 程序
+图 7——一个使用 `ROUTER` 和 `DEALER` ZeroMQ 套接字的 Node.js 程序
 
-当 REP 连接产生响应时，它遵循相反的路由。DEALER 接收响应并将其抛回 ROUTER。ROUTER 查看消息的帧以确定其来源，并将响应发回发送它的 REQ。从 REQ 的角度来看，什么都没有改变。现在是时候使用这些新类型了。
+当 `REP` 连接产生响应时，它遵循相反的路由。`DEALER` 接收响应并将其抛回 `ROUTER`。`ROUTER` 查看消息的帧以确定其来源，并将响应发回发送它的 `REQ`。从 `REQ` 的角度来看，什么都没有改变。现在是时候使用这些新类型了。
 
-## Clustering.js 进程
+#### Clustering.js 进程
 
-在多线程系统中，并行执行更多工作是常见的。但 Node.js 使用单线程事件循环，因此为了利用多个核心或处理器，你需要启动更多的进程。这被称为集群，是 Node 内置 cluster 模块的功能。
+在多线程系统中，并行执行更多工作是常见的。但 Node.js 使用单线程事件循环，因此为了利用多个核心或处理器，你需要启动更多的进程。这被称为集群，是 Node 内置 `cluster` 模块的功能。
 
-为了探索 cluster 模块的工作方式我们将构建一个管理工作池的程序。
+为了探索 `cluster` 模块的工作方式我们将构建一个管理工作池的程序。
 
-## 在集群中派生工作进程
+##### 在集群中派生工作进程
 
 回想《生成子进程》第 13 页，我们使用 `child_process` 模块的 `spawn()` 函数来启动进程。这对于从 Node 程序执行非 Node 非常有效，但对于启动相同 Node 程序的副本，派生（fork）是更好的选择。
 
-每次当你调用 cluster 模块的 `fork()` 方法，它都会创建一个运行相同脚本进程。为了理解我的意思，请看下面的代码片段。它展示了集群应用程序的基本框架。
+每次当你调用 `cluster` 模块的 `fork()` 方法，它都会创建一个运行相同脚本进程。为了理解我的意思，请看下面的代码片段。它展示了集群应用程序的基本框架。
 
 ```javascript
 const cluster = require('cluster');
@@ -1625,7 +1632,7 @@ if (cluster.isMaster) {
 }
 ```
 
-首先，我们检查当前进程是否为主进程。如果是，我们使用 `cluster.fork()` 创建额外的进程。fork 方法启动运行相同脚本的新 Node 进程，但该进程的 `cluster.isMaster` 为 false。
+首先，我们检查当前进程是否为主进程。如果是，我们使用 `cluster.fork()` 创建额外的进程。`fork` 方法启动运行相同脚本的新 Node 进程，但该进程的 `cluster.isMaster` 为 `false`。
 
 派生的进程被称为工作进程。它们通过各种事件与主进程进行通信。
 
@@ -1637,33 +1644,29 @@ cluster.on('online', function(worker) {
 });
 ```
 
-当 cluster 模块发出 online 事件时，会传递一个 worker 参数。该对象的属性之一是 process——即在任何 Node 程序中都能找到的那种进程。
-
-
-
-
+当 `cluster` 模块发出 `online` 事件时，会传递一个 `worker` 参数。该对象的属性之一是 `process`——即在任何 Node 程序中都能找到的那种进程。
 
 同样，主进程可以监听进程的退出：
 
-```
+```javascript
 cluster.on('exit', function(worker, code, signal) {
   console.log('Worker ' + worker.process.pid + ' exited with code ' + code);
 });
 ```
 
-与 online 事件类似，exit 事件也包含一个 worker 对象。该事件还包含了进程的退出状态码，以及用于停止进程的操作系统信号（如 SIGINT 或 SIGTERM）。
+与 `online` 事件类似，`exit` 事件也包含一个 `worker` 对象。该事件还包含了进程的退出状态码，以及用于停止进程的操作系统信号（如 `SIGINT` 或 `SIGTERM`）。
 
-## 构建 Cluster
+##### 构建 Cluster
 
 现在是时候将所有内容整合在一起了，利用 Node 集群功能以及我们一直讨论的 ØMQ 消息模式。我们将构建一个将请求分到工作进程池的程序。
 
-我们的主 Node 进程将创建 ROUTER 和 DEALER 套字并启动 workers。每个 worker 将创建一个连接回 DEALER 的 REP 套字。
+我们的主 Node 进程将创建 `ROUTER` 和 `DEALER` 套字并启动 workers。每个 worker 将创建一个连接回 `DEALER` 的 `REP` 套字。
 
 下面的图展示了所有这些组件是如何组合在一起的。在之前的图中，矩形代表 Node.js 进程。椭圆表示由 ØMQ 套字绑定的资源，箭头显示哪些套字连接到哪些端点。
 
 ![](img/4fd6c7ecbcaceceafb5f645d145c46f5_71_0.png)
 
-图 8—将请求路由到工作进程池的 Node.js 集群
+图 8——将请求路由到工作进程池的 Node.js 集群
 
 主进程是架构中最稳定的部分（它管理 workers），因此它负责绑定工作。集群的 worker 进程和服务的客户端都连接到由主进程绑定的端点。记住，消息的流是由套字类型决定的，而不是由哪个套字恰好发生了绑定或连接。
 
@@ -1673,14 +1676,14 @@ cluster.on('exit', function(worker, code, signal) {
 messaging/zmq-filer-rep-cluster.js
 'use strict';
 const
-  cluster = require('cluster');
-  fs = require('fs');
+  cluster = require('cluster'),
+  fs = require('fs'),
   zmq = require('zmq');
 
 if (cluster.isMaster) {
   // 主进程 - 创建 ROUTER 和 DEALER 套字，绑定端点
   let
-    router = zmq.socket('router').bind('tcp://127.0.0.1:54333');
+    router = zmq.socket('router').bind('tcp://127.0.0.1:54333'),
     dealer = zmq.socket('dealer').bind('ipc://filer-dealer.ipc');
 
   // 在 router 和 dealer 之间转发消息
@@ -1690,7 +1693,7 @@ if (cluster.isMaster) {
   });
 
   dealer.on('message', function() {
-    let frames = Array.prototype.slice.call(null, arguments);
+    let frames = Array.prototype.slice.call(arguments);
     router.send(frames);
   });
 
@@ -1705,37 +1708,34 @@ if (cluster.isMaster) {
   }
 } else {
   // worker 进程 - 创建 REP 套字，连接到 DEALER
-  let responder
-    responder = zmq.socket('rep').connect('ipc://filer-dealer.ipc');
+  let responder = zmq.socket('rep').connect('ipc://filer-dealer.ipc');
 
   responder.on('message', function(data) {
 
     // 解析传入消息
     let request = JSON.parse(data);
     console.log(process.pid + ' received request for: ' + request.path);
+
+    // 读取文件并回复内容
+    fs.readFile(request.path, function(err, data) {
+      console.log(process.pid + ' sending response');
+      responder.send(JSON.stringify({
+        pid: process.pid,
+        data: data.toString(),
+        timestamp: Date.now()
+      }));
+    });
   });
-
-```
-
-```javascript
-// 读取文件并回复内容
-fs.readFile(request.path, function(err, data) {
-  console.log(process.pid + ' sending response');
-  responder.send(JSON.stringify({
-    pid: process.pid,
-    data: data.toString(),
-    timestamp: Date.now()
-  }));
-});
+}
 ```
 
 将此文件保存为 `zmq-filer-rep-cluster.js`。这个程序比我们之前的 Node 程序稍微长一点，但对你来说应该很熟悉，因为它完全基于我们已经讨论过的片段。
 
-注意 ROUTER 在第 11 行监听端口 54333 上的传入 TCP 连接。这使得集群可以作为我们之前开发的 zmq-filer-rep-js 程序的替换。
+注意 `ROUTER` 在第 11 行监听端口 54333 上的传入 TCP 连接。这使得集群可以作为我们之前开发的 `zmq-filer-rep-js` 程序的替换。
 
-在第 12 行，DEALER 套字绑定了一个进程间连接 (IPC) 端点。这由我们在第 28 页“监听 Unix 套字”中使用的 Unix 套字支持。
+在第 12 行，`DEALER` 套字绑定了一个进程间连接 (IPC) 端点。这由我们在第 28 页“监听 Unix 套字”中使用的 Unix 套字支持。
 
-按照惯例，ØMQ IPC 文件应该以 .ipc 扩展名结尾。在这种情况下，filer-dealer-ipc 文件将在将在启动集群的当前工作目录下创建（如果它不存在）。
+按照惯例，ØMQ IPC 文件应该以 `.ipc` 扩展名结尾。在这种情况下，`filer-dealer-ipc` 文件将在启动集群的当前工作目录下创建（如果它不存在）。
 
 让我们运行集群看看它是如何工作的：
 
@@ -1746,7 +1746,7 @@ Worker 37172 is online.
 Worker 37173 is online.
 ```
 
-到目前为止良好——主进程启动了 workers，它们都已报告上线。在第二个终端中，启动我们的 REQ 循环程序 (zmq-filer-loop.js)：
+到目前为止良好——主进程启动了 workers，它们都已报告上线。在第二个终端中，启动我们的 REQ 循环程序 (`zmq-filer-loop.js`)：
 
 ```bash
 $ node --harmony zmq-filer-req-loop.js
@@ -1758,108 +1758,98 @@ Received response: { pid: 37172, data: '', timestamp: 1371652913066 }
 Received response: { pid: 37173, data: '', timestamp: 1371652913066 }
 ```
 
-
-
-
-消息推送与拉取 • 61
+### 消息推送与拉取
 
 ![](img/4fd6c7ecbcaceceafb5f645d145c46f5_76_0.png)
 
-图 9—一个向工人池推送任务的 Node.js 集群
+图 9——一个向工人池推送任务的 Node.js 集群
 
-在之前的图表中，矩形表示 Node 进程，椭圆表示资源，粗箭头指向连接建立的方向。任务（job）、就绪（ready）和和结果（result）消息显示为指向发送方向的浅箭头框。
+在之前的图表中，矩形表示 Node 进程，椭圆表示资源，粗箭头指向连接建立的方向。任务（job）、就绪（ready）和结果（result）消息显示为指向发送方向的浅箭头框。
 
-在图的上半部分，我们主通信通道——主进程的 PUSH 字字连接到工作进程的 PULL 字字。这就是任务发送到工作进程的方式。
+在图的上半部分，我们主通信通道——主进程的 `PUSH` 字字连接到工作进程的 `PULL` 字字。这就是任务发送到工作进程的方式。
 
-在图的下半部分，我们有一个反向通道。这次主进程有一个 PULL 字字连接到每个工作进程的 PUSH 字字。工作进程可以将就绪状态或任务结果等消息 PUSH 回传给主进程。
+在图的下半部分，我们有一个反向通道。这次主进程有一个 `PULL` 字字连接到每个工作进程的 `PUSH` 字字。工作进程可以将就绪状态或任务结果等消息 `PUSH` 回传给主进程。
 
 主进程是架构中稳定的部分，因此它进行绑定。由于所有进程都本地于同一台机器，因此使用 IPC（进程间通信）进行传输是合理的。
 
-第 63 页“双向消息”中的额外挑战将要求你实现前面描述的 PUSH/PULL 集群。但注意，这只是解决“第一个加入者问题”的一种解决方案。你可以选择为反向通道使用不同的消息模式，例如请求/响应（request/reply）。
+第 63 页“双向消息”中的额外挑战将要求你实现前面描述的 `PUSH/PULL` 集群。但注意，这只是解决“第一个加入者问题”的一种解决方案。你可以选择为反向通道使用不同的消息模式，例如请求/响应（request/reply）。
 
-## 资源限制问题
+### 资源限制问题
 
 另一个常见的陷阱是资源限制问题。在可以访问的资源数量方面，Node.js 完全受操作系统的限制。在 Unix 术语中，这些被称为文件描述符（file descriptors）。
 
-第 4 章 健壮的消息服务 • 62
-
 每当你的 Node 程序打开文件或 TCP 连接时，它都会使用其可用的文件描述符之一。当没有可用描述符时，Node 在被请求连接时将开始连接失败。对于 Node.js 开发者来说这是一个非常常见的问题。我还没有遇到过没有在时候挣扎过资源限制问题的 Node 开发者。
 
-严格来说，这个问题并不局限于 PUSH/PULL 场景，但它在那里极有可能发生，原因如下：由于 Node.js 是异步的，拉取进程可以同时开始处理许多任务。每当一个消息事件进入时，Node 进程就会调用处理器并开始处理任务。如果这些任务需要访问系统资源——它们几乎肯定会需要——就可能会耗尽可用文件描述符池。然后任务将迅速开始失败。
+严格来说，这个问题并不局限于 `PUSH/PULL` 场景，但它在那里极有可能发生，原因如下：由于 Node.js 是异步的，拉取进程可以同时开始处理许多任务。每当一个消息事件进入时，Node 进程就会调用处理器并开始处理任务。如果这些任务需要访问系统资源——它们几乎肯定会需要——就可能会耗尽可用文件描述符池。然后任务将迅速开始失败。
 
 我们将在第 65 页“访问数据库”中详细探讨这个主题及其解决方案，届时我们将通过称为“连接池”（connection pooling）的技术来限制并发数据库连接的数量。
 
-## 总结
+### 总结
 
 本章带我们离开了 Node.js 核心，进入了更大的 npm 世界。我们讨论了如何安装和使用带有二进制组件的第三方模块。特别是，我们涵盖了如何使用 ZeroMQ。
 
-ZeroMQ 支持多种消息传递模式；我们了解了其中几种。我们看到了 ZeroMQ 如何实现发布/订阅模式、请求/响应模式以及 PUSH/PULL 模式。这些模式现在可以用于你设计 Node.js 网络应用程序了，即使你选择不使用 ZeroMQ 库本身。
+ZeroMQ 支持多种消息传递模式；我们了解了其中几种。我们看到了 ZeroMQ 如何实现发布/订阅模式、请求/响应模式以及 `PUSH/PULL` 模式。这些模式现在可以用于你设计 Node.js 网络应用程序了，即使你选择不使用 ZeroMQ 库本身。
 
-我们还探索了 Node 的集群能力。利用 Node cluster 模块的特性，我们启动了许多工作进程并将请求分配给它们。我们将在第 87 页“可扩展的 Web 服务”中再次使用这些能力。
+我们还探索了 Node 的集群能力。利用 Node `cluster` 模块的特性，我们启动了许多工作进程并将请求分配给它们。我们将在第 87 页“可扩展的 Web 服务”中再次使用这些能力。
 
 以下额外问题要求你利用在本章中学到的知识来修改和创建新的 Node.js 和 ZeroMQ 程序。
 
 在下一章中，我们将涵盖如何使用 Node 与多个流行的数据库进行异步交互。
 
-## 错误处理
+### 错误处理
 
 我们创建的 `zmq-filer-rep.js` 程序使用 `fs.readFile()` 来提供文件内容。然而，它没有处理错误情况。
 
-总结 • 63
-
 - 如果发生错误，程序应该做什么？
 - 你如何更改协议以支持向请求者发送错误？
-在同一个程序的后面，我们监听 Unix 信号 SIGINT 以检测用户在终端中按下的 Ctrl-C。
-- 如果程序以其他方式结束（例如 SIGTERM，终止信号），会发生什么？
+
+在同一个程序的后面，我们监听 Unix 信号 `SIGINT` 以检测用户在终端中按下的 `Ctrl-C`。
+
+- 如果程序以其他方式结束（例如 `SIGTERM`，终止信号），会发生什么？
 - 如果存在未处理的 Node.js 异常，会发生什么？
 
-*提示：*你可以在 `process` 对象上监听 `uncaughtException` 事件。
+> **提示：** 你可以在 `process` 对象上监听 `uncaughtException` 事件。
 
-## 健壮性
+### 健壮性
 
-在第 56 页的*构建集群*中，我们创建了一个启动三个工作进程的 Node.js 集群。在主进程中，我们监听了在线事件并在工作进程启动时记录了消息。但我们没有指定当工作进程结束时应该发生什么。
+在第 56 页的“构建集群”中，我们创建了一个启动三个工作进程的 Node.js 集群。在主进程中，我们监听了在线事件并在工作进程启动时记录了消息。但我们没有指定当工作进程结束时应该发生什么。
 
-- 当从命令行杀死一个工作进程时会发生什么
-*提示：*从命令行使用 `kill [pid]`，其中 `[pid]` 是工作进程的 ID。
-- 你如何更改 *zmq-filer-rep-cluster.js* 程序，以便每当有一个工人死去时就派一个新的？
+- 当从命令行杀死一个工作进程时会发生什么？
 
-## 双向消息
+> **提示：** 从命令行使用 `kill [pid]`，其中 `[pid]` 是工作进程的 ID。
 
-对于这个项目，你需要使用 ZeroMQ PUSH/PULL 字字以及在本章中学到的 Node.js 集群技术。你的集群程序将启动一个包含三个工作进程的池并在它们之间分配三十个任务。尽管看起来要做很多，但整个程序应该少于 100 行代码。
+- 你如何更改 `zmq-filer-rep-cluster.js` 程序，以便每当有一个工人死去时就派一个新的？
+
+### 双向消息
+
+对于这个项目，你需要使用 ZeroMQ `PUSH/PULL` 字字以及在本章中学到的 Node.js 集群技术。你的集群程序将启动一个包含三个工作进程的池并在它们之间分配三十个任务。尽管看起来要做很多，但整个程序应该少于 100 行代码。
 
 创建一个使用 `cluster` 和 `zmq` 模块的 Node.js 程序并执行以下操作。
 
 - 主进程应该：
-    - 创建一个 PUSH 字字并绑定到 IPC 端——该字字将用于向工作进程发送任务。
-    - 创建一个 PULL 字字并绑定到不同的 IPC 端——该字字将接收工作进程的消息。
+    - 创建一个 `PUSH` 字字并绑定到 IPC 端——该字字将用于向工作进程发送任务。
+    - 创建一个 `PULL` 字字并绑定到不同的 IPC 端——该字字将接收工作进程的消息。
     - 保持就绪工作进程的计数（初始化为 0）。
-    - 在 PULL 字字上监听消息并：
+    - 在 `PULL` 字字上监听消息并：
         - 如果消息是就绪消息，增加就绪计数器，或
         - 如果消息是结果消息，将其输出到控制台。
     - 启动三个工作进程。
-    - 当就绪计数器达到 3 时，通过 PUSH 字字发送三十条任务消息。
+    - 当就绪计数器达到 3 时，通过 `PUSH` 字字发送三十条任务消息。
 
-每个工作进程应该：
-    - 创建 PULL 字字并连接到主进程的 PUSH 端。
-    - 创建 PUSH 字字并连接到主进程的 PULL 端。
-    - 在 PULL 字字上监听消息并：
-        - 将此视为任务并通过向 PUSH 字字发送结果消息来响应。
-    - 向 PUSH 字字发送就绪消息。
+- 每个工作进程应该：
+    - 创建 `PULL` 字字并连接到主进程的 `PUSH` 端。
+    - 创建 `PUSH` 字字并连接到主进程的 `PULL` 端。
+    - 在 `PULL` 字字上监听消息并：
+        - 将此视为任务并通过向 `PUSH` 字字发送结果消息来响应。
+    - 向 `PUSH` 字字发送就绪消息。
 
 结果消息应该包含工作进程的进程 ID。这样你就可以检查控制台输出并确认负载在工作进程之间是平衡。
 
 如果你遇到困难，请参考下载代码中的工作示例。你可以可以的。祝运！
 
-# 第 5 章
+# 第 5 章 访问数据库
 
-## 访问数据库
-
-
-
-
-# 第 5 章 访问数据库 • 66
-
-我们将使用 CouchDB 配合 Node 来探索数据库.¹。CouchDB 的所有操作都使用 REST，从创建数据库、报告系统状态到执行映射还原（map-reduce）查询。使用 CouchDB 学习 Node 中的异步数据库访问有许多优势。
+我们将使用 CouchDB 配合 Node 来探索数据库。CouchDB 的所有操作都使用 REST，从创建数据库、报告系统状态到执行映射还原（map-reduce）查询。使用 CouchDB 学习 Node 中的异步数据库访问有许多优势。
 
 ## CouchDB 的优势
 
@@ -1884,9 +1874,7 @@ CouchDB 的具体版本对我们的目的并不重要。我们将专注于使用
 
 在整个章节中，你将开发许多 Node 脚本和模块。你首先需要做的是为它们留出空间，从一个包描述符开始。
 
-1. [https://couchdb.apache.org/](https://couchdb.apache.org/)
-
-## 创建包
+### 创建包
 
 在你的机器某处创建一个名为 `databases` 的目录。我们将使用该目录存放本章节的所有程序、数据文件和示例。接下来，打开编辑器并输入以下：
 
@@ -1910,7 +1898,7 @@ databases/package.json
 $ npm install --save request
 ```
 
-这将安装该模块并将其记录为 `package.json` 中的依赖项。如果你再次查看 `package.json` 文件，你会看到一个如下所示的 dependencies 部分：
+这将安装该模块并将其记录为 `package.json` 中的依赖项。如果你再次查看 `package.json` 文件，你会看到一个如下所示的 `dependencies` 部分：
 
 ```json
 "dependencies": {
@@ -1920,21 +1908,19 @@ $ npm install --save request
 
 当你在 `package.json` 文件中描述依赖项时，npm 可以为你安装所有它们。这在你分发模块或协作者在同一代码库上工作时最有用。要安装当前项目的所有依赖项，只需运行不带额外参数的 `npm install`。
 
-接下来，让我们使用新安装的 request 模块开始向 CouchDB 发起 REST 请求。
+接下来，让我们使用新安装的 `request` 模块开始向 CouchDB 发起 REST 请求。
 
-+ 2. [https://npmjs.org/doc/json.html](https://npmjs.org/doc/json.html)
-
-## 发起 RESTful 请求
+### 发起 RESTful 请求
 
 REST 的核心是建立在 HTTP 之上的原则。通过 REST，每个 URL 路径指向一个特定的*资源*。换句话说，URL 是东西。这与许多服务器形成对比，在那些服务器中，给定路径会调用执行某些操作的脚本（URL 是动作）。
 
 HTTP 本身是一种请求/响应协议，每个请求都是向具有特定*方法*的 URL 发出的。传入请求的 HTTP 方法决定了服务器对 URL 中指定的资源应该采取什么种操作。
 
-你使用的任何数据库都至少提供四种基本操作：创建、读取、更新和删除（CRUD）。像 CouchDB 这样的 RESTful 数据存储器为每个操作使用不同的 HTTP 方法（或*动词*）。你使用 POST 创建，使用 GET 读取，使用 PUT 更新，以及使用 DELETE（你猜对了）删除记录。
+你使用的任何数据库都至少提供四种基本操作：创建、读取、更新和删除（CRUD）。像 CouchDB 这样的 RESTful 数据存储器为每个操作使用不同的 HTTP 方法（或*动词*）。你使用 `POST` 创建，使用 `GET` 读取，使用 `PUT` 更新，以及使用 `DELETE`（你猜对了）删除记录。
 
-## 从命令行使用 REST
+#### 从命令行使用 REST
 
-Node 内置的 `http` 模块具有发送 HTTP 请求的函数，而 `request` 模块让它变得简单得多。为了学习如何使用 request 模块，我们首先为操作 CouchDB 编写一个命令行界面 (CLI) 工具。我们将最初使用 CLI 设置 CouchDB 数据库并尝试一些 REST 语义。
+Node 内置的 `http` 模块具有发送 HTTP 请求的函数，而 `request` 模块让它变得简单得多。为了学习如何使用 `request` 模块，我们首先为操作 CouchDB 编写一个命令行界面 (CLI) 工具。我们将最初使用 CLI 设置 CouchDB 数据库并尝试一些 REST 语义。
 
 打开你的编辑器并输入这些：
 
@@ -1956,261 +1942,23 @@ request(options, function(err, res, body) {
 });
 ```
 
-将此文件保存为 `dbcli.js`。尽管如此，这个程序让你对你的 CouchDB 服务器做很多事情。首先，该脚本使用了 request 模块。与我们目前看到的 JavaScript 对象模块不同，request 模块对象实际上是一个函数。你使用该模块的主要方法是通过调用它。
+将此文件保存为 `dbcli.js`。尽管如此，这个程序让你对你的 CouchDB 服务器做很多事情。首先，该脚本使用了 `request` 模块。与我们目前看到的 JavaScript 对象模块不同，`request` 模块对象实际上是一个函数。你使用该模块的主要方法是通过调用它。
 
 `request()` 函数接收两个参数：一个选项对象和一个回调函数。要设置的最重要选项是 HTTP 方法和你计划访问的 URL。在我们的情况下，我们从命令行参数中获取方法和路径信息，并带有合理的默认值。
 
-（注：原文文本在后部分存在大量重复和错误，译文已根据内容逻辑进行了去重处理。）
+### 解析 Project Gutenberg 数据
 
+我们将使用 Project Gutenberg 的 RDF 数据来填充我们的数据库。你可以从 Gutenberg 网站下载 RDF 文件。以下命令将下载并解压缩 RDF 文件到 `cache` 目录：
 
-
+```bash
+$ mkdir -p cache && cd cache && \
+  wget http://www.gutenberg.org/cache/epub/feeds/rdf-files.tar.bz2 && \
+  tar xjf rdf-files.tar.bz2
+```
 
 这将创建一个包含所有 RDF 文件的缓存目录。每个 RDF 文件都根据其 Gutenberg ID 命名，包含关于一本书的元数据。例如，编号 132 的书籍是 Lionel Giles 1910 年翻译的孙子《兵法》。
 
-以下是 `cache/epub/pub132/pg132.rdf` 的精简片段，仅显示了我们关心的字段。
-
-```xml
-<rdf:RDF>
-<pgterms:ebook rdf:about="ebooks/132">
-<dcterms:subject>
-<rdf:Description>
-<dcam:memberOf resource="http://purl.org/dc/terms/LCSH"/>
-<rdf:value>Military art and science -- Early works to 1800</rdf:value>
-<rdf:value>War -- Early works to 1800</rdf:value>
-</rdf:Description>
-</dcterms:subject>
-<dcterms:title>The Art of War</dcterms:title>
-<ebookterms:pgterms:agent rdf:about="2009/agents/4349">
-<pgterms:name>Sunzi (6th cent. BC)</pgterms:name>
-</pgterms:agent>
-<pgterms:agent rdf:about="2009/agents/5101">
-<pgterms:name>Giles, Lionel</pgterms:name>
-</pgterms:agent>
-</rdf:RDF>
-```
-
-我们想要提取的最重要信息如下：
-
-- Gutenberg ID
-- 书名
-- 作者列表（代理）
-- 主题列表
-
-理想情况下，我们希望将所有这些信息格式化为适合传递给 CouchDB 的 JSON 文档。但为了获得良好的 JSON 表示，我们必须解析 RDF 文件。
-
-## 使用 Node 解析 XML 数据
-
-为了解析 XML 文件，我们将使用 `cheerio`，这是一个用于 Node 中 处理 XML 文档的类 jQuery 库。
-
-首先，通过 npm 安装 `cheerio` 并保存依赖项：
-
-```bash
-$ npm install --save cheerio
-```
-
-接下来，在你的数据库项目中创建一个 `lib` 目录。我们将我们的 RDF 解析工具作为一个模块创建。
-
-# 第 5 章 访问数据库 • 72
-
-然后，打开编辑器并输入以下内容：
-
-```javascript
-// databases/lib/rdf-parser.js
-'use strict';
-const
-  fs = require('fs'),
-  cheerio = require('cheerio');
-
-module.exports = function(filename, callback) {
-  fs.readFile(filename, function(err, data) {
-    if (err) { return callback(err); }
-    let
-      $ = cheerio.load(data.toString());
-      collect = function(index, elem) {
-        return $(elem).text();
-      };
-
-    callback(null, {
-      _id: $('<pgterms:ebook>').attr('rdf:about').replace('ebooks/', ''),
-      title: $('<dcterms:title>').text(),
-      authors: $('<pgterms:agent pgterms:name>').map(collect),
-      subjects: $('[rdf:resources||LCSH] ~ rdf:value').map(collect)
-    });
-  });
-}
-```
-
-将文件保存为 `lib/rdf-parser.js`。
-
-与我们之前使用的 `request` 模块一样，该模块将其导出设置为一个函数。该模块的用户将调用此函数，传递文件路径和一个用于调用提取数据的回调函数。
-
-主模块函数异步读取指定的文件，然后将数据加载到 `cheerio` 中。`cheerio` 返回一个对象，我们将其赋值给变量 `$`。该对象的工作方式非常像 jQuery 全局函数 `$`，它提供了查询和修改元素的方法。
-
-`collect()` 函数是一个实用方法，用于从一组元素节点中提取文本节点数组。该模块的大部分逻辑封装在 `callback()` 用的四行代码中：
-
-- 首先，在第 16 行，我们查找 `<pgterms:ebook>` 标签，读取其 `rdf:about` 属性，并提取出数字部分。
-- 在第 17 行，我们获取 `<dcterms:title>` 标签的文本内容。
-- 在第 18 行，我们找到 `<pgterms:agent>` 下的所有 `<pgterms:name>` 元素，并将文本内容收集到一个数组中。
-
-最后，在第 19 行，我们使用兄弟运算符 `(~)` 寻找任何 `rdf:resource=` 属性以 `LCSH` 结尾的元素的兄弟节点 `<rdf:value>` 元素，并收集它们的文本内容。
-
-LCSH 代表美国国会图书馆主题（Library of Congress Subject Headings）。它们是用于书目记录的索引术集合。稍我们将使用它们来查找特定主题的书籍。
-
-这段代码有点密集，但幸运的是它没有副作用。也就是说，这段代码从复杂的架构中选择数据并将其重新格式化为简单的 JavaScript 对象。
-
-好了，我们如何知道它是否生效了？一种方法是写一行代码并看它是否输出了我们预期的内容：
-
-```bash
-$ node --harmony -e \
-  'require('./lib/rdf-parser.js")("cache/epub/pg132.rdf", console.log)'
-null {
-  id: 132,
-  title: 'The Art of War',
-  authors: [ 'Sunzi (6th cent.)', 'Giles, Lionel' ],
-  subjects:
-    [ 'Military art and science -- Early works to 1800', 'War -- Early works to 1800' ]
-}
-```
-
-对于第一次尝试这很好，但我们可以做得更好。让我们看看创建单元测试。
-
-## 使用 Node 进行单元测试
-
-有很多单元测试框架可用。流行的几个是 `mocha`、`vows` 和 `nodeunit`。我们将使用 `nodeunit`，因为它相对简单。要全局安装 `nodeunit`，使用：
-
-```bash
-$ npm install -g nodeunit
-```
-
-等等，上面的命令中 `cache/epub/pg132.rdf` 在原始 OCR 中缺少一个引号。我根据逻辑流清理文本。
-
-**修正后的文本：**
-
-这将创建一个包含所有 RDF 文件的缓存目录。每个 RDF 文件都根据其 Gutenberg ID 命名，包含关于一本书的元数据。例如，编号 132 的书籍是 Lionel Giles 1910 年翻译的孙子《兵法》。
-
-以下是 `cache/epub/pub132/pg132.rdf` 的精简片段，仅显示了我们关心的字段。
-
-```xml
-<rdf:RDF>
-<pgterms:ebook rdf:about="ebooks/132">
-<dcterms:subject>
-<rdf:Description>
-<dcam:memberOf resource="http://purl.org/dc/terms/LCSH"/>
-<rdf:value>Military art and science -- Early works to 1800</rdf:value>
-<rdf:value>War -- Early works to 1800</rdf:value>
-</rdf:Description>
-</dcterms:subject>
-<dcterms:title>The Art of War</dcterms:title>
-<ebookterms:pgterms:agent rdf:about="2009/agents/4349">
-<pgterms:name>Sunzi (6th cent. BC)</pgterms:name>
-</pgterms:agent>
-<pgterms:agent rdf:about="2009/agents/5101">
-<pgterms:name>Giles, Lionel</pgterms:name>
-</pgterms:agent>
-</rdf:RDF>
-```
-
-我们想要提取的最重要信息如下：
-
-- Gutenberg ID
-- 书名
-- 作者列表（代理）
-- 主题列表
-
-理想情况下，我们希望将所有这些信息格式化为适合传递给 CouchDB 的 JSON 文档。但为了获得良好的 JSON 表示，我们必须解析 RDF 文件。
-
-## 使用 Node 解析 XML 数据
-
-为了解析 XML 文件，我们将使用 `cheerio`，这是一个用于 Node 中 处理 XML 文档的类 jQuery 库。
-
-首先，通过 npm 安装 `cheerio` 并保存依赖项：
-
-```bash
-$ npm install --save cheerio
-```
-
-接下来，在你的数据库项目中创建一个 `lib` 目录。我们将我们的 RDF 解析工具作为一个模块创建。
-
-# 第 5 章 访问数据库 • 72
-
-然后，打开编辑器并输入以下内容：
-
-```javascript
-// databases/lib/rdf-parser.js
-'use strict';
-const
-  fs = require('fs'),
-  cheerio = require('cheerio');
-
-module.exports = function(filename, callback) {
-  fs.readFile(filename, function(err, data) {
-    if (err) { return callback(err); }
-    let
-      $ = cheerio.load(data.toString());
-      collect = function(index, elem) {
-        return $(elem).text();
-      };
-
-    callback(null, {
-      _id: $('<pgterms:ebook>').attr('rdf:about').replace('ebooks/', ''),
-      title: $('<dcterms:title>').text(),
-      authors: $('<pgterms:agent pgterms:name>').map(collect),
-      subjects: $('[rdf:resources||LCSH] ~ rdf:value').map(collect)
-    });
-  });
-}
-```
-
-将文件保存为 `lib/rdf-parser.js`。
-
-与我们之前使用的 `request` 模块一样，该模块将其导出设置为一个函数。该模块的用户将调用此函数，传递文件路径和一个用于调用提取数据的回调函数。
-
-主模块函数异步读取指定的文件，然后将数据加载到 `cheerio` 中。`cheerio` 返回一个对象，我们将其赋值给变量 `$`。该对象的工作方式非常像 jQuery 全局函数 `$`，它提供了查询和修改元素的方法。
-
-`collect()` 函数是一个实用方法，用于从一组元素节点中提取文本节点数组。该模块的大部分逻辑封装在 `callback()` 用的四行代码中：
-
-- 首先，在第 16 行，我们查找 `<pgterms:ebook>` 标签，读取其 `rdf:about` 属性，并提取出数字部分。
-- 在第 17 行，我们获取 `<dcterms:title>` 标签的文本内容。
-- 在第 18 行，我们找到 `<pgterms:agent>` 下的所有 `<pgterms:name>` 元素，并将文本内容收集到一个数组中。
-
-最后，在第 19 行，我们使用兄弟运算符 `(~)` 寻找任何 `rdf:resource=` 属性以 `LCSH` 结尾的元素的兄弟节点 `<rdf:value>` 元素，并收集它们的文本内容。
-
-LCSH 代表美国国会图书馆主题。它们是用于书目记录的索引术集合。稍我们将使用它们来查找特定主题的书籍。
-
-这段代码有点密集，但幸运的是它没有副作用。也就是说，这段代码从复杂的架构中选择数据并将其重新格式化为简单的 JavaScript 对象。
-
-好了，我们如何知道它是否生效了？一种方法是写一行代码并看它是否输出了我们预期的内容：
-
-```bash
-$ node --harmony -e \
-  'require('./lib/rdf-parser.js")("cache/epub/pg132.rdf", console.log)'
-null {
-  id: 132,
-  title: 'The Art of War',
-  authors: [ 'Sunzi (6th cent.)', 'Giles, Lionel' ],
-  subjects:
-    [ 'Military art and science -- Early works to 1800', 'War -- Early works to 1800' ]
-}
-```
-
-对于第一次尝试这很好，但我们可以做得更好。让我们看看创建单元测试。
-
-## 使用 Node 进行单元测试
-
-有很多单元测试框架可用。流行的几个是 `mocha`、`vows` 和 `nodeunit`。我们将使用 `nodeunit`，因为它相对简单。要全局安装 `nodeunit`，使用：
-
-```bash
-$ npm install -g nodeunit
-```
-
-（注：OCR 文本在结尾处截断了，但我将提供提供的页面内容。）
-
-等等，我应该只提供清理后的文本。我将最后一次进行输出。
-
-[content]
-这将创建一个包含所有 RDF 文件的缓存目录。每个 RDF 文件都根据其 Gutenberg ID 命名，包含关于一本书的元数据。例如，编号 132 的书籍是 Lionel Giles 1910 年翻译的孙子《兵法》。
-
-以下是 `cache/epub/pub132/pg132.rdf` 的精简片段，仅显示了我们关心的字段。
+以下是 `cache/epub/132/pg132.rdf` 的精简片段，仅显示了我们关心的字段。
 
 ```xml
 <rdf:RDF>
@@ -2241,9 +1989,9 @@ $ npm install -g nodeunit
 
 理想情况下，我们希望将所有这些信息格式化为适合传递给 CouchDB 的 JSON 文档。但为了获得良好的 JSON 表示，我们必须解析 RDF 文件。
 
-## 使用 Node 解析 XML 数据
+### 使用 Node 解析 XML 数据
 
-为了解析 XML 文件，我们将使用 `cheerio`，这是一个用于 Node 中 处理 XML 文档的类 jQuery 库。
+为了解析 XML 文件，我们将使用 `cheerio`，这是一个用于 Node 中处理 XML 文档的类 jQuery 库。
 
 首先，通过 npm 安装 `cheerio` 并保存依赖项：
 
@@ -2252,8 +2000,6 @@ $ npm install --save cheerio
 ```
 
 接下来，在你的数据库项目中创建一个 `lib` 目录。我们将我们的 RDF 解析工具作为一个模块创建。
-
-# 第 5 章 访问数据库 • 72
 
 然后，打开编辑器并输入以下内容：
 
@@ -2268,7 +2014,7 @@ module.exports = function(filename, callback) {
   fs.readFile(filename, function(err, data) {
     if (err) { return callback(err); }
     let
-      $ = cheerio.load(data.toString());
+      $ = cheerio.load(data.toString()),
       collect = function(index, elem) {
         return $(elem).text();
       };
@@ -2277,7 +2023,7 @@ module.exports = function(filename, callback) {
       _id: $('<pgterms:ebook>').attr('rdf:about').replace('ebooks/', ''),
       title: $('<dcterms:title>').text(),
       authors: $('<pgterms:agent pgterms:name>').map(collect),
-      subjects: $('[rdf:resources||LCSH] ~ rdf:value').map(collect)
+      subjects: $('[rdf:resource$="LCSH"] ~ rdf:value').map(collect)
     });
   });
 }
@@ -2294,10 +2040,9 @@ module.exports = function(filename, callback) {
 - 首先，在第 16 行，我们查找 `<pgterms:ebook>` 标签，读取其 `rdf:about` 属性，并提取出数字部分。
 - 在第 17 行，我们获取 `<dcterms:title>` 标签的文本内容。
 - 在第 18 行，我们找到 `<pgterms:agent>` 下的所有 `<pgterms:name>` 元素，并将文本内容收集到一个数组中。
+- 最后，在第 19 行，我们使用兄弟运算符 `(~)` 寻找任何 `rdf:resource` 属性以 `LCSH` 结尾的元素的兄弟节点 `<rdf:value>` 元素，并收集它们的文本内容。
 
-最后，在第 19 行，我们使用兄弟运算符 `(~)` 寻找任何 `rdf:resource=` 属性以 `LCSH` 结尾的元素的兄弟节点 `<rdf:value>` 元素，并收集它们的文本内容。
-
-LCSH 代表美国国会图书馆主题。它们是用于书目记录的索引术集合。稍我们将使用它们来查找特定主题的书籍。
+LCSH 代表美国国会图书馆主题。它们是用于书目记录的索引术集合。稍后我们将使用它们来查找特定主题的书籍。
 
 这段代码有点密集，但幸运的是它没有副作用。也就是说，这段代码从复杂的架构中选择数据并将其重新格式化为简单的 JavaScript 对象。
 
@@ -2305,7 +2050,7 @@ LCSH 代表美国国会图书馆主题。它们是用于书目记录的索引术
 
 ```bash
 $ node --harmony -e \
-  'require('./lib/rdf-parser.js")("cache/epub/pg132.rdf", console.log)'
+  'require("./lib/rdf-parser.js")("cache/epub/132/pg132.rdf", console.log)'
 null {
   id: 132,
   title: 'The Art of War',
@@ -2317,7 +2062,7 @@ null {
 
 对于第一次尝试这很好，但我们可以做得更好。让我们看看创建单元测试。
 
-## 使用 Node 进行单元测试
+### 使用 Node 进行单元测试
 
 有很多单元测试框架可用。流行的几个是 `mocha`、`vows` 和 `nodeunit`。我们将使用 `nodeunit`，因为它相对简单。要全局安装 `nodeunit`，使用：
 
@@ -2325,18 +2070,13 @@ null {
 $ npm install -g nodeunit
 ```
 
-（等等，我将在此处停止并按照提示提供最终输出。）
-
-
-
-第 5 章 访问数据库 • 76
-
-databases/list-books.js
+### Node.js 节流
 
 ```javascript
-use strict';
+databases/list-books.js
+'use strict';
 const file = require('file');
-const fParser = require('./lib/rdf-parser.js');
+const rdfParser = require('./lib/rdf-parser.js');
 
 console.log('beginning directory walk');
 
@@ -2371,17 +2111,13 @@ Error: EMFILE, open './cache/epub/1229/pg12292.rdf'
 
 解决这个问题有两种方法。一种方法是增加操作系统中文件描述符的最大数量。然而，这只是一个临时方案，直到你遇到更大的文件集。
 
-另一种方法是修改 `rdf-parser` 模块，使其在接收到 `EMFILE` 错误时进行重试。例如，名为 `graceful-fs` 的第三方模块就可以做到。⁹
-
-9. https://npmjs.org/package/graceful-fs
-
-# Node.js 节流 • 77
+另一种方法是修改 `rdf-parser` 模块，使其在接收到 `EMFILE` 错误时进行重试。例如，名为 `graceful-fs` 的第三方模块就可以做到。
 
 但你不能总是依赖你的依赖模块在处理文件时表现得体面，因此我们将使用另一种方法：工作队列。我们不会立即将每个文件路径发送到 RDF 解析器，而是将它们队列为待处理的任务，并让队列来限制并发运行的任务数量。
 
-## 使用队列限制进行中的工作
+#### 使用队列限制进行中的工作
 
-为此，我们将使用 `async` 模块.¹⁰ 现在就安装它吧。
+为此，我们将使用 `async` 模块。现在就安装它吧。
 
 ```bash
 $ npm install --save async
@@ -2416,10 +2152,6 @@ file.walk(__dirname + '/cache', function(err, dirPath, dirs, files) {
 
 将此文件保存为 `list-books-queued.js`。注意，我们通过向 `async.queue()` 传递一个工作函数和 1,000 的并发限制来创建一个工作对象。该对象有一个 `push()` 方法，我们用它来添加更多待处理的路径。
 
->10. https://npmjs.org/package/async
-
-# 第 5 章 访问数据库 • 78
-
 我们用于创建队列的工作函数接收两个参数：`path` 和 `done`。`path` 参数是通过遍历目录树发现的 RDF 文件路径，`done` 是一个回调函数，我们的工作函数必须调用它，以信号工作队列可以从队列中取出下一个路径。
 
 在 Node.js 中，回调函数的最后一个参数通常为 `done` 或 `next` 函数是很常见的。从技术上讲，你可以将此参数命名为任何名称（毕竟这是你的函数）。但将其命名为 `done` 或 `next` 表示这是一个不接受任何参数的回调函数，并且在你完成正在做的任何工作后应该恰好调用一次。相比之下，命名为 `callback` 的回调函数会接受一个或多个参数，并以 `err` 消息开头。
@@ -2439,9 +2171,9 @@ $ node --harmony list-books-queued
 
 现在进入最后一步：将这些记录推入数据库。
 
-## 将所有内容整合
+#### 将所有内容整合
 
-有了了工作的解析器和节流队列，我们准备好将记录放入数据库。
+有了工作的解析器和节流队列，我们准备好将记录放入数据库。
 
 打开编辑器，再次查看 `list-books-queued.js` 文件。首先，在文件顶部添加 `request` 模块。然后，将 `rdfParser()` 的回调替换为：
 
@@ -2450,7 +2182,7 @@ databases/import-books.js
 rdfParser(path, function(err, doc) {
   request({
     method: 'PUT',
-    url: 'http://localhost:5984/books/' + doc.id,
+    url: 'http://localhost:5984/books/' + doc._id,
     json: doc
   }, function(err, res, body) {
     if (err) {
@@ -2478,9 +2210,7 @@ Error: EMFILE, open './cache/epub/1229/pg12292.rdf'
 
 另一种方法是修改 `rdf-parser` 模块，使其在接收到 `EMFILE` 错误时进行重试。例如，名为 `graceful-fs` 的第三方模块就可以做到。
 
-但你不能总是依赖你的依赖模块在处理文件时表现得体面，因此我们将使用另一种方法：工作队列。我们不会立即将每个文件路径发送到 RDF 解析器，而是将它们队列为待处理的任务，并让队列来限制并发运行的任务数量。
-
-## 处理更新冲突
+#### 处理更新冲突
 
 在移动到查询之前还有一件事。第一个条目有点奇怪——让我们看看 0 号书：
 
@@ -2511,8 +2241,6 @@ $ dbcli.js DELETE books/0?rev=1-453265aaa7aa714d46bd72f62326186
 200 { ok: true, id: '0', rev: '2-lab42137771c4fbf4c48e11c246e8a6fc' }
 ```
 
-
-
 不同的数据库和 RESTful 服务处理冲突的方式各不相同。依赖 `rev` 参数是 CouchDB 特有的特性。
 
 处理完那个额外的文档后，是时候开始查询数据了。不同的数据库提供不同的数据查询方式，但大多数都包含某些索引的概念。当你对数据库建立索引时，就可以根据数据的某些字段或属性进行快速检索。
@@ -2521,9 +2249,9 @@ $ dbcli.js DELETE books/0?rev=1-453265aaa7aa714d46bd72f62326186
 
 我们将为 Gutenberg 数据集创建两个视图：一个用于根据作者查找书籍，另一个用于根据给定主题查找书籍。由于 CouchDB 视图由 JavaScript 代码组成，我们将它们保存在一个 Node.js 模块（`views.js`）中，并编写一个小型工具程序将它们加载到 CouchDB 中。
 
-## 使用 Mapreduce 视图查询数据
+### 使用 Mapreduce 视图查询数据
 
-## 使用 Node 进行跨环境脚本
+### 使用 Node 进行跨环境脚本
 
 大多数时候，当你编写 JavaScript 代码时，你是希望这段代码在编写它的同一个环境中执行的。例如，如果你在一个 Node 模块中写了一个方法，你可能期望未来的某个 Node 进程会运行该函数。
 
@@ -2569,7 +2297,7 @@ module.exports = {
 
 现在，让我们将这些视图放入数据库。
 
-## 使用 async.waterfall 回调链
+### 使用 async.waterfall 回调链
 
 CouchDB 将视图存储在特殊的设计文档（design documents）中。你使用普通的 REST 命令来添加和删除设计文档，就像使用任何其他文档一样。因此，我们需要在 CouchDB 中 `PUT` 一个包含我们视图的设计文档。
 
@@ -2582,7 +2310,7 @@ databases/make-views.js
 
 const async = require('async'),
 const request = require('request'),
-const views = require('./views.js');
+const views = require('./lib/views.js');
 
 async.waterfall(
   // 获取设计文档（如果存在）
@@ -2627,10 +2355,7 @@ $ ./make-views.js
 { ok: true, id: '_design/books', rev: '7e273ae8166072a' }
 ```
 
-
-
-
-# 可扩展的 Web 服务
+# 第 6 章 可扩展的 Web 服务
 
 关于 Node.js 的很多讨论都集中在使用它来编写可扩展的网站、应用程序和服务上。在本章中，我们将开发健壮的、基于 RESTful 和 JavaScript 对象表示法（JSON）的 Web 服务。创建 Web 服务将是我们深入研究 Node 开发这些方面的背景：
 
@@ -2648,22 +2373,18 @@ ECMAScript Harmony 引入了迭代器（iterators）和生成器（generators）
 
 ## 支持代码
 
-对于我们的项目，我们将使用更多 npm 的功能，例如指定启动项目的脚本。我们还将会使用 nodemon 来监控我们的 Node 程序，并在源代码更改时自动重启它们。
+对于我们的项目，我们将使用更多 npm 的功能，例如指定启动项目的脚本。我们还将会使用 `nodemon` 来监控我们的 Node 程序，并在源代码更改时自动重启它们。
 
-Node.js 原生支持使用 http 模块构建低开销的 HTTP 服务器。¹ 但直接针对低级 http 模块编写服务会非常耗时。我们将使用 Express 来开发我们的 Web 服务。²
-
-1. http://nodejs.org/api/http.html
-2. http://expressjs.com/
+Node.js 原生支持使用 `http` 模块构建低开销的 HTTP 服务器。但直接针对低级 `http` 模块编写服务会非常耗时。我们将使用 Express 来开发我们的 Web 服务。
 
 由于代码示例变得越来越复杂，你应该获取书中随附的代码，而不是尝试手动输入。在 `web-services` 目录中，你会找到包含本章所有代码的文件。如果你还没有它，现在就开始使用 Express 吧。
 
-## Express 的优势
+### Express 的优势
 
-Express 是一个为 Node 设计的 Web 框架，模仿了 Sinatra.³ 它提供了许多你可能需要自己编写的底层代码。为了了解这一点，让我们看看仅使用 http 模块创建一个基础 Node.js 服务器。
-
-web-services/server.js
+Express 是一个为 Node 设计的 Web 框架，模仿了 Sinatra。它提供了许多你可能需要自己编写的底层代码。为了了解这一点，让我们看看仅使用 `http` 模块创建一个基础 Node.js 服务器。
 
 ```javascript
+web-services/server.js
 const http = require('http'),
 server = http.createServer(function(req, res) {
   res.writeHead(200, {'Content-Type': 'text/plain'});
@@ -2674,7 +2395,7 @@ server.listen(3000, function(){
 });
 ```
 
-这与使用 net 模块创建一个基础 TCP 服务器非常相似。首先引入 http 模块，调用其 createServer() 方法并传入回调，最后使用 server.listen() 绑定 TCP 端口。回调函数使用来自 HTTP 请求 (req) 信息来发送适当的响应。
+这与使用 `net` 模块创建一个基础 TCP 服务器非常相似。首先引入 `http` 模块，调用其 `createServer()` 方法并传入回调，最后使用 `server.listen()` 绑定 TCP 端口。回调函数使用来自 HTTP 请求 (`req`) 信息来发送适当的响应。
 
 这个示例的独特不在于它做了什么，而在于它没有做什么。典型的 Web 服务器需要处理许多该代码没有涉及的任务：
 
@@ -2685,33 +2406,35 @@ server.listen(3000, function(){
 
 Express 框架可以帮助处理这些。
 
-## 使用 Express 提供 API
+### 使用 Express 提供 API
 
-对于所有 Node 模块，要使用 Express 你必须通过 npm 安装它。如果你在创建项目，只需运行 `npm install --save express` 来下载最新的 Express 并将其记录在你的 package.json 文件中。让我们看看它是如何工作的。在终端中，到 hello 子目录，扩展这个骨架来创建我们自己的 RESTful API。这里是 server.js 文件的内容：
+对于所有 Node 模块，要使用 Express 你必须通过 npm 安装它。如果你在创建项目，只需运行 `npm install --save express` 来下载最新的 Express 并将其记录在你的 `package.json` 文件中。让我们看看它是如何工作的。在终端中，到 `hello` 子目录，扩展这个骨架来创建我们自己的 RESTful API。这里是 `server.js` 文件的内容：
 
-web-services/hello/server.js
 ```javascript
+web-services/hello/server.js
 #!/usr/bin/env node --harmony
 'use strict';
 const
-  express = require('express');
+  express = require('express'),
   app = express();
-  app.use(express.logger('dev'));
-  app.get('/api/:name', function(req, res) {
-    res.json(200, {"hello": req.params.name });
-  });
-  app.listen(3000, function() {
-    console.log('ready captain.');
-  });
+app.use(express.logger('dev'));
+app.get('/api/:name', function(req, res) {
+  res.json(200, {"hello": req.params.name });
+});
+app.listen(3000, function() {
+  console.log('ready captain.');
+});
 ```
 
-首先，此程序引入 express 模块并创建一个 app。就像我们在上章使用的 request 模块一样，express 模块本身就是一个函数。当你调用此函数时，Express 会为你创建一个应用程序。按照惯例，我们将此变量命名为 app。
+首先，此程序引入 `express` 模块并创建一个 `app`。就像我们在上章使用的 `request` 模块一样，`express` 模块本身就是一个函数。当你调用此函数时，Express 会为你创建一个应用程序。按照惯例，我们将此变量命名为 `app`。
 
-Express 功能通过称为中间件的东西提供，这些是操作请求和响应对象的异步函数。为你的应用指定中间件，你需要调用 app.use() 并传入中间件。在我们的情况下，我们使用 logger 中间件设置 dev 模式，这将记录所有进入的请求。
+Express 功能通过称为中间件的东西提供，这些是操作请求和响应对象的异步函数。为你的应用指定中间件，你需要调用 `app.use()` 并传入中间件。在我们的情况下，我们使用 `logger` 中间件设置 `dev` 模式，这将记录所有进入的请求。
 
-接下来我们使用 app.get() 告诉 Express 我们如何处理 GET /api/:name。路径中的 name 是一个路由参数。当访问 API 时，Express 会抓取 URL 的该部分并使其在 req.params 中可用。
+接下来我们使用 `app.get()` 告诉 Express 我们如何处理 `GET /api/:name`。路径中的 `name` 是一个路由参数。当访问 API 时，Express 会抓取 URL 的该部分并使其在 `req.params` 中可用。
 
-除了 get()，Express 还有 put()、post() 和 del() 分别注册 PUT、POST 和 DELETE 的处理程序。在我们的情况下，此程序监听端口 3000 的请求。最后，当服务器准备就绪，让我们看看它做了什么。
+
+
+除了 `get()`，Express 还有 `put()`、`post()` 和 `del()` 分别注册 PUT、POST 和 DELETE 的处理程序。在我们的情况下，此程序监听端口 3000 的请求。最后，当服务器准备就绪，让我们看看它做了什么。
 
 ## 使用 npm 运行服务器
 
@@ -2730,7 +2453,7 @@ node server.js
 ready captain.
 ```
 
-npm 知道如何运行它，因为 package.json 中有脚本。如果你打开 package.json，你会发现一个这样的部分：
+npm 知道如何运行它，因为 `package.json` 中有脚本。如果你打开 `package.json`，你会发现一个这样的部分：
 
 ```json
 "scripts": {
@@ -2740,7 +2463,7 @@ npm 知道如何运行它，因为 package.json 中有脚本。如果你打开 p
 
 ## 使用 curl 测试端点
 
-服务器运行时，让我们尝试一下。在另一个控制台中，使用 curl 请求 /api/ 路径：
+服务器运行时，让我们尝试一下。在另一个控制台中，使用 curl 请求 `/api/` 路径：
 
 ```bash
 $ curl -i http://localhost:3000/api/world
@@ -2761,7 +2484,7 @@ Connection: keep-alive
 }
 ```
 
--i 标志告诉 curl 在 JSON 体之外输出 HTTP 头部。curl 是一个向服务器发布 HTTP 请求的实用命令行工具。
+`-i` 标志告诉 curl 在 JSON 体之外输出 HTTP 头部。curl 是一个向服务器发布 HTTP 请求的实用命令行工具。
 
 要创建 b4 数据库，确保 CouchDB 正在运行，然后使用 curl 命令行：
 
@@ -2785,14 +2508,14 @@ $ curl -X PUT http://localhost:5984/b4
 
 ## 将服务器代码分离到模块
 
-与我们的 Hello World 示例一样，b4 服务的程序入口是 server.js。但现在不是直接为 app.get() 分配处理程序，而是指定了一些配置参数并引入 API 模块：
+与我们的 Hello World 示例一样，b4 服务的程序入口是 `server.js`。但现在不是直接为 `app.get()` 分配处理程序，而是指定了一些配置参数并引入 API 模块：
 
-这里是 b4/server.js 与 Hello World 版本不同的部分：
+这里是 `b4/server.js` 与 Hello World 版本不同的部分：
 
 ```javascript
 const config = {
   bookdb: 'http://localhost:5984/books/',
-b4db: 'http://localhost:5984/b4'
+  b4db: 'http://localhost:5984/b4'
 };
 
 require('./lib/book-search.js')(config, app);
@@ -2800,25 +2523,19 @@ require('./lib/field-search.js')(config, app);
 require('./lib/bundle.js')(config, app);
 ```
 
-
-
-
-
-## 第 6 章 可扩展的 Web 服务 • 92
-
 三个 API 模块中的每一个都是一个接收两个参数的函数：我们的配置哈希和要添加到路由的 Express 实例。
 
 让我们运行服务器，然后深入研究 API 模块。这次，我们不再使用 npm，而是使用 nodemon。nodemon 是 "Node Monitor" 的缩写，它会运行一个 Node.js 程序，并在源代码发生变化时自动重启它。
 
 要获取 nodemon，请通过 npm 全局安装它：
 
-```
+```bash
 $ npm install -g nodemon
 ```
 
 现在使用 nodemon 启动 b4 服务。
 
-```
+```bash
 $ nodemon --harmony server.js
 16 Sep 19:05:50 - [nodemon] v0.7.8
 16 Sep 19:05:50 - [nodemon] to restart at any time, ever `rs`
@@ -2837,25 +2554,23 @@ ready captain.
 
 字段搜索 API 帮助用户根据起始字符串查找作者或主题。例如，要获取以 "Croc" 开头的主题列表，你可以发送如下请求：
 
-```
+```bash
 $ curl http://localhost:3000/api/search/subject?q=Croc
 [
-"Crocheting",
-"Crocheting -- Patterns",
-"Crockett, Davy, 1786-1836",
-"Crocodiles",
-"Crocodiles -- Juvenile fiction"
+  "Crocheting",
+  "Crocheting -- Patterns",
+  "Crockett, Davy, 1786-1836",
+  "Crocodiles",
+  "Crocodiles -- Juvenile fiction"
 ]
 ```
 
 这个 API 可以用于用户界面，例如，当用户开始输入主题时，建议会自动弹出。
 
-编写模块化服务 • 93
-
 让我们看看在代码中是如何实现这一点的。以下是你的 b4 项目中 `lib/field-search.js` 文件的内容：
 
-```
-web-services/b4/lib/field-search.js
+```javascript
+// web-services/b4/lib/field-search.js
 'use strict';
 const request = require('request');
 module.exports = function(config, app) {
@@ -2896,8 +2611,6 @@ module.exports = function(config, app) {
 
 接下来，我们在第 4 行调用 `app.get()` 向 Express 注册一个路由。一旦路由函数开始，它会立即在第 5 行向 CouchDB 发起请求。为了构建 URL，我们使用了从 Express 提取的 `req.params.view`。
 
-第 6 章 可扩展的 Web 服务 • 94
-
 例如，当有人请求 `/api/search/subject` 时，这将触发对 CouchDB 视图 `_design/books/view/by_subject` 的请求。注意我们没有检查 `req.params.view` 是否是我们预期的值——这留到了章节末尾作为练习。
 
 为了限制 CouchDB 返回的结果，我们在第 9 行指定了查询字符串参数 `q`。当请求包含 `q=Croc` 时，`req.query.q` 将是 `"Croc"`（不带引号）。
@@ -2912,11 +2625,11 @@ module.exports = function(config, app) {
 
 这个示例演示了你将面临的一些挑战。REST 的好处处是它为 API 提供了一个良好的基础。对于各种情况，HTTP 规定了特定的状态码。然而，处理各种成功和非成功情况是有挑战性的，因为 JavaScript 有许多处理任何事情的方法，你可以选择你喜欢的。这在管理异步代码方面尤为真实。
 
-带有 Promise 的 RESTful API
+## 带有 Promise 的 RESTful API
 
 我们已经看到了处理异步代码的许多方法。早期我们使用了普通的 Node.js 回调，然后讨论了 EventEmitter 和流（streams）。我们也探索了 async 模块及其工具函数。现在让我们使用 RESTful API 来编辑书包。在这里我们将讨论 promise——另一种管理代码的方法。
 
-使用 Promise 创建资源
+### 使用 Promise 创建资源
 
 我们的 API 需要的第一件事是有一种创建它们的方法。为此，我们将创建一个处理 POST 请求的 Express 路由。一旦普通的 JavaScript 函数开始，它将以两种方式结束：执行完成或抛出异常。对于同步代码，这足够了；对于异步代码，我们需要更多。Node.js 回调使用参数（例如 `function(err, data)`），而 EventEmitter 使用不同的类型。
 
@@ -2924,14 +2637,14 @@ Promise 是封装操作结果的对象。一旦操作完成，promise 将被解�
 
 打开 `lib/bundle.js` 文件查看。在顶部，你会看到我们引入了 `request` 和 `Q` 模块。然后，在 `module.exports` 函数内部，你会找到创建包的代码：
 
-```
-web-services/b4/lib/bundle.js
-Line 1 app.post('/api/bundle', function(req, res) {
+```javascript
+// web-services/b4/lib/bundle.js
+app.post('/api/bundle', function(req, res) {
   let deferred = Q.defer();
   request.post({
     url: config.bookdb,
     json: { type: 'bundle', name: req.query.name, books: {} }
-  }, function(err, CouchRes, body) {
+  }, function(err, couchRes, body) {
     if (err) {
       deferred.reject(err);
     } else {
@@ -2952,7 +2665,7 @@ Line 1 app.post('/api/bundle', function(req, res) {
 
 这段代码使用 `app.post()` 添加了一个路由，向 CouchDB 发送 POST 并返回其结果。你可以用 curl 尝试：
 
-```
+```bash
 curl -X POST http://localhost:3000/api/bundle/
 {
   "ok": true,
@@ -2961,33 +2674,28 @@ curl -X POST http://localhost:3000/api/bundle/
 }
 ```
 
-通过 GET 和 ncall() 获取资源
+### 通过 GET 和 ncall() 获取资源
 
 仍然在 `lib/bundle.js` 中，让我们查看获取包的 GET 路由。与我们刚刚查看的 POST 处理器一样，这个实现对 CouchDB 请求使用了 promise，但它没有显式地创建 Deferred 对象。
 
-
-
-
-使用带有 Promise 的 RESTful APIs * 97
-
-```
+```javascript
 app.get('/api/bundle/:id', function(req, res) {
-  Q.ncall(request, config.bdb + '/' + req.params.id)
+  Q.ncall(request.get, config.b4db + '/' + req.params.id)
     .then(function(args) {
       let couchRes = args[0], bundle = JSON.parse(args[1]);
-      res.json(couchRes.status, bundle);
+      res.json(couchRes.statusCode, bundle);
     }, function(err) {
       res.json(502, { error: "bad_gateway", reason: err.code });
     })
     .done();
 });
-
-done();
 ```
 
 你可以通过向 curl 传递之前创建的 bundle ID 来调用此 API。
 
+```bash
 $ curl http://localhost:3000/api/bundle/9122b028c8683df01813b0fc69000377
+```
 
 ```json
 {
@@ -2998,7 +2706,7 @@ $ curl http://localhost:3000/api/bundle/9122b028c8683df01813b0fc69000377
 }
 ```
 
-在第 1 行，我们使用 `app.get()` 为 `/api/bundle/:id` 创建了一个 Express 路由。但在第 2 行，我们没有直接调用 `request(req)`，而是调用了 `Q.ncall(request.get...`。
+在第 1 行，我们使用 `app.get()` 为 `/api/bundle/:id` 创建了一个 Express 路由。但在第 2 行，我们没有直接调用 `request.get()`，而是调用了 `Q.ncall(request.get...`。
 
 Q 的 `ncall()` 方法用于“Node 函数调用”（Node Function Call）。它接收一个期望常规 Node.js 回调作为最后一个参数的函数（例如 `request()`），调用该函数并返回一个 promise。实际上，它自动完成了我们在 POST 处理器中通过创建 Deferred 显式完成的工作。
 
@@ -3008,7 +2716,7 @@ Q 的 `ncall()` 方法用于“Node 函数调用”（Node Function Call）。�
 
 当你仅仅只有一个 promise 时，还不清楚这种抽象是如何帮助管理异步代码的。当你拥有一链需要管理的异步操作链时，其优势就会开始变得明显。
 
-## 通过 PUT 结合链式 Promise 更新资源
+### 通过 PUT 结合链式 Promise 更新资源
 
 我们已经查看了几个 GET 路由和一个 POST 路由。在这里，我们将检查使用 HTTP PUT 更新 bundle `name` 属性的代码。
 
@@ -3017,7 +2725,7 @@ Q 的 `ncall()` 方法用于“Node 函数调用”（Node Function Call）。�
 ```javascript
 // web-services/b4/lib/bundle.js
 app.put('/api/bundle/:id/name/:name', function(req, res) {
-  Q.ncall(request.get, config.b4db + '/' + req.params.id,
+  Q.ncall(request.get, config.b4db + '/' + req.params.id)
     .then(function(args) {
       let couchRes = args[0], bundle = JSON.parse(args[1]);
       if (couchRes.statusCode !== 200) {
@@ -3036,7 +2744,7 @@ app.put('/api/bundle/:id/name/:name', function(req, res) {
       res.json(502, { error: "bad_gateway", reason: err.code });
     })
     .done();
-  });
+});
 ```
 
 该端点的起始与 GET bundle API 类似。它通过 `Q.ncall()` 调用 `request.get` 来创建一个 promise，并继续使用 `then()` 方法处理响应。到目前为止一切良好。
@@ -3049,11 +2757,11 @@ app.put('/api/bundle/:id/name/:name', function(req, res) {
 
 如果我们获得了所追求的 200 OK 状态，那么 promise 将继续覆盖 bundle 的 `name` 字段。我们再次执行 `Q.ncall()` 将 bundle 文档 PUT 回到 CouchDB，并在第 10 行返回由此产生的 promise。Q 等待这个子 promise 完成，然后使用它的值来……。
 
-## 使用 Generators 出控制权
+## 使用 Generators 交出控制权
 
 由于 generators 可以暂停其执行，它们提供了一种处理异步代码的巧妙方法。倒计时示例没有展示这一点，但在你的 generator 函数内部，你可以通过 `yield` 获取传入的值。
 
-## 使用 Generators 计数
+### 使用 Generators 计数
 
 让我们看看它是如何工作的。打开编辑器输入：
 
@@ -3079,27 +2787,26 @@ const callback = function() {
 callback();
 ```
 
-保存文件后运行
+保存文件后运行：
 
+```bash
 $ node countdown.js
+```
 
-## 与 Promise 使用 Generators
+### 与 Promise 使用 Generators
 
 让我们回到处理书籍 bundle 的 Express APIs。到目前为止，我们有了创建和检索 bundle 的方法，以及更新 bundle 名称属性的方法。
 
 现在我们将实现一个使用 PUT HTTP 动词向 bundle 添加书籍的 API。这段代码必须进行多次异步调用：一个用于获取现有 bundle，一个用于获取书籍详情，一个用于将 bundle 数据放回。为了完成所有这些，我们将使用 promise 和 generators 来扁平化并简化操作链。
 
-
-
-
-# 使用 PUT 书籍 API
+## 使用 PUT 书籍 API
 
 在进入代码之前，让我们先来看看这个 API 是如何工作的。这样，当我们深入研究代码时，就能更清晰理解它在做什么。
 
 要使用 PUT 书籍 API，我们需要一个包（bundle），因此请通过 curl 使用 POST API 创建一个：
 
 ```bash
-$ curl -X POST http://localhost:3000/api/bundle/name=War%20Books
+$ curl -X POST http://localhost:3000/api/bundle/?name=War%20Books
 {
   "ok": true,
   "id": "d476e5d513555f2e8dd0eaac7c000984",
@@ -3116,15 +2823,14 @@ $ curl http://localhost:3000/api/bundle/d476e5d513555f2e8dd0eaac7c000984
   "_rev": "1-d90a92a28880d9f26fa4515702d50",
   "type": "bundle",
   "name": "War Books",
-  "books": {
-}
+  "books": {}
 }
 ```
 
-然后，让我们添加添加孙子的《兵法》（Project Gutenberg 132）：
+然后，让我们添加孙子的《兵法》（Project Gutenberg 132）：
 
 ```bash
-$ curl -PUT http://localhost:3000/api/bundle/d476e5d513555f2e8dd0eaac7c000984
+$ curl -X PUT http://localhost:3000/api/bundle/d476e5d513555f2e8dd0eaac7c000984/book/132
 {
   "ok": true,
   "id": "d476e5d513555f2e8dd0eaac7c000984",
@@ -3151,12 +2857,12 @@ $ curl http://localhost:3000/api/bundle/d476e5d513555f2e8dd0eaac7c000984
 
 让我们来看看实现这一操作的 PUT 处理器。这将是本章中检查的最后一个代码块，但它也是最复杂的一个。
 
-## 使用 Q.async 产生 Promise
+### 使用 Q.async 产生 Promise
 
 以下是 `lib/bundle.js` 中实现通过 PUT 向包中添加书籍的代码部分：
 
 ```javascript
-web-services/b4/bundle.js
+// web-services/b4/bundle.js
 app.put('/api/bundle/:id/book/:pgid', function(req, res) {
   let
     get = Q.denodeify(request.get),
@@ -3168,7 +2874,7 @@ app.put('/api/bundle/:id/book/:pgid', function(req, res) {
     couchRes = args[0];
     bundle = JSON.parse(args[1]);
     // 如果无法获取包，则快速失败
-    if (couchRes.statusCode == 200) {
+    if (couchRes.statusCode != 200) {
       res.json(couchRes.statusCode, bundle);
       return;
     }
@@ -3177,21 +2883,22 @@ app.put('/api/bundle/:id/book/:pgid', function(req, res) {
     couchRes = args[0];
     book = JSON.parse(args[1]);
     // 如果无法获取书籍，则快速失败
-    if (couchRes.statusCode == 200) {
+    if (couchRes.statusCode != 200) {
       res.json(couchRes.statusCode, book);
       return;
     }
     // 将书籍添加到包中并回 CouchDB
     bundle.books[book.id] = book.title;
     args = yield put({url:config.b4db + bundle.id, json: bundle});
-    res.json(args[0], args[1]);
+    res.json(args[0].statusCode, args[1]);
   })()
   .catch(function(err) {
     res.json(502, { error: "bad_gateway", reason: err });
   });
+});
 ```
 
-首先注意到的是第 4 行，我们对 `request` 和 `request.put` 调用了 `Q.denodeify`。`denodeify` 方法接收一个 Node 风格的函数（期望回调的函数），并返回一个产生 promise的新函数。使用 `denodeify` 是一种避免随处调用回调的方便方法。相反，我们只需要对计划使用的函数进行 `denodeify`，稍后调用它们时就能知道它们会产生 promise。
+首先注意到的是第 4 行，我们对 `request.get` 和 `request.put` 调用了 `Q.denodeify`。`denodeify` 方法接收一个 Node 风格的函数（期望回调的函数），并返回一个产生 promise 的新函数。使用 `denodeify` 是一种避免随处调用回调的方便方法。相反，我们只需要对计划使用的函数进行 `denodeify`，稍后调用它们时就能知道它们会产生 promise。
 
 紧接着在第 7 行，我们使用生成器函数调用了 `Q.async()`。Q 的 `async` 方法返回一个新产生的函数，它在你调用它时会启动生成器。我们在第 37 行立即调用了该函数。
 
@@ -3201,13 +2908,7 @@ app.put('/api/bundle/:id/book/:pgid', function(req, res) {
 
 最后，在第 33 行，我们将书籍添加到包中并进行 `yield`——这次是在等待 `put` 操作。
 
-
-
-
-
-# 第7 章
-
-## Web 应用
+# 第 7 章 Web 应用
 
 到此时，你已经掌握了处理异步 JavaScript 代码的多种方法。你知道如何使用和编写 RESTful Web 服务。你理解消息模式，以及如何使用 Express。
 
@@ -3233,28 +2934,28 @@ app.put('/api/bundle/:id/book/:pgid', function(req, res) {
 
 所以，我们不会尝试探索所有可以了解的内容，而是专注于 Node.js 特有的内容。随书附的代码下载包含一个 `web-app` 目录，其中包含了本章的所有代码以及更多。如果你还没有获取，我鼓励你去下载一下，因为我们不会涵盖其中所有的内容。
 
-应用程序 `b4` 构建在上一章开发的 Web 服务之上。这意味着你需要运行 CouchDB，以及来自第 65 页第 5 章“访问数据库”（Access Databases）中的数据。
+应用程序 `b4` 构建在上一章开发的 Web 服务之上。这意味着你需要运行 CouchDB，以及来自第 65 页第 5 章“访问数据库”中的数据。
 
 一旦你准备好了这些前提条件，让我们开始吧！
 
 ## 在 Redis 中存储 Express 会话
 
-每当你有一个面向用户的 Web 应用时，你几乎总是会会话。会话是附加到特定用户的数据。当用户浏览网站上的页面或使用 Web 应用时，服务器通过会话 cookie 跟踪用户。在每次请求中，服务器读取 cookie，检索会话数据，然后在生成响应时使用它。
+每当你有一个面向用户的 Web 应用时，你几乎总是会用到会话。会话是附加到特定用户的数据。当用户浏览网站上的页面或使用 Web 应用时，服务器通过会话 cookie 跟踪用户。在每次请求中，服务器读取 cookie，检索会话数据，然后在生成响应时使用它。
 
 让我们看看如何在 Express 中启用会话，以及如何使用 Redis 存储会话数据。
 
-## 在 Express 中启用会话
+### 在 Express 中启用会话
 
 要启用会话，向你的应用添加 `cookieParser` 和 `session` 中间件：
 
-```
+```javascript
 app.use(express.cookieParser());
 app.use(express.session({secret: 'unguessable'}));
 ```
 
 `cookieParser` 中间件负责解析来自客户端的 cookie，`session` 中间件存储附加到 cookie 的会话数据。`secret` 参数对于防止 cookie 篡改和伪造——将其设置为你应用程序唯一的字符串。Express 会话 cookie 使用此密钥字符串进行签名。
 
-## 使用 Redis 存储会话数据
+### 使用 Redis 存储会话数据
 
 Redis 是一个极其快速的键值存储，具有可调的持久性。这意味着你可以保持它的快速，但面临着服务器崩溃时丢失数据的风险；或者你可以牺牲一些速度来获得更大的持久性保证。
 
@@ -3264,7 +2965,7 @@ Redis 是一个极其快速的键值存储，具有可调的持久性。这意�
 
 要在你的 Node/Express 应用中使用 Redis，你首先必须安装它。Redis 的安装方法因平台而异，但一旦安装完成，启动它只需要一个命令：
 
-```
+```bash
 $ redis-server
 ```
 
@@ -3276,8 +2977,8 @@ $ redis-server
 
 为了作为一个实验，让我们修改上一章“Hello World”应用的 `server.js` 文件，使用 Redis 进行会话存储。打开 `server.js` 文件，并在顶部的变量声明处添加以下内容：
 
-```
-web-app/hello/server.js
+```javascript
+// web-app/hello/server.js
 redisClient = require('redis').createClient(),
 RedisStore = require('connect-redis')(express),
 ```
@@ -3286,8 +2987,8 @@ RedisStore = require('connect-redis')(express),
 
 最后，在 `server.js` 文件的中间件部分，如下所示配合 Redis 使用 cookie 和 session 中间件：
 
-```
-web-app/hello/server.js
+```javascript
+// web-app/hello/server.js
 app.use(express.cookieParser());
 app.use(express.session({
   secret: 'unguessable',
@@ -3295,9 +2996,7 @@ app.use(express.session({
     client: redisClient
   })
 }));
-```
 
-```
 app.get('/api/:name', function(req, res) {
   res.json(200, { "hello": req.params.name });
 });
@@ -3309,7 +3008,7 @@ app.listen(3000, function() {
 
 完成这些更改后，启动服务器：
 
-```
+```bash
 $ node server.js
 ```
 
@@ -3336,12 +3035,12 @@ Connection: keep-alive
 
 单页应用由 HTML 页面、用于样式的 CSS 以及执行逻辑的 JavaScript 组成。这些都可以作为静态文件交付，不需要处理。
 
-## 使用 Express 提供静态内容
+### 使用 Express 提供静态内容
 
 Express 提供了一种提供静态文件的方便方法。你只需要使用 `static` 中间件并提供一个目录。例如，这些行出现在 `b4` 中：
 
 ```javascript
-web-app/b4/server.js
+// web-app/b4/server.js
 app.use(express.static(__dirname + '/static/'));
 app.use(express.static(__dirname + '/bower_components/'));
 ```
@@ -3354,14 +3053,14 @@ app.use(express.static(__dirname + '/bower_components/'));
 
 服务器运行时，当你请求 `http://localhost:3000/index.html` 时，Express 将提供 `static/index.html`，因为我们没有为它设置式路由。
 
-## 安装 Bower 组件
+### 安装 Bower 组件
 
 Bower 是前端代码（如 JavaScript 库）的包管理器。你以安装 npm 模块的方式安装 Bower 组件。
 
 这是 `b4` 应用的 `bower.json` 文件：
 
 ```json
-web-app/b4/bower.json
+// web-app/b4/bower.json
 {
   "name": "b4",
   "version": "0.0.1",
@@ -3375,19 +3074,13 @@ web-app/b4/bower.json
 }
 ```
 
-
-
-
-
-## 第 7 章. Web 应用 • 112
-
 就像 `package.json` 文件一样，它包含了一个依赖列表。我们的应用依赖于这些前端包：
 
-- jquery—极其流行的用于 Ajax 和 DOM 操作的 JavaScript 库
-- bootstrap—用于 Web 应用的精美 CSS 样式
-- typeahead.js—用于文本框自动完成的 JavaScript 库
-- typeahead.js-bootstrap.css—与 typeahead.js 兼容的 Bootstrap CSS
-- handlebars—HTML 模板库
+- jquery——极其流行的用于 Ajax 和 DOM 操作的 JavaScript 库
+- bootstrap——用于 Web 应用的精美 CSS 样式
+- typeahead.js——用于文本框自动完成的 JavaScript 库
+- typeahead.js-bootstrap.css——与 typeahead.js 兼容的 Bootstrap CSS
+- handlebars——HTML 模板库
 
 要安装这些包，请先通过 npm 安装 Bower（如果你还没有安装的话）：
 
@@ -3403,12 +3096,12 @@ $ bower install
 
 现在你应该拥有一个包含上述所有内容的 `bower_components/` 目录。
 
-## 构建单页应用 (Single-Page App)
+### 构建单页应用
 
 在服务器准备好提供静态内容，且 Bower 组件已就绪后，我们可以组装单页应用的主入口点：`index.html` 文件。以下是该文件的头部：
 
 ```html
-web-app/b4/static/index.html
+<!-- web-app/b4/static/index.html -->
 <!doctype html>
 <html>
 <head>
@@ -3417,7 +3110,6 @@ web-app/b4/static/index.html
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="bootstrap/dist/bootstrap.min.css">
 <link rel="stylesheet" href="bootstrap/dist/bootstrap-theme.min.css">
-<link rel="stylesheet">
 <link rel="stylesheet" href="typeahead.js-bootstrap.css/typeahead.js-bootstrap.css">
 <link rel="stylesheet" href="app.css">
 </head>
@@ -3426,7 +3118,7 @@ web-app/b4/static/index.html
 
 第一行 `<!doctype html>` 告诉浏览器这是一个 HTML5 文档。然后我们进入文档的 `<head>` 部分，它包含标题、一些 `<meta>` 标签以及许多样式表。
 
-`viewport` `<meta>` 标签告诉移动设备页面宽度要与设备宽度（例如 iPhone 上的 320px）匹配，而不是默认的可能大得值。它还告诉设备从 1.0 的缩比例开始，即不缩放。
+`viewport` `<meta>` 标签告诉移动设备页面宽度要与设备宽度（例如 iPhone 上的 320px）匹配，而不是默认的可能大得多的值。它还告诉设备从 1.0 的缩放比例开始，即不缩放。
 
 样式表对应于我们的依赖项；首先是 Bootstrap 核心和主题，最后是我们自己的 `app.css` 文件。`app.css` 文件放在最后，这样我们就可以轻松覆盖之前出现的任何样式。
 
@@ -3437,7 +3129,7 @@ web-app/b4/static/index.html
 ```html
 <script src="jquery/jquery.js"></script>
 <script src="bootstrap/dist/bootstrap.min.js"></script>
-<script src="typehead/dist/typehead.min.js"></script>
+<script src="typeahead.js/dist/typeahead.min.js"></script>
 <script src="handlebars/handlebars.js"></script>
 <script src="app.js"></script>
 </html>
@@ -3447,7 +3139,7 @@ web-app/b4/static/index.html
 
 `index.html` 文件的中间大部分包含了应用程序的视觉内容，作为渲染视图的模板。我们将会介绍这一点，但在那之前，我们还需要几个 API。
 
-具体来说，我们需要用于执行用户特定操作的认证端点（authenticated endpoints）。我们接下来开发这些内容，然后返回客户端将它们全部整合在一起。
+具体来说，我们需要用于执行用户特定操作的认证端点。我们接下来开发这些内容，然后返回客户端将它们全部整合在一起。
 
 ## 使用 Passport 进行身份验证
 
@@ -3458,7 +3150,7 @@ Passport 是一个 Express 插件，为各种第三方登录提供了中间件�
 要添加 passport，首先在 `server.js` 文件的顶部的 `const` 声明添加以下内容：
 
 ```javascript
-web-app/b4/server.js
+// web-app/b4/server.js
 passport = require('passport'),
 GoogleStrategy = require('passport-google').Strategy;
 ```
@@ -3466,19 +3158,19 @@ GoogleStrategy = require('passport-google').Strategy;
 然后你需要初始化 passport 中间件。在 `app.use(express.session...);` 之后添加此内容：
 
 ```javascript
-web-app/b4/server.js
+// web-app/b4/server.js
 app.use(passport.initialize());
 app.use(passport.session());
 ```
 
-Passport 不同的身份验证机制被称为“策略”（strategies）。上述代码的第二行引入了 Google 身份验证策略。
+Passport 不同的身份验证机制被称为“策略”。上述代码的第二行引入了 Google 身份验证策略。
 
-## 配置 Passport 策略
+### 配置 Passport 策略
 
 Passport 本身以及策略都需要一些配置才能发挥作用。这里是如何使用 Google 策略配置 passport 的简短示例。
 
 ```javascript
-web-app/b4/serialize
+// web-app/b4/serialize
 passport.serializeUser(function(user, done) {
   done(null, user.identifier);
 });
@@ -3487,20 +3179,17 @@ passport.deserializeUser(function(id, done) {
 });
 ```
 
-这段代码设置了 passport 的序列化（serialize）和反序列化（deserialize）函数，并告诉 passport 使用我们之前引入的 Google 策略。
+这段代码设置了 passport 的序列化和反序列化函数，并告诉 passport 使用我们之前引入的 Google 策略。
 
 使用 `serializeUser()` 方法指定哪些信息应该存储在 session 中。你可以在其他地方保留数据，但这些数据与 session cookie 关联。
 
 通常，`deserializeUser()` 方法是将 session 数据转换回对象。这对于应用程序识别是哪个用户在发送后续请求是必要的。
 
-
-
-
-使用自定义中间件授权 API • 117
+### 使用自定义中间件授权 API
 
 我们正在为 `ready` 事件添加处理程序，该事件每当 Redis 连接成功并等待命令时就会触发；而 `error` 事件则防止 Node 抛出异常（请记住，EventEmitter 上的未处理的错误事件会抛出异常）。要查看它是如何运行的，请启动你的 b4 服务器，然后在另一个终端中杀死 `redis-server` 进程。你会看到类似如下的输出：
 
-```
+```bash
 $ npm start
 ```
 
@@ -3513,19 +3202,19 @@ $ npm start
 ready captain.
 info REDIS ready
 ERR! REDIS Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
-ERR! REDIS Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+ERR! REDIS Redis connection to 127.0.1:6379 failed - connect ECONNREFUSED
 ```
 
 `redisClient` 对象包含一个布尔属性 `ready`，我们可以在中间件中检查它。让我们接下来来实现这一操作。
 
-## 实现自定义中间件
+### 实现自定义中间件
 
 你已经学习了如何在 Express 中实现路由处理程序；现在让我们来看看如何创建自定义中间件。中间件和路由处理程序的区别在于，中间件旨在作为链中的一环，而路由处理程序则旨在位于链的最末端。中间件函数接受三个参数：请求对象 (`req`)、响应对象 (`res`) 以及一个在中间件执行完成后调用的函数 (`next`)。
 
 让我们创建一个中间件函数来强制执行我们的 passport 会话检查。如果一切按计划进行，它将调用 `next` 函数；如果发生任何错误，它将给出一个适当的 RESTful 响应。
 
 ```javascript
-web-app/server.js
+// web-app/server.js
 const authed = function(req, res, next) {
   if (req.isAuthenticated()) {
     return next();
@@ -3551,14 +3240,14 @@ const authed = function(req, res, next) {
 
 好了，现在我们已经有了自定义中间件，让我们将其应用到一些经过验证的 API 上。
 
-## 创建身份验证 API
+### 创建身份验证 API
 
 我们需要创建新的、特定用户的 API，并希望它们使用我们的 `authed()` 中间件。但我们并不希望所有其他路由（例如我们的静态文件服务）都经过验证。这些路由仍然需要在没有任何身份验证的情况下提供服务。因此，我们不能像使用其他中间件那样直接调用 `use()`。
 
 在 Express 中指定路由时，你可以包含仅应用于该路由的中间件。我们将对 `/api/user` 路由使用此项功能：
 
 ```javascript
-web-app/b4/server.js
+// web-app/b4/server.js
 app.get('/api/user', authed, function(req, res) {
   res.json(req.user);
 });
@@ -3566,16 +3255,13 @@ app.get('/api/user', authed, function(req, res) {
 
 得益于我们已经创建的 `authed()` 函数，这个简短的路由处理程序就是我们需要的。当路由处理程序被调用时，中间件已经执行完毕。
 
-
-
-
 ## 基于哈希的视图
 
 当 Web 应用只包含单个页面时，你需要某种方法来标识正在显示不同的内容。实现这一点的一种方法是使用 URL 哈希——URL 中 # 符号后面的内容。
 
-例如，考虑 URL http://localhost:3000/#list-bundles。我们希望它能响应显示用户包（bundles）的视图。
+例如，考虑 URL `http://localhost:3000/#list-bundles`。我们希望它能响应显示用户包的视图。
 
-打开 b4 项目中的 static/index.html 文件。在其中你会发现类似这样的 `<div>`：
+打开 b4 项目中的 `static/index.html` 文件。在其中你会发现类似这样的 `<div>`：
 
 ```html
 <div id="welcome-view" class="view">
@@ -3588,10 +3274,10 @@ app.get('/api/user', authed, function(req, res) {
 </div>
 ```
 
-我们希望同一时间只有这些视图中的一个是可见的，为此我们需要编写少量的客户端 JavaScript。以下是来自 static/app.js 的 `showView()` 函数：
+我们希望同一时间只有这些视图中的一个是可见的，为此我们需要编写少量的客户端 JavaScript。以下是来自 `static/app.js` 的 `showView()` 函数：
 
 ```javascript
-web-app/b4/static/app.js
+// web-app/b4/static/app.js
 showView = function (selected) {
   window.location.hash = '#' + selected;
   $('.view').filter('#' + selected + '-view').show();
@@ -3605,10 +3291,10 @@ showView = function (selected) {
 `showView()` 函数在我们需要通过程序化设置视图时效果非常好，但我们也应该响应 URL 的直接变化。为了做到这一点，我们监听 `window` 上的 `hashchange` 事件：
 
 ```javascript
-web-app/b4/static/app.js
+// web-app/b4/static/app.js
 $(window).on('hashchange', function(event) {
-  var view = (window.location.hash || '').replace(/^#, '');
-  if ('#' + view + '-view').length) {
+  var view = (window.location.hash || '').replace(/^#/, '');
+  if ($('#' + view + '-view').length) {
     showView(view);
   }
 });
@@ -3625,7 +3311,7 @@ $(window).on('hashchange', function(event) {
 以下是启动视图的代码：
 
 ```javascript
-web-app/b4/static/app.js
+// web-app/b4/static/app.js
 $.ajax({
   url: '/api/user',
   accepts: 'application/json'
@@ -3645,13 +3331,13 @@ $.ajax({
 
 ## 与 REST API 同步模型
 
-在我们的单页 Web 应用中，用户一旦登录，就会将看到 `list-bundles` 视图。在我们渲染它之前，我们需要知道用户已经创建了哪些包。
+在我们的单页 Web 应用中，用户一旦登录，就会看到 `list-bundles` 视图。在我们渲染它之前，我们需要知道用户已经创建了哪些包。
 
-b4 项目中的 `static/app.js` 文件包含一个名为 `bundles` 的变量。这是存储在服务器上的实际用户包的本地副本。为了开始，Web 应用需要下载远程副本——这就是 `getBundles()` 的的作用：
+b4 项目中的 `static/app.js` 文件包含一个名为 `bundles` 的变量。这是存储在服务器上的实际用户包的本地副本。为了开始，Web 应用需要下载远程副本——这就是 `getBundles()` 的作用：
 
 ```javascript
-web-app/b4/static/app.js
-Bundles = function() {
+// web-app/b4/static/app.js
+getBundles = function() {
   $.ajax({
     url: '/api/user/bundles'
   }).then(function(data, status, xhr) {
@@ -3667,10 +3353,12 @@ Bundles = function() {
 });
 ```
 
-在这里我们使用 `$.ajax` 函数来下载 `/api/user/bundles`。如果请求成功，我们使用返回的值；否则，我们从一个空对象 `{}` 开始。如果请求以 500 范围内的状态码（例如 502 Bad Gateway）失败，则我们使用 `showErr()` 函数显示错误。无论哪种，我们都继续执行 `showBundles()`。相反，我们有一个 `saveBundles` 函数，它可以在服务器上保存包：
+在这里我们使用 `$.ajax` 函数来下载 `/api/user/bundles`。如果请求成功，我们使用返回的值；否则，我们从一个空对象 `{}` 开始。如果请求以 500 范围内的状态码（例如 502 Bad Gateway）失败，则我们使用 `showErr()` 函数显示错误。无论哪种，我们都继续执行 `showBundles()`。
+
+相反，我们有一个 `saveBundles` 函数，它可以在服务器上保存包：
 
 ```javascript
-web-app/b4/static/app.js
+// web-app/b4/static/app.js
 saveBundles = function(bundles, callback) {
   $.ajax({
     type: 'POST',
@@ -3686,19 +3374,11 @@ saveBundles = function(bundles, callback) {
 }
 ```
 
-该函数接收一个 `selected` 参数，即我们想要显示的视图。首先，我们将 `window.location.hash` 设置为匹配指定的视图。例如，如果调用 `showView('list-bundles')`，它将更新页面的 URL 以 #list-bundles 结尾。
-
-接下来的部分非常简洁，得益于 jQuery。我们找到页面上所有类名为 `view` 的 `<div>`，将它们隐藏，然后找到 ID 与我们选定的视图匹配的那一个，并显示它。
-
-（注：由于提供的原始文本存在大量 OCR 错误和重复，此处已根据逻辑整合并翻译了原文中第 136-138 页描述的核心内容。）
-
----
-
 ## 使用 Handlebars 生成 HTML
 
 Handlebars 是一个简单但强大的模板引擎。它允许你编写带有占位符的 HTML 模板，这些占位符稍后会被填充。在本章中，我们将使用 Handlebars 来渲染包列表。
 
-以下是包（bundles）列表的模板：
+以下是包列表的模板：
 
 ```html
 <table>
@@ -3726,7 +3406,7 @@ Handlebars 是一个简单但强大的模板引擎。它允许你编写带有占
 </table>
 ```
 
-`{{each}}` 助手用于遍历包数组。对于每个项目，`{{this}}` 上下指的是当前的包，而 `{{@key}}` 指索引。
+`{{#each}}` 助手用于遍历包数组。对于每个项目，`{{this}}` 上下文指的是当前的包，而 `{{@key}}` 指索引。
 
 `{{name}}` 占位符被替换为包的名称。为了渲染模板，我们使用 `Handlebars.compile()` 函数：
 
@@ -3736,7 +3416,7 @@ var html = template(bundles);
 document.getElementById('list-bundles-view').innerHTML = html;
 ```
 
-Handlebars 允许我们在模板中使用逻辑，例如条件判断和循环。例如，我们可以使用 `{{if}}` 在没有包时显示消息：
+Handlebars 允许我们在模板中使用逻辑，例如条件判断和循环。例如，我们可以使用 `{{#if}}` 在没有包时显示消息：
 
 ```html
 {{#if bundles}}
@@ -3747,10 +3427,6 @@ Handlebars 允许我们在模板中使用逻辑，例如条件判断和循环。
 ```
 
 通过使用 Handlebars，我们可以保持 HTML 与 JavaScript 逻辑分离。这使得我们的代码更容易于维护和理解。
-
-
-
-
 
 ## 结语
 
@@ -3773,121 +3449,143 @@ Node.js 的世界仍在迅速扩张。解决任何特定问题都有很多方法
 HTML5 和 CSS3 不仅仅是术语——它们是今天 Web 应用的基础。本书将让你熟悉当前项目中可以直接使用的 HTML5 元素和 CSS3 特性，并提供后兼容的解决方案，确保你不会遗留旧版浏览器的用户。新版涵盖了更多新功能，包括 CSS 动画、IndexedDB 和客户端验证。
 
 Brian P. Hogan
-(300 页) ISBN: 9781937785598. $838
+
+(300 页) ISBN: 9781937785598. $38
+
 http://prag.com/book/bhh52e
 
-## 异步 JavaScript
+### 异步 JavaScript
 
 随着 HTML5、前端 MVC 和 Node.js 的出现，JavaScript 已无处不在——但仍然混乱。这本书将为你提供一个坚实的基础，在不深陷回调地狱的情况下管理异步任务。这是一本关于处理异步行为最核心技巧的快速指南，包括 PubSub、事件模型和 Promises。掌握了这些技巧，你将更好地准备应对大型 Web 应用的复杂性并交付响应式代码。
 
 Trevor Burnham
-(104 页) ISBN: 9781937785277. $817
+
+(104 页) ISBN: 9781937785277. $17
+
 http://prag.com/book/tbjsj
 
-## 让函数式编程更有趣
+### 让函数式编程更有趣
 
 Elixir 在 Erlang 健壮、经过实战检验的工业级环境之上，为函数式编程带回了“乐趣”。
 
-## El 编程
+### Elixir 编程
 
 你想探索函数式编程，但被其学术气息劝退了（别再跟我提一遍 monad 了）。你知道你需要并发应用，但也知道这些应用几乎不可能做好。认识一下 Elixir，这是一种构建在稳如石的 Erlang 虚拟机上的函数式并发语言。Elixir 务实的语法和对元编程内置支持将提高你的生产力，并让你保持长期兴趣。本书是经验丰富的程序员的 Elixir 入门教程。
 
 Dave Thomas
+
 (240 页) ISBN: 9781937785581. $36
+
 http://pragprog.com/book/elixir
 
-## 编程 Erlang（第2版）
+### 编程 Erlang（第2版）
 
 多用户游戏、网站、云应用或网络数据库可以有成千上万的用户同时交互。你需要一个强大的、工业级的工具来处理并行并发环境中真正棘手的问题。你需要 Erlang。在这部畅销书《编程 Erlang》的第二版中，你将学习如何在大规模系统上轻松编写程序。
 
 Joe Armstrong
+
 (548 页) ISBN: 978193778536. $42
+
 http://pragprog.com/book/erlang2
 
-## 编程的乐趣与健康
+### 编程的乐趣与健康
 
-你需要一个强大的、工业级的工具来处理并行并发环境中真正棘手的问题。你需要 Erlang。
+#### 健康数学
 
-### 健康数学
-
-数学是美的——而且有趣的。*Good Math* 将带你了解数学中一些迷人的的话题，从埃及数字到图灵机；如果你曾好奇过初中几何之外还有什么，或者困惑于计算机的极限在哪里，那么这本书就是适合你的。
+数学是美的——而且有趣的。*Good Math* 将带你了解数学中一些迷人的话题，从埃及数字到图灵机；如果你曾好奇过初中几何之外还有什么，或者困惑于计算机的极限在哪里，那么这本书就是适合你的。
 
 Mark C. Carroll
-(282 页) ISBN: 9781937785338. $834
+
+(282 页) ISBN: 9781937785338. $34
+
 http://prag.com/book/mc
 
-### 健康程序员
+#### 健康程序员
 
-为了保持健康和敏锐，它适用于几乎所有的操作系统——如果你掌握了书中的技巧，你将再也需要其他编辑器。通过 100 多个 Vim 技巧，你将快速学会编辑器的核心功能并应对最棘手的编辑和写作任务。
+为了保持健康和敏锐。
 
 Joe Kutner
+
 (254 页) ISBN: 9781937785314. $36
+
 http://prag.com/book/jk
 
-### 纯数据
-
-随着 HTML5、前端 MVC 和 Node.js 的出现，JavaScript 已无处不在——但仍然混乱。这本书将为你提供一个坚实的基础，在不深陷回调地狱的情况下管理异步任务。这是一本关于处理异步行为最核心技巧的快速指南，包括 PubSub、事件模型和 Promises。掌握了这些技巧，你将更好地准备应对大型 Web 应用的复杂性并交付响应式代码。
+#### 纯数据
 
 Tony Hill
-(200 页) ISBN: 9781937785666. $836
+
+(200 页) ISBN: 9781937785666. $36
+
 http://prag.com/book/th
 
-### 使用 Corona 开发移动游戏
+#### 使用 Corona 开发移动游戏
 
 使用 Lua 语言通过 Corona 开发跨移动游戏！本书将让你熟悉 SDK 以及必须的功能：菜单、精灵、移动、音效、关卡、加载与保存以及物理，适用于 iPhone、iPad、Kindle Fire、Nook Color 和所有的 Android 手机。
 
 Silvia Domenech
-(200 页) ISBN: 9781937785574. $836
+
+(200 页) ISBN: 9781937785574. $36
+
 http://prag.com/book/sd
 
 ## 命令行万岁！
 
 ### tmux
 
-你的鼠标拖慢了速度。你在编辑器和终端之间切换上下文的时间消耗了你的生产力。使用 tmux 来控制你的环境，这是一个可以根据工作流定制的终端复用器。学习如何利用 tmux 的独特 能力，让手指留在键盘主位。
+你的鼠标拖慢了速度。你在编辑器和终端之间切换上下文的时间消耗了你的生产力。使用 tmux 来控制你的环境，这是一个可以根据工作流定制的终端复用器。学习如何利用 tmux 的独特能力，让手指留在键盘主位。
 
 Brian P. Hogan
-(104 页) ISBN: 9781934356968. $816.25
+
+(104 页) ISBN: 9781934356968. $16.25
+
 http://prag.com/book/bh
 
 ### 实用 Vim
 
-Vim 是一种快速高效的文本编辑器，能让你成为更快速更高效的开发者。它适用于几乎所有的操作系统——如果你掌握了书中的技巧，你将再也需要其他编辑器。通过 100 多个 Vim 技巧，你将快速学会编辑器的核心功能并应对最棘手的编辑和写作任务。
+Vim 是一种快速高效的文本编辑器，能让你成为更快速更高效的开发者。它适用于几乎所有的操作系统——如果你掌握了书中的技巧，你将再也不需要其他编辑器。通过 100 多个 Vim 技巧，你将快速学会编辑器的核心功能并应对最棘手的编辑和写作任务。
 
 Drew Nell
-(346 页) ISBN: 9781934356982. $829
+
+(346 页) ISBN: 9781934356982. $29
+
 http://prag.com/book/dn
 
+# Pragmatic Bookshelf
 
-
-
-
-# Prag实用书架 (The Pragmatic Bookshelf)
-
-Pragmatic Bookshelf 专注于由开发者为开发者编写的书籍。这些著作延续了著名的《实战程序员》（The Pragmatic Programmer）系列风格，并持续获得奖项和赞誉如评。随着开发变得越来越困难，实战程序员们将持续提供更多书目和产品，帮助你保持领先水平。
+Pragmatic Bookshelf 专注于由开发者为开发者编写的书籍。这些著作延续了著名的《实战程序员》系列风格，并持续获得奖项和赞誉。随着开发变得越来越困难，实战程序员们将持续提供更多书目和产品，帮助你保持领先水平。
 
 # 在线访问我们
 
 ### 本书主页
+
 http://pragprog.com/book/jncode
+
 本书的源代码、勘误以及其他资源。也欢迎向我们提供反馈！
 
 ### 注册更新
+
 http://pragprog.com/updates
+
 当有更新和新书发布时，您将收到通知。
 
 ### 加入社区
+
 http://pragprog.com/community
+
 阅读我们的博客，加入在线讨论，参与我们的邮件列表，与我们的 wiki 互动，并从其他实战程序员的经验中获益。
 
 ### 新动态与值得关注
+
 http://pragprog.com/news
+
 查看最新的实用派进展、新书和其他产品。
 
 # 节省电子书费用
 
 购买本书的电子书版本。拥有这本书的纸质版即可享受超低折扣购买电子版。
+
 PDF 非常适合在笔记本电脑上携带——它们带有超链接、彩色且支持全文检索。大多数书目也适用于 iPhone、iPod touch、Amazon Kindle 以及其他流行的电子书阅读器。
+
 立即前往购买：http://pragprog.com/coupon
 
 # 联系我们
@@ -3900,8 +3598,11 @@ PDF 非常适合在笔记本电脑上携带——它们带有超链接、彩色�
 - 或拨打：+1 800-699-7764
 
 CPSIA 信息可在 www.ICGtesting.com 获取
+
 印于美国
+
 BVOW09s17161602216
+
 436912BV00005B/17/P
 
 # Pragmatic exPress
@@ -3909,4 +3610,3 @@ BVOW09s17161602216
 Pragmatic exPress 系列书籍短小精悍，且直击主题。它们基于教程，因此在学习完成工作所需的知识时，你将全程亲手实践。你将节省时间，快速进入状态，从而投入到项目和新技能的学习中。
 
 http://pragprog.com
-

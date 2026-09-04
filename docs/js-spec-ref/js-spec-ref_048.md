@@ -1,14 +1,5 @@
-# 6.9 Web Notifications API
 
-*   概述
-*   Notification 对象的属性和方法
-    *   Notification.permission
-    *   Notification.requestPermission()
-    *   Notification 实例对象
-        *   Notification 构造函数
-        *   实例对象的事件
-        *   close 方法
-    *   参考链接
+# 6.9 Web Notifications API
 
 ## 概述
 
@@ -45,7 +36,9 @@ if(window.Notification && Notification.permission !== "denied") {
 Notification.permission 属性，用于读取用户给予的权限，它是一个只读属性，它有三种状态。
 
 *   default：用户还没有做出任何许可，因此不会弹出通知。
+
 *   granted：用户明确同意接收通知。
+
 *   denied：用户明确拒绝接收通知。
 
 ### Notification.requestPermission()
@@ -77,9 +70,13 @@ var notification = new Notification(title, options);
 Notification 构造函数的 title 属性是必须的，用来指定通知的标题，格式为字符串。options 属性是可选的，格式为一个对象，用来设定各种设置。该对象的属性如下：
 
 *   dir：文字方向，可能的值为 auto、ltr（从左到右）和 rtl（从右到左），一般是继承浏览器的设置。
+
 *   lang：使用的语种，比如 en-US、zh-CN。
-*   body：通知内容，格式为字符串，用来进一步说明通知的目的。。
+
+*   body：通知内容，格式为字符串，用来进一步说明通知的目的。
+
 *   tag：通知的 ID，格式为字符串。一组相同 tag 的通知，不会同时显示，只会在用户关闭前一个通知后，在原位置显示。
+
 *   icon：图表的 URL，用来显示在通知上。
 
 上面这些属性，都是可读写的。
@@ -100,8 +97,11 @@ notification.body // "您总共有 3 封未读邮件。"
 Notification 实例会触发以下事件。
 
 *   show：通知显示给用户时触发。
+
 *   click：用户点击通知时触发。
+
 *   close：用户关闭通知时触发。
+
 *   error：通知出错时触发（大多数发生在通知无法正确显示时）。
 
 这些事件有对应的 onshow、onclick、onclose、onerror 方法，用来指定相应的回调函数。addEventListener 方法也可以用来为这些事件指定回调函数。
@@ -133,4 +133,5 @@ n.onshow = function () {
 ## 参考链接
 
 *   Aurelio De Rosa, [An Introduction to the Web Notifications API](http://www.sitepoint.com/introduction-web-notifications-api/)
+
 *   MDN, [Notification](https://developer.mozilla.org/en-US/docs/Web/API/Notification)

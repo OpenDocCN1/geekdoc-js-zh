@@ -1,3 +1,4 @@
+
 # [ES2015] ECMAScriptモジュール
 
 > 原文：[`jsprimer.net/basic/module/`](https://jsprimer.net/basic/module/)
@@ -9,24 +10,22 @@
 モジュールは、保守性・名前空間・再利用性のために使われます。
 
 +   保守性: 依存性の高いコードの集合を一箇所にまとめ、それ以外のモジュールへの依存性を減らせます
-
 +   名前空間: モジュールごとに分かれたスコープがあり、グローバルの名前空間を汚染しません
-
 +   再利用性: 便利な変数や関数を複数の場所にコピーアンドペーストせず、モジュールとして再利用できます
 
 モジュールは変数や関数などをモジュール外部にエクスポートできます。また、モジュールからエクスポートされた変数や関数などをインポートして利用できます。モジュールに処理を分けることで、コードの見通しが良くなったり、特定のことに関する処理をモジュールにまとめたり、処理を再利用できるようになります。それによって、コードの行数が増えてきた場合にも、一度にみるコードの量をモジュールで分割できるようになり、メンテナンス性がよくなります。
 
 この章では、**ECMAScriptモジュール（ESモジュール、JavaScriptモジュールとも呼ばれる）**について見ていきます。ECMAScriptモジュールは、ES2015で導入されたJavaScriptファイルをモジュール化する言語標準の機能です。
 
-## *ECMAScriptモジュールの構文*
+## ECMAScriptモジュールの構文
 
-*ECMAScriptモジュールは、[export 文](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Statements/export)によって変数や関数などをエクスポートできます。また、[import 文](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Statements/import)を使って別のモジュールからエクスポートされたものをインポートできます。インポートとエクスポートはそれぞれに **名前つき** と **デフォルト** という2 種類の方法があります。
+ECMAScriptモジュールは、[`export`文](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Statements/export)によって変数や関数などをエクスポートできます。また、[`import`文](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Statements/import)を使って別のモジュールからエクスポートされたものをインポートできます。インポートとエクスポートはそれぞれに **名前つき** と **デフォルト** という2 種類の方法があります。
 
 まずは名前つきエクスポート／インポート文について見ていきましょう。
 
-### *名前つきエクスポート／インポート*
+### 名前つきエクスポート／インポート
 
-***名前つきエクスポート**は、モジュールごとに複数の変数や関数などをエクスポートできます。次の例では、`foo`変数と`bar`関数をそれぞれ名前つきエクスポートしています。`export`文のあとに続けて`{}`を書き、その中にエクスポートする変数を入れることで、宣言済みの変数を名前つきエクスポートできます。
+**名前つきエクスポート**は、モジュールごとに複数の変数や関数などをエクスポートできます。次の例では、`foo`変数と`bar`関数をそれぞれ名前つきエクスポートしています。`export`文のあとに続けて`{}`を書き、その中にエクスポートする変数を入れることで、宣言済みの変数を名前つきエクスポートできます。
 
 named-export.js
 
@@ -63,9 +62,9 @@ console.log(foo); // => "foo"
 console.log(bar); // => function bar() 
 ```
 
-#### *名前つきエクスポート／インポートのエイリアス*
+#### 名前つきエクスポート／インポートのエイリアス
 
-*名前つきエクスポート／インポートには**エイリアス**の仕組みがあります。エイリアスを使うと、宣言済みの変数を違う名前で名前つきエクスポートできます。エイリアスをつけるには、次のように`as`のあとにエクスポートしたい名前を記述します。
+名前つきエクスポート／インポートには**エイリアス**の仕組みがあります。エイリアスを使うと、宣言済みの変数を違う名前で名前つきエクスポートできます。エイリアスをつけるには、次のように`as`のあとにエクスポートしたい名前を記述します。
 
 named-export-alias.js
 
@@ -85,9 +84,9 @@ import { foo as myFoo } from "./named-export-alias.js";
 console.log(myFoo); // => "foo" 
 ```
 
-### *デフォルトエクスポート／インポート*
+### デフォルトエクスポート／インポート
 
-*次に、デフォルトエクスポート／インポートについて見ていきましょう。**デフォルトエクスポート**は、モジュールごとに1つしかエクスポートできない特殊なエクスポートです。次の例は、すでに宣言されている変数をデフォルトエクスポートしています。`export default`文で、後に続く式の評価結果をデフォルトエクスポートします。
+次に、デフォルトエクスポート／インポートについて見ていきましょう。**デフォルトエクスポート**は、モジュールごとに1つしかエクスポートできない特殊なエクスポートです。次の例は、すでに宣言されている変数をデフォルトエクスポートしています。`export default`文で、後に続く式の評価結果をデフォルトエクスポートします。
 
 default-export.js
 
@@ -139,7 +138,7 @@ const foo = "foo";
 export { foo as default }; 
 ```
 
-同じように、在命名导入中，名称`default`对应默认导入。通过以下 way，in 命名导入中 specify `default`，You can perform default import. But please note that `default` is a reserved word, so you must use `as` syntax to specify an alias.
+同じように、命名导入中、名称`default`对应默认导入。通过以下 way，in 命名导入中 specify `default`，You can perform default import. But please note that `default` is a reserved word, so you must use `as` syntax to specify an alias.
 
 default-import-alias.js
 
@@ -161,15 +160,15 @@ console.log(foo); // => "foo"
 console.log(myModule); // => { baz: "baz" } 
 ```
 
-在 ECMAScript 模块中，未导出的内容无法被导入。这是因为在 JavaScript 的解析阶段解析 ECMAScript 模块时，如果无法解析出要导入的内容，则会导致解析错误。默认导入要求导入目标模块导出默认导出。类似地，命名导入要求导入目标模块导出指定的命名导出。*
+在 ECMAScript 模块中，未导出的内容无法被导入。这是因为在 JavaScript 的解析阶段解析 ECMAScript 模块时，如果无法解析出要导入的内容，则会导致解析错误。默认导入要求导入目标模块导出默认导出。类似地，命名导入要求导入目标模块导出指定的命名导出。
 
-### *其他语法*
+### 其他语法
 
-*ECMAScript 模块还具有除了命名导入和默认导入之外的其他一些语法。*
+ECMAScript モジュール还具有除了命名导入和默认导入之外的其他一些语法。
 
-#### *再导出*
+#### 再导出
 
-*再导出是指，重新从另一个模块导入的内容，再次从自身导出。它通常用于创建包含从多个模块导出的内容的模块。*
+再导出是指，重新从另一个模块导入的内容，再次从自身导出。它通常用于创建包含从多个模块导出的内容的模块。
 
 再导出的语法如下，在`export`关键字后面跟着`from`，然后指定另一个模块名。
 
@@ -190,9 +189,9 @@ export { default as myModuleDefault } from "./my-module.js";
 export { foo as default } from "./my-module.js"; 
 ```
 
-#### *导入所有内容*
+#### 导入所有内容
 
-*`import * as`语法会导入所有命名导出。使用这种方法，你声明了一个对象，该对象成为了模块的 **命名空间** 。要访问导出的变量或函数等，您需要使用该命名空间对象的属性。此外，正如前文所述，使用名为 `default` 的关键字，您还可以访问默认导出。*
+`import * as`语法会导入所有命名导出。使用这种方法，你声明了一个对象，该对象成为了模块的 **命名空间** 。要访问导出的变量或函数等，您需要使用该命名空间对象的属性。此外，正如前文所述，使用名为 `default` 的关键字，您还可以访问默认导出。
 
 my-module.js
 
@@ -215,9 +214,9 @@ console.log(myModule.foo); // => "foo"
 console.log(myModule.default); // => { baz: "baz" } 
 ```
 
-#### *用于副作用的导入*
+#### 用于副作用的导入
 
-*有些模块仅执行全局代码，而不导出任何内容。例如，用于操作全局变量的模块等。*
+有些模块仅执行全局代码，而不导出任何内容。例如，用于操作全局变量的模块等。
 
 side-effects.js
 
@@ -233,9 +232,9 @@ window.foo = "foo";
 import "./side-effects.js"; 
 ```
 
-## *执行 ECMAScript 模块*
+## 执行 ECMAScript 模块
 
-*要执行创建的 ECMAScript 模块，您需要将起始 JavaScript 文件作为 ECMAScript 模块加载到 Web 浏览器中。Web 浏览器会使用`script`元素加载和执行 JavaScript 文件。通过为`script`元素添加`type="module"`属性，Web 浏览器会将 JavaScript 文件视为 ECMAScript 模块加载。*
+要执行创建的 ECMAScript 模块，您需要将起始 JavaScript 文件作为 ECMAScript 模块加载到 Web 浏览器中。Web 浏览器会使用`script`元素加载和执行 JavaScript 文件。通过为`script`元素添加`type="module"`属性，Web 浏览器会将 JavaScript 文件视为 ECMAScript 模块加载。
 
 ```
 <!-- my-module.jsをECMAScriptモジュールとして読み込む -->
@@ -246,4 +245,4 @@ import "./side-effects.js";
 
 如果没有添加`type="module"`属性，则会被视为普通脚本，不会启用 ECMAScript 模块的功能。如果在加载的 JavaScript 中使用了`import`或`export`语句，将会导致语法错误。
 
-在 Web 浏览器环境中，导入的模块是通过网络解析的。因此，模块名称应该指定 JavaScript 文件的绝对 URL 或相对 URL。有关详细信息，请参阅 Todo 应用程序用例。*
+在 Web 浏览器环境中，导入的模块是通过网络解析的。因此，模块名称应该指定 JavaScript 文件的绝对 URL 或相对 URL。有关详细信息，请参阅 Todo 应用程序用例。

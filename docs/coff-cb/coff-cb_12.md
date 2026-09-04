@@ -1,3 +1,4 @@
+
 # 十二、网络
 
 ## 客户端
@@ -40,7 +41,7 @@ Received: Hello, World!
 
 ### 讨论
 
-最重要的工作发生在 *connection.on 'data'* 处理过程中，客户端接收到来自服务器的响应并最有可能安排对它的应答。
+最重要的工作发生在 `connection.on 'data'` 处理过程中，客户端接收到来自服务器的响应并最有可能安排对它的应答。
 
 另请参阅 [Basic Server](http://coffeescript-cookbook.github.io/chapters/networking/basic-server)，[Bi-Directional Client](http://coffeescript-cookbook.github.io/chapters/networking/bi-directional-client) 和 [Bi-Directional Server](http://coffeescript-cookbook.github.io/chapters/networking/bi-directional-server) 。
 
@@ -56,7 +57,7 @@ Received: Hello, World!
 
 ### 解决方案
 
-在这个方法中,我们将使用 [node.js's](http://nodejs.org/) HTTP 库。我们将从一个简单的客户端 GET 请求示例返回计算机的外部 IP 。
+在这个方法中，我们将使用 [node.js's](http://nodejs.org/) HTTP 库。我们将从一个简单的客户端 GET 请求示例返回计算机的外部 IP 。
 
 #### 关于 GET
 
@@ -67,7 +68,7 @@ http.get { host: 'www.google.com' }, (res) ->
     console.log res.statusCode
 ```
 
-get 函数，从 node.js's http 模块，发出一个 GET 请求到一个 http 服务器。响应是以回调的形式，我们可以在一个函数中处理。这个例子仅仅输出响应状态代码。检查一下：
+`get` 函数，从 `node.js's http` 模块，发出一个 GET 请求到一个 HTTP 服务器。响应是以回调的形式，我们可以在一个函数中处理。这个例子仅仅输出响应状态代码。检查一下：
 
 ```js
 $ coffee http-client.coffee 
@@ -76,7 +77,7 @@ $ coffee http-client.coffee
 
 #### 我的 IP 是什么?
 
-如果你是在一个类似局域网的依赖于 NAT 的网络中,你可能会面临找出外部 IP 地址的问题。让我们为这个问题写一个小的 coffeescript 。
+如果你是在一个类似局域网的依赖于 NAT 的网络中，你可能会面临找出外部 IP 地址的问题。让我们为这个问题写一个小的 coffeescript 。
 
 ```js
 http = require 'http'
@@ -89,7 +90,7 @@ http.get { host: 'checkip.dyndns.org' }, (res) ->
         console.log data.match(/([0-9]+\.){3}[0-9]+/)[0]
 ```
 
-我们可以从监听 'data' 事件的结果对象中得到数据，知道它结束了一次 'end' 的触发事件。当这种情况发生时，我们可以做一个简单的正则表达式来匹配我们提取的 IP 地址。试一试：
+我们可以从监听 `'data'` 事件的结果对象中得到数据，知道它结束了一次 `'end'` 的触发事件。当这种情况发生时，我们可以做一个简单的正则表达式来匹配我们提取的 IP 地址。试一试：
 
 ```js
 $ coffee http-client.coffee 
@@ -98,9 +99,9 @@ $ coffee http-client.coffee
 
 ### 讨论
 
-请注意 http.get 是 http.request 的快捷方式。后者允许您使用不同的方法发出 HTTP 请求，如 POST 或 PUT。
+请注意 `http.get` 是 `http.request` 的快捷方式。后者允许您使用不同的方法发出 HTTP 请求，如 POST 或 PUT。
 
-在这个问题上的 API 和整体信息，检查 node.js's [http](http://nodejs.org/docs/latest/api/http.html) 和 [https](http://nodejs.org/docs/latest/api/https.html) 文档页面。此外, [HTTP spec](http://www.ietf.org/rfc/rfc2616.txt) 可能派上用场。
+在这个问题上的 API 和整体信息，检查 `node.js's` [http](http://nodejs.org/docs/latest/api/http.html) 和 [https](http://nodejs.org/docs/latest/api/https.html) 文档页面。此外，[HTTP spec](http://www.ietf.org/rfc/rfc2616.txt) 可能派上用场。
 
 ### 练习
 
@@ -118,7 +119,7 @@ $ coffee http-client.coffee
 
 #### 开始 'hi\n'
 
-我们可以通过导入 node.js HTTP 模块开始。这会包含 createServer ，一个简单的请求处理程序返回 HTTP 服务器。我们可以使用该服务器监听 TCP 端口。
+我们可以通过导入 `node.js HTTP` 模块开始。这会包含 `createServer` ，一个简单的请求处理程序返回 HTTP 服务器。我们可以使用该服务器监听 TCP 端口。
 
 ```js
 http = require 'http'
@@ -126,7 +127,7 @@ server = http.createServer (req, res) -> res.end 'hi\n'
 server.listen 8000
 ```
 
-要运行这个例子，只需放在一个文件中并运行它。你可以用 ctrl-c 终止它。我们可以使用 curl 命令测试它,可用在大多数 *nix 平台：
+要运行这个例子，只需放在一个文件中并运行它。你可以用 `ctrl-c` 终止它。我们可以使用 `curl` 命令测试它，可用在大多数 *nix 平台：
 
 ```js
 $ curl -D - http://localhost:8000/
@@ -166,7 +167,7 @@ GET /user/1337
 
 #### 得到的东西
 
-假如我们的网络服务器能够保存一些数据会怎么样？我们将在通过 GET 方法 请求检索的元素中设法想出一个简单的键值存储。并提供一个关键路径，服务器将请求返回相应的值,如果不存在则返回 404 错误。
+假如我们的网络服务器能够保存一些数据会怎么样？我们将在通过 GET 方法请求检索的元素中设法想出一个简单的键值存储。并提供一个关键路径，服务器将请求返回相应的值，如果不存在则返回 404 错误。
 
 ```js
 http = require 'http'
@@ -193,7 +194,7 @@ server = http.createServer (req, res) ->
 server.listen 8000
 ```
 
-我们可以试试几种 url，看看它们如何回应：
+我们可以试试几种 URL，看看它们如何回应：
 
 ```js
 $ curl -D - http://localhost:8000/coffee
@@ -212,7 +213,7 @@ Transfer-Encoding: chunked
 
 #### 使用你的头文件
 
-text/plain 是站不住脚的。如果我们使用 application/json 或 text/xml 会怎么样？同时,我们的存储检索过程也可以用一点重构——一些异常的抛出 & 处理怎么样? 来看看我们能想出什么：
+`text/plain` 是站不住脚的。如果我们使用 `application/json` 或 `text/xml` 会怎么样？同时，我们的存储检索过程也可以用一点重构——一些异常的抛出 & 处理怎么样？来看看我们能想出什么：
 
 ```js
 http = require 'http'
@@ -256,7 +257,7 @@ server = http.createServer (req, res) ->
 server.listen 8000
 ```
 
-这个服务器仍然会返回一个匹配给定键的值,如果不存在则返回 404 错误。但它根据标头 Accept 将响应在 JSON 或 XML 结构中。可亲眼看一下：
+这个服务器仍然会返回一个匹配给定键的值，如果不存在则返回 404 错误。但它根据标头 `Accept` 将响应在 JSON 或 XML 结构中。可亲眼看一下：
 
 ```js
 $ curl http://localhost:8000/
@@ -343,7 +344,7 @@ server = http.createServer (req, res) ->
 server.listen 8000
 ```
 
-在一个 POST 请求中注意数据是如何接收的。通过在“数据”和“结束”请求对象的事件中附上一些处理程序，我们最终能够从客户端缓冲和保存数据。
+在一个 POST 请求中注意数据是如何接收的。通过在 `'data'` 和 `'end'` 请求对象的事件中附上一些处理程序，我们最终能够从客户端缓冲和保存数据。
 
 ```js
 $ curl -D - http://localhost:8000/cookie
@@ -360,7 +361,9 @@ HTTP/1.1 200 OK # ...
 
 ### 讨论
 
-给 http.createServer 一个函数 (request，response) - >…… 它将返回一个服务器对象，我们可以用它来监听一个端口。让服务器与 request 和 response 对象交互。使用 server.listen 8000 监听端口 8000。
+给 `http.createServer` 一个函数 `(request，response) -> ...` 它将返回一个服务器对象，我们可以用它来监听一个端口。让服务器与 `request` 和 `response` 对象交互。使用 `server.listen 8000` 监听端口 8000。
+
+
 
 在这个问题上的 API 和整体信息，参考 node.js [http](http://nodejs.org/docs/latest/api/http.html) 和 [https](http://nodejs.org/docs/latest/api/https.html) 文档页面。此外，[HTTP spec](http://www.ietf.org/rfc/rfc2616.txt) 可能派上用场。
 
@@ -419,7 +422,7 @@ Received connection from 127.0.0.1
 
 ### 讨论
 
-函数将为每个客户端新连接的新插口传递给 @net.createServer@ 。基本的服务器与访客只进行简单地交互，但是复杂的服务器会将插口连上一个专用的处理程序,然后返回等待下一个用户的任务。
+函数将为每个客户端新连接的新插口传递给`net.createServer`。基本的服务器与访客只进行简单地交互，但是复杂的服务器会将插口连上一个专用的处理程序，然后返回等待下一个用户的任务。
 
 另请参阅 [Basic Client](http://coffeescript-cookbook.github.io/chapters/networking/basic-client)，[Bi-Directional Server](http://coffeescript-cookbook.github.io/chapters/networking/bi-directional-client) 和 [Bi-Directional Client](http://coffeescript-cookbook.github.io/chapters/networking/bi-directional-client)。
 
@@ -431,7 +434,7 @@ Received connection from 127.0.0.1
 
 ### 问题
 
-你想通过网络提供持续的服务,与客户保持持续的联系。
+你想通过网络提供持续的服务，与客户保持持续的联系。
 
 ### 解决方案
 
@@ -484,7 +487,7 @@ Connection closed
 
 ### 讨论
 
-这个特殊示例发起与服务器联系并在 @connection.on 'connect'@ 处理程序中开启对话。大量的工作在一个真正的用户中，然而 @connection.on 'data'@ 处理来自服务器的输出。@ping@ 函数递归是为了说明连续与服务器通信可能被真实的用户移除。
+这个特殊示例发起与服务器联系并在`connection.on 'connect'`处理程序中开启对话。大量的工作在一个真正的用户中，然而`connection.on 'data'`处理来自服务器的输出。`ping`函数递归是为了说明连续与服务器通信可能被真实的用户移除。
 
 另请参阅 [Bi-Directional Server](http://coffeescript-cookbook.github.io/chapters/networking/bi-directional-server)，[Basic Client](http://coffeescript-cookbook.github.io/chapters/networking/basic-client) 和 [Basic Server](http://coffeescript-cookbook.github.io/chapters/networking/basic-server)。
 
@@ -538,7 +541,7 @@ New connection from 127.0.0.1
 
 ### 讨论
 
-大部分工作在 @socket.on 'data'@ 中 ，处理所有的输入端。真正的服务器可能会将数据传给另一个函数处理并生成任何响应以便源程序处理。
+大部分工作在`socket.on 'data'`中，处理所有的输入端。真正的服务器可能会将数据传给另一个函数处理并生成任何响应以便源程序处理。
 
 ### 练习
 

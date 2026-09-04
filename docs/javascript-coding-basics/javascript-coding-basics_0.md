@@ -1,10 +1,5 @@
+
 # JavaScript 编码基础
-
-
-
-![](img/cover00118.jpeg)
-
-
 
 这本 JavaScript 教程让初学者和专家都能轻松学习 JavaScript。
 
@@ -42,7 +37,9 @@
 ## JavaScript 代码可以在 JavaScript 中写在 3 个地方：
 
 1. 在 HTML 的 `<body>`...`</body>` 标签之间。
+
 2. 在 HTML 的 `<head>`...`</head>` 标签之间。
+
 3. 在 `.js` 文件中（外部 JavaScript）。
 
 ### 示例（在 body 标签之间编写代码）
@@ -115,6 +112,7 @@ JavaScript 中的注释用于描述代码。它用于添加代码相关的内容
 JavaScript 注释有两种类型：
 
 1. 单行注释
+
 2. 多行注释
 
 ### 单行注释
@@ -152,6 +150,7 @@ JavaScript 注释有两种类型：
 ```
 
 ### 输出
+
 30
 
 ## 多行注释
@@ -186,6 +185,7 @@ JavaScript 注释有两种类型：
 变量有两种类型：
 
 1. 局部变量
+
 2. 全局变量
 
 局部变量——它在函数或块内部声明。
@@ -254,6 +254,7 @@ functionabc() {
 在 JavaScript 中，有两种数据类型。
 
 1. 基本数据类型（原始）。
+
 2. 非基本数据类型（引用）。
 
 ### 由于 JavaScript 是一种动态语言，我们不需要定义变量的类型，因为 JavaScript 引擎动态地使用它。在这种情况下，数据类型使用 `var` 定义。它可以存储任何类型的值，包括数字、字符串和对象。
@@ -285,10 +286,15 @@ JavaScript 中有 5 种基本数据类型。
 以下是 JavaScript 中使用的运算符：
 
 1. 算术运算符。
+
 2. 比较（关系）运算符。
+
 3. 位运算符。
+
 4. 逻辑运算符。
+
 5. 赋值运算符。
+
 6. 特殊运算符。
 
 ## 算术运算符
@@ -298,10 +304,6 @@ JavaScript 中有 5 种基本数据类型。
 ![](img/image00107.jpeg)
 
 ## 比较运算符
-
-
-
-
 
 在比较运算符中，会比较两个操作数 `A` 和 `B`。
 
@@ -334,7 +336,9 @@ JavaScript 中的条件语句用于根据条件执行各种任务。
 在 JavaScript 中，有三种类型的语句：
 
 1. `if` 语句。
+
 2. `if else` 语句。
+
 3. `if else if` 语句。
 
 ## if 语句
@@ -354,7 +358,7 @@ if (condition){
 ```html
 <!DOCTYPE html>
 <html>
-<<body>
+<body>
 <script>
 var x=50;
 if(x>30){
@@ -366,6 +370,7 @@ if(x>30){
 ```
 
 ### 输出
+
 Value of x is greater than 30
 
 ## if else 语句
@@ -392,7 +397,7 @@ else
 ```html
 <!DOCTYPE html>
 <html>
-<<body>
+<body>
 <script>
 var x=20;
 if(x%2==0){
@@ -407,6 +412,7 @@ else{
 ```
 
 ### 输出
+
 X is even number
 
 ## If else if
@@ -439,7 +445,7 @@ else
 ```html
 <!DOCTYPE html>
 <html>
-<<body>
+<body>
 <script>
 var x=50;
 if (x==10){
@@ -460,6 +466,7 @@ else{
 ```
 
 ### 输出
+
 x is equal to 50
 
 # Javascript Switch 语句
@@ -487,7 +494,7 @@ switch (expression)
 ```html
 <!DOCTYPE html>
 <html>
-<<body>
+<body>
 <script>
 var grade='B';
 var result;
@@ -511,6 +518,7 @@ document.write(result);
 ```
 
 ### 输出
+
 B Grade
 
 # JavaScript 函数
@@ -522,6 +530,7 @@ B Grade
 ## 优点 - JavaScript 函数
 
 1. 代码复用性：我们多次使用相同的功能来节省时间和代码量。
+
 2. 减少代码量：结果是我们的软件被压缩了。当我们执行常规操作时，不需要编写大量的代码。
 
 ### 语法
@@ -537,7 +546,7 @@ function Name(parameter)
 ```html
 <!DOCTYPE html>
 <html>
-<<body>
+<body>
 <script>
 function msg() {
   alert("Hello!");
@@ -548,6 +557,7 @@ function msg() {
 ```
 
 ### 输出
+
 Hello!
 
 ## 带参数的函数
@@ -557,7 +567,7 @@ Hello!
 ```html
 <!DOCTYPE html>
 <html>
-<<body>
+<body>
 <script>
 function cube(number) {
   alert(number*number);
@@ -568,6 +578,7 @@ function cube(number) {
 ```
 
 ### 输出
+
 27
 
 ### 示例
@@ -575,7 +586,7 @@ function cube(number) {
 ```html
 <!DOCTYPE html>
 <html>
-<<body>
+<body>
 <script>
 function name() {
   alert("Welcome " + prompt("Enter Name"));
@@ -592,7 +603,7 @@ function name() {
 ```html
 <!DOCTYPE html>
 <html>
-<<body>
+<body>
 <script>
 function getInfo() {
   return "How are you?";
@@ -606,11 +617,12 @@ document.write(getInfo());
 ```
 
 ### 输出
+
 How are you?
 
 ## Function() 构造函数
 
-函数语句不仅用于定义函数，还可以使用 `Function()` 构造函数动态地定义函数。
+函数语句不仅用于定义函数，还可以使用 `Function()` 构造函数动态地定义函�。
 
 ### 语法
 
@@ -681,18 +693,6 @@ function secondFunction(){
 </html>
 ```
 
-
-
-
-
-```html
-<input type="button" onclick="secondFunction()" value="Call Function">
-</form>
-<p>在函数内部使用不同的参数并尝试一下吧...</p>
-</</body>
-</html>
-```
-
 # Javascript 对象
 
 对象是一个包含状态和行为的实体。JavaScript 是一种关注对象的脚本语言。虽然 JavaScript 是基于模板的而非基于类的，但它允许我们直接构建对象。
@@ -734,6 +734,7 @@ document.write("Book Author is : " + book.author + "<br>");
 ### 输出
 
 Book Name is: 5 points someone
+
 Book Author is: Chetan Bhagat
 
 ## 对象的方法
@@ -771,7 +772,9 @@ document.write("Book Price is : " + myBook.price + "<br>");
 ### 输出
 
 Book Title is: 5 Points Someone
+
 Book Author is :ChetanBhagat
+
 Book Price is : 150
 
 # Javascript 数组
@@ -817,8 +820,11 @@ document.write(emp[i] + "<br>");
 ### 输出
 
 Ajay
+
 Abhay
+
 Arun
+
 Shipra
 
 ## 示例 2
@@ -860,6 +866,7 @@ alert(sum)
 `String` 对象用于与字符字符串交互。它是用于存储和操作文本的工具。在 JavaScript 中，有两种创建字符串的方法：
 
 1. 字符串字面量
+
 2. 使用 `new` 关键字
 
 ### 语法
@@ -917,7 +924,9 @@ String
 有字符串属性列表及其描述：
 
 1. `constructor`: 它返回对对象的引用。
+
 2. `length`: 字符串中字符的数量。
+
 3. `prototype`: 允许任何对象拥有属性（`Number`、`String` 等）。
 
 ### 语法
@@ -934,7 +943,7 @@ string.prototype
 
 ### charAt()
 
-这是一个从给定索引获取字符的方法。
+这是一个从给定索获取字符的方法。
 
 ```html
 <!DOCTYPE html>
@@ -1054,10 +1063,6 @@ document.write(y);
 </html>
 ```
 
-
-
-
-
 ```html
 document.write(y);
 </script>
@@ -1090,8 +1095,11 @@ Date 对象（期期对象）是 JavaScript 语言中内置的一种数据类型
 `Date()` 构造函数可以使用以下语法生成 `Date` 对象：
 
 - `new Date();`
+
 - `new Date(value);`
+
 - `new Date(dateString);`
+
 - `new Date(year, month, day, hours, minutes, seconds, milliseconds);`
 
 注意：括号内的参数始终是可选的。
@@ -1099,24 +1107,31 @@ Date 对象（期期对象）是 JavaScript 语言中内置的一种数据类型
 ### 描述
 
 ### year
+
 年份由一个整数表示。对于 2000 年到 2099 年，值的映射范围为 0 到 99。
 
 ### Month
+
 从 0（1 月）开始到 11（12 月）结束，这个整数代表月份。
 
 ### Date
+
 这是一个可选参数。月份的日期由一个整数表示。
 
 ### Hours
+
 这是一个可选参数。一天中的小时由一个整数表示。
 
 ### Minutes
+
 这是一个可选参数。时间中的分钟部分由一个整数表示。
 
 ### Seconds
+
 这是一个可选参数。秒段由一个整数表示。
 
 ### Milliseconds
+
 这是一个可选参数。时间的毫秒段由一个整数表示。
 
 ### Date 示例
@@ -1161,6 +1176,7 @@ Math 是一个内置对象，具有用于数学函数和常数的属性和方法
 ### 语法
 
 1. `varpi_val = Math.PI;`
+
 2. `varsin_val = Math.sin(30);`
 
 ### 示例
@@ -1245,6 +1261,7 @@ document.write(x+" "+y+" "+z+" "+n);
 ```
 
 ### 输出
+
 100 100.7 1200000 20
 
 ### 描述
@@ -1252,9 +1269,9 @@ document.write(x+" "+y+" "+z+" "+n);
 数字对象通常用于以下用途：
 
 1. 如果值无法转换为数字，则返回 `NaN`（不是数字）。
+
 2. `Number` 可用于非构造函数上下文中执行类型转换（即不使用 `new` 运算符）。
 
 ### JavaScript 数字常量
 
 ![](img/image00117.jpeg)
-

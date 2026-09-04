@@ -1,9 +1,5 @@
-# 7.10 Web Speech
 
-*   概述
-*   SpeechRecognition 对象
-*   事件
-*   参考链接
+# 7.10 Web Speech
 
 ## 概述
 
@@ -12,8 +8,7 @@
 它最早是由 Google 提出的，目的是让用户直接进行语音搜索，即对着麦克风说出你所要搜索的词，搜索结果就自动出现。Google 首先部署的是 input 元素的 speech 属性（加上浏览器前缀 x-webkit）。
 
 ```js
-<input id="query" type="search" class="k-input k-textbox" 
- x-webkit-speech speech />
+<input id="query" type="search" class="k-input k-textbox" x-webkit-speech speech />
 ```
 
 加上这个属性以后，输入框的右端会出现了一个麦克风标志，点击该标志，就会跳出语音输入窗口。
@@ -92,4 +87,4 @@ result 事件回调函数的参数，是一个 SpeechRecognitionEvent 对象。�
 
 ## 参考链接
 
-*   Brandon Satrom, [Using voice to drive the web: Introduction to the Web Speech API](http://www.adobe.com/devnet/html5/articles/voice-to-drive-the-web-introduction-to-speech-api.html)
+*   Brandon Satrom, [Using voice to drive the web: Introduction to the Web Speech API](http://www.adobe.com/devnet/html5/articles/voice-to-drive-the-web-introduction-to-speech-api.html)

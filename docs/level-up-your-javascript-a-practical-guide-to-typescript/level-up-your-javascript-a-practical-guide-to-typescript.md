@@ -1,20 +1,5 @@
+
 # 进阶 JavaScript：TypeScript 实用指南
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ## 第 1 章：TypeScript 简介
 
@@ -33,15 +18,21 @@ TypeScript 是 JavaScript 的超集，这意味着任何有效的 JavaScript 代
 虽然 JavaScript 一直以来是 Web开发的强大语言，但它也有自己的局限性。
 
 - 运行时类型错误：JavaScript 的动态类型会导致仅在运行时才会显的意外错误。
+
 - 缺乏代码智能感知（IntelliSense）：没有类型信息，代码编辑器和 IDE 无法提供健壮的自动补全、重构和导航功能。
+
 - 可扩展性挑战：随着 JavaScript 项目规模和复杂性的增加，管理类型安全和代码维护性变得越来越困难。
 
 TypeScript 通过提供以下优势解决了这些挑战：
 
 - 早期错误检测：TypeScript 编译器会在你运行代码之前分析你的代码并标记潜在的类型错误。这帮助你在开发过程早期发现 bug，节省时间和精力。
+
 - 提高代码可读性：显式类型注解让你的代码更具自文档性。你只需查看其类型，就能轻松理解变量或函数的意图。
+
 - 增强开发者体验：使用 TypeScript 时，现代代码编辑器和 IDE 会提供自动补全、代码导航和重构等强大功能。
+
 - 无缝集成：TypeScript 设计上可与现有的 JavaScript 代码无缝工作。你可以逐渐将 TypeScript 引入项目，而无需重写。
+
 - 强大的社区和生态系统：TypeScript 拥有庞大且活跃的社区，拥有丰富的资源、库和工具。
 
 ### 一个简单的 TypeScript 示例
@@ -71,10 +62,15 @@ npx tsc index.ts
 ### TypeScript 中的核心概念
 
 - 类型注解（Type Annotations）：显式声明变量、函数参数或返回值的类型。
+
 - 类型推断（Type Inference）：TypeScript 从上下文推断类型的能力，减少了对显式注解的需求。
+
 - 接口（Interfaces）：定义对象的规范，指定它们的属性和方法。
+
 - 类（Classes）：创建可重用的对象组件。
+
 - 泛型（Generics）：编写处理不同数据类型的灵活代码。
+
 - 模块（Modules）：将代码组织为重用的模块。
 
 在下一节中，我们将深入探讨这些核心概念，并探索如何在项目中有效使用 TypeScript。
@@ -90,7 +86,9 @@ npx tsc index.ts
 ### 纯 JavaScript 的痛点
 
 1. 运行时类型错误：JavaScript 的动态类型会导致仅在运行时才出现的意外错误。这在调试时可能既沮丧又耗时，特别是在大型应用中。
+
 2. 缺乏代码智能感知：没有强类型信息，代码编辑器和 IDE 难以提供自动补全、代码导航和重构等健壮功能。这会显著降低开发速度并增加错误概率。
+
 3. 可扩展性挑战：随着 JavaScript 项目复杂性的增加，维护代码质量和一致性变得越来越困难。没有强大的类型系统，微妙的 bug 很容易溜入。
 
 ### TypeScript 的优势
@@ -98,33 +96,49 @@ npx tsc index.ts
 TypeScript 通过提供几个关键优势解决了这些挑战：
 
 1. **早期错误检测**：
+
 - TypeScript 的静态类型系统允许编译器在开发期间捕获潜在的类型错误。这种主动方法帮助你在问题成为运行时问题之前识别并修复它们。
+
 - 通过早期发现错误，你可以在调试中节省大量的时间和精力。
 
 2. **提高代码可读性**：
+
 - 显式类型注解让你的代码更具自文档性。当你看到变量声明为 `let name: string;` 时，立即清楚 `name` 应该持有字符串值。
+
 - 这种增强的可读性提高了代码的可维护性，并降低了新开发者的学习曲线。
 
 3. **增强开发者体验**：
+
 - 现代代码编辑器和 IDE 利用 TypeScript 类型信息提供强大功能：
+
   - 智能感知（IntelliSense）：基于类型的自动代码补全建议。
+
   - 代码导航：快速跳转到变量、函数和类的定义及引用。
+
   - 重构：在整个代码库中安全地重命名变量、函数和类。
+
   - 类型检查：输入时对代码进行实时验证。
 
 4. **与 JavaScript 生态系统的无缝集成**：
-- TypeScript 设计兼容现有的 JavaScript 代码和库。你可以逐渐将 TypeScript 引入项目，而无需完全重写。
+
+- TypeScript 设计兼容现的 JavaScript 代码和库。你可以逐渐将 TypeScript 引入项目，而无需完全重写。
+
 - 的 JavaScript 框架和库（如 React、Angular 和 Node.js）对 TypeScript 都有强大的支持。
 
 5. **强大的社区和生态系统**：
+
 - TypeScript 拥有庞大且活跃的社区，提供了丰富的资源、教程和库。
+
 - 驱动许多此类工具的 TypeScript 语言服务不断进化，以改进开发者体验。
 
 ### TypeScript 的真实世界益处
 
 - 提高生产力：通过早期发现错误和提供强大的开发者工具，TypeScript 可以显著提高你的生产力。
+
 - 提高代码质量：强类型帮助你编写更可靠、更易维护的代码。
+
 - 增强协作：TypeScript 让团队在大型项目上的协作变得更容易，因为它促进了代码的一致性并减少了误解的风险。
+
 - 让代码面向未来：随着 JavaScript 的持续演进，TypeScript 为构建健壮的可扩展应用提供了坚实的基础。
 
 总之，TypeScript 是一个提升你 JavaScript 开发技能的强大工具。通过采用 TypeScript，你可以编写更可靠、易维护且高效的代码。
@@ -140,14 +154,16 @@ TypeScript 通过提供几个关键优势解决了这些挑战：
 ### 先决条件：
 
 - Node.js 和 npm（或 yarn）：确保安装了最新版本。你可以从 Node.js 官网下载。
+
 - 代码编辑器或 IDE：良好的代码编辑器或 IDE 对于高效的 TypeScript 开发至关重要。流行的的选择包括：
-  - Visual Studio Code：一个强大且可自定义的编辑器，具有出色的 TypeScript 支持。
+
+  - Visual Studio Code：一个强大且可自定的编辑器，具有出色的 TypeScript 支持。
+
   - WebStorm：一个为 TypeScript 开发提供高级功能的 IDE。
 
 ### 创建新的 TypeScript 项目：
 
 1. 初始化新项目：你可以使用多种方法创建新的 TypeScript 项目。这里是
-
 
 使用 npm 的常用方法：
 
@@ -226,15 +242,21 @@ node index.js
 `tsc` 命令是一个强大的工具，它可以分析你的 TypeScript 代码并生成等效的 JavaScript 代码。它执行以下任务：
 
 - 类型检查：确保代码符合类型系统。
+
 - 代码生成：将 TypeScript 语法翻译成 JavaScript 语法。
+
 - 模块解析：解析模块之间的导入和导出。
+
 - 错误报告：提供信息丰富的错误消息以帮助你修复问题。
 
 ## 额外提示:
 
 - 使用良好的代码编辑器或 IDE：良好的开发环境可以显著提升你的 TypeScript 体验。
+
 - 利用 TypeScript 的类型系统：使用类型注解让你的代码更显式、更易理解。
+
 - 利用 TypeScript 的特性：探索接口、类、泛型和模块等特性，以编写更健壮、可维护的代码。
+
 - 保持更新：关注最新的 TypeScript 和最佳实践。
 
 通过遵循这些步骤并利用 TypeScript 强大的特性，你可以编写更整洁、更可靠且易维护的 JavaScript 代码。
@@ -266,7 +288,9 @@ console.log(person1.firstName); // 输出: Alice
 以下是分步解析：
 
 1. 定义接口：我们创建一个包含三个属性（firstName, lastName 和 age）的 `Person` 接口。
+
 2. 创建对象：我们创建一个符合 `Person` 接口的 `person1` 对象。
+
 3. 访问属性：我们可以使用点符号访问 `person1` 对象的属性。
 
 ### 示例 2：泛型函数
@@ -289,14 +313,16 @@ console.log(str1, str2); // 输出: world hello
 以下是分步解析：
 
 1. 定义泛型函数：我们创建一个泛型函数 `swap`，它接受两个相同类型 `T` 的参数，并返回一个相同类型的元组。
+
 2. 交换值：在函数内部，我们简单地返回一个包含 `b` 和 `a` 值的数组。
+
 3. 调用函数：我们使用不同的数据类型调用 `swap` 函数，展示了它的灵活性。
 
 记住，这些只是说明 TypeScript 力量的简单示例。当你深入学习这种语言时，你将发现更多高级的技术和特性。
 
 ## 额外的 TypeScript 代码示例
 
-### 示例 1：使用类型别名创建自定义类型
+### 示例 1：使用类型别名创建自定类型
 
 类型别名（Type aliases）允许你创建表示特定数据结构的自定义类型。这可以提高代码的可读性和维护性。
 
@@ -321,7 +347,9 @@ console.log(person1.firstName); // 输出: Alice
 ### 分步解析：
 
 1. 定义类型别名：我们创建了一个包含 firstName, lastName 和 age 三个属性的 `Person` 类型别名。
+
 2. 创建对象：我们创建了一个符合 `Person` 类型的 `person1` 对象。
+
 3. 访问属性：我们可以访问 `person1` 对象的属性。
 
 ### 示例 2：联合类型
@@ -344,18 +372,21 @@ printValue(42); // 输出: Number value: 42
 ### 分步解析：
 
 1. 定义联合类型：我们定义了一个可以是 `string` 或 `number` 的联合类型。
+
 2. 创建函数：我们创建了一个接收 `string | number` 参数的 `printValue` 函数。
+
 3. 检查类型：在函数内部，我们使用 `typeof` 来确定值的实际类型。
+
 4. 打印值：根据类型，我们打印相应的消息。
 
 这些示例展示了如何使用类型别名和联合类型创建更具活性、更有表现力的 TypeScript 代码。
-
 
 ```typescript
 let x: null = null;
 ```
 
 - undefined: 代表一个已经声明但尚未赋值的变量。
+
 - TypeScript
 
 ```typescript
@@ -363,6 +394,7 @@ let y: undefined = undefined;
 ```
 
 - symbol: 代表一个唯一且不可变的值。
+
 - TypeScript
 
 ```typescript
@@ -474,13 +506,16 @@ function greet(name: string): void {
 在此示例中：用于声明函数的关键字。
 
 - function: 声明函数的关键字。
+
 - greet: 函数名。
+
 - name:string: 名为 name 的字符串类型参数。
+
 - void: 表示函数不返回值。
 
 ### 函数签名：声明合约
 
-你可以使用类型别名来定义函数签名，为函数的使用方式提供清晰的合约：
+你可以使用类型别来定义函数签名，为函数的使用方式提供清晰的合约：
 
 # TypeScript
 
@@ -576,9 +611,13 @@ interface Employee extends Person {
 ### 函数与接口的实际应用
 
 - 模块化代码：将代码分解为可复用的函数。
+
 - 增强可读性：使用清晰的函数和接口提高代码理解。
+
 - 提升类型安全：通过类型检查防止错误。
+
 - 促进代码复用：使用接口创建复用的组件和库。
+
 - 提高可维护性：使代码更容易修改和更新。
 
 通过掌握函数和接口，你将能够编写组织良好、可维护且扩展的 TypeScript 应用。在下一节中，我们将深入探讨 TypeScript 中的类和面向对象编程。
@@ -614,8 +653,11 @@ class Person {
 类的拆解：
 
 - 1. 类声明：`class` 关键字声明了一个名为 `Person` 的类。
+
 - 2. 属性：类定义了三个属性：`firstName`、`lastName` 和 `age`。
+
 - 3. 构造函数：构造函数是一个初始化属性特殊方法。它在创建类的实例时被调用。
+
 - 4. 方法：`greet` 方法是定义在类内部的函数。它可以访问对象的属性。
 
 ### 创建对象：赋予类生命
@@ -629,10 +671,6 @@ let person1 = new Person("Alice", "Johnson", 30);
 ```
 
 这创建了一个新的 `Person` 对象并将其赋值给 `person1` 变量。然后你可以访问对象的属性和方法。
-
-
-
-
 
 # TypeScript
 
@@ -665,7 +703,9 @@ class Student extends Person {
 TypeScript 支持访问修饰符来控制类成员的可见性。
 
 - public: 从任何地方访问。
+
 - private: 仅可以在类内部访问。
+
 - protected: 在类及其子类中可以访问。
 
 # TypeScript
@@ -821,7 +861,9 @@ class GenericPair<T, U> {
 ```
 
 let pair1 = new GenericPair<number, string>(1, "hello");
+
 let pair2 = new GenericPair<string, boolean>("world", true);
+
 ```
 
 ### 示例 3：混入 (Mixins)
@@ -831,22 +873,33 @@ let pair2 = new GenericPair<string, boolean>("world", true);
 # TypeScript
 
 ```
+
 interface Loggable {
+
   log(): void;
+
 }
 
 class Logger implements Loggable {
+
   log() {
+
     console.log("记录中...");
+
   }
+
 }
 
 class MyClass {
+
   // ...
+
 }
 
 // 注意：标准 TypeScript 不支持像这样直接多重继承。
+
 // 混入通常使用接口合并或基于函数的模式来实现。
+
 ```
 
 记住去探索更高级的 TypeScript 特性，如高级类型系统、条件类型和工具类型，以编写强大且具表现力的代码。
@@ -866,15 +919,22 @@ class MyClass {
 泛型函数是可以在不同数据类型工作的函数。要定义泛型函数，使用角括号 `<` 来指定类型参数：
 
 ```
+
 TypeScript
+
 function identity<T>(arg: T): T {
+
   return arg;
+
 }
+
 ```
 
 ```
 let output = identity<string>("mystring"); // output 类型为 string
+
 let output2 = identity<number>(100); // output2 类型为 number
+
 ```
 
 在这个示例中，T 是一个类型参数。identity 函数根据传入的参数推断出类型。
@@ -886,13 +946,18 @@ let output2 = identity<number>(100); // output2 类型为 number
 TypeScript
 
 ```
+
 interface GenericIdentityFn<T> {
+
   (arg: T): T;
+
 }
+
 ```
 
 ```
 let myIdentity;
+
 ```
 
 在这个示例中，GenericIdentityFn 接口定义了一个接收类型 T 的参数并返回相同类型值的函数。
@@ -904,15 +969,23 @@ let myIdentity;
 # TypeScript
 
 ```
+
 class GenericPair<T, U> {
+
   first: T;
+
   second: U;
 
   constructor(first: T, second: U) {
+
     this.first = first;
+
     this.second = second;
+
   }
+
 }
+
 ```
 
 let pair = new GenericPair<string, number>("hello", 10);
@@ -949,28 +1022,43 @@ TypeScript 提供了丰富的工具类型，用于创建更简洁、丰富且安
 - Partial<T>: `Partial<T>` 工具类型使类型中的所有属性变为可选的。这在你想要创建给定类型的部分对象时非常有用。
 
 ```
+
 interface Person {
+
   name: string;
+
   age: number;
+
 }
+
 ```
 
 
 
 ```typescript
+
 address: string;
+
 }
+
 ```
 
 ```typescript
+
 type PartialPerson = Partial<Person>;
+
 ```
 
 ```typescript
+
 const partialPerson: PartialPerson = {
+
   name: 'Alice',
+
   age: 30
+
 };
+
 ```
 
 ### 2. Required<T> :
@@ -980,7 +1068,9 @@ const partialPerson: PartialPerson = {
 # TypeScript
 
 ```typescript
+
 type RequiredPerson = Required<PartialPerson>;
+
 ```
 
 ### 3. Readonly<T> :
@@ -988,7 +1078,9 @@ type RequiredPerson = Required<PartialPerson>;
 `Readonly<T>` 用类型使类型中的所有属性变为只读。防止防止意外修改对象的属性。
 
 ```typescript
+
 type ReadonlyPerson = Readonly<Person>;
+
 ```
 
 ### 4. Pick<T, K> :
@@ -996,7 +1088,9 @@ type ReadonlyPerson = Readonly<Person>;
 `Pick<T, K>` 用类型从一个类型中挑选特定的属性。
 
 ```typescript
+
 type NameOnly = Pick<Person, 'name'>;
+
 ```
 
 ### 5. Omit<T, K> :
@@ -1004,7 +1098,9 @@ type NameOnly = Pick<Person, 'name'>;
 `Omit<T, K>` 用类型从一个类型中排除特定的属性。
 
 ```typescript
+
 type AgeOnly = Omit<Person, 'name'>;
+
 ```
 
 ### 6. Record<K, T> :
@@ -1014,7 +1110,9 @@ type AgeOnly = Omit<Person, 'name'>;
 # TypeScript
 
 ```typescript
+
 type AgeByCountry = Record<'USA' | 'Canada', number>;
+
 ```
 
 ## 用类型的进阶用法
@@ -1026,7 +1124,9 @@ type AgeByCountry = Record<'USA' | 'Canada', number>;
 # TypeScript
 
 ```typescript
+
 type IsString<T> = T extends string ? true : false;
+
 ```
 
 判别式联合：
@@ -1034,29 +1134,47 @@ type IsString<T> = T extends string ? true : false;
 # TypeScript
 
 ```typescript
+
 interface Circle {
+
   kind: 'circle';
+
   radius: number;
+
 }
+
 ```
 
 ```typescript
+
 interface Square {
+
   kind: 'square';
+
   sideLength: number;
+
 }
+
 ```
 
 type Shape = Circle | Square;
 
 ```typescript
+
 function getArea(shape: Shape) {
+
   if (shape.kind == 'circle') {
+
     return Math.PI * shape.radius ** 2;
+
   } else {
+
     return shape.sideLength ** 2;
+
   }
+
 }
+
 ```
 
 用于函数式编程的类型：
@@ -1066,13 +1184,19 @@ function getArea(shape: Shape) {
 TypeScript
 
 ```typescript
+
 type MapFunction<T, U> = (value: T) => U;
+
 ```
 
 ```typescript
+
 function map<T, U>(array: T[], fn: MapFunction<T, U>): U[] {
+
   return array.map(fn);
+
 }
+
 ```
 
 通过理解并有效使用用类型，你可以编写出更简洁、更有表现力且类型安全的 TypeScript 代码。
@@ -1086,17 +1210,25 @@ function map<T, U>(array: T[], fn: MapFunction<T, U>): U[] {
 TypeScript
 
 ```typescript
+
 interface User {
+
   name: string;
+
   age: number;
+
   email: string;
+
 }
 
 function createUser(user: Partial<User>) {
+
   // ...
+
 }
 
 createUser({ name: 'Alice', age: 30 }); // 只提供了 `name` 和 `age`
+
 ```
 
 在此示例中，`createUser` 函数接收一个 `Partial<User>` 作为参数。这意味着 `User` 接口的任何属性都可以可选的。
@@ -1108,22 +1240,35 @@ createUser({ name: 'Alice', age: 30 }); // 只提供了 `name` 和 `age`
 TypeScript
 
 ```typescript
+
 interface User {
+
   name: string;
+
   age: number;
+
   email: string;
+
   address: string;
+
 }
+
 ```
 
 ```typescript
+
 // 只选取 `name` 和 `age` 属性
+
 type NameAge = Pick<User, 'name' | 'age'>;
+
 ```
 
 ```typescript
+
 // 排除 `address` 属性
+
 type UserWithoutAddress = Omit<User, 'address'>;
+
 ```
 
 在此示例中，`NameAge` 是一个新类型，只包含 `User` 接口的 `name` 和 `age` 属性。`UserWithoutAddress` 是一个新类型，它排除了 `User` 接口中的 `address` 属性。
@@ -1150,7 +1295,9 @@ type UserWithoutAddress = Omit<User, 'address'>;
 让我们从一个简单的示例开始：
 
 ```typescript
+
 type IsString<T> = T extends string ? true : false;
+
 ```
 
 这个条件类型检查类型 `T` 是否扩展 `string` 类型。如果是，结果为 `true`；否则为 `false`。
@@ -1162,19 +1309,31 @@ type IsString<T> = T extends string ? true : false;
 TypeScript
 
 ```typescript
+
 function isString(value: unknown): value is string {
+
   return typeof value === 'string';
+
 }
 
 function processValue(value: unknown) {
+
   if (isString(value)) {
+
     // value 在这里被收窄为 string
+
     console.log(value.toUpperCase());
+
   } else {
+
     // value 不是 string
+
     console.log(value.toLowerCase());
+
   }
+
 }
+
 ```
 
 ### 高级条件类型
@@ -1185,7 +1344,9 @@ function processValue(value: unknown) {
 TypeScript
 
 ```typescript
+
 type ReturnType<T extends (...args: any[]) => any> = T extends (...args: any[]) => infer R : any;
+
 ```
 
 此类型推断了函数的返回类型。
@@ -1194,7 +1355,9 @@ type ReturnType<T extends (...args: any[]) => any> = T extends (...args: any[]) 
 TypeScript
 
 ```typescript
+
 type IfEquals<X, Y> = (<T>() => X extends T ? 1 : 2)<Y>() extends 1 ? true : false;
+
 ```
 
 此类型检查两个类型是否相等。
@@ -1203,9 +1366,13 @@ type IfEquals<X, Y> = (<T>() => X extends T ? 1 : 2)<Y>() extends 1 ? true : fal
 TypeScript
 
 ```typescript
+
 type DeepReadonly<T> = T extends object ? {
+
   readonly [K in keyof T]: DeepReadonly<T[K]>;
+
 } : T;
+
 ```
 
 此类型递归地使对象的所有属性变为只读。
@@ -1221,21 +1388,33 @@ type DeepReadonly<T> = T extends object ? {
 ## TypeScript
 
 ```typescript
+
 interface Shape {
+
   kind: 'circle' | 'square';
+
 }
+
 ```
 
 ```typescript
+
 interface Circle extends Shape {
+
   radius: number;
+
 }
+
 ```
 
 ```typescript
+
 interface Square extends Shape {
+
   sideLength: number;
+
 }
+
 ```
 
 这种方法为定义判别联合提供了一种更结构化的方式，特别是对于复杂的层次结构。
@@ -1247,15 +1426,25 @@ interface Square extends Shape {
 ## TypeScript
 
 ```typescript
+
 function getArea(shape: Shape) {
+
   if (shape.kind === 'circle') {
+
     // Shape 一定是一个 Circle
+
     return Math.PI * shape.radius ** 2;
+
   } else {
+
     // Shape 一定是一个 Square
+
     return shape.sideLength ** 2;
+
   }
+
 }
+
 ```
 
 通过使用判别联合，你可以创建灵活且类型安全的数据结构，能够表示复杂的层次结构和多态行为。
@@ -1269,29 +1458,47 @@ function getArea(shape: Shape) {
 ## TypeScript
 
 ```typescript
+
 interface SuccessResponse {
+
   kind: 'success';
+
   data: string;
+
 }
+
 ```
 
 ```typescript
+
 interface ErrorResponse {
+
   kind: 'error';
+
   message: string;
+
 }
+
 ```
 
 ```typescript
+
 type ApiResponse = SuccessResponse | ErrorResponse;
 
 function handleApiResponse(response: ApiResponse) {
+
   if (response.kind === 'success') {
+
     console.log('Success:', response.data);
+
   } else {
+
     console.log('Error:', response.message);
+
   }
+
 }
+
 ```
 
 在这个示例中，`ApiResponse` 类型是 `SuccessResponse` 和 `ErrorResponse` 类型的判别联合。`kind` 属性用于区分这两种类型。`handleApiResponse` 函数使用 `kind` 守卫来确定响应的类型并相应进行处理。
@@ -1303,22 +1510,37 @@ function handleApiResponse(response: ApiResponse) {
 ## TypeScript
 
 ```typescript
+
 interface Node {
+
   kind: 'leaf' | 'branch';
+
   value: string;
+
   children?: Node[];
+
 }
+
 ```
 
 ```typescript
+
 const tree: Node = {
+
   kind: 'branch',
+
   value: 'root',
+
   children: [
+
     { kind: 'leaf', value: 'child1'},
+
     { kind: 'branch', value: 'child2', children: [{ kind: 'leaf', value: 'grandchild' }]}
+
   ]
+
 };
+
 ```
 
 在这个示例中，`Node` 接口是一个递归的判别联合。它可以表示叶子节点或分支节点。`kind` 属性用于区分这两种类型。
@@ -1346,7 +1568,9 @@ const tree: Node = {
 确保你的系统中安装了 Node.js。然后运行以下命令：
 
 ```bash
+
 npx create-react-app my-app --template typescript
+
 ```
 
 2. 启动开发服务器：
@@ -1354,8 +1578,11 @@ npx create-react-app my-app --template typescript
 一旦创建，进入目录并启动开发服务器：
 
 ```bash
+
 cd my-app
+
 npm start
+
 ```
 
 ## 项目结构
@@ -1394,11 +1621,15 @@ TypeScript 的静态类型系统为 React 开发带来了显著优势：
 基础函数组件：
 
 ```tsx
+
 import React from 'react';
 
 function Greeting(props: { name: string }) {
+
   return <h1>Hello, {props.name}!</h1>;
+
 }
+
 ```
 
 在这个示例中：
@@ -1411,16 +1642,23 @@ function Greeting(props: { name: string }) {
 TypeScript 与 JSX 无缝集成，允许你编写类型安全的 JSX 表达式：
 
 ```tsx
+
 import React from 'react';
 
 interface ButtonProps {
+
   label: string;
+
   onClick: () => void;
+
 }
 
 const Button: React.FC<ButtonProps> = ({ label, onClick }) => {
+
   return <button onClick={onClick}>{label}</button>;
+
 };
+
 ```
 
 在这个示例中：
@@ -1434,39 +1672,61 @@ const Button: React.FC<ButtonProps> = ({ label, onClick }) => {
 带有状态和属性的类组件：
 
 ```tsx
+
 import React, { Component } from 'react';
 
 interface CounterState {
+
   count: number;
+
 }
 
 class Counter extends Component<{}, CounterState> {
+
   constructor(props: {}) {
+
     super(props);
+
     this.state = { count: 0 };
+
   }
 
   increment = () => {
+
     this.setState({ count: this.state.count + 1 });
+
   };
 
   render() {
+
     return (
+
       <div>
+
         <p>Count: {this.state.count}</p>
+
       </div>
+
     );
+
   }
+
 }
+
 ```
 
 
 
 ```tsx
+
 <button onClick={this.increment}>Increment</button>
+
 </div>
+
 );
+
 }
+
 ```
 
 在此示例中：¹
@@ -1479,7 +1739,7 @@ class Counter extends Component<{}, CounterState> {
 React 组件类型检查的最佳实践：
 
 - 使用显式类型注解：这有助于提高代码的可读性和可维护性。
-- get TypeScript 的内置类型：使用如 `React.FC`、`React.Component` 和 `React.ReactNode` 等类型来定义组件及其 props。
+- get TypeScript 的内置类型：使用如 `React.FC`、`React.Component` 和 `React.ReactNode` 等类型来定组件及其 props。
 - 使用自定义类型别名和接口：创建自定义类型来表示复杂的数据结构和组件 props。
 - 利用类型守卫（type guards）和判别联合类型（discriminated unions）：这些技术可以用于创建更灵活且类型安全的组件。
 - 考虑使用带有 TypeScript 规则的 ESLint 等代码检查工具：代码检查可以帮助你维护代码质量和一致性。
@@ -1503,16 +1763,23 @@ TypeScript 根据 JSX 元素的 props 和 children 推断其类型。这使得�
 ### 基础示例：# TypeScript
 
 ```tsx
+
 import React from 'react';
 
 interface ButtonProps {
+
   label: string;
+
   onClick: () => void;
+
 }
 
 const Button: React.FC<ButtonProps> = ({ label, onClick }) => {
+
   return <button onClick={onClick}>{label}</button>
+
 };
+
 ```
 
 在此示例中：
@@ -1526,16 +1793,25 @@ const Button: React.FC<ButtonProps> = ({ label, onClick }) => {
 TypeScript 还可以根据上下文推断 JSX 表达式的类型。例如：
 
 ```tsx
+
 const MyComponent = () => {
+
   const name = 'Alice';
 
   return (
+
     <div>
+
       <p>Hello, {name}!</p>
+
       <Button label="Click me" onClick={() => console.log('Clicked')} />
+
     </div>
+
   );
+
 };
+
 ```
 
 在此示例中：
@@ -1547,25 +1823,37 @@ const MyComponent = () => {
 
 - 条件渲染：
 ```tsx
+
 const ConditionalComponent = ({ showMessage }: { showMessage: boolean }) => {
+
   return showMessage ? <p>Hello, world!</p> : null;
+
 };
+
 ```
 
 - 数组映射：
 ```tsx
+
 const items = ['item1', 'item2', 'item3'];
 
 return (
+
   <ul>
+
     {items.map((item) => (
+
       <li key={item}>{item}</li>
+
     ))}
+
   </ul>
+
 );
+
 ```
 
-- 自定义组件：你可以创建具有特定 props 和 state 类型的自定义组件，确保整个应用程序的类型安全。
+- 自定组件：你可以创建具有特定 props 和 state 类型的自定义组件，确保整个应用程序的类型安全。
 
 通过在 JSX 中有效使用 TypeScript，你可以编写更可靠、可维护且具表现力的 React 应用。
 
@@ -1574,26 +1862,39 @@ return (
 ### 示例 1：在 React Hooks 中使用 TypeScript
 
 ```tsx
+
 import React, { useState } from 'react';
 
 interface CounterProps {
+
   initialValue: number;
+
 }
 
 const Counter: React.FC<CounterProps> = ({ initialValue }) => {
+
   const [count, setCount] = useState(initialValue);
 
   const increment = () => {
+
     setCount(count + 1);
+
   };
 
   return (
+
     <div>
+
       <p>Count: {count}</p>
+
       <button onClick={increment}>Increment</button>
+
     </div>
+
   );
+
 };
+
 ```
 
 在此示例中：¹
@@ -1606,25 +1907,35 @@ const Counter: React.FC<CounterProps> = ({ initialValue }) => {
 ### 示例 2：在 Context API 中使用 TypeScript
 
 ```tsx
+
 import React, { createContext, useContext, useState } from 'react';
 
 const ThemeContext = createContext<{ theme: 'light' | 'dark' }>();
 
 const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
+
   const [theme, setTheme] = useState('light');
 
   return (
+
     <ThemeContext.Provider value={{ theme }}>
+
       {children}
+
     </ThemeContext.Provider>
+
   );
+
 };
 
 const ThemeAwareComponent = () => {
+
   const { theme } = useContext(ThemeContext);
 
   return <div style={{ backgroundColor: theme === 'light' ? 'white' : 'black' }}>Theme: {theme}</div>;
+
 };
+
 ```
 
 在此示例中：
@@ -1636,31 +1947,49 @@ const ThemeAwareComponent = () => {
 ### 示例 3：在自定义钩子中使用 TypeScript
 
 ```tsx
+
 import { useState, useEffect } from 'react';
 
 function useFetchData(url: string) {
+
   const [data, setData] = useState<any | null>(null);
+
   const [isLoading, setIsLoading] = useState(true);
+
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
+
     const fetchData = async () => {
+
       try {
+
         const response = await fetch(url);
+
         const data = await response.json();
+
         setData(data);
+
       } catch (error) {
+
         setError(error.message);
+
       } finally {
+
         setIsLoading(false);
+
       }
+
     };
 
     fetchData();
+
   }, [url]);
 
   return { data, isLoading, error };
+
 }
+
 ```
 
 
@@ -1670,8 +1999,11 @@ function useFetchData(url: string) {
 ## 3. 启动开发服务器：
 
 ```bash
+
 3. cd my-app
+
 4. ng serve
+
 ```
 
 这将启动一个本地开发服务器，你可以通过浏览器访问 http://localhost:4200/ 来访问你的应用程序。
@@ -1724,17 +2056,27 @@ Angular 组件和服务是 Angular 应用程序的构建块。通过利用 TypeS
 在 Angular 中，组件是通过类来定义的。TypeScript 允许我们定义组件的属性、方法和模板类型：
 
 ```typescript
+
 import { Component } from '@angular/core';
 
 @Component({
+
   selector: 'app-hello-world',
+
   template: `
+
     <h1>Hello, {{ name }}</h1>
+
   `
+
 })
+
 export class HelloWorldComponent {
+
   name: string = 'World';
+
 }
+
 ```
 
 在此示例中：
@@ -1748,23 +2090,39 @@ export class HelloWorldComponent {
 TypeScript 允许你为组件定义输入和输出属性的类型：
 
 ```typescript
+
 @Component({
+
   selector: 'app-user-card',
+
   template: `
+
     <div>
+
       <h2>{{user.name}}</h2>
+
       <p>{{user.email}}</p>
+
     </div>
+
   `
+
 })
+
 export class UserCardComponent {
+
   @Input() user: User;
+
 }
 
 interface User {
+
   name: string;
+
   email: string;
+
 }
+
 ```
 
 在此示例中：
@@ -1777,9 +2135,13 @@ interface User {
 TypeScript 还可以用于对模板表达式和指令进行类型检查。这有助于防止错误并提高代码的可读性。
 
 ```html
+
 <div *ngIf="user">
+
   <p>Welcome, {{ user.name }}</p>
+
 </div>
+
 ```
 
 在此示例中，TypeScript 确保变量 `user` 是具有 `name` 属性的类型。
@@ -1789,16 +2151,25 @@ TypeScript 还可以用于对模板表达式和指令进行类型检查。这有
 Angular 服务用于在组件之间共享数据和逻辑。TypeScript 允许你定义服务的接口并使用强类型实现它。
 
 ```typescript
+
 import { Injectable } from '@angular/core';
 
 @Injectable({
+
   providedIn: 'root'
+
 })
+
 export class GreetingService {
+
   greet(name: string): string {
+
     return `Hello, ${name}`;
+
   }
+
 }
+
 ```
 
 在此示例中：
@@ -1829,9 +2200,13 @@ Angular 的模板类型检查确保模板内使用的表达式和指令是类型
 基础示例：
 
 ```html
+
 <div *ngIf="user">
+
   <p>Welcome, {{ user.name }}</p>
+
 </div>
+
 ```
 
 在此示例中，TypeScript 确保变量 `user 类型 是一个具有 `name` 属性的类型。如果 `user` 对象没有 `name` 属性，模板将无法编译。
@@ -1841,13 +2216,21 @@ Angular 的模板类型检查确保模板内使用的表达式和指令是类型
 你可以使用 TypeScript 对模板内更复杂的表达式进行类型检查：
 
 ```html
+
 <div *ngIf="users.length > 0">
+
   <ul>
+
     <li *ngFor="let user of users">
+
       <p>{{user.name }} - {{user.age}}</p>
+
     </li>
+
   </ul>
+
 </div>
+
 ```
 
 在此示例中，TypeScript 确保数组包含具有 name 和 age 属性的对象。
@@ -1857,20 +2240,29 @@ Angular 的模板类型检查确保模板内使用的表达式和指令是类型
 你可以使用 TypeScript 创建自定义指令来增强 Angular 组件的功能。TypeScript 允许你定义指令的输入、输出和方法，确保类型安全。
 
 ```typescript
+
 import { Directive, Input, ElementRef, OnInit } from '@angular/core';
 
 @Directive({
+
   selector: '[appHighlight]'
+
 })
+
 export class HighlightDirective {
+
   @Input('appHighlight') highlightColor: string = 'yellow';
 
   constructor(private el: ElementRef) {}
 
   ngOnInit() {
+
     this.el.nativeElement.style.backgroundColor = this.highlightColor;
+
   }
+
 }
+
 ```
 
 在此示例中：
@@ -1887,26 +2279,34 @@ export class HighlightDirective {
 - 利用类型守卫和判别联合：这些技术可以创建更灵活、类型安全的模板。
 - 考虑带有 TypeScript 规则的 ESLint 等检查器：代码检查可以帮助你维护代码质量和一致性。
 
-通过遵循这些最佳实践，你可以编写出更可靠、可维护且表现力强的 Angular 模板。
-
-
+通过遵循这些最佳实践，你可以编写出更可靠、可维护且表现力强的 Angular 模板.
 
 
 
 ```typescript
+
 </form>
+
 })
 
 export class UserFormComponent {
+
   user: User = {
+
     name: "",
+
     email: ""
+
   };
 
   onSubmit() {
+
     console.log(this.user);
+
   }
+
 }
+
 ```
 
 在此示例中：
@@ -1921,36 +2321,53 @@ export class UserFormComponent {
 TypeScript
 
 ```typescript
+
 import { Injectable } from '@angular/core';
+
 import { HttpClient } from '@angular/common/http';
+
 ```
 
 ```typescript
+
 interface Post {
+
   id: number;
+
   title: string;
+
   body: string;
+
 }
+
 ```
 
 ```typescript
+
 @Injectable({
+
   providedIn: 'root'
+
 }})
 
 export class PostService {
+
   constructor(private http: HttpClient) {}
 
   getPosts(): Observable<Post[]> {
+
     return this.http.get<Post[]>('https://jsonplaceholder.typicode.com/posts');
+
   }
+
 }
+
 ```
 
 在此示例中：
 
 - 1. 我们定义了一个 Post 接口来表示文章的结构。
-- 2. `PostService` 注入了 `HttpClient` 以进行 HTTP 请求。
+- 2. `PostService` 注入了 `HttpClient` 以进行 HTTP 请请求。
 - 3. `getPosts` 方法返回一个 `Observable<Post[]>`，可以在组件中订阅以获取并显示文章。
 
 通过在 Angular 中有效使用 TypeScript，你可以创建更健壮、可维护且可扩展的 Web 应用程序。
@@ -1979,17 +2396,21 @@ export class PostService {
 为你的项目创建一个新目录并初始化一个新的 npm 项目：
 
 ```bash
+
 1. mkdir my-ts-project
+
+
+
 2. cd my-ts-project
+
 3. npm init -y
-```
 
 ### 3. 安装 TypeScript：
 
 全局安装 TypeScript：
 
 ```bash
-4. npm install -g typescript
+npm install -g typescript
 ```
 
 ### 4. 创建 tsconfig.json 文件：
@@ -2014,7 +2435,7 @@ export class PostService {
 创建一个新文件 `index.ts`：
 
 ```typescript
-15. console.log("Hello, TypeScript!");
+console.log("Hello, TypeScript!");
 ```
 
 ### 6. 将 TypeScript 编译为 JavaScript：
@@ -2022,7 +2443,7 @@ export class PostService {
 使用 `tsc` 命令编译你的 TypeScript 代码：
 
 ```bash
-16. tsc index.ts
+tsc index.ts
 ```
 
 这将在 `dist` 目录下生成一个 `index.js` 文件。
@@ -2032,7 +2453,7 @@ export class PostService {
 使用 Node.js 执行生成的 JavaScript 文件：
 
 ```bash
-17. node dist/index.js
+node dist/index.js
 ```
 
 ### 额外考虑：
@@ -2056,7 +2477,7 @@ export class PostService {
 
 ### 示例：创建自定义类型定义
 
-假设你有一个名为 `my-module` 的自定义模块，它导出了一个 `greet` 函数：
+假设你有一个名为 `my-module` 的自定�模块，它导出了一个 `greet` 函数：
 
 ```javascript
 // my-module.js
@@ -2067,7 +2488,7 @@ module.exports = {
 };
 ```
 
-要在 TypeScript中使用它，你需要创建一个 `my-module.d.ts` 文件：
+要在 TypeScript 中使用它，你需要创建一个 `my-module.d.ts` 文件：
 
 ```typescript
 declare module 'my-module' {
@@ -2140,30 +2561,21 @@ npm install express @types/express typescript --save-dev
 
 ```typescript
 import express from 'express';
-
 const app = express();
 const port = 3000;
-
 app.get('/', (req, res) => {
   res.send('Hello, TypeScript Express!');
 });
-
 app.listen(port, () => {
   console.log(`Server listening on port ${port}`);
 });
 ```
 
-
-
-
-
 ### 4. 编译并运行应用程序：
 
 使用 `tsc` 命令编译你的 TypeScript 代码：
 
-Bash
-
-```
+```bash
 tsc
 ```
 
@@ -2171,9 +2583,7 @@ tsc
 
 若要运行应用程序，请使用 Node.js 命令：
 
-Bash
-
-```
+```bash
 node dist/index.js
 ```
 
@@ -2182,8 +2592,6 @@ node dist/index.js
 ### 类型安全的请求和响应对象：
 
 TypeScript 允许你在路由处理程序中为 `req` 和 `res` 对象定义类型：
-
-TypeScript
 
 ```typescript
 app.get('/users/:id', (req, res) => {
@@ -2196,23 +2604,17 @@ app.get('/users/:id', (req, res) => {
 
 你可以使用强类型来定义中间件函数：
 
-TypeScript
-
 ```typescript
 function logger(req: Request, res: Response, next: NextFunction) {
   console.log(`Received request: ${req.method} ${req.url}`);
-
   next();
 }
-
 app.use(logger);
 ```
 
 ### 类型安全的错误处理：
 
 使用 TypeScript 的错误处理机制编写更健壮的错误处理代码：
-
-TypeScript
 
 ```typescript
 app.get('/users/:id', async (req, res) => {
@@ -2240,21 +2642,15 @@ app.get('/users/:id', async (req, res) => {
 
 ### 示例 1：Express.js 类型安全的路由处理程序
 
-TypeScript
-
 ```typescript
 import express, { Request, Response } from 'express';
-
 const app = express();
-
 const port = 3000;
-
 interface User {
   id: number;
   name: string;
   email: string;
 }
-
 app.get('/users/:id', (req: Request, res: Response) => {
   const userId = parseInt(req.params.id);
   // ... 从数据库或 API 获取用户数据
@@ -2263,50 +2659,27 @@ app.get('/users/:id', (req: Request, res: Response) => {
     name: 'John Doe',
     email: 'johndoe@example.com'
   };
-
   res.json(user);
 });
-
 app.listen(port, () => {
   console.log(`Server listening on port ${port}`);
 });
 ```
 
-在此示例中：
-
-1. 我们定义了一个 User 接口来表示用户对象的结构。
-2. 路由处理程序中的 `req` 和 `res` 对象使用 `Request` 和 `Response` 类型进行了显式类型标记。
-3. `userId` 从请求参数中解析并用于获取用户数据。
-4. 获取到的用户数据被赋值给类型为 `User` 的变量。
-5. 使用 `res.json()` 方法将用户数据作为 JSON 响应发送。
-
 ### 示例 2：类型安全的中间件函数
-
-TypeScript
 
 ```typescript
 import express, { Request, Response, NextFunction } from 'express';
-
 function logger(req: Request, res: Response, next: NextFunction) {
   console.log(`Received ${req.method} request to ${req.url}`);
-
   next();
 }
-
 const app = express();
-
 app.use(logger);
-
 // ... 其他路由
 ```
 
-在此示例中：
-
-1. 我们定义了一个中间件函数 `logger`，它接收 `Request`、`Response` 和 `NextFunction` 对象作为参数。
-2. 中间件将请求方法和 URL 记录到控制台。
-3. `app.use()` 方法注册了 logger 中间件，以便处理所有进入的请求。
-
-通过使用 TypeScript，我们可以编写更健壮且易维护的 Express.js 应用程序。类型安全有助于尽发现潜在错误，提高代码可读性，并使应用程序的行为更容易推理。
+通过使用 TypeScript，我们可以编写更健壮且易维护的 Express.js 应用程序。类型安全有助于尽早发现潜在错误，提高代码可读性，并使应用程序的行为更容易推理。
 
 # 第 8 章：测试 TypeScript 代码
 
@@ -2327,12 +2700,10 @@ app.use(logger);
 ### 设置 Jest：
 
 1. 安装：安装 Jest 及其 TypeScript 配置：
-2. Bash：
 ```bash
 npm install --save-dev jest @types/jest ts-jest
 ```
-3. 配置（可选）：创建一个 `jest.config.js` 文件来自定义 Jest 的行为。这是一个基础配置：
-4. JavaScript：
+2. 配置（可选）：创建一个 `jest.config.js` 文件来自定义 Jest 的行为。这是一个基础配置：
 ```javascript
 module.exports = {
   preset: 'ts-jest',
@@ -2344,11 +2715,8 @@ module.exports = {
 
 ### 基础测试结构：
 
-TypeScript
-
 ```typescript
 import { add } from './myModule';
-
 test('adds 1 + 2 to equal 3', () => {
   expect(add(1, 2)).toBe(3);
 });
@@ -2388,13 +2756,10 @@ test('fetches data with async/await', async () => {
 
 Jest 提供了强大的 mock 功能来隔离代码单元并进行独立测试。这是一个简单的示例：
 
-TypeScript
-
 ```typescript
 jest.mock('./myModule', () => ({
   myFunction: jest.fn(() => 'mocked value')
 }));
-
 test('uses mocked function', () => {
   const result = myFunction();
   expect(result).toBe('mocked value');
@@ -2419,25 +2784,20 @@ test('uses mocked function', () => {
 
 ### Testing Library：以用户为中心的方法
 
-Testing Library 是一个用于 React、Vue 等 UI 框架的流行测试库。它鼓励编写关注用户体验的测试，而不是测试实现细节。这种方法产生的测试更健壮且更易于维护。
+Testing Library 是一个用于 React、Vue 等 UI 框架的流行测试库。它鼓励编写关注用体验的测试，而不是测试实现细节。这种方法产生的测试更健壮且更易于维护。
 
 ### 设置 Testing Library
 
 安装：
-
 ```bash
 npm install --save-dev @testing-library/react @testing-library/user-event
 ```
 
 基础用法：
-
-JavaScript
-
 ```javascript
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { Button } from './Button';
-
 test('button clicks the handler', async () => {
   render(<Button />);
   const button = screen.getByRole('button');
@@ -2445,30 +2805,15 @@ test('button clicks the handler', async () => {
 });
 ```
 
-
-
-```javascript
-const handleClick = jest.fn();
-
-render(<Button onClick={[handleClick]} />);
-
-userEvent.click(screen.getByRole('button'));
-
-expect(handleClick).toBeCalledTimes(1);
-}});
-```
-
 ### 核心概念：
 
 - render: 渲染 React 组件并返回用于与其交互的工具。
 - screen: 提供查询方法，用于在渲染的组件中查找元素。
-- userEvent: 模拟用户交互，如点击、按键和表单提交。
+- userEvent: 模拏用户交互，如点击、按键和表单提交。
 
 ### 常见测试场景
 
 ### 测试组件渲染：
-
-### JavaScript
 
 ```javascript
 test('renders a button with the correct label', () => {
@@ -2479,8 +2824,6 @@ test('renders a button with the correct label', () => {
 ```
 
 ### 测试组件交互：
-
-### JavaScript
 
 ```javascript
 test('clicking the button increments the counter', () => {
@@ -2495,14 +2838,10 @@ test('clicking the button increments the counter', () => {
 
 ### 测试组件状态和副作用：
 
-JavaScript
-
 ```javascript
 test('fetches data and updates the state', async () => {
   jest.mock('./fetchData', () => jest.fn().mockResolvedValue('Hello, world!'));
-
   render(<DataFetchingComponent />);
-
   await waitFor(() => {
     const textContent = screen.getByText('Hello, world!');
     expect(textContent).toBeInTheDocument();
@@ -2538,26 +2877,19 @@ Stub 是依赖项的简化实现，用于返回预定义值或执行特定操作
 
 Jest 提供了一个功能强大的 mock 库，允许你 mockget、函数和类。这里有一个基础示例：
 
-JavaScript
-
 ```javascript
 jest.mock('./myModule', () => ({
   myFunction: jest.fn(() => 'mocked value')
 }));
-
 test('uses mocked function', () => {
   const result = myFunction();
   expect(result).toBe('mocked value');
 });
 ```
 
-在这个示例中，我们 mock 了 `myModule` 模块，并用一个返回固定值的 mock 函数替换了它的 `myFunction`。
-
 ### 常见 Mock 场景
 
 ### Mock HTTP 请求：
-JavaScript
-
 ```javascript
 jest.mock('axios', () => ({
   get: jest.fn().mockResolvedValue({ data: 'mocked data' })
@@ -2565,17 +2897,12 @@ jest.mock('axios', () => ({
 ```
 
 ### Mock 定器：
-JavaScript
-
 ```javascript
 jest.useFakeTimers();
 jest.advanceTimersByTime(1000);
 ```
 
 ### Mock 控制台输出：
-
-JavaScript
-
 ```javascript
 console.log = jest.fn();
 ```
@@ -2584,18 +2911,14 @@ console.log = jest.fn();
 
 Stub 是依赖项的简单实现，用于返回预定义值或执行特定操作。你可以手动创建 stub，也可以使用 Jest 这样的 mock 库来生成它们。
 
-JavaScript
-
 ```javascript
 function myFunction(dependency) {
   return dependency.getValue();
 }
-
 test('uses stubbed dependency', () => {
   const mockDependency = {
     getValue: jest.fn().mockReturnValue('stubbed value')
   };
-
   const result = myFunction(mockDependency);
   expect(result).toBe('stubbed value');
 });
@@ -2628,8 +2951,6 @@ async function getUser(userId: number) {
 
 为了测试这个函数，我们可以 mock fetch 函数以返回一个预定义的响应：
 
-JavaScript
-
 ```javascript
 jest.mock('node-fetch', () => ({
   default: jest.fn().mockResolvedValue({
@@ -2640,7 +2961,6 @@ jest.mock('node-fetch', () => ({
     })
   })
 }));
-
 test('fetches user data', async () => {
   const user = await getUser(1);
   expect(user).toEqual({
@@ -2650,8 +2970,6 @@ test('fetches user data', async () => {
   });
 });
 ```
-
-在这个示例中，我们 mock 了 fetch 函数以返回特定的响应，允许我们隔离地测试 `getUser` 函数。
 
 ### 示例 2：Stub 一个依赖
 
@@ -2663,7 +2981,6 @@ class Logger {
     console.log(message);
   }
 }
-
 function doSomething(logger: Logger) {
   logger.log('Something happened');
 }
@@ -2671,45 +2988,32 @@ function doSomething(logger: Logger) {
 
 为了测试这个函数，我们可以为 Logger 类创建一个 stub：
 
-### JavaScript
-
 ```javascript
 test('logs a message', () => {
   const mockLogger = {
     log: jest.fn()
   };
-
   doSomething(mockLogger);
-
   expect(mockLogger.log).toBeCalledWith('Something happened');
 });
 ```
 
-在这个示例中，我们创建了一个带有被 Jest 跟踪的 log 函数的 mock Logger 对象。我们可以断言 log 函数以预期的参数被调用。
-
 ### 示例 3：使用 Jest Mock 时间
 
-Jest 提供了 `jest.useFakeTimers()` 函数来 mock  `setTimeout` 和 `setInterval` 等定时器的行为。这用于测试依赖于超时或间隔的异步代码。
+Jest 提供了 `jest.useFakeTimers()` 函数来 mock `setTimeout` 和 `setInterval` 等定时器的行为。这用于测试依赖于超时或间隔的异步代码。
 
 ```javascript
 jest.useFakeTimers();
-
 test('calls a function after 1 second', () => {
   const callback = jest.fn();
   setTimeout(callback, 1000);
-
   // 推进时间 1 秒
   jest.advanceTimersByTime(1000);
-
   expect(callback).toHaveBeenCalledTimes(1);
 });
 ```
 
 通过有效使用 mocking 和 stubbing 技术，你可以编写全面的单元测试，涵盖各种场景并提高代码的整体质量。
-
-
-
-
 
 ### 4. 命名规范：
 
@@ -2734,15 +3038,11 @@ test('calls a function after 1 second', () => {
 
 糟糕的代码样式：
 
-TypeScript
-
 ```typescript
 function calculateArea(width,height){return width*height};
 ```
 
 ### 良好的代码样式：
-
-TypeScript
 
 ```typescript
 function calculateArea(width: number, height: number) {
@@ -2754,7 +3054,7 @@ function calculateArea(width: number, height: number) {
 
 - 设置 linter 和格式化工具：使用 ESLint 等 linter 来强制执行编码标准，使用 Prettier 等格式化工具自动格式化你的代码。
 - 使用一致的风格指南：遵循 Airbnb JavaScript 风格指南或 Google JavaScript 风格指南。
--get审查代码：定期审查代码以识别并修复任何样式问题。
+- 审查代码：定期审查代码以识别并修复任何样式问题。
 - 与他人协作：与团队成员讨论代码样式并对共享的风格指南达成一致。
 - 使用良好的编辑器：良好的编辑器可以帮助你编写整洁、格式良好的代码。
 
@@ -2776,11 +3076,10 @@ function calculateArea(width: number, height: number) {
 ### 设置 Linter：
 
 1. 安装所需的包：
-2. Bash
 ```bash
 npm install --save-dev eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin
 ```
-3. 创建 .eslintrc.json 文件：创建一个配置文件来定义你的检查规则。这里是一个基础示例：
+2. 创建 .eslintrc.json 文件：创建一个配置文件来定义你的检查规则。这里是一个基础示例：
 ```json
 {
   "extends": [
@@ -2797,11 +3096,7 @@ npm install --save-dev eslint @typescript-eslint/parser @typescript-eslint/eslin
   ]
 }
 ```
-4. 
-5. 
-6. 
-7. 
-8. 集成到你的编辑器或构建过程中：配置你的编辑器或构建过程以自动运行 ESLint。大多数现代编辑器都支持 ESLint 集成，允许你直接查看检查错误和警告。
+3. 集成到你的编辑器或构建过程中：配置你的编辑器或构建过程以自动运行 ESLint。大多数现代编辑器都支持 ESLint 集成，允许你直接查看检查错误和警告。
 
 ### 代码质量工具
 
@@ -2828,12 +3123,10 @@ TypeScript 虽然是一个强大的工具，但如果使用不当，有时会导
 - 隐式 any (Implicit any)：
   - 如果 TypeScript 无法确定更具体的类型，它会将变量的类型推断为 `any`。
   - 解决方案：使用显式类型注解以避免意外行为。
-- TypeScript
 ```typescript
 // 坏：隐式 any
 let x = 10;
 x = "hello"; // 没有类型错误，但行为不正确
-
 // 好：显式类型注解
 let y: number = 10;
 y = "hello"; // 类型错误：类型 'string' 不能赋值给类型 'number'
@@ -2842,15 +3135,12 @@ y = "hello"; // 类型错误：类型 'string' 不能赋值给类型 'number'
 - 泛型函数的错误类型推断：
   - 使用带有复杂参数的泛型函数时要小心。
   - 解决方案：使用显式类型注解或类型断言来引导类型推断过程。
-- TypeScript
 ```typescript
 function identity<T>(arg: T): T {
   return arg;
 }
-
 let x = identity<number>(10); // x 的类型被正确推断为 number
 let y = identity([1, 2, 3]); // y 的类型被正确推断为 number[]
-
 // 错误的推断：
 let z = identity<number | string>(10); // z 的类型被推断为 number | string
 ```
@@ -2863,7 +3153,6 @@ let z = identity<number | string>(10); // z 的类型被推断为 number | strin
 - 递归类型 (Recursive Types)：
   - 小心递归类型，因为会导致无限递归。
   - 使用递归条件类型和映射类型（mapped types）等技术定义递归类型。
-- TypeScript
 ```typescript
 // 过复杂的接口
 interface ComplexObject {
@@ -2876,14 +3165,12 @@ interface ComplexObject {
   }
   children: ComplexObject[];
 }
-
 // 使用较小的接口改进
 interface Address {
   street: string;
   city: string;
   zipCode: string;
 }
-
 interface Person {
   id: number;
   name: string;
@@ -2899,20 +3186,16 @@ interface Person {
   - 使用 `never` 类型处理不应发生的情况。
 - 缺少判别属性 (Discriminant Property)：
   - 在辨析联合中始终包含一个判别属性以区分不同的类型。
-- TypeScript
 ```typescript
 interface Circle {
   kind: 'circle';
   radius: number;
 }
-
 interface Square {
   kind: 'square';
   sideLength: number;
 }
-
 type Shape = Circle | Square;
-
 function getArea(shape: Shape) {
   if (shape.kind === 'circle') {
     // ...
@@ -2927,121 +3210,11 @@ function getArea(shape: Shape) {
 
 通过理解这些常见陷阱并应用建议的解决方案，你可以编写出更健壮、更可靠且易于维护的 TypeScript 代码。
 
-
-
-
-
-let y: number = 10;
-
-y = "hello"; // Type error: Type 'string' is not assignable to type 'number'
-
-- 泛型函数的错误类型推断：
-- 在使用带有复杂类型参数的泛型函数时要小心。
-- 解决方案：使用显式类型注解或类型断言来引导类型推断过程。
-
-TypeScript
-
-```typescript
-function identity<T>(arg: T): T {
-  return arg;
-}
-```
-
-let x = identity<number>(10); // x 的类型被正确推断为 number
-
-let y = identity([1, 2, 3]); // y 的类型被正确推断为 number[]
-
-// 错误的推断：
-
-let z = identity<number | string>(10); // z 的类型被推断为 number | string
-
-### 2. 复杂类型定义
-
-- 过于复杂的接口：
-  - 将大型接口拆分为更小、更专注的接口。
-  - 使用交叉类型（intersection types）来组合较小的接口。
-
-- 递归类型：
-  - 小心递归类型，因为它们可能导致无限类型递归。
-  - 使用递归条件类型和映射类型等技术来定义递归类型。
-
-- TypeScript
-
-```typescript
-// 过于复杂的接口
-
-interface ComplexObject {
-  id: number;
-  name: string;
-  address: {
-    street: string;
-    city: string;
-    zipCode: string;
-  }
-  children: ComplexObject[];
-}
-
-// 使用较小接口改进
-
-```typescript
-interface Address {
-  street: string;
-  city: string;
-  zipCode: string;
-}
-
-interface Person {
-  id: number;
-  name: string;
-  address: Address;
-  children: Person[];
-}
-```
-
-### 3. 辨别联合类型和类型守卫
-
-- 错误的类型守卫：
-  - 确保类型守卫是尽的并涵盖了所有可能的情况。
-  - 使用 `never` 类型处理不应发生的情况。
-- 缺少辨别属性：
-  - 在辨别联合类型中始终包含一个辨别属性（discriminant property），以区分不同的类型。
-
-TypeScript
-
-```typescript
-interface Circle {
-  kind: 'circle';
-  radius: number;
-}
-
-interface Square {
-  kind: 'square';
-  sideLength: number;
-}
-
-type Shape = Circle | Square;
-
-function getArea(shape: Shape) {
-  if (shape.kind === 'circle') {
-    // ...
-  } else if (shape.kind === 'square') {
-    // ...
-  } else {
-    // 处理意外的形状
-    throw new Error('Unknown shape type');
-  }
-}
-```
-
-通过理解这些常见陷阱并应用建议的解决方案，你可以编写更健壮、可靠且易于维护的 TypeScript 代码。
-
 ## 其他示例：TypeScript 陷阱与解决方案
 
 ### 示例 3：空合并运算符和可选链
 
 陷阱：对 null 和 undefined 值的处理不当。
-
-TypeScript
 
 ```typescript
 interface User {
@@ -3051,12 +3224,9 @@ interface User {
     city: string;
   }
 }
-
 const user: null = getUserData();
-
 // 错误：如果 user 为 null 或 undefined，可能会抛出错误
 // 解决方案：使用空合并 (??) 和可选链 (?.) 来处理 null 值。
-
 const address = user?.address?.street ?? 'Unknown';
 ```
 
@@ -3064,20 +3234,14 @@ const address = user?.address?.street ?? 'Unknown';
 
 陷阱：过度使用类型断言。
 
-TypeScript
-
 ```typescript
 // 错误：假设元素是 HTMLInputElement
 const element = document.getElementById('id') as HTMLInputElement;
-
 // 解决方案：使用类型守卫收缩小类型
 if (element instanceof HTMLInputElement) {
   // ...
 }
 ```
-
-
-
 
 ## 测试工具
 
@@ -3120,4 +3284,3 @@ TypeScript 社区非常活跃且乐于助。你可以找到丰富的资源，包
 请花一点时间在 [Platform Name] 上评价并分享你的想法。
 
 感谢你的支持，期待你的反馈。编码愉快！
-

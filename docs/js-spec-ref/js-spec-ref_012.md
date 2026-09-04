@@ -1,20 +1,7 @@
+
 # 2.8 数据类型转换
 
 JavaScript 是一种动态类型语言，变量是没有类型的，可以随时赋予任意值。但是，数据本身和各种运算是有类型的，因此运算时变量需要转换类型。大多数情况下，这种数据类型转换是自动的，但是有时也需要手动强制转换。
-
-*   强制转换
-    *   Number 函数：强制转换成数值
-    *   String 函数：强制转换成字符串
-    *   Boolean 函数：强制转换成布尔值
-    *   自动转换
-        *   自动转换为布尔值
-        *   自动转换为字符串
-        *   自动转换为数值
-        *   小结
-    *   加法运算符的类型转化
-        *   三种情况
-        *   四个特殊表达式
-    *   参考链接
 
 ## 强制转换
 
@@ -24,29 +11,20 @@ JavaScript 是一种动态类型语言，变量是没有类型的，可以随时
 
 使用 Number 函数，可以将任意类型的值转化成数字。
 
-（1）原始类型值的转换规则
+#### 原始类型值的转换规则
 
 *   数值：转换后还是原来的值。
-
 *   字符串：如果可以被解析为数值，则转换为相应的数值，否则得到 NaN。空字符串转为 0。
-
 *   布尔值：true 转成 1，false 转成 0。
-
 *   undefined：转成 NaN。
-
 *   null：转成 0。
 
 ```js
 Number("324") // 324
-
 Number("324abc") // NaN
-
 Number("") // 0
-
 Number(false) // 0
-
 Number(undefined) // NaN
-
 Number(null) // 0
 ```
 
@@ -56,7 +34,6 @@ Number 函数将字符串转为数值，要比 parseInt 函数严格很多。基
 parseInt('011') // 9
 parseInt('42 cats') // 42
 parseInt('0xcafebabe') // 3405691582
-
 Number('011') // 11
 Number('42 cats') // NaN
 Number('0xcafebabe') // 3405691582
@@ -70,14 +47,12 @@ Number 函数会自动过滤一个字符串前导和后缀的空格。
 Number('\t\v\r12.34\n ')
 ```
 
-（2）对象的转换规则
+#### 对象的转换规则
 
 对象的转换规则比较复杂。
 
 1.  先调用对象自身的 valueOf 方法，如果该方法返回原始类型的值（数值、字符串和布尔值），则直接对该值使用 Number 方法，不再进行后续步骤。
-
 2.  如果 valueOf 方法返回复合类型的值，再调用对象自身的 toString 方法，如果 toString 方法返回原始类型的值，则对该值使用 Number 方法，不再进行后续步骤。
-
 3.  如果 toString 方法返回的是复合类型的值，则报错。
 
 ```js
@@ -136,38 +111,28 @@ Number({valueOf:function (){return 2;},toString:function(){return 3;}})
 
 使用 String 函数，可以将任意类型的值转化成字符串。规则如下：
 
-（1）原始类型值的转换规则
+#### 原始类型值的转换规则
 
 *   数值：转为相应的字符串。
-
 *   字符串：转换后还是原来的值。
-
 *   布尔值：true 转为“true”，false 转为“false”。
-
 *   undefined：转为“undefined”。
-
 *   null：转为“null”。
 
 ```js
 String(123) // "123"
-
 String("abc") // "abc"
-
 String(true) // "true"
-
 String(undefined) // "undefined"
-
 String(null) // "null"
 ```
 
-（2）对象的转换规则
+#### 对象的转换规则
 
 如果要将对象转为字符串，则是采用以下步骤。
 
 1.  先调用 toString 方法，如果 toString 方法返回的是原始类型的值，则对该值使用 String 方法，不再进行以下步骤。
-
 2.  如果 toString 方法返回的是复合类型的值，再调用 valueOf 方法，如果 valueOf 方法返回的是原始类型的值，则对该值使用 String 方法，不再进行以下步骤。
-
 3.  如果 valueOf 方法返回的是复合类型的值，则报错。
 
 String 方法的这种过程正好与 Number 方法相反。
@@ -207,10 +172,8 @@ String(obj)
 ```js
 String({toString:function(){return 3;}})
 // "3"
-
 String({valueOf:function (){return 2;}})
 // "[object Object]"
-
 String({valueOf:function (){return 2;},toString:function(){return 3;}})
 // "3"
 ```
@@ -221,7 +184,7 @@ String({valueOf:function (){return 2;},toString:function(){return 3;}})
 
 使用 Boolean 函数，可以将任意类型的变量转为布尔值。
 
-（1）原始类型值的转换方法
+#### 原始类型值的转换方法
 
 以下六个值的转化结果为 false，其他的值全部为 true。
 
@@ -234,17 +197,13 @@ String({valueOf:function (){return 2;},toString:function(){return 3;}})
 
 ```js
 Boolean(undefined) // false
-
 Boolean(null) // false
-
 Boolean(0) // false
-
 Boolean(NaN) // false
-
 Boolean('') // false
 ```
 
-（2）对象的转换规则
+#### 对象的转换规则
 
 所有对象的布尔值都是 true，甚至连 false 对应的布尔对象也是 true。
 
@@ -257,7 +216,6 @@ Boolean(new Boolean(false))
 
 ```js
 Boolean([]) // true
-
 Boolean({}) // true
 ```
 
@@ -266,9 +224,7 @@ Boolean({}) // true
 当遇到以下几种情况，JavaScript 会自动转换数据类型：
 
 *   不同类型的数据进行互相运算；
-
 *   对非布尔值类型的数据求布尔值;
-
 *   对非数值类型的数据使用一元运算符（即“+”和“-”）。
 
 ### 自动转换为布尔值
@@ -346,21 +302,20 @@ false/'5' // 0
 
 加法运算符的类型转换，可以分成三种情况讨论。
 
-（1）运算子之中存在字符串
+#### 运算子之中存在字符串
 
 两个运算子之中，只要有一个是字符串，则另一个不管是什么类型，都会被自动转为字符串，然后执行字符串连接运算。前面的《自动转换为字符串》一节，已经举了很多例子。
 
-（2）两个运算子都为数值或布尔值
+#### 两个运算子都为数值或布尔值
 
 这种情况下，执行加法运算，布尔值转为数值（true 为 1，false 为 0）。
 
 ```js
 true + 5 // 6
-
 true + true // 2
 ```
 
-（3）运算子之中存在对象
+#### 运算子之中存在对象
 
 运算子之中存在对象（或者准确地说，存在非原始类型的值），则先调用该对象的 valueOf 方法。如果返回结果为原始类型的值，则运用上面两条规则；否则继续调用该对象的 toString 方法，对其返回值运用上面两条规则。
 
@@ -426,7 +381,7 @@ true + true // 2
 
 有了上面这些例子，我们再进一步来看四个特殊表达式。
 
-（1）空数组 + 空数组
+#### 空数组 + 空数组
 
 ```js
 [] + []
@@ -435,7 +390,7 @@ true + true // 2
 
 首先，对空数组调用 valueOf 方法，返回的是数组本身；因此再对空数组调用 toString 方法，生成空字符串；所以，最终结果就是空字符串。
 
-（2）空数组 + 空对象
+#### 空数组 + 空对象
 
 ```js
 [] + {}
@@ -444,7 +399,7 @@ true + true // 2
 
 这等同于空字符串与字符串“[object Object]”相加。因此，结果就是“[object Object]”。
 
-（3）空对象 + 空数组
+#### 空对象 + 空数组
 
 ```js
 {} + []
@@ -468,7 +423,7 @@ JavaScript 引擎将空对象视为一个空的代码块，加以忽略。因此
 // "[object Object]"
 ```
 
-（4）空对象 + 空对象
+#### 空对象 + 空对象
 
 ```js
 {} + {}
@@ -489,13 +444,10 @@ JavaScript 同样将第一个空对象视为一个空代码块，整个表达式
 ```js
 ({}) + {}
 // "[object Object][object Object]"
-
 ({} + {})
-// "[object Object][object Object]"  
-
+// "[object Object][object Object]"
 console.log({} + {})
 // "[object Object][object Object]"
-
 var a = {} + {};
 a
 // "[object Object][object Object]"
@@ -506,7 +458,6 @@ a
 ```js
 {} + {}
 // "[object Object][object Object]"
-
 {} + []
 // "[object Object]"
 ```

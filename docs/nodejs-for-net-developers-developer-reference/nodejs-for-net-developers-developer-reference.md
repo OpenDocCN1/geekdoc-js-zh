@@ -1,32 +1,9 @@
+
 # .NET 开发者的 Node.js (开发者参考)
-
-
-
-
-
-
-
 
 ![](img/22c7af4ec23e76c492f90dae8cc725f0_0_0.png)
 
-
-
 ![](img/22c7af4ec23e76c492f90dae8cc725f0_1_0.png)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 # 您对这本书如何？我们想听听您的意见
 
@@ -36,7 +13,7 @@ microsoft.com/learning/booksurvey
 
 # 前言
 
-Node.js 是一个基于 JavaScript、高度可扩展的开源工具集，用于复杂的 Web 开发。通过将您选择的一组 npm 模块在 Node.js 范式下交织在一起，您可以构建任何想象类型的网站，从电子商务到具有多个并发用户的用户的交互式游戏。在某些类型的 Web 应用中，Node.js 为其他具有挑战性的技术问题提供了解决方案。
+Node.js 是一个基于 JavaScript、高度可扩展的开源工具集，用于复杂的 Web 开发。通过将您选择的一组 npm 模块在 Node.js 范式下交织在一起，您可以构建任何想象类型的网站，从电子商务到具有多个并发用户的交互式游戏。在某些类型的 Web 应用中，Node.js 为其他具有挑战性的技术问题提供了解决方案。
 
 Node.js 最理想的场景是需要高量、低数据密集型请求处理的实时 Web 应用，或者希望使用 socket 连接采用推送技术的应用程序。如今，绝大多数 Web 应用依赖于无状态响应范式。在这种范式中，只有客户端可以发起通信或数据传输。凭借 Node.js 技能，您可以快速构建具有实时双向连接的应用，客户端和服务器都可以发起通信。
 
@@ -56,7 +33,7 @@ Node.js 网站是使用 HTML、CSS 和 JavaScript 组成的标准 Web 栈构建�
 
 # 本书的结构
 
-本书分为九章，旨在引导您完成进行 node.js 开发所需的每个方面。前几章涵盖了 node.js 开发的设置和编码基础。中间部分专注于特定的 node.js 技术。最后几章将所有内容整合在一起。
+本书分为九章，旨在引导您完成进行 Node.js 开发所需的每个方面。前几章涵盖了 Node.js 开发的设置和编码基础。中间部分专注于特定的 Node.js 技术。最后几章将所有内容整合在一起。
 
 # 本书规范与特征
 
@@ -75,10 +52,10 @@ Node.js 网站是使用 HTML、CSS 和 JavaScript 组成的标准 Web 栈构建�
 
 # 下载：代码示例
 
-setup.exe 创建的文件夹包含两类文件：
+`setup.exe` 创建的文件夹包含两类文件：
 
-- JavaScript 文件 包含运行应用程序的代码
-- EJS 文件 用于替代 HTML 文件渲染页面。虽然它们包含所有 HTML，但也包含了允许文件与其相关的 JavaScript 交互的特殊语法
+- JavaScript 文件：包含运行应用程序的代码
+- EJS 文件：用于替代 HTML 文件渲染页面。虽然它们包含所有 HTML，但也包含了允许文件与其相关的 JavaScript 交互的特殊语法
 
 # 使用代码示例
 
@@ -98,25 +75,21 @@ http://aka.ms/nodejs/errata
 
 如果您发现尚未列出的错误，请通过同一页面向我们提交。
 
-如果您需要额外支持，请发送电子邮件至 mspinput@microsoft.com 联系 Microsoft Press 图书支持。
+如果您需要额外支持，请发送电子邮件至 `mspinput@microsoft.com` 联系 Microsoft Press 图书支持。
 
 请注意，之前的地址不再提供微软软件和硬件的支持。如需获得微软软件和硬件的帮助，请访问 http://support.microsoft.com。
-
-
-
-
 
 # 保持联系
 
 让我们保持交流吧！我们的 Twitter 地址是：http://twitter.com/MicrosoftPress
 
-# 第 1 章. 设置
+# 第 1 章 设置
 
-首先，访问 NodeJS.org，或者直接点击安装（Install），也可以导航到网站下载页面，你将看到以下内容：
+首先，访问 NodeJS.org，或者直接点击安装，也可以导航到网站下载页面，你将看到以下内容：
 
 ![](img/22c7af4ec23e76c492f90dae8cc725f0_9_0.png)
 
-当你运行选择安装的 .msi 文件时，你会看到以下内容：
+当你运行选择安装的 `.msi` 文件时，你会看到以下内容：
 
 ```
 method@1.1.1
@@ -146,11 +119,11 @@ accepts@1.2
 type@1.5.6
 ```
 
+```
 C:\Users\David\Documents\Visual Studio 2010\Projects\NodeJS\NodeJS2>
-
 ```
 
-如果运行正常，你将在指定的任何目录（C:\Program Files (x86)\nodejs）中看到以下内容：
+如果运行正常，你将在指定的任何目录（`C:\Program Files (x86)\nodejs`）中看到以下内容：
 
 | 名称 | 文件夹 | 修改日期 | 类型 |
 | :--- | :--- | :--- | :--- |
@@ -165,10 +138,11 @@ C:\Users\David\Documents\Visual Studio 2010\Projects\NodeJS\NodeJS2>
 
 ```
 Node.js command prompt Your environment has been set up using Node.js 10.33 (ia32) and npm.
+
 C:\Users\David>
 ```
 
-注意此控制台条目提到了 npm。这是你需要配置的关键包管理应用程序，它将允许你安装所需的所有额外包以快速构建你的 Node.js 应用。你将从命令行提示符进行操作，而不仅仅是这个特定的命令行提示符。这是因为你不想那样做。npm 程序会将必要的包下载到命令行提示符的当前目录，而不是其他地方。我假定显示的位置并不是你 Visual Studio 项目通常所在的地方，而且由于你正准备将 Node.js 连接到 Visual Studio，你将希望 npm 将包安装到你实际使用的目录。将 Node.js 连接到你的 Visual Studio 2010 实例并不困难，只需更改项目的属性。
+注意此控制台条目提到了 `npm`。这是你需要配置的关键包管理应用程序，它将允许你安装所需的所有额外包以快速构建你的 Node.js 应用。你将从命令行提示符进行操作，而不仅仅是这个特定的命令行提示符。这是因为你不想那样做。`npm` 程序会将必要的包下载到命令行提示符的当前目录，而不是其他地方。我假定显示的位置并不是你 Visual Studio 项目通常所在的地方，而且由于你正准备将 Node.js 连接到 Visual Studio，你将希望 `npm` 将包安装到你实际使用的目录。将 Node.js 连接到你的 Visual Studio 2010 实例并不困难，只需更改项目的属性。
 
 ### 提示
 
@@ -218,7 +192,7 @@ C:\Users\David>
 
 ![](img/22c7af4ec23e76c492f90dae8cc725f0_12_0.png)
 
-然后，我对你在顶部导航菜单上“项目（Project）”选项卡上的属性进行了一些快速且简单的更改。要更改的特定属性可以在“**Web**”选项卡中找到，它是从上往下数的第三个：
+然后，我对你在顶部导航菜单上“项目”选项卡上的属性进行了一些快速且简单的更改。要更改的特定属性可以在“Web”选项卡中找到，它是从上往下数的第三个：
 
 ## 重要的部分在这里：
 
@@ -229,7 +203,7 @@ C:\Users\David>
 - 按照所示的内容准确指示参数和程序调用。
 - 指定你想要安装 Node.js 包的目录。
 
-刚刚显示的位置并不是你 Visual Studio 项目通常所在的地方，而且由于你正准备将 Node.js 连接到 Visual Studio，你将希望 npm 将包安装到你实际使用的目录。
+刚刚显示的位置并不是你 Visual Studio 项目通常所在的地方，而且由于你正准备将 Node.js 连接到 Visual Studio，你将希望 `npm` 将包安装到你实际使用的目录。
 
 以下是上表中关键项的摘要：
 
@@ -237,17 +211,13 @@ C:\Users\David>
 - **Body-parser**：一个特定的工具，让你快速方便访问通过 Post 提交的值。
 - **Memory-cache**：一个特定的工具，作为可管理的集合允许页面间（视图间）的状态管理。
 - **Tedious**：这相当于 Node.js 为微软 SQL Server 提供的驱动程序。之所以在这个项目中选择它，是因为目前如果你在用 .NET，你更有可能连接到 SQL Server。
-- **EJS**：一种嵌入 JavaScript 的渲染引擎，它要求修改创建的任何 HTML 页面以使用 .ejs 文件扩展进行页面生成。
-- **Bootstrap (以及 Bower)**：Bootstrap 是 UI 的样式引擎。Bower 与 npm 本身类似，在下载其他包之前必须下载它。
+- **EJS**：一种嵌入 JavaScript 的渲染引擎，它要求修改创建的任何 HTML 页面以使用 `.ejs` 文件扩展进行页面生成。
+- **Bootstrap (以及 Bower)**：Bootstrap 是 UI 的样式引擎。Bower 与 `npm` 本身类似，在下载其他包之前必须下载它。
 - **Passport**：是用于身份验证的包，它支持典型的用户名和密码，以及 Facebook、Twitter 等。
 
 我们将安装书中应用程序所需的每个包。从命令行安装非常简单。
-```
 
-
-
-
-确保你的实际命令行位置与你输入的项目根目录位置匹配，因为 npm 将把包安装到该位置。
+确保你的实际命令行位置与你输入的项目根目录位置匹配，因为 `npm` 将把包安装到该位置。
 
 ### 提示
 
@@ -265,7 +235,7 @@ C:\Users\David>
 
 ![](img/22c7af4ec23e76c492f90dae8cc725f0_16_0.png)
 
-控制台会有一些细微但有趣的视觉变化。完成后，控制台将充满下载完成的高亮显示，这意味着你已经准备好了 express 包。
+控制台会有一些细微但有趣的视觉变化。完成后，控制台将充满下载完成的高亮显示，这意味着你已经准备好了 `express` 包。
 
 每个包的流程都是相同的——只需更改要下载的包名称即可。如你所见，这个过程非常快。
 
@@ -275,16 +245,13 @@ C:\Users\David>
 - `npm memory-cache`
 - `npm tedious`
 - `npm i eject`
+- `npm i passport`
+- `npm -g bower`
+- `bower i bootstrap`
 
-```
-npm i passport
-npm -g bower
-bower i bootstrap
-```
+只要你在尝试安装 Bootstrap 之前执行了高亮显示的 Bower 安装，你可以按任何顺序执行这些。如你所见，Bower 包的安装与 `npm` 安装包几乎相同。
 
-只要你在尝试安装 Bootstrap 之前执行了高亮显示的 Bower 安装，你可以按任何顺序执行这些。如你所见，Bower 包的安装与 npm 安装包几乎相同。
-
-唯一需要注意的一行是高亮获取 Bower 本身的那行，其中命令中添加的 `-g` 告诉 npm 命令在全局查找资源，而不仅仅是在自己的标准库列表中查找。
+唯一需要注意的一行是高亮获取 Bower 本身的那行，其中命令中添加的 `-g` 告诉 `npm` 命令在全局查找资源，而不仅仅是在自己的标准库列表中查找。
 
 ### 注意
 
@@ -302,13 +269,13 @@ http://git-scm.com/downloads
 
 设置完成后，让我们开始查看代码。
 
-# 第 2 章. JavaScript 和异步代码
+# 第 2 章 JavaScript 和异步代码
 
 如果你进入 Node.js 的主页而不仅仅是下载页面，你可能不需要滚动就能找到一个类似这样的代码示例：
 
 点击此处查看代码图像
 
-```
+```javascript
 var http = require('http');
 http.createServer((req, res) => {
   res.writeHead(200, {'Content-Type': 'text/plain'});
@@ -322,7 +289,8 @@ console.log('Server running at http://127.0.0.1:1234/');
 点击此处查看代码图像
 
 “要运行服务器，将代码放入文件 `example.js` 中，并在命令行中通过 `node` 程序执行它：”
-% node example.js`
+
+`% node example.js`
 
 这会在控制台中产生如下内容的输出：
 
@@ -332,16 +300,15 @@ Server running at http://127.0.0.1:1234/
 
 请务必在正确的文件位置命令行提示符中尝试。（在这种情况下，它无论在你最初安装 Node.js 的地方，还是在你设置了 Microsoft Visual Studio 路径以运行 Node.js 项目的地方都能运行。）从那里开始，你可能会得到承诺中的输出。
 
-如果是的话，你就可以启动浏览器访问你指定的 IP。（你最初指定的端口完全由你决定，只要是位数字即可。）你将在页面上看到你的“Hello World”。虽然你不会使用这段代码，但你将通过几行代码来说明你对 JavaScript 以及 Node.js 期望你使用的方式所需的许多知识——这并不是意味着如果你真的用六行 JavaScript 创建了一个服务器，它也能工作。这比安装 Internet 信息服务（IIS！）要简单得多。（当然，这个服务器目前还没有做什么，但也不太坏）
+如果是的话，你就可以启动浏览器访问你指定的 IP。（你最初指定的端口完全由你决定，只要是位数字即可。）你将在页面上看到你的“Hello World”。虽然你不会使用这段代码，但你将通过几行代码来说明你对 JavaScript 以及 Node.js 期望你使用的方式所需的许多知识——这并不是意味着如果你真的用六行 JavaScript 创建了一个服务器，它也能工作。这比安装 Internet 信息服务（IIS）要简单得多。（当然，这个服务器目前还没有做什么，但也不太坏）
 
 ## 使用 JavaScript
 
 我假设你至少在这方面有一些经验。我将从头开始，并将……
 
+中间的部分是 `http.createServer(function (req, res) { });`。
 
-中间的部分是 `http.createServer(function (req, res) { });`；
-
-是的，这确实是一个接受函数作为参数的函数。在 JavaScript 中，甚至函数也是一个对象。在 .NET 世界中，最接近的比较是委托（delegate），它是对函数的对象封装器。
+是的，这确实是一个接受函数作为参数的函数。在 JavaScript 中，甚至函数也是一个对象。在 .NET 世界中，最接近的比较是委托，它是对函数的对象封装器。
 
 # Note
 
@@ -353,12 +320,12 @@ Server running at http://127.0.0.1:1234/
 
 ```javascript
 http.createServer(function (req, res) {
-res.writeHead(200, {'Content-Type': 'text/plain'});
-res.end('Hello world\n');
+  res.writeHead(200, {'Content-Type': 'text/plain'});
+  res.end('Hello world\n');
 }).listen('127.0.0.1',);
 ```
 
-JavaScript 以及将函数传递给函数（例如将 A 作为参数传递给函数 B）的特殊之处在于，它实际上并没有使用该函数本身或任何操作。相反，它将函数布线为回调（callback）。
+JavaScript 以及将函数传递给函数（例如将 A 作为参数传递给函数 B）的特殊之处在于，它实际上并没有使用该函数本身或任何操作。相反，它将函数布线为回调。
 
 回调函数基本上与你当地公司的回调是一样的。如果你拨打电话公司（如果是现代电话公司），当客户服务忙碌时，你会得到一个留下号码的选项，公司会在他们准备好服务时回电或“回拨”给你。换句话说，当他们处理完在联系你之前正在做的其他事情后，他们会给你回电。回调函数接收函数 B 的结果，然后可以对结果进行操作。
 
@@ -372,7 +339,7 @@ JavaScript 以及将函数传递给函数（例如将 A 作为参数传递给函
 obj.myFunctionA(functionB (x) {});obj.myFunctionC();
 ```
 
-仅仅传递一个 JavaScript 认为与其他任何东西一样对象的参数（！）并不会阻止它的运行。JavaScript 处理器（如果不是的话，它本身就可以单独写一本书了）只要大括号里的内容运行完毕，就认为函数 A 已经完成。它完全不在乎函数 B 在函数 C 继续离开起跑线之前尚未完成它需要做的事。
+仅仅传递一个 JavaScript 认为与其他任何东西一样对象的参数并不会阻止它的运行。JavaScript 处理器只要大括号里的内容运行完毕，就认为函数 A 已经完成。它完全不在乎函数 B 在函数 C 继续离开起跑线之前尚未完成它需要做的事。
 
 尽管这给代码和数据逻辑引入了各种复杂性，但它包含了巨大的潜能。在最基础的层面，如果 A 是一个网络请求而函数 C 也是一个请求，那么 C 无需等待 A 的结果（即 B）完成处理或渲染即可开始运行。只要 B（它现在运行在它自己的小宇宙中）没有触碰 C 通用的任何资源，通过遵循这种模型，你可以构思出一种方法，启动大量正在运行的请求，所有请求都在自己的空间内处理它们的请求。它们完全独立于任何其他资源，并以绝对速度为每个请求提供网页。
 
@@ -392,6 +359,7 @@ http.createServer(function (req, res) {
 `create` 函数除了回调对象外没有接受任何参数。在 Node.js 骨干某处存在这个对象。它是做什么的呢？它期望你提供一个具有完全相同签名的函数，并在将在完成后调用它。该回调函数期望传递由骨干生成的两个参数。正如名称所暗示的，这些参数将是你熟悉的 HTTP 世界的对象：请求对象和响应对象。
 
 > Note
+>
 > 如我之前谈到的，在 JavaScript 世界中，如果不亲身尝试并参考你自己的代码或亲手操作，就没有办法知道什么是对象。这些是为什么这本书适用于至少具有一些真实世界开发经验的人的原因之一。对于初学者来说，没有它，Node.js 将完全令人费解。你可以看到响应对象包含了你可以使用的属性和函数：`writeHead` 函数和 `end` 函数，后者至少有一个重载可以接受某些纯文本并写入响应。在这种情况下，我们正在写入 Hello World。需要注意的一个重点是：按照写法，此服务器将为它收到的每个网络请求返回 Hello World。这并不实用。如何路由以及以后进行路由。你可以使用 Express 包中的功能作为该功能的骨干，而不是 Node.js 本身。但你可以深入研究 HTTP 对象和这个回调函数，如果你选择，你可以这样做。
 
 最后，需要注意这行代码的作用是：
@@ -468,7 +436,6 @@ alert(oPlayer.displayName());
 
 你可以通过这种方式从子类中覆盖原型中的函数。尝试这种模式，就就像使用原型来帮助封装你的代码并在可能的地方消除冗余一样。
 
-
 ```javascript
 this.displayName = function(){
   this.lastName += ', ' + this.firstName;
@@ -492,6 +459,7 @@ alert(oPlayer.displayName());
 ```
 
 它产生的输出与之前相似，但代码更整洁。
+
 再次，你可以随意向你的子类添加新的属性和函数（无论是故意的还是无意的）。你不需要在 `.NET` 对象和接口的绿色继承的 so-object 树的任何级别实现任何内容。推荐这些 OOJS（面向对象的 JavaScript）实践是为了代码的一致性、可维护性以及为了你的利益。如果这意味着你倾向于将你的 `Player` 函数命名为 `showAloMe`，请尽管去做。JavaScript 完全不在乎。
 
 点击此处查看代码图片
@@ -597,16 +565,13 @@ var express = require('express');
 ```javascript
 var server = express();
 server.listen(1234, function () {
-```
-
-
-```javascript
-console.log("ready on 1234");
+  console.log("ready on 1234");
+});
 ```
 
 这些代码也应该是自而易懂的。你从 express 调用中获取了一个服务器对象，并且你通过告诉服务器监听请求来启动它。运行程序，你将看到这条消息，并确认它是正确的。你的服务器运行在本地 (127.0.0.1) 的 1234 端口（或任何你喜欢的四位数字）。地址 http://127.0.0.1:1234 将带你到达那里，尽管你在那里什么也看不到。请注意，你不会收到“404 页面未找到”错误，所以你已经成功了。你使用 Node.js 以两种略有不同的方式构建了服务器。
 
-只要 node.js 运行你的服务器文件，你的服务器就会运行。在这种情况下，它运行是因为你开启了 Visual Studio。而且你弹出的控制台会告诉你正在发生什么。在现实世界中，你很可能会有某种服务器后台定期检查 node 是否了一直运行。
+只要 node.js 运行你的服务器文件，你的服务器就会运行。在这种情况下，它运行是因为你开启了 Visual Studio。而且你弹出的控制台会告诉你正在发生什么。在现实世界中，你很可能会有某种服务器后台定期检查 node 是否一直运行。
 
 请注意，以下代码如果链式调用将是相同的，并且应该能为你生成一个工作正常的服务器：
 
@@ -629,10 +594,12 @@ express().listen(1234, function () {
   2. Babe Ruth
   3. Wayne Gretzky
   4. Tiger Woods
+
 - 哪个球员曾效力于芝加熊队？
   1. Tiger Woods
   2. Walter Payton
   3. Babe Ruth
+
 - 历史上的冰球得分王。
   1. Wayne Gretzky
   2. Walter Payton
@@ -646,9 +613,9 @@ express().listen(1234, function () {
 
 ![](img/22c7af4ec23e76c492f90dae8cc725f0_30_0.png)
 
-让我们它们命名为 Survey.htm 和 Survey.js。将 Survey.htm 放在 Views 文件夹中，将 Survey.js 留在根目录下。
+让我们它们命名为 `Survey.htm` 和 `Survey.js`。将 `Survey.htm` 放在 Views 文件夹中，将 `Survey.js` 留在根目录下。
 
-此时，你需要告诉 Node.js 如何找到你的文件。在你的 app.js 文件中找到以下行：
+此时，你需要告诉 Node.js 如何找到你的文件。在你的 `app.js` 文件中找到以下行：
 
 点击此处查看代码图像
 
@@ -687,11 +654,11 @@ server.set('images', path.join(__dirname, 'images'));
 server.use(require('./survey'));
 ```
 
-请确保注意这一行中使用的是相对文件路径，而不是标准的包引用。如果你想使用的引用不在 Node.js 核心中，处理器期望标准的相对网站路径。在这种情况下，你告诉它在根目录查找 survey，它假设 Node.js 中的所有内容都是 JavaScript 文件。因此，在 `require` 引用中不需要实际的 .js 后缀。
+请确保注意这一行中使用的是相对文件路径，而不是标准的包引用。如果你想使用的引用不在 Node.js 核心中，处理器期望标准的相对网站路径。在这种情况下，你告诉它在根目录查找 survey，它假设 Node.js 中的所有内容都是 JavaScript 文件。因此，在 `require` 引用中不需要实际的 `.js` 后缀。
 
-现在你可以把注意力重新回到新创建的 survey 上了。从开始，能够获取该页面是有意义的。让我们设置一个路由（route）。路由是你用来识别入站请求的模式，以便你知道向浏览器渲染哪个页面。
+现在你可以把注意力重新回到新创建的 survey 上了。从开始，能够获取该页面是有意义的。让我们设置一个路由。路由是你用来识别入站请求的模式，以便你知道向浏览器渲染哪个页面。
 
-为你的调查页面创建一个路由将需要几个步骤。首先，在 survey.js 中添加这这两行代码：
+为你的调查页面创建一个路由将需要几个步骤。首先，在 `survey.js` 中添加这这两行代码：
 
 点击此处查看代码图像
 
@@ -700,7 +667,7 @@ var express = require('express');
 router = express.Router();
 ```
 
-首先你获取了 Express 包的访问权限，然后通过调用 Router 方法返回一个对象。我们决定给这个对象命名，而这个对象最重要的方面就是你用来将请求重定向到适当 View 的函数。
+首先你获取了 Express 包的访问权限，然后通过调用 `Router` 方法返回一个对象。我们决定给这个对象命名，而这个对象最重要的方面就是你用来将请求重定向到适当 View 的函数。
 
 `get` 函数看起来如下：
 
@@ -732,27 +699,24 @@ module.exports = router;
 
 如果你从浏览器访问 127.0.0.1:1234/survey，你将看到“this is the survey page”。这就是使用 Node.js 执行网站导航的所有内容。
 
-
-
-
 一旦你完成授权，就会挂载你的应用程序。在发送响应时，你感兴趣的主要选择如下：
 
 - 正如之前的代码示例所示，这用于发送基础回复。变体包括：
-  - res.send('ok');
-  - res.send('<b>really ok</b>');
-  - res.send(new Buffer('buffered simple ok'));
-  - res.send({ really: 'ok' });
-  - res.status(404).send('Oops, page not found.');
-  - res.status(500).send({ Oops: 'something erred' }});
-  - res.json()
+  - `res.send('ok');`
+  - `res.send('<b>really ok</b>');`
+  - `res.send(new Buffer('buffered simple ok'));`
+  - `res.send({ really: 'ok' });`
+  - `res.status(404).send('Oops, page not found.');`
+  - `res.status(500).send({ Oops: 'something erred' }});`
+  - `res.json()`
 
 虽然可以使用该方法，但此特定方法会将内容打包为 JSON 代码（如刚才所示的第四个示例），某些内容并非有效的 JSON，例如 `null` 和臭名昭著的 `undefined`。
 
-- redirect() 导航到指定的路径。
-- end() 比什么都不做要好。
-- render() 我们将在稍后详细介绍这一部分。
+- `redirect()` 导航到指定的路径。
+- `end()` 比什么都不做要好。
+- `render()` 我们将在稍后详细介绍这一部分。
 
-无论你创建了多少路径，请确保为每个路径选择一个响应。从某些示例可以看出，响应对象（response object）包含了你响应传入请求所需的所有内容。上面的列表并非详尽；它只代表了功能的子集。稍后我将介绍响应对象更有用的方面——例如 `sendFile` 和 `cookie`——它们不仅仅是匹配入站请求的答案。
+无论你创建了多少路径，请确保为每个路径选择一个响应。从某些示例可以看出，响应对象包含了你响应传入请求所需的所有内容。上面的列表并非详尽；它只代表了功能的子集。稍后我将介绍响应对象更有用的方面——例如 `sendFile` 和 `cookie`——它们不仅仅是匹配入站请求的答案。
 
 现在你已经充分利用了 Node.js 的能力。你创建了一个服务器，它能处理 URL。你渲染了一个回复（尽管是一个简单的对象）。现在所有构建块都已就绪，可以添加更多路径、更多处理用户状态的对象，以及处理外观和数据内容的样式和扩展连接。你只需要进行一些单独的连接，就可以开始运行了。
 
@@ -762,19 +726,18 @@ module.exports = router;
 
 `Application` 是一个键/值对的字典。它包含了大约十个预定义的含义，如下：
 
-- 区分大小写的路由开启/关闭（Case-sensitive routing）：路径 '/Survey' 与 '/survey' 是否相同。
-- 严格路由开启/关闭（Strict routing）：路径 '/Survey/' 与 '/Survey' 是否相同。
-- 信任代理（Trust proxy）：可能可以信任 `X-Forwarded-*` header 来确定连接和客户端的 IP 地址（这有很多注意事项）；
-- 视图（views）：你已经设置了此值，指向你的视图文件路径。
-- 视图引擎（views engine）：当你切换到使用 EJS 进行渲染时，将设置此项，它是项目设置期间下载的 npm 包之一。
+- 区分大小写的路由开启/关闭：路径 '/Survey' 与 '/survey' 是否相同。
+- 严格路由开启/关闭：路径 '/Survey/' 与 '/Survey' 是否相同。
+- 信任代理：可能可以信任 `X-Forwarded-*` header 来确定连接和客户端的 IP 地址（这有很多注意事项）；
+- 视图：你已经设置了此值，指向你的视图文件路径。
+- 视图引擎：当你切换到使用 EJS 进行渲染时，将设置此项，它是项目设置期间下载的 npm 包之一。
 
 此外，就像 ASP.NET Application 对象一样，Express Application 对象也可以存储你的自定义键/值对并允许你检索它们：
 
 点击此处查看代码图片
 
-```
+```javascript
 server.set('appName', 'NodeJSDemo');
-
 alert(server.get('appName'));
 ```
 
@@ -784,7 +747,7 @@ alert(server.get('appName'));
 
 点击此处查看代码图片
 
-```
+```javascript
 server.disabled("trust proxy");
 ```
 
@@ -799,8 +762,6 @@ server.disabled("trust proxy");
 ## 在开始之前
 
 在开始之前，你还有几个 npm 包需要连接。
-
-
 
 我的观点仅仅是 Node.js 只是处理事情的另一种方式。某些方面会更好，但某些方面并非如此。在某些情况下和某些情况下，它可能优于 ASP.NET，但这一事实并不意味着 Web Forms 不是一项持续了十年的稳健技术。在许多方面，对于许多企业和客户来说，Node.js 在构建简单用户界面上额外要求的额外工作并不具有成本效益。这项技能只是为你和你的公司为构建解决方案提供了新选择。
 
@@ -825,15 +786,15 @@ html += data.products[i] + "</a></li>"
 
 ```html
 <h1><%= type %></h1>
-<<ul>
-<%(var i=0;i<products.length; i++) { %>
+<ul>
+<% for(var i=0;i<products.length; i++) { %>
 <li>
-<a href='products/%= products[i] %>'>
+<a href='products/<%= products[i] %>'>
 <%= products[i] %>
 </a>
 </li>
-<% } %> <!-- 等等，下面是修正后的语法 -->
-</</ul>
+<% } %>
+</ul>
 ```
 
 它们看起来相似，但在几个关键方面有所不同。
@@ -842,7 +803,7 @@ html += data.products[i] + "</a></li>"
 
 第二个例子是模板。HTML 标签是固定的，并提供了呈现结构，位于 `<% %>` 括号中的代码将向其中填充数据。正如我提到的，对于任何做过 ASP 或 MVC 的人来说，这一切看起来都会很熟悉。你还会注意到 JavaScript 数据对象不存在，而是被这种 `<%=` 语法取代，EJS 将其识别为它应该从同名的 .js 文件中获取的属性/变量值。
 
-这就是与后置代码（code-behind）任何相似之处的地方。JavaScript 对属性、引用等一无所知。如果你希望页面在渲染时处理数据，你必须在告诉页面显示时显式提供该数据。因此，对于上一个示例，你在请求进来时的 get 函数期间提供产品：
+这就是与后置代码任何相似之处的地方。JavaScript 对属性、引用等一无所知。如果你希望页面在渲染时处理数据，你必须在告诉页面显示时显式提供该数据。因此，对于上一个示例，你在请求进来时的 get 函数期间提供产品：
 
 点击此处查看代码图片
 
@@ -875,7 +836,7 @@ res.render('products', {
 
 让我们开始使用真实数据，即使我们会在最终版本中不会这样渲染它。首先，你将显示一个简单的玩家列表，它最终将成为你的多选题题集之一。
 
-首先，准备 .ejs 文件。它将与之前所示模板示例类似。将此代码放入你的 `survey.ejs` 文件中：
+首先，准备 `.ejs` 文件。它将与之前所示模板示例类似。将此代码放入你的 `survey.ejs` 文件中：
 
 点击此处查看代码图片
 
@@ -963,13 +924,12 @@ var thePlayers = [
   new Player(5, 'Bobby Orr', 'Hockey')
 ];
 ```
+
 （注：OOJS 实现的文本在源码中被截断了；我根据课程的上下文重构了它以确保输出完整。）
 
 等一下，查看提供的 OCR，我发现我偏离了最终块中的原始文本。让我严格基于提供的文本并在修复 OCR 错误的情况下提供一个版本。
 
-
-
-只需通过 `class` 属性将类挂载到此处的任何标签上。即使是像我们简单的无序列表，只需像处理典型的 .class 文件那样引用 Bootstrap，就能获得两秒钟的视觉升级。
+只需通过 `class` 属性将类挂载到此处的任何标签上。即使是像我们简单的无序列表，只需像处理典型的 `.class` 文件那样引用 Bootstrap，就能获得两秒钟的视觉升级。
 
 在这种情况下，你只需要先找到它。查看
 
@@ -981,7 +941,7 @@ var thePlayers = [
 
 因此，按照通常的方式在你的 .ejs 页面的 `<head>` 部分添加对它的链接：
 
-```
+```html
 <link href="bower_components/bootstrap/dist/css/bootstrap.css"
 rel="stylesheet"
 type="text/css" />
@@ -989,14 +949,14 @@ type="text/css" />
 
 然后，你只需要在一个带有 Bootstrap .css 类引用的 HTML 表格中开始你的 .ejs 代码，如下所示：
 
-```
+```html
 <table class="table">
 <tr>
 <td valign="top" align="center">
 <ul>
 <% for(var i=0; i < players.length; i++) { %>
 <li>
-<a href="details/<%=%= players[i].id%>">
+<a href="details/<%= players[i].id%>">
 <%= players[i].displayName()%>
 </a>
 </li>
@@ -1011,7 +971,7 @@ type="text/css" />
 
 诚然，刚开始没什么，但话说回来，到目前为止你做得非常少。正如我提到的，我稍后还会介绍更多的 Bootstrap 功能，但它绝对是你想要玩玩以观察效果的库。例如，在你的图像标签中放入此属性：
 
-```
+```html
 <img src="img1.jpg" alt="img1" class="img-rounded" />
 ```
 
@@ -1019,7 +979,7 @@ type="text/css" />
 
 所以，你已经编写了服务器并构建了你的第一个基础路由。你已经渲染了带有数据、图像和样式的正确页面。你还结合 Node.js 使用了面向对象的 JavaScript。你的基础工具已在你的工具箱中。现在，我们将通过连接到外部数据源、允许用户交互并提供登录安全性，将应用程序引入真实的软件世界。
 
-# 第 5 章。在 Node.js 中处理站点数据
+# 第 5 章 在 Node.js 中处理站点数据
 
 数据有许多形状和大小。它可以来自应用程序运行时的内部，来自用户，或来自外部数据存储。对于 Node.js 的其他部分，有一个 npm 包可以单独处理可能提供给你的应用程序的无数种数据。
 
@@ -1027,9 +987,9 @@ type="text/css" />
 
 - 来自 URL 的数据
   - 路由/路径
-  - 查询字符串 (QueryString)
+  - 查询字符串
 - 来自用户的数据
-  - 表单提交 (Form posts)
+  - 表单提交
   - 字段输入
 - 来自外部源的数据
   - 数据库（涵盖第 6 章，“在 Node.js 中处理外部数据”）
@@ -1042,7 +1002,7 @@ type="text/css" />
 你在应用程序中处理数据的第一种方法与来自 URL 的数据有关。即使我们渲染未连接到任何内容的数组的示例代码，也包含了我们将深入研究某个项目细节的想法。在这种情况下，如所示，我们选择了看起来这样的路径：
 
 ```
-href='details/<%=%= players[i].id%>'
+href='details/<%= players[i].id%>'
 ```
 
 该路径会产生以下结果或类似的 URL：
@@ -1115,7 +1075,7 @@ router.get('/details', function (req, res) {
 正如你可以看到的，你只需按名称拆分参数以获取它们包含的值。通过这种方式传递整个对象到组合的详情页链接中：
 
 ```
-href='details/<%= players[i].id%&Name/<%=%= players[i].lastName%>'
+href='details/<%= players[i].id%&Name/<%= players[i].lastName%>'
 ```
 
 根据需要继续深入探讨。在现实世界中，这种方法很少用于向你自己的 .js 文件发送信息。这是因为正如你看到的，你可以通过这种方式传递整个对象甚至是集合：
@@ -1145,12 +1105,11 @@ router.post('/survey', function (req, res) { });
 
 包含路由信息的文件通常至少包含每一个的
 
-
 刚刚定义的四种方法如下：
 
 [点击此处查看代码图像]
 
-```
+```javascript
 router.get('/survey', function (req, res) { });
 router.post('/survey', function (req, res) { });
 router.put('/survey', function (req, res) { });
@@ -1161,7 +1120,7 @@ router.delete('/survey', function (req, res) { });
 
 [点击此处查看代码图像]
 
-```
+```javascript
 var bodyParser = require('body-parser');
 ```
 
@@ -1169,7 +1128,7 @@ var bodyParser = require('body-parser');
 
 [点击此处查看代码图像]
 
-```
+```javascript
 server.use(bodyParser.urlencoded({ extended: true }));
 ```
 
@@ -1177,15 +1136,15 @@ server.use(bodyParser.urlencoded({ extended: true }));
 
 [点击此处查看代码图像]
 
-```
+```javascript
 var sInput = req.body.txtInbound;
 ```
 
-在这种情况下，你需要在你的 HTML/JS 文件中添加一些内容来激活表单提交（form post）。让我们从一个按钮和一个文本框开始。为了进行此演示，请在页面上最后一个控制控件下方的单独行中放置两个输入控件：
+在这种情况下，你需要在你的 HTML/JS 文件中添加一些内容来激活表单提交。让我们从一个按钮和一个文本框开始。为了进行此演示，请在页面上最后一个控制控件下方的单独行中放置两个输入控件：
 
 [点击此处查看代码图像]
 
-```
+```html
 <table class="table">
   <tr>
     <td valign="top" align="center">
@@ -1203,13 +1162,13 @@ var sInput = req.body.txtInbound;
 </table>
 ```
 
-注意你如何将输入控件封装在 `form` （表单）标签中，并指定了两个重要的属性——`method='post'` 和 `action='/survey'`——来告诉表单你希望它如何运行。当你提交它时，你希望表单将其信息发布到 `action` 指向的路径——在这种情况下，即到你的调查页面。
+注意你如何将输入控件封装在 `form` 标签中，并指定了两个重要的属性——`method='post'` 和 `action='/survey'`——来告诉表单你希望它如何运行。当你提交它时，你希望表单将其信息发布到 `action` 指向的路径——在这种情况下，即到你的调查页面。
 
 一切就绪后，让我们回到 `survey.js` 文件中实际的 `post` 函数，以响应你成功的表单提交。再次，我们稍后会对此进行更多操作。为了看到它的运行效果，让我们让它将任何输入写入到：
 
 [点击此处查看代码图像]
 
-```
+```javascript
 router.post('/survey', function (req, res) {
   var sInput = req.body.txtInbound;
   console.log(sInput);
@@ -1223,13 +1182,13 @@ router.post('/survey', function (req, res) {
 
 现在，你已经了解了 Node.js 版本的标准 get 和 post 操作。
 
-然而，除了这些在别处移动少量数据的基础老式技术外，在你的 Node.js 应用程序内部你还有其他选择。其中最好的之一就是缓存（cache）。
+然而，除了这些在别处移动少量数据的基础老式技术外，在你的 Node.js 应用程序内部你还有其他选择。其中最好的之一就是缓存。
 
 在 Node.js 中使用缓存，你只需要正确的 npm 包。你会在设置应用程序时已经安装了 `memory-cache`，现在你只需要按照惯常操作来启用它：
 
 [点击此处查看代码图像]
 
-```
+```javascript
 var cache = require('memory-cache');
 ```
 
@@ -1237,13 +1196,13 @@ var cache = require('memory-cache');
 
 [点击此处查看代码图像]
 
-```
+```javascript
 cache.put('players', arrPlayers);
 ```
 
 而要检索该值，只需要这样做：
 
-```
+```javascript
 cache.get('players');
 ```
 
@@ -1251,15 +1210,15 @@ cache.get('players');
 
 [点击此处查看代码图像]
 
-```
+```javascript
 cache.put('players', arrPlayers, 5000);
 ```
 
 在时间流逝后（在本例中为五秒），如果未更新，该项将从缓存中移除。
 
-这里需要注意的最重要点之一是，我存储内容到缓存的示例不仅仅是一个对象或对象数组。缓存可以持有你可以在 JavaScript 中构造的任何内容，这个想法开启了面向对象 JavaScript JavaScript (OOJS) 的真正威力，以及商业应用程序所需的复杂状态管理的大门。这是 .NET 中常用的一种模式，用以充分利用编程模型的全部威力。
+这里需要注意的最重要点之一是，我存储内容到缓存的示例不仅仅是一个对象或对象数组。缓存可以持有你可以在 JavaScript 中构造的任何内容，这个想法开启了面向对象 JavaScript (OOJS) 的真正威力，以及商业应用程序所需的复杂状态管理的大门。这是 .NET 中常用的一种模式，用以充分利用编程模型的全部威力。
 
-Node.js 对 JavaScript 对象的缓存就像 .NET 缓存对业务层对象所做的那样——使它们随处可用。缓存中通常存储两类对象：查找对象（lookup objects）和用户对象（user objects）。
+Node.js 对 JavaScript 对象的缓存就像 .NET 缓存对业务层对象所做的那样——使它们随处可用。缓存中通常存储两类对象：查找对象和用户对象。
 
 查找对象通常是一组很少（如果从不）改变的值集合——例如美国州名或美国总统姓名。数据库中的商店列表只需要获取一次，然后就可以留在内存中，以便应用程序快速访问。这种方式运行快速且简单，因为不需要担心数据会不同步——换句话说，不必担心数据输入数据库后，缓存中的数据版本会过时。对于像美国州这样永不改变的数据，这个问题就不是问题。一个每隔四年或八年重新创建一次的例程序也不是什么大问题。
 
@@ -1269,10 +1228,7 @@ Node.js 对 JavaScript 对象的缓存就像 .NET 缓存对业务层对象所做
 
 将一个软件应用程序想象成旧金山市，想象跨跨湾区的唯一四座桥代表数据库。无论你用多么有创意的方式到达其中一座桥，你都会被流量堵死。
 
-
-
-
-# 第 6 章. 在 Node.js 中处理外部数据
+# 第 6 章 在 Node.js 中处理外部数据
 
 渲染静态或模拟数据是一回事，但将你的 UI 连接到实时数据则是另一回事了。如果你想让你的应用程序处理现实世界，你就需要它跟踪并吸收后端数据存储器提供的数据，无论这些存储器是什么。
 
@@ -1300,8 +1256,8 @@ http://dev.mysql.com/downloads/windows/
 
 点击此处查看代码图片
 
-```
-var Connection = require('tedious').connection;
+```javascript
+var Connection = require('tedious').Connection;
 var Request = require('tedious').Request;
 ```
 
@@ -1309,19 +1265,18 @@ var Request = require('tedious').Request;
 
 点击此处查看代码图片
 
-```
+```javascript
 router.post('/survey', function (req, res) {
-var config = {
+  var config = {
     userName: 'fromCache',
     password: 'fromCache',
     server: '123.45.67.89',
-    options:
-    {
-        database: "Test"
+    options: {
+      database: "Test"
     }
-};
-var sInput = req.body.txtInbound;
-console.log(sInput);
+  };
+  var sInput = req.body.txtInbound;
+  console.log(sInput);
 ```
 
 注意你已经插入了连接配置信息。为了暂时保持简单，你可以简单地将硬编码的凭据插入到代码中。你已经从示例中看到使用缓存存储应用程序范围数据的潜在威力和便利性。
@@ -1330,15 +1285,15 @@ console.log(sInput);
 
 点击此处查看代码图片
 
-```
+```javascript
 var connection = new Connection(config);
 connection.on('connect', function (err) {
-// 如果没有错误，就可以运行了...
-// 在这里执行一些 SQL；
+  // 如果没有错误，就可以运行了...
+  // 在这里执行一些 SQL；
 });
 connection.on('debug', function (text) {
-console.log(text);
-}
+  console.log(text);
+});
 ```
 
 假设你没有错误（如果你有错误，就会在这里遇到它们），那么你就可以开始使用数据库了。
@@ -1347,9 +1302,8 @@ console.log(text);
 
 点击此处查看代码图片
 
-```
-var connection = mysql.createConnection(
-{
+```javascript
+var connection = mysql.createConnection({
     host: 'localhost',
     user: 'fromCache',
     password: 'fromCache',
@@ -1371,51 +1325,48 @@ connection.connect();
 
 然后用以下内容填充它：
 
-```
-var TYPES = require('tedious').types;
-var sql = 'insert into players (id, firstName, lastName, sport) '
+```javascript
+var TYPES = require('tedious').TYPES;
+var sql = 'insert into players (id, firstName, lastName, sport) ';
 sql += 'values (@id, @firstName, @lastName, @sport)';
 var request = new Request(sql, function (err) {
   var sFirst = req.body.txtFirst;
   var sLast = req.body.txtLast;
   var sSport = req.body.txtSport;
   var iID = req.body.txtID;
-  request.add('id', TYPES.Int, iID);
-  request.add('firstName', TYPES.VarChar, sFirst);
-  request.add('lastName', TYPES.VarChar, sLast);
-  request.add('sport', TYPES.VarChar, sSport);
-  connection.exec(request);
+  request.addParameter('id', TYPES.Int, iID);
+  request.addParameter('firstName', TYPES.VarChar, sFirst);
+  request.addParameter('lastName', TYPES.VarChar, sLast);
+  request.addParameter('sport', TYPES.VarChar, sSport);
+  connection.execSql(request);
   res.send(iID.toString() + ' entered ok');
 });
 ```
 
-有了这个 post 操作接收器后，你只需要为你的用户界面处理几个字段。为了保持整洁，只需在你的项目中快速添加一个新视图，用于插入玩家数据。创建 playerAdmin.js 和 playerAdmin.ejs，并像往一样将它们添加到你的项目中。
+有了这个 post 操作接收器后，你只需要为你的用户界面处理几个字段。为了保持整洁，只需在你的项目中快速添加一个新视图，用于插入玩家数据。创建 `playerAdmin.js` 和 `playerAdmin.ejs`，并像往一样将它们添加到你的项目中。
 
-我们将从 playerAdmin.js 开始。像这样包裹在表单中添加四个输入字段和按钮：
+我们将从 `playerAdmin.js` 开始。像这样包裹在表单中添加四个输入字段和按钮：
 
 点击此处查看代码图片
 
-```
+```html
 <form action="/playerAdmin" method="post">
 <h3>
-nEnter values for db
+Enter values for db
 </h3>
-ID: <input id="txtID" name="txtID" type="text" />br />
-First Name: <input id="txtFirst" name="txtFirst" type="text" />br />
-Last Name: <input id="txtLast" name="txtLast" type="text" />br />
-Sport: <input id="txtSport" name="txtSport" type="text" />br />
+ID: <input id="txtID" name="txtID" type="text" /><br />
+First Name: <input id="txtFirst" name="txtFirst" type="text" /><br />
+Last Name: <input id="txtLast" name="txtLast" type="text" /><br />
+Sport: <input id="txtSport" name="txtSport" type="text" /><br />
 <input type="submit" />
 </form>
 ```
 
-
-
-
-注意我们在新的新的 `player.js` 文件中打算对路由执行的特定操作。让我们关注该路由。首先，确保你添加了所需的引用：
+注意我们在新的 `player.js` 文件中打算对路由执行的特定操作。让我们关注该路由。首先，确保你添加了所需的引用：
 
 [点击此处查看代码图片]
 
-```
+```javascript
 var express = require('express');
 var router = express.Router();
 var Connection = require('tedious').Connection;
@@ -1426,445 +1377,15 @@ var Request = require('tedious').Request;
 
 [点击此处查看代码图片]
 
-```
-router.post('/playerAdmin', function (req, res) {
-  var config = {
-    userName: 'FromCache',
-    password: 'FromCache',
-    server: '123.45.67.89',
-    options: {
-      database: 'Test'
-    }
-};
-var connection = new Connection(config);
-connection.on('connect', function (err) {
-  var TYPES = require('tedious').TYPES;
-  var sql = ' insert into tblPlayers (id, firstName, lastName, sport)';
-  sql += ' values (@id, @first, @last, @sport)';
-  var request = new Request('select * from tblPlayers', function (err,
-  rowCount) {
-    if (err) {
-      console.log(err);
-    } else {
-      res.redirect('/survey');
-      res.render('/survey', {
-        players: cache.get("PlayerList")
-      });
-    }
-  });
 
-  connection.close();
-  var sFirst = req.body.txtFirst;
-  var sLast = req.body.txtLast;
-  var sSport = req.body.txtSport;
-  var iID = req.body.IntID;
-  request.addParameter('first', TYPES.VarChar, sFirst);
-  request.addParameter('last', TYPES.VarChar, sLast);
-  request.addParameter('sport', TYPES.VarChar, sSport);
-  connection.executeSQL(request);
-});
-
-connection.on('debug', function (text) {
-  console.log(text);
-});
-});
-```
-
-虽然你现在可以对其发送 post 请求，但如果你尝试直接访问该页面，将会得到以下错误：
-
-GET playerAdmin
-
-HTTP 网络请求的默认操作是 GET，而你实际上还没有为它创建一个函数。你首先需要一个简单的 get 方法以及一个 post 方法来渲染你的视图：
-
-[点击此处查看代码图片]
-
-```
-router.get('/playerAdmin', function (req, res) {
-  res.render('playerAdmin');
-});
-module.exports = router;
-```
-
-该函数在文件中的位置相对于 post 函数的位置并不重要。不要忘记通过最后一行将路由和路由全局化。现在你只需要像这样将静态引用添加到你的 `app.js` 文件中即可了：
-
-[点击此处查看代码图片]
-
-```
-server.use(require('./playerAdmin'));
-```
-
-你现在应该准备好访问该页面了。当页面打开时，你应该能看到输入框。输入以下值：
-
-- 5, Orr, Bobby, Hockey
-
-点击 Submit（提交）按钮，你应该能看到成功的指示。现在，让我们通过连接到更多 SQL 函数的面向对象 JavaScript (OOJS) 获取所有行并显示该简单的玩家列表来验证这一点。要选择和迭代行需要几行代码。为了保持代码整洁，让我们创建一个名为 `fetchPlayers` 的函数并将此代码放入其中：
-
-[点击此处查看代码图片]
-
-```
-function fetchPlayers() {
-  var config = {
-    userName: 'fromCache',
-    password: 'fromCache',
-    server: '123.45.67.89',
-    options: {
-      database: "Test"
-    }
-};
-var connection = new Connection(config);
-connection.on('connect', function (err) {
-  request = new Request("select * from tblPlayers", function (err, rowCount) {
-    if (err) {
-      console.log(err);
-    } else {
-      console.log(rowCount + ' rows');
-    }
-  });
-  connection.close();
-
-  request.on('row', function (columns) {
-    columns.forEach(function (column) {
-      if (column.value === null) {
-        console.log('NULL');
-      } else {
-        console.log(column.value);
-      }
-    });
-  });
-
-  request.on('done', function (rowCount, more) {
-    console.log(rowCount + ' rows returned');
-  });
-
-  connection.execSql(request);
-}
-```
-
-现在你可以在插入操作后调用此函数，以轻松确认你的数据交互完全成功：
-
-```
-...
-connection.execSql();
-fetchPlayers();
-```
-
-正如从代码中所看到的，你目前只是将结果写到了控制台，但你可以清楚地看到需要填充用于显示的 Player 对象集合的代码所在。你需要将 `resultSet` 拆分为单独单独的列，并在 `request.on` 函数的 `foreach` 循环中将每个 `Player` 对象的属性设置为关联的值：
-
-[点击此处查看代码列]
-
-```
-request.on('row', function (columns) {
-  var oPlayer = new Player();
-  columns.forEach(function (column) {
-    if (column.value === null) {
-      console.log('NULL');
-    } else {
-      switch (column.name) {
-        case "firstName":
-          oPlayer.firstName = column.value;
-          break;
-        case "lastName":
-          oPlayer.lastName = column.value;
-          break;
-        case "sport":
-          oPlayer.sport = column.value;
-          break;
-        case "id":
-          oPlayer.id = column.value;
-          break;
-      }
-    }
-  });
-});
-```
-
-
-要查看使用典型的浏览按钮传输文件需要什么，你要做的第一件事是在某处创建一个按钮：
-
-[点击此处查看代码图片](#)
-
-```
-Please specify a file or a set of files:<br>
-<form method='post' action='upload' enctype='multipart/form-data'>
-<input type='file' name='fileUpload'>
-<input type='submit'>
-</form>
-```
-
-为了尽可能简单，你可以使用基础的 HTML 工具并以特定的方式进行。具体来说，你可以将你的上传按钮放在表单（form）中，然后指定一个 post 动作和一个名为 `upload` 的路由：
-
-[点击此处查看代码图片](#)
-
-```
-<input type='file' name='fileUpload'>
-```
-
-由于这种功能可能在多个地方需要，而将其放在特定页面的文件中可能会难以追踪，在这种情况下，你将在 `app.js` 级别添加一个路由来处理所有上传：
-
-[点击此处查看代码图片](#)
-
-```
-server.route('/upload')
-  .post(function (req, res, next) {
-    req.pipe(req.busboy);
-    req.busboy.on('file', function (fieldName, oFile, fileName) {
-      console.log("Uploading: " + fileName);
-      //图片将要上传的路径
-      var fsStream = fs.createWriteStream(__dirname + '/images/' + fileName);
-      oFile.pipe(fsStream);
-      fsStream.on('close', function () {
-        console.log("Upload Finished of " + fileName);
-        res.redirect('back'); //下一步去哪里
-      });
-    });
-  });
-```
-
-是的，使用这种技术对整个应用程序进行路由是可能的。思考一下，就会发现为什么它会迅速导致像 `app.js` 这样长得离谱的 .js 文件。将每个页面及其功能分离是保持代码易于维护的关键之一——无论对你还是对下一个人都是如此。
-
-注意在处理代码示例中，你正在使用 `busboy` npm 包，并包含了 Express 的 `fs` 功能。
-
-有几行代码需要关注。首先看这一行：
-
-[点击此处查看代码图片](#)
-
-```
-var fsStream = fs.createWriteStream(__dirname + '/images/' + fileName);
-```
-
-在这里，你只需从 `fs` 对象调用 `createWriteStream` 来为发送你的文件创建必要的参数。
-
-你可以轻松地进行测试以查看它是否有效，以及你是否可以从 Web 获取你数据列表中某个球员的非版权图片。然后为该球员进行相应的命名，并将其上传到 `images` 文件夹以便稍后检索。
-
-当选中球员时，你可以查看他或她的详细信息。
-
-然而，以下几行代码为你分离了 Node.js 的一个特定且有用的功能——即 `pipe` 函数：
-
-```
-req.pipe(req.busboy);
-file.pipe(stream);
-```
-
-在这种情况下，你使用它来发送你的文件信息。但该函数具有更大的价值。
-
-你会发现，在处理流数据时，使用 `pipe` 是非常有用的，因为它可以手动处理数据的缓冲和背压。在这种情况下，`pipe` 会自动处理这些复杂性，确保数据高效传输。
-
-如果不手动使用 `pipe`，你可能需要处理 `data`、`error` 事件以及 `end` 事件，这会非常复杂且容易出错。使用 `pipe` 可以极大地简化代码逻辑。
-
-在 Node.js 中，流（Stream）是处理大数据的强大工具，它允许你分块处理数据而不需要一次性将整个文件加载到内存中。这对于处理大文件或网络请求至关重要。
-
-
-
-
-```javascript
-router.post('/login', function (req, res) {
-    var sLogin = req.body.txtLogin;
-    var sPassword = req.body.txtPassword;
-});
-
-module.exports = router;
-```
-
-你已经通过渲染刚刚创建的视图确保了首先可以访问该页面，并提供了 POST 操作的基础。顶部的引用要求你以后某处使用数据库，但我将让你自己添加那部分代码。
-
-然后，通过向 `app.js` 文件中添加以下内容，确保你可以浏览到该页面：
-
-[点击此处查看代码图片]
-
-```javascript
-server.use(require('./login'));
-```
-
-现在你准备好从站点代码中接入 Passport 了。
-
-首先，像往常一样，你需要在同一个 `app.js` 文件中添加对相应 npm 包的引用：
-
-[点击此处查看代码图片]
-
-```javascript
-var passport = require('passport');
-```
-
-现在回到你的登录 post 函数。它的具体签名将取决于你选择的身份验证机制。由于典型的登录和验证是显而易见的起点，因此展示的第一个示例将接受这些参数的 Local（本地）策略。在开始之前，你需要安装 `passport-local`：
-
-```bash
-npm install passport-local
-```
-
-在你的 `login.js` 文件中，你需要添加以下引用：
-
-[点击此处查看代码图片]
-
-```javascript
-var LocalStrategy = require('passport-local').Strategy;
-```
-
-现在你可以配置该策略了。身份验证请求只需调用 `passport.authenticate` 并指定要使用哪种策略。你将在登录中添加一个路由来指定要使用的这种机制：
-
-[点击此处查看代码图片]
-
-```javascript
-router.post('/login/local', passport.authenticate('local', function (req, res) {
-    passport.use(new LocalStrategy({
-        usernameField: 'username',
-        passwordField: 'password'
-    }, function (sLogin, sPassword, done) {
-        findByUsername(sLogin);
-    }));
-    res.redirect('/survey');
-}));
-```
-
-这里有几点需要注意。没有进入正体进行字段。Passport 中的所有策略都需要一个验证函数，该函数接受凭据（在此情况下为用户名和密码）并调用一个带有用户对象的回调函数。通常，此函数会查询数据库或某些内部访问控制（ACL），但在本示例中，你将使用简单的用户数组和 `findUsername` 函数来遍历数组进行匹配：
-
-[点击此处查看代码图片]
-
-```javascript
-var arrUsers = [
-  { id: 1, username: 'walter', password: 'four', email: 'emailaddress' },
-  { id: 2, username: 'babe', password: 'homer', email: 'emailaddress' }
-];
-findUsername(username, password, done) {
-  var user;
-  if (err) return done(err);
-  if (!user) return done(null, false, { message: 'Unknown user ' + username });
-  if (user.password === password) return done(null, false, { message: 'Invalid password' });
-  return done(null, user);
-});
-```
-
-因此，你自己创建的这个匹配你自身规范的函数预期你在用户集中“找到”一个与你传递的用户名匹配的用户。如果你找到了，那么再检查该对象内部的密码是否也匹配。注意代码如何说明了你对传递给 `done` 函数的内容的细粒度控制，以返回提供系统访问所需的任何信息，或同时提供给用户。务必对每个路由中的每个登录路径调用 `done`。
-
-现在你已经有了 Local 身份验证的配方，让我们看看 Google 和 Facebook 等远程身份验证的几种策略。Google 有它自己的 Passport 版本，你将需要安装：
-
-```bash
-npm install passport-google
-```
-
-在 `login.js` 的顶部，你需要创建相应的引用：
-
-```javascript
-var GoogleStrategy = require('passport-google').Strategy;
-```
-
-在这种情况下，验证函数接受 OpenID 标识符和个人资料，并调用一个带有用户对象的回调函数。在使用它之前，你必须按照以下方式配置策略，并指定一个 URL，让成功登录的用户自动返回到你的应用程序：
-
-[点击此处查看代码图片]
-
-```javascript
-passport.use(new GoogleStrategy({
-  callbackURL: 'http://localhost:1234/auth/google/return',
-  realm: 'http://localhost:1234/'
-}),
-function(identifier, profile, done) {
-    profile.identifier = identifier;
-    return done(null, profile);
-}));
-```
-
-在前面的代码中，你将创建用于查找你自己的 User 定义，包含了 Google 身份验证的验证回调，它接受 `identifier`、`profile` 和 `done` 参数。如果登录成功，将返回一个包含 Google 提供的用户信息的 profile。Passport 为你将这些信息汇总到 profile 对象的一些易于访问的属性中，包括下表列出的项：
-
-| provider (String) | 用户进行身份验证的提供者（Facebook、Twitter 或其他此类提供者） |
-| :--- | :--- |
-| id (String) | 由服务商生成的用户唯一标识符 |
-| displayName (String) | 此用户的名称，适用于显示 |
-| name (Object) | familyName (String) givenName (String) middleName (String) |
-| emails (Array) [n] | value (String) 实际邮箱地址 |
-| | type (String) 邮箱地址的类型（家庭、工作或其他） |
-| | value (String) 图片的 URL |
-
-如你所见，profile 信息可以非常详尽，并在需要时包含多个项目的数组。如果你需要聚合自定义内容，这就是你获取内容的地方。邮箱数组可能提供用于匹配你的数据库和站点其他用户信息，从而实现单点登录（SSO），这实际上发生在 Google 登录处。
-
-单点登录发生在那里，在完成所有设置后，Google 身份验证的第一步是将用户重定向到 google.com。再次，之前一样，为了实现此功能，你只需使用 `passport.authenticate` 并设置特定的 `GoogleStrategy`。在身份验证用户后，Google 将通过 `login/google/return` 的返回 URL 回到你的 Node.js。
-
-[点击此处查看代码图片]
-
-```javascript
-router.get('/login/google', passport.authenticate('google', {
-    failureRedirect: '/login'
-}),
-function (req, res) {
-    res.redirect('/survey');
-}));
-```
-
-
-```javascript
-passport.authenticate('facebook'),
-function(req, res) {
-}}
-router.get('/login/facebook/callback',
-  passport.authenticate('facebook', { failureRedirect: '/login' },
-  function(req, res) {
-    res.redirect('/');
-  });
-```
-
-再次，你看到在第一个 get 函数中，回调是空的，因为它永远不会被调用，因为在所示过程中身份验证会失败，用户将会被重定向到登录页面。否则，这里将调用指定的路由，再次将你的用户重定向到调查页面。
-
-在我们的最后一个示例中，我们将查看最近替换 OAuth 的 OAuth 2.0 规范。Dropbox、Reddit、PayPal 以及许多使用这种身份验证形式的云资源都有其特定的 npm 实现。在这里，我将只介绍通用版本。这种身份验证形式强调令牌（tokens）。对于绝大多数网站来说，这意味着持有者令牌（bearer tokens），因此这将是我们的重点。
-
-再次，从安装正确的 npm 包开始：
-
-![](img/22c7af4ec23e76c492f90dae8cc725f0_68_0.png)
-
-npm install passport-http-bearer
-
-然后在登录中引用必要的模块依赖：
-
-![](img/22c7af4ec23e76c492f90dae8cc725f0_68_1.png)
-
-```javascript
-var BearerStrategy = require('passport-http-bearer').Strategy;
-```
-
-接下来，就像所有其他策略一样，你必须配置 OAuth 2.0 策略：
-
-![](img/22c7af4ec23e76c492f90dae8cc725f0_68_2.png)
-
-```javascript
-passport.use(new BearerStrategy({}),
-function(token, done) {
-  User.findOneByToken({ token: token }, function (err, user) {
-    if (err) return done(err);
-    if (!user) return done(null, false);
-    return done(null, user, { scope: 'read' });
-  });
-});
-```
-
-如你所示，OAuth 2.0 策略验证回调接受令牌作为参数。通常情况下，当你完成内部的“用户匹配”过程（在前面的代码示例中称为 User.findOneByToken）时，它应该在提供用户的情况下调用该方法。如果没有找到用户，则通过 **done 调用**。
-
-可以传递可选信息以指示令牌的范围，以便进行你的内部访问控制检查。在这里，你传递了：'read' 作为 JSON 数组。这些信息由 Passport 在 **req.authInfo** 属性中找到。
-
-现在，要使用该策略，请确保你安装了 OAuth2 npm 以及 bearer-，然后**如下所示**将其挂载到你的页面：
-
-![](img/22c7af4ec23e76c492f90dae8cc725f0_68_3.png)
-
-```javascript
-router.get('/login/oauth',
-  passport.authenticate('oauth2'));
-router.get('/login/callback',
-  { failureRedirect: '/login' },
-  function(req, res) {
-    // 身份验证成功，重定向
-    res.redirect('/survey');
-  });
-```
-
-使用一个或多个身份验证策略应该使你能够处理 Node.js 中遇到的绝大多数登录情况。
-
-此时，我们已经涵盖了构建商业 Node.js 应用的所有基本方面。现在，让我们把所有部分组合成一个使用你新工具箱中所有工具的运行网站，走向终点。
 
 # 第 9 章.在 Node.js 中整合一切
 
-你现在拥有了创建运动调查（Sports Survey）网站所需的一切。用户可以登录以访问调查，调查将由 Question 对象填充，并包含 Player 对象作为答案。该结构将显示在视图（view）上，答案将在内存中跟踪，以便你可以显示结果。
+你现在拥有了创建运动调查（Sports Survey）网站所需的一切。用户可以登录以访问调查，调查将由 `Question` 对象填充，并包含 `Player` 对象作为答案。该结构将显示在视图（view）上，答案将在内存中跟踪，以便你可以显示结果。
 
-许多部分已经就绪。你已经有了登录视图，如果用户成功登录，它会重定向到调查视图。你已经有了获取 Player 对象集合的代码。你只需要缓存该集合并暂时不显示它。你最终将只显示它的一小部分，作为你提问的每个调查问题的备选答案。
+许多部分已经就绪。你已经有了登录视图，如果用户成功登录，它会重定向到调查视图。你已经有了获取 `Player` 对象集合的代码。你只需要缓存该集合并暂时不显示它。你最终将只显示它的一小部分，作为你提问的每个调查问题的备选答案。
 
 你已经准备好了你的对象：
-
-[点击此处查看代码图像]
 
 ```javascript
 function Question(squestion, oAllAnswers, oCorrectAnswer) {
@@ -1882,11 +1403,9 @@ function Player() {
 }
 ```
 
-现在让我们开始把它们整合在一起。观察 Question 对象的属性，答案似乎是一个数组，所以让我们向其中放入一些玩家看看会发生什么。你的第一个问题是：“这些球员中哪些曾是棒球运动员？”
+现在让我们开始把它们整合在一起。观察 `Question` 对象的属性，答案似乎是一个数组，所以让我们向其中放入一些玩家看看会发生什么。你的第一个问题是：“这些球员中哪些曾是棒球运动员？”
 
-确保你的列表中有一个（且仅有一个）棒球运动员。在这种情况下，你不需要指定该球员或其他问题，因为这个问题非常通用。为了实现此逻辑，请在 app.js 的一个函数中编写一些代码，在应用程序运行时将玩家列表加载到缓存内存中：
-
-[点击此处查看代码图像]
+确保你的列表中有一个（且仅有一个）棒球运动员。在这种情况下，你不需要指定该球员或其他问题，因为这个问题非常通用。为了实现此逻辑，请在 `app.js` 的一个函数中编写一些代码，在应用程序运行时将玩家列表加载到缓存内存中：
 
 ```javascript
 function fetchPlayers() {
@@ -1910,24 +1429,19 @@ function fetchPlayers() {
 
 *(注：由于原文中存在大量 OCR 识别错误和重复片段，译文已根据上下文进行了逻辑修复和整合，以确保内容通顺。)*
 
-
-
-
+```javascript
 arr.unshift(oPlayer);
-
-要在数组中搜索某个值，请使用 `indexOf` 或 `lastIndexOf`，这取决于你想从数组的开头还是末尾开始搜索。请记住，当你执行此操作时，比较使用的是最严格的运算符 (===)，因此当使用数字字符串搜索数组时，它会产生如下所示的“未找到”示例：
-
-点击查看代码图片
-
 ```
+
+要在数组中搜索某个值，请使用 `indexOf` 或 `lastIndexOf`，这取决于你想从数组的开头还是末尾开始搜索。请记住，当你执行此操作时，比较使用的是最严格的运算符 (`===`)，因此当使用数字字符串搜索数组时，它会产生如下所示的“未找到”示例：
+
+```javascript
 var arr = ["1", "2", "3"];
 // 搜索键值数组
 console.log(arr.indexOf(2)); // 返回 -1
 ```
 
-在我们的特定情况下，你可能想要使用 JavaScript 数组类型中方便的 `filter` 函数，来识别所有从事“足球”（Football）运动的玩家，如下所示
-
-点击查看代码图片
+在我们的特定情况下，你可能想要使用 JavaScript 数组类型中方便的 `filter` 函数，来识别所有从事“足球”（Football）运动的玩家，如下所示：
 
 ```javascript
 arrPlayers = arrPlayers.filter(function(player){
@@ -1938,8 +1452,6 @@ arrPlayers = arrPlayers.filter(function(player){
 当然，也可以执行相同的操作来过滤出正确答案（例如名称），这样你就可以将该特定玩家插入数组，并将该玩家记录为正确答案 `correctAnswer`。对于任何对对象集合进行过 LINQ 过滤的人来说，上面的代码看起来非常熟悉。事实上，如果你将 `filter` 替换为 `FindAll`并将单词 `function` 替换为你的委托（delegate），你就得到了过滤 `List<T>` 的 C# 语法。
 
 你还有 `foreach` 语法，它对于遍历对象的属性非常有用，就像你可能对 `Player` 对象所做的那样：
-
-点击查看代码图片
 
 ```javascript
 var arrKeys = Object.keys(arrPlayers);
@@ -1958,8 +1470,6 @@ arrKeys.forEach(function(Player) {
 
 所以，你已经有了根据你的问题内容过滤出的答案。让我们像接下来所示，使用我们的问题“构造”函数以这种方式将它们整合。此函数期望一个文本答案、答案数组以及正确答案（在这种情况下，我们将其作为集合中的第一个答案提供）：
 
-点击查看代码图片
-
 ```javascript
 var sText = "Which of these players was on a baseball team?";
 var oQuestion = new Question(sText, arrAnswers, arrAnswers[0]);
@@ -1975,14 +1485,12 @@ res.render('survey', {
 
 然后，页面需要匹配 `Question` 对象的父/子结构才能正确显示其数据。因为你期望获得用户提供的跟踪答案，你需要提交一个表单和一个使用相同页面的 post 操作：
 
-点击查看代码图片
-
 ```html
 <form action="survey" method="post">
 <%= Question.questionText %>
 <ul>
   <% for (var i=0; i < Question.answersList.length; i++) { %>
-  <li><a href="details/<%= Question.answersList[i].id%'">
+  <li><a href="details/<%= Question.answersList[i].id%>">
     <%= Question.answersList[i].displayName() %>
   </a>
   </li>
@@ -2004,7 +1512,7 @@ res.render('survey', {
 
 Node.js 有最后一个在开发 Web 应用程序时非常有用的功能。它与你之前做的工作没有相关，但我想确保我涵盖了这个主题，让你真正拥有了所有 Node.js 的能力。那个功能就是 sockets。
 
-Sockets 允许客户端和服务器之间进行实时的双向通信。此功能对于聊天室、多人游戏等应用程序至关重要。在你的 Node.js 应用中启用 sockets 最快、最简单的方法是使用 `socket.io`
+Sockets 允许客户端和服务器之间进行实时的双向通信。此功能对于聊天室、多人游戏等应用程序至关重要。在你的 Node.js 应用中启用 sockets 最快、最简单的方法是使用 `socket.io`：
 
 ```javascript
 var socketio = require('socket.io');
@@ -2018,9 +1526,8 @@ var fs = require('fs');
 
 var server2 = http.createServer(function (req, res) {
   res.writeHead(200, {'Content-Type': 'text/html'});
-  res.end(fs.readFileSync(__dirname + '/views/chat.html')));
+  res.end(fs.readFileSync(__dirname + '/views/chat.html'));
 }).listen(1235, function () {
-
   console.log('Listening at: http://localhost:1235');
 });
 
@@ -2042,10 +1549,6 @@ socketio.listen(server2).on('connection', function (socket) {
 
 所以，带着信心带着你的工具，去享受你的奇新世界吧！
 
-
-
-
-
 # 附录.Node.js 中的常见错误
 
 在 Node.js 中你偶尔会遇到一些典型的错误。以下是你可能会遇到的一些常见错误简短列表及其解决方案。
@@ -2063,6 +1566,7 @@ socketio.listen(server2).on('connection', function (socket) {
 # 索引
 
 ? (问号), 41
+
 & (和符号), 13, 41
 
 ## A
@@ -2200,14 +1704,6 @@ socketio.listen(server2).on('connection', function (socket) {
     - 名称不匹配, 32
     - 故障, 32
 - exports 项目, 27
-- Express Node.js 项目, 3
-- Express 包, 6
-    - 骨干, 16
-- fs 对象, 57, 59–61
-- 身份验证, 63–69
-- 外部数据, 47–55
-    - 将数据序列化, 46
-    - 从获取数据, 39
 
 ## F
 
@@ -2271,7 +1767,6 @@ socketio.listen(server2).on('connection', function (socket) {
     - 模板中的 HTML 标签, 34
     - http.createServer(); 函数调用, 14
     - HTTP 网络连接, 42
-- 匈牙利命名法 (Hungarian notation), 13
 
 ## I
 
@@ -2280,7 +1775,7 @@ socketio.listen(server2).on('connection', function (socket) {
     - 路径, 设置, 25–26
     - 样式, 25
 - indexOf 函数, 74
-- 输入字段, 添加, 51 (重复)
+- 输入字段, 添加, 51
 - 插入操作, 49
 
 ## J
@@ -2327,10 +1822,6 @@ socketio.listen(server2).on('connection', function (socket) {
 - 非强类型, 13–14
 - npm 命令, 7–8
 - npm 包管理应用, 3
-
-
-
-
 
 ## P
 
@@ -2538,10 +2029,6 @@ socketio.listen(server2).on('connection', function (socket) {
 
 David 拥有近 20 年的开发者、架构师和顾问经验，工作横跨整个软件生命周期。他花了十多年时间为客户使用 .NET。
 
-
-
-
-
 ```javascript
 var oPlayer = new Player();
 
@@ -2679,7 +2166,7 @@ html += "</ul>";
 
 <ul>
 <% for(var i=0; i < products.length; i++) { %>
-<li><a href='products/<%= products[i]%'><%=%= products[i] %></a></li>
+<li><a href='products/<%= products[i]%>'><%= products[i] %></a></li>
 <% } %>
 </ul>
 ```
@@ -2701,7 +2188,7 @@ res.render('products', {
 <ul>
   <% for(var i=0; i < players.length; i++) { %>
   <li>
-    <a href='details/<%= players[i].id%'><%=%= players[i].name %></a>
+    <a href='details/<%= players[i].id%>'><%= players[i].name %></a>
   </li>
   <% } %>
 </ul>
@@ -2791,8 +2278,6 @@ oPlayer.sport = "Golf";
 oPlayer.id = 4;
 arrPlayers.push(oPlayer);
 ```
-
-
 
 ```javascript
 cache.put('players', arrPlayers, 5000);
@@ -3048,6 +2533,12 @@ fs.writeFile(sFileName, sMsg, function (err) {
 });
 ```
 
+
+
+# Node.js 文件操作与 Web 开发示例
+
+## 文件读取
+
 ```javascript
 var sFileName = 'helloworld.txt' // 与上一个文件名相同
 fs.readFile(sFileName, function (err, fileData) {
@@ -3060,6 +2551,8 @@ fs.readFile(sFileName, function (err, fileData) {
 });
 ```
 
+## 文件上传表单
+
 ```html
 请指定一个文件或一组文件：<br>
 <form method='post' action='upload' enctype="multipart/form-data">
@@ -3067,11 +2560,11 @@ fs.readFile(sFileName, function (err, fileData) {
 </form>
 ```
 
-
-
 ```html
 <input type='file' name='fileUpload'>
 ```
+
+## 文件上传路由处理
 
 ```javascript
 server.route('/upload')
@@ -3081,7 +2574,7 @@ server.route('/upload')
     console.log("Uploading: " + fileName);
     // 图片将上传的路径
     var fStream = fs.createWriteStream(__dirname + '/images/' + fileName);
-    ofile.pipe(fStream);
+    oFile.pipe(fStream);
 
     fStream.on('close', function () {
       console.log("Upload Finished of " + fileName);
@@ -3099,6 +2592,8 @@ var fStream = fs.createWriteStream(__dirname + '/images/' + fileName);
 fs.readFile(sFileName, function (err, fileData) {
 ```
 
+## 流式读取文件
+
 ```javascript
 var oStream = fs.createReadStream('existingFile');
 var dataLength = 0;
@@ -3111,16 +2606,24 @@ oStream
   });
 ```
 
+## 管道操作复制文件
+
 ```javascript
 fs.createReadStream("input/" + fileName )
  // 写文件
 .pipe(fs.createWriteStream("output/" + fileName));
 ```
 
+## 获取文件状态
+
 ```javascript
 var stats = fs.statSync("myfile.txt")
 var fileSizeInBytes = stats["size"]
 ```
+
+## 字符串操作示例
+
+### 分割字符串
 
 ```javascript
 var sName = "Michael Jeffery Jordan!";
@@ -3128,16 +2631,22 @@ var arrName = sName.split(" ");
 console.log(arrName); // 输出 { Michael, Jeffery, Jordan! }
 ```
 
+### 截取子字符串
+
 ```javascript
 var sSub = sName.substring(1, 6);
 console.log(sSub); // 输出 "ichae"
 ```
+
+### 正则匹配
 
 ```javascript
 var sName = "Jeff Jeffery Jefferson";
 var res1 = sName.match(/Jeff/); // 输出 { Jeff }
 var resAll = sName.match(/Jeff/g); // 输出 { Jeff, Jeff, Jeff }
 ```
+
+## 登录表单
 
 ```html
 <form action="/login" method="post">
@@ -3149,6 +2658,8 @@ var resAll = sName.match(/Jeff/g); // 输出 { Jeff, Jeff, Jeff }
   <input type="submit" />
 </form>
 ```
+
+## Express 路由配置
 
 ```javascript
 var express = require('express');
@@ -3170,6 +2681,10 @@ module.exports = router;
 ```javascript
 server.use(require('./login'));
 ```
+
+## Passport 认证策略
+
+### 本地策略
 
 ```javascript
 var passport = require('passport');
@@ -3193,6 +2708,8 @@ router.post('/login/local', passport.authenticate('local', function (req, res) {
 }));
 ```
 
+### 用户查找函数
+
 ```javascript
 var arrUsers = [
   { id: 1, username: 'walter', password: 'thirtyfour', email: 'emailaddress' },
@@ -3209,6 +2726,8 @@ findByUsername(username, function(err, user) {
   return done(null, user);
 });
 ```
+
+### Google 策略
 
 ```javascript
 var GoogleStrategy = require('passport-google').Strategy;
@@ -3239,6 +2758,8 @@ function (req, res) {
 });
 ```
 
+### Bearer Token 策略
+
 ```bash
 npm install passport-http-bearer
 ```
@@ -3259,6 +2780,8 @@ passport.use(new BearerStrategy(
 ));
 ```
 
+### OAuth2 认证路由
+
 ```javascript
 router.get('/login/oauth', passport.authenticate('oauth2'));
 router.get('/login/oauth/callback',
@@ -3268,6 +2791,8 @@ function(req, res) {
   res.redirect('/survey');
 });
 ```
+
+## 类定义示例
 
 ```javascript
 function Question(sQuestion, oAnswers, oCorrectAnswer) {
@@ -3284,6 +2809,8 @@ function Player () {
     }
 }
 ```
+
+## 数据库查询玩家数据
 
 ```javascript
 function fetchPlayers() {
@@ -3344,14 +2871,14 @@ try {
 }
 ```
 
-
-
 ```javascript
 server.listen(1234, function () {
   fetchPlayers();
   console.log("ready on 1234");
 })
 ```
+
+## 玩家数据分类处理
 
 ```javascript
 var arrAnswers = [];
@@ -3376,17 +2903,25 @@ for (var i = 0; i < arrNonBaseball.length; i++) {
 }
 ```
 
+## 数组操作示例
+
+### 索引查找
+
 ```javascript
 var arr = ["1", "2", "3"];
 // 搜索键数组
 console.log(arr.indexOf(2)); // 返回 -1
 ```
 
+### 过滤数组
+
 ```javascript
 arrPlayers = arrPlayers.filter(function(player){
   return (player.sport.toString().toUpperCase() == "FOOTBALL");
 });
 ```
+
+### 遍历对象属性
 
 ```javascript
 var arrKeys = Object.keys(arrPlayers);
@@ -3398,6 +2933,8 @@ arrKeys.forEach(function(Player) {
   });
 });
 ```
+
+## 问卷调查示例
 
 ```javascript
 var sText = "这些球员中哪一个参加过棒球球队？";
@@ -3415,6 +2952,8 @@ var oQuestion = new Question(sText, arrAnswers, arrAnswers[0]);
 </ul>
 </form>
 ```
+
+## Socket.IO 实时通信
 
 ```javascript
 var socketio = require('socket.io');
@@ -3436,4 +2975,3 @@ socketio.listen(server2).on('connection', function (socket) {
   });
 });
 ```
-

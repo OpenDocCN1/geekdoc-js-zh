@@ -1,22 +1,13 @@
-# Javascript 入门指南
 
-
-
-
-
-
-
-
+# JavaScript 入门指南
 
 ![](img/d78298d3338ec680a024bbc83e78b297_0_0.png)
-
-
 
 # JavaScript 术语
 
 | 术语 | 定义 |
 | :--- | :--- |
-| 脚本块 | HTML <script> 和 </script> 标签之间的所有 JavaScript 代码和注释 |
+| 脚本块 | HTML `<script>` 和 `</script>` 标签之间的所有 JavaScript 代码和注释 |
 | 变量 | JavaScript 代码中用于存储数字、文本字符串或布尔值（真/假）的容器 |
 | 初始化 | 为 JavaScript 变量分配初始值——可以在声明时进行或稍后在脚本中进行 |
 | 调用 | 在脚本中引用函数名来调用 JavaScript 函数 |
@@ -32,153 +23,122 @@
 | 返回 | JavaScript 函数中执行语句的最终结果，并返回给调用者 |
 
 ![](img/d78298d3338ec680a024bbc83e78b297_1_0.png)
-
-
-
 ![](img/d78298d3338ec680a024bbc83e78b297_2_0.png)
 
-
 www.ineasysteps.com
-
 www.bn.com
 
+## 目录
 
-
-
-
-
-
-
-
+| 主题 | 页码 |
+| :--- | :--- |
 | 在 HTML 中引入 JavaScript | 9 |
-
-
-
-## 日期和时间
-
-获取日期和时间
-日期信息
-当前时间
-通用时间
-时区
-设置日期和时间
-使用系统时钟
-取消计时器
-JavaScript 时钟
-
-
-Math 常数
-Math 方法
-浮点数 舍入
-强制浮点数
-数字比较
-随机数生成器
-随机图像
-# 字符串操作
-
-字符串长度
-字符串中的字符
-合并字符串
-分离单词
-子字符串
-转换为字符串
-更改大小写
-来自字符串的数字
-字符串中的变量
-
-
-对象构造函数
-属性继承
-显示页面
-浏览器 ID
-跨浏览器兼容
-Java 检测
-
-
-Confirm 98
-Prompt 99
-Location 100
-History 101
-Onload 102
-Status 103
-弹出窗口 104
-弹出功能 105
-关闭弹出 106
-获取尺寸 107
-Frames 108
-Frame 对象 109
-错误处理 110
-
-
-设置控件 112
-JavaScript 创建 113
-设置 cookie 114
-获取 cookie 115
-图像数组 116
-动态内容 118
-最后修改 119
-XYZ 坐标 120
-动态层 121
-透明层 122
-
-
-表单对象 124
-表单元素 125
-点击按钮 126
-切换值 127
-文本框 128
-密码框 129
-单选按钮 130
-单选框检测 131
-复选框 132
-复选框检测 133
-选项列表 134
-选中索引 135
-文本区域 136
-清除表单 137
-发送表单 138
-修改表单 139
-邮箱地址验证 140
-
-
-鼠标点击 142
-捕捉鼠标 143
-鼠标悬停和移出 144
-鼠标按下和移出 146
-鼠标按钮 147
-按键按下和抬起 148
-键码 149
-加载和卸载 150
-聚焦和模糊 152
-更改 154
-重置 155
-提交 156
-中止 157
-调整大小 158
-
-
-JavaScript: 协议 160
-层属性 161
-切换可见性 162
-动态内容 164
-幻灯显示 166
-跟踪层 168
-滚动层 170
-弹出层 172
-动态菜单 174
-新鲜选项 176
-DOM 引用 178
-
-
-产品页面 180
-隐藏表单 181
-获取客户详情 182
-生成订单号 183
-确认订单 184
-提交订单 185
-下一步是什么？ 186
-
-
+| 日期和时间 | |
+| 获取日期和时间 | |
+| 日期信息 | |
+| 当前时间 | |
+| 通用时间 | |
+| 时区 | |
+| 设置日期和时间 | |
+| 使用系统时钟 | |
+| 取消计时器 | |
+| JavaScript 时钟 | |
+| 数学运算 | |
+| Math 常数 | |
+| Math 方法 | |
+| 浮点数 舍入 | |
+| 强制浮点数 | |
+| 数字比较 | |
+| 随机数生成器 | |
+| 随机图像 | |
+| 字符串操作 | |
+| 字符串长度 | |
+| 字符串中的字符 | |
+| 合并字符串 | |
+| 分离单词 | |
+| 子字符串 | |
+| 转换为字符串 | |
+| 更改大小写 | |
+| 来自字符串的数字 | |
+| 字符串中的变量 | |
+| 对象构造函数 | |
+| 属性继承 | |
+| 显示页面 | |
+| 浏览器 ID | |
+| 跨浏览器兼容 | |
+| Java 检测 | |
+| Confirm | 98 |
+| Prompt | 99 |
+| Location | 100 |
+| History | 101 |
+| Onload | 102 |
+| Status | 103 |
+| 弹出窗口 | 104 |
+| 弹出功能 | 105 |
+| 关闭弹出 | 106 |
+| 获取尺寸 | 107 |
+| Frames | 108 |
+| Frame 对象 | 109 |
+| 错误处理 | 110 |
+| 设置控件 | 112 |
+| JavaScript 创建 | 113 |
+| 设置 cookie | 114 |
+| 获取 cookie | 115 |
+| 图像数组 | 116 |
+| 动态内容 | 118 |
+| 最后修改 | 119 |
+| XYZ 坐标 | 120 |
+| 动态层 | 121 |
+| 透明层 | 122 |
+| 表单对象 | 124 |
+| 表单元素 | 125 |
+| 点击按钮 | 126 |
+| 切换值 | 127 |
+| 文本框 | 128 |
+| 密码框 | 129 |
+| 单选按钮 | 130 |
+| 单选框检测 | 131 |
+| 复选框 | 132 |
+| 复选框检测 | 133 |
+| 选项列表 | 134 |
+| 选中索引 | 135 |
+| 文本区域 | 136 |
+| 清除表单 | 137 |
+| 发送表单 | 138 |
+| 修改表单 | 139 |
+| 邮箱地址验证 | 140 |
+| 鼠标点击 | 142 |
+| 捕捉鼠标 | 143 |
+| 鼠标悬停和移出 | 144 |
+| 鼠标按下和移出 | 146 |
+| 鼠标按钮 | 147 |
+| 按键按下和抬起 | 148 |
+| 键码 | 149 |
+| 加载和卸载 | 150 |
+| 聚焦和模糊 | 152 |
+| 更改 | 154 |
+| 重置 | 155 |
+| 提交 | 156 |
+| 中止 | 157 |
+| 调整大小 | 158 |
+| JavaScript: 协议 | 160 |
+| 层属性 | 161 |
+| 切换可见性 | 162 |
+| 动态内容 | 164 |
+| 幻灯显示 | 166 |
+| 跟踪层 | 168 |
+| 滚动层 | 170 |
+| 弹出层 | 172 |
+| 动态菜单 | 174 |
+| 新鲜选项 | 176 |
+| DOM 引用 | 178 |
+| 产品页面 | 180 |
+| 隐藏表单 | 181 |
+| 获取客户详情 | 182 |
+| 生成订单号 | 183 |
+| 确认订单 | 184 |
+| 提交订单 | 185 |
+| 下一步是什么？ | 186 |
 
 欢迎来到 JavaScript 世界。本章介绍了 JavaScript 语言并说明了如何向 HTML 文档添加 JavaScript。列出了所有的 JavaScript 语言关键字，并解释了函数和变量的基本要素。
 
@@ -196,7 +156,6 @@ DOM 引用 178
 - 变量作用域 | 19
 - 多参数 | 20
 
-
 JavaScript 是一种解释型编程语言，其解释器嵌入在 Web 浏览器软件中，例如 Microsoft Internet Explorer 和 Netscape Navigator。
 
 这意味着 Web 文档中包含的脚本在加载到浏览器窗口时即可被浏览器的 JavaScript 引擎读取。
@@ -207,12 +166,7 @@ JavaScript 是一种解释型编程语言，其解释器嵌入在 Web 浏览器�
 
 JavaScript 不应与 Sun Microsystems 的名为 Java 的编译型编程语言混淆，尽管两者某些相似之处，但它们是完全不同的语言。
 
-
-
-
-
-
-为了在 Web 文档中引入 JavaScript，可以在 HTML 代码中定义一个脚本块（script block）。
+为了在 Web 文档中引入 JavaScript，可以在 HTML 代码中定义一个脚本块（`script block`）。
 
 脚本块可以定义在 HTML 代码的任何位置，尽管通常位于文档的 `head` 部分，即在 `<head>` 和 `</head>` 标签之间。
 
@@ -220,7 +174,8 @@ JavaScript 不应与 Sun Microsystems 的名为 Java 的编译型编程语言混
 
 脚本块的样式所示：
 
-``` even<script type = "text/javascript">
+```html
+<script type="text/javascript">
 </script>
 ```
 
@@ -230,8 +185,8 @@ JavaScript 不应与 Sun Microsystems 的名为 Java 的编译型编程语言混
 
 脚本引用仍应放置在文档的 `head` 部分，并添加 `src` 属性以引导浏览器指向 JavaScript 文件的 URL，如例所示：
 
-```
-<script type = "text/javascript" src = "mycode.js">
+```html
+<script type="text/javascript" src="mycode.js">
 </script>
 ```
 
@@ -243,10 +198,9 @@ JavaScript 不应与 Sun Microsystems 的名为 Java 的编译型编程语言混
 
 书中列出的所有 JavaScript 示例都是与其对应的 HTML 文件同命名的 JavaScript 文件。例如，`hello.html` 调用了 `hello.js` 中的 JavaScript 代码。
 
-
 要显示 JavaScript alert 对话框只需调用内置的 JavaScript `alert()` 函数，如下所示：
 
-```
+```javascript
 alert("Hello World");
 ```
 
@@ -265,7 +219,7 @@ alert("Hello World");
 
 当此文档加载到 Web 浏览器引擎时，会执行 JavaScript 代码中包含的指令。
 
-> [书中所有的示例都使用了这种在 HTML 文档中引入 JavaScript 文件的方法。]
+> 书中所有的示例都使用了这种在 HTML 文档中引入 JavaScript 文件的方法。
 
 在这种情况下，JavaScript 代码会导致浏览器打开一个 `alert()` 对话框，带有括号内引号内包含的消息。
 
@@ -277,12 +231,11 @@ alert("Hello World");
 
 JavaScript 中所有的文本字符串都是以此方式包含的。
 
-
 注意，对应页 JavaScript 语句末尾有一个分号，以符合所需的 JavaScript 语言语法规则。
 
 这必须添加到每个 JavaScript 语句的末尾——就像在英语语法规则中使用句号来结束句子一样。
 
-最重要的是，JavaScript 是一种区分大小写的语言，其中 "ALERT"、"Alert" 和 "alert" 被视为三个不同的单词。
+最重要的是，JavaScript 是一种区分大小写的语言，其中 `ALERT`、`Alert` 和 `alert` 被视为三个不同的单词。
 
 所有的 JavaScript 关键字均为小写，因此在之前的代码示例中使用 `ALERT("Hello World")` 或 `Alert("Hello World")` 将无法调用 JavaScript `alert()` 函数。
 
@@ -294,7 +247,7 @@ JavaScript 中所有的文本字符串都是以此方式包含的。
 
 ![](img/d78298d3338ec680a024bbc83e78b297_12_1.png)
 
-```
+```javascript
 /* 这里是关于
 // 代码的介绍
 // 使用了多行注释 */
@@ -307,12 +260,11 @@ alert("Hello World");
 
 最好避免使用过多的注释——这会大幅增加 JavaScript 文件的大小。
 
-
 下表包含了 JavaScript 语言的一部分的关键字。在为变量、函数或标签选择标识符名称时不能使用这些关键字：
 
 | break | do | function | null | typeof |
 |---|---|---|---|---|
-| case | else | return | var |
+| case | else | return | var | |
 | continue | export | import | switch | void |
 | default | false | in | this | while |
 | delete | for | new | true | with |
@@ -327,9 +279,8 @@ alert("Hello World");
 | byte | enum | instanceof | protected | throws |
 | catch | extends | int | public | transient |
 | char | final | interface | short | try |
-| class | finally | long | static |
-| const | float | native | super |
-
+| class | finally | long | static | |
+| const | float | native | super | |
 
 变量是 JavaScript 程序中存储数据以进行操作的地方。
 
@@ -337,8 +288,8 @@ alert("Hello World");
 
 ![](img/d78298d3338ec680a024bbc83e78b297_14_0.png)
 
-abc
-my_variable
+`abc`
+`my_variable`
 
 使用 JavaScript 关键字创建一个新变量：
 
@@ -349,15 +300,14 @@ my_variable
 var message = "My First Variable";
 
 // 显示变量中的值
-alert( message );
+alert(message);
 ```
 
-字符串存储在名为 message 的变量中。调用 `alert()` 函数显示该变量。
+字符串存储在名为 `message` 的变量中。调用 `alert()` 函数显示该变量。
 
 ![](img/d78298d3338ec680a024bbc83e78b297_14_2.png)
 
-
-JavaScript 是一种弱类型语言，因此变量可以存储数字、字符串或布尔值（例如 true 或 false）。这不像 C++ 和 Java 等编程语言，它们需要声明特定类型的变量才能存储相应类型的数据。
+JavaScript 是一种弱类型语言，因此变量可以存储数字、字符串或布尔值（例如 `true` 或 `false`）。这不像 C++ 和 Java 等编程语言，它们需要声明特定类型的变量才能存储相应类型的数据。
 
 ```javascript
 // 初始化数字变量
@@ -379,7 +329,6 @@ alert(typeof a + "\n" + typeof b + "\n" + typeof c);
 
 上面的示例创建了 JavaScript 支持的三种不同类型的变量。
 
-
 这三个值首先传递给 `alert()` 函数，然后使用 JavaScript 关键字 `typeof` 返回它们的数据类型，显示在下面的 alert 对话框中。括号内的代码 `"\n"` 在 alert 对话框中换行显示每个值。
 
 | JavaScript 应用 |
@@ -388,36 +337,32 @@ alert(typeof a + "\n" + typeof b + "\n" + typeof c);
 | string |
 | boolean |
 
-
 当字符串中的字符前面有一个斜杠字符时，紧随斜杠的字符产生特殊影响。这被称为转义序列，因为它允许该字符避免被识别为 JavaScript 语法的一部分。
 
 下表列出了更多的转义序列：
 
 ![](img/d78298d3338ec680a024bbc83e78b297_16_0.png)
 
-| | 退格 |
+| 转义序列 | 说明 |
 |---|---|
-| \b | 分页符 |
-| \n | 换行 |
-| \r | 回车 |
-| \' | 单引号 |
-| " | 双引号 |
-| \ | 单斜杠字符 |
+| `\b` | 退格 |
+| `\f` | 分页符 |
+| `\n` | 换行 |
+| `\r` | 回车 |
+| `\'` | 单引号 |
+| `\"` | 双引号 |
+| `\\` | 单斜杠字符 |
 
 转义序列 `\"` 有助于在字符串内部包含双引号，而不会导致字符串本身终止，如例所示：
 
 ```javascript
 // 显示带有转义引号的字符串
-alert("We all say \"JavaScript is great!\"" );
+alert("We all say \"JavaScript is great!\"");
 ```
+
 escapes.js
 
 ![](img/d78298d3338ec680a024bbc83e78b297_16_1.png)
-
-
-
-
-
 
 函数是一段 JavaScript 代码，可以被 JavaScript 应用执行一次或多次。函数和变量是所有 JavaScript 编程的基础。
 
@@ -451,23 +396,21 @@ function call_alert() {
 例如，HTML `<body>` 标签的 `onload` 属性可以在文档加载到浏览器时调用该函数，如下：
 
 ```html
-<body onload = "call_alert()">
+<body onload="call_alert()">
 ```
 
 ![](img/d78298d3338ec680a024bbc83e78b297_17_3.png)
 
-
 所有函数名称后的圆括号可用于包含供执行代码使用的数据。正如 JavaScript `alert()` 函数的括号包含了其所创建的 `alert()` 对话框中要显示的字符串。
 
-括号内包含的数据被称为函数“参数”（argument）。
+括号内包含的数据被称为函数“参数”（`argument`）。
 
 在下面的示例中，函数调用将一个字符串文本传递给 `call_alert()` 函数中名为 `str` 的参数，用于要执行的代码：
 
 ```javascript
 // 一个用于显示传递的参数值的函数
-function call_alert( str )
-{
-    alert( str);
+function call_alert(str) {
+    alert(str);
 }
 ```
 
@@ -476,7 +419,7 @@ function call_alert( str )
 需要注意的是，在此调用中双引号内的字符串本用于包含整个调用：
 
 ```html
-<body onload = "call_alert('Passed Value')">
+<body onload="call_alert('Passed Value')">
 ```
 
 对两处都使用双引号将意味着 `onload` 属性的值将为 `"call_alert("`，因为字符串被双引号终止了。这将导致浏览器错误且函数将不会执行。
@@ -486,7 +429,6 @@ function call_alert( str )
 ![](img/d78298d3338ec680a024bbc83e78b297_18_1.png)
 ![](img/d78298d3338ec680a024bbc83e78b297_18_2.png)
 
-
 JavaScript 函数在执行代码期间可以调用其他函数，就就像之前的示例调用 JavaScript `alert()` 函数一样。
 
 下面的示例演示了如何使用多个函数来处理和显示整数参数：
@@ -495,15 +437,13 @@ JavaScript 函数在执行代码期间可以调用其他函数，就就像之前
 
 ```javascript
 // 一个调用第二个函数并显示返回结果函数
-function call_alert( num )
-{
-  var new_number = make_double( num );
-  alert(" Value Is " + new_number );
+function call_alert(num) {
+  var new_number = make_double(num);
+  alert("Value Is " + new_number);
 }
 
 // 一个将值翻倍并将结果返回给调用者的函数
-function make_double( num )
-{
+function make_double(num) {
   var double_num = num + num;
   return double_num;
 }
@@ -512,14 +452,13 @@ function make_double( num )
 参数通过 `call_alert()` 函数从调用者传递给 `make_double()` 函数：
 
 ```html
-<body onload = "call_alert( 4 )">
+<body onload="call_alert(4)">
 ```
 
 值在 `call_alert()` 函数中使用 `new_number` 进行处理。最后调用 `alert()` 函数来显示该值。
 
 ![](img/d78298d3338ec680a024bbc83e78b297_19_1.png)
 ![](img/d78298d3338ec680a024bbc83e78b297_19_2.png)
-
 
 上一页示例中使用的变量函数内部声明，因此它们被称为局部变量。局部变量只能由定义的函数使用。
 
@@ -530,10 +469,10 @@ function make_double( num )
 var stored_num;
 
 // 一个调用第二个函数并显示返回结果函数
-function call_alert( num ) {
+function call_alert(num) {
   stored_num = num;
   make_triple();
-  alert("Value Is " + stored_num );
+  alert("Value Is " + stored_num);
 }
 
 // 一个将值翻倍并将结果返回给调用者的函数
@@ -547,10 +486,8 @@ function make_triple() {
 热提示：所有变量都可以简单地声明而不初始化值。此示例将参数值传递给全局变量：
 
 ```html
-<body onload = "call_alert( 5 )">
+<body onload="call_alert(5)">
 ```
-
-
 
 如果 JavaScript 函数用逗号分隔，则包含多个参数。声明函数时的参数数量必须与对该函数的任何调用中的参数数量完全匹配。
 
@@ -575,41 +512,36 @@ function call_alert(str1, str2, str3) {
 `var` 关键字可以通过逗号分隔变量名来声明多个变量。调用者向函数传递了三个字符串，尽管第二个字符串仅是一个空格：
 
 ```html
-<body onload = "call_alert('Great', '', 'JavaScript')">
+<body onload="call_alert('Great', '', 'JavaScript')">
 ```
 
 函数将参数值分配给三个全局变量，然后调用 `alert()` 将值显示为单个连接字符串。
 
 ![](img/d78298d3338ec680a024bbc83e78b297_21_2.png)
 
+# 运算符
 
 本章详细介绍了常用的 JavaScript 运算符，通过示例说明了如何进行算术运算、如何赋值以及如何进行比较。同时也解释并演示了条件运算符。
 
-
-
 ![](img/d78298d3338ec680a024bbc83e78b297_22_0.png)
+
+## 算术运算符
 
 JavaScript 中常用的算术运算符列在下表中，并带有它们执行的操作：
 
 | 运算符 | 操作 |
 | :--- | :--- |
-| + | 加法（并连接字符串） |
-| - | 减法 |
-| * | 乘法 |
-| / | 除法 |
-| % | 取模 |
-| ++ | 递增 |
-| -- | 递减 |
+| `+` | 加法（并连接字符串） |
+| `-` | 减法 |
+| `*` | 乘法 |
+| `/` | 除法 |
+| `%` | 取模 |
+| `++` | 递增 |
+| `--` | 递减 |
 
 注意 `+` 运算符根据给定的操作数有两种操作类型。它将两个数值值相加并给出加法结果。它还将合并两个字符串值并返回连接后的字符串，如上一页的示例所示。
 
 ![](img/d78298d3338ec680a024bbc83e78b297_23_0.png)
-
-
-
-
-[content]
-
 
 ```javascript
 var addnum = 20 + 30; // 加法
@@ -627,54 +559,54 @@ result += "Mod is " + mod + "\n";
 result += "Inc is " + inc + "\n";
 result += "Dec is " + dec + "\n";
 
-alert( result );
+alert(result);
 ```
 
 自增和自减运算符也可以用操作数之后。注意，在这些情况下，它们会执行操作，但只返回未处理前的值。
 
 ![](img/d78298d3338ec680a024bbc83e78b297_24_0.png)
-
 ![](img/d78298d3338ec680a024bbc83e78b297_24_1.png)
-
 ![](img/d78298d3338ec680a024bbc83e78b297_24_2.png)
+
 ## 逻辑运算符
 
 JavaScript 中可以使用的三个逻辑运算符如表所示：
 
 | 运算符 | 操作 |
 | --- | --- |
-| && | 逻辑与 |
-| || | 逻辑或 |
-| ! | 逻辑非 |
+| `&&` | 逻辑与 |
+| `||` | 逻辑或 |
+| `!` | 逻辑非 |
 
-逻辑运算符用于具有布尔值 true 或 false 的操作数——即可以转换为 true 或 false 的值。
+逻辑运算符用于具有布尔值 `true` 或 `false` 的操作数——即可以转换为 `true` 或 `false` 的值。
 
-逻辑 `&&` 运算符将评估两个操作数，并且只有当两个操作数本身都为 true 时，才会返回 true。否则，`&&` 运算符将返回 false。
+逻辑 `&&` 运算符将评估两个操作数，并且只有当两个操作数本身都为 `true` 时，才会返回 `true`。否则，`&&` 运算符将返回 `false`。
 
 这通常用于条件分支，其中 JavaScript 程序的方向通过测试两个条件来确定。如果两个条件都满足，脚本将进入某个方向，否则脚本将进入另一个方向。
 
 ![](img/d78298d3338ec680a024bbc83e78b297_25_0.png)
 
-与需要两个操作数的 `&&` 运算符不同，`||` 运算符评估它的两个操作数，如果其中一个操作数本身返回 true，则返回 true。如果两个操作数都没有返回 true，则 `||` 将返回 false。这在 JavaScript 应用中很有，可以在满足任一测试条件时执行特定操作。
+与需要两个操作数的 `&&` 运算符不同，`||` 运算符评估它的两个操作数，如果其中一个操作数本身返回 `true`，则返回 `true`。如果两个操作数都没有返回 `true`，则 `||` 将返回 `false`。这在 JavaScript 应用中很有用，可以在满足任一测试条件时执行特定操作。
 
-第三个逻辑运算符 `!` 是一个一元运算符，用在单个操作数之前。它返回给定操作数的反值，因此，如果变量 `a` 的值为 true，那么 `a` 的值将变为 false。在 JavaScript 应用中，它可以使用语句 `a=!!` 在连续的循环迭代中切换变量的值。这将确保在每次通过时值都会发生变化，就像闪烁灯开关一样。
+第三个逻辑运算符 `!` 是一个一元运算符，用在单个操作数之前。它返回给定操作数的反值，因此，如果变量 `a` 的值为 `true`，那么 `!a` 的值将变为 `false`。在 JavaScript 应用中，它可以使用语句 `a = !a` 在连续的循环迭代中切换变量的值。这将确保在每次通过时值都会发生变化，就像闪烁灯开关一样。
+
 ## 逻辑示例
 
 ```javascript
-var a = true , b = false;
-var test1 = ( a && a ); // 测试两个操作数是否为 true
-var test2 = ( a && b );
-var test3 = ( b && b );
-var test4 = ( a || b ); // 测试任一操作数是否为 true
-var test5 = ( a || b );
-var test6 = ( b || b );
-var test7 = !a ; var test8 = !b; // 反转值
+var a = true, b = false;
+var test1 = (a && a); // 测试两个操作数是否为 true
+var test2 = (a && b);
+var test3 = (b && b);
+var test4 = (a || b); // 测试任一操作数是否为 true
+var test5 = (a || b);
+var test6 = (b || b);
+var test7 = !a; var test8 = !b; // 反转值
 var result = "AND \n";
-result += "1: " +test1 + " 2: " +test2 + " 3: " + test3;
+result += "1: " + test1 + " 2: " + test2 + " 3: " + test3;
 result += "\nOR\n";
-result += "4: " +test4+ " 5: " +test5+ " 6: " + test6;
-result += "\nNOT\n7: " +test7+ " 8: " + test8;
-alert( result );
+result += "4: " + test4 + " 5: " + test5 + " 6: " + test6;
+result += "\nNOT\n7: " + test7 + " 8: " + test8;
+alert(result);
 ```
 
 ![](img/d78298d3338ec680a024bbc83e78b297_26_0.png)
@@ -683,21 +615,24 @@ alert( result );
 
 ![](img/d78298d3338ec680a024bbc83e78b297_26_1.png)
 
+```
 1: true 2: false 3: false
 4: true 5: true 6: false
 7: false 8: true
+```
 
+## 赋值运算符
 
 JavaScript 中常用于赋值的运算符如表所示。除了简单的 `=` 赋值运算符外，所有运算符都是较长表达式的简写形式，因此为了清晰起见，也给出了等价形式。
 
 | 运算符 | 示例 | 等价 |
-| ---|---||---|
-| = | a = b | a = b |
-| += | a += b | a = (a + b) |
-| -= | a -= b | a = (a - b) |
-| *= | a *= b | a = (a * b) |
-| /= | a /= b | a = (a / b) |
-| %= | a %= b | a = (a % b) |
+| ---|---|---|
+| `=` | `a = b` | `a = b` |
+| `+=` | `a += b` | `a = (a + b)` |
+| `-=` | `a -= b` | `a = (a - b)` |
+| `*=` | `a *= b` | `a = (a * b)` |
+| `/=` | `a /= b` | `a = (a / b)` |
+| `%=` | `a %= b` | `a = (a % b)` |
 
 ![](img/d78298d3338ec680a024bbc83e78b297_27_0.png)
 
@@ -708,7 +643,6 @@ JavaScript 中常用于赋值的运算符如表所示。除了简单的 `=` 赋�
 `+=` 运算符最有用，并在之前的示例中使用过来向现有字符串添加第二个字符串。在表格示例中，`+=` 运算符将变量 `a` 中包含的值加到变量名 `b` 的的值上，然后将结果赋值为变量 `a` 中包含的新值。
 
 表中的所有其他运算符工作原理相同——先在两个值之间进行算术运算，然后将结果赋值给第一个变量作为它的新值。
-
 
 ```javascript
 var a = "JavaScript", b = "Code"; // 赋值字符串值
@@ -725,51 +659,51 @@ var k = 8, l = 4; // 赋值整数
 k %= l; // k 取模 l
 ```
 
-![](img/d78298d3338ec680a024bbc83e78b297_28_0)
+![](img/d78298d3338ec680a024bbc83e78b297_28_0.png)
 
+## 比较运算符
 
 JavaScript 中常用于比较两个值的运算符如下：
 
 | 运算符 | 测试 |
 | --- | --- |
-| == | 等于 |
-| != | 不等于 |
-| > | 大于 |
-| < | 小于 |
-| >= | 大于等于 |
-| <= | 小于等于 |
+| `==` | 等于 |
+| `!=` | 不等于 |
+| `>` | 大于 |
+| `<` | 小于 |
+| `>=` | 大于等于 |
+| `<=` | 小于等于 |
 
 ![](img/d78298d3338ec680a024bbc83e78b297_29_0.png)
 
-`==` 运算符比较两个操作数，如果它们相等则返回 true。相反，`!=` 运算符在操作数不相等时返回 true。
+`==` 运算符比较两个操作数，如果它们相等则返回 `true`。相反，`!=` 运算符在操作数不相等时返回 `true`。
 
-`>` 运算符比较两个操作数，如果第一个大于第二个则返回 true。
+`>` 运算符比较两个操作数，如果第一个大于第二个则返回 `true`。
 
-`<` 运算符比较两个操作数，如果第一个小于第二个则返回 true。
+`<` 运算符比较两个操作数，如果第一个小于第二个则返回 `true`。
 
-`>=` 运算符如果第一个大于或等于第二个则返回 true。
+`>=` 运算符如果第一个大于或等于第二个则返回 `true`。
 
-`<=` 运算符如果第一个小于或等于第二个则返回 true。
-
+`<=` 运算符如果第一个小于或等于第二个则返回 `true`。
 
 ```javascript
- // 比较字符串值
-var teststrings1 = ("JavaScript" == "JavaScript" );
-var teststrings2 = ("JavaScript" == "javascript" );
+// 比较字符串值
+var teststrings1 = ("JavaScript" == "JavaScript");
+var teststrings2 = ("JavaScript" == "javascript");
 
 // 比较数值值
-var testnumbers1 = ( 1.785 == 1.785 );
-var testnumbers2 = ( 5 != 5 );
+var testnumbers1 = (1.785 == 1.785);
+var testnumbers2 = (5 != 5);
 
 // 比较布尔值
-var testbooleans1 = ( true == true );
-var testbooleans2 = ( false != false );
-var testleshan1 = ( 100 < 200 );
-var testleshan2 = ( 100 < 100 );
-var testleshan_equal = ( 100 <= 100 );
-var testgreaterthan = ( -1 > 1 );
-var a = 8, b = 8.0, testvariables1 = ( a == b );
-var c = null, d = null, testvariables2 = ( c == d );
+var testbooleans1 = (true == true);
+var testbooleans2 = (false != false);
+var testleshan1 = (100 < 200);
+var testleshan2 = (100 < 100);
+var testleshan_equal = (100 <= 100);
+var testgreaterthan = (-1 > 1);
+var a = 8, b = 8.0, testvariables1 = (a == b);
+var c = null, d = null, testvariables2 = (c == d);
 ```
 
 ![](img/d78298d3338ec680a024bbc83e78b297_30_0.png)
@@ -784,11 +718,7 @@ var c = null, d = null, testvariables2 = ( c == d );
 
 结果以前使用 `alert()` 函数显示，但现在那部分代码已省略以节省空间。
 
-[/content]
-
-
-
-
+## 条件运算符
 
 JavaScript 程序员最喜爱的比较运算符可能是条件运算符。它首先评估一个表达式以得到真或假值，然后根据评估结果执行两个给定语句中的其中一个。
 
@@ -803,11 +733,9 @@ JavaScript 程序员最喜爱的比较运算符可能是条件运算符。它首
 ```javascript
 // 判断是否为 Internet Explorer 浏览器
 var is_ie = browser_id();
-```
 
-```javascript
 // 显示相应的问候
-( is_ie ) ? greet_ie() : greet_other();
+(is_ie) ? greet_ie() : greet_other();
 ```
 
 更多关于浏览器识别请参阅第 92 页。
@@ -824,12 +752,11 @@ var is_ie = browser_id();
 
 conditional.js（部分）
 
+# 语句
 
 语句在 JavaScript 中用于推进 JavaScript 应用程序的执行。它们可以在代码中定义循环，也可以是待求值的简单术语。本章将检查条件测试和不同类型的循环，并附带用法示例。
 
-
-
-
+## if 语句
 
 `if` 关键字用于执行基础的 JavaScript 条件测试，以评估表达式以得到布尔值。评估后的语句仅在表达式返回真时才会执行。`if` 语句的语法如下：
 
@@ -846,13 +773,11 @@ if (测试表达式) 如果为真时执行的语句;
 var msg, num;
 num = 7;
 // 测试数字是否不能被 2 整除
-if ( num % 2 != 0 )
-{
+if (num % 2 != 0) {
   msg = num + " 是一个奇数。";
-  alert( msg);
+  alert(msg);
 }
 ```
-
 
 此示例调用了 JavaScript 的 `prompt()` 函数，该函数需要调用者提供两个参数。第一个参数是要显示的消息，第二个参数是输入框中的默认值——在本例中为空字符串。
 
@@ -862,24 +787,24 @@ if ( num % 2 != 0 )
 // 初始化一个值为 null 的变量
 var username = null;
 
-if ( username == null) {
+if (username == null) {
     // 询问用户其键名
     username = prompt("请输入您的姓名", "");
     // .. 或者通过姓名问候用户
-    if ( username != "" ) alert("欢迎 " + username);
+    if (username != "") alert("欢迎 " + username);
 }
 ```
 
-**注意** `prompt` 对话框打开时输入框为空，但此处显示是在用户输入后。
+> **注意** `prompt` 对话框打开时输入框为空，但此处显示是在用户输入后。
 
-# If - else 语句
+## if - else 语句
 
 JavaScript 的 `else` 关键字可以与 `if` 语句配合使用，在测试表达式返回假时提供备用执行代码。
 
 这被称为条件分支，其语法如下：
 
 ```
-if (测试表达式) 执行此操作; 或者 否则则执行此操作;
+if (测试表达式) 执行此操作; 否则 执行此操作;
 ```
 
 可以一直测试多个表达式，直到找到真值，此时紧接着真表达式后的代码将执行执行。需要注意的是，`if-else` 语句中包含的任何进一步后续代码都会被忽略。
@@ -889,23 +814,23 @@ if (测试表达式) 执行此操作; 或者 否则则执行此操作;
 ```javascript
 var num = 2, bool = false;
 // 如果数字为 1 且布尔值为真
-if(num == 1 && bool) alert("TEST1 bool: " + bool);
+if (num == 1 && bool) alert("TEST1 bool: " + bool);
 else
-// 如果数字为 2 且布值为真
-if(num == 2 && bool) alert("TEST2 bool: " + bool);
+// 如果数字为 2 且布尔值为真
+if (num == 2 && bool) alert("TEST2 bool: " + bool);
 else
-// 如果数字为 2 且布值为假
-if(num == 2 && 0) alert("TEST3 bool: " + bool);
+// 如果数字为 2 且布尔值为假
+if (num == 2 && !bool) alert("TEST3 bool: " + bool);
 else
-// 如果数字为 3 且布值为假
-if(num == 3 && 0) alert("TEST4 bool: " + bool);
+// 如果数字为 3 且布尔值为假
+if (num == 3 && !bool) alert("TEST4 bool: " + bool);
 ```
 
 | JavaScript 应用程序 | JavaScript 快速入门步骤 |
 | :--- | :--- |
 | TEST3 bool: false | 34 |
 
-# switch 语句
+## switch 语句
 
 当测试表达式评估一个变量的值时，使用 `switch` 语句可能比 `if-else` 语句执行条件分支更高效。`switch` 语句的工作方式很独特——它首先评估一个给定的表达式，然后寻找匹配结果结果的标签。与标签关联的代码将被执行，或者如果没有找到匹配项，`switch` 语句将执行任何默认操作。
 
@@ -918,22 +843,22 @@ switch(num) {
   // 如果数字是 1
   case 1:
   // 如果数字是 2
-  case 2 : alert("case 2"); break;
+  case 2: alert("case 2"); break;
   // 如果数字是 3
-  case 3 : alert("case 3"); break;
+  case 3: alert("case 3"); break;
   // 默认情况
-  default : alert("default");
+  default: alert("default");
 }
 ```
 
 省略 `break` 关键字将允许执行其他代码执行。
 
-# For 循环
+## for 循环
 
 `for` 循环可能是 JavaScript 中最常用的循环类型，其语法如下：
 
 ```
-for ( 初始化 , 测试 , 递增 ) 语句;
+for (初始化, 测试, 递增) 语句;
 ```
 
 初始化用于设置计数器的起始值，通常在此声明一个变量并命名为 `i`。
@@ -947,7 +872,7 @@ for ( 初始化 , 测试 , 递增 ) 语句;
 ```javascript
 var a = 0, b = 0;
 // 初始化计数器为零，循环直到达到 5
-for ( var i = 0; i < 5; i++) {
+for (var i = 0; i < 5; i++) {
   // 每次迭代增加变量值
   a += 10; b += 5;
 }
@@ -957,75 +882,70 @@ alert("FOR LOOP\nA is " + a + "... B is " + b);
 
 循环也可以通过递减计数器向下计数。
 
-# for-in 循环
+## for-in 循环
 
 `for-in` 循环有一个特殊用途，用于枚举对象包含的所有变量或属性。这种循环在常规 JavaScript 中很少使用，但包含在此是因为它可以揭示 Web 浏览器中可用的属性。
 
 下面的示例展示了 Microsoft Internet Explorer 6.0 浏览器 `window` 对象中可用属性的预览：
 
 ```javascript
-var i = 0; a = "";
+var i = 0, a = "";
 
 // 在变量中列出所有属性
-for ( property in window ) {
+for (property in window) {
   a += property + "...";
 }
 
 // 显示窗口属性列表
-alert( a );
+alert(a);
 ```
 
 显示的属性随每个浏览器和版本而异。通过此脚本显示的属性属于第 8 章描述的文档对象模型 (DOM)。
 
+## while 循环
 
-
-
-
-## while 循环 (While loops)
-
-另一种循环使用了 JavaScript 的 **while** 关键字，后面跟着一个用于评估以获取布尔值的表达式。
+另一种循环使用了 JavaScript 的 `while` 关键字，后面跟着一个用于评估以获取布尔值的表达式。
 
 如果评估结果为 `true`，则语句块中的代码将被执行。在代码执行后，测试表达式将再次被评估，循环将持续进行直到评估结果返回 `false`。
 
 ![](img/d78298d3338ec680a024bbc83e78b297_39_0.png)
 
-语句块必须包含能够影响表达式的代码，以便将评估结果改为返回 **false**——否则将导致无限循环。
+语句块必须包含能够影响表达式的代码，以便将评估结果改为返回 `false`——否则将导致无限循环。
 
-需要注意的是，如果测试表达式返回 **false**，则它会先进行评估，然后语句块中的代码将永远不会执行。
+需要注意的是，如果测试表达式返回 `false`，则它会先进行评估，然后语句块中的代码将永远不会执行。
 
 此示例在循环的每次迭代中减少变量的值。计数器不断增加直到达到 10，此时评估返回 `false`，循环结束。
 
 ![](img/d78298d3338ec680a024bbc83e78b297_39_1.png)
 
-```
+```javascript
 var i = 0, num = 50;
 
 // 循环直到计数器达到 10
-while(i < 10)
-{
+while(i < 10) {
   num--;
   i++;
 }
 
 // 显示最终的计数器和数值
-alert("Loop stopped at " + i + "\num is now " + num);
+alert("Loop stopped at " + i + "\nnum is now " + num);
 ```
 
 ![](img/d78298d3338ec680a024bbc83e78b297_39_2.png)
 
-## do - while 循环 (The do - while loop)
+## do - while 循环
 
-JavaScript 的 **do** 关键字用于表示 **do-while** 循环的开始，后面跟着一个包含循环要执行代码的语句块。
+JavaScript 的 `do` 关键字用于表示 `do-while` 循环的开始，后面跟着一个包含循环要执行代码的语句块。
 
-语句代码之后是 JavaScript 的 **while** 关键字和一个用于评估布尔值 **true** 或 **false** 的表达式。
+语句代码之后是 JavaScript 的 `while` 关键字和一个用于评估布尔值 `true` 或 `false` 的表达式。
 
-如果评估结果返回 **true**，循环将在 **do** 关键字处重新开始，并持续到评估返回 **false** 为止。
+如果评估结果返回 `true`，循环将在 `do` 关键字处重新开始，并持续到评估返回 `false` 为止。
 
-需要注意的是，与简单的 **while** 循环不同，**do-while** 循环至少会执行一次语句代码，因为在循环结束之前不会遇到测试表达式。
+需要注意的是，与简单的 `while` 循环不同，`do-while` 循环至少会执行一次语句代码，因为在循环结束之前不会遇到测试表达式。
 
-以下示例将永远不会循环，因为计数器值在语句代码的第一次执行中增加到了 1，因此第一次评估将返回 **false**：
+以下示例将永远不会循环，因为计数器值在语句代码的第一次执行中增加到了 1，因此第一次评估将返回 `false`：
 
-```
+```javascript
 var i = 0, num = 50;
 
 // 循环直到计数器达到 1
@@ -1040,30 +960,27 @@ alert("Loop stopped at " + i + "\nnum is now " + num);
 
 ![](img/d78298d3338ec680a024bbc83e78b297_40_0.png)
 
-**while** 循环通常比 **do-while** 循环更合适。
+`while` 循环通常比 `do-while` 循环更合适。
 
 ![](img/d78298d3338ec680a024bbc83e78b297_40_1.png)
 
-3. 制作语句 | 39
+## break 语句
 
-## break 语句 (Break statement)
+JavaScript 的 `break` 关键字用于提前终止循环的执行。
 
-JavaScript 的 break 关键字用于提前终止循环的执行。
+`break` 关键字位于包含循环应执行代码的语句块内部，并在前面有一个条件测试。
 
-break 关键字位于包含循环应执行代码的语句块内部，并在前面有一个条件测试。
+当满足测试条件时，`break` 语句立即终止循环，不再进行进一步的迭代。
 
-当满足测试条件时，break 语句立即终止循环，不再进行进一步的迭代。
+注意下方的 `alert()` 输出，计数器值仍然是三，因为最后一次迭代中的增加没有被应用。
 
-注意下方的 alert() 输出，计数器值仍然是三，因为最后一次迭代中的增加没有被应用。
+在以下示例中，当计数器值达到三时，条件测试将返回 `true`：
 
-在以下示例中，当计数器值达到三时，条件测试将返回 true：
-
-```
+```javascript
 var i = 0;
 // 循环直到计数器达到 6
-while(i < 6 )
-{
-  if( i == 3 ) break;
+while(i < 6) {
+  if(i == 3) break;
   i++;
 }
 // 显示最终的计数器值
@@ -1072,7 +989,7 @@ alert("BREAK\n\nLoop stopped at " + i);
 
 ![](img/d78298d3338ec680a024bbc83e78b297_41_0.png)
 
-break 关键字也用作 switch 语句的终止符。
+`break` 关键字也用作 `switch` 语句的终止符。
 
 | JavaScript 应用 |
 | :--- |
@@ -1080,21 +997,20 @@ break 关键字也用作 switch 语句的终止符。
 | Loop stopped at 3 |
 | [OK] |
 
-## continue 语句 (Continue statement)
+## continue 语句
 
-JavaScript 的 continue 关键字用于中断循环的当前迭代。
+JavaScript 的 `continue` 关键字用于中断循环的当前迭代。
 
-与 break 关键字一样，continue 关键字位于包含循环应执行代码的语句块内部，并在前面有一个条件测试。
+与 `break` 关键字一样，`continue` 关键字位于包含循环应执行代码的语句块内部，并在前面有一个条件测试。
 
-当满足测试条件时，continue 会立即停止循环的当前迭代，但在循环结束之前还会进行后续迭代。
+当满足测试条件时，`continue` 会立即停止循环的当前迭代，但在循环结束之前还会进行后续迭代。
 
 在下面的示例中，当计数器值达到 3 时满足测试条件，因此该迭代应用了字符串拼接，但循环将继续进行：
 
-```
+```javascript
 var i = 0, str = "";
 // 循环直到计数器达到 5
-while(i < 5)
-{
+while(i < 5) {
   if(i == 3) continue;
   str += i;
 }
@@ -1105,21 +1021,17 @@ alert("Loop stopped at " + i + "\nstr is " + str);
 
 ![](img/d78298d3338ec680a024bbc83e78b297_42_0.png)
 
-            
+## with 语句
 
-3. 制作语句 (Making statements)
-
-## 使用 with 语句 (Using with statements)
-
-with 关键字用于在测试 with 之前引用对象。
+`with` 关键字用于在测试 `with` 之前引用对象。
 
 ![](img/d78298d3338ec680a024bbc83e78b297_43_0.png)
 
-with 语句通常用于在不需要指定对象名称的情况下访问其属性。
+`with` 语句通常用于在不需要指定对象名称的情况下访问其属性。
 
-![](img/d78298d338ec680a024bbc83e78b297_43_1.png)
+![](img/d78298d3338ec680a024bbc83e78b297_43_1.png)
 
-## 数组 (Arrays)
+# 数组
 
 数组允许你存储多个值并在一个变量中引用它们。
 
@@ -1133,11 +1045,11 @@ with 语句通常用于在不需要指定对象名称的情况下访问其属性
 - 数组长度 | 51
 - 数组创建 | 52
 
-## 创建数组 (Creating arrays)
+## 创建数组
 
 使用 `Array` 关键字可以创建一个包含多个值的数组。
 
-```
+```javascript
 // 创建新数组
 var a = new Array();
 
@@ -1159,7 +1071,7 @@ var c = new Array("2003", "2004", "2005");
 alert(a[0] + b[1] + c[2]);
 ```
 
-## 数组元素 (Array elements)
+## 数组元素
 
 数组中的每个值都称为数组元素。
 
@@ -1167,7 +1079,7 @@ alert(a[0] + b[1] + c[2]);
 
 ![](img/d78298d3338ec680a024bbc83e78b297_46_0.png)
 
-这些属性中最实用的是 `length` ，它可以报告数组当前包含的元素数量。
+这些属性中最实用的是 `length`，它可以报告数组当前包含的元素数量。
 
 使用属性或方法的语法只需要在对象名称后加上点和名称。因此，`array.length` 引用数组的长度。
 
@@ -1191,10 +1103,6 @@ var arraysize = a.length;
 alert(a[0] + a[1] + "\n" + arraysize);
 ```
 
-
-
-
-
 ## 填充元素循环
 
 所有类型的循环都可以用于轻松地向数组填充大量数据值。这是数组的主要吸引力之一，只需极少的代码即可实现。
@@ -1210,10 +1118,9 @@ var str = "FILL ELEMENTS LOOP\n\n";
 var arr = new Array();
 
 // 填充八个数组元素
-for(var i = 0; i < 8; i ++)
-{
-  arr[ i ] = "Number is " + i + "\n";
-  str += arr[ i];
+for(var i = 0; i < 8; i++) {
+  arr[i] = "Number is " + i + "\n";
+  str += arr[i];
 }
 
 // 显示存储在每个数组元素中的值
@@ -1233,7 +1140,7 @@ alert(str);
 最后，通过 `alert()` 函数和 `array.concat()` 方法以拼接格式显示所有数组元素。
 
 ```javascript
-var a = new Array(1, 2, 3 );
+var a = new Array(1, 2, 3);
 
 // 将整数插入到下一个空元素
 a[a.length] = 4;                      // a.length 为 3
@@ -1246,7 +1153,7 @@ for(var i = 0; i < b.length; i++) {
 }
 
 // 显示所有元素值
-alert( a.concat());
+alert(a.concat());
 ```
 
 `array.concat()` 方法将显示数组中的所有元素，并用逗号分隔。
@@ -1293,13 +1200,13 @@ alert(a.join(" "));
 
 ```javascript
 // 创建图像 URL 的新数组
-var imgs = new Array("img1.gif","img2.gif","img3.gif");
+var imgs = new Array("img1.gif", "img2.gif", "img3.gif");
 
 // 创建控制变量
 var rev = false;
 
 // 当幻灯片显示最后一张图像时
-...反转顺序
+// 反转顺序
 rev = true;
 
 if(rev == true) {
@@ -1347,7 +1254,7 @@ alert(str);
 | Slice B: 2,3,4,5,6,7 |
 | Slice C: 4,5,6,7,8 |
 
-## 元素
+## 排序元素
 
 JavaScript `array.sort()` 方法允许字符串值按字母顺序排列。
 
@@ -1376,7 +1283,7 @@ strings.sort();
 
 // 用连字符分隔元素
 var str = "Integers array: " + integers.join(" - ");
-str += "\nats array: " + floats.join(" - ");
+str += "\nFloats array: " + floats.join(" - ");
 str += "\nStrings array: " + strings.join(" - ");
 
 // 显示所有三个排序后的数组
@@ -1395,7 +1302,7 @@ alert(str);
 
 Web 页中的翻滚图像使用 JavaScript 效果在用户将悬停在图像上时将原始图像替换为替换图像。为了让这种效果流畅，所需的替换图像必须加载到浏览器缓存中。
 
-实现这一点的方法是使用 JavaScript 预加载程序，通过创建以替换图像为源的 Image() 对象来强制浏览器下载图像。
+实现这一点的方法是使用 JavaScript 预加载程序，通过创建以替换图像为源的 `Image()` 对象来强制浏览器下载图像。
 
 ```javascript
 // 创建所有将出现在幻灯片中的图像 URL 数组
@@ -1412,11 +1319,7 @@ for(var i = 0; i < pics.length; i++) {
 }
 ```
 
-
-
-
-
-## 日期和时间
+# 日期和时间
 
 本章描述了在 JavaScript 中使用日期和时间信息的示例。介绍了 Date 对象和世界标准时钟（UTC），以及 JavaScript 定时器。还包含一个完整的 JavaScript 钟脚本示例。
 
@@ -1494,14 +1397,15 @@ var days = new Array("Sun", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat");
 
 ```javascript
 // 创建月份名称数组
-var months = new Array("Jan", "Feb", "Mar", "Apr", "May", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec");
+var months = new Array("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec");
 ```
 
 ```javascript
 // 创建一个新的 Date 对象
 var now = new Date();
 var yy = now.getFullYear(); // yy += 2000; // 为 Netscape 调整年份
-var mm = now.getMonth(); // 获取月份数字// 将数字转换为名称
+var mm = now.getMonth(); // 获取月份数字
+// 将数字转换为名称
 var dd = now.getDate(); // 获取月份中的几
 var dy = now.getDay(); // 获取一周中的几
 dy = days[dy]; // 将几几转换为名称
@@ -1511,7 +1415,7 @@ dy = days[dy]; // 将几几转换为名称
 
 ```javascript
 // 显示提取的星期和日期信息
-alert(" + dy + "/" + mm + "/" + dd + " " + yy + ");
+alert(dy + "/" + mm + "/" + dd + " " + yy);
 ```
 
 ![](img/d78298d3338ec680a024bbc83e78b297_56_3.png)
@@ -1524,7 +1428,7 @@ Date 对象具有特殊方法来访问其包含的信息。下面的示例从宿
 // 创建一个新的 Date 对象
 var now = new Date();
 
-//提取时间信息
+// 提取时间信息
 var hh = now.getHours();
 var mn = now.getMinutes();
 var ss = now.getSeconds();
@@ -1534,16 +1438,16 @@ var ms = now.getMilliseconds();
 var hi = "Good Morning";
 
 // 如果是午后的欢迎消息
-if( hh > 11 ) hi = "Good Afternoon";
+if(hh > 11) hi = "Good Afternoon";
 
 // 如果是下午 6 点后的欢迎消息
-if( hh > 17 ) hi = "Good Evening";
+if(hh > 17) hi = "Good Evening";
 
 // 显示欢迎消息和当前时间
 var tim = hi + "\n";
-tim += "Hours: " +hh + "\n";
-tim += "Minutes: " +mn + "\n";
-tim += "Seconds: " +ss + "."+ms;
+tim += "Hours: " + hh + "\n";
+tim += "Minutes: " + mn + "\n";
+tim += "Seconds: " + ss + "." + ms;
 alert(tim);
 ```
 
@@ -1573,7 +1477,7 @@ for(var i = 0; i < 250000; i++) {
 }
 ```
 
-![](img/d78298d3338ec680a024bbc83e78b297_58_0)
+![](img/d78298d3338ec680a024bbc83e78b297_58_0.png)
 
 获取循环结束后的差值：
 
@@ -1583,10 +1487,10 @@ var stop = new Date();
 var msec2 = stop.getTime();
 
 // 计算两个时间之间的秒数
-var diff = (msec2 - msec1 ) / 1000;
+var diff = (msec2 - msec1) / 1000;
 
 // 显示经过的时间
-alert("Time elapsed: " +diff + " seconds");
+alert("Time elapsed: " + diff + " seconds");
 ```
 
 ## 世界标准时钟
@@ -1614,17 +1518,17 @@ var ss = now.getSeconds();
 
 ```javascript
 // 确保分钟是两位
-if(mn <= 9) mn = "0"+mn;
+if(mn <= 9) mn = "0" + mn;
 ```
 
 ```javascript
 // 显示两种时间
-var wert = "Athens time: "+hh+": "+mn+": "+ss+"\n"
-var utc = "Universal time: "+utc_hh+": "+mn+": "+ss;
+var wert = "Athens time: " + hh + ": " + mn + ": " + ss + "\n";
+var utc = "Universal time: " + utc_hh + ": " + mn + ": " + ss;
 alert(wert + " " + utc);
 ```
 
-![](img/d78298d3338ec680a024bbc83e78b297_59_1)
+![](img/d78298d3338ec680a024bbc83e78b297_59_1.png)
 
 ```
 [JavaScript 应用]
@@ -1651,15 +1555,15 @@ var msg;
 
 // 分配相应的消息
 switch(offset) {
-  case 240 : msg = "East Coast"; break;
-  case 300 : msg = "Central"; break;
-  case 360 : msg = "Mountain"; break;
-  case 420 : msg = "Pacific"; break;
-  default : msg = "all";
+  case 240: msg = "East Coast"; break;
+  case 300: msg = "Central"; break;
+  case 360: msg = "Mountain"; break;
+  case 420: msg = "Pacific"; break;
+  default: msg = "all";
 }
 
 // 显示消息
-alert("Welcome to " +msg+" visitors.");
+alert("Welcome to " + msg + " visitors.");
 ```
 
 ![](img/d78298d3338ec680a024bbc83e78b297_60_0.png)
@@ -1669,10 +1573,6 @@ alert("Welcome to " +msg+" visitors.");
 ![](img/d78298d3338ec680a024bbc83e78b297_60_1.png)
 
 某些 Netscape 浏览器的 Bug 无法报告正确的偏移量。
-
-
-
-
 
 ## 设置日期和时间
 
@@ -1700,12 +1600,8 @@ now.setFullYear(2005);
 ![](img/d78298d3338ec680a024bbc83e78b297_61_0.png)
 
 > 小贴士
-> 此处使用的
-> toString()
-> 方法返回 JavaScript
-> 对象的字符串值
-> 并具有
-> 许多用途
+>
+> 此处使用的 `toString()` 方法返回 JavaScript 对象的字符串值并具有许多用途。
 
 ```javascript
 // 存储修改后的日期和时间信息
@@ -1736,7 +1632,7 @@ JavaScript 提供了 `Date.toGMTString()` 方法，它既可以将信息转换�
 var now = new Date();
 
 // 存储本地时间
-var jpn = "Tokyo Time:\n" +now.toString() + "\n\n"
+var jpn = "Tokyo Time:\n" + now.toString() + "\n\n";
 
 // 存储 GMT 时间
 var gmt = "UTC Time:\n" + now.toGMTString();
@@ -1747,8 +1643,6 @@ alert(jpn + gmt);
 
 ![](img/d78298d3338ec680a024bbc83e78b297_62_1.png)
 ![](img/d78298d3338ec680a024bbc83e78b297_62_2.png)
-
-5. 日期和时间 | 61
 
 ## 使用系统时钟
 
@@ -1771,7 +1665,7 @@ function timeout() {
   // 递增计数
   num++;
   // 显示消息
-  alert("This is 10-Second Message No: " + num );
+  alert("This is 10-Second Message No: " + num);
   // 在再次调用此函数之前设置间隔
   window.setTimeout("timeout()", 10000);
 }
@@ -1781,7 +1675,9 @@ timeout();
 ```
 
 [JavaScript 应用]
+
 这是第 10 秒的消息编号：3
+
 [确定]
 
 ## 取消计时器
@@ -1802,9 +1698,8 @@ function timeout() {
   num++;
   if (num == 3) {
     alert("OK - I told you twice");
-    window.clearTimeout( tim); // 取消计时器
-  }
-  else {
+    window.clearTimeout(tim); // 取消计时器
+  } else {
     alert("This is 10-Second Message No: " + num);
     tim = window.setTimeout("timeout()", 10000);
   }
@@ -1816,8 +1711,6 @@ timeout();
 
 ![](img/d78298d3338ec680a024bbc83e78b297_64_1.png)
 ![](img/d78298d3338ec680a024bbc83e78b297_64_2.png)
-
-5. 日期和时间 | 63
 
 ## JavaScript 钟
 
@@ -1844,16 +1737,18 @@ function tick() {
 ```
 
 ![](img/d78298d3338ec680a024bbc83e78b297_65_0.png)
-![](img/d78298d3338ec680a024bbc83e78b297_65_1.png) 钟需要通过 HTML `<body>` 标签的 `onload` 属性调用 `tick()` 函数来启动——这确保了表单通过 JavaScript 将时间赋值给其字段。
+![](img/d78298d3338ec680a024bbc83e78b297_65_1.png)
 
+> 钟需要通过 HTML `<body>` 标签的 `onload` 属性调用 `tick()` 函数来启动——这确保了表单通过 JavaScript 将时间赋值给其字段。
+
+```javascript
 // 设置间隔为一秒
 window.setTimeout("tick()", 1000);
-
 ```
 
 ![](img/d78298d3338ec680a024bbc83e78b297_65_2.png)
 
-## 数学运算
+# 数学运算
 
 本章介绍 `Math` 对象，并描述了用于执行数学计算的常量值和方法。随机数生成主题通过实际示例进行了说明。
 
@@ -1871,22 +1766,22 @@ window.setTimeout("tick()", 1000);
 
 ## Math 常量
 
-内置的 JavaScript Math 对象包含了标准常量值以便引用。
+内置的 JavaScript `Math` 对象包含了标准常量值以便引用。
 
 大写字母始终引用表中列出的常量值：
 
 | 常量 | 说明 |
 | :--- | :--- |
-| Math.E | 自然对数 e，值约为 2.71828 |
-| Math.LN2 | 2 的自然对数，约为 0.6931471805599458263 |
-| Math.LN10 | 10 的自然对数，约为 2.3025850299405911 |
-| Math.LOG2E | e 的底数为 2 的对数，约为 1.44269504088963387 |
-| Math.LOG10E | e 的底数为 10 的对数，约为 0.4342944819032518677 |
-| Math.PI | 常量 pi，约为 3.14159265358979 |
-| Math.SQRT1_2 | 2 的平方根的倒数，约为 0.707106781186542 |
-| Math.SQRT2 | 2 的平方根，值约为 1.41421356237095 |
+| `Math.E` | 自然对数 e，值约为 2.71828 |
+| `Math.LN2` | 2 的自然对数，约为 0.6931471805599458263 |
+| `Math.LN10` | 10 的自然对数，约为 2.3025850299405911 |
+| `Math.LOG2E` | e 的底数为 2 的对数，约为 1.44269504088963387 |
+| `Math.LOG10E` | e 的底数为 10 的对数，约为 0.4342944819032518677 |
+| `Math.PI` | 常量 pi，约为 3.14159265358979 |
+| `Math.SQRT1_2` | 2 的平方根的倒数，约为 0.707106781186542 |
+| `Math.SQRT2` | 2 的平方根，值约为 1.41421356237095 |
 
-Math 常可以在脚本中的任何地方使用。
+`Math` 常量可以在脚本中的任何地方使用。
 
 大部分常量用于具有特定数学目的的 JavaScript 应用，但为了完整性，上面提供了完整列表。
 
@@ -1902,22 +1797,34 @@ var pos = 0;
 function spin() {
   // 获取 div 的样式对象
   var obj_style = document.getElementById("d1").style;
+
   // 存储半径和 x,y 偏移
   var radius = 40;
   var x_offset = 50;
   var y_offset = 50;
+
   // 增加新位置
   pos += 10;
+
   // 使用 Math 计算新的 x,y 坐标
-  x = radius * Math.cos(pos * Math.PI/180 );
-  y = radius * Math.sin(pos * Math.PI/180 );
-  // 加上 x,y 偏移
-  x += x_offset;
-  // 将 div 移动到新坐标
-  obj_style.left = x + "px";
-  obj_style.top = y + "px";
-  // 设置调用此函数的间隔
-  setTimeout("spin()", 100);
+```
+
+
+
+```javascript
+x = radius * Math.cos(pos * Math.PI / 180);
+
+y = radius * Math.sin(pos * Math.PI / 180);
+
+// 加上 x,y 偏移
+x += x_offset;
+
+// 将 div 移动到新坐标
+obj_style.left = x + "px";
+obj_style.top = y + "px";
+
+// 设置调用此函数的间隔
+setTimeout("spin()", 100);
 }
 ```
 
@@ -1926,38 +1833,34 @@ function spin() {
 ![](img/d78298d3338ec680a024bbc83e78b297_68_2.png)
 ![](img/d78298d3338ec680a024bbc83e78b297_68_3.png)
 
-
-
-
-
 ## 数学方法
 
 JavaScript `Math` 对象有许多方法 – 它们都列在下表中：
 
 | 方法 | 描述 |
 | :--- | :--- |
-| Math.abs() | 返回绝对值 |
-| Math.acos() | 返回反余弦 |
-| Math.asin() | 返回反正弦 |
-| Math.atan() | 返回反正切 |
-| Math.atan2() | 返回从 X 轴到某点的角度 |
-| Math.ceil() | 向上取整 |
-| Math.cos() | 返回余弦值 |
-| Math.exp() | 返回常数 e 的幂 |
-| Math.floor() | 向下取整 |
-| Math.log() | 返回自然对数 |
-| Math.max() | 返回两个数中较大的一个 |
-| Math.min() | 返回两个数中较小的一个 |
-| Math.pow() | 返回幂的值 |
-| Math.random() | 返回一个随机数 |
-| Math.round() | 四舍五入到最近的整数 |
-| Math.sin() | 返回正弦值 |
-| Math.sqrt() | 返回平方根 |
-| Math.tan() | 返回正切值 |
+| `Math.abs()` | 返回绝对值 |
+| `Math.acos()` | 返回反余弦 |
+| `Math.asin()` | 返回反正弦 |
+| `Math.atan()` | 返回反正切 |
+| `Math.atan2()` | 返回从 X 轴到某点的角度 |
+| `Math.ceil()` | 向上取整 |
+| `Math.cos()` | 返回余弦值 |
+| `Math.exp()` | 返回常数 e 的幂 |
+| `Math.floor()` | 向下取整 |
+| `Math.log()` | 返回自然对数 |
+| `Math.max()` | 返回两个数中较大的一个 |
+| `Math.min()` | 返回两个数中较小的一个 |
+| `Math.pow()` | 返回幂的值 |
+| `Math.random()` | 返回一个随机数 |
+| `Math.round()` | 四舍五入到最近的整数 |
+| `Math.sin()` | 返回正弦值 |
+| `Math.sqrt()` | 返回平方根 |
+| `Math.tan()` | 返回正切值 |
 
 > **热点提示** `Math.random()` 在网页中有许多用途，用于提供多样化的页面内容。
 
-上述列表中常用的 Math 方法将在接后的页面中进行详细介绍。
+上述列表中常用的 Math 方法将在接下来的页面中进行详细介绍。
 
 ## 浮点数舍入
 
@@ -1970,18 +1873,19 @@ JavaScript 中的 `Math.round()` 方法既可以将浮点数四舍五入到最�
 ```javascript
 var a = 7.5;
 a = Math.round(a);
-a = "Rounded Positive : "+a+"\n";
+a = "Rounded Positive : " + a + "\n";
 
 var b = -7.5;
 b = Math.round(b);
-b = "Rounded Negative : "+b+"\n";
+b = "Rounded Negative : " + b + "\n";
 
 var c = 3.7646368467915;
 c = c * 100; // 保留两位小数
 c = Math.round(c); // 执行舍入
 c /= 100; // 恢复到两位小数
-c = "Commuted Long Float : "+c+";";
-alert(a+b+c);
+c = "Commuted Long Float : " + c + ";";
+
+alert(a + b + c);
 ```
 
 ## 强制处理浮点数
@@ -1996,21 +1900,24 @@ JavaScript 提供了 `Math.ceil()` 方法来强制向上取整到最近的整数
 var a = 7.5;
 var a1 = "a1 " + Math.ceil(a);
 var a2 = "a2 " + Math.floor(a);
+
 var b = -7.5;
 var b1 = "b1 " + Math.ceil(b);
 var b2 = "b2 " + Math.floor(b);
+
 var rup = "ROUNDING UP\n" + a1 + "\n" + b1 + "\n";
-var rdn = "ROUNDING DOWN\n" + a2 + "\n" + b2+";";
-alert( rup + rdn );
+var rdn = "ROUNDING DOWN\n" + a2 + "\n" + b2 + ";";
+
+alert(rup + rdn);
 ```
 
-负值的向上取入会返回向零方向靠近的最近整数。
+负值的向上取整会返回向零方向靠近的最近整数。
 
 ## 比较数字
 
 `Math` 对象有两个方法允许比较两个数字，并返回其中较大或较小的值。
 
-`Math.max()` 接受两个待比较的值作为参数，并将将返回这两个值中较大的一个。
+`Math.max()` 接受两个待比较的值作为参数，并将返回这两个值中较大的一个。
 
 `Math.min()` 方法的工作方式完全相同，返回两个值中较小的一个。
 
@@ -2019,11 +1926,13 @@ alert( rup + rdn );
 `Math.pow()` 方法需要两个参数来指定该数字的幂次：
 
 ```javascript
-var sq = Math.pow( 5, 2 );
-var cb = Math.pow( 3, 3 );
-var hi = "Round up : " + Math.max( sq, cb );
-var lo = "Round Down : " + Math.min(sq, cb );
-var ng = "Round Negative Up : " + Math.max( -5, -4 );
+var sq = Math.pow(5, 2);
+var cb = Math.pow(3, 3);
+
+var hi = "Round up : " + Math.max(sq, cb);
+var lo = "Round Down : " + Math.min(sq, cb);
+var ng = "Round Negative Up : " + Math.max(-5, -4);
+
 alert("MAX\n" + hi + "\n" + lo + "\n" + ng);
 ```
 
@@ -2036,8 +1945,10 @@ alert("MAX\n" + hi + "\n" + lo + "\n" + ng);
 ```javascript
 // 获取一个 0.0 到 1.0 之间的随机数
 var rand1 = Math.random();
+
 // 乘以 10 使其处于 0.0 到 10 之间
 var rand2 = rand1 * 10;
+
 // 向上取整使其变为 1 到 10 之间的整数
 var rand3 = Math.ceil(rand2);
 
@@ -2062,7 +1973,7 @@ var i, rand, temp, str;
 var nums = new Array(50);
 
 // 用 1 到 49 的数字填充 1 到 49 的元素
-for(i = 1; i < 50; i++) {
+for (i = 1; i < 50; i++) {
   rand = Math.ceil(Math.random() * 49);
   temp = nums[i];
   nums[rand] = temp;
@@ -2071,9 +1982,9 @@ for(i = 1; i < 50; i++) {
 
 // 将前六个数字添加到字符串
 str = "Your lucky numbers are:\n\n";
-for(i = 1; i < 7; i++) {
+for (i = 1; i < 7; i++) {
   str += nums[i];
-  if(i != 6) str += " - ";
+  if (i != 6) str += " - ";
 }
 
 // 显示字符串
@@ -2113,7 +2024,7 @@ document.getElementById("pic").src = pix[rand];
 
 本章解释了字符串特性，并通过示例演示了如何使用 JavaScript 代码处理文本字符串。
 
-## 
+## 目录
 
 - 字符串长度 | 76
 - 字符串中的字符 | 77
@@ -2126,10 +2037,6 @@ document.getElementById("pic").src = pix[rand];
 - 从字符串提取数字 | 84
 - 字符串中的变量 | 85
 - 字符串编码 | 86
-
-
-
-
 
 # 字符串长度
 
@@ -2173,11 +2080,10 @@ alert("String length is " + a.length);
 
 ```javascript
 // 创建并初始化两个字符串变量
-var str = "linger in", newstr = ""
-
+var str = "linger in", newstr = "";
 // 获取字符串变量的第一个和最后一个字母
 var a = "First letter : " + str.charAt(0);
-var z = "Final letter : " + str.charAt(str.length - 1 );
+var z = "Final letter : " + str.charAt(str.length - 1);
 ```
 
 ![](img/d78298d3338ec680a024bbc83e78b297_78_0.png)
@@ -2185,9 +2091,9 @@ var z = "Final letter : " + str.charAt(str.length - 1 );
 ```javascript
 // 遍历每个字符并复制到 newstr
 // 除非它是 i - 0；否则复制到 newstr
-for(var i = 0; i < str.length; i++) {
+for (var i = 0; i < str.length; i++) {
     if (str.charAt(i) != "i") newstr += str.charAt(i);
-    else newstr += ""
+    else newstr += "";
 }
 ```
 
@@ -2195,7 +2101,7 @@ for(var i = 0; i < str.length; i++) {
 // 显示 newstr 以及字符串的第一个和最后一个字母
 var result = "STRING\n\n";
 result += "New string : " + newstr + "\n";
-alert(result + a + "\n" + z );
+alert(result + a + "\n" + z);
 ```
 
 ![](img/d78298d3338ec680a024bbc83e78b297_78_1.png)
@@ -2217,26 +2123,21 @@ Final letter : n
 ```javascript
 // 创建并初始化一个整数变量
 var num = 99;
-
 // 创建并初始化一个浮点数变量
 var flt = 98.6;
-
 // 创建并初始化一个布尔变量
 var bool = true;
-
 // 创建并初始化几个字符串变量
 var str1 = "Although ";
-var str2 = " F is cited as \"body temperature\";
+var str2 = " F is cited as \"body temperature\"";
 var str3 = "nthe";
 var str4 = " range is from about 97 to ";
 var str5 = "F.";
-
 // 显示拼接后的字符串
-alert(str1 + flt + str3 + bool + str4 + num + str5 );
+alert(str1 + flt + str3 + bool + str4 + num + str5);
 ```
 
 ![](img/d78298d3338ec680a024bbc83e78b297_79_0.png)
-
 ![](img/d78298d3338ec680a024bbc83e78b297_79_1.png)
 
 | JavaScript 应用 |
@@ -2279,7 +2180,7 @@ res += "\nHash is " + hsh;
 alert(res);
 ```
 
-![](img/d78298d3338ec680a024bbc83e78b297_80_2)
+![](img/d78298d3338ec680a024bbc83e78b297_80_2.png)
 
 ## 分隔单词
 
@@ -2290,16 +2191,12 @@ alert(res);
 ```javascript
 // 创建并初始化字符串
 var str = "JavaScript in easy steps";
-
 // 用空格将字符串拆分为数组
 var ss = str.split(" ");
-
 // 创建并初始化另一个字符串
 var bk = "JavaScript in easy steps|Mike";
-
 // 用管道将单词拆分为数组
 var bks = bk.split("|");
-
 // 显示一些拆分元素
 var res = "Topic : " + ss[0];
 res += "\nTitle : " + bks[0];
@@ -2312,8 +2209,7 @@ alert(res);
 数据通常以逗号分隔的字符串形式存储
 
 ![](img/d78298d3338ec680a024bbc83e78b297_81_1.png)
-
-![](img/d78298d3338ec680a024bbc83e78b297_81_2)
+![](img/d78298d3338ec680a024bbc83e78b297_81_2.png)
 
 ## 子字符串
 
@@ -2329,9 +2225,9 @@ alert(res);
 // 创建并初始化字符串变量
 var str = "JavaScript in easy steps";
 // 使用 substring 方法获取两个子字符串
-var sub1 = str.substring(14,19) + str.substring(0,11);
+var sub1 = str.substring(14, 19) + str.substring(0, 11);
 // 使用 substr 方法获取两个子字符串
-var sub2 = str.substr(14,5) + str.substr(0,10);
+var sub2 = str.substr(14, 5) + str.substr(0, 10);
 // 显示所有子字符串
 var res = "Substring method : " + sub1;
 res += "\nSubstr method : " + sub2;
@@ -2385,10 +2281,6 @@ alert(res);
 
 ![](img/d78298d3338ec680a024bbc83e78b297_83_1.png)
 
-
-
-
-
 ## 字符大小写转换
 
 可以使用 `string.toUpperCase()` 或 `string.toLowerCase()` 方法更改字符串字符的大小写，以强制所有字符转换为统一的大小写。
@@ -2409,9 +2301,8 @@ alert(res);
 function check_input() {
   // 从 id 为 f 的表单获取用户输入
   var entry = document.forms.f.textfield.value;
-
   // 比较输入并显示适当的消息
-  if(entry.toLowerCase() == "castle") alert("Accepted");
+  if (entry.toLowerCase() == "castle") alert("Accepted");
   else alert("Refused");
 }
 ```
@@ -2444,20 +2335,16 @@ function check_input() {
 ```javascript
 // 创建一个数字开头的字符串
 var str = "66.6% PASS RATE";
-
 // 提取初始整数值
 var res = "Integer: " + parseInt(str);
-
 // 提取初始浮点值
 res += "\nFloat: " + parseFloat(str);
-
 // 创建一个字母开头的字符串
 var badstr = "PASS RATE 66.6%";
-
 // 尝试提取初始整数值
 res += "\nNon-numeric : " + parseInt(badstr);
 res += "\nFound : ";
-res += isNaN(badstr) ? "Character": "Number"
+res += isNaN(badstr) ? "Character" : "Number";
 alert(res);
 ```
 
@@ -2466,7 +2353,6 @@ alert(res);
 `NaN` 值无法用 `==` 运算符进行测试。
 
 ![](img/d78298d3338ec680a024bbc83e78b297_85_1.png)
-
 ![](img/d78298d3338ec680a024bbc83e78b297_85_2.png)
 
 ## 字符串中的变量
@@ -2479,7 +2365,7 @@ JavaScript 的 `eval()` 函数接受一个包含 JavaScript 代码的字符串�
 
 在下面的示例中，脚本将一个字符串值赋值并显示在 id 为 `f` 的表单文本输入框中。HTML `<input>` 元素被命名为 `textField`。
 
-<script> 包含此 JavaScript 的 script 元素必须出现在 HTML 文档中表单元素之后 - 这样文本字段在脚本对其进行赋值之前就会被创建。
+包含此 JavaScript 的 `<script>` 元素必须出现在 HTML 文档中表单元素之后 - 这样文本字段在脚本对其进行赋值之前就会被创建。
 
 文本框和显示字符串存储在由 `eval()` 函数求值的变量中。
 
@@ -2487,12 +2373,11 @@ JavaScript 的 `eval()` 函数接受一个包含 JavaScript 代码的字符串�
 
 ```javascript
 // 存储输入名称
-var inputname = "textField"
+var inputname = "textField";
 // 存储要赋值的字符串
-var inputtext = "JavaScript Text"
-
+var inputtext = "JavaScript Text";
 // 求值赋值表达式
-eval("document.forms.f."+inputname+".value="+inputtext);
+eval("document.forms.f." + inputname + ".value=" + inputtext);
 ```
 
 ![](img/d78298d3338ec680a024bbc83e78b297_86_1.png)
@@ -2520,9 +2405,8 @@ document.forms.f.textField.value = "JavaScript Text";
 ```javascript
 // 创建并初始化三个字符串
 var str = "Code", enc = "", unc = "";
-
 // 获取 Unicode 数字，逗号分隔
-for(var i = 0; i < str.length; i++) {
+for (var i = 0; i < str.length; i++) {
   enc += str.charCodeAt(i) + ",";
 }
 ```
@@ -2536,14 +2420,14 @@ var ss = enc.split(",");
 
 ```javascript
 // 将 Unicode 值转换回字符
-for(var i = 0; i < ss.length; i++) {
+for (var i = 0; i < ss.length; i++) {
   unc += String.fromCharCode(ss[i]);
 }
 ```
 
 ![](img/d78298d3338ec680a024bbc83e78b297_87_1.png)
 
-注意 `fromCharCode()` 是 String 的方法。
+注意 `fromCharCode()` 是 `String` 的方法。
 
 ```javascript
 alert("Encoded: " + enc + "\nDecoded: " + unc);
@@ -2565,7 +2449,7 @@ alert("Encoded: " + enc + "\nDecoded: " + unc);
 
 ## 对象的构造函数
 
- 对象的地址使用对象名后跟一个点来访问。之前的示例通过 `new` 使用了预定义的属性。
+对象的地址使用对象名后跟一个点来访问。之前的示例通过 `new` 使用了预定义的属性。
 
 ![](img/d78298d3338ec680a024bbc83e78b297_89_0.png)
 
@@ -2578,16 +2462,12 @@ alert("Encoded: " + enc + "\nDecoded: " + unc);
 ```javascript
 // 创建一个新对象
 var car = new Object();
-
 // 创建并初始化品牌
 car.maker = "Porsche";
-
 // 创建并初始化模型
 car.model = "Boxster";
-
 // 创建并初始化颜色
 car.color = "Red";
-
 // 显示 car 的属性值
 alert(car.color + " " + car.maker + " " + car.model);
 ```
@@ -2632,19 +2512,15 @@ alert(car.marker + " " + car.model.badge + " " + car.model.type);
 
 ![](img/d78298d3338ec680a024bbc83e78b297_90_2.png)
 
-
-
-
-
 # DOM 层级结构
 
 浏览器的文档对象模型（DOM）是 Web 浏览器中的一组对象，可以通过 JavaScript 进行访问，以影响 HTML 文档的性能。
 
 ![](img/d78298d3338ec680a024bbc83e78b297_91_0.png)
 
-这些对象遵循严格的层级结构，其中 window 对象处于顶层。由于 window 是顶层“根”对象，在地址语法中可以省略它。例如，`window.document.bgColor` 属性（它存储窗口背景颜色的值）可以直接通过 `document.bgColor` 访问。
+这些对象遵循严格的层级结构，其中 `window` 对象处于顶层。由于 `window` 是顶层“根”对象，在地址语法中可以省略它。例如，`window.document.bgColor` 属性（它存储窗口背景颜色的值）可以直接通过 `document.bgColor` 访问。
 
-一些 DOM 对象具有包含该 Web 页面元素数组的属性。例如 `document.images[]`，`images[]` 数组是 document 对象的属性，将存储该 Web 页面包含的每个图像的 URL。HTML 代码中第一张图片的 URL 存储在数组 `document.images[0]` 中，后续图片的 URL 则存储在递增的数组索引中。
+一些 DOM 对象具有包含该 Web 页面元素数组的属性。例如 `document.images[]`，`images[]` 数组是 `document` 对象的属性，将存储该 Web 页面包含的每个图像的 URL。HTML 代码中第一张图片的 URL 存储在数组 `document.images[0]` 中，后续图片的 URL 则存储在递增的数组索引中。
 
 下方示例中的 `set_bg()` 函数是从 HTML `<body>` 标签的 `onload` 属性调用的，用于在文档加载后为 `document.bgColor` 赋值。这会将文档的背景颜色设置为指定的值。
 
@@ -2665,13 +2541,13 @@ function set_bg() {
 
 ```javascript
 // show all window properties
-for(propertyName in window) 
-document.write(propertyName + " ", " ");
+for (propertyName in window)
+  document.write(propertyName + " ", " ");
 ```
 
 ![](img/d78298d3338ec680a024bbc83e78b297_92_0.png)
 
-此脚本可以显示更多的 DOM 对象属性 - 将 window 替换为查看所有 document 属性。
+此脚本可以显示更多的 DOM 对象属性 - 将 `window` 替换为查看所有 `document` 属性。
 
 ![](img/d78298d3338ec680a024bbc83e78b297_92_1.png)
 
@@ -2682,7 +2558,7 @@ document.write(propertyName + " ", " ");
 | 完成 | 本地域网 | | | | | |
 
 | Window 属性 - Netscape | | | | | | | | | |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | 文件 | 编辑 | 查看 | 查找 | 书签 | 工具 | 窗口 | 帮助 | |
 | navigator, document, window, parent, top, scrollbars, name, scrollX, scrollTop, scrollBy, getSelection, scrollLines, scrollPages, sizeToContent, dump, setTimeout, setInterval, clearTimeout, setInterval, setResizable, captureEvents, releaseEvents, routeEvent, enableExternalCapture, disableEnableCapture, prompt, open, openDialog, frames, find, self, screen, history, content, sidebar, menu, toolbar, locationbar, personalbar, statusbar, directories, closed, crypto, pkcs11, counters, opener, status, defaultStatus, location, innerWidth, outerWidth, outerHeight, screenX, pageOffset, pageOffsetY, length, fullScreen, alert, confirm, focus, blur, forward, home, stop, print, moveTo, moveTo, resizeTo, resizeBy, scroll, updateCommands, escape, unescape, atob, btoa, addEventListener, removeEventListener, dispatchEvent, getComputedStyle | | | | | | | | |
 | Document: 完成 (0.31 秒) | | | | | | | | |
@@ -2695,23 +2571,19 @@ document.write(propertyName + " ", " ");
 
 除了发行号外，`navigator.userAgent` 属性还包含其他细节，例如主机平台类型。
 
-在下面的示例中，`navigator-userAgent` 属性显示浏览器为 Internet Explorer 6.0 (MSIE 6.0) 和 Netscape 7.0，运行在 Windows XP 平台 (NT5.1) 上：
+在下面的示例中，`navigator.userAgent` 属性显示浏览器为 Internet Explorer 6.0 (MSIE 6.0) 和 Netscape 7.0，运行在 Windows XP 平台 (NT5.1) 上：
 
 ```javascript
 // get the browser name
 var browser = navigator.appName;
-
 // get the browser description
 var description = navigator.userAgent;
-
 // display the browser name and version
-alert( browser + "\n\n" + description );
+alert(browser + "\n\n" + description);
 ```
 
 ![](img/d78298d3338ec680a024bbc83e78b297_93_0.png)
-
 ![](img/d78298d3338ec680a024bbc83e78b297_93_1.png)
-
 ![](img/d78298d3338ec680a024bbc83e78b297_93_2.png)
 
 ## 浏览器兼容性
@@ -2728,11 +2600,9 @@ alert( browser + "\n\n" + description );
 
 ```javascript
 // cross-browser DOM test
-if(document.getElementById) alert("W3C DOM");
-else
-if (document.all) alert("MSIE 4 DOM");
-else
-if (document.layers) alert("NN 4 DOM");
+if (document.getElementById) alert("W3C DOM");
+else if (document.all) alert("MSIE 4 DOM");
+else if (document.layers) alert("NN 4 DOM");
 else alert("This is a really old browser");
 ```
 dom-test.js
@@ -2741,7 +2611,7 @@ dom-test.js
 
 ## 平台检查
 
-由于缺少某些支持，操作系统 影响 ActiveX 控制是创建功能的一种方式。例如，在 Linux 平台上运行的 Web 浏览器不支持 ActiveX 控制。
+由于缺少某些支持，操作系统影响 ActiveX 控制是创建功能的一种方式。例如，在 Linux 平台上运行的 Web 浏览器不支持 ActiveX 控制。
 
 特定的脚本实现方式与浏览器特定的脚本类似，使用 `navigator.platform`。该属性包含一个表示用户操作系统的短字符串，可以读取以适应任何平台。下面的示例输出了 `navigator.platform` 的值：
 
@@ -2758,7 +2628,7 @@ document.write("Operating system is " + os);
 ![](img/d78298d3338ec680a024bbc83e78b297_95_1.png)
 
 | 主机平台 - Mozilla | | | | | | |
-| :--- | :--- | :--- | :--- | :--- | :--- |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | 文件 | 编辑 | 查看 | 搜索 | 任务 | 帮助 |
 | 操作系统是 Linux i86 | | | | | |
 | 文档: 完成 (0.632 秒) | | | | | |
@@ -2766,7 +2636,7 @@ document.write("Operating system is " + os);
 ![](img/d78298d3338ec680a024bbc83e78b297_95_2.png)
 
 | 主机平台 | | | | | | |
-| :--- | :--- | :--- | :--- | :--- | :--- |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | 文件 | 编辑 | 查看 | 收藏 | 工具 | 帮助 |
 | 操作系统是 Win32 | | | | | |
 | 完成 | 本地域网 | | | | |
@@ -2783,9 +2653,9 @@ document.write("Operating system is " + os);
 
 ```javascript
 // for Netscape/Mozilla browsers only
-if(navigator.appName == "Netscape") {
+if (navigator.appName == "Netscape") {
   // for the first plugin element
-  with(navigator.plugins[0]) {
+  with (navigator.plugins[0]) {
     // display its name and description
     document.write("<html>" + name + "</html>");
     document.write("<p>" + description + "</p>");
@@ -2794,9 +2664,7 @@ if(navigator.appName == "Netscape") {
 ```
 
 ![](img/d78298d3338ec680a024bbc83e78b297_96_0.png)
-
 ![](img/d78298d3338ec680a024bbc83e78b297_96_1.png)
-
 ![](img/d78298d3338ec680a024bbc83e78b297_96_2.png)
 
 `navigator.plugins` 在 Internet Explorer 中存在，但尚未实现。
@@ -2810,14 +2678,10 @@ Mozilla 浏览器以 Netscape 名称标识。
 ![](img/d78298d3338ec680a024bbc83e78b297_96_3.png)
 
 | 列出插件 - Mozilla | | | | | | | | |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | 文件 | 编辑 | 查看 | 查找 | 书签 | 工具 | 窗口 | 帮助 |
 | **QuickTime Plug-in in 6.0.02** | | | | | | | |
 | QuickTime 插件允许你在 Web 页面中查看多种多媒体内容。欲了解更多信息，请访问 QuickTime 网站。 | | | | | | | |
-
-
-
-
 
 ## Java 检测
 
@@ -2827,7 +2691,7 @@ Mozilla 浏览器以 Netscape 名称标识。
 
 ```javascript
 // 测试浏览器中是否启用了 Java
-if ( navigator.javaEnabled()) {
+if (navigator.javaEnabled()) {
     window.location = "javapage.html"; // 如果为真跳转此处
 } else {
     window.location = "nojavapage.html"; // 否则跳转此处
@@ -2838,7 +2702,7 @@ if ( navigator.javaEnabled()) {
 
 ## Window 属性
 
-本章演示了 window 对象的属性和方法。文中介绍了如何创建弹出窗口，并讨论了框架页的使用，同时给出了如何访问其他框架中对象的示例。
+本章演示了 `window` 对象的属性和方法。文中介绍了如何创建弹出窗口，并讨论了框架页的使用，同时给出了如何访问其他框架中对象的示例。
 
 ## 目录
 
@@ -2860,7 +2724,7 @@ if ( navigator.javaEnabled()) {
 
 ## Confirm
 
-在书中示例中广泛使用的 `alert()` 函数实际上是顶层 window 对象的一个方法，因此可以正确地调用为 `window.alert()`。
+在书中示例中广泛使用的 `alert()` 函数实际上是顶层 `window` 对象的一个方法，因此可以正确地调用为 `window.alert()`。
 
 `window.confirm()` 方法是另外两个窗口方法中的第一个，调用时会产生对话框。
 
@@ -2882,13 +2746,13 @@ var msg;
 
 ```javascript
 // 分配相应的回复消息
-if(ask) msg = "点击了 OK 按钮";
+if (ask) msg = "点击了 OK 按钮";
 else msg = "点击了取消 按钮";
 ```
 
 ```javascript
 // 显示回复消息
-document.write(msg );
+document.write(msg);
 ```
 
 ## Prompt
@@ -2902,12 +2766,10 @@ document.write(msg );
 ```javascript
 // 请求用户输入其姓名
 var user = prompt("请输入您的姓名...", "");
-
 // 如果字段留空，则提供默认名称
-if(user == null || user == "") user = "visitor";
-
+if (user == null || user == "") user = "visitor";
 // 显示带有用户名的消息
-document.write("你好 "+user+",,欢迎来到本页面");
+document.write("你好 " + user + ",,欢迎来到本页面");
 ```
 
 ## Location
@@ -2928,7 +2790,6 @@ var prot = "Protocol: " + location.protocol;
 var host = "Host: " + location.host;
 var path = "Path: " + location.pathname;
 var hash = "Hash: " + location.hash;
-
 // 显示变量值
 alert(locn + "\n" + prot + "\n" + host + "\n" + path + "\n" + hash);
 ```
@@ -2977,7 +2838,6 @@ function go_back() {
 function goodbye() {
   alert("感谢-欢迎光临");
 }
-
 // 指定 onunload 事件处理器
 window.onunload = goodbye;
 ```
@@ -3004,10 +2864,6 @@ window.onunload = goodbye;
 超文本链接</a></a></p>
 ```
 
-
-
-
-
 # 弹出窗口
 
 JavaScript 提供的实用浏览器功能之一是打开第二个浏览器窗口来显示另一个 URL 网页。
@@ -3019,12 +2875,11 @@ JavaScript 提供的实用浏览器功能之一是打开第二个浏览器窗口
 下面的示例在第一个窗口完全加载后打开一个二级弹出窗口：
 
 ```javascript
- // 一个打开弹出窗口的函数
+// 一个打开弹出窗口的函数
 function popup() {
   window.open("popup-2.html", "",
   "top=40,left=40,width=250,height=100");
 }
-
 // 设置 onload 对象
 window.onload = popup;
 ```
@@ -3080,17 +2935,14 @@ function popup1() {
 ```javascript
 // 创建一个变量来存储窗口对象
 var popwindow;
-
 // 一个打开弹出窗口的函数
 function popup() {
   popwindow = window.open("popup-2.html", "", "top=40,left=40,width=250,height=100,menubar,status");
 }
-
 // 一个关闭弹出窗口的函数
 function close_popup() {
-  if(popwindow != null ) popwindow.close();
+  if (popwindow != null) popwindow.close();
 }
-
 // 设置 onload 和 unload 对象
 window.onload = popup;
 window.onunload = close_popup;
@@ -3101,7 +2953,6 @@ window.onunload = close_popup;
 此弹出页面与第104页的示例相同——JavaScript 为此窗口添加了状态栏和菜单栏特征。
 
 ![](img/d78298d3338ec680a024bbc83e78b297_107_1.png)
-
 ![](img/d78298d3338ec680a024bbc83e78b297_107_2.png)
 
 # 获取尺寸
@@ -3119,21 +2970,25 @@ Netscape 和 Internet Explorer 的文档对象模型存储内部窗口尺寸的�
 ```javascript
 function get_sizes() {
   var win_w, win_h, scr_w, scr_h, res, in;
-  if(document.body.clientWidth) // IE 和 Opera
+  if (document.body.clientWidth) { // IE 和 Opera
     win_w = document.body.clientWidth;
     win_h = document.body.clientHeight;
-  } else if(window.innerWidth) // Netscape 和 Mozilla
+  } else if (window.innerWidth) { // Netscape 和 Mozilla
     win_w = innerWidth; win_h = innerHeight;
   }
   scr_w = screen.width; scr_h = screen.height; // screen
   // 显示尺寸
   res = "Resolution: " + scr_w + "x" + scr_h;
   in = "Inner window: " + win_w + "x" + win_h;
-  if(win_w == null) alert(res + "\n" + in);
+  if (win_w == null) alert(res + "\n" + in);
 }
 ```
 
-![](img/d78298d3338ec680a024bbc83e78b297_108_1.png)你可以调用 `window.print()` 方法在浏览器中打印文档![](img/d78298d3338ec680a024bbc83e78b297_108_2.png)
+![](img/d78298d3338ec680a024bbc83e78b297_108_1.png)
+
+你可以调用 `window.print()` 方法在浏览器中打印文档
+
+![](img/d78298d3338ec680a024bbc83e78b297_108_2.png)
 
 9. 窗口属性
 
@@ -3149,13 +3004,12 @@ function get_sizes() {
 // 查找帧的总数
 var framenums = "No. frames :"
     + parent.window.frames.length;
-
 // 获取每个帧的名字
-var framenames+= "\nFrame 1 : "
+var framenames += "\nFrame 1 : "
     + parent.window.frames[0].name;
-framenames+= "\nFrame 2 : "
+framenames += "\nFrame 2 : "
     + parent.window.frames[1].name;
-framenames+= "\nFrame 3 : "
+framenames += "\nFrame 3 : "
     + parent.window.frames[2].name;
 ```
 
@@ -3164,7 +3018,7 @@ framenames+= "\nFrame 3 : "
 > 热门提示：始终使用 HTML 元素供 JavaScript 使用，以产生更易读的代码。
 
 ```javascript
-alert( framenums + framenames );
+alert(framenums + framenames);
 ```
 
 ![](img/d78298d3338ec680a024bbc83e78b297_109_1.png)
@@ -3183,7 +3037,6 @@ alert( framenums + framenames );
 function next() {
   // 将另一个页面加载到 Page 帧
   parent.frames.Page.window.location = "nextpage.html";
-
   // 向 Banner 帧写入文本
   parent.frames.Banner.window.document.write("Frame 2 - Written by Frame 1");
 }
@@ -3210,22 +3063,16 @@ function next() {
 ```javascript
 // 声明错误处理函数
 window.onerror = errorhandler;
-
 // 定义错误处理函数
 function errorhandler(msg, url, ln) {
-  alert("Error: "+msg+"\nIn File: "+url+"\nAt Line: "+ln);
+  alert("Error: " + msg + "\nIn File: " + url + "\nAt Line: " + ln);
   return true; // 告诉浏览器已处理
 }
-
 // 这是一个故意的错误
 document.form[theMistake].value = "myButton";
 ```
 
 ![](img/d78298d3338ec680a024bbc83e78b297_111_1.png)
-
-
-
-
 
 # 文档属性
 
@@ -3268,7 +3115,7 @@ function set_colors() {
 ![](img/d78298d3338ec680a024bbc83e78b297_113_1.png)
 
 | 设置颜色 | | | | | | |
-| :--- | :--- | :--- | :--- | :--- | :--- |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | 文件 | 编辑 | 视图 | 收藏 | 工具 | 帮助 |
 | JavaScript 快速入门 | | | | | | |
 | 更改颜色 | | | | | | |
@@ -3279,7 +3126,7 @@ function set_colors() {
 ![](img/d78298d3338ec680a024bbc83e78b297_113_2.png)
 
 | 设置颜色 | | | | | | | |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | 文件 | 编辑 | 视图 | 收藏 | 工具 | 帮助 |
 | JavaScript 快速入门 | | | | | | |
 | 更改颜色 | | | | | | |
@@ -3307,9 +3154,9 @@ function set_colors() {
 // 获取 1 - 100 之间的随机整数
 var n = Math.ceil(Math.random() * 100);
 // 判断数字是奇数还是偶数
-var ntype = ( n % 2 == 0 ) ? "Even" : "Odd";
+var ntype = (n % 2 == 0) ? "Even" : "Odd";
 // 写入数字的描述
-document.write("<h1>Number " +n+\ " is " +ntype+"</h1>");
+document.write("<h1>Number " + n + " is " + ntype + "</h1>");
 ```
 
 ![](img/d78298d3338ec680a024bbc83e78b297_114_1.png)
@@ -3344,15 +3191,12 @@ cookie 的寿命受限于浏览器会话长度，除非在首次设置 cookie �
 ```javascript
 // 存储在 cookie 中的数据
 var user_account = "Mike McGrath, 00456";
-
 // 创建日期
 var expiry = new Date();
-
 // 设置 7 天后过期
-expiry.setTime(expiry.getTime() + (7*24*60*60*1000));
-
+expiry.setTime(expiry.getTime() + (7 * 24 * 60 * 60 * 1000));
 // 创建 cookie
-document.cookie = "cookieata="+escape(user_account)+"expires="+expiry.toGMTString()+";
+document.cookie = "cookieata=" + escape(user_account) + "expires=" + expiry.toGMTString() + ";";
 ```
 set-cookie.js
 
@@ -3385,7 +3229,6 @@ if (document.cookie) {
 ```
 
 ![](img/d78298d3338ec680a024bbc83e78b297_116_1.png)
-
 ![](img/d78298d3338ec680a024bbc83e78b297_116_2.png)
 
 | 获取 Cookie | | | | | |
@@ -3417,19 +3260,9 @@ function image_info() {
 }
 ```
 
-![](img/d78298d3338ec680a024bbc83e78b297_117_3.png)
 
-images.js
 
-![](img/d78298d3338ec680a024bbc83e78b297_117_4.png)
-
-此示例假设这些图像在 HTML 代码中从左到右顺序出现——但情况可能总是如此。
-
-![](img/d78298d3338ec680a024bbc83e78b297_117_5.png)
-
-116 | JavaScript 快速入门
-
-## 滚动效果
+# 滚动效果
 
 如果图像在 HTML 代码中已命名（通过给 `<img>` 标签的 `id` 属性赋值），则在 JavaScript 中也可以通过此名称访问。语法为 `document.images.imgname` —— 因此图像点击被访问为 `document.images.click`。
 
@@ -3442,35 +3275,16 @@ images.js
 
 这些属性每当 `onmouseover` 或 `onmouseout` 事件发生时调用 JavaScript 图像切换函数：
 
-![](img/d78298d3338ec680a024bbc83e78b297_118_0.png)
-
-![](img/d78298d3338ec680a024bbc83e78b297_118_1.png)
-
 ```javascript
 function swap(n) {
-  if (n == 0)document.images.click.src = "off.gif";
-  if (n == 1)document.images.click.src = "over.gif";
+  if (n == 0) document.images.click.src = "off.gif";
+  if (n == 1) document.images.click.src = "over.gif";
 }
 ```
-
-![](img/d78298d3338ec680a024bbc83e78b297_118_2.png)
-
-| 滚动效果 | | | | | | |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| 文件 | 编辑 | 视图 | 收藏 | 工具 | 帮助 |
-| 欢迎 Mike McGrath | | | | | | |
-| 账号: 00456. | | | | | | |
-| 完成 | 本地局域网 | | | | | |
-
-
-
-
 
 # 动态内容
 
 `window.document.open()` 方法打开一个新的 HTML 文档，可以使用熟悉的 `window.document.write()` 方法向其写入内容以创建动态内容。
-
-![](img/d78298d3338ec680a024bbc83e78b297_119_0.png)
 
 将空字符串作为 URL 参数传递给 `open` 可以打开一个空窗口。
 
@@ -3478,14 +3292,12 @@ function swap(n) {
 
 下面的示例在上一章弹出窗口的基础上，通过从 JavaScript 写入内容而不是简单地加载现有的 HTML 文档：
 
-![](img/d78298d3338ec680a024bbc83e78b297_119_1.png)
-
 ```javascript
 // 用于创建一个动态弹出窗口的函数
 function popup() {
   // 创建弹出窗口
   var popwindow = 
-    window.open("",*",top=40,left=30,width=250,height=125);
+    window.open("", "*", "top=40,left=30,width=250,height=125");
   // 打开弹出窗口的 HTML 文档
   popwindow.document.open();
   // 在弹出窗口中写入内容
@@ -3497,13 +3309,7 @@ function popup() {
 }
 ```
 
-![](img/d78298d3338ec680a024bbc83e78b297_119_2.png)
-
 记住在双引号内使用单引号。
-
-![](img/d78298d3338ec680a024bbc83e78b297_119_3.png)
-
-118 | 快速上手 JavaScript
 
 ## 最后修改
 
@@ -3511,47 +3317,31 @@ function popup() {
 
 通常，此数据用于指示用户最近更新 Web 页面的时间，让用户知道页面上的信息有多新。通常这些信息显示在页面底部，字体比页面正文小。
 
-接接的示例首先测试 `document.lastModified` 是否提供了日期，然后将数据写入 HTML 文档：
+接下来的示例首先测试 `document.lastModified` 是否提供了日期，然后将数据写入 HTML 文档：
 
 ```javascript
 // 检查是否存在 lastModified
-if( Date.parse(document.lastModified ) != 0 ) {
+if (Date.parse(document.lastModified) != 0) {
   // 如果存在，则写入一条说明该日期的消息
   document.write(
-    "Page last updated: " + document.lastModified + );
+    "Page last updated: " + document.lastModified
+  );
 }
 ```
 
-![](img/d78298d3338ec680a024bbc83e78b297_120_0.png)
-
-![](img/d78298d3338ec680a024bbc83e78b297_120_1.png)
-
 包含此脚本代码的 `<script>` 块通常位于 HTML 文档 `<body>` 部分的最末尾。
-
-| 最后修改示例 | |
-| :--- | :--- |
-| 文件 | 编辑 | 视图 | 工具 | 帮助 |
-| PERL 是一种由 Larry Wall 在 1987 年发明的通用编程语言。实用实用查询和报告语言 (PERL) 在全球范围内有一百万用户，是服务器端脚本的主要语言。对于许多人来说，它是 Web 开发的首选语言。 |
-| 页面最后更新于：04/06/2005 12:52:53 |
-| 完成 | 本地域网 |
 
 ## XYZ 坐标
 
 显示窗口中内容的物理位置可以使用称为 X、Y 和 Z 的坐标来引用。
 
-X 坐标指定了距离窗口最左边缘的像素距离。
-
-Y 坐标指定了距离窗口最顶边缘的像素距离。
-
-Z 坐标通过索引号指定了底部窗口层级之上层的堆叠位置：
-
-![](img/d78298d3338ec680a024bbc83e78b297_121_0.png)
-
-![](img/d78298d3338ec680a024bbc83e78b297_121_1.png)
+- X 坐标指定了距离窗口最左边缘的像素距离。
+- Y 坐标指定了距离窗口最顶边缘的像素距离。
+- Z 坐标通过索引号指定了底部窗口层级之上层的堆叠位置。
 
 窗口左边缘的 X 坐标为零，窗口顶边缘的 Y 坐标也为零。
 
-X=50  Y=30 的位置将指向距离左边缘 50 像素、距离顶边缘 30 像素的位置。
+X=50, Y=30 的位置将指向距离左边缘 50 像素、距离顶边缘 30 像素的位置。
 
 底部窗口层的 Z 坐标索引值为零。层可以放置在该层之上，就像透明胶片一样，并被赋予唯一的 Z-index 值。
 
@@ -3563,29 +3353,17 @@ JavaScript 可以通过在 HTML 文档的 body 部分编写必要的 HTML 代码
 
 最重要的是，如果层发生重叠，它们的堆叠顺序可以由分配给它们的 z-index 值来决定——数字越大，图层在堆栈中的位置越高。下面的示例通过动态创建两个重叠层来模拟相反页面的插图。第二个（黄色）层在堆栈中的位置高于第一个（紫色）层。如果它们的 z-index 值反过来，层 1 为 20 而层 2 为 10，则紫色层将覆盖黄色层。
 
-![](img/d78298d3338ec680a024bbc83e78b297_122_0.png)
-
 ```javascript
 // 在 z-index 10 处写入层
 document.write("<div id='layer1' style='position:absolute; top:20px; left:20px; width:80px; height:80px; background-color:purple; color:white; z-index:10; border:1px solid black'>Layer #1</div>");
 ```
-
-![](img/d78298d3338ec680a024bbc83e78b297_122_1.png)
 
 ```javascript
 // 在 z-index 20 处写入层
 document.write("<div id='layer2' style='position:absolute; top:40px; left:40px; width:80px; height:80px; background-color:yellow; z-index:20; border:1px solid black'>Layer #2</div>");
 ```
 
-![](img/d78298d3338ec680a024bbc83e78b297_122_2.png)
-
 ## 透明层
-
-JavaScript 可以通过在 HTML 文档的 body 部分编写必要的 HTML 代码和样式表规则来动态创建层。这允许控制每一层的位置和外观。
-
-最重要的是，如果层发生重叠，它们的堆叠顺序可以由分配给它们的 z-index 值来决定——数字越大，图层在堆栈中的位置越高。下面的示例通过动态创建两个重叠层来模拟相反页面的插图。第二个（黄色）层在堆栈中的位置高于第一个（紫色）层。如果它们的 z-index 值反过来，层 1 为 20 而层 2 为 10，则紫色层将覆盖黄色层。
-
-![](img/d78298d3338ec680a024bbc83e78b297_121.png)
 
 除非另有指定，否则层将具有与文档相同的背景。或者可以通过设置其背景为透明来显式设置。透明层在这些层重叠时尤为重要。
 
@@ -3593,10 +3371,6 @@ JavaScript 可以通过在 HTML 文档的 body 部分编写必要的 HTML 代码
 // 写入一个透明层
 document.write("<div id='transparent-layer' style='position:absolute; top:20px; left:20px; width:80px; height:80px; background-color:transparent; z-index:10; border:1px solid black'>Layer #1</div>");
 ```
-
-
-
-
 
 ## 表单元素
 
@@ -3616,20 +3390,16 @@ document.write("<div id='transparent-layer' style='position:absolute; top:20px; 
 ```javascript
 function element_info() {
   // 获取元素类型
-  var msg = "Element Type: "+document.forms.f.btn1.type;
+  var msg = "Element Type: " + document.forms.f.btn1.type;
   // 获取元素值
-  msg += "\nElement Value: "+document.forms.f.btn1.value;
+  msg += "\nElement Value: " + document.forms.f.btn1.value;
   // 获取元素的 onclick 事件
-  msg += "\nElement Onclick: "+document.forms.f.btn1.onclick;
+  msg += "\nElement Onclick: " + document.forms.f.btn1.onclick;
   alert(msg);
 }
 ```
 
-![](img/d78298d3338ec680a024bbc83e78b297_126_0.png)
-
 除非另有说明，本章中的所有函数都是从 HTML `<body>` 标签的 `onload` 属性调用的——表单字段在隐藏之前无法创建。
-
-![](img/d78298d3338ec680a024bbc83e78b297_126_1.png)
 
 ## 点击按钮
 
@@ -3645,8 +3415,6 @@ onclick="first()"></form>
 
 `first()` 函数将一个字符串赋值给变量，然后为按钮的 `onclick` 属性指定一个名为 `second()` 的新事件处理函数。随后按下按钮将调用 `second()` 函数并执行其中包含的语句。
 
-![](img/d78298d3338ec680a024bbc83e78b297_127_0.png)
-
 ```javascript
 // 创建一个全局变量
 var msg;
@@ -3659,9 +3427,7 @@ function first() {
 }
 ```
 
-![](img/d78298d3338ec680a024bbc83e78b297_127_1.png)
-
-在分配事件处理函数时，只分配名称，不要带带任何括号。
+在分配事件处理函数时，只分配名称，不要带任何括号。
 
 ```javascript
 // 用于存储第二个消息并显示两者的函数
@@ -3671,45 +3437,37 @@ function second() {
 }
 ```
 
-![](img/d78298d3338ec680a024bbc83e78b297_127_2.png)
-
 ## 切换值
 
 如果一个按钮执行双重操作，通过其 `value` 属性更改按钮上显示的标签是非常有用的。
 
 在接下来的示例中，按钮调用 `stopgo()` 函数来启动或停止计数器。计数器每隔 1 秒增加一次整数变量，并在窗口的状态栏中显示计数。
 
-按钮标签通常显示为“Start”（开始），但如果计时器 `count()` 函数正在运行，它将变变为“Stop”（停止）。
-
-![](img/d78298d3338ec680a024bbc83e78b297_128_0.png)
+按钮标签通常显示为“Start”（开始），但如果计时器 `count()` 函数正在运行，它将变为“Stop”（停止）。
 
 ```javascript
 var running = false, num = -1, tim; // 创建全局变量
+
 function count() { // 计数器函数
-	if(running) {
-	num++;
-	window.status = "Seconds elapsed: " + num;
-	tim = setTimeout("count()", 1000);
-} else {
-	num = -1;clearTimeout(tim); } // 或者停止
+  if (running) {
+    num++;
+    window.status = "Seconds elapsed: " + num;
+    tim = setTimeout("count()", 1000);
+  } else {
+    num = -1;
+    clearTimeout(tim);
+  } // 或者停止
 }
+
 function stopgo() { // 控制函数
-	running = !running; // 切换计数器
-	document.forms.btn1.value = (running)? "Stop" : "Start"; // 更改标签
+  running = !running; // 切换计数器
+  document.forms.btn1.value = (running) ? "Stop" : "Start"; // 更改标签
 }
 ```
 
-toggle.js
-
-![](img/d78298d3338ec680a024bbc83e78b297_128_1.png)
-
 `num` 变量初始化为 -1，这样在第一次增加时，计数器将从零开始。
 
-![](img/d78298d3338ec680a024bbc83e78b297_128_2.png)
-
 这里使用 `!` 运算符将布尔变量更改为其当前值的反值。
-
-![](img/d78298d3338ec680a024bbc83e78b297_128_3.png)
 
 ## 文本框
 
@@ -3723,22 +3481,17 @@ HTML 文本 `<input>` 中显示的文本很容易通过 JavaScript 为该元素�
 // 用于设置表单字段中文本的函数
 function set_text() {
     // 针对表单 f 中的文本 txt1
-    with(document.forms.f.txt1)
-
+    with (document.forms.f.txt1) {
     // 设置文本值
     value = "JavaScript easy";
-
     // 设置样式
     style.fontFamily = "comic sans";
     style.fontSize = "16pt";
     style.color = "yellow";
     style.backgroundColor = "red";
+    }
 }
 ```
-
-![](img/d78298d3338ec680a024bbc83e78b297_129_0.png)
-
-![](img/d78298d3338ec680a024bbc83e78b297_129_1.png)
 
 ## 密码框
 
@@ -3750,8 +3503,6 @@ JavaScript 将用户的输入转换为字符串到名为 `pwd1` 的字段。
 
 如果字符串匹配密码，浏览器将加载该页面，否则将显示一个 `alert()` 对话框。
 
-![](img/d78298d3338ec680a024bbc83e78b297_130.png)
-
 ```javascript
 // 用于验证密码的函数
 function validate() {
@@ -3762,20 +3513,12 @@ function validate() {
   else {
     // 如果错误，显示提示
     alert("Password incorrect...");
-    document.forms.f.pwd1 = "";
+    document.forms.f.pwd1.value = "";
   }
 }
 ```
 
 脚本的最后一行在用户点击 **OK** 按钮后清除密码框。
-
-此表单提交时发送选中的按钮。
-
-| 密码字段 | 编辑 | 视图 |
-| :--- | :--- | :--- |
-| | | |
-| 密码错误 -... | | |
-| 完成 | |
 
 ## 单选按钮
 
@@ -3785,29 +3528,20 @@ function validate() {
 
 JavaScript 可以通过名称和索引访问每个单选按钮。下面的示例检查了第二个单选按钮并显示两个值：
 
-![](img/d78298d3338ec680a024bbc83e78b297_131.png)
-
 ```javascript
 // 获取单选按钮信息的函数
 function radio_info() {
   // 选择第二个单选按钮
   document.forms.f.radl[1].checked = true;
-
   // 获取两个按钮的值
   var msg = "1st Radio Value: "
-  + document.forms.f.radl[0].value;
+    + document.forms.f.radl[0].value;
   msg += "2nd Radio Value: "
-  + document.forms.f.radl[1].value;
+    + document.forms.f.radl[1].value;
 }
 ```
 
 只有选中的单选按钮在表单提交时才会发送其 `name=value` 对。
-
-![](img/d78298d3338ec680a024bbc83e78b297_131_1.png)
-
-| 单选按钮 | 文件 | 编辑 | 工具 | 帮助 |
-| :--- | :--- | :--- | :--- | :--- |
-| 第一值：咖啡 | 第二值：茶 | 获取按钮信息 | 完成 | |
 
 ## 轮询
 
@@ -3821,24 +3555,16 @@ JavaScript 可以遍历所有的单选按钮数组元素来测试 `true` 检查�
 // 发现哪个单选按钮被选中的函数
 function radio_poll() {
   // 遍历所有单选按钮
-  for(var i=0; i < document.forms.frad.length; i++) {
+  for (var i = 0; i < document.forms.frad.length; i++) {
     // 如果单选按钮，使用其值
-    if(document.forms.frad[i].checked ) {
-      document.bgColor=document.forms.frad[i].value;
+    if (document.forms.frad[i].checked) {
+      document.bgColor = document.forms.frad[i].value;
     }
   }
 }
 ```
 
-![](img/d78298d3338ec680a024bbc83e78b297_132_0.png)
-
-> 在 JavaScript 中 `((checked))` 是 `((checked==true))` 的简写
-
-![](img/d78298d3338ec680a024bbc83e78b297_132_1.png)
-
-
-
-
+> 在 JavaScript 中 `checked` 是 `checked == true` 的简写。
 
 ## 复选框
 
@@ -3848,14 +3574,12 @@ function radio_poll() {
 
 在下面的示例中，HTML 的 `onclick` 属性调用了 JavaScript 函数来设置三个复选框的 `checked` 属性：
 
-![](img/d78298d3338ec680a024bbc83e78b297_133_0.png)
-
 ```javascript
 // 选中三个复选框的函数
 function checkall() {
- // 在名称为 f 的表单中
-  with(document.forms){
-     // 选中名为 chk1, chk2 和 chk3 的复选框
+  // 在名称为 f 的表单中
+  with (document.forms) {
+    // 选中名为 chk1, chk2 和 chk3 的复选框
     chk1.checked = true;
     chk2.checked = true;
     chk3.checked = true;
@@ -3863,15 +3587,11 @@ function checkall() {
 }
 ```
 
-![](img/d78298d3338ec680a024bbc83e78b297_133_1.png)
-
 只有被选中的复选框，其 `name=value` 对才会在提交表单时发送到服务器。
 
-![](img/d78298d3338ec680a024bbc83e78b297_133_2.png)
+## 复选框轮询
 
-## 复选框轮
-
-复选框对象的 `checked` 属性最重要的，JavaScript 可能会测试被选中的复选框，然后使用它们关联的值。
+复选框对象的 `checked` 属性最重要，JavaScript 可能会测试被选中的复选框，然后使用它们关联的值。
 
 下面的示例测试所有复选框的 `checked` 属性，并将选中的值赋值给字符串变量，以便在 `alert()` 对话框中显示：
 
@@ -3880,23 +3600,16 @@ function checkall() {
 function checkbox_poll() {
   // 创建用于结果的字符串
   var str = "颜色选择是 ";
-
   // 遍历所有复选框
-  for( var i=1; i<4; i++) {
+  for (var i = 1; i < 4; i++) {
     // 如果复选框被选中，则添加它的值
-    if(eval("document.forms.f.chk"+i+".checked"))
-      str += eval("document.forms.f.chk"+i+".value");
+    if (eval("document.forms.f.chk" + i + ".checked"))
+      str += eval("document.forms.f.chk" + i + ".value");
   }
   // 显示结果
   alert(str);
 }
 ```
-
-![](img/d78298d3338ec680a024bbc83e78b297_134_0.png)
-
-![](img/d78298d3338ec680a024bbc83e78b297_134_1.png)
-
-![](img/d78298d3338ec680a024bbc83e78b297_134_2.png)
 
 ## 选项列表
 
@@ -3908,12 +3621,10 @@ HTML `<select>` 列表中的 `<option>` 项目具有用于每个显示字符串�
 
 此示例动态设置了下拉列表中三个选项项目的标签名称和关联值。表单具有简单的 id `f`，`<select>` 元素具有 id `menu`。
 
-![](img/d78298d3338ec680a024bbc83e78b297_135_0.png)
-
 ```javascript
 // 设置列表选项名称和值的函数
 function set_options() {
-  with(document.forms.f.menu) {
+  with (document.forms.f.menu) {
     options[0].text = "One"; options[0].value = "1";
     options[1].text = "Two"; options[1].value = "2";
     options[2].text = "Three"; options[2].value = "3";
@@ -3921,17 +3632,9 @@ function set_options() {
 }
 ```
 
-`[options]` 元素必须由 HTML 代码初始创建。
+`options[]` 元素必须由 HTML 代码初始创建。
 
-![](img/d78298d3338ec680a024bbc83e78b297_135_1.png)
-
-| Options |
-| --- |
-| One |
-| Two |
-| Three |
-
-# 索引
+## 索引
 
 `options[]` 数组具有一个名为 `selectedIndex` 的属性，它包含当前选中项目的索引数字。
 
@@ -3939,24 +3642,17 @@ JavaScript 经常获取当前选择的值以实现动态效果。
 
 这提取当前选择的值并显示在文本框中。表单具有 id `f`，`<select>` 元素具有 id `city`。该函数在用户点击按钮时通过按钮的 `onclick` 属性被调用。
 
-![](img/d78298d3338ec680a024bbc83e78b297_136_0.png)
-
 ```javascript
 // 获取列表中选中项目的函数
 function get_selected() {
   // 用于存储选中索引数字的变量
   var pick = document.forms.f.city.selectedIndex;
-
   // 将选中元素的值赋值
   // 给 id 为 txt1 的文本字段
   document.forms.f.txt1.value =
     document.forms.f.city.options[pick].value;
 }
 ```
-
-![](img/d78298d3338ec680a024bbc83e78b297_136_1.png)
-
-![](img/d78298d3338ec680a024bbc83e78b297_136_2.png)
 
 ## 文本区域
 
@@ -3976,29 +3672,22 @@ function write_text() {
 }
 ```
 
-![](img/d78298d3338ec680a024bbc83e78b297_137_0.png)
-
-
-
-
 ## 电子邮件地址验证
 
 在提交表单之前，可以对表单元素的值进行格式正确性验证。
 
 在以下示例中，JavaScript 测试文本输入字符串的格式是否包含 `@` 和 `.` 字符，只有在电子邮件地址验证通过时才会提交表单：
 
-![](img/d78298d3338ec680a024bbc83e78b297_141_0.png)
-
 ```javascript
 // 用于验证电子邮件地址的函数
 function send_if_valid() {
-  if(document.forms.f.email.value.indexOf("@") == -1 )
+  if (document.forms.f.email.value.indexOf("@") == -1)
     fail("No '@' in address");
   else {
-    var adr = document.forms.f.email.value.split("");
-    if(adr[0].length < 1) fail("User address absent");
-    else if(adr[1].indexOf(".") == -1) fail("No dot");
-    else if(adr[1].length < 3) fail("Domain incorrect");
+    var adr = document.forms.f.email.value.split("@");
+    if (adr[0].length < 1) fail("User address absent");
+    else if (adr[1].indexOf(".") == -1) fail("No dot");
+    else if (adr[1].length < 3) fail("Domain incorrect");
     else document.forms.f.submit();
   }
 }
@@ -4011,9 +3700,7 @@ function fail(msg) {
 
 - **热提示**：函数 `send_if_valid()` 在此示例是从按钮的 HTML `onclick` 属性中调用的。
 
-![](img/d78298d3338ec680a024bbc83e78b297_141_1.png)
-
-## 事件处理器
+# 事件处理器
 
 用户操作（如按下按键或点击鼠标）会创建 JavaScript 用于与用户交互的事件。本章描述了常见事件，并说明了如何通过 JavaScript 事件处理器使用它们。
 
@@ -4044,9 +3731,7 @@ function fail(msg) {
 
 `onclick` 事件处理器通常在按钮的 HTML `<input>` 标签中通过 HTML `onclick` 属性分配。
 
-通常，分配给 `onclick` 属性的值将是调用一个执行语句的 JavaScript 函数。例如...
-
-![](img/d78298d3338ec680a024bbc83e78b297_143_0.png)
+通常，分配给 `onclick` 属性的值将是调用一个执行语句的 JavaScript 函数。例如：
 
 ```html
 <input type="button" value="Do Click" onclick="do_click('JavaScript in easy steps')"/>
@@ -4056,15 +3741,11 @@ function fail(msg) {
 
 ```javascript
 // 用于响应 CLICK 事件的函数
-function do_click( str )
-{
+function do_click(str) {
     // 显示传递的字符串参数
     alert(str);
 }
 ```
-
-![](img/d78298d3338ec680a024bbc83e78b297_143_1.png)
-![](img/d78298d3338ec680a024bbc83e78b297_143_2.png)
 
 ## 捕获鼠标
 
@@ -4078,9 +3759,6 @@ function do_click( str )
 
 MouseMove 事件被捕获后，`onmousemove` 事件处理器在名为 `txt` 的表单字段中动态显示光标的 x,y 坐标：
 
-![](img/d78298d3338ec680a024bbc83e78b297_144_0.png)
-![](img/d78298d3338ec680a024bbc83e78b297_144_1.png)
-
 ```javascript
 // Netscape/Mozilla 捕获事件指令
 if (navigator.appName == "Netscape")
@@ -4092,26 +3770,18 @@ if (navigator.appName == "Netscape")
 function track(e) {
   var x = (document.all) ? event.x : e.pageX;
   var y = (document.all) ? event.y : e.pageY;
-  document.forms.f.txt.value = "X: "+x+" Y: "+y;
+  document.forms.f.txt.value = "X: " + x + " Y: " + y;
 }
 ```
 
-`document.all` 属性存在于 Internet Explorer 中 Netscape/Mozilla 浏览器中不存在——这对于应用特定浏览器代码可能有用。
-
-![](img/d78298d3338ec680a024bbc83e78b297_144_2.png)
+`document.all` 属性存在于 Internet Explorer 中，Netscape/Mozilla 浏览器中不存在——这对于应用特定浏览器代码可能有用。
 
 ```javascript
 // 指定 onmousemove 事件
-document.onmousemove=track;
+document.onmousemove = track;
 ```
 
 Netscape 和 Internet Explorer 对光标的 x,y 位置使用不同的对象名称。
-
-![](img/d78298d3338ec680a024bbc83e78b297_144_3.png)
-
-| MouseMove 事件 | 文件编辑 | 帮助 |
-| :--- | :--- | :--- |
-| 完成本地 | 200 | Y: 60 |
 
 ## 鼠标悬入
 
@@ -4134,9 +3804,6 @@ function do_mouseover() {
 }
 ```
 
-![](img/d78298d3338ec680a024bbc83e78b297_145_0.png)
-![](img/d78298d3338ec680a024bbc83e78b297_145_1.png)
-
 ## 鼠标移出
 
 当用户离开 Web 页面上的对象时，会发生 MouseOut 事件。
@@ -4156,9 +3823,7 @@ function do_mouseout() {
 }
 ```
 
-![](img/d78298d3338ec680a024bbc83e78b297_146_0.png)
-
-## 按键按下和按键释放
+## 鼠标按下和鼠标释放
 
 MouseDown 事件在用户按下鼠标键时发生，MouseUp 事件在释放时发生。
 
@@ -4173,23 +3838,18 @@ MouseDown 事件在用户按下鼠标键时发生，MouseUp 事件在释放时�
 ```javascript
 // 用于响应 MOUSEDOWN 和 MOUSEUP 事件的函数
 function light(n) {
-  if ( n == 1 ) {
+  if (n == 1) {
     document.images.bulb.src = "bulbon.gif";
     document.forms.f.txt.value = "Button is Down";
   }
-  if ( n == 0 ) {
+  if (n == 0) {
     document.images.bulb.src = "bulboff.gif";
     document.forms.f.txt.value = "Button is Up";
   }
 }
 ```
 
-![](img/d78298d3338ec680a024bbc83e78b297_147_0.png)
-
 **热提示**：document、link、image 和 button HTML 元素支持 `mouseup` 和 `mousedown` 属性。
-
-![](img/d78298d3338ec680a024bbc83e78b297_147_1.png)
-![](img/d78298d3338ec680a024bbc83e78b297_147_2.png)
 
 ## 鼠标按钮
 
@@ -4202,34 +3862,30 @@ JavaScript 可以通过检查 MouseDown 事件的属性确定按了哪个鼠标�
 ```javascript
 // 存储默认消息
 var msg = "Right-Click Context Menu Is Disabled";
+
 // 用于停止 IE 菜单的函数
 function stopmenu(e) {
   // 针对 Internet Explorer 浏览器
-  if(navigator.appName == "Microsoft Internet Explorer"
-  && ( event.button == 2 || event.button == 3 )) {
-    alert( msg );
+  if (navigator.appName == "Microsoft Internet Explorer"
+    && (event.button == 2 || event.button == 3)) {
+    alert(msg);
     return false;
   }
 }
+
 // 指定 onmousedown 事件处理器
 document.onmousedown = stopmenu;
 ```
 
-![](img/d78298d3338ec680a024bbc83e78b297_148_0.png)
-![](img/d78298d3338ec680a024bbc83e78b297_148_1.png)
-
-
-
-
 ## 按键按下与释放
 
-当用户按下键盘按键时，会触发 KeyDown 事件；当释放按键时会触发 KeyError 事件。通常这些事件会配合使用，使得单次按键动作会触发两个事件处理器。
+当用户按下键盘按键时，会触发 KeyDown 事件；当释放按键时会触发 KeyUp 事件。通常这些事件会配合使用，使得单次按键动作会触发两个事件处理器。
 
 此示例在按下按键时切换图像并更改文本框的值，在释放按键时则将两者都恢复到初始状态：
 
 ```javascript
 // Netscape/Mozilla 捕获事件指令
-if (navigator.name == "Netscape") {
+if (navigator.appName == "Netscape") {
     window.captureEvents(Event.KEYDOWN, Event.KEYUP);
 }
 
@@ -4241,7 +3897,7 @@ function isdown() {
 
 // 响应 KEYUP 事件的函数
 function isup() {
-    document.images.bulb.src = "bulffoff.gif";
+    document.images.bulb.src = "bulboff.gif";
     document.forms.f.txt.value = "Key is Up";
 }
 
@@ -4250,23 +3906,7 @@ document.onkeydown = isdown;
 document.onkeyup = isup;
 ```
 
-![](img/d78298d3338ec680a024bbc83e78b297_149_0.png)
-
 注意此脚本的前几行如何为 Netscape/Mozilla 浏览器捕获了 KeyDown 和 KeyUp 事件。
-
-![](img/d78298d3338ec680a024bbc83e78b297_149_1.png)
-
-| 释放与按下 | | |
-| 文件 | 编辑 | 视图 | 收藏 |
-|---|---|---|---|
-| | | | |
-| 键已按下 | | | |
-
-| 释放与按下 | | |
-| 文件 | 编辑 | 视图 | 收藏 |
-|---|---|---|---|
-| | | | |
-| 键已释放 | | | |
 
 ## 键码
 
@@ -4277,57 +3917,46 @@ KeyDown 事件也可以用于获取按键按下时的 Unicode 字符编码。
 ```javascript
 // Netscape/Mozilla 捕获事件指令
 if (navigator.appName == "Netscape")
-window.captureEvents ( Event.KEYDOWN );
+  window.captureEvents(Event.KEYDOWN);
 ```
-
-![](img/d78298d3338ec680a024bbc83e78b297_150_0.png)
 
 ```javascript
 function showkey(e) {
-  var msg = "", fwd = "Y pressed";
+  var msg = "", fwd = "Y pressed", hlt = "N pressed";
+
+  // 在 Netscape/Mozilla 浏览器中检查键码
+  if (navigator.appName == "Netscape") {
+    if (e.which == 89 || e.which == 121) msg = fwd;
+    if (e.which == 78 || e.which == 110) msg = hlt;
+  }
 ```
 
-```javascript
-// 在 Netscape/Mozilla 浏览器中检查键码
-if(navigator.appName == "Netscape") {
-  if(e.which == 89 || e.which == 121 ) msg = fwd;
-  if(e.which == 78 || e.which == 110) msg = hlt;
-```
-
-![](img/d78298d3338ec680a024bbc83e78b297_150_1.png)
-
-常用字符的 Unicode 值与 ASCII 码相同，因此 Y=89，N=78，y=121  n=110。
+常用字符的 Unicode 值与 ASCII 码相同，因此 Y=89，N=78，y=121，n=110。
 
 ```javascript
-// 在 Internet Explorer 中检查键码
-if(navigator.appName == "Microsoft Internet Explorer") {
-  if(event.keyCode==88 || event.keyCode==121)msg = fwd;
-  if(event.keyCode==78 || event.keyCode==110)msg = hlt;
-```
+  // 在 Internet Explorer 中检查键码
+  if (navigator.appName == "Microsoft Internet Explorer") {
+    if (event.keyCode == 89 || event.keyCode == 121) msg = fwd;
+    if (event.keyCode == 78 || event.keyCode == 110) msg = hlt;
+  }
 
-```javascript
-// 显示恰当的消息
-if(msg != "") alert(msg);
-```
+  // 显示恰当的消息
+  if (msg != "") alert(msg);
+}
 
-```javascript
 // 定义事件处理器
-document.onkeydown=showkey;
+document.onkeydown = showkey;
 ```
 
-![](img/d78298d3338ec680a024bbc83e78b297_150_2.png)
+## 加载
 
-## 加载 (Load)
-
-直到 Web 页面上的所有 HTML 元素完全加载后，Load 事件才会发生。这意味着 onload 事件处理器将在所有元素存在后才会运行。
+直到 Web 页面上的所有 HTML 元素完全加载后，Load 事件才会发生。这意味着 `onload` 事件处理器将在所有元素存在后才会运行。
 
 如果用 JavaScript 修改文档 `<body>` 部分的元素，这些元素必须已经加载，以避免接收脚本错误。
 
-通常，onload 事件处理器会调用一个 JavaScript 函数（通常命名为 `init()`），该函数会初始化多个值。
+通常，`onload` 事件处理器会调用一个 JavaScript 函数（通常命名为 `init()`），该函数会初始化多个值。
 
 此示例设置了 HTML 页面颜色，然后给变量赋值一个值，随后将该值赋值给文本框：
-
-![](img/d78298d3338ec680a024bbc83e78b297_151_0.png)
 
 ```javascript
 // 响应 LOAD 事件的函数
@@ -4335,21 +3964,20 @@ function init() {
   // 设置前景和背景颜色
   document.bgColor = "orange";
   document.fgColor = "blue";
-
   // 存储字符串并在表单字段中显示
   var str = "The Page is Loaded";
   document.forms.f.txt.value = str;
-
-  // 指定 onload 事件处理器
-  window.onload = init;
 }
+
+// 指定 onload 事件处理器
+window.onload = init;
 ```
 
 位于 `<body>` 标签 `onload` 属性的 HTML 事件处理器将替换脚本中已赋值的内容。
 
-![](img/d78298d3338ec680a024bbc83e78b297_151_1.png)
+## 卸载
 
-当浏览器从新窗口或框架中卸载文档时，Unload 事件就会发生，通常是在用户导航到新 URL 时。unload 事件处理器可以在文档卸载之前运行一个 JavaScript 函数。当框架被卸载时，onload 事件处理器可能会调用一个最终函数。unload 事件处理器用于将该页面数据的最终状态保存到 cookie 中或通过提交到服务器。它还用于打开包含用户可能感兴趣的进一步信息的弹出窗口。
+当浏览器从新窗口或框架中卸载文档时，Unload 事件就会发生，通常是在用户导航到新 URL 时。`unload` 事件处理器可以在文档卸载之前运行一个 JavaScript 函数。当框架被卸载时，`onload` 事件处理器可能会调用一个最终函数。`unload` 事件处理器用于将该页面数据的最终状态保存到 cookie 中或通过提交到服务器。它还用于打开包含用户可能感兴趣的进一步信息的弹出窗口。
 
 下面的示例说明了如何使用 unload 处理器打开新的弹出窗口：
 
@@ -4360,60 +3988,38 @@ function leaving() {
   var win = window.open("finally.html", "",
   "top=50,left=50,width=300,height=100");
 }
-```
 
-![](img/d78298d3338ec680a024bbc83e78b297_152_0.png)
-
-```javascript
 // 指定 unload 事件处理器
 window.onunload = leaving;
 ```
 
-![](img/d78298d3338ec680a024bbc83e78b297_152_1.png)
+## 焦点
 
-| 卸载事件 | | | |
-|---|---|---|---|
-| 文件 编辑 视图 收藏 帮助 | | | |
-| 我们遗憾看到您离开 | 访问类似网站 | | |
-
-## 焦点 (Focus)
-
-当用户点击表单元素或窗口引导浏览器焦点时，会发生 Focus 事件。onfocus 事件处理器在接收焦点时可以调用 JavaScript 函数。可以在表单元素上添加 HTML `onfocus` 属性，以便在接收焦点时指定函数，例如：
+当用户点击表单元素或窗口引导浏览器焦点时，会发生 Focus 事件。`onfocus` 事件处理器在接收焦点时可以调用 JavaScript 函数。可以在表单元素上添加 HTML `onfocus` 属性，以便在接收焦点时指定函数，例如：
 
 ```html
 <input type="text" name="txt1" value="Enter quantity here" onfocus="wipe(this)">
 <input type="text" name="txt2" value="Enter data here" onfocus="wipe(this)">
 ```
 
-在下面的示例中，文本输入最初显示赋值给 `value` 属性的字符串。当用户点击每个输入框时，它获得焦点，`wipe(this)` 函数为其 `value` 属性分配一个空字符串。这清除了显示的文本并将光标置在适当的位置，准备供用户输入。显示选定列表项的值：
+在下面的示例中，文本输入最初显示赋值给 `value` 属性的字符串。当用户点击每个输入框时，它获得焦点，`wipe(this)` 函数为其 `value` 属性分配一个空字符串。这清除了显示的文本并将光标置在适当的位置，准备供用户输入。
 
 ```javascript
 // 清空文本输入的函数
 function wipe(obj) {
   // 清空表单
-  obj.value="";
+  obj.value = "";
   // 重置焦点
   obj.focus();
 }
 ```
 
-![](img/d78298d3338ec680a024bbc83e78b297_153_0.png)
+## 失焦
 
-![](img/d78298d3338ec680a024bbc83e78b297_153_1.png)
-
-| 焦点事件 | | | | |
-|---|---|---|---|---|
-| 文件 编辑 视图 收藏 帮助 | | | | |
-| 数量: | | | | |
-| 描述: | 输入数据 | | | |
-| 完成 | | | | |
-
-## 失焦 (Blur)
-
-当焦点离开表单元素或窗口时会发生 Blur 事件，onblur 事件处理器可以调用 JavaScript 函数。表单元素的 `blur()` 方法用于不允许用户输入的文本框。可以从 HTML `autofocus` 属性调用它，例如：
+当焦点离开表单元素或窗口时会发生 Blur 事件，`onblur` 事件处理器可以调用 JavaScript 函数。表单元素的 `blur()` 方法用于不允许用户输入的文本框。可以从 HTML `onfocus` 属性调用它，例如：
 
 ```html
-<input type="text" size="30" value="This field is read-only" autofocus="blur(this)">
+<input type="text" size="30" value="This field is read-only" onfocus="blur(this)">
 ```
 
 在以下示例中，用户被提醒他们离开的文本框应该接收输入：
@@ -4423,18 +4029,16 @@ function wipe(obj) {
 function is_entry(val) {
   // 如果字段为空
   if (val == "")
-  // ...显示消息
-  alert("Please enter data ");
+    // ...显示消息
+    alert("Please enter data ");
 }
 ```
-
-![](img/d78298d3338ec680a024bbc83e78b297_154_0.png)
 
 使用 `window.blur()` 方法通常会最小化窗口。
 
 ## 更改
 
-当文本输入的值发生变化或用户在选项列表中选择项目时，会发生 Change 事件。onchange 事件处理器可以在更改发生时调用 JavaScript 函数来执行某些代码。
+当文本输入的值发生变化或用户在选项列表中选择项目时，会发生 Change 事件。`onchange` 事件处理器可以在更改发生时调用 JavaScript 函数来执行某些代码。
 
 下面的示例将初始选项设置为绿色，然后分配一个处理器，在选择更改时将关联的值显示在文本框中：
 
@@ -4453,24 +4057,9 @@ function show_selected() {
 
 // 指定 onload 事件处理器
 window.onload = init;
-}
 ```
 
-![](img/d78298d3338ec680a024bbc83e78b297_155_0.png)
-
-| 更改事件 | | |
-|---|---|---|
-| 文件 编辑 视图 收藏 工具 帮助 | | |
-| 红色 | 红色 | |
-| 绿色 | | |
-| 蓝色 | | |
-| 完成 | 本地网络 | |
-
-
-
-
-
-# 重置 (Reset)
+## 重置
 
 当用户点击表单的重置按钮或 JavaScript 执行 `form.reset()` 方法时，会触发 **Reset** 事件。
 
@@ -4479,7 +4068,7 @@ window.onload = init;
 在这个示例中，有两个 HTML 表单，分别命名为 **f1** 和 **f2**。第一个表单包含三个单选按钮和一个重置按钮。在第一个 `<form>` 标签的 HTML **onreset** 属性中分配了一个事件处理程序。当按下重置按钮时，第二个单选按钮的值会被改变，其值将显示在第二个表单的文本框中。
 
 ```javascript
-//一个用于设置单选按钮值的函数
+// 一个用于设置单选按钮值的函数
 function show_value() {
   // 设置值
   document.forms.f1.r[0].value = "Salmon";
@@ -4488,15 +4077,9 @@ function show_value() {
 }
 ```
 
-![](img/d78298d3338ec680a024bbc83e78b297_156_0.png)
+可以通过给属性 `document.forms.f1.r[0].checked` 赋值用 JavaScript 选中第一个单选按钮。
 
-![](img/d78298d3338ec680a024bbc83e78b297_156_1.png)
-
-可以通过给属性 `document.forms.f1.r[0].checked` 赋值用 JavaScript JavaScript 第一个单选按钮。
-
-![](img/d78298d3338ec680a024bbc83e78b297_156_2.png)
-
-# 提交 (Submit)
+## 提交
 
 当用户点击表单中的提交按钮时，会触发 **Submit** 事件。`onsubmit` 事件处理可以在提交之前调用函数执行验证。
 
@@ -4504,104 +4087,78 @@ function show_value() {
 
 此示例执行基本的电子邮件地址验证，并在验证失败时为用户提供 `alert()` 消息。该函数是由 `<form>` 标签的 HTML **onsubmit** 属性调用的。
 
-![](img/d78298d3338ec680a024bbc83e78b297_157_0.png)
-
 ```javascript
-//一个验证基本电子邮件地址格式的函数
-function validation()
-{
+// 一个验证基本电子邮件地址格式的函数
+function validation() {
   // 在地址中查找 @ 字符
-  if(document.forms.email.value.indexOf("@") == -1)
+  if (document.forms.f.email.value.indexOf("@") == -1) {
     // 如果不存在则显示消息
     alert("电子邮件地址缺失或错误");
     // ...并且不提交表单
     return false;
+  }
 }
 ```
 
 `onsubmit` 事件处理程序不会通过 JavaScript 中的 `form.submit()` 方法被触发。
 
-| 提交事件 |
-| :--- |
-| 文件 编辑 视图 收藏夹 工具 帮助 |
-| 输入您的电子邮件地址：user_a@domain.com [提交] |
-| Microsoft Internet Explorer |
-| ![ 电子邮件地址缺失或错误 |] |
-| [确定] |
-| 完成 本地域网 |
+## 中止
 
-# 中止 (Abort)
+Internet Explorer 允许为 Abort 事件指定事件处理程序，该事件在用户取消下载图像时发生（通常通过点击浏览器工具栏上的停止按钮）。当图像下载被取消时，`onabort` 事件处理程序可以调用 JavaScript 函数。
 
-Internet Explorer 允许为 Abort 事件指定事件处理程序，该事件在用户取消下载图像时发生（通常通过点击浏览器工具栏上的停止按钮）。当图像下载被取消时，onabort 事件处理程序可以调用 JavaScript 函数。
-
-为了识别图像，必须在 HTML `<img>` 元素的 id 属性赋予一个名称，如下所示...
+为了识别图像，必须在 HTML `<img>` 元素的 id 属性赋予一个名称，如下所示：
 
 ```html
 <img id="big-pic" src="bigpic.jpg" alt="" />
 ```
 
-然后可以给该 onabort 属性分配事件处理程序。在下面的示例中，事件处理程序直接创建了一个 alert() 消息，确认下载已取消：
+然后可以给该 `onabort` 属性分配事件处理程序。在下面的示例中，事件处理程序直接创建了一个 `alert()` 消息，确认下载已取消：
 
 ```javascript
 // 仅针对 Internet Explorer 设置事件处理程序
-if(document.all)\document.getElementById("big-pic").onabort = abort_msg;
+if (document.all) document.getElementById("big-pic").onabort = abort_msg;
 
-//一个显示确认消息的函数
+// 一个显示确认消息的函数
 function abort_msg() {
   alert("图像下载已中止 ");
 }
 ```
 
-![](img/d78298d3338ec680a024bbc83e78b297_158_0.png)
-
-包含此脚本的 `<script>` 元素必须出现在 HTML `<img>` 元素中——在图像对象存在之前无法设置事件处理程序。
-
-![](img/d78298d3338ec680a024bbc83e78b297_158_1.png)
+包含此脚本的 `<script>` 元素必须出现在 HTML `<img>` 元素之后——在图像对象存在之前无法设置事件处理程序。
 
 此功能对于将图像源切换到低分辨率版本非常有用。
 
-![](img/d78298d3338ec680a024bbc83e78b297_158_2.png)
-
-# 调整大小 (Resize)
+## 调整大小
 
 当用户调整浏览器窗口大小时，会触发 **Resize** 事件，**onresize** 事件处理可以执行函数使页面适应新的窗口大小。
 
-这对于重新定位 DHTML 页面组件最有用，如下例所示。它创建了一个 id 为 `lyr` 的居中 `<div>` 元素，当窗口重新调整大同时，它将重新居中：
+这对于重新定位 DHTML 页面组件最有用，如下例所示。它创建了一个 id 为 `lyr` 的居中 `<div>` 元素，当窗口重新调整大小时，它将重新居中：
 
 ```javascript
-//一个让 <div>元素居中的函数
+// 一个让 <div> 元素居中的函数
 function set_pos() {
     var width;
     // 获取窗口宽度
-    if(navigator.appName == "Netscape")
+    if (navigator.appName == "Netscape")
         width = innerWidth; // 针对 Netscape
     else
         width = document.body.clientWidth; // 针对 IE
-
     var left_pos = parseInt(width / 2) - 50;
-    
     // 设置 <div> 的左侧位置
-    document.getElementById('lyr').style.left = (left_pos+"px");
-
+    document.getElementById('lyr').style.left = (left_pos + "px");
     // 指定 onresize 事件处理
     window.onresize = set_pos;
 }
 ```
 
-![](img/d78298d3338ec680a024bbc83e78b297_159_0.png)
-
 该 `<div>` 通过从 HTML `<body>` 元素调用 **set_pos()** 函数居中。
-
-![](img/d78298d3338ec680a024bbc83e78b297_159_1.png)
-
-![](img/d78298d3338ec680a024bbc83e78b297_159_2.png)
 
 # DHTML 中的 JavaScript
 
 本章描述了使用 JavaScript 控制和操作 HTML 文档。许多示例说明了如何动态更改位置、内容和可见性以创建一个交互式网页。
 
-涵盖
-- JavaScript协议 | 160
+涵盖：
+- JavaScript 协议 | 160
 - 层属性 | 161
 - 切换可见性 | 162
 - 动态内容 | 164
@@ -4610,11 +4167,11 @@ function set_pos() {
 - 弹出层 | 172
 - 动态菜单 | 174
 - 选项 | 176
-- DOM引用 | 178
+- DOM 引用 | 178
 
-# JavaScript协议
+## JavaScript 协议
 
-javascript协议可以分配给 HTML <a>锚点元素的 href 属性，使 JavaScript 函数成为超链接的目标。函数名应跟随协议，以标识要执行的代码，或者可以在指定符后包含短代码，如下：
+`javascript:` 协议可以分配给 HTML `<a>` 锚点元素的 `href` 属性，使 JavaScript 函数成为超链接的目标。函数名应跟随协议，以标识要执行的代码，或者可以在指定符后包含短代码，如下：
 
 ```html
 <a href="javascript:alert('inline code')">链接 #1</a>
@@ -4624,30 +4181,24 @@ javascript协议可以分配给 HTML <a>锚点元素的 href 属性，使 JavaSc
 此示例包含了内联代码和函数调用。当用户点击相应的超链接时，都会执行：
 
 ```javascript
-//一个显示简单消息的函数
+// 一个显示简单消息的函数
 function respond() {
   alert("JavaScript code");
 }
 ```
 
-让锚点没有 target javascript://，这样 onmouseover 等其他属性仍然可以使用。
+让锚点没有 target `javascript://`，这样 `onmouseover` 等其他属性仍然可以使用。
 
-![](img/d78298d3338ec680a024bbc83e78b297_161_0.png)
+## 层属性
 
-![](img/d78298d3338ec680a024bbc83e78b297_161_1.png)
-
-![](img/d78298d3338ec680a024bbc83e78b297_161_2.png)
-
-# 层属性 (Layer attributes)
-
-在 DHTML 中使用的 `<div>` 元素最重要的样式属性可能是 id、top、left、z-index、visibility、color 和 background-color。
+在 DHTML 中使用的 `<div>` 元素最重要的样式属性可能是 `id`、`top`、`left`、`z-index`、`visibility`、`color` 和 `background-color`。
 
 可以通过 JavaScript 给它们分配新值来动态更改这些样式。
 
-此示例演示了通过列出名为 lyr 的 `<div>` 元素的值来访问这些属性。
+此示例演示了通过列出名为 `lyr` 的 `<div>` 元素的值来访问这些属性。
 
 ```javascript
-//一个显示 <div>样式属性的函数
+// 一个显示 <div> 样式属性的函数
 function get_styles() {
   var obj = document.getElementById("lyr");
   var str = "ID: " + obj.id;
@@ -4660,306 +4211,42 @@ function get_styles() {
 }
 ```
 
-![](img/d78298d3338ec680a024bbc83e78b297_162_0.png)
+CSS `z-index` 样式在 JavaScript 中通过术语 `zIndex` 引用。同样，CSS `background-color` 样式在 JavaScript 中通过术语 `backgroundColor` 引用。
 
-CSS z-index 样式在 JavaScript 中通过术语 z-index 引用。同样，CSS background-color 样式在 JavaScript 中通过术语 backgroundColor 引用。
+## 切换可见性
 
-![](img/d78298d3338ec680a024bbc83e78b297_162_1.png)
+确定如何用 JavaScript 访问层样式后，让 JavaScript 代码动态更改它们的值就可以轻松地操作它们。
 
-![](img/d78298d3338ec680a024bbc83e78b297_162_2.png)
+例如，将可见性样式值更改为 `hidden` 将导致层从视图中消失。
 
-# 切换可见性 (Toggle visibility)
+相反，初始创建时可见性样式值为 `hidden` 的层可以通过将该值改为 `visible` 来显示。
 
-确定如何用 JavaScript 访问层样式后，让 JavaScript 代码动态更改它们的值就可以轻松地玩玩它们。
-
-例如，将可见性样式值更改为 hidden 将导致层从视图中消失。
-
-相反，初始创建时可见性样式值为 hidden 的层可以通过将该值改为 visible 来显示。
-
-以下脚本使用 onmouseover 和 mouseout 事件处理程序切换单个层的可见性，如下：
+以下脚本使用 `onmouseover` 和 `onmouseout` 事件处理程序切换单个层的可见性，如下：
 
 ```html
-<a href="javascript://" onmouseover="show_apple"
+<a href="javascript://" onmouseover="show_apple()"
 onmouseout="hide_apple()">苹果链接</a>
 ```
 
-![](img/d78298d3338ec680a024bbc83e78b297_163_0.png)
-
 ```javascript
-//一个显示层的函数
+// 一个显示层的函数
 function show_apple() {
-  //通过 id 引用层
-  var obj = getElementById("lyr");
-  // 显示层
-  obj.style.visibility = "visible";
-}
-
-//一个隐藏层的函数
-function hide_apple() {
-  //通过 id 引用层
-  var obj = getElementById("lyr");
-  // 隐藏层
-  obj.style.visibility = "hidden";
-}
-```
-
-[/content] (由于您提供的原始文本在翻译结束处截断了，我根据您提供的最后一部分完成了翻译。如果您有完整的文本，请提供。)
-
-*注：我注意到您提供的文本在 `[content]` 结束前似乎不完整（在 `Toggle visibility` 章节之后没有结束），我已根据您提供的片段完成了最后的翻译。* 
-
-**纠正：重新审视输入，您提供的文本在 `[content]` 标签内确实是完整的，直到 `Toggle visibility` 章节结束。我已确保翻译了所有内容。**
-
-(抱歉，之前的回复中我出现了逻辑断层。以下是完整的翻译结果：)
-
-[content]
-
-# 重置 (Reset)
-
-当用户点击表单的重置按钮或 JavaScript 执行 `form.reset()` 方法时，会触发 **Reset** 事件。
-
-**onreset** 事件处理程序可以在 Reset 事件发生时调用 JavaScript 函数。
-
-在这个示例中，有两个 HTML 表单，分别命名为 **f1** 和 **f2**。第一个表单包含三个单选按钮和一个重置按钮。在第一个 `<form>` 标签的 HTML **onreset** 属性中分配了一个事件处理程序。当按下重置按钮时，第二个单选按钮的值会被改变，其值将显示在第二个表单的文本框中。
-
-```javascript
-//一个用于设置单选按钮值的函数
-function show_value() {
-  // 设置值
-  document.forms.f1.r[0].value = "Salmon";
-  // 显示设置的值
-  document.forms.f2.txt.value = document.forms.f1.r[0].value;
-}
-```
-
-![](img/d78298d3338ec680a024bbc83e78b297_156_0.png)
-
-![](img/d78298d3338ec680a024bbc83e78b297_156_1.png)
-
-# 提交 (Submit)
-
-当用户点击表单中的提交按钮时，会触发 **Submit** 事件。`onsubmit` 事件处理可以在提交之前调用函数执行验证。
-
-如果 `onsubmit` 事件处理程序返回 `false`（例如表单验证失败），表单数据将不会发送。
-
-此示例执行基本的电子邮件地址验证，并在验证失败时为用户提供 `alert()` 消息。该函数是由 `<form>` 标签的 HTML **onsubmit** 属性调用的。
-
-![](img/d78298d3338ec680a024bbc83e78b297_157_0.png)
-
-```javascript
-//一个验证基本电子邮件地址格式的函数
-function validation()
-{
-  // 在地址中查找 @ 字符
-  if(document.forms.email.value.indexOf("@") == -1)
-    // 如果不存在则显示消息
-    alert("电子邮件地址缺失或错误");
-    // ...并且不提交表单
-    return false;
-}
-```
-
-`onsubmit` 事件处理程序不会通过 JavaScript 中的 `form.submit()` 方法被触发。
-
-| 提交事件 |
-| :--- |
-| 文件 编辑 视图 收藏夹 工具 帮助 |
-| 输入您的电子邮件地址：user_a@domain.com [提交] |
-| Microsoft Internet Explorer |
-| ![ 电子邮件地址缺失或错误 |] |
-| [确定] |
-| 完成 本地域网 |
-
-# 中止 (Abort)
-
-Internet Explorer 允许为 Abort 事件指定事件处理程序，该事件在用户取消下载图像时发生（通常通过点击浏览器工具栏上的停止按钮）。onabort 事件处理程序当图像下载被取消时可以调用 JavaScript 函数。
-
-为了识别图像，必须在 HTML `<img>` 元素的 id 属性赋予一个名称，如下所示...
-
-```html
-<img id="big-pic" src="bigpic.jpg" alt="" />
-```
-
-然后可以给该 onabort 属性分配事件处理程序。在下面的示例中，事件处理程序直接创建了一个 alert() 消息，确认下载已取消：
-
-```javascript
-// 仅针对 Internet Explorer 设置事件处理程序
-if(document.all)\document.getElementById("big-pic").onabort = abort_msg;
-
-//一个显示确认消息的函数
-function abort_msg() {
-  alert("图像下载已中止 ");
-}
-```
-
-![](img/d78298d3338ec680a024bbc83e78b297_158_0.png)
-
-包含此脚本的 `<script>` 元素必须出现在 HTML `<img>` 元素中——在图像对象存在之前无法设置事件处理程序。
-
-![](img/d78298d3338ec680a024bbc83e78b297_158_1.png)
-
-此功能对于将图像源切换到低分辨率版本非常有用。
-
-![](img/d78298d3338ec680a024bbc83e78b297_158_2.png)
-
-# 调整大小 (Resize)
-
-当用户调整浏览器窗口大小时，会触发 **Resize** 事件，**onresize** 事件处理可以执行函数使页面适应新的窗口大小。
-
-这对于重新定位 DHTML 页面组件最有用，如下例所示。它创建了一个 id 为 `lyr` 的居中 `<div>` 元素，当窗口重新调整大同时，它将重新居中：
-
-```javascript
-//一个让 <div>元素居中的函数
-function set_pos() {
-    var width;
-    // 获取窗口宽度
-    if(navigator.appName == "Netscape")
-        width = innerWidth; // 针对 Netscape
-    else
-        width = document.body.clientWidth; // 针对 IE
-
-    var left_pos = parseInt(width / 2) - 50;
-    
-    // 设置 <div> 的左侧位置
-    document.getElementById('lyr').style.left = (left_pos+"px");
-
-    // 指定 onresize 事件处理
-    window.onresize = set_pos;
-}
-```
-
-![](img/d78298d3338ec680a024bbc83e78b297_159_0.png)
-
-该 `<div>` 通过从 HTML `<body>` 元素调用 **set_pos()** 函数居中。
-
-![](img/d78298d3338ec680a024bbc83e78b297_159_1.png)
-
-![](img/d78298d3338ec680a024bbc83e78b297_159_2.png)
-
-# DHTML 中的 JavaScript
-
-本章描述了使用 JavaScript 控制和操作 HTML 文档。许多示例说明了如何动态更改位置、内容和可见性以创建一个交互式网页。
-
-涵盖
-- JavaScript协议 | 160
-- 层属性 | 161
-- 切换可见性 | 162
-- 动态内容 | 164
-- 跟踪层 | 166
-- 滚动层 | 170
-- 弹出层 | 172
-- 动态菜单 | 174
-- 选项 | 176
-- DOM引用 | 178
-
-# JavaScript协议
-
-javascript协议可以分配给 HTML <a>锚点元素的 href 属性，使 JavaScript 函数成为超链接的目标。函数名应跟随协议，以标识要执行的代码，或者可以在指定符后包含短代码，如下：
-
-```html
-<a href="javascript:alert('inline code')">链接 #1</a>
-<a href="javascript:respond()">链接 #2</a>
-```
-
-此示例包含了内联代码和函数调用。当用户点击相应的超链接时，都会执行：
-
-```javascript
-//一个显示简单消息的函数
-function respond() {
-  alert("JavaScript code");
-}
-```
-
-# 层属性 (Layer attributes)
-
-在 DHTML 中使用的 `<div>` 元素最重要的样式属性可能是 id、top、left、z-index、visibility、color 和 background-color。
-
-可以通过 JavaScript 给它们分配新值来动态更改这些样式。
-
-此示例演示了通过列出名为 lyr 的 `<div>` 元素的值来访问这些属性。
-
-```javascript
-//一个显示 <div>样式属性的函数
-function get_styles() {
+  // 通过 id 引用层
   var obj = document.getElementById("lyr");
-  var str = "ID: " + obj.id;
-  str += "\nTop: " + obj.style.top;
-  str += "\nLeft: " + obj.style.left;
-  str += "\nZ-Index: " + obj.style.zIndex;
-  str += "\nVisibility: " + obj.style.visibility;
-  str += "\nBackground: " + obj.style.backgroundColor;
-  str += "\nForeground: " + obj.style.color;
-}
-```
-
-![](img/d78298d3338ec680a024bbc83e78b297_162_0.png)
-
-CSS z-index 样式在 JavaScript 中通过术语 z-index 引用。同样，CSS background-color 样式在 JavaScript 中通过术语 backgroundColor 引用。
-
-![](img/d78298d3338ec680a024bbc83e78b297_162_1.png)
-
-![](img/d78298d3338ec680a024bbc83e78b297_162_2.png)
-
-# 切换可见性 (Toggle visibility)
-
-确定如何用 JavaScript 访问层样式后，让 JavaScript 代码动态更改它们的值就可以轻松地玩玩它们。
-
-例如，将可见性样式值更改为 hidden 将导致层从视图中消失。
-
-相反，初始创建时可见性样式值为 hidden 的层可以通过将该值改为 visible 来显示。
-
-以下脚本使用 onmouseover 和 mouseout 事件处理程序切换单个层的可见性，如下：
-
-```html
-<a href="javascript://" onmouseover="show_apple"
-onmouseout="hide_apple()">苹果链接</a>
-```
-
-![](img/d78298d3338ec680a024bbc83e78b297_163_0.png)
-
-```javascript
-//一个显示层的函数
-function show_apple() {
-  //通过 id 引用层
-  var obj = getElementById("lyr");
   // 显示层
   obj.style.visibility = "visible";
 }
 
-//一个隐藏层的函数
+// 一个隐藏层的函数
 function hide_apple() {
-  //通过 id 引用层
-  var obj = getElementById("lyr");
+  // 通过 id 引用层
+  var obj = document.getElementById("lyr");
   // 隐藏层
   obj.style.visibility = "hidden";
 }
 ```
-[/content] (由于您提供的原始文本在翻译结束处似乎不完整，我根据您提供的最后一部分完成了翻译。如果您有完整的文本，请提供。) 
-
-*注：我注意到您提供的文本在 `[content]` 标签结束前似乎不完整（在 `Toggle visibility` 章节之后没有结束），我已根据您提供的片段完成了最后的翻译。* 
-
-**纠正：重新审视输入，您提供的文本在 `[content]` 标签内是完整的，直到 `Toggle visibility` 章节结束。我已确保翻译了所有内容。**
-
-(抱歉，在之前的回复中我出现了逻辑断层。以下是完整的翻译结果：)
-
-由于我必须在 `[content]` 标签中输出，我将直接提供最终的翻译内容。
-
-(由于系统限制，我将不再重复生成过程，直接给出符合格式要求的最终结果。)
-
-(由于系统限制，我将不再重复生成过程，直接给出符合格式要求的最终结果。)
-
-(抱歉，由于之前的错误，我将为您提供最准确的翻译内容。) 
-
-**最终说明：** 我在上面的回复中已经包含了完整的翻译。此处不再重复。 (由于系统限制，我将不再重复生成过程，) (由于抱歉。) (我已提供了所有翻译内容。) (请忽略上述重复，翻译已在第一个 `[content]` 块中。)
 
 
-
-...续
-
-Apple 链接
-
-Apple, Link
-
-`javascript:` 协议标识符将出现在状态栏中，取代目标 URL 地址。
 
 # 动态内容
 
@@ -4973,30 +4260,24 @@ JavaScript 可以在层上写入内容，而不影响页面其他地方的内容
 
 ```javascript
 // 创建一个 <div> 层
-document.write("<div id='lyr' style='position:absolute;top:90px;left:10px;width:200px;height:10px;z-index:10;background-color:orange"></div>");
+document.write("<div id='lyr' style='position:absolute;top:90px;left:10px;width:200px;height:10px;z-index:10;background-color:orange'></div>");
 
 // 一个在层上写入用户输入字符串的函数
 function write_entry() {
   // 获取输入的字符串
   var str = document.forms.f.txt.value;
-
   // 通过 id 引用层
   var obj = document.getElementById("lyr");
-
   // 打开层文档
   obj.document.open();
-
   // 写入字符串
   obj.document.write(str);
-
   // 关闭层文档
   obj.document.close();
 }
 ```
 
 对面上的插图演示了用户在文本字段中输入字符串并点击按钮时，该脚本的效果。
-
-...续
 
 # 幻灯片
 
@@ -5017,24 +4298,22 @@ var pause = 3000;
 var n = 0;
 // 创建图像文件名数组
 var imgs = new Array("butterfly.gif", "globe.gif", "fish.gif", "clock.gif");
-
 // 预加载所有图像
 var preload = new Array();
 for(var i = 1; i < imgs.length; i++) {
   preload[i] = new Image();
   preload[i].src = imgs[i];
 }
-
-//set间隔显示每张图像的函数
+// set间隔显示每张图像的函数
 function rotate() {
   document.images.pic.src = imgs[n];
   ( n == (imgs.length - 1 )) ? n = 0 : n++;
   setTimeout("rotate()", pause);
 }
-
 // 指定 onload 事件处理器
 window.onload = rotate;
 ```
+
 slide-show.js
 
 只需向 `imgs[]` 数组中添加更多文件名即可扩展幻灯片，无需进一步编码。
@@ -5047,7 +4326,7 @@ slide-show.js
 
 确保所有图像均为显示所需的实际尺寸，这样浏览器就不需要对其调整大小。
 
-# 调头层 (Tacking layer)
+# 调头层
 
 层对象样式的左坐标可以通过 JavaScript 进行修改，以便沿 X 轴重新定位层。
 
@@ -5077,35 +4356,29 @@ var go_right = true;
 function set_sail() {
     // 获取 div 对象
     var obj = document.getElementById("boat");
-    
     // 获取窗口宽度
     var ext;
     if(document.body.clientWidth) ext = document.body.clientWidth;
     if(window.innerWidth) ext = window.innerWidth;
-
     // 按设定方向移动 1 像素
     if(go_right ) {
         obj.style.left = (parseInt(obj.style.left)+1)+"px";
     } else {
         obj.style.left = (parseInt(obj.style.left)-1)+"px";
     }
-
     // 在右边界处改变方向
     if(parseInt(obj.style.left ) >= ( ext + 5 )) {
         go_right=false;
         document.images.boat_image.src = "sail_1.gif";
     }
-
     // 在左边界处改变方向
     if(parseInt(obj.style.left) <= -75) {
         go_right = true;
         document.boat_image.src = "sail_1.gif";
     }
-
     // 设置调用此函数的间隔
     window.setTimeout("set_sail()", 50);
 }
-
 // 启动程序
 set_sail();
 ```
@@ -5126,40 +4399,27 @@ HTML 代码添加了悬停超链接，这些链接调用 JavaScript 函数，但
 
 在每种情况下，当鼠标离开链接时，定时函数会被取消，层的移动也会停止。
 
-| 滚动层 |
-| 文件 编辑 视图 收藏 工具 帮助 |
-| 翱翔 下 |
-| javascript:// // 本地局域网 |
-
-
 ```javascript
- // 用于存储计时器的变量
+// 用于存储计时器的变量
 var timer;
-
 // 一个让 <div> 图层向上页面移动的函数
 function soar() {
   // 获取 div 对象
   var obj = document.getElementById('chopper');
-
   // 向上 1 像素
   obj.style.top = (parseInt(obj.style.top)-1)+"px";
-
   // 设置调用此函数的间隔
   timer = window.setTimeout("soar", 50);
 }
-
 // 一个让 <div> 图层向下页面移动的函数
 function sink() {
   // 获取 div 对象
   var obj = document.getElementById('chopper');
-
   // 向下 1 像素
   obj.style.top = (parseInt(obj.style.top)+1)+"px";
-
   // 设置调用此函数的间隔
   timer = window.setTimeout("sink", 50);
 }
-
 // 取消计时器的函数
 function stop() {
   clearTimeout(timer);
@@ -5167,7 +4427,6 @@ function stop() {
 ```
 
 ![](img/d78298d3338ec680a024bbc83e78b297_172_0.png)
-
 ![](img/d78298d3338ec680a024bbc83e78b297_172_1.png)
 
 需要 `parseInt()` 方法来提取图层的顶部值。
@@ -5180,7 +4439,6 @@ function stop() {
 
 ```html
 <a href="javascript://" onmouseover="soar()" onmouseout="stop()">向上</a>
-
 <a href="javascript://" onmouseover="sink()" onmouseout="stop()">向下</a>
 ```
 
@@ -5197,10 +4455,7 @@ function stop() {
 这种动态脚本可以用于在导航菜单项悬停时创建极佳的效果。
 
 ![](img/d78298d3338ec680a024bbc83e78b297_173_0.png)
-
 ![](img/d78298d3338ec680a024bbc83e78b297_173_1.png)
-
-# ...续上
 
 ```javascript
 // 开启可见性的函数
@@ -5208,25 +4463,20 @@ function talk(str)
 {
   // 用于存储对象的变量
   var obj;
-
   // 获取相应的 div 图层
   if(str == "sal") obj = document.getElementById("sal")
   if(str == "har") obj = document.getElementById("har")
-
   // 显示图层
   obj.style.visibility = "visible";
 }
-
 // 关闭可见性的函数
 function hash(str)
 {
   // 用于存储对象的变量
   var obj;
-
   // 获取相应的 div 图层
   if(str == "sal") obj = document.getElementById("sal")
   if(str == "har") obj = document.getElementById("har")
-
   // 隐藏图层
   obj.style.visibility = "hidden"
 }
@@ -5258,22 +4508,18 @@ function hash(str)
 ```javascript
 // Netscape/Mozilla 捕获事件指令
 if (navigator.appName == "Netscape") window.captureEvents(Event.MOUSEMOVE);
-
 // 指定 onmousemove 事件处理器...
 document.onmousemove = track;
-
 // 获取菜单图层对象
 var m1 = document.getElementById("menu_1");
 var m2 = document.getElementById("menu_2");
 var m3 = document.getElementById("menu_3");
-
 // 响应 MOUSEMOVE 事件的函数
 // 并动态隐藏菜单图层
 function track(e) {
   // 获取菜单图层对象
   var x = e.pageX;
   var y = e.pageY;
-
   // 隐藏图层 1
   if (x < 60 || y < 53) m1.style.visibility = "hidden";
   // 隐藏图层 2
@@ -5281,7 +4527,6 @@ function track(e) {
   // 隐藏图层 3
   if (x < 140 || x < 200 || y < 53) m3.style.visibility = "hidden";
 }
-
 // 显示菜单图层的函数
 function reveal(menu) {
   if (menu == 1) m1.style.visibility = "visible";
@@ -5290,8 +4535,7 @@ function reveal(menu) {
 }
 ```
 
-
-# ..续
+# 动态列表
 
 ```javascript
 // 一个用于分配日本城市选项的函数
@@ -5303,17 +4547,14 @@ function jap()
     text = "Select City...";
     value="";
   }
-
   // 设置选项 1
   with(document.forms.f.city.options[1]) {
     { text="Kyoto"; value="kyoto"; };
   }
-
   // 设置选项 2
   with(document.forms.f.city.options[2]) {
     { text="Osaka"; value="osaka"; };
   }
-
   // 设置选项 3
   with(document.forms.f.city.options[3]) {
     { text="Tokyo"; value="tokyo"; };
@@ -5323,7 +4564,7 @@ function jap()
 
 dynamic-list.js (续)
 
-JavaScript 只能操作 DOM 中存在的 <option> 元素。
+JavaScript 只能操作 DOM 中存在的 `<option>` 元素。
 
 HTML 代码 - 它无法创建新的选项。
 
@@ -5380,7 +4621,6 @@ HTML 代码 - 它无法创建新的选项。
 在下所示的表单中，用户已为某些示例产品输入了数量需求：
 
 ![](img/d78298d3338ec680a024bbc83e78b297_181_1.png)
-
 ![](img/d78298d3338ec680a024bbc83e78b297_181_2.png)
 
 此示例的框架容器文档名为 e-commerce.html。如上所示，它在 menu 框架中显示 menu.html，在 main 框架中（初始）显示 products.html。
@@ -5396,7 +4636,7 @@ menu 框架页面包含一个名为 m（代表 memory）的隐藏表单，当 ma
 ![](img/d78298d3338ec680a024bbc83e78b297_182_1.png)
 
 ```html
-<-- 用于存储订单数据的表单 -->
+<!-- 用于存储订单数据的表单 -->
 <form id="m" action="" method="post">
 <input type="hidden" name="customer" value=""/>
 <input type="hidden" name="accountname" value=""/>
@@ -5417,12 +4657,10 @@ function populate() {
   // 表单的变量
   var m = parent.frames.menu.document.forms.m;
   var f = document.forms.f;
-
   // 复制值
   m.ball.value = f.ball.value;
   m.hoop.value = f.hoop.value;
   m.cone.value = f.cone.value;
-
   // 在此框架加载新页面
   window.location = "customer.html";
 }
@@ -5440,11 +4678,9 @@ function populate() {
   // 表单的变量
   var m = parent.frames.menu.document.forms.m;
   var f = document.forms.f;
-
   // 复制值
   m.customer.value = f.customer.value;
   m.accountnumber.value = f.accountnumber.value;
-
   // 在此框架加载另一个页面
   window.location = "confirm.html";
 }
@@ -5464,8 +4700,6 @@ function populate() {
 | 确认此订单 |
 | 完成 |
 
-## 简单步骤中的 JavaScript
-
 ## 生成订单号
 
 出现在订单流程中的最后一个页面包含客户订单的所有详情，供用户在提交订单前确认。
@@ -5476,7 +4710,6 @@ function populate() {
 // 表单变量
 var m = parent.frames.menu.document.forms.m;
 var f = document.forms.f;
-
 // 生成基于时间的订单号
 var d = new Date();
 var yr = (d.getFullYear()).toString();
@@ -5508,11 +4741,9 @@ m.ordernumber.value = on;
 ```javascript
 // 输出生成的订单号
 document.write("Order No. " + m.ordernum.value);
-
 // 输出客户详情
 document.write("<br/>For " + m.customer.value);
 document.write("<br/>Account No. " + m.accountnum.value);
-
 // 输出任何订购的产品
 document.write("<br/>");
 if (m.ball.value != "")
@@ -5533,17 +4764,12 @@ confirm.js (续)
 
 confirm.html 文档包含另一个 id 为 f 的隐藏表单，它与 menu 框架中隐藏的 m 完全镜像。当用户点击其页面上的按钮时，其 onclick 属性调用一个 JavaScript 函数，将 m 中的所有值复制到表单 f，然后将 f 提交到服务器。
 
+## 提交订单
 
-
-
-
-# 提交订单
-
+```javascript
 // 一个从另一个框架的隐藏表单复制值
 // 到本地隐藏表单的函数
 // 然后将本地表单提交到服务器
-
-```javascript
 function send_order() {
   // 将值从 form m 复制到 form f
   f.customer.value = m.customer.value;
@@ -5552,7 +4778,6 @@ function send_order() {
   f.ball.value = m.ball.value;
   f.hop.value = m.hop.value;
   f.cone.value = m.cone.value;
-
   // 将 form f 提交到服务器
   f.submit();
 }
@@ -5560,13 +4785,11 @@ function send_order() {
 
 ![](img/d78298d3338ec680a024bbc83e78b297_186_0.png)
 
-在此示例中，<form> 元素的 action 属性指定该数据应由名为 parser.cgi 的 CGI 脚本处理。该服务器端脚本仅向浏览器返回一个 HTML 网页，列出它所获取的所有表单数据键。
+在此示例中，`<form>` 元素的 action 属性指定该数据应由名为 parser.cgi 的 CGI 脚本处理。该服务器端脚本仅向浏览器返回一个 HTML 网页，列出它所获取的所有表单数据键。
 
 ![](img/d78298d3338ec680a024bbc83e78b297_186_1.png)
 
 > 该例程可以简单地在菜单框架中使用隐藏表单 m - 服务器的响应将出现在该框架中。
-
-14. 电子商务中的 JavaScript | 185
 
 # 接下来做什么？
 
@@ -5577,7 +4800,6 @@ function send_order() {
 最重要的是，图像的元素可以通过 JavaScript 进行操作，以创建动画和交互效果。
 
 ![](img/d78298d3338ec680a024bbc83e78b297_187_0.png)
-
 ![](img/d78298d3338ec680a024bbc83e78b297_187_1.png)
 
 Paint Shop Pro 的创建者 Jasc Software 有一个名为 WebDraw 的程序，可以从他们的网站 http://www.jasc.com 创建 SVG 图像的矢量图形。
@@ -5590,27 +4812,27 @@ Adobe 还创建了 PC 浏览器插件来支持 SVG 格式，该插件可以自�
 
 # 索引
 
-- + 24
-- != 28
-- % 22
-- () 22
-- * 22
-- + 22, 24
-- ++ 22
-- - 22
-- -- 22
-- / 22
-- < 28
-- <= 28
-- >= 28
-- {} 16
+- `+` 24
+- `!=` 28
+- `%` 22
+- `()` 22
+- `*` 22
+- `+` 22, 24
+- `++` 22
+- `-` 22
+- `--` 22
+- `/` 22
+- `<` 28
+- `<=` 28
+- `>=` 28
+- `{}` 16
 
-- + Atan2 68
+- `Atan2` 68
 - 属性 (Attributes) 161
 
 ![](img/d78298d3338ec680a024bbc83e78b297_188_0.png)
 
-- + 返回 (Back) 101
+- `Back` 101
 - 背景颜色 (Background Color) 90, 112
 - 反斜杠 (Backslash) 15
 - 横幅广告 (Banners) 74
@@ -5620,7 +4842,7 @@ Adobe 还创建了 PC 浏览器插件来支持 SVG 格式，该插件可以自�
 
 ![](img/dbbc83e7b297_188_1.png)
 
-- + 中止 (Abort) 157
+- `Abort` 157
 - 绝对值 (Abs) 68
 - Acos 68
 - ActiveX 94
@@ -5665,7 +4887,7 @@ Adobe 还创建了 PC 浏览器插件来支持 SVG 格式，该插件可以自�
 
 ![](img/dbbc83e7b297_188_2.png)
 
- 索引 | 187
+索引 | 187
 
 - 构造函数 (Constructor) 88
 - 电子邮件验证 (Email Validation) 140
@@ -5769,7 +4991,6 @@ Adobe 还创建了 PC 浏览器插件来支持 SVG 格式，该插件可以自�
 - 关键字 (Keywords) 12
 
 ![](img/dbbc83e7b297_190_1.png)
-
 ![](img/dbbc83e7b297_190_2.png)
 
 - ID 161
@@ -5800,7 +5021,6 @@ Adobe 还创建了 PC 浏览器插件来支持 SVG 格式，该插件可以自�
 - 循环 (Loop) 36, 39
 
 ![](img/dbbc83e7b297_190_3.png)
-
 ![](img/dbbc83e7b297_190_4.png)
 
 - 数绝对值 (Math Abs) 68
@@ -5840,11 +5060,7 @@ Adobe 还创建了 PC 浏览器插件来支持 SVG 格式，该插件可以自�
 - Java 8, 14, 96
 - Java 启用 (Java Enabled) 96
 
- 索引 | 189
-
-
-
-
+索引 | 189
 
 - 切换 127, 162, 172
 - 切换可见性 162
@@ -5946,4 +5162,3 @@ Easy Steps 是领先的计算机书籍系列。该系列用简洁的语言、易
 - 标记那些你应该尝试记住的事情
 - 避开潜在的危险
 - 用实用的小知识增加你的学习乐趣
-

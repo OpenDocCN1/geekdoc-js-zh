@@ -1,35 +1,16 @@
+
 # 现代 Web 开发 JavaScript：使用 HTML、CSS 和 JavaScript 构建 Web 应用 (英文版)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 # 献给
 
 我们的父母
+
 他们给了我们立足大地的根和高飞的翅膀
+
 已故 Arun Kumar Thakur 先生和 Nilu Thakur 女士
+
 Ajit Kumar 先生和 Usha Sinha 女士
+
 Narayan Battewad 先生和已故 Suwarna Battewad 女士
 
 # 关于作者
@@ -42,7 +23,7 @@ Alok Ranjan 毕业于德里理工学院（IIT Delhi），计算机科学与工�
 - https://walkingtree.tech/author/wtalok/
 - https://github.com/wtcalok
 
-Abhilasha Sinha 毕业于奥斯曼尼亚大学（Osmania University），计算机科学学士。2003年毕业后，她在 Infosys 开始软件工程师职业生涯。在长达12年的充实合作中，她担任高级技术架构师。她从 Java 开发人员起步，后来转向 Oracle 应用，并从事过 BPEL 和 OSB 等中间件技术。她在2016年加入 Walking Tree，在那里继续探索新技术，并使用 React.js、Angular 和 Node.js 等最新技术和框架为企业提供端端的定制 Web 应用。她还参与了 React 和 Angular 等现代 Web 框架的培训。在不探索新事物时，这位两个孩子的母亲喜欢与家人共度时光。
+Abhilasha Sinha 毕业于奥斯曼尼亚大学（Osmania University），计算机科学学士。2003年毕业后，她在 Infosys 开始软件工程师职业生涯。在长达12年的充实合作中，她担任高级技术架构师。她从 Java 开发人员起步，后来转向 Oracle 应用，并从事过 BPEL 和 OSB 等中间件技术。她在2016年加入 Walking Tree，在那里继续探索新技术，并使用 React.js、Angular 和 Node.js 等最新技术和框架为企业提供端到端的定制 Web 应用。她还参与了 React 和 Angular 等现代 Web 框架的培训。在不探索新事物时，这位两个孩子的母亲喜欢与家人共度时光。
 
 有用链接：
 
@@ -52,40 +33,25 @@ Abhilasha Sinha 毕业于奥斯曼尼亚大学（Osmania University），计算�
 
 Ranjit Battewad 拥有 9 年以上全栈和移动应用开发经验。在 WalkingTree Technologies 工作 8 年以上，在定义和塑造具有重要意义且可衡量的影响的技术产品方面发挥了作用。
 
+## 目录
 
+- 第 4 章讨论了 JavaScript 基础，作为 Web 的多功能脚本语言，内容从变量到函数以及事件处理。
+- 第 5 章讨论了函数式编程范式，它关注的是计算输出而非执行操作，即关注“做什么”而不是“如何做”，并使用 JavaScript 处理函数式编程。
+- 第 6 章描述了面向对象编程 (OOP) 的强大，它让你能够开始处理现实世界的实体或对象，并理解 JavaScript 中的 OOP。
+- 第 7 章描述了什么是异步流以及如何在 JavaScript 中实现它。
+- 第 8 章介绍了 ECMAScript 标准，并描述了 JavaScript 的新特性 (ES2019) 以及 ES2015 (ES6) 的核心变化，并附带如何在应用程序中使用这些特性的示例。
+- 第 9 章解释了从零开始构建完整应用程序的过程，以利用目前所掌握的 HTML、CSS 和 JavaScript 知识。
+- 第 10 章描述了如何调试、添加日志、如何查看不同的 DOM 元素以及跟踪 JavaScript 应用程序中值的变化。
+- 第 11 章解释了单元测试的必要性，以及如何使用 Jasmine 等 JavaScript 测试框架为 Web 开发实现自动化。
+- 第 12 章涵盖了将静态应用程序托管在云平台上的详细步骤，以便可以通过 URL 访问您的应用程序。
+- 第 13 章涵盖了任何应用程序开发应遵循的通用 JavaScript 最佳实践，以及一些有助于实施标准的非常有用的工具。
+- 第 14 章介绍了 React 的核心概念，React 是用于构建高性能用户界面强大 JS 库。
+- 第 15 章解释了如何使用 React 进行新应用程序开发，并通过使用 React 构建一个真实的应用程序。
+- 第 16 章描述了用于状态管理的 Redux 流程，并修改 React 应用程序以引入 Redux 管理全局状态。
+- 第 17 章解释了如何调试、单元测试和部署 React 应用程序。
+- 第 18 章介绍了一些基于不同领域的额外主题，这些主题对于向下一次跨越成为专业人士并构建企业级应用至关重要。
 
-
-第 4 章讨论了 JavaScript 基础，作为 Web 的多功能脚本语言，内容从变量到函数以及事件处理。
-
-第 5 章讨论了函数式编程范式，它关注的是计算输出而非执行操作，即关注“做什么”而不是“如何做”，并使用 JavaScript 处理函数式编程。
-
-第 6 章描述了面向对象编程 (OOP) 的强大，它让你能够开始处理现实世界的实体或对象，并理解 JavaScript 中的 OOP。
-
-第 7 章描述了什么是异步流以及如何在 JavaScript 中实现它。
-
-第 8 章介绍了 ECMAScript 标准，并描述了 JavaScript 的新特性 (ES2019) 以及 ES2015 (ES6) 的核心变化，并附带如何在应用程序中使用这些特性的示例。
-
-第 9 章解释了从零开始构建完整应用程序的过程，以利用目前所掌握的 HTML、CSS 和 JavaScript 知识。
-
-第 10 章描述了如何调试、添加日志、如何查看不同的 DOM 元素以及跟踪 JavaScript 应用程序中值的变化。
-
-第 11 章解释了单元测试的必要性，以及如何使用 Jasmine 等 JavaScript 测试框架为 Web 开发实现自动化。
-
-第 12 章涵盖了将静态应用程序托管在云平台上的详细步骤，以便可以通过 URL 访问您的应用程序。
-
-第 13 章涵盖了任何应用程序开发应遵循的通用 JavaScript 最佳实践，以及一些有助于实施标准的非常有用的工具。
-
-第 14 章介绍了 React 的核心概念，React 是用于构建高性能用户界面强大 JS 库。
-
-第 15 章解释了如何使用 React 进行新应用程序开发，并通过使用 React 构建一个真实的应用程序。
-
-第 16 章描述了用于状态管理的 Redux 流程，并修改 React 应用程序以引入 Redux 管理全局状态。
-
-第 17 章解释了如何调试、单元测试和部署 React 应用程序。
-
-第 18 章介绍了一些基于不同领域的额外主题，这些主题对于向下一次跨越成为专业人士并构建企业级应用至关重要。
-
-## 下载代码包和彩色图片：
+## 下载代码包和彩色图片
 
 请点击链接下载本书的代码包和彩色图片：
 
@@ -99,24 +65,24 @@ errata@bpbonline.com
 
 BPB Publications 全体非常感谢您的支持、建议和反馈。
 
+# 第 4 章：JavaScript 基础
+
+## 结构
 
 - 结论
 - 问题
-
-
-
 - 目标
 - JS 的构建块
   - 变量
     - 全局作用域
     - 局部作用域
-- 运算符
+  - 运算符
   - 注释
   - 函数
     - 什么是函数？
     - 函数表达式
     - 函数声明与表达式
-- 数组
+  - 数组
   - 与 DOM 交互
     - 节点相关方法
     - 访问元素
@@ -124,35 +90,42 @@ BPB Publications 全体非常感谢您的支持、建议和反馈。
     - 属性相关
 - 问题
 
+# 第 5 章：函数式编程
 
-- 结构
+## 结构
+
 - 函数式编程
   - 声明式样式/函数式
 - 使用函数式编程
 - 函数式编程的主要概念
-    - 纯函数的好处
-  - 高阶函数
-    - 递归
-  - 引用透明性
-    - 存储在变量中
-    - 作为参数传递给其他函数
+  - 纯函数的好处
+- 高阶函数
+  - 递归
+- 引用透明性
+  - 存储在变量中
+  - 作为参数传递给其他函数
 - 函数式语言的局限性
 - 结论
 
-# 6. 面向对象的 JavaScript
-- 结构
+# 第 6 章：面向对象的 JavaScript
+
+## 结构
+
 - 目标
 - 类
 - 构造函数
 - 对象
 - 类表达式
 - 继承
-- 在构造函数中使用 super
+- 在构造函数中使用 `super`
 - 调用父函数
 - 继承内置对象
 - 结论
 - 问题
 
+# 第 7 章：异步 JavaScript
+
+## 结构
 
 - 目标
 - JavaScript 中的异步性
@@ -166,33 +139,35 @@ BPB Publications 全体非常感谢您的支持、建议和反馈。
 - 结论
 - 问题
 
+# 第 8 章：ECMAScript 标准与新特性
+
+## 结构
 
 - 目标
 - ECMAScript 标准化
-- 将变量从 var 到 const/let
+- 将变量从 `var` 到 `const`/`let`
 - 箭头函数的威力
 - 模板字串
 - 处理参数
 - 符号 (Symbols)
 - 解构赋值
 - 类
-- Array.prototype.{flat,flatMap}
-- Array.flat())
-- Object.fromEntries
+- `Array.prototype.{flat,flatMap}`
+- `Array.flat()`
+- `Object.fromEntries`
 - ES2019 JavaScript – Minor新特性
-- String.trimStart()
-- String.trimEnd())
+- `String.trimStart()`
+- `String.trimEnd()`
 - 可选类绑定
-- 新 Function.toString()
-- 格式良好的 JSON.stringify()
-- 稳定的 Array.prototype.sort()
+- 新 `Function.toString()`
+- 格式良好的 `JSON.stringify()`
+- 稳定的 `Array.prototype.sort()`
 - 结论
 
+# 第 9 章：构建完整应用程序
 
+## 结构
 
-
-
-- 结构
 - 目标
 - 解决方案思路
 - 逐步构建应用程序
@@ -203,7 +178,10 @@ BPB Publications 全体非常感谢您的支持、建议和反馈。
 - 步骤 7 – 应用页逻辑
 - 结论
 - 问题
-# 10. JavaScript 的调试
+
+# 第 10 章：JavaScript 的调试
+
+## 结构
 
 - 目标
 - 浏览器开发者工具
@@ -216,26 +194,30 @@ BPB Publications 全体非常感谢您的支持、建议和反馈。
 - 内存 (Memory)
 - 审计 (Audit)
 - 调试过程
-- 使用 console.log 语句
+- 使用 `console.log` 语句
 - 如何添加断点？
 - 结论
 - 问题
 
+# 第 11 章：单元测试与 Jasmine
 
-- 结构
+## 结构
+
 - 目标
 - Jasmine 简介
   - Jasmine 安装与配置
   - Jasmine 基础结构
-    - it
-    - beforeEach 和 afterEach
-    - expect
+    - `it`
+    - `beforeEach` 和 `afterEach`
+    - `expect`
 - 异步测试
 - 结论
 - 问题
-# 12. 构建并部署应用程序
 
-- 结构
+# 第 12 章：构建并部署应用程序
+
+## 结构
+
 - 为什么要部署？
 - 准备部署
   - 针对 HTML/CSS/JS 应用程序
@@ -246,26 +228,25 @@ BPB Publications 全体非常感谢您的支持、建议和反馈。
 - 替代方法
 - 结论
 - 问题
-# 13. JavaScript 最佳实践
 
-- 结构
+# 第 13 章：JavaScript 最佳实践
+
+## 结构
+
 - 目标
   - 可读性
   - 命名规范
-
-
-对象指南
-
+- 对象指南
 - 避免全局变量
 - 遵循严格的编码风格
 - 编写模块化代码 — 单责任原则
 - 始终初始化变量
 - 避免过度嵌套
 - 优化循环逻辑
-- 使用 === 进行比较
-- 区分 null 和 undefined
+- 使用 `===` 进行比较
+- 区分 `null` 和 `undefined`
 - 始终使用分号
-- 在 switch 语句中使用 default
+- 在 `switch` 语句中使用 `default`
 - JSON 和对象定义中的末尾逗号
 - HTML 和 CSS 最佳实践
 - 维护整洁且可读的代码结构
@@ -280,12 +261,14 @@ BPB Publications 全体非常感谢您的支持、建议和反馈。
 - 最佳实践建议
 - 结论
 - 问题
-# 14. React 简介
 
-- 结构
+# 第 14 章：React 简介
+
+## 结构
+
 - 目标
 - 入门 React
-- src
+- `src`
 - React 和 React-DOM
 - JSX 简介
 - 元素、组件和 props
@@ -295,7 +278,7 @@ BPB Publications 全体非常感谢您的支持、建议和反馈。
     - 有状态组件与无状态组件
   - Props
   - 使用 Props 在组件间传递方法引用
-- 、生命周期和虚拟 DOM
+- 状态、生命周期和虚拟 DOM
   - 状态 (State)
   - 操作状态
   - 生命周期方法
@@ -311,13 +294,14 @@ BPB Publications 全体非常感谢您的支持、建议和反馈。
   - 受控表单
 - 组合 (Composition)
 - Hooks
-  - useEffect hook
+  - `useEffect` hook
   - Hooks 如何复用？
 - 结论
 
-# 15. 使用 React 构建应用程序
+# 第 15 章：使用 React 构建应用程序
 
-- 结构
+## 结构
+
 - 以 React 思维来处理 UI 开发
 - 要求与应用设计
 - 前提条件与入门
@@ -330,19 +314,22 @@ BPB Publications 全体非常感谢您的支持、建议和反馈。
 - 步骤 8
 - 问题
 
-# 16. React 应用中的状态管理
+# 第 16 章：React 应用中的状态管理
+
+## 结构
 
 - 目标
 - 状态管理
-- Redux 
+- Redux
 - 为什么需要中间件？
 - 设置并为 React 应用程序提供 Redux store
 - React 组件连接 Redux store
 - 结论
 
-# 17. React 的调试、测试与部署
+# 第 17 章：React 的调试、测试与部署
 
-- 结构
+## 结构
+
 - 调试 React 应用程序
 - React 开发者工具
 - Redux 开发者工具
@@ -352,9 +339,11 @@ BPB Publications 全体非常感谢您的支持、建议和反馈。
 - 部署 React 应用程序
 - 结论
 - 问题
-# 18. 下一步计划 - 如何成为专家？
 
-- 结构
+# 第 18 章：下一步计划 - 如何成为专家？
+
+## 结构
+
 - 目标
 - 构建移动应用
 - 模板引擎
@@ -372,137 +361,125 @@ BPB Publications 全体非常感谢您的支持、建议和反馈。
 
 # 第一章：JavaScript 的历史以及它如何彻底改变 Web 开发
 
-
 1989 年，蒂姆·伯纳斯-李预见到需要一种能够在全球范围内共享信息的管理系统，并提交了相关的提案。他的老板迈克·Sendall 的回复是“模糊但令人兴奋”，他获得了继续的许可。他设计了一种访问其他计算机信息的新方法，并将其创建的作品命名为万维网（World Wide Web）。
 
 到 1990 年 10 月，蒂姆已经写成了万维网坚实基础的三大核心技术：
+
 - **HTML 标记语言 (HTML)：** 它是用于创建网页内容的标记语言。
 - **统一资源标识符 (URI)：** 它是用于识别 Web 上每个资源的唯一地址，通常称为 URL（统一资源定位符）。
 - **超文本传输协议 (HTTP)：** 它是访问 Web 跨链接资源的协议。
 
-
-蒂姆·伯纳斯-李爵创立了万维网联盟（W3C），以确保网页对所有人开放且可访问。他对比万维网的愿景是一个开放、通用的空间，任何人都可以自由地表达自己的想法并展示他们的创意。这种自由引发了世界令人惊叹的变革，在过去的三十里创造了创新的巅峰。
+蒂姆·伯纳斯-李爵创立了万维网联盟（W3C），以确保网页对所有人开放且可访问。他对比万维网的愿景是一个开放、通用的空间，任何人都可以自由地表达自己的想法并展示他们的创意。这种自由引发了世界令人惊叹的变革，在过去的三十年里创造了创新的巅峰。
 
 1995 年，引入了一种名为 JavaScript 的脚本语言来为 Web 增加动态性和交互性。从卑微的起点开始，它已成为客户端和服务器 Web 开发中不可或缺的工具。
+
 ## 结构
+
 - 万维网的简史
 - Web 的多年演变
 - JavaScript 的诞生
 - JavaScript 在现代 Web 开发中的作用
 
 ## 目标
+
 学习本章后，你将了解 Web 和 JavaScript 的历史，以及它们在功能方面是如何成长的。
 
-
-
-
-
-**图 1.1:** 年来 Web 的演变（图片引用：Radar Networks and Nova Spivac 2007, www.radarnetworks.com）
+**图 1.1:** 多年来 Web 的演变（图片引用：Radar Networks and Nova Spivac 2007, www.radarnetworks.com）
 
 ## Web 1.0
+
 你有内容要分享吗？分享吧！
 
 它始于 Web 1.0，这是 Web 开发的第一阶段，即“只读 Web”，其内容大多是静态的，通过超链接查看内容并通过书签保存链接。电子邮件是通过 HTML 表单发送的。
 
-
 ## Web 2.0
 
 你有观点吗？说出来！
+
 随着数据库的出现、服务器的升级以及连接速度的提高，静态的 Web 1.0 转向交互式的 Web 2.0。现在，用户可以通过评论、推文、视频和帖子在 Web 上创建实时内容。这一阶段见证了 Facebook 和 Twitter 等社交媒体巨头以及 YouTube 等视频流网站的出现和增长。重心转向了用户体验，因为用户也是 Web 内容创建的参与者。此外，通过 API（应用程序接口），可以将一个网站的内容包含到另一个外部网站中。
 
 Web 变得越来越强大，拥有的能力无限无限。接而发生的简直是奇迹！
 
-
 你不需要忍受低效！你所求，即你所得！
 
 第三代 Web 可以被称为“智能 Web”，它由语义 Web 技术、分布式数据库、分布式计算、微格式、自然语言处理、数据挖掘、机器学习与推理、重构代理、以及人工智能技术组成。现在，机器被赋予了理解和解码信息的能力，并能提供更直观的用户体验，它们能准确理解用户搜索的是什么。
+
 未来的边界取决于我们的想象力和创新所能带我们去多远！
 
 ## JavaScript 的诞生
 
-
 Netscape 是当时最流行的浏览器，但面临着微软 Internet Explorer 引入的威胁。为了应对这一点，Netscape 与 Sun 合作，使其能够成为备受期待的 Sun 平台——Java 的官方浏览器，并保持其人气。
 
 JavaScript 的出现源于让 Web 动态化的需求。它被定位为一种易用的语言，即使是 Web 设计师和兼职开发者也可以使用它将图像和插件等组件直接组合到 Web 标记中。
-它在 Mocha 的名称下开发，最初作为 LiveScript 发布，后来更名为 JavaScript，仅仅是为了将其定位为 Java 的伴侣，并利用这门火热编程语言持续的营销价值。
+
+它在 `Mocha` 的名称下开发，最初作为 `LiveScript` 发布，后来更名为 `JavaScript`，仅仅是为了将其定位为 Java 的伴侣，并利用这门火热编程语言持续的营销价值。
 
 由于急于成为 Java 的伴侣，JavaScript 有许多许多特性并不受用户欢迎，因为它们偏离了当时用户习惯使用的其他编程语言。
+
 其中一些特性包括：
+
 - 自动分号插入 (ASI)
-- 使用常用运算符（如 ‘==’）的自动类型转换
+- 使用常用运算符（如 `==`）的自动类型转换
 - 缺乏块级作用域
 - 缺乏类 (classes)
 - 不寻常的继承（原型链）
 
 Netscape 在 1995 年 12 月为浏览器发布了 JavaScript，还引入了用于服务器端脚本的语言实现。
+
 从作为伴侣的平凡起点到成为 Web 的事实标准语言，JavaScript 走过了非常长的一路。
 
 ## ECMAScript – JavaScript 的标准化
 
 JavaScript 历史上的最重大事件之一是 ECMA 标准化。ECMA 是一个成立于 1961 年的行业机构，负责信息和通信系统的标准化。
+
 当 JavaScript 在 1996 年 11 月首次开始标准化时，它已经得到了广泛使用，根据 Netscape 的发布数据，估计有 30 万页面在使用，标准标识为 ECMA-262，负责标准化的委员会是 TC-39。
 
 这种标准化确保了语言在这些年里受控的实现和适当演进，而无需担心偏离和碎片。
 
-
 前两个版本 ECMAScript 1 和 2 侧重于原始版本的标准化。1999 年 12 月发布的 ECMAScript 3 见证了第一批重大变化。
-
 
 下一个版本 ECMAScript 4 提议了一个巨大的特性集，最终被废弃。下一个版本 ECMAScript 5 带来了许多特性。ECMAScript 6 (2015) 是另一次重大更新。ECMAScript 7 (2016) 增加了更多特性。ECMAScript 8 (2017) 和 9 (2018) 继续了演进。JavaScript 随着每个 ECMAScript 版本的发布持续演进，进一步巩固了它在现在乃至未来的地位。
 
 表 1.1 显示了不同 ECMAScript 版本特性总结，这些版本多年演进，持续增长并为 JavaScript 带来新功能：
+
 | 版本 | 年份 | 特性 |
 | :--- | :--- | :--- |
 | ES1 | 1997 | 原始版本的标准化 |
 | ES2 | 1998 | 原始版本的标准化 |
 | ES4 | - | 废弃（特性过多） |
-| ES5 | 2009 | Getter/Setter (setters)、数组和对象字面量中的尾随逗号、作为属性名的保留字、新的 Object、Array 和 Date 方法、String.prototype.trim 和属性访问、Function bind、JSON、不可变的全局对象（undefined, NaN, Infinity）、严格模式 |
-| ES6 | 2015 | Let（块作用域）和 const 绑定、箭头函数、类、对象字面量改进、模板字符串、Promise、生成器、迭代对象、迭代器和 for...of 循环、函数默认参数和剩余运算符、展开语法、解构、模块语法、新集合（Set, Map, WeakSet, WeakMap）、Proxy 和反射、Symbol 和类型数组、支持内置类的子类、保证的尾调用优化、更简单的 Unicode 支持、二进制和八进制字面量 |
-| ES7 | 2016 | 幂运算符 (**)、Array.prototype.includes |
+| ES5 | 2009 | Getter/Setter (setters)、数组和对象字面量中的尾随逗号、作为属性名的保留字、新的 Object、Array 和 Date 方法、`String.prototype.trim` 和属性访问、`Function bind`、JSON、不可变的全局对象（`undefined`, `NaN`, `Infinity`）、严格模式 |
+| ES6 | 2015 | Let（块作用域）和 const 绑定、箭头函数、类、对象字面量改进、模板字符串、Promise、生成器、迭代对象、迭代器和 `for...of` 循环、函数默认参数和剩余运算符、展开语法、解构、模块语法、新集合（Set, Map, WeakSet, WeakMap）、Proxy 和反射、Symbol 和类型数组、支持内置类的子类、保证的尾调用优化、更简单的 Unicode 支持、二进制和八进制字面量 |
+| ES7 | 2016 | 幂运算符 (`**`)、`Array.prototype.includes` |
 | ES9 | 2018 | - |
 | ES10 | 2019 | - |
 
-
-
-
-- 字符串填充 (String padding)
-- Object.getOwnPropertyDescriptors
-- 异步函数 (Async functions)
-- 幂运算符
-- Array.prototype.includes
-
-- 异步迭代
-- 剩余/展开属性 (Rest/Spread properties)
-- 新正则表达式特性
-- Promise.prototype.finally()
-
 ### 2019 ES10
-- Array.{flat, flatMap}
-- Object.fromEntries
-- Symbol.description
-- try { catch } // 可选绑定
+
+- `Array.{flat, flatMap}`
+- `Object.fromEntries`
+- `Symbol.description`
+- `try { catch }` // 可选绑定
 - 包含 JSON (JSON C ECMAScript)
-- 格式良好的 JSON.string
-- 修改后的 Function.toString
+- 格式良好的 `JSON.string`
+- 修改后的 `Function.toString`
 
 表 1.1：具有主要特征的 ECMAScript 版本
-
 
 从静态只读网页到如今高度交互的 Web，JavaScript 是这一惊人变革背后的功臣。HTML 定义了内容，CSS 定义了外观和感受，而 JavaScript 则负责定义应用程序的行为。它是让 Web 动态化和交互的关键。JavaScript 能够操作内容部分（HTML）以及呈现部分（CSS），因此，它是 Web 的强大主宰。
 
 JavaScript 以各种强大框架和库的形式统治了整个 Web 市场，使得 Web 开发过程结构良好且易于上手。JavaScript 在 Web 上无处不在，无论是客户端代码还是服务端逻辑，它都能处理一切。
+
 像 Angular、React 这样功能丰富的库和框架允许开发者无需编写任何复杂代码即可添加功能，使 Web 开发变得更加简单。JavaScript 框架通过简单 JavaScript 代码块的形式为复杂命令提供了简化结构，从而使编程过程变得更加快速快捷。
 
 如今的软件开发过程主要是“组合”：将复杂问题分解为较小的问题，并解决这些较小的问题，最后组合成应用程序形式的完整解决方案。所有现代框架都支持遵循组合原则的开发，即将整个设计分解为更小的组件，逐个构建这些组件并组合在一起以构建整体解决方案。
 
-
 ## 前端 JS 框架
 
 有很多流行的前端框架使得整个 Web 开发过程变得非常简单。它们包括：
+
 - React：Facebook 流行且灵活的 JavaScript 库，在构建 Web 应用程序界面方面非常强大
 - Angular：由 Google 支持的基于 JavaScript 的开源前端 Web框架，简化了单页应用（SPA）的开发过程
 - Vue：另一个开源 JavaScript 框架，以其在构建单页应用时的灵活性和简单性闻名
-
 
 从 JavaScript 运行时到服务端框架，支持后端的 JS 框架包括：
 
@@ -511,10 +488,8 @@ JavaScript 以各种强大框架和库的形式统治了整个 Web 市场，使�
 
 ## 数据层框架
 
-
 - GraphQL (https://graphql.org/)：用于查询数据库服务
 - Redux (https://redux.js.org/)：用于管理 JS 应用程序的状态
-
 
 不仅是 Web 开发，这些 JS 框架还通过提供自动化测试框架和测试运行环境来实现测试：
 
@@ -523,21 +498,17 @@ JavaScript 以各种强大框架和库的形式统治了整个 Web 市场，使�
 - Karma
 - TestCafe
 
-
 另一些直接用于 Web 开发或辅助开发其他方面的流行 JavaScript 框架：
 
 - Ext JS
 - Ember.js
 - Socket
 
-
 ## 结论
 
 本书是一个开始。
 
-
-
-
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -548,13 +519,16 @@ JavaScript 以各种强大框架和库的形式统治了整个 Web 市场，使�
 </body>
 </html>
 ```
+
 你可以在简单的记事本中编写上述代码段，但随着我们 Web 开发的深入，最终我们需要一个专门的代码编辑器，因此现在是选择编辑器的时候了。
 
 有许多编辑器可供选择，你可以选择任何你觉得舒服的。这里有一份供选择的流行列表：
+
 - [Visual Studio Code](https://code.visualstudio.com/download)
 - [Atom](https://atom.io/)
 - [Notepad++](https://notepad-plus-plus.org/download)
 - [Sublime](https://www.sublimetext.com/download)
+
 在本书中，我们将使用 Visual Studio Code。
 
 那么，让我们从提供的链接下载 Visual Studio Code（或你任何想使用的编辑器）开始吧。
@@ -565,13 +539,12 @@ JavaScript 以各种强大框架和库的形式统治了整个 Web 市场，使�
 
 # 图 2.1：helloWorld.html
 
-
 ![](img/22525aec83cb16cb7664cd8d5c364721_41_0.png)
-
 
 欢迎学习 HTML！
 
 欢迎来到 Web 开发！
+
 # 图 2.2：helloWorld.html 的浏览器输出
 
 初学者，由于带有所有的 `< >`，代码看起来很奇怪，但 `< >` 内的代码部分并没有显示在最终的浏览器输出中。那么，这些是什么？它们消失到哪里去了？
@@ -579,37 +552,45 @@ JavaScript 以各种强大框架和库的形式统治了整个 Web 市场，使�
 这是如何发生的？
 让我们深入研究 HTML，为这些问题以及更多问题找到答案！
 
+## HTML 的构建块
 
 HTML 内容由三个构建块组成，如下：
 
+- **HTML 元素**：HTML 元素是任何 HTML 网页的构建块。一个 HTML 元素包含了一对标签（`<starting-tag>` 和 `</closing-tag>`）以及标签之间的内容。HTML 元素可以以树形结构嵌套在其他 HTML 元素中，由于嵌套，节点之间具有父子关系。
 
-- **HTML 标签 (HTML Tags)**：HTML 标签包裹要显示的内容，并赋予其特殊的含义。标签写在 `<` 和 `>` 括号之间，不会出现在最终输出中。它们为包裹的内容增加了额外的意义，并关联了属性。浏览器从上到下、从左到右读取 HTML 文档并渲染内容。关于 HTML 标签，这里有几点需要注意：
-- `<tag> CONTENT </tag>`：此标签代表标签名称；例如 `html`、`head`、`body`、`div` 等。
-- 所有标签都遵循这种格式：没有内容的空标签。每个标签都有特殊的含义，引导浏览器以不同的方式处理其内容。
-- **空标签 (Empty tags)**遵循 `<starting-tag>` 或 `<starting-tag/>` 格式。它们没有内容，因此不需要显式的结束标签。
-  - `<br>`：这是一个引入换行的空标签。
-  - `<hr>`：这是另一个空标签，在屏幕上画出一条水平线。
+- **HTML 标签**：HTML 标签包裹要显示的内容，并赋予其特殊的含义。标签写在 `<` 和 `>` 括号之间，不会出现在最终输出中。它们为包裹的内容增加了额外的意义，并关联了属性。浏览器从上到下、从左到右读取 HTML 文档并渲染内容。关于 HTML 标签，这里有几点需要注意：
+  - `<tag> CONTENT </tag>`：此标签代表标签名称；例如 `html`、`head`、`body`、`div` 等。
+  - 所有标签都遵循这种格式：没有内容的空标签。每个标签都有特殊的含义，引导浏览器以不同的方式处理其内容。
+  - **空标签 (Empty tags)** 遵循 `<starting-tag>` 或 `<starting-tag/>` 格式。它们没有内容，因此不需要显式的结束标签。
+    - `<br>`：这是一个引入换行的空标签。
+    - `<hr>`：这是另一个空标签，在屏幕上画出一条水平线。
+
 - **HTML 属性 (HTML attributes)**：HTML 属性是附加在 HTML 元素上的特殊属性，影响它们的行为。属性遵循以下语法：
 
 ```html
-<tag attribute-name="attribute-value" CONTENT </tag>
+<tag attribute-name="attribute-value"> CONTENT </tag>
+```
+
+```html
+<p style="color:blue;"> Styled Paragraph Content</p>
 ```
 
 `style` 是一个属性，可以附加到几乎所有标签以应用额外的样式。这是一种直接应用于元素的内联样式。我们将在[第 3 章，CSS – 让内容更美]() 中学习更多关于使用 CSS 的知识。
+
 ## HTML 文档的结构
 
 HTML 文档由树形结构组成。第一层是 HTML 标签，页面的根元素，包含两个主要元素：`head` 和 `body`。
 
-
 `body` 是包含页面上渲染的实际内容的部分。`body` 可以包含任意数量的元素，这些元素都将被显示。
-
 
 ![](img/22525aec83cb16cb7664cd8d5c364721_43_0.png)
 
 图 2.3：HTML 页面结构
+
 HTML 页面像树结构结构，每个元素形成树的一个节点，不同的节点之间从根节点（HTML）开始具有父子关系。这棵树可以描绘如下：
 
 ```html
+<!DOCTYPE html>
 <html>
 <head>
   <title>My First HTML</title>
@@ -620,124 +601,171 @@ HTML 页面像树结构结构，每个元素形成树的一个节点，不同的
   </div>
 </body>
 </html>
-
-![](img/22525aec83cb16cb7664cd8d5c364721_44_0.png)
-
-
-根据用法和要求，有许多容器和分组标签构成了 HTML 的完整主体。根据它们在页面上渲染的默认行为，容器标签可以分为以下两大类：
-
-- 它们从新行开始。
-  - 它们占据可用的所有宽度。
-  - 例如，`p`、`h1`-`h6`。
-
-- **内联元素 (INLINE elements)**：这些是容器组件，用于在与前面的内容相同的行上渲染内容。它们具有以下特征：
-- 它们不会开启自己的新行。
-  - 它们只占据内容所需的宽度。
-
-```html
-<!DOCTYPE html>
-<head>
-<title>My First HTML</title>
-</head>
-<body>
-<h2>Welcome to learning HTML!</h2>
-<p>Welcome to Web Development!</p>
-</body>
 ```
 
-## Hello World!
-欢迎学习 HTML！
-
-欢迎来到 Web 开发！
-
-
-初学者，由于带有所有的 `< >`，代码看起来很奇怪，但 `< >` 内的代码部分并没有显示在最终的浏览器输出中。那么，这些是什么？它们消失到哪里去了？
-
-这是如何发生的？
-让我们深入研究 HTML，为这些问题以及更多问题找到答案！
-
-## HTML 的构建块
-HTML 内容由三个构建块组成，如下：
-
-- **HTML 元素**：HTML 元素是任何 HTML 网页的构建块。一个 HTML 元素包含了一对标签（`<starting-tag>` 和 `</closing-tag>`）以及标签之间的内容。HTML 元素可以以树形结构嵌套在其他 HTML 元素中，由于嵌套，节点之间具有父子关系。
-- **HTML 标签**：HTML 标签包裹要显示的内容，并赋予其特殊的含义。标签写在 `<` 和 `>` 括号之间，不会出现在最终输出中。它们为包裹的内容增加了额外的意义，并关联了属性。浏览器从上到下、从左到右读取 HTML 文档并渲染内容。关于 HTML 标签，这里有几点需要注意：
-- `<tag> CONTENT </tag>`：此标签代表标签名称；例如 `html`、`head`、`body`、`div` 等。
-- 所有标签都遵循这种格式：没有内容的空标签。每个标签都有特殊的含义，引导浏览器以不同的方式处理其内容。
-
-  - `<br>`：这是一个引入换行的空标签。
-  - `<hr>`：这是另一个空标签，在屏幕上画出一条水平线。
-
-
-```html
-<tag attribute-name="attribute-value" CONTENT </tag>
-<p style="color:blue;"> Styled Paragraph Content</p>
-
-`style` 是一个属性，可以附加到几乎所有标签以应用额外的样式。这是一种直接应用于元素的内联样式。我们将在[第 3 章，CSS – 让内容更美]() 中学习更多关于使用 CSS 的知识。
-
-
-HTML 文档由树形结构组成。第一层是 HTML 标签，页面的根元素，包含两个主要元素：`head` 和 `body`。
-
-
-`body` 是包含页面上渲染的实际内容的部分。`body` 可以包含任意数量的元素，这些元素都将被显示。
-
-HTML 网页结构可以描描述如下：
-![](img/22525aec83cb16cb7664cd8d5c364721_43_0.png)
-
-图 2.3：HTML 页面结构
-HTML 页面像树结构结构，每个元素形成树的一个节点，不同的节点之间从根节点（HTML）开始具有父子关系。这棵树可以描绘如下：
-
-```html
-<!DOCTYPE html>
-<head>
-  <title>My First HTML</title>
-  <link rel="stylesheet" href="styles.css">
-<body>
-  <h1>Welcome to HTML!</h1>
-  <div>
-    <p>Welcome Aboard!</p>
-</body>
-</html>
-```
 ![](img/22525aec83cb16cb7664cd8d5c364721_44_0.png)
 
 图 2.4：HTML 代码和对应的 DOM 元素树
+
 根据用法和要求，有许多容器和分组标签构成了 HTML 的完整主体。根据它们在页面上渲染的默认行为，容器标签可以分为以下两大类：
 
 - **块级元素 (BLOCK-LEVEL elements)**：这些是主要的容器元素，在新行中渲染内容。它们具有以下主要特征：
+  - 它们从新行开始。
   - 它们占据可用的所有宽度。
   - 例如，`p`、`h1`-`h6`。
   - 在我们的第一个示例中，我们看到每个 `p`、`h1`、`h2` 都在新行开始，尽管我们没有提供显式的换行。
 
+- **内联元素 (INLINE elements)**：这些是容器组件，用于在与前面的内容相同的行上渲染内容。它们具有以下特征：
   - 它们不会开启自己的新行。
   - 它们只占据内容所需的宽度。
   - 例如，`span`、`a`、`strong`。
+
 ```html
 <!DOCTYPE html>
 <html>
+<head>
 <title>My First HTML</title>
 </head>
 <body>
 <h2>Welcome to learning HTML!</h2>
 <p>Welcome to Web Development!</p>
 </body>
+</html>
 ```
 
+## Hello World!
 
+欢迎学习 HTML！
+
+欢迎来到 Web 开发！
+
+初学者，由于带有所有的 `< >`，代码看起来很奇怪，但 `< >` 内的代码部分并没有显示在最终的浏览器输出中。那么，这些是什么？它们消失到哪里去了？
+
+这是如何发生的？
+
+让我们深入研究 HTML，为这些问题以及更多问题找到答案！
+
+## HTML 标签详解
+
+### 空标签
+
+- `<br>`：这是一个引入换行的空标签。
+- `<hr>`：这是另一个空标签，在屏幕上画出一条水平线。
+
+### HTML 属性
+
+HTML 属性是附加在 HTML 元素上的特殊属性，影响它们的行为。属性遵循以下语法：
+
+```html
+<tag attribute-name="attribute-value"> CONTENT </tag>
+```
+
+```html
+<p style="color:blue;"> Styled Paragraph Content</p>
+```
+
+`style` 是一个属性，可以附加到几乎所有标签以应用额外的样式。这是一种直接应用于元素的内联样式。我们将在[第 3 章，CSS – 让内容更美]() 中学习更多关于使用 CSS 的知识。
+
+### HTML 文档结构
+
+HTML 文档由树形结构组成。第一层是 HTML 标签，页面的根元素，包含两个主要元素：`head` 和 `body`。
+
+`body` 是包含页面上渲染的实际内容的部分。`body` 可以包含任意数量的元素，这些元素都将被显示。
+
+HTML 网页结构可以描述如下：
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My First HTML</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Welcome to HTML!</h1>
+  <div>
+    <p>Welcome Aboard!</p>
+  </div>
+</body>
+</html>
+```
+
+![](img/22525aec83cb16cb7664cd8d5c364721_43_0.png)
+
+图 2.3：HTML 页面结构
+
+HTML 页面像树结构结构，每个元素形成树的一个节点，不同的节点之间从根节点（HTML）开始具有父子关系。这棵树可以描绘如下：
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My First HTML</title>
+</head>
+<body>
+  <h1>Welcome to HTML!</h1>
+  <div>
+  </div>
+</body>
+</html>
+```
+
+![](img/22525aec83cb16cb7664cd8d5c364721_44_0.png)
+
+图 2.4：HTML 代码和对应的 DOM 元素树
+
+### 容器标签分类
+
+根据用法和要求，有许多容器和分组标签构成了 HTML 的完整主体。根据它们在页面上渲染的默认行为，容器标签可以分为以下两大类：
+
+- **块级元素 (BLOCK-LEVEL elements)**：这些是主要的容器元素，在新行中渲染内容。它们具有以下主要特征：
+  - 它们从新行开始。
+  - 它们占据可用的所有宽度。
+  - 例如，`p`、`h1`-`h6`。
+  - 在我们的第一个示例中，我们看到每个 `p`、`h1`、`h2` 都在新行开始，尽管我们没有提供显式的换行。
+
+- **内联元素 (INLINE elements)**：这些是容器组件，用于在与前面的内容相同的行上渲染内容。它们具有以下特征：
+  - 它们不会开启自己的新行。
+  - 它们只占据内容所需的宽度。
+  - 例如，`span`、`a`、`strong`。
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<title>My First HTML</title>
+</head>
+<body>
+<h2>Welcome to learning HTML!</h2>
+<p>Welcome to Web Development!</p>
+</body>
+</html>
+```
+
+### 预格式化文本
 
 段落标签。为了这个目的，`<pre>` 标签非常有用，因为它会按照给定的所有空格和换行渲染内容。
 
 ```html
+<!DOCTYPE html>
+<html>
+<head>
 <title>My First Page</title>
-<link rel="stylesheet" src="styles.css"></head>
+<link rel="stylesheet" src="styles.css">
+</head>
 <body>
 <p>...</p>
 <pre>Web development is so much fun,
 There are many more come!!
 Understand each TAG
+</pre>
 </body>
 </html>
 ```
-格式相关的特殊标签：`<b>`, `<em>`, `<strong>`, `<small>`, `<i>`, `<sup>`, `<ins>`, `<del>`, `<mark>`
+
+### 格式相关的特殊标签
+
+`<b>`, `<em>`, `<strong>`, `<small>`, `<i>`, `<sup>`, `<ins>`, `<del>`, `<mark>`
 
 - 所有这些标签都对其内部的内容应用某些格式化。
 - `<b>`：此标签使内容变为**粗体**。
@@ -748,43 +776,55 @@ Understand each TAG
 - `<del>`：此标签将内容作为删除线和已删除的形式渲染。
 - `<mark>`：此标签将内容作为高亮形式渲染。
 
+```html
 <!DOCTYPE html>
 <html>
 <head></head>
+<body>
 <h1>...</h1>
-<p>这些不同格式看起来像这样：<strong>粗体</strong>，带有<em>*强调*的*<i>斜体文本</i></em>，<span><small>字号较小</small></span><span><sup>下标或上标</sup></span>，<ins>已添加</ins>或<del>已删除</del>，或者<mark>高亮</mark></p>
+<p>这些不同格式看起来像这样：<strong>粗体</strong>，带有<em>*强调*的<i>斜体文本</i></em>，<span><small>字号较小</small></span><span><sup>下标或上标</sup></span>，<ins>已添加</ins>或<del>已删除</del>，或者<mark>高亮</mark></p>
 </body>
+</html>
 ```
 
 ## 表格 2.1：基础 HTML 内容标签
 
+### 标题标签
 
-## 一级标题
+- 一级标题
+- 二级标题
+- 三级标题
+- 四级标题
+- 五级标题
+- 六级标题
 
-
-## 三级标题
-
-## 四级标题
-## 五级标题
+### 段落与预格式化
 
 欢迎来到 Web 开发！这是一个令人兴奋的世界！
 
 空格和换行将保留在 `pre` 中
 
 这些不同格式看起来像这样
+
 斜体，带有强调的，
+
 小字号，
+
 添加或上标
+
 最后是高亮
 
 ```html
+<!DOCTYPE html>
 <html>
 <head>
 <title>带有基础标签的我的第一个 HTML</title>
 </head>
+<body>
 <h1>一级标题</h1>
 <h2>二级标题</h2>
 <h3>三级标题</h3>
+<h4>四级标题</h4>
 <h5>五级标题</h5>
 <h6>六级标题</h6>
 <div>
@@ -795,51 +835,54 @@ Understand each TAG
 </html>
 ```
 
-
 ## 特殊内容相关标签
 
-
-## HTML 超链接
+### HTML 超链接
 
 锚标签 `<a>` 用于在网页中渲染超链接。与锚标签一起使用的属性包括：
+
 | 属性 | 目的 | 强制 (Y/N)，若为 N 的默认值 |
 |---|---|---|
-| href | 此属性用于提供链接将指向的 URL。它可以是外部网站地址、同一应用程序中的一个页面，或者同一页上的书签。 | | |
-| _parent：链接将在包含链接的框架的父框架中打开。 | | |
-| _top：链接将在完整窗口中打开。如果你的链接位于完整窗口的子框架内，这将与 _self 不同，否则看起来与 _self 相同。 | | |
-| framename：链接将在你完整窗口定义内的命名框架中打开。 | | |
-
+| href | 此属性用于提供链接将指向的 URL。它可以是外部网站地址、同一应用程序中的一个页面，或者同一页上的书签。 | Y |
+| target | 指定在何处打开链接文档。 | N，默认 `_self` |
+| `_blank` | 链接将在新窗口或标签页中打开。 | |
+| `_self` | 链接将在同一框架中打开。 | |
+| `_parent` | 链接将在包含链接的框架的父框架中打开。 | |
+| `_top` | 链接将在完整窗口中打开。如果你的链接位于完整窗口的子框架内，这将与 `_self` 不同，否则看起来与 `_self` 相同。 | |
+| framename | 链接将在你完整窗口定义内的命名框架中打开。 | |
 
 以下显示了 `iframe` 的用法并将 `target` 设置为框架名称：
 
 ```html
+<!DOCTYPE html>
 <html>
 <head>
   <title>HTML 链接</title>
+</head>
 <body>
   <h1>你好，世界！</h1>
   <h2>欢迎来到 HTML！</h2>
   <div>
-    <iframe name="test" height="400px" width="400px"></br>
+    <iframe name="test" height="400px" width="400px"></iframe>
     <a href="index.html" target="test">点击此处跳转到 Walkingtree</a><br>
   </div>
+</body>
 </html>
 ```
 
 ![](img/22525aec83cb16cb7664cd8d5c364721_49_0.png)
-## 你好，世界！
 
-## 欢迎来到 HTML！
+你好，世界！
 
+欢迎来到 HTML！
 
 WalkingTree
 
-
-## HTML 列表
+### HTML 列表
 
 列表是一种非常重要且流行的内容结构，用于显示一组相关或不相关的内容。列表可以是有序列表、无序列表或带有特殊指示的。
-列表的渲染方式如下：
 
+列表的渲染方式如下：
 
 | 属性/特性 | 目的 | 用法 |
 | :--- | :--- | :--- |
@@ -848,138 +891,129 @@ WalkingTree
 | border-spacing | 如果我们希望在不同的边框之间留有空间而不是合并，我们可以在表格级别使用此 CSS 属性。它对合并后的边框没有影响。 | border-spacing: 10px; |
 | rowspan | 此属性可用于指示内容是否跨越多行。内容将扩展并占据给定的行数。 | rowspan="5" |
 | colspan | 这与 rowspan 类似，但针对的是列。 | colspan="2" |
+
 **表 2.5：** 表格样式属性和特性
 
 `caption` 标签可以包含在表格定义中，为表格添加标题。
-
 
 ```html
 <table style="border:solid; border-collapse:collapse; border-spacing:5px">
   <tr>
     <th style="border:solid red" colspan="2">Customer and Contact</th>
     <th style="border:solid red">Country</th>
+  </tr>
   <tr>
     <td style="border:solid red">Raj Mehta</td>
     <td style="border:solid red">raj.mehta@mail.com</td>
     <td style="border:solid red">India</td>
+  </tr>
 </table>
 <table style="border:solid; border-collapse:separate; border-spacing:5px">
   <caption>Albanian Customers</caption>
+  <tr>
     <th style="border:solid red">Customer</th>
     <th>Contact</th>
     <th>Country</th>
+  </tr>
   <tr>
     <td style="border:solid red" rowspan="2">Albanana Inane</td>
     <td style="border:solid red">albana.inane@mail.com</td>
     <td style="border:solid red">France</td>
+  </tr>
   <tr>
     <td style="border:solid red">albana.inane@mail.is</td>
   </tr>
+</table>
 ```
 
 ![](img/22525aec83cb16cb7664cd8d5c364721_55_0.png)
 
-
 示例显示了图 2.12 中的两个表格，它们使用了 `border-collapse` 的不同值以及可以应用于 HTML 表格的其他属性。
 
 到为止，我们已经看到了以不同格式在屏幕上渲染内容的各种方法。因此，如果我们希望用户能够向内容输入某些数据，比如我们在几乎每个网站上看到的“联系我们”表单。
-接下来，我们将学习如何包含不同类型元素的表单，以便户能够输入数据并与网站交互。
 
-## HTML 表单
+接下来，我们将学习如何包含不同类型元素的表单，以便用户能够输入数据并与网站交互。
+
+### HTML 表单
+
 表单为用户提供了输入数据、提供反馈、发表评论、选择选项、文件并以不同方式与网页交互的能力。HTML 提供了 `<form>` 元素，我们可以在页面中定义表单以接受用户输入。
 
-<form>表单元素 ...</form>
-
-
-## Input 表单元素
-
-最常用且涵盖了大多数表单元素类型的表单元素是 `<input>`。通过给 `type` 属性赋予不同的值，我们可以定义列所示的不同类型的表单元素：
-| 输入类型用法 | 目的 |
-| :--- | :--- |
-| <input type="button"> | 在表单中添加一个按钮。可以在 `onClick` 上添加按钮处理器。 |
-| <input type="color"> | 增加一个颜色选择器，用户可以通过它选择颜色。 |
-| <input type="date"> | 此类型添加一个与日历关联的文本框，使用户户选择日期。 |
-| <input type="datetime-local"> | 此类型添加一个与日历关联的文本框，使用户选择日期和时间字段，但不包含时区。 |
-| <input type="email"> | 这是一个预期邮箱格式内容的文本框。 |
-| <input type="hidden"> | 此类型用于定义在 UI 中不可见的隐藏字段。这对于不应显示给用户的派生值可能有用。 |
-| <input type="image"> | 定义一个图像 |
-| <input type="month"> | 这是一个与日历关联的文本框，使用户选择月份。 |
-| <input type="password"> | 这是一个掩码文本字段。 |
-| <input type="radio"> | 这是一个单选按钮，用户可以选择其中一个。 |
-| <input type="range"> | 这是一个带有属性的范围控件。 |
-| <input type="reset"> | 这是一个重置按钮，用于清除表单值。 |
-| <input type="submit"> | 这是一个提交表单的按钮。 |
-| <input type="tel"> | 这是一个预期电话格式的文本框。 |
-| <input type="time"> | 这使用户选择不带时区的时间。 |
-| <input type="week"> | 这与日历关联，使用户选择一个周。 |
-
 ```html
-<input type="tel">
-<input type="time">
-使用户选择时间（不带时区）。
-<input type="url">
-<input type="week">
-这与日历关联，使用户选择一周。
+<form>表单元素 ...</form>
 ```
 
+#### Input 表单元素
 
-通过 `input`，我们能够通过如下所示的不同 `type` 属性添加许多不同类型的元素：
+最常用且涵盖了大多数表单元素类型的表单元素是 `<input>`。通过给 `type` 属性赋予不同的值，我们可以定义列所示的不同类型的表单元素：
 
+| 输入类型用法 | 目的 |
+| :--- | :--- |
+| `<input type="button">` | 在表单中添加一个按钮。可以在 `onClick` 上添加按钮处理器。 |
+| `<input type="color">` | 增加一个颜色选择器，用户可以通过它选择颜色。 |
+| `<input type="date">` | 此类型添加一个与日历关联的文本框，使用户选择日期。 |
+| `<input type="datetime-local">` | 此类型添加一个与日历关联的文本框，使用户选择日期和时间字段，但不包含时区。 |
+| `<input type="email">` | 这是一个预期邮箱格式内容的文本框。 |
+| `<input type="hidden">` | 此类型用于定义在 UI 中不可见的隐藏字段。这对于不应显示给用户的派生值可能有用。 |
+| `<input type="image">` | 定义一个图像 |
+| `<input type="month">` | 这是一个与日历关联的文本框，使用户选择月份。 |
+| `<input type="password">` | 这是一个掩码文本字段。 |
+| `<input type="radio">` | 这是一个单选按钮，用户可以选择其中一个。 |
+| `<input type="range">` | 这是一个带有属性的范围控件。 |
+| `<input type="reset">` | 这是一个重置按钮，用于清除表单值。 |
+| `<input type="submit">` | 这是一个提交表单的按钮。 |
+| `<input type="tel">` | 这是一个预期电话格式的文本框。 |
+| `<input type="time">` | 这使用户选择不带时区的时间。 |
+| `<input type="url">` | 这是一个预期 URL 格式的文本框。 |
+| `<input type="week">` | 这与日历关联，使用户选择一周。 |
+
+```html
 // HTML Form/index.html
 <form action="submit()">
   <input type="text" name="Firstname" value="John">
-  <input type="radio" name="gender" value="male" checked> 女性
+  <input type="radio" name="gender" value="male" checked> 男性
+  <input type="radio" name="gender" value="female"> 女性
   <input type="checkbox" name="travel" value="Asia"> 是，我去过亚洲
   <input type="checkbox" name="travel" value="Europe"> 是，我去过欧洲
-  // 你喜喜欢的颜色
+  // 你喜欢的颜色
   <input type="date" name="birthday">
   // 孩子范围（如果有）
   <input type="range" min="0" max="18">
   // 选择预约的周：
+  <input type="week" name="week">
   // 选择预约的时间：
   <input type="time" name="time">
   // 添加你的网站
+  <input type="url" name="website">
   <input type="button" onclick="alert('I am a really button!')" value="点击我!">
   <input type="hidden">
   <input type="reset">
+  <input type="submit">
 </form>
+```
 
 ![](img/22525aec83cb16cb7664cd8d5c364721_57_0.png)
 
 **图 2.13：** 显示不同输入类型的 HTML 基础表单
-## 其他表单元素
+
+#### 其他表单元素
 
 除了表单元素外，还有其他元素用于在表单上显示其他类型的构造，如下表所示：
+
 | 表单元素 | 目的 | 用法 |
 | :--- | :--- | :--- |
-| select, option | 此元素用于添加一个具有固定数量选项的下拉列表。标记了 `selected` 属性的选项将被选中 | <select name="education"><option value="classX">十级</option><option value="graduate" selected>本科 BE/Bsc/BA/Bcom</option><option value="postgrad">研究生</option></select> * |
+| select, option | 此元素用于添加一个具有固定数量选项的下拉列表。标记了 `selected` 属性的选项将被选中 | `<select name="education"><option value="classX">十级</option><option value="graduate" selected>本科 BE/Bsc/BA/Bcom</option><option value="postgrad">研究生</option></select>` |
+| textarea | 此元素用于包含多行文本区域，以输入详细的注释、描述等。可以通过提供 `rows` 和 `cols` 属性来设置大小。此外，可以使用 `style` 属性来设置宽度高度。 | `<textarea name="message" rows="10" cols="30"></textarea>` |
+| datalist | 此元素用于为输入框提供预定义选项列表。 | `<input list="city"><datalist id="city"><option value="Hyderabad"><option value="Bangalore"><option value="Chennai"><option value="Mumbai"></datalist>` |
 
+**表 2.7：** 其他 HTML 表单元素
 
-
-
-默认。
-此元素用于包含多行文本区域，以输入详细的注释、描述等。可以通过提供 `rows` 和 `cols` 属性来设置大小。此外，可以使用 `style` 属性来设置宽度高度。
-
-```
-<textarea name="message" rows="10" cols="30"></textarea>
-```
-
-datalist
-
-
-```
-<input list="city">
-<option value="Hyderabad">
-<option value="Bangalore">
-<option value="Chennai">
-<option value="June">
-</datalist>
-```
-
-表 2.7：其他 HTML 表单元素
 下面的示例展示了使用其他表单元素的代码和浏览器视图：
 
-```
+```html
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
 您的姓名: <br>
 <input type="text" name="firstname" value=""> <br>
 您的教育: <select name="education">
@@ -988,7 +1022,8 @@ datalist
 <option value="post">研究生</option>
 </select><br>
 注释: <textarea name="message" rows="4" style="width:200px;height:100px;"></textarea><br>
-首选城市: <datalist id="city">
+首选城市: <input list="city">
+<datalist id="city">
 <option value="Hyderabad">
 <option value="Bangalore">
 <option value="Chennai">
@@ -996,153 +1031,149 @@ datalist
 </datalist><br>
 <input type="submit" value="提交"><br>
 <input type="reset" value="重置">
+</body>
+</html>
 ```
-
-## HTML 表单
-您的姓名：
 
 ![](img/22525aec83cb16cb7664cd8d5c364721_58_0.png)
 
-
-注释：
-
-
-经验
-
-首选城市：
 ![](img/22525aec83cb16cb7664cd8d5c364721_58_2.png)
 
-提交 重置
-图 2.14：其他表单元素
+**图 2.14：** 其他表单元素
 
-## 特殊含义相关的 HTML5 标签
-
+### 特殊含义相关的 HTML5 标签
 
 | HTML 元素 | 用途 |
 |---|---|
-| <section> | 该标签用于将整个页面分为不同的部分，其中所有部分可能相互关联和/或与网页的主题相关。 |
-| <header> | 该标签用于定义整个文档或特定部分的页眉。 |
-| <footer> | 该标签用于定义整个文档或特定部分的页脚。 |
-| <aside> | 该标签用于定义与整体内容相关的侧边内容（如侧边栏）。 |
-| <main> | 该标签用于渲染整个网页的主体内容。 |
-| <summary> | 该标签为 <details> 元素渲染一个可见的标题。 |
-| <details> | 用于为摘要添加额外的细节，用户可以查看或隐藏这些细节。 |
-| <dialog> | 用于对话框或窗口。 |
-| <figure> | 用于渲染一个自包含的内容，如图像、图表等。 |
-| <mark> | 该标签用于高亮内容中的文本。 |
-| <meter> | 该标签用于定义已知范围内的刻度测量（仪表盘）。 |
-| <nav> | 用于定义导航链接。 |
-| <wbr> | 该标签用于在内容超过容器大时指示可能的换行点。 |
+| `<section>` | 该标签用于将整个页面分为不同的部分，其中所有部分可能相互关联和/或与网页的主题相关。 |
+| `<header>` | 该标签用于定义整个文档或特定部分的页眉。 |
+| `<footer>` | 该标签用于定义整个文档或特定部分的页脚。 |
+| `<aside>` | 该标签用于定义与整体内容相关的侧边内容（如侧边栏）。 |
+| `<main>` | 该标签用于渲染整个网页的主体内容。 |
+| `<summary>` | 该标签为 `<details>` 元素渲染一个可见的标题。 |
+| `<details>` | 用于为摘要添加额外的细节，用户可以查看或隐藏这些细节。 |
+| `<dialog>` | 用于对话框或窗口。 |
+| `<figure>` | 用于渲染一个自包含的内容，如图像、图表等。 |
+| `<mark>` | 该标签用于高亮内容中的文本。 |
+| `<meter>` | 该标签用于定义已知范围内的刻度测量（仪表盘）。 |
+| `<nav>` | 用于定义导航链接。 |
+| `<wbr>` | 该标签用于在内容超过容器大小时指示可能的换行点。 |
 
-## 表 2.8：HTML5 语义标签
+**表 2.8：** HTML5 语义标签
 
+### HTML 注释
 
 没有注释的编程是不完整的，代码需要注释。可以如下所示在 HTML 代码中添加 HTML 注释：
 
+```html
+<!-- 这是一个注释 -->
 ```
-```
 
-## HTML 图像
+### HTML 图像
 
+`<img>` 标签用于在正文内容中包含图像。`<img>` 本身是一个空元素标签，只包含属性。
 
-<img> 标签用于在正文内容中包含图像。<img> 本身是一个空元素标签，只包含属性。
+`<img>` 标签的主要属性如下：
 
-<img> 标签的主要属性如下：
-- src 属性指定图像的位置（URL、网络地址或本地路径），即将从该位置使用图像。这是强制性的。
-  - 可以直接提供 URL，如：<img src="https://www.pexels.com/photo/person-walking-on-green-field-2138908/" alt="A person walking on green field">
-  - 也可以指向你系统中特定位置的文件夹路径：<img src="C:/Pictures/Chapter2/2.3.jpg" alt="HTML Web Page Structure">
-  - 这是一个相对于与 HTML 文件相同文件夹的相对路径：<img src="./2.3.jpg" alt="HTML Web Page Structure"><img src="/html/2.4.jpg" alt="HTML Tree Structure">
+- `src` 属性指定图像的位置（URL、网络地址或本地路径），即将从该位置使用图像。这是强制性的。
+  - 可以直接提供 URL，如：`<img src="https://www.pexels.com/photo/person-walking-on-green-field-2138908/" alt="A person walking on green field">`
+  - 也可以指向你系统中特定位置的文件夹路径：`<img src="C:/Pictures/Chapter2/2.3.jpg" alt="HTML Web Page Structure">`
+  - 这是一个相对于与 HTML 文件相同文件夹的相对路径：`<img src="./2.3.jpg" alt="HTML Web Page Structure">`
+  - `<img src="/html/2.4.jpg" alt="HTML Tree Structure">`
+- `alt` 属性为图像提供替代文本。
+- `width` 和 `height` 属性可以设置图像的大小。
 
+```html
 <img src="rainbow.jpg" alt="Rainbow showing">
+```
 
-- width 和 height 属性可以设置图像的大小。
-
-## HTML 字符实体引用
-
+### HTML 字符实体引用
 
 - 如果我们需要显示键盘上无法直接输入的符号。例如，版权符号 ©；可以使用实体代码来显示。
-- 如果我们需要作为内容的一部分打印 < 或 > 符号，这会破坏 HTML 页面。因此我们可以使用实体代码：
+- 如果我们需要作为内容的一部分打印 `<` 或 `>` 符号，这会破坏 HTML 页面。因此我们可以使用实体代码：
 
+| 字符 | 实体代码 |
 |---|---|
-| < | &lt; |
-| > | &gt; |
-| & | &amp; |
+| `<` | `&lt;` |
+| `>` | `&gt;` |
+| `&` | `&amp;` |
 
-表 2.9：常用的 HTML 实体代码
+**表 2.9：** 常用的 HTML 实体代码
 
 你可以在 https://www.w3schools.com/html_entities.asp 查看完整列表。
+
 ## 总结
 
 能够使用 HTML 构建内容是 Web 开发的第一步。现在，我们可以添加基础内容并构建一个基础网站。
 
-
 ## 练习
 
-  A. list-style-type
-  B. list-style-image
-  C. type
-  D. list-item
-  答案：C
-  对于有序列表，type 属性可以更改项目标记。list-style-type 和 list-style-image 是用于无序列表的样式属性。
+1. 对于有序列表，哪个属性可以更改项目标记？
+   - A. list-style-type
+   - B. list-style-image
+   - C. type
+   - D. list-item
+   **答案：C**
+   对于有序列表，`type` 属性可以更改项目标记。`list-style-type` 和 `list-style-image` 是用于无序列表的样式属性。
 
-  A. Section
-  B. article
-  C. Header
+2. 哪个标签是文档中的一部分，它是页面的独立部分，并且本身具有完整意义？
+   - A. Section
+   - B. article
+   - C. Header
+   **答案：B**
+   `article` 是文档中的一部分，它是页面的独立部分，并且本身具有完整意义。
 
-  答案：B。
-  article 是文档中的一部分，它是页面的独立部分，并且本身具有完整意义。
+3. 哪对标签在渲染的最终内容中，任何额外的空格和换行都会从 `<p>` 标签中移除，但在 `<pre>` 标签中保留？
+   - A. `<div>`, `<p>`
+   - B. `<div>`, `<pre>`
+   - C. `<pre>`, `<p>`
+   - D. `<p>`, `<pre>`
+   **答案：选项 D。**
+   在渲染的最终内容，任何额外的空格和换行都会从 `<p>` 标签中移除，但在 `<pre>` 标签中保留。
 
-  A. <div>, <p>
-  B. <div>, <pre>
-  C. <pre>, <p>
+4. 以下是 HTML 表单中 input 字段 `type` 属性的有效值哪些？
+   - A. week
+   - B. date
+   - C. datetime-local
+   - D. 以上皆是
+   **答案：选项 D。**
+   所有给出的值（date, week, datetime-local）都是有效值。
 
+5. 哪个标签用于指示可能的换行点？
+   - A. mark
+   - B. em
+   - C. wbr
+   - D. break
+   **答案：选项 C。**
+   `<wbr>` 标签用于指示。
 
-
-
-
-**答案：选项 D。**
-
-在渲染的最终内容，任何额外的空格和换行都会从 <p> 标签中移除，但在 <pre> 标签中保留。
-+ 4. 以下是 HTML 表单中 input 字段 `type` 属性的有效值哪些？
-    - A. week
-    - B. date
-    - C. datetime-local
-
-**答案：选项 D。**
-所有给出的值（date, week, datetime-local）都是有效值。
-
-    - A. mark
-    - B. em
-    - C. wbr
-    - D. break
-**答案：选项 C。**
-<wbr> 标签用于指示。
-
-# 第 3 章
-## CSS - 让内容变得美化
+# 第 3 章：CSS - 让内容变得美化
 
 > “UI 是马鞍”
-—— Dain Miller，Web 开发者
+> —— Dain Miller，Web 开发者
+
 > “直观的设计就是我们赋予用户新的超能力。”
-—— Jared Spool，《网站易用性：设计师指南》
+> —— Jared Spool，《网站易用性：设计师指南》
 
 在上一章中，我们学习了如何使用 HTML 在网页中添加不同格式和具有不同语义的内容。在本章中，我们将研究 Web 开发的第二个支柱。这是为我们的内容增添所有美丽和优雅的支柱——CSS（层叠样式表）。CSS 完全控制着网页的样式，并通过视觉设计增强了内容，其力量是无限的。它提升了网页的直观性，同时也增强了它的外观。CSS 是 Web 开发中必不可少的技能。
-## 样式表
 
-* CSS 的力量
-* CSS 基础
-* CSS 样式 – 字体、文本、背景属性
-* CSS – 盒模型
-* 元素定位
-* 响应式设计
+## 结构
+
+- CSS 的力量
+- CSS 基础
+- CSS 样式 – 字体、文本、背景属性
+- CSS – 盒模型
+- 元素定位
+- 响应式设计
+
 ## 目标
 
 在学习本章后，你将学习 CSS 的基本语法和属性，以及如何利用这些属性来改进网页的整体外观。
 
-
 为了理解并实现 CSS 能做什么，你需要以以下两种形式查看此网页。
 
 第一张图是未应用任何样式的网页：
+
 ![](img/22525aec83cb16cb7664cd8d5c364721_65_0.png)
 
 在完成之前，组织一切似乎是不可能的！
@@ -1151,83 +1182,92 @@ datalist
 
 ![](img/22525aec83cb16cb7664cd8d5c364721_65_1.png)
 
-
 **图 3.1：** 没有 CSS 的登录页面
 
 下一张图显示了应用了 CSS 样式后的相同内容：
+
 ![](img/22525aec83cb16cb7664cd8d5c364721_66_0.png)
 
 **图 3.2：** 应用 CSS 后的相同页面
-多么巨大的改新换面啊！
+
+多么巨大的改变啊！
+
 这就是 CSS 的力量！
 
 你现在知道 HTML 定义内容，而 CSS 定义内容的呈现：
-* * 通过 CSS，你可以同时控制多个网页的布局，并制作你的网站内容
-* * 通过 CSS，你可以轻松地为相同的内容应用不同的样式，以更改不同媒体设备的外观
+
+- 通过 CSS，你可以同时控制多个网页的布局，并制作你的网站内容
+- 通过 CSS，你可以轻松地为相同的内容应用不同的样式，以更改不同媒体设备的外观
 
 让我们从理解基本的 CSS 代码结构及其包含的内容开始。
+
 ## CSS 基础
 
 CSS 代码结构非常易于理解。CSS 代码体由 CSS 规则集组成。
+
 一个 CSS 规则集由两个部分组成，如下：
 
-* * **选择器：** 选择器指向你想要样式的 HTML 元素。
-* • 声明块：声明块包含一个或多个用分号隔开的声明。每个声明/规则包含一个 CSS 属性名和一个值，用冒号隔开：
-    ○ 值是分配给该属性的值
+- **选择器：** 选择器指向你想要样式的 HTML 元素。
+- **声明块：** 声明块包含一个或多个用分号隔开的声明。每个声明/规则包含一个 CSS 属性名和一个值，用冒号隔开：
+  - 值是分配给该属性的值
 
-## 示例：
-```
+### 示例
+
+```css
 p {
   color: red;
   text-align: center;
+}
 ```
 
 `p` 是选择器，带有括号 `{}` 的剩余部分是声明块。该块有两个规则，其中 `color`, `text-align` 是属性，`red`, `center` 是正在赋值的属性值。
 
-
 关于语法需要注意的点：
 
-* • 每个 CSS 声明始终以分号结束
-* 每个声明块都被大括号包围
-* 默认情况下，所有 CSS 语法是不区分大小写的，但也有一些例外：
-    ○ 标识符（包括选择器中的元素名称、类和 ID）是区分大小写的
-    ○ 像 URL、content 这样的属性值是区分大小写的
-    ○ 像 color、font 许多许多属性值是不区分大小写的
+- 每个 CSS 声明始终以分号结束
+- 每个声明块都被大括号包围
+- 默认情况下，所有 CSS 语法是不区分大小写的，但也有一些例外：
+  - 标识符（包括选择器中的元素名称、类和 ID）是区分大小写的
+  - 像 URL、content 这样的属性值是区分大小写的
+  - 像 color、font 许多许多属性值是不区分大小写的
 
 这就是基础 CSS 语法的全部！
-
 
 现在你已经知道了编写 CSS 的语法，下一步是将其包含在你的 HTML 内容中，以便其应用到内容上。将 CSS 样式表应用于 HTML 有三种方法：
 
 - 内联样式
+- 内部样式表
 - 外部样式表
 
-## 内联样式
+### 内联样式
 
+以下示例展示了如何使用内联样式：
 
-以下示例展示了如何：
-
-```
+```html
+<p style="color: red; font-size: 20px;">这是一个段落</p>
 ```
 
 ### 内部样式表
 
+以下示例展示了如何使用内部样式表：
 
-以下示例展示了如何：
-
-```
+```html
+<head>
 <style>
   body {
     background-color: blue;
   }
+  h1 {
     color: maroon;
   }
   p {
     color: red;
+  }
 </style>
 </head>
 ```
 
+### 外部样式表
 
 这是最灵活的方法，样式定义在单独的文件中。每个页面都可以包含对外部样式的引用：
 
@@ -1235,17 +1275,19 @@ p {
 <link rel="stylesheet" href="mystyle.css">
 </head>
 ```
+
 ## 层叠样式
 
-猜到为什么样式被称为层叠样式吗？是的，它们在应用时具有层叠效应。
+猜到为什么样式被称为层叠样式吗？是的，它们在应用时具有层叠效应。优先级顺序如下（从高到低）：
 
-
-- 内联样式（HTML 元素内部）
-- 内部样式表（在 head 中）
-- 外部样式表
+1. 内联样式（HTML 元素内部）
+2. 内部样式表（在 head 中）
+3. 外部样式表
 
 以下代码展示了使用三种方式引入 CSS：
 
+```html
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -1262,138 +1304,145 @@ p {
     background-color: white;
     font-weight: normal;
   }
+</style>
 </head>
 <body>
-Normal text <div>This is bold text
+Normal text
+<div>This is bold text
 <span style="font-family: verdana; font-size:30px; background-color: blue;font-weight: normal;">
+</span>
 </div>
 <p>
 This is an external styled paragraph
 </p>
+</body>
 </html>
 ```
 
 在上述 HTML 中包含的外部样式表如下：
+
 ```css
-External style sheet - main.css:
+/* External style sheet - main.css */
 p {
-font-size: 80px;
-background-color: red;
-font-weight: bolder;
+  font-size: 80px;
+  background-color: red;
+  font-weight: bolder;
 }
 ```
+
 上述样式的输出如下：
 
 ![](img/22525aec83cb16cb7664cd8d5c364721_70_0.png)
 
-
 最后一个段落的外部样式被内部样式覆盖了。因此背景是白色的。你可以看到，如果你像下面一样在 Chrome 调试器中打开元素选项卡：
 
-
-```
+```css
 element.style {
   font-family: verdana;
   font-size: 38px;
   font-weight: normal;
 }
-```
 
 p {
   font-family: sans-serif;
   background-color: red;
   font-weight: bold;
+}
 ```
 
 图 3.2.2：显示级联样式的调试器
 
+当浏览器显示文档时，它必须将文档的 HTML 内容与其 CSS 样式信息相结合。它按照以下步骤分两个阶段处理文档：
 
-当浏览器显示文档时，它必须文档的 HTML 内容与其 CSS 样式信息相结合。它按照以下步骤分两个阶段处理文档：
-
-+   * 浏览器加载并解析 HTML 和 CSS，将其转换为 DOM（文档对象模型）。
-* 每一幅级联样式表（Cascading Style Sheet）都是一组称为语句的指令。每个语句都做两件事：
-
-+   * 它识别 HTML 文档中受其影响的元素
-* 它告诉浏览器如何绘制这些元素
-+   * 浏览器将样式附加到相关的 DOM 节点，并最终显示 DOM 的内容。
+1. 浏览器加载并解析 HTML 和 CSS，将其转换为 DOM（文档对象模型）。
+2. 每一幅级联样式表（Cascading Style Sheet）都是一组称为语句的指令。每个语句都做两件事：
+   - 它识别 HTML 文档中受其影响的元素
+   - 它告诉浏览器如何绘制这些元素
+3. 浏览器将样式附加到相关的 DOM 节点，并最终显示 DOM 的内容。
 
 下图显示了 HTML 和 CSS 加载并解析以创建最终显示的 DOM 树的流程：
-
 
 图 3.3：浏览器如何与 CSS 和 HTML 工作！
 
 现在让我们详细查看 CSS 语法的每个部分，以及我们如何编写 CSS 规则。
+
 ## 属性 (Properties)
 
 属性被分配给选择器，以便操作其样式的某些方面。属性示例包括颜色（color）、外边距（margin）和字体（font）。
 
-
 声明值是属性接收的赋值。它是分配给属性的值，因此它与属性紧密耦合。例如，属性 `color` 可以被赋值为 red 或 blue。
 
 CSS 中分配给属性的一些基本值集包括：
-+   - **预定义选项/值**：例如 `display: none;` `position: absolute;`
+
+- **预定义选项/值**：例如 `display: none;` `position: absolute;`
 - **颜色**：颜色可以用不同的格式给出，颜色名称、Hex 进制代码、RGB 值。例如 `background-color: red;` `font-color: #FFFFFF;`
-    - **长度、大小和数字**：例如 `width:50%;` `height: 200px;` `z-index:100;`
-    - **函数**：例如 `transform: scale(10,10,10);`
+- **长度、大小和数字**：例如 `width:50%;` `height: 200px;` `z-index:100;`
+- **函数**：例如 `transform: scale(10,10,10);`
+
 ## 选择器 (Selectors)
 
-选择器是用于选择 `<HTML 元素>` 进行样式的模式。
-这代表了将应用样式的网页部分。
-## 通用选择器 (Universal selector):
+选择器是用于选择 `<HTML 元素>` 进行样式的模式。这代表了将应用样式的网页部分。
 
-由星号 (*) 表示的通用选择器用于当我们需要对所有元素应用样式时。可选的是，它可以被限制在特定的命名空间或所有命名空间。
+### 通用选择器 (Universal selector)
 
+由星号 (`*`) 表示的通用选择器用于当我们需要对所有元素应用样式时。可选的是，它可以被限制在特定的命名空间或所有命名空间。
 
 示例：`*` 将匹配文档中的所有元素。
 
 不建议使用它，因为它在解析元素的方式上效率很低。
+
 相反，始终使用 `<body>` 元素选择器更好，因为它显式地选择了 HTML 页面主体内部的所有内容。
 
-### 元素或类型选择器 (Element or Type Selector):
+### 元素或类型选择器 (Element or Type Selector)
 
-
-```
+```css
 p { text-indent: 3em }
 ```
-### 类选择器 (Class selectors):
+
+### 类选择器 (Class selectors)
 
 此选择器用于分组不同的元素并应用相同的样式。简单的选择器可以有不同的类，允许同一个元素具有不同的样式。例如，作者可能希望根据 `p` 在页面上的位置以不同的颜色显示 `p`：
 
+```css
 p.header { color: #191970 }
 p.textcss { color: #4b0082 }
 ```
 
-
 ```html
 <p class="header">这是标题（header）</p>
 <p class="textcss">这是正文（body text）</p>
+```
 
 定义选择器时只允许一个类。多个类可以分配给一个元素。类也可以在没有关联元素的情况下声明：
 
 ```css
+.note { font-size: small }
 ```
 
 在这种情况下，`note` 类可以用于任何元素。
 
-
 前面示例中的 `note` 类可以被命名为 `small`，但如果作者决定更改类的样式，使其不再具有较小的字体，那么这个名称将变得毫无意义。
 
-## ID 选择器 (ID selectors):
+### ID 选择器 (ID selectors)
+
 ID 选择器被单独分配，目的是按元素进行定义。它被唯一地应用于特定元素。文档中具有给定 ID 的元素应该只有一个。由于其固有的限制性，这种类型的选择器应该稀疏使用。
 
 ID 选择器通过在名称前使用指示符 `#` 来分配。
 
-
 ```css
-#myid{ text-indent: 20px }
+#myid { text-indent: 20px }
 ```
+
 这将在 HTML 中通过 `id` 属性引用：
 
 ```html
 <p id="myid">文本缩进 20px</p>
+```
 
-### 属性选择器 (Attribute selector):
+### 属性选择器 (Attribute selector)
 
 属性选择器根据给定属性的存在或值来匹配元素。它可以使用以下方式：
+
 | 语法 | 目的 | 用法 |
 | --- | --- | --- |
 | `[attr]` | 匹配具有给定属性的元素 | `[title]` |
@@ -1402,130 +1451,141 @@ ID 选择器通过在名称前使用指示符 `#` 来分配。
 | `[attr$=value]` | 匹配属性值以值结尾的元素 | `[src$=".gif"]` |
 | `[attr*=value]` | 匹配属性值包含值的元素 | `[class*="test"]` |
 | `[attr i]` | 表示不区分大小写 | 用于在匹配属性值时不区分大小写 |
-**表 3.1：CSS 属性选择器
 
-## 组合器 (Combinators)
+**表 3.1：** CSS 属性选择器
 
+### 组合器 (Combinators)
 
-**选择器组：** 当你想要对多个元素应用相同的样式时，而不是为每个元素创建不同的块，你可以简单地使用逗号（`,`）列出它们并编写一次规则：
+#### 选择器组
+
+当你想要对多个元素应用相同的样式时，而不是为每个元素创建不同的块，你可以简单地使用逗号（`,`）列出它们并编写一次规则：
 
 ```css
+h1, h2, h3 {
   margin: 1rem;
   text-decoration: underline;
 }
 ```
+
 前面的规则一次性对所有标题标签应用边距和下划线。
 
-下图总结了 CSS 中的组合器：
+#### 组合器类型
 
-| `>` 子选择器 | 匹配所有指定元素的直接子元素 `element1 > element2` |
-| `+` 相邻兄弟选择器 | 匹配所有指定元素的相邻兄弟元素 `element1 + element2` |
-| `~` 通用兄弟选择器 | 匹配所有指定元素的兄弟元素 `element1 ~ element2` |
+| 组合器 | 名称 | 说明 | 示例 |
+| :--- | :--- | :--- | :--- |
+| `>` | 子选择器 | 匹配所有指定元素的直接子元素 | `element1 > element2` |
+| `+` | 相邻兄弟选择器 | 匹配所有指定元素的相邻兄弟元素 | `element1 + element2` |
+| `~` | 通用兄弟选择器 | 匹配所有指定元素的兄弟元素 | `element1 ~ element2` |
+| (空格) | 后代组合器 | 匹配所有指定元素的后代 | `element1 element2` |
 
+#### 上下文选择器/后代组合器
 
-## **上下文选择器/后代组合器**
-
-上下文选择器或后代选择器是由空白分隔的两个或多个简单选择器的字符串。后代选择器匹配所有指定元素的后代。
-这些选择器可以分配普通属性，由于级联顺序规则，它们将优先于简单选择器。
+上下文选择器或后代选择器是由空白分隔的两个或多个简单选择器的字符串。后代选择器匹配所有指定元素的后代。这些选择器可以分配普通属性，由于级联顺序规则，它们将优先于简单选择器。
 
 例如，`P EM {background: yellow}` 中的上下文选择器是 `P EM`。此规则说，段落内的强调文本应该具有黄色背景；标题中的强调文本将不受影响。
 
 - `div p`: 选择 div 内部所有的 p 元素
 
+#### 子组合器/选择器
 
+子选择器选择所有是指定元素的直接子元素。子组合器 (`>`) 放置于两个 CSS 选择器之间。它只匹配由第二个选择器匹配且是第一个选择器所匹配元素之子的元素。它比后代选择器更严格，在后代选择器中，element2 可以是 DOM 中任意层级的 element1 的儿子。
 
-
-### 子组合器/选择器
-
-子选择器选择所有是指定元素的直接子元素。子组合器 (>) 放置于两个 CSS 选择器之间。它只匹配由第二个选择器匹配且是第一个选择器所匹配元素之子的元素。
-它比后代选择器更严格，在后代选择器中，element2 可以是 DOM 中任意层级的 element1 的儿子。
-
-- element1>element2: 选择 DOM 中 element1 下的直接子元素 element2。
+- `element1 > element2`: 选择 DOM 中 element1 下的直接子元素 element2。
   `div > p { background-color: yellow; }`
-### 相邻兄弟选择器
+
+#### 相邻兄弟选择器
 
 相邻兄弟选择器选择所有指定元素的相邻兄弟元素。
 
-
-- element1 + element 2: element2 必须紧跟在同一父元素下的 element1 之后：
+- `element1 + element2`: element2 必须紧跟在同一父元素下的 element1 之后：
   `div + p { background-color: yellow; }`
 
+#### 通用兄弟选择器
 
-通用兄弟选择器选择~。这意味着第二个元素跟在第一个元素之后（但不一定是紧邻的），且两者共享同一个父元素：
+通用兄弟选择器选择 `~`。这意味着第二个元素跟在第一个元素之后（但不一定是紧邻的），且两者共享同一个父元素：
 
-- element1 element2: element2 位于 DOM 中同一父元素下的 element1 之后
+- `element1 ~ element2`: element2 位于 DOM 中同一父元素下的 element1 之后
 
-## 使用伪类设置样式
+### 使用伪类设置样式
 
-伪类用于以更广泛的方式匹配内容，因为它们可以引用 DOM 中未直接表示的元素。它们引用元素的状态，并用于为元素的特殊状态。
-它们可以根据用户交互进行动态访问。要使用伪类，必须在类名开头添加 `:`：
+伪类用于以更广泛的方式匹配内容，因为它们可以引用 DOM 中未直接表示的元素。它们引用元素的状态，并用于为元素的特殊状态设置样式。它们可以根据用户交互进行动态访问。要使用伪类，必须在类名开头添加 `:`：
 
 | 伪类 | 用法 |
 | --- | --- |
-| :active | 这将匹配用户点击元素的那一刻。只要用户一直按住点击元素，样式就会一直生效。 |
-| :hover | 这将匹配鼠标当前悬停在元素上时刻的元素。 |
-| :empty | 这将匹配下方没有任何子元素的元素。 |
-| :valid | 这将匹配根据每个类型持有合法或有效值的输入。例如，电子邮件或数字类型将是有效的；它持有预期格式的数据。 |
-| :link | 这将匹配未访问过的链接锚点标签。 |
-| :in-range | 这将匹配持有特定范围内值的范围输入元素。 |
-| :not(selector) | 这将匹配每一个不是参数参数的元素。这反转了选择器条件。 |
-| :first-child | 这将匹配特定父元素内的第一个子元素。例如，div:first-child 将匹配其内部的第一个 div。 |
-| :lang(language) | 这将匹配具有特定值语言属性的元素。 |
-| :nth-child(n) | 这将匹配特定父元素内的第 n 个元素。 |
-| :nth-last-child(n) | 这将匹配从末尾开始的第 n 个子元素。 |
-| :nth-of-type(n) | 这将匹配特定父元素内给定类型的第 n 个元素。 |
-| :only-of-type | 这将匹配特定父元素内该类型的唯一元素。如果有多个... |
-| :only-child | 这将匹配特定父元素内的唯一子元素。如果该父元素内有多个子元素，则没有任何元素会被匹配。 |
-| :optional | 这将匹配没有 required 属性的输入元素。 |
-| :read-only | 这将匹配带有 read-only 属性的元素。 |
-| :required | 这将匹配带有 required 属性的元素。 |
-| :root | 这将匹配文档的根元素。 |
+| `:active` | 这将匹配用户点击元素的那一刻。只要用户一直按住点击元素，样式就会一直生效。 |
+| `:hover` | 这将匹配鼠标当前悬停在元素上时刻的元素。 |
+| `:empty` | 这将匹配下方没有任何子元素的元素。 |
+| `:valid` | 这将匹配根据每个类型持有合法或有效值的输入。例如，电子邮件或数字类型将是有效的；它持有预期格式的数据。 |
+| `:link` | 这将匹配未访问过的链接锚点标签。 |
+| `:in-range` | 这将匹配持有特定范围内值的范围输入元素。 |
+| `:not(selector)` | 这将匹配每一个不是参数选择器的元素。这反转了选择器条件。 |
+| `:first-child` | 这将匹配特定父元素内的第一个子元素。例如，`div:first-child` 将匹配其内部的第一个 div。 |
+| `:lang(language)` | 这将匹配具有特定值语言属性的元素。 |
+| `:nth-child(n)` | 这将匹配特定父元素内的第 n 个元素。 |
+| `:nth-last-child(n)` | 这将匹配从末尾开始的第 n 个子元素。 |
+| `:nth-of-type(n)` | 这将匹配特定父元素内给定类型的第 n 个元素。 |
+| `:only-of-type` | 这将匹配特定父元素内该类型的唯一元素。如果有多个... |
+| `:only-child` | 这将匹配特定父元素内的唯一子元素。如果该父元素内有多个子元素，则没有任何元素会被匹配。 |
+| `:optional` | 这将匹配没有 required 属性的输入元素。 |
+| `:read-only` | 这将匹配带有 read-only 属性的元素。 |
+| `:required` | 这将匹配带有 required 属性的元素。 |
+| `:root` | 这将匹配文档的根元素。 |
 
-表 3.2: 使用伪类设置 CSS 样式
-## 使用伪元素设置样式
+**表 3.2:** 使用伪类设置 CSS 样式
+
+### 使用伪元素设置样式
 
 CSS 伪元素用于为元素的特定部分设置样式。伪元素可以引用源代码中不存在但在之后生成的内容。
 
-
-```
+```css
 selector::pseudo-element {
-property: value;
+  property: value;
+}
+```
 
-按照规则，应该使用双冒号 (::) 而不是单冒号 (:)。这区分了伪类和伪元素。
+按照规则，应该使用双冒号 (`::`) 而不是单冒号 (`:`)。这区分了伪类和伪元素。
 
 ## CSS 继承
+
 HTML 元素可以从其父元素继承 CSS 样式。这被称为 CSS 继承。并不是所有的样式都会从父元素或祖元素继承。通常，适用于文本的样式是被继承的，而边框、外边距、内边距等样式是不被继承的。
 
 HTML 元素也可以从更远的祖先继承样式，而不仅仅是直接父元素。例如所示：
 
+```html
 <body>
 <div>
-<p>
-</p>
+<p>此段文本继承了字体大小</p>
+</div>
 <style>
 body {
   font-family: Calibri;
 }
+</style>
 </body>
 ```
 
 此段文本继承了字体大小。现在我们了解了继承，并将学习优先级。
+
 ## CSS 继承与优先级
 
 当多个规则作用于同一个元素时，浏览器根据优先级决定应用哪种样式。如果两个规则的优先级相同，则在样式表中后声明的规则具有优先权。
 
+优先级计算示例：
 
 - 内联样式 (1,0,0,0)
 - ID (0,1,0,0)
 - 类、属性和伪类 (0,0,1,0)
+- 元素选择器 (0,0,0,1)
 
 例如：
 
 ```css
+p {
   color: red;
 }
 .text {
   color: blue;
+}
 #header {
   color: green;
 }
@@ -1533,35 +1593,36 @@ body {
 
 ## 在 CSS 属性后使用 !important
 
-!important 指令具有所有优先级因素中的优先级，应该谨慎使用：
-- 如果你需要某个 CSS 属性优于所有规则，可以在属性后添加 !important。
-- 使用 !important 不是一个良好的做法，因为它覆盖了正常的流和优先级。尝试更好地利用级联属性并通过更具体的规则来增加优先级。
+`!important` 指令具有所有优先级因素中的优先级，应该谨慎使用：
+
+- 如果你需要某个 CSS 属性优于所有规则，可以在属性后添加 `!important`。
+- 使用 `!important` 不是一个良好的做法，因为它覆盖了正常的流和优先级。尝试更好地利用级联属性并通过更具体的规则来增加优先级。
 
 ```css
+p {
   font-family: Arial;
   font-size: 16px !important;
 }
 ```
 
 - 当存在全局 CSS 文件且应用内联样式时。在这种情况下，你可以在全局 CSS 文件中将某些样式设置为重要，从而覆盖元素的内联样式。
-- 如果需要覆盖具有优先级的规则（例如 ID 选择器），可以使用 !important。
-
+- 如果需要覆盖具有优先级的规则（例如 ID 选择器），可以使用 `!important`。
 
 CSS 规则的优先级取决于其选择器。如果 CSS 选择器更具体，则 CSS 规则中的属性声明拥有更大的优先权。CSS 选择器越具体地指向 HTML 元素，其优先级越高。优先级由 CSS 选择器的类型决定。
 
-以下是 CSS 选择器的优先级列表：
+以下是 CSS 选择器的优先级列表（从低到高）：
+
 - 继承样式：所有选择器中优先级最低，因为继承样式针对元素的父而不是 HTML 元素本身
-- 通用选择器 *：所有直接目标选择器中优先级最低
+- 通用选择器 `*`：所有直接目标选择器中优先级最低
 - 元素选择器：优先级高于通用选择器和继承样式
-- 属性选择器：优先级高于属性、元素和通用选择器
-- 使用属性的内联样式：优先级高于 ID 选择
+- 类选择器、属性选择器、伪类选择器：优先级高于元素选择器
+- ID 选择器：优先级高于类、属性、伪类选择器
+- 内联样式：优先级高于 ID 选择器
 
-通用选择器 (*)、组合符 (+, >, ~, ' ') 和否定伪类 (:not) 对优先级没有影响。
-
-
-
+通用选择器 (`*`)、组合符 (`+`, `>`, `~`, ' ') 和否定伪类 (`:not`) 对优先级没有影响。
 
 以下代码展示了如何使用不同的选择器应用相同的规则：
+
 ```html
 <body>
 <style>
@@ -1574,114 +1635,112 @@ CSS 规则的优先级取决于其选择器。如果 CSS 选择器更具体，�
 <div myattr class="aText"> Text 3 </div>
 <div myattr class="aText" id="myId"> Text 4 </div>
 </body>
+```
 
 当你在 CSS 规则中开始应用多种 CSS 选择器类型时，有必要更仔细地检查这些选择器的优先级。此外，你必须确保它们在目标元素上没有重叠，以实现所需的样式，否则你的样式会被覆盖。
 
 ## 如何计算权重（Specificity）？
+
 选择器的权重计算方式如下：
 
--   • 统计选择器中 ID 属性的数量（= a）
--   统计选择器中其他属性和伪类的数量（= b）
+- 统计选择器中 ID 属性的数量（= a）
+- 统计选择器中其他属性和伪类的数量（= b）
+- 统计选择器中元素名称的数量（= c）
+- 将上述三个数字串联起来，a-b-c 即为该选择器的权重。
 
-将上述三个数字串联起来，a-b-c 即为该选择器的权重。
 权重最高的选择器将被应用。
-
 
 如果两个规则具有相同的权重，则出现在 CSS 代码中较靠后的规则会覆盖之前的规则。因此，最后，是级联的（Cascading）！
 
 ## CSS 单位
+
 某些 CSS 属性需要单位，因此为了能够正确使用和应用这些值，我们应该了解哪些单位。
+
 主要的 CSS 单位可以分类如下。
 
-## 绝对长度
--   绝对值的应用不依赖于任何用户设置。例如 px、cm、mm、英寸等
--   如果更改了浏览器的默认设置，不会影响字体的绝对 px 大小
--   px 在 Web 开发中常用于指定绝对长度
+### 绝对长度
 
+- 绝对值的应用不依赖于任何用户设置。例如 `px`、`cm`、`mm`、英寸等
+- 如果更改了浏览器的默认设置，不会影响字体的绝对 `px` 大小
+- `px` 在 Web 开发中常用于指定绝对长度
 
-根据视口调整应用元素的大小。视口长度可以使用 h 和 w 应用。视口是浏览器渲染内容的区域。这是你的屏幕减去浏览器预留空间后的区域。这是一个响应式单位，因为它依赖于视口大小，也可以应用于字号以使其具有响应性。
-单位包括 vw、vh、vmin 和 vmax：
+### 相对长度
 
--   1vw 的值等于视口宽度的 1%。
--   1vmin 等于视口高度或宽度的 1%，以较小者为准。
--   1max 等于视口高度或宽度的 1%，以较大者为准。
+根据视口调整应用元素的大小。视口长度可以使用 `vh` 和 `vw` 应用。视口是浏览器渲染内容的区域。这是你的屏幕减去浏览器预留空间后的区域。这是一个响应式单位，因为它依赖于视口大小，也可以应用于字号以使其具有响应性。
 
+单位包括 `vw`、`vh`、`vmin` 和 `vmax`：
+
+- `1vw` 的值等于视口宽度的 1%。
+- `1vh` 的值等于视口高度的 1%。
+- `1vmin` 等于视口高度或宽度的 1%，以较小者为准。
+- `1vmax` 等于视口高度或宽度的 1%，以较大者为准。
+
+### 字体相对单位
 
 适应于浏览器设置中的默认字体大小：
 
--   Em 和 Rem 单位用于字号。
+- `Em` 和 `Rem` 单位用于字号。
+- `Em` 与父元素的字体大小相关，该字体是可以继承的，并用于计算当前元素的大小。
+- `Rem`（Root em）与根元素的字体大小相关，即默认情况下，浏览器的字体设置。如果在 html 元素上设置了 `font-size`，它将作为基准，否则使用浏览器设置的 `font-size`（例如，中等字体下 1 rem=16px，大字体下 1 rem=20px）。
 
--   Em 与父元素的字体大小相关，该字体是可以继承的，并用于计算当前元素的大小。
--   Rem（Root em）与根元素的字体大小相关，即默认情况下，浏览器的字体设置。如果在 html 元素上设置了 font-size，它将作为基准，否则使用浏览器设置的 font-size（例如，中等字体下 1 rem=16px，大字体下 1 rem=20px）。
-
+### 百分比
 
 百分比是一个应用于任何元素的特殊单位。百分比单位取决于元素的定位属性，该属性决定了元素的包含块（containing block）：
 
--   Position: fixed: 包含块是视口
--   Position: static or relative: 包含块是祖先元素的内容
--   应用于字号的百分比以浏览器字体设置为参考值来计算 %
+- `Position: fixed`: 包含块是视口
+- `Position: static or relative`: 包含块是祖先元素的内容
+- 应用于字号的百分比以浏览器字体设置为参考值来计算 %
 
 ## CSS 样式 – 字体、文本、背景属性
+
 让我们查看将添加到 HTML 页面中的不同类型元素的样式。我们将介绍所有常见方面以及每个元素的主要属性：
 
-## 字体样式
-
+### 字体样式
 
 你可以从 Google Fonts 搜索并包含新字体。点击选取图标旁的 "+"，你将获得一个包含在 header 中的链接，以便在页面上使用该字体。下表列出了用于选择字体族和样式化字体的属性：
 
 | 属性 | 用法 | 示例 |
-| font-family | 用于设置渲染文本的字体。应提供一个字体族列表，并将通用族放在最后 | body { font-family: "Calibri", sans-serif; } |
-| 备选方案包含 | serif, sans-serif, monospace | |
-| font-style | 用于设置字体样式，值为 normal（正体）、italic（斜体）和 oblique（倾斜体） | p.italic { font-style: italic; } |
-| font-size | 用于设置字体大小 | p { font-size: 20px; } |
-| font-variant | 用于设置字体变体，如 small-caps | p { font-variant: small-caps; } |
+| :--- | :--- | :--- |
+| `font-family` | 用于设置渲染文本的字体。应提供一个字体族列表，并将通用族放在最后 | `body { font-family: "Calibri", sans-serif; }` |
+| 备选方案包含 | `serif`, `sans-serif`, `monospace` | |
+| `font-style` | 用于设置字体样式，值为 normal（正体）、italic（斜体）和 oblique（倾斜体） | `p.italic { font-style: italic; }` |
+| `font-size` | 用于设置字体大小 | `p { font-size: 20px; }` |
+| `font-variant` | 用于设置字体变体，如 small-caps | `p { font-variant: small-caps; }` |
 
-## 文本样式
-
+### 文本样式
 
 | 属性 | 用法 | 示例 |
-| --- | --- | --- |
-| color | color 属性用于设置文本颜色。可以使用名称、十六进制代码或 rgb(0,0,0) 格式 | p { color: green; } |
-| text-decoration | 用于添加或删除装饰，可以使用 underline、line-through、none | h1 { text-decoration: underline; } |
-| text-transform | 该属性用于将文本更改为 lowercase、uppercase 或 capitalize | p.upper { text-transform: uppercase; } |
-| text-indent | 给文本第一行的缩进。特别适用于段落 | p { text-indent: 50px; } |
-| line-height | 该属性用于指定行间距 | p { line-height: 0.8; } |
-| letter-spacing | 指定文本中字母或字符之间的间距 | h1 { letter-spacing: 5px; } |
-| direction | 该属性用于更改文本的方向 | p.rtl { direction: rtl; } |
+| :--- | :--- | :--- |
+| `color` | color 属性用于设置文本颜色。可以使用名称、十六进制代码或 rgb(0,0,0) 格式 | `p { color: green; }` |
+| `text-decoration` | 用于添加或删除装饰，可以使用 underline、line-through、none | `h1 { text-decoration: underline; }` |
+| `text-transform` | 该属性用于将文本更改为 lowercase、uppercase 或 capitalize | `p.upper { text-transform: uppercase; }` |
+| `text-indent` | 给文本第一行的缩进。特别适用于段落 | `p { text-indent: 50px; }` |
+| `line-height` | 该属性用于指定行间距 | `p { line-height: 0.8; }` |
+| `letter-spacing` | 指定文本中字母或字符之间的间距 | `h1 { letter-spacing: 5px; }` |
+
+
+
+| direction | 该属性用于更改文本的方向 | `p.rtl { direction: rtl; }` |
 
 ## 背景样式
+
 背景相关的属性包括：
 
 | 属性 | 用法 | 示例 |
 | --- | --- | --- |
-| background-origin | 用于设置背景的起始位置，它是从边框、内边距内部还是外部开始 | background-origin: border-box;
-background-origin: padding-box;
-background-origin: content-box; |
-| background-position | 设置背景的初始位置。可以使用方向如 top、left、bottom、right 或给出百分比或长度值 | background-position: top;
-background-position: center;
-background-position: 25% 75%; |
-| background-repeat | 设置背景图像如何在区域内重复 | background-repeat: repeat-x;
-background-repeat: repeat-y;
-background-repeat: space;
-background-repeat: round;
-background-repeat: no-repeat; |
-| background-size | 设置背景的大小 | background-size: cover;
-background-size: 50%;
-background-size: 3.2em;
-background-size: 12px;
-background-size: auto; |
-image:url("image1.gif");
-url("image2.gif") |
-| background-clip | 用于定义背景（颜色或图像）的裁剪范围 | background-clip: padding-box; |
-
-| extend within an element. 元素扩展。值包括 border-box, padding-box, content-box。 | | |
-| background | 上述列表的所有属性都可以通过 background 的单个简写属性来赋予。 | background: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment; |
+| `background-origin` | 用于设置背景的起始位置，它是从边框、内边距内部还是外部开始 | `background-origin: border-box;`<br>`background-origin: padding-box;`<br>`background-origin: content-box;` |
+| `background-position` | 设置背景的初始位置。可以使用方向如 top、left、bottom、right 或给出百分比或长度值 | `background-position: top;`<br>`background-position: center;`<br>`background-position: 25% 75%;` |
+| `background-repeat` | 设置背景图像如何在区域内重复 | `background-repeat: repeat-x;`<br>`background-repeat: repeat-y;`<br>`background-repeat: space;`<br>`background-repeat: round;`<br>`background-repeat: no-repeat;` |
+| `background-size` | 设置背景的大小 | `background-size: cover;`<br>`background-size: 50%;`<br>`background-size: 3.2em;`<br>`background-size: 12px;`<br>`background-size: auto;` |
+| `background-image` | 设置背景图像 | `background-image: url("image1.gif");`<br>`url("image2.gif")` |
+| `background-clip` | 用于定义背景（颜色或图像）的裁剪范围 | `background-clip: padding-box;` |
+| `background` | 上述列表的所有属性都可以通过 `background` 的单个简写属性来赋予。 | `background: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment;` |
 
 表 3.5：背景样式
+
 你可以查阅第 2 章来参考列表和表格的基础样式属性。
 
 ## CSS – 盒模型
-
 
 - 内容 (Content)
 - 内边距 (Padding)
@@ -1690,18 +1749,24 @@ url("image2.gif") |
 ![](img/22525aec83cb16cb7664cd8d5c364721_88_0.png)
 
 ## Box模型
+
 每个渲染的 HTML 元素都被视为一个盒子。盒子由四个部分（或层）：
 
 - **Margin (外边距)**：最外层是该 HTML 元素与其他 HTML 元素之间的边距。
 - **Border (边框)**：第二部分是边框。边框位于外边距内部，包围着 HTML 元素的内边距和内容。
+- **Padding (内边距)**：第三部分是内边距。内边距位于边框内部，包围着 HTML 元素的内容。
 - **Content (内容)**：第四部分是内容。HTML 元素的内容是显示在元素内部的任何内容。这通常是文本、图像和其他 HTML 元素的组合。
 
 这些每一层都可以使用样式进行设置。
+
 注意，对于非替换行内元素，所占空间的大小（对行高的贡献）是由 `line-height` 属性决定的，尽管边框和内边距仍然显示在内容周围。
+
 ## 设置宽度高度
 
 你可以使用 `width` 和 `height` CSS 属性来控制 HTML 块元素盒的宽度和高度。
+
 无法使用 CSS 控制行内元素的宽度和高度。它等于行内元素内容的大小。`width` 和 `height` 属性可以使用 `px` 单位或百分比来设置：
+
 - 将宽度设置为 100% 会占据容器的整个宽度。这是块元素的默认行为。
 - 将高度设置为 100% 会占据容器父级提供的可用高度。如果我们必须将此设置为 100%，则应在父级级别设置某个绝对值，从 `html->body` 以及所有包含它的父级一直影响到该元素。如果 `body` 元素的高度为 1000px，那么 `body` 内部的 `p` 元素的高度可以设置为 50%，这将根据父级进行计算。
 
@@ -1709,43 +1774,48 @@ url("image2.gif") |
 
 ```css
 #theDiv {
-  width : 300px;
+  width: 300px;
 }
 ```
 
 因此，渲染元素的实际宽度包含了内边距、外边距和边框的大小，如下：
-总宽度 = width + margin-left + margin-right + border-left-width + border-right-width + padding-left + padding-right
-总高度 = height + margin-top + margin-bottom + border-top-width + border-bottom-width + padding-top + padding-bottom
+
+总宽度 = `width` + `margin-left` + `margin-right` + `border-left-width` + `border-right-width` + `padding-left` + `padding-right`
+
+总高度 = `height` + `margin-top` + `margin-bottom` + `border-top-width` + `border-bottom-width` + `padding-top` + `padding-bottom`
 
 ## Box sizing (盒模型尺寸)
+
 上述计算宽度高度的行为是默认的 `box-sizing` 属性，称为 `content-box`。
 
-你可以通过 `box-sizing` CSS 属性更改浏览器计算 HTML 元素尺寸的方式。`box-sizing` 属性是 CSS 3.0 中的的新属性。`box-sizing` 属性可以取这些值：
+你可以通过 `box-sizing` CSS 属性更改浏览器计算 HTML 元素尺寸的方式。`box-sizing` 属性是 CSS 3.0 中的新属性。`box-sizing` 属性可以取这些值：
 
-- border-box
-- inherit
+- `border-box`
+- `inherit`
 
 `content-box` 是默认值。这使得 `width` 和 `height` CSS 属性仅设置内容盒的宽度高度。`inherit` 值意味着 HTML 元素从其父 HTML 元素继承该 CSS 属性的值。
+
 `border-box` 值使浏览器将 `width` 和 `height` CSS 属性解释为边框盒的宽度高度。边框盒是 HTML 元素边框内部的所有内容，包括边框本身。
 
 可以设置为 `border-box` 以将内边距和边框包含在元素的给定宽度高度中。
 
+不包含外边距，因此如果需要请不要指定 `margin`。
 
-不包含外边距，因此如果需要请不要指定 margin。
+要对所有组件应用 `box-sizing: border-box`，我们必须使用通用选择器，因为尽管继承了该属性，应用到 `body` 上的设置会被 `display: block` 属性覆盖。
 
-要对所有组件应用 `box-sizing border-box`，我们必须使用通用选择器，因为尽管继承了该属性，应用到 `body` 上的设置会被 `display block` 属性覆盖。
 ## 垂直外边距塌叠
 
 CSS 外边距的另一个典型行为是，当两个盒的外边距垂直重叠时，它们会发生塌叠。而不是你预期的那样将外边距相加，而是显示最大的：
 
+```css
 {
   padding: 20px 0 20px 10px;
   margin-top: 25px;
   margin-bottom: 50px;
+}
 ```
 
 每个段落底部应该有 50 像素，顶部有 25 像素。这意味着我们的元素之间有 75 像素，对吧？错了！它们之间仍然只有 50px，因为较小的外边距会塌叠到较大的外边距中。
-
 
 避免外边距塌叠的好方法是坚持仅底部外边距或仅顶部外边距的约定。
 
@@ -1754,22 +1824,17 @@ CSS 外边距的另一个典型行为是，当两个盒的外边距垂直重叠�
 - 均具有外边距的相邻兄弟
 - 具有内边距的父元素
 
-
-
-
-
 ## CSS overflow
 
 `overflow` CSS 属性指定当内容过大无法放入其包含元素块时应执行的操作。它是 `overflow-x` 和 `overflow-y` 属性的简写，也可以直接且分别指定它们。
 
-
-- Visible（可见）：内容溢出并显示在容器之外。
-- Hidden（隐藏）：内容被截断，额外的内容不可见。
-- Scroll（滚动）：添加滚动条以查看被裁剪的内容。
+- **Visible（可见）**：内容溢出并显示在容器之外。
+- **Hidden（隐藏）**：内容被截断，额外的内容不可见。
+- **Scroll（滚动）**：添加滚动条以查看被裁剪的内容。
 
 ## 元素定位 (Positioning elements)
 
-`position` 属性处理元素在上的定位方式。
+`position` 属性处理元素在页面上的定位方式。
 遵循文档流意味着元素按照它们在文档（HTML）中出现的顺序进行添加。
 有时，有必要打破正常流。例如：
 
@@ -1778,16 +1843,18 @@ CSS 外边距的另一个典型行为是，当两个盒的外边距垂直重叠�
 
 如果你想改变正常流并以不同的方式定位元素，可以使用 `position` 属性提供的不同选项：
 
-- absolute（绝对）
-- relative（相对）
-- sticky（粘性）
+- `absolute`（绝对）
+- `relative`（相对）
+- `sticky`（粘性）
+- `fixed`（固定）
 
 当元素打破正常流时，其他元素完全忽略该元素，就像它不在流中一样。
 
 我们将详细查看实现此点的每一个选项。
 
+### Fixed（固定）
 
-这固定元素相对于整个视口（viewport）的位置
+这固定元素相对于整个视口（viewport）的位置。
 
 - 它可以应用于块级元素和内联元素。
 - 即使页面滚动，它始终保持在相同的位置。
@@ -1798,14 +1865,13 @@ CSS 外边距的另一个典型行为是，当两个盒的外边距垂直重叠�
 
 ### Absolute（绝对）
 
-
-如果不存在定位祖元素，它将相对于 HTML 文档体（body）进行并移动。
+如果不存在定位祖元素，它将相对于 HTML 文档体（body）进行定位并移动。
 
 ### Relative（相对）
+
 该属性本身没有任何影响，它保持元素在正常流中。
 
 如果应用了定位属性 `top`、`bottom`、`left` 和 `right`，那么它的位置将相对于其在正常流中的位置发生变化。
-
 
 ### Sticky（粘性）
 
@@ -1814,6 +1880,7 @@ CSS 外边距的另一个典型行为是，当两个盒的外边距垂直重叠�
 
 这并不常用，因为浏览器支持不完全。
 
+## 堆叠上下文 (Stacking Context)
 
 到目前为止我们使用 x 和 y 坐标来定位元素。堆叠概念考虑的是定位的 3D 维度。
 
@@ -1826,70 +1893,112 @@ HTML 元素按照元素属性指示的优先级顺序占据此空间。
 - 后代定位元素，按照在 HTML 中出现的顺序排列（`position: absolute`、`relative` 按照出现顺序排列）
 
 如果你想创建自定义的堆叠顺序，可以在定位元素上使用 `z-index` 属性。
-`z-index` 属性可以使用整数值（正数、零、负数）进行指定，这代表元素沿 z 轴的的位置。默认值 `auto` 等同于 z 轴上的 0 层，这是所有元素的默认层级。应用到静态（默认）定位项上的 `z-index` 没有任何影响。
+`z-index` 属性可以使用整数值（正数、零、负数）进行指定，这代表元素沿 z 轴的位置。默认值 `auto` 等同于 z 轴上的 0 层，这是所有元素的默认层级。应用到静态（默认）定位项上的 `z-index` 没有任何影响。
 
 例如，如果我们必须将一张图片作为背景图片，那么我需要对该类应用两个属性将其移动到其他元素之后：
 
-.background{
-  url: url('image.jpg');
+```css
+.background {
+  background-image: url('image.jpg');
   position: fixed;
   z-index: -1;
+}
 ```
 
 使用 `position` 属性的不同变体，你可以根据需要将内容放在屏幕上，但它并不灵活，你确实需要使用不同的属性组合来实现间距和对齐。
 
-
 ## CSS Flexbox
 
 应用到容器的 CSS Flexbox 布局使其能够灵活地填充或收缩到可用空间。
+
 CSS Flex 布局包含两个部分，每个部分都有自己的属性：
 
 - **Flex Container (弹性容器)**：这是你声明为灵活的包含块。
 - **Flex Items (弹性项目)**：这些是容器内部的项目。
-Flex Container 是你声明为灵活的包含块。Flex Items 是容器内部的项目。
 
 通过 CSS Flexbox，将项目放在特定方向（x 轴或 y 轴）上并相对于这些轴进行对齐变得非常简单。接下来，我们将探索这种新的 CSS 布局，它是样式和定位的真正救星。
 
+### Flex Container 属性
 
+#### `flex-direction`
 
+此属性定义主轴方向，项目沿此轴排列。值包括：
 
+- `row`：从左到右（默认）
+- `row-reverse`：从右到左
+- `column`：从上到下
+- `column-reverse`：从下到上
 
-此属性用于沿交叉轴（cross-axis）对齐弹性项目（flex-items），同时组织额外的空间并根据需要进行分配。该属性的值包括：
+#### `flex-wrap`
 
-- flex-start: 项目沿交叉轴的起始端对齐
-- flex-end: 项目沿交叉轴的末端对齐
-- stretch: 项目拉伸以填充整个交叉轴
-- baseline: 项目的文本在同一基准线上对齐
+此属性定义项目是否换行。值包括：
 
-### align-content
+- `nowrap`：不换行（默认）
+- `wrap`：换行
+- `wrap-reverse`：反向换行
 
-- flex-start: 项目沿主轴（main-axis）的起始端对齐
-- flex-end: 项目沿主轴的末端对齐
-- center: 项目沿主轴的居中对齐
-- space-between: 项目之间均匀添加空间，第一个项目在开头，最后一个项目在末尾，两侧不留空格
-- space-evenly: 项目对齐且空间分布相等
+#### `flex-flow`
 
-## Flex-item 属性
+这是 `flex-direction` 和 `flex-wrap` 的简写属性。
+
+#### `justify-content`
+
+此属性用于沿主轴对齐弹性项目，同时组织额外的空间并根据需要进行分配。该属性的值包括：
+
+- `flex-start`：项目沿主轴的起始端对齐
+- `flex-end`：项目沿主轴的末端对齐
+- `center`：项目沿主轴的居中对齐
+- `space-between`：项目之间均匀添加空间，第一个项目在开头，最后一个项目在末尾，两侧不留空格
+- `space-around`：项目周围均匀添加空间
+- `space-evenly`：项目对齐且空间分布相等
+
+#### `align-items`
+
+此属性用于沿交叉轴对齐弹性项目，同时组织额外的空间并根据需要进行分配。该属性的值包括：
+
+- `flex-start`：项目沿交叉轴的起始端对齐
+- `flex-end`：项目沿交叉轴的末端对齐
+- `stretch`：项目拉伸以填充整个交叉轴
+- `baseline`：项目的文本在同一基准线上对齐
+
+#### `align-content`
+
+- `flex-start`：项目沿交叉轴的起始端对齐
+- `flex-end`：项目沿交叉轴的末端对齐
+- `center`：项目沿交叉轴的居中对齐
+- `space-between`：项目之间均匀添加空间，第一个项目在开头，最后一个项目在末尾，两侧不留空格
+- `space-around`：项目周围均匀添加空间
+- `space-evenly`：项目对齐且空间分布相等
+- `stretch`：项目拉伸以填充整个交叉轴
+
+### Flex-item 属性
+
 此外，还有一些属性可以应用于弹性项目级别，以控制它们的行为和对齐方式。弹性项目属性包括以下内容：
 
-- flex-grow and flex-shrink:
-这两个属性接受数值，并给出项目在需要时增长/收缩的比例。如果所有项目都赋值为 1，则所有项目将等比例增长和收缩。如果某个项目的值为 3，而其他项目为 1，则它的增长/收缩将是其他项目的三倍。如果设置为 0，则项目将不会收缩或增长。
-- flex-basis:
-这是弹性项目在不考虑额外空间情况的默认尺寸。如果设置为 `auto`，它将根据 `flex-direction` 决定默认宽度或高度。
+- **`flex-grow` and `flex-shrink`**：
+  这两个属性接受数值，并给出项目在需要时增长/收缩的比例。如果所有项目都赋值为 1，则所有项目将等比例增长和收缩。如果某个项目的值为 3，而其他项目为 1，则它的增长/收缩将是其他项目的三倍。如果设置为 0，则项目将不会收缩或增长。
 
-- flex:
+- **`flex-basis`**：
+  这是弹性项目在不考虑额外空间情况下的默认尺寸。如果设置为 `auto`，它将根据 `flex-direction` 决定默认宽度或高度。
 
-- align-self:
-此属性用于在弹性项目层级沿交叉轴应用不同的对齐方式。如果你想应用与 `align-items` 属性不同的特定对齐方式，可以在项目层级使用 `align-self` 属性。该属性的值包括：
+- **`flex`**：
+  这是 `flex-grow`、`flex-shrink` 和 `flex-basis` 的简写属性。
 
-- center
-- flex-start
-- flex-end
+- **`align-self`**：
+  此属性用于在弹性项目层级沿交叉轴应用不同的对齐方式。如果你想应用与 `align-items` 属性不同的特定对齐方式，可以在项目层级使用 `align-self` 属性。该属性的值包括：
+  - `center`
+  - `flex-start`
+  - `flex-end`
+  - `stretch`
+  - `baseline`
 
-此属性可用于更改弹性项目在弹性容器中出现的顺序。默认值为 0，项目按照它们添加的顺序出现。如果你想更改顺序，可以添加一个较大的值将其移动到末尾，或者添加一个负值将其移动到弹性项目列表的开头。
+- **`order`**：
+  此属性可用于更改弹性项目在弹性容器中出现的顺序。默认值为 0，项目按照它们添加的顺序出现。如果你想更改顺序，可以添加一个较大的值将其移动到末尾，或者添加一个负值将其移动到弹性项目列表的开头。
 
 通过将这些属性应用于弹性容器和弹性项目，你可以控制元素沿行（row）或列（column）方向的布局，并实现正确的对齐和间距。
+
 在下面的示例中，通过使用 flex 属性，你可以轻松更改项目的位置、间距和对齐。
+
 ```html
 <html lang="en">
 <head>
@@ -1898,33 +2007,37 @@ Flex Container 是你声明为灵活的包含块。Flex Items 是容器内部的
 </head>
 <body>
 <div class="flex-container">
-<div class="B">w150px</div>
-<div class="itemC">h200px</div>
-<div class="itemD">w/h400px</div>
-<div class="itemE">w150px</div>
+<div class="itemA">w150px</div>
+<div class="itemB">h200px</div>
+<div class="itemC">w/h400px</div>
+<div class="itemD">w150px</div>
 </div>
 </body>
 </html>
 ```
+
 css 文件：
+
 ```css
-{
+* {
   box-sizing: border-box;
 }
 html {
   background: grey;
   padding: 5px;
+}
 body {
   background: grey;
   padding: 5px;
   margin: 0;
+}
 .flex-container {
   background: white;
   padding: 10px;
   border: 5px solid black;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap; /*flex-flow: row wrap */
+  flex-wrap: wrap; /* flex-flow: row wrap */
   align-items: center;
   align-content: center;
 }
@@ -1934,15 +2047,12 @@ body {
   border: 5px solid black;
   margin: 10px;
 }
+.itemB {
   background: orange;
   color: white;
   padding: 10px;
   border: 5px solid black;
   width: 150px;
-}
-```
-
-font-size: 1.8rem;
 }
 .itemC {
   background: pink;
@@ -1950,6 +2060,7 @@ font-size: 1.8rem;
   border: 5px solid black;
   margin: 10px;
   height: 150px;
+}
 .itemD {
   background: blue;
   color: white;
@@ -1970,58 +2081,71 @@ font-size: 1.8rem;
   margin: 10px;
   width: 150px;
 }
+```
 
+## 练习题
 
+### 1. ____ 属性指定了元素的堆叠顺序（该元素应该放置在其他元素的前还是后）。
 
-+ 1. ____ 属性指定了元素的堆叠顺序（该元素应该放置在其他元素的前还是还是）。
-B. display
-C. img
+A. `z-index`
+B. `display`
+C. `img`
 D. 以上均不是
 
+### 2. 下列组合器中，哪些匹配是正确的？
 
-+ 2. 下列组合器中，哪些匹配是正确的？
-A. div + p - 相邻兄弟选择器
-B. div > p - 子选择器
+A. `div + p` - 相邻兄弟选择器
+B. `div > p` - 子选择器
+C. `div ~ p` - 通用兄弟选择器
 D. 以上皆是
 
-**答案：D.****
+**答案：D**
+
 上述所有组合器与其对应的语法匹配正确。
-+ 3. 下列哪一个 CSS 属性**不**影响盒模型？
+
+### 3. 下列哪一个 CSS 属性**不**影响盒模型？
+
 A. Content（内容）
 B. Margin（外边距）
 C. Outline（轮廓）
 
-**答案：C.****
-Outline（轮廓）不是盒模型的一部分。
+**答案：C**
+
+`Outline`（轮廓）不是盒模型的一部分。
+
+### 4. `position: fixed` 将元素相对于什么进行定位？
 
 A. 包含块 (containing block)
 B. HTML 元素
 C. 视口 (viewport)
 D. 元素本身
-答案：C
 
-`position fixed` 将元素相对于整个视口进行定位。
+**答案：C**
 
+`position: fixed` 将元素相对于整个视口进行定位。
 
-+ A. background-size
+### 5. 下列哪个属性用于设置背景图像的起始位置？
 
-+ B. background-position
-+ C. background-clip
+A. `background-size`
+B. `background-position`
+C. `background-clip`
+D. `background-origin`
 
-+ D. background-origin
-
+**答案：D**
 
 # 第 4 章
 
 ## JavaScript 编程：让应用程序具有交互性
+
 > “没有功能的优秀网页设计就像没有引擎的跑车。”
-- Paul Cookson
+> — Paul Cookson
 
 > “设计不仅仅是看起来如何和感觉如何。设计是它如何工作的。”
 
-现在我们已经知道了如何使用 HTML 和 JavaScript 编程来添加和美化网页内容。JavaScript 是所有网页内容美化背后的大脑。JavaScript 定义了如何处理用户交互、会发生什么操作，以及应用程序的下一个状态是什么。在本章中，你将接触 JavaScript 的基础，并在后续章节中详细介绍 JavaScript 编程不同方面的细节。
+现在我们已经知道了如何使用 HTML 和 CSS 来添加和美化网页内容。JavaScript 是所有网页内容美化背后的大脑。JavaScript 定义了如何处理用户交互、会发生什么操作，以及应用程序的下一个状态是什么。在本章中，你将接触 JavaScript 的基础，并在后续章节中详细介绍 JavaScript 编程不同方面的细节。
 
 ## 结构
+
 - JavaScript 简介
 - JS 的构建模块
 - 关于函数的更多内容
@@ -2030,10 +2154,10 @@ D. 元素本身
 ## 目标
 
 学习本章后，你将学习 JavaScript 基础，以及如何结合交互性和动态行为来使你的 HTML 页面更加智能。
+
 ## JavaScript (JS) 简介
 
 JavaScript (JS) 是一种轻量、跨平台、面向对象的计算机编程语言，旨在为网页添加逻辑和行为。在第 1 章中，我们简要介绍了 JavaScript 诞生的历史以及它如何随着每个 ECMAScript 版本不断成长。
-
 
 在第 3 章中，我们看到了浏览器如何分别解析 HTML 和 CSS 内容，然后构建并显示文档：
 
@@ -2041,35 +2165,43 @@ JavaScript (JS) 是一种轻量、跨平台、面向对象的计算机编程语�
 - 首先，我们如何将 JavaScript 关联到 HTML/CSS 代码中？
 
 让我们逐一回答这些问题。
+
 JavaScript 是一种脚本语言，可以使用 `<script>` 标签包含在 HTML 中，该标签可以包含嵌入 `head` 或 `body` 部分的直接 JS 代码。
+
 ```html
 <script>
 function myFunction() {
   document.getElementById("name").innerHTML = "JavaScript";
+}
 </script>
 ```
 
 它也可以写在独立的外部文件中，并作为源文件包含在 `head` 或 `body` 中，如下：
 
-MyJavaScript.js 是带有 JS 代码的外部定义文件。使用外部定义 JS 文件的第二方法是推荐的方法，因为它更整洁并保持了代码分离。
+```html
+<script src="MyJavaScript.js"></script>
+```
 
-通过包含上述 JavaScript 代码，你可以更改 HTML 内容，如下例所示。左侧显示了嵌入 JavaScript 代码并引用外部 JavaScript 文件的 HTML 文件。
-右侧显示了初始渲染的 HTML 页面，当用户逐点击点击按钮时，内容会被添加。
+`MyJavaScript.js` 是带有 JS 代码的外部定义文件。使用外部定义 JS 文件的第二种方法是推荐的方法，因为它更整洁并保持了代码分离。
+
+通过包含上述 JavaScript 代码，你可以更改 HTML 内容，如下例所示。左侧显示了嵌入 JavaScript 代码并引用外部 JavaScript 文件的 HTML 文件。右侧显示了初始渲染的 HTML 页面，当用户点击按钮时，内容会被添加。
 
 ![](img/22525aec83cb16cb7664cd8d5c364721_111_0.png)
 
-
-这是一个最基本的示例，但它展示了 JS 动态更改 HTML 内容的能力，此处点击按钮所示。现在我们可以在网页输出中包含内容了。既然你已经理解如何在网页内容中包含 JS 代码，你将学习关于 JavaScript 的各个方面以及如何使用它们。让我们先看看展示 JS 引擎如何工作的的步骤：
+这是一个最基本的示例，但它展示了 JS 动态更改 HTML 内容的能力，此处通过点击按钮所示。现在我们可以在网页输出中包含内容了。既然你已经理解如何在网页内容中包含 JS 代码，你将学习关于 JavaScript 的各个方面以及如何使用它们。让我们先看看展示 JS 引擎如何工作的步骤：
 
 - 引擎解析脚本
+- 编译为字节码
 - 最后运行机器码，速度非常快
 
 此外，引擎在过程的每一步都会应用优化，以确保没有延迟且代码经过充分优化。
 
+JavaScript 可以做什么？
 
 - 处理用户操作，如点击按钮、滚动、鼠标移动等
 - 根据响应更改元素相关的属性、样式
 - 添加 cookie、保存会话相关信息
+
 让我们深入研究 JavaScript，它是网页的骨干。在学习新语言时，始终从基础开始。
 
 ## JS 的构建模块
@@ -2082,126 +2214,144 @@ JavaScript 的构建模块主要包括：
 
 ## 变量
 
+- **`let`**：这是推荐的变量定义方式，在定义的块内有效，且其值可以更改。
 
-- let：这是推荐的变量定义方式，在定义的块内有效，且其值可以更改。
+```javascript
 let name;
 let age;
-- const：当包含值是常量时使用。它也是块作用域。如果你确定变量不应该更改，这是推荐的方法。
-const pi=3.14;
-- var：这是 JS 中定义变量的传统方式，不是块作用域，而是函数作用域。
+```
 
+- **`const`**：当包含值是常量时使用。它也是块作用域。如果你确定变量不应该更改，这是推荐的方法。
+
+```javascript
+const pi = 3.14;
+```
+
+- **`var`**：这是 JS 中定义变量的传统方式，不是块作用域，而是函数作用域。
 
 ## 作用域
 
-JavaScript 中的作用域告诉我们在特定点哪些变量是可以访问的。作用域有两种：全局作用域域。作用域域作用局域局局在域外部定义的变量在代码的任何地方都是的，包括函数内部，属于全局作用域。
+JavaScript 中的作用域告诉我们在特定点哪些变量是可以访问的。作用域有两种：全局作用域和局部作用域。在域外部定义的变量在代码的任何地方都可访问，包括函数内部，属于全局作用域。
 
-你可以定义全局变量，但建议避免使用，因为如果多个变量具有相同的名称可能会导致冲突。特别是在使用 for 声明时，如果我们多次声明和使用相同的变量名，不会产生任何错误。因此最好避免。
+你可以定义全局变量，但建议避免使用，因为如果多个变量具有相同的名称可能会导致冲突。特别是在使用 `for` 循环声明时，如果我们多次声明和使用相同的变量名，不会产生任何错误。因此最好避免。
 
-## 局部作用域
+### 局部作用域
+
 局部变量仅在代码的特定部分可用。局部作用域可以分为以下两种类型：
 
-- 函数作用域：当在函数内部声明变量时，它仅在函数内部可用。一旦离开函数，你就无法访问该变量。
+- **函数作用域**：当在函数内部声明变量时，它仅在函数内部可用。一旦离开函数，你就无法访问该变量。
 
-function HelloWorld () {
-  const hello = 'Welcome to JS!';//这是函数作用域的
+```javascript
+function HelloWorld() {
+  const hello = 'Welcome to JS!'; // 这是函数作用域的
   console.log(hello);
 }
 HelloWorld(); // 'Welcome to JS'
-console.log(hello);// 报错：hello 未定义
-{
-  const hello = 'Welcome to JS!';//这是块作用域的
-}
-console.log(hello);// 报错：hello 未定义
+console.log(hello); // 报错：hello 未定义
 ```
 
+- **块作用域**：当在代码块（由 `{}` 包围）内部声明变量时，它仅在该代码块内部可用。
 
-可以在单个语句中声明多个值。初始值可以是
+```javascript
+{
+  const hello = 'Welcome to JS!'; // 这是块作用域的
+}
+console.log(hello); // 报错：hello 未定义
+```
 
+可以在单个语句中声明多个值。初始值可以是任何表达式。如果未进行初始化，它将取值为 `undefined`。
 
-如果未进行初始化，它将取值为 `undefined`。
 定义变量名时需要记住的几点：
 
 - 名称应该与其用途相关的实际意义。
 - 短小且具有描述性。不要使用 a、b、c 这样的单字母命名。
-- 使用驼峰命名法（camelCase），即小写开头，但名称中的任何新单词大大写，例如 `firstName`, `lastNameName`。
+- 使用驼峰命名法（camelCase），即小写开头，但名称中的任何新单词首字母大写，例如 `firstName`, `lastName`。
 
 让我们在下表中总结 `let`、`const` 与 `var` 的区别：
-| let | Const | var |
-|---|---|---|
-| 块级作用域。变量只能在声明它的括号包含的代码块中使用。 | 块级作用域。变量只能在声明它的括号包含的代码块中使用。 | 函数级作用域。变量可以在声明它的函数及任何嵌套函数内部使用。 |
-| 如果尝试在声明之前访问变量，将抛出 `ReferenceError`。 | 如果尝试在声明之前访问变量，将抛出 `ReferenceError`。 | 如果尝试在声明之前访问变量，将返回 `undefined`。 |
-| 可以重新赋值不同的值。 | 不能重新赋值。 | 可以重新赋值不同的值。 |
 
-表 4.1：let 对比 const var
+| 特性 | `let` | `const` | `var` |
+| --- | --- | --- | --- |
+| 作用域 | 块级作用域。变量只能在声明它的括号包含的代码块中使用。 | 块级作用域。变量只能在声明它的括号包含的代码块中使用。 | 函数级作用域。变量可以在声明它的函数及任何嵌套函数内部使用。 |
+| 声明前访问 | 如果尝试在声明之前访问变量，将抛出 `ReferenceError`。 | 如果尝试在声明之前访问变量，将抛出 `ReferenceError`。 | 如果尝试在声明之前访问变量，将返回 `undefined`。 |
+| 重新赋值 | 可以重新赋值不同的值。 | 不能重新赋值。 | 可以重新赋值不同的值。 |
+
+表 4.1：`let` 对比 `const` `var`
 
 ## 数据类型
 
 在 JavaScript 中定义变量之后，接下来让我们看看存储在变量并在 JS 中使用的不同值类型。JavaScript 有一些主要的数据类型，但没有特定的数据类型绑定到变量上。JS 是一种弱类型和动态类型语言，这意味着语言中存在数据类型，但变量在声明时并不绑定到任何类型。这意味着当我们使用 `let`/`const`/`var` 声明变量时，不需要指定与变量关联的数据类型。类型指示了在 JavaScript 中可以使用和处理的不同值的类型。
+
 主要数据类型包括：
 
 ![](img/22525aec83cb16cb7664cd8d5c364721_115_0.png)
 
 图 4.2：JavaScript 中的数据类型
 
-- **Number**: 用于处理任何类型数字（整数或浮点数）的原始数据类型。你可以对数字进行数学运算（+, -, *, /, %）：
+- **Number**：用于处理任何类型数字（整数或浮点数）的原始数据类型。你可以对数字进行数学运算（`+`, `-`, `*`, `/`, `%`）：
 
 ```javascript
-let pi=3.14;
-let infiniteNum=12/0; // 这将返回 infinity
-const notANum='here'/2; // 这将返回 NaN，代表 For Not a number，即无效的表达式
+let pi = 3.14;
+let infiniteNum = 12 / 0; // 这将返回 Infinity
+const notANum = 'here' / 2; // 这将返回 NaN，代表 Not a Number，即无效的表达式
 ```
 
-- **String**: 另一个原始数据类型，可能包含在引号内的一个或多个字符。单引号和双引号均可用于字符串：
+- **String**：另一个原始数据类型，可能包含在引号内的一个或多个字符。单引号和双引号均可用于字符串：
 
 ```javascript
-let name="JavaScript";
-let fullName='JavaScript'+Rocks';
+let name = "JavaScript";
+let fullName = 'JavaScript' + 'Rocks';
 ```
 
-另一种可用的引号是反引号（` `）。它们有助于扩展功能，并允许通过将变量和表达式封装在 {...} 中嵌入字符串，结果将被求值以形成完整的字符串
+另一种可用的引号是反引号（`` ` ``）。它们有助于扩展功能，并允许通过将变量和表达式封装在 `${...}` 中嵌入字符串，结果将被求值以形成完整的字符串：
+
 ```javascript
-let greeting = 'Hello, ${fullName}!'; // 变量 fullName 将替换并赋值
+let greeting = `Hello, ${fullName}!`; // 变量 fullName 将替换并赋值
 console.log(greeting);
 ```
 
-- **Boolean**: 仅取两个值（true/false）的原始数据类型，代表“是/否”的情况。
+- **Boolean**：仅取两个值（`true`/`false`）的原始数据类型，代表“是/否”的情况。
 
 ```javascript
-let showFlag=true;
-let BigNum = num1>1000; // 条件可以返回 true 或 false
+let showFlag = true;
+let BigNum = num1 > 1000; // 条件可以返回 true 或 false
 ```
 
-- **null**: 用于任何未知值。它有一个唯一的特殊值 `null`，表示无、空或值未知。
-`let yearOfManufacture = null;`
+- **`null`**：用于任何未知值。它有一个唯一的特殊值 `null`，表示无、空或值未知。
 
-- **undefined**: 另一个表示值未赋值的特殊值。它也可以如下显式地赋值为 `undefined`：
+```javascript
+let yearOfManufacture = null;
+```
+
+- **`undefined`**：另一个表示值未赋值的特殊值。它也可以如下显式地赋值为 `undefined`：
 
 ```javascript
 let num1;
-console.log(num1); //undefined
-let num2=10;
-num2=undefined;
-console.log(num2); //undefined
+console.log(num1); // undefined
+let num2 = 10;
+num2 = undefined;
+console.log(num2); // undefined
 ```
 
-- **Object**: 这是用于处理复杂数据结构的复杂数据类型，包含不同类型的数据。
+- **Object**：这是用于处理复杂数据结构的复杂数据类型，包含不同类型的数据。
 
 单个对象可以包含如下不同类型的数据：
-```javascript
-var person={
-name:"Peter",
-age:24,
-designation:"Software Engineer",
-Allocated: true};
-```
-
-- **Arrays**: 这是对象的一种子类型，用于处理相同原始类型的项目列表：
 
 ```javascript
-var cities=["Hyderabad", "NewYork", "Calgary"]; // 这里 3 个值都是字符串
+var person = {
+  name: "Peter",
+  age: 24,
+  designation: "Software Engineer",
+  Allocated: true
+};
 ```
 
-- **Symbols**: 这是作为 ECMAScript 部分引入 JavaScript 的特性。
+- **Arrays**：这是对象的一种子类型，用于处理相同原始类型的项目列表：
+
+```javascript
+var cities = ["Hyderabad", "NewYork", "Calgary"]; // 这里 3 个值都是字符串
+```
+
+- **Symbols**：这是作为 ECMAScript 部分引入 JavaScript 的特性。
 
 ## 使用数据类型
 
@@ -2219,57 +2369,61 @@ var cities=["Hyderabad", "NewYork", "Calgary"]; // 这里 3 个值都是字符�
 
 列出的各种运算符：
 
-- **算术运算符**: 执行算术计算。如 +, -, *, /, %, ++ -- 如下：
+### 算术运算符
+
+执行算术计算。如 `+`, `-`, `*`, `/`, `%`, `++`, `--` 如下：
+
+```javascript
 let num1 = 6;
 let num2 = 4;
-
 num1 * 4; // 乘
 num1 / num2; // 除法
-
-let rem= num1 % num2; // 取模
+let rem = num1 % num2; // 取模
 num1++; // 后自增
 ++num1; // 前自增
 num1--; // 后自减
---num1 // 前自减
+--num1; // 前自减
+```
 
-- **赋值运算符**: 将右侧表达式的值赋值给等号（=）左侧的变量，如下：
+### 赋值运算符
+
+将右侧表达式的值赋值给等号（`=`）左侧的变量，如下：
+
+```javascript
 var num = 4; // 赋值运算符
-num += 2; // 加法赋值，同于 num = num + 2;
+num += 2; // 加法赋值，等同于 num = num + 2;
 num -= 1; // 减法赋值
 num *= 5; // 乘法赋值
 num /= 2; // 除法赋值
 num %= 2; // 取模赋值
+```
 
-- **比较运算符**: 比较不同值和表达式之间的关系，如下：
-5 === "5" // 严格相等，false
-5 == "5" true
+### 比较运算符
 
-5 != "5" // 严格不相等，false
-5 != "5" // 不相等，false
-
-5 < 5 // 小于，false
-5 <= 5 // 小于等于，false
-
-5 > 4 // 大于，true
-5 >= 6 // 大于等于，false
-
-(5 == 5) ? true : false; // 三元，true
-
-- **逻辑运算符**: 通过添加逻辑条件（与、或、非）来构建表达式，如下：
-var x = 4;
-var y = 2;
-
-(x < 10 && y > 0); // 与，且为 true - 如果两者都成立则为真
-
-
-
-
-
-conditions || true
-(x == 5 || y == 5); //或，假 - 如果至少有一个条件为真，则为真
+比较不同值和表达式之间的关系，如下：
 
 ```javascript
-!(x == y); // 非，
+5 === "5"; // 严格相等，false
+5 == "5";  // 宽松相等，true
+5 !== "5"; // 严格不相等，true
+5 != "5";  // 宽松不相等，false
+5 < 5;     // 小于，false
+5 <= 5;    // 小于等于，true
+5 > 4;     // 大于，true
+5 >= 6;    // 大于等于，false
+(5 == 5) ? true : false; // 三元，true
+```
+
+### 逻辑运算符
+
+通过添加逻辑条件（与、或、非）来构建表达式，如下：
+
+```javascript
+var x = 4;
+var y = 2;
+(x < 10 && y > 0); // 与，且为 true - 如果两者都成立则为真
+(x == 5 || y == 5); // 或，假 - 如果至少有一个条件为真，则为真
+!(x == y); // 非
 ```
 
 ## 注释
@@ -2278,207 +2432,268 @@ conditions || true
 
 注释可以通过以下方式添加：
 
-- 1. **单行注释**：它们以 // 开头，并包含在单行内完成注释内容。任何可执行的代码行也可以被注释，以便使用 // 将其跳过并转换为注释代码。
-//初始化数据
-let num1=100;
+1. **单行注释**：它们以 `//` 开头，并包含在单行内完成注释内容。任何可执行的代码行也可以被注释，以便使用 `//` 将其跳过并转换为注释代码。
 
-- 2. **多行注释**：它们被包含在 /**/.. 之间。其内部任何代码都不会被执行，这用于添加跨越多行的注释：
-/*该函数用于生成斐波那契数列
+```javascript
+// 初始化数据
+let num1 = 100;
+```
+
+2. **多行注释**：它们被包含在 `/* ... */` 之间。其内部任何代码都不会被执行，这用于添加跨越多行的注释：
+
+```javascript
+/* 该函数用于生成斐波那契数列
 的数字 */
-function fibbo(){
+function fibbo() {
 }
-
 ```
 
 ## 语句
 
 一个 JavaScript 语句由变量、值、操作符、表达式、关键字和注释组成。它可以是以下形式：
 
-- * 变量声明
+- 变量声明
+
+```javascript
 let num1, num2;
+```
+
 - 赋值
+
+```javascript
 let sum = num1 + num2;
+```
+
 - 返回语句
+
+```javascript
 return sum;
+```
+
 - 跳出/继续
+
+```javascript
+break;
+continue;
+```
+
 - 调试器
+
+```javascript
+debugger;
+```
 
 一个 JS 语句应该以分号结束。虽然分号是可选的，但使用分号是一个良好的习惯，可以避免以后出现任何意外。
 
 一组语句可以以以下形式相关联并一起执行：
 
-- **条件语句**：如果给定的条件为真，则有条件地执行代码块。这包括以下语句：
-  - **if...else语句**：根据表达式是否为真条件地执行代码，所示：
-    If (num1>num2)
-    return num1; // 如果 num1 大于 num2，将执行此
-    else
-    return num2; // 如果 num2 大于 num1，将执行此
-  - **switch case**：根据值的匹配情况条件地执行代码，所示：
-    switch(x)
-    case 'value1': // 如果 (x === 'value1')，将选择此分支
-    [break]
-    case 'value2': // 如果 (x === 'value2')，将选择此分支
-    [break]
-    default// 如果没有其他条件为真，将选择此分支
-    ...
-    [break]
+### 条件语句
 
-- **迭代语句**：根据循环条件执行多次代码块。循环用于在程序代码中执行重复性任务。根据循环条件的放置位置，它们可以是入口控制的或退出控制的：
-  - for 循环：具有以下语法的入口控制循环：
-    for (initialization; test condition; updation) {
-      // 循环体
-    }
-    示例： for(i=0;i<10;i++)
-    {
-      console.log(i);
+如果给定的条件为真，则有条件地执行代码块。这包括以下语句：
+
+- **`if...else` 语句**：根据表达式是否为真条件地执行代码，所示：
 
 ```javascript
+if (num1 > num2) {
+  return num1; // 如果 num1 大于 num2，将执行此
+} else {
+  return num2; // 如果 num2 大于 num1，将执行此
 }
 ```
 
-- * **While 循环**：另一种具有以下语法的入口控制循环：
-Initialization;
-while( test condition) {
-  // 循环体
-Updation ;
+- **`switch case`**：根据值的匹配情况条件地执行代码，所示：
+
+```javascript
+switch(x) {
+  case 'value1': // 如果 (x === 'value1')，将选择此分支
+    [break]
+  case 'value2': // 如果 (x === 'value2')，将选择此分支
+    [break]
+  default // 如果没有其他条件为真，将选择此分支
+    ...
+    [break]
 }
-**示例：**
-i=0;
-while(i<=10){
+```
+
+### 迭代语句
+
+根据循环条件执行多次代码块。循环用于在程序代码中执行重复性任务。根据循环条件的放置位置，它们可以是入口控制的或退出控制的：
+
+- **`for` 循环**：具有以下语法的入口控制循环：
+
+```javascript
+for (initialization; test condition; updation) {
+  // 循环体
+}
+```
+
+示例：
+
+```javascript
+for (i = 0; i < 10; i++) {
+  console.log(i);
+}
+```
+
+- **`while` 循环**：另一种具有以下语法的入口控制循环：
+
+```javascript
+Initialization;
+while (test condition) {
+  // 循环体
+  Updation;
+}
+```
+
+示例：
+
+```javascript
+i = 0;
+while (i <= 10) {
   console.log(i);
   i++;
 }
+```
 
-- * **do...while 循环**：
+- **`do...while` 循环**：
+
+```javascript
 Initialization;
 do {
   // 循环体
-Updation;
-} while(test condition);
-**示例**
-i=0;
-do{
+  Updation;
+} while (test condition);
+```
+
+示例：
+
+```javascript
+i = 0;
+do {
   console.log(i);
   i++;
-}while(i<10);
+} while (i < 10);
+```
 
-- * **try...catch 语句**：为了处理 try 块代码中的任何错误，catch 块包含错误处理逻辑，所示：
-try{
-逻辑...
-}
-catch(error){
-错误处理逻辑...
-}
-**示例：**
+- **`try...catch` 语句**：为了处理 `try` 块代码中的任何错误，`catch` 块包含错误处理逻辑，所示：
+
+```javascript
 try {
-  error : " 抛出错误"
+  // 逻辑...
+} catch (error) {
+  // 错误处理逻辑...
 }
- catch(error) {
+```
+
+示例：
+
+```javascript
+try {
+  throw new Error("抛出错误");
+} catch (error) {
   console.log(error);
 }
+```
 
-- * **函数**：执行某些操作的块块。我们将在下一节中学习更多关于知识。
+- **函数**：执行某些操作的代码块。我们将在下一节中学习更多关于函数的知识。
 
 ## 函数
 
-我们经常看到人们反复编写相同的代码，这产生了将公共代码放在一个地方并进行复用的需求。
-函数帮助我们通过不同的方式实现这一目标。
+我们经常看到人们反复编写相同的代码，这产生了将公共代码放在一个地方并进行复用的需求。函数帮助我们通过不同的方式实现这一目标。
 
-## 什么是函数？
+### 什么是函数？
 
 函数是一个设计为通过函数共同工作以执行特定任务的代码块。函数执行的任务定义一次，就可以以函数的形式被调用或执行多次。
 
 简单的显式函数可以如下所示定义：
 
 ```javascript
-function calculateDistanceTravelled( startPos, currentPos ) {
-var distance = Math.pow(currentPos.xPos - startPos.xPos, 2) + Math.pow(currentPos.yPos - startPos.yPos, 2));
-return Math.ceil(distance);
+function calculateDistanceTravelled(startPos, currentPos) {
+  var distance = Math.pow(currentPos.xPos - startPos.xPos, 2) + Math.pow(currentPos.yPos - startPos.yPos, 2);
+  return Math.ceil(Math.sqrt(distance));
 }
 ```
 
 在这里你有以下内容：
 
-- 使用 function 关键字来显式定义并给函数命名，即函数名为 calculateDistanceTravelled
+- 使用 `function` 关键字来显式定义并给函数命名，即函数名为 `calculateDistanceTravelled`
 - 函数接受两个参数（JavaScript 对象）
 - 函数内部使用局部变量来存储计算出的距离值
 - 对计算出的距离应用向上取整（ceiling）的逻辑
 - 最后，从函数返回一个值以表示执行流的结束并将控制权交回调用者
-  - 注意，如果显式提供 return 语句，则返回 undefined 作为值。
+  - 注意，如果显式提供 `return` 语句，则返回 `undefined` 作为值。
 
-##更多关于函数
+### 更多关于函数
 
 在上一节中，我们定义了一个函数。现在我们通过调用它来使用它。为此，我们必须向后续代码块中的函数调用传递所需的参数：
 
 ```javascript
-var startPos = { xPos : 20, yPos : 20 };
-var currentPos = { xPos : 40, yPos : 40 };
-document.write("You have travelled : " +
+var startPos = { xPos: 20, yPos: 20 };
+var currentPos = { xPos: 40, yPos: 40 };
+document.write("You have travelled : " + calculateDistanceTravelled(startPos, currentPos) + " KM ");
 ```
 
-calculateDistanceTravelled(startPos, currentPos) + " KM ";
+### 函数作为表达式
 
-## 函数作为表达式
-
-我们在之前的示例中使用了 Math 对象的 Pow 方法来定义函数。让我们使用函数表达式所示定义一个类似 square 的显式函数来计算数的平方。
+我们在之前的示例中使用了 `Math` 对象的 `pow` 方法来定义函数。让我们使用函数表达式定义一个类似 `square` 的显式函数来计算数的平方。
 
 ```javascript
 var square = function(x) {
-return x * x;
+  return x * x;
 }
+
 function calculateDistanceTravelled(startPos, currentPos) {
-var distance = Math.sqrt(square(currentPos.Xpos - startPos.Xpos) 
-+ square(currentPos.yPos - startPos.yPos));
-return Math.ceil(distance);
+  var distance = Math.sqrt(square(currentPos.xPos - startPos.xPos) + square(currentPos.yPos - startPos.yPos));
+  return Math.ceil(distance);
 }
-var startPos = { xPos : 20, yPos : 20 };
-var currentPos = { xPos : 40, yPos : 40 };
-document.write("You have travelled : " +
+
+var startPos = { xPos: 20, yPos: 20 };
+var currentPos = { xPos: 40, yPos: 40 };
+document.write("You have travelled : " + calculateDistanceTravelled(startPos, currentPos) + " KM ");
 ```
-（注：此处原文代码块中 document.write 处似乎逻辑错乱，翻译已按原样保留代码结构）
 
-## 你做了什么？
+### 你做了什么？
 
-你通过表达式创建了一个函数，稍后在 calculateTravelled 函数中使用了它。
+你通过表达式创建了一个函数，稍后在 `calculateDistanceTravelled` 函数中使用了它。
 
 我们现在尝试代码的以下场景：
 
-- 将调用（即 document.write 语句）放在函数声明之前。你认为会发生什么？
-- 将实际函数调用（即 document.write 语句）放在函数表达式之前。你认为会发生什么？
+- 将调用（即 `document.write` 语句）放在函数声明之前。你认为会发生什么？
+- 将实际函数调用（即 `document.write` 语句）放在函数表达式之前。你认为会发生什么？
 
-你可能会惊讶地发现场景1没有影响，但在场景2之后开始出现错误。后续块显示了场景2的代码：
+你可能会惊讶地发现场景 1 没有影响，但在场景 2 之后开始出现错误。后续块显示了场景 2 的代码：
 
 ```javascript
-var startPos = { xPos : 20, yPos : 20 };
-var currentPos = { xPos : 40, yPos : 40 };
-document.write("You have travelled : " +
-calculateDistanceTravelled(startPos, currentPos) + " KM ");
+var startPos = { xPos: 20, yPos: 20 };
+var currentPos = { xPos: 40, yPos: 40 };
+document.write("You have travelled : " + calculateDistanceTravelled(startPos, currentPos) + " KM ");
+
 function calculateDistanceTravelled(startPos, currentPos) {
-var distance = Math.sqrt(square(currentPos.Xpos - startPos.Xpos) 
-+ square(currentPos.yPos - startPos.yPos));
-return Math.ceil(distance);
+  var distance = Math.sqrt(square(currentPos.xPos - startPos.xPos) + square(currentPos.yPos - startPos.yPos));
+  return Math.ceil(distance);
 }
+
 var square = function(x) {
-return x * x;
+  return x * x;
 };
 ```
 
-你开始得到以下错误，其中 functionBasics.js 是文件：
+你开始得到以下错误，其中 `functionBasics.js` 是文件：
 
+```text
 Uncaught TypeError: square is not a function
-at calculateTravelled (functionBasics.js:8)
+at calculateDistanceTravelled (functionBasics.js:8)
 at functionBasics.js:4
+```
 
 让我们理解这个错误：
 
-- 关心的不是 calculateTravelled 的定义
-- 关心的是 square 函数尚未定义
+- 关心的不是 `calculateDistanceTravelled` 的定义
+- 关心的是 `square` 函数尚未定义
 
-## 函数声明与函数表达式
+### 函数声明与函数表达式
 
-在最后一节中，你看到你既可以使用函数声明或函数表达式来定义函数，函数是可以被调用和使用的。
-
-然而，这两种方法之间存在一些差异，正如你在场景2中得到的错误所示。它们在不同的用用例下非常有用且适用，因此必须存在。
+在最后一节中，你看到你既可以使用函数声明或函数表达式来定义函数，函数是可以被调用和使用的。然而，这两种方法之间存在一些差异，正如你在场景 2 中得到的错误所示。它们在不同的用例下非常有用且适用，因此必须存在。
 
 主要的区别在于浏览器解析函数代码的方式：
 
@@ -2488,32 +2703,25 @@ at functionBasics.js:4
 
 现在让我们看看你在之前的示例中观察到的错误。
 
-以下语句调用了 calculateTravelled 函数，该函数反过来调用了 square 函数：
+以下语句调用了 `calculateDistanceTravelled` 函数，该函数反过来调用了 `square` 函数：
 
 ```javascript
-document.write("You have travelled : " +
-calculateDistanceTravelled(startPos, currentPos) + " KM");
+document.write("You have travelled : " + calculateDistanceTravelled(startPos, currentPos) + " KM");
 ```
 
-square 函数在执行的后部分被定义为表达式，在此之前浏览器对其不可知。因此，它说 square 不是一个函数。函数声明在常规执行开始之前就已经识别了。
+`square` 函数在执行的后部分被定义为表达式，在此之前浏览器对其不可知。因此，它说 `square` 不是一个函数。函数声明在常规执行开始之前就已经识别了。
 
-
-
-
-
-下表总结了函数声明（function declaration）与函数表达式（function expression）之间的区别：
+下表总结了函数声明与函数表达式之间的区别：
 
 | 特性 | 函数声明 | 函数表达式 |
 | --- | --- | --- |
 | 浏览器解析 | 浏览器会在首次运行时显式地寻找声明。 | 浏览器会在第二次扫描时（即执行时）将它们作为任何其他语句进行执行。 |
-| 名称 | 它们有一个显式的名称，该名称作为标准声明的一部分获取。 | 它们没有名称，它是作为表达式的一部分赋值给变量的。 |
-| | 函数名被用作调用函数的引用。 | 变量名可用于调用函数。由于该变量允许你调用函数，因此它指向该函数，也就是说它包含的值是对引用的引用。 |
-| 用的创建 | 当浏览器找到函数声明时，它会创建一个与函数名同名的变量，并将新函数赋值给它。 | 函数表达式返回一个由表达式创建的新函数的引用，声明的变量正指向该引用。 |
-| | 注意，函数声明不会返回一个引用。 | |
+| 名称 | 它们有一个显式的名称，该名称作为标准声明的一部分获取。函数名被用作调用函数的引用。 | 它们没有名称，它是作为表达式的一部分赋值给变量的。变量名可用于调用函数。由于该变量允许你调用函数，因此它指向该函数，也就是说它包含的值是对函数的引用。 |
+| 变量的创建 | 当浏览器找到函数声明时，它会创建一个与函数名同名的变量，并将新函数赋值给它。注意，函数声明不会返回一个引用。 | 函数表达式返回一个由表达式创建的新函数的引用，声明的变量正指向该引用。 |
 | 语句 | 函数声明是语句 | 函数表达式用于语句中 |
 | 函数创建时机 | 函数在评估其余代码之前被创建 | 函数在运行时创建。如果由于某种原因部分代码没有被调用，那么这些表达式甚至不会被评估，因此相关的函数表达式不会创建任何函数。 |
 
-**表 4.2：** 函数声明对比函数表达式
+表 4.2：函数声明对比函数表达式
 
 现在你已经理解了函数的基础，让我们学习函数的不同方面。
 
@@ -2521,27 +2729,33 @@ square 函数在执行的后部分被定义为表达式，在此之前浏览器�
 
 现在让我们遍历并理解函数的不同方面。
 
-### 参数（Parameter）与参数（Arguments）
+### 参数（Parameters）与实参（Arguments）
 
-被称为参数（parameters）的值是作为函数声明的一部分定义的。在调用函数时使用的值被称为**参数**（arguments）。
+被称为**参数**（parameters）的值是作为函数声明的一部分定义的。在调用函数时使用的值被称为**实参**（arguments）。
 
-我们可以向函数传递零或多个参数。同样，在调用函数时，我们可以提供零或多个参数。你可能需要注意以下几：
+我们可以向函数传递零或多个参数。同样，在调用函数时，我们可以提供零或多个实参。你可能需要注意以下几点：
 
-- 即使你传递的参数个数不准确，JavaScript 也会继续执行
+- 即使你传递的实参个数不准确，JavaScript 也会继续执行
 - JavaScript 函数中如何处理参数完全取决于开发者
 - 每个参数在函数体内部都像一个局部变量
-- 如果传递的参数比预期的多，额外的参数将被忽略
-- 如果传递的参数少于预期，则剩余的参数将被视为 `undefined` 值
+- 如果传递的实参比预期的多，额外的实参将被忽略
+- 如果传递的实参少于预期，则剩余的参数将被视为 `undefined` 值
 - 参数中没有类型检查，因此可以传递任何内容
 
 参数是通过值获取的。JavaScript 使用“按值传递”（pass-by-value）的方法传递参数：
 
-- 当你传递参数时，首先复制值，然后将其赋值给对应的参数。对参数值进行的任何更改只会影响函数内部的参数，而不会对用于传递函数的外部变量（来自外部作用域）产生任何影响。
-- 函数作用域：即使一个函数可以在另一个函数中调用，它们也无法访问彼此作用域中的变量。
-- 嵌套作用域：当一个函数定义另一个函数内部时，内部函数可以访问外部函数的变量。这种行为被称为词法作用域（lexical scoping），内部函数被称为闭包（closure）。外部函数无法访问内部函数：
+- 当你传递实参时，首先复制值，然后将其赋值给对应的参数。对参数值进行的任何更改只会影响函数内部的参数，而不会对用于传递函数的外部变量（来自外部作用域）产生任何影响。
+
+### 函数作用域
+
+即使一个函数可以在另一个函数中调用，它们也无法访问彼此作用域中的变量。
+
+### 嵌套作用域
+
+当一个函数定义在另一个函数内部时，内部函数可以访问外部函数的变量。这种行为被称为词法作用域（lexical scoping），内部函数被称为闭包（closure）。外部函数无法访问内部函数：
 
 ```javascript
-function outer () {
+function outer() {
   const outerVar = 'The outer variable!';
   function inner() {
     console.log(outerVar);
@@ -2554,32 +2768,32 @@ outer();
 通过下面的示例，操作函数和变量以实际观察哪些在作用域内，哪些不在：
 
 ```javascript
-var global1=11;
-let global2=12;
-const global3=13;
+var global1 = 11;
+let global2 = 12;
+const global3 = 13;
 
 function outer(param1) {
-  var local1=10;
-  let local2=20;
+  var local1 = 10;
+  let local2 = 20;
   console.log("Outer Global");
-  console.log(global1+global2+global3);
+  console.log(global1 + global2 + global3);
 
   function inner(param2) {
-    var global3=30; // 可以使用相同的名称重新声明
-    //let global1= 40; // 错误
-    if(param2) { // 新块
-      let local1=50;
-      const local2=60;
+    var global3 = 30; // 可以使用相同的名称重新声明
+    // let global1 = 40; // 错误
+    if (param2) { // 新块
+      let local1 = 50;
+      const local2 = 60;
       console.log("Inner Global");
-      console.log(global1+global2+global3);
-      console.log(local1+local2+param1);
-      // console.log(block1+block2);
+      console.log(global1 + global2 + global3);
+      console.log(local1 + local2 + param1);
+      // console.log(block1 + block2);
     }
-    // console.log("Outside Block"+block1+block2); // 错误
+    // console.log("Outside Block" + block1 + block2); // 错误
   }
   inner(21);
-  outer(35);
 }
+outer(35);
 ```
 
 代码中任何地方都可以访问的全局作用域变量
@@ -2590,14 +2804,11 @@ function outer(param1) {
 
 块变量仅在块内可访问，在外部无法访问
 
-| Outer Global |
-| --- |
-| Inner Global |
-| 55 |
-| Local |
-| 82 |
-| Block |
-| 110 |
+| Outer Global | 36 |
+| --- | --- |
+| Inner Global | 55 |
+| Local | 82 |
+| Block | 110 |
 
 图 4.3：块中的全局和局部作用域函数
 
@@ -2629,30 +2840,37 @@ console.log(names.length); // 3
 
 ### 判断变量是否为数组
 
-`typeof` 运算符对数组返回 "object"，无法用于判断变量是否为数组。我们有一些其他方法：
+`typeof` 运算符对数组返回 `"object"`，无法用于判断变量是否为数组。我们有一些其他方法：
 
-- 可以使用 `instanceof` 运算符，它返回布尔值 true/false：
-  ```javascript
-  names instanceof Array // true
-  ```
+- 可以使用 `instanceof` 运算符，它返回布尔值 `true`/`false`：
+
+```javascript
+names instanceof Array; // true
+```
+
 - `Array.isArray()` 是 ECMAScript 5 添加的函数，可以执行检查：
-  ```javascript
-  Array.isArray(names); // true
-  ```
+
+```javascript
+Array.isArray(names); // true
+```
 
 ### 遍历数组元素
 
 遍历数组以执行某些逻辑：
 
-a. 传统的循环方法：
+**a. 传统的循环方法：**
+
 使用 `for` 循环直到长度：
+
 ```javascript
-array = [ 1, 2, 3, 4, 5, 6 ];
-for (index = 0; index < array.length; index++) {
+let array = [1, 2, 3, 4, 5, 6];
+for (let index = 0; index < array.length; index++) {
   console.log(array[index]);
 }
 ```
+
 同样使用 `do...while` 循环：
+
 ```javascript
 let index = 0;
 do {
@@ -2661,110 +2879,120 @@ do {
 } while (index < array.length);
 ```
 
-b. 使用 `forEach` 为数组的每个元素调用函数，如下代码所示：
+**b. 使用 `forEach` 为数组的每个元素调用函数：**
+
 ```javascript
 array.forEach(function(element) {
   console.log(element);
 });
 ```
 
-c. 使用 `map` 方法：`map` 方法为每个元素调用函数并返回由函数修改的元素数组。下面的代码使用了 ES6 箭头语法，但你也可以使用普通函数调用：
+**c. 使用 `map` 方法：** `map` 方法为每个元素调用函数并返回由函数修改的元素数组。下面的代码使用了 ES6 箭头语法，但你也可以使用普通函数调用：
+
 ```javascript
-let num=[10, 20, 30];
-let square = num.map((n,index)=>{
-  return n*n;
+let num = [10, 20, 30];
+let square = num.map((n, index) => {
+  return n * n;
 });
-console.log(square);//100, 400, 900]
+console.log(square); // [100, 400, 900]
 ```
 
-d. 使用 `reduce` 方法：另一个用的数组方法，它也会为数组的每个元素调用函数，但返回一个累加响应，其中每个结果都传递给下一个元素，最终返回单个响应值。
+**d. 使用 `reduce` 方法：** 另一个常用的数组方法，它也会为数组的每个元素调用函数，但返回一个累加响应，其中每个结果都传递给下一个元素，最终返回单个响应值。
+
 使用类似的 `reduce` 示例来计算平方和如下代码所示：
+
 ```javascript
-let num1=[10, 20, 30];
+let num1 = [10, 20, 30];
 let sum = num1.reduce((acc, curr) => {
   return acc + (curr * curr);
 }, 0);
 console.log(sum); // 1400
 ```
 
-
 ```javascript
-square= num1.reduce((sum,n) => {
-  return sum + n*n;
+let square = num1.reduce((sum, n) => {
+  return sum + n * n;
 });
-console.log(square); // 1310
+console.log(square); // 1400
 ```
 
-- **使用 filter 方法：** filter 方法为每个元素调用一次函数，检查每个元素是否符合特定条件，并返回满足条件的元素的数组。
+**e. 使用 `filter` 方法：** `filter` 方法为每个元素调用一次函数，检查每个元素是否符合特定条件，并返回满足条件的元素的数组。
 
 另一个使用方法语法返回大于或等于 30 的数字示例：
+
 ```javascript
-let num=[10,20,30,40,50,60];
-filtered=num.filter((num) => {
-  return num>=30;// 根据元素返回 true 或 false
+let num = [10, 20, 30, 40, 50, 60];
+let filtered = num.filter((num) => {
+  return num >= 30; // 根据元素返回 true 或 false
 });
-console.log(filtered); //[30, 40, 50, 60]
+console.log(filtered); // [30, 40, 50, 60]
 ```
 
 ## 向数组中添加元素
 
-- **使用 push 添加元素：** 通过向数组末尾添加元素来更改数组，并返回最终数组的长度：
+- **使用 `push` 添加元素：** 通过向数组末尾添加元素来更改数组，并返回最终数组的长度：
+
 ```javascript
-num=[1,2,3,4,5];
-x=num.push(6,7,8);
-console.log(num); //[1,2,3,4,5,6,7,8]
+let num = [1, 2, 3, 4, 5];
+let x = num.push(6, 7, 8);
+console.log(num); // [1, 2, 3, 4, 5, 6, 7, 8]
 console.log(x); // 8
 ```
 
-- **使用 concat 合并数组：** concat() 方法用于将两个或多个数组合并成一个数组。它不会改变被合并的数组，而是返回一个新数组：
+- **使用 `concat` 合并数组：** `concat()` 方法用于将两个或多个数组合并成一个数组。它不会改变被合并的数组，而是返回一个新数组：
+
 ```javascript
-arr1=[1,2,3];
-arr2=[4,5];
-arr3=[6,7,8];
-arr=arr1.concat(arr2,arr3);
-console.log(arr); //[1,2,3,4,5,6,7,8]
+let arr1 = [1, 2, 3];
+let arr2 = [4, 5];
+let arr3 = [6, 7, 8];
+let arr = arr1.concat(arr2, arr3);
+console.log(arr); // [1, 2, 3, 4, 5, 6, 7, 8]
 ```
 
-## 从数组中移除元素：
+## 从数组中移除元素
 
-- **使用 pop 移除最后一个元素：** 通过移除最后一个元素来更改数组，并返回被移除的元素：
+- **使用 `pop` 移除最后一个元素：** 通过移除最后一个元素来更改数组，并返回被移除的元素：
+
 ```javascript
-num=[1,2,3,4,5];
-x=num.pop();
-console.log(num); //1,2,3,4]
+let num = [1, 2, 3, 4, 5];
+let x = num.pop();
+console.log(num); // [1, 2, 3, 4]
 console.log(x); // 5
 ```
 
-- **使用 shift 移除第一个元素：** 通过移除第一个元素来更改数组，并返回被移除的元素：
+- **使用 `shift` 移除第一个元素：** 通过移除第一个元素来更改数组，并返回被移除的元素：
+
 ```javascript
-num=[1,2,3,4,5];
-x = num.shift();
-console.log(num); //2,3,4,5]
+let num = [1, 2, 3, 4, 5];
+let x = num.shift();
+console.log(num); // [2, 3, 4, 5]
 console.log(x); // 1
 ```
 
-- **修改/替换数组中的元素：**
+## 修改/替换数组中的元素
 
-- **使用 splice() 添加或移除元素：** 通过指定起始位置、要替换/移除的元素数量以及用于替换的新列表来更改数组：
+- **使用 `splice()` 添加或移除元素：** 通过指定起始位置、要替换/移除的元素数量以及用于替换的新列表来更改数组：
+
 ```javascript
-num=[1,2,3,4,5];
-num.splice(2,1,11,12,13); // 从第2位置开始替换1个元素并添加新列表
-console.log(num); //1,2,11,12,13,4]
+let num = [1, 2, 3, 4, 5];
+num.splice(2, 1, 11, 12, 13); // 从第 2 位置开始替换 1 个元素并添加新列表
+console.log(num); // [1, 2, 11, 12, 13, 4, 5]
 ```
 
-- **使用 slice 使用现有数组创建新数组：** 根据指定的起始和结束位置创建一个新数组。原始数组不会受到影响：
+- **使用 `slice` 使用现有数组创建新数组：** 根据指定的起始和结束位置创建一个新数组。原始数组不会受到影响：
+
 ```javascript
-num=[1,2,3,4,5];
-arr1=num.slice();
-arr2=num.slice(1,3);
-arr3=num.slice(2);
-console.log(num); //1,2,3,4,5]
-console.log(arr1); // [1,2,3,4,5]
-console.log(arr2); // [2,3]
-console.log(arr3); // [3,4,5]
+let num = [1, 2, 3, 4, 5];
+let arr1 = num.slice();
+let arr2 = num.slice(1, 3);
+let arr3 = num.slice(2);
+console.log(num);  // [1, 2, 3, 4, 5]
+console.log(arr1); // [1, 2, 3, 4, 5]
+console.log(arr2); // [2, 3]
+console.log(arr3); // [3, 4, 5]
 ```
 
-数组是一种非常有用的复合数据类型，当你深入学习编程时，你会越用地使用它。
+数组是一种非常有用的复合数据类型，当你深入学习编程时，你会越来越多地使用它。
 
 接下来，我们将探索 JavaScript-DOM 操作的另一种力量。
 
@@ -2793,37 +3021,57 @@ DOM 是 Web 的表示方式。网页由 DOM 节点组成，通过这些节点，
 
 ## 遍历 DOM
 
-如果我们想相对于结构的起始标签访问节点或元素，或者相对于当前标签访问，则下一组方法按照遍历 DOM 的顺序提供了访问。从...开始的第一层节点是...
+如果我们想相对于结构的起始标签访问节点或元素，或者相对于当前标签访问，则下一组方法按照遍历 DOM 的顺序提供了访问。
 
+### 创建元素
 
-
-
-
-let text = document.createNode('Text Added!');
+```javascript
+let newElement = document.createElement('div');
+let text = document.createTextNode('Text Added!');
 newElement.appendChild(text);
 document.getElementById('division').appendChild(newElement);
+```
 
-- removeChild: 用于移除 HTML 元素。它在需要移除的元素的父节点上调用。
-- 首先获取要移除的元素，然后获取它的父节点。接着在下面的代码中调用 removeChild 方法从 parentNode 中移除该元素：
+### 移除元素
+
+- `removeChild`：用于移除 HTML 元素。它在需要移除的元素的父节点上调用。
+
+```javascript
 let toBeRemoved = document.getElementById('head');
 let parent = toBeRemoved.parentNode;
 parent.removeChild(toBeRemoved);
+```
 
 ## 属性相关
 
 接下来，你将学习如何使用以下方法操作 DOM 元素的属性：
 
-- getAttribute: 用于获取属性：
-let anchor1 = document.getElementById('myId');
-let srcURL = anchor1.getAttribute('href');//获取锚点的 href
-- setAttribute: 用于为元素设置新属性。它接受两个参数，第一个是属性名，第二个是为该属性要设置的值：
-anchor1.setAttribute('href','www.google.com');
-- hasAttribute: 用于检查元素上是否存在某个属性：
-var chkFlag = anchor1.hasAttribute('title');
-- removeAttribute: 用于移除属性；它接受属性名作为参数：
-anchor1.removeAttribute('title');
+- **`getAttribute`**：用于获取属性：
 
-通过上述方法，你可以通过 JavaScript 代码访问并修改 dom 以及你网页的内容。
+```javascript
+let anchor1 = document.getElementById('myId');
+let srcURL = anchor1.getAttribute('href'); // 获取锚点的 href
+```
+
+- **`setAttribute`**：用于为元素设置新属性。它接受两个参数，第一个是属性名，第二个是为该属性要设置的值：
+
+```javascript
+anchor1.setAttribute('href', 'www.google.com');
+```
+
+- **`hasAttribute`**：用于检查元素上是否存在某个属性：
+
+```javascript
+var chkFlag = anchor1.hasAttribute('title');
+```
+
+- **`removeAttribute`**：用于移除属性；它接受属性名作为参数：
+
+```javascript
+anchor1.removeAttribute('title');
+```
+
+通过上述方法，你可以通过 JavaScript 代码访问并修改 DOM 以及你网页的内容。
 
 ## 结论
 
@@ -2831,66 +3079,67 @@ anchor1.removeAttribute('title');
 
 ## 问题
 
-- 1. \___ 方法用于创建文本节点。
-A. createElement
-B. createTextNode
-C. appendText
+### 1. \___ 方法用于创建文本节点。
+
+A. `createElement`
+B. `createTextNode`
+C. `appendText`
 D. 以上都不是
 
 **答案：B**
-TextNode 用于创建文本节点，它可以使用 appendElement 将其附加到任何元素上。
 
-- 2. \___ 通过指定起始位置、要替换/删除的元素数量以及用于替换的新列表来更改数组。
-A. splice
-B. slice
-C. map
-D. push
+`createTextNode` 用于创建文本节点，它可以使用 `appendChild` 将其附加到任何元素上。
 
-**答案：A.**
+### 2. \___ 通过指定起始位置、要替换/删除的元素数量以及用于替换的新列表来更改数组。
 
-- 3. 这种块作用域变量声明用于当包含的值是常量且不会发生变化时。
-A. constant
-B. const
-C. var
-D. let
+A. `splice`
+B. `slice`
+C. `map`
+D. `push`
 
-**答案：B.**
+**答案：A**
 
-- 4. 使用表达式定义的函数在运行时被创建。
+### 3. 这种块作用域变量声明用于当包含的值是常量且不会发生变化时。
+
+A. `constant`
+B. `const`
+C. `var`
+D. `let`
+
+**答案：B**
+
+### 4. 使用表达式定义的函数在运行时被创建。
+
 A. TRUE
 B. FALSE
 
-**答案：A.**
+**答案：A**
 
-- 5. 这是一种处理复杂数据结构（包括不同类型的数据）的复杂数据类型。
-- A. Array
-B. Enum
-C. Object
-D. Symbol
+### 5. 这是一种处理复杂数据结构（包括不同类型的数据）的复杂数据类型。
 
-**答案：C.**
+A. `Array`
+B. `Enum`
+C. `Object`
+D. `Symbol`
 
-# 第5 章
+**答案：C**
+
+# 第 5 章
 
 ## JavaScript 函数式编程
 
-“面向对象编程通过封装移动部分使代码易于理解。函数式编程通过减少移动部分使代码易于理解。”
-
-~ Michael Feathers，《Working with Legacy Code》作者（通过 Twitter）
+> “面向对象编程通过封装移动部分使代码易于理解。函数式编程通过减少移动部分使代码易于理解。”
+> — Michael Feathers，《Working with Legacy Code》作者（通过 Twitter）
 
 ![](img/22525aec83cb16cb7664cd8d5c364721_139_0.png)
 
 图 5.1
 
-Web行业流行的术语之一是函数式编程。函数式编程（FP）是一种备受推崇的方法，在开发商业软件中的人气日益增长。我们将详细讨论函数式编程的具体含义，但首先让我们对它有一个基本的概念。随着企业级应用（程序）变得越来越大，变得越来越复杂且难以维护，为了给系统添加新功能，人们增加了额外的插件或程序并使应用程序得以运行。这种应用程序虽然可以工作，但如果出现任何问题，将很难理解和修复它。作为一名程序员，在一个你并不真正理解上工作无异于噩梦。我们应该始终尽可能保持程序的复杂性最低。做到这一点的一个重要方法是让代码更具抽象性。
+Web 行业流行的术语之一是函数式编程。函数式编程（FP）是一种备受推崇的方法，在开发商业软件中的人气日益增长。我们将详细讨论函数式编程的具体含义，但首先让我们对它有一个基本的概念。随着企业级应用（程序）变得越来越大，变得越来越复杂且难以维护，为了给系统添加新功能，人们增加了额外的插件或程序并使应用程序得以运行。这种应用程序虽然可以工作，但如果出现任何问题，将很难理解和修复它。作为一名程序员，在一个你并不真正理解的系统上工作无异于噩梦。我们应该始终尽可能保持程序的复杂性最低。做到这一点的一个重要方法是让代码更具抽象性。
 
-机器
-汇编
-过程化
-面向对象
-函数式
+机器 -> 汇编 -> 过程化 -> 面向对象 -> 函数式
 
-本章涵盖了函数式编程的基本概念，帮助你决定何时以及何时选择 FP 应用到日常编码活动中，以及如何将其与 JavaScript 联系起来。
+本章涵盖了函数式编程的基本概念，帮助你决定何时以及如何选择 FP 应用到日常编码活动中，以及如何将其与 JavaScript 联系起来。
 
 ## 结构
 
@@ -2923,28 +3172,28 @@ FP 不是一种语言。它是语言无关的。它在概念上植根于数学�
 
 ```javascript
 const myArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-function fetchEven(myArray){
+function fetchEven(myArray) {
   let evenNos = [];
-  for(let i = 0; i<myArray.length; i++){
+  for (let i = 0; i < myArray.length; i++) {
     if (myArray[i] % 2 == 0 && myArray[i] != 0) {
       evenNos.push(myArray[i]);
     }
   }
   return evenNos;
 }
-console.log(fetchEven(myArray)); // 输出 [2, 4, 6, 8]
+console.log(fetchEven(myArray)); // 输出 [2, 4, 6, 8, 10]
 ```
 
 ## 声明式风格/函数式
 
-在声明式风格的编码中，我们使用 filter 方法定义我们期望的结果，并让系统处理所有其他步骤。
+在声明式风格的编码中，我们使用 `filter` 方法定义我们期望的结果，并让系统处理所有其他步骤。
 
 ```javascript
 const myArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-function fetchEvenD(myArray){
-  return myArray.filter(num =>num % 2 == 0)
+function fetchEvenD(myArray) {
+  return myArray.filter(num => num % 2 == 0);
 }
-console.log(fetchEvenD(myArray)); // 输出 [2, 4, 6, 8]
+console.log(fetchEvenD(myArray)); // 输出 [2, 4, 6, 8, 10]
 ```
 
 从上一个示例可以看出，声明式/函数式方法带来了更短的代码，程序员更容易理解，反映了整洁的代码。
@@ -2954,8 +3203,8 @@ console.log(fetchEvenD(myArray)); // 输出 [2, 4, 6, 8]
 - **无状态**：程序没有状态，即 FP 语言中的数据是不可变的，函数不能改变状态。
 - **执行顺序不重要**：由于所有函数都独立工作，FP 中函数的执行顺序并没有很大意义，并且能产生相同的结果。
 - **模块化**：FP 强调编写较小且独立的单元纯函数以支持不可变性。这意味着 FP 比 OOP 更支持更好的模块化编程。
-- **一等公民**：函数：函数是一等公民对象，它们是较小的独立单元，因此可以任何顺序执行并产生相同的结果。
-- **高阶函数和延迟求值**：函数式编程支持高阶函数和延迟求值特性。（不用，很快就会看到这意味着什么）。
+- **一等公民函数**：函数是一等公民对象，它们是较小的独立单元，因此可以任何顺序执行并产生相同的结果。
+- **高阶函数和延迟求值**：函数式编程支持高阶函数和延迟求值特性。
 
 以下是支持函数式编程的一些编程语言：
 
@@ -2966,10 +3215,6 @@ console.log(fetchEvenD(myArray)); // 输出 [2, 4, 6, 8]
 - Lisp
 - Clojure
 - Common Lisp
-
-
-
-
 
 我们应该在以下场景考虑函数式编程：
 
@@ -2986,89 +3231,98 @@ console.log(fetchEvenD(myArray)); // 输出 [2, 4, 6, 8]
 ## 纯函数
 
 要理解函数式编程，我们需要学习的最基础的概念是纯函数。让我们详细了解它的含义。
+
 要使一个函数符合纯函数的标准，它必须具备以下特征：
 
-- 对于提供的相同参数集，函数始终返回相同的的结果。
+- 对于提供的相同参数集，函数始终返回相同的结果。
 - 纯函数不会产生可观测的副作用。
 
-示例：Math.sign(x)：对于 x 值，我们可以确定结果是什么，且它不会改变 x 的值。此外，它没有任何副作用，如发起网络调用或记录日志等。
+示例：`Math.sign(x)`：对于 `x` 值，我们可以确定结果是什么，且它不会改变 `x` 的值。此外，它没有任何副作用，如发起网络调用或记录日志等。
 
 我们可以说，任何除了返回值之外还执行了活动的函数都可以认为是不纯的。
 
 让我们通过示例代码来理解上述观点。
 
-对于相同的参数集，提供的函数始终返回相同的结果。
+### 对于相同的参数集，提供的函数始终返回相同的结果。
 
-## 问题：编写一个计算球体面积的函数：
+**问题：编写一个计算球体表面积的函数：**
 
-```
-Area of sphere = 4π r2
+```text
+Area of sphere = 4πr²
 let PI = 3.14;
-const calculateAreaOfSphere = (radiusValue) => 4 * PI * radiusValue;
+const calculateAreaOfSphere = (radiusValue) => 4 * PI * radiusValue * radiusValue;
 calculateAreaOfSphere(10); // returns 1256
 ```
 
-前面的函数 calculateAreaOfSphere 不是一个纯函数，因为它访问了全局状态值，即 PI 值。如果 PI 值发生了变化（这在函数范围之外），它将影响函数的结果。
+前面的函数 `calculateAreaOfSphere` 不是一个纯函数，因为它访问了全局状态值，即 `PI` 值。如果 `PI` 值发生了变化（这在函数范围之外），它将影响函数的结果。
 
-也就是说，如果 PI = 3.14285714285714，那么 `calculateAreaOfSphere` 函数将返回不同的结果：
+也就是说，如果 `PI = 3.14285714285714`，那么 `calculateAreaOfSphere` 函数将返回不同的结果：
 
-```
+```javascript
 let PI = 3.14285714285714;
-const calculateAreaOfSphere = (radiusValue, pi) => 4 * pi * radiusValue * radiusValue;
-calculateAreaOfSphere(10,PI); // returns 1257.1428571428572
+const calculateAreaOfSphere = (radiusValue) => 4 * PI * radiusValue * radiusValue;
+calculateAreaOfSphere(10); // returns 1257.1428571428572
 ```
 
-在前面的函数中，我们将 PI 值作为参数之一传递，在这里我们无法访问全局状态，并且对于相同的输入参数，`calculateAreaOfSphere` 函数将给出相同的结果。
+在前面的函数中，我们将 `PI` 值作为参数之一传递，在这里我们无法访问全局状态，并且对于相同的输入参数，`calculateAreaOfSphere` 函数将给出相同的结果：
 
-## 纯函数不会可观测的副作用：
+```javascript
+const calculateAreaOfSphere = (radiusValue, pi) => 4 * pi * radiusValue * radiusValue;
+calculateAreaOfSphere(10, PI); // returns 1257.1428571428572
+```
+
+### 纯函数不会产生可观测的副作用
 
 为了理解函数的副作用，我们需要包含操作全局对象或通过引用传递的参数。
 
 让我们通过代码来理解这一点，并编写一个计算按钮点击次数的函数：
 
-```
+```javascript
 let buttonClickCount = 0;
 function buttonClick(value) {
   buttonClickCount = value + 1;
 }
-
 buttonClick(buttonClickCount);
 console.log(buttonClickCount); // 1
 ```
 
-我们有一个 `buttonClickCount` 值。前面的函数是不纯函数。它接收点击计数并通过加1来重新赋值给该值；因此，我们违反了函数式编程的不可变性特性。
+我们有一个 `buttonClickCount` 值。前面的函数是不纯函数。它接收点击计数并通过加 1 来重新赋值给该值；因此，我们违反了函数式编程的不可变性特性。
+
 因此，我们使用纯函数重写了前面的示例：
 
-```
+```javascript
 let buttonClickCount = 0;
 const buttonClick = (value) => value + 1;
 buttonClick(buttonClickCount);
-console.log(buttonClickCount); // 1
+console.log(buttonClickCount); // 0 (全局变量未改变)
 ```
 
 在前面的示例中，我们没有修改全局状态，因此没有副作用。
 
-## 纯函数的优势
+### 纯函数的优势
 
 以下是纯函数的主要优势：
 
 - **可测试性**：对于相同的输入，输出是相同的。编写单元测试变得非常简单，你不需要模拟任何数据。
 - **可复用性**：通过纯函数的函数和基于组件的方法，我们可以复用很多代码/函数。
-- **可维护性**：没有副作用且不影响任何其他代码的函数是于维护的。
+- **可维护性**：没有副作用且不影响任何其他代码的函数是易于维护的。
 
 ## 高阶函数
 
 高阶函数是：
 
-- 其他函数作为参数函数
-- 返回另一个函数作为结果部分的函数
+- 接受其他函数作为参数的函数
+- 返回另一个函数作为结果的函数
 
-在 JavaScript 中，函数无非值，因此我们可以将其作为参数传递另一个函数。高阶函数主要用于组合。
-你可能已经听过 filter、reduce 和 map 函数；这些都是高阶函数的示例。
+在 JavaScript 中，函数无非是值，因此我们可以将其作为参数传递给另一个函数。高阶函数主要用于组合。
+
+你可能已经听过 `filter`、`reduce` 和 `map` 函数；这些都是高阶函数的示例。
+
 让我们通过代码来理解这一点。
+
 声明一个对象数组：
 
-```
+```javascript
 const cities = [
   { city: 'Newyork', country: 'USA' },
   { city: 'Mumbai', country: 'India' },
@@ -3079,9 +3333,9 @@ const cities = [
 ];
 ```
 
-现在，如果你想从数组中过滤出印度城市，可以使用命令式范式完成，即 for 循环：
+现在，如果你想从数组中过滤出印度城市，可以使用命令式范式完成，即 `for` 循环：
 
-```
+```javascript
 const indianCities = [];
 for (let i = 0; i < cities.length; i++) {
   if (cities[i].country === 'India') {
@@ -3090,49 +3344,55 @@ for (let i = 0; i < cities.length; i++) {
 }
 ```
 
+使用声明式/函数式风格：
+
 ```javascript
 const indianCities = cities.filter(city => city.country === 'India');
 ```
 
 在前面的示例中，我们使用了 `filter` 方法，它是一个高阶函数，因为它接受一个回调函数作为参数。它返回一个新数组，而不修改原始数组。
 
-
-
+## 递归
 
 递归函数在本质上是纯的，它们对变量状态不产生副作用；因此，易于测试。
 
 ## 引用透明性
 
 如果一个表达式可以被替换为其对应的值而不改变程序的行为，则称该表达式是引用透明的。
+
 简而言之，
 
 纯函数 + 不可变数据 = 引用透明性
+
 引用透明性的优势如下：
 
 - 它消除了代码的副作用。
 - 它使你的代码具有上下文无关性，这意味着你的代码可以在任何顺序和任何环境中运行；它将始终返回相同的结果。
 
 让我们通过一个例子来理解这一点。
+
 假设我们有这样一个函数：
 
-```
+```javascript
 const sum = (x, y) => x + y;
-sum(6, sum(10, 20)); // 使用 5 & 8 作为参数调用
+sum(6, sum(10, 20)); // 使用 10 & 20 作为参数调用
 ```
 
 在上述语句中，`sum(10, 20)` 始终等于 30，因此我们可以完美地替换为 30，即 `sum(6, 30)`。
+
 同样，`sum(6, 30)` 的结果是 36；因此，我们可以将表达式替换为常量值，即 36 并对其进行优化。
 
 ## 一等函数
 
 将函数视为一等实体的概念是指，函数也可以被视为值，并像其他任何数据一样被使用。
+
 函数可以：
 
 - 存储在变量中
 - 作为参数传递给任何其他函数
 - 由任何其他函数返回
 
-## 存储在变量中
+### 存储在变量中
 
 函数可以通过不同的方式存储：
 
@@ -3142,7 +3402,7 @@ sum(6, sum(10, 20)); // 使用 5 & 8 作为参数调用
 
 将函数存储在变量中的示例所示：
 
-```
+```javascript
 const foo = function() {
   console.log("Hello world!");
 }
@@ -3152,7 +3412,7 @@ foo();
 
 在上一个示例中，一个匿名函数被赋值给变量，并通过在末尾添加括号 `()` 来调用该函数。上一个示例可以通过给函数命名来重写：
 
-```
+```javascript
 const foo = function greetWorld() {
   console.log("Hello world!");
 }
@@ -3162,9 +3422,9 @@ foo();
 
 将函数存储在对象中的示例见下一个示例：
 
-```
+```javascript
 let obj = {
-  greetWorld : function() {
+  greetWorld: function() {
     console.log("Hello world!");
   }
 }
@@ -3174,27 +3434,27 @@ obj.greetWorld(); // Hello world!
 
 将函数存储在数组中的示例见下一个示例：
 
-```
-let arr = [ function greetWorld() { console.log("Hello world!"); }];
+```javascript
+let arr = [function greetWorld() { console.log("Hello world!"); }];
 // 调用
 arr[0](); // Hello world!
 ```
 
 ### 作为参数传递给任何其他函数
 
-在之前的一个示例中，你看到了我们如何将函数视为一个值，而 `greetWorld` 就是回调函数。回调是指作为参数传递另一个函数的函数。
+在之前的一个示例中，你看到了我们如何将函数视为一个值，而 `greetWorld` 就是回调函数。回调是指作为参数传递给另一个函数的函数。
 
 ### 由任何其他函数返回
 
 我们可以重写上一个示例来返回一个函数，因为我们把函数视为一个值：
 
-```
-function greet(){
-  return function () {
+```javascript
+function greet() {
+  return function() {
     console.log('Hi Ranjit');
-  }
+  };
 }
-greet(); // Hi Ranjit
+greet()(); // Hi Ranjit
 ```
 
 在上一个示例中，第一对括号将返回函数，第二个括号将调用该函数。
@@ -3220,22 +3480,19 @@ greet(); // Hi Ranjit
 
 图 5.4
 
-## 横向 (HORIZONTAL)
+### 横向
 
-## 竖向 (VERTICAL)
+3. 当你想做多件事时，将使用函数式编程？
+4. 函数式不会有可观察的副作用
+7. 确保不会改变原始状态
+8. 任何作为参数传递的函数都称为回调函数
 
-- 3. 当你想做多件事时，将使用函数式编程？
-- 1. 关注需要实现什么而不是指示如何实现的编程范式。
-- 4. 函数式不会有可观察的副作用
-- 2. 函数式反复地调用自己，直到达到基本情况。
-- 7. 确保不会改变原始状态。
-- 5. filter 方法创建一个包含所有通过提供的函数实现的测试元素的新数组。
-- 8. 任何作为参数传递的函数都称为回调函数。
-- 6. 当函数被像其他任何变量一样对待时，称为一等函数。
+### 竖向
 
-图 5.5
-
-答案：
+1. 关注需要实现什么而不是指示如何实现的编程范式。
+2. 函数式反复地调用自己，直到达到基本情况。
+5. `filter` 方法创建一个包含所有通过提供的函数实现的测试元素的新数组。
+6. 当函数被像其他任何变量一样对待时，称为一等函数。
 
 ![](img/22525aec83cb16cb7664cd8d5c364721_154_0.png)
 
@@ -3245,13 +3502,12 @@ greet(); // Hi Ranjit
 
 ## 面向对象的 JavaScript
 
-> “对我来说，OOP 意味着只有消息、本地保留以及状态过程的保护与隐藏，以及一切事的极端晚绑定。”
+> “对我来说，OOP 意味着只有消息、本地保留以及状态过程的保护与隐藏，以及一切事物的极端晚绑定。”
+> — ALAN KAY
 
-~ ALAN KAY
+当 Alan Kay 在 1966-1967 年创造面向对象编程 (OOP) 术语时，他设想计算机不应该以过程化的方式传递数据，而应该像真实对象一样对话——通过消息进行交流。就像在现实世界中，你会遇到本地保留、保护和隐藏状态的需求——计算机程序也应该允许这一点。这为 Smalltalk 等早期 OOP 语言奠定了基础，从那以后开发了数百种基于 OOP 的语言。JavaScript 多功能地为过程和面向对象的范式都留了空间。随着 ECMAScript 2015 正式引入了类（`class`）等概念，它丰富了 JavaScript 中 OOP 的用法，其中人们曾使用一种稍微复杂的方法来实现相同的目标。
 
-当 Alan Kay 在 1966-1967 年创造面向对象编程 (OOP) 术语时，他设想计算机不应该以过程化的方式传递数据，而应该像真实对象一样对话——通过消息进行交流。就像在现实世界中，你会遇到本地保留、保护和隐藏状态的需求——计算机程序也应该允许这一点。这为 Smalltalk 等早期 OOP 语言奠定了基础，从那以后开发了数百种基于 OOP 的语言。JavaScript 多功能地为过程和面向对象的范式都留了空间。随着 ECMAScript 2015 正式引入了类（class）等概念，它丰富了 JavaScript 中 OOP 的用法，其中人们曾使用一种稍微复杂的方法来实现相同的目标。
-
-本章将使用 JavaScript 最新的 ECMAScript 语法向你介绍 (OOP) 的各种概念。你将从理解类和对象开始，然后应用封装、继承和抽象等 OOP 概念。
+本章将使用 JavaScript 最新的 ECMAScript 语法向你介绍 OOP 的各种概念。你将从理解类和对象开始，然后应用封装、继承和抽象等 OOP 概念。
 
 ## 结构
 
@@ -3267,16 +3523,16 @@ greet(); // Hi Ranjit
 学习本章后：
 
 - 你将学习面向对象编程 (OOP) 的基础，具体来说，将介绍 OOP 概念
-- 在书的后面部分，我们将讨论 React.js。
+- 在书的后面部分，我们将讨论 React.js
 
 ## OOP 简介
 
 面向对象编程 (OOP) 是一种编程范式，其重点是确保对象可以执行或正在执行。在非常高的层面上，OOP 定义了一个类，你利用它来创建一个实例，该实例被称为对象。
 
-| <类名> |
+| 类名 |
 | :--- |
-| <字段 / 状态> |
-| <处理状态的方法> |
+| 字段 / 状态 |
+| 处理状态的方法 |
 
 图 6.1：类结构
 
@@ -3286,9 +3542,9 @@ greet(); // Hi Ranjit
 
 在 ES6 之前，开发者显式使用函数实现类，但在 ECMAScript 2015 中正式引入了 `class` 关键字。这节省了某些编码工作，并为欣赏和理解 OOP 概念提供了更好的动力。虽然你可以认为这只是函数形式的语法糖，但将其视为一个可以改变代码行为的函数，让我们称之为非常特殊的函数，每当你需要定义一个或多个该类型的实体时，就可以使用它。
 
-在最简单的水平，类看起来如下：
+在最简单的层面，类看起来如下：
 
-```
+```javascript
 class User {
   constructor(firstName, lastName, userName) {
     this.firstName = firstName;
@@ -3313,9 +3569,6 @@ class User {
 
 一旦定义了类，你就可以在应用程序中创建所需的任意类实例了。
 
-
-
-
 ## 类的构造函数
 
 每个类都必须有一个构造函数。你可以像上面的示例那样显式地声明它，也可以跳过定义，在这种情况下，JavaScript 会自动添加一个不可见的构造函数。当你定义构造函数时，它可以拥有零个或多个参数，这些参数用于初始化成员变量。在之前的类声明中，你使用了如下所示的显式声明：
@@ -3338,14 +3591,19 @@ class User {
   }
 }
 
-appUser = new User("Abhilasha", "Sinha");
+let appUser = new User("Abhilasha", "Sinha");
 ```
 
-在前面的代码中，构造函数传递了两个参数并使用了 userId 的默认值。
+在前面的代码中，构造函数传递了两个参数并使用了 `userId` 的默认值。
 
 ## 类中的静态成员
 
-类的静态成员意味着该成员与类级别相关，而不是与实例级别相关。静态成员在类级别只有一个实例。早期的静态函数是通过在类顶部添加变量来定义的。然而，通过 ES6，JavaScript 为你提供了你在 OOP（面向对象编程）范式中预期的方法。`static`关键字可以用于将方法标记为静态方法。例如，在下面的代码中，你可以利用 `create` 方法（这是一个静态方法）来创建 User 的实例：
+类的静态成员意味着该成员与类级别相关，而不是与实例级别相关。静态成员在类级别只有一个实例。早期的静态函数是通过在类顶部添加变量来定义的。然而，通过 ES6，JavaScript 为你提供了你在 OOP（面向对象编程）范式中预期的方法。`static` 关键字可以用于将方法标记为静态方法。例如，在下面的代码中，你可以利用 `create` 方法（这是一个静态方法）来创建 `User` 的实例：
+
+
+
+# 第 6 章
+## 面向对象的 JavaScript
 
 ```javascript
 class User {
@@ -3385,7 +3643,7 @@ console.log(anotherUser.getName());
 
 有了类的概念后，静态行为更符合你在面向对象范式中的预期。你在类上调用静态方法或变量，而不是在实例上调用。通常，当你需要工具函数或如 `create` 这样的生命周期函数时，静态方法非常有意义。在前面的代码示例中，你使用了静态方法从类创建了一个新实例（`anotherObject`）。此外，你使用了静态成员变量 `userCount` 来跟踪 `User` 实例的数量。
 
-## 对象
+### 对象
 
 每当你需要类的实例时，都可以使用类中的 `new` 操作符来创建一个新对象。新实例的创建会自动调用类的构造函数来初始化成员变量。例如，当你如下所示创建一个对象 `appUser` 时：
 
@@ -3432,19 +3690,20 @@ document.getElementById("userid").innerHTML = appUser.userName;
 你可以检查元素并在创建新对象后放置断点：
 
 ![](img/22525aec83cb16cb7664cd8d5c364721_161_0.png)
-图 6.3: 从工具中检查 appuser
+
+**图 6.3:** 从工具中检查 appuser
 
 下面的代码展示了公共和私有变量的使用，包括静态私有和公共变量：
 
-## 注意：
+### 注意
 
 正如你所猜的，构造函数是初始化对象的一种方式，但它是自动调用的。只有在类内部才能访问私有变量。
 
-## 封装
+### 封装
 
-封装是类将数据和方法封装成单个单元的机制，并提供了数据隐藏机制，将数据声明为私有并提供访问和更新数据的公共方法。默认情况下，变量是公共的。然而，你可以使用带有 `#` 前缀的变量，#` 是名称的一部分，将其作为私有变量使用并只能在类内部访问。
+封装是类将数据和方法封装成单个单元的机制，并提供了数据隐藏机制，将数据声明为私有并提供访问和更新数据的公共方法。默认情况下，变量是公共的。然而，你可以使用带有 `#` 前缀的变量，`#` 是名称的一部分，将其作为私有变量使用并只能在类内部访问。
 
-## 类
+### 类
 
 由于类可以被声明为表达式，这突显了在 JavaScript 中创建类就像评估一个表达式。`static` 关键字用于将方法标记为静态方法。例如，在下面的代码中，你可以利用 `create` 方法（这是一个静态方法）来创建 User 的实例：
 
@@ -3460,11 +3719,8 @@ class User {
         this.lastName = lastName;
         this.userId = userId;
         this.#email = emailId;
-    }
-
-    User.userCount++;
-
-    console.log('User Count = ' + User.userCount);
+        User.userCount++;
+        console.log('User Count = ' + User.userCount);
     }
 
     getUserName() {
@@ -3488,11 +3744,7 @@ appUser = new User("Alok", "Ranjan", "anjan");
 console.log( appUser.whoAmI() );
 ```
 
-
-
 ```javascript
-}
-}
 appUser = new User("Abhilasha", "Sinha");
 ```
 
@@ -3521,7 +3773,7 @@ console.log(anotherUser.whoAmI());
 
 与变量名类似，你可以在方法名之前添加哈希符号 `#` 来声明类的私有方法。
 
-## 继承
+### 继承
 
 继承是面向对象编程（OOP）中的一种机制，允许你基于现有类创建新类，从而获取现有类暴露的属性和方法。这提高了重用性，并在应用程序开发和维护过程中节省了精力和成本。以前 JavaScript 实现继承的方法比较复杂，现在可以使用 `extends` 关键字指示一个类派生自基类。
 
@@ -3534,9 +3786,7 @@ class User {
     this.lastName = lastName;
     this.userId = userId;
   }
-```
 
-```javascript
   getUserName() {
     return this.firstName + " " + this.lastName;
   }
@@ -3545,10 +3795,8 @@ class User {
     this.firstName = firstName;
     this.lastName = lastName;
   }
+}
 
-
-
-```
 class PowerUser extends User {
   constructor(firstName, lastName, userId, role) {
     super(firstName, lastName, userId);
@@ -3558,6 +3806,7 @@ class PowerUser extends User {
   getUserRole() {
     return this.role;
   }
+
   setRole(newRole) {
     this.role = newRole;
   }
@@ -3582,7 +3831,7 @@ console.log(appUser instanceof User);
 
 继承可以重用基类的定义并在此基础上构建特化的派生类。
 
-## 在构造函数中使用 super
+#### 在构造函数中使用 super
 
 派生类要求你使用 `super` 关键字以便调用父类的构造函数。这确实非常有意义，因为你不想在派生类中重复父类的初始化逻辑。特别是当你的类具有多个层级时（如下图所示），它似乎是一个巨大的救星：
 
@@ -3601,7 +3850,7 @@ console.log(appUser instanceof User);
 
 前述代码对于这两个语句都将返回 `true`，即对于基类和派生类都是如此。
 
-## 方法重写
+#### 方法重写
 
 默认情况下，基类的方法将以相同的行为对派生类可用。但在某些情况下，你可能想要更改派生自父类或基类的某些方法的的行为。这个过程被称为方法重写（method override）。
 
@@ -3614,13 +3863,16 @@ class User {
     this.lastName = lastName;
     this.userId = userId;
   }
+
   getUsername() {
     return this.firstName + " " + this.lastName;
   }
+
   changeName(firstName, lastName) {
     this.firstName = firstName;
     this.lastName = lastName;
   }
+
   whoAmI() {
     return "I am a User";
   }
@@ -3631,19 +3883,22 @@ class PowerUser extends User {
     super(firstName, lastName, userId);
     this.role = role;
   }
+
   getUserRole() {
     return this.role;
   }
+
   setRole(newRole) {
     this.role = newRole;
   }
+
   whoAmI() {
     return "I am a PowerUser";
   }
 }
 ```
 
-## 调用父函数
+#### 调用父函数
 
 当你处理面向对象的概念时，总是会问如何调用父类方法？在 JavaScript 中，你仍然使用 `super` 关键字以便从子类调用父类。例如，在下面的代码中将输出父类：
 
@@ -3659,12 +3914,12 @@ class PowerUser extends User {
     return super.whoAmI();
   }
 }
-```
 
 appUser = new PowerUser("Alok", "Ranjan", "aranjan", "Manager");
 console.log(appUser.whoAmI());
+```
 
-## 继承内置对象
+#### 继承内置对象
 
 在 JavaScript 中，你会遇到各种内置对象，它们帮助你管理编程的各个方面，例如集合（索引/键）、基础对象、反射、数字、文本、日期以及如 WebAssembly 和 Intl 等命名空间。你可能参考以下 URL 了解更多关于内置对象（也称为全局对象）：
 
@@ -3697,14 +3952,11 @@ console.log(mapInstance.get('as'));
 console.log(mapInstance.get('ps'));
 ```
 
-## 抽象
+### 抽象
 
-在 OOP 中，抽象允许你向用户隐藏不必要的细节，从而只暴露他们执行操作所需的细节
+在 OOP 中，抽象允许你向用户隐藏不必要的细节，从而只暴露他们执行操作所需的细节。
 
-
-它们的工作。
-
-与 JavaScript 等语言不同，我们没有对抽象提供直接支持。然而，你可以使用 `new.target` 来检查是否调用了特定的构造函数。在构造函数内部，当你检查 `new.target` 时，它指的是由 `new` 运算符调用的构造函数。因此，如果你不打算允许在该类的构造函数内部创建任何特定类的对象，你你需要检查 `new.target` 的值，如果它与类名匹配，则抛出异常。
+与 JavaScript 等语言不同，我们没有对抽象提供直接支持。然而，你可以使用 `new.target` 来检查是否调用了特定的构造函数。在构造函数内部，当你检查 `new.target` 时，它指的是由 `new` 运算符调用的构造函数。因此，如果你不打算允许在该类的构造函数内部创建任何特定类的对象，你需要检查 `new.target` 的值，如果它与类名匹配，则抛出异常。
 
 以下代码显示 `User` 类将不允许创建实例，而 `PowerUser` 类可以被用于创建 `user` 的实例：
 
@@ -3751,6 +4003,7 @@ class PowerUser extends User {
     return "I am a PowerUser";
   }
 }
+
 // abstractUser = new User("Alok", "Ranjan", "aranjan"); <<-
 // 调用此此从 User类的构造函数抛出异常。
 
@@ -3760,7 +4013,7 @@ console.log(appUser.whoAmI());
 
 虽然你可以通过这种方法实现某种程度的抽象，但 JavaScript 仍然没有提供完整的抽象机制。因此，从这个角度来看，JavaScript 的面向对象仍然是一个进行中的工作。
 
-## 结论
+### 结论
 
 以对象和对象之间的交互来思考始终是可视化和编写逻辑的一种极佳方式。在本章中，你学习了如何利用 JavaScript 的类系统来声明和使用类，并应用继承、重写、抽象等面向对象的概念。除了创建你自己的类之外，你还学习了扩展内置对象。
 
@@ -3768,45 +4021,45 @@ console.log(appUser.whoAmI());
 
 在下一章中，你将探索 JavaScript 的另一个方面 - 异步编程。你将从编程的角度理解“异步”一词的含义、JavaScript 运行时引擎的工作原理以及不同的 JavaScript 异步结构。
 
-## 问题
+### 问题
 
-- 1. ____ 符号用于在 JavaScript 中创建私有成员。
-  - A. $
-  - B. @
-  - C. #
-  - D. ~
+1. `____` 符号用于在 JavaScript 中创建私有成员。
+   - A. $
+   - B. @
+   - C. #
+   - D. ~
 
 **答案：选项 C**
 
-- 2. 标记有 `static` 关键字的方法将具有？
-  - A. 为每个从类创建的实例提供一个实例
-  - B. 一个使用 `new` 方法引用的单个实例
-  - C. 使用类名引用的单个实例
-  - D. 为每个使用 `this` 关键字引用的对象提供一个实例
+2. 标记有 `static` 关键字的方法将具有？
+   - A. 为每个从类创建的实例提供一个实例
+   - B. 一个使用 `new` 方法引用的单个实例
+   - C. 使用类名引用的单个实例
+   - D. 为每个使用 `this` 关键字引用的对象提供一个实例
 
 **答案：选项 C。**静态成员是类层面的单个实例，使用类名进行访问。
 
-- 3. ____ 是 OOP 中的一种机制，允许你基于现有的父类创建自己的类，并获取现有类暴露的属性和方法。
-  - A. 继承
-  - B. 封装
-  - C. 抽象
-  - D. 重写
+3. `____` 是 OOP 中的一种机制，允许你基于现有的父类创建自己的类，并获取现有类暴露的属性和方法。
+   - A. 继承
+   - B. 封装
+   - C. 抽象
+   - D. 重写
 
 **答案：选项 A。**
 
-- 4. ____ 关键字用于从扩展类的构造函数访问父类的构造函数。
-  - A. new
-  - B. extends
-  - C. super
-  - D. Parent
+4. `____` 关键字用于从扩展类的构造函数访问父类的构造函数。
+   - A. new
+   - B. extends
+   - C. super
+   - D. Parent
 
 **答案：选项 C。**
 
-- 5. 关于继承，以下哪项是正确的？
-  - A. 扩展类不能拥有与基类同名的方法
-  - B. 扩展类可以重写基类的方法
-  - C. 扩展类无法访问基类的构造函数
-  - D. 以上所有
+5. 关于继承，以下哪项是正确的？
+   - A. 扩展类不能拥有与基类同名的方法
+   - B. 扩展类可以重写基类的方法
+   - C. 扩展类无法访问基类的构造函数
+   - D. 以上所有
 
 **答案：选项 B。**
 
@@ -3814,44 +4067,42 @@ console.log(appUser.whoAmI());
 ## 异步 JS
 
 > 有时你与时代同步，有时你处于领先，有时你又迟到。
-> Bernardo Bertolucci
+> —— Bernardo Bertolucci
 
-在过去的几章中，你学习了 JavaScript 及其在函数式编程和面向对象编程的应用。在本章中，你将接触 JavaScript 及其运行时引擎的另一个重要特性。自从编程和计算机诞生以来，一直存在对优化的需求和追求，这不断将新的想法和新技术推向前沿。技术世界不断变化，无论是为了更好、更快、更高效，还是为了解决旧问题的全新事物。曾经存在过一个编程语言世界，通过多线程编程并行处理多个问题以更快地解决它们，但一直需要一种想法来避免由于长时间运行进程导致线程阻塞。如果线程无限地等待某个进程并最终超时，只会导致用户感到挫败，因为他们无法进行其他任何操作。这就是被……解决的基本问题。
+在过去的几章中，你学习了 JavaScript 及其在函数式编程和面向对象编程的应用。在本章中，你将接触 JavaScript 及其运行时引擎的另一个重要特性。自从编程和计算机诞生以来，一直存在对优化的需求和追求，这不断将新的想法和新技术推向前沿。技术世界不断变化，无论是为了更好、更快、更高效，还是为了解决旧问题的全新事物。曾经存在过一个编程语言世界，通过多线程编程并行处理多个问题以更快地解决它们，但一直需要一种想法来避免由于长时间运行进程导致线程阻塞。如果线程无限地等待某个进程并最终超时，只会导致用户感到挫败，因为他们无法进行其他任何操作。这就是被解决的基本问题。
 
-## 目标
+### 目标
 
 在本章结束时，你将学习什么是异步的含义，以及 JavaScript 如何处理它，包括不同的构造结构。
 
-## 结构
+### 结构
 
 在我们开始进入异步世界之旅之前，让我们首先理解它意味着什么。在任何编程语言中，我们假设代码是同步运行的。
 
-## JavaScript 中的异步
+#### JavaScript 中的异步
 
 异步编程是一种编程方式，其中操作可能需要较长时间才能完成，而不是让整个执行等待操作完成，它们可以在后台运行，并在完成后发送响应。这促进了更好的使用和更短的等待时间。
 
-## JavaScript 中的异步
+#### JavaScript 中的异步结构
 
 - 回调
 - Promise
 - Async/await
 
-## JavaScript 运行时
+#### JavaScript 运行时
 
 单线程同步执行：这精确定义了 JavaScript 处理执行的方式。JavaScript 引擎是获取执行 JavaScript 代码的程序。从最初由解释器执行 JavaScript，到现在的许多高效的引擎，JavaScript 已经走了很远。
 
 让我们先学习 JavaScript 运行时的不同部分，以更简单的方式理解代码执行。运行时包含以下部分：
 
 1. **JavaScript 引擎**负责 JS 代码执行，包含：
-  - **内存堆 (Memory Heap)**：引擎中为执行代码的变量和函数分配内存的部分。
-  - **调用栈 (Call Stack)**：单线程栈，每个执行上下文都会堆栈在这里。事件循环持续检查调用栈（这是一个后进先出的 LIFO 队列），查看是否有函数要执行。它会将执行过程中遇到的任何函数都添加到调用栈中，并按 LIFO 顺序执行每一个。
+   - **内存堆 (Memory Heap)**：引擎中为执行代码的变量和函数分配内存的部分。
+   - **调用栈 (Call Stack)**：单线程栈，每个执行上下文都会堆栈在这里。事件循环持续检查调用栈（这是一个后进先出的 LIFO 队列），查看是否有函数要执行。它会将执行过程中遇到的任何函数都添加到调用栈中，并按 LIFO 顺序执行每一个。
 2. **Web APIs** 位于浏览器中但不是 JS 引擎的一部分。它们是运行时环境的一部分，包括异步操作，如 `setTimeout()` 函数、DOM 操作方法、用于 AJAX 的 `XMLHttpRequest`、地理位置、本地存储。
 3. **回调/消息队列 (Callback/Message Queue)** 是一个队列，与异步调用相关的回调在异步操作完成后会被推入队列。回调由事件循环选取进行执行，并在调用栈为空时推入执行。
 4. **事件循环 (Event Loop)** 是始终运行并检查调用栈以查看是否有帧要执行的部分，它进行执行执行。如果调用栈为空，它接下来会检查回调队列查看是否有回调在等待执行。如果可用，它从消息队列中提取回调并推入调用栈执行。
 
 以下图描述了 JavaScript 运行时引擎的各个组件：
-
-
 
 ![](img/22525aec83cb16cb7664cd8d5c364721_177_0.png)
 
@@ -3867,6 +4118,7 @@ const firstFn = () => {
   secondFn();
   console.log('3. This is the end of first function');
 }
+
 firstFn();
 ```
 
@@ -3881,7 +4133,7 @@ firstFn();
 
 在这个同步示例中，语句按照它们出现的顺序完成，如下图所示：
 
-## 调用栈（CALL STACK） - 同步
+##### 调用栈（CALL STACK） - 同步
 
 ![](img/22525aec83cb16cb7664cd8d5c364721_178_0.png)
 
@@ -3926,11 +4178,9 @@ firstFn();
 - 现在， 3 秒过去后，定时器从 Web API 消失，关联的回调函数被移动到消息队列（Message Queue）。它会等待执行栈为空以便被事件循环拾取。
 - 事件循环会不断监控消息队列和执行栈。当执行栈为空时，它将回调从消息队列推送到执行栈上。因此，创建了回调执行上下文，并执行了 `console log`，执行完成后移出栈外：
 
-
-
 ![](img/22525aec83cb16cb7664cd8d5c364721_180_0.png)
 
-图 7.4: 异步代码的运行时，输出将如下
+**图 7.4:** 异步代码的运行时，输出将如下
 
 现在如果你在浏览器控制台中执行上述代码，由于异步 `setTimeout`，最后一条日志将在延迟后出现：
 
@@ -3939,11 +4189,11 @@ firstFn();
 > undefined
 - 2. This is the second function
 
-图 7.5: 异步代码的控制台输出及其呈现方式
+**图 7.5:** 异步代码的控制台输出及其呈现方式
 
 既然你已经理解了异步行为及其必要性，以及它是如何被 JS 引擎处理的，在接下来的章节中，你将学习 JavaScript 中不同的异步结构。
 
-## 回调函数（Callbacks）
+#### 回调函数（Callbacks）
 
 异步编程确保程序的主线程不会等待长时间运行的过程完成。处理异步行为的最基本的解决方案是**异步回调**（Asynchronous Callbacks）。回调函数是传递给异步函数的参数。回调函数包含了在异步函数完成后要执行的逻辑：
 
@@ -3974,9 +4224,7 @@ const printAddr = (string, callback) => {
     callback();
   }, 2000);
 };
-```
 
-```javascript
 const getAddress = () => {
   printAddr("121 Worcester Rd", () => {
     printAddr("Fairhaven", () => {
@@ -3984,6 +4232,7 @@ const getAddress = () => {
     });
   });
 }
+
 getAddress();
 ```
 
@@ -4005,18 +4254,15 @@ const makeAPizza = () => {
     }
   }
 }
+
 myPizza = makeAPizza();
 ```
 
 在这里，每个异步步骤（因为它们需要时间）在继续下一个步骤之前应该完成。
 
-## 承诺（Promises）
+#### 承诺（Promises）
 
 Promise 是 ES6 中对 JavaScript最重要的增强之一。我们将在下一章节学习其他 ES6 变化，即第 8 章《ES2019 JavaScript 新特性》。
-
-
-
-
 
 Promise 与回调函数（callbacks）相比，其处理异步行为的方式要整洁得多。
 
@@ -4041,7 +4287,7 @@ Promise 与某个正在耗时的活动相关，它在等待响应的过程中会
 Promise 的不同状态包括：
 
 - **Pending（待定）**：当 Promise 等待事件完成时，该 Promise 处于 pending 状态。
-- **Settled/Resolved（已就绪/已）**：一旦异步事件完成，Promise 接收到了结果，即被称为 settled 或 resolved。根据接收到的结果类型，Promise 被称为：
+- **Settled/Resolved（已就绪/已解决）**：一旦异步事件完成，Promise 接收到了结果，即被称为 settled 或 resolved。根据接收到的结果类型，Promise 被称为：
   - **Fulfilled（已履行）**：当事件成功完成、Promise 成功且响应可用时，它被称为 fulfilled。
   - **Rejected（已拒绝）**：如果在此过程中发生错误，则 Promise 被称为 rejected。
 
@@ -4100,7 +4346,7 @@ myNewPromise.then((success) => {
 
 ```javascript
 const printAddr = (string) => {
-  const promise=new Promise((resolve) => {
+  const promise = new Promise((resolve) => {
     setTimeout(() => {
       console.log(string);
       resolve(string);
@@ -4108,6 +4354,7 @@ const printAddr = (string) => {
   });
   return promise;
 }
+
 getAddress = () => {
   printAddr("121 Worcester Rd").then(() => {
     return printAddr("Fairhaven");
@@ -4117,12 +4364,15 @@ getAddress = () => {
     console.log(err);
   });
 }
+
 getAddress();
 ```
 
 这个示例展示了如何处理异步行为。
 
+#### Async/Await
 
+Async/await 是 ES2017 (ES8) 中引入的语法糖，它让异步代码看起来更像同步代码，更易于阅读和维护。`async` 关键字用于声明一个异步函数，`await` 关键字用于等待 Promise 完成。
 
 ```javascript
 async function asyncTaskSynchronously () {
@@ -4134,11 +4384,11 @@ async function asyncTaskSynchronously () {
 
 这种行为方式是同步的，因为每一步都依赖于上一步的结果，并且无法继续。
 
-你可以考虑使用其他可能的方法来编写它，无疑疑问没有比这更简单的！
+你可以考虑使用其他可能的方法来编写它，毫无疑问没有比这更简单的！
 
-## 场景 2 – 异步内部的并行执行
+##### 场景 2 – 异步内部的并行执行
 
-函数 firstFn、函数 secondFn 和函数 thirdFn 返回 promise，然后该函数返回由 firstFn、secondFn 和 thirdFn 返回的所有值，以便进行后续计算。firstFn、secondFn 和 thirdFn 函数之间没有内部依赖关系，它们应该并行运行，以避免任何不必要的等待时间。
+函数 `firstFn`、`secondFn` 和 `thirdFn` 返回 promise，然后该函数返回由 `firstFn`、`secondFn` 和 `thirdFn` 返回的所有值，以便进行后续计算。`firstFn`、`secondFn` 和 `thirdFn` 函数之间没有内部依赖关系，它们应该并行运行，以避免任何不必要的等待时间。
 
 下面的示例代码展示了如何使用 async-await 在异步内部实现并行执行：
 
@@ -4152,9 +4402,9 @@ async function asyncTaskParallely () {
 
 每当你想要并行运行异步操作而不会引起任何阻塞和中间等待时间时，你应该始终将它们封装在 `Promise.all()` 中。这把 async-await 的强大与 promises 结合在一起。
 
-## 场景 3 – 类异步
+##### 场景 3 – 类异步
 
-类 myClass 有一个函数 firstFn，它是异步的并返回一个 promise。下一部分代码展示了类中 async-await 的示例。
+类 `myClass` 有一个函数 `firstFn`，它是异步的并返回一个 promise。下一部分代码展示了类中 async-await 的示例。
 
 ```javascript
 class myClass {
@@ -4167,12 +4417,12 @@ class myClass {
 ```javascript
 new myClass()
 .firstFn()
-.then(alert); // 'first resolved
+.then(alert); // 'first resolved'
 ```
 
 Await 可以与任何异步函数调用一起使用。它应该在使用 async 定义的函数内部使用。在包含在 async 函数内部的情况下，await 关键字不能直接在顶层使用。
 
-## 场景 4 – async-await 的错误处理
+##### 场景 4 – async-await 的错误处理
 
 async-await 块中的错误处理可以像处理 promise 一样使用 `try...catch` 块完成，如下所示：
 
@@ -4190,31 +4440,29 @@ try {
 
 除了使用 `try...catch`，还可以使用总的 catch 来处理，如：
 
-asyncFnCall ().catch(alert);
+`asyncFnCall ().catch(alert);`
 
 如果你忘记通过在此处包含 `.catch` 来显式地处理错误，你将在控制台中得到一个未处理的 promise 错误。
 
-## 场景 5 – 异步处理数组
+##### 场景 5 – 异步处理数组
 
 处理项数组需要特别注意，在处理数组的每个项时，它应该以同步还是异步方式运行。让我们来看一个示例，执行一组异步操作，通过读取一组文件并记录数据。
 
-- * 使用 async/await 顺序执行异步操作的方法如下：
+- 使用 async/await 顺序执行异步操作的方法如下：
 ```javascript
 async function printFiles() {
   const files = await getFilePaths()
-}
-
-for (let file of files) {
-  const contents = await fs.readFile(file, 'utf8');
-  console.log(contents);
+  for (let file of files) {
+    const contents = await fs.readFile(file, 'utf8');
+    console.log(contents);
+  }
 }
 ```
 
-- * 以并行方式执行读取文件等一组异步操作可以如下所示：
+- 以并行方式执行读取文件等一组异步操作可以如下所示：
 ```javascript
 async function printFiles() {
   const files = await getFilePaths();
-
   await Promise.all(files.map(async (file) => {
     const contents = await fs.readFile(file, 'utf8')
     console.log(contents)
@@ -4224,7 +4472,7 @@ async function printFiles() {
 
 你已经看到了如何使用 async-await 通过编写更少、更简单的代码来处理异步行为的不同场景。你应该仔细理解你想要如何使用它，尽可能利用并行执行并减少不必要的等待时间。
 
-## 结论
+### 结论
 
 在本章中，你学习了异步性的概念，以及在 JavaScript 中如何使用回调、promises 和 async-await 结构来处理异步行为。每当任务需要不确定的时间时，应该以异步方式处理，而不是让线程等待任务完成并阻塞整个流程。
 
@@ -4232,332 +4480,65 @@ async function printFiles() {
 
 在下一章中，你将学习一些最近且重要的 ECMAS 更改，这些更改为 JavaScript 增加了额外的功能，特别是 ECMA 版本、ES6 和 ES9。这些新增让 JavaScript 更加强大。
 
-## 问题
+### 问题
 
-- 1. await 可以在没有 async 的情况下使用以指示异步函数调用。
+1. await 可以在没有 async 的情况下使用以指示异步函数调用。
+   - A. 正确
+   - B. 错误
 
-  A. 正确
-  B. 错误
-
-答案 B。
+**答案 B。**
 await 不能在没有 async 的情况下使用以指示异步函数调用。它只能在标记为 async 的函数中使用。
 
-- 2. promise 在等待和稍后完成后会改变状态。不同的状态是哪些？
+2. Promise 在等待和稍后完成后会改变状态。不同的状态是哪些？
+   - A. pending, fulfilled, rejected
+   - B. pending, succeeded, errored
+   - C. waiting, fulfilled, rejected
+   - D. Promise 没有任何状态。
 
-- A. pending, fulfilled, rejected
-  B. pending, succeeded, errored
-  C. waiting, fulfilled, rejected
-  D. Promise 没有任何状态。
-
-## 答案 A。
-
+**答案 A。**
 Promise 在等待事件完成时处于 pending 状态，在成功完成时处于 fulfilled 状态，在错误完成时处于 rejected 状态。
 
-- 3. ____ 是运行时环境的一部分，以及异步操作如 setTimeout() 函数、DOM 操作方法。
+3. `____` 是运行时环境的一部分，以及异步操作如 `setTimeout()` 函数、DOM 操作方法。
+   - A. 堆栈 (Call stack)
+   - B. Web APIs
+   - C. 消息队列 (Message queue)
+   - D. 事件循环 (Event loop)
 
-- A. 堆栈 (Call stack)
-  B. Web APIs
-  C. 消息队列 (Message queue)
-  D. 事件循环 (Event loop)
+**答案 B。**
+Web APIs 位于浏览器中，但不是 JS 引擎的一部分。它们是运行时环境的一部分，包含了异步操作如 `setTimeout()` 函数、DOM 操作方法。
 
-## 答案 B。
+4. `firstFn`、`secondFn` 和 `thirdFn` 返回 promise，然后该函数返回 `firstFn`、`secondFn` 和 `thirdFn` 返回的所有值，以便进行后续计算。`firstFn`、`secondFn` 和 `thirdFn` 函数之间没有内部依赖关系，它们应该并行运行，以避免任何不必要的等待时间。
 
-Web APIs 位于浏览器中，但不是 JS 引擎的一部分。它们是运行时环境的一部分，包含了异步操作如 setTimeout() 函数、DOM 操作方法。
+# 第 8 章
+## ES2019 JavaScript 新特性
 
-- 4. firstFn、secondFn 和 thirdFn 返回 promise，然后该函数返回 firstFn、secondFn 和 thirdFn 返回的所有值以便进行进一步计算。firstFn、secondFn 和 thirdFn 函数之间没有内部依赖关系，它们应该并行运行以避免任何不必要的等待时间。
+> 变化是生活的法则。那些只着眼于过去或现在的人，肯定会错过未来。
+> —— 约翰·F·肯尼迪
 
-下面的示例代码展示了如何使用 async-await 在异步内部实现并行执行：
+JavaScript 语言一直在不断发展，ECMAScript 规范每年都会发布新版本。本章将介绍 ES6 (ES2015) 及后续版本中引入的重要特性，这些特性让 JavaScript 更加强大和易用。
 
-```javascript
-async function asyncTaskParallely () {
-  const [ value1, value2, value3 ] = await Promise.all([ firstFn,
-  secondFn(), thirdFn() ])
-  fourth(value1,value2,value3)
-}
-```
-
-每当你想要并行运行异步操作而不会引起任何阻塞和中间等待时间时，你应该始终将它们封装在 `Promise.all()` 中。这把 async-await 的强大与 promises 结合在一起。
-
-- 场景 3 – 类异步
-
-class myClass 有一个函数 firstFn，它是异步的并返回一个 promise。下一部分代码展示了类中 async-await 的示例。
-
-```javascript
-class myClass {
-  async firstFn() {
-    return await Promise.resolve('first resolved');
-  }
-}
-```
-
-```javascript
-new myClass()
-.firstFn()
-.then(alert); // 'first resolved
-```
-
-Await 可以与任何异步函数调用一起使用。它应该在使用 async 定义的函数内部使用。在包含在 async 函数内部的情况下，await 关键字不能直接在顶层使用。
-
-- 场景 4 – async-await 的错误处理
-
-async-await 块中的错误处理可以像处理 promise 一样使用 `try...catch` 块完成，如下所示：
-
-```javascript
-const asyncFnCall = async () => {
-try {
-  const data = JSON.parse(await getJSON())
-  const another = await getData(data)
-  console.log(data, another)
-} catch (err) {
-  console.log(err)
-}
-}
-```
-
-除了使用 `try...catch`，还可以使用总的 catch 来处理，如：
-
-asyncFnCall ().catch(alert);
-
-如果你忘记通过在此处包含 `.catch` 来显式地处理错误，你将在控制台中得到一个未处理的 promise 错误。
-
-- 场景 5 – 异步处理数组
-
-处理项数组需要特别注意，在处理数组的每个项时，它应该以同步还是异步方式运行。让我们来看一个示例，执行一组异步操作，通过读取一组文件并记录数据。
-
-- * 使用 async/await 顺序执行异步操作的方法如下：
-```javascript
-async function printFiles() {
-  const files = await getFilePaths()
-}
-
-for (let file of files) {
-  const contents = await fs.readFile(file, 'utf8');
-  console.log(contents);
-}
-```
-
-- * 以并行方式执行读取文件等一组异步操作可以如下所示：
-```javascript
-async function printFiles() {
-  const files = await getFilePaths();
-
-  await Promise.all(files.map(async (file) => {
-    const contents = await fs.readFile(file, 'utf8')
-    console.log(contents)
-  }));
-}
-```
-
-你已经看到了如何使用 async-await 通过编写更少、更简单的代码来处理异步行为的不同场景。你应该仔细理解你想要如何使用它，尽可能利用并行执行并减少不必要的等待时间。
-
-## 结论
-
-在本章中，你学习了异步性的概念，以及在 JavaScript 中如何使用回调、promises 和 async-await 结构来处理异步行为。每当任务需要不确定的时间时，应该以异步方式处理，而不是让线程等待任务完成并阻塞整个流程。
-
-在介绍了 JavaScript 编程的不同方面（函数式、面向对象和使用异步结构），你可以以最有效的方式构建你的代码。
-
-在下一章中，你将学习一些最近且重要的 ECMAS 更改，这些更改为 JavaScript 增加了额外的功能，特别是 ECMA 版本、ES6 和 ES9。这些新增让 JavaScript 更加强大。
-
-## 问题
-
-- 1. await 可以在没有 async 的情况下使用以指示异步函数调用。
-
-  A. 正确
-  B. 错误
-
-答案 B。
-await 不能在没有 async 的情况下使用以指示异步函数调用。它只能在标记为 async 的函数中使用。
-
-- 2. The promise 在等待和稍后完成后会改变状态。不同的状态是哪些？
-
-- A. pending, fulfilled, rejected
-  B. pending, succeeded, errored
-  C. waiting, fulfilled, rejected
-  D. Promise 没有任何状态。
-
-## 答案 A。
-
-Promises 在等待事件完成时处于 pending 状态，在成功完成时处于 fulfilled 状态，在错误完成时处于 rejected 状态。
-
-- 3. ____ 是运行时环境的一部分，以及异步操作如 setTimeout() 函数、DOM 操作方法。
-
-- A. 堆栈 (Call stack)
-  B. Web APIs
-  C. 消息队列 (Message queue)
-  D. 事件循环 (Event loop)
-
-## 答案 B。
-
-Web APIs 位于浏览器中，但不是 JS 引擎的一部分。它们是运行时环境的一部分，包含了异步操作如 setTimeout() 函数、DOM 操作方法。
-
-- 4. firstFn、secondFn 和 thirdFn 返回 promise，然后该函数返回 firstFn、secondFn 和 thirdFn 返回的所有值，以便进行后续计算。firstFn、secondFn 和 thirdFn 函数之间没有内部依赖关系，它们应该并行运行，以避免任何不必要的等待时间。
-
-（同步方式）
-
-这种行为方式是同步的，因为每一步都依赖于上一步的结果，并且无法继续。
-
-你可以考虑使用其他可能的方法来编写它，无疑疑问没有比这更简单的！
-
-## 场景 2 – 异步内部的并行执行
-
-函数 firstFn、函数 secondFn 和函数 thirdFn 返回 promise，然后该函数返回 firstFn、secondFn 和 thirdFn 返回的所有值，以便进行后续计算。firstFn、secondFn 和 thirdFn 函数之间没有内部依赖关系，它们应该并行运行，以避免任何不必要的等待时间。
-
-下面的示例代码展示了如何使用 async-await 在异步内部实现并行执行：
-
-```javascript
-async function asyncTaskParallely () {
-  const [ value1, value2, value3 ] = await Promise.all([ firstFn,
-  secondFn(), thirdFn() ])
-  fourth(value1,value2,value3)
-}
-```
-
-每当你想要并行运行异步操作而不会引起任何阻塞和中间等待时间时，你应该始终将它们封装在 `Promise.all()` 中。这把 async-await 的强大与 promises 结合在一起。
-
-## 场景 3 – 类异步
-
-class myClass 有一个函数 firstFn，它是异步的并返回一个 promise。下一部分代码展示了类中 async-await 的示例。
-
-```javascript
-class myClass {
-  async firstFn() {
-    return await Promise.resolve('first resolved');
-  }
-}
-```
-
-```javascript
-new myClass()
-.firstFn()
-.then(alert); // 'first resolved
-```
-
-Await 可以与任何异步函数调用一起使用。它应该在使用 async 定义的函数内部使用。在包含在 async 函数内部的情况下，await 关键字不能直接在顶层使用。
-
-## 场景 4 – async-await 的错误处理
-
-async-await 块中的错误处理可以像处理 promise 一样使用 `try...catch` 块完成，如下所示：
-
-```javascript
-const asyncFnCall = async () => {
-try {
-  const data = JSON.parse(await getJSON())
-  const another = await getData(data)
-  console.log(data, another)
-} catch (err) {
-  console.log(err)
-}
-}
-```
-
-除了使用 `try...catch`，还可以使用总的 catch 来处理，如：
-
-asyncFnCall ().catch(alert);
-
-如果你忘记通过在此处包含 `.catch` 来显式地处理错误，你将在控制台中得到一个未处理的 promise 错误。
-
-## 场景 5 – 异步处理数组
-
-处理项数组需要特别注意，在处理数组的每个项时，它应该以同步还是异步方式运行。让我们来看一个示例，执行一组异步操作，通过读取一组文件并记录数据。
-
-- * 使用 async/await 顺序执行异步操作的方法如下：
-```javascript
-async function printFiles() {
-  const files = await getFilePaths()
-}
-
-for (let file of files) {
-  const contents = await fs.readFile(file, 'utf8');
-  console.log(contents);
-}
-```
-
-- * 以并行方式执行读取文件等一组异步操作可以如下所示：
-```javascript
-async function printFiles() {
-  const files = await getFilePaths();
-
-  await Promise.all(files.map(async (file) => {
-    const contents = await fs.readFile(file, 'utf8')
-    console.log(contents)
-  }));
-}
-```
-
-你已经看到了如何使用 async-await 通过编写更少、更简单的代码来处理异步行为的不同场景。你应该仔细理解你想要如何使用它，尽可能利用并行执行并减少不必要的等待时间。
-
-## 结论
-
-在本章中，你学习了异步性的概念，以及在 JavaScript 中如何使用回调、promises 和 async-await 结构来处理异步行为。每当任务需要不确定的时间时，应该以异步方式处理，而不是让线程等待任务完成并阻塞整个流程。
-
-在介绍了 JavaScript 编程的不同方面（函数式、面向对象和使用异步结构），你可以以最有效的方式构建你的代码。
-
-在下一章中，你将学习一些最近且重要的 ECMAS 更改，这些更改为 JavaScript 增加了额外的功能，特别是 ECMA 版本、ES6 和 ES9。这些新增让 JavaScript 更加强大。
-
-## 问题
-
-- 1. await 可以在没有 async 的情况下使用以指示异步函数调用。
-
-  A. 正确
-  B. 错误
-
-答案 B。
-await 不能在没有 async 的情况下使用以指示异步函数调用。它只能在标记为 async 的函数中使用。
-
-- 2. The promise 在等待和稍后完成后会改变状态。不同的状态是哪些？
-
-- A. pending, fulfilled, rejected
-  B. pending, succeeded, errored
-  C. waiting, fulfilled, rejected
-  D. Promise 没有任何状态。
-
-## 答案 A。
-
-Promises 在等待事件完成时处于 pending 状态，在成功完成时处于 fulfilled 状态，在错误完成时处于 rejected 状态。
-
-- 3. ____ 是运行时环境的一部分，以及异步操作如 setTimeout() 函数、DOM 操作方法。
-
-- A. 堆栈 (Call stack)
-  B. Web APIs
-  C. 消息队列 (Message queue)
-  D. 事件循环 (Event loop)
-
-## 答案 B。
-
-Web APIs 位于浏览器中，但不是 JS 引擎的一部分。它们是运行时环境的一部分，包含了异步操作如 setTimeout() 函数、DOM 操作方法。
-
-- 4. firstFn、secondFn 和 thirdFn 返回 promise，然后该函数返回 firstFn、secondFn 和 thirdFn 返回的所有值，以便进行后续计算。firstFn、secondFn 和 thirdFn 函数之间没有内部依赖关系，它们应该并行运行，以避免任何不必要的等待时间。
-
-（此处由于原文重复，翻译已按要求去重处理）
-
-
-
-
-
-## 箭头函数的威力
+### 箭头函数的威力
 
 一个备受期待的特性，它解决了与 `this` 关键字闭包的所有问题——箭头函数。它让代码更加紧凑、易于阅读和理解。
 
 箭头函数的语法变体如下：
 
 ```javascript
-// 无参数且单条语句，即
-// 自动返回的值，无需 return 关键字
-const functionName = ()=>console.log('Learning JS');
+// 无参数且单条语句，即自动返回的值，无需 return 关键字
+const functionName = () => console.log('Learning JS');
 functionName(); // Learning JS
 ```
 
 ```javascript
 // n1, n2, n3...参数和单条返回语句
-const sumFn = (n1, n2, n3) => n1+n2+n3;
+const sumFn = (n1, n2, n3) => n1 + n2 + n3;
 sumFn(1, 2, 3);  // 6
 ```
 
 ```javascript
-// n1, n2, n3...参数以及在 {} 内部的多行代码
-// 以及显式的返回语句
+// n1, n2, n3...参数以及在 {} 内部的多行代码以及显式的返回语句
 const longSumFn = (n1, n2, n3) => {
-  const sum = n1+n2+n3;
+  const sum = n1 + n2 + n3;
   return sum;
 }
 longSumFn(1, 2, 3);  // 6
@@ -4595,42 +4576,42 @@ const greetFn = message => 'JavaScript';
 console.log(greetFn('Hello '));
 ```
 
-图 8.2：箭头函数的控制台输出
+**图 8.2：** 箭头函数的控制台输出
 
-我们在第 4 章节“JavaScript 编程——让应用程序交互”中看到过处理数组时的箭头函数的用法，即在数组上使用 `map`、`filter` 和 `reduce` 等函数。
+我们在第 4 章“JavaScript 编程——让应用程序交互”中看到过处理数组时的箭头函数的用法，即在数组上使用 `map`、`filter` 和 `reduce` 等函数。
 
 可以使用箭头函数的简短语法（单行）进行快速回顾：
 
 ```javascript
-let num=[10,20,30];
-square=num.map((n,index)=>n*n);
+let num = [10, 20, 30];
+square = num.map((n, index) => n * n);
 console.log(square);
-▷ [100, 400, 900]
+// ▷ [100, 400, 900]
 
-let num1=[10,20,30];
-square=num1.reduce((sum,n)=>sum + n*n);
+let num1 = [10, 20, 30];
+square = num1.reduce((sum, n) => sum + n * n);
 console.log(square);
-1310
+// 1310
 
-let num2=[10,20,30,40,50,60];
-filtered=num2.filter((num)=>num>=30);
+let num2 = [10, 20, 30, 40, 50, 60];
+filtered = num2.filter((num) => num >= 30);
 console.log(filtered);
-▷ [30, 40, 50, 60]
+// ▷ [30, 40, 50, 60]
 ```
 
-图 8.3：使用箭头函数显示 map、reduce 和 filter 的示例
+**图 8.3：** 使用箭头函数显示 map、reduce 和 filter 的示例
 
-## 处理字符串
+### 处理字符串
 
 ES6 带来了一些新的字符串方法，使得某些字符串操作变得简单，如下：
 
-- boolean startsWith(string)
-- boolean ends(string)
-- boolean includes(string)
-- string repeat(count)
+- `boolean startsWith(string)`
+- `boolean endsWith(string)`
+- `boolean includes(string)`
+- `string repeat(count)`
 
 ```javascript
-> const myString='Welcome to the world of JavaScript';
+> const myString = 'Welcome to the world of JavaScript';
 < undefined
 > myString.startsWith('Welcome');
 < true
@@ -4644,11 +4625,11 @@ ES6 带来了一些新的字符串方法，使得某些字符串操作变得简�
 < "Welcome to the world of JavaScriptWelcome to the world of JavaScript"
 ```
 
-图 8.4：ES6 新字符串方法的示例
+**图 8.4：** ES6 新字符串方法的示例
 
-## 模板字符串
+### 模板字符串
 
-谈到字符串，处理字符串时的另一个新新特性是模板字符串。在传统的 JS 中，如果我们必须在字符串中包含变量，我们将使用 `+` 进行拼接，如下所示：
+谈到字符串，处理字符串时的另一个新特性是模板字符串。在传统的 JS 中，如果我们必须在字符串中包含变量，我们将使用 `+` 进行拼接，如下所示：
 
 ```javascript
 const name = 'JS';
@@ -4657,7 +4638,7 @@ const message = 'Welcome to the world of ' + name + '! ' + name + ' is exciting'
 
 你可以想象如果变量的大小和数量增加，会有多么痛苦。模板字符串提供了一种更简洁的方法来进行这种带变量拼接。
 
-整个字符串位于反引号（` ```）中，变量通过 `${variable}` 语法作为插值嵌入。
+整个字符串位于反引号（`` ` ``）中，变量通过 `${variable}` 语法作为插值嵌入。
 
 代码如下：
 
@@ -4680,120 +4661,30 @@ ${name} is exciting`;
 > message = `Welcome to the world of ${name}!
 ${name} is exciting`;
 > 'Welcome to the world of JS!JS is exciting!'
-Figure 8.5：使用模板字符串的示例
+```
 
-## 处理参数
+**图 8.5：** 使用模板字符串的示例
+
+### 处理参数
 
 ES6 提供了在函数中提供默认值的能力。参数的默认值可以使用等号（`=`）给出。当通过为参数提供值调用函数时，将使用提供的值；但如果没有向参数传递值，则将使用默认值。
 
 ```javascript
-function myFunction(num1, num2=10) {
-  return num1+num2;
+function myFunction(num1, num2 = 10) {
+  return num1 + num2;
 }
-MyFunction(num1, num2=10); // 注意：此处原文为 MyFunction，应为 myFunction
 ```
-（注：此处原文中 MyFunction 大小写不一致，翻译保留原文，但根据逻辑应为 `provided value is used, but no value is passed to the parameter`）
 
 ```javascript
-function myFunction(num1, num2=10) {
-  return num1+num2;
-}
+myFunction(5); // 15 (使用默认值 10)
+myFunction(5, 20); // 25 (使用提供的值 20)
 ```
-（注：原文 `MyFunction(num1, num2=10)` 处似乎有笔误，此处逻辑为调用函数示例）
 
-```javascript
-function myFunction(num1, num2=10) {
-  return num1+num2;
-}
-```
-当通过为参数提供值调用函数时，将使用提供的值；但如果没有向参数传递值，则将使用默认值。
+### 剩余参数
 
-```javascript
-function myFunction(num1, num2=10) {
-  return num1+num2;
-}
-```
-（注：原文 `MyFunction(num1, num2=10)` 处似乎有笔误，此处逻辑为调用函数示例）
+ES6 允许你使用 `...` 语法来处理剩余参数，如下所示：
 
-```javascript
-function myFunction(num1, num2=10) {
-  return num1+num2;
-}
-```
-当通过为参数提供值调用函数时，将使用提供的值；但如果没有向参数传递值，则将使用默认值。
-
-```javascript
-function myFunction(num1, num2=10) {
-  return num1+num2;
-}
-```
-（注：原文 `MyFunction(num1, num2=10)` 处似乎有笔误，此处逻辑为调用函数示例）
-
-```javascript
-function myFunction(num1, num2=10) {
-  return num1+num2;
-}
-```
-（注：原文 `MyFunction(num1, num2=10)` 处似乎有笔误，此处逻辑为调用函数示例）
-
-```javascript
-function myFunction(num1, num2=10) {
-  return num1+num2;
-}
-```
-（注：原文 `MyFunction(num1, num2=10)` 处似乎有笔误，此处逻辑为调用函数示例）
-
-```javascript
-function myFunction(num1, num2=10) {
-  return num1+num2;
-}
-```
-（注：原文 `MyFunction(num1, num2=10)` 处似乎有笔误，此处逻辑为调用函数示例）
-
-```javascript
-function myFunction(num1, num2=10) {
-  return num1+num2;
-}
-```
-（注：原文 `MyFunction(num1, num2=10)` 处似乎有笔误，此处逻辑为调用函数示例）
-
-```javascript
-function myFunction(num1, num2=10) {
-  return num1+num2;
-}
-```
-（注：原文 `MyFunction(num1, num2=10)` 处似乎有笔误，此处逻辑为调用函数示例）
-
-*重新整理并翻译该段重复逻辑部分：*
-
-```javascript
-function myFunction(num1, num2=10) {
-  return num1+num2;
-}
-```
-当通过为参数提供值调用函数时，将使用提供的值；但如果没有向参数传递值，则将使用默认值。
-
-```javascript
-function myFunction(num1, num2=10) {
-  return num1+num2;
-}
-```
-（注：原文中存在大量重复段落，已按要求翻译并保持逻辑）
-
-## 剩余参数
-
-ES6 提供了在函数中提供默认值的能力。参数的默认值可以使用等号（`=`）给出。当通过为参数提供值调用函数时，将使用提供的值；但如果没有向参数传递值，则将使用默认值。
-
-```javascript
-function myFunction(num1, num2=10) {
-  return num1+num2;
-}
-```
-（注：原文此处存在逻辑重复，翻译已对应）
-
-`...` ES6 允许你使用 `...` 语法来处理剩余参数，如下所示：
-
-图 8.6：剩余参数的示例
+**图 8.6：** 剩余参数的示例
 
 ```javascript
 function RestFn(num1, ...nums) {
@@ -4802,7 +4693,7 @@ function RestFn(num1, ...nums) {
 RestFn(10, 20, 30); // 10 [20, 30]
 ```
 
-## Symbol
+### Symbol
 
 这种新的原始数据类型是 ES6 的一部分。Symbol 总是生成一个唯一的值，可以如下使用：
 
@@ -4812,7 +4703,7 @@ let objSym = {};
 objSym[CONSTANT] = 10; // 10
 ```
 
-## 展开运算符
+### 展开运算符
 
 展开运算符 `...` 非常有用，它用于展开数组元素并将其应用于函数参数、数组或任何需要的地方：
 
@@ -4822,7 +4713,7 @@ let arr2 = [5, 6];
 let arr3 = [...arr1, 8, ...arr2]; // [1, 2, 3, 4, 8, 5, 6]
 ```
 
-# 解构
+### 解构
 
 解构是从数组和对象中提取数据的另一种有用方法。解构语法在左侧定义要从源变量解包的值：
 
@@ -4831,11 +4722,13 @@ let arr1 = ['A', 12];
 const [name, age] = arr1; // 解构为 name 和 age。
 console.log(name); // A
 console.log(age); // 12
+
 // 在解构时提供默认值，当从数组解包的值为 `undefined` 时。
 // 也可以通过提供占位符逗号忽略某些值
 const [name = 'A', age = 12] = ['A', 'R', 12];
 console.log(name);
 console.log(age);
+
 // 值可以进行交换
 let a = 100, b = 200;
 [b, a] = [a, b];
@@ -4849,35 +4742,33 @@ const obj = {
   firstName: 'Virat',
   lastName: 'Kohli'
 };
+
 // 变量名在解构时必须与对象的键匹配
 const {firstName, lastName} = obj;
-
 console.log(firstName); // Virat
 console.log(lastName); // Kohli
 ```
 
-## 类
+### 类
 
-类可能是最期待的语法糖，一种演示良好的语法，用于在 JS 中提供对象行为。在传统的 JavaScript 中，类是使用函数创建的，然后作为 ES6 变化的一部分出现了 `class` 关键字，正如我们在第 6 章节“面向对象的 JavaScript”中所学到的。
+类可能是最期待的语法糖，一种演示良好的语法，用于在 JS 中提供对象行为。在传统的 JavaScript 中，类是使用函数创建的，然后作为 ES6 变化的一部分出现了 `class` 关键字，正如我们在第 6 章“面向对象的 JavaScript”中所学到的。
 
-回顾一下我们在第 6 章节“面向对象的 JavaScript”中所学的，随着 ES6 类的出现，你可以定义带有属性和方法的类：
-
-```javascript
-class System{
-```
-
-
+回顾一下我们在第 6 章“面向对象的 JavaScript”中所学的，随着 ES6 类的出现，你可以定义带有属性和方法的类：
 
 ```javascript
-constructor(name) {
-  this.name = name;
-  this.type = 'construction';
-}
-getName() {
-  return this.name;
-}
-getType() {
-  return this.type;
+class System {
+  constructor(name) {
+    this.name = name;
+    this.type = 'construction';
+  }
+
+  getName() {
+    return this.name;
+  }
+
+  getType() {
+    return this.type;
+  }
 }
 ```
 
@@ -4891,7 +4782,7 @@ let constructSys = new System('robot');
 类可以被进一步扩展，以继承基类的属性和方法，并通过添加额外的属性和方法来增强它：
 
 ```javascript
-class Alarm extends System{
+class Alarm extends System {
   constructor(name) {
     super(name);
     this.type = 'alarm'
@@ -4905,11 +4796,9 @@ AlarmSys.getType(); // "alarm"
 AlarmSys.getName(); // "water-level"
 ```
 
-可以使用 `super()` 调用基类的构造函数，以保留基类的行为。
 
-在这一节中，我们回顾了所有的 ES6/ES2015 主要变化。接下来，我们将进入最新的 ES10/ES2019 变化。
 
-## ES2019 JavaScript – 主要新特性
+# ES2019 JavaScript – 主要新特性
 
 在这一节中，我们将学习 ES2019（最新的 ECMAScript 版本）的特性，以及如何在日常编程中开始使用它们。
 
@@ -4917,36 +4806,40 @@ AlarmSys.getName(); // "water-level"
 
 这包含了两个处理数组（特别是嵌套数组）的新方法。
 
-## Array.flat()
+### Array.flat()
 
 `flat()` 方法是一种数组方法，它创建一个新数组，并将所有子数组元素按深度合并到数组中，递归直到指定的深度。这可以应用于数组，将其扁平化为更简单的数组：
 
 ```javascript
 var arr1 = [1,2,3,4,[5,6,7],[8,9,10],[11,12,13,[14]]];
+
 arr1.flat() or arr1.flat(1) 将执行 1 层平坦化，输出将为
-[1,2,3,4,5,6,7,8,9,10],[11,12,13,[14]]];
-arr1.flat().flat(2) 将执行 2 层平坦化，输出将为
-[1,2,3,4,5,6,7,8,9,10,11,12,13,14]]
+[1,2,3,4,5,6,7,8,9,10,11,12,13,[14]];
+
+arr1.flat(2) 将执行 2 层平坦化，输出将为
+[1,2,3,4,5,6,7,8,9,10,11,12,13,14];
 ```
 
-这可以持续执行任意层级。如果深度未知，我们想要执行完全扁坦化，可以使用以下代码：
+这可以持续执行任意层级。如果深度未知，我们想要执行完全扁平化，可以使用以下代码：
 
 ```javascript
-arr1.flat(Infinity) // [1,2,3,4,5,6,7,8,9,10,11,12,13,14]]
+arr1.flat(Infinity) // [1,2,3,4,5,6,7,8,9,10,11,12,13,14]
 ```
 
-## Array.flatMap()
+### Array.flatMap()
 
 `flatMap()` 是另一个方法，它使用映射函数对每个元素进行映射，然后将结果扁平化为一个新数组。它类似于先应用 `map` 函数，后应用深度为 1 的 `flat` 函数。如果 `map` 返回一个嵌套数组，`flatMap` 会合并并创建一个单层数组：
 
 ```javascript
 let arr2 = [[1,2,3,4,5,6]];
+
 arr2.map(x=>[x,x*x]); // 返回一个包含数字及其平方的嵌套数组列表
 [[1,1],[2,4],[3,9],[4,16],[5,25],[6,36]];
-arr2.flatMap(x=>[x,x*x]); // [1,1,2,4,3,9,4,16,5,25,6,36]] // 列表将在一层上扁坦化。
+
+arr2.flatMap(x=>[x,x*x]); // [1,1,2,4,3,9,4,16,5,25,6,36] // 列表将在一层上扁平化。
 ```
 
-`map` 的结果将被合并并在一层上扁坦化。
+`map` 的结果将被合并在一层上扁平化。
 
 ## Object.fromEntries
 
@@ -4954,9 +4847,10 @@ arr2.flatMap(x=>[x,x*x]); // [1,1,2,4,3,9,4,16,5,25,6,36]] // 列表将在一层
 
 ```javascript
 let objectClass = { girls: 20, boys: 15 };
-// 对上述对象应用 Object.entries 将得到一个键
-//，值对的数组
+
+// 对上述对象应用 Object.entries 将得到一个键值对的数组
 let entriesClass = Object.entries(objectClass);
+
 entriesClass // [["girls",20], ["boys",15]]
 ```
 
@@ -4964,6 +4858,7 @@ entriesClass // [["girls",20], ["boys",15]]
 
 ```javascript
 finalObj = Object.fromEntries(entriesClass);
+
 finalObj; // 对象 { girls: 20, boys: 15 }
 ```
 
@@ -4972,37 +4867,42 @@ finalObj; // 对象 { girls: 20, boys: 15 }
 ```javascript
 arrayName = ['First', 'Second', 'Third'];
 age = [11, 12, 13];
+
 mapped = arrayName.map((each, index) => [each, age[index]]);
+
 console.log(mapped); // [["First", 11], ["Second", 12], ["Third", 13]]
+
 final = Object.fromEntries(mapped); // {First: 11, Second: 12, Third: 13}
 ```
 
 最后，我们将得到键值对。
 
-## ES2019 JavaScript – 次要新特性
+# ES2019 JavaScript – 次要新特性
 
-此最新版本中的其他新特性包括包括以下列出的次要特性。
+此最新版本中的其他新特性包括以下列出的次要特性。
 
 ## String.prototype.{trimStart,trimEnd}
 
 这包含了两个字符串方法，用于移除字符串开头或结尾的任何额外空格。
 
-## String.trimStart()
+### String.trimStart()
 
 `trimStart()` 方法修剪或移除字符串开头的空格。它是 `trimLeft()` 的别名，其作用如下代码所示：
 
 ```javascript
 let message = " I have spaces on both sides ";
-message.trimStart(); // " I have spaces on both sides "
-message.trimLeft(); // " I have spaces on both sides ";
+
+message.trimStart(); // "I have spaces on both sides "
+message.trimLeft(); // "I have spaces on both sides ";
 ```
 
-## String.trimEnd()
+### String.trimEnd()
 
-`trimEnd()` 方法修剪或移除字符串结尾的空格。它是 `trimRight()` 的别名，其作用如下所示
+`trimEnd()` 方法修剪或移除字符串结尾的空格。它是 `trimRight()` 的别名，其作用如下所示：
 
 ```javascript
 let message = " I too have spaces on both sides ";
+
 message.trimEnd(); // " I too have spaces on both sides"
 message.trimRight(); // " I too have spaces on both sides ";
 ```
@@ -5017,77 +4917,74 @@ Symbol 可以带或不带描述属性创建，如下所示：
 
 ```javascript
 let s1 = Symbol("description");
+
 console.log(s1.description); // "description"
 
 let s2 = Symbol({description: "custom"});
+
 console.log(s2.description); // undefined
 ```
 
+---
 
+### 练习题
 
+1. 以下哪个是 ES2019/ES10 的一部分，接收一个键值对列表并将其转换为单个对象的新 Object 方法？
 
-C. Object.new
+   - A. Object.entries
+   - B. Object.fromEntries
+   - C. Object.new
+   - D. 以上都不是
 
-D. 以上都不是
+   **答案 B**
 
-## 答案 B
+   `Object.fromEntries` 是一个新的 Object 方法，属于 ES2019/ES10 的一部分，它接收一个键值对列表并将其转换为单个对象。它是 `Object.entries` 作用的反向操作。
 
-Object.fromEntries 是一个新的 Object 方法，属于 ES2019/ES10 的一部分，它接收一个键值对列表并将其转换为单个对象。它是 Object.entries 作用的反向操作。
+2. 通过在参数前加上 `...`，它将所有剩余参数以数组的形式接收到其中。这个概念称为什么？
 
-+   2. 通过在参数前加上 `...`，它将所有剩余参数以数组的形式接收到其中。这个概念称为什么？
+   - A. rest（剩余参数）
+   - B. spread（展开）
+   - C. destructuring（解构）
+   - D. default（默认值）
 
-+   A. rest（剩余参数）
+   **答案 A**
 
-+   B. spread（展开）
+3. 这种块级作用域声明用于包含的值可能发生变动和变化的情况。
 
-+   C. destructuring（解构）
+   - A. constant（常量）
+   - B. const
+   - C. var
+   - D. let
 
-+   D. default（默认值）
+   **答案 D**
 
-## 答案 A
+4. 关于箭头函数，以下哪些描述正确的？
 
-+   3. 这种块级作用域声明用于包含的值可能发生变动和变化的情况。
+   - A. 箭头函数使代码简洁清晰。
+   - B. 箭头函数对于单行和多行函数有两种语法表示形式。
+   - C. 箭头函数使用其所在父函数的 `this` 关键字值。
+   - D. 以上皆对
 
-+   A. constant（常量）
+   **答案 D**
 
-+   B. const
+   关于箭头函数，所有描述都是正确的。
 
-+   C. var
+5. 这是一种原始数据类型，每次创建时都会生成一个唯一的值。
 
-+   D. let
+   - A. Symbol
+   - B. Enum（枚举）
+   - C. Array（数组）
+   - D. Float（浮点数）
 
-## 答案 D.
-
-+   4. 关于箭头函数，以下哪些描述正确的？
-
-+   A. 箭头函数使代码简洁清晰。
-
-+   B. 箭头函数对于单行和多行函数有两种语法表示形式。
-
-+   C. 箭头函数使用其所在父函数的 `this` 关键字值。
-
-+   D. 以上皆对
-
-## 答案 D.
-
-关于箭头函数，所有描述都是正确的。
-
-+   5. 这是一种原始数据类型，每次创建时都会生成一个唯一的值。
-
-+   A. Symbol
-B. Enum（枚举）
-C. Array（数组）
-D. Float（浮点数）
-
-**答案 A.**
+   **答案 A**
 
 # 第 9 章
 
 ## 使用 JavaScript 构建应用程序
 
 > “坐在长凳上是得分的。你必须上装进入比赛。”
-
-– Israelmore Ayvor
+>
+> – Israelmore Ayvor
 
 到目前为止，你学习了如何使用 HTML 创建网页内容、如何对 JavaScript 编程的不同方面进行样式处理、如何使用 JavaScript 为内容添加交互性，现在是时候将所学知识付诸实践了。
 
@@ -5132,7 +5029,7 @@ D. Float（浮点数）
 
 现在对要构建的内容有了些视觉概念，我们将进行解决方案。
 
-# 解决方案方法
+## 解决方案方法
 
 构建任何应用程序的第一步都是非常清晰地定义其用户体验（UX）。你说的 UX 是什么？它与用户界面有什么区别？简单来说，用户界面包括你的应用程序屏幕看起来什么样，而体验包含了你的应用程序给用户带来了什么样的体验。定义用户体验包括以下所有及更多：
 
@@ -5146,8 +5043,6 @@ D. Float（浮点数）
 
 我们目前的应用程序是一个简单的笔记应用，因此我们将定义这两个屏幕和不同的交互作为此过程的一部分。
 
-在规划阶段，我们将为最终应用程序屏幕创建一个线框图，这将帮助我们以图表形式整理思路。下面的图片描述了当前笔记应用程序的细节
-
 ## 逐步构建应用程序
 
 应用程序的结构按以下方式维护：
@@ -5160,13 +5055,13 @@ D. Float（浮点数）
 
 遵循正确的文件夹结构会让代码更有组织。
 
-# 步骤 1 – 为启动页面添加内容
+### 步骤 1 – 为启动页面添加内容
 
 启动屏幕只是进入应用程序的占位屏幕。
 
-我们将首先带有内容的 launch.html。
+我们将首先创建带有内容的 `launch.html`。
 
-初始的 launch.html 代码如下：
+初始的 `launch.html` 代码如下：
 
 ```html
 <html>
@@ -5174,7 +5069,7 @@ D. Float（浮点数）
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-<<div>>
+<div>
 <div>
 <img src=".\resources\loginCapture.png" />
 </div>
@@ -5195,9 +5090,9 @@ D. Float（浮点数）
 
 在没有样式的情况下，内容看起来非常单调。让我们添加一些样式，看看页面如何发生彻底变化。
 
-# 步骤 2 – 设置启动页面样式
+### 步骤 2 – 设置启动页面样式
 
-为了应用样式，我们将创建一个 launch.css 文件，并在其中定义应用到 launch.html 的相关类。
+为了应用样式，我们将创建一个 `launch.css` 文件，并在其中定义应用到 `launch.html` 的相关类。
 
 添加以下 CSS 代码以设置页面左侧的图像以及右侧的待办启动按钮，点击按钮将加载主应用程序：
 
@@ -5208,14 +5103,8 @@ D. Float（浮点数）
   margin: 86px;
   height: 75%;
 }
-```
 
-/* 这些 css 样式应用于左侧的图像在的
-
-
-
-```css
-登录页面 /*
+/* 这些 css 样式应用于左侧的图像在的登录页面 */
 .notepadCls {
   border-top-right-radius: 235px;
   border-bottom-right-radius: 235px;
@@ -5224,12 +5113,14 @@ D. Float（浮点数）
   margin-left: 70px;
   z-index: 1;
 }
+
 .todoImage {
   width: 60%;
   height: 80%;
   margin-top: 60px;
 }
-/* 这些 css 样式应用于登录页面的右侧部分 **/
+
+/* 这些 css 样式应用于登录页面的右侧部分 */
 .todoOuterCls {
   position: absolute;
   height: 73%;
@@ -5238,6 +5129,7 @@ D. Float（浮点数）
   border-radius: 10px;
   width: 40%;
 }
+
 .todoDivCls {
   background-color: #ff619e;
   border-radius: 10px;
@@ -5248,9 +5140,11 @@ D. Float（浮点数）
   z-index: 2;
   position: relative;
 }
+
 .todoInnerDivCls {
   padding: 10% 0 0 0%;
 }
+
 /*为标题添加颜色和字体族 */
 .loginTitle {
   font-size: 2vw;
@@ -5259,6 +5153,7 @@ D. Float（浮点数）
   font-family: Montserrat sans-serif;
   text-align: center;
 }
+
 /*为图片添加高度和内边距 */
 .loginTodoCls {
   height: 60px;
@@ -5266,10 +5161,10 @@ D. Float（浮点数）
 }
 ```
 
-最终的 launch.html 如下：
+最终的 `launch.html` 如下：
 
 ```html
-<html
+<html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -5285,14 +5180,12 @@ D. Float（浮点数）
 <!-- 此 div 是登录部分的内部 div，用于对齐屏幕右侧的段落和图像 -->
 <div class="todoInnerDivCls">
 <p class="loginTitle">组织工作似乎是不可能的，直到它被完成！</p>
-<img src = ".\resources\SidemenuLogo.svg" class="loginTodoCls" onclick="LoadMainPage()" />
+<img src = ".\resources\SidemenuLogo.svg" class="loginTodoCls" onclick="loadMainPage()" />
 </div>
 </div>
 </div>
 </div>
-</div>
-</div>
-<script type="text/javascript" src=".\launch.js"></script>
+<script type="text/javascript" src=".\js\launch.js"></script>
 <link rel="stylesheet" type="text/css" href=".\styles\launch.css">
 </body>
 </html>
@@ -5306,23 +5199,23 @@ D. Float（浮点数）
 
 现在页面看起来好多了。对吧！这就是 CSS 的力量！
 
-## 第 3  – 启动页面的逻辑
+### 步骤 3 – 启动页面的逻辑
 
 启动页唯一的逻辑是当你点击 ToDo 按钮时，它应该导航到主应用程序页面。
 
-在 js 文件夹中创建一个 launch.js 文件，并包含以下用于 loadMainPage 函数的代码，该函数是图像上 onclick 动作的处理器：
+在 `js` 文件夹中创建一个 `launch.js` 文件，并包含以下用于 `loadMainPage` 函数的代码，该函数是图像上 `onclick` 动作的处理器：
 
-```js
+```javascript
 function loadMainPage(){
   window.location.href = "./index.html";
 }
 ```
 
-这将加载 index.html 页面，即主应用程序页面。
+这将加载 `index.html` 页面，即主应用程序页面。
 
-## 第 4  – 为启动页面添加响应式
+### 步骤 4 – 为启动页面添加响应式
 
-让我们在启动页面中包含一些响应式，通过在 launch.css 中包含以下某些屏幕尺寸阈值的媒体查询来完成最后的完善：
+让我们在启动页面中包含一些响应式，通过在 `launch.css` 中包含以下某些屏幕尺寸阈值的媒体查询来完成最后的完善：
 
 ```css
 @media (max-width: 700px) {
@@ -5330,18 +5223,21 @@ function loadMainPage(){
     width: 85%;
     margin: 86px 10px 86px 35px;
   }
-.notepadCls {
-  width: 45%;
+  .notepadCls {
+    width: 45%;
+  }
+  .loginTodoCls {
+    padding: 12% 0 12%;
+    height: 35px;
+  }
 }
-.loginTodoCls {
-  padding: 12% 0 12%;
-  height: 35px;
-}
+
 @media screen (max-width: 650px) {
   .todoDivCls {
     margin-left: 20px;
   }
 }
+
 @media screen (max-width: 400px) {
   .loginTodoCls {
     height: 35px;
@@ -5350,6 +5246,7 @@ function loadMainPage(){
     margin-left: 20px;
   }
 }
+
 .loginDiv {
   margin: 86px 10px 86px 35px;
 }
@@ -5357,9 +5254,9 @@ function loadMainPage(){
 
 现在，你已经完成了启动页面，它将带我们进入主页面。
 
-## 第 5  – 应用程序页的内容和样式
+### 步骤 5 – 应用程序页的内容和样式
 
-现在，我们将处理处理笔记的主应用程序页面。让我们从 index.html 文件开始并添加如下页头：
+现在，我们将处理处理笔记的主应用程序页面。让我们从 `index.html` 文件开始并添加如下页头：
 
 ```html
 <!DOCTYPE html>
@@ -5387,7 +5284,7 @@ function loadMainPage(){
 </html>
 ```
 
-接下来，在 Main.css 中添加如下 body 样式：
+接下来，在 `Main.css` 中添加如下 body 样式：
 
 ```css
 /*为 body 添加背景颜色 */
@@ -5408,7 +5305,7 @@ body {
 ```
 
 ```css
-/*在 Main.css 中包含 header 样式以样式化文本、logo 和按钮，如下所示：
+/*在 Main.css 中包含 header 样式以样式化文本、logo 和按钮，如下所示：*/
 /*样式化 header */
 header {
   margin: 0 60px 0 60px;
@@ -5429,6 +5326,7 @@ header {
   height: 9.7vh;
   width: 175px;
 }
+
 /*与右上按钮相关的样式 */
 .headNavButtonsContainer {
   -webkit-justify-content: flex-end;
@@ -5436,11 +5334,13 @@ header {
   margin-bottom: 6%;
   width: 87vw;
 }
+
 .headNavButtonsContainer, .linkTag {
   display: flex;
   -webkit-align-items: center;
   align-items: center;
 }
+
 .addTask {
   height: 3vh;
   cursor: pointer;
@@ -5448,9 +5348,11 @@ header {
   border-radius: 4px;
   padding: 18px 0;
 }
+
 .headNavIcons {
   width: 15px;
 }
+
 .btntext {
   padding-left: 4vw;
   font-size: 14px;
@@ -5498,6 +5400,7 @@ header {
   display: none;
   margin: 20px 60px 0 60px;
 }
+
 .itemcontainer {
   border-radius: 6px;
   display: -webkit-flex;
@@ -5508,11 +5411,13 @@ header {
   justify-content: start;
   background-color: #fff;
 }
+
 /*与输入区域相关的样式 */
 .inputContainer {
   width: 75%;
   padding: 1.2% 5% 1.6% 2.2%;
 }
+
 .addTaskInputField {
   resize: none;
   width: 100%;
@@ -5536,22 +5441,17 @@ header {
   display: flex;
   width: 25%;
 }
+
 .addTaskBtnIconsContainer {
   width: 33.3%;
-}
-```
-
-
-
-
-
-```css
--webkit-justify-content: center;
+  -webkit-justify-content: center;
   justify-content: center;
 }
+
 .saveTask {
   height: 25%;
 }
+
 /*与删除图标相关的样式*/
 .deleteIconsContainer {
   width: 33.3%;
@@ -5561,7 +5461,7 @@ header {
 }
 ```
 
-TODO 的文本输入框如下所示所示：
+TODO 的文本输入框如下所示：
 
 ![](img/22525aec83cb16cb7664cd8d5c364721_223_0.png)
 
@@ -5569,11 +5469,11 @@ TODO 的文本输入框如下所示所示：
 
 当点击 AddTask 按钮时，应该出现之前的屏幕，并处理本地存储中保存的笔记内容。所有这些逻辑都可以仅使用 JavaScript 处理。
 
-## 第 6 步 – 页面中笔记列表的内容和样式
+### 步骤 6 – 页面中笔记列表的内容和样式
 
 笔记的内容将通过 JavaScript 逻辑动态添加，因为它基于用户创建的数据（我们将在下一步中看到）。在这一步中，让我们为列表添加一些样式。
 
-以下样式可以包含在 main.css 中，用于列表项和笔记的卡片布局：
+以下样式可以包含在 `main.css` 中，用于列表项和笔记的卡片布局：
 
 ```css
 /* 样式列表项 */
@@ -5585,12 +5485,11 @@ ul li {
   background: #eee;
   font-size: 18px;
   transition: 0.2s;
-
-/* 使列表项不可被选中 */
--webkit-user-select: none;
--moz-user-select: none;
--ms-user-select: none;
-user-select: none;
+  /* 使列表项不可被选中 */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 /*为所有列表项设置不同的颜色（斑马纹） */
@@ -5602,6 +5501,7 @@ background: #f9f9f9;
 ul li:hover {
 background: #ddd;
 }
+
 /* 被点击时，添加背景颜色并划线文本 */
 ul li.checked {
 background: #888;
@@ -5634,6 +5534,7 @@ overflow: hidden;
 overflow-wrap: break-word;
 line-height: 1.6;
 }
+
 .card:hover{
   overflow-y: scroll !important;
 }
@@ -5648,9 +5549,9 @@ line-height: 1.6;
 
 有了与列表项关联的样式，我们现在将处理笔记的逻辑。
 
-## 第 7 步 – 页面的逻辑
+### 步骤 7 – 页面的逻辑
 
-现在，让我们查看处理添加任务的按钮点击功能、`createToDo()`（添加笔记）和 `clearText()`（清除用户输入）的 JavaScript。我们将开始在 main.js 中构建所有与应用程序相关的 JavaScript 逻辑。
+现在，让我们查看处理添加任务的按钮点击功能、`createToDo()`（添加笔记）和 `clearText()`（清除用户输入）的 JavaScript。我们将开始在 `main.js` 中构建所有与应用程序相关的 JavaScript 逻辑。
 
 让我们开始处理 AddTask 按钮，以便在点击 Add task 按钮时显示输入文本区域，并如下所示处理删除图标的显示和隐藏行为：
 
@@ -5724,7 +5625,6 @@ function createTodo() {
     editClicked = false;
     return;
   }
-
   var inputValue = document.getElementById("todoinputfield").value;
   if (inputValue === '') {
     return;
@@ -5740,7 +5640,6 @@ function createTodo() {
   li.appendChild(divElement);
   document.getElementById("todoitemslist").appendChild(li);
   li.className = "card";
-
   if(inputValue.length !== 0) {
     var itemsArray = localStorage.getItem('cardItems') ? JSON.parse(localStorage.getItem('cardItems')) : [];
     itemsArray.push({
@@ -5750,6 +5649,7 @@ function createTodo() {
     localStorage.setItem('cardItems', JSON.stringify(itemsArray));
   }
   document.getElementById("todoinputfield").value = "";
+}
 ```
 
 现在，页面必须动态显示内容，添加新卡片的逻辑将在所示的 JS 函数中处理。当你点击勾选（保存）图标时，数据将存储在本地存储中并显示在列表中所示：
@@ -5797,7 +5697,6 @@ list.addEventListener('click', function(ev) {
   var checkedList = document.querySelectorAll('.checked');
   var tagName = ev.target.tagName,
   var checkedTargetValue = tagName === 'LI' ? ev.target.classList.contains('checked') : ev.target.parentElement.classList.contains('checked');
-
   // 当已选择卡片时返回空
   if(checkedList.length == 1 && checkedTargetValue) {
     if (tagName === 'LI') {
@@ -5807,9 +5706,7 @@ list.addEventListener('click', function(ev) {
     }
     return;
   }
-
   checkedTargetValue = tagName === 'LI' ? ev.target.classList.contains('checked') : ev.target.parentElement.classList.contains('checked');
-
   // 根据 checkedTargetValue 添加条件以显示或隐藏编辑或删除图标
   if(checkedTargetValue) {
     if(tagName === 'LI') {
@@ -5837,8 +5734,6 @@ list.addEventListener('click', function(ev) {
 });
 ```
 
-
-
 ```javascript
 ev.target.children[].style.display = 'none';
 } else if(tagName === 'DIV') {
@@ -5857,7 +5752,7 @@ ev.target.children[].style.display = 'none';
 
 删除和编辑图标通过以下函数逻辑附加到卡片上：
 
--   *addDeleteAndEditBtn* 被用于创建编辑和删除按钮的元素
+-   `addDeleteAndEditBtn` 被用于创建编辑和删除按钮的元素
 
 ```javascript
 function addDeleteAndEditBtn(li) {
@@ -5867,12 +5762,10 @@ function addDeleteAndEditBtn(li) {
   span.className = "close";
   div.className = "iconcls";
   span.appendChild(txt);
-
   var editSpan = document.createElement("SPAN");
   var edittxt = document.createTextNode("\u270E");
   editSpan.className = "edit";
   editSpan.appendChild(edittxt);
-
   div.appendChild(span);
   div.appendChild(editSpan);
   li.appendChild(div);
@@ -5926,10 +5819,15 @@ if(localStorageValues.length == 0) {
 
 ```javascript
 /**
+
  * @param li
+
  * @method onEditIconClick
+
  * 此方法用于在点击编辑按钮时向 textarea 添加文本
+
  */
+
 function onEditIconClick(li) {
   var innerText = li.childNodes[1].innerHTML;
   textField.style.display = 'block';
@@ -5944,9 +5842,13 @@ function onEditIconClick(li) {
 
 ```javascript
 /**
+
  * @method editedData
+
  * 此方法用于在点击保存时将编辑后的数据添加到列表项中
+
  */
+
 function editedData() {
   var editStorageValues = [],
   index = document.getElementById('todoinputfield').value;
@@ -5990,15 +5892,15 @@ listElement.children[0].style.display = 'none';
 
 图 9.15：笔记应用程序
 
+---
 
-
-
+### 练习题
 
 3. 在 JS 中，以下哪行代码可以隐藏 div 容器？
 
-- A. span.appendChild(txt);
-- B. document.getElementById("UL").appendChild(li);
-- C. defaultText.style.display = "none";
+- A. `span.appendChild(txt);`
+- B. `document.getElementById("UL").appendChild(li);`
+- C. `defaultText.style.display = "none";`
 - D. 以上均不是
 
 **答案：C**
@@ -6018,7 +5920,7 @@ listElement.children[0].style.display = 'none';
 - A. 正确
 - B. 错误
 
-**答案：A.**
+**答案：A**
 
 # 第 10 章
 
@@ -6046,7 +5948,7 @@ listElement.children[0].style.display = 'none';
 
 浏览器开发者工具是前端开发者工具箱中的基础工具，提供了许多功能使调试变得结构化和有条理。它们在所有现代浏览器中提供，让你查看信息如何在页面上渲染、相关值如何变化、数据如何从外部源获取、确保应用程序的性能和安全性等。
 
-# 如何启动浏览器开发者工具？
+### 如何启动浏览器开发者工具？
 
 浏览器开发者工具会作为主窗口的子窗口打开，如下所示截图所示：
 
@@ -6077,25 +5979,23 @@ listElement.children[0].style.display = 'none';
 
 一旦你使用提供的任何选项打开了浏览器开发者工具，可以通过 Dock（停靠）侧选项设置开发者工具的位置，该选项是在点击页面右上角所示的三个垂直点图标时获得的：
 
-```
+```html
 <div id="custom-bag" style="opacity:0;"></div>
 <div class="container for the GoogleBar HTML. </div>
 <div id="one-google" class="..."></div>
 <script type="text/javascript"></script>
 <div id="ntp-container" class="default-theme">
   <div id="logo" class="$0"></div>
-  <div id="flexbox-container"></</div>>
+  <div id="flexbox-container"></div>
   <!-- TODO: (chrug/8) -->
 </div>
 ```
 
 ![](img/22525aec83cb16cb7664cd8d5c364721_242_0.png)
 
-# Chrome 开发者工具部分
+### Chrome 开发者工具部分
 
-浏览器开发者工具是前端开发者工具箱中的基础工具，提供了许多功能使调试变得结构化和有条理。它们在所有现代浏览器中提供，让你查看信息如何在页面上渲染、相关值如何变化、数据如何从外部源获取、确保应用程序的性能和安全性等。
-
-# 元素与样式
+#### 元素与样式
 
 **Elements** 选项卡允许你查看页面的 DOM 结构。你可以检查单个元素，查看它们的属性以及应用于它们的 CSS 样式。以下截图显示了元素和样式：
 
@@ -6134,33 +6034,29 @@ body {
 
 图 10.4：开发者工具中的元素和样式
 
-## 控制台
+#### 控制台
 
 **Console** 选项卡允许你查看应用程序中遇到的错误信息。此外，我们可以在 JavaScript 代码中添加日志，使用 `console.log` 语句查看不同变量的值。
 
 在控制台消息的右侧，消息的源代码（文件名）以链接的形式提供。点击该链接，你将跳转到 **Sources** 选项卡中的源代码，那里是消息的来源。
 
-控制台还是一个命令行环境，具有 REPL 能力，这意味着它可以用于读取、求、打印和循环。你可以在 **Console** 中执行任何 JavaScript 语句并查看结果，如下截图所示：
+控制台还是一个命令行环境，具有 REPL 能力，这意味着它可以用于读取、求值、打印和循环。你可以在 **Console** 中执行任何 JavaScript 语句并查看结果，如下截图所示：
 
 ![](img/22525aec83cb16cb7664cd8d5c364721_244_0.png)
 
 图 10.5：Chrome 开发者工具中的控制台 REPL
 
-# 源
+#### 源
 
 此选项卡提供访问代码访问，你可以在其中添加断点并启用 JavaScript 调试器。你可以在顶部查看完整的项目文件夹结构，并访问应用程序源码。底部部分是 JavaScript 调试器，允许你单步执行代码并查看数据值的变化。
 
-
-
-
-
-## 网络 (Network)
+#### 网络
 
 此标签页可以快速预览应用程序中进行的网络调用和数据获取。我们可以进一步调查以检查调用是否成功，以及是否收到了正确的响应。请参考下方显示网络标签的截图：
 
 ![](img/22525aec83cb16cb7664cd8d5c364721_245_0.png)
 
-## 应用 (Application)
+#### 应用
 
 此标签页提供了存储的详情，特别是本地存储（local storage）和会话存储（session storage），它们通常用于在应用程序本地或会话中处理数据，如下所示：
 
@@ -6168,7 +6064,7 @@ body {
 
 图 10.8：应用程序标签
 
-## 性能 (Performance)
+#### 性能
 
 **性能**标签页提供了对应用程序进行性能分析的能力可以在浏览器的无痕模式下进行分析，以确保浏览器环境干净，并通过设置调整选项。使用记录（record）选项，可以在导航应用程序的同时启动和停止记录，从而收集并分析性能统计数据。收集的数据将显示在各项活动上花费的时间，并分析哪些瓶颈活动耗费了更多时间。一旦确定了瓶颈，就可以采取措施消除瓶颈并提高性能。请参考下方的显示**性能**标签页选项的截图：
 
@@ -6176,17 +6072,17 @@ body {
 
 图 10.9：性能标签
 
-## 内存 (Memory)
+#### 内存
 
-**内存**标签页允许您查找内如何在应用程序中被分配，并深入了解可能由于内存泄漏、膨胀和频繁垃圾回收而影响页面性能的内存问题，如下：
+**内存**标签页允许您查找内存如何在应用程序中被分配，并深入了解可能由于内存泄漏、膨胀和频繁垃圾回收而影响页面性能的内存问题，如下：
 
 ![](img/22525aec83cb16cb7664cd8d5c364721_249_0.png)
 
-## 安全 (Security)
+#### 安全
 
 **安全**面板是开发者工具中的一个标签页，有助于检查页面的安全性；例如它是否受 HTTPS 保护，如下所示：
 
-## 安全概述
+**安全概述**
 
 主源
 刷新以查看详情
@@ -6194,21 +6090,18 @@ body {
 此页面是安全的（有效的 HTTPS）。
 
 - **证书** - 有效且受信任
-与此网站的连接使用的是由 DigiCert SHA22 Server CA 颁发的有效受信任的服务器证书。
-
-查看证书
-
+  与此网站的连接使用的是由 DigiCert SHA22 Server CA 颁发的有效受信任的服务器证书。
+  查看证书
 - **连接** - 安全连接设置
-与此网站的连接使用 TLS 1.2、ECDHE_RSA with P-256 以及 AES_128_GCM 进行加密和验证。
-
+  与此网站的连接使用 TLS 1.2、ECDHE_RSA with P-256 以及 AES_128_GCM 进行加密和验证。
 - **资源** - 均安全提供
-此页面上的所有资源均通过安全方式提供。
+  此页面上的所有资源均通过安全方式提供。
 
 图 10.11
 
 如果不是 HTTPS 安全，将给出如下相应的指示：
 
-## 安全概述
+**安全概述**
 
 主源
 刷新以查看详情
@@ -6217,29 +6110,29 @@ body {
 
 图 10.12：安全标签
 
-## 审计 (Audit)
+#### 审计
 
 Chrome 60 版本包含一个新的审计面板（https://developers.google.com/web/updates/2017/05/devtools-release-notes#lighthouse），它可以审核您的应用程序并为渐进式 Web 应用（PWA）、性能、可访问性和最佳实践提供评分。这是通过一个名为 Lighthouse 的开源工具启用的，它可以提供一份用于改进应用程序质量的报告。以下截图显示了 Chrome 开发者工具审计标签页中的可用选项：
 
 ![](img/22525aec83cb16cb7664cd8d5c364721_251_0.png)
 
+图 10.13：审计标签
+
 ## 调试过程
 
 利用开发者工具并有效地调查代码中的问题，方法是通过启用调试步骤来复现问题，然后查看代码以定位引入问题的部分。
 
-## 使用 console.log 语句
+### 使用 console.log 语句
 
 当我们开始用 JavaScript 编程并接触到 `console.log` 语句时，它似乎是查看运行时值的最强大的工具，因此它成为调试的默认武器。
 
-图 10.13：审计标签
-
 仅仅记录值就能让我们获得可见性，看到我们在添加日志消息的地方，这些值在应用程序逻辑执行过程中是如何传递和改变的。虽然这让我们开始了工作，但我们需要在生产环境部署之前移除所有日志。此外，这并不是一种高效的调试方法，而且受限于我们添加的日志消息数量。
 
-## 使用 JavaScript 调试器 (JavaScript Debugger)
+### 使用 JavaScript 调试器
 
-JavaScript 调试器是最有效且高效的调试工具，它提供了对源代码的完整洞察。通过在代码中设置断点，您可以在执行过程中暂停代码，并查看该点作用内的变量值，并在执行进行的同时逐行遍历应用程序代码。为了调试您的问题，您必须复现错误场景，设置适当的断点来调查值，并找到问题。
+JavaScript 调试器是最有效且高效的调试工具，它提供了对源代码的完整洞察。通过在代码中设置断点，您可以在执行过程中暂停代码，并查看该点作用域内的变量值，并在执行进行的同时逐行遍历应用程序代码。为了调试您的问题，您必须复现错误场景，设置适当的断点来调查值，并找到问题。
 
-### 如何添加断点？
+#### 如何添加断点？
 
 进入“源代码”（Source）标签页并导航到您的项目文件夹。您可以查看所有的代码文件。左上角部分是项目导航器，右上角部分是代码编辑器，底部部分是调试器。
 
@@ -6251,9 +6144,9 @@ JavaScript 调试器是最有效且高效的调试工具，它提供了对源代
 - Fetch 断点
 - DOM 断点
 
-要添加行断点，只需点击代码中您想要暂停的行号即可。要移除断点，再次点击该行号即可。要禁用断点，右键点击该断点并选择“禁用断点”（Disable breakpoint）。
+要添加行断点，只需点击代码中您想要暂停的行号即可。要移除断点，再次点击该行号即可。要禁用断点，右键点击该断点并选择“禁用断点”。
 
-事件断点可以在“断点”（Breakpoints）标签页中管理。您可以为特定事件添加断点，例如鼠标点击或键盘输入。
+事件断点可以在“断点”标签页中管理。您可以为特定事件添加断点，例如鼠标点击或键盘输入。
 
 XHR 和 Fetch 断点对于调试网络请求非常有用。您可以设置在发出 XHR 或 Fetch 请求时触发的断点。
 
@@ -6263,17 +6156,15 @@ DOM 断点允许您调试 DOM 的更改。您可以针对属性修改、子节�
 
 图 10.14：调试器
 
-
-
 ![](img/22525aec83cb16cb7664cd8d5c364721_258_0.png)
 
 图 10.20：过程中的调试（调查值）
 
 如需对值进行进一步调查，你可以使用调试器的以下部分：
 
-- **作用域面板（Scope pane）**：这将显示代码暂停处所有激活的局部和全局变量及其值。
-- **监视面板（Watch pane）**：可以添加任何变量或表达式，并监控它在每一步中的值变化。这有助于详细调查，找到引入错误值的确切步骤。
-- **控制台标签页（Console tab）**：你还可以利用控制台面板的 REPL 属性，根据断点处激活的变量来评估并打印值。这是尝试代码并查看结果是否符合预期的理想场所。
+- **作用域面板**：这将显示代码暂停处所有激活的局部和全局变量及其值。
+- **监视面板**：可以添加任何变量或表达式，并监控它在每一步中的值变化。这有助于详细调查，找到引入错误值的确切步骤。
+- **控制台标签页**：你还可以利用控制台面板的 REPL 属性，根据断点处激活的变量来评估并打印值。这是尝试代码并查看结果是否符合预期的理想场所。
 
 一旦完成调试，你可以使用恢复图标，直到没有更多断点且调试器停止。通过设置合适的断点并重现问题，你应该能够查看代码的值并定位问题。
 
@@ -6285,56 +6176,50 @@ DOM 断点允许您调试 DOM 的更改。您可以针对属性修改、子节�
 
 ## 问题
 
-- 1. 关于断点的这些陈述中，哪是正确的？
-  A. 可以从 Sources（源代码）标签页添加 DOM 断点。
-  B. 可以从 Elements（元素）标签页添加事件监听器断点。
-  C. 你可以在 Sources 标签页下选择 XHR 或 fetch 选项，以便在每次 fetch 处断开。
-  D. 以上都不是。
+1. 关于断点的这些陈述中，哪是正确的？
+   - A. 可以从 Sources（源代码）标签页添加 DOM 断点。
+   - B. 可以从 Elements（元素）标签页添加事件监听器断点。
+   - C. 你可以在 Sources 标签页下选择 XHR 或 fetch 选项，以便在每次 fetch 处断开。
+   - D. 以上都不是。
 
-答案：选项 C。
-DOM 断点是从 Elements 标签页添加的，事件监听器断点是从 标签页的 Debugger 部分添加的。XHR Fetch 断点是通过 Sources 中的加号按钮添加的。你可以在 Sources 标签页下选择任意 XHR 或 fetch 选项在每次 fetch 处断开。
+   **答案：选项 C。**
+   DOM 断点是从 Elements 标签页添加的，事件监听器断点是从标签页的 Debugger 部分添加的。XHR Fetch 断点是通过 Sources 中的加号按钮添加的。你可以在 Sources 标签页下选择任意 XHR 或 fetch 选项在每次 fetch 处断开。
 
-- 2. 收集的数据将显示在各种活动中花费的时间，并分析应用是否在某些瓶颈活动上花费了更多时间，从而提供见解。哪个标签页有助于进行此活动？
-  A. Sources 标签页
-  B. Performance（性能）标签页
-  C. Memory（内存）标签页
-  D. Audit（审核）标签页
+2. 收集的数据将显示在各种活动中花费的时间，并分析应用是否在某些瓶颈活动上花费了更多时间，从而提供见解。哪个标签页有助于进行此活动？
+   - A. Sources 标签页
+   - B. Performance（性能）标签页
+   - C. Memory（内存）标签页
+   - D. Audit（审核）标签页
 
-答案：选项 B。
+   **答案：选项 B。**
+   收集的数据将显示在各种活动中花费的时间，并分析应用是否在某些瓶颈活动上花费了更多时间，从而提供见解。一旦通过查看性能标签页中的这些数据识别出瓶颈，就可以采取措施消除瓶颈并提高应用程序性能。
 
-收集的数据将显示在各种活动中花费的时间，并分析应用是否在某些瓶颈活动上花费了更多时间，从而提供见解。一旦通过查看性能标签页中的这些数据识别出瓶颈，就可以采取措施消除瓶颈并提高应用程序性能。
+3. 这可以添加任何变量或表达式，并监控其值在每一步中的变化。我们说的是哪个面板？
+   - A. Console pane（控制台面板）
+   - B. Scope pane（作用域面板）
+   - C. Memory pane（内存面板）
+   - D. Watch pane（监视面板）
 
-- 3. 这可以添加任何变量或表达式，并监控其值在每一步中的变化。我们说的是哪个面板？
+   **答案：选项 D。**
+   Watch面板可以添加任何变量或表达式，并监控其值在每一步中的变化。这有助于详细调查，找到引入错误值的确切步骤。
 
-  A. Console pane（控制台面板）
-  B. Scope pane（作用域面板）
-  C. Memory pane（内存面板）
-  D. Watch pane（监视面板）
+4. 你如何启动开发者工具来调试你的应用程序？
+   - A. 键盘快捷键
+   - B. 菜单选项
+   - C. 右键菜单
+   - D. 以上所有
 
-答案：选项 D。
+   **答案：选项 D。**
+   可以使用键盘快捷键、菜单选项以及通过在特定元素上右键点击上下文菜单来启动开发者工具。
 
-Watch面板可以添加任何变量或表达式，并监控其值在每一步中的变化。这有助于详细调查，找到引入错误值的确切步骤。
+5. 以下哪个不是浏览器开发者工具的有效标签页？
+   - A. Audit
+   - B. Performance
+   - C. Context
+   - D. Network
 
-- 4. 你如何启动开发者工具来调试你的应用程序？
-
-  A. 键盘快捷键
-  B. 菜单选项
-  C. 右键菜单
-  D. 以上所有
-
-答案：选项 D。
-
-可以使用键盘快捷键、菜单选项以及通过在特定元素上右键点击上下文菜单来启动开发者工具。
-
-- 5. 以下哪个不是浏览器开发者工具的有效标签页？
-  A. Audit
-  B. Performance
-  C. Context
-  D. Network
-
-答案：选项 C。
-
-Context 不是浏览器开发者工具中有效的标签页名称。有效的标签包括 Console、Sources、Elements、Network、Performance、Memory、Security 和 Audit。
+   **答案：选项 C。**
+   Context 不是浏览器开发者工具中有效的标签页名称。有效的标签包括 Console、Sources、Elements、Network、Performance、Memory、Security 和 Audit。
 
 # 第 11 章
 
@@ -6343,9 +6228,9 @@ Context 不是浏览器开发者工具中有效的标签页名称。有效的标
 > “为什么我们永远没有时间把事情做对，但总有时间重做？”
 > ~ 匿名
 
-在过去的几章中，我们学习了 JavaScript 以及如何使用 JavaScript 构建和调试应用程序。任何种的软件开发的另一个重要方面是测试。测试是检查我们的应用程序是否按照预期方式运行的过程。计划计划和执行良好的测试阶段可以确保交付给客户良好的产品。
+在过去的几章中，我们学习了 JavaScript 以及如何使用 JavaScript 构建和调试应用程序。任何种类软件开发的另一个重要方面是测试。测试是检查我们的应用程序是否按照预期方式运行的过程。计划周密和执行良好的测试阶段可以确保交付给客户良好的产品。
 
-在这一章中，我们将介绍单元测试自动化。在本章中，我们将介绍单元测试自动化。在本章中，我们将介绍单元测试自动化。
+在这一章中，我们将介绍单元测试自动化。
 
 ## 结构
 - 单元测试
@@ -6357,24 +6242,24 @@ Context 不是浏览器开发者工具中有效的标签页名称。有效的标
 
 ## 单元测试
 
-根据 ANSI/IEEE 标准，软件测试被定义为“分析和执行软件程序的过程，以确定其是否满足特定要求，并识别预期结果与实际结果之间的差异”。单元测试是开发不可或缺的一部分，应该单独进行。任何种软件开发的另一个重要方面是测试。测试是检查我们的应用程序是否按照预期方式运行的过程。计划计划和执行良好的测试阶段可以确保交付给客户良好的产品。
+根据 ANSI/IEEE 标准，软件测试被定义为“分析和执行软件程序的过程，以确定其是否满足特定要求，并识别预期结果与实际结果之间的差异”。单元测试是开发不可或缺的一部分，应该单独进行。任何种类软件开发的另一个重要方面是测试。测试是检查我们的应用程序是否按照预期方式运行的过程。计划周密和执行良好的测试阶段可以确保交付给客户良好的产品。
 
 越早发现 Bug，其成本就越低。你的目标应该是交付一个完全没有 Bug 的组件。测试过程是结构化的，它期望某些输入并给出某些输出，然后是测试场景。通过遵循相同的结构和方法，可以通过定义带有输入和预期输出的不同场景来实现使测试过程的自动化。
 
-可以使用 Jasmine 等 JavaScript 框架实现单元测试自动化。单元测试自动化嵌入了开发生命周期，并节省了在任何更改后重新测试场景的大量。在本章中，你将介绍 Jasmine，它是最流行的测试框架之一，为单元测试自动化奠定了良好的基础。
+可以使用 Jasmine 等 JavaScript 框架实现单元测试自动化。单元测试自动化嵌入了开发生命周期，并节省了在任何更改后重新测试场景的大量时间。在本章中，你将介绍 Jasmine，它是最流行的测试框架之一，为单元测试自动化奠定了良好的基础。
 
 ## Jasmine 简介
 
-Jasmine 是一个自独立的开源框架，不需要任何外部依赖，用于测试 JavaScript 代码。它是行为驱动的，具有非常易于理解的结构，使得单元测试自动化非常方便。它不需要 DOM 即可执行与 DOM 相关的测试和自动化。
+Jasmine 是一个独立的开源框架，不需要任何外部依赖，用于测试 JavaScript 代码。它是行为驱动的，具有非常易于理解的结构，使得单元测试自动化非常方便。它不需要 DOM 即可执行与 DOM 相关的测试和自动化。
 
 让我们从设置 Jasmine 开始。
 
-## Jasmine 设置与配置
+### Jasmine 设置与配置
 
 现在查看如何为测试自动化需求设置 Jasmine：
 
 - 全局安装 Jasmine，使其对所有的 JS 应用程序可用，如下命令所示：
-`npm install -g jasmine`
+  `npm install -g jasmine`
 
 下面的截图显示了在 Windows 系统运行上述命令后的命令行提示符屏幕：
 
@@ -6388,9 +6273,7 @@ added 13 packages from 4 contributors in 21.876
 图 11.1
 
 - 安装完成后，你需要在 JSON 文件中设置以列出要执行的源文件、助手（helpers）和规范文件（spec files）。为你的现有项目设置 Jasmine，可以使用以下命令：
-`jasmine init`
-
-
+  `jasmine init`
 
 ```
 C:\xampp\htdocs>cd project
@@ -6398,20 +6281,19 @@ C:\xampp\htdocs\project>jasmine init
 C:\xampp\htdocs\project>dir
 Volume in drive C has no label.
 Volume Serial Number is 3E1C-C9B5
-
 Directory of C:\xampp\htdocs\project
 02/15/2020 04:52 PM <DIR> .
-02/15/2020 04:52 PM <DIR> .
+02/15/2020 04:52 PM <DIR> ..
 02/15/2020 04:52 PM <DIR> spec
              0 File(s)  bytes
 3 Dir(s) 246,938,856 bytes free
 ```
 
-## 图 11.2
+图 11.2
 
-此命令将创建一个如所示的 spec 文件夹，并在其中创建一个包含 Jasmine 基础配置的 jasmine.json 配置文件。
+此命令将创建一个如所示的 `spec` 文件夹，并在其中创建一个包含 Jasmine 基础配置的 `jasmine.json` 配置文件。
 
-jasmine.json 文件内容如下代码所示：
+`jasmine.json` 文件内容如下代码所示：
 
 ```json
 {
@@ -6433,23 +6315,22 @@ jasmine.json 文件内容如下代码所示：
 }
 ```
 
-- 3. 在设置好 jasmine.json 后，你就可以通过在根目录运行 Jasmine 来创建并执行测试规范文件了。
-
-`jasmine MySpecFile.spec`
+- 在设置好 `jasmine.json` 后，你就可以通过在根目录运行 Jasmine 来创建并执行测试规范文件了。
+  `jasmine MySpecFile.spec`
 
 还有其他选项可以从命令行更改 Jasmine 的配置选项。有了基础配置设置，我们可以开始编写 Jasmine 测试规范文件了。
 
 接下来，我们将介绍用于编写测试规范的构造结构。
 
-# Jasmine 基础构造
+### Jasmine 基础构造
 
 为了开始编写测试规范，你首先需要理解用于编写测试用例的 Jasmine 基础构造。
 
 我们可以使用以下 Jasmine 构造来构建自动化测试脚本。
 
-## describe
+#### describe
 
-此构造解释了我们在测试中尝试要做什么。我们将通过将测试用例分组到测试套件（test suites）中开始定义测试规范。所有相关的测试用例都组在一个测试套件下，使用 describe 函数定义，如下面的代码所示：
+此构造解释了我们在测试中尝试要做什么。我们将通过将测试用例分组到测试套件（test suites）中开始定义测试规范。所有相关的测试用例都组在一个测试套件下，使用 `describe` 函数定义，如下面的代码所示：
 
 ```javascript
 //这是我的第一个测试套件
@@ -6458,15 +6339,15 @@ describe("My Test Suite for first component", function() {
 });
 ```
 
-在前面的代码中，describe 函数接收两个参数：第一个表示测试套件的标题，第二个参数是包含测试套件实现细节的函数。
+在前面的代码中，`describe` 函数接收两个参数：第一个表示测试套件的标题，第二个参数是包含测试套件实现细节的函数。
 
-## it
+#### it
 
 测试套件的实现将包含一个或多个与该套件相关的测试用例。
 
 该函数用于提供每个测试用例的实现，接收两个参数作为测试用例的标题，第二个参数包含测试用例的功能实现。
 
-下面的测试套件显示了 it 函数的使用：
+下面的测试套件显示了 `it` 函数的使用：
 
 ```javascript
 //这是一个测试套件
@@ -6480,25 +6361,27 @@ describe("My Test Suite for first component", function() {
 });
 ```
 
-我们应该利用 it 来为每个测试用例提供清晰的名称实现。
+我们应该利用 `it` 来为每个测试用例提供清晰的名称实现。
 
-## beforeEach 和 afterEach
+#### beforeEach 和 afterEach
 
-任何在每个测试用例执行之前为测试套件设置数据的逻辑都可以在 beforeEach 函数中完成。设置环境相关的变量在此函数中进行。
+任何在每个测试用例执行之前为测试套件设置数据的逻辑都可以在 `beforeEach` 函数中完成。设置环境相关的变量在此函数中进行。
 
-任何清理或关闭相关的活动可以在 afterEach 函数中执行，该函数会在每个测试用例执行后调用一次。
+任何清理或关闭相关的活动可以在 `afterEach` 函数中执行，该函数会在每个测试用例执行后调用一次。
 
-## beforeAll 和 afterAll
+#### beforeAll 和 afterAll
 
-任何公共设置和清理逻辑可以放在 beforeAll 和 afterAll 函数中，它们分别在所有测试规范执行之前和之后执行一次。
+任何公共设置和清理逻辑可以放在 `beforeAll` 和 `afterAll` 函数中，它们分别在所有测试规范执行之前和之后执行一次。
 
-## expect
+#### expect
 
-expect() 函数用于创建一个期望（expectation），它接收实际值，该值可以是测试用例中另一个断言的结果。这是测试规范的主要部分，并配合匹配器（matchers）使用来设计测试用例。它说明了期望的后续代码的结果：
+`expect()` 函数用于创建一个期望，它接收实际值，该值可以是测试用例中另一个断言的结果。这是测试规范的主要部分，并配合匹配器使用来设计测试用例。它说明了期望的后续代码的结果：
 
 ```javascript
 expect( expression ).toEqual(true);
 ```
+
+
 
 这个构造结构是我们进行值比较的地方。
 
@@ -6508,247 +6391,241 @@ expect( expression ).toEqual(true);
 
 | 匹配器 | 用法 |
 |---|---|
-| toBe() | 检查两个值是否严格相等 |
-| toEqual() | 检查值是否深度相等 |
-| not.toBe() | 检查两个值是否不严格相等 |
-| not.toEqual() | 检查值是否不深度相等 |
-| toBeDefined() | 检查值是否已定义 |
-| toBeUndefined() | 检查值是否为定义 |
-| toBeNull() | 检查一个值是否为 null |
-| toBeTruthy() | 检查一个值是否为真 (truthy) |
-| toBeFalsy() | 检查一个值是否为假 (falsy) |
-| toContain() | 检查数组是否包含某项 |
-| toLessThan() | 检查一个值是否小于另一个 |
-| toGreaterThan() | 检查一个值是否大于另一个 |
-| toCloseTo() | 检查一个值是否接近另一个 |
-| toThrow() | 检查函数是否抛出错误 |
-| toError() | 检查函数是否抛出特定错误 |
-| toRegex() | 检查字符串是否匹配正则表达式 |
-| toString() | 检查值是否可以转换为字符串 |
-| toObject() | 检查值是否为对象 |
-| toNumber() | 检查值是否可以转换为数字 |
-| toArray() | 检查值是否为数组 |
-| toInstanceOf() | 检查对象是否是某个类的实例 |
-| toProperty() | 检查对象是否具有特定属性 |
-| toEmpty() | 检查对象或数组是否为空 |
-| toAny() | 检查值是否为任意类型 |
-| toStrictEqual() | 检查两个值是否严格相等 |
-| toStartWith() | 检查字符串是否以子字符串开头 |
-| toEndWith() | 检查字符串是否以子字符串结尾 |
-| toLength() | 检查数组或字符串是否有特定长度 |
-| toMatch() | 检查字符串是否匹配正则表达式 |
-| toInRange() | 检查值是否在范围内 |
-| toType() | 检查值是否为特定类型 |
-| toValid() | 检查格式是否有效 |
-| toInvalid() | 检查格式是否无效 |
-| toJSON() | 检查值是否为有效的 JSON |
-| toArray() | 检查值是否为有效数组 |
-| toObject() | 检查值是否为有效对象 |
-| toBoolean() | 检查值是否为有效布尔 |
-| toNumber() | 检查值是否为有效数字 |
-| toFloat() | 检查值是否为有效浮点数 |
-| toString() | 检查值是否为有效字符串 |
-| toFunction() | 检查值是否为有效函数 |
-| toSymbol() | 检查值是否为有效符号 |
-| toMap() | 检查值是否为有效 map |
-| toSet() | 检查值是否为有效 set |
-| toDate() | 检查值是否为有效日期 |
-| toError() | 检查值是否为有效错误 |
-| toBigInt() | 检查值是否为有效大整数 |
-| toUint8() | 检查值是否为有效无符号整数 |
-| toBigInt() | 检查值是否为有效符号整数 |
-| toURL() | 检查值是否为有效 url |
-| toPath() | 检查值是否为有效路径 |
-| toFile() | 检查值是否为有效文件 |
-| toBlob() | 检查值是否为有效 blob |
-| toStream() | 检查值是否为有效流 |
-| toBuffer() | 检查值是否为有效 buffer |
-| toPromise() | 检查值是否为有效 promise |
-| toAsync() | 检查值是否为有效 async |
-| toObservable() | 检查值是否为有效 observable |
-| toGenerator() | 检查值是否为有效生成器 |
-| toIterator() | 检查值是否为有效迭代器 |
-| toProxy() | 检查值是否为有效代理 |
-| toReflect() | 检查值是否为有效反射 |
-| toHandler() | 检查值是否为有效处理器 |
-| toTarget() | 检查值是否为有效目标 |
-| toMetadata() | 检查值是否为有效元数据 |
-| toDescriptor() | 检查值是否为有效描述符 |
-| toProperty() | 检查值是否为有效属性 |
-| toValue() | 检查值是否为有效值 |
-| toKey() | 检查值是否为有效 key |
-| toSet() | 检查值是否为有效 set |
-| toGet() | 检查值是否为有效 get |
-| toHas() | 检查值是否为有效 has |
-| toDefine() | 检查值是否为有效 define |
-| toDelete() | 检查值是否为有效 delete |
-| toApply() | 检查值是否为有效 apply |
-| toConstruct() | 检查值是否为有效构造 |
-| toMethod() | 检查值是否为有效 method |
-| toGetter() | 检查值是否为有效 getter |
-| toSetter() | 检查值是否为有效 setter |
-| toProxy() | 检查值是否为有效符号 |
-| toGet() | 检查值是否为有效符号 |
-| toHas() | 检查值是否为有效符号 |
-| toDefine() | 检查值是否为有效符号 |
-| toDelete() | 检查值是否为有效符号 |
-| toApply() | 检查值是否为有效符号 |
-| toConstruct() | 检查值是否为有效符号 |
-| toMethod() | 检查值是否为有效符号 |
-| toGetter() | 检查值是否为有效符号 |
-| toSetter() | 检查值是否为有效符号 |
-| toProxy() | 检查值是否为有效符号 |
-| toGet() | 检查值是否为有效符号 |
-| toHas() | 检查值是否为有效符号 |
-| toDefine() | 检查值是否为有效符号 |
-| toDelete() | 检查值是否为有效符号 |
-| toApply() | 检查值是否为有效符号 |
-| toConstruct() | 检查值是否为有效符号 |
-| toMethod() | 检查值是否为有效符号 |
-| toGetter() | 检查值是否为有效符号 |
-| toSetter() | 检查值是否为有效符号 |
-| toProxy() | 检查值是否为有效符号 |
-| toGet() | 检查值是否为有效符号 |
-| toHas() | 检查值是否为有效符号 |
-| toDefine() | 检查值是否为有效符号 |
-| toDelete() | 检查值是否为有效符号 |
-| toApply() | 检查值是否为有效符号 |
-| toConstruct() | 检查值是否为有效符号 |
-| toMethod() | 检查值是否为有效符号 |
-| toGetter() | 检查值是否为有效符号 |
-| toSetter() | 检查值是否为有效符号 |
-| toProxy() | 检查值是否为有效符号 |
-| toGet() | 检查值是否为有效符号 |
-| toHas() | 检查值是否为有效符号 |
-| toDefine() | 检查值是否为有效符号 |
-| toDelete() | 检查值是否为有效符号 |
-| toApply() | 检查值是否为有效符号 |
-| toConstruct() | 检查值是否为有效符号 |
-| toMethod() | 检查值是否为有效符号 |
-| toGetter() | 检查值是否为有效符号 |
-| toSetter() | 检查值是否为有效符号 |
+| `toBe()` | 检查两个值是否严格相等 |
+| `toEqual()` | 检查值是否深度相等 |
+| `not.toBe()` | 检查两个值是否不严格相等 |
+| `not.toEqual()` | 检查值是否不深度相等 |
+| `toBeDefined()` | 检查值是否已定义 |
+| `toBeUndefined()` | 检查值是否为定义 |
+| `toBeNull()` | 检查一个值是否为 `null` |
+| `toBeTruthy()` | 检查一个值是否为真 (truthy) |
+| `toBeFalsy()` | 检查一个值是否为假 (falsy) |
+| `toContain()` | 检查数组是否包含某项 |
+| `toLessThan()` | 检查一个值是否小于另一个 |
+| `toGreaterThan()` | 检查一个值是否大于另一个 |
+| `toCloseTo()` | 检查一个值是否接近另一个 |
+| `toThrow()` | 检查函数是否抛出错误 |
+| `toError()` | 检查函数是否抛出特定错误 |
+| `toRegex()` | 检查字符串是否匹配正则表达式 |
+| `toString()` | 检查值是否可以转换为字符串 |
+| `toObject()` | 检查值是否为对象 |
+| `toNumber()` | 检查值是否可以转换为数字 |
+| `toArray()` | 检查值是否为数组 |
+| `toInstanceOf()` | 检查对象是否是某个类的实例 |
+| `toProperty()` | 检查对象是否具有特定属性 |
+| `toEmpty()` | 检查对象或数组是否为空 |
+| `toAny()` | 检查值是否为任意类型 |
+| `toStrictEqual()` | 检查两个值是否严格相等 |
+| `toStartWith()` | 检查字符串是否以子字符串开头 |
+| `toEndWith()` | 检查字符串是否以子字符串结尾 |
+| `toLength()` | 检查数组或字符串是否有特定长度 |
+| `toMatch()` | 检查字符串是否匹配正则表达式 |
+| `toInRange()` | 检查值是否在范围内 |
+| `toType()` | 检查值是否为特定类型 |
+| `toValid()` | 检查格式是否有效 |
+| `toInvalid()` | 检查格式是否无效 |
+| `toJSON()` | 检查值是否为有效的 JSON |
+| `toArray()` | 检查值是否为有效数组 |
+| `toObject()` | 检查值是否为有效对象 |
+| `toBoolean()` | 检查值是否为有效布尔 |
+| `toNumber()` | 检查值是否为有效数字 |
+| `toFloat()` | 检查值是否为有效浮点数 |
+| `toString()` | 检查值是否为有效字符串 |
+| `toFunction()` | 检查值是否为有效函数 |
+| `toSymbol()` | 检查值是否为有效符号 |
+| `toMap()` | 检查值是否为有效 map |
+| `toSet()` | 检查值是否为有效 set |
+| `toDate()` | 检查值是否为有效日期 |
+| `toError()` | 检查值是否为有效错误 |
+| `toBigInt()` | 检查值是否为有效大整数 |
+| `toUint8()` | 检查值是否为有效无符号整数 |
+| `toBigInt()` | 检查值是否为有效符号整数 |
+| `toURL()` | 检查值是否为有效 url |
+| `toPath()` | 检查值是否为有效路径 |
+| `toFile()` | 检查值是否为有效文件 |
+| `toBlob()` | 检查值是否为有效 blob |
+| `toStream()` | 检查值是否为有效流 |
+| `toBuffer()` | 检查值是否为有效 buffer |
+| `toPromise()` | 检查值是否为有效 promise |
+| `toAsync()` | 检查值是否为有效 async |
+| `toObservable()` | 检查值是否为有效 observable |
+| `toGenerator()` | 检查值是否为有效生成器 |
+| `toIterator()` | 检查值是否为有效迭代器 |
+| `toProxy()` | 检查值是否为有效代理 |
+| `toReflect()` | 检查值是否为有效反射 |
+| `toHandler()` | 检查值是否为有效处理器 |
+| `toTarget()` | 检查值是否为有效目标 |
+| `toMetadata()` | 检查值是否为有效元数据 |
+| `toDescriptor()` | 检查值是否为有效描述符 |
+| `toProperty()` | 检查值是否为有效属性 |
+| `toValue()` | 检查值是否为有效值 |
+| `toKey()` | 检查值是否为有效 key |
+| `toSet()` | 检查值是否为有效 set |
+| `toGet()` | 检查值是否为有效 get |
+| `toHas()` | 检查值是否为有效 has |
+| `toDefine()` | 检查值是否为有效 define |
+| `toDelete()` | 检查值是否为有效 delete |
+| `toApply()` | 检查值是否为有效 apply |
+| `toConstruct()` | 检查值是否为有效构造 |
+| `toMethod()` | 检查值是否为有效 method |
+| `toGetter()` | 检查值是否为有效 getter |
+| `toSetter()` | 检查值是否为有效 setter |
+| `toProxy()` | 检查值是否为有效符号 |
+| `toGet()` | 检查值是否为有效符号 |
+| `toHas()` | 检查值是否为有效符号 |
+| `toDefine()` | 检查值是否为有效符号 |
+| `toDelete()` | 检查值是否为有效符号 |
+| `toApply()` | 检查值是否为有效符号 |
+| `toConstruct()` | 检查值是否为有效符号 |
+| `toMethod()` | 检查值是否为有效符号 |
+| `toGetter()` | 检查值是否为有效符号 |
+| `toSetter()` | 检查值是否为有效符号 |
+| `toProxy()` | 检查值是否为有效符号 |
+| `toGet()` | 检查值是否为有效符号 |
+| `toHas()` | 检查值是否为有效符号 |
+| `toDefine()` | 检查值是否为有效符号 |
+| `toDelete()` | 检查值是否为有效符号 |
+| `toApply()` | 检查值是否为有效符号 |
+| `toConstruct()` | 检查值是否为有效符号 |
+| `toMethod()` | 检查值是否为有效符号 |
+| `toGetter()` | 检查值是否为有效符号 |
+| `toSetter()` | 检查值是否为有效符号 |
+| `toProxy()` | 检查值是否为有效符号 |
+| `toGet()` | 检查值是否为有效符号 |
+| `toHas()` | 检查值是否为有效符号 |
+| `toDefine()` | 检查值是否为有效符号 |
+| `toDelete()` | 检查值是否为有效符号 |
+| `toApply()` | 检查值是否为有效符号 |
+| `toConstruct()` | 检查值是否为有效符号 |
+| `toMethod()` | 检查值是否为有效符号 |
+| `toGetter()` | 检查值是否为有效符号 |
+| `toSetter()` | 检查值是否为有效符号 |
 
-
+### Spy 相关功能
 
 ```javascript
 spyOn()
 ```
 
 此函数会监听 `objMethod`，它应该是 `myObject` 实例的一个方法，如下所示：
-spyOn(myObject, 'objMethod')
+`spyOn(myObject, 'objMethod')`
 
-```
+```javascript
 toHaveBeenCalled()
 ```
 
 此匹配器用于验证该方法是否被调用：
-expect(myObject.objMethod).toHaveBeenCalled()
+`expect(myObject.objMethod).toHaveBeenCalled()`
 
-```
+```javascript
 toHaveBeenCalledWith(args)
 ```
 
 此匹配器用于检查调用方法时是否使用了特定的参数：
-expect(myObject.objmethod).toHaveBeenCalledWith('arg1', 'arg2')
+`expect(myObject.objMethod).toHaveBeenCalledWith('arg1', 'arg2')`
 
-```
+```javascript
 and.callThrough()
 ```
 
 此函数与 spy（间谍器）链式调用，尽管有 spy 的存在，也会继续执行原始函数：
-spyOn(myObject, 'objMethod').and.callThrough()
+`spyOn(myObject, 'objMethod').and.callThrough()`
 
-```
+```javascript
 and.returnValue(value)
 ```
 
 此函数与 spy 链式调用，每当函数被调用时都会返回一个特定值：
-spyOn(myObject, 'objMethod').and.returnValue('Return Value')
+`spyOn(myObject, 'objMethod').and.returnValue('Return Value')`
 
-```
+```javascript
 and.callFake(function)
 ```
 
 此函数与 spy 链式调用用于调用作为参数传递的另一个函数，而不是执行原始函数：
-spyOn(myObject, 'objMethod').and.callFake(arg1, arg2) {
+```javascript
+spyOn(myObject, 'objMethod').and.callFake(function(arg1, arg2) {
   return 'this response is from fake function ';
 });
-
 ```
+
+```javascript
 and.throwError('Error')
 ```
 
 此函数与 spy 链式调用，每当 spy 被调用时都会抛出一个错误：
-spyOn(myObject, 'objMethod').and.throwError('Error out')
+`spyOn(myObject, 'objMethod').and.throwError('Error out')`
 
-```
+```javascript
 .calls.any()
 ```
 
-此函数与 spy 链式调用，如果方法被至少调用过一次，则返回 true，否则返回 false。
+此函数与 spy 链式调用，如果方法被至少调用过一次，则返回 `true`，否则返回 `false`。
 
-```
+```javascript
 .calls.count()
 ```
 
 此函数返回方法被调用的次数。
 
-```
+```javascript
 .calls.mostRecent()
 ```
 
 此函数返回最近一次方法调用的引用和参数。
 
-```
+```javascript
 .calls.reset()
 ```
 
 此函数将重置并清除 spy 对方法所跟踪的所有任何数据。
 
-```
+```javascript
 .calls.argsFor(n)
 ```
 
 此函数返回对方法第 n 次调用的参数。
 
-```
+```javascript
 .calls.allArgs()
 ```
 
 此函数返回对该方法的所有调用的参数。
 
-```
+```javascript
 .calls.first()
 ```
 
 此函数返回对该方法第一次调用的引用和参数。
 
-```
+```javascript
 .calls.all()
 ```
 
 此函数返回对该方法的所有调用的所有引用和参数。
 
-```
+```javascript
 createSpy()
 ```
 
 当真实函数不存在时，可以使用此函数创建一个 spy：
-dummy = jasmine.createSpy('dummy');
+`dummy = jasmine.createSpy('dummy');`
 它将拥有所有与 spy 相关的功能，而背后没有真实的函数实现。你可以将其与其他方法链式调用以模拟返回值/功能，如下：
-dummy.and.returnValue('Dummy Return Value');
+`dummy.and.returnValue('Dummy Return Value');`
 
-```
+```javascript
 createSpyObj()
 ```
 
 此函数可以用于创建一个完整的对象，其中包含多个用于该对象不同功能的的 spy 方法，而无需任何实现：
+```javascript
 dog = jasmine.createSpyObj('dog', ['bark', 'play', 'eat', 'sleep']);
 dog.bark();
 dog.eat();
 // 这些每一个都是 dog 对象上的 spy 方法
+```
 
-表 11.2: Spy 相关功能
+**表 11.2: Spy 相关功能**
 
 使用 spy 功能，可以对方法进行跟踪和模拟，以返回不同的结果或调用不同的函数。这可以用于模拟我们功能中的任何依赖项，并能够继续独立的单元测试。
 
@@ -6756,33 +6633,41 @@ dog.eat();
 
 # 异步测试
 
-在第 7 章“异步 JS”中，你学习了同步和异步编程以及异步 JavaScript 的不同方面。测试同步代码更加简单，因为它是按步骤执行的。到目前为止看到的所有内容都可以用于测试同步代码，但对回调（callbacks）、promise、async-await 等异步结构的测试将需要你在自动化测试用例中通过为过程引入额外的等待时间来模拟异步行为。
+在第 7 章“异步 JS”中，你学习了同步和异步编程以及异步 JavaScript 的不同方面。测试同步代码更加简单，因为它是按步骤执行的。到目前为止看到的所有内容都可以用于测试同步代码，但对回调（callbacks）、Promise、async-await 等异步结构的测试将需要你在自动化测试用例中通过为过程引入额外的等待时间来模拟异步行为。
 
 Jasmine spy 结构结合异步 JavaScript 可以用于处理和自动化异步行为。
 
 让我们来看这里的一些场景：
 
-- 模拟并处理返回 promise 的异步函数：
+- 模拟并处理返回 Promise 的异步函数：
   在异步测试用例内部调用 `done()` 函数非常重要，用以通知测试运行器当前测试用例已结束，它可以继续执行下一个。
 
-下面的代码测试了 `myTestService`，它返回 promise 作为响应，如所示进行了处理并与预期结果进行比较：
+下面的代码测试了 `myTestService`，它返回 Promise 作为响应，如所示进行了处理并与预期结果进行比较：
+
 ```javascript
 describe('getPromiseData function', function () {
-  const arg1= 'dummy';
+
+  const arg1 = 'dummy';
+
   it('should call getPromiseData from myTestService', function(done) {
+
     spyOn(myTestService, 'getPromiseData').and.returnValue(Promise.resolve(promisedData));
-    //promiseData 是某些作为 promise 返回的 json 数据
+
+    // promisedData 是某些作为 Promise 返回的 json 数据
+
     myTestService.getPromiseData(arg1)
       .then((result) => {
-        expect(myTestService.getPromiseData).toBeBeenCalledWith(
-        expect(result).toEqual(promisedData));
+        expect(myTestService.getPromiseData).toHaveBeenCalledWith(arg1);
+        expect(result).toEqual(promisedData);
         done();
       });
+
   });
+
 });
 ```
 
-使用 `spyOn` 为 `myTestService` 的 `getPromiseData` 函数返回了 promise 结果。结果使用 `then` 块进行处理并与预期结果进行比较以模拟测试。
+使用 `spyOn` 为 `myTestService` 的 `getPromiseData` 函数返回了 Promise 结果。结果使用 `then` 块进行处理并与预期结果进行比较以模拟测试。
 
 - 使用 async-await 测试真实的异步函数调用：
 
@@ -6795,7 +6680,7 @@ it('testAsyncFunction', async function() {
 });
 ```
 
-以下测试用于执行名为 `myAsyncFunction` 的异步函数并与预期值进行比较。同样，其他 spy 方法可以与 promise 和 async-await 结合来模拟异步行为。
+以下测试用于执行名为 `myAsyncFunction` 的异步函数并与预期值进行比较。同样，其他 spy 方法可以与 Promise 和 async-await 结合来模拟异步行为。
 
 - 通过模拟时钟引入等待时间来改变异步行为：
 
@@ -6810,6 +6695,7 @@ function myFunction(innerFunc) {
     innerFunc('dummy');
   }, 1000);
 }
+
 describe('myFunction', function() {
   beforeEach(function() {
     // 设置模拟时钟
@@ -6826,23 +6712,21 @@ describe('myFunction', function() {
     myFunction(innerFunc);
     // 模拟等待 10ms 以变为同步
     jasmine.clock().tick(1000);
-    expect(innerFunc).toBeCalledWith('dummy');
+    expect(innerFunc).toHaveBeenCalledWith('dummy');
   });
 });
 ```
 
 为了使用 `jasmine.clock()`，需要在 `beforeEach` 函数中安装，并在完成后在 `afterEach` 函数中卸载。它可以用于模拟 10 秒的等待时间，使其感觉像一个同步过程。
 
+### 练习题
 
+**问题：** `function.`
 
-
-
-function.
-
-+   A. and.callThrough
-B. and.callFake
-C. and.callsAny
-D. and.calls
++ A. `and.callThrough`
++ B. `and.callFake`
++ C. `and.callsAny`
++ D. `and.calls`
 
 **答案：选项 A。**
 
@@ -6851,9 +6735,9 @@ D. and.calls
 ## 构建并部署应用程序
 
 > “我们非常清楚，我们所做的不过是海洋中的一滴水。但如果没有这滴水，海洋将会缺失一些东西。”
-— 德德蕾修母
+> — 德德蕾修母
 
-部署是将我们的应用程序推向世界的最后一步。在上一章节中，我们构建了一个用于处理用户输入笔记的简单 JavaScript 应用程序。在本章中，你将学习如何部署你的应用程序，并将其发布到互联网上，以便任何人都可以通过 URL 访问它。有很多平台供供，但我们将在书中解释的部署过程中使用 Heroku。Heroku 是一个云平台，它提供了让应用程序通过 URL 可用并在互联网上访问的最快方法。
+部署是将我们的应用程序推向世界的最后一步。在上一章节中，我们构建了一个用于处理用户输入笔记的简单 JavaScript 应用程序。在本章中，你将学习如何部署你的应用程序，并将其发布到互联网上，以便任何人都可以通过 URL 访问它。有很多平台可供选择，但我们将在书中解释的部署过程中使用 Heroku。Heroku 是一个云平台，它提供了让应用程序通过 URL 可用并在互联网上访问的最快方法。
 
 在本章中，你将学习如何使用 Heroku 将应用程序部署到云端，使其可以通过 URL 在互联网上访问。
 
@@ -6875,19 +6759,19 @@ D. and.calls
 
 你已经使用 JavaScript 或 React 或任何框架构建了一个应用程序。在对需求进行彻底测试后，你会想要将其部署到云端并向全世界展示你的工作。部署正是如此。随着云端提供所有基础设施，这已经变得非常简单且免费可用。
 
-你有一个正在运行并准备好部署的应用程序。为了继续部署，你必须首先准备好前提条件。让我们先确保拥有部署所需的决条件：
+你有一个正在运行并准备好部署的应用程序。为了继续部署，你必须首先准备好前提条件。让我们先确保拥有部署所需的前提条件：
 
 1. 在整个书中，你一直使用 npm 进行安装，在这里也将这样做。所以，你已经拥有了第一个前提条件——Node 和 NPM。
 2. 你可以使用以下命令检查版本：
-    * node -v
-    * npm -v
+   - `node -v`
+   - `npm -v`
 3. Git 将被 Heroku 内部用于维护部署代码的版本；因此，你需要 Git。请从 https://git-scm.com/downloads 安装它。
 4. 你将使用 Heroku，所以你首先需要在 https://signup.heroku.com/ 注册免费托管。
 5. 当你访问 Heroku 网站注册时，你会看到以下表单：
 
 ![](img/22525aec83cb16cb7664cd8d5c364721_278_0.png)
 
-图 12.1：Heroku 注册表
+**图 12.1：Heroku 注册表**
 
 6. 你将使用 Heroku CLI 从命令行执行部署。使用以下命令安装 Heroku CLI：
 
@@ -6910,7 +6794,7 @@ E:\heroku --version
 heroku/7.29.0 win32-x64 node-v10.15.3
 ```
 
-**图 12.2**：在命令行中检查 Heroku 版本
+**图 12.2：在命令行中检查 Heroku 版本**
 
 有了 Node/npm 和 Heroku，我们已经设置好了所有前提条件来开始部署流程。
 
@@ -6926,11 +6810,11 @@ heroku/7.29.0 win32-x64 node-v10.15.3
 
 为了部署我们之前开发的 Notes 应用，你需要遵循以下步骤：
 
-1. 所有的 JS 和 CSS 文件都应该放在 public 文件夹中（正如我们在 [第 9 章，使用 JavaScript 构建应用程序]中所做的）。
-2. 在主项目文件夹（与 index.html 同级）创建一个名为 `composer.json` 的文件，内容如下：
+1. 所有的 JS 和 CSS 文件都应该放在 `public` 文件夹中（正如我们在 [第 9 章，使用 JavaScript 构建应用程序]中所做的）。
+2. 在主项目文件夹（与 `index.html` 同级）创建一个名为 `composer.json` 的文件，内容如下：
 3. 创建一个名为 `index.php` 的文件，包含以下行代码：
-`<?php include_once("index.html"); ?>`
-4. 添加此项使 Heroku 能够将你的应用识别为 PHP 应用，并从加载 index.html 的地方开始。
+   `<?php include_once("index.html"); ?>`
+4. 添加此项使 Heroku 能够将你的应用识别为 PHP 应用，并从加载 `index.html` 的地方开始。
 
 通过这些步骤，你的 JavaScript 应用程序现在准备好部署了。
 
@@ -6941,20 +6825,20 @@ heroku/7.29.0 win32-x64 node-v10.15.3
 ## 步骤 1 – 登录 Heroku
 
 1. 使用以下命令登录：
-`heroku login`
+   `heroku login`
 2. 你将看到提示消息：
-`heroku: Press any key to open the browser or exit.`
+   `heroku: Press any key to open the browser or exit.`
 3. 按任意键，将在默认浏览器中重定向到登录页面：
 
 ![](img/22525aec83cb16cb7664cd8d5c364721_281_0.png)
 
-图 12.3：从终端启动的 Heroku 登录界面
+**图 12.3：从终端启动的 Heroku 登录界面**
 
 4. 通过提供凭据登录 Heroku，你会看到以下屏幕：
 
 ![](img/22525aec83cb16cb7664cd8d5c364721_281_1.png)
 
-图 12.4：登录成功后关闭窗口
+**图 12.4：登录成功后关闭窗口**
 
 5. 登录成功后，你可以关闭浏览器回到终端，显示如下：
 
@@ -6965,9 +6849,10 @@ logging in...
 Logged in as abhilash@gmail.com
 ```
 
-图 12.5：登录后的终端
+**图 12.5：登录后的终端**
 
 如果遇到错误，关闭所有浏览器标签页并重试命令。
+
 替代方法：
 
 如果你想留在 CLI 中并输入登录信息，可以使用以下命令：
@@ -6981,57 +6866,54 @@ heroku login -i
 以下步骤用于将代码提交到 Git：
 
 1. 使用以下命令首先初始化 Git：
-```bash
-git init
-```
+   ```bash
+   git init
+   ```
 2. 使用以下命令将所有代码添加到 git：
-```bash
-git add
-```
+   ```bash
+   git add .
+   ```
 3. 使用以下命令提交代码的第一版本：
-```bash
-git commit -m "initial commit"
-```
+   ```bash
+   git commit -m "initial commit"
+   ```
 
 ## 步骤 3 – 在 Heroku CLI 中创建命名应用
 
 1. 使用以下命令在 Heroku 上创建应用：
-```bash
-heroku create mynotesappbook
-```
-下面的截图显示了输入创建应用命令后的终端：
+   ```bash
+   heroku create mynotesappbook
+   ```
+   下面的截图显示了输入创建应用命令后的终端：
 
 ```
 Creating @ mynotesappbook... done
 https://mynotesappbook.heroku.com/ | https://git.heroku.com/mynotesappbook.git
 ```
 
-图 12.6：在 Heroku CLI 中创建命名应用时的终端
+**图 12.6：在 Heroku CLI 中创建命名应用时的终端**
 
-2. 给出的名称只是一个示例。你必须给出一个唯一的
+2. 给出的名称只是一个示例。你必须给出一个唯一的为你的应用指定一个名称。如果没有给出名称，Heroku 会自动生成一个默认名称，例如 `thawing-oasis-43050`。
 
+3. 它会创建并输出两组 URL：
+   - 第一个 URL 是应用部署后上线的地方，地址为 `https://mynotesapp4book.herokuapp.com/`。
+   - 第二个 URL，`https://git.heroku.com/mynotesapp4book.git` 是远程 git 仓库 URL，Heroku 将在此为你的应用代码创建一个 git 仓库。
 
-为你的应用指定一个名称。如果没有给出名称，Heroku 会自动生成一个默认名称，例如 thawing-oasis-43050。
+## 步骤 4 – 将代码推送到远程 git 仓库
 
-- 3. 它会创建并输出两组 URL：
-  - 第一个 URL 是应用部署后上线的地方，地址为 https://mynotesapp4book.herokuapp.com/。
-  - 第二个 URL，https://git.heroku.com/mynotesapp4book.git 是远程 git 仓库 URL，Heroku 将在此为你的应用代码创建一个 git 仓库。
-
-## 第 4 步 – 将代码推送到远程 git 仓库
-
-- 1. 使用以下命令将代码推送到远程 git（步骤 3 中的第二个 URL）：
+1. 使用以下命令将代码推送到远程 git（步骤 3 中的第二个 URL）：
 
 ```
 git push heroku master
 ```
 
-- 2. 这将执行最终部署，代码将被推送到 git 远程仓库。
+2. 这将执行最终部署，代码将被推送到 git 远程仓库。
 
-- 3. 你将看到许多执行的命令，以及对部署成功的最终确认。
+3. 你将看到许多执行的命令，以及对部署成功的最终确认。
 
-- 4. 该状态表示部署过程完成，现在你已经可以通过步骤 3 中的第一个 URL（https://mynotesapp4book.herokuapp.com/）访问你的应用程序了。
+4. 该状态表示部署过程完成，现在你已经可以通过步骤 3 中的第一个 URL（`https://mynotesapp4book.herokuapp.com/`）访问你的应用程序了。
 
-- 5. 你还可以从终端（Terminal）使用以下命令启动你的应用程序：
+5. 你还可以从终端使用以下命令启动你的应用程序：
 
 ```
 heroku open
@@ -7039,25 +6921,25 @@ heroku open
 
 部署完成，你的应用程序现在已在互联网上线，你可以与朋友和同事分享了。
 
-## 第 5 步 – 对应用所做的更改进行部署
+## 步骤 5 – 对应用所做的更改进行部署
 
 首次部署完成后，你的应用可能会发生更改。每当你准备好经过验证和测试的更改时，你都会想要此新版本发布到线上生产服务器。
 
 连接到 Heroku CLI 后，按照给命令将更改推送到远程 git：
 
-- 1. 将更改的代码添加到 git：
+1. 将更改的代码添加到 git：
 
 ```
-git add
+git add .
 ```
 
-- 2. 使用适当的消息提交更改以说明修改内容：
+2. 使用适当的消息提交更改以说明修改内容：
 
 ```bash
 git commit -m "The new set of changes for testing"
 ```
 
-- 3. 最后，将提交的更改推送到远程 git：
+3. 最后，将提交的更改推送到远程 git：
 
 ```bash
 git push heroku master
@@ -7075,9 +6957,9 @@ git push heroku master
 
 ![](img/22525aec83cb16cb7664cd8d5c364721_284_0.png)
 
-> 图 12.7：显示所有应用的 Heroku 屏幕
+> **图 12.7：显示所有应用的 Heroku 屏幕**
 
-你还可以连接到维护代码版本的 GitHub 账户，并直接从那里进行部署。你可以导航到 Heroku 账户中的 deploy 标签，并将 GitHub 账户与 Heroku 同步。一旦连接到 GitHub，你就可以同步 Heroku 与 GitHub，并设置自动代码推送到 GitHub 项目的主仓库仓库。
+你还可以连接到维护代码版本的 GitHub 账户，并直接从那里进行部署。你可以导航到 Heroku 账户中的 deploy 标签，并将 GitHub 账户与 Heroku 同步。一旦连接到 GitHub，你就可以同步 Heroku 与 GitHub，并设置自动代码推送到 GitHub 项目的主仓库。
 
 使用终端方法对整个过程有更好的控制，并且通过简单的命令易于遵循。
 
@@ -7091,24 +6973,24 @@ git push heroku master
 
 - 1. Heroku 是唯一用于部署 JavaScript 应用的平台。
 
-nA. 错误
-B. 正确
+  A. 错误
+  B. 正确
 
 **答案：选项 A。**
 
 - 2. 使用以下命令将最终更改推送到 Heroku 远程 git 以使其可用。
 
-A. git add
-B. heroku create
-C. git push heroku master
-D. git commit
+  A. `git add`
+  B. `heroku create`
+  C. `git push heroku master`
+  D. `git commit`
 
 **答案：选项 C。**
 
-- 3. 在不提供名称的情况下无法执行 heroku create 命令，并且会报错。
+- 3. 在不提供名称的情况下无法执行 `heroku create` 命令，并且会报错。
 
-A. 正确
-B. 错误
+  A. 正确
+  B. 错误
 
 **答案：选项 B。**
 
@@ -7127,9 +7009,8 @@ B. 错误
   B. npm/Node
   C. git
   D. 以上所有
+
 **答案：选项 D。**
-
-
 
 ```javascript
 var canVote = function(){
@@ -7168,9 +7049,9 @@ ECMAScript 版本 5 引入的 `use strict` 指令用于指示代码需要在严�
 
 正如我们在 ES6 中看到的，现在有三种声明变量的方法：
 
-- var: 用于函数级作用域，并且可以更改值的引用
-- let: 用于块级作用域，并且可以更改值的引用
-- const: 用于块级作用域，但不能更改值的引用
+- `var`: 用于函数级作用域，并且可以更改值的引用
+- `let`: 用于块级作用域，并且可以更改值的引用
+- `const`: 用于块级作用域，但不能更改值的引用
 
 始终建议根据变量的用例使用合适的类型。
 
@@ -7192,15 +7073,15 @@ ECMAScript 版本 5 引入的 `use strict` 指令用于指示代码需要在严�
 
 | 数据类型 | 使用... 初始化 | 不要使用 |
 |---|---|---|
-| 数字 | 0 或 null（如果不能使用 0） | new Number() |
-| 布尔值 | false 或 null（如果不能使用 false） | new Boolean() |
-| 字符串 | '' | new String() |
-| 对象 | {} | new Object() |
-| 数组 | [] | new Array() |
-| 正则表达式 | /()/ | new RegExp() |
-| 函数 | function() {} | new Function() |
+| 数字 | `0` 或 `null`（如果不能使用 `0`） | `new Number()` |
+| 布尔值 | `false` 或 `null`（如果不能使用 `false`） | `new Boolean()` |
+| 字符串 | `''` | `new String()` |
+| 对象 | `{}` | `new Object()` |
+| 数组 | `[]` | `new Array()` |
+| 正则表达式 | `/()/` | `new RegExp()` |
+| 函数 | `function() {}` | `new Function()` |
 
-表 13.1：数据类型初始化
+**表 13.1：数据类型初始化**
 
 # 避免深层嵌套
 
@@ -7241,9 +7122,7 @@ function displayClass(class){
     displayStudent(students)
   }
 }
-```
 
-```javascript
 function displayStudent(students){
   for (var k=0; k<students.length; k++){
     console.log(students[k].personalDetails, 'Personal');
@@ -7254,12 +7133,9 @@ function displayStudent(students){
 
 （注：由于 OCR 文本存在大量重复和碎片，此处已根据提供的逻辑片段进行了重构和清理。）
 
-
-
-
 如下所示声明在某些浏览器中是危险的，并且您的应用程序可能会崩溃：
 
-```
+```javascript
 friends = {"firstName":"Abhilasha","lastName":"Sinha","gender":"Female", }
 ```
 
@@ -7281,9 +7157,10 @@ friends = {"firstName":"Abhilasha","lastName":"Sinha","gender":"Female", }
 - 使用注释清晰地标识一组 CSS 规则。
 
 在定义 CSS 时，采用自上而下的方法，顺序尽量与相关的 HTML 元素在页面上出现的顺序一致，以便关联和理解。
+
 以下代码展示了一组使用小写标签的结构良好的 HTML 代码：
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -7309,14 +7186,14 @@ JavaScript 代码用于为页面添加一些行为，这些行为在页面加载
 
 与其他属性相比，某些 CSS 选择器和属性的开销较大，应该根据当前的需求谨慎使用。如果您的需求绝对需要，请使用这些：
 
-- important：这会覆盖正常的优先级和级联，并具有最高优先级；因此应谨慎使用。
+- `!important`：这会覆盖正常的优先级和级联，并具有最高优先级；因此应谨慎使用。
 - 后代选择器（descendant selector）：它的开销很大，因为它需要检查后代元素。
-- position: absolute/fixed：这打破了元素的正常流，因此维护和处理多个绝对/固定定位的元素可能会成为一种开销：
-    - border-radius
-    - box-shadow
-    - filter
-    - nth-child
-- transform
+- `position: absolute/fixed`：这打破了元素的正常流，因此维护和处理多个绝对/固定定位的元素可能会成为一种开销：
+    - `border-radius`
+    - `box-shadow`
+    - `filter`
+    - `nth-child`
+- `transform`
 
 ## 明智地包含导入
 
@@ -7328,7 +7205,7 @@ JavaScript 代码用于为页面添加一些行为，这些行为在页面加载
 
 以下是使用无序列表和锚点标签实现的导航项列表：
 
-```
+```html
 <ul class="nav-items">
   <li><a href="#">首页</a></li>
   <li><a href="#">仪表板</a></li>
@@ -7343,7 +7220,7 @@ JavaScript 代码用于为页面添加一些行为，这些行为在页面加载
 
 请确保重新检查并移除所有此类不必要的容器标签：
 
-```
+```html
 <div>
   <ul class="nav-items">
     <li><a href="#">首页</a></li>
@@ -7353,7 +7230,7 @@ JavaScript 代码用于为页面添加一些行为，这些行为在页面加载
 <ul>
 ```
 
-## 避免标签限定（Tag qualify）
+## 避免标签限定
 
 标签限定是将额外的元素选择器与可能本身已经足够的选择器相关联的实践。
 
@@ -7400,10 +7277,6 @@ div#myID{
 
 编写简洁、便于下载和解析的代码。尽可能使用简写属性。避免重复代码并清理未使用代码。在可能合并选择器。您可以使用 CSS Compressor 和 Minifier 等工具对 CSS 文件进行压缩，以减小最终文件大小。
 
-
-
-
-
 善用你的代码。
 
 正如本章开头讨论的，代码的质量是区分新手与专业人士的标准。我们相信，如果你对编写最高质量的代码充满热情，那么编程看起来就像包裹在最珍贵艺术中的科学。否则，你最终只是会在追求完成任务的过程中使自己精疲力竭，并且极有可能创造出巨大的技术债。
@@ -7424,17 +7297,17 @@ div#myID{
   - D. 以上均不是
 
 **答案：选项 C。**
-Tag qualifying是将额外的元素选择器与可能本身已经足够的选择器关联的实践，这种做法应该被避免。
+Tag qualifying 是将额外的元素选择器与可能本身已经足够的选择器关联的实践，这种做法应该被避免。
 
 - 2. 这覆盖了正常的优先级和级联，并具有最高优先级，因此，应该节节使用。这是什么？
 
   - A. CSS Id 选择器
-  - B. !important
+  - B. `!important`
   - C. CSS z-index
   - D. position 属性
 
 **答案：选项 B。**
-应用到任何规则的 !important 选项会覆盖正常的优先级和级联，并具有最高优先级，因此应该节节使用。
+应用到任何规则的 `!important` 选项会覆盖正常的优先级和级联，并具有最高优先级，因此应该节节使用。
 
 - 3. 如果变量在 JavaScript 中没有声明，它们被视为全局变量，或者是因为没有使用严格模式（Strict mode）。
 
@@ -7446,13 +7319,13 @@ Tag qualifying是将额外的元素选择器与可能本身已经足够的选择
 
 - 4. ______ 用于严格比较，并且应该始终以这种形式使用。
 
-  - A. ===
-  - B. ==
-  - C. =
+  - A. `===`
+  - B. `==`
+  - C. `=`
   - D. 以上均不是
 
 **答案：选项 A。**
-=== 用于严格比较，只有当类型和值都相同时才返回 true，而 == 则会进行类型转换。
+`===` 用于严格比较，只有当类型和值都相同时才返回 `true`，而 `==` 则会进行类型转换。
 
 - 5. 下列哪哪项是不正确的编码最佳实践？
 
@@ -7469,20 +7342,19 @@ Tag qualifying是将额外的元素选择器与可能本身已经足够的选择
 ## React 简介
 
 > “不要仅仅为了比你的同辈或先辈更好而费恼。试着变得比你自己更好。”
+> - 威廉·福克纳（William Faulkner）。
 
-- 威廉·福克纳（William Faulkner）。
-
-在之前的章节中，我们学习了如何使用基础 Web 开发技能（包括 HTML、CSS 和 JavaScript）来构建 Web 应用。虽然这些知识足够入门 Web 开发领域，但现代 Web 开发远不止于原生 JavaScript（vanilla JavaScript）。今天有许多可用框架，在这个学习路径上可以做很多事情。框架/库避免了重复代码，并为整个应用程序提供了整体结构。有很多流行的框架，如 Angular、React、Vue、Ext JS 等，每种框架都可以单独写一本书。这些框架有助于构建具有交互性且直观的**单页应用（SPA），这有助于确保卓越的用户体验（UX）**。在本章中，你将介绍最流行的框架之一——React 及其核心概念。在随后的章节中，我们将涵盖 React 应用的完整 Web 开发周期，帮助你开始使用这个高效且灵活的框架。
+在之前的章节中，我们学习了如何使用基础 Web 开发技能（包括 HTML、CSS 和 JavaScript）来构建 Web 应用。虽然这些知识足够入门 Web 开发领域，但现代 Web 开发远不止于原生 JavaScript（vanilla JavaScript）。今天有许多可用框架，在这个学习路径上可以做很多事情。框架/库避免了重复代码，并为整个应用程序提供了整体结构。有很多流行的框架，如 Angular、React、Vue、Ext JS 等，每种框架都可以单独写一本书。这些框架有助于构建具有交互性且直观的**单页应用（SPA）**，这有助于确保卓越的用户体验（UX）。在本章中，你将介绍最流行的框架之一——React 及其核心概念。在随后的章节中，我们将涵盖 React 应用的完整 Web 开发周期，帮助你开始使用这个高效且灵活的框架。
 
 ## 结构
 
 - 什么是单页应用 (SPA)？
 - React 入门
 - JSX 简介
-- 元素 (Elements)、组件 (components) 和属性 (props)
+- 元素 (Elements)、组件 (Components) 和属性 (Props)
 - 状态 (State)、生命周期方法和虚拟 DOM
 - 传递方法引用
-- 组件样式样式
+- 组件样式
 - 列表和条件渲染
 - 表单
 - 组合 (Composition)
@@ -7496,13 +7368,13 @@ Tag qualifying是将额外的元素选择器与可能本身已经足够的选择
 
 在传统的 Web 应用中，每个请求都会提交给服务器，服务器会发送另一个 HTML 页面作为响应。因此，应用程序会在一个页面跳转到另一个页面，并在用户交互时加载多个 HTML 页面。这类似于我们在[第 9 章](#)中构建的应用程序，我们在两个 HTML 文件之间移动。
 
-SPA 是一种加载单个 HTML 页面（index.html）的 Web 应用，随着用户与应用程序交互，同一页面的部分会更新，以为用户提供无缝体验。通过 AJAX 请求获取数据而不会中断应用程序，并根据收到的响应更新应用程序的一部分。用户会觉得应用程序始终可用，因为没有重新加载也没有中间等待。整个应用程序更快且响应更迅速。下面的图显示了传统 Web 应用与单页应用的区别：
+SPA 是一种加载单个 HTML 页面（`index.html`）的 Web 应用，随着用户与应用程序交互，同一页面的部分会更新，以为用户提供无缝体验。通过 AJAX 请求获取数据而不会中断应用程序，并根据收到的响应更新应用程序的一部分。用户会觉得应用程序始终可用，因为没有重新加载也没有中间等待。整个应用程序更快且响应更迅速。下面的图显示了传统 Web 应用与单页应用的区别：
 
 | 传统 Web 应用 | 单页应用 |
 | :--- | :--- |
 | ![img/2252aec83cb16cb7664cdd5c34721306_0.png](img/2252aec83cb16cb7664cdd5c34721306_0.png) | |
 
-图 14.1：传统应用与单页应用
+**图 14.1：传统应用与单页应用**
 
 ## React 入门
 
@@ -7512,18 +7384,18 @@ React 是由 Facebook 开发的一个 JavaScript 库，处理视图层并有助�
 
 你可能会问，在不了解任何 React 的情况下如何做到这一点？你可以这样做有两个原因：
 
-- React 不是新技术。它是 JavaScript，你已经熟悉了。React 使用了我们之前看到的更多 ES6 语法，所以你可能复习一下。但本书将遵循 ES6 语法，因为它是最新且更流行的。此外， React 有一些新概念、术语和定义，我们将在这里学习，所以现在是开始的时候了。
+- React 不是新技术。它是 JavaScript，你已经熟悉了。React 使用了我们之前看到的更多 ES6 语法，所以你可能复习一下。但本书将遵循 ES6 语法，因为它是最新且更流行的。此外，React 有一些新概念、术语和定义，我们将在这里学习，所以现在是开始的时候了。
 - 在 React 中构建模板 SPA 只需要在命令行中执行一组命令。
 
 让我们开始吧。打开你的提示符。
 
 预备条件：从 https://nodejs.org/en/download/ 下载最新版本的 NodeJS。
 
-我们将安装一个用于创建 React 应用的工具。该工具命名为 create-react-app，它为你的 React 应用搭建了文件结构，并包含了开发服务器以及编译器（Babel）、打包器（Webpack）等开始使用 React 所的所有要求。
+我们将安装一个用于创建 React 应用的工具。该工具命名为 `create-react-app`，它为你的 React 应用搭建了文件结构，并包含了开发服务器以及编译器（Babel）、打包器（Webpack）等开始使用 React 所需的所有要求。
 
 这可以通过两个步骤完成：
 
-1. 使用 create-react-app 工具构建应用，为应用命名正确的名称，不应包含大写字母：
+1. 使用 `create-react-app` 工具构建应用，为应用命名正确的名称，不应包含大写字母：
 
 ```bash
 npx create-react-app my-first-app
@@ -7541,33 +7413,33 @@ cd my-first-app
 npm start
 ```
 
-应用程序将在你的默认浏览器中通过 localhost:3000 启动。
+应用程序将在你的默认浏览器中通过 `localhost:3000` 启动。
 
-你可以通过访问 localhost:3000 查看默认应用程序。我们的第一个 React 应用如下所示：
-
+你可以通过访问 `localhost:3000` 查看默认应用程序。我们的第一个 React 应用如下所示：
 
 ![](img/22525aec83cb16cb7664cd8d5c364721_308_0.png)
 
-**图 14.2:** 我使用 create-react-app 创建的第一个 React 应用程序
+**图 14.2:** 我使用 `create-react-app` 创建的第一个 React 应用程序
 
 要停止应用程序，请在命令提示符中使用 **Ctrl + C**。
-现在我们已经构建了第一个模板应用，让我们来看看项目的文件夹结构，并理解该结构的目的。我们将在编辑器中打开该文件夹并查看文件，如*图 14.3* 所示：
+
+现在我们已经构建了第一个模板应用，让我们来看看项目的文件夹结构，并理解该结构的目的。我们将在编辑器中打开该文件夹并查看文件，如**图 14.3** 所示：
 
 ![](img/22525aec83cb16cb7664cd8d5c364721_309_0.png)
 
-图 14.3：React 项目文件夹结构
+**图 14.3：React 项目文件夹结构**
 
 接下来的图显示了结构中的重要文件及其用途：
 
 ![](img/22525aec83cb16cb7664cd8d5c364721_310_0.png)
 
-图 14.4：项目文件夹/文件及其用途
+**图 14.4：项目文件夹/文件及其用途**
 
 在深入研究 React 细节之前，我们此时需要理解几点基础知识。
 
-## Src
+### Src
 
-包含我们编写的所有应用程序代码的文件夹。在 `my-first-app` 项目文件夹中，你在这里会看到很多文件。为了理解，你需要查看 .js 文件，它们是 React 组件代码。.css 扩展名的文件用于样式，定义相应的类来为 React 组件设置样式。该文件夹中的强制性文件是 `index.js`，应用程序会查找它，并包含了将 React 组件渲染到 DOM 中的代码。你可以删除 `src` 文件夹中的所有其他文件并仅保留 `index.js` 开始。
+包含我们编写的所有应用程序代码的文件夹。在 `my-first-app` 项目文件夹中，你在这里会看到很多文件。为了理解，你需要查看 `.js` 文件，它们是 React 组件代码。`.css` 扩展名的文件用于样式，定义相应的类来为 React 组件设置样式。该文件夹中的强制性文件是 `index.js`，应用程序会查找它，并包含了将 React 组件渲染到 DOM 中的代码。你可以删除 `src` 文件夹中的所有其他文件并仅保留 `index.js` 开始。
 
 让我们理解 `index.js` 代码的主要部分：
 
@@ -7578,24 +7450,25 @@ import App from './App';
 ReactDOM.render(<App />, document.getElementById('root'));
 ```
 
-这里 `App` 组件被渲染到 DOM 中。它在 `App.js` 文件中单独定义并在此处。
+这里 `App` 组件被渲染到 DOM 中。它在 `App.js` 文件中单独定义并在此处引入。
 
 `public` 文件夹中的 `index.html` 文件在 body 部分有以下行，它标记了 React 组件被渲染的 DOM 元素：
 `<div id="root"></div>`
 
-## React 和 React-DOM
+### React 和 React-DOM
 
 我们在 React 应用中导入并包含 `index.js` 的这两个文件是什么？React 被拆分为两个独立的库：
 
-- React：这个库知道什么是组件，以及如何让组件协同工作
-- React-DOM：这个库知道如何获取一个组件并将其渲染在 DOM 上
+- **React**：这个库知道什么是组件，以及如何让组件协同工作
+- **React-DOM**：这个库知道如何获取一个组件并将其渲染在 DOM 上
 
 我们理解这两个库如何包含定义组件和在 DOM 上渲染它们所需的功能。
+
 将模板 `create-react-app` 转换为一个简单的 Hello world 应用看起来如下：
 
 ![](img/22525aec83cb16cb7664cd8d5c364721_311_0.png)
 
-图 14.5：Hello world 代码(index.js) 和浏览器视图
+**图 14.5：Hello world 代码(index.js) 和浏览器视图**
 
 看到这段代码，你可能会感到纳奇，因为它看起来像 JavaScript，但其中嵌入了一些类似 HTML 的标签。我们将深入探讨并理解这是什么以及它是如何工作的。
 
@@ -7645,8 +7518,6 @@ var helloworld = React.createElement("h1", null, "Hello World");
 - 属性（一个包含属性的对象）
 - 子元素（标签内部的内容）
 
-
-
 有一个根节点标签来封装整个 JSX 内容。
 
 视图将使用单个 JSX 表达式或多个 JSX 表达式的组合来创建。JSX 是 React 编程不可或缺的一部分，由于它与 HTML 相似，因此很容易学习。
@@ -7666,7 +7537,6 @@ var helloworld = React.createElement("h1", null, "Hello World");
 ```jsx
 class NameChange extends React.Component {
   state = { Name: "React" };
-
   onChange = () => {
     if(this.state.Name=="React"){
       this.setState({
@@ -7678,7 +7548,6 @@ class NameChange extends React.Component {
       })
     }
   }
-
   render() {
     return (
       <div>
@@ -7696,7 +7565,6 @@ render(<NameChange />, document.getElementById('root'));
 ```jsx
 class NameChange extends React.Component {
   state = { Name: "React" };
-
   onChange = () => {
     if(this.state.Name=="React") {
       this.setState({
@@ -7708,7 +7576,6 @@ class NameChange extends React.Component {
       });
     }
   }
-
   render() {
     return (
       <div>
@@ -7718,19 +7585,18 @@ class NameChange extends React.Component {
     );
   }
 }
-
 ReactDOM.render(<NameChange />, document.getElementById('root'));
 ```
 
 ![](img/22525aec83cb16cb7664cd8d5c364721_316_0.png)
 
-图 14.7：处理按钮事件的事件处理器
+**图 14.7：处理按钮事件的事件处理器**
 
-## 元素、组件和 props
+## 元素、组件和 Props
 
-React 的构建块包括元素（elements）和组件（components）。
+React 的构建块包括元素（Elements）和组件（Components）。
 
-## 元素
+### 元素
 
 React 元素是最简单的构建块，描述了最终在屏幕上渲染的内容。每个元素对应屏幕上的一个 DOM 元素，通过 `React.createElement` 创建。它是一个虚拟表示组件所代表的 DOM 对象。它是一个不可变对象，不能更改，但每次都会创建一个新副本。
 
@@ -7763,7 +7629,7 @@ ReactDOM.render(<渲染什么>, <渲染到哪里>);
 
 React 元素仅仅是纯 JavaScript 对象，描述了组件的 HTML。元素就是我们之前看到的 `React.createElement()` 方法返回的内容，这也是 JSX 编译后的产物。
 
-## 组件
+### 组件
 
 组件是 React 应用的主要构建块，构成了 UI。一个 React UI 由多个独立的组件实例组成。每个组件以 JSX 表达式的形式返回某些 UI。
 
@@ -7779,10 +7645,10 @@ React 在内部创建、更新和销毁组件实例，以形成需要渲染到�
 
 根据定义方式，React 组件分为两类：
 
-- 函数组件（Functional components）
-- 类组件（Class components）
+- 函数组件（Functional Components）
+- 类组件（Class Components）
 
-## 函数组件
+### 函数组件
 
 函数组件是最简单的组件，因为它们只是 JavaScript 函数，接收一个名为 `props` 的参数并返回 JSX 代码，代表了在 DOM 中渲染的元素。
 
@@ -7826,13 +7692,12 @@ const HelloWorld = (props) => {
     </div>
   );
 };
+export default HelloWorld;
 ```
 
-export default HelloWorld;
+### 类组件
 
-## 类组件
-
-类组件使用 ES6 类定义。它有一个返回渲染 JSX 的 render 方法。
+类组件使用 ES6 类定义。它有一个返回渲染 JSX 的 `render` 方法。
 
 对于之前的 HelloWorld 示例，类组件如下：
 
@@ -7849,7 +7714,7 @@ class App extends React.Component {
 
 * 必须是 JS 类
 * 必须继承 `React.Component`
-* 必须定义返回内容的 render 方法
+* 必须定义返回内容的 `render` 方法
 
 类组件可以通过 `this.props` 访问 props：
 
@@ -7861,19 +7726,19 @@ class Welcome extends React.Component {
 }
 ```
 
-## 有状态组件和无状态组件
+### 有状态组件和无状态组件
 
 另一种将组件分为有状态和无状态组件的方法。其特征正如其名称一样简单：具有状态的组件和没有状态的组件。
 
 有状态组件是类组件以及带有 Hooks 的函数组件，它们可以处理状态和生命周期方法。我们将在本章的后续章节中详细介绍如何在无状态组件中定义和使用状态。异步函数无法在无状态组件中使用，只能在有状态组件中处理。
 
-props 是组件的属性或特性。这些用于从父组件向组件传递动态值。组件（函数或类）不应修改其 props。这样的组件被认为是纯的。React 组件对于其 props 来说就像纯函数；它们不应该修改 props。下图展示了如何在函数组件以及类组件中使用 props：
+### Props
 
-
+Props 是组件的属性或特性。这些用于从父组件向组件传递动态值。组件（函数或类）不应修改其 props。这样的组件被认为是纯的。React 组件对于其 props 来说就像纯函数；它们不应该修改 props。下图展示了如何在函数组件以及类组件中使用 props：
 
 当 prop 被包含在父组件的 JSX 体中时，它是作为组件标签上的属性传递的。在那里使用的属性名称将成为 prop 的名称，通过该名称可以在组件内部访问其值。
 
-对于函数组件，可以使用 `props.name` 来引用 prop，其中 `name` 是在父组件中指定的名称（如[图 14.6](Figure 14.6) 中的 first、second）。
+对于函数组件，可以使用 `props.name` 来引用 prop，其中 `name` 是在父组件中指定的名称。
 
 对于类组件，使用 `this.props.name` 来引用 prop（因为类组件有不同的实例）。
 
@@ -7881,7 +7746,7 @@ Props 用于从父组件将任何类型的值传递到子组件。当我们不�
 
 类组件创建其 props 的完整代码如下：
 
-```
+```jsx
 class ClassChild extends React.Component {
   render() {
     return <h1>Hello World! I am the 1st child, my name is {this.props.first}</h1>
@@ -7895,17 +7760,17 @@ class ClassChild extends React.Component {
 // props 的默认值可以在下方设置，
 // 组件名称为 ClassChild
 ClassChild.defaultProps = {
-first: "JavaScript"
+  first: "JavaScript"
 };
 ```
 
 若要对这些 props 进行类型检查，可以使用 `prop-types`。从 React v15.5 开始，`React.PropTypes` 位于不同的包中，因此可以使用 `npm install` 安装：
 
-```
+```bash
 npm install --save prop-types
 ```
 
-## PropTypes
+### PropTypes
 
 PropTypes 可用于为 props 关联某些特定类型。也可以用于为 props 添加自定义验证。
 
@@ -7913,104 +7778,39 @@ PropTypes 可用于为 props 关联某些特定类型。也可以用于为 props
 
 ```javascript
 import PropTypes from 'prop-types';
-
 class MyIntro extends React.Component {
   render() {
-  return (
-<h1>Hello, {this.props.name}</h1>
-  );
+    return (
+      <h1>Hello, {this.props.name}</h1>
+    );
+  }
 }
-```
-
-```javascript
 MyIntro.propTypes = {
-name: PropTypes.string
+  name: PropTypes.string
 };
 ```
 
 如果你现在尝试通过为 name prop 传递数字值来使用 Greeting 组件，你将得到以下警告：
 
-Warning: Failed prop type: Invalid prop 'name' of type 'number'
-supplied to 'MyIntro', expected 'string'.
+`Warning: Failed prop type: Invalid prop 'name' of type 'number' supplied to 'MyIntro', expected 'string'.`
 
 可以使用 propTypes 关联的其他类型和验证如下：
 
 | 类型 | 用法 |
 |---|---|
-| 标准数据类型 | propArray: PropTypes.array, |
+| 标准数据类型 | `propArray: PropTypes.array`, `propBool: PropTypes.bool`, `propFunc: PropTypes.func`, `propNumber: PropTypes.number`, `propObject: PropTypes.object`, `propString: PropTypes.string`, `propSymbol: PropTypes.symbol` |
+| 必需类型 | 上述列表仅为可选。你可以通过添加 `isRequired` 将其设为必需 prop，以确保在未提供 prop 值时显示警告。 |
+| 元素类型 | `propElement: PropTypes.element` |
+| 类实例 | `propClass: PropTypes.instanceOf(MyClass)` |
+| 枚举值 | `propEnum: PropTypes.oneOf(['First', 'Second', 'Third'])` |
+| 联合类型 | `propSelect: PropTypes.oneOfType([PropTypes.string, PropTypes.number, PropTypes.instanceOf(MyClass)])` |
+| 数组/对象类型 | `propArrayOf: PropTypes.arrayOf(PropTypes.string)`, `propObjectOf: PropTypes.objectOf(PropTypes.number)` |
+| 形状验证 | `propObjectWithShape: PropTypes.shape({color: PropTypes.string, fontSize: PropTypes.number})` |
+| 自定义验证 | `customValProp: function(props, propName, componentName) { if (!(propName in props)) { return new Error("missing new country"); } if (props[propName] === "India") { return new Error("Invalid prop '" + propName + "' supplied to '" + componentName + "'. Validation failed."); } }` |
 
-## React 元素
+**表 14.1：带有用法的 Prop-type 验证**
 
-如果 prop 是类的实例。
-
-如果你的 prop 限于特定的值列表（如枚举）。
-
-你的 prop 可能是许多类型之一。
-
-你的 prop 可能是某种类型的数组，或者是具有特定类型属性值的对象。一个对象具有给定键和值类型的特定形状。
-
-自定义验证将检查任何逻辑并返回错误对象。同样适用于 `arrayOf` 和 `objectOf`，其中验证函数应用于每个元素。
-
-```
-propBool: PropTypes.bool,
-propFunc: PropTypes.func,
-propNumber: PropTypes.number,
-propObject: PropTypes.object,
-propString: PropTypes.string,
-propSymbol: PropTypes.symbol
-```
-上述列表仅为可选。你可以通过添加 `isRequired` 将其设为必 prop，以确保在未提供 prop 值时显示警告。
-
-```
-propElement: PropTypes.element
-```
-
-```
-propClass: PropTypes.instanceOf(MyClass)
-```
-
-```
-propEnum: PropTypes.oneOf(['First',
-'Second', ''Third'])
-```
-
-```
-propSelect: PropTypes.oneOf([
-PropTypes.string,
-PropTypes.number,
-PropTypes.instanceOf(MyClass)
-])
-```
-
-```
-propArrayOf:
-PropTypes.arrayOf(PropTypes.string)
-propObject:
-PropTypes.object(PropTypes.number)
-propObjectWithShape: PropTypes.shape({
-color: PropTypes.string,
-fontSize: PropTypes.number
-})
-```
-
-```
-customValProp:function(props, propName, componentName) {
-  if (!(propName in props)) {
-    return new Error("missing new country");
-  }
-  if (props[propName] === "India") {
-    return new Error("Invalid prop ' +
-    propName +
-    ' supplied to ' +
-    componentName +
-    '. Validation failed.');
-  }
-}
-```
-
-表 14.1：带有用法的 Prop-type 验证
-
-# 使用 Props 在组件之间传递方法引用
+## 使用 Props 在组件之间传递方法引用
 
 如果子组件需要使用某个方法，也可以作为 prop 传递：
 
@@ -8031,58 +7831,61 @@ customValProp:function(props, propName, componentName) {
 
 ```jsx
 <Person
-  click={() => this.switchNameHandler('JavaScript!')}> My Hobbies:
-Reading</Person>
+  click={() => this.switchNameHandler('JavaScript!')}> My Hobbies: Reading</Person>
 ```
 
-# State 在在 React v16.8 之前，我们必须通过扩展 `React.Component` 来实现类组件以获取状态功能，而函数组件仅用于展示，没有任何状态。有了 hooks，函数组件变得同样强大并可以处理状态。（我们将在 hooks 部分详细探讨这一点。现在我们关注类组件以及它们如何使用状态）。要在类组件中使用状态，主要有以下五个步骤：
+## State
 
-- 1. 识别状态结构，它由与组件相关的数据组成，这些数据在组件的周期期间可能会变化并影响组件的行为。
-- 2. 确定结构后，在类的构造函数中初始化状态对象。这是直接为状态赋值唯一的地方，所示：
+在 React v16.8 之前，我们必须通过扩展 `React.Component` 来实现类组件以获取状态功能，而函数组件仅用于展示，没有任何状态。有了 Hooks，函数组件变得同样强大并可以处理状态。（我们将在 Hooks 部分详细探讨这一点。现在我们关注类组件以及它们如何使用状态）。
+
+要在类组件中使用状态，主要有以下五个步骤：
+
+1. 识别状态结构，它由与组件相关的数据组成，这些数据在组件的周期期间可能会变化并影响组件的行为。
+2. 确定结构后，在类的构造函数中初始化状态对象。这是直接为状态赋值唯一的地方，如所示：
+
 ```javascript
 constructor(props) {
   this.state = {bookName: "Thinking in JavaScript", publicationYear: 2014};
 }
 ```
-- 3. 状态的值可以通过 `this.state` 访问，并在需要的地方使用。由于它是类组件的状态，因此如下所示使用 `this` 关键字：
+
+3. 状态的值可以通过 `this.state` 访问，并在需要的地方使用。由于它是类组件的状态，因此如下所示使用 `this` 关键字：
+
 ```javascript
 render() {
-  <div>
-    <h2>Book:{this.state.bookName}, Published in {this.state.publicationYear}</h2>
-  </div>
+  return (
+    <div>
+      <h2>Book:{this.state.bookName}, Published in {this.state.publicationYear}</h2>
+    </div>
+  );
 }
 ```
-- 4. 接下来，识别在哪些事件和交互上应该更新状态以以便组件重新渲染。在当前的示例中，包含了一个按钮，点击该按钮时状态将发生更改：
+
+4. 接下来，识别在哪些事件和交互上应该更新状态以便组件重新渲染。在当前的示例中，包含了一个按钮，点击该按钮时状态将发生更改：
+
 ```html
 <button onClick={this.handleChange}>Click to change!</button>
 ```
-- 5. 始终使用所示的 `setState` 方法更新状态。永远不要直接赋值新值：
+
+5. 始终使用所示的 `setState` 方法更新状态。永远不要直接赋值新值：
 
 ```javascript
 handleChange() {
   if(this.state.bookName=="Thinking in JavaScript"){
     this.setState({
-      bookName: "React Hooks"
+      bookName: "React Hooks",
+      publicationYear: 2019
+    });
+  } else {
+    this.setState({
+      bookName: "JavaScript: The Good Parts",
+      publicationYear: 2008
     });
   }
 }
 ```
 
-
-
-```javascript
-bookName: "JavaScript: The Good Parts",
-  publicationYear: 2008
-});
-} else {
-  this.setState({
-    bookName: "Thinking in JavaScript", publicationYear: 2014
-  });
-}
-}
-```
-
-在上面的示例中，状态（state）包含两个部分：{bookName, publicationYear}。在用户操作（点击按钮）时，值会在两组值之间切换。在点击处理程序中，使用 `this.setState` 方法来更改状态的值。
+在上面的示例中，状态（state）包含两个部分：`{bookName, publicationYear}`。在用户操作（点击按钮）时，值会在两组值之间切换。在点击处理程序中，使用 `this.setState` 方法来更改状态的值。
 
 ### 操作状态
 
@@ -8094,10 +7897,8 @@ bookName: "JavaScript: The Good Parts",
 
 ```javascript
 deletePersonHandler = (personIndex) => {
-  // const persons = this.state.persons.slice();makes a new copy
-  // of persons
-  const persons = [...this.state.persons];//makes a new copy of
-  // persons
+  // const persons = this.state.persons.slice(); makes a new copy of persons
+  const persons = [...this.state.persons]; // makes a new copy of persons
   persons.splice(personIndex, 1);
   this.setState({persons});
 }
@@ -8123,13 +7924,13 @@ setState(
 );
 ```
 
-建议使用生命周期方法 `shouldComponentUpdate` 或 `componentDidUpdate` 而不是使用回调。
 
-接下来，我们将介绍不同的生命周期方法以及它们的使用时机。
+
+# React 生命周期与应用构建
 
 ## 生命周期方法
 
-本节讨论的生命周期方法适用于类组件（class components）。函数组件可以使用 Hooks 来处理生命周期相关的事件，我们将在 Hooks 章节中讨论。
+本节讨论的生命周期方法适用于类组件。函数组件可以使用 Hooks 来处理生命周期相关的事件，我们将在 Hooks 章节中讨论。
 
 每个 React 组件都有一个生命故事，它会经历某些阶段。组件可以使用另一个组件的 `render` 方法渲染，也可以直接在 `React.render` 方法中渲染。
 
@@ -8139,15 +7940,15 @@ setState(
 
 继承 `React.Component` 的 React 类组件会经历以下阶段：
 
-- 挂载（Mounting）
-- 更新（Updating）
-- 卸载（Unmounting）
+- 挂载
+- 更新
+- 卸载
 
-### 挂载（Mounting）
+### 挂载
 
 挂载是指将组件加载到 DOM 上。该阶段包含一组方法，这些方法在组件初始化并加载到 DOM 时被调用。下图显示了在挂载组件过程中调用的不同方法。
 
-### 组件生命周期方法：挂载
+#### 组件生命周期方法：挂载
 
 ![](img/22525aec83cb16cb7664cd8d5c364721_328_0.png)
 
@@ -8155,58 +7956,58 @@ setState(
 
 让我们详细查看这些方法：
 
-- *constructor*：任何类的构造器都是每当创建类组件时第一个被调用的方法。`constructor` 的执行阶段被称为单独的初始化阶段，因为它用于初始化变量和组件状态。该方法在组件的整个生命周期中只被调用一次。
-- *static getDerivedStateFromProps*：正如该生命周期方法的名称，它用于从 props 获取派生状态。当本地状态依赖于 props 的值时，此生命周期方法非常，这样每当 props 变化时，本地状态也保持同步。该方法在构造函数之后被调用，预期返回一个用于更新组件本地状态的对象。如果返回 `null`，则意味着本地状态没有任何更改。`getDerivedStateFromProps` 方法是静态的，因此它无法访问 `this` 关键字。该方法是 React v16.3+ 中引入的新功能，是 `componentWillReceiveProps`（旧版本）更安全的替代方案。它应该是一个纯函数，不应该编写任何产生副作用或非预期更改的代码。
-- *render*：这是 React 组件中最重要的方法，必须实现。作为 `render` 方法的一部分，它准备了最终挂载到浏览器 DOM 的实际元素。该方法是纯的，在提供相同输入时，行为应该保持一致并返回相同的输出。该方法也不应该导致任何非预期的更改，如更新状态。
-- *componentDidMount*：该生命周期方法在组件首次渲染后被调用。此方法被认为是调用 API 以获取任何外部数据的最佳位置。所有与浏览器 DOM 的直接交互以及与 highcharts 或 D3 等第三方库的集成都应该在这里完成。例如，此方法也是根据数据绘制图形和图表的最佳位置。
+- `constructor`：任何类的构造器都是每当创建类组件时第一个被调用的方法。`constructor` 的执行阶段被称为单独的初始化阶段，因为它用于初始化变量和组件状态。该方法在组件的整个生命周期中只被调用一次。
+- `static getDerivedStateFromProps`：正如该生命周期方法的名称，它用于从 props 获取派生状态。当本地状态依赖于 props 的值时，此生命周期方法非常有用，这样每当 props 变化时，本地状态也保持同步。该方法在构造函数之后被调用，预期返回一个用于更新组件本地状态的对象。如果返回 `null`，则意味着本地状态没有任何更改。`getDerivedStateFromProps` 方法是静态的，因此它无法访问 `this` 关键字。该方法是 React v16.3+ 中引入的新功能，是 `componentWillReceiveProps`（旧版本）更安全的替代方案。它应该是一个纯函数，不应该编写任何产生副作用或非预期更改的代码。
+- `render`：这是 React 组件中最重要的方法，必须实现。作为 `render` 方法的一部分，它准备了最终挂载到浏览器 DOM 的实际元素。该方法是纯的，在提供相同输入时，行为应该保持一致并返回相同的输出。该方法也不应该导致任何非预期的更改，如更新状态。
+- `componentDidMount`：该生命周期方法在组件首次渲染后被调用。此方法被认为是调用 API 以获取任何外部数据的最佳位置。所有与浏览器 DOM 的直接交互以及与 highcharts 或 D3 等第三方库的集成都应该在这里完成。例如，此方法也是根据数据绘制图形和图表的最佳位置。
 
-### 更新（Updating）
+### 更新
 
 一旦组件完成渲染，由于用户交互或依赖组件的变化导致状态更改或传入 props 变化，DOM 可能会发生更新，从而触发更新阶段。调用的更新相关生命周期方法有：
 
-### 组件生命周期方法：更新
+#### 组件生命周期方法：更新
 
 ![](img/22525aec83cb16cb7664cd8d5c364721_330_0.png)
 
-- *static getDerivedStateFromProps*：该方法在每次渲染之前被调用，基于 prop 值更改状态。返回更新的状态。
-- *shouldComponentUpdate*：此方法通过返回 `true` 或 `false` 帮助决定是否继续更新。默认情况下，`shouldComponentUpdate` 返回 `true`。如果我们不想重新渲染组件，则返回 `false`。
+- `static getDerivedStateFromProps`：该方法在每次渲染之前被调用，基于 prop 值更改状态。返回更新的状态。
+- `shouldComponentUpdate`：此方法通过返回 `true` 或 `false` 帮助决定是否继续更新。默认情况下，`shouldComponentUpdate` 返回 `true`。如果我们不想重新渲染组件，则返回 `false`。
+
 ```javascript
-shouldComponentUpdate(nextProps, nextState){ // 返回布尔值
+shouldComponentUpdate(nextProps, nextState) { // 返回布尔值
   return true;
 }
 ```
-- *render*：当 `shouldComponentUpdate` 返回 `true` 时，更新的内容将渲染到屏幕。如果 `shouldComponentUpdate` 返回 `false`，`render` 方法不会被调用。
-- *getSnapshotBeforeUpdate*：该生命周期方法在 React 元素渲染之后、实际 DOM 根据差异更新之前被调用。此阶段被称为提交阶段（commit phase）。在此处，你可以引用之前的 props 和状态值。如果 `getSnapshotBeforeUpdate` 返回一个值，该值将作为第三参数传递给 `componentDidUpdate` 方法。这对于需要同步渲染前后状态的 UI 场景非常有用。如果你想维护之前渲染 DOM 与最新更新 DOM 的同步，此方法非常有用。例如，滚动位置、音频视频、文本选择、光标位置等。
-- *componentDidUpdate*：更新阶段的生命周期方法在任何情况下都会调用（即使最终输出没有变化）。它作为更新过程的最后一步被调用，当新更新的组件在 DOM 中更新或未更新时。此方法用于重新触发使用的第三方库，并让这些库重新加载：
+
+- `render`：当 `shouldComponentUpdate` 返回 `true` 时，更新的内容将渲染到屏幕。如果 `shouldComponentUpdate` 返回 `false`，`render` 方法不会被调用。
+- `getSnapshotBeforeUpdate`：该生命周期方法在 React 元素渲染之后、实际 DOM 根据差异更新之前被调用。此阶段被称为提交阶段。在此处，你可以引用之前的 props 和状态值。如果 `getSnapshotBeforeUpdate` 返回一个值，该值将作为第三参数传递给 `componentDidUpdate` 方法。这对于需要同步渲染前后状态的 UI 场景非常有用。如果你想维护之前渲染 DOM 与最新更新 DOM 的同步，此方法非常有用。例如，滚动位置、音频视频、文本选择、光标位置等。
+- `componentDidUpdate`：更新阶段的生命周期方法在任何情况下都会调用（即使最终输出没有变化）。它作为更新过程的最后一步被调用，当新更新的组件在 DOM 中更新或未更新时。此方法用于重新触发使用的第三方库，并让这些库重新加载：
 
 ```javascript
 componentDidUpdate() {
   console.log('Component DID UPDATE!')
 }
 ```
+
 图 14.10：更新阶段：生命周期方法
 
-### 卸载（Unmounting）
+### 卸载
 
 在此阶段，UI 不再需要组件，组件将被卸载或从 DOM 中移除。卸载方法包括：
 
-### 组件生命周期方法：卸载
+#### 组件生命周期方法：卸载
 
 ![](img/22525aec83cb16cb7664cd8d5c364721_331_0.png)
 
 图 14.11：卸载阶段：生命周期方法
 
-componentWillUnmount：在组件卸载/从 DOM 移除之前，该方法结束了组件的故事：
+`componentWillUnmount`：在组件卸载/从 DOM 移除之前，该方法结束了组件的故事：
 
 - 在此方法中，我们执行与组件相关的清理工作。
 - 例如，在注销时，清除用户信息和所有的身份验证令牌
 
-
-
-
 在卸载主组件之前进行清理：
 
-```
+```javascript
 componentWillUnmount() {
   this.resetLocalStorage();
   this.clearSession();
@@ -8217,18 +8018,18 @@ componentWillUnmount() {
 
 ## 虚拟 DOM
 
-Virtual DOM 是我们在 浏览器中看到的 DOM 在内存中的 JavaScript 对象表示。虚拟 DOM 的概念提升了 React 应用程序的性能。
+Virtual DOM 是我们在浏览器中看到的 DOM 在内存中的 JavaScript 对象表示。虚拟 DOM 的概念提升了 React 应用程序的性能。
 
 让我们来理解它是如何工作的：
 
 - 当我们渲染一个 JSX 元素时，每一个虚拟 DOM 对象都会被更新，因为虚拟 DOM 的更新速度非常快。
-- 一旦虚拟 DOM 更新完成，React 会将虚拟 DOM 与更新前恰好拍摄的虚拟 DOM 快照（snapshot）进行比较。
-- 通过将新的虚拟 DOM 与更新前的版本进行比较，React 可以精确地找出出哪些虚拟 DOM 对象发生了变化。这个过程被称为 diff。
+- 一旦虚拟 DOM 更新完成，React 会将虚拟 DOM 与更新前恰好拍摄的虚拟 DOM 快照进行比较。
+- 通过将新的虚拟 DOM 与更新前的版本进行比较，React 可以精确地找出哪些虚拟 DOM 对象发生了变化。这个过程被称为 diff。
 - 一旦 React 知道虚拟 DOM 对象发生了变化，它将只更新真实 DOM 中的那些对象。真实 DOM 上的变化会导致屏幕的变化。
 
 下图图化地展示了这些步骤：
 
-## 虚拟 DOM 如何工作
+### 虚拟 DOM 如何工作
 
 ![](img/22525aec83cb16cb7664cd8d5c364721_333_0.png)
 
@@ -8236,7 +8037,7 @@ Virtual DOM 是我们在 浏览器中看到的 DOM 在内存中的 JavaScript �
 
 CSS 样式可以通过两种方式应用于 React 组件。
 
-## 使用外部 CSS 样式
+### 使用外部 CSS 样式
 
 这是最常用的方法，即我们定义外部 CSS 文件，其中包含需要应用于我们组件的 CSS 代码。以这种方式定义的 CSS 样式具有全局作用域，可以通过直接导入文件用于应用程序任何组件的任何元素。任何想要应用该样式的组件都应该显式导入 CSS 文件。
 
@@ -8244,24 +8045,27 @@ CSS 样式可以通过两种方式应用于 React 组件。
 
 可以使用 `className` 属性将样式应用于特定的组件：
 
-```
+```jsx
 <div className="App">
-<h1>Hi, I'm a React App</h1></div>
+  <h1>Hi, I'm a React App</h1>
+</div>
 ```
 
-<p>这真的有效!</p><div>
+这真的有效!
 
-## 内联样式
+### 内联样式
 
-样式定义在特定组件中，并仅应用于该组件的元素。样式可以定义为带有驼峰命名法（CamelCase）CSS 属性名的变量，以便在 JavaScript 中。通过 `style` JSX 属性将样式应用于元素。作为内联样式使用的 CSS 属性，在名称以连字符分隔的地方都写成小驼峰命名法。例如，`background-color` 使用为 `backgroundColor`：
+样式定义在特定组件中，并仅应用于该组件的元素。样式可以定义为带有驼峰命名法 CSS 属性名的变量，以便在 JavaScript 中使用。通过 `style` JSX 属性将样式应用于元素。作为内联样式使用的 CSS 属性，在名称以连字符分隔的地方都写成小驼峰命名法。例如，`background-color` 使用为 `backgroundColor`：
 
-```
-const style= { backgroundColor : 'inherit',
-  font : 'inherit',
-  border : '1px solid red',
-  padding : '8px'
+```javascript
+const style = { 
+  backgroundColor: 'inherit',
+  font: 'inherit',
+  border: '1px solid red',
+  padding: '8px'
 }
-const person = ( props ) => {
+
+const person = (props) => {
   return (
     <div style={style}>
       <p onClick={props.click}>I am {props.name} and I am {props.age} years old!</p>
@@ -8270,6 +8074,7 @@ const person = ( props ) => {
     </div>
   );
 }
+
 export default person;
 ```
 
@@ -8281,34 +8086,34 @@ export default person;
 
 我们已经看到 React 只是嵌入了一些看起来像 HTML 的 JSX 和 CSS 样式的 JavaScript，用于构建 UI 视图。在本节中，你将看到如何在 React 中处理内容的条件渲染和项目列表渲染。
 
-## 列表
+### 列表
 
-列表是内容不可或缺的一部分，我们已经看到了如何在 HTML 中渲染不同的列表。我们可以使用 `ul`、`ol` 和 `li` 标签在 JS 中渲染列表，但我们将从 JavaScript 向列表馈送数据。除了标准标签外，任何 UI 组件都可以被重复以以列表格式渲染。
+列表是内容不可或缺的一部分，我们已经看到了如何在 HTML 中渲染不同的列表。我们可以使用 `ul`、`ol` 和 `li` 标签在 JS 中渲染列表，但我们将从 JavaScript 向列表馈送数据。除了标准标签外，任何 UI 组件都可以被重复以列表格式渲染。
 
 为了重复内容，取决于内容是数组格式还是对象格式，可以使用像 `map` 这样的 JavaScript 方法来渲染列表。
 
 `map` 函数可以用于遍历并返回每个元素的 JSX，如下所示：
 
-```
+```javascript
 state = {
-ncourses:[
-{name: "React", prereq: "JavaScript, CSS, HTML" },
-{name: "JavaScript", prereq: "None" },
-{name: "HTML", prereq: "None" },
-{name: "CSS", prereq: "None" }
-]};
+  courses: [
+    {name: "React", prereq: "JavaScript, CSS, HTML" },
+    {name: "JavaScript", prereq: "None" },
+    {name: "HTML", prereq: "None" },
+    {name: "CSS", prereq: "None" }
+  ]
+};
 
 render() {
   return (
-  <div>
-<h2>Hello!</h2>
-{ this.state.courses.map((course, index)=>{
-    return <Course key={index} name={course.name} prereq=
-{course.prereq}
-    click={(e)=>this.nameChangeHandler(e, index)}/>
-})}
-</div>
-);
+    <div>
+      <h2>Hello!</h2>
+      { this.state.courses.map((course, index) => {
+        return <Course key={index} name={course.name} prereq={course.prereq}
+          click={(e) => this.nameChangeHandler(e, index)} />
+      })}
+    </div>
+  );
 }
 ```
 
@@ -8318,30 +8123,30 @@ render() {
 
 以下代码使用一个 `course.js` 子组件，通过 `map` 函数在父组件 `CourseList` 中将其作为列表渲染：
 
-```
+```javascript
 class CourseList extends React.Component {
   state = {
     courses: [
       { name: 'React', prereq: 'JavaScript,CSS,HTML' },
       { name: 'HTML', prereq: 'React' },
-      { name: 'CSS', prereq: 'HTML' } // 修正了原文可能存在的逻辑错误或保持原意
+      { name: 'CSS', prereq: 'HTML' }
     ]
   };
   // ... (省略部分以保持结构对应)
+}
 ```
-*(注：由于原文示例代码片段处有断裂，翻译保持了其逻辑结构)*
 
-```
+```javascript
 import React from 'react';
 import './index.css';
 
-const course = ( props ) => {
+const course = (props) => {
   return (
     <div className="course">
       <h3>{props.name}</h3>
     </div>
   );
-
+}
 ```
 
 图 14.13: 渲染课程列表的代码
@@ -8349,51 +8154,47 @@ const course = ( props ) => {
 Hello!
 
 ## Course: React
-
 JavaScript, CSS, HTML
 
 ## Course: JavaScript
-
 None
 
 ## Course: HTML
-
 None
 
 ## Course: CSS
-
 None
 
-## 条件渲染
+### 条件渲染
 
 条件渲染就像使用 JavaScript 的条件语句——`if...else`、三元运算符。
 
-现在在同一个示例中，通过设置一个标记来条件地渲染文本框。
+现在在同一个示例中，通过设置一个标记来条件地渲染文本框，`true` 或 `false`。
 
-`true` 或 `false`。
-
-```
-//index.js
+```javascript
+// index.js
 class CourseList extends React.Component {
   state = {
-    courses=[
-      {name: "React", prereq: "JavaScript, CSS, HTML", changeFlag:true},
-      {name: "JavaScript", prereq: "None", changeFlag:false},
-      {name: "HTML", prereq: "None", changeFlag:true},
-      {name: "CSS", prereq: "None", changeFlag:false}
+    courses: [
+      {name: "React", prereq: "JavaScript, CSS, HTML", changeFlag: true},
+      {name: "JavaScript", prereq: "None", changeFlag: false},
+      {name: "HTML", prereq: "None", changeFlag: true},
+      {name: "CSS", prereq: "None", changeFlag: false}
     ];
   }
-  nameHandler(event, index){
-    let courses=[...this.state.courses];
-    courses[index].name=event.target.value;
-    this.setState(courses);
+
+  nameHandler(event, index) {
+    let courses = [...this.state.courses];
+    courses[index].name = event.target.value;
+    this.setState({courses});
   }
+
   render() {
     return (
       <div>
         <h2>Hello!</h2>
-        {this.state.courses.map((course, index) =>(
-          <Course key={index} name={course.name} prereq={course.prereq} changeFlag={course.changeFlag} click={(e)=>this.nameHandler(e,index)} />
+        {this.state.courses.map((course, index) => (
+          <Course key={index} name={course.name} prereq={course.prereq} changeFlag={course.changeFlag} click={(e) => this.nameHandler(e, index)} />
         ))}
       </div>
     );
@@ -8403,14 +8204,14 @@ class CourseList extends React.Component {
 
 `changeFlag` 可用于条件地渲染输入文本框，如下所示：
 
-```
-const course = ( props ) => {
+```javascript
+const course = (props) => {
   return (
-<div className="course">
-<h2>Course: {props.name}</h2>
-<p>Course: {props.prereq}</p>
-{props.changeFlag?<input type="text" onChange={props.click} value={props.name} />:null}
-</div>
+    <div className="course">
+      <h2>Course: {props.name}</h2>
+      <p>Course: {props.prereq}</p>
+      {props.changeFlag ? <input type="text" onChange={props.click} value={props.name} /> : null}
+    </div>
   );
 }
 ```
@@ -8419,18 +8220,13 @@ const course = ( props ) => {
 
 ## 表单
 
-另一个我们之前在 HTML 中探索过的重要内容类型
-
-
-
-
 本章介绍表单。相同的表单相关标签也可以在 JSX 中用于 React 表单。React 表单处理数据以及数据更改的方式将表单分为两种类型：受控表单和非受控表单。
 
-## 非受控表单 (Uncontrolled forms)
+### 非受控表单
 
 非受控表单是在内部维护自己的状态。为了访问 DOM 元素并找到当前值，你可以使用 ref。
 
-Refs：Refs 代表访问在渲染方法中创建的 DOM 节点或 React 元素的方式。Refs 使用 React.createRef() 创建，并通过 ref 属性附加到 React 元素上。
+Refs：Refs 代表访问在渲染方法中创建的 DOM 节点或 React 元素的方式。Refs 使用 `React.createRef()` 创建，并通过 `ref` 属性附加到 React 元素上。
 
 非受控表单输入类似于传统的 HTML 表单输入，你需要在需要时通过从 ref 字段中拉取并获取值。
 
@@ -8441,6 +8237,7 @@ Refs：Refs 代表访问在渲染方法中创建的 DOM 节点或 React 元素�
 ```javascript
 class NameForm extends React.Component {
   constructor(props) {
+    super(props);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.input = React.createRef();
   }
@@ -8464,9 +8261,9 @@ class NameForm extends React.Component {
 }
 ```
 
-## 受控表单 (Controlled forms)
+### 受控表单
 
-与允许 HTML 元素维护自身状态的非受控表单不同，受控表单将 React状态作为“单一事实来源”。
+与允许 HTML 元素维护自身状态的非受控表单不同，受控表单将 React 状态作为“单一事实来源”。
 
 渲染表单的 React 组件还将跟踪表单数据发生的变化以及用户输入了什么值。
 
@@ -8479,7 +8276,6 @@ class NameForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {value: ''};
-
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
@@ -8506,36 +8302,36 @@ class NameForm extends React.Component {
 }
 ```
 
-## 受控表单与非受控表单的区别：
+### 受控表单与非受控表单的区别
 
 - 在受控组件中，表单数据由 React 组件处理，而非受控组件中，表单数据由 DOM 本身处理。
 - 非受控表单用于输入较少的简单表单，而受控表单更适用于需要对所有输入数据更改进行跟踪和处理的大型表单。
 
-## 组合 (Composition)
+## 组合
 
 React 中的组合概念简单来说就是不同的组件如何组合成更大的组件，最终构成 UI。组件可以在任何需要的地方作为另一个组件被复用。可以先创建一个基础组件，任何特化版本都可以包含基础组件以及任何额外的逻辑或组件，以组合成更大、更专门的组件。
 
 ## Hooks
 
-我们在前面的章节中多次提到 hooks。还记得吗？Hooks 提供了什么？Hooks 为函数组件添加了状态和生命周期方法的功能，使得函数组件现在可以用于定义智能组件，而不是像 React v16.8 (hooks) 之前那样仅作为展示性组件。Hooks 还允许在多个函数组件之间复用与它们相关的逻辑。我们无法在类组件中做到这一点，因为方法和属性属于特定的实例。在本节中，我们将探索重要的 hooks 以及它们带来的功能。
+我们在前面的章节中多次提到 hooks。Hooks 提供了什么？Hooks 为函数组件添加了状态和生命周期方法的功能，使得函数组件现在可以用于定义智能组件，而不是像 React v16.8 (hooks) 之前那样仅作为展示性组件。Hooks 还允许在多个函数组件之间复用与它们相关的逻辑。我们无法在类组件中做到这一点，因为方法和属性属于特定的实例。在本节中，我们将探索重要的 hooks 以及它们带来的功能。
 
-## useState hook
+### useState hook
 
-useState 让函数组件具有使用本地状态的能力。该函数接收状态的初始值作为参数，并返回一个包含两个元素的数组，其中包含当前状态和一个更新该值的函数。`useState` 接收初始值作为输入（在下面的示例中为空数组 `[]`），并返回当前状态和更新状态的函数（等同于类组件中的 `setState` 函数）：
+`useState` 让函数组件具有使用本地状态的能力。该函数接收状态的初始值作为参数，并返回一个包含两个元素的数组，其中包含当前状态和一个更新该值的函数。`useState` 接收初始值作为输入（在下面的示例中为空数组 `[]`），并返回当前状态和更新状态的函数（等同于类组件中的 `setState` 函数）：
 
 ```javascript
 const [users, setUsers] = useState([]);
 ```
 
-现在，我们可以使用返回的返回值（`users`）获取当前状态，并在需要更新状态时使用返回的返回值（`setUsers`）。
+现在，我们可以使用返回的值（`users`）获取当前状态，并在需要更新状态时使用返回的函数（`setUsers`）。
 
 这一切可以在不绑定 `this` 关键字的情况下实现，因为这一切都属于函数而不是类。这让我们在函数组件中获得了与类组件相似的行为，但代码更轻量。
 
-## useEffect hook
+### useEffect hook
 
 早些时候学过在类组件中，我们使用生命周期方法 `componentDidMount` 和 `componentDidUpdate` 来处理任何副作用，如 API 请求、手动 DOM 变更和日志记录。
 
-useEffect hook 以相同的方式为函数组件处理副作用，提供了类似的能力和更好的灵活性。此 hook 包含了在首次渲染和每次连续渲染后执行的逻辑，类似于 `componentDidMount` 和 `componentDidUpdate`。
+`useEffect` hook 以相同的方式为函数组件处理副作用，提供了类似的能力和更好的灵活性。此 hook 包含了在首次渲染和每次连续渲染后执行的逻辑，类似于 `componentDidMount` 和 `componentDidUpdate`。
 
 `useEffect` 接收一个强制参数，即在渲染后执行的函数。该函数的默认行为是在每次渲染方法执行后执行它。
 
@@ -8547,82 +8343,74 @@ useEffect hook 以相同的方式为函数组件处理副作用，提供了类�
 const Users = props => {
   const [users, setUsers] = useState([]); // 设置状态
   useEffect(() => { // 后执行
-  console.log("Effect called");
-```
-
-```javascript
-axios.get('https://hooks-demo-a6d15.firebase.com/users.json')
-.then(res => {
-  const users=[]
-  for (const key in res.data){
-    users.push({
-      id: key,
-      name :res.data[key].name,
-      age:res.data[key].age,
-      interests:res.data[key].interests
-    });
-  }
-  setUsers( users );
-})
-.catch(err => {
-  console.log(err);
-});
-}, []); // 第二个参数是[]，所以将在首次渲染后调用
+    console.log("Effect called");
+    axios.get('https://hooks-demo-a6d15.firebase.com/users.json')
+      .then(res => {
+        const users = []
+        for (const key in res.data) {
+          users.push({
+            id: key,
+            name: res.data[key].name,
+            age: res.data[key].age,
+            interests: res.data[key].interests
+          });
+        }
+        setUsers(users);
+      })
+      .catch(err => {
+        console.log(err);
+      });
+  }, []); // 第二个参数是[]，所以将在首次渲染后调用
+}
 ```
 
 如果我们想根据某些依赖值（例如搜索条件或数据变化时）重新获取数据，这是最佳方法。
 
-## 如何复用 hooks？
+### 如何复用 hooks？
 
 与 hook 相关的逻辑可以分离到自定义 hook 中（示例中使用前缀，users.js）。它可以在任何需要使用相同逻辑的函数组件中像函数一样导入并调用：
 
 ```javascript
 import { useState, useEffect } from 'react';
 import axios from 'axios';
-const useUsers = props => {
 
-// useState hook 初始化状态 []
-const [users, setUsers] = useState([]);
+const useUsers = () => {
+  // useState hook 初始化状态 []
+  const [users, setUsers] = useState([]);
 
-// useEffect (() => 来定义功能
-useEffect(() => {
-  console.log("Effect called");
-  axios.get('https://hooks-demo-a6d15.firebase.com/users.json')
-  .then(res => {
-    const users=[]
-    for (const key in res.data) {
-      users.push({
-        id: key,
-        name :res.data[key].name,
-        age:res.data[key].age,
-        interests:res.data[key].interests
+  // useEffect 来定义功能
+  useEffect(() => {
+    console.log("Effect called");
+    axios.get('https://hooks-demo-a6d15.firebase.com/users.json')
+      .then(res => {
+        const users = []
+        for (const key in res.data) {
+          users.push({
+            id: key,
+            name: res.data[key].name,
+            age: res.data[key].age,
+            interests: res.data[key].interests
+          });
+        }
+        setUsers(users);
+      })
+      .catch(err => {
+        console.log(err);
       });
-    }
-    setUsers( users );
-  })
-  .catch(err => {
-    console.log(err);
-  });
-}, []);
-```
+  }, []);
 
-
-```javascript
-.catch(err => {
-  console.log(err);
-},[]];
-return users;
+  return users;
 };
-```
 
-//最后将此整个功能作为一个名为 Users 的自定义 hook 导出
-export default getUsers;
+export default useUsers;
+```
 
 现在，可以以简单的方式进行导入和使用，如下所示，在任何函数组件中：
 
 ```javascript
-import getUsers from './Users';
-const users = getUsers();
+import useUsers from './useUsers';
+
+const users = useUsers();
 ```
 
 这可以防止代码重复，并使我们的函数组件更轻量、更易理解。
@@ -8631,64 +8419,64 @@ const users = getUsers();
 
 ## 结论
 
-在本章中，你学习了 React 这一强大的 UI 库的所有基本概念。你现在已经完全了能力，可以以正确的方式使用 React 构建高度交互且性能优的应用程序。在下一章中，我们将利用这些新掌握的 React 知识构建一个完整的应用程序。
+在本章中，你学习了 React 这一强大的 UI 库的所有基本概念。你现在已经完全具备了能力，可以以正确的方式使用 React 构建高度交互且性能优的应用程序。在下一章中，我们将利用这些新掌握的 React 知识构建一个完整的应用程序。
 
 ## 问题
 
-- 1. 函数组件
-  A. 无法处理状态
-  B. 无法处理生命周期事件
-  C. 可以使用 hooks 处理状态和生命周期事件
-  D. 总是无状态的
+### 1. 函数组件
+A. 无法处理状态
+B. 无法处理生命周期事件
+C. 可以使用 hooks 处理状态和生命周期事件
+D. 总是无状态的
 
-  **答案：选项 C**
-  函数组件可以使用 useState 和 useEffect hooks 处理状态和生命周期事件。
+**答案：选项 C**
+函数组件可以使用 `useState` 和 `useEffect` hooks 处理状态和生命周期事件。
 
-- 2. 下面哪种在 props 中传递方法引用的语法语法是正确的？
-  A. click={() => this.switchNameHandler('React!!')}
-  B. click={this.switchNameHandler.bind(this, 'React!')}
-  C. click={this.switchNameHandler}
-  D. 以上所有
+### 2. 下面哪种在 props 中传递方法引用的语法是正确的？
+A. `click={() => this.switchNameHandler('React!!')}`
+B. `click={this.switchNameHandler.bind(this, 'React!')}`
+C. `click={this.switchNameHandler}`
+D. 以上所有
 
-  **答案：选项 D**
-  所有语句都是正确的。A 和 B 用于在传递方法的同时参数，而 C 用于没有参数的情况。
+**答案：选项 D**
+所有语句都是正确的。A 和 B 用于在传递方法的同时传递参数，而 C 用于没有参数的情况。
 
-- 3. 在渲染数据列表时，___ 属性是一个需要添加的属性属性。
-  A. Name
-  B. Id
-  C. key
-  D. Src
+### 3. 在渲染数据列表时，___ 属性是一个需要添加的属性。
+A. Name
+B. Id
+C. key
+D. Src
 
-  **答案：选项 C**
-  在渲染列表时，应该使用 key 属性为列表中的每个条目提供一个唯一的值，这使得 React 能够根据任何变化重新渲染列表，并唯一地标识哪个列表元素发生了变化。
+**答案：选项 C**
+在渲染列表时，应该使用 `key` 属性为列表中的每个条目提供一个唯一的值，这使得 React 能够根据任何变化重新渲染列表，并唯一地标识哪个列表元素发生了变化。
 
-- 4. 将以下属性与生命周期方法匹配
-  i. 此用于设置变量和组件状态的初始值。
-  ii. 此用于 API 调用以获取数据。
-  iii. 当状态依赖于 props 时，因此每当 props 变化时，状态必须保持同步。
-  iv. 当我们只想在 props 状态变化时才重新渲染组件时，这很有用。
-  1. getDerivedStateFromProps()
-  2. constructor()
-  3. shouldComponentUpdate()
-  4. componentDidDidMount()
+### 4. 将以下属性与生命周期方法匹配
+i. 此用于设置变量和组件状态的初始值。
+ii. 此用于 API 调用以获取数据。
+iii. 当状态依赖于 props 时，因此每当 props 变化时，状态必须保持同步。
+iv. 当我们只想在 props 状态变化时才重新渲染组件时，这很有用。
+1. `getDerivedStateFromProps()`
+2. `constructor()`
+3. `shouldComponentUpdate()`
+4. `componentDidMount()`
 
-  - A. i-1, ii-2, iii-3, iv-4
-  - B. i-2, ii-4, iii-1, iv-3
-  - C. i-2, ii-3, iii-4, iv-1
-  - D. i-4, ii-1, iii-2, iv-3
+- A. i-1, ii-2, iii-3, iv-4
+- B. i-2, ii-4, iii-1, iv-3
+- C. i-2, ii-3, iii-4, iv-1
+- D. i-4, ii-1, iii-2, iv-3
 
-  **答案：选项 B**
-  constructor 用于设置变量和组件状态的初始值。componentDidMount() 生命周期方法用于 API 调用获取数据。getDerivedStateFromProps() 方法用于状态依赖 props 的情况，每当 props 变化时，状态必须保持同步。shouldComponentUpdate 当我们只想在 props 状态变化时重新渲染组件，并且我们需要检查并决定是否继续更新时非常有用。
+**答案：选项 B**
+`constructor` 用于设置变量和组件状态的初始值。`componentDidMount()` 生命周期方法用于 API 调用获取数据。`getDerivedStateFromProps()` 方法用于状态依赖 props 的情况，每当 props 变化时，状态必须保持同步。`shouldComponentUpdate` 当我们只想在 props 状态变化时重新渲染组件，并且我们需要检查并决定是否继续更新时非常有用。
 
-- 5. 通过将新的虚拟 DOM 与更新前的版本进行比较，React 确切找出哪些虚拟 DOM 对象发生了变化。这个过程被称为 __________
+### 5. 通过将新的虚拟 DOM 与更新前的版本进行比较，React 确切找出哪些虚拟 DOM 对象发生了变化。这个过程被称为 __________
 
-  - A. Referencing
-  - B. Diffiation
-  - C. Diffing
-  - D. 以上都不是
+- A. Referencing
+- B. Diffiation
+- C. Diffing
+- D. 以上都不是
 
-  **答案：选项 C**
-  Diffing 是将新的虚拟 DOM 与更新前的版本进行比较的过程， React 通过此过程决定是否对真实 DOM 进行任何实际更新。
+**答案：选项 C**
+Diffing 是将新的虚拟 DOM 与更新前的版本进行比较的过程，React 通过此过程决定是否对真实 DOM 进行任何实际更新。
 
 # 第 15 章
 
@@ -8696,11 +8484,11 @@ const users = getUsers();
 
 > “成功不是偶然。它是努力工作、坚持、学习、学习、牺牲，最重要的是，对你正在做或正在学习做的事的热爱。” ~ 贝利
 
-在上一章中，我们学习了 React 及其状态、props、JSX 和 hooks 等基本概念。在学习了所有概念后，现在是时候应用所学知识并观察它们的运行了。在下一章中，我们将利用这些新掌握的 React 知识构建一个完整的应用程序。
+在上一章中，我们学习了 React 及其状态、props、JSX 和 hooks 等基本概念。在学习了所有概念后，现在是时候应用所学知识并观察它们的运行了。在本章中，我们将利用这些新掌握的 React 知识构建一个完整的应用程序。
 
 ## 结构
 
-- React 思考方法方法
+- React 思考方法
 - 要求与设计
 - 前提条件与开始
 - 构建应用程序
@@ -8716,7 +8504,7 @@ const users = getUsers();
 - 准备你的原型图：拥有原型图的第一步，此应用程序包含以下屏幕，它们将以图表、卡片和表格的形式显示天气数据。
 - 规划你的 UI 组件：一旦你知道屏幕长什么样，就将其拆分为组件。这被称为**单一职责原则**。除了组件定义，我们还需要：
 - 识别你的数据：下一个重要活动是识别数据。在定义数据时，会回答以下某些问题：
-  * 数据元素元素？
+  * 数据元素是什么？
   * 数据的结构是什么？
   * 从哪里获取数据？
   * 数据会发生变化吗？如果是，哪些是静态的，哪些会变化？
@@ -8729,15 +8517,11 @@ const users = getUsers();
   - 哪些 UI 组件将持有自己的状态并需要订阅状态的变化？
   - 状态在组件中如何更改和处理？
 
-
-
-
-
-# Kukatpalli 的当前天气
+### Kukatpalli 的当前天气
 
 ![](img/22525aec83cb16cb7664cd8d5c364721_350_0.png)
 
-## UV 指数预测数据
+#### UV 指数预测数据
 
 | 天 | 2019-07-09 | 2019-07-10 | 2019-07-11 | 2019-07-12 | 2019-07-13 | 2019-07-14 | 2019-07-15 | 2019-07-16 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -8749,7 +8533,7 @@ const users = getUsers();
 
 在开始构建任何应用程序之前，我们将查看其他需要规划的两个方面：
 
-- **规划你的 UI 组件：**
+#### 规划你的 UI 组件
 
 React 应用程序的 UI 由多个组合在一起的 React 组件组成。
 
@@ -8771,7 +8555,8 @@ React 应用程序的 UI 由多个组合在一起的 React 组件组成。
 
 图 15.2
 
-## 2. 识别你的数据：
+#### 识别你的数据
+
 当前应用程序处理所选位置及其天气数据。天气应用数据有多个部分，包括以下内容：
 
 - 搜索位置及其坐标
@@ -8779,15 +8564,17 @@ React 应用程序的 UI 由多个组合在一起的 React 组件组成。
 - 每三小时的温度和湿度，用于绘制图表
 - 预测 UV 指数数据
 
-将使用开源 API https://openweathermap.org/ 配合名为 axios 的第三方库来获取天气详情。为了与该 API 交互，你必须注册并获取一个 API Key，在使用此 API 访问数据时将使用。
+将使用开源 API `https://openweathermap.org/` 配合名为 `axios` 的第三方库来获取天气详情。为了与该 API 交互，你必须注册并获取一个 API Key，在使用此 API 访问数据时将使用。
 
-另一个开源项目 https://www.bingmapsportal.com/ 将用于获取给定位置的坐标。你需要注册此站点并获取要使用的 API key。
+另一个开源项目 `https://www.bingmapsportal.com/` 将用于获取给定位置的坐标。你需要注册此站点并获取要使用的 API key。
 
-两个 API 密钥可以单独维护在 config.js 文件中，并在需要调用 API 时将其导入到组件中。
+两个 API 密钥可以单独维护在 `config.js` 文件中，并在需要调用 API 时将其导入到组件中。
 
-## 3. 将数据与 UI 组件关联：
-- 既然是这个简单的应用，我们可以研究数据与 UI 组件的关联，并进入应用程序构建的细节。
+#### 将数据与 UI 组件关联
+
+既然是这个简单的应用，我们可以研究数据与 UI 组件的关联，并进入应用程序构建的细节。
 在高级层面上，我们对组件有以下考虑：
+
 - App: 有状态组件，state 包含搜索位置及其坐标
 - Header: 演示组件或无状态组件，接收搜索数据并通过 props 传递给父级 app
 - MainData: 获取天气详情并传递给其他组件的另一个组件，从 App 接收坐标作为 props
@@ -8798,15 +8585,15 @@ React 应用程序的 UI 由多个组合在一起的 React 组件组成。
 
 在完成应用程序的初始设计和解决方案后，现在是开始实际开发了。
 
-## 提条件和快速开始
+## 前提条件和快速开始
 
-每个 React 应用程序都从第一步开始：构建一个模板应用，如第 14 章《React 简介》所示。让我们遵循相同的步骤并创建我们的新应用程序。我们将应用命名为 my-weather-app，并使用以下语句创建基础应用：
+每个 React 应用程序都从第一步开始：构建一个模板应用，如第 14 章《React 简介》所示。让我们遵循相同的步骤并创建我们的新应用程序。我们将应用命名为 `my-weather-app`，并使用以下语句创建基础应用：
 
-```
+```bash
 npx create-react-app my-weather-app
 ```
 
-该语句创建了 my-weather-app 文件夹，并为我们的项目提供了默认的文件夹结构。
+该语句创建了 `my-weather-app` 文件夹，并为我们的项目提供了默认的文件夹结构。
 
 进入项目文件夹并为该项目安装依赖项。如果我们知道所有需求，或者在开发过程中遇到需要的新依赖项时再安装。以下是我的初始依赖列表：
 
@@ -8814,13 +8601,15 @@ npx create-react-app my-weather-app
 - chart.js 和 react-chartjs-2: 用于渲染天气数据的柱状图和折线图
 
 ### 构建应用程序
+
 现在依赖已就绪，让我们启动应用程序。
 
 #### 步骤 1
+
 首先，让我们了解该应用程序。我们在这里创建一个类：
 
 ```javascript
-//类组件
+// 类组件
 class App extends Component {
   constructor(props) {
     super(props);
@@ -8837,6 +8626,9 @@ class App extends Component {
         latitude: coords.latitude,
         longitude: coords.longitude,
       };
+    });
+  }
+}
 ```
 
 state 包含以下部分：
@@ -8844,21 +8636,22 @@ state 包含以下部分：
 - SearchTerm：传递给搜索的词。
 
 #### 步骤 2
-如果用户输入不同的搜索位置，将使用 getCoordinates 函数获取相应的坐标。
+
+如果用户输入不同的搜索位置，将使用 `getCoordinates` 函数获取相应的坐标。
 
 ```javascript
-getCoordinates=(city) => {
+getCoordinates = (city) => {
   if (city === "Current location") {
     this.setState(this.newState);
   } else {
     let location = city;
-    countryRegion = 'IN';//区域设置为印度
+    countryRegion = 'IN'; // 区域设置为印度
     axios.get(`http://dev.virtualearth.net/REST/v1/Locations?Region=${countryRegion}&location=${location}&key=${apiKey}`).then((response) => {
       // 对响应进行映射并提取位置的坐标
       response.data.resourceSets.map((data) => {
         return (data.resources.map((resourceData) => {
           if (resourceData.confidence === "High") {
-            this.activeCoords={
+            this.activeCoords = {
               latitude: resourceData.point.coordinates[0],
               longitude: resourceData.point.coordinates[1]
             };
@@ -8868,56 +8661,49 @@ getCoordinates=(city) => {
             console.log('no data');
             return null;
           }
-        });
+        }));
       });
     });
   }
 }
+
 // 处理搜索框中输入的内容的变化并将其设置为 state searchTerm 方法
-handleSearch=(e) => {
-  const newSearch=e.target.value;
+handleChange = (e) => {
+  const newSearch = e.target.value;
   this.setState({
     searchTerm: newSearch
-```
-
-
-
-```javascript
-));
-this.getCoordinates(newSearch); // 根据输入的城市名称
-// 保持坐标更新
+  });
+  this.getCoordinates(newSearch); // 根据输入的城市名称
+  // 保持坐标更新
 }
-// 方法更新状态中的坐标，以便子组件
-// 组件 针对新坐标进行重新渲染。这是在 Header 组件中
-// 点击搜索按钮时调用的。它是从 App 组件作为引用传递的。
-handleSearch=(e) => {
-  let coords=this.state.Active;
+
+// 方法更新状态中的坐标，以便子组件针对新坐标进行重新渲染。这是在 Header 组件中点击搜索按钮时调用的。它是从 App 组件作为引用传递的。
+handleSearch = (e) => {
+  let coords = this.state;
   this.setState({
-    ...this, // 使用最新的搜索术语更改状态
+    ...this.state, // 使用最新的搜索术语更改状态
     ...coords
   }, () => console.log(this.state));
-
 }
-//render 方法，它将包含最终渲染在 UI 上的所有 jsx。
+
+// render 方法，它将包含最终渲染在 UI 上的所有 jsx。
 // 这包括 App 组件中包含的所有子组件
 render() {
   if (this.state !== null) {
     return (
       <div className="App">
-        <Header handleSearch={()=>this.handleSearch()} // Header 组件
-          handChange={(e)=>{this.handleChange(e)}} />
+        <Header handleSearch={() => this.handleSearch()} handleChange={(e) => {this.handleChange(e)}} />
         <div className="container">
-          <MainData coords={this.state}/> {/* Main 组件，由
-          卡片、天气摘要表格、天气图表组成*/}
-          <TabularDatacoords coords={this.state}/> {/*包含未来 8 天的
-          UV 指数表格数据*/}
+          <MainData coords={this.state} /> {/* Main 组件，由卡片、天气摘要表格、天气图表组成*/}
+          <TabularData coords={this.state} /> {/*包含未来 8 天的UV 指数表格数据*/}
         </div>
       </div>
     )
   } else {
-    return <div></div
+    return <div></div>
   }
 }
+
 export default App;
 ```
 
@@ -8925,19 +8711,17 @@ App 的 render 函数渲染了三个组件，即 Header、MainData 和 TabularDa
 
 我们将对它们中的每一个进行分析并解释对应的代码。
 
-## 步骤 3
+#### 步骤 3
 
 首先，我们将从 Header 组件开始，它将作为一个函数组件被创建。
 
-Header/index.js 文件将包含渲染页面页头的逻辑，左侧显示 Logo，右侧显示搜索栏，如下：
+`Header/index.js` 文件将包含渲染页面页头的逻辑，左侧显示 Logo，右侧显示搜索栏，如下：
 
 ```javascript
 // Header 的函数组件
 const Header = (props) => {
-  // 在 Header 中显示的数据包括 Logo 和
-  // 搜索栏（它是一个输入数据）
-  // handleChange 和 handleSearch 方法作为
-  // props 从父组件 App 传递的
+  // 在 Header 中显示的数据包括 Logo 和搜索栏（它是一个输入数据）
+  // handleChange 和 handleSearch 方法作为 props 从父组件 App 传递的
   return (
     <div className="headNavbar">
       <div className="logo_container">/*划分 App 的 logo**/
@@ -8947,8 +8731,7 @@ const Header = (props) => {
       <div className="search-container">
         <div className="search-container">
           <img className="search_icon" src={SearchIcon} alt="SearchIcon"/>
-          <input list="browsers" name="browser" className="search_field"
-            change={props.handleChange}>
+          <input list="browsers" name="browser" className="search_field" onChange={props.handleChange}>
           <datalist id="browsers">
             <option value="Current location"/>
             <option value="Hyderabad"/>
@@ -8963,37 +8746,33 @@ const Header = (props) => {
     </div>
   )
 };
+
 export default Header;
 ```
 
-Header 组件将按照下所示所示渲染 UI 的头部部分：
+Header 组件将按照下所示渲染 UI 的头部部分：
 
 ![](img/22525aec83cb16cb7664cd8d5c364721_357_0.png)
 
-图 15.3：应用程序的 Header 组件：
+图 15.3：应用程序的 Header 组件
 
 头部就绪后，我们将开始下一个组件 MainData。
 
-## 步骤 4
+#### 步骤 4
 
 MainData 容器组件包含了所有与数据相关的图表和图形，数据将在此组件中通过以下 URL `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=metric&appid=${Api_key}` 并传递位置坐标来获取。该组件接收坐标和 props 并使用它们来获取所有天气数据。每当用户输入新位置并点击搜索按钮时，父组件（即 App）中对应坐标的状态就会更新，从而触发该组件以及其他子组件的重新渲染，它们将获得新的 props 值。现在，当为新的 prop 值获取数据并渲染新数据时，如以下代码所示：
 
 ```javascript
-const MainData=(props)=>{
+const MainData = (props) => {
   const [latitude, longitude] = props.coords;
-  // 状态定义为组件及其子组件所需的
-  // 不同信息片段
-
+  // 状态定义为组件及其子组件所需的不同信息片段
   const [WeatherData, setWeatherData] = useState({});
   const [mainData, setMainData] = useState({});
   const [windData, setWindData] = useState({});
   const [sunData, setSunData] = useState({});
   const [cloudData, setCloudData] = useState({});
 
-  // useEffect 钩子用于获取数据，就像
-  // 函数组件一样，因为它会根据参数
-  // [latitude, longitude] 自动刷新
-
+  // useEffect 钩子用于获取数据，就像函数组件一样，因为它会根据参数 [latitude, longitude] 自动刷新
   useEffect(() => {
     axios.get(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=metric&appid=${Api_key}`)
       .then(response => {
@@ -9010,80 +8789,80 @@ const MainData=(props)=>{
   }, [latitude, longitude]);
 
   // 如果收到数据，通过返回 JSX 所需的视图
-  // 在这种情况下，它包含了子组件
-  // WeatherCard, Weatherchart 和 SummaryTable
-  if(weatherData&& weatherData!=null){
-    return(
+  // 在这种情况下，它包含了子组件 WeatherCard, WeatherChart 和 SummaryTable
+  if (WeatherData && WeatherData !== null) {
+    return (
       <div className="main_container">
         <div className="card_container_main">
-          <WeatherCard weatherData={weatherData}
+          <WeatherCard weatherData={WeatherData}
             mainData={mainData}
             windData={windData} />
-          <Weatherchart coords={props.coords}/>
+          <WeatherChart coords={props.coords} />
         </div>
-        <SummaryTable weatherData={weatherData}
+        <SummaryTable weatherData={WeatherData}
           mainData={mainData}
           windData={windData}
           sunData={sunData}
           cloudData={cloudData}
-          coords={props.coords}/>
+          coords={props.coords} />
       </div>
     );
   } else {
-    return(
-      <div></div // 如果无可用数据则为空视图
+    return (
+      <div></div> // 如果无可用数据则为空视图
     );
   }
 }
+
 export default MainData;
 ```
 
 MainData 组件渲染以下内容：
-
 - WeatherCard
 - SummaryTable
-- Weatherchart
+- WeatherChart
 
 天气数据在 MainData 中获取并作为 props 传递给子组件。
 
-## 步骤 5
+#### 步骤 5
 
-weatherCard 是第一个展示组件，它接收父组件 MainData 的完整数据并渲染卡片布局。
+WeatherCard 是第一个展示组件，它接收父组件 MainData 的完整数据并渲染卡片布局。
 
 这将渲染温度、湿度风速的卡片，这些在以下代码中初始化：
 
 ```javascript
 const WeatherCard = (props) => {
   // 使用 props 初始化卡片数据
-  const card_data=[
+  const card_data = [
     {
-      'Header':'Temperature',
-      'cardData':`${props.mainData.temp} °C`,
+      'Header': 'Temperature',
+      'cardData': `${props.mainData.temp} °C`,
       'src': 'Temperature'
     },
     {
-      'Header':'Pressure',
-      'cardData':`${props.mainData.pressure} hpa`,
+      'Header': 'Pressure',
+      'cardData': `${props.mainData.pressure} hpa`,
       'src': 'PressureIcon'
     },
     {
-      'Header':'Humidity',
-      'cardData':`${props.mainData.humidity} %`,
+      'Header': 'Humidity',
+      'cardData': `${props.mainData.humidity} %`,
       'src': 'HumidityIcon'
     },
     {
-      'Header':'Wind',
-      'cardData':`${props.windData.speed} m/sec`,
+      'Header': 'Wind',
+      'cardData': `${props.windData.speed} m/sec`,
       'src': 'windIcon'
     }
   ]
-  if (props.weatherData !== null) { //检查 weatherData 是否可用
+
+  if (props.weatherData !== null) { // 检查 weatherData 是否可用
     return (
       <div className="card_container">
-        <h2 className="card_header">Current weather in ${props.weatherData.name}</h2>
+        <h2 className="card_header">Current weather in {props.weatherData.name}</h2>
         <div className="cards">
-          {card_data.map((data,i) => {
-            return(
+          {card_data.map((data, i) => {
+            return (
               <div className="weather_cards" key={i}>
                 <p>Current {data.Header}</p>
                 <div className="icon_container">
@@ -9097,105 +8876,81 @@ const WeatherCard = (props) => {
       </div>
     )
   } else {
-    return <div></div
+    return <div></div>
   }
 }
+
 export default WeatherCard;
 ```
 
 WeatherCard 组件将按照下图所示渲染带有天气详情的卡片：
 
-| 当前温度 | 当前湿度 | 当前风速 |
-| :--- | :--- | :--- |
-| 29.29 °C | 1010 hpa | 6.2 m/sec |
+| 当前温度 | 当前压力 | 当前湿度 | 当前风速 |
+| :--- | :--- | :--- | :--- |
+| 29.29 °C | 1010 hpa | 65% | 6.2 m/sec |
 
 图 15.4：显示应用程序中天气详情的 WeatherCard 组件
 
-## 步骤 6
+#### 步骤 6
 
 SummaryTable 是第二个展示组件，因为它显示 MainData 组件通过 API 获取的相同数据。因此，它通过 props 接收数据：
 
 ```javascript
 const SummaryTable = (props) => {
   // 将 Unix 日期转换为本地日期的函数
-  const dateConverter=(data)=>{
-    let localDate = new Date(data*1000);
+  const dateConverter = (data) => {
+    let localDate = new Date(data * 1000);
     let date = localDate.toLocaleString(undefined, {
       day: 'numeric',
       month: 'numeric',
       year: 'numeric',
       hour: '2-digit',
       minute: '2-digit',
-    }).slice(10,19)
+    }).slice(10, 19)
     return date;
   }
-  const sunrise=dateConverter(props.sunData.sunrise);//用于日期转换的函数
-  const setTime=dateConverter(props.sunData.sunset);
+
+  const sunrise = dateConverter(props.sunData.sunrise);
+  const sunset = dateConverter(props.sunData.sunset);
   const new_latitude = parseFloat(props.coords.latitude).toFixed(2);
-  // 将小数数字四舍入到固定两位的方法
   const new_longitude = parseFloat(props.coords.longitude).toFixed(2);
-}
-```
 
+  // Summary weather data object
+  const summary_data = [
+    { 'Header': 'Wind', 'tableData': `${props.windData.speed} m/sec` },
+    { 'Header': 'Cloudiness', 'tableData': `${props.cloudData.description}` },
+    { 'Header': 'Pressure', 'tableData': `${props.mainData.pressure} hpa` },
+    { 'Header': 'Humidity', 'tableData': `${props.mainData.humidity} %` },
+    { 'Header': 'Sunrise', 'tableData': `${sunrise}` },
+    { 'Header': 'Sunset', 'tableData': `${sunset}` },
+    { 'Header': 'Geocords', 'tableData': `${new_latitude},${new_longitude}` }
+  ]
 
-```javascript
-//Summary weather data object
-const summary_data = [
-  {
-    'Header': 'Wind',
-    'tableData': `${props.windData.speed} m/sec`,
-  },
-  {
-    'Header': 'Cloudiness',
-    'tableData': `${props.cloudData.description}`,
-  },
-  {
-    'Header': 'Pressure',
-    'tableData': `${props.mainData.pressure} hpa`,
-  },
-  {
-    'Header': 'Humidity',
-    'tableData': `${props.mainData.humidity} %`,
-  },
-  {
-    'Header': 'Sunrise',
-    'tableData': `${sunriseTime}`,
-  },
-  {
-    'Header': 'Sunset',
-    'tableData': `${sunsetTime}`,
-  },
-  {
-    'Header': 'Geocords',
-    'tableData': `${new_latitude},${new_longitude}`,
-  }
-]
-// The formatted table with the data is returned for the view
-return (
-  <div class="summary_table">
-    <h2 class="summary_header">Summary weather report</h2>
-    <div class="display_Something">
-      <div>
-        <img class="summaryWeatherIcon" src="SummaryWeatherIcon" alt="weatherIcon">
-        <h2 class="temperature">${props.mainData.temp}<sup>°</sup>C</h2>
-        <p>${props.cloudData.description}</p>
+  // The formatted table with the data is returned for the view
+  return (
+    <div className="summary_table">
+      <h2 className="summary_header">Summary weather report</h2>
+      <div className="display_Something">
+        <div>
+          <img className="summaryWeatherIcon" src={SummaryWeatherIcon} alt="weatherIcon">
+          <h2 className="temperature">{props.mainData.temp}<sup>°</sup>C</h2>
+          <p>{props.cloudData.description}</p>
+        </div>
       </div>
+      <table className="table-grid">
+        {summary_data.map((data, index) => (
+          <tbody key={index}>
+            <tr>
+              <th>{data.Header}</th>
+              <td className="summary_td">{data.tableData}</td>
+            </tr>
+          </tbody>
+        ))}
+      </table>
     </div>
-    <table class="table-grid">
-      {summary_data.map((data, index) => (
-        <tbody key={index}>
-          <tr>
-            <th>{data.Header}</th>
-            <td class="summary_td">{data.tableData}</td>
-          </tr>
-        </tbody>
-      ))}
-    </table>
-  </div>
-);
+  );
 }
-}
-}
+
 export default SummaryTable;
 ```
 
@@ -9209,9 +8964,9 @@ export default SummaryTable;
 
 如你所见，我们正在逐步构建应用程序。
 
-## 第 7 步
+#### 第 7 步
 
-下部分是 `weatherChart`，它以图表的形式显示每三小时温度和湿度预测数据，需要从以下 API 获取数据：https://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&units=metric&cnt=7&appid=${Api_key}。
+下部分是 `WeatherChart`，它以图表的形式显示每三小时温度和湿度预测数据，需要从以下 API 获取数据：`https://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&units=metric&cnt=7&appid=${Api_key}`。
 
 位置坐标作为 `props` 传递，并将用于从 API 获取预测数据：
 
@@ -9226,9 +8981,10 @@ const styles = {
     borderRadius: '10px'
   }
 }
+
 // 将 chartData 作为其状态的函数组件
-const weatherChart = (props) => {
-  const {latitude, longitude } = props.coords;
+const WeatherChart = (props) => {
+  const { latitude, longitude } = props.coords;
   const [chartData, setChartData] = useState({});
 
   useEffect(() => {
@@ -9239,57 +8995,57 @@ const weatherChart = (props) => {
       .catch(err => {
         console.log(err);
       });
-  },[latitude, longitude]);
-```
+  }, [latitude, longitude]);
 
-// 图表数据以所需的格式设置并传递给
-// 图表相关的组件 Bar
-// 图表组件期望预定义格式的数据
-
-if(chartData.list && chartData.list !== null){
-  var apiData = {
-    labels:chartData.list.map((data) => {
-      let time = data.dt_txt.slice(11,16);
-      let Hours = +time.substr(0, 2);
-      let hour = (Hours % 12) || 12;
-      hour = (hour < 10)?("0" + hour : hour;
-      return time = hour + time.substr(2,5) + "pm";
-    }),
-    datasets: [
-      {
-        label: 'Temperature for every 3hours',
-        data:chartData.list.map((data) => {
-          return data.main.temp
-        }),
-        backgroundColor: 'rgba(0,0,0,0)',
-        borderColor: '#475eb2',
-        pointBackgroundColor: '#475eb2',
+  // 图表数据以所需的格式设置并传递给图表相关的组件 Bar
+  // 图表组件期望预定义格式的数据
+  if (chartData.list && chartData.list !== null) {
+    var apiData = {
+      labels: chartData.list.map((data) => {
+        let time = data.dt_txt.slice(11, 16);
+        let Hours = +time.substr(0, 2);
+        let hour = (Hours % 12) || 12;
+        hour = (hour < 10) ? ("0" + hour) : hour;
+        return time = hour + time.substr(2, 5) + "pm";
+      }),
+      datasets: [
+        {
+          label: 'Temperature for every 3hours',
+          data: chartData.list.map((data) => {
+            return data.main.temp
+          }),
+          backgroundColor: 'rgba(0,0,0,0)',
+          borderColor: '#475eb2',
+          pointBackgroundColor: '#475eb2',
+        },
+        {
+          label: 'Humidity for every 3hours',
+          fill: false,
+          data: chartData.list.map((data) => {
+            return data.main.humidity
+          }),
+          backgroundColor: 'rgba(75,192,192,0.4)',
+          borderColor: 'rgba(75,192,192,1)',
+          barPercentage: 0.2,
+        }
+      ]
+    };
+    const options = {
+      legend: {
+        display: true,
       },
-      {
-        label: 'Humidity for every 3hours',
-        fill: false,
-        data:chartData.list.map((data) => {
-          return data.main.humidity
-        }),
-        backgroundColor: 'rgba(75,192,192,0.4)',
-        borderColor: 'rgba(75,192,192,1)',
-        barPercentage: 0.2,
-      }
-    ]
-  };
-  const options = {
-    legend: {
-      display: true,
-    },
-  };
-  return (
-    <div className="weather_container">
-      <div style={styles.graphContainer}>
-        <Bar className="weather_chart" data={apiData} options={options} />
+    };
+    return (
+      <div className="weather_container">
+        <div style={styles.graphContainer}>
+          <Bar className="weather_chart" data={apiData} options={options} />
+        </div>
       </div>
-    </div>
-  );
+    );
+  }
+  return null;
 }
+
 export default WeatherChart;
 ```
 
@@ -9299,9 +9055,9 @@ export default WeatherChart;
 
 图 15.6：显示每三小时温度湿度预测数据的 Chart 组件构成了 MainData 组件。
 
-## 第 8 步
+#### 第 8 步
 
-下一个以表格格式显示未来八天 UV 指数据的组件是 `TabularData`。为了获取 UV 指，此组件需要使用不同的 API：http://api.openweathermap.org/data/2.5/uvi/forecast?appid=${Api_key}&lat=${latitude}&lon=${longitude}&cnt=8。
+下一个以表格格式显示未来八天 UV 指数数据的组件是 `TabularData`。为了获取 UV 指数，此组件需要使用不同的 API：`http://api.openweathermap.org/data/2.5/uvi/forecast?appid=${Api_key}&lat=${latitude}&lon=${longitude}&cnt=8`。
 
 此组件也利用表格元素以表格格式输出：
 
@@ -9310,7 +9066,7 @@ const TabularData = (props) => {
   const [latitude, longitude] = props.coords;
   const [tabularData, setTabularData] = useState([]);
 
-  // 当坐标变化时，使用 useEffect 钩获取数据
+  // 当坐标变化时，使用 useEffect 钩子获取数据
   useEffect(() => {
     axios.get(`http://api.openweathermap.org/data/2.5/uvi/forecast?appid=${Api_key}&lat=${latitude}&lon=${longitude}&cnt=8`)
       .then((response) => {
@@ -9318,7 +9074,7 @@ const TabularData = (props) => {
       });
   }, [latitude, longitude]);
 
-  if(tabularData.length){
+  if (tabularData.length) {
     // 根据要求由此函数组件返回视图
     return (
       <div>
@@ -9328,15 +9084,15 @@ const TabularData = (props) => {
             <thead>
               <tr>
                 <th>Day</th>
-                {tabularData.map((data,i) => (
-                  <th key={i}>{data.date_iso.slice(0,10)}</th>
+                {tabularData.map((data, i) => (
+                  <th key={i}>{data.date_iso.slice(0, 10)}</th>
                 ))}
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td>UV value:</td>
-                {tabularData.map((data,index) => (
+                {tabularData.map((data, index) => (
                   <td key={index}>{data.value}</td>
                 ))}
               </tr>
@@ -9351,18 +9107,19 @@ const TabularData = (props) => {
     )
   }
 }
+
 export default TabularData;
 ```
 
 TabularData 组件如下截图所示：
 
-# 预测 UV 指数据
+#### 预测 UV 指数数据
 
 | Day | 2019-07-12 | 2019-07-13 | 2019-07-14 | 2019-07-15 | 2019-07-16 | 2019-07-17 | 2019-07-18 | 2019-07-19 |
-|---|---|---|---|---|---|---|---|
+|---|---|---|---|---|---|---|---|---|
 | UV value | 14.69 | 13.84 | 13.44 | 13.78 | 14.17 | 13.66 | 13.54 | 14.45 |
 
-**图 15.7：**显示未来八天预测 UV 指数的 TabularData 组件
+**图 15.7：** 显示未来八天预测 UV 指数的 TabularData 组件
 
 所有这些组件共同构建了整个天气应用程序。你可以通过输入或选择名称并点击 **Search** 按钮来查询不同的城市，它将渲染所选位置的更新天气详情。
 
@@ -9372,7 +9129,7 @@ TabularData 组件如下截图所示：
 
 ![](img/22525aec83cb16cb7664cd8d5c364721_369_0.png)
 
-图 5.8：搜索 Bangalore 渲染 Bangalore 的天气详情
+图 15.8：搜索 Bangalore 渲染 Bangalore 的天气详情
 
 所有组件都通过在与其相关的 CSS 文件中定义类来赋予样式。
 
@@ -9384,37 +9141,31 @@ TabularData 组件如下截图所示：
 
 图 15.9：项目文件夹结构
 
-恭喜！你已经完成了一个完整的 React 天气应用程序。你可以在代码包的 /Chapter-15&16-my-weather-app/my-weather-app/Only-React 文件夹下检查包括样式表在完整项目代码。
+恭喜！你已经完成了一个完整的 React 天气应用程序。你可以在代码包的 `/Chapter-15&16-my-weather-app/my-weather-app/Only-React` 文件夹下检查包括样式表在完整项目代码。
 
 ## 总结
 
-通过遵循本章中的步骤，你能够构建一个天气应用程序来渲染当前位置或搜索位置的天气统计数据。我们学习了如何从需求原型开始进行 React 应用程序开发，使用组合定义 UI 组件层次结构，识别我们的状态结构并将状态与组件绑定以使我们的应用程序上线。我们可以进一步增强它，并按照相同的方法构建许多应用程序。在接下来的
-
-
-在本章中，我们将介绍另一种使用 Redux 在 React 应用中定义和管理状态的方法。
+通过遵循本章中的步骤，你能够构建一个天气应用程序来渲染当前位置或搜索位置的天气统计数据。我们学习了如何从需求原型开始进行 React 应用程序开发，使用组合定义 UI 组件层次结构，识别我们的状态结构并将状态与组件绑定以使我们的应用程序上线。我们可以进一步增强它，并按照相同的方法构建许多应用程序。在接下来的章节中，我们将介绍另一种使用 Redux 在 React 应用中定义和管理状态的方法。
 
 ## Questions
 
-- 1. 需要安装哪个外部依赖来进行外部 API 调用？
-
+### 1. 需要安装哪个外部依赖来进行外部 API 调用？
 - A. lodash
-B. request
-C. axios
-D. Response
+- B. request
+- C. axios
+- D. Response
 
 **答案：选项 C** 使用 Axios 库来发送 HTTP 请求。
 
-- 2. 组件的状态正在更新，但更改没有渲染在 UI 上。可能的原因是什么？
-
-- A. 直接通过赋值对状态进行变/修改。
-B. 使用 `push()` 函数向状态数组中添加元素。
-C. 使用 `splice()` 函数从状态中移除元素。
-D. 以上所有。
+### 2. 组件的状态正在更新，但更改没有渲染在 UI 上。可能的原因是什么？
+- A. 直接通过赋值对状态进行修改。
+- B. 使用 `push()` 函数向状态数组中添加元素。
+- C. 使用 `splice()` 函数从状态中移除元素。
+- D. 以上所有。
 
 **答案：选项 D** 列出的所有陈述导致了变异更改，React 无法检测到这些更改并重新渲染组件。
 
-- 3. 关于 package.json，以下哪种描述是正确的？
-
+### 3. 关于 package.json，以下哪种描述是正确的？
 - A. 该文件用于提供 React 项目使用的 JS 选项。
 - B. 该文件包含关于 React 项目及其依赖项的信息。
 - C. 该文件包含 React 应用所需的系统文件。
@@ -9422,27 +9173,23 @@ D. 以上所有。
 
 **答案：选项 B** Package.json 包含关于 React 项目及其依赖项的信息。
 
-- 4. 类组件中的 `\______` 可用于处理 API 请求、手动 DOM 变更、日志记录等操作。
-
-- A. constructor, getDerivedStateFromProps,
-B. componentDidMount, getDerivedStateFromProps
-C. useEffect hook, componentDidMount, componentDidUpdate
-D. useState hook, componentDidMount, componentDidUpdate
+### 4. 类组件中的 `______` 可用于处理 API 请求、手动 DOM 变更、日志记录等操作。
+- A. constructor, getDerivedStateFromProps
+- B. componentDidMount, getDerivedStateFromProps
+- C. useEffect hook, componentDidMount, componentDidUpdate
+- D. useState hook, componentDidMount, componentDidUpdate
 
 **答案：选项 C**
-
 `useEffect` hook、`componentDidMount`、`componentDidUpdate` 可用于处理 API 请求、手动 DOM 变更和日志记录等操作。
 
-- 5. 关于 React 状态，以下哪种说法是正确的？
-
-- A. 状态不应直接通过赋值进行变/修改，因为 React 将无法识别状态更改，更改将不会渲染。
-- B. 状态应该直接通过赋值进行变/修改。
+### 5. 关于 React 状态，以下哪种说法是正确的？
+- A. 状态不应直接通过赋值进行修改，因为 React 将无法识别状态更改，更改将不会渲染。
+- B. 状态应该直接通过赋值进行修改。
 - C. 对于对象和数组，不应使用扩展运算符对状态进行更改。
-- D. A 和 C 
+- D. A 和 C
 
 **答案：选项 A**
-
-状态不应直接通过赋值进行变/修改，因为 React 将无法识别状态更改，更改将不会渲染。
+状态不应直接通过赋值进行修改，因为 React 将无法识别状态更改，更改将不会渲染。
 
 # 第 16 章
 
@@ -9464,7 +9211,7 @@ D. useState hook, componentDidMount, componentDidUpdate
 
 首先，让我们理解什么是状态，以及这些所谓的管理到底是什么。
 
-在任何应用程序中，都涉及某些数据，这些数据随着我们与程序的交互而改变。数据可以是从 API 获取的外部数据并随后由用户处理，也可以的用户输入的数据（指示用户登录状态、用户行为等），但无论应用程序做什么，都会有一些应用程序需要处理的数据。此外，应用程序可能会根据状态的值表现出不同的行为。例如：
+在任何应用程序中，都涉及某些数据，这些数据随着我们与程序的交互而改变。数据可以是从 API 获取的外部数据并随后由用户处理，也可以是用户输入的数据（指示用户登录状态、用户行为等），但无论应用程序做什么，都会有一些应用程序需要处理的数据。此外，应用程序可能会根据状态的值表现出不同的行为。例如：
 
 - 如果用户已登录，则只有你可以导航到某些安全页面。
 - 如果用户语言是法语，向其显示法语内容，否则默认显示英语。
@@ -9475,7 +9222,7 @@ D. useState hook, componentDidMount, componentDidUpdate
 
 在 **模型-视图-控制器 (MVC)** 中，**模型 (Model)** 是应用程序的数据，**视图 (View)** 是用户可见的用户界面，而**控制器 (Controller)** 包含了处理用户交互事件并相应更新数据的逻辑。
 
-在这种方法中，虽然有适当的结构以及逻辑与数据层的清晰分离，但数据更新的方向和更改流动的方向是不确定的。由于数据流和数据变化流是双向的，导致如如下所示，管理和调试数据更改变得困难：
+在这种方法中，虽然有适当的结构以及逻辑与数据层的清晰分离，但数据更新的方向和更改流动的方向是不确定的。由于数据流和数据变化流是双向的，导致管理和调试数据更改变得困难：
 
 ![](img/22525aec83cb16cb7664cd8d5c364721_374_0.png)
 
@@ -9495,74 +9242,82 @@ Facebook 提出了一种状态管理模式称为 Flux，并提供了一些在 Re
 
 状态的单向更新使其维护和调试变得非常具有预测性。
 
-数据流和数据变化流是双向的，导致如如下所示，管理和调试数据更改变得困难：
+数据流和数据变化流是双向的，导致管理和调试数据更改变得困难：
 
 ![](img/22525aec83cb16cb7664cd8d5c364721_375_0.png)
 
 图 16.2：Redux 的单向数据流
 
-状态管理的概念以数据结构的形式定义应用的状态，这种结构只能以单向且非常有预测的方式进行更新。状态的单向更新使其维护和调试变得非常具有预测性。 
+状态管理的概念以数据结构的形式定义应用的状态，这种结构只能以单向且非常有预测的方式进行更新。状态的单向更新使其维护和调试变得非常具有预测性。
 
 状态容器以 store（存储）的形式将数据维护在一个地方，如下所示：
 
 我们需要理解组成 Redux 的每一个术语。要使用 Redux，我们首先需要以下命令安装依赖：
 
-```
+```bash
 npm install redux --save
 ```
 
-Action creator（动作创建器）是初始化或创建 action 的函数。处理坐标的动作创建器如下：
+`Action creator`（动作创建器）是初始化或创建 action 的函数。处理坐标的动作创建器如下：
 
 ```javascript
-exportInitialCoordinates = (coordinates)=>{
-console.log(coordinates);
-return{
-type: 'INITIAL_COORDS',
-payload:coordinates,
-}
+export const initialCoordinates = (coordinates) => {
+  console.log(coordinates);
+  return {
+    type: 'INITIAL_COORDS',
+    payload: coordinates,
+  }
 }
 ```
 
-Action 是 action creator 返回的对象，代表对状态的更改。它包含以下两个部分：
+`Action` 是 action creator 返回的对象，代表对状态的更改。它包含以下两个部分：
 
-- type（动作类型），指示更改的类型
-- payload（有效负载），携带更改的数据
+- `type`（动作类型），指示更改的类型
+- `payload`（有效负载），携带更改的数据
 
-在前面的示例中，action 的类型为 INITIAL_COORDS，payload 包含了更改的坐标：
+在前面的示例中，action 的类型为 `INITIAL_COORDS`，payload 包含了更改的坐标：
 
 ```javascript
 {
-type: 'INITIAL_COORDS',
-payload:coordinates,
+  type: 'INITIAL_COORDS',
+  payload: coordinates,
 }
 ```
+
+
+
+# Dispatch（派发）
 
 Dispatch（派发）是将 action 与之前的状态一起发送给 reducer 的函数。这是调度器的基本功能，确保状态更改传递给 reducer。此函数可以被中间件封装，以包含额外的功能，如处理异步函数、添加延迟或等待、添加日志或其他中间件功能。
 
 Dispatch 是 Redux 生态系统的一部分，由 Redux 库中的 `dispatch()` 函数初始化。
 
+# Reducer
+
 Reducer 是 Redux 循环最重要的部分，它接收 action 和之前的状态，并根据 action 返回更改后的状态。它不应包含任何 API 调用。它只接收 action 以确定要执行的动作类型。此外，通过 payload，它知道要应用的更改。因此，它将更改应用于之前的状态并返回更改后的状态。
 
-Reducer 函数看起来如下所示，现在只处理 INITIAL_COORDS action：
+Reducer 函数看起来如下所示，现在只处理 `INITIAL_COORDS` action：
 
 ```javascript
 export default (state = initialState, action) => {
   switch (action.type) {
     case 'INITIAL_COORDS':
-      return{
-        ...state, coordinates:action.payload
+      return {
+        ...state,
+        coordinates: action.payload
       }
   }
 }
 ```
 
-
 ```javascript
 default:
-return{
-  ...state
-}
+  return {
+    ...state
+  }
 ```
+
+# Store（仓库）
 
 store（仓库）是一个在全局范围内处理整个应用程序状态的对象。应用只有一个 store 实例，它包含了应用程序所有不同的状态部分。这是由 reducer（还原器）更新的内容，也是始终存储最新状态的地方。
 
@@ -9580,11 +9335,13 @@ createStore(reducer, [preloadedState], [enhancer])
 
 参数如下：
 
-- reducer (Function): 一个函数，它接收当前状态树并应用一个 action，以返回经过削减（reduced）或更改后的状态树。
-- [preloadedState] (any): 用于初始化 store 的初始状态。
-- [enhancer] (Function): 增强器。你可以可选地指定它，以通过第三方能力（如中间件、时间回溯、持久化等）来增强 store。Redux 自带的唯一 store 增强器是 `applyMiddleware()`。
+- `reducer` (Function): 一个函数，它接收当前状态树并应用一个 action，以返回经过削减（reduced）或更改后的状态树。
+- `[preloadedState]` (any): 用于初始化 store 的初始状态。
+- `[enhancer]` (Function): 增强器。你可以可选地指定它，以通过第三方能力（如中间件、时间回溯、持久化等）来增强 store。Redux 自带的唯一 store 增强器是 `applyMiddleware()`。
 
-中间件（Middleware）是可以放置在框架接收请求的点与生成响应的点之间的代码逻辑。Redux 同样提供了中间件能力，用于处理调度 action 的点与到达 reducer 点之间的位置。
+# 中间件
+
+中间件是可以放置在框架接收请求的点与生成响应的点之间的代码逻辑。Redux 同样提供了中间件能力，用于处理调度 action 的点与到达 reducer 点之间的位置。
 
 Redux 中间件对于日志记录、从异步 API 获取数据、路由等非常有用。`applyMiddleware()` 方法是唯一可以用于组合不同中间件的 store 增强器。它在 Redux 基础包可用，可以在创建 store 时同时应用多个中间件。
 
@@ -9601,9 +9358,9 @@ Redux 中间件对于日志记录、从异步 API 获取数据、路由等非常
 
 将所有这些部分结合起来，Redux 流始于 action creator 发起一个 action，通过 action `type` 和 `payload` 对状态进行某些更改。action 会同之前的状态一起被调度到 reducer。reducer 根据 `type` 和 `payload` 执行更改并返回更改后的状态。因此，状态的任何变化将始终遵循相同的路径，这使其变得非常容易追踪。
 
-在对 Redux 工作原理有了基本理解后，我们将查看 Redux 如何与 React 一工作。
+在对 Redux 工作原理有了基本理解后，我们将查看 Redux 如何与 React 一起工作。
 
-## 在 React 中整合 Redux
+# 在 React 中整合 Redux
 
 在 React 中，我们看到数据可以通过两种方式处理：组件可以拥有自己的本地状态，数据可以通过 props 的形式传递给子组件。
 
@@ -9692,42 +9449,35 @@ react-redux 库提供了 `connect` 函数来将 React 组件连接到 store。
 
 `connect` 函数接受以下参数，所有参数都是可选的，并遵循以下命名。你可以使用任何名称，但使用这些命名会使你的代码一致且易于理解：
 
-- mapStateToProps?function: (state, ownProps?) => Object
+- `mapStateToProps?`: function: (state, ownProps?) => Object
 
 第一个参数是一个函数类型的可选参数，如果你想在组件中使用 Redux store 的状态，可以提供它。
 
 让我们知道 `mapStateToProps` 函数如何与 Redux store 协作，如下：
 
 - 该函数接收全局状态作为输入，并返回一个合并到组件 props 中的对象。每当全局状态发生变化时，该函数就会被调用；如果变化的原因导致了其输出的变化（即组件 props 的变化），则 React 组件将重新渲染。
+- 此函数还可以接收一个额外的第二个参数，通常称为 `ownProps`，它将包含被包装组件的 props。如果状态计算依赖于所考虑组件的 prop 值，这可能会很有用。
+- 最后，函数返回一个对象，该对象将作为组件的 props 可用。每当此对象发生变化时，组件将重新渲染：
 
-
-
-
-
-- ○ 此函数还可以接收一个额外的第二个参数，通常称为 `ownProps`，它将包含被包装组件的 props。如果状态计算依赖于所考虑组件的 prop 值，这可能会很有用。
-
-- ○ 最后，函数返回一个对象，该对象将作为组件的 props 可用。每当此对象发生变化时，组件将重新渲染：
 ```javascript
 const mapStateToProps = (state) => {
   return {
-    state.coordinates,
+    coordinates: state.coordinates,
   }
 }
 ```
 
 当全局状态中的坐标发生变化时，App 组件将重新渲染。
 
-- **mapDispatchProps? 函数 | 对象**
-mapDispatchProps?: Object
-mapDispatchProps?: (dispatch, ownProps?) => Object
+- `mapDispatchToProps?`: Function | Object
 
 这个可选的第二个参数可以是一个返回对象的函数，也可以是一个直接的对象。当你想要从组件分发任何 action 到 reducers 时，就会提供此参数。
 
 该方法的参数具有以下行为：
 
-- ○ 如果未提供此参数，你的组件将在 props 中接收 `dispatch` 函数，你可以通过它将 action 分发到 reducer。
+- 如果未提供此参数，你的组件将在 props 中接收 `dispatch` 函数，你可以通过它将 action 分发到 reducer。
+- 如果此参数被定义为函数，它接收 `dispatch` 作为第一个参数，包含了当前组件需要分发的所有 action。
 
-- ○ 如果此参数被定义为函数，它接收 `dispatch` 作为第一个参数，包含了当前组件需要分发的所有 action。
 ```javascript
 const mapDispatchToProps = dispatch => {
   return {
@@ -9738,35 +9488,38 @@ const mapDispatchToProps = dispatch => {
 }
 ```
 
-返回的对象会被包含在 props 中，因此这些 action creators可以直接调用，而无需在组件内部显式地 dispatch。
+返回的对象会被包含在 props 中，因此这些 action creators 可以直接调用，而无需在组件内部显式地 dispatch。
 
 - 此函数可以使用 Redux 提供的 `bindActionCreators` 函数，它将不需要像下面所示与 `dispatch` 函数进行显式绑定：
+
 ```javascript
 import { bindActionCreators } from 'redux'
 
-function mapdispatchToProps(dispatch) {
-  return bindActionCreators({ first, second });
+function mapDispatchToProps(dispatch) {
+  return bindActionCreators({ first, second }, dispatch);
 }
 ```
 
 第一个参数是以对象形式存在的 action creators 列表，需要通过函数进行分发：
 
 - 这是一个包含要分发的 action creators 列表的对象。在这种情况下，它会自动处理与 dispatch 的绑定。
+
 ```javascript
-export default connect(mapStateProps, SearchAction, InitialCoordinates)(App);
+export default connect(mapStateToProps, { SearchAction, InitialCoordinates })(App);
 ```
 
-App 组件可以分发针对 SearchAction 和 InitialCoordinates 的 action。
+App 组件可以分发针对 `SearchAction` 和 `InitialCoordinates` 的 action。
 
-- **mergeProps?**: `mergeProps?:(stateProps, dispatchProps, ownProps) => Object`
+- `mergeProps?`: `mergeProps?:(stateProps, dispatchProps, ownProps) => Object`
+
 此可选参数指定了最终合并的对象应该是什么样的。如果没有指定，它将如下：
 
-- 默认情况下 { ...ownProps, ...stateProps, ...dispatchProps }
+- 默认情况下 `{ ...ownProps, ...stateProps, ...dispatchProps }`
 - 你可以使用此参数指定一组不同的集合和顺序。
 
-- **options?**: 最后一个参数是一个可选对象，提供了在接收全局状态时控制数据比较所需的额外能力。它具有以下选项：
+- `options?`: 最后一个参数是一个可选对象，提供了在接收全局状态时控制数据比较所需的额外能力。它具有以下选项：
 
-```
+```javascript
 {
   context?: Object,
   pure?: boolean,
@@ -9846,26 +9599,30 @@ export const SearchTermUpdate = (term) => {
 export const MainWeatherData = (data) => {
   return axios.get(`https://api.openweathermap.org/data/2.5/weather?lat=${data.latitude}&lon=${data.longitude}&units=metric&appid=${geo_key}`)
     .then(response => {
-      dispatch(MainWeatherData(response.data));
+      dispatch(MainWeatherDataCreator(response.data));
     })
     .catch(err => {
       console.log(err);
     });
 }
+
+// 创建 MainWeatherData 的 action creator
+const MainWeatherDataCreator = (responseData) => {
+  return {
+    type: 'MAIN_WEATHER_DATA',
+    payload: responseData
+  }
+};
 ```
 
-
-
-
 ```javascript
-}
-//render 方法
+// render 方法
 render() {
   if (this.props.coordinates !== undefined) {
     return (
       <div className="App">
-        <Header handleSearch={(e) =>this.handleSearch()} //Header 组件
-          handleChange={(e) =>{this.handleChange(e)}}
+        <Header handleSearch={(e) => this.handleSearch()}
+          handleChange={(e) => { this.handleChange(e) }}
         />
         <div className="container">
           <MainData/> {/** 包含卡片、摘要表格、天气图的主组件*/}
@@ -9874,13 +9631,13 @@ render() {
       </div>
     );
   } else {
-    return(
+    return (
       <>
-        <Header handleSearch={(e) =>this.handleSearch()()}
-          handleChange={(e) =>{this.handleChange(e)}}
+        <Header handleSearch={(e) => this.handleSearch()}
+          handleChange={(e) => { this.handleChange(e) }}
         />
         <p>Loader...</p>
-      </div>
+      </>
     );
   }
 }
@@ -9892,7 +9649,7 @@ const mapStateToProps = (state) => {
   };
 }
 
-export default connect(mapStateToProps, {SearchAction, InitialCoordinates, SearchTermUpdate})(App);
+export default connect(mapStateToProps, { SearchAction, InitialCoordinates, SearchTermUpdate })(App);
 ```
 
 现在，App 组件不再将坐标作为 props 发送给 MainData 和 TabularData 组件，因为它可以连接到 store（存储）并获取坐标。
@@ -9901,76 +9658,74 @@ export default connect(mapStateToProps, {SearchAction, InitialCoordinates, Searc
 
 ```javascript
 const MainData = (props) => {
-```
+  // console.log(props.coords)
+  // const {latitude, longitude} = props.coordinates;
+  useEffect(() => {
+    if (props.coordinates)
+      props.MainWeatherData(props.coordinates);
+  }, [props.coordinates]);
 
-```javascript
-// console.log(props.coords)
-// const {latitude, longitude} = props.coordinates;
-useEffect(() => {
-  if (props.coordinates)
-    props.MainWeatherData(props.coordinates);
-}, [props.coordinates]);
-
-if (props.weatherData && props.weatherData != undefined) {
-  return (
-    <div className="main_container">
-      <div className="card_container_main">
-        <WeatherCard data={props.weatherData}
-          mainData={props.mainData}
-          windData={props.windData} />
-        <WeatherChart/>
-        <SummaryTable data={props.weatherData}
-          mainData={props.mainData}
-          windData={props.windData}
-          sunData={props.sunData}
-          cloudData={props.coordinates}/>
-    </div>
-  );
-} else {
-  return (
-    <div></div>
-  );
+  if (props.weatherData && props.weatherData != undefined) {
+    return (
+      <div className="main_container">
+        <div className="card_container_main">
+          <WeatherCard data={props.weatherData}
+            mainData={props.mainData}
+            windData={props.windData} />
+          <WeatherChart/>
+          <SummaryTable data={props.weatherData}
+            mainData={props.mainData}
+            windData={props.windData}
+            sunData={props.sunData}
+            cloudData={props.cloudData}/>
+        </div>
+      </div>
+    );
+  } else {
+    return (
+      <div></div>
+    );
+  }
 }
 
 const mapStateToProps = (state) => {
   if (state.mainWeatherData != undefined) {
     console.log(state.mainWeatherData.weather[0])
     return {
-      coordinates :state.coordinates,
-      weatherData:state.mainWeatherData,
-      mainData:state.mainWeatherData.main,
-      windData:state.mainWeatherData.wind,
-      sunData:state.mainWeatherData.sys,
-      cloudData:state.mainWeatherData.weather[0]
+      coordinates: state.coordinates,
+      weatherData: state.mainWeatherData,
+      mainData: state.mainWeatherData.main,
+      windData: state.mainWeatherData.wind,
+      sunData: state.mainWeatherData.sys,
+      cloudData: state.mainWeatherData.weather[0]
     };
   } else {
     return {
-      coordinates :state.coordinates
+      coordinates: state.coordinates
     };
   }
 }
-```
-}
-}
 
-export default connect(mapStateToProps,{MainWeatherData})(MainData);
+export default connect(mapStateToProps, { MainWeatherData })(MainData);
 ```
 
 子组件 WeatherCard 和 SummaryTable 保持不变，因为它们没有连接到 store，而是从父组件 MainData 获取数据。
 
-第三个子组件 weatherChart 现在将直接连接到 store 获取坐标，并派发（dispatch）动作来生成图表相关数据。
+第三个子组件 WeatherChart 现在将直接连接到 store 获取坐标，并派发（dispatch）动作来生成图表相关数据。
 
-Weatherchart 组件已更改为直接连接到 store 并使用坐标；更改（**加粗**部分）代码如下：
+WeatherChart 组件已更改为直接连接到 store 并使用坐标；更改代码如下：
 
 ```javascript
-const weatherchart = (props) => {
+const WeatherChart = (props) => {
+
   useEffect(() => {
     props.chartAction(props.coordinates)
   }, [props.coordinates]);
+
   if (props.chartData.list !== undefined && props.chartData.list.list == null) {
     var ApiData = {
-      labels:props.chartData.list.map((data)=>{
-        let time = data.dt_txt.slice(11,16);
+      labels: props.chartData.list.map((data) => {
+        let time = data.dt_txt.slice(11, 16);
         let Hours = +time.substr(0, 2);
         let hour = (Hours % 12) || 12;
         hour = (hour < 10) ? "0" + hour : hour;
@@ -9980,17 +9735,17 @@ const weatherchart = (props) => {
       }),
       datasets: [
         {
-          type:'line',
+          type: 'line',
           label: '每 3 小时的温度',
-          data:props.chartData.list.map((data)=>{
-            return data.main.temp }),
+          data: props.chartData.list.map((data) => {
+            return data.main.temp
           }),
-          backgroundColor :'rgba(0,0,0,0)',
-          borderColor : '#475eb2',
-          pointBackgroundColor:'#475eb2',
+          backgroundColor: 'rgba(0,0,0,0)',
+          borderColor: '#475eb2',
+          pointBackgroundColor: '#475eb2',
         },
         {
-          type:'bar',
+          type: 'bar',
           label: '每 3 小时的湿度',
           fill: false,
           lineTension: 0.1,
@@ -9998,43 +9753,42 @@ const weatherchart = (props) => {
           borderColor: 'rgba(75,192,192,1)',
           barPercentage: 0.2,
         }
-      ])
+      ]
     };
   }
-}
-```
 
-```javascript
-data:props.chartData.list.map((data)=>{
-  return data.main.humidity }),
+  const options = {
+    legend: {
+      display: true,
+    },
+  };
+
+  return (
+    <div className="chart">
+      <Line data={ApiData} options={options} />
+    </div>
+  );
 }
-}
-const options = {
-  legend: {
-    display: true,
-  },
-};
-return (
-  <div className="chart">
-    <Line data={props.chartData} options={options} />
-  </div>
-);
+
 const mapStateToProps = (state) => {
   return {
     coordinates: state.coordinates,
     chartData: state.chartData
   };
 }
-export default connect(mapStateToProps)(WeatherChart);
+
+export default connect(mapStateToProps, { chartAction })(WeatherChart);
 ```
 
 此外，TabularData 组件已更改为连接到 store 获取坐标，而不是从父组件获取。代码如下：
 
 ```javascript
-const tabularData = (props) => {
+const TabularData = (props) => {
+
   useEffect(() => {
     props.tabularDataAction(props.coordinates)
   }, [props.coordinates]);
+
   if (props.tabularData != undefined) {
     return (
       <div className="table-container">
@@ -10060,29 +9814,7 @@ const tabularData = (props) => {
     );
   }
 }
-```
 
-```html
-<h3>Forecast Data</h3>
-<div className="table-container">
-  <table>
-    <thead>
-      <tr>
-        <th>Day</th>
-      </tr>
-    </thead>
-    <tbody>
-      {props.tabularData.list.map((data, i) => (
-        <tr key={i}>
-          <td>{data.dt_txt}</td>
-        </tr>
-      ))}
-    </tbody>
-  </table>
-</div>
-```
-
-```javascript
 const mapStateToProps = (state) => {
   return {
     coordinates: state.coordinates,
@@ -10090,10 +9822,8 @@ const mapStateToProps = (state) => {
   };
 }
 
-export default connect(mapStateToProps, {tabularDataAction})(TabularData);
+export default connect(mapStateToProps, { tabularDataAction })(TabularData);
 ```
-
-
 
 # 第 17 章
 ## React 的调试、测试与部署
@@ -10113,11 +9843,11 @@ export default connect(mapStateToProps, {tabularDataAction})(TabularData);
 
 ## 目标
 
-在本章结束时，你将学会如何有效地调试 React 应用。你还将将介绍 React 应用的单元测试自动化，以及如何构建用于生产环境部署的构建。
+在本章结束时，你将学会如何有效地调试 React 应用。你还将了解 React 应用的单元测试自动化，以及如何构建用于生产环境部署的构建。
 
 ## 调试 React 应用
 
-在第 10 章“调试 JavaScript 应用”中，我们探索了 Chrome 开发者工具（Chrome devtools）及其用于调试 JavaScript 应用的功能。Chrome 开发者工具或任何相应的浏览器开发者工具都是任何基于浏览器的应用程序调试的基础。Chrome 开发者工具的所有功能对于 React 应用也同样且有用。
+在第 10 章“调试 JavaScript 应用”中，我们探索了 Chrome 开发者工具（Chrome devtools）及其用于调试 JavaScript 应用的功能。Chrome 开发者工具或任何相应的浏览器开发者工具都是任何基于浏览器的应用程序调试的基础。Chrome 开发者工具的所有功能对于 React 应用也同样有用。
 
 在浏览器中调试 React 应用时，你将检查控制台（console）的错误，并查看其他标签页以调查问题并像调试其他 JavaScript 应用一样调试你的应用程序。
 
@@ -10125,11 +9855,11 @@ export default connect(mapStateToProps, {tabularDataAction})(TabularData);
 
 ## React 开发者工具
 
-React developer tools 是一个浏览器插件，用于详细调试和调查 React 应用。它作为 Chrome 和 Firefox (Firefox) 浏览器的插件提供，也可以作为独立应用程序用于 Safari 浏览器和 React Native 应用的调试。
+React developer tools 是一个浏览器插件，用于详细调试和调查 React 应用。它作为 Chrome 和 Firefox 浏览器的插件提供，也可以作为独立应用程序用于 Safari 浏览器和 React Native 应用的调试。
 
 让我们看看如何使用此插件来调试 React 应用：
 
-### 第 1 步：
+### 第 1 步
 
 根据你选择的浏览器安装该插件或独立应用程序。如果你在阅读本书时一直使用 Chrome 浏览器，请像下面的截图所示，从 Chrome 网络应用商店安装 Chrome devtools 扩展：
 
@@ -10137,13 +9867,13 @@ React developer tools 是一个浏览器插件，用于详细调试和调查 Rea
 
 图 17.1：Chrome 网络应用商店中的 React Developer Tools
 
-### 第 2 步：
+### 第 2 步
 
 使用“添加到 Chrome”按钮安装后，它将作为指示器出现在你的 Chrome 浏览器中，通过它你可以知道该扩展对于当前站点是否激活，所示（处于激活状态）：
 
 ### 图 17.2：浏览器 React developer tools 扩展图标
 
-### 第 3 步：
+### 第 3 步
 
 它将作为一个名为 React 的额外标签页添加到 Chrome 开发者工具中，如下面的截图所示：
 
@@ -10151,7 +9881,7 @@ React developer tools 是一个浏览器插件，用于详细调试和调查 Rea
 
 图 17.3：带有 React devtools 扩展额外标签页的 Chrome devtools
 
-### 第 4 步：
+### 第 4 步
 
 进一步探索 React devtools，你会发现它有两个标签：
 
@@ -10160,17 +9890,17 @@ React developer tools 是一个浏览器插件，用于详细调试和调查 Rea
 
 Elements 标签显示了类似于主元素标签的 DOM 树，但区别在于这个 HTML 树是由 JSX 元素组成的。它将显示组成 React 应用的 JSX 元素。选择特定元素时，你可以在右侧区域获得与元素相关的 props 和 state 值的完整视图。你还可以更改这些值并实时看到更改反映在应用程序中。Elements 标签看起来如下截图所示，具有你应用程序的完整 JSX 结构：
 
-### 图 17.4：Reactdevtools 的 Elements
+### 图 17.4：React devtools 的 Elements
 
-Sr 代表当前正在检查的活动节点，可以在控制台中渲染。使用此表示法。
+`$r` 代表当前正在检查的活动节点，可以在控制台中渲染。使用此表示法。
 
 Profiler 任务的工作与 JavaScript 性能分析器类似，你可以记录与应用程序的一系列交互的性能。你可以运行性能分析器并与应用程序进行交互以记录性能。
 
-它会显示如下所示的针对不同不同渲染（renders）的配置信息，以及每次渲染的时间，并带有如图 17.5 所示的彩色图：
+它会显示如下所示的针对不同渲染（renders）的配置信息，以及每次渲染的时间，并带有如图 17.5 所示的彩色图：
 
-### 图 17.5：Reactdevtools Profiler 示例输出
+### 图 17.5：React devtools Profiler 示例输出
 
-结合 Chrome 浏览器工具使用 Reactdevtools 可以提供应用程序的完整结构视图，并更容易深入研究并发现问题和 Bug。
+结合 Chrome 浏览器工具使用 React devtools 可以提供应用程序的完整结构视图，并更容易深入研究并发现问题和 Bug。
 
 ## Redux 开发者工具
 
@@ -10178,7 +9908,7 @@ Profiler 任务的工作与 JavaScript 性能分析器类似，你可以记录�
 
 为了在你的 React-Redux 应用中使用此插件，你可以按照以下步骤操作：
 
-### 第 1 步：
+### 第 1 步
 
 此扩展可以从 Chrome 网络应用商店添加到 Chrome 浏览器中，如下面的截图所示：
 
@@ -10186,31 +9916,29 @@ Profiler 任务的工作与 JavaScript 性能分析器类似，你可以记录�
 
 图 17.6：Chrome 网络应用商店中的 Redux devtools
 
-### 第 2 步：
+### 第 2 步
 
 现在，对于 React-Redux 应用，浏览器显示两个图标均处于激活状态，如下截图所示：
 
-![](222525aec83cb16cb7664cd8d5c364721_400_1.png)
+![](img/22525aec83cb16cb7664cd8d5c364721_400_1.png)
 
 图 17.7：激活的 React 和 Redux devtools
 
-### 第 3 步：
+### 第 3 步
 
 为了让 Redux devtools 工作，在安装扩展后需要执行一些额外步骤：
 
-- 在 index.js 中包含以下代码：`composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION__ || compose;`
-
+- 在 `index.js` 中包含以下代码：`composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION__ || compose;`
 - 在不需要中间件的情况下创建 store：
 ```javascript
 const store = createStore(Reducer, composeEnhancers());
 ```
-
 或者，如果需要中间件，如下所示：
 ```javascript
 const store = createStore(Reducer, composeEnhancers(applyMiddleware(thunk)));
 ```
 
-### 第 4 步：
+### 第 4 步
 
 现在，你可以像 React devtools 一样导航到 Chrome 开发者工具中的新标签页：
 
@@ -10221,14 +9949,12 @@ const store = createStore(Reducer, composeEnhancers(applyMiddleware(thunk)));
 图 17.8：Redux devtools 视图
 
 2. 左侧面板显示分发的不同 action。右侧面板显示以下详情：
-
 - Action 标签显示 action 的详情，包括 type 和 payload。
 - State 标签显示 store 的详情。
 - Diff 标签显示不同 action 之间 store 的变化或差异。
 - Trace 和 Test 标签用于启用这些功能后追踪和测试应用程序。
 
 Redux 工具提供了良好的视图，有助于调试以检查：
-
 - action 是否分发以及具有正确的 type 和 payload
 - action 是否按正确顺序分发
 - store 是否正确初始化
@@ -10249,10 +9975,7 @@ Redux 工具提供了良好的视图，有助于调试以检查：
 
 在本节中，你将介绍一些用于 React 组件自动化单元测试的工具：
 
-- Jest：这是一个 JavaScript 测试框架，通常用于测试 React 组件。如果你使用 create-，Jest 已经配置好了。
-
-
-react-app 用于创建你的应用程序。
+- Jest：这是一个 JavaScript 测试框架，通常用于测试 React 组件。如果你使用 `create-react-app` 用于创建你的应用程序，Jest 已经配置好了。
 
 使用 Jest 相比任何其他测试运行器的优点包括：
 
@@ -10274,7 +9997,7 @@ react-app 用于创建你的应用程序。
 
 ## 定义测试
 
-断言测试用例的语法与我们在第 11 节“单元测试自动化”中看到的相似。
+断言测试用例的语法与我们在第 11 章“单元测试自动化”中看到的相似。
 
 以下示例展示了两个虚拟测试用例，它们根据传入的 `true` 和 `false` 值预期将通过或失败：
 
@@ -10283,35 +10006,33 @@ describe('The test case set', () => {
   it('sample test case to be tested to pass ', () => {
     expect(true).toBeTruthy();
   });
+
+  it('sample test case to fail', () => {
+    expect(false).toBeTruthy(); // false 不可能是真值，所以它应该失败
+  });
+});
 ```
 
-```javascript
-}})
-it('sample test case to fail', () => {
-  expect(false).toBeTruthy();//false 不可能是真值，所以它应该失败
-}}
-```
-
-此示例测试脚本可以按照之前定义的约定进行保存（在本例中，我将其将其保存为 `__tests__` 文件夹下的 `add-task-test.js`），你可以在命令行提示符中使用以下命令运行它：
+此示例测试脚本可以按照之前定义的约定进行保存（在本例中，我将其保存为 `__tests__` 文件夹下的 `add-task-test.js`），你可以在命令行提示符中使用以下命令运行它：
 
 ```bash
 npm test
 ```
 
-上述测试用例的结果如下截图所示，显示 1 个测试通过，2 个测试失败：
+上述测试用例的结果如下截图所示，显示 1 个测试通过，1 个测试失败：
 
 ![](img/22525aec83cb16cb7664cd8d5c364721_404_0.png)
 
-图 19：示例测试套件的结果
+图 17.9：示例测试套件的结果
 
 一些用于比较和检查结果的主要断言包括：
 
-- toBeTruthy()
-- toBeFalsy()
-- toBe()
-- toEqual()
-- toBeDefined()
-- toBeCalled()
+- `toBeTruthy()`
+- `toBeFalsy()`
+- `toBe()`
+- `toEqual()`
+- `toBeDefined()`
+- `toBeCalled()`
 
 你可以使用上述断言列表来构建你的测试用例，以比较预期结果与实际结果。
 
@@ -10321,7 +10042,7 @@ npm test
 
 我们将使用 `react-test-renderer` 根据 DOM 或其他环境渲染类组件对象，以便比较组件的快照。为了执行快照测试，我们可以遵循以下步骤：
 
-### 步骤 1：
+### 步骤 1
 
 可以使用以下命令安装依赖：
 
@@ -10329,7 +10050,7 @@ npm test
 npm install --save react-test-renderer
 ```
 
-### 步骤 2：
+### 步骤 2
 
 对任何组件（此处正在测试 App 组件）进行快照测试可以如下所示：
 
@@ -10337,6 +10058,7 @@ npm install --save react-test-renderer
 import React from 'react';
 import TestRenderer from 'react-test-renderer';
 import App from './App';
+
 describe("App", () => {
   it("should render component", () => {
     const AppComponent = TestRenderer.create(<App />).toJSON();
@@ -10350,7 +10072,7 @@ describe("App", () => {
 1. 如果快照不存在，创建一个快照。
 2. 如果快照存在，则将新快照与上次保存的进行比较。
 
-### 步骤 3：
+### 步骤 3
 
 运行测试用例，执行以下命令：
 
@@ -10360,30 +10082,39 @@ npm test
 
 快照将被创建并保存到 `__snapshots__` 文件夹中，名为 `App.test.js.snap`。
 
-### 步骤 4：
+### 步骤 4
 
 现在，如果你对 App 的渲染输出进行任何更改，测试用例将失败，向你显示相对于旧快照所做的更改以及指定的失败信息：
 
 ![](img/22525aec83cb16cb7664cd8d5c364721_404_0.png)
 
-图 19：示例测试套件的结果
+图 17.10：快照测试失败示例
 
-一些用于比较和检查结果的主要断言包括：
+## 浅渲染测试
 
-- toBeTruthy()
-- toBeFalsy()
-- toBe()
-- toEqual()
-- toBeDefined()
-- toBeCalled()
+Enzyme 提供了浅渲染（shallow rendering）能力，它只渲染正在测试的组件，而不渲染其子组件。这使得单元测试更加专注和隔离。
 
-你可以使用上述断言列表来构建你的测试用例，以比较预期结果与实际结果。
+```javascript
+import { shallow } from 'enzyme';
+import MyComponent from './MyComponent';
 
+it('renders correctly', () => {
+  const wrapper = shallow(<MyComponent />);
+  expect(wrapper).toMatchSnapshot();
+});
+```
 
+## 部署 React 应用
 
+在测试完成并修复所有问题后，你的应用程序就可以部署到生产环境了。React 应用的部署通常涉及构建生产版本的代码。
 
+### 构建生产版本
 
+使用 `create-react-app` 创建的应用程序，可以使用以下命令构建生产版本：
+
+```bash
 npm run build
+```
 
 此命令将对代码进行优化打包和压缩，以获得应用程序最佳的包体积。
 
@@ -10394,53 +10125,45 @@ npm run build
 ```
 $ todo-app@1.0 build C:\app\htdocs\ToDo-master
 > react-scripts build
-
 Creating an optimized build...
 Compiled with warnings.
-
 /src/components/myProfile.js
 Line 36: Unreachable code no-unreachable
-
 /src/components/TaskItem.js
 Line 46: Do not mutate state directly use setState
 Line 98: Expected to return a value at the end of function array-callback-return
 Line 98: Expected to return a value at the end of arrow function array-callback-return
 Line 271: Expected to return a value at the end of arrow function array-callback-return
-
 搜索关键字以了解更多关于每个警告的信息。
 要忽略警告，请在上一行添加 `// eslint-disable-next-line`。
-
 File sizes after build:
-133.81 KB buildstatic/js-2.b10cfbf.chunk.js
-16.86 KB (-1 B) buildstatic/js-main.c60aff72.chunk.js
-2.62 KB buildstatic/css-main.9907736.chunk.css
-7.62 KB buildstatic/runtime-main.aaa995a.js
-6.76 B buildstatic/main.16f5f97.chunk.css
+133.81 KB build/static/js/2.b10cfbf.chunk.js
+16.86 KB (-1 B) build/static/js/main.c60aff72.chunk.js
+2.62 KB build/static/css/main.9907736.chunk.css
+7.62 KB build/static/js/runtime-main.aaa995a.js
+6.76 B build/static/css/main.16f5f97.chunk.css
 ```
 
 项目的构建假设它托管在服务器的根目录下。
 你可以通过 `package.json` 中的 `homepage` 字段来控制这一点。
 例如，为了为 GitHub Pages 构建，请添加以下内容：
 
-```
+```json
 "homepage": "http://myname.github.io/myapp",
 ```
 
 构建已准备就绪部署。
 你可以使用静态服务器运行它：
 
-```
-npm install -g
+```bash
+npm install -g serve
 serve -s build
 ```
 
 在此处了解更多关于部署的信息：
-
-```
 https://bit.ly/CRA-deploy
-```
 
-> 图 17.11：`npm run build` 命令后生成的指令所示，你可以按照第- 章中的说明继续部署过程。
+> 图 17.11：`npm run build` 命令后生成的指令所示，你可以按照第 12 章中的说明继续部署过程。
 
 一旦打包的文件完成部署，你就可以按照第 12 章“构建和部署应用程序”中的说明继续部署过程。
 
@@ -10452,9 +10175,9 @@ https://bit.ly/CRA-deploy
 
 在下一章（也是本书的最后一章）中，我们将讨论需要掌握的额外技能，以进一步增强自己，在 Web 开发道路上脱颖而出。
 
-## 习
+## 习题
 
-- 1. ____ 函数用于 Jest 中的快照测试（snapshot testing）。
+1. `toMatchSnapshot()` 函数用于 Jest 中的快照测试（snapshot testing）。
    A. toMatch
    B. checkSnapshot
    C. diffSnapshot
@@ -10463,7 +10186,7 @@ https://bit.ly/CRA-deploy
 **答案：A**
 `expect(AppComponent).toMatchSnapshot();` 此命令用于对给定的组件执行快照测试。
 
-- 2. 以下哪些是测试运行器（test runner）识别的有效测试文件规范？
+2. 以下哪些是测试运行器（test runner）识别的有效测试文件规范？
    A. `__tests__` 文件夹中带有 .js 后缀的文件。
    B. 带有 .test.js 后缀的文件。
    C. 带有 .spec.js 后缀的文件。
@@ -10471,8 +10194,8 @@ https://bit.ly/CRA-deploy
 
 **答案：D**
 
-- 3. 使用 ____ 测试方法只对组件进行测试，而不涉及子组件渲染的细节。
-   - A. mount
+3. 使用 ____ 测试方法只对组件进行测试，而不涉及子组件渲染的细节。
+   A. mount
    B. render
    C. shallow
    D. deep
@@ -10481,7 +10204,7 @@ https://bit.ly/CRA-deploy
 
 在浅层渲染（shallow approach）方法中，只渲染正在测试的组件，而不涉及子组件渲染的细节。
 
-- 4. 在调试你的 React-Redux 应用时，使用 Redux devtools 无法确定哪一项？
+4. 在调试你的 React-Redux 应用时，使用 Redux devtools 无法确定哪一项？
    A. action 是否已分发以及是否具有正确的类型和负载，以及顺序是否正确。
    B. store 是否正确初始化。
    C. store 是否如预期般正确更新。
@@ -10491,7 +10214,7 @@ https://bit.ly/CRA-deploy
 
 Props 的值可以使用 React devtools 进行检查。Props 不应该在组件内部更改。
 
-- 5. ____ 代表当前正在检查的活动节点，可以使用此表示在 `console.log` 中渲染。
+5. `$r` 代表当前正在检查的活动节点，可以使用此表示在 `console.log` 中渲染。
    A. $c
    B. $d
    C. $r
@@ -10503,7 +10226,7 @@ Props 的值可以使用 React devtools 进行检查。Props 不应该在组件�
 
 ## 接下来 - 如何成为专业人士？
 
-“人生要有一个远大的目标，不断获取知识，努力工作并坚持以以实现伟的成就。”
+“人生要有一个远大的目标，不断获取知识，努力工作并坚持以实现伟大的成就。”
 —A.P.J. Abdul Kalam 博士
 
 “你目前理解的局限并不是你可能性的局限。”
@@ -10511,7 +10234,7 @@ Props 的值可以使用 React devtools 进行检查。Props 不应该在组件�
 
 你现在处于本书的最后一章。在本书中，你接触了许多技术，即 HTML、CSS、JavaScript 和 React。
 
-凭借这些知识，在这一章中，你将将向你介绍一些与 Web 开发相关的其他技能，你可以接下来学习这些技能以增强你的学习效果。这些技能将帮助你理解全栈，并进入这项 Web 开发游戏的下一个水平。它也让你窥见应用程序开发的不同方面。
+凭借这些知识，在这一章中，你将了解一些与 Web 开发相关的其他技能，你可以接下来学习这些技能以增强你的学习效果。这些技能将帮助你理解全栈，并进入这项 Web 开发游戏的下一个水平。它也让你窥见应用程序开发的不同方面。
 
 ## 结构
 
@@ -10561,10 +10284,6 @@ React Native 使用原生组件。根据需要添加特定平台的代码。来�
 
 一些流行的模板引擎包括 mustache.js 和 handlebars.js。handlebars.js 是一个模板引擎；它基于 Mustache，并通过添加支持逻辑标签、辅助函数、路径、反转区块等功能进一步改进了 Mustache。
 
-
-
-
-
 ## 数据的图形化表示
 
 ![](img/22525aec83cb16cb7664cd8d5c364721_416_0.png)
@@ -10583,15 +10302,15 @@ React Native 使用原生组件。根据需要添加特定平台的代码。来�
 
 函数式编程是一种编程模式，侧重于使用纯函数开发程序，以提供特定的功能，而不具有任何共享状态和可变数据。函数式 JavaScript 库用于扩展 JavaScript 的功能，并提供无需通过复制实现逻辑即可使用的功能。
 
-一些常见且非常有用的库包括 underscore 和 lodash。它们为你提供了许多实用的函数（例如 map、reduce、find、filter 等），而不扩展任何现有的 JavaScript 对象。
+一些常见且非常有用的库包括 underscore 和 lodash。它们为你提供了许多实用的函数（例如 `map`、`reduce`、`find`、`filter` 等），而不扩展任何现有的 JavaScript 对象。
 
 ## 路由
 
-在单页应用 (SPA) 中，只有一个 index.html，它根据所使用的底层 JavaScript 框架进行加载。因此，默认情况下，SPA 只有一个 URL，当我们在应用程序中导航时该 URL 不改变。为了实现 URL 的变化行为并拥有具有特定功能的 URL 路径，我们需要在应用程序中实现路由。路由允许 SPA 在不同的 URL 路径之间导航，并为终端用户提供最佳体验。
+在单页应用 (SPA) 中，只有一个 `index.html`，它根据所使用的底层 JavaScript 框架进行加载。因此，默认情况下，SPA 只有一个 URL，当我们在应用程序中导航时该 URL 不改变。为了实现 URL 的变化行为并拥有具有特定功能的 URL 路径，我们需要在应用程序中实现路由。路由允许 SPA 在不同的 URL 路径之间导航，并为终端用户提供最佳体验。
 
 React Router 是用于 React 的路由库，它是导航组件的集合，能够在应用程序的不同的 URL 之间进行导航，并在前进、后退和不重新加载整个应用程序的情况下恢复状态。
 
-对于 Web 应用程序，react-router-dom 是需要安装的应用程序依赖，以便启用应用程序中的路由。对于移动应用，react-router-native 是启用路由所需的依赖项。
+对于 Web 应用程序，`react-router-dom` 是需要安装的应用程序依赖，以便启用应用程序中的路由。对于移动应用，`react-router-native` 是启用路由所需的依赖项。
 
 下面的图总结了 React 应用中用于路由的各种 React 包：
 
@@ -10607,7 +10326,7 @@ React Router 是用于 React 的路由库，它是导航组件的集合，能够
 
 日志级别可以设置，取决于在开发期间还是部署后需要显示从最少到更多的日志。
 
-除了最基础且常用的 console.log，我们还有一些其他工具和库来使日志更具结构化。像 logs 这样的日志库允许控制台对日志提供更好的视觉表示。Console 是一个调试面板，它对基础 JavaScript 控制台功能提供了一个封装，并以受控的方式显示。这些日志库的使用增强了开发过程。
+除了最基础且常用的 `console.log`，我们还有一些其他工具和库来使日志更具结构化。像 `logs` 这样的日志库允许控制台对日志提供更好的视觉表示。`Console` 是一个调试面板，它对基础 JavaScript 控制台功能提供了一个封装，并以受控的方式显示。这些日志库的使用增强了开发过程。
 
 ## 国际化
 
@@ -10649,13 +10368,11 @@ ESLint 是该组最新且最流行的，它利用 ES6 语法来实施编码风�
 
 代码覆盖率是自动化测试覆盖的代码百分比衡量。它决定了哪些语句在测试运行时已执行，哪些语句没有执行。对于计算 JavaScript 代码覆盖率，有一些可用库，即 JSCover 和 Istanbul。特别是关注持续集成 (CI) 和持续部署 (CD)，代码覆盖率的重要性变得非常高，它表明你已经为 CI/CD 过程准备就绪。
 
-
-
-
+## 服务
 
 webopedia.com 对服务的定义指出：“Web 服务一术语描述了在互联网协议骨干网上，使用 XML、SOAP、WSDL 和 UDDI 开放标准集成基于 Web 的应用程序的标准化方法。”
 
-Web 服务允许不同的应用程序通过网络使用应用程序编程接口（API）共享数据和逻辑，而无需向彼此暴露其完整细节。Web 服务允许使用使用完全不同技术构建的应用程序能够进行通信，而无需复杂的接口。
+Web 服务允许不同的应用程序通过网络使用应用程序编程接口（API）共享数据和逻辑，而无需向彼此暴露其完整细节。Web 服务允许使用完全不同技术构建的应用程序能够进行通信，而无需复杂的接口。
 
 Web 服务可以使用 Node.js（一种 JavaScript 运行时引擎）来构建，该引擎用于使用 JavaScript 进行服务器端编程。Java 和 ASP.NET 也提供了自己的 API 来创建标准的 Web 服务，以便在各种应用程序之间进行通信和数据共享。
 
@@ -10663,9 +10380,9 @@ Web 服务可以使用 Node.js（一种 JavaScript 运行时引擎）来构建�
 
 ![](img/22525aec83cb16cb7664cd8d5c364721_421_0.png)
 
-图 18.4：Node:JS 服务数据流
+图 18.4：Node.js 服务数据流
 
-了解如何构建和使用 Web 服务以及微服务将使你能够对应用程序进行端端可视化，并为最终用户提供最佳体验。
+了解如何构建和使用 Web 服务以及微服务将使你能够对应用程序进行端到端可视化，并为最终用户提供最佳体验。
 
 ## 数据库
 
@@ -10702,7 +10419,7 @@ No-SQL 数据库的示例包括 MongoDB、DocumentDB、Cassandra、Couchbase、H
 
 2. 下面哪项是关系型数据库？
    A. Cassandra
-   B. Coachbase
+   B. Couchbase
    C. HBase
    D. PostgreSQL
    答案：选项 D
@@ -10721,10 +10438,9 @@ No-SQL 数据库的示例包括 MongoDB、DocumentDB、Cassandra、Couchbase、H
    D. 以上所有
    答案：选项 D
 
-5. ______ 是快速且功能全端端测试框架，包含了断言、模拟（mocking）以及存桩（stubbing）功能，为自动化端端测试场景提供了完美的平台。
+5. ______ 是快速且功能全端到端测试框架，包含了断言、模拟（mocking）以及存桩（stubbing）功能，为自动化端到端测试场景提供了完美的平台。
    A. Cypress
    B. Mustache
    C. Handlebars
    D. 以上所有
    答案：选项 A
-

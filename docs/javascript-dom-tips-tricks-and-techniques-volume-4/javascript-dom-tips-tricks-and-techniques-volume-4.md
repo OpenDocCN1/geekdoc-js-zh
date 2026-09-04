@@ -1,8 +1,7 @@
+
 # JavaScript 与 DOM 技巧、妙招及技术（卷 4）
 
-
-
-## 使用 Array.sort()
+## 使用 `Array.sort()`
 
 你可能知道，当 `Array.prototype.sort()` 与可选的第二个参数 `compareFunction` 一起使用时，它会变得更加强大和实用。这允许你定义排序顺序，对数字排序特别有帮助。
 
@@ -19,16 +18,15 @@ let myArray = ['one', 'two', 'apple', 'mango', '', true, false, 'null', Infinity
 这里不太典型的例子包括：
 
 - 布尔值
-- null
-- Infinity
-- 多个 undefined 槽位
+- `null`
+- `Infinity`
+- 多个 `undefined` 槽位
 - 正整数和负整数
 
 如前所述，如果没有第二个参数，所有值将在转换为字符串后进行排序。以下是对该数组调用 `sort()` 的结果：
 
 ```
 console.log(myArray.sort());
-
 // ["", -3, 0, 100, 6, Infinity, NaN, "apple", false, "mango", "null", null, "one", true, "two", undefined, undefined]
 ```
 
@@ -41,7 +39,7 @@ console.log(myArray.sort());
 - `Infinity` 和 `NaN` 都排在 "apple" 之前，因为以大写字母开头的字符串会出现在任何以小写字母开头的字符串之前
 - 字符串 "null" 排在 `null` 之前
 - `true` 和 `false` 被视为小写字符串
-- 所有 undefined 槽位都被排在最后
+- 所有 `undefined` 槽位都被排在最后
 
 再次强调，使用 `Array.sort()` 的最佳方式是配合 `compareFunction` 参数，但如果你选择不使用 `compareFunction`，了解这些特性会很有帮助。
 
@@ -55,10 +53,10 @@ console.log(myArray.sort());
 例如，我有以下 HTML：
 
 ```
-1  <form>
-2    <label for="name">Name:</label>
-3    <input id="name">
-4  </form>
+<form>
+  <label for="name">Name:</label>
+  <input id="name">
+</form>
 ```
 
 name 字段通过 `for` 属性与 label 关联。这是使表单更易访问和更易用的常见做法。因此，当用户点击 label 时，name 字段将自动获得焦点。
@@ -75,13 +73,17 @@ name 字段通过 `for` 属性与 label 关联。这是使表单更易访问和�
 
 MDN 关于 label 的文章[^4]在使用说明中解释了这一点。感谢 Manuel Bieh 的这条推文[^5]指出了这一点。
 
-## 不同元素上的 change 事件与 input 事件
+[^3]: https://codepen.io/impressivewebs/pen/BMmvoY?editors=0011
+[^4]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label
+[^5]: https://twitter.com/ManuelBieh/status/1143544730866896902
+
+## 不同元素上的 `change` 事件与 `input` 事件
 
 你很可能知道 `change` 事件与 `input` 事件是不同的。首先，`change` 事件存在的时间要长得多，至少从 DOM 2 规范就有了，而 `input` 是后来在 HTML5 DOM 规范中添加的。
 
 它们在功能上的一个主要区别是，`change` 事件通常只在表单元素上触发，而 `input` 既可以在表单元素上工作，也可以在 `contenteditable` 属性设置为 `true` 的元素上工作。`input` 事件也会在使用 `document.designMode = 'on'` 编辑的元素上触发。
 
-我设置了一个 [CodePen 演示](https://codepen.io/impressivewebs/pen/BMmvoY?editors=0011)，其中包含页面上的各种元素。每当元素被更改且 input 事件触发时，该演示会在控制台中打印一条消息。尝试在各个表单字段中输入一些文本，或调整复选框或单选按钮。你还可以编辑页面上的 `<div>` 和一个 iframe（其中没有源，但这没关系，你仍然可以编辑其子文档）。
+我设置了一个 [CodePen 演示](https://codepen.io/impressivewebs/pen/BMmvoY?editors=0011)，其中包含页面上的各种元素。每当元素被更改且 `input` 事件触发时，该演示会在控制台中打印一条消息。尝试在各个表单字段中输入一些文本，或调整复选框或单选按钮。你还可以编辑页面上的 `<div>` 和一个 iframe（其中没有源，但这没关系，你仍然可以编辑其子文档）。
 
 这里还有另一个 [CodePen 演示](https://codepen.io/impressivewebs/pen/VgrgPB?editors=1001)，包含相同的元素，但这次查找的是 `change` 事件。
 
@@ -125,7 +127,7 @@ console.log( myMap.get(myArray) );
 
 无论如何，你可以看到 Map 与旧的使用对象字面量模拟 map 的方法相比，功能更加强大和灵活。
 
-## window.scrollTo()
+## `window.scrollTo()`
 
 长期以来，自定义窗口和元素滚动都是使用 jQuery 等库来完成的，有时还会配合插件。如今，有多种方法可以使用原生 DOM 技术和 CSS 实现平滑滚动。DOM/JavaScript 技术（我将在这里讨论）使用 `scrollTo()` 方法。
 
@@ -153,16 +155,14 @@ window.scrollTo({ left: 0, top: 2500, behavior: 'smooth' });
 
 最后需要注意的是，`scrollToOptions` 对象对三个不同的滚动相关方法都有效：`scroll()`、`scrollBy()` 和 `scrollTo()`。这三个方法都可以在 `window` 或元素上调用。
 
-
-
- ## addEventListener() 的第三个参数
+## `addEventListener()` 的第三个参数
 
 当你看到 `addEventListener()` 方法时，经常会发现它带有一个设置为 `false` 的最终布尔参数，如下所示：
 
 ```
-1 btn.addEventListener('click', function () {
-2   // do something
-3 }, false);
+btn.addEventListener('click', function () {
+  // do something
+}, false);
 ```
 
 该参数定义了你是想使用事件冒泡还是事件捕获，这在本系列书籍的先前提示中讨论过。
@@ -172,24 +172,22 @@ window.scrollTo({ left: 0, top: 2500, behavior: 'smooth' });
 因此，现在 `addEventListener()` 的调用可以像这样：
 
 ```
-1 btn.addEventListener('click', function () {
-2   // do something
-3 }, {
-4   capture: false,
-5   once: true,
-6   passive: false
-7 });
+btn.addEventListener('click', function () {
+  // do something
+}, {
+  capture: false,
+  once: true,
+  passive: false
+});
 ```
 
 以下是每个属性的含义：
 
-- **capture** - 与之前相同；布尔值，指示是否使用冒泡或捕获。
-- **once** - 布尔值，指示你是否希望事件监听器仅调用一次然后被移除。
-- **passive** - 布尔值，指示该函数永远不会调用 `preventDefault()`，即使它包含在内。
+- `capture` - 与之前相同；布尔值，指示是否使用冒泡或捕获。
+- `once` - 布尔值，指示你是否希望事件监听器仅调用一次然后被移除。
+- `passive` - 布尔值，指示该函数永远不会调用 `preventDefault()`，即使它包含在内。
 
-[这里有一个 CodePen 演示](https://codepen.io/impressivewebs/pen/GeJZYz?editors=0010)¹¹，它在按钮点击上使用了 `once` 属性。注意按钮应该在页面上某个元素追加一些文本。这只发生一次，然后事件监听器被移除，后续点击无效。如果你将 `once` 值改为 `false`，每次点击按钮时文本都会重新追加。
-
-¹¹ https://codepen.io/impressivewebs/pen/GeJZYz?editors=0010
+[这里有一个 CodePen 演示](https://codepen.io/impressivewebs/pen/GeJZYz?editors=0010)，它在按钮点击上使用了 `once` 属性。注意按钮应该在页面上某个元素追加一些文本。这只发生一次，然后事件监听器被移除，后续点击无效。如果你将 `once` 值改为 `false`，每次点击按钮时文本都会重新追加。
 
 这样做的主要问题是，尽管浏览器支持非常好，但在不支持的浏览器中却无法优雅降级。[MDN 的文章](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener#Safely_detecting_option_support)讨论了一些特性检测和代码分支的技术，并且[这里有一个 polyfill](http://webreflection.github.io/dom4/)。但如果你只需要支持现代浏览器，那么直接使用应该没问题。
 
@@ -202,14 +200,9 @@ window.scrollTo({ left: 0, top: 2500, behavior: 'smooth' });
 ```
 let ID = window.setInterval(callback, 1000);
 
-function () callback {
+function callback() {
   // do something here...
-
-  
-```
-
-```
-if (something) {
+  if (something) {
     window.clearInterval(ID);
   }
 }
@@ -232,7 +225,7 @@ MDN 在解释了它们可以这样互换使用之后，[明智地建议](https:/
 [^14]: https://codepen.io/impressivewebs/pen/EMZxVr?editors=0010
 [^15]: https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/clearInterval
 
-## Node.isConnected
+## `Node.isConnected`
 
 Node 接口还有另一个有些冷门的属性，在特定情况下你可能会觉得有用：`Node.isConnected`。这是一个只读属性，返回一个布尔值，指示指定节点是否连接到上下文对象。
 
@@ -277,7 +270,7 @@ https://codepen.io/impressivewebs/pen/WWjNva?editors=0010
 
 ## 高效的事件委托
 
-《JavaScript 忍者秘籍》¹ 一书有一个不错的提示，涉及事件委托和 event.target 属性。
+《JavaScript 忍者秘籍》¹ 一书有一个不错的提示，涉及事件委托和 `event.target` 属性。
 
 假设我有一组元素，我想为它们都附加相同的事件。我可以使用循环来完成，像这样：
 
@@ -293,7 +286,7 @@ for (i of cells) {
 
 这段代码不算太糟，但你可以想象如果有几十甚至上百个表格单元格，它的效率会多么低下。
 
-相反，向父级 table 元素附加单个事件，然后使用 event.target 属性来确定是否点击了单元格并相应地响应，这样做要好得多。以下是改进后的代码：
+相反，向父级 table 元素附加单个事件，然后使用 `event.target` 属性来确定是否点击了单元格并相应地响应，这样做要好得多。以下是改进后的代码：
 
 ```
 let table = document.querySelector('table');
@@ -305,14 +298,12 @@ table.addEventListener('click', function (e) {
 }, false);
 ```
 
-默认情况下，单元格上的点击事件会冒泡到父元素（事件附加的位置）。这将检测到最初的点击。使用 event.target 可以让我确定事件实际上发生在哪个元素上，然后才冒泡到父元素。
+默认情况下，单元格上的点击事件会冒泡到父元素（事件附加的位置）。这将检测到最初的点击。使用 `event.target` 可以让我确定事件实际上发生在哪个元素上，然后才冒泡到父元素。
 
 这个 [CodePen 演示](https://codepen.io/impressivewebs/pen/axqdEP?editors=0010)² 展示了这是如何工作的。JavaScript 面板在代码注释中有低效的版本，但实时代码使用了将点击事件委托给 table 元素的版本。
 
 ¹https://amzn.to/2JqYwea
 ²https://codepen.io/impressivewebs/pen/axqdEP?editors=0010
-
-
 
 ## 鼠标滚轮事件
 
@@ -394,26 +385,27 @@ document.addEventListener('wheel', function (e) {
 ²⁷ https://codepen.io/impressivewebs/pen/BgNWMq
 ²⁸ https://codepen.io/impressivewebs/pen/dBoePG
 
-## 在全局作用域中使用 const
+## 在全局作用域中使用 `const`
 
 有时候，一个看似基础的编程问题可能会难倒很多开发者。本周的一个例子就是 Wes Bos 发布了一个非常直接的 JavaScript 测验题，我答错了，而且超过一半的回答者也答错了。他问的是：
 
 这段代码输出什么？
 
 ```
-1 const a = 1;
-2 let b = 2;
-3 var c = 3;
-4
-5 console.log(window.a, window.b, window.c);
+const a = 1;
+let b = 2;
+var c = 3;
+
+console.log(window.a, window.b, window.c);
 ```
 
 可能的答案：
+
 A) 1, 2, 3 B) undefined, 2, 3 C) undefined, undefined, 3 D) undefined, undefined, undefined
 
 在继续阅读之前，先选好你的答案。Wes 的推文链接在下方。投票已经结束，所以如果你查看的话会看到结果，包括正确答案——但你就无法猜了。
 
-正如我们许多人已经了解到的，let 和 const 变量与 var 不同，它们创建的是块级变量。所以很自然地，我的答案是"A"（1, 2, 3），因为没有外部块来阻止这些 let 和 const 声明本质上成为"全局的"。但它们在顶层作用域中声明时，行为仍然与 var 不同——这似乎很合理。但这确实是我从未真正考虑过的事情。
+正如我们许多人已经了解到的，`let` 和 `const` 变量与 `var` 不同，它们创建的是块级变量。所以很自然地，我的答案是"A"（1, 2, 3），因为没有外部块来阻止这些 `let` 和 `const` 声明本质上成为"全局的"。但它们在顶层作用域中声明时，行为仍然与 `var` 不同——这似乎很合理。但这确实是我从未真正考虑过的事情。
 
 在阅读了 Twitter 帖子中的各种评论并深入研究后，以下是 [MDN 关于 const 的说明](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const)：
 
@@ -433,9 +425,7 @@ A) 1, 2, 3 B) undefined, 2, 3 C) undefined, undefined, 3 D) undefined, undefined
 ³¹ https://twitter.com/wesbos/status/1143544730866896902
 ³² https://codepen.io/impressivewebs/pen/WqZVmZ?editors=0011
 
-
-
-## Array.fill()
+## `Array.fill()`
 
 自 ES6 起新增、除 IE11 外所有浏览器均支持的 `Array.fill()` 方法允许你用新的指定值填充数组（或替换现有值）。
 
@@ -496,15 +486,15 @@ JavaScript 中最常用的数组方法可能是 `push()`、`pop()`、`shift()` �
 以下是一些带有注释的代码（假设注释行是被打印输出的）：
 
 ```
-1  let myArray = ['blue', 'green', 'orange', 'brown', 'pink'];
-2
-3  myArray.length; // 5
-4  myArray.push('purple'); // 6
-5  myArray.unshift('black'); // 7
-6
-7  myArray.pop(); // "purple"
-8  myArray.shift(); // "black"
-9  myArray.length; // 5
+let myArray = ['blue', 'green', 'orange', 'brown', 'pink'];
+
+myArray.length; // 5
+myArray.push('purple'); // 6
+myArray.unshift('black'); // 7
+
+myArray.pop(); // "purple"
+myArray.shift(); // "black"
+myArray.length; // 5
 ```
 
 [在 CodePen 上查看](https://codepen.io/impressivewebs/pen/VobdwN?editors=0011)
@@ -520,9 +510,9 @@ JavaScript 中最常用的数组方法可能是 `push()`、`pop()`、`shift()` �
 如果你还记得，IIFE 是这样的：
 
 ```
-1 (function () {
-2   // 在这里做一些事情...
-3 })();
+(function () {
+  // 在这里做一些事情...
+})();
 ```
 
 代码的关键部分是两组括号紧挨着出现。一组包裹函数，另一组跟在后面以立即调用它。
@@ -530,13 +520,13 @@ JavaScript 中最常用的数组方法可能是 `push()`、`pop()`、`shift()` �
 但这次我看到了一种被 [Dave Ceddia](https://daveceddia.com/what-is-a-thunk/) 称为 "thunk"（一个编程术语）的模式。Dave 用它来指代以下模式：
 
 ```
-1 function outerFunction() {
-2   return function thunk() {
-3     console.log('Inner function has returned.');
-4   };
-5 }
-6
-7 outerFunction()();
+function outerFunction() {
+  return function thunk() {
+    console.log('Inner function has returned.');
+  };
+}
+
+outerFunction()();
 ```
 
 [在 CodePen 上试试](https://codepen.io/impressivewebs/pen/mdbmLrj?editors=0011)
@@ -547,7 +537,7 @@ JavaScript 中最常用的数组方法可能是 `push()`、`pop()`、`shift()` �
 
 显然，这种模式有一些实际的应用场景，例如 [这个 Stack Overflow 帖子](https://stackoverflow.com/questions/18234491/two-sets-of-parentheses-after-function-call) 以及上面提到的 Dave 的文章中讨论的内容。
 
-## Array.includes()
+## `Array.includes()`
 
 ECMAScript 丰富多样的数组方法中，另一个有用的方法是 `Array.includes()`。如果在数组中找到给定值，该方法返回 true，否则返回 false。
 
@@ -593,18 +583,18 @@ console.log(myArray.includes(NaN)); // true
 
 此功能在 ES7 中被添加到 ECMAScript 中，但拥有广泛的浏览器支持。它在所有桌面和移动设备上的现代浏览器中都受支持，唯一不支持的浏览器是 IE11。
 
-## JavaScript 中的 elseif
+## JavaScript 中的 `elseif`
 
 你是否在 JavaScript 中使用过 else if 结构？例如：
 
 ```
-1  let myNum = 30;
-2
-3  if (myNum < 10) {
-4    console.log('Number is Less than 10');
-5  } else if (myNum > 25) {
-6    console.log('Number is greater than 25');
-7  }
+let myNum = 30;
+
+if (myNum < 10) {
+  console.log('Number is Less than 10');
+} else if (myNum > 25) {
+  console.log('Number is greater than 25');
+}
 ```
 
 以上代码完全有效。如果你用 JSLint 或 JSHint 等代码检查工具运行它，不会收到任何与 else if 子句相关的警告或错误。但是，从严格的技术角度来看，JavaScript 中并不存在 else if（或 elseif）。
@@ -612,15 +602,15 @@ console.log(myArray.includes(NaN)); // true
 我上面写的内容等同于以下代码：
 
 ```
-1  let myNum = 30;
-2
-3  if (myNum < 10) {
-4    console.log('Number is Less than 10');
-5  } else {
-6    if (myNum > 25) {
-7      console.log('Number is greater than 25');
-8    }
-9  }
+let myNum = 30;
+
+if (myNum < 10) {
+  console.log('Number is Less than 10');
+} else {
+  if (myNum > 25) {
+    console.log('Number is greater than 25');
+  }
+}
 ```
 
 在 CodePen 上试试
@@ -629,9 +619,7 @@ console.log(myArray.includes(NaN)); // true
 
 但这一切的讽刺之处在于，上面第二个示例的代码风格真的很糟糕，最好还是像第一个示例那样使用 else if。或者更好的做法是，完全抛弃这种不美观的 if 语句，改用 switch 语句或方法查找表（也称为分发表）。
 
-
-
-## Object.preventExtensions()
+## `Object.preventExtensions()`
 
 最近我偶然发现了 `Object.preventExtensions()` 这个方法，它用起来非常直接。这个方法可以阻止你向对象添加新的属性。例如：
 
@@ -675,7 +663,7 @@ console.log(myObj.three); // undefined
 
 信不信由你，以下三行 JavaScript 代码没有语法错误，但会返回每行旁边注释中显示的结果。
 
-## 带有多个类名的 classList
+## 带有多个类名的 `classList`
 
 你可能熟悉 `classList.add()` 和 `classList.remove()` 方法，它们允许你轻松操作任何 HTML 元素的类名。你很可能只用这些方法处理单个类名，但如果你不知道，你可以使用以下语法在单行中添加或移除多个类名：
 
@@ -690,7 +678,7 @@ element.classList.remove('one', 'two', 'three');
 
 如果你们中有些人不知道这些方法可以接受多个类名，可能是因为许多开发者由于 Internet Explorer 不支持此功能而避免使用它（我知道这很令人震惊）。所以，只要你不关心 Edge 之前的 Microsoft 浏览器，你几乎可以在任何项目中放心地使用它们。
 
-## globalThis
+## `globalThis`
 
 不久前，我听到 ECMAScript 正在考虑添加一个 `globalThis` 属性，以解决不同 JavaScript 环境中 `this` 关键字的许多问题。如果你错过了这个消息（我似乎也错过了！），`globalThis` 现在已成为标准，并且已经被添加到大多数当前浏览器中。主要缺乏支持的是 Opera 和 Edge。
 
@@ -765,17 +753,17 @@ console.log(Object.getOwnPropertyDescriptor(myDog, 'kind'));
 
 [这里有一个 CodePen](https://codepen.io/impressivewebs/pen/bGdWqXx?editors=0011) 展示了这两个方法的使用。控制台显示了结果。这只是对属性描述符的简要介绍，你可以在 [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertyDescriptor) 上阅读更多相关信息。
 
-## history.scrollRestoration
+## `history.scrollRestoration`
 
-History API 的一个特性已经存在一段时间了，你可能没有听说过，那就是 history.scrollRestoration 属性。这个属性的功能正如其名所示：允许你恢复浏览器历史中先前访问页面的滚动位置，而不是跳回到之前的滚动位置。
+History API 的一个特性已经存在一段时间了，你可能没有听说过，那就是 `history.scrollRestoration` 属性。这个属性的功能正如其名所示：允许你恢复浏览器历史中先前访问页面的滚动位置，而不是跳回到之前的滚动位置。
 
 这在动态应用中可能很有用，其中内容不断变化，可能不希望发生滚动跳转。
 
 你可以获取或设置当前的 scrollRestoration 值：
 
 ```
-1 console.log(history.scrollRestoration); // auto（默认值）
-2 history.scrollRestoration = 'manual';
+console.log(history.scrollRestoration); // auto（默认值）
+history.scrollRestoration = 'manual';
 ```
 
 据我所知，这在 Chromium 浏览器中运行良好，但在 Firefox 中似乎不起作用，尽管 Firefox 显然支持此功能。
@@ -790,7 +778,7 @@ History API 的一个特性已经存在一段时间了，你可能没有听说�
 - 滚动到第 86 项，点击链接
 - 在随后的页面上，使用浏览器的后退按钮返回到上一页
 
-在默认演示中，你应该看到页面回到了之前滚动的位置（在那里你可以看到第 86 项）。但在第二个演示中，我将 history.scrollRestoration 属性设置为 manual，你会注意到，一旦你使用后退按钮返回，滚动位置就会恢复到页面顶部。如前所述，Firefox 似乎不遵守通过后退按钮返回时的 manual 值。
+在默认演示中，你应该看到页面回到了之前滚动的位置（在那里你可以看到第 86 项）。但在第二个演示中，我将 `history.scrollRestoration` 属性设置为 manual，你会注意到，一旦你使用后退按钮返回，滚动位置就会恢复到页面顶部。如前所述，Firefox 似乎不遵守通过后退按钮返回时的 manual 值。
 
 也许我对这个属性的某些方面还不理解，但我已经向 Firefox 提交了错误报告⁵¹，以看看这是否是需要纠正的问题。这看起来是一个有用的小功能，但当不同主流浏览器行为不同时，它的吸引力就不那么大了。
 
@@ -798,9 +786,7 @@ History API 的一个特性已经存在一段时间了，你可能没有听说�
 ⁵⁰ https://www.impressivewebs.com/demo-files/scroll-restoration-manual/
 ⁵¹ https://bugzilla.mozilla.org/show_bug.cgi?id=1648398
 
-
-
-## Object.assign()
+## `Object.assign()`
 
 如果你在 JavaScript 中有多个对象，并且希望将它们合并在一起，同时保留共同的内容，那么 `Object.assign()` 方法将会非常有用。
 
@@ -830,9 +816,9 @@ console.log(newObj);
 
 使用 `Object.assign()` 时需要记住以下几点：
 
--   目标对象接收源对象的所有可枚举自有属性
--   较后的属性会覆盖前面的属性（正如示例代码中“b”被覆盖等情况所示）
--   “顺序”由你将参数放入方法调用中的顺序决定。示例 CodePen 也展示了另一种赋值排列方式（即 obj1、obj3、obj2），这会提供略微不同的输出
+- 目标对象接收源对象的所有可枚举自有属性
+- 较后的属性会覆盖前面的属性（正如示例代码中“b”被覆盖等情况所示）
+- “顺序”由你将参数放入方法调用中的顺序决定。示例 CodePen 也展示了另一种赋值排列方式（即 obj1、obj3、obj2），这会提供略微不同的输出
 
 [MDN 的文章](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign)有更多信息和一些更复杂的示例，但这就是 `Object.assign()` 的概要。
 
@@ -923,7 +909,7 @@ console.log(myStringPE2); // "garbanzo            "
 
 > https://codepen.io/impressivewebs/pen/gOPNGvW?editors=0011
 
-## Array.entries()
+## `Array.entries()`
 
 ES6 引入了对 `Array`、`Map` 和 `Object` 略显被忽视的 `.entries()` 方法。这个方法的概念对于这三者是相同的，但在这个介绍中，我将重点介绍它在数组中的用法。
 
@@ -966,9 +952,7 @@ console.log(myIterator.next().value); // [3, "mudslides"]
 
 每次我使用 next() 时，迭代器都会移动到下一个项目。如你所见，我不必对每个项目的索引进行任何特殊请求；它就在那里，连同数组条目一起。
 
-
-
-## Object.keys() 与 Object.values()
+## `Object.keys()` 与 `Object.values()`
 
 之前我讨论过 `Array.entries()` 方法的实用性，它允许你获取一个包含数组键值对的可迭代对象。如果需要特定对象的键值对，同样可以使用 `Object.entries()` 来实现。
 
@@ -1118,17 +1102,15 @@ const setCaret = () => {
 
 就是这样！这提供了一个基本但可运行的代码高亮器，用于实时编辑器。[这里有一个基础的 CodePen 演示](https://codepen.io/impressivewebs/pen/ExKOxBb?editors=0010)，你可以在其中试试。但请记住，这个版本对于这个简短教程来说极其有限。要让编辑器完全支持多行代码，我还需要添加额外的功能。你可以在 [JSchallenger](https://www.jschallenger.com/) 上试用完整功能的版本。
 
-
-
 ## 从数组中移除所有假值
 
 和编码中的许多事情一样，移除数组中所有“假值”的方法可能有很多种，但这里提供一种 JavaScript 方法：
 
 ```
-1 let myArray = [2, false, true, 67, undefined, 0, 88, null, 123];
-2 let myNewArray = myArray.filter(Boolean);
-3
-4 console.log(myNewArray); // -> [2, true, 67, 88, 123]
+let myArray = [2, false, true, 67, undefined, 0, 88, null, 123];
+let myNewArray = myArray.filter(Boolean);
+
+console.log(myNewArray); // -> [2, true, 67, 88, 123]
 ```
 
 注意，原数组中包含一些有问题的值（`false`、`undefined`、`null` 等）。新数组已经过滤掉了所有这些值，包括同样被视为“假值”的零值。
@@ -1139,14 +1121,14 @@ const setCaret = () => {
 
 你可以在 CodePen 上尝试一下。请记住，在某些数组中，你可能希望保留 `null` 和 `0` 这样的值，因此如果你的目标仅仅是移除 `undefined` 条目，这可能不是一个好方法。
 
-## 带有 preventScroll 的 focus()
+## 带有 `preventScroll` 的 `focus()`
 
 `focus()` 方法是一个众所周知的功能，用于以编程方式强制聚焦页面上的表单元素或其他可聚焦元素。我最近发现，在使用 `focus()` 时，有一个相对新的可选参数。其语法如下所示：
 
 ```
-1 myElement.focus({
-2   preventScroll: true
-3 });
+myElement.focus({
+  preventScroll: true
+});
 ```
 
 如你所见，`focus()` 方法现在接受一个 `options` 对象，该对象包含一个属性/值对——即 `preventScroll` 属性，其值为 `true` 或 `false`。
@@ -1161,7 +1143,7 @@ const setCaret = () => {
 
 这是 `focus()` 方法的一个很好的改进，我几乎希望浏览器将其设为默认行为，因为因聚焦而导致的滚动一直是网页上的一个烦恼。事实上，你会在演示中注意到，我在第一个按钮上包含了 `preventScroll: false`。这样，如果浏览器决定将 `preventScroll: true` 设为默认值，此演示仍然能正常工作。
 
-## 修复 mousedown 事件上的 focus()
+## 修复 `mousedown` 事件上的 `focus()`
 
 在 [MDN 关于 `focus()` 方法的文章](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/focus)中，我发现了一个冷僻的知识点。如你所知，任何可聚焦的 HTML 元素（例如 input 或任何具有 tabindex 值的元素）都可以通过 JavaScript 以编程方式接收焦点。
 
@@ -1175,20 +1157,18 @@ const setCaret = () => {
 
 前两个按钮分别使用了 `click` 和 `mouseup` 事件，它们工作正常。但第三个按钮使用了 `mousedown` 事件，尽管代码相同，但焦点并未作用于目标 `input` 元素。添加 `preventDefault()` 后，焦点就成功生效了：
 
-我自己也无法工作阑用完，天已晚了也没完código然而我还是继续吧。
-
 ```
-1 btn.addEventListener('mousedown', function (e) {
-2   input.focus();
-3   e.preventDefault();
-4 }, false);
+btn.addEventListener('mousedown', function (e) {
+  input.focus();
+  e.preventDefault();
+}, false);
 ```
 
 我不太确定为什么需要这样做，但我的最佳猜测是：当你执行“鼠标按下”操作时，“鼠标按下”之后自然会发生的“默认”动作是，被“按下”的元素会因为随后的“鼠标抬起”动作而获得焦点。
 
 但如果是这样的话，那意味着按住鼠标不放（不抬起）应该也能生效。但事实并非如此（你可以尝试第三个按钮）。所以我真的不确定。如果你认为你知道为什么会这样，请告诉我。否则，就把它归入“罕见但有趣”的知识类别吧。
 
-## keypress 事件现已弃用
+## `keypress` 事件现已弃用
 
 早在之前的一篇技巧中，我写过关于 `keypress` 和 `keydown` 事件，并详细讨论了两者之间的区别。这里我将重点关注关于这两个事件的两点，其中一点在当时并不成立：
 
@@ -1205,6 +1185,12 @@ window.addEventListener('keydown', function (e) {
 
 [在这个 CodePen 中试一试](https://codepen.io/impressivewebs/pen/ZEpEGbb?editors=0010)，它会在页面上打印这些值。
 
+
+
+# JavaScript 事件与 API 详解
+
+## 键盘事件：`keydown` 与 `keypress`
+
 注意 `event.keyCode` 属性输出的数字。对于特定按键，`keyCode` 值总是相同的，但如果按下了 SHIFT，输出可能会不同（例如，按住 SHIFT 时按下“2”键将显示“@”）。
 
 现在尝试将事件更改为 `keypress` 并做同样的事情。注意 `keyCode` 值将因每个字符而异，而不是因每个键而异。因此，使用 `keypress` 事件时，大写“Q”的 `keyCode` 将与小写“q”不同，而在使用 `keydown`（或 `keyup`）事件时，这两个键的 `keyCode` 是相同的。
@@ -1213,11 +1199,11 @@ window.addEventListener('keydown', function (e) {
 
 幸运的是，`keydown` 已经存在一段时间了，因此从 IE9 开始的所有浏览器都支持它，所以用它来代替 `keypress` 不应该有任何问题。
 
-## beforeinput 事件
+## `beforeinput` 事件
 
-`input` 和 `change` 事件在处理表单控件中输入的数据时非常常见，我在这里已经多次讨论过。规范中新增了一个在所有现代浏览器中都支持（Firefox 目前需要通过标志启用）的事件，称为 `beforeinput`。
+`input` 和 `change` 事件在处理表单控件中输入的数据时非常常见。规范中新增了一个在所有现代浏览器中都支持（Firefox 目前需要通过标志启用）的事件，称为 `beforeinput`。
 
-`beforeinput` 事件可以应用于 `input`、`select` 和 `textarea` 元素，以及任何启用了 `contenteditable` 或 `designMode` 的元素（即任何接受输入的元素）。规范对 `input` 和 `beforeinput` 的描述如下，你可以看到细微的区别（从名称上就很明显）：
+`beforeinput` 事件可以应用于 `input`、`select` 和 `textarea` 元素，以及任何启用了 `contenteditable` 或 `designMode` 的元素（即任何接受输入的元素）。规范对 `input` 和 `beforeinput` 的描述如下，你可以看到细微的区别：
 
 - `input` - "用户代理必须在 DOM 更新后立即派发此事件。"
 - `beforeinput` - "用户代理必须在 DOM 即将更新时派发此事件。"
@@ -1234,8 +1220,6 @@ window.addEventListener('keydown', function (e) {
 
 <https://codepen.io/impressivewebs/pen/wvzKbVx?editors=0010>
 
-
-
 # JavaScript 生成器函数简介
 
 到目前为止，我从未深入研究过 JavaScript 的生成器函数。它们早在 ES6 版本中就被引入了，所以到现在还不熟悉它们，实在没有借口！那么，让我们来快速学习一下 JavaScript 生成器的速成课程。
@@ -1248,7 +1232,7 @@ MDN 上关于这个主题的文章很好地描述了它们及其实际用途：
 
 我将创建一个简单的交互式演示来说明生成器的作用。演示将包含以下生成器函数：
 
-```
+```javascript
 function* valuesLogger() {
   yield op.innerHTML = "Nothing";
   yield op.innerHTML = input.value;
@@ -1261,7 +1245,7 @@ function* valuesLogger() {
 
 该演示包含一个输入框和一个按钮。每次按下按钮时，都会调用以下代码：
 
-```
+```javascript
 myGenerator.next();
 ```
 
@@ -1276,13 +1260,13 @@ myGenerator.next();
 
 我在这里讨论的只是基础知识，所以如果任何内容对你来说太新或有点令人困惑，只需稍微摆弄一下代码，就会更容易理解。
 
-## FormData() 构造函数
+## `FormData()` 构造函数
 
 使用 JavaScript 获取表单中输入数据的一种简单方法是使用一个你可能之前没听说过的构造函数：`FormData()`。
 
 这个构造函数允许你创建一个 `FormData` 对象，该对象由表示表单字段及其值的键/值对组成。下面是一个代码示例，它使用页面上指定的表单填充 `FormData` 对象，然后循环显示键/值对：
 
-```
+```javascript
 let formData = new FormData(form);
 
 for (let formPairs of formData.entries()) {
@@ -1298,18 +1282,18 @@ for (let formPairs of formData.entries()) {
 
 请注意此功能的几个要点：
 
-- 要被识别，包含在内的表单控件必须有一个 name 属性值
+- 要被识别，包含在内的表单控件必须有一个 `name` 属性值
 - 对于单选按钮或复选框，只有选中的值会包含在键/值对中
 - 禁用的控件不会被包含在内
 
 你还可以使用其他方法，但这应该为你提供了一个不错的起点。请查看 [MDN 上关于该主题的参考](https://developer.mozilla.org/en-US/docs/Web/API/FormData) 以了解更多功能和使用方法。
 
-## 原生 JavaScript 中的 $(document).ready()
+## 原生 JavaScript 中的 `$(document).ready()`
 
 开发者喜欢 jQuery 的一点是它使用了 `$(document).ready()` 方法。这个有用的方法允许你运行任何 JavaScript 代码并安全地与任何 DOM 元素交互，而无需担心该元素不存在。如果你想用原生 JavaScript 实现这一点，有几个选择：
 
-- 在 window 或 document 上监听 `DOMContentLoaded` 事件
-- 在 window 上监听 `load` 事件
+- 在 `window` 或 `document` 上监听 `DOMContentLoaded` 事件
+- 在 `window` 上监听 `load` 事件
 
 `DOMContentLoaded` 事件在 DOM 准备好可以交互时立即触发。所以这几乎等同于 jQuery 的 `$(document).ready()`。另一方面，`load` 事件在页面及其所有资源加载完成后触发。所以这个事件在某些情况下可能有用，但更可能需要的是 `DOMContentLoaded`。例如，如果你想获取页面上某个元素的精确尺寸，而其内容尚未加载完成，你可能无法获得准确的测量值。所以在这种情况下，`load` 事件会很有用。
 
@@ -1323,15 +1307,15 @@ for (let formPairs of formData.entries()) {
 
 然后他们为你的代码提供了以下建议：
 
-```
-1 if (d.readyState === 'loading') {
-2   d.addEventListener('DOMContentLoaded', doSomething);
-3 } else {
-4   doSomething();
-5 }
+```javascript
+if (d.readyState === 'loading') {
+  d.addEventListener('DOMContentLoaded', doSomething);
+} else {
+  doSomething();
+}
 ```
 
-在这个例子中，“d” 是一个代表 document 的变量。
+在这个例子中，“d” 是一个代表 `document` 的变量。
 
 请注意，脚本首先使用 `readyState` 属性来检查 DOM 是否仍在加载。‘loading’ 状态是在加载过程中 ‘interactive’ 状态之前发生的那个状态。因此 DOM 尚未加载完毕。所以我可以安全地附加事件监听器。
 
@@ -1339,18 +1323,17 @@ for (let formPairs of formData.entries()) {
 
 如你所见，只要你准确理解了原生 JavaScript 事件的功能，那么你就不应该需要使用 jQuery 了，当然，前提是你不担心浏览器的错误和不一致性。
 
-## Array.flat()
+## `Array.flat()`
 
 ECMA 规范在 ES2019 中添加了一个相对较新的数组方法，具有强大的浏览器支持，那就是简单易用但实用的 `Array.flat()`。
 
 `Array.flat()` 允许你展平任何包含嵌套数组项（或一个或多个子数组中的元素）的数组。例如：
 
-```
-1 let myArray = ['one', 'two', [1, 2, 3], 'three', 'four', 'five', [4, 5, 6], 'six'];
-2 
-3 console.log(myArray.flat());
-4 
-5 // ["one", "two", 1, 2, 3, "three", "four", "five", 4, 5, 6, "six"]
+```javascript
+let myArray = ['one', 'two', [1, 2, 3], 'three', 'four', 'five', [4, 5, 6], 'six'];
+
+console.log(myArray.flat());
+// ["one", "two", 1, 2, 3, "three", "four", "five", 4, 5, 6, "six"]
 ```
 
 **在 CodePen 上试试看**
@@ -1361,34 +1344,32 @@ ECMA 规范在 ES2019 中添加了一个相对较新的数组方法，具有强�
 
 几个代码示例应该能帮助你理解其工作原理：
 
+```javascript
+let myArray = ['one', 'two', [1, 2, ['a', 'b', 'c'], 3], 'three', 'four', 'five', 'six'];
+
+console.log(myArray.flat(1));
+// ["one", "two", 1, 2, ["a", "b", "c"], 3, "three", "four", "five", "six"]
+
+console.log(myArray.flat(0));
+// ["one", "two", [1, 2, ["a", "b", "c"], 3], "three", "four", "five", "six"]
+
+console.log(myArray.flat(2));
+// ["one", "two", 1, 2, "a", "b", "c", 3, "three", "four", "five", "six"]
+
+console.log(myArray.flat(3));
+// ["one", "two", 1, 2, "a", "b", "c", 3, "three", "four", "five", "six"]
 ```
-1 let myArray = ['one', 'two', [1, 2, ['a', 'b', 'c'], 3], 'three', 'four', 'five', 'six'];
-2 
-3 console.log(myArray.flat(1));
-4 // ["one", "two", 1, 2, ["a", "b", "c"], 3, "three", "four", "five", "six"]
-5 
-6 console.log(myArray.flat(0));
-7 // ["one", "two", [1, 2, ["a", "b", "c"], 3], "three", "four", "five", "six"]
-8 
-9 console.log(myArray.flat(2));
-10 // ["one", "two", 1, 2, "a", "b", "c", 3, "three", "four", "five", "six"]
-11 
-12 console.log(myArray.flat(3));
-13 // ["one", "two", 1, 2, "a", "b", "c", 3, "three", "four", "five", "six"]
-```
 
-
-
-## Array.flat()
+### `Array.flat()` 详解
 
 在 CodePen⁷⁹ 上尝试
 
 如你所见，这次原始数组中有一个子数组，而该子数组内部又嵌套了另一个子数组。以下是不同参数值的响应方式：
 
--   使用默认参数 1 调用 `myArray.flat()` 只会展平数组的前两层，保持子子层不变
--   使用 0 作为参数则不会展平任何内容
--   使用参数 2 会将两个子层展平为单个扁平数组
--   使用 3 或更高的数值与使用 2 效果相同，因为在此例中不会深入更多层
+- 使用默认参数 1 调用 `myArray.flat()` 只会展平数组的前两层，保持子子层不变
+- 使用 0 作为参数则不会展平任何内容
+- 使用参数 2 会将两个子层展平为单个扁平数组
+- 使用 3 或更高的数值与使用 2 效果相同，因为在此例中不会深入更多层
 
 正如 MDN 指出的⁸⁰，如果你不知道数组嵌套了多少层，可以使用 `Array.flat(Infinity)` 来展平整个数组。
 
@@ -1400,7 +1381,7 @@ ECMAScript 规范中有一个实用的新特性，已在所有现代浏览器中
 
 代码示例是理解它的最佳方式（注意最后一行）：
 
-```
+```javascript
 let animals = {
   dog: {
     name: 'Fido',
@@ -1427,15 +1408,15 @@ console.log(animals.snake?.paws); // undefined
 
 可选链运算符用于代码片段的最后一行。注意，我首先创建了一个包含一些嵌套属性的对象。第一个日志输出 "4"，因为它是对 `animals.dog.paws` 的正确引用，该属性存在。
 
-下一个返回 undefined，因为 `cat` 没有 `paws` 属性。由于这是对象链中的最后一步，即使发生这种情况也不会抛出错误，所以问题不大。
+下一个返回 `undefined`，因为 `cat` 没有 `paws` 属性。由于这是对象链中的最后一步，即使发生这种情况也不会抛出错误，所以问题不大。
 
-然而，最后一行日志需要我使用可选链运算符（由 "?. " 表示）来避免抛出错误，因为不存在 `snake` 对象。这种简单的语法使我不必先检查 `animals` 是否存在，然后检查 `snake` 是否存在，再尝试访问 `paws`。在我的例子中，我只检查了 "snake"，但我也可以验证 "animals"。我想在某些情况下，为了确保安全，在对象链的每个部分（最后一部分除外）都使用它可能是有用的，尽管我不确定这个运算符的最佳实践是什么。
+然而，最后一行日志需要我使用可选链运算符（由 `?.` 表示）来避免抛出错误，因为不存在 `snake` 对象。这种简单的语法使我不必先检查 `animals` 是否存在，然后检查 `snake` 是否存在，再尝试访问 `paws`。在我的例子中，我只检查了 "snake"，但我也可以验证 "animals"。我想在某些情况下，为了确保安全，在对象链的每个部分（最后一部分除外）都使用它可能是有用的，尽管我不确定这个运算符的最佳实践是什么。
 
 在这个运算符出现之前，做这件事并不是特别困难，但这点语法糖无疑使代码更具可读性且更易于维护。
 
 ### 关于可选链运算符的更多内容
 
-我之前讨论了新的可选链运算符，用 "?." 表示，它允许你进行深层对象属性引用，而无需查找对象链的每个部分。
+我之前讨论了新的可选链运算符，用 `?.` 表示，它允许你进行深层对象属性引用，而无需查找对象链的每个部分。
 
 使用这个运算符你可以做的另一件很酷的事是确保方法调用存在。MDN [指出](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining)了为什么这可能很有用：
 
@@ -1443,20 +1424,20 @@ console.log(animals.snake?.paws); // undefined
 
 这里有一个例子——注意最后一行使用的运算符：
 
-```
-1 let myActions = {
-2   doThingOne: function () {
-3     console.log('Thing One Done');
-4   },
-5 
-6   doThingTwo: function () {
-5     console.log('Thing Two Done');
-6   }
-7 };
-8
-9 myActions.doThingOne();
-10 myActions.doThingTwo();
-11 myActions.doThingThree?.();
+```javascript
+let myActions = {
+  doThingOne: function () {
+    console.log('Thing One Done');
+  },
+
+  doThingTwo: function () {
+    console.log('Thing Two Done');
+  }
+};
+
+myActions.doThingOne();
+myActions.doThingTwo();
+myActions.doThingThree?.();
 ```
 
 [在 CodePen 上尝试](https://codepen.io/impressivewebs/pen/eYBaLKN?editors=0011)
@@ -1469,8 +1450,8 @@ console.log(animals.snake?.paws); // undefined
 
 最后需要注意几点：
 
--   如果函数名存在，但实际上是一个属性而非函数，这将抛出错误
--   如果根对象是 `null` 或 `undefined`，这将抛出错误，但如果你怀疑根对象可能不存在或已失效，可以在对象本身上使用可选链运算符（例如 `myActions?.doThingThree?.()`）
+- 如果函数名存在，但实际上是一个属性而非函数，这将抛出错误
+- 如果根对象是 `null` 或 `undefined`，这将抛出错误，但如果你怀疑根对象可能不存在或已失效，可以在对象本身上使用可选链运算符（例如 `myActions?.doThingThree?.()`）
 
 ## 空值合并运算符
 
@@ -1480,42 +1461,42 @@ console.log(animals.snake?.paws); // undefined
 
 在你的 JavaScript 代码中，你可能以前做过类似这样的事情：
 
-```
+```javascript
 let myVar = someVar || 7;
 ```
 
-这是一个使用逻辑或运算符（||）的简单变量声明。这里的想法是，如果逻辑或运算符的左侧为假值，值 "7" 将被赋给 `myVar` 变量。这样做的问题是，下面这行代码也会将 7 赋给 `myVar`：
+这是一个使用逻辑或运算符（`||`）的简单变量声明。这里的想法是，如果逻辑或运算符的左侧为假值，值 "7" 将被赋给 `myVar` 变量。这样做的问题是，下面这行代码也会将 7 赋给 `myVar`：
 
-```
+```javascript
 let myVar = 0 || 7;
 ```
 
 这行也会：
 
-```
+```javascript
 let myVar = '' || 7;
 ```
 
 零值或空字符串都被视为假值，因此 JavaScript 引擎会假设你想要值 7 而不是那些假值。但这些值并非在所有情况下都总是被视为假值。有时你希望保留空字符串或零值。
 
-这就是新的空值合并运算符的用武之地。该运算符由两个问号（??）表示，确保只有 `null` 或 `undefined` 值被视为假值。
+这就是新的空值合并运算符的用武之地。该运算符由两个问号（`??`）表示，确保只有 `null` 或 `undefined` 值被视为假值。
 
-```
+```javascript
 let myVar3 = '' ?? 7;
 console.log(myVar3); // ''
 ```
 
-```
+```javascript
 let myVar4 = 0 ?? 7;
 console.log(myVar4); // 0
 ```
 
-```
+```javascript
 let myVar5 = null ?? 7;
 console.log(myVar5); // 7
 ```
 
-```
+```javascript
 let myVar6 = undefined ?? 7;
 console.log(myVar6); // 7
 ```
@@ -1530,15 +1511,15 @@ console.log(myVar6); // 7
 
 ECMAScript 规范中一项与数学相关的新特性是指数运算符。虽然你可能不经常使用，但如果你正在构建某种与数学相关的应用或功能，还是值得记住它。
 
-指数运算符由两个星号（**）表示，是 JavaScript 中进行指数运算的简便方法。语法如预期那样。例如，"2 ** 4" 就是 "2 的 4 次方"。
+指数运算符由两个星号（`**`）表示，是 JavaScript 中进行指数运算的简便方法。语法如预期那样。例如，"2 ** 4" 就是 "2 的 4 次方"。
 
 以下是一些示例，日志结果在注释中：
 
-```
-1 console.log(5 ** 5); // 3125
-2 console.log(6 ** -2); // 0.027777777777777776
-3 console.log((3 ** 5) ** 2); // 59049
-4 console.log(2 ** 4 ** 2); // 65536
+```javascript
+console.log(5 ** 5); // 3125
+console.log(6 ** -2); // 0.027777777777777776
+console.log((3 ** 5) ** 2); // 59049
+console.log(2 ** 4 ** 2); // 65536
 ```
 
 在 CodePen⁸⁷ 上尝试
@@ -1569,8 +1550,6 @@ ECMAScript 规范中一项与数学相关的新特性是指数运算符。虽然
 
 ⁹⁰ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Exponentiation
 
-
-
 ## 正则表达式的粘性标志
 
 早在 ES6 时代，ECMAScript 规范中新增了一个名为“粘性”的正则表达式标志，在语法中用 'y' 表示。
@@ -1579,7 +1558,7 @@ ECMAScript 规范中一项与数学相关的新特性是指数运算符。虽然
 
 `lastIndex` 属性大致用于记录全局正则表达式搜索停止的位置。以下代码展示了在全局正则表达式搜索期间如何读取 `lastIndex` 属性，以及它在搜索中如何发挥作用：
 
-```
+```javascript
 let myRegex = /wood/g;
 let myString = 'How much wood could a woodchuck chuck';
 
@@ -1600,7 +1579,7 @@ console.log(myRegex.test(myString));
 
 这就引出了“粘性”标志。这个新标志告诉搜索仅从 `lastIndex` 属性设定的精确位置开始进行。以下是一个示例，其中包含一行定义 `lastIndex` 的代码：
 
-```
+```javascript
 let myRegex = /huck/y;
 let myString = 'How much wood could a woodchuck chuck';
 
@@ -1622,22 +1601,23 @@ console.log(myRegex.test(myString));
 这基本上就是粘性标志的核心，但如果你想更实际地讨论它的使用方法，[这篇文章](https://javascript.info/regexp-sticky)可能会有所帮助。
 
 92 https://codepen.io/impressivewebs/pen/GRqaqP?editors=0011
+
 93 https://javascript.info/regexp-sticky
 
-## import.meta
+## `import.meta`
 
 使用 ES6 模块时，你可以访问一个名为 `import.meta` 的对象，它提供关于当前执行模块的元数据。此对象仅在模块内部可访问。
 
 例如，你的页面可能会像这样引用一个模块：
 
-```
-1 <script src="js/main.js" type="module"></script>
+```html
+<script src="js/main.js" type="module"></script>
 ```
 
 在该模块内部，你可以引用 `import.meta`：
 
-```
-1 console.log(import.meta);
+```javascript
+console.log(import.meta);
 ```
 
 如果像上面的代码那样将此对象记录到控制台，根据所使用的浏览器，你将看到一个可以展开并查看其属性的对象。
@@ -1654,18 +1634,18 @@ console.log(myRegex.test(myString));
 
 ⁹⁴ https://webtoolsweekly.com/reading/?view=2XsNnT8
 
-## Element.closest()
+## `Element.closest()`
 
 这里有一个我以前在小贴士中尚未涵盖的 DOM 方法：`Element.closest()`。你可能听说过这个方法，因为它已经成为 HTML5 标准的一部分一段时间了，但由于在 Chromium 之前的 Edge 版本中缺乏支持，可能没有引起开发者的兴趣。现在它在现代浏览器中已得到全面支持。
 
 此方法允许你从目标元素开始遍历 DOM，搜索与提供的选择器列表匹配的第一个元素。这里有几个示例：
 
-```
-1 let myEl = document.querySelector('.inside');
-2 
-3 myEl.closest('.previous, .next').innerText;
-4 myEl.closest('.inside').className;
-5 myEl.closest('.next').innerHTML;
+```javascript
+let myEl = document.querySelector('.inside');
+
+myEl.closest('.previous, .next').innerText;
+myEl.closest('.inside').className;
+myEl.closest('.next').innerHTML;
 ```
 
 请注意，在我获取所需元素后，我通过传入一个由逗号分隔的一个或多个有效选择器组成的字符串来使用该方法。
@@ -1691,11 +1671,11 @@ console.log(myRegex.test(myString));
 - `Location.protocol` - 获取当前 URL 协议，包括尾随冒号但不包括斜杠
 - `Location.port` - 获取 URL 上的端口号（如果存在）
 - `Location.pathname` - 获取完整路径，以 "/" 开头，不包括域名/主机，也不包括任何查询字符串或哈希
-- `Location.host` - 与 Location.hostname 不同，因为它还包括端口号
+- `Location.host` - 与 `Location.hostname` 不同，因为它还包括端口号
 
 有用的是，[MDN 上关于此主题的文章](https://developer.mozilla.org/en-US/docs/Web/API/Location)有一个交互式 URL 查看器，让你可以将鼠标悬停在 URL 的不同部分上，查看它们如何映射到 Location 对象的不同属性。
 
-https://codepen.io/impressivewebs/pen/WNORBaW
+<https://codepen.io/impressivewebs/pen/WNORBaW>
 
 我已经将他们的代码（纯 HTML/CSS）移植到一个 CodePen 演示中，以便你可以尝试一下。当你悬停时可能有点刺眼，但你会理解其要义，如上图所示。
 
@@ -1707,33 +1687,31 @@ Stack Overflow 上的问题，如 [这个 6 年前的 JavaScript 问题](https:/
 
 正如你在 JavaScript 问题中看到的，用户询问的是他粘贴的这部分代码：
 
-```
-1  if (!--pending)
-2    done(null, results);
+```javascript
+if (!--pending)
+  done(null, results);
 ```
 
 我们先不谈缺少花括号的问题（这不是我的偏好）。除此之外，代码使用 `!--` 的方式使其看起来像一个用户不熟悉的有效运算符。
 
-如果你有 JavaScript 经验，那么你立即会知道这不是一个新运算符，而是如答案所指出的，是运算符的组合：非运算符 (!) 和递减运算符 (--)。因此，该代码是在检查 `pending` 变量在作为布尔值反转并减去一之后是否为真。
+如果你有 JavaScript 经验，那么你立即会知道这不是一个新运算符，而是如答案所指出的，是运算符的组合：非运算符 (`!`) 和递减运算符 (`--`)。因此，该代码是在检查 `pending` 变量在作为布尔值反转并减去一之后是否为真。
 
 再次强调，有经验的 JavaScript 开发人员不会对此有问题。但想象一下，这对编程新手，或者可能是一个写了 15 年 JavaScript 但过去 5 年离开了这个行业的人来说会是什么样子——对他们来说，这可能是 ECMAScript 规范中新增的一个运算符。而且祝你好运，输入 `!--` 到搜索引擎中去获取任何有意义的结果！
 
 我没有完全审查问题示例中的代码，但我确实觉得可以通过添加代码注释或更明确地表达正在发生的事情来改进。例如，这样是不是更好？
 
+```javascript
+--pending;
+pending = !pending;
+
+if (pending === true) {
+  done(null, results);
+}
 ```
-1  --pending;
-2  pending = !pending;
-3  
-4  if (pending === true) {
-6    done(null, results);
-7  }
-```
 
-问题是，我仍然觉得这具有误导性，因为根据一条评论，代码基本上是在说“当 pending 变量等于零时运行 `done()` 函数”。所以为什么
+问题是，我仍然觉得这具有误导性，因为根据一条评论，代码基本上是在说“当 pending 变量等于零时运行 `done()` 函数”。所以为什么不直接写清楚呢？
 
-
-
-## return 语句
+## `return` 语句
 
 JavaScript 中的 `return` 语句通常被归类为与 `break`、`continue`、`yield` 等类似的特性。但 `return` 的使用频率要高得多，而且我们大多数人可能都认为它的细微之处是理所当然的。
 
@@ -1741,7 +1719,7 @@ JavaScript 中的 `return` 语句通常被归类为与 `break`、`continue`、`y
 
 首先，`return` 语句只能在函数体内部使用。如果在函数体外部使用，脚本将会抛出错误。以下这个简单的示例演示了 `return` 的常见用法：
 
-```
+```javascript
 function addNumbers(a, b) {
   return a + b;
 }
@@ -1753,7 +1731,7 @@ function addNumbers(a, b) {
 
 函数体中 `return` 之后的任何代码都不会执行。在以下示例中，最后一行永远不会被执行：
 
-```
+```javascript
 function addNumbers(a, b) {
   return a + b;
   doSomething(); // 这行永远不会执行
@@ -1764,7 +1742,7 @@ function addNumbers(a, b) {
 
 还需要注意的是，`return` 语句受 JavaScript 自动分号插入（ASI）规则的约束。这意味着你不能将表达式放在 `return` 语句的下一行。这就是为什么你有时会看到这样的代码：
 
-```
+```javascript
 function addNumbers (a, b) {
   return (
     a + b
@@ -1780,13 +1758,13 @@ function addNumbers (a, b) {
 
 以上就是 `return` 语句的简要介绍。关于它真的没有太多其他需要了解的了，希望其中有一些对你来说是新知识。
 
-## replaceWith()
+## `replaceWith()`
 
 DOM API 包含了另一个我最近偶然发现的有趣方法，它对于规范来说相对较新：`Element.replaceWith()`。简而言之，这个方法允许你用一个新元素以及嵌套在其中的任何子元素来替换一个元素。它也接受 DOM 字符串。
 
 以下是演示三种不同用法的代码：
 
-```
+```javascript
 // 用元素替换元素
 par1.replaceWith(par2);
 
@@ -1806,9 +1784,9 @@ par1.replaceWith('<div>More example text</div>');
 
 这就是这个方法的全部内容了。它很方便，因为它很像 `innerHTML()`，但它不是替换目标元素的子元素，而是直接替换该元素，同时传入任何伴随的子元素。
 
-https://codepen.io/impressivewebs/pen/jOLbEKv?editors=0010
+<https://codepen.io/impressivewebs/pen/jOLbEKv?editors=0010>
 
-## monitorEvents()
+## `monitorEvents()`
 
 如果你正在开发一个应用程序，其中各种元素上发生了许多不同的事件（例如 `click`、`mouseover` 等），作为调试过程的一部分，你可能需要在浏览器控制台中记录某些事件。
 
@@ -1816,7 +1794,7 @@ https://codepen.io/impressivewebs/pen/jOLbEKv?editors=0010
 
 要记录目标元素上的事件，语法如下：
 
-```
+```javascript
 monitorEvents(document, 'click');
 ```
 
@@ -1830,13 +1808,13 @@ monitorEvents(document, 'click');
 
 这个过程将持续进行，直到你重新加载页面或使用 `unmonitorEvents()` 方法并传入相同的对象：
 
-```
+```javascript
 unmonitorEvents(document);
 ```
 
 你可以在 DevTools 中的任何网页上使用此功能，你只需要知道要针对哪个对象以及什么事件。我设置了一个[小型演示页面](https://www.impressivewebs.com/demo-files/monitor-events/)，其中包含一些基本说明和几个你可以尝试的示例，如下所示：
 
-```
+```javascript
 monitorEvents(window.btn2, 'mouseover');
 monitorEvents(window, 'resize');
 monitorEvents(document.body, 'contextmenu');
@@ -1852,10 +1830,8 @@ monitorEvents(document.body, 'contextmenu');
 - [Google Developers 上从控制台面板快速监控事件](https://developers.google.com/web/tools/chrome-console/console-reference)
 - [感谢](https://twitter.com/htmx_org/status/1455242575363723265) htmx.org 和 Christian Heilmann
 
-https://www.impressivewebs.com/demo-files/monitor-events/
-https://twitter.com/htmx_org/status/1455242575363723265
-
-
+<https://www.impressivewebs.com/demo-files/monitor-events/>
+<https://twitter.com/htmx_org/status/1455242575363723265>
 
 ## RORO 模式
 
@@ -1867,13 +1843,13 @@ RORO 模式代表**接收一个对象，返回一个对象（Receive an Object, 
 
 这对于代码维护和可读性来说非常合理。例如，像下面这样的函数调用看起来相当令人困惑：
 
-```
+```javascript
 doSomething(4789, 'Nightengale');
 ```
 
 要弄清楚这些参数的作用，我们当然必须找到函数定义并检查那里的参数。但如果使用一个对象来在每次函数调用时都明确这一点，会变得容易得多：
 
-```
+```javascript
 doSomething({
   id: 4789,
   name: 'Nightengale'
@@ -1884,7 +1860,7 @@ doSomething({
 
 正如 Robert 在他的文章中指出的，借助 ES6 的对象解构，在函数定义中处理这个对象既简单又优雅：
 
-```
+```javascript
 function doSomething({id, name}) {
   console.log(id, name); // 4789 "Nightengale"
 }
@@ -1894,13 +1870,13 @@ function doSomething({id, name}) {
 
 我认为这是一个不错的建议，所以一定要查看 Robert 的完整文章，了解更多关于该模式的示例和细节。
 
-https://www.tinyblog.dev/blog/2020-07-13-javascript-roro-pattern/
+<https://www.tinyblog.dev/blog/2020-07-13-javascript-roro-pattern/>
 
 ## 魔术数字
 
 我一直很认同在编写代码时避免使用硬编码值（通常称为"魔术数字"）的建议。不幸的是，因为我现在所做的工作都是自己的项目，所以像下面这样做并不会让我感到困扰：
 
-```
+```javascript
 setTimeout(() => {
   // do stuff...
 }, 3600000); // 一小时的毫秒数
@@ -1912,7 +1888,7 @@ setTimeout(() => {
 
 但是，当在团队环境中开发大型应用程序，或者处理可能需要交接给他人的项目时，最好像下面这样做：
 
-```
+```javascript
 // 分钟/小时 * 秒/分钟 * 毫秒/秒
 const HOUR_IN_MILLISECONDS = 60 * 60 * 1000;
 
@@ -1929,7 +1905,7 @@ console.log(HOUR_IN_MILLISECONDS); // 3600000
 
 当然，理想情况下，你会希望从某种存储通用值的通用 API 中获取这些数字。这样一来，如果全人类决定要在每分钟里增加更多秒数之类的，这个值仍然会是正确的。但这有点像天方夜谭，所以我认为这个解决方案已经足够好了！
 
-## instanceof
+## `instanceof`
 
 这里有一个我最近才了解的 JavaScript 运算符：`instanceof`。与返回字符串以表明传入表达式类型的 `typeof` 运算符类似，根据 [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/instanceof) 的说法，`instanceof` 运算符"用于检测构造函数的 `prototype` 属性是否出现在某个对象的原型链中的任何位置"。
 
@@ -1939,27 +1915,27 @@ console.log(HOUR_IN_MILLISECONDS); // 3600000
 
 一个简单的例子是测试用 JavaScript 的 `Date()` 构造函数创建的对象：
 
-```
-1 let myDate = new Date();
-2 console.log(myDate instanceof Date); // true
+```javascript
+let myDate = new Date();
+console.log(myDate instanceof Date); // true
 ```
 
 如你所见，与 `typeof` 不同，正如 Flanagan 所解释的，这个运算符需要左侧和右侧的操作数，除了运算符本身之外。
 
 一个更具定制性的例子，如同 MDN 文章中所示，是当你自己构建一个对象并进行类似的检查时：
 
-```
-1  function Dog(color, breed, age) {
-2    this.color = color;
-3    this.breed = breed;
-4    this.age = age;
-5  }
-6
-7  let myDog = new Dog('brown', 'Dachshund', 4);
-8  let myCat = 'Morris';
-9
-10 console.log(myDog instanceof Dog); // true
-11 console.log(myCat instanceof Dog); // false
+```javascript
+function Dog(color, breed, age) {
+  this.color = color;
+  this.breed = breed;
+  this.age = age;
+}
+
+let myDog = new Dog('brown', 'Dachshund', 4);
+let myCat = 'Morris';
+
+console.log(myDog instanceof Dog); // true
+console.log(myCat instanceof Dog); // false
 ```
 
 你可以使用 [这个 CodePen 演示](https://codepen.io/impressivewebs/pen/QWOEKzb?editors=0011)¹⁰⁵ 来尝试以上两个示例。使用 `instanceof` 时，如果左侧操作数不是对象，表达式将返回 `false`；但如果右侧操作数不是对象类，则会抛出 `TypeError`。
@@ -1974,36 +1950,34 @@ console.log(HOUR_IN_MILLISECONDS); // 3600000
 
 任何编程语言中的逻辑 OR 运算符都可能被滥用，导致代码变得相当混乱且难以维护。例如，看看下面的代码：
 
-```
-1 if (myVar === 'one' || myVar === 'two' || myVar === 'three' || myVar === 'six' || my
-2 Var === 'seven') {
-3     // do something...
-4 }
+```javascript
+if (myVar === 'one' || myVar === 'two' || myVar === 'three' || myVar === 'six' || myVar === 'seven') {
+    // do something...
+}
 ```
 
 特别是在这种短行环境中，这看起来相当糟糕。我可以告诉你，我在 JavaScript、PHP 中，甚至在我以前写经典 ASP 的时候，都这样做过成千上万次。
 
-在这种情况下，我可以利用 Array.includes() 方法来简化一下。当然，我这里不一定是在处理对象数组，但这没关系。我仍然可以这样做：
+在这种情况下，我可以利用 `Array.includes()` 方法来简化一下。当然，我这里不一定是在处理对象数组，但这没关系。我仍然可以这样做：
 
-```
-1 let myVar = 'one';
-2 let myArray = ['one', 'two', 'three', 'four', 'five', 'six', 'seven'];
-3 
-4 console.log(myArray.includes(myVar));
+```javascript
+let myVar = 'one';
+let myArray = ['one', 'two', 'three', 'four', 'five', 'six', 'seven'];
+
+console.log(myArray.includes(myVar));
 ```
 
 在 CodePen 上试一试[106]
 
-正如我在之前的技巧中讨论过的，Array.includes() 将返回一个布尔值，指示传入的项是否在数组中找到。你还可以传入第二个可选参数，一个表示在数组中开始搜索的位置的整数。
+正如我在之前的技巧中讨论过的，`Array.includes()` 将返回一个布尔值，指示传入的项是否在数组中找到。你还可以传入第二个可选参数，一个表示在数组中开始搜索的位置的整数。
 
 这个技巧归功于 Ravin[107]，他在一条推文图片中呈现了相同的基本思路。我喜欢这种技巧，因为它违背了我通常编码时的思维方式。如果我不是在处理数组，我不太会考虑如何将一组特定的值转换成数组，除非迫不得已。我想我会 sooner 考虑 JavaScript 对象而不是数组。
 
 106 https://codepen.io/impressivewebs/pen/eEyOOg?editors=0011
+
 107 https://twitter.com/ravinwashere/status/1493141661790052353
 
-
-
-## Image.complete
+## `Image.complete`
 
 我不确定这个 DOM 特性是怎么逃过我注意这么久的，但我最近发现了 `HTMLImageElement.complete` 属性，它是一个布尔值，用于指示图片是否已经完全加载。
 
@@ -2011,7 +1985,7 @@ console.log(HOUR_IN_MILLISECONDS); // 3600000
 
 首先，这里有一些代码来演示这个属性的用法：
 
-```
+```javascript
 let myImage = document.querySelector('#myImage');
 
 // will display true or false
@@ -2026,7 +2000,7 @@ console.log(myImage.complete);
 
 ![](img/0680754badbda402ac6a1d0794947ac2_84_0.png)
 
-## 使用 image.complete
+### 使用 `image.complete`
 
 设置好节流选项后，刷新页面，然后观察控制台。如果你选择了一个足够慢的连接，你应该会看到一条消息，指示图片尚未加载，因为代码实际上并没有等待页面加载完再运行脚本。
 
@@ -2048,7 +2022,7 @@ console.log(myImage.complete);
 
 让我们使用以下数组：
 
-```
+```javascript
 let myArray = ['apple', 'orange', 'pear', , 'peach', , undefined, false];
 ```
 
@@ -2056,14 +2030,14 @@ let myArray = ['apple', 'orange', 'pear', , 'peach', , undefined, false];
 
 `Array.filter(Boolean)` 会移除所有假值，包括空槽位：
 
-```
+```javascript
 console.log(myArray.filter(Boolean));
 // ["apple", "orange", "pear", "peach"]
 ```
 
 如果你想保留假值但移除空槽位，并且你知道数组只包含字符串，你可以尝试这个：
 
-```
+```javascript
 console.log(myArray.filter(String));
 // ["apple", "orange", "pear", "peach", undefined, false]
 ```
@@ -2072,7 +2046,7 @@ console.log(myArray.filter(String));
 
 另一种与 `Boolean` 示例效果相同的技术是使用一个简单的函数来传递并返回每个值：
 
-```
+```javascript
 console.log(myArray.filter(n => n));
 // ["apple", "orange", "pear", "peach"]
 ```
@@ -2081,7 +2055,7 @@ console.log(myArray.filter(n => n));
 
 最后，这里有一个你可能以前没见过的方法：
 
-```
+```javascript
 console.log(myArray.flat());
 // ["apple", "orange", "pear", "peach", undefined, false]
 ```
@@ -2091,27 +2065,28 @@ console.log(myArray.flat());
 如果你知道其他实现方式，请告诉我，但以上这些选项应该足以应对各种情况。你可以在 [这个 CodePen](https://codepen.io/impressivewebs/pen/qBVeZoE?editors=0011)[^110] 中找到所有上述示例。
 
 [^109]: https://twitter.com/ravinwashere/status/1494630822460071940
+
 [^110]: https://codepen.io/impressivewebs/pen/qBVeZoE?editors=0011
 
-## Array.at()
+## `Array.at()`
 
 JavaScript 的数组方法列表悄然新增了一个名为 `Array.prototype.at()` 的方法。这个相对较新的特性，现在已得到所有现代浏览器的支持，可以替代使用方括号语法来访问数组中的特定元素。
 
 例如，如果你想访问数组中的第 5 个元素，你可以使用方括号语法这样做：
 
-```
+```javascript
 myArray[4];
 ```
 
 使用 `Array.at()`，你只需传入一个整数，表示你要访问的数组索引：
 
-```
+```javascript
 myArray.at(4);
 ```
 
 你的第一反应可能是这基本上和方括号语法一样，只是多了几个字符。但 `Array.at()` 至少有一个额外的好处：你可以使用负值来从数组末尾开始按索引访问元素。以下代码展示了这一点：
 
-```
+```javascript
 let myArray = ['hat', 'socks', 'belt', 'bandana', 'shoes'];
 
 console.log(myArray.at(3)); // bandana
@@ -2139,7 +2114,7 @@ console.log(myArray.at(-1)); // pajamas
 
 无论哪种情况，对两个数组进行直接的严格比较都无法告诉你它们是否相等：
 
-```
+```javascript
 let myArray = ['a', 'b', 'c'],
     myArray2 = ['a', 'b', 'c'],
     myArray3 = myArray;
@@ -2157,16 +2132,16 @@ console.log(compareFunc(myArray, myArray3)); // true
 
 这并不意味着数组比较毫无意义。如果你有几个小时可以消磨，[这里有一个非常老的 Stack Overflow 帖子](https://stackoverflow.com/questions/7837456/how-to-compare-arrays-in-javascript)，包含了很多不同的答案。如果你只关心包含数字和字符串的简单数组，比较它们最简单的方法可能是将每个数组转换为字符串，然后进行比较：
 
-```
+```javascript
 console.log(myArray.toString() === myArray2.toString());
 // 输出 "true"
 ```
 
 你可以在 [这个 CodePen](https://codepen.io/impressivewebs/pen/MWrVJmL?editors=0011) 中尝试以上两个代码示例。该 Stack Overflow 帖子包含大量复杂的答案，考虑了许多不同的因素，包括项的顺序、对象比较等。
 
+最后补充一点，[有一个官方提案](https://github.com/tc39/proposal-array-equality) 已存在几年，它试图向 ECMAScript 规范添加一个数组比较方法。
 
-
-## RegExp 的 dotAll 属性
+## `RegExp` 的 `dotAll` 属性
 
 几年前，ECMAScript 规范为 `RegExp` 对象添加了一个备受期待的新特性：`dotAll` 属性及其对应的 "s" 标志。这个特性现在已得到所有现代浏览器的支持。
 
@@ -2246,20 +2221,20 @@ doSomething();
 
 本质上，async/await（及其前身技术）的实际用途是编写看起来像是在同步运行但不会阻塞主线程的异步代码。这样你就不会遇到这样的问题：某些操作在后台（异步）发生，而其他代码行继续在主线程中运行。如前所述，以前有旧技术可以实现这一点，但语言中的这些添加使其变得容易得多。
 
-## URL() API
+## `URL()` API
 
-在之前的一篇技巧中，我简要介绍了使用 Location 对象（Window.location 或 Document.location）时可用的不同属性。了解 URL API 的存在也很有用，它类似于 Location 对象，但似乎是其更现代的升级版。
+在之前的一篇技巧中，我简要介绍了使用 Location 对象（`Window.location` 或 `Document.location`）时可用的不同属性。了解 URL API 的存在也很有用，它类似于 Location 对象，但似乎是其更现代的升级版。
 
-通过 URL，你可以访问一些 Location 对象上不可用的其他功能。一旦生成了一个 URL（例如使用 URL() 构造函数），你将拥有以下额外功能：
+通过 URL，你可以访问一些 Location 对象上不可用的其他功能。一旦生成了一个 URL（例如使用 `URL()` 构造函数），你将拥有以下额外功能：
 
-- URL.username - 这以前在 Location 上也可用，但现在已弃用。它允许你将用户名作为 URL 的一部分，用于私有登录。
-- URL.password - 与 URL.username 类似，在 Location 上现已弃用，但在 URL 对象上可用。
-- URL.searchParams - 这可能是 Location 对象上没有的最实用的属性。它允许你访问查询字符串中的各个参数，而不是提供整个查询字符串的 URL.search 属性。
-- URL.toJSON() - 这个新方法返回一个包含 URL 序列化版本的字符串。MDN 的参考手册说不清楚这与 URL.toString() 有何不同，因此未来可能会有变化。
-- URL.createObjectURL() - 创建一个包含表示参数中给定对象的 URL 的字符串。
-- URL.revokeObjectURL() - 释放先前使用 URL.createObjectURL() 创建的现有对象 URL。
+- `URL.username` - 这以前在 Location 上也可用，但现在已弃用。它允许你将用户名作为 URL 的一部分，用于私有登录。
+- `URL.password` - 与 `URL.username` 类似，在 Location 上现已弃用，但在 URL 对象上可用。
+- `URL.searchParams` - 这可能是 Location 对象上没有的最实用的属性。它允许你访问查询字符串中的各个参数，而不是提供整个查询字符串的 `URL.search` 属性。
+- `URL.toJSON()` - 这个新方法返回一个包含 URL 序列化版本的字符串。MDN 的参考手册说不清楚这与 `URL.toString()` 有何不同，因此未来可能会有变化。
+- `URL.createObjectURL()` - 创建一个包含表示参数中给定对象的 URL 的字符串。
+- `URL.revokeObjectURL()` - 释放先前使用 `URL.createObjectURL()` 创建的现有对象 URL。
 
-如前所述，URL.searchParams 属性可能是这些新增功能中最实用的。以下是一些演示如何使用它的示例代码：
+如前所述，`URL.searchParams` 属性可能是这些新增功能中最实用的。以下是一些演示如何使用它的示例代码：
 
 ```javascript
 let url = new URL('https://webtoolsweekly.com/?view=archive&Issue=450');
@@ -2269,7 +2244,7 @@ console.log(url.searchParams.get('Issue')); // "450"
 console.log(url.searchParams.get('issue')); // null
 ```
 
-上面的代码首先使用 URL() 构造函数创建 URL，然后使用 searchParams.get() 访问各个查询字符串参数。如你所见，选择的查询字符串是区分大小写的，因此最后一行返回 null 值。
+上面的代码首先使用 `URL()` 构造函数创建 URL，然后使用 `searchParams.get()` 访问各个查询字符串参数。如你所见，选择的查询字符串是区分大小写的，因此最后一行返回 null 值。
 
 这个 CodePen 有一个此功能的交互式演示。在这种情况下，它只请求显示的特定查询字符串，但你可以根据需要调整代码以使用其他查询字符串名称。
 
@@ -2282,10 +2257,12 @@ MDN 有几篇好文章讨论了在 JavaScript 中处理对象时 *深拷贝* 和
 ```javascript
 let myObj = ['Chris Murphy', { 'instruments': ['Bass', 'Drums']} ];
 
-let myObjCopy = Array.from(myObj); console.log(JSON.stringify(myObjCopy));
+let myObjCopy = Array.from(myObj);
+console.log(JSON.stringify(myObjCopy));
 // "['Chris Murphy',{'instruments':['Bass','Drums']}]"
 
-myObjCopy[1].instruments = ['Bass', 'Drums', 'Vocals']; console.log(myObj[1].instruments);
+myObjCopy[1].instruments = ['Bass', 'Drums', 'Vocals'];
+console.log(myObj[1].instruments);
 // ["Bass","Drums","Vocals"]
 
 console.log(JSON.stringify(myObj));
@@ -2307,30 +2284,29 @@ console.log(JSON.stringify(myObj));
 
 关于这些的更多细节，我建议查看 MDN 上的以下文章：
 
-如我所言，根据我的经验，比较数组似乎并不常见，但看到人们试图解决这个问题的不同方式很有趣。
-
-最后补充一点，[有一个官方提案](https://github.com/tc39/proposal-array-equality) 已存在几年，它试图向 ECMAScript 规范添加一个数组比较方法。
-
-深拷贝与浅拷贝 91
+### 相关链接
 
 - [浅拷贝](https://developer.mozilla.org/en-US/docs/Glossary/Shallow_copy)
 - [深拷贝](https://developer.mozilla.org/en-US/docs/Glossary/Deep_copy)
-- [structuredClone()](https://developer.mozilla.org/en-US/docs/Web/API/structuredClone)
+- [`structuredClone()`](https://developer.mozilla.org/en-US/docs/Web/API/structuredClone)
 
 你甚至可能会从这些页面中发现更多可以深入探索的内容，如果你想更深入地了解这些主题的话。
 
 ---
+
 121 https://developer.mozilla.org/en 【获赞】https://developer.mozilla.org/en-US/docs/Glossary/Shallow_copy
+
 122 https://developer.mozilla.org/en-US/docs/Glossary/Deep_copy
+
 123 https://developer.mozilla.org/en-US/docs/Web/API/structuredClone
 
-## 表单元素的 `label` 属性
+## 表单元素的 `labels` 属性
 
 这是我刚学到的一点知识：所有可以有关联标签的 HTML 输入元素，都可以通过 DOM 的 `labels` 属性访问其关联标签。
 
 语法如下：
 
-```
+```javascript
 console.log(el.labels[0].innerText);
 ```
 
@@ -2342,7 +2318,7 @@ console.log(el.labels[0].innerText);
 
 另外，作为题外话，通常标签是通过其 `for` 属性与表单输入关联的，该属性的值必须与其关联元素的 `id` 属性相同。这样就建立了两者之间的连接。然而，这并不总是必需的，如下一个例子所示：
 
-```
+```html
 <label>My Input 2 <input type="text" class="inputs"></label>
 ```
 
@@ -2354,13 +2330,13 @@ console.log(el.labels[0].innerText);
 
 > [124](https://codepen.io/impressivewebs/pen/OJvPNzd?editors=0011)
 
-## Object.freeze() 和 Object.seal()
+## `Object.freeze()` 和 `Object.seal()`
 
 如果你在 JavaScript 中处理对象，你可以使用两种不同的方法来控制对象属性是否可以更改：`Object.freeze()` 和 `Object.seal()`。
 
 `Object.freeze()` 允许你冻结一个对象，使其无法添加新属性、无法删除现有属性，也无法更改现有属性的值。示例如下：
 
-```
+```javascript
 const myObj = { one: 1, two: 2, three: 3 };
 
 Object.freeze(myObj);
@@ -2386,7 +2362,7 @@ console.log(myObj.four);
 
 那么 `Object.seal()` 呢？它与 freeze 有一些相似之处，但正如其名称所暗示的，它有特定的用途，并且对你能对该对象做什么没有相同的限制。密封对象的属性无法配置或转换为其他属性类型。但是，它的属性值可以更改。
 
-```
+```javascript
 const myObj2 = { four: 4, five: 5, six: 6 };
 
 Object.seal(myObj2);
@@ -2410,11 +2386,17 @@ console.log(myObj2.seven);
 
 ## JavaScript 类
 
+
+
+# JavaScript 类
+
 让我们来看看 JavaScript 类，这是早在 ES6 就添加的特性，并且此后有一些渐进式的改进。类的概念在 ES6 之前很久就被 JavaScript 模拟了，但原生类特性使得编写基于类的语法变得更加容易，这在许多编程语言中都很常见。
+
+## 类语法示例
 
 JavaScript 中的类语法看起来像这样：
 
-```
+```javascript
 class Animal {
   constructor(name) {
     this.name = name;
@@ -2431,62 +2413,64 @@ const myAnimal = new Animal("Quokka");
 myAnimal.printName();
 ```
 
+## 语法解析
+
 语法的不同部分如下：
 
 - `class` 关键字表明我定义的函数是一个原生 JavaScript 类。上面的例子是一个类声明（类似于函数声明），而不是类表达式。
 - 类体内部的 `constructor()` 方法是每个类的特殊方法，用于创建和初始化该类的一个对象实例。`constructor()` 方法在类体中只能出现一次。
 - 实例属性是通过 `constructor()` 方法内的 `this` 关键字定义的。在上面的代码中，`this.name` 是类的一个实例属性。
 - 类不能像函数一样被调用（例如 `Animal()`）。它只能使用 `new` 关键字来调用。
-- 构造函数内部定义的所有方法（例如上面的 `printName()` 方法）都会被添加到类的原型上。当在 `Animal` 实例（我称之为 `myAnimal()`）上调用 `printName()` 方法时，它访问的是类原型上的该方法。该类的所有未来实例都会访问相同的方法。
+- 构造函数内部定义的所有方法（例如上面的 `printName()` 方法）都会被添加到类的原型上。当在 `Animal` 实例（我称之为 `myAnimal`）上调用 `printName()` 方法时，它访问的是类原型上的该方法。该类的所有未来实例都会访问相同的方法。
+
+## 进阶资源
 
 上面的代码是一个非常简单的 JavaScript 类示例，只有基础知识。如果你是类的新手，可以使用 [这个 CodePen 演示](https://codepen.io/impressivewebs/pen/KKomZoR?editors=0011) 来摆弄代码。尝试添加新方法、创建类的新实例，或者更改和访问实例属性。
 
 如果你想知道原生 JavaScript 类与 ES5 中模拟类的旧方法相比如何，你可能想阅读 [这个 Stack Overflow 帖子](https://stackoverflow.com/questions/36419713/are-es6-classes-just-syntactic-sugar-for-the-prototypal-pattern-in-javascript/54661781)，它解释了为什么类不仅仅是语法糖。我还使用 ES5 风格的伪类实现了与上面相同的代码，你可以在 [这个 CodePen](https://codepen.io/impressivewebs/pen/bGvWayv?editors=0011) 中摆弄。
 
-## 事件属性
+# 事件属性
 
 在 JavaScript 中处理事件时，大多数时候你不会需要做太复杂的事情。大多数时候你是在添加事件监听器、做出相应响应、可能移除事件监听器。你可能习惯使用 `preventDefault()` 或 `stopPropagation()`，这两个方法在特定情况下都非常有用。
 
 如果你确实需要一些关于你正在监听和响应的事件的具体信息，有一些不太常用的属性值得了解。
 
+## 访问事件对象
+
 你可以通过将 `event` 对象传递给事件监听器的函数来访问事件的不同属性，像这样：
 
-```
-1 el.addEventListener('click', function (event) {
-2   // 对 "event" 做一些操作
-3 }, false);
+```javascript
+el.addEventListener('click', function (event) {
+  // 对 "event" 做一些操作
+}, false);
 ```
 
 从那时起，你可以访问事件上的许多不同属性。在这个例子中，对象由变量 "event" 表示，但你可以使用任何你想要的变量名。通常为了简洁，简单地使用 "e"。
 
+## 常用事件属性
+
 以下是一些你可以访问的属性：
 
-- **event.type** – 告诉你触发的事件类型（例如 "click"）
-- **event.timeStamp** – 自页面开始监听事件以来经过的毫秒数
-- **event.bubbles** – 布尔值，告诉你事件是否冒泡
-- **event.cancelable** – 布尔值，指示事件的某部分是否可以通过 `preventDefault()` 取消
-- **event.isTrusted** – 布尔值，指示事件是否由浏览器分发，作为一项安全措施
-- **event.eventPhase** – 根据事件当前所处的阶段返回 0、1、2 或 3
+- `event.type` – 告诉你触发的事件类型（例如 "click"）
+- `event.timeStamp` – 自页面开始监听事件以来经过的毫秒数
+- `event.bubbles` – 布尔值，告诉你事件是否冒泡
+- `event.cancelable` – 布尔值，指示事件的某部分是否可以通过 `preventDefault()` 取消
+- `event.isTrusted` – 布尔值，指示事件是否由浏览器分发，作为一项安全措施
+- `event.eventPhase` – 根据事件当前所处的阶段返回 0、1、2 或 3
 
 你可以在 [这个 CodePen 演示](https://codepen.io/impressivewebs/pen/oNqqWoy?editors=0011) 中尝试这些。保持控制台打开以查看按钮点击的结果。我在这里没有对这些属性做太多扩展，但你可以在 [DOM 规范](https://dom.spec.whatwg.org/#interface-event) 中阅读更多内容。那里列出了一些其他属性，以及一些你可能也想查看的方法。
 
 在我的演示中，我打印的是事件阶段的字面含义，你可以在 [这里阅读](https://dom.spec.whatwg.org/#dom-event-eventphase)，而不仅仅是如果不知道每个数字代表什么就毫无意义的整数值。
 
-130 https://codepen.io/impressivewebs/pen/oNqqWoy?editors=0011
-131 https://dom.spec.whatwg.org/#interface-event
-132 https://dom.spec.whatwg.org/#dom-event-eventphase
-
-
-
 # 关于 JavaScript 中 Infinity 的一切你想知道的
 
-你可能已经知道 ECMAScript 中有一个叫做 JavaScript Infinity 的东西，它是一个数值，你可以像将其他数字作为变量值一样，将其应用到任何变量上。
+你可能已经知道 ECMAScript 中有一个叫做 JavaScript `Infinity` 的东西，它是一个数值，你可以像将其他数字作为变量值一样，将其应用到任何变量上。
 
-Infinity 当然与其他数字不同，所以我想用示例来总结一下关于 JavaScript Infinity 及其工作方式的许多怪癖和有用的事实。
+`Infinity` 当然与其他数字不同，所以我想用示例来总结一下关于 JavaScript `Infinity` 及其工作方式的许多怪癖和有用的事实。
 
 ## 什么是 Infinity？
 
-如前所述，Infinity 是一个数值。从技术上讲，Infinity 被归类为 Window 对象的属性，类似于全局作用域中的变量如何成为 Window 的属性：
+如前所述，`Infinity` 是一个数值。从技术上讲，`Infinity` 被归类为 `Window` 对象的属性，类似于全局作用域中的变量如何成为 `Window` 的属性：
 
 ```javascript
 console.log(window.Infinity); // Infinity
@@ -2496,7 +2480,7 @@ console.log(window.Infinity < 100); // false
 
 在 CodePen 上试试<sup>133</sup>
 
-尽管如此，Infinity 是不可写、不可枚举、不可配置的。因此你不能像下面这样将 Infinity 作为对象来使用 `for...of`：
+尽管如此，`Infinity` 是不可写、不可枚举、不可配置的。因此你不能像下面这样将 `Infinity` 作为对象来使用 `for...of`：
 
 ```javascript
 // 这样是行不通的！
@@ -2506,7 +2490,7 @@ for (let i of Infinity) {
 }
 ```
 
-这并不奇怪，因为你不能对任何数字这样做；你只能对可迭代对象这样做。但你可以将 Infinity 作为常规 for 循环的上限：
+这并不奇怪，因为你不能对任何数字这样做；你只能对可迭代对象这样做。但你可以将 `Infinity` 作为常规 for 循环的上限：
 
 ```javascript
 // 不要这样做！
@@ -2559,7 +2543,7 @@ console.log(46 / 0); // Infinity
 
 **计算器除以零错误**
 
-返回 Infinity 的另一种方式是通过 JavaScript `Number` 对象的属性，如下面的代码所示：
+返回 `Infinity` 的另一种方式是通过 JavaScript `Number` 对象的属性，如下面的代码所示：
 
 ```javascript
 console.log(Number.POSITIVE_INFINITY); // Infinity
@@ -2592,11 +2576,7 @@ console.log(checkForInfinity(1.7976931348623157e+309)); // true
 console.log(isFinite(45)); // true
 console.log(isFinite(-45)); // true
 console.log(isFinite(Infinity)); // false
-console.log(isFinite
-```
-
-```javascript
-(isFinite(1.7976931348623157e+308)); // true
+console.log(isFinite(1.7976931348623157e+308)); // true
 console.log(isFinite(1.7976931348623157e+309)); // false
 ```
 
@@ -2625,14 +2605,14 @@ console.log(-Infinity > 100); // false
 console.log(-Infinity < -100); // true
 ```
 
-现在我将正 Infinity 与最高的非 Infinity 值进行比较，并将负 Infinity 与最低的负值（但不是负 Infinity）进行比较：
+现在我将正 `Infinity` 与最高的非 `Infinity` 值进行比较，并将负 `Infinity` 与最低的负值（但不是负 `Infinity`）进行比较：
 
 ```javascript
 console.log(Infinity > 1.7976931348623157e+308); // true
 console.log(-Infinity < -1.7976931348623157e+308); // true
 ```
 
-在这里，我将确认正负两个方向 Infinity 阈值开始的位置：
+在这里，我将确认正负两个方向 `Infinity` 阈值开始的位置：
 
 ```javascript
 console.log(1.7976931348623157e+309); // Infinity
@@ -2641,19 +2621,19 @@ console.log(-1.7976931348623157e+309); // -Infinity
 
 [在 CodePen 上试试<sup>140</sup>](https://codepen.io/impressivewebs/pen/RwbqQXR?editors=0011)
 
-正如你可能猜到的，如果用负数除以零，返回值将是 -Infinity：
+正如你可能猜到的，如果用负数除以零，返回值将是 `-Infinity`：
 
 ```javascript
 console.log(-46 / 0); // -Infinity
 ```
 
-你也可以使用 Number 对象的以下属性返回 -Infinity，这与前面提到的正无穷属性类似：
+你也可以使用 `Number` 对象的以下属性返回 `-Infinity`，这与前面提到的正无穷属性类似：
 
 ```javascript
 console.log(Number.NEGATIVE_INFINITY); // -Infinity
 ```
 
-有趣的是，如果没有传入任何值，`Math.max()`（返回传入值中的最大值）将返回 -Infinity，而 `Math.min()`（返回传入值中的最小值）将返回 Infinity。
+有趣的是，如果没有传入任何值，`Math.max()`（返回传入值中的最大值）将返回 `-Infinity`，而 `Math.min()`（返回传入值中的最小值）将返回 `Infinity`。
 
 ```javascript
 console.log(Math.max()); // -Infinity
@@ -2664,7 +2644,7 @@ console.log(Math.min()); // Infinity
 
 ## Infinity 作为默认值
 
-在他的新书 [JavaScript for impatient programmers<sup>142</sup>](https://exploringjs.com/impatient-js/index.html) 中，Axel Rauschmayer 提出了一个将 Infinity 作为默认值的有趣用例。由于 Infinity 大于所有数字，它在检查数组中最小数字的函数中非常有用：
+在他的新书 [JavaScript for impatient programmers<sup>142</sup>](https://exploringjs.com/impatient-js/index.html) 中，Axel Rauschmayer 提出了一个将 `Infinity` 作为默认值的有趣用例。由于 `Infinity` 大于所有数字，它在检查数组中最小数字的函数中非常有用：
 
 ```javascript
 function findMinimum(numbers) {
@@ -2678,13 +2658,13 @@ function findMinimum(numbers) {
 console.log(findMinimum([20, 6, 90])); // 6
 ```
 
-这工作得很好，因为 Infinity 大于所有数字，所以除非数组中的所有数字都超过 Infinity 阈值，否则结果不会有任何问题。
+这工作得很好，因为 `Infinity` 大于所有数字，所以除非数组中的所有数字都超过 `Infinity` 阈值，否则结果不会有任何问题。
 
 在 CodePen 上试试<sup>143</sup>
 
 ## 转换为 JSON 时注意 Infinity
 
-在处理 JSON 数据时，如果你使用 `JSON.stringify()` 将 JavaScript 对象转换为有效的 JSON 字符串，你应该了解 Infinity 值是如何被处理的。注意下面的示例：
+在处理 JSON 数据时，如果你使用 `JSON.stringify()` 将 JavaScript 对象转换为有效的 JSON 字符串，你应该了解 `Infinity` 值是如何被处理的。注意下面的示例：
 
 ```javascript
 let myJSON = {
@@ -2698,48 +2678,50 @@ let myJSON = {
 console.log(JSON.stringify(myJSON, null, 2));
 
 /* Result:
-"{
-  'value1': 6,
-  'value2': 'Example Text',
-  'value3': null,
-  'value4': null,
-  'value5': null
-}"
+{
+  "value1": 6,
+  "value2": "Example Text",
+  "value3": null,
+  "value4": null,
+  "value5": null
+}
 */
 ```
 
-在 CodePen 上试试看^144
+在 CodePen 上试试看<sup>144</sup>
 
 请注意，在序列化之前，JavaScript 对象中的原始数据包含了三种不同的无限值。然而，当数据实际被序列化时，这些值都会被转换为 `null`。如果其中一个值最初是 `NaN`，也会发生同样的情况。
 
 以上就是我关于 JavaScript `Infinity` 值所学到的大部分内容。希望其中有些内容对你来说是有趣的，即使你已经写了一段时间的 JavaScript。
 
-^144 https://codepen.io/impressivewebs/pen/aboQYNo?editors=0011
+<sup>144</sup> https://codepen.io/impressivewebs/pen/aboQYNo?editors=0011
 
-### 拖放 API
+# 拖放 API
+
+## 基础拖放示例
 
 如果你从未研究过如何使用 HTML 拖放 API，我创建了一个超级简单的代码示例，它使用了尽可能少的代码来演示在网页上将一个元素拖放到另一个元素中是多么简单。
 
 首先，这是 HTML：
 
-```
-1  <div id="box" draggable="true"></div>
-2  <div id="dropzone"></div>
+```html
+<div id="box" draggable="true"></div>
+<div id="dropzone"></div>
 ```
 
 注意 `draggable` 属性被设置为 `true`，以及我将在 JavaScript 中用作钩子的 ID。这是 JavaScript：
 
-```
-1  let box = document.getElementById('box'),
-2      dropzone = document.getElementById('dropzone');
-3  
-4  dropzone.addEventListener('dragover', function (e) {
-5    e.preventDefault();
-6  });
-7  
-8  dropzone.addEventListener('drop', function (e) {
-9    e.target.appendChild(box);
-10 });
+```javascript
+let box = document.getElementById('box'),
+    dropzone = document.getElementById('dropzone');
+
+dropzone.addEventListener('dragover', function (e) {
+  e.preventDefault();
+});
+
+dropzone.addEventListener('drop', function (e) {
+  e.target.appendChild(box);
+});
 ```
 
 在这里，我监听 `dragover` 和 `drop` 事件，以确保元素被正确移动。移动本身是通过众所周知的 `appendChild()` 方法完成的。
@@ -2756,13 +2738,13 @@ console.log(JSON.stringify(myJSON, null, 2));
 
 [^145]: https://codepen.io/impressivewebs/pen/bGdJWdJ?editors=0010
 
-### 使用 dataTransfer 对象进行拖放
+## 使用 dataTransfer 对象进行拖放
 
 之前，我为那些从未使用过 HTML 拖放 API 的人介绍了一个非常简单的入门知识。[该演示](https://codepen.io/impressivewebs/pen/bGdJWdJ)包含了创建拖放示例所需的最少代码。让我们在此基础上更进一步，整合 `dataTransfer` 对象，该对象具有可在拖放操作过程中使用的方法和属性。
 
 首先，我可以使用 `dataTransfer` 对象的 `setData()` 方法，我将在监听 `dragstart` 事件（这是我在之前的演示中不需要使用的事件）的事件监听器中整合该方法。相关行看起来像这样（其中 "e" 是事件对象）：
 
-```
+```javascript
 e.dataTransfer.setData('text/html', box.innerHTML);
 ```
 
@@ -2770,7 +2752,7 @@ e.dataTransfer.setData('text/html', box.innerHTML);
 
 代码中的下一个关键行将是使用 `getData()` 方法。在这种情况下，我将在我的放置区域元素触发 `drop` 事件时使用它：
 
-```
+```javascript
 this.style.background = e.dataTransfer.getData('text/html');
 ```
 
@@ -2784,7 +2766,7 @@ this.style.background = e.dataTransfer.getData('text/html');
 
 这就是在使用拖放 API 时使用 `dataTransfer` 对象的基本方法。
 
-### 在拖放中使用 setDragImage()
+## 在拖放中使用 setDragImage()
 
 继续处理 HTML 拖放 API 的主题，你可以使用此 API 的另一件事是在任何拖动操作期间设置自定义图像。
 
@@ -2792,7 +2774,7 @@ this.style.background = e.dataTransfer.getData('text/html');
 
 这是代码：
 
-```
+```javascript
 let img = new Image();
 img.src = 'my-image.png';
 
@@ -2819,19 +2801,19 @@ box.addEventListener('dragstart', function (e) {
 
 当然，在此示例中，图像与拖动操作无关，因此不会有任何图像出现在放置区域中或类似情况。这只是一个简单的示例，向你展示如何在拖动操作期间更改拖动图像。
 
-### 不同的拖动事件
+## 不同的拖动事件
 
 为了在基本 HTML 拖放 API 示例以及你可以使用 `dataTransfer()` 对象做的一些事情的基础上进行扩展，此提示将重点关注在拖动操作期间你可以监听的不同事件。
 
 所有现代浏览器都支持 7 种拖动事件。它们是：
 
-- **dragstart** - 拖动操作开始（在被拖动的项目上）
-- **drag** - 拖动操作正在进行中（在被拖动的项目上）
-- **dragenter** - 被拖动的项目进入有效的放置目标（在放置目标上）
-- **dragover** - 正在拖过有效的放置目标（在放置目标上）
-- **dragleave** - 被拖动的项目离开有效的放置目标（在放置目标上）
-- **drop** - 被拖动的项目被放置在有效的放置目标上（在放置目标上）
-- **dragend** - 拖动操作结束（在被拖动的项目上）
+- `dragstart` - 拖动操作开始（在被拖动的项目上）
+- `drag` - 拖动操作正在进行中（在被拖动的项目上）
+- `dragenter` - 被拖动的项目进入有效的放置目标（在放置目标上）
+- `dragover` - 正在拖过有效的放置目标（在放置目标上）
+- `dragleave` - 被拖动的项目离开有效的放置目标（在放置目标上）
+- `drop` - 被拖动的项目被放置在有效的放置目标上（在放置目标上）
+- `dragend` - 拖动操作结束（在被拖动的项目上）
 
 每个项目点旁边的括号中的注释表明，在监听事件时，事件监听器应放置在何处。
 
@@ -2841,16 +2823,12 @@ box.addEventListener('dragstart', function (e) {
 
 还应注意，列出不同事件的 [MDN 文章](https://developer.mozilla.org/en-US/docs/Web/API/HTML_Drag_and_Drop_API#Drag_Events)[^151] 也列出了一个在某些浏览器中受支持的 `dragexit` 事件。但建议使用 `dragleave` 事件（显然与之等效）。
 
-### 默认可拖动的元素
+## 默认可拖动的元素
 
 在使用 HTML 拖放 API（我在最近几期中涵盖了其各个方面）创建界面时，需要注意网页上的一些元素默认是“可拖动”的。你无疑已经注意到了这一点。[规范](https://html.spec.whatwg.org/multipage/dnd.html#the-draggable-attribute)[^152] 解释说，以下元素默认可拖动：
 
 - 文本选择
-
-
-
-一张图片
-
+- 一张图片
 - 一个带有 `href` 属性的 `a` 元素
 
 页面上每个没有显式设置 `draggable` 属性的元素，其 `draggable` 值都是 "auto"。但这并不意味着你可以检查到一个 "auto" 值。正如规范所述，如果元素的 `draggable` 属性没有设置为 `true` 或 `false`：
@@ -2867,13 +2845,11 @@ box.addEventListener('dragstart', function (e) {
 
 顺便说一下，你可以选择页面上任何一段随机文本，然后如果你把它拖放到放置区，你会看到浏览器会尝试弄清楚如何处理这段文本。这类似于将一张图片（它本身是可拖拽的）拖拽到一个新页面，然后浏览器访问该图片的 URL。
 
-### 使用 effectAllowed 属性
+## 使用 effectAllowed 属性
 
 HTML 拖放 API 的一个看似有用的功能叫做 `dataTransfer.effectAllowed` 属性，它允许你确定允许哪种类型的拖拽操作。不幸的是，我要提前说明，这个功能在不同的浏览器中工作方式不同，所以我不知道它是否非常实用。
 
 例如，用户可以使用 CTRL 和/或 SHIFT 键（或类似的组合键）来执行系统定义的拖拽操作。我在一台 Windows 10 机器上，所以在我的系统上，我显然找到了三种我可以弄清楚的操作：
-
-### 拖放 API
 
 - 通过简单拖拽（不按键）执行的 "move" 操作
 - 通过 CTRL-拖拽执行的 "copy" 操作
@@ -2887,7 +2863,7 @@ HTML 拖放 API 的一个看似有用的功能叫做 `dataTransfer.effectAllowed
 
 请注意，在演示中，你不能将任何方框拖到任何放置区（无论使用哪个浏览器）。这是通过前面提到的 `effectAllowed` 属性实现的，如下所示：
 
-```
+```javascript
 dropzone.addEventListener('dragover', function(e) {
   e.dataTransfer.effectAllowed = 'copy';
 });
@@ -2895,15 +2871,15 @@ dropzone.addEventListener('dragover', function(e) {
 
 我觉得需要更详细地介绍这个功能，并且可能要报告各种浏览器中由于行为不一致而出现的错误。如果你在浏览器中看到了不同的情况，或者你认为我误解了这个功能，请随时告诉我。
 
-## 使用 CSS 和 JavaScript 在页面加载时淡入
+# 使用 CSS 和 JavaScript 在页面加载时淡入
 
 当我访问一个页面时，如果网站还在加载中，我试图与元素交互时，我会感到恼火。通常东西在移动，字体还没完全加载，感觉像是出问题了。
 
 我知道如今这个行业痴迷于在页面性能上争取每一毫秒。但在最近我翻新的几个项目中，我添加了一个微妙而干净的加载机制，我认为这让体验变得更好，即使它最终确实略微延迟了用户可以开始与我的页面交互的时间。
 
-我谈论的两个网站是 [Web Tools Weekly](https://webtoolsweekly.com/) ¹⁵⁵ 和 [CSS Values](https://cssvalues.com/) ¹⁵⁶。访问每个主页，你会注意到在每种情况下，内容都是淡入的，而不是笨重地加载。在 CSS Values 上更明显，因为那里有更多内容和一些需要加载的 JavaScript。此外，对于 CSS Values，每个“页面”都会发生这种情况，但对于 Web Tools Weekly，只在主页发生（尽管从技术上讲，CSS Values 页面更像是“状态”）。
+我谈论的两个网站是 [Web Tools Weekly](https://webtoolsweekly.com/) <sup>155</sup> 和 [CSS Values](https://cssvalues.com/) <sup>156</sup>。访问每个主页，你会注意到在每种情况下，内容都是淡入的，而不是笨重地加载。在 CSS Values 上更明显，因为那里有更多内容和一些需要加载的 JavaScript。此外，对于 CSS Values，每个“页面”都会发生这种情况，但对于 Web Tools Weekly，只在主页发生（尽管从技术上讲，CSS Values 页面更像是“状态”）。
 
-### 我想完成的步骤
+## 我想完成的步骤
 
 我相信有几种方法可以做到这一点，但我的方法干净且易于理解。我基本上做两件事：
 
@@ -2914,13 +2890,13 @@ dropzone.addEventListener('dragover', function(e) {
 
 这里的基本概念与我在页面上添加一个加载动画指示器相同，但因为页面不应该加载很长时间，所以我不在乎向用户指示正在发生什么。在其他情况下，加载动画指示器可能更合适，但在这里，我对简单的淡入效果很满意。
 
-### 代码
+## 代码实现
 
 我本可以在我的 HTML 中使用从我的样式表中引入的类。但样式表是外部的，我没有内联它。所以如果我试图在样式表加载完成之前与页面交互，这可能效果不会很好。因此，我选择在文档的 `<head>` 中添加一些 CSS。
 
 这是我的 HTML 的样子：
 
-```
+```html
 <style>
   .hidden {
     opacity: 0;
@@ -2949,7 +2925,7 @@ dropzone.addEventListener('dragover', function(e) {
 
 在我的外部 JavaScript 中，我有类似下面的内容：
 
-```
+```javascript
 function doStuff (callback) {
   // 在这里执行所有应用脚本...
   callback();
@@ -2960,13 +2936,13 @@ doStuff(function () {
 });
 ```
 
-在这个例子中，我使用了一个简单的[回调结构](https://www.impressivewebs.com/callback-functions-javascript/) ¹⁵⁷。我想你也可以为此使用 Promise，但我没有真正研究过。我相信概念是一样的。
+在这个例子中，我使用了一个简单的[回调结构](https://www.impressivewebs.com/callback-functions-javascript/) <sup>157</sup>。我想你也可以为此使用 Promise，但我没有真正研究过。我相信概念是一样的。
 
 我基本上是确保初始化任何功能的所有应用或网站代码在 `<body>` 元素重新设置为可见之前完全加载。
 
 为了进一步增强它，我还可以将整个东西包装在一个类似 jQuery 的 `document.ready` 处理程序中：
 
-```
+```javascript
 window.addEventListener('DOMContentLoaded', function () {
   // 在这里做所有事情...
 });
@@ -2974,31 +2950,29 @@ window.addEventListener('DOMContentLoaded', function () {
 
 这意味着我将在运行我的脚本之前等待 DOM 准备就绪。然后脚本运行，完成后我让页面可见。我也可以使用 `load` 事件，这意味着我将等待整个页面资源加载，而不仅仅是 DOM 准备就绪。
 
-### 结论
+## 结论
 
-如果你想看一个精简的演示版本，你可以查看[这个页面](https://www.impressivewebs.com/demo-files/fade-in/) ¹⁵⁸。注意，它故意做成了一个非常大的页面，所以也许在手机上避免访问。我还运行了一些无用的 JavaScript（给 HTML 添加一堆类）来假装正在发生一些事情，营造出在淡入发生之前有一个停顿的假象。
+如果你想看一个精简的演示版本，你可以查看[这个页面](https://www.impressivewebs.com/demo-files/fade-in/) <sup>158</sup>。注意，它故意做成了一个非常大的页面，所以也许在手机上避免访问。我还运行了一些无用的 JavaScript（给 HTML 添加一堆类）来假装正在发生一些事情，营造出在淡入发生之前有一个停顿的假象。
 
-如前所述，你也可以在 [Web Tools Weekly](https://webtoolsweekly.com/) ¹⁵⁹ 和 [CSS Values](https://cssvalues.com/) ¹⁶⁰ 上看到这是如何工作的。
+如前所述，你也可以在 [Web Tools Weekly](https://webtoolsweekly.com/) <sup>159</sup> 和 [CSS Values](https://cssvalues.com/) <sup>160</sup> 上看到这是如何工作的。
 
 你可以轻松地将其切换为在页面“准备就绪”时放置一个加载动画指示器。我选择做淡入效果是因为我认为它看起来不错，而且我并不担心任一网站会花很长时间加载。
 
+# 结合嵌入式 iframe 使用 adoptNode() 方法
 
+我最近发现了一个有趣的 DOM 特性，它是 `document` 对象的一个方法，允许你从嵌入在页面中的 `<iframe>` 里移除元素，并将其放入当前页面（反之亦然）：`adoptNode()`。
 
-## 结合嵌入式 iframe 使用 adoptNode() 方法
+换句话说，就是将子框架中的元素"领养"到父框架中。`document.adoptNode()` 的代码如下：
 
-我最近发现了一个有趣的 DOM 特性，它是 document 对象的一个方法，允许你从嵌入在页面中的 `<iframe>` 里移除元素，并将其放入当前页面（反之亦然）：adoptNode()。
-
-换句话说，就是将子框架中的元素"领养"到父框架中。document.adoptNode() 的代码如下：
-
-```
+```javascript
 document.adoptNode(node)
 ```
 
-其中 node 等于你想要从另一个文档中引入的节点。
+其中 `node` 等于你想要从另一个文档中引入的节点。
 
 假设我有一个名为 page.html 的文档，内容如下：
 
-```
+```html
 <body>
   <p class="one">One</p>
   <p class="two">Two</p>
@@ -3010,7 +2984,7 @@ document.adoptNode(node)
 
 我将把该页面作为 iframe 的源嵌入到另一个文档中，另一个文档如下：
 
-```
+```html
 <iframe src="page.html"></iframe>
 
 <p><button>ADOPT THE ELEMENTS!</button></p>
@@ -3019,7 +2993,7 @@ document.adoptNode(node)
 
 父页面中的按钮将用于触发操作。以下是 JavaScript 代码：
 
-```
+```javascript
 let myFrame = document.querySelector('iframe'),
     myPars = myFrame.contentDocument.querySelectorAll('p'),
     container = document.querySelector('.container');
@@ -3039,7 +3013,7 @@ document.querySelector('button').addEventListener('click', function() {
 
 访问下面的演示来试一试。
 
-[查看演示](https://www.impressivewebs.com/demo-files/adopt-node/)^161
+[查看演示](https://www.impressivewebs.com/demo-files/adopt-node/)<sup>161</sup>
 
 在演示页面上，只需点击按钮，你就会看到三个段落从 iframe 中消失，并出现在父页面上。这与更广为人知的 `importNode()` 方法有所不同，后者大致做同样的事情，但导入的节点会保留在原始文档中（克隆它们而非移动它们）。
 
@@ -3047,7 +3021,7 @@ document.querySelector('button').addEventListener('click', function() {
 
 现在我更进一步，使用第二个嵌入式 iframe（page2.html）将相同的段落从父框架中拉出，放入第二个框架。以下是我将在 page2.html 内部运行的代码：
 
-```
+```javascript
 let container = document.querySelector('.container'),
     myPars = parent.document.querySelectorAll('p[class]');
 
@@ -3060,18 +3034,18 @@ document.querySelector('button').addEventListener('click', function() {
 
 这里我做了以下操作：
 
-- 使用 parent.document 访问父框架
-- 抓取新"领养"的段落（使用 class 属性来限制 querySelector 调用中获取哪些段落）
+- 使用 `parent.document` 访问父框架
+- 抓取新"领养"的段落（使用 class 属性来限制 `querySelector` 调用中获取哪些段落）
 - 使用与上一个示例相同的循环，将段落重新"领养"到第二个 iframe 的文档中
 - 在此演示中，你必须先将节点"领养"到父框架中，然后使用第二个框架的按钮将它们重新"领养"到该框架中
 
-[查看演示](https://www.impressiverwebs.com/demo-files/adopt-node-2/)¹⁶²
+[查看演示](https://www.impressivewebs.com/demo-files/adopt-node-2/)<sup>162</sup>
 
 我最初在段落上包含的类名并不重要。我只是想证明这些元素会按照它们在原始页面中的样子被准确移动。如果你用开发者工具检查第二个框架，可以看到段落被拉入时类名保持完整，如下截图所示：
 
 ![](img/0680754badbda402ac6a1d0794947ac2_122_0.png)
 
-使用 adoptNode() 时节点保持完整
+使用 `adoptNode()` 时节点保持完整
 
 由于这些脚本在框架之间运行，这类操作会受到通常的跨域限制。因此，如果子框架页面不在同一源上，服务器必须为该页面启用跨域资源共享<sup>163</sup>（或 CORS），否则你的控制台中会出现指示跨域限制的错误。
 
@@ -3083,4 +3057,4 @@ document.querySelector('button').addEventListener('click', function() {
 
 最后，如果你想知道浏览器支持情况，这在几乎所有地方都能工作，包括 IE9 及以上版本，所以这是一个较早的特性，具有相当广泛的支持。
 
-163 https://enable-cors.org/
+<sup>163</sup> https://enable-cors.org/

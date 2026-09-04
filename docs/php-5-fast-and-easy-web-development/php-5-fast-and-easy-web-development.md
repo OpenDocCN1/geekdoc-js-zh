@@ -1,16 +1,7 @@
+
 # PHP 5：快速简的 Web 开发
 
-
-
-
-
-
-
 轻松地上手 PHP 5、Apache 和 MySQL。本指南将演示如何显示动态内容、构建你自己的联系人管理系统、创建自定义报告、处理 XML 以及更多内容。
-
-
-
-
 
 # 封底
 
@@ -20,14 +11,9 @@
 
 Julie Meloni 是 iZi Interactive 的总监，这是一家位于加利福尼亚州阿尔托斯的多媒体公司。自 Web 诞生以来她一直在开发基于 Web 的应用程序，并记得第一个 GUI 浏览器出现时的兴奋心情。她是多本关于 Web 编程语言和数据库主题的书及的作者，你可以在多种语言中找到她的作品，包括中文、意大利语、波兰语甚至是塞尔维亚语。
 
-
-
-
-
-
 出版经理：Stacy L. Hickey
-助理营销经理：Kristen Eisen
 
+助理营销经理：Kristen Eisen
 
 http://www.courseptr.com
 
@@ -49,11 +35,7 @@ Julia Meloni 是 iZi Interactive 的总监，这是一家位于加利福尼亚�
 
 # 什么是 PHP？
 
-它的正式名称是 PHP：超文本处理器，是一种服务器端脚本语言。当你的浏览器访问 URL 时，它是在向 Web 服务器发送请求。当你请求一个 PHP 页面时，例如 http://www.yourcompany.com/home.php，Web 服务器会唤醒 PHP 解析引擎并说：“嘿！在我把结果发给这个人的 浏览器之前，你得做些什么。”然后，PHP 解析引擎运行 home.php 中的 PHP 代码，并返回输出。该输出作为文档中 HTML 代码的一部分被传递给 Web 服务器，随后传递给你的浏览器，由浏览器显示给你。
-
-
-
-
+它的正式名称是 PHP：超文本处理器，是一种服务器端脚本语言。当你的浏览器访问 URL 时，它是在向 Web 服务器发送请求。当你请求一个 PHP 页面时，例如 http://www.yourcompany.com/home.php，Web 服务器会唤醒 PHP 解析引擎并说：“嘿！在我把结果发给这个人的 浏览器之前，你得做些什么。”然后，PHP 解析引擎运行 `home.php` 中的 PHP 代码，并返回输出。该输出作为文档中 HTML 代码的一部分被传递给 Web 服务器，随后传递给你的浏览器，由浏览器显示给你。
 
 ## PHP 简史
 
@@ -94,10 +76,6 @@ PHP 可以做任何你想做的事，除了倒立着转圈。实际上，通过�
 
 但用户——就像本书的主要读者群——在入职的第一天不会发现页面对象、类、NET 或 XML 集成。某些用户需要一种快速、灵活的语言来创建动态网站，而 PHP 5 仍然需要这些。
 
-
-
-
-
 # 谁应该读此书？
 
 本书专为对 Web 开发环境有一般了解（无论是 Linux/Unix 还是 Windows）的人士而设计。关于安装和配置的章节假设你已经熟悉自己的操作系统以及构建（在 Linux/Unix 系统上）或安装（在 Windows 系统上）软件的基本方法。
@@ -129,7 +107,6 @@ PHP 可以做任何你想做的事，除了倒立着转圈。实际上，通过�
 
 # 第一部分：入门
 
-
 - 第 1 章：安装和配置 MySQL
 - 第 2 章：安装 Apache
 - 第 3 章：安装 PHP
@@ -139,6 +116,7 @@ PHP 可以做任何你想做的事，除了倒立着转圈。实际上，通过�
 MySQL 是大多数使用 PHP 的 Web 开发者的首选数据库，因为其高效且易用。MySQL 是免费的，可以在多个平台上运行，并且其文档非常出色。在 PHP 中使用 MySQL 时，先安装 MySQL 是关重要的，因为在 PHP 的安装和配置过程中，你必须告诉 PHP MySQL 所在的位置。
 
 本章将展示如何：
+
 - 在 Windows 上安装 MySQL
 - 创建数据库
 
@@ -154,12 +132,7 @@ MySQL 是大多数使用 PHP 的 Web 开发者的首选数据库，因为其高�
 2. 点击 Download 链接将进入一个镜像页面。选择离你最近的镜像并点击 HTTP 或 FTP 链接下载文件。使用 HTTP 方法通常更快。
 3. 一旦 zip 文件到达你的硬盘，将其内容解压到临时目录。
 4. 从临时目录找到 `setup.exe` 文件并双击开始安装。你将看到安装向导的第一个屏幕。点击 Next 继续。
-5. 安装过程的第二个屏幕包含关于安装位置的有用信息。默认安装位置是 C:\MySQL，但如果你想在不同的位置安装 MySQL，此屏幕将显示你必须自行完成的更改。此屏幕对于想要将 MySQL 作为服务的启动 Windows NT 用户来说也很重要。阅读信息并记录与你情况相关的内容，然后点击 Next 继续。
-
-
-
-
-
+5. 安装过程的第二个屏幕包含关于安装位置的有用信息。默认安装位置是 `C:\MySQL`，但如果你想在不同的位置安装 MySQL，此屏幕将显示你必须自行完成的更改。此屏幕对于想要将 MySQL 作为服务的启动 Windows NT 用户来说也很重要。阅读信息并记录与你情况相关的内容，然后点击 Next 继续。
 6. 在安装过程的第三个屏幕上，你需要选择安装位置。如果你想在默认位置安装 MySQL，请点击 Next（下一步）继续。否则，点击 Browse（浏览）并导航到你选择的位置，然后点击 Next（下一步）继续。
 
 ![](img/7a81120f3fcfd17d264c4ace19b756f8_18_0.png)
@@ -178,13 +151,13 @@ MySQL 是大多数使用 PHP 的 Web 开发者的首选数据库，因为其高�
 
 ![](img/7a81120f3fcfd17d264c4ace19b756f8_19_0.png)
 
-MySQL 现在已安装在你的系统上。然而，从 MySQL AB 安装 MySQL 后，你不会在 Windows 开始菜单中找到任何安装快捷方式，因此你必须手动启动它。如果你导航到 C:\mysql 目录，你会发现许多已就绪的应用程序。其中一个应用程序名为 WinMSadmin，它是开始使用 MySQL 的 Windows 用户极的好朋友。如果你双击此文件，它将启动 MySQL 服务器并在任务栏中放置一个聚光灯图标。如果你右键点击此图标，可以启动图形界面来监控和管理你的服务器。
+MySQL 现在已安装在你的系统上。然而，从 MySQL AB 安装 MySQL 后，你不会在 Windows 开始菜单中找到任何安装快捷方式，因此你必须手动启动它。如果你导航到 `C:\mysql` 目录，你会发现许多已就绪的应用程序。其中一个应用程序名为 `WinMSadmin`，它是开始使用 MySQL 的 Windows 用户极的好朋友。如果你双击此文件，它将启动 MySQL 服务器并在任务栏中放置一个聚光灯图标。如果你右键点击此图标，可以启动图形界面来监控和管理你的服务器。
 
 ![](img/7a81120f3fcfd17d264c4ace19b756f8_19_1.png)
 
-**注意**：第一次使用 WinMSqlAdmin 时，它会要求你创建一个用户名和密码。为了方便，请选择一个唯一的用户名/密码对。
+**注意**：第一次使用 `WinMSqlAdmin` 时，它会要求你创建一个用户名和密码。为了方便，请选择一个唯一的用户名/密码对。
 
-WinMSadmin 会自动检测环境信息，例如 IP 地址、机器名称等。顶部的标签允许你查看系统信息，还可以编辑 MySQL 配置选项。要关闭 MySQL 服务器，右键点击任务栏上的聚光灯图标并选择相应的选项。只要 MySQL 服务器正在运行，你就可以通过控制窗口运行其他应用程序，例如 MySQL 监控器。
+`WinMSadmin` 会自动检测环境信息，例如 IP 地址、机器名称等。顶部的标签允许你查看系统信息，还可以编辑 MySQL 配置选项。要关闭 MySQL 服务器，右键点击任务栏上的聚光灯图标并选择相应的选项。只要 MySQL 服务器正在运行，你就可以通过控制窗口运行其他应用程序，例如 MySQL 监控器。
 
 在下一节中，你将学习如何手动管理 MySQL 并执行一些操作以熟悉该系统。
 
@@ -223,7 +196,7 @@ MySQL 进程现在将在后台运行。你现在可以连接 MySQL 并创建数�
 
 ![](img/7a81120f3fcfd17d264c4ace19b756f8_20_0.png)
 
-当 MySQL 监控器启动时，它会提供自己的提示符。在提示符 `mysql>` 处，你输入命令来创建表、解释表、插入数据、选择数据等。习惯使用分号 (;) 结束命令，因为它是一种常用的指令终止符，在 PHP 中同样使用。
+当 MySQL 监控器启动时，它会提供自己的提示符。在提示符 `mysql>` 处，你输入命令来创建表、解释表、插入数据、选择数据等。习惯使用分号 (`;`) 结束命令，因为它是一种常用的指令终止符，在 PHP 中同样使用。
 
 现在你已经连接到 MySQL 监控器，你需要告诉它要使用哪个数据库。
 
@@ -245,17 +218,15 @@ mysql>
 
 > **注意**：有关创建表的细节的更多信息，请参阅附录 D。“数据库规范化与 SQL 参考”。
 
-- 3. 在提示符处，输入 `create table test_table (test_id int, test_note text);` 并按回车。此语句创建了一个名为 test_table 的表。在表内部，它创建了一个类型为 (integer) 的列 test_id。它还创建了一个类型为 text 的列 test_note。
+- 3. 在提示符处，输入 `create table test_table (test_id int, test_note text);` 并按回车。此语句创建了一个名为 `test_table` 的表。在表内部，它创建了一个类型为 (integer) 的列 `test_id`。它还创建了一个类型为 text 的列 `test_note`。
 
 MySQL 监控器将响应 Query OK。它会告诉你影响了多少行。
-
-
-
 
 此命令简单地从 `test_table` 表中所有行的所有字段（这就是 `*` 的作用），并以格式良好的表格形式返回数据。MySQL Monitor器会显示返回了多少行，以及查询运行所需的时间。
 
 对结果进行简单的排序。尝试按 ID 编号对结果进行排序——从大到小优先。
-2.  在提示符处，输入 `select * from test_table order by test_id desc;` 并按回车。
+
+2. 在提示符处，输入 `select * from test_table order by test_id desc;` 并按回车。
 
 下一行显示 `test_id` 为 99 的行作为表的第一行。`desc` 代表降序。另一个是 `asc`，代表升序。升序是默认排序。
 
@@ -267,41 +238,44 @@ MySQL 监控器将响应 Query OK。它会告诉你影响了多少行。
 
 MySQL 推荐的方法是使用 RPM。有多个 RPM 包组成了一个完整的发行版，对于最小化安装，你需要：
 
-- MySQL-server-VERSION.i386.rpm——MySQL 服务器。
-- MySQL-client-VERSION.i386.rpm——标准的 MySQL 客户端程序。
+- `MySQL-server-VERSION.i386.rpm`——MySQL 服务器。
+- `MySQL-client-VERSION.i386.rpm`——标准的 MySQL 客户端程序。
 
 若要下载这些文件，请访问 MySQL 4.0 下载页面 http://www.mysql.com/downloads/mysql-4.0.html 并找到 linux x8 RPM Downloads（根据你的架构选择 IA64 或 AMD64）。当你点击包的下载链接时，将进入一个镜像站点页面。选择离你最近的镜像站点并下载文件。
 
 当文件下载到你的系统后，通过在提示符处输入以下内容执行最小化安装，将 `VERSION` 替换为你下载的文件相应的版本：
-`#prompt -i MySQL-server-VERSION.i386.rpm MySQL-client-VERSION.i386.rpm`
+
+```
+#prompt -i MySQL-server-VERSION.i386.rpm MySQL-client-VERSION.i386.rpm
+```
 
 如果 RPM 方法对你不适用，也可以从二进制发行版安装 MySQL，这需要 `gunzip` 和 `tar` 来提取和解包发行版。它还需要在系统上创建组和用户的权限。
 
 在第一系列命令中，你将添加一个组和一个用户，然后更新安装，如下所示：
 
-1.  在提示符处，输入 `groupadd`
-2.  在提示符处，输入 `useradd -g mysql mysql`
-3.  在提示符处，输入 `cd /usr/local/`
-4.  在提示符处，输入 `gunzip /path/to/mysql-standard-VERSION-OS.tar.gz | tar xvf -`
+1. 在提示符处，输入 `groupadd`
+2. 在提示符处，输入 `useradd -g mysql mysql`
+3. 在提示符处，输入 `cd /usr/local/`
+4. 在提示符处，输入 `gunzip /path/to/mysql-standard-VERSION-OS.tar.gz | tar xvf -`
 
 注意：你可以在任何目录下安装 MySQL。如果你没有像示例那样使用 `/usr/local/`，请确保适当修改后续命令。
-5.  要创建一个较短名称的链接，输入 `-s mysql-VERSION-OS`
-6.  通过输入 `cd mysql` 切换目录。
+
+5. 要创建一个较短名称的链接，输入 `-s mysql-VERSION-OS`
+6. 通过输入 `cd mysql` 切换目录。
 
 一旦发行包解压，REAME 和 INSTALL 文件将引导你完成你所选 MySQL 版本的剩余安装工作，接下来的命令序列将：
-1.  输入 `scripts/mysql_install_db` 来运行 MySQL 安装脚本。
-2.  输入 `-R root /usr/local` 更改 mysql 目录的所有者。
-3.  输入 `-R mysql /usr/local/mysql/data` 更改 mysql/data 目录的所有者。
-4.  输入 `chgrp -R mysql /usr/local/mysql` 更改 mysql 目录的组。
-5.  输入 `-R mysql /usr/local/mysql/bin` 更改 mysql/bin 目录的所有者。
+
+1. 输入 `scripts/mysql_install_db` 来运行 MySQL 安装脚本。
+2. 输入 `-R root /usr/local` 更改 mysql 目录的所有者。
+3. 输入 `-R mysql /usr/local/mysql/data` 更改 mysql/data 目录的所有者。
+4. 输入 `chgrp -R mysql /usr/local/mysql` 更改 mysql 目录的组。
+5. 输入 `-R mysql /usr/local/mysql/bin` 更改 mysql/bin 目录的所有者。
 
 如果在安装 MySQL 期间遇到任何问题，你应该首先查看 MySQL 手册中的“常见与错误”（Common and Errors）章节，地址为 http://www.mysql.com/doc/en/Problems.html。常见问题包括：
 
 - 权限不允许你使用 MySQL 守护进程。如果是这种情况，请确保已更改组和用户以匹配安装说明中的设置。
 - 如果在连接 MySQL 时看到 Access denied（拒绝访问），请确保使用正确的用户名和密码。
 - 如果看到 Can connect to server（可以连接到服务器），请确保使用正确的用户名和密码。
-
-
 
 7. 输入 `insert into test_table_values('99', 'Look Another note.');` 并按回车键来插入行。
 
@@ -315,19 +289,20 @@ SELECT 命令非常强大，当你使用 PHP 和 MySQL 工作时，你经常会�
 
 - 1. 在提示符处，输入 `select * from test_table;` 并按回车键。
 
-这条简单的命令从名为 test_table 的表中选择所有行的所有字段，并将数据以格式良好的表格形式返回到屏幕上。MySQL Monitor 会告诉你返回了多少行数据，以及查询运行了多长时间。
+这条简单的命令从名为 `test_table` 的表中选择所有行的所有字段，并将数据以格式良好的表格形式返回到屏幕上。MySQL Monitor 会告诉你返回了多少行数据，以及查询运行了多长时间。
 
 为结果添加一些排序。尝试按 ID 数字对结果进行排序——从大到小排序。
 
 - 2. 在提示符处，输入 `select * from test_table order by test_id desc;` 并按回车键。
 
-结果显示 test_id 为 99 的行是表格的第一行。命令中的 desc 代表 descending（降序）。另一个选项是 asc，代表 ascending（升序）。升序是默认顺序。
+结果显示 `test_id` 为 99 的行是表格的第一行。命令中的 `desc` 代表 descending（降序）。另一个选项是 `asc`，代表 ascending（升序）。升序是默认顺序。
 
 在下一章中，你将安装 Apache Web 服务器，并向开发动态数据库驱动的网站迈进一步！
 
 ## 第 2 章：安装 Apache
 
 ## 概述
+
 由于它是目前最流行的 Web 服务器，你可能认为 Apache 是一个复杂的软件，但它并不困难。在本章中，你将学习如何：
 
 - 在 Windows 或 Linux 上安装 Apache
@@ -346,11 +321,8 @@ SELECT 命令非常强大，当你使用 PHP 和 MySQL 工作时，你经常会�
 分发文件遵循命名规范，apache 后面跟着版本号，然后是 `-win32-x86-no_ssl.msi`。截至本文为止，当前版本为 2.0.49，因此本节全程使用的示例文件是 `apache_2.0.49-win32-x86-no_ssl.msi`。一旦你将安装文件下载到硬盘上，接下来的步骤将引导你进入安装向导：
 
 - 1. 双击名为 `apache_2.0.49-win32-x86-no_ssl.msi` 的文件。安装程序将启动，安装向导将开始。点击 Next（继续）。
-
 - 2. 阅读屏幕上的许可信息，选择 I accept（我接受）按钮，然后点击 Next。
-
 - 3. 阅读屏幕上的 Apache 通用信息，然后点击 Next。
-
 - 4. 下一个屏幕需要你填写有关服务器的详细信息：网络域名、服务器名称和管理员电子邮件。
 
 ### 服务器信息
@@ -364,12 +336,9 @@ SELECT 命令非常强大，当你使用 PHP 和 MySQL 工作时，你经常会�
 - 7. 将 Apache 作为服务运行。
 - 8. 点击 Finish（完成）完成安装。
 
-修改 ServerName 是对 Apache 配置文件最重要的更改，因为如果 ServerName 不正确，你将无法连接到 Apache。如果你不知道完整的机器名，可以使用 IP 地址。如果你使用静态 IP（即不会改变的 IP），将其作为 ServerName。如果你使用的是没有分配静态 IP 的拨号连接（即每次拨号到互联网服务供应商时 IP 都会变化），那么你每次拨号时都必须更改 httpd.conf 中的 IP 数字。
+修改 `ServerName` 是对 Apache 配置文件最重要的更改，因为如果 `ServerName` 不正确，你将无法连接到 Apache。如果你不知道完整的机器名，可以使用 IP 地址。如果你使用静态 IP（即不会改变的 IP），将其作为 `ServerName`。如果你使用的是没有分配静态 IP 的拨号连接（即每次拨号到互联网服务供应商时 IP 都会变化），那么你每次拨号时都必须更改 `httpd.conf` 中的 IP 数字。
 
-
-
-
-> 提示：此处描述的 ServerName 更改仅在你希望让外部世界的人连接到你的新服务器时才有效。如果你是唯一访问服务器的人，可以使用 IP 地址 127.0.0.1，Windows 将其识别为回环地址，也称为 localhost。然后你可以在 `httpd.conf` 中使用 localhost 或 IP 127.0.0.1 作为 ServerName。使用 IP 地址可能更可行，因为某些 Windows 机器不会自动知道 localhost 等同于 127.0.0.1。
+> 提示：此处描述的 `ServerName` 更改仅在你希望让外部世界的人连接到你的新服务器时才有效。如果你是唯一访问服务器的人，可以使用 IP 地址 127.0.0.1，Windows 将其识别为回环地址，也称为 localhost。然后你可以在 `httpd.conf` 中使用 localhost 或 IP 127.0.0.1 作为 `ServerName`。使用 IP 地址可能更可行，因为某些 Windows 机器不会自动知道 localhost 等同于 127.0.0.1。
 
 一旦对 `httpd.conf` 文件进行了修改，Apache 就准备好在你的机器上运行了。在下一节中，你将启动并连接到 Apache。
 
@@ -377,9 +346,9 @@ SELECT 命令非常强大，当你使用 PHP 和 MySQL 工作时，你经常会�
 
 要启动 Apache，请从 Windows 菜单选择 Program Files -> Apache HTTP Server 2.0.49 -> Another Apache Server -> Start。这将启动一个控制窗口，随后会自动关闭。Apache 将在后台运行。
 
-当服务器运行时，你可以通过网络浏览器连接到服务器。URL 将是你用作 ServerName 的任何内容——实际名称或 IP、localhost 还是 127.0.0.1。
+当服务器运行时，你可以通过网络浏览器连接到服务器。URL 将是你用作 `ServerName` 的任何内容——实际名称或 IP、localhost 还是 127.0.0.1。
 
-> 注意：记住，你可以通过 127.0.0.1 或本地名称连接到你的 Web 服务器。这假设你使用 127.0.0.1 作为 ServerName，如果不是，请在示例中将 127.0.0.1 替换为你的名称。
+> 注意：记住，你可以通过 127.0.0.1 或本地名称连接到你的 Web 服务器。这假设你使用 127.0.0.1 作为 `ServerName`，如果不是，请在示例中将 127.0.0.1 替换为你的名称。
 
 要最终测试安装情况，请在浏览器的地址栏输入 http://127.0.0.1/ 并按回车。你应该看到一个默认页面。
 
@@ -390,9 +359,10 @@ SELECT 命令非常强大，当你使用 PHP 和 MySQL 工作时，你经常会�
 > 此页面的出现是因为网站管理员更改了此 Web 服务器的配置。请礼地联系维护此服务器的服务部门。编写此管理员正在使用的 Web 服务器软件的 Apache 基金与维护此地无关，也无法解决配置问题。
 
 Apache 文档已包含在此发行包中。
+
 你可以自由地在支持 Apache 的 Web 服务器上使用此图片。感谢使用 Apache！
 
-此默认启动页来自 Apache 安装目录下的 `hdocs` 目录。你可以进入该目录并删除所有默认文件（如果需要的话），也可以保留它们。它们不会产生任何影响，但你最终会用自己的文件和子目录填充 hdocs 目录，因此为了整洁，你可能想删除它们。
+此默认启动页来自 Apache 安装目录下的 `hdocs` 目录。你可以进入该目录并删除所有默认文件（如果需要的话），也可以保留它们。它们不会产生任何影响，但你最终会用自己的文件和子目录填充 `hdocs` 目录，因此为了整洁，你可能想删除它们。
 
 继续阅读下一章，在其中你安装 PHP 并对 Apache 配置文件进行一些更改，为操作做好准备。
 
@@ -415,10 +385,6 @@ Apache 文档已包含在此发行包中。
 - 7. 安装软件：`make install`。
 - 8. 通过打开浏览器并导航到 http://127.0.0.1/ 来验证安装。
 
-
-
-
-
 ## 第 3 章：安装 PHP
 
 ## 概述
@@ -436,18 +402,19 @@ Apache 文档已包含在此发行包中。
 > 注意，如果你打算配合 Microsoft IIS、Microsoft PWS 或 Xtami Web 服务器使用 PHP，则有一个 Windows 安装程序。这是基于使用 Apache 作为 Web 服务器的建议；如果要使用其他方法，请仔细阅读你所用软件中的安装说明。
 
 下载 Windows 版 PHP 二进制文件，请访问 PHP 网站的下载页面：
+
 http://www.php.net/downloads.php
 
 1. 在 Windows binaries 部分，点击 PHP 5.x zip 包的链接，其中 x.x 代表版本号。Windows 的当前版本为 5.0.RC1，任何额外的安装说明都应基于此版本。后续版本请使用相同的安装程序；只需根据需要替换新的版本名称即可。
-2. 下载到系统后，使用你喜欢的压缩程序（如 WinZip 或 WinRAR）双击 php-5.0.RC1-Win32.zip 文件。
-3. 将文件提取到硬盘根目录，创建一个名为 C:\php 的目录。
+2. 下载到系统后，使用你喜欢的压缩程序（如 WinZip 或 WinRAR）双击 `php-5.0.RC1-Win32.zip` 文件。
+3. 将文件提取到硬盘根目录，创建一个名为 `C:\php` 的目录。
 
 你现在已经有了所有基础的 PHP 指令；你只需要对它们进行一些调整。
 
-> 注意 如果使用 Windows（使用资源管理器方法更便于验证系统），请进入 C:\php 目录。
+> 注意 如果使用 Windows（使用资源管理器方法更便于验证系统），请进入 `C:\php` 目录。
 
-2. 将 `php-ini-dist` 文件重命名为 `php.ini`，并将此文件移动到 C:\WINDOWS、C:\WINNT，或者你通常放置 .ini 文件的地方。
-3. 将 `php5ts.dll` 移动到 C:\WINDOWS\SYSTEM，或者你通常放置 .dll 文件的地方。
+2. 将 `php-ini-dist` 文件重命名为 `php.ini`，并将此文件移动到 `C:\WINDOWS`、`C:\WINNT`，或者你通常放置 `.ini` 文件的地方。
+3. 将 `php5ts.dll` 移动到 `C:\WINDOWS\SYSTEM`，或者你通常放置 `.dll` 文件的地方。
 
 要让基础版本的 PHP 与 Apache 协同工作，你需要对 Apache 配置文件进行一些细微修改。
 
@@ -459,21 +426,28 @@ http://www.php.net/downloads.php
 
 ## Apache 模块 PHP
 
-要配置模块版本，你必须修改 httpd.conf 文件，它位于 Apache 安装目录下的 conf 目录中。
+要配置模块版本，你必须修改 `httpd.conf` 文件，它位于 Apache 安装目录下的 `conf` 目录中。
 
 1. 选择 Apache HTTP Server 2.0.49 编辑 Apache 配置。
 2. 找到类似于图中所示的章节。
 3. 在该部分末尾添加代码：
+
+```
 LoadModule php5_module C:/php/php2.dll
+```
 
-接下来，你需要在 httpd.conf 中添加指令来定义 PHP 文件扩展名。
+接下来，你需要在 `httpd.conf` 中添加指令来定义 PHP 文件扩展名。
 
-常见的扩展名是 .php 和 .html，但你可以使用任何喜欢的扩展。
+常见的扩展名是 `.php` 和 `.html`，但你可以使用任何喜欢的扩展。
 
 4. 找到类似于图中所示的章节。
 5. 添加以下行：
+
+```
 AddType application/x-httpd-php .php
-6. 保存并关闭 httpd.conf 文件。
+```
+
+6. 保存并关闭 `httpd.conf` 文件。
 
 ```
 # AddType 允许你添加或覆盖 MIME 配置
@@ -488,43 +462,52 @@ AddType application/x-httpd-php .php
 # AddType application/x-gzip .gz
 ```
 
-此修改告诉 Apache 请求扩展名为 .php 或 .html 的文件。Apache 在向浏览器输出任何内容之前，应该调用模块版本的 PHP。
+此修改告诉 Apache 请求扩展名为 `.php` 或 `.html` 的文件。Apache 在向浏览器输出任何内容之前，应该调用模块版本的 PHP。
 
 ## 测试 PHP 安装
 
-现在，你已经对 httpd.conf 文件完成了所有修改，你可以使用第 2 章中学到的方法重启 Apache。为了测试 Apache 和 PHP 是否正常工作，你需要创建一个简单的 PHP 脚本来测试安装。PHP 脚本和其他文件（HTML、图像等）应该放置在 Web 服务器的文档根。对于 Apache 来说，文档根就是 Apache 目录。
+现在，你已经对 `httpd.conf` 文件完成了所有修改，你可以使用第 2 章中学到的方法重启 Apache。为了测试 Apache 和 PHP 是否正常工作，你需要创建一个简单的 PHP 脚本来测试安装。PHP 脚本和其他文件（HTML、图像等）应该放置在 Web 服务器的文档根。对于 Apache 来说，文档根就是 Apache 目录。
 
 1. 在文本编辑器中打开新文件并输入：
+
+```php
 <?php phpinfo(); ?>
+```
 
-> 注意 将文件保存为 index.php 并将其放置在 Web 服务器的文档根中。然后打开浏览器访问 http://localhost/index.php。如果你看到了 PHP 信息页面，说明安装成功了。
+> 注意 将文件保存为 `index.php` 并将其放置在 Web 服务器的文档根中。然后打开浏览器访问 http://localhost/index.php。如果你看到了 PHP 信息页面，说明安装成功了。
 
-
-
-
-
+```
 # AddType 允许你为特定文件类型添加或覆盖 mime.types MIME 配置文件。
 # AddType application/x-tar .tgz
+```
 
 - 4. 在这些代码行中添加以下内容：
-   AddType application/x-httpd-php .php
 
-- 5. 保存 httpd.conf。
+```
+AddType application/x-httpd-php .php
+```
+
+- 5. 保存 `httpd.conf`。
 
 此修改告诉 Apache，当请求任何扩展名为 `.php` 或 `.shtml` 的文件时，Apache 应该先将该文件通过 PHP 解析器运行，然后再向你的浏览器发送输出。
-一旦对 httpd.conf 完成了这些更改，你就可以启动 Apache 和你的 PHP 安装了。
+
+一旦对 `httpd.conf` 完成了这些更改，你就可以启动 Apache 和你的 PHP 安装了。
 
 ## 测试 PHP 安装
 
-现在你已经修改了 httpd.conf，可以使用你在第 2 章中学习的方法重启 Apache。为了测试 Apache 和 PHP 是否能够正常协同工作，你将创建一个简单的 PHP 脚本来测试安装。PHP 脚本和其他文件（HTML、图像等）应该位于 Web 服务器的文档根目录（document root）中。对于 Apache 来说，文档根目录是 Apache 安装下的 hdocs 目录。
+现在你已经修改了 `httpd.conf`，可以使用你在第 2 章中学习的方法重启 Apache。为了测试 Apache 和 PHP 是否能够正常协同工作，你将创建一个简单的 PHP 脚本来测试安装。PHP 脚本和其他文件（HTML、图像等）应该位于 Web 服务器的文档根目录（document root）中。对于 Apache 来说，文档根目录是 Apache 安装下的 `hdocs` 目录。
 
 - 1. 在目录中创建一个新文件并按照以下内容编辑代码：
-   <?php phpinfo(); ?>
-- 2. 将文件保存为 phpinfo.php。
+
+```php
+<?php phpinfo(); ?>
+```
+
+- 2. 将文件保存为 `phpinfo.php`。
 - 3. 将此文件放在 Web 服务器的文档根目录中。
 - 4. 打开浏览器，输入 http://127.0.0.1/phpinfo.php 并按回车。
 
-phpinfo.php 的输出应该显示一个系统和环境信息页面。当你尝试了解可用功能时，这非常有帮助。有关在你的安装中配置和构建附加功能的更多信息，请参见附录 A，“附加配置”。
+`phpinfo.php` 的输出应该显示一个系统和环境信息页面。当你尝试了解可用功能时，这非常有帮助。有关在你的安装中配置和构建附加功能的更多信息，请参见附录 A，“附加配置”。
 
 # 第二部分：编码绝对基础
 
@@ -544,7 +527,7 @@ phpinfo.php 的输出应该显示一个系统和环境信息页面。当你尝�
 
 ### PHP 是如何解析的
 
-假设你有一个文件，其中包含一些 HTML 和一些 PHP 代码。以下是工作原理，假设一个扩展名为 .php 的文档不一定必须是 .php 文件，但它必须是 Apache 能够理解并解析为 PHP 的扩展名（这是你在第 2 章“安装 Apache”中学习过的）。
+假设你有一个文件，其中包含一些 HTML 和一些 PHP 代码。以下是工作原理，假设一个扩展名为 `.php` 的文档不一定必须是 `.php` 文件，但它必须是 Apache 能够理解并解析为 PHP 的扩展名（这是你在第 2 章“安装 Apache”中学习过的）。
 
 - 1. Web 服务器说：“嘿！有人想要一个 PHP 文件，这意味着这是一个需要解析的文件”，并将请求发送给 PHP 解析器。
 - 2. PHP 解析器找到被请求的代码，执行该代码并将生成的输出（如果有的话）放置在原代码所在的位置。
@@ -559,34 +542,42 @@ PHP 解析器识别几种类型的 PHP 起始和结束标签。它会尝试执�
 
 | 起始标签 | 结束标签 |
 |---|---|
-| <?php | ?> |
-| <? | ?> |
-| <script language="php"> | </script> |
+| `<?php` | `?>` |
+| `<?` | `?>` |
+| `<script language="php">` | `</script>` |
 
 接下来，你将在脚本中使用所有标签集，它们将无错误地执行。
 
 - 1. 在文本编辑器中打开一个新文件。
 - 2. 输入以下代码，它使用了第一种标签类型：
-   <?php
-   echo "<P>This is a test using the first tag type.</P>";
-   ?>
+
+```php
+<?php
+echo "<P>This is a test using the first tag type.</P>";
+?>
+```
+
 - 3. 输入以下代码，它使用了第二种标签类型：
-   <?php
-   echo "<P>This is a test using the second tag type.</P>";
-   ?>
+
+```php
+<?php
+echo "<P>This is a test using the second tag type.</P>";
+?>
+```
+
 - 4. 输入以下代码，它使用了第三种标签类型：
-   <script language="php">
-   echo "<P>This is a test using the third tag type.</P>";
-   </script>
-- 5. 将文件保存为 phptags.php。
+
+```php
+<script language="php">
+echo "<P>This is a test using the third tag type.</P>";
+</script>
+```
+
+- 5. 将文件保存为 `phptags.php`。
 - 6. 将此文件放在 Web 服务器的文档根目录中。
 - 7. 打开浏览器并输入 http://127.0.0.1/phptags.php。
 
 注意：在执行本书中的示例时，如果你在外部 Web 服务器上使用 PHP，请用该服务器的域名替换 URL 中的 127.0.0.1。在你的浏览器中，你应该能看到脚本的结果。
-
-
-
-
 
 通过修复第 7 行，PHP 解析器就可以处理该文件，其余输出将成功完成。请注意分号等，以及你将在[下一节]中学习的引号等内容，以避免此类及其他错误。
 
@@ -597,7 +588,9 @@ PHP 解析器识别几种类型的 PHP 起始和结束标签。它会尝试执�
 以下步骤展示了当代码未转义时会发生什么，以及如何修复它。
 
 - 1. 在文本编辑器中打开一个新文件。
+
 2. 输入以下 HTML：
+
 ```html
 <html>
 <head>
@@ -605,17 +598,23 @@ PHP 解析器识别几种类型的 PHP 起始和结束标签。它会尝试执�
 </head>
 <body>
 ```
+
 3. 输入以下 PHP 代码：
+
 ```php
 <?php
 echo "<I think this is really \cool!"</P>";
 ?>
 ```
+
 4. 添加一些 HTML 内容以确保文档有效。
+
 5. 将文件保存为 `errorscript.php`。
+
 6. 将此文件放在你 Web 服务器的文档根目录下。
 
 另一个解析错误！看看这段 PHP 代码：
+
 ```php
 echo "<I think this is
 really \cool!"</P>";
@@ -624,8 +623,11 @@ really \cool!"</P>";
 因为你在另一组引号内包含了一组引号，所以内部的组必须进行转义。
 
 - 此错误也有简单的修复方法：
+
 1. 打开 `errorscript.php` 文件。
+
 2. 在第 9 行，通过在每个引号前放置反斜杠来转义内部引号：
+
 ```php
 echo "<P think this is
 really \\cool!"</P>";
@@ -633,6 +635,7 @@ really \\cool!"</P>";
 
 - 3. 保存文件。
 - 4. 将此文件放在你 Web 服务器的文档根目录下。
+
 5. 打开 浏览器并输入 `http://127.0.0.1/errorscript2.php`。
 
 现在内部引号已经转义，PHP 解析器将直接跳过它们，知道这些字符应该是被打印的且没有特殊含义。在下一节中，你将学习一种良好的编程实践：对代码进行注释，这样当其他人需要编辑它时，就能知道里面到底在做什么。
@@ -655,7 +658,9 @@ PHP 使用注释，PHP 解析器会忽略它们。PHP 注释通常以双斜杠�
 
 但你可以使用其他类型的注释，例如：
 
-- # This is shell-style style comment
+```
+# This is shell-style style comment
+```
 
 以及
 
@@ -667,7 +672,9 @@ onto two lines */
 创建一个充满注释的脚本，这样你就可以看到它们是如何被忽略的。是的，我是在让你写一个完全什么都不执行的脚本！
 
 - 1. 在文本编辑器中打开一个新文件。
+
 2. 输入以下 HTML：
+
 ```html
 <html>
 <head>
@@ -677,15 +684,20 @@ onto two lines */
 <!-- This is an HTML comment. -->
 </body>
 ```
+
 3. 输入以下 PHP 代码：
+
 ```php
 // This is a simple PHP comment.
 // This is a C-style, multiline comment. You can make this as
 long as you'd like.
 # Used to shells? Use this kind of comment.?
 ```
+
 4. 添加一些 HTML 内容以确保文档有效：
+
 5. 将文件保存为 `comments.php` 并放在你 Web 服务器的根目录下。
+
 6. 打开浏览器并输入 `http://127.0.0.1/comments.php`。
 
 你应该在浏览器中什么都看不见，因为你打印了一个会被浏览器忽略的 HTML 注释。由于 PHP 解析器忽略了注释，且 PHP 块没有包含任何实际命令，因此没有输出需要显示。如果你在浏览器中查看此文档的源代码，请注意只有 HTML 注释是可见。尽管 PHP 代码全是注释，但它们仍然被解析了，因此对用户不可见。
@@ -712,16 +724,14 @@ long as you'd like.
 
 - 整数：不带小数的整数。例如 `1`、`345` 和 `99276`。你也可以使用八进制和十六进制表示：八进制 `123` 是十进制 `83`，十六进制 `0x12` 是十进制 `18`。
 - 浮点数（float 或 double）：带小数的数字。例如 `1.5`、`87.3446` 和 `0.888992`。
-- 字符串：位于双引号 (") 或单引号 ('') 内部的文本和数字信息。
+- 字符串：位于双引号 (`"`) 或单引号 (`''`) 内部的文本和数字信息。
 
 ## 打印变量
 
 创建一个简单的脚本，为变量赋值并将其打印到屏幕上。
 
+5. 为每个变量添加一个 `echo` 语句：
 
-
-
-5. 为每个变量添加一个 echo 语句：
 ```php
 echo "<integer: $intVar</p>";
 echo "<float: $floatVar</p>";
@@ -729,6 +739,7 @@ echo "<string: $stringVar</p>";
 ```
 
 6. 关闭你的 PHP 块并添加更多 HTML 内容以确保文档有效：
+
 ```php
 ?>
 </body>
@@ -754,6 +765,7 @@ echo "<string: $stringVar</p>";
 常量是一个在脚本执行期间不能改变的值标识符。一旦常量被赋值，它在常量的生命周期内将保持不变。常量可以是用户定义的，也可以使用 PHP 提供的一些预定义常量。与简单变量不同，常量名称前没有美元符号，并且通常使用大写字母以区别于标量变量。接下来，你将使用自定义类型。
 
 1. 在文本编辑器中打开一个新文件并开启一个 PHP 块：
+
 ```php
 2. 用于定义常量的函数是 `define()`，它需要常量的名称和你想给它的值。在这里你定义了一个名为 `MYCONSTANT` 的常量，值为 "This is a test of defining constants."。
 define("MYCONSTANT", "This is a test of defining constants.");
@@ -777,26 +789,36 @@ echo MYCONSTANT;
 让我们测试一下这些常量：
 
 1. 在编辑器中打开一个新文件并开启一个 PHP 块：
+
 2. 使用 `echo` 语句显示一个介绍字符串，并将 `__FILE__` 常量连接到它的末尾：
+
 ```php
 echo "<p>This file is " . __FILE__ . "</p>";
 ```
+
 注意：使用连接符将一个字符串添加到另一个字符串的末尾，创建一个新字符串。
 
 3. 使用 `echo` 语句显示一个介绍字符串，并将 `__LINE__` 常量连接到它的末尾：
+
 ```php
 echo "<p>This is line number " . __LINE__ . "</p>";
 ```
+
 4. 使用 `echo` 语句显示一个介绍字符串，并将 `__PHP_VERSION` 常量连接到它的末尾：
+
 ```php
 echo "<p>I am using " . __PHP_VERSION . "</p>";
 ```
+
 5. 使用 `echo` 语句显示一个介绍字符串，并将 `__PHP_OS` 常量连接到它的末尾。同时也关闭 PHP 块：
+
 ```php
 echo "<p>This test is being run on " . __PHP_OS . "</p>";
 ?>
 ```
+
 6. 将文件保存为 `constants2.php`，并将此文件放在 Web 服务器的文档根目录下。
+
 7. 打开浏览器并输入 `http://127.0.0.1/constants2.php`。
 
 ## 什么是运算符？
@@ -825,6 +847,7 @@ echo "<p>This test is being run on " . __PHP_OS . "</p>";
 创建一个简单的脚本来展示所有赋值运算符的作用。该脚本将为一个变量分配原始值，并在执行过程中更改该值，同时将结果打印到屏幕上。
 
 1. 在文本编辑器中打开新文件并输入以下 HTML：
+
 ```html
 <html>
 <head>
@@ -832,37 +855,44 @@ echo "<p>This test is being run on " . __PHP_OS . "</p>";
 </head>
 <body>
 ```
+
 2. 创建一个 PHP 块。创建一个值为 100 的变量并打印它：
+
 ```php
 $origVar = 100;
 echo "<p>Original value is $origVar</p>";
 ```
+
 3. 将该值加上 30 并打印它：
+
 ```php
 $origVar += 25;
 echo "<p>Added a value, now it's $origVar</p>";
 ```
+
 4. 从该值中减去部分并打印它：
+
 ```php
 $origVar -= 12;
+echo "<p>Subtracted a value, now it's $OrigVar</p>";
 ```
 
-
-
-
-
-echo "<p>Subtracted a value, now it's $OrigVar</p>";
-
 5. 拼接字符串并打印它：
+
+```php
 $OrigVar .= "chickens";
 echo "<p>Final answer: $OrigVar</p>";
+```
 
 6. 关闭你的 PHP 块并向文档添加更多 HTML 是：
+
+```php
 ?>
 </BODY>
 </html>
+```
 
-7. 将文件保存为 assigncript.php并将此文件放置在服务器的文档根目录下。
+7. 将文件保存为 `assigncript.php` 并将此文件放置在服务器的文档根目录下。
 
 ![](img/7a81120f3fcfd17d264c4ace19b756f8_66_0.png)
 
@@ -880,11 +910,11 @@ echo "<p>Final answer: $OrigVar</p>";
 
 | 运算符 | 示例 | 操作 |
 |---|---|---|
-| + | Sb = Sa + 3; | 加值 |
-| - | Sb = Sa - 3; | 减值 |
-| * | Sb = Sa * 3; | 乘值 |
-| / | Sb = Sa / 3; | 除值 |
-| % | Sb = Sa % 3; | 返回模数，或余数 |
+| `+` | `Sb = Sa + 3;` | 加值 |
+| `-` | `Sb = Sa - 3;` | 减值 |
+| `*` | `Sb = Sa * 3;` | 乘值 |
+| `/` | `Sb = Sa / 3;` | 除值 |
+| `%` | `Sb = Sa % 3;` | 返回模数，或余数 |
 
 创建一个简单的脚本来显示所有这些算术运算符是如何工作的。此脚本将原始值分配两个变量，执行数学运算并将结果打印到屏幕上。
 
@@ -905,6 +935,7 @@ Arithmetic Operators</TITLE>
 ```
 
 - 1. 在你的文本编辑器中打开新文件并输入以下 HTML：
+
 ```html
 <html
 <HEAD>
@@ -914,51 +945,59 @@ Arithmetic Operators</TITLE>
 ```
 
 - 2. 开始一个 PHP 脚本，在 PHP 块中创建两个变量；打印值：
+
 ```php
 $a = 85;
 $b = 24;
 echo "<p>Original value of $a and $b is $c</p>";
 ```
-注意：如果你转义了美元符号 ($)，它将打印出来而不是被解释为变量。
+
+注意：如果你转义了美元符号 (`$`)，它将打印出来而不是被解释为变量。
 
 - 3. 将两个值相加并打印结果：
+
 ```php
 $c = $a + $b;
 echo "<p>Added $a and $b got $c</p>";
 ```
 
 - 4. 减去两个值并打印结果：
+
 ```php
 $c = $a - $b;
 echo "<p>Subtracted $b from $a and got $c</p>";
 ```
 
 - 5. 将两个值相乘并打印结果：
+
 ```php
 $c = $a * $b;
 echo "<p>Multiplied $a and $b and got $c</p>";
 ```
 
 - 6. 将两个值相除并打印结果：
+
 ```php
 $c = $a / $b;
 echo "<p>Provided $a by $b and got $c</p>";
 ```
 
 - 7. 检查两个值的模并打印结果：
+
 ```php
 $c = $a % $b;
 echo "<p>The modulus of $a and $b is $c</p>";
 ```
 
 - 8. 关闭你的 PHP 块并添加更多 HTML 以使文档有效：
+
 ```php
 ?>
 </body>
 </html>
 ```
 
-- 9. 将文件保存为 arithmeticscript.php并将此文件放置在 Web 服务器的文档根目录下。
+- 9. 将文件保存为 `arithmeticscript.php` 并将此文件放置在 Web 服务器的文档根目录下。
 
 - 10. 打开你的网络浏览器并输入 http://127.0.0.1/arithmeticscript.php。
 
@@ -976,18 +1015,19 @@ echo "<p>The modulus of $a and $b is $c</p>";
 
 | 运算符 | 定义 |
 | --- | --- |
-| == | 等于 |
-| != | 不等于 |
-| > | 大于 |
-| < | 小于 |
-| >= | 大于或等于 |
-| <= | 小于或等于 |
+| `==` | 等于 |
+| `!=` | 不等于 |
+| `>` | 大于 |
+| `<` | 小于 |
+| `>=` | 大于或等于 |
+| `<=` | 小于或等于 |
 
-任何这些比较的结果都是真 (true) 或假 (false)。这并不有趣，但你可以使用 if...else 等控制语句根据结果来执行特定任务。
+任何这些比较的结果都是真 (`true`) 或假 (`false`)。这并不有趣，但你可以使用 `if...else` 等控制语句根据结果来执行特定任务。
 
-创建一个简单的脚本来显示比较的结果，使用 if...else 语句将其打印到屏幕上。
+创建一个简单的脚本来显示比较的结果，使用 `if...else` 语句将其打印到屏幕上。
 
 - 1. 在你的文本编辑器中打开一个新文件并输入以下 HTML：
+
 ```html
 <html>
 <HEAD>
@@ -999,11 +1039,13 @@ $b = 15;
 ```
 
 - 2. 开始一个 PHP 块，创建两个带有值的变量，打印值：
+
 ```php
 echo "<p>Original value of $a and $b is $b</p>";
 ```
 
-- 3. 使用 if...else 语句测试 $a 是否等于 $b。根据答案（真或假），其中一个 echo 语句将打印：
+- 3. 使用 `if...else` 语句测试 `$a` 是否等于 `$b`。根据答案（真或假），其中一个 `echo` 语句将打印：
+
 ```php
 if ($a == $b) {
     echo "<p>TEST 1: $a is not equal to $b</p>";
@@ -1011,9 +1053,11 @@ if ($a == $b) {
     echo "<p>$a equals $b</p>";
 }
 ```
+
 注意：条件表达式包含在括号中。
 
-- 4. 使用 if...else 语句测试 $a 是否不等于 $b。根据答案（真或假），其中一个 echo 语句将打印：
+- 4. 使用 `if...else` 语句测试 `$a` 是否不等于 `$b`。根据答案（真或假），其中一个 `echo` 语句将打印：
+
 ```php
 if ($a != $b) {
     echo "<p>TEST 2: $a is not equal to $b</p>";
@@ -1021,9 +1065,11 @@ if ($a != $b) {
     echo "<p>TEST 2: $a equal to $b</p>";
 }
 ```
+
 注意：大括号分隔语句块。
 
-- 5. 使用 if...else 语句测试 $a 是否大于 $b。根据答案（真或假），其中一个 echo 语句将打印：
+- 5. 使用 `if...else` 语句测试 `$a` 是否大于 `$b`。根据答案（真或假），其中一个 `echo` 语句将打印：
+
 ```php
 if ($a > $b) {
     echo "<p>TEST 3: $a is greater than $b</p>";
@@ -1032,7 +1078,8 @@ if ($a > $b) {
 }
 ```
 
-- 6. 使用 if...else 语句测试 $a 是否小于 $b。根据答案（真或假），其中一个 echo 语句将打印：
+- 6. 使用 `if...else` 语句测试 `$a` 是否小于 `$b`。根据答案（真或假），其中一个 `echo` 语句将打印：
+
 ```php
 if ($a < $b) {
     echo "<p>TEST 4: $a is less than $b</p>";
@@ -1041,7 +1088,8 @@ if ($a < $b) {
 }
 ```
 
-- 7. 使用 if...else 语句测试 $a 是否大于或等于 $b。根据答案（真或假），其中一个 echo 语句将打印：
+- 7. 使用 `if...else` 语句测试 `$a` 是否大于或等于 `$b`。根据答案（真或假），其中一个 `echo` 语句将打印：
+
 ```php
 if ($a >= $b) {
     echo "<p>TEST 5: $a is greater than or equal to $b</p>";
@@ -1050,7 +1098,8 @@ if ($a >= $b) {
 }
 ```
 
-- 8. 在 if...else 语句内测试 $a 是否小于或等于 $b。根据答案（真或假），其中一个 echo 语句将打印：
+- 8. 在 `if...else` 语句内测试 `$a` 是否小于或等于 `$b`。根据答案（真或假），其中一个 `echo` 语句将打印：
+
 ```php
 if ($a <= $b) {
     echo "<p>$a is less than or equal to $b</p>";
@@ -1060,13 +1109,14 @@ if ($a <= $b) {
 ```
 
 - 9. 关闭你的 PHP 块并添加更多 HTML 以使文档有效：
+
 ```php
 ?>
 </body>
 </html>
 ```
 
-- 10. 将文件保存为 comparisons.php，并将此文件放置在服务器的文档根目录下。
+- 10. 将文件保存为 `comparisons.php`，并将此文件放置在服务器的文档根目录下。
 
 - 11. 打开你的网络浏览器并输入 http://127.0.0.1/comparisons.php。
 
@@ -1076,11 +1126,12 @@ if ($a <= $b) {
 
 ## 逻辑运算符
 
-逻辑运算符允许你确定条件的状态（例如前一节中的比较）。在 if 或 while 语句的上下文中，逻辑运算符根据条件是真是假来执行某些代码。
+逻辑运算符允许你确定条件的状态（例如前一节中的比较）。在 `if` 或 `while` 语句的上下文中，逻辑运算符根据条件是真是假来执行某些代码。
 
-现在，重点关注 &&（和）和 ||（或）运算符来判断几次比较的有效性。
+现在，重点关注 `&&`（和）和 `||`（或）运算符来判断几次比较的有效性。
 
 - 1. 在你的文本编辑器中打开一个新文件并输入以下 HTML：
+
 ```html
 <html>
 <HEAD>
@@ -1090,13 +1141,15 @@ if ($a <= $b) {
 ```
 
 - 2. 开始一个 PHP 块并创建两个带有值的变量。此脚本中的比较基于这两个变量：
+
 ```php
 <?php
 $degrees = 95;
 $hot = "yes";
 ```
 
-- 3. 使用 if...else 语句测试 $degrees 是否大于 100 或 $hot 的值是否为 "yes"。根据两个比较的结果，echo 语句将打印：
+- 3. 使用 `if...else` 语句测试 `$degrees` 是否大于 100 或 `$hot` 的值是否为 "yes"。根据两个比较的结果，`echo` 语句将打印：
+
 ```php
 if ($degrees > 100 || $hot == "yes") {
   echo "<p>TEST 1: It's really</p>";
@@ -1104,9 +1157,11 @@ if ($degrees > 100 || $hot == "yes") {
   echo "<p>TEST 2: It's bearable.</p>";
 }
 ```
+
 注意：因为这个条件表达式实际上是由两个较小的条件表达式组成的，所以额外有一层括号。
 
-- 4. 重复步骤 3 中相同的 if...else 语句，但将运算符从 || 更改为 &&：
+- 4. 重复步骤 3 中相同的 `if...else` 语句，但将运算符从 `||` 更改为 `&&`：
+
 ```php
 if ($degrees > 100 && $hot == "yes") {
   echo "<p>TEST 2: It's really</p>";
@@ -1116,23 +1171,20 @@ if ($degrees > 100 && $hot == "yes") {
 ```
 
 - 5. 关闭你的 PHP 块并添加更多 HTML 以使文档为：
+
 ```php
 ?>
 </body>
 </html>
 ```
 
-- 6. 将文件命名为 logicalscript.php，并将此文件放置在 Web 服务器的根目录下。
+- 6. 将文件命名为 `logicalscript.php`，并将此文件放置在 Web 服务器的根目录下。
 
 - 7. 打开你的浏览器并输入 http://127.0.0.1/logicalscript.php。
 
 ![](img/7a81120f3fcfd17d264c4ace19b756f8_72_0.png)
 
-与每次比较相关的文本消息都打印到了屏幕上。在第一次测试中，只需要一个表达式为真，这通过 $hot 的值为 "yes" 满足了。在第二次测试中，两个表达式都必须为真，但它们并不是；$degrees 的值为 95，并不大于 100，即使 $hot 的值为 "yes"。在这种情况下，显示了第二条消息。
-
-
-
-
+与每次比较相关的文本消息都打印到了屏幕上。在第一次测试中，只需要一个表达式为真，这通过 `$hot` 的值为 "yes" 满足了。在第二次测试中，两个表达式都必须为真，但它们并不是；`$degrees` 的值为 95，并不大于 100，即使 `$hot` 的值为 "yes"。在这种情况下，显示了第二条消息。
 
 PHP 中使用了许多其他类型的运算符。它们将在书中出现的地方陆续进行解释。本章列出的运算符将为你为使用变量和运算符的基础打下坚实基础。在下一章中，你将利用新学到的变量和运算符知识来构建比目前所解释的更具趣味性的脚本。
 
@@ -1154,7 +1206,10 @@ HTML 表单至少包含以下元素：
 - 一个提交按钮 (submit button)
 
 在你的 HTML 代码中，表单的第一行看起来如下：
-`<FORM METHOD="post" ACTION="yourscript.php">`
+
+```html
+<FORM METHOD="post" ACTION="yourscript.php">
+```
 
 当你点击 HTML 表单中的提交按钮时，变量将通过指定的 `METHOD` 发送到由 `ACTION` 指定脚本。方法可以是 `POST` 或 `GET`。从表单传递到 PHP 脚本的变量将存放在全局变量 `$_POST` 或 `$_GET` 中，取决于所使用的方法。下一节你将看到通过创建一个根据输入执行计算的 HTML 表单和 PHP 脚本来了解它是如何工作的。
 
@@ -1163,7 +1218,9 @@ HTML 表单至少包含以下元素：
 在本节中，你将为计算脚本创建一个前端。该表单将包含两个输入字段和一个用于选择计算类型的单选框按钮。
 
 1. 在文本编辑器中打开一个新文件。
+
 2. 输入以下 HTML：
+
 ```html
 <html>
 <head>
@@ -1171,23 +1228,41 @@ HTML 表单至少包含以下元素：
 </head>
 <body>
 ```
+
 3. 开始你的表单。假设方法为 `POST`，动作是一个名为 `calculate.php` 的脚本：
+
 ```html
 <FORM METHOD="post" ACTION="calculate.php">
 ```
+
 4. 为第一个值创建一个输入字段，并带有一个文本标签：
-`<p>Value 1: <input TYPE="text" NAME="val1" SIZE=10></p>`
+
+```html
+<p>Value 1: <input TYPE="text" NAME="val1" SIZE=10></p>
+```
+
 5. 为第二个值创建一个输入字段，并带有一个文本标签：
-`<p>Value 2: <input TYPE="text" NAME="val2" SIZE=10></p>`
+
+```html
+<p>Value 2: <input TYPE="text" NAME="val2" SIZE=10></p>
+```
+
 6. 添加一个提交按钮：
-`<p><input TYPE="submit" NAME="submit" VALUE="Calculate"></p>`
+
+```html
+<p><input TYPE="submit" NAME="submit" VALUE="Calculate"></p>
+```
+
 7. 关闭你的表单并添加更多 HTML 以使文档有效：
+
 ```html
 </form>
 </body>
 </html>
 ```
+
 8. 将文件保存为 `calculate_form.html`，并将此文件放置在 Web 服务器的文档根目录下。
+
 9. 打开你的网络浏览器并输入 `http://127.0.0.1/calculate_form.html`。
 
 你将看到一个包含 Value 1 和 Value 2 字段以及一个 Calculate 按钮的表单。花一点时间检查这个 HTML 表单，理解变量将是如何获取命名的。
@@ -1197,7 +1272,9 @@ HTML 表单至少包含以下元素：
 还有最后一个项目需要添加：一系列单选框，用于确定在两个值上要执行的计算类型。
 
 - 在文本编辑器中打开 `calculate_form.html`。
+
 在提交按钮之前添加此代码块：
+
 ```html
 <Calculation><br>
 <INPUT TYPE="radio" NAME="calc" VALUE="add"> add<br>
@@ -1206,7 +1283,9 @@ HTML 表单至少包含以下元素：
 <INPUT TYPE="radio" NAME="calc" VALUE="divide"> divide</br>
 </Calculation>
 ```
+
 保存文件并将其放置在文档根目录。
+
 打开你的浏览器并输入 `http://127.0.0.1/calculate_form.html`。
 
 你将看到一个包含 Value 1 和 Value 2 字段以及一个 Calculate 按钮的表单。
@@ -1218,7 +1297,9 @@ HTML 表单至少包含以下元素：
 在本节中，你将创建一个计算脚本的后端。该脚本将根据输入执行计算。
 
 1. 在文本编辑器中打开一个新文件。
+
 2. 输入以下 PHP：
+
 ```php
 <?php
 if (isset($_POST['val1']) && isset($_POST['val2'])) {
@@ -1247,14 +1328,14 @@ if (isset($_POST['val1']) && isset($_POST['val2'])) {
 }
 ?>
 ```
+
 3. 将文件保存为 `calculate.php`，并将此文件放置在 Web 服务器的文档根目录下。
+
 4. 打开你的网络浏览器并输入 `http://127.0.0.1/calculate_form.html`。
+
 5. 在 Value 1 和 Value 2 字段中输入值，选择一个计算类型，并点击 Calculate。
 
 你将看到计算结果。
-
-
-
 
 ## HTTP 环境变量
 
@@ -1263,6 +1344,7 @@ if (isset($_POST['val1']) && isset($_POST['val2'])) {
 `phpinfo()` 函数除了基础的 HTTP 环境外，还会显示大量关于你的 Web 服务器以及你运行的 PHP 版本的信息。让我们来看看你拥有什么内容。
 
 - 1. 在你的文本编辑器中打开一个新文件：
+
 - 2. 输入以下 PHP 代码：
 
 ```php
@@ -1270,6 +1352,7 @@ if (isset($_POST['val1']) && isset($_POST['val2'])) {
 ```
 
 - 3. 将文件保存为 `phpinfo.php`，并将此文件放在你 Web 服务器的根目录下。
+
 - 4. 打开 浏览器并输入 `http://127.0.0.1/phpinfo.php`。
 
 ![](img/7a81120f3fcfd17d264c4ace19b756f8_80_0.png)
@@ -1287,16 +1370,22 @@ if (isset($_POST['val1']) && isset($_POST['val2'])) {
 `REMOTE_ADDR` 环境变量包含发送请求机器的 IP 地址。让我们获取你的 `REMOTE_ADDR` 值。
 
 - 1. 在你的文本编辑器中打开一个新文件。
+
 - 2. 一个 PHP 代码块，然后使用 `getenv()` 将 `REMOTE_ADDR` 的值放在名为 `$address` 的变量中：
+
 ```php
 $address = getenv("REMOTE_ADDR");
 ```
+
 - 3. 将 `$address` 的值打印到屏幕，并关闭 PHP 代码块：
+
 ```php
 echo "Your IP address is $address";
 ?>
 ```
+
 - 4. 将文件保存为 `remoteaddress.php`，然后将此文件放在你 Web 服务器的根目录下。
+
 - 5. 打开浏览器并输入 `http://127.0.0.1/remoteaddress.php`。
 
 ![](img/7a81120f3fcfd17d264c4ace19b756f8_81_0.png)
@@ -1308,28 +1397,43 @@ echo "Your IP address is $address";
 ## 获取并使用 HTTP_USER_AGENT
 
 `HTTP_USER_AGENT` 变量包含浏览器类型、版本、语言编码和平台。例如，示例值字符串指的是 Windows 平台上的英文版 7.1 版本的 Netscape 浏览器：
+
+```
 Mozilla/5.0 (Windows; Windows NT 5.1; en-US; rv:1.4) gecko/20000324 Gecko/7.1 (ax).
+```
 
 这是另一个常见的 `HTTP_USER_AGENT` 值：
+
+```
 Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)
+```
+
 这指的是 Windows 上的 6.0 版本的 Internet Explorer (MSIE)。有时你会看到 MSIE 返回一个看起来像这样的值，它以 Mozilla 开头，直到通知值说明它是兼容的并且实际上是 MSIE 6.0。
 
 最后，不要忽略纯文本浏览器！Lynx 的 `HTTP_USER_AGENT` 值看起来像这样：
+
+```
 Lynx/2.8.rel.3 libwww-FM/2.14
+```
 
 让我们在你的文本编辑器中找到你的 `HTTP_USER_AGENT`。
 
 - 1. 打开一个 PHP 代码块，并使用 `getenv()` 将 `HTTP_USER_AGENT` 的值放在名为 `$agent` 的变量中：
+
 ```php
 $agent = getenv("HTTP_USER_AGENT");
 ```
+
 - 2. 将 `$agent` 的值打印到屏幕，然后关闭 PHP 代码块：
+
 ```php
 echo "You are using $agent.";
 ?>
 ```
+
 - 3. 将文件保存为 `useragent.php`，然后将此文件放在你 Web 服务器的文档根目录下。
-- 4. 打开浏览器并使用 http://127.0.0.1/useragent.php`。
+
+- 4. 打开浏览器并使用 http://127.0.0.1/useragent.php。
 
 ![](img/7a81120f3fcfd17d264c4ace19b756f8_82_0.png)
 
@@ -1351,6 +1455,7 @@ echo "You are using $agent.";
 ### 显示内容
 
 Web 的简单或复杂取决于你的需求。在本章中，你将学习：
+
 - 显示 HTML
 - 使用 PHP 变量
 - 创建表单
@@ -1365,39 +1470,42 @@ Web 的简单或复杂取决于你的需求。在本章中，你将学习：
 
 ### 浏览器特定内容
 
-`HTTP_USER_AGENT` 变量包含浏览器类型、版本、语言编码和平台。例如，示例值字符串指的是 Windows 平台上的英文版 7.1 版本的 Netscape 浏览器：...（提供的 OCR 文本在末处断开，我将只处理明确的内容）。
 
 
+`HTTP_USER_AGENT`变量包含浏览器类型、版本、语言编码和平台。例如，示例值字符串指的是 Windows 平台上的英文版 7.1 版本的 Netscape 浏览器。
 
-
-虽然 80/20 的比例似乎占了多数，但如果有 5 亿人可以访问互联网，那么 1 亿非 MSIE 用户在开发良好的网站时也是是一个必须考虑的巨大数字。HotWired 在 http://hotwired.lycos.com/webmonkey/reference/browser/chart 维护了一个浏览器参考，它可以向你展示主要浏览器之间的某些差异。在下一节中，你将考虑到并非所有平台都是平等的，事实上，并非所有平台显示 HTML 的方式相同。
+虽然 80/20 的比例似乎占了多数，但如果有 5 亿人可以访问互联网，那么 1 亿非 MSIE 用户在开发良好的网站时也是一个必须考虑的巨大数字。HotWired 在 http://hotwired.lycos.com/webmonkey/reference/browser/chart 维护了一个浏览器参考，它可以向你展示主要浏览器之间的某些差异。在下一节中，你将考虑到并非所有平台都是平等的，事实上，并非所有平台显示 HTML 的方式相同。
 
 ## 显示特定平台的 HTML
 
 浏览器之间存在差异，平台之间也是如此。这种差异在字体和字体大小上最为明显。在 Windows 世界中，你有如 Times New Roman 和 Courier New 等字体。在 Macintosh 和 Linux/UNIX 平台上会出现这些字体的微变版本；它们被称为 Times 和 Courier。不仅如此，所有字体的大小也不相同。Macintosh 或 Linux 上的 10 磅字体几乎无法辨认，但如果你使用 11 或 12 磅，就足够了。如果在 Windows 上查看这个 12 磅字体，它看起来就像你的文本试图侵占整个屏幕。
 
-那么该怎么办呢？使用你的模式匹配技能从 `HTTP_USER_AGENT` 字符串中提取字体，然后显示特定平台的 HTML。通过与你确定的关键词进行匹配（你将在该节中完成）来确定平台——你就知道要找什么。在下一个脚本中，你将检查“Windows”和“Linux”，并在你的 HTML 之前打印相应的样式表。
+那么该怎么办呢？使用你的模式匹配技能从`HTTP_USER_AGENT`字符串中提取字体，然后显示特定平台的 HTML。通过与你确定的关键词进行匹配（你将在该节中完成）来确定平台——你就知道要找什么。在下一个脚本中，你将检查“Windows”和“Linux”，并在你的 HTML 之前打印相应的样式表。
 
-- 1. 在编辑器中打开一个新文件，开始一个 PHP 块，并使用 `getenv()` 将 `HTTP_USER_AGENT` 的值放入变量 `$agent`。
+1. 在编辑器中打开一个新文件，开始一个 PHP 块，并使用`getenv()`将`HTTP_USER_AGENT`的值放入变量`$agent`。
+
 ```php
 $agent = getenv('HTTP_USER_AGENT');
 ```
 
-- 2. 开始一个 if...else 语句来判断 `preg_match()` 函数是否返回 `true`，从搜索 "win" 开始：
+2. 开始一个`if...else`语句来判断`preg_match()`函数是否返回`true`，从搜索 "win" 开始：
+
 ```php
 if (preg_match('/win/i', $agent)) {
     $style = "win";
 }
 ```
 
-- 3. 继续测试针对 "Linux"：
+3. 继续测试针对 "Linux"：
+
 ```php
 elif (preg_match('/linux/i', $agent)) {
     $style = "linux";
 }
 ```
 
-- 4. 为 Windows 创建一个基础样式表：
+4. 为 Windows 创建一个基础样式表：
+
 ```php
 $style = "<style type=\"css\">p, ul, ol, li {
 font-family:Arial;font-size:10pt;font-weight:normal};
@@ -1408,9 +1516,10 @@ em {font-family:Arial;font-size:10pt;font-style:italic}
 }</style>";
 ```
 
-> 注意：当你在其他引号内部使用引号时，必须使用转义字符 `\`（也称为反斜杠）将内部引号与外部字符隔开。
+> 注意：当你在其他引号内部使用引号时，必须使用转义字符`\`（也称为反斜杠）将内部引号与外部字符隔开。
 
-- 5. 为 Linux 创建一个基础样式表：
+5. 为 Linux 创建一个基础样式表：
+
 ```php
 $style = "<style type=\"css\">p, ul, ol, li {
 font-family:Times;font-size:12pt;font-weight:normal};
@@ -1421,7 +1530,8 @@ em {font-family:Times;font-size:12pt;font-style:italic}
 }</style>";
 ```
 
-- 6. 关闭你的 PHP 块并添加以下 HTML：
+6. 关闭你的 PHP 块并添加以下 HTML：
+
 ```html
 ?>
 <html>
@@ -1429,7 +1539,8 @@ em {font-family:Times;font-size:12pt;font-style:italic}
 <TITLE>平台匹配</TITLE>
 ```
 
-- 7. 输入以下 PHP 代码，通过创建一个 if...else 语句来打印正确的样式表块：
+7. 输入以下 PHP 代码，通过创建一个`if...else`语句来打印正确的样式表块：
+
 ```php
 if ($style == "win") {
 ```
@@ -1441,9 +1552,10 @@ echo "_linux_style";
 }
 ```
 
-- 8. 关闭 HTML 的顶部部分并开始 body：
+8. 关闭 HTML 的顶部部分并开始 body：
 
-- 9. 输入以下 HTML 以显示你的样式表的使用情况：
+9. 输入以下 HTML 以显示你的样式表的使用情况：
+
 ```html
 <head>
 <body>
@@ -1452,15 +1564,16 @@ echo "_linux_style";
 <p align="center">这是一个带有一些<strong>加粗</strong>和<em>强调/强调</em>文本的简单段落。</p>
 ```
 
-- 10. 添加更多 HTML 以使文档合法：
+10. 添加更多 HTML 以使文档合法：
+
 ```html
 </body>
 </html>
 ```
 
-- 11. 将文件保存为 `platformmatch.php`，并将其放在服务器的文档根目录下。
+11. 将文件保存为`platformmatch.php`，并将其放在服务器的文档根目录下。
 
-- 12. 打开你的网页浏览器，你可能会看到如附图所示的结果。
+12. 打开你的网页浏览器，你可能会看到如附图所示的结果。
 
 你会发现模式匹配起作用了。在下一节中，你将学习函数。
 
@@ -1470,7 +1583,8 @@ PHP 内置了许多字符串函数，这让你的生活变得更轻松。假设�
 
 ## 输入表单
 
-- 1. 在编辑器中打开新文件并输入以下 HTML。这将创建一个表单：
+1. 在编辑器中打开新文件并输入以下 HTML。这将创建一个表单：
+
 ```html
 <html>
 <head>
@@ -1479,18 +1593,21 @@ PHP 内置了许多字符串函数，这让你的生活变得更轻松。假设�
 <body>
 ```
 
-- 2. 开始表单：
+2. 开始表单：
+
 ```html
 <form method="post" action="display_input.php">
 ```
 
-- 3. 创建带有标签的文本区域：
+3. 创建带有标签的文本区域：
+
 ```html
 <p>文本：</p>
 <textarea name="text" cols="45" rows="5"></textarea>
 ```
 
-- 4. 添加单选按钮：
+4. 添加单选按钮：
+
 ```html
 <p>函数：</p>
 <input type="radio" name="func" value="strlen">长度<br>
@@ -1500,27 +1617,30 @@ PHP 内置了许多字符串函数，这让你的生活变得更轻松。假设�
 <input type="radio" name="func" value="ucwords">单词大写<br>
 ```
 
-- 5. 添加提交按钮：
+5. 添加提交按钮：
+
 ```html
 <input type="submit" value="处理字符串">
 ```
 
-- 6. 关闭表单并添加更多 HTML 使文档合法：
+6. 关闭表单并添加更多 HTML 使文档合法：
+
 ```html
 </form>
 </body>
 </html>
 ```
 
-- 7. 将文件保存为 `generic_form.html`，并将其放在服务器的文档根目录下。
+7. 将文件保存为`generic_form.html`，并将其放在服务器的文档根目录下。
 
-- 8. 打开浏览器访问 http://127.0.0.1/generic_form.html。
+8. 打开浏览器访问 http://127.0.0.1/generic_form.html。
 
 ## 创建显示表单值
 
-根据 generic_form.html，你需要名为 `display_input.php` 的脚本。该脚本的目标是选择 `$_POST[text]` 并使用特定的字符串函数（`$_POST[func]` 的值）来获取新结果（`$result`）。
+根据`generic_form.html`，你需要名为`display_input.php`的脚本。该脚本的目标是选择`$_POST[text]`并使用特定的字符串函数（`$_POST[func]`的值）来获取新结果（`$result`）。
 
-- 1. 在编辑器中打开新文件并输入以下 PHP 代码。如果文本区域没有输入值且没有从单选按钮列表中选择函数，将确保用户返回表单：
+1. 在编辑器中打开新文件并输入以下 PHP 代码。如果文本区域没有输入值且没有从单选按钮列表中选择函数，将确保用户返回表单：
+
 ```php
 <?php
 if ($_POST['text'] == "" || $_POST['func'] == "") {
@@ -1529,12 +1649,14 @@ if ($_POST['text'] == "" || $_POST['func'] == "") {
 }
 ```
 
-- 2. 输入后续 PHP 代码，将函数的输出赋值给变量 `$result`，然后结束 php：
+2. 输入后续 PHP 代码，将函数的输出赋值给变量`$result`，然后结束 php：
+
 ```php
 $result = $_POST['func']($_POST['text']);
 ```
 
-- 3. 输出 HTML：
+3. 输出 HTML：
+
 ```html
 <HTML>
 <head>
@@ -1543,26 +1665,26 @@ $result = $_POST['func']($_POST['text']);
 <body>
 ```
 
-- 4. 添加 `$result` 的值：
+4. 添加`$result`的值：
+
 ```php
 <?php echo "$result"; ?>
 ```
 
-- 5. 添加一个返回表单的链接：
+5. 添加一个返回表单的链接：
+
 ```html
 <p><a href="generic_form.html">再次尝试！</a></p>
 ```
 
-- 6. 添加更多 HTML 使文档合法：
+6. 添加更多 HTML 使文档合法：
+
 ```html
 </body>
 </html>
 ```
 
-
-
-
-7. 将文件保存为 `display_input.php`，并将此文件放在 Web 服务器的文档根目录下。
+7. 将文件保存为`display_input.php`，并将此文件放在 Web 服务器的文档根目录下。
 
 你的代码看起来应该是这样的：
 
@@ -1591,25 +1713,29 @@ $result = $_POST['text1'];
 
 现在你已经创建了一个前端表单和一个后端脚本，是时候尝试它们了。
 
-- 1. 打开浏览器浏览器并输入 `http://127.0.0.1/generic_form.html`。
+1. 打开浏览器浏览器并输入`http://127.0.0.1/generic_form.html`。
 
-- 2. 在文本区域中输入以下文本：
+2. 在文本区域中输入以下文本：
+
+```
 I think PHP is just the coolest server-side scripting language around!
+
 Who knew it would be this simple?
+```
 
 > 注意：你可能想将那段文本复制到剪贴板，因为它将在接后的所有示例中使用。
 
-- 3. 选择 md5 单选按钮，并点击“Do Something With the String”按钮。
+3. 选择 md5 单选按钮，并点击“Do Something With the String”按钮。
 
 ![](img/7a81120f3fcfd17d264c4ace19b756f8_94_0.png)
 
-**注意**md5 函数会获取字符串的哈希值。哈希值是字符串的数字摘要。它可以用于比较字符串（或文件）的版本以判断版本是否存在差异。
+**注意**：`md5`函数会获取字符串的哈希值。哈希值是字符串的数字摘要。它可以用于比较字符串（或文件）的版本以判断版本是否存在差异。
 
-你应该看到字符串的哈希值，以及一个返回表单的链接。返回表单并输入相同的文本，但这次选择使用 `strlen()` 函数查找字符串长度的按钮，包括空格和所有字符。
+你应该看到字符串的哈希值，以及一个返回表单的链接。返回表单并输入相同的文本，但这次选择使用`strlen()`函数查找字符串长度的按钮，包括空格和所有字符。
 
 ![](img/7a81120f3fcfd17d264c4ace19b756f8_94_1.png)
 
-继续测试剩余的每个函数。当你选择使用 `strrev()` 函数的按钮时，你会发现你的原始字符串已被完全反转。`strtoupper()` 函数返回所有字母均为大写的字符串，而 `strtolower()` 函数返回所有字母均为小写的字符串。最后，使用 `ucwords()` 函数返回每个单词首字母大为大写的字符串。
+继续测试剩余的每个函数。当你选择使用`strrev()`函数的按钮时，你会发现你的原始字符串已被完全反转。`strtoupper()`函数返回所有字母均为大写的字符串，而`strtolower()`函数返回所有字母均为小写的字符串。最后，使用`ucwords()`函数返回每个单词首字母大为大写的字符串。
 
 ![](img/7a81120f3fcfd17d264c4ace19b756f8_95_0.png)
 
@@ -1619,13 +1745,14 @@ LiD 团队
 
 将头部重定向到新位置意味着你的脚本向浏览器发送 HTTP 头部，指示一个新的位置。任何类型的头部（认证、重定向、cookies 等）必须在发送任何其他内容（包括空格、换行和任何字符）之前发送到浏览器。
 
-在你已经使用 `header()` 函数在不完整的表单中重定向用户之后，在下一节中，你将创建一个特定的重定向。目标是让用户从下拉菜单中选择一个位置，然后脚本自动将他们送到那里。
+在你已经使用`header()`函数在不完整的表单中重定向用户之后，在下一节中，你将创建一个特定的重定向。目标是让用户从下拉菜单中选择一个位置，然后脚本自动将他们送到那里。
 
 ## 创建重定向表单
 
 在本节中，你将为重定向脚本创建前端。表单将包含一个各种网站名称的下拉列表。每个选项的值是网站的 URL。
 
-- 1. 在文本编辑器中打开文件并输入以下 HTML：
+1. 在文本编辑器中打开文件并输入以下 HTML：
+
 ```html
 <HEAD>
 <TITLE>Redirection Menu</TITLE>
@@ -1633,12 +1760,14 @@ LiD 团队
 <BODY>
 ```
 
-- 2. 开始你的表单。假设方法为 POST，动作是一个名为 `do_redirect.php` 的脚本：
+2. 开始你的表单。假设方法为 POST，动作是一个名为`do_redirect.php`的脚本：
+
 ```html
 <FORM METHOD="post" ACTION="do_redirect.php">
 ```
 
-- 3. 添加此下拉列表：
+3. 添加此下拉列表：
+
 ```html
 <P>Send me to:</P>
 <SELECT name="location">
@@ -1650,29 +1779,32 @@ LiD 团队
 </SELECT>
 ```
 
-- 4. 添加一个提交按钮：
+4. 添加一个提交按钮：
+
 ```html
 <P><INPUT TYPE="submit" NAME="submit" VALUE="Go!"></P>
 ```
 
-- 5. 关闭你的表单，并添加一些 HTML 使文档有效：
+5. 关闭你的表单，并添加一些 HTML 使文档有效：
+
 ```html
 </FORM>
 </BODY>
 </HTML>
 ```
 
-- 6. 将文件保存为 `redirect_form.html`，并将其放在 Web 服务器的文档根目录下。
+6. 将文件保存为`redirect_form.html`，并将其放在 Web 服务器的文档根目录下。
 
-- 7. 打开浏览器并输入 `http://127.0.0.1/redirect_form.html`。
+7. 打开浏览器并输入`http://127.0.0.1/redirect_form.html`。
 
-在下一节中，你将创建后端脚本。该脚本将创建变量 `$_POST['location']`。
+在下一节中，你将创建后端脚本。该脚本将创建变量`$_POST['location']`。
 
 # 创建并测试重定向脚本
 
-根据 `redirect_form.html` 中的表单，你需要一个名为 `do_redirect.php` 的脚本。该脚本的目标是接受 `$_POST['location']` 的值并使用 `header()` 函数打印该值，以便用户重定向到所选位置。
+根据`redirect_form.html`中的表单，你需要一个名为`do_redirect.php`的脚本。该脚本的目标是接受`$_POST['location']`的值并使用`header()`函数打印该值，以便用户重定向到所选位置。
 
-- 1. 在文本编辑器中打开新文件并输入以下 PHP 以创建正确的头部，检查是否选择了内容：
+1. 在文本编辑器中打开新文件并输入以下 PHP 以创建正确的头部，检查是否选择了内容：
+
 ```php
 <?php
 if ($_POST['location'] == "") {
@@ -1685,17 +1817,17 @@ if ($_POST['location'] == "") {
 ?>
 ```
 
-- 2. 将文件保存为 `do_redirect.php`，并将其放在 Web 服务器的文档根目录下。
+2. 将文件保存为`do_redirect.php`，并将其放在 Web 服务器的文档根目录下。
 
-- 3. 打开 浏览器并输入 `http://127.0.0.1/redirect_form.html`。
+3. 打开浏览器并输入`http://127.0.0.1/redirect_form.html`。
 
-- 4. 从下拉列表中选择 PHP.net，并点击 Go 按钮！
+4. 从下拉列表中选择 PHP.net，并点击 Go 按钮！
 
 用户现在被重定向到该网站。根据其他选择或添加你自己的进行练习。在本章中，你学习了可以在网站使用的不同类型的动态内容。在下一章中，你将学习如何利用更流行的 Web 工具——发送电子邮件。
 
 ![](img/7a81120f3fcfd17d264c4ace19b756f8_98_0.png)
 
-# 第8 章：发送电子邮件
+# 第8章：发送电子邮件
 
 ## 概述
 
@@ -1703,7 +1835,7 @@ if ($_POST['location'] == "") {
 
 - 修改 PHP 配置以发送邮件
 - 创建并发送简单的反馈表单
-- 使用 `PHP_SELF` 变量创建带有自定义错误消息的反馈表单
+- 使用`PHP_SELF`变量创建带有自定义错误消息的反馈表单
 
 ## 使用 SMTP 服务器
 
@@ -1713,13 +1845,13 @@ SMTP 是 Simple Mail Transfer Protocol（邮件传输协议）的缩写，SMTP �
 
 > 注意：如果你跳过了本书的前三章，并作为互联网提供商虚拟主机包的一部分使用 PHP，该机器上已经安装了 SMTP 服务器，PHP 应该已经配置好访问它。
 
-如果你通过拨号连接、DSL、电缆或其他类型的访问连接互联网，可以使用你互联网提供商的发送邮件服务器。例如，如果你的开发机是通过 DSL 连接到互联网的设备，你可以使用类似 `yourprovider.com` 作为你的发送邮件服务器。
+如果你通过拨号连接、DSL、电缆或其他类型的访问连接互联网，可以使用你互联网提供商的发送邮件服务器。例如，如果你的开发机是通过 DSL 连接到互联网的设备，你可以使用类似`yourprovider.com`作为你的发送邮件服务器。
 
 规则是，你在电子邮件（Eudora、Outlook、Netmail 等）中配置的任何内容，在你的 PHP 代码中也会作为你的 SMTP 服务器运行。这让 PHP 感知这一点，你将对此学习。
 
 # php.ini 中的 SMTP 更改
 
-在 php.ini 配置文件中，有两个指令需要设置以便 `mail()` 函数正常工作。用文本编辑器打开 php.ini 并查找以下内容：
+在`php.ini`配置文件中，有两个指令需要设置以便`mail()`函数正常工作。用文本编辑器打开`php.ini`并查找以下内容：
 
 ```
 [mail]
@@ -1730,41 +1862,37 @@ sendmail_from = me@localhost.com
 sendmail_path =
 ```
 
-如果你使用 Windows，你需要修改两个指令：SMTP 和 `sendmail_from`。如果你计划使用你 ISP 的发送邮件服务器（在本例中，假设它名为 `DSLProvider.net`），则 php.ini 中的条目看起来如下：
+如果你使用 Windows，你需要修改两个指令：SMTP 和`sendmail_from`。如果你计划使用你 ISP 的发送邮件服务器（在本例中，假设它名为`DSLProvider.net`），则`php.ini`中的条目看起来如下：
 
 ```
 SMTP = dprovider.net
 ```
 
-第二个配置指令是 `sendmail_from`，这是在发送邮件头部中使用的电子地址。它可以在邮件脚本中被覆盖，但通常作为默认值运行。例如：
+第二个配置指令是`sendmail_from`，这是在发送邮件头部中使用的电子地址。它可以在邮件脚本中被覆盖，但通常作为默认值运行。例如：
 
 ```
 sendmail_from = youraddress@yourdomain.com
 ```
 
-当然，将 `<youraddress@yourdomain.com>` 替换为你自己的地址。
+当然，将`<youraddress@yourdomain.com>`替换为你自己的地址。
 
-如果你在 Linux 或 Unix 变体上，`sendmail_path` 是你需要了解的，它看起来应该是这样的：
+如果你在 Linux 或 Unix 变体上，`sendmail_path`是你需要了解的，它看起来应该是这样的：
 
 ```
 sendmail_path = /usr/bin/sendmail
 ```
 
-或者，如果你使用 Qmail
+或者，如果你使用 Qmail：
 
 ```
 sendmail_path = /var/qmail/bin/sendmail
 ```
 
-在 `sendmail_path` 指令中，你还可以设置配置来指定队列选项或设置 Return-Path 头部，例如
+在`sendmail_path`指令中，你还可以设置配置来指定队列选项或设置 Return-Path 头部，例如：
 
 ```
 sendmail_path = /usr/sbin/sendmail -tfyou@yourdomain.com
 ```
-
-
-
-
 
 # 简单的反馈表
 
@@ -1774,9 +1902,10 @@ sendmail_path = /usr/sbin/sendmail -tfyou@yourdomain.com
 
 在本节中，你将创建表单/脚本组合的第一部分——反馈表本身，通常被称为前端表单。
 
-- 1. 在你的文本编辑器中打开一个新文件。
+1. 在你的文本编辑器中打开一个新文件。
 
-- 2. 输入以下 HTML：
+2. 输入以下 HTML：
+
 ```html
 <HTML>
 <HEAD>
@@ -1785,56 +1914,60 @@ sendmail_path = /usr/sbin/sendmail -tfyou@yourdomain.com
 <BODY>
 ```
 
-- 3. 开始你的表单。假设方法为 POST，动作指向一个名为的脚本
+3. 开始你的表单。假设方法为 POST，动作指向一个名为的脚本：
+
 ```html
 <FORM METHOD="POST" ACTION="send_simpleform.php">
 ```
 
-- 4. 为用户的姓名创建一个输入字段，并带有文本标签：
+4. 为用户的姓名创建一个输入字段，并带有文本标签：
+
 ```html
 <P>Your Name:</p><br>
 <INPUT type="text" NAME="name" SIZE=30></P>
 ```
 
-- 5. 为用户的电子邮件创建一个输入字段，并带有文本标签：
+5. 为用户的电子邮件创建一个输入字段，并带有文本标签：
+
 ```html
 <P>Your E-Mail Address:</p><br>
 <INPUT type="text" NAME="sender_email" SIZE=30></P>
 ```
 
-- 6. 创建一个用于消息的文本区域，并带有文本标签：
+6. 创建一个用于消息的文本区域，并带有文本标签：
+
 ```html
 <P>Message:</p><br>
 <TEXTAREA NAME="message" COLS=30 ROWS=5 WRAP=virtual</TEXTAREA>
 ```
 
-- 7. 添加一个提交按钮：
+7. 添加一个提交按钮：
+
 ```html
 <P><INPUT TYPE="submit" NAME="submit" VALUE="Send This Form\></P>
 ```
 
-- 8. 关闭你的表单并添加更多 HTML 以确保文档有效：
+8. 关闭你的表单并添加更多 HTML 以确保文档有效：
+
 ```html
 </FORM>
 </BODY>
 </HTML>
 ```
 
-- 9. 将文件保存为 `simple_form.html`，并将其放在 Web 服务器的文档根目录下。
+9. 将文件保存为`simple_form.html`，并将其放在 Web 服务器的文档根目录下。
 
-- 10. 打开浏览器并访问 http://127.0.0.1/simple_form.html。
-
-# 简单的反馈表
+10. 打开浏览器并访问 http://127.0.0.1/simple_form.html。
 
 你应该能看到一个表单，其中包含一个姓名的文本字段、一个电子邮件的文本字段以及一个写着“Send Form”的按钮。
 
-在下一节中，你将创建后端脚本。该脚本将预期三个变量：`$_POST[sender_name]`、`$_POST[sender_email]` 和 `$_POST[message]`。
+在下一节中，你将创建后端脚本。该脚本将预期三个变量：`$_POST[sender_name]`、`$_POST[sender_email]`和`$_POST[message]`。
 
 ## 创建发送表单邮件的脚本
 
-根据 simple_form.html 中的表单动作，你需要一个名为 `simple_form.php` 的脚本。该脚本的目标是获取 `$_POST[sender_name]`、`$_POST[sender_email]` 和 `$_POST[message]` 格式的文本，发送电子邮件并向网络浏览器提供确认。
+根据`simple_form.html`中的表单动作，你需要一个名为`simple_form.php`的脚本。该脚本的目标是获取`$_POST[sender_name]`、`$_POST[sender_email]`和`$_POST[message]`格式的文本，发送电子邮件并向网络浏览器提供确认。
 
-- 1. 在你的文本编辑器中打开一个新文件并加入一些错误检查代码：
+1. 在你的文本编辑器中打开一个新文件并加入一些错误检查代码：
 
 ```php
 <?php
@@ -1846,61 +1979,99 @@ exit;
 }
 ```
 
-- 2. 开始构建消息字符串，它将包含邮件本身：
+2. 开始构建消息字符串，它将包含邮件本身：
+
+```php
 $msg = "E-MAIL SENT FROM WWW SITE\n";
+```
 
-- 3. 通过添加发送者条目继续构建消息：
+3. 通过添加发送者条目继续构建消息：
+
+```php
 $msg .= "Sender's Name: " . $_POST[sender_name]\\n";
+```
 
-> 注意
-使用 `.=` 字符可确保你的代码可以在多行打印。这在你查看 HTML 源代码时很有帮助。
+> 注意：使用`.=`字符可确保你的代码可以在多行打印。这在你查看 HTML 源代码时很有帮助。
 
 接下来的几步将通过拼接较短的字符串来继续构建一个长消息字符串。
 
-- 5. 通过添加发送者电子邮件地址条目继续构建消息字符串：
+5. 通过添加发送者电子邮件地址条目继续构建消息字符串：
+
+```php
 $msg = "Sender's E-Mail:\t$POST[sender_email]\n";
+```
 
-- 6. 通过添加消息条目继续构建消息字符串：
+6. 通过添加消息条目继续构建消息字符串：
+
+```php
 $msg = "Message:\t$POST[message]\n";
+```
 
-- 7. 创建一个变量存储接收者的电子邮件（替换替换你自己的）：
+7. 创建一个变量存储接收者的电子邮件（替换替换你自己的）：
+
+```php
 $to = "you@youmail.com";
+```
 
-- 8. 创建一个变量存储邮件的主题：
+8. 创建一个变量存储邮件的主题：
+
+```php
 $subject = "Web Site Feedback";
+```
 
-- 9. 创建一个变量存储额外的邮件头部：
+9. 创建一个变量存储额外的邮件头部：
+
+```php
 $headers = "From: My Site <genericaddress@yourdomain.com>\n";
+```
 
 > 头部是邮件消息开头的字符串，它们构成了消息结构并从根本上使其成为有效消息。
 
-- 10. 向 `$headers` 变量添加以下内容：
+10. 向`$headers`变量添加以下内容：
+
+```php
 $headers = "Reply-To: $POST[sender_email]\n";
+```
 
-- 11. 添加 `mail()` 函数：
+11. 添加`mail()`函数：
+
+```php
 mail($to, $subject, $msg, $headers);
+```
 
-- 12. 关闭你的 PHP 块：
+12. 关闭你的 PHP 块：
+
+```php
 ?>
+```
 
 虽然这段代码会发送邮件，但你应该向用户的屏幕返回一些内容，以便他知道表单已发送。否则，他可能会坐在那里不断点击“Send Form”按钮。
 
-- 13. 开始 HTML 输出：
+13. 开始 HTML 输出：
+
+```html
 <HTML>
 <HEAD>
 <TITLE>Simple Feedback Form</TITLE>
 </HEAD>
-<body>body
+<body>
+```
 
-- 14. 添加一些信息告诉用户发生了什么：
+14. 添加一些信息告诉用户发生了什么：
+
+```html
 <h1>The following e-mail has been sent:</h1>
+```
 
-- 15. 为 Name 字段添加文本标签并显示用户的输入，对其他字段执行相同操作：
+15. 为 Name 字段添加文本标签并显示用户的输入，对其他字段执行相同操作：
+
+```php
 <p><strong>Your Name:</strong><br>echo $_POST['sender_name'];</p><p><strong>Your E-Mail Address:</strong><br>echo $_POST['sender_email'];</p><p><strong>Message:</strong><br>echo $_POST['message']; ?>
+```
 
-- 16. 添加更多 HTML 以确保文档有效：
+16. 添加更多 HTML 以确保文档有效：
 
-- 17. 将文件保存为 `send_simpleform.php`，并将其放在 Web 服务器的文档根目录下。你的代码应该看起来所示。
+17. 将文件保存为`send_simpleform.php`，并将其放在 Web 服务器的文档根目录下。你的代码应该看起来所示。
 
 在下一节中，提交表单并查看所有类型的功能。
 
@@ -1908,48 +2079,60 @@ mail($to, $subject, $msg, $headers);
 
 现在你已经创建了前端和后端脚本，是时候尝试它们了。
 
-- 1. 打开浏览器并输入 http://127.0.0.1/simple_form.html
-- 2. 在 Name 字段输入你的姓名。
-- 3. 在 E-Mail 字段输入你的电子邮件。
-- 4. 在 Message 字段输入以下消息：
-   PHP 真酷！
-- 5. 点击 Send Form 按钮。
+1. 打开浏览器并输入 http://127.0.0.1/simple_form.html
+
+2. 在 Name 字段输入你的姓名。
+
+3. 在 E-Mail 字段输入你的电子邮件。
+
+4. 在 Message 字段输入以下消息：
+
+```
+PHP 真酷！
+```
+
+5. 点击 Send Form 按钮。
 
 你输入的信息以及邮件已发送的确认将出现。现在检查你的电子邮件，看看是否有消息等待。
 
 通过此表单发送的邮件看起来像这样。如果制表符文本看起来不正常，你可以在字符串中插入任意空格。
 
-- 1. 在你的文本编辑器中打开 `simple_form.php`。
-- 2. 将制表符字符 `\t` 替换为两个空格：
+1. 在你的文本编辑器中打开`simple_form.php`。
+
+2. 将制表符字符`\t`替换为两个空格：
+
 ```php
 $msg = "Sender's Name:\n" . $_POST['sender_name'];
 ```
 
-- 3. 将 E-Mail 的制表符字符 `\t` 替换为四个空格：
+3. 将 E-Mail 的制表符字符`\t`替换为四个空格：
+
 ```php
 $msg = "Sender's E-Mail:\n" . $_POST['sender_email'];
 ```
 
-- 4. 将 Message 的制表符字符 `\t` 替换为十个空格：
+4. 将 Message 的制表符字符`\t`替换为十个空格：
+
 ```php
 $msg = "Message:\n" . $_POST['message'];
 ```
 
-- 5. 保存文件并将其上传到服务器。
+5. 保存文件并将其上传到服务器。
 
 在下一节中，你为为空字段创建自定义消息，并将发送邮件的两个步骤合并为一个整合脚本。
 
 # 带有自定义消息的反馈表
 
-在上一节中，你创建了两个文件。一个包含前端（表单），另一个包含后端（脚本）。在本节中，你学习如何在表单动作中使用 `$_SERVER[PHP_SELF]` 变量来创建一个同时包含表单和脚本的单个文件，以及当必填字段未完成时如何创建自定义消息。
+在上一节中，你创建了两个文件。一个包含前端（表单），另一个包含后端（脚本）。在本节中，你学习如何在表单动作中使用`$_SERVER[PHP_SELF]`变量来创建一个同时包含表单和脚本的单个文件，以及当必填字段未完成时如何创建自定义消息。
 
 ## 创建初始脚本
 
 正如你之前所做的，创建脚本/表单对的第一步是创建前端表单。然而，在这个合一表单中，前端表单仅仅是脚本的第一部分，而不是独立的文件。
 
-- 1. 在你的文本编辑器中打开一个新文件。
+1. 在你的文本编辑器中打开一个新文件。
 
-- 2. 输入以下 HTML：
+2. 输入以下 HTML：
+
 ```html
 <head>
 <title>All-In-One Feedback Form</title>
@@ -1957,59 +2140,62 @@ $msg = "Message:\n" . $_POST['message'];
 <body>
 ```
 
-- 3. 开始一个 PHP 块并创建一个存储所有条目的变量 `$form_block`。从表单动作开始，假设方法为 `$_SERVER[PHP_SELF]`：
+3. 开始一个 PHP 块并创建一个存储所有条目的变量`$form_block`。从表单动作开始，假设方法为`$_SERVER[PHP_SELF]`：
+
 ```php
 $form_block = "
 <form METHOD=\"POST\" ACTION=\"$_SERVER[PHP_SELF]\">
 ```
 
-> 注意由于你在变量内部放置了一个长字符串，可能会有两个引号。记得用反斜杠转义所有的引号！
+> 注意：由于你在变量内部放置了一个长字符串，可能会有两个引号。记得用反斜杠转义所有的引号！
 
-- 4. 为用户的姓名创建一个输入字段并带有标签：
+4. 为用户的姓名创建一个输入字段并带有标签：
+
 ```html
 <p>Your Name:</br>
 <input type="text" name="sender_name" size="30">
 ```
 
-- 5. 为用户的电子邮件创建一个输入字段，并带有文本标签：
+5. 为用户的电子邮件创建一个输入字段，并带有文本标签：
+
 ```html
 <p>Your E-Mail Address:</br>
 <input type="text" name="sender_email" size="30">
 ```
 
-- 6. 创建一个用于消息的文本区域并带有文本标签：
+6. 创建一个用于消息的文本区域并带有文本标签：
+
 ```html
 <p>Message:</br>
 <textarea NAME="message" COLS=30 ROWS=5 WRAP=virtual</textarea>
 ```
 
-- 7. 添加一个提交按钮：
+7. 添加一个提交按钮：
+
 ```html
 <input type="submit" name="submit" value="Send This Form">
 ```
 
-- 8. 关闭表单并添加结束引号和指令终止符（分号）；
+8. 关闭表单并添加结束引号和指令终止符（分号）：
+
 ```html
 </form>
 ```
 
-- 9. 关闭 PHP 块并添加更多 HTML 以确保文档有效：
+9. 关闭 PHP 块并添加更多 HTML 以确保文档有效：
+
 ```php
 ?>
 </body>
 ```
 
-- 10. 将文件保存为 `allinline_form.php`，并将其放在 Web 服务器的文档根目录下。
+10. 将文件保存为`allinline_form.php`，并将其放在 Web 服务器的文档根目录下。
 
-如果你在浏览器中查看这段代码，你只能在标题栏看到一个标题。迫切产生的问题应该是：“我们为什么需要在一个名为 `$form_block` 的变量中包含所有的 HTML？”在下一节中，你将向脚本中添加内容，以便根据某些操作显示特定的代码块。
-
-
-
-
+如果你在浏览器中查看这段代码，你只能在标题栏看到一个标题。迫切产生的问题应该是：“我们为什么需要在一个名为`$form_block`的变量中包含所有的 HTML？”在下一节中，你将向脚本中添加内容，以便根据某些操作显示特定的代码块。
 
 ## 对脚本进行错误检查
 
-计划是使用变量 `$_SERVER[PHP_SELF]`，它的值为当前脚本的名称。因此，在此实例中，`$_SERVER[PHP_SELF]` 的值将为 `allone.php`。当你将 `$_SERVER[PHP_SELF]` 作为 action（动作）时，你是在说：“当点击提交按钮时，加载此脚本并执行某些操作”，而不是“当点击提交按钮时，去找另一个脚本并执行某些操作”。
+计划是使用变量`$_SERVER[PHP_SELF]`，它的值为当前脚本的名称。因此，在此实例中，`$_SERVER[PHP_SELF]`的值将为`allone.php`。当你将`$_SERVER[PHP_SELF]`作为 action（动作）时，你是在说：“当点击提交按钮时，加载此脚本并执行某些操作”，而不是“当点击提交按钮时，去找另一个脚本并执行某些操作”。
 
 现在你有了一个脚本的雏形，但关于这个合一脚本必须完成的事情：
 
@@ -2019,12 +2205,15 @@ $form_block = "
 - 在不发送表单的情况下打印错误信息
 - 如果没有发现错误则发送表单
 
-对脚本进行一些修改，帮助确定它应该采取哪些操作。在 `$form_block` 变量中、提交按钮的 HTML 代码之前，添加此行：
-`<input type="hidden" name="op" value="$ds">`
+对脚本进行一些修改，帮助确定它应该采取哪些操作。在`$form_block`变量中、提交按钮的 HTML 代码之前，添加此行：
 
-这创建了一个隐藏变量 `$POST['op']`，其值为 `$ds`。"op" 代表 "operation"操作，"ds" 代表 "something"某些内容）。这与任何编程语言无关。只要你理解需要做什么，你可以做任何你想做的（你很快就会看到）。
+```php
+<input type="hidden" name="op" value="$ds">
+```
 
-变量 `$POST['op']` 只有在表单提交后存在。因此，如果 `$_POST['op']` 的值不是 `$ds`，说明用户还没有看到表单。如果用户还没看到它，你就需要显示它，所以添加以下 if...else 语句：
+这创建了一个隐藏变量`$POST['op']`，其值为`$ds`。"op" 代表 "operation"操作，"ds" 代表 "something"某些内容）。这与任何编程语言无关。只要你理解需要做什么，你可以做任何你想做的（你很快就会看到）。
+
+变量`$POST['op']`只有在表单提交后存在。因此，如果`$_POST['op']`的值不是`$ds`，说明用户还没有看到表单。如果用户还没看到它，你就需要显示它，所以添加以下`if...else`语句：
 
 ```php
 if ($_POST['op'] != "ds") {
@@ -2037,55 +2226,128 @@ if ($_POST['op'] != "ds") {
 
 ![](img/7a81120f3fcfd17d264c4ace19b756f8_109_0.png)
 
-你可能需要在下一步中进行一些修改：添加你的错误信息。如果表单被提交，`$_POST['op']` 的值将是 `ds`，现在你必须考虑到这一点。由于所有表单字段都是必填的；在检查 `$_POST['op']` 的值之后，在所有字段中创建一个值。
+你可能需要在下一步中进行一些修改：添加你的错误信息。如果表单被提交，`$_POST['op']`的值将是`ds`，现在你必须考虑到这一点。由于所有表单字段都是必填的；在检查`$_POST['op']`的值之后，在所有字段中创建一个值。
 
-1. 继续 if...else 语句：
-   `else if ($_POST['op'] == "ds") {`
-2. 在父语句中添加一个 if 语句来显示值。开始于
-   `$_POST['sender_name'] == ""`
-   `if ($_POST['sender_name'] == "") {`
-3. 为 `$_POST['sender_name']` 创建一个名为 $name_err 的错误信息：
-   `$name_err = "<font color=red>Please enter your name!</font><br>";`
-4. 将 $send 的值设置为 "no"：
-   `$send = "no";`
-5. 为 `$_POST['sender_email']` 创建一个类似的 if：
-   `if ($_POST['sender_email'] == "") {`
-   `$email_err = "<font color=red>Please enter your e-mail address!</font><br>";`
-   `$send = "no";`
-6. 为 `$_POST['message']` 创建一个类似的 if：
-   `if ($_POST['message'] == "") {`
-   `$message_err = "<font color=red>Please enter a message!</font><br>";`
-   `$send = "no";`
-7. 开始一个 if...else 语句来处理 $send 的值：
-   `if ($send == "no") {`
-   `// 发送是可以的!`
+1. 继续`if...else`语句：
+
+```php
+else if ($_POST['op'] == "ds") {
+```
+
+2. 在父语句中添加一个`if`语句来显示值。开始于：
+
+```php
+if ($_POST['sender_name'] == "") {
+```
+
+3. 为`$_POST['sender_name']`创建一个名为`$name_err`的错误信息：
+
+```php
+$name_err = "<font color=red>Please enter your name!</font><br>";
+```
+
+4. 将`$send`的值设置为 "no"：
+
+```php
+$send = "no";
+```
+
+5. 为`$_POST['sender_email']`创建一个类似的`if`：
+
+```php
+if ($_POST['sender_email'] == "") {
+    $email_err = "<font color=red>Please enter your e-mail address!</font><br>";
+    $send = "no";
+}
+```
+
+6. 为`$_POST['message']`创建一个类似的`if`：
+
+```php
+if ($_POST['message'] == "") {
+    $message_err = "<font color=red>Please enter a message!</font><br>";
+    $send = "no";
+}
+```
+
+7. 开始一个`if...else`语句来处理`$send`的值：
+
+```php
+if ($send == "no") {
+    // 发送是可以的!
+```
+
 8. 创建一个变量来存储接收者的邮箱地址（替换为你自己的）：
-   `$to = "you@youmail.com";`
+
+```php
+$to = "you@youmail.com";
+```
+
 9. 创建一个变量存储邮件主题：
-   `$subject = "All-in-One Web Feedback";`
+
+```php
+$subject = "All-in-One Web Feedback";
+```
+
 10. 创建一个变量存储额外的邮件头：
-    `$mailheaders = "From: My Web Site <genericaddress@domain.com> \n";`
-11. 添加到 $mailheaders：
-    `$mailheaders .= "Reply-To: $_POST['sender_email']";`
+
+```php
+$mailheaders = "From: My Web Site <genericaddress@domain.com> \n";
+```
+
+11. 添加到`$mailheaders`：
+
+```php
+$mailheaders .= "Reply-To: $_POST['sender_email']";
+```
+
 12. 构建消息字符串：
-    `$msg = "E-MAIL SENT FROM WWW Site\n";`
-    `$msg = "Sender: Name: " . $_POST['sender_name'] . "\n";`
-    `$msg = "Sender: E-Mail: " . $_POST['sender_email'] . "\n";`
-    `$msg .= "Message: " . $_POST['message'] . "\n";`
-13. 添加 mail() 函数：
-    `mail($to, $subject, $msg, $mailheaders);`
+
+```php
+$msg = "E-MAIL SENT FROM WWW Site\n";
+$msg = "Sender: Name: " . $_POST['sender_name'] . "\n";
+$msg = "Sender: E-Mail: " . $_POST['sender_email'] . "\n";
+$msg .= "Message: " . $_POST['message'] . "\n";
+```
+
+13. 添加`mail()`函数：
+
+```php
+mail($to, $subject, $msg, $mailheaders);
+```
+
 14. 添加一个简单的语句让用户知道邮件已发送，即：
-    `echo "<p>Mail has been sent!</p>";`
-15. 继续 else 处理 $send 的值为 "no"：
-    `else if ($send == "no") {`
+
+```php
+echo "<p>Mail has been sent!</p>";
+```
+
+15. 继续`else`处理`$send`的值为 "no"：
+
+```php
+else if ($send == "no") {
+```
+
 16. 打印错误信息：
-    `echo "$name_err";`
-    `echo "$email_err";`
-    `echo "$message_err";`
+
+```php
+echo "$name_err";
+echo "$email_err";
+echo "$message_err";
+```
+
 17. 再次打印表单：
-    `echo "$form_block";`
-18. 关闭 if...else 块和父 if...else 块：
-    `}`
+
+```php
+echo "$form_block";
+```
+
+18. 关闭`if...else`块和父`if...else`块：
+
+```php
+}
+```
+
 19. 保存文件。整个代码应该像这样：
 
 ```php
@@ -2161,11 +2423,12 @@ if ($_POST['op'] == "ds") {
 ![](img/7a81120f3fcfd17d264c4ace19b756f8_112_0.png)
 
 2. 在不在任何字段中输入任何内容的情况下提交表单。
+
 带有三个错误信息的表单将出现在你的浏览器窗口中。
 
 ![](img/7a81120f3fcfd17d264c4ace19b756f8_112_1)
 
-3. 在 字段中输入姓名并提交表单。
+3. 在字段中输入姓名并提交表单。
 
 ![](img/7a81120f3fcfd17d264c4ace19b756f8_113_0.png)
 
@@ -2177,7 +2440,9 @@ if ($_POST['op'] == "ds") {
 
 5. 在 Name 字段中输入姓名，在 E-Mail 字段中输入邮箱，输入以下消息，然后提交表单。
 
+```
 这个合一功能挺酷的！
+```
 
 6. 提交表单。
 
@@ -2189,30 +2454,35 @@ if ($_POST['op'] == "ds") {
 
 ## 如果出错时保存值
 
-你可能在原始脚本中注意到一点，如果你犯了错误，表单会重置，你丢失了之前输入的值。对原始的 $form_block 进行简单的修改即可解决这个问题。只需在表单字段中添加 VALUE 属性来存储给定变量的任何之前值。
+你可能在原始脚本中注意到一点，如果你犯了错误，表单会重置，你丢失了之前输入的值。对原始的`$form_block`进行简单的修改即可解决这个问题。只需在表单字段中添加 VALUE 属性来存储给定变量的任何之前值。
 
-1. 在编辑器中打开 allinone.php。
+1. 在编辑器中打开`allinone.php`。
 
-2. 在 $form_block 变量内部，修改 Name 的输入字段：
-   `<input type="text" name="sender_name" size="30">`
+2. 在`$form_block`变量内部，修改 Name 的输入字段：
 
-</p>
+```html
+<input type="text" name="sender_name" size="30">
+```
 
 3. 修改 E-Mail Address 的输入字段：
-   `<input type="text" name="sender_email" value="$_POST['sender_email']" size="30">`
+
+```html
+<input type="text" name="sender_email" value="$_POST['sender_email']" size="30">
+```
 
 4. 修改 Message 的文本区域：
-   `<textarea name="message" cols="30" rows="5" wrap="virtual">$_POST['message']</textarea>`
-   注意：TEXTAREA 没有 value 属性。相反，值应该位于起始和结束标签之间。
 
+```html
+<textarea name="message" cols="30" rows="5" wrap="virtual">$_POST['message']</textarea>
+```
 
-
+> 注意：`TEXTAREA`没有 value 属性。相反，值应该位于起始和结束标签之间。
 
 ## 使用 fopen() 和 fclose()
 
-在深入研究文件之前，你需要学习用于打开文件的 `fopen()` 函数。该函数需要一个文件名和模式，并返回一个文件指针。
+在深入研究文件之前，你需要学习用于打开文件的`fopen()`函数。该函数需要一个文件名和模式，并返回一个文件指针。
 
-表 9.1：fopen() 的模式
+表 9.1：`fopen()`的模式
 
 | 模式 | 用法 |
 | :--- | :--- |
@@ -2226,54 +2496,70 @@ if ($_POST['op'] == "ds") {
 目标是创建一个空文件。
 
 1. 在你的文本编辑器中打开一个新文件并添加 PHP 块：
+
 ```php
-php
+<?php
 ```
 
 2. 创建一个变量来保存文件的完整路径：
-`$filename = "/Documents/Desktop/misc/mydata.txt";`
 
-3. 创建一个文件指针并使用 `fopen()` 函数打开它。`die()` 函数将向屏幕发送消息。
-> **注意** 文件指针用于引用刚刚打开的文件。
+```php
+$filename = "/Documents/Desktop/misc/mydata.txt";
+```
+
+3. 创建一个文件指针并使用`fopen()`函数打开它。`die()`函数将向屏幕发送消息。
+
+> **注意**：文件指针用于引用刚刚打开的文件。
 
 4. 创建一个成功后打印的消息，然后关闭你的 PHP 块：
-`$msg = "<p>文件已创建！</p>";`
+
+```php
+$msg = "<p>文件已创建！</p>";
+```
 
 5. 添加以下 HTML：
+
+```html
 <HTML>
 <HEAD>
 <TITLE>创建新文件</TITLE>
 </HEAD>
+```
 
-> **注意** 该目录在我的机器上。。替换你的目录名以便在你的环境中运行！
+> **注意**：该目录在我的机器上。替换你的目录名以便在你的环境中运行！
 
 6. 打印消息以使文档有效：
+
+```php
 <?php echo "$msg"; ?>
 ```
+
+```html
 <body>
 ```
 
 7. 添加更多 HTML 以结束：
+
 ```html
 </body>
 </html>
 ```
 
-8. 将文件保存为 `newfile.php`，并将此文件放在你 Web 服务器的文档根目录下。
+8. 将文件保存为`newfile.php`，并将此文件放在你 Web 服务器的文档根目录下。
 
 9. 打开你的浏览器并输入 http://127.0.0.1/newfile.php。
 
 如果文件创建成功，你应该能看到下图所示的成功消息。
 
-然而，如果你的文件创建失败，你将看到一个糟糕的解析错误。你可以通过对 $filename 使用无效值来强制触发错误，例如：
+然而，如果你的文件创建失败，你将看到一个糟糕的解析错误。你可以通过对`$filename`使用无效值来强制触发错误，例如：
 
-```
+```php
 $filename = "/bozo/mydata.txt";
 ```
 
 当你运行脚本时，你会看到类似下图的内容。
 
-尽管 `die()` 函数会通过打印指定的错误消息完成其工作，但 PHP 会根据函数的执行失败发出自己的警告。你可以通过在函数前面使用 `@` 符号来抑制 PHP 的错误和警告。
+尽管`die()`函数会通过打印指定的错误消息完成其工作，但 PHP 会根据函数的执行失败发出自己的警告。你可以通过在函数前面使用`@`符号来抑制 PHP 的错误和警告。
 
 在你的脚本中，将此行：
 
@@ -2291,78 +2577,109 @@ $newfile = @fopen($filename,
 file.");
 ```
 
-
-
-保存文件并通过网络浏览器访问该脚本。你现在将看到来自 `die()` 函数的消息，不再有其他警告。
+保存文件并通过网络浏览器访问该脚本。你现在将看到来自`die()`函数的消息，不再有其他警告。
 
 ## 检查文件是否已存在
 
-为了避免在文件系统中运行过程中出现任何管理错误，你可以使用 `file_exists()` 函数在创建文件之前检查其是否已存在。此脚本将执行此操作，并打印其中一条消息：
+为了避免在文件系统中运行过程中出现任何管理错误，你可以使用`file_exists()`函数在创建文件之前检查其是否已存在。此脚本将执行此操作，并打印其中一条消息：
 
-- 1. 在文本编辑器中打开一个新文件并开始 PHP 代码块：
+1. 在文本编辑器中打开一个新文件并开始 PHP 代码块：
 
-- 2. 创建一个变量来存储文件的完整路径（使用你的文件路径）：
-  `$filename = "/Documents/Settings/Owner/Desktop/misc/mydata.txt";`
+2. 创建一个变量来存储文件的完整路径（使用你的文件路径）：
 
-注意：是的，这就是你在上一节中创建的文件。没关系，因为这会触发错误检查！
+```php
+$filename = "/Documents/Settings/Owner/Desktop/misc/mydata.txt";
+```
 
-- 3. 开启 if...else 语句，用于检查 `file_exists()` 函数的真/假结果：
-  `if (file_exists($filename)) {`
+> 注意：是的，这就是你在上一节中创建的文件。没关系，因为这会触发错误检查！
 
-- 4. 创建一个变量来存储关于文件存在的消息：
-  `$msg = "<P>File already exists.</P>";`
+3. 开启`if...else`语句，用于检查`file_exists()`函数的真/假结果：
 
-- 5. 继续 else 语句，以便在文件不存在时执行操作：
-  `} else {`
+```php
+if (file_exists($filename)) {
+```
 
-- 6. 创建一个文件指针并使用 `fopen()` 函数以读写模式打开第 2 步指定的文件。如果文件没有正常打开，`die()` 函数会导致脚本结束并显示消息。
-  `$newfile = @fopen($filename, "w+") or die("Couldn't create file.");`
+4. 创建一个变量来存储关于文件存在的消息：
 
-- 7. 创建一个变量来存储成功消息：
-  `$msg = "<P>File created!</P>";`
+```php
+$msg = "<P>File already exists.</P>";
+```
 
-- 8. 关闭文件指针、if...else 语句以及你的 PHP 代码块：
+5. 继续`else`语句，以便在文件不存在时执行操作：
+
+```php
+} else {
+```
+
+6. 创建一个文件指针并使用`fopen()`函数以读写模式打开第 2 步指定的文件。如果文件没有正常打开，`die()`函数会导致脚本结束并显示消息。
+
+```php
+$newfile = @fopen($filename, "w+") or die("Couldn't create file.");
+```
+
+7. 创建一个变量来存储成功消息：
+
+```php
+$msg = "<P>File created!</P>";
+```
+
+8. 关闭文件指针、`if...else`语句以及你的 PHP 代码块：
 
 ```php
 fclose($newfile);
 }
 ```
 
-- 9. 添加此 HTML：
+9. 添加此 HTML：
+
+```html
 <HTML>
 <HEAD>
 <TITLE>creating a New File</TITLE>
 </HEAD>
 <BODY>
+```
 
-- 10. 打印消息：
-  `<?php echo $msg; ?>`
+10. 打印消息：
 
-- 11. 添加更多 HTML 以确保文档有效：
-  `<BODY>
-  </HTML>`
+```php
+<?php echo $msg; ?>
+```
 
-- 12. 将文件保存为 `newfile-checkfirst.php`，并将其放在 Web 服务器的文档根目录下。
+11. 添加更多 HTML 以确保文档有效：
 
-- 13. 打开网络浏览器并输入 http://127.0.0.1/newfile-checkfirst.php。
+```html
+<BODY>
+</HTML>
+```
+
+12. 将文件保存为`newfile-checkfirst.php`，并将其放在 Web 服务器的文档根目录下。
+
+13. 打开网络浏览器并输入 http://127.0.0.1/newfile-checkfirst.php。
 
 假设你已经有一个之前创建的文件，你应该会在接下来的图中看到错误消息。
 
 ![](img/7a81120f3fcfd17d264c4ace19b756f8_126_0.png)
 
-如果你将 `$filename` 的值改为一个不存在的文件并再次访问脚本，你将看到成功消息。因为创建文件很无聊，在下一节中你将学习如何向文件写入数据。
+如果你将`$filename`的值改为一个不存在的文件并再次访问脚本，你将看到成功消息。因为创建文件很无聊，在下一节中你将学习如何向文件写入数据。
 
 ## 向文件追加数据
 
 下一个脚本的目标是向文件追加数据。如果文件存在，脚本将直接向其中写入数据。如果文件不存在，将在写入数据之前创建它。
 
-- 1. 在文本编辑器中打开一个新文件并开始 PHP 代码块：
-  `<?php`
+1. 在文本编辑器中打开一个新文件并开始 PHP 代码块：
 
-- 2. 创建一个变量来存储文件的完整路径（使用你自己的路径）：
-  `$filename = "/Documents and Settings/Owner/desktop/misc/textfile.txt";`
+```php
+<?php
+```
 
-- 1. 创建一个名为 `$newstring` 的变量来存储你想写入文件的字符串。用这条非常有趣的消息填充该字符串：
+2. 创建一个变量来存储文件的完整路径（使用你自己的路径）：
+
+```php
+$filename = "/Documents and Settings/Owner/desktop/misc/textfile.txt";
+```
+
+3. 创建一个名为`$newstring`的变量来存储你想写入文件的字符串。用这条非常有趣的消息填充该字符串：
 
 ```php
 $newstring = "\nCheck it out:\nI've created a new file and stuck all this text into it";
@@ -2370,36 +2687,57 @@ $newstring = "\nCheck it out:\nI've created a new file and stuck all this text i
 
 ![](img/7a81120f3fcfd17d264c4ace19b756f8_127_0.png)
 
-- 2. 创建一个文件指针并使用 `fopen()` 函数以读写模式打开第 2 步指定的文件。如果文件没有正常打开，`die()` 函数会导致脚本结束并显示消息。
-  `$myfile = @fopen($filename, "a") or die("Couldn't open file.");`
+4. 创建一个文件指针并使用`fopen()`函数以读写模式打开第 2 步指定的文件。如果文件没有正常打开，`die()`函数会导致脚本结束并显示消息。
 
-- 3. 使用 `fwrite()` 函数将文本 (`$newstring`) 放入文件 (`$myfile`) 中。如果 `fwrite()` 函数执行失败，`die()` 函数会导致脚本结束并显示消息。
-  `fwrite($myfile, $newstring) or die("Couldn't write to file.");`
+```php
+$myfile = @fopen($filename, "a") or die("Couldn't open file.");
+```
 
-- 4. 创建一个变量来存储成功消息：
-  `$msg = "<p>File has data now...</p>";`
+5. 使用`fwrite()`函数将文本（`$newstring`）放入文件（`$myfile`）中。如果`fwrite()`函数执行失败，`die()`函数会导致脚本结束并显示消息。
 
-- 5. 关闭文件指针和 PHP 代码块：
-  `fclose($myfile);
-  ?>`
+```php
+fwrite($myfile, $newstring) or die("Couldn't write to file.");
+```
 
-- 6. 添加此 HTML：
+6. 创建一个变量来存储成功消息：
+
+```php
+$msg = "<p>File has data now...</p>";
+```
+
+7. 关闭文件指针和 PHP 代码块：
+
+```php
+fclose($myfile);
+?>
+```
+
+8. 添加此 HTML：
+
+```html
 <HTML>
 <HEAD>
 <TITLE>Adding Data to a File</TITLE>
 </HEAD>
 <BODY>
+```
 
-- 7. 打印消息：
-  `<?php echo $msg; ?>`
+9. 打印消息：
 
-- 8. 添加一些 HTML 以确保文档有效：
-  `<BODY>
-  </HTML>`
+```php
+<?php echo $msg; ?>
+```
 
-- 9. 将文件保存为 `appenddata.php`，并将其放在 Web 服务器的文档根目录下。
+10. 添加一些 HTML 以确保文档有效：
 
-- 10. 打开网络浏览器并输入 http://127.0.0.1/appenddata.php。
+```html
+<BODY>
+</HTML>
+```
+
+11. 将文件保存为`appenddata.php`，并将其放在 Web 服务器的文档根目录下。
+
+12. 打开网络浏览器并输入 http://127.0.0.1/appenddata.php。
 
 ![](img/7a81120f3fcfd17d264c4ace19b756f8_128_0.png)
 
@@ -2409,59 +2747,89 @@ $newstring = "\nCheck it out:\nI've created a new file and stuck all this text i
 
 这将创建一个脚本从上一节创建的文件读取数据。你可以直接在文本编辑器中打开文件，但乐趣在哪里呢？PHP 有一个函数可以为你完成这项工作。
 
-- 1. 在文本编辑器中打开一个新文件并开始 PHP 代码块：
+1. 在文本编辑器中打开一个新文件并开始 PHP 代码块：
+
 ```php
 <?php
 ```
 
-- 2. 创建一个变量来持有上一节创建的文件完整路径（使用你自己的路径）：
-  `$filename = "/Documents and Settings/Owner/Desktop/misc/textfile.txt";`
+2. 创建一个变量来持有上一节创建的文件完整路径（使用你自己的路径）：
 
-- 3. 创建一个指针使用 `fopen()` 函数以只读模式打开第 2 步的文件。如果文件没有正常打开，`die()` 将取消脚本并显示消息。
-  `$whatread = @fopen($filename, "r") or die("Couldn't open file");`
+```php
+$filename = "/Documents and Settings/Owner/Desktop/misc/textfile.txt";
+```
 
-- 4. 创建一个变量 `$file_contents`，只要有内容，就使用 `fread()` 函数从文件指针读取所有行：
+3. 创建一个指针使用`fopen()`函数以只读模式打开第 2 步的文件。如果文件没有正常打开，`die()`将取消脚本并显示消息。
+
+```php
+$whatread = @fopen($filename, "r") or die("Couldn't open file");
+```
+
+4. 创建一个变量`$file_contents`，只要有内容，就使用`fread()`函数从文件指针读取所有行：
+
 ```php
 $file_contents = fread($whatread, filesize($filename));
 ```
-注意：对现有文件使用 `filesize()` 函数可以让 PHP 处理。`fread()` 函数的第二个参数是文件的长度。如果你不知道长度但想要所有内容，可以使用 `filesize($filename)` 获取该长度。
 
-- 5. 创建一个变量来存放包含文件内容的消息：
-  `$msg = "The file contains:<br>$file_contents";`
+> 注意：对现有文件使用`filesize()`函数可以让 PHP 处理。`fread()`函数的第二个参数是文件的长度。如果你不知道长度但想要所有内容，可以使用`filesize($filename)`获取该长度。
 
-- 6. 关闭指针和 PHP 代码块：
-  `fclose($whatread);
-  ?>`
+5. 创建一个变量来存放包含文件内容的消息：
 
-- 7. 添加此 HTML：
+```php
+$msg = "The file contains:<br>$file_contents";
+```
+
+6. 关闭指针和 PHP 代码块：
+
+```php
+fclose($whatread);
+?>
+```
+
+7. 添加此 HTML：
+
+```html
 <HTML>
 <HEAD>
 <TITLE>Reading Data From a File</TITLE>
 </HEAD>
 <BODY>
+```
 
-- 8. 打印消息：
-  `<?php echo $msg; ?>`
+8. 打印消息：
 
-- 9. 添加更多 HTML 以确保文档有效：
-  `<BODY>
-  </HTML>`
+```php
+<?php echo $msg; ?>
+```
 
-- 10. 将文件保存为 `readdata.php`，并将其放在 Web 服务器的根目录。
+9. 添加更多 HTML 以确保文档有效：
 
-- 11. 打开浏览器并输入 http://127.0.0.1/readdata.php。
+```html
+<BODY>
+</HTML>
+```
+
+10. 将文件保存为`readdata.php`，并将其放在 Web 服务器的根目录。
+
+11. 打开浏览器并输入 http://127.0.0.1/readdata.php。
 
 ![](img/7a81120f3fcfd17d264c4ace19b756f8_129_0.png)
 
-这确实写入文件的字符串，但换行符发生了什么？换行符对只渲染 HTML 的浏览器来说没有意义。幸运的是，PHP 开发团队非常有远见，创建了 `nl2br()`（换行转换行，懂吗？）。对 `readdata.php` 脚本进行一些微调。
+这确实写入文件的字符串，但换行符发生了什么？换行符对只渲染 HTML 的浏览器来说没有意义。幸运的是，PHP 开发团队非常有远见，创建了`nl2br()`（换行转换行，懂吗？）。对`readdata.php`脚本进行一些微调。
 
-- 1. 在包含 `fread()` 函数的行之后添加此行：
-  `$new_file_contents = nl2br($file_contents);`
+1. 在包含`fread()`函数的行之后添加此行：
 
-- 2. 修改 `$msg` 字符串使其看起来像这样：
-  `$msg = "The file contains:<br>$new_file_contents";`
+```php
+$new_file_contents = nl2br($file_contents);
+```
 
-- 3. 保存文件。
+2. 修改`$msg`字符串使其看起来像这样：
+
+```php
+$msg = "The file contains:<br>$new_file_contents";
+```
+
+3. 保存文件。
 
 现在在浏览器中打开此文件，注意此处所示的换行。
 
@@ -2473,61 +2841,94 @@ $file_contents = fread($whatread, filesize($filename));
 
 如果你将 HTML 表单提交保存到纯文本文件中，只想在特定时间读取，你可以编写一个小脚本按需为你管理文件内容。
 
-- 1. 在文本编辑器中打开一个新文件并开始 PHP 代码块：
+1. 在文本编辑器中打开一个新文件并开始 PHP 代码块：
+
 ```php
 <?php
 ```
 
-- 2. 创建一个变量来存储包含数据的文件的完整路径（使用你自己的路径）：
-  `$filename = "Documents and Settings/Owner/Desktop/misc/textfile.txt";`
+2. 创建一个变量来存储包含数据的文件的完整路径（使用你自己的路径）：
 
-- 3. 创建一个文件指针并使用 `fopen()` 函数以只读模式打开第 2 步的文件。如果文件没有正常打开，`die()` 函数将调用脚本结束并显示消息。
-  `$whatread = @fopen($filename, "r") or die("Couldn't open file");`
+```php
+$filename = "Documents and Settings/Owner/Desktop/misc/textfile.txt";
+```
 
-- 4. 创建一个变量存储内容，只要有行，就使用 `fread()` 函数从打开的文件指针 (`$whatread`) 读取所有行：
-  `$file_contents = @fread($whatread, filesize($filename));`
+3. 创建一个文件指针并使用`fopen()`函数以只读模式打开第 2 步的文件。如果文件没有正常打开，`die()`函数将调用脚本结束并显示消息。
 
-- 5. 创建一个变量存储你的邮箱地址：
-  `$to = "you@yourdomain.com";`
+```php
+$whatread = @fopen($filename, "r") or die("Couldn't open file");
+```
 
-- 6. 创建一个用于邮件主题的变量：
-  `$subject = "From: My Web Site <genericaddress@yourdomain.com> \n";`
+4. 创建一个变量存储内容，只要有行，就使用`fread()`函数从打开的文件指针（`$whatread`）读取所有行：
 
-- 7. 使用 `$file_contents` 字符串作为第三参数（消息）填充 `mail()` 函数：
-  `mail($to, $subject, $file_contents, $mailheaders);`
+```php
+$file_contents = @fread($whatread, filesize($filename));
+```
 
-- 8. 创建一个变量在屏幕上打印消息：
-  `$msg = "<P>Check your mail!</P>";`
+5. 创建一个变量存储你的邮箱地址：
 
-- 10. 关闭文件指针和你的 PHP 代码块：
-  `fclose($whatread);
-  ?>`
+```php
+$to = "you@yourdomain.com";
+```
 
+6. 创建一个用于邮件主题的变量：
+
+```php
+$subject = "From: My Web Site <genericaddress@yourdomain.com> \n";
+```
+
+7. 使用`$file_contents`字符串作为第三参数（消息）填充`mail()`函数：
+
+```php
+mail($to, $subject, $file_contents, $mailheaders);
+```
+
+8. 创建一个变量在屏幕上打印消息：
+
+```php
+$msg = "<P>Check your mail!</P>";
+```
+
+9. 关闭文件指针和你的 PHP 代码块：
+
+```php
+fclose($whatread);
+?>
+```
 
 ```php
 fclose($whatattoread);
 ?>
 ```
 
-11. 添加此 HTML：
+10. 添加此 HTML：
+
+```html
 <HTML>
 <HEAD>
 <TITLE>从文件发送邮件数据</TITLE>
 </HEAD>
 <body>
+```
 
-12. 打印消息：
+11. 打印消息：
+
+```php
 <?php echo "Smag"; ?>
+```
 
-13. 添加更多 HTML 以使文档格式有效：
+12. 添加更多 HTML 以使文档格式有效：
+
+```html
 <BODY>
 </HTML>
+```
 
-14. 将文件保存为 `mail.php`，并将此文件放在你服务器的文档根目录下。
+13. 将文件保存为`mail.php`，并将此文件放在你服务器的文档根目录下。
 
-15. 打开你的 Web 浏览器并输入 `http://127.0.0.1/mail.php`。
+14. 打开你的 Web 浏览器并输入`http://127.0.0.1/mail.php`。
 
-正如消息所说，检查你的邮件！你将收到一封等待你的邮件，内容是文件的内容。与之前的脚本不同，你不需要使用 `copy()` 函数，因为你不需要在网页浏览器中显示文本。纯文本将保持原始状态。
+正如消息所说，检查你的邮件！你将收到一封等待你的邮件，内容是文件的内容。与之前的脚本不同，你不需要使用`copy()`函数，因为你不需要在网页浏览器中显示文本。纯文本将保持原始状态。
 
 ## 文件系统维护
 
@@ -2535,27 +2936,34 @@ fclose($whatattoread);
 
 ## 复制文件
 
-`copy()` 函数非常简单：它需要知道原始文件名和新文件名，仅此而已。
+`copy()`函数非常简单：它需要知道原始文件名和新文件名，仅此而已。
 
 1. 在你的文本编辑器中打开一个新文件并开始 PHP 块：
+
+```php
 <?php
+```
 
 2. 创建一个变量来存储原始文件的完整路径（使用你自己的路径）：
+
 ```php
 $filename = "Documents and Settings/Owner/Desktop/file.txt";
 ```
 
 3. 创建一个变量来存储新文件的完整路径（使用你自己的路径）：
+
 ```php
 $new_filename = "Documents and Settings/Owner/Desktop/file.bak";
 ```
 
-4. 创建一个变量来存储函数的真/假结果。在函数前加 `@` 来抑制警告，并在函数失败时使用 `die()` 打印消息：
+4. 创建一个变量来存储函数的真/假结果。在函数前加`@`来抑制警告，并在函数失败时使用`die()`打印消息：
+
 ```php
 $success = @copy($filename, $new_filename) or die("Couldn't copy file.");
 ```
 
-5. 开始一个 `if...else` 语句，根据函数的输出打印消息：
+5. 开始一个`if...else`语句，根据函数的输出打印消息：
+
 ```php
 if ($success) {
     $msg = "Copied $filename to $new_filename";
@@ -2564,6 +2972,7 @@ if ($success) {
 6. 成功时，消息字符串应该打印确认信息：
 
 7. 失败时，继续语句并关闭 PHP 块：
+
 ```php
 } else {
     $msg = "Couldn't copy file.";
@@ -2571,6 +2980,7 @@ if ($success) {
 ```
 
 8. 添加此 HTML：
+
 ```html
 <HTML>
 <HEAD>
@@ -2580,56 +2990,72 @@ if ($success) {
 ```
 
 9. 打印消息：
+
 ```php
 <?php echo "$msg"; ?>
 ```
 
 10. 添加更多 HTML 以使文档有效：
+
 ```html
 </body>
 </HTML>
 ```
 
-11. 将文件保存为 `copy.php`，并将此文件放在你服务器的文档根目录下。
+11. 将文件保存为`copy.php`，并将此文件放在你服务器的文档根目录下。
 
-12. 打开你的 Web 浏览器并输入 `http://127.0.0.1/copy.php`。
+12. 打开你的 Web 浏览器并输入`http://127.0.0.1/copy.php`。
 
-通过浏览器访问，如果 `$filename` 的值不存在，你会看到错误。
+通过浏览器访问，如果`$filename`的值不存在，你会看到错误。
 
 ## 重命名文件
 
-与 `copy()` 函数一样，`rename()` 函数只需要知道原始文件名和新文件名。这非常简单！
+与`copy()`函数一样，`rename()`函数只需要知道原始文件名和新文件名。这非常简单！
 
 1. 在你的文本编辑器中打开一个新文件并开始 PHP 块：
+
+```php
 <?php
+```
+
 2. 创建一个变量来存储原始文件的完整路径（使用你自己的路径）：
+
 ```php
 $filename = "Documents and Settings/Owner/Desktop/file.txt";
 ```
 
 3. 创建一个变量来存储新文件的完整路径（使用你自己的路径）：
+
 ```php
 $new_filename = "Documents and Settings/Owner/Desktop/file.bak";
 ```
 
-4. 创建一个变量来存储函数的真/假结果。在函数前加 `@` 来抑制警告，并在函数失败时 `die()`：
+4. 创建一个变量来存储函数的真/假结果。在函数前加`@`来抑制警告，并在函数失败时`die()`：
+
 ```php
 $success = @rename($filename, $new_filename) or die("Couldn't rename file.");
 ```
 
-5. 开始一个 `if...else` 语句，根据函数的输出打印消息：
+5. 开始一个`if...else`语句，根据函数的输出打印消息：
+
 ```php
 if ($success) {
-6. 成功时，消息字符串应该打印确认信息：
-```php
-    $msg = "Renamed $filename to $new_filename";
 ```
+
+6. 成功时，消息字符串应该打印确认信息：
+
+```php
+$msg = "Renamed $filename to $new_filename";
+```
+
 7. 失败时，继续语句并关闭 PHP 块：
+
 ```php
 }
 ```
 
 8. 添加此 HTML：
+
 ```html
 <HTML>
 <HEAD>
@@ -2639,47 +3065,60 @@ if ($success) {
 ```
 
 9. 打印消息：
+
 ```php
 <?php echo "$msg"; ?>
 ```
 
 10. 添加更多 HTML 以使文档有效：
+
 ```html
 </body>
 </HTML>
 ```
 
-11. 将文件保存为 `rename.php`，并将此文件放在你服务器的文档根目录下。
+11. 将文件保存为`rename.php`，并将此文件放在你服务器的文档根目录下。
 
-12. 打开你的 Web 浏览器并输入 `http://127.0.0.1/rename.php`。
+12. 打开你的 Web 浏览器并输入`http://127.0.0.1/rename.php`。
 
-通过浏览器访问，如果 `$new_filename` 的值不存在，你会看到错误。
+通过浏览器访问，如果`$new_filename`的值不存在，你会看到错误。
 
 ## 删除文件
 
-`unlink()` 函数非常简单：它只需要知道要删除的文件名。
+`unlink()`函数非常简单：它只需要知道要删除的文件名。
 
 1. 在你的文本编辑器中打开一个新文件并开始 PHP 块：
+
+```php
 <?php
+```
+
 2. 创建一个变量来存储文件的完整路径（使用你自己的路径）：
+
 ```php
 $filename = "Documents and Settings/Owner/Desktop/file.txt";
 ```
 
-3. 创建一个变量来存储函数的真/假结果。在函数前加 `@` 来抑制警告，并在函数失败时 `die()`：
+3. 创建一个变量来存储函数的真/假结果。在函数前加`@`来抑制警告，并在函数失败时`die()`：
+
 ```php
 $success = @unlink($filename) or die("Couldn't delete file.");
 ```
 
-4. 开始一个 `if...else` 语句，根据函数的输出打印消息：
+4. 开始一个`if...else`语句，根据函数的输出打印消息：
+
 ```php
 if ($success) {
+```
+
 5. 成功时，消息字符串应该打印确认信息：
+
 ```php
-    $msg = "Deleted $filename";
+$msg = "Deleted $filename";
 ```
 
 6. 失败时，继续语句并关闭 PHP 块：
+
 ```php
 } else {
     $msg = "Could not delete file.";
@@ -2688,6 +3127,7 @@ if ($success) {
 ```
 
 7. 添加此 HTML：
+
 ```html
 <HTML>
 <HEAD>
@@ -2697,23 +3137,21 @@ if ($success) {
 ```
 
 8. 打印消息：
+
 ```php
 <?php echo "$msg"; ?>
 ```
 
 9. 添加更多 HTML 以使文档有效：
+
 ```html
 </body>
 </HTML>
 ```
 
-10. 将文件保存为 `delete.php`，并将此文件放在你服务器的文档根目录下。
+10. 将文件保存为`delete.php`，并将此文件放在你服务器的文档根目录下。
 
-11. 打开你的 Web 浏览器并输入 `http://127.0.0.1/delete.php`。
-
-
-
-
+11. 打开你的 Web 浏览器并输入`http://127.0.0.1/delete.php`。
 
 ## 理解流程
 
@@ -2733,7 +3171,7 @@ if ($success) {
 3. 文件的完整路径和文件名显示在文本字段中。
 4. 用户点击提交按钮。
 5. 选的文件发送出去，到达 Web 服务器，并留在临时目录中。
-6. 表单 action 中使用的 PHP 脚本检查是否发送了文件，并对临时文件执行 `copy` 命令将其移动到 Web 服务器上的实际目录。
+6. 表单 action 中使用的 PHP 脚本检查是否发送了文件，并对临时文件执行`copy`命令将其移动到 Web 服务器上的实际目录。
 7. PHP 脚本向用户确认该操作。
 
 > 注意：PHP 用户（运行 PHP 的用户，通常为 "nobody"、"www" 或 "joe"）必须在临时目录或文件的目标目录中具有写入权限。如果你在权限方面遇到困难，请联系你的系统管理员。
@@ -2745,6 +3183,7 @@ if ($success) {
 从创建一个单文件表单开始。在你让这个单个文件的流程通通后，你可以创建一个表单来上传任意数量的文件。
 
 1. 在你的文本编辑器中打开一个文件并输入以下 HTML：
+
 ```html
 <HTML>
 <HEAD>
@@ -2755,19 +3194,22 @@ if ($success) {
 </BODY>
 ```
 
-2. 开始你的表单。假设方法为 POST，action 是名为 `do_upload.php` 的脚本。因为你要发送的不仅仅是文本，请使用 ENCRYPT 属性。
+2. 开始你的表单。假设方法为 POST，action 是名为`do_upload.php`的脚本。因为你要发送的不仅仅是文本，请使用 ENCRYPT 属性。
+
 ```html
 <FORM METHOD="POST" ACTION="do_upload.php" ENCRYPT="multipart/form-data">
 ```
 
-3. 为文件创建一个带有文本标签的输入字段。假设你将上传一个图像文件，并将输入字段命名为 `img`：
+3. 为文件创建一个带有文本标签的输入字段。假设你将上传一个图像文件，并将输入字段命名为`img`：
+
 ```html
 <strong>要上传的文件：</strong><br><INPUT TYPE="file" NAME="img" SIZE="30">
 ```
 
-> 注意：表单字段中的 Type="file" 属性将显示一个带有“浏览”按钮的输入字段。“浏览”按钮将启动文件管理器，通过它选择要上传的文件。
+> 注意：表单字段中的`Type="file"`属性将显示一个带有“浏览”按钮的输入字段。“浏览”按钮将启动文件管理器，通过它选择要上传的文件。
 
 4. 添加一个提交按钮，然后关闭表单并添加更多 HTML 以确保文档有效：
+
 ```html
 <P><INPUT TYPE="submit" NAME="submit" VALUE="上传文件"></P>
 </FORM>
@@ -2775,7 +3217,7 @@ if ($success) {
 </HTML>
 ```
 
-5. 以 `upload_form.html` 命名保存文件，并将此文件放在 Web 服务器的文档根目录下。
+5. 以`upload_form.html`命名保存文件，并将此文件放在 Web 服务器的文档根目录下。
 
 6. 打开浏览器并输入 http://127.0.0.1/upload_form.html。
 
@@ -2783,17 +3225,18 @@ if ($success) {
 
 ## 创建上传脚本
 
-花一点时间将代码记在脑——它包含了文件成功上传后自动放入 `$_FILES` 超全局变量中的变量。`$_FILES` 的基础来自原始表单中输入字段的。
+花一点时间将代码记在脑——它包含了文件成功上传后自动放入`$_FILES`超全局变量中的变量。`$_FILES`的基础来自原始表单中输入字段的。
 
-- `$_FILES[name]`。该值是上传文件的实际文件名。例如，如果文件名是 `me.jpg`，那么 `$_FILES[img][name]` 的值就是 `me.jpg`。
+- `$_FILES[name]`。该值是上传文件的实际文件名。例如，如果文件名是`me.jpg`，那么`$_FILES[img][name]`的值就是`me.jpg`。
 - `$_FILES[size]`。上传的文件的大小（以字节为单位）。
-- `$_FILES[type]`。上传文件的 MIME 类型，例如 `image/jpg`。
+- `$_FILES[type]`。上传文件的 MIME 类型，例如`image/jpg`。
 
-> 注意：MIME 类型表示正在传输的内容类型。例如，JPEG 文件的 MIME 类型是 `image/jpeg`，Microsoft Word 文档的 MIME 类型是 `application/msword`。
+> 注意：MIME 类型表示正在传输的内容类型。例如，JPEG 文件的 MIME 类型是`image/jpeg`，Microsoft Word 文档的 MIME 类型是`application/msword`。
 
 该脚本的目标是将文件上传到你的 Web 服务器的根目录，并向用户返回一个包含上述列表中所有值的确认。
 
 1. 在你的文本编辑器中打开一个新文件并添加 PHP 块：
+
 ```php
 // 创建 if else 语句来检查 $_FILES[img] 是否不为空
 if ($_FILES[img]) {
@@ -2802,18 +3245,25 @@ if ($_FILES[img]) {
     copy($_FILES[img][tmp_name], "/usr/local/apache2/htdocs/../$_FILES[img][name]") or die("无法复制文件.");
 }
 ```
-2. 注意，如果你的服务器根目录是 `/usr/local/apache2/htdocs/`（如步骤 3 所示），请根据你自己的系统匹配路径。例如，Windows 用户可能会使用 `/Program Files/Apache2Group/Apache/htdocs/`。
-3. 继续 `else` 语句以处理缺少上传文件的情况：
+
+2. 注意，如果你的服务器根目录是`/usr/local/apache2/htdocs/`（如步骤 3 所示），请根据你自己的系统匹配路径。例如，Windows 用户可能会使用`/Program Files/Apache2Group/Apache/htdocs/`。
+
+3. 继续`else`语句以处理缺少上传文件的情况：
+
 ```php
 else {
     die("未上传任何文件.");
 }
 ```
-4. 关闭 `else` 语句，并关闭 PHP：
+
+4. 关闭`else`语句，并关闭 PHP：
+
 ```php
 ?>
 ```
+
 5. 添加此 HTML：
+
 ```html
 <HTML>
 <HEAD>
@@ -2821,110 +3271,189 @@ else {
 </HEAD>
 <body>
 ```
+
 6. 添加更多 PHP，打印上传的文件（名称、大小、类型）：
+
 ```php
 <p><?php echo $_FILES[img][name]; ?> <?php echo $_FILES[img][size]; ?> <?php echo $_FILES[img][type]; ?></p>
 ```
+
 7. 关闭 HTML：
+
 ```html
 </body>
 </HTML>
 ```
 
-
-
-
-
 # 连接到 MySQL
 
 此脚本的目标仅仅是连接到运行在你机器（localhost）上的 MySQL。
 
-- 1. 在文本编辑器中打开一个文件并开始一个 PHP 块：
+1. 在文本编辑器中打开一个文件并开始一个 PHP 块：
+
+```php
 <?php
--2. 创建一个变量来存储 `mysql_connect()` 函数的结果：
-`$connection = mysql_connect("localhost", "spike", "9sj7En4");`
-注意：`mysql_connect()` 函数需要主机名、用户名和密码（按此顺序）。
-3. 在 `mysql_connect()` 函数中添加 `die()`，以便在连接失败时结束脚本并显示消息。使用 `die()` 函数时，请配合 `mysql_error()` 函数。当发生错误时，将打印 MySQL 发送的精确错误信息。新行代码应如下：
-`$connection = mysql_connect("localhost", "spike", "9sj7En4") or die(mysql_error());`
-4. 测试 $connection 的值。如果它为 true，说明已成功连接到 MySQL，并创建一个变量来存储消息：
+```
+
+2. 创建一个变量来存储`mysql_connect()`函数的结果：
+
+```php
+$connection = mysql_connect("localhost", "spike", "9sj7En4");
+```
+
+> 注意：`mysql_connect()`函数需要主机名、用户名和密码（按此顺序）。
+
+3. 在`mysql_connect()`函数中添加`die()`，以便在连接失败时结束脚本并显示消息。使用`die()`函数时，请配合`mysql_error()`函数。当发生错误时，将打印 MySQL 发送的精确错误信息。新行代码应如下：
+
+```php
+$connection = mysql_connect("localhost", "spike", "9sj7En4") or die(mysql_error());
+```
+
+4. 测试`$connection`的值。如果它为`true`，说明已成功连接到 MySQL，并创建一个变量来存储消息：
+
 ```php
 if ($connection) {
   $msg = "success!";
 }
 ```
-- 5. 关闭 PHP 块，然后添加 HTML：
+
+5. 关闭 PHP 块，然后添加 HTML：
+
+```php
 ?>
+```
+
+```html
 <HTML>
 <HEAD>
 <TITLE>MySQL Connection</TITLE>
 </HEAD>
 <body>
-6. 打印消息字符串：
-`<?php echo "msg"; ?>`
-7. 添加更多 HTML 以使文档有效：
-`</body>
-</HTML>`
-8. 将文件保存为 `db_connect.php`，并将此文件放置在服务器的文档根目录下。
-9. 打开网页浏览器并输入 `http://127.0.0.1/db_connect.php`。
+```
 
-注意：如果无法建立连接，脚本将通过 `die()` 函数终止。如果你输入了正确的用户名和密码，你应该得到一个成功的结果。
+6. 打印消息字符串：
+
+```php
+<?php echo "msg"; ?>
+```
+
+7. 添加更多 HTML 以使文档有效：
+
+```html
+</body>
+</HTML>
+```
+
+8. 将文件保存为`db_connect.php`，并将此文件放置在服务器的文档根目录下。
+
+9. 打开网页浏览器并输入`http://127.0.0.1/db_connect.php`。
+
+> 注意：如果无法建立连接，脚本将通过`die()`函数终止。如果你输入了正确的用户名和密码，你应该得到一个成功的结果。
 
 # 破坏你的连接脚本
 
 每当你处理数据库工作时，都会遇到错误。这是不可避免的。这就是为什么我想向你展示一些常见的错误以及如何优雅地处理它们。
 
-你只需通过更改用户名对 `db_connect.php` 脚本进行修改，导致其在连接时失败。
+你只需通过更改用户名对`db_connect.php`脚本进行修改，导致其在连接时失败。
 
-- 1. 将用户名改为 `buffy`（除非 `buffy` 是真实用户），使连接行变为：
-   `$connection = mysql_connect("localhost", "buffy", "9sj7En4") or die(mysql_error());`
-2. 保存文件，然后打开浏览器访问 `http://127.0.0.1/db_connect.php`。
+1. 将用户名改为`buffy`（除非`buffy`是真实用户），使连接行变为：
 
-出现了某种糟糕的响应！至少它准确地告诉你是哪里错了，而且重复了多次：user buffy无法连接到 MySQL。你可以通过在 `mysql_connect()` 函数名之前放置一个 `@` 来抑制其中一个糟糕的警告，并保留 `die()` 的消息。尝试一下。
+```php
+$connection = mysql_connect("localhost", "buffy", "9sj7En4") or die(mysql_error());
+```
 
-- 1. 在 `mysql_connect()` 函数之前添加一个 `@`，并保留错误的用户名：
-`$connection = @mysql_connect("localhost", "buffy", "9sj7En4") or die(mysql_error());`
-2. 保存文件，然后打开浏览器访问 `http://127.0.0.1/db_connect.php`。
+2. 保存文件，然后打开浏览器访问`http://127.0.0.1/db_connect.php`。
 
-通过此更改，警告被抑制了，只显示 `die()` 函数的消息。这是来自 `mysql_error()` 函数的有意义的错误消息输出。如果你能将糟糕的错误和警告减少到最低，那么当你的数据库在网页浏览高峰期决定变得不可用时，整体用户体验会更加愉快。
+出现了某种糟糕的响应！至少它准确地告诉你是哪里错了，而且重复了多次：user buffy无法连接到 MySQL。你可以通过在`mysql_connect()`函数名之前放置一个`@`来抑制其中一个糟糕的警告，并保留`die()`的消息。尝试一下。
+
+1. 在`mysql_connect()`函数之前添加一个`@`，并保留错误的用户名：
+
+```php
+$connection = @mysql_connect("localhost", "buffy", "9sj7En4") or die(mysql_error());
+```
+
+2. 保存文件，然后打开浏览器访问`http://127.0.0.1/db_connect.php`。
+
+通过此更改，警告被抑制了，只显示`die()`函数的消息。这是来自`mysql_error()`函数的有意义的错误消息输出。如果你能将糟糕的错误和警告减少到最低，那么当你的数据库在网页浏览高峰期决定变得不可用时，整体用户体验会更加愉快。
 
 # 列出服务器上的数据库
 
 现在你已经成功使用 PHP 连接到 MySQL，是时候熟悉一些内置的与 MySQL 相关的函数了。在本节中，你将使用以下函数：
 
-- mysql_list_db() — 用于列出 MySQL 服务器上的数据库。
-- mysql_num_rows() — 返回结果集的行数。
-- mysql_tablename() — 尽管名称如此，但它可以从结果中返回表或数据库的名称。
+- `mysql_list_db()` — 用于列出 MySQL 服务器上的数据库。
+- `mysql_num_rows()` — 返回结果集的行数。
+- `mysql_tablename()` — 尽管名称如此，但它可以从结果中返回表或数据库的名称。
 
 此脚本的目标是列出 MySQL 服务器上的所有数据库。
+
 1. 在文本编辑器中打开一个新文件并开始一个 PHP 块：
 
 ```php
 <?php
-2. 创建一个变量来存储 `mysql_connect()` 函数的结果。包含 `@` 以抑制警告，以及 `die()` 函数以便在连接失败时结束脚本并显示消息：
-`$connection = @mysql_connect("localhost", "spike", "9sj7En4") or die(mysql_error());`
-3. 创建一个变量来存储 `mysql_list_db()` 函数的结果。包含 `@` 以抑制警告，以及 `die()` 函数以便在脚本无法获取列表时结束脚本并显示消息：
-`$dbs = mysql_list_db($connection) or die(mysql_error());`
-注意：`mysql_list_db()` 函数唯一的参数是当前连接的标识符。
+```
+
+2. 创建一个变量来存储`mysql_connect()`函数的结果。包含`@`以抑制警告，以及`die()`函数以便在连接失败时结束脚本并显示消息：
+
+```php
+$connection = @mysql_connect("localhost", "spike", "9sj7En4") or die(mysql_error());
+```
+
+3. 创建一个变量来存储`mysql_list_db()`函数的结果。包含`@`以抑制警告，以及`die()`函数以便在脚本无法获取列表时结束脚本并显示消息：
+
+```php
+$dbs = mysql_list_db($connection) or die(mysql_error());
+```
+
+> 注意：`mysql_list_db()`函数唯一的参数是当前连接的标识符。
 
 4. 你将遍历一个结果并在循环外动态填充一个项目列表：
-`$db_list = "<ul>";`
+
+```php
+$db_list = "<ul>";
+```
+
 5. 启动一个计数器。你的循环中需要它：
-`$i = 0;`
-6. 开始一个 `while` 循环。只要 $i 的值小于 $dbs 结果中的行数，该循环就会继续：
-`while ($i < mysql_num_rows($dbs)) {`
-7. 一旦进入 `while` 循环，获取结果中当前行反映的数据库名称：
-`$db_names[$i] = mysql_tablename($dbs, $i);`
-注意：在第一次循环中，$i 会被其值替换，此行将像 `$db_names[0] = mysql_tablename($dbs, 0);`。计数从0开始，而不是1，这反映了结果中的第一行。随着计数器的增加，它就是行号。
+
+```php
+$i = 0;
+```
+
+6. 开始一个`while`循环。只要`$i`的值小于`$dbs`结果中的行数，该循环就会继续：
+
+```php
+while ($i < mysql_num_rows($dbs)) {
+```
+
+7. 一旦进入`while`循环，获取结果中当前行反映的数据库名称：
+
+```php
+$db_names[$i] = mysql_tablename($dbs, $i);
+```
+
+> 注意：在第一次循环中，`$i`会被其值替换，此行将像`$db_names[0] = mysql_tablename($dbs, 0);`。计数从0开始，而不是1，这反映了结果中的第一行。随着计数器的增加，它就是行号。
+
 8. 将当前数据库名称添加到列表：
-`$db_list .= "<li>" . $db_names[$i] . "</li>";`
-9. 在关闭 `while` 循环之前增加计数器：
-`$i++;`
-10. 关闭 `while` 循环、列表以及你的 PHP 块：
-`}`
-`$db_list = "</ul>";`
-`?>`
+
+```php
+$db_list .= "<li>" . $db_names[$i] . "</li>";
+```
+
+9. 在关闭`while`循环之前增加计数器：
+
+```php
+$i++;
+```
+
+10. 关闭`while`循环、列表以及你的 PHP 块：
+
+```php
+}
+$db_list = "</ul>";
+?>
+```
 
 11. 添加此 HTML：
+
 ```html
 <HTML>
 <HEAD>
@@ -2933,24 +3462,30 @@ if ($connection) {
 <body>
 <p><strong>Databases on localhost</strong></p>
 ```
+
 12. 打印字符串：
-`<?php echo "$db_list"; ?>`
+
+```php
+<?php echo "$db_list"; ?>
+```
+
 13. 添加更多 HTML 以使文档有效：
+
 ```html
 </body>
 </HTML>
 ```
-14. 将文件保存为 `db_list.php`。
+
+14. 将文件保存为`db_list.php`。
 
 所有的代码看起来应该是这样的：
+
 ```php
 <?php
 $connection = mysql_connect("localhost", "spike", "9sj7En4") or die(mysql_error());
-
 $dbs = mysql_list_db($connection) or die(mysql_error());
 $db_list = "<ul>";
 $i = 0;
-
 while ($i < mysql_num_rows($dbs)) {
   $db_names[$i] = mysql_tablename($dbs, $i);
   $db_list .= "<li>" . $db_names[$i] . "</li>";
@@ -2968,83 +3503,157 @@ $db_list = "</ul>";
 </body>
 </HTML>
 ```
-将此文件放在你 Web 服务器的根目录下，打开浏览器并输入 `http://127.0.0.1/db_list.php`。
+
+
+
+将此文件放在你 Web 服务器的根目录下，打开浏览器并输入`http://127.0.0.1/db_list.php`。
 
 你的列表可能会取决于你在第一章是如何操作的，但你应该也能看到 MySQL 数据库 (mysql) 以及第一章中创建的数据库 (test)。接下来向此脚本添加另一个循环来打印每个数据库中的表。
 
 # 列数据库中的表
 
-对 `db_list.php` 脚本进行一些添加，就可以列出数据库中的表了。你将看到的新函数是 `mysql_list_tables()`，它用于列出 MySQL 数据库中的表。
+对`db_list.php`脚本进行一些添加，就可以列出数据库中的表了。你将看到的新函数是`mysql_list_tables()`，它用于列出 MySQL 数据库中的表。
 
 目标是列出本地服务器上所有的数据库，以及这些数据库中的表。
 
-- 1. 在文本编辑器中打开一个新文件并开始一个 PHP 块：
+1. 在文本编辑器中打开一个新文件并开始一个 PHP 块：
+
+```php
 <?php
-- 2. 按照之前的做法添加连接信息：
-`$connection = @mysql_connect("localhost", "spike", "9sj7En4") or die(mysql_error());`
-- 3. 创建一个变量来存储 `mysql_list_db()` 函数的结果。使用 `@` 抑制警告，以及 `die()` 函数以便脚本无法获取列表时结束脚本并显示消息：
-`$dbs = @mysql_list_db($connection) or die(mysql_error());`
-- 4. 你将遍历一个结果并在循环外动态填充一个项目列表：
-`$dbs_list = "<ul>";`
-- 5. 启动一个计数器。你的循环中需要它：
-`$dbs_num = 0;`
-注意：使用 $dbs_num 而不是 $i 作为计数器，因为在脚本的某处，你将同时有两个计数器。
-- 6. 开始一个 `while` 循环。只要 $dbs_num 小于 $dbs 结果中的行数，该循环就会继续：
-`while ($dbs_num < mysql_num_rows($dbs)) {`
-- 7. 一旦进入 `while` 循环，获取结果中当前行反映的数据库名称：
-`$db_names = mysql_tablename($dbs, $dbs_num);`
-- 8. 将当前数据库名称添加到项目列表：
-`$dbs_list .= "<li>" . $db_names[$dbs_num] . "</li>";`
-- 9. 创建一个变量来存储 `mysql_list_tables()` 函数的结果。使用 `@` 抑制警告，以及 `die()` 函数以便脚本无法获取列表时结束脚本并显示消息：
-`$tables = @mysql_list_tables($dbs, $dbs_num) or die(mysql_error());`
-注意：`mysql_list_tables()` 函数唯一的参数是当前数据库的名称。
-- 10. 你将遍历一个结果并在循环外动态填充一个项目列表：
-`$table_list = "<ul>";`
-- 11. 启动一个计数器。你的循环中需要它：
-`$table_num = 0;`
-- 12. 开始一个 `while` 循环。只要 $table_num 小于 $tables 结果中的行数，该循环就会继续：
-`while ($table_num < mysql_num_rows($tables)) {`
+```
 
+2. 按照之前的做法添加连接信息：
 
+```php
+$connection = @mysql_connect("localhost", "spike", "9sj7En4") or die(mysql_error());
+```
 
+3. 创建一个变量来存储`mysql_list_db()`函数的结果。使用`@`抑制警告，以及`die()`函数以便脚本无法获取列表时结束脚本并显示消息：
 
+```php
+$dbs = @mysql_list_db($connection) or die(mysql_error());
+```
 
-13. 当你进入 `while` 循环后，获取结果中当前行反映的表名：
+4. 你将遍历一个结果并在循环外动态填充一个项目列表：
+
+```php
+$dbs_list = "<ul>";
+```
+
+5. 启动一个计数器。你的循环中需要它：
+
+```php
+$dbs_num = 0;
+```
+
+注意：使用`$dbs_num`而不是`$i`作为计数器，因为在脚本的某处，你将同时有两个计数器。
+
+6. 开始一个`while`循环。只要`$dbs_num`小于`$dbs`结果中的行数，该循环就会继续：
+
+```php
+while ($dbs_num < mysql_num_rows($dbs)) {
+```
+
+7. 一旦进入`while`循环，获取结果中当前行反映的数据库名称：
+
+```php
+$db_names = mysql_tablename($dbs, $dbs_num);
+```
+
+8. 将当前数据库名称添加到项目列表：
+
+```php
+$dbs_list .= "<li>" . $db_names[$dbs_num] . "</li>";
+```
+
+9. 创建一个变量来存储`mysql_list_tables()`函数的结果。使用`@`抑制警告，以及`die()`函数以便脚本无法获取列表时结束脚本并显示消息：
+
+```php
+$tables = @mysql_list_tables($dbs, $dbs_num) or die(mysql_error());
+```
+
+注意：`mysql_list_tables()`函数唯一的参数是当前数据库的名称。
+
+10. 你将遍历一个结果并在循环外动态填充一个项目列表：
+
+```php
+$table_list = "<ul>";
+```
+
+11. 启动一个计数器。你的循环中需要它：
+
+```php
+$table_num = 0;
+```
+
+12. 开始一个`while`循环。只要`$table_num`小于`$tables`结果中的行数，该循环就会继续：
+
+```php
+while ($table_num < mysql_num_rows($tables)) {
+```
+
+13. 当你进入`while`循环后，获取结果中当前行反映的表名：
+
+```php
 $table_names[$table_num] = mysql_tablename($tables, $table_num);
+```
 
 14. 将当前表名添加到项目符号列表中：
-$table_list .= "<li>$table_names[$table_num";
 
-15. 在关闭 `while` 循环之前增加计数器：
+```php
+$table_list .= "<li>$table_names[$table_num";
+```
+
+15. 在关闭`while`循环之前增加计数器：
+
+```php
 $table_num++;
+```
 
 16. 关闭内部循环并关闭表的项目符号列表：
-$table_list .= "</ul>";
 
-17. 将 $table_list 的值赋值给 $db_list，并在关闭外部 `while` 循环之前增加计数器：
+```php
+$table_list .= "</ul>";
+```
+
+17. 将`$table_list`的值赋值给`$db_list`，并在关闭外部`while`循环之前增加计数器：
+
+```php
 $db_list = "$table_list";
 $db_num++;
+```
 
 18. 关闭数据库的项目符号列表，然后结束你的 PHP 块：
-$db_list .= "</ul>";n?>
+
+```php
+$db_list .= "</ul>";
+?>
+```
 
 19. 添加此 HTML：
+
+```html
 <HTML>
 <HEAD>
 <TITLE>MySQL Tables</TITLE>
 </HEAD>
-<<body>
+<body>
 <p><strong>localhost 上的数据库和表</strong></p>
 <?php echo "db_list"; ?>
+```
 
 21. 添加更多 HTML 以使文档有效：
+
+```html
 </body>
 </html>
+```
 
-22. 将文件保存为 `db_listables.php`。
+22. 将文件保存为`db_listables.php`。
+
 你的代码应该看起来所示：
 
-```
+```php
 // connection code
 $connection = mysql_connect("localhost", "spike", "9s7En4");
 or die(mysql_error());
@@ -3061,36 +3670,36 @@ while ($db_num < mysql_num_rows($dbs)) {
   // 数据库名称并创建每个项目列表
   $db_names[$db_num] = mysql_tablename($dbs, $db_num);
   $db_list .= "<li>$db_names[$db_num]";
-
   // 获取表并启动另一个项目列表
   $table_list = mysql_list($connection, $db_names[$db_num]) or die(mysql_error());
   $table_list .= "</ul>";
   $table_num++;
+}
 
 // 循环函数结果
 while ($table_num < mysql_num_rows($dbs)) {
 ```
 
-```
+```php
 // 获取表名并创建每个项目符号
 $table_names[$table_num] = mysqltablename($tables, $table_num);
 $table_list .= "<li>$table_names[$table_num];";
 $table_num++;
 ```
 
-```
+```php
 // 关闭内部项目列表并增加数字继续循环
 $table_list .= "</li>";
 $db_list .= "$table_list";
 $db_num++;
 ```
 
-```
+```php
 // 关闭外部项目列表
 $db_list .= "</ul>";
 ```
 
-```
+```html
 <HTML>
 <HEAD>
 <TITLE>MySQL Tables</TITLE>
@@ -3102,7 +3711,7 @@ $db_list .= "</ul>";
 </html>
 ```
 
-是时候看看此脚本是否列出了你服务器上的数据库，包括它们的表了。将此文件放置在 Web 服务器的根目录下，并打开浏览器访问 http://127.0.0.1/db/listables.php。
+是时候看看此脚本是否列出了你服务器上的数据库，包括它们的表了。将此文件放置在 Web 服务器的根目录下，并打开浏览器访问`http://127.0.0.1/db/listables.php`。
 
 ![](img/7a81120f3fcfd17d264c4ace19b756f8_158_0.png)
 
@@ -3116,64 +3725,72 @@ Team LiQi
 
 之前的脚本中的复杂元素在接下来的脚本中消失了。此脚本的目标是在 MySQL 服务器上创建一个新数据库。
 
-- 1. 在文本编辑器中打开一个新文件并开始 PHP 块：
+1. 在文本编辑器中打开一个新文件并开始 PHP 块：
+
 ```php
 <?
 ```
 
-- 2. 创建一个存储查询的值，该查询将创建新数据库：
+2. 创建一个存储查询的值，该查询将创建新数据库：
+
 ```sql
 $sql = "CREATE database testDB2";
 ```
 
-- 3. 像你之前的那样添加连接信息：
+3. 像你之前的那样添加连接信息：
+
 ```php
 $connection = mysqli_connect("localhost", "spike", "9sj7En4")
 or die(mysqli_error());
 ```
 
-- 4. 使用 `mysqli_query()` 函数执行查询。使用 `@` 来抑制警告，并使用 `die()` 函数在查询失败时结束脚本并显示变量：
+4. 使用`mysqli_query()`函数执行查询。使用`@`来抑制警告，并使用`die()`函数在查询失败时结束脚本并显示变量：
+
 ```php
 $result = mysqli_query($sql, $connection) or die(mysqli_error());
 ```
 
-- 5. 测试 `$result` 的值。如果为 `true`，则查询成功，并创建了一个变量来存储消息：
+5. 测试`$result`的值。如果为`true`，则查询成功，并创建了一个变量来存储消息：
+
 ```php
 if ($result) {
   $msg = "<p>Database has been created!</p>";
 }
 ```
 
-- 6. 关闭你的 PHP 块并添加 HTML：
+6. 关闭你的 PHP 块并添加 HTML：
+
 ```html
 ?>
-<html
+<html>
 <HEAD>
 <TITLE>Create a MySQL Database</TITLE>
 </HEAD>
-<<body>
+<body>
 ```
 
-- 7. 打印消息字符串：
+7. 打印消息字符串：
+
 ```php
 echo "$msg"; ?>
 ```
 
-- 8. 添加更多 HTML 以使文档有效：
+8. 添加更多 HTML 以使文档有效：
+
 ```html
 </body>
-</html
+</html>
 ```
 
-- 9. 将文件保存为 `db_created.php`，并将此文件放置在服务器的根目录下。
+9. 将文件保存为`db_created.php`，并将此文件放置在服务器的根目录下。
 
-- 10. 打开浏览器并输入 http://127.0.0.1/db_created.php。
+10. 打开浏览器并输入`http://127.0.0.1/db_created.php`。
 
 如果数据库创建成功，你将看到显示的消息。
 
 ![](img/7a81120f3fcfd17d26c4ace19b756f8_160_0)
 
-通过浏览器访问 http://127.0.0.1/db_list.php 来验证新数据库是否存在。你应该在列表中看到你的新数据库。
+通过浏览器访问`http://127.0.0.1/db_list.php`来验证新数据库是否存在。你应该在列表中看到你的新数据库。
 
 ![](img/7a81120f3fcfd17d26c4ace19b756f8_160_1)
 
@@ -3185,16 +3802,20 @@ Team LiQi
 
 此脚本的目标是删除 MySQL 服务器上的数据库。要这样做，只需修改之前脚本中的查询。
 
-- 1. 在文本编辑器中打开 `db_created.php`。
-- 2. 修改 `$sql` 变量的值：
+1. 在文本编辑器中打开`db_created.php`。
+2. 修改`$sql`变量的值：
+
+```php
 $sql = "DROP DATABASE testDB";
-- 3. 修改错误消息和 HTML 标题，以反映你想删除而不是创建一个。
+```
+
+3. 修改错误消息和 HTML 标题，以反映你想删除而不是创建一个。
 
 你的代码应该像这样：
+
 ```php
 <?
 $sql = "DROP DATABASE testDB";
-
 $connection = @mysql_connect("localhost","spike","9sj7En4");
 or die(mysql_error());
 $result = @mysql_query($sql,$connection) or die(mysql_error());
@@ -3206,14 +3827,14 @@ if ($result) {
 <HEAD>
 <TITLE>Delete a Database</TITLE>
 </HEAD>
-<<body>
+<body>
 <? echo "$msg"; ?>
-</body
-</html
+</body>
+</html>
 ```
 
-- 4. 将文件保存为新名称 `db_drop.php`，并将此文件放置在服务器的根目录下。
-- 5. 打开浏览器并输入 http://127.0.0.1/db_drop.php。
+4. 将文件保存为新名称`db_drop.php`，并将此文件放置在服务器的根目录下。
+5. 打开浏览器并输入`http://127.0.0.1/db_drop.php`。
 
 如果数据库删除成功，你将看到显示的消息。
 
@@ -3227,7 +3848,7 @@ Team LiQi
 
 ## 概述
 
-你有一个数据库服务器，在名为 testDB 的数据库中只有一个名为 test_table 的表。有什么有趣的？在本章中，你将学习：
+你有一个数据库服务器，在名为`testDB`的数据库中只有一个名为`test_table`的表。有什么有趣的？在本章中，你将学习：
 
 - 为数据库表规划
 - 识别某些数据类型的陷阱
@@ -3237,78 +3858,75 @@ Team LiQi
 
 ## 为你的表规划
 
-创建表很容易——规划需要一些脑力。创建一个简单的表只需要给它一个名字。但这将是一个无聊的表，因为它不包含任何列（字段）且无法存储任何数据。此外，你应该知道你想在表中拥字段数量和类型。
+创建表很容易——规划需要一些脑力。创建一个简单的表只需要给它一个名字。但这将是一个无聊的表，因为它不包含任何列（字段）且无法存储任何数据。此外，你应该知道你想在表中拥有字段数量和类型。
 
 ## MySQL 数据类型
 
 表中的所有字段都有一个特定的数据类型定义。数据类型定义了允许该字段的数据类型。对于某些数据类型定义，你还必须定义允许字段的最大长度，但其他类型有其特定的长度。
 
-正确定义字段非常重要。例如，如果你有一个字段用于存储记录名称，它是一个 50 字符的 `varchar` 字段，但你却尝试向其存储 100 字符的字符串，那么你的字符串将被截断为 50 个字符。
+正确定义字段非常重要。例如，如果你有一个字段用于存储记录名称，它是一个 50 字符的`varchar`字段，但你却尝试向其存储 100 字符的字符串，那么你的字符串将被截断为 50 个字符。
 
-不仅正确定义字段以使数据适应字段很重要，如果你使用错误的 SQL 语法定义，表将无法创建。例如，如果你想对字段使用 text 数据类型，你可以在没有特定长度的情况下指定长度。
+不仅正确定义字段以使数据适应字段很重要，如果你使用错误的 SQL 语法定义，表将无法创建。例如，如果你想对字段使用`text`数据类型，你可以在没有特定长度的情况下指定长度。
 
 > 表 12.1：你使用的某些常用类型。要查看完整列表，请阅读 MySQL 手册。
 
 | 数据类型 | 定义 |
 |---|---|
-| TINYINT | 一个非常小的整数，可以是有符号或无符号的。如果是有符号，范围是 -128 到 127。如果是无符号，范围是 0 到 255。 |
-| SMALLINT | 较小的整数，可以是有符号或无符号的。如果是有符号，范围是 -32768 到 32767。如果是无符号，范围是 0 到 65535。 |
-| MEDIUMINT | 中等大小的整数，可以是有符号或无符号的。如果是有符号，范围是 -8388608 到 8388607。 |
-| INT | 整数，可以是有符号或无符号的。如果是有符号，范围是 -2147483648 到 2147483647。 |
-| BIGINT | 大整数，可以是有符号或无符号的。如果是有符号，范围是 -9223372036854775808 到 9223372036854775807。 |
+| `TINYINT` | 一个非常小的整数，可以是有符号或无符号的。如果是有符号，范围是 -128 到 127。如果是无符号，范围是 0 到 255。 |
+| `SMALLINT` | 较小的整数，可以是有符号或无符号的。如果是有符号，范围是 -32768 到 32767。如果是无符号，范围是 0 到 65535。 |
+| `MEDIUMINT` | 中等大小的整数，可以是有符号或无符号的。如果是有符号，范围是 -8388608 到 8388607。 |
+| `INT` | 整数，可以是有符号或无符号的。如果是有符号，范围是 -2147483648 到 2147483647。 |
+| `BIGINT` | 大整数，可以是有符号或无符号的。如果是有符号，范围是 -9223372036854775808 到 9223372036854775807。 |
 
-
-
-
-因为 TEXT 也包含大量数据；两者的区别在于，对存储数据进行排序和比较对 BLOB 敏感，而对 TEXT 字段不敏感。
-你不需要为 BLOB 或 TEXT 指定长度。
+因为`TEXT`也包含大量数据；两者的区别在于，对存储数据进行排序和比较对`BLOB`敏感，而对`TEXT`字段不敏感。你不需要为`BLOB`或`TEXT`指定长度。
 
 ## ENUM
 
-枚举（列表）。在定义 ENUM 时，你正在创建一个项目列表，你必须从该列表中选择一个值（或者可以是 NULL）。例如，如果你想让你的字段包含 'A'、'B' 或 'C'，你可以将字段定义为 `AS ENUM ('A', 'B', 'C')`，并且只有这些值（或 NULL）可以填充该字段。ENUM 有 65535 种不同的值。
+枚举（列表）。在定义`ENUM`时，你正在创建一个项目列表，你必须从该列表中选择一个值（或者可以是`NULL`）。例如，如果你想让你的字段包含 'A'、'B' 或 'C'，你可以将字段定义为`AS ENUM ('A', 'B', 'C')`，并且只有这些值（或`NULL`）可以填充该字段。`ENUM`有 65535 种不同的值。
 
 ## 定义你的字段
 
-本章的总体目标是创建一个表来存储你个人音乐收藏的数据。花些时间思考一下你想了解的信息：标题和艺术家，可能还有唱片类型、获取日期以及你对录音的个人笔记。我想了我的自己的表需要什么，决定将其命名为 `my_music`，如表 12.2 所示。
+本章的总体目标是创建一个表来存储你个人音乐收藏的数据。花些时间思考一下你想了解的信息：标题和艺术家，可能还有唱片类型、获取日期以及你对录音的个人笔记。我想了我的自己的表需要什么，决定将其命名为`my_music`，如表 12.2 所示。
 
-## 表 12.2：my_music 的字段
+## 表 12.2：`my_music`的字段
 
 | 字段名称 | 说明 |
 |---|---|
-| id | 为条目创建一个唯一的 ID 数字 |
-| format | 是 CD、磁带还是 LP（黑胶）？ |
-| title | 录音的标题 |
-| artist_fn | 艺术家的名 |
-| artist_in | 艺术家的姓或团体名称 |
-| rec_label | 唱片公司 |
-| my_notes | 我对录音的个人想法 |
-| date_acq | 获取日期 |
+| `id` | 为条目创建一个唯一的 ID 数字 |
+| `format` | 是 CD、磁带还是 LP（黑胶）？ |
+| `title` | 录音的标题 |
+| `artist_fn` | 艺术家的名 |
+| `artist_in` | 艺术家的姓或团体名称 |
+| `rec_label` | 唱片公司 |
+| `my_notes` | 我对录音的个人想法 |
+| `date_acq` | 获取日期 |
 
 在下一节中，你将创建一系列表单，获取你的表信息并发送到 MySQL 数据库。在第一步中，你提交表名和想要包含的字段数量。第二步将显示额外的表单字段，以便你定义表列的属性。第三步将请求发送到 MySQL，验证表已创建，并显示“成功！”消息。
 
 ## 唯一字段的重要性
 
-使用 ID 数字不仅可以帮助你跟踪数据，而且在将来可以帮助你尝试建立多个表之间的关系。在 `my_music` 表中，将有一个 ID 字段。使用此字段作为唯一字段，允许你拥有两个同名的记录。例如，如果你有一张 Indigo Girls 乐队的专辑 *Strawberry Fire*，你可以在表中两个条目：一个用于 1987 年发布的版本，另一个用于 1990 年发布的版本（在该张上）。
+使用 ID 数字不仅可以帮助你跟踪数据，而且在将来可以帮助你尝试建立多个表之间的关系。在`my_music`表中，将有一个 ID 字段。使用此字段作为唯一字段，允许你拥有两个同名的记录。例如，如果你有一张 Indigo Girls 乐队的专辑 *Strawberry Fire*，你可以在表中两个条目：一个用于 1987 年发布的版本，另一个用于 1990 年发布的版本（在该张上）。
 
 如果没有唯一标识符，你必须仅选择一个版本放入表中，这样将不准确。我希望这个简单的例子能传达在表中每条记录都拥有标识符的重要性。随着你创建更多数据库驱动的元素，唯一标识符的使用将在本书的剩余部分变得更加明显。
 
 ## 两步表单序列
 
-对于创建一个数据库表，使用两步表单似乎是多此一举。毕竟，你在第 1 章已经看到了一个基础的建表 SQL 语句，你创建了 `test_table`：
+对于创建一个数据库表，使用两步表单似乎是多此一举。毕竟，你在第 1 章已经看到了一个基础的建表 SQL 语句，你创建了`test_table`：
 
-```
+```sql
 create test_table (test_id int, test_note text);
 ```
 
 当使用 PHP 脚本创建表时，你是在对 MySQL 执行完全相同的查询。然而，你可以为这个过程系上精美的丝带（创建一个基于表单的界面），并将其称为管理界面：
 
-在创建管理界的过程中，你将从一个 HTML 表单开始，然后创建一个 PHP 脚本，从表单获取信息并动态地创建另一个表单。例如，你将创建一个发送实际 SQL 查询的脚本。
+在创建管理界面的过程中，你将从一个 HTML 表单开始，然后创建一个 PHP 脚本，从表单获取信息并动态地创建另一个表单。例如，你将创建一个发送实际 SQL 查询的脚本。
 
-## 第 1 ：字段数量
+## 第 1 步：字段数量
 
 此 HTML 表单将包含两个输入字段：一个用于表名，另一个用于你想包含的字段数量：
 
-- 1. 在文本编辑器中打开一个新文件并输入以下 HTML：
+1. 在文本编辑器中打开一个新文件并输入以下 HTML：
+
 ```html
 <html>
 <head>
@@ -3317,57 +3935,64 @@ create test_table (test_id int, test_note text);
 <body>
 <h1>1: Name and Number#</h1>
 ```
-- 2. 开始你的表单。确保方法为 POST 且动作（action）为名为 `do_showfielddef.php` 的脚本。
+
+2. 开始你的表单。确保方法为 POST 且动作（action）为名为`do_showfielddef.php`的脚本。
+
 ```html
 <form method="POST" action="do_showfielddef.php">
 <p>Table Name:</p><br><input type="text" name="table_name" size="30"></p>
 ```
-- 3. 为表名创建一个带有文本标签的输入字段：
+
+3. 为表名创建一个带有文本标签的输入字段：
+
 ```html
 <p>Table Name:</p><br><input type="text" name="table_name" size="30"></p>
 ```
-- 4. 为表中的字段数量创建一个带有文本标签的输入字段：
+
+4. 为表中的字段数量创建一个带有文本标签的输入字段：
+
 ```html
 <p>Number of fields:</p><br><input type="text" name="num_fields" size="5"></p>
 ```
-- 5. 添加提交按钮，然后关闭表单并添加一些 HTML 使文档有效：
+
+5. 添加提交按钮，然后关闭表单并添加一些 HTML 使文档有效：
+
 ```html
 <input type="submit" name="submit" value="Go to Step 2">
 </form>
 </body>
 </html>
 ```
-- 6. 将文件保存为 `show_createtable.html`，并将此文件放置在 Web 服务器的根目录下。
-- 7. 打开浏览器并输入 `http://127.0.0.1/show_createtable.html`。
 
-在下一节中，你将遵循该过程的第二步，创建一个根据 `$_table_name` 和 `$_num_fields` 的值动态创建另一个表单的脚本。
+6. 将文件保存为`show_createtable.html`，并将此文件放置在 Web 服务器的根目录下。
+7. 打开浏览器并输入`http://127.0.0.1/show_createtable.html`。
 
-## 第 1 ：名称和数量
+在下一节中，你将遵循该过程的第二步，创建一个根据`$_table_name`和`$_num_fields`的值动态创建另一个表单的脚本。
+
+## 第 1 步：名称和数量
 
 表名：
 
 字段数量：
 
-## 第 2 ：定义你的字段
+## 第 2 步：定义你的字段
 
-在第 1 步中，你创建了用于存储表名（$POST[table_name]）和你想放入表中的字段数量（$POST[num_fields]）。在这一步中，你创建一个 PHP 脚本来显示进一步定义字段所需的额外表单元素：名称、类型和长度。
+在第 1 步中，你创建了用于存储表名（`$POST[table_name]`）和你想放入表中的字段数量（`$POST[num_fields]`）。在这一步中，你创建一个 PHP 脚本来显示进一步定义字段所需的额外表单元素：名称、类型和长度。
 
-- 1. 在文本编辑器中打开一个新文件并启动 PHP 块：
+1. 在文本编辑器中打开一个新文件并启动 PHP 块：
+
 ```php
 <?php
 ```
-- 2. 开始你的表单。确保方法为 POST 且动作（action）为名为 `do_showfielddef.php` 的脚本。
-- 3. 为表名创建一个带有文本标签的输入字段：
-- 4. 为表中的字段数量创建一个带有文本标签的输入字段：
-- 5. 添加提交按钮，然后关闭表单并添加一些 HTML 使文档有效：
-- 6. 将文件保存为 `show_createtable.html`，并将此文件放置在 Web 服务器的根目录下。
-- 7. 打开浏览器并输入 `http://127.0.0.1/show_createtable.html`。
 
+2. 开始你的表单。确保方法为 POST 且动作（action）为名为`do_showfielddef.php`的脚本。
+3. 为表名创建一个带有文本标签的输入字段：
+4. 为表中的字段数量创建一个带有文本标签的输入字段：
+5. 添加提交按钮，然后关闭表单并添加一些 HTML 使文档有效：
+6. 将文件保存为`show_createtable.html`，并将此文件放置在 Web 服务器的根目录下。
+7. 打开浏览器并输入`http://127.0.0.1/show_createtable.html`。
 
-
-
-
-14. 显示 $form_block 的内容：
+14. 显示`$form_block`的内容：
 
 ```php
 <? echo "$form_block"; ?>
@@ -3380,13 +4005,13 @@ create test_table (test_id int, test_note text);
 </HTML>
 ```
 
-16 将 将保存为 `do_showfielddef.php`，并将其放置在你的 Web 服务器的文档根目录下。
+16. 将文件保存为`do_showfielddef.php`，并将其放置在你的 Web 服务器的文档根目录下。
 
 你的代码看起来应该是这样的：
 
 ```php
 <?php
-validant input
+// 验证输入
 if (!isset($_POST['table_name']) || (!isset($_POST['num_fields'])) {
     header("Location: show_creatable.html");
     exit;
@@ -3422,7 +4047,7 @@ $form_block .= "
 <head>
 <title>创建数据库表：第 2 步</title>
 </head>
-<<body>
+<body>
 <h1>为 <?php echo \$_POST[table_name]; ?> 定义字段</h1>
 <?php echo \"$form_block\"; ?>
 </body>
@@ -3436,38 +4061,35 @@ $form_block .= "
 
 你应该能够顺利地从第 1 步（命名表并提供字段数量）跳转到第 2 步（定义字段）。让我们尝试一下。
 
-- 1. 打开你的浏览器访问 http://127.0.0.1/show_createtable.html。
-- 2. 在“表名”字段中，输入 `my_music`。
-- 3. 在“字段数量”字段中，输入 `8`。
-- 4. 点击“转下一步”按钮。你应该能看到如下图所示的表单。
+1. 打开你的浏览器访问`http://127.0.0.1/show_createtable.html`。
+2. 在“表名”字段中，输入`my_music`。
+3. 在“字段数量”字段中，输入`8`。
+4. 点击“转下一步”按钮。你应该能看到如下图所示的表单。
 
 ![](img/7a81120f3fcfd17d264c4ace19b756f8_170_0.png)
 
-有八行，对应于你想在 my_music 表中创建的八个字段。填充字段，但不要点击“创建表”按钮，因为你还没有创建脚本！
+有八行，对应于你想在`my_music`表中创建的八个字段。填充字段，但不要点击“创建表”按钮，因为你还没有创建脚本！
 
-- 1. 在第一行，在“字段名”中输入 `id`，从“字段类型”下拉菜单中选择 `int`，并指定字段长度为 5。
-- 2. 在第二行，在“字段名”中输入 `format`，从“字段类型”下拉菜单中选择 `char`，并指定字段长度为 2。
-- 3. 在第三行，在“字段名”中输入 `title`，从“字段类型”下拉菜单中选择 `varchar`，并指定字段长度为 150。
-- 4. 在第四行，在“字段名”中输入 `artist_fn`，从“字段类型”下拉菜单中选择 `varchar`，并指定字段长度为 100。
-- 5. 在第五行，在“字段名”中输入 `artist_is`，从“字段类型”下拉菜单中选择 `varchar`，并指定字段长度为 100。
-- 6. 在第六行，在“字段名”中输入 `rec_label`，从“字段类型”下拉菜单中选择 `varchar`，并指定字段长度为 50。
-- 7. 在第七行，在“字段名”中输入 `my_notes`，并在“字段类型”下拉菜单中选择 `text`。
-- 8. 在第八行，在“字段名”中输入 `date_acq`，从“字段类型”下拉菜单中选择 `date`。
-
-**注意**：由于提供的文本后部分包含大量乱码和重复的占位符，以下翻译已根据逻辑对核心操作流程进行了梳理和翻译（注：原文文本在后半部分存在严重的格式错误和内容乱码，译文基于其代码逻辑进行了语义还原）。
-
-
+1. 在第一行，在“字段名”中输入`id`，从“字段类型”下拉菜单中选择`int`，并指定字段长度为 5。
+2. 在第二行，在“字段名”中输入`format`，从“字段类型”下拉菜单中选择`char`，并指定字段长度为 2。
+3. 在第三行，在“字段名”中输入`title`，从“字段类型”下拉菜单中选择`varchar`，并指定字段长度为 150。
+4. 在第四行，在“字段名”中输入`artist_fn`，从“字段类型”下拉菜单中选择`varchar`，并指定字段长度为 100。
+5. 在第五行，在“字段名”中输入`artist_is`，从“字段类型”下拉菜单中选择`varchar`，并指定字段长度为 100。
+6. 在第六行，在“字段名”中输入`rec_label`，从“字段类型”下拉菜单中选择`varchar`，并指定字段长度为 50。
+7. 在第七行，在“字段名”中输入`my_notes`，并在“字段类型”下拉菜单中选择`text`。
+8. 在第八行，在“字段名”中输入`date_acq`，从“字段类型”下拉菜单中选择`date`。
 
 ```html
 <?>
 <HEAD>
-<TITLE>创建数据库表：第 3 </TITLE>
+<TITLE>创建数据库表：第 3 步</TITLE>
 </HEAD>
 <BODY>
 <h1>向 <?php echo "$db_name"; ?> 添加表...</h1>
 <?php echo "$msg"; ?>
 </BODY>
-</html>?>
+</html>
+?>
 ```
 
 继续下一步，你将点击按钮并创建一个表。
@@ -3480,28 +4102,29 @@ $form_block .= "
 
 ![](img/7a81120f3fcfd17d264c4ace19b756f8_175_0.png)
 
-为了证明 `my_music` 表已在 `testDB` 数据库中创建，请访问你在上一章创建的 `db_listtables.php` 脚本。你应该会在列表中看到 `my_music` 表。
+为了证明`my_music`表已在`testDB`数据库中创建，请访问你在上一章创建的`db_listtables.php`脚本。你应该会在列表中看到`my_music`表。
 
 ![](img/7a81120f3fcfd17d264c4ace19b756f8_176_0.png)
 
-在下一章中，你将创建一个 HTML 表单界面，用于向向 `my_music` 表添加的脚本。
+在下一章中，你将创建一个 HTML 表单界面，用于向`my_music`表添加记录的脚本。
 
 # 第 13 章：向表中插入数据
 
 ## 概述
 
-`my_music` 数据库表静静地呆在那里，等待你添加关于音乐收藏的信息。在本章中，你将学习如何：
+`my_music`数据库表静静地呆在那里，等待你添加关于音乐收藏的信息。在本章中，你将学习如何：
 
 - 创建一个用于添加记录的管理界面
 - 创建一个将记录插入到表的脚本
 
 ## 创建记录添加表单
 
-HTML 表单将为 `my_music` 数据库中的每一列包含一个输入字段。在上一章中，你创建了八个字段，对应八个列。你的记录添加界面应该为这些字段中的每一个都留出空间。
+HTML 表单将为`my_music`数据库中的每一列包含一个输入字段。在上一章中，你创建了八个字段，对应八个列。你的记录添加界面应该为这些字段中的每一个都留出空间。
 
-> 注意：使用数据库字段名作为 HTML 表单字段的 `NAME` 属性。此外，在适当的情况下，使用数据库字段的大小作为 HTML 表单字段中 `MAXLENGTH` 属性的值。
+> 注意：使用数据库字段名作为 HTML 表单字段的`NAME`属性。此外，在适当的情况下，使用数据库字段的大小作为 HTML 表单字段中`MAXLENGTH`属性的值。
 
 1. 在你的文本编辑器中打开一个新文件并输入以下 HTML：
+
 ```html
 <HTML>
 <HEAD>
@@ -3510,29 +4133,37 @@ HTML 表单将为 `my_music` 数据库中的每一列包含一个输入字段。
 <BODY>
 <h1>向 my_music 添加记录</h1>
 ```
-2. 开始你的表单。假设方法为 `POST`，动作动名为 `do_addrecord.php` 的脚本。
+
+2. 开始你的表单。假设方法为`POST`，动作动名为`do_addrecord.php`的脚本。
+
 ```html
 <FORM METHOD="POST" ACTION="do_addrecord.php">
 ```
-3. 开始 HTML 表格布局。开始新行和新单元格，为 `id` 创建一个输入字段，并带有文本标签：
+
+3. 开始 HTML 表格布局。开始新行和新单元格，为`id`创建一个输入字段，并带有文本标签：
+
 ```html
 <TABLE CELLSPACING=3>
-<tr
+<tr>
 <TD VALIGN="TOP">
 <P><strong>ID:</strong><BR>
 <INPUT TYPE="text" NAME="id" SIZE=5 MAXLENGTH=5></P>
 </TD>
 </tr>
 ```
+
 4. 为日期创建一个带有文本标签的输入字段。在输入字段后关闭表格单元格：
+
 ```html
 <P><strong>购得于日期 (YYYY-MM-DD):</strong><BR>
 <INPUT TYPE="text" NAME="date" SIZE=10 MAXLENGTH=10></P>
 </TD>
 ```
+
 > 注意：MyMusic 中使用的日期类型是 YYYY-MM-DD 格式。日期的一个示例是 2004-03-02（2004年3月2日）。
 
 5. 在新的表格数据单元格中，创建一组单选按钮来选择记录的频率。在单选按钮后关闭表格数据单元格和表格行：
+
 ```html
 <TD VALIGN="TOP">
 <P><strong>格式:</strong><BR>
@@ -3542,16 +4173,20 @@ HTML 表单将为 `my_music` 数据库中的每一列包含一个输入字段。
 </P>
 </TD>
 ```
+
 6. 开始一个新行和表格单元格，为标题创建一个输入字段。在输入字段后关闭表格单元格：
+
 ```html
 <TR>
 <TD VALIGN="TOP">
 <P><strong>标题:</strong><BR>
 <INPUT TYPE="text" NAME="title" SIZE=35 MAXLENGTH=150></P>
 </TD>
-</tr
+</tr>
 ```
+
 7. 在新的表格数据单元格中，为唱片标签创建一个输入字段。在输入字段后关闭表格单元格和行：
+
 ```html
 <TD VALIGN="TOP">
 <P><strong>唱片标签:</strong><BR>
@@ -3559,43 +4194,54 @@ HTML 表单将为 `my_music` 数据库中的每一列包含一个输入字段。
 </TD>
 </tr>
 ```
+
 8. 开始新行和数据单元格，为歌手的名字创建一个输入字段。在输入字段后关闭表格单元格：
+
 ```html
 <TR>
 <TD VALIGN="TOP">
 <P><strong>歌手名:</strong><BR>
 <INPUT TYPE="text" NAME="artist_fn" SIZE=35 MAXLENGTH=100></P>
 </TD>
-</TR
+</TR>
 ```
+
 9. 在一个新的表格单元格中，为歌手的姓（或团体名）创建一个输入字段。在输入字段后关闭表格数据单元格和行：
+
 ```html
 <TD VALIGN="TOP">
 <P><strong>歌手姓 (或团体名):</strong><BR>
 <INPUT TYPE="text" NAME="artist_ln" SIZE=35 MAXLENGTH=100></P>
 </TD>
-</TR
+</TR>
 ```
-10. 开始一个跨两列的新行和表格单元格。创建一个带有文本标签的 `TEXTAREA` 来存放你的备注：
+
+10. 开始一个跨两列的新行和表格单元格。创建一个带有文本标签的`TEXTAREA`来存放你的备注：
+
 ```html
 <TR>
 <TD VALIGN="TOP" COLSPAN=2 ALIGN="CENTER">
 <P><strong>我的备注:</strong><BR>
-<TEXTAREA NAME="my_notes" COLS=35 ROWS=5</TEXTAREA></P>
-</TD
+<TEXTAREA NAME="my_notes" COLS=35 ROWS=5></TEXTAREA></P>
+</TD>
 ```
+
 11. 添加提交按钮，并关闭表格数据单元格、表格行和表格本身：
+
 ```html
 <INPUT TYPE="submit" NAME="submit" VALUE="添加记录"></P>
-</TD></TABLE
+</TD></TABLE>
 ```
+
 12. 关闭你的表单，并添加一些 HTML 使文档有效：
+
 ```html
 </FORM>
 </BODY>
 ```
-13. 将文件保存为 `show_addrecord.html`，将其放在 Web 服务器根目录下。
-14. 打开浏览器并输入 `http://127.0.0.1/show_addrecord.html`。
+
+13. 将文件保存为`show_addrecord.html`，将其放在 Web 服务器根目录下。
+14. 打开浏览器并输入`http://127.0.0.1/show_addrecord.html`。
 
 ![](img/7a81120f3fcfd17d264c4ace19b756f8_180_0.png)
 
@@ -3606,36 +4252,49 @@ HTML 表单将为 `my_music` 数据库中的每一列包含一个输入字段。
 你为记录创建的脚本比创建脚本简单得多！
 
 1. 在文本编辑器中打开一个新文件并启动 PHP 脚本：
+
 ```php
 <?php
 ```
-2. 检查 `$_POST['id']`、`$_POST['format']` 和 `$_POST['title']` 是否输入了值。如果没有，将用户返回表单并退出脚本：
+
+2. 检查`$_POST['id']`、`$_POST['format']`和`$_POST['title']`是否输入了值。如果没有，将用户返回表单并退出脚本：
+
 ```php
 if (!$_POST['id'] || !$_POST['format'] || !$_POST['title']) {
     header("Location:show_addrecord.html");
     exit;
 }
 ```
+
 > 注意：你可以根据需要拥有任意数量的字段。
 
 3. 为表所在的数据库名称创建一个变量：
+
 ```php
 $db_name = "test_db";
 ```
+
 4. 为该脚本填充的表名创建一个变量：
+
 ```php
 $table_name = "my_music";
 ```
+
 5. 按照你之前的方法添加连接信息：
+
 ```php
 $connection = @mysql_connect("localhost","root","")
 or die(mysql_error());
 ```
+
 6. 选择你将使用的数据库：
+
 ```php
 $db = @mysql_select_db($db_name, $connection) or die(mysql_error());
 ```
+
 7. 创建 SQL 语句。第一个语句给出填充的字段名（按顺序），第二个语句发送值：
+
 ```php
 $sql = "INSERT INTO $table_name
 (id, format, title, artist_in, rec_label,
@@ -3643,24 +4302,34 @@ $_POST['id'], $_POST['format'], $_POST['title'],
 $_POST['artist_fn'], $_POST['artist_ln'], $_POST['label'],
 $_POST['notes'], $_POST['date'])";
 ```
-8. 创建一个变量来存储 `query()` 函数的结果，正如你所学的那样：
+
+8. 创建一个变量来存储`query()`函数的结果，正如你所学的那样：
+
 ```php
-$result = @mysql_query($sql, $connection
+$result = @mysql_query($sql, $connection);
 ```
+
 9. 关闭 PHP 块并添加 HTML：
+
 ```php
 ?>
 </head>
 ```
-10. 插入 `body`：
+
+10. 插入`body`：
+
 ```html
 <body>
 ```
-11. 向 `my_music` 添加记录：
+
+11. 向`my_music`添加记录：
+
 ```html
 <h1>向 my_music 添加记录</h1>
 ```
-12. 插入 `id`：
+
+12. 插入`id`：
+
 ```html
 <table CELLSPACING=3>
 <tr>
@@ -3670,14 +4339,18 @@ $result = @mysql_query($sql, $connection
 </td>
 </tr>
 ```
+
 13. 插入日期：
+
 ```html
 <P><strong>购得于日期 (YYYY-MM-DD):</strong><BR>
 <INPUT TYPE="text" NAME="date" SIZE=10 MAXLENGTH=10></P>
 </td>
 </tr>
 ```
+
 14. 插入格式：
+
 ```html
 <td VALIGN="TOP">
 <P><strong>格式:</strong><BR>
@@ -3688,7 +4361,9 @@ $result = @mysql_query($sql, $connection
 </td>
 </tr>
 ```
+
 15. 插入标题：
+
 ```html
 <tr>
 <td VALIGN="TOP">
@@ -3697,7 +4372,9 @@ $result = @mysql_query($sql, $connection
 </td>
 </tr>
 ```
+
 16. 插入唱片标签：
+
 ```html
 <td VALIGN="TOP">
 <P><strong>唱片标签:</strong><BR>
@@ -3706,7 +4383,9 @@ $result = @mysql_query($sql, $connection
 </tr>
 </tr>
 ```
+
 17. 插入歌手名：
+
 ```html
 <tr>
 <td VALIGN="TOP">
@@ -3715,7 +4394,9 @@ $result = @mysql_query($sql, $connection
 </td>
 </tr>
 ```
+
 18. 插入歌手姓：
+
 ```html
 <td VALIGN="TOP">
 <P><strong>歌手姓 (或团体名):</strong><BR>
@@ -3724,7 +4405,9 @@ $result = @mysql_query($sql, $connection
 </tr>
 </tr>
 ```
+
 19. 插入备注：
+
 ```html
 <tr>
 <td VALIGN="TOP" COLSPAN=2 ALIGN="CENTER">
@@ -3733,14 +4416,18 @@ $result = @mysql_query($sql, $connection
 </td>
 </tr>
 ```
+
 20. 插入提交按钮并关闭标签：
+
 ```html
 <INPUT TYPE="submit" NAME="submit" VALUE="添加记录"></P>
 </td>
 </tr>
-</</table>
+</table>
 ```
+
 21. 增加一个指向原表单的链接：
+
 ```html
 <P><a href="show_addrecord.html">添加另一个</a></P>
 </form>
@@ -3748,11 +4435,7 @@ $result = @mysql_query($sql, $connection
 </html>
 ```
 
-
-
-
-
-21. 将文件保存为 `do_addrecord.php`，并将其放置在 Web 服务器的文档根目录下。
+21. 将文件保存为`do_addrecord.php`，并将其放置在 Web 服务器的文档根目录下。
 
 你的代码看起来如下：
 
@@ -3775,7 +4458,6 @@ $db = mysqli_select_db($db_name, $connection) or die(mysqli_error());
 
 // 创建 SQL 语句并执行查询
 $sql = "INSERT INTO $table_name \n(id, format, artist_fn, artist_ln, rec_label, notes, date) VALUES \n($_POST['id'], $_POST['format'], $_POST['artist_fn'], $_POST['artist_ln'], $_POST['rec_label'], $_POST['notes'], $_POST['date'])";
-
 $result = mysqli_query($sql, $connection) or die(mysqli_error());
 ?>
 <HTML>
@@ -3804,7 +4486,7 @@ $result = mysqli_query($sql, $connection) or die(mysqli_error());
 <tr>
 <TD VALIGN="TOP"><p><strong>艺术家姓（或团体名）:</strong><BR><?php echo $_POST['artist_ln']; ?></p></td>
 </tr>
-</td>>
+</td>
 </tr>
 <TD VALIGN=TOP COLSPAN=2 ALIGN=CENTER>
 <p><strong>我的笔记:</strong><BR>
@@ -3825,7 +4507,7 @@ $result = mysqli_query($sql, $connection) or die(mysqli_error());
 
 # 填充你的表格
 
-现在，如果你在这一章的第一部分后没有关闭网络浏览器，`show_addrecord.html` 应该仍然可见。如果没有，请打开 http://127.0.0.1/show_addrecord.html。
+现在，如果你在这一章的第一部分后没有关闭网络浏览器，`show_addrecord.html`应该仍然可见。如果没有，请打开`http://127.0.0.1/show_addrecord.html`。
 
 如果你已经准备好了表格，请完成添加表单。下图显示了收藏中的一个示例。
 
@@ -3843,9 +4525,9 @@ $result = mysqli_query($sql, $connection) or die(mysqli_error());
 
 ## 概述
 
-现在，你已经愉快地为 `my_music` 表填充了音乐收藏中的所有项目。在本章中，你将学习：
+现在，你已经愉快地为`my_music`表填充了音乐收藏中的所有项目。在本章中，你将学习：
 
-- 使用 ORDER BY 子句从表中选择记录
+- 使用`ORDER BY`子句从表中选择记录
 - 格式化并显示数据库中的记录
 
 ## 规划并创建你的菜单
@@ -3853,6 +4535,7 @@ $result = mysqli_query($sql, $connection) or die(mysqli_error());
 你可以只写一个脚本说“选择所有数据”，但那样会很无聊。在本章中，你将看到四种从音乐表中选择记录的方法。为了方便导航，创建一个管理菜单——脚本列表的 fancy words。
 
 1. 在你的文本编辑器中打开新文件并输入以下 HTML：
+
 ```html
 <HTML>
 <HEAD>
@@ -3867,83 +4550,115 @@ $result = mysqli_query($sql, $connection) or die(mysqli_error());
 </BODY>
 </HTML>
 ```
-2. 开始一个列表，并创建名为 `sel_byid.php` 的第一个链接脚本。此脚本将按 ID 显示记录：
+
+2. 开始一个列表，并创建名为`sel_byid.php`的第一个链接脚本。此脚本将按 ID 显示记录：
+
+```html
 <ul>
 <li><a href="sel_byid.php">按 ID 排序</a></li>
 </ul>
+```
 
-3. 添加指向脚本 `sel_bydate.php` 的链接。此脚本将按日期显示记录。最近获取的项目列出：
+3. 添加指向脚本`sel_bydate.php`的链接。此脚本将按日期显示记录。最近获取的项目列出：
+
+```html
 <ul>
 <li><a href="sel_bydate.php">按日期排序</a></li>
 </ul>
+```
 
-4. 添加指向脚本 `sel_bytitle.php` 的链接。此脚本将按标题显示记录：
+4. 添加指向脚本`sel_bytitle.php`的链接。此脚本将按标题显示记录：
+
+```html
 <ul>
 <li><a href="sel_bytitle.php">按标题排序</a></li>
 </ul>
+```
 
-5. 添加指向脚本 `sel_byartist.php` 的链接。此脚本将按艺术家显示记录：
+5. 添加指向脚本`sel_byartist.php`的链接。此脚本将按艺术家显示记录：
+
+```html
 <ul>
 <li><a href="sel_byartist.php">按艺术家排序</a></li>
 </ul>
+```
 
 6. 关闭项目列表，然后添加一些 HTML 使文档有效：
+
 ```html
 </ul>
 </HTML>
 ```
-7. 将文件保存为 `my_menu.html`，并将此文件放置在 Web 服务器的文档根目录下。
 
-8. 打开你的网络浏览器并输入 http://127.0.0.1/my_menu.html。
+7. 将文件保存为`my_menu.html`，并将此文件放置在 Web 服务器的文档根目录下。
+
+8. 打开你的网络浏览器并输入`http://127.0.0.1/my_menu.html`。
 
 ![](img/7a81120f3fcfd17d264c4ace19b756f8_189_0.png)
 
 在接下来的部分，创建执行上述选择操作脚本。
 
-# 从 my_music 表选择数据
+# 从`my_music`表选择数据
 
 接下来的四个脚本包含了主题的变体：选择和显示数据。脚本的大部分完全相同，但重复使其变得完美。
 
-这些脚本中唯一的新函数是 `mysql_fetch_array()` 函数。该函数获取 SQL 查询的结果并将行以数组格式放置。使用简单的 `while` 循环，你可以提取并显示这些元素。
+这些脚本中唯一的新函数是`mysql_fetch_array()`函数。该函数获取 SQL 查询的结果并将行以数组格式放置。使用简单的`while`循环，你可以提取并显示这些元素。
 
 ## 按 ID 排序记录
 
-记录添加脚本中的必填字段之一是 ID。在这里，你将选择 `my_music` 表中的所有记录，并按 ID 排序。ORDER BY 子句的默认值是 `ASC`（升序），因此返回的记录 ID 为 #1，然后是 #2、#3 等。
+记录添加脚本中的必填字段之一是 ID。在这里，你将选择`my_music`表中的所有记录，并按 ID 排序。`ORDER BY`子句的默认值是`ASC`（升序），因此返回的记录 ID 为 #1，然后是 #2、#3 等。
 
 1. 在你的文本编辑器中打开一个新文件并启动 PHP 块：
+
 ```php
 <?php
 $db_name = "testDB";
 ```
+
 2. 创建变量来存储存储所在的数据库名称：
+
 ```php
 $table_name = "my_music";
 ```
+
 3. 按照之前的方法添加连接信息：
+
 ```php
 $connection = mysqli_connect("localhost", "spike", "9s7En4") or die(mysqli_error());
 ```
+
 4. 按照之前的方法选择数据库：
+
 ```php
 $db = mysqli_select_db($db_name, $connection) or die(mysqli_error());
 ```
+
 5. 创建 SQL 查询：
+
 ```sql
 $sql = "SELECT id, format, title, artist_fn, artist_ln, rec_label, my_notes, date_acq FROM table_name ORDER BY id";
 ```
-> 提示：由于你正在选择所有记录，你可以在 SQL 语句中使用 ** 代替命名所有字段。在这种情况下，该行看起来如下：
+
+> 提示：由于你正在选择所有记录，你可以在 SQL 语句中使用`*`代替命名所有字段。在这种情况下，该行看起来如下：
+
 ```sql
 $sql = "SELECT * FROM table_name ORDER BY id";
 ```
-6. 创建变量来存储 `mysqli_query()` 函数的结果，正如你所学的那样：
+
+6. 创建变量来存储`mysqli_query()`函数的结果，正如你所学的那样：
+
 ```php
 $result = mysqli_query($sql, $connection) or die(mysqli_error());
 ```
-7. 启动 while 循环。循环为结果集中的每个记录创建一个名为 `$row` 的数组：
+
+7. 启动`while`循环。循环为结果集中的每个记录创建一个名为`$row`的数组：
+
 ```php
 while ($row = mysqli_fetch_array($result)) {
 ```
-8. 从结果中获取单个元素并为它们命名。在任何可能带有斜杠的文本字段周围添加 `stripslashes()`：
+
+8. 从结果中获取单个元素并为它们命名。在任何可能带有斜杠的文本字段周围添加`stripslashes()`：
+
 ```php
 $id = $row['id'];
 $format = stripslashes($row['title']);
@@ -3953,26 +4668,26 @@ $rec_label = stripslashes($row['rec_label']);
 $my_notes = stripslashes($row['my_notes']);
 $date_acq = $row['date_acq'];
 ```
-9. 对名称进行列表格式化。因为有些艺术家只有名字，有些艺术家既有名字又有姓，而团体名被进了 `artist_ln` 字段，开始使用 if...else 来处理这种情况。从查找团体开始。
 
-
+9. 对名称进行列表格式化。因为有些艺术家只有名字，有些艺术家既有名字又有姓，而团体名被进了`artist_ln`字段，开始使用`if...else`来处理这种情况。从查找团体开始。
 
 ```php
 if ($artist_fn != "") {
 ```
 
-11. 创建一个名为 $artist_fullname 的变量来存储包含 $artist_fn 的字符串。
+11. 创建一个名为`$artist_fullname`的变量来存储包含`$artist_fn`的字符串。
 
-> 注意 $artist_ln 的修剪后的值，它将包含字符串开头和结尾的所有额外空格。
+> 注意`$artist_ln`的修剪后的值，它将包含字符串开头和结尾的所有额外空格。
 
-12. 继续该块，将 $artist_ln 的修剪后的值赋值给 $artist_fullname：
+12. 继续该块，将`$artist_ln`的修剪后的值赋值给`$artist_fullname`：
+
 ```php
 } else {
   $artist_fullname = trim("$artist_ln");
 }
 ```
 
-13. 进行一些格式化。如果你没有在 `date_acq` 字段中输入日期，MySQL 将存入默认值 0000-00-00。创建一个 if 块来查找此值，并将其替换为更友好的内容：
+13. 进行一些格式化。如果你没有在`date_acq`字段中输入日期，MySQL 将存入默认值 0000-00-00。创建一个`if`块来查找此值，并将其替换为更友好的内容：
 
 ```php
 if ($date_acq == "0000-00-00") {
@@ -3980,7 +4695,7 @@ if ($date_acq == "0000-00-00") {
 }
 ```
 
-14. 创建一个名为 $display_block 的变量，用于存储所有格式化后的记录。在冗长的代码块中使用这种格式化，后面是记录标签名称和艺术家。接下来是一个换行符、你的备注，以及一个包含获取日期的强调性括号声明。
+14. 创建一个名为`$display_block`的变量，用于存储所有格式化后的记录。在冗长的代码块中使用这种格式化，后面是记录标签名称和艺术家。接下来是一个换行符、你的备注，以及一个包含获取日期的强调性括号声明。
 
 ```php
 $display_block = "<strong>$title</strong> on $rec_label,
@@ -3988,8 +4703,11 @@ by $artist_fullname<br>
 $my_notes = <em>(acquired:$date_acq, format:format($date_acq))</em></p>";
 ```
 
-15. 关闭 while 循环，然后是你的 PHP 块：
+15. 关闭`while`循环，然后是你的 PHP 块：
+
+```php
 ?>
+```
 
 16. 添加此 HTML：
 
@@ -4005,18 +4723,22 @@ $my_notes = <em>(acquired:$date_acq, format:format($date_acq))</em></p>";
 ```
 
 17. 显示结果：
+
+```php
 <?php echo "$display_block: "; ?>
+```
 
 18. 添加返回主菜单的链接，并添加更多 HTML 以构建有效的文档：
+
 ```html
 <P><a href="my.menu.html">返回菜单</a></P>
-</body
+</body>
 </HTML>
 ```
 
-19. 将文件保存为 `sel_byid.php`，并将其放置在 Web 服务器的文档根目录下。
+19. 将文件保存为`sel_byid.php`，并将其放置在 Web 服务器的文档根目录下。
 
-20. 打开你的浏览器并输入 `http://127.0.0.1/my_menu.html`。
+20. 打开你的浏览器并输入`http://127.0.0.1/my_menu.html`。
 
 21. 点击按 ID 的链接。
 
@@ -4043,12 +4765,16 @@ $my_notes = <em>(acquired:$date_acq, format:format($date_acq))</em></p>";
 
 ## 按获取日期显示记录
 
-虽然不是强制要求的，但添加记录脚本留有一个空间用于记录录入你音乐收藏的日期。在这个脚本中，你将选择 `my_music` 表中的所有记录，按此日期排序，最近获取的记录将出现在列表第一个。
+虽然不是强制要求的，但添加记录脚本留有一个空间用于记录录入你音乐收藏的日期。在这个脚本中，你将选择`my_music`表中的所有记录，按此日期排序，最近获取的记录将出现在列表第一个。
 
-1. 打开 `sel_byID.php` 文件，并将 SQL 语句更改为：
-`$sql = "SELECT * FROM $table_name ORDER BY date_acq DESC";`
+1. 打开`sel_byID.php`文件，并将 SQL 语句更改为：
+
+```php
+$sql = "SELECT * FROM $table_name ORDER BY date_acq DESC";
+```
 
 2. 修改 HTML 标题和头部以反映新的排序方法：
+
 ```html
 <HTML>
 <HEAD>
@@ -4060,8 +4786,8 @@ $my_notes = <em>(acquired:$date_acq, format:format($date_acq))</em></p>";
 </HTML>
 ```
 
-3. 将文件保存为 `sel_bydate.php`，并将其放置在 Web 服务器的根目录下。
-4. 打开你的浏览器并输入 `http://127.0.0.1/my_menu.html`。
+3. 将文件保存为`sel_bydate.php`，并将其放置在 Web 服务器的根目录下。
+4. 打开你的浏览器并输入`http://127.0.0.1/my_menu.html`。
 5. 点击按日期排序的链接。
 
 你的记录将与我的不同，但你将看到类似下面的屏幕，记录按日期排序。没有日期的记录将出现在列表末尾。
@@ -4070,12 +4796,16 @@ $my_notes = <em>(acquired:$date_acq, format:format($date_acq))</em></p>";
 
 ## 按标题显示记录
 
-正如你所想象的，标题是添加记录脚本中的一个必填字段。在这个脚本中，你将选择 `my_music` 表中的所有记录，按标题的字母顺序排序。
+正如你所想象的，标题是添加记录脚本中的一个必填字段。在这个脚本中，你将选择`my_music`表中的所有记录，按标题的字母顺序排序。
 
-1. 打开 `sel_bydate.php` 文件，并将 SQL 语句更改为：
-`$sql = "SELECT * FROM $table_name ORDER BY title";`
+1. 打开`sel_bydate.php`文件，并将 SQL 语句更改为：
+
+```php
+$sql = "SELECT * FROM $table_name ORDER BY title";
+```
 
 2. 修改 HTML 标题以反映该方法：
+
 ```html
 <HTML>
 <HEAD>
@@ -4083,11 +4813,12 @@ $my_notes = <em>(acquired:$date_acq, format:format($date_acq))</em></p>";
 </HEAD>
 <body>
 <h1>我的音乐：按标题排序</h1>
-</body
+</body>
 </HTML>
 ```
-3. 将文件保存为 `sel_bytitle.php`（注：此处原文为 sel_bydate.php，根据逻辑推测为 sel_bytitle），并将其放置在 Web 服务器的根目录下。
-4. 打开你的浏览器并输入 `http://127.0.0.1/my_menu.html`。
+
+3. 将文件保存为`sel_bytitle.php`，并将其放置在 Web 服务器的根目录下。
+4. 打开你的浏览器并输入`http://127.0.0.1/my_menu.html`。
 5. 点击按标题排序的链接。
 
 你的记录将与我的不同，但你将看到类似下面的屏幕，记录按标题排序。
@@ -4111,7 +4842,7 @@ $my_notes = <em>(acquired:$date_acq, format:format($date_acq))</em></p>";
 
 ## 按艺术家显示记录
 
-这个脚本稍微复杂一点，因为你必须考虑艺术家名字的问题：有些只有名字，有些有名字和姓，有些还包含在 `artist_in` 字段。在脚本中，你将选择 `my_music` 表中的所有记录，按全名的字母顺序排序。
+这个脚本稍微复杂一点，因为你必须考虑艺术家名字的问题：有些只有名字，有些有名字和姓，有些还包含在`artist_in`字段。在脚本中，你将选择`my_music`表中的所有记录，按全名的字母顺序排序。
 
 1. 在文本编辑器中打开新文件并开始 PHP 脚本：
 
@@ -4122,8 +4853,15 @@ $db_name = "testDB";
 
 2. 创建一个变量来存储数据库名称：
 
+```php
+$table_name = "my_music";
+```
+
 3. 创建一个变量来存储你要查询的表名，使用此脚本：
-`$table_name = "my_music";`
+
+```php
+$table_name = "my_music";
+```
 
 4. 添加如下连接信息：
 
@@ -4137,23 +4875,27 @@ $connection = mysqli_connect("localhost", "spike", "sj7En4") or die(mysqli_error
 $db = mysqli_select_db($db_name, $connection) or die(mysqli_error());
 ```
 
-6. 创建 SQL 语句。回到命名 `SELECT` 语句中所有字段的方法：
-`$sql = "SELECT id, format, title, concat(artist_fn, ' ', artist_in) as artist_fullname, label, notes, date_acq FROM $table_name ORDER BY artist_fullname";`
+6. 创建 SQL 语句。回到命名`SELECT`语句中所有字段的方法：
 
-> 注意此 SQL 语句，你实际上是在使用 `concat()` 函数（一个 MySQL 函数）从两个现有字段创建一个新字段，将 artist_fn 和 artist_in 结合，中间留有一个空格。这将允许你将值赋值给名为 artist_fullname 的字段。例如，假设你拥有 David Gray 的专辑《White Leader》。艺术家的名（David）和姓（Gray）会进入表单的相应区域，但将输出为单一字符串（David Gray）。
+```php
+$sql = "SELECT id, format, title, concat(artist_fn, ' ', artist_in) as artist_fullname, label, notes, date_acq FROM $table_name ORDER BY artist_fullname";
+```
 
-`trim()` 函数仍然会修剪空格。`trim(concat(artist_fn, ' ', artist_in)) as artist_fullname` 替换了以前脚本中 while 循环内常见的 `if...else` 块。
+> 注意此 SQL 语句，你实际上是在使用`concat()`函数（一个 MySQL 函数）从两个现有字段创建一个新字段，将`artist_fn`和`artist_in`结合，中间留有一个空格。这将允许你将值赋值给名为`artist_fullname`的字段。例如，假设你拥有 David Gray 的专辑《White Leader》。艺术家的名（David）和姓（Gray）会进入表单的相应区域，但将输出为单一字符串（David Gray）。
 
-创建一个变量来存储 `mysql_query()` 函数的结果，正如你所学过的：
+`trim()`函数仍然会修剪空格。`trim(concat(artist_fn, ' ', artist_in)) as artist_fullname`替换了以前脚本中`while`循环内常见的`if...else`块。
 
-`$result = mysql_query($sql);`
+创建一个变量来存储`mysql_query()`函数的结果，正如你所学过的：
 
-开始 while 循环。while 循环将为集合中的每个记录创建一个数组：
-`while ($row = mysql_fetch_array($result)) {`
+```php
+$result = mysql_query($sql);
+```
 
+开始`while`循环。`while`循环将为集合中的每个记录创建一个数组：
 
-
-
+```php
+while ($row = mysql_fetch_array($result)) {
+```
 
 # 我的音乐：按艺术家名称排序
 
@@ -4203,30 +4945,31 @@ Hollywood Records 出版的 **Blowback**，由 Tricky 创作
 
 在第 12 章“创建数据库表”中，你遵循了两步走的表创建流程。你可以使用相同的流程来创建授权用户表。
 
-1. 打开网页浏览器访问 http://127.0.0.1/show_creatable.html。
-2. 在“表名”（Table Name）字段中，输入 `auth_users`。
+1. 打开网页浏览器访问`http://127.0.0.1/show_creatable.html`。
+2. 在“表名”（Table Name）字段中，输入`auth_users`。
 3. 在“字段数量”（Number of Fields）步骤中，输入 4。
-4. 点击“进入第二步”（Go to Step 2）。你会看到一个有四行的表单，对应 `auth_users` 表中的四个字段。
-5. 在第一行，为“字段名”（Field Name）输入 `f_name`，从“字段类型”（Field Type）下拉菜单选择 `varchar`，并指定长度（Length）为 50。此字段将存储用户的名字。
-6. 在第二行，为“字段名”输入 `l_name`，从“字段类型”下拉菜单选择 `varchar`，并指定长度为 50。此字段将存储用户的姓。
-7. 在第三行，为“字段名”输入 `username`，从“字段类型”下拉菜单选择 `varchar`，并指定长度为 25。此字段将存储用户的用户名。
-8. 在第四行，为“字段名”输入 `password`，从“字段类型”下拉菜单选择 `varchar`，并指定长度为 100。此字段将存储密码的哈希值。
+4. 点击“进入第二步”（Go to Step 2）。你会看到一个有四行的表单，对应`auth_users`表中的四个字段。
+5. 在第一行，为“字段名”（Field Name）输入`f_name`，从“字段类型”（Field Type）下拉菜单选择`varchar`，并指定长度（Length）为 50。此字段将存储用户的名字。
+6. 在第二行，为“字段名”输入`l_name`，从“字段类型”下拉菜单选择`varchar`，并指定长度为 50。此字段将存储用户的姓。
+7. 在第三行，为“字段名”输入`username`，从“字段类型”下拉菜单选择`varchar`，并指定长度为 25。此字段将存储用户的用户名。
+8. 在第四行，为“字段名”输入`password`，从“字段类型”下拉菜单选择`varchar`，并指定长度为 100。此字段将存储密码的哈希值。
 
 注意：如果你还记得第 7 章“显示动态内容”，*哈希*（hash）是字符串的数字摘要。它可以用于比较字符串（或文件）的版本，以确定版本是否存在差异。
 
 完成后的表单应该如下所示。
 
-点击“创建表”（Create Table）按钮。你会看到一个确认屏幕，说明你的表已创建。在下一节中，你将创建一个记录添加表单和脚本，并向 `auth_users` 表添加用户。
+点击“创建表”（Create Table）按钮。你会看到一个确认屏幕，说明你的表已创建。在下一节中，你将创建一个记录添加表单和脚本，并向`auth_users`表添加用户。
 
 ## 向你的表添加用户
 
-你需要一个空的 `users` 表。[注：根据语境已修正为“do you need”] 在这一节中，你将创建一个简单的记录添加表单和脚本，类似于你在第 13 章“向表中插入数据”中创建的内容。
+你需要一个空的`users`表。在这一节中，你将创建一个简单的记录添加表单和脚本，类似于你在第 13 章“向表中插入数据”中创建的内容。
 
 ## 创建添加表单和脚本
 
-HTML 表单将包含 `auth_users` 表中每一列对应的输入字段。
+HTML 表单将包含`auth_users`表中每一列对应的输入字段。
 
 1. 在文本编辑器中打开一个新文件并输入以下 HTML：
+
 ```html
 <HTML>
 <HEAD>
@@ -4235,43 +4978,52 @@ HTML 表单将包含 `auth_users` 表中每一列对应的输入字段。
 <BODY>
 <h1>Adding a Record to auth_users</h1>
 ```
-2. 开始你的表单。方法（method）是 POST，action 是一个名为 `do_adduser.php` 的脚本：
+
+2. 开始你的表单。方法（method）是 POST，action 是一个名为`do_adduser.php`的脚本：
+
 ```html
 <FORM METHOD="POST" ACTION="do_adduser.php">
 ```
+
 3. 为用户的名字创建一个带标签的输入字段：
+
 ```html
 <p><strong>First Name:</strong><br>
 <input type="text" name="name" SIZE=25 MAXLENGTH=50></p>
 ```
+
 4. 为用户的姓创建一个带标签的输入字段：
+
 ```html
 <p><strong>Last Name:</strong><br>
 <input type="text" name="name" SIZE=25 MAXLENGTH=50></p>
 ```
+
 5. 为用户名创建一个带标签的输入字段：
+
 ```html
 <p><strong>Username:</strong><br>
 <input type="text" name="name" SIZE=25 MAXLENGTH=50></p>
 ```
+
 6. 为密码创建一个带标签的输入字段：
+
 ```html
 <p><strong>Password:</strong><br>
 <input type="text" name="password" SIZE=25 MAXLENGTH=100></p>
 ```
+
 7. 添加一个提交按钮：
+
 ```html
 <input type="submit" value="Add">
 </FORM>
 </BODY>
 </HTML>
 ```
-8. 将文件保存为 `show_adduser.html`。
-9. 打开浏览器访问 http://127.0.0.1/show_adduser.html。
 
-
-
-
+8. 将文件保存为`show_adduser.html`。
+9. 打开浏览器访问`http://127.0.0.1/show_adduser.html`。
 
 ```html
 <p><strong>密码：</strong><br>
@@ -4285,7 +5037,7 @@ HTML 表单将包含 `auth_users` 表中每一列对应的输入字段。
 
 # 添加一些用户
 
-示例是基于我们服务器上的虚假用户。你的结果将取决于你在表中输入的内容。要获取用户添加表单，请打开浏览器并输入 `http://127.0.0.1/show_adduser.html`。
+示例是基于我们服务器上的虚假用户。你的结果将取决于你在表中输入的内容。要获取用户添加表单，请打开浏览器并输入`http://127.0.0.1/show_adduser.html`。
 
 在我的用户添加中，我输入了一个名为 Joe Webby 的用户信息，用户名为 Webby，密码为 likecheese。完成后的表单如图所示。
 
@@ -4305,7 +5057,7 @@ HTML 表单将包含 `auth_users` 表中每一列对应的输入字段。
 
 HTML 表单将包含两个字段：用户名和密码。两者都是必须的。
 
-- 1. 在你的文本编辑器中打开一个新文件并输入以下 HTML：
+1. 在你的文本编辑器中打开一个新文件并输入以下 HTML：
 
 ```html
 <HTML>
@@ -4316,30 +5068,34 @@ HTML 表单将包含两个字段：用户名和密码。两者都是必须的。
 <h1>登录秘密区域</h1>
 ```
 
-- 2. 定义你的表单。方法为 POST，动作为名为 `do_authaser.php` 的脚本：
+2. 定义你的表单。方法为 POST，动作为名为`do_authaser.php`的脚本：
+
 ```html
 <FORM METHOD="POST" ACTION="do_authaser.php">
 ```
 
-- 3. 为用户名创建一个带有文本标签的输入字段：
+3. 为用户名创建一个带有文本标签的输入字段：
+
 ```html
 <p><strong>用户名：</strong><br><INPUT TYPE="text" NAME="username" SIZE=25 MAXLENGTH=25></p>
 ```
 
-- 4. 为密码创建一个带有文本标签的输入字段。
+4. 为密码创建一个带有文本标签的输入字段。
+
 ```html
 <p><strong>密码：</strong><br><INPUT TYPE="password" NAME="password" SIZE=25 MAXLENGTH=25></p>
 ```
 
-- 5. 添加一个提交按钮，然后关闭表单并添加更多 html 以使文档有效：
+5. 添加一个提交按钮，然后关闭表单并添加更多 html 以使文档有效：
+
 ```html
 <p><INPUT TYPE="SUBMIT" NAME="submit" VALUE="登录"></p>
 </FORM>
 </HTML>
 ```
 
-- 6. 将文件保存为 `show_login.html`，并将此文件放在你的 Web 服务器的文档根目录下。
-- 7. 打开你的 浏览器并输入 `http://127.0.0.1/show_login.html`。
+6. 将文件保存为`show_login.html`，并将此文件放在你的 Web 服务器的文档根目录下。
+7. 打开你的浏览器并输入`http://127.0.0.1/show_login.html`。
 
 ![](img/7a81120f3fcfd17d264c4ace19b756f8_206_0.png)
 
@@ -4351,14 +5107,16 @@ LiB 团队
 
 # 创建验证脚本
 
-此脚本的目标是将表单中输入的用户名和密码与 `auth_users` 表中（同一条记录中的）用户名和密码进行匹配。
+此脚本的目标是将表单中输入的用户名和密码与`auth_users`表中（同一条记录中的）用户名和密码进行匹配。
 
-- 1. 在你的文本编辑器中打开一个新文件并启动 PHP 块：
+1. 在你的文本编辑器中打开一个新文件并启动 PHP 块：
+
 ```php
 <?php
 ```
 
-- 2. 检查两个字段是否都输入了值。如果没有，将用户重定向回表单并退出脚本：
+2. 检查两个字段是否都输入了值。如果没有，将用户重定向回表单并退出脚本：
+
 ```php
 if (!isset($_POST['username'])) || (!isset($_POST['password'])) {
     header("Location: show_login.html");
@@ -4366,55 +5124,65 @@ if (!isset($_POST['username'])) || (!isset($_POST['password'])) {
 }
 ```
 
-- 3. 创建一个变量来存储表所处的数据库名称：
+3. 创建一个变量来存储表所处的数据库名称：
+
 ```php
 $db_name = "testDB";
 ```
 
-- 4. 创建一个变量来存储你用此脚本填充的表名：
+4. 创建一个变量来存储你用此脚本填充的表名：
+
 ```php
 $table_name = "auth_users";
 ```
 
-- 5. 添加你已有的连接信息：
+5. 添加你已有的连接信息：
+
 ```php
 $connection = @mysql_connect("localhost", "spike", "sj7En4") or die(mysql_error());
 ```
 
-- 6. 选择你学习过的数据库：
+6. 选择你学习过的数据库：
+
 ```php
 $db = @mysql_select_db($db_name, $connection) or die(mysql_error());
 ```
 
-- 7. 创建 SQL 语句。该语句查找记录中的所有字段，其中表中的用户名与表单输入的用户名匹配，且表中的密码与表单中输入的密码的哈希匹配：
+7. 创建 SQL 语句。该语句查找记录中的所有字段，其中表中的用户名与表单输入的用户名匹配，且表中的密码与表单中输入的密码的哈希匹配：
+
 ```sql
 $sql = "SELECT * FROM $table_name WHERE username = '$_POST[username]' AND password = md5($_POST[password])'";
 ```
 
-- 8. 创建一个变量来存储 `mysql_query()` 函数的结果，如你已有的：
+8. 创建一个变量来存储`mysql_query()`函数的结果，如你已有的：
+
 ```php
 $result = @mysql_query($sql, $connection) or die(mysql_error());
 ```
 
-- 9. 检查结果：
+9. 检查结果：
+
 ```php
 $num = mysql_num_rows($result);
 ```
 
-- 10. 启动一个 if-else 块处理你的结果。如果行数大于 0，则找到了匹配项。创建一个变量：
+10. 启动一个`if-else`块处理你的结果。如果行数大于 0，则找到了匹配项。创建一个变量：
+
 ```php
 if ($num > 0) {
     $msg = "<p>恭喜，你已通过验证！</p>";
 ```
 
-- 11. 如果行数为0，则未找到匹配项。情况下，将用户重定向回表单：
+11. 如果行数为0，则未找到匹配项。情况下，将用户重定向回表单：
+
 ```php
 else {
     header("Location: show_login.html");
 }
 ```
 
-- 12. 关闭你的 PHP 块并添加 HTML：
+12. 关闭你的 PHP 块并添加 HTML：
+
 ```php
 ?>
 <html>
@@ -4426,10 +5194,6 @@ else {
 </body>
 </html>
 ```
-
-
-
-
 
 # 设置 Cookies
 
@@ -4448,7 +5212,9 @@ setcookie("test", "ok", "/", "yourdomain.com", 0);
 </html>
 ```
 
-在开始设置 Cookie 之前，请确定你将如何使用它们以及在何时何时设置它们。无论你决定设置什么 Cookie，请记住，你必须在向浏览器发送任何其他内容之前设置 Cookie，因为 Cookie 实际上是头部信息（header information）的一部分。
+
+
+在开始设置 Cookie 之前，请确定你将如何使用它们以及在何时设置它们。无论你决定设置什么 Cookie，请记住，你必须在向浏览器发送任何其他内容之前设置 Cookie，因为 Cookie 实际上是头部信息（header information）的一部分。
 
 如果你注意了这个警告，就不必花费几个小时去思考为什么会出现“Cannot add header information”（无法添加头部信息）的错误。这个示例代码正是如此。
 
@@ -4458,27 +5224,30 @@ setcookie("test", "ok", "/", "yourdomain.com", 0);
 
 # 错误的 Cookie
 
-setcookie() 函数用于设置一个 Cookie，并在随后的脚本中使用该 Cookie。
+`setcookie()`函数用于设置一个 Cookie，并在随后的脚本中使用该 Cookie。
 
-- **Name (名称)**：存储在全局 *_COOKIE* 中的变量名，可在随后的脚本中访问。
+- **Name (名称)**：存储在全局`$_COOKIE`中的变量名，可在随后的脚本中访问。
 - **Value (值)**：传递给 name 参数的变量值。
 - **Expiration (过期时间)**：设置 Cookie 不再可访问的特定时间。没有设置特定过期时间的 Cookie 在网络浏览器关闭时过期。
-- **Path (路径)**：决定 Cookie 的有效范围。如果参数中是单斜杠 `/`，则 Cookie 对服务器上的所有文件和目录有效。如果指定了特定目录，则 Cookie 对该目录内的页面有效。
+- **Path (路径)**：决定 Cookie 的有效范围。如果参数中是单斜杠`/`，则 Cookie 对服务器上的所有文件和目录有效。如果指定了特定目录，则 Cookie 对该目录内的页面有效。
 - **Domain (域名)**：Cookie 仅对其设置时的主机和域名有效。如果没有指定域名，默认为生成 Cookie 的服务器的主机。Cookie 域名字符串中必须至少包含两个点才能有效。
 - **Security (安全性)**：如果设置了安全参数，Cookie 将仅通过 HTTPS 传输（例如，通过安全的 Web 服务器传输）。
 
-接下来这一行是一个名为 `id` 的 Cookie 示例，值为 `55dad8092`。该特定 Cookie 将四小时后过期（当前时间为 14400 秒），并且对 yourdomain.com 文档根目录下的任何页面有效。
-`setcookie("id", "55dad8092", time() + 14400, "/", "yourdomain.com", 0);`
+接下来这一行是一个名为`id`的 Cookie 示例，值为`55dad8092`。该特定 Cookie 将四小时后过期（当前时间为 14400 秒），并且对 yourdomain.com 文档根目录下的任何页面有效。
+
+```
+setcookie("id", "55dad8092", time() + 14400, "/", "yourdomain.com", 0);
+```
 
 在下一节中，我将为你提供常用值的速查表。然后你就知道如何使用 Cookie 了。
 
 # 计算时间
 
-如果你想设置过期日期，最简单的方法是使用 PHP 为你向前计数，然后将值置于过期槽中。该值应该 Unix 整数（自 1970 年 1 月 1 日以来的秒数），你可以使用 `time()` 函数并增加秒数来获取它。
+如果你想设置过期日期，最简单的方法是使用 PHP 为你向前计数，然后将值置于过期槽中。该值应该 Unix 整数（自 1970 年 1 月 1 日以来的秒数），你可以使用`time()`函数并增加秒数来获取它。
 
 在 Cookie 上设置过期日期可以增加用户的额外有效性。如果你设置 Cookie 时没有指定时间，它将在用户关闭浏览器时自动过期。这在用户共享计算机时非常有用；你不希望处理由上一个用户的 Cookie 存储的所有访问权限。同样，如果你正在构建一个在线商店，允许用户在访问的前 15 分钟内购买的所有商品享受折扣，你可能希望设置一个 15 分钟过期的 Cookie。
 
-表 16.1 显示了使用 setcookie() 函数 `time(n)+n` 的一些示例。
+表 16.1 显示了使用`setcookie()`函数`time(n)+n`的一些示例。
 
 ![](img/7a81120f3fcfd17d264c4ace19b756f8_215_0.png)
 
@@ -4486,22 +5255,23 @@ setcookie() 函数用于设置一个 Cookie，并在随后的脚本中使用该 
 
 | 值 | 定义 |
 | --- | --- |
-| time () +60 | 当前时间起 1 分钟 |
-| time () +900 | 当前时间起 15 分钟 |
-| time () +1800 | 当前时间起 30 分钟 |
-| time () +3600 | 当前时间起 1 小时 |
-| time () +14400 | 当前时间起 4 小时 |
-| time () +43200 | 当前时间起 12 小时 |
-| time () +86400 | 当前时间起 24 小时 |
-| time () +259200 | 当前时间起 3 天 |
-| time () +604800 | 当前时间起 1 周 |
-| time () +2592000 | 当前时间起 30 天 |
+| `time() +60` | 当前时间起 1 分钟 |
+| `time() +900` | 当前时间起 15 分钟 |
+| `time() +1800` | 当前时间起 30 分钟 |
+| `time() +3600` | 当前时间起 1 小时 |
+| `time() +14400` | 当前时间起 4 小时 |
+| `time() +43200` | 当前时间起 12 小时 |
+| `time() +86400` | 当前时间起 24 小时 |
+| `time() +259200` | 当前时间起 3 天 |
+| `time() +604800` | 当前时间起 1 周 |
+| `time() +2592000` | 当前时间起 30 天 |
 
 # 设置测试 Cookie
 
 这个小脚本的目标是测试 Cookie 并在屏幕上打印消息。在开始之前，请确保你没有任何阻止 Cookie 的个人防火墙设置。此外，修改你的网络浏览器偏好，在设置 Cookie 前进行提示。这是在服务器尝试将其发送到你的浏览器之前拦截 Cookie 的唯一方法。
 
-1. 在文本编辑器中打开一个文件并开始编写 PHP 块：创建一个名为 $cookie_name,$cookie_value,$cookie_expire,$cookie_domain 的变量组，并给它们赋予以下值：
+1. 在文本编辑器中打开一个文件并开始编写 PHP 块：创建一个名为`$cookie_name`、`$cookie_value`、`$cookie_expire`、`$cookie_domain`的变量组，并给它们赋予以下值：
+
 ```php
 $cookie_name = "test_cookie";
 $cookie_value = "test string";
@@ -4511,11 +5281,14 @@ $cookie_domain = "127.0.0.1";
 
 > 注意：使用你的域名作为值
 
-2. 使用你的域名作为值
+2. 使用你的域名作为值：
 
-`setcookie($cookie_name, $cookie_value, $cookie_expire, "/", $cookie_domain, 0);`
+```
+setcookie($cookie_name, $cookie_value, $cookie_expire, "/", $cookie_domain, 0);
+```
 
 3. 打开以下：
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -4528,39 +5301,43 @@ $cookie_domain = "127.0.0.1";
 </html>
 ```
 
-4. 将文件保存为 test.php。
+4. 将文件保存为`test.php`。
 
-5. 打开浏览器并输入 http://127.0.0.1/test.php。
+5. 打开浏览器并输入`http://127.0.0.1/test.php`。
 
-你应该应该看到如下图所示的错误。
+你应该看到如下图所示的错误。
 
 ![](img/7a81120f3fcfd17d264c4ace19b756f8_215_0.png)
 
-
-
-
-
 ## 检查身份验证 Cookie
 
-秘密菜单包含两个文件的链接：secretA.php 和 secretB.php。通过在这些页面开头添加一段代码，你可以检查用户是否经过授权。
+秘密菜单包含两个文件的链接：`secretA.php`和`secretB.php`。通过在这些页面开头添加一段代码，你可以检查用户是否经过授权。
 
-1.  在你的文本编辑器中打开一个新文件并开始 PHP 块：
-2.  启动一个 `if...else` 语句块来检查 `$_COOKIE['auth']` 的值。该值必须为 `ok`，用户才能被授权用户：
+1. 在你的文本编辑器中打开一个新文件并开始 PHP 块：
+
+2. 启动一个`if...else`语句块来检查`$_COOKIE['auth']`的值。该值必须为`ok`，用户才能被授权用户：
+
 ```php
 if ($_COOKIE['auth'] == "ok") {
 ```
-3.  创建一个变量来存储成功消息：
+
+3. 创建一个变量来存储成功消息：
+
 ```php
 $msg = "Welcome to secret page A, authorized user!";
 ```
-4.  继续 `else` 语句以处理未授权的访问者。未授权的用户将被重定向到登录表单：
+
+4. 继续`else`语句以处理未授权的访问者。未授权的用户将被重定向到登录表单：
+
 ```php
 else {
     header("Location: show_login.html");
     exit;
 }
 ```
-5.  关闭 PHP 块并输入以下 HTML：
+
+5. 关闭 PHP 块并输入以下 HTML：
+
 ```html
 ?>
 <HEAD>
@@ -4568,22 +5345,25 @@ else {
 </HEAD>
 <BODY>
 ```
-6.  显示消息：
+
+6. 显示消息：
+
 ```php
 <?php echo $msg; ?>
 ```
-7.  添加更多 HTML 以使文档有效：
 
-> 注意：未授权的访问者是指尝试直接访问 secretA.php 而不通过验证过程的人。
+7. 添加更多 HTML 以使文档有效：
+
+> 注意：未授权的访问者是指尝试直接访问`secretA.php`而不通过验证过程的人。
 
 ```html
 </BODY>
 </HTML>
 ```
 
-8.  将文件保存为 `secretA.php`，并将此文件放在 Web 服务器的文档根目录下。
+8. 将文件保存为`secretA.php`，并将此文件放在 Web 服务器的文档根目录下。
 
-secretB.php 的内容应与 secretA.php 几乎相同，因此请创建一个类似于 secretA.php 的另一个文件，只需将消息中的 "A" 改为 "B" 即可。
+`secretB.php`的内容应与`secretA.php`几乎相同，因此请创建一个类似于`secretA.php`的另一个文件，只需将消息中的 "A" 改为 "B" 即可。
 
 运行一段时间。除非你的浏览器崩溃，否则你应该处于登录状态（auth cookie 尚未过期），并且你面前应该会有秘密菜单。
 
@@ -4591,9 +5371,11 @@ secretB.php 的内容应与 secretA.php 几乎相同，因此请创建一个类�
 
 现在退出网页浏览器。这包括所有浏览器窗口和你的邮件客户端（如果集成了话）。auth cookie 不应该过期（没有什么可看的；它只是会消失）。
 
-1.  重新打开网页浏览器，通过输入 `http://127.0.0.1/secretB.php` 尝试访问 secretB.php。
-2.  因为你不再是授权用户，你应该被重定向到登录屏幕。继续以授权用户的身份重新登录，并接受 cookie。
-3.  点击 secret page B 的链接。
+1. 重新打开网页浏览器，通过输入`http://127.0.0.1/secretB.php`尝试访问`secretB.php`。
+
+2. 因为你不再是授权用户，你应该被重定向到登录屏幕。继续以授权用户的身份重新登录，并接受 cookie。
+
+3. 点击 secret page B 的链接。
 
 你现在应该能看到图中所示的成功消息。
 
@@ -4605,61 +5387,67 @@ LiDB 团队
 
 ## 概述
 
-Session（会）就像加强版的 Cookie。使用 Session，你可以维护用户特定的信息，而无需设置多个 Cookie，甚至无需使用数据库。在本章中，你将学习如何：
+Session（会话）就像加强版的 Cookie。使用 Session，你可以维护用户特定的信息，而无需设置多个 Cookie，甚至无需使用数据库。在本章中，你将学习如何：
 
-- 启动会
-- 向 `$_SESSION` 超全局变量中添加变量
+- 启动会话
+- 向`$_SESSION`超全局变量中添加变量
 - 启用每个用户的访问计数
 - 在多个页面中维护用户偏好
 
 ### 在开始之前……检查 php.ini
 
-在开始使用会 之前，检查你的 `php.ini` 文件中的一个值。找到这段文本并仔细阅读。
+在开始使用会话之前，检查你的`php.ini`文件中的一个值。找到这段文本并仔细阅读。
 
 ```ini
 Argument passed to save_handler. 在文件情况下，这是存储数据文件
 ; 文件的路径。注意：Windows 用户必须更改此
-; 变量以便使用 PHP 的会函数。
+; 变量以便使用 PHP 的会话函数。
 [much more explanatory (text skipped)]
 session.save_path = /tmp
 ```
 
-`php.ini` 文件中的内容本质上是指你必须修改 `session.save_path` 的值，以便文件可以写入已存在的目录。此更改主要影响用户，且修改非常简单。
+`php.ini`文件中的内容本质上是指你必须修改`session.save_path`的值，以便文件可以写入已存在的目录。此更改主要影响用户，且修改非常简单。
 
-在 `session.save_path` 的 `=` 之后输入目录名称。例如，如果我在 Windows 上的 `php.ini` 文件包含：
-`session.save_path = c:\temp`
+在`session.save_path`的`=`之后输入目录名称。例如，如果我在 Windows 上的`php.ini`文件包含：
 
-进行更改后，重启 Apache 使更改生效。如果你是 Linux/Unix，`/tmp` 是标准目录，除非你有某些特殊理由更改它，否则可以不管它。
+```
+session.save_path = c:\temp
+```
+
+进行更改后，重启 Apache 使更改生效。如果你是 Linux/Unix，`/tmp`是标准目录，除非你有某些特殊理由更改它，否则可以不管它。
 
 ## 什么是 Session？
 
 从时间角度来说，Session 是用户访问网站期间。在编程世界中，Session 是一种大大的数据对象，可以包含各种变量和值。
 
-- 这个数据对象包含一个标识字符串，例如 `940f6b05a40d5119c030c9c7745ead9`。
-- 当启动会时，该标识字符串会自动发送给用户，存储名为 `PHPSESSID` 的 cookie 中（可以通过 `$_COOKIE['PHPSESSID']` 访问）。
+- 这个数据对象包含一个标识字符串，例如`940f6b05a40d5119c030c9c7745ead9`。
+- 当启动会话时，该标识字符串会自动发送给用户，存储名为`PHPSESSID`的 cookie 中（可以通过`$_COOKIE['PHPSESSID']`访问）。
 - 在服务器端，会创建一个同名的临时文件。
 
 ### 理解 Session 变量
 
-在临时会中，变量存储在服务器上。这个数据对象包含一个标识字符串，例如 `940f6b05a40d5119c030c9c7745ead9`。当启动会时，该标识字符串会自动发送给用户，存储在名为 `PHPSESSID` 的 cookie 中（可以通过 `$_COOKIE['PHPSESSID']` 访问）。在服务器端，会创建一个同名的临时文件。
+在临时会话中，变量存储在服务器上。这个数据对象包含一个标识字符串，例如`940f6b05a40d5119c030c9c7745ead9`。当启动会话时，该标识字符串会自动发送给用户，存储在名为`PHPSESSID`的 cookie 中（可以通过`$_COOKIE['PHPSESSID']`访问）。在服务器端，会创建一个同名的临时文件。
 
-（注：此处后续段落由于原文存在大量重复描述，翻译时已按原文逻辑保留对应结构进行翻译）
+### 启动会话
 
-### 启动会
+此脚本的目标是启动会话。
 
-此脚本的目标是启动会。
+1. 在你的文本编辑器中打开一个新文件，启动 PHP 块并调用`session_start()`函数：
 
-1.  在你的文本编辑器中打开一个新文件，启动 PHP 块并调用 `session_start()` 函数：
 ```php
 session_start();
 ```
-> 注意：现在，只要这个会存在，变量就是可用的。目前该变量没有值。
 
-2.  创建一个字符串来存储消息：
+> 注意：现在，只要这个会话存在，变量就是可用的。目前该变量没有值。
+
+2. 创建一个字符串来存储消息：
+
 ```php
 $msg = "Session has started!";
 ```
-3.  关闭 PHP 块并启动以下 HTML：
+
+3. 关闭 PHP 块并启动以下 HTML：
+
 ```html
 <HTML>
 <HEAD>
@@ -4667,43 +5455,58 @@ $msg = "Session has started!";
 </HEAD>
 <BODY>
 ```
-4.  显示消息：
+
+4. 显示消息：
+
 ```php
 <?php echo $msg; ?>
 ```
-5.  添加更多 HTML 以使文档有效：
+
+5. 添加更多 HTML 以使文档有效：
+
 ```html
 </BODY>
-</HTML
+</HTML>
 ```
-6.  将文件保存为 `session.php`，并将此文件放在 Web 服务器的文档根目录下。
-7.  打开网页浏览器并输入 `http://127.0.0.1/session.php`。
+
+6. 将文件保存为`session.php`，并将此文件放在 Web 服务器的文档根目录下。
+
+7. 打开网页浏览器并输入`http://127.0.0.1/session.php`。
 
 如果你仍然设置了在接受 cookie 前进行警告，你会看到一个对话框。点击“允许”后……
 
 ### 注册和修改 Session 变量
 
-此脚本的目标会在期间注册变量并更改其值。
+此脚本的目标在会话期间注册变量并更改其值。
 
-1.  在你的文本编辑器中打开一个新文件，启动 PHP 块并调用 `session_start()` 函数：
+1. 在你的文本编辑器中打开一个新文件，启动 PHP 块并调用`session_start()`函数：
+
 ```php
 session_start();
 ```
-2.  注册一个名为 `count` 的变量：
+
+2. 注册一个名为`count`的变量：
+
 ```php
 $_SESSION['count'] = 0;
 ```
-> 注意：现在，只要这个会存在，变量就是可用的。目前该变量没有值。
 
-3.  增加 `$_SESSION['count']` 的值以计算当前访问：
+> 注意：现在，只要这个会话存在，变量就是可用的。目前该变量没有值。
+
+3. 增加`$_SESSION['count']`的值以计算当前访问：
+
 ```php
 $_SESSION['count']++;
 ```
-4.  创建一个字符串来存储消息，包括 `$_SESSION['count']` 的值：
+
+4. 创建一个字符串来存储消息，包括`$_SESSION['count']`的值：
+
 ```php
 $msg = "You've been here ".$_SESSION['count']." times. Thanks!";
 ```
-5.  关闭 PHP 块并启动以下 HTML：
+
+5. 关闭 PHP 块并启动以下 HTML：
+
 ```html
 <HTML>
 <HEAD>
@@ -4711,20 +5514,23 @@ $msg = "You've been here ".$_SESSION['count']." times. Thanks!";
 </HEAD>
 <BODY>
 ```
-6.  显示消息：
+
+6. 显示消息：
+
 ```php
 <?php echo $msg;  ?>
 ```
-7.  添加更多 HTML 以使文档有效：
+
+7. 添加更多 HTML 以使文档有效：
+
 ```html
 </BODY>
-</HTML
+</HTML>
 ```
-8.  将文件保存为 `countme.php`，并将此文件放在 Web 服务器的文档根目录下。
-9.  打开网页浏览器并输入 `http://127.0.0.1/countme.php`。
 
+8. 将文件保存为`countme.php`，并将此文件放在 Web 服务器的文档根目录下。
 
-
+9. 打开网页浏览器并输入`http://127.0.0.1/countme.php`。
 
 多次刷新页面，观察计数器在每次刷新后如何加 1。例如，我刷新了页面八次，最后看到了下一页显示的数字。
 
@@ -4732,19 +5538,20 @@ $msg = "You've been here ".$_SESSION['count']." times. Thanks!";
 
 ## 使用 Session 管理用户偏好
 
-除了简单的访问计数器，你将启动一个会，询问用户的字体族和基础字体大小偏，在后续页面上显示这些偏好，并允许用户改变主意并重置值。
+除了简单的访问计数器，你将启动一个会话，询问用户的字体族和基础字体大小偏好，在后续页面上显示这些偏好，并允许用户改变主意并重置值。
 
-## 启动会并注册默认值
+## 启动会话并注册默认值
 
-在此脚本中，你将启动一个会并注册 `font_family` 和 `font_size` 变量。显示的 HTML 将是一种允许你选择其中哪些值的格式。
+在此脚本中，你将启动一个会话并注册`font_family`和`font_size`变量。显示的 HTML 将是一种允许你选择其中哪些值的格式。
+
+1. 在编辑器中打开一个新文件，开始 PHP 块，并调用`session_start()`函数：
 
 ```php
 <?php session_start();
 ```
 
-- 1. 在编辑器中打开一个新文件，开始 PHP 块，并调用 `session_start()` 函数：
+2. 使用`if...else`块开始检查`font_family`和`font_size`是否有任何之前的值。如果当前会话不存在这些值，则分配默认值并将其添加：
 
-- 2. 使用 `if...else` 块开始检查 `font_family` 和 `font_size` 是否有任何之前的值。如果当前会话不存在这些值，则分配默认值并将其添加：
 ```php
 if (!isset($_SESSION['font_family']) || !isset($_SESSION['font_size'])) {
     $font_family = 'sans-serif';
@@ -4754,7 +5561,8 @@ if (!isset($_SESSION['font_family']) || !isset($_SESSION['font_size'])) {
 }
 ```
 
-- 3. 如果存在之前的值，则从 `$_SESSION` 超全局变量中提取这些值：
+3. 如果存在之前的值，则从`$_SESSION`超全局变量中提取这些值：
+
 ```php
 else {
     $font_family = $_SESSION['font_family'];
@@ -4766,30 +5574,35 @@ else {
 
 如果你简单地将变量添加到会话中而不检查之前的值，那么每次加载页面时，这些变量的值都会被覆盖为空字符串。
 
-- 4. 关闭 PHP 块并输入以下 HTML：
+4. 关闭 PHP 块并输入以下 HTML：
+
 ```html
 <html>
 <head>
 <title>My Display Preferences</title>
 ```
 
-- 5. 创建样式表，从打开的 `<STYLE>` 标签开始：
+5. 创建样式表，从打开的`<STYLE>`标签开始：
+
 ```html
 <style type="css">
 ```
 
-- 6. 为 `BODY` 和 `<a>` 标签添加样式表。混合 HTML 和 PHP 以显示 `$font_family` 和 `$font_size` 的当前值：
+6. 为`BODY`和`<a>`标签添加样式表。混合 HTML 和 PHP 以显示`$font_family`和`$font_size`的当前值：
+
 ```html
 body, a {font-family:<?php echo $font_family; ?>; font-size:<?php echo $font_size; ?>pt; font-weight:normal; }
 ?>
 ```
 
-- 7. 为 `<h1>` 标签添加样式。混合 HTML 和 PHP 以显示 `$font_family` 的值和 `$font_size` 的修改值（基础值加 4）：
+7. 为`<h1>`标签添加样式。混合 HTML 和 PHP 以显示`$font_family`的值和`$font_size`的修改值（基础值加 4）：
+
 ```html
 h1 {font-family:<?php echo $font_family; ?>; font-size:<?php echo ($font_size) + 4; ?>pt; font-weight:bold; }
 ```
 
-- 8. 关闭 `</style>` 标签并继续 HTML，添加标题并开始一个表单。假设表单方法为 `POST` 动作为 `session02.php`：
+8. 关闭`</style>`标签并继续 HTML，添加标题并开始一个表单。假设表单方法为`POST`动作为`session02.php`：
+
 ```html
 </style>
 </head>
@@ -4798,30 +5611,39 @@ h1 {font-family:<?php echo $font_family; ?>; font-size:<?php echo ($font_size) +
 <form METHOD="POST" ACTION="session02.php">
 ```
 
-- 9. 创建一组单选按钮，用户可以从中选择新的字体族：
-<Pick a Font Family:<br>
+9. 创建一组单选按钮，用户可以从中选择新的字体族：
+
+```html
+Pick a Font Family:<br>
 <input type="radio" name="sel_font_family" value="serif"> serif
 <input type="radio" name="sel_font_family" value="sans-serif" checked="sans-serif">
 <input type="radio" name="sel_font_family" value="Courier"> Courier
 <input type="radio" name="sel_font_family" value="Wingdings"> Wingdings
+```
 
-- 10. 创建一组单选按钮，用户可以从中选择新的字体大小：
-<Pick a Base Size:<br>
+10. 创建一组单选按钮，用户可以从中选择新的字体大小：
+
+```html
+Pick a Base Size:<br>
 <input type="radio" name="sel_font_size" value="8"> 8pt
 <input type="radio" name="sel_font_size" value="10" checked>10pt
 <input type="radio" name="sel_font_size" value="12"> 12pt
 <input type="radio" name="sel_font_size" value="14"> 14pt
+```
 
-- 11. 添加提交按钮并关闭表单：
+11. 添加提交按钮并关闭表单：
+
+```html
 <input type="submit" name="submit" value="Set Display Preferences"/>
+```
 
-- 12. 添加更多 HTML 以使文档有效：
+12. 添加更多 HTML 以使文档有效。
 
-- 13. 以文件名 `session01.php` 保存文件，并将文件放在你的 Web 服务器的文档根目录下：
+13. 以文件名`session01.php`保存文件，并将文件放在你的 Web 服务器的文档根目录下：
 
 ```php
 <?php
-// 启动会
+// 启动会话
 session_start();
 // 检查存储的值并注册默认值
 if (!isset($_SESSION['font_family']) || !isset($_SESSION['font_size'])) {
@@ -4850,7 +5672,7 @@ font-size:<?php echo ($font_size) + 4; ?>pt;font-weight:bold; }
 <body>
 <h1>Set Your Display Preferences</h1>
 <form METHOD="POST" ACTION="session02.php">
-<Pick a Font Family:<br>
+Pick a Font Family:<br>
 <input type="radio" name="sel_font_family" value="serif"> serif
 <input type="radio" name="sel_font_family" value="sans-serif" checked="sans-serif">
 <input type="radio" name="sel_font_family" value="Courier"> Courier
@@ -4868,7 +5690,7 @@ font-size:<?php echo ($font_size) + 4; ?>pt;font-weight:bold; }
 </html>
 ```
 
-现在打开你的浏览器并输入 `http://localhost/session01.php`。
+现在打开你的浏览器并输入`http://localhost/session01.php`。
 
 除非你在最后一个脚本后关闭浏览器，否则旧的会话仍然有效，你会看到对话框。
 
@@ -4876,15 +5698,17 @@ font-size:<?php echo ($font_size) + 4; ?>pt;font-weight:bold; }
 
 ## 修改偏好
 
-在此脚本中，你分配新的 `font_family` 和 `font_size`，并显示已更改。
+在此脚本中，你分配新的`font_family`和`font_size`，并显示已更改。
 
-- 1. 在文本编辑器中打开一个新文件，启动 PHP 块，并调用 `session_start()` 函数：
+1. 在文本编辑器中打开一个新文件，启动 PHP 块，并调用`session_start()`函数：
+
 ```php
 <?php
 session_start();
 ```
 
-- 2. 一个 `if-else` 块来检查提交的 `font_family` 和 `font_size`。如果值存在，将它们添加到会话中：
+2. 一个`if-else`块来检查提交的`font_family`和`font_size`。如果值存在，将它们添加到会话中：
+
 ```php
 if (isset($_POST['font_family']) && isset($_POST['font_size'])) {
     $font_family = $_POST['font_family'];
@@ -4894,7 +5718,8 @@ if (isset($_POST['font_family']) && isset($_POST['font_size'])) {
 }
 ```
 
-- 3. 继续块以检查之前存储的 `font_family` 和 `font_size`，但仅当提交的值不存在时：
+3. 继续块以检查之前存储的`font_family`和`font_size`，但仅当提交的值不存在时：
+
 ```php
 else if (!isset($_POST['font_family']) && !isset($_POST['font_size'])) {
     if (isset($_SESSION['font_family']) && isset($_SESSION['font_size'])) {
@@ -4906,7 +5731,8 @@ else if (!isset($_POST['font_family']) && !isset($_POST['font_size'])) {
 }
 ```
 
-- 4. 如果来自表单或之前的会话不存在值，则定义并添加默认值：
+4. 如果来自表单或之前的会话不存在值，则定义并添加默认值：
+
 ```php
 else {
   $font_family = "sans-serif";
@@ -4916,7 +5742,8 @@ else {
 }
 ```
 
-- 5. 关闭 PHP 块并输入以下 HTML：
+5. 关闭 PHP 块并输入以下 HTML：
+
 ```html
 ?>
 <html>
@@ -4925,19 +5752,22 @@ else {
 <style type="css">
 ```
 
-- 6. 为 `BODY`、`a` 和 `A` 标签创建一个样式表。混合 HTML 和 PHP 显示 `$font_family` 的当前值：
+6. 为`BODY`、`a`和`A`标签创建一个样式表。混合 HTML 和 PHP 显示`$font_family`的当前值：
+
 ```css
 body, p, a {font-family:<?php echo $font_family; ?>;
 font-size:<?php echo $font_size; ?>pt;font-weight:normal;}
 ```
 
-- 7. 为 `<h1>` 标签添加样式表。混合 HTML 和 PHP 显示 `$font_family` 的值和 `$font_size` 的修改值（基础值加 4）：
+7. 为`<h1>`标签添加样式表。混合 HTML 和 PHP 显示`$font_family`的值和`$font_size`的修改值（基础值加 4）：
+
 ```css
 h1 {font-family:<?php echo $font_family; ?>;
 font-size:<?php echo ($font_size) + 4; ?>pt;font-weight:bold;}
 ```
 
-- 8. 关闭 `</style>` 标签并继续 HTML，显示两个注册变量的值：
+8. 关闭`</style>`标签并继续 HTML，显示两个注册变量的值：
+
 ```html
 </style>
 </head>
@@ -4947,13 +5777,15 @@ font-size:<?php echo ($font_size) + 4; ?>pt;font-weight:bold;}
 <?php echo "$font_size"; ?>pt.</p>
 ```
 
-- 9. 如果用户想更改偏好，提供指向 `session01.php` 的链接，然后添加更多 HTML 以使文档有效：
+9. 如果用户想更改偏好，提供指向`session01.php`的链接，然后添加更多 HTML 以使文档有效：
+
+```html
 <p>请随时再次 <a href="session01.php">更改你的偏好</a>。</p>
 </body>
 </html>
 ```
 
-- 10. 以 `session02.php` 命名保存文件，并将此文件存于你的 Web 服务器的文档根目录下。
+10. 以`session02.php`命名保存文件，并将此文件存于你的 Web 服务器的文档根目录下。
 
 你的整个代码应该像这样：
 
@@ -4970,21 +5802,20 @@ if (isset($_SESSION['font_family']) && isset($_SESSION['font_size'])) {
 }
 ```
 
-
 ```php
-) else if (!$_POST[sel_font_family]) && (!$_POST[sel_font_size])) {
-    if ($_SESSION[font_family] || $_SESSION[font_size]) {
-        $font_family = $_SESSION[font_family];
-        $font_size = $_SESSION[font_size];
-        $_SESSION[font_family] = $font_family;
-        $_SESSION[font_size] = $font_size;
+} else if (!$_POST['sel_font_family']) && (!$_POST['sel_font_size'])) {
+    if ($_SESSION['font_family'] || $_SESSION['font_size']) {
+        $font_family = $_SESSION['font_family'];
+        $font_size = $_SESSION['font_size'];
+        $_SESSION['font_family'] = $font_family;
+        $_SESSION['font_size'] = $font_size;
     }
     //register defaults
 } else {
     $font_family = "sans-serif";
     $font_size = "10";
-    $_SESSION[font_family] = $font_family;
-    $_SESSION[font_size] = $font_size;
+    $_SESSION['font_family'] = $font_family;
+    $_SESSION['font_size'] = $font_size;
 }
 ?>
 <HTML>
@@ -5007,13 +5838,16 @@ font-size:<?php echo $font_size + 4; ?>pt;font-weight:bold;}
 
 除非你在上一个脚本和现在之间关闭了浏览器，否则你仍然盯着字体族和字体大小选择表。
 
-- 1. 为基础字体选择 14pt。
-- 2. 点击“设置显示偏好”（Set Display Preferences）按钮。
+1. 为基础字体选择 14pt。
+
+2. 点击“设置显示偏好”（Set Display Preferences）按钮。
 
 ![](img/7a81120f3fcfd17d264c4ace19b756f8_235_0.png)
 
 页面使用你选择的字体族和基础字体大小显示，更改已确认。
+
 如你所见，你选择的字体族是 sans-serif，基础大小为 14px。
+
 请随时更改你的偏好。
 
 ## 显示更改
@@ -5022,9 +5856,11 @@ font-size:<?php echo $font_size + 4; ?>pt;font-weight:bold;}
 
 选择表也使用你新的字体族和基础字体大小显示。然后，按照以下步骤操作：
 
-- 1. 字体族选择 Courier。
-- 2. 字体大小选择 8pt。
-- 3. 点击“设置显示偏好”（Set Display Preferences）按钮。
+1. 字体族选择 Courier。
+
+2. 字体大小选择 8pt。
+
+3. 点击“设置显示偏好”（Set Display Preferences）按钮。
 
 ![](img/7a81120f3fcfd17d264c4ace19b756f8_236_0.png)
 
@@ -5051,110 +5887,151 @@ font-size:<?php echo $font_size + 4; ?>pt;font-weight:bold;}
 良好的应用程序设计的第一步是有计划。虽然过程中的即兴发挥有时是好事，但最好从坚实的基础和一系列目标开始。接下来的章节将帮助你创建一个简单的联系人管理系统——基本上就是一个在线地址录。在本章中，你将学习如何：
 
 - 定义管理任务并创建菜单
-- 修改表创建脚本序列以考虑主键和自动递字段
-- 定义并创建 my_contacts 表
+- 修改表创建脚本序列以考虑主键和自动递增字段
+- 定义并创建`my_contacts`表
 
 ## 规划并创建管理菜单
 
 你不仅能够查看系统中的数据，还能添加、修改和删除联系人。创建一个菜单是一个好主意——它提供指向你所有操作脚本的链接，并加入身份验证，使得只有你能看到数据。在一个脚本中创建所有内容：
 
-- 1. 在文本编辑器中打开文件并开始 PHP 块。然后启动会话，或如果已存在则继续会话：
+1. 在文本编辑器中打开文件并开始 PHP 块。然后启动会话，或如果已存在则继续会话：
+
 ```php
 session_start();
 ```
-- 2. 启动一个 if...else 块来检查 $_POST[op] 变量的值，该变量将隐藏在登录表单中：
+
+2. 启动一个`if...else`块来检查`$_POST['op']`变量的值，该变量将隐藏在登录表单中：
+
 ```php
-if ($_POST[op] == "di") {
+if ($_POST['op'] == "di") {
 ```
-- 3. 如果 $_POST[op]的值值为 di，表单将出现。启动另一个 if...else 块来检查用户输入的用户名和密码的有效性：
+
+3. 如果`$_POST['op']`的值为`di`，表单将出现。启动另一个`if...else`块来检查用户输入的用户名和密码的有效性：
+
 ```php
-if ($_POST[username] == "admin" && $_POST[password] == "abc123") {
+if ($_POST['username'] == "admin" && $_POST['password'] == "abc123") {
 ```
-你可以使用任何用户名和密码。此脚本硬编码检查用户名是否为 **admin** 密码是否为 **abc123**。
+
+你可以使用任何用户名和密码。此脚本硬编码检查用户名是否为`admin`密码是否为`abc123`。
+
 ```php
 $msg = "<p style='color:#FF0000'>Bad Login Try Again</p>";
 ```
-- 4. 创建变量 $show_form 并赋值 yes。该值稍后会在脚本中检查以确定显示：
+
+4. 创建变量`$show_form`并赋值`yes`。该值稍后会在脚本中检查以确定显示：
+
 ```php
 $show_form = "yes";
 ```
-- 5. 继续 if...else 语句：
+
+5. 继续`if...else`语句：
+
 ```php
 else {
 ```
-- 6. 如果用户输入的用户名和密码正确。在会话变量 $_SESSION[valid] 中存储值 yes：
+
+6. 如果用户输入的用户名和密码正确。在会话变量`$_SESSION['valid']`中存储值`yes`：
+
 ```php
 $_SESSION['valid'] = "yes";
 ```
-- 7. 创建变量 $show_menu 并赋值 yes。该值稍后会在脚本中检查以确定显示：
+
+7. 创建变量`$show_menu`并赋值`yes`。该值稍后会在脚本中检查以确定显示：
+
 ```php
 $show_menu = "yes";
 ```
-- 8. 关闭内部 if...else 块：
+
+8. 关闭内部`if...else`块：
+
 ```php
 }
 ```
-- 9. 继续外部 if...else 块：
+
+9. 继续外部`if...else`块：
+
 ```php
 else {
 ```
-- 10. 如果用户位于外部 if...else 块的此部分，说明他们没有通过表单就到达了此脚本。检查 $_SESSION[valid] 的值，确定显示菜单还是表单：
+
+10. 如果用户位于外部`if...else`块的此部分，说明他们没有通过表单就到达了此脚本。检查`$_SESSION['valid']`的值，确定显示菜单还是表单：
+
 ```php
 if ($_SESSION['valid'] == "yes") {
     $show_menu = "yes";
     $show_form = "yes";
 }
 ```
-- 11. 关闭外部 if...else 块：
+
+11. 关闭外部`if...else`块：
+
 ```php
 }
 ```
-- 12. 创建块，如果用户未登录或登录错误则显示该块。通过创建变量并打印标题开始：
+
+12. 创建块，如果用户未登录或登录错误则显示该块。通过创建变量并打印标题开始：
+
 ```php
 $form_block = "<h2>Login</h2>";
 ```
-- 13. 表单。在这种情况下，method 为 POST，action 是名为 $_SERVER[PHP_SELF] 的变量：
+
+13. 表单。在这种情况下，method 为 POST，action 是名为`$_SERVER['PHP_SELF']`的变量：
+
 ```php
 <form method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>">
 ```
-- 14. 打印 $msg 的值：
+
+14. 打印`$msg`的值：
+
 ```php
 echo $msg;
 ```
-- 15. 创建带有标签的用户名和密码输入框：
+
+15. 创建带有标签的用户名和密码输入框：
+
 ```html
-<p>**username:**<br>
+<p>username:<br>
 <input type="text" name="username" size="15" maxlength="25"></p>
-<p>**password:**<br>
+<p>password:<br>
 <input type="password" name="password" size="15" maxlength="25"></p>
 ```
-- 16. 添加 op 的隐藏字段：
+
+16. 添加`op`的隐藏字段：
+
 ```html
 <input type="hidden" name="op" value="di">
 ```
-- 17. 添加提交按钮，并关闭表单：
+
+17. 添加提交按钮，并关闭表单：
+
 ```html
 <input type="submit" name="menu" value="login">
 </form>
 ```
-- 18. 创建菜单块，如果用户已登录且有效则显示该块。通过创建变量并打印标题：
+
+18. 创建菜单块，如果用户已登录且有效则显示该块。通过创建变量并打印标题：
+
 ```php
 $menu_block = "<h2>Account Management System</h2>";
 ```
-- 19. 添加若干菜单项，并关闭字符串：
+
+19. 添加若干菜单项，并关闭字符串：
+
 ```html
-<p>**Administration:**</<br>
+<p>Administration:</p>
 <ul>
 <li><a href="add_contact.php">Add a Contact</a></li>
 <li><a href="mod_contact.php">Modify a Contact</a></li>
 <li><a href="del_contact.php">Delete a Contact</a></li>
 </ul>
-<p>**View Records:**</<br>
+<p>View Records:</p>
 <ul>
 <li><a href="show_contactsby.php">Show Contacts, Ordered by Name</a></li>
 </ul>
 ```
-- 20. 使用 if else 块执行最终检查，查看显示的是哪个——$form_block 还是 $menu_block。应该显示的内容取决于一个新变量的值：
+
+20. 使用`if...else`块执行最终检查，查看显示的是哪个——`$form_block`还是`$menu_block`。应该显示的内容取决于一个新变量的值：
+
 ```php
 if ($show_form == "yes") {
     $display_block = $form_block;
@@ -5162,7 +6039,9 @@ if ($show_form == "yes") {
     $display_block = $menu_block;
 }
 ```
-- 21. 关闭你的 PHP 块并添加 HTML：
+
+21. 关闭你的 PHP 块并添加 HTML：
+
 ```php
 ?>
 <html>
@@ -5171,19 +6050,25 @@ if ($show_form == "yes") {
 </head>
 <body>
 ```
-- 22. 显示结果：
+
+22. 显示结果：
+
 ```php
 <?php echo $display_block; ?>
 ```
-- 23. 添加更多 HTML 以使其成为一个有效的文档：
+
+23. 添加更多 HTML 以使其成为一个有效的文档：
+
 ```html
 </body>
 </html>
 ```
-- 24. 将文件保存为 contact_menu.php，并将此文件放在你服务器的根目录下。
+
+24. 将文件保存为`contact_menu.php`，并将此文件放在你服务器的根目录下。
+
+你刚刚创建了大量的代码。它看起来应该是这样的：
 
 ```php
-你刚刚创建了大量的代码。它看起来应该是这样的：
 <?php
 //start a session
 session_start();
@@ -5193,7 +6078,7 @@ if ($_POST['cp'] == "yes") {
     //check username and password
     if ($_POST['username'] == "admin" || $_POST['password'] == "abc123") {
         // handle login
-        $msg = "<span style='color:#FF0000'><<strong>Bad Login<br>Try Again</strong></span></p>";
+        $msg = "<span style='color:#FF0000'><strong>Bad Login<br>Try Again</strong></span></p>";
         $show_form = "yes";
     } else {
         $_SESSION['valid'] = "yes";
@@ -5202,10 +6087,10 @@ if ($_POST['cp'] == "yes") {
 }
 ```
 
-
 ```php
 $display_block = $menu_block;
 }
+?>
 <HTML>
 <HEAD>
 <TITLE>我的联系管理系统</TITLE>
@@ -5220,21 +6105,25 @@ $display_block = $menu_block;
 
 现在尝试使用脚本中硬编码的用户名和密码登录管理菜单。
 
-- 1. 打开你的浏览器并输入 http://127.0.0.1/contact_menu.php。
+1. 打开你的浏览器并输入`http://127.0.0.1/contact_menu.php`。
+
    你将看到一个登录表单，包含用户名和密码的文本字段以及一个按钮。
 
-![](img/7a81120f3cfd17d264ace19b7568_23.png)
+![](img/7a81120f3fcfd17d264ace19b7568_23.png)
 
-- 2. 在相应的字段中输入错误的用户名或密码，然后点击登录按钮。
+2. 在相应的字段中输入错误的用户名或密码，然后点击登录按钮。
+
    你将再次看到登录表单，并显示错误消息。
-- 3. 输入正确的用户名 (admin) 和正确的密码 (abc123)，然后点击登录按钮。
 
-![](img/7a81120f3cfd17d264ace19b7568_24.png)
+3. 输入正确的用户名 (`admin`) 和正确的密码 (`abc123`)，然后点击登录按钮。
+
+![](img/7a81120f3fcfd17d264ace19b7568_24.png)
 
 你将看到用于联系管理系统的管理菜单。
-接下来，你将返回创建 my_contacts 表，以便执行在此管理菜单中列出的任务！
 
-![](img/7a81120f3cfd17d264ace19b7568_25.png)
+接下来，你将返回创建`my_contacts`表，以便执行在此管理菜单中列出的任务！
+
+![](img/7a81120f3fcfd17d264ace19b7568_25.png)
 
 # 我的联系管理系统
 
@@ -5254,24 +6143,24 @@ $display_block = $menu_block;
 
 花点时间考虑你在联系管理系统中需要的内容：姓名、地址、各种电话号码、邮箱，甚至是联系人的生日。
 
-我想过我需要什么，并将其命名为 my_contacts。这些信息出现在表 18.1。
+我想过我需要什么，并将其命名为`my_contacts`。这些信息出现在表 18.1。
 
-表18.1：my_contacts 字段
+表18.1：`my_contacts`字段
 
 | 字段名 | 描述 |
 | :--- | :--- |
-| id | 创建条目的唯一 ID 号 |
-| f_name | 联系人的名 |
-| l_name | 联系人的姓 |
-| address1 | 地址的第一行 |
-| address2 | 地址的第二行 |
-| address3 | 地址的第三行 |
-| postcode | 邮编或邮政编码 |
-| country | 联系人所在的国家 |
-| prim_tel | 主电话 |
-| sec_tel | 副电话 |
-| email | 电子邮件地址 |
-| birthday | 联系人的生日 |
+| `id` | 创建条目的唯一 ID 号 |
+| `f_name` | 联系人的名 |
+| `l_name` | 联系人的姓 |
+| `address1` | 地址的第一行 |
+| `address2` | 地址的第二行 |
+| `address3` | 地址的第三行 |
+| `postcode` | 邮编或邮政编码 |
+| `country` | 联系人所在的国家 |
+| `prim_tel` | 主电话 |
+| `sec_tel` | 副电话 |
+| `email` | 电子邮件地址 |
+| `birthday` | 联系人的生日 |
 
 在下一节中，你将修改第 12 章中的“创建数据库表”，添加管理主键和自增字段的功能。
 
@@ -5279,66 +6168,73 @@ $display_block = $menu_block;
 
 通过对第 12 章中的建表脚本进行一些修改，你可以添加处理主键和自增字段的复选框。这些类型的字段对于 ID 字段非常有用。
 
-- 1. 在编辑器中打开_showfields.php，找到打印表头的 $block 部分，并在行结束前添加：
+1. 在编辑器中打开`showfields.php`，找到打印表头的`$block`部分，并在行结束前添加：
+
 然后在表的结束处添加两行：
+
+```html
 <TH>PRIMARY KEY</TH><TH>AUTO-INCREMENT</TH>
-- 2. 在循环中的 $block 中，倒数第二行打印一个名为 $field_length[] 的字段。在该行之后、表结束之前，添加两行：
+```
+
+2. 在循环中的`$block`中，倒数第二行打印一个名为`$field_length[]`的字段。在该行之后、表结束之前，添加两行：
+
+```html
 <TD ALIGN="CENTER"><INPUT TYPE="checkbox" NAME="primary[]" VALUE=""><input_auto_increment></center></td>
-- 3. 保存此文件。
+```
+
+3. 保存此文件。
 
 该脚本修改后的代码应如下：
 
 ```php
 <?php
 // 验证重要输入
-if (!($_POST[table_name]) || ($_POST[num_fields])) {
+if (!($_POST['table_name']) || ($_POST['num_fields'])) {
 header("Location: http://127.0.0.1/show_creatable.html");
 exit;
 }
 // 开始创建显示表单
 $block = "
-<FORM METHOD="POST" ACTION="do_creatable.php">
-<INPUT TYPE="hidden" NAME="table_name" VALUE=\"$_POST[table_name]\
-<TABLE CELLACING="5" CELLADDING="5">
+<FORM METHOD=\"POST\" ACTION=\"do_creatable.php\">
+<INPUT TYPE=\"hidden\" NAME=\"table_name\" VALUE=\"$_POST['table_name']\">
+<TABLE CELLSPACING=\"5\" CELLPADDING=\"5\">
 <TR>
-<TH FIELD="NAME/"><TH FIELD="TYPE/"><TH FIELD="LENGTH/">
-<TH PRIMARY KEY/"><TH-AUTO-INCREMENT/></TR>";
+<TH>FIELD NAME</TH><TH>FIELD TYPE</TH><TH>FIELD LENGTH</TH>
+<TH>PRIMARY KEY</TH><TH>AUTO-INCREMENT</TH></TR>";
 $block .= "
 // 从0开始计数直到达到字段数量
-for ($i = 0; $i < $_POST[num_fields]; $i++) {
+for ($i = 0; $i < $_POST['num_fields']; $i++) {
     // 为每个字段向行中添加
 $block .= "
-<TD ALIGN="CENTER"><INPUT TYPE="text" NAME="field_name[]" SIZE="5"></td
-<TD ALIGN="CENTER"><SELECT NAME="field_type[]">
-    <OPTION VALUE="char">char</OPTION>
-    <OPTION VALUE="float">float</OPTION>
-    <OPTION VALUE="int">int</OPTION>
-    <OPTION VALUE="text">text</OPTION>
-    <OPTION VALUE="varchar">varchar</OPTION>
+<TD ALIGN=\"CENTER\"><INPUT TYPE=\"text\" NAME=\"field_name[]\" SIZE=\"5\"></td>
+<TD ALIGN=\"CENTER\"><SELECT NAME=\"field_type[]\">
+    <OPTION VALUE=\"char\">char</OPTION>
+    <OPTION VALUE=\"float\">float</OPTION>
+    <OPTION VALUE=\"int\">int</OPTION>
+    <OPTION VALUE=\"text\">text</OPTION>
+    <OPTION VALUE=\"varchar\">varchar</OPTION>
 </SELECT>
-<TD ALIGN="CENTER"><INPUT TYPE="text" NAME="field_length[]" SIZE="5"></td
-<TD ALIGN="CENTER"><INPUT TYPE="checkbox" NAME="primary[]"></td>
-<TD ALIGN="CENTER"><INPUT TYPE="checkbox" NAME="auto_increment[]"></td>
+<TD ALIGN=\"CENTER\"><INPUT TYPE=\"text\" NAME=\"field_length[]\" SIZE=\"5\"></td>
+<TD ALIGN=\"CENTER\"><INPUT TYPE=\"checkbox\" NAME=\"primary[]\"></td>
+<TD ALIGN=\"CENTER\"><INPUT TYPE=\"checkbox\" NAME=\"auto_increment[]\"></td>
 </tr>";
 }
 // 完成表单
 $block .= "
-<TD ALIGN="CENTER" COLSPAN="3"><INPUT type="submit" VALUE="Create Table"></td>
+<TD ALIGN=\"CENTER\" COLSPAN=\"3\"><INPUT type=\"submit\" VALUE=\"Create Table\"></td>
 </TABLE>
 <html>
 <head>
 <title>创建数据库表：第2步</title>
 </head>
 <body>
-<h1>为 <?php echo $_POST[table_name]; ?> 定义字段</h1>
+<h1>为 <?php echo $_POST['table_name']; ?> 定义字段</h1>
 <?php echo $block; ?>
 </body>
 </html>";
-在下一节中，你将返回创建 my_contacts 表，以便执行在此管理菜单中列出的任务！
+```
 
-
-
-
+在下一节中，你将返回创建`my_contacts`表，以便执行在此管理菜单中列出的任务！
 
 # 为 my_contacts 定义字段
 
@@ -5354,31 +6250,31 @@ $block .= "
 | | char | | | |
 | | char | | | |
 
-1. 在第一行中，在“字段名称”处输入 `id`，从“字段类型”下拉菜单中选择 `int`，勾选“主键（Primary Key）”复选框，并勾选“自动递增（Auto-Increment）”复选框。
-2. 在第二行中，在“字段名称”处输入 `f_name`，从“字段类型”下拉菜单中选择 `varchar`，并指定字段长度为 75。
-3. 在第三行中，在“字段名称”处输入 `l_name`，从“字段类型”下拉菜单中选择 `varchar`，并指定字段长度为 75。
-4. 在第四行中，在“字段名称”处输入 `address1`，从“字段类型”下拉菜单中选择 `varchar`，并指定字段长度为 100。
-5. 在第五行中，在“字段名称”处输入 `address2`，从“字段类型”下拉菜单中选择 `varchar`，并指定字段长度为 100。
-6. 在第六行中，在“字段名称”处输入 `address`，从“字段类型”下拉菜单中选择 `varchar`，并指定字段长度为 250。
-7. 在第七行中，在“字段名称”处输入 `postcode`，从“字段类型”下拉菜单中选择 `varchar`，并指定字段长度为 25。
-8. 在第八行中，在“字段名称”处输入 `country`，从“字段类型”下拉菜单中选择 `varchar`，并指定字段长度为 100。
-9. 在第九行中，在“字段名称”处输入 `price_tel`，从“字段类型”下拉菜单中选择 `varchar`，并指定字段长度为 35。
-10. 在第十行中，在“字段名称”处输入 `sec_tel`，从“字段类型”下拉菜单中选择 `varchar`，并指定字段长度为 35。
-11. 在第十一行中，在“字段名称”处输入 `email`，从“字段类型”下拉菜单中选择 `varchar`，并指定字段长度为 100。
-12. 在第十二行中，在“字段名称”处输入 `birthday`，从“字段类型”下拉菜单中选择 `varchar`，并指定字段长度为 10。
+1. 在第一行中，在“字段名称”处输入`id`，从“字段类型”下拉菜单中选择`int`，勾选“主键（Primary Key）”复选框，并勾选“自动递增（Auto-Increment）”复选框。
 
-（注：原文后续的大段重复 HTML/PHP 代码块根据注意事项“代码块不需要翻译”已保留原样）
+2. 在第二行中，在“字段名称”处输入`f_name`，从“字段类型”下拉菜单中选择`varchar`，并指定字段长度为 75。
 
-```
-if (condVar > someVal) {console.log("xxx")}
-```
-（此处省略中间重复的 HTML 代码，保持与原文逻辑一致）
+3. 在第三行中，在“字段名称”处输入`l_name`，从“字段类型”下拉菜单中选择`varchar`，并指定字段长度为 75。
+
+4. 在第四行中，在“字段名称”处输入`address1`，从“字段类型”下拉菜单中选择`varchar`，并指定字段长度为 100。
+
+5. 在第五行中，在“字段名称”处输入`address2`，从“字段类型”下拉菜单中选择`varchar`，并指定字段长度为 100。
+
+6. 在第六行中，在“字段名称”处输入`address3`，从“字段类型”下拉菜单中选择`varchar`，并指定字段长度为 250。
+
+7. 在第七行中，在“字段名称”处输入`postcode`，从“字段类型”下拉菜单中选择`varchar`，并指定字段长度为 25。
+
+8. 在第八行中，在“字段名称”处输入`country`，从“字段类型”下拉菜单中选择`varchar`，并指定字段长度为 100。
+
+9. 在第九行中，在“字段名称”处输入`prim_tel`，从“字段类型”下拉菜单中选择`varchar`，并指定字段长度为 35。
+
+10. 在第十行中，在“字段名称”处输入`sec_tel`，从“字段类型”下拉菜单中选择`varchar`，并指定字段长度为 35。
+
+11. 在第十一行中，在“字段名称”处输入`email`，从“字段类型”下拉菜单中选择`varchar`，并指定字段长度为 100。
+
+12. 在第十二行中，在“字段名称”处输入`birthday`，从“字段类型”下拉菜单中选择`varchar`，并指定字段长度为 10。
 
 > MySQL 中使用的日期类型采用 YYYY-MM-DD 格式。一个日期的示例是 2004-03-20。在此示例中，您的日期相关字段设计为允许手动输入此格式。附录 C：“编写您的表单和对象”，您将学习创建用于月份、日期和年份列表的代码片段。
-
-
-
-
 
 ```php
 // 检查用户是否允许在此处
@@ -5386,6 +6282,7 @@ if ($_SESSION['valid'] != "yes") {
   header("Location: http://127.0.0.1/contact_menu.php");
   exit;
 }
+?>
 <HTML>
 <HEAD>
 <TITLE>我的联系人管理系统：添加联系人</TITLE>
@@ -5411,7 +6308,7 @@ if ($_SESSION['valid'] != "yes") {
 <input type="text" name="address1" size="100">
 <p>地址行 2：<strong><br>
 <input type="text" name="address2" size="100">
-<p>邮编/邮编码：<strong><br>
+<p>邮编/邮政编码：<strong><br>
 <input type="text" name="postcode" size="25">
 <p>国家：<strong><br>
 <input type="text" name="country" size="100">
@@ -5439,64 +6336,85 @@ if ($_SESSION['valid'] != "yes") {
 </HTML>
 ```
 
-在[下一节]，你将创建一个脚本，获取表单输入、执行 SQL 语句并将数据返回数据库表。
+在下一节，你将创建一个脚本，获取表单输入、执行 SQL 语句并将数据返回数据库表。
 
 团队
 
 ## 创建记录脚本
 
-此脚本将你的记录添加到 `my_contacts` 表中，并考虑自增 ID 字段。
+此脚本将你的记录添加到`my_contacts`表中，并考虑自增 ID 字段。
 
-- 1. 在文本编辑器中打开新文件并开始 PHP 块：
+1. 在文本编辑器中打开新文件并开始 PHP 块：
+
 ```php
-php
+<?php
 ```
-- 2. 开始一个 if...else 块检查 `$_POST['f_name']` 和 `$_POST['l_name']` 的值。如果它们为空，将用户重定向表单并退出脚本：
+
+2. 开始一个`if...else`块检查`$_POST['f_name']`和`$_POST['l_name']`的值。如果它们为空，将用户重定向表单并退出脚本：
+
 ```php
 if ($_POST['f_name'] == '' || $_POST['l_name'] == '') {
   header("Location: http://127.0.0.1/show_addcontact.php");
   exit;
 }
 ```
+
 注意：你可以根据需要使用任意数量的字段。在本例中，你只检查姓。
-- 3. 如果必需字段有值，启动会话（如果已存在则继续会话）。然后关闭块：
+
+3. 如果必需字段有值，启动会话（如果已存在则继续会话）。然后关闭块：
+
 ```php
 else {
 session_start();
+}
 ```
-- 4. 开始一个 if...else 块检查 `$_SESSION['valid']` 的值并根据结果执行特定操作。如果值不是 "yes"，说明用户没有通过认证：
+
+4. 开始一个`if...else`块检查`$_SESSION['valid']`的值并根据结果执行特定操作。如果值不是`"yes"`，说明用户没有通过认证：
+
 ```php
 if ($_SESSION['valid'] == "yes") {
 ```
-- 5. 将用户送回表单并退出此脚本：
+
+5. 将用户送回表单并退出此脚本：
+
 ```php
 header("Location: http://127.0.0.1/contact_menu.php");
 exit;
 ```
-- 6. 创建一个变量存储表所在的数据库名称：
+
+6. 创建一个变量存储表所在的数据库名称：
+
 ```php
 $db_name = "my_contacts";
 ```
-- 7. 按照学习的方法添加连接信息：
+
+7. 按照学习的方法添加连接信息：
+
 ```php
 $connection = mysqli_connect("localhost","spike","9j7En4");
 $db = mysqli_select_db($db_name,$connection) or die(mysqli_error());
 ```
-- 8. 按照学习的方法选择数据库：
-- 9. 创建 SQL 语句。第一个语句给出填充的字段名称（按顺序），第二个语句应包含这些值：
+
+8. 按照学习的方法选择数据库。
+
+9. 创建 SQL 语句。第一个语句给出填充的字段名称（按顺序），第二个语句应包含这些值：
+
 ```sql
 $sql = "INSERT INTO table (id, fname, lname, address1, address2, address3, postcode, country, prim_name, tel, email, birthday) VALUES ('', '$_POST['f_name'], '$_POST['l_name'], '$_POST['address1'], '$_POST['address2'], '$_POST['address3'], '$_POST['postcode'], '$_POST['country'], '$_POST['prim_name'], '$_POST['tel'], '$_POST['email'], '$_POST['birthday']')";
 ```
+
 注意：为 ID 字段留空将确保该字段自动递增。
-- 11. 创建一个变量存储 `mysqli_query()` 函数的结果，如你所做：
+
+10. 创建一个变量存储`mysqli_query()`函数的结果，如你所做：
+
 ```php
 $result = mysqli_query($sql,$connection) or die(mysqli_error());
 ```
-- 12. 结束你的 PHP 块并添加此 HTML：
+
+11. 结束你的 PHP 块并添加此 HTML：
+
 ```html
 ?>
-```
-
 <HTML>
 <HEAD>
 <TITLE>我的联系人管理系统：已添加联系人</TITLE>
@@ -5504,10 +6422,17 @@ $result = mysqli_query($sql,$connection) or die(mysqli_error());
 <body>
 <h1>我的联系人管理系统</h1>
 <h2>添加联系人<em>已</em></h2>
+```
 
-- 13. 确认消息。混合 HTML 和 PHP 以 `$table_name` 的值：
+12. 确认消息。混合 HTML 和 PHP 以`$table_name`的值：
+
+```php
 <p>以下信息已成功添加到 <?php echo $table_name; ?></p>
-- 14. 接下来，你需要使用 `addcontact.php` 创建布局，仅包含字段。相反，混合 HTML 和 PHP 显示输入的值：
+```
+
+13. 接下来，你需要使用`addcontact.php`创建布局，仅包含字段。相反，混合 HTML 和 PHP 显示输入的值：
+
+```html
 <table cellspacing="2" cellpadding="1">
 <tr>
 <th>姓名</th>
@@ -5533,36 +6458,47 @@ $result = mysqli_query($sql,$connection) or die(mysqli_error());
 </td>
 </tr>
 </table>
+```
 
-- 15. 开始一个两列的新行和单元格。为主菜单添加链接。表格单元格、行以及表格本身：
+14. 开始一个两列的新行和单元格。为主菜单添加链接。表格单元格、行以及表格本身：
+
+```html
 <tr>
 <td colspan="2">
 <a href="contact_menu.php">返回主菜单</a>
 </td>
 </tr>
 </table>
-- 16. 添加更多 HTML 使文档有效：
+```
+
+15. 添加更多 HTML 使文档有效：
+
+```html
 </BODY>
 </HTML>
+```
 
-- 17. 将文件保存为 `do_addcontact.php` 并将其放在服务器的根目录。
+16. 将文件保存为`do_addcontact.php`并将其放在服务器的根目录。
 
 # 填充你的表
 
-要开始填充 `my_contacts` 表，打开 http://127.0.0.1/contact_menu.php。如果你已经登录，将看到管理菜单。否则，请使用用户名 (admin) 和密码 (abc123) 登录。
+要开始填充`my_contacts`表，打开`http://127.0.0.1/contact_menu.php`。如果你已经登录，将看到管理菜单。否则，请使用用户名 (`admin`) 和密码 (`abc123`) 登录。
 
-(img/7a8120f3fcfd17d264ace19b756_259_0.png)
+![](img/7a8120f3fcfd17d264ace19b756_259_0.png)
 
-- 1. 选择“添加联系人”菜单。
+1. 选择“添加联系人”菜单。
+
 你会看到一个包含许多添加联系信息字段的空白表单，以及一个提交按钮和返回主菜单的链接。
-- 2. 现在填写表单！除非你自己修改了，否则只需要两个字段：姓和名。下图显示了一个示例联系人。
 
-(img/7a8120f3fcfd17d264ace19b756_260_0.png)
+2. 现在填写表单！除非你自己修改了，否则只需要两个字段：姓和名。下图显示了一个示例联系人。
+
+![](img/7a8120f3fcfd17d264ace19b756_260_0.png)
 
 点击“添加到系统”。
-你应该看到所示所示确认屏幕。
 
-(img/7a8120f3fcfd17d264ace19b756_260_1.png)
+你应该看到所示确认屏幕。
+
+![](img/7a8120f3fcfd17d264ace19b756_260_1.png)
 
 将自己的联系人添加到系统。可以随意出错，因为在下一章中，你将创建一组记录修改脚本。
 
@@ -5580,87 +6516,124 @@ $result = mysqli_query($sql,$connection) or die(mysqli_error());
 
 # 创建记录选择表单
 
-`my_contacts` 表有很多条目，因此你需要选择一条记录进行修改。下一个脚本将创建一个所有人的下拉菜单，你可以从中选择一个。
+`my_contacts`表有很多条目，因此你需要选择一条记录进行修改。下一个脚本将创建一个所有人的下拉菜单，你可以从中选择一个。
 
-- 1. 在文本编辑器中打开新文件并开始 PHP 块，如果已存在会话则启动它：
+1. 在文本编辑器中打开新文件并开始 PHP 块，如果已存在会话则启动它：
+
 ```php
 session_start();
 ```
-- 2. 开始一个 if...else 块检查 `$_SESSION['valid']` 的值并根据结果执行特定操作。如果值不是 "yes"，说明用户没有通过认证：
+
+2. 开始一个`if...else`块检查`$_SESSION['valid']`的值并根据结果执行特定操作。如果值不是`"yes"`，说明用户没有通过认证：
+
 ```php
 if ($_SESSION['valid'] != "yes") {
 ```
-- 3. 将 header 发回表单并退出此脚本：
+
+3. 将 header 发回表单并退出此脚本：
+
 ```php
 header("Location: http://127.0.0.1/contact_menu.php");
 exit;
 ```
-- 4. 创建变量存储表所在的数据库名称以及表名称：
+
+4. 创建变量存储表所在的数据库名称以及表名称：
+
 ```php
 $db_name = "test";
 $table_name = "my_contacts";
 ```
-- 5. 按照学习的方法添加连接：
+
+5. 按照学习的方法添加连接：
+
 ```php
-$connection = mysqli_connect("localhost","spike","9j7En4")
+$connection = mysqli_connect("localhost","spike","9j7En4");
 ```
-- 6. 按照学习的方法选择数据库：
+
+6. 按照学习的方法选择数据库：
+
 ```php
 $db = mysqli_select_db($db_name,$connection) or die(mysqli_error());
 ```
-- 7. 创建 SQL 语句。你想选择表中每个记录的 ID、名和姓：
+
+7. 创建 SQL 语句。你想选择表中每个记录的 ID、名和姓：
+
 ```sql
-$sql = "SELECT id, f_name, l_name FROM $table_name ORDER l_name";
+$sql = "SELECT id, f_name, l_name FROM $table_name ORDER BY l_name";
 ```
-- 8. 创建一个变量存储 `mysqli_query()` 函数的结果，如你所做：
+
+8. 创建一个变量存储`mysqli_query()`函数的结果，如你所做：
+
 ```php
 $result = mysqli_query($connection,$sql) or die(mysqli_error());
 ```
-- 9. 使用 `mysqli_num_rows()` 函数检查结果，如你学习的：
+
+9. 使用`mysqli_num_rows()`函数检查结果，如你学习的：
+
 ```php
 $num = mysqli_num_rows($result);
 ```
-- 10. 检查 `mysqli_num_rows()` 函数返回的值，并创建一个变量 `$display_block` 在数字小于 1 时存储错误消息（也就是说，如果表中没有行）：
+
+10. 检查`mysqli_num_rows()`函数返回的值，并创建一个变量`$display_block`在数字小于 1 时存储错误消息（也就是说，如果表中没有行）：
+
 ```php
 if ($num < 1) {
   $display_block = "<p>错误：没有记录。</p>";
 } else {
 ```
-- 11. 继续 if...else 循环，如果行数为一或更多则继续执行：
+
+11. 继续`if...else`循环，如果行数为一或更多则继续执行：
+
 ```php
 while ($row = mysqli_fetch_array($result)) {
-```
-
-
-
-
-
-```php
-menu:
-    $option_block = "<option value=\"$id\">$l_name</option>";
+    $id = $row['id'];
+    $f_name = $row['f_name'];
+    $l_name = $row['l_name'];
+    $option_block = "<option value=\"$id\">$f_name $l_name</option>";
 }
 ```
 
-- 15. 关闭 while 循环：
-- 16. 创建变量 $display_block，它将保存表单。虽然该变量在 $step 10 中曾用于处理错误消息，但除非发生错误，否则不会被使用。如果发生错误，脚本将永远执行不到这一步，因此你不需要担心覆盖变量，可以开始创建表单。对于表单，假设方法为 POST，action 是一个名为 show_modcontact.php 的脚本：
+12. 关闭`while`循环。
+
+13. 创建变量`$display_block`，它将保存表单。虽然该变量在第 10 步中曾用于处理错误消息，但除非发生错误，否则不会被使用。如果发生错误，脚本将永远执行不到这一步，因此你不需要担心覆盖变量，可以开始创建表单。对于表单，假设方法为 POST，action 是一个名为`show_modcontact.php`的脚本：
+
+```php
 $display_block = '<FORM METHOD="POST" ACTION="show_modcontact.php">';
+```
 
-- 17. 为下拉菜单创建一个标签（label）：
+14. 为下拉菜单创建一个标签（label）：
+
+```html
 <p><strong>联系人</strong></p>
+```
 
-- 18. 开始下拉菜单：
+15. 开始下拉菜单：
+
+```html
 <select name="id">
+```
 
-- 19. 将 $option_block 字符串放置在 <select> ... </select> 标签对内部。它应该至少一个 <option> 元素：
+16. 将`$option_block`字符串放置在`<select> ... </select>`标签对内部。它应该至少一个`<option>`元素：
+
+```php
 $option_block
+```
 
-- 20. 完成下拉菜单：
+17. 完成下拉菜单：
+
+```html
 </select>
+```
 
-- 21. 添加一个提交按钮。然后，关闭你的表单、字符串、if...else 块以及 PHP 块：
+18. 添加一个提交按钮。然后，关闭你的表单、字符串、`if...else`块以及 PHP 块：
+
+```html
 <INPUT TYPE="SUBMIT" NAME="submit" VALUE="Select this Contact">
+```
 
-- 22. 添加此 HTML：
+19. 添加此 HTML：
+
+```html
 <HTML>
 <HEAD>
 <TITLE>我的联系人管理系统：修改联系人</TITLE>
@@ -5669,44 +6642,48 @@ $option_block
 <h2>联系人管理系统</h2>
 <h2>修改联系人 - 从列表中选择</h2>
 <p>从下方列表中选择以修改联系人记录。</p>
+```
 
-- 23. 显示 $display_block 的内容：
+20. 显示`$display_block`的内容：
+
+```php
 <?php echo "$display_block"; ?>
+```
 
-- 24. 添加一个返回菜单的链接：
+21. 添加一个返回菜单的链接：
+
+```html
 <br><a href="contact_menu.php">返回主菜单</a>
+```
 
-- 25. 添加更多 HTML 以使文档有效：
+22. 添加更多 HTML 以使文档有效：
+
+```html
 </BODY>
 </HTML>
+```
 
-- 26. 将文件保存为 pick_modcontact.php，并将此文件放在服务器的文档根目录下。你的代码看起来如下：
+23. 将文件保存为`pick_modcontact.php`，并将此文件放在服务器的文档根目录下。你的代码看起来如下：
 
 ```php
 <?php
 session_start();
-
 // 检查用户有效性
-if ($_SESSION['valid"] != "yes") {
+if ($_SESSION['valid'] != "yes") {
     header("Location: http://127.0.0.1/contact_menu.php");
     exit;
 }
-
 // 设置表和数据库
 $db_name = "testdb";
 $table_name = "my_contacts";
-
 // 连接服务器并选择数据库
 $connection = mysql_connect("localhost", "spike", "9j7En4") or die(mysql_error());
 $db = mysql_select_db($db_name, $connection) or die(mysql_error());
-
 // 构建并插入查询
 $sql = "SELECT id, f_name, l_name FROM $table_name ORDER BY l_name";
 $result = mysql_query($sql, $connection) or die(mysql_error());
-
 // 检查结果数量
 $num = mysql_num_rows($result);
-
 if ($num < 1) {
     // 如果没有结果，显示消息
     $display_block = "<p>对不起！没有结果。</p>";
@@ -5749,7 +6726,7 @@ if ($num < 1) {
 
 修改记录表单基于你在上一章创建的添加记录表单。区别在于记录中已经存在数据：即表单字段中值的填充。换句话说，你可以在修改之前看到已有的内容。
 
-- 1. 在你的文本编辑器中打开一个新文件并开始 PHP 块：
+1. 在你的文本编辑器中打开一个新文件并开始 PHP 块：
 
 ```php
 <?php
@@ -5762,7 +6739,7 @@ if (!isset($_POST['id'])) {
 }
 ```
 
-- 2. 如果所需的表单有值，则启动会；如果已存在则继续会。关闭块：
+2. 如果所需的表单有值，则启动会话；如果已存在则继续会话。关闭块：
 
 ```php
 else {
@@ -5770,7 +6747,7 @@ else {
 }
 ```
 
-- 3. 开始一个 if...else 块来检查 $_SESSION['valid'] 并根据结果执行特定操作。如果值不是 yes，说明用户没有通过验证：
+3. 开始一个`if...else`块来检查`$_SESSION['valid']`并根据结果执行特定操作。如果值不是`yes`，说明用户没有通过验证：
 
 ```php
 if ($_SESSION['valid'] == "yes") {
@@ -5779,41 +6756,47 @@ if ($_SESSION['valid'] == "yes") {
 }
 ```
 
-- 4. 将用户送回列表并结束脚本：
+4. 将用户送回列表并结束脚本：
 
 ```php
 $db_name = "testdb";
 $table_name = "my_contacts";
 ```
 
-- 5. 创建存储数据库名称以及表本身的变量：
+5. 创建存储数据库名称以及表本身的变量：
 
 ```php
 $connection = mysql_connect("localhost", "spike", "9j7En4") or die(mysql_error());
 ```
 
-- 6. 选择要操作的数据库：
+6. 选择要操作的数据库：
 
 ```php
+$db = mysql_select_db($db_name, $connection) or die(mysql_error());
+```
+
+7. 创建 SQL。你想选择 ID 等于`$_POST['id']`的所有字段：
+
+```sql
 $sql = "SELECT f_name, l_name, address1, address2, address3, postcode, phone, sel_tel, email, birthday FROM $table_name WHERE id = \"" . $_POST['id'] . "\"";
 ```
 
-- 7. 创建 SQL。你想选择 ID 等于 $_POST['id'] 的所有字段：
+8. 创建一个变量存储`mysql_query()`函数的结果：
 
 ```php
 $result = mysql_query($sql, $connection) or die(mysql_error());
 ```
 
-- 8. 开始 while 循环。while 循环将为结果中的每条记录创建一个数组：
+9. 开始`while`循环。`while`循环将为结果中的每条记录创建一个数组：
 
 ```php
 while ($row = mysql_fetch_array($result)) {
 ```
 
-- 9. 获取记录的各个元素并为它们命名：
+10. 获取记录的各个元素并为它们命名：
 
 ```php
-$name = $row['f_name'];
+$f_name = $row['f_name'];
 $l_name = $row['l_name'];
 $address1 = $row['address1'];
 $address2 = $row['address2'];
@@ -5826,16 +6809,16 @@ $email = $row['email'];
 $birthday = $row['birthday'];
 ```
 
-- 10. 注意你找到了这些值，稍后将在表单中使用。
+11. 注意你找到了这些值，稍后将在表单中使用。
 
-- 11. 关闭循环，并关闭你的 PHP 块：
+12. 关闭循环，并关闭你的 PHP 块：
 
 ```php
 }
 ?>
 ```
 
-- 12. 输入此 HTML 开始构建修改记录的表单：
+13. 输入此 HTML 开始构建修改记录的表单：
 
 ```html
 <HTML>
@@ -5847,43 +6830,58 @@ $birthday = $row['birthday'];
 <h2>修改联系人 - 从列表中选择</h2>
 ```
 
-- 13. 开始你的表单：方法为 POST，action 为 show_modcontact.php。
+14. 开始你的表单：方法为 POST，action 为`show_modcontact.php`。
 
-- 14. 添加一个隐藏字段来存储 POST['id'] 的值，以便传递给脚本：
+15. 添加一个隐藏字段来存储`$_POST['id']`的值，以便传递给脚本：
 
 ```html
 <input type="hidden" name="id" value="<?php echo $_POST['id']; ?>">
 ```
 
-- 15. 在布局中开始一个 HTML 表格。开启新行，添加两个列头，然后关闭它：
+16. 在布局中开始一个 HTML 表格。开启新行，添加两个列头，然后关闭它：
 
 ```html
 <table cellpadding="3">
 <TR>
 <th>ADDRESS INFORMATION</th>
-<CONTACT/PERSONAL INFORMATION</th>
+<th>CONTACT/PERSONAL INFORMATION</th>
 </TR>
 ```
 
-- 16. 创建行来存储记录中的所有项目。使用 value 属性向每个输入字段写入内容，并混合 HTML 和 PHP 来输出实际值：
+17. 创建行来存储记录中的所有项目。使用 value 属性向每个输入字段写入内容，并混合 HTML 和 PHP 来输出实际值：
 
-
-
-```
-<INPUT TYPE="text" NAME="country" VALUE="<?php echo "$country"; ??> SIZE=35 MAXLENGTH=100"></p>
+```html
+<tr>
+<td valign="top">
+<P><strong>名:</strong><BR>
+<INPUT TYPE="text" NAME="f_name" VALUE="<?php echo "$f_name"; ?>" SIZE=35 MAXLENGTH=75></p>
+<P><strong>姓:</strong><BR>
+<INPUT TYPE="text" NAME="l_name" VALUE="<?php echo "$l_name"; ?>" SIZE=35 MAXLENGTH=75></p>
+<P><strong>地址行 1:</strong><BR>
+<INPUT TYPE="text" NAME="address1" VALUE="<?php echo "$address1"; ?>" SIZE=35 MAXLENGTH=100></p>
+<P><strong>地址行 2:</strong><BR>
+<INPUT TYPE="text" NAME="address2" VALUE="<?php echo "$address2"; ?>" SIZE=35 MAXLENGTH=100></p>
+<P><strong>地址行 3:</strong><BR>
+<INPUT TYPE="text" NAME="address3" VALUE="<?php echo "$address3"; ?>" SIZE=35 MAXLENGTH=100></p>
+<P><strong>邮编:</strong><BR>
+<INPUT TYPE="text" NAME="postcode" VALUE="<?php echo "$postcode"; ?>" SIZE=35 MAXLENGTH=25></p>
+<P><strong>国家:</strong><BR>
+<INPUT TYPE="text" NAME="country" VALUE="<?php echo "$country"; ?>" SIZE=35 MAXLENGTH=100></p>
+</td>
 <td valign="top">
 <P><strong>主电话号码:</strong><BR>
-<INPUT TYPE="text" NAME="prim_tel" VALUE="<?php echo "$prim_tel"; ??> SIZE=35 MAXLENGTH=35></p>
+<INPUT TYPE="text" NAME="prim_tel" VALUE="<?php echo "$prim_tel"; ?>" SIZE=35 MAXLENGTH=35></p>
 <P><strong>次电话号码:</strong><BR>
-<INPUT TYPE="text" NAME="sec_tel" VALUE="<?php echo "$sec_tel"; ??> SIZE=35 MAXLENGTH=35></p>
+<INPUT TYPE="text" NAME="sec_tel" VALUE="<?php echo "$sec_tel"; ?>" SIZE=35 MAXLENGTH=35></p>
 <P><strong>邮箱地址:</strong><BR>
-<INPUT TYPE="text" NAME="email" VALUE="<?php echo "$email"; ??> SIZE=35 MAXLENGTH=100"></p>
+<INPUT TYPE="text" NAME="email" VALUE="<?php echo "$email"; ?>" SIZE=35 MAXLENGTH=100></p>
 <P><strong>生日 (YY-MM-DD):</strong><BR>
-<INPUT TYPE="text" NAME="birthday" VALUE="<?php echo "$birthday"; ??> SIZE=10 MAXLENGTH=100></p>
-<tr>
+<INPUT TYPE="text" NAME="birthday" VALUE="<?php echo "$birthday"; ?>" SIZE=10 MAXLENGTH=100></p>
+</td>
+</tr>
 ```
 
-- 1. 开启一个新的表格行和一个跨两列的数据单元格。添加一个提交按钮以及一个返回主菜单的链接。关闭数据单元格、表格行和表格本身：
+18. 开启一个新的表格行和一个跨两列的数据单元格。添加一个提交按钮以及一个返回主菜单的链接。关闭数据单元格、表格行和表格本身：
 
 ```html
 <tr>
@@ -5897,154 +6895,72 @@ $birthday = $row['birthday'];
 </table>
 ```
 
-- 20. 关闭你的表单并添加更多 HTML 以使文档有效：
+19. 关闭你的表单并添加更多 HTML 以使文档有效：
 
-- 21. 将文件保存为 `show_modcontact.php`，并将此文件放置在你的 Web 服务器的文档根目录下。
+```html
+</form>
+</BODY>
+</HTML>
+```
+
+20. 将文件保存为`show_modcontact.php`，并将此文件放置在你的 Web 服务器的文档根目录下。
 
 在下一节中，你将创建一个脚本，用于获取表单输入、创建 SQL 语句并更新数据库表中的记录。
 
 # 创建记录修改脚本
 
-此脚本将更新 `my_contacts` 表中的记录，使用 `$_POST[id]` 的值作为主键（它确实是主键）。
+此脚本将更新`my_contacts`表中的记录，使用`$_POST['id']`的值作为主键（它确实是主键）。
 
-- 1. 在你的文本编辑器中打开一个新文件并开始一个 PHP 块：
+1. 在你的文本编辑器中打开一个新文件并开始一个 PHP 块：
+
 ```php
-<?
+<?php
 ```
 
-- 2. 开始一个 `if...else` 块，检查 `$_POST[f_name]` 和 `$_POST[l_name]` 中的值。如果它们没有值，则将用户重定向回选择表单并退出脚本：
+2. 开始一个`if...else`块，检查`$_POST['f_name']`和`$_POST['l_name']`中的值。如果它们没有值，则将用户重定向回选择表单并退出脚本：
+
 ```php
-if (!($_POST[f_name] || $_POST[l_name])) {
+if (!($_POST['f_name'] || $_POST['l_name'])) {
     header("Location: http://127.0.0.1/pick_modcontact.php");
     exit;
 }
-```匹配记录添加表单中的必需字段。
+```
 
 **注意** 你可以根据需要设置任意数量（或少量）必需字段，但这些要求应与记录添加表单中的必需字段匹配。
 
-- 3. 如果必需字段有值，则启动会话，如果当前已存在会话则继续。
+3. 如果必需字段有值，则启动会话，如果当前已存在会话则继续：
+
 ```php
 else {
     session_start();
 }
 ```
 
-- 4. 开始一个 `if...else` 块，检查 `$_SESSION[valid]` 的值并根据结果执行特定操作。如果字段不是 yes，说明用户没有通过身份验证通道：
+4. 开始一个`if...else`块，检查`$_SESSION['valid']`的值并根据结果执行特定操作。如果字段不是`yes`，说明用户没有通过身份验证通道：
+
 ```php
-if ($_SESSION[valid] != "yes") {
+if ($_SESSION['valid'] != "yes") {
 ```
 
-- 5. 将用户送回登录表单并退出脚本：
+5. 将用户送回登录表单并退出脚本：
+
 ```php
 header("Location: http://127.0.0.1/contact_menu.php");
 exit;
 ```
 
-- 6. 创建变量来存储表所在的数据库名称以及表本身：
+6. 创建变量来存储表所在的数据库名称以及表本身：
+
 ```php
 $db_name = "testDB";
 $table_name = "my_contacts";
 ```
 
-- 7. 添加你已经写过的连接信息：
-```php
-$connection = mysqli_connect("localhost","spike","9sj7En4");
-```
 
-- 8. 选择你学过的数据库：
-```php
-$db = mysqli_select_db($db_name,$connection) or die(mysqli_error($connection));
-```
 
-- 9. 创建 SQL 查询。此脚本使用 `UPDATE` 设置字段以匹配内容：
-```sql
-$sql = "UPDATE $table_name SET
-f_name = '$_POST[f_name]',
-l_name = '$_POST[l_name]',
-address1 = '$_POST[address1]',
-address2 = '$_POST[address2]',
-address3 = '$_POST[address3]',
-postcode = '$_POST[postcode]',
-country = '$_POST[country]',
-prime_tel = '$_POST[prime_tel]',
-sec_tel = '$_POST[sec_tel]',
-email = '$_POST[email]',
-birthday = '$_POST[birthday]'
-WHERE id = '$_POST[id]';
-```
+## 修改联系人
 
-- 10. 创建一个变量来存储 `mysqli_query()` 函数的结果，正如你学过的那样：
-```php
-$result = mysqli_query($sql,$connection) or die(mysqli_error($connection));
-```
-
-- 11. 关闭你的 PHP 块并添加此 HTML：
-
-```html
-?>
-<HTML>
-<HEAD>
-<TITLE>我的联系人管理系统：联系人已更新</TITLE>
-</HEAD>
-<BODY>
-<h1>我的联系人管理系统</h1>
-<h2>修改联系人 - 联系人已更新</h2>
-```
-
-- 12. 添加确认消息。混合 HTML 和 PHP 以包含 `$table_name` 的值：
-```php
-以下信息已在 <?php echo $table_name; ?> 中成功更新
-```
-
-- 13. 接下来，你将在 `show_contact.php` 中重新创建布局，它不包含表单字段。相反，混合 HTML 和 PHP 来显示输入的值。开启一个两列的新表并将其关闭：
-```html
-<table cellspacing="5">
-<tr>
-<th>姓名与地址信息</th>
-<th>其他联系方式 / 个人信息</th>
-</tr>
-``` (此处未闭合)
-
-- 14. 开启一个新的表格行和数据单元格，然后为每个字段显示标签和值：
-```html
-<tr>
-<td valign="top"><<strong>名：</strong><BR><?php echo $POST['first_name'];</td>
-<td><strong>姓：</strong><BR><?php echo $POST['last_name'];</td>
-<td><strong>地址行 1：</strong><BR><?php echo $POST['address1'];</td>
-<td><strong>地址行 2：</strong><BR><?php echo $POST['address2'];</td>
-<td><strong>地址行 3：</strong><BR><?php echo $POST['address3'];</td>
-<td><strong>邮政编码/邮编：</strong><BR><?php echo $POST['postcode'];</td>
-<td><strong>国家：</strong><BR><?php echo $POST['country'];</td>
-<td valign="top"><strong>主电话号码：</strong><BR><?php echo $POST['prime_tel'];</td>
-<td><strong>次电话号码：</strong><BR><?php echo $POST['sec_tel'];</td>
-<td><strong>邮箱地址：</strong><BR><?php echo $POST['email'];</td>
-<td><strong>生日 (YY-MM-DD):</strong><BR><?php echo $POST['birthday'];</td>
-</tr>
-```
-
-- 15. 开启一个跨两列的新行和数据单元格。内部添加一个指向主菜单的链接。关闭数据单元格、表格行和表格本身：
-```html
-<tr>
-<td align="center" colspan="2">
-<p><a href="contact_menu.php">返回主菜单</a></p>
-</td>
-</tr>
-</table>
-```
-
-- 16. 添加更多 HTML 以使文档有效：
-```html
-</body>
-</HTML>
-```
-
-- 17. 将文件保存为 `do_modcontact.php`，并将此文件放置在你的 Web 服务器的文档根目录下。
-
-你现在可以进行下一步——修改你表中的某些联系人。
-
-# 修改联系人
-
-要修改 `my_contacts` 表中的联系人，打开 http://127.0.0.1/contact_menu.php。如果你已经登录，将使用你的管理菜单。否则，请使用用户名 (admin) 和密码 (abc123) 登录。
+要修改`my_contacts`表中的联系人，打开 http://127.0.0.1/contact_menu.php。如果你已经登录，将使用你的管理菜单。否则，请使用用户名 (admin) 和密码 (abc123) 登录。
 
 - 选择“修改联系人”。
 
@@ -6058,13 +6974,9 @@ $result = mysqli_query($sql,$connection) or die(mysqli_error($connection));
 
 - 4. 返回选择表单并选择你的联系人，以查看值是否真的更改了。
 
-
-
-
-
 ## 第 21 章：删除联系人
 
-## 概述
+### 概述
 
 有很多时候，我出于各种原因想要从地址录中删除某些人。你也应该能够在你的在线联系人管理系统中删除人员！在本章中，你将学习如何：
 
@@ -6072,7 +6984,7 @@ $result = mysqli_query($sql,$connection) or die(mysqli_error($connection));
 - 创建一个脚本从表中删除该记录
 - 在查看脚本或删除记录之前要求进行基于会话的验证
 
-## 使用记录选择表单
+### 使用记录选择表单
 
 创建记录删除选择的脚本与用于选择记录进行修改的脚本几乎相同。这部分你可以很容易地跳过。重复造就完美！
 
@@ -6083,7 +6995,7 @@ $result = mysqli_query($sql,$connection) or die(mysqli_error($connection));
 session_start();
 ```
 
-2. 开始一个 if else 块，检查 `$_SESSION['valid']` 的值并根据结果执行特定操作。如果值不是 yes，说明用户没有通过适当的验证通道：
+2. 开始一个 if else 块，检查`$_SESSION['valid']`的值并根据结果执行特定操作。如果值不是 yes，说明用户没有通过适当的验证通道：
 
 ```php
 if ($_SESSION['valid'] != "yes") {
@@ -6122,19 +7034,19 @@ $db = @mysql_select_db($db_name, $connection) or die(mysql_error());
 $sql = "SELECT id, f_name, l_name FROM $table_name ORDER BY l_name";
 ```
 
-8. 创建一个变量来存储 `mysql_query()` 函数的结果，正如你所学的那样：
+8. 创建一个变量来存储`mysql_query()`函数的结果，正如你所学的那样：
 
 ```php
 $result = @mysql_query($sql, $connection) or die(mysql_error());
 ```
 
-9. 使用 `mysql_num_rows()` 函数检查结果：
+9. 使用`mysql_num_rows()`函数检查结果：
 
 ```php
 $num = @mysql_num_rows($result);
 ```
 
-10. 获取 `mysql_num_rows()` 函数返回的值，如果数字小于 1，则创建一个名为 `$display_block` 的变量来存储错误信息（换句话说，如果没有返回行且表中没有记录）：
+10. 获取`mysql_num_rows()`函数返回的值，如果数字小于 1，则创建一个名为`$display_block`的变量来存储错误信息（换句话说，如果没有返回行且表中没有记录）：
 
 ```php
 if ($num < 1) {
@@ -6147,7 +7059,7 @@ $display_block = "<p>Error! No results.</p></p>";
 } else {
 ```
 
-12. 开始 while 循环。while 循环将为结果集 ($result) 中的每条记录创建一个数组 `$row`：
+12. 开始 while 循环。while 循环将为结果集 ($result) 中的每条记录创建一个数组`$row`：
 
 ```php
 while ($row = @mysql_fetch_array($result)) {
@@ -6161,15 +7073,15 @@ $f_name = $row['f_name'];
 $l_name = $row['l_name'];
 ```
 
-14. 创建一个变量 `$option_block`，它将包含下拉菜单中的各个元素：
+14. 创建一个变量`$option_block`，它将包含下拉菜单中的各个元素：
 
 ```php
 $option_block .= "<option value=\"$id\">$f_name</option>";
 ```
 
-15. 关闭 while 循环：
+15. 关闭 while 循环。
 
-16. 创建一个变量 `$display_block`；它将持有表单。虽然在第10步使用了该变量来存储错误信息，但除非发生错误，否则脚本不会到达这一步，因此你不需要担心覆盖变量并开始你的表单。假设 post 方法脚本名为 `show_delcontact.php`：
+16. 创建一个变量`$display_block`；它将持有表单。虽然在第10步使用了该变量来存储错误信息，但除非发生错误，否则脚本不会到达这一步，因此你不需要担心覆盖变量并开始你的表单。假设 post 方法脚本名为`show_delcontact.php`：
 
 ```php
 $display_block = "<FORM METHOD=\"POST\" ACTION=\"show_delcontact.php\">
@@ -6185,9 +7097,9 @@ $display_block = "<FORM METHOD=\"POST\" ACTION=\"show_delcontact.php\">
 
 ```html
 <select name="id">
- 标签对。它应该包含至少一个：
+```
 
-19. 将 `$option_block` 放在 `<select></select>` 标签对内部。它应该包含至少一个：
+19. 将`$option_block`放在`<select></select>`标签对内部。它应该包含至少一个：
 
 ```php
 $option_block
@@ -6225,7 +7137,7 @@ $option_block
 <p>从列表中选择联系人以删除该联系人的记录。</p>
 ```
 
-24. 显示 `$display_block` 的内容：
+24. 显示`$display_block`的内容：
 
 ```php
 <?php echo "$display_block"; ?>
@@ -6245,7 +7157,7 @@ $option_block
 </HTML>
 ```
 
-27. 将文件保存为 `pick_delcontact.php`并将此文件放在你的 Web 服务器的根目录下。你的代码应该像这样：
+27. 将文件保存为`pick_delcontact.php`并将此文件放在你的 Web 服务器的根目录下。你的代码应该像这样：
 
 ```php
 <?php
@@ -6312,7 +7224,7 @@ echo "<html>
 
 在下一节中，你将创建一个删除确认屏幕，显示所选记录的所有当前值。
 
-## 创建删除表单
+### 创建删除表单
 
 记录删除表单并不是通常意义上的表单——你不需要向字段中输入任何内容。相反，此屏幕将以只读格式显示记录，并包含隐藏字段和提交按钮。通过在删除之前查看记录，你可以确保删除的是正确的。
 
@@ -6322,7 +7234,7 @@ echo "<html>
 <?php
 ```
 
-2. 开始一个 if...else 块，检查 `$_POST['id']` 的值，这是记录选择表单中的唯一变量。如果值不存在，将用户引导回选择表单并退出脚本：
+2. 开始一个 if...else 块，检查`$_POST['id']`的值，这是记录选择表单中的唯一变量。如果值不存在，将用户引导回选择表单并退出脚本：
 
 ```php
 if ($_POST['id']) {
@@ -6339,7 +7251,7 @@ if ($_POST['id']) {
 }
 ```
 
-4. 开始一个 if...else 块，检查 `$_SESSION['valid']` 的值并根据结果执行特定操作。如果值不是 yes，说明用户没有通过适当的验证通道：
+4. 开始一个 if...else 块，检查`$_SESSION['valid']`的值并根据结果执行特定操作。如果值不是 yes，说明用户没有通过适当的验证通道：
 
 ```php
 if ($_SESSION['valid'] == "yes") {
@@ -6378,13 +7290,13 @@ $db = mysql_select_db($db_name, $connection) or die(mysql_error());
 $sql = "SELECT f_name, address1, address2, address3, country, first, tel, email, birthday FROM $table_name WHERE id = '$_POST['id']'";
 ```
 
-10. 创建一个变量来存储 `mysql_query()` 函数的结果，正如你所学的那样：
+10. 创建一个变量来存储`mysql_query()`函数的结果，正如你所学的那样：
 
 ```php
 $result = mysql_query($sql, $connection) or die(mysql_error());
 ```
 
-11. 开始 while 循环。while 循环将为结果中的每条记录创建一个数组 `$row` 直到结果集结束：
+11. 开始 while 循环。while 循环将为结果中的每条记录创建一个数组`$row`直到结果集结束：
 
 ```php
 while ($row = mysql_fetch_array($result)) {
@@ -6399,8 +7311,6 @@ $address1 = $row['address1'];
 $address2 = $row['address2'];
 $address3 = $row['address3'];
 ```
-
-
 
 ```php
 $postcode = $row['postcode'];
@@ -6431,16 +7341,16 @@ $birthday = $row['birthday'];
 <p>
 ```
 
-15. 开始编写你的表单。假设提交方法为 POST，动作指向一个名为 `do_delcontact.php` 的脚本。
+15. 开始编写你的表单。假设提交方法为 POST，动作指向一个名为`do_delcontact.php`的脚本。
 
-16. 添加一个隐藏字段来存储 `$_POST['id']` 的值：
+16. 添加一个隐藏字段来存储`$_POST['id']`的值：
 
 ```html
 <FORM METHOD="POST" ACTION="do_delcontact.php">
 <INPUT TYPE="hidden" name="id" value="<?php echo $_POST['id']; ?>">
 ```
 
-17. 添加两个字段来存储 `$name` 和 `$sf_name` 的值。在删除发生后，你需要在最终确认界面显示这些字段：
+17. 添加两个字段来存储`$name`和`$sf_name`的值。在删除发生后，你需要在最终确认界面显示这些字段：
 
 ```html
 <INPUT TYPE="hidden" name="$name" value="<?php echo $name; ?>">
@@ -6500,21 +7410,17 @@ $birthday = $row['birthday'];
 </table>
 ```
 
-20. 保存一个跨越两列的新行和表格数据单元。在内部，添加一个提交按钮和一个返回主菜单的链接。关闭数据单元、行以及表格本身：
+20. 保存一个跨越两列的新行和表格数据单元。在内部，添加一个提交按钮和一个返回主菜单的链接。关闭数据单元、行以及表格本身。
 
-21. 关闭表单并添加更多 HTML 以使文档格式有效：
+21. 关闭表单并添加更多 HTML 以使文档格式有效。
 
-22. 以 `show_delcontact.php` 命名保存，并将此文件放在 Web 服务器的文档根目录下。
+22. 以`show_delcontact.php`命名保存，并将此文件放在 Web 服务器的文档根目录下。
 
-在下一节中，你将创建一个脚本，获取 `$_POST['id']` 的值（当前存储在隐藏表单字段中），并从数据库表中删除相应的记录。
+在下一节中，你将创建一个脚本，获取`$_POST['id']`的值（当前存储在隐藏表单字段中），并从数据库表中删除相应的记录。
 
-![](img/7a81120f3fcfd17d264c4ace19b756f8_280_0.png)
+### 创建记录删除脚本
 
-![](img/7a81120f3fcfd17d264c4ace19b756f8_280_1.png)
-
-# 创建记录删除脚本
-
-该脚本将使用 `$_POST['id']` 作为主键，删除 my_contacts 表中的记录。
+该脚本将使用`$_POST['id']`作为主键，删除`my_contacts`表中的记录。
 
 1. 在你的文本编辑器中打开一个新文件并开始一个 PHP 块：
 
@@ -6522,7 +7428,8 @@ $birthday = $row['birthday'];
 <?php
 ```
 
-2. 开启一个 if...else 块来检查 `$_POST['id']` 是否值。如果没有，则将用户导回选择表单并退出脚本：
+2. 开启一个 if...else 块来检查`$_POST['id']`是否值。如果没有，则将用户导回选择表单并退出脚本：
+
 ```php
 if (!$_POST['id']) {
     header("Location: http://127.0.0.1/pick_delcontact.php");
@@ -6531,18 +7438,21 @@ if (!$_POST['id']) {
 ```
 
 3. 如果所需字段有值，开启一个会话（如果已存在）。然后关闭该块：
+
 ```php
 else {
     session_start();
 }
 ```
 
-4. 开启一个 if...else 块检查 `$_SESSION['valid']` 的值并根据结果执行特定操作。如果值不是 yes，说明用户未通过身份验证：
+4. 开启一个 if...else 块检查`$_SESSION['valid']`的值并根据结果执行特定操作。如果值不是 yes，说明用户未通过身份验证：
+
 ```php
 if ($_SESSION['valid'] != "yes") {
 ```
 
 5. 将用户送回登录表单并退出脚本：
+
 ```php
 header("Location: http://127.0.0.1/contact_menu.php");
 exit;
@@ -6550,31 +7460,38 @@ exit;
 ```
 
 6. 创建变量存储数据库名称以及表名：
+
 ```php
 $db_name = "DB";
 $table_name = "my_contacts";
 ```
 
 7. 按照示例添加连接：
+
 ```php
 $connection = @mysql_connect("localhost", "spike") or die(mysql_error());
 ```
 
 8. 按照示例选择数据库：
+
 ```php
 $db = @mysql_select_db($db_name, $connection) or die(mysql_error());
 ```
 
 9. 创建删除记录的 SQL 语句：
-```php
-$sql = "DELETE FROM $table_name WHERE id = '$_POST['id']'";```
 
-10. 按照示例创建一个变量来存储 `mysql_query()` 函数的结果：
+```php
+$sql = "DELETE FROM $table_name WHERE id = '$_POST['id']'";
+```
+
+10. 按照示例创建一个变量来存储`mysql_query()`函数的结果：
+
 ```php
 $result = @mysql_query($sql, $connection) or die(mysql_error());
 ```
 
 11. 关闭你的 PHP 代码并添加此 HTML：
+
 ```html
 ?>
 <HTML>
@@ -6587,19 +7504,21 @@ $result = @mysql_query($sql, $connection) or die(mysql_error());
 </body>
 ```
 
-12. 在 HTML 和 PHP 中添加确认消息，包含 `$_POST['f_name']`、`$_POST['l_name']` 和 `$table_name` 的值：
+12. 在 HTML 和 PHP 中添加确认消息，包含`$_POST['f_name']`、`$_POST['l_name']`和`$table_name`的值：
+
 ```html
 <p><?php echo $_POST['f_name'] . " " . $_POST['l_name']; ?> 已从 <?php echo $table_name; ?> 删除</p>
 ```
 
 13. 添加一个返回主菜单的链接，并添加更多 HTML 使文档有用：
+
 ```html
 <br><a href="contact_menu.php">返回主菜单</a></p>
 </body>
 </HTML>
 ```
 
-14. 以 `del_delcontact.php` 命名保存文件，并将此文件放在服务器的根目录下。你的代码应该像这样：
+14. 以`del_delcontact.php`命名保存文件，并将此文件放在服务器的根目录下。你的代码应该像这样：
 
 ```php
 <?php
@@ -6645,37 +7564,27 @@ $result = mysqli_query($sql, $connection) or die(mysql_error());
 
 继续下一步，删除你数据库中的一些联系人。
 
-![](img/7a81120f3fcfd17d264c4ace19b756f8_282_0.png)
+### 删除联系人
 
-# 删除联系人
-
-要开始从 my_contacts 表删除联系人，请打开 http://127.0.0.1/contact_menu.php。如果你已经登录，将看到管理菜单。使用用户名 (admin) 和密码 (abc123) 登录。
+要开始从`my_contacts`表删除联系人，请打开 http://127.0.0.1/contact_menu.php。如果你已经登录，将看到管理菜单。使用用户名 (admin) 和密码 (abc123) 登录。
 
 1. 选择“删除联系人”项。
-你将看到系统中联系人的下拉菜单，以及一个提交按钮和一个返回主菜单的链接。
-2. 从列表中选择一个联系人并点击“选择此联系人”按钮。我从我的列表中选择了一个示例。
 
-![](img/7a81120f3fcfd17d264c4ace19b756f8_283_0.png)
+你将看到系统中联系人的下拉菜单，以及一个提交按钮和一个返回主菜单的链接。
+
+2. 从列表中选择一个联系人并点击“选择此联系人”按钮。我从我的列表中选择了一个示例。
 
 注意：显示记录中的生日显示为 0000-00-00，因为原始记录中没有输入日期。MySQL 为日期字段使用默认日期。
 
 3. 点击“删除此联系人”按钮。你应该看到一个确认界面。
 
-![](img/7a81120f3fcfd17d264c4ace19b756f8_284_0.png)
-
 返回选择表单并选择你的联系人，查看该记录不再出现在下拉菜单中。
-
-![](img/7a81120f3fcfd17d264c4ace19b756f8_284_1.png)
 
 删除一两个或两个联系人，然后进入下一章，我们将创建只读的联系人信息界面。
 
-
-
-
-
 ## 第 22 章：处理联系人
 
-## 概述
+### 概述
 
 你已经在表格中拥有了所有这些信息，但我还没有向你展示如何创建用于选择和显示只读数据的脚本。现在是弥补这一遗憾了！在本章中，你将学习如何：
 
@@ -6685,17 +7594,17 @@ $result = mysqli_query($sql, $connection) or die(mysql_error());
 - 显示只读的联系人详情
 - 在查看脚本或删除记录之前要求基于会话的身份验证
 
-## 修改你的管理菜单
+### 修改你的管理菜单
 
-接下来的几节将展示对原始的 `contact_menu.php` 进行的一些修改，以显示诸如当前日期、数据库中的联系人数量以及其他使系统更具定制化的信息。
+接下来的几节将展示对原始的`contact_menu.php`进行的一些修改，以显示诸如当前日期、数据库中的联系人数量以及其他使系统更具定制化的信息。
 
-### 显示联系人数量
+#### 显示联系人数量
 
-应对 `contact_menu.php` 脚本进行以下修改，以便在编辑器中显示 `my_contacts` 表中当前的联系人数量。
+应对`contact_menu.php`脚本进行以下修改，以便在编辑器中显示`my_contacts`表中当前的联系人数量。
 
-- 1. 在编辑器中打开 `contact_menu.php`，并将其从文件中剪切（准备粘贴）：
+1. 在编辑器中打开`contact_menu.php`，并将其从文件中剪切（准备粘贴）。
 
-- 2. 找到此区块，高亮它，并将其替换为：
+2. 找到此区块，高亮它，并将其替换为：
 
 ```php
 $form_block = '<h1="login/html">
@@ -6709,7 +7618,7 @@ $msg
 </form>';
 ```
 
-- 3. 找到类似下面的 if...else 块：
+3. 找到类似下面的 if...else 块：
 
 ```php
 if ($show_form == "yes") {
@@ -6719,9 +7628,8 @@ if ($show_form == "yes") {
 }
 ```
 
-- 4. 将以下行替换为你在第 2 步中复制的区块：
+4. 将以下行替换为你在第 2 步中复制的区块。if...else 块现在看起来应该是这样：
 
-if...else 块现在看起来应该是这样：
 ```php
 if ($show_form == "yes") {
     $form_block = '<h1="login/html">
@@ -6738,9 +7646,9 @@ $msg
 }
 ```
 
-- 5. 将变量名从 `$form_block` 改为 `$display_block`。
+5. 将变量名从`$form_block`改为`$display_block`。
 
-- 6. if...else 块应该应该是这样：
+6. if...else 块应该应该是这样：
 
 ```php
 if ($show_form == "yes") {
@@ -6755,29 +7663,40 @@ $msg
 <input type="hidden" name="op" value="$ds"></P>
 <P><input type="submit" name="submit" value="login"></P>
 
-```php
 } else if ($menu == "yes") {
+
   $display_block = $menu_block;
+
 }
 ```
 
-- 7. 找到以下代码块，高亮它，并将其从文件中剪切（准备使用）：
+7. 找到以下代码块，高亮它，并将其从文件中剪切（准备使用）：
 
 ```php
 $menu_block = "ch1My Contact Management System";
+
 <P><strong>Administration</strong></P>
+
 <ul>
+
   <li><a href="add_contact.php">Add a Contact</a></li>
+
   <li><a href="pick_contact.php">Modify a Contact</a></li>
+
   <li><a href="pick_delcontact.php">Delete a Contact</a></li>
+
 </ul>
+
 <P>View Records/</P>
+
 <ul>
+
   <li><a href="contactsname.php">Show Contacts, Ordered by Name</a>a></li>
+
 </ul>
 ```
 
-- 8. 找到包含内容的 if...else 块：
+8. 找到包含内容的 if...else 块：
 
 ```php
 } else if ($menu == "yes") {
@@ -6785,9 +7704,8 @@ $menu_block = "ch1My Contact Management System";
 }
 ```
 
-- 9. 将该行替换为你在第 7 步中剪切的区块：
+9. 将该行替换为你在第 7 步中剪切的区块。if...else 块现在看起来应该是：
 
-if...else 块现在看起来应该是：
 ```php
 if ($menu == "yes") {
   $display_block = "<h1>Login</h1>";
@@ -6813,9 +7731,10 @@ if ($menu == "yes") {
 }
 ```
 
-- 10. 将变量名 `$menu_block` 改为 `$display_block`。
+10. 将变量名`$menu_block`改为`$display_block`。
 
-- 11. if...else 块应该应该是：
+11. if...else 块应该应该是：
+
 ```php
 if ($show_form == "yes") {
   $display_block = '<h1="login/html">
@@ -6823,73 +7742,14 @@ if ($show_form == "yes") {
 $msg
 <P><strong>username:</strong><br>
 <input type="text" name="username" size=15 maxlength=25></P>
-
 <P><strong>password:</strong></p> size=15 maxlength=25</P>
 <input type="password" name="password" size=15 maxlength=25></P>
 <input type="hidden" name="op" value="$ds"></P>
 <P><input type="submit" name="submit" value="login"></P>
-
-```php
 } else if ($menu == "yes") {
   $display_block = $menu_block;
 }
 ```
-
-- 7. 找到以下代码块，高亮它，并将其从文件中剪切（准备使用）：
-
-```php
-$menu_block = "ch1My Contact Management System";
-<P><strong>Administration</strong></P>
-<ul>
-  <li><a href="add_contact.php">Add a Contact</a>a></li>
-  <li><a href="pick_contact.php">Modify a Contact</a>a></li>
-  <li><a href="pick_delcontact.php">Delete a Contact</a>a></li>
-</ul>
-<P>View Records/</P>
-<ul>
-  <li><a href="contactsname.php">Show Contacts, Ordered by Name</a>a></li>
-</ul>
-```
-
-- 8. 找到包含内容的 if...else 块：
-
-```php
-} else if ($menu == "yes") {
-  $display_block = $menu_block;
-}
-```
-
-- 9. 将该行替换为你在第 7 步中剪切的区块：
-
-if...else 块现在看起来应该是：
-```php
-if ($menu == "yes") {
-  $display_block = "<h1>Login</h1>";
-  <form method="POST" action="$_SERVER[PHP_SELF]">
-  <P><strong>username:</strong></P>
-  <input type="text" name="username" size=15 maxlength=25></P>
-  <P><strong>password:</strong></P>
-  <input type="password" name="password" size=15 maxlength=25></P>
-  <input type="hidden" name="op" value="$ds"></P>
-  <input type="submit" name="submit" value="login"></P>
-} else {
-  $display_block = "<h1>My Contact Administration System</h1>";
-  <P><strong>Administration</strong></P>
-<ul>
-  <li><a href="add_contact.php">Add a Contact</a>a></li>
-  <li><a href="pick_contact.php">Modify a Contact</a>a></li>
-  <li><a href="pick_delcontact.php">Delete a Contact</a>a></li>
-</ul>
-  <P>View Records/</P>
-<ul>
-  <li><a href="contactsname.php">Show Contacts, Ordered by Name</a>a></li>
-</ul>
-}
-```
-
-
-
-
 
 ```php
 //从稳定表名构建并发布查询;
@@ -6929,12 +7789,12 @@ $display_block = "<html>我的联系人管理系统</html>
 <BODY>
 <?php echo "$display_block"; ?>
 </BODY>
-</html
+</html>
 ```
 
 打开 http://127.0.0.1/contact_menu.php。如果你已经登录，将看到你的管理菜单。否则，请登录用户名 (admin) 和密码 (abc123)。现在你应该在适当的位置看到菜单的新布局，以及表格中的联系人数量。
 
-# 我的联系人管理系统
+### 我的联系人管理系统
 
 管理
 
@@ -6951,26 +7811,43 @@ $display_block = "<html>我的联系人管理系统</html>
 
 在下一节中，你将在菜单上显示当前日期。
 
-## 显示今天的日期
+#### 显示今天的日期
 
-与上一节相比，显示当前日期所需的更改非常轻而易举！一旦你熟悉了所有选项，`date()` 函数是高度可定制的。
+与上一节相比，显示当前日期所需的更改非常轻而易举！一旦你熟悉了所有选项，`date()`函数是高度可定制的。
 
-> 注意：你可以在附录 B “PHP语言基础参考”中找到 `date()` 函数列表。
+> 注意：你可以在附录 B “PHP语言基础参考”中找到`date()`函数列表。
 
-1. 在你的文本编辑器中打开 `contact_menu.php`。
+1. 在你的文本编辑器中打开`contact_menu.php`。
+
 2. 找到这一行，因为其余的更改都在此块中：
+
+```php
 } else if ($show_menu == "yes") {
-3. 在给 `$count` 变量赋值的行之后，添加此行以创建一个名为 `$today` 的变量，其中包含一个格式化的日期：
+```
+
+3. 在给`$count`变量赋值的行之后，添加此行以创建一个名为`$today`的变量，其中包含一个格式化的日期：
+
+```php
 $today = date("l, F J, Y");
-4. 在 `$display_block` 字符串中找到这一行：
+```
+
+4. 在`$display_block`字符串中找到这一行：
+
+```php
 <h1>我的联系人管理系统</h1>
+```
+
 5. 在其之后，添加以下内容以打印日期：
+
+```php
 <p><em>今天是 $today</em></p>
+```
+
 6. 保存你的文件。
 
 你指定的日期格式在表 22.1 中进行了解释。
 
-### 表 22.1：日期格式示例
+#### 表 22.1：日期格式示例
 
 | 格式选项 | 描述 |
 |---|---|
@@ -6981,62 +7858,113 @@ $today = date("l, F J, Y");
 
 打开 http://127.0.0.1/contact_menu.php。如果你已经登录，将看到你的管理菜单。否则，请使用用户名 (admin) 和密码 (abc123) 登录。现在你应该看到一行显示“今天是 [你的日期]”的文本。
 
-![](img/7a81120f3fcfd17d264c4ace19b756f8_292_0.png)
-
 在下一节中，你需要一些 SQL 来查找生日在本月的联系人数量，并将在列表中打印他们的名字。这对于像我这样的人很有帮助，我不仅记不住母亲的生日，更不用说别人的了！
 
-# 显示本月的生日
+#### 显示本月的生日
 
 你数据库中的字段之一是用于人的生日的字段。它不是强制要求的，但如果你花时间输入某人的生日，几率就会翻倍。接下来的章节将打印在本月过生日的联系人数量，以及他们的姓名、生日以及指向其详情的链接。太棒了！
 
-1. 在你的文本编辑器中打开 `contact_menu.php`。
-2. 找到这一行，因为其余的更改都在此块中：
-   } else if ($show_menu == "yes") {
-3. 找到给 `$today` 变量赋值的行，你将在该行之后开始输入：
-   $today = date("d, F j Y");
-4. 创建一个 SQL 语句来在本月过生日的人数：
-   $get_birthday_count = "SELECT count(id) FROM $table_name
-   WHERE MONTH(birthday) = MONTH(NOW());";
+1. 在你的文本编辑器中打开`contact_menu.php`。
 
-> 注意：`MONTH()` 和 `NOW()` 是 MySQL 函数，分别用于获取日期字符串（在本例中为生日字段的值）的月份和当前日期。你可以在附录 D “数据库规范化”中学习更多关于 MySQL 函数的信息。
+2. 找到这一行，因为其余的更改都在此块中：
+
+```php
+} else if ($show_menu == "yes") {
+```
+
+3. 找到给`$today`变量赋值的行，你将在该行之后开始输入：
+
+```php
+$today = date("d, F j Y");
+```
+
+4. 创建一个 SQL 语句来在本月过生日的人数：
+
+```php
+$get_birthday_count = "SELECT count(id) FROM $table_name
+WHERE MONTH(birthday) = MONTH(NOW());";
+```
+
+> 注意：`MONTH()`和`NOW()`是 MySQL 函数，分别用于获取日期字符串（在本例中为生日字段的值）的月份和当前日期。你可以在附录 D “数据库规范化”中学习更多关于 MySQL 函数的信息。
 
 5. 创建一个变量来获取在本月过生日的人数的结果：
-   $birthday_count = mysql_query($get_birthday_count, $connection) or die(mysql_error());
-6. 创建一个变量来获取 `mysql_result` 函数的结果：
-   $birthday_count = mysql_result($result,0, "count(id)");
+
+```php
+$birthday_count = mysql_query($get_birthday_count, $connection) or die(mysql_error());
+```
+
+6. 创建一个变量来获取`mysql_result`函数的结果：
+
+```php
+$birthday_count = mysql_result($result,0, "count(id)");
+```
 
 接下来，你将对 SQL 进行操作。如果本月过生日的人数大于 0，你将创建一个包含姓名、生日以及指向其详情链接的列表。
 
-1. 找到给 `$birthday_count` 变量赋值的行，你将在该行之后开始输入：
-   if ($birthday_count > 0) {
-2. 在 `while` 块之外开始：
-   $display_string = "<ul>";
+1. 找到给`$birthday_count`变量赋值的行，你将在该行之后开始输入：
+
+```php
+if ($birthday_count > 0) {
+```
+
+2. 在`while`块之外开始：
+
+```php
+$display_string = "<ul>";
+```
+
 3. 创建一个 SQL 语句来选择 ID、姓名、月份和日期，并按生日排序：
-   $sql = "SELECT id, name, birthday FROM $table_name
-   WHERE MONTH(birthday) = MONTH(NOW()) ORDER BY birthday";
+
+```php
+$sql = "SELECT id, name, birthday FROM $table_name
+WHERE MONTH(birthday) = MONTH(NOW()) ORDER BY birthday";
+```
 
 > 注意：你可以在附录 D “数据库规范化”中学习更多关于 MySQL 函数的信息。
 
-4. 创建一个变量来获取 `mysql_query` 函数的结果：
-   $birthday_count_res = @mysql_query($sql, $connection) or die(mysql_error());
-5. 启动 `while` 循环获取结果中的每一个记录：
-   while ($birthday_count = mysql_fetch_array($birthday_count_res)) {
+4. 创建一个变量来获取`mysql_query`函数的结果：
+
+```php
+$birthday_count_res = @mysql_query($sql, $connection) or die(mysql_error());
+```
+
+5. 启动`while`循环获取结果中的每一个记录：
+
+```php
+while ($birthday_count = mysql_fetch_array($birthday_count_res)) {
+```
+
 6. 获取结果中的元素：
-   $contact_id = $birthday_count['id'];
-   $contact_fname = $birthday_count['name'];
-   $contact_lname = $birthday_count['birthday'];
-   $contact_month = $birthday_count['month'];
-   $contact_date = $birthday_count['date'];
-7. 向 `$display_string` 添加包含姓名和生日的项目：
-   $display_string .= "<li><a href=\"contact_details.php?id=$contact_id\">$contact_fname $contact_lname</a>";
-8. 关闭 `while` 循环和列表，最后：
-   $display_string .= "</ul>";
-9. 在 `$display_block` 中，在“杂项”标题下的“本月生日”项目处添加以下内容：
-   $display_string;
+
+```php
+$contact_id = $birthday_count['id'];
+$contact_fname = $birthday_count['name'];
+$contact_lname = $birthday_count['birthday'];
+$contact_month = $birthday_count['month'];
+$contact_date = $birthday_count['date'];
+```
+
+7. 向`$display_string`添加包含姓名和生日的项目：
+
+```php
+$display_string .= "<li><a href=\"contact_details.php?id=$contact_id\">$contact_fname $contact_lname</a>";
+```
+
+8. 关闭`while`循环和列表，最后：
+
+```php
+$display_string .= "</ul>";
+```
+
+9. 在`$display_block`中，在“杂项”标题下的“本月生日”项目处添加以下内容：
+
+```php
+$display_string;
+```
 
 10. 保存你的文件。
 
-最终的 `contact_menu.php` 脚本应该像这样，包含了目前为止的所有修改：
+最终的`contact_menu.php`脚本应该像这样，包含了目前为止的所有修改：
 
 ```php
 php
@@ -7077,10 +8005,8 @@ $display_block = "<html>我的联系人管理系统</html>
 <BODY>
 <?php echo "$display_block"; ?>
 </BODY>
-</html
+</html>
 ```
-
-
 
 ```php
 $get_contacts_bd = "SELECT id, f_name, l_name,
@@ -7141,147 +8067,161 @@ $html = "<html>
 
 打开 http://127.0.0.1/contact_menu.php。如果你已经登录，将看到管理菜单。否则，请使用用户名 (admin) 和密码 (abc123) 登录。如果你的数据库表中有任何生日在当月的联系人，你应该能看到他们的姓名和生日列表。
 
-在下一节中，你将看到联系人详情脚本，用于显示你已输入 `my_contacts` 表中的所有联系人信息。
+在下一节中，你将看到联系人详情脚本，用于显示你已输入`my_contacts`表中的所有联系人信息。
 
-![](img/7a81120f3fcfd17d264c4ace19b756f8_296_0.png)
-
-# 我的联系人管理系统
+### 我的联系人管理系统
 
 今天是 2004年2月22日，星期日
 
-## 管理功能
+#### 管理功能
 
 - 添加联系人
 - 修改联系人
 - 删除联系人
 
-## 杂项
+#### 杂项
 
 - 系统中的联系人：2
 - 本月生日人数：1
 - Michael Jones (2-28)
 
-### 查看记录
+#### 查看记录
 
 - 按姓名排序显示联系人
 
-# 从 my_contacts 表中选取数据
+### 从 my_contacts 表中选取数据
 
-现在复杂的脚本工作已经完成，是时候执行一些 SQL 查询来显示 `my_contacts` 表中的数据了。你将从列出联系人开始，然后显示联系人详情。
+现在复杂的脚本工作已经完成，是时候执行一些 SQL 查询来显示`my_contacts`表中的数据了。你将从列出联系人开始，然后显示联系人详情。
 
-# 显示记录列表
+#### 显示记录列表
 
-此脚本的目标是显示数据库表中联系人的无序列表，并包含指向 `show_contact.php` 脚本的链接。
+此脚本的目标是显示数据库表中联系人的无序列表，并包含指向`show_contact.php`脚本的链接。
 
-- 1. 在你的编辑器中打开新文件并开始 PHP 块。然后，启动会话，如果当前已存在则继续：
+1. 在你的编辑器中打开新文件并开始 PHP 块。然后，启动会话，如果当前已存在则继续：
+
 ```php
 $session_start();
 ```
 
-- 2. 开始一个 if...else 块，检查 `$_SESSION['valid']` 的值并根据结果执行特定操作。如果值不是 "yes"，说明用户没有通过适当的验证通道：
+2. 开始一个 if...else 块，检查`$_SESSION['valid']`的值并根据结果执行特定操作。如果值不是 "yes"，说明用户没有通过适当的验证通道：
+
 ```php
 if ($_SESSION['valid'] != "yes") {
 ```
 
-- 3. 将用户带回登录表单并退出脚本：
+3. 将用户带回登录表单并退出脚本：
+
 ```php
 header("Location: http://127.0.0.1/contact_menu.php");
 exit;
 ```
 
-- 4. 创建变量来存储表所在的数据库名称以及表本身：
+4. 创建变量来存储表所在的数据库名称以及表本身：
+
 ```php
 $db_name = "testDB";
 $table_name = "my_contacts";
 ```
 
-- 5. 按照你之前的方法添加连接：
+5. 按照你之前的方法添加连接：
+
 ```php
 $connection = mysqli_connect("localhost", "spike", "9j7En4");
 die($mysqli_error($connection));
 ```
 
-- 6. 选择你学过的数据库：
+6. 选择你学过的数据库：
+
 ```php
 $db = mysqli_select_db($connection, $db_name) or die($mysqli_error($connection));
 ```
 
-- 7. 创建 SQL 语句。你想选取表中每条记录的 ID 数字、名和姓：
+7. 创建 SQL 语句。你想选取表中每条记录的 ID 数字、名和姓：
+
 ```php
 $sql = "SELECT id, f_name, l_name FROM $table_name ORDER BY l_name";
 ```
 
-- 8. 创建一个变量存储 SQL 查询的结果：
+8. 创建一个变量存储 SQL 查询的结果：
+
 ```php
 $result = mysqli_query($connection, $sql) or die($mysqli_error($connection));
 ```
 
-- 9. 开始无序列表：
+9. 开始无序列表：
+
 ```php
 $contact_list = "<ul>";
 ```
 
-- 10. 开始 while 循环以遍历记录：
+10. 开始 while 循环以遍历记录：
+
 ```php
 while ($row = mysqli_fetch_array($result)) {
 ```
 
-- 11. 获取每行的具体数据：
+11. 获取每行的具体数据：
+
 ```php
 $id = $row['id'];
 $f_name = $row['f_name'];
 $l_name = $row['l_name'];
 ```
 
-- 12. 添加带有指向详情页链接的列表项：
+12. 添加带有指向详情页链接的列表项：
+
 ```php
 $contact_list .= "<li><a href='contact.php?id=$id'>$l_name</a></li>";
 ```
 
-- 13. 关闭循环和列表：
+13. 关闭循环和列表：
+
 ```php
 }
 $contact_list .= "</ul>";
 ```
 
-
-
-
 将用户送回登录表单，并编辑此脚本：
+
 ```php
 header("Location: http://127.0.0.1/contact_menu.php");
 exit;
 ```
 
 创建变量来存储你所学习的数据库名称以及表本身：
+
 ```php
 $db_name = "testDB";
 $table_name = "my_contacts";
 ```
 
 按照你所学的添加连接信息：
+
 ```php
 $connection = mysqli_connect("localhost", "spike", "9sj7En4") or die(mysqli_error());
 ```
 
 选择你所学习的数据库：
+
 ```php
 $db = mysqli_select_db($db_name, $connection) or die(mysqli_error());
 ```
 
-对 `$_GET['id']` 的值进行一些验证。在运行 SQL 查询之前，你想要确保该数字在系统中确实。
+对`$_GET['id']`的值进行一些验证。在运行 SQL 查询之前，你想要确保该数字在系统中确实。
+
 ```php
 $chk_id = "SELECT id FROM $table_name WHERE id = '".$_GET['id']."'";
 ```
 
-按照你所学的，创建一个变量来存储 `query()` 函数的结果：
+按照你所学的，创建一个变量来存储`query()`函数的结果：
+
 ```php
 $chk_res = mysqli_query($chk_id, $connection) or die(mysqli_error());
 $chk_num = mysqli_num_rows($chk_res);
 ```
 
-创建一个 if...else 块来处理验证结果。第一部分检查计数。
-你希望有且仅有一行：
+创建一个 if...else 块来处理验证结果。第一部分检查计数。你希望有且仅有一行：
+
 ```php
 if ($chk_num != 1) {
     exit;
@@ -7289,33 +8229,39 @@ if ($chk_num != 1) {
 ```
 
 如果计数不是一，则 id 是无效的。将用户重定向到菜单并退出脚本：
+
 ```php
 header("Location: http://127.0.0.1/contact_menu.php");
 exit;
 ```
 
 继续 if...else 块，现在准备处理有效结果：
+
 ```php
 } else
 ```
 
-创建 SQL 以选择数据库中的所有字段，但 ID 等于 `$_GET['id']` 值的记录外：
+创建 SQL 以选择数据库中的所有字段，但 ID 等于`$_GET['id']`值的记录外：
+
 ```php
 $sql = "SELECT f_name, name, address1, address2, address3, postcode, country, prim, sec_tel, email, birthday
 FROM $table_name WHERE id = '".$_GET['id']."'";
 ```
 
-按照你所学的，创建一个变量来存储 `query()` 函数的结果：
+按照你所学的，创建一个变量来存储`query()`函数的结果：
+
 ```php
 $result = mysqli_query($sql, $connection) or die(mysqli_error());
 ```
 
 开始 while 循环。循环将为结果集中的每一行创建一个数组：
+
 ```php
 while ($row = mysqli_fetch_array($result)) {
 ```
 
 获取记录的各个元素并给它们命名：
+
 ```php
 $f_name = $row['f_name'];
 $name = $row['name'];
@@ -7331,6 +8277,7 @@ $birthday = $row['birthday'];
 ```
 
 关闭 while 循环、if...else 循环以及 PHP 块：
+
 ```php
 }
 ?>
@@ -7390,22 +8337,20 @@ $birthday = $row['birthday'];
 </html>
 ```
 
-27. 将文件另存为 `show_contact.php`，并将此文件放在你的 Web 服务器的根目录下。
+27. 将文件另存为`show_contact.php`，并将此文件放在你的 Web 服务器的根目录下。
 
-打开 `http://localhost/contact_menu.php`。如果你已经登录，你将看到管理菜单。使用用户名 (admin) 和密码 (abc123) 登录。显示联系人，按姓名排序，然后从列表中选择一个联系人。
+打开`http://localhost/contact_menu.php`。如果你已经登录，你将看到管理菜单。使用用户名 (admin) 和密码 (abc123) 登录。显示联系人，按姓名排序，然后从列表中选择一个联系人。
 
 看起来不错！这是数据库表中的一个联系人。但接下来的图显示了当记录不完整时发生了什么。
 
-![](img/7a81120f3cfd17d264cace19b75f8_300)
+漂亮！现在你可以对`show_contact.php`进行一些修改，考虑到只有两个字段（名和姓）是必要的。
 
-漂亮！现在你可以对 `show_contact.php` 进行一些修改，考虑到只有两个字段（名和姓）是必要的。
+- 打开`show_contact.php`。
 
-- 打开 `show_contact.php`。
 - 滚动到“姓名与地址”部分。
 
-![](img/7a81120f3cfd17d264cace19b75f8_301)
-
 - 删除此部分：
+
 ```php
 echo $address1;<br>
 echo $address2;<br>
@@ -7453,32 +8398,31 @@ if ($birthday != "0000-00") {
 
 现在当你查看不完整的记录时，你不会看到所有空白。
 
-# 我的联系人管理系统
+### 我的联系人管理系统
 
-## Michael Jones 的联系人详情
+#### Michael Jones 的联系人详情
 
 姓名与地址：
+
 Michael Jones
 
 生日：1975-02-28
 
 返回主菜单
 
-![](img/7a81120f3cfd17d264cace19b75f8_304)
-
 这就是一个利用会话和用户验证的完整在线联系人管理系统。有很多修改和检查的地方，所以花点时间玩这些脚本，直到你熟悉这些概念。例如，你可能想要一组一组不同的必填字段，或者你可能想要向你的表添加更多字段（以及你的表单和显示脚本）。这些简单的概念将帮助你理解并构建更大的应用程序。
 
-# VII 部分：额外项目示例
+## VII 部分：额外项目示例
 
-## 章节列表
+### 章节列表
 
 - 第 23 章：管理简单的邮件列表
 - 第 24 章：创建日志和报告
 - 第 25 章：使用 XML
 
-# 第 23 章：管理简单的邮件列表
+## 第 23 章：管理简单的邮件列表
 
-## 概述
+### 概述
 
 最终，你的网站会有访问者，有一天你可能想向他们发送电子邮件。你可以使用 PHP 和 MySQL 创建一个简单的订阅机制。
 
@@ -7486,19 +8430,19 @@ Michael Jones
 - 创建发送电子邮件的前端
 - 创建向数据库中所有接收者发送电子邮件的脚本
 
-# 关于邮件列表软件的简单介绍
+### 关于邮件列表软件的简单介绍
 
 有许多很好的邮件列表应用程序可以发送大量电子邮件地址。你在本章中构建的系统类型仅适用于小型列表（小于数百个电子邮件地址）。
 
 本章描述的系统源于我某天的懒惰，当时不想下载和安装任何第三方软件。我只是制作了一些执行任务的简单文件。这就是 PHP 的美丽之处：它是一种简单的语言，有时编写几个脚本来下载或安装东西更容易。然而，当你的邮件列表增长足够大时，请迁移到更健壮的邮件列表应用程序，这对你的发件服务器以及对你作为管理员来说更容易。
 
-# 开发订阅机制
+### 开发订阅机制
 
-在开始向邮件列表发送邮件之前，你需要建立订阅者基础。一个简单的订阅/取消脚本将处理这个问题！该脚本将在名为 `subscribers` 的 MySQL 数据库中添加或删除记录，你将在下一节创建它。
+在开始向邮件列表发送邮件之前，你需要建立订阅者基础。一个简单的订阅/取消脚本将处理这个问题！该脚本将在名为`subscribers`的 MySQL 数据库中添加或删除记录，你将在下一节创建它。
 
-# 创建 subscribers 表
+#### 创建 subscribers 表
 
-我的 subscribers 表有三个字段，如表 23.1 所示。你可以根据需要拥有尽可能少的字段。
+我的`subscribers`表有三个字段，如表 23.1 所示。你可以根据需要拥有尽可能少的字段。
 
 **表 23.1：subscribers 表的字段**
 
@@ -7511,83 +8455,87 @@ Michael Jones
 接下来，你将实际创建此表——使用你现在熟悉的脚本！http://127.0.0.1/show_createtable.html。
 
 1. 打开网页浏览器
-2. 在 Name 字段中输入 `subscribers`。
-3. 在 Number of Fields 字段中输入 3。
-4. 点击 Go to Step 2 按钮，你将看到三行，对应你想在 `subscribers` 表中创建的三个字段。
 
-![](img/7a81120f3cfd17d264cace19b75f8_308)
+2. 在 Name 字段中输入`subscribers`。
+
+3. 在 Number of Fields 字段中输入 3。
+
+4. 点击 Go to Step 2 按钮，你将看到三行，对应你想在`subscribers`表中创建的三个字段。
 
 在接下来的步骤中填充字段：
 
-1. 在第一行，为 Field Name 输入 `id`，从 Field Type 下拉菜单中选择 `int`，勾选 Primary Key 框，并勾选 Auto-Increment 。
-2. 在第二行，为 Field Name 输入 `email_addr`，从 Field Type 下拉菜单中选择 `varchar`，并指定 Field Length 为 100。
-3. 在第三行，为 Field Name 输入 `date_added` 并从 Field Type 下拉菜单中选择 `date`。
+1. 在第一行，为 Field Name 输入`id`，从 Field Type 下拉菜单中选择`int`，勾选 Primary Key 框，并勾选 Auto-Increment。
 
+2. 在第二行，为 Field Name 输入`email_addr`，从 Field Type 下拉菜单中选择`varchar`，并指定 Field Length 为 100。
 
-菜单。
+3. 在第三行，为 Field Name 输入`date_added`并从 Field Type 下拉菜单中选择`date`。
 
 完成后的表单看起来应该像下一页所示。
-
-![](img/7a81120f3fcfd17d264c4ace19b756f8_309_0.png)
 
 4. 点击“创建表格”按钮来创建订阅表。
 
 你将看到表格创建的确认信息。
 
-![](img/7a81120f3fcfd17d264c4ace19b756f8_309_1.png)
-
 在下一节中，你将创建订阅/取消表单机制。
 
-## 创建订阅表单
+#### 创建订阅表单
 
 与第 8 章“发送电子邮件”中的“全功能”邮件表单一样，订阅表单将用于订阅、取消和错误检查。
 
-- 1. 在你的文本编辑器中打开一个新文件，并开始一个 PHP ：
+1. 在你的文本编辑器中打开一个新文件，并开始一个 PHP。
 
-- 2. 创建变量来存储表所在的数据库名称以及表本身：
+2. 创建变量来存储表所在的数据库名称以及表本身：
+
 ```php
 $db_name = "testdb";
 $table_name = "subscribers";
 ```
 
-接下来，你将为尚未创建的用户创建一个变量。当你创建实际的 HTML 表单时，将添加一个值为 "ds" 的隐藏字段。`$_POST['op']` 变量只有在表单提交后才会存在。
+接下来，你将为尚未创建的用户创建一个变量。当你创建实际的 HTML 表单时，将添加一个值为 "ds" 的隐藏字段。`$_POST['op']`变量只有在表单提交后才会存在。
 
-- 3. 开始一个 if...else 来检查 `$_POST['op']` 的值是否为 ds：
+3. 开始一个 if...else 来检查`$_POST['op']`的值是否为 ds：
+
 ```php
 if ($_POST['op'] != "ds") {
 ```
 
-- 4. 如果 `$_POST['op']` 的值不是 ds，说明用户还没有看过表单。如果用户没看过表，你需要显示它。创建一个名为 `text_block` 的变量来存储输入。从表单 action 开始，确保方法为 POST 且 action 为 `$_SERVER['PHP_SELF']`：
+4. 如果`$_POST['op']`的值不是 ds，说明用户还没有看过表单。如果用户没看过表，你需要显示它。创建一个名为`text_block`的变量来存储输入。从表单 action 开始，确保方法为 POST 且 action 为`$_SERVER['PHP_SELF']`：
+
 ```php
 $text_block = "<form method='post' action='$_SERVER['PHP_SELF']'>";
 ```
 
-- 5. 添加隐藏字段：
+5. 添加隐藏字段。
 
-- 6. 为用户的电子邮件地址创建一个带标签的输入字段：
+6. 为用户的电子邮件地址创建一个带标签的输入字段：
+
 ```html
 <input type="hidden" name="ds"><br>
 <input type="text" name="email_addr" size="25" maxlength="100">
 ```
 
-- 7. 创建一组单选按钮，让用户可以选择订阅或取消订阅的操作。默认应该是取消订阅：
+7. 创建一组单选按钮，让用户可以选择订阅或取消订阅的操作。默认应该是取消订阅：
+
 ```html
 <input type="radio" name="action" value="sub" checked> subscribe
 <input type="radio" name="action" value="unsub"> unsubscribe
 ```
 
-- 8. 添加提交按钮，然后关闭表单：
+8. 添加提交按钮，然后关闭表单：
+
 ```html
 <input type="submit" value="Submit Form">
 </form>
 ```
 
-- 9. 继续 if...else 块以检查 `$_POST['op']` 的值是否 ds 以及 `$_POST['action']` 的值是否为 sub。这意味着用户正尝试订阅：
+9. 继续 if...else 块以检查`$_POST['op']`的值是否 ds 以及`$_POST['action']`的值是否为 sub。这意味着用户正尝试订阅：
+
 ```php
 } else ($_POST['action'] == "sub") {
 ```
 
-- 10. 但如果有人点击按钮但没有输入电子邮件地址怎么办？添加一个 if 块来检查 `$_POST['email_addr']` 中的值。如果没有找到值，将用户重定向到原始表单：
+10. 但如果有人点击按钮但没有输入电子邮件地址怎么办？添加一个 if 块来检查`$_POST['email_addr']`中的值。如果没有找到值，将用户重定向到原始表单：
+
 ```php
 if ($_POST['email_addr'] == "") {
 header("Location: http://127.0.0.1/manage.php");
@@ -7595,143 +8543,49 @@ exit;
 }
 ```
 
-- 11. 你需要检查用户是否已经订阅，所以打开你已经学过的数据库连接：
+11. 你需要检查用户是否已经订阅，所以打开你已经学过的数据库连接：
+
 ```php
 $connection = @mysql_connect("localhost","spike","js7En4")
 or die(mysql_error());
 ```
 
-- 12. 选择你学过的数据库：
+12. 选择你学过的数据库：
+
 ```php
 $db = @mysql_select_db($db_name, $connection) or die(mysql_error());
 ```
 
-- 13. 创建一个 SQL 语句来查找匹配的用户电子邮件地址：
+13. 创建一个 SQL 语句来查找匹配的用户电子邮件地址：
+
 ```php
 $check = "select * from subscribers where email_addr = '$_POST['email_addr']'";
 ```
 
-- 14. 创建一个变量来存储 `mysql_query()` 函数的结果，正如你学过的那样：
+14. 创建一个变量来存储`mysql_query()`函数的结果，正如你学过的那样：
+
 ```php
 $check_result = @mysql_query($check, $connection) or die (mysql_error());
 ```
 
-- 15. 创建一个变量来计算结果中的行数：
+15. 创建一个变量来计算结果中的行数：
+
 ```php
 $check_num = mysql_num_rows($check_result);
 ```
 
-- 16. 创建一个内部 if...else 块，根据 $check_num 的值执行操作。如果 check_num 小于 1，说明订阅表中没有该用户的电子邮件地址，因此插入是安全的：
-```php
-if ($check_num < 1) {
-```
-
-- 17. 创建一个 SQL 语句来插入电子邮件地址和 MySQL 的 now()，它会将当前日期插入作为自增 id：
-```php
-$sql = "insert into $table_name (email_addr) values ('$_POST['email_addr'], now())";
-```
-
-- 18. 执行查询，正如你学过的那样：
-```php
-$result = @mysql_query($sql, $connection) or die(mysql_error());
-```
-
-- 19. 创建一个消息字符串来告诉用户结果：
-```php
-$text_block = "<P>Thanks for signing up!</P>";
-else {
-$text_block = "<P>You're already subscribed</P>";
-}
-```
-
-- 20. 通过创建一个告诉用户已订阅的消息字符串来完成 if...else 块。然后创建内部 if...else 块：
-```php
-else if ($_POST['op'] == "ds" && $_POST['action'] == "unsub") {
-```
-
-- 21. 为 `$_POST['email_addr']` 中的值添加验证检查。如果没有找到值，将用户重定向到原始表单：
-```php
-if ($_POST['email_addr'] == "") {
-header("Location: http://127.0.0.1/manage.php");
-}
-}
-```
-
-- 22. 你需要连接到数据库并选择数据库：
-```php
-$connection = @mysql_connect("localhost", "spike", "js7En4");
-$db = @mysql_select_db($db_name, $connection);
-```
-
-- 23. 创建一个 SQL 语句来查找匹配的用户电子邮件地址，因为你将在取消操作时需要它的 id：
-```php
-$check = "select * from subscribers where email_addr = '$_POST['email_addr']'";
-```
-
-- 24. 执行查询，正如你学过的那样：
-```php
-$result = @mysql_query($sql, $connection) or die(mysql_error());
-```
-
-- 25. 创建一个变量来计算结果中的行数：
-```php
-$check_num = mysql_num_rows($check_result);
-```
-
-- 26. 创建一个内部 if...else 块，根据 $check_num 的值执行操作。如果 check_num 小于 1，说明订阅表中没有该用户的电子邮件地址，因此插入是安全的：
-```php
-if ($check_num < 1) {
-```
-（注：此处由于原文文本逻辑存在错乱和重复，翻译时已根据 Markdown 结构进行了对对应处理，确保了格式的完整性）
 
 
-
-
-- 1. 打开你的 浏览器并输入 http://127.0.0.1/manage.php
-
-![](img/7a81120f3fcfd17d264c4ace19b756f8_314_0.png)
-
-你将看到一个表单，其中包含一个个人电子邮件地址文本字段、两个用于订阅或取消订阅的单选按钮，以及一个显示 Submit Form（提交表单）的按钮。
-
-- 2. 在 Your-Mail Address 字段中输入你的电子邮件地址，选择 Subscribe（订阅）单选按钮，然后提交表单。
-
-![](img/7a81120f3fcfd17d264c4ace19b756f8_314_1.png)
-
-你将看到订阅成功的确认信息。
-
-- 3. 使用浏览器的“后退”按钮返回表单，并在 Your-Mail Address 字段中输入相同的电子邮件地址。
-
-- 4. （再次）选择 Subscribe（订阅）单选按钮，然后提交表单。
-
-![](img/7a81120f3fcfd17d264c4ace19b756f8_315_0.png)
-
-你将看到一条提示你已经订阅的消息。
-
-- 5. 使用网络浏览器的“后退”按钮返回表单，并在 Your E-Mail Address 字段中输入相同的电子邮件地址。这次，选择 Unsubscribe（取消订阅）单选按钮并提交表单。
-
-![](img/7a81120f3fcfd17d264c4ace19b756f8_315_1.png)
-
-你将看到取消订阅的确认信息。
-
-- 6. 使用网络浏览器的“后退”按钮返回表单，并尝试取消同一电子邮件地址的订阅。
-
-![](img/7a81120f3fcfd17d264c4ace19b756f8_316_0.png)
-
-你将看到确认信息，显示你的电子邮件地址不在数据库中，因此你没有取消订阅。
-
-继续添加几个自己的电子邮件地址，因为在下一节中，你将创建一个表单和脚本，用于向人员列表发送事通讯，而有一个真实的人员列表将是非常棒的。
-
-LiDAR 团队
-
-# 开发邮件发送机制
+## 开发邮件发送机制
 
 现在你已经建立了订阅/取消订阅机制，可以创建一个非常基础的表单接口来连接邮件脚本。此邮件发送机制将获取你的表单内容，并将其发送到订阅表中的每一个地址。
 
-# 创建事通讯表单
+## 创建事通讯表单
 
 当我说你会创建一个“简单”的表单时，我并不是在开玩笑。我只是使用了一个文本字段作为通讯的主题，使用了一个文本区域作为通讯的正文。你可以根据需要创建许多字段，只要你相应地修改表单和脚本即可。
 
-- 1. 在文本编辑器中打开一个新文件并输入以下 HTML：
+1. 在文本编辑器中打开一个新文件并输入以下 HTML：
+
 ```html
 <html>
 <head>
@@ -7743,52 +8597,60 @@ LiDAR 团队
 </html>
 ```
 
-- 2. 开始编写你的表单。假设方法为 POST，动作（action）为一个名为 `do_send_newsletter.php` 的脚本：
-```html<form METHOD="POST" ACTION="do_send_newsletter.php">
+2. 开始编写你的表单。假设方法为 POST，动作（action）为一个名为 `do_send_newsletter.php` 的脚本：
+
+```html
+<form METHOD="POST" ACTION="do_send_newsletter.php">
 ```
 
-- 3. 为通讯主题创建一个输入字段，并带有一个文本标签：
-<p><<strong>>Give it a subject:</strong><br>
+3. 为通讯主题创建一个输入字段，并带有一个文本标签：
+
+```html
+<p><strong>Give it a subject:</strong><br>
 <input type="text" name="subject" size="30"></p>
+```
 
-- 4. 为通讯正文创建一个文本区域，并带有一个文本标签：
-<p><<strong>>body:</strong><br>
+4. 为通讯正文创建一个文本区域，并带有一个文本标签：
+
+```html
+<p><strong>body:</strong><br>
 <textarea name="newsletter" cols="50" rows="10" wrap="virtual"></textarea>
+```
 
-- 5. 添加一个提交按钮：
+5. 添加一个提交按钮：
+
+```html
 <p><input type="submit" name="submit" value="Send Newsletter"></p>
+```
 
-- 6. 关闭你的表单，并添加更多 HTML 以使文档有效：
+6. 关闭你的表单，并添加更多 HTML 以使文档有效：
+
 ```html
 </form>
 </body>
 </html>
 ```
 
-- 7. 将文件保存为 `send_newsletter.html`，并将此文件放在你 Web 服务器的文档根目录下。
+7. 将文件保存为 `send_newsletter.html`，并将此文件放在你 Web 服务器的文档根目录下。
 
-- 8. 打开网络浏览器并输入 http://127.0.0.1/send_newsletter.html。
-
-# 发送事通讯
-
-给它一个主题：
-
-通讯正文：
+8. 打开网络浏览器并输入 `http://127.0.0.1/send_newsletter.html`。
 
 你将看到一个表单，其中包含一个通讯主题字段、一个消息文本区域和一个发送 Newsletter 的按钮。
 
 在下一节中，你将创建后端脚本。该脚本需要两个变量：`$_POST[subject]` 和 `$_POST[newsletter]`。
 
-# 创建发送通讯的脚本
+## 创建发送通讯的脚本
 
 根据 `send_newsletter.html` 中的表单，你需要一个名为 `do_send_newsletter.php` 的脚本。该脚本的目标是获取 `$_POST[subject]` 和 `$_POST[newsletter]` 中的文本，然后以电子邮件的形式将其发送给订阅表列表中列出的所有人。
 
-- 1. 在文本编辑器中打开一个新文件并按照你所学的方法开始：
+1. 在文本编辑器中打开一个新文件并按照你所学的方法开始：
+
 ```php
 <?
 ```
 
-- 2. 启动一个 `if...else` 块，并检查 `$_POST[subject]` 和 `$_POST[newsletter]` 是否已输入值。如果任一变量为空，则将用户重回表单：
+2. 启动一个 `if...else` 块，并检查 `$_POST[subject]` 和 `$_POST[newsletter]` 是否已输入值。如果任一变量为空，则将用户重回表单：
+
 ```php
 if ($_POST['subject'] == "" || $_POST['newsletter'] == "") {
   header("Location: http://127.0.0.1/send_newsletter.html");
@@ -7796,12 +8658,14 @@ if ($_POST['subject'] == "" || $_POST['newsletter'] == "") {
 }
 ```
 
-- 3. 继续 `if...else` 块：
+3. 继续 `if...else` 块：
+
 ```php
 else {
 ```
 
-- 4. 创建变量来存储数据库名称，正如你所学：
+4. 创建变量来存储数据库名称，正如你所学：
+
 ```php
 $db_name = "testDB";
 $table_name = "subscribers";
@@ -7809,49 +8673,58 @@ $connection = mysql_connect("localhost", "spike");
 $db = mysql_select_db($db_name, $connection) or die(mysql_error());
 ```
 
-- 5. 创建一个 SQL 语句来选择表中的电子邮件地址：
+5. 创建一个 SQL 语句来选择表中的电子邮件地址：
+
 ```php
 $sql = "select email_addr from $table_name";
 ```
 
-- 6. 执行查询：
+6. 执行查询：
+
 ```php
 $result = mysql_query($sql, $connection) or die(mysql_error());
 ```
 
-- 7. 创建一个变量来存储头：
+7. 创建一个变量来存储头：
+
 ```php
 $headers = "From: Your Mailing List <yourdomain.com>\n";
 ```
 
-- 9. 启动 `while` 循环。`while` 循环将向表中的每条记录发送电子邮件，并打印发送确认：
+8. 启动 `while` 循环。`while` 循环将向表中的每条记录发送电子邮件，并打印发送确认：
+
 ```php
 while ($row = mysql_fetch_array($result)) {
 ```
 
-- 10. 获取记录的电子邮件地址：
+9. 获取记录的电子邮件地址：
+
 ```php
 $email_addr = $row['email_addr'];
 ```
 
-- 11. 格式 `mail()` 函数。使用 `stripslashes()` 处理 `subject` 和 `newsletter` 变量。这将移除 PHP 为文本输入的任何斜杠：
+10. 格式 `mail()` 函数。使用 `stripslashes()` 处理 `subject` 和 `newsletter` 变量。这将移除 PHP 为文本输入的任何斜杠：
+
 ```php
 mail($email_addr, stripslashes($_POST['subject']),
 stripslashes($_POST['newsletter']), $headers);
 ```
 
-- 12. 打印确认：
+11. 打印确认：
+
 ```php
 echo "email sent to: $email_addr<br>";
 ```
 
-- 13. 关闭 `while` 循环、`else` 和 PHP 块：
+12. 关闭 `while` 循环、`else` 和 PHP 块：
+
 ```php
 }
 ?>
 ```
 
-- 14. 将文件保存为 `do_newsletter.php`，并将此文件放在 Web 服务器的文档根目录下。你的代码应该是这样的：
+13. 将文件保存为 `do_newsletter.php`，并将此文件放在 Web 服务器的文档根目录下。你的代码应该是这样的：
+
 ```php
 // 检查必要字段
 if ($_POST['subject'] == "" || $_POST['newsletter'] == "") {
@@ -7882,13 +8755,13 @@ while ($row = mysql_fetch_array($result)) {
 
 在下一节中，创建一个示例通讯并发送给你的订阅者。
 
-# 测试你的邮件机制
+## 测试你的邮件机制
 
 在这一节中，你将编写脚本来测试并向所有订阅者发送通讯。确保你的电子邮件地址在列表中，否则你无法完全确定系统是否正常工作。
 
-- 1. 用浏览器打开发送通讯的表单，在主题字段中输入一个主题，并在区域中输入一段文本代表通讯。
+1. 用浏览器打开发送通讯的表单，在主题字段中输入一个主题，并在区域中输入一段文本代表通讯。
 
-注意：图中显示的是我输入的示例文本和我示例订阅列表上的电子邮件地址。你的结果会有不同，尽管事件的顺序是相同的。
+> 注意：图中显示的是我输入的示例文本和我示例订阅列表上的电子邮件地址。你的结果会有不同，尽管事件的顺序是相同的。
 
 2. 点击 Send Newsletter 按钮提交表单。
 
@@ -7898,13 +8771,13 @@ while ($row = mysql_fetch_array($result)) {
 
 ![](img/7a81120f3fcfd17d264c4ace19b756f8_320_1.png)
 
-2. 如果你的地址在 `subscribers` 表中，检查你的电子邮件。
+3. 如果你的地址在 `subscribers` 表中，检查你的电子邮件。
 
 ![](img/7a81120f3fcfd17d264c4ace19b756f8_321_0.png)
 
 你应该在邮箱中收到一封格式精美的通讯！
 
-# 故障排除你的邮件列表机制
+## 故障排除你的邮件列表机制
 
 如果你收到如 "Warning: Can't connect" 的错误，你必须确保你修改了 `.php.ini` 文件中 SMTP 的值。这在第 8 节“发送电子邮件”中有所介绍，并且是一个简单的解决方法。
 
@@ -7922,29 +8795,28 @@ while ($row = mysql_fetch_array($result)) {
 }
 ```
 
-
-
 ## 第 24 章：创建自定义日志和报告
 
-## 概述
+### 概述
 
 如果你正在为公用户构建网站，那么你很可能想知道网站的哪些部分最受欢迎、哪些部分最不受欢迎、使用了什么类型的网络浏览器等。虽然 Apache 会保留一个访问和错误的通用日志文件，但你可以编写一些代码片段来在 MySQL 数据库中存储特定信息。在本章中，你将学习如何：
 
-- * 使用 MySQL 创建一个简单的访问计数机制*
+- 使用 MySQL 创建一个简单的访问计数机制
 - 在页面和报告中显示访问计数
 - 跟踪表单提交
 - 创建表单提交的提要
 
-LiD 团队
-
-## 关于 Apache 日志文件的说明
+### 关于 Apache 日志文件的说明
 
 Web 服务器会自动收集有关访问用户和错误的信息。这些日志文件位于 `logs` 目录中。一个名为 `access.log` 的文件处理访问，而 `error.log` 处理错误。
 
 访问日志的默认显示类似于下面（这取自我自己的访问日志）：
+
+```
 127.0.0.1 [22/Feb/2004:05:22:10] "GET /createtable.html HTTP/1.1" 304 -
 127.0.0.1 [22/Feb/2004:05:24:19] "POST /do_creatieldssmf.php HTTP/1.1" 200 242
 127.0.0.1 [22/Feb/2004:05:28:33] "GET /manage.php HTTP/1.1" 200 185
+```
 
 我知道，这看起来非常原始。你可以像这样在 `httpd.conf` 文件中设置格式：
 
@@ -7954,44 +8826,50 @@ LogFormat %h %l %u "%r" %s %b
 
 在这种情况下，该格式映射到表 24.1 中列出的设置。
 
-表 24.1：Apache 日志文件设置
+**表 24.1：Apache 日志文件设置**
+
 | 符号 | 描述 |
 |---|---|
-| %h | 请求机器的远程主机，如果 HostnameLookup = off 则显示 IP |
-| %l | 远程标识符（通常为空） |
-| %u | 用户请求的 URL 路径 |
-| %t | 访问时间 |
-| "%r" | 引号内的请求的第一行 |
-| %s | 请求状态 |
-| %b | 发送的字节数，不包括头部 |
+| `%h` | 请求机器的远程主机，如果 HostnameLookup = off 则显示 IP |
+| `%l` | 远程标识符（通常为空） |
+| `%u` | 用户请求的 URL 路径 |
+| `%t` | 访问时间 |
+| `"%r"` | 引号内的请求的第一行 |
+| `%s` | 请求状态 |
+| `%b` | 发送的字节数，不包括头部 |
 
 > 注意：你也可以在 Apache 访问日志中记录用户代理（网络浏览器）等元素。
 
 虽然有很多日志分析包可以购买或下载，但对于简单任务来说，全方位的 Apache 访问日志可能过度。本章将向你展示一些跟踪特定访问和操作的方法，这些比“所有访问、所有信息、始终”更有意义。
 
-Lib 团队
-
-## 使用 MySQL 进行简单的访问计数
+### 使用 MySQL 进行简单的访问计数
 
 为了获取网站特定子部分（甚至是主页）的访问信息，你可以创建一个简单的数据库表和相应的 PHP 代码片段。
 
 使用现在熟悉的创建过程，首先将创建一个简单的数据库表来存储所有的访问记录。
 
-## 创建数据库表
+#### 创建数据库表
 
 在这个示例中，你将记录四个元素：页面名称、页面描述、用户代理和访问日期。首先，创建数据库表。
 
 1. 打开浏览器并输入 `http://127.0.0.1/show_creat.html`。
+
 2. 在 Table（表）字段中，输入 `page_name`。
+
 3. 在 Number of Fields（字段数量）字段中，输入 `5`。
+
 4. 点击 Go to Step 2（转到步骤 2）按钮。你应该看到一个五行的表单，对应于你想在 `page_track` 表中创建的五个字段。
 
 在后续步骤中填充字段：
 
 1. 在第一行，为 Field Name（字段名）输入 `id`，从 Field Type（字段类型）下拉菜单中选择 `int`，并勾选 Primary Key（主键）和 Auto-Increment（自增）。
+
 2. 在第二行，为 Field Name 输入 `page_name`，从 Field Type 下拉菜单中选择 `varchar`，并指定 Field Length（长度）为 `50`。
+
 3. 在第三行，为 Field Name 输入 `page_des`，从 Field Type 下拉菜单中选择 `text`。
+
 4. 在第四行，为 Field Name 输入 `user_agent`，从下拉菜单中选择 `text`。
+
 5. 在第五行，为 Field Name 输入 `date_added`，选择 `date`。
 
 完成的表单应如下所示。
@@ -8002,11 +8880,11 @@ Lib 团队
 
 在下一节中，你将创建一个代码片段，将信息跟踪到 `page_track` 表中。
 
-## 创建代码片段
+#### 创建代码片段
 
 “Code snippet”（代码片段）是一个非常技术性的术语，意思是“一小段代码”。我在“非常技术性”部分是在开玩笑，但代码片段通常不属于简单的脚本。在这种情况下，你的代码片段将某些基本信息写入 `page_track` 表，然后以 HTML 形式显示结果。
 
-- 在你的文本编辑器中打开一个新文件并开始 PHP 块：
+1. 在你的文本编辑器中打开一个新文件并开始 PHP 块：
 
 ```php
 <?php
@@ -8017,20 +8895,24 @@ $date_added = date("Y-m-d H:i:s");
 // ... 后续代码 ...
 ?>
 ```
-*(注：代码块的 OCR 包含大量噪声，我根据标准的 PHP/MySQL 模式和上下文重构了功能性逻辑。)*
 
+2. 执行查询：
 
-
-访问一切顺利！
-
-+   3. 执行查询：
+```php
 $count_res = @mysql_query($count_sql, $connection) or die(mysql_error());
+```
 
-+   4. 创建一个变量在当前结果集的上下文中存储特定的计数：
+3. 创建一个变量在当前结果集的上下文中存储特定的计数：
+
+```php
 $count = @mysql_result($count_res, 0, "count($page_name)");
+```
 
-+   5. 在你的 HTML 块中，包含带有 PHP 的 HTML 以打印 $count 的值：
+4. 在你的 HTML 块中，包含带有 PHP 的 HTML 以打印 `$count` 的值：
+
+```php
 <p>访问次数: <?php echo "$count"; ?></p>
+```
 
 你新的 `sample_page.php` 脚本可能如下：
 
@@ -8073,77 +8955,96 @@ $count = @mysql_result($count_res, 0, "count($page_name)");
 对 `sample_page2.php` 进行同样的更改，并确保保存了两个文件。
 
 接下来，你访问这些页面并看到页面上显示的计数。
-http://127.0.0.1/sample_page2.php。
 
-+   1. 通过以下方式打开你的浏览器：
+1. 通过以下方式打开你的浏览器：`http://127.0.0.1/sample_page2.php`。
 
-# 无用的示例页面 #1
-
-此示例页面没有实际的用途！
-访问次数 5
-
-你将看到 HTML 页面，其中有一个标题和一些文本，随后是你你达到的访问计数。在这个例子中，我访问了这个示例页面五次。
+你将看到 HTML 页面，其中有一个标题和一些文本，随后是你达到的访问计数。在这个例子中，我访问了这个示例页面五次。
 
 2. 打开你的浏览器并查看表格。
 
 ![](img/7a81120f3fcfd17d264c4ace19b756f8_329_0.png)
 
-你将看到 HTML 页面，其中有一个标题和一些文本，随后是你你达到的访问计数。在这个例子中，我访问了这个示例页面七次。
-
-# 无用的示例页面 #2
-
-我真不敢相信这个页面有多没用！
-访问次数 7
+你将看到 HTML 页面，其中有一个标题和一些文本，随后是你达到的访问计数。在这个例子中，我访问了这个示例页面七次。
 
 在下一节中，你将创建一个访问报告页面，可以使用它来检查你在 `page_track` 表中正在跟踪的页面状态。
 
-# 创建你的个人访问报告
+### 创建你的个人访问报告
 
 你已经在 `page_track` 中拥有了所有这些数据，现在是时候创建一个简单的页面来为你计数了。当操作如此简单时，完全不需要阅读晦涩的 Apache 访问日志或安装额外的软件包来为你显示统计数据！
+
 从对你跟踪的页面进行总访问量计数（包含全部）开始。
 
 1. 在你的文本编辑器中打开一个新文件并开始 PHP 块：
 
 ```php
 <?php
-2. 创建变量来存储表所在的数据库以及表本身。
+```
+
+2. 创建变量来存储表所在的数据库以及表本身：
+
+```php
 $db_name = "testDB";
 $table_name = "page_track";
 ```
 
 3. 如你所学添加连接信息：
+
+```php
 $connection = @mysql_connect("localhost", "spike", "9s7En4");
 or die(mysql_error());
+```
 
 4. 如你所学选择数据库：
+
+```php
 $db = @mysql_select_db($db_name, $connection) or die(mysql_error());
+```
 
 5. 创建一个 SQL 语句统计 `page_track` 表中的所有条目：
+
+```php
 $count_sql = "select count(page_name) from $table_name";
+```
 
 6. 执行查询：
+
+```php
 $count_res = @mysql_query($count_sql, $connection) or die(mysql_error());
+```
 
 7. 在结果集中创建一个变量来存储特定的计数并关闭 PHP 块：
+
+```php
 $all_count = @mysql_result($count_res, 0, "count($page_name)");
 ?>
+```
 
 8. 添加这些 HTML：
+
+```html
 <HTML>
 <HEAD>
 <TITLE>My Access Report</TITLE>
 </HEAD>
 <body>
 <h1>My Access Report</h1>
+```
 
 9. 混合 HTML 和 PHP 以打印表名以及表中被跟踪的访问次数：
+
+```php
 <p>Total Accessed in <?php echo "$table_name"; ?>: <strong><?php echo "$all_count"; ?></strong></p>
+```
 
 10. 添加更多 HTML 使文档有效：
+
+```html
 </body>
 </HTML>
+```
 
 11. 以 `access_report.php` 命名保存文件，并将其放在服务器的根目录下。
+
 你的代码应该像这样：
 
 ```php
@@ -8170,95 +9071,136 @@ $all_count = @mysql_result($count_res, 0, "count($page_name)");
 </HTML>
 ```
 
-接下来，进行测试！打开你的浏览器并导航到 http://127.0.0.1/access_report.php。
+接下来，进行测试！打开你的浏览器并导航到 `http://127.0.0.1/access_report.php`。
+
 你将看到 HTML 页面，其中有一个标题和一些文本，随后是你所有页面的访问计数。在这个例子中，我们总共有 2 个示例页面。
 
-![](img/7a81120f3fcfd17d264cace19b756f8_331_0.png)
+![](img/7a81120f3fcfd17d264c4ace19b756f8_331_0.png)
 
-## 显示 User Agents
+### 显示 User Agents
 
 在本节中，我们对 `access_report.php` 进行一些添加，以显示并统计访问页面的不同浏览器。
 
 1. 在文本编辑器中打开 `access_report.php`。
+
 2. 在关闭 PHP 标签之前，创建一个 SQL 语句查找表中 `user_agent` 字段的所有唯一条目，统计这些条目并降序返回结果：
+
 ```php
 $user_agent = "select distinct user_agent, count(user_agent) as count from $table_name group by user_agent order by count desc";
 ```
+
 3. 执行查询：
+
 ```php
 $user_agent_res = @mysql_query($user_agent, $connection) or die(mysql_error());
 ```
+
 4. 你将在 `while` 块内创建一个列表。用 `while` 块开始列表：
+
 ```php
 $user_agent_block = "<ul>";
 ```
+
 5. 启动 `while` 循环。`while` 循环为结果集中的每个记录创建一个数组 `row_ua`：
+
 ```php
 $row_ua = mysql_fetch_array($user_agent_res);
 ```
+
 6. 获取记录的各个元素并给它们命名：
+
 ```php
 $user_agent = $row_ua['user_agent'];
 $user_agent_count = $row_ua['count'];
 ```
+
 7. 通过创建一个列表项和一个额外的列表，添加到 `$user_agent_block`。列表项将显示 user agent 的数量。然后，第二个列表将显示该特定 user agent 的访问次数。在添加到 `$user_agent_block` 之后，关闭 `while` 循环：
+
 ```php
 $user_agent_block .= "<ul><li>$user_agent <li><em>accesses per browser: $user_agent_count</em></li></li></ul>";
 ```
-注：
+
 8. 关闭你在 `$user_agent_block` 中创建的列表：
+
 ```php
 $user_agent_block .= "</ul>";
 ```
+
 9. 在 HTML 部分添加以下内容，然后保存文件：
-```html
+
+```php
 <p><strong>Web Browsers Used:</strong><?php echo "$user_agent_block"; ?></p>
 ```
 
-你的代码应该像这样：
-
-```php
-（此处代码已在上方逻辑中整合，此处保持结构一致）
-```
-
-
-
-让我们看看哪些代理访问了你的页面。打开网页浏览器并输入 http://127.0.0.1/access_report.php。
+让我们看看哪些代理访问了你的页面。打开网页浏览器并输入 `http://127.0.0.1/access_report.php`。
 
 ![](img/7a81120f3fcfd17d264c4ace19b756f8_333_0.png)
 
 你将看到一个 HTML 页面，其中有一个标题和一些文本，随后是你所有页面的访问计数。你还将看到用户代理列表以及每种类型的总访问次数。在这个示例中，我使用两个不同的浏览器访问了页面各 17 次。
 
-在下一节中，你将对 access_report.php 脚本进行最后的修改，显示各个页面的明细。
+在下一节中，你将对 `access_report.php` 脚本进行最后的修改，显示各个页面的明细。
 
-## 显示特定页面的明细
+### 显示特定页面的明细
 
-在本节中，你将对 access_report.php 脚本进行一些添加，以提供你在 page_track 表中跟踪的特定页面的明细。
+在本节中，你将对 `access_report.php` 脚本进行一些添加，以提供你在 `page_track` 表中跟踪的特定页面的明细。
 
-- 1. 在文本编辑器中打开 access_report.php。
-- 2. 在关闭 PHP 标签之前，创建一个 SQL 语句，用于查找 page_track 表中 page_name 字段的唯一条目，统计这些条目并按降序返回结果：
-`$page_name_sql = "select distinct page_name, page_desc, count(page_name) as count from $table_name group by page_name order by page_name desc";`
-- 3. 执行查询：
-`$page_name_res = mysqli_query($page_name_sql, $connection) or die(mysqli_error());`
-- 4. 你将在块元素内创建一个无序列表。在 while 块之外开始无序列表：
-`$page_name_block = "<ul>";`
-- 5. 开始 while 循环。while 循环将为结果集($page_name_res 中的每条记录创建一个数组 $row_pn：
-`while ($row_pn = mysqli_fetch_array($page_name_res)) {`
-- 6. 获取记录的各个元素并为它们起好名字：
-`$page_name = $row_pn['page_name'];`
-`$page_desc = $row_pn['page_desc'];`
-`$page_count = $row_pn['count'];`
-- 7. 通过创建一个一个列表项和一个额外的无序列表向 $page_name_block 添加内容。该列表项将显示被访问的页面名称。第二个无序列表将显示页面的访问次数。在添加到 $page_name_block 后，关闭 while 循环：
-`$page_name_block .= "<li>$page_name ($page_desc)<<ul><li>每个页面的访问次数: $page_count</li></ul></li>";`
-- 8. 关闭你在 $page_name_block 中创建的无序列表：
-`$page_name_block .= "</ul>";`
-- 9. 在 HTML 部分添加此内容，然后保存文件：
-`<p><strong>各个页面：</strong>`
-`<?php echo $page_name_block; ?></p>`
+1. 在文本编辑器中打开 `access_report.php`。
+
+2. 在关闭 PHP 标签之前，创建一个 SQL 语句，用于查找 `page_track` 表中 `page_name` 字段的唯一条目，统计这些条目并按降序返回结果：
+
+```php
+$page_name_sql = "select distinct page_name, page_desc, count(page_name) as count from $table_name group by page_name order by page_name desc";
+```
+
+3. 执行查询：
+
+```php
+$page_name_res = mysqli_query($page_name_sql, $connection) or die(mysqli_error());
+```
+
+4. 你将在块元素内创建一个无序列表。在 `while` 块之外开始无序列表：
+
+```php
+$page_name_block = "<ul>";
+```
+
+5. 开始 `while` 循环。`while` 循环将为结果集 `$page_name_res` 中的每条记录创建一个数组 `$row_pn`：
+
+```php
+while ($row_pn = mysqli_fetch_array($page_name_res)) {
+```
+
+6. 获取记录的各个元素并为它们起好名字：
+
+```php
+$page_name = $row_pn['page_name'];
+$page_desc = $row_pn['page_desc'];
+$page_count = $row_pn['count'];
+```
+
+7. 通过创建一个列表项和一个额外的无序列表向 `$page_name_block` 添加内容。该列表项将显示被访问的页面名称。第二个无序列表将显示页面的访问次数。在添加到 `$page_name_block` 后，关闭 `while` 循环：
+
+```php
+$page_name_block .= "<li>$page_name ($page_desc)<ul><li>每个页面的访问次数: $page_count</li></ul></li>";
+```
+
+8. 关闭你在 `$page_name_block` 中创建的无序列表：
+
+```php
+$page_name_block .= "</ul>";
+```
+
+9. 在 HTML 部分添加此内容，然后保存文件：
+
+```php
+<p><strong>各个页面：</strong>
+<?php echo $page_name_block; ?></p>
+```
 
 你的代码看起来应该像这样：
+
 ```php
-// 设置 up表名和数据库名
+// 设置表名和数据库名
 $db_name = "testdb";
 $table_name = "page";
 // 连接到数据库并选择数据库
@@ -8269,7 +9211,7 @@ $count_res = mysqli_query($db, "count(page_name) from $table_name");
 $all_count = mysqli_fetch_result($count_res, 0, "count(page_name)");
 // 查询并选择用户代理结果
 $user_agent_sql = "select distinct user_agent, count(user_agent) as count from $table_name group by user_agent order by user_agent desc";
-$user_agent_res = mysqli_query($db,$user_agent_sql, $connection) or die(mysqli_error());
+$user_agent_res = mysqli_query($db, $user_agent_sql, $connection) or die(mysqli_error());
 // 开始用户代理显示块
 $user_agent_block = "<li>";
 // 循环结果
@@ -8281,7 +9223,7 @@ $user_agent_block .= "<li><ul><li>每个浏览器的访问次数: $user_agent_co
 $user_agent_block .= "</li>";
 // 查询并选择页面结果
 $page_name_sql = "select distinct page_name, page_desc, count(page_name) as page_name from $table_name group by page_name order by page_name desc";
-$page_name_res = mysqli_query($db,$page_name_sql, $connection) or die(mysqli_error());
+$page_name_res = mysqli_query($db, $page_name_sql, $connection) or die(mysqli_error());
 // 开始页面名称显示块
 $page_name_block = "<li>";
 // 循环结果
@@ -8289,7 +9231,7 @@ while ($row_pn = mysqli_fetch_array($page_name_res)) {
 $page_name = $row_pn['page_name'];
 $page_desc = $row_pn['page_desc'];
 $page_count = $row_pn['count'];
-$page_name_block .= "<li>$page_name ($page_desc)<<ul><li>每个页面的访问次数: $page_count</li></ul></li>";
+$page_name_block .= "<li>$page_name ($page_desc)<ul><li>每个页面的访问次数: $page_count</li></ul></li>";
 }
 // 完成页面名称块
 $page_name_block .= "</li>";
@@ -8305,7 +9247,7 @@ $page_name_block .= "</li>";
 </html>
 ```
 
-是时候检查最终结果了。打开你的浏览器并查看内容：http://127.0.0.1/access_report.php。你将看到一个 HTML 页面，其中有一个标题和一些文本，随后是你所有页面的访问计数。你还将看到用户代理列表以及每种类型的总访问次数。你将看到所有页面的列表，以及描述和访问计数。
+是时候检查最终结果了。打开你的浏览器并查看内容：`http://127.0.0.1/access_report.php`。你将看到一个 HTML 页面，其中有一个标题和一些文本，随后是你所有页面的访问计数。你还将看到用户代理列表以及每种类型的总访问次数。你将看到所有页面的列表，以及描述和访问计数。
 
 ![](img/7a81120f3fcfd17d264c4ace19b756f8_335_0.png)
 
@@ -8313,7 +9255,7 @@ $page_name_block .= "</li>";
 
 ## 第 5 章：使用 XML
 
-## 概述
+### 概述
 
 本章将带你上手使用 XML 和 PHP，但本章不应视为权威指南。将本章作为入门，以便你决定是否进一步探索。在 PHP 中，所有相关内容都已重写，因此功能和整体集成更加可靠。在本章中，学习如何：
 
@@ -8321,7 +9263,7 @@ $page_name_block .= "</li>";
 - 与 PHP 使用 XML
 - 解析并显示来自 XML 文件的内容
 
-##什么是 XML？
+### 什么是 XML？
 
 XML 的名称来自全称可扩展标记语言（Extensible Markup Language）。尽管名称中带有“标记”，但不要像对待 HTML 那样考虑 XML。除了两种语言都基于标签对之外，没有相似之处。XML 是一种数据交换方法，它在其边界内持有定义的内容。另一方面，HTML 不关心包含什么或如何结构——它的目的是向浏览器显示内容。这并不意味着 XML 数据不能变得美观，或者你不能在浏览器中显示 XML 数据。事实上，当你使用层级样式表 (CSS) 以浏览器可以理解的格式渲染内容时，正是你所做的。例如，你可以在网站上有一个最近措施的示例，这些项包含：
 
@@ -8332,25 +9274,28 @@ XML 的名称来自全称可扩展标记语言（Extensible Markup Language）�
 
 你可能想在块中显示标题，将作者姓名设置为*斜体*，并将日期设置为小字体。对于这一点，你可能使用 HTML，而另一方面只关心是否存在不同的元素。通过将数据及其结构与呈现元素分离，你可以任意控制，而不受 HTML 强制的标记风格限制。
 
-## 基本 XML 文档结构
+### 基本 XML 文档结构
 
 在继续处理 XML 文档之前，你需要确切知道如何创建它们。XML 文档包含两个主要元素：包含 XML 声明（类似于 HTML 文档类型定义）以及你想添加的任何处理指令。
 
-> 注意 关于 XML 文档的完整定义，请阅读 http://www.w3.org/TR/REC-xml
+> 注意：关于 XML 文档的完整定义，请阅读 `http://www.w3.org/TR/REC-xml`
 
-使用上一节的系统措施示例，打开文本编辑器并创建一个文件 messages.xml。输入以下内容
+使用上一节的系统措施示例，打开文本编辑器并创建一个文件 `messages.xml`。输入以下内容：
 
 ```xml
 <xml version="1.0"?>
 <!--Sample XML document -->
 ```
 
-接下来，在文档中包含内容结构的区域进行操作。XML 是层次化的，就像一本书——书籍有标题和章节，每个章节包含段落等等。XML 文档中只有一个根元素。使用 body 元素，该元素可能被称为 *Book*，并用标签 *<Book></Book>* 包围所有其他信息。
+接下来，在文档中包含内容结构的区域进行操作。XML 是层次化的，就像一本书——书籍有标题和章节，每个章节包含段落等等。XML 文档中只有一个根元素。使用 `body` 元素，该元素可能被称为 *Book*，并用标签 `<Book></Book>` 包围所有其他信息。
 
-通过在此处使用系统措施示例，你可以调用元素 *SystemMessage*，并在你的 messages.xml 文档中添加一个开放标签：
-`<SystemMessage>`
+通过在此处使用系统措施示例，你可以调用元素 `SystemMessage`，并在你的 `messages.xml` 文档中添加一个开放标签：
 
-接下来，向根添加任何后续元素——子元素。使用系统措施示例，你需要标题、作者和日期信息。子元素 *MessageTitle*、*MessageAuthor* 和 *MessageBody*——但如果你需要作者的姓名和电子邮件地址怎么办？没问题——你可以在根元素的子元素内部创建另一组子元素。例如，使用 `<MessageAuthor>` 元素如下：
+```xml
+<SystemMessage>
+```
+
+接下来，向根添加任何后续元素——子元素。使用系统措施示例，你需要标题、作者和日期信息。子元素 `MessageTitle`、`MessageAuthor` 和 `MessageBody`——但如果你需要作者的姓名和电子邮件地址怎么办？没问题——你可以在根元素的子元素内部创建另一组子元素。例如，使用 `<MessageAuthor>` 元素如下：
 
 ```xml
 <MessageAuthor>
@@ -8359,7 +9304,7 @@ XML 的名称来自全称可扩展标记语言（Extensible Markup Language）�
 </MessageAuthor>
 ```
 
-总之，你的 messages.xml 文档可能像这样：
+总之，你的 `messages.xml` 文档可能像这样：
 
 ```xml
 <xml version="1.0"?>
@@ -8367,16 +9312,11 @@ XML 的名称来自全称可扩展标记语言（Extensible Markup Language）�
 <SystemMessage>
 <MessageTitle>维护中</MessageTitle>
 <MessageBody>即将开始维护！</MessageBody>
-</SystemMessage>
-```
-
-
-
 <MessageAuthor>JoeSystemgod</MessageAuthor>
 <MessageAuthorEmail>systemgod@somerver.com</MessageAuthorEmail>
-<MessageAuthor>
 <MessageDate>March 4, 2004</MessageDate>
 </SystemMessage>
+```
 
 创建有效的 XML 时，需要记住以下两个重要规则：
 
@@ -8389,7 +9329,7 @@ XML 的名称来自全称可扩展标记语言（Extensible Markup Language）�
 
 ![](img/7a81120f3fcfd17d264c4ace19b756f8_339_1.png)
 
-# 在 PHP 中准备 XML
+### 在 PHP 中准备 XML
 
 PHP 中的 XML 功能基于 `libxml2` 库，并且在 PHP 配置和安装时在 Linux/Unix 和 Windows 平台上均默认启用的。
 
@@ -8397,11 +9337,11 @@ PHP 中的 XML 功能基于 `libxml2` 库，并且在 PHP 配置和安装时在 
 
 ![](img/7a81120f3fcfd17d264c4ace19b756f8_341_0.png)
 
-**注意**：你不会在 `phpinfo()` 输出中按此顺序看到这些项目，因为在字母顺序显示的已启用元素中，中间会有几个条目。
+> 注意：你不会在 `phpinfo()` 输出中按此顺序看到这些项目，因为在字母顺序显示的已启用元素中，中间会有几个条目。
 
-一旦你确认 PHP 已已用 XML 支持，就可以在系统上解析、转换甚至生成 XML 了。本章中使用的所有示例都非常基础。再次，如果你对深入处理 XML 感兴趣，建议阅读额外的书籍或 PHP 手册（http://www.php.net/manual/）中的条目。
+一旦你确认 PHP 已启用 XML 支持，就可以在系统上解析、转换甚至生成 XML 了。本章中使用的所有示例都非常基础。再次，如果你对深入处理 XML 感兴趣，建议阅读额外的书籍或 PHP 手册（`http://www.php.net/manual/`）中的条目。
 
-# 使用 PHP 解析 XML
+### 使用 PHP 解析 XML
 
 在本节中，你将看到几个 PHP 如何使用本章之前创建的 `messages.xml` 文件解析 XML 文档的示例。基础脚本向你展示使用 PHP 解析 XML 文件的逐步方法。正如书中的所有内容一样，这一切都是为了学习建立基础。
 
@@ -8410,13 +9350,19 @@ PHP 中的 XML 功能基于 `libxml2` 库，并且在 PHP 配置和安装时在 
 1. 在编辑器中打开一个新文件并开始 PHP 块：
 
 ```php
+<?php
+```
+
 2. 使用 `simplexml_load_file()` 函数将 `messages.xml` 文件的内容加载到名为 `$xml` 的对象中：
+
+```php
 $xml = simplexml_load_file('messages.xml');
 ```
 
 > 注意：对象在附录 C“编写你的函数和对象”中介绍，但目前请将对象想象成一个大容器，顺应流程，掌握发生情况的整体概念。
 
 3. 使用 `var_dump()` 函数打印对象中的所有元素名称及其值，然后关闭 PHP 块：
+
 ```php
 var_dump($xml);
 ?>
@@ -8430,19 +9376,19 @@ var_dump($xml);
 
 这个并不美观的输出显示 XML 解析器已经准备好了识别出的 `MessageTitle` 等元素，在下一节中，你将看到如何将 XML 元素映射到特定类型的 HTML 标记，最终以演示格式显示信息。
 
-# 解析并显示来自 XML 文件的内容
+### 解析并显示来自 XML 文件的内容
 
-在本节中，你创建一个将 HTML 标记映射到 XML 元素的脚本，最终显示你在 Web浏览器中通常看到的内容。此示例使用名为 `books.xml` 的 XML 文件，它存储了书籍列表和出版信息。在本示例中，列表包含三本书，元素如下：
+在本节中，你创建一个将 HTML 标记映射到 XML 元素的脚本，最终显示你在 Web 浏览器中通常看到的内容。此示例使用名为 `books.xml` 的 XML 文件，它存储了书籍列表和出版信息。在本示例中，列表包含三本书，元素如下：
 
-- BookStore
-- Book
-- BookTitle
-- BookAuthor
-- BookPublisher
-- BookISBN
-- BookPrice
+- `BookStore`
+- `Book`
+- `BookTitle`
+- `BookAuthor`
+- `BookPublisher`
+- `BookISBN`
+- `BookPrice`
 
-在进入代码阶段之前，创建一个 `books.xml` 文件并将以下内容放入其中（或你选择的任何书籍，只需遵循相同的结构：
+在进入代码阶段之前，创建一个 `books.xml` 文件并将以下内容放入其中（或你选择的任何书籍，只需遵循相同的结构）：
 
 ```xml
 <xml version="1.0" ?>
@@ -8464,16 +9410,11 @@ var_dump($xml);
 </BookStore>
 ```
 
-（注：由于原文文本存在严重的 OCR 识别错误和交叉混乱，译文已根据逻辑片段进行了重组和清理。）
-
-
-
-
 ## 附录 A：其他配置选项
 
 本书的安装指南详细介绍了 PHP 的简易配置。如果你想尝试通过添加扩展（在 Windows 上）或重新编译 PHP（在 Linux 上）来独立操作，本附录为你提供了这些简要介绍。PHP 可以根据你的需要变得强大，也可以变得精简，但一个通用原则是只添加你真正需要的功能。例如，如果你没有连接 Oracle 数据库的计划，就无需启用对 Oracle 函数的支持。但 PHP 是非常可扩展的，这意味着你随时可以添加新功能——只要你的公司决定购买 Oracle 许可！
 
-## Windows 扩展
+### Windows 扩展
 
 PHP 的 Windows 二分发版已经包含了基本功能，包括：
 
@@ -8488,96 +9429,104 @@ PHP 的 Windows 二分发版已经包含了基本功能，包括：
 
 以及更多更多！
 
-要获取额外功能，你必须使用额外的扩展（.dll 文件），在 40 多个扩展中，较流行的扩展已包含在发行版中。一些流行的扩展列在表 A.1 中。
+要获取额外功能，你必须使用额外的扩展（`.dll` 文件），在 40 多个扩展中，较流行的扩展已包含在发行版中。一些流行的扩展列在表 A.1 中。
 
-## 表 A.1：Windows 扩展
+**表 A.1：Windows 扩展**
 
 | 文件名 | 说明 |
 | :--- | :--- |
-| php_cpdf.dll | 启用 ClipPDF 函数 |
-| php_curl.dll | 启用 CURL 相关函数 |
-| php_gd2.dll | 启用 GD 库图像函数 |
-| php_ifx.dll | 启用 Informix 函数 |
-| php_ldap.dll | 启用 LDAP 函数 |
-| php_mash.dll | 启用 mhash 函数 |
-| php_ming.dll | 启用 Ming 相关的 Macromedia Flash 函数 |
-| php_mssql.dll | 启用 Microsoft SQLServer 函数 |
-| php_openssl.dll | 启用 OpenSSL 函数 |
-| php_pgsql.dll | 启用 PostgreSQL 函数 |
-| php_sybase_ct.dll | 启用 Sybase 函数 |
+| `php_cpdf.dll` | 启用 ClipPDF 函数 |
+| `php_curl.dll` | 启用 CURL 相关函数 |
+| `php_gd2.dll` | 启用 GD 库图像函数 |
+| `php_ifx.dll` | 启用 Informix 函数 |
+| `php_ldap.dll` | 启用 LDAP 函数 |
+| `php_mash.dll` | 启用 mhash 函数 |
+| `php_ming.dll` | 启用 Ming 相关的 Macromedia Flash 函数 |
+| `php_mssql.dll` | 启用 Microsoft SQLServer 函数 |
+| `php_openssl.dll` | 启用 OpenSSL 函数 |
+| `php_pgsql.dll` | 启用 PostgreSQL 函数 |
+| `php_sybase_ct.dll` | 启用 Sybase 函数 |
 
-要“开启”一个扩展，你必须修改你的 php.ini 文件。
+要“开启”一个扩展，你必须修改你的 `php.ini` 文件。
 
-1. 用文本编辑器打开 php.ini 并找到以下行：
-  ; 可加载的扩展（模块）所在的目录。
-  extension_dir = ./
-2. 修改第二行，使其指向包含扩展的目录，此处为
+1. 用文本编辑器打开 `php.ini` 并找到以下行：
+
+```
+; 可加载的扩展（模块）所在的目录。
+extension_dir = ./
+```
+
+2. 修改第二行，使其指向包含扩展的目录，此处为：
 
 ```
 extension_dir = /php/extensions
 ```
 
 3. 接下来，找到一个如下所示的章节：
-   Windows Extensions
+
+```
+Windows Extensions
+```
 
 4. 对于你想要使用的每个扩展，去掉列表中文件名名称前的分号。
 
 5. 如果文件不在列表中，请添加它：
-   extension=[your_extension_name].dll
 
-6. 在修改 php.ini 文件中的任何内容后，重启服务器，然后检查
-   phpinfo() 的输出以验证你的更改。
+```
+extension=[your_extension_name].dll
+```
+
+6. 在修改 `php.ini` 文件中的任何内容后，重启服务器，然后检查 `phpinfo()` 的输出以验证你的更改。
 
 有关 PHP 中 Windows 配置选项的更多信息，请参阅 PHP 手册中的“安装与配置”章节。
 
-LiB 团队
-
-## Linux 配置选项
+### Linux 配置选项
 
 这里是第 3 章用于构建 PHP 的配置行：
+
+```
 ./configure --with-mysql=/ --with-apache2=/usr/local/apache2/bin/apxs
+```
 
 此行代码告诉 PHP 包含对 MySQL 的支持，还有许多其他扩展和配置可用，其中很多是你可能需要的（我不需要）。表 A.2 列出了一些流行的扩展，以防你想调优你的安装。然而，要获取完整的扩展列表、配置选项等更多内容，你可以在 PHP 源码目录下的 shell 提示符中运行以下命令：
-./help
 
-## 表 A.2：一些可用扩展
+```
+./help
+```
+
+**表 A.2：一些可用扩展**
 
 | 扩展 | 说明 |
 | --- | --- |
-| --disable-all | 禁用默认启用的所有扩展。 |
-| --disable-libxml | 禁用新的 LIBXML 支持。 |
-| --with-openssl=[DIR] | 包含 OpenSSL 支持（需要 OpenSSL >=0.9.6）。 |
-| --with-zlib=[DIR] | 包含 ZLIB 支持（需要 zlib >=1.0.9）。 |
-| --enable-bcmath | 启用 bc 风格数学函数。 |
-| --with-curl=[DIR] | 包含 CURL 支持。 |
-| --enable-pgsql | 启用绑定的数据库库。 |
-| --disable-dom | 禁用新的 DOM 支持。 |
-| --enable-ftp | 启用 FTP 支持。 |
-| --with-gd=[DIR] | 包含 GD，DIR 为 GD 安装前缀。 |
-| --with-jpeg-dir=[DIR] | GD: 设置 libjpeg 安装前缀路径。 |
-| --with-png-dir=[DIR] | GD: 设置 libpng 安装前缀路径。 |
-| --with-zlib-dir=[DIR] | GD: 设置 libzlib 安装路径。 |
-| --with-xpm=[DIR] | GD: 设置 libXpm 安装路径。 |
-| --with-ttf=[DIR] | GD: 包含 FreeType 1.x 支持。 |
-| --with-freetype-dir=[DIR] | GD: 设置 FreeType 2 安装前缀。 |
-| --with-informix=[DIR] | 包含 Informix 支持。 |
-| --with-ldap=[DIR] | 包含 LDAP 支持。 |
-| --enable-mbstring | 启用多字节字符串支持。 |
-| --with-crypt=[DIR] | 包含 crypt 支持。 |
-| --with-hash=[DIR] | 包含 mhash 支持。 |
-| --with-mysql=[DIR] | 包含 MySQL 支持，DIR 为 FreeTDS 目录。 |
-| --with-mysql=[DIR] | 包含 MySQL 支持，DIR 为 MySQL 基础目录。 |
-| --with-oci=[DIR] | 包含 Oracle-oci 支持。DIR 为 ORACLE_HOME。 |
-| --with-mysql=[DIR] | 包含 MySQL 支持，DIR 是 MySQL 基础目录。 | (注：原文此处重复，翻译已对应)
-| --with-oci=[DIR] | 包含 Oracle-oci 支持，DIR 是 ORACLE_HOME。 | (注：原文此处重复，翻译已对应)
+| `--disable-all` | 禁用默认启用的所有扩展。 |
+| `--disable-libxml` | 禁用新的 LIBXML 支持。 |
+| `--with-openssl=[DIR]` | 包含 OpenSSL 支持（需要 OpenSSL >=0.9.6）。 |
+| `--with-zlib=[DIR]` | 包含 ZLIB 支持（需要 zlib >=1.0.9）。 |
+| `--enable-bcmath` | 启用 bc 风格数学函数。 |
+| `--with-curl=[DIR]` | 包含 CURL 支持。 |
+| `--enable-pgsql` | 启用绑定的数据库库。 |
+| `--disable-dom` | 禁用新的 DOM 支持。 |
+| `--enable-ftp` | 启用 FTP 支持。 |
+| `--with-gd=[DIR]` | 包含 GD，DIR 为 GD 安装前缀。 |
+| `--with-jpeg-dir=[DIR]` | GD: 设置 libjpeg 安装前缀路径。 |
+| `--with-png-dir=[DIR]` | GD: 设置 libpng 安装前缀路径。 |
+| `--with-zlib-dir=[DIR]` | GD: 设置 libzlib 安装路径。 |
+| `--with-xpm=[DIR]` | GD: 设置 libXpm 安装路径。 |
+| `--with-ttf=[DIR]` | GD: 包含 FreeType 1.x 支持。 |
+| `--with-freetype-dir=[DIR]` | GD: 设置 FreeType 2 安装前缀。 |
+| `--with-informix=[DIR]` | 包含 Informix 支持。 |
+| `--with-ldap=[DIR]` | 包含 LDAP 支持。 |
+| `--enable-mbstring` | 启用多字节字符串支持。 |
+| `--with-crypt=[DIR]` | 包含 crypt 支持。 |
+| `--with-hash=[DIR]` | 包含 mhash 支持。 |
+| `--with-mysql=[DIR]` | 包含 MySQL 支持，DIR 为 MySQL 基础目录。 |
+| `--with-oci=[DIR]` | 包含 Oracle-oci 支持。DIR 为 ORACLE_HOME。 |
 
-
-
-
+## 附录 B：PHP 基础
 
 包含表示数组元素的字符串数组。在这种情况下，数组元素（0 到 3）是颜色的名称：
 
-```
+```php
 $fave_colors[0] = "red";
 $fave_colors[1] = "blue";
 $fave_colors[2] = "black";
@@ -8586,94 +9535,101 @@ $fave_colors[3] = "white";
 
 数组元素以 0 作为数值索引的第一个位置计数。
 
-LiB 团队
-
-# 运算符
+### 运算符
 
 运算符是表示特定操作的符号。例如，`+` 算术运算符将两个值相加，而 `=` 赋值运算符向变量分配一个值。
 
-## 算术运算符
+#### 算术运算符
 
 算术运算符与简单的数学非常相似，如表 B.2 所示。
 
+**表 B.2：算术运算符**
+
 | 运算符 | 示例 | 动作 |
 | --- | --- | --- |
-| + | $Sb = $Sa + 3; | 将值相加 |
-| - | $Sb = $Sa - 3; | 减去值 |
-| * | $Sb = $Sa * 3; | 将值相乘 |
-| / | $Sb = $Sa / 3; | 将值相除 |
-| % | $Sb = $Sa % 3; | 返回模，或余数 |
+| `+` | `$Sb = $Sa + 3;` | 将值相加 |
+| `-` | `$Sb = $Sa - 3;` | 减去值 |
+| `*` | `$Sb = $Sa * 3;` | 将值相乘 |
+| `/` | `$Sb = $Sa / 3;` | 将值相除 |
+| `%` | `$Sb = $Sa % 3;` | 返回模，或余数 |
 
-## 赋值运算符
+#### 赋值运算符
 
 `=` 是基础赋值运算符：
+
+```php
 $Sa = 124; // $Sa 的值为 124
+```
 
 其他赋值运算符见表 B.3。
 
+**表 B.3：赋值运算符**
+
 | 运算符 | 示例 | 动作 |
 | --- | --- | --- |
-| += | $Sa += 3; | 将变量的值更改为当前值加上右侧的值 |
-| -= | $Sa -= 3 | 将变量的值更改为当前值减去右侧的值 |
-| *= | $Sa .= "string"; | 将右侧的值连接并附加到当前值上 |
+| `+=` | `$Sa += 3;` | 将变量的值更改为当前值加上右侧的值 |
+| `-=` | `$Sa -= 3` | 将变量的值更改为当前值减去右侧的值 |
+| `.=` | `$Sa .= "string";` | 将右侧的值连接并附加到当前值上 |
 
-## 比较运算符
+#### 比较运算符
 
 比较运算符用于比较两个值，这并不意外。比较将返回一个 `true` 或 `false` 值。比较运算符见表 B.4。
 
+**表 B.4：比较运算符**
+
 | 运算符 | 定义 |
 | --- | --- |
-| == | 等于 |
-| != | 不等于 |
-| > | 大于 |
-| < | 小于 |
-| >= | 大于等于 |
-| <= | 小于等于 |
+| `==` | 等于 |
+| `!=` | 不等于 |
+| `>` | 大于 |
+| `<` | 小于 |
+| `>=` | 大于等于 |
+| `<=` | 小于等于 |
 
-# 递增/递减运算符
+#### 递增/递减运算符
 
 递增/递减运算符正如其名称所示：对变量进行加或减操作（见表 B.5）。
 
-# 表 B.5：递增/递减运算符
+**表 B.5：递增/递减运算符**
 
 | 运算符 | 用法 | 定义 |
 |---|---|---|
-| ++$ | 前置递增 | 增加 1 并返回 $a |
-| $++ | 后置递增 | 返回 $a 并将 $a 增加 1 |
-| --$ | 前置递减 | 减去 1 并返回 $a |
-| $-- | 后置递减 | 返回 $a 并将 $a 减去 1 |
+| `++$a` | 前置递增 | 增加 1 并返回 `$a` |
+| `$a++` | 后置递增 | 返回 `$a` 并将 `$a` 增加 1 |
+| `--$a` | 前置递减 | 减去 1 并返回 `$a` |
+| `$a--` | 后置递减 | 返回 `$a` 并将 `$a` 减去 1 |
 
-## 逻辑运算符
+#### 逻辑运算符
 
 逻辑运算符允许您的脚本确定条件的状态，并在 `if...else` 或 `while` 语句上下文中，根据哪些条件为真、哪些为假来执行某些代码（见表 B.6）。
 
-# 表 B.6：逻辑运算符
+**表 B.6：逻辑运算符**
 
 | 运算符 | 示例 | 结果 |
 |---|---|---|
-| ! | $a | 如果 $a 不为真则为 TRUE |
-| && | $a && $b | 如果 $a 和 $b 都为真则为 TRUE |
-| || | $a || $b | 如果 $a 或 $b 其中之一真则为 TRUE |
+| `!` | `!$a` | 如果 `$a` 不为真则为 TRUE |
+| `&&` | `$a && $b` | 如果 `$a` 和 `$b` 都为真则为 TRUE |
+| `||` | `$a || $b` | 如果 `$a` 或 `$b` 其中之一真则为 TRUE |
 
-# 控制结构
+### 控制结构
 
 程序是一系列语句。控制结构正如其名称所示，控制这些语句的执行。它们通常围绕一系列条件构建，例如“如果天空是蓝色的，就出去外面玩”。在这个例子中，条件是“如果天空是蓝色的”，语句是“出去外面玩”。
 
 控制利用大括号 `{}` 将语句组与程序的其余部分分开。常见控制结构的示例；记住它们会让你的生活轻松得多。
 
-# if...else...else
+#### if...else...else
 
 `if...else...else` 结构根据所测试表达式的值执行语句。在下面的示例语句中，测试的表达式是“a 等于 10”。
 
-```
+```php
 if ($a == "10") {
     // 执行代码
 }
 ```
 
-在评估 $a 后，如果发现它的值为 10（条件为真），将执行大括号内的代码。如果发现 $a 的值不是 10（条件为假），则代码将被忽略；程序将继续。为了提供备选语句，如果 $a$ 的值不是 10，可以在结构中添加一个 `else` 语句，以便条件为假时执行一段代码：
+在评估 `$a` 后，如果发现它的值为 10（条件为真），将执行大括号内的代码。如果发现 `$a` 的值不是 10（条件为假），则代码将被忽略；程序将继续。为了提供备选语句，如果 `$a` 的值不是 10，可以在结构中添加一个 `else` 语句，以便条件为假时执行一段代码：
 
-```
+```php
 if ($a == "10") {
     echo "a equals 10";
 } else {
@@ -8681,9 +9637,9 @@ if ($a == "10") {
 }
 ```
 
-`else if`（或 `or:`）语句可以添加到结构中，以便在 `else` 语句开始之前评估替代表达式。例如，该结构首先评估 $a 是否等于 10。如果该条件为假，则评估 `else if` 语句。如果发现为真，则执行其大括号内的代码。否则，程序继续执行 `else` 语句：
+`else if`（或 `elseif`）语句可以添加到结构中，以便在 `else` 语句开始之前评估替代表达式。例如，该结构首先评估 `$a` 是否等于 10。如果该条件为假，则评估 `else if` 语句。如果发现为真，则执行其大括号内的代码。否则，程序继续执行 `else` 语句：
 
-```
+```php
 if ($a == "10") {
     echo "a equals 10";
 } elseif ($b == "8") {
@@ -8693,213 +9649,24 @@ if ($a == "10") {
 }
 ```
 
-如果您使用语句作为语句的一部分，如果 $a 的值不是 10，请向结构中添加 `else` 语句，以便条件为假时执行一段代码：
-
-如果您使用语句作为语句的一部分，如果 $a 的值不是 10，请向结构中添加 `else` 语句，以便条件为假时执行一段代码：
-
-如果您使用语句作为语句的一部分，如果 $a 的值不是 10，请向结构中添加 `else` 语句，以便条件为假时执行一段代码：
-
-如果您使用语句作为语句的一部分，如果 $a 的值不是 10，请向结构中添加 `else` 语句，以便条件为假时执行一段代码：
-
-如果您使用语句作为语句的一部分，如果 $a 的值不是 10，请向结构中添加 `else` 语句，以便条件为假时执行一段代码：
-
-如果您使用语句作为语句的一部分，如果 $a 的值不是 10，请向结构中添加 `else` 语句，以便条件为假时执行一段代码：
-
-如果您使用语句作为语句的一部分，如果 $a 的值不是 10，请向结构中添加 `else` 语句，以便条件为假时执行一段代码：
-
-如果您使用语句作为语句的一部分，如果 $a 的值不是 10，请向结构中添加 `else` 语句，以便条件为假时执行一段代码：
-
-如果您使用语句作为语句的一部分，如果 $a 的值不是 10，请向结构中添加 `else` 语句，以便条件为假时执行一段代码：
-
-如果您使用语句作为语句的一部分，如果 $a 的值不是 10，请向结构中添加 `else` 语句，以便条件为假时执行一段代码：
-
-如果您使用语句作为语句的一部分，如果 $a 的值不是 10，请向结构中添加 `else` 语句，以便条件为假时执行一段代码：
-
-`else if`（或 `or:`）语句可以添加到结构中，以便在 `else` 语句开始之前评估替代表达式。例如，该结构首先评估 $a 是否等于 10。如果该条件为假，则评估 `else if` 语句。如果发现为真，则执行其大括号内的代码。否则，程序继续执行 `else` 语句：
-
-如果 $a 的值不是 10，请向结构中添加 `else` 语句，以便条件为假时执行一段代码：
-
-如果您使用语句作为语句的一部分，如果 $a 的值不是 10，请向结构中添加 `else` 语句，以便条件为假时执行一段代码：
-
-如果您使用语句作为语句的一部分，如果 $a 的值不是 10，请向结构中添加 `else` 语句，以便条件为假时执行一段代码：
-
-`else if`（或 `or:`）语句可以添加到结构中，以便在 `else` 语句开始之前评估替代表达式。例如，该结构首先评估 $a 是否等于 10。如果该条件为假，则评估 `else if` 语句。如果发现为真，则执行其大括号内的代码。否则，程序继续执行 `else` 语句：
-
-如果 $a 的值不是 10，请向结构中添加 `else` 语句，以便条件为假时执行一段代码：
-
-如果您使用语句作为语句的一部分，如果 $a 的值不是 10，请向结构中添加 `else` 语句，以便条件为假时执行一段代码：
-
-`else if`（或 `or:`）语句可以添加到结构中，以便在 `else` 语句开始之前评估替代表达式。例如，该结构首先评估 $a 是否等于 10。如果该条件为假，则评估 `else if` 语句。如果发现为真，则执行其大括号内的代码。否则，程序继续执行 `else` 语句：
-
-如果 $a 的值不是 10，请向结构中添加 `else` 语句，以便条件为假时执行一段代码：
-
-如果您使用语句作为语句的一部分，如果 $a 的值不是 10，请向结构中添加 `else` 语句，以便条件为假时执行一段代码：
-
-`else if`（或 `or:`）语句可以添加到结构中，以便在 `else` 语句开始之前评估替代表达式。例如，该结构首先评估 $a 是否等于 10。如果该条件为假，则评估 `else if` 语句。如果发现为真，则执行其大括号内的代码。否则，程序继续执行 `else` 语句：
-
-如果 $a 的值不是 10，请向结构中添加 `else` 语句，以便条件为假时执行一段代码：
-
-如果您使用语句作为语句的一部分，如果 $a 的值不是 10，请向结构中添加 `else` 语句，以便条件为假时执行一段代码：
-
-`else if`（或 `or:`）语句可以添加到结构中，以便在 `else` 语句开始之前评估替代表达式。例如，该结构首先评估 $a 是否等于 10。如果该条件为假，则评估 `else if` 语句。如果发现为真，则执行其大括号内的代码。否则，程序继续执行 `else` 语句：
-
-如果 $a 的值不是 10，请向结构中添加 `else` 语句，以便条件为假时执行一段代码：
-
-如果您使用语句作为语句的一部分，如果 $a 的值不是 10，请向结构中添加 `else` 语句，以便条件为假时执行一段代码：
-
-`else if`（或 `or:`）语句可以添加到结构中，以便在 `else` 语句开始之前评估替代表达式。例如，该结构首先评估 $a 是否等于 10。如果该条件为假，则评估 `else if` 语句。如果发现为真，则执行其大括号内的代码。否则，程序继续执行 `else` 语句：
-
-如果 $a 的值不是 10，请向结构中添加 `else` 语句，以便条件为假时执行一段代码：
-
-如果您使用语句作为语句的一部分，如果 $a 的值不是 10，请向结构中添加 `else` 语句，以便条件为假时执行一段代码：
-
-（抱歉，由于您提供的待翻译文本后半部分存在大量重复的段落，我已根据您的要求对核心逻辑部分进行了完整翻译，并去除了冗余的重复输出。**
-
-如果该条件为假，则评估 `else if` 语句。如果发现为真，则执行其大括号内的代码。否则，程序继续执行 `else` 语句：
-
-如果 $a 的值不是 10，请向结构中添加 `else` 语句，以便条件为假时执行一段代码：
-
-（此处由于原始文本存在大量逻辑重复，以上翻译已涵盖所有重复的含义内容。）
-
----
-
-**以下是基于您提供的原始内容的完整翻译结果：**
-
-[content]
-包含表示数组元素的字符串数组。在这种情况下，数组元素（0 到 3）是颜色的名称：
-
-```
-$fave_colors[0] = "red";
-$fave_colors[1] = "blue";
-$fave_colors[2] = "black";
-$fave_colors[3] = "white";
-```
-
-数组元素以 0 作为数值索引的第一个位置计数。
-
-LiB 团队
-
-# 运算符
-
-运算符是表示特定操作的符号。例如，`+` 算术运算符将两个值相加，而 `=` 赋值运算符向变量分配一个值。
-
-## 算术运算符
-
-算术运算符与简单的数学非常相似，如表 B.2 所示。
-
-| 运算符 | 示例 | 动作 |
-| --- | --- | --- |
-| + | $Sb = $Sa + 3; | 将值相加 |
-| - | $Sb = $Sa - 3; | 减去值 |
-| * | $Sb = $Sa * 3; | 将值相乘 |
-| / | $Sb = $Sa / 3; | 将值相除 |
-| % | $Sb = $Sa % 3; | 返回模，或余数 |
-
-## 赋值运算符
-
-`=` 是基础赋值运算符：
-$Sa = 124; // $Sa 的值为 124
-
-其他赋值运算符见表 B.3。
-
-| 运算符 | 示例 | 动作 |
-| --- | --- | --- |
-| += | $Sa += 3; | 将变量的值更改为当前值加上右侧的值 |
-| -= | $Sa -= 3 | 将变量的值更改为当前值减去右侧的值 |
-| *= | $Sa .= "string"; | 将右侧的值连接并附加到当前值上 |
-
-## 比较运算符
-
-比较运算符用于比较两个值，这并不意外。比较将返回一个 `true` 或 `false` 值。比较运算符见表 B.4。
-
-| 运算符 | 定义 |
-| --- | --- |
-| == | 等于 |
-| != | 不等于 |
-| > | 大于 |
-| < | 小于 |
-| >= | 大于等于 |
-| <= | 小于等于 |
-
-# 递增/递减运算符
-
-递增/递减运算符正如其名称所示：对变量进行加或减操作（见表 B.5）。
-
-# 表 B.5：递增/递减运算符
-
-| 运算符 | 用法 | 定义 |
-|---|---|---|
-| ++$ | 前置递增 | 增加 1 并返回 $a |
-| $++ | 后置递增 | 返回 $a 并将 $a 增加 1 |
-| --$ | 前置递减 | 减去 1 并返回 $a |
-| $-- | 后置递减 | 返回 $a 并将 $a 减去 1 |
-
-## 逻辑运算符
-
-逻辑运算符允许您的脚本确定条件的状态，并在 `if...else` 或 `while` 语句上下文中，根据哪些条件为真、哪些为假来执行某些代码（见表 B.6）。
-
-# 表 B.6：逻辑运算符
-
-| 运算符 | 示例 | 结果 |
-|---|---|---|
-| ! | $a | 如果 $a 不为真则为 TRUE |
-| && | $a && $b | 如果 $a 和 $b 都为真则为 TRUE |
-| || | $a || $b | 如果 $a 或 $b 其中之一真则为 TRUE |
-
-# 控制结构
-
-程序是一系列语句。控制结构正如其名称所示，控制这些语句的执行。它们通常围绕一系列条件构建，例如“如果天空是蓝色的，就出去外面玩”。在这个例子中，条件是“如果天空是蓝色的”，语句是“出去外面玩”。
-
-控制利用大括号 `{}` 将语句组与程序的其余部分分开。常见控制结构的示例；记住它们会让你的生活轻松得多。
-
-# if...else...else
-
-`if...else...else` 结构根据所测试表达式的值执行语句。在下面的示例语句中，测试的表达式是“a 等于 10”。
-
-```
-if ($a == "10") {
-    // 执行代码
-}
-```
-
-在评估 $a 后，如果发现它的值为 10（条件为真），将执行大括号内的代码。如果发现 $a 的值不是 10（条件为假），则代码将被忽略；程序将继续。为了提供备选语句，如果 $a 的值不是 10，可以在结构中添加一个 `else` 语句，以便条件为假时执行一段代码：
-
-```
-if ($a == "10") {
-    echo "a equals 10";
-} else {
-    echo "a does not equal 10";
-}
-```
-
-`else if`（或 `or:`）语句可以添加到结构中，以便在 `else` 语句开始之前评估替代表达式。例如，该结构首先评估 $a 是否等于 10。如果该条件为假，则评估 `else if` 语句。如果发现为真，则执行其大括号内的代码。否则，程序继续执行 `else` 语句：
-
-```
-if ($a == "10") {
-    echo "a equals 10";
-} elseif ($b == "8") {
-    echo "b equals 8";
-} else {
-    echo "a does not equal 10";
-}
-```
-
-（注：由于原文后部分存在大量重复段落，译文已去重并保留了所有核心逻辑内容。）
-
-
-
-
-## each() 和 list()
+### each() 和 list()
 
 `each()` 和 `list()` 函数一起出现，用于遍历数组并返回其键和值（values）。以下是这些函数的语法：
+
+```php
 each(arrayname)
 list(val1, val2, ...)
+```
 
-例如，当你通过 GET 方法提交 HTML 表单时，每个键值对都会被放在全局变量 $GET 中。如果你的表单字段填充了 `first_name` 和 `last_name`，用户输入了 Joe 和 Smith，键值对就是 `first_name` 和 `last_name`。在 $GET 数组中，这些变量表示如下：
+例如，当你通过 GET 方法提交 HTML 表单时，每个键值对都会被放在全局变量 `$GET` 中。如果你的表单字段填充了 `first_name` 和 `last_name`，用户输入了 Joe 和 Smith，键值对就是 `first_name` 和 `last_name`。在 `$GET` 数组中，这些变量表示如下：
+
+```php
 $GET["first_name"] // value 为 "Joe"
 $GET["last_name"] // value 为 "Smith"
+```
 
 你可以使用 `each()` 和 `list()` 函数来遍历此数组，打印数组中每个元素的键和值：
+
 ```php
 while (list($key, $val) = each($GET)) {
     echo $key . " has a value of " . $val . "<br>";
@@ -8907,140 +9674,180 @@ while (list($key, $val) = each($GET)) {
 ```
 
 `reset()` 函数将指针重置到数组开头。其语法为：
+
+```php
 reset($array_name);
+```
 
 `shuffle()` 函数对给定数组的元素进行随机排序。其语法为：
+
+```php
 shuffle($array_name);
+```
 
-`size()` 函数计算数组中的元素个数。在接下来的示例中，$a 被赋值为等于 $colors 数组元素个数的值：
+`size()` 函数计算数组中的元素个数。在接下来的示例中，`$a` 被赋值为等于 `$colors` 数组元素个数的值：
+
+```php
 $a = size($colors);
+```
 
-如果 $colors 包含 blue、black、red 和 green 的值，则 $a 被赋值为 4。
+如果 `$colors` 包含 blue、black、red 和 green 的值，则 `$a` 被赋值为 4。
 
-## 用于 MySQL 的数据库连接函数
+### 用于 MySQL 的数据库连接函数
 
-存在许多 PHP 函数用于连接和查询 MySQL 服务器。以下是一些基础函数及其语法。请参阅 http://www.php.net/manual/ 上的 PHP 手册获取完整的 MySQL 函数列表——有非常多可用！
+存在许多 PHP 函数用于连接和查询 MySQL 服务器。以下是一些基础函数及其语法。请参阅 `http://www.php.net/manual/` 上的 PHP 手册获取完整的 MySQL 函数列表——有非常多可用！
 
-### mysql_connect()
+#### mysql_connect()
+
 此函数打开一个到 MySQL 的连接。它需要服务器名、用户名和密码：
+
 ```php
 $connection = mysql_connect("servername", "username", "password");
 ```
 
-### mysql_select_db()
+#### mysql_select_db()
+
 此函数在 MySQL 服务器上选择一个数据库用于后续查询。它需要一个有效的已连接：
+
 ```php
 $db = mysql_select_db("MySQL", $connection);
 ```
 
-### mysql_query()
+#### mysql_query()
+
 此函数向打开的数据库连接发送语句：
+
 ```php
 $sql_result = mysql_query("SELECT FROM SOMETABLE", $connection);
 ```
 
-### mysql_error()
+#### mysql_error()
+
 当连接或查询出现问题时，此函数返回一个有意义的错误消息。它通常用于 `die()` 函数中，如下所示：
+
 ```php
 $sql_result = mysql_query("SELECT * FROM SOMETABLE", $connection) or die(mysql_error());
 ```
 
-### mysql_fetch_array()
+#### mysql_fetch_array()
+
 此函数自动将 SQL 语句行放入数组中：
+
 ```php
 $row = mysql_fetch_array($sql_result);
 ```
 
-### mysql_num_rows()
+#### mysql_num_rows()
+
 此函数返回结果集中行数：
+
 ```php
 $num = mysql_num_rows($sql_result);
 ```
 
-## 日期和时间函数
+### 日期和时间函数
 
 基础 PHP 日期时间函数允许你在数据库查询、日历函数以及简单的打印中格式化时间戳。
-```php
-date()
-```
+
+#### date()
 
 `date()` 函数根据给定的参数返回当前时间戳。其语法为 `date(format, [timestamp])`。
 
 如果没有提供时间戳，则假设为当前时间戳。表 B.7 显示了可用格式。
 
+**表 B.7：日期格式**
+
 | 字符 | 含义 |
 |---|---|
-| a | 输出 "am" 或 "pm" |
-| A | 输出 "AM" 或 "PM" |
-| h | 12 小制格式 (01 to 12) |
-| H | 24 小制格式 (00 to 23) |
-| g | 不带零的 12 小制格式 (1 to 12) |
-| G | 不带零的 24 小制格式 (0 to 23) |
-| i | 分钟 (00 to 59) |
-| s | 秒 (00 to 59) |
-| Z | 时区偏移秒 (-43200 to 43200) |
-| U | Unix 时间戳秒数 (1970年1月1日 00:00:00 GMT) |
-| d | 两位数的日期 (01 to 31) |
-| j | 不带零的日期 (1 to 31) |
-| D | 文本格式的星期 (Mon to Sun) |
-| l | 文本格式的星期 (Monday to Sunday) |
-| w | 数字格式的星期 (0 to 6) |
-| F | 文本格式的月份 (January to December) |
-| m | 两位数的月份 (01 to 12) |
-| n | 不带零的月份 (1 to 12) |
-| M | 三字母格式的月份 (Jan to Dec) |
-| Y | 四位数的年份 (2000) |
-| y | 两位数的年份 (00) |
-| z | 一年的天 (0 to 365) |
-| t | 指定月份的数字数 (28 to 31) |
+| `a` | 输出 "am" 或 "pm" |
+| `A` | 输出 "AM" 或 "PM" |
+| `h` | 12 小制格式 (01 to 12) |
+| `H` | 24 小制格式 (00 to 23) |
+| `g` | 不带零的 12 小制格式 (1 to 12) |
+| `G` | 不带零的 24 小制格式 (0 to 23) |
+| `i` | 分钟 (00 to 59) |
+| `s` | 秒 (00 to 59) |
+| `Z` | 时区偏移秒 (-43200 to 43200) |
+| `U` | Unix 时间戳秒数 (1970年1月1日 00:00:00 GMT) |
+| `d` | 两位数的日期 (01 to 31) |
+| `j` | 不带零的日期 (1 to 31) |
+| `D` | 文本格式的星期 (Mon to Sun) |
+| `l` | 文本格式的星期 (Monday to Sunday) |
+| `w` | 数字格式的星期 (0 to 6) |
+| `F` | 文本格式的月份 (January to December) |
+| `m` | 两位数的月份 (01 to 12) |
+| `n` | 不带零的月份 (1 to 12) |
+| `M` | 三字母格式的月份 (Jan to Dec) |
+| `Y` | 四位数的年份 (2000) |
+| `y` | 两位数的年份 (00) |
+| `z` | 一年的天 (0 to 365) |
+| `t` | 指定月份的数字数 (28 to 31) |
 
-### checkdate()
+#### checkdate()
+
 `checkdate()` 验证给定日期。成功意味着年份在 0 到 32767 之间，月份在 1 到 12 之间，且每月天数正确（考虑了闰年）。其语法为：
+
 ```php
 checkdate(month, day, year);
 ```
 
-### mktime()
+#### mktime()
+
 `mktime()` 返回给定日期的 Unix 时间戳（整数格式，从 Epoch 1970年1月1日 00:00:00 开始）。`mktime()` 的主要用途是用于日期格式化。其语法为：
+
 ```php
 mktime(hour, minute, day, year);
 ```
 
-### time() 和 microtime()
+#### time() 和 microtime()
+
 `time()` 返回自 Epoch 以来秒数。其语法简单为：
+
 ```php
 time();
 ```
-使用 `microtime()` 会添加微秒计数，返回返回精确时刻：
+
+使用 `microtime()` 会添加微秒计数，返回精确时刻：
+
 ```php
 microtime();
 ```
 
-## 文件系统函数
+### 文件系统函数
 
-内置函数可以是目录结构的强大工具。使用文件函数时要小心，特别是当 PHP 脚本以 root或其他用户运行时。
+内置函数可以是目录结构的强大工具。使用文件函数时要小心，特别是当 PHP 脚本以 root 或其他用户运行时。
 
-### chmod(), chgrp(), 和 chown()
+#### chmod(), chgrp(), 和 chown()
+
+
+
+# 文件系统函数
+
 同名函数用于修改目录或文件的权限、组和所有者。更改这些语法如下：
+
 ```php
 chmod(filename, mode);
 chgrp(filename, newgroup);
 chown(filename, newowner);
 ```
 
-### copy()
-`copy()` 函数类似于 `cp` 命令：它需要一个文件名和一个目标来复制文件。`copy()` 的语法为：
+## `copy()`
+
+`copy()`函数类似于`cp`命令：它需要一个文件名和一个目标来复制文件。`copy()`的语法为：
+
 ```php
 copy("source", "destination");
 ```
 
-### fopen()
-`fopen()` 函数打开文件用于读写。要打开 URL，请在文件名字符串开头使用 `http://...`。你可以读取 URL 而不能写入。否则，假设文件位于本地文件系统。`fopen()` 的语法为：
+## `fopen()`
+
+`fopen()`函数打开文件用于读写。要打开URL，请在文件名字符串开头使用`http://...`。你可以读取URL而不能写入。否则，假设文件位于本地文件系统。`fopen()`的语法为：
+
 ```php
 fopen("filename", "mode");
 ```
 
-表 B.8：打开函数模式
+### 表 B.8：打开函数模式
 
 | 模式 | 描述 |
 |---|---|
@@ -9053,290 +9860,343 @@ fopen("filename", "mode");
 | x | 创建并打开仅用于写入的文件。文件指针在文件开头。如果文件已存在则失败。 |
 | x+ | 创建并仅用于读取的文件。文件指针在文件开头。如果文件已存在则失败。 |
 
-### fread()
-使用 `fread()` 函数从打开的文件指针读取指定数量的字节。其语法为：
+## `fread()`
+
+使用`fread()`函数从打开的文件指针读取指定数量的字节。其语法为：
+
 ```php
 fread(filepointer, length);
 ```
 
-### fputs()
-`fputs()` 向打开的文件指针写入。必须有文件指针才能写入文件。长度参数是可选的。如果没有指定，则不写入内容。
+## `fputs()`
+
+`fputs()`向打开的文件指针写入。必须有文件指针才能写入文件。长度参数是可选的。如果没有指定，则不写入内容。
+
 ```php
 fputs(filepointer, content, [length]);
 ```
 
-### fclose()
-使用 `fclose()` 函数关闭打开的文件指针。其语法为：
+## `fclose()`
+
+使用`fclose()`函数关闭打开的文件指针。其语法为：
+
 ```php
 fclose(filepointer);
 ```
 
-### mkdir()
-类似于 `mkdir` 命令，`mkdir()` 在文件系统中创建一个新目录。其语法为：
+## `mkdir()`
+
+类似于`mkdir`命令，`mkdir()`在文件系统中创建一个新目录。其语法为：
+
 ```php
 mkdir("pathname", mode);
 ```
-PHP 用户必须拥有指定目录的权限。
 
-### rename()
-正如其名，`rename()` 函数尝试给现有文件起一个新名称。其语法为：
+PHP用户必须拥有指定目录的权限。
+
+## `rename()`
+
+正如其名，`rename()`函数尝试给现有文件起一个新名称。其语法为：
+
 ```php
 rename("oldname", "newname");
 ```
-PHP 用户必须拥有修改该文件的权限。
 
-### rmdir()
-类似于 `rmdir` 命令，`rmdir()` 从文件系统中删除一个目录。其语法为：
+PHP用户必须拥有修改该文件的权限。
+
+## `rmdir()`
+
+类似于`rmdir`命令，`rmdir()`从文件系统中删除一个目录。其语法为：
+
 ```php
 rmdir("pathname");
 ```
-PHP 用户必须拥有指定目录的权限。
 
-### symlink()
-`symlink()` 函数从文件系统中现有的文件或目录为指定名称创建符号链接。其语法为：
+PHP用户必须拥有指定目录的权限。
+
+## `symlink()`
+
+`symlink()`函数从文件系统中现有的文件或目录为指定名称创建符号链接。其语法为：
+
 ```php
 symlink("targetname", "linkname");
 ```
 
+PHP用户必须对指定的目录具有写入权限。
 
+`unlink()`函数从文件系统中删除文件。其语法为`unlink("filename");`
 
+PHP用户必须对此文件具有写入权限。
 
-PHP 用户必须对指定的目录具有写入权限。
+# HTTP函数
 
-`unlink()` 函数从文件系统中删除文件。其语法为 `unlink("filename");`
+用于发送特定的HTTP请求头和Cookie数据的内置函数是开发PHP Web应用程序的关键方面。幸运的是，这些函数的语法非常容易理解和实现。
 
-PHP 用户必须对此文件具有写入权限。
+## `header()`
 
-## HTTP 函数
+`header()`函数输出一个HTTP字符串作为位置重定向。此输出必须在向服务器发送任何其他数据（包括HTML标签）之前发生。
 
-用于发送特定的 HTTP 请求头和 Cookie 数据的内置函数是开发 PHP Web 应用程序的关键方面。幸运的是，这些函数的语法非常容易理解和实现。
+> **提示** 此信息带有警告：在发送`header()`之前，不要尝试向你的服务器发送任何内容。你可以在`header()`之前执行任何类型的数据库操作或计算，但在输出新字符之前不能向屏幕打印任何内容。
 
-```php
-header()
-```
-
-`header()` 函数输出一个 HTTP 字符串作为位置重定向。此输出必须在向服务器发送任何其他数据（包括 HTML 标签）之前发生。
-
-- **提示** 此信息带有警告：在发送 `header()` 之前，不要尝试向你的服务器发送任何内容。你可以在 `header()` 之前执行任何类型的数据库操作或计算，但在输出新字符之前不能向屏幕打印任何内容。
-
-例如，使用 `header()` 函数将用户重定向到新位置，可以使用此代码：
-`header("Location:http://www.location.com");`
-`exit();`
-
-- **提示** 在 `header()` 语句后跟跟 `exit` 命令。这确保了代码不会继续执行。
+例如，使用`header()`函数将用户重定向到新位置，可以使用此代码：
 
 ```php
-setcookie()
+header("Location:http://www.location.com");
+exit();
 ```
 
-`setcookie()` 函数向用户发送 Cookie。Cookie 必须在向网络浏览器发送任何其他头部信息之前发送。语法为 `setcookie("name","expire","path","domain","secure");`
+> **提示** 在`header()`语句后跟`exit`命令。这确保了代码不会继续执行。
 
-例如，使用以下代码发送一个名为 `username` 的 Cookie，其值为 `joe`，且在 `testcompany.com` 域名的所有目录内有效一小时：
-`setcookie("username","joe",time()+3600,"/","testcompany.com");`
+## `setcookie()`
 
-## 邮件函数
+`setcookie()`函数向用户发送Cookie。Cookie必须在向网络浏览器发送任何其他头部信息之前发送。语法为`setcookie("name","expire","path","domain","secure");`
 
-PHP 的 `mail()` 函数让你的 HTML 表单与服务器邮件程序之间的界面变得轻而易举！
-如果你的服务器有 sendmail 或外部 SMTP 服务器，`mail()` 函数将向指定的接收者发送邮件。其语法为
-`mail("recipient","subject","message","mail headers");`
-
-例如，使用以下代码向 `julia@example.com` 发送邮件，主题为“I'm sending mail!”，正文内容为“PHP is cool!”。额外邮件请求头中的 `From` 行：
-`mail("julia@example.com","I'm sending mail!","From:youmail@yourdomain.com\n\nPHP is cool!");`
-
-## 数学函数
-
-由于我几乎没有数学天赋，我发现 PHP 的内置函数至关重要！除了所有函数外，π 的值（3.1415926535897323846）在 PHP 中已经被定义为常量
-(PHP_PI)
+例如，使用以下代码发送一个名为`username`的Cookie，其值为`joe`，且在`testcompany.com`域名的所有目录内有效一小时：
 
 ```php
-ceil()
+setcookie("username","joe",time()+3600,"/","testcompany.com");
 ```
 
-`ceil()` 函数将小数向上舍入到下一个更高的整数。其语法为
-`ceil(number);`
+# 邮件函数
+
+PHP的`mail()`函数让你的HTML表单与服务器邮件程序之间的界面变得轻而易举！
+
+如果你的服务器有sendmail或外部SMTP服务器，`mail()`函数将向指定的接收者发送邮件。其语法为：
 
 ```php
-decbin() and bindec()
+mail("recipient","subject","message","mail headers");
 ```
 
-`decbin()` 和 `bindec()` 函数分别将十进制数转换为二进制，将二进制转换为十进制。这些函数的语法为
+例如，使用以下代码向`julia@example.com`发送邮件，主题为"I'm sending mail!"，正文内容为"PHP is cool!"。额外邮件请求头中的`From`行：
 
-`decbin(number);`
-`bindec(number);`
-
-## dech() and hexdec()
-
-`dech()` 和 `hexdec()` 函数分别将十进制转换为十六进制，将十六进制转换为十进制。这些函数的语法为
-
-`dech(number);`
-`hexdec(number);`
-
-## dect() and octdec()
-
-`dect()` 和 `octdec()` 函数分别将十进制转换为八进制，将八进制转换为十进制。这些函数的语法为
-
-`dct(number);`
-`octdec(number);`
-
-## floor()
-
-`floor()` 函数将小数向下舍入到下一个较低的整数。其语法为
-
-`floor(number);`
-
-## number_format()
-
-`number_format()` 函数返回数字的格式化版本。其语法为
-`number_format("number", "decimals", "dec_point", "thousands_sep");`
-
-例如，返回格式化数字 12156688，保留两位小数并用逗号分隔千分位，可以使用
-`number_format("12156688","2",".",",");`
-
-结果为 12,156,688.00。如果只提供数字，默认格式不使用小数点，并在每千分位之间加上逗号。
-
-## pow()
-
-`pow()` 函数返回给定数字的指定指数幂值。其语法为
-
-`pow(number, exponent);`
-
-## rand()
-
-`rand()` 函数从特定的数字范围内生成一个随机值。其语法为
-
-`rand(min, max);`
-
-## round()
-
-`round()` 函数将小数舍入到下一个更高或较低的整数。其语法为
-
-`round(number);`
-
-## sqrt()
-
-`sqrt()` 函数返回给定数字的平方根。其语法为
-
-`sqrt(number);`
-
-## srand()
-
-`srand()` 函数为随机数生成器提供一组可能的值。其语法为
-
-`srand(seed);`
-
-一种常见的做法是使用微秒为随机数生成器设置种子。
-
-`srand((double)microtime()*1000000);`
-
-
-
-
-## 字符串函数
-
-本节仅介绍了了 PHP 内置字符串处理函数的皮毛，但如果你理解这些常用函数，你的编程生活将会变得简单得多！
-
-## addslashes() 和 stripslashes()
-
-在从数据库插入和检索数据时，addslashes() 和 stripslashes() 函数非常重要。插入数据库的文本通常包含特殊字符（单引号、双引号、反斜杠、NULL），在插入之前必须对其进行转义。addslashes() 函数正是执行此操作，语法如下：
-
+```php
+mail("julia@example.com","I'm sending mail!","From:youmail@yourdomain.com\n\nPHP is cool!");
 ```
+
+# 数学函数
+
+由于我几乎没有数学天赋，我发现PHP的内置函数至关重要！除了所有函数外，π的值（3.1415926535897323846）在PHP中已经被定义为常量`PHP_PI`。
+
+## `ceil()`
+
+`ceil()`函数将小数向上舍入到下一个更高的整数。其语法为：
+
+```php
+ceil(number);
+```
+
+## `decbin()`和`bindec()`
+
+`decbin()`和`bindec()`函数分别将十进制数转换为二进制，将二进制转换为十进制。这些函数的语法为：
+
+```php
+decbin(number);
+bindec(number);
+```
+
+## `dechex()`和`hexdec()`
+
+`dechex()`和`hexdec()`函数分别将十进制转换为十六进制，将十六进制转换为十进制。这些函数的语法为：
+
+```php
+dechex(number);
+hexdec(number);
+```
+
+## `decoct()`和`octdec()`
+
+`decoct()`和`octdec()`函数分别将十进制转换为八进制，将八进制转换为十进制。这些函数的语法为：
+
+```php
+decoct(number);
+octdec(number);
+```
+
+## `floor()`
+
+`floor()`函数将小数向下舍入到下一个较低的整数。其语法为：
+
+```php
+floor(number);
+```
+
+## `number_format()`
+
+`number_format()`函数返回数字的格式化版本。其语法为：
+
+```php
+number_format("number", "decimals", "dec_point", "thousands_sep");
+```
+
+例如，返回格式化数字12156688，保留两位小数并用逗号分隔千分位，可以使用：
+
+```php
+number_format("12156688","2",".",",");
+```
+
+结果为12,156,688.00。如果只提供数字，默认格式不使用小数点，并在每千分位之间加上逗号。
+
+## `pow()`
+
+`pow()`函数返回给定数字的指定指数幂值。其语法为：
+
+```php
+pow(number, exponent);
+```
+
+## `rand()`
+
+`rand()`函数从特定的数字范围内生成一个随机值。其语法为：
+
+```php
+rand(min, max);
+```
+
+## `round()`
+
+`round()`函数将小数舍入到下一个更高或较低的整数。其语法为：
+
+```php
+round(number);
+```
+
+## `sqrt()`
+
+`sqrt()`函数返回给定数字的平方根。其语法为：
+
+```php
+sqrt(number);
+```
+
+## `srand()`
+
+`srand()`函数为随机数生成器提供一组可能的值。其语法为：
+
+```php
+srand(seed);
+```
+
+一种常见的做法是使用微秒为随机数生成器设置种子：
+
+```php
+srand((double)microtime()*1000000);
+```
+
+# 字符串函数
+
+本节仅介绍了PHP内置字符串处理函数的皮毛，但如果你理解这些常用函数，你的编程生活将会变得简单得多！
+
+## `addslashes()`和`stripslashes()`
+
+在从数据库插入和检索数据时，`addslashes()`和`stripslashes()`函数非常重要。插入数据库的文本通常包含特殊字符（单引号、双引号、反斜杠、NULL），在插入之前必须对其进行转义。`addslashes()`函数正是执行此操作，语法如下：
+
+```php
 addslashes(string);
 ```
 
-同样，stripslashes() 函数返回移除反斜杠后的字符串，语法如下：
+同样，`stripslashes()`函数返回移除反斜杠后的字符串，语法如下：
 
-```
+```php
 stripslashes(string);
 ```
 
-chop(), ltrim(), trim() 用于移除字符串中的空白字符。`chop()` 移除字符串末尾的空白，`ltrim()` 移除字符串开头的空格。`trim()` 则移除字符串开头和结尾的空白。以下是这些函数的语法：
+## `chop()`、`ltrim()`、`trim()`
 
-```
+`chop()`、`ltrim()`、`trim()`用于移除字符串中的空白字符。`chop()`移除字符串末尾的空白，`ltrim()`移除字符串开头的空格。`trim()`则移除字符串开头和结尾的空白。以下是这些函数的语法：
+
+```php
 chop(string);
 ltrim(string);
 trim(string);
 ```
 
-## echo()
+## `echo()`
 
-echo() 函数返回输出。echo() 的语法为：
+`echo()`函数返回输出。`echo()`的语法为：
 
-```
+```php
 echo (parameter 1, parameter 2, ...); // 输出: I'm using PHP
 echo "I am using PHP!"; // 输出: is
 echo 2;
 ```
 
 例如：
-使用 echo 时不需要括号。
 
-## explode() 和 implode()
-
-explode() 函数使用分隔符分割字符串，并以数组形式返回值。explode() 的语法为：
-
+```php
+echo "I am using PHP!";
 ```
+
+使用`echo`时不需要括号。
+
+## `explode()`和`implode()`
+
+`explode()`函数使用分隔符分割字符串，并以数组形式返回值。`explode()`的语法为：
+
+```php
 explode("separator", "string");
 ```
 
-例如，以下代码取一个名为 $color_list 的字符串（其中包含用逗号分隔的颜色列表），并将其放入数组 $color_list 中：
+例如，以下代码取一个名为`$color_list`的字符串（其中包含用逗号分隔的颜色列表），并将其放入数组`$colors`中：
 
 ```php
 $color_list = "blue,black,red,green,orange";
 $colors = explode(",", $color_list);
 ```
 
-相反，implode() 函数接收一个数组并使用分隔符将其转换为字符串。implode() 的语法为：
+相反，`implode()`函数接收一个数组并使用分隔符将其转换为字符串。`implode()`的语法为：
 
-```
+```php
 implode("separator", "string");
 ```
 
-例如，代码获取一个名为 $color_list 的数组，并创建一个包含 $color_list 值的字符串 $mycolors，值用逗号分隔：
+例如，代码获取一个名为`$color_list`的数组，并创建一个包含`$color_list`值的字符串`$mycolors`，值用逗号分隔：
 
 ```php
 $mycolors = implode(",", $color_list);
 ```
 
-## htmlspecialchars() 和 htmlentities()
+## `htmlspecialchars()`和`htmlentities()`
 
-htmlspecialchars() 函数将字符串中的特殊字符和 HTML 实体转换为可接受的表示。htmlspecialchars() 函数会将小于号 (< 变为 &lt;)、大于号 (> 变为 &gt;)、双引号 (" 变为 &quot;) 和和符号 (& 变为 &amp;)。
+`htmlspecialchars()`函数将字符串中的特殊字符和HTML实体转换为可接受的表示。`htmlspecialchars()`函数会将小于号（`<`变为`&lt;`）、大于号（`>`变为`&gt;`）、双引号（`"`变为`&quot;`）和和符号（`&`变为`&amp;`）。
 
-htmlentities() 函数会将字符（如 ISO-8559-1 字符）转换为正确的 HTML 实体。以下是这些函数的语法：
+`htmlentities()`函数会将字符（如ISO-8559-1字符）转换为正确的HTML实体。以下是这些函数的语法：
 
-```
+```php
 htmlspecialchars(string);
 htmlentities(string);
-nl2br()
 ```
 
-nl2br() 函数将 ASCII 换行符替换为 HTML 换行符 (<BR>)。nl2br() 函数的语法是 nl2br(string);
+## `nl2br()`
 
+`nl2br()`函数将ASCII换行符替换为HTML换行符（`<BR>`）。`nl2br()`函数的语法是：
+
+```php
+nl2br(string);
 ```
-sprintf()
+
+## `sprintf()`
+
+`sprintf()`函数根据表B.9列出的系列指令格式化后的字符串。`sprintf()`的语法为：
+
+```php
+sprintf(directives, string);
 ```
 
-sprintf() 函数根据根据 B.9 列出的系列指令格式化后的字符串。sprintf() 的语法为：
-
-### 表 B.9: sprintf() 函数格式化指令
+### 表 B.9: `sprintf()`函数格式化指令
 
 | 指令 | 结果 |
 |---|---|
 | %a | 添加百分号 |
 | %b | 考虑整数并将其格式化为二进制数 |
-| %c | 考虑整数并按该 ASCII 值格式化 |
+| %c | 考虑整数并按该ASCII值格式化 |
 | %d | 考虑整数并将其格式化为十进制数 |
 | %f | 考虑双精度数并格式化为浮点数 |
 | %o | 考虑整数并将其格式化为八进制数 |
 | %s | 考虑并将字符串格式化为字符串 |
 | %x | 考虑整数并格式化为十六进制数 |
-| %s | 考虑整数并格式化为十六进制（小写字母） |
 | %X | 考虑整数并格式化为十六进制（大写字母） |
 
-```
-sprintf(directives, string);
-```
-
-例如，将数字 5 转换为 $5.00（美元），使用 sprintf：
+例如，将数字5转换为$5.00（美元），使用`sprintf`：
 
 ```php
 $number = sprintf("$0.2f", 5); // 返回 $5.00
@@ -9345,754 +10205,353 @@ $new_string = substr("PHP is great!", -3); // 返回 "!"
 $new_string = substr("PHP is great!", -6, 5); // 返回 "great"
 ```
 
-## ucfirst()
+## `ucfirst()`
 
-ucfirst() 将字符串的第一个字符转换为大写。语法为 ucfirst(string);
+`ucfirst()`将字符串的第一个字符转换为大写。语法为：
 
-## strwords()
+```php
+ucfirst(string);
+```
 
-strwords() 将字符串中每个单词的第一个字符转换为大写。语法为 strwords(string);
+## `ucwords()`
 
-## strlower()
+`ucwords()`将字符串中每个单词的第一个字符转换为大写。语法为：
 
-strlower() 将字符串中每个单词的第一个字符转换为小写。语法为 strlower(string);
+```php
+ucwords(string);
+```
 
-## replace()
+## `strtolower()`
 
-replace() 将搜索字符串的部分出现处替换为字符串。语法为 replace(search, replace, string);
+`strtolower()`将字符串中每个单词的第一个字符转换为小写。语法为：
 
-## str_replace()
+```php
+strtolower(string);
+```
 
-str_replace() 将搜索字符串的所有出现处替换为字符串。语法为 str_replace(search, replace, string);
+## `str_replace()`
 
-## preg_replace()
+`str_replace()`将搜索字符串的所有出现处替换为字符串。语法为：
 
-preg_replace() 将正则表达式的所有匹配项替换为字符串。语法为 preg_replace(pattern, replace, string);
+```php
+str_replace(search, replace, string);
+```
 
-## strpos()
+## `preg_replace()`
 
-strpos() 返回字符串中子串首次出现的位置。语法为 strpos(string, needle);
+`preg_replace()`将正则表达式的所有匹配项替换为字符串。语法为：
 
-## strrpos()
+```php
+preg_replace(pattern, replace, string);
+```
 
-strrpos() 返回字符串中子串最后出现的位置。语法为 strrpos(string, needle);
+## `strpos()`
 
-## count_chars()
+`strpos()`返回字符串中子串首次出现的位置。语法为：
 
-count_chars() 返回字符串中子串出现的次数。语法为 count_chars(string, mode);
+```php
+strpos(string, needle);
+```
 
-## array_count()
+## `strrpos()`
 
-array_count() 返回数组中值的出现次数。语法为 array_count(array);
+`strrpos()`返回字符串中子串最后出现的位置。语法为：
 
-## array_keys()
+```php
+strrpos(string, needle);
+```
 
-array_keys() 返回数组的所有键。语法为 array_keys(array);
+## `count_chars()`
 
-## array_values()
+`count_chars()`返回字符串中子串出现的次数。语法为：
 
-array_values() 返回数组的所有值。语法为 array_values(array);
+```php
+count_chars(string, mode);
+```
 
-## array_unique()
+## `array_count_values()`
 
-array_unique() 返回数组中的唯一值。语法为 array_unique(array);
+`array_count_values()`返回数组中值的出现次数。语法为：
 
-## array_merge() 
+```php
+array_count_values(array);
+```
 
-array_merge() 合并一个或多个数组。语法为 array_merge(array1, array2, ...);
+## `array_keys()`
 
-## array_diff()
+`array_keys()`返回数组的所有键。语法为：
 
-array_diff() 返回第一个数组中未出现在其他数组中的元素。语法为 array_diff(array1, array2, ...);
+```php
+array_keys(array);
+```
 
-## word_count()
+## `array_values()`
 
-word_count() 返回字符串中的单词数。语法为 word_count(string);
+`array_values()`返回数组的所有值。语法为：
 
-## str_replace()
+```php
+array_values(array);
+```
 
-str_replace() 将搜索字符串的所有出现处替换为替换字符串。语法为 str_replace(search, replace, string);
+## `array_unique()`
 
-## str_pad()
+`array_unique()`返回数组中的唯一值。语法为：
 
-str_pad() 将字符串填充到特定长度。语法为 str_pad(string, length, pad_string, pad_type);
+```php
+array_unique(array);
+```
 
-## strtr()
+## `array_merge()`
 
-strtr() 从字符串中过滤某些字符。语法为 strtr(string, characters);
+`array_merge()`合并一个或多个数组。语法为：
 
-## abs()
+```php
+array_merge(array1, array2, ...);
+```
 
-abs() 返回数字的绝对值。语法为 abs(number);
+## `array_diff()`
 
-## ceil()
+`array_diff()`返回第一个数组中未出现在其他数组中的元素。语法为：
 
-ceil() 返回数字向上的下一个整数。语法为 ceil(number);
+```php
+array_diff(array1, array2, ...);
+```
 
-## floor()
+## `str_word_count()`
 
-floor() 返回数字向下的下一个整数。语法为 floor(number);
+`str_word_count()`返回字符串中的单词数。语法为：
 
-## round()
+```php
+str_word_count(string);
+```
 
-round() 将浮点数保留到指定的小位数。语法为 round(number, precision);
+## `str_pad()`
 
-## rand()
+`str_pad()`将字符串填充到特定长度。语法为：
 
-rand() 返回两个数字之间的随机整数。语法为 rand(min, max);
+```php
+str_pad(string, length, pad_string, pad_type);
+```
 
-## mt_rand()
+## `strtr()`
 
-mt_rand() 返回两个数字之间的随机整数。语法为 mt_rand(min, max);
+`strtr()`从字符串中过滤某些字符。语法为：
 
-## pow()
+```php
+strtr(string, characters);
+```
 
-pow() 返回数字的另一个数字的幂。语法为 pow(base, exponent);
+## `abs()`
 
-## sqrt()
+`abs()`返回数字的绝对值。语法为：
 
-sqrt() 返回数字的平方根。语法为 sqrt(number);
+```php
+abs(number);
+```
 
-## mod()
+## `mt_rand()`
 
-mod() 返回除法的余数。语法为 mod(dividend, divisor);
+`mt_rand()`返回两个数字之间的随机整数。语法为：
 
-## exp()
+```php
+mt_rand(min, max);
+```
 
-exp() 返回 e 的数字次幂。语法为 exp(exponent);
+## `fmod()`
 
-## log()
+`fmod()`返回除法的余数。语法为：
 
-log() 返回数字的自然对数。语法为 log(number);
+```php
+fmod(dividend, divisor);
+```
 
-## log10()
+## `exp()`
 
-log10() 返回数字的以10为底的对数。语法为 log10(number);
+`exp()`返回e的数字次幂。语法为：
 
-## pi()
+```php
+exp(exponent);
+```
 
-pi() 返回 pi 的值。语法为 pi();
+## `log()`
 
-## max()
+`log()`返回数字的自然对数。语法为：
 
-max() 返回数组或数字中的最大值。语法为 max(array);
+```php
+log(number);
+```
 
-## min()
+## `log10()`
 
-min() 返回数组或数字中的最小值。语法为 min(array);
+`log10()`返回数字的以10为底的对数。语法为：
 
-## array_sum()
+```php
+log10(number);
+```
 
-array_sum() 返回数组值的和。语法为 array_sum(array);
+## `pi()`
 
-## array_product()
+`pi()`返回pi的值。语法为：
 
-array_product() 返回数组中所有值的积。语法为 array_product(array);
+```php
+pi();
+```
 
-## array_average()
+## `max()`
 
-array_average() 返回数组值的平均值。语法为 array_average(array);
+`max()`返回数组或数字中的最大值。语法为：
 
-## array_standard()
+```php
+max(array);
+```
 
-array_standard() 返回数组值的标准差。语法为 array_standard(array);
+## `min()`
 
-## array_variance()
+`min()`返回数组或数字中的最小值。语法为：
 
-array_variance() 返回数组值的方差。语法为 array_variance(array);
+```php
+min(array);
+```
 
-## array_median()
+## `array_sum()`
 
-array_median() 返回数组值的中位数。语法为 array_median(array);
+`array_sum()`返回数组值的和。语法为：
 
-## array_mode()
+```php
+array_sum(array);
+```
 
-array_mode() 返回数组值的众数。语法为 array_mode(array);
+## `array_product()`
 
-## array_sort()
+`array_product()`返回数组中所有值的积。语法为：
 
-array_sort() 按升序排序数组。语法为 array_sort(array);
+```php
+array_product(array);
+```
 
-## array_reverse()
+## `array_filter()`
 
-array_reverse() 返回反转后的数组。语法为 array_reverse(array);
+`array_filter()`返回通过回调函数的元素的数组。语法为：
 
-## array_shuffle()
+```php
+array_filter(array, callback);
+```
 
-array_shuffle() 随机打乱数组元素。语法为 array_shuffle(array);
+## `array_map()`
 
-## array_filter()
+`array_map()`将函数应用到数组的所有元素。语法为：
 
-array_filter() 返回通过回调函数的元素的数组。语法为 array_filter(array, callback);
+```php
+array_map(callback, array);
+```
 
-## array_map()
+## `array_reduce()`
 
-array_map() 将函数应用到数组的所有元素。语法为 array_map(callback, array);
+`array_reduce()`使用回调将数组归约为单个值。语法为：
 
-## array_reduce()
+```php
+array_reduce(array, callback, initial);
+```
 
-array_reduce() 使用回调将数组归约为单个值。语法为 array_reduce(array, callback, initial);
+## `array_walk()`
 
-## array_walk()
+`array_walk()`将函数应用到数组的每个元素。语法为：
 
-array_walk() 将函数应用到数组的每个元素。语法为 array_walk(array, callback);
+```php
+array_walk(array, callback);
+```
 
-## array_walk_recursive()
+## `array_walk_recursive()`
 
-array_walk_recursive() 递归地将函数应用到数组的所有元素。语法为 array_walk_recursive(array, callback);
+`array_walk_recursive()`递归地将函数应用到数组的所有元素。语法为：
 
-## array_flatten()
+```php
+array_walk_recursive(array, callback);
+```
 
-array_flatten() 将数组展平。语法为 array_flatten(array);
+## `array_chunk()`
 
-## array_chunk()
+`array_chunk()`将数组分割成块。语法为：
 
-array_chunk() 将数组分割成块。语法为 array_chunk(array, size);
+```php
+array_chunk(array, size);
+```
 
-## array_slice()
+## `array_slice()`
 
-array_slice() 返回数组的一部分。语法为 array_slice(array, start, length);
+`array_slice()`返回数组的一部分。语法为：
 
-## array_pop()
+```php
+array_slice(array, start, length);
+```
 
-array_pop() 从数组末尾移除一个元素。语法为 array_pop(array);
+## `array_pop()`
 
-## array_push()
+`array_pop()`从数组末尾移除一个元素。语法为：
 
-array_push() 向数组末尾添加一个元素。语法为 array_push(array, value);
+```php
+array_pop(array);
+```
 
-## array_shift()
+## `array_push()`
 
-array_shift() 从数组开头移除一个元素。语法为 array_shift(array);
+`array_push()`向数组末尾添加一个元素。语法为：
 
-## array_unshift()
+```php
+array_push(array, value);
+```
 
-array_unshift() 向数组开头添加一个元素。语法为 array_unshift(array, value);
+## `array_shift()`
 
-## array_replace()
+`array_shift()`从数组开头移除一个元素。语法为：
 
-array_replace() 替换数组中的特定元素。语法为 array_replace(array, search, replace);
+```php
+array_shift(array);
+```
 
-## array_search()
+## `array_unshift()`
 
-array_search() 在数组中搜索值。语法为 array_search(array, search);
+`array_unshift()`向数组开头添加一个元素。语法为：
 
-## array_intersect()
+```php
+array_unshift(array, value);
+```
 
-array_intersect() 返回两个数组的交集。语法为 array_intersect(array1, array2);
+## `array_search()`
 
-## array_difference()
+`array_search()`在数组中搜索值。语法为：
 
-array_difference() 返回两个数组之间的差异。语法为 array_difference(array1, array2);
+```php
+array_search(array, search);
+```
 
-## array_union()
+## `array_intersect()`
 
-array_union() 返回两个数组的并集。语法为 array_union(array1, array2);
+`array_intersect()`返回两个数组的交集。语法为：
 
-## array_combine()
+```php
+array_intersect(array1, array2);
+```
 
-array_combine() 将两个数组合并为键值。语法为 array_combine(array1, array2);
+## `array_combine()`
 
-## array_column()
+`array_combine()`将两个数组合并为键值。语法为：
 
-array_column() 从数组中获取单列值。语法为 array_column(array, column_name);
+```php
+array_combine(array1, array2);
+```
 
-## array_mult()
+## `array_column()`
 
-array_mult() 从第一个数组创建多维数组。语法为 array_mult(...$arrays);
+`array_column()`从数组中获取单列值。语法为：
 
-## array_set()
+```php
+array_column(array, column_name);
+```
 
-array_set() 在多维数组的指定索引处设置值。语法为 array_set(array, index, value);
+# 使用`return`语句
 
-## array_count()
-
-array_count() 返回数组中元素的数量。语法为 array_count(array);
-
-## array_keys()
-
-array_keys() 返回数组的键。语法为 array_keys(array);
-
-## array_values()
-
-array_values() 返回数组的值。语法为 array_values(array);
-
-## array_unique()
-
-array_unique() 返回数组中的唯一值。语法为 array_unique(array);
-
-## array_merge()
-
-array_merge() 合并多个数组。语法为 array_merge(array1, array2, ...);
-
-## array_diff()
-
-array_diff() 返回第一个数组中未出现在其他数组中的元素。语法为 array_diff(array1, array2, ...);
-
-## array_union()
-
-array_union() 返回两个数组的并集。语法为 array_union(array1, array2);
-
-## array_combine()
-
-array_combine() 将两个数组合并为键值。语法为 array_combine(array1, array2);
-
-## array_column()
-
-array_column() 从数组中获取单列值。语法为 array_column(array, column_name);
-
-## array_mult()
-
-array_mult() 从第一个数组创建多维数组。语法为 array_mult(...$arrays);
-
-## array_set()
-
-array_set() 在多维数组的指定索引处设置值。语法为 array_set(array, index, value);
-
-## array_count()
-
-array_count() 返回数组中元素的数量。语法为 array_count(array);
-
-## array_keys()
-
-array_keys() 返回数组的键。语法为 array_keys(array);
-
-## array_values()
-
-array_values() 返回数组的值。语法为 array_values(array);
-
-## array_unique()
-
-array_unique() 返回数组中的唯一值。语法为 array_unique(array);
-
-## array_merge()
-
-array_merge() 合并多个数组。语法为 array_merge(array1, array2, ...);
-
-## array_diff()
-
-array_diff() 返回第一个数组中未出现在其他数组中的元素。语法为 array_diff(array1, array2, ...);
-
-## array_union()
-
-array_union() 返回两个数组的并集。语法为 array_union(array1, array2);
-
-## array_combine()
-
-array_combine() 将两个数组合并为键值。语法为 array_combine(array1, array2);
-
-## array_column()
-
-array_column() 从数组中获取单列值。语法为 array_column(array, column_name);
-
-## array_mult()
-
-array_mult() 从第一个数组创建多维数组。语法为 array_mult(...$arrays);
-
-## array_set()
-
-array_set() 在多维数组的指定索引处设置值。语法为 array_set(array, index, value);
-
-## array_count()
-
-array_count() 返回数组中元素的数量。语法为 array_count(array);
-
-## array_keys()
-
-array_keys() 返回数组的键。语法为 array_keys(array);
-
-## array_values()
-
-array_values() 返回数组的值。语法为 array_values(array);
-
-## array_unique()
-
-array_unique() 返回数组中的唯一值。语法为 array_unique(array);
-
-## array_merge()
-
-array_merge() 合并多个数组。语法为 array_merge(array1, array2, ...);
-
-## array_diff()
-
-array_diff() 返回第一个数组中未出现在其他数组中的元素。语法为 array_diff(array1, array2, ...);
-
-## array_union()
-
-array_union() 返回两个数组的并集。语法为 array_union(array1, array2);
-
-## array_combine()
-
-array_combine() 将两个数组合并为键值。语法为 array_combine(array1, array2);
-
-## array_column()
-
-array_column() 从数组中获取单列值。语法为 array_column(array, column_name);
-
-## array_mult()
-
-array_mult() 从第一个数组创建多维数组。语法为 array_mult(...$arrays);
-
-## array_set()
-
-array_set() 在多维数组的指定索引处设置值。语法为 array_set(array, index, value);
-
-## array_count()
-
-array_count() 返回数组中元素的数量。语法为 array_count(array);
-
-## array_keys()
-
-array_keys() 返回数组的键。语法为 array_keys(array);
-
-## array_values()
-
-array_values() 返回数组的值。语法为 array_values(array);
-
-## array_unique()
-
-array_unique() 返回数组中的唯一值。语法为 array_unique(array);
-
-## array_merge()
-
-array_merge() 合并多个数组。语法为 array_merge(array1, array2, ...);
-
-## array_diff()
-
-array_diff() 返回第一个数组中未出现在其他数组中的元素。语法为 array_diff(array1, array2, ...);
-
-## array_union()
-
-array_union() 返回两个数组的并集。语法为 array_union(array1, array2);
-
-## array_combine()
-
-array_combine() 将两个数组合并为键值。语法为 array_combine(array1, array2);
-
-## array_column()
-
-array_column() 从数组中获取单列值。语法为 array_column(array, column_name);
-
-## array_mult()
-
-array_mult() 从第一个数组创建多维数组。语法为 array_mult(...$arrays);
-
-## array_set()
-
-array_set() 在多维数组的指定索引处设置值。语法为 array_set(array, index, value);
-
-## array_count()
-
-array_count() 返回数组中元素的数量。语法为 array_count(array);
-
-## array_keys()
-
-array_keys() 返回数组的键。语法为 array_keys(array);
-
-## array_values()
-
-array_values() 返回数组的值。语法为 array_values(array);
-
-## array_unique()
-
-array_unique() 返回数组中的唯一值。语法为 array_unique(array);
-
-## array_merge()
-
-array_merge() 合并多个数组。语法为 array_merge(array1, array2, ...);
-
-## array_diff()
-
-array_diff() 返回第一个数组中未出现在其他数组中的元素。语法为 array_diff(array1, array2, ...);
-
-## array_union()
-
-array_union() 返回两个数组的并集。语法为 array_union(array1, array2);
-
-## array_combine()
-
-array_combine() 将两个数组合并为键值。语法为 array_combine(array1, array2);
-
-## array_column()
-
-array_column() 从数组中获取单列值。语法为 array_column(array, column_name);
-
-## array_mult()
-
-array_mult() 从第一个数组创建多维数组。语法为 array_mult(...$arrays);
-
-## array_set()
-
-array_set() 在多维数组的指定索引处设置值。语法为 array_set(array, index, value);
-
-## array_count()
-
-array_count() 返回数组中元素的数量。语法为 array_count(array);
-
-## array_keys()
-
-array_keys() 返回数组的键。语法为 array_keys(array);
-
-## array_values()
-
-array_values() 返回数组的值。语法为 array_values(array);
-
-## array_unique()
-
-array_unique() 返回数组中的唯一值。语法为 array_unique(array);
-
-## array_merge()
-
-array_merge() 合并多个数组。语法为 array_merge(array1, array2, ...);
-
-## array_diff()
-
-array_diff() 返回第一个数组中未出现在其他数组中的元素。语法为 array_diff(array1, array2, ...);
-
-## array_union()
-
-array_union() 返回两个数组的并集。语法为 array_union(array1, array2);
-
-## array_combine()
-
-array_combine() 将两个数组合并为键值。语法为 array_combine(array1, array2);
-
-## array_column()
-
-array_column() 从数组中获取单列值。语法为 array_column(array, column_name);
-
-## array_mult()
-
-array_mult() 从第一个数组创建多维数组。语法为 array_mult(...$arrays);
-
-## array_set()
-
-array_set() 在多维数组的指定索引处设置值。语法为 array_set(array, index, value);
-
-## array_count()
-
-array_count() 返回数组中元素的数量。语法为 array_count(array);
-
-## array_keys()
-
-array_keys() 返回数组的键。语法为 array_keys(array);
-
-## array_values()
-
-array_values() 返回数组的值。语法为 array_values(array);
-
-## array_unique()
-
-array_unique() 返回数组中的唯一值。语法为 array_unique(array);
-
-## array_merge()
-
-array_merge() 合并多个数组。语法为 array_merge(array1, array2, ...);
-
-## array_diff()
-
-array_diff() 返回第一个数组中未出现在其他数组中的元素。语法为 array_diff(array1, array2, ...);
-
-## array_union()
-
-array_union() 返回两个数组的并集。语法为 array_union(array1, array2);
-
-## array_combine()
-
-array_combine() 将两个数组合并为键值。语法为 array_combine(array1, array2);
-
-## array_column()
-
-array_column() 从数组中获取单列值。语法为 array_column(array, column_name);
-
-## array_mult()
-
-array_mult() 从第一个数组创建多维数组。语法为 array_mult(...$arrays);
-
-## array_set()
-
-array_set() 在多维数组的指定索引处设置值。语法为 array_set(array, index, value);
-
-## array_count()
-
-array_count() 返回数组中元素的数量。语法为 array_count(array);
-
-## array_keys()
-
-array_keys() 返回数组的键。语法为 array_keys(array);
-
-## array_values()
-
-array_values() 返回数组的值。语法为 array_values(array);
-
-## array_unique()
-
-array_unique() 返回数组中的唯一值。语法为 array_unique(array);
-
-## array_merge()
-
-array_merge() 合并多个数组。语法为 array_merge(array1, array2, ...);
-
-## array_diff()
-
-array_diff() 返回第一个数组中未出现在其他数组中的元素。语法为 array_diff(array1, array2, ...);
-
-## array_union()
-
-array_union() 返回两个数组的并集。语法为 array_union(array1, array2);
-
-## array_combine()
-
-array_combine() 将两个数组合并为键值。语法为 array_combine(array1, array2);
-
-## array_column()
-
-array_column() 从数组中获取单列值。语法为 array_column(array, column_name);
-
-## array_mult()
-
-array_mult() 从第一个数组创建多维数组。语法为 array_mult(...$arrays);
-
-## array_set()
-
-array_set() 在多维数组的指定索引处设置值。语法为 array_set(array, index, value);
-
-## array_count()
-
-array_count() 返回数组中元素的数量。语法为 array_count(array);
-
-## array_keys()
-
-array_keys() 返回数组的键。语法为 array_keys(array);
-
-## array_values()
-
-array_values() 返回数组的值。语法为 array_values(array);
-
-## array_unique()
-
-array_unique() 返回数组中的唯一值。语法为 array_unique(array);
-
-## array_merge()
-
-array_merge() 合并多个数组。语法为 array_merge(array1, array2, ...);
-
-## array_diff()
-
-array_diff() 返回第一个数组中未出现在其他数组中的元素。语法为 array_diff(array1, array2, ...);
-
-## array_union()
-
-array_union() 返回两个数组的并集。语法为 array_union(array1, array2);
-
-## array_combine()
-
-array_combine() 将两个数组合并为键值。语法为 array_combine(array1, array2);
-
-## array_column()
-
-array_column() 从数组中获取单列值。语法为 array_column(array, column_name);
-
-## array_mult()
-
-array_mult() 从第一个数组创建多维数组。语法为 array_mult(...$arrays);
-
-## array_set()
-
-array_set() 在多维数组的指定索引处设置值。语法为 array_set(array, index, value);
-
-## array_count()
-
-array_count() 返回数组中元素的数量。语法为 array_count(array);
-
-## array_keys()
-
-array_keys() 返回数组的键。语法为 array_keys(array);
-
-## array_values()
-
-array_values() 返回数组的值。语法为 array_values(array);
-
-## array_unique()
-
-array_unique() 返回数组中的唯一值。语法为 array_unique(array);
-
-## array_merge()
-
-array_merge() 合并多个数组。语法为 array_merge(array1, array2, ...);
-
-## array_diff()
-
-array_diff() 返回第一个数组中未出现在其他数组中的元素。语法为 array_diff(array1, array2, ...);
-
-## array_union()
-
-array_union() 返回两个数组的并集。语法为 array_union(array1, array2);
-
-## array_combine()
-
-array_combine() 将两个数组合并为键值。语法为 array_combine(array1, array2);
-
-## array_column()
-
-array_column() 从数组中获取单列值。语法为 array_column(array, column_name);
-
-## array_mult()
-
-array_mult() 从第一个数组创建多维数组。语法为 array_mult(...$arrays);
-
-## array_set()
-
-array_set() 在多维数组的指定索引处设置值。语法为 array_set(array, index, value);
-
-## array_count()
-
-array_count() 返回数组中元素的数量。语法为 array_count(array);
-
-## array_keys()
-
-array_keys() 返回数组的键。语法为 array_keys(array);
-
-## array_values()
-
-array_values() 返回数组的值。语法为 array_values(array);
-
-## array_unique()
-
-array_unique() 返回数组中的唯一值。语法为 array_unique(array);
-
-## array_merge()
-
-array_merge() 合并多个数组。语法为 array_merge(array1, array2, ...);
-
-## array_diff()
-
-array_diff() 返回第一个数组中未出现在其他数组中的元素。语法为 array_diff(array1, array2, ...);
-
-## array_union()
-
-array_union() 返回两个数组的并集。语法为 array_union(array1, array2);
-
-## array_combine()
-
-array_combine() 将两个数组合并为键值。语法为 array_combine(array1, array2);
-
-## array_column()
-
-array_column() 从数组中获取单列值。语法为 array_column(array, column_name);
-
-## array_mult()
-
-array_mult() 从第一个数组创建多维数组。语法为 array_mult(...$arrays);
-
-## array_set()
-
-array_set() 在多维数组的指定索引处设置值。语法为 array_set(array, index, value);
-
-
-
-
-使用 `return` 语句将函数结果传递给主脚本是一种简单且安全的方法，也是最常用的方法之一。如果你不使用 `return` 语句，则必须声明任何想要传回主脚本的变量。例如：
+使用`return`语句将函数结果传递给主脚本是一种简单且安全的方法，也是最常用的方法之一。如果你不使用`return`语句，则必须声明任何想要传回主脚本的变量。例如：
 
 ```php
 function multiplier($num) {
@@ -10101,20 +10560,20 @@ function multiplier($num) {
 }
 ```
 
-在这种情况下，你调用了 `multiplier()` 函数，然后在 `echo` 语句中使用该变量名，因为它不是直接从函数中返回的。例如，使用修改后的函数，以下代码将在你的屏幕上打印数字 40：
+在这种情况下，你调用了`multiplier()`函数，然后在`echo`语句中使用该变量名，因为它不是直接从函数中返回的。例如，使用修改后的函数，以下代码将在你的屏幕上打印数字40：
 
 ```php
 multiplier();
 echo $answer;
 ```
 
-如果你没有将 `$answer` 声明为全局变量，结果将是一个空白屏幕。
+如果你没有将`$answer`声明为全局变量，结果将是一个空白屏幕。
 
-**注意** 经过思考后再决定你是否真的在每次声明额外的编程约束时都想将其设为全局（`global`），以维护数据的完整性。换句话说，你必须小心并并好你的操作。如果你声明了一个变量为全局变量，但在脚本的其他部分使用了同名的变量，你将覆盖其中一个。一个好的经验是控制好你的全局变量，并让它们保持在直接使用它们的程序局部范围内。
+> **注意** 经过思考后再决定你是否真的在每次声明额外的编程约束时都想将其设为全局（`global`），以维护数据的完整性。换句话说，你必须小心并做好你的操作。如果你声明了一个变量为全局变量，但在脚本的其他部分使用了同名的变量，你将覆盖其中一个。一个好的经验是控制好你的全局变量，并让它们保持在直接使用它们的程序局部范围内。
 
-## 在你的代码中使用函数
+# 在你的代码中使用函数
 
-到目前为止，你已经学习了用户定义函数的基础，但关于它是如何融入你自己的脚本的。对于 `multiplier()` 函数来说，为了仅仅在屏幕上打印一个数字而创建一个像这样的脚本，似乎非常耗时。
+到目前为止，你已经学习了用户定义函数的基础，但关于它是如何融入你自己的脚本的。对于`multiplier()`函数来说，为了仅仅在屏幕上打印一个数字而创建一个像这样的脚本，似乎非常耗时：
 
 ```php
 <?php
@@ -10126,13 +10585,14 @@ echo multiplier(5);
 ?>
 ```
 
-相反，创建一个函数 `db_connect()`，其中包含你的数据库连接和选择代码：
+相反，创建一个函数`db_connect()`，其中包含你的数据库连接和选择代码：
 
 ```php
-db_connect();
-$connection = mysql_connect("localhost", "spike", "9s7En4");
-or die(mysql_error());
-$db = mysql_select_db($db_name, $connection);
+function db_connect() {
+  $connection = mysql_connect("localhost", "spike", "9s7En4")
+    or die(mysql_error());
+  $db = mysql_select_db($db_name, $connection);
+}
 ```
 
 与其在每个脚本中反复输入这些行，想象一下只需输入这些：
@@ -10141,15 +10601,15 @@ $db = mysql_select_db($db_name, $connection);
 db_connect();
 ```
 
-如果你的主机名、用户名、密码或数据库名称发生变化，你只需要在包含文件的一处更改代码——即 `db_connect()` 函数。唯一的诀窍在于从哪里调用它。显然，如果你正在创建一个函数来复用其内部的代码，你并不希望它成为脚本的一部分。相反，将函数放在它独立的文件中（或包含其他函数的文件中），并使用 `include()` 或 `require()` 将信息引入到你的脚本中。
+如果你的主机名、用户名、密码或数据库名称发生变化，你只需要在包含文件的一处更改代码——即`db_connect()`函数。唯一的诀窍在于从哪里调用它。显然，如果你正在创建一个函数来复用其内部的代码，你并不希望它成为脚本的一部分。相反，将函数放在它独立的文件中（或包含其他函数的文件中），并使用`include()`或`require()`将信息引入到你的脚本中。
 
-## 使用 include() 和 require()
+## 使用`include()`和`require()`
 
-`include()` 和 `require()` 函数本质上执行的是相同的操作：当被调用时，被包含的文件中的代码将成为调用脚本的一部分。从那时起，被包含文件中的任何内容都可以在调用脚本中使用。
+`include()`和`require()`函数本质上执行的是相同的操作：当被调用时，被包含的文件中的代码将成为调用脚本的一部分。从那时起，被包含文件中的任何内容都可以在调用脚本中使用。
 
-`include()` 和 `require()` 之间的区别在无法包含文件时出现。当因为权限错误或文件不在指定位置而导致失败时。使用 `include()` 时，你会得到一个警告，但代码将尽可能继续执行，也就是说，如果它需要另一个文件中的某个函数，执行结果将不尽理想！当 `require()` 无法找到文件时，你将得到一个致命错误（fatal error），PHP 将停止处理后续代码。
+`include()`和`require()`之间的区别在无法包含文件时出现。当因为权限错误或文件不在指定位置而导致失败时，使用`include()`时，你会得到一个警告，但代码将尽可能继续执行，也就是说，如果它需要另一个文件中的某个函数，执行结果将不尽理想！当`require()`无法找到文件时，你将得到一个致命错误（fatal error），PHP将停止处理后续代码。
 
-被包含的文件与其他 PHP 文件一样，以 PHP 标签开始并以关闭 PHP 标签结束。例如，假设你有一个名为 `functions.php` 的文件，包含以下代码：
+被包含的文件与其他PHP文件一样，以PHP标签开始并以关闭PHP标签结束。例如，假设你有一个名为`functions.php`的文件，包含以下代码：
 
 ```php
 /* multiplier() 函数将数字乘以 5 并返回它 */
@@ -10157,18 +10617,16 @@ function multiplier($num) {
   $answer = $num * 5;
   return $answer;
 }
-```
 
-```php
 /* db_connect() 函数连接到你的数据库。 */
 function db_connect() {
-  $connection = mysql_connect("localhost", "spike", "9s7En4");
-  or die(mysql_error());
+  $connection = mysql_connect("localhost", "spike", "9s7En4")
+    or die(mysql_error());
   $db = mysql_select_db($db_name, $connection);
 }
 ```
 
-然后，在你需要连接数据库的实际 PHP 脚本中，你将拥有：
+然后，在你需要连接数据库的实际PHP脚本中，你将拥有：
 
 ```php
 // 包含你所需的函数的文件
@@ -10182,11 +10640,11 @@ db_connect();
 
 显然，这是一个将被包含文件作为库使用的非常简单的例子，但你已经可以看到它的好处了！在任何你有重复代码的地方，都考虑使用你自己的函数来替换它。当你通过确定哪里可以使用函数的练习时，你可以快速优化你的代码。
 
-## 与对象工作
+# 与对象工作
 
-在本书书中，我偶尔提到“面向对象编程”，是指一种比过程化脚本更复杂的编程类型。对象就像一个盒子——变量、函数等等——存在于一个称为类（class）的模板化结构中。可视化一个简单的变量（例如，值为 `red` 的 `color`，或包含三个元素的 `rainbow`）很容易，但方法（methods）和属性（properties）会让人们在可视化对象时遇到困难。现在看看类和属性是如何协同工作产生输出的。这将让你对面向对象编程有一个良好的了解，以及在构建应用程序时想要知道的内容。要了解更多关于该主题的内容，请查看 https://www.php.net/manual/en/oop.php。
+在本书中，我偶尔提到"面向对象编程"，是指一种比过程化脚本更复杂的编程类型。对象就像一个盒子——变量、函数等等——存在于一个称为类（class）的模板化结构中。可视化一个简单的变量（例如，值为`red`的`color`，或包含三个元素的`rainbow`）很容易，但方法（methods）和属性（properties）会让人们在可视化对象时遇到困难。现在看看类和属性是如何协同工作产生输出的。这将让你对面向对象编程有一个良好的了解，以及在构建应用程序时想要知道的内容。要了解更多关于该主题的内容，请查看https://www.php.net/manual/en/oop.php。
 
-对象有一个定义的类。例如，假设你创建了一个房子。在类中，你可能有特征、面积和颜色。每个对象都使用其所有的特征，但它们被初始化为不同的值，如 `ranch`、`1500` 和 `condominium`、`tan stucco`。因为对象在很大程度上是自包含的，它们是相互独立的；例如，你可能会编写一些文本并将该类用于另一个项目以实现新的结果。
+对象有一个定义的类。例如，假设你创建了一个房子。在类中，你可能有特征、面积和颜色。每个对象都使用其所有的特征，但它们被初始化为不同的值，如`ranch`、`1500`和`condominium`、`tan stucco`。因为对象在很大程度上是自包含的，它们是相互独立的；例如，你可能会编写一些文本并将该类用于另一个项目以实现新的结果。
 
 ## 创建对象
 
@@ -10198,7 +10656,7 @@ class class {
 }
 ```
 
-现在你已经有了一个类，你可以创建一个对象的实例：以下代码向你展示了你的对象存在：
+现在你已经有了一个类，你可以创建一个对象的实例。以下代码向你展示了你的对象存在：
 
 ```php
 <?php
@@ -10211,14 +10669,17 @@ echo "$object is an " . $object->type;
 ?>
 ```
 
-如果你将此保存为 `object.php`，将其放在文档根目录下，并使用网络浏览器访问它，你将在屏幕上看到：
+如果你将此保存为`object.php`，将其放在文档根目录下，并使用网络浏览器访问它，你将在屏幕上看到：
+
+```
 object is an object
+```
 
 接下来，你将学习对象的属性和方法。
 
 ## 对象的属性
 
-在对象内部声明的变量被称为属性（properties）。在类顶部声明变量是标准做法。这些属性可以是值、数组，甚至是其他的。以下代码片段使用了 `var` 关键字声明属性：
+在对象内部声明的变量被称为属性（properties）。在类顶部声明变量是标准做法。这些属性可以是值、数组，甚至是其他的。以下代码片段使用了`var`关键字声明属性：
 
 ```php
 class house {
@@ -10228,7 +10689,7 @@ class house {
 }
 ```
 
-现在，当你创建一个 `house` 对象时，你可以引用这些属性。以下展示了它是如何工作的：
+现在，当你创建一个`house`对象时，你可以引用这些属性。以下展示了它是如何工作的：
 
 ```php
 <?php
@@ -10243,7 +10704,10 @@ echo "I live in a " . $house->color . " " . $house->sqfootage . " square foot " 
 ```
 
 如果你将此代码保存并放在文档根目录下，并使用网络浏览器访问，你将在屏幕上看到：
-Live in a tan stucco 786 square foot condo
+
+```
+I live in a tan stucco 786 square foot condo
+```
 
 ## 对象方法
 
@@ -10258,12 +10722,16 @@ class anotherClass {
 }
 $object1 = new anotherClass();
 $object1->hello();
+?>
 ```
 
 如果你将包含此代码的文件放在文档根目录下，并使用网络浏览器访问它，你将在屏幕上看到：
-HELLO
 
-所以，方法看起来就像一个普通函数，但定义在类的框架内。`->` 运算符用于在脚本上下文中调用该方法。无论对象中存储了任何变量，方法都能访问它们以实现目的。例如：
+```
+HELLO
+```
+
+所以，方法看起来就像一个普通函数，但定义在类的框架内。`->`运算符用于在脚本上下文中调用该方法。无论对象中存储了任何变量，方法都能访问它们以实现目的。例如：
 
 ```php
 <?php
@@ -10279,19 +10747,20 @@ $object1->hello();
 ```
 
 如果你将此代码保存并放在文档根目录下，并使用网络浏览器访问它，你将在屏幕上看到：
-HELLO! My name is Joe
 
-特殊的 `$this` 用于引用当前实例化的对象。每当对象引用自身时，你必须使用 `$this` 变量。将 `$this` 变量结合 `->` 运算符，可以在类内部访问类的任何属性或方法。
+```
+HELLO! My name is Joe
+```
+
+特殊的`$this`用于引用当前实例化的对象。每当对象引用自身时，你必须使用`$this`变量。将`$this`变量结合`->`运算符，可以在类内部访问类的任何属性或方法。
 
 ## 构造函数
 
-构造函数只是定义在类内部的一个函数，并与类同名，它在使用 `newclassname` 创建类的新实例时会被自动调用。使用构造函数允许你为类传递参数，以便在调用它时立即进行处理。
+构造函数只是定义在类内部的一个函数，并与类同名，它在使用`new classname`创建类的新实例时会被自动调用。使用构造函数允许你为类传递参数，以便在调用它时立即进行处理。
 
 ## 对象继承
 
 在掌握了对象、属性和方法的基础知识后，你可以开始研究对象继承。关于类的继承正如其名义：一个类继承其父类的功能。示例如：
-
-
 
 ```php
 <?php
@@ -10306,65 +10775,70 @@ class myClass {
 }
 class childClass extends myClass {
     // code goes here
-    $object1 = new childClass("Child of Joe");
-    $object1 -> sayHello();
 }
+$object1 = new childClass("Child of Joe");
+$object1->sayHello();
 ?>
 ```
 
-如果你保存这段代码，将其放在你的文档根目录下，并使用 浏览器访问，你将在屏幕上看到以下内容：
+如果你保存这段代码，将其放在你的文档根目录下，并使用浏览器访问，你将在屏幕上看到以下内容：
+
+```
 HELLO! My name is Child of Joe
+```
 
 这几行构成了构造函数：
-function myClass($n)
+
+```php
+function myClass($n) {
     $this->name = $n;
+}
+```
 
-该函数的命名与它所包含的类相同：myClass。接着你会看到定义了 `childClass`，但它不包含任何代码。在这个示例中，只展示了对父类的继承。继承是通过 `extends` 子句实现的，如下：
+该函数的命名与它所包含的类相同：`myClass`。接着你会看到定义了`childClass`，但它不包含任何代码。在这个示例中，只展示了对父类的继承。继承是通过`extends`子句实现的，如下：
 
-第二个类继承了第一个类的元素，因为这个类被使用了。像面向对象编程中的大多数元素一样，继承是一种使代码可重用的机制。假设你创建了一个格式化类，用于组织和存储数据、以 HTML 格式并将结果输出到浏览器——这是你个人的杰作。现在假设你有一个客户想使用它，但他不想将内容格式化为 HTML 并发送到浏览器，而是将其格式化为纯文本并保存到文件中。现在他想将数据格式化并作为电子邮件发送——那么，天鬼，为什么不顺便创建 XML 格式的文件呢？
+第二个类继承了第一个类的元素，因为这个类被使用了。像面向对象编程中的大多数元素一样，继承是一种使代码可重用的机制。假设你创建了一个格式化类，用于组织和存储数据、以HTML格式并将结果输出到浏览器——这是你个人的杰作。现在假设你有一个客户想使用它，但他不想将内容格式化为HTML并发送到浏览器，而是将其格式化为纯文本并保存到文件中。现在他想将数据格式化并作为电子邮件发送——那么，天哪，为什么不顺便创建XML格式的文件呢？
 
-如果你将编译和存储与格式化类分开——为每种各种方法（HTML、文本、电子邮件和 XML）各准备——你本质上就拥有了父子关系。将父类视为持有编译的类，而格式化类是子类——它们从父类继承信息，并根据自己的功能输出结果。
+如果你将编译和存储与格式化类分开——为每种方法（HTML、文本、电子邮件和XML）各准备——你本质上就拥有了父子关系。将父类视为持有编译的类，而格式化类是子类——它们从父类继承信息，并根据自己的功能输出结果。
 
 这个简短的附录完全没有涵盖面向对象编程的所有方面——大学会教授其中的每一个系列内容，包括如何从该主题创建并实例化对象。不过，你确实学习了如何创建类以及访问类的属性和方法，如何构建新类，以及如何从父类继承功能。你现在应该能够拿起一本关于面向对象编程的书，而不会感到完全不知所措。
 
-![](img/7a81120f3fcfd17d264c4ace19b756f8_376_0.png)
-
 # 附录 D：数据库规范化与 SQL 引用
 
-书中使用的数据库是为了简单而设计的，帮助你理解 PHP 和 MySQL 之间的基本交互。这些不是“规范化”数据库。“规范化”是你当你开始创建数据库驱动的应用程序时经常听到的词，它需要一种不同的过程——在寻找眼前的关系之前，以关系的方式进行思考。在本附录中，你将学习数据库规范化的基础，以及 SQL 语言的一些关键元素。
+书中使用的数据库是为了简单而设计的，帮助你理解PHP和MySQL之间的基本交互。这些不是"规范化"数据库。"规范化"是你开始创建数据库驱动的应用程序时经常听到的词，它需要一种不同的过程——在寻找眼前的关系之前，以关系的方式进行思考。在本附录中，你将学习数据库规范化的基础，以及SQL语言的一些关键元素。
 
 ## 数据库规范化
 
-数据库规范化是一组规则，允许你以这种方式组织数据库使表之间相关、经过优化并且对于未来的增长和关系具有活性。规范化中使用的规则集被称为范式。如果你的数据库设计遵循第一组规则，它被视为第一范式。如果遵循了前三组规则，你的数据库被认为处于第三范式。本附录将通过学校的学生和课程的概念介绍了这些范式，并展示了如何对它们进行规范化。
+数据库规范化是一组规则，允许你以这种方式组织数据库使表之间相关、经过优化并且对于未来的增长和关系具有活性。规范化中使用的规则集被称为范式。如果你的数据库设计遵循第一组规则，它被视为第一范式。如果遵循了前三组规则，你的数据库被认为处于第三范式。本附录将通过学校的学生和课程的概念介绍这些范式，并展示如何对它们进行规范化。
 
 ## 应用范式
 
 在解释第一范式之前，让我们从一些需要规范化的东西开始。在数据库中，扁平表（flat table）是需要规范化的典型示例。扁表是一个带有数据列的电子表格。在扁表中，多个表之间没有关系，你可能想要的所有数据都在那一个单一的扁表中。这种场景不是最高的设计，它在硬盘上消耗的空间会大于一组规范化的数据库。
 
-假设你有一个存储学校学生和课程信息的表。你的扁平表中可能包含以下字段，如表 D.1 所示。
+假设你有一个存储学校学生和课程信息的表。你的扁平表中可能包含以下字段，如表D.1所示。
 
 ### 表 D.1：学生与课程表
 
 | 字段名称 | 说明 |
 |---|---|
 | StudentName | 学生姓名 |
-| CourseID | 学生修读的第一门课程的 ID |
+| CourseID | 学生修读的第一门课程的ID |
 | CourseDescription1 | 学生修读的第一门课程的描述 |
 | CourseInstructor1 | 学生修读的第一门课程的教师 |
-| CourseID2 | 学生修读的第二门课程的 ID |
+| CourseID2 | 学生修读的第二门课程的ID |
 | CourseDescription2 | 学生修读的第二门课程的描述 |
 | CourseInstructor2 | 学生修读的第二门课程的教师 |
 
-你可能会重复多次 CourseID、CourseDescription 和 CourseInstructor，以考虑到学生在学术生涯期间可能修的所有数据。尽管存在冗余，但在创建单一扁平表存储信息时使用的是这种方法。消除这种冗余是数据库规范化的第一步，即达到第一范式。如果你的表保持这种扁平化格式，你可能会有很多未使用的空间和很多不必要的浪费空间——这不是高效的设计！
+你可能会重复多次`CourseID`、`CourseDescription`和`CourseInstructor`，以考虑到学生在学术生涯期间可能修的所有数据。尽管存在冗余，但在创建单一扁平表存储信息时使用的是这种方法。消除这种冗余是数据库规范化的第一步，即达到第一范式。如果你的表保持这种扁平化格式，你可能会有很多未使用的空间和很多不必要的浪费空间——这不是高效的设计！
 
 ## 将表转换为第一范式
 
 第一范式的主要规则是：
 
-- 重复的信息
+- 消除重复的信息
 - 为相关数据创建单独表
 
-观察该表的设计，由于它对学生和课程有许多重复的字段组，你可以识别出学生和课程是两个不同的主题。将你的学生和课程扁平表转换为第一范式意味着你创建了两个表：一个用于学生，一个用于课程。你可以在表 D.2 和 D.3 中看到新的设计。
+观察该表的设计，由于它对学生和课程有许多重复的字段组，你可以识别出学生和课程是两个不同的主题。将你的学生和课程扁平表转换为第一范式意味着你创建了两个表：一个用于学生，一个用于课程。你可以在表D.2和D.3中看到新的设计。
 
 ### 表 D.2：学生表
 
@@ -10378,11 +10852,11 @@ function myClass($n)
 | 字段名称 | 说明 |
 |---|---|
 | StudentID | 学生的唯一标识，匹配学生表中的项。 |
-| CourseID | 学生修读的第一门课程的 ID |
+| CourseID | 学生修读的第一门课程的ID |
 | CourseDescription | 学生修读的第一门课程的描述 |
 | CourseInstructor | 学生修读的第一门课程的教师 |
 
-你的两个表现在表示一个学生对应多门课程的关系。学生可以修读尽可能多的课程，而不限于扁平表中 CourseID/CourseDescription/CourseInstructor 组的数量。
+你的两个表现在表示一个学生对应多门课程的关系。学生可以修读尽可能多的课程，而不限于扁平表中`CourseID`/`CourseDescription`/`CourseInstructor`组的数量。
 
 你仍然有工作要做，下一步是将这些表转换为第二范式。
 
@@ -10392,7 +10866,7 @@ function myClass($n)
 
 - 非键属性依赖于主键
 
-通俗来说，如果字段并不完全依赖于主键，你就必须保留它们。在学生和课程表中，这意味着将课程拆分到单独的表中，使得扁平表现在只是完整的学生表。CourseID、CourseDescription 和 CourseInstructor 可以变成一个名为 courses 的表，学生课程表的主键包含两个字段：StudentID 和 CourseID。你可以在表 D.4 和 D.5 中看到新的设计。
+通俗来说，如果字段并不完全依赖于主键，你就必须保留它们。在学生和课程表中，这意味着将课程拆分到单独的表中，使得扁平表现在只是完整的学生表。`CourseID`、`CourseDescription`和`CourseInstructor`可以变成一个名为`courses`的表，学生课程表的主键包含两个字段：`StudentID`和`CourseID`。你可以在表D.4和D.5中看到新的设计。
 
 ### 表 D.4：课程表
 
@@ -10417,42 +10891,38 @@ function myClass($n)
 
 - 非键属性依赖于其他非键属性
 
-这条规则简单意味着你只需要查看你的表，并确定是否存在更多可以进一步拆分且不依赖于键的字段。关于消除重复数据，你将会找到答案——教师。通常，一个教师会教授课程表中的 CourseInstructor 字段。
+这条规则简单意味着你只需要查看你的表，并确定是否存在更多可以进一步拆分且不依赖于键的字段。关于消除重复数据，你将会找到答案——教师。通常，一个教师会教授课程表中的`CourseInstructor`字段。
 
+表并不是任何类型的键。如果你为了效率和维护考虑，将这些信息提取出来并创建一个单独的表，那就是第三范式。请查看表D.6和D.7中的新`courses`表和`instructors`表。
 
-
-
-
-表并不是任何类型的键。如果你为了效率和维护考虑，将这些信息提取出来并创建一个单独的，那就是第三范式。请查看表 D.6 和 D.7 中的新 `courses` 表和 `instructors` 表。
-
-## 表 D.6: courses 表
+### 表 D.6: `courses`表
 
 | 字段名称 | 描述 |
 | --- | --- |
-| CourseID | 课程的唯一 ID |
+| CourseID | 课程的唯一ID |
 | CourseDescription | 课程描述 |
-| CourseInstructorID | 讲师的 ID，对应 instructors 表中的条目 |
+| CourseInstructorID | 讲师的ID，对应`instructors`表中的条目 |
 
-## 表 D.7: instructors 表
+### 表 D.7: `instructors`表
 
 | 字段名称 | 描述 |
 | --- | --- |
-| InstructorID | 讲师的唯一 ID |
+| InstructorID | 讲师的唯一ID |
 | InstructorName | 讲师名称 |
 | InstructorNotes | 关于讲师的任何备注 |
 
-第三范式通常足以消除冗余并允许灵活性和增长。接下来，我们将对本书之前使用的 `my_contacts` 表进行规范化。
+第三范式通常足以消除冗余并允许灵活性和增长。接下来，我们将对本书之前使用的`my_contacts`表进行规范化。
 
-## 规范化 my_contacts 表
+## 规范化`my_contacts`表
 
-在原始的 `my_contacts` 表中，有很多重复信息，但可以很容易地将其扩展为真正的通讯录。在通讯录中，人们通常有家庭和工作的联系信息、电话方式（座机、手机），甚至有多个电子邮件地址。将所有这些元素拆分到单独的表中并通过主键将信息关联到人身上会更有意义。表 D.8 显示了原始的 `my_contacts` 表作为参考。
+在原始的`my_contacts`表中，有很多重复信息，但可以很容易地将其扩展为真正的通讯录。在通讯录中，人们通常有家庭和工作的联系信息、电话方式（座机、手机），甚至有多个电子邮件地址。将所有这些元素拆分到单独的表中并通过主键将信息关联到人身上会更有意义。表D.8显示了原始的`my_contacts`表作为参考。
 
-## 表 D.8: 原始的 my_contacts 表
+### 表 D.8: 原始的`my_contacts`表
 
 | 字段名称 | 描述 |
 | --- | --- |
-| id | 为条目创建一个唯一 ID 号 |
-| f_name | 人的 名 |
+| id | 为条目创建一个唯一ID号 |
+| f_name | 人的名 |
 | l_name | 人的姓氏 |
 | address1 | 地址的第一行 |
 | address2 | 地址的第二行 |
@@ -10464,201 +10934,217 @@ function myClass($n)
 | email | 电子邮件地址 |
 | birthday | 人的生日 |
 
-现在确定存在不同表的不同区域：在本例中，地址、电话和电子邮件就足够了。表 D.9、D.10 和 D.11 显示了这些新表的字段。
+现在确定存在不同表的不同区域：在本例中，地址、电话和电子邮件就足够了。表D.9、D.10和D.11显示了这些新表的字段。
 
-## 表 D.9: address 表字段
+### 表 D.9: `address`表字段
 
 | 字段名称 | 描述 |
 | --- | --- |
-| id | 为地址条目创建一个唯一 ID 号 |
-| contact_id | 对应主联系人表中某人的 ID |
+| id | 为地址条目创建一个唯一ID号 |
+| contact_id | 对应主联系人表中某人的ID |
 | address1 | 地址的第一行 |
 | address2 | 地址的第二行 |
 | address3 | 地址的第三行 |
 | postcode | 邮政编码 |
-| address_type | 地址类型，例如家庭、工作或其他其它 |
+| address_type | 地址类型，例如家庭、工作或其他 |
 
-### 表 D.10: phone 表字段
+### 表 D.10: `phone`表字段
 
 | 字段名称 | 描述 |
 | --- | --- |
-| id | 为电话条目创建一个唯一 ID 号 |
-| contact_id | 对应主联系人表中某人的 ID |
+| id | 为电话条目创建一个唯一ID号 |
+| contact_id | 对应主联系人表中某人的ID |
 | phone_number | 电话号码 |
 | phone_type | 号码类型，例如家庭、工作或传真 |
 
-### 表 D.11: email 表字段
+### 表 D.11: `email`表字段
 
 | 字段名称 | 描述 |
 | --- | --- |
-| id | 为电子邮件条目创建一个唯一 ID 号 |
-| contact_id | 对应主联系人表中某人的 ID |
-| country | 人居住的国家 |
+| id | 为电子邮件条目创建一个唯一ID号 |
+| contact_id | 对应主联系人表中某人的ID |
 | email | 电子邮件地址 |
 | email_type | 电子邮件类型，例如家庭或工作 |
 
-这些新表都包含 `contact_id` 键，它对应新主联系人表中的条目。作为主联系人表的 `basic_my_contacts` 表现在看起来应该像表 D.12。
+这些新表都包含`contact_id`键，它对应新主联系人表中的条目。作为主联系人表的`basic_my_contacts`表现在看起来应该像表D.12。
 
-### 表 D.12: 新的 my_contacts 表
+### 表 D.12: 新的`my_contacts`表
 
 | 字段名称 | 描述 |
 | --- | --- |
-| id | 为条目创建一个唯一 ID 号 |
+| id | 为条目创建一个唯一ID号 |
 | f_name | 人的名 |
 | l_name | 人的姓氏 |
 | birthday | 人的生日 |
 
 有了这些新表，你将拥有一组更灵活（且经过规范化的！）表来维护信息。
 
-## 基础 MySQL 参考
+# 基础 MySQL 参考
 
-在在本节中，你将简要查看结构查询语言 (SQL)，以及你可以用于 MySQL 的一些让开发更简单的基础函数。请访问 http://www.mysql.com/ 上的 MySQL 手册获取 MySQL 函数和语言元素的完整列表，或者为了对 MySQL 的良好介绍，可以阅读我的书《24 小时学会 MySQL》。
+在本节中，你将简要查看结构查询语言（SQL），以及你可以用于MySQL的一些让开发更简单的基础函数。请访问http://www.mysql.com/上的MySQL手册获取MySQL函数和语言元素的完整列表，或者为了对MySQL的良好介绍，可以阅读我的书《24小时学会MySQL》。
 
-注意：在整个过程中，括号内的任何内容都应被视为占位符文本。例如，你会在命令中将 `[yourDBName]` 替换为实际数据库名称。
+> **注意**：在整个过程中，括号内的任何内容都应被视为占位符文本。例如，你会在命令中将`[yourDBName]`替换为实际数据库名称。
 
-在 MySQL 相关的函数章节中，特定于 MySQL 且在 Oracle、Microsoft Server 甚至 SQLite（你将在附录 E 中学习）等数据库中不可用的 SQL 基本元素是所有感知 SQL 的数据库通用的。
+在MySQL相关的函数章节中，特定于MySQL且在Oracle、Microsoft Server甚至SQLite（你将在附录E中学习）等数据库中不可用的SQL基本元素是所有感知SQL的数据库通用的。
 
 ## 创建数据库
 
-从简单的开始，你可以使用 CREATE 命令创建一个新数据库。语法为：
-`CREATE DATABASE [yourDBName];`
+从简单的开始，你可以使用`CREATE`命令创建一个新数据库。语法为：
+
+```sql
+CREATE DATABASE [yourDBName];
+```
 
 当你使用此命令创建数据库时，你只是在创建一个目录。
 
-# 删除数据库
+## 删除数据库
 
-从简单的开始，你可以使用 DROP 命令创建一个（此处应为删除）。语法为：
-`DROP DATABASE [yourDBName];`
+从简单的开始，你可以使用`DROP`命令删除一个数据库。语法为：
 
-当你使用此命令创建数据库时，你只是在创建一个目录。
+```sql
+DROP DATABASE [yourDBName];
+```
+
+当你使用此命令删除数据库时，你只是在删除一个目录。
 
 ## 修改数据库
 
-从简单的开始，你可以使用 ALTER 命令修改数据库。语法为：
-`ALTER DATABASE [yourDBName];`
+从简单的开始，你可以使用`ALTER`命令修改数据库。语法为：
 
-当你使用此命令创建数据库时，你只是在创建一个目录。
+```sql
+ALTER DATABASE [yourDBName];
+```
 
-# 删除数据库
-
-从简单的开始，你可以使用 DELETE 命令删除数据库。语法为：
-`DELETE DATABASE [yourDBName];`
-
-当你使用此命令创建数据库时，你只是在创建一个目录。
+当你使用此命令修改数据库时，你只是在修改一个目录。
 
 ## 创建表
 
-从简单的开始，你可以使用 CREATE 命令创建一个新表。语法为：
-`CREATE TABLE [yourDBName] (...);`
+从简单的开始，你可以使用`CREATE`命令创建一个新表。语法为：
 
-当你使用此命令创建数据库时，你只是在创建一个目录。
+```sql
+CREATE TABLE [yourTableName] (...);
+```
+
+当你使用此命令创建表时，你只是在创建一个表。
 
 ## 删除表
 
-从简单的开始，你可以使用 DROP 命令删除一个表。语法为：
-`DROP TABLE [yourDBName];`
+从简单的开始，你可以使用`DROP`命令删除一个表。语法为：
 
-当你使用此命令创建数据库时，你只是在创建一个目录。
+```sql
+DROP TABLE [yourTableName];
+```
+
+当你使用此命令删除表时，你只是在删除一个表。
 
 ## 修改表
 
-从简单的开始，你可以使用 ALTER 命令修改表。语法为：
-`ALTER TABLE [yourDBName] (...);`
+从简单的开始，你可以使用`ALTER`命令修改表。语法为：
 
-当你使用此命令创建数据库时，你只是在创建一个目录。
+```sql
+ALTER TABLE [yourTableName] (...);
+```
 
-## 删除表
+当你使用此命令修改表时，你只是在修改一个表。
 
-从简单的开始，你可以使用 DELETE 命令删除表数据。语法为：
-`DELETE FROM [yourDBName];`
+## 删除表数据
 
-当你使用此命令创建数据库时，你只是在创建一个目录。
+从简单的开始，你可以使用`DELETE`命令删除表数据。语法为：
+
+```sql
+DELETE FROM [yourTableName];
+```
+
+当你使用此命令删除表数据时，你只是在删除表数据。
 
 ## 插入数据
 
-从简单的开始，你可以使用 INSERT 命令向表中插入数据。语法为：
-`INSERT INTO [tableName] (...) VALUES (...);`
+从简单的开始，你可以使用`INSERT`命令向表中插入数据。语法为：
 
-当你使用此命令创建数据库时，你只是在创建一个目录。
+```sql
+INSERT INTO [tableName] (...) VALUES (...);
+```
+
+当你使用此命令插入数据时，你只是在插入数据。
 
 ## 更新数据
 
-从简单的开始，你可以使用 UPDATE 命令更新表中的数据。语法为：
-`UPDATE [tableName] SET ... WHERE ...;`
+从简单的开始，你可以使用`UPDATE`命令更新表中的数据。语法为：
 
-当你使用此命令创建数据库时，你只是在创建一个目录。
+```sql
+UPDATE [tableName] SET ... WHERE ...;
+```
+
+当你使用此命令更新数据时，你只是在更新数据。
 
 ## 删除数据
 
-从简单的开始，你可以使用 DELETE 命令从表中删除数据。语法为：
-`DELETE FROM [tableName] WHERE ...;`
+从简单的开始，你可以使用`DELETE`命令从表中删除数据。语法为：
 
-当你使用此命令创建数据库时，你只是在创建一个目录。
+```sql
+DELETE FROM [tableName] WHERE ...;
+```
+
+当你使用此命令删除数据时，你只是在删除数据。
 
 ## 查询数据
 
-从简单的开始，你可以使用 SELECT 命令从表中查询数据。语法为：
-`SELECT ... FROM [tableName] WHERE ...;`
+从简单的开始，你可以使用`SELECT`命令从表中查询数据。语法为：
 
-当你使用此命令创建数据库时，你只是在创建一个目录。
+```sql
+SELECT ... FROM [tableName] WHERE ...;
+```
 
+当你使用此命令查询数据时，你只是在查询数据。
 
-
-
-
+```sql
 SELECT columnName FROM [yourTableName];
+```
 
-要选择表中的记录并按特定顺序返回，请使用 ORDER BY 表达式。例如，如果你有数据字段记录目，并希望按从新到旧的顺序查看所有记录目，
+要选择表中的记录并按特定顺序返回，请使用`ORDER BY`表达式。例如，如果你有数据字段记录，并希望按从新到旧的顺序查看所有记录：
 
+```sql
 SELECT * FROM [yourTableName] ORDER BY [dateField] DESC;
+```
 
-DESC 代表“降序”（descending）。从新到旧，你使用 ASC 表示“升序”（ascending）。ASC 是默认顺序。
+`DESC`代表"降序"（descending）。从新到旧，你使用`ASC`表示"升序"（ascending）。`ASC`是默认顺序。
 
-你还可以在 SQL 语句中执行数学和字符串函数（特定于你的数据库），从而使用 SELECT 完成除查询以外的操作。以下是一些示例：
+你还可以在SQL语句中执行数学和字符串函数（特定于你的数据库），从而使用`SELECT`完成除查询以外的操作。以下是一些示例：
 
 ## 一些 MySQL 特有的函数
 
-此列表仅包含 MySQL 手册中许多字符串相关函数中的几个。访问 http://www.mysql.com/doc 并查看条目手册以获取更多信息。
+此列表仅包含MySQL手册中许多字符串相关函数中的几个。访问http://www.mysql.com/doc并查看条目手册以获取更多信息。
 
-- 你可以使用 `CONCAT()` 函数连接值。语法为 `SELECT CONCAT([field1],[field2],...) AS [newName] FROM [yourTableName];`。
-
-- 使用 `LOWER()` 函数将值转换为小写。语法为 `SELECT LOWER([field1],[field2],...) FROM [yourTableName];`。
-
-- 使用 `UPPER()` 函数将值转换为大写。语法为 `SELECT UPPER([field1],[field2],...) FROM [yourTableName];`。
+- 你可以使用`CONCAT()`函数连接值。语法为`SELECT CONCAT([field1],[field2],...) AS [newName] FROM [yourTableName];`。
+- 使用`LOWER()`函数将值转换为小写。语法为`SELECT LOWER([field1]) FROM [yourTableName];`。
+- 使用`UPPER()`函数将值转换为大写。语法为`SELECT UPPER([field1]) FROM [yourTableName];`。
 
 ## 一些 MySQL 特有的日期时间函数
 
-此列表仅包含 MySQL 手册中许多日期时间相关函数中的几个。访问 http://www.mysql.com/doc 并查看条目手册以获取更多信息。
+此列表仅包含MySQL手册中许多日期时间相关函数中的几个。访问http://www.mysql.com/doc并查看条目手册以获取更多信息。
 
-- 使用 `DAYOFWEEK()` 函数从日期字段中获取星期几（1 = 周日，2 = 周一，...）。语法为 `SELECT DAYOFWEEK(date) FROM [yourTableName];`。
+- 使用`DAYOFWEEK()`函数从日期字段中获取星期几（1 = 周日，2 = 周一，...）。语法为`SELECT DAYOFWEEK(date) FROM [yourTableName];`。
+- 使用`WEEKDAY()`函数从日期字段中获取工作日（0 = 周一，1 = 周二，...）。语法为`SELECT WEEKDAY(date) FROM [yourTableName];`。
 
-- 使用 `WEEKDAY()` 函数从日期字段中获取工作日（0 = 周一，1 = 周二，...）。语法为 `SELECT WEEKDAY(date) FROM [yourTableName];`。
+> **注意**：`DAYOFWEEK()`和`WEEKDAY()`的区别在于周的起始点。当你获取星期几时，周从第1天（星期日）开始。当你获取工作日（或"工作周"）时，周从第0天（星期一）开始。
 
-> 注意：DAYOFWEEK() 和 WEEKDAY() 的区别在于周的起始点。当你获取星期几时，周从第 1 天（星期日）开始。当你获取工作日（或“工作周”）时，周从第 0 天（星期一）开始。
+- 使用`DAYOFMONTH()`函数从日期字段中获取月份中的几号（1到31）。语法为`SELECT DAYOFMONTH(date) FROM [yourTableName];`。
+- 使用`DAYOFYEAR()`函数从日期字段中获取一年中的几天（1到366）。语法为`SELECT DAYOFYEAR(date) FROM [yourTableName];`。
+- 使用`MONTH()`函数从日期字段中获取月份（1到12）。语法为`SELECT MONTH(date) FROM [yourTableName];`。
+- 使用`MONTHNAME()`函数从日期字段中获取月份名称（January, February,...）。语法为`SELECT MONTHNAME(date) FROM [yourTableName];`。
+- 使用`DAYNAME()`函数从日期字段中获取日期名称（Monday, Tuesday,...）。语法为`SELECT DAYNAME(date) FROM [yourTableName];`。
+- 使用`WEEK()`函数从日期字段中获取周数（0到53）。从周日（0）或周一（1）所在的周开始。语法为`SELECT WEEK([date], [0 or 1]) FROM [yourTableName];`。
+- 使用`YEAR()`函数从日期字段中获取年份（1000到9999）。语法为`SELECT YEAR(date) FROM [yourTableName];`。
 
-- 使用 `DAYOFMONTH()` 函数从日期字段中获取月份中的几（1 到 31）。语法为 `SELECT DAYOFMONTH(date) FROM [yourTableName];`。
+## 使用`SHOW`命令
 
-- 使用 `DAYOFYEAR()` 函数从日期字段中获取一年中的几天（1 到 366）。语法为 `SELECT DAYOFYEAR(date) FROM [yourTableName];`。
+有几种类型的`SHOW`命令，它们产生的输出将帮助你管理MySQL数据库。执行这些命令的常用方法是通过MySQL监视器（MySQL的命令行界面），你在第1章"安装和配置MySQL"中使用它。
 
-- 使用 `MONTH()` 函数从日期字段中获取月份（1 到 12）。语法为 `SELECT MONTH(date) FROM [yourTableName];`。
+基本的`SHOW`命令是`SHOW DATABASES`和`SHOW TABLES`，它们简单地显示服务器上数据库和表的名称。如果你使用`CREATE TABLE`命令，它会显示用于创建指定表的精确SQL语句。
 
-- 使用 `MONTHNAME()` 函数从日期字段中获取月份名称（January, February,...）。语法为 `SELECT MONTHNAME(date) FROM [yourTableName];`。
+如果你需要知道表的结构，但不一定需要创建它的SQL命令，你可以使用：
 
-- 使用 `DAYNAME()` 函数从日期字段中获取日期名称（Monday, Tuesday,...）。语法为 `SELECT DAYNAME(date) FROM [yourTableName];`。
-
-- 使用 `WEEK()` 函数从日期字段中获取周数（0 到 53）。从周日（0）或周一（1）所在的周开始。语法为 `WEEK([date], [0 or 1]) FROM [yourTableName];`。
-
-- 使用 `YEAR()` 函数从日期字段中获取年份（1000 到 9999）。语法为 `SELECT YEAR(date) FROM [yourTableName];`。
-
-## 使用 SHOW 命令
-
-有几种类型的 SHOW 命令，它们产生的输出将帮助你管理 MySQL 数据库。执行这些命令的常用方法是通过 MySQL 视器（MySQL 的命令行界面），你在第 1 章“安装和配置 MySQL”中使用它。
-
-基本的 SHOW 命令是 SHOW DATABASES 和 SHOW TABLES，它们简单地显示服务器上数据库和表的名称。如果你使用 CREATE TABLE 命令，它会显示用于创建指定表的精确 SQL 语句。
-
-如果你需要知道表的结构，但不一定需要创建它的 SQL 命令，你可以使用：
-
-```
+```sql
 mysql> SHOW COLUMNS FROM [testTable];
 ```
 
@@ -10666,44 +11152,49 @@ mysql> SHOW COLUMNS FROM [testTable];
 | --- | --- | --- | --- | --- | --- |
 | id | int(11) | | PRI | | auto_increment |
 | textField | varchar(75) | NO | | NULL | |
-| 2 rows in net (0.00 sec) | | | | | |
+| 2 rows in set (0.00 sec) | | | | | |
 
-出于管理目的，SHOW STATUS 和 SHOW VARIABLES 可以快速提供有关你的数据库服务器的重要信息。有关来自这些命令产生的许多行输出的信息，请阅读 MySQL 手册中的相关部分，位于 http://www.mysql.com/doc。
+出于管理目的，`SHOW STATUS`和`SHOW VARIABLES`可以快速提供有关你的数据库服务器的重要信息。有关来自这些命令产生的许多行输出的信息，请阅读MySQL手册中的相关部分，位于http://www.mysql.com/doc。
 
-## 附录 E：使用 SQLite
+# 附录 E：使用 SQLite
 
 ## 概述
 
-在附录“数据库规范化和 SQL 引用”中，你学习了规范化数据库的重要性以及平文件的潜在问题。在许多情况下，你的 PHP 应用可能只需要单个数据库表，这并没有问题。例如，假设你正在归档通过数据库设置的简单联系表的内容，作为备份，因为电子邮件版本从未到达。这个简单的表可能包含姓名、电子邮件地址、注释和发送日期的字段——没有实际上需要进行规范化！
+在附录"数据库规范化和SQL引用"中，你学习了规范化数据库的重要性以及平文件的潜在问题。在许多情况下，你的PHP应用可能只需要单个数据库表，这并没有问题。例如，假设你正在归档通过数据库设置的简单联系表的内容，作为备份，因为电子邮件版本从未到达。这个简单的表可能包含姓名、电子邮件地址、注释和发送日期的字段——没有实际上需要进行规范化！
 
-如果你发现自己处于一个没有数据库且某些规定你不能安装数据库的开发环境中，PHP 5 在此中引入了另一个选项——利用 SQLite 的能力，SQLite 是一种基于 SQL 接口的平文件数据库。
+如果你发现自己处于一个没有数据库且某些规定你不能安装数据库的开发环境中，PHP 5在此中引入了另一个选项——利用SQLite的能力，SQLite是一种基于SQL接口的平文件数据库。
 
-注意：SQLite 在 PHP 5 中默认启用。有关 SQLite 的详细信息，请访问 http://www.php.net/manual/en/book.sqlite。SQLite 技术上只是一个文件，除了对你放置目录的读写权限外，没有其他要求。
+> **注意**：SQLite在PHP 5中默认启用。有关SQLite的详细信息，请访问http://www.php.net/manual/en/book.sqlite。SQLite技术上只是一个文件，除了对你放置目录的读写权限外，没有其他要求。
 
-### 实战 SQLite
+## 实战 SQLite
 
-现在你有了 SQLite，可以开始创建表了。
+现在你有了SQLite，可以开始创建表了。
 
-#### 使用 SQLite 创建并存储数据
+### 使用 SQLite 创建并存储数据
 
-创建表时（如果你想在关系型数据库系统中创建），你会指定字段名称和类型。例如，你可能有一个 `varchar` 类型的 `name` 字段，或者一个 `datetime` 类型的字段。SQLite 是松散类型的，这意味着所有字段的内容都是字符串。因此，SQLite 创建表时不需要定义字段，即使你定义了也会被忽略。
+创建表时（如果你想在关系型数据库系统中创建），你会指定字段名称和类型。例如，你可能有一个`varchar`类型的`name`字段，或者一个`datetime`类型的字段。SQLite是松散类型的，这意味着所有字段的内容都是字符串。因此，SQLite创建表时不需要定义字段，即使你定义了也会被忽略。
 
-在下一个示例中，你将创建一个以下记录的表：
+在下一个示例中，你将创建一个包含以下记录的表：
 
-- 在文本编辑器中打开新文件并开始 PHP 块：
+- 在文本编辑器中打开新文件并开始PHP块：
 
-- 使用 `sqlite_open()` 函数打开之前的数据库：
+```php
+<?php
+```
+
+- 使用`sqlite_open()`函数打开之前的数据库：
+
 ```php
 $db = sqlite_open("test.db") or die(sqlite_error_string());
 ```
 
-- 使用 `sqlite_query()` 函数执行创建表的命令：
+- 使用`sqlite_query()`函数执行创建表的命令：
 
 ```php
 sqlite_query($db,"CREATE TABLE friends (first_name, last_name, email)");
 ```
 
-- 使用 `sqlite_query()` 函数使用 SQL INSERT 命令添加条目：
+- 使用`sqlite_query()`函数使用SQL `INSERT`命令添加条目：
 
 ```php
 sqlite_query($db,"INSERT INTO friends VALUES ('John', 'Smith', 'john@smith.com')");
@@ -10711,11 +11202,15 @@ sqlite_query($db,"INSERT INTO friends VALUES ('Jane', 'Doe', 'jane@doe.com')");
 sqlite_query($db,"INSERT INTO friends VALUES ('Julie', 'Meloni', 'julie@thickbook.com')");
 ```
 
-- 关闭 PHP 块：
+- 关闭PHP块：
 
-> 注意：如果此脚本执行成功，则不会输出。只有在脚本失败时才会看到消息。
+```php
+?>
+```
 
-访问 http://127.0.0.1/sqlite.php 运行脚本以创建数据库。
+> **注意**：如果此脚本执行成功，则不会输出。只有在脚本失败时才会看到消息。
+
+访问http://127.0.0.1/sqlite.php运行脚本以创建数据库。
 
 
 
@@ -10727,34 +11222,58 @@ sqlite_query($db, "INSERT INTO friends\nVALUES ('Jane', 'Doe', 'janedo.com');");
 sqlite_query($db, "INSERT INTO friends\nVALUES ('Julie', 'Meloni', 'julie@thickbook.com');");
 ```
 
-将此文件保存为 `sqlite2.php` 并将其放在 Web浏览器的文档根目录下。访问 http://127.0.0.1/sqlite2.php 执行该脚本以发布这些 SQLite 命令。同样，如果脚本执行成功，将没有任何输出。只有当脚本未能执行一个或多条命令时，你才会看到消息。
+将此文件保存为`sqlite2.php`并将其放在Web浏览器的文档根目录下。访问`http://127.0.0.1/sqlite2.php`执行该脚本以发布这些SQLite命令。同样，如果脚本执行成功，将没有任何输出。只有当脚本未能执行一个或多条命令时，你才会看到消息。
 
 在下一节中，你将从表中检索项目。
 
-# 从 SQLite 中检索项目
+# 从SQLite中检索项目
 
-现在你已经在 SQLite 表中有了记录，可以检索它们。这个过程与从 MySQL 表中检索数据非常相似。
+现在你已经在SQLite表中有了记录，可以检索它们。这个过程与从MySQL表中检索数据非常相似。
 
-- 1. 在你的文本编辑器中打开一个新文件并开始 PHP 块：
-- 2. 使用 `sqlite_open()` 函数打开你之前创建的数据库：
+1. 在你的文本编辑器中打开一个新文件并开始PHP块：
+
+2. 使用`sqlite_open()`函数打开你之前创建的数据库：
+
+```php
 $db = sqlite_open("test.db") or die($sql_error_string);
-- 3. 使用 `sqlite_query()` 函数执行 `SELECT` 命令，按名称升序检索记录：
+```
+
+3. 使用`sqlite_query()`函数执行`SELECT`命令，按名称升序检索记录：
+
+```php
 $r = sqlite_query($db, "SELECT * FROM my_friends ORDER BY last_name ASC");
-- 4. 检查记录是否存在，如果查询未成功则打印消息：
+```
+
+4. 检查记录是否存在，如果查询未成功则打印消息：
+
+```php
 if (!$r) {
 echo "Sorry, no records."
 } else {
-- 5. 添加一个 `while` 循环来处理成功的查询。此循环将使用 `sqlite_fetch_array()` 函数，它的工作方式完全如下：
+```
+
+5. 添加一个`while`循环来处理成功的查询。此循环将使用`sqlite_fetch_array()`函数，它的工作方式完全如下：
+
+```php
 while ($record = sqlite_fetch_array($r)) {
-- 6. 为你从表中提取的每个字段创建变量：
+```
+
+6. 为你从表中提取的每个字段创建变量：
+
+```php
 $first_name = $record['first_name'];
 $last_name = $record['last_name'];
 $email = $record['email'];
-- 7. 将每个记录打印到屏幕上，然后关闭循环、if...else 块以及 PHP 块：
+```
+
+7. 将每个记录打印到屏幕上，然后关闭循环、`if...else`块以及PHP块：
+
+```php
 echo "record: $last_name, $first_name, $email <br>";
 }
 }
 ?>
+```
 
 你的整个代码应该是这样的：
 
@@ -10775,44 +11294,47 @@ echo "record: $last_name, $first_name, $email <br>";
 ?>
 ```
 
-将此文件保存为 `sqlite3.php` 并将其放在 Web浏览器的文档根目录下。访问 http://127.0.0.1/sqlite.php 执行该脚本以发布这些 SQLite 命令并显示输出。
+将此文件保存为`sqlite3.php`并将其放在Web浏览器的文档根目录下。访问`http://127.0.0.1/sqlite.php`执行该脚本以发布这些SQLite命令并显示输出。
 
-现在你已经看到了过程化处理 SQLite 的过程，它与其它数据库的操作相似，你可以快速浏览下一节以获取其他有用信息。
+现在你已经看到了过程化处理SQLite的过程，它与其它数据库的操作相似，你可以快速浏览下一节以获取其他有用信息。
 
-# 使用 SQLite 执行任务
+# 使用SQLite执行任务
 
-在之前的节中，你已经学习了如何创建 SQLite 数据库和表，如何向这些表插入和选择元素。可以安全 `DELETE` 和 `DROP` 命令来删除记录和表，你还可以使用 `UPDATE` 来更改记录中的字段——所有操作取决于使用 `sqlite_query` 函数的 SQL 查询。
+在之前的节中，你已经学习了如何创建SQLite数据库和表，如何向这些表插入和选择元素。可以安全使用`DELETE`和`DROP`命令来删除记录和表，你还可以使用`UPDATE`来更改记录中的字段——所有操作取决于使用`sqlite_query`函数的SQL查询。
 
-至于你可以使用 SQLite 执行的任务，它们与你在 MySQL 中执行的任务是相同的：书中的所有 MySQL 代码都可以转换为 SQLite。然而，使用 MySQL 时需要的两点在本章中尚未涵盖：自增字段和日期戳标记。
+至于你可以使用SQLite执行的任务，它们与你在MySQL中执行的任务是相同的：书中的所有MySQL代码都可以转换为SQLite。然而，使用MySQL时需要的两点在本章中尚未涵盖：自增字段和日期戳标记。
 
-要实现自增字段的使用，你只需要对 `sqlite2.php` 脚本进行一些更改：
+要实现自增字段的使用，你只需要对`sqlite2.php`脚本进行一些更改：
 
-- 1. 在编辑器中打开 `sqlite2.php`。
+1. 在编辑器中打开`sqlite2.php`。
 
-- 2. 将创建表的命令更改为：
+2. 将创建表的命令更改为：
+
 ```sql
 sqlite_query($db, "CREATE TABLE my_friends (id INTEGER PRIMARY KEY, first_name, last_name, email)");
 ```
 
-- 3. 将向表插入记录的命令更改为：
+3. 将向表插入记录的命令更改为：
+
 ```sql
 sqlite_query($db, "INSERT INTO my_friends (first_name, last_name, email) VALUES ('John', 'Smith', 'john@smith.com');");
 sqlite_query($db, "INSERT INTO my_friends (first_name, last_name, email) VALUES ('Jane', 'Doe', 'jane@doe.com');");
 sqlite_query($db, "INSERT INTO my_friends (first_name, last_name, email) VALUES ('Julie', 'Meloni', 'julie@thickbook.com');");
 ```
 
-将此文件保存为 `sqlite4.php` 并将其放在 Web浏览器的文档根目录下。访问 http://127.0.0.1/sqlite.php 执行该脚本以发布这些 SQLite 命令。同样，如果脚本执行成功，将没有任何输出。只有当脚本未能执行一个或多条命令时，你才会看到消息。
+将此文件保存为`sqlite4.php`并将其放在Web浏览器的文档根目录下。访问`http://127.0.0.1/sqlite.php`执行该脚本以发布这些SQLite命令。同样，如果脚本执行成功，将没有任何输出。只有当脚本未能执行一个或多条命令时，你才会看到消息。
 
-要查看此技巧，修改 `sqlite3.php` 脚本以检索并打印 ID 字段：
+要查看此技巧，修改`sqlite3.php`脚本以检索并打印ID字段：
 
-- 1. 在编辑器中打开 `sqlite3.php`。
+1. 在编辑器中打开`sqlite3.php`。
 
-- 2. 将表名更改为：
+2. 将表名更改为：
+
 ```php
 $r = sqlite_query($db, "SELECT * FROM my_friends ORDER BY last_name ASC");
 ```
 
-# 3. 修改 while 循环：
+3. 修改`while`循环：
 
 ```php
 while ($record = sqlite_fetch_array($r)) {
@@ -10824,23 +11346,15 @@ while ($record = sqlite_fetch_array($r)) {
 }
 ```
 
+# 附录F：获取帮助
 
+开源社区最大的优势之一是，人们渴望帮助你学习尽可能多的知识，以便你也能成为一名传播者。然而，在向整个社区提问之前，你可能应该尝试自己寻找答案。这包括阅读现有的手册和常见问题解答（FAQs）、搜索邮件列表以及访问网站。很有可能其他人也有和你相同的问题。
 
+本书以及我写的其他书籍的网站是`http://www.phpbook.com/`。你可以在那里找到电子书、书籍下载内容、书籍和其他物品推荐，以及我在我的空间里想出来的任何内容。这本书将帮助你判断问题是由于打印过程中的错误，还是你应该重新阅读该章节的内容并重试。
 
+## PHP资源
 
-# Team Li
-
-# Li 团队
-
-## 附录 F：获取帮助
-
-开源社区最大的优势之一是，人们渴望帮助你学习尽可能多的知识，以便你也能成为一名传播者。然而，在向整个社区提问之前，你可能应该尝试自己寻找答案。这包括阅读现有的手册和常见问题解答（FAQs）、搜索邮件列表以及访问网站。很有可能其他人也有和你你相同的问题。
-
-本书以及我写的其他书籍的网站是 http://www.phpbook.com/。你可以在那里找到电子书、书籍下载内容、书籍和其他物品推荐，以及我在我的空间里想出来的任何内容。这本书将帮助你判断问题是由于打印过程中的错误，还是你应该重新阅读该章节的内容并重试。
-
-## PHP 资源
-
-PHP 相关的网站、新闻组和邮件列表非常丰富，这里列出的只是可用资源的一小部分。
+PHP相关的网站、新闻组和邮件列表非常丰富，这里列出的只是可用资源的一小部分。
 
 ## 网站
 
@@ -10848,1124 +11362,1137 @@ PHP 相关的网站、新闻组和邮件列表非常丰富，这里列出的只�
 
 ### www.php.net
 
-PHP 的家园是 http://www.php.net。这里有注释的在线手册，以及 PHP FAQ、错误报告、提供 PHP 访问服务的 ISP 链接、新闻文章等！
+PHP的家园是`http://www.php.net`。这里有注释的在线手册，以及PHP FAQ、错误报告、提供PHP访问服务的ISP链接、新闻文章等！
 
 ### www.zend.com
 
-Zend Technologies 是 PHP Zend 引擎背后的团队，他们为 PHP 开发者创建了一个门户网站。这个个性化的网站不仅展示了你如何使用 PHP 构建高流量动态网站，还提供了指南、资源和课程，教你如何在所有应用程序中最大化地利用 PHP 的潜能。
+Zend Technologies是PHP Zend引擎背后的团队，他们为PHP开发者创建了一个门户网站。这个个性化的网站不仅展示了你如何使用PHP构建高流量动态网站，还提供了指南、资源和课程，教你如何在所有应用程序中最大化地利用PHP的潜能。
 
 ### DevShed (www.devdshed.com)
 
-该网站包含许多用户提交的教程、新闻文章、采访以及对服务器端编程语言的竞争分析。涵盖了 PHP 以及开发者许多感兴趣的其他主题，如服务器和数据库。
+该网站包含许多用户提交的教程、新闻文章、采访以及对服务器端编程语言的竞争分析。涵盖了PHP以及开发者许多感兴趣的其他主题，如服务器和数据库。
 
 ### PHPBuilder (www.phpbuilder.com)
 
-这是一个非常适合中高级 PHP 开发者的网站。它包含了针对实际应用的“如何”专栏，例如“如何使用搜索引擎构建动态页面”和“生成发音密码”。
+这是一个非常适合中高级PHP开发者的网站。它包含了针对实际应用的"如何"专栏，例如"如何使用搜索引擎构建动态页面"和"生成发音密码"。
 
 ### WeberDev (www.weberdev.com)
 
-一个长期服务 PHP 开发者的网站，包含了许多编程语言的开发技术和技巧（即将），以及一个内容管理系统，供任何人添加自己的代码段、教程和时刻。它是一个很棒的每周通讯报，而且流量很高！
+一个长期服务PHP开发者的网站，包含了许多编程语言的开发技术和技巧（即将），以及一个内容管理系统，供任何人添加自己的代码段、教程和时刻。它是一个很棒的每周通讯报，而且流量很高！
 
 ### px.sklar.com
 
-这是一个只有代码的仓库，当你需要代码段时，谁还需要伟大的框架呢？借用“拿来不偿还”的心态，你可以先获取一个代码段开始，当你有信心分享时再添加自己的内容。
+这是一个只有代码的仓库，当你需要代码段时，谁还需要伟大的框架呢？借用"拿来不偿还"的心态，你可以先获取一个代码段开始，当你有信心分享时再添加自己的内容。
 
 ### Webmonkey (hotwired.lycos.com/webmonkey/)
 
-为我们带来《连线》(Wired) 杂志的公司也带给了我们 HotWired，它衍生了 Webmonkey，这是一个开发者资源网站，其中有一个专门 PHP 的板块。不要把自己局限于那里，其他板块也有很多信息。
+为我们带来《连线》(Wired)杂志的公司也带给了我们HotWired，它衍生了Webmonkey，这是一个开发者资源网站，其中有一个专门PHP的板块。不要把自己局限于那里，其他板块也有很多信息。
 
 ### PHP KnowledgeBase (php.faqs.com)
 
-PHP KnowledgeBase 包含了在 PHP 邮件列表中提出的问题和答案。任何人可以在网站上回答问题或提出新问题。
+PHP KnowledgeBase包含了在PHP邮件列表中提出的问题和答案。任何人可以在网站上回答问题或提出新问题。
 
 ## 邮件列表
 
-有几个高流量的邮件列表可以使用英语以及所有其他语言进行 PHP 讨论。提问时请记住网络礼仪：保持礼貌，尽可能提供多的示例（如果你在描述问题），提供你的系统信息（如果你在寻找解决方案），我提到过要说你好和“谢谢”吗？
+有几个高流量的邮件列表可以使用英语以及所有其他语言进行PHP讨论。提问时请记住网络礼仪：保持礼貌，尽可能提供多的示例（如果你在描述问题），提供你的系统信息（如果你在寻找解决方案），我提到过要说你好和"谢谢"吗？
 
-你可以在 http://www.php.net/mailing-lists.php 找到邮件列表订阅信息。英语 PHP 邮件列表已存档并可以在 http://marc.theaimgroup.com/ 进行搜索。只需查找 WWW 标题下的 PHP 相关列表即可。
+你可以在`http://www.php.net/mailing-lists.php`找到邮件列表订阅信息。英语PHP邮件列表已存档并可以在`http://marc.theaimgroup.com/`进行搜索。只需查找WWW标题下的PHP相关列表即可。
 
 ## 用户组
 
-有时，在现实生活中认识其他开发者会有帮助。你可以在 http://www.usergroups.org/ 找到 PHP 用户组。
+有时，在现实生活中认识其他开发者会有帮助。你可以在`http://www.usergroups.org/`找到PHP用户组。
 
-## MySQL 资源
+## MySQL资源
 
-许多 PHP 相关的网站也包含了关于 MySQL 开发的信息，但 http://www.mysql.com/ 是获取全面 MySQL 信息的地方。在线手册非常巨大，但由于它写得非常好且有用，它的规模不应该吓到你。你可以在 http://www.mysql.com/doc/ 找到手册。如果你正在寻找 MySQL 的快速介绍，我有一本名为《24 小时自学 MySQL》的书。和 PHP 一样，几个高流量的邮件列表用于 MySQL 讨论，你可以在 http://www.mysql.com/documentation/ 找到邮件列表订阅信息，MySQL 邮件列表已存档并可以在 http://marc.teamsgroup.com 进行搜索。
+许多PHP相关的网站也包含了关于MySQL开发的信息，但`http://www.mysql.com/`是获取全面MySQL信息的地方。在线手册非常巨大，但由于它写得非常好且有用，它的规模不应该吓到你。你可以在`http://www.mysql.com/doc/`找到手册。如果你正在寻找MySQL的快速介绍，我有一本名为《24小时自学MySQL》的书。和PHP一样，几个高流量的邮件列表用于MySQL讨论，你可以在`http://www.mysql.com/documentation/`找到邮件列表订阅信息，MySQL邮件列表已存档并可以在`http://marc.teamsgroup.com`进行搜索。
 
-## Apache 资源
+## Apache资源
 
-从 Apache 基金网站 http://www.apache.org/ 开始查看服务器文档。上述许多面向开发者的网站，如 DevShed，提供了 Apache 特定的教程、文章、评论。ApacheWeek 网站 http://www.apacheweek.com/ 包含了大量的 Apache 相关提示，以及过期的存档。
+从Apache基金网站`http://www.apache.org/`开始查看服务器文档。上述许多面向开发者的网站，如DevShed，提供了Apache特定的教程、文章、评论。ApacheWeek网站`http://www.apacheweek.com/`包含了大量的Apache相关提示，以及过期的存档。
 
 ## 符号
 
-- * (加法)运算符，74
-- && (与)运算符，81
-- {} (大括号),464
-- / (除法)运算符，74
-- $ (美元符号),459
-- " (双引号),65
-- == (等于)运算符，77
-- / (正斜杠),142
-- % (取模)运算符，74
-- * (乘法)运算符，74
-- \n (换行符),122, 153
-- != (不等于)运算符，77
-- | (或)运算符，81
-- ; (分号),10
-- ' (单引号),65
-- - (减法)运算符，74
-- \t (制表符),126–127
-- _ (下划线),64, 459
+- `*`(加法)运算符，74
+- `&&`(与)运算符，81
+- `{}`(大括号)，464
+- `/`(除法)运算符，74
+- `$`(美元符号)，459
+- `"`(双引号)，65
+- `==`(等于)运算符，77
+- `/`(正斜杠)，142
+- `%`(取模)运算符，74
+- `*`(乘法)运算符，74
+- `\n`(换行符)，122, 153
+- `!=`(不等于)运算符，77
+- `|`(或)运算符，81
+- `;`(分号)，10
+- `'`(单引号)，65
+- `-`(减法)运算符，74
+- `\t`(制表符)，126–127
+- `_`(下划线)，64, 459
 
 ## A
 
-- mode, fopen()函数,146
-- access reports,418–422
-- count, displaying,425–425
-- database creation,417–418
-- page, displaying,431–435
-- personal,425–427
-- user agents, displaying,428–431
-- addition (+)运算符，74
-- addresses, management systems,313
-- administrative menu,298–303
-- tables,232–234
-- ALTER 命令,514–515
-- altering tables,514–515
-- & (&)运算符，81
-- configuring for Linux/Unix,32–34
-- use PHP,44–45
-- to Windows,27–28
-- log,418–417
-- starting and connecting to,29–30, 34–35
-- website,534
-- arithmetic operators,71, 74–77, 462
-- arrays,461
-- array()函数,467
-- array(key)函数,468
-- array_merge()函数,468
-- array_pop()函数,467
-- array_push()函数,467
-- array_shift()函数,468
-- array_unshift()函数,468
-- array_value()函数,468
-- artist, B. field,225
-- artist_in field,202
-- displaying records ordered by,240–244
-- assignment operators,71–74, 462
-- attributes MAXLENGTH,220, 251
-- NAME,220
-- VALUE,138
-- cookies,269–275
-- database-driven,248
-- login forms,257–258
-- scripts, creating,258–261
-- user addition form and script,250–254
-- user tables,248–249
+- mode，`fopen()`函数，146
+- access reports，418–422
+- count，displaying，425–425
+- database creation，417–418
+- page，displaying，431–435
+- personal，425–427
+- user agents，displaying，428–431
+- addition (`+`)运算符，74
+- addresses，management systems，313
+- administrative menu，298–303
+- tables，232–234
+- `ALTER`命令，514–515
+- altering tables，514–515
+- `&`(`&`)运算符，81
+- configuring for Linux/Unix，32–34
+- use PHP，44–45
+- to Windows，27–28
+- log，418–417
+- starting and connecting to，29–30, 34–35
+- website，534
+- arithmetic operators，71, 74–77, 462
+- arrays，461
+- `array()`函数，467
+- `array(key)`函数，468
+- `array_merge()`函数，468
+- `array_pop()`函数，467
+- `array_push()`函数，467
+- `array_shift()`函数，468
+- `array_unshift()`函数，468
+- `array_value()`函数，468
+- artist，B. field，225
+- artist_in field，202
+- displaying records ordered by，240–244
+- assignment operators，71–74, 462
+- attributes `MAXLENGTH`，220, 251
+- `NAME`，220
+- `VALUE`，138
+- cookies，269–275
+- database-driven，248
+- login forms，257–258
+- scripts，creating，258–261
+- user addition form and script，250–254
+- user tables，248–249
 
 ## B
 
-- backslash (\),58–60, 142
-- BIGINT 数据类型,201
-- bin 目录,34
-- bindec()函数,479
-- birthdates, contact information,372–378
-- BLOB 数据类型,201
-- browser-specific HTML,100–103
+- backslash (`\`)，58–60, 142
+- `BIGINT`数据类型，201
+- `bin`目录，34
+- `bindec()`函数，479
+- birthdates，contact information，372–378
+- `BLOB`数据类型，201
+- browser-specific HTML，100–103
 
 ## C
 
-- calculation forms,86–88
-- calculation scripts,89–91
-- Cascading Style Sheets (CSS),438
-- case-sensitivity, XML,440
-- cell()函数,479
-- cell data, tables,221–222
-- CHAR 数据类型,201
-- checkdate()函数,472
-- chrget()函数,474
-- chmod()函数,474
-- chop()函数,467
-- chown()函数,474
-- client-side code,50
+- calculation forms，86–88
+- calculation scripts，89–91
+- Cascading Style Sheets (CSS)，438
+- case-sensitivity，XML，440
+- `cell()`函数，479
+- cell data，tables，221–222
+- `CHAR`数据类型，201
+- `checkdate()`函数，472
+- `chrget()`函数，474
+- `chmod()`函数，474
+- `chop()`函数，467
+- `chown()`函数，474
+- client-side code，50
 - code
-  - client-side,53–55
-  - cohabitation,60–62
+  - client-side，53–55
+  - cohabitation，60–62
   - commenting
-  - escape characters,58–60
-  - server-side,50
-- code snippet, access reports,418–422
+  - escape characters，58–60
+  - server-side，50
+- code snippet，access reports，418–422
 - commands
-  - ALTER,514–515
-  - CREATE,513–514
-  - DELETE,516
-  - DROP,513–514, 516
-  - echo,55
-  - GRANT,180–181
-  - INSERT,515
-  - makefile,31
-  - REPLACE,515
-  - SELECT,19, 20, 516–517
-  - SHOW,519–520
-- Start menu, Run,8–9
-- UPDATE,218
-- varchar,249
+  - `ALTER`，514–515
+  - `CREATE`，513–514
+  - `DELETE`，516
+  - `DROP`，513–514, 516
+  - `echo`，55
+  - `GRANT`，180–181
+  - `INSERT`，515
+  - `makefile`，31
+  - `REPLACE`，515
+  - `SELECT`，19, 20, 516–517
+  - `SHOW`，519–520
+- Start menu，Run，8–9
+- `UPDATE`，218
+- `varchar`，249
 
+常量，变量，68–70
 
-
-
-常量，变量, 68–70
-
-构造函数, 502
+构造函数，502
 
 联系人
 
-+   添加
-- 记录添加表, 316–321
-- 记录添加脚本, 321–325
-- 表格填充, 315–326
-- 出生日期，显示, 372–376
-- 日期，显示, 370–372
+- 添加
+  - 记录添加表，316–321
+  - 记录添加脚本，321–325
+  - 表格填充，315–326
+  - 出生日期，显示，372–376
+  - 日期，显示，370–372
 - 删除
+  - 概述，358–360
+  - 记录删除表，创建，351–355
+  - 记录删除脚本，创建，355–358
+  - 记录选择表，创建，346–350
+- 编辑，341–343
+  - 记录修改表，创建，333–337
+  - 记录修改脚本，创建，337–341
+  - 记录选择表，创建，328–333
+- 管理系统
+  - 管理员菜单，创建与规划，298–303
+  - 登录，303–305, 305–306
+  - `my_contacts`表，312–314
+  - 表格创建脚本，306–312
+  - 普通表单示例，510–513
+  - 显示数量，362–370
+  - 只读记录，346–349
+  - 记录列表，显示，379–383
 
-+   概述, 358–360
-- 记录删除表，创建, 351–355
-- 记录删除脚本，创建, 355–358
-- 记录选择表，创建, 346–350
-
-+   编辑, 341–343
-- 记录修改表，创建, 333–337
-- 记录修改脚本，创建, 337–341
-- 记录选择表，创建, 328–333
-
-+   管理系统
-- 管理员菜单，创建与规划, 298–303
-- 登录, 303–305, 305–306
-- my_contacts 表, 312–314
-- 表格创建脚本, 306–312
-- 普通表单示例, 510–513
-- 显示数量, 362–370
-- 只读记录, 346–349
-- 记录列表，显示, 379–383
-
-控制结构, 464–466
+控制结构，464–466
 
 cookies
 
-+   带身份验证, 269–275
-- 计时, 266
-- 定义, 264
-- 设置, 264–266
-- 测试 cookies，设置, 267–268
-- 变量表单, 460
+- 带身份验证，269–275
+- 计时，266
+- 定义，264
+- 设置，264–266
+- 测试cookies，设置，267–268
+- 变量表单，460
 
-copy(), 160–161, 474
+`copy()`，160–161, 474
 
-复制文件, 160–162
+复制文件，160–162
 
-count, 显示访问报告, 422–425
+count，显示访问报告，422–425
 
-count(), 213, 469
+`count()`，213, 469
 
-计时, cookies, 266
+计时，cookies，266
 
-CREATE 命令, 513–514
+`CREATE`命令，513–514
 
-CSS (层叠样式表), 438
+CSS (层叠样式表)，438
 
-大括号 {}, 464
-
-# Team LIB
+大括号`{}`，464
 
 # 索引
 
 # D
 
-+   向文件追加数据, 152–153 从文件读取, 154–157
-
-+   数据类型
-- BIGINT, 201
-- BLOB, 201
-- CHAR, 201
-- DATE, 201
-- DATETIME, 201
-- ENUM, 201
-- FLOAT, 201
-- INT, 201
-- MEDIUMINT, 201
-- SMALLINT, 201
-- TEXT, 201
-- TIMESTAMP, 201
-- TINYINT, 201
-- VARCHAR, 201
-
-+   数据库连接函数, 470–471
-- 创建, 513–514
-- 创建新的, 193–195
-- 删除, 195–197
-- 丢弃, 513–514
-- 列出服务器, 185–187
-- 列出表中的, 191–192
-
-+   日期联系信息, 370–372
-- 按...排序显示记录, 238
-- 函数, 472–474
-
-+   DATE 类型, 201
-- 日期格式，创建, 221
-- date() 函数, 370–371, 472–473, 530
-- date, 字段, 226
-
-+   DATETIME 数据类型, 201
-- DAYNAME() 函数, 519
-- DAYMONTH() 函数, 518
-- DAYOFWEEK() 函数, 518
-- DAYYEAR() 函数, 518
-- db_connect() 函数, 497
-- decline() 函数, 479
-- decode() 函数, 480
-- define() 函数, 69
-
-+   DELETE 命令, 516
-- 删除数据库, 196–197
-- 文件, 164–166
-
-+   DevSched 网站, 532
-- die() 函数, 147, 149–150, 153, 157, 213, 482
-
-+   目录
-- bin, 34
-- 内容，显示, 142–145
-- htdocs, 29
-- MySQL 分布版, 4
-- 除法 (/) 运算符, 74
-- 美元符号 ($), 459
-- 域名参数，setcookie() 函数, 265
-- 双引号 ("), 65
-- DROP 命令, 513–514, 516
-- 丢数据库, 513–514
+- 向文件追加数据，152–153 从文件读取，154–157
+- 数据类型
+  - `BIGINT`，201
+  - `BLOB`，201
+  - `CHAR`，201
+  - `DATE`，201
+  - `DATETIME`，201
+  - `ENUM`，201
+  - `FLOAT`，201
+  - `INT`，201
+  - `MEDIUMINT`，201
+  - `SMALLINT`，201
+  - `TEXT`，201
+  - `TIMESTAMP`，201
+  - `TINYINT`，201
+  - `VARCHAR`，201
+- 数据库连接函数，470–471
+- 创建，513–514
+- 创建新的，193–195
+- 删除，195–197
+- 丢弃，513–514
+- 列出服务器，185–187
+- 列出表中的，191–192
+- 日期联系信息，370–372
+- 按...排序显示记录，238
+- 函数，472–474
+- `DATE`类型，201
+- 日期格式，创建，221
+- `date()`函数，370–371, 472–473, 530
+- date，字段，226
+- `DATETIME`数据类型，201
+- `DAYNAME()`函数，519
+- `DAYMONTH()`函数，518
+- `DAYOFWEEK()`函数，518
+- `DAYYEAR()`函数，518
+- `db_connect()`函数，497
+- `decline()`函数，479
+- `decode()`函数，480
+- `define()`函数，69
+- `DELETE`命令，516
+- 删除数据库，196–197
+- 文件，164–166
+- DevSched网站，532
+- `die()`函数，147, 149–150, 153, 157, 213, 482
+- 目录
+  - `bin`，34
+  - 内容，显示，142–145
+  - `htdocs`，29
+  - MySQL分布版，4
+- 除法(`/`)运算符，74
+- 美元符号(`$`)，459
+- 域名参数，`setcookie()`函数，265
+- 双引号(`"`)，65
+- `DROP`命令，513–514, 516
+- 丢数据库，513–514
 
 # 索引
 
 # E
 
-+   电子邮件
-- 联系人管理系统, 313
-- 发送
-- 反馈表单，创建, 120–121
-- 带有自定义错误的反馈表单, 127–137
-- 文件内容, 157–158
-- 脚本, 121–126
-- SMTP (简单邮件协议), 118–119
-- each() 函数, 469
-- echo 命令, 55
-- echo() 函数, 487
-- else 语句, 150, 165
-- 标签, PHP, 50–52, 458
-- ENUM 数据类型, 202
-- 环境变量, 460–461
-- 讨论, 92
-- HTTP AGENT, 95–96
-- REMOTE_ADDR, 93–94
-- 等于运算符, 77
-- ereg_replace() 函数, 485
-- preg_replace() 函数, 485
-- mysql_error() 函数, 181
+- 电子邮件
+  - 联系人管理系统，313
+  - 发送
+    - 反馈表单，创建，120–121
+    - 带有自定义错误的反馈表单，127–137
+    - 文件内容，157–158
+    - 脚本，121–126
+    - SMTP (简单邮件协议)，118–119
+- `each()`函数，469
+- `echo`命令，55
+- `echo()`函数，487
+- `else`语句，150, 165
+- 标签，PHP，50–52, 458
+- `ENUM`数据类型，202
+- 环境变量，460–461
+- 讨论，92
+- `HTTP AGENT`，95–96
+- `REMOTE_ADDR`，93–94
+- 等于运算符，77
+- `ereg_replace()`函数，485
+- `preg_replace()`函数，485
+- `mysql_error()`函数，181
 - 发送邮件
-- 错误检查, 133–135
-- 表单提交, 135–137
-- 初创建, 128–129
-- 值，保存, 138–139
-- 转义字符, 58–60
-- exec() 函数, 485
-- else 语句, 482
-- 过期参数，setcookie() 函数, 265
-- explode() 函数, 487
-- 表达式, 78
-- 可扩展标记语言. 见
+  - 错误检查，133–135
+  - 表单提交，135–137
+  - 初创建，128–129
+  - 值，保存，138–139
+- 转义字符，58–60
+- `exec()`函数，485
+- `else`语句，482
+- 过期参数，`setcookie()`函数，265
+- `explode()`函数，487
+- 表达式，78
+- 可扩展标记语言，见XML
 
 # 索引
 
 # F
 
-+   选项，数据格式, 371
-- fclose() 函数, 145, 476
-- 带有自定义错误的消息, 127–137
-- 邮件, 120–121
+- 选项，数据格式，371
+- `fclose()`函数，145, 476
+- 带有自定义错误的消息，127–137
+- 邮件，120–121
 - 字段
-- 唯一 ID 数字, 203
-- SET, 339
-- 定义, 202–203, 205–210
-- 输入字段, 204
-- UPDATE, 339
+  - 唯一ID数字，203
+  - `SET`，339
+  - 定义，202–203, 205–210
+  - 输入字段，204
+  - `UPDATE`，339
+- 文件路径，142
+- 文件指针，147
+- 文件系统函数，474–477
+- 文件追加数据，152–153
+- 通过邮件发送内容，157–158
+- 复制，160–162
+- 创建新的，146–149
+- 删除，164–168
+- 存在，150–152
+- 文件指针，147
+- 表单创建，170–171
+- 过程，169
+- 读取数据表单，172–173
+- 重命名，162–164
+- `files()`，155
+- 普通表单，507–508
+- `FLOAT`数据类型，201
+- 浮点数，65, 459
+- `function()`，480
+- `font_family`变量，284–285
+- `font_size`变量，284, 286
+- `fopen()`，145–147, 150, 153, 157, 475
+- `for`语句，466
+- 格式字段，202
+- 表单
+  - 计算，86–88
+  - 反馈，120–121
+  - 文件上传，170–171
+  - 输入表单，字符串函数，107–108
+  - 日志，身份验证，207–258
+  - 邮件列表创建，407–408
+  - 测试，415–413
+  - 记录添加
+    - 联系人管理系统，316–321
+    - 表格创建，220–223
+  - 记录删除，删除表单，351–355
+  - 记录修改，联系人管理系统，333–337
+  - 记录选择，联系人管理系统，328–333
+  - 删除联系人，346–350
+  - 方向，113–115
+  - 提交，41
+  - 订阅表单，邮件列表，397–404
+  - 用户添加，身份验证，250–254
+  - 值，显示，字符串函数，109–110
+- 正斜杠`/`，142
+- `fputs()`，476
+- `fread()`，155–156, 158, 476
 
-+   文件路径, 142
-- 文件指针, 147
-- 文件系统函数, 474–477
-- 文件追加数据, 152–153
-- 通过邮件发送内容, 157–158
-- 复制, 160–162
-- 创建新的, 146–149
-- 删除, 164–168
-- 存在, 150–152
-- 文件指针, 147
-- 表单创建, 170–171
-- 过程, 169
-- 读取数据表单, 172–173
-- 重命名, 162–164
-
-+   files(), 155
-- 普通表单, 507–508
-- FLOAT 数据类型, 201
-- 浮点数, 65, 459
-- function(), 480
-- font_family 变量, 284–285
-- font_size 变量, 284, 286
-- fopen(), 145–147, 150, 153, 157, 475
-- for 语句, 466
-- 格式字段, 202
-
-+   表单
-- 计算, 86–88
-- 反馈, 120–121
-- 文件上传, 170–171
-- 输入表单，字符串函数, 107–108
-- 日志，身份验证, 207–258
-- 邮件列表创建, 407–408
-- 测试, 415–413
-
-+   记录添加
-- 联系人管理系统, 316–321
-- 表格创建, 220–223
-- 记录删除，删除表单, 351–355
-- 记录修改，联系人管理系统, 333–337
-- 记录选择，联系人管理系统, 328–333
-- 删除联系人, 346–350
-- 方向, 113–115
-- 提交, 41
-- 订阅表单，邮件列表, 397–404
-- 用户添加，身份验证, 250–254
-- 值，显示，字符串函数, 109–110
-- 正斜杠 /, 142
-- fputs(), 476
-- fread(), 155–156, 158, 476
 函数
-- addslashes(), 486
-- array(), 467
-- array_keys(), 468
-- array_merge(), 468
-- array_pop(), 467
-- array_push(), 467
-- array_shift(), 465
-- array_unshift(), 466
-- array_values(), 468
-- bindec(), 463
-- ceil(), 479
-- checkdate(), 472
-- chgrp(), 474
-- chmod(), 474
-- chop(), 467
-- chown(), 256–317
-- copy(), 160–161, 474
-- count(), 213–489
-- 数据库连接, 470–471
-- date(), 370–371, 472–473, 530
-- DAYNAME(), 519
-- DAYOFMONTH(), 518
-- DAYOFWEEK(), 518
-- DAYOFEAR(), 518
-- db, 497
-- decode(), 479
-480
-49
-- define(), 69
-- die(), 147, 149–150, 153, 157, 213, 482
-- each(), 469
-- echo(), 487
-- err_replace(), 485
-- ereg_replace(), 485
-- exec(), 487
-- explode(), 487
-- fclose(), 145, 476
-- filesystem(), 474–477
-- filesize(), 158
-- floor(), 480
-- fopen(), 145–147, 150, 153, 157, 475
-- fputs(), 476
-- fread(), 155–156, 158, 476
-- fwrite(), 153
-- getenv(), 93–95, 103, 461
-- hexdec(), 480
-- htmlentities(), 488
-- htmlspecialchars(), 488
-- HTTP(), 477–478
-- implode(), 487–498
-- include(), 487–498
-- isset(), 491
-- list(), 469
-- LOWER(), 517
-- list(), 462
-- mysqli(), 118, 123, 158, 410, 478
-- mathematical, 479–481
-- microde(), 472, 474
-- mkdir(), 472
-- mysqli(), 472
-- MONTH(), 473
-- MONTH(NAME), 518
-- multiplier, 494, 497
-- sql_connect(), 181, 370
-- sql_error(), 181, 361
-- sql_fetch_array(), 233–234, 471
-- sql_list_db(), 185, 389
-- sql_list_tables(), 188–190
-- sql_num_rows(), 185, 329, 471
-- sql_query(), 159, 214, 224, 242, 471
-- sql_result(), 366
-- sql_select_db(), 213, 471
-- sql_tablename(), 185
-- mysqli_query(), 159, 488
-- row(), 326
-- number_format(), 480
-- mysqli_getid(), 480
-- opendir(), 243
-- passthru(), 484
-- PASSWORD(), 366, 392
-- phantom(), 252
-- pow(), 481
-- preg_match(), 100
-- program_execution, 483–484
-- rand(), 141
-- readfile(), 143
-- regular_expression, 485
-- rename(), 162–164, 476
-- require(), 497–498
-- reset(), 470
-- returning_values_from, 494–496
-- rmdir(), 471
-- round(), 483
-- session-handling, 486
-- session_destroy(), 486
-- session_start(), 279–280, 486
-- setockopt(), 265–267, 478
-- shuffle(), 470
-- sized(), 482
-- split(), 485
-- sprintf(), 489
-- sql_error_string(), 522
-- sqlite_open(), 522
-- sqlite_query(), 527
-- sqlite_exec(), 481
-- srand(), 481
-- string, 482–491
-- stripslashes(), 22, 227, 242, 410, 486
-- strip(), 112, 489
-- str(), 115
-- strnlower(), 112, 490
-- strrouper(), 112, 490
-- ubstr(), 23, 490
-- symlink(), 477
-- system(), 484
-- time, 472–474
-- timeof(), 286, 472
-- trim(), 226–236, 242, 487
-- ucfirst(), 491
-- ucwords(), 112, 491
-- uniqd(), 483
-- unlink(), 164–165, 477
-- unset(), 497
-- UPPER(), 517
-- usleep(), 482
-- var_dump(i), 443
-- variable, 491
 
-
-
+- `addslashes()`，486
+- `array()`，467
+- `array_keys()`，468
+- `array_merge()`，468
+- `array_pop()`，467
+- `array_push()`，467
+- `array_shift()`，465
+- `array_unshift()`，466
+- `array_values()`，468
+- `bindec()`，463
+- `ceil()`，479
+- `checkdate()`，472
+- `chgrp()`，474
+- `chmod()`，474
+- `chop()`，467
+- `chown()`，256–317
+- `copy()`，160–161, 474
+- `count()`，213–489
+- 数据库连接，470–471
+- `date()`，370–371, 472–473, 530
+- `DAYNAME()`，519
+- `DAYOFMONTH()`，518
+- `DAYOFWEEK()`，518
+- `DAYOFEAR()`，518
+- `db`，497
+- `decode()`，479
+- `define()`，69
+- `die()`，147, 149–150, 153, 157, 213, 482
+- `each()`，469
+- `echo()`，487
+- `err_replace()`，485
+- `ereg_replace()`，485
+- `exec()`，487
+- `explode()`，487
+- `fclose()`，145, 476
+- `filesystem()`，474–477
+- `filesize()`，158
+- `floor()`，480
+- `fopen()`，145–147, 150, 153, 157, 475
+- `fputs()`，476
+- `fread()`，155–156, 158, 476
+- `fwrite()`，153
+- `getenv()`，93–95, 103, 461
+- `hexdec()`，480
+- `htmlentities()`，488
+- `htmlspecialchars()`，488
+- `HTTP()`，477–478
+- `implode()`，487–498
+- `include()`，487–498
+- `isset()`，491
+- `list()`，469
+- `LOWER()`，517
+- `list()`，462
+- `mysqli()`，118, 123, 158, 410, 478
+- mathematical，479–481
+- `microde()`，472, 474
+- `mkdir()`，472
+- `mysqli()`，472
+- `MONTH()`，473
+- `MONTH(NAME)`，518
+- `multiplier`，494, 497
+- `sql_connect()`，181, 370
+- `sql_error()`，181, 361
+- `sql_fetch_array()`，233–234, 471
+- `sql_list_db()`，185, 389
+- `sql_list_tables()`，188–190
+- `sql_num_rows()`，185, 329, 471
+- `sql_query()`，159, 214, 224, 242, 471
+- `sql_result()`，366
+- `sql_select_db()`，213, 471
+- `sql_tablename()`，185
+- `mysqli_query()`，159, 488
+- `row()`，326
+- `number_format()`，480
+- `mysqli_getid()`，480
+- `opendir()`，243
+- `passthru()`，484
+- `PASSWORD()`，366, 392
+- `phantom()`，252
+- `pow()`，481
+- `preg_match()`，100
+- `program_execution`，483–484
+- `rand()`，141
+- `readfile()`，143
+- `regular_expression`，485
+- `rename()`，162–164, 476
+- `require()`，497–498
+- `reset()`，470
+- `returning_values_from`，494–496
+- `rmdir()`，471
+- `round()`，483
+- `session-handling`，486
+- `session_destroy()`，486
+- `session_start()`，279–280, 486
+- `setockopt()`，265–267, 478
+- `shuffle()`，470
+- `sized()`，482
+- `split()`，485
+- `sprintf()`，489
+- `sql_error_string()`，522
+- `sqlite_open()`，522
+- `sqlite_query()`，527
+- `sqlite_exec()`，481
+- `srand()`，481
+- string，482–491
+- `stripslashes()`，22, 227, 242, 410, 486
+- `strip()`，112, 489
+- `str()`，115
+- `strnlower()`，112, 490
+- `strrouper()`，112, 490
+- `ubstr()`，23, 490
+- `symlink()`，477
+- `system()`，484
+- time，472–474
+- `timeof()`，286, 472
+- `trim()`，226–236, 242, 487
+- `ucfirst()`，491
+- `ucwords()`，112, 491
+- `uniqd()`，483
+- `unlink()`，164–165, 477
+- `unset()`，497
+- `UPPER()`，517
+- `usleep()`，482
+- `var_dump(i)`，443
+- variable，491
 
 # 索引
 
-ID, 按此顺序显示记录, 233–234
-- id 字段, 202
-- ID 数字, 唯一, 203
-- 语句, 89
-- if else 语句, 79–81, 464
-- implode() 函数, 487–498
-- include() 函数, 497–498
-- 增/减运算符, 463–504
-- 继承, 对象, 字符串函数, 107–108
-- INSERT 命令, 515
+ID，按此顺序显示记录，233–234
+
+- `id`字段，202
+- ID数字，唯一，203
+- 语句，89
+- `if else`语句，79–81, 464
+- `implode()`函数，487–498
+- `include()`函数，497–498
+- 增/减运算符，463–504
+- 继承，对象，字符串函数，107–108
+- `INSERT`命令，515
 - 安装
-  - Apache Linux/Unix, 30–31
-  - Windows, 24–27
-  - MySQL 在 Linux, 14–16
-  - Windows, 4–8
-  - PHP Linux/Unix, 43–44
-  - Windows, 38–41
-- 终止符, 55–57
-- INT 数据类型, 201
+  - Apache Linux/Unix，30–31
+  - Windows，24–27
+  - MySQL在Linux，14–16
+  - Windows，4–8
+  - PHP Linux/Unix，43–44
+  - Windows，38–41
+- 终止符，55–57
+- `INT`数据类型，201
 - 整数
-  - 已定义, 65
-  - 变量, 459
-- isset() 函数, 491
+  - 已定义，65
+  - 变量，459
+- `isset()`函数，491
 
 # 索引
+
 J
-- j 选项, 日期格式, 371
+
+- `j`选项，日期格式，371
 
 # 索引
-- L 选项, 日期格式, 371
-- 启动窗口, 27
-- 小于运算符, 77
-- 小于等于运算符, 77
+
+- `L`选项，日期格式，371
+- 启动窗口，27
+- 小于运算符，77
+- 小于等于运算符，77
 - Linux
-  - Apache 配置, 32–34
-  - Apache 安装, 30–31
-  - 配置选项, 232–255
-  - MySQL 安装, 14–16
-  - PHP 安装, 43–44
-- list() 函数, 489
-- 局部变量, 67
-- 日志文件, Apache, 416–417
-- 日志运算符, 71, 81–83, 464
-- 登录表单, 认证, 257–258
-- LOWER() 函数, 517
-- trim() 函数, 487
+  - Apache配置，32–34
+  - Apache安装，30–31
+  - 配置选项，232–255
+  - MySQL安装，14–16
+  - PHP安装，43–44
+- `list()`函数，489
+- 局部变量，67
+- 日志文件，Apache，416–417
+- 日志运算符，71, 81–83, 464
+- 登录表单，认证，257–258
+- `LOWER()`函数，517
+- `trim()`函数，487
 
 # 索引
-M(), 118, 123, 158, 410, 413, 478
+
+`M()`，118, 123, 158, 410, 413, 478
+
 - 邮件列表
-  - 邮件表单, 创建, 407–408
-  - 测试, 412–413
-  - 故障排除脚本, 邮件列表, 408–411
-  - 邮件列表脚本, 创建, 408–411
-  - PHP 资源, 452
-- 订阅表, 创建, 394–396
+  - 邮件表单，创建，407–408
+  - 测试，412–413
+  - 故障排除脚本，邮件列表，408–411
+  - 邮件列表脚本，创建，408–411
+  - PHP资源，452
+- 订阅表，创建，394–396
 - 订阅表单
-    - 创建, 397–404
-    - 测试, 404–406
-- make 命令, 31
-- 数学函数, 279–481
-- MAXLENGTH 属性, 220, 251
-- MEDIUMINT 数据类型, 201
+  - 创建，397–404
+  - 测试，404–406
+- `make`命令，31
+- 数学函数，279–481
+- `MAXLENGTH`属性，220, 251
+- `MEDIUMINT`数据类型，201
 - 方法
-  - GET, 460
-  - 对象, 341–302
-  - POST, 86, 107, 113, 120, 460
-  - Microsoft Internet Explorer (MSIE), 95
-  - microtime() 函数, 472, 474
-  - MIME 类型, 172, 478
-  - mkdir() 函数, 378
-  - mktime() 函数, 372
-  - 取模运算符, 74
-  - MONTH() 函数, 518
-  - MONTHNAME() 函数, 518
-- msg_variable, 298
-- MSIE (Internet Explorer), 95
-- 乘法运算符(*), 74
-- multiplier() 函数, 494, 497
-- my_contacts 表, 305–306, 312–314
-- my_notes_field, 202
+  - `GET`，460
+  - 对象，341–302
+  - `POST`，86, 107, 113, 120, 460
+- Microsoft Internet Explorer (MSIE)，95
+- `microtime()`函数，472, 474
+- MIME类型，172, 478
+- `mkdir()`函数，378
+- `mktime()`函数，372
+- 取模运算符，74
+- `MONTH()`函数，518
+- `MONTHNAME()`函数，518
+- `msg_variable`，298
+- MSIE (Internet Explorer)，95
+- 乘法运算符(`*`)，74
+- `multiplier()`函数，494, 497
+- `my_contacts`表，305–306, 312–314
+- `my_notes_field`，202
 - MySQL
-  - 连接, 181–182
-  - 发行, 4
-  - 在 Linux 上, 14–16
-  - 在 Windows 上, 4–8
-  - 资源, 534
-  - 启动, 8–9
-  - MySQL 器, 10–11
-- mysql_connect() 函数, 181, 470
-- mysql_error() 函数, 181, 366, 471
-- mysql_fetch_array() 函数, 233–234, 471
-- mysql_list_dbs() 函数, 185, 189
-- mysql_list_tables() 函数, 188–190
-- mysql_num_rows() 函数, 185, 329, 471
-- mysql_query() 函数, 193, 214, 224, 242, 471
-- mysql_result() 函数, 366
-- mysql_select_db() 函数, 213, 471
-- mysql_tablename() 函数, 185
+  - 连接，181–182
+  - 发行，4
+  - 在Linux上，14–16
+  - 在Windows上，4–8
+  - 资源，534
+  - 启动，8–9
+  - MySQL器，10–11
+- `mysql_connect()`函数，181, 470
+- `mysql_error()`函数，181, 366, 471
+- `mysql_fetch_array()`函数，233–234, 471
+- `mysql_list_dbs()`函数，185, 189
+- `mysql_list_tables()`函数，188–190
+- `mysql_num_rows()`函数，185, 329, 471
+- `mysql_query()`函数，193, 214, 224, 242, 471
+- `mysql_result()`函数，366
+- `mysql_select_db()`函数，213, 471
+- `mysql_tablename()`函数，185
 
 # 索引
+
 N
-- n12br() 函数, 159, 488
-- NAME 属性, 220
-- name 参数, setcookie() 函数, 265
-- 命名变量, 64–65
-- 换行符 (n), 122, 153
-- 邮件表单, 邮件列表
-  - 创建, 407–408
-  - 测试, 412–413
-  - 故障排除脚本, 邮件列表, 408–411
+
+- `n12br()`函数，159, 488
+- `NAME`属性，220
+- `name`参数，`setcookie()`函数，265
+- 命名变量，64–65
+- 换行符(`n`)，122, 153
+- 邮件表单，邮件列表
+  - 创建，407–408
+  - 测试，412–413
+  - 故障排除脚本，邮件列表，408–411
 - 范式
-  - 联系人管理示例, 510–513
-  - 第一范式, 507–508
-  - 第二范式, 508–509
-  - 第三范式, 509–510
-- 不等于 (=) 运算符, 77
-- now() 函数, 528
-- number_format() 函数, 480
+  - 联系人管理示例，510–513
+  - 第一范式，507–508
+  - 第二范式，508–509
+  - 第三范式，509–510
+- 不等于(`=`)运算符，77
+- `now()`函数，528
+- `number_format()`函数，480
+
 # 索引
+
 对象
-  - 构造函数, 502
-  - 创建, 499–500
-  - 实例, 502–534
-  - 方法, 501–502
-  - 属性, 500–501
-- next() 函数, 480
-- opendir(), 143
+
+- 构造函数，502
+- 创建，499–500
+- 实例，502–534
+- 方法，501–502
+- 属性，500–501
+
+- `next()`函数，480
+- `opendir()`，143
 - 运算符
-  - 算术, 71, 74–77, 462
-  - 赋值, 71–74, 462
-  - 比较, 71, 77–80, 463
-  - 增/减, 463
-  - 逻辑, 71, 81–83, 464
-  - 类型, 71
-  - 或 (**) 运算符, 81
+  - 算术，71, 74–77, 462
+  - 赋值，71–74, 462
+  - 比较，71, 77–80, 463
+  - 增/减，463
+  - 逻辑，71, 81–83, 464
+  - 类型，71
+  - 或(`**`)运算符，81
 
 # 索引
+
 P
-- 页面分解, 访问报告, 431–435
-- passthru() 函数, 484
-- PASSWORD() 函数, 252
-- path 参数, setcookie() 函数, 265
-- 权限, 路径, 142
-- 个人访问报告, 425–427
+
+- 页面分解，访问报告，431–435
+- `passthru()`函数，484
+- `PASSWORD()`函数，252
+- `path`参数，`setcookie()`函数，265
+- 权限，路径，142
+- 个人访问报告，425–427
 - PHP
-  - Apache 配置, 44–45
-  - 代码, 53–55
-  - 在 Linux/Unix 上, 43–44
-  - 在 Windows 上, 38–41
-  - 资源, 532–534
-  - 开始和结束标签, 30–52, 458
-  - 结构, 536
-  - 网站, 532
-  - XML, 141–444
-- phpinfo() 函数, 68, 92
-- 平台特定的 HTML, 103–106
-- 填充表, 229–230
-- POST 方法, 86, 107, 113, 120, 460
-- pow() 函数, 481
-- 预定义变量, 58
-- 偏好, 284–288
-- preg_match() 函数, 100
+  - Apache配置，44–45
+  - 代码，53–55
+  - 在Linux/Unix上，43–44
+  - 在Windows上，38–41
+  - 资源，532–534
+  - 开始和结束标签，30–52, 458
+  - 结构，536
+  - 网站，532
+  - XML，141–444
+- `phpinfo()`函数，68, 92
+- 平台特定的HTML，103–106
+- 填充表，229–230
+- `POST`方法，86, 107, 113, 120, 460
+- `pow()`函数，481
+- 预定义变量，58
+- 偏好，284–288
+- `preg_match()`函数，100
 - 权限
-  - GRANT 命令, 180–181
-  - 用户, 创建, 180–181
-  - 程序执行, 483–484
-- 属性, 500–501
+  - `GRANT`命令，180–181
+  - 用户，创建，180–181
+- 程序执行，483–484
+- 属性，500–501
 
 # 索引
+
 R
-- r , fopen() 函数, 146
-- r+ , fopen() 函数, 146
-- rand() 函数, 483
-- 只读记录, 384–390
-- readdir() 函数, 143
-- 从文件读取数据, 154–157
-- rec_label 字段, 202
+
+- `r`，`fopen()`函数，146
+- `r+`，`fopen()`函数，146
+- `rand()`函数，483
+- 只读记录，384–390
+- `readdir()`函数，143
+- 从文件读取数据，154–157
+- `rec_label`字段，202
 - 记录添加表单
-  - 联系人管理系统, 316–321
-  - 表创建, 220–223
+  - 联系人管理系统，316–321
+  - 表创建，220–223
 - 记录添加脚本
-  - 联系人管理系统, 321–325
-  - 表创建, 223–229
-- 记录删除表单, 删除联系人, 351–355
-- 记录删除脚本, 删除联系人, 355–358
-- 记录列表, 信息, 379–383
-- 记录修改表单, 联系人管理系统, 333–337
-- 记录修改脚本, 联系人管理系统, 337–341
+  - 联系人管理系统，321–325
+  - 表创建，223–229
+- 记录删除表单，删除联系人，351–355
+- 记录删除脚本，删除联系人，355–358
+- 记录列表，信息，379–383
+- 记录修改表单，联系人管理系统，333–337
+- 记录修改脚本，联系人管理系统，337–341
 - 记录选择表单
-  - 记录,
-    - 按艺术家, 260–264
-    - 按日期获取, 238
-    - 按 ID, 232–236
-    - 按标题, 239–240
-  - 重定向表单, 113–115
-- 注册会话, 282–283
-- 正则表达式函数, 485
-- REMOTE 环境变量, 93–94
-- rename(), 152–164, 476
-- 重命名文件, 162–166
-- REPLACE 命令, 515
-- 替换表, 515–516
-- 报告,
-  - 代码段, 418–422
-  - 计数, 422–425
-  - 数据库表创建, 417–418
-  - 页面分解, 431–435
-  - 个人, 426–427
-  - 用户代理, 428–431
-- require() 函数, 497–498
-- reset() 函数, 470
-- 资源,
-  - Apache, 534
-  - MySQL, 494
-  - PHP, 532–534
-- return 语句, 495–496
-- 从函数返回, 494–496
-- rdir() 函数, 477
-- round() 函数, 481
-- Run 命令 (开始菜单), 8–9
+  - 记录
+    - 按艺术家，260–264
+    - 按日期获取，238
+    - 按ID，232–236
+    - 按标题，239–240
+  - 重定向表单，113–115
+- 注册会话，282–283
+- 正则表达式函数，485
+- `REMOTE`环境变量，93–94
+- `rename()`，152–164, 476
+- 重命名文件，162–166
+- `REPLACE`命令，515
+- 替换表，515–516
+- 报告
+  - 代码段，418–422
+  - 计数，422–425
+  - 数据库表创建，417–418
+  - 页面分解，431–435
+  - 个人，426–427
+  - 用户代理，428–431
+- `require()`函数，497–498
+- `reset()`函数，470
+- 资源
+  - Apache，534
+  - MySQL，494
+  - PHP，532–534
+- `return`语句，495–496
+- 从函数返回，494–496
+- `rdir()`函数，477
+- `round()`函数，481
+- `Run`命令(开始菜单)，8–9
 
 # 索引
+
 S
-- S 选项, 日期格式, 371
-- 脚本, 创建, 258–261
-- 认证, 89–91
-- 联系人管理系统, 306–312
-- 电子邮件, 发送, 121–124
-- 文件上传, 172–173
-- 邮件列表, 邮件列表, 408–411
+
+- `S`选项，日期格式，371
+- 脚本，创建，258–261
+- 认证，89–91
+- 联系人管理系统，306–312
+- 电子邮件，发送，121–124
+- 文件上传，172–173
+- 邮件列表，邮件列表，408–411
 - 记录添加
-  - 联系人管理系统, 321–325
-  - 表, 223–229
-- 记录删除, 删除联系人, 355–358
-- 记录修改, 联系人管理系统, 337–341
-- 表创建, 212–216
-- 用户添加, 认证, 250–254
-- 第二范式, 508–509
-- 安全参数, setcookie() 函数, 265–267
-- SELECT 命令, 12, 20, 516–517
-- 分号(),), 10, 55
+  - 联系人管理系统，321–325
+  - 表，223–229
+- 记录删除，删除联系人，355–358
+- 记录修改，联系人管理系统，337–341
+- 表创建，212–216
+- 用户添加，认证，250–254
+- 第二范式，508–509
+- 安全参数，`setcookie()`函数，265–267
+- `SELECT`命令，12, 20, 516–517
+- 分号(`;`)，10, 55
 - 发送邮件
-  - 反馈表单, 创建, 120–121
-  - 自定义消息, 32, 127–131, 133–137
-- 脚本, 121–124
-- 服务端代码, 59
-- 服务器, 列出数据库在, 185–187
-- 会话处理函数, 486
-- session_destroy() 函数, 486
+  - 反馈表单，创建，120–121
+  - 自定义消息，32, 127–131, 133–137
+- 脚本，121–124
+- 服务端代码，59
+- 服务器，列出数据库在，185–187
+- 会话处理函数，486
+- `session_destroy()`函数，486
 - 会话
-  - 定义, 278
-  - 编辑, 282–283
-  - 注册, 282–283
-  - 启动, 272–281
-  - 用户偏好, 管理, 284–288
-  - 变量, 79
-- session_start() 函数, 279–280, 486
-- SET 字段, 398
-- 设置应用程序, 5
-- SHOW 命令, 519–520
-- shuffle(), 470
-- 简单邮件传输协议 (SMTP), 118–119
-- simple(), 65
-- sizeof() 函数, 470
-- sleep() 函数, 482
-- SMALLINT 数据类型, 200
-- SMTP (简单邮件传输协议), 118–119
-- split() 函数, 485
-- strtoupper() 函数, 112, 490
+  - 定义，278
+  - 编辑，282–283
+  - 注册，282–283
+  - 启动，272–281
+  - 用户偏好，管理，284–288
+  - 变量，79
+- `session_start()`函数，279–280, 486
+- `SET`字段，398
+- 设置应用程序，5
+- `SHOW`命令，519–520
+- `shuffle()`，470
+- 简单邮件传输协议(SMTP)，118–119
+- `simple()`，65
+- `sizeof()`函数，470
+- `sleep()`函数，482
+- `SMALLINT`数据类型，200
+- SMTP (简单邮件传输协议)，118–119
+- `split()`函数，485
+- `strtoupper()`函数，112, 490
+
 # SQL (结构化查询语言)
-- ALTER 命令, 514–515
-- CREATE 命令, 513–514
-- 日期和时间函数, 518–519
-- DELETE 命令, 516
-- DROP 命令, 513–514, 516
-- INSERT 命令, 512
-- REPLACE 命令, 515
-- SELECT 命令, 515–517
-- 字符串函数, 517
-- UPDATE 命令, 516
-- sql_error_function(), 522
+
+- `ALTER`命令，514–515
+- `CREATE`命令，513–514
+- 日期和时间函数，518–519
+- `DELETE`命令，516
+- `DROP`命令，513–514, 516
+- `INSERT`命令，512
+- `REPLACE`命令，515
+- `SELECT`命令，515–517
+- 字符串函数，517
+- `UPDATE`命令，516
+- `sql_error_function()`，522
 - SQLite
-  - 创建表和存储数据, 523–524
-  - 获取项目, 524–526
-- sql_open() 函数, 522
-- sql_query() 函数, 527
-- sqrt() 函数, 481
-- srand(), 481
-- 开始和结束标签, PHP, 50–52, 458
-- 开始菜单命令, 8–9
+  - 创建表和存储数据，523–524
+  - 获取项目，524–526
+- `sql_open()`函数，522
+- `sql_query()`函数，527
+- `sqrt()`函数，481
+- `srand()`，481
+- 开始和结束标签，PHP，50–52, 458
+- 开始菜单命令，8–9
 - 启动
-  - Apache, 29–30, 34–35
-  - MySQL, 8–9
-  - 会话, 279–281
+  - Apache，29–30, 34–35
+  - MySQL，8–9
+  - 会话，279–281
 - 语句
-  - for, 466
-  - else, 150, 165
-  - elif, 452
-  - if, 89
-  - else, 79–81, 464–465
-  - return, 495–496
-  - while, 81, 466
+  - `for`，466
+  - `else`，150, 165
+  - `elif`，452
+  - `if`，89
+  - `else`，79–81, 464–465
+  - `return`，495–496
+  - `while`，81, 466
 - 字符串
-  - 拼接, 122
-  - 函数, 486–491
-  - 讨论, 158
-  - 表单值, 109–110
-  - 输入表单, 107–108
-  - 值, 459–460
-- 变量, 65
-- stripslashes 函数, 227, 242, 410, 486
-- strn() 函数, 112, 489
-- strrev(), 112
-- strr() 函数, 112, 490
-- strtoupper() 函数, 112, 490
-
-
-
-
+  - 拼接，122
+  - 函数，486–491
+  - 讨论，158
+  - 表单值，109–110
+  - 输入表单，107–108
+  - 值，459–460
+- 变量，65
+- `stripslashes`函数，227, 242, 410, 486
+- `strn()`函数，112, 489
+- `strrev()`，112
+- `strr()`函数，112, 490
+- `strtoupper()`函数，112, 490
 
 # 索引
 
 # T
 
-制表符字符 (lt), 126–127
+制表符字符(`lt`)，126–127
 
-+ 表
-- 管理员菜单, 232–234
-- 修改, 514–515
-- 单元格数据, 221–222
-- 创建
-  - 访问报告, 417–418
-  - 脚本用于, 212–216
-  - 两步表单过程, 203
-- 数据类型列表, 200–202
-- 删除, 516
-- 字段
-  - 定义, 202, 205–210
-  - ID 号，唯一的, 203
-  - 输入字段, 204
-  - 插入, 515–516
-- 在数据库中列出, 188–192
-- 填充, 229–239
-- 记录添加, 220–223
-- 记录添加脚本, 223–229
-- 记录,
-  - 按艺术家, 240–244
-  - 按获取的数据, 238
-  - 按日期, 233–234
-  - 按标题, 226–240
-- 替换, 515–516
-- 选择自, 517–517
-- 更新, 515–519
-- 用户表，验证, 248–249
-- 标签，起始标签和结束标签，PHP, 50–52
+- 表
+  - 管理员菜单，232–234
+  - 修改，514–515
+  - 单元格数据，221–222
+  - 创建
+    - 访问报告，417–418
+    - 脚本用于，212–216
+    - 两步表单过程，203
+  - 数据类型列表，200–202
+  - 删除，516
+  - 字段
+    - 定义，202, 205–210
+    - ID号，唯一的，203
+    - 输入字段，204
+    - 插入，515–516
+  - 在数据库中列出，188–192
+  - 填充，229–239
+  - 记录添加，220–223
+  - 记录添加脚本，223–229
+  - 记录
+    - 按艺术家，240–244
+    - 按获取的数据，238
+    - 按日期，233–234
+    - 按标题，226–240
+  - 替换，515–516
+  - 选择自，517–517
+  - 更新，515–519
+  - 用户表，验证，248–249
+- 标签，起始标签和结束标签，PHP，50–52
+- 测试
+  - Apache安装
+    - 在Linux上，34
+    - 在Windows上，35
+  - MySQL安装
+    - 在Linux上，16–21
+    - 在Windows上，8–13
+  - 通讯表单，邮件列表，411–413
+  - PHP安装
+    - 在Linux上，44–45
+    - 在Windows上，41–42
+  - 订阅表单，邮件列表，404–406
 
-+ 测试
-- Apache 安装
-  - 在 Linux 上, 34
-  - 在 Windows 上, 35
-- MySQL 安装
-  - 在 Linux 上, 16–21
-  - 在 Windows 上, 8–13
-- 通讯表单，邮件列表, 411–413
-- PHP 安装
-  - 在 Linux 上, 44–45
-  - 在 Windows 上, 41–42
-- 订阅表单，邮件列表, 404–406
+`TEXT`数据类型，201
 
-TEXT 数据类型, 201
+第三范式，509–510
 
-第三范式, 509–510
+`time()`函数，266, 472
 
-time() 函数, 266, 472
+时间函数，472–474
 
-时间函数, 472–474
+`TIMESTAMP`数据类型，201
 
-TIMESTAMP 数据类型, 201
+`TINYINT`数据类型，200
 
-TINYINT 数据类型, 200
+- 标题
+  - 显示按排序的记录，239–240
+  - 标题字段，202
 
-+ 标题
-- 显示按排序的记录, 239–240
-- 标题字段, 202
-
-trim() 函数, 235–236, 242, 487
+`trim()`函数，235–236, 242, 487
 
 典型实现方法
 
-#### Apache 安装, 26
-- MySQL 安装, 6-7
+#### Apache安装，26
 
-Team LiB 上一页 下页
+- MySQL安装，6-7
 
 # 索引
 
 # U
 
-+ - ucfirst() 函数, 491
-ucwords() 函数, 12, 491
-下划线字符 (), 64, 459
-uniq() 函数, 483
-Unix
-- Apache 配置, 32–34
-- Apache 安装, 31–35
-- PHP 安装, 43–44
-un-link() 函数, 164–165, 477
-unset() 函数, 491
-UPDATE 命令, 516
-UPDATE 字段, 339
-上传表, 515–516
-上传，文件
-  - 讨论, 168
-  - 创建, 170–171
-  - 过程, 169
-上传脚本, 172–173
-UPPER() 函数, 517
-用户代理，访问报告, 428–431
-用户验证。参见验证
-用户组，PHP 资源, 534
-用户表，验证, 248–249
-用户，创建新用户, 180–181
-usleep() 函数, 482
+- `ucfirst()`函数，491
+- `ucwords()`函数，12, 491
+- 下划线字符(`_`)，64, 459
+- `uniq()`函数，483
+- Unix
+  - Apache配置，32–34
+  - Apache安装，31–35
+  - PHP安装，43–44
+- `un-link()`函数，164–165, 477
+- `unset()`函数，491
+- `UPDATE`命令，516
+- `UPDATE`字段，339
+- 上传表，515–516
+- 上传，文件
+  - 讨论，168
+  - 创建，170–171
+  - 过程，169
+- 上传脚本，172–173
+- `UPPER()`函数，517
+- 用户代理，访问报告，428–431
+- 用户验证，参见验证
+- 用户表，验证，248–249
+- 用户，创建新用户，180–181
+- `usleep()`函数，482
 
 # 索引
 
 # V
 
-VALUE 属性, 138
-value 参数, setcookie() 函数, 265
-返回值，从函数返回, 494–496
-varchar 命令, 249
-VARCHAR 数据类型, 201
-var_dump() 函数, 443
+`VALUE`属性，138
+
+`value`参数，`setcookie()`函数，265
+
+返回值，从函数返回，494–496
+
+`varchar`命令，249
+
+`VARCHAR`数据类型，201
+
+`var_dump()`函数，443
+
 变量
 
-+ 数组, 461
-- 常量, 70–88
-- 来自 cookies, 460
-- 已定义, 62
-- 环境变量, 460–461
-- 讨论, 92
-- HTTP USER_AGENT, 95–96
-- REMOTE_ADDR, 93–94
-- 浮点值, 65, 459
-- font_family, 284–286
-- font_size, 291
-- 全局, 71
-- 隐藏, 73
-- HTML 表单, 460
-- 整数, 65, 459
-- 局部, 67
-- msg, 298
-- 命名, 264–65
-- 预定义的, 68
-- Session, 279
-- 字符串值, 65, 459–460
-- 超全局变量, 68
+- 数组，461
+- 常量，70–88
+- 来自cookies，460
+- 已定义，62
+- 环境变量，460–461
+- 讨论，92
+- `HTTP USER_AGENT`，95–96
+- `REMOTE_ADDR`，93–94
+- 浮点值，65, 459
+- `font_family`，284–286
+- `font_size`，291
+- 全局，71
+- 隐藏，73
+- HTML表单，460
+- 整数，65, 459
+- 局部，67
+- `msg`，298
+- 命名，264–65
+- 预定义的，68
+- Session，279
+- 字符串值，65, 459–460
+- 超全局变量，68
 
-# 索引 
+# 索引
 
 # W
 
-+ w 模式, fopen() 函数, 146
-
-+ w+ 模式, fopen() 函数, 146
-
-+ 网站, 24
-ApacheWeek, 534
-DevSted, 532
-PHP, 532
-PHPBuilder, 532
-WebDev, 532
-Webmonkey, 533
-Wend Technologies, 533
-WebDev, 533
-Webmonkey, 533
-WEEKDAY() 函数, 519
-while 语句, 81
-Win32 Binary, 24
-Windows
-Apache 配置, 24
-Apache 安装, 24
-扩展, 52–53
-MySQL 安装, 24
+- `w`模式，`fopen()`函数，146
+- `w+`模式，`fopen()`函数，146
+- 网站，24
+  - ApacheWeek，534
+  - DevSted，532
+  - PHP，532
+  - PHPBuilder，532
+  - WebDev，532
+  - Webmonkey，533
+  - Wend Technologies，533
+  - WebDev，533
+  - Webmonkey，533
+- `WEEKDAY()`函数，519
+- `while`语句，81
+- Win32 Binary，24
+- Windows
+  - Apache配置，24
+  - Apache安装，24
+  - 扩展，52–53
+  - MySQL安装，24
 
 # 索引
 
 # X
 
-+ XML (可扩展标记语言)
-大小写敏感, 440
-已定义, 38
-解析并显示内容自, 444–477
-使用 PHP, 444–45
-结构, 38
-xml.php, 447
-XSL (可扩展样式语言), 438
+- XML (可扩展标记语言)
+  - 大小写敏感，440
+  - 已定义，38
+  - 解析并显示内容自，444–477
+  - 使用PHP，444–45
+  - 结构，38
+- `xml.php`，447
+- XSL (可扩展样式语言)，438
 
 # 索引
 
 # Y-Z
 
-+ Y 选项, date, 371
-YEAR() 函数, 519
-Zend Technologies, 532
+- `Y`选项，`date`，371
+- `YEAR()`函数，519
+- Zend Technologies，532
 
 # 索引
 
 # 表格列表
 
-## 第 4 章 混合 PHP 和 HTML
+## 第4章 混合PHP和HTML
 
-表 4.1: PHP 起始和结束标签
+表4.1: PHP起始和结束标签
 
-## 第 5 章 介绍变量和运算符
+## 第5章 介绍变量和运算符
 
-表 5.1: 赋值运算符
+表5.1: 赋值运算符
 
-表 5.2: 算术运算符
+表5.2: 算术运算符
 
-表 5.3: 比较运算符
+表5.3: 比较运算符
 
-## 第 9 章 使用你的文件系统
+## 第9章 使用你的文件系统
 
-表 9.1: 用于 fopen() 的模式
+表9.1: 用于`fopen()`的模式
 
-## 第 12 章 创建数据库表
+## 第12章 创建数据库表
 
-表 12.1:  MySQL 数据类型
+表12.1: MySQL数据类型
 
-表 12.2: my_music
+表12.2: `my_music`
 
-## 第 16 章 使用 Cookies
+## 第16章 使用Cookies
 
-表 16.1: 常用时间
+表16.1: 常用时间
 
-## 第 18 章 规划你的系统
+## 第18章 规划你的系统
 
-表 18.1: my_contacts
+表18.1: `my_contacts`
 
-## 第 22 章 处理联系人
+## 第22章 处理联系人
 
-表 22.1: 日期格式示例
+表22.1: 日期格式示例
 
-## 第 23 章 管理简单的邮件列表
+## 第23章 管理简单的邮件列表
 
-表 23.1: subscribers 表字段
+表23.1: `subscribers`表字段
 
-## 第 24 章 创建自定义日志和报告
+## 第24章 创建自定义日志和报告
 
-表 24.1: Apache 日志文件设置
+表24.1: Apache日志文件设置
 
-## 附录 A 附加配置选项
+## 附录A 附加配置选项
 
-表 A.1: Windows 扩展
-表 A.2: 可用扩展
+表A.1: Windows扩展
 
-## 附录 B 基础 PHP 语言参考
+表A.2: 可用扩展
 
-表 B.1: PHP 起始和结束标签
-表 B.2: 算术运算符
-表 B.3: 赋值运算符
-表 B.4: 比较运算符
-表 B.5: 增//减运算符
-表 B.6: 逻辑运算符
-表 B.7: date() 函数格式
-表 B.8: fopen() 函数模式
-表 B.9: sprintf() 函数格式化指令
+## 附录B 基础PHP语言参考
 
-## 附录 D 数据库规范化和 SQL 参考
+表B.1: PHP起始和结束标签
 
-表 D.1: 学生和课程的表
-表 D.2: students 表
-表 D.3: students_courses 表
-表 D.4: courses 表
-表 D.5: 新 students_courses 表
-表 D.6: courses 表
-表 D.7: instructors 表
-表 D.8: 原始 my_contacts 表
-表 D.9: address 表字段
-表 D.10: phone 表字段
-表 D.11: email 表字段
-表 D.12: 新 my_contacts 表
+表B.2: 算术运算符
 
+表B.3: 赋值运算符
+
+表B.4: 比较运算符
+
+表B.5: 增/减运算符
+
+表B.6: 逻辑运算符
+
+表B.7: `date()`函数格式
+
+表B.8: `fopen()`函数模式
+
+表B.9: `sprintf()`函数格式化指令
+
+## 附录D 数据库规范化和SQL参考
+
+表D.1: 学生和课程的表
+
+表D.2: `students`表
+
+表D.3: `students_courses`表
+
+表D.4: `courses`表
+
+表D.5: 新`students_courses`表
+
+表D.6: `courses`表
+
+表D.7: `instructors`表
+
+表D.8: 原始`my_contacts`表
+
+表D.9: `address`表字段
+
+表D.10: `phone`表字段
+
+表D.11: `email`表字段
+
+表D.12: 新`my_contacts`表

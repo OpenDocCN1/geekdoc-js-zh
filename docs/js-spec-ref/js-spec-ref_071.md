@@ -1,17 +1,7 @@
+
 # 8.5 Gulp：任务自动管理工具
 
 Gulp 与 Grunt 一样，也是一个自动任务运行器。它充分借鉴了 Unix 操作系统的管道（pipe）思想，很多人认为，在操作上，它要比 Grunt 简单。
-
-*   安装
-*   gulpfile.js
-*   gulp 模块的方法
-    *   src()
-    *   dest()
-    *   task()
-    *   watch()
-    *   gulp-load-plugins 模块
-    *   gulp-livereload 模块
-    *   参考链接
 
 ## 安装
 
@@ -19,7 +9,6 @@ Gulp 需要全局安装，然后再在项目的开发目录中安装为本地模
 
 ```js
 npm install -g gulp
-
 npm install --save-dev gulp
 ```
 

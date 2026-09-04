@@ -1,19 +1,5 @@
-# 13.8 Buffer 对象
 
-*   概述
-*   Buffer 构造函数
-*   类的方法
-    *   Buffer.isEncoding()
-    *   Buffer.isBuffer()
-    *   Buffer.byteLength()
-    *   Buffer.concat()
-    *   实例属性
-        *   length
-    *   实例方法
-        *   write()
-        *   slice()
-        *   toString()
-        *   toJSON()
+# 13.8 Buffer 对象
 
 ## 概述
 

@@ -1,17 +1,9 @@
+
 # HTML、CSS 和 JavaScript
-
-
 
 ![](img/image_rsrcG8R.jpg)
 
-
-
 ## 献给我的父母和姐妹们
-
-
-
-
-
 
 # 第 1 章 网页设计基础
 
@@ -84,10 +76,10 @@
 
 #### 电子商务的类型
 
-- **企业对企业（B2B）**：从一个企业向另一个商业伙伴交换服务、信息和商品。例如 ebay.com
-- **企业对消费者（B2C）**：从企业向消费者交换服务、信息和商品。例如：amazon.com、flipkart.com 等。
-- **消费者对企业（C2B）**：从客户向企业交换服务、信息和商品。客户通过在线发布他们的项目工作直接联系企业供应商，以便有需求的公司查看并直接与客户联系并投标。消费者审查所有投标并选择公司进行进一步处理。例如 guru.com、freelancer.com 等。
-- **消费者对消费者（C2C）**：从一个客户向另一个客户交换服务、信息和商品。例如 olx.com
+- **企业对企业（B2B）**：从一个企业向另一个商业伙伴交换服务、信息和商品。例如`ebay.com`
+- **企业对消费者（B2C）**：从企业向消费者交换服务、信息和商品。例如：`amazon.com`、`flipkart.com`等。
+- **消费者对企业（C2B）**：从客户向企业交换服务、信息和商品。客户通过在线发布他们的项目工作直接联系企业供应商，以便有需求的公司查看并直接与客户联系并投标。消费者审查所有投标并选择公司进行进一步处理。例如`guru.com`、`freelancer.com`等。
+- **消费者对消费者（C2C）**：从一个客户向另一个客户交换服务、信息和商品。例如`olx.com`
 
 #### 电子商务的优势
 
@@ -101,11 +93,11 @@
 
 ### FTP（文件传输协议）
 
-该协议有助于在互联网上传输文件。包含音频、视频、图形和数据文件的文件可以使用 FTP 上传和下载。
+该协议有助于在互联网上传输文件。包含音频、视频、图形和数据文件的文件可以使用`FTP`上传和下载。
 
 ### Telnet
 
-该程序用于访问互联网上的远程计算机。你可以通过 telnet 从连接的计算机访问数据和文件。
+该程序用于访问互联网上的远程计算机。你可以通过`telnet`从连接的计算机访问数据和文件。
 
 ### 聊天
 
@@ -113,7 +105,7 @@
 
 ### Gopher
 
-互联网上的 Gopher 是一个系统，允许用户通过菜单或目录结构搜索文件。它使用纯英文名称，并且仅基于文本。
+互联网上的`Gopher`是一个系统，允许用户通过菜单或目录结构搜索文件。它使用纯英文名称，并且仅基于文本。
 
 ## 与网页相关的一些术语
 
@@ -131,7 +123,7 @@ WWW 由蒂姆·伯纳斯-李于 1994 年 9 月在麻省理工学院创立，得�
 
 ### 网络浏览器
 
-第一个网络浏览器由蒂姆·伯纳斯-李爵士于 1990 年发明。它被称为 WorldWideWeb（无空格），后来更名为 Nexus。网络浏览器是一种用于检索、呈现和遍历万维网上信息资源的应用软件。
+第一个网络浏览器由蒂姆·伯纳斯-李爵士于 1990 年发明。它被称为`WorldWideWeb`（无空格），后来更名为`Nexus`。网络浏览器是一种用于检索、呈现和遍历万维网上信息资源的应用软件。
 
 ### HTTP（超文本传输协议）
 
@@ -143,7 +135,7 @@ HTML 不是一种编程语言，它是一种用于在互联网上呈现信息的
 
 在网站开发中，HTML 扮演着重要角色。HTML 是一种超文本标记语言，由网络浏览器解释并显示内容，使这些内容可通过计算机网络访问。网站的信息可供全球任何人随时访问。HTML 包含以标签形式向网络浏览器发出的指令。标签是写在尖括号（`<>`）中的指令。标签以左尖括号（即小于号`<`）开始，以右尖括号（即大于号`>`）结束。标签有两种类型：一种是开始标签，另一种是结束标签。开始标签写在尖括号内，结束标签也写在尖括号内，但前面有一个正斜杠（`/`）。让我们看一下 HTML 的一般结构。
 
-```
+```html
 <HTML><TITLE><HEAD></HEAD></TITLE><BODY></BODY></HTML>
 ```
 
@@ -163,7 +155,7 @@ HTML 不是一种编程语言，它是一种用于在互联网上呈现信息的
 
 打开文本编辑器——记事本，步骤如下：
 
-**第 1 步**：点击 Windows 按钮并输入 notepad。
+**第 1 步**：点击 Windows 按钮并输入`notepad`。
 
 ![](img/image_rsrcG8S.jpg)
 
@@ -175,7 +167,7 @@ HTML 不是一种编程语言，它是一种用于在互联网上呈现信息的
 
 ![](img/image_rsrcG8U.jpg)
 
-**第 4 步**：点击文件菜单，点击保存选项，选择要保存文件的位置。我在 F 盘创建了一个名为 HTML programs 的文件夹，并以 SAMPLE.HTML 名称保存。
+**第 4 步**：点击文件菜单，点击保存选项，选择要保存文件的位置。我在 F 盘创建了一个名为 HTML programs 的文件夹，并以`SAMPLE.HTML`名称保存。
 
 ![](img/image_rsrcG8V.jpg)
 
@@ -193,7 +185,7 @@ HTML 不是一种编程语言，它是一种用于在互联网上呈现信息的
 
 多行注释表示为：
 
-```
+```html
 <!-- 多行
         注释-->
 ```
@@ -210,7 +202,7 @@ HTML 标签是网络浏览器识别的关键字，浏览器解释其含义并在
 
 **示例：**
 
-```
+```html
 <! 标题标签演示>
 <html>
 <body>
@@ -232,11 +224,11 @@ HTML 标签是网络浏览器识别的关键字，浏览器解释其含义并在
 
 标题默认显示在浏览器的左侧。为了使其居中或右对齐，我们使用名为`align`的属性，其值为：
 
-- Left
-- Center
-- Right
+- `Left`
+- `Center`
+- `Right`
 
-```
+```html
 <! 使用标题标签的居中对齐属性示例>
 <html>
 <body>
@@ -253,7 +245,7 @@ HTML 标签是网络浏览器识别的关键字，浏览器解释其含义并在
 
 ![](img/image_rsrcG8Y.jpg)
 
-```
+```html
 <! 使用标题标签的右对齐属性示例>
 <html>
 <body>
@@ -282,11 +274,11 @@ HTML 标签是网络浏览器识别的关键字，浏览器解释其含义并在
 
 段落默认显示在浏览器的左侧。为了使其居中或右对齐，我们使用名为`align`的属性，其值为：
 
-- Left
-- Center
-- Right
+- `Left`
+- `Center`
+- `Right`
 
-```
+```html
 <! 使用段落标签的居中对齐属性示例>
 <HTML>
 <HEAD>
@@ -304,7 +296,7 @@ HTML 标签是网络浏览器识别的关键字，浏览器解释其含义并在
 
 ![](img/image_rsrcG91.jpg)
 
-```
+```html
 <! 使用段落标签的右对齐属性示例>
 <HTML>
 <HEAD>
@@ -324,7 +316,7 @@ HTML 标签是网络浏览器识别的关键字，浏览器解释其含义并在
 
 如果你希望将光标移到下一行并在文本之间提供换行，则可以使用`<br>`标签，其后的任何文本都将从新行开始。正如我之前所说，有些标签不需要结束标签，这样的标签称为空元素。之所以这样称呼，是因为它们之间没有内容。
 
-```
+```html
 <! 未使用换行标签的一行文本>
 <HTML>
 <HEAD>
@@ -342,7 +334,7 @@ HTML 标签是网络浏览器识别的关键字，浏览器解释其含义并在
 
 现在，相同的代码可以使用换行标签编写为：
 
-```
+```html
 <! 使用换行标签的一行文本>
 <HTML>
 <HEAD>
@@ -364,7 +356,7 @@ HTML 标签是网络浏览器识别的关键字，浏览器解释其含义并在
 
 **示例：**
 
-```
+```html
 <! 演示居中内容的示例>
 <HTML>
 <HEAD>
@@ -387,7 +379,7 @@ HTML 标签是网络浏览器识别的关键字，浏览器解释其含义并在
 
 **示例：**
 
-```
+```html
 <HTML>
 <HEAD>
 <TITLE>水平线演示</TITLE>
@@ -408,7 +400,9 @@ HTML 标签是网络浏览器识别的关键字，浏览器解释其含义并在
 
 如果你希望更改水平线的颜色，可以使用`color`属性来实现，如下所示：
 
-```
+
+
+```html
 <HTML>
 <HEAD>
 <TITLE>水平线演示</TITLE>
@@ -439,7 +433,7 @@ HTML 标签是网络浏览器识别的关键字，浏览器解释其含义并在
 
 宽度的可能值可以以窗口大小的百分比指定。例如，25%、50%、75%等。
 
-```
+```html
 <! 演示 HR 元素的 width 和 size 属性的 HTML 代码>
 <HTML>
 <HEAD>
@@ -463,7 +457,7 @@ HTML 标签是网络浏览器识别的关键字，浏览器解释其含义并在
 
 **示例：**
 
-```
+```html
 <! 使文本变为粗体的 HTML 代码>
 <HTML>
 <HEAD>
@@ -480,7 +474,7 @@ HTML 标签是网络浏览器识别的关键字，浏览器解释其含义并在
 
 ![](img/image_rsrcG99.jpg)
 
-```
+```html
 <! 使文本变为斜体的 HTML 代码>
 <HTML>
 <HEAD>
@@ -499,7 +493,7 @@ HTML 标签是网络浏览器识别的关键字，浏览器解释其含义并在
 
 你也可以将粗体和斜体文本组合在一起，如下所示：
 
-```
+```html
 <HTML>
 <HEAD>
 <TITLE>粗体和斜体演示</TITLE>
@@ -519,7 +513,7 @@ HTML 标签是网络浏览器识别的关键字，浏览器解释其含义并在
 
 上标用于将`<sup>`标签下的文本显示在普通文本行上方一点。这通常用于数学中编写数字的平方和立方。
 
-```
+```html
 <! 演示上标的 HTML 代码>
 <HTML>
 <HEAD>
@@ -537,7 +531,7 @@ HTML 标签是网络浏览器识别的关键字，浏览器解释其含义并在
 
 下标用于将`<sub>`标签下的文本显示在普通文本下方一点。这通常用于化学中编写化学方程式。
 
-```
+```html
 <! 演示下标的 HTML 代码>
 <HTML>
 <HEAD>
@@ -557,7 +551,7 @@ HTML 标签是网络浏览器识别的关键字，浏览器解释其含义并在
 
 `<strong>`标签用于表示其下的内容具有强烈的重要性。默认情况下，浏览器会以粗体显示`<strong>`标签的内容，如下所示。
 
-```
+```html
 <HTML>
 <HEAD>
 <TITLE>强调演示</TITLE>
@@ -574,7 +568,7 @@ HTML 标签是网络浏览器识别的关键字，浏览器解释其含义并在
 
 类似地，`<em>`标签用于强调其下的文本。通常，此标签以斜体形式显示文本，如下所示。
 
-```
+```html
 <HTML>
 <HEAD>
 <TITLE>着重演示</TITLE>
@@ -593,7 +587,7 @@ HTML 标签是网络浏览器识别的关键字，浏览器解释其含义并在
 
 `<q>`标签用于给其下的文本加上引号，如下所示。
 
-```
+```html
 <HTML>
 <HEAD>
 <TITLE>引用演示</TITLE>
@@ -614,7 +608,7 @@ HTML 标签是网络浏览器识别的关键字，浏览器解释其含义并在
 
 **示例：**
 
-```
+```html
 <! 演示缩写和首字母缩略词的 HTML 代码>
 <HTML>
 <HEAD>
@@ -633,13 +627,13 @@ HTML 标签是网络浏览器识别的关键字，浏览器解释其含义并在
 
 ![](img/image_rsrcG9J.jpg)
 
-当鼠标悬停在 Prof.和 ISRO 上时，它们会显示这些缩写和首字母缩略词的全称。
+当鼠标悬停在 Prof. 和 ISRO 上时，它们会显示这些缩写和首字母缩略词的全称。
 
 ## 修改内容
 
 插入和删除的文本可以分别通过`<ins>`和`<del>`标签查看。
 
-```
+```html
 <HTML>
 <HEAD>
 <TITLE>插入和删除内容</TITLE>
@@ -654,9 +648,9 @@ HTML 标签是网络浏览器识别的关键字，浏览器解释其含义并在
 
 ![](img/image_rsrcG9K.jpg)
 
-`<s>`标签用于表示某些不再准确的内容。`<s>`标签下的内容会显示一条穿过中心的线。让我们看一个例子：
+`s`标签用于表示某些不再准确的内容。`<s>`标签下的内容会显示一条穿过中心的线。让我们看一个例子：
 
-```
+```html
 <HTML>
 <HEAD>
 <TITLE>促销演示</TITLE>
@@ -677,7 +671,7 @@ HTML 标签是网络浏览器识别的关键字，浏览器解释其含义并在
 
 放置在`<big>…</big>`元素内的文本将显示为比周围内容大一号。
 
-```
+```html
 <! 说明大号文本的 HTML 代码>
 <HTML>
 <HEAD>
@@ -697,7 +691,7 @@ HTML 标签是网络浏览器识别的关键字，浏览器解释其含义并在
 
 放置在`<small>…</small>`元素内的文本将显示为比周围内容小一号。
 
-```
+```html
 <! 说明小号文本的 HTML 代码>
 <HTML>
 <HEAD>
@@ -719,7 +713,7 @@ HTML 标签是网络浏览器识别的关键字，浏览器解释其含义并在
 
 **示例：**
 
-```
+```html
 <! 说明删除线的 HTML 代码>
 <HTML>
 <HEAD>
@@ -739,7 +733,7 @@ HTML 标签是网络浏览器识别的关键字，浏览器解释其含义并在
 
 可以使用名为`<MARQUEE>…</MARQUEE>`的标签在浏览器窗口内滚动文本，如下所示。
 
-```
+```html
 <! 演示 MARQUEE 的 HTML 代码>
 <HTML>
 <HEAD>
@@ -757,7 +751,7 @@ HTML 标签是网络浏览器识别的关键字，浏览器解释其含义并在
 
 默认情况下，滚动字幕从右向左滚动文本，你可以将其移动方向更改为从左到右、从上到下和从下到上。让我们使用名为`direction`的属性来查看滚动字幕的所有这些方向。其值为 left、right。
 
-```
+```html
 <! 演示从左到右滚动字幕的 HTML 代码>
 <HTML>
 <HEAD>
@@ -781,7 +775,7 @@ HTML 标签是网络浏览器识别的关键字，浏览器解释其含义并在
 
 **语法：** `<FONT FACE=”值”>文本在此</FONT>`
 
-`FACE`属性的一些值如下所示。
+`FACE`属性的一些值如下所示：
 
 - Times new roman
 - Arial black
@@ -803,10 +797,6 @@ HTML 标签是网络浏览器识别的关键字，浏览器解释其含义并在
 
 `COLOR`属性的可能值可以通过两种方式指定：一种是使用颜色名称，另一种是使用十六进制颜色常量。
 
-
-
-
-
 | 颜色 |
 | --- |
 | 红色 |
@@ -820,21 +810,43 @@ HTML 标签是网络浏览器识别的关键字，浏览器解释其含义并在
 | 黄色 |
 | 等等 |
 
-```
-<!HTML code to illustrate font attributes><HTML><HEAD><TITLE>Font Demo</TITLE><HEAD><BODY><FONT FACE="ARIAL" SIZE=15 COLOR=BLUE>This the formatted text</FONT></BODY></HTML>
+```html
+<!HTML code to illustrate font attributes>
+<HTML>
+<HEAD>
+<TITLE>Font Demo</TITLE>
+<HEAD>
+<BODY>
+<FONT FACE="ARIAL" SIZE=15 COLOR=BLUE>This the formatted text</FONT>
+</BODY>
+</HTML>
 ```
 
 ![](img/image_rsrcG9U.jpg)
 
-计算机输出标签：各种类型的输出将如下所示。
+## 计算机输出标签
 
-```
-<html><HEAD><TITLE>Computer Output Demo</TITLE></HEAD><body><code>Computer code</code><br /><kbd>Keyboard input</kbd><br /><tt>Teletype text</tt><br /><samp>Sample text</samp><br /><var>Computer variable</var><br /><p></body></html>
+各种类型的输出将如下所示。
+
+```html
+<html>
+<HEAD>
+<TITLE>Computer Output Demo</TITLE>
+</HEAD>
+<body>
+<code>Computer code</code><br />
+<kbd>Keyboard input</kbd><br />
+<tt>Teletype text</tt><br />
+<samp>Sample text</samp><br />
+<var>Computer variable</var><br />
+<p>
+</body>
+</html>
 ```
 
 ![](img/image_rsrcG9V.jpg)
 
-计算机输出标签：请像上面的程序所示，亲自尝试以下计算机输出标签。
+请像上面的程序所示，亲自尝试以下计算机输出标签。
 
 | 标签 | 描述 |
 | --- | --- |
@@ -844,31 +856,29 @@ HTML 标签是网络浏览器识别的关键字，浏览器解释其含义并在
 | `<tt>` | 定义电传打字文本。 |
 | `<var>` | 定义变量。 |
 | `<pre>` | 定义预格式化文本。 |
-| `<listing>` | 已弃用。请使用 `<pre>` 代替。 |
-| `<plaintext>` | 已弃用。请使用 `<pre>` 代替。 |
-| `<xmp>` | 已弃用。请使用 `<pre>` 代替。 |
-
-
-
-
+| `<listing>` | 已弃用。请使用`<pre>`代替。 |
+| `<plaintext>` | 已弃用。请使用`<pre>`代替。 |
+| `<xmp>` | 已弃用。请使用`<pre>`代替。 |
 
 ## 地址
 
-地址可以写在 `<ADDRESS>…</ADDRESS>` 标签内。
+地址可以写在`<ADDRESS>…</ADDRESS>`标签内。
 
-示例：
+**示例：**
 
 ```html
 <!HTML code to demonstrate address tag>
 <HTML>
-<HEAD><TITLE>Address Tag Demo</TITLE></HEAD>
+<HEAD>
+<TITLE>Address Tag Demo</TITLE>
+</HEAD>
 <BODY>
 <ADDRESS>Hanumanth Ladwa<br>Hubballi<br>Karnataka<br>India.</ADDRESS>
 </BODY>
 </HTML>
 ```
 
-输出：![](img/image_rsrcG9W.jpg)
+**输出：** ![](img/image_rsrcG9W.jpg)
 
 ## 文本方向
 
@@ -876,7 +886,9 @@ HTML 标签是网络浏览器识别的关键字，浏览器解释其含义并在
 
 ```html
 <HTML>
-<HEAD><TITLE>Text Direction Demo</TITLE></HEAD>
+<HEAD>
+<TITLE>Text Direction Demo</TITLE>
+</HEAD>
 <BODY>
 <bdo dir="ltr">Original text: This is the right to left text</bdo><br>
 Reversed Text: <bdo dir="rtl">This is the right to left text</bdo>
@@ -884,7 +896,7 @@ Reversed Text: <bdo dir="rtl">This is the right to left text</bdo>
 </HTML>
 ```
 
-输出：![](img/image_rsrcG9X.jpg)
+**输出：** ![](img/image_rsrcG9X.jpg)
 
 # 第 3 章 HTML 列表
 
@@ -893,6 +905,7 @@ Reversed Text: <bdo dir="rtl">This is the right to left text</bdo>
 我们知道如何组织列表中的项目。当被要求列出购物清单或食物所需物品时，我们会用连字符（-）、数字或其他符号将它们一个接一个地写下来。在 HTML 中也可以生成相同类型的列表。
 
 列表分为：
+
 - 无序列表
 - 有序列表
 - 定义列表
@@ -900,7 +913,8 @@ Reversed Text: <bdo dir="rtl">This is the right to left text</bdo>
 
 ### 无序列表
 
-无序列表可以使用 `<UL>` 标签嵌入到网页中。在 `<UL>` 标签下，我们使用 `<LI>` 标签编写列表项。`<UL>` 标签使用 `TYPE` 属性来表示：
+无序列表可以使用`<UL>`标签嵌入到网页中。在`<UL>`标签下，我们使用`<LI>`标签编写列表项。`<UL>`标签使用`TYPE`属性来表示：
+
 - 圆形
 - 圆盘
 - 方形
@@ -909,7 +923,9 @@ Reversed Text: <bdo dir="rtl">This is the right to left text</bdo>
 
 ```html
 <HTML>
-<HEAD><TITLE>Unordered List Demo</TITLE></HEAD>
+<HEAD>
+<TITLE>Unordered List Demo</TITLE>
+</HEAD>
 <BODY>
 <UL>
 <LI>Orange</LI>
@@ -920,12 +936,14 @@ Reversed Text: <bdo dir="rtl">This is the right to left text</bdo>
 </HTML>
 ```
 
-输出：![](img/image_rsrcG9Y.jpg)
+**输出：** ![](img/image_rsrcG9Y.jpg)
 
 ```html
 <!HTML code to demonstrate unordered disc list>
 <HTML>
-<HEAD><TITLE>Unordered Disc List Demo</TITLE></HEAD>
+<HEAD>
+<TITLE>Unordered Disc List Demo</TITLE>
+</HEAD>
 <BODY>
 <ul type="disc">
 <li>HTML</li>
@@ -936,12 +954,14 @@ Reversed Text: <bdo dir="rtl">This is the right to left text</bdo>
 </HTML>
 ```
 
-输出：![](img/image_rsrcG9Z.jpg)
+**输出：** ![](img/image_rsrcG9Z.jpg)
 
 ```html
 <!HTML code to demonstrate unordered circle list>
 <HTML>
-<HEAD><TITLE>Unordered Circle List Demo</TITLE></HEAD>
+<HEAD>
+<TITLE>Unordered Circle List Demo</TITLE>
+</HEAD>
 <BODY>
 <ul type="circle">
 <li>HTML</li>
@@ -952,12 +972,14 @@ Reversed Text: <bdo dir="rtl">This is the right to left text</bdo>
 </HTML>
 ```
 
-输出：![](img/image_rsrcGA0.jpg)
+**输出：** ![](img/image_rsrcGA0.jpg)
 
 ```html
 <!HTML code to demonstrate unordered square list>
 <HTML>
-<HEAD><TITLE>Unordered Square List Demo</TITLE></HEAD>
+<HEAD>
+<TITLE>Unordered Square List Demo</TITLE>
+</HEAD>
 <BODY>
 <ul type="square">
 <li>HTML</li>
@@ -968,11 +990,12 @@ Reversed Text: <bdo dir="rtl">This is the right to left text</bdo>
 </HTML>
 ```
 
-输出：![](img/image_rsrcGA1.jpg)
+**输出：** ![](img/image_rsrcGA1.jpg)
 
 ### 有序列表
 
-有序列表可以使用 `<OL>` 标签嵌入到网页中。在 `<OL>` 标签下，我们使用 `<LI>` 标签编写列表项。`<OL>` 标签使用 `TYPE` 属性来表示数字序列，例如：
+有序列表可以使用`<OL>`标签嵌入到网页中。在`<OL>`标签下，我们使用`<LI>`标签编写列表项。`<OL>`标签使用`TYPE`属性来表示数字序列，例如：
+
 - 普通数字
 - 小写罗马数字
 - 大写罗马数字
@@ -984,7 +1007,9 @@ Reversed Text: <bdo dir="rtl">This is the right to left text</bdo>
 ```html
 <!HTML code to demonstrate plain numbers>
 <HTML>
-<HEAD><TITLE>Ordered Plain Numbers List Demo</TITLE></HEAD>
+<HEAD>
+<TITLE>Ordered Plain Numbers List Demo</TITLE>
+</HEAD>
 <BODY>
 <OL>
 <LI>C Programming</LI>
@@ -995,7 +1020,9 @@ Reversed Text: <bdo dir="rtl">This is the right to left text</bdo>
 </HTML>
 ```
 
-输出：![](img/image_rsrcGA2.jpg)
+**输出：** ![](img/image_rsrcGA2.jpg)
+
+
 
 ```html
 <!HTML code to demonstrate Small Roman numbers>
@@ -1030,7 +1057,7 @@ Reversed Text: <bdo dir="rtl">This is the right to left text</bdo>
 输出：![](img/image_rsrcGA4.jpg)
 
 ```html
-<!HTML code to demonstrate Ordered Small Letters List >
+<!HTML code to demonstrate Ordered Small Letters List>
 <HTML>
 <HEAD><TITLE>Ordered Small Letters List Demo</TITLE></HEAD>
 <BODY>
@@ -1167,6 +1194,7 @@ Reversed Text: <bdo dir="rtl">This is the right to left text</bdo>
 #### 超链接
 
 超链接文本很容易识别，因为它与文档中的其他文本颜色不同，并且带有下划线。当鼠标移动时，光标会改变形状。当鼠标指针移到任何文本上并变成手形指针时，表示已建立链接。点击链接将：
+
 - 在同一网页内打开一个新部分，这称为页面跳转。
 - 创建指向自己网站内另一个页面的链接。
 - 创建指向不同网站网页的链接。
@@ -1182,12 +1210,14 @@ Reversed Text: <bdo dir="rtl">This is the right to left text</bdo>
 内部链接是指向同一网站内网页的链接。外部链接是指向其他网站网页的链接。
 
 创建链接时，必须：
+
 - 指定链接到的文件的 URL。
 - 指定用户需要点击的文本或图形。
 
 `<A>` 标签用于创建超链接，将用户带到文档中指定的目标位置。
 
 语法：
+
 ```
 <A HREF="URL">Text to click here</A>
 <A NAME=Value>…</A>
@@ -1232,16 +1262,20 @@ Reversed Text: <bdo dir="rtl">This is the right to left text</bdo>
 到目前为止，我们学习了如何使用内部和外部链接从一个网页导航到另一个网页。现在我们将创建同一文档内的链接。使用 `<A>` 标签的 `NAME` 属性标记位置，然后使用 `<A>` 的 `HREF` 属性创建链接。
 
 语法：
+
 ```
 <A NAME="Value">
 ```
+
 这里，`Value` 可以是任何有效的字符串。
 
 创建链接的语法：
+
 ```
 <A HREF="#Value">
 ```
-注意：超链接中的值必须与锚点标签的 name 属性中的值相同，并且必须以 `#` 符号开头。
+
+注意：超链接中的值必须与锚点标签的 `name` 属性中的值相同，并且必须以 `#` 符号开头。
 
 点击链接时，页面的命名部分将显示在顶部。
 
@@ -1345,6 +1379,7 @@ Reversed Text: <bdo dir="rtl">This is the right to left text</bdo>
 通常，网站会在网页底部有一个指向网站所有者的电子邮件超链接，以便用户发送关于网站的反馈。点击此链接时，会自动启动电子邮件编辑器，用户可以直接输入消息。为此，使用 `<A>` 标签的 `MAILTO:` 属性。
 
 语法：
+
 ```
 <A HREF=MAILTO:Value>Email Me</A>
 ```
@@ -1373,6 +1408,7 @@ Reversed Text: <bdo dir="rtl">This is the right to left text</bdo>
 图像有助于美化网页，并以简单的方式解释复杂的概念。用于插入图像的标签称为 `<IMG>`。
 
 语法：
+
 ```
 <IMG SRC="Image URL" … attribute-list/>
 ```
@@ -1404,12 +1440,13 @@ Reversed Text: <bdo dir="rtl">This is the right to left text</bdo>
 HTML 支持 JPEG、PNG 和 GIF 等图像格式。在上面的代码中，`SRC` 属性是图像的来源，`height` 和 `width` 属性用于调整图像大小。
 
 注意：
+
 - 图像名称区分大小写。
 - 如果一个浏览器不支持该图像，则更改浏览器，用另一个浏览器打开文件。
 
 ### 设置图像边框
 
-默认情况下，每个图像都有一个边框。我们只需要指定边框大小。为此，我们需要使用 `<IMG>` 标签的 `BORDER` 属性。对于上面的 HTML 代码，我们添加 border 属性，结果如下所示。
+默认情况下，每个图像都有一个边框。我们只需要指定边框大小。为此，我们需要使用 `<IMG>` 标签的 `BORDER` 属性。对于上面的 HTML 代码，我们添加 `border` 属性，结果如下所示。
 
 ```html
 <HTML>
@@ -1425,6 +1462,8 @@ HTML 支持 JPEG、PNG 和 GIF 等图像格式。在上面的代码中，`SRC` �
 ### 设置图像对齐
 
 HTML 中的图像默认左对齐。你可以为 `<IMG>` 标签的 `ALIGN` 属性指定 `RIGHT` 或 `CENTER` 值。
+
+
 
 ```html
 <!HTML code to align image on to right>
@@ -1442,7 +1481,7 @@ HTML 中的图像默认左对齐。你可以为 `<IMG>` 标签的 `ALIGN` 属性
 
 ### 背景图像
 
-如果你想添加背景图像而不是纯色。要添加背景图像，我们使用 `<BODY>` 标签的 `BACKGROUND` 属性。
+如果你想添加背景图像而不是纯色，要添加背景图像，我们使用`<BODY>`标签的`BACKGROUND`属性。
 
 ```html
 <!HTML code to demonstrate background image>
@@ -1520,7 +1559,7 @@ HTML 中的图像默认左对齐。你可以为 `<IMG>` 标签的 `ALIGN` 属性
 
 ### 调整图像大小
 
-要调整图像大小，我们使用 `<IMG>` 标签的 `WIDTH` 和 `HEIGHT` 属性。
+要调整图像大小，我们使用`<IMG>`标签的`WIDTH`和`HEIGHT`属性。
 
 ```html
 <!HTML code to demonstrate resizing the image>
@@ -1538,7 +1577,7 @@ HTML 中的图像默认左对齐。你可以为 `<IMG>` 标签的 `ALIGN` 属性
 
 ### 在 HTML 中链接图像
 
-我们可以使图像可点击。当用户点击图像时，它应该导航到另一个网页。为此，我们使用 `<A>` 标签，在锚点标签内使用 `<IMG>` 标签。让我们看一个例子。
+我们可以使图像可点击。当用户点击图像时，它应该导航到另一个网页。为此，我们使用`<A>`标签，在锚点标签内使用`<IMG>`标签。让我们看一个例子。
 
 ```html
 <HTML>
@@ -1551,18 +1590,20 @@ HTML 中的图像默认左对齐。你可以为 `<IMG>` 标签的 `ALIGN` 属性
 
 输出：![](img/image_rsrcGB2.jpg)
 
-当我们点击图像时，它会带你到另一个名为 `quotation.html` 的网页。同样，如果你希望导航到外部链接，可以通过指定网页的完整域名来实现。
+当我们点击图像时，它会带你到另一个名为`quotation.html`的网页。同样，如果你希望导航到外部链接，可以通过指定网页的完整域名来实现。
 
 ![](img/image_rsrcGB3.jpg)
 
 ### 播放音频文件
 
 要播放音频，我们需要使用两个标签：
-- `<AUDIO>` 标签
-- `<SOURCE>` 标签，包含文件路径和音频文件类型。
+
+- `<AUDIO>`标签
+- `<SOURCE>`标签，包含文件路径和音频文件类型。
 
 语法：
-```
+
+```html
 <AUDIO CONTROLS="…">
 <SOURCE SRC="…" TYPE="…"></SOURCE>
 </AUDIO>
@@ -1584,7 +1625,7 @@ HTML 中的图像默认左对齐。你可以为 `<IMG>` 标签的 `ALIGN` 属性
 
 ### 自动开始播放音频
 
-要自动开始播放音频文件，使用 `<AUDIO>` 标签的 `autoplay` 属性，如下例所示。
+要自动开始播放音频文件，使用`<AUDIO>`标签的`autoplay`属性，如下例所示。
 
 ```html
 <HTML>
@@ -1601,7 +1642,7 @@ HTML 中的图像默认左对齐。你可以为 `<IMG>` 标签的 `ALIGN` 属性
 
 ### 自动播放音频但静音
 
-在 `autoplay` 后添加 `muted`，让音频文件自动播放但静音，如下例所示。
+在`autoplay`后添加`muted`，让音频文件自动播放但静音，如下例所示。
 
 ```html
 <!HTML code to demonstrate start playing audio automatically but muted>
@@ -1619,7 +1660,7 @@ HTML 中的图像默认左对齐。你可以为 `<IMG>` 标签的 `ALIGN` 属性
 
 ### 播放视频文件
 
-要在 HTML 中添加视频，我们使用 `<VIDEO>` 元素。它包含诸如 `controls`、`width`、`height`、`source` 等属性。
+要在 HTML 中添加视频，我们使用`<VIDEO>`元素。它包含诸如`controls`、`width`、`height`、`source`等属性。
 
 ```html
 <!HTML code to demonstrate Adding Video in webpage>
@@ -1637,7 +1678,7 @@ HTML 中的图像默认左对齐。你可以为 `<IMG>` 标签的 `ALIGN` 属性
 
 ### 自动开始播放视频
 
-要使视频自动播放，我们使用名为 `AUTOPLAY` 的属性，如下例所示。
+要使视频自动播放，我们使用名为`AUTOPLAY`的属性，如下例所示。
 
 ```html
 <!HTML code to demonstrate video autoplay>
@@ -1655,7 +1696,7 @@ HTML 中的图像默认左对齐。你可以为 `<IMG>` 标签的 `ALIGN` 属性
 
 ### 自动播放静音视频
 
-要使视频自动播放并静音，使用 `<VIDEO>` 元素的两个属性，如 `AUTOPLAY` 和 `MUTED`，如下例所示。
+要使视频自动播放并静音，使用`<VIDEO>`元素的两个属性，如`AUTOPLAY`和`MUTED`，如下例所示。
 
 ```html
 <!HTML code to demonstrate playing muted video automatically>
@@ -1673,7 +1714,7 @@ HTML 中的图像默认左对齐。你可以为 `<IMG>` 标签的 `ALIGN` 属性
 
 ### 播放 YouTube 视频
 
-要播放 YouTube 视频，使用来自 YouTube 的视频的 `<iframe>` 代码，如下例所示。
+要播放 YouTube 视频，使用来自 YouTube 的视频的`<iframe>`代码，如下例所示。
 
 ```html
 <!HTML code to demonstrate YouTube video>
@@ -1689,7 +1730,7 @@ HTML 中的图像默认左对齐。你可以为 `<IMG>` 标签的 `ALIGN` 属性
 
 ### 自动播放 YouTube 视频
 
-要自动播放 YouTube 视频，在 `<iframe>` 标签中使用 `autoplay=1`，如下例所示。
+要自动播放 YouTube 视频，在`<iframe>`标签中使用`autoplay=1`，如下例所示。
 
 ```html
 <!HTML code to demonstrate playing YouTube video automatically>
@@ -1703,11 +1744,11 @@ HTML 中的图像默认左对齐。你可以为 `<IMG>` 标签的 `ALIGN` 属性
 
 输出：![](img/image_rsrcGBB.jpg)
 
-同样，你也可以使用 `MUTE=1` 属性来静音视频。尝试一下这个 HTML 代码。
+同样，你也可以使用`MUTE=1`属性来静音视频。尝试一下这个 HTML 代码。
 
 ### YouTube 控件
 
-你可以通过使用 `controls=0` 来禁用 YouTube 视频控件。`controls` 的默认值是 1。让我们看一个例子。
+你可以通过使用`controls=0`来禁用 YouTube 视频控件。`controls`的默认值是 1。让我们看一个例子。
 
 ```html
 <!HTML code to demonstrate Disable YouTube Video Control>
@@ -1727,40 +1768,50 @@ HTML 中的图像默认左对齐。你可以为 `<IMG>` 标签的 `ALIGN` 属性
 
 表格表示是呈现分组信息的最佳方式。表格用于安排网页的布局。使用表格，页面内容看起来井井有条，增加了视觉吸引力。
 
-表格使用 `<TABLE>` 标签定义。表格由行和列组成。每行使用 `<TR>` 标签创建，行中的每个数据使用 `<td>` 标签创建。`TR` 代表表格行，`TD` 代表表格数据，即数据单元格的内容。数据单元格可以包含文本、图像、列表、段落、表单、表格等。
+表格使用`<TABLE>`标签定义。表格由行和列组成。每行使用`<TR>`标签创建，行中的每个数据使用`<td>`标签创建。`TR`代表表格行，`TD`代表表格数据，即数据单元格的内容。数据单元格可以包含文本、图像、列表、段落、表单、表格等。
 
 用于创建表格的 HTML 标签是：
+
 `<TABLE>…</TABLE>`
 
 语法：
-```
+
+```html
 <TABLE ALIGN="…" BORDER="…" CELL PADDING="…" CELL SPACING="…" WIDTH="…">…</TABLE>
 ```
 
 表格标签可以有以下属性：
-- `ALIGN` – 指定表格在页面中的对齐方式。align 属性的值为 `LEFT`、`RIGHT` 和 `CENTER`。
-- `BORDER` – 指定在所有表格单元格周围绘制的边框宽度，默认情况下不绘制边框。可能的值为 1,2,3,… 等等。
-- `CELL PADDING` – 指定单元格内容与单元格边缘之间的空间。可能的值为 1,2,3,… 等等。
-- `CELL SPACING` – 指定表格中单元格之间的空间量。可能的值为 1,2,3,… 等等。
-- `WIDTH` – 用于指定表格的宽度。最大宽度可以是显示器的最大像素大小。
 
-`<TR>…</TR>`
-这代表表格行。要在表格中添加一行，使用 `<TR>` 标签。每一行都有一组表格行标签。每行的属性在行标签内定义。
+- `ALIGN` – 指定表格在页面中的对齐方式。`align`属性的值为`LEFT`、`RIGHT`和`CENTER`。
+- `BORDER` – 指定在所有表格单元格周围绘制的边框宽度，默认情况下不绘制边框。可能的值为 1、2、3……等等。
+- `CELL PADDING` – 指定单元格内容与单元格边缘之间的空间。可能的值为 1、2、3……等等。
+
+
+
+- `CELL SPACING`：指定表格中单元格之间的空间量。可能的值为`1`、`2`、`3`……等。
+- `WIDTH`：用于指定表格的宽度。最大宽度可以是显示器的最大像素大小。
+
+## `<TR>…</TR>`
+
+这代表表格行。要在表格中添加一行，使用`<TR>`标签。每一行都有一组表格行标签。每行的属性在行标签内定义。
 
 语法：
-```
+
+```html
 <TABLE>
 <TR BGCOLOR="…">…</TR>
 </TABLE>
 ```
 
-`BGCOLOR` 属性用于设置行的背景颜色。
+`BGCOLOR`属性用于设置行的背景颜色。
 
-`<TD>…</TD>`
+## `<TD>…</TD>`
+
 这代表表格数据。表格数据标签定义表格中的每个单元格。它们必须嵌套在表格行标签内。
 
 语法：
-```
+
+```html
 <TABLE>
 <TR>
 <TD ALIGN="…" COLSPAN="…" ROWSPAN="…"></TD>
@@ -1768,29 +1819,35 @@ HTML 中的图像默认左对齐。你可以为 `<IMG>` 标签的 `ALIGN` 属性
 </TABLE>
 ```
 
-这里，`ALIGN` 属性将单元格内容的位置设置为三个位置之一：`LEFT`、`CENTER` 和 `RIGHT`。
-`COLSPAN` 属性用于将多个列合并为一个列。
-`ROWSPAN` 属性用于将多个行合并为一个行。
+这里，`ALIGN`属性将单元格内容的位置设置为三个位置之一：`LEFT`、`CENTER`和`RIGHT`。
+
+`COLSPAN`属性用于将多个列合并为一个列。
+
+`ROWSPAN`属性用于将多个行合并为一个行。
 
 并非所有行都必须具有相同数量的列；列数较少的行将用空白单元格填充。单元格定义可以包含 HTML 文档正文中通常使用的所有 HTML 标签。
 
-上述任何表格标签如果放在 `<TABLE>…</TABLE>` 标签之外，将被浏览器忽略。
+上述任何表格标签如果放在`<TABLE>…</TABLE>`标签之外，将被浏览器忽略。
 
 ### 表格标题和表头
 
 通常，页面中显示的每个表格都会有一个小标题来描述表格的内容。此外，表格的每一列都有一个标题，用于命名其中存储的信息。
 
 使用的标签是：
+
 `<CAPTION>…</CAPTION>`
-这用于表格的标题/说明。`<CAPTION>` 元素应出现在 `<TABLE>` 标签内，但不能出现在表格行或单元格内。标题始终相对于表格水平居中，并且其行可能会换行以适应表格的宽度。
+
+这用于表格的标题或说明。`<CAPTION>`元素应出现在`<TABLE>`标签内，但不能出现在表格行或单元格内。标题始终相对于表格水平居中，并且其行可能会换行以适应表格的宽度。
 
 该标签的属性是：
-`ALIGN`：指定标题的位置。可能的值为 `TOP` 和 `BOTTOM`。
+
+`ALIGN`：指定标题的位置。可能的值为`TOP`和`BOTTOM`。
 
 `<TH>…<TH>`
-这些标签用于将单元格指定为表头单元格，并且应在 `<TR>…<TR>` 标签内使用。
 
-默认情况下，表格边框为 0。它根本不显示任何边框。在大多数情况下，需要显示边框。边框是表格的轮廓。让我们看看没有边框的表格是什么样子。
+这些标签用于将单元格指定为表头单元格，并且应在`<TR>…<TR>`标签内使用。
+
+默认情况下，表格边框为`0`。它根本不显示任何边框。在大多数情况下，需要显示边框。边框是表格的轮廓。让我们看看没有边框的表格是什么样子。
 
 ```html
 <!HTML code to demonstrate table without border>
@@ -1824,7 +1881,7 @@ HTML 中的图像默认左对齐。你可以为 `<IMG>` 标签的 `ALIGN` 属性
 
 ### 表格表头
 
-表格表头使用 `<TH>` 标签定义。
+表格表头使用`<TH>`标签定义。
 
 ```html
 <!HTML code to demonstrate table heading>
@@ -1878,7 +1935,7 @@ HTML 中的图像默认左对齐。你可以为 `<IMG>` 标签的 `ALIGN` 属性
 
 输出：![](img/image_rsrcGBH.jpg)
 
-在上面的例子中，它没有显示空单元格的边框。要显示空单元格的边框，我们使用 `&nbsp`，即不换行空格。
+在上面的例子中，它没有显示空单元格的边框。要显示空单元格的边框，我们使用`&nbsp`，即不换行空格。
 
 ```html
 <!HTML code to demonstrate &nbsp in a table>
@@ -2011,7 +2068,7 @@ HTML 中的图像默认左对齐。你可以为 `<IMG>` 标签的 `ALIGN` 属性
 
 ### 表格背景颜色
 
-表格背景颜色可以通过 `<TABLE>` 标签的 `bgcolor` 属性更改，如下所示。
+表格背景颜色可以通过`<TABLE>`标签的`bgcolor`属性更改，如下所示。
 
 ```html
 <!HTML code to demonstrate table background color>
@@ -2031,7 +2088,7 @@ HTML 中的图像默认左对齐。你可以为 `<IMG>` 标签的 `ALIGN` 属性
 
 ### 表格背景图像
 
-表格背景图像可以通过使用名为 `background` 的属性更改，如下例所示。
+表格背景图像可以通过使用名为`background`的属性更改，如下例所示。
 
 ```html
 <!HTML code to demonstrate table background image>
@@ -2051,7 +2108,7 @@ HTML 中的图像默认左对齐。你可以为 `<IMG>` 标签的 `ALIGN` 属性
 
 ### 单元格背景颜色和图像
 
-可以更改表格中每个单元格的背景颜色和图像。使用与表格相同的两个属性，即 `bgcolor` 更改单元格颜色，`background` 更改单元格图像，在 `<TD>` 标签中使用。让我们在下面的例子中看一下。
+可以更改表格中每个单元格的背景颜色和图像。使用与表格相同的两个属性，即`bgcolor`更改单元格颜色，`background`更改单元格图像，在`<TD>`标签中使用。让我们在下面的例子中看一下。
 
 ```html
 <!HTML code to demonstrate Background color and image of a cell>
@@ -2102,18 +2159,23 @@ HTML 中的图像默认左对齐。你可以为 `<IMG>` 标签的 `ALIGN` 属性
 用于隐藏字段的在线求职申请表。在下面的申请表中，有一个关于残疾的下拉列表，如果我们选择“是”，则隐藏字段会自动出现，如第二张图所示。
 
 ![](img/image_rsrcGBX.jpg)
+
 ![](img/image_rsrcGBY.jpg)
 
-要在 HTML 中创建表单，我们使用 `<FORM>…<FORM>` 标签。所有组件，如文本框、复选框、单选按钮、列表框等，都包含在表单标签内。
+要在 HTML 中创建表单，我们使用`<FORM>…<FORM>`标签。所有组件，如文本框、复选框、单选按钮、列表框等，都包含在表单标签内。
+
+
 
 注意：表单中填写的数据既不会存储在你的本地计算机上，也不会存储在服务器上。本章教你如何设计在线表单。将数据存储到服务器超出了本书的范围。
 
 表单可以分为三个部分：
+
 - 表单标题
 - 输入字段
 - 操作按钮
 
 语法：
+
 ```
 <HTML>
 <BODY>
@@ -2124,9 +2186,10 @@ FORM ELEMENTS
 </HTML>
 ```
 
-### 输入元素
+## 输入元素
 
 输入元素是可以接受用户输入的表单元素。以下是可以添加到表单的一些输入元素：
+
 - 文本字段
 - 密码字段
 - 隐藏字段
@@ -2141,19 +2204,21 @@ FORM ELEMENTS
 `<INPUT>` 是用于创建任何表单元素的标签，`TYPE` 属性决定了要创建的特定表单元素类型。
 
 语法：
+
 ```
 <INPUT TYPE="" NAME="" VALUE="" ALIGN="" SIZE="" MAXLENGTH="">
 ```
 
-这里，
+这里：
+
 - `TYPE` 属性指定要添加到表单的表单元素类型。
 - `NAME` 指定表单中的每个元素都必须有一个名称来标识它。它作为表单中的标签出现，并且应该是唯一的。
 - `VALUE` 指定控件的默认值。
-- `ALIGN` 用于相对于表单边距对齐控件，值为 left、center 或 right。
+- `ALIGN` 用于相对于表单边距对齐控件，值为 `left`、`center` 或 `right`。
 - `SIZE` 指定文本框的水平大小。
 - `MAXLENGTH` 指定用户可以输入的最大字符数。
 
-#### 添加文本框
+### 添加文本框
 
 文本框允许用户输入数据，如字符和数字。要添加文本框，需要执行以下操作：
 
@@ -2161,7 +2226,8 @@ FORM ELEMENTS
 <INPUT TYPE="TEXT" NAME="sname" SIZE="30" MAXLENGTH="30" VALUE="">
 ```
 
-这里，
+这里：
+
 - `TEXT` 表示文本框是界面元素。
 - `NAME="sname"` 是文本框的名称，用于标识它。
 - `SIZE="30"` 指定文本框的水平大小。默认情况下，文本框的大小为 20。
@@ -2183,7 +2249,7 @@ Last Name:<INPUT TYPE="TEXT" NAME="LastName" VALUE="Naik"><br>
 
 输出：![](img/image_rsrcGBZ.jpg)
 
-#### 添加密码字段
+### 添加密码字段
 
 这与文本框相同，只是用户输入的内容会被星号或类似字符屏蔽，这样没有人可以看到用户输入的内容。
 
@@ -2192,6 +2258,7 @@ Last Name:<INPUT TYPE="TEXT" NAME="LastName" VALUE="Naik"><br>
 ```
 
 尽管屏幕上的显示被特殊字符（如星号）屏蔽，但内容以明文形式传输。
+
 - `TYPE="PASSWORD"` 值 `PASSWORD` 表示 `PASSWORD` 是界面元素。
 - `NAME="Password"` 是密码字段的名称。
 - `SIZE="10"` 是密码字段的最大大小。与文本框相同。
@@ -2211,7 +2278,7 @@ Password:<INPUT TYPE="PASSWORD" NAME="psw"><br>
 
 输出：![](img/image_rsrcGC0.jpg)
 
-#### 隐藏字段
+### 隐藏字段
 
 在一些在线求职申请中，你可能见过申请人残疾的选项，一旦申请人选中此选项，隐藏文本框就会出现以接收残疾百分比。在其他情况下，如果在线申请表包含附加资格的选项按钮，如果申请人有附加资格需要输入，点击此选项会打开一个新的文本框来接收用户的数据。这就是隐藏字段的用法。
 
@@ -2232,16 +2299,18 @@ First Name:<INPUT TYPE="TEXT" NAME="fName"><br><br>
 
 注意，隐藏字段是不可见的，一旦发生某些事件，隐藏字段就会出现，如前所述。由于这里没有事件发生，因此它永久隐藏。
 
-### 文本区域
+## 文本区域
 
 在某些情况下，可能需要接受用户的多行文本，在这种情况下，使用 `<TEXTAREA>` 标签。
 
 语法：
+
 ```
 <TEXTAREA ROWS="" COLS="" WRAP="">
 ```
 
 与文本框类似，有类似的属性来控制数据输入区域的大小、分配默认值和控件名称。除此之外，多行文本输入还有额外的属性：
+
 - `ROWS` 定义文本区域的高度。
 - `COLS` 定义文本区域的宽度。
 - `WRAP` 定义文本区域中文本的换行方式。可能的值为：
@@ -2263,7 +2332,7 @@ First Name:<INPUT TYPE="TEXT" NAME="fName"><br><br>
 
 输出：![](img/image_rsrcGC2.jpg)
 
-### 复选框
+## 复选框
 
 复选框就像一个开关，用户可以选择或取消选择项目。如果选中复选框，则返回 `TRUE` 值以及复选框名称，否则返回 `FALSE`。
 
@@ -2274,7 +2343,7 @@ First Name:<INPUT TYPE="TEXT" NAME="fName"><br><br>
 - `TYPE=CHECKBOX` 值 `CHECKBOX` 表示 `CHECKBOX` 是界面元素。
 - `NAME` 是用于标识的名称。
 - `VALUE` 将在复选框处于选中状态时分配给复选框。
-- `CHECKED` 是可选的，它使复选框在表单首次创建时处于 ON 状态，即选中状态。
+- `CHECKED` 是可选的，它使复选框在表单首次创建时处于 `ON` 状态，即选中状态。
 
 ```html
 <!HTML code to demonstrate checkbox>
@@ -2292,7 +2361,7 @@ First Name:<INPUT TYPE="TEXT" NAME="fName"><br><br>
 
 输出：![](img/image_rsrcGC3.jpg)
 
-### 单选按钮
+## 单选按钮
 
 当用户必须在多个选项中进行选择时，使用单选按钮，并且始终在组中使用。例如，在接受用户性别时，你需要指定两个单选按钮“男”和“女”，它们属于同一个名为性别的组，这样用户将能够选择男或女，但不能同时选择。其属性与复选框相同。
 
@@ -2303,7 +2372,7 @@ First Name:<INPUT TYPE="TEXT" NAME="fName"><br><br>
 
 - `TYPE= RADIO` 表示 `RADIO` 是界面元素。
 - `NAME="gender"` 是单选组的名称。
-- `VALUE="Male"` 和 `VALUE="Female"` 一个单选按钮的值为 Male，另一个的值为 Female。根据选中的单选按钮，只有一个值会被分配给单选组 gender。
+- `VALUE="Male"` 和 `VALUE="Female"` 一个单选按钮的值为 `Male`，另一个的值为 `Female`。根据选中的单选按钮，只有一个值会被分配给单选组 `gender`。
 - `CHECKED`，带有此属性的单选按钮默认被选中。
 
 ```html
@@ -2321,9 +2390,9 @@ First Name:<INPUT TYPE="TEXT" NAME="fName"><br><br>
 
 输出：![](img/image_rsrcGC4.jpg)
 
-### 下拉菜单
+## 下拉菜单
 
-选择列表显示一个选项列表，用户可以从中选择一个项目。select 标签用于在表单中定义选择列表，并且应在 form 标签内定义。option 标签附加到 select 标签以显示选项列表。
+选择列表显示一个选项列表，用户可以从中选择一个项目。`select` 标签用于在表单中定义选择列表，并且应在 `form` 标签内定义。`option` 标签附加到 `select` 标签以显示选项列表。
 
 ```
 <SELECT NAME="Listname">
@@ -2337,6 +2406,7 @@ First Name:<INPUT TYPE="TEXT" NAME="fName"><br><br>
 用户可以选择其中一个选项，选择后该值将分配给列表名称。通常，第一个选项默认被选中，但你也可以将某个选项设为默认选项。`<OPTION>` 标签的 `SELECTED` 属性用于指定默认选择。
 
 语法：
+
 ```
 <SELECT NAME="Listname">
 <OPTION>Option1
@@ -2344,7 +2414,7 @@ First Name:<INPUT TYPE="TEXT" NAME="fName"><br><br>
 </SELECT>
 ```
 
-假设有一个国家列表，并且从选择列表中选择了“India”选项，那么在填写表单完成后，单词 India 将被存储到文件中。与其保存完整的单词，不如将其保存为“Ind”或代码词，同时显示全名。这可以通过使用 `<OPTION>` 标签的 `VALUE` 属性来实现。
+假设有一个国家列表，并且从选择列表中选择了“India”选项，那么在填写表单完成后，单词 `India` 将被存储到文件中。与其保存完整的单词，不如将其保存为“Ind”或代码词，同时显示全名。这可以通过使用 `<OPTION>` 标签的 `VALUE` 属性来实现。
 
 ```
 <SELECT NAME="Listname">
@@ -2353,7 +2423,7 @@ First Name:<INPUT TYPE="TEXT" NAME="fName"><br><br>
 </SELECT>
 ```
 
-value 属性会将分配给它的字符串分配给所选列表的名称。
+`value` 属性会将分配给它的字符串分配给所选列表的名称。
 
 ```
 <OPTION VALUE="Ind">India
@@ -2377,9 +2447,9 @@ value 属性会将分配给它的字符串分配给所选列表的名称。
 
 输出：![](img/image_rsrcGC5.jpg)
 
-### 多项选择
+## 多项选择
 
-你可以通过添加值为 multiple 的 multiple 属性，允许用户从此列表中选择多个选项。你可以通过添加 size 属性将下拉菜单转换为显示多个选项的框。
+你可以通过添加值为 `multiple` 的 `multiple` 属性，允许用户从此列表中选择多个选项。你可以通过添加 `size` 属性将下拉菜单转换为显示多个选项的框。
 
 ```html
 <!HTML code to demonstrate multiple selection>
@@ -2399,11 +2469,12 @@ value 属性会将分配给它的字符串分配给所选列表的名称。
 
 输出：![](img/image_rsrcGC6.jpg)
 
-### 提交按钮
+## 提交按钮
 
 一旦输入了表单的所有详细信息，这些数据必须存储在某处以便重用，并且表单也应该被清除以便输入另一组信息。点击提交按钮时，所有字段中的数据将作为一系列名称/值对发送到服务器。`NAME` 是表单元素的名称，`VALUE` 是用户输入的内容。在服务器端，数据可以保存到数据库、文本文件或通过电子邮件发送。
 
 要向表单添加提交按钮，代码如下：
+
 ```
 <INPUT TYPE="SUBMIT" VALUE="SUBMIT">
 ```
@@ -2428,7 +2499,7 @@ Last Name:<INPUT TYPE="TEXT" NAME="LastName" VALUE="Naik"><br><br>
 
 输出：![](img/image_rsrcGC7.jpg)
 
-### 重置按钮
+## 重置按钮
 
 可以通过为 `<INPUT>` 标签的 `TYPE` 属性指定 `RESET` 值来向表单添加重置按钮。
 
@@ -2453,7 +2524,7 @@ Last Name:<INPUT TYPE="TEXT" NAME="LastName"><br><br>
 
 输出：![](img/image_rsrcGC8.jpg)
 
-### 图像按钮
+## 图像按钮
 
 `TYPE` 属性的 `IMAGE` 值与提交按钮相同，但唯一的区别是按钮被用户指定的图像替换。
 
@@ -2479,9 +2550,11 @@ Last Name:<INPUT TYPE="TEXT" NAME="LastName"><br><br>
 
 输出：![](img/image_rsrcGC9.jpg)
 
-### 字段集
+## 字段集
 
 字段集是通过在数据周围绘制带有标题的边框来对数据字段进行分组，如下例所示。
+
+
 
 ```html
 <!HTML code to demonstrate fieldset demo>
@@ -2664,7 +2737,8 @@ Password:<INPUT TYPE="PASSWORD" NAME="psw" required="required"><br><br>
 
 CSS 用于创建和应用某些规则，以指定元素的内容应如何显示，例如背景应如何，文本应应用哪些样式，元素如何以更美观的格式呈现。总之，我们可以更改和改进网页的外观。
 
-#### CSS 的优点：
+### CSS 的优点
+
 - 相同的格式化样式表可以应用于许多 HTML 页面。因此，节省了时间。
 - 它减少了代码的长度，因为它使用一个标签的规则，可以应用于该标签的每次出现。因此，代码更少，加载更快。
 - 非常易于维护，因为它需要全局更改样式，可以应用于所有网页。
@@ -2672,17 +2746,19 @@ CSS 用于创建和应用某些规则，以指定元素的内容应如何显示�
 - CSS 代码与大多数设备兼容，例如 PDA、计算机、平板电脑、手机等。
 
 应用于元素的规则决定了这些元素的内容应如何显示。CSS 规则由两部分组成：
+
 - 选择器指示要装饰的元素/元素集。如果必须应用于多个元素，可以用逗号分隔元素列表。
 - 声明指示选择器中的元素应如何显示。
 
 示例：
+
 ![](img/image_rsrcGCP.jpg)
 
 在 CSS 中为所选元素应用属性值的方式与 HTML 代码相同，但在 HTML 中，我们需要在每次出现元素时编写并应用相同的属性及其值。在 CSS 中，一旦编写，就可以应用于每次出现的元素。
 
 样式定义通常保存在外部的 `.css` 文件中。使用此文件，你可以更改整个网站的外观。如果有多个声明，可以用分号分隔，如下所示。
 
-```
+```css
 H1{color:red;font-family:verdana;}
 ```
 
@@ -2714,7 +2790,8 @@ p{font-family:Bookman Old Stylefont-size:15px;}
 
 选择器用于选择我们想要设置样式的 HTML 元素。
 
-CSS 选择器有五种类型，如下所列。
+CSS 选择器有五种类型，如下所列：
+
 - 简单选择器
 - 组合选择器
 - 伪类选择器
@@ -2859,11 +2936,7 @@ p.large {font-size: 100%;}
 h1 {
 ```
 
-
-
-
-
-## CSS 分组选择器
+### CSS 分组选择器
 
 ```css
 h1 {
@@ -2924,7 +2997,10 @@ h1, h2, p {
 
 - 外部 CSS
 - 内部 CSS
-- 内联 CSS
+
+
+
+# 内联 CSS
 
 ## 外部 CSS
 
@@ -3089,9 +3165,6 @@ h1 {
 2. 外部和内部样式表。
 3. 浏览器默认样式。
 
-
-
-
 内联样式表的优先级最高，会覆盖其他两种样式表。我们来看一个例子。
 
 ```html
@@ -3111,7 +3184,9 @@ body {background-color: yellow;}
 </html>
 ```
 
-输出：![](img/image_rsrcGD4.jpg)
+输出：
+
+![](img/image_rsrcGD4.jpg)
 
 ## CSS 注释
 
@@ -3156,7 +3231,9 @@ H1{color:red; /* 将 <H1> 元素的文本颜色设置为红色 */}
 </html>
 ```
 
-输出：![](img/image_rsrcGD5.jpg)
+输出：
+
+![](img/image_rsrcGD5.jpg)
 
 ### 文本颜色
 
@@ -3175,7 +3252,9 @@ H1{color:red; /* 将 <H1> 元素的文本颜色设置为红色 */}
 </html>
 ```
 
-输出：![](img/image_rsrcGD6.jpg)
+输出：
+
+![](img/image_rsrcGD6.jpg)
 
 ## 边框颜色
 
@@ -3194,7 +3273,9 @@ H1{color:red; /* 将 <H1> 元素的文本颜色设置为红色 */}
 </html>
 ```
 
-输出：![](img/image_rsrcGD7.jpg)
+输出：
+
+![](img/image_rsrcGD7.jpg)
 
 ### 颜色值
 
@@ -3220,7 +3301,9 @@ RGB 颜色值代表红色、绿色和蓝色。其表示形式为 `rgb(red, green
 </html>
 ```
 
-输出：![](img/image_rsrcGD8.jpg)
+输出：
+
+![](img/image_rsrcGD8.jpg)
 
 #### RGBA 值
 
@@ -3248,7 +3331,9 @@ RGB 颜色值代表红色、绿色和蓝色。其表示形式为 `rgb(red, green
 </html>
 ```
 
-输出：![](img/image_rsrcGD9.jpg)
+输出：
+
+![](img/image_rsrcGD9.jpg)
 
 #### HEX 颜色
 
@@ -3270,7 +3355,9 @@ RGB 颜色值代表红色、绿色和蓝色。其表示形式为 `rgb(red, green
 </html>
 ```
 
-输出：![](img/image_rsrcGDA.jpg)
+输出：
+
+![](img/image_rsrcGDA.jpg)
 
 #### 3 位十六进制值
 
@@ -3299,7 +3386,9 @@ p {color: #bed; /* 等同于 #bbeedd */}
 </html>
 ```
 
-输出：![](img/image_rsrcGDB.jpg)
+输出：
+
+![](img/image_rsrcGDB.jpg)
 
 #### HSL 颜色
 
@@ -3332,7 +3421,9 @@ HSL 代表色相、饱和度和亮度。其表示形式为：
 </html>
 ```
 
-输出：![](img/image_rsrcGDC.jpg)
+输出：
+
+![](img/image_rsrcGDC.jpg)
 
 #### HSLA 值
 
@@ -3343,6 +3434,9 @@ HSL 代表色相、饱和度和亮度。其表示形式为：
 alpha 参数是一个介于 0.0（完全透明）和 1.0（不透明）之间的数字。
 
 示例：
+
+
+
 
 ```html
 <html>
@@ -3644,7 +3738,7 @@ body{background-image: url("background.jfif");background-repeat: no-repeat;backg
 
 输出：![](img/image_rsrcGDT.jpg)
 
-### 背景 – 简写属性
+### 背景——简写属性
 
 为了简化代码，我们可以将所有属性写在一个名为 `background` 的单一属性中。
 
@@ -3653,9 +3747,6 @@ body{background-image: url("background.jfif");background-repeat: no-repeat;backg
 ```css
 body {
 ```
-
-
-
 
 `background-color: #00aa00;`
 
@@ -3666,6 +3757,7 @@ body {
 `background-position: right top;`
 
 }
+```
 
 我们可以使用 `background` 属性简写如下。
 
@@ -3675,7 +3767,7 @@ body {
 
 输出：![](img/image_rsrcGDU.jpg)
 
-属性值按以下顺序排列。
+属性值按以下顺序排列：
 
 - `background-color`
 - `background-image`
@@ -3694,7 +3786,12 @@ body {
 | `background-clip` | 指定背景的绘制区域 |
 | `background-color` | 设置元素的背景颜色 |
 | `background-image` | 设置元素的背景图像 |
+
+
+
+
 | `background-origin` | 指定背景图像的定位区域 |
+| --- | --- |
 | `background-position` | 设置背景图像的起始位置 |
 | `background-repeat` | 设置背景图像如何重复 |
 | `background-size` | 指定背景图像的大小 |
@@ -3703,16 +3800,16 @@ body {
 
 `border-style` 属性用于显示各种类型的边框。边框类型包括：
 
-- dotted（点线）
-- dashed（虚线）
-- solid（实线）
-- double（双线）
-- groove（凹槽）
-- ridge（脊线）
-- inset（内嵌）
-- outset（外凸）
-- none（无）
-- hidden（隐藏）
+- `dotted`（点线）
+- `dashed`（虚线）
+- `solid`（实线）
+- `double`（双线）
+- `groove`（凹槽）
+- `ridge`（脊线）
+- `inset`（内嵌）
+- `outset`（外凸）
+- `none`（无）
+- `hidden`（隐藏）
 
 `border-style` 属性可以有一到四个值：上边框、右边框、下边框和左边框。下面通过一个示例来演示这四个边框值。
 
@@ -3806,27 +3903,23 @@ body {
 如果 `border-style` 属性有四个值：
 
 - `border-style: dotted solid double dashed;`
-  - 上边框为 dotted（点线）
-  - 右边框为 solid（实线）
-  - 下边框为 double（双线）
-  - 左边框为 dashed（虚线）
+  - 上边框为 `dotted`（点线）
+  - 右边框为 `solid`（实线）
+  - 下边框为 `double`（双线）
+  - 左边框为 `dashed`（虚线）
 
 如果 `border-style` 属性有三个值：
 
 - `border-style: dotted solid double;`
-  - 上边框为 dotted（点线）
-  - 左右边框为 solid（实线）
-  - 下边框为 double（双线）
+  - 上边框为 `dotted`（点线）
+  - 左右边框为 `solid`（实线）
+  - 下边框为 `double`（双线）
 
 如果 `border-style` 属性有两个值：
 
 - `border-style: dotted solid;`
-  - 上下边框为 dotted（点线）
-  - 左右边框为 solid（实线）
-
-
-
-
+  - 上下边框为 `dotted`（点线）
+  - 左右边框为 `solid`（实线）
 
 ## 边框
 
@@ -3835,6 +3928,7 @@ body {
 - 左右边框为实线
 
 如果 `border-style` 属性只有一个值：
+
 - `border-style: dotted;`
 - 四个边框均为点状
 
@@ -3939,7 +4033,11 @@ p.round3 { border: 2px solid yellow; border-radius: 12px; }
 | `border-left-color` | 设置左边框的颜色 |
 | `border-left-style` | 设置左边框的样式 |
 | `border-left-width` | 设置左边框的宽度 |
+
+
+
 | `border-radius` | 设置四个 `border-*-radius` 属性以实现圆角 |
+|---|---|
 | `border-right` | 在一个声明中设置所有右边框属性 |
 | `border-right-color` | 设置右边框的颜色 |
 | `border-right-style` | 设置右边框的样式 |
@@ -4004,6 +4102,7 @@ p {
 可以在一个属性中设置所有外边距属性，如下所示。
 
 如果 `margin` 属性有四个值：
+
 - `margin: 25px 50px 75px 100px;`
   - 上外边距为 25px
   - 右外边距为 50px
@@ -4011,17 +4110,20 @@ p {
   - 左外边距为 100px
 
 如果 `margin` 属性有三个值：
+
 - `margin: 25px 50px 75px;`
   - 上外边距为 25px
   - 左右外边距为 50px
   - 下外边距为 75px
 
 如果 `margin` 属性有两个值：
+
 - `margin: 25px 50px;`
   - 上下外边距为 25px
   - 左右外边距为 50px
 
 如果 `margin` 属性有一个值：
+
 - `margin: 25px;`
   - 四个外边距均为 25px
 
@@ -4108,6 +4210,7 @@ p.two { margin: 20px 0 0 0; }
 内边距也有一个简写属性，如下所示。
 
 如果 `padding` 属性有四个值：
+
 - `padding: 25px 50px 75px 100px;`
   - 上内边距为 25px
   - 右内边距为 50px
@@ -4115,29 +4218,26 @@ p.two { margin: 20px 0 0 0; }
   - 左内边距为 100px
 
 如果 `padding` 属性有三个值：
+
 - `padding: 25px 50px 75px;`
   - 上内边距为 25px
   - 左右内边距为 50px
   - 下内边距为 75px
 
 如果 `padding` 属性有两个值：
+
 - `padding: 25px 50px;`
   - 上下内边距为 25px
   - 左右内边距为 50px
+  - 左右`paddings`为`50px`
 
+如果 `padding` 属性只有一个值：
 
-
-
-*   左右`paddings`为`50px`
-
-如果`padding`属性只有一个值：●      `padding: 25px;`
-
-*   所有四个`paddings`均为`25px`
-
-
-
+- `padding: 25px;`
+  - 所有四个`paddings`均为`25px`
 
 这是一个演示所有内边距（padding）属性的示例。
+
 ```html
 <html><head><title>Padding 属性演示</title>
 <style>
@@ -4148,17 +4248,19 @@ p.two{border: 1px solid black;background-color: lightblue;padding: 25px 50px;}
 p.one{border: 1px solid black;background-color: lightblue;padding: 25px;}
 </style></head><body><h2>所有内边距属性</h2>
 <p class="all">这个 p 元素具有 50px 的顶部内边距、30px 的右内边距、50px 的底部内边距和 80px 的左侧内边距。</p>
-<p class="four">这个 p 元素具有 25px 的顶部内边距、50px 的右内边距、75px 的底部内边距和 100px 的左侧内边距。</p>
+<p class="four">这个 p 元素具有 25px 的顶部内边距、50px 的右内边距、75px 的底部内边距和 100px 的左内边距。</p>
 <p class="three">这个 p 元素具有 25px 的顶部内边距、50px 的右内边距、75px 的底部内边距和 50px 的左侧内边距。</p>
 <p class="two">这个 p 元素具有 25px 的顶部内边距、50px 的右内边距、25px 的底部内边距和 50px 的左侧内边距。</p>
-<p class="one">这个 p 元素具有 25px 的顶部内边距、25px 的右内边距、25px 的底部内边距和 25px 的左侧内边距。</p>
+<p class="one">这个 p 元素具有 25px 的顶部内边距、25px 的右内边距、25px 的底部内边距和 25px 的左内边距。</p>
 </body></html>
 ```
+
 输出：![](img/image_rsrcGE8.jpg)
 
 ### 内边距与元素宽度
 
 `width` 属性指定元素内容区域的宽度。如果元素指定了宽度，那么添加到该元素上的内边距将加到元素的总宽度。这会导致不理想的结果。
+
 ```html
 <html><head><title>内边距与元素宽度演示</title>
 <style>
@@ -4169,9 +4271,11 @@ p.two {width: 300px;padding: 25px;background-color: lightblue;}
 <p class="two">这个 p 的宽度为 350px，尽管它在 CSS 中定义为 300px。</p>
 </body></html>
 ```
+
 输出：![](img/image_rsrcGE9.jpg)
 
 在这里，`<p>` 元素被赋予了 300px 的宽度。然而，`<p>` 元素的实际宽度将是 350px（300px + 25px 左内边距 + 25px 右内边距）。为了无论内边距多少都保持宽度为 300px，你可以使用 `box-sizing` 属性。这会导致元素保持其实际宽度；如果你增加内边距，可用的内容空间将会减少，如下例所示。
+
 ```html
 <html><head><title>使用 box-sizing 的内边距与元素宽度演示</title>
 <style>
@@ -4182,11 +4286,13 @@ p.two {width: 300px;padding: 25px;box-sizing: border-box;background-color: light
 <p class="two">这个 p 的宽度为 350px，尽管它在 CSS 中定义为 300px。</p>
 </body></html>
 ```
+
 输出：![](img/image_rsrcGEA.jpg)
 
 ### 高度/宽度
 
 `height` 和 `width` 属性具有以下值：
+
 - `auto` – 浏览器计算高度和宽度。
 - `Length` – 使用 px、cm 等单位定义的高度和宽度。
 - `%` – 定义为包含块宽度的百分比的高度和宽度。
@@ -4194,10 +4300,12 @@ p.two {width: 300px;padding: 25px;box-sizing: border-box;background-color: light
 - `Inherit` – 高度和宽度将继承其父元素的值。
 
 演示元素高度和宽度的示例。
+
 ```html
 <html><head><title>高度与宽度演示</title>
 <style>div {height: 200px;width: 500;background-color: orange;}</style></head><h2>设置元素的高度和宽度</h2><div>这个 div 元素的高度为 200px，宽度为 500。</div></body></html>
 ```
+
 输出：![](img/image_rsrcGEB.jpg)
 
 你可以尝试设置元素的高度和宽度。注意，`height` 和 `width` 不包含内边距和外边距。它们设置的是内边距、边框区域的高度和宽度。
@@ -4205,10 +4313,12 @@ p.two {width: 300px;padding: 25px;box-sizing: border-box;background-color: light
 ### 最大宽度
 
 `max-width` 属性用于设置最大宽度。
+
 ```html
 <html><head><title>max-width 演示</title>
 <style>div {max-width: 500px;height: 100px;background-color: crimson;}</style></head><h2>设置元素的 max-width</h2><div>这个 div 元素高度为 100px，最大宽度为 500px。</div><p>调整浏览器窗口查看效果。</p></body></html>
 ```
+
 输出：![](img/image_rsrcEC.jpg)
 
 如果同时使用了 `width` 和 `max-width` 属性且`width` 的值大于 `max-width`，`width` 属性将被忽略。
@@ -4216,21 +4326,25 @@ p.two {width: 300px;padding: 25px;box-sizing: border-box;background-color: light
 ### 盒模型
 
 盒模型由内容、内边距、边框和外边距组成，如下。
+
 ```html
 <html><head><title>盒模型</title>
 <style>div {background-color: lightgrey;width:300px;border:15px red;padding:50px;margin:20px;}</style></head><h2>盒模型</h2><div>文本是框的内容。我们添加了 50px 内边距、20px 外边距和 15px 边框。</div></body></html>
 ```
+
 输出：![](img/image_rsrcGED.jpg)
 
-### 轮廓 (Outline)
+### 轮廓（`Outline`）
 
-`Outline`: 画在元素边框之外的线，如下所示。`Outline` 具有以下属性：
+`Outline`：画在元素边框之外的线，如下所示。`Outline` 具有以下属性：
+
 - `outline-style`
 - `outline-color`
 - `outline-width`
 - `outline-offset`
 
 `outline-style` 具有以下值：
+
 - `dotted`
 - `dashed`
 - `solid`
@@ -4242,6 +4356,7 @@ p.two {width: 300px;padding: 25px;box-sizing: border-box;background-color: light
 - `none`
 
 演示轮廓属性值的示例。
+
 ```html
 <html><head><title>轮廓属性演示</title>
 <style>
@@ -4264,17 +4379,22 @@ p.outset {outline-style: outset;}
 <p class="inset">内凹轮廓</p>
 <p class="outset">外凸轮廓</p></body></html>
 ```
+
 输出：![](img/image_rsrcGEG.jpg)
 
 ### 轮廓宽度
 
 `outline-width` 属性可以具有以下值：
-- `thin` (1px)
-- `medium` (3px)
-- `thick` (5px)
+
+- `thin`（1px）
+- `medium`（3px）
+- `thick`（5px）
 - 特定尺寸（如 px、pt、cm 等）
 
 演示轮廓属性所有值的示例。
+
+
+
 ```html
 <html><head><title>轮廓宽度演示</title>
 <style>
@@ -4288,6 +4408,7 @@ p.specific {border: 2px solid black;outline-style: solid;outline-color: red;outl
 <p class="thick">粗轮廓</p>
 <p class="specific">4px 宽的轮廓</p></body></html>
 ```
+
 输出：![](img/image_rsrcGEH.jpg)
 
 ### 轮廓颜色
@@ -4296,13 +4417,15 @@ p.specific {border: 2px solid black;outline-style: solid;outline-color: red;outl
 
 ### 轮廓简写
 
-### 用于简写的 `outline` 属性有：
+#### 用于简写的 `outline` 属性有：
+
 - `outline-style`
 - `outline-color`
 - `outline-width`
 - `outline-offset`
 
 演示轮廓所有属性的示例。
+
 ```html
 <html><head><title>轮廓简写演示</title>
 <style>
@@ -4316,152 +4439,169 @@ p.double {outline: 5px double crimson;}
 <p class="solid">实线轮廓</p>
 <p class="double">双线轮廓</p></body></html>
 ```
+
 输出：![](img/image_rsrcGEJ.jpg)
 
-### 轮廓偏移 (Outline offset)
+### 轮廓偏移（Outline offset）
 
 `outline-offset` 属性在元素与其边框之间添加空间。该空间是透明的。演示 `outline-offset` 属性的示例。
+
 ```html
 <html><head><title>轮廓偏移演示</title>
 <style>
 p {margin: 20px;border: 2px solid orange;outline-offset: 10px;}
 </style></head><h2>outline-offset 属性</h2><p>该元素在其边框外有 10px 的偏移。</p></body></html>
 ```
+
 输出：![](img/image_rsrcGEK.jpg)
 
 # 第 9 章 格式
 
 CSS 文本有很多格式化属性。让我们从文本颜色开始，`color` 可以使用颜色名称、`HEX` 值或 `RGB` 值设置。演示文本颜色的示例。
+
 ```html
 <html><head><title>文本颜色演示</title>
 <style>body {color: red;}h1 {color: green;}</style></head><body><h1>标题 1</h1><p>这个段落是红色的，因为它在 body 选择器中定义。</p></body></html>
 ```
 
-## 文本对齐 (Text alignment)
+## 文本对齐（Text alignment）
 
 `text-align` 属性用于设置文本的水平对齐方式。文本可以左对、居中、右对或两端对齐。演示所有对齐方式的示例。文本默认左对齐。
+
 ```html
 <html><head><title>文本对齐演示</title>
 <style>
 h1 {text-align: center;}h2 {text-align: left;}h3 {text-align: right;}p {border: 1px solid black;padding: 5px;width:200px;height:200px;text-align: justify;}
 </style></head><body><h1>标题 1 (居中)</h2><h2>标题 2 (左对)</h2><h2>标题 3 (右对)</h2><p>你好！我是 Hanumanth Ladwa，我从 2008 年获得硕士学位就开始教学了。我有十多年的教学经验。到为止，我已经在教了数千名学生。</p></body></html>
 ```
+
 输出：![](img/image_rsrcGEP.jpg)
 
 注意，当设置 `text-align: justify` 时，每行都会扩展到容器的宽度。
 
-### 文本方向 (Text direction)
+### 文本方向（Text direction）
 
 `direction` 和 `Unicode-bidi` 属性可以更改元素的文本方向，如下所示。
+
 ```html
 <html><head><title>文本方向</title>
 <style>
 p.name {direction: rtl;unicode-bidi: bidi-override;}
 </style></head><body><p>我是 Hanumanth Ladwa。</p><p class="name">我是 Hanumanth Ladwa。</p></body></html>
 ```
+
 输出：![](img/image_rsrcGER.jpg)
 
-### 垂直对齐 (Vertical alignment)
+### 垂直对齐（Vertical alignment）
 
 此属性用于在垂直方向上对齐文本，如下所示。
+
 ```html
 <html><head><title>垂直对齐演示</title>
 <style>
 img.a {vertical-align: baseline;}img.b {vertical-align: text-top;}img.c {vertical-align: text-bottom;}img.d {vertical-align: sub;}img.e {vertical-align: super;}
 </style></head><body><h1>vertical-align 属性</h1><p>一个 <img class="a" src="MS.gif" width="9" height="9"> 默认对齐图像。</p><h2>vertical-align: text-top</h2><p><img class="b" src="MS.gif" width="9" height="9"> 顶部对齐图像。</p><h2>vertical-align: text-bottom</h2><p><img class="c" src="MS.gif" width="9" height="9"> 底部对齐图像。</p><h2>vertical-align: sub</h2><p><img class="d" src="MS.gif" width="9" height="9"> 基标对齐图像。</p><h2>vertical-align: super</h2><p><img class="e" src="MS.gif" width="9" height="9"> 上标对齐图像。</p></body></html>
 ```
+
 输出：![](img/image_rsrcGES.jpg)
 
-# 第 9 章 格式
-
-CSS 文本有很多格式化属性。让我们从文本颜色开始，`color` 可以使用颜色名称、`HEX` 值或 `RGB` 值设置。演示文本颜色的示例。
-```html
-<html><head><title>文本颜色演示</title>
-<style>body {color: red;}h1 {color: green;}</style></head><body><h1>标题 1</h1><p>这个段落是红色的，因为它在 body 选择器中定义。</p></body></html>
-```
-
-## 文本装饰 (Text decoration)
+## 文本装饰（Text decoration）
 
 `text-decoration` 属性用于设置或移除文本的装饰。
+
 ```html
 <html><head><title>文本装饰演示</title>
 <style>
 p.overline {text-decoration: overline;}p.through {text-decoration: line-through;}p.underline {text-decoration: underline;}
 </style></head><h2>文本装饰</h2><p class="overline">上划线段</p><p class="through">删除线段</p><p class="underline">下划线段</p></body></html>
 ```
+
 输出：![](img/image_rsrcGET.jpg)
 
-### 文本转换 (Text transformation)
+### 文本转换（Text transformation）
 
 `text-transform` 属性用于更改文本的大写、小写或单词首字母大写，如下所示。
+
 ```html
 <html><head><title>文本转换演示</title>
 <style>h3 {text-transform: uppercase;}h4 {text-transform: lowercase;}h5 {text-transform: capitalize;}}
 </style></head><body><h3>这是大写</h4><h4>这是小写</h4><h5>这是每个单词的首字母大写</h5></body></html>
 ```
+
 输出：![](img/image_rsrcGEU.jpg)
 
-### 文本缩进 (Text indentation)
+### 文本缩进（Text indentation）
 
 `text-indent` 属性用于指定文本第一行的缩进。
-`letter-spacing`: 用于提供字符之间的间距。
-`line-height`: 该属性用于提供行间距。
-`word-spacing`: 该属性用于提供单词之间的间距。
-`white-space`: 该属性用于处理元素内部的空白。
+
+`letter-spacing`：用于提供字符之间的间距。
+
+`line-height`：该属性用于提供行间距。
+
+`word-spacing`：该属性用于提供单词之间的间距。
+
+`white-space`：该属性用于处理元素内部的空白。
+
 ```html
 <html><head><title>文本间距</title>
 <style>
 p.indent {text-indent: 50px;}p.spacing {letter-spacing: 4px;}p.height {line-height: 0.5;}p.wspace {word-spacing: 6px;}p.whitespace {white-space: nowrap;}
 </style></head><body><h2>文本缩进</h2><p class="indent">我是 Hanumanth Ladwa。在获得计算机硕士学位后从 2008 年就开始教学。我有十多年的教学经验。</p><h2>字母间距</h2><p class="spacing">我是 Hanumanth Ladwa。在获得计算机硕士学位后从 2008 年就开始教学。我有十多年的教学经验。</p><h2>行间距</h2><p class="height">我是 Hanumanth Ladwa。在获得计算机硕士学位后从 2008 年就开始教学。我有十多年的教学经验。</p><h2>单词间距</h2><p class="wspace">我是 Hanumanth Ladwa。在获得计算机硕士学位后从 2008 年就开始教学。我有十多年的教学经验。</p><h2>空白处理</h2><p class="whitespace">我是 Hanumanth Ladwa。在获得计算机硕士学位后从 2008 年就开始教学。我有十多年的教学经验。</p></body></html>
 ```
+
 输出：![](img/image_rsrcGEV.jpg)
 
-### 字体族 (Font family)
+### 字体族（Font family）
 
-选择字体对你的网站至关重要，因为它会对读者产生影响。我们有多种类型的字体，如 Times New Roman, Georgia, Garamond, Arial 等。要使用任何字体，我们使用 `font-family` 属性。我们将字体名称作为回退系统，以确保浏览器和操作系统之间的最大兼容性。以你想要的字体开始，以通用字体族结束，让浏览器在没有其他字体时从通用字体族中选择类似的字体。
+选择字体对你的网站至关重要，因为它会对读者产生影响。我们有多种类型的字体，如 Times New Roman、Georgia、Garamond、Arial 等。要使用任何字体，我们使用 `font-family` 属性。我们将字体名称作为回退系统，以确保浏览器和操作系统之间的最大兼容性。以你想要的字体开始，以通用字体族结束，让浏览器在没有其他字体时从通用字体族中选择类似的字体。
+
 ```html
 <html><head><title>字体族演示</title>
 <style>
 .p1 {font-family: "Times New Roman", Times, serif;}.p2 {font-family: Arial, Helvetica, sans-serif;}.p3 {font-family: "Lucida Console", "Courier New", monospace;}}
 </style></head><h1>CSS font-family</h1><p class="p1">这个段落使用 Times Roman 字体显示。</p><p class="p2">这个段落使用 Arial 字体显示。</p><p class="p3">这个段落使用 Lucida Console 字体显示。</p></body></html>
 ```
+
 输出：![](img/image_rsrcGEW.jpg)
 
-### 字体样式 (Font style)
+### 字体样式（Font style）
 
 `font-style` 有三个值：
+
 - `normal`
 - `italic`
 - `oblique`
 
-### 字体权重 (Font weight)
+### 字体权重（Font weight）
 
 `font-weight` 属性用于更改字体权重。
 
-### 字体变体 (Font variant)
+### 字体变体（Font variant）
 
 `font-variant` 指定文本是否应该以大写字母显示。
+
 ```html
 <html><head><title>字体样式演示</title>
 <style>
 p.normal {font-style: normal;}p.italic {font-style: italic;}p.oblique {font-style: oblique;}p.weight {font-weight: normal;}p.light {font-weight: lighter;}p.thick {font-weight: bold;}p.thicker {font-weight: 600;}p.fontnormal {font-variant: normal;}p.small {font-variant: small-caps;}}
 </style></head><body><p class="normal">这是正常样式</p><p class="italic">这是斜体样式</p><p class="oblique">这是倾斜样式</p><p class="weight">这是正常权重</p><p class="light">这是较轻权重</p><p class="thick">这是粗体</p><p class="thicker">这是 600 权重</p><p class="fontnormal">这是正常变体</p><p class="small">这是大写字母</p></body></html>
 ```
-注：这里示例代码中的类名和属性名似乎混淆了（例如 p.weight 使用了 font-weight），但已按原意翻译。
+
+注：这里示例代码中的类名和属性名似乎混淆了（例如 `p.weight` 使用了 `font-weight`），但已按原意翻译。
+
 输出：![](img/image_rsrcGFX.jpg)
 
-等等，用户提供的原始文本似乎有很多重复和混乱。我将根据用户提供的逻辑进行翻译，并确保不重复输出。我重新检查了最后的翻译部分。
-输出：![](img/image_rsrcGFH.jpg)
-
-### 字体大小 (Font size)
+### 字体大小（Font size）
 
 `font-size` 属性可以具有以下值：
-- `thin` (1px)
-- `medium` (3px)
-- `thick` (5px)
-- 特定尺寸（如 px, pt, cm 等）
+
+- `thin`（1px）
+- `medium`（3px）
+- `thick`（5px）
+- 特定尺寸（如 px、pt、cm 等）
 
 演示轮廓属性所有值的示例。
+
 ```html
 <html><head><title>轮廓大小演示</title>
 <style>
@@ -4471,63 +4611,119 @@ p.thick {border: 2px solid black;outline-style: solid;outline-color: red;outline
 p.specific {border: 2px solid black;outline-style: solid;outline-color: red;outline-width: 4px;}
 </style></head>
 ...
-(此处，我发现用户文本中存在大量重复段落，我将提供最后一份完整且不重复的翻译结果)
+```
 
-由于用户提供的文本包含大量重复的区块（例如从第 9 章开始多次重复），我将遵循指令“不要重复输出原文”的要求，提供每个逻辑部分的唯一对应翻译。
-
-以下是针对您提供的文本的整体翻译，并保留了所有 Markdown 格式和 HTML 标签：
-
-[content]
 这是一个演示所有内边距（padding）属性的示例。
+
 ```html
 <html><head><title>Padding 属性演示</title>
 <style>
-p.all {border: 1px solid black;background-color: lightblue;padding-top: 50px;padding-right: 30px;padding-bottom: 50px;padding-left: 80px;}
-p.four{border: 1px solid black;background-color: lightblue;padding: 25px 50px 75px 100px;}
-p.three{border: 1px solid black;background-color: lightblue;padding: 25px 50px 75px;}
-p.two{border: 1px solid black;background-color: lightblue;padding: 25px 50px;}
-p.one{border: 1px solid black;background-color: lightblue;padding: 25px;}
+
+
+
+```css
+p.all {
+  border: 1px solid black;
+  background-color: lightblue;
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+}
+
+p.four {
+  border: 1px solid black;
+  background-color: lightblue;
+  padding: 25px 50px 75px 100px;
+}
+
+p.three {
+  border: 1px solid black;
+  background-color: lightblue;
+  padding: 25px 50px 75px;
+}
+
+p.two {
+  border: 1px solid black;
+  background-color: lightblue;
+  padding: 25px 50px;
+}
+
+p.one {
+  border: 1px solid black;
+  background-color: lightblue;
+  padding: 25px;
+}
+```
+
+```html
 </style></head><body><h2>所有内边距属性</h2>
+
 <p class="all">这个 p 元素具有 50px 的顶部内边距、30px 的右内边距、50px 的底部内边距和 80px 的左侧内边距。</p>
+
 <p class="four">这个 p 元素具有 25px 的顶部内边距、50px 的右内边距、75px 的底部内边距和 100px 的左侧内边距。</p>
+
 <p class="three">这个 p 元素具有 25px 的顶部内边距、50px 的右内边距、75px 的底部内边距和 50px 的左侧内边距。</p>
+
 <p class="two">这个 p 元素具有 25px 的顶部内边距、50px 的右内边距、25px 的底部内边距和 50px 的左侧内边距。</p>
+
 <p class="one">这个 p 元素具有 25px 的顶部内边距、25px 的右内边距、25px 的底部内边距和 25px 的左侧内边距。</p>
+
 </body></html>
 ```
+
 输出：![](img/image_rsrcGE8.jpg)
 
-### 内边距与元素宽度
+## 内边距与元素宽度
 
 `width` 属性指定元素内容区域的宽度。如果元素指定了宽度，那么添加到该元素上的内边距将加到元素的总宽度。这会导致不理想的结果。
+
 ```html
 <html><head><title>内边距与元素宽度演示</title>
+
 <style>
+
 p.one {width: 300px;background-color: yellow;}
+
 p.two {width: 300px;padding: 25px;background-color: lightblue;}
+
 </style></head><body><h2>内边距与元素宽度</h2>
+
 <p class="one">这个 p 宽度为 300px。</p><br>
+
 <p class="two">这个 p 的宽度为 350px，尽管它在 CSS 中定义为 300px。</p>
+
 </body></html>
 ```
+
 输出：![](img/image_rsrcGE9.jpg)
 
 在这里，`<p>` 元素被赋予了 300px 的宽度。然而，`<p>` 元素的实际宽度将是 350px（300px + 25px 左内边距 + 25px 右内边距）。为了无论内边距多少都保持宽度为 300px，你可以使用 `box-sizing` 属性。这会导致元素保持其实际宽度；如果你增加内边距，可用的内容空间将会减少，如下例所示。
+
 ```html
 <html><head><title>使用 box-sizing 的内边距与元素宽度演示</title>
+
 <style>
+
 p.one {width: 300px;background-color: yellow;}
+
 p.two {width: 300px;padding: 25px;box-sizing: border-box;background-color: lightblue;}
+
 </style></head><body><h2>使用 box-sizing 属性的内边距与元素宽度</h2>
+
 <p class="one">这个 p 宽度为 300px。</p><br>
+
 <p class="two">这个 p 的宽度为 350px，尽管它在 CSS 中定义为 300px。</p>
+
 </body></html>
 ```
+
 输出：![](img/image_rsrcGEA.jpg)
 
-### 高度/宽度
+## 高度/宽度
 
 `height` 和 `width` 属性具有以下值：
+
 - `auto` – 浏览器计算高度和宽度。
 - `Length` – 使用 px、cm 等单位定义的高度和宽度。
 - `%` – 定义为包含块宽度的百分比的高度和宽度。
@@ -4535,43 +4731,54 @@ p.two {width: 300px;padding: 25px;box-sizing: border-box;background-color: light
 - `Inherit` – 高度和宽度将继承其父元素的值。
 
 演示元素高度和宽度的示例。
+
 ```html
 <html><head><title>高度与宽度演示</title>
+
 <style>div {height: 200px;width: 500;background-color: orange;}</style></head><h2>设置元素的高度和宽度</h2><div>这个 div 元素的高度为 200px，宽度为 500。</div></body></html>
 ```
+
 输出：![](img/image_rsrcGEB.jpg)
 
 你可以尝试设置元素的高度和宽度。注意，`height` 和 `width` 不包含内边距和外边距。它们设置的是内边距、边框区域的高度和宽度。
 
-### 最大宽度
+## 最大宽度
 
 `max-width` 属性用于设置最大宽度。
+
 ```html
 <html><head><title>max-width 演示</title>
+
 <style>div {max-width: 500px;height: 100px;background-color: crimson;}</style></head><h2>设置元素的 max-width</h2><div>这个 div 元素高度为 100px，最大宽度为 500px。</div><p>调整浏览器窗口查看效果。</p></body></html>
 ```
+
 输出：![](img/image_rsrcEC.jpg)
 
 如果同时使用了 `width` 和 `max-width` 属性且`width` 的值大于 `max-width`，`width` 属性将被忽略。
 
-### 盒模型
+## 盒模型
 
 盒模型由内容、内边距、边框和外边距组成，如下。
+
 ```html
 <html><head><title>盒模型</title>
+
 <style>div {background-color: lightgrey;width:300px;border:15px red;padding:50px;margin:20px;}</style></head><h2>盒模型</h2><div>文本是框的内容。我们添加了 50px 内边距、20px 外边距和 15px 边框。</div></body></html>
 ```
+
 输出：![](img/image_rsrcGED.jpg)
 
-### 轮廓 (Outline)
+## 轮廓（Outline）
 
-`Outline`: 画在元素边框之外的线，如下所示。`Outline` 具有以下属性：
+`Outline`：画在元素边框之外的线，如下所示。`Outline` 具有以下属性：
+
 - `outline-style`
 - `outline-color`
 - `outline-width`
 - `outline-offset`
 
 `outline-style` 具有以下值：
+
 - `dotted`
 - `dashed`
 - `solid`
@@ -4583,137 +4790,204 @@ p.two {width: 300px;padding: 25px;box-sizing: border-box;background-color: light
 - `none`
 
 演示轮廓属性值的示例。
+
 ```html
 <html><head><title>轮廓属性演示</title>
+
 <style>
+
 p {outline-color:blue}
+
 p.dotted {outline-style: dotted;}
+
 p.dashed {outline-style: dashed;}
+
 p.solid {outline-style: solid;}
+
 p.double {outline-style: double;}
+
 p.groove {outline-style: groove;}
+
 p.ridge {outline-style: ridge;}
+
 p.inset {outline-style: inset;}
+
 p.outset {outline-style: outset;}
+
 </style></head><h2>轮廓样式属性</h2>
+
 <p class="dotted">点状轮廓</p>
+
 <p class="dashed">虚线轮廓</p>
+
 <p class="solid">实线轮廓</p>
+
 <p class="double">双线轮廓</p>
+
 <p class="groove">凹槽轮廓</p>
+
 <p class="ridge">棱形轮廓</p>
+
 <p class="inset">内凹轮廓</p>
+
 <p class="outset">外凸轮廓</p></body></html>
 ```
+
 输出：![](img/image_rsrcGEG.jpg)
 
-### 轮廓宽度
+## 轮廓宽度
 
 `outline-width` 属性可以具有以下值：
+
 - `thin` (1px)
 - `medium` (3px)
 - `thick` (5px)
 - 特定尺寸（如 px、pt、cm 等）
 
 演示轮廓属性所有值的示例。
+
 ```html
 <html><head><title>轮廓宽度演示</title>
+
 <style>
+
 p.thin {border: 2px solid black;outline-style: solid;outline-color: red;outline-width: thin;}
+
 p.medium {border: 2px solid black;outline-style: solid;outline-color: red;outline-width: medium;}
+
 p.thick {border: 2px solid black;outline-style: solid;outline-color: red;outline-width: thick;}
+
 p.specific {border: 2px solid black;outline-style: solid;outline-color: red;outline-width: 4px;}
+
 </style></head><body><h2>outline-width 属性</h2>
+
 <p class="thin">细轮廓</p>
+
 <p class="medium">中等宽度轮廓</p>
+
 <p class="thick">粗轮廓</p>
+
 <p class="specific">4px 宽的轮廓</p></body></html>
 ```
+
 输出：![](img/image_rsrcGEH.jpg)
 
-### 轮廓颜色
+## 轮廓颜色
 
 `outline-color` 可以是颜色名称、`HEX`、`HSL`。你可以尝试这些类型的颜色。
 
-### 轮廓简写
+## 轮廓简写
 
-### 用于简写的 `outline` 属性有：
+用于简写的 `outline` 属性有：
+
 - `outline-style`
 - `outline-color`
 - `outline-width`
 - `outline-offset`
 
 演示轮廓所有属性的示例。
+
 ```html
 <html><head><title>轮廓简写演示</title>
+
 <style>
+
 p.dot {outline: 5px dotted green;}
+
 p.dash {outline: 5px dashed red;}
+
 p.solid {outline: 5px solid blue;}
+
 p.double {outline: 5px double crimson;}
+
 </style></head><h2>outline 属性</h2>
+
 <p class="dot">点轮廓</p>
+
 <p class="dash">虚线轮廓</p>
+
 <p class="solid">实线轮廓</p>
+
 <p class="double">双线轮廓</p></body></html>
 ```
+
 输出：![](img/image_rsrcGEJ.jpg)
 
-### 轮廓偏移 (Outline offset)
+## 轮廓偏移（Outline offset）
 
 `outline-offset` 属性在元素与其边框之间添加空间。该空间是透明的。演示 `outline-offset` 属性的示例。
+
 ```html
 <html><head><title>轮廓偏移演示</title>
+
 <style>
+
 p {margin: 20px;border: 2px solid orange;outline-offset: 10px;}
+
 </style></head><h2>outline-offset 属性</h2><p>该元素在其边框外有 10px 的偏移。</p></body></html>
 ```
+
 输出：![](img/image_rsrcGEK.jpg)
 
 # 第 9 章 格式
 
 CSS 文本有很多格式化属性。让我们从文本颜色开始，`color` 可以使用颜色名称、`HEX` 值或 `RGB` 值设置。演示文本颜色的示例。
+
 ```html
 <html><head><title>文本颜色演示</title>
+
 <style>body {color: red;}h1 {color: green;}</style></head><body><h1>标题 1</h1><p>这个段落是红色的，因为它在 body 选择器中定义。</p></body></html>
 ```
 
-## 文本对齐 (Text alignment)
+## 文本对齐（Text alignment）
 
 `text-align` 属性用于设置文本的水平对齐方式。文本可以左对、居中、右对或两端对齐。演示所有对齐方式的示例。文本默认左对齐。
+
 ```html
 <html><head><title>文本对齐演示</title>
+
 <style>
+
 h1 {text-align: center;}h2 {text-align: left;}h3 {text-align: right;}p {border: 1px solid black;padding: 5px;width:200px;height:200px;text-align: justify;}
+
 </style></head><body><h1>标题 1 (居中)</h2><h2>标题 2 (左对)</h2><h2>标题 3 (右对)</h2><p>你好！我是 Hanumanth Ladwa，我从 2008 年获得硕士学位就开始教学了。我有十多年的教学经验。到为止，我已经在教了数千名学生。</p></body></html>
 ```
+
 输出：![](img/image_rsrcGEP.jpg)
 
-### 文本方向 (Text direction)
+## 文本方向（Text direction）
 
 `direction` 和 `Unicode-bidi` 属性可以更改元素的文本方向，如下所示。
+
 ```html
 <html><head><title>文本方向</title>
+
 <style>
+
 p.name {direction: rtl;unicode-bidi: bidi-override;}
+
 </style></head><body><p>我是 Hanumanth Ladwa。</p><p class="name">我是 Hanumanth Ladwa。</p></body></html>
 ```
+
 输出：![](img/image_rsrcGER.jpg)
 
-### 垂直对齐 (Vertical alignment)
+## 垂直对齐（Vertical alignment）
 
 此属性用于在垂直方向上对齐文本，如下所示。
+
 ```html
 <html><head><title>垂直对齐演示</title>
+
 <style>
+
 img.a {vertical-align: baseline;}img.b {vertical-align: text-top;}img.c {vertical-align: text-bottom;}img.d {vertical-align: sub;}img.e {vertical-align: super;}
+
 </style></head><body><h1>vertical-align 属性</h1><p>一个 <img class="a" src="MS.gif" width="9" height="9"> 默认对齐图像。</p><h2>vertical-align: text-top</h2><p><img class="b" src="MS.gif" width="9" height="9"> 顶部对齐图像。</p><h2>vertical-align: text-bottom</h2><p><img class="c" src="MS.gif" width="9" height="9"> 底部对齐图像。</p><h2>vertical-align: sub</h2><p><img class="d" src="MS.gif" width="9" height="9"> 基标对齐图像。</p><h2>vertical-align: super</h2><p><img class="e" src="MS.gif" width="9" height="9"> 上标对齐图像。</p></body></html>
 ```
+
+
+
 输出：![](img/image_rsrcGES.jpg)
-
-
-
-
 
 | 关键字 | 描述 |
 | --- | --- |
@@ -4733,7 +5007,7 @@ img.a {vertical-align: baseline;}img.b {vertical-align: text-top;}img.c {vertica
 
 ### JavaScript 值
 
-JavaScript 语法定义了两类值。
+JavaScript 语法定义了两类值：
 
 - 固定值
 - 变量值
@@ -4742,63 +5016,87 @@ JavaScript 语法定义了两类值。
 示例：任何带或不带小数的常量值，如 `5`、`-10`、`15.4` 等。  
 用双引号或单引号括起来的字符串常量，如 `"Hanumanth Ladwa"` 或 `'Hanumanth Ladwa'`。
 
-**变量值**：在程序执行过程中发生改变的量称为变量。它们是用于存储值或常量的命名内存位置。为了声明变量，JavaScript 使用关键字 `var`、`let` 和 `const`。赋值运算符用于初始化变量。  
-示例：  
-```
+**变量值**：在程序执行过程中发生改变的量称为变量。它们是用于存储值或常量的命名内存位置。为了声明变量，JavaScript 使用关键字 `var`、`let` 和 `const`。赋值运算符用于初始化变量。
+
+示例：
+
+```javascript
 let a;
-a=10;
+
+a = 10;
 ```
 
 ### 运算符
 
-算术运算符 `+`、`-`、`*`、`/` 用于构成表达式。  
-示例：  
-```
-let a=2, b=3, c;
-c=a+b;
-c=a-b;
-c=a*b;
-c=a/b;
+算术运算符 `+`、`-`、`*`、`/` 用于构成表达式。
+
+示例：
+
+```javascript
+let a = 2, b = 3, c;
+
+c = a + b;
+
+c = a - b;
+
+c = a * b;
+
+c = a / b;
 ```
 
 ### 表达式
 
-表达式是运算符和操作数的组合。  
-示例：操作数可以只包含常量，也可以是常量和变量的组合，或者只包含变量。  
-示例：  
-```
-let a,b,c;
-c=3*5;
-c=a+5;
-c=a+b;
-c=10+b;
-var name="Hanumanth" + " " + "Ladwa"; // 字符串将被拼接
+表达式是运算符和操作数的组合。
+
+示例：操作数可以只包含常量，也可以是常量和变量的组合，或者只包含变量。
+
+```javascript
+let a, b, c;
+
+c = 3 * 5;
+
+c = a + 5;
+
+c = a + b;
+
+c = 10 + b;
+
+var name = "Hanumanth" + " " + "Ladwa"; // 字符串将被拼接
+
 var x;
+
 const y;
 ```
-以上是一些示例。  
+
+以上是一些示例。
+
 注意：如果变量声明时没有赋值，那么该变量的值将是 `undefined`。
 
 ### 注释
 
-注释是供其他程序员理解程序用途的文本信息。这些语句会被 Web 浏览器的解释器忽略。JavaScript 中有两种注释。
+注释是供其他程序员理解程序用途的文本信息。这些语句会被 Web 浏览器的解释器忽略。JavaScript 中有两种注释：
 
 - 单行注释（`//...`）
 - 多行注释（`/*...*/`）
 
-**单行注释**：当只有一行文本时使用这种注释。  
+**单行注释**：当只有一行文本时使用这种注释。
+
 示例：`// 这是一个单行注释`
 
-**多行注释**：当有多行文本时使用这种注释。  
-示例：  
-```
+**多行注释**：当有多行文本时使用这种注释。
+
+示例：
+
+```javascript
 /* 这是一个
+
 多行注释 */
 ```
 
 ### 标识符
 
-标识符是赋予编程元素（如变量、标签、函数等）的名称。  
+标识符是赋予编程元素（如变量、标签、函数等）的名称。
+
 JavaScript 中声明标识符的规则：
 
 - 标识符名称必须以字母（A 到 Z 或 a 到 z）、下划线（`_`）或美元符号（`$`）开头。
@@ -4815,141 +5113,237 @@ JavaScript 使用 Unicode 字符，涵盖所有字符（A – Z 或 a – z）�
 
 ### 使用 `let` 声明变量
 
-用 `let` 定义的变量不能重新声明，必须在使用前声明，并且它们具有块级作用域。  
-示例：  
+用 `let` 定义的变量不能重新声明，必须在使用前声明，并且它们具有块级作用域。
+
+示例：
+
+```javascript
+let name = "Hanumanth";
+
+let name = "Priyanka"; // 这条语句会报错，提示 name 已被声明
 ```
-let name="Hanumanth";
-let name="Priyanka"; // 这条语句会报错，提示 name 已被声明
+
+但使用 `var` 可以多次声明同一个变量。
+
+示例：
+
+```javascript
+var name = "Hanumanth";
+
+var name = "Priyanka";
 ```
-但使用 `var` 可以多次声明同一个变量。  
-示例：  
-```
-var name="Hanumanth";
-var name="Priyanka";
-```
-它具有块级作用域，这意味着在 `{` 和 `}` 内部声明的变量会形成一个块，用 `let` 声明的变量在块外无法访问，而用 `var` 声明的变量可以在块外访问，如下例所示。  
-```
-{let a=10;}
+
+它具有块级作用域，这意味着在 `{` 和 `}` 内部声明的变量会形成一个块，用 `let` 声明的变量在块外无法访问，而用 `var` 声明的变量可以在块外访问，如下例所示。
+
+```javascript
+{
+  let a = 10;
+}
+
 // 此处无法访问 a
 ```
-同样，使用 `var` 时：  
-```
-{var a=10;}
+
+同样，使用 `var` 时：
+
+```javascript
+{
+  var a = 10;
+}
+
 // 此处可以访问 a
 ```
-如果像下面示例那样重新声明变量，看看会发生什么。  
-示例 1：  
-```
-var a=10;
-{var a=5;}
+
+如果像下面示例那样重新声明变量，看看会发生什么。
+
+示例 1：
+
+```javascript
+var a = 10;
+
+{
+  var a = 5;
+}
+
 // 此处 a 为 5
 ```
-示例 2：  
-```
-let a=10;
-{let a=5;}
+
+示例 2：
+
+```javascript
+let a = 10;
+
+{
+  let a = 5;
+}
+
 // 此处 a 为 10
 ```
 
 ### 使用 `const` 声明变量
 
-用 `const` 声明的变量不能重新声明、不能重新赋值，并且它们具有块级作用域。  
-示例：  
+用 `const` 声明的变量不能重新声明、不能重新赋值，并且它们具有块级作用域。
+
+示例：
+
+```javascript
+const PI = 22 / 7;
+
+PI = 3.142; // 不允许，会产生错误
 ```
-const PI=22/7;
-PI=3.142; // 不允许，会产生错误
-```
-对于常量数组，  
-```
-const names = ["Priyanka","Sneha","Swaroop"];
-names[0]="Raj"; // 此处可以更改元素
+
+对于常量数组：
+
+```javascript
+const names = ["Priyanka", "Sneha", "Swaroop"];
+
+names[0] = "Raj"; // 此处可以更改元素
+
 names.push("Rakshita"); // 可以添加元素
 ```
-但不能重新赋值数组：  
+
+但不能重新赋值数组：
+
+```javascript
+const names = ["Priyanka", "Sneha", "Swaroop"];
+
+names = ["Raj", "Rakshita"]; // 这会产生错误
 ```
-const names = ["Priyanka","Sneha","Swaroop"];
-names=["Raj","Rakshita"]; // 这会产生错误
-```
-在块级作用域方面，用 `const` 声明变量与 `let` 类似。  
-示例：  
-```
-const a=10;
-{const a=20;}
+
+在块级作用域方面，用 `const` 声明变量与 `let` 类似。
+
+示例：
+
+```javascript
+const a = 10;
+
+{
+  const a = 20;
+}
+
 // 此处 a 为 10
 ```
 
-在程序的任何位置重新声明 JavaScript `var` 变量都是允许的。  
-示例：  
-```
-var a=2;
-var a=3;
-a=4;
-```
-在同一作用域内，将已有的 `var` 或 `let` 变量重新声明为 `const` 是不允许的。  
-示例：  
-```
-var a=2; // 允许
-const a=3; // 不允许
-```
-```
-{let a=2; // 允许
-const a=3; // 不允许}
-```
-```
-{const a=2; // 允许
-const a=3; // 不允许}
-```
-在同一作用域内，重新赋值已有的 `const` 变量是不允许的。  
-示例：  
-```
-const a=2; // 允许
-var a=3; // 不允许
-let a=4; // 不允许
-const a=5; // 不允许
-```
-```
-{const a=2; // 允许
-var a=3; // 不允许
-let a=4; // 不允许
-const a=5; // 不允许}
-```
-在另一个作用域或另一个块中，用 `const` 重新声明变量是允许的。  
-示例：  
-```
-const a=10; // 允许
-{const a=20; // 允许}
-{const a=30; // 允许}
+在程序的任何位置重新声明 JavaScript `var` 变量都是允许的。
+
+示例：
+
+```javascript
+var a = 2;
+
+var a = 3;
+
+a = 4;
 ```
 
-### const 提升
+在同一作用域内，将已有的 `var` 或 `let` 变量重新声明为 `const` 是不允许的。
 
-用 `var` 定义的变量会被提升到顶部，并且可以在任何时候初始化。变量可以在声明之前使用。  
-示例：  
+示例：
+
+```javascript
+var a = 2; // 允许
+
+const a = 3; // 不允许
 ```
-Yourname="Hanumanth";
+
+```javascript
+{
+  let a = 2; // 允许
+
+  const a = 3; // 不允许
+}
+```
+
+```javascript
+{
+  const a = 2; // 允许
+
+  const a = 3; // 不允许
+}
+```
+
+在同一作用域内，重新赋值已有的 `const` 变量是不允许的。
+
+示例：
+
+```javascript
+const a = 2; // 允许
+
+var a = 3; // 不允许
+
+let a = 4; // 不允许
+
+const a = 5; // 不允许
+```
+
+```javascript
+{
+  const a = 2; // 允许
+
+  var a = 3; // 不允许
+
+  let a = 4; // 不允许
+
+  const a = 5; // 不允许
+}
+```
+
+在另一个作用域或另一个块中，用 `const` 重新声明变量是允许的。
+
+示例：
+
+```javascript
+const a = 10; // 允许
+
+{
+  const a = 20; // 允许
+}
+
+{
+  const a = 30; // 允许
+}
+```
+
+### `const` 提升
+
+用 `var` 定义的变量会被提升到顶部，并且可以在任何时候初始化。变量可以在声明之前使用。
+
+示例：
+
+```javascript
+Yourname = "Hanumanth";
+
 var Yourname;
 ```
-用 `const` 定义的变量也会被提升到顶部，但不会被初始化。在声明之前使用 `const` 变量会导致 `ReferenceError`。让我们通过编程示例来理解。  
-```
+
+用 `const` 定义的变量也会被提升到顶部，但不会被初始化。在声明之前使用 `const` 变量会导致 `ReferenceError`。让我们通过编程示例来理解。
+
+```html
 <html>
-<head><title>JavaScript 提升</title></head>
-<body>
-<p id="sample"></p>
-<script>
-try {
-alert(Yourname);
-const Yourname = "Hanumanth";
-}catch (err) {
-document.getElementById("sample").innerHTML = err;
-}
-</script>
-</body>
+  <head>
+    <title>JavaScript 提升</title>
+  </head>
+
+  <body>
+    <p id="sample"></p>
+
+    <script>
+      try {
+        alert(Yourname);
+
+        const Yourname = "Hanumanth";
+      } catch (err) {
+        document.getElementById("sample").innerHTML = err;
+      }
+    </script>
+  </body>
 </html>
 ```
-输出：  
+
+输出：
+
 ![](img/image_rsrcGGZ.jpg)
 
-## 第 12 章 运算符
+# 第 12 章 运算符
 
 ## 引言
 
@@ -4957,8 +5351,9 @@ document.getElementById("sample").innerHTML = err;
 
 ### 算术运算符
 
-JavaScript 支持的运算符有：`+`、`-`、`*`、`/`、`%`、`**`、`++`、`--`。  
-假设 `a=10` 且 `b=2`，则
+JavaScript 支持的运算符有：`+`、`-`、`*`、`/`、`%`、`**`、`++`、`--`。
+
+假设 `a = 10` 且 `b = 2`，则：
 
 | 运算符 | 描述 |
 | --- | --- |
@@ -4973,43 +5368,40 @@ JavaScript 支持的运算符有：`+`、`-`、`*`、`/`、`%`、`**`、`++`、`
 
 ### 位运算符
 
-JavaScript 支持的位运算符如下表所示：  
-设 `a=10` 且 `b=11`
+JavaScript 支持的位运算符如下表所示：
+
+设 `a = 10` 且 `b = 11`。
 
 | 运算符 | 描述 | 示例 |
 | --- | --- | --- |
-| `&` | 按位与：如果两个操作数的对应位都是 1，则返回 1，否则返回 0。 | `a&b=0000 1010` |
-| `&#124;` | 按位或：如果两个操作数的对应位都是 0，则返回 0，否则返回 1。 | `a&#124;b=0000 1011` |
-| `^` | 按位异或：如果 1 的个数为奇数，则返回 0，否则返回 1。 | `a^b=0000 1110` |
-| `~` | 按位取反：将位取反，1 变 0，0 变 1。 | `~a=0000 0101` |
-| `<<` | 按位左移：将位向左移动指定的位数。 | `a<<2=0010 1000` |
-| `>>` | 按位右移：将位向右移动指定的位数。 | `a>>2=0000 0010` |
-
-
-
-
+| `&` | 按位与：如果两个操作数的对应位都是 1，则返回 1，否则返回 0。 | `a & b = 0000 1010` |
+| `\|` | 按位或：如果两个操作数的对应位都是 0，则返回 0，否则返回 1。 | `a \| b = 0000 1011` |
+| `^` | 按位异或：如果 1 的个数为奇数，则返回 0，否则返回 1。 | `a ^ b = 0000 1110` |
+| `~` | 按位取反：将位取反，1 变 0，0 变 1。 | `~a = 0000 0101` |
+| `<<` | 按位左移：将位向左移动指定的位数。 | `a << 2 = 0010 1000` |
+| `>>` | 按位右移：将位向右移动指定的位数。 | `a >> 2 = 0000 0010` |
 
 ## 简写赋值运算符
 
-简写赋值运算符是一种在表达式中编写赋值语句的紧凑方式。简写赋值运算符的一般形式为 `Operand operator=expression`。下表展示了赋值运算符的用法：
+简写赋值运算符是一种在表达式中编写赋值语句的紧凑方式。简写赋值运算符的一般形式为 `Operand operator = expression`。下表展示了赋值运算符的用法：
 
 | 运算符 | 赋值语句 | 简写赋值 |
 | --- | --- | --- |
-| `+`（加） | `a=a+b` | `a+=b` |
-| `-`（减） | `a=a-b` | `a-=b` |
-| `*`（乘） | `a=a*b` | `a*=b` |
-| `/`（整数除法） | `a=a/b` | `a/=b` |
-| `%`（取模除法） | `a=a%b` | `a%=b` |
-| `&`（按位与） | `a=a&b` | `a&=b` |
-| `|`（按位或） | `a=a|b` | `a|=b` |
-| `^`（按位异或） | `a=a^b` | `a^=b` |
-| `<<`（按位左移） | `a=a<<b` | `a<<=b` |
-| `>>`（按位右移） | `a=a>>b` | `a>>=b` |
-| `**`（幂运算） | `a=a**b` | `a**=b` |
+| `+`（加） | `a = a + b` | `a += b` |
+| `-`（减） | `a = a - b` | `a -= b` |
+| `*`（乘） | `a = a * b` | `a *= b` |
+| `/`（整数除法） | `a = a / b` | `a /= b` |
+| `%`（取模除法） | `a = a % b` | `a %= b` |
+| `&`（按位与） | `a = a & b` | `a &= b` |
+| `\|`（按位或） | `a = a \| b` | `a \|= b` |
+| `^`（按位异或） | `a = a ^ b` | `a ^= b` |
+| `<<`（按位左移） | `a = a << b` | `a <<= b` |
+| `>>`（按位右移） | `a = a >> b` | `a >>= b` |
+| `**`（幂运算） | `a = a ** b` | `a **= b` |
 
 ### 比较运算符
 
-假设 `a=10` 且 `b=20`，则：
+假设 `a = 10` 且 `b = 20`，则：
 
 | 运算符 | 描述 |
 | --- | --- |
@@ -5025,19 +5417,19 @@ JavaScript 支持的位运算符如下表所示：
 
 ### 逻辑运算符
 
-假设 `a=0` 且 `b=10`，则：
+假设 `a = 0` 且 `b = 10`，则：
 
 | 运算符 | 描述 |
 | --- | --- |
 | `&&` | 逻辑与运算符：检查两个操作数是否都非零，若都非零则条件为真，否则为假 |
-| `||` | 逻辑或运算符：检查两个操作数是否都为零，若都为零则条件为假，否则为真 |
+| `\|\|` | 逻辑或运算符：检查两个操作数是否都为零，若都为零则条件为假，否则为真 |
 | `!` | 逻辑非运算符：反转操作数的状态。若操作数为真则使其为假，反之亦然 |
 
 ### 逻辑与
 
 当两个操作数都为真时，逻辑与的结果为真；否则结果为假。
 
-| 操作数 1 | 操作数 2 | `Operand1 && Operand 2` |
+| 操作数 1 | 操作数 2 | `Operand1 && Operand2` |
 | --- | --- | --- |
 | 假 | 假 | 假 |
 | 假 | 真 | 假 |
@@ -5048,7 +5440,7 @@ JavaScript 支持的位运算符如下表所示：
 
 当两个操作数都为假时，逻辑或的结果为假；否则结果为真。
 
-| 操作数 1 | 操作数 2 | `Operand1||Operand2` |
+| 操作数 1 | 操作数 2 | `Operand1 \|\| Operand2` |
 | --- | --- | --- |
 | 假 | 假 | 假 |
 | 假 | 真 | 真 |
@@ -5071,89 +5463,96 @@ JavaScript 支持的位运算符如下表所示：
 | `typedef` | 返回变量的类型 |
 | `instanceof` | 如果对象是某个对象类型的实例，则返回真 |
 
-
-
-
-
 # 第 13 章 数据类型
 
 ## 简介
 
 数据类型是变量可以持有的数据类型。计算机无法理解没有数据类型的值。JavaScript 可以持有数字、字符串、对象以及更多数据类型。
 
-以下示例在没有数据类型的情况下会报错。
+以下示例在没有数据类型的情况下会报错：
 
-```
-let a=10+"Hanumanth";
+```javascript
+let a = 10 + "Hanumanth";
 ```
 
 在上面的示例中，JavaScript 会将其视为：
 
-```
-let a="10"+"Hanumanth";
+```javascript
+let a = "10" + "Hanumanth";
 ```
 
 当数字和字符串相加时，JavaScript 会将数字视为字符串。
 
-JavaScript 从左到右计算表达式。不同的顺序可能产生不同的结果，如下例所示。
+JavaScript 从左到右计算表达式。不同的顺序可能产生不同的结果，如下例所示：
 
-```
-let a=10+5+"Hanumanth";
+```javascript
+let a = 10 + 5 + "Hanumanth";
 ```
 
-返回 `15Hanumanth`
+返回 `15Hanumanth`。
 
 这里，JavaScript 将 `10` 和 `5` 视为数字，直到遇到 `"Hanumanth"`。
 
 类似地，当我们写：
 
-```
-let a="Hanumanth"+10+5
+```javascript
+let a = "Hanumanth" + 10 + 5;
 ```
 
-返回 `Hanumanth105`
+返回 `Hanumanth105`。
 
 这里，JavaScript 遇到了字符串操作数，因此所有操作数都被视为字符串。
 
-JavaScript 数据类型是动态的：动态数据类型意味着同一个变量可以持有不同类型的数据，如下例所示。
+JavaScript 数据类型是动态的：动态数据类型意味着同一个变量可以持有不同类型的数据，如下例所示：
 
-```
-let a;​// a 是 undefined
-a=6​// a 是数字
-a="Hanumanth"​// a 是字符串
+```javascript
+let a; // a 是 undefined
+
+a = 6; // a 是数字
+
+a = "Hanumanth"; // a 是字符串
 ```
 
 ## JavaScript 字符串
 
-字符串是用一对双引号或一对单引号括起来的字符序列，如下例所示。
+字符串是用一对双引号或一对单引号括起来的字符序列，如下例所示：
 
-```
-let FirstName="Hanumanth";​// Hanumanth 写在双引号中
-let LastName='Ladwa';​// Ladwa 写在单引号中
+```javascript
+let FirstName = "Hanumanth"; // Hanumanth 写在双引号中
+
+let LastName = "Ladwa"; // Ladwa 写在单引号中
 ```
 
-如果我们想在输出中显示引号，可以像下面这样使用它们。
+如果我们想在输出中显示引号，可以像下面这样使用它们：
 
-```
-let Animal="That's an elephant";​// 单引号
-let Fastest="The fastest of animals is 'leopard' ";​// 单引号
-let Slowest='The slowest of animals is "Tortoise" ';​// 双引号
+```javascript
+let Animal = "That's an elephant"; // 单引号
+
+let Fastest = "The fastest of animals is 'leopard'"; // 单引号
+
+let Slowest = 'The slowest of animals is "Tortoise"'; // 双引号
 ```
 
 示例：
 
 ```html
 <html>
-<head><title>字符串演示</title></head>
-<body>
-<p id="sample"></p>
-<script>
-let Animal="That's an elephant";​// 单引号
-let Fastest="The fastest of animals is 'leopard' ";​// 单引号
-let Slowest='The slowest of animals is "Tortoise" ';​// 双引号
-document.getElementById("sample").innerHTML =Animal + "<br>" +Fastest + "<br>" +Slowest;
-</script>
-</body>
+  <head>
+    <title>字符串演示</title>
+  </head>
+
+  <body>
+    <p id="sample"></p>
+
+    <script>
+      let Animal = "That's an elephant"; // 单引号
+      let Fastest = "The fastest of animals is 'leopard'"; // 单引号
+      let Slowest = 'The slowest of animals is "Tortoise"'; // 双引号
+
+      document.getElementById("sample").innerHTML =
+        Animal + "<br>" + Fastest + "<br>" + Slowest;
+    </script>
+  </body>
 </html>
 ```
 
@@ -5167,18 +5566,20 @@ JavaScript 数字可以带小数点或不带小数点。
 
 示例：
 
-```
-let a=23.0;
-let b=23;
+```javascript
+let a = 23.0;
+
+let b = 23;
 ```
 
 最大和最小的数字可以用科学指数记数法表示。
 
 示例：
 
-```
-let x=12e3​// 相当于 12000
-let y=12e-3​// 相当于 0.012
+```javascript
+let x = 12e3; // 相当于 12000
+
+let y = 12e-3; // 相当于 0.012
 ```
 
 ### 布尔值
@@ -5187,12 +5588,16 @@ let y=12e-3​// 相当于 0.012
 
 示例：
 
-```
-let a=10;
-let b=20;
-let c=10;
-(a==c)​// 返回 TRUE
-(a==b)​// 返回 FALSE
+```javascript
+let a = 10;
+
+let b = 20;
+
+let c = 10;
+
+(a == c); // 返回 TRUE
+
+(a == b); // 返回 FALSE
 ```
 
 布尔值通常用于条件（或选择）语句。
@@ -5203,8 +5608,15 @@ let c=10;
 
 示例：
 
-```
-const names=["Hanumanth","Priyanka","Sneha","Swaroop","Raj","Rakshita"];
+```javascript
+const names = [
+  "Hanumanth",
+  "Priyanka",
+  "Sneha",
+  "Swaroop",
+  "Raj",
+  "Rakshita"
+];
 ```
 
 ### 对象
@@ -5215,28 +5627,38 @@ JavaScript 对象用花括号编写，对象属性以名称:值的形式编写�
 
 ```html
 <html>
-<head><title>对象演示</title></head>
-<body>
-<h2>JavaScript 对象演示</h2>
+  <head>
+    <title>对象演示</title>
+  </head>
+
+  <body>
+    <h2>JavaScript 对象演示</h2>
+```
+
+
+
+```html
 <p id="sample"></p>
+
 <script>
 const person = {
-firstName : "Hanumanth",
-lastName  : "Ladwa",
-Height     : 5.9,
-complexion  : "Wheat"
+  firstName: "Hanumanth",
+  lastName: "Ladwa",
+  Height: 5.9,
+  complexion: "Wheat"
 };
-document.getElementById("sample").innerHTML =person.firstName+" "+person.lastName+ " is " + person.Height + " tall and has "+person.complexion+" complexion ";
+
+document.getElementById("sample").innerHTML =
+  person.firstName + " " + person.lastName + " is " +
+  person.Height + " tall and has " + person.complexion + " complexion ";
 </script>
-</body>
-</html>
 ```
 
 输出：
 
 ![](img/image_rsrcGH1.jpg)
 
-## typeof 运算符
+## `typeof` 运算符
 
 我们可以使用 `typeof` 运算符来查找变量的类型。该运算符返回变量或表达式的类型。
 
@@ -5246,8 +5668,10 @@ document.getElementById("sample").innerHTML =person.firstName+" "+person.lastNam
 <body>
 <h2>JavaScript typeof 演示</h2>
 <p id="sample"></p>
+
 <script>
-document.getElementById("sample").innerHTML =typeof 5 + "<br>" +typeof 12e3 + "<br>" +typeof "John Doe";
+document.getElementById("sample").innerHTML =
+  typeof 5 + "<br>" + typeof 12e3 + "<br>" + typeof "John Doe";
 </script>
 </body>
 </html>
@@ -5269,19 +5693,19 @@ document.getElementById("sample").innerHTML =typeof 5 + "<br>" +typeof 12e3 + "<
 - 如果程序被划分为子程序，可以组建一个程序员团队来解决每个子问题，而不是由一个人解决。
 - 如果在程序中开发了函数，代码行数会减少。
 
-语法：
+#### 语法
 
 JavaScript 函数使用 `function` 关键字定义，后跟函数名称和括号中的参数。要执行的代码写在花括号中，如下所示。
 
-```
-function function_name(parameter 1, parameter 2, …){
-// 要执行的代码写在这里
+```javascript
+function function_name(parameter 1, parameter 2, …) {
+  // 要执行的代码写在这里
 }
 ```
 
 JavaScript 函数类似于其他编程语言中的过程或子程序。
 
-示例：
+#### 示例
 
 ```html
 <html>
@@ -5289,10 +5713,12 @@ JavaScript 函数类似于其他编程语言中的过程或子程序。
 <body>
 <h2>JavaScript 函数</h2>
 <p id="sample"></p>
+
 <script>
 function add(a, b) {
-return a + b;
+  return a + b;
 }
+
 document.getElementById("sample").innerHTML = add(4, 2);
 </script>
 </body>
@@ -5303,11 +5729,11 @@ document.getElementById("sample").innerHTML = add(4, 2);
 
 ![](img/image_rsrcGH3.jpg)
 
-花括号内的代码在调用时执行。这种执行代码的过程称为函数调用。代码在以下三种事件之一中执行。
+花括号内的代码在调用时执行。这种执行代码的过程称为函数调用。代码在以下三种事件之一中执行：
 
 - 当事件发生，例如按钮点击
 - 当从 JavaScript 代码中调用时
-- 自动执行，即自调用。
+- 自动执行，即自调用
 
 当 JavaScript 函数中的所有指令执行完毕并遇到返回值时，代码停止执行并将值返回给调用函数。以下程序演示了如何调用函数以及函数代码如何将值返回给调用者。
 
@@ -5316,11 +5742,14 @@ document.getElementById("sample").innerHTML = add(4, 2);
 <head><title>函数调用演示</title></head>
 <body>
 <p id="sample"></p>
+
 <script>
 var a = add(4, 2);
+
 document.getElementById("sample").innerHTML = a;
+
 function add(a, b) {
-return a + b;
+  return a + b;
 }
 </script>
 </body>
@@ -5338,10 +5767,12 @@ return a + b;
 <head><title>不使用变量的函数调用演示</title></head>
 <body>
 <p id="sample"></p>
+
 <script>
 document.getElementById("sample").innerHTML = add(4, 2);
+
 function add(a, b) {
-return a + b;
+  return a + b;
 }
 </script>
 </body>
@@ -5356,23 +5787,28 @@ return a + b;
 
 在函数定义内部声明的变量称为局部变量，它们只能在花括号内访问。其作用域仅限于该代码内部，不能超出。
 
-示例：
+#### 示例
 
 ```html
 <html>
 <head><title>局部变量演示</title></head>
 <body>
 <h2>JavaScript 函数</h2>
-<p>在 myNameFunction() 外部，MyName 是 undefined。</p>
+<p>在 `myNameFunction()` 外部，`MyName` 是 undefined。</p>
 <p id="sample1"></p>
 <p id="sample2"></p>
+
 <script>
 myNameFunction();
+
 function myNameFunction() {
-let MyName = "Hanumanth Ladwa";
-document.getElementById("sample1").innerHTML =typeof MyName + " " + MyName;
+  let MyName = "Hanumanth Ladwa";
+
+  document.getElementById("sample1").innerHTML =
+    typeof MyName + " " + MyName;
 }
-document.getElementById("sample2").innerHTML =typeof MyName;
+
+document.getElementById("sample2").innerHTML = typeof MyName;
 </script>
 </body>
 </html>
@@ -5388,18 +5824,18 @@ document.getElementById("sample2").innerHTML =typeof MyName;
 
 ![](img/image_rsrcGH7.jpg)
 
-属性：
+### 属性
 
-```
-Man.name=Hanumanth
-Man.weight=73 kgs
-Man.height=5’.9”
-Man.complexion=wheat 等。
+```javascript
+Man.name = Hanumanth
+Man.weight = 73 kgs
+Man.height = 5’.9”
+Man.complexion = wheat 等。
 ```
 
-方法：
+### 方法
 
-```
+```javascript
 Man.walk()
 Man.talk()
 Man.watch() 等。
@@ -5409,17 +5845,17 @@ Man.watch() 等。
 
 ## JavaScript 对象
 
-在前面的章节中，我们学习了变量可以持有值，并且一次只持有一个值。JavaScript 对象也是变量，但它们持有多个值，例如：(Hanumanth, 73, 5.9, wheat) 被赋值给名为 `Man` 的变量。
+在前面的章节中，我们学习了变量可以持有值，并且一次只持有一个值。JavaScript 对象也是变量，但它们持有多个值，例如：`(Hanumanth, 73, 5.9, wheat)` 被赋值给名为 `Man` 的变量。
 
 对象属性可以通过两种方式访问：
 
-```
+```javascript
 objectName.propertyName
 ```
 
-或者
+或者：
 
-```
+```javascript
 objectName["propertyName"]
 ```
 
@@ -5431,9 +5867,17 @@ objectName["propertyName"]
 <body>
 <h2>JavaScript 对象演示</h2>
 <p id="sample"></p>
+
 <script>
-const man = {name:"Hanumanth", weight:"73kgs", height:"5.9", complexion:"wheat"};
-document.getElementById("sample").innerHTML = "A man "+man.name+" has height " + man.height+" feet";
+const man = {
+  name: "Hanumanth",
+  weight: "73kgs",
+  height: "5.9",
+  complexion: "wheat"
+};
+
+document.getElementById("sample").innerHTML =
+  "A man " + man.name + " has height " + man.height + " feet";
 </script>
 </body>
 </html>
@@ -5453,9 +5897,17 @@ document.getElementById("sample").innerHTML = "A man "+man.name+" has height " +
 <body>
 <h2>JavaScript 对象演示</h2>
 <p id="sample"></p>
+
 <script>
-const man = {name:"Hanumanth", weight:"73kgs", height:"5.9", complexion:"wheat"};
-document.getElementById("sample").innerHTML = "A man "+man["name"]+" has height " + man["height"]+" feet";
+const man = {
+  name: "Hanumanth",
+  weight: "73kgs",
+  height: "5.9",
+  complexion: "wheat"
+};
+
+document.getElementById("sample").innerHTML =
+  "A man " + man["name"] + " has height " + man["height"] + " feet";
 </script>
 </body>
 </html>
@@ -5467,11 +5919,11 @@ document.getElementById("sample").innerHTML = "A man "+man["name"]+" has height 
 
 对象也有方法。方法是可以对对象执行的操作或行为。
 
-访问对象方法：
+### 访问对象方法
 
-语法：
+#### 语法
 
-```
+```javascript
 objectName.methodName()
 ```
 
@@ -5483,8 +5935,18 @@ objectName.methodName()
 <body>
 <h2>JavaScript 方法演示</h2>
 <p id="sample"></p>
+
 <script>
-const man = {name:"Hanumanth", weight:"73kgs", height:"5.9", complexion:"wheat", details:function(){return this.name+" "+this.height;}};
+const man = {
+  name: "Hanumanth",
+  weight: "73kgs",
+  height: "5.9",
+  complexion: "wheat",
+  details: function() {
+    return this.name + " " + this.height;
+  }
+};
+
 document.getElementById("sample").innerHTML = man.details();
 </script>
 </body>
@@ -5499,22 +5961,24 @@ document.getElementById("sample").innerHTML = man.details();
 
 当 JavaScript 用于 HTML 页面时，JavaScript 可以对这些事件做出反应。
 
-HTML 事件：HTML 事件可以是浏览器执行的操作，也可以是用户执行的操作。下面给出了一些 HTML 事件的示例。
+### HTML 事件
+
+HTML 事件可以是浏览器执行的操作，也可以是用户执行的操作。下面给出了一些 HTML 事件的示例：
 
 - HTML 网页加载完成
 - HTML 输入字段被更改
 - HTML 按钮被点击
 
-当检测到事件时，JavaScript 会执行代码。HTML 允许将带有 JavaScript 代码的事件处理属性添加到 HTML 元素中，如下所示。
+当检测到事件时，JavaScript 会执行代码。HTML 允许将带有 JavaScript 代码的事件处理属性添加到 HTML 元素中，如下所示：
 
-```
-<element event='some JavaScript'>
-```
-
-或者
-
-```
+```html
 <element event="some JavaScript">
+```
+
+或者：
+
+```html
+<element event='some JavaScript'>
 ```
 
 让我们看一个处理 `onclick` 属性添加到 `<button>` 元素的示例。
@@ -5563,11 +6027,13 @@ HTML 事件：HTML 事件可以是浏览器执行的操作，也可以是用户�
 <head><title>使用函数显示日期</title></head>
 <body>
 <button onclick="dateToday()">查看日期</button>
+
 <script>
 function dateToday() {
-document.getElementById("sample").innerHTML = Date();
+  document.getElementById("sample").innerHTML = Date();
 }
 </script>
+
 <p id="sample"></p>
 </body>
 </html>
@@ -5583,10 +6049,6 @@ document.getElementById("sample").innerHTML = Date();
 
 常见的 HTML 事件列在下表中。
 
-
-
-
-
 | 事件 | 描述 |
 | --- | --- |
 | `Onchange` | HTML 元素已被更改。 |
@@ -5596,44 +6058,158 @@ document.getElementById("sample").innerHTML = Date();
 | `Onkeydown` | 用户按下了键盘上的某个键。 |
 | `Onload` | 浏览器已完成页面加载。 |
 
-让我们来看一些关于这些事件的程序。演示 `onclick` 事件的 JavaScript 代码：
+让我们来看一些关于这些事件的程序。
+
+### `onclick` 事件
+
+演示 `onclick` 事件的 JavaScript 代码：
 
 ```html
-<html><head><title>使用 onclick 进行减法演示</title></head><body><p id="sample"></p><button onclick="sub()">计算</button><script>let a = 10;let b = 40;let x = b - a;function sub(){document.getElementById("sample").innerHTML = x;}</script></body></html>
+<html>
+<head><title>使用 onclick 进行减法演示</title></head>
+<body>
+<p id="sample"></p>
+<button onclick="sub()">计算</button>
+
+<script>
+let a = 10;
+let b = 40;
+let x = b - a;
+
+function sub() {
+  document.getElementById("sample").innerHTML = x;
+}
+</script>
+</body>
+</html>
 ```
 
-输出：![](img/image_rsrcGHH.jpg)点击“计算”按钮后，我们得到以下结果。![](img/image_rsrcGHJ.jpg)
+输出：
+
+![](img/image_rsrcGHH.jpg)
+
+点击“计算”按钮后，我们得到以下结果：
+
+![](img/image_rsrcGHJ.jpg)
+
+### `onmouseover` 事件
 
 演示 `onmouseover` 事件的 JavaScript 代码：
 
 ```html
-<html><head><title>使用 onmouseover 进行加法演示</title></head><body><p id="sample"></p><button onmouseover="add()">计算</button><script>let a = 100;let b = 50;let x = a + b;function add(){document.getElementById("sample").innerHTML = x;}</script></body></html>
+<html>
+<head><title>使用 onmouseover 进行加法演示</title></head>
+<body>
+<p id="sample"></p>
+<button onmouseover="add()">计算</button>
+
+<script>
+let a = 100;
+let b = 50;
+let x = a + b;
+
+function add() {
+  document.getElementById("sample").innerHTML = x;
+}
+</script>
+</body>
+</html>
 ```
 
-输出：![](img/image_rsrcGHK.jpg)当鼠标悬停在“计算”按钮上时，会给出以下输出。![](img/image_rsrcGHM.jpg)
+输出：
+
+![](img/image_rsrcGHK.jpg)
+
+当鼠标悬停在“计算”按钮上时，会给出以下输出：
+
+![](img/image_rsrcGHM.jpg)
+
+### `onmouseout` 事件
 
 演示 `onmouseout` 事件的 JavaScript 代码：
 
 ```html
-<html><head><title>使用 onmouseout 进行乘法演示</title></head><body><p id="sample"></p><button onmouseout="mul()">计算</button><script>let a = 10;let b = 50;let x = a * b;function mul(){document.getElementById("sample").innerHTML = x;}</script></body></html>
+<html>
+<head><title>使用 onmouseout 进行乘法演示</title></head>
+<body>
+<p id="sample"></p>
+<button onmouseout="mul()">计算</button>
+
+<script>
+let a = 10;
+let b = 50;
+let x = a * b;
+
+function mul() {
+  document.getElementById("sample").innerHTML = x;
+}
+</script>
+</body>
+</html>
 ```
 
-输出：![](img/image_rsrcGHN.jpg)点击“计算”按钮后，我们得到以下结果。![](img/image_rsrcGHP.jpg)
+输出：
 
-数字方法与属性：原始值（如 123 或 3.142 等）不能拥有属性和方法，因为它们不是对象。在 JavaScript 中，方法和属性同样适用于原始值，因为 JavaScript 会将原始值视为对象。
+![](img/image_rsrcGHN.jpg)
 
-`toString` 方法：该方法将数字作为字符串返回，以下示例展示了其用法。
+点击“计算”按钮后，我们得到以下结果：
+
+![](img/image_rsrcGHP.jpg)
+
+## 数字方法与属性
+
+原始值（如 123 或 3.142 等）不能拥有属性和方法，因为它们不是对象。在 JavaScript 中，方法和属性同样适用于原始值，因为 JavaScript 会将原始值视为对象。
+
+### `toString()` 方法
+
+该方法将数字作为字符串返回，以下示例展示了其用法。
 
 ```html
-<html><head><title>toString 方法演示</title></head><body><p id="sample"></p><script>let a = 456;document.getElementById("sample").innerHTML =a.toString() + "<br>" +(456).toString() + "<br>" +(450 + 6).toString();</script></body></html>
+<html>
+<head><title>toString 方法演示</title></head>
+<body>
+<p id="sample"></p>
+
+<script>
+let a = 456;
+
+document.getElementById("sample").innerHTML =
+  a.toString() + "<br>" +
+  (456).toString() + "<br>" +
+  (450 + 6).toString();
+</script>
+</body>
+</html>
 ```
 
-输出：![](img/image_rsrcGHR.jpg)
+输出：
 
-`toExponential()` 方法：该方法返回一个字符串，其中数字经过四舍五入并以指数表示法书写。请看下面的示例。
+![](img/image_rsrcGHR.jpg)
+
+### `toExponential()` 方法
+
+该方法返回一个字符串，其中数字经过四舍五入并以指数表示法书写。请看下面的示例。
 
 ```html
-<html><head><title>toExponential() 方法演示</title></head><body><p id="sample"></p><script>let a = 4.56;document.getElementById("sample").innerHTML =a.toExponential() + "<br>" +a.toExponential(3) + "<br>" +a.toExponential(4);</script></body></html>
+
+
+
+```html
+<html>
+  <head>
+    <title>toExponential() 方法演示</title>
+  </head>
+  <body>
+    <p id="sample"></p>
+    <script>
+      let a = 4.56;
+      document.getElementById("sample").innerHTML =
+        a.toExponential() + "<br>" +
+        a.toExponential(3) + "<br>" +
+        a.toExponential(4);
+    </script>
+  </body>
+</html>
 ```
 
 输出：![](img/image_rsrcGHS.jpg)
@@ -5643,7 +6219,21 @@ document.getElementById("sample").innerHTML = Date();
 `toFixed()` 方法：该方法用于返回一个字符串，其中数字按指定的小数位数书写，如下例所示。
 
 ```html
-<html><head><title>toFixed() 方法演示</title></head><body><p id="sample"></p><script>let a = 4.56;document.getElementById("sample").innerHTML =a.toFixed(0) + "<br>" +a.toFixed(3) + "<br>" +a.toFixed(4);</script></body></html>
+<html>
+  <head>
+    <title>toFixed() 方法演示</title>
+  </head>
+  <body>
+    <p id="sample"></p>
+    <script>
+      let a = 4.56;
+      document.getElementById("sample").innerHTML =
+        a.toFixed(0) + "<br>" +
+        a.toFixed(3) + "<br>" +
+        a.toFixed(4);
+    </script>
+  </body>
+</html>
 ```
 
 输出：![](img/image_rsrcGHT.jpg)
@@ -5651,7 +6241,21 @@ document.getElementById("sample").innerHTML = Date();
 `toPrecision()` 方法：该方法返回一个字符串，其中数字按指定的长度书写，如下例所示。
 
 ```html
-<html><head><title>toPrecision() 方法演示</title></head><body><p id="sample"></p><script>let a = 4.56;document.getElementById("sample").innerHTML =a.toPrecision() + "<br>" +a.toPrecision(3) + "<br>" +a.toPrecision(4);</script></body></html>
+<html>
+  <head>
+    <title>toPrecision() 方法演示</title>
+  </head>
+  <body>
+    <p id="sample"></p>
+    <script>
+      let a = 4.56;
+      document.getElementById("sample").innerHTML =
+        a.toPrecision() + "<br>" +
+        a.toPrecision(3) + "<br>" +
+        a.toPrecision(4);
+    </script>
+  </body>
+</html>
 ```
 
 输出：![](img/image_rsrcGHU.jpg)
@@ -5659,50 +6263,119 @@ document.getElementById("sample").innerHTML = Date();
 `valueOf()` 方法：该方法用于将数字作为数字返回。以下示例演示了其用法。
 
 ```html
-<html><head><title>valueOf() 方法演示</title></head><body><p id="sample"></p><script>let a = 4.56;document.getElementById("sample").innerHTML =a.valueOf() + "<br>" +(4.56).valueOf() + "<br>" +(4+0.56).valueOf();</script></body></html>
+<html>
+  <head>
+    <title>valueOf() 方法演示</title>
+  </head>
+  <body>
+    <p id="sample"></p>
+    <script>
+      let a = 4.56;
+      document.getElementById("sample").innerHTML =
+        a.valueOf() + "<br>" +
+        (4.56).valueOf() + "<br>" +
+        (4 + 0.56).valueOf();
+    </script>
+  </body>
+</html>
 ```
 
 输出：![](img/image_rsrcGHV.jpg)
 
 注意：`valueOf()` 方法用于将数字对象转换为原始值。
 
-将变量转换为数字：有三种方法可以将变量转换为数字。
+## 将变量转换为数字
+
+有三种方法可以将变量转换为数字：
 
 - `Number()` 方法
 - `parseInt()` 方法
 - `parseFloat()` 方法
 
-`Number()` 方法：它返回一个数字，该数字由其参数转换而来。
+### `Number()` 方法
+
+它返回一个数字，该数字由其参数转换而来。
 
 `Number()` 方法的示例：
 
 ```html
-<html><head><title>Number() 方法演示</title></head><body><p id="sample"></p><script>document.getElementById("sample").innerHTML =Number(true) + "<br>" +Number(false) + "<br>" +Number("5") + "<br>" +Number("5.1") + "<br>" +Number("5,1");</script></body></html>
+<html>
+  <head>
+    <title>Number() 方法演示</title>
+  </head>
+  <body>
+    <p id="sample"></p>
+    <script>
+      document.getElementById("sample").innerHTML =
+        Number(true) + "<br>" +
+        Number(false) + "<br>" +
+        Number("5") + "<br>" +
+        Number("5.1") + "<br>" +
+        Number("5,1");
+    </script>
+  </body>
+</html>
 ```
 
 输出：![](img/image_rsrcGHW.jpg)
 
 注意：如果无法转换数字，则返回 `NaN`（非数字）。
 
-`parseInt()` 方法：解析其参数并返回一个整数。
+### `parseInt()` 方法
+
+解析其参数并返回一个整数。
 
 让我们通过一个示例来演示 `parseInt()` 方法的用法。
 
 ```html
-<html><head><title>parseInt() 方法演示</title></head><body><p id="sample"></p><script>document.getElementById("sample").innerHTML =parseInt("-5") + "<br>" +parseInt("-2.3") + "<br>" +parseInt("15") + "<br>" +parseInt("5.1") + "<br>" +parseInt(5,1);</script></body></html>
+<html>
+  <head>
+    <title>parseInt() 方法演示</title>
+  </head>
+  <body>
+    <p id="sample"></p>
+    <script>
+      document.getElementById("sample").innerHTML =
+        parseInt("-5") + "<br>" +
+        parseInt("-2.3") + "<br>" +
+        parseInt("15") + "<br>" +
+        parseInt("5.1") + "<br>" +
+        parseInt(5, 1);
+    </script>
+  </body>
+</html>
 ```
 
 输出：![](img/image_rsrcGHX.jpg)
 
-`parseFloat()` 方法：解析其参数并返回一个浮点数。请看下面的示例。
+### `parseFloat()` 方法
+
+解析其参数并返回一个浮点数。请看下面的示例。
 
 ```html
-<html><head><title>parseFloat() 方法演示</title></head><body><p id="sample"></p><script>document.getElementById("sample").innerHTML =parseFloat("5") + "<br>" +parseFloat("2.3") + "<br>" +parseFloat("15") + "<br>" +parseFloat("5.1") + "<br>" +parseFloat("5 minutes");parseFloat("minutes 5");</script></body></html>
+<html>
+  <head>
+    <title>parseFloat() 方法演示</title>
+  </head>
+  <body>
+    <p id="sample"></p>
+    <script>
+      document.getElementById("sample").innerHTML =
+        parseFloat("5") + "<br>" +
+        parseFloat("2.3") + "<br>" +
+        parseFloat("15") + "<br>" +
+        parseFloat("5.1") + "<br>" +
+        parseFloat("5 minutes");
+
+      parseFloat("minutes 5");
+    </script>
+  </body>
+</html>
 ```
 
 输出：![](img/image_rsrcGHY.jpg)
 
-数字属性：
+## 数字属性
 
 | 属性 | 描述 |
 | --- | --- |
@@ -5712,162 +6385,181 @@ document.getElementById("sample").innerHTML = Date();
 | `NEGATIVE_INFINITY` | 表示负无穷大（溢出时返回） |
 | `NaN` | 表示“非数字”值 |
 
-
-
-
-
 # JavaScript 数字属性与字符串
 
-### `MAX_VALUE` 和 `MIN_VALUE`
+## `MAX_VALUE` 和 `MIN_VALUE`
 
 `MAX_VALUE`：该属性返回最大的数字。  
 `MIN_VALUE`：该属性返回最小的数字。
 
-**示例：**
+示例：
 
 ```html
 <html>
-<head><title>The MAX_VALUE and MIN_VALUE Demo</title></head>
-<body>
-<h4>The max value is:</h4>
-<p id="sample1"></p>
-<h4>The min value is:</h4>
-<p id="sample2"></p>
-<script>
-let a = Number.MAX_VALUE;
-let b = Number.MIN_VALUE;
-document.getElementById("sample1").innerHTML = a;
-document.getElementById("sample2").innerHTML = b;
-</script>
-</body>
+  <head>
+    <title>The MAX_VALUE and MIN_VALUE Demo</title>
+  </head>
+  <body>
+    <h4>The max value is:</h4>
+    <p id="sample1"></p>
+
+    <h4>The min value is:</h4>
+    <p id="sample2"></p>
+
+    <script>
+      let a = Number.MAX_VALUE;
+      let b = Number.MIN_VALUE;
+
+      document.getElementById("sample1").innerHTML = a;
+      document.getElementById("sample2").innerHTML = b;
+    </script>
+  </body>
 </html>
 ```
 
-**输出：**  
+输出：  
 ![](img/image_rsrcGHZ.jpg)
 
 ## `Positive_infinity`
 
 `Positive_infinity`：在溢出时返回。
 
-**示例：**
+示例：
 
 ```html
 <html>
-<head><title>Positive_infinity Demo</title></head>
-<body>
-<p>POSITIVE_INFINITY</p>
-<p id="sample"></p>
-<script>
-let a = Number.POSITIVE_INFINITY;
-document.getElementById("sample").innerHTML = a;
-</script>
-</body>
+  <head>
+    <title>Positive_infinity Demo</title>
+  </head>
+  <body>
+    <p>POSITIVE_INFINITY</p>
+    <p id="sample"></p>
+
+    <script>
+      let a = Number.POSITIVE_INFINITY;
+      document.getElementById("sample").innerHTML = a;
+    </script>
+  </body>
 </html>
 ```
 
-**输出：**  
+输出：  
 ![](img/image_rsrcGJ0.jpg)
 
 让我们看看 JavaScript 如何处理无穷大异常。
 
 ```html
 <html>
-<head><title>Positive_infinity Exception Demo</title></head>
-<body>
-<p>POSITIVE_INFINITY</p>
-<p id="sample"></p>
-<script>
-let a = 5 / 0;
-document.getElementById("sample").innerHTML = a;
-</script>
-</body>
+  <head>
+    <title>Positive_infinity Exception Demo</title>
+  </head>
+  <body>
+    <p>POSITIVE_INFINITY</p>
+    <p id="sample"></p>
+
+    <script>
+      let a = 5 / 0;
+      document.getElementById("sample").innerHTML = a;
+    </script>
+  </body>
 </html>
 ```
 
-**输出：**  
+输出：  
 ![](img/image_rsrcGJ1.jpg)
 
 ## `Negative_infinity`
 
 `Negative_infinity`：在溢出时返回。
 
-**示例：**
+示例：
 
 ```html
 <html>
-<head><title>Negative_infinity Demo</title></head>
-<body>
-<p>NEGATIVE_INFINITY</p>
-<p id="sample"></p>
-<script>
-let a = Number.NEGATIVE_INFINITY;
-document.getElementById("sample").innerHTML = a;
-</script>
-</body>
+  <head>
+    <title>Negative_infinity Demo</title>
+  </head>
+  <body>
+    <p>NEGATIVE_INFINITY</p>
+    <p id="sample"></p>
+
+    <script>
+      let a = Number.NEGATIVE_INFINITY;
+      document.getElementById("sample").innerHTML = a;
+    </script>
+  </body>
 </html>
 ```
 
-**输出：**  
+输出：  
 ![](img/image_rsrcGJ2.jpg)
 
 让我们看看 JavaScript 如何处理负无穷大异常。
 
 ```html
 <html>
-<head><title>Negative_infinity Exception Demo</title></head>
-<body>
-<p>NEGATIVE_INFINITY</p>
-<p id="sample"></p>
-<script>
-let a = -5 / 0;
-document.getElementById("sample").innerHTML = a;
-</script>
-</body>
+  <head>
+    <title>Negative_infinity Exception Demo</title>
+  </head>
+  <body>
+    <p>NEGATIVE_INFINITY</p>
+    <p id="sample"></p>
+
+    <script>
+      let a = -5 / 0;
+      document.getElementById("sample").innerHTML = a;
+    </script>
+  </body>
 </html>
 ```
 
-**输出：**  
+输出：  
 ![](img/image_rsrcGJ3.jpg)
 
-### `NaN` – 非数字
+## `NaN` – 非数字
 
 `NaN`：这是一个保留字，表示数字不合法。
 
-**示例：**
+示例：
 
 ```html
 <html>
-<head><title>NaN Demo</title></head>
-<body>
-<p>Not a Number</p>
-<p id="sample"></p>
-<script>
-document.getElementById("sample").innerHTML = Number.NaN;
-</script>
-</body>
+  <head>
+    <title>NaN Demo</title>
+  </head>
+  <body>
+    <p>Not a Number</p>
+    <p id="sample"></p>
+
+    <script>
+      document.getElementById("sample").innerHTML = Number.NaN;
+    </script>
+  </body>
 </html>
 ```
 
-**输出：**  
+输出：  
 ![](img/image_rsrcGJ4.jpg)
 
 让我们看一个演示非数字（`NaN`）的示例。
 
 ```html
 <html>
-<head><title>NaN Example Demo</title></head>
-<body>
-<p>Not a Number</p>
-<p id="sample"></p>
-<script>
-document.getElementById("sample").innerHTML = 500 / "Sneha";
-</script>
-</body>
+  <head>
+    <title>NaN Example Demo</title>
+  </head>
+  <body>
+    <p>Not a Number</p>
+    <p id="sample"></p>
+
+    <script>
+      document.getElementById("sample").innerHTML = 500 / "Sneha";
+    </script>
+  </body>
 </html>
 ```
 
-**输出：**  
+输出：  
 ![](img/image_rsrcGJ5.jpg)
 
 ## 数字属性不能用于变量
@@ -5876,18 +6568,21 @@ document.getElementById("sample").innerHTML = 500 / "Sneha";
 
 ```html
 <html>
-<head><title>Undefined Demo</title></head>
-<body>
-<p id="sample"></p>
-<script>
-let a = 10;
-document.getElementById("sample").innerHTML = a.MAX_VALUE;
-</script>
-</body>
+  <head>
+    <title>Undefined Demo</title>
+  </head>
+  <body>
+    <p id="sample"></p>
+
+    <script>
+      let a = 10;
+      document.getElementById("sample").innerHTML = a.MAX_VALUE;
+    </script>
+  </body>
 </html>
 ```
 
-**输出：**  
+输出：  
 ![](img/image_rsrcGJ6.jpg)
 
 ---
@@ -5898,20 +6593,23 @@ document.getElementById("sample").innerHTML = a.MAX_VALUE;
 
 字符串是用一对双引号或单引号括起来的字符序列。引号内的字符可以是零个或多个。
 
-**示例：**
+示例：
 
 ```javascript
 let name = "Hanumanth Ladwa";
+
 // 或者
+
 let name = 'Hanumanth Ladwa';
 ```
 
 字符串长度可以通过内置的 `length` 属性确定。
 
-**示例：**
+示例：
 
 ```javascript
 let name = "Hanumanth Ladwa";
+
 name.length; // 这将返回 15
 ```
 
@@ -5927,416 +6625,614 @@ name.length; // 这将返回 15
 
 ```html
 <html>
-<head><title>Use of escape sequences Demo</title></head>
-<body>
-<p id="sample1"></p>
-<p id="sample2"></p>
-<p id="sample3"></p>
-<script>
-let str1 = "We are glad to announce \"Bonus\" for all employees.";
-document.getElementById("sample1").innerHTML = str1;
-let str2 = "We are glad to announce \'Bonus\' for all employees.";
-document.getElementById("sample2").innerHTML = str2;
-let str3 = "We are glad to announce \\Bonus\\ for all employees.";
-document.getElementById("sample3").innerHTML = str3;
-</script>
-</body>
+  <head>
+    <title>Use of escape sequences Demo</title>
+  </head>
+  <body>
+    <p id="sample1"></p>
+    <p id="sample2"></p>
+    <p id="sample3"></p>
+
+    <script>
+      let str1 = "We are glad to announce \"Bonus\" for all employees.";
+      document.getElementById("sample1").innerHTML = str1;
+
+      let str2 = "We are glad to announce \'Bonus\' for all employees.";
+      document.getElementById("sample2").innerHTML = str2;
+
+      let str3 = "We are glad to announce \\Bonus\\ for all employees.";
+      document.getElementById("sample3").innerHTML = str3;
+    </script>
+  </body>
 </html>
 ```
 
-**输出：**  
+输出：  
 ![](img/image_rsrcGJ7.jpg)
 
 其他一些转义序列如下表所示。
 
-| 转义序列 | 描述         |
-|----------|--------------|
-| `\b`     | 退格         |
-| `\f`     | 换页         |
-| `\n`     | 换行         |
-| `\r`     | 回车         |
-| `\t`     | 水平制表符   |
-| `\v`     | 垂直制表符   |
-
-
-
-
+| 转义序列 | 描述 |
+| --- | --- |
+| `\b` | 退格 |
+| `\f` | 换页 |
+| `\n` | 换行 |
+| `\r` | 回车 |
+| `\t` | 水平制表符 |
+| `\v` | 垂直制表符 |
 
 # 字符串也可以是对象
 
 正如我们之前看到的，字符串是原始类型。
+
 示例：`let name=”Hanumanth Ladwa";`
-但下面的语句显示，字符串也可以使用关键字 `new`运算符定义为对象。`let name=new String(“Hanumanth Ladwa”);` 让我们来看下面的示例，它演示了字符串和对象
+
+但下面的语句显示，字符串也可以使用关键字 `new` 运算符定义为对象。`let name=new String(“Hanumanth Ladwa”);` 让我们来看下面的示例，它演示了字符串和对象。
 
 ```html
 let a = "Hanumanth Ladwa";      // a 是字符串
+
 let b = new String("Hanumanth Ladwa");  // b 是一个对象
-document.getElementById("sample").innerHTML ="a is a "+typeof a + " and b is an " + typeof b;
+
+document.getElementById("sample").innerHTML =
+  "a is a " + typeof a + " and b is an " + typeof b;
 ```
-输出:![](img/image_rsrcGJ8.jpg)
 
-**注意：** 避免将对象创建字符串，因为这会降低执行速度，并可能会产生一些意想不到的结果。
+输出：  
+![](img/image_rsrcGJ8.jpg)
 
-## 当我们使用 `==` 运算符时，相同的字符串相等相等：
+注意：避免将对象创建字符串，因为这会降低执行速度，并可能会产生一些意想不到的结果。
+
+## 当我们使用 `==` 运算符时，相同的字符串相等相等
+
 ```html
 let a = "Hanumanth Ladwa";
+
 let b = new String("Hanumanth Ladwa");
-document.getElementById("sample").innerHTML =(a==b);
+
+document.getElementById("sample").innerHTML = (a == b);
 ```
-输出:![](img/image_rsrcGJ9.jpg)
+
+输出：  
+![](img/image_rsrcGJ9.jpg)
 
 当使用 `===` 运算符时，相同的值可能并不相等，因为它期望数据类型和值都相等。
+
 ```html
 let a = "Hanumanth Ladwa";
+
 let b = new String("Hanumanth Ladwa");
-document.getElementById("sample").innerHTML =(a===b);
+
+document.getElementById("sample").innerHTML = (a === b);
 ```
-输出:![](img/image_rsrcGJA.jpg)
+
+输出：  
+![](img/image_rsrcGJA.jpg)
 
 对象不能像下面所示进行比较。
+
 ```html
 let a = new String("Hanumanth Ladwa");
+
 let b = new String("Hanumanth Ladwa");
-document.getElementById("sample").innerHTML =(a==b);
+
+document.getElementById("sample").innerHTML = (a == b);
 ```
-输出:![](img/image_rsrcGJB.jpg)
+
+输出：  
+![](img/image_rsrcGJB.jpg)
+
 ```html
 let a = new String("Hanumanth Ladwa");
+
 let b = new String("Hanumanth Ladwa");
-document.getElementById("sample").innerHTML =(a===b);
 ```
-输出:![](img/image_rsrcGJC.jpg)
-**注意：** 两个 JavaScript 对象将始终返回 false 值。
+
+
+
+```javascript
+document.getElementById("sample").innerHTML = (a === b);
+```
+
+输出：![](img/image_rsrcGJC.jpg)
+
+**注意：** 两个 JavaScript 对象将始终返回 `false` 值。
 
 ## 字符串属性和方法
 
-### 字符串长度 length
+### 字符串长度：`length`
+
 `length` 属性返回字符串中字符的总数。在上节中已经见过了代码示例。
 
-### slice()
+### `slice()`
+
 此方法提取字符串的一部分。该方法接受 2 个参数：起始位置和结束位置。
-语法：`slice(start,end);`
+
+语法：`slice(start, end);`
+
 示例：
+
 ```html
 let flower = "Sunflower, Rose, Lilly";
-document.getElementById("sample").innerHTML = flower.slice(11,15);
+
+document.getElementById("sample").innerHTML = flower.slice(11, 15);
 ```
-输出:![](img/image_rsrcGJD.jpg)
+
+输出：![](img/image_rsrcGJD.jpg)
 
 如果参数值为负数，则位置从字符串末尾开始计数。
+
 示例：
+
 ```html
 let flower = "Sunflower, Rose, Lilly";
-document.getElementById("sample").innerHTML = flower.slice(-11,-7);
+
+document.getElementById("sample").innerHTML = flower.slice(-11, -7);
 ```
-输出:![](img/image_rsrcGJE.jpg)
+
+输出：![](img/image_rsrcGJE.jpg)
 
 如果你省略了第二个参数，该方法将如下面的示例所示切出字符串的剩余部分。
+
 ```html
 let flower = "Sunflower, Rose, Lilly";
+
 document.getElementById("sample").innerHTML = flower.slice(11);
 ```
-输出:![](img/image_rsrcGJF.jpg)
+
+输出：![](img/image_rsrcGJF.jpg)
 
 或者，它也可以用于从末尾计数，如下面的示例所示。
+
 ```html
 let flower = "Sunflower, Rose, Lilly";
+
 document.getElementById("sample").innerHTML = flower.slice(-11);
 ```
-输出:![](img/image_rsrcGJG.jpg)
 
-### substring() 方法
+输出：![](img/image_rsrcGJG.jpg)
+
+### `substring()` 方法
+
 此方法与 `slice()` 方法相似，但有一个区别，`substring()` 方法永远不会接收负索引。
+
 语法：`substring(start, end);`
+
 示例：
+
 ```html
 let flower = "Sunflower, Rose, Lilly";
-document.getElementById("sample").innerHTML = flower.substring(0,9);
+
+document.getElementById("sample").innerHTML = flower.substring(0, 9);
 ```
-输出:![](img/image_rsrcGJH.jpg)
+
+输出：![](img/image_rsrcGJH.jpg)
 
 如果你省略了第二个参数，`substring()` 将切出字符串的剩余部分。
 
-### substr() 方法
-此方法与 `slice` 相似，但区别在于第二个参数是所提取部分的长度。
+### `substr()` 方法
+
+此方法与 `slice()` 相似，但区别在于第二个参数是所提取部分的长度。
+
 语法：`substr(start, length);`
+
 示例：
+
 ```html
 let flower = "Sunflower, Rose, Lilly";
-document.getElementById("sample").innerHTML = flower.substr(0,9);
+
+document.getElementById("sample").innerHTML = flower.substr(0, 9);
 ```
-输出:![](img/image_rsrcGJJ.jpg)
+
+输出：![](img/image_rsrcGJJ.jpg)
 
 如果你省略了第二个参数，`substr()` 将切出字符串的剩余部分。
+
 ```html
 let flower = "Sunflower, Rose, Lilly";
+
 document.getElementById("sample").innerHTML = flower.substr(1);
 ```
-输出:![](img/image_rsrcGJK.jpg)
+
+输出：![](img/image_rsrcGJK.jpg)
 
 如果第一个参数是负数，位置从字符串末尾开始计数。
+
 ```html
 let flower = "Sunflower, Rose, Lilly";
+
 document.getElementById("sample").innerHTML = flower.substr(-5);
 ```
-输出:![](img/image_rsrcGJM.jpg)
 
-### replace() 方法
+输出：![](img/image_rsrcGJM.jpg)
+
+### `replace()` 方法
+
 字符串内容可以通过名为 `replace()` 方法进行替换，如下面的示例所示。
+
 ```html
 let str = "...";
-document.getElementById("sample").innerHTML = str.replace("Office","Home");
+
+document.getElementById("sample").innerHTML = str.replace("Office", "Home");
 ```
-输出:![](img/image_rsrcGJN.jpg)
+
+输出：![](img/image_rsrcGJN.jpg)
 
 `replace()` 方法是大小写敏感的。即大写字母和小写字母是不同的。若要让 `replace()` 方法不区分大小写，使用带有 `/i` 标志的正则表达式。
+
 ```html
 let str = "...";
-document.getElementById("sample").innerHTML = str.replace(/Office/i,"Home");
+
+document.getElementById("sample").innerHTML = str.replace(/Office/i, "Home");
 ```
-输出:![](img/image_rsrcGJR.jpg)
+
+输出：![](img/image_rsrcGJR.jpg)
 
 正则表达式 `/g` 标志替换所有匹配项。
+
 ```html
 let str = "...";
-document.getElementById("sample").innerHTML = str.replace(/Office/g,"Home");
+
+document.getElementById("sample").innerHTML = str.replace(/Office/g, "Home");
 ```
-输出:![](img/image_rsrcGJS.jpg)
+
+输出：![](img/image_rsrcGJS.jpg)
 
 ### 大写和小写转换
+
 使用 `toUpperCase()` 方法将字符串转换为大写，使用 `toLowerCase()` 方法转换为小写。
+
 ```html
 let str = "...";
+
 document.getElementById("sample").innerHTML = str.toUpperCase();
+
 let str = "...";
+
 document.getElementById("sample").innerHTML = str.toLowerCase();
 ```
 
-### concat() 方法
+### `concat()` 方法
+
 此方法用于连接或组合两个字符串。第二个字符串在第一个字符串的末尾连接。
+
 ```html
 let str1 = "Hi";
+
 let str2 = "There!";
-let str3 = str1.concat(" ",str2);
+
+let str3 = str1.concat(" ", str2);
+
 document.getElementById("sample").innerHTML = str3;
 ```
+
 相同的拼接操作也可以通过 `+` 运算符完成。
+
 ```html
-let str1="Hi"+" +"There!";
+let str1 = "Hi" + " " + "There!";
+
 document.getElementById("sample1").innerHTML = str1;
-let str2 = "Hi".concat(" ","There!");
+
+let str2 = "Hi".concat(" ", "There!");
+
 document.getElementById("sample2").innerHTML = str2;
 ```
 
-### trim() 方法
+### `trim()` 方法
+
 此方法用于移除字符串两边的空白空格。
+
 ```javascript
 let str = "   Hi There!   ";
-document.getElementById("sample").innerHTML=str;
+
+document.getElementById("sample").innerHTML = str;
 ```
 
 ### 字符串填充
+
 `padStart()` 支持在开头填充，`padEnd()` 支持在结尾填充。
+
 ```javascript
 let str = "6";
-document.getElementById("sample").innerHTML = str.padStart(4,0);
+
+document.getElementById("sample").innerHTML = str.padStart(4, 0);
+
 let str1 = "6";
-document.getElementById("sample").innerHTML = str1.padEnd(4,0);
+
+document.getElementById("sample").innerHTML = str1.padEnd(4, 0);
 ```
 
 # 第 15 章 数组
 
 数组是变量下相同类型值的集合。你可以通过引用索引访问每个值。在 JavaScript 中，使用 `const` 关键字声明数组是一种常见做法。
-语法：`const array_name=[item1, item2, …];`
+
+语法：`const array_name = [item1, item2, …];`
+
 ```javascript
 const family_members = ["Priyanka", "Sneha", "Swaroop"];
+
 document.getElementById("sample").innerHTML = family_members;
 ```
 
 使用 `new` 关键字：通过 `new` 运算符我们创建一个数组。
+
 ```javascript
 const family_members = Array("Priyanka", "Sneha", "Swaroop");
+
 document.getElementById("sample").innerHTML = family_members;
 ```
 
 数组的每个元素可以通过其索引数字访问。
+
 ```javascript
 const family_members = Array("Priyanka", "Sneha", "Swaroop");
+
 document.getElementById("sample").innerHTML = family_members[0];
 ```
 
 我们也可以更改数组的特定下标。
+
 ```javascript
 const family_members = ["Priyanka", "Sneha", "Swaroop"];
-family_members[1]="Raj";
+
+family_members[1] = "Raj";
+
 document.getElementById("sample").innerHTML = family_members;
 ```
 
 数组是对象：使用名称访问其成员。
+
 ```javascript
-const family_members = {firstNiece:"Priyanka", secondNiece:"Sneha", thirdNiece:"Sonia", forthNepiece:"Swaroop"};
+const family_members = {
+    firstNiece: "Priyanka",
+    secondNiece: "Sneha",
+    thirdNiece: "Sonia",
+    forthNepiece: "Swaroop"
+};
 ```
+
 （注：此处原文似乎表达数组元素可以是不同类型，因为 JavaScript 数组是对象。）
 
 ## 数组属性和方法
 
 ### `length` 属性
+
 该属性返回数组中元素的个数。
+
 ```javascript
 const family_members = ["Priyanka", "Sneha", "Swaroop"];
+
 document.getElementById("sample").innerHTML = family_members.length;
 ```
+
 通过 `length` 属性我们可以访问最后一个元素。
+
 ```javascript
 const family_members = ["Priyanka", "Sneha", "Swaroop"];
-document.getElementById("sample").innerHTML = family_members[family_members.length-1];
+
+document.getElementById("sample").innerHTML =
+    family_members[family_members.length - 1];
 ```
 
 ### 循环元素
+
 显示所有元素的最佳方式是通过 `for` 循环。
+
 ```javascript
 const family_members = ["Priyanka", "Sneha", "Swaroop"];
+
 let str = "";
+
 for (let i = 0; i < family_members.length; i++) {
     str += "<li>" + family_members[i] + "</li>";
 }
+
 document.getElementById("sample").innerHTML = str;
 ```
+
 除了 `for` 循环我们也可以使用 `forEach()` 函数。
+
 ```javascript
 const family_members = ["Priyanka", "Sneha", "Swaroop"];
+
 let str = "";
-family_members.forEach(function(value, index){
+
+family_members.forEach(function(value, index) {
     str += "<li>" + value + "</li>";
 });
+
 document.getElementById("sample").innerHTML = str;
 ```
-**注意：** `forEach` 函数接受三个参数：`value`、`index` 和 `array` 本体。
+
+**注意：** `forEach()` 函数接受三个参数：`value`、`index` 和 `array` 本体。
 
 ### 添加数组元素
+
 我们可以使用 `push()` 方法向数组添加元素。
+
 ```javascript
 const family_members = ["Priyanka", "Sneha", "Swaroop"];
+
 family_members.push("Sunflower");
+
 document.getElementById("sample").innerHTML = family_members;
 ```
+
 新元素也可以通过 `length` 属性添加到数组。
+
 ```javascript
 const family_members = ["Priyanka", "Sneha", "Swaroop"];
-family_members.length="Sunflower";
+
+family_members.length = "Sunflower";
+
 document.getElementById("sample").innerHTML = family_members;
 ```
+
 使用高索引添加元素会在数组中产生空位。
+
 ```javascript
 const family_members = ["Priyanka", "Sneha", "Swaroop"];
+
 family_members[5] = "Sunflower";
+
 let str = "";
+
 for (i = 0; i < family_members.length; i++) {
     str += family_members[i] + "<br>";
 }
+
 document.getElementById("sample").innerHTML = str;
 ```
 
 ### 数组和对象
+
 在 JavaScript 中，数组使用数字索引，而对象使用命名索引。当我们希望元素名称是字符串时，我们应该使用对象。`new Array()` 构造函数可能会产生意外的结果。
+
 ```javascript
 var a = new Array(10);
 ```
+
 这创建一个包含 10 个空槽的数组。
+
 ```javascript
-const a = [10,20,30,40];
+const a = [10, 20, 30, 40];
 ```
+
 安全地使用 `[]`。
 
 ### 数组方法
 
-### 将数组转换为字符串
+#### 将数组转换为字符串
+
 `toString()` 方法用于将数组转换为字符串值。
+
 ```javascript
 const flowers = ["Rose", "Jasmin", "Lilly"];
+
 document.getElementById("sample").innerHTML = flowers.toString();
 ```
 
-### 在数组中 pop 和 push
+#### 在数组中 `pop` 和 `push`
+
 向数组插入元素称为 `pushing`，从数组中删除元素称为 `popping`。
+
 ```javascript
 const flowers = ["Rose", "Jasmin", "Lilly"];
+
 flowers.push("Sunflower");
+
 document.getElementById("sample").innerHTML = flowers;
+
 flowers.pop();
+
 document.getElementById("sample").innerHTML = flowers;
 ```
 
-### 移位元素
+#### 移位元素
+
 `shift()` 方法移除数组的第一个元素并将所有其他元素向低索引移动。
+
 ```javascript
 const flowers = ["Rose", "Jasmin", "Lilly"];
+
 flowers.shift();
+
 document.getElementById("sample").innerHTML = flowers;
 ```
 
-### `unshift()` 方法
+#### `unshift()` 方法
+
 `unshift()` 方法用于在数组开头添加一个新元素并移动旧元素。
+
 ```javascript
 const flowers = ["Rose", "Jasmin", "Lilly"];
+
 flowers.unshift("Sunflower");
+
 document.getElementById("sample").innerHTML = flowers;
 ```
 
-### `splice()` 方法
+#### `splice()` 方法
+
 `splice()` 方法用于向数组添加新项。第一个参数定义了添加元素的位置，第二个参数定义了应该移除多少元素。
+
 ```javascript
 const flowers = ["Rose", "Jasmin", "Lilly"];
-flowers.splice(1,1,"Sunflower");
-document.getElementById("sample").innerHTML = flowers;
-```
-`splice()` 方法也用于在不留空位的情况下移除元素。
-```javascript
-const flowers = ["Rose", "Jasmin", "Lilly"];
-flowers.splice(1,1);
+
+flowers.splice(1, 1, "Sunflower");
+
 document.getElementById("sample").innerHTML = flowers;
 ```
 
-### 合并或拼接数组
+`splice()` 方法也用于在不留空位的情况下移除元素。
+
+```javascript
+const flowers = ["Rose", "Jasmin", "Lilly"];
+
+flowers.splice(1, 1);
+
+document.getElementById("sample").innerHTML = flowers;
+```
+
+#### 合并或拼接数组
+
 使用 `concat()` 方法合并数组创建一个新数组。
+
 ```javascript
 const myiece = ["Priyanka", "Sneha", "Sonia"];
+
 const myNephew = ["Swaroop", "Raj"];
+
 const myChildren = myiece.concat(myNephew);
+
 document.getElementById("sample").innerHTML = myChildren;
 ```
 
-### 切片数组
+#### 切片数组
+
 `slice()` 方法用于将数组的一部分切入新数组中。
+
 ```javascript
 const flowers = ["Rose", "Jasmin", "Lilly"];
+```
+
+
+
+```javascript
 const flower_bunch = flowers.slice(1);
+
 document.getElementById("sample").innerHTML = flowers + "<br><br>" + flower_bunch;
 ```
+
 `slice()` 方法可以接受两个参数，该方法从 `start` 参数选择元素，直到但不包括 `end` 参数。
+
 ```javascript
 const flowers = ["Rose", "Jasmin", "Lilly", "Sunflower", "Lotus"];
-const flower_bunch = flowers.slice(1,3);
+
+const flower_bunch = flowers.slice(1, 3);
+
 document.getElementById("sample").innerHTML = flowers + "<br><br>" + flower_bunch;
 ```
 
 ### 排序数组
+
 `sort()` 方法用于排列元素。以升序或降序排列数组。
+
 ```javascript
 const flowers = ["Rose", "Jasmin", "Lilly"];
+
 flowers.sort();
 ```
 
 ### 反转数组
+
 `reverse()` 方法用于反转数组元素。
+
 ```javascript
 const flowers = ["Rose", "Jasmin", "Lilly"];
+
 flowers.reverse();
 ```
-
-
-
-
 
 | 方法 | 描述 |
 | --- | --- |
@@ -6360,6 +7256,7 @@ flowers.reverse();
 <p id="sample"></p>
 <script>
 const d = new Date();
+
 document.getElementById("sample").innerHTML = d.getTime();
 </script>
 </body>
@@ -6377,6 +7274,7 @@ document.getElementById("sample").innerHTML = d.getTime();
 <p id="sample"></p>
 <script>
 const d = new Date();
+
 document.getElementById("sample").innerHTML = d.getFullYear();
 </script>
 </body>
@@ -6394,6 +7292,7 @@ document.getElementById("sample").innerHTML = d.getFullYear();
 <p id="sample"></p>
 <script>
 const d = new Date();
+
 document.getElementById("sample").innerHTML = d.getMonth();
 </script>
 </body>
@@ -6411,7 +7310,9 @@ document.getElementById("sample").innerHTML = d.getMonth();
 <p id="sample"></p>
 <script>
 const d = new Date();
-const months=["January","February","March","April","May","June","July","August","September","October","November","December"];
+
+const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
 document.getElementById("sample").innerHTML = months[d.getMonth()];
 </script>
 </body>
@@ -6429,6 +7330,7 @@ document.getElementById("sample").innerHTML = months[d.getMonth()];
 <p id="sample"></p>
 <script>
 const d = new Date();
+
 document.getElementById("sample").innerHTML = d.getDate();
 </script>
 </body>
@@ -6453,14 +7355,19 @@ document.getElementById("sample").innerHTML = d.getDate();
 <body>
 <h4>The getHours() method</h4>
 <p id="hours"></p>
+
 <h4>The getMinutes() method</h4>
 <p id="minutes"></p>
+
 <h4>The getSeconds() method</h4>
 <p id="seconds"></p>
+
 <h4>The getMilliseconds() method</h4>
 <p id="milliseconds"></p>
+
 <script>
 const d = new Date();
+
 document.getElementById("hours").innerHTML = d.getHours();
 document.getElementById("minutes").innerHTML = d.getMinutes();
 document.getElementById("seconds").innerHTML = d.getSeconds();
@@ -6480,8 +7387,10 @@ document.getElementById("milliseconds").innerHTML = d.getMilliseconds();
 <body>
 <h4>The getDay() method</h4>
 <p id="sample"></p>
+
 <script>
 const d = new Date();
+
 document.getElementById("sample").innerHTML = d.getDay();
 </script>
 </body>
@@ -6498,9 +7407,12 @@ document.getElementById("sample").innerHTML = d.getDay();
 <body>
 <h4>The getDay() with name method</h4>
 <p id="sample"></p>
+
 <script>
 const d = new Date();
-const days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+
+const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
 document.getElementById("sample").innerHTML = days[d.getDay()];
 </script>
 </body>
@@ -6509,7 +7421,9 @@ document.getElementById("sample").innerHTML = days[d.getDay()];
 
 输出：![](img/image_rsrcGP2.jpg)
 
-设置日期方法：这些方法用于设置日期值，如年、月、日、时、分、秒、毫秒。设置日期方法如下表所示。
+## 设置日期方法
+
+这些方法用于设置日期值，如年、月、日、时、分、秒、毫秒。设置日期方法如下表所示。
 
 | 方法 | 描述 |
 | --- | --- |
@@ -6521,10 +7435,6 @@ document.getElementById("sample").innerHTML = days[d.getDay()];
 | `setMonth()` | 设置月份（0-11） |
 | `setSeconds()` | 设置秒数（0-59） |
 | `setTime()` | 设置时间（自 1970 年 1 月 1 日以来的毫秒数） |
-
-
-
-
 
 ### `setFullYear()` 方法
 
@@ -6538,9 +7448,12 @@ document.getElementById("sample").innerHTML = days[d.getDay()];
 <body>
 <h4>The setFullYear() Method</h4>
 <p id="sample"></p>
+
 <script>
 const d = new Date();
+
 d.setFullYear(2021);
+
 document.getElementById("sample").innerHTML = d;
 </script>
 </body>
@@ -6559,9 +7472,12 @@ document.getElementById("sample").innerHTML = d;
 <body>
 <h4>The setFullYear() Method</h4>
 <p id="sample"></p>
+
 <script>
 const d = new Date();
-d.setFullYear(2021,08,25);
+
+d.setFullYear(2021, 08, 25);
+
 document.getElementById("sample").innerHTML = d;
 </script>
 </body>
@@ -6582,9 +7498,12 @@ document.getElementById("sample").innerHTML = d;
 <body>
 <h4>The setMonth() Method</h4>
 <p id="sample"></p>
+
 <script>
 const d = new Date();
+
 d.setMonth(8);
+
 document.getElementById("sample").innerHTML = d;
 </script>
 </body>
@@ -6605,9 +7524,12 @@ document.getElementById("sample").innerHTML = d;
 <body>
 <h4>The setDate() Method</h4>
 <p id="sample"></p>
+
 <script>
 const d = new Date();
+
 d.setDate(25);
+
 document.getElementById("sample").innerHTML = d;
 </script>
 </body>
@@ -6626,9 +7548,12 @@ document.getElementById("sample").innerHTML = d;
 <body>
 <h4>The setDate() Method with adding days</h4>
 <p id="sample"></p>
+
 <script>
 const d = new Date();
-d.setDate(d.getDate()+25);
+
+d.setDate(d.getDate() + 25);
+
 document.getElementById("sample").innerHTML = d;
 </script>
 </body>
@@ -6641,7 +7566,7 @@ document.getElementById("sample").innerHTML = d;
 
 `setHours()` 方法：该方法用于设置日期对象的小时（0 到 23）。  
 `setMinutes()` 方法：该方法用于设置日期对象的分钟（0 到 59）。  
-`setSeconds()` 方法：该方法用于设置日期对象的秒数（0 到 59）。  
+`setSeconds()` 方法：该方法用于设置日期对象的秒数（0 到 59）。
 
 以下示例演示了上述所有方法。
 
@@ -6653,16 +7578,22 @@ document.getElementById("sample").innerHTML = d;
 <body>
 <h4>The setHours() method</h4>
 <p id="hours"></p>
+
 <h4>The setMinutes() method</h4>
 <p id="minutes"></p>
+
 <h4>The setSeconds() method</h4>
 <p id="seconds"></p>
+
 <script>
 const d = new Date();
+
 d.setHours(20);
 document.getElementById("hours").innerHTML = d;
+
 d.setMinutes(47);
 document.getElementById("minutes").innerHTML = d;
+
 d.setSeconds(15);
 document.getElementById("seconds").innerHTML = d;
 </script>
@@ -6684,16 +7615,21 @@ document.getElementById("seconds").innerHTML = d;
 <body>
 <h4>Comparing dates demo</h4>
 <p id="sample"></p>
+
 <script>
 let str;
+
 const today = new Date();
 const someday = new Date();
+
 someday.setFullYear(2021, 8, 24);
+
 if (someday > today) {
     str = "Today is before September 24, 2021.";
 } else {
     str = "Today is after September 24, 2021.";
 }
+
 document.getElementById("sample").innerHTML = str;
 </script>
 </body>
@@ -6702,7 +7638,7 @@ document.getElementById("sample").innerHTML = str;
 
 输出：![](img/image_rsrcGP9.jpg)
 
-## 第 17 章 数学与比较运算
+# 第 17 章 数学与比较运算
 
 ## 简介
 
@@ -6716,14 +7652,23 @@ document.getElementById("sample").innerHTML = str;
 
 ```
 Math.E        // returns Euler's number
+
 Math.PI       // returns PI
-Math.SQRT2    // returns the square root of 2
-Math.SQRT1_2  // returns the square root of 1/2
-Math.LN2      // returns the natural logarithm of 2
-Math.LN10     // returns the natural logarithm of 10
-Math.LOG2E    // returns base 2 logarithm of E
-Math.LOG10E   // returns base 10 logarithm of E
 ```
+
+
+
+`Math.SQRT2` // returns the square root of 2
+
+`Math.SQRT1_2` // returns the square root of 1/2
+
+`Math.LN2` // returns the natural logarithm of 2
+
+`Math.LN10` // returns the natural logarithm of 10
+
+`Math.LOG2E` // returns base 2 logarithm of E
+
+`Math.LOG10E` // returns base 10 logarithm of E
 
 ```html
 <html>
@@ -6731,8 +7676,11 @@ Math.LOG10E   // returns base 10 logarithm of E
 <title>Math Constants Demo</title>
 </head>
 <body>
+
 <h2>JavaScript Math Constants</h2>
+
 <p id="sample"></p>
+
 <script>
 document.getElementById("sample").innerHTML =
 "<p><b>Math.E:</b> " + Math.E + "</p>" +
@@ -6742,40 +7690,41 @@ document.getElementById("sample").innerHTML =
 "<p><b>Math.LN2:</b> " + Math.LN2 + "</p>" +
 "<p><b>Math.LN10:</b> " + Math.LN10 + "</p>" +
 "<p><b>Math.LOG2E:</b> " + Math.LOG2E + "</p>" +
-"<p><b>Math.Log10E:</b> " + Math.LOG10E + "</p>";
+"<p><b>Math.Log10E:</b> " + Math.Log10E + "</p>";
 </script>
+
 </body>
 </html>
 ```
 
 输出：![](img/image_rsrcGPA.jpg)
 
-### Math 方法
+## Math 方法
 
 JavaScript 中有多种数学方法。以下部分将讨论其中一些方法。
 
-#### 语法
+### 语法
 
 `Math.method(number);`
 
-#### 数字转整数方法
+### 数字转整数方法
 
 JavaScript 中有一些方法用于将数字四舍五入为整数。以下是将数字舍入为整数的方法列表。
 
 | 方法 | 描述 |
-|--------|-------------|
+| --- | --- |
 | `Math.round(x)` | 返回 x 四舍五入到最接近的整数 |
 | `Math.ceil(x)` | 返回 x 向上取整到最接近的整数 |
 | `Math.floor(x)` | 返回 x 向下取整到最接近的整数 |
 | `Math.trunc(x)` | 返回 x 的整数部分 |
 
-##### `Math.round()` 方法
+#### `Math.round()` 方法
 
 该方法返回最接近的整数。
 
 示例：
 
-```
+```javascript
 Math.round(5.8);    // returns 6
 Math.round(4.9);    // returns 5
 Math.round(5.4);    // returns 5
@@ -6783,13 +7732,13 @@ Math.round(5.2);    // returns 5
 Math.round(-3.1);   // returns -3
 ```
 
-##### `Math.ceil()` 方法
+#### `Math.ceil()` 方法
 
 该方法返回参数向上取整到最接近整数的值。
 
 示例：
 
-```
+```javascript
 Math.ceil(5.8);    // returns 6
 Math.ceil(4.9);    // returns 5
 Math.ceil(5.4);    // returns 6
@@ -6797,13 +7746,13 @@ Math.ceil(5.2);    // returns 6
 Math.ceil(-3.1);   // returns -3
 ```
 
-##### `Math.floor()` 方法
+#### `Math.floor()` 方法
 
 该方法用于返回参数向下取整到最接近整数的值。
 
 示例：
 
-```
+```javascript
 Math.floor(5.8);    // returns 5
 Math.floor(4.9);    // returns 4
 Math.floor(5.4);    // returns 5
@@ -6811,13 +7760,13 @@ Math.floor(5.2);    // returns 5
 Math.floor(-3.1);   // returns -4
 ```
 
-##### `Math.trunc()` 方法
+#### `Math.trunc()` 方法
 
 该方法用于返回参数的整数部分。
 
 示例：
 
-```
+```javascript
 Math.floor(5.8);    // returns 5
 Math.floor(4.9);    // returns 4
 Math.floor(5.4);    // returns 5
@@ -6825,28 +7774,24 @@ Math.floor(5.2);    // returns 5
 Math.floor(-3.1);   // returns -3
 ```
 
-##### `Math.sign()` 方法
+#### `Math.sign()` 方法
 
 该方法用于返回：如果参数为负数则返回负值，如果参数为正数则返回正值，如果参数不是数字则返回 null。
 
 示例：
 
-```
+```javascript
 Math.sign(-5.8);    // returns -1
 Math.sign(4.9);     // returns 1
 Math.sign(0);       // returns 0
 Math.sign(A);       // returns NULL
 ```
 
-##### `Math.pow()` 方法
+#### `Math.pow()` 方法
 
 该方法返回 x 的 y 次幂的值。
 
 示例：
-
-
-
-
 
 ## JavaScript 数学方法
 
@@ -6880,39 +7825,57 @@ Math.sign(A);       // returns NULL
 <title>The Math methods</title>
 </head>
 <body>
+
 <h2>JavaScript Math methods</h2>
+
 <h5>The Math.round() method</h5>
 <p id="round"></p>
+
 <h5>The Math.ceil() method</h5>
 <p id="ceil"></p>
+
 <h5>The Math.floor() method</h5>
 <p id="floor"></p>
+
 <h5>The Math.trunc() method</h5>
 <p id="trunc"></p>
+
 <h5>The Math.sign() method</h5>
 <p id="sign"></p>
+
 <h5>The Math.pow() method</h5>
 <p id="pow"></p>
+
 <h5>The Math.sqrt() method</h5>
 <p id="sqrt"></p>
+
 <h5>The Math.abs() method</h5>
 <p id="abs"></p>
+
 <h5>The Math.sin() method</h5>
 <p id="sin"></p>
+
 <h5>The Math.cos() method</h5>
 <p id="cos"></p>
+
 <h5>The Math.min() method</h5>
 <p id="min"></p>
+
 <h5>The Math.max() method</h5>
 <p id="max"></p>
+
 <h5>The Math.random() method</h5>
 <p id="random"></p>
+
 <h5>The Math.log() method</h5>
 <p id="log"></p>
+
 <h5>The Math.log2() method</h5>
 <p id="log2"></p>
+
 <h5>The Math.log10() method</h5>
 <p id="log10"></p>
+
 <script>
 document.getElementById("round").innerHTML = Math.round(-3.1);
 document.getElementById("ceil").innerHTML = Math.ceil(4.2);
@@ -6931,47 +7894,50 @@ document.getElementById("log").innerHTML = Math.log(1);
 document.getElementById("log2").innerHTML = Math.log2(8);
 document.getElementById("log10").innerHTML = Math.log10(1000);
 </script>
+
 </body>
 </html>
 ```
 
-Output:
+Output：
+
 ![](img/image_rsrcGPB.jpg)
+
 ![](img/image_rsrcGPC.jpg)
 
 Math 对象的方法如下表所示。
 
 | 方法 | 描述 |
 | --- | --- |
-| [abs(x)](https://www.w3schools.com/jsref/jsref_abs.asp) | 返回 x 的绝对值 |
-| [acos(x)](https://www.w3schools.com/jsref/jsref_acos.asp) | 返回 x 的反余弦值（以弧度为单位） |
-| [acosh(x)](https://www.w3schools.com/jsref/jsref_acosh.asp) | 返回 x 的反双曲余弦值 |
-| [asin(x)](https://www.w3schools.com/jsref/jsref_asin.asp) | 返回 x 的反正弦值（以弧度为单位） |
-| [asinh(x)](https://www.w3schools.com/jsref/jsref_asinh.asp) | 返回 x 的反双曲正弦值 |
-| [atan(x)](https://www.w3schools.com/jsref/jsref_atan.asp) | 返回 x 的反正切值，数值介于 -PI/2 和 PI/2 弧度之间 |
-| [atan2(y, x)](https://www.w3schools.com/jsref/jsref_atan2.asp) | 返回其参数商的反正切值 |
-| [atanh(x)](https://www.w3schools.com/jsref/jsref_atanh.asp) | 返回 x 的反双曲正切值 |
-| [cbrt(x)](https://www.w3schools.com/jsref/jsref_cbrt.asp) | 返回 x 的立方根 |
-| [ceil(x)](https://www.w3schools.com/jsref/jsref_ceil.asp) | 返回 x 向上取整后的最接近整数 |
-| [cos(x)](https://www.w3schools.com/jsref/jsref_cos.asp) | 返回 x 的余弦值（x 以弧度为单位） |
-| [cosh(x)](https://www.w3schools.com/jsref/jsref_cosh.asp) | 返回 x 的双曲余弦值 |
-| [exp(x)](https://www.w3schools.com/jsref/jsref_exp.asp) | 返回 E 的 x 次方值 |
-| [floor(x)](https://www.w3schools.com/jsref/jsref_floor.asp) | 返回 x 向下取整后的最接近整数 |
-| [log(x)](https://www.w3schools.com/jsref/jsref_log.asp) | 返回 x 的自然对数（以 E 为底） |
-| [max(x, y, z, ..., n)](https://www.w3schools.com/jsref/jsref_max.asp) | 返回具有最高值的数字 |
-| [min(x, y, z, ..., n)](https://www.w3schools.com/jsref/jsref_min.asp) | 返回具有最低值的数字 |
-| [pow(x, y)](https://www.w3schools.com/jsref/jsref_pow.asp) | 返回 x 的 y 次幂值 |
-| [random()](https://www.w3schools.com/jsref/jsref_random.asp) | 返回一个介于 0 和 1 之间的随机数 |
-| [round(x)](https://www.w3schools.com/jsref/jsref_round.asp) | 将 x 四舍五入到最接近的整数 |
-| [sign(x)](https://www.w3schools.com/jsref/jsref_sign.asp) | 返回 x 是负数、零还是正数（-1, 0, 1） |
-| [sin(x)](https://www.w3schools.com/jsref/jsref_sin.asp) | 返回 x 的正弦值（x 以弧度为单位） |
-| [sinh(x)](https://www.w3schools.com/jsref/jsref_sinh.asp) | 返回 x 的双曲正弦值 |
-| [sqrt(x)](https://www.w3schools.com/jsref/jsref_sqrt.asp) | 返回 x 的平方根 |
-| [tan(x)](https://www.w3schools.com/jsref/jsref_tan.asp) | 返回一个角的正切值 |
-| [tanh(x)](https://www.w3schools.com/jsref/jsref_tanh.asp) | 返回一个数的双曲正切值 |
-| [trunc(x)](https://www.w3schools.com/jsref/jsref_trunc.asp) | 返回一个数 (x) 的整数部分 |
+| [`abs(x)`](https://www.w3schools.com/jsref/jsref_abs.asp) | 返回 x 的绝对值 |
+| [`acos(x)`](https://www.w3schools.com/jsref/jsref_acos.asp) | 返回 x 的反余弦值（以弧度为单位） |
+| [`acosh(x)`](https://www.w3schools.com/jsref/jsref_acosh.asp) | 返回 x 的反双曲余弦值 |
+| [`asin(x)`](https://www.w3schools.com/jsref/jsref_asin.asp) | 返回 x 的反正弦值（以弧度为单位） |
+| [`asinh(x)`](https://www.w3schools.com/jsref/jsref_asinh.asp) | 返回 x 的反双曲正弦值 |
+| [`atan(x)`](https://www.w3schools.com/jsref/jsref_atan.asp) | 返回 x 的反正切值，数值介于 -PI/2 和 PI/2 弧度之间 |
+| [`atan2(y, x)`](https://www.w3schools.com/jsref/jsref_atan2.asp) | 返回其参数商的反正切值 |
+| [`atanh(x)`](https://www.w3schools.com/jsref/jsref_atanh.asp) | 返回 x 的反双曲正切值 |
+| [`cbrt(x)`](https://www.w3schools.com/jsref/jsref_cbrt.asp) | 返回 x 的立方根 |
+| [`ceil(x)`](https://www.w3schools.com/jsref/jsref_ceil.asp) | 返回 x 向上取整后的最接近整数 |
+| [`cos(x)`](https://www.w3schools.com/jsref/jsref_cos.asp) | 返回 x 的余弦值（x 以弧度为单位） |
+| [`cosh(x)`](https://www.w3schools.com/jsref/jsref_cosh.asp) | 返回 x 的双曲余弦值 |
+| [`exp(x)`](https://www.w3schools.com/jsref/jsref_exp.asp) | 返回 E 的 x 次方值 |
+| [`floor(x)`](https://www.w3schools.com/jsref/jsref_floor.asp) | 返回 x 向下取整后的最接近整数 |
+| [`log(x)`](https://www.w3schools.com/jsref/jsref_log.asp) | 返回 x 的自然对数（以 E 为底） |
+| [`max(x, y, z, ..., n)`](https://www.w3schools.com/jsref/jsref_max.asp) | 返回具有最高值的数字 |
+| [`min(x, y, z, ..., n)`](https://www.w3schools.com/jsref/jsref_min.asp) | 返回具有最低值的数字 |
+| [`pow(x, y)`](https://www.w3schools.com/jsref/jsref_pow.asp) | 返回 x 的 y 次幂值 |
+| [`random()`](https://www.w3schools.com/jsref/jsref_random.asp) | 返回一个介于 0 和 1 之间的随机数 |
+| [`round(x)`](https://www.w3schools.com/jsref/jsref_round.asp) | 将 x 四舍五入到最接近的整数 |
+| [`sign(x)`](https://www.w3schools.com/jsref/jsref_sign.asp) | 返回 x 是负数、零还是正数（-1, 0, 1） |
+| [`sin(x)`](https://www.w3schools.com/jsref/jsref_sin.asp) | 返回 x 的正弦值（x 以弧度为单位） |
+| [`sinh(x)`](https://www.w3schools.com/jsref/jsref_sinh.asp) | 返回 x 的双曲正弦值 |
+| [`sqrt(x)`](https://www.w3schools.com/jsref/jsref_sqrt.asp) | 返回 x 的平方根 |
+| [`tan(x)`](https://www.w3schools.com/jsref/jsref_tan.asp) | 返回一个角的正切值 |
+| [`tanh(x)`](https://www.w3schools.com/jsref/jsref_tanh.asp) | 返回一个数的双曲正切值 |
+| [`trunc(x)`](https://www.w3schools.com/jsref/jsref_trunc.asp) | 返回一个数 (x) 的整数部分 |
 
-`Math.random()` 方法：我们已经在上一节中介绍了 `Math.random()` 方法。我们已经了解到 `random()` 方法生成介于 0（包含）和 1（不包含）之间的数字。它总是返回一个小于 1 的数字。
+`Math.random()` 方法：我们已经在上一节中介绍了 `Math.random()` 方法。我们已经了解到，`random()` 方法生成介于 0（包含）和 1（不包含）之间的数字。它总是返回一个小于 1 的数字。
 
 随机整数：`Math.random()` 与 `Math.floor()` 结合使用可以返回随机整数，如下例所示。
 
@@ -6986,46 +7952,62 @@ Math.floor(Math.random() * 10);
 <title>Random integer demo</title>
 </head>
 <body>
+
 <h2>Random integer demo</h2>
+
+
+
+```html
 <p id="sample"></p>
+
 <script>
 document.getElementById("sample").innerHTML = Math.floor(Math.random() * 10);
 </script>
+
 </body>
+
 </html>
 ```
 
-Output:
+输出：
+
 ![](img/image_rsrcGPD.jpg)
 
 ```javascript
 // Returns a random integer from 0 to 10:
 Math.floor(Math.random() * 11);
+
 // Returns a random integer from 0 to 99:
+Math.floor(Math.random() * 100);
 ```
 
-
-
-
-`Math.floor(Math.random() * 100);` 注意：我们可以将任意数字与 `random()` 方法相乘。生成的数字将位于该范围内。
+注意：我们可以将任意数字与`random()`方法相乘。生成的数字将位于该范围内。
 
 ### 一个合适的随机函数
 
-一个合适的随机函数总是返回介于 `min`（包含）和 `max`（不包含）之间的随机数，如下例所示。
+一个合适的随机函数总是返回介于`min`（包含）和`max`（不包含）之间的随机数，如下例所示。
 
-```
+```html
 <html>
+
 <head><title>一个合适的随机方法演示</title></head>
+
 <body>
+
 <h2>JavaScript Math.random()</h2>
+
 <button onclick="document.getElementById('sample').innerHTML = getRndInteger(0,10)">获取随机数！</button>
+
 <p id="sample"></p>
+
 <script>
 function getRndInteger(min, max) {
   return Math.floor(Math.random() * (max - min)) + min;
 }
 </script>
+
 </body>
+
 </html>
 ```
 
@@ -7033,21 +8015,29 @@ function getRndInteger(min, max) {
 
 ![](img/image_rsrcGPE.jpg)
 
-下面的代码返回介于 `min` 和 `max` 之间（两者都包含）的随机数。
+下面的代码返回介于`min`和`max`之间（两者都包含）的随机数。
 
-```
+```html
 <html>
+
 <head><title>一个包含最小值和最大值的合适随机方法演示</title></head>
+
 <body>
+
 <h2>一个包含最小值和最大值的合适随机方法演示</h2>
+
 <button onclick="document.getElementById('sample').innerHTML = getRndInteger(0,10)">获取随机数！</button>
+
 <p id="sample"></p>
+
 <script>
 function getRndInteger(min, max) {
   return Math.floor(Math.random() * (max - min+1)) + min;
 }
 </script>
+
 </body>
+
 </html>
 ```
 
@@ -7059,23 +8049,31 @@ function getRndInteger(min, max) {
 
 JavaScript 支持布尔值，其结果为 TRUE 或 FALSE。在某些情况下，我们需要一种数据类型来返回两个值之一，例如是/否、开/关、TRUE/FALSE、高电压/低电压、位 1/位 0。为了表示这些类型的数据，我们使用布尔数据类型。
 
-### Boolean() 函数
+### `Boolean()`函数
 
 该函数用于判断表达式或变量是否为真。让我们看下面返回 true 值的示例。
 
 `Boolean(6>5)` // 返回 true
 
-```
+```html
 <html>
+
 <head><title>Boolean 函数演示</title></head>
+
 <body>
+
 <h2>JavaScript 布尔值</h2>
+
 <h4>显示 Boolean(6>5) 的值</h4>
+
 <p id="sample"></p>
+
 <script>
 document.getElementById("sample").innerHTML = Boolean(6 > 5);
 </script>
+
 </body>
+
 </html>
 ```
 
@@ -7087,12 +8085,17 @@ document.getElementById("sample").innerHTML = Boolean(6 > 5);
 
 #### 示例：演示大于零和小于零的值为真
 
-```
+```html
 <html>
+
 <head><title>布尔值返回 true</title></head>
+
 <body>
+
 <h2>JavaScript 布尔值</h2>
+
 <p id="sample"></p>
+
 <script>
 document.getElementById("sample").innerHTML =
 "10 是 " + Boolean(10) + "<br>" +
@@ -7102,7 +8105,9 @@ document.getElementById("sample").innerHTML =
 "甚至字符串 'false' 是 " + Boolean('false') + "<br>" +
 "任何表达式（零除外）是 " + Boolean(2 + 3 + 1.02);
 </script>
+
 </body>
+
 </html>
 ```
 
@@ -7112,14 +8117,20 @@ document.getElementById("sample").innerHTML =
 
 #### 示例：演示值为零或没有值为假
 
-```
+```html
 <html>
+
 <head><title>布尔值返回 false</title></head>
+
 <body>
+
 <h2>JavaScript 布尔值</h2>
+
 <p id="sample"></p>
+
 <script>
 let a,b=null,c=false;
+
 document.getElementById("sample").innerHTML =
 "0 是 " + Boolean(0) + "<br>" +
 "-0 是 " + Boolean(-0) + "<br>" +
@@ -7127,9 +8138,11 @@ document.getElementById("sample").innerHTML =
 "undefined 是 " + Boolean(a) + "<br>" +
 "Null 是 false 是 " + Boolean(b) + "<br>" +
 "布尔值 false 是 " + Boolean(false) + "<br>" +
-"布尔值 NaN 是 "+Boolean(5/"hi");
+"布尔值 NaN 是 " + Boolean(5/"hi");
 </script>
+
 </body>
+
 </html>
 ```
 
@@ -7149,24 +8162,32 @@ document.getElementById("sample").innerHTML =
 
 `let b = new Boolean(false);`
 
-现在，我们使用关键字 `new` 创建了一个对象。
+现在，我们使用关键字`new`创建了一个对象。
 
-注意：布尔对象会降低执行速度。`new` 关键字可能会产生意外结果。
+注意：布尔对象会降低执行速度。`new`关键字可能会产生意外结果。
 
 示例：
 
-```
+```html
 <html>
+
 <head><title>布尔值与布尔对象比较</title></head>
+
 <body>
+
 <h2>JavaScript 布尔值</h2>
+
 <p id="sample"></p>
+
 <script>
 let a = false;          // a 是布尔值
 let b = new Boolean(false);  // b 是对象
+
 document.getElementById("sample").innerHTML = (a==b);
 </script>
+
 </body>
+
 </html>
 ```
 
@@ -7174,20 +8195,28 @@ document.getElementById("sample").innerHTML = (a==b);
 
 ![](img/image_rsrcGPK.jpg)
 
-当使用 `===` 运算符时，相等的布尔值并不相等，因为该运算符要求类型和值都相等，如下例所示。
+当使用`===`运算符时，相等的布尔值并不相等，因为该运算符要求类型和值都相等，如下例所示。
 
-```
+```html
 <html>
+
 <head><title>使用 === 运算符比较布尔值与布尔对象</title></head>
+
 <body>
+
 <h2>JavaScript 布尔值</h2>
+
 <p id="sample"></p>
+
 <script>
 let a = false;          // a 是布尔值
 let b = new Boolean(false);  // b 是对象
+
 document.getElementById("sample").innerHTML = (a===b);
 </script>
+
 </body>
+
 </html>
 ```
 
@@ -7195,13 +8224,13 @@ document.getElementById("sample").innerHTML = (a===b);
 
 ![](img/image_rsrcGPM.jpg)
 
-注意：对象不能进行比较。`(a==b)` 和 `(a===b)` 的区别在于，比较两个对象始终返回 `false` 值。
+注意：对象不能进行比较。`(a==b)`和`(a===b)`的区别在于，比较两个对象始终返回`false`值。
 
 ### 比较运算符
 
-比较和逻辑运算符返回 `true` 或 `false` 值。比较运算符用于逻辑语句或选择语句中，以确定变量或值之间的相等性或差异。
+比较和逻辑运算符返回`true`或`false`值。比较运算符用于逻辑语句或选择语句中，以确定变量或值之间的相等性或差异。
 
-假设 `a = 6`。下表显示了所有比较运算符。
+假设`a = 6`。下表显示了所有比较运算符。
 
 | 运算符 | 描述 |
 | --- | --- |
@@ -7216,9 +8245,9 @@ document.getElementById("sample").innerHTML = (a===b);
 
 ### 逻辑运算符
 
-逻辑运算符用于返回布尔值，即 `true` 或 `false` 值。这些逻辑运算符可以与比较运算符一起使用。
+逻辑运算符用于返回布尔值，即`true`或`false`值。这些逻辑运算符可以与比较运算符一起使用。
 
-假设 `a = 2` 且 `b = 3`，下表解释了逻辑运算符。
+假设`a = 2`且`b = 3`，下表解释了逻辑运算符。
 
 | 运算符 | 描述 |
 | --- | --- |
@@ -7236,23 +8265,34 @@ document.getElementById("sample").innerHTML = (a===b);
 
 示例：
 
-```
+```html
 <html>
+
 <head><title>三元运算符演示</title></head>
+
 <body>
+
 <h2>三元运算符演示</h2>
+
 <p>输入一个数字并点击按钮：</p>
+
 <input id="even" value="6" />
+
 <button onclick="ternaryFunction()">检查！</button>
+
 <p id="sample"></p>
+
 <script>
 function ternaryFunction() {
   let n = document.getElementById("even").value;
   let even = (n%2==0) ? "偶数":"奇数";
+
   document.getElementById("sample").innerHTML = even;
 }
 </script>
+
 </body>
+
 </html>
 ```
 
@@ -7272,9 +8312,9 @@ function ternaryFunction() {
 
 ### 比较不同类型
 
-当比较字符串和数字时，JavaScript 会将字符串转换为数字。空字符串转换为零。非数字字符串转换为 `NaN`，它始终为 `false`。
+当比较字符串和数字时，JavaScript 会将字符串转换为数字。空字符串转换为零。非数字字符串转换为`NaN`，它始终为`false`。
 
-下表显示了一些返回 `true` 和 `false` 值的比较。
+下表显示了一些返回`true`和`false`值的比较。
 
 | 示例 | 结果 |
 | --- | --- |
@@ -7286,14 +8326,11 @@ function ternaryFunction() {
 | `"5"<"6"` | True |
 | `"5"=="6"` | False |
 
-
-
-
-
 # 第 18 章
+
 ## 选择语句与迭代语句
 
-## 引言
+### 引言
 
 通常情况下，编写的指令会以线性方式执行，称为顺序执行。但并非所有指令都必须按照编写顺序执行。在某些情况下，控制流可能会根据条件发生分支；某些语句会根据条件重复执行特定次数。有些语句可能会根据所施加的条件从一个语句跳转到另一个语句。
 
@@ -7305,25 +8342,25 @@ JavaScript 同时支持选择语句和迭代语句。
 
 选择语句分类如下：
 
-- `if` 语句
-- `if-else` 语句
-- `if-else-if` 语句
-- `switch` 语句
+- `if`语句
+- `if-else`语句
+- `if-else-if`语句
+- `switch`语句
 
-#### `if` 语句
+#### `if`语句
 
-`if` 语句也称为单向分支语句。在简单的 `if` 语句中，如果条件为真，则执行该语句或语句组。如果条件为假，则执行后续语句（如果有的话）。
+`if`语句也称为单向分支语句。在简单的`if`语句中，如果条件为真，则执行该语句或语句组。如果条件为假，则执行后续语句（如果有的话）。
 
-`if` 语句的一般形式为：
+`if`语句的一般形式为：
 
-```
+```javascript
 if(condition)
     statement1;
 ```
 
-或
+或：
 
-```
+```javascript
 if(condition) {
     statement1;
     statement2;
@@ -7336,18 +8373,26 @@ if(condition) {
 
 ```html
 <html>
+
 <head><title>if statement demo</title></head>
+
 <body>
+
 <h2>JavaScript if</h2>
+
 <p id="sample">
+
 <script>
 let a=10,b=20,large=a;
+
 if (b > large){
     large=b;
     document.getElementById("sample").innerHTML = "Largest Number is " + large;
 }
 </script>
+
 </body>
+
 </html>
 ```
 
@@ -7355,36 +8400,44 @@ if (b > large){
 
 ![](img/image_rsrcGPU.jpg)
 
-#### `if-else` 语句
+#### `if-else`语句
 
-`if-else` 语句也称为双向分支。在 `if-else` 语句中，会检查条件。如果条件为真，则执行语句 1；否则，执行 `else` 部分（即语句 2）。
+`if-else`语句也称为双向分支。在`if-else`语句中，会检查条件。如果条件为真，则执行语句 1；否则，执行`else`部分（即语句 2）。
 
-`if-else` 语句的一般形式为：
+`if-else`语句的一般形式为：
 
-```
+```javascript
 if(condition)
     statement 1;
 else
     statement 2;
 ```
 
-**示例：** 使用 `if-else` 语句找出两个数中的最大值
+**示例：** 使用`if-else`语句找出两个数中的最大值
 
 ```html
 <html>
+
 <head><title>if-else statement demo</title></head>
+
 <body>
+
 <h2>JavaScript if-else</h2>
+
 <p id="sample">
+
 <script>
 let a=10,b=20;
+
 if (a > b){
     document.getElementById("sample").innerHTML = "Largest Number is " + a;
 } else {
     document.getElementById("sample").innerHTML = "Largest Number is " + b;
 }
 </script>
+
 </body>
+
 </html>
 ```
 
@@ -7392,13 +8445,13 @@ if (a > b){
 
 ![](img/image_rsrcGPV.jpg)
 
-#### `if-else-if` 语句
+#### `if-else-if`语句
 
-该语句也称为 `if-else-if` 阶梯。有多个可选项，我们必须选择与条件匹配的语句。它也称为多路分支。
+该语句也称为`if-else-if`阶梯。有多个可选项，我们必须选择与条件匹配的语句。它也称为多路分支。
 
-`if-else-if` 语句的一般形式为：
+`if-else-if`语句的一般形式为：
 
-```
+```javascript
 if(condition1)
     statement1;
 else if(condition2)
@@ -7417,20 +8470,29 @@ else
 
 ```html
 <html>
+
 <head><title>if-else-if demo</title></head>
+
 <body>
+
 <h2>if-else-if demo</h2>
+
 <p>Input a percentage and click the button:</p>
+
 <input id="percentage" value="" />
+
 <button onclick="perFunction()">Declare Class</button>
+
 <p id="distinction"></p>
 <p id="firstclass"></p>
 <p id="secondclass"></p>
 <p id="passclass"></p>
 <p id="fail"></p>
+
 <script>
 function perFunction() {
     let per = document.getElementById("percentage").value;
+
     if(per>=85&&per<=100)
         document.getElementById("distinction").innerHTML = "Distinction";
     else if(per>=60&&per<85)
@@ -7440,10 +8502,19 @@ function perFunction() {
     else if(per>=35&&per<50)
         document.getElementById("passclass").innerHTML = "Pass Class";
     else
-        document.getElementById("fail").innerHTML = "Fail";
+```
+
+
+
+```html
+document.getElementById("fail").innerHTML = "Fail";
+
 }
+
 </script>
+
 </body>
+
 </html>
 ```
 
@@ -7453,7 +8524,7 @@ function perFunction() {
 
 #### `switch` 语句
 
-它是 `if-else-if` 阶梯的替代方案。用于在 `switch` 语句中的表达式与某个 case 标签匹配时，选择执行一个代码块。这里的 `switch` 表达式只能持有三种值之一：`int`、`char` 或 `Boolean` 值。该语句提供多路分支。
+它是 `if-else-if` 阶梯的替代方案。用于在 `switch` 语句中的表达式与某个 `case` 标签匹配时，选择执行一个代码块。这里的 `switch` 表达式只能持有三种值之一：`int`、`char` 或 `Boolean` 值。该语句提供多路分支。
 
 `switch` 语句的一般形式为：
 
@@ -7461,16 +8532,19 @@ function perFunction() {
 switch(expression) {
     case label-1: statement 1;
         break;
+
     case label-2: statement 2;
         break;
+
     …
     case label-n: statement n;
         break;
+
     default: default-statement;
 }
 ```
 
-`break` 语句用于指示 case 标签终止。如果 `switch` 表达式与任何 case 标签都不匹配，则执行 `default` 语句。
+`break` 语句用于指示 `case` 标签终止。如果 `switch` 表达式与任何 `case` 标签都不匹配，则执行 `default` 语句。
 
 **示例：** 以下代码显示当前星期几。
 
@@ -7480,30 +8554,39 @@ switch(expression) {
 <body>
 <h2>switch statement demo</h2>
 <p id="sample"></p>
+
 <script>
 let day;
+
 switch (new Date().getDay()) {
     case 0:
         day = "Sunday";
         break;
+
     case 1:
         day = "Monday";
         break;
+
     case 2:
         day = "Tuesday";
         break;
+
     case 3:
         day = "Wednesday";
         break;
+
     case 4:
         day = "Thursday";
         break;
+
     case 5:
         day = "Friday";
         break;
+
     case 6:
         day = "Saturday";
 }
+
 document.getElementById("sample").innerHTML = "Today is " + day;
 </script>
 </body>
@@ -7550,10 +8633,12 @@ for(initialization; condition; increment/decrement) {
 <h2>JavaScript For Loop</h2>
 <p>Natural Numbers</p>
 <p id="sample"></p>
+
 <script>
-let str="";
+let str = "";
+
 for (let i = 1; i <= 5; i++) {
-    document.getElementById("sample").innerHTML = str+=i+"<br>";
+    document.getElementById("sample").innerHTML = str += i + "<br>";
 }
 </script>
 </body>
@@ -7574,11 +8659,14 @@ for (let i = 1; i <= 5; i++) {
 <body>
 <h2>Using var in for loop</h2>
 <p id="sample"></p>
+
 <script>
 var i = 5;
+
 for (var i = 0; i < 10; i++) {
     // some statements
 }
+
 document.getElementById("sample").innerHTML = i;
 </script>
 </body>
@@ -7599,11 +8687,14 @@ document.getElementById("sample").innerHTML = i;
 <body>
 <h2>Using let in for loop</h2>
 <p id="sample"></p>
+
 <script>
 let i = 5;
+
 for (let i = 0; i < 10; i++) {
     // some statements
 }
+
 document.getElementById("sample").innerHTML = i;
 </script>
 </body>
@@ -7628,13 +8719,9 @@ for (key in object) {
 }
 ```
 
+### `for...in` 循环
 
-
-
-
-## for...in 循环
-
-示例：
+**示例：**
 
 ```html
 <html>
@@ -7642,33 +8729,38 @@ for (key in object) {
 <body>
 <h2>For In Loop</h2>
 <p id="sample"></p>
+
 <script>
-const family_member = {fname:"Hanumanth", lname:"Ladwa", age:38};
+const family_member = {fname: "Hanumanth", lname: "Ladwa", age: 38};
 let str = "";
+
 for (let a in family_member) {
-  str += family_member[a] + " ";
+    str += family_member[a] + " ";
 }
+
 document.getElementById("sample").innerHTML = str;
 </script>
 </body>
 </html>
 ```
 
-输出：![](img/image_rsrcGR1.jpg)
+**输出：**
 
-## for...in 遍历数组
+![](img/image_rsrcGR1.jpg)
+
+### `for...in` 遍历数组
 
 `for...in` 语句也可以遍历数组的属性。
 
-语法：
+**语法：**
 
 ```
 for (variable in array) {
-  // 要执行的代码块
+    // 要执行的代码块
 }
 ```
 
-示例：
+**示例：**
 
 ```html
 <html>
@@ -7676,27 +8768,32 @@ for (variable in array) {
 <body>
 <h2>JavaScript For In</h2>
 <p id="sample"></p>
+
 <script>
 const a = [10, 20, 30, 40, 50];
 let str = "";
+
 for (let p in a) {
-str += a[p] + "<br>";
+    str += a[p] + "<br>";
 }
+
 document.getElementById("sample").innerHTML = str;
 </script>
 </body>
 </html>
 ```
 
-输出：![](img/image_rsrcGR2.jpg)
+**输出：**
+
+![](img/image_rsrcGR2.jpg)
 
 **注意：** 当索引顺序很重要时，最好使用 `for` 循环、`for...of` 循环或 `Array.forEach()`。
 
-## `Array.forEach()` 方法
+### `Array.forEach()` 方法
 
 该方法为每个数组元素调用一次函数。
 
-示例：
+**示例：**
 
 ```html
 <html>
@@ -7704,38 +8801,44 @@ document.getElementById("sample").innerHTML = str;
 <body>
 <h2>JavaScript Array.forEach()</h2>
 <p id="sample"></p>
+
 <script>
 const a = [10, 20, 30, 40, 50];
 let str = "";
+
 a.forEach(arrayFunction);
+
 document.getElementById("sample").innerHTML = str;
+
 function arrayFunction(value, index, array) {
-str += value + "<br>";
+    str += value + "<br>";
 }
 </script>
 </body>
 </html>
 ```
 
-输出：![](img/image_rsrcGR3.jpg)
+**输出：**
 
-## `for...of` 循环
+![](img/image_rsrcGR3.jpg)
+
+### `for...of` 循环
 
 该循环语句遍历可迭代对象的值。
 
-语法：
+**语法：**
 
 ```
 for (variable of iterable) {
-  // 要执行的代码块
+    // 要执行的代码块
 }
 ```
 
 这里，每次迭代都会将下一个属性的值赋给变量。变量可以用 `const`、`let` 或 `var` 声明。`iterable` 表示具有可迭代属性的对象。
 
-### 遍历数组
+#### 遍历数组
 
-示例：
+**示例：**
 
 ```html
 <html>
@@ -7743,42 +8846,47 @@ for (variable of iterable) {
 <body>
 <h2>JavaScript For Of Loop</h2>
 <p id="sample"></p>
+
 <script>
 const flowers = ["Rose", "Jasmin", "Lilly"];
 let str = "";
+
 for (let a of flowers) {
-  str += a + "<br>";
+    str += a + "<br>";
 }
+
 document.getElementById("sample").innerHTML = str;
 </script>
 </body>
 </html>
 ```
 
-输出：![](img/image_rsrcGR4.jpg)
+**输出：**
 
-## `while` 循环
+![](img/image_rsrcGR4.jpg)
+
+### `while` 循环
 
 它也被称为预测试循环结构，因为在重复执行一组语句之前会先检查条件。
 
-一般形式：
+**一般形式：**
 
 ```
 while (condition) {
-  statement 1;
-  statement 2;
-  …
-  statement n;
+    statement 1;
+    statement 2;
+    …
+    statement n;
 }
 ```
 
-或
+或：
 
 ```
 while (condition) statement;
 ```
 
-示例：使用 `while` 循环打印前 5 个偶数的 JavaScript 代码。
+**示例：** 使用 `while` 循环打印前 5 个偶数的 JavaScript 代码。
 
 ```html
 <html>
@@ -7787,45 +8895,50 @@ while (condition) statement;
 <h2>JavaScript For Loop</h2>
 <p>Even Numbers</p>
 <p id="sample"></p>
+
 <script>
-let str="";
-let i=2;
+let str = "";
+let i = 2;
+
 while (i <= 10) {
-if(i%2==0)
-document.getElementById("sample").innerHTML = str+=i+"<br>";
-i=i+2;
+    if (i % 2 == 0)
+        document.getElementById("sample").innerHTML = str += i + "<br>";
+
+    i = i + 2;
 }
 </script>
 </body>
 </html>
 ```
 
-输出：![](img/image_rsrcGR5.jpg)
+**输出：**
 
-## `do-while` 循环
+![](img/image_rsrcGR5.jpg)
+
+### `do-while` 循环
 
 在这种循环结构中，条件会在至少执行一次指令集之后进行检查，因此它也被称为后测试循环结构。
 
-一般形式：
+**一般形式：**
 
 ```
 do {
-  statement 1;
-  statement 2;
-  …
-  statement n;
+    statement 1;
+    statement 2;
+    …
+    statement n;
 } while (condition);
 ```
 
-或
+或：
 
 ```
 do
-  statement 1;
+    statement 1;
 while (condition);
 ```
 
-示例：计算前 5 个奇数之和的 JavaScript 代码。
+**示例：** 计算前 5 个奇数之和的 JavaScript 代码。
 
 ```html
 <html>
@@ -7834,31 +8947,36 @@ while (condition);
 <h2>JavaScript do while Loop</h2>
 <p>Sum of first five odd Numbers</p>
 <p id="sample"></p>
+
 <script>
-let i=1,sum=0;
+let i = 1, sum = 0;
+
 while (i <= 10) {
-if(i%2!=0)
-document.getElementById("sample").innerHTML = sum+=i;
-i=i+2;
+    if (i % 2 != 0)
+        document.getElementById("sample").innerHTML = sum += i;
+
+    i = i + 2;
 }
 </script>
 </body>
 </html>
 ```
 
-输出：![](img/image_rsrcGR6.jpg)
+**输出：**
 
-## `break` 语句
+![](img/image_rsrcGR6.jpg)
+
+### `break` 语句
 
 `break` 语句有两种用法：一种我们已经用在 `switch` 语句中，用于将控制权转移出 `switch` 语句；另一种用于终止循环。
 
-一般形式：
+**一般形式：**
 
 ```
 break;
 ```
 
-示例：使用 `break` 语句跳出 `for` 循环的 JavaScript 代码。
+**示例：** 使用 `break` 语句跳出 `for` 循环的 JavaScript 代码。
 
 ```html
 <html>
@@ -7867,32 +8985,38 @@ break;
 <h2>break statement demo</h2>
 <p>Natural Numbers</p>
 <p id="sample"></p>
+
 <script>
-let str="";
+let str = "";
+
 for (let i = 1; i <= 5; i++) {
-if(i==3)break;
-document.getElementById("sample").innerHTML = str+=i+"<br>";
+    if (i == 3)
+        break;
+
+    document.getElementById("sample").innerHTML = str += i + "<br>";
 }
 </script>
 </body>
 </html>
 ```
 
-输出：![](img/image_rsrcGR7.jpg)
+**输出：**
+
+![](img/image_rsrcGR7.jpg)
 
 这里，当循环索引 `i` 为 3 时，`break` 语句结束循环。
 
-## `continue` 语句
+### `continue` 语句
 
 `continue` 语句用于跳过循环语句的一部分，但不会终止循环。
 
-一般形式：
+**一般形式：**
 
 ```
 continue;
 ```
 
-示例：
+**示例：**
 
 ```html
 <html>
@@ -7901,26 +9025,32 @@ continue;
 <h2>continue statement demo</h2>
 <p>Natural Numbers</p>
 <p id="sample"></p>
+
 <script>
-let str="";
+let str = "";
+
 for (let i = 1; i <= 5; i++) {
-if(i==3)continue;
-document.getElementById("sample").innerHTML = str+=i+"<br>";
+    if (i == 3)
+        continue;
+
+    document.getElementById("sample").innerHTML = str += i + "<br>";
 }
 </script>
 </body>
 </html>
 ```
 
-输出：![](img/image_rsrcGR8.jpg)
+**输出：**
+
+![](img/image_rsrcGR8.jpg)
 
 此示例跳过了值 3。
 
-## 标签
+### 标签
 
 标签和冒号位于语句之前。
 
-语法：
+**语法：**
 
 ```
 label: statements;
@@ -7928,10 +9058,11 @@ label: statements;
 
 `break` 和 `continue` 语句是可以跳出代码块的语句。
 
-语法：
+**语法：**
 
 ```
 break labelname;
+
 continue labelname;
 ```
 
@@ -7939,7 +9070,7 @@ continue labelname;
 
 不带标签引用的 `break` 语句可用于跳出循环或 `switch` 语句。带标签引用时，`break` 语句可用于跳出任何代码块。
 
-示例：
+**示例：**
 
 ```html
 <html>
@@ -7947,23 +9078,29 @@ continue labelname;
 <body>
 <h2>JavaScript break label</h2>
 <p id="sample"></p>
+
 <script>
 const flowers = ["Rose", "Jasmin", "Lilly", "Sunflower"];
 let str = "";
+
 list: {
-str += flowers[0] + "<br>";
-str += flowers[1] + "<br>";
-  break list;
-str += flowers[2] + "<br>";
-str += flowers[3] + "<br>";
+    str += flowers[0] + "<br>";
+    str += flowers[1] + "<br>";
+
+    break list;
+
+    str += flowers[2] + "<br>";
+    str += flowers[3] + "<br>";
 }
+
 document.getElementById("sample").innerHTML = str;
 </script>
 </body>
 </html>
 ```
 
-输出：![](img/image_rsrcGR9.jpg)
+
+
 
 ## Set
 
@@ -7973,23 +9110,20 @@ JavaScript 的 `Set` 是唯一值的集合，每个值只能出现一次。
 
 | 方法 | 描述 |
 | --- | --- |
-| `new Set()` | 创建一个新的 Set |
-| `add()` | 向 Set 添加一个新元素 |
-| `delete()` | 从 Set 中删除一个元素 |
-| `has()` | 如果 Set 中存在某个值，则返回 true |
-| `forEach()` | 为 Set 中的每个元素调用回调函数 |
-| `values()` | 返回一个包含 Set 中所有值的迭代器 |
+| `new Set()` | 创建一个新的 `Set` |
+| `add()` | 向 `Set` 添加一个新元素 |
+| `delete()` | 从 `Set` 中删除一个元素 |
+| `has()` | 如果 `Set` 中存在某个值，则返回 `true` |
+| `forEach()` | 为 `Set` 中的每个元素调用回调函数 |
+| `values()` | 返回一个包含 `Set` 中所有值的迭代器 |
 
 | 属性 | 描述 |
 | --- | --- |
-| `size` | 返回 Set 中的元素数量 |
+| `size` | 返回 `Set` 中的元素数量 |
 
+创建集合：可以使用 `new Set()` 方法创建集合，并使用 `add()` 方法向集合中插入值和变量。
 
-
-
-创建集合：可以使用 `new Set()` 方法创建集合。并使用 `add()` 方法向集合中插入值和变量。
-
-示例：
+### 示例
 
 ```html
 <html>
@@ -8005,9 +9139,9 @@ document.getElementById("sample").innerHTML = alphabets.size;
 </html>
 ```
 
-输出：![](img/image_rsrcGRA.jpg)
+输出：![](img/image_rsrcGR9.jpg)
 
-创建集合并添加值：
+### 创建集合并添加值
 
 ```html
 <html>
@@ -8030,7 +9164,7 @@ document.getElementById("sample").innerHTML = alphabets.size;
 
 输出：![](img/image_rsrcGRB.jpg)
 
-创建集合并添加变量：
+### 创建集合并添加变量
 
 ```html
 <html>
@@ -8058,7 +9192,9 @@ document.getElementById("sample").innerHTML = alphabets.size;
 
 输出：![](img/image_rsrcGRC.jpg)
 
-`add()` 方法：该方法用于向现有集合中添加新元素，如下例所示。
+### `add()` 方法
+
+该方法用于向现有集合中添加新元素，如下例所示。
 
 ```html
 <html>
@@ -8080,7 +9216,9 @@ document.getElementById("sample").innerHTML = alphabets.size;
 
 注意：如果添加相等的元素，则只保存第一个。
 
-`forEach()` 方法：该方法为每个集合元素调用一个函数。
+### `forEach()` 方法
+
+该方法为每个集合元素调用一个函数。
 
 示例：
 
@@ -8104,7 +9242,9 @@ document.getElementById("sample").innerHTML = str;
 
 输出：![](img/image_rsrcGRE.jpg)
 
-`values()` 方法：该方法返回一个新的迭代器对象，其中包含集合中的所有值。
+### `values()` 方法
+
+该方法返回一个新的迭代器对象，其中包含集合中的所有值。
 
 ```html
 <html>
@@ -8144,32 +9284,31 @@ document.getElementById("sample").innerHTML = str;
 
 输出：![](img/image_rsrcGRG.jpg)
 
-映射：映射可以是任何保存键值对的数据类型，并且它会记住键的原始插入顺序。
+## Map
+
+映射可以是任何保存键值对的数据类型，并且它会记住键的原始插入顺序。
 
 以下表格列出了一些映射方法。
 
 | 方法 | 描述 |
 | --- | --- |
-| `new Map()` | 创建一个新的 Map |
-| `set()` | 设置 Map 中键的值 |
-| `get()` | 获取 Map 中键的值 |
-| `delete()` | 删除由键指定的 Map 元素 |
-| `has()` | 如果 Map 中存在该键则返回 true |
-| `forEach()` | 为 Map 中的每个键/值对调用一个函数 |
-| `entries()` | 返回一个包含 Map 中 [键, 值] 对的迭代器 |
+| `new Map()` | 创建一个新的 `Map` |
+| `set()` | 设置 `Map` 中键的值 |
+| `get()` | 获取 `Map` 中键的值 |
+| `delete()` | 删除由键指定的 `Map` 元素 |
+| `has()` | 如果 `Map` 中存在该键则返回 `true` |
+| `forEach()` | 为 `Map` 中的每个键/值对调用一个函数 |
+| `entries()` | 返回一个包含 `Map` 中 [键, 值] 对的迭代器 |
 
 | 属性 | 描述 |
 | --- | --- |
-| `size` | 返回 Map 中的元素数量 |
+| `size` | 返回 `Map` 中的元素数量 |
 
+可以通过向 `new Map()` 方法传递一个数组来创建 `Map`，或者先创建一个 `Map` 再使用 `Map.set()` 方法，如下所示。
 
+### `new Map()` 方法
 
-
-可以通过向 `new Map()` 方法传递一个数组来创建 Map，或者先创建一个 Map 再使用 `Map.set()` 方法，如下所示。
-
-## `new Map()` 方法
-
-我们可以通过向 `new Map()` 构造函数传递一个数组来创建 Map，如下例所示。
+我们可以通过向 `new Map()` 构造函数传递一个数组来创建 `Map`，如下例所示。
 
 ```html
 <html>
@@ -8192,9 +9331,9 @@ document.getElementById("sample").innerHTML = flowers.get("Rose");
 
 输出：![](img/image_rsrcGRH.jpg)
 
-## `set()` 方法
+### `set()` 方法
 
-该方法用于向 Map 中添加元素，如下例所示。
+该方法用于向 `Map` 中添加元素，如下例所示。
 
 ```html
 <html>
@@ -8215,7 +9354,7 @@ document.getElementById("sample").innerHTML = flowers.get("Rose");
 
 输出：![](img/image_rsrcGRJ.jpg)
 
-`set()` 方法也可以用于更改 Map 中的值，如下例所示。
+`set()` 方法也可以用于更改 `Map` 中的值，如下例所示。
 
 ```html
 <html>
@@ -8234,9 +9373,9 @@ document.getElementById("sample").innerHTML = flowers.get("Rose");
 
 输出：![](img/image_rsrcGRK.jpg)
 
-## `get()` 方法
+### `get()` 方法
 
-该方法用于获取 Map 中某个键的值，如下例所示。
+该方法用于获取 `Map` 中某个键的值，如下例所示。
 
 ```html
 <html>
@@ -8254,9 +9393,9 @@ document.getElementById("sample").innerHTML = flowers.get("Rose");
 
 输出：![](img/image_rsrcGRM.jpg)
 
-## `size` 属性
+### `size` 属性
 
-该属性返回 Map 中元素的数量，如下例所示。
+该属性返回 `Map` 中元素的数量，如下例所示。
 
 ```html
 <html>
@@ -8274,9 +9413,9 @@ document.getElementById("sample").innerHTML = flowers.size;
 
 输出：![](img/image_rsrcGRN.jpg)
 
-## `delete()` 方法
+### `delete()` 方法
 
-该方法用于从 Map 中移除元素，如下例所示。
+该方法用于从 `Map` 中移除元素，如下例所示。
 
 ```html
 <html>
@@ -8295,9 +9434,9 @@ document.getElementById("sample").innerHTML = flowers.size;
 
 输出：![](img/image_rsrcGRP.jpg)
 
-## `has()` 方法
+### `has()` 方法
 
-该方法用于返回 `true`（如果键存在于 Map 中）或 `false`，如下例所示。
+该方法用于返回 `true`（如果键存在于 `Map` 中）或 `false`，如下例所示。
 
 ```html
 <html>
@@ -8315,9 +9454,9 @@ document.getElementById("sample").innerHTML = flowers.has("Rose");
 
 输出：![](img/image_rsrcGRR.jpg)
 
-## `forEach()` 方法
+### `forEach()` 方法
 
-该方法对 Map 中的每个键值对调用一个函数，如下例所示。
+该方法对 `Map` 中的每个键值对调用一个函数，如下例所示。
 
 ```html
 <html>
@@ -8339,9 +9478,9 @@ document.getElementById("sample").innerHTML = str;
 
 输出：![](img/image_rsrcGRS.jpg)
 
-## `entries()` 方法
+### `entries()` 方法
 
-该方法返回一个迭代器对象，其中包含 Map 中的 `[key, values]`，如下例所示。
+该方法返回一个迭代器对象，其中包含 `Map` 中的 `[key, values]`，如下例所示。
 
 ```html
 <html>
@@ -8361,24 +9500,27 @@ document.getElementById("sample").innerHTML = str;
 </html>
 ```
 
+
+
+
 输出：![](img/image_rsrcGRT.jpg)
 
 ## 类型转换
 
-类型转换是将一种数据类型转换为另一种数据类型的过程。转换可以通过使用 JavaScript 函数或由 JavaScript 自动完成。JavaScript 支持以下转换。
+类型转换是将一种数据类型转换为另一种数据类型的过程。转换可以通过使用 JavaScript 函数或由 JavaScript 自动完成。JavaScript 支持以下转换：
 
 - 将字符串转换为数字
 - 将数字转换为字符串
 - 将日期转换为数字
 - 将数字转换为日期
 - 将布尔值转换为数字
-- 将数字转换为布尔值
+- 将布尔值转换为字符串
 
 ### 将字符串转换为数字
 
 `Number()` 方法可以将字符串转换为数字。例如，包含数字的字符串如 `"1.25"` 会转换为数字 `1.25`，空字符串会转换为 `0`，其他任何内容都会转换为 `NaN`，即非数字。
 
-#### Number 方法
+#### `Number` 方法
 
 下表列出了数字方法。
 
@@ -8450,7 +9592,8 @@ document.getElementById("sample").innerHTML =
 
 ```javascript
 d = new Date();
-Number(d);          // 返回 1404568027739
+
+Number(d); // 返回 1404568027739
 ```
 
 日期方法 `getTime()` 执行相同的操作。
@@ -8462,8 +9605,9 @@ Number(d);          // 返回 1404568027739
 示例：
 
 ```javascript
-String(Date())
-Date().toString()
+String(Date());
+
+Date().toString();
 ```
 
 下表中列出了一些用于将日期转换为字符串的方法。
@@ -8480,29 +9624,37 @@ Date().toString()
 | `getSeconds()` | 获取秒数（0-59） |
 | `getTime()` | 获取时间（自 1970 年 1 月 1 日以来的毫秒数） |
 
+### 将布尔值转换为数字
 
-
-
-
-将布尔值转换为数字：`number()` 方法也可用于将布尔值转换为数字。
+`number()` 方法也可用于将布尔值转换为数字。
 
 示例：
-```
-Number(false) // 返回 0
-Number(true) // 返回 1
+
+```javascript
+Number(false); // 返回 0
+
+Number(true); // 返回 1
 ```
 
-将布尔值转换为字符串：`String()` 和 `toString()` 方法用于将布尔值转换为字符串。
+### 将布尔值转换为字符串
+
+`String()` 和 `toString()` 方法用于将布尔值转换为字符串。
 
 示例：
-```
-String(false) // 返回 “false”
-String(true) // 返回 “true”
-false.toString() // 返回 “false”
-true.toString() // 返回 “true”
+
+```javascript
+String(false); // 返回 “false”
+
+String(true); // 返回 “true”
+
+false.toString(); // 返回 “false”
+
+true.toString(); // 返回 “true”
 ```
 
-自动类型转换：JavaScript 会尝试自动转换为合适的类型，如下例所示。
+### 自动类型转换
+
+JavaScript 会尝试自动转换为合适的类型，如下例所示。
 
 ```html
 <html>
@@ -8525,7 +9677,9 @@ document.getElementById("sample").innerHTML =
 
 输出：![](img/image_rsrcGRW.jpg)
 
-正则表达式：它是由字符组成的序列，用于形成搜索模式。当我们在文本中搜索数据时，可以使用此搜索模式来描述要搜索的内容。正则表达式可用于执行文本搜索和文本替换操作。
+## 正则表达式
+
+正则表达式是由字符组成的序列，用于形成搜索模式。当我们在文本中搜索数据时，可以使用此搜索模式来描述要搜索的内容。正则表达式可用于执行文本搜索和文本替换操作。
 
 语法：`/pattern/modifiers`;
 
@@ -8535,9 +9689,12 @@ document.getElementById("sample").innerHTML =
 
 `search()` 和 `replace()` 方法与正则表达式一起使用。
 
-`search()` 方法：此方法用于在字符串中搜索指定值，并返回匹配的位置。
+### `search()` 方法
+
+此方法用于在字符串中搜索指定值，并返回匹配的位置。
 
 示例：
+
 ```html
 <html>
 <head><title>search() 方法演示</title></head>
@@ -8557,9 +9714,12 @@ document.getElementById("sample").innerHTML = n;
 
 注意：如果要使用不区分大小写的正则表达式进行搜索，请使用 `/ladwa/i`。
 
-`replace()` 方法：此方法将字符串中的指定值替换为另一个值，如下例所示。
+### `replace()` 方法
+
+此方法将字符串中的指定值替换为另一个值，如下例所示。
 
 示例：
+
 ```html
 <html>
 <head><title>replace() 方法演示</title></head>
@@ -8578,7 +9738,9 @@ document.getElementById("sample").innerHTML = str.replace("书", "传记");
 
 注意：如果要使用不区分大小写的正则表达式进行 `replace()` 方法，请使用 `/book/i`。
 
-正则表达式修饰符：如下表所示。
+### 正则表达式修饰符
+
+如下表所示。
 
 | 修饰符 | 描述 |
 |----------|-------------|
@@ -8586,13 +9748,17 @@ document.getElementById("sample").innerHTML = str.replace("书", "传记");
 | `g` | 执行全局匹配（查找所有匹配项，而非在找到第一个匹配后停止） |
 | `m` | 执行多行匹配 |
 
-正则表达式模式：方括号用于查找字符范围。
+### 正则表达式模式
+
+方括号用于查找字符范围。
 
 | 表达式 | 描述 |
 |------------|-------------|
 | `[abc]` | 查找方括号之间的任意字符 |
 | `[0-9]` | 查找方括号之间的任意数字 |
-| `(x&#124;y)` | 查找由 &#124; 分隔的任意一个选项 |
+| `(x&#124;y)` | 查找由 `&#124;` 分隔的任意一个选项 |
+
+### 元字符
 
 元字符是具有特殊含义的字符，如下表所示。
 
@@ -8601,7 +9767,9 @@ document.getElementById("sample").innerHTML = str.replace("书", "传记");
 | `\d` | 查找数字 |
 | `\s` | 查找空白字符 |
 | `\b` | 查找单词开头的匹配，如：`\bWORD`，或单词结尾的匹配，如：`WORD\b` |
-| `\uxxxx` | 查找由十六进制数 xxxx 指定的 Unicode 字符 |
+| `\uxxxx` | 查找由十六进制数 `xxxx` 指定的 Unicode 字符 |
+
+### 量词
 
 量词用于定义数量，如下表所示。
 
@@ -8611,13 +9779,13 @@ document.getElementById("sample").innerHTML = str.replace("书", "传记");
 | `n*` | 匹配任何包含零个或多个 `n` 的字符串 |
 | `n?` | 匹配任何包含零个或一个 `n` 的字符串 |
 
+# `RegExp` 对象
 
+它是一个具有预定义属性和方法的正则表达式对象。
 
+### `test()` 方法
 
-
-# RegExp 对象
-
-它是一个具有预定义属性和方法的正则表达式对象。`test()` 方法：该方法用于在字符串中搜索模式，并根据结果返回 `true` 或 `false` 值。让我们看一个示例。
+该方法用于在字符串中搜索模式，并根据结果返回 `true` 或 `false` 值。让我们看一个示例。
 
 ```html
 <html>
@@ -8637,7 +9805,9 @@ document.getElementById("sample").innerHTML = pattern.test(str);
 
 输出：![](img/image_rsrcGRZ.jpg)
 
-`exec()` 方法：该方法在字符串中搜索指定模式，并将找到的文本作为对象返回。如果没有找到匹配项，则返回 `null`。让我们看一个示例。
+### `exec()` 方法
+
+该方法在字符串中搜索指定模式，并将找到的文本作为对象返回。如果没有找到匹配项，则返回 `null`。让我们看一个示例。
 
 ```html
 <html>
@@ -8647,7 +9817,9 @@ document.getElementById("sample").innerHTML = pattern.test(str);
 <p id="sample"></p>
 <script>
 const obj = /e/.exec("The sun rises in the east");
-document.getElementById("sample").innerHTML ="Found " + obj[0] + " in position " + obj.index + " in the text: " + obj.input;
+document.getElementById("sample").innerHTML =
+  "Found " + obj[0] + " in position " + obj.index +
+  " in the text: " + obj.input;
 </script>
 </body>
 </html>
@@ -8655,20 +9827,18 @@ document.getElementById("sample").innerHTML ="Found " + obj[0] + " in position "
 
 输出：![](img/image_rsrcGS0.jpg)
 
-# 第 19 章
-
-## 异常处理
+# 第 19 章：异常处理
 
 ## 简介
 
 在编写任何计算机程序时，犯错是很常见的。程序员犯的这种错误被称为错误。如果程序中存在错误，程序可能会产生非预期的结果。有时程序会突然终止。总是如此，每当我们输入垃圾，就会得到垃圾，即垃圾进垃圾出（GIGO）。如果输入不正确，输出也不正确。
 
-为了处理 JavaScript 程序中的错误或失误，我们使用如下所示的错误处理关键字。
+为了处理 JavaScript 程序中的错误或失误，我们使用如下所示的错误处理关键字：
 
-- `try` – 该语句用于监视语句或语句集是否存在错误。
-- `catch` – 该语句用于处理错误。
-- `throw` – 该语句用于创建自定义错误，它会创建一个错误对象并在错误发生时抛出它。
-- `finally` – 该语句用于执行一个语句或语句集，即使代码中存在错误。`finally` 语句一定会执行。
+- `try`：该语句用于监视语句或语句集是否存在错误。
+- `catch`：该语句用于处理错误。
+- `throw`：该语句用于创建自定义错误，它会创建一个错误对象并在错误发生时抛出它。
+- `finally`：该语句用于执行一个语句或语句集，即使代码中存在错误。`finally` 语句一定会执行。
 
 错误可能由于编码时的失误、程序员拼写错误的语句或未遵循编程语言的语法而产生。
 
@@ -8696,13 +9866,13 @@ catch(e) {
 
 **注意：** JavaScript 将 `allert` 捕获为错误，并由 `catch` 块处理。
 
-### `try` 和 `catch` 块
+## `try` 和 `catch` 块
 
 `try` 语句用于在执行时测试错误。`catch` 语句用于在 `try` 块中出现错误时执行一段代码。
 
 **语法：**
 
-```
+```javascript
 try
 {
   需要监视错误的语句集；
@@ -8713,15 +9883,16 @@ catch(e)
 }
 ```
 
-### 抛出错误
+## 抛出错误
 
 这是一个创建并抛出自定义错误对象的过程。JavaScript 异常可以是 `String`、`Number`、`Boolean` 或 `Object`。
 
 **示例：**
 
-```
-throw "Text message";  // 抛出文本异常
-throw 0;              // 抛出布尔异常
+```javascript
+throw "Text message"; // 抛出文本异常
+
+throw 0; // 抛出布尔异常
 ```
 
 **演示验证输入的自定义异常的示例。**
@@ -8757,13 +9928,13 @@ function customFunction() {
 
 输出：![](img/image_rsrcGS2.jpg) ![](img/image_rsrcGS3.jpg)
 
-### `finally` 语句
+## `finally` 语句
 
 即使 `try` 块中存在错误，该语句也一定会执行。
 
 **语法：**
 
-```
+```javascript
 try
 {
   需要监视错误的语句集；
@@ -8774,7 +9945,7 @@ catch(e)
 }
 finally
 {
-  无论 try 和 catch 块如何都要执行的语句集；
+  无论 `try` 和 `catch` 块如何都要执行的语句集；
 }
 ```
 
@@ -8797,18 +9968,35 @@ function customFunction() {
     if(a == "") throw "empty";
     if(isNaN(a)) throw "not a number";
     a = Number(a);
-    if(a < 0) throw "Negative marking not allowed";
-    if(a > 100) throw "Marks crossing 100";
-  }
-  catch(e) {
-    msg.innerHTML = "Input is " + e;
-  }
-  finally {
-    document.getElementById("sample").value="";
-  }
+```
+
+
+
+```javascript
+if (a < 0) throw "Negative marking not allowed";
+
+if (a > 100) throw "Marks crossing 100";
+```
+
+```javascript
 }
+
+catch (e) {
+  msg.innerHTML = "Input is " + e;
+}
+
+finally {
+  document.getElementById("sample").value = "";
+}
+
+}
+```
+
+```html
 </script>
+
 </body>
+
 </html>
 ```
 
@@ -8820,22 +10008,22 @@ function customFunction() {
 
 ### 错误对象
 
-当错误发生时，JavaScript 会抛出一个内置的错误对象。该对象有两个属性，即 `name` 和 `message`。
+当错误发生时，JavaScript 会抛出一个内置的错误对象。该对象有两个属性，即`name`和`message`。
 
 下表列出了错误名称的值。
 
 | 错误名称 | 描述 |
 | --- | --- |
-| `EvalError` | `eval()` 函数中发生了错误 |
+| `EvalError` | `eval()`函数中发生了错误 |
 | `RangeError` | 出现了“超出范围”的数字 |
 | `ReferenceError` | 出现了非法引用 |
 | `SyntaxError` | 出现了语法错误 |
 | `TypeError` | 出现了类型错误 |
-| `URIError` | `encodeURI()` 中出现了错误 |
+| `URIError` | `encodeURI()`中出现了错误 |
 
 #### `EvalError`
 
-此错误表示 `eval()` 函数中出现了错误。
+此错误表示`eval()`函数中出现了错误。
 
 #### `RangeError`
 
@@ -8845,20 +10033,35 @@ function customFunction() {
 
 ```html
 <html>
+
 <head><title>The RangeError demo</title></head>
+
 <body>
+
 <h2>The RangeError demo</h2>
+
 <p id="sample">
+
 <script>
+
 let n = 1;
+
 try {
+
   n.toPrecision(500);
+
 }
-catch(e) {
+
+catch (e) {
+
   document.getElementById("sample").innerHTML = e.name;
+
 }
+
 </script>
+
 </body>
+
 </html>
 ```
 
@@ -8870,20 +10073,35 @@ catch(e) {
 
 ```html
 <html>
+
 <head><title>The ReferenceError demo</title></head>
+
 <body>
+
 <h2>The ReferenceError demo</h2>
+
 <p id="sample">
+
 <script>
+
 let n = 1;
+
 try {
-  n=a+1;
+
+  n = a + 1;
+
 }
-catch(e) {
+
+catch (e) {
+
   document.getElementById("sample").innerHTML = e.name;
+
 }
+
 </script>
+
 </body>
+
 </html>
 ```
 
@@ -8897,19 +10115,33 @@ catch(e) {
 
 ```html
 <html>
+
 <head><title>The SyntaxError demo</title></head>
+
 <body>
+
 <h2>The SyntaxError demo</h2>
+
 <p id="sample">
+
 <script>
+
 try {
+
   eval(String('Hanumanth Ladwa'));
+
 }
-catch(e) {
+
+catch (e) {
+
   document.getElementById("sample").innerHTML = e.name;
+
 }
+
 </script>
+
 </body>
+
 </html>
 ```
 
@@ -8923,20 +10155,35 @@ catch(e) {
 
 ```html
 <html>
+
 <head><title>The TypeError demo</title></head>
+
 <body>
+
 <h2>The TypeError demo</h2>
+
 <p id="sample">
+
 <script>
-let n=1;
+
+let n = 1;
+
 try {
+
   n.toLowerCase();
+
 }
-catch(e) {
+
+catch (e) {
+
   document.getElementById("sample").innerHTML = e.name;
+
 }
+
 </script>
+
 </body>
+
 </html>
 ```
 
@@ -8950,33 +10197,45 @@ catch(e) {
 
 ```html
 <html>
+
 <head><title>The URIError demo</title></head>
+
 <body>
+
 <h2>The URIError demo</h2>
+
 <p id="sample">
+
 <script>
+
 try {
+
   decodeURI("%");
+
 }
-catch(e) {
+
+catch (e) {
+
   document.getElementById("sample").innerHTML = e.name;
+
 }
+
 </script>
+
 </body>
+
 </html>
 ```
 
 输出：![](img/image_rsrcGSA.jpg)
 
-# 第 20 章
-
-## 类
+# 第 20 章：类
 
 ## 简介
 
-JavaScript 类是 JavaScript 对象的模板。使用关键字 `class` 创建类，并始终添加一个名为 `constructor()` 的方法，如下例所示。
+JavaScript 类是 JavaScript 对象的模板。使用关键字`class`创建类，并始终添加一个名为`constructor()`的方法，如下例所示。
 
-```
+```javascript
 class class_name
 {
   constructor()
@@ -8988,20 +10247,21 @@ class class_name
 
 **示例：**
 
-```
+```javascript
 class add
 {
 ```
-
-
-
-
 
 # JavaScript 类与相关概念
 
 ## 构造函数
 
-`constructor(a,b){this.a=a;this.b=b;}`
+```javascript
+constructor(a, b) {
+  this.a = a;
+  this.b = b;
+}
+```
 
 注意：如果声明的变量与参数名称相同，我们使用`this`关键字来区分两者。
 
@@ -9009,27 +10269,46 @@ class add
 
 ```html
 <html>
+
 <head>
+
 <title>The class demo</title>
+
 </head>
+
 <body>
+
 <h2>JavaScript Class</h2>
+
 <p id="sample"></p>
+
 <script>
+
 class add {
+
   constructor(a, b) {
+
     this.a = a;
+
     this.b = b;
+
   }
+
 }
+
 const sum = new add(10, 20);
+
 document.getElementById("sample").innerHTML = sum.a + sum.b;
+
 </script>
+
 </body>
+
 </html>
 ```
 
 输出：
+
 ![](img/image_rsrcGSB.jpg)
 
 **构造函数**：构造函数方法用于初始化对象属性。它与类名同名。构造函数在对象创建时自动执行。
@@ -9040,10 +10319,15 @@ document.getElementById("sample").innerHTML = sum.a + sum.b;
 
 ```javascript
 class class_name {
+
   constructor() { … }
+
   method1() { … }
+
   method2() { … }
+
   method3() { … }
+
 }
 ```
 
@@ -9051,30 +10335,52 @@ class class_name {
 
 ```html
 <html>
+
 <head>
+
 <title>The class method demo</title>
+
 </head>
+
 <body>
+
 <h2>The class method demo</h2>
+
 <p id="sample"></p>
+
 <script>
+
 class add {
+
   constructor(a, b) {
+
     this.a = a;
+
     this.b = b;
+
   }
+
   sum() {
+
     return sum.a + sum.b;
+
   }
+
 }
+
 const sum = new add(10, 20);
+
 document.getElementById("sample").innerHTML = sum.sum();
+
 </script>
+
 </body>
+
 </html>
 ```
 
 输出：
+
 ![](img/image_rsrcGSC.jpg)
 
 ## JSON
@@ -9086,9 +10392,18 @@ JSON 代表 JavaScript Object Notation。这是一种用于存储和传输数据
 ```json
 {
   "family_members": [
-    {"firstName": "Priyanka", "lastName": "Niranjan"},
-    {"firstName": "Sneha", "lastName": "Niranjan"},
-    {"firstName": "Swaroop", "lastName": "Niranjan"}
+    {
+      "firstName": "Priyanka",
+      "lastName": "Niranjan"
+    },
+    {
+      "firstName": "Sneha",
+      "lastName": "Niranjan"
+    },
+    {
+      "firstName": "Swaroop",
+      "lastName": "Niranjan"
+    }
   ]
 }
 ```
@@ -9107,6 +10422,7 @@ let str = '{
     {"firstName": "Swaroop", "lastName": "Niranjan"}
   ]
 }';
+
 const obj = JSON.parse(str);
 ```
 
@@ -9114,228 +10430,1160 @@ const obj = JSON.parse(str);
 
 ```html
 <html>
+
 <head>
+
 <title>JSON demo</title>
+
 </head>
+
 <body>
+
 <h2>Create Object from JSON String</h2>
+
 <p id="sample"></p>
+
 <script>
+
 let str = '{"family_members":[' +
 '{"firstName":"Priyanka","lastName":"Niranjan" },' +
 '{"firstName":"Sneha","lastName":"Niranjan" },' +
 '{"firstName":"Swaroop","lastName":"Niranjan" }]}';
+
 const obj = JSON.parse(str);
+
 document.getElementById("sample").innerHTML =
 obj.family_members[1].firstName + " " + obj.family_members[1].lastName;
+
 </script>
+
 </body>
+
 </html>
 ```
 
 输出：
+
 ![](img/image_rsrcGSD.jpg)
 
 ## JavaScript 保留字
 
-| abstract | arguments | await* | boolean |
-|----------|-----------|--------|---------|
-| break    | byte      | case   | catch   |
-| char     | class*    | const  | continue|
-| debugger | default   | delete | do      |
-| double   | else      | enum*  | eval    |
-| export*  | extends*  | false  | final   |
-| finally  | float     | for    | function|
-| goto     | if        | implements | import* |
-| in       | instanceof| int    | interface|
-| let*     | long      | native | new     |
-| null     | package   | private| protected|
-| public   | return    | short  | static  |
-| super*   | switch    | synchronized | this |
-| throw    | throws    | transient | true   |
-| try      | typeof    | var    | void    |
-| volatile | while     | with   | yield   |
+| `abstract` | `arguments` | `await*` | `boolean` |
+| --- | --- | --- | --- |
+| `break` | `byte` | `case` | `catch` |
+| `char` | `class*` | `const` | `continue` |
+| `debugger` | `default` | `delete` | `do` |
+| `double` | `else` | `enum*` | `eval` |
+| `export*` | `extends*` | `false` | `final` |
+| `finally` | `float` | `for` | `function` |
+| `goto` | `if` | `implements` | `import*` |
+| `in` | `instanceof` | `int` | `interface` |
+| `let*` | `long` | `native` | `new` |
+| `null` | `package` | `private` | `protected` |
+| `public` | `return` | `short` | `static` |
+| `super*` | `switch` | `synchronized` | `this` |
+| `throw` | `throws` | `transient` | `true` |
+| `try` | `typeof` | `var` | `void` |
+| `volatile` | `while` | `with` | `yield` |
 
 ## JavaScript 对象、属性和方法
 
-| Array | Date | eval | function |
-|-------|------|------|----------|
-| hasOwnProperty | Infinity | isFinite | isNaN |
-| isPrototypeOf | length | Math | NaN |
-| name | Number | Object | prototype |
-| String | toString | undefined | valueOf |
+| `Array` | `Date` | `eval` | `function` |
+| --- | --- | --- | --- |
+| `hasOwnProperty` | `Infinity` | `isFinite` | `isNaN` |
+| `isPrototypeOf` | `length` | `Math` | `NaN` |
+| `name` | `Number` | `Object` | `prototype` |
+| `String` | `toString` | `undefined` | `valueOf` |
 
 ## 其他保留字
 
-| alert | all | anchor | anchors |
-|-------|-----|--------|---------|
-| area | assign | blur | button |
-| checkbox | clearInterval | clearTimeout | clientInformation |
-| close | closed | confirm | constructor |
-| crypto | decodeURI | decodeURIComponent | defaultStatus |
-| document | element | elements | embed |
-| embeds | encodeURI | encodeURIComponent | escape |
-| event | fileUpload | focus | form |
-| forms | frame | innerHeight | innerWidth |
-| layer | layers | link | location |
-| mimeTypes | navigate | navigator | frames |
-| frameRate | hidden | history | image |
-| images | offscreenBuffering | open | opener |
-| option | outerHeight | outerWidth | packages |
-| pageXOffset | pageYOffset | parent | parseFloat |
-| parseInt | password | pkcs11 | plugin |
-| prompt | propertyIsEnum | radio | reset |
-| screenX | screenY | scroll | secure |
-| select | self | setInterval | setTimeout |
-| status | submit | taint | text |
-| textarea | top | unescape | untaint |
+| `alert` | `all` | `anchor` | `anchors` |
+| --- | --- | --- | --- |
+| `area` | `assign` | `blur` | `button` |
+| `checkbox` | `clearInterval` | `clearTimeout` | `clientInformation` |
+| `close` | `closed` | `confirm` | `constructor` |
+| `crypto` | `decodeURI` | `decodeURIComponent` | `defaultStatus` |
+| `document` | `element` | `elements` | `embed` |
+| `embeds` | `encodeURI` | `encodeURIComponent` | `escape` |
+| `event` | `fileUpload` | `focus` | `form` |
+| `forms` | `frame` | `innerHeight` | `innerWidth` |
+| `layer` | `layers` | `link` | `location` |
+| `mimeTypes` | `navigate` | `navigator` | `frames` |
+| `frameRate` | `hidden` | `history` | `image` |
+| `images` | `offscreenBuffering` | `open` | `opener` |
+| `option` | `outerHeight` | `outerWidth` | `packages` |
+| `pageXOffset` | `pageYOffset` | `parent` | `parseFloat` |
+| `parseInt` | `password` | `pkcs11` | `plugin` |
+| `prompt` | `propertyIsEnum` | `radio` | `reset` |
+| `screenX` | `screenY` | `scroll` | `secure` |
+| `select` | `self` | `setInterval` | `setTimeout` |
+| `status` | `submit` | `taint` | `text` |
+| `textarea` | `top` | `unescape` | `untaint` |
 
 ## HTML 事件处理程序
 
-| onblur | onclick | onerror | onfocus |
-|--------|---------|---------|---------|
-| onkeydown | onkeypress | onkeyup | onmouseover |
-| onload | onmouseup | onmousedown | onsubmit |
-
-
-
-
+| `onblur` | `onclick` | `onerror` | `onfocus` |
+| --- | --- | --- | --- |
+| `onkeydown` | `onkeypress` | `onkeyup` | `onmouseover` |
+| `onload` | `onmouseup` | `onmousedown` | `onsubmit` |
 
 # 作业程序
 
 ## 1. 编写一个创建在线注册表单的程序
 
 ```html
-<html><head><title>在线注册表单</title></head><body bgcolor="lightblue" text="red" style="font-size:15pt;font-family:Garamond" ><center><h2>在线申请表</h3></center><form action="server.php" name=form1 ><table name=tab cellspacing=20pt><tr><td align=left><h2>输入姓名：</h2> </td><td align=left><input type=text name=t1size=18><tr><td align=left><h2>输入年龄：</h2> </td><td align=left><input type=text name=t2maxlength=3 size=3><tr><td align=left><h2>输入地址：</h2> </td><td align=left><textarea name=ta rows=5cols=15></textarea><tr><td align=left><h2>性别：</h2> </td><td align=left><input type=radio name=r1 value="female"checked=true>女<br><input type=radio name=r1 value=male>男</td><tr><td align=left><h2>国籍：</h2> </td><td align=left><select name="country"><option selected="" value="Default">(请选择国家)</option><option value="AF">印度</option><option value="AL">加拿大</option><option value="DZ">澳大利亚</option><option value="AS">俄罗斯</option><option value="AD">美国</option></select></td><tr><td align=left><h2>掌握的编程语言：</h2> </td><td align=left><center>(可以多选)</center><input type=checkbox name=c1 value=c checked=true> C<br><input type=checkbox name=c2 value=c++> C++<br><input type=checkbox name=c3 value=vb> VB<br><input type=checkbox name=c4 value=java> JAVA<br><input type=checkbox name=c5 value=asp> ASP<br><input type=checkbox name=c6 value=others> 其他<br></td><tr><td align=left><h2>输入密码：</h2> </td><td align=right><input type=passwordname=t3 size=18></table><center><input type=reset value=" 重置 " ><input type=submit value=" 提交 " ></form></body></html>
-```
 
-输出:![](img/image_rsrcGSE.jpg)
 
-## 2. 创建一个员工详情表单。
+
+## 1. 创建一个在线注册表单
 
 ```html
-<HTML><HEAD><TITLE>员工详情表单 </TITLE></HEAD><BODY BGCOLOR="ORANGE"><FONT FACE="Courier New"><H1 ALIGN="CENTER">表单</H1><FORM><H3>输入密码： <INPUT TYPE="TEXT" NAME="T1"><br><br>员工代码： <INPUT TYPE="TEXT" NAME="T2">姓名： <INPUT TYPE="TEXT" NAME="T3"><br><br>城市： <INPUT TYPE="TEXT" NAME="T4"><br><br>福利 <INPUT TYPE="checkbox" NAME="c1" checked>每日 <INPUT TYPE="checkbox" NAME="c2" >  每周<BR><BR>部门:<BR><SELECT NAME="S2" SIZE=4 MULTIPLE><OPTION>销售</OPTION><OPTION>财务</OPTION><OPTION>市场</OPTION><OPTION>人事</OPTION><OPTION>行政</SELECT><BR><BR>级别 <INPUT TYPE="RADIO" NAME="RADIO"> A<INPUT TYPE="RADIO" NAME="RADIO"> B<BR><BR><INPUT TYPE="BUTTON" NAME="B1" VALUE=" 提交 " SIZE=8 ALIGN="CENTER"></H3></FORM></FONT></BODY></HTML>
+<html>
+  <head>
+    <title>在线注册表单</title>
+  </head>
+  <body bgcolor="lightblue" text="red" style="font-size: 15pt; font-family: Garamond;">
+    <center>
+      <h2>在线申请表</h2>
+    </center>
+
+    <form action="server.php" name="form1">
+      <table name="tab" cellspacing="20pt">
+        <tr>
+          <td align="left">
+            <h2>输入姓名：</h2>
+          </td>
+          <td align="left">
+            <input type="text" name="t1" size="18">
+          </td>
+        </tr>
+        <tr>
+          <td align="left">
+            <h2>输入年龄：</h2>
+          </td>
+          <td align="left">
+            <input type="text" name="t2" maxlength="3" size="3">
+          </td>
+        </tr>
+        <tr>
+          <td align="left">
+            <h2>输入地址：</h2>
+          </td>
+          <td align="left">
+            <textarea name="ta" rows="5" cols="15"></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td align="left">
+            <h2>性别：</h2>
+          </td>
+          <td align="left">
+            <input type="radio" name="r1" value="female" checked="true">女<br>
+            <input type="radio" name="r1" value="male">男
+          </td>
+        </tr>
+        <tr>
+          <td align="left">
+            <h2>国籍：</h2>
+          </td>
+          <td align="left">
+            <select name="country">
+              <option selected="" value="Default">(请选择国家)</option>
+              <option value="AF">印度</option>
+              <option value="AL">加拿大</option>
+              <option value="DZ">澳大利亚</option>
+              <option value="AS">俄罗斯</option>
+              <option value="AD">美国</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td align="left">
+            <h2>掌握的编程语言：</h2>
+          </td>
+          <td align="left">
+            <center>(可以多选)</center>
+            <input type="checkbox" name="c1" value="c" checked="true"> C<br>
+            <input type="checkbox" name="c2" value="c++"> C++<br>
+            <input type="checkbox" name="c3" value="vb"> VB<br>
+            <input type="checkbox" name="c4" value="java"> JAVA<br>
+            <input type="checkbox" name="c5" value="asp"> ASP<br>
+            <input type="checkbox" name="c6" value="others"> 其他<br>
+          </td>
+        </tr>
+        <tr>
+          <td align="left">
+            <h2>输入密码：</h2>
+          </td>
+          <td align="right">
+            <input type="password" name="t3" size="18">
+          </td>
+        </tr>
+      </table>
+
+      <center>
+        <input type="reset" value=" 重置 ">
+        <input type="submit" value=" 提交 ">
+      </center>
+    </form>
+  </body>
+</html>
 ```
 
-输出:![](img/image_rsrcGSF.jpg)
+输出：![](img/image_rsrcGSE.jpg)
 
-## 3. 为大学准备一份时间表。
+## 2. 创建一个员工详情表单
 
 ```html
-<html><head><title>大学时间表</title></head><body><h1 align="center">大学时间表</h1><hr width="350" height="50" color="BLUE"> <br><table border="10" width="80%" align="center"bordercolor="RED"><tr><h1 align="center"><th>时间/</th><th>9:00-10:00</th><th>10:00-11:00</th><th>11:00-12:00</th></tr><tr><h1 align="center"><<th>周一</th><th>物理</th><th>化学</th><th>数学</th></tr><tr><h1 align="center"><<th>周二</th><th>化学</th><th>计算机科学</th><th>生物</th></tr><tr><h1 align="center"><<th>周三</th><th>数学</th><th>物理</th><th>计算机科学</th></tr><tr><h1 align="center"><<th>周四</th><th>英语</th><th>化学</th><th>物理</th></tr><tr><h1 align="center"><<th>周五</th><th>物理</th><th>生物</th><th>计算机科学</th></tr></</body>></html>
+<HTML>
+  <HEAD>
+    <TITLE>员工详情表单</TITLE>
+  </HEAD>
+  <BODY BGCOLOR="ORANGE">
+    <FONT FACE="Courier New">
+      <H1 ALIGN="CENTER">表单</H1>
+      <FORM>
+        <H3>
+          输入密码：
+          <INPUT TYPE="TEXT" NAME="T1">
+          <br><br>
+
+          员工代码：
+          <INPUT TYPE="TEXT" NAME="T2">
+          姓名：
+          <INPUT TYPE="TEXT" NAME="T3">
+          <br><br>
+
+          城市：
+          <INPUT TYPE="TEXT" NAME="T4">
+          <br><br>
+
+          福利
+          <INPUT TYPE="checkbox" NAME="c1" checked>
+          每日
+          <INPUT TYPE="checkbox" NAME="c2">
+          每周
+          <BR><BR>
+
+          部门：
+          <BR>
+          <SELECT NAME="S2" SIZE="4" MULTIPLE>
+            <OPTION>销售</OPTION>
+            <OPTION>财务</OPTION>
+            <OPTION>市场</OPTION>
+            <OPTION>人事</OPTION>
+            <OPTION>行政</OPTION>
+          </SELECT>
+          <BR><BR>
+
+          级别
+          <INPUT TYPE="RADIO" NAME="RADIO"> A
+          <INPUT TYPE="RADIO" NAME="RADIO"> B
+          <BR><BR>
+
+          <INPUT TYPE="BUTTON" NAME="B1" VALUE=" 提交 " SIZE="8" ALIGN="CENTER">
+        </H3>
+      </FORM>
+    </FONT>
+  </BODY>
+</HTML>
 ```
 
-输出:![](img/image_rsrcGSG.jpg)
+输出：![](img/image_rsrcGSF.jpg)
 
-## 4. 创建一个在线招聘门户网站。
+## 3. 为大学准备一份时间表
 
 ```html
-<html><head><title>在线职位注册表单</title></head><body><h1 align="center">印度职位网 TIMESJOBSINDIA.COM<sub>印度最大的招聘网站</sub></h1><h2 align="center"><u>职位注册表单</u></h2><form name="form1" id="form"><label>姓：</label><input type="text" name="id1" id="id1" size="30"maxlength="20"/></label><br><label>名：</label><input type="text" name="id2" id="id2" size="30"maxlength="20"/></label><br><label>有效邮箱：</label><input type="text" name="id3" id="id3" size="70"maxlength="50"/></label><br><label>密码：</label><input type="password" name="id4" id="id4" size="50"maxlength="10"/></label><br><label>电话号码：</label><input type="text" name="id5" id="id5" size="30"maxlength="11"/></label><br><strong>性别：</strong><br><input type="radio" name="gender" id="r1" value="male">男<input type="radio" name="gender" id="r1" value="female">女<br><strong>出生日期：</strong><label>日期：</label><input type="text" name="id6" id="id6" size="5"maxlength="2"/></label><br><label>月份：</label><input type="text" name="id7" id="id7" size="5"maxlength="2"/></label><br><label>年份：</label><input type="text" name="id8" id="id8" size="5"maxlength="4"/></label><br><strong>学历：</strong><br>初中<input type="checkbox" name="a1">百分比：<input type="text" name="id9" id="id9" size="5"/><br>高中<input type="checkbox" name="a1">百分比：<input type="text" name="id10" id="id10" size="5"/><br>毕业<input type="checkbox" name="a1">百分比：<input type="text" name="id11" id="id11" size="5"/><br>MCA<input type="checkbox" name="a1">百分比：<input type="text" name="id12" id="id12" size="5"/><br>MBA<input type="checkbox" name="a1">百分比：<input type="text" name="id13" id="id13" size="5"/><br><strong>经验：</strong><select name="sc1" id="sc1" size="1"><option>0-1 年</option><option>2-3 年</option><option>3-5 年</option><option>5 年以上</option></select><br><br><center><input type="button" value="提交" onclick="alert('您的申请已提交');"/><input type="button" value="取消" onclick="alert('您的申请未提交');"/></center></</body>></html>
+<html>
+  <head>
+    <title>大学时间表</title>
+  </head>
+  <body>
+    <h1 align="center">大学时间表</h1>
+    <hr width="350" height="50" color="BLUE">
+    <br>
+
+    <table border="10" width="80%" align="center" bordercolor="RED">
+      <tr>
+        <th>时间/</th>
+        <th>9:00-10:00</th>
+        <th>10:00-11:00</th>
+        <th>11:00-12:00</th>
+      </tr>
+      <tr>
+        <th>周一</th>
+        <th>物理</th>
+        <th>化学</th>
+        <th>数学</th>
+      </tr>
+      <tr>
+        <th>周二</th>
+        <th>化学</th>
+        <th>计算机科学</th>
+        <th>生物</th>
+      </tr>
+      <tr>
+        <th>周三</th>
+        <th>数学</th>
+        <th>物理</th>
+        <th>计算机科学</th>
+      </tr>
+      <tr>
+        <th>周四</th>
+        <th>英语</th>
+        <th>化学</th>
+        <th>物理</th>
+      </tr>
+      <tr>
+        <th>周五</th>
+        <th>物理</th>
+        <th>生物</th>
+        <th>计算机科学</th>
+      </tr>
+    </table>
+  </body>
+</html>
 ```
 
-输出:![](img/image_rsrcGSH.jpg)
+输出：![](img/image_rsrcGSG.jpg)
 
-## 5. 创建一个演示学生注册表单的网页。
+## 4. 创建一个在线招聘门户网站
 
 ```html
-<html><head><title>学生注册表单</title></head><body bgcolor="#9F9F9F"><h2 align="center"><u>学生注册表单</u></h2><form action="abc.html" name="f" method="post" autocomplete="on"><table width="200" border="1" ><tr><th>名：</th><td><input type="text"name="id1"id="id1"size="30"maxlength="20"/></tr><tr><th>姓：</th><td><input type="text"name="id2"id="id2"size="30"maxlength="20"/></tr><tr><th>有效邮箱：</th><td><input type="text"name="id3"id="id3"size="70"maxlength="50"/></tr><tr><th>密码：</th><td><input type="password"name="id4"id="id4"size="50"maxlength="10"/></tr><tr><th>电话号码：</th><td><input type="text"name="id5" id="id5" size="30"maxlength="11"/></tr><tr><th>地址：</th><td> <textarea cols="50" rows="6" name="addr"> </textarea></td></tr><tr><th>性别：</th><td><strong>男：</strong><input type="radio" name="gender" id="r1" value="male"/><<strong>女：</strong><input type="radio" name="gender" id="r1"value="female"/></tr><tr><th>出生日期：</th><td><input type="text" name="dob"/></tr><tr><th>学历：</th><td><strong>SSC 中</strong></strong><input type="checkbox"name="a1">百分比：<input type="text" name="id9" id="id9"size="5"/><br><strong>HC 高中</strong><input type="checkbox" name="a1">百分比：<input type="text" name="id10" id="id10" size="5"/><br><strong>BA 本科</strong><input type="checkbox" name="a1">百分比：<input type="text" name="id11" id="id11" size="5"/><br><strong>MCA 硕士</strong><input type="checkbox" name="a1">百分比：<input type="text" name="id12" id="id12" size="5"/><br><strong>MBA 工商</strong><input type="checkbox" name="a1">百分比：<input type="text" name="id13" id="id13" size="5"/></tr><tr><th>经验：</th><td><select name="sc1" id="sc1" size="1"><option>0-1 年</option><option>2-3 年</option><option>3-5 年</option><option>5 年以上</option></select></td></tr><th>上传照片：</th><td><input type="file"></td></tr><tr> <td colspan="2"><center><input type="submit" value="提交" onClick="alert('您的申请已提交');"/> &nbsp;&nbsp;<input type="reset" value="重置" onClick="alert('申请未提交');"/></center></td></tr></table> </body></html>
+<html>
+  <head>
+    <title>在线职位注册表单</title>
+  </head>
+  <body>
+    <h1 align="center">
+      印度职位网 TIMESJOBSINDIA.COM
+      <sub>印度最大的招聘网站</sub>
+    </h1>
+
+    <h2 align="center">
+      <u>职位注册表单</u>
+    </h2>
+
+    <form name="form1" id="form">
+      <label>姓：</label>
+      <input type="text" name="id1" id="id1" size="30" maxlength="20">
+      <br>
+
+      <label>名：</label>
+      <input type="text" name="id2" id="id2" size="30" maxlength="20">
+      <br>
+
+      <label>有效邮箱：</label>
+      <input type="text" name="id3" id="id3" size="70" maxlength="50">
+      <br>
+
+      <label>密码：</label>
+      <input type="password" name="id4" id="id4" size="50" maxlength="10">
+      <br>
+
+      <label>电话号码：</label>
+      <input type="text" name="id5" id="id5" size="30" maxlength="11">
+      <br>
+
+      <strong>性别：</strong>
+      <br>
+      <input type="radio" name="gender" id="r1" value="male">男
+      <input type="radio" name="gender" id="r1" value="female">女
+      <br>
+
+      <strong>出生日期：</strong>
+      <label>日期：</label>
+      <input type="text" name="id6" id="id6" size="5" maxlength="2">
+      <br>
+
+      <label>月份：</label>
+      <input type="text" name="id7" id="id7" size="5" maxlength="2">
+      <br>
+
+      <label>年份：</label>
+      <input type="text" name="id8" id="id8" size="5" maxlength="4">
+      <br>
+
+      <strong>学历：</strong>
+      <br>
+
+      初中
+      <input type="checkbox" name="a1">
+      百分比：
+      <input type="text" name="id9" id="id9" size="5">
+      <br>
+
+      高中
+      <input type="checkbox" name="a1">
+      百分比：
+      <input type="text" name="id10" id="id10" size="5">
+      <br>
+
+      毕业
+      <input type="checkbox" name="a1">
+      百分比：
+      <input type="text" name="id11" id="id11" size="5">
+      <br>
+
+      MCA
+      <input type="checkbox" name="a1">
+      百分比：
+      <input type="text" name="id12" id="id12" size="5">
+      <br>
+
+      MBA
+      <input type="checkbox" name="a1">
+      百分比：
+      <input type="text" name="id13" id="id13" size="5">
+      <br>
+
+      <strong>经验：</strong>
+      <select name="sc1" id="sc1" size="1">
+        <option>0-1 年</option>
+        <option>2-3 年</option>
+        <option>3-5 年</option>
+        <option>5 年以上</option>
+      </select>
+      <br><br>
+
+      <center>
+        <input type="button" value="提交" onclick="alert('您的申请已提交');">
+        <input type="button" value="取消" onclick="alert('您的申请未提交');">
+      </center>
+    </form>
+  </body>
+</html>
 ```
 
-输出:![](img/image_rsrcGSJ.jpg)
+输出：![](img/image_rsrcGSH.jpg)
 
-## 6. 显示指定年份 12 个月的 JavaScript 代码。
+## 5. 创建一个演示学生注册表单的网页
 
 ```html
-<html><head><script language="javascript">function day_title(day_name){document.write("<td align=center width=35 bgcolor=lightblue><b>"+day_name+"</b></td>");}function fill_table(month,month_len){day=1;document.write("<table border=1 cellspacing=3 cellpadding=3");document.write("<td colspan=7 align=center bgcolor=red><b>"+month+" "+year+"</b></td><tr>");day_title("日");day_title("一");day_title("二");day_title("三");day_title("四");day_title("五");day_title("六");document.write("</tr>");for(var i=1; i<start_day;i++){document.write("<td>");}for(var i=start_day; i<8;i++){document.write("<td align=center bgcolor=silver>"+day+"</td>");day++;}document.write("</tr>");while(day<=month_len){for(var i=1; i<=7 && day<=month_len;i++){document.write("<td align=center bgcolor=silver>"+day+"</td>");day++;}document.write("</tr>");start_day=i;}document.write("</tr><table><br>");}year=prompt("输入四位年份 ",2016);today=new Date("January 1, "+year);start_day=today.getDay()+1;fill_table("一月", 31);if (year%4==0)fill_table("二月", 29);elsefill_table("二月", 28);fill_table("三月", 31);fill_table("四月", 30);fill_table("五月", 31);fill_table("六月", 30);fill_table("七月", 31);fill_table("八月", 31);fill_table("九月", 30);fill_table("十月", 31);fill_table("十一月", 30);fill_table("十二月", 31);</script></head></html>
+<html>
+  <head>
+    <title>学生注册表单</title>
+  </head>
+  <body bgcolor="#9F9F9F">
+    <h2 align="center">
+      <u>学生注册表单</u>
+    </h2>
+
+    <form action="abc.html" name="f" method="post" autocomplete="on">
+      <table width="200" border="1">
+        <tr>
+          <th>名：</th>
+          <td>
+            <input type="text" name="id1" id="id1" size="30" maxlength="20">
+          </td>
+        </tr>
+        <tr>
+          <th>姓：</th>
+          <td>
+            <input type="text" name="id2" id="id2" size="30" maxlength="20">
+          </td>
+        </tr>
+        <tr>
+          <th>有效邮箱：</th>
+          <td>
+            <input type="text" name="id3" id="id3" size="70" maxlength="50">
+          </td>
+        </tr>
+        <tr>
+          <th>密码：</th>
+          <td>
+            <input type="password" name="id4" id="id4" size="50" maxlength="10">
+          </td>
+        </tr>
+        <tr>
+          <th>电话号码：</th>
+          <td>
+            <input type="text" name="id5" id="id5" size="30" maxlength="11">
+          </td>
+        </tr>
+        <tr>
+          <th>地址：</th>
+          <td>
+            <textarea cols="50" rows="6" name="addr"></textarea>
+          </td>
+        </tr>
+        <tr>
+          <th>性别：</th>
+          <td>
+            <strong>男：</strong>
+            <input type="radio" name="gender" id="r1" value="male">
+            <strong>女：</strong>
+            <input type="radio" name="gender" id="r1" value="female">
+          </td>
+        </tr>
+        <tr>
+          <th>出生日期：</th>
+          <td>
+            <input type="text" name="dob">
+          </td>
+        </tr>
+        <tr>
+          <th>学历：</th>
+          <td>
+            <strong>SSC 中</strong>
+            <input type="checkbox" name="a1">
+            百分比：
+            <input type="text" name="id9" id="id9" size="5">
+            <br>
+
+            <strong>HC 高中</strong>
+            <input type="checkbox" name="a1">
+            百分比：
+            <input type="text" name="id10" id="id10" size="5">
+            <br>
+
+            <strong>BA 本科</strong>
+            <input type="checkbox" name="a1">
+            百分比：
+            <input type="text" name="id11" id="id11" size="5">
+            <br>
+
+            <strong>MCA 硕士</strong>
+            <input type="checkbox" name="a1">
+            百分比：
+            <input type="text" name="id12" id="id12" size="5">
+            <br>
+
+            <strong>MBA 工商</strong>
+            <input type="checkbox" name="a1">
+            百分比：
+            <input type="text" name="id13" id="id13" size="5">
+          </td>
+        </tr>
+        <tr>
+          <th>经验：</th>
+          <td>
+            <select name="sc1" id="sc1" size="1">
+              <option>0-1 年</option>
+              <option>2-3 年</option>
+              <option>3-5 年</option>
+              <option>5 年以上</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <th>上传照片：</th>
+          <td>
+            <input type="file">
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <center>
+              <input type="submit" value="提交" onclick="alert('您的申请已提交');">
+              &nbsp;&nbsp;
+              <input type="reset" value="重置" onclick="alert('申请未提交');">
+            </center>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
 ```
 
-输出:![](img/image_rsrcGSK.jpg)
+输出：![](img/image_rsrcGSJ.jpg)
+
+## 6. 显示指定年份 12 个月的 JavaScript 代码
+
+
+
+```html
+<html>
+  <head>
+    <script language="javascript">
+      function day_title(day_name) {
+        document.write(
+          "<td align=center width=35 bgcolor=lightblue><b>" +
+            day_name +
+            "</b></td>"
+        );
+      }
+
+      function fill_table(month, month_len) {
+        day = 1;
+        document.write("<table border=1 cellspacing=3 cellpadding=3");
+        document.write(
+          "<td colspan=7 align=center bgcolor=red><b>" +
+            month +
+            " " +
+            year +
+            "</b></td><tr>"
+        );
+
+        day_title("日");
+        day_title("一");
+        day_title("二");
+        day_title("三");
+        day_title("四");
+        day_title("五");
+        day_title("六");
+
+        document.write("</tr>");
+
+        for (var i = 1; i < start_day; i++) {
+          document.write("<td>");
+        }
+
+        for (var i = start_day; i < 8; i++) {
+          document.write(
+            "<td align=center bgcolor=silver>" + day + "</td>"
+          );
+          day++;
+        }
+
+        document.write("</tr>");
+
+        while (day <= month_len) {
+          for (var i = 1; i <= 7 && day <= month_len; i++) {
+            document.write(
+              "<td align=center bgcolor=silver>" + day + "</td>"
+            );
+            day++;
+          }
+
+          document.write("</tr>");
+          start_day = i;
+        }
+
+        document.write("</tr><table><br>");
+      }
+
+      year = prompt("输入四位年份 ", 2016);
+      today = new Date("January 1, " + year);
+      start_day = today.getDay() + 1;
+
+      fill_table("一月", 31);
+
+      if (year % 4 == 0) {
+        fill_table("二月", 29);
+      } else {
+        fill_table("二月", 28);
+      }
+
+      fill_table("三月", 31);
+      fill_table("四月", 30);
+      fill_table("五月", 31);
+      fill_table("六月", 30);
+      fill_table("七月", 31);
+      fill_table("八月", 31);
+      fill_table("九月", 30);
+      fill_table("十月", 31);
+      fill_table("十一月", 30);
+      fill_table("十二月", 31);
+    </script>
+  </head>
+</html>
+```
+
+输出: ![](img/image_rsrcGSK.jpg)
 
 一旦输入 2021 并点击 OK 按钮，我们将得到如下所示的 2021 年 1 月到 12 月的日历。
 
 ![](img/image_rsrcGSM.jpg)
 
-## 7. 改变浏览器窗口画布背景色的 JavaScript 代码。
+## 7. 改变浏览器窗口画布背景色的 JavaScript 代码
 
 ```html
-<html><head><title>随机变色</title><script type="text/javascript">function get_random_color() {var color = '#';for (var i = 0; i < 6; i++ ){color += Math.round(Math.random())*6;}document.body.style.background= color;}</script></head><Button onclick="get_random_color()">点击我改变颜色</Button></body></html>
+<html>
+  <head>
+    <title>随机变色</title>
+    <script type="text/javascript">
+      function get_random_color() {
+        var color = "#";
+
+        for (var i = 0; i < 6; i++) {
+          color += Math.round(Math.random()) * 6;
+        }
+
+        document.body.style.background = color;
+      }
+    </script>
+  </head>
+
+  <Button onclick="get_random_color()">点击我改变颜色</Button>
+</body>
+</html>
 ```
 
-输出:![](img/image_rsrcGSN.jpg)
+输出: ![](img/image_rsrcGSN.jpg)
 
-## 8. 用于在线考试的 JavaScript 代码。
+## 8. 用于在线考试的 JavaScript 代码
 
 ```html
-<html><head><title>在线考试</title><script language="javascript">function exam(form){var i=0;if(form.one[2].checked)i=i+1;if(form.three[0].checked)i=i+1;if(form.four[0].checked)i=i+1;if(form.five[1].checked)i=i+1;window.alert("感谢参加在线考试！您的分数是："+i);}</script></head><body bgcolor=silver><form onSubmit="exam(this)"><center><h1><blink>欢迎来到在线考试表单</blink></h1></center><p><h1>1) 哪种是平台无关的语言</h1><input type="radio" name="one" value="c++"><label>c++</label><input type="radio" name="one" value="c"><label>c</label><input type="radio" name="one" value="java"><label>java</label><input type="radio" name="one" value="basic"><label>BASIC</label></p><p><h1>2) Java 中的哪种是类</h1><input type="radio" name="three" value="object"><label>Object</label><input type="radio" name="three" value="math"><label>Math</label><input type="radio" name="three" value="system"><label>System</label><input type="radio" name="three" value="graphic"><label>Graphic</label></p><p><h1>3) 哪个是 Java 包</h1><input type="radio" name="four" value="awt"><label>AWT</label><input type="radio" name="four" value="applet"><label>Applet</label><input type="radio" name="four" value="lang"><label>Lang</label><input type="radio" name="four" value="swing"><label>Swing</label></p><p><h1>4) Java 不支持</h1><input type="radio" name="five" value="inheritance"><label>继承</label><input type="radio" name="five" value="multiple inheritance"><label>多重继承</label><input type="radio" name="five" value="polymorphism"><label>多态</label><input type="radio" name="five" value="encryption"><label>加密</label></p><center><input type="submit" value="提交"><input type="reset" value="重置"></center></p></body></html>
+<html>
+  <head>
+    <title>在线考试</title>
+    <script language="javascript">
+      function exam(form) {
+        var i = 0;
+
+        if (form.one[2].checked) i = i + 1;
+        if (form.three[0].checked) i = i + 1;
+        if (form.four[0].checked) i = i + 1;
+        if (form.five[1].checked) i = i + 1;
+
+        window.alert("感谢参加在线考试！您的分数是：" + i);
+      }
+    </script>
+  </head>
+
+  <body bgcolor="silver">
+    <form onSubmit="exam(this)">
+      <center>
+        <h1><blink>欢迎来到在线考试表单</blink></h1>
+      </center>
+
+      <p>
+        <h1>1) 哪种是平台无关的语言</h1>
+        <input type="radio" name="one" value="c++"><label>c++</label>
+        <input type="radio" name="one" value="c"><label>c</label>
+        <input type="radio" name="one" value="java"><label>java</label>
+        <input type="radio" name="one" value="basic"><label>BASIC</label>
+      </p>
+
+      <p>
+        <h1>2) Java 中的哪种是类</h1>
+        <input type="radio" name="three" value="object"><label>Object</label>
+        <input type="radio" name="three" value="math"><label>Math</label>
+        <input type="radio" name="three" value="system"><label>System</label>
+        <input type="radio" name="three" value="graphic"><label>Graphic</label>
+      </p>
+
+      <p>
+        <h1>3) 哪个是 Java 包</h1>
+        <input type="radio" name="four" value="awt"><label>AWT</label>
+        <input type="radio" name="four" value="applet"><label>Applet</label>
+        <input type="radio" name="four" value="lang"><label>Lang</label>
+        <input type="radio" name="four" value="swing"><label>Swing</label>
+      </p>
+
+      <p>
+        <h1>4) Java 不支持</h1>
+        <input type="radio" name="five" value="inheritance"><label>继承</label>
+        <input type="radio" name="five" value="multiple inheritance"><label>多重继承</label>
+        <input type="radio" name="five" value="polymorphism"><label>多态</label>
+        <input type="radio" name="five" value="encryption"><label>加密</label>
+      </p>
+
+      <center>
+        <input type="submit" value="提交">
+        <input type="reset" value="重置">
+      </center>
+    </form>
+  </body>
+</html>
 ```
 
-输出:![](img/image_rsrcGSP.jpg)
+输出: ![](img/image_rsrcGSP.jpg)
 
-## 9. 创建简单计算器的 JavaScript 代码。
+## 9. 创建简单计算器的 JavaScript 代码
 
-将此文件保存为 `.html` 扩展名，并将下面的代码保存为 `javascriptcode.js`
+将此文件保存为`.html`扩展名，并将下面的代码保存为`javascriptcode.js`。
 
 ```html
-<html><script type=text/javascript src=javascriptcode.js></script><body><table border><tr><td colspan=4><input type=text id=res size=16 onfocus="this.blur();</td></tr><tr><td><input type="button" id=b1 value=0 size=2 onclick="f('0')</td><td><input type="button" id=b2 value=1 size=2 onclick="f('1')</td><td><input type="button" id=b3 value=2 size=2 onclick="f('2')</td><td><input type="button" id=b4 value=+ size=2 onclick="f('+')</td></tr><tr><td><input type="button" id=b5 value=3 size=2 onclick="f('3')</td><td><input type="button" id=b6 value=4 size=2 onclick="f('4')</td><td><input type="button" id=b7 value=5 size=2 onclick="f('5')</td><td><input type="button" id=b8 value=- size=2 onclick="f('-')</td></tr><tr><td><input type="button" id=b9 value=6 size=2 onclick="f('6')</td><td><input type="button" id=b10 value=7 size=2 onclick="f('7')</td><td><input type="button" id=b11 value=8 size=2 onclick="f('8')</td><td><input type="button" id=b12 value=* size=2 onclick="f('*')</td></tr><tr><td><input type="button" id=b13 value=9 size=2 onclick="f('9')</td><td><input type="button" id=b14 value=+/- size=2 onclick="f('--')</td><td><input type="button" id=b15 value='=' size=2 onclick="f('=')</td><td><input type="button" id=b16 value='/' size=2 onclick="f('/')</td></tr><tr><td colspan=4><input type="button" value="清除" size=16 onclick="f('c')"></td></tr></table></body></html>
+<html>
+  <script type="text/javascript" src="javascriptcode.js"></script>
+  <body>
+    <table border>
+      <tr>
+        <td colspan="4">
+          <input type="text" id="res" size="16" onfocus="this.blur();">
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <input type="button" id="b1" value="0" size="2" onclick="f('0')">
+        </td>
+        <td>
+          <input type="button" id="b2" value="1" size="2" onclick="f('1')">
+        </td>
+        <td>
+          <input type="button" id="b3" value="2" size="2" onclick="f('2')">
+        </td>
+        <td>
+          <input type="button" id="b4" value="+" size="2" onclick="f('+')">
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <input type="button" id="b5" value="3" size="2" onclick="f('3')">
+        </td>
+        <td>
+          <input type="button" id="b6" value="4" size="2" onclick="f('4')">
+        </td>
+        <td>
+          <input type="button" id="b7" value="5" size="2" onclick="f('5')">
+        </td>
+        <td>
+          <input type="button" id="b8" value="-" size="2" onclick="f('-')">
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <input type="button" id="b9" value="6" size="2" onclick="f('6')">
+        </td>
+        <td>
+          <input type="button" id="b10" value="7" size="2" onclick="f('7')">
+        </td>
+        <td>
+          <input type="button" id="b11" value="8" size="2" onclick="f('8')">
+        </td>
+        <td>
+          <input type="button" id="b12" value="*" size="2" onclick="f('*')">
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <input type="button" id="b13" value="9" size="2" onclick="f('9')">
+        </td>
+        <td>
+          <input type="button" id="b14" value="+/-" size="2" onclick="f('--')">
+        </td>
+        <td>
+          <input type="button" id="b15" value="=" size="2" onclick="f('=')">
+        </td>
+        <td>
+          <input type="button" id="b16" value="/" size="2" onclick="f('/')">
+        </td>
+      </tr>
+
+      <tr>
+        <td colspan="4">
+          <input type="button" value="清除" size="16" onclick="f('c')">
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
 ```
 
 ```javascript
-function f(d){if(d=='c'){document.getElementById('res').value="";return;}res=document.getElementById('res').value;if(res==0 && d==0)return;if(d=='+' || d=='-' || d=='*' || d=='/'){opr=d;num=parseFloat(res);document.getElementById('res').value=d;return;}if(d=='=''){num1=parseFloat(res);switch(opr){case '+': ans=num+num1; break;case '-': ans=num-num1; break;case '*': ans=num*num1; break;case '/': ans=parseInt(num/num1); break;}document.getElementById('res').value=ans;return;}if(d=='--'){document.getElementById('res').value*=-1;return;}if(!isNaN(document.getElementById('res').value))document.getElementById('res').value+=d;elsocument.getElementById('res').value=d;}
+function f(d) {
+  if (d == "c") {
+    document.getElementById("res").value = "";
+    return;
+  }
+
+  res = document.getElementById("res").value;
+
+  if (res == 0 && d == 0) return;
+
+  if (d == "+" || d == "-" || d == "*" || d == "/") {
+    opr = d;
+    num = parseFloat(res);
+    document.getElementById("res").value = d;
+    return;
+  }
+
+  if (d == "=") {
+    num1 = parseFloat(res);
+
+    switch (opr) {
+      case "+":
+        ans = num + num1;
+        break;
+      case "-":
+        ans = num - num1;
+        break;
+      case "*":
+        ans = num * num1;
+        break;
+      case "/":
+        ans = parseInt(num / num1);
+        break;
+    }
+
+    document.getElementById("res").value = ans;
+    return;
+  }
+
+  if (d == "--") {
+    document.getElementById("res").value *= -1;
+    return;
+  }
+
+  if (!isNaN(document.getElementById("res").value)) {
+    document.getElementById("res").value += d;
+  }
+
+  elsocument.getElementById("res").value = d;
+}
 ```
 
-输出:![](img/image_rsrcGSR.jpg)
+输出: ![](img/image_rsrcGSR.jpg)
 
-## 10. 根据用户选择的范围显示内容的 JavaScript 代码。
+## 10. 根据用户选择的范围显示内容的 JavaScript 代码
 
-将此代码保存为 `.html` 扩展名，并将下面的代码保存为 `javascritptcode2.js`
+将此代码保存为`.html`扩展名，并将下面的代码保存为`javascritptcode2.js`。
 
 ```html
-<html><head><title>选择表格范围</title></head><script type=text/javascript src=javascriptcode2.js></script><body onload=sc()></body></html>
+<html>
+  <head>
+    <title>选择表格范围</title>
+  </head>
+
+  <script type="text/javascript" src="javascriptcode2.js"></script>
+
+  <body onload="sc()"></body>
+</html>
 ```
 
 ```javascript
-function sc(){rng=prompt('输入范围');res=rng.split("-");if(res.length!=2){alert("无效范围");return;}first=parseInt(res[0]);second=parseInt(res[1]);if(first>second){alert("无效范围");return;}str="<table border=2><tr><th>数字</th><th>平方</th><th>立方</th></tr>";for(i=first;i<=second;i++){str+="<tr><td>"+i+"</td><td>"+(i*i)+"</td><td>"+(i*i*i)+"</td></tr>";}document.write(str);}
+function sc() {
+  rng = prompt("输入范围");
+  res = rng.split("-");
+
+  if (res.length != 2) {
+    alert("无效范围");
+    return;
+  }
+
+  first = parseInt(res[0]);
+  second = parseInt(res[1]);
+
+  if (first > second) {
+    alert("无效范围");
+    return;
+  }
+
+  str =
+    "<table border=2><tr><th>数字</th><th>平方</th><th>立方</th></tr>";
+
+  for (i = first; i <= second; i++) {
+    str +=
+      "<tr><td>" +
+      i +
+      "</td><td>" +
+      i * i +
+      "</td><td>" +
+      i * i * i +
+      "</td></tr>";
+  }
+
+  document.write(str);
+}
 ```
 
-输出:![](img/image_rsrcGSS.jpg) ![](img/image_rsrcGST.jpg)
+输出: ![](img/image_rsrcGSS.jpg) ![](img/image_rsrcGST.jpg)
 
-## 11. 反转数字的 JavaScript 代码。
+## 11. 反转数字的 JavaScript 代码
 
-将此文件保存为 `.html` 扩展名，并将下面的代码保存为 `javascriptcode3.js`
+将此文件保存为`.html`扩展名，并将下面的代码保存为`javascriptcode3.js`。
 
 ```html
-<html><head><title>反转数字</title></head><meta charset="UTF-8"><title>演示 JavaScript 函数</title></head><script type=text/javascript src=javascriptcode3.js></script><body><section><h1>反转数字</h1><p>输入数字： <input id=t2></p><input value="反转" onclick=alert(reverse(document.getElementById('t2').value))></section></body>
+<html>
+  <head>
+    <title>反转数字</title>
+  </head>
+
+  <meta charset="UTF-8">
+  <title>演示 JavaScript 函数</title>
+  </head>
+
+  <script type="text/javascript" src="javascriptcode3.js"></script>
+
+  <body>
+    <section>
+      <h1>反转数字</h1>
+      <p>
+        输入数字：
+        <input id="t2">
+      </p>
+      <input
+        value="反转"
+        onclick="alert(reverse(document.getElementById('t2').value))"
+      >
+    </section>
+  </body>
+</html>
 ```
 
 ```javascript
-function reverse(num){rnum=0;temp=num;if(isNaN(num)){return "无效数字";}while(num!=0){rnum *=10;rnum+= num % 10;num -= num % 10;num = Math.floor(num/10);}return "+ temp + " 反转后是 " + rnum;}
+function reverse(num) {
+  rnum = 0;
+  temp = num;
+
+  if (isNaN(num)) {
+    return "无效数字";
+  }
+
+  while (num != 0) {
+    rnum *= 10;
+    rnum += num % 10;
+    num -= num % 10;
+    num = Math.floor(num / 10);
+  }
+
+  return "+ temp + " 反转后是 " + rnum;
+}
 ```
 
-输出:![](img/image_rsrcSU.jpg)
+输出: ![](img/image_rsrcSU.jpg)
 
-## 12. 用单词显示数字的 JavaScript 代码。
+## 12. 用单词显示数字的 JavaScript 代码
 
 ```javascript
-<script language="javascript">function convert_number_to_words(number){hyphen = '-';conjunction = ' ';separator = ', ';dictionary = {0 : '零',1 : '一',2 : '二',3 : '三',4 : '四',5 : '五',6 : '六',7 : '七',8 : '八',9 : '九',10 : '十',11 : '十一',12 : '十二',13 : '十三',14 : '十四',15 : '十五',16 : '十六',17 : '十七',18 : '十八',19 : '十九',20 : '二十',30 : '三十',40 : '四十',50 : '五十',60 : '六十',70 : '七十',80 : '八十',90 : '九十',100 : '百'};if (number < 0 || number > 999){alert("请输入 0 到 999 之间的数字");return "";}switch (true){case (number < 21):string = dictionary[number];break;case (number < 100):tens = parseInt(number / 10) * 10;units = number % 10;string = dictionary[tens];if (units) {string += hyphen + dictionary[units];}break;case (number < 1000):hundreds = parseInt(number / 100);remainder = number % 100;string = dictionary[hundreds] + ' ' + dictionary[100];if (remainder) {string += conjunction + convert_number_to_words(remainder);}break;default:break;}return string;}a=prompt("输入数字");num=parseInt(a);document.write(convert_number_to_words(num));</script>
 ```
 
-注意：将此代码保存为 `.html` 扩展名
 
-输出:![](img/image_rsrcGSV.jpg) ![](img/image_rsrcGSW.jpg)
-
-## 13. 显示乘表的 JavaScript 代码。
 
 ```html
-<html><head><title> 乘法表 </title></head><body><script type="text/javascript"><!--var n=prompt("输入正整数: ", ");if(!isNaN(n)) {var table="";var number="";for(i=1;i<=10;i++) {number = n * i;table += n + " * " + i + " = " + number + "\n";}alert(table);}else {alert("请输入正整数");n=prompt("输入正整数: ", ");}document.write(n+" 表格值通过 alert 显示..<br />");// --></script></body></html>
+<script language="javascript">
+function convert_number_to_words(number) {
+    hyphen = '-';
+    conjunction = ' ';
+    separator = ', ';
+    dictionary = {
+        0: '零',
+        1: '一',
+        2: '二',
+        3: '三',
+        4: '四',
+        5: '五',
+        6: '六',
+        7: '七',
+        8: '八',
+        9: '九',
+        10: '十',
+        11: '十一',
+        12: '十二',
+        13: '十三',
+        14: '十四',
+        15: '十五',
+        16: '十六',
+        17: '十七',
+        18: '十八',
+        19: '十九',
+        20: '二十',
+        30: '三十',
+        40: '四十',
+        50: '五十',
+        60: '六十',
+        70: '七十',
+        80: '八十',
+        90: '九十',
+        100: '百'
+    };
+
+    if (number < 0 || number > 999) {
+        alert("请输入 0 到 999 之间的数字");
+        return "";
+    }
+
+    switch (true) {
+        case (number < 21):
+            string = dictionary[number];
+            break;
+        case (number < 100):
+            tens = parseInt(number / 10) * 10;
+            units = number % 10;
+            string = dictionary[tens];
+
+            if (units) {
+                string += hyphen + dictionary[units];
+            }
+            break;
+        case (number < 1000):
+            hundreds = parseInt(number / 100);
+            remainder = number % 100;
+            string = dictionary[hundreds] + ' ' + dictionary[100];
+
+            if (remainder) {
+                string += conjunction + convert_number_to_words(remainder);
+            }
+            break;
+        default:
+            break;
+    }
+
+    return string;
+}
+
+a = prompt("输入数字");
+num = parseInt(a);
+document.write(convert_number_to_words(num));
+</script>
 ```
 
-输出:![](img/image_rsrcGSX.jpg) ![](img/image_rsrcGSY.jpg)
+注意：将此代码保存为`.html`扩展名。
 
-## 14. 计算数字阶乘的 JavaScript 代码。
+输出：![](img/image_rsrcGSV.jpg) ![](img/image_rsrcGSW.jpg)
+
+## 13. 显示乘表的 JavaScript 代码
 
 ```html
-<html>  <head><title>数字的阶乘</title></head>  <body>  输入数字: <input id = "num">  <br><br>  <button onclick = "fact()"> 阶乘 </button>  <p id = "sample"></p>  <script>  function fact(){  var i, num, fact;  fact = 1;  num = document.getElementById("num").value;  for(i = 1; i <= num; i++)   {  fact = fact * i;  }  i=i-1;document.getElementById("sample").innerHTML = "数字 " + i + " 的阶乘是: " + fact ;  }  </script> </body></html>
+<html>
+<head>
+    <title>乘法表</title>
+</head>
+<body>
+<script type="text/javascript">
+<!--
+var n = prompt("输入正整数: ", ");
+if (!isNaN(n)) {
+    var table = "";
+    var number = "";
+
+    for (i = 1; i <= 10; i++) {
+        number = n * i;
+        table += n + " * " + i + " = " + number + "\n";
+    }
+
+    alert(table);
+} else {
+    alert("请输入正整数");
+    n = prompt("输入正整数: ", ");
+}
+
+document.write(n + " 表格值通过 alert 显示..<br />");
+// -->
+</script>
+</body>
+</html>
 ```
 
-输出:![](img/image_rsrcGSZ.jpg)
+输出：![](img/image_rsrcGSX.jpg) ![](img/image_rsrcGSY.jpg)
 
+## 14. 计算数字阶乘的 JavaScript 代码
+
+```html
+<html>
+<head>
+    <title>数字的阶乘</title>
+</head>
+<body>
+    输入数字: <input id="num">
+    <br><br>
+    <button onclick="fact()">阶乘</button>
+    <p id="sample"></p>
+
+    <script>
+    function fact() {
+        var i, num, fact;
+        fact = 1;
+        num = document.getElementById("num").value;
+
+        for (i = 1; i <= num; i++) {
+            fact = fact * i;
+        }
+
+        i = i - 1;
+        document.getElementById("sample").innerHTML =
+            "数字 " + i + " 的阶乘是: " + fact;
+    }
+    </script>
+</body>
+</html>
+```
+
+输出：![](img/image_rsrcGSZ.jpg)

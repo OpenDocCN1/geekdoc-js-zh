@@ -1,12 +1,8 @@
+
 # JavaScript 基础：循步指南
 
-
-
-![](img/00001.jpeg)
-
-
-
 Steven Bright 的其他作品：
+
 - CorelDraw 教程：CorelDRAW 基础
 - 工具与功能列表：工程工具手册
 - Microsoft Word 基础：循序渐指南
@@ -18,7 +14,6 @@ Steven Bright 的其他作品：
 ## 如何使用本书
 
 本书是关于 JavaScript 用途（主要用于网站开发）的文档。请遵循循序渐指南以充分利用本书的价值。请逐一章节进行阅读，当你读到最后一页时，你会感到非常满意。你需要一个如 `Dreamweaver` 的网页制作软件或如 `Notepad++` 的网页编辑软件，以及如 `Google chrome` 和 `Mozilla Firefox` 等网页浏览器来预览你的作品。
-
 
 ## 引言
 
@@ -34,7 +29,8 @@ JavaScript 是一种脚本语言。它是一种用于网页、服务器、个人
 
 尽管 JavaScript 和 Java 之间有许多明显的外部相似之处，包括语言名称、语法和各自的标准库，但它们是两种不同的语言，在设计上存在巨大差异。
 
-请注意以下几：
+请注意以下几点：
+
 - JavaScript 代码是区分大小写的。
 - 单词之间的空格和制表符会被忽略。
 - JavaScript 语句以分号（`;`）结束。
@@ -59,6 +55,7 @@ document.write(myDate)
 ```
 
 ### 解析
+
 - `script` 标签（即 `<script></script>`）告诉浏览器在它们之间有一个脚本。
 - `<!-- - -->`：这些是 HTML 注释标签，但在 JavaScript 中，它们被用于告诉不支持 JavaScript 或禁用了 JavaScript 的浏览器忽略之间的代码。这防止了代码被输出到用户的浏览器中。
 - `Document.write`：这是向用户浏览器中写入实际文本的部分。
@@ -67,6 +64,7 @@ document.write(myDate)
 ## JavaScript 在网页开发中的用途
 
 JavaScript 在网页开发中的基本用途是：
+
 1. JavaScript 为 HTML 设计师提供了一个编程工具。
 2. JavaScript 可以在 HTML 页面中放入动态文本。
 3. JavaScript 可以动态创建页面（如日期或其他数据），它可以生成专为用户量身定制的页面。
@@ -81,7 +79,9 @@ JavaScript 在网页开发中的基本用途是：
 JavaScript 有两种类型：内部脚本和外部脚本。
 
 ### 内联 JavaScript
+
 示例：
+
 ```html
 <script>
 alert ("WELCOME!");
@@ -89,19 +89,25 @@ alert ("WELCOME!");
 ```
 
 ### 外部 JavaScript
+
 你使用 `<script>` 标签的 `SRC` 属性从外部文件调用 JavaScript 代码。如果你有很多代码或想从多个页面运行外部文件，这将非常有用，因为任何数量的页面都可以调用同一个外部文件。
 
 下面的脚本保存为 `miscript.js` 文件：
+
 ```javascript
 alert("WELCOME!");
 ```
+
 然后通过下面的语法放在 `head` 部分闭合 `head` 标签之前调用它：
+
 ```html
 <script src="miscript.js"></script>
 ```
 
 ### 独立 JavaScript
+
 此脚本在页面加载时加载。下方给出了良好的示例：
+
 ```html
 <script>
 alert('Welcome!')
@@ -111,6 +117,7 @@ alert('Welcome!')
 ## 你可以在哪里放置 JavaScript
 
 JavaScript 可以存放在文档的以下部分：
+
 1. 文档的 `head`
 2. 文档的 `body`
 3. 作为外部 `.js` 文件
@@ -120,38 +127,41 @@ JavaScript 可以存放在文档的以下部分：
 JavaScript 可以通过下述的不同方式“显示”数据：我将使用示例来展示使用这些不同方法显示 JavaScript 的可能性。
 
 使用 `window.alert()` 写入警报框：
+
 ```html
 <script>
 window.alert( 24+ 44 );
 </script>
 ```
+
 注意，当测试上述脚本时，会弹出一个警报窗口并显示 24+44 的结果。
 
 使用 `document.write()` 写入 HTML 输出：
+
 ```html
 <button onclick="document.write(24 + 44)"></button>
 ```
+
 注意当点击按钮时，会弹出一个显示结果的文档。
 
 使用 `console.log()` 写入浏览器控制台：
+
 ```html
 <script>
 console.log( 24 + 44);
 </script>
 ```
+
 你需要在浏览器中激活 JavaScript 控制台（例如在 Google Chrome 中使用 F12），然后输入上面的脚本，按回车键，它就会给你结果。
 
 使用 `innerHTML` 写入 HTML 元素：
+
 ```html
 <p id="demo"></p>
 <script>
 document.getElementById("demo").innerHTML = 24 + 44;
 </script>
 ```
-
-
-
-
 
 注意：你设置了一个 `id` 属性，脚本通过该 ID 获取结果。
 
@@ -202,7 +212,7 @@ if ("r==true") {
 
 ### 输入框 (Prompt Box)
 
-用于需要用户在进入页面前输入值的情况。当输入框弹出时，用户必须输入值并点击 `OK` 或 `CANCEL`才能继续。
+用于需要用户在进入页面前输入值的情况。当输入框弹出时，用户必须输入值并点击 `OK` 或 `CANCEL` 才能继续。
 
 示例：
 
@@ -214,7 +224,7 @@ prompt("BUY", "YES");
 
 ### 弹出框换行 (Popup Box Line Break)
 
-用于在弹出框内显示换行。这是通过在值之间插入反斜杠后跟字符 `n` 实现的
+用于在弹出框内显示换行。这是通过在值之间插入反斜杠后跟字符 `n` 实现的。
 
 示例：
 
@@ -246,6 +256,7 @@ function time(){
 time()
 </script>
 ```
+
 点！
 
 ### 日期和时间 (Date and Time)
@@ -363,9 +374,13 @@ function color(background, foreground, new_link, visited_link, active_link){
 ```
 
 这是普通文本。<br>
+
 <a href="Page2.htm">我还没有访问过 Page 2。</a><br>
+
 <a href="Page3.htm">我已经访问过了</a><br>
+
 <a href="Page4.htm">点击这里</a><br>
+
 <a href="Page5.htm">color('orange','green','blue')">更改颜色</a>
 
 ## 重复执行 (REPEATED PERFORMANCE)
@@ -453,9 +468,6 @@ function newPage() {
 </SCRIPT>
 ```
 
-
-
-
 为了允许用户创建新页面，下面的链接调用了 `head` 部分中的 `newPage` 函数：
 
 <A HREF="JavaScript:newPage()">创建页面!</A>
@@ -477,7 +489,7 @@ function openWin() {
 
 ## 事件对象 (EVENT OBJECT)
 
-### 文对象 (Document Object)
+### 文档对象 (Document Object)
 
 使用 `getElementById()` 或 `getElementsByName()`。
 
@@ -507,13 +519,18 @@ function getElements() {
 </script>
 ```
 
-为了允许用户通过 ID 获取元素，下面的链接调用了 `head` 部分中的 `getElementById` 函数：：
+为了允许用户通过 ID 获取元素，下面的链接调用了 `head` 部分中的 `getElementById` 函数：
 
 <input name="myInput" type="text" size="10"><br />
+
 <input name="myInput" type="text" size="10"><br />
+
 <input name="myInput" type="text" size="10"><br />
+
 <input name="myInput" type="text" size="10"><br />
+
 <input name="myInput" type="text" size="10"><br />
+
 <input name="myInput" type="text" size="10"><br />
 
 ### 事件对象：光标的坐标是多少？
@@ -531,7 +548,9 @@ function show_coords(event) {
 为了允许用户在页面的任何地方获取光标坐标，下面的链接调用了 `head` 部分中的 `show_coords` 函数：
 
 <body onmousedown="show_coords(event)">
+
 <p>在文档中点击。弹出框将显示光标的 x 和 y 坐标。</p>
+
 </body>
 
 ### 事件对象：按下按键的 Unicode 是什么？
@@ -569,10 +588,15 @@ function whichElement(e) {
 点击的元素将通过下面的代码获取，该代码调用了 `head` 部分中的 `whichElement` 函数：
 
 <body onmousedown="whichElement(event)">
+
 <p>在文档中某处点击。弹出框将显示你点击的元素的标签名称。</p>
+
 <h3>这是一个标题</h3>
+
 <p>这是一个段落</p>
+
 <img border="0" src="ball16.gif" width="29" height="28" alt="Ball">
+
 </body>
 
 ## 鼠标悬停 (IMAGE ROLLVER)
@@ -580,8 +604,11 @@ function whichElement(e) {
 当用户将鼠标悬停在原始图片上时，会更改图片。
 
 <A HREF="URL"
+
 onMouseOver="document.hot.src='images/BUTTON 4.jpg'"
+
 onMouseOut="document.hot.src='images/BUTTON 5.jpg'">
+
 <IMG name="hot" src="hot2.gir"> </A>
 
 ## JavaScript 变量 (JAV VARIABLE)
@@ -593,6 +620,7 @@ JavaScript 变量是存储数据值的容器。这些变量必须像下面所示
 ### 示例
 
 1. 声明变量：
+
 ```javascript
 var s = 9;
 var w = 39;
@@ -602,17 +630,21 @@ var pi = 3.14;
 ```
 
 2. `var m = 9;`
+
 ```javascript
 var n = 23 ;
 var p = m + n;
 ```
+
 即 `p = 9+23 = 32`
 
 3. `var m = 12;`
+
 ```javascript
 var n = 40 ;
 var p = m - n;
 ```
+
 即 `p = 12-40 = -28`
 
 注意：`m` 存储值 `9`，`n` 存储值 `23`，`p` 存储值 `32`。
@@ -633,7 +665,7 @@ var p = m - n;
 
 这些运算符用于对数字（无论是字面量还是变量）进行算术。以下是各种 JavaScript 算术运算符及其功能：
 
-| 运算符 |  |
+| 运算符 | 说明 |
 | :--- | :--- |
 | `+` | 加法 |
 | `-` | 减法 |
@@ -647,7 +679,7 @@ var p = m - n;
 
 这些运算符将值赋值给 JavaScript 变量。
 
-| 运算符及其用途 |
+| 运算符及其用途 | 说明 |
 | :--- | :--- |
 | `=` | `x = y` 等于 `x = y` |
 | `+=` | `x += y` 等于 `x = x + y` |
@@ -661,9 +693,11 @@ var p = m - n;
 这涉及使用 `+` 运算符（拼接）字符串。
 
 示例：
+
 ```javascript
 txt1 = "The room" + "is hot";
 ```
+
 `txt1` 的结果将是 is hot
 
 ## 添加字符串和数字
@@ -671,9 +705,11 @@ txt1 = "The room" + "is hot";
 记住，两个两个数字将返回和，但将一个数字和一个字符串将返回一个字符串：
 
 示例：
+
 ```javascript
 w = "steven" + 2006;
 ```
+
 `w` 的结果将是 steven2006
 
 ## JavaScript 布尔值 (JAVASCRIPT BOOLEANS)
@@ -681,6 +717,7 @@ w = "steven" + 2006;
 JavaScript 布尔表示两个值之一：即 `true` 或 `false`。这意味着 JavaScript 布尔值是真或假。
 
 示例：
+
 - `Boolean(57>34)` // 返回 true
 - `Boolean(45 > 78)` // 返回 false
 
@@ -689,6 +726,7 @@ JavaScript 布尔表示两个值之一：即 `true` 或 `false`。这意味着 J
 在这种情况下，所有具有“真实”值的都是真，而所有没有“真实”值的都是假。
 
 示例：
+
 1. `var y = 0; Boolean(y);` // 返回 false
 2. `var y = null; Boolean(y);` // 返回 false
 3. `var y = false; Boolean(y);` // 返回 false
@@ -698,49 +736,61 @@ JavaScript 布尔表示两个值之一：即 `true` 或 `false`。这意味着 J
 JavaScript Math 对象允许你对数字执行各种数学任务。
 
 ### Math.round()
+
 这会将数字舍入到最接近的整数：
 
 示例：
+
 ```javascript
 Math.round(467.9); // 返回 468
 ```
 
 ### Math.min()
+
 `Math.min()` 用于找到一组参数中的最小值：
 
 示例：
+
 ```javascript
 Math.min(7, 180, 60, 32, 0, -250); // 返回 -250
 ```
 
 ### Math.max()
+
 `Math.max()` 用于找到一组参数中的最大值：
 
 示例：
+
 ```javascript
 Math.max(7, 180, 60, 32, 0, -250); // 返回 180
 ```
 
 ### Math.random()
+
 这返回一个 0（包含）到 1（不包含）之间的随机数：
 
 示例：
+
 ```javascript
 Math.random(); // 返回一个随机数
 ```
 
 ### Math.ceil()
+
 这会将数字向上舍入到最近的整数：
 
 示例：
+
 ```javascript
 Math.ceil(37.3); // 返回 37
 ```
 
 ### Math.floor()
+
 这会将数字向下舍入到最近的整数：
 
 示例：
+
 ```javascript
 Math.floor(35.9); // 返回 35
 ```
@@ -765,14 +815,8 @@ Math.floor(35.9); // 返回 35
 以下脚本语言也基于 JavaScript：
 
 - Microsoft 的 Active Scripting 技术支持 `JScript` 作为脚本语言。
-
-
-
-
-
-Qt C++ 工具包包含一个用于解释 JavaScript 的 QtScript 模块，类似于 Java 的 `javax.script` 包。
-
-Java 编程语言在第 6 版本中引入了 `javax.script` 包，其中包含一个基于 Mozilla Rhino 的 JavaScript 实现。
+- Qt C++ 工具包包含一个用于解释 JavaScript 的 QtScript 模块，类似于 Java 的 `javax.script` 包。
+- Java 编程语言在第 6 版本中引入了 `javax.script` 包，其中包含一个基于 Mozilla Rhino 的 JavaScript 实现。
 
 ## 应用平台
 
@@ -791,6 +835,7 @@ JavaScript 作为一种脚本语言，主要用于 Web、Web 应用程序以及�
 谢谢！
 
 Steven Bright
+
 作者
 
 ## 关于作者
@@ -812,7 +857,7 @@ Amazon 作者页面：[`amazon.com/author/stevenbright`](http://amazon.com/autho
 Facebook: [`www.facebook.com/steven.bright.9022`](http://www.facebook.com/steven.bright.9022)
 
 博客：
+
 - [`ebookstrati.blogspot.com`](http://ebookstrati.blogspot.com)
 - [`computerskillsworld.blogspot.com`](http://computerskillsworld.blogspot.com)
 - [`hackingthroughsuccess.blogspot.com`](http://hackingthroughsuccess.blogspot.com)
-

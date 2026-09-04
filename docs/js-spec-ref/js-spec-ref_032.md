@@ -1,32 +1,5 @@
-# 5.1 Node 节点
 
-*   DOM 的概念
-*   节点的概念
-*   Node 节点的属性
-    *   nodeName，nodeType
-    *   ownerDocument，nextSibling，previousSibling，parentNode，parentElement
-    *   textContent，nodeValue
-    *   childNodes，firstNode，lastChild
-    *   baseURI
-    *   Node 节点的方法
-        *   appendChild()，hasChildNodes()
-        *   cloneNode()，insertBefore()，removeChild()，replaceChild()
-        *   contains()，compareDocumentPosition()，isEqualNode()
-        *   normalize()
-    *   NodeList 接口，HTMLCollection 接口
-        *   NodeList 接口
-        *   HTMLCollection 接口
-    *   ParentNode 接口，ChildNode 接口
-        *   ParentNode 接口
-        *   ChildNode 接口
-    *   html 元素
-        *   dataset 属性
-        *   tabindex 属性
-        *   页面位置相关属性
-        *   style 属性
-        *   Element 对象的方法
-        *   table 元素
-    *   参考链接
+# 5.1 Node 节点
 
 ## DOM 的概念
 
@@ -104,15 +77,15 @@ document 对象本身的 ownerDocument 属性，返回 null。
 
 （2）nextSibling
 
-nextsibling 属性返回紧跟在当前节点后面的第一个同级节点。如果当前节点后面没有同级节点，则返回 null。注意，该属性还包括文本节点和评论节点。因此如果当前节点后面有空格，该属性会返回一个文本节点，内容为空格。
+nextSibling 属性返回紧跟在当前节点后面的第一个同级节点。如果当前节点后面没有同级节点，则返回 null。注意，该属性还包括文本节点和评论节点。因此如果当前节点后面有空格，该属性会返回一个文本节点，内容为空格。
 
 ```js
-var el = document.getelementbyid('div-01').firstchild;
+var el = document.getElementById('div-01').firstChild;
 var i = 1;
 
 while (el) {
-  console.log(i + '. ' + el.nodename);
-  el = el.nextsibling;
+  console.log(i + '. ' + el.nodeName);
+  el = el.nextSibling;
   i++;
 }
 ```
@@ -121,21 +94,21 @@ while (el) {
 
 （3）previousSibling
 
-previoussibling 属性返回当前节点前面的、距离最近的一个同级节点。如果当前节点前面没有同级节点，则返回 null。
+previousSibling 属性返回当前节点前面的、距离最近的一个同级节点。如果当前节点前面没有同级节点，则返回 null。
 
 ```js
 // html 代码如下
 // <a><b1 id="b1"/><b2 id="b2"/></a>
 
-document.getelementbyid("b1").previoussibling // null
-document.getelementbyid("b2").previoussibling.id // "b1"
+document.getElementById("b1").previousSibling // null
+document.getElementById("b2").previousSibling.id // "b1"
 ```
 
-对于当前节点前面有空格，则 previoussibling 属性会返回一个内容为空格的文本节点。
+对于当前节点前面有空格，则 previousSibling 属性会返回一个内容为空格的文本节点。
 
 （4）parentNode
 
-parentNode 属性返回当前节点的父节点。对于一个节点来说，它的父节点只可能是三种类型：element 节点、document 节点和 documentfragment 节点。
+parentNode 属性返回当前节点的父节点。对于一个节点来说，它的父节点只可能是三种类型：element 节点、document 节点和 documentFragment 节点。
 
 下面代码是如何从父节点移除指定节点。
 
@@ -145,7 +118,7 @@ if (node.parentNode) {
 }
 ```
 
-对于 document 节点和 documentfragment 节点，它们的父节点都是 null。另外，对于那些生成后还没插入 DOM 树的节点，父节点也是 null。
+对于 document 节点和 documentFragment 节点，它们的父节点都是 null。另外，对于那些生成后还没插入 DOM 树的节点，父节点也是 null。
 
 （5）parentElement
 
@@ -193,11 +166,11 @@ document 节点和 doctype 节点的 textContent 属性为 null。如果要读�
 
 在 IE 浏览器，所有 Element 节点都有一个 innerText 属性。它与 textContent 属性基本相同，但是有几点区别。
 
-*   innerText 受 CSS 影响，textcontent 不受。比如，如果 CSS 规则隐藏（hidden）了某段文本，innerText 就不会返回这段文本，textcontent 则照样返回。
+*   innerText 受 CSS 影响，textContent 不受。比如，如果 CSS 规则隐藏（hidden）了某段文本，innerText 就不会返回这段文本，textContent 则照样返回。
 
-*   innerText 返回的文本，会过滤掉空格、换行和回车键，textcontent 则不会。
+*   innerText 返回的文本，会过滤掉空格、换行和回车键，textContent 则不会。
 
-*   innerText 属性不是 DOM 标准的一部分，Firefox 浏览器甚至没有部署这个属性，而 textcontent 是 DOM 标准的一部分。
+*   innerText 属性不是 DOM 标准的一部分，Firefox 浏览器甚至没有部署这个属性，而 textContent 是 DOM 标准的一部分。
 
 （2）nodeValue
 
@@ -205,7 +178,7 @@ nodeValue 属性返回或设置当前节点的值，格式为字符串。但是�
 
 因此，nodeValue 属性一般只用于 Text 节点。对于那些返回 null 的节点，设置 nodeValue 属性是无效的。
 
-### childNodes，firstNode，lastChild
+### childNodes，firstChild，lastChild
 
 以下属性返回当前节点的子节点。
 
@@ -217,9 +190,9 @@ childNodes 属性返回一个 NodeList 集合，成员包括当前节点的所�
 var ulElementChildNodes = document.querySelector('ul').childNodes;
 ```
 
-（2）firstNode
+（2）firstChild
 
-firstNode 属性返回当前节点的第一个子节点，如果当前节点没有子节点，则返回 null。注意，除了 HTML 元素子节点，该属性还包括文本节点和评论节点。
+firstChild 属性返回当前节点的第一个子节点，如果当前节点没有子节点，则返回 null。注意，除了 HTML 元素子节点，该属性还包括文本节点和评论节点。
 
 （3）lastChild
 
@@ -231,7 +204,7 @@ baseURI 属性返回一个字符串，由当前网页的协议、域名和所在
 
 通常情况下，该属性由当前网址的 URL（即 window.location 属性）决定，但是可以使用 HTML 的标签，改变该属性的值。
 
-```js
+```html
 <base href="http://www.example.com/page.html">
 <base target="_blank" href="http://www.example.com/page.html">
 ```
@@ -260,8 +233,8 @@ hasChildNodes 方法返回一个布尔值，表示当前节点是否有子节点
 ```js
 var foo = document.getElementById("foo");
 
-if ( foo.hasChildNodes() ) {
-  foo.removeChild( foo.childNodes[0] );
+if (foo.hasChildNodes()) {
+  foo.removeChild(foo.childNodes[0]);
 }
 ```
 
@@ -312,7 +285,7 @@ var cloneUL = document.querySelector('ul').cloneNode(true);
 
 （2）insertBefore()
 
-insertBefore 方法用于将某个节点插入当前节点的指定位置。它接受两个参数，第一个参数是所要插入的节点，第二个参数是当前节点的一个子节点，新的节点将插在这个节点的前面。该方法返回被插入的新节点。
+insertBefore 方法用于将某个节点插入当前节点的指位置。它接受两个参数，第一个参数是所要插入的节点，第二个参数是当前节点的一个子节点，新的节点将插在这个节点的前面。该方法返回被插入的新节点。
 
 ```js
 var text1 = document.createTextNode('1');
@@ -320,7 +293,7 @@ var li = document.createElement('li');
 li.appendChild(text1);
 
 var ul = document.querySelector('ul');
-ul.insertBefore(li,ul.firstChild);
+ul.insertBefore(li, ul.firstChild);
 ```
 
 上面代码在 ul 节点的最前面，插入一个新建的 li 节点。
@@ -379,7 +352,7 @@ replacedNode = parentNode.replaceChild(newChild, oldChild);
 var divA = document.getElementById('A');
 var newSpan = document.createElement('span');
 newSpan.textContent = 'Hello World!';
-divA.parentNode.replaceChild(newSpan,divA);
+divA.parentNode.replaceChild(newSpan, divA);
 ```
 
 上面代码是如何替换指定节点。
@@ -433,7 +406,7 @@ x.compareDocumentPosition(y) // 20
 y.compareDocumentPosition(x) // 10
 ```
 
-上面代码中，节点 x 包含节点 y，而且节点 y 在节点 x 的后面，所以第一个 compareDocumentPosition 方法返回 20（010100），第二个 compareDocumentPosition 方法返回 10（0010010）。
+上面代码中，节点 x 包含节点 y，而且节点 y 在节点 x 的后面，所以第一个 compareDocumentPosition 方法返回 20（010100），第二个 compareDocumentPosition 方法返回 10（001010）。
 
 由于 compareDocumentPosition 返回值的含义，定义在每一个比特位上，所以如果要检查某一种特定的含义，就需要使用比特位运算符。
 
@@ -474,7 +447,7 @@ targetEl.isEqualNode(firstDiv)
 
 ### normalize()
 
-normailize 方法用于清理当前节点内部的所有 Text 节点。它会去除空的文本节点，并且将毗邻的文本节点合并成一个。
+normalize 方法用于清理当前节点内部的所有 Text 节点。它会去除空的文本节点，并且将毗邻的文本节点合并成一个。
 
 ```js
 var wrapper = document.createElement("div");
@@ -582,7 +555,7 @@ nodeItem = nodeList[index]
 
 ### HTMLCollection 接口
 
-HTMLCollection 接口与 NodeList 接口类似，也是节点的集合，但是集合成员都是 Element 节点。该接口都是动态集合，节点的变化会实时反映在集合中。document.links、docuement.forms、document.images 等属性，返回的都是 HTMLCollection 接口对象。
+HTMLCollection 接口与 NodeList 接口类似，也是节点的集合，但是集合成员都是 Element 节点。该接口都是动态集合，节点的变化会实时反映在集合中。document.links、document.forms、document.images 等属性，返回的都是 HTMLCollection 接口对象。
 
 部署了该接口的对象，具有 length 属性和数字索引，因此是一个类似于数组的对象。
 
@@ -632,7 +605,7 @@ if (el.children.length) {
 
 （2）firstElementChild
 
-firstChild 属性返回当前节点的第一个 Element 子节点，如果不存在任何 Element 子节点，则返回 null。
+firstElementChild 属性返回当前节点的第一个 Element 子节点，如果不存在任何 Element 子节点，则返回 null。
 
 ```js
 document.firstElementChild.nodeName
@@ -702,7 +675,7 @@ dataset 属性用于操作 HTML 标签元素的 data-*属性。目前，Firefox�
 
 假设有如下的网页代码。
 
-```js
+```html
 <div id="myDiv" data-id="myId"></div>
 ```
 
@@ -751,7 +724,9 @@ b1.tabIndex = 1;
 这三个属性提供 Element 对象在页面上的位置。
 
 *   offsetParent：当前 HTML 元素的最靠近的、并且 CSS 的 position 属性不等于 static 的父元素。
+
 *   offsetTop：当前 HTML 元素左上角相对于 offsetParent 的垂直位移。
+
 *   offsetLeft：当前 HTML 元素左上角相对于 offsetParent 的水平位移。
 
 如果 Element 对象的父对象都没有将 position 属性设置为非 static 的值（比如 absolute 或 relative），则 offsetParent 属性指向 body 元素。另外，计算 offsetTop 和 offsetLeft 的时候，是从边框的左上角开始计算，即 Element 对象的 border 宽度不计入 offsetTop 和 offsetLeft。
@@ -767,8 +742,11 @@ style 属性用来读写页面元素的行内 CSS 属性，详见本章《CSS �
 Element 对象也部署了 document 对象的 4 个选择子元素的方法，而且用法完全一样。
 
 *   querySelector 方法
+
 *   querySelectorAll 方法
+
 *   getElementsByTagName 方法
+
 *   getElementsByClassName 方法
 
 上面四个方法只用于选择 Element 对象的子节点。因此，可以采用链式写法来选择子节点。
@@ -784,16 +762,19 @@ document.getElementById('header').getElementsByClassName('a')
 该方法用于选择在指定坐标的最上层的 Element 对象。
 
 ```js
-document.elementFromPoint(50,50)
+document.elementFromPoint(50, 50)
 ```
 
-上面代码了选中在(50,50)这个坐标的最上层的那个 HTML 元素。
+上面代码选中在(50,50)这个坐标的最上层的那个 HTML 元素。
 
 （3）HTML 元素的属性相关方法
 
 *   hasAttribute()：返回一个布尔值，表示 Element 对象是否有该属性。
+
 *   getAttribute()
+
 *   setAttribute()
+
 *   removeAttribute()
 
 （4）matchesSelector 方法
@@ -819,12 +800,19 @@ document.getElementById('my-span').focus();
 表格有一些特殊的 DOM 操作方法。
 
 *   insertRow()：在指定位置插入一个新行（tr）。
+
 *   deleteRow()：在指定位置删除一行（tr）。
+
 *   insertCell()：在指定位置插入一个单元格（td）。
+
 *   deleteCell()：在指定位置删除一个单元格（td）。
+
 *   createCaption()：插入标题。
+
 *   deleteCaption()：删除标题。
+
 *   createTHead()：插入表头。
+
 *   deleteTHead()：删除表头。
 
 下面是使用 JavaScript 生成表格的一个例子。
@@ -856,16 +844,25 @@ document.body.appendChild(table);
 table 元素有以下属性：
 
 *   caption：标题。
+
 *   tHead：表头。
+
 *   tFoot：表尾。
+
 *   rows：行元素对象，该属性只读。
+
 *   rows.cells：每一行的单元格对象，该属性只读。
+
 *   tBodies：表体，该属性只读。
 
 ## 参考链接
 
 *   Louis Lazaris, [Thinking Inside The Box With Vanilla JavaScript](http://coding.smashingmagazine.com/2013/10/06/inside-the-box-with-vanilla-javascript/)
+
 *   David Walsh, [HTML5 classList API](http://davidwalsh.name/classlist)
+
 *   Derek Johnson, [The classList API](http://html5doctor.com/the-classlist-api/)
+
 *   Mozilla Developer Network, [element.dataset API](http://davidwalsh.name/element-dataset)
+
 *   David Walsh, [The element.dataset API](http://davidwalsh.name/element-dataset)

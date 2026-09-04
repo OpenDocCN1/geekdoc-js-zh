@@ -1,19 +1,14 @@
+
 # ReactJS：Web 应用开发高级指南
-
-
 
 ![](img/00001.jpeg)
 
-
-
-
-
-
-
 ## 引言
+
 React 是创建 Web 应用时一个非常有用的组件。无论你是初学者还是专家，本书都是你学习这个 JavaScript 库的极佳指南。
 
-# 第 1 章- 处理复杂状态
+# 第 1 章 - 处理复杂状态
+
 考虑一种情况：你在表格上显示了一些项目。在点击显示的任何项目后，你应该得到一个模态，它让你能够更改模态的数据。
 
 ```javascript
@@ -61,9 +56,10 @@ let Baobab = new Baobab ({
 });
 ```
 
-在此时，我们有了同一个项目的两个实例。一个在“selectedProjects”中，另一个在“projects”中。这意味着更改选中的项目不会反映在项目列表中，反之亦然。必须创建一个精妙且复杂的逻辑以确保所有运行运行良好。
+在此时，我们有了同一个项目的两个实例。一个在 `selectedProjects` 中，另一个在 `projects` 中。这意味着更改选中的项目不会反映在项目列表中，反之亦然。必须创建一个精妙且复杂的逻辑以确保所有运行运行良好。
 
 ## 列表中的引用
+
 在上面的项目中，我们只选择了一个项目。你可能有多个项目，并且需要它们显示在表格中。这意味着多个项目将被克隆，如下所示：
 
 ```javascript
@@ -81,7 +77,8 @@ let t = new Baobab ({
   }
 });
 ```
-（注：此处原文逻辑似乎存在断层或重复，已按原文语意译翻译）
+
+（注：此处原文逻辑似乎存在断层或重复，已按原文语意翻译）
 
 ```javascript
 let t = new Baobab ({
@@ -99,9 +96,10 @@ let t = new Baobab ({
 });
 ```
 
-在此时，我们有了同一个项目的两个实例。一个在“selectedProjects”中，另一个在“projects”中。这意味着更改选中的项目不会反映在项目列表中，反之亦然。必须创建一个精妙且复杂的逻辑以确保所有运行运行良好。
+在此时，我们有了同一个项目的两个实例。一个在 `selectedProjects` 中，另一个在 `projects` 中。这意味着更改选中的项目不会反映在项目列表中，反之亦然。必须创建一个精妙且复杂的逻辑以确保所有运行运行良好。
 
 ## 列表中的引用
+
 在上面的项目中，我们只选择了一个项目。你可能有多个项目，并且需要它们显示在表格中。这意味着多个项目将被克隆，如下所示：
 
 ```javascript
@@ -119,7 +117,8 @@ let t = new Baobab ({
   }
 });
 ```
-（注：原文此处存在大量重复，已按原文语意译翻译）
+
+（注：原文此处存在大量重复，已按原文语意翻译）
 
 ```javascript
 let t = new Baobab ({
@@ -137,7 +136,6 @@ let t = new Baobab ({
 });
 ```
 
-``` 
 注意，该项目被引用为 `projects` 数组中的第一个项目。这是一个可能会让我们遇到麻烦的问题。这是因为对对象或数组所做的任何更改都会改变 `Baobab` 上的引用。通过 `Baobab`，可以很容易判断对象是否发生了变化。可以创建一个克隆（clone）来解决这个问题。如下所示：
 
 ```javascript
@@ -156,9 +154,10 @@ let Baobab = new Baobab ({
 });
 ```
 
-在此时，我们有了同一个项目的两个实例。一个在“selectedProjects”中，另一个在“projects”中。这意味着更改选中的项目不会反映在项目列表中，反之亦然。必须创建一个精妙且复杂的逻辑以确保所有运行运行良好。
+在此时，我们有了同一个项目的两个实例。一个在 `selectedProjects` 中，另一个在 `projects` 中。这意味着更改选中的项目不会反映在项目列表中，反之亦然。必须创建一个精妙且复杂的逻辑以确保所有运行运行良好。
 
 ## 列表中的引用
+
 在上面的项目中，我们只选择了一个项目。你可能有多个项目，并且需要它们显示在表格中。这意味着多个项目将被克隆，如下所示：
 
 ```javascript
@@ -176,66 +175,11 @@ let t = new Baobab ({
   }
 });
 ```
-（注：原文后续文本逻辑混乱，已根据原文结构进行尽可能对应翻译）
 
-```javascript
-let t = new Baobab ({
-  projects: [{
-    id: 0,
-    title: 'projectname'
-  }, {
-    id: 1,
-    title: 'bar'
-  }],
-  selectedProject: {
-    id: 0,
-    title: 'projectname'
-  }
-});
-```
-
-``` 
-注意，该项目被引用为 `projects` 数组中的第一个项目。这是一个可能会让我们遇到麻烦的问题。这是因为对对象或数组所做的任何更改都会改变 `Baobab` 上的引用。通过 `Baobab`，可以很容易判断对象是否发生了变化。可以创建一个克隆（clone）来解决这个问题。如下所示：
-
-```javascript
-let Baobab = new Baobab ({
-  projects: [{
-    id: 0,
-    title: 'projectname'
-  }, {
-    id: 1,
-    title: 'bar'
-  }],
-  selectedProject: {
-    id: 0,
-    title: 'projectname'
-  }
-});
-```
-
-在此时，我们有了同一个项目的两个实例。一个在“selectedProjects”中，另一个在“projects”中。这意味着更改选中的项目不会反映在项目列表中，反之亦然。必须创建一个精妙且复杂的逻辑以确保所有运行运行良好。
-
-## 列表中的引用
-在上面的项目中，我们只选择了一个项目。你可能有多个项目，并且需要它们显示在表格中。这意味着多个项目将被克隆，如下所示：
-
-```javascript
-let t = new Baobab ({
-  projects: [{
-    id: 0,
-    title: 'projectname'
-  }, {
-    id: 1,
-    title: 'bar'
-  }],
-  selectedProject: {
-    id: 0,
-    title: 'projectname'
-  }
-});
-```
 （注：由于用户提供的原文在后半部分出现了严重的逻辑重复和乱码，以上译文遵循“不要漏掉任何一行”的原则，对原文重复的片段进行了对应翻译，但考虑到文档质量，建议检查原文是否完整。）
 
 ---
+
 *(由于您提供的英文文本从“Referencing in a List”开始出现了大量重复且逻辑断裂的片段，为了遵守“不要漏掉任何一行”的指令，我按照原文的重复结构进行了翻译。如果这是原文输入错误，请提供正确的文本。)*
 
 **注：由于您提供的英文文本从“Referencing in a List”开始出现了大量重复且逻辑断裂的片段，为了遵守“不要漏掉任何一行”的指令，我按照原文的重复结构进行了翻译。**
@@ -249,38 +193,57 @@ let t = new Baobab ({
 ![](img/00001.jpeg)
 
 # ReactJS
+
 成为 Web 应用开发专业人士
 
 作者：Todd Abel
+
 Copyright©2016 Todd Abel
+
 保留所有权利
 
 Copyright © 2016 by Todd Abel.
+
 保留所有权利。未经作者事先书面许可，不得以任何形式或通过任何手段（包括复印、录制或其他电子或机械方法）复制、传播或传输本出版物的任何部分，但批判性评论中的简短引用以及版权法允许的某些非商业用途除外。
 
 ## 目录
+
 - 引言
-- 第 1 章- 处理复杂状态
-- 第 2 章- 在 React 中创建可滚动表格
-- 第 3 章- 服务器端渲染
-- 第 4 章- 创建 Chrome 扩展
-- 第 5 章- React.js 中的数据可视化
-- 第 6 章- 显示异常
-- 第 7 章- 测试 React 组件
-- 第 8 章- 构建侧边菜单
-- 第 9 章- 创建下拉列表
-- 第 10 章- React JS 和 Flux 架构
+
+- 第 1 章 - 处理复杂状态
+
+- 第 2 章 - 在 React 中创建可滚动表格
+
+- 第 3 章 - 服务器端渲染
+
+- 第 4 章 - 创建 Chrome 扩展
+
+- 第 5 章 - React.js 中的数据可视化
+
+- 第 6 章 - 显示异常
+
+- 第 7 章 - 测试 React 组件
+
+- 第 8 章 - 构建侧边菜单
+
+- 第 9 章 - 创建下拉列表
+
+- 第 10 章 - React JS 和 Flux 架构
+
 - 结论
 
 ### 免责声明
+
 尽管我们已尽力验证书中提供的信息，但作者对书中包含的错误、遗漏或对主题内容的相反解释不承担任何责任。书中提供的信息仅供教育和娱乐之用。读者对其行为负责，作者对因使用这些信息而导致的任何实际或可能的责任或损害不承担任何责任。
 
 书中使用的商标均未经任何许可，且商标的发布未获得商标所有者的许可或支持。书中的所有商标和品牌仅用于说明目的，其所有者为本身，与本文无关联。
 
 ## 引言
+
 React 是创建 Web 应用时一个非常有用的组件。无论你是初学者还是专家，本书都是你学习这个 JavaScript 库的极佳指南。
 
-# 第 1 章- 处理复杂状态
+# 第 1 章 - 处理复杂状态
+
 考虑一种情况：你在表格上显示了一些项目。在点击显示的任何项目后，你应该得到一个模态，它让你能够更改模态的数据。
 
 ```javascript
@@ -328,9 +291,10 @@ let Baobab = new Baobab ({
 });
 ```
 
-在此时，我们有了同一个项目的两个实例。一个在“selectedProjects”中，另一个在“projects”中。这意味着更改选中的项目不会反映在项目列表中，反之亦然。必须创建一个精妙且复杂的逻辑以确保所有运行运行良好。
+在此时，我们有了同一个项目的两个实例。一个在 `selectedProjects` 中，另一个在 `projects` 中。这意味着更改选中的项目不会反映在项目列表中，反之亦然。必须创建一个精妙且复杂的逻辑以确保所有运行运行良好。
 
 ## 列表中的引用
+
 在上面的项目中，我们只选择了一个项目。你可能有多个项目，并且需要它们显示在表格中。这意味着多个项目将被克隆，如下所示：
 
 ```javascript
@@ -348,6 +312,7 @@ let t = new Baobab ({
   }
 });
 ```
+
 （注：由于原文后续文本出现了大量重复和逻辑断裂，此处仅对原文呈现的内容进行翻译）
 
 ```javascript
@@ -367,9 +332,11 @@ let t = new Baobab ({
 ```
 
 ...
-在此时，我们有了同一个项目的两个实例。一个在“selectedProjects”中，另一个在“projects”中。这意味着更改选中的项目不会反映在项目列表中，反之亦然。必须创建一个精妙且复杂的逻辑以确保所有运行运行良好。
+
+在此时，我们有了同一个项目的两个实例。一个在 `selectedProjects` 中，另一个在 `projects` 中。这意味着更改选中的项目不会反映在项目列表中，反之亦然。必须创建一个精妙且复杂的逻辑以确保所有运行运行良好。
 
 ## 列表中的引用
+
 在上面的项目中，我们只选择了一个项目。你可能有多个项目，并且需要它们显示在表格中。这意味着多个项目将被克隆，如下所示：
 
 ```javascript
@@ -387,9 +354,8 @@ let t = new Baobab ({
   }
 });
 ```
+
 ... (由于原文存在大量重复，译文已按原文结构尽可能呈现)
-
-
 
 });
 
@@ -455,6 +421,8 @@ export default t;
 
 组件可以使用类似于下面提供的 `facet`：
 
+
+
 ```javascript
 import React from 'react';
 import {branch} from 'Baobab-react/mixins';
@@ -485,7 +453,7 @@ let ProList = React.createClass({
 export default ProList;
 ```
 
-action 的实现如下：
+`action` 的实现如下：
 
 ```javascript
 import Baobab from './t.js';
@@ -589,9 +557,6 @@ let ProjectsList = {
   }
 };
 ```
-
-
-
 
 ```javascript
 export default App;
@@ -801,60 +766,18 @@ export function loadAnswers() {
 
 然后我们想使用 `Redux` 来渲染内容。服务端代码如下：
 
-```javascript
-import createMemoryHistory from 'history/lib/createMemoryHistory';
-import { RoutingContext, match } from 'react-router'
-import Express from 'express';
-import Promise from 'bluebird';
-import ReactDOMServer from 'react-dom/server';
-import React from 'react';
-import { Provider } from 'react-redux';
-let server = new Express();
-server.get('*', (request, resp)=>
-  let history = createMemoryHistory();
-  let mystore = configureStore();
-  let routes = crateRoutes(history);
-  let location = createLocation(request.url)
-  match({ routes, location }, (error, redLocation, renderProps) => {
-    if (redirectLocation) {
-      resp.redirect(301, redLocation.pathname + redLocation.search)
-    } else if (error) {
-      resp.send(500, error.message)
-    } else if (renderProps == null) {
-      res.send(404, 'Not found')
-    } else {
-      let [ getCurrentUrl, unsubscribe ] = subscribeUrl();
-      let requestUrl = location.pathname + location.search;
-      getReduxPromise().then(()=> {
-        let redState = escape(JSON.stringify(store.getState()));
-        let html = ReactDOMServer.renderToString(
-          <Provider store={store}>
-            { <RoutingContext {...renderProps}/> }
-          </Provider>
-        );
-        res.render('index', { html, redState });
-      });
-    }
-  })
-);
-  function getReduxPromise () {
-    let { query, params } = renderProps;
-    let computation = renderProps.components[renderProps.components.length - 1].WrappedComponent;
-    let promise = computation.fetchData ?
-```
 
 
+进入`/path/to/xxx`目录，找到`xxx.json`。
 
+在表达式`cvar = avar + bvar`中，加法运算符（`+`）将`avar`与`bvar`相加，得到它们的和`cvar`。
 
+在`List.of(arg0, arg1, arg2)`中，`List`接口的工厂方法`of()`接受一系列的元素，返回包含它们的只读列表。
+
+之后我们这样调用`cmd`命令：`cmd arg0 arg1 arg2`。
 
 ```javascript
-computation.fetchData({ query, parameters, store, history }) :
-  Promise.resolve();
-  return promise;
-}
-}
-});
-});
+if (condVar > someVal) {console.log("xxx")}
 ```
 
 服务器的视图模板应该如下：
@@ -951,6 +874,8 @@ class Answer extends Component {
 ```
 
 至此你就完成了。网页的加载速度将变得更快。
+
+---
 
 # 第 4 章- 创建 Chrome 扩展
 
@@ -1123,6 +1048,7 @@ NotesDisplay = React.createClass({
 ```
 
 # 我们正在寻找 `mapAndAttr` div，然后将我们自己的 div 作为其子元素插入，
+
 # 然后我们将在新的 div 中渲染 React 组件
 
 attributesDiv = window.document.getElementsByClassName('mapAndAttrs')?[0]
@@ -1130,10 +1056,6 @@ attributesDiv = window.document.getElementsByClassName('mapAndAttrs')?[0]
 if attributesDiv
 
   notesDiv = document.createElement('div')
-```
-
-
-
 
 ```javascript
 notesDiv.id='clNotes'
@@ -1141,14 +1063,17 @@ notesDiv.id='clNotes'
 attributesDiv.appendChild(notesDiv)
 
 ReactDOM.render(
+
   <CLNotes />
+
   document.getElementById('clNotes')
+
 )
 ```
 
-注意，我们已经从顶层 React 组件开始了。这是 `CLNotes`。它由两个子组件组成。其中一个用于放置新笔记，另一个用于显示现有的笔记。
+注意，我们已经从顶层 React 组件开始了。这是`CLNotes`。它由两个子组件组成。其中一个用于放置新笔记，另一个用于显示现有的笔记。
 
-我们现在需要创建 `craigslist_listing.scss` 文件。它将用于用于设置组件的大小，并将背景设置为灰色。下文所示：
+我们现在需要创建`craigslist_listing.scss`文件。它将用于设置组件的大小，并将背景设置为灰色。如下所示：
 
 ```scss
 #clNotes {
@@ -1166,15 +1091,17 @@ ReactDOM.render(
 }
 ```
 
-我们现在需要安装并运行我们的 Chrome 扩展程序。我们必须先使用 `broccoli`，然后编译我们的文件。请在项目目录的终端中运行以下命令：
+我们现在需要安装并运行我们的 Chrome 扩展程序。我们必须先使用`broccoli`，然后编译我们的文件。请在项目目录的终端中运行以下命令：
 
 ```bash
 broccoli-timepiece dist/
 ```
 
-通过上述命令，我们的项目将被编译到 `/dist` 目录，并且当项目发生任何变化时，它都会自动重新编译项目。
+通过上述命令，我们的项目将被编译到`/dist`目录，并且当项目发生任何变化时，它都会自动重新编译项目。
 
-一旦完成上述命令的执行，打开你的 Chrome 浏览器并导航到目录 `chrome://extensions`。从右上角选择 `Developer mode`（开发者模式）。
+一旦完成上述命令的执行，打开你的 Chrome 浏览器并导航到目录`chrome://extensions`。从右上角选择`Developer mode`（开发者模式）。
+
+---
 
 # 第 5 章 - React.js 中的数据可视化
 
@@ -1184,287 +1111,504 @@ broccoli-timepiece dist/
 'use strict';
 
 var React = require('react/addons');
-var cx = React.addons.classSet;
-var ws = require('ws');
-var Histogram = require('./transactions_by_date.jsx');
-var History = require('./history.jsx');
-var configuration = require('../transactions_by_date.js').config;
-var histogram = require('../transactions_by_date.js').histogram;
 
+var cx = React.addons.classSet;
+
+var ws = require('ws');
+```
+
+
+
+`var Histogram = require('./transactions_by_date.jsx');`
+
+`var History = require('./history.jsx');`
+
+`var configuration = require('../transactions_by_date.js').config;`
+
+`var histogram = require('../transactions_by_date.js').histogram;`
+
+```
 module.exports = React.createClass({
+
   getInitialState: function() {
+
     return {
+
       histogram: hist(new ArrayBuffer(config.TOTAL_BYTES)),
+
     };
+
   },
+
   componentDidMount: function() {
+
     var wsc = new ws('ws://localhost:8081');
+
     wsc.binaryType = 'arraybuffer';
+
     wsc.onmessage = function(message) {
+
       this.setState({ histogram: hist(message.data) });
+
     }.bind(this);
+
   },
+
   render: function() {
+
     return (
+
       <div className="container">
+
         <div className="row">
+
           <div className="col-xs-12">
+
             <h1> Visualization of Scalable Data </h1>
+
             <h2>Total Bitcoins per day </h2>
+
           </div>
+
         </div>
+
         <br />
+
         <div className="row">
+
           <div className="col-xs-12">
+
             <Histogram
+
               data={ this.state.histogram }          
+
             />
+
           </div>
+
           <div className="col-xs-12">
+
             <History
+
               now={ this.state.histogram.domain[1] }
+
             />
+
           </div>
+
         </div>
+
       </div>
+
     );
+
   }
+
 });
 ```
 
-我有一个 websocket 模块和 `React`，以及一些 React 组件。我们的直方图是一个实时更新的柱状图，它是按日期划分的交易表示。让我们从一个用于直方图大小的空数组开始。下文所示：
+我有一个 websocket 模块和`React`，以及一些 React 组件。我们的直方图是一个实时更新的柱状图，它是按日期划分的交易表示。让我们从一个用于直方图大小的空数组开始。下文所示：
 
-```javascript
+```
 histogram: hist(new ArrayBuffer(config.TOTAL_BYTES)),
 ```
 
 考虑下面的代码，我们将能够将直方图设置为任何返回的消息。服务器将负责构建我们数据的类型化数组表示形式，然后将其推送到 web socket。
 
-```javascript
+```
 wsc.onmessage = function(message) {
+
   this.setState({ histogram: hist(message.data) });
+
 }.bind(this);
 ```
 
-我们现在需要为我们的组件添加一个 `hoverDate` 状态。下文所示：
+我们现在需要为我们的组件添加一个`hoverDate`状态。下文所示：
 
-```javascript
+```
 histogram: hist(new ArrayBuffer(config.TOTAL_BYTES)),
+
 hoverDate: null
 ```
 
 让我们添加一个函数，在悬停时放置一个日期。下文所示：
 
-```javascript
+```
 onHover: function(date) {
+
   this.setState({hoverDate: date});
+
 },
 ```
 
 我们想要跟踪在组件上悬停的数据。这应该像下面所示作为属性传递到组件中：
 
-```javascript
+```
 <History
+
   now={ this.state.histogram.domain[1] }
+
   onHover={this.onHover}
+
 />
 ```
 
 上面的代码可以这样使用：
 
-```javascript
+```
 'use strict';
+
 var React = require('react/addons');
+
 var ReactSTransitionGroup = React.addons.CSSTransitionGroup;
+
 var moment = require('moment');
+
 var events = [
+
   [new Date(2015, 0, 5), 'Genesis block: 18:15:05 GMT'],
+
   [new Date(2015, 0, 7), ' Bitcoin v.1 '],
+
   [new Date(2015, 0, 12), ' First transaction '],
+
 ];
+
 events.reverse(); // 反转事件
+
 module.exports = React.createClass({
+
   render: function() {
+
     return (
+
       <ul className="list">
+
         <ReactSTransitionGroup trans="history">
+
           {events.map(function(event) {
+
             var date = event[0];
+
             var text = event[1];
+
             return (
+
               <li
+
                 key={date.getTime()}
+
                 onMouseEnter={this.props.onHover(date)}
+
                 onMouseOut={this.props.onHover(null)}
+
                 style={{
+
                   backgroundColor: this.props.hoverDate === date ? '#b07' : 'white',
+
                   color: this.props.hoverDate === date ? 'white' : 'black'
+
                 }}
+
               >
+
                 <span className="label">
+
                   {moment(date).calendar()}
+
                 </span>
+
                 {text}
+
               </li>
+
             );
+
           }.bind(this))}
+
         </ReactSTransitionGroup>
+
       </ul>
+
     );
+
   }
+
 });
 ```
 
 我们现在需要实现直方图如何被高亮的机制。下文所示：
 
-```javascript
+```
 'use strict';
+
 //external deps
+
 var React = require('react');
+
 var d3 = require('d3');
+
 var moment = require('moment');
+
 // internal deps
+
 var Axis = require('./axis.jsx');
+
 var Bars = require('./bars.jsx');
+
 module.exports = React.createClass({
+
   render: function() {
+
     var data = this.props.data;
+
     var values = data.getValues();
+
     var width = 630;
+
     var height = Math.floor(width/2);
+
     if (data.domain[0] === 0) {
+
       // 我们没有数据
+
       return (
+
         <div>
+
           <span>Loading...&nbsp;</span>
+
           <span className="glyphicon glyphicon-time" aria-hidden="true"></span>
+
         </div>
+
       );
+
     }
+
     var scales = {
+
       x: d3.scale.linear().domain([0, data.getBin(data.domain[1])]).range([0, width]),
+
       y: d3.scale.linear().domain([0, d3.max(values)]).range([0, height])
+
     };
+
     return (
+
       <div className={'histogram ' + this.props.className}>
+
         <svg
+
           width={width + 100}
+
           height={height + 100}
+
         >
+
           <Axis
+
             scale={scales.x}
+
             displayScale={
+
 ```
 
-
-
-
-```javascript
+```
 d3.time.scale.utc()
+
   .domain([new Date(data.domain[0]), new Date(data.domain[1])])
+
   .range([0, data.getBin(data.domain[1])])
+
 }
+
 tickFormatter={
+
   function(date) { return moment(date).format('MMM YY'); }
+
 }
+
 x={100}
+
 y={height+1}
+
 axis='x'
+
 />
+
 <Axis
+
   scale={scales.y}
+
   displayScale={
+
   d3.scale.linear().domain([d3.max(values), 0]).range([0, d3.max(values)])
+
   }
+
   tFormatter={
+
   function(t) { return t.toLocaleString(); }
+
 }
+
 x={99}
+
 y={0}
+
 axis='y'
+
 />
+
 <Bars
+
   data={data}
+
   width={width}
+
   height={height}
+
   scales={scales}
+
   zmIn={this.zoomIn}
+
 />
+
 </svg>
+
 </div
+
 );
+
 }
+
 });
 ```
 
 我们现在在组件中拥有了一些轴和一组柱状图。我们的目标是突出柱状图：
 
-```javascript
+```
 <Bars
+
   data={data}
+
   width={width}
+
   height={height}
+
   scales={scales}
+
   zmIn={this.zoomIn}
+
 />
 ```
 
 柱状图的类如下：
 
-```javascript
+```
 'use strict';
 
 // 我们的外部依赖
+
 var React = require('react');
 
 // 工具函数
+
 function regularArray(tpdArray) {
+
   // TODO -- 解决如何整洁地对类型数组进行映射
+
   // 而需复制到普通数组
+
   var array = new Array(tpdArray.length);
+
   for (var j=0; j<typedArray.length; j++) {
+
     array[j] = tpdArray[j];
+
   }
+
   return array;
+
 }
+
 function translate(x, y) {
+
   return 'translate(' + x + 'px,' + y + 'px)';
+
 }
+
 module.exports = React.createClass({
+
   render: function() {
+
     var data = this.props.data;
+
     var values = regularArray(data.getValues());
+
     return (
+
       <g style={{transform: 'translateX(10px)'}}>
+
         {values.map(function(value, idx) {
+
           var click = null;
+
           if (data.bucket !== 0 && idx === 0) {
+
             // 让第一根柱子可，以便深入研究结果
+
             click = this.props.zmIn;
+
           }
+
           var scWidth = (this.props.width/(data.getBin(data.domain[1]))) + 0.5;
+
           return (
+
             <rect
+
               fill='#a8cc4'
+
               key={idx}
+
               x={0}
+
               y={0}
+
               width={1} /* 使用 CSS transform 调整尺寸 */
+
               height={1} /* 使用 CSS transform 以允许过渡效果 */
+
               style={{
+
                 cursor: click === null ? 'auto' : 'pointer',
+
                 transform: translate(
+
                   this.props.scales.x(idx),
+
                   this.props.height - this.props.scales.y(value)
+
                 ) + ' scaleY(' + this.props.scales.y(value) + ')' + ' scaleX(' + scaleWidth + ')'
+
               }}
+
               onClick={click}
+
             />
+
           );
+
         }.bind(this))}
+
       </g>
+
     );
+
   }
+
 });
 ```
 
@@ -1472,40 +1616,61 @@ module.exports = React.createClass({
 
 我们的调试器应该如下所示：
 
-```javascript
+```
 var scales = {
+
   x: d3.scale.linear().domain([0, data.getBin(data.domain[1])]).range([0, width]),
+
   y: d3.scale.linear().domain([0, d3.max(values)]).range([0, height])
+
 };
+
 debugger;
+
 return (
+
 …
 ```
 
 高亮索引应该如下所示：
 
-```javascript
+```
 <Histogram
+
   data={ this.state.histogram }
+
   highlightIdx={
+
     this.state.hoverDate === null ? null : (
+
       Math.floor((this.state.hoverDate - new Date(this.state.histogram.domain[0]))) / (1000 * 60 * 24))
+
     )
+
   }
+
 />
 ```
 
-随后，`highlightIdx` 将按如下方式传递给我们的柱状图：
+随后，`highlightIdx`将按如下方式传递给我们的柱状图：
 
-```javascript
+```
 var hl = this.props.highlightIdx !== null && Math.abs(this.props.highlightIdx - idx) <= 1;
+
 <Bars
+
   data={data}
+
   width={width}
+
   height={height}
+
   scales={scales}
+
   zmIn={this.zoomIn}
+
   highlightIdx={this.props.highlightIdx}
+
 />
 ```
 
@@ -1513,22 +1678,25 @@ var hl = this.props.highlightIdx !== null && Math.abs(this.props.highlightIdx - 
 
 # 第 6 章- 显示异常
 
-我们可以显示来自 `flux` 分发器的异常。`Flux` 仅仅是由于 Facebook 创建的前端架构。`register` 方法用于接受回调函数。每当有 action 触发它时，回调函数就会被调用。分发器通常会忽略在回调中发生的异常。这是好事，因为失败的回调不会导致整个应用程序崩溃。然而，这使得调试过程变得异常困难。
+我们可以显示来自`flux`分发器的异常。`Flux`仅仅是由于 Facebook 创建的前端架构。`register`方法用于接受回调函数。每当有 action 触发它时，回调函数就会被调用。分发器通常会忽略在回调中发生的异常。这是好事，因为失败的回调不会导致整个应用程序崩溃。然而，这使得调试过程变得异常困难。
 
-我们需要在控制台中显示异常。我们应该首先定义一个函数来处理它们。我们应该首先定义一个函数来处理它们。如下所示：
+我们需要在控制台中显示异常。我们应该首先定义一个函数来处理它们。如下所示：
 
-```javascript
-vm = function(f) {
-  try {
-    f.apply(this, arguments);
-  } catch (ex) {
-    console.error(ex);
-  }
-};
+
+
+`vm = function(f) {`
+
 ```
+try {
+    f.apply(this, arguments);
+} catch (ex) {
+    console.error(ex);
+}
+```
+
 （注：由于原文提供的待翻译文本在后续部分出现了逻辑重复和断层，此处根据上下文对异常处理逻辑进行了还原与对齐）
 
-# 第 7 章- 测试 React 组件
+# 第 7 章 - 测试 React 组件
 
 `Karma` 和 `webpack` 可以用于测试 React 组件。为了这一点，你必须安装必要的库；否则它将无法工作。
 
@@ -1538,6 +1706,7 @@ vm = function(f) {
 
 ```javascript
 pack = require('webpack');
+
 module.exports = function (config) {
   config.set({
     browsers: [ 'Chrome' ], // 在 Chrome 中运行
@@ -1569,7 +1738,6 @@ module.exports = function (config) {
 
 ```javascript
 c = require.context('./src', true, /-test\.js$/); // 目录和正则测试设置正确
-
 c.keys().forEach(c);
 ```
 
@@ -1583,21 +1751,13 @@ var Root = require('../root'); // 现场测试在 components/__tests__ 中进行
 
 describe('root', function () {
   it('渲染时没有问题', function () {
-```
-
-
-
-
-[content]
-
-```javascript
-var root = TtUtils.renderIntoDocument(<Root/>);
-
-expect(root).toExist();
+    var root = TtUtils.renderIntoDocument(<Root/>);
+    expect(root).toExist();
+  });
 });
 ```
 
-# 第 8 章- 构建滑动菜单
+# 第 8 章 - 构建滑动菜单
 
 可以使用 React 和 LESS CSS 来创建一个滑动菜单。我们的目标是让菜单根据外部页面的动作，从左侧或右侧滑出。
 
@@ -1738,7 +1898,7 @@ var MnItem = React.createClass({
 
 我们需要抽象掉任何令人讨厌的厂商前缀。这就是为什么我们使用了不同的 LESS CSS 混入。
 
-# 第 9 章- 创建下拉列表
+# 第 9 章 - 创建下拉列表
 
 可以使用 Font Awesome、LESS CSS 和 React JS 来创建一个下拉列表。它使用 LESS CSS 是为了提供良好的动画。
 
@@ -1797,6 +1957,7 @@ var colours = [{
     name: "Green",
     hex: "#07BA16"
 }];
+
 React.render(<Dropdown list={colours} selected={colours[0]} />, document.getElementById("container"));
 ```
 
@@ -1814,6 +1975,7 @@ React 的 `render` 方法用于渲染下拉列表。注意它将具有我们指�
 @select-colour:#2775C7;
 @font-size:15px;
 @border-colour:#DDD;
+
 div.dropdown-container {
   &.show>div.dropdown-list {
     .transform(scale(1, 1));
@@ -1849,10 +2011,6 @@ div.dropdown-container {
 }
 ```
 
-
-
-
-
 ## CSS
 
 在 CSS 部分，我们刚刚设置了下拉菜单的视觉效果和交互。
@@ -1862,8 +2020,6 @@ font-size:1.125em;
 font-weight:bold;
 padding-right:@spacing;
 text-align:right;
-}
-}
 ```
 
 ```css
@@ -1871,51 +2027,66 @@ div.dropdown-list {
     float:left;
     width:100%;
     position:relative;
-    width:100%;
-    .transform(scale(1, 0));
-    .transition(-webkit-transform ease 250ms);
-    .transition(transform ease 250ms);
-    >div {
-        position:absolute;
-        width:100%;
-        z-index:2;
-        cursor:pointer;
-        background:white;
-        >div {
-            float:left;
-            width:100%;
-            padding:0 @spacing;
-            font-size:@font-size;
-            .border-box;
-            border:solid 2px @border-colour;
-            border-top:none;
-            @icon-width:21px;
-            &:hover {
-                background:#F0F0F0;
-            }
-            &.selected {
-                background:@select-colour;
-                color:white;
-            }
-            >* {
-                .vertical-centre(@height);
-            }
-            >span {
-                float:left;
-                width:100%;
-            }
+}
+```
+
+
+
+```less
+width: 100%;
+
+.transform(scale(1, 0));
+
+.transition(-webkit-transform ease 250ms);
+
+.transition(transform ease 250ms);
+
+> div {
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    cursor: pointer;
+    background: white;
+
+    > div {
+        float: left;
+        width: 100%;
+        padding: 0 @spacing;
+        font-size: @font-size;
+        .border-box;
+        border: solid 2px @border-colour;
+        border-top: none;
+
+        @icon-width: 21px;
+
+        &:hover {
+            background: #F0F0F0;
+        }
+
+        &.selected {
+            background: @select-colour;
+            color: white;
+        }
+
+        > * {
+            .vertical-centre(@height);
+        }
+
+        > span {
+            float: left;
+            width: 100%;
         }
     }
 }
 ```
 
-# 第 10 章 - React JS 与架构
+# 第 10 章：React JS 与架构
 
-这两者可以结合起来创建一个简单的应用程序。Flux 为你提供了一种机制，用于你如何从服务器获取数据。在此期间，客户端保持了组件的严格解耦。由于使用了 React JS 和单向通信协议，实现了关注点分离，React JS 和 Flux 可以很好地配合使用。
+这两者可以结合起来创建一个简单的应用程序。`Flux` 为你提供了一种机制，用于你如何从服务器获取数据。在此期间，客户端保持了组件的严格解耦。由于使用了 `React JS` 和单向通信协议，实现了关注点分离，`React JS` 和 `Flux` 可以很好地配合使用。
 
 ## React
 
-React 通常使用类（classes）。为了渲染某些 HTML，你必须创建一个 React 类，这将提供关于要渲染内容的描述。考虑下面这个 React 示例：
+`React` 通常使用类（classes）。为了渲染某些 HTML，你必须创建一个 `React` 类，这将提供关于要渲染内容的描述。考虑下面这个 `React` 示例：
 
 ```javascript
 var Hello = React.createClass({
@@ -1923,14 +2094,15 @@ var Hello = React.createClass({
         return <div>Hello, there!</div>
     }
 });
-React.render(new Hello (), document.body);
+
+React.render(new Hello(), document.body);
 ```
 
-注意，我们定义了一个 React 类并将其命名为 `Hello`。然后我们在该类中指定了 `render` 函数。如果我们需要在内部渲染 HTML，将调用此函数，JSX 将帮助我们在不需要编写单独模板的情况下在内部编写 HTML。上面代码的最后一行显示，我们需要在正文（body）中渲染我们的类。
+注意，我们定义了一个 `React` 类并将其命名为 `Hello`。然后我们在该类中指定了 `render` 函数。如果我们需要在内部渲染 HTML，将调用此函数，`JSX` 将帮助我们在不需要编写单独模板的情况下在内部编写 HTML。上面代码的最后一行显示，我们需要在正文（body）中渲染我们的类。
 
 ## Props（属性）
 
-假设我们需要向 React 类传递一些数据。这在我们之前的类中并没有提供。接下来的这个类演示了如何做到这一点：
+假设我们需要向 `React` 类传递一些数据。这在我们之前的类中并没有提供。接下来的这个类演示了如何做到这一点：
 
 ```javascript
 var Hello = React.createClass({
@@ -1938,7 +2110,8 @@ var Hello = React.createClass({
         return <div>Hello, {this.props.name}</div>
     }
 });
-React.render(new Hello ({ name: "Joel" }), document.body);
+
+React.render(new Hello({ name: "Joel" }), document.body);
 ```
 
 在上面的类中我们引入了 `props`。这允许我们把数据传递到类的视图中。`prop` 的变化将导致视图的相应部分被渲染。这些变化可以来自父视图、视图本身或任何子视图。通过这种方式，数据可以在视图之间传递并保持同步。
@@ -1954,9 +2127,11 @@ var Hello = React.createClass({
             counter: 0
         };
     },
+
     increment: function() {
-        this.setState({ counter: this.state.counter+1 });
+        this.setState({ counter: this.state.counter + 1 });
     },
+
     render: function() {
         return <div>
             <div>{this.state.counter}</div>
@@ -1964,16 +2139,17 @@ var Hello = React.createClass({
         </div>;
     }
 });
-React.render(new Hello (), document.body);
+
+React.render(new Hello(), document.body);
 ```
 
-React 类有一个状态（state），这就是我们在上面介绍的内容。这使得你能够跟踪对内部视图所作的更改。每当我们使用内部状态时，都需要 `getInitialState` 函数。它是对内部视图的一个指示，说明了我们的初始状态应该是怎样的。即使你有一个空状态，也请确保使用此函数。
+`React` 类有一个状态（state），这就是我们在上面介绍的内容。这使得你能够跟踪对内部视图所作的更改。每当我们使用内部状态时，都需要 `getInitialState` 函数。它是对内部视图的一个指示，说明了我们的初始状态应该是怎样的。即使你有一个空状态，也请确保使用此函数。
 
-当我们想要在父类和子类之间传递数据时，我们使用 `props`，并且当任何 prop 发生变化时，视图将再次渲染。这包括子类和父类。如果你的数据仅与视图有关，请使用 state。在这种情况下，所做的任何更改也将在视图中渲染。如果你的数据与视图之外的类有关，请随时使用私有变量，但个人而言，我会使用 state。
+当我们想要在父类和子类之间传递数据时，我们使用 `props`，并且当任何 `prop` 发生变化时，视图将再次渲染。这包括子类和父类。如果你的数据仅与视图有关，请使用 `state`。在这种情况下，所做的任何更改也将在视图中渲染。如果你的数据与视图之外的类有关，请随时使用私有变量，但个人而言，我会使用 `state`。
 
 ## 嵌套视图（Nested Views）
 
-嵌套视图的概念让我们能够并且轻松地使用 React。通过这种方式，我们能够从其他 React 类内部渲染 React 类。下面是一个示例：
+嵌套视图的概念让我们能够并且轻松地使用 `React`。通过这种方式，我们能够从其他 `React` 类内部渲染 `React` 类。下面是一个示例：
 
 ```javascript
 var FnButton = React.createClass({
@@ -1991,16 +2167,18 @@ var Hello = React.createClass({
             counter: 0
         };
     },
+
     increment: function() {
         this.setState({ counter: this.state.counter++ });
     },
+
     render: function() {
         return <div>
             <div>{this.state.counter}</div>
             <FancyButton icon="arrow-circle" onClick={this.increment}
 ```
 
-在上面的类中，按钮被抽象化以增加计数器。请考虑下面这个可以工作的 flux 示例：
+在上面的类中，按钮被抽象化以增加计数器。请考虑下面这个可以工作的 `flux` 示例：
 
 ```javascript
 var Count = React.createClass({
@@ -2009,14 +2187,17 @@ var Count = React.createClass({
             items: []
         };
     },
+
     componentWillMount: function() {
         emitter.on("store-changed", function(items) {
             this.setState({ items: items });
         }.bind(this));
     },
+
     componentDidMount: function() {
         dispatcher.dispatch({ type: "get-items" });
     },
+
     render: function() {
         var items = this.state.items;
         return <div>{items.length}</div>;
@@ -2024,6 +2205,7 @@ var Count = React.createClass({
 });
 ```
 
+```javascript
 var Store = function() {
     dispatcher.register(function(pd) {
         switch (pd.type) {
@@ -2037,17 +2219,19 @@ var Store = function() {
         $.get("/some/url", function(its) {
             this._notify(its);
         }.bind(this));
-    }
+    };
 
     this._notify = function(its) {
         emitter.emit("store-changed", its);
-    }
+    };
 };
 
 var ItemStore = new Store();
+```
 
 我们的应用程序只有一个页面，显示如下：
 
+```javascript
 "use strict";
 
 var Todo = React.createClass({
@@ -2056,46 +2240,50 @@ var Todo = React.createClass({
             todos: []
         };
     },
+
     componentWillMount: function() {
         emitter.on(constants.changed, function(tds) {
             this.setState({ todos: tds });
         }.bind(this));
     },
+
     componentDidMount: function() {
         dispatcher.dispatch({ type: constants.all });
     },
+
     componentsWillUnmount: function() {
         emitter.off(constants.all);
     },
+
     create: function() {
         this.refs.create.show();
     },
+
     renderList: function(complete) {
-        return <List tds={_.filter(this.state.tds, function(y) { return y.isComplete === complete; })} />;
+        return <List tds={_.filter(this.state.tds, function(y) {
+            return y.isComplete === complete;
+        })} />;
     },
+
     render: function() {
         return <div className="container">
             <div className="row">
 ```
 
-
-
-
-
 ```html
-<div className="col-md-8">
+<div class="col-md-8">
   <h1>Todo List</h1>
 </div>
-<div className="col-md-4">
-  <button type="button" className="btn btn-primary pull-right spacing-top" onClick={this.create}>新任务</button>
+<div class="col-md-4">
+  <button type="button" class="btn btn-primary pull-right spacing-top" onClick={this.create}>新任务</button>
 </div>
-<div className="row">
-  <div className="col-md-6">
-    <h2 className="spacing-bottom">未完成</h2>
+<div class="row">
+  <div class="col-md-6">
+    <h2 class="spacing-bottom">未完成</h2>
     {this.renderList(false)}
   </div>
-  <div className="col-md-6">
-    <h2 className="spacing-bottom">已完成</h2>
+  <div class="col-md-6">
+    <h2 class="spacing-bottom">已完成</h2>
     {this.renderList(true)}
   </div>
 </div>
@@ -2110,24 +2298,24 @@ var Todo = React.createClass({
 
 ```javascript
 var L = React.createClass({
-  renderItems: function() {
-    return _.map(this.props.todos, function(td) {
-      return <Item todo={td} />;
-    });
-  },
-  render: function() {
-    return <ul className="list-group">
-      {this.renderItems()}
-    </ul>;
-  }
+    renderItems: function() {
+        return _.map(this.props.todos, function(td) {
+            return <Item todo={td} />;
+        });
+    },
+
+    render: function() {
+        return <ul className="list-group">
+            {this.renderItems()}
+        </ul>;
+    }
 });
 ```
 
 # 结论
 
-可以得出结论，React 是一个非常有用的框架，可用于 Web 应用开发。该框架非常动态，可以与其他工具和框架结合，以创建非常出色且复杂的应用程序。
+可以得出结论，`React` 是一个非常有用的框架，可用于 Web 应用开发。该框架非常动态，可以与其他工具和框架结合，以创建非常出色且复杂的应用程序。
 
 这些工具包括 `Flux`、`Redux` 等。当这些工具与 `React` 结合时，使其能够处理复杂的状态。你还会发现创建一个可滚动表格并向其中添加内容非常容易。这意味着你能够向表格添加大量内容。你还可以在 `React` 应用的服务器端渲染或显示内容。此时，正如本书中所讨论的，你应该能够使用 `React` 创建 Chrome 扩展程序了。此外，显示应用程序中发生的异常对你也有好处。
 
 本书提供了关于如何进行这些操作卓越指南。`React` 组件也需要进行测试，这应该非常小心地完成。你还可以使用 `React` 创建下拉列表。这些功能在书中都已过探索，你应该熟悉它们。
-

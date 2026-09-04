@@ -1,209 +1,233 @@
+
 # Adobe Acrobat 官方 JavaScript 参考：Adobe Acrobat 7.0
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 15
-
-
 
 ## Icon Generic 对象
 
 ## Icon Stream Generic 对象
 
 ## Identity 对象
+
 ### Identity 属性
-- corporation
-- email
-- loginName
-- name
+
+- `corporation`
+- `email`
+- `loginName`
+- `name`
 
 ## Index 对象
+
 ### Index 属性
-- available
-- name
-- path
-- selected
+
+- `available`
+- `name`
+- `path`
+- `selected`
+
 ### Index 方法
-- build
+
+- `build`
 
 ## Link 对象
+
 ### Link 属性
-- borderColor
-- borderWidth
-- highlightMode
-- rect
+
+- `borderColor`
+- `borderWidth`
+- `highlightMode`
+- `rect`
+
 ### Link 方法
-- setAction
+
+- `setAction`
 
 ## Marker 对象
+
 ### Marker 对象属性
-- frame
-- index
-- name
-- time
+
+- `frame`
+- `index`
+- `name`
+- `time`
 
 ## Markers 对象
+
 ### Markers 对象属性
-- player
+
+- `player`
+
 ### Markers 对象方法
-- get
+
+- `get`
 
 ## MediaOffset 对象
+
 ### MediaOffset 对象属性
-- frame
-- marker
-- time
+
+- `frame`
+- `marker`
+- `time`
 
 ## MediaPlayer 对象
+
 ### MediaPlayer 对象属性
-- annot
-- defaultSize
-- doc
-- events
-- hasFocus
-- id
-- innerRect
-- isOpen
-- isPlaying
-- markers
-- outerRect
-- page
-- settings
-- uiSize
-- visible
+
+- `annot`
+- `defaultSize`
+- `doc`
+- `events`
+- `hasFocus`
+- `id`
+- `innerRect`
+- `isOpen`
+- `isPlaying`
+- `markers`
+- `outerRect`
+- `page`
+- `settings`
+- `uiSize`
+- `visible`
+
 ### MediaPlayer 对象方法
-- close
-- open
-- pause
-- play
-- seek
-- setFocus
-- stop
-- triggerGetRect
+
+- `close`
+- `open`
+- `pause`
+- `play`
+- `seek`
+- `setFocus`
+- `stop`
+- `triggerGetRect`
 
 ## MediaReject 对象
+
 ### MediaReject 对象属性
-- rendition
+
+- `rendition`
 
 ## MediaSelection 对象
+
 ### MediaSelection 对象属性
-- selectContext
-- players
-- rejects
-- rendition
 
-### MediaSettings 对象
+- `selectContext`
+- `players`
+- `rejects`
+- `rendition`
+
+## MediaSettings 对象
+
 ### MediaSettings 对象属性
-- autoPlay
-- baseURL
-- bgColor
-- bgOpacity
-- endAt
-- data
-- duration
-- floating
-- layout
-- monitor
-- monitorType
-- page
-- palindrome
-- players
-- rate
-- repeat
-- showUI
-- startAt
-- visible
-- volume
-- windowType
 
-### Monitor 对象
+- `autoPlay`
+- `baseURL`
+- `bgColor`
+- `bgOpacity`
+- `endAt`
+- `data`
+- `duration`
+- `floating`
+- `layout`
+- `monitor`
+- `monitorType`
+- `page`
+- `palindrome`
+- `players`
+- `rate`
+- `repeat`
+- `showUI`
+- `startAt`
+- `visible`
+- `volume`
+- `windowType`
+
+## Monitor 对象
+
 ### Monitor 对象属性
-- colorDepth
-- isPrimary
-- rect
-- workRect
 
-### Monitors 对象
+- `colorDepth`
+- `isPrimary`
+- `rect`
+- `workRect`
+
+## Monitors 对象
+
 ### Monitors 对象属性
+
 ### Monitors 对象方法
-- bestColor
-- bestFit
-- desktop
-- document
-- filter
 
-largest
-leastOverlap
-mostOverlap
-nonDocument
-primary
-secondary
-select
-tallest
-widest
+- `bestColor`
+- `bestFit`
+- `desktop`
+- `document`
+- `filter`
+- `largest`
+- `leastOverlap`
+- `mostOverlap`
+- `nonDocument`
+- `primary`
+- `secondary`
+- `select`
+- `tallest`
+- `widest`
 
-OCG 对象
-OCG 属性
-constants
-initState
-locked
-name
-state
+## OCG 对象
 
-OCG 方法
-getIntent
-setAction
-setIntent
+### OCG 属性
 
-PlayerInfo 对象
-PlayerInfo 对象属性
-id
-mimeTypes
-name
-version
+- `constants`
+- `initState`
+- `locked`
+- `name`
+- `state`
 
-PlayerInfo 对象方法
-canPlay
-honors
-canUseData
+### OCG 方法
 
-PlayerInfoList 对象
-PlayerInfoList 对象属性
-PlayerInfoList 对象方法
-select
+- `getIntent`
+- `setAction`
+- `setIntent`
 
-PlugIn 对象
-PlugIn 属性
-certified
-loaded
-name
-path
-version
+## PlayerInfo 对象
 
-printParams 对象
-PrintParams 属性
-binaryOK
-bitmapDPI
-colorOverride
-colorProfile
+### PlayerInfo 对象属性
 
+- `id`
+- `mimeTypes`
+- `name`
+- `version`
+
+### PlayerInfo 对象方法
+
+- `canPlay`
+- `honors`
+- `canUseData`
+
+## PlayerInfoList 对象
+
+### PlayerInfoList 对象属性
+
+### PlayerInfoList 对象方法
+
+- `select`
+
+## PlugIn 对象
+
+### PlugIn 属性
+
+- `certified`
+- `loaded`
+- `name`
+- `path`
+- `version`
+
+## printParams 对象
+
+### PrintParams 属性
+
+- `binaryOK`
+- `bitmapDPI`
+- `colorOverride`
+- `colorProfile`
 
 ## Row 通用对象
 
@@ -211,58 +235,58 @@ colorProfile
 
 ### ScreenAnnot 对象属性
 
-- altText 525
-- alwaysShowFocus 526
-- display 526
-- doc 526
-- events 526
-- extFocusRect 527
-- innerDeviceRect 527
-- noTrigger 528
-- outerDeviceRect 528
-- page 528
-- player 528
-- rect 529
+- `altText` 525
+- `alwaysShowFocus` 526
+- `display` 526
+- `doc` 526
+- `events` 526
+- `extFocusRect` 527
+- `innerDeviceRect` 527
+- `noTrigger` 528
+- `outerDeviceRect` 528
+- `page` 528
+- `player` 528
+- `rect` 529
 
 ### ScreenAnnot 对象方法
 
-- hasFocus 529
-- setFocus 529
+- `hasFocus` 529
+- `setFocus` 529
 
 ## Search 对象
 
 ### Search 属性
 
-- attachments 530
-- available 531
-- docInfo 531
-- docText 531
-- docXMP 531
-- bookmarks 532
-- ignoreAccents 532
-- ignoreAsianCharacterWidth 532
-- indexes 532
-- jpegExif 533
-- legacySearch 533
-- markup 533
-- matchCase 533
-- matchWholeWord 533
-- maxDocs 534
-- objectMetadata 534
-- proximity 534
-- proximityRange 534
-- refine 535
-- soundex 535
-- stem 535
-- thesaurus 535
-- wordMatching 536
+- `attachments` 530
+- `available` 531
+- `docInfo` 531
+- `docText` 531
+- `docXMP` 531
+- `bookmarks` 532
+- `ignoreAccents` 532
+- `ignoreAsianCharacterWidth` 532
+- `indexes` 532
+- `jpegExif` 533
+- `legacySearch` 533
+- `markup` 533
+- `matchCase` 533
+- `matchWholeWord` 533
+- `maxDocs` 534
+- `objectMetadata` 534
+- `proximity` 534
+- `proximityRange` 534
+- `refine` 535
+- `soundex` 535
+- `stem` 535
+- `thesaurus` 535
+- `wordMatching` 536
 
 ### Search 方法
 
-- addIndex 536
-- getIndexForPath 537
-- query 537
-- removeIndex 538
+- `addIndex` 536
+- `getIndexForPath` 537
+- `query` 537
+- `removeIndex` 538
 
 ## Security 对象
 
@@ -270,17 +294,17 @@ colorProfile
 
 ### Security 属性
 
-- handlers 540
-- validateSignaturesOnOpen 541
+- `handlers` 540
+- `validateSignaturesOnOpen` 541
 
 ### Security 方法
 
-- chooseRecipientsDialog 541
-- chooseSecurityPolicy 544
-- exportToFile 545
-- getHandler 545
-- getSecurityPolicies 546
-- importFromFile 548
+- `chooseRecipientsDialog` 541
+- `chooseSecurityPolicy` 544
+- `exportToFile` 545
+- `getHandler` 545
+- `getSecurityPolicies` 546
+- `importFromFile` 548
 
 ## SecurityPolicy 对象
 
@@ -290,28 +314,28 @@ colorProfile
 
 ### SecurityHandler 属性
 
-- appearances 550
-- digitalIDs 551
-- directories 552
-- directoryHandlers 552
-- isLoggedIn 552
-- loginName 553
-- loginPath 553
-- name 553
-- signAuthor 554
-- signFDF 554
-- signInvisible 554
-- signValidate 554
-- signVisible 554
-- uiName 555
+- `appearances` 550
+- `digitalIDs` 551
+- `directories` 552
+- `directoryHandlers` 552
+- `isLoggedIn` 552
+- `loginName` 553
+- `loginPath` 553
+- `name` 553
+- `signAuthor` 554
+- `signFDF` 554
+- `signInvisible` 554
+- `signValidate` 554
+- `signVisible` 554
+- `uiName` 555
 
 ### SecurityHandler 方法
 
-- login 555
-- logout 558
-- newDirectory 559
-- newUser 559
-- setPasswordTimeout 561
+- `login` 555
+- `logout` 558
+- `newDirectory` 559
+- `newUser` 559
+- `setPasswordTimeout` 561
 
 ## SignatureInfo 对象
 
@@ -321,65 +345,69 @@ colorProfile
 
 ### SOAP 属性
 
-
-
 ## Statement 对象
 
-- Statement 属性 .613
-    - columnCount .613
-    - rowCount .613
-- Statement 方法 .613
-    - execute .613
-    - getColumn .614
-    - getColumnArray .615
-    - getRow .615
-    - nextRow .616
+### Statement 属性 613
+
+- `columnCount` 613
+- `rowCount` 613
+
+### Statement 方法 613
+
+- `execute` 613
+- `getColumn` 614
+- `getColumnArray` 615
+- `getRow` 615
+- `nextRow` 616
 
 ## TableInfo 泛型对象
 
 ## Template 对象
 
-- Template 属性 .618
-    - hidden .618
-    - name .618
-- Template 方法 .618
-    - spawn .618
+### Template 属性 618
+
+- `hidden` 618
+- `name` 618
+
+### Template 方法 618
+
+- `spawn` 618
 
 ## Thermometer 对象
 
-- Thermometer 属性 .620
-    - cancelled .620
-    - duration .620
-    - value .620
-    - text .621
-- Thermometer 方法 .621
-    - begin .621
-    - end .621
+### Thermometer 属性 620
+
+- `cancelled` 620
+- `duration` 620
+- `value` 620
+- `text` 621
+
+### Thermometer 方法 621
+
+- `begin` 621
+- `end` 621
 
 ## TTS 对象
 
-- TTS 属性 .622
-    - available .622
-    - numSpeakers .622
-    - pitch .623
-    - soundCues .623
-    - speaker .623
-    - speechCues .623
-    - speechRate .623
-    - volume .623
-- TTS 方法 .624
-    - getNthSpeakerName .624
-    - pause .624
+### TTS 属性 622
 
+- `available` 622
+- `numSpeakers` 622
+- `pitch` 623
+- `soundCues` 623
+- `speaker` 623
+- `speechCues` 623
+- `speechRate` 623
+- `volume` 623
 
+### TTS 方法 624
 
-
-
-
+- `getNthSpeakerName` 624
 
 > **历史说明：** Acrobat JavaScript 可追溯至 Adobe Exchange 3.01，JavaScript 功能通过“Acrobat 表单创作插件 3.5 更新”添加到了该版本中。
 
 ⊗
+
 随着 Acrobat JavaScript 扩展的发展，一些属性和方法已被其他更灵活或更合适的属性和方法所取代。不建议使用这些较旧的方法，并在版本列中标记为 ⊗。
 
 ### 第 2 列：保存和首选项
@@ -393,13 +421,13 @@ colorProfile
 
 | 符号 | 描述 |
 | :--- | :--- |
-| Ⓢ | 出于安全原因，此属性或方法可能仅在某些事件期间可用（例如，批处理、应用程序启动或在控制台中执行）。有关各种 Acrobat 事件的详细信息，请参见[事件对象](https://acrobat.adobe.com/us/en/dev/javascript/event-object.pdf)。<br><br>从 Acrobat 7.0 开始，要通过菜单事件执行受安全限制的方法（Ⓢ），以下条件之一必须为真：<br>1. 在**编辑 > 首选项 > 常规 > JavaScript**下，必须勾选标记为“启用菜单项 JavaScript 执行权限”的选项。<br>2. 该方法必须通过受信任的函数执行。有关详细信息和示例，请参见 [app.trustedFunction()](https://acrobat.adobe.com/us/en/dev/javascript/api-reference.pdf#app.trustedFunction)。<br><br>请查阅[特权与非特权上下文](https://acrobat.adobe.com/us/en/dev/javascript/api-reference.pdf#privileged-versus-non-privileged-context)段落，了解如何在非特权上下文中执行这些受限制的方法。<br><br>**注意：**（版本 6.0 或更高版本）如果文档已由受信任用于嵌入式 JavaScript 的作者认证，则其快速信息栏第三列中标记为 Ⓢ 的方法将不受限制地执行，前提是满足快速信息栏字段中规定的任何其他限制。 |
+| Ⓢ | 出于安全原因，此属性或方法可能仅在某些事件期间可用（例如，批处理、应用程序启动或在控制台中执行）。有关各种 Acrobat 事件的详细信息，请参见[事件对象](https://acrobat.adobe.com/us/en/dev/javascript/event-object.pdf)。<br><br>从 Acrobat 7.0 开始，要通过菜单事件执行受安全限制的方法（Ⓢ），以下条件之一必须为真：<br>1. 在**编辑 > 首选项 > 常规 > JavaScript**下，必须勾选标记为“启用菜单项 JavaScript 执行权限”的选项。<br>2. 该方法必须通过受信任的函数执行。有关详细信息和示例，请参见 [`app.trustedFunction()`](https://acrobat.adobe.com/us/en/dev/javascript/api-reference.pdf#app.trustedFunction)。<br><br>请查阅[特权与非特权上下文](https://acrobat.adobe.com/us/en/dev/javascript/api-reference.pdf#privileged-versus-non-privileged-context)段落，了解如何在非特权上下文中执行这些受限制的方法。<br><br>**注意：**（版本 6.0 或更高版本）如果文档已由受信任用于嵌入式 JavaScript 的作者认证，则其快速信息栏第三列中标记为 Ⓢ 的方法将不受限制地执行，前提是满足快速信息栏字段中规定的任何其他限制。 |
 
 ### 第 4 列：在 Adobe Reader 中的可用性
 
 | 符号 | 描述 |
 | :--- | :--- |
-| | 如果该列为空，则该属性或方法在任何版本的 Adobe Reader 中都允许使用。 |
+|  | 如果该列为空，则该属性或方法在任何版本的 Adobe Reader 中都允许使用。 |
 | Ⓧ | 该属性或方法在任何版本的 Adobe Reader 中都不允许使用。 |
 | Ⓐ | 该属性或方法仅在 Adobe Reader 5.1 或更高版本中允许使用，不在 5.05 或更低版本中使用。 |
 | Ⓕ<br>Ⓖ<br>Ⓢ<br>Ⓓ | 该属性或方法只能在 Adobe Reader 5.1 或更高版本中访问，具体取决于额外的使用权限。<br>• **Ⓕ** 需要高级表单功能权限。<br>• **Ⓖ** 需要操作批注的权限。<br>• **Ⓢ** 需要文档保存权限。<br>• **Ⓓ** 需要文件附件权限。 |
@@ -416,12 +444,13 @@ colorProfile
 
 🅿 该属性或方法仅在 Acrobat 专业版中可用。
 
-### ADBC 对象
+## ADBC 对象
 
 | 5.0 | | | ⓧ | |
 | :--- | :--- | :--- | :--- | :--- |
 
 Acrobat 数据库连接 (ADBC) 插件允许 PDF 文档内部的 JavaScript 通过一致的对象模型访问数据库。该对象模型基于 ODBC 和 JDBC API 对象模型中使用的一般原则。与 ODBC 和 JDBC 一样，ADBC 是通过 SQL（结构化查询语言）与数据库通信的一种手段。
+
 ADBC 是 Windows 专有的功能，需要在客户端计算机上安装 ODBC（来自 Microsoft Corporation 的开放数据库连接）。
 
 > **注意：**（安全性 (S)）：需要特别注意的是，ADBC 为其编程访问的任何数据库都不提供安全性。保持所有数据安全是数据库管理员的责任。
@@ -450,50 +479,48 @@ ADBC 是 Windows 专有的功能，需要在客户端计算机上安装 ODBC（�
 | `SQLT_DECIMAL` | 5 | |
 | `SQLT_DOUBLE` | 6 | |
 
-
-
 Column 泛型对象和 ColumnInfo 泛型对象的类型属性使用这些属性。
 
 ## JavaScript 类型
 
 | 常量属性名 | 值 |
-|---|---|
-| Numeric | 0 |
-| String | 1 |
-| Binary | 2 |
-| Boolean | 3 |
-| Time | 4 |
-| Date | 5 |
-| TimeStamp | 6 |
+| :--- | :--- |
+| `Numeric` | 0 |
+| `String` | 1 |
+| `Binary` | 2 |
+| `Boolean` | 3 |
+| `Time` | 4 |
+| `Date` | 5 |
+| `TimeStamp` | 6 |
 
 ADBC 对象具有以下代表各种 JavaScript 数据类型的常量属性。
 
 | 常量属性名 | 值 | 版本 |
-|---|---|---|
-| SQLT_FLOAT | 7 | |
-| SQLT_INTEGER | 8 | |
-| SQLT_LONGVARBINARY | 9 | |
-| SQLT_LONGVARCHAR | 10 | |
-| SQLT_NUMERIC | 11 | |
-| SQLT_REAL | 12 | |
-| SQLT_SMALLINT | 13 | |
-| SQLT_TIME | 14 | |
-| SQLT_TIMESTAMP | 15 | |
-| SQLT_TINYINT | 16 | |
-| SQLT_VARBINARY | 17 | |
-| SQLT_VARCHAR | 18 | |
-| SQLT_NCHAR | 19 | 6.0 |
-| SQLT_NVARCHAR | 20 | 6.0 |
-| SQLT_NTEXT | 21 | 6.0 |
+| :--- | :--- | :--- |
+| `SQLT_FLOAT` | 7 | |
+| `SQLT_INTEGER` | 8 | |
+| `SQLT_LONGVARBINARY` | 9 | |
+| `SQLT_LONGVARCHAR` | 10 | |
+| `SQLT_NUMERIC` | 11 | |
+| `SQLT_REAL` | 12 | |
+| `SQLT_SMALLINT` | 13 | |
+| `SQLT_TIME` | 14 | |
+| `SQLT_TIMESTAMP` | 15 | |
+| `SQLT_TINYINT` | 16 | |
+| `SQLT_VARBINARY` | 17 | |
+| `SQLT_VARCHAR` | 18 | |
+| `SQLT_NCHAR` | 19 | 6.0 |
+| `SQLT_NVARCHAR` | 20 | 6.0 |
+| `SQLT_NTEXT` | 21 | 6.0 |
 
 方法 `statement.getColumn` 和 `statement.getColumnArray` 使用这些类型。
 
 ## ADBC 方法
 
-### getDataSourceList
+### `getDataSourceList`
 
 | 5.0 | | | ⓧ | |
-|---|---|---|---|---|
+| :--- | :--- | :--- | :--- | :--- |
 
 获取可从给定系统访问的数据库信息。
 
@@ -509,31 +536,34 @@ ADBC 对象具有以下代表各种 JavaScript 数据类型的常量属性。
 
 请参阅 [newConnection] 获取示例。
 
-### newConnection
+### `newConnection`
 
 | 5.0 | | ⓢ | ⓧ | |
-|---|---|---|---|---|
+| :--- | :--- | :--- | :--- | :--- |
 
-创建一个与指定数据库关联的 [Connection 对象]。可选地，你可以提供一个用户 ID 和密码。
 
-> **注意:** （安全性ⓢ，版本 6.0）可以使用不带 DSN 的连接字符串连接到数据库，但这仅在 Acrobat 6.0 及更高版本中，在控制台、批处理或菜单事件期间被允许。另请参阅 [特权与非特权上下文]。
 
-从 Acrobat 7.0 开始，通过菜单事件执行 JavaScript 不再具有特权，有关详细信息，请参阅 [通过菜单执行 JavaScript]。
+创建一个与指定数据库关联的`Connection`对象。可选地，你可以提供一个用户 ID 和密码。
 
-**参数**
+> **注意：**（安全性ⓢ，版本 6.0）可以使用不带 DSN 的连接字符串连接到数据库，但这仅在 Acrobat 6.0 及更高版本中，在控制台、批处理或菜单事件期间被允许。另请参阅[特权与非特权上下文]。
 
-| cDSN | 数据库的数据源名称 (DSN)。 |
+从 Acrobat 7.0 开始，通过菜单事件执行 JavaScript 不再具有特权，有关详细信息，请参阅[通过菜单执行 JavaScript]。
+
+## 参数
+
+| 参数 | 描述 |
 |---|---|
-| cUID | （可选）用户 ID。 |
-| cPWD | （可选）密码。 |
+| `cDSN` | 数据库的数据源名称（DSN）。 |
+| `cUID` | （可选）用户 ID。 |
+| `cPWD` | （可选）密码。 |
 
-**返回值**
+## 返回值
 
-一个 Connection 对象，失败时返回 null。
+一个`Connection`对象，失败时返回`null`。
 
-**示例**
+## 示例
 
-```
+```javascript
 /* 首先，获取系统上可用的 DataSourceInfo 对象数组 */
 var aList = ADBC.getDataSourceList();
 console.show(); console.clear();
@@ -575,34 +605,35 @@ var Connection = ADBC.newConnection("q32000data");
 
 Acrobat 的多媒体插件在各种情况下会显示错误警报，例如缺少媒体文件。JavaScript 代码可以自定义这些警报，无论是针对整个文档还是单个媒体播放器。
 
-在警报情况下，`media.js` 中的代码会调用一个内部函数 `app.media.alert()`，其参数包含有关警报的信息。`app.media.alert()` 方法通过查找 alerter 对象并按以下顺序调用其 `dispatch()` 方法来处理警报：
+在警报情况下，`media.js`中的代码会调用一个内部函数`app.media.alert()`，其参数包含有关警报的信息。`app.media.alert()`方法通过查找 alerter 对象并按以下顺序调用其`dispatch()`方法来处理警报：
 
-- args.alerter
-- doc.media.alerter
-- doc.media.stockAlerter
+- `args.alerter`
+- `doc.media.alerter`
+- `doc.media.stockAlerter`
 
-要处理特定播放器的警报，请在调用 `app.media.createPlayer()` 或 `app.media.openPlayer()` 时，在 `args.alerter` 中提供一个 alerter 对象。
+要处理特定播放器的警报，请在调用`app.media.createPlayer()`或`app.media.openPlayer()`时，在`args.alerter`中提供一个 alerter 对象。
 
-要处理整个文档的警报，请将 `doc.media.alerter` 设置为一个 alerter 对象。通过将 `args.alerter` 或 `doc.media.alerter` 设置为 null，可以抑制播放器或文档的所有警报。
+要处理整个文档的警报，请将`doc.media.alerter`设置为一个 alerter 对象。通过将`args.alerter`或`doc.media.alerter`设置为`null`，可以抑制播放器或文档的所有警报。
 
-`doc.media.stockAlerter` 提供了在未指定自定义 alerter 时使用的默认警报。此属性由 `app.media.alert()` 自动初始化。通常，开发者代码中不会引用 `doc.media.stockAlerter`。
+`doc.media.stockAlerter`提供了在未指定自定义 alerter 时使用的默认警报。此属性由`app.media.alert()`自动初始化。通常，开发者代码中不会引用`doc.media.stockAlerter`。
 
-`app.media.alert()` 方法在 `media.js` 中的 JavaScript 代码中实现，并且仅从 `media.js` 的其他地方调用。此函数并非设计用于从 PDF 应用程序调用，但查看其源代码可以了解自定义警报处理的工作方式，这可能具有指导意义。
+`app.media.alert()`方法在`media.js`中的 JavaScript 代码中实现，并且仅从`media.js`的其他地方调用。此函数并非设计用于从 PDF 应用程序调用，但查看其源代码可以了解自定义警报处理的工作方式，这可能具有指导意义。
 
 ### Alerter 对象方法
 
 #### dispatch
 
-自定义 alerter 对象有一个方法 `dispatch()`，`app.media.alert` 调用它来处理警报情况。
+自定义 alerter 对象有一个方法`dispatch()`，`app.media.alert`调用它来处理警报情况。
 
-**参数**
+##### 参数
 
-| alert | 一个 alert 对象，参见下文的 [alert 对象](#)。 |
+| 参数 | 描述 |
 |---|---|
+| `alert` | 一个 alert 对象，参见下文的[alert 对象](#)。 |
 
-**返回值**
+##### 返回值
 
-布尔值，`true` 停止进一步的警报处理，`false` 继续处理。
+布尔值，`true`停止进一步的警报处理，`false`继续处理。
 
 #### alert 对象
 
@@ -611,16 +642,16 @@ Acrobat 的多媒体插件在各种情况下会显示错误警报，例如缺少
 | `type` | String | 所有警报类型 |
 | `doc` | Doc 对象 | 所有警报类型 |
 | `fromUser` | Boolean | 所有警报类型 |
-| `error` | Object | 适用于 "Exception" 类型警报。error 对象有一个 **message** 属性：`error: { message: String }` |
+| `error` | Object | 适用于 "Exception" 类型警报。error 对象有一个`message`属性：`error: { message: String }` |
 | `errorText` | String | 适用于 "PlayerError" 类型警报。 |
 | `fileName` | String | 适用于 "FileNotFound" 类型警报。 |
 | `selection` | MediaSelection 对象 | 适用于 "SelectFailed" 类型警报。 |
 
-**示例**
+##### 示例
 
 打开一个媒体播放器并抑制此播放器的所有警报。
 
-```
+```javascript
 app.media.openPlayer({ alerter: null });
 
 // 一种更精细的方式来实现相同的功能
@@ -633,11 +664,11 @@ app.media.openPlayer(
 });
 ```
 
-**示例**
+##### 示例
 
 对于此文档中的所有播放器，将任何警报记录到文本字段，并允许显示正常的警报框。
 
-```
+```javascript
 function logAlerts( doc )
 {
     count = 0;
@@ -668,11 +699,11 @@ function logAlerts( doc )
 logAlerts( this );
 ```
 
-**示例**
+##### 示例
 
 在此处理 PlayerError 警报，其他警报使用默认处理。
 
-```
+```javascript
 this.media.alerter =
 {
     dispatch( alert )
@@ -689,42 +720,42 @@ this.media.alerter =
 
 ## AlternatePresentation 对象
 
-此对象提供对文档特定备用演示文稿的接口。使用 **doc.alternatePresentations** 获取 **alternatePresentation** 对象。有关备用演示文稿的更多详细信息，请参阅 [PDF 参考](http://www.example.com) 第 9.4 节。
+此对象提供对文档特定备用演示文稿的接口。使用`doc.alternatePresentations`获取`alternatePresentation`对象。有关备用演示文稿的更多详细信息，请参阅[PDF 参考](http://www.example.com)第 9.4 节。
 
 ### AlternatePresentation 属性
 
-**active**
+#### active
 
-| 6.0 |   |   |   |
+| 6.0 | | | |
 |---|---|---|---|
 
-如果演示文稿当前处于活动状态，则此属性为 **true**，否则为 **false**。当演示文稿处于活动状态时，它控制其所属文档在屏幕上的显示方式。
+如果演示文稿当前处于活动状态，则此属性为`true`，否则为`false`。当演示文稿处于活动状态时，它控制其所属文档在屏幕上的显示方式。
 
-类型：Boolean 访问权限：R。
+类型：Boolean  
+访问权限：R。
 
-**示例**
+##### 示例
 
-请参阅 **start** 获取示例。
+请参阅`start`获取示例。
 
-**type**
+#### type
 
-| 6.0 |   |   |   |
+| 6.0 | | | |
 |---|---|---|---|
 
 备用演示文稿的类型。目前，唯一支持的类型是 "SlideShow"。
 
-类型：String 访问权限：R。
+类型：String  
+访问权限：R。
 
 ### AlternatePresentation 方法
 
-**start**
+#### start
 
-| 6.0 |   |   |   |
+| 6.0 | | | |
 |---|---|---|---|
 
-将文档视图切换到备用演示文稿模式，并使此 **AlternatePresentation** 对象 **活动**。如果在此方法被调用时，任何（此或另一个）备用演示文稿已经处于活动状态，则会抛出一个异常。
-
-
+将文档视图切换到备用演示文稿模式，并使此`AlternatePresentation`对象活动。如果在此方法被调用时，任何（此或另一个）备用演示文稿已经处于活动状态，则会抛出一个异常。
 
 ## Acrobat JavaScript 脚本参考
 
@@ -733,9 +764,9 @@ this.media.alerter =
 #### 参数
 
 | 参数 | 描述 |
-| --- | --- |
-| cOnStop | （可选）当演示因任何原因（由于调用 stop、用户显式操作或演示逻辑本身）完成时，由 Acrobat 计算的表达式。 |
-| cCommand | （可选）传递给替代演示的命令或脚本。此命令是演示特定的（不是 Acrobat JavaScript 表达式）。 |
+|---|---|
+| `cOnStop` | （可选）当演示因任何原因（由于调用`stop`、用户显式操作或演示逻辑本身）完成时，由 Acrobat 计算的表达式。 |
+| `cCommand` | （可选）传递给替代演示的命令或脚本。此命令是演示特定的（不是 Acrobat JavaScript 表达式）。 |
 
 #### 返回值
 
@@ -751,12 +782,12 @@ oMySlideShow = this.alternatePresentations.MySlideShow;
 if (!oMySlideShow.active) oMySlideShow.start();
 ```
 
-请注意，`this.alternatePresentations` 用于通过属性名称访问指定的演示。
+请注意，`this.alternatePresentations`用于通过属性名称访问指定的演示。
 
 ### stop
 
-| 6.0 |  |  |  |
-| --- | --- | --- | --- |
+| 6.0 | | | |
+|---|---|---|---|
 
 停止演示并将文档切换回正常（PDF）演示。如果在演示未处于活动状态时调用此方法，将抛出异常。
 
@@ -770,7 +801,7 @@ if (!oMySlideShow.active) oMySlideShow.start();
 
 #### 示例
 
-假设 `oMySlideShow` 是一个 AlternatePresentations 对象。相关示例请参见 start。
+假设`oMySlideShow`是一个 AlternatePresentations 对象。相关示例请参见`start`。
 
 ```javascript
 // 如果已激活则停止演示
@@ -779,22 +810,26 @@ if (oMySlideShow.active) oMySlideShow.stop();
 
 ## Annot 对象
 
-Acrobat 注释插件的功能通过 `annot` 对象暴露给 JavaScript 方法。`annot` 对象表示一个特定的 Acrobat 注释；即，使用 Acrobat 注释工具创建的注释，或使用 `doc.addAnnot` 创建的注释。另请参见 `doc.getAnnot` 和 `doc.getAnnots`。
+Acrobat 注释插件的功能通过`annot`对象暴露给 JavaScript 方法。`annot`对象表示一个特定的 Acrobat 注释；即，使用 Acrobat 注释工具创建的注释，或使用`doc.addAnnot`创建的注释。另请参见`doc.getAnnot`和`doc.getAnnots`。
 
 Acrobat 用户界面将注释称为“批注”。
 
 ### 注释类型
 
-注释具有不同的类型，这反映在 `type` 属性中。每种类型如下表所示，同时列出了 `getProps` 方法返回的所有已记录属性。
+注释具有不同的类型，这反映在`type`属性中。每种类型如下表所示，同时列出了`getProps`方法返回的所有已记录属性。
 
 | 注释类型 | 属性 |
-| --- | --- |
-| **Text** | `author`, `borderEffectIntensity`, `borderEffectStyle`, `contents`, `creationDate`, `delay`, `hidden`, `inReplyTo`, `intent`, `lock`, `modDate`, `name`, `noView`, `noteIcon`, `opacity`, `page`, `point`, `popupOpen`, `popupRect`, `print`, `readOnly`, `rect`, `refType`, `richContents`, `rotate`, `seqNum`, `state`, `stateModel`, `strokeColor`, `style`, `subject`, `toggleNoView`, `type`, `width` |
-| **FreeText** | `alignment`, `author`, `borderEffectIntensity`, `borderEffectStyle`, `callout`, `contents`, `creationDate`, `dash`, `delay`, `fillColor`, `hidden`, `inReplyTo`, `intent`, `lineEnding`, `lock`, `modDate`, `name`, `noView`, `opacity`, `page`, `print`, `readOnly`, `rect`, `refType`, `richContents`, `richDefaults`, `rotate`, `seqNum`, `strokeColor`, `style`, `subject`, `textFont`, `textSize`, `toggleNoView`, `type`, `width` |
-| **Line** | `arrowBegin`, `arrowEnd`, `author`, `borderEffectIntensity`, `borderEffectStyle`, `contents`, `creationDate`, `dash`, `delay`, `doCaption`, `fillColor`, `hidden`, `inReplyTo`, `intent`, `leaderExtend`, `leaderLength`, `lock`, `modDate`, `name`, `noView`, `opacity`, `page`, `points`, `popupOpen`, `popupRect`, `print`, `readOnly`, `rect`, `refType`, `richContents`, `rotate`, `seqNum`, `strokeColor`, `style`, `subject`, `toggleNoView`, `type`, `width` |
-| **Square** | `author`, `borderEffectIntensity`, `borderEffectStyle`, `contents`, `creationDate`, `dash`, `delay`, `fillColor`, `hidden`, `inReplyTo`, `intent`, `lock`, `modDate`, `name`, `noView`, `opacity`, `page`, `popupOpen`, `popupRect`, `print`, `readOnly`, `rect`, `refType`, `richContents`, `rotate`, `seqNum`, `strokeColor`, `style`, `subject`, `toggleNoView`, `type`, `width` |
-| **Circle** | `author`, `borderEffectIntensity`, `borderEffectStyle`, `contents`, `creationDate`, `dash`, `delay`, `fillColor`, `hidden`, `inReplyTo`, `intent`, `lock`, `modDate`, `name`, `noView`, `opacity`, `page`, `popupOpen`, `popupRect`, `print`, `readOnly`, `rect`, `refType`, `richContents`, `rotate`, `seqNum`, `strokeColor`, `style`, `subject`, `toggleNoView`, `type`, `width` |
+|---|---|
+| `Text` | `author`, `borderEffectIntensity`, `borderEffectStyle`, `contents`, `creationDate`, `delay`, `hidden`, `inReplyTo`, `intent`, `lock`, `modDate`, `name`, `noView`, `noteIcon`, `opacity`, `page`, `point`, `popupOpen`, `popupRect`, `print`, `readOnly`, `rect`, `refType`, `richContents`, `rotate`, `seqNum`, `state`, `stateModel`, `strokeColor`, `style`, `subject`, `toggleNoView`, `type`, `width` |
+| `FreeText` | `alignment`, `author`, `borderEffectIntensity`, `borderEffectStyle`, `callout`, `contents`, `creationDate`, `dash`, `delay`, `fillColor`, `hidden`, `inReplyTo`, `intent`, `lineEnding`, `lock`, `modDate`, `name`, `noView`, `opacity`, `page`, `print`, `readOnly`, `rect`, `refType`, `richContents`, `richDefaults`, `rotate`, `seqNum`, `strokeColor`, `style`, `subject`, `textFont`, `textSize`, `toggleNoView`, `type`, `width` |
+| `Line` | `arrowBegin`, `arrowEnd`, `author`, `borderEffectIntensity`, `borderEffectStyle`, `contents`, `creationDate`, `dash`, `delay`, `doCaption`, `fillColor`, `hidden`, `inReplyTo`, `intent`, `leaderExtend`, `leaderLength`, `lock`, `modDate`, `name`, `noView`, `opacity`, `page`, `points`, `popupOpen`, `popupRect`, `print`, `readOnly`, `rect`, `refType`, `richContents`, `rotate`, `seqNum`, `strokeColor`, `style`, `subject`, `toggleNoView`, `type`, `width` |
+| `Square` | `author`, `borderEffectIntensity`, `borderEffectStyle`, `contents`, `creationDate`, `dash`, `delay`, `fillColor`, `hidden`, `inReplyTo`, `intent`, `lock`, `modDate`, `name`, `noView`, `opacity`, `page`, `popupOpen`, `popupRect`, `print`, `readOnly`, `rect`, `refType`, `richContents`, `rotate`, `seqNum`, `strokeColor`, `style`, `subject`, `toggleNoView`, `type`, `width` |
+| `Circle` | `author`, `borderEffectIntensity`, `borderEffectStyle`, `contents`, `creationDate`, `dash`, `delay`, `fillColor`, `hidden`, `inReplyTo`, `intent`, `lock`, `modDate`, `name`, `noView`, `opacity`, `page`, `popupOpen`, `popupRect`, `print`, `readOnly`, `rect`, `refType`, `richContents`, `rotate`, `seqNum`, `strokeColor`, `style`, `subject`, `toggleNoView`, `type`, `width` |
+
+
+
 | **Polygon** | `author`, `borderEffectIntensity`, `borderEffectStyle`, `contents`, `creationDate`, `dash`, `delay`, `fillColor`, `hidden`, `inReplyTo`, `intent`, `lock`, `modDate`, `name`, `noView`, `opacity`, `page`, `popupOpen`, `popupRect`, `print`, `readOnly`, `rect`, `refType`, `richContents`, `rotate`, `seqNum`, `strokeColor`, `style`, `subject`, `toggleNoView`, `type`, `vertices`, `width` |
+|---|---|
 | **PolyLine** | `arrowBegin`, `arrowEnd`, `author`, `borderEffectIntensity`, `borderEffectStyle`, `contents`, `creationDate`, `dash`, `delay`, `fillColor`, `hidden`, `inReplyTo`, `intent`, `lock`, `modDate`, `name`, `noView`, `opacity`, `page`, `popupOpen`, `popupRect`, `print`, `readOnly`, `rect`, `refType`, `richContents`, `rotate`, `seqNum`, `strokeColor`, `style`, `subject`, `toggleNoView`, `type`, `vertices`, `width` |
 | **Highlight** | `author`, `borderEffectIntensity`, `borderEffectStyle`, `contents`, `creationDate`, `delay`, `hidden`, `inReplyTo`, `intent`, `lock`, `modDate`, `name`, `noView`, `opacity`, `page`, `popupOpen`, `popupRect`, `print`, `quads`, `readOnly`, `rect`, `refType`, `richContents`, `rotate`, `seqNum`, `strokeColor`, `style`, `subject`, `toggleNoView`, `type`, `width` |
 | **Underline** | `author`, `borderEffectIntensity`, `borderEffectStyle`, `contents`, `creationDate`, `delay`, `hidden`, `inReplyTo`, `intent`, `lock`, `modDate`, `name`, `noView`, `opacity`, `page`, `popupOpen`, `popupRect`, `print`, `quads`, `readOnly`, `rect`, `refType`, `richContents`, `rotate`, `seqNum`, `strokeColor`, `style`, `subject`, `toggleNoView`, `type`, `width` |
@@ -804,7 +839,7 @@ Acrobat 用户界面将注释称为“批注”。
 | **Caret** | `author`, `borderEffectIntensity`, `borderEffectStyle`, `caretSymbol`, `contents`, `creationDate`, `delay`, `hidden`, `inReplyTo`, `intent`, `lock`, `modDate`, `name`, `noView`, `opacity`, `page`, `popupOpen`, `popupRect`, `print`, `readOnly`, `rect`, `refType`, `richContents`, `rotate`, `seqNum`, `strokeColor`, `style`, `subject`, `toggleNoView`, `type`, `width` |
 | **Ink** | `author`, `borderEffectIntensity`, `borderEffectStyle`, `contents`, `creationDate`, `dash`, `delay`, `gestures`, `hidden`, `inReplyTo`, `intent`, `lock`, `modDate`, `name`, `noView`, `opacity`, `page`, `popupOpen`, `popupRect`, `print`, `readOnly`, `rect`, `refType`, `richContents`, `rotate`, `seqNum`, `strokeColor`, `style`, `subject`, `toggleNoView`, `type`, `width` |
 | **FileAttachment** | `attachIcon`, `author`, `borderEffectIntensity`, `borderEffectStyle`, `contents`, `creationDate`, `delay`, `hidden`, `inReplyTo`, `intent`, `lock`, `modDate`, `name`, `noView`, `opacity`, `page`, `point`, `print`, `readOnly`, `rect`, `refType`, `richContents`, `rotate`, `seqNum`, `strokeColor`, `style`, `subject`, `toggleNoView`, `type`, `width` |
-| **Sound** | `author`, `borderEffectIntensity`, `borderEffectStyle`, `contents`, `creationDate`, `delay`, `hidden`, `inReplyTo`, `intent`, `lock`, `modDate`, `name`, `noView`, `opacity`, `page`, `point`, `print`, `readOnly`, `rect`, `refType`, `richContents`, `rotate`, `seqNum`, `soundIcon`, `strokeColor`, `style`, `subject`, `toggleNoView`, `type`, `width` |
+| **Sound** | `author`, `borderEffectIntensity`, `borderEffectStyle`, `contents`, `creationDate`, `delay`, `hidden`, `inReplyTo`, `intent`, `lock`, `modDate`, `name`, `noView`, `opacity`, `page`, `point`, `print`, `readOnly`, `rect`, `refType`, `richContents`, `rotate`, `seqNum`, `strokeColor`, `style`, `subject`, `toggleNoView`, `type`, `width` |
 
 ### 从 JavaScript 访问注释
 
@@ -814,30 +849,29 @@ Acrobat 用户界面将注释称为“批注”。
 var a = this.getAnnot(0, "Important");
 ```
 
-此示例允许脚本现在通过变量 **a** 操作第 1 页（基于 0 的页码系统）上名为 "Important" 的注释。例如，以下代码首先将注释类型存储在变量 **thetype** 中，然后将作者更改为 "John Q. Public"。
+此示例允许脚本现在通过变量 `a` 操作第 1 页（基于 0 的页码系统）上名为 "Important" 的注释。例如，以下代码首先将注释类型存储在变量 `thetype` 中，然后将作者更改为 "John Q. Public"。
 
 ```javascript
 var thetype = a.type;       // 读取属性
 a.author = "John Q. Public"; // 写入属性
 ```
 
-另一种访问 annot 对象的方法是通过 **doc.getAnnots()** 方法。
+另一种访问 annot 对象的方法是通过 `doc.getAnnots()` 方法。
 
-> **注意：** 在 Adobe Reader 5.1 或更高版本中，您可以获取除 **contents** 以外的任何 **annot** 属性的值。设置这些属性的能力取决于“批注”文档权限，如 **(C)** 图标所示。
+> **注意：** 在 Adobe Reader 5.1 或更高版本中，您可以获取除 `contents` 以外的任何 `annot` 属性的值。设置这些属性的能力取决于“批注”文档权限，如 `(C)` 图标所示。
 
 ### Annot 属性
 
 > **注意：** 一些属性值在 PDF 文档中以名称形式存储（参见 [PDF 参考文档](https://example.com) 中关于名称对象的第 3.2.4 节），而另一些则以字符串形式存储（参见 [PDF 参考文档](https://example.com) 中关于字符串对象的第 3.2.3 节）。对于以名称形式存储的属性，字符串长度限制为 127 个字符。
-具有 127 字符限制的属性示例包括 **AP**、**beginArrow**、**endArrow**、**attachIcon**、**noteIcon** 和 **soundIcon**。[PDF 参考文档](https://example.com) 记录了所有注释属性以及它们的存储方式。
 
-
+具有 127 字符限制的属性示例包括 `AP`、`beginArrow`、`endArrow`、`attachIcon`、`noteIcon` 和 `soundIcon`。[PDF 参考文档](https://example.com) 记录了所有注释属性以及它们的存储方式。
 
 ## 对齐方式
 
-| 5.0 | (D) | | (C) | (X) |
+| 5.0 | (D) |  | (C) | (X) |
 |---|---|---|---|---|
 
-控制 **FreeText** 批注文本的对齐方式。
+控制 `FreeText` 批注文本的对齐方式。
 
 | 对齐方式 | 值 |
 |---|---|
@@ -845,11 +879,11 @@ a.author = "John Q. Public"; // 写入属性
 | 居中对齐 | 1 |
 | 右对齐 | 2 |
 
-类型：*数字* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 访问权限：*读/写* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 适用批注：*FreeText*。
+类型：数字　访问权限：读/写　适用批注：`FreeText`。
 
 ## 外观
 
-| 5.0 | (D) | | (C) | (X) |
+| 5.0 | (D) |  | (C) | (X) |
 |---|---|---|---|---|
 
 用于显示图章批注的图章的命名外观。标准图章批注的名称如下：
@@ -869,11 +903,11 @@ a.author = "John Q. Public"; // 写入属性
 - 已售出
 - 绝密
 
-类型：*字符串* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 访问权限：*读/写* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 适用批注：*Stamp*。
+类型：字符串　访问权限：读/写　适用批注：`Stamp`。
 
 ## 示例
 
-```
+```javascript
 var annot = this.addAnnot({
     page: 0,
     type: "Stamp",
@@ -885,16 +919,16 @@ var annot = this.addAnnot({
 });
 ```
 
-> 注意：特定图章的名称可以通过在包含该图章的“图章”文件夹中打开 PDF 文件来找到。有关文档中当前使用的图章名称列表，请参阅 doc.icons。
+> 注意：特定图章的名称可以通过在包含该图章的“图章”文件夹中打开 PDF 文件来找到。有关文档中当前使用的图章名称列表，请参阅 `doc.icons`。
 
 ## 箭头起点
 
-| 5.0 | D | | C | X |
+| 5.0 | D |  | C | X |
 |---|---|---|---|---|
 
 确定线型批注**起点**使用的线帽样式（即形状）。允许的值如下：
 
-```
+```text
 None（默认）
 OpenArrow
 ClosedArrow
@@ -907,20 +941,20 @@ Square
 Slash           // 版本 7.0
 ```
 
-类型：字符串  访问权限：读/写  适用批注：Line, PolyLine。
+类型：字符串　访问权限：读/写　适用批注：`Line`、`PolyLine`。
 
 ## 示例
 
-请参阅 setProps。
+请参阅 `setProps`。
 
 ## 箭头终点
 
-| 5.0 | D | | C | X |
+| 5.0 | D |  | C | X |
 |---|---|---|---|---|
 
 确定线型批注**终点**使用的线帽样式（即形状）。允许的值如下：
 
-```
+```text
 None（默认）
 OpenArrow
 ClosedArrow
@@ -933,7 +967,7 @@ Square
 Slash           // 版本 7.0
 ```
 
-类型：字符串  访问权限：读/写  适用批注：Line, PolyLine。
+类型：字符串　访问权限：读/写　适用批注：`Line`、`PolyLine`。
 
 ## 示例
 
@@ -951,7 +985,7 @@ Slash           // 版本 7.0
 - 图表
 - 标签
 
-类型：*字符串*    访问权限：*读/写*    适用批注：*FileAttachment*。
+类型：字符串　访问权限：读/写　适用批注：`FileAttachment`。
 
 ## 作者
 
@@ -960,7 +994,7 @@ Slash           // 版本 7.0
 
 获取或设置批注的作者。
 
-类型：*字符串*    访问权限：*读/写*    适用批注：*所有*。
+类型：字符串　访问权限：读/写　适用批注：所有。
 
 ## 示例
 
@@ -973,7 +1007,7 @@ Slash           // 版本 7.0
 
 边框效果的强度（如果有）。这代表云朵状矩形、多边形或椭圆的模糊程度。
 
-类型：*数字*    访问权限：*读/写*    适用批注：*所有*。
+类型：数字　访问权限：读/写　适用批注：所有。
 
 ## 边框效果样式
 
@@ -982,29 +1016,31 @@ Slash           // 版本 7.0
 
 如果非空，则为边框效果样式的名称。目前，唯一支持的边框效果是空字符串（无）或 "C"（表示云朵状）。
 
-类型：字符串  访问权限：读/写  适用批注：所有。
+类型：字符串　访问权限：读/写　适用批注：所有。
 
 ## 引出线
 
-一个由四个或六个数字组成的数组，指定附加到富文本批注的引出线。有关更多详细信息，请参阅 [PDF 参考](http://www.adobe.com/devnet/pdf/pdf_reference.html)中的表 8.21。
+一个由四个或六个数字组成的数组，指定附加到富文本批注的引出线。有关更多详细信息，请参阅 [PDF 参考](http://www.adobe.com/devnet/pdf/pdf_reference.html) 中的表 8.21。
 
-类型：数组  访问权限：读/写  适用批注：FreeText。
+类型：数组　访问权限：读/写　适用批注：`FreeText`。
 
 ## 插入符符号
 
 与插入符批注关联的符号。有效值为 ""（无）、"P"（段落符号）或 "S"（空格符号）。
 
-类型：字符串  访问权限：读/写  适用批注：Caret。
+类型：字符串　访问权限：读/写　适用批注：`Caret`。
 
 ## 内容
 
-访问任何具有弹出框的批注的内容。对于 **Sound** 和 **FileAttachment** 批注，指定要显示为声音或附件描述的文本。
+访问任何具有弹出框的批注的内容。对于 `Sound` 和 `FileAttachment` 批注，指定要显示为声音或附件描述的文本。
 
 > **注意：** (©) 在 Adobe Reader 5.1 或更高版本中，获取和设置此属性取决于“注释”文档权限。
 
-类型：字符串  访问权限：读/写  适用批注：所有。
+类型：字符串　访问权限：读/写　适用批注：所有。
 
 ## 示例
+
+
 
 ```
 var annot = this.addAnnot({
@@ -1023,21 +1059,21 @@ var annot = this.addAnnot({
 
 创建批注的日期和时间。
 
-类型：日期  访问权限：只读  适用批注：所有。
+类型：日期 访问权限：只读 适用批注：所有。
 
 ## 虚线
 
-定义用于绘制虚线边框的虚线和间隔模式的虚线数组。例如，值 [3, 2] 指定一个由 3 点虚线和 2 点间隔交替组成的边框。
+定义用于绘制虚线边框的虚线和间隔模式的虚线数组。例如，值 `[3, 2]` 指定一个由 3 点虚线和 2 点间隔交替组成的边框。
 
-要设置虚线数组，必须将 **style** 属性设置为 "D"。
+要设置虚线数组，必须将 `style` 属性设置为 `"D"`。
 
-类型：数组  访问权限：读/写  适用批注：FreeText, Line, PolyLine, Polygon, Circle, Square, Ink。
+类型：数组 访问权限：读/写 适用批注：`FreeText`, `Line`, `PolyLine`, `Polygon`, `Circle`, `Square`, `Ink`。
 
 ## 示例
 
-假设 **annot** 是一个批注对象，以下代码将边框更改为虚线。
+假设 `annot` 是一个批注对象，以下代码将边框更改为虚线。
 
-另请参阅下面 **annot.delay** 后的示例。
+另请参阅下面 `annot.delay` 后的示例。
 
 ```
 annot.setProps({ style: "D", dash: [3,2] });
@@ -1045,13 +1081,13 @@ annot.setProps({ style: "D", dash: [3,2] });
 
 ## 延迟
 
-当为**真**时，对批注的属性更改会被排队，然后在 **delay** 设置回**假**时执行。（类似于 **Field.delay**。）
+当为**真**时，对批注的属性更改会被排队，然后在 `delay` 设置回**假**时执行。（类似于 `Field.delay`。）
 
-类型：布尔值  访问权限：读/写  适用批注：所有。
+类型：布尔值 访问权限：读/写 适用批注：所有。
 
 ## 示例
 
-假设 **annot** 是一个批注对象，以下代码将边框更改为虚线。
+假设 `annot` 是一个批注对象，以下代码将边框更改为虚线。
 
 ```
 annot.delay = true;
@@ -1067,7 +1103,7 @@ annot.delay = false;
 
 返回批注所在文档的文档对象。
 
-类型：文档对象  访问权限：只读  适用批注：所有。
+类型：文档对象 访问权限：只读 适用批注：所有。
 
 ## 示例
 
@@ -1089,7 +1125,7 @@ console.println(annot.doc.URL);
 
 一个布尔属性，当为真时，将富文本内容绘制在线条外观本身中。在 UI 中，此属性对应于属性对话框中的“在线条中显示文本”。
 
-类型：布尔值  访问权限：读/写  适用批注：Line。
+类型：布尔值 访问权限：读/写 适用批注：`Line`。
 
 ## 填充颜色
 
@@ -1098,7 +1134,7 @@ console.println(annot.doc.URL);
 
 为圆形、方形、线型、多边形、折线和富文本批注设置背景色。值通过使用透明色、灰色、RGB 或 CMYK 颜色来定义。有关定义颜色数组以及如何将此属性与值一起使用的详细信息，请参阅颜色数组。
 
-类型：颜色  访问权限：读/写  适用批注：Circle, Square, Line, Polygon, PolyLine, FreeText。
+类型：颜色 访问权限：读/写 适用批注：`Circle`, `Square`, `Line`, `Polygon`, `PolyLine`, `FreeText`。
 
 ## 示例
 
@@ -1121,7 +1157,7 @@ var annot = this.addAnnot({
 
 一个数组的数组，每个数组代表一个描边路径。每个数组是一系列在*默认用户空间*中交替的 *x* 和 *y* 坐标，指定路径上的点。绘制时，这些点以与实现相关的方式通过直线或曲线连接。有关更多详细信息，请参阅 [PDF 参考](https://help.adobe.com/en_US/acrobat/SDK/ACROBATSDK.pdf)中的“墨迹注释”。
 
-*类型：数组* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *访问权限：读/写* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *适用批注：Ink。*
+*类型：数组* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *访问权限：读/写* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *适用批注：`Ink`。*
 
 ## 隐藏
 
@@ -1131,70 +1167,67 @@ var annot = this.addAnnot({
 
 ## 回复对象
 
-如果非空，则为该批注所回复的批注的 **name** 值。
+如果非空，则为该批注所回复的批注的 `name` 值。
 
 *类型：字符串* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *访问权限：读/写* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *适用批注：所有。*
 
 ## 意图
 
-标记**意图**是一个属性，通过它，单个标记批注类型可以在查看应用程序中根据标记的预期最终用户用途而表现不同。例如，**引出工具**是一个将**意图**设置为 **FreeTextCallout** 的**富文本**批注。
-
-
-
+标记`意图`是一个属性，通过它，单个标记批注类型可以在查看应用程序中根据标记的预期最终用户用途而表现不同。例如，`引出工具`是一个将`意图`设置为 `FreeTextCallout` 的`富文本`批注。
 
 下表列出了通过用户界面创建具有特殊外观注释的各种可用工具。这些工具建立在标准注释之上。
 
 | 用户界面工具 | 注释类型 | intent（意图） |
-| --- | --- | --- |
-| 括号工具 | **FreeText** | **FreeTextCallout** |
-| 云朵工具 | **Polygon** | **PolygonCloud** |
-| 箭头工具 | **Line** | **LineArrow** |
-| 标注尺寸工具 | **Line** | **LineDimension** |
+|---|---|---|
+| 括号工具 | `FreeText` | `FreeTextCallout` |
+| 云朵工具 | `Polygon` | `PolygonCloud` |
+| 箭头工具 | `Line` | `LineArrow` |
+| 标注尺寸工具 | `Line` | `LineDimension` |
 
 ## leaderExtend
 
 指定从线条每个端点垂直于线条本身延伸的*引线延长线*的长度。这些延长线从线条本身延伸，与引线方向相差180度。该值应始终大于或等于零。默认值为零，表示没有引线延长线。
 
-*类型:* *数字* *访问权限:* *读/写* *适用注释:* *Line.*
+*类型:* *数字* *访问权限:* *读/写* *适用注释:* *`Line`.*
 
 ## leaderLength
 
 指定从线条每个端点垂直于线条本身延伸的*引线*的长度。该值可以为负数以指定引线的替代方向。默认值为0，表示没有引线。
 
-*类型:* *数字* *访问权限:* *读/写* *适用注释:* *Line.*
+*类型:* *数字* *访问权限:* *读/写* *适用注释:* *`Line`.*
 
 ## lineEnding
 
 此属性决定引线端点的描边方式。可识别的值为
 
-- None (默认)
-- OpenArrow
-- ClosedArrow
-- ROpenArrow // 版本 6.0
-- RClosedArrow // 版本 6.0
-- Butt // 版本 6.0
-- Diamond
-- Circle
-- Square
-- Slash // 版本 7.0
+- `None` (默认)
+- `OpenArrow`
+- `ClosedArrow`
+- `ROpenArrow` // 版本 6.0
+- `RClosedArrow` // 版本 6.0
+- `Butt` // 版本 6.0
+- `Diamond`
+- `Circle`
+- `Square`
+- `Slash` // 版本 7.0
 
-此属性仅当 FreeText 注释的 **intent** 为 **FreeTextCallout** 时才相关。
+此属性仅当 `FreeText` 注释的 `intent` 为 `FreeTextCallout` 时才相关。
 
-*类型:* *字符串* *访问权限:* *读/写* *适用注释:* *FreeText.*
+*类型:* *字符串* *访问权限:* *读/写* *适用注释:* *`FreeText`.*
 
 ## lock
 
 | 5.0 | D | C | X |
-| --- | --- | --- | --- |
+|---|---|---|---|
 
-当设为 **true** 时，注释被“锁定”，这等同于 **readOnly**（只读），不同之处在于注释可以通过用户界面（属性对话框）访问。
+当设为 `true` 时，注释被“锁定”，这等同于 `readOnly`（只读），不同之处在于注释可以通过用户界面（属性对话框）访问。
 
 *类型:* *布尔值* *访问权限:* *读/写* *适用注释:* *所有.*
 
 ## modDate
 
 | 5.0 | D | C | X |
-| --- | --- | --- | --- |
+|---|---|---|---|
 
 返回注释的最后修改日期。
 
@@ -1210,9 +1243,9 @@ console.println(util.printd("mmmm dd, yyyy", annot.modDate));
 ## name
 
 | 5.0 | D | C | X |
-| --- | --- | --- | --- |
+|---|---|---|---|
 
-注释的名称。**doc.getAnnot** 可使用此值来查找并访问注释的属性和方法。
+注释的名称。`doc.getAnnot` 可使用此值来查找并访问注释的属性和方法。
 
 *类型:* *字符串* *访问权限:* *读/写* *适用注释:* *所有.*
 
@@ -1228,49 +1261,49 @@ gannot.contents += "\r\rDon't forget to check with Smith";
 ## noteIcon
 
 | 5.0 | ⊙ | ⊛ | ✖ |
-| --- | --- | --- | --- |
+|---|---|---|---|
 
 用于显示注释的图标名称。可识别的值如下：
 
-- Check
-- Circle
-- Comment
-- Cross
-- Help
-- Insert
-- Key
-- NewParagraph
-- Note (默认)
-- Paragraph
-- RightArrow
-- RightPointer
-- Star
-- UpArrow
-- UpLeftArrow
+- `Check`
+- `Circle`
+- `Comment`
+- `Cross`
+- `Help`
+- `Insert`
+- `Key`
+- `NewParagraph`
+- `Note` (默认)
+- `Paragraph`
+- `RightArrow`
+- `RightPointer`
+- `Star`
+- `UpArrow`
+- `UpLeftArrow`
 
-*类型:* *字符串* *访问权限:* *读/写* *适用注释:* *Text.*
+*类型:* *字符串* *访问权限:* *读/写* *适用注释:* *`Text`.*
 
 ### 示例
 
-请参阅 **contents**。
+请参阅 `contents`。
 
 ## noView
 
 | 5.0 | ⊙ | ⊛ | ✖ |
-| --- | --- | --- | --- |
+|---|---|---|---|
 
-如果为 **true**，则注释被隐藏，但如果注释具有外观，则该外观应仅用于打印。
+如果为 `true`，则注释被隐藏，但如果注释具有外观，则该外观应仅用于打印。
 
 *类型:* *布尔值* *访问权限:* *读/写* *适用注释:* *所有.*
 
 ### 示例
 
-请参阅 **toggleNoView**。
+请参阅 `toggleNoView`。
 
 ## opacity
 
 | 5.0 | D | C | X |
-| --- | --- | --- | --- |
+|---|---|---|---|
 
 绘制注释时使用的恒定不透明度值。此值适用于注释在关闭状态下的所有可见元素（包括其背景和边框），但不适用于打开注释时出现的弹出窗口。允许的值为 0.0 - 1.0。值为 0.5 会使注释半透明。
 
@@ -1279,7 +1312,7 @@ gannot.contents += "\r\rDon't forget to check with Smith";
 ## page
 
 | 5.0 | D | C | X |
-| --- | --- | --- | --- |
+|---|---|---|---|
 
 注释所在的页面。
 
@@ -1287,7 +1320,7 @@ gannot.contents += "\r\rDon't forget to check with Smith";
 
 ### 示例
 
-以下代码将 Annot 对象 **annot** 从其当前页面移动到第3页（基于0的页面编号系统）。
+以下代码将 `Annot` 对象 `annot` 从其当前页面移动到第3页（基于0的页面编号系统）。
 
 ```
 annot.page = 2;
@@ -1296,11 +1329,11 @@ annot.page = 2;
 ## point
 
 | 5.0 | D | C | X |
-| --- | --- | --- | --- |
+|---|---|---|---|
 
-一个包含两个数字的数组 *[x<sub>u</sub>, y<sub>u</sub>]*，指定注释的 **Text**（文本）、**Sound**（音频）或 **FileAttachment**（文件附件）图标在默认用户空间中的左上角坐标。
+一个包含两个数字的数组 *[x<sub>u</sub>, y<sub>u</sub>]*，指定注释的 `Text`（文本）、`Sound`（音频）或 `FileAttachment`（文件附件）图标在默认用户空间中的左上角坐标。
 
-*类型:* *数组* *访问权限:* *读/写* *适用注释:* *Text, Sound, FileAttachment.*
+*类型:* *数组* *访问权限:* *读/写* *适用注释:* *`Text`, `Sound`, `FileAttachment`.*
 
 ### 示例
 
@@ -1316,13 +1349,13 @@ var annot = this.addAnnot({
 });
 ```
 
-另请参阅 **addAnnot** 和 **noteIcon**。
+另请参阅 `addAnnot` 和 `noteIcon`。
 
 ## points
 
-一个包含两个点的数组 [[x₁, y₁], [x₂, y₂]]，指定在默认用户空间中线条的起始和结束坐标。
+一个包含两个点的数组 `[[x₁, y₁], [x₂, y₂]]`，指定在默认用户空间中线条的起始和结束坐标。
 
-*类型:* *数组* *访问权限:* *读/写* *适用注释:* *Line.*
+*类型:* *数组* *访问权限:* *读/写* *适用注释:* *`Line`.*
 
 ### 示例
 
@@ -1342,7 +1375,7 @@ var annot = this.addAnnot({
 
 如果为 true，当页面显示时，弹出式文本注释将处于打开状态。
 
-*类型:* *布尔值* *访问权限:* *读/写* *适用注释:* *所有，除 FreeText, Sound, FileAttachment 外.*
+*类型:* *布尔值* *访问权限:* *读/写* *适用注释:* *所有，除 `FreeText`, `Sound`, `FileAttachment` 外.*
 
 ### 示例
 
@@ -1350,9 +1383,9 @@ var annot = this.addAnnot({
 
 ## popupRect
 
-一个包含四个数字的数组 [x_ll, y_ll, x_ur, y_ur]，指定在默认用户空间中，与父注释关联的弹出式注释矩形的左下角 x、左下角 y、右上角 x 和右上角 y 坐标，并定义了弹出式注释在页面上的位置。
+一个包含四个数字的数组 `[x_ll, y_ll, x_ur, y_ur]`，指定在默认用户空间中，与父注释关联的弹出式注释矩形的左下角 x、左下角 y、右上角 x 和右上角 y 坐标，并定义了弹出式注释在页面上的位置。
 
-*类型:* *数组* *访问权限:* *读/写* *适用注释:* *所有，除 FreeText, Sound, FileAttachment 外.*
+*类型:* *数组* *访问权限:* *读/写* *适用注释:* *所有，除 `FreeText`, `Sound`, `FileAttachment` 外.*
 
 ### 示例
 
@@ -1361,20 +1394,20 @@ var annot = this.addAnnot({
 ## print
 
 | 5.0 | Ⓓ | Ⓒ | Ⓧ |
-| --- | --- | --- | --- |
+|---|---|---|---|
 
-指示注释是否应被打印。当设置为 **true** 时，注释将被打印。
+指示注释是否应被打印。当设置为 `true` 时，注释将被打印。
 
 *类型:* *布尔值* *访问权限:* *读/写* *适用注释:* *所有.*
 
 ## quads
 
 | 5.0 | Ⓓ | Ⓒ | Ⓧ |
-| --- | --- | --- | --- |
+|---|---|---|---|
 
-一个包含 8 x n 个数字的数组，指定 *默认用户空间* 中 n 个四边形的坐标。每个四边形包含注释下方文本中的一个单词或一组连续的单词。有关更多详细信息，请参阅 **PDF 参考手册** 第414页的表7.19。可以通过调用 [getPageNthWordQuads](getPageNthWordQuads) 获取一个单词的 **quads**。
+一个包含 8 x n 个数字的数组，指定 *默认用户空间* 中 n 个四边形的坐标。每个四边形包含注释下方文本中的一个单词或一组连续的单词。有关更多详细信息，请参阅 **PDF 参考手册** 第414页的表7.19。可以通过调用 `getPageNthWordQuads` 获取一个单词的 `quads`。
 
-*类型:* *数组* *访问权限:* *读/写* *适用注释:* *Highlight, StrikeOut, Underline, Squiggly.*
+*类型:* *数组* *访问权限:* *读/写* *适用注释:* *`Highlight`, `StrikeOut`, `Underline`, `Squiggly`.*
 
 ### 示例
 
@@ -1383,28 +1416,26 @@ var annot = this.addAnnot({
 ## rect
 
 | 5.0 | Ⓓ | Ⓒ | Ⓧ |
-| --- | --- | --- | --- |
+|---|---|---|---|
 
-**rect** 数组包含四个数字 [x_ll, y_ll, x_ur, y_ur]，指定在 *默认用户空间* 中定义注释在页面上位置的矩形的左下角 x、左下角 y、右上角 x 和右上角 y 坐标。另请参阅 [popupRect](popupRect)。
+`rect` 数组包含四个数字 `[x_ll, y_ll, x_ur, y_ur]`，指定在 *默认用户空间* 中定义注释在页面上位置的矩形的左下角 x、左下角 y、右上角 x 和右上角 y 坐标。另请参阅 [popupRect](popupRect)。
 
 *类型:* *数组* *访问权限:* *读/写* *适用注释:* *所有.*
 
 ## readOnly
 
 | 5.0 | Ⓓ | Ⓒ | Ⓧ |
-| --- | --- | --- | --- |
+|---|---|---|---|
 
-当为 **true** 时，表示注释应显示但不与用户交互。
+当为 `true` 时，表示注释应显示但不与用户交互。
 
 *类型:* *布尔值* *访问权限:* *读/写* *适用注释:* *所有.*
-
-
 
 ## refType
 
 | 7.0 | Ⓓ | Ⓒ | Ⓧ |
 
-批注的引用类型。此属性用于区分 [inReplyTo](inReplyTo) 指示的是简单的线程讨论关系还是“组”关系。可识别的值为 "R" 和 "Group"。更多详情请参阅 [PDF 参考手册](PDF Reference) 的表 8.17。
+批注的引用类型。此属性用于区分 `inReplyTo` 指示的是简单的线程讨论关系还是“组”关系。可识别的值为 `"R"` 和 `"Group"`。更多详情请参阅 [PDF 参考手册](PDF Reference) 的表 8.17。
 
 *类型：字符串*
 
@@ -1428,7 +1459,9 @@ var annot = this.addAnnot({
 
 创建一个文本批注，并为其赋予一些富文本内容。
 
-```
+
+
+```javascript
 var annot = this.addAnnot({
     page: 0,
     type: "Text",
@@ -1461,13 +1494,14 @@ spans[2].alignment = "right";
 annot.richContents = spans;
 ```
 
-另请参阅 [field.richValue](field.richValue)、[event.richValue](event.richValue)（以及 [richChange](richChange)、[richChangeEx](richChangeEx)）以获取更多关于使用 Span 对象的示例。
+另请参阅[field.richValue](field.richValue)、[event.richValue](event.richValue)（以及[richChange](richChange)、[richChangeEx](richChangeEx)）以获取更多关于使用 Span 对象的示例。
 
 ## richDefaults
 
 | 6.0 | D | C |  |
+|---|---|---|---|
 
-此属性定义 **FreeText** 批注的默认样式属性。更多详情请参阅 [field.defaultStyle](field.defaultStyle) 的说明。
+此属性定义`FreeText`批注的默认样式属性。更多详情请参阅[field.defaultStyle](field.defaultStyle)的说明。
 
 *类型：Span 对象*
 
@@ -1478,8 +1512,9 @@ annot.richContents = spans;
 ## rotate
 
 | 5.0 | D | C | X |
+|---|---|---|---|
 
-批注相对于页面逆时针旋转的度数（0、90、180、270）。基于图标的批注不会旋转，此属性仅对 **FreeText** 批注有意义。
+批注相对于页面逆时针旋转的度数（0、90、180、270）。基于图标的批注不会旋转，此属性仅对`FreeText`批注有意义。
 
 *类型：整数*
 
@@ -1490,6 +1525,7 @@ annot.richContents = spans;
 ## seqNum
 
 | 5.0 |  |  | C | X |
+|---|---|---|---|---|
 
 页面上批注的只读序列号。
 
@@ -1503,7 +1539,7 @@ annot.richContents = spans;
 
 ![](img/bd576cc243b5a79128e24042df2f472f_63_0.png)
 
-文本批注的状态。此属性的值取决于状态模型。对于 Marked 状态模型，值为 **Marked** 和 **Unmarked**；对于 Review 状态模型，值为 **Accepted**、**Rejected**、**Cancelled**、**Completed** 和 **None**。
+文本批注的状态。此属性的值取决于状态模型。对于 Marked 状态模型，值为`Marked`和`Unmarked`；对于 Review 状态模型，值为`Accepted`、`Rejected`、`Cancelled`、`Completed`和`None`。
 
 *类型：字符串*
 
@@ -1515,7 +1551,7 @@ annot.richContents = spans;
 
 ![](img/bd576cc243b5a79128e24042df2f472f_63_1.png)
 
-从 Acrobat 6.0 开始，批注可以具有与之关联的作者特定状态。状态并非在批注本身中指定，而是在一个单独的文本批注中指定，该文本批注通过其 **IRT**（**inReplyTo**）条目引用原始批注。有两种类型的状态模型："Marked" 和 "Review"。
+从 Acrobat 6.0 开始，批注可以具有与之关联的作者特定状态。状态并非在批注本身中指定，而是在一个单独的文本批注中指定，该文本批注通过其`IRT`（`inReplyTo`）条目引用原始批注。有两种类型的状态模型："Marked" 和 "Review"。
 
 *类型：字符串*
 
@@ -1523,13 +1559,13 @@ annot.richContents = spans;
 
 *适用批注：Text。*
 
-另请参阅批注方法 **getStateInModel**。
+另请参阅批注方法`getStateInModel`。
 
 ## strokeColor
 
 ![](img/bd576cc243b5a79128e24042df2f472f_63_2.png)
 
-设置批注的外观颜色。值通过使用 **transparent**、**gray**、**RGB** 或 **CMYK** 颜色来定义。对于 **FreeText** 批注，**strokeColor** 设置边框和文本颜色。有关定义颜色数组以及此属性如何使用这些值的信息，请参阅 **Color Arrays** 部分。
+设置批注的外观颜色。值通过使用`transparent`、`gray`、`RGB`或`CMYK`颜色来定义。对于`FreeText`批注，`strokeColor`设置边框和文本颜色。有关定义颜色数组以及此属性如何使用这些值的信息，请参阅`Color Arrays`部分。
 
 *类型：颜色*
 
@@ -1539,7 +1575,7 @@ annot.richContents = spans;
 
 ### 示例
 
-```
+```javascript
 // 将文本批注设为红色
 var annot = this.addAnnot({type: "Text"});
 annot.strokeColor = color.red;
@@ -1548,8 +1584,9 @@ annot.strokeColor = color.red;
 ## style
 
 | 5.0 | (D) | (C) | (X) |
+|---|---|---|---|
 
-此属性获取和设置边框样式。可识别的值为 **"S"**（实线）和 **"D"**（虚线）。style 属性为所有批注类型定义，但仅与 **Line**、**FreeText**、**Circle**、**Square**、**PolyLine**、**Polygon** 和 **Ink** 相关。
+此属性获取和设置边框样式。可识别的值为`"S"`（实线）和`"D"`（虚线）。`style`属性为所有批注类型定义，但仅与`Line`、`FreeText`、`Circle`、`Square`、`PolyLine`、`Polygon`和`Ink`相关。
 
 *类型：字符串*
 
@@ -1557,11 +1594,12 @@ annot.strokeColor = color.red;
 
 *适用批注：全部。*
 
-另请参阅 **annot.dash** 以获取示例。
+另请参阅`annot.dash`以获取示例。
 
 ## subject
 
 | 6.0 | (D) | (C) | (X) |
+|---|---|---|---|
 
 表示批注所涉及主题的简短描述的文本。如果存在弹出窗口或属性对话框，该文本将显示在弹出窗口的标题栏中。
 
@@ -1574,10 +1612,11 @@ annot.strokeColor = color.red;
 ## textFont
 
 | 5.0 | (D) | (C) | (X) |
+|---|---|---|---|
 
-确定在 **FreeText** 批注中布局文本时使用的字体。有效字体定义为 **font** 对象的属性，如 **field.textFont** 所列。
+确定在`FreeText`批注中布局文本时使用的字体。有效字体定义为`font`对象的属性，如`field.textFont`所列。
 
-通过将 **textFont** 的值设置为代表字体 PostScript 名称的字符串，可以在布局 **FreeText** 批注时使用任意字体。
+通过将`textFont`的值设置为代表字体 PostScript 名称的字符串，可以在布局`FreeText`批注时使用任意字体。
 
 *类型：字符串*
 
@@ -1589,7 +1628,7 @@ annot.strokeColor = color.red;
 
 以下示例说明了此属性和 font 对象的用法。
 
-```
+```javascript
 // 使用 Helvetica 创建 FreeText 批注
 var annot = this.addAnnot({
     page: 0,
@@ -1605,8 +1644,9 @@ var annot = this.addAnnot({
 ## textSize
 
 | 5.0 | (D) | (C) | (X) |
+|---|---|---|---|
 
-确定在 **FreeText** 批注中使用的文本大小（以磅为单位）。有效文本大小范围为 0 到 32767（含）。零文本大小表示应使用允许所有文本数据仍能适应批注矩形的最大磅值。
+确定在`FreeText`批注中使用的文本大小（以磅为单位）。有效文本大小范围为 0 到 32767（含）。零文本大小表示应使用允许所有文本数据仍能适应批注矩形的最大磅值。
 
 有效文本大小包括零以及 4 到 144（含）的范围。
 
@@ -1618,15 +1658,16 @@ var annot = this.addAnnot({
 
 ### 示例
 
-请参阅 [textFont](textFont)。
+请参阅[textFont](textFont)。
 
 ## toggleNoView
 
 | 6.0 | (D) | (C) | (X) |
+|---|---|---|---|
 
-如果 **toggleNoView** 为 true，则当鼠标悬停在批注上或批注被选中时，会切换 **noView** 标志。该标志反映了 PDF 语言中的一个新标志。
+如果`toggleNoView`为 true，则当鼠标悬停在批注上或批注被选中时，会切换`noView`标志。该标志反映了 PDF 语言中的一个新标志。
 
-如果批注同时设置了 **noView** 和 **toggleNoView** 标志，则批注通常不可见；但是，当鼠标悬停在其上或它被选中时，它将变为可见。
+如果批注同时设置了`noView`和`toggleNoView`标志，则批注通常不可见；但是，当鼠标悬停在其上或它被选中时，它将变为可见。
 
 *类型：布尔值*
 
@@ -1637,25 +1678,26 @@ var annot = this.addAnnot({
 ## type
 
 | 5.0 | (D) | (C) | (X) |
+|---|---|---|---|
 
-反映批注的类型。批注的类型只能在 **doc.addAnnot** 方法的对象字面量参数中设置。有效值为：
+反映批注的类型。批注的类型只能在`doc.addAnnot`方法的对象字面量参数中设置。有效值为：
 
-- Text
-- FreeText
-- Line
-- Square
-- Circle
-- Polygon
-- PolyLine
-- Highlight
-- Underline
-- Squiggly
-- StrikeOut
-- Stamp
-- Caret
-- Ink
-- FileAttachment
-- Sound
+- `Text`
+- `FreeText`
+- `Line`
+- `Square`
+- `Circle`
+- `Polygon`
+- `PolyLine`
+- `Highlight`
+- `Underline`
+- `Squiggly`
+- `StrikeOut`
+- `Stamp`
+- `Caret`
+- `Ink`
+- `FileAttachment`
+- `Sound`
 
 *类型：字符串*
 
@@ -1666,8 +1708,9 @@ var annot = this.addAnnot({
 ## soundIcon
 
 | 5.0 | ⊙ | C | X |
+|---|---|---|---|
 
-用于显示批注的图标名称。可识别的值为 "Speaker"。
+用于显示批注的图标名称。可识别的值为`"Speaker"`。
 
 *类型：字符串*
 
@@ -1678,8 +1721,9 @@ var annot = this.addAnnot({
 ## vertices
 
 | 6.0 | ⊙ | C | X |
+|---|---|---|---|
 
-表示多边形或折线批注每个顶点的交替水平和垂直坐标的坐标数组数组（在默认用户空间中）。详情请参阅 [PDF 参考手册](https://example.com) 的表 8.25。
+表示多边形或折线批注每个顶点的交替水平和垂直坐标的坐标数组数组（在默认用户空间中）。详情请参阅[PDF 参考手册](https://example.com)的表 8.25。
 
 *类型：数组的数组*
 
@@ -1690,6 +1734,7 @@ var annot = this.addAnnot({
 ## width
 
 | 5.0 | ⊙ | C | X |
+|---|---|---|---|
 
 边框宽度（以磅为单位）。如果此值为 0，则不绘制边框。默认值为 1。
 
@@ -1699,13 +1744,14 @@ var annot = this.addAnnot({
 
 *适用批注：Square、Circle、Line、Ink、FreeText。*
 
-### 批注方法
+# 批注方法
 
 ## destroy
 
 | 5.0 | ⊙ | C | X |
+|---|---|---|---|
 
-销毁 **批注**，将其从页面中移除。对象变为无效。
+销毁**批注**，将其从页面中移除。对象变为无效。
 
 **参数**
 
@@ -1717,7 +1763,7 @@ var annot = this.addAnnot({
 
 **示例**
 
-```
+```javascript
 // 移除第 0 页上的所有 "FreeText" 批注
 var annots = this.getAnnots({ nPage:0 });
 for (var i = 0; i < annots.length; i++)
@@ -1727,8 +1773,9 @@ for (var i = 0; i < annots.length; i++)
 ## getProps
 
 | 5.0 | D | A | X |
+|---|---|---|---|
 
-获取 **批注** 的收集属性。可用于复制批注。
+获取**批注**的收集属性。可用于复制批注。
 
 **参数**
 
@@ -1736,11 +1783,11 @@ for (var i = 0; i < annots.length; i++)
 
 **返回值**
 
-此方法返回一个包含批注属性的对象字面量。该对象字面量与传递给 **addAnnot** 的对象字面量类似。
+此方法返回一个包含批注属性的对象字面量。该对象字面量与传递给`addAnnot`的对象字面量类似。
 
 **示例 1**
 
-```
+```javascript
 var annot = this.addAnnot({
     page: 0,
     type: "Text",
@@ -1763,20 +1810,18 @@ for (var i=0; i < numpages; i++) {
 
 显示批注的所有属性和值。
 
-```
+```javascript
 var a = this.getAnnots(0);    // 获取第 0 页上的所有批注
 if ( a != null ) {
 ```
-
-
 
 ## getStateInModel
 
 | 版本 | 参数 | 描述 |
 |---|---|---|
-| 6.0 | D | | | |
+| 6.0 | D | |
 
-获取**注释**在状态模型上下文中的当前状态。另请参阅 [transitionToState](transitionToState)。
+获取**注释**在状态模型上下文中的当前状态。另请参阅[transitionToState](transitionToState)。
 
 ## 参数
 
@@ -1799,7 +1844,7 @@ if ( a != null ) {
 
 报告本文档所有页面上所有注释的状态。
 
-```
+```javascript
 annots = this.getAnnots()
 for ( var i= 0; i< annots.length; i++) {
     states = annots[i].getStateInModel("Review");
@@ -1826,7 +1871,7 @@ for ( var i= 0; i< annots.length; i++) {
 
 | 参数 | 描述 |
 |---|---|
-| objectLiteral | 一个通用对象，用于指定要创建的注释对象的属性，例如类型、矩形和页面。（这与 `doc.addAnnot` 的参数相同。） |
+| objectLiteral | 一个通用对象，用于指定要创建的注释对象的属性，例如类型、矩形和页面。（这与`doc.addAnnot`的参数相同。） |
 
 ### 返回值
 
@@ -1834,7 +1879,7 @@ for ( var i= 0; i< annots.length; i++) {
 
 ### 示例
 
-```
+```javascript
 var annot = this.addAnnot({type: "Line"})
 annot.setProps({
     page: 0,
@@ -1851,18 +1896,18 @@ annot.setProps({
 
 ## transitionToState
 
-通过执行状态转换，将注释的状态更改为 `cState`。状态转换会记录在注释的审计跟踪中。
+通过执行状态转换，将注释的状态更改为`cState`。状态转换会记录在注释的审计跟踪中。
 
-另请参阅 getStateInModel。
+另请参阅`getStateInModel`。
 
-**注意：** 要使状态在多用户环境中正常工作，所有用户都需要拥有相同的状态模型定义；因此，最好将状态模型定义放在一个文件夹级别的 JavaScript 文件中，该文件可以分发给所有用户，或安装在所有系统上。
+**注意：**要使状态在多用户环境中正常工作，所有用户都需要拥有相同的状态模型定义；因此，最好将状态模型定义放在一个文件夹级别的 JavaScript 文件中，该文件可以分发给所有用户，或安装在所有系统上。
 
 ### 参数
 
 | 参数 | 描述 |
 |---|---|
-| **cStateModel** | 要在其中执行状态转换的状态模型。**cStateModel** 必须是之前通过调用 [addStateModel](addStateModel) 添加的。 |
-| **cState** | 要转换到的状态模型中的有效状态。 |
+| `cStateModel` | 要在其中执行状态转换的状态模型。`cStateModel`必须是之前通过调用[addStateModel](addStateModel)添加的。 |
+| `cState` | 要转换到的状态模型中的有效状态。 |
 
 ### 返回值
 
@@ -1874,7 +1919,7 @@ annot.setProps({
 
 ### 示例
 
-```
+```javascript
 try {
     // Create a document
     var myDoc = app.newDoc();
@@ -1906,22 +1951,26 @@ myAnnot.transitionToState("ReviewStates", "resubmit");
 myAnnot.transitionToState("ReviewStates", "approved");
 ```
 
-## Annot3D 对象
+# Annot3D 对象
 
-Annot3D 对象表示一个特定的 Acrobat 3D 注释；即使用 Acrobat **3D 工具**创建的注释。可以通过 Doc 对象的方法 **getAnnot3D** 和 **getAnnots3D** 获取 Annot3D 对象。
+Annot3D 对象表示一个特定的 Acrobat 3D 注释；即使用 Acrobat`3D 工具`创建的注释。可以通过 Doc 对象的方法`getAnnot3D`和`getAnnots3D`获取 Annot3D 对象。
 
 ## Annot3D 属性
 
 ### activated
 
-| 版本 | | | | |
+| 版本 |  |  |  |  |
 |---|---|---|---|---|
-| 7.0 | | | | |
+| 7.0 |  |  |  |  |
 
-一个布尔值，指示注释是显示 3D 图形（**true**），还是仅显示海报板图片（**false**）。
-另请参阅下面的 **context3D**。
+
+
+一个布尔值，指示注释是显示 3D 图形（`true`），还是仅显示海报板图片（`false`）。
+
+另请参阅下面的 `context3D`。
 
 类型：Boolean
+
 访问权限：R/W。
 
 ### context3D
@@ -1930,9 +1979,10 @@ Annot3D 对象表示一个特定的 Acrobat 3D 注释；即使用 Acrobat **3D �
 |---|---|---|---|---|
 | 7.0 | | | | |
 
-如果 **Annot3D.activated** 为 **true**，此属性返回包含 3D 场景的 3D 注释上下文（一个 SceneContext3d 对象）；如果 **activated** 为 **false**，则返回 **undefined**。
+如果 `Annot3D.activated` 为 `true`，此属性返回包含 3D 场景的 3D 注释上下文（一个 `SceneContext3d` 对象）；如果 `activated` 为 `false`，则返回 `undefined`。
 
 类型：SceneContext3d 对象
+
 访问权限：R。
 
 ### innerRect
@@ -1941,9 +1991,10 @@ Annot3D 对象表示一个特定的 Acrobat 3D 注释；即使用 Acrobat **3D �
 |---|---|---|---|---|
 | 7.0 | | | | |
 
-**innerRect** 属性返回一个包含四个数字的数组 [x_ll, y_ll, x_ur, y_ur]，指定了在注释坐标系（左下角为 [0, 0]，右上角为 [宽度, 高度]）中 3D 注释的 3D 边界框的左下角 x、左下角 y、右上角 x 和右上角 y 坐标，3D 图形将在此边界框内渲染。
+`innerRect` 属性返回一个包含四个数字的数组 `[x_ll, y_ll, x_ur, y_ur]`，指定了在注释坐标系（左下角为 `[0, 0]`，右上角为 `[宽度, 高度]`）中 3D 注释的 3D 边界框的左下角 x、左下角 y、右上角 x 和右上角 y 坐标，3D 图形将在此边界框内渲染。
 
 类型：Array
+
 访问权限：R。
 
 ### name
@@ -1954,7 +2005,9 @@ Annot3D 对象表示一个特定的 Acrobat 3D 注释；即使用 Acrobat **3D �
 
 注释的名称。
 
-类型：String    访问权限：R。
+类型：String
+
+访问权限：R。
 
 ### page
 
@@ -1962,9 +2015,11 @@ Annot3D 对象表示一个特定的 Acrobat 3D 注释；即使用 Acrobat **3D �
 |---|---|---|---|---|
 | 7.0 | | | | |
 
-**page** 属性是注释所在页面的从 0 开始的页码。
+`page` 属性是注释所在页面的从 0 开始的页码。
 
-类型：Integer    访问权限：R。
+类型：Integer
+
+访问权限：R。
 
 ### rect
 
@@ -1972,9 +2027,11 @@ Annot3D 对象表示一个特定的 Acrobat 3D 注释；即使用 Acrobat **3D �
 |---|---|---|---|---|
 | 7.0 | | | | |
 
-rect 属性返回一个包含四个数字的数组 [x_ll, y_ll, x_ur, y_ur]，指定了在默认用户空间中定义注释在页面上位置的矩形的左下角 x、左下角 y、右上角 x 和右上角 y 坐标。
+`rect` 属性返回一个包含四个数字的数组 `[x_ll, y_ll, x_ur, y_ur]`，指定了在默认用户空间中定义注释在页面上位置的矩形的左下角 x、左下角 y、右上角 x 和右上角 y 坐标。
 
-类型：Array    访问权限：R。
+类型：Array
+
+访问权限：R。
 
 ## App 对象
 
@@ -1988,21 +2045,23 @@ rect 属性返回一个包含四个数字的数组 [x_ll, y_ll, x_ur, y_ur]，�
 |---|---|---|---|---|
 | 5.0 | | Ⓘ | | |
 
-返回一个包含查看器中每个活动文档的 Doc 对象的数组，参见下面的注释。如果没有活动文档，`activeDocs` 不返回任何内容，或者其行为与核心 JavaScript 中的 `d = new Array(0)` 相同。
+返回一个包含查看器中每个活动文档的 `Doc` 对象的数组，参见下面的注释。如果没有活动文档，`activeDocs` 不返回任何内容，或者其行为与核心 JavaScript 中的 `d = new Array(0)` 相同。
 
 从 Acrobat 7.0 开始，当在控制台执行脚本 `d = app.activeDocs` 时，不会向控制台输出任何 `toString()` 值。（在 Acrobat 的早期版本中，执行此脚本会向控制台返回 `[object Global]`。）
 
-> **注意：** (安全性 Ⓘ)：对于版本 5.0，此属性返回一个包含查看器中每个活动文档的 Doc 对象的数组。在版本 5.0.5 中，此属性被更改为仅返回查看器中那些 `doc.disclosed` 属性设置为 `true` 的文档的 Doc 对象数组。“Acrobat 5.0.5 辅助功能和表单补丁”更改了此行为——这也是 Acrobat 6.0 或更高版本中 `activeDocs` 的行为——如下所示：在批处理、控制台或菜单事件期间，`activeDocs` 忽略 disclosed 属性，并返回查看器中活动文档的 Doc 对象数组；在任何其他事件期间，`activeDocs` 仅返回查看器中那些 `doc.disclosed` 设置为 `true` 的活动文档的 Doc 对象数组。从 Acrobat 7.0 开始，通过菜单事件执行 JavaScript 不再具有特权，详情请参阅 [JavaScript Execution through the Menu](https://www.adobe.com)。
+> **注意：** (安全性 Ⓘ)：对于版本 5.0，此属性返回一个包含查看器中每个活动文档的 `Doc` 对象的数组。在版本 5.0.5 中，此属性被更改为仅返回查看器中那些 `doc.disclosed` 属性设置为 `true` 的文档的 `Doc` 对象数组。“Acrobat 5.0.5 辅助功能和表单补丁”更改了此行为——这也是 Acrobat 6.0 或更高版本中 `activeDocs` 的行为——如下所示：在批处理、控制台或菜单事件期间，`activeDocs` 忽略 `disclosed` 属性，并返回查看器中活动文档的 `Doc` 对象数组；在任何其他事件期间，`activeDocs` 仅返回查看器中那些 `doc.disclosed` 设置为 `true` 的活动文档的 `Doc` 对象数组。从 Acrobat 7.0 开始，通过菜单事件执行 JavaScript 不再具有特权，详情请参阅 [JavaScript Execution through the Menu](https://www.adobe.com)。
 
 由 `app.activeDocs` 返回的数组将包括通过 `app.openDoc` 打开的任何文档，前提是 `bHidden` 参数设置为 `true`，但需遵守上述安全限制。
 
-类型：Array    访问权限：R。
+类型：Array
+
+访问权限：R。
 
 ### 示例
 
 此示例在打开的文档中搜索标题为“myDoc”的文档，然后使用 `addField` 在该文档中插入一个按钮。文档是否需要 disclose 取决于执行此代码的 Acrobat 版本以及代码的位置（例如，控制台与 MouseUp 动作）。
 
-```
+```javascript
 var d = app.activeDocs;
 for (var i=0; i < d.length; i++)
 if (d[i].info.Title == "myDoc") {
@@ -2016,48 +2075,57 @@ if (d[i].info.Title == "myDoc") {
 
 如果设置为 `true`，则允许执行计算。如果设置为 `false`，则阻止所有文档中的所有计算。其默认值为 `true`。请参阅 `doc.calculate`，它在更高版本中取代了此属性。
 
-类型：Boolean    访问权限：R/W。
+类型：Boolean
 
-
+访问权限：R/W。
 
 ## constants
 
-App 对象的每个实例都继承了 **constants** 属性，这是一个用于持有各种常量值的包装对象。**constants** 属性返回一个具有单一属性 **align** 的对象。**app.constants.align** 是一个具有以下属性的对象。存储在此（**align**）对象中的值可用于指定对齐方式，例如在添加水印时。
+App 对象的每个实例都继承了 `constants` 属性，这是一个用于持有各种常量值的包装对象。`constants` 属性返回一个具有单一属性 `align` 的对象。`app.constants.align` 是一个具有以下属性的对象。存储在此（`align`）对象中的值可用于指定对齐方式，例如在添加水印时。
 
 ### app.constants.align 对象
 
 | 属性 | 描述 |
 |---|---|
-| left | 指定左对齐 |
-| center | 指定居中对齐 |
-| right | 指定右对齐 |
-| top | 指定顶部对齐 |
-| bottom | 指定底部对齐 |
+| `left` | 指定左对齐 |
+| `center` | 指定居中对齐 |
+| `right` | 指定右对齐 |
+| `top` | 指定顶部对齐 |
+| `bottom` | 指定底部对齐 |
 
-*类型：对象*     访问：R。
+类型：对象
 
-**示例**
-    请参阅 doc. **addWatermarkFromFile** 和 doc. **addWatermarkFromText** 中的示例。
+访问：R。
+
+### 示例
+
+请参阅 `doc.addWatermarkFromFile` 和 `doc.addWatermarkFromText` 中的示例。
 
 ## focusRect
 
-打开和关闭焦点矩形。焦点矩形是按钮、复选框、单选按钮和签名周围的淡淡虚线，用于指示表单字段具有键盘焦点。值为 **true** 时打开焦点矩形。
+打开和关闭焦点矩形。焦点矩形是按钮、复选框、单选按钮和签名周围的淡淡虚线，用于指示表单字段具有键盘焦点。值为 `true` 时打开焦点矩形。
 
-*类型：布尔值*     访问：R/W。
+类型：布尔值
 
-**示例**
-    app.focusRect = false; // 不希望表单字段周围出现淡淡的虚线
+访问：R/W。
+
+### 示例
+
+```javascript
+app.focusRect = false; // 不希望表单字段周围出现淡淡的虚线
+```
 
 ## formsVersion
 
 查看器内运行的表单软件的版本号。如果您希望在脚本中保持向后兼容性，可以使用此方法来确定软件较新版本中的对象、属性或方法是否可用。
 
 类型：数字
+
 访问：R。
 
 ### 示例
 
-```
+```javascript
 if (typeof app.formsVersion != "undefined" && app.formsVersion >= 5.0)
 {
     // 在此处执行特定于版本的操作。
@@ -2072,137 +2140,161 @@ else app.fullscreen = !app.fullscreen;
 
 ## fromPDFConverters
 
-返回一个包含文件类型转换 ID 字符串的数组。转换 ID 字符串会传递给 doc.saveAs。
+返回一个包含文件类型转换 ID 字符串的数组。转换 ID 字符串会传递给 `doc.saveAs`。
 
 类型：数组
+
 访问：R。
 
 ### 示例
 
-列出当前 doc.saveAs 支持的所有转换 ID 字符串。
+列出当前 `doc.saveAs` 支持的所有转换 ID 字符串。
 
-```
+```javascript
 for ( var i = 0; i < app.fromPDFConverters.length; i++)
     console.println(app.fromPDFConverters[i]);
 ```
 
 ## fs
 
-返回 FullScreen 对象，可用于访问全屏属性。
+返回 `FullScreen` 对象，可用于访问全屏属性。
 
 类型：对象
+
 访问：R。
 
 ### 示例
 
-```
+```javascript
 // 此代码将查看器置于全屏（演示）模式。
 app.fs.isFullScreen = true;
 ```
 
-另请参阅 **fullScreenObject.isFullScreen**。
+另请参阅 `fullScreenObject.isFullScreen`。
 
 ## fullscreen
 
 将 Acrobat 查看器置于全屏模式与常规查看模式。
-请参阅 **fullScreenObject.isFullScreen**；在较新版本中，此属性已取代此属性。另请参阅 **fs**，它返回一个 FullScreen 对象，可用于访问全屏属性。
+
+请参阅 `fullScreenObject.isFullScreen`；在较新版本中，此属性已取代此属性。另请参阅 `fs`，它返回一个 `FullScreen` 对象，可用于访问全屏属性。
 
 > **注意：** 在网络浏览器内查看的 PDF 文档无法置于全屏模式。但是，可以从浏览器内启动全屏模式，但除非 Acrobat 查看器应用程序中打开了文档，否则不会发生；在这种情况下，查看器中打开的文档将以全屏显示，而不是在网络浏览器中打开的 PDF 文档。
 
-*类型：* 布尔值  *访问：* R/W。
+类型：布尔值
+
+访问：R/W。
 
 ### 示例
 
-```
+```javascript
 // 在鼠标抬起时，设置为全屏模式
 app.fullscreen = true;
 ```
 
-在上面的示例中，当 **app.fullscreen** 设置为 **true** 时，Adobe Acrobat 查看器被设置为全屏模式。如果 **app.fullscreen** 为 **false**，则将设置默认查看模式。默认查看模式定义为启动全屏模式之前 Acrobat 应用程序所处的原始模式。
+在上面的示例中，当 `app.fullscreen` 设置为 `true` 时，Adobe Acrobat 查看器被设置为全屏模式。如果 `app.fullscreen` 为 `false`，则将设置默认查看模式。默认查看模式定义为启动全屏模式之前 Acrobat 应用程序所处的原始模式。
 
 ## language
 
 定义正在运行的 Acrobat 查看器的语言。它返回以下字符串：
 
 | 字符串 | 语言 |
-|--------|----------|
-| CHS | 简体中文 |
-| CHT | 繁体中文 |
-| DAN | 丹麦语 |
-| DEU | 德语 |
-| ENU | 英语 |
-| ESP | 西班牙语 |
-| FRA | 法语 |
-| ITA | 意大利语 |
-| KOR | 韩语 |
-| JPN | 日语 |
-| NLD | 荷兰语 |
-| NOR | 挪威语 |
-| PTB | 巴西葡萄牙语 |
-| SUO | 芬兰语 |
-| SVE | 瑞典语 |
+|---|---|
+| `CHS` | 简体中文 |
+| `CHT` | 繁体中文 |
+| `DAN` | 丹麦语 |
+| `DEU` | 德语 |
+| `ENU` | 英语 |
+| `ESP` | 西班牙语 |
+| `FRA` | 法语 |
+| `ITA` | 意大利语 |
+| `KOR` | 韩语 |
+| `JPN` | 日语 |
+| `NLD` | 荷兰语 |
+| `NOR` | 挪威语 |
+| `PTB` | 巴西葡萄牙语 |
+| `SUO` | 芬兰语 |
+| `SVE` | 瑞典语 |
 
-类型：字符串      访问：R。
+类型：字符串
+
+访问：R。
 
 ## media
 
-全局 App.media 对象定义了大量用于设置和控制多媒体播放器的属性和方法。
-有关此对象的属性和方法列表以及许多使用示例，请参阅 App.media 对象部分。
+全局 `App.media` 对象定义了大量用于设置和控制多媒体播放器的属性和方法。
 
-类型：对象      访问：R/W。
+有关此对象的属性和方法列表以及许多使用示例，请参阅 `App.media` 对象部分。
+
+类型：对象
+
+访问：R/W。
 
 ## monitors
 
-app.monitors 属性返回一个 Monitors 对象，这是一个包含一个或多个 Monitor 对象的数组，每个对象代表连接到用户系统的显示监视器之一。每次访问 app.monitors 都会返回该数组的全新、最新的副本。
-Monitors 对象还具有几个可用于选择显示监视器的方法，或者 JavaScript 代码可以显式地遍历数组。详情请参阅 Monitors 对象。
+`app.monitors` 属性返回一个 `Monitors` 对象，这是一个包含一个或多个 `Monitor` 对象的数组，每个对象代表连接到用户系统的显示监视器之一。每次访问 `app.monitors` 都会返回该数组的全新、最新的副本。
 
-类型：Monitors 对象      访问：R。
+`Monitors` 对象还具有几个可用于选择显示监视器的方法，或者 JavaScript 代码可以显式地遍历数组。详情请参阅 `Monitors` 对象。
+
+类型：Monitors 对象
+
+访问：R。
 
 ### 示例
 
 计算连接到用户系统的显示监视器数量。
 
+```javascript
 var monitors = app.monitors;
+
 console.println("此系统连接了 " + monitors.length
     + " 个监视器。");
+```
 
 ## numPlugins
 
-指示 Acrobat 已加载的插件数量。请参阅 plugIns，在较新版本中它取代了此属性。
+指示 Acrobat 已加载的插件数量。请参阅 `plugIns`，在较新版本中它取代了此属性。
 
-类型：数字         访问：R。
+类型：数字
+
+访问：R。
 
 ## openInPlace
 
 确定跨文档链接是在同一窗口中打开还是在新窗口中打开。
 
-类型：布尔值         访问：R/W。
+类型：布尔值
+
+访问：R/W。
 
 ### 示例
 
-```
+```javascript
 app.openInPlace = true;
 ```
 
 ## platform
 
-返回脚本当前执行所在的平台。有效值为
+返回脚本当前执行所在的平台。有效值为：
 
-- WIN
-- MAC
-- UNIX
+- `WIN`
+- `MAC`
+- `UNIX`
 
-类型：字符串         访问：R。
+类型：字符串
+
+访问：R。
 
 ## plugins
 
-确定当前在查看器中安装了哪些插件。返回一个 PlayerInfo 对象数组。
+确定当前在查看器中安装了哪些插件。返回一个 `PlayerInfo` 对象数组。
 
-类型：数组         访问：R。
+类型：数组
+
+访问：R。
 
 ### 示例
 
-```
+```javascript
 // 获取插件对象数组
 var aPlugins = app.plugIns;
 // 获取插件数量
@@ -2216,13 +2308,15 @@ for ( var i = 0; i < nPlugins; i++)
 
 返回可用打印机颜色空间的列表。这些值中的每一个都适合用作 `printParams.colorProfile` 的值。
 
-类型：字符串数组   访问：R。
+类型：字符串数组
+
+访问：R。
 
 ### 示例
 
 打印出可用打印机颜色空间的列表。
 
-```
+```javascript
 var l = app.printColorProfiles.length
 for ( var i = 0; i < l; i++)
     console.println("(" + (i+1) + ") " + app.printColorProfiles[i]);
@@ -2232,13 +2326,15 @@ for ( var i = 0; i < l; i++)
 
 返回可用打印机的列表。这些值中的每一个都适合用于 `printParams.printerName`。如果系统上没有安装打印机，则返回一个空数组。
 
-类型：字符串数组   访问：R。
+类型：字符串数组
+
+访问：R。
 
 ### 示例
 
 打印出可用打印机的列表。
 
-```
+```javascript
 var l = app.printerNames.length
 for ( var i = 0; i < l; i++)
     console.println("(" + (i+1) + ") " + app.printerNames[i]);
@@ -2248,13 +2344,15 @@ for ( var i = 0; i < l; i++)
 
 如果为 `true`，则显示表单字段的背景色和悬停色。
 
-类型：布尔值 访问：R/W。
+类型：布尔值
+
+访问：R/W。
 
 ### 示例
 
-如果运行时高亮显示关闭（false），则不执行任何操作，否则，更改首选项。
+如果运行时高亮显示关闭（`false`），则不执行任何操作，否则，更改首选项。
 
-```
+```javascript
 if (!app.runtimeHighlight)
 {
     app.runtimeHighlight = true;
@@ -2265,39 +2363,44 @@ if (!app.runtimeHighlight)
 ## runtimeHighlightColor
 
 设置表单字段运行时高亮显示的颜色。
-runtimeHighlightColor 的值是一个颜色数组，详情请参阅颜色对象。
 
-类型：颜色数组 访问：R/W。
+`runtimeHighlightColor` 的值是一个颜色数组，详情请参阅颜色对象。
+
+类型：颜色数组
+
+访问：R/W。
 
 ### 示例
 
-请参阅 runtimeHighlight 之后的示例。
+请参阅 `runtimeHighlight` 之后的示例。
 
 ## thermometer
 
-返回一个 Thermometer 对象。温度计对象是一个组合状态窗口/进度条，用于向用户指示正在进行一项耗时操作。
+返回一个 `Thermometer` 对象。温度计对象是一个组合状态窗口/进度条，用于向用户指示正在进行一项耗时操作。
 
-类型：对象 访问：R。
+类型：对象
+
+访问：R。
 
 ### 示例
 
-请参阅 Thermometer 对象中的示例。
+请参阅 `Thermometer` 对象中的示例。
 
 ## toolbar
 
 允许脚本显示或隐藏水平和垂直的 Acrobat 工具栏。它不会隐藏外部窗口中的工具栏（即网络浏览器中的 Acrobat 窗口）。
 
-类型：布尔值 访问：R/W。
+类型：布尔值
 
-
+访问：R/W。
 
 ## Acrobat JavaScript 脚本参考
 
 ### 应用程序属性
 
-# 示例
+#### 示例
 
-```
+```javascript
 // 打开文档后，移除工具栏。
 app.toolbar = false;
 ```
@@ -2306,18 +2409,20 @@ app.toolbar = false;
 
 允许脚本显示或隐藏 Acrobat 水平工具栏。它不会隐藏外部窗口中的工具栏（即 Web 浏览器中的 Acrobat 窗口）。
 
-**注意：** Acrobat 5.0 大幅更改了关于工具栏是什么以及它可以在应用程序框架内何处存在的概念。因此，此属性已被弃用。如果访问，其行为与 **toolbar** 类似。
+**注意：** Acrobat 5.0 大幅更改了关于工具栏是什么以及它可以在应用程序框架内何处存在的概念。因此，此属性已被弃用。如果访问，其行为与 `toolbar` 类似。
 
 类型：布尔值
+
 访问权限：读/写。
 
 ### toolbarVertical
 
 允许脚本显示或隐藏 Acrobat 垂直工具栏。它不会隐藏外部窗口中的工具栏（即 Web 浏览器中的 Acrobat 窗口）。
 
-**注意：** Acrobat 5.0 大幅更改了关于工具栏是什么以及它可以在应用程序框架内何处存在的概念。因此，此属性已被弃用。如果访问，其行为与 **toolbar** 类似。
+**注意：** Acrobat 5.0 大幅更改了关于工具栏是什么以及它可以在应用程序框架内何处存在的概念。因此，此属性已被弃用。如果访问，其行为与 `toolbar` 类似。
 
 类型：布尔值
+
 访问权限：读/写。
 
 ### viewerType
@@ -2325,61 +2430,68 @@ app.toolbar = false;
 此属性返回一个字符串，指示正在运行的应用程序查看器。值在下表中给出。
 
 | 值 | 描述 |
-| --- | --- |
-| Reader | Acrobat Reader 5.0 或更早版本 / Adobe Reader 5.1 或更高版本 |
-| Exchange | Adobe Acrobat 6.0 之前版本 / Acrobat Standard 6.0 或更高版本 |
-| Exchange-Pro | Acrobat Professional 6.0 或更高版本 |
+|---|---|
+| `Reader` | Acrobat Reader 5.0 或更早版本 / Adobe Reader 5.1 或更高版本 |
+| `Exchange` | Adobe Acrobat 6.0 之前版本 / Acrobat Standard 6.0 或更高版本 |
+| `Exchange-Pro` | Acrobat Professional 6.0 或更高版本 |
 
 ### viewerVariation
 
 | 5.0 | | | |
-| --- | --- | --- | --- |
+|---|---|---|---|
 | | | | |
 
 指示正在运行的 Acrobat 查看器的打包类型。值为：
 
-- Reader
-- Fill-In
-- Business Tools
-- Full
+- `Reader`
+- `Fill-In`
+- `Business Tools`
+- `Full`
 
-类型：字符串 访问权限：只读。
+类型：字符串
+
+访问权限：只读。
 
 ### viewerVersion
 
 | 4.0 | | | |
-| --- | --- | --- | --- |
+|---|---|---|---|
 | | | | |
 
 指示当前查看器的版本号。
 
-类型：数字 访问权限：只读。
+类型：数字
+
+访问权限：只读。
 
 ## 应用程序方法
 
 ### addMenuItem
 
 | 5.0 | | Ⓢ | |
-| --- | --- | --- | --- |
+|---|---|---|---|
 | | | | |
 
 向应用程序添加一个菜单项。
 
-**注意：** (SecurityⓈ)：此方法只能在应用程序初始化或控制台事件期间执行。有关 Acrobat JavaScript 事件的讨论，请参见事件对象。
+
+
+**注意：**（SecurityⓈ）：此方法只能在应用程序初始化或控制台事件期间执行。有关 Acrobat JavaScript 事件的讨论，请参见事件对象。
+
 另请参阅 `addSubMenu`、`execMenuItem`、`hideMenuItem` 和 `listMenuItems`。
 
 ### 参数
 
 | 参数 | 描述 |
 | :--- | :--- |
-| **cName** | 菜单项的与语言无关的名称。此与语言无关的名称用于通过其他方法访问菜单项（例如 `hideMenuItem`）。 |
-| **cUser** | （可选）显示为菜单项名称的用户字符串（依赖语言的名称）。如果未指定 **cUser**，则使用 **cName**。 |
-| **cParent** | 要接收新子菜单的父菜单项的名称。菜单项名称可以通过 [listMenuItems](listMenuItems) 发现。 |
-| **nPos** | （可选）在父菜单的子菜单中定位新子菜单的位置。默认是追加到父菜单子菜单的末尾。将 **nPos** 指定为 0 将添加到父菜单子菜单的顶部。 |
-| **cExec** | 当用户选择菜单项时要执行的表达式字符串。注意：从 Acrobat 7.0 开始，通过菜单事件执行 JavaScript 不再具有特权。有关更多详细信息，请参见第 647 页的说明“在 Acrobat 7.0 中引入”。 |
-| **cEnable** | （可选）一个表达式字符串，用于确定是否启用菜单项。默认是菜单项始终启用。此表达式应将 event.rc 设置为 false 以禁用菜单项。 |
-| **cMarked** | （可选）一个表达式字符串，用于确定菜单项旁边是否有复选标记。默认是菜单项未被标记。此表达式应将 event.rc 设置为 false 以取消选中菜单项，设置为 true 以选中它。 |
-| **bPrepend** | （可选，版本 6.0）确定新菜单项相对于 **nPos** 指定位置的位置。默认值为 **false**。如果 **bPrepend** 为 **true**，则插入规则如下：如果 **nPos** 是字符串，则新项目放在命名项目之前；如果 **nPos** 是数字，则新项目放在编号项目之前；如果找不到命名项目或 **nPos** 不在零到列表项数之间（包含），则新项目作为菜单中的第一个项目插入（而不是在菜单末尾）。当命名项目是组中的第一个项目时，**bPrepend** 很有用。 |
+| `cName` | 菜单项的与语言无关的名称。此与语言无关的名称用于通过其他方法访问菜单项（例如 `hideMenuItem`）。 |
+| `cUser` | （可选）显示为菜单项名称的用户字符串（依赖语言的名称）。如果未指定 `cUser`，则使用 `cName`。 |
+| `cParent` | 要接收新子菜单的父菜单项的名称。菜单项名称可以通过 `listMenuItems` 发现。 |
+| `nPos` | （可选）在父菜单的子菜单中定位新子菜单的位置。默认是追加到父菜单子菜单的末尾。将 `nPos` 指定为 0 将添加到父菜单子菜单的顶部。 |
+| `cExec` | 当用户选择菜单项时要执行的表达式字符串。注意：从 Acrobat 7.0 开始，通过菜单事件执行 JavaScript 不再具有特权。有关更多详细信息，请参见第 647 页的说明“在 Acrobat 7.0 中引入”。 |
+| `cEnable` | （可选）一个表达式字符串，用于确定是否启用菜单项。默认是菜单项始终启用。此表达式应将 `event.rc` 设置为 `false` 以禁用菜单项。 |
+| `cMarked` | （可选）一个表达式字符串，用于确定菜单项旁边是否有复选标记。默认是菜单项未被标记。此表达式应将 `event.rc` 设置为 `false` 以取消选中菜单项，设置为 `true` 以选中它。 |
+| `bPrepend` | （可选，版本 6.0）确定新菜单项相对于 `nPos` 指定位置的位置。默认值为 `false`。如果 `bPrepend` 为 `true`，则插入规则如下：如果 `nPos` 是字符串，则新项目放在命名项目之前；如果 `nPos` 是数字，则新项目放在编号项目之前；如果找不到命名项目或 `nPos` 不在零到列表项数之间（包含），则新项目作为菜单中的第一个项目插入（而不是在菜单末尾）。当命名项目是组中的第一个项目时，`bPrepend` 很有用。 |
 
 ### 返回值
 
@@ -2387,7 +2499,7 @@ app.toolbar = false;
 
 ### 示例 1
 
-```
+```javascript
 // 此示例向文件子菜单顶部添加一个菜单项，
 // 该菜单项弹出一个警报对话框，显示活动文档标题。
 // 仅当文档打开时，此菜单才处于启用状态。
@@ -2400,9 +2512,9 @@ app.addMenuItem({ cName: "Hello", cParent: "File",
 
 ### 示例 2（版本 6.0）
 
-在“文件”菜单中放置两个菜单项，一个在“关闭”项*之前*，另一个在“关闭”项*之后*。
+在“文件”菜单中放置两个菜单项，一个在“关闭”项之前，另一个在“关闭”项之后。
 
-```
+```javascript
 // 在“关闭”项之后插入（默认行为）
 app.addMenuItem( { cName: "myItem1", cUser: "My Item 1", cParent:
     "File", cExec: "_myProc1()", nPos: "Close"});
@@ -2419,26 +2531,26 @@ app.addMenuItem( { cName: "myItem2", cUser: "My Item 2", cParent:
 
 向应用程序添加一个带子菜单的菜单项。
 
-另请参阅 addMenuItem、execMenuItem、hideMenuItem 和 listMenuItems。
+另请参阅 `addMenuItem`、`execMenuItem`、`hideMenuItem` 和 `listMenuItems`。
 
-**注意：** (Security(S))：此方法只能在应用程序初始化或控制台事件期间执行。有关 Acrobat JavaScript 事件的讨论，请参见事件对象。
+**注意：**（SecurityⓈ）：此方法只能在应用程序初始化或控制台事件期间执行。有关 Acrobat JavaScript 事件的讨论，请参见事件对象。
 
 ### 参数
 
 | 参数 | 描述 |
 | :--- | :--- |
-| **cName** | 菜单项的与语言无关的名称。此与语言无关的名称用于通过 [hideMenuItem](hideMenuItem) 等访问菜单项。 |
-| **cUser** | （可选）显示为菜单项名称的用户字符串（依赖语言的名称）。如果未指定 **cUser**，则使用 **cName**。 |
-| **cParent** | 要接收新子菜单的父菜单项的名称。菜单项名称可以通过 [listMenuItems](listMenuItems) 发现。 |
-| **nPos** | （可选）在父菜单的子菜单中定位新子菜单的位置。默认是追加到父菜单子菜单的末尾。将 **nPos** 指定为 0 将添加到父菜单子菜单的顶部。 |
+| `cName` | 菜单项的与语言无关的名称。此与语言无关的名称用于通过 `hideMenuItem` 等访问菜单项。 |
+| `cUser` | （可选）显示为菜单项名称的用户字符串（依赖语言的名称）。如果未指定 `cUser`，则使用 `cName`。 |
+| `cParent` | 要接收新子菜单的父菜单项的名称。菜单项名称可以通过 `listMenuItems` 发现。 |
+| `nPos` | （可选）在父菜单的子菜单中定位新子菜单的位置。默认是追加到父菜单子菜单的末尾。将 `nPos` 指定为 0 将添加到父菜单子菜单的顶部。 |
 
-**注意：** 在某些按字母顺序排序的菜单中，**nPos** 参数会被忽略。按字母顺序排序的菜单是：
+**注意：** 在某些按字母顺序排序的菜单中，`nPos` 参数会被忽略。按字母顺序排序的菜单是：
 
 - **视图** > **导航选项卡** 的第一部分。
 - **视图** > **工具栏** 的第一部分。
 - **高级** 子菜单的第一部分。
 
-**注意：** 当 **nPos** 是数字时，在 **工具** 菜单中不遵循 **nPos**。引入到 **工具** 菜单中的菜单项位于菜单顶部。当 **nPos** 是引用另一个用户定义菜单项的字符串时，将遵循 **nPos**。
+**注意：** 当 `nPos` 是数字时，在 **工具** 菜单中不遵循 `nPos`。引入到 **工具** 菜单中的菜单项位于菜单顶部。当 `nPos` 是引用另一个用户定义菜单项的字符串时，将遵循 `nPos`。
 
 ### 返回值
 
@@ -2446,7 +2558,7 @@ app.addMenuItem( { cName: "myItem2", cUser: "My Item 2", cParent:
 
 ### 示例
 
-参见 [newDoc](newDoc)。
+参见 `newDoc`。
 
 ### addToolButton
 
@@ -2456,36 +2568,34 @@ app.addMenuItem( { cName: "myItem2", cUser: "My Item 2", cParent:
 
 向 Acrobat 的“附加组件”工具栏添加一个工具按钮。
 
-**注意：**（版本 7.0）关于此方法的安全使用已进行多项更改。在控制台和应用程序初始化中执行 addToolButton
+**注意：**（版本 7.0）关于此方法的安全使用已进行多项更改。在控制台和应用程序初始化中执行 `addToolButton`。
 
-
-
-## 参数
+### 参数
 
 | 名称 | 描述 |
-|---|---|
+| --- | --- |
 | `cName` | 工具按钮的唯一、与语言无关的标识符。此与语言无关的名称用于通过其他方法（例如 `removeToolButton`）访问该工具按钮。**注意：** `cName` 的值必须是唯一的。为避免名称冲突，请检查 `listToolbarButtons`，它会列出当前安装的所有工具栏按钮名称。 |
-| `oIcon` | 一个 [图标流通用对象](Icon Stream Generic Object)。 (版本 7.0) 从版本 7.0 开始，如果提供了 `cLabel`，则 `oIcon` 参数是可选的。 |
+| `oIcon` | 一个 [图标流通用对象](Icon Stream Generic Object)。（版本 7.0）从版本 7.0 开始，如果提供了 `cLabel`，则 `oIcon` 参数是可选的。 |
 | `cExec` | 当工具按钮被选中时要计算的表达式字符串。 |
 | `cEnable` | （可选）一个表达式字符串，用于确定是否启用该工具按钮。默认情况下，工具按钮始终处于启用状态。此表达式应将 `event.rc` 设置为 `false` 以禁用该工具按钮。 |
 | `cMarked` | （可选）一个表达式字符串，用于确定是否标记该工具按钮。默认情况下，工具按钮未被标记。此表达式应将 `event.rc` 设置为 `true` 以标记该工具按钮。 |
 | `cTooltext` | （可选）当用户将鼠标悬停在工具按钮上时，在工具按钮帮助文本中显示的文本。默认情况下没有工具提示。**注意：** 避免在 `cTooltext` 字符串中使用扩展字符，因为该字符串可能会被截断。 |
-| `nPos` | （可选）要将添加的工具按钮放置在工具栏中哪个工具按钮编号之前。如果 **nPos** 为 **-1**（默认值），则工具按钮将附加到工具栏末尾。 |
+| `nPos` | （可选）要将添加的工具按钮放置在工具栏中哪个工具按钮编号之前。如果 `nPos` 为 `-1`（默认值），则工具按钮将附加到工具栏末尾。 |
 | `cLabel` | （可选，版本 7.0）要显示在图标右侧按钮上的文本标签。默认情况下没有标签。 |
 
-## 返回值
+### 返回值
 
 一个整数。
 
-## 异常
+### 异常
 
 无
 
-## 示例
+### 示例
 
 在此示例中，从用户硬盘上的图标图形创建了一个工具按钮。此脚本从控制台执行。
 
-```
+```javascript
 // 创建一个文档
 var myDoc = app.newDoc();
 
@@ -2508,92 +2618,92 @@ app.addToolButton({
     nPos: 0
 });
 
-app.removeToolButton("myToolButton")
+app.removeToolButton("myToolButton");
 ```
 
-另请参阅 **util.iconStreamFromIcon** 及后续示例。
+另请参阅 `util.iconStreamFromIcon` 及后续示例。
 
-被视为 *特权* 执行并且是受信任的。该工具按钮将被添加到可停靠的“加载项”工具栏中。
+被视为特权执行并且是受信任的。该工具按钮将被添加到可停靠的“加载项”工具栏中。
 
-如果此方法是从 *非特权* 脚本调用的，警告信息“JavaScript Window”将出现在加载项工具栏上，并且该工具栏 *将无法停靠*。（请参阅 [特权与非特权上下文](Privileged versus Non-privileged Context)）。
+如果此方法是从非特权脚本调用的，警告信息“JavaScript Window”将出现在加载项工具栏上，并且该工具栏将无法停靠。（请参阅[特权与非特权上下文](Privileged versus Non-privileged Context)。）
 
 如果在调用此方法添加工具按钮时，Acrobat 中有一个活动文档（例如 `docA.pdf`）处于打开状态，则当 `docA.pdf` 不再是活动文档或被关闭时，Acrobat 将移除该工具按钮；在前一种情况下，如果 `docA.pdf` 再次成为活动文档，该工具按钮将自动添加到工具栏。
 
 图标大小限制为 20x20 像素。如果使用更大尺寸的图标，将引发异常。
 
-另请参阅 [removeToolButton](removeToolButton)。
+另请参阅 `removeToolButton`。
 
 ## alert
 
 在屏幕上显示一个警告对话框。
 
-## 参数
+### 参数
 
 | 参数 | 描述 |
-|---|---|
+| --- | --- |
 | `cMsg` | 包含要显示的消息的字符串。 |
 | `nIcon` | （可选）图标类型。值与图标的对应关系如下：0：错误（默认）；1：警告；2：问题；3：状态。**注意：** Macintosh 操作系统不区分警告和问题，因此它只有三种不同类型的图标。 |
 | `nType` | （可选）按钮组类型。值与按钮组的对应关系如下：0：确定（默认）；1：确定、取消；2：是、否；3：是、否、取消。 |
 | `cTitle` | （可选，版本 6.0）对话框的标题。如果未指定，则使用标题“Adobe Acrobat”。 |
 | `oDoc` | （可选，版本 6.0）警告应关联的 Doc 对象。 |
-| `oCheckbox` | （可选，版本 6.0）如果传递此参数，将在警告框的左下角区域创建一个复选框。**oCheckbox** 是一个通用的 JS 对象，具有三个属性。前两个属性值传递给 **alert()** 方法，第三个属性返回一个布尔值。 - **cMsg**（可选）：与复选框一起显示的字符串。如果未指定，默认字符串为“不要再次显示此消息”。 - **bInitialValue**（可选）：如果为 **true**，则复选框的初始状态为选中。默认为 **false**。 - **bAfterValue**：当 alert 方法退出时，包含对话框关闭时复选框的状态。如果为 **true**，则表示当警告框关闭时复选框被选中。 |
+| `oCheckbox` | （可选，版本 6.0）如果传递此参数，将在警告框的左下角区域创建一个复选框。`oCheckbox` 是一个通用的 JS 对象，具有三个属性。前两个属性值传递给 `alert()` 方法，第三个属性返回一个布尔值。<br><br>- `cMsg`（可选）：与复选框一起显示的字符串。如果未指定，默认字符串为“不要再次显示此消息”。<br>- `bInitialValue`（可选）：如果为 `true`，则复选框的初始状态为选中。默认为 `false`。<br>- `bAfterValue`：当 `alert` 方法退出时，包含对话框关闭时复选框的状态。如果为 `true`，则表示当警告框关闭时复选框被选中。 |
 
-## 返回值
+### 返回值
 
-**nButton**，用户按下的按钮类型：
+`nButton`，用户按下的按钮类型：
 
 1. 确定
 2. 取消
 3. 否
 4. 是
 
-## 示例 1
+### 示例 1
 
 一个通知用户的简单警告框。
 
-```
+```javascript
 app.alert({
     cMsg: "Error! Try again!",
     cTitle: "Acme Testing Service"
 });
 ```
 
-## 示例 2
+### 示例 2
 
 在用户许可下关闭文档。
 
-```
+```javascript
 // 一个 MouseUp 动作
 var nButton = app.alert({
     cMsg: "Do you want to close this document?",
     cTitle: "A message from A. C. Robat",
     nIcon: 2, nType: 2
 });
-if ( nButton == 4 ) this.closeDoc();
+if (nButton == 4) this.closeDoc();
 ```
 
-## 示例 3 (版本 6.0)
+### 示例 3（版本 6.0）
 
 一个文档在另一个文档中创建警告框。假设有两个文档，DocA 和 DocB。一个文档在浏览器中打开，另一个在查看器中打开。
 
-```
+```javascript
 // 以下是 DocA 中文档级别的声明
 var myAlertBoxes = new Object;
 myAlertBoxes.oMyCheckbox = {
     cMsg: "Care to see this message again?",
     bAfterValue: false
-}
+};
 ```
 
-以下是 DocA 中的一个 MouseUp 动作。变量 theOtherDoc 是 DocB 的 Doc 对象。警告框询问用户是否希望再次看到此警告框。如果用户点击提供的复选框，则警告框将不再出现。
+以下是 DocA 中的一个 MouseUp 动作。变量 `theOtherDoc` 是 DocB 的 Doc 对象。警告框询问用户是否希望再次看到此警告框。如果用户点击提供的复选框，则警告框将不再出现。
 
-```
-if ( !myAlertBoxes.oMyCheckbox.bAfterValue )
+```javascript
+if (!myAlertBoxes.oMyCheckbox.bAfterValue)
 {
     app.alert({
         cMsg: "This is a message from the DocA?",
         cTitle: "A message from A. C. Robat",
-        oDoc:theOtherDoc,
+        oDoc: theOtherDoc,
         oCheckbox: myAlertBoxes.oMyCheckbox
     });
 }
@@ -2605,11 +2715,11 @@ if ( !myAlertBoxes.oMyCheckbox.bAfterValue )
 
 > **注意：** 在 Apple Macintosh 和 UNIX 系统上，蜂鸣类型会被忽略。
 
-## 参数
+### 参数
 
 `nType`（可选）声音类型。值与声音的对应关系如下：0：错误；1：警告；2：问题；3：状态；4：默认（默认值）。
 
-## 返回值
+### 返回值
 
 无
 
@@ -2619,15 +2729,15 @@ if ( !myAlertBoxes.oMyCheckbox.bAfterValue )
 
 使用 `app.endPriv` 来撤销权限。可以使用方法 `app.trustedFunction` 创建受信任函数，使用 `app.trustPropagatorFunction` 创建信任传播函数。术语“堆栈帧”在 `app.trustedFunction` 的描述之后进行讨论。
 
-## 参数
+### 参数
 
 无
 
-## 返回值
+### 返回值
 
 成功时返回 `undefined`，失败时引发异常。
 
-## 示例
+### 示例
 
 有关用法示例，请参阅 `trustedFunction` 和 `trustPropagatorFunction`。
 
@@ -2635,9 +2745,7 @@ if ( !myAlertBoxes.oMyCheckbox.bAfterValue )
 
 此方法呈现一个文件系统浏览器，并返回一个包含用户响应信息的对象。
 
-> **注意：** (安全Ⓢ)：此方法只能在批处理或控制台事件期间执行。有关 Acrobat JavaScript 事件的讨论，请参阅 `Event 对象`。
-
-
+> **注意：**（安全Ⓢ）：此方法只能在批处理或控制台事件期间执行。有关 Acrobat JavaScript 事件的讨论，请参阅 `Event` 对象。
 
 ## Acrobat JavaScript 脚本参考
 
@@ -2647,9 +2755,9 @@ if ( !myAlertBoxes.oMyCheckbox.bAfterValue )
 
 | 参数 | 描述 |
 | --- | --- |
-| `bSave` | （可选）一个布尔值，若为 true，则指定文件系统浏览器将以保存操作时的形式呈现。默认值为 false。 |
+| `bSave` | （可选）一个布尔值，若为 `true`，则指定文件系统浏览器将以保存操作时的形式呈现。默认值为 `false`。 |
 | `cFilenameInit` | （可选）一个字符串，指定文件系统浏览器将填充的默认文件名。 |
-| `cFSInit` | （可选）一个字符串，指定文件系统浏览器初始操作的文件系统。支持两个值：""（空字符串）代表默认文件系统和 "CHTTP"。默认值为默认文件系统。此参数仅在 Web 服务器支持 WebDAV 时相关。 |
+| `cFSInit` | （可选）一个字符串，指定文件系统浏览器初始操作的文件系统。支持两个值：`""`（空字符串）代表默认文件系统和 `"CHTTP"`。默认值为默认文件系统。此参数仅在 Web 服务器支持 WebDAV 时相关。 |
 
 #### 返回值
 
@@ -2661,26 +2769,27 @@ if ( !myAlertBoxes.oMyCheckbox.bAfterValue )
 | `cPath` | 一个字符串，包含所选文件的结果路径。 |
 | `cURL` | 一个字符串，包含所选文件的结果 URL。 |
 
-如果用户取消，返回值为 undefined。出错时，抛出异常。
+如果用户取消，返回值为 `undefined`。出错时，抛出异常。
 
 #### 示例 1
 
 浏览文档并将结果报告到控制台。
 
-```
+```javascript
 var oRetn = app.browseForDoc({
     cFilenameInit: "myComDoc.pdf",
     cFSInit: "CHTTP",
 });
-if ( typeof oRetn != "undefined" )
-    for ( var o in oRetn )
-        console.println( "oRetn." + o + "=" + oRetn[o]);
-else console.println("User cancelled!");
+if (typeof oRetn != "undefined")
+    for (var o in oRetn)
+        console.println("oRetn." + o + "=" + oRetn[o]);
+else
+    console.println("User cancelled!");
 ```
 
 如果用户在 WebDAV 服务器上选择一个文件，此代码的可能输出如下：
 
-```
+```text
 oRetn.cFS=CHTTP
 oRetn.cPath=http://www.myCom.com/WebDAV/myComDoc.pdf
 oRetn.cURL=http://www.myCom.com/WebDAV/myComDoc.pdf
@@ -2688,101 +2797,119 @@ oRetn.cURL=http://www.myCom.com/WebDAV/myComDoc.pdf
 
 如果用户在默认文件系统中选择一个文件，此代码的典型输出如下：
 
-```
-oRetn.cFS=DOS
-oRetn.cPath=/C/temp/myComDoc.pdf
-oRetn.cURL=file:///C|/temp/myComDoc.pdf
+
+
+```javascript
+oRetn.cFS = DOS
+oRetn.cPath = /C/temp/myComDoc.pdf
+oRetn.cURL = file:///C|/temp/myComDoc.pdf
 ```
 
-脚本可以继续使用 **app.openDoc** 打开所选文件。
+脚本可以继续使用`app.openDoc`打开所选文件。
 
-```
-var myURL = (oRetn.cFS=="CHTTP") ? encodeURI(oRetn.cPath) : oRetn.cPath;
+```javascript
+var myURL = (oRetn.cFS == "CHTTP") ? encodeURI(oRetn.cPath) : oRetn.cPath;
 var oDoc = app.openDoc({cPath: myURL, cFS: oRetn.cFS});
 ```
 
-**注意：** **app.openDoc** 在从 WebDAV 服务器检索文件时需要 **cPath** 为转义后的字符串。有关简要描述和示例，请参阅 **app.openDoc**。
+**注意：**`app.openDoc`在从 WebDAV 服务器检索文件时需要`cPath`为转义后的字符串。有关简要描述和示例，请参阅`app.openDoc`。
 
 #### 示例 2
 
 浏览并保存文档。
 
-```
+```javascript
 var oRetn = app.browseForDoc({
     bSave: true,
     cFilenameInit: "myComDoc.pdf",
     cFSInit: "CHTTP",
 });
-if ( typeof oRetn != "undefined" ) this.saveAs({
-    cFS: oRetn.cFS, cPath: oRetn.cPath, bPromptToOverwrite: false});
+if (typeof oRetn != "undefined") {
+    this.saveAs({
+        cFS: oRetn.cFS,
+        cPath: oRetn.cPath,
+        bPromptToOverwrite: false
+    });
+}
 ```
 
-### clearInterval
+### `clearInterval`
 
 | 5.0 | | | |
+| --- | --- | --- | --- |
 
-取消先前注册的间隔 **oInterval**，该间隔最初由 **setInterval** 设置。
-另请参阅 **setTimeOut** 和 **clearTimeOut**。
+取消先前注册的间隔`oInterval`，该间隔最初由`setInterval`设置。
+
+另请参阅`setTimeOut`和`clearTimeOut`。
 
 #### 参数
 
-| oInterval | 要取消的已注册间隔。 |
+| 参数 | 描述 |
 | --- | --- |
+| `oInterval` | 要取消的已注册间隔。 |
 
 #### 返回值
 
-无
+无。
 
 #### 示例
 
-请参阅 **setTimeOut**。
+请参阅`setTimeOut`。
 
-### clearTimeOut
+### `clearTimeOut`
 
 | 5.0 | | | |
+| --- | --- | --- | --- |
 
-取消先前注册的超时间隔 **oTime**。此类间隔最初由 **setTimeOut** 设置。
-另请参阅 **setInterval** 和 **clearInterval**。
+取消先前注册的超时间隔`oTime`。此类间隔最初由`setTimeOut`设置。
+
+另请参阅`setInterval`和`clearInterval`。
 
 #### 参数
 
-| oTime | 要取消的先前注册的超时间隔。 |
+| 参数 | 描述 |
 | --- | --- |
+| `oTime` | 要取消的先前注册的超时间隔。 |
 
 #### 返回值
 
-无
+无。
 
 #### 示例
 
-请参阅 **setTimeOut**。
+请参阅`setTimeOut`。
 
-### endPriv
+### `endPriv`
 
 | 7.0 | | | | |
+| --- | --- | --- | --- | --- |
 
-撤销由 **app.beginPriv** 授予当前堆栈帧的任何权限。不会撤销当前事件授予的权限。
-相关方法为 **app.trustedFunction**、**app.trustPropagatorFunction** 和 **app.beginPriv**。
+撤销由`app.beginPriv`授予当前堆栈帧的任何权限。不会撤销当前事件授予的权限。
+
+相关方法为`app.trustedFunction`、`app.trustPropagatorFunction`和`app.beginPriv`。
 
 #### 参数
 
-无
+无。
 
 #### 返回值
 
-成功时返回 **undefined**，失败时抛出异常。
+成功时返回`undefined`，失败时抛出异常。
 
 #### 示例
 
-有关使用示例，请参阅 **trustedFunction** 和 **trustPropagatorFunction**。
+有关使用示例，请参阅`trustedFunction`和`trustPropagatorFunction`。
 
-### execDialog
+### `execDialog`
 
 | 7.0 | | | |
+| --- | --- | --- | --- |
 
 此方法向用户呈现一个模态对话框。模态对话框要求用户在可以再次直接使用宿主应用程序之前关闭对话框。
-对话框描述由 **monitor** 参数提供，这是一个如下所述的通用对象字面量。此对象字面量 *对话框描述符* 包含一组用于处理对话框各种事件的处理函数以及一组描述对话框内容的属性。
-对话框项通过 *ItemID* 标识，这是一个唯一的 4 字符字符串。*ItemID* 仅在需要在对话框描述的其他地方引用该元素时（例如设置/获取元素值、为元素添加处理程序、设置包含该元素的制表顺序）才需要。
+
+对话框描述由`monitor`参数提供，这是一个如下所述的通用对象字面量。此对象字面量“对话框描述符”包含一组用于处理对话框各种事件的处理函数以及一组描述对话框内容的属性。
+
+对话框项通过`ItemID`标识，这是一个唯一的 4 字符字符串。`ItemID`仅在需要在对话框描述的其他地方引用该元素时（例如设置/获取元素值、为元素添加处理程序、设置包含该元素的制表顺序）才需要。
 
 #### 参数
 
@@ -2794,9 +2921,9 @@ if ( typeof oRetn != "undefined" ) this.saveAs({
 
 #### 返回值
 
-一个字符串，即导致对话框关闭的元素的 ItemID。如果对话框由确定或取消按钮关闭，则返回值为 "ok" 或 "cancel"。
+一个字符串，即导致对话框关闭的元素的`ItemID`。如果对话框由确定或取消按钮关闭，则返回值为`"ok"`或`"cancel"`。
 
-> 注意：app.execDialog() 创建模态对话框，因此，在对话框处于活动状态时，JavaScript 调试器不工作。调试被禁用。
+> 注意：`app.execDialog()`创建模态对话框，因此，在对话框处于活动状态时，JavaScript 调试器不工作。调试被禁用。
 
 #### 对话框处理程序
 
@@ -2805,42 +2932,40 @@ if ( typeof oRetn != "undefined" ) this.saveAs({
 | 处理程序 | 描述 |
 | :--- | :--- |
 | `initialize` | 当对话框正在初始化时调用此方法。 |
-| `validate` | 当修改字段时调用此方法，以确定值是否可接受（返回 `true`）或不可接受（返回 `false`）。 |
+| `validate` | 当修改字段时调用此方法，以确定值是否可接受（返回`true`）或不可接受（返回`false`）。 |
 | `commit` | 当点击对话框的确定按钮时调用此方法。 |
 | `destroy` | 当对话框正在销毁时调用此方法。 |
-| `ItemID` | 当对话框元素 `ItemID` 被修改时调用此方法。对于文本框，这是在文本框失去焦点时。对于其他控件，这是在选择更改时。如果 `ItemID` 不是 JavaScript 标识符，则在定义方法时需要用双引号括起来，例如，`"bt:1": function () { ... }`。如果 `ItemID` 是 JavaScript 标识符，则双引号是可选的，例如，`"butn": function () { ... }` 或 `butn: function () { ... }` 都是正确的。 |
+| `ItemID` | 当对话框元素`ItemID`被修改时调用此方法。对于文本框，这是在文本框失去焦点时。对于其他控件，这是在选择更改时。如果`ItemID`不是 JavaScript 标识符，则在定义方法时需要用双引号括起来，例如，`"bt:1": function () { ... }`。如果`ItemID`是 JavaScript 标识符，则双引号是可选的，例如，`"butn": function () { ... }`或`butn: function () { ... }`都是正确的。 |
 
 #### 描述属性
 
-对话框描述由一组嵌套属性组成。对话框在 `description` 属性中描述，子元素作为形成树的子对象字面量数组。
+对话框描述由一组嵌套属性组成。对话框在`description`属性中描述，子元素作为形成树的子对象字面量数组。
 
-在 `description` 属性根级别设置的对话框属性在下表中列出。
+在`description`属性根级别设置的对话框属性在下表中列出。
 
-##### `description` 属性
+##### `description`属性
 
 | 属性 | 类型 | 描述 |
 | --- | --- | --- |
 | `name` | String | 对话框的标题栏，应进行本地化。 |
-| `first_tab` | String | 应处于制表顺序首位的对话框项的 `ItemID`。此对话框项在对话框创建时也将处于活动状态。此属性对于设置制表顺序是必需的。请参阅下面定义的 `next_tab` 属性。 |
+| `first_tab` | String | 应处于制表顺序首位的对话框项的`ItemID`。此对话框项在对话框创建时也将处于活动状态。此属性对于设置制表顺序是必需的。请参阅下面定义的`next_tab`属性。 |
 | `width` | Numeric | 以像素为单位指定对话框的宽度。如果未指定宽度，则使用内容的组合宽度。 |
 | `height` | Numeric | 以像素为单位指定对话框的高度。如果未指定高度，则使用内容的组合高度。 |
 | `char_width` | Numeric | 以字符为单位指定对话框的宽度。如果未指定宽度，则使用内容的组合宽度。 |
 | `char_height` | Numeric | 以字符为单位指定对话框的高度。如果未指定高度，则使用内容的组合高度。 |
-| `align_children` | String | 设置所有后代的对齐方式。必须是以下值之一：<br>• "align_left": 左对齐<br>• "align_center": 居中对齐<br>• "align_right": 右对齐<br>• "align_top": 顶部对齐<br>• "align_fill": 填充父级宽度对齐，可能会加宽对象。<br>• "align_distribute": 将内容分布在父级宽度上。<br>• "align_row": 以一致的基线将内容分布在父级宽度上。<br>• "align_offscreen": 将项目一个叠放在另一个上对齐。 |
-| `elements` | Array | 一个对象字面量数组，描述此对话框中包含的对话框元素（参见对话框元素） |
+| `align_children` | String | 设置所有后代的对齐方式。必须是以下值之一：<br>• `"align_left"`：左对齐<br>• `"align_center"`：居中对齐<br>• `"align_right"`：右对齐<br>• `"align_top"`：顶部对齐<br>• `"align_fill"`：填充父级宽度对齐，可能会加宽对象。<br>• `"align_distribute"`：将内容分布在父级宽度上。<br>• `"align_row"`：以一致的基线将内容分布在父级宽度上。<br>• `"align_offscreen"`：将项目一个叠放在另一个上对齐。 |
+| `elements` | Array | 一个对象字面量数组，描述此对话框中包含的对话框元素（参见对话框元素）。 |
 
 #### 对话框元素
 
-对话框 `elements` 是具有以下属性集的对象字面量。
+对话框`elements`是具有以下属性集的对象字面量。
 
 ##### 对话框元素属性
 
 | 属性 | 类型 | 描述 |
 | :--- | :--- | :--- |
-| `name` | String | 对话框元素的显示名称，应进行本地化。<br>**注意：** `name` 属性对于 `edit_text` 类型被忽略。 |
-| `item_id` | String | 此对话框的 `ItemID`，一个唯一的 4 字符字符串。 |
-
-
+| `name` | String | 对话框元素的显示名称，应进行本地化。<br>**注意：**`name`属性对于`edit_text`类型被忽略。 |
+| `item_id` | String | 此对话框的`ItemID`，一个唯一的 4 字符字符串。 |
 
 ## Acrobat JavaScript 脚本参考
 
@@ -2850,17 +2975,17 @@ if ( typeof oRetn != "undefined" ) this.saveAs({
 
 | 属性 | 类型 | 描述 |
 | :--- | :--- | :--- |
-| `type` | String | 此对话框元素的类型。必须是以下值之一：<br>• "button" - 按钮。<br>• "check_box" - 复选框。<br>• "radio" - 单选按钮。<br>• "list_box" - 列表框。<br>• "heir_list_box" - 层级列表框。<br>• "static_text" - 静态文本框。<br>• "edit_text" - 可编辑文本框。<br>• "popup" - 弹出控件。<br>• "ok" - 确定按钮。<br>• "ok_cancel" - 确定和取消按钮。<br>• "ok_cancel_other" - 确定、取消和其他按钮。<br>• "view" - 一组控件的容器。<br>• "cluster" - 一组控件的框架。<br>• "gap" - 占位符。 |
-| `next_tab` | String | Tab 顺序中下一个对话框项目的 ItemID。<br>**注意：** Tab 键不会停留在任何不是 `next_tab`（或 `first_tab`）属性目标的对话框项目上。Tab 顺序应形成一个循环链表。 |
+| `type` | String | 此对话框元素的类型。必须是以下值之一：<br>• `"button"` - 按钮。<br>• `"check_box"` - 复选框。<br>• `"radio"` - 单选按钮。<br>• `"list_box"` - 列表框。<br>• `"heir_list_box"` - 层级列表框。<br>• `"static_text"` - 静态文本框。<br>• `"edit_text"` - 可编辑文本框。<br>• `"popup"` - 弹出控件。<br>• `"ok"` - 确定按钮。<br>• `"ok_cancel"` - 确定和取消按钮。<br>• `"ok_cancel_other"` - 确定、取消和其他按钮。<br>• `"view"` - 一组控件的容器。<br>• `"cluster"` - 一组控件的框架。<br>• `"gap"` - 占位符。 |
+| `next_tab` | String | Tab 顺序中下一个对话框项目的`ItemID`。<br>**注意：**Tab 键不会停留在任何不是`next_tab`（或`first_tab`）属性目标的对话框项目上。Tab 顺序应形成一个循环链表。 |
 | `width` | Numeric | 以像素为单位指定元素的宽度。如果未指定宽度，则使用内容的组合宽度。 |
 | `height` | Numeric | 以像素为单位指定元素的高度。如果未指定高度，则使用内容的组合高度。 |
 | `char_width` | Numeric | 以字符为单位指定元素的宽度。如果未指定宽度，则使用内容的组合宽度。 |
 | `char_height` | Numeric | 以字符为单位指定元素的高度。如果未指定高度，则使用内容的组合高度。 |
-| `font` | String | 此元素使用的字体。必须是以下值之一：<ul><li>"default" - 默认字体</li><li>"dialog" - 对话框字体</li><li>"palette" - 调色板（小）字体</li></ul> |
+| `font` | String | 此元素使用的字体。必须是以下值之一：<br>• `"default"` - 默认字体<br>• `"dialog"` - 对话框字体<br>• `"palette"` - 调色板（小）字体 |
 | `bold` | Boolean | 指定字体是否为粗体。 |
 | `italic` | Boolean | 指定字体是否为斜体。 |
-| `alignment` | String | 设置此元素的对齐方式。必须是以下值之一：<ul><li>"align_left": 左对齐</li><li>"align_center": 居中对齐</li><li>"align_right": 右对齐</li><li>"align_top": 顶部对齐</li><li>"align_fill": 对齐以填充父级宽度，可能会扩大对象。</li><li>"align_distribute": 在父级宽度上分布内容。</li><li>"align_row": 在父级宽度上以一致的基线分布内容。</li><li>"align_offscreen": 将项目一个接一个地堆叠对齐。</li></ul> |
-| `align_children` | String | 设置所有后代元素的对齐方式。必须是以下值之一：<ul><li>"align_left": 左对齐</li><li>"align_center": 居中对齐</li><li>"align_right": 右对齐</li><li>"align_top": 顶部对齐</li><li>"align_fill": 对齐以填充父级宽度，可能会扩大对象。</li><li>"align_distribute": 在父级宽度上分布内容。</li><li>"align_row": 在父级宽度上以一致的基线分布内容。</li><li>"align_offscreen": 将项目一个接一个地堆叠对齐。</li></ul> |
+| `alignment` | String | 设置此元素的对齐方式。必须是以下值之一：<br>• `"align_left"`：左对齐<br>• `"align_center"`：居中对齐<br>• `"align_right"`：右对齐<br>• `"align_top"`：顶部对齐<br>• `"align_fill"`：对齐以填充父级宽度，可能会扩大对象。<br>• `"align_distribute"`：在父级宽度上分布内容。<br>• `"align_row"`：在父级宽度上以一致的基线分布内容。<br>• `"align_offscreen"`：将项目一个接一个地堆叠对齐。 |
+| `align_children` | String | 设置所有后代元素的对齐方式。必须是以下值之一：<br>• `"align_left"`：左对齐<br>• `"align_center"`：居中对齐<br>• `"align_right"`：右对齐<br>• `"align_top"`：顶部对齐<br>• `"align_fill"`：对齐以填充父级宽度，可能会扩大对象。<br>• `"align_distribute"`：在父级宽度上分布内容。<br>• `"align_row"`：在父级宽度上以一致的基线分布内容。<br>• `"align_offscreen"`：将项目一个接一个地堆叠对齐。 |
 | `elements` | Array | 描述包含在此对话框元素中的对话框元素的对象字面量数组。 |
 
 ## 部分对话框元素的附加属性
@@ -2869,20 +2994,22 @@ if ( typeof oRetn != "undefined" ) this.saveAs({
 
 | 元素类型 | 属性 | 类型 | 描述 |
 | :--- | :--- | :--- | :--- |
-| static_text | multiline | Boolean | 如果为 true，此静态文本元素为多行。 |
-| edit_text | multiline | Boolean | 如果为 true，此静态文本元素为多行。 |
-| | readonly | Boolean | 如果为 true，此文本元素为只读。**注意：** 当 password 设置为 true 时，此属性将被忽略。 |
-| | password | Boolean | 如果为 true，此文本元素为密码字段。 |
-| | PopupEdit | Boolean | 如果为 true，这是一个弹出编辑文本元素。 |
-| | SpinEdit | Boolean | 如果为 true，这是一个微调编辑文本元素。 |
-| radio | group_id | String | 此单选按钮所属的组名。 |
-| ok, ok_cancel, ok_cancel_other | ok_name | String | 确定按钮的名称 |
-| | cancel_name | String | 取消按钮的名称 |
-| | other_name | String | 其他按钮的名称 |
+| `static_text` | `multiline` | Boolean | 如果为`true`，此静态文本元素为多行。 |
+| `edit_text` | `multiline` | Boolean | 如果为`true`，此静态文本元素为多行。 |
+|  | `readonly` | Boolean | 如果为`true`，此文本元素为只读。**注意：**当`password`设置为`true`时，此属性将被忽略。 |
+|  | `password` | Boolean | 如果为`true`，此文本元素为密码字段。 |
+|  | `PopupEdit` | Boolean | 如果为`true`，这是一个弹出编辑文本元素。 |
+|  | `SpinEdit` | Boolean | 如果为`true`，这是一个微调编辑文本元素。 |
+| `radio` | `group_id` | String | 此单选按钮所属的组名。 |
+| `ok`、`ok_cancel`、`ok_cancel_other` | `ok_name` | String | 确定按钮的名称。 |
+|  | `cancel_name` | String | 取消按钮的名称。 |
+|  | `other_name` | String | 其他按钮的名称。 |
 
 ## 示例 1
 
 以下对话框描述符可以是文档级或文件夹级 JavaScript。
+
+
 
 ```javascript
 var dialog1 = {
@@ -3044,8 +3171,6 @@ var dialog2 =
     {
 ```
 
-
-
 ## 应用程序方法
 
 ```
@@ -3128,7 +3253,7 @@ elements:
 var retn = app.execDialog(dialog2);
 ```
 
-**retn** 的值在按下确定按钮时为 "ok"，在按下取消按钮时为 "cancel"，在按下另一个按钮时为 "other"，即那个标有 "Press Me" 的按钮。
+`retn` 的值在按下确定按钮时为 `"ok"`，在按下取消按钮时为 `"cancel"`，在按下另一个按钮时为 `"other"`，即那个标有 `"Press Me"` 的按钮。
 
 ## 示例 3
 
@@ -3161,7 +3286,9 @@ var dialog3 = {
             subl:
 ```
 
-```
+
+
+```javascript
 {
     "Acrobat Professional": +1,
     "Acrobat Standard": -2,
@@ -3214,15 +3341,19 @@ description:
 }
 ```
 
-然后我们执行
-`app.execDialog(dialog3);`
-在上面的例子中，如果将 `type: "list_box"` 这行替换为 `type: "popup"` 并移除高度规格说明，那么上面的示例将使用弹出控件而不是列表框运行。
+然后我们执行：
+
+```javascript
+app.execDialog(dialog3);
+```
+
+在上面的例子中，如果将`type: "list_box"`这行替换为`type: "popup"`并移除高度规格说明，那么上面的示例将使用弹出控件而不是列表框运行。
 
 ## 示例 4
 
-本示例说明了 hier_list_box。对话框打开后，会呈现一个层级列表。做出选择并点击选择按钮后，PDF 会跳转到用户选择的目标位置。doc 对象通过将其设置为对话框的属性来传递给对话框。
+本示例说明了`hier_list_box`。对话框打开后，会呈现一个层级列表。做出选择并点击选择按钮后，PDF 会跳转到用户选择的目标位置。`doc`对象通过将其设置为对话框的属性来传递给对话框。
 
-```
+```javascript
 var dialog4 = {
     initialize: function(dialog) {
         dialog.load({
@@ -3266,7 +3397,7 @@ var dialog4 = {
 }
 ```
 
-```
+```javascript
     }
     } else {
         if ( e[i] > 0 ) return e[i];
@@ -3320,7 +3451,7 @@ description:
                     align_children: "align_row",
 ```
 
-```
+```javascript
 elements:
 [
     {
@@ -3340,9 +3471,9 @@ elements:
 };
 ```
 
-此函数将 doc 对象附加到对话框，然后将对话框传递给 **app.execDialog()** 方法。**dialog4** 对象和此函数可以位于文档级别。
+此函数将`doc`对象附加到对话框，然后将对话框传递给`app.execDialog()`方法。`dialog4`对象和此函数可以位于文档级别。
 
-```
+```javascript
 function dotheDialog(dialog,doc)
 {
     dialog.doc = doc;
@@ -3352,13 +3483,13 @@ function dotheDialog(dialog,doc)
 
 最后，我们可以从鼠标松开动作等处执行下面的脚本。
 
-```
+```javascript
 dotheDialog( dialog4, this );
 ```
 
 ## 示例 5
 
-请参阅 **app.trustPropagatorFunction()** 后面的 **示例 2**。本示例说明如何从非特权上下文中执行特权代码。
+请参阅`app.trustPropagatorFunction()`后面的**示例 2**。本示例说明如何从非特权上下文中执行特权代码。
 
 ## execMenuItem
 
@@ -3367,31 +3498,31 @@ dotheDialog( dialog4, this );
 
 执行指定的菜单项。
 
-另请参阅 **addMenuItem**、**addSubMenu**、**hideMenuItem**。使用 **listMenuItems** 将所有菜单项的名称列出到控制台。
+另请参阅`addMenuItem`、`addSubMenu`、`hideMenuItem`。使用`listMenuItems`将所有菜单项的名称列出到控制台。
 
-从 5.0 版本开始，可以调用 **app.execMenuItem("SaveAs")**，但受下述限制。这会将当前文件保存到用户的硬盘驱动器；会打开一个“另存为”对话框，要求用户选择一个文件夹和文件名。执行“另存为”菜单项会将当前文件保存为线性化文件，前提是“另存为创建快速”选项
+从 5.0 版本开始，可以调用`app.execMenuItem("SaveAs")`，但受下述限制。这会将当前文件保存到用户的硬盘驱动器；会打开一个“另存为”对话框，要求用户选择一个文件夹和文件名。执行“另存为”菜单项会将当前文件保存为线性化文件，前提是“另存为创建快速”选项
 
-## 参数
+### 参数
 
-| **cMenuItem** | 要执行的菜单项。菜单项名称可通过 `listMenuItems` 获取。 |
+| `cMenuItem` | 要执行的菜单项。菜单项名称可通过`listMenuItems`获取。 |
 |---|---|
-| **oDoc** | （可选，版本 7.0）oDoc 是一个未隐藏文档的文档对象（参见 `doc.hidden`）。如果存在此参数，`execMenuItem` 将在该文档的上下文中执行菜单项。 |
+| `oDoc` | （可选，版本 7.0）`oDoc`是一个未隐藏文档的文档对象（参见`doc.hidden`）。如果存在此参数，`execMenuItem`将在该文档的上下文中执行菜单项。 |
 
-## 返回值
+### 返回值
 
 无
 
-## 示例 1
+### 示例 1
 
 此示例执行“文件 > 打开”菜单项。它将向用户显示一个对话框，请求输入要打开的文件。
 
-```
+```javascript
 app.execMenuItem("Open");
 ```
 
-## 示例 2 (Acrobat 5.0)
+### 示例 2（Acrobat 5.0）
 
-```
+```javascript
 var f = this.getField("myField");
 // 假设首选项设置为保存线性化版本
 app.execMenuItem("SaveAs");
@@ -3399,9 +3530,9 @@ app.execMenuItem("SaveAs");
 f.value = 3;
 ```
 
-## 示例 3 (Acrobat 5.0)
+### 示例 3（Acrobat 5.0）
 
-```
+```javascript
 var f = this.getField("myField");
 // 假设首选项设置为保存线性化版本
 app.execMenuItem("SaveAs");
@@ -3413,39 +3544,40 @@ f.value = 3;
 
 ## getNthPlugInName
 
-获取查看器已加载的*第 n 个*插件的名称。另请参见 `numPlugIns`。
-另请参见在更高版本中取代此属性的 `plugIns`。
+获取查看器已加载的*第 n 个*插件的名称。另请参见`numPlugIns`。
 
-## 参数
+另请参见在更高版本中取代此属性的`plugIns`。
 
-| **nIndex** | 查看器加载的*第 n 个*插件。 |
+### 参数
+
+| `nIndex` | 查看器加载的*第 n 个*插件。 |
 |---|---|
 
-## 返回值
+### 返回值
 
-`cName`，与 `nIndex` 对应的插件名称。
+`cName`，与`nIndex`对应的插件名称。
 
 ## getPath
 
-此方法返回在安装过程中创建的文件夹的路径。该方法区分应用程序文件夹和用户文件夹。如果路径不存在，该方法将抛出 **GeneralError** 异常（参见 `Error Objects`）。
+此方法返回在安装过程中创建的文件夹的路径。该方法区分应用程序文件夹和用户文件夹。如果路径不存在，该方法将抛出`GeneralError`异常（参见`Error Objects`）。
 
-**注意：**（安全(S)，版本 7.0）此方法只能在批处理或控制台事件期间执行。另请参见 `Privileged versus Non-privileged Context`。`Event Object` 包含对 Acrobat JavaScript 事件的讨论。
+**注意：**（安全(S)，版本 7.0）此方法只能在批处理或控制台事件期间执行。另请参见`Privileged versus Non-privileged Context`。`Event Object`包含对 Acrobat JavaScript 事件的讨论。
 
-## 参数
+### 参数
 
-| **cCategory** | （可选）使用此参数指示所查找文件夹的类别。**cCategory** 的两个值为 `app` 和 `user`。默认为 **app**。 |
+| `cCategory` | （可选）使用此参数指示所查找文件夹的类别。`cCategory`的两个值为`app`和`user`。默认为`app`。 |
 |---|---|
-| **cFolder** | （可选）一个平台无关的字符串，用于指示文件夹。**cFolder** 的值为 `root`、`eBooks`、`preferences`、`sequences`、`documents`、`javascript`、`stamps`、`dictionaries`、`plugIns`、`spPlugIns`、`help`、`temp`、`messages`、`resource`、`update`。默认为 **root**。 |
+| `cFolder` | （可选）一个平台无关的字符串，用于指示文件夹。`cFolder`的值为`root`、`eBooks`、`preferences`、`sequences`、`documents`、`javascript`、`stamps`、`dictionaries`、`plugIns`、`spPlugIns`、`help`、`temp`、`messages`、`resource`、`update`。默认为`root`。 |
 
-## 返回值
+### 返回值
 
 由参数确定的文件夹路径。如果文件夹不存在，则抛出异常。
 
-## 示例 1
+### 示例 1
 
 查找用户“序列”文件夹的路径。
 
-```
+```javascript
 try {
     var userBatch = app.getPath("user","sequences");
 } catch(e) {
@@ -3454,11 +3586,11 @@ try {
 console.println(userBatch);
 ```
 
-## 示例 2
+### 示例 2
 
 在 Windows 平台上创建文档并将其保存到“我的文档”。
 
-```
+```javascript
 var myDoc = app.newDoc();
 var myPath = app.getPath("user", "documents") + "/myDoc.pdf"
 myDoc.saveAs(myPath);
@@ -3469,19 +3601,19 @@ myDoc.closeDoc();
 
 转到视图堆栈上的上一个视图。这相当于按 Acrobat 工具栏上的“后退”按钮。
 
-## 参数
+### 参数
 
 无
 
-## 返回值
+### 返回值
 
 无
 
-## 示例
+### 示例
 
 创建一个“后退”按钮。此代码可以是批处理序列的一部分，例如，用于在选定的 PDF 文档上放置导航按钮。
 
-```
+```javascript
 var aRect = this.getPageBox();
 var width = aRect[2] - aRect[0];
 // 矩形高 12 点，宽 18 点，居中于底部
@@ -3499,33 +3631,34 @@ f.setAction("MouseUp", "app.goBack()");   // 添加动作
 
 转到视图堆栈上的下一个视图。这相当于按 Acrobat 工具栏上的“前进”按钮。
 
-## 参数
+### 参数
 
 无
 
-## 返回值
+### 返回值
 
 无
 
-## 示例
+### 示例
 
-请参见 `app.goBack` 后的示例。
+请参见`app.goBack`后的示例。
 
 ## hideMenuItem
 
 4.0
 
 移除指定的菜单项。
-另请参见 `addMenuItem`、`addSubMenu`、`execMenuItem` 和 `listMenuItems`。
 
-> **注意**：（安全(S)）此方法只能在应用程序初始化或控制台事件期间执行。有关 Acrobat JavaScript 事件的讨论，请参见 `Event Object`。
+另请参见`addMenuItem`、`addSubMenu`、`execMenuItem`和`listMenuItems`。
 
-## 参数
+> **注意：**（安全(S)）此方法只能在应用程序初始化或控制台事件期间执行。有关 Acrobat JavaScript 事件的讨论，请参见`Event Object`。
 
-| **cName** | 要移除的菜单项名称。菜单项名称可通过 `listMenuItems` 获取。 |
+### 参数
+
+| `cName` | 要移除的菜单项名称。菜单项名称可通过`listMenuItems`获取。 |
 |---|---|
 
-## 返回值
+### 返回值
 
 无
 
@@ -3535,22 +3668,22 @@ f.setAction("MouseUp", "app.goBack()");   // 添加动作
 
 移除指定的工具栏按钮。
 
-> **注意**：（安全(S)）此方法只能在应用程序初始化或控制台事件期间执行。有关 Acrobat JavaScript 事件的讨论，请参见 `Event Object`。
+> **注意：**（安全(S)）此方法只能在应用程序初始化或控制台事件期间执行。有关 Acrobat JavaScript 事件的讨论，请参见`Event Object`。
 
-## 参数
+### 参数
 
-| **cName** | 要移除的工具栏按钮的名称。工具栏项目名称可通过 `listToolbarButtons` 获取。 |
+| `cName` | 要移除的工具栏按钮的名称。工具栏项目名称可通过`listToolbarButtons`获取。 |
 |---|---|
 
-## 返回值
+### 返回值
 
 无
 
-## 示例
+### 示例
 
-一个名为 `myConfig.js` 的文件，包含以下脚本，放置在“文件夹级别 JavaScript”文件夹之一中。当 Acrobat 查看器启动时，“手形”图标不会出现。
+一个名为`myConfig.js`的文件，包含以下脚本，放置在“文件夹级别 JavaScript”文件夹之一中。当 Acrobat 查看器启动时，“手形”图标不会出现。
 
-```
+```javascript
 app.hideToolbarButton("Hand");
 ```
 
@@ -3558,13 +3691,15 @@ app.hideToolbarButton("Hand");
 
 7.0
 
-`launchURL` 方法在浏览器窗口中启动 `cURL` 参数传递给它的 URL。
+`launchURL`方法在浏览器窗口中启动`cURL`参数传递给它的 URL。
 
-## 参数
+### 参数
 
-| **cURL** | `cURL` 是一个字符串，用于指定要启动的 URL。 |
+
+
+| `cURL` | `cURL` 是一个字符串，用于指定要启动的 URL。 |
 |---|---|
-| **bNewFrame** | （可选）如果为 true，此方法将在浏览器应用程序的新窗口中启动该 URL。默认为 false。 |
+| `bNewFrame` | （可选）如果为 `true`，此方法将在浏览器应用程序的新窗口中启动该 URL。默认为 `false`。 |
 
 ## 返回值
 
@@ -3572,7 +3707,7 @@ app.hideToolbarButton("Hand");
 
 ## 示例 1
 
-```
+```javascript
 app.launchURL("http://www.adobe.com/", true);
 ```
 
@@ -3580,7 +3715,7 @@ app.launchURL("http://www.adobe.com/", true);
 
 向菜单系统添加一个在线帮助项。此代码应放置在文件夹级别的 JavaScript 文件中，或从 JavaScript 调试器控制台执行。
 
-```
+```javascript
 app.addMenuItem({
     cName: "myHelp", cUser: "在线 myHelp",
     cParent: "Help",
@@ -3591,11 +3726,12 @@ app.addMenuItem({
 
 相关方法是 `doc.getURL()` 和 `app.openDoc()`。
 
-## listMenuItems
+## `listMenuItems`
 
 5.0
 
 在 Acrobat 6.0 之前，此方法将菜单项名称列表返回到控制台。此方法已发生重大变化。从版本 6.0 开始，返回一个 `treeItem` 对象数组，该数组描述了菜单层次结构。
+
 另请参见 `addMenuItem`、`addSubMenu`、`execMenuItem` 和 `hideMenuItem`。
 
 ## 参数
@@ -3610,16 +3746,16 @@ app.addMenuItem({
 
 此泛型 JS 对象表示菜单或工具栏项目的层次结构。`app.listMenuItems` 和 `app.listToolbarButtons`（从 Acrobat 6.0 开始）返回这些对象的数组。它包含以下属性：
 
-| **属性** | **描述** |
+| 属性 | 描述 |
 |---|---|
-| **cName** | 菜单项或工具栏按钮的名称。 |
-| **oChildren** | （可选）一个 `treeItem` 对象数组，包含子菜单或弹出按钮。 |
+| `cName` | 菜单项或工具栏按钮的名称。 |
+| `oChildren` | （可选）一个 `treeItem` 对象数组，包含子菜单或弹出按钮。 |
 
 ## 示例 1
 
 将所有菜单项名称列出到控制台。
 
-```
+```javascript
 var menuItems = app.listMenuItems()
 for( var i in menuItems)
     console.println(menuItems[i] + "\n")
@@ -3629,7 +3765,7 @@ for( var i in menuItems)
 
 将所有菜单项以精简格式列出到控制台。
 
-```
+```javascript
 function FancyMenuList(m, nLevel)
 {
     var s = "";
@@ -3641,24 +3777,23 @@ function FancyMenuList(m, nLevel)
 }
 ```
 
-
-
 ## Acrobat JavaScript 脚本参考
 
 App 方法
 
-```
+```javascript
 var m = app.listMenuItems();
 for ( var i=0; i < m.length; i++ ) FancyMenuList(m[i], 0);
 ```
 
-## listToolbarButtons
+## `listToolbarButtons`
 
 | 5.0 |  |  |  |
 | :---: | :---: | :---: | :---: |
 
 在 Acrobat 6.0 之前，此方法返回工具栏按钮名称列表到控制台。此方法已发生重大变化。
-从 6.0 版本开始，返回一个 **treeItem** 对象数组，该数组描述了工具栏层次结构（包括弹出工具栏）。
+
+从 6.0 版本开始，返回一个 `treeItem` 对象数组，该数组描述了工具栏层次结构（包括弹出工具栏）。
 
 ## 参数
 
@@ -3672,7 +3807,7 @@ for ( var i=0; i < m.length; i++ ) FancyMenuList(m[i], 0);
 
 将所有工具栏名称列到控制台。
 
-```
+```javascript
 var toolbarItems = app.listToolbarButtons()
 for( var i in toolbarItems)
     console.println(toolbarItems[i] + "\n")
@@ -3680,34 +3815,35 @@ for( var i in toolbarItems)
 
 另请参阅 [hideToolbarButton](https://acrobat.com)。
 
-## mailGetAddrs
+## `mailGetAddrs`
 
 | 6.0 |  | Ⓐ | Ⓧ |  |
 | :---: | :---: | :---: | :---: | :---: |
 
-弹出一个通讯录对话框，让用户选择电子邮件收件人。该对话框可以选择性地预先填充 **cTo**、**cCc** 和 **cBcc** 字符串中以分号分隔的收件人列表。**bCc** 和 **bBcc** 布尔值控制对话框是否允许用户选择抄送和密送收件人。
-另请参阅 **app.mailMsg**、**doc.mailDoc**、**doc.mailForm**、**fdf.mail** 和 **report.mail**。
+弹出一个通讯录对话框，让用户选择电子邮件收件人。该对话框可以选择性地预先填充 `cTo`、`cCc` 和 `cBcc` 字符串中以分号分隔的收件人列表。`bCc` 和 `bBcc` 布尔值控制对话框是否允许用户选择抄送和密送收件人。
 
-**注意：** **mailGetAddrs** 是仅限 Windows 的功能。
+另请参阅 `app.mailMsg`、`doc.mailDoc`、`doc.mailForm`、`fdf.mail` 和 `report.mail`。
+
+**注意：** `mailGetAddrs` 是仅限 Windows 的功能。
 
 （SecurityAES，版本 7.0）此方法只能在批处理或控制台事件期间执行。另请参阅[特权与非特权上下文](https://acrobat.com)。[事件对象](https://acrobat.com)包含对 Acrobat JavaScript 事件的讨论。
 
 ## 参数
 
-- **cTo**（可选）要使用的“收件人”地址列表，以分号分隔。
-- **cCc**（可选）要使用的抄送地址列表，以分号分隔。
-- **cBcc**（可选）要使用的密送地址列表，以分号分隔。
-- **cCaption**（可选）显示在通讯录对话框标题栏上的字符串。
-- **bCc**（可选）一个布尔值，指示用户是否可以选择抄送收件人。
-- **bBcc**（可选）一个布尔值，指示用户是否可以选择密送收件人。此布尔值应仅在 **bCc** 为 **true** 时使用；否则，该方法将失败（并返回 **undefined**）。
+- `cTo`（可选）要使用的“收件人”地址列表，以分号分隔。
+- `cCc`（可选）要使用的抄送地址列表，以分号分隔。
+- `cBcc`（可选）要使用的密送地址列表，以分号分隔。
+- `cCaption`（可选）显示在通讯录对话框标题栏上的字符串。
+- `bCc`（可选）一个布尔值，指示用户是否可以选择抄送收件人。
+- `bBcc`（可选）一个布尔值，指示用户是否可以选择密送收件人。此布尔值应仅在 `bCc` 为 `true` 时使用；否则，该方法将失败（并返回 `undefined`）。
 
 ## 返回值
 
-失败（用户取消）时返回 undefined。成功时返回一个包含三个字符串的数组，分别对应收件人、抄送、密送。
+失败（用户取消）时返回 `undefined`。成功时返回一个包含三个字符串的数组，分别对应收件人、抄送、密送。
 
 ## 示例
 
-```
+```javascript
 var attempts = 2;
 while (attempts > 0)
 {
@@ -3728,14 +3864,14 @@ else {
 }
 ```
 
-## mailMsg
+## `mailMsg`
 
 | 4.0 |  |  | X |  |
 | :---: | :---: | :---: | :---: | :---: |
 
 发送一封电子邮件消息，可以选择是否与用户交互。
 
-另请参阅 **doc.mailDoc**、**doc.mailForm**、**fdf.mail** 和 **report.mail**。
+另请参阅 `doc.mailDoc`、`doc.mailForm`、`fdf.mail` 和 `report.mail`。
 
 **注意：** 在 Windows 上：客户端机器必须将其默认邮件程序配置为启用 MAPI，才能使用此方法。
 
@@ -3746,13 +3882,13 @@ App 方法
 ## 参数
 
 | 参数 | 描述 |
-| :--- | :--- |
-| **bUI** | 指示是否需要用户交互。如果为 **true**，则使用剩余参数来设置显示给用户的新邮件撰写窗口。如果为 **false**，则 **cTo** 参数是必需的，其他参数可选。 |
-| **cTo** | 以分号分隔的收件人列表。 |
-| **cCc** | （可选）以分号分隔的抄送收件人列表。 |
-| **cBcc** | （可选）以分号分隔的密送收件人列表。 |
-| **cSubject** | （可选）主题行文本。长度限制为 64k 字节。 |
-| **cMsg** | （可选）邮件正文文本。长度限制为 64k 字节。 |
+|---|---|
+| `bUI` | 指示是否需要用户交互。如果为 `true`，则使用剩余参数来设置显示给用户的新邮件撰写窗口。如果为 `false`，则 `cTo` 参数是必需的，其他参数可选。 |
+| `cTo` | 以分号分隔的收件人列表。 |
+| `cCc` | （可选）以分号分隔的抄送收件人列表。 |
+| `cBcc` | （可选）以分号分隔的密送收件人列表。 |
+| `cSubject` | （可选）主题行文本。长度限制为 64k 字节。 |
+| `cMsg` | （可选）邮件正文文本。长度限制为 64k 字节。 |
 
 ## 返回值
 
@@ -3760,22 +3896,22 @@ App 方法
 
 ## 示例
 
-这将弹出新邮件撰写窗口
+这将弹出新邮件撰写窗口。
 
-```
+```javascript
 app.mailMsg(true);
 ```
 
-这将发送邮件给 **fun1@fun.com** 和 **fun2@fun.com**
+这将发送邮件给 `fun1@fun.com` 和 `fun2@fun.com`。
 
-```
+```javascript
 app.mailMsg(false, "fun1@fun.com; fun2@fun.com", "", "",
 "This is the subject", "This is the body of the mail.");
 ```
 
 可以撰写包含表单数据的消息。
 
-```
+```javascript
 var cMyMsg = "Below are the current budget figures:\n\n";
 cMyMsg += "Date Compiled: " + this.getField("date").value + "\n";
 cMyMsg += "Current Estimate: " + this.getField("budget").value + "\n";
@@ -3787,32 +3923,33 @@ app.mailMsg({
 });
 ```
 
-## newDoc
+## `newDoc`
 
 | 5.0 |  | Ⓢ | ⓧ |  |
 | :---: | :---: | :---: | :---: | :---: |
 
-在 Acrobat 查看器中创建一个新文档，并返回 **doc** 对象。可选参数以磅为单位指定文档的介质框尺寸。
+在 Acrobat 查看器中创建一个新文档，并返回 `doc` 对象。可选参数以磅为单位指定文档的介质框尺寸。
 
 **注意：**（Security⑥）：此方法只能在批处理、控制台或菜单事件期间执行。另请参阅特权与非特权上下文。事件对象包含对 Acrobat JavaScript 事件的讨论。
+
 从 Acrobat 7.0 开始，通过菜单事件执行 JavaScript 不再是特权操作，详情请参阅通过菜单执行 JavaScript。
 
 ## 参数
 
 | 参数 | 描述 |
-| :--- | :--- |
-| **nWidth** | （可选）新文档的宽度（以磅为单位）。默认值为 612。 |
-| **nHeight** | （可选）新文档的高度（以磅为单位）。默认值为 792。 |
+|---|---|
+| `nWidth` | （可选）新文档的宽度（以磅为单位）。默认值为 612。 |
+| `nHeight` | （可选）新文档的高度（以磅为单位）。默认值为 792。 |
 
 ## 返回值
 
-返回新创建文档的 Doc 对象
+返回新创建文档的 `Doc` 对象。
 
 ## 示例
 
-在 Acrobat 的“文件”菜单中添加一个“新建”项。在“新建”下，有三个菜单项：“信函”、“A4”和“自定义”。此脚本应放在文件夹级别 JavaScript 的 .js 文件中。
+在 Acrobat 的“文件”菜单中添加一个“新建”项。在“新建”下，有三个菜单项：“信函”、“A4”和“自定义”。此脚本应放在文件夹级别 JavaScript 的 `.js` 文件中。
 
-```
+```javascript
 app.addSubMenu({ cName: "New", cParent: "File", nPos: 0 })
 app.addMenuItem({ cName: "Letter", cParent: "New", cExec:
     "app.newDoc();"});
@@ -3829,10 +3966,12 @@ app.addMenuItem({ cName: "Custom...", cParent: "New", cExec:
 ```
 
 上述脚本适用于 7.0 之前的 Acrobat 版本。对于 7.0 版本，如果用户在菜单 **编辑 > 首选项 > 常规 > JavaScript** 下选中了 **启用菜单项 JavaScript 执行权限** 项，它将正常工作。
-从 Acrobat 7.0 开始，通过菜单事件执行 JavaScript 不再是特权操作（除非选中了首选项项 **启用菜单项 JavaScript 执行权限**，如上所述），因此 `app.newDoc()` 需要通过 trustedFunction 执行。请参阅技术说明通过菜单执行 JavaScript。
+
+从 Acrobat 7.0 开始，通过菜单事件执行 JavaScript 不再是特权操作（除非选中了首选项项 **启用菜单项 JavaScript 执行权限**，如上所述），因此 `app.newDoc()` 需要通过 `trustedFunction` 执行。请参阅技术说明通过菜单执行 JavaScript。
+
 同一个示例可以如下实现：
 
-```
+```javascript
 trustedNewDoc = app.trustedFunction( function (nWidth, nHeight)
 {
     app.beginPriv();
@@ -3869,14 +4008,14 @@ app.addMenuItem({ cName: "Custom...", cParent: "New", cExec:
 
 创建一个空白文档并获取 `doc` 对象，然后插入水印。
 
-```
+```javascript
 var myNewDoc = app.newDoc();
 myNewDoc.addWatermarkFromText("Confidential",0,font.Helv,24,color.red);
 ```
 
 此示例使用了 `doc.addWatermarkFromText` 方法。
 
-## newFDF
+## `newFDF`
 
 | 6.0 | Ⓢ | ⓧ |  |
 | :---: | :---: | :---: | :---: |
@@ -3884,37 +4023,45 @@ myNewDoc.addWatermarkFromText("Confidential",0,font.Helv,24,color.red);
 创建一个新的 [FDF 对象](http://www.adobe.com/devnet/pdf/pdf_reference.html)，其中不包含任何数据。
 
 **注意：**（Security Ⓢ）：此方法仅在批处理、控制台、应用程序初始化和菜单事件期间可用。在 Adobe Reader 中不可用。
+
 从 Acrobat 7.0 开始，通过菜单事件执行 JavaScript 不再是特权操作，详情请参阅[通过菜单执行 JavaScript](http://www.adobe.com/devnet/acrobat/)。
 
 ## 参数
 
 无
 
+# `openDoc`
 
-
-# openDoc
-
-打开指定的 PDF 文档并返回 **doc** 对象。返回的 **doc** 对象可供脚本调用方法，或在新打开的文档中获取或设置属性。
+打开指定的 PDF 文档并返回 `doc` 对象。返回的 `doc` 对象可供脚本调用方法，或在新打开的文档中获取或设置属性。
 
 > **注意：** 当批处理序列正在运行时，会打开一个模态对话框，以防止处理过程中用户干扰；因此，此方法无法通过批处理序列执行。
 
-> **注意：** 当使用此方法打开 HTML 文档时，会抛出异常并返回无效的 **Doc Object**。请将 **app.openDoc** 包含在 **try/catch** 结构中以捕获异常。请参见下面的 **示例 2**。
+> **注意：** 当使用此方法打开 HTML 文档时，会抛出异常并返回无效的 `Doc Object`。请将 `app.openDoc` 包含在 `try/catch` 结构中以捕获异常。请参见下面的 **示例 2**。
 
-**参数**
+## 参数
 
 | 参数 | 描述 |
-| :--- | :--- |
-| cPath | 要打开的文档的设备独立路径。如果传递了 **oDoc**，该路径可以是相对于它的。目标文档必须在默认文件系统中可访问。**注意：** 当 **cFS** 设置为 "CHTTP" 时，**cPath** 字符串应进行转义，可以使用核心 JavaScript 全局函数 **encodeURI()**。请参见下面的示例 5。 |
-| oDoc | （可选）用作解析相对 **cPath** 基准的 **Doc 对象**。必须在默认文件系统中可访问。 |
-| cFS | （可选，版本 7.0）一个字符串，指定源文件系统名称。支持两个值："''"（空字符串，代表默认文件系统）和 "CHTTP"。默认值为默认文件系统。此参数仅在 Web 服务器支持 WebDAV 时相关。 |
-| bHidden | （可选，版本 7.0）一个布尔值，如果为 **true**，则会以隐藏窗口的方式打开 PDF 文件。默认值为 **false**。 |
-| bUseConv | （可选，版本 7.0）此参数在 cPath 引用非 PDF 文件时使用。bUseConv 是一个布尔值，如果为 true，该方法将尝试将非 PDF 文件转换为 PDF 文档。此参数的默认值为 false。**注意：**（安全 (S)，版本 7.0）bUseConv 只能在控制台和批处理事件期间设置为 true。另请参阅特权与非特权上下文。 |
+|---|---|
 
-**返回值**
 
-Doc 对象，或 null。
 
-**注意：** 对于版本 5.0，此方法返回一个 Doc 对象。在版本 5.0.5 中，该方法返回 Doc 对象，如果目标文档未将 doc.disclosed 属性设置为 true，则返回 null。“Acrobat 5.0.5 无障碍和表单补丁”更改了此行为——这是 Acrobat 6.0 或更高版本中 openDoc 的行为——如下：在批处理、控制台或菜单事件期间，openDoc 会忽略 disclosed 属性并返回由 cPath 指定的文件的 Doc 对象；在任何其他事件期间，如果 disclosed 为 true，openDoc 返回 Doc 对象，否则返回 null。
+| `cPath` | 要打开的文档的设备独立路径。如果传递了 `oDoc`，该路径可以是相对于它的。目标文档必须在默认文件系统中可访问。**注意：** 当 `cFS` 设置为 `"CHTTP"` 时，`cPath` 字符串应进行转义，可以使用核心 JavaScript 全局函数 `encodeURI()`。请参见下面的示例 5。 |
+| --- | --- |
+| `oDoc` | （可选）用作解析相对 `cPath` 基准的 `Doc` 对象。必须在默认文件系统中可访问。 |
+| `cFS` | （可选，版本 7.0）一个字符串，指定源文件系统名称。支持两个值：`""`（空字符串，代表默认文件系统）和 `"CHTTP"`。默认值为默认文件系统。此参数仅在 Web 服务器支持 WebDAV 时相关。 |
+| `bHidden` | （可选，版本 7.0）一个布尔值，如果为 `true`，则会以隐藏窗口的方式打开 PDF 文件。默认值为 `false`。 |
+| `bUseConv` | （可选，版本 7.0）此参数在 `cPath` 引用非 PDF 文件时使用。`bUseConv` 是一个布尔值，如果为 `true`，该方法将尝试将非 PDF 文件转换为 PDF 文档。此参数的默认值为 `false`。**注意：**（安全 (S)，版本 7.0）`bUseConv` 只能在控制台和批处理事件期间设置为 `true`。另请参阅特权与非特权上下文。 |
+
+## 返回值
+
+`Doc` 对象，或 `null`。
+
+## 注意
+
+对于版本 5.0，此方法返回一个 `Doc` 对象。在版本 5.0.5 中，该方法返回 `Doc` 对象，如果目标文档未将 `doc.disclosed` 属性设置为 `true`，则返回 `null`。“Acrobat 5.0.5 无障碍和表单补丁”更改了此行为——这是 Acrobat 6.0 或更高版本中 `openDoc` 的行为——如下：
+
+- 在批处理、控制台或菜单事件期间，`openDoc` 会忽略 `disclosed` 属性并返回由 `cPath` 指定的文件的 `Doc` 对象。
+- 在任何其他事件期间，如果 `disclosed` 为 `true`，`openDoc` 返回 `Doc` 对象，否则返回 `null`。
 
 ## 示例 1
 
@@ -3936,7 +4083,7 @@ otherDoc.getField("name").setFocus();
 this.closeDoc();
 ```
 
-此示例使用了 doc.closeDoc 和 field.setFocus。
+此示例使用了 `doc.closeDoc` 和 `field.setFocus`。
 
 ## 示例 2
 
@@ -3948,7 +4095,7 @@ try {
 } catch (e) {};
 ```
 
-## 示例 3 (Acrobat 7.0)
+## 示例 3（Acrobat 7.0）
 
 打开一个隐藏的 PDF 文档，从中提取信息，然后关闭它。
 
@@ -3962,7 +4109,7 @@ this.getField("yourTextField").value = v;
 oDoc.closeDoc();
 ```
 
-## 示例 4 (Acrobat 7.0)
+## 示例 4（Acrobat 7.0）
 
 通过将非 PDF 文件转换为 PDF 文档来打开它。以下脚本可以从控制台成功执行。
 
@@ -3973,20 +4120,20 @@ app.openDoc({
 });
 ```
 
-## 示例 5 (Acrobat 7.0)
+## 示例 5（Acrobat 7.0）
 
-从 WebDAV 服务器打开文件。**app.openDoc**() 方法要求文件路径进行转义。
+从 WebDAV 服务器打开文件。`app.openDoc()` 方法要求文件路径进行转义。
 
 ```javascript
 var myURL = encodeURI("http://www.myCom.com/My Folder/Com Doc.pdf");
 app.openDoc({cPath: myURL, cFS: "CHTTP" });
 ```
 
-另请参阅 **app.browseForDoc**()。
+另请参阅 `app.browseForDoc()`。
 
-# newFDF
+# `newFDF`
 
-返回一个新的 FDF 对象。
+返回一个新的 `FDF` 对象。
 
 ## 示例
 
@@ -3998,28 +4145,30 @@ fdf.addEmbeddedFile( "/c/myPDFs/myFile.pdf", 1);
 fdf.save( "/c/myFDFs/myFile.fdf" );
 ```
 
-此示例延续了 **app.openFDF** 的描述。
+此示例延续了 `app.openFDF` 的描述。
 
-# openFDF
+# `openFDF`
 
-| 6.0 | | S | X | |
+| 6.0 |  | S | X | |
 | --- | --- | --- | --- | --- |
 
-此方法通过打开指定文件来创建一个新的 **FDF 对象**。该 **FDF** 对象具有可用于该文件所包含数据的方法和属性。
+此方法通过打开指定文件来创建一个新的 `FDF` 对象。该 `FDF` 对象具有可用于该文件所包含数据的方法和属性。
 
 > **注意：**（安全 Ⓘ）：此方法仅在批处理、控制台、应用程序初始化和菜单事件期间可用。另请参阅[特权与非特权上下文](Privileged versus Non-privileged Context)。
+
 > 从 Acrobat 7.0 开始，通过菜单事件执行 JavaScript 不再具有特权，有关详细信息，请参阅[通过菜单执行 JavaScript](JavaScript Execution through the Menu)。
+
 > 在 Adobe Reader 中不可用。
 
-**参数**
+## 参数
 
 | 参数 | 描述 |
 | :--- | :--- |
-| **cDIPath** | 要打开的文件的设备独立路径。 |
+| `cDIPath` | 要打开的文件的设备独立路径。 |
 
-**返回值**
+## 返回值
 
-已打开的 FDF 文件的 **FDF 对象**。
+已打开的 FDF 文件的 `FDF` 对象。
 
 ## 示例
 
@@ -4038,22 +4187,23 @@ fdf.save( "/c/myFDFs/myFile.fdf" ); // 保存并关闭此 FDF
 
 请参阅 `fdf.signatureSign` 以获取另一个用法示例。
 
-# popUpMenu
+# `popUpMenu`
 
-| 5.0 |  |  |  |
+| 5.0 | | | |
 | --- | --- | --- | --- |
 
 在当前鼠标位置创建一个弹出菜单，其中包含指定的项目。
+
 另请参阅推荐的方法 `popUpMenuEx`。
 
-**参数**
+## 参数
 
 | 参数 | 描述 |
 | :--- | :--- |
-| cItem | （可选）如果参数是字符串，则将其作为菜单项列在菜单中。菜单项名称 "-" 是保留的，用于在菜单中绘制分隔线。 |
-| Array | （可选）如果参数是一个数组，则它将显示为一个子菜单，其中数组中的第一个元素是父菜单项。如果需要，此数组可以包含更多的子菜单。 |
+| `cItem` | （可选）如果参数是字符串，则将其作为菜单项列在菜单中。菜单项名称 `"-"` 是保留的，用于在菜单中绘制分隔线。 |
+| `Array` | （可选）如果参数是一个数组，则它将显示为一个子菜单，其中数组中的第一个元素是父菜单项。如果需要，此数组可以包含更多的子菜单。 |
 
-**返回值**
+## 返回值
 
 返回所选菜单项的名称，如果未选择任何项目，则返回 `null`。
 
@@ -4066,38 +4216,40 @@ var cChoice = app.popUpMenu("Introduction", "-", "Chapter 1",
 app.alert("You chose the \"" + cChoice + "\" menu item");
 ```
 
-# popUpMenuEx
+# `popUpMenuEx`
 
-| 6.0 |  |  |  |
+| 6.0 | | | |
 | --- | --- | --- | --- |
 
 在当前鼠标位置创建一个弹出菜单，其中包含指定的项目。
+
 一个或多个参数中的每一个都是一个 `MenuItem Generic Object`，用于描述要包含在弹出菜单中的菜单项。
+
 `popUpMenuEx` 方法优先于使用 `popUpMenu`。
 
-**参数**
+## 参数
 
 一个或多个 [MenuItem Generic Object](https://example.com)。
 
-**返回值**
+## 返回值
 
-所选菜单项的 **cReturn** 值，如果未为该项指定 **cReturn**，则返回其 **cName**。如果未进行选择，该方法返回 **null**。
+所选菜单项的 `cReturn` 值，如果未为该项指定 `cReturn`，则返回其 `cName`。如果未进行选择，该方法返回 `null`。
 
 ## MenuItem Generic Object
 
-此通用 JS 对象表示传递给 **app.popUpMenuEx** 的菜单项。它具有以下属性：
+此通用 JS 对象表示传递给 `app.popUpMenuEx` 的菜单项。它具有以下属性：
 
 | 属性 | 描述 |
 | :--- | :--- |
-| **cName** | 菜单项的名称。这是将显示在要创建的菜单项上的字符串。值 "-" 是保留的，用于在菜单中绘制分隔线。 |
-| **bMarked** | （可选）是否要用复选标记标记该项。默认值为 **false**（未标记）。 |
-| **bEnabled** | （可选）该项是显示为启用状态还是灰色状态。默认值为 **true**（启用）。 |
-| **cReturn** | （可选）选择菜单项时返回的字符串。默认值为 **cName** 的值。 |
-| **oSubMenu** | （可选）一个 [MenuItem Generic Object](https://example.com) 表示子菜单项，或一个子菜单项数组，每个都由一个 [MenuItem Generic Object](https://example.com) 表示。 |
+| `cName` | 菜单项的名称。这是将显示在要创建的菜单项上的字符串。值 `"-"` 是保留的，用于在菜单中绘制分隔线。 |
+| `bMarked` | （可选）是否要用复选标记标记该项。默认值为 `false`（未标记）。 |
+| `bEnabled` | （可选）该项是显示为启用状态还是灰色状态。默认值为 `true`（启用）。 |
+| `cReturn` | （可选）选择菜单项时返回的字符串。默认值为 `cName` 的值。 |
+| `oSubMenu` | （可选）一个 [MenuItem Generic Object](https://example.com) 表示子菜单项，或一个子菜单项数组，每个都由一个 [MenuItem Generic Object](https://example.com) 表示。 |
 
 ## 示例 1
 
-以下示例说明了 **popUpMenuEx()** 方法的所有功能。
+以下示例说明了 `popUpMenuEx()` 方法的所有功能。
 
 ```javascript
 var cChoice = app.popUpMenuEx(
@@ -4117,11 +4269,9 @@ var cChoice = app.popUpMenuEx(
 app.alert("You chose the \"" + cChoice + "\" menu item");
 ```
 
-
-
 ## 示例 2
 
-`app.popupMenuEx` 实际上接收的是一个 `MenuItem Generic Object` 列表，因此，其参数不能作为 JavaScript 变量直接传递。以下示例提供了一种变通方法：创建一个菜单项数组，并使用核心 JavaScript 的 Function 对象方法 `apply`。此方法允许将参数作为数组传递。
+`app.popupMenuEx` 实际上接收的是一个 `MenuItem Generic Object` 列表，因此，其参数不能作为 JavaScript 变量直接传递。以下示例提供了一种变通方法：创建一个菜单项数组，并使用核心 JavaScript 的 `Function` 对象方法 `apply`。此方法允许将参数作为数组传递。
 
 ```javascript
 // 将弹出菜单属性声明为一个数组。
@@ -4138,77 +4288,81 @@ var cChoice = app.popUpMenuEx.apply( app, aParams );
 if ( cChoice != null ) app.launchURL(cChoice);
 ```
 
-## removeToolButton
+# `removeToolButton`
 
-| 6.0 |  |  |  |  |
+| 6.0 | | | | |
 | --- | --- | --- | --- | --- |
 
 从工具栏中移除一个先前添加的按钮。
 
-> **注意：** (版本 7.0) 要移除由 `addToolButton` 方法添加的工具按钮，`removeToolButton` 必须在与执行 `addToolButton` 相同的上下文中执行。
+> **注意：**（版本 7.0）要移除由 `addToolButton` 方法添加的工具按钮，`removeToolButton` 必须在与执行 `addToolButton` 相同的上下文中执行。
+
 如果添加按钮时 Acrobat 中没有打开任何文档，那么在移除按钮时，Acrobat 中也必须没有打开任何文档。请参阅下面的示例 2。
+
 类似地，如果添加工具按钮时某个文档是活动文档，那么要使用 `removeToolButton` 移除该按钮，必须使该文档保持为活动状态。
+
 对于添加工具按钮时处于活动状态的文档，当该文档关闭时，该按钮会被自动移除。另请参阅 `addToolButton` 描述后的注释。
 
-### 参数
+## 参数
 
 | `cName` | 调用 `addToolButton` 时提供的与语言无关的标识符。 |
 | --- | --- |
 
-### 返回值
+## 返回值
 
-无
+无。
 
-### 异常
+## 异常
 
-无
+无。
 
-### 示例 1
+## 示例 1
 
-参见 **addToolButton** 后的示例。
+参见 `addToolButton` 后的示例。
 
-### 示例 2
+## 示例 2
 
-此示例说明了在与 **addToolButton** 相同的上下文中移除工具按钮。最初，Acrobat 中没有打开任何文档。从控制台执行以下代码
+此示例说明了在与 `addToolButton` 相同的上下文中移除工具按钮。最初，Acrobat 中没有打开任何文档。从控制台执行以下代码：
 
 ```javascript
 app.addToolButton({cName: "button1", cExec:"app.alert('pressed');",
     cTooltext:"Button1"});
 ```
 
-现在在 Acrobat 中打开一个 PDF 文档，并从控制台执行下一行
+现在在 Acrobat 中打开一个 PDF 文档，并从控制台执行下一行：
 
 ```javascript
 app.removeToolButton({cName:"button1"});
 ```
 
-将抛出一个异常，按钮移除失败。现在关闭 PDF 文档，并再次执行 **removeToolButton** 脚本，按钮将被移除。
+将抛出一个异常，按钮移除失败。现在关闭 PDF 文档，并再次执行 `removeToolButton` 脚本，按钮将被移除。
 
-## response
+# `response`
 
-| 3.01 |  |  |  |
+| 3.01 | | | |
 | --- | --- | --- | --- |
-|  |  |  |  |
 
 显示一个包含问题和供用户输入回复的编辑框的对话框。
 
-### 参数
+## 参数
 
-| **cQuestion** | 要向用户提出的问题。 |
-| --- | --- |
-| **cTitle** | (可选) 出现在对话框窗口标题中的标题。 |
-| **cDefault** | (可选) 问题答案的默认值。如果未指定，则不提供默认值。 |
-| **bPassword** | (可选) 如果为 **true**，表示用户的回复应显示为星号 (*) 或项目符号 (•) 以隐藏可能属于敏感信息的回复。默认值为 **false**。 |
-| **cLabel** | (可选，版本 6.0) 出现在编辑文本框前面且位于同一行的简短字符串。 |
+| 参数 | 描述 |
+| :--- | :--- |
+| `cQuestion` | 要向用户提出的问题。 |
+| `cTitle` | （可选）出现在对话框窗口标题中的标题。 |
+| `cDefault` | （可选）问题答案的默认值。如果未指定，则不提供默认值。 |
+| `bPassword` | （可选）如果为 `true`，表示用户的回复应显示为星号（`*`）或项目符号（`•`）以隐藏可能属于敏感信息的回复。默认值为 `false`。 |
+| `cLabel` | （可选，版本 6.0）出现在编辑文本框前面且位于同一行的简短字符串。 |
 
-### 返回值
+## 返回值
 
-一个包含用户回复的字符串。如果用户按下对话框上的**取消**按钮，则返回 **null** 对象。
+一个包含用户回复的字符串。如果用户按下对话框上的**取消**按钮，则返回 `null` 对象。
 
 Acrobat JavaScript 脚本参考
+
 App 方法
 
-### 示例
+## 示例
 
 此示例请求用户回复，并报告回复内容。
 
@@ -4226,14 +4380,17 @@ else
     "question.",3);
 ```
 
-## setInterval
+# `setInterval`
 
-5.0
+`5.0`
 
-注册一个要计算的 JavaScript 表达式，并在指定的时间段过后执行该表达式。将返回的 **interval** 对象传递给 **clearInterval** 以终止周期性计算。返回值必须保存在 JavaScript 变量中，否则 **interval** 对象将被垃圾回收，时钟将停止。
-另请参阅 **clearInterval**、**setTimeOut** 和 **clearTimeOut**。
+注册一个要计算的 JavaScript 表达式，并在指定的时间段过后执行该表达式。将返回的 `interval` 对象传递给 `clearInterval` 以终止周期性计算。返回值必须保存在 JavaScript 变量中，否则 `interval` 对象将被垃圾回收，时钟将停止。
 
-> **注意：** 打开和关闭文档 JavaScripts 对话框会导致 JavaScript 解释器重新读取文档 JavaScripts，因此会重新初始化任何文档级变量。在通过 **setInterval** 或 **setTimeOut** 注册 JavaScript 表达式进行计算后，以这种方式重置文档级变量，如果这些脚本使用了文档级变量，可能会导致 JavaScript 错误。
+另请参阅 `clearInterval`、`setTimeOut` 和 `clearTimeOut`。
+
+
+
+> **注意：** 打开和关闭文档 JavaScripts 对话框会导致 JavaScript 解释器重新读取文档 JavaScripts，因此会重新初始化任何文档级变量。在通过 `setInterval` 或 `setTimeOut` 注册 JavaScript 表达式进行计算后，以这种方式重置文档级变量，如果这些脚本使用了文档级变量，可能会导致 JavaScript 错误。
 
 ### 参数
 
@@ -4243,11 +4400,11 @@ else
 
 ### 返回值
 
-一个 **interval** 对象
+一个 `interval` 对象。
 
 ### 示例
 
-例如，要在一个名为 "Color" 的字段上创建一个每秒变化的简单颜色动画：
+例如，要在一个名为 `"Color"` 的字段上创建一个每秒变化的简单颜色动画：
 
 ```javascript
 function DoIt() {
@@ -4264,32 +4421,32 @@ timeout = app.setInterval("DoIt()", 1000);
 timeout.count = 0;
 ```
 
-另请参阅 **setTimeOut** 获取更多示例。
+另请参阅 `setTimeOut` 获取更多示例。
 
 ## setTimeOut
 
 | 5.0 | | | |
 | --- | --- | --- | --- |
 
-注册一个要计算的 JavaScript 表达式，并在指定的时间段过后执行该表达式。该表达式仅执行一次。将返回的 **timeout** 对象传递给 **clearTimeOut** 以取消超时事件。返回值必须保存在 JavaScript 变量中，否则 **timeout** 对象将被垃圾回收，时钟将停止。
+注册一个要计算的 JavaScript 表达式，并在指定的时间段过后执行该表达式。该表达式仅执行一次。将返回的 `timeout` 对象传递给 `clearTimeOut` 以取消超时事件。返回值必须保存在 JavaScript 变量中，否则 `timeout` 对象将被垃圾回收，时钟将停止。
 
-另请参阅 **clearTimeOut**、**setInterval** 和 **clearInterval**。
+另请参阅 `clearTimeOut`、`setInterval` 和 `clearInterval`。
 
-> **注意：** 打开和关闭文档 JavaScripts 对话框会导致 JavaScript 解释器重新读取文档 JavaScripts，因此会重新初始化任何文档级变量。在通过 **setInterval** 或 **setTimeOut** 注册 JavaScript 表达式进行计算后，以这种方式重置文档级变量，如果这些脚本使用了文档级变量，可能会导致 JavaScript 错误。
+> **注意：** 打开和关闭文档 JavaScripts 对话框会导致 JavaScript 解释器重新读取文档 JavaScripts，因此会重新初始化任何文档级变量。在通过 `setInterval` 或 `setTimeOut` 注册 JavaScript 表达式进行计算后，以这种方式重置文档级变量，如果这些脚本使用了文档级变量，可能会导致 JavaScript 错误。
 
 ### 参数
 
-| **cExpr** | 要计算的 JavaScript 表达式。 |
+| `cExpr` | 要计算的 JavaScript 表达式。 |
 | --- | --- |
-| **nMilliseconds** | 以毫秒为单位的计算时间周期。 |
+| `nMilliseconds` | 以毫秒为单位的计算时间周期。 |
 
 ### 返回值
 
-一个 **timeout** 对象
+一个 `timeout` 对象。
 
 ### 示例
 
-此示例创建一个简单的滚动字幕。假设有一个名为 "marquee" 的文本字段。该字段的默认值是 "Adobe Acrobat version 7.0 will soon be here!"。
+此示例创建一个简单的滚动字幕。假设有一个名为 `"marquee"` 的文本字段。该字段的默认值是 `"Adobe Acrobat version 7.0 will soon be here!"`。
 
 ```javascript
 // Document level JavaScript function
@@ -4305,54 +4462,56 @@ function runMarquee() {
 // Insert a mouse up action into a "Go" button
 run = app.setInterval("runMarquee()", 100);
 // stop after a minute
-stoprun=app.setTimeOut("app.clearInterval(run)",6000);
+stoprun = app.setTimeOut("app.clearInterval(run)", 6000);
 
 // Insert a mouse up action into a "Stop" button
 try {
     app.clearInterval(run);
     app.clearTimeOut(stoprun);
-} catch (e){}
+} catch (e) {}
 ```
 
-这里，我们用 **try/catch** 保护了“停止”按钮的代码。如果用户在没有先按下“开始”的情况下按下“停止”按钮，**run** 和 **stoprun** 将是未定义的，“停止”代码将抛出异常。当异常被抛出时，**catch** 代码将执行。在上面的示例中，如果用户先按“停止”，代码将不执行任何操作。
+这里，我们用 `try/catch` 保护了“停止”按钮的代码。如果用户在没有先按下“开始”的情况下按下“停止”按钮，`run` 和 `stoprun` 将是未定义的，“停止”代码将抛出异常。当异常被抛出时，`catch` 代码将执行。在上面的示例中，如果用户先按“停止”，代码将不执行任何操作。
 
 ## trustedFunction
 
-| 7.0 |  | Ⓢ |  |  |
-| --- | --- | --- | --- | --- |
+| 7.0 | | Ⓢ | | |
+| --- | --- | --- | --- |
 
 此方法将一个函数标记为“可信”。可信函数是能够为*其*自身堆栈帧显式提升当前权限级别的函数。通常，堆栈帧（函数体）包含安全受限方法，这些方法需要特权上下文才能运行。通过提升权限级别，这些受限方法就可以在非特权上下文中执行。
 
 有关背景信息，请阅读第 680 页的[特权与非特权上下文以及通过菜单执行 JavaScript](javascript:void(0)) 段落。
 
-在函数定义体中，需要使用 **app.beginPriv/app.endPriv** 对来包装通常在特权上下文中执行的任何代码，如下例所示。
+在函数定义体中，需要使用 `app.beginPriv/app.endPriv` 对来包装通常在特权上下文中执行的任何代码，如下例所示。
 
-相关方法是 **app.[trustPropagatorFunction](javascript:void(0))**、**app.beginPriv** 和 **app.endPriv**。
+相关方法是 `app.trustPropagatorFunction(javascript:void(0))`、`app.beginPriv` 和 `app.endPriv`。
 
-(安全 Ⓢ)：此方法仅在批处理、控制台和应用程序初始化期间可用。
+（安全 Ⓢ）：此方法仅在批处理、控制台和应用程序初始化期间可用。
 
-
-
-# 参数
+### 参数
 
 | oFunc | 一个函数对象，指定要标记为受信任的函数。 |
 
-# 返回值
+### 返回值
 
-成功时，返回传入的同一个函数对象。执行成功后，该函数对象将成为受信任的。出错时，抛出 **NotAllowedError**。
+成功时，返回传入的同一个函数对象。执行成功后，该函数对象将成为受信任的。出错时，抛出 `NotAllowedError`。
 
-# 方法语法
+### 方法语法
 
 此方法可以通过两种方式调用。
 
-```
+```javascript
 myTrustedFunction = app.trustedFunction(
     function()
     {
         <function body>
     }
 );
-或
+```
+
+或：
+
+```javascript
 function myOtherTrustedFunction()
 {
     <function body>
@@ -4362,51 +4521,53 @@ app.trustedFunction(myOtherTrustedFunction);
 
 除了下面的示例，请务必查看 `app.trustPropagatorFunction()` 方法后面的示例。每个示例都需要仔细阅读，其中包含许多注释，这些注释阐明了受信任函数的概念，并强调了该主题的一些细微差别。
 
-# 示例 1
+### 示例 1
 
 `app.newDoc()` 是一个典型的安全受限方法示例，它需要在一个特权上下文中运行。将以下脚本放入用户（或应用程序）JavaScript 文件夹的 `.js` 文件中。
 
-```
-trustedNewDoc = app.trustedFunction( function (nWidth, nHeight)
+```javascript
+trustedNewDoc = app.trustedFunction(function(nWidth, nHeight)
 {
     // additional code may appear above
     app.beginPriv();          // 显式提升权限
-    app.newDoc( nWidth, nHeight );
+    app.newDoc(nWidth, nHeight);
     app.endPriv();
     // additional code may appear below.
-})
+});
 ```
 
-现在，重启 Acrobat 后，可以从任何地方执行函数 **trustedNewDoc()**，例如，从一个按钮的鼠标抬起动作中执行。例如，以下是一个按钮鼠标抬起动作的脚本，
+现在，重启 Acrobat 后，可以从任何地方执行函数 `trustedNewDoc()`，例如，从一个按钮的鼠标抬起动作中执行。例如，以下是一个按钮鼠标抬起动作的脚本：
 
+```javascript
+trustedNewDoc(200, 200);
 ```
-trustedNewDoc( 200, 200 );
-```
 
-点击该按钮将创建一个 200 点乘以 200 点的新文档。安全限制不允许从鼠标抬起事件执行 **app.newDoc(200, 200)**，但通过这个受信任函数，允许创建新文档。
+点击该按钮将创建一个 200 点乘以 200 点的新文档。安全限制不允许从鼠标抬起事件执行 `app.newDoc(200, 200)`，但通过这个受信任函数，允许创建新文档。
 
-这不是一个非常复杂的示例，该函数需要两个正整数作为参数，而 **app.newDoc()** 方法有两个可选参数。可以修改上述示例，使其也有两个可选参数。
+这不是一个非常复杂的示例，该函数需要两个正整数作为参数，而 `app.newDoc()` 方法有两个可选参数。可以修改上述示例，使其也有两个可选参数。
 
-**trustedNewDoc()** 函数也可以作为菜单项执行。
+`trustedNewDoc()` 函数也可以作为菜单项执行。
 
-```
-app.addMenuItem( {
+```javascript
+app.addMenuItem({
     cName: "myTrustedNewDoc",
-    cUser: "New Doc", cParent: "Tools",
-    cExec: "trustedNewDoc(200,200)", nPos: 0
-} );
+    cUser: "New Doc",
+    cParent: "Tools",
+    cExec: "trustedNewDoc(200,200)",
+    nPos: 0
+});
 ```
 
-同样，**trustedNewDoc()** 可以通过让用户输入所需的新页面尺寸来增强，可以通过一系列 **app.response()** 对话框，或一个完整的对话框（由 **app.execDialog()** 创建）来实现。
+同样，`trustedNewDoc()` 可以通过让用户输入所需的新页面尺寸来增强，可以通过一系列 `app.response()` 对话框，或一个完整的对话框（由 `app.execDialog()` 创建）来实现。
 
-> **注意：** 如果 **app.newDoc()** *未*包含在 **app.beginPriv/app.endPriv** 对中，从非特权上下文执行 **trustedNewDoc()** 将会失败，并会抛出异常。你需要*显式地*按照所示方式提升权限级别。
+> **注意：** 如果 `app.newDoc()` *未*包含在 `app.beginPriv/app.endPriv` 对中，从非特权上下文执行 `trustedNewDoc()` 将会失败，并会抛出异常。你需要*显式地*按照所示方式提升权限级别。
 
-**示例 2**
+### 示例 2
 
-**app.trustedFunction()** 方法可用于执行任何需要特权上下文才能执行的代码。考虑 **activeDocs**，它是 App 对象的一个属性（非方法）。该属性在不同设置下的行为不同：如果从非特权上下文执行，它返回一个其 **disclosed** 属性设置为 *true* 的活动文档数组；如果在控制台或批处理事件期间执行，它返回*所有*活动文档的数组。为了克服这个限制，我们可以在用户（或应用程序）JavaScript 文件夹的 `.js` 文件中定义一个受信任版本的 **activeDocs**：
+`app.trustedFunction()` 方法可用于执行任何需要特权上下文才能执行的代码。考虑 `activeDocs`，它是 App 对象的一个属性（非方法）。该属性在不同设置下的行为不同：如果从非特权上下文执行，它返回一个其 `disclosed` 属性设置为 *true* 的活动文档数组；如果在控制台或批处理事件期间执行，它返回*所有*活动文档的数组。为了克服这个限制，我们可以在用户（或应用程序）JavaScript 文件夹的 `.js` 文件中定义一个受信任版本的 `activeDocs`：
 
-```
-trustedActiveDocs = app.trustedFunction (
+```javascript
+trustedActiveDocs = app.trustedFunction(
     function()
     {
         app.beginPriv(); // 显式提升权限
@@ -4414,71 +4575,78 @@ trustedActiveDocs = app.trustedFunction (
         app.endPriv();
         return d;
     }
-)
+);
 ```
 
 现在，从一个表单按钮的鼠标抬起动作（例如）执行以下代码：
 
-```
+```javascript
 var d = trustedActiveDocs();
 console.println("There are d = " + d.length
-    + " files open in the viewer.")
-for ( var i=0; i< d.length; i++)
-    console.println((i+1) + ". " + d[i].documentFileName )
+    + " files open in the viewer.");
+for (var i = 0; i < d.length; i++)
+    console.println((i + 1) + ". " + d[i].documentFileName);
 ```
 
 控制台将报告查看器中打开的*所有*文档（无论是否 disclose）的数量和文件名。
 
-# 示例 3
+### 示例 3
 
 根据受信任函数的描述，受信任函数是能够为*其自身栈帧*显式提升当前特权级别的函数。本示例说明了“其自身栈帧”的含义。
 
 为了使受信任函数更具模块化，使用了以下代码：
 
-```
+```javascript
 function mySaveAs(doc, path)
 {
     doc.saveAs(doc, path);
 }
-myFunc = app.trustedFunction( function (doc, path)
+
+myFunc = app.trustedFunction(function(doc, path)
 {
     // 这里包含特权和/或非特权代码
     app.beginPriv();
     mySaveAs(doc, path);
     app.endPriv();
     // 这里包含特权和/或非特权代码
-})
+});
 ```
 
-当在非特权上下文中执行 **myFunc()** 时，它将抛出异常。这是因为当特权代码 **doc.saveAs(doc, path)** 执行时，它不在调用受信任函数的栈帧（函数体）内，而是在 **mySaveAs()** 的栈帧内，而不是在 **myFunc()** 的栈帧内。
+当在非特权上下文中执行 `myFunc()` 时，它将抛出异常。这是因为当特权代码 `doc.saveAs(doc, path)` 执行时，它不在调用受信任函数的栈帧（函数体）内，而是在 `mySaveAs()` 的栈帧内，而不是在 `myFunc()` 的栈帧内。
 
-你可以将 **mySaveAs()** 变成受信任函数，这样 **myFunc()** 将成功执行，但在此过程中，你已将特权函数 **doc.saveAs()** 暴露给任何知道此函数存在于你系统上的非特权执行者。
+你可以将 `mySaveAs()` 变成受信任函数，这样 `myFunc()` 将成功执行，但在此过程中，你已将特权函数 `doc.saveAs()` 暴露给任何知道此函数存在于你系统上的非特权执行者。
 
-你不能简单地将 **doc.saveAs(doc,path)** 包含在 **beginPriv**/**endPriv** 对中，因为当从非特权上下文运行 **myFunc()** 时，**mySaveAs()** 函数体内的 **app.beginPriv()** 将抛出异常。这是因为 **mySaveAs()** 不受信任，因此未被授权请求提升权限级别。回想一下，*受信任*函数“能够显式提升当前特权级别”。
+你不能简单地将 `doc.saveAs(doc,path)` 包含在 `beginPriv`/`endPriv` 对中，因为当从非特权上下文运行 `myFunc()` 时，`mySaveAs()` 函数体内的 `app.beginPriv()` 将抛出异常。这是因为 `mySaveAs()` 不受信任，因此未被授权请求提升权限级别。回想一下，*受信任*函数“能够显式提升当前特权级别”。
 
-总结以上观察结果，需要一种函数，它：(1) 可以被受信任函数调用，但 (2) 本身*不受信任*，因此不能直接从非特权上下文调用。满足这些条件的是*信任传播函数*，参见 **app.trustPropagatorFunction**。
+总结以上观察结果，需要一种函数，它：
 
-# trustPropagatorFunction
+1. 可以被受信任函数调用；
+2. 本身*不受信任*，因此不能直接从非特权上下文调用。
+
+满足这些条件的是*信任传播函数*，参见 `app.trustPropagatorFunction`。
+
+## trustPropagatorFunction
 
 | 7.0 | | Ⓔ | | |
+| --- | --- | --- | --- |
 
 此方法将一个函数标记为“信任传播者”；此类函数如果从受信任函数调用，可以继承信任，但其本身不受信任。
 
-信任传播函数传播的是*信任*，而非*特权*，因此，与 **app.trustedFunction** 方法一样，函数体内任何通常需要在特权上下文中执行的代码，都需要用 **app.beginPriv**/**app.endPriv** 对括起来。
+信任传播函数传播的是*信任*，而非*特权*，因此，与 `app.trustedFunction` 方法一样，函数体内任何通常需要在特权上下文中执行的代码，都需要用 `app.beginPriv`/`app.endPriv` 对括起来。
 
-在 App JavaScript 文件夹 `.js` 文件中定义的函数隐式地成为 **trustPropagator** 函数；而在 User JavaScript 文件夹 `.js` 文件中定义的函数则不是。
+在 App JavaScript 文件夹 `.js` 文件中定义的函数隐式地成为 `trustPropagator` 函数；而在 User JavaScript 文件夹 `.js` 文件中定义的函数则不是。
 
 信任传播函数可以扮演实用函数的角色；它们可以被受信任函数调用，也可以被另一个信任传播函数调用，但它们不能从非特权上下文被一个不受信任的函数成功调用。
 
 另请参阅 `app.beginPriv`、`app.endPriv` 和 `app.trustedFunction`。
 
-> **注意：** (安全性 ⊛)：此方法仅在批处理、控制台和应用程序初始化期间可用。
+> **注意：**（安全性 ⊛）：此方法仅在批处理、控制台和应用程序初始化期间可用。
 
-# 方法语法
+### 方法语法
 
 此方法可以通过两种方式调用。
 
-```
+```javascript
 myPropagatorFunction = app.trustPropagatorFunction(
     function()
     {
@@ -4487,9 +4655,9 @@ myPropagatorFunction = app.trustPropagatorFunction(
 );
 ```
 
-或
+或：
 
-```
+```javascript
 function myOtherPropagatorFunction()
 {
     <function body>
@@ -4497,30 +4665,29 @@ function myOtherPropagatorFunction()
 app.trustPropagatorFunction(myOtherPropagatorFunction);
 ```
 
-# 参数
+### 参数
 
 | oFunc | 一个函数对象，指定要标记为信任传播者的函数。 |
 
-# 返回值
+### 返回值
 
-成功时，返回传入的同一个函数对象。执行成功后，该函数对象将成为一个信任传播者。出错时，抛出 **NotAllowedError**。
+成功时，返回传入的同一个函数对象。执行成功后，该函数对象将成为一个信任传播者。出错时，抛出 `NotAllowedError`。
 
-# 示例 1
+### 示例 1
 
 作为本示例的准备，请回顾 `app.trustedFunction()` 方法后面第 133 页的示例 3。
 
-定义一个信任传播函数 **mySaveAs** 用于将文件保存到文件夹，并定义一个受信任函数 **myTrustedSpecialTaskFunc** 用于执行涉及特权和非特权代码的各种任务。函数 **mySaveAs()** 不能在非特权上下文中直接调用。
+定义一个信任传播函数 `mySaveAs` 用于将文件保存到文件夹，并定义一个受信任函数 `myTrustedSpecialTaskFunc` 用于执行涉及特权和非特权代码的各种任务。函数 `mySaveAs()` 不能在非特权上下文中直接调用。
 
-```
+```javascript
 mySaveAs = app.trustPropagatorFunction(function(doc, path)
 {
     app.beginPriv();
-        doc.saveAs(path);
+    doc.saveAs(path);
+});
 ```
 
-
-
-## 示例 2
+### 示例 2
 
 在此示例中，我们将使用 `app.execDialog()` 方法开发一个简单的对话框，并执行特权代码。
 
@@ -4532,7 +4699,9 @@ mySaveAs = app.trustPropagatorFunction(function(doc, path)
 
 请注意函数 `ANTrustPropagateAll()` 的用法，该函数定义在 Annots.js 文件中。该函数接受单个对象作为参数，它将对象中的每个函数转换为可信传播函数，然后返回该对象。这对于创建使用特权代码的对话框非常有用。
 
-```
+
+
+```javascript
 myDialog = app.trustedFunction(function()
 {
     app.beginPriv();
@@ -4640,26 +4809,26 @@ myDialog = app.trustedFunction(function()
 })
 ```
 
-此对话框可以从按钮激活，或者更合适地，从菜单项或工具栏按钮激活。例如，将以下代码放置在用户 JavaScript 文件中。这将向 **工具** 菜单添加一个菜单项。
+此对话框可以从按钮激活，或者更合适地，从菜单项或工具栏按钮激活。例如，将以下代码放置在用户 JavaScript 文件中。这将向**工具**菜单添加一个菜单项。
 
-```
+```javascript
 app.addMenuItem( { cName: "myDialog", cUser: "My Cool Dialog",
 cParent: "Tools", cExec: "myDialog()", nPos: 0 } );
 ```
 
-### App.media 对象
+### `App.media` 对象
 
-全局 **app.media** 对象定义了在多媒体 JavaScript 代码中有用的属性和函数。
+全局 `app.media` 对象定义了在多媒体 JavaScript 代码中有用的属性和函数。
 
-**app.media** 的几个属性是枚举对象，列出了各种属性中允许的值。请注意，Acrobat 的未来版本可能会添加更多此类值，JavaScript 代码应准备好处理此处列出值以外的其他值。同样，JavaScript 代码可能在比其设计版本更旧的 Acrobat 版本上运行，在这种情况下，它必须回退使用该版本中可用的值。
+`app.media` 的几个属性是枚举对象，列出了各种属性中允许的值。请注意，Acrobat 的未来版本可能会添加更多此类值，JavaScript 代码应准备好处理此处列出值以外的其他值。同样，JavaScript 代码可能在比其设计版本更旧的 Acrobat 版本上运行，在这种情况下，它必须回退使用该版本中可用的值。
 
-## App.media 对象属性
+## `App.media` 对象属性
 
-### align
+### `align`
 
-**app.media.align** 属性枚举了可以在 **MediaSettings.floating.align** 属性中找到的值。对齐是相对于由 **MediaSettings.floating.over** 属性指定的窗口定位的，参见 **app.media.over** 的值。
+`app.media.align` 属性枚举了可以在 `MediaSettings.floating.align` 属性中找到的值。对齐是相对于由 `MediaSettings.floating.over` 属性指定的窗口定位的，参见 `app.media.over` 的值。
 
-这些值是
+这些值是：
 
 | 值 | 描述 |
 | :--- | :--- |
@@ -4673,82 +4842,89 @@ cParent: "Tools", cExec: "myDialog()", nPos: 0 } );
 | `app.media.align.bottomCenter` | 将浮动窗口定位在底部居中 |
 | `app.media.align.bottomRight` | 将浮动窗口定位在右下角 |
 
-类型：对象（枚举）		访问：R。
+类型：对象（枚举）  
+访问：R。
 
-### canResize
+### `canResize`
 
-app.media.canResize 属性枚举了可以在 MediaSettings.floating.canResize 属性中找到的值，该属性指定浮动窗口是否可以由用户调整大小。
-这些值是
+`app.media.canResize` 属性枚举了可以在 `MediaSettings.floating.canResize` 属性中找到的值，该属性指定浮动窗口是否可以由用户调整大小。
+
+这些值是：
 
 | 值 | 描述 |
 | :--- | :--- |
-| app.media.canResize.no | 不可调整大小 |
-| app.media.canResize.keepRatio | 仅在保持宽高比时可调整大小 |
-| app.media.canResize.yes | 可在不保持宽高比的情况下调整大小 |
+| `app.media.canResize.no` | 不可调整大小 |
+| `app.media.canResize.keepRatio` | 仅在保持宽高比时可调整大小 |
+| `app.media.canResize.yes` | 可在不保持宽高比的情况下调整大小 |
 
-类型：对象（枚举）                     访问：R。
+类型：对象（枚举）  
+访问：R。
 
-### closeReason
+### `closeReason`
 
-app.media.closeReason 枚举了可以在关闭事件的 event.reason 属性中找到的值。这些值是：
+`app.media.closeReason` 枚举了可以在关闭事件的 `event.reason` 属性中找到的值。这些值是：
 
-- app.media.closeReason.general
-- app.media.closeReason.error
-- app.media.closeReason.done
-- app.media.closeReason.stop
-- app.media.closeReason.play
-- app.media.closeReason.uiGeneral
-- app.media.closeReason.uiScreen
-- app.media.closeReason.uiEdit
-- app.media.closeReason.docClose
-- app.media.closeReason.docSave
-- app.media.closeReason.docChange
+- `app.media.closeReason.general`
+- `app.media.closeReason.error`
+- `app.media.closeReason.done`
+- `app.media.closeReason.stop`
+- `app.media.closeReason.play`
+- `app.media.closeReason.uiGeneral`
+- `app.media.closeReason.uiScreen`
+- `app.media.closeReason.uiEdit`
+- `app.media.closeReason.docClose`
+- `app.media.closeReason.docSave`
+- `app.media.closeReason.docChange`
 
-参见 afterClose 和 onClose 事件。
+参见 `afterClose` 和 `onClose` 事件。
 
-类型：对象（枚举）                     访问：R。
+类型：对象（枚举）  
+访问：R。
 
-### defaultVisible
+### `defaultVisible`
 
 `app.media.defaultVisible` 属性定义为 `true`，这是 `MediaSettings.visible` 的默认值。
 
-类型：布尔值 
+类型：布尔值
+
 访问：R。
 
-### ifOffScreen
+### `ifOffScreen`
 
 `app.media.ifOffScreen` 属性枚举了 `MediaSettings.floating.ifOffScreen` 属性中允许的值，该属性指定如果浮动窗口完全或部分位于屏幕外应采取的操作。
+
 下表给出了这些值及其描述：
 
 | 值 | 描述 |
 | :--- | :--- |
-| app.media.ifOffScreen.allow | 不采取任何操作 |
-| app.media.ifOffScreen.forceOnScreen | 移动和/或调整窗口大小，使其在屏幕上 |
-| app.media.ifOffScreen.cancel | 取消播放媒体剪辑 |
+| `app.media.ifOffScreen.allow` | 不采取任何操作 |
+| `app.media.ifOffScreen.forceOnScreen` | 移动和/或调整窗口大小，使其在屏幕上 |
+| `app.media.ifOffScreen.cancel` | 取消播放媒体剪辑 |
 
-类型：对象（枚举） 
+类型：对象（枚举）
+
 访问：R。
 
-### layout
+### `layout`
 
 `app.media.layout` 属性枚举了 `MediaSettings.layout` 属性中允许的值。
+
 下表包含这些值及其描述：
 
 | 值 | 描述 |
 | :--- | :--- |
-| app.media.layout.meet | 缩放以适应所有内容，保持宽高比，不裁剪，背景填充 |
-| app.media.layout.slice | 缩放以填充窗口，保持宽高比，根据需要裁剪 X 或 Y |
-| app.media.layout.fill | 分别缩放 X 和 Y 以填充窗口 |
+| `app.media.layout.meet` | 缩放以适应所有内容，保持宽高比，不裁剪，背景填充 |
+| `app.media.layout.slice` | 缩放以填充窗口，保持宽高比，根据需要裁剪 X 或 Y |
+| `app.media.layout.fill` | 分别缩放 X 和 Y 以填充窗口 |
 
-
-
-## monitorType
+### `monitorType`
 
 `app.media.monitorType` 属性枚举了 `MediaSettings.monitorType` 属性中允许的值。
+
 下表包含这些值及其描述：
 
 | 值 | 描述 |
-| --- | --- |
+| :--- | :--- |
 | `app.media.monitorType.document` | 包含文档窗口最大部分的监视器 |
 | `app.media.monitorType.nonDocument` | 包含文档窗口最小部分的监视器 |
 | `app.media.monitorType.primary` | 主监视器 |
@@ -4757,13 +4933,14 @@ app.media.closeReason 枚举了可以在关闭事件的 event.reason 属性中�
 | `app.media.monitorType.tallest` | 高度（以像素为单位）最大的监视器 |
 | `app.media.monitorType.widest` | 宽度（以像素为单位）最大的监视器 |
 
-类型：对象（枚举） 访问权限：R。
+类型：对象（枚举）  
+访问权限：R。
 
-## openCode
+### `openCode`
 
-`app.media.openCode` 枚举了可能在 `MediaPlayer.open()` 返回值的 code 属性中找到的值。这些值是：
+`app.media.openCode` 枚举了可能在 `MediaPlayer.open()` 返回值的 `code` 属性中找到的值。这些值是：
 
-```
+```javascript
 app.media.openCode.success
 app.media.openCode.failGeneral
 app.media.openCode.failSecurityWindow
@@ -4775,49 +4952,54 @@ app.media.openCode.failPlayerSecurity
 app.media.openCode.failPlayerData
 ```
 
-类型：对象（枚举） 访问权限：R。
+类型：对象（枚举）  
+访问权限：R。
 
-## over
+### `over`
 
 | | | | | |
 |---|---|---|---|---|
 | 6.0 | | | | |
 
-**app.media.over** 属性枚举了 **MediaSettings.floating.over** 属性中允许的值，该值用于对齐浮动窗口。请参阅 **app.media.align**。
+`app.media.over` 属性枚举了 `MediaSettings.floating.over` 属性中允许的值，该值用于对齐浮动窗口。请参阅 `app.media.align`。
 
 | 值 | 描述 |
-|---|---|
+| :--- | :--- |
 | `app.media.over.pageWindow` | 相对于文档（页面）窗口对齐浮动窗口 |
 | `app.media.over.appWindow` | 相对于应用程序窗口对齐浮动窗口 |
 | `app.media.over.desktop` | 相对于整个虚拟桌面对齐浮动窗口 |
 | `app.media.over.monitor` | 相对于（选定的）监视器显示屏幕对齐浮动窗口 |
 
-类型：对象（枚举） 访问权限：R。
+类型：对象（枚举）  
+访问权限：R。
 
-## pageEventNames
+### `pageEventNames`
 
 | | | | | |
 |---|---|---|---|---|
 | 6.0 | | | | |
 
-**app.media.pageEventNames** 属性枚举了可能在页面级操作的 **event.name** 属性中找到的值。代表直接用户操作的事件名称不包括在此处。此枚举用于区分页面级操作和用户操作。这些值是：
+`app.media.pageEventNames` 属性枚举了可能在页面级操作的 `event.name` 属性中找到的值。代表直接用户操作的事件名称不包括在此处。此枚举用于区分页面级操作和用户操作。这些值是：
 
-```
+
+
+```javascript
 app.media.pageEventNames.Open
 app.media.pageEventNames.Close
 app.media.pageEventNames.InView
 app.media.pageEventNames.OutView
 ```
 
-类型：对象（枚举） 访问权限：R。
+类型：对象（枚举）  
+访问权限：R
 
 ## 示例
 
 `app.media.pageEventNames` 可用于区分页面级操作和直接用户操作。下面的脚本是文件夹级或文档级 JavaScript，可以从文档中的任何位置调用。
 
-```
+```javascript
 function myMMfunction () {
-    if ( app.media.pageEventNames[event.name] ) {
+    if (app.media.pageEventNames[event.name]) {
         console.println("Page Event: " + event.name);
         ...
     } else {
@@ -4830,33 +5012,37 @@ function myMMfunction () {
 ## raiseCode
 
 | 6.0 | | | |
+|---|---|---|---|
 
-`app.media.raiseCode` 属性枚举了当抛出异常时可能在 error.raiseCode 属性中找到的值。此属性仅在 error.name 为 "RaiseError" 时存在。除了这些值之外，还可能遇到其他值。
+`app.media.raiseCode` 属性枚举了当抛出异常时可能在 `error.raiseCode` 属性中找到的值。此属性仅在 `error.name` 为 `"RaiseError"` 时存在。除了这些值之外，还可能遇到其他值。
 
-`app.media.raiseCode.fileNotFound`
-`app.media.raiseCode.fileOpenFailed`
+- `app.media.raiseCode.fileNotFound`
+- `app.media.raiseCode.fileOpenFailed`
 
-类型：对象（枚举） 访问权限：R。
+类型：对象（枚举）  
+访问权限：R
 
-## 示例
+### 示例
 
-有关使用示例，请参阅 media.js 文件中 `app.media.getRenditionSettings()` 的定义。
+有关使用示例，请参阅 `media.js` 文件中 `app.media.getRenditionSettings()` 的定义。
 
 ## raiseSystem
 
 | 6.0 | | | |
+|---|---|---|---|
 
-`app.media.raiseSystem` 属性枚举了当抛出异常时可能在 error.raiseSystem 属性中找到的值。此属性仅在 error.name 为 "RaiseError" 时存在。
+`app.media.raiseSystem` 属性枚举了当抛出异常时可能在 `error.raiseSystem` 属性中找到的值。此属性仅在 `error.name` 为 `"RaiseError"` 时存在。
 
-`app.media.raiseSystem.fileError`
+- `app.media.raiseSystem.fileError`
 
 其他值可能会添加到上述属性中。
 
-类型：对象（枚举） 访问权限：R。
+类型：对象（枚举）  
+访问权限：R
 
-## 示例
+### 示例
 
-有关使用示例，请参阅 media.js 文件中 `app.media.getRenditionSettings()` 的定义。
+有关使用示例，请参阅 `media.js` 文件中 `app.media.getRenditionSettings()` 的定义。
 
 ## renditionType
 
@@ -4868,11 +5054,12 @@ function myMMfunction () {
 | `app.media.renditionType.media` | 媒体演绎 |
 | `app.media.renditionType.selector` | 演绎选择器 |
 
-类型：对象（枚举） 访问权限：R。
+类型：对象（枚举）  
+访问权限：R
 
 ## status
 
-`app.media.status` 属性枚举了可能在 Status 事件（参见 `onStatus/afterStatus`）的 `event.media.code` 属性中找到的值。这些值中的大多数在 event.text 属性中包含额外信息。这些值是：
+`app.media.status` 属性枚举了可能在 Status 事件（参见 `onStatus/afterStatus`）的 `event.media.code` 属性中找到的值。这些值中的大多数在 `event.text` 属性中包含额外信息。这些值是：
 
 | 值 | 描述 |
 |---|---|
@@ -4885,54 +5072,61 @@ function myMMfunction () {
 
 除了 `event.media.status` 代码外，还有 `event.media.text`，这是一个反映当前状态的字符串，如上所述。
 
-类型：对象（枚举） 访问权限：R。
-参阅 [afterStatus](afterStatus) 和 [onStatus](onStatus)。
+类型：对象（枚举）  
+访问权限：R
+
+参阅 [`afterStatus`](afterStatus) 和 [`onStatus`](onStatus)。
 
 ## trace
 
-将 **app.media.trace** 设置为 **true**，可在播放器创建和事件分发期间将跟踪消息打印到 JavaScript 控制台。
+将 `app.media.trace` 设置为 `true`，可在播放器创建和事件分发期间将跟踪消息打印到 JavaScript 控制台。
 
-**注意：** **app.media.trace** 仅用于测试目的。不要在您发布的 PDF 文件中使用此属性。它将在 Acrobat 的未来版本中更改。
+**注意：** `app.media.trace` 仅用于测试目的。不要在您发布的 PDF 文件中使用此属性。它将在 Acrobat 的未来版本中更改。
 
-类型：布尔值 访问权限：R/W。
+类型：布尔值  
+访问权限：R/W
 
 ## version
 
-**app.media.version** 是 **media.js** 中定义的多媒体 API 的版本号，当前为 6.0。
+`app.media.version` 是 `media.js` 中定义的多媒体 API 的版本号，当前为 6.0。
 
-类型：数字 访问权限：R。
+类型：数字  
+访问权限：R
 
 ## windowType
 
-**app.media.windowType** 属性枚举了 [MediaSettings.windowType](MediaSettings.windowType) 属性中允许的值。这些值在下表中给出。
+`app.media.windowType` 属性枚举了 [`MediaSettings.windowType`](MediaSettings.windowType) 属性中允许的值。这些值在下表中给出。
 
 | 值 | 描述 |
-| --- | --- |
+|---|---|
 | `app.media.windowType.docked` | 停靠到 PDF 页面 |
 | `app.media.windowType.floating` | 浮动（弹出）窗口 |
 | `app.media.windowType.fullScreen` | 全屏模式 |
 
-类型：对象（枚举） 访问权限：R。
+类型：对象（枚举）  
+访问权限：R
 
 ## App.media 对象方法
 
 ### addStockEvents
 
 | 6.0 | | | | |
+|---|---|---|---|---|
 
 `app.media.addStockEvents()` 方法向 MediaPlayer（参见 MediaPlayer 对象）添加内置事件监听器，并将 `player.stockEvents` 设置为对这些监听器的引用，以便后续移除。
 
-如果提供了可选的 `annot`，则会将对 annot 的引用保存在 `MediaPlayer.annot` 中。稍后，当使用 `MediaPlayer.open()` 打开播放器时，内置事件监听器也将添加到此 annot，并且 `annot.player` 将被设置为对播放器的引用。
+如果提供了可选的 `annot`，则会将对 `annot` 的引用保存在 `MediaPlayer.annot` 中。稍后，当使用 `MediaPlayer.open()` 打开播放器时，内置事件监听器也将添加到此 `annot`，并且 `annot.player` 将被设置为对播放器的引用。
 
-**参数**
+#### 参数
 
-| **player** | 必需的 MediaPlayer 对象 |
+| 参数 | 描述 |
 |---|---|
-| **annot** | （可选）ScreenAnnot 对象 |
+| `player` | 必需的 MediaPlayer 对象 |
+| `annot` | （可选）ScreenAnnot 对象 |
 
-**返回值**
+#### 返回值
 
-无
+无。
 
 内置事件监听器提供标准 Acrobat 行为，例如焦点处理。
 
@@ -4945,29 +5139,26 @@ function myMMfunction () {
 ### alertFileNotFound
 
 | 6.0 | | | | |
+|---|---|---|---|---|
 
 `app.media.alertFileNotFound()` 方法显示标准的“文件未找到”警报，并带有一个可选的“不再显示”复选框。
 
-**参数**
+#### 参数
 
-| **oDoc** | oDoc 是与警报关联的文档对象 |
+| 参数 | 描述 |
 |---|---|
-| **cFilename** | cFilename 是缺失文件的名称 |
+| `oDoc` | `oDoc` 是与警报关联的文档对象 |
+| `cFilename` | `cFilename` 是缺失文件的名称 |
 
+#### 返回值
 
+如果 `bCanSkipAlert` 为 `true`，并且用户勾选了复选框，则返回 `true`，否则返回 `false`。默认值为 `false`。
 
-## App.media 对象方法
+### 示例
 
-如果 **bCanSkipAlert** 为 **true**，并且用户勾选了复选框，则返回 **true**，否则返回 **false**。默认值为 **false**。
-
-### 返回值
-如果 **bCanSkipAlert** 为 **true**，则复选框被勾选时返回 **true**，否则返回 **false**。
-
-### 示例：
-```
-if ( !doNotNotify )
-{
-    var bRetn = app.media.alertFileNotFound(this, cFileClip, true );
+```javascript
+if (!doNotNotify) {
+    var bRetn = app.media.alertFileNotFound(this, cFileClip, true);
     var doNotNotify = bRetn;
 }
 ```
@@ -4975,25 +5166,30 @@ if ( !doNotNotify )
 ### alertSelectFailed
 
 | 6.0 | | | | |
+|---|---|---|---|---|
 
-**app.media.alertSelectFailed**() 方法为 **rendition.select**() 失败时显示标准警报。
+`app.media.alertSelectFailed()` 方法为 `rendition.select()` 失败时显示标准警报。
 
-### 参数
+#### 参数
 
-| oDoc | oDoc 是警报所关联的文档对象。 |
-| oRejects | （可选）如果提供了 **oRejects**，它应是由 [PlayerInfoList.select()](https://www.adobe.com/devnet/acrobat/library/) 返回的 [MediaReject 对象](https://www.adobe.com/devnet/acrobat/library/)数组。 |
-| bCanSkipAlert | （可选）如果 **bCanSkipAlert** 为 **true**，并且用户勾选了复选框，则返回 **true**，否则返回 **false**。默认值为 **false**。 |
-| bFromUser | （可选）**bFromSkipAlert** 影响警报消息的措辞。如果直接的用户操作触发了此代码，则应为 **true**；如果是其他操作（例如选择书签）触发，则应为 **false**。默认值为 **false**。 |
+| 参数 | 描述 |
+|---|---|
+| `oDoc` | `oDoc` 是警报所关联的文档对象。 |
+| `oRejects` | （可选）如果提供了 `oRejects`，它应是由 [`PlayerInfoList.select()`](https://www.adobe.com/devnet/acrobat/library/) 返回的 [`MediaReject` 对象](https://www.adobe.com/devnet/acrobat/library/)数组。 |
+| `bCanSkipAlert` | （可选）如果 `bCanSkipAlert` 为 `true`，并且用户勾选了复选框，则返回 `true`，否则返回 `false`。默认值为 `false`。 |
+| `bFromUser` | （可选）`bFromSkipAlert` 影响警报消息的措辞。如果直接的用户操作触发了此代码，则应为 `true`；如果是其他操作（例如选择书签）触发，则应为 `false`。默认值为 `false`。 |
 
-### 返回值
-如果 **bCanSkipAlert** 为 **true**，则复选框被勾选时返回 **true**，否则返回 **false**。
+#### 返回值
 
-注意：当 **rendition.select**() 未能找到可用的播放器，并且 **select**() 参数 **bWantRejects** 设置为 **true** 时，返回的 [MediaSelection 对象](https://www.adobe.com/devnet/acrobat/library/) 将包含一个 [MediaReject 对象](https://www.adobe.com/devnet/acrobat/library/) 数组，该数组可以作为 **oRejects** 参数传递给此方法。**alertSelectFailed**() 方法继而会要求用户前往网络下载适当的播放器。
+如果 `bCanSkipAlert` 为 `true`，则复选框被勾选时返回 `true`，否则返回 `false`。
 
-**示例：**
+注意：当 `rendition.select()` 未能找到可用的播放器，并且 `select()` 参数 `bWantRejects` 设置为 `true` 时，返回的 [`MediaSelection` 对象](https://www.adobe.com/devnet/acrobat/library/) 将包含一个 [`MediaReject` 对象](https://www.adobe.com/devnet/acrobat/library/)数组，该数组可以作为 `oRejects` 参数传递给此方法。`alertSelectFailed()` 方法继而会要求用户前往网络下载适当的播放器。
+
+#### 示例
+
 显示“无法播放媒体剪辑”，并带有复选框。
 
-```
+```javascript
 var bRetn = app.media.alertSelectFailed({
     oDoc: this,
     bCanSkipAlert: true
@@ -5003,60 +5199,76 @@ var bRetn = app.media.alertSelectFailed({
 ### argsDWIM
 
 | 6.0 | | | | |
+|---|---|---|---|---|
 
-**app.media.argsDWIM** 方法是一个“按我意思做”的函数，由 **app.media.createPlayer**()、**app.media.openPlayer**() 和 **app.media.startPlayer**() 使用。它为 PlayerArgs 对象中未提供的属性填充默认值，从事件对象中提取这些值，以便这些函数可以作为无参数或带显式参数的自定义 JavaScript 的 rendition 动作事件处理程序使用。有关 PlayerArgs 对象的详细信息，请参见 **app.media.createPlayer**()。
+`app.media.argsDWIM()` 方法是一个“按我意思做”的函数，由 `app.media.createPlayer()`、`app.media.openPlayer()` 和 `app.media.startPlayer()` 使用。它为 PlayerArgs 对象中未提供的属性填充默认值，从事件对象中提取这些值，以便这些函数可以作为无参数或带显式参数的自定义 JavaScript 的 rendition 动作事件处理程序使用。有关 PlayerArgs 对象的详细信息，请参见 `app.media.createPlayer()`。
 
-**参数**
+#### 参数
 
-| **args** | args 是一个 PlayerArgs 对象。有关 PlayerArgs 对象的详细信息，请参见 **createPlayer**()。 |
+| 参数 | 描述 |
+|---|---|
+| `args` | `args` 是一个 PlayerArgs 对象。有关 PlayerArgs 对象的详细信息，请参见 `createPlayer()`。 |
 
-**返回值**
-PlayerArgs 对象
+#### 返回值
 
-**示例**
+PlayerArgs 对象。
+
+#### 示例
+
 有关使用示例，请参见第 152 页的“示例 1”。
 
 ### canPlayOrAlert
 
 | 6.0 | | | | |
+|---|---|---|---|---|
 
-**app.media.canPlayOrAlert** 方法确定是否允许任何媒体播放，如果允许则返回 **true**。如果播放不允许，它会警报用户并返回 **false**。
+`app.media.canPlayOrAlert()` 方法确定是否允许任何媒体播放，如果允许则返回 `true`。如果播放不允许，它会警报用户并返回 `false`。
 
-### 参数
-**args** args 是一个 PlayerArgs 对象。有关 PlayerArgs 对象的详细信息，请参见 `createPlayer()`。
+#### 参数
 
-### 返回值
+`args` 是一个 PlayerArgs 对象。有关 PlayerArgs 对象的详细信息，请参见 `createPlayer()`。
+
+#### 返回值
+
 如果允许媒体播放则返回 `true`，否则，此方法返回 `false`。
 
 > 注意：`createPlayer()` 方法在尝试创建播放器之前会调用此函数。如果您编写自己的代码来替代 `createPlayer()`，可以在播放不允许的情况下（例如在多媒体创作模式中）调用 `canPlayOrAlert()` 来警报用户。
 
-args 对象中唯一使用的属性是 doc，因此您可以使用：
-```
+`args` 对象中唯一使用的属性是 `doc`，因此您可以使用：
+
+```javascript
 // myDoc 中有一个 doc 对象
-if (app.media.canPlayOrAlert({ doc: myDoc }))
-/* 此处可以创建播放器 */ ;
+if (app.media.canPlayOrAlert({ doc: myDoc })) {
+    /* 此处可以创建播放器 */;
+}
 ```
+
 以上代码将显示“创作模式下无法播放媒体剪辑”，或其他适当的警报。
 
 ### computeFloatWinRect
 
 | 6.0 | | | | |
+|---|---|---|---|---|
 
 `app.media.computeFloatWinRect()` 方法计算并返回以其参数指定的、屏幕坐标下的矩形。
 
-### 参数
-| doc | 文档对象 |
-| floating | 来自 MediaSettings.floating 对象的浮动参数 |
-| monitorType | 一个数字，指示使用哪个显示器。请参见 app.media.monitorType 属性。 |
-| uiSize | （可选）用户界面大小，以四个数字 [w,x,y,z] 的数组形式给出，表示大小，由 MediaPlayer.uiSize 返回。 |
+#### 参数
 
-### 返回值
-屏幕坐标下的矩形
+| 参数 | 描述 |
+|---|---|
+| `doc` | 文档对象 |
+| `floating` | 来自 `MediaSettings.floating` 对象的浮动参数 |
+| `monitorType` | 一个数字，指示使用哪个显示器。请参见 `app.media.monitorType` 属性。 |
+| `uiSize` | （可选）用户界面大小，以四个数字 `[w,x,y,z]` 的数组形式给出，表示大小，由 `MediaPlayer.uiSize` 返回。 |
 
-### 示例：
-```
-var floating =
-{
+#### 返回值
+
+屏幕坐标下的矩形。
+
+#### 示例
+
+```javascript
+var floating = {
     over: app.media.over.monitor,
     align: app.media.align.center,
     canResize: app.media.canResize.no,
@@ -5064,73 +5276,84 @@ var floating =
     hasTitle: true,
     width: 400,
     height: 400
-}
-var rect = app.media.computeFloatWinRect
-    (this, floating, app.media.monitorType.primary);
+};
+
+var rect = app.media.computeFloatWinRect(
+    this,
+    floating,
+    app.media.monitorType.primary
+);
 ```
 
 ### constrainRectToScreen
 
-| 6.0 |  |  |  |  |
+| 6.0 | | | | |
+|---|---|---|---|---|
 
-`app.media.constrainRectToScreen()` 方法返回一个屏幕坐标的矩形，如果需要，会移动和调整大小以使其完全位于某个显示器上。如果提供了 `anchorPt`，并且 `rect` 必须收缩以适应，它将向 `anchorPt`（一个表示点 [x,y] 的两个数字的数组）成比例收缩。
+`app.media.constrainRectToScreen()` 方法返回一个屏幕坐标的矩形，如果需要，会移动和调整大小以使其完全位于某个显示器上。如果提供了 `anchorPt`，并且 `rect` 必须收缩以适应，它将向 `anchorPt`（一个表示点 `[x,y]` 的两个数字的数组）成比例收缩。
 
-### 参数
-| rect | 一个由四个数字组成的数组，表示所需矩形的屏幕坐标 |
-| anchorPt | （可选）一个两个点的数组 [x,y]，作为锚点 |
+#### 参数
 
-### 返回值
+| 参数 | 描述 |
+|---|---|
+| `rect` | 一个由四个数字组成的数组，表示所需矩形的屏幕坐标 |
+| `anchorPt` | （可选）一个两个点的数组 `[x,y]`，作为锚点 |
+
+#### 返回值
+
 返回屏幕坐标下的矩形。
 
 ### createPlayer
 
-| 6.0 |  |  |  |  |
+| 6.0 | | | | |
+|---|---|---|---|---|
 
-`app.media.createPlayer()` 创建一个 [MediaPlayer 对象](https://acrobat.adobe.com/devnet/acrobatnet/pdfparts/MediaPlayer.html)，而不实际打开播放器，使用 `args` 参数中提供的值。要打开播放器，请调用 `MediaPlayer.open()`。您可以通过调用 `app.media.openPlayer()` 而不是 `createPlayer()` 将这两个步骤合二为一。
+`app.media.createPlayer()` 创建一个 [`MediaPlayer` 对象](https://acrobat.adobe.com/devnet/acrobatnet/pdfparts/MediaPlayer.html)，而不实际打开播放器，使用 `args` 参数中提供的值。要打开播放器，请调用 `MediaPlayer.open()`。您可以通过调用 `app.media.openPlayer()` 而不是 `createPlayer()` 将这两个步骤合二为一。
 
-如果在 rendition 动作内调用 `createPlayer()`（例如，在多媒体属性面板的“操作”选项卡中输入的自定义 JavaScript 中），默认值将从动作的 [Event 对象](https://acrobat.adobe.com/devnet/acrobatnet/pdfparts/Event.html) 中获取。在这种情况下，除非您想覆盖 rendition 动作的值，否则不需要 `args` 参数。`createPlayer()` 调用 [argsDWIM](https://acrobat.adobe.com/devnet/acrobatnet/pdfparts/app.media.html#argsDWIM)() 来处理 [Event 对象](https://acrobat.adobe.com/devnet/acrobatnet/pdfparts/Event.html) 和 `args`（参见 [PlayerArgs 对象](https://acrobat.adobe.com/devnet/acrobatnet/pdfparts/PlayerArgs.html)）参数。
+如果在 rendition 动作内调用 `createPlayer()`（例如，在多媒体属性面板的“操作”选项卡中输入的自定义 JavaScript 中），默认值将从动作的 [`Event` 对象](https://acrobat.adobe.com/devnet/acrobatnet/pdfparts/Event.html) 中获取。在这种情况下，除非您想覆盖 rendition 动作的值，否则不需要 `args` 参数。`createPlayer()` 调用 [`argsDWIM()`](https://acrobat.adobe.com/devnet/acrobatnet/pdfparts/app.media.html#argsDWIM) 来处理 [`Event` 对象](https://acrobat.adobe.com/devnet/acrobatnet/pdfparts/Event.html) 和 `args`（参见 [`PlayerArgs` 对象](https://acrobat.adobe.com/devnet/acrobatnet/pdfparts/PlayerArgs.html)）参数。
 
-除非 [PlayerArgs 对象](https://acrobat.adobe.com/devnet/acrobatnet/pdfparts/PlayerArgs.html) 的 `noStockEvents` 设置为 `true`，否则 [MediaPlayer 对象](https://acrobat.adobe.com/devnet/acrobatnet/pdfparts/MediaPlayer.html) 都会配备库存事件监听器，这些监听器提供了与 Acrobat 正确交互所需的标准行为。可以在 PlayerArgs 对象中提供额外的事件监听器，也可以之后通过 MediaPlayer.events.add() 添加。
-如果 **args.annot.player** 是一个打开的 MediaPlayer，**createPlayer()** 会关闭该播放器，这会触发事件。
+除非 [`PlayerArgs` 对象](https://acrobat.adobe.com/devnet/acrobatnet/pdfparts/PlayerArgs.html) 的 `noStockEvents` 设置为 `true`，否则 [`MediaPlayer` 对象](https://acrobat.adobe.com/devnet/acrobatnet/pdfparts/MediaPlayer.html) 都会配备库存事件监听器，这些监听器提供了与 Acrobat 正确交互所需的标准行为。可以在 PlayerArgs 对象中提供额外的事件监听器，也可以之后通过 `MediaPlayer.events.add()` 添加。
 
-### 参数
+如果 `args.annot.player` 是一个打开的 MediaPlayer，`createPlayer()` 会关闭该播放器，这会触发事件。
 
-| **args** | （可选）**args** 参数是一个 PlayerArgs 对象。如果在具有关联 rendition 的 Rendition 动作内执行 createPlayer()，则参数 **args** 是可选的；在这种情况下，**args** 的属性由默认值和 UI 中选择的选项填充。否则，需要一个 **args** 参数，请参见下面的 PlayerArgs 对象文档，了解对象的必需属性。 |
+#### 参数
 
-### PlayerArgs 对象
 
-| **属性** | **类型** | **描述** |
+
+| `args` | （可选）`args` 参数是一个 `PlayerArgs` 对象。如果在具有关联 rendition 的 Rendition 动作内执行 `createPlayer()`，则参数 `args` 是可选的；在这种情况下，`args` 的属性由默认值和 UI 中选择的选项填充。否则，需要一个 `args` 参数，请参见下面的 `PlayerArgs` 对象文档，了解对象的必需属性。 |
+
+### `PlayerArgs` 对象
+
+| 属性 | 类型 | 描述 |
 | :--- | :--- | :--- |
-| `doc` | 对象 | 文档的 doc 对象。如果省略了 annot 和 rendition（例如用于 URL 播放），则必需。 |
-| `annot` | 对象 | 一个 ScreenAnnot 对象。用于停靠播放时必需，除非它在 Event 对象中找到或提供了 MediaSettings.page。新播放器将与 annot 关联。如果 annot 已经关联了一个播放器，该播放器将被停止并关闭。 |
-| `rendition` | 对象 | （可选）一个 Rendition 对象（MediaRendition 或 RenditionList）。除非在 Event 对象中找到 **rendition** 或存在 URL，否则必需。 |
-| `URL` | 字符串 | URL 或 **rendition** 至少需要一个，URL 优先级更高。 |
-| `mimeType` | 字符串 | （可选）除非存在 URL，否则忽略。如果存在 URL，则需要 **mimeType** 或 **settings.players**（由 **app.media.getPlayers()** 返回），二者之一。 |
-| `settings` | 对象 | （可选）一个 MediaSettings 对象。覆盖 rendition 设置。 |
-
-
+| `doc` | 对象 | 文档的 `doc` 对象。如果省略了 `annot` 和 `rendition`（例如用于 URL 播放），则必需。 |
+| `annot` | 对象 | 一个 `ScreenAnnot` 对象。用于停靠播放时必需，除非它在 `Event` 对象中找到或提供了 `MediaSettings.page`。新播放器将与 `annot` 关联。如果 `annot` 已经关联了一个播放器，该播放器将被停止并关闭。 |
+| `rendition` | 对象 | （可选）一个 `Rendition` 对象（`MediaRendition` 或 `RenditionList`）。除非在 `Event` 对象中找到 `rendition` 或存在 URL，否则必需。 |
+| `URL` | 字符串 | URL 或 `rendition` 至少需要一个，URL 优先级更高。 |
+| `mimeType` | 字符串 | （可选）除非存在 URL，否则忽略。如果存在 URL，则需要 `mimeType` 或 `settings.players`（由 `app.media.getPlayers()` 返回），二者之一。 |
+| `settings` | 对象 | （可选）一个 `MediaSettings` 对象。覆盖 rendition 设置。 |
 
 # Acrobat JavaScript 脚本参考
 
-## App.media 对象方法
+## `App.media` 对象方法
 
 | 属性 | 类型 | 描述 |
-|---|---|---|
-| events | Object | （可选）一个 EventListener 对象。如果使用默认事件，此项可选，且添加在默认事件之后。 |
-| noStockEvents | Boolean | （可选）如果为 `true`，则不使用默认事件。默认值为 `false`。 |
-| fromUser | Boolean | （可选）如果是由用户直接操作触发此代码，则应为 `true`，否则为 `false`。默认值取决于 Event 对象。 |
-| showAltText | Boolean | （可选）如果为 `true`，且媒体无法播放，则显示备用文本（参见 altText）。默认值为 `true`。 |
-| showEmptyAltText | Boolean | （可选）如果为 `true` 且备用文本（参见 altText）为空，则将备用文本显示为空框；如果为 `false`，则弹出警报。如果 `fromUser` 为 `false`，默认值为 `true`；如果 `fromUser` 为 `true`，则为 `false`。 |
+| :--- | :--- | :--- |
+| `events` | `Object` | （可选）一个 `EventListener` 对象。如果使用默认事件，此项可选，且添加在默认事件之后。 |
+| `noStockEvents` | `Boolean` | （可选）如果为 `true`，则不使用默认事件。默认值为 `false`。 |
+| `fromUser` | `Boolean` | （可选）如果是由用户直接操作触发此代码，则应为 `true`，否则为 `false`。默认值取决于 `Event` 对象。 |
+| `showAltText` | `Boolean` | （可选）如果为 `true`，且媒体无法播放，则显示备用文本（参见 `altText`）。默认值为 `true`。 |
+| `showEmptyAltText` | `Boolean` | （可选）如果为 `true` 且备用文本（参见 `altText`）为空，则将备用文本显示为空框；如果为 `false`，则弹出警报。如果 `fromUser` 为 `false`，默认值为 `true`；如果 `fromUser` 为 `true`，则为 `false`。 |
 
 ## 返回值
 
-MediaPlayer 对象
+`MediaPlayer` 对象
 
 ## 示例 1
 
 以下代码摘自 `media.js`，是 `openPlayer()` 的定义，其定义中使用了 `createPlayer()`。
 
-```
+```javascript
 app.media.openPlayer = function( args )
 {
     var player = null;
@@ -5165,49 +5388,50 @@ app.media.openPlayer = function( args )
 
 有关 `PlayerArgs` 用法的示例，请参阅 `openPlayer()` 描述末尾的示例。
 
-## getAltTextData
+## `getAltTextData`
 
 | 6.0 |  |  |  |  |
-|---|---|---|---|---|
+| :--- | :--- | :--- | :--- | :--- |
 
-`app.media.getAltTextData()` 方法返回一个 **MediaData** 对象（与 **MediaSettings.data** 对象相同），该对象表示给定文本的备用文本数据。此 **MediaData** 对象可用于创建播放器以显示备用文本。
+`app.media.getAltTextData()` 方法返回一个 `MediaData` 对象（与 `MediaSettings.data` 对象相同），该对象表示给定文本的备用文本数据。此 `MediaData` 对象可用于创建播放器以显示备用文本。
 
 ### 参数
 
-| cAltText | 一个字符串，用作备用文本数据 |
-|---|---|
+| `cAltText` | 一个字符串，用作备用文本数据 |
+| :--- | :--- |
 
 ### 返回值
 
-MediaData 对象
-参见 **MediaSettings.data**。
+`MediaData` 对象
+
+参见 `MediaSettings.data`。
 
 ### 示例
 
 参见 `getAltTextSettings()` 后面的嵌入示例。
 
-## getAltTextSettings
+## `getAltTextSettings`
 
 | 6.0 |  |  |  |  |
-|---|---|---|---|---|
+| :--- | :--- | :--- | :--- | :--- |
 
-`app.media.getAltTextSettings()` 接收一个 **PlayerArgs 对象**，该对象至少包含 `settings`、`showAltText` 和 `showEmptyAltText` 属性，以及一个由 `rendition.select()` 返回的选择对象。如果存在，则查找第一个可用的备用文本呈现。然后创建并返回一个适合播放备用文本的新的 **MediaSettings 对象**。否则，返回 `null`。
+`app.media.getAltTextSettings()` 接收一个 `PlayerArgs` 对象，该对象至少包含 `settings`、`showAltText` 和 `showEmptyAltText` 属性，以及一个由 `rendition.select()` 返回的选择对象。如果存在，则查找第一个可用的备用文本呈现。然后创建并返回一个适合播放备用文本的新的 `MediaSettings` 对象。否则，返回 `null`。
 
 ### 参数
 
-| **args** | 一个 `PlayerArgs` 对象，有关此对象的更多信息，请参见 `PlayerArgs 对象`。 |
-|---|---|
-| **selection** | 一个 `MediaSelection 对象` |
+| `args` | 一个 `PlayerArgs` 对象，有关此对象的更多信息，请参见 `PlayerArgs 对象`。 |
+| :--- | :--- |
+| `selection` | 一个 `MediaSelection` 对象 |
 
 ### 返回值
 
-`MediaSettings 对象` 或 `null`
+`MediaSettings` 对象或 `null`
 
 ### 示例
 
 此示例播放呈现的备用文本。代码在屏幕注释中播放备用文本，但可以修改为在浮动窗口中播放。
 
-```
+```javascript
 var rendition = this.media.getRendition("myClip");
 var settings = rendition.getPlaySettings();
 var args = {
@@ -5240,30 +5464,30 @@ args = {
 app.media.openPlayer(args);
 ```
 
-## getAnnotStockEvents
+## `getAnnotStockEvents`
 
 | 6.0 | | | | |
-|---|---|---|---|---|
+| :--- | :--- | :--- | :--- | :--- |
 
-**app.media.getAnnotStockEvents()** 方法返回一个 [Event 对象](http://)，其中包含屏幕注释中正常播放所需的默认事件监听器。默认事件监听器提供标准的 Acrobat 行为，例如焦点处理。
+`app.media.getAnnotStockEvents()` 方法返回一个 [Event 对象](http://)，其中包含屏幕注释中正常播放所需的默认事件监听器。默认事件监听器提供标准的 Acrobat 行为，例如焦点处理。
 
-如果 **app.media.trace** 为 **true**，则调试跟踪监听器也会包含在默认事件监听器中。
+如果 `app.media.trace` 为 `true`，则调试跟踪监听器也会包含在默认事件监听器中。
 
 ### 参数
 
-| settings | 与 windowType 对应的数字，参见 **app.media.windowType**。 |
-|---|---|
+| `settings` | 与 `windowType` 对应的数字，参见 `app.media.windowType`。 |
+| :--- | :--- |
 
 ### 返回值
 
 [Event 对象](http://)
 
-## getAnnotTraceEvents
+## `getAnnotTraceEvents`
 
 | 6.0 | | | | |
-|---|---|---|---|---|
+| :--- | :--- | :--- | :--- | :--- |
 
-**app.media.getAnnotTraceEvents()** 方法返回一个 [Events 对象](http://)，其中包含在事件分派时提供调试跟踪的事件监听器。
+`app.media.getAnnotTraceEvents()` 方法返回一个 [Events 对象](http://)，其中包含在事件分派时提供调试跟踪的事件监听器。
 
 ### 参数
 
@@ -5273,31 +5497,31 @@ app.media.openPlayer(args);
 
 [Events 对象](http://)
 
-## getPlayers
+## `getPlayers`
 
 | 6.0 | | | | |
-|---|---|---|---|---|
+| :--- | :--- | :--- | :--- | :--- |
 
-**app.media.getPlayers()** 方法返回一个 [PlayerInfoList 对象](http://)，这是一个 [PlayerInfo 对象](http://) 数组，表示可用的媒体播放器。
+`app.media.getPlayers()` 方法返回一个 [PlayerInfoList 对象](http://)，这是一个 [PlayerInfo 对象](http://) 数组，表示可用的媒体播放器。
 
-可以使用 PlayerInfoList 的 **select()** 方法对其进行筛选，也可以在使用 **createPlayer()** 创建媒体播放器时，将其用于 **settings.players** 属性。
+可以使用 `PlayerInfoList` 的 `select()` 方法对其进行筛选，也可以在使用 `createPlayer()` 创建媒体播放器时，将其用于 `settings.players` 属性。
 
 有关更多详情，请参见 [PlayerInfoList 对象](http://) 和 [PlayerInfo 对象](http://)。
 
 ### 参数
 
-| cMimeType | （可选）可选的 MIME 类型，例如 "audio/wav"。如果省略 **cMimeType**，则列表包含所有可用的播放器。如果指定了 **cMimeType**，则列表仅包含可以处理该 MIME 类型的播放器。 |
-|---|---|
+| `cMimeType` | （可选）可选的 MIME 类型，例如 `"audio/wav"`。如果省略 `cMimeType`，则列表包含所有可用的播放器。如果指定了 `cMimeType`，则列表仅包含可以处理该 MIME 类型的播放器。 |
+| :--- | :--- |
 
 ### 返回值
 
-PlayerInfoList 对象
+`PlayerInfoList` 对象
 
 ### 示例 1
 
 将 MP3 播放器列表输出到调试控制台。
 
-```
+```javascript
 var mp = app.media.getPlayers("audio/mp3")
 for ( var i = 0; i < mp.length; i++) {
     console.println("\nmp[" + i + "] Properties");
@@ -5307,38 +5531,41 @@ for ( var i = 0; i < mp.length; i++) {
 
 ### 示例 2
 
-通过匹配 MIME 类型，选择任何可以播放 Flash 媒体的播放器。代码假定以下代码作为 Rendition 动作执行，并关联了呈现（因此无需为 **createPlayer**() 提供参数）。
+通过匹配 MIME 类型，选择任何可以播放 Flash 媒体的播放器。代码假定以下代码作为 Rendition 动作执行，并关联了呈现（因此无需为 `createPlayer()` 提供参数）。
 
-```
+```javascript
 var player = app.media.createPlayer();
 player.settings.players
     = app.media.getPlayers( "application/x-shockwave-flash" );
 player.open();
 ```
 
-## getPlayerStockEvents
+## `getPlayerStockEvents`
 
-| 6.0 |  |  |  |  |
-|---|---|---|---|---|
+| 6.0 |  |  |  | |
+| :--- | :--- | :--- | :--- | :--- |
 
-**app.media.getPlayerStockEvents**() 返回一个 Events 对象，其中包含媒体播放器在 Acrobat 中正常播放所需的默认事件监听器。默认事件监听器提供标准的 Acrobat 行为，例如焦点处理。
-使用 **MediaPlayer.events.add**() 将这些默认事件添加到媒体播放器。
-**app.media.createPlayer**() 和 **app.media.openPlayer**() 方法在内部自动调用 **getPlayerStockEvents**()，因此除非您正在编写明确设置所有事件监听器的代码，否则无需自己调用此方法。
-如果 **app.media.trace** 为 true，则调试跟踪监听器也会包含在默认事件监听器中。
+`app.media.getPlayerStockEvents()` 返回一个 `Events` 对象，其中包含媒体播放器在 Acrobat 中正常播放所需的默认事件监听器。默认事件监听器提供标准的 Acrobat 行为，例如焦点处理。
+
+使用 `MediaPlayer.events.add()` 将这些默认事件添加到媒体播放器。
+
+`app.media.createPlayer()` 和 `app.media.openPlayer()` 方法在内部自动调用 `getPlayerStockEvents()`，因此除非您正在编写明确设置所有事件监听器的代码，否则无需自己调用此方法。
+
+如果 `app.media.trace` 为 `true`，则调试跟踪监听器也会包含在默认事件监听器中。
 
 ### 参数
 
-| | |
+|  |  |
 | :--- | :--- |
-| `settings` | 一个 MediaSettings 对象 |
+| `settings` | 一个 `MediaSettings` 对象 |
 
 ### 返回值
 
-Events 对象
+`Events` 对象
 
-## getPlayerTraceEvents
+## `getPlayerTraceEvents`
 
-`app.media.getPlayerTraceEvents()` 方法返回一个 Events 对象，其中包含在事件分派时提供调试跟踪的事件监听器。
+`app.media.getPlayerTraceEvents()` 方法返回一个 `Events` 对象，其中包含在事件分派时提供调试跟踪的事件监听器。
 
 ### 参数
 
@@ -5346,31 +5573,29 @@ Events 对象
 
 ### 返回值
 
-Events 对象
+`Events` 对象
 
-## getRenditionSettings
+## `getRenditionSettings`
 
-`app.media.getRenditionSettings()` 方法调用 `Rendition.select()` 获取一个 MediaSelection 对象，然后调用 `MediaSelection.rendition.getPlaySettings()` 获取用于播放的 MediaSettings 对象。如果其中任一步骤失败，则调用 `getAltTextSettings()` 方法获取用于备用文本播放的 MediaSettings 对象。最后，返回生成的 MediaSettings 对象，或者如果 `getAltTextSettings()` 返回 `null`（即未指定或不允许备用文本），则返回 `null`。
+`app.media.getRenditionSettings()` 方法调用 `Rendition.select()` 获取一个 `MediaSelection` 对象，然后调用 `MediaSelection.rendition.getPlaySettings()` 获取用于播放的 `MediaSettings` 对象。如果其中任一步骤失败，则调用 `getAltTextSettings()` 方法获取用于备用文本播放的 `MediaSettings` 对象。最后，返回生成的 `MediaSettings` 对象，或者如果 `getAltTextSettings()` 返回 `null`（即未指定或不允许备用文本），则返回 `null`。
 
 ### 参数
 
-| | |
+|  |  |
 | :--- | :--- |
-| `args` | 一个 PlayerArgs 对象，有关此对象的更多信息，请参见 PlayerArgs 对象。 |
+| `args` | 一个 `PlayerArgs` 对象，有关此对象的更多信息，请参见 `PlayerArgs 对象`。 |
 
 ### 返回值
 
-MediaSettings 对象 或 `null`
+`MediaSettings` 对象或 `null`
 
 ### 示例
 
 参见 `openPlayer()` 方法后面的示例 3。
 
+## `getURLData`
 
-
-## getURLData
-
-`app.media.getURLData()` 返回一个 MediaData 对象，该对象表示要从 URL 和可选的 MIME 类型检索的数据。此 MediaData 对象可用于创建一个将从该 URL 访问数据的播放器。有关 MediaData 对象的更多信息，请参见 MediaSettings.data。
+`app.media.getURLData()` 返回一个 `MediaData` 对象，该对象表示要从 URL 和可选的 MIME 类型检索的数据。此 `MediaData` 对象可用于创建一个将从该 URL 访问数据的播放器。有关 `MediaData` 对象的更多信息，请参见 `MediaSettings.data`。
 
 ### 参数
 
@@ -5379,7 +5604,7 @@ MediaSettings 对象 或 `null`
 
 ### 返回值
 
-MediaData 对象。
+`MediaData` 对象。
 
 ### 示例
 
@@ -5394,28 +5619,30 @@ var args = {
     settings: {
         players: app.media.getPlayers("video/x-mpg"),
         windowType: app.media.windowType.floating,
-        data: app.media.getURLData(myURLClip,"video/x-mpg"),
+        data: app.media.getURLData(myURLClip, "video/x-mpg"),
         floating: { height: 400, width: 600 }
     }
 };
 app.media.openPlayer(args);
 ```
 
-## getURLSettings
+## `getURLSettings`
 
-`app.media.getURLSettings()` 方法接受一个包含 `settings` 属性的 PlayerArgs 对象，并返回一个适合播放 URL 的 MediaSettings 对象。settings 属性必须包含一个 URL 属性，并且可以包含一个 mimeType 属性。它还可以包含额外的设置，这些设置将被复制到生成的 settings 对象中。
+`app.media.getURLSettings()` 方法接受一个包含 `settings` 属性的 `PlayerArgs` 对象，并返回一个适合播放 URL 的 `MediaSettings` 对象。`settings` 属性必须包含一个 URL 属性，并且可以包含一个 `mimeType` 属性。它还可以包含额外的设置，这些设置将被复制到生成的 `settings` 对象中。
 
 ### 参数
 
-- `args`：一个 PlayerArgs 对象，有关此对象的更多信息，请参见 PlayerArgs Object。
+- `args`：一个 `PlayerArgs` 对象，有关此对象的更多信息，请参见 `PlayerArgs Object`。
 
 ### 返回值
 
-MediaSettings 对象。
+`MediaSettings` 对象。
 
 ### 示例 1
 
-与上面相同的示例。基本上，`getURLSettings()` 调用 `getURLData()` 并将返回的 MediaData 对象插入到 settings 的 `data` 属性中，然后返回该对象。
+与上面相同的示例。基本上，`getURLSettings()` 调用 `getURLData()` 并将返回的 `MediaData` 对象插入到 `settings` 的 `data` 属性中，然后返回该对象。
+
+
 
 ```javascript
 var myURLClip = "http://www.mywebsite.com/myClip.mpg";
@@ -5436,7 +5663,7 @@ app.media.openPlayer(args);
 
 ### 示例 2
 
-下面的示例是一个组合框的自定义按键操作。该组合框是一个流式音频/视频网站的简单播放列表。列表中每个元素的导出值格式为 "URL,mimeType"，例如 `http://www.mySite.com/streaming/radio.asx,video/x-ms-asx`。下面的脚本首先将导出值拆分为一个长度为 2 的数组，第一个元素是 URL，第二个是 mimeType。任何视频都将在屏幕注释 "myScreen" 中显示；否则，只能听到音频。
+下面的示例是一个组合框的自定义按键操作。该组合框是一个流式音频/视频网站的简单播放列表。列表中每个元素的导出值格式为 `"URL,mimeType"`，例如`http://www.mySite.com/streaming/radio.asx,video/x-ms-asx`。下面的脚本首先将导出值拆分为一个长度为 2 的数组，第一个元素是 URL，第二个是 mimeType。任何视频都将在屏幕注释`"myScreen"`中显示；否则，只能听到音频。
 
 ```javascript
 if (!event.willCommit)
@@ -5462,17 +5689,17 @@ if (!event.willCommit)
 
 ## getWindowBorderSize
 
-`app.media.getWindowBorderSize()` 方法返回一个包含四个数字的数组，分别表示在参数中指定的属性的浮动窗口中，左、上、右、下边框的大小（以像素为单位）。`hasTitle` 和 `hasClose` 参数是布尔值，`canResize` 可以是 `app.media.canResize` 中的任何值。这些参数与 `MediaSettings.floating` 对象的属性同名，因此您可以简单地将一个浮动对象作为单个参数传入：
+`app.media.getWindowBorderSize()`方法返回一个包含四个数字的数组，分别表示在参数中指定的属性的浮动窗口中，左、上、右、下边框的大小（以像素为单位）。`hasTitle`和`hasClose`参数是布尔值，`canResize`可以是`app.media.canResize`中的任何值。这些参数与`MediaSettings.floating`对象的属性同名，因此您可以简单地将一个浮动对象作为单个参数传入：
 
 ```javascript
-var size = doc.media.getWindowBorderSize( settings.floating );
+var size = doc.media.getWindowBorderSize(settings.floating);
 ```
 
 ### 参数
 
-- `hasTitle`：（可选）默认为 **true**。
-- `hasClose`：（可选）默认为 **true**。
-- `canResize`：（可选）默认为 `app.media.canResize.no`。
+- `hasTitle`：（可选）默认为`true`。
+- `hasClose`：（可选）默认为`true`。
+- `canResize`：（可选）默认为`app.media.canResize.no`。
 
 ### 返回值
 
@@ -5480,19 +5707,19 @@ var size = doc.media.getWindowBorderSize( settings.floating );
 
 ## openPlayer
 
-`app.media.openPlayer()` 调用 `app.media.createPlayer()` 来创建一个 `MediaPlayer 对象`，然后调用 `MediaPlayer.open()` 来打开实际的播放器。此函数会触发多个事件，可能包括 `Ready`（参见 `onReady` 和 `afterReady`）、`Play`（参见 `onPlay` 和 `afterPlay`）以及 `Focus`（参见 `onFocus` 和 `afterFocus`）。另请参阅 `EventListener 对象` 以了解这些事件的总体描述。该方法在失败时会警告用户并返回 `null`。不会抛出异常。
+`app.media.openPlayer()`调用`app.media.createPlayer()`来创建一个`MediaPlayer`对象，然后调用`MediaPlayer.open()`来打开实际的播放器。此函数会触发多个事件，可能包括`Ready`（参见`onReady`和`afterReady`）、`Play`（参见`onPlay`和`afterPlay`）以及`Focus`（参见`onFocus`和`afterFocus`）。另请参阅`EventListener`对象以了解这些事件的总体描述。该方法在失败时会警告用户并返回`null`。不会抛出异常。
 
 ### 参数
 
-- `args`：（可选）`args` 是一个 PlayerArgs 对象。参见 PlayerArgs Object。
+- `args`：（可选）`args`是一个 PlayerArgs 对象。参见 PlayerArgs Object。
 
 ### 返回值
 
-一个 MediaPlayer 对象，失败时返回 `null`。
+一个 MediaPlayer 对象，失败时返回`null`。
 
 ### 示例 1
 
-以下是最小示例。这是来自屏幕注释的多媒体属性面板中“操作”选项卡的自定义 JavaScript。为了覆盖屏幕注释 UI 指定的参数，传递了 `args` 参数。
+以下是最小示例。这是来自屏幕注释的多媒体属性面板中“操作”选项卡的自定义 JavaScript。为了覆盖屏幕注释 UI 指定的参数，传递了`args`参数。
 
 ```javascript
 app.media.openPlayer();
@@ -5506,7 +5733,7 @@ var args = { settings: { repeat: nRepeat } };
 app.media.openPlayer(args);
 ```
 
-有关 `event.action.rendition` 的解释，请参见 Event Object。上述示例还使用了 `Rendition.getPlaySettings()` 来访问与要播放的呈现（与屏幕注释关联的那个）相关的设置。
+有关`event.action.rendition`的解释，请参见 Event Object。上述示例还使用了`Rendition.getPlaySettings()`来访问与要播放的呈现（与屏幕注释关联的那个）相关的设置。
 
 ### 示例 2
 
@@ -5514,8 +5741,8 @@ app.media.openPlayer(args);
 
 ```javascript
 app.media.openPlayer({
-    rendition: this.media.getRendition( "myClip" ),
-    annot: this.media.getAnnot( {nPage:0, cAnnotTitle:"myScreen"} ),
+    rendition: this.media.getRendition("myClip"),
+    annot: this.media.getAnnot({nPage:0, cAnnotTitle:"myScreen"}),
     settings: { windowType: app.media.windowType.docked }
 });
 ```
@@ -5534,7 +5761,7 @@ myRenditions[2] = "myClip3";
 // 此代码是屏幕注释的自定义 JavaScript。所有呈现都是停靠的，
 // 并在屏幕注释中播放。
 var l = myRenditions.length;
-randomIndex = Math.floor( Math.random() * l ) % l;
+randomIndex = Math.floor(Math.random() * l) % l;
 var rendition = this.media.getRendition(myRenditions[randomIndex]);
 var settings = app.media.getRenditionSettings({ rendition: rendition });
 
@@ -5544,7 +5771,7 @@ app.media.openPlayer(args);
 
 ## removeStockEvents
 
-`app.media.removeStockEvents()` 方法会从 `MediaPlayer 对象` 及其关联的任何 `ScreenAnnot 对象` 中移除所有库存事件监听器，并删除 `player.stockEvents`、`player.annot`、`annot.stockEvents` 和 `annot.player` 属性。这将撤销先前 `addStockEvents()` 调用的效果。
+`app.media.removeStockEvents()`方法会从`MediaPlayer`对象及其关联的任何`ScreenAnnot`对象中移除所有库存事件监听器，并删除`player.stockEvents`、`player.annot`、`annot.stockEvents`和`annot.player`属性。这将撤销先前`addStockEvents()`调用的效果。
 
 ### 参数
 
@@ -5556,19 +5783,17 @@ app.media.openPlayer(args);
 
 ## startPlayer
 
-`app.media.startPlayer()` 方法检查 `PlayerArgs 对象` 中是否提供了注释，并且该注释是否已经打开了一个播放器。如果是，它会在该播放器上调用 `player.play()` 以开始或恢复播放。如果不是，它会调用 `app.media.openPlayer()` 来创建并打开一个新的 `MediaPlayer 对象`。有关更多详细信息，请参见 `openPlayer`。
+`app.media.startPlayer()`方法检查`PlayerArgs`对象中是否提供了注释，以及该注释是否已经打开了一个播放器。如果是，它会在该播放器上调用`player.play()`以开始或恢复播放。如果不是，它会调用`app.media.openPlayer()`来创建并打开一个新的`MediaPlayer`对象。有关更多详细信息，请参见`openPlayer`。
 
-**注意：** 当您使用 Acrobat 用户界面创建多媒体注释和呈现而未指定任何自定义 JavaScript 时，`app.media.startPlayer()` 是默认的鼠标松开操作。
+**注意：** 当您使用 Acrobat 用户界面创建多媒体注释和呈现而未指定任何自定义 JavaScript 时，`app.media.startPlayer()`是默认的鼠标松开操作。
 
 ### 参数
 
-- `args`：（可选）`args` 是一个 PlayerArgs 对象。参见 PlayerArgs Object。
+- `args`：（可选）`args`是一个 PlayerArgs 对象。参见 PlayerArgs Object。
 
 ### 返回值
 
-一个 `MediaPlayer 对象`，失败时返回 `null`。
-
-
+一个`MediaPlayer`对象，失败时返回`null`。
 
 # 示例
 
@@ -5576,7 +5801,7 @@ app.media.openPlayer(args);
 
 ```javascript
 var args = {
-    rendition: this.media.getRendition( "myClip" ),
+    rendition: this.media.getRendition("myClip"),
     annot: this.media.getAnnot({ nPage: 0, cAnnotTitle: "myScreen" }),
 };
 app.media.startPlayer(args);
@@ -5584,7 +5809,7 @@ app.media.startPlayer(args);
 
 # 书签对象
 
-[书签对象](Bookmark Object) 表示书签树中的一个节点，该节点显示在书签导航面板中。书签通常用作“目录”，允许用户快速导航到感兴趣的主题。
+[书签对象](Bookmark Object)表示书签树中的一个节点，该节点显示在书签导航面板中。书签通常用作“目录”，允许用户快速导航到感兴趣的主题。
 
 # 书签属性
 
@@ -5593,11 +5818,11 @@ app.media.startPlayer(args);
 | 5.0 |  |  |  |  |
 |---|---|---|---|---|
 
-返回一个 [书签对象](Bookmark Objects) 数组，这些对象是此书签在书签树中的子节点。如果此书签没有子节点，则此属性的值为 **null**。
+返回一个[书签对象](Bookmark Objects)数组，这些对象是此书签在书签树中的子节点。如果此书签没有子节点，则此属性的值为`null`。
 
-另请参阅 [parent](parent) 和 [bookmarkRoot](bookmarkRoot)。
+另请参阅[parent](parent)和[bookmarkRoot](bookmarkRoot)。
 
-*类型：Array | null*　　　　 *访问权限：R.*
+类型：`Array | null`　访问权限：`R`。
 
 ## 示例
 
@@ -5625,11 +5850,11 @@ DumpBookmark(this.bookmarkRoot, 0);
 | 5.0 | Ⓓ |  |  |  |
 |---|---|---|---|---|
 
-指定书签的颜色。值通过使用灰度、RGB 或 CMYK 颜色来定义。有关定义颜色数组以及此属性如何使用值的信息，请参阅 [颜色数组](http://localhost:6006/?path=/story/docs-docs--readme-page--properties)。另请参阅 **style**。
+指定书签的颜色。值通过使用灰度、RGB 或 CMYK 颜色来定义。有关定义颜色数组以及此属性如何使用值的信息，请参阅[颜色数组](http://localhost:6006/?path=/story/docs-docs--readme-page--properties)。另请参阅`style`。
 
 > **注意：** 此属性在 Adobe Reader 中为只读。
 
-类型：*Array* 访问权限：*R/W*。
+类型：`Array`　访问权限：`R/W`。
 
 ## 示例
 
@@ -5641,8 +5866,8 @@ bkm.color = color.black;
 var C = new Array(1, 0, 0);
 var run = app.setInterval(
     'bkm.color = ["RGB",C[0],C[1],C[2]]; C.push(C.shift());', 1000);
-var stoprun=app.setTimeOut(
-    "app.clearInterval(run); bkm.color=color.black",12000);
+var stoprun = app.setTimeOut(
+    "app.clearInterval(run); bkm.color=color.black", 12000);
 ```
 
 ## doc
@@ -5650,9 +5875,9 @@ var stoprun=app.setTimeOut(
 | 5.0 |  |  |  |  |
 |---|---|---|---|---|
 
-书签所在的 [文档对象](http://localhost:6006/?path=/story/docs-docs--readme-page--properties)。
+书签所在的[文档对象](http://localhost:6006/?path=/story/docs-docs--readme-page--properties)。
 
-类型：*object* 访问权限：*R*。
+类型：`object`　访问权限：`R`。
 
 ## name
 
@@ -5663,7 +5888,7 @@ var stoprun=app.setTimeOut(
 
 > **注意：** 此属性在 Adobe Reader 中为只读。
 
-类型：*String* 访问权限：*R/W*。
+类型：`String`　访问权限：`R/W`。
 
 ## 示例
 
@@ -5671,46 +5896,49 @@ var stoprun=app.setTimeOut(
 
 ```javascript
 var bkm = this.bookmarkRoot.children[0];
-console.println( "Top level bookmark name: " + bkm.name );
+console.println("Top level bookmark name: " + bkm.name);
 ```
 
-紧随 **bookmark.children** 之后的示例也使用了 **name** **属性**。
+紧随`bookmark.children`之后的示例也使用了`name`属性。
 
 # 书签属性
 
 ## open
 
-| 5.0 | D | | | |
+| 5.0 | D |  |  |  |
 |---|---|---|---|---|
 
 确定书签是否在导航面板中显示其子节点（展开）或折叠子树（折叠）。
 
 **注意：** 此属性在 Adobe Reader 中为只读。
 
-*类型：* Boolean
-*访问权限：* R/W。
+类型：`Boolean`
+
+访问权限：`R/W`。
 
 ## parent
 
-| 5.0 | | | | |
+| 5.0 |  |  |  |  |
 |---|---|---|---|---|
 
-返回书签的父书签，如果书签是根书签，则返回 `null`。另请参阅 [children](children) 和 [bookmarkRoot](bookmarkRoot)。
+返回书签的父书签，如果书签是根书签，则返回`null`。另请参阅[children](children)和[bookmarkRoot](bookmarkRoot)。
 
-*类型：* object | `null`
-*访问权限：* R。
+类型：`object | null`
+
+访问权限：`R`。
 
 ## style
 
-| 5.0 | D | | | |
+| 5.0 | D |  |  |  |
 |---|---|---|---|---|
 
-指定书签字体的样式：0 表示正常，1 表示斜体，2 表示粗体，3 表示粗斜体。另请参阅 [color](color)。
+指定书签字体的样式：0 表示正常，1 表示斜体，2 表示粗体，3 表示粗斜体。另请参阅[color](color)。
 
 **注意：** 此属性在 Adobe Reader 中为只读。
 
-*类型：* Integer
-*访问权限：* R/W。
+类型：`Integer`
+
+访问权限：`R/W`。
 
 ### 示例
 
@@ -5725,23 +5953,23 @@ bkm.style = 2;
 
 ## createChild
 
-| 5.0 | D | | X | |
+| 5.0 | D |  | X |  |
 |---|---|---|---|---|
 
 在指定位置创建新的子书签。
 
-另请参阅 **children**、**insertChild** 和 **remove**。
+另请参阅`children`、`insertChild`和`remove`。
 
 ### 参数
 
-| **cName** | 用户将在导航面板中看到的书签名称。 |
+| `cName` | 用户将在导航面板中看到的书签名称。 |
 |---|---|
-| **cExpr** | （可选）每次用户单击书签时要评估的表达式。默认为无表达式。这等效于使用 JavaScript 操作创建书签；有关详细信息，请参阅 [PDF 参考](https://www.adobe.com/content/dam/acom/en/devnet/acrobat/pdfs/pdf_reference_1-7.pdf)，“JavaScript 操作”。 |
-| **nIndex** | （可选）书签子节点数组中用于创建新子节点的从 0 开始的索引。默认为 0。 |
+| `cExpr` | （可选）每次用户单击书签时要评估的表达式。默认为无表达式。这等效于使用 JavaScript 操作创建书签；有关详细信息，请参阅[PDF 参考](https://www.adobe.com/content/dam/acom/en/devnet/acrobat/pdfs/pdf_reference_1-7.pdf)“JavaScript 操作”。 |
+| `nIndex` | （可选）书签子节点数组中用于创建新子节点的从 0 开始的索引。默认为 0。 |
 
 ### 返回值
 
-无
+无。
 
 ### 示例
 
@@ -5753,22 +5981,24 @@ this.bookmarkRoot.createChild("Next Page", "this.pageNum++");
 
 ## execute
 
-| 5.0 | | | | |
+| 5.0 |  |  |  |  |
 |---|---|---|---|---|
 
-执行与此书签关联的操作。这可以有多种行为。有关常见操作类型的列表，请参阅 [PDF 参考](https://www.adobe.com/content/dam/acom/en/devnet/acrobat/pdfs/pdf_reference_1-7.pdf) 第 7.5.3 节“操作类型”。另请参阅 **createChild**。
+执行与此书签关联的操作。这可以有多种行为。有关常见操作类型的列表，请参阅[PDF 参考](https://www.adobe.com/content/dam/acom/en/devnet/acrobat/pdfs/pdf_reference_1-7.pdf)第 7.5.3 节“操作类型”。另请参阅`createChild`。
 
 ### 参数
 
-无
+无。
 
 ### 返回值
 
-无
+无。
 
 ### 示例
 
 此示例实现了书签的简单搜索，成功后，将执行与书签关联的操作。
+
+
 
 ```javascript
 // Document level or folder level JavaScript.
@@ -5817,13 +6047,14 @@ if ( bkmName != null ) {
 
 ## insertChild
 
-将指定书签插入为此书签的子节点。如果书签已存在于书签树中，则在将其重新插入树之前会先取消其链接。此外，会检查插入操作是否会导致循环，如果存在则禁止插入。这可以防止用户将书签插入为其自身或其孙节点的子节点。另请参阅 children、createChild 和 remove。
+将指定书签插入为此书签的子节点。如果书签已存在于书签树中，则在将其重新插入树之前会先取消其链接。此外，会检查插入操作是否会导致循环，如果存在则禁止插入。这可以防止用户将书签插入为其自身或其孙节点的子节点。另请参阅`children`、`createChild`和`remove`。
 
 ### 参数
 
-| oBookmark | 要添加为该书签子节点的书签对象。 |
+| 参数 | 描述 |
 | --- | --- |
-| nIndex | （可选）书签子节点数组中用于插入新子节点的从 0 开始的索引。默认为 0。 |
+| `oBookmark` | 要添加为该书签子节点的书签对象。 |
+| `nIndex` | （可选）书签子节点数组中用于插入新子节点的从 0 开始的索引。默认为 0。 |
 
 ### 返回值
 
@@ -5840,7 +6071,7 @@ bookmarkRoot.insertChild(bm, bookmarkRoot.children.length);
 
 ## remove
 
-从书签树中移除书签及其所有子节点。另请参阅 children、createChild 和 insertChild。
+从书签树中移除书签及其所有子节点。另请参阅`children`、`createChild`和`insertChild`。
 
 ### 参数
 
@@ -5862,14 +6093,15 @@ bookmarkRoot.remove();
 
 为书签设置 JavaScript 操作。
 
-另请参阅 doc.addScript、doc.setPageAction 和 field.setAction。
+另请参阅`doc.addScript`、`doc.setPageAction`和`field.setAction`。
 
 **注意：** 此方法将覆盖此书签已定义的任何操作。
 
 ### 参数
 
-| cScript | 定义每当用户单击书签时要执行的 JavaScript 表达式。 |
+| 参数 | 描述 |
 | --- | --- |
+| `cScript` | 定义每当用户单击书签时要执行的 JavaScript 表达式。 |
 
 ### 返回值
 
@@ -5884,75 +6116,81 @@ var bm = bookmarkRoot.children[0]
 bm.setAction("app.beep(0);");
 ```
 
-# # Catalog 对象
+## Catalog 对象
 
-一个静态对象，用于访问 Acrobat Catalog 插件提供的功能。必须安装此插件才能与 `catalog` 对象进行接口。
+一个静态对象，用于访问 Acrobat Catalog 插件提供的功能。必须安装此插件才能与`catalog`对象进行接口。
 
-**注意：** Catalog 插件（以及 `catalog` 对象）仅在 Acrobat Professional 中可用。
+**注意：** Catalog 插件（以及`catalog`对象）仅在 Acrobat Professional 中可用。
 
-另请参阅 [索引对象](https://example.com)，用于调用 Catalog 插件提供的各种索引操作，以及 [CatalogJob 通用对象](https://example.com)。
+另请参阅[索引对象](https://example.com)，用于调用 Catalog 插件提供的各种索引操作，以及[CatalogJob 通用对象](https://example.com)。
 
-# # Catalog 属性
+## Catalog 属性
 
-## ## isIdle
-
-| 6.0 | X | P |
-|---|---|---|
-
-当 Catalog 空闲且未忙于索引作业时返回 `true`。
-
-类型：Boolean 访问权限：R。
-
-## ## jobs
+### isIdle
 
 | 6.0 | X | P |
-|---|---|---|
+| --- | --- | --- |
 
-获取有关 Catalog 作业的信息。Catalog 为每个 Acrobat 会话维护其待处理、正在进行和已完成的作业列表。返回一个 [CatalogJob 通用对象](https://example.com) 数组。
+当 Catalog 空闲且未忙于索引作业时返回`true`。
 
-类型：Array 访问权限：R。
+类型：Boolean  
+访问权限：R。
 
-# # Catalog 方法
-
-## ## getIndex
+### jobs
 
 | 6.0 | X | P |
-|---|---|---|
+| --- | --- | --- |
 
-使用指定的 Catalog 索引路径获取一个 `index` 对象。返回的 **index** 对象可用于执行各种索引操作，例如构建或删除索引。
+获取有关 Catalog 作业的信息。Catalog 为每个 Acrobat 会话维护其待处理、正在进行和已完成的作业列表。返回一个[CatalogJob 通用对象](https://example.com)数组。
 
+类型：Array  
+访问权限：R。
 
+## Catalog 方法
+
+### getIndex
+
+| 6.0 | X | P |
+| --- | --- | --- |
+
+使用指定的 Catalog 索引路径获取一个`index`对象。返回的`index`对象可用于执行各种索引操作，例如构建或删除索引。
 
 # Acrobat JavaScript 脚本参考
+
 ## CatalogJob 通用对象
 
-**参数**
+### 参数
 
-| **cDIPath** | Catalog 索引的设备无关路径。 |
+| 参数 | 描述 |
 | --- | --- |
+| `cDIPath` | Catalog 索引的设备无关路径。 |
 
-**返回值**
+### 返回值
+
 索引对象。
 
 ## remove
 
-| 6.0 | | X | P |
-| --- | --- | --- | --- |
+| 6.0 | X | P |
+| --- | --- | --- |
 
-从 Catalog 的任务列表中移除指定的 **CatalogJob** 对象。Catalog 为每个 Acrobat 会话维护一个待处理、进行中和已完成的任务列表。
+从 Catalog 的任务列表中移除指定的`CatalogJob`对象。Catalog 为每个 Acrobat 会话维护一个待处理、进行中和已完成的任务列表。
 
-**参数**
+### 参数
 
-| **oJob** | 要移除的 CatalogJob 通用对象，由 **jobs** 属性和 Index 对象的各种方法返回。 |
+| 参数 | 描述 |
 | --- | --- |
+| `oJob` | 要移除的 CatalogJob 通用对象，由`jobs`属性和 Index 对象的各种方法返回。 |
 
-**返回值**
+### 返回值
+
 无
 
-**示例**
+### 示例
+
 删除所有待处理且需要完全重建的任务。
 
-```
+```javascript
 if (typeof catalog != undefined) {
     for (var i=0; i<catalog.jobs.length; i++){
         var job = catalog.jobs[i];
@@ -5966,22 +6204,23 @@ if (typeof catalog != undefined) {
 
 ## CatalogJob 通用对象
 
-此通用 JS 对象提供了关于提交给 Catalog 的任务的信息。它由 **index.build**、**catalog.jobs** 属性返回，并传递给 **catalog.remove**。
+此通用 JS 对象提供了关于提交给 Catalog 的任务的信息。它由`index.build`、`catalog.jobs`属性返回，并传递给`catalog.remove`。
 
 它具有以下属性：
 
 | 属性 | 类型 | 访问权限 | 描述 |
 | --- | --- | --- | --- |
-| **path** | 字符串 | R | 与任务关联的索引的设备无关路径 |
-| **type** | 字符串 | R | 与任务关联的索引操作类型。可能的值有：`Build` `Rebuild` `Delete` |
-| **status** | 字符串 | R | 索引操作的状态。可能的值有：`Pending` `Processing` `Completed` `CompletedWithErrors` |
+| `path` | 字符串 | R | 与任务关联的索引的设备无关路径 |
+| `type` | 字符串 | R | 与任务关联的索引操作类型。可能的值有：`Build`、`Rebuild`、`Delete` |
+| `status` | 字符串 | R | 索引操作的状态。可能的值有：`Pending`、`Processing`、`Completed`、`CompletedWithErrors` |
 
 ## 证书对象
 
 证书对象提供对 X.509 公钥证书属性的只读访问。
 
 相关的对象和方法有：
-- 安全对象：`importFromFile` 和 `getSecurityPolicies`
+
+- 安全对象：`importFromFile`和`getSecurityPolicies`
 - DirConnection 对象：`search`
 - Field 对象：`signatureInfo`
 - FDF 对象：`signatureValidate`
@@ -6000,6 +6239,7 @@ if (typeof catalog != undefined) {
 证书的原始字节，表示为十六进制编码的字符串。
 
 类型：字符串
+
 访问权限：R。
 
 ### issuerDN
@@ -6007,9 +6247,10 @@ if (typeof catalog != undefined) {
 | 5.0 | | | |
 | --- | --- | --- | --- |
 
-证书颁发者的可分辨名称，以 [RDN 通用对象](RDN Generic Object) 形式返回。
+证书颁发者的可分辨名称，以[RDN 通用对象](RDN Generic Object)形式返回。
 
 类型：RDN 对象
+
 访问权限：R。
 
 ### keyUsage
@@ -6026,6 +6267,7 @@ kKeyEncipherment kKeyCertSign kDecipherOnly
 ```
 
 类型：字符串数组
+
 访问权限：R。
 
 ### MD5Hash
@@ -6036,6 +6278,7 @@ kKeyEncipherment kKeyCertSign kDecipherOnly
 证书的 MD5 摘要，表示为十六进制编码的字符串。这为该证书提供了唯一的指纹。
 
 类型：字符串
+
 访问权限：R。
 
 ### SHA1Hash
@@ -6046,6 +6289,7 @@ kKeyEncipherment kKeyCertSign kDecipherOnly
 证书的 SHA1 摘要，表示为十六进制编码的字符串。这为该证书提供了唯一的指纹。
 
 类型：字符串
+
 访问权限：R。
 
 ### serialNumber
@@ -6053,9 +6297,10 @@ kKeyEncipherment kKeyCertSign kDecipherOnly
 | 5.0 | | | |
 | --- | --- | --- | --- |
 
-此证书的唯一标识符，与 **issuerDN** 结合使用。
+此证书的唯一标识符，与`issuerDN`结合使用。
 
 类型：字符串
+
 访问权限：R。
 
 ### subjectCN
@@ -6066,6 +6311,7 @@ kKeyEncipherment kKeyCertSign kDecipherOnly
 签署者的通用名称。
 
 类型：字符串
+
 访问权限：R。
 
 ### subjectDN
@@ -6073,9 +6319,10 @@ kKeyEncipherment kKeyCertSign kDecipherOnly
 | 5.0 | | | |
 | --- | --- | --- | --- |
 
-签署者的可分辨名称，以 **RDN 通用对象** 形式返回。
+签署者的可分辨名称，以`RDN 通用对象`形式返回。
 
 类型：RDN 对象
+
 访问权限：R。
 
 ### ubRights
@@ -6083,72 +6330,74 @@ kKeyEncipherment kKeyCertSign kDecipherOnly
 | 7.0 | | | |
 | --- | --- | --- | --- |
 
-此证书可以启用的应用程序权利，以通用 **Rights 对象** 形式返回。
+此证书可以启用的应用程序权利，以通用`Rights 对象`形式返回。
 
 类型：Rights 对象
+
 访问权限：R。
 
 ## Rights 对象
 
-**Rights** 对象具有以下属性：
+`Rights`对象具有以下属性：
 
 | 属性 | 类型 | 访问权限 | 描述 |
 | --- | --- | --- | --- |
-| **mode** | 字符串 | R | 可能的值列在下面的 **UbiquityMode** 表中。目前，Adobe 的 PDF 查看器尚未使用此值。 |
-| **rights** | 字符串数组 | R | 一个字符串数组，表示此证书可以启用的应用程序权利。此数组的字符串元素的可能值列在下面的 UbiquityRights 表中。 |
+| `mode` | 字符串 | R | 可能的值列在下面的`UbiquityMode`表中。目前，Adobe 的 PDF 查看器尚未使用此值。 |
+| `rights` | 字符串数组 | R | 一个字符串数组，表示此证书可以启用的应用程序权利。此数组的字符串元素的可能值列在下面的 UbiquityRights 表中。 |
 
 ## UbiquityMode
 
-这些是 Rights 对象的 mode 属性的值。
+这些是 Rights 对象的`mode`属性的值。
 
 | 字符串 | 描述 |
 | --- | --- |
-| Evaluation | 此证书为此文档启用的权利只要此证书有效即有效。 |
-| Production | 此证书为此文档启用的权利永久有效。 |
+| `Evaluation` | 此证书为此文档启用的权利只要此证书有效即有效。 |
+| `Production` | 此证书为此文档启用的权利永久有效。 |
 
 ## UbiquityRights
 
-这些是 Rights 对象的 rights 属性的值。
+这些是 Rights 对象的`rights`属性的值。
 
 | 字符串 | 描述 |
 | --- | --- |
-| FormFillInAndSave | 填写表单（签名字段除外）并保存修改后文件的权利。 |
-| FormImportExport | 导入和导出表单数据的权利。 |
-| FormAddDelete | 添加或删除表单字段的权利。 |
-| SubmitStandalone | 在浏览器外提交文档的权利。 |
-| SpawnTemplate | 生成页面模板的权利。 |
-| Signing | 签署文档中现有表单字段的权利。 |
-| AnnotModify | 创建、删除和修改注释的权利。 |
-| AnnotImportExport | 导入和导出注释的权利。 |
-| BarcodePlaintext | 将表单字段的外观编码为纯文本条形码的权利。 |
-| AnnotOnline | 允许在线评论。启用将文档中的任何注释上传到服务器。启用从服务器下载注释。不支持将这些注释添加到文档中。 |
-| FormOnline | 启用特定于表单的在线机制（例如 SOAP 或 Active Data Object）。 |
-| **EFModify** | 创建、删除、修改和导入命名的嵌入文件的权利。不适用于文件附件注释。 |
+| `FormFillInAndSave` | 填写表单（签名字段除外）并保存修改后文件的权利。 |
+| `FormImportExport` | 导入和导出表单数据的权利。 |
+| `FormAddDelete` | 添加或删除表单字段的权利。 |
+| `SubmitStandalone` | 在浏览器外提交文档的权利。 |
+| `SpawnTemplate` | 生成页面模板的权利。 |
+| `Signing` | 签署文档中现有表单字段的权利。 |
+| `AnnotModify` | 创建、删除和修改注释的权利。 |
+| `AnnotImportExport` | 导入和导出注释的权利。 |
+| `BarcodePlaintext` | 将表单字段的外观编码为纯文本条形码的权利。 |
+| `AnnotOnline` | 允许在线评论。启用将文档中的任何注释上传到服务器。启用从服务器下载注释。不支持将这些注释添加到文档中。 |
+| `FormOnline` | 启用特定于表单的在线机制（例如 SOAP 或 Active Data Object）。 |
+| `EFModify` | 创建、删除、修改和导入命名的嵌入文件的权利。不适用于文件附件注释。 |
 
 ### usage
 
-| 6.0 |  |  |  |
+| 6.0 | | | |
 | --- | --- | --- | --- |
 
 此证书可在 Acrobat 环境中使用的用途，以 Usage 通用对象形式返回。
 
 类型：Usage 对象
+
 访问权限：R。
 
 ## Usage 通用对象
 
-此通用 JS 对象表示 certificate.usage 属性中的证书用途值。它具有以下属性。
+此通用 JS 对象表示`certificate.usage`属性中的证书用途值。它具有以下属性。
 
 | 属性 | 类型 | 访问权限 | 描述 |
 | --- | --- | --- | --- |
-| **endUserSigning** | 布尔值 | R | 如果证书可用于最终用户签署，则为 true。 |
-| **endUserEncryption** | 布尔值 | R | 如果证书可用于最终用户加密，则为 true。 |
+| `endUserSigning` | 布尔值 | R | 如果证书可用于最终用户签署，则为 true。 |
+| `endUserEncryption` | 布尔值 | R | 如果证书可用于最终用户加密，则为 true。 |
 
-**示例**
+### 示例
 
-以下示例展示了如何使用 usage 属性。此脚本执行的结果将是，当前打开的文档将为通讯簿中的所有人加密。包含仅签名证书、CA 证书、没有任何证书或不适合加密的通讯簿条目将不会包含在最终的收件人列表中。
+以下示例展示了如何使用`usage`属性。此脚本执行的结果将是，当前打开的文档将为通讯簿中的所有人加密。包含仅签名证书、CA 证书、没有任何证书或不适合加密的通讯簿条目将不会包含在最终的收件人列表中。
 
-```
+```javascript
 var eng = security.getHandler( "Adobe.AAB" );
 var dc = eng.directories[0].connect();
 var recipients = dc.search();
@@ -6181,38 +6430,44 @@ for( i = 0; i < recipients.length; ++i ) {
 
 | 6.0 |
 | --- |
+|  |
 
-向 Acrobat 添加一个新的状态模型。状态模型描述了使用该模型的 **annot** 可以具有的有效状态（有关获取和设置 **annot** 状态的详细信息，请参阅 [Annot 对象](https://www.adobe.com/devnet/acrobat/documentation.html)）。状态模型可用于描述文档审阅所经历的工作流程，也可用于审阅管理。
-另请参阅 [removeStateModel](https://www.adobe.com/devnet/acrobat/documentation.html)、[getStateInModel](https://www.adobe.com/devnet/acrobat/documentation.html) 和 [transitionToState](https://www.adobe.com/devnet/acrobat/documentation.html)。
+向 Acrobat 添加一个新的状态模型。状态模型描述了使用该模型的`annot`可以具有的有效状态（有关获取和设置`annot`状态的详细信息，请参阅[Annot 对象](https://www.adobe.com/devnet/acrobat/documentation.html)）。状态模型可用于描述文档审阅所经历的工作流程，也可用于审阅管理。
 
-**参数**
+另请参阅[removeStateModel](https://www.adobe.com/devnet/acrobat/documentation.html)、[getStateInModel](https://www.adobe.com/devnet/acrobat/documentation.html)和[transitionToState](https://www.adobe.com/devnet/acrobat/documentation.html)。
 
-| **cName** | 状态模型的唯一、与语言无关的标识符。 |
+### 参数
+
+| 参数 | 描述 |
 | --- | --- |
-| **cUIName** | 在用户界面中使用的状态模型的显示名称，应进行本地化。 |
-| **oStates** | 状态模型中的状态，由 [States 对象字面量](https://www.adobe.com/devnet/acrobat/documentation.html) 描述。 |
-| **cDefault** | （可选）模型中用作默认状态的一个状态，如果没有设置其他状态则使用。默认为没有默认状态。 |
-| **bHidden** | （可选）状态模型是否应在状态模型用户界面中隐藏。默认为 **false**（显示状态模型）。 |
-| **bHistory** | （可选）是否为状态模型维护审计历史记录。保留审计历史记录需要文件中的更多空间。默认为 **true**。 |
+| `cName` | 状态模型的唯一、与语言无关的标识符。 |
+| `cUIName` | 在用户界面中使用的状态模型的显示名称，应进行本地化。 |
 
 
+
+| `oStates` | 状态模型中的状态，由 [States 对象字面量](https://www.adobe.com/devnet/acrobat/documentation.html) 描述。 |
+| --- | --- |
+| `cDefault` | （可选）模型中用作默认状态的一个状态，如果没有设置其他状态则使用。默认为没有默认状态。 |
+| `bHidden` | （可选）状态模型是否应在状态模型用户界面中隐藏。默认为 `false`（显示状态模型）。 |
+| `bHistory` | （可选）是否为状态模型维护审计历史记录。保留审计历史记录需要文件中的更多空间。默认为 `true`。 |
 
 ## 返回值
+
 无
 
 ## 状态对象字面量
 
-此对象字面量表示状态模型中的一组状态，并作为 **oStates** 参数传递。对象字面量中的元素是唯一的状态标识符，其值是具有以下属性的对象：
+此对象字面量表示状态模型中的一组状态，并作为 `oStates` 参数传递。对象字面量中的元素是唯一的状态标识符，其值是具有以下属性的对象：
 
-| **cUIName** | 状态的用户界面（显示名称）。 |
+| `cUIName` | 状态的用户界面（显示名称）。 |
 | --- | --- |
-| **oIcon** | （可选）将在状态的用户界面中显示的图标流泛型对象。 |
+| `oIcon` | （可选）将在状态的用户界面中显示的图标流泛型对象。 |
 
 ## 示例
 
-添加一个新的状态模型，其唯一名称为 "ReviewStates"：
+添加一个新的状态模型，其唯一名称为 `"ReviewStates"`：
 
-```
+```javascript
 Collab.addStateModel({
     cName: "ReviewStates",
     cUIName: "My Review",
@@ -6227,20 +6482,20 @@ Collab.addStateModel({
 });
 ```
 
-可以使用 **Collab.removeStateModel** 移除状态模型。
+可以使用 `Collab.removeStateModel` 移除状态模型。
 
 ## removeStateModel
 
 | 6.0 | | | | |
 | --- | --- | --- | --- | --- |
 
-移除先前通过调用 **addStateModel** 添加的状态模型。移除状态模型不会删除与各个 **annots** 关联的状态信息——如果模型被移除后再次添加，所有 **annots** 的状态信息仍将可用。
+移除先前通过调用 `addStateModel` 添加的状态模型。移除状态模型不会删除与各个 `annots` 关联的状态信息——如果模型被移除后再次添加，所有 `annots` 的状态信息仍将可用。
 
-另请参阅 **addStateModel**、**getStateInModel** 和 **transitionToState**。
+另请参阅 `addStateModel`、`getStateInModel` 和 `transitionToState`。
 
 ## 参数
 
-| **cName** | 在 addStateModel 中使用的状态模型的唯一、与语言无关的标识符。 |
+| `cName` | 在 `addStateModel` 中使用的状态模型的唯一、与语言无关的标识符。 |
 | --- | --- |
 
 ## 返回值
@@ -6249,9 +6504,9 @@ Collab.addStateModel({
 
 ## 示例
 
-继续 addStateModel 中的示例，我们移除状态模型 "ReviewStates"：
+继续 `addStateModel` 中的示例，我们移除状态模型 `"ReviewStates"`：
 
-```
+```javascript
 // 移除状态模型
 Collab.removeStateModel("ReviewStates");
 ```
@@ -6261,45 +6516,45 @@ Collab.removeStateModel("ReviewStates");
 | 4.0 | | | |
 | --- | --- | --- | --- |
 
-**color** 对象是一个便捷的静态对象，定义了基本颜色。这些颜色在 JavaScript 中通过 **color** 对象访问。当您需要设置属性或调用需要颜色数组的方法时，请使用此对象。color 对象在 AForm.js 中定义。
+`color` 对象是一个便捷的静态对象，定义了基本颜色。这些颜色在 JavaScript 中通过 `color` 对象访问。当您需要设置属性或调用需要颜色数组的方法时，请使用此对象。`color` 对象在 `AForm.js` 中定义。
 
 ## 颜色数组
 
-颜色在 JavaScript 中表示为包含 1、2、4 或 5 个元素的数组，分别对应透明、灰度、RGB 或 CMYK 颜色空间。数组中的第一个元素是表示颜色空间类型的字符串。后续元素是介于零和一之间的数字。例如，红色可以表示为 ["RGB", 1, 0, 0]。
+颜色在 JavaScript 中表示为包含 1、2、4 或 5 个元素的数组，分别对应透明、灰度、RGB 或 CMYK 颜色空间。数组中的第一个元素是表示颜色空间类型的字符串。后续元素是介于零和一之间的数字。例如，红色可以表示为 `["RGB", 1, 0, 0]`。
 
 无效的字符串或颜色数组中元素不足会导致颜色被解释为黑色。
 
-| **颜色空间** | **字符串** | **附加元素数量** | **描述** |
+| 颜色空间 | 字符串 | 附加元素数量 | 描述 |
 | --- | --- | --- | --- |
-| 透明 | "T" | 0 | *透明*颜色空间表示完全无色，将允许当前字段下方的文档部分显示出来。 |
-| 灰度 | "G" | 1 | *灰度*颜色空间中的颜色由单个值表示——无色光的强度。在此颜色空间中，0 为黑色，1 为白色，中间值表示灰色阴影。例如，.5 表示中灰色。 |
-| RGB | "RGB" | 3 | *RGB*颜色空间中的颜色由三个值表示：输出中*红*、*绿*和*蓝*分量的强度。RGB 通常用于视频显示，因为它们通常基于红、绿和蓝荧光粉。 |
-| CMYK | "CMYK" | 4 | *CMYK*颜色空间中的颜色由四个值表示：输出中*青*、*品红*、*黄*和*黑*分量的量。此颜色空间通常用于彩色打印机，其中它们是四色印刷中使用的油墨颜色。只有青色、品红和黄色是必需的，但黑色通常在印刷中使用，因为黑色油墨比青色、品红和黄色油墨的混合产生更好的黑色，并且因为黑色油墨比其他油墨便宜。 |
+| 透明 | `"T"` | 0 | 透明颜色空间表示完全无色，将允许当前字段下方的文档部分显示出来。 |
+| 灰度 | `"G"` | 1 | 灰度颜色空间中的颜色由单个值表示——无色光的强度。在此颜色空间中，0 为黑色，1 为白色，中间值表示灰色阴影。例如，`.5` 表示中灰色。 |
+| RGB | `"RGB"` | 3 | RGB 颜色空间中的颜色由三个值表示：输出中红、绿和蓝分量的强度。RGB 通常用于视频显示，因为它们通常基于红、绿和蓝荧光粉。 |
+| CMYK | `"CMYK"` | 4 | CMYK 颜色空间中的颜色由四个值表示：输出中青、品红、黄和黑分量的量。此颜色空间通常用于彩色打印机，其中它们是四色印刷中使用的油墨颜色。只有青色、品红和黄色是必需的，但黑色通常在印刷中使用，因为黑色油墨比青色、品红和黄色油墨的混合产生更好的黑色，并且因为黑色油墨比其他油墨便宜。 |
 
 ## 颜色属性
 
-color 对象定义了以下颜色：
+`color` 对象定义了以下颜色：
 
 | 颜色对象 | 关键字 | 等效 JS | 版本 |
 | --- | --- | --- | --- |
-| 透明 | `color.transparent` | [ "T" ] | |
-| 黑色 | `color.black` | [ "G", 0 ] | |
-| 白色 | `color.white` | [ "G", 1 ] | |
-| 红色 | `color.red` | [ "RGB", 1, 0, 0 ] | |
-| 绿色 | `color.green` | [ "RGB", 0, 1, 0 ] | |
-| 蓝色 | `color.blue` | [ "RGB", 0, 0, 1 ] | |
-| 青色 | `color.cyan` | [ "CMYK", 1, 0, 0, 0 ] | |
-| 品红色 | `color.magenta` | [ "CMYK", 0, 1, 0, 0 ] | |
-| 黄色 | `color.yellow` | [ "CMYK", 0, 0, 1, 0 ] | |
-| 深灰色 | `color.dkGray` | [ "G", 0.25 ] | 4.0 |
-| 灰色 | `color.gray` | [ "G", 0.5 ] | 4.0 |
-| 浅灰色 | `color.ltGray` | [ "G", 0.75 ] | 4.0 |
+| 透明 | `color.transparent` | `["T"]` | |
+| 黑色 | `color.black` | `["G", 0]` | |
+| 白色 | `color.white` | `["G", 1]` | |
+| 红色 | `color.red` | `["RGB", 1, 0, 0]` | |
+| 绿色 | `color.green` | `["RGB", 0, 1, 0]` | |
+| 蓝色 | `color.blue` | `["RGB", 0, 0, 1]` | |
+| 青色 | `color.cyan` | `["CMYK", 1, 0, 0, 0]` | |
+| 品红色 | `color.magenta` | `["CMYK", 0, 1, 0, 0]` | |
+| 黄色 | `color.yellow` | `["CMYK", 0, 0, 1, 0]` | |
+| 深灰色 | `color.dkGray` | `["G", 0.25]` | 4.0 |
+| 灰色 | `color.gray` | `["G", 0.5]` | 4.0 |
+| 浅灰色 | `color.ltGray` | `["G", 0.75]` | 4.0 |
 
 ## 示例
 
 此示例在字段值为负数时将字段的文本颜色设置为红色，或在字段值为非负数时设置为黑色。
 
-```
+```javascript
 var f = event.target; /* 事件发生的字段 */
 f.target.textColor = event.value < 0 ? color.red : color.black;
 ```
@@ -6313,20 +6568,21 @@ f.target.textColor = event.value < 0 ? color.red : color.black;
 
 将颜色对象指定的颜色空间和颜色值转换为指定的颜色空间。请注意，转换为灰度颜色空间是有损的，就像在黑白电视上显示彩色电视信号一样有损。RGB 到 CMYK 的转换不考虑任何黑色生成或底色去除参数。
 
-### 参数
+#### 参数
 
-| colorArray | 颜色值数组。请参阅颜色数组。 |
-| cColorspace | 要转换到的颜色空间。 |
+| `colorArray` | 颜色值数组。请参阅颜色数组。 |
+| --- | --- |
+| `cColorspace` | 要转换到的颜色空间。 |
 
-### 返回值
+#### 返回值
 
 一个颜色数组。
 
-### 示例
+#### 示例
 
-下面代码行的返回值是数组 ["CMYK", 0, 1, 1, 0]。
+下面代码行的返回值是数组 `["CMYK", 0, 1, 1, 0]`。
 
-```
+```javascript
 color.convert(["RGB", 1, 0, 0], "CMYK");
 ```
 
@@ -6335,22 +6591,22 @@ color.convert(["RGB", 1, 0, 0], "CMYK");
 | 5.0 | | | |
 | --- | --- | --- | --- |
 
-比较两个颜色数组是否相同。如果需要，该例程会进行转换以确定两种颜色是否确实相等（例如，["RGB", 1, 1, 0] 等于 ["CMYK", 0, 0, 1, 0]）。
+比较两个颜色数组是否相同。如果需要，该例程会进行转换以确定两种颜色是否确实相等（例如，`["RGB", 1, 1, 0]` 等于 `["CMYK", 0, 0, 1, 0]`）。
 
-### 参数
+#### 参数
 
 | 参数 | 描述 |
 | --- | --- |
-| colorArray1 | 要比较的第一个颜色数组。 |
-| colorArray2 | 要比较的第二个颜色数组。 |
+| `colorArray1` | 要比较的第一个颜色数组。 |
+| `colorArray2` | 要比较的第二个颜色数组。 |
 
-### 返回值
+#### 返回值
 
-如果数组表示相同的颜色，则返回 **true**，否则返回 **false**。
+如果数组表示相同的颜色，则返回 `true`，否则返回 `false`。
 
-### 示例
+#### 示例
 
-```
+```javascript
 var f = this.getField("foo");
 if (color.equal(f.textColor, f.fillColor))
     app.alert("前景色和背景色相同！");
@@ -6360,24 +6616,24 @@ if (color.equal(f.textColor, f.fillColor))
 
 此泛型 JS 对象包含列中每一行的数据。列对象由 `statement.getColumn` 和 `statement.getColumnArray` 返回。另请参阅 ColumnInfo 泛型对象。
 
-它具有以下属性。
+它具有以下属性：
 
 | 属性 | 类型 | 访问权限 | 描述 |
 | --- | --- | --- | --- |
-| columnNum | 数字 | R | 标识列的编号。 |
-| name | 字符串 | R | 列的名称。 |
-| type | 数字 | R | 列数据的 SQL 类型之一。 |
-| typeName | 字符串 | R | 列包含的数据类型的名称。 |
-| value | 各种 | R/W | 列中数据的值，采用数据最初检索时的格式。 |
+| `columnNum` | 数字 | R | 标识列的编号。 |
+| `name` | 字符串 | R | 列的名称。 |
+| `type` | 数字 | R | 列数据的 SQL 类型之一。 |
+| `typeName` | 字符串 | R | 列包含的数据类型的名称。 |
+| `value` | 各种 | R/W | 列中数据的值，采用数据最初检索时的格式。 |
 
 ## ColumnInfo 泛型对象
 
 此泛型 JS 对象包含有关数据列的基本信息，并由 `connection.getColumnList` 返回。另请参阅 Column 泛型对象。
 
-它具有以下属性。
+它具有以下属性：
 
 | 属性 | 类型 | 访问权限 | 描述 |
-| :--- | :--- | :--- | :--- |
+| --- | --- | --- | --- |
 | `name` | 字符串 | R | 表示列标识名称的字符串。此字符串可用于 `statement.getColumn` 调用以标识关联的列。 |
 | `description` | 字符串 | R | 包含有关列的数据库相关信息的字符串。 |
 | `type` | 数字 | R | 一个数字值，标识适用于与 ColumnInfo 对象关联的列中包含的数据的 ADBC SQL 类型之一。 |
@@ -6387,33 +6643,35 @@ if (color.equal(f.textColor, f.fillColor))
 
 `Connection` 对象封装了与数据库的会话。`Connection` 对象由 `ADBC.newConnection` 返回。另请参阅 ADBC 对象、Statement 对象、Column 泛型对象、ColumnInfo 泛型对象、Row 泛型对象和 TableInfo 泛型对象。
 
-
-
 ## 连接方法
 
 ### close
 
 关闭活动连接并使从该连接创建的所有对象失效。
 
-**参数**
+#### 参数
+
 无
 
-**返回值**
+#### 返回值
+
 无
 
 ### newStatement
 
 创建一个 Statement 对象，通过它可以执行数据库操作。
 
-**参数**
+#### 参数
+
 无
 
-**返回值**
-成功时返回 Statement 对象，失败时返回 null。
+#### 返回值
 
-**示例**
+成功时返回 Statement 对象，失败时返回 `null`。
 
-```
+#### 示例
+
+```javascript
 // 获取连接对象，参见 newConnection
 var con = ADBC.newConnection("q32000data");
 // 现在获取 Statement 对象
@@ -6427,17 +6685,19 @@ console.println(msg);
 
 获取数据库中各种表的信息。
 
-**参数**
+#### 参数
+
 无
 
-**返回值**
+#### 返回值
+
 返回一个 TableInfo 泛型对象数组。此方法不会失败，但可能返回一个长度为零的数组。
 
-**示例**
+#### 示例
 
-假设我们已有一个 Connection 对象（`con`）（参见 `newStatement` 和 `newConnection`），获取表列表
+假设我们已有一个 `Connection` 对象（`con`）（参见 `newStatement` 和 `newConnection`），获取表列表：
 
-```
+```javascript
 var tableInfo = con.getTableList();
 console.println("A list of all tables in the database.");
 for (var i = 0; i < tableInfo.length; i++) {
@@ -6449,25 +6709,26 @@ for (var i = 0; i < tableInfo.length; i++) {
 ### getColumnList
 
 | 版本 |
-|---|
+| --- |
 | 5.0 |
 
 获取表中各列的信息。
 
-**参数**
+#### 参数
 
 | 名称 | 描述 |
-|---|---|
+| --- | --- |
 | `cName` | 要获取列信息的表名。 |
 
-**返回值**
+#### 返回值
+
 返回一个 ColumnInfo 泛型对象数组。此方法不会失败，但可能返回一个长度为零的数组。
 
-**示例**
+#### 示例
 
-假设我们已有一个 Connection 对象（`con`）（参见 `newStatement` 和 `newConnection`），获取所有列名的列表。
+假设我们已有一个 `Connection` 对象（`con`）（参见 `newStatement` 和 `newConnection`），获取所有列名的列表。
 
-```
+```javascript
 var con = ADBC.newConnection("q32000data");
 var columnInfo = con.getColumnList("sales");
 console.println("Column Information");
@@ -6479,11 +6740,11 @@ for (var i = 0; i < columnInfo.length; i++) {
 
 ## Console 对象
 
-**Console** 对象是一个静态对象，用于访问 JavaScript 控制台以显示调试消息和执行 JavaScript。在 Adobe Reader 7.0 之前的版本或 Acrobat Approval 中，它不起作用。
+`Console` 对象是一个静态对象，用于访问 JavaScript 控制台以显示调试消息和执行 JavaScript。在 Adobe Reader 7.0 之前的版本或 Acrobat Approval 中，它不起作用。
 
-**注意：** 从 7.0 版本开始，Adobe Reader 现在有了一个控制台窗口。在 **编辑 > 首选项 > 常规 > JavaScript** 下有一个首选项可以“在出错和消息时显示控制台”。Reader 中控制台窗口的主要功能是报告错误和消息。虽然控制台不是交互式的，但 **console** 对象的方法与 Acrobat Standard 和 Professional 中的功能相同。
+**注意：** 从 7.0 版本开始，Adobe Reader 现在有了一个控制台窗口。在**编辑 > 首选项 > 常规 > JavaScript**下有一个首选项可以“在出错和消息时显示控制台”。Reader 中控制台窗口的主要功能是报告错误和消息。虽然控制台不是交互式的，但 `console` 对象的方法与 Acrobat Standard 和 Professional 中的功能相同。
 
-JavaScript 调试窗口的调试功能可用于 Windows 和 Macintosh 平台上的 Adobe Reader。为了在 Adobe Reader 中调试，需要安装 JavaScript 文件 *debugger.js*，并需要适当地编辑 Windows 注册表。技术细节请参见 *Acrobat JavaScript Scripting Guide*。
+JavaScript 调试窗口的调试功能可用于 Windows 和 Macintosh 平台上的 Adobe Reader。为了在 Adobe Reader 中调试，需要安装 JavaScript 文件 `debugger.js`，并需要适当地编辑 Windows 注册表。技术细节请参见 `Acrobat JavaScript Scripting Guide`。
 
 另请参见 [Dbg 对象](#)。
 
@@ -6492,22 +6753,24 @@ JavaScript 调试窗口的调试功能可用于 Windows 和 Macintosh 平台上�
 ### show
 
 | 版本 |
-|---|
+| --- |
 | 3.01 |
 
 显示控制台窗口。
 
-**参数**
+#### 参数
+
 无
 
-**返回值**
+#### 返回值
+
 无
 
-**示例**
+#### 示例
 
 清除并显示控制台窗口：
 
-```
+```javascript
 console.clear();
 console.show();
 ```
@@ -6515,49 +6778,52 @@ console.show();
 ### hide
 
 | 版本 |
-|---|
+| --- |
 | 4.0 |
 
 关闭控制台窗口。
 
-**参数**
+#### 参数
+
 无
 
-**返回值**
+#### 返回值
+
 无
 
 ### println
 
 | 版本 |
-|---|
+| --- |
 | 3.01 |
 
 将字符串值打印到控制台窗口，并附带回车符。
 
-**参数**
+#### 参数
 
 | 名称 | 描述 |
-|---|---|
+| --- | --- |
 | `cMessage` | 要打印的字符串消息。 |
 
-**返回值**
+#### 返回值
+
 无
 
-**示例 1**
+#### 示例 1
 
 此示例将字段的值打印到控制台窗口。该脚本可以在鼠标释放事件期间执行。
 
-```
+```javascript
 var f = this.getField("myText");
 console.clear(); console.show();
 console.println("Field value = " + f.value);
 ```
 
-**示例 2**
+#### 示例 2
 
 控制台可以用作调试工具；例如，你可以将变量的值写入控制台。下面的脚本取自文档级别。
 
-```
+```javascript
 var debugIsOn = true;
 function myFunction ( n, m )
 {
@@ -6579,33 +6845,36 @@ function myFunction ( n, m )
 ### clear
 
 | 版本 |
-|---|
+| --- |
 | 3.01 |
 
 清除控制台窗口缓冲区中的所有输出。
 
-**参数**
+#### 参数
+
 无
 
-**返回值**
+#### 返回值
+
 无
 
 ## Data 对象
 
 | 版本 |
-|---|
+| --- |
 | 5.0 |
 
 Data 对象是存储在文档中的嵌入文件或数据流的表示。Data 对象存储在文档的名称树中。有关详细信息，请参阅 [PDF 参考](https://example.com) 中关于名称树和嵌入文件流的部分。
 
 可以从外部文件系统插入、查询和提取 Data 对象。这是将源文件、元数据和其他相关数据与文档关联和嵌入的好方法。
 
-请参阅以下 [Doc 对象](https://example.com) 属性和方法：
-[createDataObject](https://example.com)、[dataObjects](https://example.com)、[exportDataObject](https://example.com)、[getDataObject](https://example.com)、
-[importDataObject](https://example.com)、[removeDataObject](https://example.com)、[openDataObject](https://example.com)、
-[getDataObjectContents](https://example.com)、[setDataObjectContents](https://example.com)
 
-**注意：** 虽然 Data 对象的方法是在 Acrobat 5.0 中实现的，但在 Adobe Reader 额外使用权限中使用这些功能的能力直到 Adobe Reader 6.0 才可用。
+
+请参阅以下 [Doc 对象](https://example.com) 属性和方法：
+
+[createDataObject](https://example.com)、[dataObjects](https://example.com)、[exportDataObject](https://example.com)、[getDataObject](https://example.com)、[importDataObject](https://example.com)、[removeDataObject](https://example.com)、[openDataObject](https://example.com)、[getDataObjectContents](https://example.com)、[setDataObjectContents](https://example.com)
+
+**注意：** 虽然 `Data` 对象的方法是在 Acrobat 5.0 中实现的，但在 Adobe Reader 额外使用权限中使用这些功能的能力直到 Adobe Reader 6.0 才可用。
 
 ## Data 属性
 
@@ -6616,17 +6885,20 @@ Data 对象是存储在文档中的嵌入文件或数据流的表示。Data 对�
 ### modDate
 
 嵌入文件的修改日期。
-类型：Date 访问权限：R。
+
+类型：`Date` 访问权限：`R`。
 
 ### MIMEType
 
 与此数据对象关联的 MIME 类型。
-类型：String 访问权限：R。
+
+类型：`String` 访问权限：`R`。
 
 ### name
 
 与此数据对象关联的名称。
-类型：String 访问权限：R。
+
+类型：`String` 访问权限：`R`。
 
 **示例**
 
@@ -6640,12 +6912,14 @@ for (var i = 0; i < d.length; i++)
 ### path
 
 嵌入文件的设备无关路径。
-类型：String 访问权限：R。
+
+类型：`String` 访问权限：`R`。
 
 ### size
 
 未压缩数据对象的大小（以字节为单位）。
-类型：Number 访问权限：R。
+
+类型：`Number` 访问权限：`R`。
 
 ## DataSourceInfo 泛型对象
 
@@ -6653,12 +6927,12 @@ for (var i = 0; i < d.length; i++)
 
 | 属性 | 类型 | 访问权限 | 描述 |
 |---|---|---|---|
-| `name` | String | R | 表示数据库标识名称的字符串。可以将此字符串传递给 `newConnection` 以建立与 DataSourceInfo 对象所关联数据库的连接。 |
-| `description` | String | R | 包含有关数据库的依赖于数据库的信息的字符串。 |
+| `name` | `String` | `R` | 表示数据库标识名称的字符串。可以将此字符串传递给 `newConnection` 以建立与 `DataSourceInfo` 对象所关联数据库的连接。 |
+| `description` | `String` | `R` | 包含有关数据库的依赖于数据库的信息的字符串。 |
 
 ## Dbg 对象
 
-Dbg 对象用于从命令行控制台角度可选地控制 JavaScript 调试器。JavaScript 调试器对话框工具栏中按钮提供的相同功能可通过 `dbg` 方法获得。此外，可以使用 `dbg` 对象创建、删除和检查断点。
+`Dbg` 对象用于从命令行控制台角度可选地控制 JavaScript 调试器。JavaScript 调试器对话框工具栏中按钮提供的相同功能可通过 `dbg` 方法获得。此外，可以使用 `dbg` 对象创建、删除和检查断点。
 
 `dbg` 对象和 JavaScript 调试器仅在 Acrobat Professional 中可用。
 
@@ -6668,29 +6942,27 @@ Dbg 对象用于从命令行控制台角度可选地控制 JavaScript 调试器�
 > - 调试由 `app.setInterval` 或 `app.setTimeOut` 启动的正在运行的事件的脚本可能会导致警报框反复出现。在关闭模态对话框后使用 Esc 键以解决问题。
 > - （版本 7.0）当调试器打开且调试会话正在进行时，Acrobat 应用程序将不可用。
 
-
-
 ## Dbg 属性
 
-## bps
+### bps
 
 返回一个 [Breakpoint Generic Objects](Breakpoint Generic Objects) 数组，每个元素对应调试器中设置的一个断点。
 
-类型：数组 访问：R。
+类型：数组 访问：`R`。
 
 ## Breakpoint Generic Object
 
-这个通用 JS 对象包含关于断点的基本信息，由 [Dbg .bps](Dbg .bps) 属性返回。它包含以下属性和方法：
+这个通用 JS 对象包含关于断点的基本信息，由 `Dbg.bps` 属性返回。它包含以下属性和方法：
 
 | 属性 | 类型 | 访问 | 描述 |
 | :--- | :--- | :--- | :--- |
-| `fileName` | 字符串 | R | 在调试器中标识脚本的字符串。 |
-| `condition` | 字符串 | R | 当调试器需要决定是否在断点处停止时，每次都会求值的 JavaScript 表达式。用于创建条件断点。此属性的默认值是字符串 "true"。 |
-| `lineNum` | 数字 | R | 设置断点的脚本中的行号。 |
+| `fileName` | `String` | `R` | 在调试器中标识脚本的字符串。 |
+| `condition` | `String` | `R` | 当调试器需要决定是否在断点处停止时，每次都会求值的 JavaScript 表达式。用于创建条件断点。此属性的默认值是字符串 `"true"`。 |
+| `lineNum` | `Number` | `R` | 设置断点的脚本中的行号。 |
 
 | 方法 | 参数 | 返回 | 描述 |
 | :--- | :--- | :--- | :--- |
-| `toString` | 无 | 字符串 | 描述断点的字符串。 |
+| `toString` | 无 | `String` | 描述断点的字符串。 |
 
 ## 示例
 
@@ -6705,63 +6977,64 @@ for ( var i = 0; i < db.length; i++ )
 }
 ```
 
-另请参阅 [sb](sb) 了解另一个使用示例。
+另请参阅 `sb` 了解另一个使用示例。
 
 ## Dbg 方法
 
-## c
+### c
 
-c（继续）方法恢复在调试器中停止的程序的执行。JavaScript 程序可能会再次停止（取决于断点设置的位置），或者执行到结束。
+`c`（继续）方法恢复在调试器中停止的程序的执行。JavaScript 程序可能会再次停止（取决于断点设置的位置），或者执行到结束。
 
-### 参数
-
-无
-
-### 返回
+#### 参数
 
 无
 
-## cb
+#### 返回
 
-cb（清除断点）方法清除调试器中的一个断点。
+无
 
-### 参数
+### cb
 
-| **fileName** | 将要从中删除断点的脚本名称。 |
+`cb`（清除断点）方法清除调试器中的一个断点。
+
+#### 参数
+
+| `fileName` | 将要从中删除断点的脚本名称。 |
 |---|---|
-| **lineNum** | 将在脚本中被清除的断点的行号。 |
+| `lineNum` | 将在脚本中被清除的断点的行号。 |
 
-### 返回
-
-无
-
-## q
-
-q（退出）方法退出调试并执行当前的 JavaScript。此外，它还会关闭调试器对话框。
-
-### 参数
+#### 返回
 
 无
 
-### 返回
+### q
+
+`q`（退出）方法退出调试并执行当前的 JavaScript。此外，它还会关闭调试器对话框。
+
+#### 参数
 
 无
 
-## sb
-
-**sb**（设置断点）方法在调试器中设置一个新的断点。
-
-### 参数
-
-| **fileName** | 要设置断点的脚本名称。 |
-| **lineNum** | 断点将在脚本中创建的行号。 |
-| **condition** | （可选）每次调试器到达断点时都会求值的 JavaScript 表达式。是否在断点处停止的决定基于计算此表达式的结果。如果表达式求值结果为 *true*，调试器将在断点处停止。如果表达式求值结果为 **false**，调试器将继续执行脚本，不会在断点处停止。此参数的默认值是字符串 "true"。 |
-
-### 返回
+#### 返回
 
 无
 
-### 示例 1
+### sb
+
+`sb`（设置断点）方法在调试器中设置一个新的断点。
+
+#### 参数
+
+| `fileName` | 要设置断点的脚本名称。 |
+|---|---|
+| `lineNum` | 断点将在脚本中创建的行号。 |
+| `condition` | （可选）每次调试器到达断点时都会求值的 JavaScript 表达式。是否在断点处停止的决定基于计算此表达式的结果。如果表达式求值结果为 `true`，调试器将在断点处停止。如果表达式求值结果为 `false`，调试器将继续执行脚本，不会在断点处停止。此参数的默认值是字符串 `"true"`。 |
+
+#### 返回
+
+无
+
+#### 示例 1
 
 运行某个脚本，由于某些错误而抛出异常。使用错误信息中提供的信息以编程方式设置一个断点。
 
@@ -6775,7 +7048,7 @@ dbg.sb({
 });
 ```
 
-### 示例 2
+#### 示例 2
 
 此示例模拟了 **首选项 > 常规 > JavaScript** 对话框中“将断点存储在 PDF 文件中”复选框的功能。
 
@@ -6787,7 +7060,7 @@ this.addScript("myBreakpoints", "var myBPS = " + dbg.bps.toSource());
 for ( var i = 0; i < myBPS.length; i++ ) dbg.sb( myBPS[i] );
 ```
 
-### 示例 3
+#### 示例 3
 
 设置条件断点。考虑以下代码，这是一个鼠标松开操作。
 
@@ -6804,153 +7077,151 @@ dbg.sb({
 })
 ```
 
-## si
+### si
 
 `si`（步入）方法将程序指针推进到 JavaScript 程序中的下一条指令，进入遇到的每个函数调用（前提是该函数有定义的脚本）。无法步入原生 JavaScript 调用。
 
-### 参数
+#### 参数
 
 无
 
-### 返回
+#### 返回
 
 无
 
-## sn
+### sn
 
 `sn`（单步指令）方法将程序指针推进到 JavaScript 程序中的下一个字节码。每条 JavaScript 指令由 JavaScript 解释器定义的多个字节码组成。
 
-### 参数
+#### 参数
 
 无
 
-### 返回
+#### 返回
 
 无
 
-## so
+### so
 
-**so**（步出）方法执行程序直到退出当前函数。它在调用函数后的下一条指令处停止执行。如果当前调试的范围是顶级作用域，程序可能会继续执行直到结束，或者在到达另一个断点时再次停止。
+`so`（步出）方法执行程序直到退出当前函数。它在调用函数后的下一条指令处停止执行。如果当前调试的范围是顶级作用域，程序可能会继续执行直到结束，或者在到达另一个断点时再次停止。
 
-### 参数
-
-无
-
-### 返回
+#### 参数
 
 无
 
-## sv
-
-**sv**（步过）方法将程序指针推进到 JavaScript 程序中的下一条指令。如果遇到函数调用，调试器不会步入该函数内部定义的指令。
-
-### 参数
+#### 返回
 
 无
 
-### 返回
+### sv
+
+`sv`（步过）方法将程序指针推进到 JavaScript 程序中的下一条指令。如果遇到函数调用，调试器不会步入该函数内部定义的指令。
+
+#### 参数
+
+无
+
+#### 返回
 
 无
 
 ## Dialog Object
 
-该对象的一个实例作为参数传递给传递给 `app.execDialog()` 的 Dialog Descriptor 对象字面量的 **initialize**、**validate**、**commit**、**destroy** 和 *ItemID* 方法，参见 [Dialog Handlers](https://example.com)。Dialog 对象允许查询和设置 Dialog 的当前状态。
+该对象的一个实例作为参数传递给传递给 `app.execDialog()` 的 Dialog Descriptor 对象字面量的 `initialize`、`validate`、`commit`、`destroy` 和 `ItemID` 方法，参见 [Dialog Handlers](https://example.com)。`Dialog` 对象允许查询和设置 Dialog 的当前状态。
 
 ## Dialog Methods
 
-## enable
+### enable
 
-此方法使用传入的对象字面量启用/禁用各种对话框元素。对于要修改的每个对话框项，对象字面量中应有一个条目，以 Dialog *ItemID* 为标签，以布尔值为值，指示其是否启用。
+此方法使用传入的对象字面量启用/禁用各种对话框元素。对于要修改的每个对话框项，对象字面量中应有一个条目，以 Dialog `ItemID` 为标签，以布尔值为值，指示其是否启用。
 
 通常，在传递给 `app.execDialog()` 的对象字面量的 `initialize()` 方法（参见 Dialog Handlers）中调用 `enable()`，以预设各种对话框元素是否启用。
 
-### 参数
+#### 参数
 
 | 对象字面量 |
-| --- |
+|---|
 
-### 返回
-
-无
-
-### 示例
-
-请参见 `app.execDialog()` 后的示例。
-
-## end
-
-此方法终止当前执行的对话框（如同按下了取消按钮）。此方法接受一个可选参数，即 *ItemID*（字符串），该参数指定被报告为关闭对话框的对话框元素。此 *ItemID* 将作为创建该对话框的 `app.execDialog()` 调用的返回值。
-
-### 参数
-
-| 字符串 | （可选）被报告为关闭对话框的对话框元素的 *ItemID*。 |
-| --- |
-
-### 返回
+#### 返回
 
 无
 
-### 示例
+#### 示例
 
 请参见 `app.execDialog()` 后的示例。
 
-## load
+### end
 
-此方法使用传入的对象字面量设置对话框元素的值。对话框项通过 *ItemID*（一个唯一的 4 字符字符串）来标识。对于要修改的每个对话框项，对象字面量中应有一个条目，以 *ItemID* 为标签，以对话框元素设置为内容。如果对话框元素接受多个值（例如，`list_box` 或 `popup`），则值应为一个对象字面量，以显示的条目为标签，以数字值为内容。类似地，如果对话框元素本质上是分层的（例如，`hier_list_box`），则值应为一组嵌套的对象字面量。如果数字值大于 0，则该项被选中，否则未被选中。
+此方法终止当前执行的对话框（如同按下了取消按钮）。此方法接受一个可选参数，即 `ItemID`（字符串），该参数指定被报告为关闭对话框的对话框元素。此 `ItemID` 将作为创建该对话框的 `app.execDialog()` 调用的返回值。
+
+#### 参数
+
+| `String` | （可选）被报告为关闭对话框的对话框元素的 `ItemID`。 |
+|---|
+
+#### 返回
+
+无
+
+#### 示例
+
+请参见 `app.execDialog()` 后的示例。
+
+### load
+
+此方法使用传入的对象字面量设置对话框元素的值。对话框项通过 `ItemID`（一个唯一的 4 字符字符串）来标识。对于要修改的每个对话框项，对象字面量中应有一个条目，以 `ItemID` 为标签，以对话框元素设置为内容。如果对话框元素接受多个值（例如，`list_box` 或 `popup`），则值应为一个对象字面量，以显示的条目为标签，以数字值为内容。类似地，如果对话框元素本质上是分层的（例如，`hier_list_box`），则值应为一组嵌套的对象字面量。如果数字值大于 0，则该项被选中，否则未被选中。
 
 通常，在传递给 `app.execDialog()` 的对象字面量的 `initialize()` 方法（参见 Dialog Handlers）中调用 `load()`，以预设各种对话框元素的值。
 
-### 参数
+#### 参数
 
 对象字面量
 
-### 返回
+#### 返回
 
 无
 
-### 示例
+#### 示例
 
 请参见 `app.execDialog()` 后的示例。
 
-## store
+### store
 
-此方法以返回的对象字面量形式获取对话框元素的值。对话框项通过 *ItemID*（一个唯一的 4 字符字符串）来标识。对于对话框中的每个对话框元素，对象字面量中将有一个条目，以 *ItemID* 为标签，以对话框元素设置为内容。如果对话框元素接受多个值（例如，`list_box` 或 `popup`），则值应为一个对象字面量，以显示的条目为标签，以数字值为内容。如果数字值大于 0，则该项已被选中，否则未被选中。
+此方法以返回的对象字面量形式获取对话框元素的值。对话框项通过 `ItemID`（一个唯一的 4 字符字符串）来标识。对于对话框中的每个对话框元素，对象字面量中将有一个条目，以 `ItemID` 为标签，以对话框元素设置为内容。如果对话框元素接受多个值（例如，`list_box` 或 `popup`），则值应为一个对象字面量，以显示的条目为标签，以数字值为内容。如果数字值大于 0，则该项已被选中，否则未被选中。
 
 通常，在传递给 `app.execDialog()` 的对象字面量的 `commit()` 方法（参见 Dialog Handlers）中调用 `store()`，以提取各种对话框元素的值。
 
-### 参数
+#### 参数
 
 无
 
-
-
-# 返回值
+#### 返回值
 
 对象字面量
 
-# 目录对象
+## 目录对象
 
 | 6.0 | | Ⓢ | | |
 
-目录是用户信息的仓库，包括公钥证书。目录对象提供目录访问功能，可通过**SecurityHandler**对象的**directories**属性或**newDirectory**方法获取。
+目录是用户信息的仓库，包括公钥证书。目录对象提供目录访问功能，可通过 `SecurityHandler` 对象的 `directories` 属性或 `newDirectory` 方法获取。
 
-Acrobat 6.0提供了多个目录。*Adobe.AAB*安全处理程序拥有一个名为*Adobe.AAB.AAB*的单一目录。该目录提供对本地Acrobat地址簿（亦称*受信任身份存储*）的访问。在Windows系统上，*Adobe.PPKMS*安全处理程序通过*Microsoft Active Directory脚本接口*（ADSI）提供访问，可连接用户创建的所有目录。这些目录按顺序创建，名称依次为Adobe.PPKMS.ADSI.dir0、Adobe.PPKMS.ADSI.dir1等。
+Acrobat 6.0 提供了多个目录。`Adobe.AAB` 安全处理程序拥有一个名为 `Adobe.AAB.AAB` 的单一目录。该目录提供对本地 Acrobat 地址簿（亦称*受信任身份存储*）的访问。在 Windows 系统上，`Adobe.PPKMS` 安全处理程序通过 *Microsoft Active Directory 脚本接口*（ADSI）提供访问，可连接用户创建的所有目录。这些目录按顺序创建，名称依次为 `Adobe.PPKMS.ADSI.dir0`、`Adobe.PPKMS.ADSI.dir1` 等。
 
-> **注意：**（安全 Ⓢ）此对象只能从**SecurityHandler**对象获取，因此受**SecurityHandler**对象的安全限制约束。**目录对象**因此仅适用于批处理、控制台、应用程序初始化和菜单执行（包括在Acrobat Reader中）。另请参阅**特权与非特权上下文**。
+> **注意：**（安全 Ⓢ）此对象只能从 `SecurityHandler` 对象获取，因此受 `SecurityHandler` 对象的安全限制约束。**目录对象**因此仅适用于批处理、控制台、应用程序初始化和菜单执行（包括在 Acrobat Reader 中）。另请参阅**特权与非特权上下文**。
 
-从Acrobat 7.0开始，通过菜单事件执行JavaScript不再具有特权，详情请参阅**通过菜单执行JavaScript**。
+从 Acrobat 7.0 开始，通过菜单事件执行 JavaScript 不再具有特权，详情请参阅**通过菜单执行 JavaScript**。
 
-# 目录属性
+## 目录属性
 
-# info
+### info
 
 | 6.0 | | Ⓢ | | |
 
-此属性的值为**DirectoryInformation泛型对象**，是一个用于设置和获取此**目录对象**属性的泛型对象。
+此属性的值为 `DirectoryInformation` 泛型对象，是一个用于设置和获取此**目录对象**属性的泛型对象。
 
-*类型：对象*                *访问权限：读/写。*
+*类型：对象* *访问权限：读/写。*
 
-# 示例
+#### 示例
 
 ```
 // 创建并激活一个新目录
@@ -6965,37 +7236,39 @@ var newDir = sh.newDirectory();
 newDir.info = oDirInfo;
 ```
 
-# DirectoryInformation 泛型对象
+## DirectoryInformation 泛型对象
 
 目录信息对象是一个表示目录属性的泛型对象，具有以下标准属性：
 
-# 标准目录信息对象属性
+### 标准目录信息对象属性
 
 | 属性 | 类型 | 访问权限 | 必需 | 描述 |
 |---|---|---|---|---|
-| dirStdEntryID | 字符串 | 读/写 | 是 | 目录的唯一、语言无关名称。必须为字母数字，可包含下划线、句点和连字符。对于新的目录对象，建议不提供ID，系统将自动生成新的唯一名称。 |
-| dirStdEntryName | 字符串 | 读/写 | 是 | 目录的用户友好名称。 |
-| dirStdEntryPrefDirHandlerID | 字符串 | 读/写 | 否 | 此目录将使用的目录处理程序名称。安全处理程序可支持多个目录处理程序，以适应多种目录类型（例如本地目录、LDAP目录）。 |
-| dirStdEntryDirType | 字符串 | 读/写 | 否 | 目录类型。例如LDAP、ADSI、WINNT。 |
-| dirStdEntryVersion | 字符串 | 只读 | 否 | 数据版本。如果目录未设置此项，则默认值为0。Acrobat 6.0中Adobe.AAB和Adobe.PPKMS.ADSI目录处理程序的目录值为0x00010000。 |
+| `dirStdEntryID` | `String` | 读/写 | 是 | 目录的唯一、语言无关名称。必须为字母数字，可包含下划线、句点和连字符。对于新的目录对象，建议不提供 ID，系统将自动生成新的唯一名称。 |
+| `dirStdEntryName` | `String` | 读/写 | 是 | 目录的用户友好名称。 |
+| `dirStdEntryPrefDirHandlerID` | `String` | 读/写 | 否 | 此目录将使用的目录处理程序名称。安全处理程序可支持多个目录处理程序，以适应多种目录类型（例如本地目录、LDAP 目录）。 |
+| `dirStdEntryDirType` | `String` | 读/写 | 否 | 目录类型。例如 `LDAP`、`ADSI`、`WINNT`。 |
+| `dirStdEntryVersion` | `String` | 只读 | 否 | 数据版本。如果目录未设置此项，则默认值为 `0`。Acrobat 6.0 中 `Adobe.AAB` 和 `Adobe.PPKMS.ADSI` 目录处理程序的目录值为 `0x00010000`。 |
 
-目录信息对象可包含特定于某个目录处理程序的附加属性。Adobe.PPKMS.ADSI目录处理程序包含以下附加属性：
+目录信息对象可包含特定于某个目录处理程序的附加属性。`Adobe.PPKMS.ADSI` 目录处理程序包含以下附加属性：
 
-# Adobe.PPKMS.ADSI 附加目录信息对象属性
+### Adobe.PPKMS.ADSI 附加目录信息对象属性
 
 | 属性 | 类型 | 访问权限 | 描述 |
 |---|---|---|---|
-| server | 字符串 | 读/写 | 托管数据的服务器。例如，addresses.employees.xyz.com。 |
-| port | 数字 | 读/写 | 服务器的端口号。标准LDAP端口号为389。 |
-| searchBase | 字符串 | 读/写 | 将搜索范围缩小到目录的特定部分。例如，o=XYZ Systems,c=US。 |
-| maxNumEntries | 数字 | 读/写 | 单次搜索将检索的最大条目数。 |
-| timeout | 数字 | 读/写 | 搜索允许的最长时间。 |
+| `server` | `String` | 读/写 | 托管数据的服务器。例如，`addresses.employees.xyz.com`。 |
+| `port` | `Number` | 读/写 | 服务器的端口号。标准 LDAP 端口号为 `389`。 |
+| `searchBase` | `String` | 读/写 | 将搜索范围缩小到目录的特定部分。例如，`o=XYZ Systems,c=US`。 |
+| `maxNumEntries` | `Number` | 读/写 | 单次搜索将检索的最大条目数。 |
+| `timeout` | `Number` | 读/写 | 搜索允许的最长时间。 |
 
-# 示例 1
+#### 示例 1
+
+
 
 创建并激活一个新目录。
 
-```
+```javascript
 var oDirInfo = {
     dirStdEntryID: "dir0",
     dirStdEntryName: "员工 LDAP 目录",
@@ -7004,7 +7277,7 @@ var oDirInfo = {
     server: "ldap0.acme.com",
     port: 389
 };
-var sh = security.getHandler( "Adobe.PPKMS" );
+var sh = security.getHandler("Adobe.PPKMS");
 var newDir = sh.newDirectory();
 newDir.info = oDirInfo;
 ```
@@ -7013,261 +7286,272 @@ newDir.info = oDirInfo;
 
 ## 目录方法
 
-# 示例 2
+### 示例 2
 
 获取现有目录的信息。
 
-```
+```javascript
 var sh = security.getHandler("Adobe.PPKMS");
 var dir0 = sh.directories[0];
 // 为提高效率，仅获取一次目录信息对象
 var dir0Info = dir0.info;
-console.println( "目录 " + dir0Info.dirStdEntryName );
-console.println( "地址 " + dir0Info.server + ":" + dir0Info.port );
+console.println("目录 " + dir0Info.dirStdEntryName);
+console.println("地址 " + dir0Info.server + ":" + dir0Info.port);
 ```
 
 ## 目录方法
 
 ### connect
 
-| 6.0 | | Ⓢ | | |
+| 6.0 |  | Ⓢ |  |  |
 
-返回一个**DirConnection对象**，该对象是与指定名称目录的连接。一个目录可以同时存在多个活动连接。
-另请参阅**DirConnection对象**和SecurityHandler对象的**directories**属性。
+返回一个`DirConnection`对象，该对象是与指定名称目录的连接。一个目录可以同时存在多个活动连接。
 
-### 参数
+另请参阅`DirConnection`对象和`SecurityHandler`对象的`directories`属性。
 
-| oParams | （可选）一个泛型对象，可包含创建连接所需的参数。此对象的属性取决于特定的目录处理程序，可包括**userid**和**password**。 |
-| bUI | （可选）布尔值，默认为**false**。用于告知目录处理程序，在建立连接需要时是否可以显示其用户界面。 |
+#### 参数
 
-### 返回值
+| 参数 | 描述 |
+| --- | --- |
+| `oParams` | （可选）一个泛型对象，可包含创建连接所需的参数。此对象的属性取决于特定的目录处理程序，可包括`userid`和`password`。 |
+| `bUI` | （可选）布尔值，默认为`false`。用于告知目录处理程序，在建立连接需要时是否可以显示其用户界面。 |
 
-一个**DirConnection对象**，如果不存在具有指定名称的目录，则返回**null**。
+#### 返回值
 
-### 示例：
+一个`DirConnection`对象，如果不存在具有指定名称的目录，则返回`null`。
+
+#### 示例
 
 枚举可用目录并连接。
 
-```
-var sh = security.getHandler( "Adobe.PPKMS" );
+```javascript
+var sh = security.getHandler("Adobe.PPKMS");
 var dirList = sh.directories;
-for ( var i=0; i< dirList.length; i++)
-    for ( var o in dirList[i].info )
-        console.println( o + " = " + dirList[i].info[o]);
+for (var i = 0; i < dirList.length; i++)
+    for (var o in dirList[i].info)
+        console.println(o + " = " + dirList[i].info[o]);
 var dirConnection = dirList[0].connect();
 ```
 
 # DirConnection 对象
 
-| 6.0 |   | Ⓒ |   |   |
+| 6.0 |  | Ⓒ |  |  |
 
-**DirConnection**对象表示一个已打开的目录连接：目录是用户信息的仓库，包括公钥证书。目录连接使用**目录对象的****connect**方法打开。具有特定名称的目录可以同时打开多个连接。所有**DirConnection**对象必须支持此处列出的所有属性和方法，除非另有说明。
+`DirConnection`对象表示一个已打开的目录连接：目录是用户信息的仓库，包括公钥证书。目录连接使用目录对象的`connect`方法打开。具有特定名称的目录可以同时打开多个连接。所有`DirConnection`对象必须支持此处列出的所有属性和方法，除非另有说明。
 
-**注意：**（安全 Ⓒ）：此对象只能从[目录对象](Directory Object)获取，因此受**目录**对象的安全限制约束。**DirConnection对象**因此仅适用于批处理、控制台、应用程序初始化和菜单执行（包括在Acrobat Reader中）。另请参阅[特权与非特权上下文](Privileged versus Non-privileged Context)。
+**注意：**（安全 Ⓒ）：此对象只能从[目录对象](Directory Object)获取，因此受目录对象的安全限制约束。`DirConnection`对象因此仅适用于批处理、控制台、应用程序初始化和菜单执行（包括在 Acrobat Reader 中）。另请参阅[特权与非特权上下文](Privileged versus Non-privileged Context)。
 
 ## DirConnection 属性
 
 ### canList
 
-| 6.0 |   | Ⓒ |   |   |
+| 6.0 |  | Ⓒ |  |  |
 
 指示目录连接是否能够列出其所有条目。某些目录可能包含太多条目，导致此操作不切实际。
 
-类型：*布尔值* 访问权限：*只读*。
+类型：`布尔值`  
+访问权限：`只读`。
 
-### 示例
+#### 示例
 
-AAB目录允许列出本地受信任身份列表
+AAB 目录允许列出本地受信任身份列表。
 
-```
-var sh = security.getHandler( "Adobe.AAB" );
+```javascript
+var sh = security.getHandler("Adobe.AAB");
 var dc = sh.directories[0].connect();
-console.println( "CanList = " + dc.canList );
+console.println("CanList = " + dc.canList);
 ```
 
 ### canDoCustomSearch
 
-| 6.0 |   | Ⓒ |   |   |
+| 6.0 |  | Ⓒ |  |  |
 
-目录连接是否支持使用特定于目录的搜索参数属性进行搜索。例如，LDAP目录的特定目录属性包括：o（组织）、c（国家）、cn（通用名）、givenname（名字）、sn（姓氏）、uid（用户ID）、st（州/省）、postalcode（邮政编码）、mail（电子邮件）和telephonumber（电话号码）。
+目录连接是否支持使用特定于目录的搜索参数属性进行搜索。例如，LDAP 目录的特定目录属性包括：`o`（组织）、`c`（国家）、`cn`（通用名）、`givenname`（名字）、`sn`（姓氏）、`uid`（用户 ID）、`st`（州/省）、`postalcode`（邮政编码）、`mail`（电子邮件）和`telephonumber`（电话号码）。
 
-类型：*布尔值* 访问权限：*只读*。
+类型：`布尔值`  
+访问权限：`只读`。
 
-
-
-## Acrobat JavaScript 脚本参考
+# Acrobat JavaScript 脚本参考
 
 ## DirConnection 属性
 
 ### canDoCustomUISearch
 
-| 6.0 | | (S) | | |
+| 6.0 |  | (S) |  |  |
 
 目录连接是否支持使用其自身的自定义用户界面来收集搜索参数进行搜索。
 
-类型：Boolean
-访问权限：R。
+类型：`Boolean`
+
+访问权限：`R`。
 
 ### canDoStandardSearch
 
-| 6.0 | | (S) | | |
+| 6.0 |  | (S) |  |  |
 
-目录连接是否支持使用标准搜索参数属性进行搜索。标准属性为
+目录连接是否支持使用标准搜索参数属性进行搜索。标准属性为：
 
-- firstName
-- lastName
-- fullName
-- email
-- certificates
+- `firstName`
+- `lastName`
+- `fullName`
+- `email`
+- `certificates`
 
 某些目录数据库实现可能不支持这些属性，但目录处理器可以自由地将这些属性转换为目录能够理解的名称。
 
-类型：Boolean
-访问权限：R。
+类型：`Boolean`
+
+访问权限：`R`。
 
 ### groups
 
-| 6.0 | | (S) | | |
+| 6.0 |  | (S) |  |  |
 
 返回一个数组，包含通过此连接可用的组的、依赖于语言的名称。
 
-类型：Array
-访问权限：R。
+类型：`Array`
+
+访问权限：`R`。
 
 ### name
 
-| 6.0 | | (S) | | |
+| 6.0 |  | (S) |  |  |
 
-返回此对象连接到的目录的、不依赖于语言的名称。例如 `Adobe.PPKMS.ADSI.dir0`。所有 DirConnection 对象必须支持此属性。
+返回此对象连接到的目录的、不依赖于语言的名称。例如`Adobe.PPKMS.ADSI.dir0`。所有`DirConnection`对象必须支持此属性。
 
-类型：String
-访问权限：R。
+类型：`String`
+
+访问权限：`R`。
 
 ### uiName
 
-| 6.0 | | S | | |
+| 6.0 |  | S |  |  |
 
-返回此对象连接到的目录的、依赖于语言的字符串。此字符串适用于用户界面。例如 XYZ's Employees。所有 DirConnection 对象必须支持此属性。
+返回此对象连接到的目录的、依赖于语言的字符串。此字符串适用于用户界面。例如 XYZ's Employees。所有`DirConnection`对象必须支持此属性。
 
-类型：String    访问权限：R。
+类型：`String`  
+访问权限：`R`。
 
 ## DirConnection 方法
 
 ### search
 
-| 6.0 | | S | | |
+| 6.0 |  | S |  |  |
 
-搜索目录并返回与搜索参数匹配的 UserEntity 泛型对象数组。UserEntity 泛型对象是一个泛型对象，包含通过 setOutputFields 方法请求的所有属性。如果在搜索前未调用 setOutputFields 方法，则返回一个不包含任何条目的 UserEntity 泛型对象。
+搜索目录并返回与搜索参数匹配的`UserEntity`泛型对象数组。`UserEntity`泛型对象是一个泛型对象，包含通过`setOutputFields`方法请求的所有属性。如果在搜索前未调用`setOutputFields`方法，则返回一个不包含任何条目的`UserEntity`泛型对象。
 
-**参数**
+#### 参数
 
 | 参数 | 描述 |
 | --- | --- |
-| **oParams** | （可选）一个泛型对象，包含由搜索属性名称及其对应字符串组成的键值对数组。如果未提供 oParams 且此目录的 canList 为 true，则将返回目录中的所有条目。如果未提供 oParams 且 canList 为 false，则会发生异常。 |
-| **cGroupName** | （可选）组的名称（不要与 Group Objects 混淆）。如果指定了，则搜索将限制在此组内。 |
-| **bCustom** | （可选）如果为 false（默认值），则 oParams 包含标准搜索属性。canDoStandardSearch 属性必须为 true，否则会发生异常。如果为 true，则 oParams 包含目录特定的搜索参数。canDoCustomSearch 属性必须为 true，否则会发生异常。 |
-| **bUI** | （可选）如果为 true，处理器将显示用户界面以收集搜索参数。搜索结果由此方法返回。如果 bUI 为 true，则 canDoCustomUISearch 也必须为 true，否则会发生异常。如果指定了 bUI，则必须同时指定 bCustom，尽管其值会被忽略。 |
+| `oParams` | （可选）一个泛型对象，包含由搜索属性名称及其对应字符串组成的键值对数组。如果未提供`oParams`且此目录的`canList`为`true`，则将返回目录中的所有条目。如果未提供`oParams`且`canList`为`false`，则会发生异常。 |
+| `cGroupName` | （可选）组的名称（不要与 Group Objects 混淆）。如果指定了，则搜索将限制在此组内。 |
+| `bCustom` | （可选）如果为`false`（默认值），则`oParams`包含标准搜索属性。`canDoStandardSearch`属性必须为`true`，否则会发生异常。如果为`true`，则`oParams`包含目录特定的搜索参数。`canDoCustomSearch`属性必须为`true`，否则会发生异常。 |
+| `bUI` | （可选）如果为`true`，处理器将显示用户界面以收集搜索参数。搜索结果由此方法返回。如果`bUI`为`true`，则`canDoCustomUISearch`也必须为`true`，否则会发生异常。如果指定了`bUI`，则必须同时指定`bCustom`，尽管其值会被忽略。 |
 
-**返回值**
+#### 返回值
 
-一个 UserEntity 泛型对象数组。
+一个`UserEntity`泛型对象数组。
 
-**示例 1**
+#### 示例 1
 
-目录搜索
+目录搜索。
 
+```javascript
+var sh = security.getHandler("Adobe.PPKMS");
+var dc = sh.directories[0].connect();
+dc.setOutputFields({oFields: ["certificates", "email"]});
+var retVal = dc.search({oParams: {lastName: "Smith"}});
+if (retVal.length)
+    console.println(retVal[0].email);
 ```
-var sh = security.getHandler( "Adobe.PPKMS" );
-var dc= sh.directories[0].connect();
-dc.setOutputFields( {oFields:["certificates","email"]} )
-var retVal = dc.search({oParams:{lastName:"Smith"}});
-if( retVal.length )
-console.println( retVal[0].email );
-```
 
-**示例 2**
+#### 示例 2
 
 列出本地 Acrobat 通讯录中的所有条目。该脚本搜索目录并返回一个用户数组，以及他们的证书信息。
 
-```
-var sh = security.getHandler( "Adobe.AAB" );
+```javascript
+var sh = security.getHandler("Adobe.AAB");
 var dc = sh.directories[0].connect();
-if( dc.canList ) {
+if (dc.canList) {
     var x = dc.search();
-    for( j=0; j<x.length; ++j ) {
+    for (j = 0; j < x.length; ++j) {
         console.println("Entry[" + j + "] = " + x[j].fullName + ":");
-        for(i in x[j]) console.println("    " + i + " = " + x[j][i]);
+        for (i in x[j])
+            console.println("    " + i + " = " + x[j][i]);
     }
 }
 ```
 
 ### UserEntity 泛型对象
 
-描述目录中用户及其关联证书的泛型 JS 对象。它包含对所有目录处理器都具有特定含义的标准属性。目录处理器在需要时将这些条目转换为其特定的条目。dirConnection.search 返回这些对象的数组。它具有以下属性。
+描述目录中用户及其关联证书的泛型 JS 对象。它包含对所有目录处理器都具有特定含义的标准属性。目录处理器在需要时将这些条目转换为其特定的条目。`dirConnection.search`返回这些对象的数组。它具有以下属性。
 
 | 属性 | 类型 | 访问权限 | 描述 |
 | --- | --- | --- | --- |
-| firstName | String | R/W | 用户的名字。 |
-| lastName | String | R/W | 用户的姓氏。 |
-| fullName | String | R/W | 用户的全名。 |
-| certificates | Certificate 对象数组 | R/W | 属于此用户的证书数组。要找到用于特定用途的证书，调用者应检查证书的 keyUsage 属性。 |
-| defaultEncryptCert | Certificate 对象数组 | R/W | 为此用户实体加密文档时首选的证书。处理用户实体对象的例程在选择加密证书时会首先查找此属性：如果未设置此属性，则将使用 certificates 属性中的第一个有效匹配项。 |
+| `firstName` | `String` | `R/W` | 用户的名字。 |
+| `lastName` | `String` | `R/W` | 用户的姓氏。 |
+| `fullName` | `String` | `R/W` | 用户的全名。 |
+| `certificates` | `Certificate`对象数组 | `R/W` | 属于此用户的证书数组。要找到用于特定用途的证书，调用者应检查证书的`keyUsage`属性。 |
+| `defaultEncryptCert` | `Certificate`对象数组 | `R/W` | 为此用户实体加密文档时首选的证书。处理用户实体对象的例程在选择加密证书时会首先查找此属性：如果未设置此属性，则将使用`certificates`属性中的第一个有效匹配项。 |
 
 ### setOutputFields
 
-| 6.0 | S | X | |
+| 6.0 | S | X |  |
 | --- | --- | --- | --- |
 
-定义执行 search 方法时应返回的属性列表。
+定义执行`search`方法时应返回的属性列表。
 
 **注意：** Adobe.AAB 目录处理器不支持此方法。Adobe.PPKMS.ADSI 目录处理器不支持自定义选项。
 
-**参数**
+#### 参数
 
 | 参数 | 描述 |
 | --- | --- |
-| oFields | 一个字符串数组，包含调用 search 方法时应从目录返回的属性名称。此数组中的名称必须是可以用于所有目录处理器的标准属性名称，或者是为特定目录定义的自定义属性。标准属性是为 UserEntity 泛型对象定义的属性名称。目录处理器可以根据需要将标准属性名称转换为其理解的名称。 |
-| bCustom | （可选）一个布尔值，指示 oFields 中的名称是标准输出属性名称。如果为 true，则名称表示为特定目录处理器定义的目录特定属性。默认值为 false。 |
+| `oFields` | 一个字符串数组，包含调用`search`方法时应从目录返回的属性名称。此数组中的名称必须是可以用于所有目录处理器的标准属性名称，或者是为特定目录定义的自定义属性。标准属性是为`UserEntity`泛型对象定义的属性名称。目录处理器可以根据需要将标准属性名称转换为其理解的名称。 |
+| `bCustom` | （可选）一个布尔值，指示`oFields`中的名称是标准输出属性名称。如果为`true`，则名称表示为特定目录处理器定义的目录特定属性。默认值为`false`。 |
 
-**返回值**
+#### 返回值
 
-一个字符串数组，包含 oFields 中不被此目录支持的属性名称。如果 oFields 数组为空，则返回空数组。
+一个字符串数组，包含`oFields`中不被此目录支持的属性名称。如果`oFields`数组为空，则返回空数组。
 
-**示例**
+#### 示例
 
-```
+```javascript
 var sh = security.getHandler("Adobe.PPKMS");
 var dc = sh.directories[0].connect();
-var w = dc.setOutputFields( [ "certificates", "email", "x", "y"] );
+var w = dc.setOutputFields(["certificates", "email", "x", "y"]);
 ```
 
 ## Doc 对象
 
-JavaScript `doc` 对象提供了查看器中打开的 PDF 文档与 JavaScript 解释器之间的接口。它提供了 PDF 文档的方法和属性。
+JavaScript `doc`对象提供了查看器中打开的 PDF 文档与 JavaScript 解释器之间的接口。它提供了 PDF 文档的方法和属性。
 
 ## 从 JavaScript 访问 Doc
 
-你可以通过多种方式从 JavaScript 访问 `doc` 对象。
+你可以通过多种方式从 JavaScript 访问`doc`对象。
 
-- 最常见的方式是通过 `this` 对象，它通常指向底层文档的 `doc` 对象。
-- 某些属性和方法返回 `doc` 对象，例如 `activeDocs`、`openDoc` 或 `extractPages` 都返回 `doc` 对象。
-- JavaScript 是由于某个事件而执行的。对于每个事件，都会创建一个 `Event 对象`。通常可以通过 `event.target` 访问 `doc` 对象：
-    - 对于 `mouse`、`focus`、`blur`、`calculate`、`validate` 和 `format` 事件，`event.target` 返回发起事件的 `Field 对象`。然后你可以通过 `field.doc` 访问 `doc` 对象。
-    - 对于所有其他事件，`event.target` 指向 `doc` 对象。
+- 最常见的方式是通过`this`对象，它通常指向底层文档的`doc`对象。
+- 某些属性和方法返回`doc`对象，例如`activeDocs`、`openDoc`或`extractPages`都返回`doc`对象。
+- JavaScript 是由于某个事件而执行的。对于每个事件，都会创建一个`Event 对象`。通常可以通过`event.target`访问`doc`对象：
+  - 对于`mouse`、`focus`、`blur`、`calculate`、`validate`和`format`事件，`event.target`返回发起事件的`Field 对象`。然后你可以通过`field.doc`访问`doc`对象。
+  - 对于所有其他事件，`event.target`指向`doc`对象。
 
-**示例 1：通过 this 对象访问**
-使用 *this* 获取此文档的页数：
+### 示例 1：通过 this 对象访问
 
-```
+使用`this`获取此文档的页数：
+
+```javascript
 var nPages = this.numPages;
 // 获取“此”文档的裁剪框：
 var aCrop = this.getPageBox();
 ```
 
-**示例 2：通过返回值访问**
+### 示例 2：通过返回值访问
+
 从一个文档返回值以打开、修改、保存和关闭另一个文档。
 
-```
+```javascript
 // 相对于“此”文档的路径：
 var myDoc = app.openDoc("myNovel.pdf", this);
 myDoc.info.Title = "My Great Novel";
@@ -7275,79 +7559,83 @@ myDoc.saveAs(myDoc.path);
 myDoc.closeDoc(true);
 ```
 
-**示例 3：通过事件对象访问。**
-对于 mouse、calculate、validate、format、focus 和 blur 事件：
+### 示例 3：通过事件对象访问
 
-```
+对于`mouse`、`calculate`、`validate`、`format`、`focus`和`blur`事件：
+
+```javascript
 var myDoc = event.target.doc;
 ```
 
-对于所有其他事件（例如，batch 或 console 事件）：
+对于所有其他事件（例如，`batch`或`console`事件）：
 
-```
+```javascript
 var myDoc = event.target;
 ```
 
-
-
 ## 文档属性
 
-## alternatePresentations
+### alternatePresentations
 
-引用文档的 AlternatePresentation 对象。如果显示备用演示文稿所需的功能不可用，则此属性未定义。
+引用文档的`AlternatePresentation`对象。如果显示备用演示文稿所需的功能不可用，则此属性未定义。
 
-**alternatePresentation** 对象提供了对文档备用演示文稿的访问。PDF 语言扩展规定，每个文档可以拥有多个命名的备用演示文稿。每个具有已知**类型**的备用演示文稿在文档中都会有一个对应的 **doc.alternatePresentations** 属性。此属性应与其备用演示文稿同名，并应引用其备用演示文稿的 **AlternatePresentation 对象**。如果文档中没有已识别的备用演示文稿，则此对象为空（不包含任何属性）。
+`alternatePresentation`对象提供了对文档备用演示文稿的访问。PDF 语言扩展规定，每个文档可以拥有多个命名的备用演示文稿。每个具有已知类型的备用演示文稿在文档中都会有一个对应的`doc.alternatePresentations`属性。此属性应与其备用演示文稿同名，并应引用其备用演示文稿的`AlternatePresentation 对象`。如果文档中没有已识别的备用演示文稿，则此对象为空（不包含任何属性）。
 
 PDF 参考手册的第 9.4 节“备用演示文稿”提供了有关此主题的详细信息。
 
 有关可用于控制备用演示文稿的属性和方法，请参见 AlternatePresentation 对象。
 
-类型：对象 | 未定义    访问：只读。
+类型：对象 | 未定义  
+访问：只读。
 
 > 注意：为了与当前实现兼容，备用演示文稿名称必须是 ASCII 字符串。目前唯一实现的备用演示文稿类型是“SlideShow”。
 
-### 示例 1
+#### 示例 1
 
-测试 **alternatePresentations** 对象是否存在：
+测试`alternatePresentations`对象是否存在：
 
-```
-if( typeof this.alternatePresentations != "undefined" )
-{
+```javascript
+if (typeof this.alternatePresentations != "undefined") {
     // 假设备用演示文稿存在
     // 列出文档中所有备用演示文稿的名称
-    for( var ap in this.alternatePresentations ) console.println(ap);
+    for (var ap in this.alternatePresentations)
+        console.println(ap);
 }
 ```
 
-### 示例 2
+#### 示例 2
 
 假设文档中有一个名为“MySlideShow”的演示文稿。
 
-```
+```javascript
 // oMySlideShow 是一个 AlternatePresentation 对象
 oMySlideShow = this.alternatePresentations["MySlideShow"];
 oMySlideShow.start();
 ```
 
-## author
+### author
 
-文档的作者。请参见 **info**，在更高版本中此属性已被 info 取代。
+文档的作者。请参见`info`，在更高版本中此属性已被`info`取代。
 
 **注意：** 此属性在 Adobe Reader 中为只读。
 
-类型：*字符串* 访问：*读/写。*
+类型：`字符串`  
+访问：`读/写`。
 
-## baseURL
+### baseURL
 
-文档的基础 URL 用于解析文档内的相对网页链接。另请参见 **URL**。
+文档的基础 URL 用于解析文档内的相对网页链接。另请参见`URL`。
 
-类型：*字符串* 访问：*读/写。*
+类型：`字符串`  
+访问：`读/写`。
 
-### 示例
+#### 示例
 
 此示例设置基础 URL，并创建一个相对于基础 URL 跳转到某一页的链接。
 
-```
+
+
+```javascript
 console.println("基础 URL 原为 " + this.baseURL);
 this.baseURL = "http://www.adobe.com/products/";
 console.println("基础 URL 现为 " + this.baseURL);
@@ -7357,71 +7645,80 @@ var link = this.addLink(0, [200,200, 400, 300])
 link.setAction("this.getURL('acrobat',false)")
 ```
 
-## bookmarkRoot
+## `bookmarkRoot`
 
 书签树的根书签。此书签不向用户显示；它是一个程序结构，用于访问书签树及其子书签。
 
-类型：*对象* 访问：*只读。*
+类型：对象  
+访问：只读。
 
 ### 示例
 
-用法示例请参见 **Bookmark 对象**。
+用法示例请参见 `Bookmark` 对象。
 
-## calculate
+## `calculate`
 
-如果设为**真**，则允许对本文档执行计算。如果设为**假**，则阻止本文档发生任何计算。其默认值为**真**。此属性取代了 `app.calculate`，后者现在已不推荐使用。
+如果设为真，则允许对本文档执行计算。如果设为假，则阻止本文档发生任何计算。其默认值为真。此属性取代了 `app.calculate`，后者现在已不推荐使用。
 
-类型：布尔值 访问：读/写。
+类型：布尔值  
+访问：读/写。
 
-## creationDate
+## `creationDate`
 
-文档的创建日期。请参见 **info**，在更高版本中此属性已被 info 取代。
+文档的创建日期。请参见 `info`，在更高版本中此属性已被 `info` 取代。
 
-类型：日期 访问：只读。
+类型：日期  
+访问：只读。
 
-## creator
+## `creator`
 
-文档的创建工具（例如，“Adobe FrameMaker”、“Adobe PageMaker”等）。请参见 **info**，在更高版本中此属性已被 info 取代。
+文档的创建工具（例如，“Adobe FrameMaker”、“Adobe PageMaker”等）。请参见 `info`，在更高版本中此属性已被 `info` 取代。
 
-类型：字符串 访问：只读。
+类型：字符串  
+访问：只读。
 
-## dataObjects
+## `dataObjects`
 
 一个包含文档中所有命名数据对象的数组。
 
-相关的对象、属性和方法包括 **Data Object**、`doc.openDataObject`、`doc.getDataObject`、`doc.createDataObject`、`doc.importDataObject`、`doc.removeDataObject`、`doc.getDataObjectContents` 和 `doc.setDataObjectContents`。
+相关的对象、属性和方法包括 `Data Object`、`doc.openDataObject`、`doc.getDataObject`、`doc.createDataObject`、`doc.importDataObject`、`doc.removeDataObject`、`doc.getDataObjectContents` 和 `doc.setDataObjectContents`。
 
-类型：数组 访问：只读。
+类型：数组  
+访问：只读。
 
 ### 示例
 
 列出文档中所有嵌入的文件。
 
-```
+```javascript
 var d = this.dataObjects;
 for (var i = 0; i < d.length; i++)
     console.println("数据对象[" + i + "]=" + d[i].name);
 ```
 
-## delay
+## `delay`
 
-此布尔属性可以延迟对文档中所有字段外观更改的重绘。通常用于在请求字段重新生成其外观之前，缓冲对字段的一系列更改。当设为**真**时，所有更改将被排队，直到 **delay** 重置为**假**。一旦设为**假**，页面上的所有字段都将被重绘。另请参见 **field.delay** 属性。
+此布尔属性可以延迟对文档中所有字段外观更改的重绘。通常用于在请求字段重新生成其外观之前，缓冲对字段的一系列更改。当设为真时，所有更改将被排队，直到 `delay` 重置为假。一旦设为假，页面上的所有字段都将被重绘。另请参见 `field.delay` 属性。
 
 类型：布尔值
+
 访问：读/写。
 
-## dirty
+## `dirty`
 
-此布尔属性可用于确定文档是否因对文档的更改而变得“脏”（即已修改），因此需要保存。在执行不需要保存的更改（例如，更新文档中的状态字段）时，重置文档中的 **dirty** 标志非常有用。
-**注意：** 如果文档是临时的或是新创建的，将 **doc.dirty** 设为**假**没有效果，也就是说，在关闭文档时，用户仍会被要求保存更改。有关此方面的信息，请参见 **doc.requiresFullSave**。
+此布尔属性可用于确定文档是否因对文档的更改而变得“脏”（即已修改），因此需要保存。在执行不需要保存的更改（例如，更新文档中的状态字段）时，重置文档中的 `dirty` 标志非常有用。
+
+**注意：**如果文档是临时的或是新创建的，将 `doc.dirty` 设为假没有效果，也就是说，在关闭文档时，用户仍会被要求保存更改。有关此方面的信息，请参见 `doc.requiresFullSave`。
 
 类型：布尔值
+
 访问：读/写。
 
 ### 示例 1
-此示例重置表单并将 **doc.dirty** 设为**假**。重置后，用户可以在不关闭保存对话框的情况下关闭文档。
 
-```
+此示例重置表单并将 `doc.dirty` 设为假。重置后，用户可以在不关闭保存对话框的情况下关闭文档。
+
+```javascript
 var f = this.getField("MsgField");
 f.value = "您犯了太多错误，正在重置表单。"
     + "重新开始，这次请遵循指示！";
@@ -7430,86 +7727,96 @@ this.dirty = false;
 ```
 
 ### 示例 2
+
 在此示例中，填充了一个文本字段以通知用户完成表单。脚本的构建方式使得填充字段不会更改文档的保存状态。
 
-```
+```javascript
 var f = this.getField("MsgField");
 var b = this.dirty;
 f.value = "请填写以下字段。";
 this.dirty = b;
 ```
 
-## disclosed
+## `disclosed`
 
-一个布尔属性，决定本文档是否应允许其他文档中的 JavaScript 访问。方法 `app.openDoc` 和 `app.activeDocs` 在返回其 Doc 对象之前，会检查文档的 **disclosed** 属性。
+一个布尔属性，决定本文档是否应允许其他文档中的 JavaScript 访问。方法 `app.openDoc` 和 `app.activeDocs` 在返回其 `Doc` 对象之前，会检查文档的 `disclosed` 属性。
 
-> 注意：（安全 Ⓢ）：**disclosed** 属性只能在批处理、控制台、Page/Open 和 Doc/Open 事件期间设置。有关 Acrobat JavaScript 事件的讨论，请参见事件对象。另请参见特权上下文与非特权上下文。
+> 注意：（安全 Ⓢ）：`disclosed` 属性只能在批处理、控制台、Page/Open 和 Doc/Open 事件期间设置。有关 Acrobat JavaScript 事件的讨论，请参见事件对象。另请参见特权上下文与非特权上下文。
 
-类型：布尔值 访问：读/写。
+类型：布尔值  
+访问：读/写。
 
 ### 示例 1
+
 可以通过将代码放置在文档级别（或作为页面打开操作）在顶层来将文档公开给其他文档：
 
-```
+```javascript
 this.disclosed = true;
 ```
 
 ### 示例 2
+
 以下代码可用于在“执行 JavaScript 批处理序列”中公开所有选定的文档。
 
-```
+```javascript
 this.addScript("Disclosed", "this.disclosed = true;");
 ```
 
-## docID
+## `docID`
 
 此属性的值是一个包含两个字符串的数组。每个字符串的格式都是十六进制编码的二进制数据。第一个字符串是基于文件原始创建时内容的永久标识符，在文件增量更新时不会更改。第二个字符串是基于文件上次更新时内容的可变标识符。这些标识符由 PDF 文件尾部字典中的可选 ID 条目定义。更多详细信息请参见 PDF 参考手册第 10.3 节。
 
-类型：数组 访问：只读。
+类型：数组  
+访问：只读。
 
 用法示例请参见第 315 页的“示例 6（版本 7.0）”。
 
-## documentFileName
+## `documentFileName`
 
 `doc` 对象引用的文档的基文件名（带扩展名）。不返回设备无关路径。另请参见 `doc.path` 和 `doc.URL`。文档的文件大小可以从 `doc.filesize` 获取。
 
 类型：字符串
+
 访问：只读。
 
 ### 示例
+
 在本文档《Acrobat JavaScript 脚本参考》上执行脚本：
 
-```
+```javascript
 console.println('"本文档的文件名为'
 			+ this.documentFileName +'."');
 ```
 
 将得到：
 
-```
+```text
 "本文档的文件名为 AcroJS.pdf。"
 ```
 
-## dynamicXFAForm
+## `dynamicXFAForm`
 
 如果文档是 XFA 文档且为动态 XFA，则返回 `true`。否则返回 `false`。动态 XFA 表单是指其中一些字段的大小可以增长或收缩以适应其包含的值的表单。
 
 类型：布尔值
+
 访问：只读。
 
 ### 示例
-用法示例请参见 XFAObject 对象。
 
-## external
+用法示例请参见 `XFAObject` 对象。
+
+## `external`
 
 指示当前文档是在 Acrobat 应用程序中查看，还是在外部窗口（如 Web 浏览器）中查看。
 
 类型：布尔值
+
 访问：只读。
 
 ### 示例
 
-```
+```javascript
 if ( this.external )
 {
 	// 从浏览器中查看
@@ -7517,20 +7824,20 @@ if ( this.external )
 else
 ```
 
-
-
-# filesize
+## `filesize`
 
 3.01
 
 文档的文件大小（以字节为单位）。
-类型：整数 访问权限：只读。
 
-## 示例（版本 5.0）
+类型：整数  
+访问权限：只读。
+
+### 示例（版本 5.0）
 
 获取保存文档前后文件大小的差异读数。
 
-```
+```javascript
 // 将以下代码添加到“文档将保存”部分
 var filesizeBeforeSave = this.filesize
 console.println("保存前的文件大小为 " + filesizeBeforeSave);
@@ -7546,18 +7853,20 @@ else
     console.println("文件大小增加了！");
 ```
 
-# hidden
+## `hidden`
 
 7.0
 
-如果文档窗口被隐藏，则此属性为 true。文档窗口可能由于通过批处理操作而被隐藏，也可能是显式以隐藏方式打开的，或者没有与之关联的 AVDoc。有关可以用于打开具有隐藏窗口文档的方法，请参见 app.openDoc 和 doc.openDataObject。
-类型：布尔值 访问权限：只读。
+如果文档窗口被隐藏，则此属性为 `true`。文档窗口可能由于通过批处理操作而被隐藏，也可能是显式以隐藏方式打开的，或者没有与之关联的 `AVDoc`。有关可以用于打开具有隐藏窗口文档的方法，请参见 `app.openDoc` 和 `doc.openDataObject`。
 
-## 示例
+类型：布尔值  
+访问权限：只读。
+
+### 示例
 
 打开一个文档并验证其隐藏状态。
 
-```
+```javascript
 oDoc = app.openDoc({
     cPath:"/C/myDocs/myHidden.pdf",
     bHidden: true
@@ -7566,16 +7875,18 @@ console.println("此文档的隐藏状态为：" + oDoc.hidden + "。");
 oDoc.closeDoc();
 ```
 
-# icons
+## `icons`
 
-doc.icons 的值是一个命名的图标通用对象数组，这些对象存在于文档级别的命名图标树中。如果文档中没有命名的图标，则该属性的值为 null。
-另请参见 addIcon、getIcon、importIcon、removeIcon、字段对象的 buttonGetIcon、buttonImportIcon、buttonSetIcon 属性以及图标通用对象。
+`doc.icons` 的值是一个命名的图标通用对象数组，这些对象存在于文档级别的命名图标树中。如果文档中没有命名的图标，则该属性的值为 `null`。
 
-类型：数组 | null 访问权限：只读。
+另请参见 `addIcon`、`getIcon`、`importIcon`、`removeIcon`、字段对象的 `buttonGetIcon`、`buttonImportIcon`、`buttonSetIcon` 属性以及图标通用对象。
 
-## 示例 1
+类型：数组 | `null`  
+访问权限：只读。
 
-```
+### 示例 1
+
+```javascript
 if (this.icons == null)
     console.println("本文档中没有命名的图标");
 else
@@ -7583,58 +7894,59 @@ else
                     + " 个命名的图标");
 ```
 
-## 示例 2
+### 示例 2
 
-```
+```javascript
 // 列出所有命名的图标
 for (var i = 0; i < this.icons.length; i++) {
     console.println("icon[" + i + "]=" + this.icons[i].name);
 }
 ```
 
-# info
+## `info`
 
-## 在 Adobe Reader 中
+### 在 Adobe Reader 中
 
-对于 Adobe Reader，doc.info 返回一个对象，其属性来自 PDF 文件中的文档信息字典。标准条目有：
-Title
-Author
-Subject
-Keywords
-Creator
-Producer
-CreationDate
-ModDate
-Trapped
+对于 Adobe Reader，`doc.info` 返回一个对象，其属性来自 PDF 文件中的文档信息字典。标准条目有：
+
+- `Title`
+- `Author`
+- `Subject`
+- `Keywords`
+- `Creator`
+- `Producer`
+- `CreationDate`
+- `ModDate`
+- `Trapped`
 
 更多详情请参见 PDF 参考手册中的表 10.2“文档信息字典中的条目”。
+
 在 Adobe Reader 中写入此对象的任何属性会引发异常。
 
-类型：对象 访问权限：只读。
+类型：对象  
+访问权限：只读。
 
-## 示例
+### 示例
 
-```
+```javascript
 // 获取文档标题
 var docTitle = this.info.Title;
 ```
 
-## 在 Acrobat 中
+### 在 Acrobat 中
 
-| 5.0 | ⓓ | | ⓧ | |
-| :--- | :--- | :--- | :--- | :--- |
-
-对于 Acrobat，**info** 对象的属性是可写的，在此对象中设置属性会使文档进入已修改状态。可以通过设置非标准属性来添加额外的文档信息字段。
+对于 Acrobat，`info` 对象的属性是可写的，在此对象中设置属性会使文档进入已修改状态。可以通过设置非标准属性来添加额外的文档信息字段。
 
 > **注意：**标准条目不区分大小写，即 `doc.info.Keywords` 与 `doc.info.keywords` 相同。
 
-类型：对象 访问权限：读/写。
+类型：对象  
+访问权限：读/写。
 
-## 示例
+### 示例
 
-以下脚本
+以下脚本：
 
-```
+```javascript
 this.info.Title = "JavaScript权威指南";
 this.info.ISBN = "1-56592-234-4";
 this.info.PublishDate = new Date();
@@ -7644,7 +7956,7 @@ for (var i in this.info)
 
 可能会产生以下输出：
 
-```
+```text
 CreationDate: Mon Jun 12 14:54:09 GMT-0500 (Central Daylight Time) 2000
 Producer: Acrobat Distiller 4.05 for Windows
 Title: JavaScript权威指南
@@ -7655,26 +7967,27 @@ PublishDate: Tue Aug 8 10:49:44 GMT-0500 (Central Daylight Time) 2000
 ISBN: 1-56592-234-4
 ```
 
-# innerAppWindowRect
+## `innerAppWindowRect`
 
 | 6.0 | | | | |
 | :--- | :--- | :--- | :--- | :--- |
 
 此属性返回 Acrobat 内部应用程序窗口的矩形区域，该区域是一个屏幕坐标数组。应用程序窗口也可以以外部矩形的形式获取。外部矩形包括任何标题栏、调整大小边框等，而内部矩形不包括这些项目。
 
-类型：数字数组 访问权限：只读。
+类型：数字数组  
+访问权限：只读。
 
-## 示例
+### 示例
 
-```
+```javascript
 var coords = this.innerAppWindowRect;
 console.println(coords.toSource())
 // 可能的输出：[115, 154, 1307, 990]
 ```
 
-另请参见 [innerDocWindowRect](innerDocWindowRect)、[outerAppWindowRect](outerAppWindowRect) 和 [outerDocWindowRect](outerDocWindowRect)。
+另请参见 `innerDocWindowRect`、`outerAppWindowRect` 和 `outerDocWindowRect`。
 
-# innerDocWindowRect
+## `innerDocWindowRect`
 
 | 6.0 | | | | |
 | :--- | :--- | :--- | :--- | :--- |
@@ -7683,204 +7996,226 @@ console.println(coords.toSource())
 
 这些矩形在不同平台上可能有很大差异。例如，在 Windows 上，文档窗口始终位于应用程序窗口内部，而在 Macintosh 上它们是相同的。
 
-类型：数字数组 访问权限：只读。
+类型：数字数组  
+访问权限：只读。
 
-另请参见 [innerAppWindowRect](innerAppWindowRect)、[outerAppWindowRect](outerAppWindowRect)、[outerDocWindowRect](outerDocWindowRect) 和 [pageWindowRect](pageWindowRect)。
+另请参见 `innerAppWindowRect`、`outerAppWindowRect`、`outerDocWindowRect` 和 `pageWindowRect`。
 
-# keywords
+## `keywords`
 
 | ⓧ | ⓓ | | ⓧ | |
 | :--- | :--- | :--- | :--- | :--- |
 
 描述文档的关键字（例如，“表单”、“税收”、“政府”）。
-另请参见 [info](info)，在更高版本中它取代了此属性。
+
+另请参见 `info`，在更高版本中它取代了此属性。
 
 **注意：**此属性在 Adobe Reader 中是只读的。
 
-类型：对象 访问权限：读/写。
+类型：对象  
+访问权限：读/写。
 
-# layout
+## `layout`
 
 | 5.0 | | | | |
 | :--- | :--- | :--- | :--- | :--- |
 
 更改当前文档的页面布局。有效值为：
 
-- SinglePage
-- OneColumn
-- TwoColumnLeft
-- TwoColumnRight
+- `SinglePage`
+- `OneColumn`
+- `TwoColumnLeft`
+- `TwoColumnRight`
 
 在 Acrobat 6.0 中，还有两个额外的属性：
 
-- TwoPageLeft
-- TwoPageRight
+- `TwoPageLeft`
+- `TwoPageRight`
 
-类型：字符串 访问权限：读/写。
+类型：字符串  
+访问权限：读/写。
 
-## 示例
+### 示例
 
 将文档置于连续双页布局，文档的第一页显示在左侧栏中。
 
-```
+```javascript
 this.layout = "TwoColumnLeft";
 ```
 
-# media
+## `media`
 
 | 6.0 | | | | |
 | :--- | :--- | :--- | :--- | :--- |
 
-每个文档都有其自己的 doc.media 对象，其中包含特定于特定文档的属性。doc.media 还包含适用于文档的方法。
-Doc.media 对象部分包含此对象属性和方法的文档。
+每个文档都有其自己的 `doc.media` 对象，其中包含特定于特定文档的属性。`doc.media` 还包含适用于文档的方法。
 
-类型：DocMedia 对象 访问权限：读/写。
+`Doc.media` 对象部分包含此对象属性和方法的文档。
 
-# metadata
+类型：`DocMedia` 对象  
+访问权限：读/写。
+
+## `metadata`
 
 | 6.0 | | | ✿ | |
 | :--- | :--- | :--- | :--- | :--- |
 
-允许您访问嵌入在 PDF 文档中的 XMP 元数据。返回一个字符串，其中包含作为特定 PDF 文档元数据存储的 XML 文本。有关嵌入式 XMP 元数据的信息，请参见 PDF 参考手册的 9.6 节。如果用户尝试将此属性设置为非 XMP 元数据格式的字符串，此属性会引发 RaiseError。
+允许您访问嵌入在 PDF 文档中的 XMP 元数据。返回一个字符串，其中包含作为特定 PDF 文档元数据存储的 XML 文本。有关嵌入式 XMP 元数据的信息，请参见 PDF 参考手册的 9.6 节。如果用户尝试将此属性设置为非 XMP 元数据格式的字符串，此属性会引发 `RaiseError`。
 
-类型：字符串 访问权限：读/写。
+类型：字符串  
+访问权限：读/写。
 
-## 异常
+### 异常
 
-如果将 metadata 设置为非 XMP 格式的字符串，则会引发 RaiseError。
+如果将 `metadata` 设置为非 XMP 格式的字符串，则会引发 `RaiseError`。
 
-## 示例 1
+### 示例 1
 
 尝试创建非 XMP 格式的元数据。
 
-```
+```javascript
 this.metadata = "this is my metadata";
 RaiseError: The given metadata was not in the XMP format
 Global.metadata:1:Console undefined:Exec
 ====> The given metadata was not in the XMP format
 ```
 
-## 示例 2
+### 示例 2
 
 创建一个带有来自文档的元数据的 PDF 报告文件。
 
-```
+```javascript
 var r = new Report();
 r.writeText(this.metadata);
 r.open("myMetadataReportFile");
 ```
 
-# modDate
+## `modDate`
 
 | X | | | |
 | :--- | :--- | :--- | :--- |
 
-文档最后修改的日期。另请参见 [info](info)，在更高版本中它取代了此属性。
+文档最后修改的日期。另请参见 `info`，在更高版本中它取代了此属性。
 
-类型：日期 访问权限：只读。
+类型：日期  
+访问权限：只读。
 
-# mouseX
+## `mouseX`
 
 | 7.0 | | | |
 | :--- | :--- | :--- | :--- |
 
+
+
+## mouseX
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+
 获取鼠标坐标相对于当前页面在默认用户空间中的 x 坐标。
 
-类型：数字 访问权限：只读。
+类型：数字  
+访问权限：只读。
 
-## 示例
+### 示例
 
 当用户在查看器中移动鼠标时，获取其坐标。
 
-```
+```javascript
 function getMouseCoor() {
-    console.println("("+this.mouseX+", "+ this.mouseY+")" );
+    console.println("(" + this.mouseX + ", " + this.mouseY + ")");
 }
 var ckMouse = app.setInterval("getMouseCoor()", 100);
 var timeout = app.setTimeOut(
     "app.clearInterval(ckMouse); app.clearTimeOut(timeout)", 2000);
 ```
 
-# mouseY
+## mouseY
 
-| 7.0 | | | |
-| :--- | :--- | :--- | :--- |
+| 7.0 |  |  |  |
+| --- | --- | --- | --- |
 
 获取鼠标坐标相对于当前页面在默认用户空间中的 y 坐标。
 
-类型：数字 访问权限：只读。
+类型：数字  
+访问权限：只读。
 
-# noautocomplete
+## noautocomplete
 
-| 7.0 | | | |
-| :--- | :--- | :--- | :--- |
+| 7.0 |  |  |  |
+| --- | --- | --- | --- |
 
+此属性用于关闭 Acrobat 表单的自动完成功能，仅针对本文档。
 
+若设置为 `true`，则用户在字段中输入数据时不提供任何建议。若将此属性设置为 `false`，自动完成功能将遵循用户在文件 > 首选项 > 常规 > 表单中设置的偏好。
 
-此属性用于关闭 Acrobat 表单的自动完成功能，*仅针对本文档*。
-若设置为 **true**，则用户在字段中输入数据时不提供任何建议。若将此属性设置为 **false**，自动完成功能将遵循用户在 **文件 > 首选项 > 常规 > 表单** 中设置的偏好。
-设置此属性不会影响 **文件 > 首选项 > 常规 > 表单** 下的自动完成偏好设置。
-**注意：** 此属性初始值为 **undefined**。
+设置此属性不会影响文件 > 首选项 > 常规 > 表单下的自动完成偏好设置。
 
-类型：Boolean
+**注意：** 此属性初始值为 `undefined`。
+
+类型：Boolean  
 访问：R/W。
 
-## 示例
+### 示例
 
 假设本文档需要关闭自动完成功能。以下脚本通过打开页面操作或作为顶层文档 JavaScript 执行。
 
-```
+```javascript
 this.noautocomplete = true;
 ```
 
 ## nocache
 
-| 7.0 | | | |
+| 7.0 |  |  |  |
 | --- | --- | --- | --- |
 
-此属性用于关闭表单数据缓存，*仅针对本文档*。
-将此属性设置为 **true** 可阻止 Acrobat 在 Internet 浏览器中保留表单数据。若将 **nocache** 设置为 **false**，Acrobat 将遵循用户在 **文件 > 首选项 > 常规 > 表单** 中设置的偏好。
-**nocache** 属性的值不影响 **文件 > 首选项 > 常规 > 表单** 中的“临时将表单数据保留在磁盘上”复选框项。
-**注意：** 在首次设置此属性之前，其值为 **undefined**。
+此属性用于关闭表单数据缓存，仅针对本文档。
 
-类型：Boolean
+将此属性设置为 `true` 可阻止 Acrobat 在 Internet 浏览器中保留表单数据。若将 `nocache` 设置为 `false`，Acrobat 将遵循用户在文件 > 首选项 > 常规 > 表单中设置的偏好。
+
+`nocache` 属性的值不影响文件 > 首选项 > 常规 > 表单中的“临时将表单数据保留在磁盘上”复选框项。
+
+**注意：** 在首次设置此属性之前，其值为 `undefined`。
+
+类型：Boolean  
 访问：R/W。
 
-## 示例
+### 示例
 
 假设本文档需要关闭表单数据缓存，以避免敏感数据留在本地硬盘驱动器上。以下脚本通过打开页面操作或作为顶层文档 JavaScript 执行。
 
-```
+```javascript
 this.nocache = true;
 ```
 
-## Acrobat JavaScript 脚本参考
+# Acrobat JavaScript 脚本参考
 
-Doc 属性
+## Doc 属性
 
 ## numFields
 
-| 4.0 | | | |
+| 4.0 |  |  |  |
 | --- | --- | --- | --- |
 
-文档中的字段总数。另见 getNthFieldName。
+文档中的字段总数。另见 `getNthFieldName()`。
 
-类型：Integer 访问：R。
+类型：Integer  
+访问：R。
 
-**示例 1**
+### 示例 1
 
-```
+```javascript
 console.println("There are " + this.numFields + " in this document");
 ```
 
-**示例 2**
+### 示例 2
 
-**doc.numFields** 属性可与 **doc.getNthFieldName** 配合使用，以遍历文档中的所有字段。在以下脚本中，我们将所有按钮字段更改为具有斜面外观。
+`doc.numFields` 属性可与 `doc.getNthFieldName()` 配合使用，以遍历文档中的所有字段。在以下脚本中，我们将所有按钮字段更改为具有斜面外观。
 
-```
-for ( var i = 0; i < this.numFields; i++) {
+```javascript
+for (var i = 0; i < this.numFields; i++) {
     var fname = this.getNthFieldName(i);
-    if ( fname.type = "button" ) f.borderStyle = border.b;
+    if (fname.type = "button") f.borderStyle = border.b;
 }
 ```
 
@@ -7888,91 +8223,94 @@ for ( var i = 0; i < this.numFields; i++) {
 
 ## numPages
 
-| 3.01 | | | |
+| 3.01 |  |  |  |
 | --- | --- | --- | --- |
 
 文档中的页数。
 
-类型：Integer 访问：R。
+类型：Integer  
+访问：R。
 
-**示例 1**
+### 示例 1
 
-```
+```javascript
 console.println("There are " + this.numPages + " in this document");
 ```
 
-**示例 2**
+### 示例 2
 
-从文档中删除最后一页。文档中最后一页的（基于 0 的）页码为 **this.numPages - 1**。
+从文档中删除最后一页。文档中最后一页的（基于 0 的）页码为 `this.numPages - 1`。
 
-```
+```javascript
 this.deletePages({ nStart: this.numPages - 1 });
 ```
 
 ## numTemplates
 
-| ⊗ | | | |
+| ⊗ |  |  |  |
 | --- | --- | --- | --- |
 
-文档中的模板数量。另见 **templates**，此属性在较新版本中已被其取代。
+文档中的模板数量。另见 `templates`，此属性在较新版本中已被其取代。
 
-类型：Integer 访问：R。
+类型：Integer  
+访问：R。
 
 ## path
 
-| 3.01 | | | |
+| 3.01 |  |  |  |
 | --- | --- | --- | --- |
 
-文档的设备无关路径，例如 /c/Program Files/Adobe/Acrobat 5.0/Help/AcroHelp.pdf。有关路径的确切语法，请参阅 [PDF 参考](#) 第 3.10.1 节“文件规范字符串”。
+文档的设备无关路径，例如`/c/Program Files/Adobe/Acrobat 5.0/Help/AcroHelp.pdf`。有关路径的确切语法，请参阅 PDF 参考第 3.10.1 节“文件规范字符串”。
 
-类型：String 访问：R。
-可通过 **doc**.documentFileName 获取文档的文件名。另见 [**doc**.URL](#)。
+类型：String  
+访问：R。
+
+可通过`doc.documentFileName`获取文档的文件名。另见`doc.URL`。
 
 ## outerAppWindowRect
 
-| 6.0 | | | |
+| 6.0 |  |  |  |
 | --- | --- | --- | --- |
 
 此属性返回 Acrobat 外部应用程序窗口的矩形区域（屏幕坐标数组）。应用程序窗口也可作为内部矩形使用。外部矩形包括任何标题栏、调整大小边框等，而内部矩形不包括这些项。
 
-类型：Numbers 数组 访问：R。
-另见 [innerAppWindowRect](#)、[outerDocWindowRect](#)、[outerAppWindowRect](#) 和 [pageWindowRect](#)。
+类型：Numbers 数组  
+访问：R。
+
+另见`innerAppWindowRect`、`outerDocWindowRect`、`outerAppWindowRect`和`pageWindowRect`。
 
 ## outerDocWindowRect
 
-| 6.0 | | | |
+| 6.0 |  |  |  |
 | --- | --- | --- | --- |
 
 此属性返回 Acrobat 外部文档窗口的矩形区域（屏幕坐标数组）。文档窗口也可作为内部矩形使用。外部矩形包括任何标题栏、调整大小边框等，而内部矩形不包括这些项。
 
 这些矩形在不同平台上可能差异很大。例如，在 Windows 上，文档窗口始终位于应用程序窗口内部，而在 Macintosh 上它们是相同的。
 
-类型：Numbers 数组 访问：R。
-另见 [innerAppWindowRect](#)、[outerDocWindowRect](#)、[outerAppWindowRect](#) 和 [pageWindowRect](#)。
+类型：Numbers 数组  
+访问：R。
 
-## Acrobat JavaScript 脚本参考
-
-Doc 属性
+另见`innerAppWindowRect`、`outerDocWindowRect`、`outerAppWindowRect`和`pageWindowRect`。
 
 ## pageNum
 
-获取或设置文档的页面。将 pageNum 设置为特定页面时，请记住值是基于 0 的。
+获取或设置文档的页面。将`pageNum`设置为特定页面时，请记住值是基于 0 的。
 
-*类型：Integer*
+类型：Integer  
+访问：R/W。
 
-*访问：R/W。*
-
-## 示例
+### 示例
 
 此示例跳转到文档的第一页。
 
-```
+```javascript
 this.pageNum = 0;
 ```
 
 此示例将文档前进到下一页。
 
-```
+```javascript
 this.pageNum++;
 ```
 
@@ -7980,34 +8318,33 @@ this.pageNum++;
 
 此属性返回 Acrobat 页面视图窗口的矩形区域（屏幕坐标数组）。页面视图窗口是内部文档窗口内显示实际 PDF 内容的区域。
 
-*类型：Numbers 数组*
+类型：Numbers 数组  
+访问：R。
 
-*访问：R。*
-
-另见 [innerAppWindowRect](innerAppWindowRect)、[outerDocWindowRect](outerDocWindowRect)、[outerAppWindowRect](outerAppWindowRect) 和 [outerDocWindowRect](outerDocWindowRect)。
+另见`innerAppWindowRect`、`outerDocWindowRect`、`outerAppWindowRect`和`outerDocWindowRect`。
 
 ## permStatusReady
 
-指示本文档的权限是否已解析。如果文档不可用（例如通过网络连接下载时），并且权限基于覆盖整个文档的签名来确定，则可能返回 **false**。此类文档将以作者签名进行签名。
+指示本文档的权限是否已解析。如果文档不可用（例如通过网络连接下载时），并且权限基于覆盖整个文档的签名来确定，则可能返回 `false`。此类文档将以作者签名进行签名。
 
-*类型：Boolean*
-
-*访问：R。*
+类型：Boolean  
+访问：R。
 
 ## producer
 
-文档的创建者（例如 "Acrobat Distiller"、"PDFWriter" 等）。另见 **info**，此属性在较新版本中已被其取代。
+文档的创建者（例如 `"Acrobat Distiller"`、`"PDFWriter"` 等）。另见`info`，此属性在较新版本中已被其取代。
 
-类型：String 访问：R。
+类型：String  
+访问：R。
 
 ## requiresFullSave
 
-属性 **requiresFullSave** 是一个布尔值，如果文档因是临时创建或新创建而需要完整保存，则为 **true**；否则 **requiresFullSave** 为 false。
+属性`requiresFullSave`是一个布尔值，如果文档因是临时创建或新创建而需要完整保存，则为`true`；否则`requiresFullSave`为`false`。
 
-类型：Boolean 访问：R。
+类型：Boolean  
+访问：R。
 
-```
-Example
+```javascript
 var oDoc = app.newDoc();
 console.println("It is " + oDoc.requiresFullSave
     + " that this document requires a full save.");
@@ -8015,100 +8352,105 @@ console.println("It is " + oDoc.requiresFullSave
 
 ## securityHandler
 
-用于加密文档的安全处理程序的名称。如果没有安全处理程序（例如，文档未加密），则返回 **null**。
+用于加密文档的安全处理程序的名称。如果没有安全处理程序（例如，文档未加密），则返回`null`。
 
-类型：String | null 访问：R。
+类型：String | null  
+访问：R。
 
-```
-Example
+```javascript
 console.println(this.securityHandler != null ?
     "This document is encrypted with " + this.securityHandler
     + " security." : "This document is unencrypted.");
-This could print out the following if the document was encrypted with the standard security handler.
-    This document is encrypted with Standard security.
 ```
 
-## Acrobat JavaScript 脚本参考
+如果文档使用标准安全处理程序加密，则可能输出以下内容：
 
-Doc 属性
+```text
+This document is encrypted with Standard security.
+```
 
 ## selectedAnnots
 
 与用户当前选择的每个标记注释相对应的 Annot 对象数组。
 
-另见 getAnnot 和 getAnnots。
+另见`getAnnot()`和`getAnnots()`。
 
 类型：Array
+
 访问：R。
 
-## 示例
+### 示例
 
 在控制台中显示所选注释的所有注释。
 
-```
+```javascript
 var aAnnots = this.selectedAnnots;
-for (var i=0; i < aAnnots.length; i++)
+for (var i = 0; i < aAnnots.length; i++) {
     console.println(aAnnots[i].contents);
+}
 ```
 
 ## sounds
 
 包含文档中所有命名声音对象的数组。
 
-另见 getSound、importSound、deleteSound 和 Sound 对象。
+另见`getSound()`、`importSound()`、`deleteSound()`和 Sound 对象。
 
 类型：Array
+
 访问：R。
 
-## 示例
+### 示例
 
-```
+```javascript
 var s = this.sounds;
-for (i = 0; i < s.length; i++)
+for (i = 0; i < s.length; i++) {
     console.println("Sound[" + i + "]=" + s[i].name);
+}
 ```
 
 ## spellDictionaryOrder
 
 获取或设置本文档的字典数组搜索顺序。例如，如果用户正在填写医疗表单，表单设计者可能希望指定首先搜索医学词典，然后再搜索用户的首选顺序。
 
-拼写插件首先在此数组中搜索单词，然后搜索用户在拼写偏好设置面板上选择的字典。用户的首选顺序是
+拼写插件首先在此数组中搜索单词，然后搜索用户在拼写偏好设置面板上选择的字典。用户的首选顺序是通过`spell.dictionaryOrder`获取。使用`spell.dictionaryNames`可以获取当前已安装字典的数组。
 
-可通过 **spell.dictionaryOrder** 获取。使用 **spell.dictionaryNames** 可以获取当前已安装字典的数组。
+**注意：** 设置此属性时，如果数组中的任何元素不是有效的字典名称，将会抛出异常。
 
-**注意**：设置此属性时，如果数组中的任何元素不是有效的字典名称，将会抛出异常。
-
-类型：数组 访问权限：读/写。
+类型：数组  
+访问权限：读/写。
 
 ## spellLanguageOrder
 
-此属性可用于访问或指定本文档的多语言数组搜索顺序。拼写插件会首先在此数组中搜索单词，然后在用户于拼写偏好设置面板上选择的语言中搜索。用户的首选顺序可通过 **spell.languageOrder** 获取。使用 **spell.languages** 属性可以获取当前已安装语言的数组。
+此属性可用于访问或指定本文档的多语言数组搜索顺序。拼写插件会首先在此数组中搜索单词，然后在用户于拼写偏好设置面板上选择的语言中搜索。用户的首选顺序可通过`spell.languageOrder`获取。使用`spell.languages`属性可以获取当前已安装语言的数组。
 
-类型：数组 访问权限：读/写。
+类型：数组  
+访问权限：读/写。
 
 ## subject
 
-文档的主题。另请参阅 **info**，该属性在更高版本中取代了此属性。
+文档的主题。另请参阅`info`，该属性在更高版本中取代了此属性。
 
-**注意**：此属性在 Adobe Reader 中为只读。
+**注意：** 此属性在 Adobe Reader 中为只读。
 
-类型：字符串 访问权限：读/写。
+类型：字符串  
+访问权限：读/写。
 
 ## templates
 
-文档中所有模板对象的数组。另请参阅 **createTemplate**、**getTemplate** 和 **removeTemplate**。
+文档中所有模板对象的数组。另请参阅`createTemplate()`、`getTemplate()`和`removeTemplate()`。
 
-类型：数组 访问权限：只读。
+类型：数组  
+访问权限：只读。
 
-## 示例
+### 示例
 
 列出文档中的所有模板。
 
-```
-var t = this.templates
-for ( var i=0; i < t.length; i++)
-{
-    var state = (t[i].hidden) ? "visible" : "hidden"
+```javascript
+var t = this.templates;
+for (var i = 0; i < t.length; i++) {
+    var state = (t[i].hidden) ? "visible" : "hidden";
     console.println("Template: \"" + t[i].name + "\", current state: " + state);
 }
 ```
@@ -8117,59 +8459,71 @@ for ( var i=0; i < t.length; i++)
 
 ## title
 
-文档的标题。另请参阅 **info**，该属性在更高版本中取代了此属性。
+文档的标题。另请参阅`info`，该属性在更高版本中取代了此属性。
 
 **注意：** 此属性在 Adobe Reader 中为只读。
 
 类型：字符串
+
 访问权限：读/写。
 
 ## URL
 
-文档的 URL。如果文档是本地文档，则返回一个使用 `file:///` 方案（适用于 Windows 和 Unix 操作系统）或 `file://localhost/` 方案（适用于 Mac OS 操作系统）的 URL。这可能与 **baseURL** 不同。
+文档的 URL。如果文档是本地文档，则返回一个使用`file:///`方案（适用于 Windows 和 Unix 操作系统）或`file://localhost/`方案（适用于 Mac OS 操作系统）的 URL。这可能与`baseURL`不同。
 
 类型：字符串
+
 访问权限：只读。
-另请参阅 `doc.path` 和 `doc.documentFileName`。
+
+另请参阅`doc.path`和`doc.documentFileName`。
 
 ## zoom
 
 获取或设置当前页面的缩放级别。允许的值范围在 8.33% 到 6400% 之间，以百分比数字指定，例如，缩放值 100 表示 100%。
 
 类型：数字
+
 访问权限：读/写。
 
-## 示例
+### 示例
 
 此示例将缩放级别放大到当前的两倍。
-`this.zoom *= 2;`
+
+```javascript
+this.zoom *= 2;
+```
 
 此示例将缩放级别设置为 200%。
-`this.zoom = 200;`
+
+```javascript
+this.zoom = 200;
+```
 
 ## zoomType
 
 文档的当前缩放类型。下表列出了有效的缩放类型。
-便捷对象 **zoomtype** 定义了所有有效的缩放类型，用于访问所有缩放类型。
+
+便捷对象`zoomtype`定义了所有有效的缩放类型，用于访问所有缩放类型。
 
 | 缩放类型 | 关键字 | 版本 |
-| :--- | :--- | :--- |
-| 无变化 | `zoomtype.none` | |
-| 适合页面 | `zoomtype.fitP` | |
-| 适合宽度 | `zoomtype.fitW` | |
-| 适合高度 | `zoomtype.fitH` | |
-| 适合可见宽度 | `zoomtype.fitV` | |
-| 首选 | `zoomtype.pref` | |
+| --- | --- | --- |
+| 无变化 | `zoomtype.none` |  |
+| 适合页面 | `zoomtype.fitP` |  |
+| 适合宽度 | `zoomtype.fitW` |  |
+| 适合高度 | `zoomtype.fitH` |  |
+| 适合可见宽度 | `zoomtype.fitV` |  |
+| 首选 | `zoomtype.pref` |  |
 | 重排宽度 | `zoomtype.refW` | 6.0 |
 
-*类型：* 字符串
-*访问权限：* 读/写。
+类型：字符串
 
-## 示例
+访问权限：读/写。
+
+### 示例
 
 此示例将文档的缩放类型设置为适合宽度。
 
-```
+```javascript
 this.zoomType = zoomtype.fitW;
 ```
 
@@ -8177,12 +8531,12 @@ this.zoomType = zoomtype.fitW;
 
 ## addAnnot
 
-创建一个具有指定属性的 **annot** 对象。未指定的属性将使用指定 **type** 注释的默认值。
+创建一个具有指定属性的`annot`对象。未指定的属性将使用指定`type`注释的默认值。
 
 ### 参数
 
-| objectLiteral | 一个泛型对象，用于指定要创建的 **annot** 对象的属性，例如 `type`、`rect` 和 `page`。 |
-|---|---|
+| objectLiteral | 一个泛型对象，用于指定要创建的`annot`对象的属性，例如`type`、`rect`和`page`。 |
+| --- | --- |
 
 ### 返回值
 
@@ -8192,21 +8546,20 @@ this.zoomType = zoomtype.fitW;
 
 此示例创建一个“矩形”注释。
 
-```
+```javascript
 var sqannot = this.addAnnot({type: "Square", page: 0});
 ```
 
-这是一个最简示例；sqannot 将被创建为类型为“Square”的注释，位于第一页（页面编号从 0 开始）。
+这是一个最简示例；`sqannot`将被创建为类型为“Square”的注释，位于第一页（页面编号从 0 开始）。
 
 ### 示例 2
 
-```
-var annot = this.addAnnot
-({
+```javascript
+var annot = this.addAnnot({
     page: 0,
     type: "Text",
     author: "A. C. Robat",
-    point: [300,400],
+    point: [300, 400],
     strokeColor: color.yellow,
     contents: "Need a little help with this paragraph.",
     noteIcon: "Help"
@@ -8215,7 +8568,7 @@ var annot = this.addAnnot
 
 ### 示例 3
 
-```
+```javascript
 var annot = this.addAnnot({
     page: 0,
     type: "Square",
@@ -8229,6 +8582,8 @@ var annot = this.addAnnot({
 ### 示例 4
 
 下面是一个形状为三叶玫瑰的精美墨迹注释。
+
+
 
 ```
 var inch = 72, x0 = 2*inch, y0 = 4*inch;
@@ -8255,21 +8610,22 @@ var annot = this.addAnnot({
 
 ## addField
 
-创建一个新的表单域，并将其作为 [域对象](https://example.com) 返回。
+创建一个新的表单域，并将其作为[域对象](https://example.com)返回。
 
-> 注意：（版本 6.0 及更高版本）：从版本 6.0 开始，对于具有“高级表单功能”的文档，现在可以在 Adobe Reader 内部使用 `doc.addField`。
+> 注意：（版本 6.0 及更高版本）：从版本 6.0 开始，对于具有“高级表单功能”的文档，现在可以在 Adobe Reader 内部使用`doc.addField`。
 
 ### 参数
 
-| cName | 要创建的新域的名称。此名称可以使用点分隔符语法来表示层次结构（例如，`name.last` 创建父节点 `name` 和子节点 `last`）。 |
+| 参数 | 描述 |
 |---|---|
-| cFieldType | 要创建的表单域类型。有效类型为：text、button、combobox、listbox、checkbox、radiobutton、signature |
-| nPageNum | 要添加域的页面的从 0 开始的索引。 |
-| oCoords | 旋转用户空间中的四个数字组成的数组，用于指定表单域的大小和位置。这四个数字是边界矩形的坐标，按以下顺序排列：左上角 x、左上角 y、右下角 x 和右下角 y。另请参阅 `field.rect`。注意：如果您使用信息面板获取边界矩形的坐标，则必须将它们从信息空间转换到旋转用户空间。为此，请用屏幕上的页面高度减去信息空间的 y 坐标。 |
+| `cName` | 要创建的新域的名称。此名称可以使用点分隔符语法来表示层次结构（例如，`name.last`创建父节点`name`和子节点`last`）。 |
+| `cFieldType` | 要创建的表单域类型。有效类型为：`text`、`button`、`combobox`、`listbox`、`checkbox`、`radiobutton`、`signature`。 |
+| `nPageNum` | 要添加域的页面的从 0 开始的索引。 |
+| `oCoords` | 旋转用户空间中的四个数字组成的数组，用于指定表单域的大小和位置。这四个数字是边界矩形的坐标，按以下顺序排列：左上角 x、左上角 y、右下角 x 和右下角 y。另请参阅`field.rect`。注意：如果您使用信息面板获取边界矩形的坐标，则必须将它们从信息空间转换到旋转用户空间。为此，请用屏幕上的页面高度减去信息空间的 y 坐标。 |
 
 ### 返回值
 
-新创建的 [域对象](https://example.com)。
+新创建的[域对象](https://example.com)。
 
 ### 示例
 
@@ -8300,50 +8656,53 @@ for (var p = 0; p < this.numPages; p++) {
 }
 ```
 
-另请参阅 [field.setAction](https://example.com) 获取另一个示例。
+另请参阅[field.setAction](https://example.com)获取另一个示例。
 
 ## addIcon
 
-向文档级图标树添加一个新的命名 [图标泛型对象](https://example.com)，并将其存储在指定的名称下。
+向文档级图标树添加一个新的命名[图标泛型对象](https://example.com)，并将其存储在指定的名称下。
 
-另请参阅 [icons](https://example.com)、[getIcon](https://example.com)、[importIcon](https://example.com)、[removeIcon](https://example.com) 以及 [field](https://example.com) 方法 [buttonGetIcon](https://example.com)、[buttonImportIcon](https://example.com) 和 [buttonSetIcon](https://example.com)。
+另请参阅[icons](https://example.com)、[getIcon](https://example.com)、[importIcon](https://example.com)、[removeIcon](https://example.com)以及[field](https://example.com)方法[buttonGetIcon](https://example.com)、[buttonImportIcon](https://example.com)和[buttonSetIcon](https://example.com)。
 
+### 参数
 
+| 参数 | 描述 |
+|---|---|
+| `cName` | 新对象的名称。 |
+| `icon` | 要添加的图标通用对象。 |
 
-# 参数
+### 返回值
 
-| **cName** | 新对象的名称 |
-| **icon** | 要添加的图标通用对象。 |
+无。
 
-# 返回值
+### 示例
 
-无
-
-# 示例
-
-此示例获取已附加到文档中表单按钮字段的图标，并为其分配一个名称。此名称可用于通过 `getIcon` 检索图标对象，以便在另一个按钮中使用。
+此示例获取已附加到文档中表单按钮字段的图标，并为其分配一个名称。此名称可用于通过`getIcon`检索图标对象，以便在另一个按钮中使用。
 
 ```
 var f = this.getField("myButton");
 this.addIcon("myButtonIcon", f.buttonGetIcon());
 ```
 
-# addLink
+## addLink
 
 | 6.0 | Ⓓ | Ⓧ |
+|---|---|---|
 
-向指定页面添加一个新链接，前提是用户有权限向文档添加链接。另请参阅 getLinks、removeLinks 和 Link 对象。
+向指定页面添加一个新链接，前提是用户有权限向文档添加链接。另请参阅`getLinks`、`removeLinks`和`Link`对象。
 
-# 参数
+### 参数
 
-| **nPage** | 要添加新链接的页面。 |
-| **oCoords** | *旋转用户空间* 中的四个数字数组，用于指定链接的大小和位置。这四个数字是边界矩形的坐标，按以下顺序列出：左上角 x、左上角 y、右下角 x 和右下角 y。 |
+| 参数 | 描述 |
+|---|---|
+| `nPage` | 要添加新链接的页面。 |
+| `oCoords` | *旋转用户空间*中的四个数字数组，用于指定链接的大小和位置。这四个数字是边界矩形的坐标，按以下顺序列出：左上角 x、左上角 y、右下角 x 和右下角 y。 |
 
-# 返回值
+### 返回值
 
-新创建的 Link 对象。
+新创建的`Link`对象。
 
-# 示例 1
+### 示例 1
 
 在当前文档每页的左下角和右下角创建简单的导航链接。左下角的链接转到上一页；右下角的链接转到下一页。
 
@@ -8369,11 +8728,11 @@ for ( var i=0; i < this.numPages; i++)
 }
 ```
 
-有关设置链接属性和操作的信息，请参阅 Link 对象。
+有关设置链接属性和操作的信息，请参阅`Link`对象。
 
-# 示例 2
+### 示例 2
 
-在文档中搜索单词 “Acrobat”，并在该单词周围创建一个链接。
+在文档中搜索单词“Acrobat”，并在该单词周围创建一个链接。
 
 ```
 for (var p = 0; p < this.numPages; p++)
@@ -8401,34 +8760,34 @@ for (var p = 0; p < this.numPages; p++)
 }
 ```
 
-Matrix2D 对象及其方法在 Annots.js 文件中定义。
+`Matrix2D`对象及其方法在`Annots.js`文件中定义。
 
-# addRecipientListCryptFilter
+## addRecipientListCryptFilter
 
 此方法向此文档添加一个加密筛选器。加密筛选器用于加密数据对象。
 
-另请参阅 **doc.importDataObject**、**doc.createDataObject** 和 **doc.setDataObjectContents** 方法的 **cCryptFilter** 参数。
+另请参阅`doc.importDataObject`、`doc.createDataObject`和`doc.setDataObjectContents`方法的`cCryptFilter`参数。
 
-> **注意:** (Security ⓢ)：只能在批处理、应用程序初始化、菜单或控制台事件期间执行。另请参阅 特权与非特权上下文。
+> **注意：**（Security Ⓢ）：只能在批处理、应用程序初始化、菜单或控制台事件期间执行。另请参阅特权与非特权上下文。
 
-从 Acrobat 7.0 开始，通过菜单事件执行 JavaScript 不再是特权操作，详情请参阅 通过菜单执行 JavaScript。
+从 Acrobat 7.0 开始，通过菜单事件执行 JavaScript 不再是特权操作，详情请参阅通过菜单执行 JavaScript。
 
 在 Adobe Reader 中不可用。
 
-# 参数
+### 参数
 
 | 参数 | 描述 |
-| --- | --- |
-| **cCryptFilter** | 加密筛选器的语言无关名称。相同的名称应作为 **Doc 对象** 方法 **importDataObject**、**createDataObject** 和 **setDataObjectContents** 的 **cCryptFilter** 参数值使用。 |
-| **oGroup** | 一个 **Group 对象** 数组，列出了需要加密数据的接收者。 |
+|---|---|
+| `cCryptFilter` | 加密筛选器的语言无关名称。相同的名称应作为`Doc`对象方法`importDataObject`、`createDataObject`和`setDataObjectContents`的`cCryptFilter`参数值使用。 |
+| `oGroup` | 一个`Group`对象数组，列出了需要加密数据的接收者。 |
 
-# 返回值
+### 返回值
 
-无
+无。
 
-# 示例
+### 示例
 
-此脚本获取查看器中当前打开的文档，并将其加密后嵌入到一个 “ePaper” 信封 PDF 文档中。此脚本是在控制台中执行的，但作为以安全方式发送 PDF 文档的较大脚本的一部分，在文件夹 JavaScript 中执行可能更合适。
+此脚本获取查看器中当前打开的文档，并将其加密后嵌入到一个“ePaper”信封 PDF 文档中。此脚本是在控制台中执行的，但作为以安全方式发送 PDF 文档的较大脚本的一部分，在文件夹 JavaScript 中执行可能更合适。
 
 ```
 var Note = "Select the list of people that you want to send this"
@@ -8445,24 +8804,24 @@ var envPath = "/c/temp/outMail.pdf";
 env.saveAs( envPath );
 ```
 
-# addScript
+## addScript
 
-为文档设置一个文档级脚本。另请参阅 **setAction**、**setPageAction**、**bookmark.setAction** 和 **field.setAction**。
+为文档设置一个文档级脚本。另请参阅`setAction`、`setPageAction`、`bookmark.setAction`和`field.setAction`。
 
-**注意：** 此方法将覆盖为 cName 已定义的任何脚本。
+**注意：**此方法将覆盖为`cName`已定义的任何脚本。
 
-# 参数
+### 参数
 
 | 名称 | 描述 |
 |---|---|
-| cName | 将要添加的脚本的名称。如果已存在同名脚本，则新脚本将替换旧脚本。 |
-| cScript | 打开文档时要执行的 JavaScript 表达式。 |
+| `cName` | 将要添加的脚本的名称。如果已存在同名脚本，则新脚本将替换旧脚本。 |
+| `cScript` | 打开文档时要执行的 JavaScript 表达式。 |
 
-# 返回值
+### 返回值
 
-无
+无。
 
-# 示例
+### 示例
 
 每次打开文档时创建一个嘟嘟声。
 
@@ -8470,74 +8829,81 @@ env.saveAs( envPath );
 this.addScript("My Code", "app.beep(0);");
 ```
 
-有关另一个示例，请参阅 **doc.disclosed** 属性后的 **示例 2**。
+有关另一个示例，请参阅`doc.disclosed`属性后的**示例 2**。
 
-# addThumbnails
+## addThumbnails
 
-为文档中的指定页面创建缩略图。另请参阅 **removeThumbnails**。
+为文档中的指定页面创建缩略图。另请参阅`removeThumbnails`。
 
-# 参数
+### 参数
 
-| **nStart** | （可选）从 0 开始的索引，定义页面包含范围的起点。如果未指定 **nStart** 和 **nEnd**，则页面范围为文档中的所有页面。如果仅指定 **nStart**，则页面范围为 **nStart** 指定的单页。 |
-| **nEnd** | （可选）从 0 开始的索引，定义页面包含范围的终点。如果未指定 **nStart** 和 **nEnd**，则页面范围为文档中的所有页面。如果仅指定 **nEnd**，则页面范围为 0 到 **nEnd**。 |
+| 参数 | 描述 |
+|---|---|
+| `nStart` | （可选）从 0 开始的索引，定义页面包含范围的起点。如果未指定`nStart`和`nEnd`，则页面范围为文档中的所有页面。如果仅指定`nStart`，则页面范围为`nStart`指定的单页。 |
+| `nEnd` | （可选）从 0 开始的索引，定义页面包含范围的终点。如果未指定`nStart`和`nEnd`，则页面范围为文档中的所有页面。如果仅指定`nEnd`，则页面范围为 0 到`nEnd`。 |
 
-# 返回值
+### 返回值
 
-无
-
-# addWatermarkFromFile
-
-| 7.0 | (D) | (S) | (X) | |
-
-将一页作为水印添加到文档中的指定页面，并将水印置于可选内容组 (OCG) 中。由于将文件转换为 PDF 文档可能会调用外部应用程序，因此此方法只能在批处理或控制台事件期间执行。
-
-请参阅 OCG 对象。
-
-> **注意：** (Security Ⓢ)：只能在批处理或控制台事件期间执行。另请参阅 特权与非特权上下文。
-
-# 参数
-
-| **cDIPath** | 用于水印的源文件的设备无关路径。如果此位置的文件不是 PDF 文件，Acrobat 将尝试将该文件转换为 PDF 文件。 |
-| **nSourcePage** | （可选）源文件中用作水印的页面的从 0 开始的索引。默认值为 0。 |
-| **nStart** | （可选）应添加水印的页面范围中第一页的从 0 开始的索引。如果未指定 **nStart** 和 **nEnd**，则页面范围为文档中的所有页面。如果仅指定 **nStart**，则页面范围为 **nStart** 指定的单页。 |
-| **nEnd** | （可选）应添加水印的页面范围中最后一页的索引。如果未指定 **nStart** 和 **nEnd**，则页面范围为文档中的所有页面。如果仅指定 **nEnd**，则页面范围为 0 到 **nEnd**。 |
-
-
+无。
 
 ## addWatermarkFromFile
 
-| **参数** | **描述** |
-|---|---|
-| **bOnTop** | （可选）一个布尔值，指示所需水印的 z 轴顺序。值为 **true** 会将水印添加到所有其他页面内容之上。值为 **false** 会将水印添加到所有其他页面内容之下。如果 **bFixedPrint** 为 **true**，则忽略此参数。默认为 **true**。 |
-| **bOnScreen** | （可选）一个布尔值，指示在屏幕上查看文档时是否显示水印。默认为 **true**。 |
-| **bOnPrint** | （可选）一个布尔值，指示打印文档时是否显示水印。默认为 **true**。 |
-| **nHorizAlign** | （可选）一个数字，指示水印应如何水平对齐。可能的值参见 **app.constants.align**。默认为 **app.constants.align.center**。 |
-| **nVertAlign** | （可选）一个数字，指示水印应如何垂直对齐。可能的值参见 **app.constants.align**。默认为 **app.constants.align.center**。 |
-| **nHorizValue** | （可选）用于在页面上移动水印水平位置的数字。如果 **bPercentage** 为 **true**，则此数字表示水平页面大小的百分比。如果 **bPercentage** 为 **false**，则此数字表示要偏移的点数。默认为 0。 |
-| **nVertValue** | （可选）用于在页面上移动水印垂直位置的数字。如果 **bPercentage** 为 **true**，则此数字表示垂直页面大小的百分比。如果 **bPercentage** 为 **false**，则此数字表示要偏移的点数。默认为 0。 |
-| **bPercentage** | （可选）一个布尔值，用于指示 **nHorizValue** 和 **nVertValue** 是表示页面大小的百分比还是显式的点数。默认为 **false**。 |
-| **nScale** | （可选）用于水印的缩放比例，其中 1.0 为 100%。值为 -1 指定水印在保持其比例的同时适合页面。默认为 1.0。 |
-| **bFixedPrint** | （可选）一个布尔值，用于指示此水印应作为 FixedPrint 水印注释添加。这允许水印以固定的大小/位置打印，无论打印到的页面大小如何。如果为 **true**，则忽略 **bOnTop**。默认为 **false**。 |
-| **nRotation** | （可选）水印逆时针旋转的度数。默认为 0。 |
-| **nOpacity** | （可选）用于水印的不透明度，其中 0 为透明，1.0 为不透明。默认为 1.0。 |
+| 7.0 | (D) | (S) | (X) |
+|---|---|---|---|
 
-**返回值**
+将一页作为水印添加到文档中的指定页面，并将水印置于可选内容组（OCG）中。由于将文件转换为 PDF 文档可能会调用外部应用程序，因此此方法只能在批处理或控制台事件期间执行。
+
+请参阅`OCG`对象。
+
+> **注意：**（Security Ⓢ）：只能在批处理或控制台事件期间执行。另请参阅特权与非特权上下文。
+
+### 参数
+
+| 参数 | 描述 |
+|---|---|
+| `cDIPath` | 用于水印的源文件的设备无关路径。如果此位置的文件不是 PDF 文件，Acrobat 将尝试将该文件转换为 PDF 文件。 |
+| `nSourcePage` | （可选）源文件中用作水印的页面的从 0 开始的索引。默认值为 0。 |
+| `nStart` | （可选）应添加水印的页面范围中第一页的从 0 开始的索引。如果未指定`nStart`和`nEnd`，则页面范围为文档中的所有页面。如果仅指定`nStart`，则页面范围为`nStart`指定的单页。 |
+| `nEnd` | （可选）应添加水印的页面范围中最后一页的索引。如果未指定`nStart`和`nEnd`，则页面范围为文档中的所有页面。如果仅指定`nEnd`，则页面范围为 0 到`nEnd`。 |
+
+### addWatermarkFromFile 参数
+
+| 参数 | 描述 |
+|---|---|
+| `bOnTop` | （可选）一个布尔值，指示所需水印的 z 轴顺序。值为`true`会将水印添加到所有其他页面内容之上。值为`false`会将水印添加到所有其他页面内容之下。如果`bFixedPrint`为`true`，则忽略此参数。默认为`true`。 |
+| `bOnScreen` | （可选）一个布尔值，指示在屏幕上查看文档时是否显示水印。默认为`true`。 |
+| `bOnPrint` | （可选）一个布尔值，指示打印文档时是否显示水印。默认为`true`。 |
+| `nHorizAlign` | （可选）一个数字，指示水印应如何水平对齐。可能的值参见`app.constants.align`。默认为`app.constants.align.center`。 |
+| `nVertAlign` | （可选）一个数字，指示水印应如何垂直对齐。可能的值参见`app.constants.align`。默认为`app.constants.align.center`。 |
+| `nHorizValue` | （可选）用于在页面上移动水印水平位置的数字。如果`bPercentage`为`true`，则此数字表示水平页面大小的百分比。如果`bPercentage`为`false`，则此数字表示要偏移的点数。默认为 0。 |
+| `nVertValue` | （可选）用于在页面上移动水印垂直位置的数字。如果`bPercentage`为`true`，则此数字表示垂直页面大小的百分比。如果`bPercentage`为`false`，则此数字表示要偏移的点数。默认为 0。 |
+
+
+
+| `bPercentage` | （可选）一个布尔值，用于指示 `nHorizValue` 和 `nVertValue` 是表示页面大小的百分比还是显式的点数。默认为 `false`。 |
+|---|---|
+| `nScale` | （可选）用于水印的缩放比例，其中 1.0 为 100%。值为 -1 指定水印在保持其比例的同时适合页面。默认为 1.0。 |
+| `bFixedPrint` | （可选）一个布尔值，用于指示此水印应作为 `FixedPrint` 水印注释添加。这允许水印以固定的大小/位置打印，无论打印到的页面大小如何。如果为 `true`，则忽略 `bOnTop`。默认为 `false`。 |
+| `nRotation` | （可选）水印逆时针旋转的度数。默认为 0。 |
+| `nOpacity` | （可选）用于水印的不透明度，其中 0 为透明，1.0 为不透明。默认为 1.0。 |
+
+## 返回值
 
 无
 
-**示例 1**
+## 示例 1
 
-将 watermark.pdf 的第一页作为水印添加到当前文档所有页面的中心。
+将 `watermark.pdf` 的第一页作为水印添加到当前文档所有页面的中心。
 
-```
+```javascript
 this.addWatermarkFromFile("/C/temp/watermark.pdf");
 ```
 
-**示例 2**
+## 示例 2
 
-将 watermark.pdf 的第二页作为水印添加到当前文档的前 10 页。水印将逆时针旋转 45 度，并从页面的左上角向下移动一英寸，向右移动两英寸。
+将 `watermark.pdf` 的第二页作为水印添加到当前文档的前 10 页。水印将逆时针旋转 45 度，并从页面的左上角向下移动一英寸，向右移动两英寸。
 
-```
+```javascript
 this.addWatermarkFromFile({
     cDIPath: "/C/temp/watermark.pdf",
     nSourcePage: 4, nEnd: 9,
@@ -8557,47 +8923,47 @@ this.addWatermarkFromFile({
 
 参见 [OCG 对象](https://acrobat.adobe.com/us/en/acrobat/online/ocg-object.html)。
 
-**参数**
+### 参数
 
-| **参数** | **描述** |
+| 参数 | 描述 |
 |---|---|
-| **cText** | 用作水印的文本。允许多行文本。可以使用字符 "\r" 指定换行。 |
-| **nTextAlign** | （可选）用于水印中 **cText** 的文本对齐方式。可能的值参见 **app.constants.align**。如果 **cText** 只有一行，则此参数无效。 |
-| **cFont** | （可选）用于此水印的字体。有效字体定义为 font 对象的属性，如 field.textFont 中所列。可以通过传递代表字体 PostScript 名称的字符串来使用任意字体。默认为 **font.Helv**。 |
-| **nFontSize** | （可选）用于水印的字体磅值。默认为 24。 |
-| **aColor** | （可选）用于水印的颜色。有关定义颜色数组的信息，请参见 [颜色数组](https://www.adobe.com/devnet/acrobat/javascript.html#color-arrays)。默认为 `color.black`。 |
-| **nStart** | （可选）应添加水印的页面范围中第一个页的从 0 开始的索引。如果未指定 `nStart` 和 `nEnd`，则页面范围是文档中的所有页面。如果只指定了 `nStart`，则页面范围是由 `nStart` 指定的单页。 |
-| **nEnd** | （可选）应添加水印的页面范围中的最后一页。如果未指定 `nStart` 和 `nEnd`，则页面范围是文档中的所有页面。如果只指定了 `nEnd`，则页面范围是从 0 到 `nEnd`。 |
-| **bOnTop** | （可选）一个布尔值，指示所需水印的 z 轴顺序。值为 `true` 会将水印添加到所有其他页面内容之上。值为 `false` 会将水印添加到所有其他页面内容之下。如果 `bFixedPrint` 为 `true`，则忽略此参数。默认为 `true`。 |
-| **bOnScreen** | （可选）一个布尔值，指示在屏幕上查看文档时是否显示水印。默认为 `true`。 |
-| **bOnPrint** | （可选）一个布尔值，指示打印文档时是否显示水印。默认为 `true`。 |
-| **nHorizAlign** | （可选）一个数字，指示水印应如何水平对齐。可能的值参见 `app.constants.align`。默认为 `app.constants.align.center`。 |
-| **nVertAlign** | （可选）一个数字，指示水印应如何垂直对齐。可能的值参见 `app.constants.align`。默认为 `app.constants.align.center`。 |
-| **nHorizValue** | （可选）用于在页面上移动水印水平位置的数字。如果 `bPercentage` 为 `true`，则此数字表示水平页面大小的百分比。如果 `bPercentage` 为 `false`，则此数字表示要偏移的点数。默认为 0。 |
-| **nVertValue** | （可选）用于在页面上移动水印垂直位置的数字。如果 `bPercentage` 为 `true`，则此数字表示垂直页面大小的百分比。如果 `bPercentage` 为 `false`，则此数字表示要偏移的点数。默认为 0。 |
-| **bPercentage** | （可选）一个布尔值，用于指示 **nHorizValue** 和 **nVertValue** 是表示页面大小的百分比还是显式的点数。默认为 **false**。 |
-| **nScale** | （可选）用于水印的缩放比例，其中 1.0 为 100%。值为 -1 指定水印在保持其比例的同时适合页面。默认为 1.0。 |
-| **bFixedPrint** | （可选）一个布尔值，用于指示此水印应作为 FixedPrint 水印注释添加。这允许水印以固定的大小/位置打印，无论打印到的页面大小如何。如果为 **true**，则忽略 **bOnTop**。默认为 **false**。 |
-| **nRotation** | （可选）水印逆时针旋转的度数。默认为 0。 |
-| **nOpacity** | （可选）用于水印的不透明度，其中 0 为透明，1.0 为不透明。默认为 1.0。 |
+| `cText` | 用作水印的文本。允许多行文本。可以使用字符 `"\r"` 指定换行。 |
+| `nTextAlign` | （可选）用于水印中 `cText` 的文本对齐方式。可能的值参见 `app.constants.align`。如果 `cText` 只有一行，则此参数无效。 |
+| `cFont` | （可选）用于此水印的字体。有效字体定义为 `font` 对象的属性，如 `field.textFont` 中所列。可以通过传递代表字体 PostScript 名称的字符串来使用任意字体。默认为 `font.Helv`。 |
+| `nFontSize` | （可选）用于水印的字体磅值。默认为 24。 |
+| `aColor` | （可选）用于水印的颜色。有关定义颜色数组的信息，请参见[颜色数组](https://www.adobe.com/devnet/acrobat/javascript.html#color-arrays)。默认为 `color.black`。 |
+| `nStart` | （可选）应添加水印的页面范围中第一个页的从 0 开始的索引。如果未指定 `nStart` 和 `nEnd`，则页面范围是文档中的所有页面。如果只指定了 `nStart`，则页面范围是由 `nStart` 指定的单页。 |
+| `nEnd` | （可选）应添加水印的页面范围中的最后一页。如果未指定 `nStart` 和 `nEnd`，则页面范围是文档中的所有页面。如果只指定了 `nEnd`，则页面范围是从 0 到 `nEnd`。 |
+| `bOnTop` | （可选）一个布尔值，指示所需水印的 z 轴顺序。值为 `true` 会将水印添加到所有其他页面内容之上。值为 `false` 会将水印添加到所有其他页面内容之下。如果 `bFixedPrint` 为 `true`，则忽略此参数。默认为 `true`。 |
+| `bOnScreen` | （可选）一个布尔值，指示在屏幕上查看文档时是否显示水印。默认为 `true`。 |
+| `bOnPrint` | （可选）一个布尔值，指示打印文档时是否显示水印。默认为 `true`。 |
+| `nHorizAlign` | （可选）一个数字，指示水印应如何水平对齐。可能的值参见 `app.constants.align`。默认为 `app.constants.align.center`。 |
+| `nVertAlign` | （可选）一个数字，指示水印应如何垂直对齐。可能的值参见 `app.constants.align`。默认为 `app.constants.align.center`。 |
+| `nHorizValue` | （可选）用于在页面上移动水印水平位置的数字。如果 `bPercentage` 为 `true`，则此数字表示水平页面大小的百分比。如果 `bPercentage` 为 `false`，则此数字表示要偏移的点数。默认为 0。 |
+| `nVertValue` | （可选）用于在页面上移动水印垂直位置的数字。如果 `bPercentage` 为 `true`，则此数字表示垂直页面大小的百分比。如果 `bPercentage` 为 `false`，则此数字表示要偏移的点数。默认为 0。 |
+| `bPercentage` | （可选）一个布尔值，用于指示 `nHorizValue` 和 `nVertValue` 是表示页面大小的百分比还是显式的点数。默认为 `false`。 |
+| `nScale` | （可选）用于水印的缩放比例，其中 1.0 为 100%。值为 -1 指定水印在保持其比例的同时适合页面。默认为 1.0。 |
+| `bFixedPrint` | （可选）一个布尔值，用于指示此水印应作为 `FixedPrint` 水印注释添加。这允许水印以固定的大小/位置打印，无论打印到的页面大小如何。如果为 `true`，则忽略 `bOnTop`。默认为 `false`。 |
+| `nRotation` | （可选）水印逆时针旋转的度数。默认为 0。 |
+| `nOpacity` | （可选）用于水印的不透明度，其中 0 为透明，1.0 为不透明。默认为 1.0。 |
 
-**返回值**
+### 返回值
 
 无
 
-**示例 1**
+### 示例 1
 
-将 "Confidential" 作为水印添加到当前文档所有页面的中心。
+将 `"Confidential"` 作为水印添加到当前文档所有页面的中心。
 
+```javascript
+this.addWatermarkFromText("Confidential", 0, font.Helv, 24, color.red);
 ```
-this.addWatermarkFromText ("Confidential", 0, font.Helv, 24, color.red);
-```
 
-**示例 2**
+### 示例 2
 
 在当前文档的每一页上添加一个多行水印，该水印从页面的右上角向下移动一英寸，向左移动一英寸。
 
-```
+```javascript
 this.addWatermarkFromText({
     cText: "Confidential Document\rA. C. Robat",
     nTextAlign: app.constants.align.right,
@@ -8609,29 +8975,27 @@ this.addWatermarkFromText({
 
 ## addWeblinks
 
-扫描指定页面，查找包含 **http:** 方案的文本实例，并将其转换为带有 URL 操作的链接。
+扫描指定页面，查找包含 `http:` 方案的文本实例，并将其转换为带有 URL 操作的链接。
 
-另请参见 **removeWeblinks**。
+另请参见 `removeWeblinks`。
 
+### 文档方法
 
+#### 参数
 
-## 文档方法
+| `nStart` | （可选）一个基于 0 的索引，用于定义包含页范围的起始点。如果未指定 `nStart` 和 `nEnd`，则页面范围为文档中的所有页面。如果仅指定 `nStart`，则页面范围为 `nStart` 指定的单个页面。 |
+|---|---|
+| `nEnd` | （可选）一个基于 0 的索引，用于定义包含页范围的结束点。如果未指定 `nStart` 和 `nEnd`，则页面范围为文档中的所有页面。如果仅指定 `nEnd`，则页面范围为从 0 到 `nEnd`。 |
 
-### 参数
-
-| nStart | （可选）一个基于 0 的索引，用于定义包含页范围的起始点。如果未指定 nStart 和 nEnd，则页面范围为文档中的所有页面。如果仅指定 nStart，则页面范围为 nStart 指定的单个页面。 |
-| --- | --- |
-| nEnd | （可选）一个基于 0 的索引，用于定义包含页范围的结束点。如果未指定 nStart 和 nEnd，则页面范围为文档中的所有页面。如果仅指定 nEnd，则页面范围为从 0 到 nEnd。 |
-
-### 返回值
+#### 返回值
 
 添加到文档中的网络链接数量。
 
-### 示例
+#### 示例
 
 搜索整个文档，并将所有看起来像网络地址的内容转换为网络链接。报告创建的链接数量。
 
-```
+```javascript
 var numWeblinks = this.addWeblinks();
 console.println("There were " + numWeblinks + "
     instances of text that looked like a web address,"
@@ -8641,7 +9005,7 @@ console.println("There were " + numWeblinks + "
 ## bringToFront
 
 | 5.0 | | | |
-| --- | --- | --- | --- |
+|---|---|---|---|
 
 如果当前打开在查看器中的文档不在最前面，则将其带到前台。
 
@@ -8655,9 +9019,9 @@ console.println("There were " + numWeblinks + "
 
 ### 示例
 
-此示例在查看器中打开的文档中搜索标题为 "Annual Report" 的文档，并将其带到前台。
+此示例在查看器中打开的文档中搜索标题为 `"Annual Report"` 的文档，并将其带到前台。
 
-```
+```javascript
 var d = app.activeDocs; // lists only disclosed documents
 for (var i = 0; i < d.length; i++)
     if (d[i].info.Title == "Annual Report") d[i].bringToFront();
@@ -8666,7 +9030,7 @@ for (var i = 0; i < d.length; i++)
 ## calculateNow
 
 | 3.01 | | | |
-| --- | --- | --- | --- |
+|---|---|---|---|
 
 强制计算当前文档中的所有计算字段。
 
@@ -8682,7 +9046,7 @@ for (var i = 0; i < d.length; i++)
 
 当表单包含大量计算时，即使用户输入数据的字段不是计算字段，在输入后也可能出现显著延迟。一种策略是在某个时间点关闭计算，然后在稍后时间点重新打开。
 
-```
+```javascript
 // turn off calculations
 this.calculate = false;
 .....
@@ -8697,18 +9061,18 @@ this.calculateNow();
 ## closeDoc
 
 | 5.0 | | Ⓢ | |
-| --- | --- | --- | --- |
+|---|---|---|---|
 
 关闭文档。
 
-> **注意：**（文档保存权限 Ⓢ）：对于 Adobe Reader 5.1 或更高版本，此方法始终被允许。但是，如果文档已被修改且没有 *文档保存权限*，则文档将无任何警告地关闭，且更改会丢失。如果 *文档保存权限* 可用，用户将获得保存已更改文件的选项。请谨慎使用此方法，因为它会突然改变文档状态，可能影响关闭后执行的任何 JavaScript。从页面事件或文档事件触发此方法可能导致应用程序行为异常。
+> **注意：**（文档保存权限 Ⓢ）：对于 Adobe Reader 5.1 或更高版本，此方法始终被允许。但是，如果文档已被修改且没有*文档保存权限*，则文档将无任何警告地关闭，且更改会丢失。如果*文档保存权限*可用，用户将获得保存已更改文件的选项。请谨慎使用此方法，因为它会突然改变文档状态，可能影响关闭后执行的任何 JavaScript。从页面事件或文档事件触发此方法可能导致应用程序行为异常。
 
-> **注意：** 在 Acrobat 7.0 之前的版本中，通过执行 **this.closeDoc** 自行关闭的文档会终止其后的任何脚本。在 Acrobat 7.0 中，允许脚本继续执行并自然终止；但是，如果引用已关闭文档的 **doc** 对象，将抛出异常。
+> **注意：** 在 Acrobat 7.0 之前的版本中，通过执行 `this.closeDoc` 自行关闭的文档会终止其后的任何脚本。在 Acrobat 7.0 中，允许脚本继续执行并自然终止；但是，如果引用已关闭文档的 `doc` 对象，将抛出异常。
 
 ### 参数
 
-| bNoSave | （可选）是否在不保存的情况下关闭文档。如果为 **false**（默认值），则在文档已修改时会提示用户保存文档。如果为 **true**，则文档将在不提示用户且不保存的情况下关闭，即使文档已修改。由于这可能导致未经用户批准的数据丢失，请谨慎使用此功能。 |
-| --- | --- |
+| `bNoSave` | （可选）是否在不保存的情况下关闭文档。如果为 `false`（默认值），则在文档已修改时会提示用户保存文档。如果为 `true`，则文档将在不提示用户且不保存的情况下关闭，即使文档已修改。由于这可能导致未经用户批准的数据丢失，请谨慎使用此功能。 |
+|---|---|
 
 ### 返回值
 
@@ -8718,54 +9082,54 @@ this.calculateNow();
 
 从控制台关闭所有打开的文档。
 
-```
+```javascript
 var d = app.activeDocs;
-for( var i in d ) d[i].closeDoc();
+for (var i in d) d[i].closeDoc();
 ```
 
-以下代码可以作为在查看器中打开的文档的鼠标松开动作执行。它关闭在查看器中打开的所有 *已公开* 的文档。该代码的设计目的是最后关闭活动文档，以避免代码执行被突然终止。
+以下代码可以作为在查看器中打开的文档的鼠标松开动作执行。它关闭在查看器中打开的所有*已公开*的文档。该代码的设计目的是最后关闭活动文档，以避免代码执行被突然终止。
 
-```
+```javascript
 var d = app.activeDocs;
-for( var i in d )
-    if( d[i] != this ) d[i].closeDoc();
-if ( this.disclosed ) this.closeDoc();
+for (var i in d)
+    if (d[i] != this) d[i].closeDoc();
+if (this.disclosed) this.closeDoc();
 ```
 
 ### 示例 2
 
-创建三个测试文件并将其保存到目录中。此代码需要在控制台中执行，因为 **saveAs** 存在安全限制。
+创建三个测试文件并将其保存到目录中。此代码需要在控制台中执行，因为 `saveAs` 存在安全限制。
 
-```
+```javascript
 var myDoc = app.newDoc();
-for (var i=0; i < 3; i++) {
+for (var i = 0; i < 3; i++) {
     myDoc.info.Title = "Test File " + i;
-    myDoc.saveAs("/c/temp/test"+i+".pdf");
+    myDoc.saveAs("/c/temp/test" + i + ".pdf");
 }
 myDoc.closeDoc(true);
 ```
 
-有关 **closeDoc** 的另一个示例，请参阅 **saveAs**。
+有关 `closeDoc` 的另一个示例，请参阅 `saveAs`。
 
 ## createDataObject
 
 | 5.0 | ⓓ | | ⓕ | |
-| --- | --- | --- | --- | --- |
+|---|---|---|---|---|
 
 创建数据对象。
 
-数据对象可以 *即席* 构造。如果数据是在 JavaScript 中从外部文件以外的来源创建的（例如，ADBC 数据库调用），这非常有用。
+数据对象可以*即席*构造。如果数据是在 JavaScript 中从外部文件以外的来源创建的（例如，ADBC 数据库调用），这非常有用。
 
-相关的对象、属性和方法包括 Data Object、`doc.dataObjects`、`doc.getDataObject`、`doc.openDataObject`、`doc.importDataObject`、`doc.removeDataObject`、`doc.getDataObjectContents` 和 `doc.setDataObjectContents`。
+相关的对象、属性和方法包括 `Data Object`、`doc.dataObjects`、`doc.getDataObject`、`doc.openDataObject`、`doc.importDataObject`、`doc.removeDataObject`、`doc.getDataObjectContents` 和 `doc.setDataObjectContents`。
 
 ### 参数
 
 | 参数 | 描述 |
-| --- | --- |
-| **cName** | 要与数据对象关联的名称。 |
-| **cValue** | 包含要嵌入的数据的字符串。 |
-| **cMIMEType** | （可选）数据的 MIME 类型。默认为 "text/plain"。 |
-| **cCryptFilter** | （可选，版本 6.0）在加密此数据对象时要使用的加密筛选器的语言无关名称。此加密筛选器必须之前已使用 Doc 对象的 `addRecipientListCryptFilter` 方法添加到文档的加密筛选器列表中，否则将抛出异常。如果希望此数据对象在文件中不被加密，而该文件本身已通过 Doc 对象的 `encryptForRecipients` 方法加密，则可以使用预定义的 "Identity" 加密筛选器。 |
+|---|---|
+| `cName` | 要与数据对象关联的名称。 |
+| `cValue` | 包含要嵌入的数据的字符串。 |
+| `cMIMEType` | （可选）数据的 MIME 类型。默认为 `"text/plain"`。 |
+| `cCryptFilter` | （可选，版本 6.0）在加密此数据对象时要使用的加密筛选器的语言无关名称。此加密筛选器必须之前已使用 `Doc` 对象的 `addRecipientListCryptFilter` 方法添加到文档的加密筛选器列表中，否则将抛出异常。如果希望此数据对象在文件中不被加密，而该文件本身已通过 `Doc` 对象的 `encryptForRecipients` 方法加密，则可以使用预定义的 `"Identity"` 加密筛选器。 |
 
 ### 返回值
 
@@ -8773,7 +9137,7 @@ myDoc.closeDoc(true);
 
 ### 示例
 
-```
+```javascript
 this.createDataObject("MyData.txt", "This is some data.");
 ```
 
@@ -8782,76 +9146,78 @@ this.createDataObject("MyData.txt", "This is some data.");
 ## createTemplate
 
 | 5.0 | Ⓓ | Ⓢ | |
-| --- | --- | --- | --- |
+|---|---|---|---|
 
-根据指定页面创建可见模板。另请参阅 `doc.templates`、`doc.getTemplate`、`doc.removeTemplate` 方法以及 Template Object。
+根据指定页面创建可见模板。另请参阅 `doc.templates`、`doc.getTemplate`、`doc.removeTemplate` 方法以及 `Template Object`。
 
-**注意：**（安全 Ⓢ）：此方法只能在批处理、控制台或菜单事件期间执行。另请参阅特权上下文与非特权上下文。事件对象包含对 Acrobat JavaScript 事件的讨论。从 Acrobat 7.0 开始，通过菜单事件执行 JavaScript 不再是特权操作，有关详细信息，请参阅通过菜单执行 JavaScript。（版本 7.0）在 Adobe Reader 5.1 及更高版本中，此方法在具有高级表单功能权限（Ⓕ）时被允许，但从本版本的 Adobe Reader 开始，此方法不被允许，并将抛出 NotAllowedError 异常。
+**注意：**（安全 Ⓢ）：此方法只能在批处理、控制台或菜单事件期间执行。另请参阅特权上下文与非特权上下文。事件对象包含对 Acrobat JavaScript 事件的讨论。从 Acrobat 7.0 开始，通过菜单事件执行 JavaScript 不再是特权操作，有关详细信息，请参阅通过菜单执行 JavaScript。（版本 7.0）在 Adobe Reader 5.1 及更高版本中，此方法在具有高级表单功能权限（Ⓕ）时被允许，但从本版本的 Adobe Reader 开始，此方法不被允许，并将抛出 `NotAllowedError` 异常。
 
 ### 参数
 
 | 参数 | 描述 |
-| --- | --- |
-| **cName** | 要与此页面关联的名称。 |
-| **nPage** | （可选）要操作的页面的基于 0 的索引。默认值为 0，即文档中的第一页。 |
+|---|---|
+| `cName` | 要与此页面关联的名称。 |
+| `nPage` | （可选）要操作的页面的基于 0 的索引。默认值为 0，即文档中的第一页。 |
 
 ### 返回值
 
-新创建的 Template Object。
+新创建的 `Template Object`。
 
 ### 示例
 
-将从第 2 页（基于 0）开始的所有页面转换为隐藏模板。我们需要稍加小心，因为模板是隐藏的，**this.numPages** 会被更新以反映可见页面数量的变化。请注意，在下面的循环中，只有第 2 页被设为模板然后隐藏；下一页将成为新的第 2 页。
+将从第 2 页（基于 0）开始的所有页面转换为隐藏模板。我们需要稍加小心，因为模板是隐藏的，`this.numPages` 会被更新以反映可见页面数量的变化。请注意，在下面的循环中，只有第 2 页被设为模板然后隐藏；下一页将成为新的第 2 页。
 
-```
+```javascript
 numNewTemplates = this.numPages - 2;
-for ( var i = 0; i < numNewTemplates; i++)
-{
-    var t = this.createTemplate({cName:"myTemplate"+i, nPage:2 });
+for (var i = 0; i < numNewTemplates; i++) {
+    var t = this.createTemplate({cName: "myTemplate" + i, nPage: 2});
     t.hidden = true;
 }
 ```
 
 ## deletePages
 
-从文档中删除页面。如果未指定范围的任何页面，则删除第一页（第 0 页）。另请参阅 **insertPages**、**extractPages** 和 **replacePages**。
+从文档中删除页面。如果未指定范围的任何页面，则删除第一页（第 0 页）。另请参阅 `insertPages`、`extractPages` 和 `replacePages`。
 
 > **注意：** 您无法删除文档中的所有页面：必须至少保留一页。
 
-> **注意：**（Ⓕ，版本 6.0）：从版本 6.0 开始，**doc.deletePages** 现在可以删除 Adobe Reader 中具有 "Advanced Form Features" 的文档中的 *生成* 页面。
+
+
+> **注意：**（Ⓕ，版本 6.0）：从版本 6.0 开始，`doc.deletePages` 现在可以删除 Adobe Reader 中具有 "Advanced Form Features" 的文档中的生成页面。
 
 ### 参数
 
-| nStart | （可选）要删除的页面范围中第一页的基于 0 的索引。默认值为 0，即文档中的第一页。 |
+| 参数 | 描述 |
 | --- | --- |
-| nEnd | （可选）要删除的页面范围中的最后一页。如果未指定 **nEnd**，则只删除 **nStart** 指定的页面。 |
+| `nStart` | （可选）要删除的页面范围中第一页的基于 0 的索引。默认值为 0，即文档中的第一页。 |
+| `nEnd` | （可选）要删除的页面范围中的最后一页。如果未指定 `nEnd`，则只删除 `nStart` 指定的页面。 |
 
 ### 返回值
 
 无
 
-
-
 ## 示例
 
 删除第1页到第3页（从0开始计数），包含这两页。
 
-```
+```javascript
 this.deletePages({nStart: 1, nEnd: 3});
 ```
 
 ## deleteSound
 
-| 5.0 | Ⓓ | | ⓧ | |
+| 5.0 | Ⓓ |  | ⓧ |  |
 | --- | --- | --- | --- | --- |
 
 从文档中删除具有指定名称的声音对象。
-另请参阅 sounds、getSound、importSound 和 Sound Object。
+
+另请参阅 `sounds`、`getSound`、`importSound` 和 Sound Object。
 
 ### 参数
 
-| **cName** | 要删除的声音对象的名称。 |
+| 参数 | 描述 |
 | --- | --- |
+| `cName` | 要删除的声音对象的名称。 |
 
 ### 返回值
 
@@ -8859,26 +9225,27 @@ this.deletePages({nStart: 1, nEnd: 3});
 
 ### 示例
 
-```
+```javascript
 this.deleteSound("Moo");
 ```
 
 ## embedDocAsDataObject
 
-| 7.0 | | | Ⓢ | |
+| 7.0 |  |  | Ⓢ |  |
 | --- | --- | --- | --- | --- |
 
 将指定文档作为数据对象嵌入到文档中。
 
-> **注意：** （文档保存权限 Ⓢ）：对于 Acrobat 7.0 及更高版本的 Reader，通常允许使用此方法，但如果要嵌入的文档已更改并且需要嵌入此更改后的文档，则需要该文档具有保存权限。
+> **注意：**（文档保存权限 Ⓢ）：对于 Acrobat 7.0 及更高版本的 Reader，通常允许使用此方法，但如果要嵌入的文档已更改并且需要嵌入此更改后的文档，则需要该文档具有保存权限。
 
 ### 参数
 
-| **cName** | 与数据对象关联的名称。 |
+| 参数 | 描述 |
 | --- | --- |
-| **oDoc** | 要作为数据对象嵌入的文档。 |
-| **cCryptFilter** | （可选）加密此数据对象时要使用的加密筛选器的与语言无关的名称。此加密筛选器必须先前已使用 Doc.`addRecipientListCryptFilter` 方法添加到文档的加密筛选器列表中，否则将引发异常。如果希望此数据对象在其他方面被 Doc.`encryptForRecipients` 方法加密的文件中不被加密，则可以使用预定义的“Identity”加密筛选器。 |
-| **bUI** | （可选）如果为 **true**，当 oDoc 需要保存但权限不允许其保存时，可能会显示警报。默认值为 **false**。 |
+| `cName` | 与数据对象关联的名称。 |
+| `oDoc` | 要作为数据对象嵌入的文档。 |
+| `cCryptFilter` | （可选）加密此数据对象时要使用的加密筛选器的与语言无关的名称。此加密筛选器必须先前已使用 `Doc.addRecipientListCryptFilter` 方法添加到文档的加密筛选器列表中，否则将引发异常。如果希望此数据对象在其他方面被 `Doc.encryptForRecipients` 方法加密的文件中不被加密，则可以使用预定义的“Identity”加密筛选器。 |
+| `bUI` | （可选）如果为 `true`，当 `oDoc` 需要保存但权限不允许其保存时，可能会显示警报。默认值为 `false`。 |
 
 ### 返回值
 
@@ -8888,10 +9255,10 @@ this.deleteSound("Moo");
 
 在此示例中，已预先创建了一个包含 'myFilter' 加密筛选器的信封文件，并且该信封文件已包含在 'this' 文档中。
 
-```
+```javascript
 var authorEmail = "johndoe@acme.com";
-var envelopeDoc = this.openDataObject( "envelope" ) ;
-envelopeDoc.embedDocAsDataObject( "attachment", this, "myFilter" ) ;
+var envelopeDoc = this.openDataObject("envelope");
+envelopeDoc.embedDocAsDataObject("attachment", this, "myFilter");
 envelopeDoc.title.Author = authorEmail;
 envelopeDoc.mailDoc({
     cTo: "support@mycompany.com",
@@ -8905,15 +9272,15 @@ envelopeDoc.mailDoc({
 
 使用每个收件人的公钥证书为指定的收件人列表加密文档。在文档保存之前不会执行加密。收件人可以被分组，并且每个组可以有自己独特的权限设置。如果此方法执行不成功，将引发异常。
 
-**注意**：（安全(⓼)）：此方法可在批处理、控制台、应用程序初始化和菜单事件中使用。另请参阅 [特权与非特权上下文](http://example.com)。从 Acrobat 7.0 开始，通过菜单事件执行的 JavaScript 不再具有特权，详情请参阅 [通过菜单执行的 JavaScript](http://example.com)。Adobe Reader 中也可用。
+> **注意：**（安全(⓼)）：此方法可在批处理、控制台、应用程序初始化和菜单事件中使用。另请参阅[特权与非特权上下文](http://example.com)。从 Acrobat 7.0 开始，通过菜单事件执行的 JavaScript 不再具有特权，详情请参阅[通过菜单执行的 JavaScript](http://example.com)。Adobe Reader 中也可用。
 
-另请参阅 **security.`chooseRecipientsDialog`** 方法、[数据对象](http://example.com) 和 [createDataObject](http://example.com)。
+另请参阅 `security.chooseRecipientsDialog` 方法、[数据对象](http://example.com) 和 [createDataObject](http://example.com)。
 
 ### 参数
 
 | 参数 | 描述 |
-| :--- | :--- |
-| `oGroups` | 一个通用的 [组对象](https://opensource.adobe.com/dc-acrobat-sdk-docs/acrobatsdk/topics/other/group.objects.html#group.objects) 数组，列出了要为其加密文档的收件人。 |
+| --- | --- |
+| `oGroups` | 一个通用的[组对象](https://opensource.adobe.com/dc-acrobat-sdk-docs/acrobatsdk/topics/other/group.objects.html#group.objects)数组，列出了要为其加密文档的收件人。 |
 | `bMetaData` | （可选）是否应加密文档元数据。默认值为 `true`。将此值设置为 `false` 将生成一个只能在 Acrobat 6.0 或更高版本中查看的文档。 |
 | `bUI` | （可选）当为 `true` 时，处理程序会显示用户界面，用户可以在其中选择要为其加密文档的收件人。默认值为 `false`。 |
 
@@ -8926,16 +9293,16 @@ envelopeDoc.mailDoc({
 一个通用的 JS 对象，允许将一组权限附加到要为其加密文档或数据的收件人列表。此对象传递给 `doc.encryptForRecipients`，并由 `security.chooseRecipientsDialog` 返回。它包含以下属性：
 
 | 属性 | 描述 |
-| :--- | :--- |
-| `permissions` | 一个包含该组权限的 [组对象](https://opensource.adobe.com/dc-acrobat-sdk-docs/acrobatsdk/topics/other/group.objects.html#group.objects)。 |
+| --- | --- |
+| `permissions` | 一个包含该组权限的[组对象](https://opensource.adobe.com/dc-acrobat-sdk-docs/acrobatsdk/topics/other/group.objects.html#group.objects)。 |
 | `userEntities` | 一个 [UserEntity 通用对象](https://opensource.adobe.com/dc-acrobat-sdk-docs/acrobatsdk/topics/other/userentity.objects.html#userentity.objects) 数组，即权限适用的用户。 |
 
 ### 权限对象
 
-一个包含一组权限的通用 JS 对象，用于 [组对象](https://opensource.adobe.com/dc-acrobat-sdk-docs/acrobatsdk/topics/other/group.objects.html#group.objects)。它包含以下属性。所有属性的默认值为 `false`。
+一个包含一组权限的通用 JS 对象，用于[组对象](https://opensource.adobe.com/dc-acrobat-sdk-docs/acrobatsdk/topics/other/group.objects.html#group.objects)。它包含以下属性。所有属性的默认值为 `false`。
 
 | 属性 | 类型 | 访问权限 | 描述 |
-| :--- | :--- | :--- | :--- |
+| --- | --- | --- | --- |
 | `allowAll` | Boolean | R/W | 是否允许完全、不受限制的访问。如果为 `true`，则覆盖所有其他属性。 |
 | `allowAccessibility` | Boolean | R/W | 是否允许视觉障碍者访问内容。当为 `true` 时，允许提取内容供例如大声朗读文本的应用程序使用。 |
 | `allowContentExtraction` | Boolean | R/W | 是否允许复制和提取内容。 |
@@ -8946,25 +9313,24 @@ envelopeDoc.mailDoc({
 
 加密文档中的所有字符串和流。这将生成一个可以在 Acrobat 5.0 及更高版本中打开的文件：
 
-```
-var sh = security.getHandler( "Adobe.PPKMS" );
+```javascript
+var sh = security.getHandler("Adobe.PPKMS");
 var dir = sh.directories[0];
 var dc = dir.connect();
 
-dc.setOutputFields({oFields:["certificates"]});
-var importantUsers = dc.search({oParams:{lastName:"Smith"}});
-var otherUsers = dc.search({oParams: {lastName:"jones" }});
+dc.setOutputFields({oFields: ["certificates"]});
+var importantUsers = dc.search({oParams: {lastName: "Smith"}});
+var otherUsers = dc.search({oParams: {lastName: "jones"}});
 
 this.encryptForRecipients({
-    oGroups :
-    [
-        {oUserEntities:importantUsers,oPermissions:{allowAll:true }},
-        {oUserEntities:
-            otherUsers,
-            oPermissions:{allowPrinting:"highQuality"}
+    oGroups: [
+        {oUserEntities: importantUsers, oPermissions: {allowAll: true}},
+        {
+            oUserEntities: otherUsers,
+            oPermissions: {allowPrinting: "highQuality"}
         }
     ],
-    bMetaData : true
+    bMetaData: true
 });
 ```
 
@@ -8972,32 +9338,32 @@ this.encryptForRecipients({
 
 使用指定的策略对象和处理程序加密文档。此方法可能需要用户交互，并可能导致创建新的安全策略。
 
-**注意：**（安全 🔒）此方法只能在批处理、控制台或应用程序初始化事件期间执行。另请参阅 [特权与非特权上下文](https://www.adobe.com/devnet/acrobat/library/)。Reader 中不可用。
+> **注意：**（安全 🔒）此方法只能在批处理、控制台或应用程序初始化事件期间执行。另请参阅[特权与非特权上下文](https://www.adobe.com/devnet/acrobat/library/)。Reader 中不可用。
 
 ### 参数
 
-| **oPolicy** | 加密文档时要使用的策略对象。这可以是来自 [chooseSecurityPolicy](https://www.adobe.com/devnet/acrobat/library/) 或 [getSecurityPolicies](https://www.adobe.com/devnet/acrobat/library/) 返回的 [SecurityPolicy 对象](https://www.adobe.com/devnet/acrobat/library/)。这也可以是一个定义了 `policyId` 属性的通用对象。如果传递了预定义的策略 ID，将检索并使用关联的策略。如果传递的策略 ID 未知，将返回错误。有一个预定义的策略 ID 具有特殊行为。如果 `policyId` 设置为 "adobe_secure_for_recipients"，则 Adobe 策略服务器将创建一个新策略。**注意：** 如果使用此特殊策略 ID 且 `oGroups` 为 `null`，将返回错误。 |
+| 参数 | 描述 |
 | --- | --- |
-| **oGroups** | （可选）这是一个 [组对象](https://www.adobe.com/devnet/acrobat/library/) 数组，处理程序在应用策略时应使用这些对象。确切的行为将取决于所使用的策略和涉及的处理程序。组对象可能嵌入了权限信息。是否使用该信息取决于策略和相关的安全处理程序。默认值为 `null`。 |
-| **oHandler** | （可选）用于加密的 [SecurityHandler 对象](https://www.adobe.com/devnet/acrobat/library/)。如果此处理程序与 `oPolicy` 对象中指定的处理程序名称不匹配，将导致失败。如果未指定，将使用与此处理程序关联的默认对象。请参阅下文关于 [oHandler 的使用](https://www.adobe.com/devnet/acrobat/library/) 的段落。 |
-| **bUI** | （可选）如果为 `true`，可能会显示用户界面（例如用于身份验证）。如果为 `false`，则不会显示用户界面。如果需要用户交互但不允许，将返回错误。默认值为 `false`。 |
-
-
+| `oPolicy` | 加密文档时要使用的策略对象。这可以是来自 [chooseSecurityPolicy](https://www.adobe.com/devnet/acrobat/library/) 或 [getSecurityPolicies](https://www.adobe.com/devnet/acrobat/library/) 返回的 [SecurityPolicy 对象](https://www.adobe.com/devnet/acrobat/library/)。这也可以是一个定义了 `policyId` 属性的通用对象。如果传递了预定义的策略 ID，将检索并使用关联的策略。如果传递的策略 ID 未知，将返回错误。有一个预定义的策略 ID 具有特殊行为。如果 `policyId` 设置为 "adobe_secure_for_recipients"，则 Adobe 策略服务器将创建一个新策略。**注意：** 如果使用此特殊策略 ID 且 `oGroups` 为 `null`，将返回错误。 |
+| `oGroups` | （可选）这是一个[组对象](https://www.adobe.com/devnet/acrobat/library/)数组，处理程序在应用策略时应使用这些对象。确切的行为将取决于所使用的策略和涉及的处理程序。组对象可能嵌入了权限信息。是否使用该信息取决于策略和相关的安全处理程序。默认值为 `null`。 |
+| `oHandler` | （可选）用于加密的 [SecurityHandler 对象](https://www.adobe.com/devnet/acrobat/library/)。如果此处理程序与 `oPolicy` 对象中指定的处理程序名称不匹配，将导致失败。如果未指定，将使用与此处理程序关联的默认对象。请参阅下文关于 [oHandler 的使用](https://www.adobe.com/devnet/acrobat/library/) 的段落。 |
+| `bUI` | （可选）如果为 `true`，可能会显示用户界面（例如用于身份验证）。如果为 `false`，则不会显示用户界面。如果需要用户交互但不允许，将返回错误。默认值为 `false`。 |
 
 ## Acrobat JavaScript 脚本参考
-文档方法
 
-**返回值**
+### 文档方法
+
+### 返回值
 
 返回值是一个 SecurityPolicyResults 泛型对象。
 
-**关于 oHandler 的使用**
+### 关于 `oHandler` 的使用
 
 如果使用的是 APS 安全处理器，可以提前创建一个新的 SecurityHandler，通过 `login()` 调用向未在 Acrobat 中配置的服务器进行身份验证，然后将该 SecurityHandler 传递给 `oHandler`。这样就可以使用未在 Acrobat 配置的服务器上定义的策略。
 
 如果使用的是 PPKLite 安全处理器，可以提前创建一个新的 SecurityHandler，通过 `login()` 调用打开未在 Acrobat 中配置的数字 ID 文件，然后将该 SecurityHandler 传递给 `oHandler`。这样就可以使用数字 ID 文件中包含但不在 Acrobat 中的证书。
 
-**SecurityPolicyResults 泛型对象**
+### SecurityPolicyResults 泛型对象
 
 SecurityPolicyResults 对象具有以下属性：
 
@@ -9012,10 +9378,10 @@ SecurityPolicyResults 对象具有以下属性：
 
 在此示例中，使用选定的策略对新创建的文档进行加密。
 
-```
+```javascript
 var doc = app.newDoc();
 var policy = security.chooseSecurityPolicy();
-var results = doc.encryptUsingPolicy( { oPolicyId: policy } );
+var results = doc.encryptUsingPolicy({oPolicyId: policy});
 console.println("The policy applied was: "
     + results.policyApplied.name);
 ```
@@ -9024,12 +9390,17 @@ console.println("The policy applied was: "
 
 在此示例中，使用模板策略对新创建的文档进行加密。
 
-```
+```javascript
 var doc = app.newDoc();
-var groups = [ { userEntities: [{email:"jdoe@mycorp.com"},
-    {email:"bsmith@mycorp.com"} ]}
+var groups = [
+    {
+        userEntities: [
+            {email: "jdoe@mycorp.com"},
+            {email: "bsmith@mycorp.com"}
+        ]
+    }
 ];
-var policy = { policyId: "adobe_secure_for_recipients" };
+var policy = {policyId: "adobe_secure_for_recipients"};
 var results = doc.encryptUsingPolicy({
     oPolicy: policy,
     oGroups: groups,
@@ -9041,24 +9412,28 @@ console.println("The policy applied was: "
 
 ## exportAsText
 
-| 6.0 | | S | F | |
-|---|---|---|---|---|
+| 6.0 |  | S | F |  |
+| --- | --- | --- | --- | --- |
 
-将表单字段导出为制表符分隔的文本文件到本地硬盘。创建的文本文件遵循 Microsoft Excel 指定的惯例。特别是，exportAsText 正确处理引号和多行文本字段。
-此方法向文本文件写入两行，第一行是 aFields 指定的字段名称的制表符分隔列表，第二行是字段值的制表符分隔列表。
+将表单字段导出为制表符分隔的文本文件到本地硬盘。创建的文本文件遵循 Microsoft Excel 指定的惯例。特别是，`exportAsText` 正确处理引号和多行文本字段。
 
-> **注意：** (安全(S))：如果指定了 cPath 参数，则此方法只能在批处理、控制台或菜单事件期间执行。另请参阅特权与非特权上下文。事件对象包括 Acrobat JavaScript 事件的讨论。
+此方法向文本文件写入两行，第一行是 `aFields` 指定的字段名称的制表符分隔列表，第二行是字段值的制表符分隔列表。
+
+> **注意：**（安全(S)）：如果指定了 `cPath` 参数，则此方法只能在批处理、控制台或菜单事件期间执行。另请参阅特权与非特权上下文。事件对象包括 Acrobat JavaScript 事件的讨论。
+
 从 Acrobat 7.0 开始，通过菜单事件执行 JavaScript 不再是特权的，详见通过菜单执行 JavaScript。
 
 ### 参数
 
-| **bNoPassword** | （可选）如果为 **true**（默认值），则不在导出的文本文件中包含设置了 "password" 标志的文本字段。 |
-| **aFields** | （可选）要提交的字段名称数组或包含单个字段名称的字符串。
-* 如果指定，将仅导出这些字段，但被 **bNoPassword** 排除的字段除外。
-* 如果 **aFields** 是空数组，则不导出任何字段。
-* 如果省略此参数或为 **null**，则导出表单中的所有字段，但被 **bNoPassword** 排除的字段除外。 |
-| **cPath** | （可选）指定文件的设备无关路径名的字符串。（有关设备无关路径名格式的描述，请参阅 [PDF 参考](http://www.adobe.com/devnet/pdf/pdf_reference.html) 第 3.10.1 节。）路径名可以是相对于当前文档的位置。如果省略该参数，将显示一个对话框让用户选择文件。
-注意：(安全(S))：参数 **cPath** 要求具有 [安全路径](http://www.adobe.com/devnet/acrobat.html) 并且具有 .txt 扩展名。如果这些安全条件不满足，此方法将抛出 **NotAllowedError**（参见 [错误对象](http://www.adobe.com/devnet/acrobat.html)）异常，并且方法将失败。 |
+| 参数 | 描述 |
+| --- | --- |
+| `bNoPassword` | （可选）如果为 `true`（默认值），则不在导出的文本文件中包含设置了 "password" 标志的文本字段。 |
+| `aFields` | （可选）要提交的字段名称数组或包含单个字段名称的字符串。<br><br>- 如果指定，将仅导出这些字段，但被 `bNoPassword` 排除的字段除外。<br><br>- 如果 `aFields` 是空数组，则不导出任何字段。<br><br>- 如果省略此参数或为 `null`，则导出表单中的所有字段，但被 `bNoPassword` 排除的字段除外。 |
+| `cPath` | （可选）指定文件的设备无关路径名的字符串。（有关设备无关路径名格式的描述，请参阅 [PDF 参考](http://www.adobe.com/devnet/pdf/pdf_reference.html) 第 3.10.1 节。）路径名可以是相对于当前文档的位置。如果省略该参数，将显示一个对话框让用户选择文件。 |
+
+
+
+注意：（安全（S））：参数 `cPath` 要求具有[安全路径](http://www.adobe.com/devnet/acrobat.html)并且具有 `.txt` 扩展名。如果这些安全条件不满足，此方法将抛出 `NotAllowedError`（参见[错误对象](http://www.adobe.com/devnet/acrobat.html)）异常，并且方法将失败。
 
 ### 返回值
 
@@ -9068,240 +9443,237 @@ console.println("The policy applied was: "
 
 要将所有字段导出到制表符分隔的文件，请在控制台中执行以下脚本：
 
-```
+```javascript
 this.exportAsText();
 ```
 
 要创建包含多行数据的制表符分隔文件，请参阅第 264 页的示例。
 
-## exportAsFDF
+## `exportAsFDF`
 
 | 4.0 | | S | F | |
 |---|---|---|---|---|
 
 将表单字段导出为 FDF 文件到本地硬盘。
 
-注意：(安全(S))：如果指定了 **cPath** 参数，则此方法只能在批处理、控制台或菜单事件期间执行。另请参阅[特权与非特权](http://www.adobe.com/devnet/acrobat.html)特权上下文。事件对象包含 Acrobat JavaScript 事件的讨论。
+注意：（安全（S））：如果指定了 `cPath` 参数，则此方法只能在批处理、控制台或菜单事件期间执行。另请参阅[特权与非特权](http://www.adobe.com/devnet/acrobat.html)特权上下文。事件对象包含 Acrobat JavaScript 事件的讨论。
+
 从 Acrobat 7.0 开始，通过菜单事件执行 JavaScript 不再是特权的，详见通过菜单执行 JavaScript。
 
 ### 参数
 
-| **bAllFields** | （可选）如果为 `true`，将导出所有字段，包括没有值的字段。如果为 `false`（默认值），则排除当前没有值的字段。 |
-| **bNoPassword** | （可选）如果为 `true`（默认值），则不在导出的 FDF 中包含设置了 "password" 标志的文本字段。 |
-| **aFields** | （可选）要提交的字段名称数组或包含单个字段名称的字符串。
-* 如果指定，将仅导出这些字段，但被 `bNoPassword` 排除的字段除外。
-* 如果 `aFields` 是空数组，则不导出任何字段。FDF 可能仍包含数据，具体取决于 `bAnnotations` 参数。
-* 如果省略此参数或为 `null`，则导出表单中的所有字段，但被 `bNoPassword` 排除的字段除外。
-指定非终端字段名称以导出整个字段子树；请参阅下面的示例。 |
-| **bFlags** | （可选）如果为 `true`，导出的 FDF 中将包含字段标志。默认值为 `false`。 |
-| **cPath** | （可选）指定文件的设备无关路径名的字符串。（有关设备无关路径名格式的描述，请参阅 PDF 参考第 3.10.1 节。）路径名可以是相对于当前文档的位置。如果省略该参数，将显示一个对话框让用户选择文件。
-**注意：** (安全(S))：参数 `cPath` 要求具有安全路径并且具有 `.fdf` 扩展名。如果这些安全条件不满足，此方法将抛出 `NotAllowedError`（参见错误对象）异常，并且方法将失败。 |
-| **bAnnotations** | （可选，版本 6.0）如果为 `true`，导出的 FDF 中将包含注释。默认值为 `false`。 |
+| `bAllFields` | （可选）如果为 `true`，将导出所有字段，包括没有值的字段。如果为 `false`（默认值），则排除当前没有值的字段。 |
+|---|---|
+| `bNoPassword` | （可选）如果为 `true`（默认值），则不在导出的 FDF 中包含设置了 `"password"` 标志的文本字段。 |
+| `aFields` | （可选）要提交的字段名称数组或包含单个字段名称的字符串。<br><br>如果指定，将仅导出这些字段，但被 `bNoPassword` 排除的字段除外。<br><br>如果 `aFields` 是空数组，则不导出任何字段。FDF 可能仍包含数据，具体取决于 `bAnnotations` 参数。<br><br>如果省略此参数或为 `null`，则导出表单中的所有字段，但被 `bNoPassword` 排除的字段除外。<br><br>指定非终端字段名称以导出整个字段子树；请参阅下面的示例。 |
+| `bFlags` | （可选）如果为 `true`，导出的 FDF 中将包含字段标志。默认值为 `false`。 |
+| `cPath` | （可选）指定文件的设备无关路径名的字符串。（有关设备无关路径名格式的描述，请参阅 PDF 参考第 3.10.1 节。）路径名可以是相对于当前文档的位置。如果省略该参数，将显示一个对话框让用户选择文件。<br><br>**注意：**（安全（S））：参数 `cPath` 要求具有安全路径并且具有 `.fdf` 扩展名。如果这些安全条件不满足，此方法将抛出 `NotAllowedError`（参见错误对象）异常，并且方法将失败。 |
+| `bAnnotations` | （可选，版本 6.0）如果为 `true`，导出的 FDF 中将包含注释。默认值为 `false`。 |
 
 ### 返回值
 
 无
 
 ### 示例 1
+
 导出整个表单（包括空字段）并包含标志。
 
-```
+```javascript
 this.exportAsFDF(true, true, null, true);
 ```
 
 ### 示例 2
-导出 *name* 子树且不包含标志。
 
-```
+导出 `name` 子树且不包含标志。
+
+```javascript
 this.exportAsFDF(false, true, "name");
 ```
 
-上面的示例说明了导出整个子树的快捷方式。将 "name" 作为 **aFields** 参数的一部分传递，将导出 **"name.title"**、**"name.first"**、**"name.middle"** 和 **"name.last"** 等字段。
+上面的示例说明了导出整个子树的快捷方式。将 `"name"` 作为 `aFields` 参数的一部分传递，将导出 `"name.title"`、`"name.first"`、`"name.middle"` 和 `"name.last"` 等字段。
 
-## exportAsXFDF
+## `exportAsXFDF`
 
 | 5.0 | (S) | (F) | | |
 |---|---|---|---|---|
 
 将表单字段导出为 XFDF 文件到本地硬盘。
-XFDF 是 Acrobat 表单数据的 XML 表示。有关 XFDF 的概述，请参阅题为“表单系统实现说明”的文档，可作为 [Adobe Web 文档](http://partners.adobe.com/asn/tech/pdf/xmlformspec.jsp)获取。*XML 表单数据格式规范* XFDF 可在 [http://partners.adobe.com/asn/tech/pdf/xmlformspec.jsp](http://partners.adobe.com/asn/tech/pdf/xmlformspec.jsp) 找到。
-此方法有一个导入版本 **importAnXFDF**。
 
-> **注意：** (安全**(S)**)：如果指定了 **cPath** 参数，则此方法只能在批处理、控制台或菜单事件期间执行。另请参阅**特权与非特权上下文**。**事件对象**包含 Acrobat JavaScript 事件的讨论。
-从 Acrobat 7.0 开始，通过菜单事件执行 JavaScript 不再是特权的，详见**通过菜单执行 JavaScript**。
+XFDF 是 Acrobat 表单数据的 XML 表示。有关 XFDF 的概述，请参阅题为“表单系统实现说明”的文档，可作为 [Adobe Web 文档](http://partners.adobe.com/asn/tech/pdf/xmlformspec.jsp)获取。*XML 表单数据格式规范* XFDF 可在 [http://partners.adobe.com/asn/tech/pdf/xmlformspec.jsp](http://partners.adobe.com/asn/tech/pdf/xmlformspec.jsp) 找到。
+
+此方法有一个导入版本 `importAnXFDF`。
+
+> **注意：**（安全（S））：如果指定了 `cPath` 参数，则此方法只能在批处理、控制台或菜单事件期间执行。另请参阅[特权与非特权上下文](特权与非特权上下文)。事件对象包含 Acrobat JavaScript 事件的讨论。
+
+从 Acrobat 7.0 开始，通过菜单事件执行 JavaScript 不再是特权的，详见通过菜单执行 JavaScript。
 
 ### 参数
 
-| **bAllFields** | （可选）如果为 **true**，将导出所有字段，包括没有值的字段。如果为 **false**（默认值），则排除当前没有值的字段。 |
-| **bNoPassword** | （可选）如果为 **true**（默认值），则不在导出的 XFDF 中包含设置了 "password" 标志的文本字段。 |
+| `bAllFields` | （可选）如果为 `true`，将导出所有字段，包括没有值的字段。如果为 `false`（默认值），则排除当前没有值的字段。 |
+|---|---|
+| `bNoPassword` | （可选）如果为 `true`（默认值），则不在导出的 XFDF 中包含设置了 `"password"` 标志的文本字段。 |
+| `aFields` | （可选）要提交的字段名数组或包含单个字段名的字符串。<br><br>如果指定了此参数，则仅导出这些字段，除非被 `bNoPassword` 排除。<br><br>如果 `aFields` 是一个空数组，则不导出任何字段。XFDF 可能仍包含数据，这取决于 `bAnnotations` 参数。<br><br>如果省略此参数或为 `null`，则导出表单中的所有字段，除非被 `bNoPassword` 排除。<br><br>指定非终端字段名以导出整个字段子树；请参见下面的示例。 |
+| `cPath` | （可选）一个指定文件设备无关路径名的字符串。（有关设备无关路径名格式的描述，请参见《PDF 参考》第 3.10.1 节。）路径名可以是相对于当前文档位置的。如果省略此参数，将显示一个对话框让用户选择文件。<br><br>**注意：**（安全性（S））：参数 `cPath` 要求是一个安全路径且具有 `.xfdf` 扩展名。如果这些安全条件不满足，此方法将抛出一个 `NotAllowedError`（参见错误对象）异常，并且方法将失败。 |
+| `bAnnotations` | （可选，版本 6.0）如果为 `true`，则将注释包含在导出的 XFDF 中。默认值为 `false`。 |
 
+### 返回值
 
-
-（可选）要提交的字段名数组或包含单个字段名的字符串。
-- 如果指定了此参数，则仅导出这些字段，除非被 `bNoPassword` 排除。
-- 如果 `aFields` 是一个空数组，则不导出任何字段。XFDF 可能仍包含数据，这取决于 `bAnnotations` 参数。
-- 如果省略此参数或为 `null`，则导出表单中的所有字段，除非被 `bNoPassword` 排除。
-
-指定非终端字段名以导出整个字段子树；请参见下面的示例。
-
-（可选）一个指定文件设备无关路径名的字符串。（有关设备无关路径名格式的描述，请参见《PDF 参考》第 3.10.1 节。）路径名可以是相对于当前文档位置的。如果省略此参数，将显示一个对话框让用户选择文件。
-
-**注意：** (安全性(S))：参数 `cPath` 要求是一个安全路径且具有 `.xfdf` 扩展名。如果这些安全条件不满足，此方法将抛出一个 `NotAllowedError`（参见错误对象）异常，并且方法将失败。
-
-（可选，版本 6.0）如果为 true，则将注释包含在导出的 XFDF 中。默认值为 false。
-
-**返回值**
 无
 
-## exportDataObject
+## `exportDataObject`
 
 | 5.0 | (S) |
+|---|---|
 
 此方法将指定的数据对象提取到外部文件。
 
 相关的对象、属性和方法有：Data Object、`doc.dataObjects`、`doc.openDataObject`、`doc.createDataObject`、`doc.removeDataObject`、`doc.importDataObject`、`doc.getDataObjectContents` 和 `doc.setDataObjectContents`。
 
-> **注意：** (安全性(S))：从 Acrobat 6.0 开始，如果参数 `cDIPath` 非空，将抛出一个 `NotAllowedError`（参见错误对象）异常，并且方法将失败。
+> **注意：**（安全性（S））：从 Acrobat 6.0 开始，如果参数 `cDIPath` 非空，将抛出一个 `NotAllowedError`（参见错误对象）异常，并且方法将失败。
 
 如果未向此方法传递 `cDIPath`，将打开一个文件选择对话框，允许用户选择嵌入数据对象的保存路径。
 
-# Acrobat JavaScript 脚本参考
-
-Doc 方法
-
-# 参数
+### 参数
 
 | 参数 | 描述 |
-| :--- | :--- |
+|---|---|
 | `cName` | 要提取的数据对象的名称。 |
-| `cDIPath` | （可选）要将数据对象提取到的设备无关路径。此路径可以是绝对路径，也可以是相对于当前文档的相对路径。如果未指定，系统将提示用户指定保存位置。有关路径的确切语法，请参见《PDF 参考手册》中的“文件规范字符串”。**注意：(版本 6.0) 不再支持使用此参数，并且不应使用。请参见上面的安全说明。** |
-| `bAllowAuth` | （可选，版本 6.0）如果为 **true**，则使用对话框获取用户授权。如果数据对象是使用 `Doc.encryptForRecipients` 加密的，则可能需要授权。如果 `bAllowAuth` 为 **true**，则允许授权对话框。默认值为 **false**。 |
-| `nLaunch` | （可选，版本 6.0）`nLaunch` 控制文件保存后是否启动或打开。如果文件不是 PDF 文件，启动可能涉及打开外部应用程序。`nLaunch` 的值如下：<br>- 如果值为 0，文件保存后不会被启动。<br>- 如果值为 1，文件将被保存然后启动。如果文件不是 PDF 文件，启动将提示用户安全警报警告。系统将提示用户输入保存路径。<br>- 如果值为 2，文件将被保存然后启动。如果文件不是 PDF 文件，启动将提示用户安全警报警告。使用临时路径，系统不会提示用户输入保存路径。创建的临时文件将在 Acrobat 应用程序关闭时被删除。<br>默认值为 0。 |
+| `cDIPath` | （可选）要将数据对象提取到的设备无关路径。此路径可以是绝对路径，也可以是相对于当前文档的相对路径。如果未指定，系统将提示用户指定保存位置。有关路径的确切语法，请参见《PDF 参考手册》中的“文件规范字符串”。**注意：（版本 6.0）不再支持使用此参数，并且不应使用。请参见上面的安全说明。** |
+| `bAllowAuth` | （可选，版本 6.0）如果为 `true`，则使用对话框获取用户授权。如果数据对象是使用 `Doc.encryptForRecipients` 加密的，则可能需要授权。如果 `bAllowAuth` 为 `true`，则允许授权对话框。默认值为 `false`。 |
+| `nLaunch` | （可选，版本 6.0）`nLaunch` 控制文件保存后是否启动或打开。如果文件不是 PDF 文件，启动可能涉及打开外部应用程序。`nLaunch` 的值如下：<br><br>如果值为 0，文件保存后不会被启动。<br><br>如果值为 1，文件将被保存然后启动。如果文件不是 PDF 文件，启动将提示用户安全警报警告。系统将提示用户输入保存路径。<br><br>如果值为 2，文件将被保存然后启动。如果文件不是 PDF 文件，启动将提示用户安全警报警告。使用临时路径，系统不会提示用户输入保存路径。创建的临时文件将在 Acrobat 应用程序关闭时被删除。<br><br>默认值为 0。 |
 
-# 返回值
+### 返回值
+
 无
 
-## 示例 1
+### 示例 1
 
 提示用户输入要提取到的文件和位置。
 
-```
-this.exportDataObject ("MyData") ;
+```javascript
+this.exportDataObject("MyData");
 ```
 
-## 示例 2 (版本 6.0)
+### 示例 2（版本 6.0）
 
 提取 PDF 文档并在查看器中启动它。
 
+```javascript
+this.exportDataObject({ cName: "MyPDF.pdf", nLaunch: 2 });
 ```
-this.exportDataObject ({ cName: "MyPDF.pdf", nLaunch: 2 }) ;
-```
 
-## 示例 3
+### 示例 3
 
-当使用 `Doc.importDataObject` 导入文件附件时，其 **Data.name** 的值是通过该方法的参数 `cName` 赋值的；但是，当使用 UI 附加文件时，文件附件的 **name** 会被自动分配。第一个附件被分配的 **name** 是 "**Untitled Object**"；第二个是 "**Untitled Object 2**"；第三个是 "**Untitled Object 3**"；依此类推。
+当使用 `Doc.importDataObject` 导入文件附件时，其 `Data.name` 的值是通过该方法的参数 `cName` 赋值的；但是，当使用 UI 附加文件时，文件附件的 `name` 会被自动分配。第一个附件被分配的 `name` 是 `"Untitled Object"`；第二个是 `"Untitled Object 2"`；第三个是 `"Untitled Object 3"`；依此类推。
 
-要导出通过 UI 附加的文件，需要找到附件的 **name**。对于下面的代码，它将导出 UI 附加的最后一个文件（如果有的话）。
+要导出通过 UI 附加的文件，需要找到附件的 `name`。对于下面的代码，它将导出 UI 附加的最后一个文件（如果有的话）。
 
-```
+```javascript
 var d = this.dataObjects;
-if ( d == null ) console.println("No file attachments");
+if (d == null) console.println("No file attachments");
 else {
-    for ( var i = d.length - 1; i>=0; i--)
-        if ( d[i].name.indexOf("Untitled Object") != -1 ) break;
-    if ( i != -1 ) this.exportDataObject(d[i].name);
+    for (var i = d.length - 1; i >= 0; i--)
+        if (d[i].name.indexOf("Untitled Object") != -1) break;
+    if (i != -1) this.exportDataObject(d[i].name);
     else console.println("No attachment was embedded by UI");
 }
 ```
 
-## exportXFAData
+## `exportXFAData`
 
-| 6.0 |   | Ⓢ | Ⓕ |
+| 6.0 | | Ⓢ | Ⓕ |
+|---|---|---|---|
 
 将 XFA 数据文件导出到本地硬盘。
 
-表单权限 (**Ⓕ**)：从 Adobe Reader 导出 XFA 数据时，文档必须具有导出表单权限。
+表单权限（Ⓕ）：从 Adobe Reader 导出 XFA 数据时，文档必须具有导出表单权限。
 
-**注意**：(安全性 Ⓢ)：如果指定了 `cPath` 参数，则此方法只能在批处理、控制台或菜单事件期间执行。另请参阅特权上下文与非特权上下文。事件对象包含了 Acrobat JavaScript 事件的讨论。
+注意：（安全性 Ⓢ）：如果指定了 `cPath` 参数，则此方法只能在批处理、控制台或菜单事件期间执行。另请参阅特权上下文与非特权上下文。事件对象包含了 Acrobat JavaScript 事件的讨论。
 
 从 Acrobat 7.0 开始，通过菜单事件执行 JavaScript 不再具有特权，有关详细信息，请参见通过菜单执行 JavaScript。
 
-# 参数
+### 参数
 
-| **cPath** | （可选）文件的设备无关路径名。路径名可以是相对于文档的。有关路径的确切语法，请参见《PDF 参考手册》中的“文件规范字符串”。如果省略此参数，将显示一个对话框让用户选择文件。**注意**：(安全性 Ⓢ)：参数 `cPath` 要求是一个安全路径。此外，如果 `bXDP` 为 true，则文件名必须具有 `.xdp` 扩展名；如果 `bXDP` 为 false，则必须具有 `.xml` 扩展名。如果这些安全条件不满足，此方法将抛出一个 `NotAllowedError`（参见错误对象）异常，并且方法将失败。 |
+| `cPath` | （可选）文件的设备无关路径名。路径名可以是相对于文档的。有关路径的确切语法，请参见《PDF 参考手册》中的“文件规范字符串”。如果省略此参数，将显示一个对话框让用户选择文件。**注意**：（安全性 Ⓢ）：参数 `cPath` 要求是一个安全路径。此外，如果 `bXDP` 为 `true`，则文件名必须具有 `.xdp` 扩展名；如果 `bXDP` 为 `false`，则必须具有 `.xml` 扩展名。如果这些安全条件不满足，此方法将抛出一个 `NotAllowedError`（参见错误对象）异常，并且方法将失败。 |
 |---|---|
-| `bXDP` | （可选）如果为 **true**（默认值），则方法以 XDP 格式导出。否则，以纯 XML 数据格式导出。 |
-| `aPackets` | （可选）一个字符串数组，指定要在 XDP 导出中包含哪些数据包。此参数仅在 **bXDP** 为 **true** 时适用。可能的字符串有：<br>- `template`<br>- `datasets`<br>- `stylesheet`<br>- `xfdf`<br>- `sourceSet`<br>- `pdf`<br>- `config`<br>- `*`<br>**pdf** 表示应嵌入 PDF。如果未指定 **pdf**，则 XDP 中仅包含指向 PDF 的链接。<br>**xfdf** 表示在 XDP 中包含注释（因为该数据包使用 XFDF 格式）。<br>**\*** 表示应将所有数据包包含在 XDP 中。**pdf** 的默认行为是将其作为 *引用* 包含。要将 PDF 文件嵌入 XDP，请显式指定 **pdf** 作为数据包之一。<br>**注意：** (需要保存权限 Ⓢ)：当从 Adobe Reader 以 XDP 格式导出且在 **aPackets** 数组中显式列出 **pdf** 时，仅在此情况下文档必须具有文档保存权限。（请阅读上面关于 \* 的描述。）<br>此参数的默认值为：`["datasets", "xfdf"]`。 |
+| `bXDP` | （可选）如果为 `true`（默认值），则方法以 XDP 格式导出。否则，以纯 XML 数据格式导出。 |
+| `aPackets` | （可选）一个字符串数组，指定要在 XDP 导出中包含哪些数据包。此参数仅在 `bXDP` 为 `true` 时适用。可能的字符串有：<br><br>`template`、`datasets`、`stylesheet`、`xfdf`、`sourceSet`、`pdf`、`config`、`*`。<br><br>`pdf` 表示应嵌入 PDF。如果未指定 `pdf`，则 XDP 中仅包含指向 PDF 的链接。<br><br>`xfdf` 表示在 XDP 中包含注释（因为该数据包使用 XFDF 格式）。<br><br>`*` 表示应将所有数据包包含在 XDP 中。`pdf` 的默认行为是将其作为*引用*包含。要将 PDF 文件嵌入 XDP，请显式指定 `pdf` 作为数据包之一。<br><br>**注意：**（需要保存权限 Ⓢ）：当从 Adobe Reader 以 XDP 格式导出且在 `aPackets` 数组中显式列出 `pdf` 时，仅在此情况下文档必须具有文档保存权限。（请阅读上面关于 `*` 的描述。）<br><br>此参数的默认值为：`["datasets", "xfdf"]`。 |
 
-**返回值**
+### 返回值
+
 无
 
-**示例**
+### 示例
+
 在第一个示例中，包含所有数据包；但 PDF 文档是引用的，而不是嵌入的。
 
-```
+```javascript
 this.exportXFADATA({
     cPath: "/c/temp/myData.xdp",
     bXDP: true,
     aPackets: ["*"]
-})
+});
 ```
 
 在此示例中，包含所有数据包，且 PDF 文档嵌入在 XDP 中。
 
-```
+```javascript
 this.exportXFADATA({
     cPath: "/c/temp/myData.xdp",
     bXDP: true,
-    aPackets: ["*","pdf"]
-})
+    aPackets: ["*", "pdf"]
+});
 ```
 
-## extractPages
+## `extractPages`
 
 创建一个新文档，该文档由从当前文档中提取的页面组成。如果未指定页面范围，该方法将提取文档中的所有页面。
-另请参见 [deletePages](deletePages)、[insertPages](insertPages) 和 [replacePages](replacePages)。
 
-**注意：** (安全性 (S)) 如果指定了 **cPath** 参数，则此方法只能在批处理、控制台或菜单事件期间执行，或通过外部调用（例如，OLE）执行。另请参阅[特权上下文与非特权上下文](Privileged versus Non-privileged Context)。[事件对象](Event Object)包含了 Acrobat JavaScript 事件的讨论。
+另请参见 [`deletePages`](deletePages)、[`insertPages`](insertPages) 和 [`replacePages`](replacePages)。
+
+**注意：**（安全性（S））：如果指定了 `cPath` 参数，则此方法只能在批处理、控制台或菜单事件期间执行，或通过外部调用（例如 OLE）执行。另请参阅[特权上下文与非特权上下文](Privileged versus Non-privileged Context)。[事件对象](Event Object)包含了 Acrobat JavaScript 事件的讨论。
+
 从 Acrobat 7.0 开始，通过菜单事件执行 JavaScript 不再具有特权，有关详细信息，请参见[通过菜单执行 JavaScript](JavaScript Execution through the Menu)。
 
-# 参数
+### 参数
 
-| **nStart** | （可选）一个从 0 开始的索引，定义要从源文档提取的页面范围的起始页。如果仅指定 **nStart**，则页面范围是 **nStart** 指定的单页。 |
+| `nStart` | （可选）一个从 0 开始的索引，定义要从源文档提取的页面范围的起始页。如果仅指定 `nStart`，则页面范围是 `nStart` 指定的单页。 |
 |---|---|
-| **nEnd** | （可选）一个从 0 开始的索引，定义要从源文档提取的页面范围的结束页。如果仅指定 **nEnd**，则页面范围是 0 到 **nEnd**。 |
-| **cPath** | （可选）保存新文档的设备无关路径名。有关设备无关路径名格式的描述，请参见 [PDF 参考](PDF Reference) 的 3.10.1。路径名可以是相对于当前文档位置的。 |
+| `nEnd` | （可选）一个从 0 开始的索引，定义要从源文档提取的页面范围的结束页。如果仅指定 `nEnd`，则页面范围是 0 到 `nEnd`。 |
+| `cPath` | （可选）保存新文档的设备无关路径名。有关设备无关路径名格式的描述，请参见[PDF 参考](PDF Reference)的 3.10.1。路径名可以是相对于当前文档位置的。<br><br>**注意：**（安全性（S））：参数 `cPath` 要求是一个[安全路径](Safe Path)且具有 `.pdf` 扩展名。如果这些安全条件不满足，此方法将抛出一个 `NotAllowedError`（参见[错误对象](Error Objects)）异常，并且方法将失败。 |
 
-**注意：** (安全性 (S))：参数 **cPath** 要求是一个[安全路径](Safe Path)且具有 `.pdf` 扩展名。如果这些安全条件不满足，此方法将抛出一个 **NotAllowedError**（参见[错误对象](Error Objects)）异常，并且方法将失败。
+### 返回值
 
-# 返回值
+如果未指定 `cPath`，则返回新的 [Doc 对象](Doc Object)；否则，返回 `null` 对象。
 
-如果未指定 **cPath**，则返回新文档的 [Doc 对象](Doc Object)；否则，返回 **null** 对象。
-
-# 示例
+### 示例
 
 以下批处理序列将获取每个选定的文件，提取每一页，并将该页保存到具有唯一名称的文件夹中。此示例可用于以下场景：客户的一页账单由一个应用程序生成并放入单个 PDF 文件中。希望将页面分开以进行分发和/或单独打印作业。
 
-```
+```javascript
 /* Extract Pages to Folder */
 // regular expression used to acquire the base name of file
 ```
 
-
-
 ## Acrobat JavaScript 脚本参考
+
 文档方法
 
-```
+
+
+```javascript
 var re = /\.pdf$/i;
 // filename is the base name of the file Acrobat is working on
 var filename = this.documentFileName.replace(re,"");
-try {for (var i = 0; i < this.numPages; i++)
-                this.extractPages({
-                        nStart: i,
-                        cPath: "/F/temp/"+filename+"_" + i +".pdf"
-                });
-} catch (e) { console.println("Aborted: " + e) }
+try {
+    for (var i = 0; i < this.numPages; i++)
+        this.extractPages({
+            nStart: i,
+            cPath: "/F/temp/" + filename + "_" + i + ".pdf"
+        });
+} catch (e) {
+    console.println("Aborted: " + e);
+}
 ```
 
 ## flattenPages
@@ -9310,43 +9682,50 @@ try {for (var i = 0; i < this.numPages; i++)
 
 注意：使用此方法时必须非常小心。指定页面范围内的所有注释——包括表单字段、注释和链接——都会被平面化；它们可能仍有外观，但将不再是注释。
 
-## 参数
+### 参数
 
-| nStart | （可选）一个从0开始的索引，定义当前文档中一个包含性页面范围的起始位置。如果仅指定 nStart，则页面范围为 nStart 指定的单个页面。 |
-| nEnd | （可选）一个从0开始的索引，定义当前文档中一个包含性页面范围的结束位置。 |
-| nNonPrint | （可选，版本 6.0）此参数决定如何处理非打印注释。值为：0（默认）：非打印注释被平面化。1：非打印注释保持原样。2：非打印注释从文档中移除。 |
+| 参数 | 描述 |
+| :--- | :--- |
+| `nStart` | （可选）一个从 0 开始的索引，定义当前文档中一个包含性页面范围的起始位置。如果仅指定 `nStart`，则页面范围为 `nStart` 指定的单个页面。 |
+| `nEnd` | （可选）一个从 0 开始的索引，定义当前文档中一个包含性页面范围的结束位置。 |
+| `nNonPrint` | （可选，版本 6.0）此参数决定如何处理非打印注释。值为：0（默认）：非打印注释被平面化；1：非打印注释保持原样；2：非打印注释从文档中移除。 |
 
-## 返回值
+### 返回值
 
-无
+无。
 
-## 示例
+### 示例
 
 将文档中的所有页面平面化。
 
-`this.flattenPages();`
+```javascript
+this.flattenPages();
+```
 
 ## getAnnot
 
 | 5.0 |  |  | A | X |
+| :--- | :--- | :--- | :--- | :--- |
 
-获取特定文档页面上包含的 **annot** 对象的名称。
+获取特定文档页面上包含的 `annot` 对象的名称。
 
-**参数**
+### 参数
 
-| **nPage** | 包含所需注释对象的页面。 |
-| **cName** | 所需注释对象的名称。 |
+| 参数 | 描述 |
+| :--- | :--- |
+| `nPage` | 包含所需注释对象的页面。 |
+| `cName` | 所需注释对象的名称。 |
 
-**返回值**
+### 返回值
 
-注释对象，如果没有这样的注释，则返回 **null**。
+注释对象，如果没有这样的注释，则返回 `null`。
 
-**示例**
+### 示例
 
-```
+```javascript
 var ann = this.getAnnot(0, "OnMarketShare");
 if (ann == null)
-    console.println("Not Found!")
+    console.println("Not Found!");
 else
     console.println("Found it! type: " + ann.type);
 ```
@@ -9354,43 +9733,47 @@ else
 ## getAnnot3D
 
 | 7.0 |  |  |  |  |
+| :--- | :--- | :--- | :--- | :--- |
 
-从给定页面获取具有给定名称的 Annot3D 对象。
+从给定页面获取具有给定名称的 `Annot3D` 对象。
 
-**参数**
+### 参数
 
-| **nPage** | 包含所需 Annot3D 对象的、从0开始的页码。 |
-| **cName** | 所需 Annot3D 对象的名称。 |
+| 参数 | 描述 |
+| :--- | :--- |
+| `nPage` | 包含所需 `Annot3D` 对象的、从 0 开始的页码。 |
+| `cName` | 所需 `Annot3D` 对象的名称。 |
 
-**返回值**
+### 返回值
 
-Annot3D 对象，如果没有这样的注释，则返回 **undefined**。
+`Annot3D` 对象，如果没有这样的注释，则返回 `undefined`。
 
 ## getAnnots
 
 | 5.0 |  |  | A | X |
+| :--- | :--- | :--- | :--- | :--- |
 
-获取满足指定条件的注释对象数组。另请参阅 getAnnot 和 syncAnnotScan。
+获取满足指定条件的注释对象数组。另请参阅 `getAnnot` 和 `syncAnnotScan`。
 
-## 参数
+### 参数
 
 | 参数 | 描述 |
 | :--- | :--- |
-| **nPage** | （可选）一个从0开始的页码。如果指定，则仅获取给定页面上的注释。如果未指定，则从所有页面获取满足搜索条件的注释。 |
-| **nSortBy** | （可选）应用于数组的排序方法。值为：**ANSB_None:** （默认）不排序；等同于未指定此参数。**ANSB_Page:** 使用页码作为主要排序标准。**ANSB_Author:** 使用作者作为主要排序标准。**ANSB_ModDate:** 使用修改日期作为主要排序标准。**ANSB_Type:** 使用注释类型作为主要排序标准。 |
-| **bReverse** | （可选）如果为 **true**，则导致数组相对于 **nSortBy** 进行反向排序。 |
-| **nFilterBy** | （可选）仅获取满足某些条件的注释。值为：**ANFB_ShouldNone:** （默认）获取所有注释。等同于未指定此参数。**ANFB_ShouldPrint:** 仅包含可打印的注释。**ANFB_ShouldView:** 仅包含可查看的注释。**ANFB_ShouldEdit:** 仅包含可编辑的注释。**ANFB_ShouldAppearInPanel:** 仅包含出现在注释窗格中的注释。**ANFB_ShouldSummarize:** 仅包含可包含在摘要中的注释。**ANFB_ShouldExport:** 仅包含可包含在导出中的注释。 |
+| `nPage` | （可选）一个从 0 开始的页码。如果指定，则仅获取给定页面上的注释。如果未指定，则从所有页面获取满足搜索条件的注释。 |
+| `nSortBy` | （可选）应用于数组的排序方法。值为：`ANSB_None`（默认）：不排序，等同于未指定此参数；`ANSB_Page`：使用页码作为主要排序标准；`ANSB_Author`：使用作者作为主要排序标准；`ANSB_ModDate`：使用修改日期作为主要排序标准；`ANSB_Type`：使用注释类型作为主要排序标准。 |
+| `bReverse` | （可选）如果为 `true`，则导致数组相对于 `nSortBy` 进行反向排序。 |
+| `nFilterBy` | （可选）仅获取满足某些条件的注释。值为：`ANFB_ShouldNone`（默认）：获取所有注释，等同于未指定此参数；`ANFB_ShouldPrint`：仅包含可打印的注释；`ANFB_ShouldView`：仅包含可查看的注释；`ANFB_ShouldEdit`：仅包含可编辑的注释；`ANFB_ShouldAppearInPanel`：仅包含出现在注释窗格中的注释；`ANFB_ShouldSummarize`：仅包含可包含在摘要中的注释；`ANFB_ShouldExport`：仅包含可包含在导出中的注释。 |
 
-## 返回值
+### 返回值
 
-注释对象数组，如果没有找到，则返回 **null**。
+注释对象数组，如果没有找到，则返回 `null`。
 
-## 示例
+### 示例
 
-```
+```javascript
 this.syncAnnotScan();
 var annots = this.getAnnots({
-    nPage:0,
+    nPage: 0,
     nSortBy: ANSB_Author,
     bReverse: true
 });
@@ -9398,115 +9781,136 @@ console.show();
 console.println("Number of Annots: " + annots.length);
 ```
 
-```
+```javascript
 var msg = "%s in a %s annot said: \"%s\"";
 for (var i = 0; i < annots.length; i++)
-    console.println(util.printf(msg, annots[i].author, annots[i].type,
-    annots[i].contents));
+    console.println(util.printf(
+        msg,
+        annots[i].author,
+        annots[i].type,
+        annots[i].contents
+    ));
 ```
 
 ## getAnnots3D
 
-返回给定页面的 Annot3D 对象数组。
+返回给定页面的 `Annot3D` 对象数组。
 
-## 参数
+### 参数
 
-| **nPage** | 包含所需 Annot3D 对象的、从0开始的页码。 |
+| 参数 | 描述 |
+| :--- | :--- |
+| `nPage` | 包含所需 `Annot3D` 对象的、从 0 开始的页码。 |
 
-## 返回值
+### 返回值
 
-Annot3D 对象数组，如果没有找到，则返回 **undefined**。
+`Annot3D` 对象数组，如果没有找到，则返回 `undefined`。
 
 ## getDataObject
 
-获取特定的 `data` 对象。另请参阅 dataObjects、createDataObject、exportDataObject、importDataObject、removeDataObject。
+获取特定的 `data` 对象。另请参阅 `dataObjects`、`createDataObject`、`exportDataObject`、`importDataObject` 和 `removeDataObject`。
 
-## 参数
+### 参数
 
-| **cName** | 要获取的 `data` 对象的名称。 |
+| 参数 | 描述 |
+| :--- | :--- |
+| `cName` | 要获取的 `data` 对象的名称。 |
 
-## 返回值
+### 返回值
 
 与指定名称相对应的数据对象。
 
-## 示例
+### 示例
 
-```
+```javascript
 var MyData = this.getDataObject("MyData");
-console.show(); console.clear();
-for (var i in MyData) console.println("MyData." + i + "=" + MyData[i]);
+console.show();
+console.clear();
+for (var i in MyData)
+    console.println("MyData." + i + "=" + MyData[i]);
 ```
 
 ## getDataObjectContents
 
-此方法允许访问与 DataObject 关联的文件附件的内容。
+此方法允许访问与 `DataObject` 关联的文件附件的内容。
 
-## 参数
+### 参数
 
-| | |
+| 参数 | 描述 |
 | :--- | :--- |
-| cName | 与要获取的数据对象关联的名称。 |
-| bAllowAuth | （可选）默认值为 **false**。如果为 **true**，则会使用一个对话框来获取用户授权。如果数据对象是使用 Doc.encryptForRecipients 加密的，则可能需要授权。如果 bAllowAuth 为 true，则允许显示授权对话框。 |
+| `cName` | 与要获取的数据对象关联的名称。 |
+| `bAllowAuth` | （可选）默认值为 `false`。如果为 `true`，则会使用一个对话框来获取用户授权。如果数据对象是使用 `Doc.encryptForRecipients` 加密的，则可能需要授权。如果 `bAllowAuth` 为 `true`，则允许显示授权对话框。 |
 
-## 返回值
+### 返回值
 
-ReadStream 对象
+`ReadStream` 对象。
 
-相关对象、属性和方法有 Data Object、doc.dataObjects、doc.getDataObject、doc.openDataObject、doc.createDataObject、doc.importDataObject、doc.setDataObjectContents 和 doc.removeDataObject。
+相关对象、属性和方法有 `Data Object`、`doc.dataObjects`、`doc.getDataObject`、`doc.openDataObject`、`doc.createDataObject`、`doc.importDataObject`、`doc.setDataObjectContents` 和 `doc.removeDataObject`。
 
 ## ReadStream 对象
 
-ReadStream 对象是一个表示数据流的对象字面量。它包含一个允许读取流中数据的方法。
+`ReadStream` 对象是一个表示数据流的对象字面量。它包含一个允许读取流中数据的方法。
 
 | 方法 | 参数 | 返回值 | 描述 |
 | :--- | :--- | :--- | :--- |
-| read | nBytes | String | read 方法接受要读取的字节数，并返回一个十六进制编码的字符串，其中包含来自流的数据。read 方法对流是一个破坏性操作，返回一个长度为零的字符串以表示流结束。 |
+| `read` | `nBytes` | `String` | `read` 方法接受要读取的字节数，并返回一个十六进制编码的字符串，其中包含来自流的数据。`read` 方法对流是一个破坏性操作，返回一个长度为零的字符串以表示流结束。 |
 
-## 示例
+### 示例
 
-此代码是流通备忘录的一部分。一个 PDF 文件在电子邮件列表成员间流转。每个收件人输入一个预算数字，然后将文档转发给列表中的下一个人。在发送文档之前，预算数字被追加到一个嵌入的制表符分隔的文档 budget.xls 中，该文档是此文档的附件。最后一个收件人可以在电子表格应用程序中打开附件 budget.xls 以查看各个预算数字。
+此代码是流通备忘录的一部分。一个 PDF 文件在电子邮件列表成员间流转。每个收件人输入一个预算数字，然后将文档转发给列表中的下一个人。在发送文档之前，预算数字被追加到一个嵌入的制表符分隔的文档 `budget.xls` 中，该文档是此文档的附件。最后一个收件人可以在电子表格应用程序中打开附件 `budget.xls` 以查看各个预算数字。
 
-```
+```javascript
 // get the name and department of the current recipient
-var firstName =  this.getField("Name.First").value;
-var lastName =  this.getField("Name.Last").value;
-var deptName =  this.getField("Dept.Name").value;
+var firstName = this.getField("Name.First").value;
+var lastName = this.getField("Name.Last").value;
+var deptName = this.getField("Dept.Name").value;
+
 // get the budget number
-var deptBudget =  this.getField("Dept.Budget").value;
-if ( app.viewerVersion >= 7 ) {
+var deptBudget = this.getField("Dept.Budget").value;
+
+if (app.viewerVersion >= 7) {
     // get the file stream object of the embedded file
     var oFile = this.getDataObjectContents("budget.xls");
+
     // convert to a string
     var myBudget = util.stringFromStream(oFile, "utf-8");
-    // append current data to the end, using tabs to separate info
-```
 
-var myBudget = myBudget + "\r\n" + firstName
-    + "\t" + lastName + "\t" + deptName + "\t" + deptBudget;
-// 转换回文件流
-var oFile = util.streamFromString(myBudget, "utf-8");
-// 现在"覆盖" budget.xls
-this.setDataObjectContents("budget.xls", oFile);
+    // append current data to the end, using tabs to separate info
+    myBudget = myBudget + "\r\n" + firstName
+        + "\t" + lastName
+        + "\t" + deptName
+        + "\t" + deptBudget;
+
+    // 转换回文件流
+    oFile = util.streamFromString(myBudget, "utf-8");
+
+    // 现在“覆盖” budget.xls
+    this.setDataObjectContents("budget.xls", oFile);
 } else {
-    app.alert("需要 Acrobat 7.0 或更高版本。"
-        + " 您的预算数据将不会被包含。 "
-        + "将通过电子邮件转发给下一位联系人，抱歉。 "
-        + "请使用传统方法发送您的预算请求。");
+    app.alert(
+        "需要 Acrobat 7.0 或更高版本。"
+        + " 您的预算数据将不会被包含。"
+        + " 将通过电子邮件转发给下一位联系人，抱歉。"
+        + " 请使用传统方法发送您的预算请求。"
+    );
 }
+```
 
 未显示的代码部分用于保存文档并发送给邮寄列表中的下一个人。
 
-本示例使用了 **doc.getDataObjectContents**、**util.stringFromStream**、**util.streamFromString** 和 **doc.setDataObjectContents**。
+本示例使用了 `doc.getDataObjectContents`、`util.stringFromStream`、`util.streamFromString` 和 `doc.setDataObjectContents`。
 
 ## getField
 
 将 PDF 文档中的字段对象映射到 JavaScript 变量。
+
 从 Acrobat 6.0 开始，此方法可以返回单个控件的字段对象。更多信息，请参阅从 JavaScript 访问字段。
 
 ### 参数
 
-| cName | 目标字段的名称。 |
-|---|---|
+| 参数 | 描述 |
+| :--- | :--- |
+| `cName` | 目标字段的名称。 |
 
 ### 返回值
 
@@ -9516,59 +9920,65 @@ this.setDataObjectContents("budget.xls", oFile);
 
 使文本字段多行显示，并将其高度增加为三倍。
 
-```
+```javascript
 var f = this.getField("myText");
-var aRect = f.rect;           // 获取边界矩形
-f.multiline = true;           // 使其为多行
-var height = aRect[1]-aRect[3];// 计算高度
-aRect[3] -= 2* height;        // 将文本字段的高度增加为三倍
-f.rect = aRect;               // 并使其生效
+var aRect = f.rect;            // 获取边界矩形
+f.multiline = true;            // 使其为多行
+var height = aRect[1] - aRect[3]; // 计算高度
+aRect[3] -= 2 * height;        // 将文本字段的高度增加为三倍
+f.rect = aRect;                // 并使其生效
 ```
 
-### 示例 2 (版本 6.0)
+### 示例 2（版本 6.0）
 
 为单个控件（本例中为单选按钮）附加一个 JavaScript 动作。
 
-```
+```javascript
 var f = this.getField("myRadio.0");
-f.setAction("MouseUp",
-    "app.alert('感谢选择第一个选项。');");
+f.setAction(
+    "MouseUp",
+    "app.alert('感谢选择第一个选项。');"
+);
 ```
 
 ### 示例 3
 
 以下代码列出字段的所有属性。此技术可用于以编程方式复制一个字段。
 
-```
+```javascript
 f = this.getField("myField");
-for ( var i in f ) {
+for (var i in f) {
     try {
-        if ( typeof f[i] != "function" ) // 移除字段方法
-            console.println( i + ":" + f[i] )
-    } catch(e) {} // 当获取不适用于此字段类型的属性时会发生异常。
+        if (typeof f[i] != "function") // 移除字段方法
+            console.println(i + ":" + f[i]);
+    } catch (e) {
+        // 当获取不适用于此字段类型的属性时会发生异常。
+    }
 }
 ```
 
 ## getIcon
 
 | 5.0 |  |  |  |
+| :--- | :--- | :--- | :--- |
 
-获取特定的图标对象。另请参阅 icons、addIcon、importIcon 和 removeIcon，以及字段方法 buttonGetIcon、buttonImportIcon 和 buttonSetIcon。
+获取特定的图标对象。另请参阅 `icons`、`addIcon`、`importIcon` 和 `removeIcon`，以及字段方法 `buttonGetIcon`、`buttonImportIcon` 和 `buttonSetIcon`。
 
 ### 参数
 
-| cName | 要获取的图标对象的名称。 |
-| --- | --- |
+| 参数 | 描述 |
+| :--- | :--- |
+| `cName` | 要获取的图标对象的名称。 |
 
 ### 返回值
 
-一个与文档中指定名称关联的图标通用对象，如果不存在该名称的图标，则返回 null。
+一个与文档中指定名称关联的图标通用对象，如果不存在该名称的图标，则返回 `null`。
 
 ### 示例
 
-以下是一个组合框的自定义击键脚本。组合框中项目的字体名称是填充文档的部分图标的名称。当用户从组合框中选择不同的项目时，相应的图标将显示为字段 "myPictures" 的按钮面。
+以下是一个组合框的自定义击键脚本。组合框中项目的字体名称是填充文档的部分图标的名称。当用户从组合框中选择不同的项目时，相应的图标将显示为字段 `myPictures` 的按钮面。
 
-```
+```javascript
 if (!event.willCommit) {
     var b = this.getField("myPictures");
     var i = this.getIcon(event.change);
@@ -9576,11 +9986,12 @@ if (!event.willCommit) {
 }
 ```
 
-有关此示例的更复杂变体，请参阅 field.buttonSetIcon。
+有关此示例的更复杂变体，请参阅 `field.buttonSetIcon`。
 
 ## getLegalWarnings
 
 | 6.0 | (D) | (X) |
+| :--- | :--- | :--- |
 
 此方法以对象形式返回此文档的法律警告，该对象包含文档中找到的每个警告的条目。法律警告可以在文件由作者签名时嵌入到文件中。可以使用 `field.signatureSign` 方法的 `cLegalAttest` 嵌入法律警告。
 
@@ -9588,8 +9999,9 @@ if (!event.willCommit) {
 
 ### 参数
 
-| bExecute | 如果为 true，将导致文件被检查，并将返回所有检测到的警告。如果为 false（默认值），则返回已嵌入文件中的警告。 |
-| --- | --- |
+| 参数 | 描述 |
+| :--- | :--- |
+| `bExecute` | 如果为 `true`，将导致文件被检查，并将返回所有检测到的警告。如果为 `false`（默认值），则返回已嵌入文件中的警告。 |
 
 ### 返回值
 
@@ -9599,26 +10011,27 @@ if (!event.willCommit) {
 
 处理文档并获取合法的 PDF 警告。
 
-```
-var w = this.getLegalWarnings( true );
-console.println( "实际的合法 PDF 警告:" );
-for(i in w) console.println( i + " = " + w[i] );
+```javascript
+var w = this.getLegalWarnings(true);
+console.println("实际的合法 PDF 警告:");
+for (i in w)
+    console.println(i + " = " + w[i]);
 
-var w1 = this.getLegalWarnings( false );
-console.println( "声明的合法 PDF 警告:" );
-for(i in w1) console.println( i + " = " + w1[i] );
+var w1 = this.getLegalWarnings(false);
+console.println("声明的合法 PDF 警告:");
+for (i in w1)
+    console.println(i + " = " + w1[i]);
 
 // 对于作者签名，请注意注释是否被 MDP 设置允许
-
-var f = this.getField( "AuthorSig" );
+var f = this.getField("AuthorSig");
 var s = f.signatureInfo();
-if( s.mdp == "defaultAndComments" )
-    console.println( "允许注释" );
+
+if (s.mdp == "defaultAndComments")
+    console.println("允许注释");
 
 // 作者对此有何说法？
-
-console.println( "合法 PDF 证明:" );
-console.println( w1.Attestation );
+console.println("合法 PDF 证明:");
+console.println(w1.Attestation);
 ```
 
 ## getLinks
@@ -9627,9 +10040,10 @@ console.println( w1.Attestation );
 
 ### 参数
 
-| nPage | 包含所需 `link` 对象的页面。第一页为 0。 |
-|-------|-----------------------------------------------------------------------|
-| oCoords | 一个包含四个数字的数组，表示旋转用户空间中的矩形坐标，按以下顺序列出：左上 x、左上 y、右下 x 和右下 y。 |
+| 参数 | 描述 |
+| :--- | :--- |
+| `nPage` | 包含所需 `link` 对象的页面。第一页为 0。 |
+| `oCoords` | 一个包含四个数字的数组，表示旋转用户空间中的矩形坐标，按以下顺序列出：左上 x、左上 y、右下 x 和右下 y。 |
 
 ### 返回值
 
@@ -9639,26 +10053,31 @@ console.println( w1.Attestation );
 
 计算文档中的链接数量并报告给控制台。
 
-```
-var numLinks=0;
-for ( var p = 0; p < this.numPages; p++)
-{
+```javascript
+var numLinks = 0;
+
+for (var p = 0; p < this.numPages; p++) {
     var b = this.getPageBox("Crop", p);
     var l = this.getLinks(p, b);
-    console.println("页面 " + p +" 上的链接数量为 " + l.length);
+
+    console.println("页面 " + p + " 上的链接数量为 " + l.length);
     numLinks += l.length;
 }
+
 console.println("文档中的链接总数为 " + numLinks);
 ```
 
 ## getNthFieldName
 
+
+
 获取文档中的第 `n` 个字段名。另请参阅 `numFields`。
 
 ### 参数
 
-| nIndex | 要获取的字段名称。 |
+| 参数 | 描述 |
 | --- | --- |
+| `nIndex` | 要获取的字段名称。 |
 
 ### 返回值
 
@@ -9668,21 +10087,22 @@ console.println("文档中的链接总数为 " + numLinks);
 
 枚举文档中的所有字段。
 
-```
+```javascript
 for (var i = 0; i < this.numFields; i++)
     console.println("字段[" + i + "] = " + this.getNthFieldName(i));
 ```
 
 ## getNthTemplate
 
-获取文档中第 *n* 个模板的名称。
+获取文档中第 `n` 个模板的名称。
+
 此方法在更高版本中已被 `templates` 属性、`getTemplate` 方法和模板对象所取代。
 
 ### 参数
 
 | 参数 | 描述 |
-| :--- | :--- |
-| **nIndex** | 要获取的模板。 |
+| --- | --- |
+| `nIndex` | 要获取的模板。 |
 
 ### 返回值
 
@@ -9691,13 +10111,14 @@ for (var i = 0; i < this.numFields; i++)
 ## getOCGs
 
 获取在指定页面上找到的 OCG 对象数组。
-相关方法是 **doc.getOCGOrder** 和 **doc.setOCGOrder**，以及 OCG 对象。
+
+相关方法是 `doc.getOCGOrder` 和 `doc.setOCGOrder`，以及 OCG 对象。
 
 ### 参数
 
 | 参数 | 描述 |
-| :--- | :--- |
-| **nPage** | (可选) 基于 0 的页码。如果未指定，则返回文档中找到的所有 OCG。 |
+| --- | --- |
+| `nPage` | （可选）基于 0 的页码。如果未指定，则返回文档中找到的所有 OCG。 |
 
 ### 返回值
 
@@ -9707,11 +10128,11 @@ for (var i = 0; i < this.numFields; i++)
 
 打开给定文档和页面上的所有 OCG。
 
-```
+```javascript
 function TurnOnOCGsForPage(doc, nPage)
 {
     var ocgArray = doc.getOCGs(nPage);
-    for (var i=0; i < ocgArray.length; i++)
+    for (var i = 0; i < ocgArray.length; i++)
         ocgArray[i].state = true;
 }
 ```
@@ -9732,6 +10153,7 @@ function TurnOnOCGsForPage(doc, nPage)
 ### 返回值
 
 一个包含 OCG 对象、字符串和类似子数组的数组。
+
 有关顺序数组的描述，请参阅 `setOCGOrder`。
 
 ## getPageBox
@@ -9739,36 +10161,29 @@ function TurnOnOCGsForPage(doc, nPage)
 | 5.0 | | | |
 | --- | --- | --- | --- |
 
-获取*旋转用户空间*中包围页面命名框的矩形。另请参阅 `setPageBoxes`。
+获取旋转用户空间中包围页面命名框的矩形。另请参阅 `setPageBoxes`。
 
 ### 参数
 
-| **cBox** | (可选) 框的类型。值有：
-          Art
-          Bleed
-          BBox
-          Crop (默认)
-          Trim
-          有关这些框的定义，请参阅 [PDF Reference](https://www.adobe.com/content/dam/acom/en/devnet/pdf/PDFReference.pdf) 中的“页面边界”。 |
+| 参数 | 描述 |
 | --- | --- |
-| **nPage** | (可选) 基于 0 的页面索引。默认为 0，即文档中的第一页。 |
+| `cBox` | （可选）框的类型。值有：<br><br>`Art`<br><br>`Bleed`<br><br>`BBox`<br><br>`Crop`（默认）<br><br>`Trim`<br><br>有关这些框的定义，请参阅 [PDF Reference](https://www.adobe.com/content/dam/acom/en/devnet/pdf/PDFReference.pdf) 中的“页面边界”。 |
+| `nPage` | （可选）基于 0 的页面索引。默认为 0，即文档中的第一页。 |
 
 ### 返回值
 
-*旋转用户空间*中包围页面命名框的矩形。
+旋转用户空间中包围页面命名框的矩形。
 
 ### 示例
 
 获取介质框的尺寸。
 
-```
+```javascript
 var aRect = this.getPageBox("Media");
 var width = aRect[2] - aRect[0];
 var height = aRect[1] - aRect[3];
 console.println("第 1 页的宽度为 " + width + "，高度为 " + height);
 ```
-
-
 
 ## getPageLabel
 
@@ -9777,8 +10192,8 @@ console.println("第 1 页的宽度为 " + width + "，高度为 " + height);
 ### 参数
 
 | 参数 | 描述 |
-|---|---|
-| **nPage** | （可选）页面的从 0 开始的索引。默认为 0，即文档中的第一页。 |
+| --- | --- |
+| `nPage` | （可选）页面的从 0 开始的索引。默认为 0，即文档中的第一页。 |
 
 ### 返回值
 
@@ -9790,55 +10205,57 @@ console.println("第 1 页的宽度为 " + width + "，高度为 " + height);
 
 ## getPageNthWord
 
-获取页面上的第 *n* 个单词。
+获取页面上的第 `n` 个单词。
+
 另请参阅 [getPageNumWords](https://acrobat.adobe.com/content/en-US/acrobat-cloud/api/javascript-api-reference/DC_API_Doc_Methods.html#getPageNumWords) 和 [selectPageNthWord](https://acrobat.adobe.com/content/en-US/acrobat-cloud/api/javascript-api-reference/DC_API_Doc_Methods.html#selectPageNthWord)。
 
-**注意：** (安全 (S)): 如果文档安全设置为阻止内容提取，此方法将抛出异常。
+**注意：** （安全（S））：如果文档安全设置为阻止内容提取，此方法将抛出异常。
 
 ### 参数
 
 | 参数 | 描述 |
-|---|---|
-| **nPage** | （可选）页面的从 0 开始的索引。默认为 0，即文档中的第一页。 |
-| **nWord** | （可选）单词的从 0 开始的索引。默认为 0，即页面上的第一个单词。 |
-| **bStrip** | （可选）返回前是否应从单词中删除标点符号和空白字符。默认为 `true`。 |
+| --- | --- |
+| `nPage` | （可选）页面的从 0 开始的索引。默认为 0，即文档中的第一页。 |
+| `nWord` | （可选）单词的从 0 开始的索引。默认为 0，即页面上的第一个单词。 |
+| `bStrip` | （可选）返回前是否应从单词中删除标点符号和空白字符。默认为 `true`。 |
 
 ### 返回值
 
-页面上的第 *n* 个单词。
+页面上的第 `n` 个单词。
 
 ### 示例
 
-请参阅 `spell.checkWord` 的 [示例 2](https://acrobat.adobe.com/content/en-US/acrobat-cloud/api/javascript-api-reference/DC_API_Doc_Methods.html#spell.checkWord) 获取示例。
+请参阅 `spell.checkWord` 的[示例 2](https://acrobat.adobe.com/content/en-US/acrobat-cloud/api/javascript-api-reference/DC_API_Doc_Methods.html#spell.checkWord) 获取示例。
 
 # Acrobat JavaScript 脚本参考
+
 ## Doc 方法
 
 ## getPageNthWordQuads
 
 | 5.0 | | Ⓢ | |
-|---|---|---|---|
+| --- | --- | --- | --- |
 
-获取页面上第 n 个单词的四边形列表。四边形可用于构造文本标记注释：**下划线**、**删除线**、**高亮**和**波浪线**。另请参阅 [getPageNthWord](getPageNthWord)、[getPageNumWords](getPageNumWords) 和 [selectPageNthWord](selectPageNthWord)。
+获取页面上第 `n` 个单词的四边形列表。四边形可用于构造文本标记注释：下划线、删除线、高亮和波浪线。另请参阅 [getPageNthWord](getPageNthWord)、[getPageNumWords](getPageNumWords) 和 [selectPageNthWord](selectPageNthWord)。
 
-> **注意：** (安全 Ⓢ): 如果文档安全设置为阻止内容提取，此方法将抛出异常。
+> **注意：** （安全 Ⓢ）：如果文档安全设置为阻止内容提取，此方法将抛出异常。
 
 ### 参数
 
 | 参数 | 描述 |
-|---|---|
-| **nPage** | （可选）页面的从 0 开始的索引。默认为 0，即文档中的第一页。 |
-| **nWord** | （可选）单词的从 0 开始的索引。默认为 0，即页面上的第一个单词。 |
+| --- | --- |
+| `nPage` | （可选）页面的从 0 开始的索引。默认为 0，即文档中的第一页。 |
+| `nWord` | （可选）单词的从 0 开始的索引。默认为 0，即页面上的第一个单词。 |
 
 ### 返回值
 
-页面上第 n 个单词的 [四边形](quads) 列表。
+页面上第 `n` 个单词的[四边形](quads)列表。
 
 ### 示例
 
 以下示例为文档第二页的第五个单词添加下划线。
 
-```
+```javascript
 var annot = this.addAnnot({
     page: 1,
     type: "Underline",
@@ -9853,16 +10270,17 @@ var annot = this.addAnnot({
 ## getPageNumWords
 
 | 5.0 | | | |
-|---|---|---|---|
+| --- | --- | --- | --- |
 
 获取页面上的单词数量。
+
 另请参阅 [getPageNthWord](getPageNthWord)、[getPageNthWordQuads](getPageNthWordQuads) 和 [selectPageNthWord](selectPageNthWord)。
 
 ### 参数
 
 | 参数 | 描述 |
-|---|---|
-| **nPage** | （可选）页面的从 0 开始的索引。默认为 0，即文档中的第一页。 |
+| --- | --- |
+| `nPage` | （可选）页面的从 0 开始的索引。默认为 0，即文档中的第一页。 |
 
 ### 返回值
 
@@ -9870,9 +10288,9 @@ var annot = this.addAnnot({
 
 ### 示例
 
-```
+```javascript
 // count the number of words in a document
-var cnt=0;
+var cnt = 0;
 for (var p = 0; p < this.numPages; p++)
     cnt += getPageNumWords(p);
 console.log("There are " + cnt + " words in this doc.");
@@ -9883,15 +10301,15 @@ console.log("There are " + cnt + " words in this doc.");
 ## getPageRotation
 
 | 5.0 | | | |
-|---|---|---|---|
+| --- | --- | --- | --- |
 
 获取指定页面的旋转角度。另请参阅 `setPageRotations`。
 
 ### 参数
 
 | 参数 | 描述 |
-|---|---|
-| **nPage** | （可选）页面的从 0 开始的索引。默认为 0，即文档中的第一页。 |
+| --- | --- |
+| `nPage` | （可选）页面的从 0 开始的索引。默认为 0，即文档中的第一页。 |
 
 ### 返回值
 
@@ -9900,15 +10318,15 @@ console.log("There are " + cnt + " words in this doc.");
 ## getPageTransition
 
 | 5.0 | | | |
-|---|---|---|---|
+| --- | --- | --- | --- |
 
 获取指定页面的过渡效果。另请参阅 `setPageTransitions`。
 
 ### 参数
 
 | 参数 | 描述 |
-|---|---|
-| **nPage** | （可选）页面的从 0 开始的索引。默认为 0，即文档中的第一页。 |
+| --- | --- |
+| `nPage` | （可选）页面的从 0 开始的索引。默认为 0，即文档中的第一页。 |
 
 ### 返回值
 
@@ -9919,12 +10337,13 @@ console.log("There are " + cnt + " words in this doc.");
 - `cTransDuration` 是过渡效果的持续时间（以秒为单位）。
 
 # Acrobat JavaScript 脚本参考
+
 ## Doc 方法
 
 ## getPrintParams
 
 | 6.0 | | | |
-|---|---|---|---|
+| --- | --- | --- | --- |
 
 获取一个反映默认打印设置的 `printParams` 对象。请参阅 `print`，它现在接受 `printParams` 对象作为其参数。
 
@@ -9940,7 +10359,7 @@ console.log("There are " + cnt + " words in this doc.");
 
 获取默认打印机的 `printParams` 对象。
 
-```
+```javascript
 var pp = this.getPrintParams();
 pp.colorOverride = pp.colorOverrides.mono; // set some properties
 this.print(pp); // print
@@ -9949,15 +10368,15 @@ this.print(pp); // print
 ## getSound
 
 | 5.0 | | | |
-|---|---|---|---|
+| --- | --- | --- | --- |
 
 获取与指定名称对应的 `sound` 对象。另请参阅 `sounds`、`importSound`、`deleteSound` 和 Sound Object。
 
 ### 参数
 
 | 参数 | 描述 |
-|---|---|
-| **cName** | 要获取的对象的名称。 |
+| --- | --- |
+| `cName` | 要获取的对象的名称。 |
 
 ### 返回值
 
@@ -9965,7 +10384,7 @@ this.print(pp); // print
 
 ### 示例
 
-```
+```javascript
 var s = this.getSound("Moo");
 console.println("Playing the " + s.name + " sound.");
 s.play();
@@ -9974,33 +10393,35 @@ s.play();
 ## getTemplate
 
 | 5.0 | | | |
-|---|---|---|---|
+| --- | --- | --- | --- |
 
-从文档中获取指定名称的模板。另请参阅 `templates`、`createTemplate`、`removeTemplate` 和 `Template Object`。
+从文档中获取指定名称的模板。另请参阅 `templates`、`createTemplate`、`removeTemplate` 和 Template Object。
 
 ### 参数
 
 | 参数 | 描述 |
-|---|---|
-| **cName** | 要检索的模板的名称。 |
+| --- | --- |
+| `cName` | 要检索的模板的名称。 |
 
 ### 返回值
 
-`Template Object`，如果文档中不存在指定名称的模板，则返回 `null`。
+Template Object，如果文档中不存在指定名称的模板，则返回 `null`。
 
 ### 示例
 
-```
+```javascript
 var t = this.getTemplate("myTemplate");
-if ( t != null ) console.println( "myTemplate exists and is "
-    + eval( '( t.hidden) ? "hidden" : "visible"' ) + ".");
-else console.println( "myTemplate is not present!");
+if (t != null)
+    console.println("myTemplate exists and is "
+        + eval('( t.hidden) ? "hidden" : "visible"') + ".");
+else
+    console.println("myTemplate is not present!");
 ```
 
 ## getURL
 
 | 4.0 | Ⓓ | Ⓢ | |
-|---|---|---|---|
+| --- | --- | --- | --- |
 
 使用 GET 方法通过互联网获取指定的 URL。如果当前文档在浏览器内查看，或者 Acrobat Web Capture 不可用，则该方法使用 Weblink 插件来检索请求的 URL。如果在 Acrobat 内运行，该方法从 `baseURL` 获取当前文档的 URL，如果文档是 WebCaptured 的，则从第一页（第 0 页）的 URL 获取，或从文件系统获取。
 
@@ -10011,14 +10432,13 @@ else console.println( "myTemplate is not present!");
 ### 参数
 
 | 参数 | 描述 |
-|---|---|
-| **cURL** | 一个完全限定的 URL 或相对 URL。URL 末尾可以包含查询字符串。 |
+| --- | --- |
+| `cURL` | 一个完全限定的 URL 或相对 URL。URL 末尾可以包含查询字符串。 |
+| `bAppend` | （可选）如果为 `true`（默认值），则生成的页面应附加到当前文档。如果文档在 Web 浏览器内运行、Acrobat Web Capture 插件不可用，或者 URL 类型为 `file:///`，则此标志被视为 `false`。 |
 
-**bAppend** （可选）如果为 **true**（默认值），则生成的页面应附加到当前文档。如果文档在 web 浏览器内运行、Acrobat Web Capture 插件不可用，或者 URL 类型为 "file:///"，则此标志被视为 **false**。
+**注意：** （安全 Ⓢ）：从 Acrobat 6.0 开始，如果 `bAppend` 为 `true`，则 `getURL` 方法只能在控制台、菜单或批处理事件期间执行。另请参阅[特权与非特权上下文](http://example.com)。
 
-**注意：** (安全 Ⓢ): 从 Acrobat 6.0 开始，如果 **bAppend** 为 **true**，则 **getURL** 方法只能在控制台、菜单或批处理事件期间执行。另请参阅 [特权与非特权上下文](http://example.com)。
-
-**注意：** 从 Acrobat 7.0 开始，通过菜单事件执行 JavaScript 不再是特权操作，详情请参阅 [通过菜单执行 JavaScript](http://example.com)。
+**注意：** 从 Acrobat 7.0 开始，通过菜单事件执行 JavaScript 不再是特权操作，详情请参阅[通过菜单执行 JavaScript](http://example.com)。
 
 ### 返回值
 
@@ -10026,22 +10446,22 @@ else console.println( "myTemplate is not present!");
 
 ### 示例
 
-```
+```javascript
 this.getURL("http://www.adobe.com/", false);
 ```
 
 ## gotoNamedDest
 
 | 3.01 | | | |
-|---|---|---|---|
+| --- | --- | --- | --- |
 
 转到 PDF 文档内的指定命名目标。有关命名目标及其创建方法的详细信息，请参阅 [PDF 参考手册](http://example.com) 的第 8.2 节“文档级导航”。
 
 ### 参数
 
 | 参数 | 描述 |
-|---|---|
-| **cName** | 文档内目标的名称。 |
+| --- | --- |
+| `cName` | 文档内目标的名称。 |
 
 ### 返回值
 
@@ -10051,7 +10471,7 @@ this.getURL("http://www.adobe.com/", false);
 
 以下示例打开一个文档，然后转到该文档内的一个命名目标。
 
-```
+```javascript
 // open new document
 var myNovelDoc = app.openDoc("/c/fiction/myNovel.pdf");
 // go to destination in this new doc
@@ -10059,8 +10479,6 @@ myNovelDoc.gotoNamedDest("chapter5");
 // close old document
 this.closeDoc();
 ```
-
-
 
 ## importAnFDF
 
@@ -10071,8 +10489,9 @@ this.closeDoc();
 
 ### 参数
 
-| **cPath** | （可选）指向 FDF 文件的设备无关路径名。关于设备无关路径名格式的描述，请参阅 [PDF 参考手册](PDF Reference) 的第 3.10.1 节。其格式应类似于使用 [submitForm](submitForm) 方法或 **高级 > 表单 > 导出表单数据** 菜单项导出的 FDF 中 *F* 键的值。该路径名可以是相对于当前文档位置的路径。如果省略此参数，则会显示一个对话框让用户选择文件。 |
+| 参数 | 描述 |
 | --- | --- |
+| `cPath` | （可选）指向 FDF 文件的设备无关路径名。关于设备无关路径名格式的描述，请参阅 [PDF 参考手册](PDF Reference) 的第 3.10.1 节。其格式应类似于使用 [submitForm](submitForm) 方法或“高级 > 表单 > 导出表单数据”菜单项导出的 FDF 中 `F` 键的值。该路径名可以是相对于当前文档位置的路径。如果省略此参数，则会显示一个对话框让用户选择文件。 |
 
 ### 返回值
 
@@ -10082,8 +10501,9 @@ this.closeDoc();
 
 以下代码是一个页面打开事件的 action，它检查是否已定义某个函数 `ProcResponse`，如果没有，则安装一个位于 FDF 文件中的文档级 JavaScript。
 
-```
-if(typeof ProcResponse == "undefined") this.importAnFDF("myDLJS.fdf");
+```javascript
+if (typeof ProcResponse == "undefined")
+    this.importAnFDF("myDLJS.fdf");
 ```
 
 此处，路径名是相对路径。此技术对于自动安装从 PostScript 文件蒸馏生成的 PDF 文件的文档级 JavaScript 可能很有用。
@@ -10095,7 +10515,9 @@ if(typeof ProcResponse == "undefined") this.importAnFDF("myDLJS.fdf");
 
 导入包含 XML 表单数据的指定 XFDF 文件。
 
-XFDF 是 Acrobat 表单数据的 XML 表示形式。有关 XFDF 的概述，请参阅题为"表单系统实施说明"的文档，该文档可作为 [Adobe Web Documentation](Adobe Web Documentation) 获取。*XML 表单数据格式规范* (XFDF) 可在 [http://partners.adobe.com/asn/tech/pdf/xmlformspec.jsp](http://partners.adobe.com/asn/tech/pdf/xmlformspec.jsp) 找到。
+
+
+XFDF 是 Acrobat 表单数据的 XML 表示形式。有关 XFDF 的概述，请参阅题为“表单系统实施说明”的文档，该文档可作为 [Adobe Web Documentation](Adobe Web Documentation) 获取。[XML 表单数据格式规范](XFDF) 可在 [http://partners.adobe.com/asn/tech/pdf/xmlformspec.jsp](http://partners.adobe.com/asn/tech/pdf/xmlformspec.jsp) 找到。
 
 另请参阅 [exportAsXFDF](exportAsXFDF)、[importAnFDF](importAnFDF) 和 [importTextData](importTextData)。
 
@@ -10103,7 +10525,7 @@ XFDF 是 Acrobat 表单数据的 XML 表示形式。有关 XFDF 的概述，请�
 
 | 参数 | 描述 |
 | :--- | :--- |
-| cPath | （可选）指向 XFDF 文件的设备无关路径名。关于设备无关路径名格式的描述，请参阅 [PDF 参考手册](https://help.adobe.com/en_US/acrobat/9.0/sdk/acrobat_sdk_help.pdf) 的第 3.10.1 节。该路径名可以是相对于当前文档位置的路径。如果省略此参数，则会显示一个对话框让用户选择文件。 |
+| `cPath` | （可选）指向 XFDF 文件的设备无关路径名。关于设备无关路径名格式的描述，请参阅 [PDF 参考手册](https://help.adobe.com/en_US/acrobat/9.0/sdk/acrobat_sdk_help.pdf) 的第 3.10.1 节。该路径名可以是相对于当前文档位置的路径。如果省略此参数，则会显示一个对话框让用户选择文件。 |
 
 ## 返回值
 
@@ -10111,34 +10533,34 @@ XFDF 是 Acrobat 表单数据的 XML 表示形式。有关 XFDF 的概述，请�
 
 ## importDataObject
 
-| 5.0 | D | S | F | |
-| :--- | :--- | :--- | :--- | :--- |
+| 5.0 | D | S | F |
+| :--- | :--- | :--- | :--- |
 
-将外部文件导入文档，并将指定的名称与 **data** 对象关联起来。稍后可以提取或操作这些数据对象。
+将外部文件导入文档，并将指定的名称与 `data` 对象关联起来。稍后可以提取或操作这些数据对象。
 
-相关的对象、属性和方法包括 [Data Object](https://help.adobe.com/en_US/acrobat/9.0/sdk/acrobat_sdk_help.pdf)、[doc.dataObjects](https://help.adobe.com/en_US/acrobat/9.0/sdk/acrobat_sdk_help.pdf)、[doc.getDataObject](https://help.adobe.com/en_US/acrobat/9.0/sdk/acrobat_sdk_help.pdf)、[doc.openDataObject](https://help.adobe.com/en_US/acrobat/9.0/sdk/acrobat_sdk_help.pdf)、[doc.createDataObject](https://help.adobe.com/en_US/acrobat/9.0/sdk/acrobat_sdk_help.pdf)、[doc.exportDataObject](https://help.adobe.com/en_US/acrobat/9.0/sdk/acrobat_sdk_help.pdf)、[doc.removeDataObject](https://help.adobe.com/en_US/acrobat/9.0/sdk/acrobat_sdk_help.pdf)、[doc.getDataObjectContents](https://help.adobe.com/en_US/acrobat/9.0/sdk/acrobat_sdk_help.pdf) 和 [doc.setDataObjectContents](https://help.adobe.com/en_US/acrobat/9.0/sdk/acrobat_sdk_help.pdf)。
+相关的对象、属性和方法包括 [Data Object](https://help.adobe.com/en_US/acrobat/9.0/sdk/acrobat_sdk_help.pdf)、[`doc.dataObjects`](https://help.adobe.com/en_US/acrobat/9.0/sdk/acrobat_sdk_help.pdf)、[`doc.getDataObject`](https://help.adobe.com/en_US/acrobat/9.0/sdk/acrobat_sdk_help.pdf)、[`doc.openDataObject`](https://help.adobe.com/en_US/acrobat/9.0/sdk/acrobat_sdk_help.pdf)、[`doc.createDataObject`](https://help.adobe.com/en_US/acrobat/9.0/sdk/acrobat_sdk_help.pdf)、[`doc.exportDataObject`](https://help.adobe.com/en_US/acrobat/9.0/sdk/acrobat_sdk_help.pdf)、[`doc.removeDataObject`](https://help.adobe.com/en_US/acrobat/9.0/sdk/acrobat_sdk_help.pdf)、[`doc.getDataObjectContents`](https://help.adobe.com/en_US/acrobat/9.0/sdk/acrobat_sdk_help.pdf) 和 [`doc.setDataObjectContents`](https://help.adobe.com/en_US/acrobat/9.0/sdk/acrobat_sdk_help.pdf)。
 
 **注意（安全）：** 如果指定了 `cDIPath` 参数，此方法只能在批处理、控制台或菜单事件期间执行，或通过外部调用（例如 OLE）执行。另请参阅 [特权与非特权上下文](https://help.adobe.com/en_US/acrobat/9.0/sdk/acrobat_sdk_help.pdf)。[Event Object](https://help.adobe.com/en_US/acrobat/9.0/sdk/acrobat_sdk_help.pdf) 包含对 Acrobat JavaScript 事件的讨论。
 
 从 Acrobat 7.0 开始，通过菜单事件执行 JavaScript 不再是特权操作，详情请参阅 [JavaScript Execution through the Menu](https://help.adobe.com/en_US/acrobat/9.0/sdk/acrobat_sdk_help.pdf)。
 
-当使用 **Doc.importDataObject** 导入文件附件时，其 **Data.name** 的值通过参数 `cName` 赋值；但是，当使用 UI 附加文件时，文件附件的 `name` 是自动赋值的。第一个附件的 `name` 为 "Untitled Object"；第二个为 "Untitled Object 2"；第三个为 "Untitled Object 3"；依此类推。
+当使用 `Doc.importDataObject` 导入文件附件时，其 `Data.name` 的值通过参数 `cName` 赋值；但是，当使用 UI 附加文件时，文件附件的 `name` 是自动赋值的。第一个附件的 `name` 为“Untitled Object”；第二个为“Untitled Object 2”；第三个为“Untitled Object 3”；依此类推。
 
 ## 参数
 
 | 参数 | 描述 |
 | :--- | :--- |
-| cName | 与数据对象关联的名称。 |
-| cDIPath | （可选）指向用户硬盘驱动器上数据文件的设备无关路径。此路径可以是绝对路径，也可以是相对于当前文档的路径。如果未指定，则会提示用户定位数据文件。关于路径的确切语法，请参阅 [PDF 参考手册](https://help.adobe.com/en_US/acrobat/9.0/sdk/acrobat_sdk_help.pdf) 中的文件规范字符串。 |
-| cCryptFilter | （可选，版本 6.0）加密此数据对象时要使用的加密筛选器的语言无关名称。此加密筛选器必须先前已使用 Document 对象的 addRecipientListCryptFilter 方法添加到文档的加密筛选器列表中，否则将引发异常。如果希望此数据对象在文件中（该文件已使用 Document 对象的 encryptForRecipients 方法加密）不被加密，则可以使用预定义的 "Identity" 加密筛选器。 |
+| `cName` | 与数据对象关联的名称。 |
+| `cDIPath` | （可选）指向用户硬盘驱动器上数据文件的设备无关路径。此路径可以是绝对路径，也可以是相对于当前文档的路径。如果未指定，则会提示用户定位数据文件。关于路径的确切语法，请参阅 [PDF 参考手册](https://help.adobe.com/en_US/acrobat/9.0/sdk/acrobat_sdk_help.pdf) 中的文件规范字符串。 |
+| `cCryptFilter` | （可选，版本 6.0）加密此数据对象时要使用的加密筛选器的语言无关名称。此加密筛选器必须先前已使用 `Document` 对象的 `addRecipientListCryptFilter` 方法添加到文档的加密筛选器列表中，否则将引发异常。如果希望此数据对象在文件中（该文件已使用 `Document` 对象的 `encryptForRecipients` 方法加密）不被加密，则可以使用预定义的“Identity”加密筛选器。 |
 
 ## 返回值
 
-成功时返回 true。失败时引发异常。
+成功时返回 `true`。失败时引发异常。
 
 ## 示例
 
-```
+```javascript
 function DumpDataObjectInfo(dataobj)
 {
     for (var i in dataobj)
@@ -10155,40 +10577,40 @@ DumpDataObjectInfo(this.getDataObject("MyData2"));
 ## importIcon
 
 | 5.0 | D | S | X |
-|---|---|---|---|
+| :--- | :--- | :--- | :--- |
 
 将图标导入文档，并将其与指定的名称关联。
 
-另请参阅 **icons**、**addIcon**、**getIcon**、**removeIcon**、字段方法 **buttonGetIcon**、**buttonImportIcon**、**buttonSetIcon** 以及 **Icon Generic Object**。
+另请参阅 `icons`、`addIcon`、`getIcon`、`removeIcon`、字段方法 `buttonGetIcon`、`buttonImportIcon`、`buttonSetIcon` 以及 `Icon Generic Object`。
 
-从版本 6.0 开始，Acrobat 将首先尝试将 **cDIPath** 作为 PDF 打开。如果失败，Acrobat 将尝试将 **cDIPath** 从已知图形格式（BMP、GIF、JPEG、PCX、PNG、TIFF）之一转换为 PDF，然后将转换后的文件作为按钮图标导入。
+从版本 6.0 开始，Acrobat 将首先尝试将 `cDIPath` 作为 PDF 打开。如果失败，Acrobat 将尝试将 `cDIPath` 从已知图形格式（BMP、GIF、JPEG、PCX、PNG、TIFF）之一转换为 PDF，然后将转换后的文件作为按钮图标导入。
 
-**注意**（安全）：如果指定了 **cDIPath**，此方法只能在批处理、控制台或菜单事件期间执行。另请参阅 **Privileged versus Non-privileged Context**。**Event Object** 包含对 Acrobat JavaScript 事件的讨论。
+**注意（安全）：** 如果指定了 `cDIPath`，此方法只能在批处理、控制台或菜单事件期间执行。另请参阅 **Privileged versus Non-privileged Context**。**Event Object** 包含对 Acrobat JavaScript 事件的讨论。
 
 从 Acrobat 7.0 开始，通过菜单事件执行 JavaScript 不再是特权操作，详情请参阅 **JavaScript Execution through the Menu**。
 
 ## 参数
 
 | 参数 | 描述 |
-| --- | --- |
-| cName | 与图标关联的名称。 |
-| cDIPath | （可选）指向用户硬盘驱动器上 PDF 文件的设备无关路径。此路径可以是绝对路径，也可以是相对于当前文档的路径。**cDIPath** 只能在批处理环境或从控制台指定。关于路径的确切语法，请参阅 [PDF 参考手册](http://www.adobe.com/devnet/pdf/pdf_reference.html) 的第 3.10.1 节"文件规范字符串"。如果未指定，则忽略 **nPage** 参数，并提示用户定位 PDF 文件并浏览到特定页面。 |
-| nPage | （可选）要作为图标导入的 PDF 文件中的页码索引（从 0 开始）。默认值为 0。 |
+| :--- | :--- |
+| `cName` | 与图标关联的名称。 |
+| `cDIPath` | （可选）指向用户硬盘驱动器上 PDF 文件的设备无关路径。此路径可以是绝对路径，也可以是相对于当前文档的路径。`cDIPath` 只能在批处理环境或从控制台指定。关于路径的确切语法，请参阅 [PDF 参考手册](http://www.adobe.com/devnet/pdf/pdf_reference.html) 的第 3.10.1 节“文件规范字符串”。如果未指定，则忽略 `nPage` 参数，并提示用户定位 PDF 文件并浏览到特定页面。 |
+| `nPage` | （可选）要作为图标导入的 PDF 文件中的页码索引（从 0 开始）。默认值为 0。 |
 
 ## 返回值
 
 一个整数代码，指示操作是否成功：
 
-0：无错误
-1：用户取消了对话框
--1：无法打开所选文件
--2：所选页面无效
+- `0`：无错误
+- `1`：用户取消了对话框
+- `-1`：无法打开所选文件
+- `-2`：所选页面无效
 
 ## 示例
 
 此函数对于向文档填充一系列命名图标以供后续检索非常有用。例如，如果文档用户在列表框中选择了某个特定的州，作者可能希望该州的图片出现在列表框旁边。在该应用程序的先前版本中，这可以通过使用多个可以隐藏和显示的字段来实现。然而，这很难编写脚本；相反，适当的脚本可能如下所示：
 
-```
+```javascript
 var f = this.getField("StateListBox");
 var b = this.getField("StateButton");
 b.buttonSetIcon(this.getIcon(f.value));
@@ -10196,9 +10618,9 @@ b.buttonSetIcon(this.getIcon(f.value));
 
 这使用单个字段执行了相同的效果。
 
-可以构建一个简单的用户界面来向文档添加命名图标。假设有两个字段：一个名为 **IconName** 的字段，用于包含图标名称；以及一个名为 **IconAdd** 的字段，用于将图标添加到文档中。**IconAdd** 的鼠标松开脚本将是：
+可以构建一个简单的用户界面来向文档添加命名图标。假设有两个字段：一个名为 `IconName` 的字段，用于包含图标名称；以及一个名为 `IconAdd` 的字段，用于将图标添加到文档中。`IconAdd` 的鼠标松开脚本将是：
 
-```
+```javascript
 var t = this.getField("IconName");
 this.importIcon(t.value);
 ```
@@ -10211,20 +10633,18 @@ this.importIcon(t.value);
 
 将声音导入文档，并将指定的名称与声音关联。
 
-
-
 ## importSound
 
 将一个声音对象导入 PDF 文档。
 
-**注意：**（安全）：如果指定了 cDIPath，则此方法只能在批处理、控制台或菜单事件中执行。另请参阅特权与非特权上下文。事件对象包含对 Acrobat JavaScript 事件的讨论。从 Acrobat 7.0 开始，通过菜单事件执行 JavaScript 不再具有特权，详情请参见通过菜单执行 JavaScript。
+**注意（安全）：** 如果指定了 `cDIPath`，则此方法只能在批处理、控制台或菜单事件中执行。另请参阅特权与非特权上下文。事件对象包含对 Acrobat JavaScript 事件的讨论。从 Acrobat 7.0 开始，通过菜单事件执行 JavaScript 不再具有特权，详情请参见通过菜单执行 JavaScript。
 
 ### 参数
 
 | 参数 | 描述 |
-| --- | --- |
-| cName | 与声音对象关联的名称。 |
-| cDIPath | （可选）指向用户硬盘上声音文件的设备无关路径。此路径可以是绝对路径，也可以是相对于当前文档的路径。如果未指定，系统会提示用户定位声音文件。有关路径的确切语法，请参见《PDF 参考》第 3.10.1 节“文件规范字符串”。 |
+| :--- | :--- |
+| `cName` | 与声音对象关联的名称。 |
+| `cDIPath` | （可选）指向用户硬盘上声音文件的设备无关路径。此路径可以是绝对路径，也可以是相对于当前文档的路径。如果未指定，系统会提示用户定位声音文件。有关路径的确切语法，请参见《PDF 参考》第 3.10.1 节“文件规范字符串”。 |
 
 ### 返回值
 
@@ -10239,38 +10659,38 @@ this.importSound("Moof", "./moof.wav");
 this.getSound("Moof").play();
 ```
 
-另请参阅声音、getSound、deleteSound 和声音对象。
+另请参阅 `声音`、`getSound`、`deleteSound` 和声音对象。
 
 ## importTextData
 
-| 5.0 | D | F | |
-| --- | --- | --- | --- |
+| 5.0 | D | F |
+| :--- | :--- | :--- |
 
-从文本文件导入一行数据。每行必须是制表符分隔的。文本文件第一行中的条目是制表符分隔数据的列名。这些名称也是 PDF 文件中文本字段的字段名。数据行号从 0 开始；也就是说，第一行数据是第 0 行（这不包括列名行）。导入一行数据时，每列数据将成为该列对应字段的字段值。另请参阅此方法的导出版本 exportAsText。
+从文本文件导入一行数据。每行必须是制表符分隔的。文本文件第一行中的条目是制表符分隔数据的列名。这些名称也是 PDF 文件中文本字段的字段名。数据行号从 0 开始；也就是说，第一行数据是第 0 行（这不包括列名行）。导入一行数据时，每列数据将成为该列对应字段的字段值。另请参阅此方法的导出版本 `exportAsText`。
 
 ### 参数
 
 | 参数 | 描述 |
-| --- | --- |
-| cPath | （可选）指向文本文件的相对设备无关路径。如果未指定，系统会提示用户定位文本数据文件。 |
-| nRow | （可选）要导入的数据行的 0 基索引，不包括标题行。如果未指定，系统会提示用户选择要导入的行。 |
+| :--- | :--- |
+| `cPath` | （可选）指向文本文件的相对设备无关路径。如果未指定，系统会提示用户定位文本数据文件。 |
+| `nRow` | （可选）要导入的数据行的 0 基索引，不包括标题行。如果未指定，系统会提示用户选择要导入的行。 |
 
 ### 返回值
 
 整数，一个返回码。返回码如下所示。
 
 | 返回码 | 描述 | 返回码 | 描述 |
-|---|---|---|---|
-| -3 | 警告：缺少数据 | 1 | 错误：无法打开文件 |
-| -2 | 警告：用户取消了行选择 | 2 | 错误：无法加载数据 |
-| -1 | 警告：用户取消了文件选择 | 3 | 错误：无效行 |
-| 0 | 无错误 | | |
+| :--- | :--- | :--- | :--- |
+| `-3` | 警告：缺少数据 | `1` | 错误：无法打开文件 |
+| `-2` | 警告：用户取消了行选择 | `2` | 错误：无法加载数据 |
+| `-1` | 警告：用户取消了文件选择 | `3` | 错误：无效行 |
+| `0` | 无错误 |  |  |
 
 ### 示例 1
 
-假设存在名为 "First"、"Middle" 和 "Last" 的文本字段，并且还有一个数据文件，其第一行由三个字符串 First、Middle 和 Last 组成，以制表符分隔。假设有四行额外的姓名数据，同样以制表符分隔。
+假设存在名为“First”、“Middle”和“Last”的文本字段，并且还有一个数据文件，其第一行由三个字符串 First、Middle 和 Last 组成，以制表符分隔。假设有四行额外的姓名数据，同样以制表符分隔。
 
-```
+```text
 First		Middle		Last
 A.		C.		Robat
 T.		A.		Croba
@@ -10282,31 +10702,31 @@ this.importTextData("/c/data/myData.txt", 0)
 
 ### 示例（续）
 
-以下代码是一个按钮的鼠标弹起动作。单击该按钮会循环浏览文本文件，并用姓名数据填充 "First"、"Middle" 和 "Last" 这三个字段。
+以下代码是一个按钮的鼠标弹起动作。单击该按钮会循环浏览文本文件，并用姓名数据填充“First”、“Middle”和“Last”这三个字段。
 
 ```javascript
 if (typeof cnt == "undefined") cnt = 0;
-    this.importTextData("/c/data/textdata.txt", cnt++ % 4)
+this.importTextData("/c/data/textdata.txt", cnt++ % 4)
 ```
 
 使用 ADBC 对象及其关联的属性和方法也可以获得相同的功能。数据文件可以是电子表格或数据库。
 
 ## importXFAData
 
-| 6.0 | D | S | F | |
-| --- | --- | --- | --- | --- |
+| 6.0 | D | S | F |
+| :--- | :--- | :--- | :--- |
 
-导入指定的 XFA 文件。另请参阅 importAnXFDF 和 importTextData。
+导入指定的 XFA 文件。另请参阅 `importAnXFDF` 和 `importTextData`。
 
-**注意：**（安全 (S)）：此方法仅允许在批处理、控制台和菜单事件中使用。另请参阅特权与非特权上下文。
+**注意（安全 (S)）：** 此方法仅允许在批处理、控制台和菜单事件中使用。另请参阅特权与非特权上下文。
 
 从 Acrobat 7.0 开始，通过菜单事件执行 JavaScript 不再具有特权，详情请参见通过菜单执行 JavaScript。
 
 ### 参数
 
 | 参数 | 描述 |
-| --- | --- |
-| cPath | （可选）XFA 文件的设备无关路径名。该路径名可以是相对于当前文档的位置。如果省略此参数，将显示一个对话框让用户选择文件。 |
+| :--- | :--- |
+| `cPath` | （可选）XFA 文件的设备无关路径名。该路径名可以是相对于当前文档的位置。如果省略此参数，将显示一个对话框让用户选择文件。 |
 
 ### 返回值
 
@@ -10314,25 +10734,25 @@ if (typeof cnt == "undefined") cnt = 0;
 
 ## insertPages
 
-| 5.0 | D | S | X | |
-| --- | --- | --- | --- | --- |
+| 5.0 | D | S | X |
+| :--- | :--- | :--- | :--- |
 
 将源文档中的页面插入当前文档。如果未指定页面范围，则该方法将获取源文档中的所有页面。
 
-另请参阅 deletePages 和 replacePages。
+另请参阅 `deletePages` 和 `replacePages`。
 
-**注意：**（安全 (S)）此方法只能在批处理、控制台或菜单事件中执行。另请参阅特权与非特权上下文。事件对象包含对 Acrobat JavaScript 事件的讨论。
+**注意（安全 (S)）：** 此方法只能在批处理、控制台或菜单事件中执行。另请参阅特权与非特权上下文。事件对象包含对 Acrobat JavaScript 事件的讨论。
 
 从 Acrobat 7.0 开始，通过菜单事件执行 JavaScript 不再具有特权，详情请参见通过菜单执行 JavaScript。
 
 ### 参数
 
 | 参数 | 描述 |
-| --- | --- |
-| nPage | （可选）在其后插入源文档页面的 0 基页面索引。使用 -1 在文档第一页之前插入页面。 |
-| cPath | 将提供插入页面的 PDF 文件的设备无关路径名。有关设备无关路径名格式的描述，请参见《PDF 参考》第 3.10.1 节。该路径名可以是相对于当前文档的位置。 |
-| nStart | （可选）一个 0 基索引，定义要插入的源文档中包含的页面范围的起点。如果只指定了 nStart，则页面范围是由 nStart 指定的单个页面。 |
-| nEnd | （可选）一个 0 基索引，定义要插入的源文档中包含的页面范围的终点。如果只指定了 nEnd，则页面范围是从 0 到 nEnd。 |
+| :--- | :--- |
+| `nPage` | （可选）在其后插入源文档页面的 0 基页面索引。使用 `-1` 在文档第一页之前插入页面。 |
+| `cPath` | 将提供插入页面的 PDF 文件的设备无关路径名。有关设备无关路径名格式的描述，请参见《PDF 参考》第 3.10.1 节。该路径名可以是相对于当前文档的位置。 |
+| `nStart` | （可选）一个 0 基索引，定义要插入的源文档中包含的页面范围的起点。如果只指定了 `nStart`，则页面范围是由 `nStart` 指定的单个页面。 |
+| `nEnd` | （可选）一个 0 基索引，定义要插入的源文档中包含的页面范围的终点。如果只指定了 `nEnd`，则页面范围是从 0 到 `nEnd`。 |
 
 ### 返回值
 
@@ -10343,7 +10763,7 @@ if (typeof cnt == "undefined") cnt = 0;
 向当前文档插入一个封面。
 
 ```javascript
-this.insertPages ({
+this.insertPages({
     nPage: -1,
     cPath: "/c/temp/myCoverPage.pdf",
     nStart: 0
@@ -10352,26 +10772,33 @@ this.insertPages ({
 
 ## mailDoc
 
-| 4.0 | | | Ⓢ | |
-| --- | --- | --- | --- | --- |
+| 4.0 |  |  | Ⓢ |
+| :--- | :--- | :--- | :--- |
 
 保存当前 PDF 文档并将其作为附件通过电子邮件发送给所有收件人，无论是否需要用户交互。
-另请参阅 app.mailGetAddrs、app.mailMsg、doc.mailForm、fdf.mail 和 report.mail。
 
-**注意：**（安全 Ⓢ，版本 7.0）当此方法在非特权上下文中执行时，bUI 参数不会被采纳，并且默认为 true。请参阅特权与非特权上下文。
-（保存权限 Ⓢ）对于 Adobe Reader 5.1 及更高版本，此方法通常被允许，但如果文档被更改，则需要文档保存权限。
+另请参阅 `app.mailGetAddrs`、`app.mailMsg`、`doc.mailForm`、`fdf.mail` 和 `report.mail`。
+
+**注意（安全 Ⓢ，版本 7.0）：** 当此方法在非特权上下文中执行时，`bUI` 参数不会被采纳，并且默认为 `true`。请参阅特权与非特权上下文。
+
+**（保存权限 Ⓢ）：** 对于 Adobe Reader 5.1 及更高版本，此方法通常被允许，但如果文档被更改，则需要文档保存权限。
+
 在 Windows 上，客户端机器必须将其默认邮件程序配置为启用 MAPI，才能使用此方法。
 
 ### 参数
 
 | 参数 | 描述 |
+| :--- | :--- |
+
+
+
+| `bUI` | （可选）如果为 `true`（默认值），则其余参数将在显示给用户的撰写新消息窗口中使用。如果为 `false`，则 `cTo` 参数是必需的，其余参数都是可选的。**注意：**（安全 Ⓢ，版本 7.0）当此方法在非特权上下文中执行时，`bUI` 参数不会被采纳，并且默认为 `true`。请参阅特权与非特权上下文。 |
 | --- | --- |
-| bUI | （可选）如果为 true（默认值），则其余参数将在显示给用户的撰写新消息窗口中使用。如果为 false，则 cTo 参数是必需的，其余参数都是可选的。**注意：**（安全 Ⓢ，版本 7.0）当此方法在非特权上下文中执行时，bUI 参数不会被采纳，并且默认为 true。请参阅特权与非特权上下文。 |
-| cTo | （可选）消息收件人的分号分隔列表。 |
-| cCc | （可选）消息抄送收件人的分号分隔列表。 |
-| cBcc | （可选）消息密送收件人的分号分隔列表。 |
-| cSubject | （可选）消息的主题。长度限制为 64k 字节。 |
-| cMsg | （可选）消息的内容。长度限制为 64k 字节。 |
+| `cTo` | （可选）消息收件人的分号分隔列表。 |
+| `cCc` | （可选）消息抄送收件人的分号分隔列表。 |
+| `cBcc` | （可选）消息密送收件人的分号分隔列表。 |
+| `cSubject` | （可选）消息的主题。长度限制为 64k 字节。 |
+| `cMsg` | （可选）消息的内容。长度限制为 64k 字节。 |
 
 ### 返回值
 
@@ -10380,9 +10807,10 @@ this.insertPages ({
 ### 示例
 
 这将弹出撰写新消息窗口。
+
 `this.mailDoc(true);`
 
-这会将附加了 PDF 文件的邮件发送给 `fun1@fun.com` 和 `fun2@fun.com`。从版本 7.0 开始，如果需要采纳 bUI 参数（设置为 false），则下面的代码必须在特权上下文中执行。
+这会将附加了 PDF 文件的邮件发送给 `fun1@fun.com` 和 `fun2@fun.com`。从版本 7.0 开始，如果需要采纳 `bUI` 参数（设置为 `false`），则下面的代码必须在特权上下文中执行。
 
 ```javascript
 this.mailDoc({
@@ -10394,19 +10822,18 @@ this.mailDoc({
 });
 ```
 
-## mailForm
+## `mailForm`
 
 | 4.0 | | | F | |
 | --- | --- | --- | --- | --- |
 
 导出表单数据并将生成的 FDF 文件作为附件通过电子邮件发送给所有收件人，无论是否需要用户交互。此方法不支持签名的签名字段。
 
-
-
 ## Acrobat JavaScript 脚本参考
+
 Doc 方法
 
-另请参阅 **app.mailGetAddrs**、**app.mailMsg**、**doc.mailDoc**、**fdf.mail** 和 **report.mail**。
+另请参阅 `app.mailGetAddrs`、`app.mailMsg`、`doc.mailDoc`、`fdf.mail` 和 `report.mail`。
 
 注意：在 Windows 系统上，客户端机器必须将其默认邮件程序配置为启用 MAPI，才能使用此方法。
 
@@ -10414,12 +10841,12 @@ Doc 方法
 
 | 参数 | 描述 |
 | --- | --- |
-| **bUI** | 如果为 **true**，则其余参数将用于显示给用户的撰写新消息窗口。如果为 **false**，则 **cTo** 参数是必需的，其他所有参数都是可选的。 |
-| **cTo** | （**bUI 为 true** 时必需）以分号分隔的消息收件人列表。 |
-| **cCc** | （可选）以分号分隔的消息抄送收件人列表。 |
-| **cBcc** | （可选）以分号分隔的消息密送收件人列表。 |
-| **cSubject** | （可选）消息的主题。长度限制为 64k 字节。 |
-| **cMsg** | （可选）消息的内容。长度限制为 64k 字节。 |
+| `bUI` | 如果为 `true`，则其余参数将用于显示给用户的撰写新消息窗口。如果为 `false`，则 `cTo` 参数是必需的，其他所有参数都是可选的。 |
+| `cTo` | （`bUI` 为 `true` 时必需）以分号分隔的消息收件人列表。 |
+| `cCc` | （可选）以分号分隔的消息抄送收件人列表。 |
+| `cBcc` | （可选）以分号分隔的消息密送收件人列表。 |
+| `cSubject` | （可选）消息的主题。长度限制为 64k 字节。 |
+| `cMsg` | （可选）消息的内容。长度限制为 64k 字节。 |
 
 ### 返回值
 
@@ -10429,17 +10856,17 @@ Doc 方法
 
 此示例会弹出撰写新消息窗口。
 
-```
+```javascript
 this.mailForm(true);
 ```
 
-此示例会将邮件连同附加的 FDF 文件发送到 fun1@fun.com 和 fun2@fun.com。
+此示例会将邮件连同附加的 FDF 文件发送到 `fun1@fun.com` 和 `fun2@fun.com`。
 
-```
+```javascript
 this.mailForm(false, "fun1@fun.com; fun2@fun.com", "", "", "This is the subject", "This is the body of the mail.");
 ```
 
-## movePage
+## `movePage`
 
 | 版本 | 图标 |
 | --- | --- |
@@ -10451,8 +10878,8 @@ this.mailForm(false, "fun1@fun.com; fun2@fun.com", "", "", "This is the subject"
 
 | 参数 | 描述 |
 | --- | --- |
-| **nPage** | （可选）要移动的页面的从 0 开始的索引。默认值为 0。 |
-| **nAfter** | （可选）将指定页面移动到其后的页面的从 0 开始的索引。使用 -1 可将页面移动到文档第一页之前。默认值为文档中的最后一页。 |
+| `nPage` | （可选）要移动的页面的从 0 开始的索引。默认值为 0。 |
+| `nAfter` | （可选）将指定页面移动到其后的页面的从 0 开始的索引。使用 `-1` 可将页面移动到文档第一页之前。默认值为文档中的最后一页。 |
 
 ### 返回值
 
@@ -10462,26 +10889,27 @@ this.mailForm(false, "fun1@fun.com; fun2@fun.com", "", "", "This is the subject"
 
 反转文档中的页面顺序。
 
-```
+```javascript
 for (i = this.numPages - 1; i >= 0; i--) this.movePage(i);
 ```
 
-## newPage
+## `newPage`
 
 ![](img/bd576cc243b5a79128e24042df2f472f_286_0.png)
 
 在 Acrobat 查看器中的活动文档中添加一个新页面。
 
 **注意：**（安全性）：此方法只能在批处理、控制台或菜单事件期间执行。另请参阅特权上下文与非特权上下文。
+
 从 Acrobat 7.0 开始，通过菜单事件执行 JavaScript 不再是特权操作，有关详细信息，请参阅通过菜单执行 JavaScript。
 
 ### 参数
 
 | 参数 | 描述 |
 | --- | --- |
-| **nPage** | （可选）在其后添加新页面的页面索引（基于 1 的页面编号系统）。默认为文档的最后一页。使用 0 可在第一页之前添加页面。无效的页面范围将被截断为有效的页面范围。 |
-| **nWidth** | （可选）页面的宽度（以点为单位）。默认值为 612。 |
-| **nHeight** | （可选）页面的高度（以点为单位）。默认值为 792。 |
+| `nPage` | （可选）在其后添加新页面的页面索引（基于 1 的页面编号系统）。默认为文档的最后一页。使用 `0` 可在第一页之前添加页面。无效的页面范围将被截断为有效的页面范围。 |
+| `nWidth` | （可选）页面的宽度（以点为单位）。默认值为 612。 |
+| `nHeight` | （可选）页面的高度（以点为单位）。默认值为 792。 |
 
 ### 返回值
 
@@ -10491,43 +10919,45 @@ for (i = this.numPages - 1; i >= 0; i--) this.movePage(i);
 
 添加一个与文档页面大小匹配的新页面。
 
-```
+```javascript
 var Rect = this.getPageBox("Crop");
 this.newPage(0, Rect[2], Rect[1]);
 ```
 
-## openDataObject
+## `openDataObject`
 
 | 7.0 | | | | |
 | --- | --- | --- | --- | --- |
 
-此方法返回作为嵌入数据对象（即附件）的 PDF 文档的 Doc 对象，该对象位于调用此方法的文档中。该文档将作为 PDDoc 打开。
-如果出现以下情况，该方法可能会引发异常，而不是返回 doc 对象：
+此方法返回作为嵌入数据对象（即附件）的 PDF 文档的 `Doc` 对象，该对象位于调用此方法的文档中。该文档将作为 `PDDoc` 打开。
 
-1.  调用此方法的文档不包含请求的嵌入数据对象；
-2.  数据对象不是 PDF 文档；
-3.  权限禁止通过 JavaScript 打开附件。
+如果出现以下情况，该方法可能会引发异常，而不是返回 `doc` 对象：
 
-文档在不再需要后应关闭（使用 **doc.closeDoc**）。
+1. 调用此方法的文档不包含请求的嵌入数据对象；
+2. 数据对象不是 PDF 文档；
+3. 权限禁止通过 JavaScript 打开附件。
+
+文档在不再需要后应关闭（使用 `doc.closeDoc`）。
 
 ### 参数
 
 | 参数 | 描述 |
 | --- | --- |
-| **cName** | 数据对象的名称。 |
+| `cName` | 数据对象的名称。 |
 
-数据对象的名称是数据对象的一个属性。对象在嵌入时会自动通过 Acrobat UI 或通过 JavaScript 方法 **doc.createDataObject** 或 **doc.importDataObject** 以编程方式赋予一个名称。
+数据对象的名称是数据对象的一个属性。对象在嵌入时会自动通过 Acrobat UI 或通过 JavaScript 方法 `doc.createDataObject` 或 `doc.importDataObject` 以编程方式赋予一个名称。
 
 ### 返回值
 
-Doc 对象或引发异常。
-相关的对象、属性和方法是 Data Object、**doc.dataObjects**、**doc.setDataObjectContents**、**doc.getDataObjectContents**、**doc.createDataObject** 和 **doc.importDataObject**。
+`Doc` 对象或引发异常。
+
+相关的对象、属性和方法是 `Data Object`、`doc.dataObjects`、`doc.setDataObjectContents`、`doc.getDataObjectContents`、`doc.createDataObject` 和 `doc.importDataObject`。
 
 ### 示例
 
 打开一个 PDF 附件并从中提取表单数据。
 
-```
+```javascript
 var oDoc = this.openDataObject("myAttachment");
 try {
     var myField = this.getField("myTextField");
@@ -10536,43 +10966,49 @@ try {
     // 在 "myTextField" 中显示此值
     myField.value = yourField.value;
     oDoc.closeDoc();
-} catch(e) { app.alert("Operation failed");}
+} catch(e) {
+    app.alert("Operation failed");
+}
 ```
 
-另请参阅 **doc.submitForm** 方法后面第 315 页上的“示例 5（版本 7.0）”。
+另请参阅 `doc.submitForm` 方法后面第 315 页上的“示例 5（版本 7.0）”。
 
-## print
+## `print`
 
 打印文档的全部或特定页数。
-从 Acrobat 6.0 开始，该方法可以使用包含在 printParams 对象中的设置来打印文档，而不是通过其他参数。永久性打印设置不会被更改。
+
+从 Acrobat 6.0 开始，该方法可以使用包含在 `printParams` 对象中的设置来打印文档，而不是通过其他参数。永久性打印设置不会被更改。
 
 **注意：**（安全性 Ⓓ，版本 6.0）打印到文件时，路径必须是安全路径。`print` 方法不会覆盖现有文件。
-（安全性 Ⓓ，版本 7.0）非交互式打印只能在批处理和控制台事件期间执行。通过将 `bUI` 设置为 `false` 或将 `interactive` 属性设置为 silent 来使打印变为非交互式，例如：
 
-```
+（安全性 Ⓓ，版本 7.0）非交互式打印只能在批处理和控制台事件期间执行。通过将 `bUI` 设置为 `false` 或将 `interactive` 属性设置为 `silent` 来使打印变为非交互式，例如：
+
+```javascript
 var pp = this.getPrintParams();
 pp.interactive = pp.constants.interactionLevel.silent;
 ```
 
 在批处理和控制台事件之外，`bUI` 和 `interactive` 的值将被忽略，并且始终会显示打印对话框。
+
 `Doc.print` 只能在打印设置为非交互式时（即 `bUI` 设置为 `false`）在批处理或控制台事件期间执行。另请参阅特权上下文与非特权上下文。
 
 **注意：**在 Windows 平台上，文件名必须包含 `.ps` 或 `.prn` 扩展名（不区分大小写）。此外，`print` 方法不会直接在根目录、windows 目录或 windows 系统目录中创建文件。
+
 如果上述任何安全限制未满足，将引发 `InvalidArgsError`（请参阅错误对象）异常，且 `print` 将失败。
 
 ### 参数
 
 | 参数 | 描述 |
 | :--- | :--- |
-| **bUI** | （可选）如果为 `true`（默认值），将向用户显示一个 UI 以获取打印信息并确认操作。 |
-| **nStart** | （可选）一个从 0 开始的索引，定义一个包含页面范围的起点。如果未指定 `nStart` 和 `nEnd`，则打印文档中的所有页面。如果仅指定了 `nStart`，则页面范围为 `nStart` 指定的单个页面。如果使用 `nStart` 和 `nEnd` 参数，则 `bUI` 必须为 `false`。 |
-| **nEnd** | （可选）一个从 0 开始的索引，定义一个包含页面范围的终点。如果未指定 `nStart` 和 `nEnd`，则打印文档中的所有页面。如果仅指定了 `nEnd`，则页面范围为从 0 到 `nEnd`。如果使用 `nStart` 和 `nEnd` 参数，则 `bUI` 必须为 `false`。 |
-| **bSilent** | （可选）如果为 **true**，则在文档打印时抑制取消对话框。默认值为 **false**。 |
-| **bShrinkToFit** | （可选，版本 5.0）如果为 **true**，则页面（如有必要）会缩小以适应打印页面的可成像区域。如果为 **false**，则不会。默认值为 **false**。 |
-| **bPrintAsImage** | （可选，版本 5.0）如果为 **true**，则以图像形式打印页面。默认值为 **false**。 |
-| **bReverse** | （可选，版本 5.0）如果为 **true**，则从 **nEnd** 到 **nStart** 打印。默认值为 **false**。 |
-| **bAnnotations** | （可选，版本 5.0）如果为 **true**（默认值），则打印注释。 |
-| **printParams** | （可选，版本 6.0）包含用于打印的设置的 **printParams 对象**。如果传递了此参数，则忽略任何其他参数。 |
+| `bUI` | （可选）如果为 `true`（默认值），将向用户显示一个 UI 以获取打印信息并确认操作。 |
+| `nStart` | （可选）一个从 0 开始的索引，定义一个包含页面范围的起点。如果未指定 `nStart` 和 `nEnd`，则打印文档中的所有页面。如果仅指定了 `nStart`，则页面范围为 `nStart` 指定的单个页面。如果使用 `nStart` 和 `nEnd` 参数，则 `bUI` 必须为 `false`。 |
+| `nEnd` | （可选）一个从 0 开始的索引，定义一个包含页面范围的终点。如果未指定 `nStart` 和 `nEnd`，则打印文档中的所有页面。如果仅指定了 `nEnd`，则页面范围为从 0 到 `nEnd`。如果使用 `nStart` 和 `nEnd` 参数，则 `bUI` 必须为 `false`。 |
+| `bSilent` | （可选）如果为 `true`，则在文档打印时抑制取消对话框。默认值为 `false`。 |
+| `bShrinkToFit` | （可选，版本 5.0）如果为 `true`，则页面（如有必要）会缩小以适应打印页面的可成像区域。如果为 `false`，则不会。默认值为 `false`。 |
+| `bPrintAsImage` | （可选，版本 5.0）如果为 `true`，则以图像形式打印页面。默认值为 `false`。 |
+| `bReverse` | （可选，版本 5.0）如果为 `true`，则从 `nEnd` 到 `nStart` 打印。默认值为 `false`。 |
+| `bAnnotations` | （可选，版本 5.0）如果为 `true`（默认值），则打印注释。 |
+| `printParams` | （可选，版本 6.0）包含用于打印的 `printParams` 对象。如果传递了此参数，则忽略任何其他参数。 |
 
 ### 返回值
 
@@ -10582,7 +11018,7 @@ pp.interactive = pp.constants.interactionLevel.silent;
 
 此示例打印文档当前所在的页面。
 
-```
+```javascript
 this.print(false, this.pageNum, this.pageNum);
 // 静默打印文件
 this.print({bUI: false, bSilent: true, bShrinkToFit: true});
@@ -10590,36 +11026,35 @@ this.print({bUI: false, bSilent: true, bShrinkToFit: true});
 
 ### 示例 2（版本 6.0）
 
-```
+```javascript
 var pp = this.getPrintParams();
 pp.interactive = pp.constants.interactionLevel.automatic;
 pp.printerName = "hp officejet d series";
 this.print(pp);
 ```
 
-**注意：**当 **printerName** 为空字符串且 **fileName** 非空时，当前文档将作为 PostScript 文件保存到磁盘。
+**注意：**当 `printerName` 为空字符串且 `fileName` 非空时，当前文档将作为 PostScript 文件保存到磁盘。
 
 ### 示例 3（版本 6.0）
 
 将当前文档另存为 PostScript 文件。
 
-```
+```javascript
 var pp = this.getPrintParams();
 pp.fileName = "/c/temp/myDoc.ps";
 pp.printerName = "";
 this.print(pp);
 ```
 
-
-
-## removeDataObject
+## `removeDataObject`
 
 从文档中删除与指定名称对应的数据对象。
+
 相关对象、属性和方法包括 `Data Object`、`doc.dataObjects`、`doc.getDataObject`、`doc.openDataObject`、`doc.createDataObject`、`doc.removeDataObject`、`doc.importDataObject`、`doc.getDataObjectContents` 和 `doc.setDataObjectContents`。
 
 ### 参数
 
-| cName | 要移除的数据对象的名称。 |
+| `cName` | 要移除的数据对象的名称。 |
 | :--- | :--- |
 
 数据对象的名称是 `Data Object` 的一个属性。对象在嵌入时被赋予名称，要么由 Acrobat 用户界面自动完成，要么通过 JavaScript 方法 `doc.createDataObject` 或 `doc.importDataObject` 以编程方式完成。
@@ -10634,14 +11069,15 @@ this.print(pp);
 this.removeDataObject("MyData");
 ```
 
-## removeField
+## `removeField`
 
 从文档中移除指定的字段。如果字段出现在多个页面上，则其所有表示形式都将被移除。
-**注意：** (F, 版本 6.0)：从版本 6.0 开始，对于启用了“高级表单功能”的文档，现在可以在 Adobe Reader 中使用 `doc.removeField`。
+
+**注意：**（F，版本 6.0）：从版本 6.0 开始，对于启用了“高级表单功能”的文档，现在可以在 Adobe Reader 中使用 `doc.removeField`。
 
 ### 参数
 
-| cName | 要移除的字段名称。 |
+| `cName` | 要移除的字段名称。 |
 | :--- | :--- |
 
 ### 返回值
@@ -10654,17 +11090,18 @@ this.removeDataObject("MyData");
 this.removeField("myBadField");
 ```
 
-## removeIcon
+## `removeIcon`
 
 从文档中移除指定的命名图标。
-另请参阅 **icons, addIcon, getIcon** 和 **importIcon**，**field** 方法 **buttonGetIcon, buttonImportIcon** 和 **buttonSetIcon**，以及 **Icon Generic Object**。
+
+另请参阅 `icons`、`addIcon`、`getIcon` 和 `importIcon`，`field` 方法 `buttonGetIcon`、`buttonImportIcon` 和 `buttonSetIcon`，以及 `Icon Generic Object`。
 
 ### 参数
 
-| **cName** | 要移除的图标的名称。 |
+| `cName` | 要移除的图标的名称。 |
 | :--- | :--- |
 
-图标的名称是 **Icon Generic Object** 的一个属性。对象在图标文件导入文档时由 **doc.importIcon** 赋予名称，或者由 **doc.addIcon** 命名一个不在文档级命名图标树中的图标。
+图标的名称是 `Icon Generic Object` 的一个属性。对象在图标文件导入文档时由 `doc.importIcon` 赋予名称，或者由 `doc.addIcon` 命名一个不在文档级命名图标树中的图标。
 
 ### 返回值
 
@@ -10675,20 +11112,21 @@ this.removeField("myBadField");
 从文档中移除所有命名图标。
 
 ```javascript
-for ( var i = 0; i < this.icons.length; i++)
+for (var i = 0; i < this.icons.length; i++)
     this.removeIcon(this.icons[i].name);
 ```
 
-## removeLinks
+## `removeLinks`
 
 如果用户有从文档中移除链接的权限，则移除指定页面上指定坐标内的所有链接。
-另请参阅 **addLink, getLinks** 和 **Link Object**。
+
+另请参阅 `addLink`、`getLinks` 和 `Link Object`。
 
 ### 参数
 
-| **nPage** | 要从中移除链接的页面的从 0 开始的索引。 |
+| `nPage` | 要从中移除链接的页面的从 0 开始的索引。 |
 | :--- | :--- |
-| **oCoords** | 在*旋转用户空间*中的四个数字组成的数组，按以下顺序列出一个矩形的坐标：左上角 x、左上角 y、右下角 x 和右下角 y。 |
+| `oCoords` | 在*旋转用户空间*中的四个数字组成的数组，按以下顺序列出一个矩形的坐标：左上角 x、左上角 y、右下角 x 和右下角 y。 |
 
 ### 返回值
 
@@ -10700,8 +11138,7 @@ for ( var i = 0; i < this.icons.length; i++)
 
 ```javascript
 // 移除文档中的所有链接
-for ( var p = 0; p < this.numPages; p++)
-{
+for (var p = 0; p < this.numPages; p++) {
     var b = this.getPageBox("Crop", p);
     this.removeLinks(p, b);
 }
@@ -10709,18 +11146,18 @@ for ( var p = 0; p < this.numPages; p++)
 
 使用 `getLinks` 来帮助统计已移除的链接数量。
 
-## removeScript
+## `removeScript`
 
 此方法移除一个文档级 JavaScript 脚本（前提是授予了脚本移除权限），脚本由 `cName`（脚本名称）指定。
 
 ### 参数
 
-| cName | 指定要移除的脚本名称的字符串。 |
+| `cName` | 指定要移除的脚本名称的字符串。 |
 | :--- | :--- |
 
 ### 返回值
 
-成功时返回 undefined 值，如果未找到脚本则抛出异常。
+成功时返回 `undefined` 值，如果未找到脚本则抛出异常。
 
 ### 示例
 
@@ -10736,22 +11173,26 @@ this.addScript("myScript", "app.alert('A.C. Robat welcomes you!')");
 this.removeScript("myScript");
 ```
 
-## removeTemplate
+## `removeTemplate`
 
 从文档中移除命名的模板。
 
 另请参阅 `templates`、`createTemplate`、`getTemplate` 和 `Template Object`。
 
-> **注意：** (安全 Ⓢ)：此方法只能在批处理或控制台事件期间执行。
-另请参阅 `Privileged versus Non-privileged Context`。`Event Object` 中包含关于 Acrobat JavaScript 事件的讨论。
-从 Acrobat 7.0 开始，通过菜单事件执行 JavaScript 不再具有特权，详见 `JavaScript Execution through the Menu`。
+> **注意：**（安全 Ⓢ）：此方法只能在批处理或控制台事件期间执行。
+
+
+
+另请参阅`Privileged versus Non-privileged Context`。`Event Object`中包含关于 Acrobat JavaScript 事件的讨论。
+
+从 Acrobat 7.0 开始，通过菜单事件执行 JavaScript 不再具有特权，详见`JavaScript Execution through the Menu`。
 
 ### 参数
 
 | cName | 要移除的模板的名称。 |
 | :--- | :--- |
 
-模板的名称是 [Template Object](https://example.com) 的一个属性。模板在创建时被赋予名称，无论是通过 Acrobat 用户界面还是通过 JavaScript 方法 `doc.createTemplate`。
+模板的名称是[Template Object](https://example.com)的一个属性。模板在创建时被赋予名称，无论是通过 Acrobat 用户界面还是通过 JavaScript 方法`doc.createTemplate`。
 
 ### 返回值
 
@@ -10759,13 +11200,13 @@ this.removeScript("myScript");
 
 ## removeThumbnails
 
-删除文档中指定页面的缩略图。另请参阅 [addThumbnails](https://example.com)。
+删除文档中指定页面的缩略图。另请参阅[addThumbnails](https://example.com)。
 
 ### 参数
 
-| nStart | （可选）一个从 0 开始的索引，定义了一个包含性页面范围的起点。如果未指定 `nStart` 和 `nEnd`，则对文档中的所有页面进行操作。如果仅指定 `nStart`，则页面范围为 `nStart` 指定的单个页面。 |
+| nStart | （可选）一个从 0 开始的索引，定义了一个包含性页面范围的起点。如果未指定`nStart`和`nEnd`，则对文档中的所有页面进行操作。如果仅指定`nStart`，则页面范围为`nStart`指定的单个页面。 |
 | :--- | :--- |
-| nEnd | （可选）一个从 0 开始的索引，定义了一个包含性页面范围的终点。如果未指定 `nStart` 和 `nEnd`，则对文档中的所有页面进行操作。如果仅指定 `nEnd`，则页面范围为 0 到 `nEnd`。 |
+| nEnd | （可选）一个从 0 开始的索引，定义了一个包含性页面范围的终点。如果未指定`nStart`和`nEnd`，则对文档中的所有页面进行操作。如果仅指定`nEnd`，则页面范围为 0 到`nEnd`。 |
 
 ### 返回值
 
@@ -10773,16 +11214,16 @@ this.removeScript("myScript");
 
 ## removeWeblinks
 
-扫描指定页面，查找指向特定网页 URL 的链接并删除它们。另请参阅 [addWeblinks](https://example.com)。
+扫描指定页面，查找指向特定网页 URL 的链接并删除它们。另请参阅[addWeblinks](https://example.com)。
 
-> 注意：此方法仅移除在应用程序中使用 UI 制作的网页链接。通过 JavaScript 执行的网页链接（例如，使用 `getURL`）不会被移除。
+> 注意：此方法仅移除在应用程序中使用 UI 制作的网页链接。通过 JavaScript 执行的网页链接（例如，使用`getURL`）不会被移除。
 
 ### 参数
 
 | 名称 | 描述 |
 | :--- | :--- |
-| **nStart** | （可选）一个从 0 开始的索引，定义了一个包含性页面范围的起点。如果未指定 **nStart** 和 **nEnd**，则对文档中的所有页面进行操作。如果仅指定 **nStart**，则页面范围为 **nStart** 指定的单个页面。 |
-| **nEnd** | （可选）一个从 0 开始的索引，定义了一个包含性页面范围的终点。如果未指定 **nStart** 和 **nEnd**，则对文档中的所有页面进行操作。如果仅指定 **nEnd**，则页面范围为 0 到 **nEnd**。 |
+| `nStart` | （可选）一个从 0 开始的索引，定义了一个包含性页面范围的起点。如果未指定`nStart`和`nEnd`，则对文档中的所有页面进行操作。如果仅指定`nStart`，则页面范围为`nStart`指定的单个页面。 |
+| `nEnd` | （可选）一个从 0 开始的索引，定义了一个包含性页面范围的终点。如果未指定`nStart`和`nEnd`，则对文档中的所有页面进行操作。如果仅指定`nEnd`，则页面范围为 0 到`nEnd`。 |
 
 ### 返回值
 
@@ -10803,19 +11244,21 @@ console.println("There were " + numWeblinks +
 ![](img/bd576cc243b5a79128e24042df2f472f_294_0.png)
 
 用源文档中的页面替换当前文档中的页面。
-另请参阅 **deletePages**、**extractPages** 和 **insertPages**。
 
-**注意：** (安全 Ⓢ)：此方法只能在批处理、控制台或菜单事件期间执行。关于 Acrobat JavaScript 事件的讨论，请参阅 [Event Object](#)。
-从 Acrobat 7.0 开始，通过菜单事件执行 JavaScript 不再具有特权，详见 [JavaScript Execution through the Menu](#)。
+另请参阅`deletePages`、`extractPages`和`insertPages`。
+
+**注意：**（安全 Ⓢ）：此方法只能在批处理、控制台或菜单事件期间执行。关于 Acrobat JavaScript 事件的讨论，请参阅[Event Object](#)。
+
+从 Acrobat 7.0 开始，通过菜单事件执行 JavaScript 不再具有特权，详见[JavaScript Execution through the Menu](#)。
 
 ### 参数
 
 | 名称 | 描述 |
 | :--- | :--- |
-| **nPage** | （可选）开始替换的页面的从 0 开始的索引。默认为 0。 |
-| **cPath** | 指向将提供替换页面的 PDF 文件的设备无关路径名。设备无关路径名格式的描述，请参阅 [PDF Reference](#) 的第 3.10.1 节。路径名可以相对于当前文档的位置。 |
-| **nStart** | （可选）定义源文档中用于替换的包含性页面范围的起点的从 0 开始的索引。**如果未指定 nStart 和 nEnd，则获取源文档中的所有页面。如果仅指定 nStart，则页面范围为 nStart 指定的单个页面。** |
-| **nEnd** | （可选）定义源文档中用于替换的包含性页面范围的终点的从 0 开始的索引。**如果未指定 nStart 和 nEnd，则获取源文档中的所有页面。如果仅指定 nEnd，则页面范围为 0 到 nEnd。** |
+| `nPage` | （可选）开始替换的页面的从 0 开始的索引。默认为 0。 |
+| `cPath` | 指向将提供替换页面的 PDF 文件的设备无关路径名。设备无关路径名格式的描述，请参阅[PDF Reference](#)的第 3.10.1 节。路径名可以相对于当前文档的位置。 |
+| `nStart` | （可选）定义源文档中用于替换的包含性页面范围的起点的从 0 开始的索引。如果未指定`nStart`和`nEnd`，则获取源文档中的所有页面。如果仅指定`nStart`，则页面范围为`nStart`指定的单个页面。 |
+| `nEnd` | （可选）定义源文档中用于替换的包含性页面范围的终点的从 0 开始的索引。如果未指定`nStart`和`nEnd`，则获取源文档中的所有页面。如果仅指定`nEnd`，则页面范围为 0 到`nEnd`。 |
 
 ### 返回值
 
@@ -10829,7 +11272,7 @@ console.println("There were " + numWeblinks +
 
 ### 参数
 
-| aFields | （可选）指定要重置的字段的数组。如果不存在或为 **null**，则重置表单中的所有字段。你可以在数组中包含非终端字段。 |
+| aFields | （可选）指定要重置的字段的数组。如果不存在或为`null`，则重置表单中的所有字段。你可以在数组中包含非终端字段。 |
 | :--- | :--- |
 
 ### 返回值
@@ -10855,9 +11298,7 @@ this.resetForm(["P1.OrderForm.Description", "P1.OrderForm.Qty"]);
 
 ### 示例 2
 
-此示例说明如何重置整个子树。例如，如果你将 "name" 作为字段数组的一部分传递，那么 **name.first、name.last** 等将被重置。
-
-
+此示例说明如何重置整个子树。例如，如果你将`"name"`作为字段数组的一部分传递，那么`name.first`、`name.last`等将被重置。
 
 ## saveAs
 
@@ -10865,66 +11306,66 @@ this.resetForm(["P1.OrderForm.Description", "P1.OrderForm.Qty"]);
 |---|---|---|---|---|
 | 5.0 | | Ⓒ | Ⓢ | |
 
-将文件保存到由必需参数 **cPath** 指定的设备无关路径。文件不会以线性化格式保存。从 Acrobat 6.0 开始，文档可以转换为其他文件类型（非 PDF），并按照 **cConvID** 参数的值指定的方式保存。
+将文件保存到由必需参数`cPath`指定的设备无关路径。文件不会以线性化格式保存。从 Acrobat 6.0 开始，文档可以转换为其他文件类型（非 PDF），并按照`cConvID`参数的值指定的方式保存。
 
-> **注意：** (安全 Ⓢ)：此方法只能在批处理、控制台或菜单事件期间执行。另请参阅[特权与非特权上下文](https://example.com)。[事件对象](https://example.com)中包含对 Acrobat JavaScript 事件的讨论。
+> **注意：**（安全 Ⓢ）：此方法只能在批处理、控制台或菜单事件期间执行。另请参阅[特权与非特权上下文](https://example.com)。[事件对象](https://example.com)中包含对 Acrobat JavaScript 事件的讨论。
 
 从 Acrobat 7.0 开始，通过菜单事件执行 JavaScript 不再是特权操作，详情请参阅[通过菜单执行 JavaScript](https://example.com)。
 
-> **注意：** (Adobe Reader Ⓢ)：此方法在 Adobe Reader 中可用于具有“保存权限”的文档。
+> **注意：**（Adobe Reader Ⓢ）：此方法在 Adobe Reader 中可用于具有“保存权限”的文档。
 
-## 参数
+### 参数
 
 | 参数 | 描述 |
 |---|---|
-| **cPath** | 保存文件的设备无关路径。<br><br>**注意：** (安全 Ⓢ)：参数 **cPath** 必须是[安全路径](https://example.com)，并且其扩展名必须与 **cConvID** 的值相匹配。请参阅下方的 [cConvID 的值和有效扩展名](https://example.com) 表。如果不符合这些安全条件，此方法将抛出 `NotAllowedError`（参见[错误对象](https://example.com)）异常，方法将执行失败。 |
-| **cConvID** | (可选，版本 6.0) 一个指定转换文件类型的转换 ID 字符串。**cConvID** 当前支持的值列在 **app.fromPDFConverters** 中。如果未指定 **cConvID**，则假定为 PDF。 |
-| **cFS** | (可选，版本 7.0) 一个指定源文件系统名称的字符串。支持两个值：""（空字符串，代表默认文件系统）和 "CHTTP"。默认值是默认文件系统。此参数仅在 Web 服务器支持 WebDAV 时相关。 |
-| **bCopy** | (可选，版本 7.0) 一个布尔值，如果为 **true**，则将 PDF 文件保存为副本。默认值为 **false**。 |
-| **bPromptToOverwrite** | (可选，版本 7.0) 一个布尔值，如果为 **true**，当目标文件已存在时会提示用户。默认值为 **false**。 |
+| `cPath` | 保存文件的设备无关路径。<br><br>**注意：**（安全 Ⓢ）：参数`cPath`必须是[安全路径](https://example.com)，并且其扩展名必须与`cConvID`的值相匹配。请参阅下方的[cConvID 的值和有效扩展名](https://example.com)表。如果不符合这些安全条件，此方法将抛出`NotAllowedError`（参见[错误对象](https://example.com)）异常，方法将执行失败。 |
+| `cConvID` | （可选，版本 6.0）一个指定转换文件类型的转换 ID 字符串。`cConvID`当前支持的值列在`app.fromPDFConverters`中。如果未指定`cConvID`，则假定为 PDF。 |
+| `cFS` | （可选，版本 7.0）一个指定源文件系统名称的字符串。支持两个值：`""`（空字符串，代表默认文件系统）和`"CHTTP"`。默认值是默认文件系统。此参数仅在 Web 服务器支持 WebDAV 时相关。 |
+| `bCopy` | （可选，版本 7.0）一个布尔值，如果为`true`，则将 PDF 文件保存为副本。默认值为`false`。 |
+| `bPromptToOverwrite` | （可选，版本 7.0）一个布尔值，如果为`true`，当目标文件已存在时会提示用户。默认值为`false`。 |
 
-## 返回值
+### 返回值
 
-成功时返回 **undefined**。如果发生错误则抛出异常。例如，如果用户拒绝覆盖，此方法将抛出 `NotAllowedError`（参见错误对象）。
+成功时返回`undefined`。如果发生错误则抛出异常。例如，如果用户拒绝覆盖，此方法将抛出`NotAllowedError`（参见错误对象）。
 
 **注意：** 在版本 7.0 之前，此方法没有返回值。
 
-## cConvID 的值和有效扩展名
+### cConvID 的值和有效扩展名
 
 | cConvID | 有效扩展名 |
-| --- | --- |
-| com.adobe.acrobat.eps | eps |
-| com.adobe.acrobat.html-3-20 | html, htm |
-| com.adobe.acrobat.html-4-01-css-1-00 | html, htm |
-| com.adobe.acrobat.jpeg | jpeg, jpg, jpe |
-| com.adobe.acrobat.jp2k | jpf, jpx, jp2, j2k, j2c, jpc |
-| com.adobe.acrobat.doc | doc |
-| com.adobe.acrobat.png | png |
-| com.adobe.acrobat.ps | ps |
-| com.adobe.acrobat.rtf | rtf |
-| com.adobe.acrobat.accesstext | txt |
-| com.adobe.acrobat.plain-text | txt |
-| com.adobe.acrobat.tiff | tiff, tif |
-| com.adobe.acrobat.xml-1-00 | xml |
+|---|---|
+| `com.adobe.acrobat.eps` | eps |
+| `com.adobe.acrobat.html-3-20` | html, htm |
+| `com.adobe.acrobat.html-4-01-css-1-00` | html, htm |
+| `com.adobe.acrobat.jpeg` | jpeg, jpg, jpe |
+| `com.adobe.acrobat.jp2k` | jpf, jpx, jp2, j2k, j2c, jpc |
+| `com.adobe.acrobat.doc` | doc |
+| `com.adobe.acrobat.png` | png |
+| `com.adobe.acrobat.ps` | ps |
+| `com.adobe.acrobat.rtf` | rtf |
+| `com.adobe.acrobat.accesstext` | txt |
+| `com.adobe.acrobat.plain-text` | txt |
+| `com.adobe.acrobat.tiff` | tiff, tif |
+| `com.adobe.acrobat.xml-1-00` | xml |
 
-**注意：** 当转换 ID 对应 `jpeg`、`jp2k`、`png` 或 `tiff` 时，此方法会将每一页单独保存，文件名通过在所提供文件名的基名后附加 "_Page_#" 来获得。例如，如果 cPath 的值是 "/C/temp/mySaveAsDocs/myJPGs.jpg"，则生成的文件名将是 myJPGs_Page_1.jpg、myJPGs_Page_2.jpg 等等。
+**注意：** 当转换 ID 对应`jpeg`、`jp2k`、`png`或`tiff`时，此方法会将每一页单独保存，文件名通过在所提供文件名的基名后附加`"_Page_#"`来获得。例如，如果`cPath`的值是`"/C/temp/mySaveAsDocs/myJPGs.jpg"`，则生成的文件名将是`myJPGs_Page_1.jpg`、`myJPGs_Page_2.jpg`等等。
 
-## 示例 1
+### 示例 1
 
 以下代码可能出现在批处理序列中。假设有一个已打开的 PDF 文件包含表单，需要从数据库中填充数据并保存。以下是脚本的概要：
 
-```
+```javascript
 // 从数据库读取并填充表单数据的代码行
 // 现在将文件保存到文件夹；使用数据库记录中的 customerID 作为名称
 var row = statement.getRow();
 this.saveAs("/c/customer/invoices/" + row.customerID + ".pdf");
 ```
 
-## 示例 2
+### 示例 2
 
-你可以使用 `newDoc` 和 `addField` 动态布局表单，然后从数据库填充数据并保存。
+你可以使用`newDoc`和`addField`动态布局表单，然后从数据库填充数据并保存。
 
-```
+```javascript
 var myDoc = app.newDoc()
 // 布局一些动态表单字段
 // 连接到数据库，用数据填充，可能来自数据库
@@ -10934,21 +11375,21 @@ myDoc.saveAs("/c/customer/invoices/" + row.customerID + ".pdf");
 myDoc.closeDoc(true);      // 关闭文档，无通知
 ```
 
-## 示例 3 (版本 6.0)
+### 示例 3（版本 6.0）
 
 将当前文档保存为富文本格式：
 
-```
+```javascript
 this.saveAs("/c/myDocs/myDoc.rtf", "com.adobe.acrobat.rtf");
 ```
 
-有关支持的转换 ID 字符串列表，请参阅 `fromPDFConverters`。
+有关支持的转换 ID 字符串列表，请参阅`fromPDFConverters`。
 
-## 示例 3 (版本 7.0)
+### 示例 3（版本 7.0）
 
 将文档保存到 WebDAV 文件夹。
 
-```
+```javascript
 this.saveAs({
     cPath: "http://www.myCom.com/WebDAV/myDoc.pdf",
     bPromptToOverwrite: true,
@@ -10960,14 +11401,16 @@ this.saveAs({
 
 | 版本 |  |  |  |
 |---|---|---|---|
-| 3.01 |  |  |  |
+| 3.01 |  |  | |
 
 将当前页面上指定的点滚动到当前视图的中心。这些坐标必须在旋转后的用户空间中定义。有关用户空间坐标系统的详细信息，请参阅 PDF 参考。
 
 ## 参数
 
-| **nX** | 要滚动的点的 x 坐标。 |
-| **nY** | 要滚动的点的 y 坐标。 |
+| 参数 | 描述 |
+|---|---|
+| `nX` | 要滚动的点的 x 坐标。 |
+| `nY` | 要滚动的点的 y 坐标。 |
 
 ## 返回值
 
@@ -10977,29 +11420,31 @@ this.saveAs({
 
 获取并选择一个特定的单词。
 
-```
-    // 获取第 2 页（第 1 页，基于 0）上的第 20 个单词
-    var cWord = this.getPageNthWord(1, 20);
-    // 选择该单词（高亮显示）以供用户查看，必要时更改页面。
-    this.selectPageNthWord(1, 20);
+```javascript
+// 获取第 2 页（第 1 页，基于 0）上的第 20 个单词
+var cWord = this.getPageNthWord(1, 20);
+// 选择该单词（高亮显示）以供用户查看，必要时更改页面。
+this.selectPageNthWord(1, 20);
 ```
 
 # setAction
 
 | 版本 |  |  |  |  |
 |---|---|---|---|---|
-| 6.0 | ⓓ |  | ❌ |  |
+| 6.0 | ⓓ |  | ❌ | |
 
 为给定的触发器设置文档的 JavaScript 动作。
-另请参阅 `doc.addScript`、`doc.setPageAction`、`bookmark.setAction` 和 `field.setAction`。
+
+另请参阅`doc.addScript`、`doc.setPageAction`、`bookmark.setAction`和`field.setAction`。
 
 **注意：** 此方法将覆盖已为所选触发器定义的任何动作。
 
 ## 参数
 
-| **cTrigger** | 要附加动作的触发点的名称。值为：WillClose WillSave DidSave WillPrint DidPrint |
+| 参数 | 描述 |
 |---|---|
-| **cScript** | 触发器激活时要执行的 JavaScript 表达式。 |
+| `cTrigger` | 要附加动作的触发点的名称。值为：`WillClose`、`WillSave`、`DidSave`、`WillPrint`、`DidPrint` |
+| `cScript` | 触发器激活时要执行的 JavaScript 表达式。 |
 
 ## 返回值
 
@@ -11007,9 +11452,9 @@ this.saveAs({
 
 ## 示例
 
-此示例插入 **WillSave** 和 **DidSave** 动作。代码在保存前和保存后获取文件大小，并进行比较。
+此示例插入`WillSave`和`DidSave`动作。代码在保存前和保存后获取文件大小，并进行比较。
 
-```
+```javascript
 // WillSave 脚本
 var myWillSave = 'var filesizeBeforeSave = this.filesize;\r'
     + 'console.println("File size before saving is " + filesizeBeforeSave );';
@@ -11035,14 +11480,15 @@ this.setAction("DidSave", myDidSave);
 |---|---|---|---|---|
 | 7.0 | | | **D** | |
 
-此方法将参数 **cName** 指定的文件附件替换为 **oStream** 参数的内容。
+此方法将参数`cName`指定的文件附件替换为`oStream`参数的内容。
 
 ## 参数
 
-| **cName** | 与要被 oStream 替换的数据对象关联的名称。 |
+| 参数 | 描述 |
 |---|---|
-| **oStream** | 一个表示文件附件内容的 ReadStream 对象。 |
-| **cCryptFilter** | (可选) 在加密此数据对象时要使用的加密筛选器的语言无关名称。此加密筛选器必须先前已使用 doc.addRecipientListCryptFilter 方法添加到文档的加密筛选器列表中，否则将抛出异常。如果希望此数据对象在由 doc.encryptForRecipients 方法加密的文件中不被加密，可以使用预定义的 "Identity" 加密筛选器。 |
+| `cName` | 与要被`oStream`替换的数据对象关联的名称。 |
+| `oStream` | 一个表示文件附件内容的`ReadStream`对象。 |
+| `cCryptFilter` | （可选）在加密此数据对象时要使用的加密筛选器的语言无关名称。此加密筛选器必须先前已使用`doc.addRecipientListCryptFilter`方法添加到文档的加密筛选器列表中，否则将抛出异常。如果希望此数据对象在由`doc.encryptForRecipients`方法加密的文件中不被加密，可以使用预定义的`"Identity"`加密筛选器。 |
 
 ## 返回值
 
@@ -11054,10 +11500,12 @@ this.setAction("DidSave", myDidSave);
 
 ## 示例 2
 
-此文档有一个名为 acrobat.xml 的文件附件。打开附件，更新 XML 数据，然后将新的 XML 文档保存回附件。可以提交此 XML 文件附件。有关示例，请参阅 Doc.submitForm() 方法之后第 315 页的“示例 5（版本 7.0）”。此示例使用 XMLData.applyXPath() 之后示例中定义的 XML 数据。
+此文档有一个名为`acrobat.xml`的文件附件。打开附件，更新 XML 数据，然后将新的 XML 文档保存回附件。可以提交此 XML 文件附件。有关示例，请参阅`Doc.submitForm()`方法之后第 315 页的“示例 5（版本 7.0）”。此示例使用`XMLData.applyXPath()`之后示例中定义的 XML 数据。
+
+
 
 ```
-// 获取附件的文件流对象
+/ 获取附件的文件流对象
 var acrobat = this.getDataObjectContents("acrobat.xml");
 
 // 转换为字符串
@@ -11078,25 +11526,25 @@ var acrobat = util.streamFromString(cAcrobat, "utf-8");
 // 现在用此文件流“更新”附件 acrobat.xml
 ```
 
-
-
+```javascript
 this.setDataObjectContents("acrobat.xml", acrobat);
+```
 
-相关对象、属性和方法包括 Data Object、doc.dataObjects、doc.getDataObject、doc.openDataObject、doc.createDataObject、doc.importDataObject、doc.getDataObjectContents 以及 doc.removeDataObject。
+相关对象、属性和方法包括`Data Object`、`doc.dataObjects`、`doc.getDataObject`、`doc.openDataObject`、`doc.createDataObject`、`doc.importDataObject`、`doc.getDataObjectContents`以及`doc.removeDataObject`。
 
 ## setOCGOrder
 
-设置此文档的 OCGOrder 数组。该数组表示图层在用户界面中的显示方式。
+设置此文档的`OCGOrder`数组。该数组表示图层在用户界面中的显示方式。
 
-最简单的顺序数组是一个 OCG 对象的扁平数组。在这种情况下，列出的 OCG 将在用户界面中按相同顺序显示为扁平列表。如果顺序数组中存在子数组，且该数组的第一个元素是字符串，则该字符串将被列出，其余数组嵌套在其下。如果数组的第一个元素不是字符串，则整个数组将显示在子数组之前的 OCG 下方。
+最简单的顺序数组是一个`OCG`对象的扁平数组。在这种情况下，列出的`OCG`将在用户界面中按相同顺序显示为扁平列表。如果顺序数组中存在子数组，且该数组的第一个元素是字符串，则该字符串将被列出，其余数组嵌套在其下。如果数组的第一个元素不是字符串，则整个数组将显示在子数组之前的`OCG`下方。
 
-相关方法包括 doc.getOCGs、doc.getOCGOrder 以及 OCG Object。
+相关方法包括`doc.getOCGs`、`doc.getOCGOrder`以及`OCG Object`。
 
 ### 参数
 
 | 参数 | 描述 |
 |---|---|
-| oOrderArray | 用作此文档 OCG 顺序的数组。 |
+| `oOrderArray` | 用作此文档`OCG`顺序的数组。 |
 
 ### 返回值
 
@@ -11104,9 +11552,9 @@ this.setDataObjectContents("acrobat.xml", acrobat);
 
 ### 示例
 
-反转用户界面中列出的 OCG 顺序。
+反转用户界面中列出的`OCG`顺序。
 
-```
+```javascript
 var ocgOrder = this.getOCGOrder();
 var newOrder = new Array();
 for (var j=0; j < ocgOrder.length; j++)
@@ -11118,7 +11566,7 @@ this.setOCGOrder(newOrder);
 
 为给定触发器设置文档中页面的操作。
 
-另请参阅 doc.setAction、doc.addScript、bookmark.setAction 以及 field.setAction。
+另请参阅`doc.setAction`、`doc.addScript`、`bookmark.setAction`以及`field.setAction`。
 
 > 注意：此方法将覆盖为所选页面和触发器定义的任何现有操作。
 
@@ -11126,9 +11574,9 @@ this.setOCGOrder(newOrder);
 
 | 参数 | 描述 |
 |---|---|
-| **nPage** | 要添加操作的页面在文档中的从 0 开始的索引。 |
-| **cTrigger** | 操作的触发器。值为：`Open` `Close` |
-| **cScript** | 触发器激活时要执行的 JavaScript 表达式。 |
+| `nPage` | 要添加操作的页面在文档中的从 0 开始的索引。 |
+| `cTrigger` | 操作的触发器。值为：`Open`、`Close`。 |
+| `cScript` | 触发器激活时要执行的 JavaScript 表达式。 |
 
 ### 返回值
 
@@ -11138,20 +11586,22 @@ this.setOCGOrder(newOrder);
 
 此示例在第一页打开时使应用程序发出蜂鸣声。
 
-`this.setPageAction(0, "Open", "app.beep(0);");`
+```javascript
+this.setPageAction(0, "Open", "app.beep(0);");
+```
 
 ## setPageBox
 
-为指定页面设置一个包含指定命名框的矩形。另请参阅 `getPageBox`。
+为指定页面设置一个包含指定命名框的矩形。另请参阅`getPageBox`。
 
 ### 参数
 
 | 参数 | 描述 |
 |---|---|
-| **cBox** | （可选）框类型值，可以是：`Art` `Bleed` `Crop` `Media` `Trim`。请注意，**BBox** 框类型为只读，仅在 `getPageBox` 中受支持。有关这些框的定义，请参见 PDF 参考文档第 8.6.1 节“页面边界”。 |
-| **nStart** | （可选）定义要操作的文档中页面的从 0 开始的包含范围的起始索引。如果未指定 **nStart** 和 **nEnd**，则操作文档中的所有页面。如果仅指定 **nStart**，则页面范围为 **nStart** 指定的单页。 |
-| **nEnd** | （可选）定义要操作的文档中页面的从 0 开始的包含范围的结束索引。如果未指定 **nStart** 和 **nEnd**，则操作文档中的所有页面。 |
-| **rBox** | （可选）一个由四个数字组成的数组，表示在*旋转用户空间*中要设置的指定框。如果未提供，则移除指定的框。 |
+| `cBox` | （可选）框类型值，可以是：`Art`、`Bleed`、`Crop`、`Media`、`Trim`。请注意，`BBox`框类型为只读，仅在`getPageBox`中受支持。有关这些框的定义，请参见 PDF 参考文档第 8.6.1 节“页面边界”。 |
+| `nStart` | （可选）定义要操作的文档中页面的从 0 开始的包含范围的起始索引。如果未指定`nStart`和`nEnd`，则操作文档中的所有页面。如果仅指定`nStart`，则页面范围为`nStart`指定的单页。 |
+| `nEnd` | （可选）定义要操作的文档中页面的从 0 开始的包含范围的结束索引。如果未指定`nStart`和`nEnd`，则操作文档中的所有页面。 |
+| `rBox` | （可选）一个由四个数字组成的数组，表示在*旋转用户空间*中要设置的指定框。如果未提供，则移除指定的框。 |
 
 ### 返回值
 
@@ -11159,24 +11609,27 @@ this.setOCGOrder(newOrder);
 
 ## setPageLabels
 
-建立指定页面及其后所有页面的编号方案，直到遇到下一个附加了标签的页面。另请参阅 `getPageLabel`。
+建立指定页面及其后所有页面的编号方案，直到遇到下一个附加了标签的页面。另请参阅`getPageLabel`。
 
 ### 参数
 
-**nPage**
+#### `nPage`
+
 （可选）要添加标签的页面的从 0 开始的索引。
 
-**aLabel**
-（可选）一个包含三个必需项的数组 [**cStyle**, **cPrefix**, **nStart**]。
-* **cStyle** 是页面编号的样式。可以是：
-  * D：十进制编号
-  * R 或 r：罗马数字编号，大写或小写
-  * A 或 a：字母编号，大写或小写
-  * 有关这些样式的准确定义，请参见 [PDF 参考文档](https://www.google.com/search?q=PDF+Reference+Section+7.3.1)第 7.3.1 节。
-* **cPrefix** 是页面标签数字部分的前缀字符串。
-* **nStart** 是页面编号的起始序数。
-* 如果未提供，则为指定页面及直到下一个指定标签之前的所有页面移除任何页面编号。
-* **aLabel** 的值不能为 **null**。
+#### `aLabel`
+
+（可选）一个包含三个必需项的数组`[cStyle, cPrefix, nStart]`。
+
+- `cStyle`是页面编号的样式。可以是：
+  - `D`：十进制编号。
+  - `R`或`r`：罗马数字编号，大写或小写。
+  - `A`或`a`：字母编号，大写或小写。
+  - 有关这些样式的准确定义，请参见[PDF 参考文档](https://www.google.com/search?q=PDF+Reference+Section+7.3.1)第 7.3.1 节。
+- `cPrefix`是页面标签数字部分的前缀字符串。
+- `nStart`是页面编号的起始序数。
+- 如果未提供，则为指定页面及直到下一个指定标签之前的所有页面移除任何页面编号。
+- `aLabel`的值不能为`null`。
 
 ### 返回值
 
@@ -11184,9 +11637,9 @@ this.setOCGOrder(newOrder);
 
 ### 示例 1
 
-文档中有 10 页，将前 3 页标记为小写罗马数字，接下来 5 页标记为数字（从 1 开始），最后 2 页标记为 "Appendix-" 前缀和字母。
+文档中有 10 页，将前 3 页标记为小写罗马数字，接下来 5 页标记为数字（从 1 开始），最后 2 页标记为`Appendix-`前缀和字母。
 
-```
+```javascript
 this.setPageLabels(0, [ "r", "", 1]);
 this.setPageLabels(3, [ "D", "", 1]);
 this.setPageLabels(8, [ "A", "Appendix-", 1]);
@@ -11198,13 +11651,13 @@ console.println(s);
 
 此示例将在控制台输出以下内容：
 
-i, ii, iii, 1, 2, 3, 4, 5, Appendix-A, Appendix-B
+`i, ii, iii, 1, 2, 3, 4, 5, Appendix-A, Appendix-B`
 
 ### 示例 2
 
 从文档中移除所有页面标签。
 
-```
+```javascript
 for (var i = 0; i < this.numPages; i++) {
     if (i + 1 != this.getPageLabel(i)) {
         // 页面标签与序数页码不匹配。
@@ -11215,15 +11668,15 @@ for (var i = 0; i < this.numPages; i++) {
 
 ## setPageRotations
 
-旋转当前文档中的指定页面。另请参阅 [getPageRotation](https://example.com)。
+旋转当前文档中的指定页面。另请参阅[`getPageRotation`](https://example.com)。
 
 ### 参数
 
 | 参数 | 描述 |
 |---|---|
-| nStart | （可选）定义要操作的文档中页面的从 0 开始的包含范围的起始索引。如果未指定 nStart 和 nEnd，则操作文档中的所有页面。如果仅指定 nStart，则页面范围为 nStart 指定的单页。 |
-| nEnd | （可选）定义要操作的文档中页面的从 0 开始的包含范围的结束索引。如果未指定 nStart 和 nEnd，则操作文档中的所有页面。如果仅指定 nEnd，则页面范围为 0 到 nEnd。 |
-| nRotate | （可选）应用于目标页面的旋转量。可以是 0、90、180 或 270。默认为 0。 |
+| `nStart` | （可选）定义要操作的文档中页面的从 0 开始的包含范围的起始索引。如果未指定`nStart`和`nEnd`，则操作文档中的所有页面。如果仅指定`nStart`，则页面范围为`nStart`指定的单页。 |
+| `nEnd` | （可选）定义要操作的文档中页面的从 0 开始的包含范围的结束索引。如果未指定`nStart`和`nEnd`，则操作文档中的所有页面。如果仅指定`nEnd`，则页面范围为 0 到`nEnd`。 |
+| `nRotate` | （可选）应用于目标页面的旋转量。可以是 0、90、180 或 270。默认为 0。 |
 
 ### 返回值
 
@@ -11233,7 +11686,7 @@ for (var i = 0; i < this.numPages; i++) {
 
 将当前文档的第 0 页到第 10 页旋转 90 度。
 
-```
+```javascript
 this.setPageRotations(0, 10, 90);
 ```
 
@@ -11243,8 +11696,10 @@ this.setPageRotations(0, 10, 90);
 
 ### 参数
 
-| nPage | 要设置标签顺序的页面的从 0 开始的索引。 |
-| cOrder | 要使用的顺序。值为：`rows` `columns` `structure` |
+| 参数 | 描述 |
+|---|---|
+| `nPage` | 要设置标签顺序的页面的从 0 开始的索引。 |
+| `cOrder` | 要使用的顺序。值为：`rows`、`columns`、`structure`。 |
 
 ### 返回值
 
@@ -11252,24 +11707,24 @@ this.setPageRotations(0, 10, 90);
 
 ### 示例
 
-将所有页面的页面标签顺序设置为 **rows**（按行）。
+将所有页面的页面标签顺序设置为`rows`（按行）。
 
-```
+```javascript
 for (var i = 0; i < this.numPages; i++)
-	this.setPageTabOrder(i, "rows");
+    this.setPageTabOrder(i, "rows");
 ```
 
 ## setPageTransitions
 
-为特定页面范围设置页面过渡效果。另请参阅 [getPageTransition](getPageTransition)。
+为特定页面范围设置页面过渡效果。另请参阅[`getPageTransition`](getPageTransition)。
 
 ### 参数
 
 | 参数 | 描述 |
 |---|---|
-| nStart | （可选）定义要操作的文档中页面的从 0 开始的包含范围的起始索引。如果未指定 **nStart** 和 **nEnd**，则操作文档中的所有页面。如果仅指定 **nStart**，则页面范围为 **nStart** 指定的单页。 |
-| **nEnd** | （可选）定义要操作的文档中页面的从 0 开始的包含范围的结束索引。如果未指定 **nStart** 和 **nEnd**，则操作文档中的所有页面。如果仅指定 **nEnd**，则页面范围为 0 到 **nEnd**。 |
-| **aTrans** | （可选）页面过渡数组包含三个值：[**nDuration**, **cTransition**, **nTransDuration**]。 <br>- **nDuration** 是查看器自动翻到下一页之前页面显示的最大时间。设置为 -1 以关闭自动翻页。<br>- **cTransition** 是要应用于页面的过渡效果名称。有关有效过渡效果的列表，请参见 fullScreen.**transitions**。<br>- **nTransDuration** 是过渡效果的持续时间（以秒为单位）。<br>如果 **aTrans** 不存在，则会移除页面的任何页面过渡效果。 |
+| `nStart` | （可选）定义要操作的文档中页面的从 0 开始的包含范围的起始索引。如果未指定`nStart`和`nEnd`，则操作文档中的所有页面。如果仅指定`nStart`，则页面范围为`nStart`指定的单页。 |
+| `nEnd` | （可选）定义要操作的文档中页面的从 0 开始的包含范围的结束索引。如果未指定`nStart`和`nEnd`，则操作文档中的所有页面。如果仅指定`nEnd`，则页面范围为 0 到`nEnd`。 |
+| `aTrans` | （可选）页面过渡数组包含三个值：`[nDuration, cTransition, nTransDuration]`。<br>- `nDuration`是查看器自动翻到下一页之前页面显示的最大时间。设置为 -1 以关闭自动翻页。<br>- `cTransition`是要应用于页面的过渡效果名称。有关有效过渡效果的列表，请参见`fullScreen.transitions`。<br>- `nTransDuration`是过渡效果的持续时间（以秒为单位）。<br>如果`aTrans`不存在，则会移除页面的任何页面过渡效果。 |
 
 ### 返回值
 
@@ -11279,46 +11734,44 @@ for (var i = 0; i < this.numPages; i++)
 
 将文档置于全屏模式，并应用一些过渡效果。
 
-```
+```javascript
 this.setPageTransitions({ aTrans: [-1, "Random", 1] } );
 app.fs.isFullScreen=true;
 ```
 
 ## spawnPageFromTemplate
 
-使用给定的模板（由 **getNthTemplate** 返回）在文档中生成页面。
+使用给定的模板（由`getNthTemplate`返回）在文档中生成页面。
 
-请参阅 **templates**、**createTemplate** 和 **template.spawn**，这些在后续版本中替代了此方法。
+请参阅`templates`、`createTemplate`和`template.spawn`，这些在后续版本中替代了此方法。
 
-**注意：** 模板功能在 Adobe Reader 中无效。
+> 注意：模板功能在 Adobe Reader 中无效。
 
 ### 参数
 
 | 参数 | 描述 |
 |---|---|
-| **cTemplate** | 模板名称。 |
-| **nPage** | （可选）模板生成在其之前或插入其中的页面的从 0 开始的页码，具体取决于 **bOverlay** 的值。如果省略 **nPage**，则在文档末尾创建一个新页面。 |
-| **bRename** | （可选）是否应重命名字段。默认为 **true**。 |
-
-
+| `cTemplate` | 模板名称。 |
+| `nPage` | （可选）模板生成在其之前或插入其中的页面的从 0 开始的页码，具体取决于`bRename`的值。如果省略`nPage`，则在文档末尾创建一个新页面。 |
+| `bRename` | （可选）是否应重命名字段。默认为`true`。 |
 
 ## 文档方法
 
 ### spawnPageFromTemplate
 
-（可选，版本 4.0）如果 **false**，模板将插入到由 **nPage** 指定的页面之前。当为 **true**（默认值）时，它会覆盖在该页面之上。
+（可选，版本 4.0）如果`false`，模板将插入到由`nPage`指定的页面之前。当为`true`（默认值）时，它会覆盖在该页面之上。
 
-（可选，版本 6.0）此参数的值是之前调用 **spawnPageFromTemplate** 的返回值。
+（可选，版本 6.0）此参数的值是之前调用`spawnPageFromTemplate`的返回值。
 
 ### 返回值
 
-在 Acrobat 6.0 之前，此方法不返回任何内容。现在，此方法返回一个表示所生成页面内容的对象。然后，此返回对象可用作后续调用 **spawnPageFromTemplate** 时的可选参数 **oXObject** 的值。
+在 Acrobat 6.0 之前，此方法不返回任何内容。现在，此方法返回一个表示所生成页面内容的对象。然后，此返回对象可用作后续调用`spawnPageFromTemplate`时的可选参数`oXObject`的值。
 
-> **注意：** 重复生成 *相同* 页面可能会导致文件大小大幅膨胀。为避免此文件大小膨胀问题，**spawnPageFromTemplate** 现在返回一个表示所生成页面内容的对象。此返回值可用作后续调用 **spawnPageFromTemplate** 方法以生成相同页面时的 **oXObject** 参数值。
+> 注意：重复生成*相同*页面可能会导致文件大小大幅膨胀。为避免此文件大小膨胀问题，`spawnPageFromTemplate`现在返回一个表示所生成页面内容的对象。此返回值可用作后续调用`spawnPageFromTemplate`方法以生成相同页面时的`oXObject`参数值。
 
 ### 示例 1
 
-```
+```javascript
 var n = this.numTemplates;
 var cTempl;
 for (i = 0; i < n; i++) {
@@ -11329,9 +11782,9 @@ for (i = 0; i < n; i++) {
 
 ### 示例 2（版本 6.0）
 
-以下示例使用 **oXObject** 参数和返回值，将同一模板生成 31 次。使用此技术可避免文件大小过度膨胀。
+以下示例使用`oXObject`参数和返回值，将同一模板生成 31 次。使用此技术可避免文件大小过度膨胀。
 
-```
+```javascript
 var t = this.getNthTemplate(0);
 var XO = this.spawnPageFromTemplate(t, this.numPages, false, false);
 for (var i=0; i < 30; i++)
@@ -11340,49 +11793,53 @@ for (var i=0; i < 30; i++)
 
 ### submitForm
 
-将表单提交到指定的 URL。要调用此方法，您必须在 Web 浏览器内运行，或安装了 Acrobat Web Capture 插件（除非 URL 使用 "mailto" 方案，在这种情况下，即使不在 Web 浏览器内运行，只要存在 SendMail 插件，它也会被处理）。从 Adobe Reader 6.0 开始，您不必在 Web 浏览器内即可调用此方法。
+将表单提交到指定的 URL。要调用此方法，您必须在 Web 浏览器内运行，或安装了 Acrobat Web Capture 插件（除非 URL 使用`mailto`方案，在这种情况下，即使不在 Web 浏览器内运行，只要存在 SendMail 插件，它也会被处理）。从 Adobe Reader 6.0 开始，您不必在 Web 浏览器内即可调用此方法。
 
-> **注意：** （版本 6.0）根据传递的参数，对 submitForm 的使用有限制。请参阅参数描述中嵌入的注释。
+> 注意：（版本 6.0）根据传递的参数，对`submitForm`的使用有限制。请参阅参数描述中嵌入的注释。
 
-支持 `https` 协议进行安全连接。
+支持`https`协议进行安全连接。
 
 ### 参数
 
 | 参数 | 描述 |
 | :--- | :--- |
-| **cURL** | 要提交到的 URL。如果提交结果是 FDF 或 XFDF（即 **cSubmitAs** 的值为 "FDF" 或 "XFDF"），并且文档正在浏览器窗口内查看，则此字符串必须以 `#FDF` 结尾。 |
-| **bFDF** | ⊗ （可选）是否作为 FDF 或 HTML 提交。如果为 **true**（默认值），则将表单数据作为 FDF 提交。如果为 **false**，则作为 URL 编码的 HTML 提交。此选项已被弃用，请改用 **cSubmitAs**。 |
-| **bEmpty** | （可选）当为 **true** 时，提交所有字段，包括那些没有值的字段。当为 **false**（默认值）时，排除当前没有值的字段。**注意：** 如果数据作为 XDP、XML 或 XFD 提交（见下文的 **cSubmitAs** 参数），则忽略 **bEmpty** 参数。所有字段都会被提交，即使是空字段。请参阅下文的 **aFields**。 |
-| **aFields** | （可选）要提交的字段名数组或包含单个字段名的字符串。 <ul><li>如果提供了该参数，则仅提交指定的字段，但 **bEmpty** 排除的字段除外。</li><li>如果省略或为 **null**，则提交所有字段，但 **bEmpty** 排除的字段除外。</li><li>如果是空数组，则不提交任何字段。如果 **bAnnotations** 为 **true**，则提交的 FDF 仍可能包含数据。</li></ul> 您可以指定非终端字段名以导出整个字段子树。**注意：** 如果数据作为 XDP、XML 或 XFD 提交（见下文的 **cSubmitAs** 参数），则忽略 **aFields** 参数。所有字段都会被提交，即使是空字段。请参阅上文的 **bEmpty**。 |
-| **bGet** | （可选，版本 4.0）当为 **true** 时，使用 HTTP GET 方法提交。当为 **false**（默认值）时，使用 POST。仅在使用 Acrobat Web Capture 提交时允许使用 GET（浏览器界面仅支持 POST），并且仅当数据作为 HTML 发送时（即 **cSubmitAs** 是 HTML）。 |
-| **bAnnotations** | （可选，版本 5.0）当为 **true** 时，注释包含在提交的 FDF 或 XML 中。默认值为 **false**。仅在 **cSubmitAs** 为 FDF 或 XFDF 时适用。 |
-| **bXML** | ⓧ （可选，版本 5.0）如果为 **true**，则作为 XML 提交。默认值为 **false**。此选项已被弃用，请改用 **cSubmitAs**。 |
-| **bIncrChanges** | （可选，版本 5.0）当为 **true** 时，在提交的 FDF 中包含对 PDF 的增量更改。默认值为 **false**。仅在 **cSubmitAs** 为 **FDF** 时适用。在 Adobe Reader 中不可用。 |
-| **bPDF** | ⓧ （可选，版本 5.0）如果为 **true**，则提交完整的 PDF 文档。默认值为 **false**。当为 **true** 时，除 **cURL** 外的所有其他参数均被忽略。在 Adobe Reader 中不可用。此选项已被弃用，请改用 **cSubmitAs**。 |
-| **bCanonical** | （可选，版本 5.0）当为 **true** 时，将提交的任何日期转换为标准格式（即 **D:YYYYMMDDHHmmSSOH′mm′**；详情请参阅 [PDF 参考手册](PDF Reference)）。默认值为 **false**。 |
-| **bExclNonUserAnnots** | （可选，版本 5.0）一个布尔值，如果为 **true**，则表示排除所有不属于当前用户的注释。默认值为 **false**。 |
-| **bExclFKey** | （可选，版本 5.0）当为 **true** 时，排除 "F" 键。默认值为 **false**。 |
-| **cPassword** | （可选，版本 5.0）如果 FDF 在提交前需要加密，则用于生成加密密钥的密码。传递值 **true**（不加引号）以使用用户先前（在此 Acrobat 会话内）输入的用于提交或接收加密 FDF 的密码。如果未输入密码，则提示用户输入密码。无论密码是传入还是请求用户提供，此新密码都会在此 Acrobat 会话内被记住，以供将来传出或传入的加密 FDF 使用。仅在 **cSubmitAs** 为 **FDF** 时适用。 |
-| **bEmbedForm** | （可选，版本 6.0）当为 **true** 时，调用会在 FDF 中嵌入提交数据所在的整个表单。仅在 **cSubmitAs** 为 **FDF** 时适用。 |
-| **oJavaScript** | （可选，版本 6.0）可用于在提交的 FDF 中包含 `Before`、`After` 和 `Doc` JavaScript。如果存在，其值将直接转换为类似的 `CosObj` 并用作 FDF 中的 `/JavaScript` 属性。例如：oJavaScript: { Before: 'app.alert("before!")', After: 'app.alert("after")', Doc: [ "MyDocScript1", "myFunc1()", "MyDocScript2", "myFunc2()" ] } 仅在 `cSubmitAs` 为 `FDF` 时适用。 |
-| **cSubmitAs** | （可选，版本 6.0）此参数指示提交的格式。值为：`FDF`（默认）、`XFDF`、`HTML`、`XDP`、`XML`、`XFD`、`PDF`。**注意：** 关于此参数值的附加说明：<ul><li>**PDF** 表示提交完整的 PDF 文档；在这种情况下，除 `cURL` 外的所有其他参数均被忽略。</li><li>需要保存权限（**:S:**）：除非文档具有保存权限，否则 Adobe Reader 中不提供 `PDF` 选项。</li><li>（版本 7.0）如果 `XML` 是此参数的值，则当前文档的表单数据将以 XML 格式提交，除非参数 `oXML`（7.0 版新增）包含有效的 XMLData 对象，在这种情况下将提交该对象。</li></ul> 此参数优先于单独的格式参数；但是，它们的考虑优先级从高到低如下：`cSubmitAs`、`bPDF`、`bXML`、`bFDF`。 |
-| **bInclNMKey** | （可选，版本 6.0）当为 `true` 时，包含任何注释的 "NM" 键。默认值为 `false`。 |
-| **aPackets** | （可选，版本 6.0）一个字符串数组，指定在 XDP 提交中包含哪些数据包。可能的字符串有：<ul><li>template</li><li>datasets</li><li>stylesheet</li><li>xfdf</li><li>sourceSet</li><li>pdf</li><li>config</li><li>*</li></ul> 此参数仅在 **cSubmitAs** 为 **XDP** 时适用。**pdf** 表示应嵌入 PDF；如果此处未包含 **pdf**，则 XDP 中仅包含对 PDF 的链接。**xfdf** 表示在 XDP 中包含注释（因为该数据包使用 XFDF 格式）。* 表示应将所有数据包包含在 XDP 中。**pdf** 的默认值是作为 *引用* 包含。要将 PDF 文件嵌入 XDP，需 *显式* 将 **pdf** 指定为其中一个数据包。**注意：** （需要保存权限 📌）：当从 Adobe Reader 提交文档为 **XDP** 且 **aPackets** 数组中明确列出 **pdf** 时，文档必须具有文档保存权限。（请阅读上文 * 的描述。）默认值为：["datasets", "xfdf"]。 |
-| **cCharset** | （可选，版本 6.0）提交值的编码。字符串值为：<ul><li>utf-8</li><li>utf-16</li><li>Shift-JIS</li><li>BigFive</li><li>GBK</li><li>UHC</li></ul> 如果未传递，则适用当前 Acrobat 行为。对于基于 XML 的格式，使用 **utf-8**。对于其他格式，Acrobat 尝试为提交的值找到最佳主机编码。XFDF 提交忽略此值，始终使用 **utf-8**。 |
-| **oXML** | （可选，版本 7.0）此参数仅在 **cSubmitAs** 等于 **XML** 时适用。它应该是一个 [XMLData 对象](https://example.com)，该对象将被提交。 |
+| `cURL` | 要提交到的 URL。如果提交结果是 FDF 或 XFDF（即`cSubmitAs`的值为`"FDF"`或`"XFDF"`），并且文档正在浏览器窗口内查看，则此字符串必须以`#FDF`结尾。 |
+| `bFDF` | ⊗ （可选）是否作为 FDF 或 HTML 提交。如果为`true`（默认值），则将表单数据作为 FDF 提交。如果为`false`，则作为 URL 编码的 HTML 提交。此选项已被弃用，请改用`cSubmitAs`。 |
+| `bEmpty` | （可选）当为`true`时，提交所有字段，包括那些没有值的字段。当为`false`（默认值）时，排除当前没有值的字段。注意：如果数据作为 XDP、XML 或 XFD 提交（见下文的`cSubmitAs`参数），则忽略`bEmpty`参数。所有字段都会被提交，即使是空字段。请参阅下文的`aFields`。 |
+| `aFields` | （可选）要提交的字段名数组或包含单个字段名的字符串。<ul><li>如果提供了该参数，则仅提交指定的字段，但`bEmpty`排除的字段除外。</li><li>如果省略或为`null`，则提交所有字段，但`bEmpty`排除的字段除外。</li><li>如果是空数组，则不提交任何字段。如果`bAnnotations`为`true`，则提交的 FDF 仍可能包含数据。</li></ul>您可以指定非终端字段名以导出整个字段子树。注意：如果数据作为 XDP、XML 或 XFD 提交（见下文的`cSubmitAs`参数），则忽略`aFields`参数。所有字段都会被提交，即使是空字段。请参阅上文的`bEmpty`。 |
+| `bGet` | （可选，版本 4.0）当为`true`时，使用 HTTP GET 方法提交。当为`false`（默认值）时，使用 POST。仅在使用 Acrobat Web Capture 提交时允许使用 GET（浏览器界面仅支持 POST），并且仅当数据作为 HTML 发送时（即`cSubmitAs`是 HTML）。 |
+| `bAnnotations` | （可选，版本 5.0）当为`true`时，注释包含在提交的 FDF 或 XML 中。默认值为`false`。仅在`cSubmitAs`为 FDF 或 XFDF 时适用。 |
+| `bXML` | ⓧ （可选，版本 5.0）如果为`true`，则作为 XML 提交。默认值为`false`。此选项已被弃用，请改用`cSubmitAs`。 |
+| `bIncrChanges` | （可选，版本 5.0）当为`true`时，在提交的 FDF 中包含对 PDF 的增量更改。默认值为`false`。仅在`cSubmitAs`为`FDF`时适用。在 Adobe Reader 中不可用。 |
 
 
+
+| 参数 | 描述 |
+|---|---|
+| `bPDF` | ⓧ（可选，版本 5.0）如果为 `true`，则提交完整的 PDF 文档。默认值为 `false`。当为 `true` 时，除 `cURL` 外的所有其他参数均被忽略。在 Adobe Reader 中不可用。此选项已被弃用，请改用 `cSubmitAs`。 |
+| `bCanonical` | （可选，版本 5.0）当为 `true` 时，将提交的任何日期转换为标准格式（即 `D:YYYYMMDDHHmmSSOH′mm′`；详情请参阅 [PDF 参考手册](PDF Reference)）。默认值为 `false`。 |
+| `bExclNonUserAnnots` | （可选，版本 5.0）一个布尔值，如果为 `true`，则表示排除所有不属于当前用户的注释。默认值为 `false`。 |
+| `bExclFKey` | （可选，版本 5.0）当为 `true` 时，排除 `"F"` 键。默认值为 `false`。 |
+| `cPassword` | （可选，版本 5.0）如果 FDF 在提交前需要加密，则用于生成加密密钥的密码。传递值 `true`（不加引号）以使用用户先前（在此 Acrobat 会话内）输入的用于提交或接收加密 FDF 的密码。如果未输入密码，则提示用户输入密码。无论密码是传入还是请求用户提供，此新密码都会在此 Acrobat 会话内被记住，以供将来传出或传入的加密 FDF 使用。仅在 `cSubmitAs` 为 `FDF` 时适用。 |
+| `bEmbedForm` | （可选，版本 6.0）当为 `true` 时，调用会在 FDF 中嵌入提交数据所在的整个表单。仅在 `cSubmitAs` 为 `FDF` 时适用。 |
+| `oJavaScript` | （可选，版本 6.0）可用于在提交的 FDF 中包含 `Before`、`After` 和 `Doc` JavaScript。如果存在，其值将直接转换为类似的 `CosObj` 并用作 FDF 中的 `/JavaScript` 属性。例如：`oJavaScript: { Before: 'app.alert("before!")', After: 'app.alert("after")', Doc: [ "MyDocScript1", "myFunc1()", "MyDocScript2", "myFunc2()" ] }`。仅在 `cSubmitAs` 为 `FDF` 时适用。 |
+| `cSubmitAs` | （可选，版本 6.0）此参数指示提交的格式。值为：`FDF`（默认）、`XFDF`、`HTML`、`XDP`、`XML`、`XFD`、`PDF`。<br><br>**注意：**关于此参数值的附加说明：<ul><li>`PDF` 表示提交完整的 PDF 文档；在这种情况下，除 `cURL` 外的所有其他参数均被忽略。</li><li>需要保存权限（`:S:`）：除非文档具有保存权限，否则 Adobe Reader 中不提供 `PDF` 选项。</li><li>（版本 7.0）如果 `XML` 是此参数的值，则当前文档的表单数据将以 XML 格式提交，除非参数 `oXML`（7.0 版新增）包含有效的 XMLData 对象，在这种情况下将提交该对象。</li></ul>此参数优先于单独的格式参数；但是，它们的考虑优先级从高到低如下：`cSubmitAs`、`bPDF`、`bXML`、`bFDF`。 |
+| `bInclNMKey` | （可选，版本 6.0）当为 `true` 时，包含任何注释的 `"NM"` 键。默认值为 `false`。 |
+| `aPackets` | （可选，版本 6.0）一个字符串数组，指定在 XDP 提交中包含哪些数据包。可能的字符串有：<ul><li>`template`</li><li>`datasets`</li><li>`stylesheet`</li><li>`xfdf`</li><li>`sourceSet`</li><li>`pdf`</li><li>`config`</li><li>`*`</li></ul>此参数仅在 `cSubmitAs` 为 `XDP` 时适用。`pdf` 表示应嵌入 PDF；如果此处未包含 `pdf`，则 XDP 中仅包含对 PDF 的链接。`xfdf` 表示在 XDP 中包含注释（因为该数据包使用 XFDF 格式）。`*` 表示应将所有数据包包含在 XDP 中。`pdf` 的默认值是作为*引用*包含。要将 PDF 文件嵌入 XDP，需*显式*将 `pdf` 指定为其中一个数据包。**注意：**（需要保存权限 📌）：当从 Adobe Reader 提交文档为 `XDP` 且 `aPackets` 数组中明确列出 `pdf` 时，文档必须具有文档保存权限。（请阅读上文 `*` 的描述。）默认值为：`["datasets", "xfdf"]`。 |
+| `cCharset` | （可选，版本 6.0）提交值的编码。字符串值为：<ul><li>`utf-8`</li><li>`utf-16`</li><li>`Shift-JIS`</li><li>`BigFive`</li><li>`GBK`</li><li>`UHC`</li></ul>如果未传递，则适用当前 Acrobat 行为。对于基于 XML 的格式，使用 `utf-8`。对于其他格式，Acrobat 尝试为提交的值找到最佳主机编码。XFDF 提交忽略此值，始终使用 `utf-8`。 |
+| `oXML` | （可选，版本 7.0）此参数仅在 `cSubmitAs` 等于 `XML` 时适用。它应该是一个 [XMLData 对象](https://example.com)，该对象将被提交。 |
 
 ## Acrobat JavaScript 脚本参考
 
-Doc 方法
+### Doc 方法
 
-| cPermID | （可选，版本 7.0）指定在提交的 PDF 是 PDF 或 `bEmbedForm` 为 true 时分配给该 PDF 的永久 ID。此永久 ID 是 `doc.docID` 数组的第一个条目 (`doc.docID[0]`)。不影响当前文档。 |
-| --- | --- |
-| cInstID | （可选，版本 7.0）指定在提交的 PDF 是 PDF 或 `bEmbedForm` 为 true 时分配给该 PDF 的实例 ID。此实例 ID 是 `doc.docID` 数组的第二个条目 (`doc.docID[1]`)。不影响当前文档。 |
-| cUsageRights | （可选，版本 7.0）指定在提交的 PDF 是 PDF 或 `bEmbedForm` 为 true 时应用于该 PDF 的额外使用权限。唯一有效的值是 `submitFormUsageRights.RMA`。不影响当前文档。 |
+| 参数 | 描述 |
+|---|---|
+| `cPermID` | （可选，版本 7.0）指定在提交的 PDF 是 PDF 或 `bEmbedForm` 为 `true` 时分配给该 PDF 的永久 ID。此永久 ID 是 `doc.docID` 数组的第一个条目（`doc.docID[0]`）。不影响当前文档。 |
+| `cInstID` | （可选，版本 7.0）指定在提交的 PDF 是 PDF 或 `bEmbedForm` 为 `true` 时分配给该 PDF 的实例 ID。此实例 ID 是 `doc.docID` 数组的第二个条目（`doc.docID[1]`）。不影响当前文档。 |
+| `cUsageRights` | （可选，版本 7.0）指定在提交的 PDF 是 PDF 或 `bEmbedForm` 为 `true` 时应用于该 PDF 的额外使用权限。唯一有效的值是 `submitFormUsageRights.RMA`。不影响当前文档。 |
 
-### 返回值
+#### 返回值
 
 无
 
@@ -11390,14 +11847,14 @@ Doc 方法
 
 将表单提交到服务器。
 
-```
+```javascript
 this.submitForm("http://myserver/cgi-bin/myscript.cgi#FDF");
 ```
 
 ### 示例 2
 
-```
-var aSubmitFields = new Array( "name", "id", "score" );
+```javascript
+var aSubmitFields = new Array("name", "id", "score");
 this.submitForm({
     cURL: "http://myserver/cgi-bin/myscript.cgi#FDF",
     aFields: aSubmitFields,
@@ -11407,16 +11864,16 @@ this.submitForm({
 
 ### 示例 3
 
-此示例展示了提交整个子树的快捷方式。在 `field` 参数中传递 "name"，将提交 "name.title"、"name.first"、"name.middle" 和 "name.last"。
+此示例展示了提交整个子树的快捷方式。在 `field` 参数中传递 `"name"`，将提交 `"name.title"`、`"name.first"`、`"name.middle"` 和 `"name.last"`。
 
-```
+```javascript
 this.submitForm("http://myserver/cgi-bin/myscript.cgi#FDF",
     true, false, "name");
 ```
 
 ### 示例 4
 
-```
+```javascript
 this.submitForm({
     cURL: "http://myserver/cgi-bin/myscript.cgi#FDF",
     cSubmitAs: "XFDF"
@@ -11427,7 +11884,7 @@ this.submitForm({
 
 一个 PDF 文件包含多个作为附件的 XFA 表单，以下脚本从每个附件收集 XML 数据并将其连接起来，然后提交合并的数据。
 
-```
+```javascript
 var oParent = event.target;
 var oDataObjects = oParent.dataObjects;
 if (oDataObjects == null)
@@ -11451,13 +11908,13 @@ else {
 }
 ```
 
-此示例使用了 **doc.dataObjects**、**doc.openDataObject** 以及 **XFAObject 对象**的属性和方法。
+此示例使用了 `doc.dataObjects`、`doc.openDataObject` 以及 `XFAObject` 对象的属性和方法。
 
 ### 示例 6（版本 7.0）
 
-此脚本演示了 cPermID、cInstID 和 cUsageRights。
+此脚本演示了 `cPermID`、`cInstID` 和 `cUsageRights`。
 
-```
+```javascript
 this.submitForm({
     cUrl: myURL,
     cSubmitAs: "PDF",
@@ -11469,24 +11926,33 @@ this.submitForm({
 
 ### syncAnnotScan
 
-| 5.0 | | A | X |
+| 版本 | 类型 | 访问权限 | 说明 |
+|---|---|---|---|
+| 5.0 |  | A | X |
+
 保证在调用此方法返回时，所有注释都已被扫描。
+
 为了显示或处理整个文档的注释，必须先检测到所有注释。通常，后台任务会在空闲时间运行以检查每个页面并查找注释，因为此扫描过程耗时较长。即使在后台扫描尚未获取完整注释列表之前，许多注释行为也能优雅地工作。
+
 通常，如果您需要完整的注释列表，应调用此方法。
-另请参见 getAnnots。
+
+另请参见 `getAnnots`。
 
 **参数**
+
 无
 
 **返回值**
+
 无
 
 **示例**
+
 代码的第二行只有在 `syncAnnotScan` 返回后才会执行，而这要等到文档的注释扫描完成后才会发生。
 
-```
+```javascript
 this.syncAnnotScan();
-annots = this.getAnnots({nSortBy:ANSB_Author});
+annots = this.getAnnots({nSortBy: ANSB_Author});
 // 现在，对注释进行一些操作。
 ```
 
@@ -11498,52 +11964,52 @@ annots = this.getAnnots({nSortBy:ANSB_Author});
 
 #### canPlay
 
+| 版本 |  |  |  |  |
+|---|---|---|---|---|
 | 6.0 |  |  |  |  |
+
 `doc.media.canPlay` 属性指示文档是否允许多媒体播放。播放取决于用户的信任管理器偏好设置和其他因素。例如，在创作模式下不允许播放。
+
 `doc.media.canPlay` 返回一个对象，该对象包含一个是/否指示以及不允许播放时的原因（如果适用）。
-类型：对象        访问：R（只读）。
+
+类型：对象；访问：R（只读）。
 
 如果允许播放，则存在 `canPlay.yes` 来指示这一点。（它是一个空对象，但将来可能包含其他信息。）您可以进行如下简单测试：
 
-```
-if( doc.media.canPlay.yes )
-{
+```javascript
+if (doc.media.canPlay.yes) {
     // 我们可以播放此文档的多媒体
 }
 ```
 
-如果播放被禁止，则存在 **canPlay.no** 对象。与 **canPlay.yes** 一样，您可以简单地测试 **canPlay.no** 是否存在，也可以查看其内部信息以了解播放被禁止的原因。**canPlay.no** 内至少会存在以下属性之一，或将来可能添加的其他属性：
+如果播放被禁止，则存在 `canPlay.no` 对象。与 `canPlay.yes` 一样，您可以简单地测试 `canPlay.no` 是否存在，也可以查看其内部信息以了解播放被禁止的原因。`canPlay.no` 至少会存在以下属性之一，或将来可能添加的其他属性：
 
 #### canPlay.no 的属性
 
 | 属性 | 描述 |
-| :--- | :--- |
-| authoring | 在创作模式下无法播放 |
-| closing | 因文档正在关闭而无法播放 |
-| saving | 因文档正在保存而无法播放 |
-| security | 因安全设置而无法播放 |
-| other | 因其他原因而无法播放 |
+|---|---|
+| `authoring` | 在创作模式下无法播放 |
+| `closing` | 因文档正在关闭而无法播放 |
+| `saving` | 因文档正在保存而无法播放 |
+| `security` | 因安全设置而无法播放 |
+| `other` | 因其他原因而无法播放 |
 
-此外，**canPlay.canShowUI** 指示是否允许在此特定播放拒绝情况下显示警报框或其他用户界面。
+此外，`canPlay.canShowUI` 指示是否允许在此特定播放拒绝情况下显示警报框或其他用户界面。
 
-### 示例：
+### 示例
 
-```
+```javascript
 var canPlay = doc.media.canPlay;
-if( canPlay.no )
-{
+if (canPlay.no) {
     // 我们无法播放，原因是什么？
-    if( canPlay.no.security )
-    {
+    if (canPlay.no.security) {
         // 用户的安全设置禁止播放，
         // 我们现在可以显示警报吗？
-        if( canPlay.canShowUI )
-            app.alert( "Security prohibits playback" );
+        if (canPlay.canShowUI)
+            app.alert("Security prohibits playback");
         else
-            console.println( "Security prohibits playback" );
-    }
-    else
-    {
+            console.println("Security prohibits playback");
+    } else {
         // 因其他原因无法播放，在此处理
     }
 }
@@ -11553,70 +12019,96 @@ if( canPlay.no )
 
 #### deleteRendition
 
+| 版本 |  |  |  |  |
+|---|---|---|---|---|
 | 6.0 |  |  |  |  |
-**doc.media.deleteRendition()** 方法从文档中删除指定名称的 Rendition。该 Rendition 将不再能通过 JavaScript 访问。如果 Rendition 不存在，则不执行任何操作。
+
+`doc.media.deleteRendition()` 方法从文档中删除指定名称的 Rendition。该 Rendition 将不再能通过 JavaScript 访问。如果 Rendition 不存在，则不执行任何操作。
 
 **参数**
 
-| **cName** | **cName**，字符串，是 Rendition 的名称。 |
+| 参数 | 描述 |
+|---|---|
+| `cName` | `cName`，字符串，是 Rendition 的名称。 |
 
 **返回值**
+
 无
 
 **示例**
 
-```
+```javascript
 this.media.deleteRendition("myMedia");
-if ( this.media.getRendition("myMedia") == null)
-    console.println( "Rendition successfully deleted" );
+if (this.media.getRendition("myMedia") == null)
+    console.println("Rendition successfully deleted");
 ```
 
 #### getAnnot
 
+| 版本 |  |  |  |  |
+|---|---|---|---|---|
 | 6.0 |  |  |  |  |
-Doc.media.getAnnot() 通过页码以及名称或标题在文档中查找并返回一个 [ScreenAnnot 对象](https://example.com)，如果没有匹配的 ScreenAnnot，则返回 **null**。如果同时指定了名称和标题，则两者都必须匹配。
+
+`Doc.media.getAnnot()` 通过页码以及名称或标题在文档中查找并返回一个 [ScreenAnnot 对象](https://example.com)，如果没有匹配的 ScreenAnnot，则返回 `null`。如果同时指定了名称和标题，则两者都必须匹配。
 
 **参数**
 
-| **args** | 一个包含要传递给此方法的属性的对象。属性描述如下。 |
+| 参数 | 描述 |
+|---|---|
+| `args` | 一个包含要传递给此方法的属性的对象。属性描述如下。 |
 
 **args 的属性**
 
-| **nPage** | 注释所在的页码（从 0 开始） |
-| **cAnnotName** | （可选）ScreenAnnot 的名称。**注意**：在由 Acrobat 生成的 PDF 中，从不使用 **cAnnotName**。 |
-| **cAnnotTitle** | （可选）ScreenAnnot 的标题 |
+| 属性 | 描述 |
+|---|---|
+| `nPage` | 注释所在的页码（从 0 开始） |
+| `cAnnotName` | （可选）ScreenAnnot 的名称。**注意**：在由 Acrobat 生成的 PDF 中，从不使用 `cAnnotName`。 |
+| `cAnnotTitle` | （可选）ScreenAnnot 的标题 |
 
-**注意：** 此方法的参数必须作为对象字面量传递，而不能作为参数的有序列表传递。
+**注意：**此方法的参数必须作为对象字面量传递，而不能作为参数的有序列表传递。
 
 **返回值**
+
 [ScreenAnnot 对象](#)
 
 **示例**
+
 Acrobat 用户界面允许您指定 ScreenAnnot 的标题，但不允许指定其名称，因此 `getAnnot` 的典型用法如下：
+
 另请参见 [`getRendition()`](#) 后的示例以获取其他示例。
 
-```
-var annot= myDoc.media.getAnnot
-    ({ nPage: 0,cAnnotTitle: "My Annot Title" });
+```javascript
+var annot = myDoc.media.getAnnot({
+    nPage: 0,
+    cAnnotTitle: "My Annot Title"
+});
 ```
 
 #### getAnnots
 
+| 版本 |  |  |  |  |
+|---|---|---|---|---|
 | 6.0 |  |  |  |  |
+
 `doc.media.getAnnots()` 方法返回一个包含文档指定页面上所有 [ScreenAnnot 对象](#) 的数组，如果省略 `nPage`，则返回文档所有页面上的所有 [ScreenAnnot 对象](#)。如果没有这样的 ScreenAnnot，则数组为空。
 
 **参数**
 
-| nPage | 注释所在的页码（从 0 开始） |
+| 参数 | 描述 |
 |---|---|
+| `nPage` | 注释所在的页码（从 0 开始） |
 
 **返回值**
+
 [ScreenAnnot 对象](#) 数组
 
 **示例**
+
 获取第 0 页上的 ScreenAnnot 列表，然后从列表中随机选择一个 ScreenAnnot 并在其中播放媒体片段。
 
-```
+
+
+```javascript
 var annots = this.media.getAnnots({ nPage: 0 });
 var rendition = this.media.getRendition("myClip");
 var settings = { windowType: app.media.windowType.docked }
@@ -11626,9 +12118,8 @@ var args = { rendition:rendition, annot:annots[i], settings:settings };
 app.media.openPlayer( args );
 ```
 
-
-
 # Acrobat JavaScript 脚本参考
+
 ## Doc.media 对象方法
 
 ### getOpenPlayers
@@ -11637,19 +12128,19 @@ app.media.openPlayer( args );
 | :--- | :--- | :--- | :--- | :--- |
 | 7.0 | | | | |
 
-此方法返回一个**媒体播放器对象**数组，其中包含每个当前打开的媒体播放器。数组中的播放器按照它们被打开的顺序列出。使用此数组，可以操作部分或全部打开的播放器。例如，你可以停止或关闭文档已打开的所有播放器，而无需自己维护一个列表。
+此方法返回一个`媒体播放器对象`数组，其中包含每个当前打开的媒体播放器。数组中的播放器按照它们被打开的顺序列出。使用此数组，可以操作部分或全部打开的播放器。例如，你可以停止或关闭文档已打开的所有播放器，而无需自己维护一个列表。
 
-每次调用 `getOpenPlayers` 时，它都会返回数组的新副本，列出该时刻打开的播放器。随后打开的新播放器不会出现在已获取的数组中。如果数组中的某个播放器被关闭，该播放器对象仍保留在数组中，且 `player.isOpen` 变为 `false`。可以随时再次调用 `doc.media.getOpenPlayers()` 以获取新的、最新的播放器数组。
+每次调用`getOpenPlayers`时，它都会返回数组的新副本，列出该时刻打开的播放器。随后打开的新播放器不会出现在已获取的数组中。如果数组中的某个播放器被关闭，该播放器对象仍保留在数组中，且`player.isOpen`变为`false`。可以随时再次调用`doc.media.getOpenPlayers()`以获取新的、最新的播放器数组。
 
-不要编写直接迭代 `doc.media.getOpenPlayers` 的代码：
+不要编写直接迭代`doc.media.getOpenPlayers`的代码：
 
-```
+```javascript
 for( var i in doc.media.getOpenPlayers() ) // 错误！
 ```
 
 相反，应获取播放器数组的副本并对其进行迭代：
 
-```
+```javascript
 var players = doc.media.getOpenPlayers();
 for( var i in players ) {
     ...
@@ -11658,19 +12149,19 @@ for( var i in players ) {
 
 这确保即使在循环过程中打开或关闭了播放器，循环也能正常工作。
 
-### 参数
+#### 参数
 
 无
 
-### 返回值
+#### 返回值
 
-**媒体播放器对象**数组。
+`媒体播放器对象`数组。
 
-### 示例
+#### 示例
 
-以下两个函数接受一个 doc 对象作为参数，并操作与该 doc 对象关联的正在运行的播放器。
+以下两个函数接受一个`doc`对象作为参数，并操作与该`doc`对象关联的正在运行的播放器。
 
-```
+```javascript
 // 停止所有正在运行的播放器。
 function stopAllPlayers( doc ) {
     var players = doc.media.getOpenPlayers();
@@ -11684,31 +12175,29 @@ function closeAllPlayers( doc ) {
 }
 ```
 
-## Doc.media 对象方法
-
 ### getRendition
 
 | 版本 | | | |
 | :--- | :--- | :--- | :--- |
 | 6.0 | | | |
 
-`doc.media.getRendition()` 根据名称在文档中查找一个 Rendition 并返回它，如果不存在该名称的 Rendition 则返回 null。
+`doc.media.getRendition()`根据名称在文档中查找一个 Rendition 并返回它，如果不存在该名称的 Rendition 则返回 null。
 
-### 参数
+#### 参数
 
 | 参数 | 描述 |
 | :--- | :--- |
-| cName | cName，一个字符串，是 Rendition 的名称。 |
+| `cName` | `cName`，一个字符串，是 Rendition 的名称。 |
 
-### 返回值
+#### 返回值
 
-Rendition 对象
+Rendition 对象。
 
-### 示例
+#### 示例
 
 以下脚本从表单按钮的 mouse up 动作执行。它在 ScreenAnnot 中播放一个停靠的媒体剪辑。
 
-```
+```javascript
 app.media.openPlayer({
     rendition: this.media.getRendition( "myClip" ),
     annot: this.media.getAnnot( {nPage:0,cAnnotTitle:"myScreen"} ),
@@ -11722,55 +12211,55 @@ app.media.openPlayer({
 | :--- | :--- | :--- | :--- |
 | 6.0 | | | |
 
-`doc.media.newPlayer()` 方法创建并返回一个媒体播放器对象。args 参数必须包含一个 settings 属性，并且可以选择性地包含一个 events 属性。它还可以包含任意数量的附加用户定义属性。args 的所有属性都会被复制到新的媒体播放器对象中。这是一个浅拷贝：args 的属性被复制到新的播放器中，但如果这些属性中任何一个本身是对象，则这些对象在 args 和新播放器之间共享。
+`doc.media.newPlayer()`方法创建并返回一个媒体播放器对象。`args`参数必须包含一个`settings`属性，并且可以选择性地包含一个`events`属性。它还可以包含任意数量的附加用户定义属性。`args`的所有属性都会被复制到新的媒体播放器对象中。这是一个浅拷贝：`args`的属性被复制到新的播放器中，但如果这些属性中任何一个本身是对象，则这些对象在`args`和新播放器之间共享。
 
-newPlayer() 方法创建一个没有任何标准事件监听器的精简播放器，而这些监听器是标准 Acrobat 媒体播放器行为所必需的。使用 `app.media.addStockEvents()` 来添加必要的事件监听器。
+`newPlayer()`方法创建一个没有任何标准事件监听器的精简播放器，而这些监听器是标准 Acrobat 媒体播放器行为所必需的。使用`app.media.addStockEvents()`来添加必要的事件监听器。
 
-在大多数情况下，最好使用 `app.media.createPlayer()` 来创建媒体播放器，而不是 `doc.media.newPlayer()`。createPlayer() 会自动设置标准事件监听器和其他播放器属性。如果你直接调用 newPlayer()，应查阅 media.js 中 createPlayer() 的源代码以获取示例代码。
+在大多数情况下，最好使用`app.media.createPlayer()`来创建媒体播放器，而不是`doc.media.newPlayer()`。`createPlayer()`会自动设置标准事件监听器和其他播放器属性。如果你直接调用`newPlayer()`，应查阅`media.js`中`createPlayer()`的源代码以获取示例代码。
 
-### 参数
+#### 参数
 
 | 参数 | 描述 |
 | :--- | :--- |
-| args | args 是一个 PlayerArgs 对象。请参见 PlayerArgs 对象。 |
+| `args` | `args`是一个 PlayerArgs 对象。请参见 PlayerArgs 对象。 |
 
-### 返回值
+#### 返回值
 
-媒体播放器对象
+媒体播放器对象。
 
-### 示例：
+#### 示例
 
-一个粗略的示例请参见 `Events.dispatch()`。
+一个粗略的示例请参见`Events.dispatch()`。
 
 ## 错误对象
 
-当 Acrobat JavaScript 中实现的方法或属性抛出异常时，会动态创建 **Error** 对象。核心 JavaScript 可能抛出几个 **Error** 对象的子类（**EvalError**、**RangeError**、**SyntaxError**、**TypeError**、**ReferenceError**、**URIError**）。它们都以 **Error** 对象为原型。Acrobat JavaScript 可以抛出其中一些异常，或者根据需要实现 **Error** 对象的子类。如果你的脚本使用 `try/catch` 错误处理机制，抛出的对象应该是下表列出的类型之一。
+当 Acrobat JavaScript 中实现的方法或属性抛出异常时，会动态创建`Error`对象。核心 JavaScript 可能抛出几个`Error`对象的子类（`EvalError`、`RangeError`、`SyntaxError`、`TypeError`、`ReferenceError`、`URIError`）。它们都以`Error`对象为原型。Acrobat JavaScript 可以抛出其中一些异常，或者根据需要实现`Error`对象的子类。如果你的脚本使用`try/catch`错误处理机制，抛出的对象应该是下表列出的类型之一。
 
 | 错误对象 | 简要描述 |
 | :--- | :--- |
-| **RangeError** | 参数值超出有效范围 |
-| **TypeError** | 参数值类型错误 |
-| **ReferenceError** | 读取不存在的变量 |
-| **MissingArgError** | 缺少必需参数 |
-| **NumberOfArgsError** | 方法的参数数量无效 |
-| **InvalidSetError** | 属性设置无效或不可能 |
-| **InvalidGetError** | 属性获取无效或不可能 |
-| **OutOfMemoryError** | 发生内存不足情况 |
-| **NotSupportedError** | 此配置中不支持的功能（例如，阅读器） |
-| **NotSupportedHFTError** | HFT 不可用（可能缺少插件） |
-| **NotAllowedError** | 出于安全原因，不允许使用方法或属性 |
-| **GeneralError** | 未指定错误原因 |
-| **RaiseError** | Acrobat 内部错误 |
-| **DeadObjectError** | 对象已失效 |
-| **HelpError** | 用户请求有关某个方法的帮助 |
+| `RangeError` | 参数值超出有效范围 |
+| `TypeError` | 参数值类型错误 |
+| `ReferenceError` | 读取不存在的变量 |
+| `MissingArgError` | 缺少必需参数 |
+| `NumberOfArgsError` | 方法的参数数量无效 |
+| `InvalidSetError` | 属性设置无效或不可能 |
+| `InvalidGetError` | 属性获取无效或不可能 |
+| `OutOfMemoryError` | 发生内存不足情况 |
+| `NotSupportedError` | 此配置中不支持的功能（例如，阅读器） |
+| `NotSupportedHFTError` | HFT 不可用（可能缺少插件） |
+| `NotAllowedError` | 出于安全原因，不允许使用方法或属性 |
+| `GeneralError` | 未指定错误原因 |
+| `RaiseError` | Acrobat 内部错误 |
+| `DeadObjectError` | 对象已失效 |
+| `HelpError` | 用户请求有关某个方法的帮助 |
 
-Acrobat JavaScript 实现的 **Error** 对象类型从核心 **Error** 对象继承属性和方法。一些 Acrobat JavaScript 对象可能实现自己特定类型的异常。**Error** 子类的描述（如有附加的方法和属性）应在特定对象的文档中提供。
+Acrobat JavaScript 实现的`Error`对象类型从核心`Error`对象继承属性和方法。一些 Acrobat JavaScript 对象可能实现自己特定类型的异常。`Error`子类的描述（如有附加的方法和属性）应在特定对象的文档中提供。
 
 ### 示例
 
-将 **Error** 对象的所有属性打印到控制台。
+将`Error`对象的所有属性打印到控制台。
 
-```
+```javascript
 try {
     app.alert(); // alert 需要一个参数
 } catch(e) {
@@ -11788,7 +12277,9 @@ try {
 | 6.0 | | | |
 
 导致异常抛出的脚本名称。
+
 类型：字符串
+
 访问：R。
 
 ### lineNumber
@@ -11798,7 +12289,9 @@ try {
 | 6.0 | | | |
 
 JavaScript 代码中抛出异常的行号。
+
 类型：整数
+
 访问：R。
 
 ### extMessage
@@ -11808,19 +12301,25 @@ JavaScript 代码中抛出异常的行号。
 | 7.0 | | | |
 
 提供有关异常的附加详细信息的消息。
+
 类型：字符串
+
 访问：R。
 
 ### message
 
 提供有关异常的详细信息的错误消息。
+
 类型：字符串
+
 访问：R。
 
 ### name
 
 错误对象子类的名称，指示错误对象实例的类型。
+
 类型：字符串
+
 访问：R/W。
 
 ## 错误方法
@@ -11829,15 +12328,18 @@ JavaScript 代码中抛出异常的行号。
 
 获取提供有关异常详细信息的错误消息。
 
-**参数**
+#### 参数
+
 无
 
-**返回值**
-错误消息字符串。（参见 message。）
+#### 返回值
+
+错误消息字符串。（参见`message`。）
 
 ## 事件对象
 
 所有 JavaScript 的执行都是特定事件的结果。每个事件都有一个类型和一个名称。此处详述的事件以类型/名称对的形式列出。
+
 对于这些事件中的每一个，Acrobat JavaScript 都会创建一个事件对象。在每个事件发生期间，你可以访问此事件对象以获取，并可能操纵关于事件当前状态的信息。
 
 对于 JavaScript 编写者来说，了解这些事件何时发生以及它们的处理顺序非常重要。某些方法或属性只能在特定事件期间访问；因此，了解这些事件将非常有用。
@@ -11846,9 +12348,11 @@ JavaScript 代码中抛出异常的行号。
 
 ### App/Init
 
-当查看器启动时，会发生*应用程序初始化事件*。称为**文件夹级别 JavaScript** 的脚本文件从应用程序和用户 JavaScript 文件夹中读入。它们按以下顺序加载：`config.js`、`glob.js`、所有其他文件，然后是任何用户文件。
-此事件为 **event** 对象定义 **name** 和 **type** 属性。
-此事件不监听 `rc` 返回码。
+当查看器启动时，会发生*应用程序初始化事件*。称为`文件夹级别 JavaScript`的脚本文件从应用程序和用户 JavaScript 文件夹中读入。它们按以下顺序加载：`config.js`、`glob.js`、所有其他文件，然后是任何用户文件。
+
+此事件为`event`对象定义`name`和`type`属性。
+
+此事件不监听`rc`返回码。
 
 ### Batch/Exec
 
@@ -11857,8 +12361,10 @@ JavaScript 代码中抛出异常的行号。
 | 5.0 | | | | |
 
 批处理事件发生在批处理序列处理每个文档期间。作为批处理序列一部分编写的 JavaScript 在执行时可以访问事件对象。
-此事件为 **event** 对象定义 **name**、**target** 和 **type** 属性。此事件中的 **target** 是文档对象。
-此事件监听 `rc` 返回码。如果返回码设置为 **false**，则停止批处理序列。
+
+此事件为`event`对象定义`name`、`target`和`type`属性。此事件中的`target`是文档对象。
+
+此事件监听`rc`返回码。如果返回码设置为`false`，则停止批处理序列。
 
 ### Bookmark/Mouse Up
 
@@ -11867,8 +12373,10 @@ JavaScript 代码中抛出异常的行号。
 | 5.0 | | | | |
 
 每当用户点击执行 JavaScript 的书签时，此事件发生。
-此事件为事件对象定义 **name**、**target** 和 **type** 属性。此事件中的 **target** 是被点击的书签对象。
-此事件不监听 `rc` 返回码。
+
+此事件为事件对象定义`name`、`target`和`type`属性。此事件中的`target`是被点击的书签对象。
+
+此事件不监听`rc`返回码。
 
 ### Console/Exec
 
@@ -11877,10 +12385,10 @@ JavaScript 代码中抛出异常的行号。
 | 5.0 | | | | |
 
 每当用户在控制台中执行 JavaScript 时，控制台事件发生。
-此事件为事件对象定义 **name** 和 **type** 属性。
-此事件不监听 `rc` 返回码。
 
+此事件为事件对象定义`name`和`type`属性。
 
+此事件不监听`rc`返回码。
 
 # Acrobat JavaScript 脚本参考
 
@@ -11890,156 +12398,137 @@ JavaScript 代码中抛出异常的行号。
 
 | 5.0 | | | |
 
-此事件在文档打印后触发。此事件为事件对象定义了 **name**、**target** 和 **type** 属性。此事件中的 **target** 是文档对象。此事件不监听 **rc** 返回码。
+此事件在文档打印后触发。此事件为事件对象定义了`name`、`target`和`type`属性。此事件中的`target`是文档对象。此事件不监听`rc`返回码。
 
 ### Doc/DidSave
 
 | 5.0 | | | |
 
-此事件在文档保存后触发。此事件为事件对象定义了 **name**、**target** 和 **type** 属性。此事件中的 **target** 是文档对象。此事件不监听 **rc** 返回码。
+此事件在文档保存后触发。此事件为事件对象定义了`name`、`target`和`type`属性。此事件中的`target`是文档对象。此事件不监听`rc`返回码。
 
 ### Doc/Open
 
 | 4.0 | | | |
 
-此事件在文档打开时触发。当文档打开时，系统会扫描文档级脚本函数，并执行任何暴露的脚本。此事件为事件对象定义了 **name**、**target**、**targetName** 和 **type** 属性。此事件中的 **target** 是文档对象。此事件不监听 **rc** 返回码。
+此事件在文档打开时触发。当文档打开时，系统会扫描文档级脚本函数，并执行任何暴露的脚本。此事件为事件对象定义了`name`、`target`、`targetName`和`type`属性。此事件中的`target`是文档对象。此事件不监听`rc`返回码。
 
 ### Doc/WillClose
 
 | 5.0 | | | |
 
-此事件在文档关闭前触发。此事件为事件对象定义了 **name**、**target** 和 **type** 属性。此事件中的 **target** 是文档对象。此事件不监听 **rc** 返回码。
+此事件在文档关闭前触发。此事件为事件对象定义了`name`、`target`和`type`属性。此事件中的`target`是文档对象。此事件不监听`rc`返回码。
 
 ### Doc/WillPrint
 
 | 5.0 | | | |
 
-此事件在文档打印前触发。此事件为事件对象定义了 **name**、**target** 和 **type** 属性。此事件中的 **target** 是文档对象。此事件不监听 **rc** 返回码。
+此事件在文档打印前触发。此事件为事件对象定义了`name`、`target`和`type`属性。此事件中的`target`是文档对象。此事件不监听`rc`返回码。
 
 ### Doc/WillSave
 
-此事件在文档保存前触发。此事件为事件对象定义了 **name**、**target** 和 **type** 属性。此事件中的 **target** 是文档对象。此事件不监听 **rc** 返回码。
+此事件在文档保存前触发。此事件为事件对象定义了`name`、`target`和`type`属性。此事件中的`target`是文档对象。此事件不监听`rc`返回码。
 
 ### External/Exec
 
-此事件是外部访问的结果，例如通过 OLE、AppleScript 或加载 FDF 文件。此事件为事件对象定义了 **name** 和 **type** 属性。此事件不监听 **rc** 返回码。
+此事件是外部访问的结果，例如通过 OLE、AppleScript 或加载 FDF 文件。此事件为事件对象定义了`name`和`type`属性。此事件不监听`rc`返回码。
 
 ### Field/Blur
 
-**blur**（失焦）事件在所有其他事件之后发生，就在字段失去焦点时触发。无论是否使用鼠标点击来停用字段（例如，使用 Tab 键），都会生成此事件。此事件为事件对象定义了 **modifier**、**name**、**shift**、**target**、**targetName**、**type** 和 **value** 属性。此事件中的 **target** 是正在执行其验证脚本的字段。此事件不监听 **rc** 返回码。
+`blur`（失焦）事件在所有其他事件之后发生，就在字段失去焦点时触发。无论是否使用鼠标点击来停用字段（例如，使用 Tab 键），都会生成此事件。此事件为事件对象定义了`modifier`、`name`、`shift`、`target`、`targetName`、`type`和`value`属性。此事件中的`target`是正在执行其验证脚本的字段。此事件不监听`rc`返回码。
 
 ### Field/Calculate
 
-当表单中的更改需要执行所有附加了计算脚本的字段时，会定义此事件。所有依赖于已更改字段值的字段现在将被重新计算。这些字段可能依次生成额外的 Field/Validate、Field/Blur 和 Field/Focus 事件。计算字段可能依赖于其他计算字段，这些字段的值必须事先确定。**计算顺序数组**包含文档中所有附加了计算脚本的字段的有序列表。当需要完整计算时，将依次计算数组中的每个字段，从数组的零索引开始，按顺序一直到数组末尾。要更改字段的计算顺序，请在 Adobe Acrobat 中使用 **“高级”>“表单”>“设置字段计算顺序...”** 菜单项。此事件为事件对象定义了 **name**、**source**、**target**、**targetName**、**type** 和 **value** 属性。此事件中的 **target** 是正在执行其计算脚本的字段。
+当表单中的更改需要执行所有附加了计算脚本的字段时，会定义此事件。所有依赖于已更改字段值的字段现在将被重新计算。这些字段可能依次生成额外的 Field/Validate、Field/Blur 和 Field/Focus 事件。计算字段可能依赖于其他计算字段，这些字段的值必须事先确定。`计算顺序数组`包含文档中所有附加了计算脚本的字段的有序列表。当需要完整计算时，将依次计算数组中的每个字段，从数组的零索引开始，按顺序一直到数组末尾。要更改字段的计算顺序，请在 Adobe Acrobat 中使用`“高级”>“表单”>“设置字段计算顺序...”`菜单项。此事件为事件对象定义了`name`、`source`、`target`、`targetName`、`type`和`value`属性。此事件中的`target`是正在执行其计算脚本的字段。
 
-此事件确实会监听 **rc** 返回码。如果返回码设置为 **false**，则字段的值不会更改。如果为 true，则字段将采用 **value** 中找到的值。
+此事件确实会监听`rc`返回码。如果返回码设置为`false`，则字段的值不会更改。如果为 true，则字段将采用`value`中找到的值。
 
 ### Field/Focus
 
 | 4.05 | | | |
 
-**focus**（焦点）事件在鼠标按下后、鼠标释放前，在字段获得焦点时发生。无论是否使用鼠标点击来激活字段（例如，使用 Tab 键），都会调用此例程，这是在用户可以与字段交互之前执行必要处理的最佳位置。
+`focus`（焦点）事件在鼠标按下后、鼠标释放前，在字段获得焦点时发生。无论是否使用鼠标点击来激活字段（例如，使用 Tab 键），都会调用此例程，这是在用户可以与字段交互之前执行必要处理的最佳位置。
 
-此事件为事件对象定义了 **modifier**、**name**、**shift**、**target**、**targetName**、**type** 和 **value** 属性。此事件中的 **target** 是正在执行其验证脚本的字段。
+此事件为事件对象定义了`modifier`、`name`、`shift`、`target`、`targetName`、`type`和`value`属性。此事件中的`target`是正在执行其验证脚本的字段。
 
-此事件不监听 **rc** 返回码。
+此事件不监听`rc`返回码。
 
 ### Field/Format
 
 | 3.01 | | | |
 
-一旦所有相关的计算都已执行完毕，就会触发 **format**（格式）事件。此事件允许附加的 JavaScript 更改数据值向用户显示的方式（也称为其表示形式或外观）。例如，如果数据值是数字，并且其应显示的上下文是货币，则格式化脚本可以在值前面添加美元符号（$）并将其限制为小数点后两位。
+一旦所有相关的计算都已执行完毕，就会触发`format`（格式）事件。此事件允许附加的 JavaScript 更改数据值向用户显示的方式（也称为其表示形式或外观）。例如，如果数据值是数字，并且其应显示的上下文是货币，则格式化脚本可以在值前面添加美元符号（$）并将其限制为小数点后两位。
 
-此事件为事件对象定义了 **commitKey**、**name**、**target**、**targetName**、**type**、**value** 和 **willCommit** 属性。此事件中的 **target** 是正在执行其格式化脚本的字段。
+此事件为事件对象定义了`commitKey`、`name`、`target`、`targetName`、`type`、`value`和`willCommit`属性。此事件中的`target`是正在执行其格式化脚本的字段。
 
-此事件不监听 **rc** 返回码。但是，生成的 **value** 将用作字段的格式化外观。
+此事件不监听`rc`返回码。但是，生成的`value`将用作字段的格式化外观。
 
 ### Field/Keystroke
 
-| 3.01 | | | |
 
-每当用户在 **文本框** 或 **组合框** 中键入按键（包括剪切和粘贴操作），或在 **组合框** 下拉菜单或 **列表框** 字段中选择项目时，就会发生 **keystroke**（击键）事件。击键脚本可能希望限制允许的按键类型。例如，数字字段可能只允许数字字符。
 
-Acrobat 的用户界面允许作者为列表框指定 **“选择更改”** 脚本。每次选择项目时都会触发该脚本。这被实现为击键事件，其中击键值等同于用户选择。此行为也适用于组合框——可以将“击键”视为将从下拉列表中选择的值粘贴到文本字段中。
+每当用户在`文本框`或`组合框`中键入按键（包括剪切和粘贴操作），或在`组合框`下拉菜单或`列表框`字段中选择项目时，就会发生`keystroke`（击键）事件。击键脚本可能希望限制允许的按键类型。例如，数字字段可能只允许数字字符。
 
-在触发验证事件之前，会最后一次调用击键脚本。此调用将事件的 **willCommit** 设置为 **true**。在击键处理中，有时在提交字段值之前进行最终检查（提交前检查）非常有用。这允许脚本编写者优雅地处理特别复杂的格式，而这些格式只能在每次击键时进行部分检查。
+Acrobat 的用户界面允许作者为列表框指定`“选择更改”`脚本。每次选择项目时都会触发该脚本。这被实现为击键事件，其中击键值等同于用户选择。此行为也适用于组合框——可以将“击键”视为将从下拉列表中选择的值粘贴到文本字段中。
 
-文本字段的 **keystroke** 事件不仅在用户通过键盘输入文本或提交字段值时被调用。它也会在通过 UI 或 JavaScript 设置字段默认值时，以及验证自动填充提供的条目时被调用。在这些情况下，并非所有事件属性都已定义。具体来说，在验证默认值时，**event.target** 将为 **undefined**，而在验证自动填充条目时，**event.richChange** 和 **event.richValue** 将为 **undefined**。
+在触发验证事件之前，会最后一次调用击键脚本。此调用将事件的`willCommit`设置为`true`。在击键处理中，有时在提交字段值之前进行最终检查（提交前检查）非常有用。这允许脚本编写者优雅地处理特别复杂的格式，而这些格式只能在每次击键时进行部分检查。
 
-此事件为事件对象定义了 **commitKey**、**change**、**changeEx**、**keyDown**、**modifier**、**name**、**selEnd**、**selStart**、**shift**、**target**（验证默认值时除外）、**targetName**、**type**、**value** 和 **willCommit** 属性。此事件中的 **target** 是正在执行其击键脚本的字段。
+文本字段的`keystroke`事件不仅在用户通过键盘输入文本或提交字段值时被调用。它也会在通过 UI 或 JavaScript 设置字段默认值时，以及验证自动填充提供的条目时被调用。在这些情况下，并非所有事件属性都已定义。具体来说，在验证默认值时，`event.target`将为`undefined`，而在验证自动填充条目时，`event.richChange`和`event.richValue`将为`undefined`。
 
-此事件确实会监听 **rc** 返回码。如果设置为 **false**，则忽略击键。如果脚本希望替换击键代码，则生成的 **change** 将用作击键。结果的 **selEnd** 和 **selStart** 属性可以更改字段中的当前文本选择。
+此事件为事件对象定义了`commitKey`、`change`、`changeEx`、`keyDown`、`modifier`、`name`、`selEnd`、`selStart`、`shift`、`target`（验证默认值时除外）、`targetName`、`type`、`value`和`willCommit`属性。此事件中的`target`是正在执行其击键脚本的字段。
+
+此事件确实会监听`rc`返回码。如果设置为`false`，则忽略击键。如果脚本希望替换击键代码，则生成的`change`将用作击键。结果的`selEnd`和`selStart`属性可以更改字段中的当前文本选择。
 
 ### Field/Mouse Down
 
-| 3.01 | | | |
+当用户开始点击表单字段且鼠标按钮仍然按下时，会触发`mouse down`（鼠标按下）事件。建议在此事件期间执行非常少的处理（例如，播放一个短促的声音）。除非已经发生了`mouse enter`（鼠标移入）事件，否则不会发生鼠标按下事件。
 
-当用户开始点击表单字段且鼠标按钮仍然按下时，会触发 **mouse down**（鼠标按下）事件。建议在此事件期间执行非常少的处理（例如，播放一个短促的声音）。除非已经发生了 **mouse enter**（鼠标移入）事件，否则不会发生鼠标按下事件。
+此事件为事件对象定义了`modifier`、`name`、`shift`、`target`、`targetName`和`type`属性。此事件中的`target`是正在执行其验证脚本的字段。
 
-此事件为事件对象定义了 **modifier**、**name**、**shift**、**target**、**targetName** 和 **type** 属性。此事件中的 **target** 是正在执行其验证脚本的字段。
-
-此事件不监听 **rc** 返回码。
+此事件不监听`rc`返回码。
 
 ### Field/Mouse Enter
 
-| 3.01 | | | |
+当用户将鼠标指针移入字段的矩形区域内时，会触发`mouse enter`（鼠标移入）事件。这是打开文本字段以显示帮助文本等的典型位置。
 
-当用户将鼠标指针移入字段的矩形区域内时，会触发 **mouse enter**（鼠标移入）事件。这是打开文本字段以显示帮助文本等的典型位置。
+此事件为事件对象定义了`modifier`、`name`、`shift`、`target`、`targetName`和`type`属性。此事件中的`target`是正在执行其验证脚本的字段。
 
-此事件为事件对象定义了 **modifier**、**name**、**shift**、**target**、**targetName** 和 **type** 属性。此事件中的 **target** 是正在执行其验证脚本的字段。
-
-
-
-## Acrobat JavaScript 脚本参考
-事件对象
-
-此事件不监听 `rc` 返回码。
+此事件不监听`rc`返回码。
 
 ## 字段/鼠标移出
 
-| 3.01 | | | |
+`鼠标移出`事件与`鼠标移入`事件相反，当用户将鼠标指针移出字段矩形区域时发生。除非`鼠标移入`事件已经发生，否则`鼠标移出`事件不会触发。
 
-**鼠标移出**事件与**鼠标移入**事件相反，当用户将鼠标指针移出字段矩形区域时发生。除非**鼠标移入**事件已经发生，否则**鼠标移出**事件不会触发。
+此事件为事件对象定义了`modifier`、`name`、`shift`、`target`、`targetName`和`type`属性。此事件中的`target`是正在执行其验证脚本的字段。
 
-此事件为事件对象定义了 **modifier**、**name**、**shift**、**target**、**targetName** 和 **type** 属性。此事件中的 **target** 是正在执行其验证脚本的字段。
-
-此事件不监听 `rc` 返回码。
+此事件不监听`rc`返回码。
 
 ## 字段/鼠标释放
 
-| 3.01 | | | |
+当用户在表单字段上点击并释放鼠标按钮时，`鼠标释放`事件被触发。这是附加诸如表单提交操作等例程的典型位置。除非`鼠标按下`事件已经发生，否则`鼠标释放`事件不会触发。
 
-当用户在表单字段上点击并释放鼠标按钮时，**鼠标释放**事件被触发。这是附加诸如表单提交操作等例程的典型位置。除非**鼠标按下**事件已经发生，否则**鼠标释放**事件不会触发。
+此事件为事件对象定义了`modifier`、`name`、`shift`、`target`、`targetName`和`type`属性。此事件中的`target`是正在执行其验证脚本的字段。
 
-此事件为事件对象定义了 **modifier**、**name**、**shift**、**target**、**targetName** 和 **type** 属性。此事件中的 **target** 是正在执行其验证脚本的字段。
-
-此事件不监听 `rc` 返回码。
+此事件不监听`rc`返回码。
 
 ## 字段/验证
 
-| 3.01 | | | |
+无论字段类型如何，用户与字段的交互都可能为该字段产生一个新值。在用户点击字段外部、按 Tab 键切换到另一个字段或按下回车键之后，用户即`提交`了新的数据值。
 
-无论字段类型如何，用户与字段的交互都可能为该字段产生一个新值。在用户点击字段外部、按 Tab 键切换到另一个字段或按下回车键之后，用户即**提交**了新的数据值。
+`验证`事件是值提交后为字段生成的第一个事件，以便 JavaScript 可以验证输入的值是否正确。如果验证事件成功，下一个触发的事件是`计算`事件。
 
-**验证**事件是值提交后为字段生成的第一个事件，以便 JavaScript 可以验证输入的值是否正确。如果验证事件成功，下一个触发的事件是**计算**事件。
+此事件为事件对象定义了`change`、`changeEx`、`keyDown`、`modifier`、`name`、`shift`、`target`、`targetName`、`type`和`value`属性。此事件中的`target`是正在执行其验证脚本的字段。
 
-此事件为事件对象定义了 **change**、**changeEx**、**keyDown**、**modifier**、**name**、**shift**、**target**、**targetName**、**type** 和 **value** 属性。此事件中的 **target** 是正在执行其验证脚本的字段。
-
-此事件确实监听 `rc` 返回码。如果返回码被设置为 **false**，则字段值被视为无效，并且字段的值保持不变。
+此事件确实监听`rc`返回码。如果返回码被设置为`false`，则字段值被视为无效，并且字段的值保持不变。
 
 ## 链接/鼠标释放
 
-| 5.0 | | | |
-
 当用户激活包含 JavaScript 动作的链接时，此事件被触发。
 
-此事件为事件对象定义了 `name`、`target` 和 `type` 属性。此事件中的 `target` 是文档对象。
+此事件为事件对象定义了`name`、`target`和`type`属性。此事件中的`target`是文档对象。
 
-此事件不监听 `rc` 返回码。
+此事件不监听`rc`返回码。
 
 ## 菜单/执行
-
-| 5.0 | | | |
 
 当附加到菜单项的 JavaScript 被执行时，就会发生菜单事件。在 Acrobat 5.0 中，用户可以添加一个菜单项并将其与 JavaScript 动作关联。例如，
 
@@ -12048,143 +12537,117 @@ app.addMenuItem({ cName: "Hello", cParent: "File",
     cExec: "app.alert('Hello',3);", nPos: 0});
 ```
 
-脚本 `app.alert('Hello',3)` 将在 `menu` 事件期间执行。有两种方式可以触发此执行：
+脚本`app.alert('Hello',3)`将在`menu`事件期间执行。有两种方式可以触发此执行：
 
 1.  通过用户界面，用户可以点击该菜单项，脚本将执行；以及
-2.  通过编程方式，当执行 `app.execMenuItem("Hello")` 时（例如，在按钮字段的鼠标释放事件期间），脚本将执行。
 
-此事件为事件对象定义了 `name`、`target`、`targetName` 和 `type` 属性。此事件中的 `target` 是当前活动的文档（如果有一个文档打开）。
+2.  通过编程方式，当执行`app.execMenuItem("Hello")`时（例如，在按钮字段的鼠标释放事件期间），脚本将执行。
 
-此事件监听菜单项的启用和标记过程的 `rc` 返回码。（请参阅 `app.addMenuItem` 的 `cEnabled` 和 `cMarked` 参数。）`false` 的返回码将禁用或取消标记菜单项。`true` 的返回码将启用或标记菜单项。
+此事件为事件对象定义了`name`、`target`、`targetName`和`type`属性。此事件中的`target`是当前活动的文档（如果有一个文档打开）。
+
+此事件监听菜单项的启用和标记过程的`rc`返回码。（请参阅`app.addMenuItem`的`cEnabled`和`cMarked`参数。）`false`的返回码将禁用或取消标记菜单项。`true`的返回码将启用或标记菜单项。
 
 ## 页面/打开
 
-| 4.05 | | | |
-
 每当用户查看一个新页面并且页面绘制完成后，此事件就会发生。
 
-此事件为事件对象定义了 `name`、`target` 和 `type` 属性。此事件中的 `target` 是文档对象。
+此事件为事件对象定义了`name`、`target`和`type`属性。此事件中的`target`是文档对象。
 
-此事件不监听 `rc` 返回码。
+此事件不监听`rc`返回码。
 
 ## 页面/关闭
 
-| 4.05 | | | |
-
 每当正在查看的页面不再是当前页面时，此事件就会发生；也就是说，用户切换到了新页面或关闭了文档。
 
-此事件为事件对象定义了 `name`、`target` 和 `type` 属性。此事件中的 `target` 是文档对象。
+此事件为事件对象定义了`name`、`target`和`type`属性。此事件中的`target`是文档对象。
 
-此事件不监听 `rc` 返回码。
+此事件不监听`rc`返回码。
 
 ## 屏幕/进入视图
 
-| 6.0 | | | |
-
 每当新页面首次进入用户视野时，此事件就会发生。当页面布局设置为“连续”或“连续 - 对开”时，此事件在 Screen/Open 事件之前发生。
 
-此事件为事件对象定义了 `modifier`、`name`、`shift`、`target`、`targetName` 和 `type` 属性。此事件中的 `target` 是触发此事件的 ScreenAnnot（参见 [ScreenAnnot 对象](link)），`targetName` 是 ScreenAnnot 的标题。
+此事件为事件对象定义了`modifier`、`name`、`shift`、`target`、`targetName`和`type`属性。此事件中的`target`是触发此事件的 ScreenAnnot（参见 [ScreenAnnot 对象](link)），`targetName`是 ScreenAnnot 的标题。
 
-此事件不监听 `rc` 返回码。
+此事件不监听`rc`返回码。
 
 ## 屏幕/离开视图
 
-| 6.0 | | | |
-
 每当页面首次离开用户视野时，此事件就会发生。当页面布局设置为“连续”或“连续 - 对开”时，此事件在 Screen/Close 事件之后发生。
 
-此事件为事件对象定义了 `modifier`、`name`、`shift`、`target`、`targetName` 和 `type` 属性。此事件中的 `target` 是触发此事件的 ScreenAnnot（参见 [ScreenAnnot 对象](link)），`targetName` 是 ScreenAnnot 的标题。
+此事件为事件对象定义了`modifier`、`name`、`shift`、`target`、`targetName`和`type`属性。此事件中的`target`是触发此事件的 ScreenAnnot（参见 [ScreenAnnot 对象](link)），`targetName`是 ScreenAnnot 的标题。
 
-此事件不监听 `rc` 返回码。
+此事件不监听`rc`返回码。
 
 ## 屏幕/打开
 
-| 6.0 | | | |
-
 每当用户查看一个新页面并且页面绘制完成后，此事件就会发生。
 
-此事件为事件对象定义了 `modifier`、`name`、`shift`、`target`、`targetName` 和 `type` 属性。此事件中的 `target` 是触发此事件的 ScreenAnnot（参见 [ScreenAnnot 对象](link)），`targetName` 是 ScreenAnnot 的标题。
+此事件为事件对象定义了`modifier`、`name`、`shift`、`target`、`targetName`和`type`属性。此事件中的`target`是触发此事件的 ScreenAnnot（参见 [ScreenAnnot 对象](link)），`targetName`是 ScreenAnnot 的标题。
 
-此事件不监听 `rc` 返回码。
+此事件不监听`rc`返回码。
 
 ## 屏幕/关闭
 
-| 6.0 | | | |
-
 每当正在查看的页面不再是当前页面时，此事件就会发生；也就是说，用户切换到了新页面或关闭了文档。
 
-此事件为事件对象定义了 `modifier`、`name`、`shift`、`target`、`targetName` 和 `type` 属性。此事件中的 `target` 是触发此事件的 ScreenAnnot（参见 [ScreenAnnot 对象](link)），`targetName` 是 ScreenAnnot 的标题。
+此事件为事件对象定义了`modifier`、`name`、`shift`、`target`、`targetName`和`type`属性。此事件中的`target`是触发此事件的 ScreenAnnot（参见 [ScreenAnnot 对象](link)），`targetName`是 ScreenAnnot 的标题。
 
-此事件不监听 `rc` 返回码。
+此事件不监听`rc`返回码。
 
 ## 屏幕/焦点
 
-| 6.0 | | | |
+`焦点`事件在鼠标按下之后、鼠标释放之前发生，此时字段获得焦点。无论是否使用鼠标点击来激活 ScreenAnnot（例如，Tab 键），都会调用此例程，这是执行必须在用户与字段交互之前完成的处理的最佳位置。
 
-**焦点**事件在鼠标按下之后、鼠标释放之前发生，此时字段获得焦点。无论是否使用鼠标点击来激活 ScreenAnnot（例如，Tab 键），都会调用此例程，这是执行必须在用户与字段交互之前完成的处理的最佳位置。
+此事件为事件对象定义了`modifier`、`name`、`shift`、`target`、`targetName`和`type`属性。此事件中的`target`是触发此事件的 ScreenAnnot（参见 [ScreenAnnot 对象](http://example.com)），`targetName`是 ScreenAnnot 的标题。
 
-此事件为事件对象定义了 `modifier`、`name`、`shift`、`target`、`targetName` 和 `type` 属性。此事件中的 `target` 是触发此事件的 ScreenAnnot（参见 [ScreenAnnot 对象](http://example.com)），`targetName` 是 ScreenAnnot 的标题。
-
-此事件不监听 `rc` 返回码。
+此事件不监听`rc`返回码。
 
 ## 屏幕/失焦
 
-| 6.0 | | | |
+`失焦`事件在所有其他事件之后发生，就在 ScreenAnnot 失去焦点时。无论是否使用鼠标点击来停用 ScreenAnnot（例如，Tab 键），都会生成此事件。
 
-**失焦**事件在所有其他事件之后发生，就在 ScreenAnnot 失去焦点时。无论是否使用鼠标点击来停用 ScreenAnnot（例如，Tab 键），都会生成此事件。
+此事件为事件对象定义了`modifier`、`name`、`shift`、`target`、`targetName`和`type`属性。此事件中的`target`是触发此事件的 ScreenAnnot（参见 [ScreenAnnot 对象](http://example.com)），`targetName`是 ScreenAnnot 的标题。
 
-此事件为事件对象定义了 `modifier`、`name`、`shift`、`target`、`targetName` 和 `type` 属性。此事件中的 `target` 是触发此事件的 ScreenAnnot（参见 [ScreenAnnot 对象](http://example.com)），`targetName` 是 ScreenAnnot 的标题。
-
-此事件不监听 `rc` 返回码。
+此事件不监听`rc`返回码。
 
 ## 屏幕/鼠标释放
 
-| 6.0 | | | |
+当用户在 ScreenAnnot 上点击并释放鼠标按钮时，`鼠标释放`事件被触发。这是附加诸如启动多媒体剪辑等例程的典型位置。除非`鼠标按下`事件已经发生，否则`鼠标释放`事件不会触发。
 
-当用户在 ScreenAnnot 上点击并释放鼠标按钮时，**鼠标释放**事件被触发。这是附加诸如启动多媒体剪辑等例程的典型位置。除非**鼠标按下**事件已经发生，否则**鼠标释放**事件不会触发。
+此事件为事件对象定义了`modifier`、`name`、`shift`、`target`、`targetName`和`type`属性。此事件中的`target`是触发此事件的 ScreenAnnot（参见 [ScreenAnnot 对象](http://example.com)），`targetName`是 ScreenAnnot 的标题。
 
-此事件为事件对象定义了 `modifier`、`name`、`shift`、`target`、`targetName` 和 `type` 属性。此事件中的 `target` 是触发此事件的 ScreenAnnot（参见 [ScreenAnnot 对象](http://example.com)），`targetName` 是 ScreenAnnot 的标题。
-
-此事件不监听 `rc` 返回码。
+此事件不监听`rc`返回码。
 
 ## 屏幕/鼠标按下
 
-| 6.0 | | | |
+当用户开始点击 ScreenAnnot 并且鼠标按钮仍然按住时，`鼠标按下`事件被触发。建议您在此事件期间执行非常少的处理（例如，播放一段短声音）。除非`鼠标移入`事件已经发生，否则鼠标按下事件不会触发。
 
-当用户开始点击 ScreenAnnot 并且鼠标按钮仍然按住时，**鼠标按下**事件被触发。建议您在此事件期间执行非常少的处理（例如，播放一段短声音）。除非**鼠标移入**事件已经发生，否则鼠标按下事件不会触发。
+## 事件对象
 
-
-
-## Acrobat JavaScript 脚本参考
-### 事件对象
-
-此事件为事件对象定义了 `modifier`、`name`、`shift`、`target`、`targetName` 和 `type` 属性。此事件中的 `target` 是触发该事件的 ScreenAnnot（参见 ScreenAnnot 对象），`targetName` 是 ScreenAnnot 的标题。此事件不监听 `rc` 返回码。
+此事件为事件对象定义了`modifier`、`name`、`shift`、`target`、`targetName`和`type`属性。此事件中的`target`是触发该事件的 ScreenAnnot（参见 ScreenAnnot 对象），`targetName`是 ScreenAnnot 的标题。此事件不监听`rc`返回码。
 
 ### 屏幕/鼠标移入
 
-| 6.0 |  |  |  |
+当用户将鼠标指针移入 ScreenAnnot 的矩形区域内时，会触发`mouse enter`（鼠标移入）事件。
 
-当用户将鼠标指针移入 ScreenAnnot 的矩形区域内时，会触发 `mouse enter`（鼠标移入）事件。
+此事件为事件对象定义了`modifier`、`name`、`shift`、`target`、`targetName`和`type`属性。此事件中的`target`是触发该事件的 ScreenAnnot（参见 ScreenAnnot 对象），`targetName`是 ScreenAnnot 的标题。
 
-此事件为事件对象定义了 `modifier`、`name`、`shift`、`target`、`targetName` 和 `type` 属性。此事件中的 `target` 是触发该事件的 ScreenAnnot（参见 ScreenAnnot 对象），`targetName` 是 ScreenAnnot 的标题。
-
-此事件不监听 `rc` 返回码。
+此事件不监听`rc`返回码。
 
 ### 屏幕/鼠标移出
 
-| 6.0 |  |  |  |
+`mouse exit`（鼠标移出）事件与`mouse enter`事件相反，当用户将鼠标指针移出 ScreenAnnot 的矩形区域时发生。除非已发生`mouse enter`事件，否则不会发生`mouse exit`事件。
 
-`mouse exit`（鼠标移出）事件与 `mouse enter` 事件相反，当用户将鼠标指针移出 ScreenAnnot 的矩形区域时发生。除非已发生 `mouse enter` 事件，否则不会发生 `mouse exit` 事件。
+此事件为事件对象定义了`modifier`、`name`、`shift`、`target`、`targetName`和`type`属性。此事件中的`target`是触发该事件的 ScreenAnnot（参见 ScreenAnnot 对象），`targetName`是 ScreenAnnot 的标题。
 
-此事件为事件对象定义了 `modifier`、`name`、`shift`、`target`、`targetName` 和 `type` 属性。此事件中的 `target` 是触发该事件的 ScreenAnnot（参见 ScreenAnnot 对象），`targetName` 是 ScreenAnnot 的标题。
-
-此事件不监听 `rc` 返回码。
+此事件不监听`rc`返回码。
 
 ### 文档事件处理
 
-当文档被打开时，会发生 `Doc/Open` 事件；系统会扫描函数，并执行任何公开的（顶层）脚本。接下来，如果 PDF 文件的 `AcroForm` 字典中的 `NeedAppearances` 键设置为 `true`，则会执行文档中所有表单字段的格式化脚本。（参见 PDF 参考手册的第 3.6.1 节和第 7.6.1 节。）最后，会发生 `Page/Close` 事件。
+当文档被打开时，会发生`Doc/Open`事件；系统会扫描函数，并执行任何公开的（顶层）脚本。接下来，如果 PDF 文件的`AcroForm`字典中的`NeedAppearances`键设置为`true`，则会执行文档中所有表单字段的格式化脚本。（参见 PDF 参考手册的第 3.6.1 节和第 7.6.1 节。）最后，会发生`Page/Close`事件。
 
-> 注意：对于创建包含表单字段且将 `NeedAppearances` 键设置为 `true` 的 PDF 文件的用户，在将此类文件发布到网络上之前，请务必执行“另存为”操作。对文件执行“另存为”会生成表单外观，并将其与文件一起保存。这可以提高 Reader 在 Web 浏览器中加载文件时的性能。
+> 注意：对于创建包含表单字段且将`NeedAppearances`键设置为`true`的 PDF 文件的用户，在将此类文件发布到网络上之前，请务必执行“另存为”操作。对文件执行“另存为”会生成表单外观，并将其与文件一起保存。这可以提高 Reader 在 Web 浏览器中加载文件时的性能。
 
 ### 表单事件处理
 
@@ -12207,37 +12670,39 @@ app.addMenuItem({ cName: "Hello", cParent: "File",
 
 ### 事件属性
 
-由标准多媒体事件分派器分派的多媒体事件对象还包含以下属性。如果您提供了自己的 **events.dispatch()** 方法，则这些属性不存在：
+由标准多媒体事件分派器分派的多媒体事件对象还包含以下属性。如果您提供了自己的`events.dispatch()`方法，则这些属性不存在：
 
 | 属性 | 描述 |
 | :--- | :--- |
-| media.doc | 文档，与 target.doc 相同 |
-| media.events | 事件对象，与 target.events 相同 |
-| media.id | event.name 的副本，移除了空格 |
+| `media.doc` | 文档，与`target.doc`相同 |
+| `media.events` | 事件对象，与`target.events`相同 |
+| `media.id` | `event.name`的副本，移除了空格 |
 
 单个事件可能具有其他属性；有关详细信息，请参阅每个 EventListener 对象方法的描述。
 
 被标准事件分派器调用的事件方法可以设置以下任一属性以停止进一步的事件分派：
 
--   stopDispatch
--   stopAllDispatch
+-   `stopDispatch`
+-   `stopAllDispatch`
 
-要停止当前事件被分派给任何剩余的事件监听器，事件方法可以将 **event.stopDispatch** 设置为 **true**。如果在“on”事件方法中执行此操作，则不会再为该事件调用其他“on”方法，但仍会调用“after”方法。如果设置 **event.stopAllDispatch**，则不会再调用任何类型的事件方法。请阅读关于 EventListener 对象以了解“on”和“after”事件监听器的描述。
+要停止当前事件被分派给任何剩余的事件监听器，事件方法可以将`event.stopDispatch`设置为`true`。如果在“on”事件方法中执行此操作，则不会再为该事件调用其他“on”方法，但仍会调用“after”方法。如果设置`event.stopAllDispatch`，则不会再调用任何类型的事件方法。请阅读关于 EventListener 对象以了解“on”和“after”事件监听器的描述。
 
 ### change
 
-| 3.01 | | | |
-| :--- | :--- | :--- | :--- |
+| 属性 | 描述 |
+| :--- | :--- |
+
+
 
 指定用户刚刚键入的值的更改。这是可替换的，以便如果 JavaScript 希望替换某些字符，它可以这样做。更改可以采取单个击键的形式，也可以是一串字符（例如，如果执行了粘贴到字段中的操作）。
 
-*类型:* String &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *访问权限:* R/W。
+类型：`String`　访问权限：R/W。
 
 ### 示例
 
 将所有击键更改为大写。
 
-```
+```javascript
 // 文本字段的自定义击键
 event.change = event.change.toUpperCase();
 ```
@@ -12247,23 +12712,23 @@ event.change = event.change.toUpperCase();
 | 5.0 |  |  |  |
 |---|---|---|---|
 
-包含更改的导出值，仅在 **listbox** 和 **combobox** 的 [Field/Keystroke](event) 期间可用。
+包含更改的导出值，仅在 `listbox` 和 `combobox` 的 [Field/Keystroke](event) 期间可用。
 
-对于 **listbox**，击键脚本（如果有）在属性对话框的 **Selection Change**（选择更改）选项卡下输入。
+对于 `listbox`，击键脚本（如果有）在属性对话框的 **Selection Change**（选择更改）选项卡下输入。
 
-对于 **combobox**，只有在使用组合框的弹出部分时，即正在从弹出部分进行选择（使用鼠标或键盘）时，**changeEx** 才可用。如果组合框是可编辑的并且用户键入了条目，则 [Field/Keystroke](event) 的行为与 **text** 字段相同（即，没有 **changeEx** 或 **keyDown** 事件属性）。
+对于 `combobox`，只有在使用组合框的弹出部分时，即正在从弹出部分进行选择（使用鼠标或键盘）时，`changeEx` 才可用。如果组合框是可编辑的并且用户键入了条目，则 [Field/Keystroke](event) 的行为与 `text` 字段相同（即，没有 `changeEx` 或 `keyDown` 事件属性）。
 
-从 Acrobat 6.0 开始，为文本字段定义了 **event.changeEx**。当 **event.fieldFull** 为 true 时，**changeEx** 设置为用户尝试输入的整个文本字符串，而 **event.change** 是被裁剪以适应字段内内容的文本字符串。使用 **event.richChangeEx**（和 **event.richChange**）处理富文本字段。
+从 Acrobat 6.0 开始，为文本字段定义了 `event.changeEx`。当 `event.fieldFull` 为 `true` 时，`changeEx` 设置为用户尝试输入的整个文本字符串，而 `event.change` 是被裁剪以适应字段内内容的文本字符串。使用 `event.richChangeEx`（和 `event.richChange`）处理富文本字段。
 
-类型：various 访问权限：R。
+类型：`various`　访问权限：R。
 
 ### 示例 1
 
-此示例说明了 **combobox**、**event.changeEx** 和 **app.launchURL**。该示例说明了一个简单的 html 在线帮助文件系统。
+此示例说明了 `combobox`、`event.changeEx` 和 `app.launchURL`。该示例说明了一个简单的 HTML 在线帮助文件系统。
 
-下面是一个 **combobox**，它以编程方式描述。
+下面是一个 `combobox`，它以编程方式描述。
 
-```
+```javascript
 var c = this.addField({
     cName: "myHelp",
     cFieldType: "combobox",
@@ -12272,9 +12737,9 @@ var c = this.addField({
 })
 ```
 
-现在设置 **combobox** 中的项目。
+现在设置 `combobox` 中的项目。
 
-```
+```javascript
 c.setItems([
     ["Online Help", "http://www.myhelp.com/myhelp.html"],
     ["How to Print", "http://www.myhelp.com/myhelp.html#print"],
@@ -12284,13 +12749,13 @@ c.setItems([
 
 设置操作。
 
-```
+```javascript
 c.setAction("Keystroke", "getHelp()");
 ```
 
 此函数在文档级别定义。
 
-```
+```javascript
 function getHelp() {
     if ( !event.willCommit && (event.changeEx != "") )
         app.launchURL(event.changeEx);
@@ -12303,49 +12768,50 @@ function getHelp() {
 
 ### commitKey
 
-| 4.0 |  |  |  |
+| 4.0 |  |  | |
+|---|---|---|---|
 
 确定表单字段如何失去焦点。值为：
-0：值未被提交（例如，按下了 escape 键）。
-1：值已提交，因为在字段外使用鼠标点击。
-2：值已提交，因为按下了 enter 键。
-3：值通过 tab 键切换到新字段而提交。
 
-类型：Number 访问权限：R。
+- 0：值未被提交（例如，按下了 Escape 键）。
+- 1：值已提交，因为在字段外使用鼠标点击。
+- 2：值已提交，因为按下了 Enter 键。
+- 3：值通过 Tab 键切换到新字段而提交。
+
+类型：`Number`　访问权限：R。
 
 ### 示例
 
 要在字段被提交后自动显示警告对话框，请将以下内容添加到字段的格式脚本中：
 
-```
+```javascript
 if (event.commitKey != 0)
     app.alert("Thank you for your new field value.");
 ```
 
 ### fieldFull
 
-| 6.0 |  |  |  |
+| 6.0 |  |  | |
+|---|---|---|---|
 
 仅在文本字段的击键事件中可用。当用户尝试输入不适合字段的文本时（由于空间限制（属性 `Field.doNotScroll` 设置为 `true`）或最大字符数限制（属性 `Field.charLimit` 设置为正数值）），设置为 `true`。当 `fieldFull` 为 `true` 时，`event.changeEx` 设置为用户尝试输入的整个文本字符串，而 `event.change` 是被裁剪以适应字段内内容的文本字符串。
 
-类型：Boolean 访问权限：R 事件：Keystroke。
+类型：`Boolean`　访问权限：R　事件：`Keystroke`。
 
 ### 示例 1
 
 下面是一个自定义击键脚本的示例，用于一个具有字符限制的文本字段。然后该字段被填满，或者如果用户提交了输入的数据，焦点将移动到另一个字段。
 
-```
+```javascript
 if ( event.fieldFull || event.willCommit )
     this.getField("NextTabField").setFocus();
 ```
 
-
-
-## 示例 2
+### 示例 2
 
 测试用户是否已填满文本字段。这是文本字段的自定义击键脚本。最初，该字段被设置为文本不滚动。
 
-```
+```javascript
 if ( event.fieldFull )
 {
     app.alert("You've filled the given space with text,"
@@ -12362,72 +12828,78 @@ if ( event.fieldFull )
 
 ## keyDown
 
-仅在**列表框**和**组合框**的击键事件期间可用。对于**列表框**或**组合框**的弹出部分，如果使用箭头键进行选择，则该值为 **true**，否则为 **false**。
+仅在 `列表框` 和 `组合框` 的击键事件期间可用。对于 `列表框` 或 `组合框` 的弹出部分，如果使用箭头键进行选择，则该值为 `true`，否则为 `false`。
 
-对于**组合框**，只有当使用其弹出部分时，**keyDown** 才可用，即正在从弹出部分进行选择（使用鼠标或键盘）。如果组合框可编辑且用户输入一个条目，则字段/击键事件的行为与**文本**字段相同（即没有 **changeEx** 或 **keyDown** 事件属性）。
+对于 `组合框`，只有当使用其弹出部分时，`keyDown` 才可用，即正在从弹出部分进行选择（使用鼠标或键盘）。如果组合框可编辑且用户输入一个条目，则字段/击键事件的行为与 `文本` 字段相同（即没有 `changeEx` 或 `keyDown` 事件属性）。
 
-类型：布尔值 访问：只读。
+类型：布尔值　访问：只读。
 
 ## modifier
 
-在特定事件期间修饰键是否被按下。在 Microsoft Windows 平台上，修饰键是 **Control**，在 Macintosh 平台上是 **Option** 或 **Command**。UNIX 上不支持 **modifier**。
+在特定事件期间修饰键是否被按下。在 Microsoft Windows 平台上，修饰键是 `Control`，在 Macintosh 平台上是 `Option` 或 `Command`。UNIX 上不支持 `modifier`。
 
-类型：布尔值 访问：只读。
+类型：布尔值　访问：只读。
 
 # Acrobat JavaScript 脚本参考
-事件属性
 
-## name
+## 事件属性
+
+### name
 
 | 4.05 | | | |
 | :--- | :--- | :--- | :--- |
 
-当前事件的名称，作为文本字符串。**type** 和 name 共同唯一标识事件。有效的名称是：
+当前事件的名称，作为文本字符串。`type` 和 `name` 共同唯一标识事件。有效的名称是：
 
-Keystroke、Mouse Exit
-Validate、WillPrint
-Focus、DidPrint
-Blur、WillSave
-Format、DidSave
-Calculate、Init
-Mouse Up、Exec
-Mouse Down、Open
-Mouse Enter、Close
+- `Keystroke`、`Mouse Exit`
+- `Validate`、`WillPrint`
+- `Focus`、`DidPrint`
+- `Blur`、`WillSave`
+- `Format`、`DidSave`
+- `Calculate`、`Init`
+- `Mouse Up`、`Exec`
+- `Mouse Down`、`Open`
+- `Mouse Enter`、`Close`
 
 类型：字符串
+
 访问：只读
+
 事件：所有。
 
-## rc
+### rc
 
 | 3.01 | | | |
 | :--- | :--- | :--- | :--- |
 
-用于验证。指示事件链中的特定事件是否应该成功。设置为 **false** 可防止更改发生或值被提交。默认情况下 **rc** 为 **true**。
+用于验证。指示事件链中的特定事件是否应该成功。设置为 `false` 可防止更改发生或值被提交。默认情况下 `rc` 为 `true`。
 
 类型：布尔值
-访问：读/写
-事件：**Keystroke**、**Validate**、**Menu**。
 
-## richChange
+访问：读/写
+
+事件：`Keystroke`、`Validate`、`Menu`。
+
+### richChange
 
 | 6.0 | | | |
 | :--- | :--- | :--- | :--- |
 
-指定用户刚刚键入的值更改。**richChange** 属性仅为富文本字段定义，其行为与 **event.change** 属性类似。**richChange** 的值是一个**Span 对象**数组，这些对象既指定了输入到字段中的文本，也指定了格式。击键表示为单成员数组，而粘贴到字段中的富文本表示为任意长度的数组。
+指定用户刚刚键入的值更改。`richChange` 属性仅为富文本字段定义，其行为与 `event.change` 属性类似。`richChange` 的值是一个 `Span 对象`数组，这些对象既指定了输入到字段中的文本，也指定了格式。击键表示为单成员数组，而粘贴到字段中的富文本表示为任意长度的数组。
 
-当 **event.fieldFull** 为 **true** 时，**richChangeEx** 被设置为用户尝试输入的整个富格式文本字符串，而 **event.richChange** 是被裁剪为适合字段部分的富格式文本字符串。使用 **event.changeEx**（和 **event.change**）处理（纯）文本字段。
+当 `event.fieldFull` 为 `true` 时，`richChangeEx` 被设置为用户尝试输入的整个富格式文本字符串，而 `event.richChange` 是被裁剪为适合字段部分的富格式文本字符串。使用 `event.changeEx`（和 `event.change`）处理（纯）文本字段。
 
-类型：**Span 对象**数组 访问：读/写
-事件：**Keystroke**。
+类型：`Span 对象`数组　访问：读/写
 
-相关的对象和属性有 Span Object、field.defaultStyle、field.richText、field.richValue、event.richValue 和 annot.richContents。
+事件：`Keystroke`。
 
-### 示例
+相关的对象和属性有 Span Object、`field.defaultStyle`、`field.richText`、`field.richValue`、`event.richValue` 和 `annot.richContents`。
+
+#### 示例
 
 此示例将击键更改为大写，交替将文本颜色设为蓝色和红色，并切换下划线的开关状态。
 
-```
+```javascript
 // Custom Keystroke event for text rich field.
 var span = event.richChange;
 for ( var i=0; i<span.length; i++)
@@ -12439,24 +12911,24 @@ for ( var i=0; i<span.length; i++)
 event.richChange = span;
 ```
 
-## richChangeEx
+### richChangeEx
 
 | 6.0 | | | |
 | :--- | :--- | :--- | :--- |
 
-**richChangeEx** 属性仅为富文本字段定义，其行为与文本字段的 **event.changeEx** 属性类似。**richChangeEx** 的值是一个 Span 对象数组，这些对象既指定了输入到字段中的文本，也指定了格式。击键表示为单成员数组，而粘贴到字段中的富文本表示为任意长度的数组。
+`richChangeEx` 属性仅为富文本字段定义，其行为与文本字段的 `event.changeEx` 属性类似。`richChangeEx` 的值是一个 Span 对象数组，这些对象既指定了输入到字段中的文本，也指定了格式。击键表示为单成员数组，而粘贴到字段中的富文本表示为任意长度的数组。
 
-当 **event.fieldFull** 为 **true** 时，**richChangeEx** 被设置为用户尝试输入的整个富格式文本字符串，而 **event.richChange** 是被裁剪为适合字段部分的富格式文本字符串。使用 **event.changeEx**（和 **event.change**）处理（纯）文本字段。
+当 `event.fieldFull` 为 `true` 时，`richChangeEx` 被设置为用户尝试输入的整个富格式文本字符串，而 `event.richChange` 是被裁剪为适合字段部分的富格式文本字符串。使用 `event.changeEx`（和 `event.change`）处理（纯）文本字段。
 
-类型：Span 对象数组 访问：读/写 事件：Keystroke。
+类型：Span 对象数组　访问：读/写　事件：`Keystroke`。
 
-相关的对象和属性有 Span Object、field.defaultStyle、field.richText、field.richValue、event.richChange、event.richValue 和 annot.richContents。
+相关的对象和属性有 Span Object、`field.defaultStyle`、`field.richText`、`field.richValue`、`event.richChange`、`event.richValue` 和 `annot.richContents`。
 
-### 示例
+#### 示例
 
 如果文本字段已被用户填满，通过设置字段为滚动来允许附加文本。
 
-```
+```javascript
 if ( event.fieldFull )
 {
     app.alert("You've filled the given space with text,"
@@ -12472,24 +12944,24 @@ if ( event.fieldFull )
 }
 ```
 
-另请参阅 **event.fieldFull**。
+另请参阅 `event.fieldFull`。
 
-## richValue
+### richValue
 
 | 6.0 | | | |
 | :--- | :--- | :--- | :--- |
 
-此属性反映了字段的 **field.richValue** 属性和每个事件的 **event.value** 属性。
+此属性反映了字段的 `field.richValue` 属性和每个事件的 `event.value` 属性。
 
-类型：Span 对象数组 访问：读/写 事件：Keystroke。
+类型：Span 对象数组　访问：读/写　事件：`Keystroke`。
 
-相关的对象和属性有 *Span Object*、**field.defaultStyle**、**field.richText**、**field.richValue**、**event.richChange**、**event.richChangeEx** 和 **annot.richContents**。
+相关的对象和属性有 *Span Object*、`field.defaultStyle`、`field.richText`、`field.richValue`、`event.richChange`、`event.richChangeEx` 和 `annot.richContents`。
 
-### 示例
+#### 示例
 
 此示例将所有粗体文本转换为红色带下划线的文本。
 
-```
+```javascript
 // Custom Format event for a rich text field.
 var spans = event.richValue;
 for ( var i = 0; i < spans.length; i++ )
@@ -12504,20 +12976,20 @@ for ( var i = 0; i < spans.length; i++ )
 event.richValue = spans;
 ```
 
-## selEnd
+### selEnd
 
 | 3.01 | | | |
 | :--- | :--- | :--- | :--- |
 
 在击键事件期间，当前文本选择的结束位置。
 
-类型：整数 访问：读/写。
+类型：整数　访问：读/写。
 
-### 示例
+#### 示例
 
-这是从应用程序 JavaScripts 文件夹中的 AForms.js 文件获取的函数 **AFMergeChange**。此函数将（文本字段的）最后一次更改与未提交的更改合并。此函数同时使用 **selEnd** 和 **selStart**。
+这是从应用程序 JavaScripts 文件夹中的 AForms.js 文件获取的函数 `AFMergeChange`。此函数将（文本字段的）最后一次更改与未提交的更改合并。此函数同时使用 `selEnd` 和 `selStart`。
 
-```
+```javascript
 function AFMergeChange(event)
 {
     var prefix, postfix;
@@ -12534,33 +13006,33 @@ function AFMergeChange(event)
 }
 ```
 
-## selStart
+### selStart
 
 | 3.01 | | | |
 | :--- | :--- | :--- | :--- |
 
 在击键事件期间，当前文本选择的起始位置。
 
-类型：整数 访问：读/写。
+类型：整数　访问：读/写。
 
-### 示例
+#### 示例
 
-请参阅 **selEnd** 之后的示例。
+请参阅 `selEnd` 之后的示例。
 
-## shift
+### shift
 
 | 3.01 | | | |
 | :--- | :--- | :--- | :--- |
 
 在特定事件期间 Shift 键是否被按下。
 
-类型：布尔值 访问：只读。
+类型：布尔值　访问：只读。
 
-### 示例
+#### 示例
 
 以下是鼠标弹起按钮操作。
 
-```
+```javascript
 if (event.shift)
     this.gotoNamedDest("dest2");
 else
@@ -12568,55 +13040,57 @@ else
 ```
 
 # Acrobat JavaScript 脚本参考
-事件属性
 
-## source
+## 事件属性
+
+### source
 
 | 5.0 | | | |
 | :--- | :--- | :--- | :--- |
 
 触发计算事件的字段对象。这通常与事件的目标（即正在计算的字段）不同。
 
-类型：对象 访问：只读。
+类型：对象　访问：只读。
 
-## target
+### target
 
 | 3.01 | | | |
 | :--- | :--- | :--- | :--- |
 
 触发事件的目标对象。在所有鼠标、焦点、模糊、计算、验证和格式事件中，它是触发事件的字段对象。在其他事件中，例如页面打开和关闭，它是文档对象或此对象。
 
-类型：对象 访问：只读。
+类型：对象　访问：只读。
 
-## targetName
+### targetName
 
 | 5.0 | | | |
 | :--- | :--- | :--- | :--- |
 
-尝试返回正在执行的 JavaScript 的名称。可用于调试目的，以帮助更好地识别导致抛出异常的代码。targetName 的常见值包括：
+尝试返回正在执行的 JavaScript 的名称。可用于调试目的，以帮助更好地识别导致抛出异常的代码。`targetName` 的常见值包括：
+
+
 
 - 对于 App/Init 事件，是文件夹级脚本文件名；
 - 对于 Doc/Open 事件，是文档级脚本名称；
 - 对于 Batch/Exec 事件，是正在处理的 PDF 文件名；
-- 对于 Field/Blur、Field/Calculate、Field/Focus、Field/Format、Field/Keystroke、Field/Mouse Down、Field/Mouse Enter、Field/Mouse Exit、Field/Mouse Up 和 Field/Validate 事件，是字段名称。
+- 对于 Field/Blur、Field/Calculate、Field/Focus、Field/Format、Field/Keystroke、Field/Mouse Down、Field/Mouse Enter、Field/Mouse Exit、Field/Mouse Up 和 Field/Validate 事件，是字段名称；
 - 对于 Menu/Exec 事件，是菜单项名称。
 
-如果存在可识别的名称，Acrobat EScript 在抛出异常时会报告 targetName。
+如果存在可识别的名称，Acrobat EScript 在抛出异常时会报告`targetName`。
 
-类型：字符串 访问：只读。
+类型：字符串；访问：只读。
 
 ### 示例
 
-文件夹级 JavaScript 文件 conserve.js 的第一行有一个错误，当 Acrobat Viewer 启动时，会抛出一个异常。标准消息清楚地揭示了问题的根源。
+文件夹级 JavaScript 文件`conserve.js`的第一行有一个错误，当 Acrobat Viewer 启动时，会抛出一个异常。标准消息清楚地揭示了问题的根源。
 
 ```
 MissingArgError: Missing required argument.
 ```
 
+## App.alert:1：文件夹级：App：conserve.js
 
-
-## App.alert:1:文件夹级:App:conserve.js
-==> 参数 cMsg。
+==> 参数`cMsg`。
 
 ## type
 
@@ -12636,19 +13110,20 @@ MissingArgError: Missing required argument.
 - Field
 - Menu
 
-*类型:* 字符串                *访问权限:* R。
+类型：字符串；访问权限：R。
 
 ## value
 
 | 3.01 | | | |
 | :--- | :--- | :--- | :--- |
 
-此属性对不同的**字段**事件具有不同含义。
+此属性对不同的字段事件具有不同含义。
 
 ### 字段/验证事件
 
 对于字段/验证事件，这是字段提交时所包含的值。
-对于组合框，这是显示值，而非导出值（有关导出值，请参见 changeEx）。
+
+对于组合框，这是显示值，而非导出值（有关导出值，请参见`changeEx`）。
 
 ### 示例
 
@@ -12668,7 +13143,7 @@ if (event.value < 0 || event.value > 100) {
 
 ### 示例
 
-例如，以下 JavaScript 将字段的计算值设置为 SubTotal 字段的值加上税金。
+例如，以下 JavaScript 将字段的计算值设置为`SubTotal`字段的值加上税金。
 
 ```
 var f = this.getField("SubTotal");
@@ -12677,7 +13152,7 @@ event.value = f.value * 1.0725;
 
 ### 字段/格式事件
 
-对于字段/格式事件，JavaScript 应设置此属性。这是生成字段外观时使用的值。默认情况下，它包含用户提交的值。对于组合框，这是显示值，而非导出值（有关导出值，请参见 changeEx）。
+对于字段/格式事件，JavaScript 应设置此属性。这是生成字段外观时使用的值。默认情况下，它包含用户提交的值。对于组合框，这是显示值，而非导出值（有关导出值，请参见`changeEx`）。
 
 ### 示例
 
@@ -12693,19 +13168,20 @@ event.value = util.printf("$%.2f", event.value);
 
 ### 字段/失去焦点和字段/获得焦点事件
 
-字段的当前值。在这两个事件期间，`event.value` 是只读的，即不能通过设置 `event.value` 来更改字段值。
-从 Acrobat 5.0 开始，对于允许多选的列表框（参见 `field.multipleSelection`），如果字段值是数组（即当前有多个选项被选中），则 `event.value` 在获取时返回空字符串，并且不接受设置。
+字段的当前值。在这两个事件期间，`event.value`是只读的，即不能通过设置`event.value`来更改字段值。
 
-*类型:* 各种          *访问权限:* R/W。
+从 Acrobat 5.0 开始，对于允许多选的列表框（参见`field.multipleSelection`），如果字段值是数组（即当前有多个选项被选中），则`event.value`在获取时返回空字符串，并且不接受设置。
+
+类型：各种；访问权限：R/W。
 
 ## willCommit
 
 | 3.01 | | | |
 | :--- | :--- | :--- | :--- |
 
-在数据提交前验证当前的击键事件。这对于检查目标表单字段值很有用，例如，验证输入的是字符数据而非数字数据。JavaScript 在最后一个击键事件之后、字段验证之前将此属性设置为 `true`。
+在数据提交前验证当前的击键事件。这对于检查目标表单字段值很有用，例如，验证输入的是字符数据而非数字数据。JavaScript 在最后一个击键事件之后、字段验证之前将此属性设置为`true`。
 
-*类型:* 布尔值          *访问权限:* R。
+类型：布尔值；访问权限：R。
 
 ### 示例
 
@@ -12721,9 +13197,10 @@ else
 
 ## Events 对象
 
-多媒体 Events 对象（其构造函数为 `app.media.Events`）是事件监听器对象的集合。[MediaPlayer 对象](https://help.adobe.com/en_US/acrobat/acrobat_dc_sdk/2015/faq_sdk/faq_sdk.html#pdfjs_api_media_player)或 [ScreenAnnot 对象](https://help.adobe.com/en_US/acrobat/acrobat_dc_sdk/2015/faq_sdk/faq_sdk.html#pdfjs_api_screen_annot)的 events 属性是一个 Events 对象。
+多媒体 Events 对象（其构造函数为`app.media.Events`）是事件监听器对象的集合。[MediaPlayer 对象](https://help.adobe.com/en_US/acrobat/acrobat_dc_sdk/2015/faq_sdk/faq_sdk.html#pdfjs_api_media_player)或 [ScreenAnnot 对象](https://help.adobe.com/en_US/acrobat/acrobat_dc_sdk/2015/faq_sdk/faq_sdk.html#pdfjs_api_screen_annot)的`events`属性是一个 Events 对象。
 
-**示例：**
+### 示例
+
 以下内容作为演示操作执行。
 
 ```
@@ -12747,20 +13224,23 @@ var player = app.media.openPlayer({ events: events });
 | 6.0 | | | | |
 | :--- | :--- | :--- | :--- | :--- |
 
-将任意数量的 [EventListener 对象](https://help.adobe.com/en_US/acrobat/acrobat_dc_sdk/2015/faq_sdk/faq_sdk.html#pdfjs_api_event_listener_object)添加到此 **Events 对象**的派发表中。任何先前的监听器都会被保留，并且当事件触发时，所有匹配的监听器方法都会被调用。
-标准事件分发器首先按添加顺序调用所有 **onEveryEvent** 方法，然后按添加顺序调用特定事件的所有 "on" 事件（有关 "on" 和 "after" 事件的描述，请参见 [EventListener 对象](https://help.adobe.com/en_US/acrobat/acrobat_dc_sdk/2015/faq_sdk/faq_sdk.html#pdfjs_api_event_listener_object)介绍性段落）。最后，它设置一个非常短的计时器（一毫秒）来调用所有 "after" 事件。当该计时器触发时，"after" 事件将按照与 on 事件相同的顺序调用。
+将任意数量的 [EventListener 对象](https://help.adobe.com/en_US/acrobat/acrobat_dc_sdk/2015/faq_sdk/faq_sdk.html#pdfjs_api_event_listener_object)添加到此 Events 对象的派发表中。任何先前的监听器都会被保留，并且当事件触发时，所有匹配的监听器方法都会被调用。
+
+标准事件分发器首先按添加顺序调用所有`onEveryEvent`方法，然后按添加顺序调用特定事件的所有“on”事件（有关“on”和“after”事件的描述，请参见 [EventListener 对象](https://help.adobe.com/en_US/acrobat/acrobat_dc_sdk/2015/faq_sdk/faq_sdk.html#pdfjs_api_event_listener_object)介绍性段落）。最后，它设置一个非常短的计时器（一毫秒）来调用所有“after”事件。当该计时器触发时，“after”事件将按照与“on”事件相同的顺序调用。
 
 > **注意：** 如果您尝试添加相同的事件监听器两次，第二次尝试将被忽略。
+
 如果您在事件方法内部添加事件监听器，则新监听器的方法将作为当前事件派发的一部分被调用。
 
 **参数**
-任意数量的参数，每个参数都是一个 [EventListener 对象](https://help.adobe.com/en_US/acrobat/acrobat_dc_sdk/2015/faq_sdk/faq_sdk.html#pdfjs_api_event_listener_object)
+
+任意数量的参数，每个参数都是一个 [EventListener 对象](https://help.adobe.com/en_US/acrobat/acrobat_dc_sdk/2015/faq_sdk/faq_sdk.html#pdfjs_api_event_listener_object)。
 
 ### 返回值
 
-无
+无。
 
-### 示例：
+### 示例
 
 ```
 // 为 onPlay 事件添加一个事件监听器，此处 player 是一个
@@ -12771,35 +13251,35 @@ player.events.add
 });
 ```
 
-另请参见 Events.**remove**。
+另请参见`Events.remove`。
 
 ### dispatch
 
 | 6.0 | | | | |
 | :--- | :--- | :--- | :--- | :--- |
 
-当 MediaPlayer 触发一个事件时，多媒体插件会创建一个 Event 对象并调用 **MediaPlayer.events.dispatch**(**event**)。类似地，ScreenAnnot 调用 **ScreenAnnot.events.dispatch**(**event**)。
+当 MediaPlayer 触发一个事件时，多媒体插件会创建一个 Event 对象并调用`MediaPlayer.events.dispatch(event)`。类似地，ScreenAnnot 调用`ScreenAnnot.events.dispatch(event)`。
 
-dispatch 方法是事件派发系统中唯一被 Acrobat 多媒体插件直接调用的部分。您可以通过提供自己的带有自己 **dispatch**() 方法的 **MediaPlayer.events** 对象，来替代您自己的、完全不同的事件派发系统。
+`dispatch`方法是事件派发系统中唯一被 Acrobat 多媒体插件直接调用的部分。您可以通过提供自己的带有自己`dispatch()`方法的`MediaPlayer.events`对象，来替代您自己的、完全不同的事件派发系统。
 
-**dispatch**() 方法负责调用与该事件关联的每个事件监听器，这些监听器由 **oMediaEvent.name** 标识。在大多数情况下，PDF 文件不会提供自己的 **dispatch**() 方法，而是使用标准事件派发系统。
+`dispatch()`方法负责调用与该事件关联的每个事件监听器，这些监听器由`oMediaEvent.name`标识。在大多数情况下，PDF 文件不会提供自己的`dispatch()`方法，而是使用标准事件派发系统。
 
 **参数**
 
-| **oMediaEvent** | 一个 Event 对象 |
+| `oMediaEvent` | 一个 Event 对象 |
 | :--- | :--- |
 
 **返回值**
 
-无
+无。
 
-如果您编写自己的 dispatch() 方法，请注意 **oMediaEvent.name** 可能包含空格。标准 **dispatch**() 方法会在 **oMediaEvent.media.id** 中创建一个移除了空格的 **oMediaEvent.name** 副本，以便该名称可以直接用作 JavaScript 事件方法名称的一部分。
+如果您编写自己的`dispatch()`方法，请注意`oMediaEvent.name`可能包含空格。标准`dispatch()`方法会在`oMediaEvent.media.id`中创建一个移除了空格的`oMediaEvent.name`副本，以便该名称可以直接用作 JavaScript 事件方法名称的一部分。
 
-另外，请注意，如果您编写自己的 **dispatch**()，它将在每个事件发生时同步调用，并且您所做的任何处理都将受到与 EventListener 部分（参见 **EventListener 对象**）中 "on" 事件方法描述的相同限制。特别是，它不能对 **MediaPlayer 对象**进行任何调用，也不能执行任何可能间接导致调用 MediaPlayer 方法的操作。有关如何使用计时器解决此问题的方法，请参见 **media.js** 中标准 **dispatch**() 的源代码。
+另外，请注意，如果您编写自己的`dispatch()`，它将在每个事件发生时同步调用，并且您所做的任何处理都将受到与 EventListener 部分（参见 EventListener 对象）中“on”事件方法描述的相同限制。特别是，它不能对 MediaPlayer 对象进行任何调用，也不能执行任何可能间接导致调用 MediaPlayer 方法的操作。有关如何使用计时器解决此问题的方法，请参见`media.js`中标准`dispatch()`的源代码。
 
-dispatch() 方法通常不会直接从 JavaScript 代码调用，尽管可以这样做。
+`dispatch()`方法通常不会直接从 JavaScript 代码调用，尽管可以这样做。
 
-### 示例：
+### 示例
 
 ```
 // 创建一个带有自定义事件分发器的新媒体播放器。
@@ -12828,27 +13308,25 @@ player.events.dispatch( event );
 | 6.0 | | | | |
 | :--- | :--- | :--- | :--- | :--- |
 
-此方法移除一个或多个之前通过 Events.add() 添加的事件监听器。如果您直接在 Events.add() 中使用对象字面量，则将无法使用 Media.remove() 移除该监听器，因为无法传递对同一对象的引用。如果您希望能够移除事件监听器，请将其作为变量传递给 add()，而不是对象字面量，这样您就可以将相同的变量传递给 remove()，如下例所示。
+此方法移除一个或多个之前通过`Events.add()`添加的事件监听器。如果您直接在`Events.add()`中使用对象字面量，则将无法使用`Media.remove()`移除该监听器，因为无法传递对同一对象的引用。如果您希望能够移除事件监听器，请将其作为变量传递给`add()`，而不是对象字面量，这样您就可以将相同的变量传递给`remove()`，如下例所示。
 
-remove() 方法可以从事件方法内部调用，以移除任何事件监听器，甚至是当前事件方法所属的监听器。当前事件方法将继续执行，但同一事件监听器对象中的其他事件方法将不会被调用。
+`remove()`方法可以从事件方法内部调用，以移除任何事件监听器，甚至是当前事件方法所属的监听器。当前事件方法将继续执行，但同一事件监听器对象中的其他事件方法将不会被调用。
 
 #### 参数
 
-任意数量的参数，每个参数都是一个 EventListener 对象
+任意数量的参数，每个参数都是一个 EventListener 对象。
 
 #### 返回值
 
-无
-
-
+无。
 
 # Acrobat JavaScript 脚本参考
 
 ## EventListener 对象
 
-### 示例：
+### 示例
 
-假设 **player** 是一个 MediaPlayer 对象。
+假设`player`是一个 MediaPlayer 对象。
 
 ```
 var listener = { afterStop: function() { app.alert("Stopped!"); } }
@@ -12859,19 +13337,19 @@ player.events.remove( listener ); // 之后，移除它
 
 ## EventListener 对象
 
-EventListener 对象是事件方法函数的集合，以及可选的局部数据。事件方法名称以 "on" 或 "after" 开头，后跟事件名称，例如 **onPause** 或 **afterPause**。当事件被触发时，匹配的 "on" 事件方法会立即被调用，而匹配的 "after" 事件方法会在稍后一段时间，在下一个空闲时间被调用。
+EventListener 对象是事件方法函数的集合，以及可选的局部数据。事件方法名称以“on”或“after”开头，后跟事件名称，例如`onPause`或`afterPause`。当事件被触发时，匹配的“on”事件方法会立即被调用，而匹配的“after”事件方法会在稍后一段时间，在下一个空闲时间被调用。
 
-"on" 事件方法能做什么有严格的限制。特别是，一个 MediaPlayer 的 "on" 事件方法不能调用该 MediaPlayer 的任何方法，也不能调用任何可能间接导致 MediaPlayer 方法被调用的其他 Acrobat 方法。例如，"on" 方法不能关闭文档、保存文档、更改活动页面、更改焦点，或任何其他最终可能调用 MediaPlayer 方法的操作。
+“on”事件方法能做什么有严格的限制。特别是，一个 MediaPlayer 的“on”事件方法不能调用该 MediaPlayer 的任何方法，也不能调用任何可能间接导致 MediaPlayer 方法被调用的其他 Acrobat 方法。例如，“on”方法不能关闭文档、保存文档、更改活动页面、更改焦点，或任何其他最终可能调用 MediaPlayer 方法的操作。
 
-"after" 事件方法没有这些限制。对于大多数用途，"after" 事件方法更加通用。只有当事件必须在发生时同步处理时，才使用 "on" 事件方法，例如 **onGetRect ()** 方法。
+“after”事件方法没有这些限制。对于大多数用途，“after”事件方法更加通用。只有当事件必须在发生时同步处理时，才使用“on”事件方法，例如`onGetRect()`方法。
 
-关于重入的说明："on" 事件方法永远不会被重入，但 "after" 事件方法可能被重入。
+关于重入的说明：“on”事件方法永远不会被重入，但“after”事件方法可能被重入。
 
-在事件方法内部，**this** 是事件监听器对象。文档可通过 **event.media.doc** 获取，事件目标（MediaPlayer 或 ScreenAnnot）位于 **event.target** 中。
+在事件方法内部，`this`是事件监听器对象。文档可通过`event.media.doc`获取，事件目标（MediaPlayer 或 ScreenAnnot）位于`event.target`中。
 
-**Events.add()** 安装 EventListener 对象以进行事件分发，**Events.dispatch()** 将事件分发给匹配的事件方法，**Events.remove()** 从分发表中移除 EventListener 对象。
+`Events.add()`安装 EventListener 对象以进行事件分发，`Events.dispatch()`将事件分发给匹配的事件方法，`Events.remove()`从分发表中移除 EventListener 对象。
 
-### 示例：
+### 示例
 
 ```
 // 创建一个简单的 MediaEvents 对象
@@ -12894,7 +13372,7 @@ player.open();
 
 ## EventListener 对象方法
 
-此处列出的事件特定于多媒体。除了这些事件之外，ScreenAnnot 可能会接收 Acrobat 其他地方使用的标准事件（Destroy, Mouse Up, Mouse Down, Mouse Enter, Mouse Exit, Page Open, Page Close, Page Visible, Page Invisible, Focus, 和 Blur）。有关这些事件的详细信息，请参阅 Acrobat JavaScript 主文档中的 Events 部分。
+此处列出的事件特定于多媒体。除了这些事件之外，ScreenAnnot 可能会接收 Acrobat 其他地方使用的标准事件（Destroy、Mouse Up、Mouse Down、Mouse Enter、Mouse Exit、Page Open、Page Close、Page Visible、Page Invisible、Focus 和 Blur）。有关这些事件的详细信息，请参阅 Acrobat JavaScript 主文档中的 Events 部分。
 
 ### afterBlur
 
@@ -12905,20 +13383,22 @@ Blur 事件在 MediaPlayer 或 ScreenAnnot 失去键盘焦点后触发。
 
 #### 参数
 
-| oMediaEvent | 一个事件对象，自动传递给此事件监听器。 |
-| --- | --- |
+| `oMediaEvent` | 一个事件对象，自动传递给此事件监听器。 |
+| :--- | :--- |
 
 #### 返回值
 
-无
+无。
 
-请参阅 onBlur 以及 EventListener 对象中关于 "on" 事件和 "after" 事件之间区别的解释。
+请参阅`onBlur`以及 EventListener 对象中关于“on”事件和“after”事件之间区别的解释。
 
 #### 示例
 
-以下脚本作为 Rendition 动作执行。用户单击 ScreenAnnot 打开电影剪辑，但不播放。单击 ScreenAnnot 外部（一个 Blur 事件）播放电影。在电影播放时单击 ScreenAnnot（一个 Focus 事件）暂停电影。要继续播放，用户再次单击 ScreenAnnot 外部。
 
-```
+
+以下脚本作为 Rendition 动作执行。用户单击`ScreenAnnot`打开电影剪辑，但不播放。单击`ScreenAnnot`外部（一个 Blur 事件）播放电影。在电影播放时单击`ScreenAnnot`（一个 Focus 事件）暂停电影。要继续播放，用户再次单击`ScreenAnnot`外部。
+
+```javascript
 var playerEvents = new app.media.Events
 ({
     afterBlur: function () { player.play(); },
@@ -12929,52 +13409,56 @@ var args = { settings: settings, events: playerEvents};
 var player = app.media.openPlayer(args);
 ```
 
-另请参阅 afterFocus。
+另请参阅`afterFocus`。
 
 ### afterClose
 
 | 6.0 | | | | |
 | --- | --- | --- | --- | --- |
 
-当 MediaPlayer 因任何原因被关闭时，触发 Close 事件。如果你想从 Close 事件启动另一个媒体播放器，请务必首先测试 `doc.media.canPlay` 以确保允许播放。例如，可能因为文档正在关闭而不允许播放。Close 事件的事件对象除了标准事件属性外，还包括以下属性：
+当`MediaPlayer`因任何原因被关闭时，触发 Close 事件。如果你想从 Close 事件启动另一个媒体播放器，请务必首先测试`doc.media.canPlay`以确保允许播放。例如，可能因为文档正在关闭而不允许播放。Close 事件的事件对象除了标准事件属性外，还包括以下属性：
 
-| `media.closeReason` | 播放器被关闭的原因，来自 `app.media.closeReason` |
+| 属性 | 描述 |
+| --- | --- |
+| `media.closeReason` | 播放器被关闭的原因，来自`app.media.closeReason` |
 | `media.hadFocus` | 播放器关闭时是否具有焦点？ |
 
-当播放器在拥有焦点时关闭，它会先接收一个 Blur 事件，然后是 Close 事件。在 Close 事件中，`media.hadFocus` 指示播放器在关闭前是否具有焦点。当 `afterClose` 事件方法被调用时，MediaPlayer 已被删除，其 JavaScript 对象已失效。
+当播放器在拥有焦点时关闭，它会先接收一个 Blur 事件，然后是 Close 事件。在 Close 事件中，`media.hadFocus`指示播放器在关闭前是否具有焦点。当`afterClose`事件方法被调用时，`MediaPlayer`已被删除，其 JavaScript 对象已失效。
 
 #### 参数
 
-| `oMediaEvent` | 一个事件对象，自动传递给此事件监听器。 |
+| 参数 | 描述 |
 | --- | --- |
+| `oMediaEvent` | 一个事件对象，自动传递给此事件监听器。 |
 
 #### 返回值
 
 无
 
-请参阅 `onClose` 以及 EventListener 对象中关于 "on" 事件和 "after" 事件之间区别的解释。
+请参阅`onClose`以及 EventListener 对象中关于“on”事件和“after”事件之间区别的解释。
 
 #### 示例
 
-有关代表性示例，请参阅 `onClose`。
+有关代表性示例，请参阅`onClose`。
 
 ### afterDestroy
 
 | 6.0 | | | | |
 | --- | --- | --- | --- | --- |
 
-当 ScreenAnnot 被销毁时，触发 Destroy 事件。当 afterDestroy 事件方法被调用时，ScreenAnnot 已从文档中删除，其 JavaScript 对象已失效。
+当`ScreenAnnot`被销毁时，触发 Destroy 事件。当`afterDestroy`事件方法被调用时，`ScreenAnnot`已从文档中删除，其 JavaScript 对象已失效。
 
 #### 参数
 
-| oMediaEvent | 一个事件对象，自动传递给此事件监听器。 |
+| 参数 | 描述 |
 | --- | --- |
+| `oMediaEvent` | 一个事件对象，自动传递给此事件监听器。 |
 
 #### 返回值
 
 无
 
-请参阅 onDestroy 以及 EventListener 对象中关于 "on" 事件和 "after" 事件之间区别的解释。
+请参阅`onDestroy`以及 EventListener 对象中关于“on”事件和“after”事件之间区别的解释。
 
 ### afterDone
 
@@ -12985,76 +13469,82 @@ var player = app.media.openPlayer(args);
 
 #### 参数
 
-| oMediaEvent | 一个事件对象，自动传递给此事件监听器。 |
+| 参数 | 描述 |
 | --- | --- |
+| `oMediaEvent` | 一个事件对象，自动传递给此事件监听器。 |
 
 #### 返回值
 
 无
 
-请参阅 onDone 以及 EventListener 对象中关于 "on" 事件和 "after" 事件之间区别的解释。
+请参阅`onDone`以及 EventListener 对象中关于“on”事件和“after”事件之间区别的解释。
 
 ### afterError
 
 | 6.0 | | | | |
 | --- | --- | --- | --- | --- |
 
-当 MediaPlayer 中发生错误时，触发 Error 事件。Error 事件的事件对象除了标准事件属性外，还包括以下属性：
+当`MediaPlayer`中发生错误时，触发 Error 事件。Error 事件的事件对象除了标准事件属性外，还包括以下属性：
 
+| 属性 | 描述 |
+| --- | --- |
 | `media.code` | 状态码值 |
 | `media.serious` | 严重错误为 true，警告为 false |
 | `media.text` | 错误消息文本 |
 
 #### 参数
 
-| oMediaEvent | 一个 [Event Object](https://example.com)，自动传递给此事件监听器。 |
+| 参数 | 描述 |
 | --- | --- |
+| `oMediaEvent` | 一个[Event Object](https://example.com)，自动传递给此事件监听器。 |
 
 #### 返回值
 
 无
 
-请参阅 [onError](https://example.com) 以及 [EventListener Object](https://example.com) 中关于 "on" 事件和 "after" 事件之间区别的解释。
+请参阅[onError](https://example.com)以及[EventListener Object](https://example.com)中关于“on”事件和“after”事件之间区别的解释。
 
 ### afterEscape
 
 | 6.0 | | | | |
 | --- | --- | --- | --- | --- |
 
-当用户在 MediaPlayer 打开且拥有键盘焦点时按下 Escape 键，触发 Escape 事件。MediaPlayer 可能在接收 Ready 事件之前接收 Escape 事件。
+当用户在`MediaPlayer`打开且拥有键盘焦点时按下 Escape 键，触发 Escape 事件。`MediaPlayer`可能在接收 Ready 事件之前接收 Escape 事件。
 
 #### 参数
 
-| oMediaEvent | 一个 [Event Object](https://example.com)，自动传递给此事件监听器。 |
+| 参数 | 描述 |
 | --- | --- |
+| `oMediaEvent` | 一个[Event Object](https://example.com)，自动传递给此事件监听器。 |
 
 #### 返回值
 
 无
 
-请参阅 [onEscape](https://example.com) 以及 [EventListener Object](https://example.com) 中关于 "on" 事件和 "after" 事件之间区别的解释。
+请参阅[onEscape](https://example.com)以及[EventListener Object](https://example.com)中关于“on”事件和“after”事件之间区别的解释。
 
 ### afterEveryEvent
 
 | 6.0 | | | | |
 | --- | --- | --- | --- | --- |
 
-如果一个 [Events Object](https://example.com) 包含 [onEveryEvent](https://example.com) 或 **afterEveryEvent** 属性，其事件监听器函数将被每个事件调用，而不仅仅是特定事件。[onEveryEvent](https://example.com) 或 **afterEveryEvent** 属性中的事件监听器函数将在任何命名特定事件的监听器函数之前被调用。
+如果一个[Events Object](https://example.com)包含`onEveryEvent`或`afterEveryEvent`属性，其事件监听器函数将被每个事件调用，而不仅仅是特定事件。`onEveryEvent`或`afterEveryEvent`属性中的事件监听器函数将在任何命名特定事件的监听器函数之前被调用。
 
 #### 参数
 
-| oMediaEvent | 一个事件对象，自动传递给此事件监听器。 |
+| 参数 | 描述 |
 | --- | --- |
+| `oMediaEvent` | 一个事件对象，自动传递给此事件监听器。 |
 
 #### 返回值
 
 无
 
-请参阅 onEveryEvent 以及 EventListener 对象中关于 "on" 事件和 "after" 事件之间区别的解释。
+请参阅`onEveryEvent`以及 EventListener 对象中关于“on”事件和“after”事件之间区别的解释。
 
-#### 示例：
+#### 示例
 
-```
+```javascript
 var events = new app.media.Events(
 {
     // 这在每个事件期间立即调用：
@@ -13078,76 +13568,79 @@ var events = new app.media.Events(
 | 6.0 | | | | |
 | --- | --- | --- | --- | --- |
 
-当 MediaPlayer 或 ScreenAnnot 获得键盘焦点时，触发 Focus 事件。
+当`MediaPlayer`或`ScreenAnnot`获得键盘焦点时，触发 Focus 事件。
 
 #### 参数
 
-| oMediaEvent | 一个事件对象，自动传递给此事件监听器。 |
+| 参数 | 描述 |
 | --- | --- |
+| `oMediaEvent` | 一个事件对象，自动传递给此事件监听器。 |
 
 #### 返回值
 
 无
 
-
-
 ## afterPause
 
-| 6.0 |  |  |  |  |
+| 6.0 | | | | |
 | --- | --- | --- | --- | --- |
 
-Pause（暂停）事件在媒体播放暂停时触发，无论是由于用户交互还是调用了 `pause()` 方法。
+Pause（暂停）事件在媒体播放暂停时触发，无论是由于用户交互还是调用了`pause()`方法。
 
 ### 参数
 
-| oMediaEvent | 一个[事件对象](Event Object)，会自动传递给此事件监听器。 |
+| 参数 | 描述 |
 | --- | --- |
+| `oMediaEvent` | 一个[事件对象](Event Object)，会自动传递给此事件监听器。 |
 
 ### 返回值
 
 无
 
-请参阅 `onPause` 以及 [EventListener Object](EventListener Object) 中关于 “on” 事件和 “after” 事件之间区别的解释。
+请参阅`onPause`以及[EventListener Object](EventListener Object)中关于“on”事件和“after”事件之间区别的解释。
 
 ## afterPlay
 
-| 6.0 |  |  |  |  |
+| 6.0 | | | | |
 | --- | --- | --- | --- | --- |
 
-Play（播放）事件在媒体播放开始或恢复时触发，无论是由于用户交互还是调用了 `play()` 方法。
+Play（播放）事件在媒体播放开始或恢复时触发，无论是由于用户交互还是调用了`play()`方法。
 
 ### 参数
 
-| oMediaEvent | 一个[事件对象](Event Object)，会自动传递给此事件监听器。 |
+| 参数 | 描述 |
 | --- | --- |
+| `oMediaEvent` | 一个[事件对象](Event Object)，会自动传递给此事件监听器。 |
 
 ### 返回值
 
 无
 
-请参阅 `onPlay` 以及 [EventListener Object](EventListener Object) 中关于 “on” 事件和 “after” 事件之间区别的解释。
+请参阅`onPlay`以及[EventListener Object](EventListener Object)中关于“on”事件和“after”事件之间区别的解释。
 
 ## afterReady
 
-Ready（就绪）事件在新创建的 MediaPlayer 准备就绪可供使用时触发。在 Ready 事件触发之前，无法调用 MediaPlayer 对象的大多数方法。
+Ready（就绪）事件在新创建的`MediaPlayer`准备就绪可供使用时触发。在 Ready 事件触发之前，无法调用`MediaPlayer`对象的大多数方法。
 
 ### 参数
 
-| oMediaEvent | 一个事件对象，会自动传递给此事件监听器。 |
+| 参数 | 描述 |
 | --- | --- |
+| `oMediaEvent` | 一个事件对象，自动传递给此事件监听器。 |
 
 ### 返回值
 
 无
 
-请参阅 `onReady` 以及 [EventListener Object](EventListener Object) 中关于 “on” 事件和 “after” 事件之间区别的解释。
-请参阅下面的 `afterScript`、`Markers.get` 和 [MediaOffset Object](MediaOffset Object)。
+请参阅`onReady`以及[EventListener Object](EventListener Object)中关于“on”事件和“after”事件之间区别的解释。
+
+请参阅下面的`afterScript`、`Markers.get`和[MediaOffset Object](MediaOffset Object)。
 
 ### 示例
 
-此（文档级别）脚本播放多个媒体片段。对于每个 ScreenAnnot，会打开一个媒体（OpenPlayer）播放器。当其就绪后，`afterReady` 脚本会将此事实通知给 Multiplayer。
+此（文档级别）脚本播放多个媒体片段。对于每个`ScreenAnnot`，会打开一个媒体（OpenPlayer）播放器。当其就绪后，`afterReady`脚本会将此事实通知给`Multiplayer`。
 
-```
+```javascript
 // Parameters: doc, page, rendition/annot name, mulitPlayer instance
 function OnePlayer( doc, page, name, multiPlayer )
 {
@@ -13164,6 +13657,7 @@ function OnePlayer( doc, page, name, multiPlayer )
     });
     return player;
 }
+
 // Parameters: doc, page, list of rendition/annot names
 function MultiPlayer( doc, page )
 {
@@ -13177,9 +13671,11 @@ function MultiPlayer( doc, page )
                     if( nPlayersCueing == 0 ) this.play();
             }
     }
+
     this.play = function() {
     for( var i = 0; i < players.length; i++ ) players[i].play();
     }
+
     for( var i = 2; i < arguments.length; i++ ) {
         players[i-2] = new OnePlayer(doc,page,arguments[i],this );
         nPlayersCueing++;
@@ -13187,38 +13683,43 @@ function MultiPlayer( doc, page )
 }
 ```
 
-通过执行类似 `var myMultiPlayer = new MultiPlayer( this, 0, "Clip1", "Clip2" );` 的代码（例如，在表单按钮的鼠标松开动作中），即可实现播放多个媒体片段。
-有关 `afterReady` 的另一个示例，请参阅 `afterScript`。
+通过执行类似`var myMultiPlayer = new MultiPlayer( this, 0, "Clip1", "Clip2" );`的代码（例如，在表单按钮的鼠标松开动作中），即可实现播放多个媒体片段。
+
+有关`afterReady`的另一个示例，请参阅`afterScript`。
 
 ## afterScript
 
-| 6.0 |  |  |  |  |
+| 6.0 | | | | |
 | --- | --- | --- | --- | --- |
 
 Script（脚本）事件在播放过程中遇到媒体中的脚本触发器时触发。
+
 除了标准事件属性外，脚本事件的事件对象还包括以下属性：
 
-| **media.command** | 命令名称 |
-| **media.param** | 命令参数字符串 |
+| 属性 | 描述 |
+| --- | --- |
+| `media.command` | 命令名称 |
+| `media.param` | 命令参数字符串 |
 
-这两个字符串可以包含媒体片段提供的任何值。它们不一定包含可执行的 JavaScript 代码；具体解释取决于 `onScript` 或 `afterScript` 事件监听器。
+这两个字符串可以包含媒体片段提供的任何值。它们不一定包含可执行的 JavaScript 代码；具体解释取决于`onScript`或`afterScript`事件监听器。
 
 ### 参数
 
-| **oMediaEvent** | 一个事件对象，会自动传递给此事件监听器。 |
+| 参数 | 描述 |
 | --- | --- |
+| `oMediaEvent` | 一个事件对象，会自动传递给此事件监听器。 |
 
 ### 返回值
 
 无
 
-请参阅 `onScript` 以及 [EventListener Object](EventListener Object) 中关于 “on” 事件和 “after” 事件之间区别的解释。
+请参阅`onScript`以及[EventListener Object](EventListener Object)中关于“on”事件和“after”事件之间区别的解释。
 
 ### 示例
 
-以下是 **MediaPlayer.seek()** 之后介绍的一个完整示例的一部分。媒体是一个音频片段（.wma），它确实支持标记和脚本，内容是（著名的）引言。**afterReady** 监听器计算标记的数量，每个引言的开头都有一个标记。每个引言的末尾都有一个嵌入的命令脚本，**afterScript** 监听器会监视这些命令，如果命令是“暂停”，则会暂停播放器。
+以下是`MediaPlayer.seek()`之后介绍的一个完整示例的一部分。媒体是一个音频片段（`.wma`），它确实支持标记和脚本，内容是（著名的）引言。`afterReady`监听器计算标记的数量，每个引言的开头都有一个标记。每个引言的末尾都有一个嵌入的命令脚本，`afterScript`监听器会监视这些命令，如果命令是“暂停”，则会暂停播放器。
 
-```
+```javascript
 var nMarkers=0;
 var events = new app.media.Events;
 events.add({
@@ -13228,12 +13729,14 @@ events.add({
         while ( (index =  g.get( { index: nMarkers } ) ) != null )
             nMarkers++;
     },
+
     // Each quote should be followed by a script, if the command is to
     // pause, then pause the player.
     afterScript: function( e ) {
         if ( e.media.command == "pause" ) player.pause();
     }
 });
+
 var player = app.media.openPlayer({
     rendition: this.media.getRendition( "myQuotes" ),
     settings: { autoPlay: false },
@@ -13243,36 +13746,43 @@ var player = app.media.openPlayer({
 
 ## afterSeek
 
-| 6.0 |  |  |  |  |
+| 6.0 | | | | |
 | --- | --- | --- | --- | --- |
 
-Seek（定位）事件在 MediaPlayer 因 **seek()** 调用完成定位到某个播放偏移量后触发。请注意，并非所有媒体播放器都会触发 Seek 事件。
+Seek（定位）事件在`MediaPlayer`因`seek()`调用完成定位到某个播放偏移量后触发。请注意，并非所有媒体播放器都会触发 Seek 事件。
 
 ### 参数
 
-| oMediaEvent | 一个事件对象，会自动传递给此事件监听器。 |
+| 参数 | 描述 |
 | --- | --- |
+| `oMediaEvent` | 一个事件对象，会自动传递给此事件监听器。 |
 
 ### 返回值
 
 无
 
-请参阅 **onSeek** 以及 **EventListener Object** 中关于 “on” 事件和 “after” 事件之间区别的解释。
+请参阅`onSeek`以及[EventListener Object](EventListener Object)中关于“on”事件和“after”事件之间区别的解释。
 
 ## afterStatus
 
-| 6.0 |  |  |  |  |
+| 6.0 | | | | |
 | --- | --- | --- | --- | --- |
 
-Status（状态）事件在 MediaPlayer 报告的各种状态变化时触发。
+Status（状态）事件在`MediaPlayer`报告的各种状态变化时触发。
+
 除了标准事件属性外，状态事件的事件对象还包括以下属性：
 
-| `media.code` | 状态代码值，定义在 `app.media.status` 中 |
+| 属性 | 描述 |
+| --- | --- |
+| `media.code` | 状态代码值，定义在`app.media.status`中 |
 | `media.text` | 状态消息文本 |
 
-以下值仅由某些媒体播放器使用，并且仅在 `media.code == app.media.status.buffering` 时使用。其他情况下它们为零。
 
-| `media.progress` | 进度值，从 0 到 `media.total` |
+
+以下值仅由某些媒体播放器使用，并且仅在`media.code == app.media.status.buffering`时使用。其他情况下它们为零。
+
+| `media.progress` | 进度值，从 0 到`media.total` |
+| --- | --- |
 | `media.total` | 最大进度值 |
 
 ### 参数
@@ -13284,7 +13794,7 @@ Status（状态）事件在 MediaPlayer 报告的各种状态变化时触发。
 
 无
 
-请参阅 `onStatus` 以及 [EventListener Object](EventListener Object) 中关于 “on” 事件和 “after” 事件之间区别的解释。
+请参阅`onStatus`以及 [EventListener Object](EventListener Object) 中关于“on”事件和“after”事件之间区别的解释。
 
 ### 示例
 
@@ -13306,18 +13816,18 @@ app.media.openPlayer({ events: events });
 | --- | --- | --- | --- |
 |  |  |  |  |
 
-Stop（停止）事件在媒体播放停止时触发，无论是由于用户交互还是调用了 `stop()` 方法。
+Stop（停止）事件在媒体播放停止时触发，无论是由于用户交互还是调用了`stop()`方法。
 
 ### 参数
 
-| oMediaEvent | 一个事件对象，会自动传递给此事件监听器。 |
+| `oMediaEvent` | 一个事件对象，会自动传递给此事件监听器。 |
 | --- | --- |
 
 ### 返回值
 
 无
 
-请参阅 `onStop` 以及 `EventListener Object` 中关于 “on” 事件和 “after” 事件之间区别的解释。
+请参阅`onStop`以及`EventListener Object`中关于“on”事件和“after”事件之间区别的解释。
 
 ## onBlur
 
@@ -13329,14 +13839,14 @@ Blur（失焦）事件在 MediaPlayer 或 ScreenAnnot 失去键盘焦点时触�
 
 ### 参数
 
-| oMediaEvent | 一个事件对象，会自动传递给此事件监听器。 |
+| `oMediaEvent` | 一个事件对象，会自动传递给此事件监听器。 |
 | --- | --- |
 
 ### 返回值
 
 无
 
-请参阅 `afterBlur` 以及 `EventListener Object` 中关于 “on” 事件和 “after” 事件之间区别的解释。
+请参阅`afterBlur`以及`EventListener Object`中关于“on”事件和“after”事件之间区别的解释。
 
 ## onClose
 
@@ -13346,34 +13856,32 @@ Blur（失焦）事件在 MediaPlayer 或 ScreenAnnot 失去键盘焦点时触�
 
 Close（关闭）事件在 MediaPlayer 因任何原因关闭时触发。
 
-如果您想在 Close 事件中启动另一个媒体播放器，请务必先测试 `doc.media.canPlay` 以确保允许播放。例如，如果文档正在关闭，可能不允许播放。
-
-
+如果您想在 Close 事件中启动另一个媒体播放器，请务必先测试`doc.media.canPlay`以确保允许播放。例如，如果文档正在关闭，可能不允许播放。
 
 关闭事件的事件对象在标准事件对象的属性之外，还包含以下属性：
 
-| media.closeReason | 播放器为何关闭，取值来自 app.media.closeReason |
-| :--- | :--- |
-| media.hadFocus | 播放器关闭时是否拥有焦点？ |
+| `media.closeReason` | 播放器为何关闭，取值来自`app.media.closeReason` |
+| --- | --- |
+| `media.hadFocus` | 播放器关闭时是否拥有焦点？ |
 
-当一个播放器在拥有焦点时关闭，它会先接收到一个 Blur 事件，然后才是 Close 事件。在 Close 事件中，`media.hadFocus` 指示播放器在关闭前是否拥有焦点。
+当一个播放器在拥有焦点时关闭，它会先接收到一个 Blur 事件，然后才是 Close 事件。在 Close 事件中，`media.hadFocus`指示播放器在关闭前是否拥有焦点。
 
-当 `afterClose` 事件方法被调用时，MediaPlayer 已被删除，其 JavaScript 对象也已失效。
+当`afterClose`事件方法被调用时，MediaPlayer 已被删除，其 JavaScript 对象也已失效。
 
-## 参数
+### 参数
 
-| oMediaEvent | 一个事件对象，会自动传递给此事件监听器。 |
-| :--- | :--- |
+| `oMediaEvent` | 一个事件对象，会自动传递给此事件监听器。 |
+| --- | --- |
 
-## 返回值
+### 返回值
 
 无
 
-参见 afterClose 以及 EventListener 对象中关于 "on" 事件和 "after" 事件区别的说明。
+参见`afterClose`以及 EventListener 对象中关于“on”事件和“after”事件区别的说明。
 
-## 示例
+### 示例
 
-此脚本获取媒体片段关闭原因的信息，从 Rendition 动作执行。参见 app.media.closeReason。
+此脚本获取媒体片段关闭原因的信息，从 Rendition 动作执行。参见`app.media.closeReason`。
 
 ```
 var playerEvents = new app.media.Events({
@@ -13405,13 +13913,13 @@ app.media.openPlayer({ events: playerEvents });
 
 ### 参数
 
-**oMediaEvent** 一个事件对象，会自动传递给此事件监听器。
+`oMediaEvent` 一个事件对象，会自动传递给此事件监听器。
 
 ### 返回值
 
 无
 
-参见 afterDestroy 以及 EventListener 对象中关于 "on" 事件和 "after" 事件区别的说明。
+参见`afterDestroy`以及 EventListener 对象中关于“on”事件和“after”事件区别的说明。
 
 ## onDone
 
@@ -13419,13 +13927,13 @@ app.media.openPlayer({ events: playerEvents });
 
 ### 参数
 
-**oMediaEvent** 一个事件对象，会自动传递给此事件监听器。
+`oMediaEvent` 一个事件对象，会自动传递给此事件监听器。
 
 ### 返回值
 
 无
 
-参见 afterDone 以及 EventListener 对象中关于 "on" 事件和 "after" 事件区别的说明。
+参见`afterDone`以及 EventListener 对象中关于“on”事件和“after”事件区别的说明。
 
 ## onError
 
@@ -13433,22 +13941,20 @@ app.media.openPlayer({ events: playerEvents });
 
 错误事件的事件对象在标准事件对象的属性之外，还包含以下属性：
 
-**media.code** 状态码值
-
-**media.serious** **true** 表示严重错误，**false** 表示警告
-
-**media.text** 错误消息文本
+- `media.code` 状态码值
+- `media.serious`：`true`表示严重错误，`false`表示警告
+- `media.text` 错误消息文本
 
 ### 参数
 
-| oMediaEvent | 一个事件对象，会自动传递给此事件监听器。 |
-| :--- | :--- |
+| `oMediaEvent` | 一个事件对象，会自动传递给此事件监听器。 |
+| --- | --- |
 
 ### 返回值
 
 无
 
-参见 afterError 以及 EventListener 对象中关于 "on" 事件和 "after" 事件区别的说明。
+参见`afterError`以及 EventListener 对象中关于“on”事件和“after”事件区别的说明。
 
 ## onEscape
 
@@ -13456,31 +13962,31 @@ app.media.openPlayer({ events: playerEvents });
 
 ### 参数
 
-| oMediaEvent | 一个事件对象，会自动传递给此事件监听器。 |
-| :--- | :--- |
+| `oMediaEvent` | 一个事件对象，会自动传递给此事件监听器。 |
+| --- | --- |
 
 ### 返回值
 
 无
 
-参见 afterEscape 以及 EventListener 对象中关于 "on" 事件和 "after" 事件区别的说明。
+参见`afterEscape`以及 EventListener 对象中关于“on”事件和“after”事件区别的说明。
 
 ## onEveryEvent
 
-如果一个 Events 对象包含 `onEveryEvent` 或 `afterEveryEvent` 属性，则其事件监听器函数将为每个事件被调用，而不仅仅是特定的某个事件。
+如果一个 Events 对象包含`onEveryEvent`或`afterEveryEvent`属性，则其事件监听器函数将为每个事件被调用，而不仅仅是特定的某个事件。
 
-`onEveryEvent` 或 `afterEveryEvent` 属性中的事件监听器函数将在任何指定特定事件的监听器函数之前被调用。
+`onEveryEvent`或`afterEveryEvent`属性中的事件监听器函数将在任何指定特定事件的监听器函数之前被调用。
 
 ### 参数
 
-| oMediaEvent | 一个事件对象，会自动传递给此事件监听器。 |
-| :--- | :--- |
+| `oMediaEvent` | 一个事件对象，会自动传递给此事件监听器。 |
+| --- | --- |
 
 ### 返回值
 
 无
 
-参见 afterEveryEvent 以及 EventListener 对象中关于 "on" 事件和 "after" 事件区别的说明。
+参见`afterEveryEvent`以及 EventListener 对象中关于“on”事件和“after”事件区别的说明。
 
 ## onFocus
 
@@ -13488,14 +13994,14 @@ app.media.openPlayer({ events: playerEvents });
 
 ### 参数
 
-| oMediaEvent | 一个事件对象，会自动传递给此事件监听器。 |
-| :--- | :--- |
+| `oMediaEvent` | 一个事件对象，会自动传递给此事件监听器。 |
+| --- | --- |
 
 ### 返回值
 
 无
 
-参见 afterFocus 以及 EventListener 对象中关于 "on" 事件和 "after" 事件区别的说明。
+参见`afterFocus`以及 EventListener 对象中关于“on”事件和“after”事件区别的说明。
 
 ## onGetRect
 
@@ -13503,17 +14009,17 @@ app.media.openPlayer({ events: playerEvents });
 
 GetRect 事件的事件对象在标准事件对象的属性之外，还包含以下属性：
 
-| media.rect | 播放器矩形，一个包含四个数字的数组，表示设备空间坐标 |
-| :--- | :--- |
+| `media.rect` | 播放器矩形，一个包含四个数字的数组，表示设备空间坐标 |
+| --- | --- |
 
-`onGetRect()` 方法必须在返回前设置 `oMediaEvent` 中的此属性。
+`onGetRect()`方法必须在返回前设置`oMediaEvent`中的此属性。
 
-尽管你可以编写一个 `afterGetRect` 监听器，但如果它返回一个 rect 属性，该属性将被忽略，这没有实际用途。rect 属性必须在 `onGetRect` 监听器中设置。
+尽管你可以编写一个`afterGetRect`监听器，但如果它返回一个 rect 属性，该属性将被忽略，这没有实际用途。rect 属性必须在`onGetRect`监听器中设置。
 
 ### 参数
 
-| oMediaEvent | 一个事件对象，会自动传递给此事件监听器。 |
-| :--- | :--- |
+| `oMediaEvent` | 一个事件对象，会自动传递给此事件监听器。 |
+| --- | --- |
 
 ### 返回值
 
@@ -13549,37 +14055,37 @@ var player = app.media.openPlayer({
 player.page = 1; // show on page 1, this triggers an onGetRect event.
 ```
 
-参见 MediaPlayer.page 和 MediaPlayer.triggerGetRect 以了解同一示例的变体。
+参见`MediaPlayer.page`和`MediaPlayer.triggerGetRect`以了解同一示例的变体。
 
 ## onPause
 
-当媒体播放暂停时，无论是由于用户交互还是因为调用了 `play()` 方法，暂停事件触发。
+当媒体播放暂停时，无论是由于用户交互还是因为调用了`play()`方法，暂停事件触发。
 
 ### 参数
 
-| oMediaEvent | 一个事件对象，会自动传递给此事件监听器。 |
-| :--- | :--- |
+| `oMediaEvent` | 一个事件对象，会自动传递给此事件监听器。 |
+| --- | --- |
 
 ### 返回值
 
 无
 
-参见 afterPause 以及 EventListener 对象中关于 "on" 事件和 "after" 事件区别的说明。
+参见`afterPause`以及 EventListener 对象中关于“on”事件和“after”事件区别的说明。
 
 ## onPlay
 
-当媒体播放开始或恢复时，无论是由于用户交互还是因为调用了 `pause()` 方法，播放事件触发。
+当媒体播放开始或恢复时，无论是由于用户交互还是因为调用了`pause()`方法，播放事件触发。
 
 ### 参数
 
-| oMediaEvent | 一个事件对象，会自动传递给此事件监听器。 |
-| :--- | :--- |
+| `oMediaEvent` | 一个事件对象，会自动传递给此事件监听器。 |
+| --- | --- |
 
 ### 返回值
 
 无
 
-参见 afterPlay 以及 EventListener 对象中关于 "on" 事件和 "after" 事件区别的说明。
+参见`afterPlay`以及 EventListener 对象中关于“on”事件和“after”事件区别的说明。
 
 ## onReady
 
@@ -13587,16 +14093,14 @@ player.page = 1; // show on page 1, this triggers an onGetRect event.
 
 ### 参数
 
-| oMediaEvent | 一个事件对象，会自动传递给此事件监听器。 |
-| :--- | :--- |
+| `oMediaEvent` | 一个事件对象，会自动传递给此事件监听器。 |
+| --- | --- |
 
 ### 返回值
 
 无
 
-参见 afterReady 以及 EventListener 对象中关于 "on" 事件和 "after" 事件区别的说明。
-
-
+参见`afterReady`以及 EventListener 对象中关于“on”事件和“after”事件区别的说明。
 
 ## Acrobat JavaScript 脚本参考
 
@@ -13605,44 +14109,44 @@ player.page = 1; // show on page 1, this triggers an onGetRect event.
 ### onScript
 
 | 6.0 |  |  |  |  |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 
 当在媒体播放过程中遇到脚本触发器时，脚本事件会被触发。除了标准的 Event 属性外，脚本事件的 Event 对象还包括以下属性：
 
-| media.command | 命令名称 |
-|---|---|
-| media.param | 命令参数字符串 |
+| `media.command` | 命令名称 |
+| --- | --- |
+| `media.param` | 命令参数字符串 |
 
-这两个字符串可以包含媒体片段提供的任何值。它们不一定包含可执行的 JavaScript 代码；由 onScript 或 afterScript 事件监听器来解释它们。
+这两个字符串可以包含媒体片段提供的任何值。它们不一定包含可执行的 JavaScript 代码；由`onScript`或`afterScript`事件监听器来解释它们。
 
 #### 参数
 
-| oMediaEvent | 一个 [Event 对象](https://example.com)，它会自动传递给此事件监听器。 |
-|---|---|
+| `oMediaEvent` | 一个 [Event 对象](https://example.com)，它会自动传递给此事件监听器。 |
+| --- | --- |
 
 #### 返回值
 
 无
 
-参见 [afterScript](https://example.com) 以及 [EventListener 对象](https://example.com) 中关于“on”事件和“after”事件之间区别的说明。
+参见[afterScript](https://example.com)以及 [EventListener 对象](https://example.com) 中关于“on”事件和“after”事件之间区别的说明。
 
 ### onSeek
 
 | 6.0 |  |  |  |  |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 
-当 MediaPlayer 完成 `seek()` 调用导致的定位到播放偏移量时，定位事件会被触发。请注意，并非所有媒体播放器都会触发 Seek 事件。
+当 MediaPlayer 完成`seek()`调用导致的定位到播放偏移量时，定位事件会被触发。请注意，并非所有媒体播放器都会触发 Seek 事件。
 
 #### 参数
 
-| oMediaEvent | 一个 [Event 对象](https://example.com)，它会自动传递给此事件监听器。 |
-|---|---|
+| `oMediaEvent` | 一个 [Event 对象](https://example.com)，它会自动传递给此事件监听器。 |
+| --- | --- |
 
 #### 返回值
 
 无
 
-参见 [afterSeek](https://example.com) 以及 [EventListener 对象](https://example.com) 中关于“on”事件和“after”事件之间区别的说明。
+参见[afterSeek](https://example.com)以及 [EventListener 对象](https://example.com) 中关于“on”事件和“after”事件之间区别的说明。
 
 ### onStatus
 
@@ -13651,56 +14155,58 @@ player.page = 1; // show on page 1, this triggers an onGetRect event.
 
 当 MediaPlayer 报告的某个状态发生变化时，状态事件会被触发。除了标准的 Event 属性外，状态事件的 Event 对象还包括以下属性：
 
-| media.code | 状态代码值，在 app.media.status 中定义 |
+| `media.code` | 状态代码值，在`app.media.status`中定义 |
 | --- | --- |
-| media.text | 状态消息文本 |
+| `media.text` | 状态消息文本 |
 
-以下值仅由某些媒体播放器使用，并且仅在 media.code == app.media.status.buffering 时使用。否则为零。
+以下值仅由某些媒体播放器使用，并且仅在`media.code == app.media.status.buffering`时使用。否则为零。
 
-| media.progress | 进度值，从 0 到 media.total |
+| `media.progress` | 进度值，从 0 到`media.total` |
 | --- | --- |
-| media.total | 最大进度值 |
+| `media.total` | 最大进度值 |
 
 #### 参数
 
-| oMediaEvent | 一个 Event 对象，它会自动传递给此事件监听器。 |
+| `oMediaEvent` | 一个 Event 对象，它会自动传递给此事件监听器。 |
 | --- | --- |
 
 #### 返回值
 
 无
 
-参见 afterStatus 以及 EventListener 对象中关于“on”事件和“after”事件之间区别的说明。
+参见`afterStatus`以及 EventListener 对象中关于“on”事件和“after”事件之间区别的说明。
 
 ### onStop
 
 | 6.0 |  |  |  |  |
 | --- | --- | --- | --- | --- |
 
-当媒体播放停止时，停止事件会被触发，无论是由于用户交互还是因为调用了 stop() 方法。
+当媒体播放停止时，停止事件会被触发，无论是由于用户交互还是因为调用了`stop()`方法。
 
 #### 参数
 
-| oMediaEvent | 一个 Event 对象，它会自动传递给此事件监听器。 |
+| `oMediaEvent` | 一个 Event 对象，它会自动传递给此事件监听器。 |
 | --- | --- |
 
 #### 返回值
 
 无
 
-参见 [afterStop](#) 以及 [EventListener 对象](#) 中关于“on”事件和“after”事件之间区别的说明。
+参见[afterStop](#)以及 [EventListener 对象](#) 中关于“on”事件和“after”事件之间区别的说明。
 
 ## FDF 对象
 
+
+
 此对象对应于一个 PDF 编码的数据交换文件。FDF 文件最常见的用途是包含从 PDF 文件导出的表单数据。FDF 文件也可以用作通用数据文件。FDF 对象正是为后一种目的而存在的。
 
-(安全 🅢): 在其快速栏中标记为 🅢 的所有方法和属性仅在批处理、控制台、应用程序初始化和菜单事件期间可用。
+（安全 🅢）：在其快速栏中标记为 🅢 的所有方法和属性仅在批处理、控制台、应用程序初始化和菜单事件期间可用。
 
-> **注意:** 从 Acrobat 7.0 开始，通过菜单事件执行 JavaScript 不再具有特权，详情请参阅 [通过菜单执行 JavaScript](#)。
+> **注意：** 从 Acrobat 7.0 开始，通过菜单事件执行 JavaScript 不再具有特权，详情请参阅[通过菜单执行 JavaScript](#)。
 
 ### FDF 属性
 
-#### deleteOption
+#### `deleteOption`
 
 指示处理后是否应自动删除 FDF 文件。这是一个通用值，根据 FDF 文件的内容及其处理方式，可能会被使用也可能不会。从 Acrobat 6.0 开始用于嵌入文件。允许的值为：
 
@@ -13709,36 +14215,40 @@ player.page = 1; // show on page 1, this triggers an onGetRect event.
 - 2：Acrobat 会提示用户确定处理后是否删除 FDF 文件（但网络或电子邮件浏览器仍可能删除该文件）。
 
 类型：整数
+
 访问权限：R/W。
 
-#### isSigned
+#### `isSigned`
 
 如果 FDF 数据文件已签名，则返回 `true`。
 
 类型：布尔值
+
 访问权限：R。
 
 #### 示例
 
-检查 fdf 是否已签名。
+检查 `fdf` 是否已签名。
 
 ```javascript
 var fdf = app.openFDF("/C/temp/myDoc.fdf");
-console.println( "It is "+ fdf.isSigned + " that this FDF is signed");
+console.println("It is " + fdf.isSigned + " that this FDF is signed");
 fdf.close();
 ```
 
-有关更完整的示例，请参阅 fdf.**signatureSign**。
+有关更完整的示例，请参阅 `fdf.signatureSign`。
 
-#### numEmbeddedFiles
+#### `numEmbeddedFiles`
 
 | 6.0 | (D) |  | (X) |  |
 | --- | --- | --- | --- | --- |
 
-FDF 文件中嵌入的文件数量。如果 **FDF** 对象是有效的 FDF 文件，则不会抛出异常。
-可以使用 fdf.**addEmbeddedFile** 方法将文件嵌入到 FDF 文件中。
+FDF 文件中嵌入的文件数量。如果 `FDF` 对象是有效的 FDF 文件，则不会抛出异常。
+
+可以使用 `fdf.addEmbeddedFile` 方法将文件嵌入到 FDF 文件中。
 
 类型：整数
+
 访问权限：R。
 
 #### 示例
@@ -13750,14 +14260,13 @@ var fdf = app.newFDF();
 fdf.addEmbeddedFile("/C/myPDFs/myDoc.pdf");
 fdf.save("/c/temp/myDocWrapper.fdf");
 fdf = app.openFDF("/c/temp/myDocWrapper.fdf");
-console.println("The number of embedded files = "
-    + fdf.numEmbeddedFiles);
+console.println("The number of embedded files = " + fdf.numEmbeddedFiles);
 fdf.close();
 ```
 
 ### FDF 方法
 
-#### addContact
+#### `addContact`
 
 | 6.0 | (D) | (S) | (X) |  |
 | --- | --- | --- | --- | --- |
@@ -13766,7 +14275,7 @@ fdf.close();
 
 ##### 参数
 
-| **oUserEntity** | 这是一个 [UserEntity 泛型对象](Generic Object)，列出了要添加到 FDF 文件的联系人。 |
+| `oUserEntity` | 这是一个[UserEntity 泛型对象](Generic Object)，列出了要添加到 FDF 文件的联系人。 |
 | --- | --- |
 
 ##### 返回值
@@ -13776,22 +14285,22 @@ fdf.close();
 ##### 示例
 
 ```javascript
-var oEntity={firstName:"Fred", lastName:"Smith", fullName:"Fred Smith"};
+var oEntity = {firstName: "Fred", lastName: "Smith", fullName: "Fred Smith"};
 var f = app.newFDF();
-f.addContact( oEntity );
-f.save( "/c/temp/FredCert.fdf" );
+f.addContact(oEntity);
+f.save("/c/temp/FredCert.fdf");
 ```
 
-#### addEmbeddedFile
+#### `addEmbeddedFile`
 
-将指定文件添加到 FDF 文件的嵌入文件数组的末尾。任何打开 FDF 文件的人都将被指示根据 **nSaveOption** 保存嵌入文件。如果嵌入文件是 PDF 文件，该文件将在查看器中打开并显示。如果嵌入文件是 FDF 文件，该文件将被查看器打开以进行处理。从 Acrobat 4.05 开始支持包含嵌入文件的 FDF 文件。嵌入 PDF 文件的一个用例是，当这些文件托管在 HTTP 服务器上，并且希望用户点击以下载并保存 PDF 文件，而不是在浏览器中查看该文件。这些嵌入文件与存储在 FDF 文件中的表单数据相关联的文件之间没有关系。
+将指定文件添加到 FDF 文件的嵌入文件数组的末尾。任何打开 FDF 文件的人都将被指示根据 `nSaveOption` 保存嵌入文件。如果嵌入文件是 PDF 文件，该文件将在查看器中打开并显示。如果嵌入文件是 FDF 文件，该文件将被查看器打开以进行处理。从 Acrobat 4.05 开始支持包含嵌入文件的 FDF 文件。嵌入 PDF 文件的一个用例是，当这些文件托管在 HTTP 服务器上，并且希望用户点击以下载并保存 PDF 文件，而不是在浏览器中查看该文件。这些嵌入文件与存储在 FDF 文件中的表单数据相关联的文件之间没有关系。
 
 ##### 参数
 
 | 名称 | 描述 |
 | --- | --- |
-| cDIPath | （可选）指向用户硬盘上文件的设备无关绝对路径。如果未指定，将提示用户定位文件。路径的确切语法请参阅 *PDF 参考手册* 中的 *文件规范字符串*。 |
-| nSaveOption | （可选）嵌入文件将如何呈现给打开此 FDF 文件的人，文件将保存在哪里，以及文件保存后是否将被删除。值如下：<br/>- 0：文件将自动保存到 Acrobat 文档文件夹。<br/>- 1（默认）：将提示用户输入一个文件名来保存嵌入文件。<br/>- 2：不应使用。<br/>- 3：文件将自动保存为临时文件，并在清理期间（Acrobat 关闭时）被删除。<br/>在 Acrobat 4.05 到 5.05 中，对于值 0 和 3，如果用户尚未设置此值，系统将提示他们设置保存文件夹的位置。<br/>对于 **nSaveOption** 的所有值，如果文件是 PDF 或 FDF 文件，一旦保存，它将由 Acrobat 自动打开。 |
+| `cDIPath` | （可选）指向用户硬盘上文件的设备无关绝对路径。如果未指定，将提示用户定位文件。路径的确切语法请参阅*PDF 参考手册*中的*文件规范字符串*。 |
+| `nSaveOption` | （可选）嵌入文件将如何呈现给打开此 FDF 文件的人，文件将保存在哪里，以及文件保存后是否将被删除。值如下：<br>- 0：文件将自动保存到 Acrobat 文档文件夹。<br>- 1（默认）：将提示用户输入一个文件名来保存嵌入文件。<br>- 2：不应使用。<br>- 3：文件将自动保存为临时文件，并在清理期间（Acrobat 关闭时）被删除。<br>在 Acrobat 4.05 到 5.05 中，对于值 0 和 3，如果用户尚未设置此值，系统将提示他们设置保存文件夹的位置。<br>对于 `nSaveOption` 的所有值，如果文件是 PDF 或 FDF 文件，一旦保存，它将由 Acrobat 自动打开。 |
 
 ##### 返回值
 
@@ -13807,7 +14316,7 @@ fdf.addEmbeddedFile("/C/myPDFs/myDoc.pdf");
 fdf.save("/c/temp/myDocs.fdf");
 ```
 
-#### addRequest
+#### `addRequest`
 
 | 6.0 | ⊕ | ⊘ | ⊗ |  |
 | --- | --- | --- | --- | --- |
@@ -13816,10 +14325,10 @@ fdf.save("/c/temp/myDocs.fdf");
 
 ##### 参数
 
-| cType | 正在请求的内容。当前唯一有效的值是字符串 "CMS"，这是一个联系信息请求。 |
+| `cType` | 正在请求的内容。当前唯一有效的值是字符串 `"CMS"`，这是一个联系信息请求。 |
 | --- | --- |
-| cReturnAddress | 请求的回信地址字符串。它必须以 **mailto:, http: 或 https:** 开头，并采用 "**http://www.acme.com/cgi.pl**" 或 "**mailto:jdoe@adobe.com**" 的形式。 |
-| cName | （可选）发起请求的个人或组织的名称。 |
+| `cReturnAddress` | 请求的回信地址字符串。它必须以 `mailto:`、`http:` 或 `https:` 开头，并采用 `"http://www.acme.com/cgi.pl"` 或 `"mailto:jdoe@adobe.com"` 的形式。 |
+| `cName` | （可选）发起请求的个人或组织的名称。 |
 
 ##### 返回值
 
@@ -13829,26 +14338,25 @@ fdf.save("/c/temp/myDocs.fdf");
 
 ```javascript
 var f = app.newFDF();
-f.addRequest( "CMS", "http://www.acme.com/cgi.pl", "Acme Corp" );
-f.save( "/c/tmp/request.fdf" );
+f.addRequest("CMS", "http://www.acme.com/cgi.pl", "Acme Corp");
+f.save("/c/tmp/request.fdf");
 ```
 
-#### close
+#### `close`
 
 | 6.0 |  | ⊘ | ⊗ |  |
 | --- | --- | --- | --- | --- |
 
 立即关闭 FDF 文件。
 
-
-
 Acrobat JavaScript 脚本参考
+
 FDF 方法
 
-## mail
+## `mail`
 
-| 6.0 | | (S) | (X) | |
-|---|---|---|---|---|
+| 6.0 |  | (S) | (X) | |
+| --- | --- | --- | --- | --- |
 
 此方法将 FDF 对象保存为临时 FDF 文件，并将此文件作为附件发送给所有收件人，可选择是否与用户交互。临时文件在不再需要后会被删除。
 
@@ -13858,12 +14366,13 @@ FDF 方法
 
 ### 参数
 
-| **bUI** | （可选）是否显示用户界面。如果为 `true`（默认值），则其余参数用于为显示给用户的“撰写新邮件”窗口提供初始信息。如果为 `false`，则需要 `cTo` 参数，其余参数均为可选。 |
-| **cTo** | （可选）以分号分隔的收件人列表。 |
-| **cCc** | （可选）以分号分隔的抄送收件人列表。 |
-| **cBcc** | （可选）以分号分隔的密送收件人列表。 |
-| **cSubject** | （可选）邮件主题。长度限制为 64k 字节。 |
-| **cMsg** | （可选）邮件内容。长度限制为 64k 字节。 |
+| `bUI` | （可选）是否显示用户界面。如果为 `true`（默认值），则其余参数用于为显示给用户的“撰写新邮件”窗口提供初始信息。如果为 `false`，则需要 `cTo` 参数，其余参数均为可选。 |
+| --- | --- |
+| `cTo` | （可选）以分号分隔的收件人列表。 |
+| `cCc` | （可选）以分号分隔的抄送收件人列表。 |
+| `cBcc` | （可选）以分号分隔的密送收件人列表。 |
+| `cSubject` | （可选）邮件主题。长度限制为 64k 字节。 |
+| `cMsg` | （可选）邮件内容。长度限制为 64k 字节。 |
 
 ### 返回值
 
@@ -13872,29 +14381,29 @@ FDF 方法
 ### 示例
 
 ```javascript
-var fdf = app.openFDF( "/c/temp/myDoc.fdf" );
+var fdf = app.openFDF("/c/temp/myDoc.fdf");
 /* 这将弹出“撰写新邮件”窗口 */
 fdf.mail();
 
 /* 这将把附有 FDF 文件的邮件发送到
 fun1@fun.com 和 fun2@fun.com */
-fdf.mail( false, "fun1@fun.com", "fun2@fun.com", "",
+fdf.mail(false, "fun1@fun.com", "fun2@fun.com", "",
     "This is the subject", "This is the body.");
 ```
 
-## save
+## `save`
 
 | 6.0 | ⓓ | Ⓢ | Ⓧ |  |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 
-将 **FDF 对象**保存为文件。保存操作始终会执行。文件保存时即被关闭，且 **FDF** 对象不再包含有效的对象引用。
+将 `FDF 对象`保存为文件。保存操作始终会执行。文件保存时即被关闭，且 `FDF` 对象不再包含有效的对象引用。
 
 另请参阅 `fdf.close` 方法，该方法同样用于关闭 FDF 文件。
 
 ### 参数
 
-| **cDIPath** | 要保存的文件的设备无关路径。<br>**注意：** （安全性 Ⓢ）：`cDIPath` 必须是**安全路径**，且扩展名必须为 `.fdf`。 |
-|---|---|
+| `cDIPath` | 要保存的文件的设备无关路径。<br>**注意：**（安全性 Ⓢ）：`cDIPath` 必须是**安全路径**，且扩展名必须为 `.fdf`。 |
+| --- | --- |
 
 ### 返回值
 
@@ -13905,17 +14414,17 @@ fdf.mail( false, "fun1@fun.com", "fun2@fun.com", "",
 创建新的 FDF，嵌入 PDF 文档，然后保存。
 
 ```javascript
-var fdf = app.newFDF()
+var fdf = app.newFDF();
 fdf.addEmbeddedFile("/C/myPDFs/myDoc.pdf");
 fdf.save("/c/temp/myDocs.fdf");
 ```
 
-## signatureClear
+## `signatureClear`
 
 | 6.0 | ⓓ | Ⓢ | Ⓧ |  |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 
-如果 **FDF 对象**已签名，则清除签名，如果成功则返回 `true`。如果 **FDF** 对象未签名，则不执行任何操作。不会保存文件。
+如果 `FDF 对象`已签名，则清除签名，如果成功则返回 `true`。如果 `FDF` 对象未签名，则不执行任何操作。不会保存文件。
 
 ### 参数
 
@@ -13925,62 +14434,64 @@ fdf.save("/c/temp/myDocs.fdf");
 
 成功时返回 `true`。
 
-## signatureSign
+## `signatureSign`
 
 | 6.0 | (D) | (S) | (X) |  |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 
-使用指定的安全对象对 FDF 对象进行签名。FDF 对象只能签名一次。FDF 对象在内存中签名，不会自动保存为磁盘文件。签名后调用 save 来保存 FDF 对象。调用 signatureClear 来清除 FDF 签名。
+使用指定的安全对象对 FDF 对象进行签名。FDF 对象只能签名一次。FDF 对象在内存中签名，不会自动保存为磁盘文件。签名后调用 `save` 来保存 FDF 对象。调用 `signatureClear` 来清除 FDF 签名。
 
 ### 参数
 
-| **oSig** | 用于签名的 SecurityHandler 对象。安全对象通常需要初始化后才能用于签名。请查看您的安全处理器文档以了解其是否能够签名 FDF 文件。SecurityHandler 对象的 signFDF 属性将指示特定安全对象是否能够签名 FDF 文件。 |
-| **oInfo** | （可选）一个 SignatureInfo 对象，包含签名的可写属性。 |
-| **nUI** | （可选）签名时显示的对话框类型。值为：0：不显示对话框。1：显示一个简化的对话框，无可编辑字段（字段可在 oInfo 中提供）。2：显示一个更复杂的对话框，包含用于原因、位置和联系信息的可编辑字段。默认值为 0。 |
-| **cUISignTitle** | （可选）用于签名对话框的标题。仅在 nUI 非零时使用。 |
-| **cUISelectMsg** | （可选）当需要用户选择签名资源（如选择凭证）时显示的消息。仅在 nUI 非零时使用。 |
+| `oSig` | 用于签名的 SecurityHandler 对象。安全对象通常需要初始化后才能用于签名。请查看您的安全处理器文档以了解其是否能够签名 FDF 文件。SecurityHandler 对象的 `signFDF` 属性将指示特定安全对象是否能够签名 FDF 文件。 |
+| --- | --- |
+| `oInfo` | （可选）一个 SignatureInfo 对象，包含签名的可写属性。 |
+| `nUI` | （可选）签名时显示的对话框类型。值为：0：不显示对话框。1：显示一个简化的对话框，无可编辑字段（字段可在 `oInfo` 中提供）。2：显示一个更复杂的对话框，包含用于原因、位置和联系信息的可编辑字段。默认值为 0。 |
+| `cUISignTitle` | （可选）用于签名对话框的标题。仅在 `nUI` 非零时使用。 |
+| `cUISelectMsg` | （可选）当需要用户选择签名资源（如选择凭证）时显示的消息。仅在 `nUI` 非零时使用。 |
 
 ### 返回值
 
-如果签名成功应用，则返回 true，否则返回 false。
+如果签名成功应用，则返回 `true`，否则返回 `false`。
 
 ### 示例
 
 打开现有的 FDF 数据文件并签名。
 
 ```javascript
-var eng = security.getHandler( "Adobe.PPKLite" );
-eng.login("myPassword" ,"/c/test/Acme.pfx");
-var myFDF = app.openFDF( "/c/temp/myData.fdf" );
-if( !myFDF.isSigned ) {
+var eng = security.getHandler("Adobe.PPKLite");
+eng.login("myPassword", "/c/test/Acme.pfx");
+var myFDF = app.openFDF("/c/temp/myData.fdf");
+if (!myFDF.isSigned) {
     myFDF.signatureSign({
         oSig: eng,
         nUI: 1,
         cUISignTitle: "Sign Embedded File FDF",
         cUISelectMsg: "Please select a Digital ID to use to " + "sign your embedded file FDF."
     });
-    myFDF.save( "/c/temp/myData.fdf" );
+    myFDF.save("/c/temp/myData.fdf");
 };
 ```
 
-## signatureValidate
+## `signatureValidate`
 
 验证 FDF 对象的签名，并返回一个 SignatureInfo 对象，指定签名的属性。
 
 ### 参数
 
-| **oSig** | （可选）用于验证签名的安全处理器。可以是 SecurityHandler 对象，也可以是具有以下属性的通用对象：<ul><li>oSecHdlr：用于验证此签名的 SecurityHandler 对象。</li><li>bAltSecHdlr：布尔值。如果为 true，则可能使用基于用户首选项设置选择的备用安全处理器来验证签名。默认值为 false，表示使用签名的 handlerName 属性返回的安全处理器来验证签名。如果提供了 oSecHdlr，则不使用此参数。</li></ul>如果未提供 oSig，则使用签名的 handlerName 属性返回的安全处理器来验证签名。 |
-| **bUI** | （可选）当为 true 时，如果在验证数据文件时有必要，允许显示用户界面。如果未指定验证处理器，UI 可用于选择验证处理器。 |
+| `oSig` | （可选）用于验证签名的安全处理器。可以是 SecurityHandler 对象，也可以是具有以下属性的通用对象：<ul><li>`oSecHdlr`：用于验证此签名的 SecurityHandler 对象。</li><li>`bAltSecHdlr`：布尔值。如果为 `true`，则可能使用基于用户首选项设置选择的备用安全处理器来验证签名。默认值为 `false`，表示使用签名的 `handlerName` 属性返回的安全处理器来验证签名。如果提供了 `oSecHdlr`，则不使用此参数。</li></ul>如果未提供 `oSig`，则使用签名的 `handlerName` 属性返回的安全处理器来验证签名。 |
+| --- | --- |
+| `bUI` | （可选）当为 `true` 时，如果在验证数据文件时有必要，允许显示用户界面。如果未指定验证处理器，UI 可用于选择验证处理器。 |
 
 ### 返回值
 
-一个 SignatureInfo 对象。签名状态在 status 属性中描述。
+一个 SignatureInfo 对象。签名状态在 `status` 属性中描述。
 
 ### 示例
 
 ```javascript
 fdf = app.openFDF("/c/temp/myDoc.fdf");
-eng = security.getHandler( "Adobe.PPKLite" );
+eng = security.getHandler("Adobe.PPKLite");
 if (fdf.isSigned)
 {
     var oSigInfo = fdf.signatureValidate({
@@ -13996,7 +14507,7 @@ if (fdf.isSigned)
 
 # 字段对象
 
-**field** 对象表示一个 Acrobat 表单字段（即使用 Acrobat 表单工具或 **doc.addField** 创建的字段）。就像作者可能想要修改现有字段的属性（如边框颜色或字体）一样，**field** 对象使 JavaScript 用户能够执行相同的修改。
+`field` 对象表示一个 Acrobat 表单字段（即使用 Acrobat 表单工具或 `doc.addField` 创建的字段）。就像作者可能想要修改现有字段的属性（如边框颜色或字体）一样，`field` 对象使 JavaScript 用户能够执行相同的修改。
 
 ## 从 JavaScript 访问字段
 
@@ -14006,32 +14517,32 @@ if (fdf.isSigned)
 var f = this.getField("Total");
 ```
 
-此示例允许脚本现在通过变量 **f** 来操作表单字段 **Total**。
+此示例允许脚本现在通过变量 `f` 来操作表单字段 `Total`。
 
-字段可以在文档中分层排列。例如，表单字段可以有像 "FirstName" 和 "LastName" 这样的名称。这些被称为**扁平名称**，这些字段之间没有关联。通过稍微更改字段名称，可以在文档中创建字段层次结构。例如，如果将 "FirstName" 和 "LastName" 改为 "Name.First" 和 "Name.Last"，就会形成一个字段树。Acrobat 表单中的句点 (.) 分隔符用于表示层次结构的转变。这些字段的 "Name" 部分是父级，而 "First" 和 "Last" 是子级。可以构建的层次结构深度没有限制，但重要的是层次结构要保持可管理。同样重要的是要澄清一些术语：字段 "Name" 被称为**内部**字段（即它没有可见的表现形式），而字段 "First" 和 "Last" 是**终端**字段（并显示在页面上）。
+字段可以在文档中分层排列。例如，表单字段可以有像 `"FirstName"` 和 `"LastName"` 这样的名称。这些被称为**扁平名称**，这些字段之间没有关联。通过稍微更改字段名称，可以在文档中创建字段层次结构。例如，如果将 `"FirstName"` 和 `"LastName"` 改为 `"Name.First"` 和 `"Name.Last"`，就会形成一个字段树。Acrobat 表单中的句点（`.`）分隔符用于表示层次结构的转变。这些字段的 `"Name"` 部分是父级，而 `"First"` 和 `"Last"` 是子级。可以构建的层次结构深度没有限制，但重要的是层次结构要保持可管理。同样重要的是要澄清一些术语：字段 `"Name"` 被称为**内部**字段（即它没有可见的表现形式），而字段 `"First"` 和 `"Last"` 是**终端**字段（并显示在页面上）。
 
-关于 Acrobat 表单字段的一个有用属性是，共享*相同名称*的字段也共享*相同的值*。终端字段可以具有该数据的不同呈现形式；它们可以出现在不同的页面上，旋转角度不同，具有不同的字体或背景颜色等，但它们具有相同的值。这意味着，如果修改了某个终端字段的一个呈现形式的值，所有具有相同名称的其他呈现形式都会自动更新。我们将终端字段的每个呈现形式称为*控件*。
+关于 Acrobat 表单字段的一个有用属性是，共享**相同名称**的字段也共享**相同的值**。终端字段可以具有该数据的不同呈现形式；它们可以出现在不同的页面上，旋转角度不同，具有不同的字体或背景颜色等，但它们具有相同的值。这意味着，如果修改了某个终端字段的一个呈现形式的值，所有具有相同名称的其他呈现形式都会自动更新。我们将终端字段的每个呈现形式称为**控件**。
 
 单个控件没有名称。每个控件都通过其终端字段内的索引（从 0 开始）来标识。索引是根据创建该字段的各个控件的顺序确定的（与 Tab 顺序无关）。您可以通过查看 Acrobat 中的“字段”面板轻松确定特定控件的索引。
 
 
 
-它是字段名称中‘#’号后的数字（在Acrobat 6或更高版本中，只有当字段有多个小部件时，才会显示小部件索引）。你可以双击“字段”面板中的条目，跳转到文档中对应的小部件。或者，如果你在文档中选择一个字段，则“字段”面板中的相应条目会被高亮显示。
+它是字段名称中“#”号后的数字（在 Acrobat 6 或更高版本中，只有当字段有多个小部件时，才会显示小部件索引）。你可以双击“字段”面板中的条目，跳转到文档中对应的小部件。或者，如果你在文档中选择一个字段，则“字段”面板中的相应条目会被高亮显示。
 
-## getField() 方法扩展至小部件
+## `getField()` 方法扩展至小部件
 
-调用`getField`时，现在提供了一种新的表示法，可用于检索某个字段中单个小部件的Field对象。此新表示法由在传递的字段名称后追加一个‘:’（冒号）后跟小部件索引构成。使用此方法时，`getField`返回的**field**对象仅封装了一个小部件。你可以将这种返回的**field**对象用于任何可以使用直接传递未修改字段名称所返回的**field**对象的场景。然而，受影响的节点集合可能不同，如下表所示。
+调用`getField`时，现在提供了一种新的表示法，可用于检索某个字段中单个小部件的`Field`对象。此新表示法由在传递的字段名称后追加一个“:”（冒号）后跟小部件索引构成。使用此方法时，`getField`返回的`field`对象仅封装了一个小部件。你可以将这种返回的`field`对象用于任何可以使用直接传递未修改字段名称所返回的`field`对象的场景。然而，受影响的节点集合可能不同，如下表所示。
 
-| 操作 | 代表所有小部件的Field对象 | 代表一个特定小部件的Field对象 |
-| :--- | :--- | :--- |
+| 操作 | 代表所有小部件的 `Field` 对象 | 代表一个特定小部件的 `Field` 对象 |
+|---|---|---|
 | 获取小部件属性 | 获取小部件 # 0 的属性 | 获取该小部件的属性 |
 | 设置小部件属性 | 设置该字段所有子小部件的属性ª | 设置该小部件的属性 |
 | 获取字段属性 | 获取该字段的属性 | 获取父字段的属性 |
 | 设置字段属性 | 设置该字段的属性 | 设置父字段的属性 |
 
-a.  除了`rect`属性和`setFocus`方法。对于这些情况，它应用于小部件 # 0。
+a. 除了`rect`属性和`setFocus`方法。对于这些情况，它应用于小部件 # 0。
 
-以下示例更改了字段"my radio"的第二个单选按钮（第一个索引为0）的`rect`属性。
+以下示例更改了字段“my radio”的第二个单选按钮（第一个索引为0）的`rect`属性。
 
 ```javascript
 var f = this.getField("my radio.1");
@@ -14040,29 +14551,30 @@ f.rect = [360, 677, 392, 646];
 
 ## 字段与小部件属性
 
-JavaScript中**field**对象的一些属性确实存在于字段级别，并应用于该字段的所有子小部件。一个很好的例子是**value**。其他属性实际上是特定于小部件的。一个很好的例子是`rect`。下表显示了哪些属性存在于字段级别，哪些存在于小部件级别。
+JavaScript中`field`对象的一些属性确实存在于字段级别，并应用于该字段的所有子小部件。一个很好的例子是`value`。其他属性实际上是特定于小部件的。一个很好的例子是`rect`。下表显示了哪些属性存在于字段级别，哪些存在于小部件级别。
 
-| 影响小部件级别属性的Field对象属性和方法 | 影响字段级别属性的Field对象属性和方法 |
+| 影响小部件级别属性的 `Field` 对象属性和方法 | 影响字段级别属性的 `Field` 对象属性和方法 |
 |---|---|
 | `alignment`, `borderStyle`, `buttonAlignX`, `buttonAlignY`, `buttonPosition`, `buttonScaleHow`, `buttonScaleWhen`, `display`, `fillColor`, `hidden`, `highlight`, `lineWidth`, `print`, `rect`, `strokeColor`, `style`, `textColor`, `textFont`, `textSize`, `buttonGetCaption`, `buttonGetIcon`, `buttonImportIcon`, `buttonSetCaption`, `buttonSetIcon`, `checkThisBox`, `defaultIsChecked`, `isBoxChecked`, `isDefaultChecked`, `setAction`, `setFocus` | `calcOrderIndex`, `charLimit`, `comb`, `currentValueIndices`, `defaultValue`, `doNotScroll`, `doNotSpellCheck`, `delay`, `doc`, `editable`, `exportValues`, `fileSelect`, `multiline`, `multipleSelection`, `name`, `numItems`, `page`, `password`, `readonly`, `required`, `submitName`, `type`, `userName`, `value`, `valueAsString`, `clearItems`, `browseForFileToSubmit`, `deleteItemAt`, `getItemAt`, `insertItemAt`, `setAction`, `setItems`, `signatureInfo`, `signatureSign`, `signatureValidate` |
 
-a.  这些方法接受一个名为`nWidget`的小部件索引作为参数。如果你在一个代表特定小部件的Field对象`"f"`上调用这些方法，那么`nWidget`参数是可选的（即使传递也会被忽略），并且该方法作用于`"f"`封装的特定小部件。
-b.  一些操作存在于字段级别，一些存在于小部件级别。前者包括`"Keystroke"`、`"Validate"`、`"Calculate"`、`"Format"`。后者包括`"MouseUp"`、`"MouseDown"`、`"MouseEnter"`、`"MouseExit"`、`"OnFocus"`、`"OnBlur"`。
+a. 这些方法接受一个名为`nWidget`的小部件索引作为参数。如果你在一个代表特定小部件的`Field`对象`"f"`上调用这些方法，那么`nWidget`参数是可选的（即使传递也会被忽略），并且该方法作用于`"f"`封装的特定小部件。
+
+b. 一些操作存在于字段级别，一些存在于小部件级别。前者包括`"Keystroke"`、`"Validate"`、`"Calculate"`、`"Format"`。后者包括`"MouseUp"`、`"MouseDown"`、`"MouseEnter"`、`"MouseExit"`、`"OnFocus"`、`"OnBlur"`。
 
 ## 字段属性
 
-**注意：** 一些属性值在PDF文档中以名称形式存储（参见PDF参考文档第3.2.4节关于名称对象），而其他属性值以字符串形式存储（参见PDF参考文档第3.2.3节关于字符串对象）。对于以名称形式存储的属性，其字符串长度有127个字符的限制。
+**注意：** 一些属性值在 PDF 文档中以名称形式存储（参见 PDF 参考文档第 3.2.4 节关于名称对象），而其他属性值以字符串形式存储（参见 PDF 参考文档第 3.2.3 节关于字符串对象）。对于以名称形式存储的属性，其字符串长度有 127 个字符的限制。
 
-具有127个字符限制的属性示例包括复选框和单选按钮的`Field.value`和`Field.defaultValue`。PDF参考文档记录了所有注释属性及其存储方式。
+具有 127 个字符限制的属性示例包括复选框和单选按钮的`Field.value`和`Field.defaultValue`。PDF 参考文档记录了所有注释属性及其存储方式。
 
-## alignment
+## `alignment`
 
 | 3.01 | Ⓓ |  |  |
 |---|---|---|---|
 
 控制文本在文本框内的布局方式。值为`left`（左）、`center`（居中）、`right`（右）。
 
-类型：`String`  访问：`R/W`  字段：`text`。
+类型：`String`　访问：`R/W`　字段：`text`。
 
 ### 示例
 
@@ -14071,30 +14583,30 @@ var f = this.getField("MyText");
 f.alignment = "center";
 ```
 
-## borderStyle
+## `borderStyle`
 
-| 3.01 | D | | |
-| --- | --- | --- | --- |
+| 3.01 | D |  |  |
+|---|---|---|---|
 
 字段的边框样式。有效的边框样式有：
 
-- solid（实线）
-- dashed（虚线）
-- beveled（斜面）
-- inset（内嵌）
-- underline（下划线）
+- `solid`（实线）
+- `dashed`（虚线）
+- `beveled`（斜面）
+- `inset`（内嵌）
+- `underline`（下划线）
 
 边框样式决定了矩形边框的绘制方式。边框对象是一个静态的便利常量，定义了字段的所有边框样式，如下表所示：
 
 | 类型 | 关键字 | 描述 |
-| --- | --- | --- |
-| solid | border.s | 用实线绘制矩形的整个周长。 |
-| beveled | border.b | 等同于实线样式，但在实线边框内部添加了一个斜面（突出外观）边框。 |
-| dashed | border.d | 用虚线绘制矩形周长。 |
-| inset | border.i | 等同于实线样式，但在实线边框内部添加了一个内嵌（内凹外观）边框。 |
-| underline | border.u | 仅绘制矩形周长的底部。 |
+|---|---|---|
+| `solid` | `border.s` | 用实线绘制矩形的整个周长。 |
+| `beveled` | `border.b` | 等同于实线样式，但在实线边框内部添加了一个斜面（突出外观）边框。 |
+| `dashed` | `border.d` | 用虚线绘制矩形周长。 |
+| `inset` | `border.i` | 等同于实线样式，但在实线边框内部添加了一个内嵌（内凹外观）边框。 |
+| `underline` | `border.u` | 仅绘制矩形周长的底部。 |
 
-类型：String  访问：R/W  字段：all。
+类型：`String`　访问：`R/W`　字段：`all`。
 
 ### 示例
 
@@ -14105,25 +14617,25 @@ var f = this.getField("MyField");
 f.borderStyle = border.s; /* border.s 的值为 "solid" */
 ```
 
-## buttonAlignX
+## `buttonAlignX`
 
-控制图标相对于按钮面左侧的空间分配方式。它以0到100（含）之间的百分比表示。默认值为50。
-
-如果图标进行了非等比缩放（导致没有空间差异），则不使用此属性。
-
-类型：Integer  访问：R/W  字段：`button`。
-
-## buttonAlignY
-
-控制未使用的空间相对于按钮面底部的分配方式，图标位置随之调整。它以0到100（含）之间的百分比表示。默认值为50。
+控制图标相对于按钮面左侧的空间分配方式。它以 0 到 100（含）之间的百分比表示。默认值为 50。
 
 如果图标进行了非等比缩放（导致没有空间差异），则不使用此属性。
 
-类型：Integer  访问：R/W  字段：`button`。
+类型：`Integer`　访问：`R/W`　字段：`button`。
+
+## `buttonAlignY`
+
+控制未使用的空间相对于按钮面底部的分配方式，图标位置随之调整。它以 0 到 100（含）之间的百分比表示。默认值为 50。
+
+如果图标进行了非等比缩放（导致没有空间差异），则不使用此属性。
+
+类型：`Integer`　访问：`R/W`　字段：`button`。
 
 ### 示例
 
-这是一个电梯动画。字段"myElevator"是一个宽度小、高度大的按钮表单字段。导入了一个图标作为其外观面。
+这是一个电梯动画。字段“myElevator”是一个宽度小、高度大的按钮表单字段。导入了一个图标作为其外观面。
 
 ```javascript
 function MoveIt()
@@ -14148,26 +14660,26 @@ run.dir=true;
 toprun = app.setTimeOut("app.clearInterval(run); app.clearTimeOut(toprun)", 2*20000+100);
 ```
 
-## buttonFitBounds
+## `buttonFitBounds`
 
-| 6.0 | (D) | | |
+| 6.0 | (D) |  |  |
 |---|---|---|---|
 
-当为**true**时，图标可缩放的程度被设置为按钮字段的边界；其他图标放置属性仍用于在按钮面内缩放/定位图标。
+当为`true`时，图标可缩放的程度被设置为按钮字段的边界；其他图标放置属性仍用于在按钮面内缩放/定位图标。
 
-在Acrobat的早期版本中，即使未指定边框颜色，缩放图标以适应按钮面时也始终会考虑字段边框的宽度。当已为按钮指定了边框颜色时，将此属性设置为**true**会导致引发异常。
+在 Acrobat 的早期版本中，即使未指定边框颜色，缩放图标以适应按钮面时也始终会考虑字段边框的宽度。当已为按钮指定了边框颜色时，将此属性设置为`true`会导致引发异常。
 
-类型：Boolean  访问：R/W  字段：**button**。
+类型：`Boolean`　访问：`R/W`　字段：`button`。
 
-## buttonPosition
+## `buttonPosition`
 
-| 5.0 | (D) | | |
+| 5.0 | (D) |  |  |
 |---|---|---|---|
 
-控制按钮的文本和图标在按钮面内如何相互定位。便利的**position**对象定义了所有有效的替代方案：
+控制按钮的文本和图标在按钮面内如何相互定位。便利的`position`对象定义了所有有效的替代方案：
 
 | 图标/文本放置 | 关键字 |
-| --- | --- |
+|---|---|
 | 仅文本 | `position.textOnly` |
 | 仅图标 | `position.iconOnly` |
 | 图标在上，文本在下 | `position.iconTextV` |
@@ -14176,22 +14688,22 @@ toprun = app.setTimeOut("app.clearInterval(run); app.clearTimeOut(toprun)", 2*20
 | 文本在左，图标在右 | `position.textIconH` |
 | 文本叠加在图标上 | `position.overlay` |
 
-类型：Integer  访问：R/W  字段：**button**。
+类型：`Integer`　访问：`R/W`　字段：`button`。
 
-## buttonScaleHow
+## `buttonScaleHow`
 
-控制图标如何缩放（如有必要）以适应按钮表面。便捷对象 `scaleHow` 定义了所有有效选项：
+控制图标如何缩放（如有必要）以适应按钮表面。便捷对象`scaleHow`定义了所有有效选项：
 
 | 图标缩放方式 | 关键字 |
 |---|---|
 | 按比例缩放 | `scaleHow.proportional` |
 | 非按比例缩放 | `scaleWhen.anamorphic` |
 
-类型：整数     访问：读/写     字段：`button`
+类型：整数　访问：读/写　字段：`button`。
 
-## buttonScaleWhen
+## `buttonScaleWhen`
 
-控制图标何时缩放以适应按钮表面。便捷对象 `scaleWhen` 定义了所有有效选项：
+控制图标何时缩放以适应按钮表面。便捷对象`scaleWhen`定义了所有有效选项：
 
 | 图标缩放时机 | 关键字 |
 |---|---|
@@ -14200,56 +14712,60 @@ toprun = app.setTimeOut("app.clearInterval(run); app.clearTimeOut(toprun)", 2*20
 | 如果图标太大 | `scaleWhen.tooBig` |
 | 如果图标太小 | `scaleWhen.tooSmall` |
 
-类型：整数     访问：读/写     字段：`button`
+类型：整数　访问：读/写　字段：`button`。
 
-## calcOrderIndex
+## `calcOrderIndex`
 
-更改文档中字段的计算顺序。当一个可计算的 `text` 或 `combobox` 字段被添加到文档时，该字段的名称将被追加到计算顺序数组中。计算顺序数组决定了文档中字段的计算顺序。`calcOrderIndex` 属性的工作方式类似于 Acrobat 表单工具中的 `Calculate` 选项卡。
-
-类型：整数     访问：读/写     字段：`combobox`、`text`。
+更改文档中字段的计算顺序。当一个可计算的`text`或`combobox`字段被添加到文档时，该字段的名称将被追加到计算顺序数组中。计算顺序数组决定了文档中字段的计算顺序。`calcOrderIndex`属性的工作方式类似于 Acrobat 表单工具中的`Calculate`选项卡。
 
 ### 示例
 
-```
+```javascript
 var a = this.getField("newItem");
 var b = this.getField("oldItem");
 a.calcOrderIndex = b.calcOrderIndex + 1;
 ```
 
-在此示例中，**getField** 获取在“oldItem”字段之后添加的“newItem”字段。然后，它更改“oldItem”字段的 **calcOrderIndex**，使其在“newItem”字段之前计算。
+在此示例中，`getField`获取在“oldItem”字段之后添加的“newItem”字段。然后，它更改“oldItem”字段的`calcOrderIndex`，使其在“newItem”字段之前计算。
 
-## charLimit
+## `charLimit`
 
 限制用户可以在文本字段中输入的字符数。
-请参阅 **event.fieldFull** 以检测何时达到最大字符数。
+
+请参阅`event.fieldFull`以检测何时达到最大字符数。
 
 类型：整数
+
 访问：读/写
-字段：**text**。
+
+字段：`text`。
 
 ### 示例
 
 设置字段中可输入字符数的限制。
 
-```
+```javascript
 var f = this.getField("myText");
 f.charLimit = 20;
 ```
 
-## comb
+## `comb`
 
-如果设置为 **true**，字段背景将被绘制为一系列方框（每个字符对应一个方框），内容的每个字符都绘制在这些方框内。绘制的方框数量由 **field.charLimit** 属性决定。
-它仅适用于文本字段。如果同时设置了 **multiline**、**password** 和 **fileSelect** 等字段属性，设置器也会引发错误。设置此属性的副作用是 **doNotScroll** 属性也会被设置。
+如果设置为`true`，字段背景将被绘制为一系列方框（每个字符对应一个方框），内容的每个字符都绘制在这些方框内。绘制的方框数量由`field.charLimit`属性决定。
+
+它仅适用于文本字段。如果同时设置了`multiline`、`password`和`fileSelect`等字段属性，设置器也会引发错误。设置此属性的副作用是`doNotScroll`属性也会被设置。
 
 类型：布尔值
+
 访问：读/写
-字段：**text**。
+
+字段：`text`。
 
 ### 示例
 
 在新创建文档的左上角创建一个梳状字段。
 
-```
+```javascript
 var myDoc = app.newDoc();             // 创建空白文档
 var Bbox = myDoc.getPageBox("Crop");  // 获取裁剪框
 var inch = 72;
@@ -14267,35 +14783,39 @@ f.comb = true; // 声明这是一个梳状字段
 f.charLimit = 10; // 最大字符数
 ```
 
-## commitOnSelChange
+## `commitOnSelChange`
 
-控制在选择更改后是否提交字段值。当为 **true** 时，字段值会在选择时立即提交。当为 **false** 时，用户可以多次更改选择而不提交字段值；值仅在字段失去焦点时提交，即当用户点击字段外部时。
+控制在选择更改后是否提交字段值。当为`true`时，字段值会在选择时立即提交。当为`false`时，用户可以多次更改选择而不提交字段值；值仅在字段失去焦点时提交，即当用户点击字段外部时。
 
 类型：布尔值
+
 访问：读/写
-字段：**combobox, listbox**
 
-## currentValueIndices
+字段：`combobox`、`listbox`。
 
-读取和写入 **listbox** 或 **combobox** 的单个或多个值。
+## `currentValueIndices`
 
-返回作为 **listbox** 或 **combobox** 字段值的字符串的选项数组索引。这些索引是从0开始的。如果字段的值是单个字符串，则返回一个整数。否则，返回一个按升序排序的整数数组。如果字段的当前值不是所提供选项集的成员（在可编辑的 combobox 情况下可能发生），则返回 -1。
+读取和写入`listbox`或`combobox`的单个或多个值。
 
-设置 **listbox** 或 **combobox** 的值。它接受单个整数或整数数组作为参数。要设置单个字符串作为值，请传递一个整数，该整数是该字符串在选项数组中的从0开始的索引。请注意，在可编辑 **combobox** 的情况下，如果所需值不是所提供选项集的成员，则必须改用 **value**。除这种情况外，**currentValueIndices** 是设置 **listbox** 或 **combobox** 值的首选方式。
+返回作为`listbox`或`combobox`字段值的字符串的选项数组索引。这些索引是从 0 开始的。如果字段的值是单个字符串，则返回一个整数。否则，返回一个按升序排序的整数数组。如果字段的当前值不是所提供选项集的成员（在可编辑的`combobox`情况下可能发生），则返回 -1。
 
-要为允许多选的 **listbox** 设置多选，请将一个包含这些字符串在选项数组中索引（按升序排序）的数组作为参数传递给此属性。这是从 JavaScript 为 **listbox** 调用多选的唯一方式。**listbox** 是否支持多选可以通过 `multipleSelection` 设置。
+设置`listbox`或`combobox`的值。它接受单个整数或整数数组作为参数。要设置单个字符串作为值，请传递一个整数，该整数是该字符串在选项数组中的从 0 开始的索引。请注意，在可编辑`combobox`的情况下，如果所需值不是所提供选项集的成员，则必须改用`value`。除这种情况外，`currentValueIndices`是设置`listbox`或`combobox`值的首选方式。
 
-相关的字段方法和属性包括 `numItems`、`getItemAt`、`insertItemAt`、`deleteItemAt` 和 `setItems`。
+要为允许多选的`listbox`设置多选，请将一个包含这些字符串在选项数组中索引（按升序排序）的数组作为参数传递给此属性。这是从 JavaScript 为`listbox`调用多选的唯一方式。`listbox`是否支持多选可以通过`multipleSelection`设置。
+
+相关的字段方法和属性包括`numItems`、`getItemAt`、`insertItemAt`、`deleteItemAt`和`setItems`。
 
 类型：整数 | 数组
+
 访问：读/写
-字段：combobox, listbox
+
+字段：`combobox`、`listbox`。
 
 ### 示例（读取）
 
 下面的脚本是按钮的鼠标弹起动作。脚本获取列表框的当前值。
 
-```
+```javascript
 var f = this.getField("myList");
 var a = f.currentValueIndices;
 if (typeof a == "number") // 单选
@@ -14309,20 +14829,22 @@ else { // 多选
 
 ### 示例（写入）
 
-以下代码选择列表框中的第二个和第四个项（索引值分别为 1 和 3，从0开始）。
+以下代码选择列表框中的第二个和第四个项（索引值分别为 1 和 3，从 0 开始）。
 
-```
+```javascript
 var f = this.getField("myList");
 f.currentValueIndices = [1,3];
 ```
 
-## defaultStyle
+## `defaultStyle`
+
+
 
 此属性定义表单字段的默认样式属性。如果用户点击进入一个空字段并开始输入文本，而没有使用属性工具栏更改属性，则将使用这些属性。此属性是一个不带 `text` 属性的 `Span Object`。默认样式 span 中的某些属性与字段对象的属性相对应。更改这些属性也会修改字段的 `defaultStyle` 属性，反之亦然。
 
 下表详细说明了字段对象中也存在于默认样式中的属性及其值的差异。
 
-| 字段属性 | defaultStyle (Span 属性) | 描述 |
+| 字段属性 | `defaultStyle`（Span 属性） | 描述 |
 |---|---|---|
 | 对齐 | 对齐 | 默认样式和字段对象的对齐属性具有相同的值。 |
 | `textFont` | `fontFamily`<br>`fontStyle`<br>`fontWeight` | 此字段属性的值是一个完整的字体名称，代表字体族、粗细和样式。在默认样式属性中，每个属性是单独表示的。如果无法找到与默认样式中指定的字体属性完全匹配的字体，将使用或合成一个相似的字体。 |
@@ -14335,8 +14857,10 @@ f.currentValueIndices = [1,3];
 
 `defaultStyle` 中的上标和下标将被忽略。
 
-类型：Span 对象
+类型：`Span` 对象
+
 访问：读/写
+
 字段：`richtext`。
 
 ### 示例
@@ -14358,15 +14882,15 @@ this.getField("Text1").defaultStyle = style;
 
 公开字段的默认值。这是在重置表单时设置为字段的值。对于 `comboboxes` 和 `listboxes`，可以使用导出值或用户值来设置默认值。在冲突的情况下（例如，字段同时具有导出值和用户值），将使用导出值。
 
-
-
 ## defaultValue
 
 当字段有多个同名的导出值（但对应于选项列表中的不同项）时，导出值首先与之匹配。
 
 类型：字符串
+
 访问权限：读/写
-适用字段：除 **button**、**signature** 之外的所有字段。
+
+适用字段：除 `button`、`signature` 之外的所有字段。
 
 ### 示例
 
@@ -14379,46 +14903,51 @@ f.defaultValue = "Enter your name here.";
 
 | 5.0 | Ⓓ |  |  |
 
-当设置为 **true** 时，文本字段不会滚动，因此用户被限制在为该字段设计的矩形区域内。将此属性设置为 **true** 或 **false** 对应于在字段的“选项”选项卡中选中或取消选中“滚动长文本”字段。
+当设置为 `true` 时，文本字段不会滚动，因此用户被限制在为该字段设计的矩形区域内。将此属性设置为 `true` 或 `false` 对应于在字段的“选项”选项卡中选中或取消选中“滚动长文本”字段。
 
 类型：布尔值
+
 访问权限：读/写
-适用字段：**text**。
+
+适用字段：`text`。
 
 ## doNotSpellCheck
 
 | 5.0 | Ⓓ |  |  |
 
-当设置为 **true** 时，*不会*对该可编辑文本字段执行拼写检查。将此属性设置为 **true** 或 **false** 对应于在“字段属性”对话框的“选项”选项卡中取消选中或选中“检查拼写”属性。
+当设置为 `true` 时，**不会**对该可编辑文本字段执行拼写检查。将此属性设置为 `true` 或 `false` 对应于在“字段属性”对话框的“选项”选项卡中取消选中或选中“检查拼写”属性。
 
 类型：布尔值
+
 访问权限：读/写
-适用字段：**combobox**（可编辑）、**text**。
+
+适用字段：`combobox`（可编辑）、`text`。
 
 ## delay
 
 | 3.01 |  |  |  |
 
-延迟字段外观的重绘。它通常用于缓冲对字段属性的一系列更改，然后才请求字段重新生成其外观。将属性设置为 **true** 会强制字段等待，直到 **delay** 被设置为 **false**。此时字段外观更新发生，使用其最新设置重绘字段。
+延迟字段外观的重绘。它通常用于缓冲对字段属性的一系列更改，然后才请求字段重新生成其外观。将属性设置为 `true` 会强制字段等待，直到 `delay` 被设置为 `false`。此时字段外观更新发生，使用其最新设置重绘字段。
 
-如果同时更改多个字段，则存在相应的 **doc** .**delay** 标志。
+如果同时更改多个字段，则存在相应的 `doc.delay` 标志。
 
 类型：布尔值
+
 访问权限：读/写
-适用字段：all。
+
+适用字段：`all`。
 
 ### 示例
 
-此示例更改复选框的外观；它将 **delay** 设置为 **true**，进行更改，然后将 **delay** 设置为 **false**。
+此示例更改复选框的外观；它将 `delay` 设置为 `true`，进行更改，然后将 `delay` 设置为 `false`。
 
-```
+```javascript
 // 获取 myCheckBox 字段
 var f = this.getField("myCheckBox");
 // 设置延迟并更改字段属性为斜角边缘和中等厚度线
 f.delay = true;
 f.borderStyle = border.b;
-...
-// 一系列其他更改
+// ... 一系列其他更改
 f.strokeWidth = 2;
 f.delay = false; // 立即强制应用更改
 ```
@@ -14429,18 +14958,22 @@ f.delay = false; // 立即强制应用更改
 
 | 效果 | 关键字 |
 |---|---|
-| 字段在屏幕上和打印时都可见 | **display.visible** |
-| 字段在屏幕上和打印时都隐藏 | **display.hidden** |
-| 字段在屏幕上可见但不打印 | **display.noPrint** |
-| 字段在屏幕上隐藏但打印 | **display.noView** |
+| 字段在屏幕上和打印时都可见 | `display.visible` |
+| 字段在屏幕上和打印时都隐藏 | `display.hidden` |
+| 字段在屏幕上可见但不打印 | `display.noPrint` |
+| 字段在屏幕上隐藏但打印 | `display.noView` |
 
-此属性取代了旧的 **hidden** 和 **print** 属性。
+此属性取代了旧的 `hidden` 和 `print` 属性。
 
-*类型:* 整数 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *访问权限:* 读/写 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *适用字段:* all.
+类型：整数
+
+访问权限：读/写
+
+适用字段：`all`。
 
 ### 示例
 
-```
+```javascript
 // 设置 display 属性
 var f = getField("myField");
 f.display = display.noPrint;
@@ -14451,43 +14984,55 @@ if (f.display == display.hidden) console.println("hidden");
 
 ## doc
 
-返回字段所属文档的 **Doc 对象**。
+返回字段所属文档的 `Doc` 对象。
 
-类型：对象 访问权限：读/写 适用字段：all.
+类型：对象
+
+访问权限：读/写
+
+适用字段：`all`。
 
 ## editable
 
-| 3.01 | D | | |
+| 3.01 | D |  |  |
 
-控制组合框是否可编辑。当设置为 true 时，用户可以输入选择。当设置为 false 时，用户必须从提供的选项中选择。
+控制组合框是否可编辑。当设置为 `true` 时，用户可以输入选择。当设置为 `false` 时，用户必须从提供的选项中选择。
 
-类型：布尔值 访问权限：读/写 适用字段：combobox
+类型：布尔值
+
+访问权限：读/写
+
+适用字段：`combobox`
 
 ### 示例
 
-```
-var f = this.getField("myCombo\_Box");
+```javascript
+var f = this.getField("myCombo_Box");
 f.editable = true;
 ```
 
 ## exportValues
 
-| 5.0 | D | | |
+| 5.0 | D |  |  |
 
 为字段定义的导出值数组。对于单选按钮字段，这是使该字段作为一组正常工作的必要条件，任何给定时间只能有一个按钮被选中，并将其值提供给整个字段。对于复选框字段，除非指定了导出值，否则选中时使用的默认值是“是”（或相应的本地化字符串）。当未选中时，其值为“关闭”（对于单选按钮字段，当没有按钮被选中时也是如此）。此属性包含一个字符串数组，其元素数量与字段中的注释数量相同。数组元素按照创建顺序映射到组成该字段的各个注释（不受标签顺序影响）。
 
-类型：数组 访问权限：读/写 适用字段：checkbox, radiobutton
+类型：数组
+
+访问权限：读/写
+
+适用字段：`checkbox`、`radiobutton`
 
 ### 示例
 
 此示例创建一个单选按钮字段并设置其导出值。
 
-```
+```javascript
 var d = 40;
-var f = this.addField("myRadio","radiobutton",0, [200, 510, 210, 500]);
-this.addField("myRadio","radiobutton",0, [200+d, 510-d, 210+d, 500-d]);
-this.addField("myRadio","radiobutton",0,[200, 510-2*d, 210, 500-2*d]);
-this.addField("myRadio","radiobutton",0,[200-d, 510-d, 210-d, 500-d]);
+var f = this.addField("myRadio", "radiobutton", 0, [200, 510, 210, 500]);
+this.addField("myRadio", "radiobutton", 0, [200 + d, 510 - d, 210 + d, 500 - d]);
+this.addField("myRadio", "radiobutton", 0, [200, 510 - 2 * d, 210, 500 - 2 * d]);
+this.addField("myRadio", "radiobutton", 0, [200 - d, 510 - d, 210 - d, 500 - d]);
 f.strokeColor = color.black;
 // 现在为每个单选字段设置导出值
 f.exportValues = ["North", "East", "South", "West"];
@@ -14495,40 +15040,44 @@ f.exportValues = ["North", "East", "South", "West"];
 
 ## fileSelect
 
-| 5.0 | D | S | |
+| 5.0 | D | S |  |
 |---|---|---|---|
 
-当设置为 **true** 时，在**text** 字段的 **Options** 选项卡中设置文件选择标志（“字段用于文件选择”）。这表示字段的值代表一个文件的路径名，其内容可以随表单一起提交。
+当设置为 `true` 时，在 `text` 字段的 **Options** 选项卡中设置文件选择标志（“字段用于文件选择”）。这表示字段的值代表一个文件的路径名，其内容可以随表单一起提交。
 
 路径名可以直接由用户输入到字段中，或者用户可以浏览文件。（参见 [browseForFileToSubmit](.)。）
 
-> **注意：** 文件选择标志与 [multiline](.)、[charLimit](.)、[password](.) 和 [defaultValue](.) 互斥。此外，在 Macintosh 平台上，设置文件选择标志时，该字段被视为只读；因此，用户必须浏览文件才能输入到字段中。（参见 [browseForFileToSubmit](.)。)
+> **注意：** 文件选择标志与 [multiline](.)、[charLimit](.)、[password](.) 和 [defaultValue](.) 互斥。此外，在 Macintosh 平台上，设置文件选择标志时，该字段被视为只读；因此，用户必须浏览文件才能输入到字段中。（参见 [browseForFileToSubmit](.)。）
 
 （安全性）：此属性只能在批处理、菜单或控制台事件期间设置。另请参阅“特权与非特权上下文”。[Event Object](.) 包含对 Acrobat JavaScript 事件的讨论。
 
 从 Acrobat 7.0 开始，通过菜单事件执行 JavaScript 不再是特权操作，详情请参阅 [JavaScript Execution through the Menu](.)。
 
 类型：布尔值
+
 访问权限：读/写
-适用字段：**text**。
+
+适用字段：`text`。
 
 ## fillColor
 
-| 4.0 | D | | |
+| 4.0 | D |  |  |
 
 指定字段的背景色。背景色用于填充字段的矩形区域。值通过使用 `transparent`、`gray`、RGB 或 CMYK 颜色来定义。有关定义颜色数组以及如何将值与此属性一起使用的信息，请参阅 [Color Arrays](.)。
 
 在此规范的旧版本中，此属性名为 `bgColor`。现在不鼓励使用 `bgColor`，但为了向后兼容仍然有效。
 
 类型：数组
+
 访问权限：读/写
-适用字段：all.
+
+适用字段：`all`。
 
 ### 示例
 
 此代码更改文本字段的背景色：如果当前颜色是红色，则将颜色更改为蓝色，否则更改为黄色。
 
-```
+```javascript
 var f = this.getField("myField");
 if (color.equal(f.fillColor, color.red))
     f.fillColor = color.blue;
@@ -14538,14 +15087,19 @@ else
 
 ## hidden
 
-控制字段对用户是隐藏还是可见。如果值为 **false**，则字段可见；为 **true**，则字段不可见。**hidden** 的默认值为 **false**。
+控制字段对用户是隐藏还是可见。如果值为 `false`，则字段可见；为 `true`，则字段不可见。`hidden` 的默认值为 `false`。
+
 另请参阅在更高版本中取代此属性的 [display](https://example.com)。
 
-类型：布尔值 访问权限：读/写 适用字段：*all*。
+类型：布尔值
+
+访问权限：读/写
+
+适用字段：`all`。
 
 ### 示例
 
-```
+```javascript
 var f = this.getField("myField");
 f.hidden = true; // 将字段设置为隐藏
 ```
@@ -14553,33 +15107,39 @@ f.hidden = true; // 将字段设置为隐藏
 ## highlight
 
 定义按钮在用户单击时的反应。支持的四种高亮模式是：
+
 **none**：没有指示按钮已被单击的可视提示。
+
 **invert**：单击导致包含按钮矩形的区域瞬间反转。
+
 **push**：单击瞬间显示按钮的按下状态（如果有）。
+
 **outline**：单击导致矩形边框瞬间反转。
 
-便捷 **highlight** 对象定义了每种状态，如下：
+便捷 `highlight` 对象定义了每种状态，如下：
 
 | 类型 | 关键字 |
 |---|---|
-| **none** | `highlight.n` |
-| **invert** | `highlight.i` |
-| **push** | `highlight.p` |
-| **outline** | `highlight.o` |
+| `none` | `highlight.n` |
+| `invert` | `highlight.i` |
+| `push` | `highlight.p` |
+| `outline` | `highlight.o` |
 
-类型：字符串 访问权限：读/写 适用字段：**button**。
+类型：字符串
+
+访问权限：读/写
+
+适用字段：`button`。
 
 ### 示例
 
-以下示例将按钮的 **highlight** 属性设置为“invert”。
+以下示例将按钮的 `highlight` 属性设置为“invert”。
 
-```
+```javascript
 // 将按钮的高亮模式设置为 invert
 var f = this.getField("myButton");
 f.highlight = highlight.i;
 ```
-
-
 
 ## lineWidth
 
@@ -14592,47 +15152,64 @@ f.highlight = highlight.i;
 
 在此规范的早期版本中，此属性名为 `borderWidth`。现已不鼓励使用 `borderWidth`，但为保持向后兼容性，它仍然有效。
 
-类型：整数  访问权限：读/写  字段：所有。
+类型：整数
+
+访问权限：读/写
+
+字段：所有。
 
 ### 示例
 
-```
+```javascript
 // 将文本框的边框宽度改为中等
-f.lineWidth = 2
+f.lineWidth = 2;
 ```
 
-`lineWidth` 的默认值为 1（`thin`）。可以使用任何整数值；但是，超过5的值可能会扭曲字段的外观。
+`lineWidth` 的默认值为 1（`thin`）。可以使用任何整数值；但是，超过 5 的值可能会扭曲字段的外观。
 
 ## multiline
 
 控制文本在字段内的换行方式。当为 `false` 时（默认值），文本字段只能为单行。当为 `true` 时，允许多行文本并自动换行以适应字段边界。
 
-类型：布尔值  访问权限：读/写  字段：`text`。
+类型：布尔值
+
+访问权限：读/写
+
+字段：`text`。
 
 ### 示例
 
-请参见 `doc.getField` 后的示例1。
+请参见 `doc.getField` 后的示例 1。
 
 ## multipleSelection
 
 如果为 `true`，表示列表框允许选择多个项目。
+
 另请参见 `type`、`value` 和 `currentValueIndices`。
 
-类型：布尔值  访问权限：读/写  字段：`listbox`
+类型：布尔值
+
+访问权限：读/写
+
+字段：`listbox`
 
 ## name
 
 此属性以字符串对象的形式返回字段的完整限定名称。
-从 Acrobat 6.0 开始，如果字段对象表示单个控件，则返回的名称将包含附加的 '.'，后跟控件索引。
+
+从 Acrobat 6.0 开始，如果字段对象表示单个控件，则返回的名称将包含附加的 `.`，后跟控件索引。
+
 类型：字符串
+
 访问权限：只读
+
 字段：所有。
 
 ### 示例
 
 获取一个字段对象，并将字段名称写入控制台。
 
-```
+```javascript
 var f = this.getField("myField");
 
 // 在控制台窗口中显示 "myField"
@@ -14642,15 +15219,18 @@ console.println(f.name);
 ## numItems
 
 组合框或列表框中的项目数量。
+
 类型：整数
+
 访问权限：只读
-字段：combobox, listbox。
+
+字段：`combobox`、`listbox`。
 
 ### 示例
 
 获取列表框中的项目数量。
 
-```
+```javascript
 var f = this.getField("myList");
 console.println("There are " + f.numItems + " in this listbox");
 ```
@@ -14659,13 +15239,17 @@ console.println("There are " + f.numItems + " in this listbox");
 
 ## page
 
-返回字段的页码或页码数组。如果字段在文档中只出现一次，`page` 属性将返回一个整数，表示该字段所在页面的页码（基于0）。如果字段出现多次，它将返回一个整数数组，每个元素代表该字段某次出现的页码（基于0）。数组中页码的顺序取决于该字段各个控件的创建顺序（不受制表顺序的影响）。如果字段的某次出现位于隐藏的模板页面上，`page` 对该次出现返回 -1。
+返回字段的页码或页码数组。如果字段在文档中只出现一次，`page` 属性将返回一个整数，表示该字段所在页面的页码（基于 0）。如果字段出现多次，它将返回一个整数数组，每个元素代表该字段某次出现的页码（基于 0）。数组中页码的顺序取决于该字段各个控件的创建顺序（不受制表顺序的影响）。如果字段的某次出现位于隐藏的模板页面上，`page` 对该次出现返回 `-1`。
 
-类型：整数 | 数组  访问权限：只读  字段：所有。
+类型：整数 | 数组
+
+访问权限：只读
+
+字段：所有。
 
 ### 示例 1
 
-```
+```javascript
 var f = this.getField("myField");
 if (typeof f.page == "number")
     console.println("This field only occurs once on page " + f.page);
@@ -14677,9 +15261,9 @@ else
 
 `page` 属性是发现与字段名称关联的控件数量的一种方法。例如，以编程方式发现单选按钮字段中的单选按钮数量。
 
-```
+```javascript
 var f = this.getField("myRadio");
-if ( typeof f.page == "object" )
+if (typeof f.page == "object")
     console.println("There are " + f.page.length
         + " radios in this field.");
 ```
@@ -14688,44 +15272,58 @@ if ( typeof f.page == "object" )
 
 使字段显示为输入数据的星号。提交时，将发送实际输入的数据。设置了密码属性的字段在将文档保存到磁盘时，不会保存字段中的数据。
 
-类型：布尔值  访问权限：读/写  字段：**text**。
+类型：布尔值
+
+访问权限：读/写
+
+字段：`text`。
 
 ## print
 
-确定给定字段是否打印。将 **print** 属性设置为 **true** 以允许该字段在用户打印文档时显示，设置为 **false** 以禁止打印。此属性可用于隐藏控制按钮和在打印页面上无用的其他字段。
+确定给定字段是否打印。将 `print` 属性设置为 `true` 以允许该字段在用户打印文档时显示，设置为 `false` 以禁止打印。此属性可用于隐藏控制按钮和在打印页面上无用的其他字段。
 
 此属性已被 [display](display) 属性取代，不鼓励使用。
 
-类型：布尔值  访问权限：读/写  字段：所有。
+类型：布尔值
+
+访问权限：读/写
+
+字段：所有。
 
 ### 示例
 
 设置一个字段使其不打印。
 
-```
+```javascript
 var f = this.getField("myField");
 f.print = false;
 ```
 
 ## radiosInUnison
 
-当为 **false** 时，即使一组单选按钮具有相同的名称和导出值，它们的行为也是互斥的，类似于 HTML 单选按钮。新单选按钮的默认值为 **false**。
+当为 `false` 时，即使一组单选按钮具有相同的名称和导出值，它们的行为也是互斥的，类似于 HTML 单选按钮。新单选按钮的默认值为 `false`。
 
-当为 **true** 时，如果一组单选按钮具有相同的名称和导出值，它们将同步开启和关闭，如 Acrobat 4.0 中所示。
+当为 `true` 时，如果一组单选按钮具有相同的名称和导出值，它们将同步开启和关闭，如 Acrobat 4.0 中所示。
 
-类型：布尔值  访问权限：读/写  字段：`radiobutton`
+类型：布尔值
+
+访问权限：读/写
+
+字段：`radiobutton`
+
+
 
 ## readonly
 
 设置或获取字段的只读特性。如果字段是只读的，用户可以看到该字段但不能更改它。
 
-类型：布尔值  访问权限：读/写  字段：所有。
+类型：布尔值　访问权限：读/写　字段：所有。
 
 ### 示例
 
 获取一个字段并将其设置为只读。
 
-```
+```javascript
 var f = this.getField("myTextField");
 f.value = "You can't change this message!";
 f.readonly = true;
@@ -14733,19 +15331,22 @@ f.readonly = true;
 
 ## rect
 
-设置或获取一个包含四个数字的 *旋转用户空间* 数组，用于指定表单字段的大小和位置。这四个数字是边界矩形的坐标，按以下顺序排列：左上角 x、左上角 y、右下角 x 和右下角 y。
+设置或获取一个包含四个数字的旋转用户空间数组，用于指定表单字段的大小和位置。这四个数字是边界矩形的坐标，按以下顺序排列：左上角 x、左上角 y、右下角 x 和右下角 y。
 
-**注意：** **注释对象**也有一个 **`rect`**，但是：1）坐标不在 *旋转用户空间* 中，2）它们的顺序与 **`field.rect`** 中的顺序不同。
+**注意：** 注释对象也有一个`rect`，但是：
 
-类型：数组  访问权限：读/写  字段：所有。
+1. 坐标不在旋转用户空间中。
+2. 它们的顺序与`field.rect`中的顺序不同。
+
+类型：数组　访问权限：读/写　字段：所有。
 
 ### 示例 1
 
-在 "myText" 字段的正右侧布局一个宽度为2英寸的文本字段。
+在`myText`字段的正右侧布局一个宽度为 2 英寸的文本字段。
 
-```
+```javascript
 var f = this.getField("myText"); // 获取字段对象
-var myRect = f.rect;                // 并获取其矩形
+var myRect = f.rect;              // 并获取其矩形
 
 // 为新字段进行必要的坐标调整
 myRect[0] = f.rect[2]; // 新的 ulx = 旧的 lrx
@@ -14756,9 +15357,9 @@ f.strokeColor = color.black;
 
 ### 示例 2
 
-将已存在的按钮字段向右移动10点。
+将已存在的按钮字段向右移动 10 点。
 
-```
+```javascript
 var b = this.getField("myButton");
 var aRect = b.rect; // 复制 b.rect
 aRect[0] += 10;     // 第一个 x 坐标增加 10
@@ -14768,43 +15369,43 @@ b.rect = aRect;     // 更新 b.rect 的值
 
 ## required
 
-设置或获取字段的 *必需* 特性。当为 **true** 时，当用户点击提交按钮导致该字段的值被提交时，字段的值必须非 **null**。如果字段值为 **null**，用户会收到警告消息，并且提交不会发生。
+设置或获取字段的必需特性。当为`true`时，当用户点击提交按钮导致该字段的值被提交时，字段的值必须非`null`。如果字段值为`null`，用户会收到警告消息，并且提交不会发生。
 
-类型：布尔值  访问权限：读/写  字段：*除按钮外的所有字段*
+类型：布尔值　访问权限：读/写　字段：除按钮外的所有字段。
 
 ### 示例
 
-将 "myField" 设置为必填字段。
+将`myField`设置为必填字段。
 
-```
+```javascript
 var f = this.getField("myField");
 f.required = true;
 ```
 
 ## richText
 
-获取和设置文本字段的富文本属性。如果为 **true**，该字段将允许富文本格式。默认值为 **false**。
+获取和设置文本字段的富文本属性。如果为`true`，该字段将允许富文本格式。默认值为`false`。
 
-类型：布尔值  访问权限：读/写  字段：*text*
+类型：布尔值　访问权限：读/写　字段：text。
 
-相关对象和属性有 [Span 对象](#span-object)、**field**.**richValue**、**field**.**defaultStyle**、**event**.**richValue**、**event**.**richChange**、**event**.**richChangeEx** 和 **annot**.**richContents**。
+相关对象和属性有[Span 对象](#span-object)、`field.richValue`、`field.defaultStyle`、`event.richValue`、`event.richChange`、`event.richChangeEx`和`annot.richContents`。
 
 ### 示例 1
 
 获取一个字段对象，并将其设置为富文本格式。
 
-```
+```javascript
 var f = this.getField("Text1");
 f.richText = true;
 ```
 
-有关更完整的示例，请参见 richValue 后的示例2。
+有关更完整的示例，请参见`richValue`后的示例 2。
 
 ### 示例 2
 
 统计文档中的富文本字段数量。
 
-```
+```javascript
 var count = 0;
 for ( var i = 0; i < this.numFields; i++)
 {
@@ -14817,17 +15418,17 @@ console.println("There are a total of "+ count + " rich text fields.");
 
 ## richValue
 
-此属性获取富文本字段的文本内容和格式。对于富文本以外的字段类型，此属性为 **undefined**。富文本内容表示为 [Span 对象](#span-object) 的数组，包含字段的文本内容和格式。
+此属性获取富文本字段的文本内容和格式。对于富文本以外的字段类型，此属性为`undefined`。富文本内容表示为[Span 对象](#span-object)的数组，包含字段的文本内容和格式。
 
-类型：[Span 对象](#span-object) 的数组  访问权限：读/写  字段：**richtext**。
+类型：[Span 对象](#span-object)的数组　访问权限：读/写　字段：richtext。
 
-相关对象和属性有 [Span 对象](#span-object)、**field.richText**、**field.defaultStyle**、event.richValue、event.richChange、event.richChangeEx 和 annot.richContents。
+相关对象和属性有[Span 对象](#span-object)、`field.richText`、`field.defaultStyle`、`event.richValue`、`event.richChange`、`event.richChangeEx`和`annot.richContents`。
 
 ### 示例 1
 
 此示例将所有粗体文本转换为红色下划线文本。
 
-```
+```javascript
 var f = this.getField("Text1");
 var spans = f.richValue;
 for ( var i = 0; i < spans.length; i++ )
@@ -14845,15 +15446,13 @@ f.richValue = spans;
 
 此示例创建一个文本字段，将其标记为富文本格式，并插入富文本。
 
-
-
 ## Acrobat JavaScript 脚本参考
 
 ## 字段属性
 
 ```javascript
 var myDoc = app.newDoc();                    // 创建空白文档
-var Bbox = myDoc.getPageBox("Crop");        // 获取裁切框
+var Bbox = myDoc.getPageBox("Crop");         // 获取裁切框
 var inch = 72;
 
 // 在文档顶部添加一个文本字段
@@ -14861,8 +15460,8 @@ var f = myDoc.addField("Text1", "text", 0,
     [72, Bbox[1]-inch, Bbox[2]-inch, Bbox[1]-2*inch ] );
 // 为该文本字段添加一些属性
 f.strokeColor = color.black;
-f.richText = true;                          // 富文本
-f.multiline = true;                         // 多行
+f.richText = true;                           // 富文本
+f.multiline = true;                          // 多行
 
 // 现在构建一个 Span 对象数组
 var spans = new Array();
@@ -14892,9 +15491,9 @@ f.richValue = spans;
 
 以 90 度为增量（逆时针方向）确定控件的旋转角度。有效值为 0、90、180、270。
 
-类型：整数 访问权限：读/写 适用字段：所有字段。
+类型：整数　访问权限：读/写　适用字段：所有字段。
 
-## 示例
+### 示例
 
 在每一页上创建一个旋转的文本字段并填充文本。
 
@@ -14908,18 +15507,18 @@ for ( var i=0; i < this.numPages; i++) {
 
 ## strokeColor
 
-指定字段的描边颜色，该颜色用于以线条宽度为厚度的线条勾勒字段的矩形边框。值通过 **transparent**、**gray**、**RGB** 或 [CMYK](https://example.com) 颜色来定义。有关定义颜色数组以及此属性如何使用值的信息，请参阅 [颜色数组](https://example.com)。
+指定字段的描边颜色，该颜色用于以线条宽度为厚度的线条勾勒字段的矩形边框。值通过`transparent`、`gray`、`RGB`或[CMYK](https://example.com)颜色来定义。有关定义颜色数组以及此属性如何使用值的信息，请参阅[颜色数组](https://example.com)。
 
-在此规范的早期版本中，此属性名为 **borderColor**。现已不鼓励使用 **borderColor**，但为保持向后兼容性，它仍然有效。
+在此规范的早期版本中，此属性名为`borderColor`。现已不鼓励使用`borderColor`，但为保持向后兼容性，它仍然有效。
 
-类型：数组 访问权限：读/写 适用字段：所有字段。
+类型：数组　访问权限：读/写　适用字段：所有字段。
 
-## 示例
+### 示例
 
 将文档中每个文本字段的描边颜色更改为红色。
 
 ```javascript
-for ( var i=0; i < this.numFields; i++) {
+for ( var i = 0; i < this.numFields; i++) {
     var fname = this.getNthFieldName(i);
     var f = this.getField(fname);
     if ( f.type == "text" ) f.strokeColor = color.red;
@@ -14928,7 +15527,8 @@ for ( var i=0; i < this.numFields; i++) {
 
 ## style
 
-允许用户设置**复选框**或**单选按钮**的字形样式。字形样式是用于表示该项已被选中的图形。
+允许用户设置复选框或单选按钮的字形样式。字形样式是用于表示该项已被选中的图形。
+
 样式值与关键字的关联如下：
 
 | 样式 | 关键字 |
@@ -14940,11 +15540,11 @@ for ( var i=0; i < this.numFields; i++) {
 | 星形 | `style.st` |
 | 方形 | `style.sq` |
 
-类型：字符串 访问权限：读/写 适用字段：复选框、单选按钮
+类型：字符串　访问权限：读/写　适用字段：复选框、单选按钮。
 
-## 示例
+### 示例
 
-以下示例说明了此属性和 style 对象的用法，它将字形样式设置为圆形。
+以下示例说明了此属性和`style`对象的用法，它将字形样式设置为圆形。
 
 ```javascript
 var f = this.getField("myCheckbox");
@@ -14953,21 +15553,21 @@ f.style = style.ci;
 
 ## submitName
 
-如果非空，则在表单提交期间使用此名称代替 name 属性。仅在以 HTML 格式（即 URLEncoded）提交时适用。
+如果非空，则在表单提交期间使用此名称代替`name`属性。仅在以 HTML 格式（即 URLEncoded）提交时适用。
 
-类型：字符串 访问权限：读/写 适用字段：所有字段。
+类型：字符串　访问权限：读/写　适用字段：所有字段。
 
 ## textColor
 
-此属性确定字段的前景色。它代表**文本**、**按钮**或**列表框**字段的文本颜色，以及**复选框**或**单选按钮**字段的勾选颜色。值的定义与 **fillColor** 相同。有关定义颜色数组以及如何设置和使用此属性的值，请参阅 **颜色数组**。
+此属性确定字段的前景色。它代表文本、按钮或列表框字段的文本颜色，以及复选框或单选按钮字段的勾选颜色。值的定义与`fillColor`相同。有关定义颜色数组以及如何设置和使用此属性的值，请参阅[颜色数组](https://example.com)。
 
-在此规范的早期版本中，此属性名为 **fgColor**。现已不鼓励使用 **fgColor**，但为保持向后兼容性，它仍然有效。
+在此规范的早期版本中，此属性名为`fgColor`。现已不鼓励使用`fgColor`，但为保持向后兼容性，它仍然有效。
 
-> 注意：如果使用透明颜色空间来设置 **textColor**，则会抛出异常。
+> 注意：如果使用透明颜色空间来设置`textColor`，则会抛出异常。
 
-类型：数组 访问权限：读/写 适用字段：所有字段。
+类型：数组　访问权限：读/写　适用字段：所有字段。
 
-## 示例
+### 示例
 
 此示例将前景色设置为红色。
 
@@ -14978,55 +15578,57 @@ f.textColor = color.red;
 
 ## textFont
 
-确定在**文本字段**、**组合框**、**列表框**或**按钮**中布局文本时使用的字体。有效字体定义为 **font 对象**的属性。从 Acrobat 5.0 开始，也可以使用任意字体，请参阅关于使用任意字体的段落。
+确定在文本字段、组合框、列表框或按钮中布局文本时使用的字体。有效字体定义为`font`对象的属性。从 Acrobat 5.0 开始，也可以使用任意字体，请参阅关于使用任意字体的段落。
 
-类型：字符串 访问权限：读/写 适用字段：按钮、组合框、列表框、文本。
-
-## font 对象
+### font 对象
 
 | 文本字体 | 关键字 |
-| --- | --- |
-| Times-Roman | font.Times |
-| Times-Bold | font.TimesB |
-| Times-Italic | font.TimesI |
-| Times-BoldItalic | font.TimesBI |
-| Helvetica | font.Helv |
-| Helvetica-Bold | font.HelvB |
-| Helvetica-Oblique | font.HelvI |
-| Helvetica-BoldOblique | font.HelvBI |
-| Courier | font.Cour |
-| Courier-Bold | font.CourB |
-| Courier-Oblique | font.CourI |
-| Courier-BoldOblique | font.CourBI |
-| Symbol | font.Symbol |
-| ZapfDingbats | font.ZapfD |
+|---|---|
+| Times-Roman | `font.Times` |
+| Times-Bold | `font.TimesB` |
+| Times-Italic | `font.TimesI` |
+| Times-BoldItalic | `font.TimesBI` |
+| Helvetica | `font.Helv` |
+| Helvetica-Bold | `font.HelvB` |
+| Helvetica-Oblique | `font.HelvI` |
+| Helvetica-BoldOblique | `font.HelvBI` |
+| Courier | `font.Cour` |
+| Courier-Bold | `font.CourB` |
+| Courier-Oblique | `font.CourI` |
+| Courier-BoldOblique | `font.CourBI` |
+| Symbol | `font.Symbol` |
+| ZapfDingbats | `font.ZapfD` |
 
-## 使用任意字体
+### 使用任意字体
 
-从 Acrobat 5.0 开始，可以通过将 textFont 的值设置为 PDSysFont 字体名称（由 PDSysFontGetName 返回，参见 Acrobat 和 PDF 库 API 参考）来在布局文本字段、组合框、列表框或按钮时使用任意字体。
+从 Acrobat 5.0 开始，可以通过将`textFont`的值设置为 PDSysFont 字体名称（由`PDSysFontGetName`返回，参见 Acrobat 和 PDF 库 API 参考）来在布局文本字段、组合框、列表框或按钮时使用任意字体。
 
 如何查找字体的 PDSysFont 字体名称：
 
 1. 在 PDF 文档中创建一个文本字段。使用用户界面，将此字段的文本字体设置为所需的字体。
-2. 打开 JavaScript 调试器控制台并执行脚本
-`this.getField("Text1").textFont`
-上述代码假设字段名称为 Text1。
+2. 打开 JavaScript 调试器控制台并执行脚本：
+
+   ```javascript
+   this.getField("Text1").textFont
+   ```
+
+   上述代码假设字段名称为`Text1`。
 3. 返回到控制台的字符串是需要以编程方式设置文本字体的字体名称。
 
-**注意：** 使用任意字体（而非 font 对象中列出的字体）会导致与旧版本查看器的兼容性问题。
+**注意：** 使用任意字体（而非`font`对象中列出的字体）会导致与旧版本查看器的兼容性问题。
 
-## 示例
+### 示例
 
-以下示例说明了此属性和 font 对象的用法，它将字体设置为 Helvetica。
+以下示例说明了此属性和`font`对象的用法，它将字体设置为 Helvetica。
 
 ```javascript
 var f = this.getField("myField");
 f.textFont = font.Helv;
 ```
 
-## 示例 (Acrobat 5.0)
+### 示例（Acrobat 5.0）
 
-将 "myField" 的字体设置为 Viva-Regular。
+将`myField`的字体设置为 Viva-Regular。
 
 ```javascript
 var f = this.getField("myField");
@@ -15035,13 +15637,13 @@ f.textFont = "Viva-Regular";
 
 ## textSize
 
-控制所有控件中使用的文本大小（以磅为单位）。在**复选框**和**单选按钮**字段中，文本大小决定了勾选标记的大小。有效的文本大小范围是 0 到 32767（含端点）。文本大小为零表示使用允许所有文本数据适配字段矩形的最大磅值。
+控制所有控件中使用的文本大小（以磅为单位）。在复选框和单选按钮字段中，文本大小决定了勾选标记的大小。有效的文本大小范围是 0 到 32767（含端点）。文本大小为零表示使用允许所有文本数据适配字段矩形的最大磅值。
 
-类型：数字 访问权限：读/写 适用字段：所有字段。
+类型：数字　访问权限：读/写　适用字段：所有字段。
 
-## 示例
+### 示例
 
-将 "myField" 的文本大小设置为 28 磅。
+将`myField`的文本大小设置为 28 磅。
 
 ```javascript
 this.getField("myField").textSize = 28;
@@ -15051,17 +15653,17 @@ this.getField("myField").textSize = 28;
 
 以字符串形式返回字段的类型。有效类型为：
 
-- button (按钮)
-- checkbox (复选框)
-- combobox (组合框)
-- listbox (列表框)
-- radiobutton (单选按钮)
-- signature (签名)
-- text (文本)
+- `button`（按钮）
+- `checkbox`（复选框）
+- `combobox`（组合框）
+- `listbox`（列表框）
+- `radiobutton`（单选按钮）
+- `signature`（签名）
+- `text`（文本）
 
-类型：字符串 访问权限：只读 适用字段：所有字段。
+类型：字符串　访问权限：只读　适用字段：所有字段。
 
-## 示例
+### 示例
 
 计算文档中文本字段的数量。
 
@@ -15078,9 +15680,9 @@ console.println("共有 " + count + " 个文本字段。");
 
 获取或设置字段的用户名（简短描述字符串）。当鼠标光标进入字段时，用户名旨在用作工具提示文本。它还可以在生成错误消息时用作用户友好的名称，而不是字段名称。
 
-类型：字符串 访问权限：读/写 适用字段：所有字段。
+类型：字符串　访问权限：读/写　适用字段：所有字段。
 
-## 示例
+### 示例
 
 为按钮字段添加工具提示。
 
@@ -15093,27 +15695,33 @@ f.userName = "点击此按钮提交您的数据。";
 
 获取用户输入的字段数据的值。根据字段的类型，可能是字符串、日期或数字。通常，值用于创建计算字段。
 
-从 Acrobat 6.0 开始，如果字段包含富文本格式，修改此属性将丢弃格式并使用 defaultStyle 和纯文本值重新生成字段值和外观。要修改字段值并保持格式，请使用 richValue 属性。
-
-
+从 Acrobat 6.0 开始，如果字段包含富文本格式，修改此属性将丢弃格式并使用`defaultStyle`和纯文本值重新生成字段值和外观。要修改字段值并保持格式，请使用`richValue`属性。
 
 ## Acrobat JavaScript 脚本参考
+
 ### 字段方法
 
-**注意：** 对于**签名**字段，如果字段已签名，则作为值返回一个**非空**字符串。
-对于 Acrobat 5.0 或更高版本，如果字段是接受多选的**列表框**（请参见 **multipleSelection**），您可以传递一个数组来设置字段的**值**，并且对于当前选择了多个值的**列表框**，**value** 返回一个数组。
-对于具有多重选择的列表框，其**currentValueIndices**是获取和设置此类字段值的首选且最高效的方式。
-另请参见 **field.valueAsString** 和 **event.type**。
+**注意：** 对于签名字段，如果字段已签名，则作为值返回一个非空字符串。
+
+对于 Acrobat 5.0 或更高版本，如果字段是接受多选的列表框（请参见`multipleSelection`），您可以传递一个数组来设置字段的值，并且对于当前选择了多个值的列表框，`value`返回一个数组。
+
+对于具有多重选择的列表框，其`currentValueIndices`是获取和设置此类字段值的首选且最高效的方式。
+
+另请参见`field.valueAsString`和`event.type`。
 
 类型：多种
+
 访问：读/写
-字段：除**按钮**外的所有字段
+
+字段：除按钮外的所有字段
 
 ## 示例
 
-在此示例中，正在计算的字段的**值**被设置为“oil”和“filter”字段的总和，然后乘以州销售税。
 
-```
+
+在此示例中，正在计算的字段的`值`被设置为“oil”和“filter”字段的总和，然后乘以州销售税。
+
+```javascript
 var oil = this.getField("Oil");
 var filter = this.getField("Filter");
 event.value = (oil.value + filter.value) * 1.0825;
@@ -15125,57 +15733,67 @@ event.value = (oil.value + filter.value) * 1.0825;
 | :--- | :--- | :--- | :--- |
 
 以 JavaScript 字符串形式返回字段的值。
-这与 **value** 不同，后者试图将字段内容转换为可接受的格式。例如，对于值为“020”的字段，**value** 返回整数 20，而 **valueAsString** 返回字符串“020”。
+
+这与`value`不同，后者试图将字段内容转换为可接受的格式。例如，对于值为“020”的字段，`value`返回整数 20，而`valueAsString`返回字符串“020”。
 
 类型：字符串
+
 访问：只读
-字段：除**按钮**外的所有字段
+
+字段：除`按钮`外的所有字段
 
 ## 字段方法
 
-## browseForFileToSubmit
+### browseForFileToSubmit
 
 | 5.0 | ⊙ | | |
 | :--- | :--- | :--- | :--- |
 
-当对设置了 **fileSelect** 标志（已选中）的**文本**字段调用时，会打开一个标准文件选择对话框。通过对话框输入的路径会自动分配为该文本字段的值。
-如果对 **fileSelect** 标志未设置（未选中）的文本字段调用，则会抛出一个异常。
+当对设置了`fileSelect`标志（已选中）的`文本`字段调用时，会打开一个标准文件选择对话框。通过对话框输入的路径会自动分配为该文本字段的值。
+
+如果对`fileSelect`标志未设置（未选中）的文本字段调用，则会抛出一个异常。
 
 **参数**
+
 无
 
 **返回值**
+
 无
 
 **示例**
+
 以下代码引用了一个文件选择标志已选中的文本字段。这是一个按钮字段的鼠标松开操作。
 
-```
+```javascript
 var f = this.getField("resumeField");
 f.browseForFileToSubmit();
 ```
 
-## buttonGetCaption
+### buttonGetCaption
 
 | 5.0 | | | |
 | :--- | :--- | :--- | :--- |
 
-获取与**按钮**关联的标题。
-使用 **field.buttonSetCaption** 来设置标题。
+获取与`按钮`关联的标题。
 
-| **nFace** | （可选）如果指定，获取给定类型的标题： |
+使用`field.buttonSetCaption`来设置标题。
+
+| `nFace` | （可选）如果指定，获取给定类型的标题： |
 | :--- | :--- |
 | 0: | （默认）正常标题 |
 | 1: | 按下时标题 |
 | 2: | 鼠标悬停时标题 |
 
 **返回值**
+
 与按钮关联的标题字符串。
 
 **示例**
+
 此示例在按钮字段的标题左侧和右侧放置指向箭头，该按钮同时具有图标和文本。
 
-```
+```javascript
 // 鼠标进入事件
 event.target.buttonSetCaption("=> " + event.target.buttonGetCaption()
     +" <=");
@@ -15185,31 +15803,33 @@ var str = event.target.buttonGetCaption();
 str = str.replace(/=> | <=/g, "");
 event.target.buttonSetCaption(str);
 ```
+
 通过为鼠标悬停状态设置相同的图标，并在鼠标悬停标题中插入箭头，可以获得相同的效果。这种方法速度较慢，并且会导致图标闪烁。上面的代码提供了非常快速和平滑的悬停效果，因为只有标题被更改，而图标未更改。
 
-## buttonGetIcon
+### buttonGetIcon
 
 | 5.0 | | | |
 | :--- | :--- | :--- | :--- |
 
-获取与按钮关联的指定类型的**图标通用对象**。
-另请参见 **buttonSetIcon** 方法，了解如何为按钮分配图标。
+获取与按钮关联的指定类型的`图标通用对象`。
 
-### 参数
+另请参见`buttonSetIcon`方法，了解如何为按钮分配图标。
 
-| **nFace** | （可选）如果指定，获取给定类型的图标： |
+#### 参数
+
+| `nFace` | （可选）如果指定，获取给定类型的图标： |
 | :--- | :--- |
 | 0: | （默认）正常图标 |
 | 1: | 按下时图标 |
 | 2: | 鼠标悬停时图标 |
 
-### 返回值
+#### 返回值
 
-**图标通用对象**。
+`图标通用对象`。
 
-### 示例
+#### 示例
 
-```
+```javascript
 // 交换两个按钮的图标。
 var f = this.getField("Button1");
 var g = this.getField("Button2");
@@ -15217,100 +15837,105 @@ var temp = f.buttonGetIcon();
 f.buttonSetIcon(g.buttonGetIcon());
 g.buttonSetIcon(temp);
 ```
-另请参见 **buttonSetIcon** 和 **buttonImportIcon**。
 
-## buttonImportIcon
+另请参见`buttonSetIcon`和`buttonImportIcon`。
+
+### buttonImportIcon
 
 | 3.01 | | | X |
 | :--- | :--- | :--- | :--- |
 
 从另一个 PDF 文件导入按钮的外观。如果未传递可选参数，该方法会提示用户选择系统上可用的文件。
 
-另请参见 **buttonGetIcon**、**buttonSetIcon**、**addIcon**、**getIcon**、**importIcon** 和 **removeIcon**。
+另请参见`buttonGetIcon`、`buttonSetIcon`、`addIcon`、`getIcon`、`importIcon`和`removeIcon`。
 
-### 参数
+#### 参数
 
-| **参数** | **描述** |
+| 参数 | 描述 |
 | :--- | :--- |
-| **cPath** | （可选，版本 5.0）文件的设备无关路径名。有关设备无关路径名格式的描述，请参见 [PDF 参考](https://helpx.adobe.com/acrobat/using/creating-pdf-documents.html) 第 3.10.1 节。从版本 6.0 开始，Acrobat 会首先尝试将 **cPath** 作为 PDF 打开。如果失败，Acrobat 会尝试将 **cPath** 从已知图形格式（BMP、GIF、JPEG、PCX、PNG、TIFF）之一转换为 PDF，然后将转换后的文件作为按钮图标导入。 |
-| **nPage** | （可选，版本 5.0）要转换为图标的文件的页码（从 0 开始）。默认值为 0。 |
+| `cPath` | （可选，版本 5.0）文件的设备无关路径名。有关设备无关路径名格式的描述，请参见 [PDF 参考](https://helpx.adobe.com/acrobat/using/creating-pdf-documents.html) 第 3.10.1 节。从版本 6.0 开始，Acrobat 会首先尝试将`cPath`作为 PDF 打开。如果失败，Acrobat 会尝试将`cPath`从已知图形格式（BMP、GIF、JPEG、PCX、PNG、TIFF）之一转换为 PDF，然后将转换后的文件作为按钮图标导入。 |
+| `nPage` | （可选，版本 5.0）要转换为图标的文件的页码（从 0 开始）。默认值为 0。 |
 
-### 返回值
+#### 返回值
 
 - 1：用户取消了对话框
 - 0：无错误
 - -1：所选文件无法打开
 - -2：所选页面无效
 
-### 示例 (Acrobat 5.0)
+#### 示例（Acrobat 5.0）
 
-假设我们连接到一个员工信息数据库。我们使用 [ADBC 对象](https://helpx.adobe.com/acrobat/using/creating-pdf-documents.html) 及相关对象与数据库进行通信。请求一名员工的记录，并使用了三列：*FirstName*、*SecondName* 和 *Picture*。数据库中的 *Picture* 列包含指向员工照片（以 PDF 格式存储）的设备无关路径。脚本可能如下所示：
+假设我们连接到一个员工信息数据库。我们使用 [ADBC 对象](https://helpx.adobe.com/acrobat/using/creating-pdf-documents.html)及相关对象与数据库进行通信。请求一名员工的记录，并使用了三列：`FirstName`、`SecondName`和`Picture`。数据库中的`Picture`列包含指向员工照片（以 PDF 格式存储）的设备无关路径。脚本可能如下所示：
 
-按钮字段 "myPicture" 已设置为同时显示图标和标题。员工的名字和姓氏连接起来构成图片的标题。请注意，如果检索图标时出错，可以导入一个替代图标。
+按钮字段`myPicture`已设置为同时显示图标和标题。员工的名字和姓氏连接起来构成图片的标题。请注意，如果检索图标时出错，可以导入一个替代图标。
 
-```
+```javascript
 var f = this.getField("myPicture");
 f.buttonSetCaption(row.FirstName.value + " " + row.LastName.value);
 if (f.buttonImportIcon(row.Picture.value) != 0)
     f.buttonImportIcon("/F/employee/pdfs/NoPicture.pdf");
 ```
 
-## buttonSetCaption
+### buttonSetCaption
 
 | 5.0 | ⊙ | | |
 | :--- | :--- | :--- | :--- |
 
 设置与按钮关联的标题。
-使用 **buttonGetCaption** 获取当前标题。
-有关图标和标题在按钮面上如何放置的详细信息，请参见 **buttonAlignX**、**buttonAlignY**、**buttonFitBounds**、**buttonPosition**、**buttonScaleHow**、**buttonScaleWhen**。
 
-### 参数
+使用`buttonGetCaption`获取当前标题。
 
-| **参数** | **描述** |
+有关图标和标题在按钮面上如何放置的详细信息，请参见`buttonAlignX`、`buttonAlignY`、`buttonFitBounds`、`buttonPosition`、`buttonScaleHow`、`buttonScaleWhen`。
+
+#### 参数
+
+| 参数 | 描述 |
 | :--- | :--- |
-| **cCaption** | 与按钮关联的标题。 |
-| **nFace** | （可选）如果指定，设置给定类型的标题：<br> 0：（默认）正常标题 <br> 1：按下时标题 <br> 2：鼠标悬停时标题 |
+| `cCaption` | 与按钮关联的标题。 |
+| `nFace` | （可选）如果指定，设置给定类型的标题：<br>0：（默认）正常标题<br>1：按下时标题<br>2：鼠标悬停时标题 |
 
-### 返回值
+#### 返回值
 
 无
 
-### 示例
+#### 示例
 
-```
+```javascript
 var f = this.getField("myButton");
 f.buttonSetCaption("Hello");
 ```
 
-## buttonSetIcon
+### buttonSetIcon
 
 | 5.0 | ⊙ | | |
 | :--- | :--- | :--- | :--- |
 
 设置与按钮关联的图标。
-有关图标和标题在按钮面上如何放置的详细信息，请参见 **buttonAlignX**、**buttonAlignY**、**buttonFitBounds**、**buttonPosition**、**buttonScaleHow**、**buttonScaleWhen**。
-使用 **field.buttonGetIcon** 或 **doc.getIcon** 获取可用于此方法 oIcon 参数的图标通用对象。
 
-### 参数
+有关图标和标题在按钮面上如何放置的详细信息，请参见`buttonAlignX`、`buttonAlignY`、`buttonFitBounds`、`buttonPosition`、`buttonScaleHow`、`buttonScaleWhen`。
 
-| **参数** | **描述** |
+使用`field.buttonGetIcon`或`doc.getIcon`获取可用于此方法`oIcon`参数的图标通用对象。
+
+#### 参数
+
+| 参数 | 描述 |
 | :--- | :--- |
-| **oIcon** | 与按钮关联的图标通用对象。 |
-| **nFace** | （可选）如果指定，设置给定类型的图标：<br> 0：（默认）正常图标 <br> 1：按下时图标 <br> 2：鼠标悬停时图标 |
+| `oIcon` | 与按钮关联的图标通用对象。 |
+| `nFace` | （可选）如果指定，设置给定类型的图标：<br>0：（默认）正常图标<br>1：按下时图标<br>2：鼠标悬停时图标 |
 
-### 返回值
+#### 返回值
 
 无
 
-### 示例
+#### 示例
 
-此示例获取文档中的每个命名图标，并使用这些名称创建一个列表框。在列表框中选择一项会将具有该名称的图标设置为字段 "myPictures" 的按钮面。以下是按钮字段 "myButton" 的鼠标松开操作。
+此示例获取文档中的每个命名图标，并使用这些名称创建一个列表框。在列表框中选择一项会将具有该名称的图标设置为字段`myPictures`的按钮面。以下是按钮字段`myButton`的鼠标松开操作。
 
-```
+```javascript
 var f = this.getField("myButton")
 var aRect = f.rect;
 aRect[0] = f.rect[2];            // 将列表框放置在相对于
-aRect[2] = f.rect[2] + 144;  // "myButton" 的位置
+aRect[2] = f.rect[2] + 144;      // "myButton" 的位置
 var myIcons = new Array();
 var l = addField("myIconList", "combobox", 0, aRect);
 l.textSize = 14;
@@ -15325,37 +15950,38 @@ l.setAction("Keystroke",
     + 'f.buttonSetIcon(i);\r'
     + '}');
 ```
-命名图标本身可以通过交互式方案导入到文档中，例如 addIcon 中给出的示例，或者通过批处理序列导入。
-另请参见 buttonGetCaption 获取更详细的示例。
 
-## checkThisBox
+命名图标本身可以通过交互式方案导入到文档中，例如`addIcon`中给出的示例，或者通过批处理序列导入。
+
+另请参见`buttonGetCaption`获取更详细的示例。
+
+### checkThisBox
 
 | 5.0 | | | |
 | :--- | :--- | :--- | :--- |
 
-选中或取消选中指定的窗口小部件。只有复选框可以取消选中。不能使用此方法取消选中单选按钮，但如果其默认状态是未选中（请参见 defaultIsChecked），则可以使用 doc.resetForm 将其重置为未选中状态。
+选中或取消选中指定的窗口小部件。只有复选框可以取消选中。不能使用此方法取消选中单选按钮，但如果其默认状态是未选中（请参见`defaultIsChecked`），则可以使用`doc.resetForm`将其重置为未选中状态。
 
 > **注意：** 对于没有重复导出值的一组单选按钮，您可以将值设置为应被选中的单选按钮的导出值（如果没有应被选中的，则传递一个空字符串）。
 
-
-
 ## Acrobat JavaScript 脚本参考
+
 ### 字段方法
 
-**参数**
+#### 参数
 
 | | |
-|---|---|
-| **nWidget** | 此字段的单个**复选框**或**单选按钮**控件的从0开始计数的索引。索引由该字段的各个控件的创建顺序决定（不受制表符顺序影响）。**字段**面板中的每个条目都有一个后缀来给出此索引；例如，MyField #0。 |
-| **bCheckIt** | （可选）控件是否应被选中。默认值为**true**。 |
+| :--- | :--- |
+| `nWidget` | 此字段的单个`复选框`或`单选按钮`控件的从 0 开始计数的索引。索引由该字段的各个控件的创建顺序决定（不受制表符顺序影响）。`字段`面板中的每个条目都有一个后缀来给出此索引；例如，`MyField #0`。 |
+| `bCheckIt` | （可选）控件是否应被选中。默认值为`true`。 |
 
-**返回值**
+#### 返回值
 
 无
 
-**示例**
+#### 示例
 
-```
+```javascript
 选中一个复选框。
 
 // 选中复选框 "ChkBox"
@@ -15363,164 +15989,167 @@ var f = this.getField("ChkBox");
 f.checkThisBox(0,true);
 ```
 
-## clearItems
+### clearItems
 
 4.0
 
-清除**列表框**或**组合框**中的所有值。相关方法和属性包括 **numItems**、**getItemAt**、**deleteItemAt**、**currentValueIndices**、**insertItemAt** 和 **setItems**。
+清除`列表框`或`组合框`中的所有值。相关方法和属性包括`numItems`、`getItemAt`、`deleteItemAt`、`currentValueIndices`、`insertItemAt`和`setItems`。
 
-**参数**
-
-无
-
-**返回值**
+#### 参数
 
 无
 
-**示例**
+#### 返回值
 
-```
+无
+
+#### 示例
+
+```javascript
 清除字段 "myList" 中的所有项目。
 
 this.getField("myList").clearItems();
 ```
 
-## defaultIsChecked
+### defaultIsChecked
 
 将指定的控件设置为默认选中或未选中状态。
 
-**注意：** 对于一组没有重复导出值的单选按钮，您可以将 defaultValue 设置为应默认选中的单选按钮的导出值（如果没有任何按钮应被选中，则传递一个空字符串）。
+**注意：** 对于一组没有重复导出值的单选按钮，您可以将`defaultValue`设置为应默认选中的单选按钮的导出值（如果没有任何按钮应被选中，则传递一个空字符串）。
 
-### 参数
+#### 参数
 
 | | |
-|---|---|
-| **nWidget** | 此字段的单选按钮或复选框控件的从0开始计数的索引。索引由该字段的各个控件的创建顺序决定（不受制表符顺序影响）。<br>字段面板中的每个条目都有一个后缀来给出此索引（例如，MyField #0）。 |
-| **bIsDefaultChecked** | （可选）当为true（默认值）时，控件应默认被选中（例如，当字段重置时）。<br>当为false时，控件应默认未被选中。 |
+| :--- | :--- |
+| `nWidget` | 此字段的单选按钮或复选框控件的从 0 开始计数的索引。索引由该字段的各个控件的创建顺序决定（不受制表符顺序影响）。<br>字段面板中的每个条目都有一个后缀来给出此索引（例如，`MyField #0`）。 |
+| `bIsDefaultChecked` | （可选）当为`true`（默认值）时，控件应默认被选中（例如，当字段重置时）。<br>当为`false`时，控件应默认未被选中。 |
 
-### 返回值
+#### 返回值
 
-成功时返回 `true`。
+成功时返回`true`。
 
-### 示例
+#### 示例
 
-将 "ChkBox" 的默认状态更改为选中，然后重置字段以反映默认值。
+将`ChkBox`的默认状态更改为选中，然后重置字段以反映默认值。
 
-```
+```javascript
 var f = this.getField("ChkBox");
 f.defaultIsChecked(0, true);
 this.resetForm(["ChkBox"]);
 ```
 
-## deleteItemAt
+### deleteItemAt
 
 删除组合框或列表框中的一个项目。
 
-对于列表框，如果当前选中项被删除，则该字段将不再有当前选中项。如果没有当前选中项，再次在不带参数的情况下调用此方法于同一字段上可能会导致意外行为；因为没有当前选中项可以删除。因此，进行新的选择非常重要，以便此方法能按文档所述运行。可以使用 `currentValueIndices` 进行新的选择。
+对于列表框，如果当前选中项被删除，则该字段将不再有当前选中项。如果没有当前选中项，再次在不带参数的情况下调用此方法于同一字段上可能会导致意外行为；因为没有当前选中项可以删除。因此，进行新的选择非常重要，以便此方法能按文档所述运行。可以使用`currentValueIndices`进行新的选择。
 
-### 参数
+#### 参数
 
 | | |
 | :--- | :--- |
-| nIdx | （可选）列表中要删除的项目的从0开始计数的索引。如果未指定，则删除当前选中的项目。 |
+| `nIdx` | （可选）列表中要删除的项目的从 0 开始计数的索引。如果未指定，则删除当前选中的项目。 |
 
-### 返回值
+#### 返回值
 
 无
 
-### 示例
+#### 示例
 
 删除列表中的当前项目，然后选择列表中的顶部项目。
 
-```
+```javascript
 var a = this.getField("MyListBox");
 a.deleteItemAt();             // 删除当前项目，然后...
 a.currentValueIndices = 0;    // 选择列表中的顶部项目
 ```
 
-## getArray
+### getArray
 
 | 3.01 | | | | |
 | :--- | :--- | :--- | :--- | :--- |
 
 获取此父字段对象的终端子字段（即可以具有值的字段）的数组。
 
-### 参数
+#### 参数
 
 无
 
-### 返回值
+#### 返回值
 
 字段对象的数组
 
-### 示例
+#### 示例
 
 此示例计算父字段的子字段的值。
 
-```
-// f 有3个子字段: f.v1, f.v2, f.v3
+```javascript
+// f 有 3 个子字段: f.v1, f.v2, f.v3
 var f = this.getField("f");
 var a = f.getArray();
 var v = 0.0;
-for (j =0; j < a.length; j++) v += a[j].value;
+for (j = 0; j < a.length; j++) v += a[j].value;
 // v 包含字段 "f" 所有子字段值的总和
 ```
 
-## getItemAt
+### getItemAt
 
 | 3.01 | | | | |
 | :--- | :--- | :--- | :--- | :--- |
 
 获取组合框或列表框中项目的内部值。
-列表中的项目数量可以从 field.numItems 获取。另请参见 insertItemAt、deleteItemAt、clearItems、currentValueIndices 和 setItems。
 
-### 参数
+列表中的项目数量可以从`field.numItems`获取。另请参见`insertItemAt`、`deleteItemAt`、`clearItems`、`currentValueIndices`和`setItems`。
+
+#### 参数
 
 | 参数 | 描述 |
 | :--- | :--- |
-| nIdx | 要获取的列表中项目的从0开始计数的索引，或使用 -1 表示列表中的最后一个项目。 |
-| bExportValue | （可选，版本5.0）是否返回导出值。<br>• 当为true时（默认值），如果请求的项目有导出值，则返回导出值。如果没有导出值，则返回项目名称。<br>• 当为false时，方法返回项目名称。 |
+| `nIdx` | 要获取的列表中项目的从 0 开始计数的索引，或使用 -1 表示列表中的最后一个项目。 |
+| `bExportValue` | （可选，版本 5.0）是否返回导出值。<br>• 当为`true`时（默认值），如果请求的项目有导出值，则返回导出值。如果没有导出值，则返回项目名称。<br>• 当为`false`时，方法返回项目名称。 |
 
-### 返回值
+#### 返回值
 
 指定项目的导出值或名称。
 
-### 示例
+#### 示例
 
-在下面的两个示例中，假设有三个项目在 "myList" 上："First"，导出值为1；"Second"，导出值为2；以及 "Third"，没有导出值。
+在下面的两个示例中，假设有三个项目在`myList`上：“First”，导出值为 1；“Second”，导出值为 2；以及“Third”，没有导出值。
 
-```
-// 返回列表中第一个项目的值，即1
+```javascript
+// 返回列表中第一个项目的值，即 1
 var f = this.getField("myList");
 var v = f.getItemAt(0);
 ```
 
 以下示例说明了第二个可选参数的使用。
 
-```
-for (var i=0; i < f.numItems; i++)
-    console.println(f.getItemAt(i,true) + ":  " +
-        f.getItemAt(i,false));
+```javascript
+for (var i = 0; i < f.numItems; i++)
+    console.println(f.getItemAt(i, true) + ":  " +
+        f.getItemAt(i, false));
 ```
 
 控制台的输出为：
 
-```
+```text
 1:          First
 2:          Second
 Third:      Third
 ```
 
-因此，通过将第二个参数设置为 false，即使存在导出值，也可以获取项目名称（面值）。
+因此，通过将第二个参数设置为`false`，即使存在导出值，也可以获取项目名称（面值）。
 
-## getLock
+### getLock
 
 | 6.0 | | | | |
 | :--- | :--- | :--- | :--- | :--- |
 
-获取一个 Lock 对象，这是一个包含**签名**字段锁定属性的通用对象。
+获取一个`Lock`对象，这是一个包含`签名`字段锁定属性的通用对象。
 
-另请参见 **Field Object** 的 **setLock**。
+
+
+另请参见 `Field Object` 的 `setLock`。
 
 ### 参数
 
@@ -15530,19 +16159,22 @@ Third:      Third
 
 该字段的 Lock 对象。
 
-## insertItemAt
+## `insertItemAt`
 
 | 3.01 | ⊙ | | |
 | :--- | :--- | :--- | :--- |
 
 将新项目插入到 `combobox` 或 `listbox` 中。
+
 相关方法和属性包括 `numItems`、`getItemAt`、`deleteItemAt`、`clearItems`、`currentValueIndices` 和 `setItems`。
 
 ### 参数
 
-| cName | 将在表单中显示的项目名称。 |
-| cExport | （可选）当选择此项目时字段的导出值。如果未提供，则使用 `cName` 作为导出值。 |
-| nIdx | （可选）列表中插入项目的索引。如果为0（默认值），新项目将插入到列表顶部。如果为–1，新项目将插入到列表末尾。 |
+| 参数 | 描述 |
+| :--- | :--- |
+| `cName` | 将在表单中显示的项目名称。 |
+| `cExport` | （可选）当选择此项目时字段的导出值。如果未提供，则使用 `cName` 作为导出值。 |
+| `nIdx` | （可选）列表中插入项目的索引。如果为 0（默认值），新项目将插入到列表顶部。如果为 –1，新项目将插入到列表末尾。 |
 
 ### 返回值
 
@@ -15550,12 +16182,12 @@ Third:      Third
 
 ### 示例
 
-```
+```javascript
 var l = this.getField("myList");
 l.insertItemAt("sam", "s", 0); /* 将 sam 插入到列表 l 的顶部 */
 ```
 
-## isBoxChecked
+## `isBoxChecked`
 
 | 5.0 | | | |
 | :--- | :--- | :--- | :--- |
@@ -15566,44 +16198,44 @@ l.insertItemAt("sam", "s", 0); /* 将 sam 插入到列表 l 的顶部 */
 
 ### 参数
 
-| nWidget | 此字段的单选按钮或复选框控件的从0开始计数的索引。索引由该字段的各个控件的创建顺序决定（不受制表符顺序影响）。`Fields` 面板中的每个条目都有一个后缀来给出此索引，例如 MyField #0。 |
-|---|---|
-| | |
-| | |
+| 参数 | 描述 |
+| :--- | :--- |
+| `nWidget` | 此字段的单选按钮或复选框控件的从 0 开始计数的索引。索引由该字段的各个控件的创建顺序决定（不受制表符顺序影响）。`Fields` 面板中的每个条目都有一个后缀来给出此索引，例如 `MyField #0`。 |
 
-如果指定的控件当前被选中，则返回 true，否则返回 **false**。
+如果指定的控件当前被选中，则返回 `true`，否则返回 `false`。
 
-```
+### 示例
+
+```javascript
 var f = this.getField("ChkBox");
-if(f.isBoxChecked(0))
+if (f.isBoxChecked(0))
     app.alert("复选框已选中");
 else
     app.alert("复选框未选中");
 ```
 
-## isDefaultChecked
+## `isDefaultChecked`
 
 | 5.0 | | | |
-|---|---|---|---|
+| :--- | :--- | :--- | :--- |
 
 确定指定的控件是否默认被选中（例如，当字段重置时）。
 
-**注意：** 对于一组没有重复导出值的单选按钮，您可以获取 **defaultValue**，它等于默认选中的单选按钮控件的导出值（如果没有任何按钮被选中，则返回空字符串）。
+**注意：** 对于一组没有重复导出值的单选按钮，您可以获取 `defaultValue`，它等于默认选中的单选按钮控件的导出值（如果没有任何按钮被选中，则返回空字符串）。
 
 ### 参数
 
-| **nWidget** | 此字段的单选按钮或复选框控件的从0开始计数的索引。索引由该字段的各个控件的创建顺序决定（不受制表符顺序影响）。**Fields** 面板中的每个条目都有一个后缀来给出此索引，例如 MyField #0。 |
-|---|---|
-| | |
-| | |
+| 参数 | 描述 |
+| :--- | :--- |
+| `nWidget` | 此字段的单选按钮或复选框控件的从 0 开始计数的索引。索引由该字段的各个控件的创建顺序决定（不受制表符顺序影响）。`Fields` 面板中的每个条目都有一个后缀来给出此索引，例如 `MyField #0`。 |
 
 ### 返回值
 
-如果指定的控件默认被选中，则返回 true，否则返回 **false**。
+如果指定的控件默认被选中，则返回 `true`，否则返回 `false`。
 
 ### 示例
 
-```
+```javascript
 var f = this.getField("ChkBox");
 if (f.isDefaultChecked(0))
     app.alert("默认状态：已选中");
@@ -15611,33 +16243,31 @@ else
     app.alert("默认状态：未选中");
 ```
 
-## setAction
+## `setAction`
 
 | 5.0 | 🅳 | | ❌ |
-|---|---|---|---|
+| :--- | :--- | :--- | :--- |
 
 为给定的触发器设置字段的 JavaScript 动作。
 
-
-
-## 字段方法
+### 字段方法
 
 相关方法为 `bookmark.setAction`、`doc.setAction`、`doc.addScript`、`doc.setPageAction`。
 
 **注意：** 此方法会覆盖已为所选触发器定义的任何操作。
 
-## 参数
+### 参数
 
 | 参数 | 描述 |
 | :--- | :--- |
 | `cTrigger` | 一个设置操作触发器的字符串。可选值有：<br>`MouseUp`<br>`MouseDown`<br>`MouseEnter`<br>`MouseExit`<br>`OnFocus`<br>`OnBlur`<br>`Keystroke`<br>`Validate`<br>`Calculate`<br>`Format`<br>对于 `listbox`，请使用 `Keystroke` 触发器来处理选择更改事件。 |
 | `cScript` | 当触发器被激活时要执行的 JavaScript 代码。 |
 
-## 返回值
+### 返回值
 
 无
 
-## 示例
+### 示例
 
 此示例设置一个具有鼠标松开操作的按钮字段。
 
@@ -15654,34 +16284,38 @@ f.delay = true;
 f.delay = false;
 ```
 
-## setFocus
+## `setFocus`
 
-| 4.05 |  |  |  |
+| 4.05 | | | |
+| :--- | :--- | :--- | :--- |
 
 将键盘焦点设置到此字段。这可能涉及更改用户当前所在的页面或导致视图滚动到文档中的新位置。如果该字段所在的文档尚未置于前台，此方法会自动将其带到前台。
 
 另请参阅 [`bringToFront`](#bringToFront)。
 
-## setItems
+## `setItems`
 
 | 4.0 | D | | |
-| --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- |
 
 为**组合框**或**列表框**设置项目列表。
-相关方法和属性包括 **numItems**、**getItemAt**、**deleteItemAt**、**currentValueIndices** 和 **clearItems**。
 
-## 参数
+相关方法和属性包括 `numItems`、`getItemAt`、`deleteItemAt`、`currentValueIndices` 和 `clearItems`。
 
-+   **oArray**
-一个数组，其中每个元素都是一个可转换为字符串的对象或另一个数组。
-*   对于可转换为字符串的元素，列表项的显示值和导出值等于该字符串。
-*   对于元素为数组的情况，该数组必须包含两个可转换为字符串的子元素，其中第一个是显示值，第二个是导出值。
+### 参数
 
-## 返回值
+- `oArray`
+
+  一个数组，其中每个元素都是一个可转换为字符串的对象或另一个数组。
+
+  - 对于可转换为字符串的元素，列表项的显示值和导出值等于该字符串。
+  - 对于元素为数组的情况，该数组必须包含两个可转换为字符串的子元素，其中第一个是显示值，第二个是导出值。
+
+### 返回值
 
 无
 
-## 示例
+### 示例
 
 ```javascript
 var l = this.getField("ListBox");
@@ -15693,60 +16327,62 @@ var c = this.getField("NumberBox");
 c.setItems(["1", 2, 3, ["PI", Math.PI]]);
 ```
 
-## setLock
+## `setLock`
 
 控制当在此**签名**字段上应用签名时，哪些字段应被锁定。一旦字段被锁定，就不能对这些字段进行任何修改。当签名被清除时，所有被锁定的字段都将被解锁。可以使用 `getLock` 获取属性设置。
 
 > **注意**：（安全 Ⓢ）：此方法可在批处理、应用程序初始化、控制台或菜单事件期间执行。另请参阅特权与非特权上下文。从 Acrobat 7.0 开始，通过菜单事件执行 JavaScript 不再具有特权，有关详细信息，请参阅通过菜单执行 JavaScript。此方法不能应用于已签名文档中的字段。在 Adobe Reader 中不允许使用。
 
-## 参数
+### 参数
 
-| oLock | 包含锁定属性的锁定对象。 |
+| 参数 | 描述 |
+| :--- | :--- |
+| `oLock` | 包含锁定属性的锁定对象。 |
 
-## 返回值
+### 返回值
 
 成功时返回 `true`，否则返回 `false`，或者可能抛出异常。
 
-## 锁定对象
+### 锁定对象
 
 一个包含锁定属性的通用 JS 对象。此对象被传递给 `field.setLock`，并由 `field.getLock` 为**签名**字段返回。它包含以下属性。
 
 | 属性 | 类型 | 访问权限 | 描述 |
-| --- | --- | --- | --- |
-| `action` | 字符串 | 读/写 | 操作的语言无关名称。可选值有：**All**：文档中的所有字段都将被锁定。**Include**：仅锁定在 fields 中指定的字段。**Exclude**：锁定除 fields 中指定字段之外的所有字段。 |
-| `fields` | 字符串数组 | 读/写 | 包含字段名称的字符串数组。如果 action 的值为 **Include** 或 **Exclude**，则为必需项。 |
+| :--- | :--- | :--- | :--- |
+| `action` | 字符串 | 读/写 | 操作的语言无关名称。可选值有：`All`：文档中的所有字段都将被锁定。`Include`：仅锁定在 `fields` 中指定的字段。`Exclude`：锁定除 `fields` 中指定字段之外的所有字段。 |
+| `fields` | 字符串数组 | 读/写 | 包含字段名称的字符串数组。如果 `action` 的值为 `Include` 或 `Exclude`，则为必需项。 |
 
-## signatureGetModifications
+## `signatureGetModifications`
 
 7.0
 
 此方法返回一个对象，其中包含有关签名字段被签名后对文档所做的修改的信息。修改仅报告文档的当前状态与签名状态之间的差异。瞬态对象，例如在签名后添加但随后又删除的对象，将不会被报告。
 
-## 参数
+### 参数
 
 无
 
-## 返回值
+### 返回值
 
 一个包含修改信息的对象。该对象具有以下属性：
 
 | 属性 | 类型 | 描述 |
 | :--- | :--- | :--- |
-| **formFieldsCreated** | 字段对象数组 | 签名后创建的表单字段数组。 |
-| **formFieldsDeleted** | 通用对象数组 | 签名后删除的表单字段数组。数组中的每个通用对象都是格式为 **name : type** 的字符串。 |
-| **formFieldsFilledIn** | 字段对象数组 | 签名后填写的表单字段数组。 |
-| **formFieldsModified** | 字段对象数组 | 签名后修改的表单字段数组。在此上下文中，表单字段的填写不构成修改。 |
-| **annotsCreated** | 注释对象数组 | 签名后创建的注释数组。如果注释是瞬态的（例如，动态创建的 Popup），则数组的对应元素是格式为 **author : name : type** 的字符串。 |
-| **annotsDeleted** | 通用对象数组 | 签名后删除的注释数组。数组中的每个通用对象格式均为 **author : name : type**。 |
-| **annotsModified** | 注释对象数组 | 签名后修改的注释数组。如果注释是瞬态的（例如，动态创建的 Popup），则数组的对应元素是格式为 **author : name : type** 的字符串。 |
-| **numPagesCreated** | 整数 | 签名后添加的页面数。 |
-| **numPagesDeleted** | 整数 | 签名后删除的页面数。 |
+| `formFieldsCreated` | 字段对象数组 | 签名后创建的表单字段数组。 |
+| `formFieldsDeleted` | 通用对象数组 | 签名后删除的表单字段数组。数组中的每个通用对象都是格式为 `name : type` 的字符串。 |
+| `formFieldsFilledIn` | 字段对象数组 | 签名后填写的表单字段数组。 |
+| `formFieldsModified` | 字段对象数组 | 签名后修改的表单字段数组。在此上下文中，表单字段的填写不构成修改。 |
+| `annotsCreated` | 注释对象数组 | 签名后创建的注释数组。如果注释是瞬态的（例如，动态创建的 Popup），则数组的对应元素是格式为 `author : name : type` 的字符串。 |
+| `annotsDeleted` | 通用对象数组 | 签名后删除的注释数组。数组中的每个通用对象格式均为 `author : name : type`。 |
+| `annotsModified` | 注释对象数组 | 签名后修改的注释数组。如果注释是瞬态的（例如，动态创建的 Popup），则数组的对应元素是格式为 `author : name : type` 的字符串。 |
+| `numPagesCreated` | 整数 | 签名后添加的页面数。 |
+| `numPagesDeleted` | 整数 | 签名后删除的页面数。 |
 | `numPagesModified` | 整数 | 签名后其内容被修改的页面数（在此目的下，注释/表单字段的添加/删除/修改不视为页面修改）。 |
 | `spawnedPagesCreated` | 字符串数组 | 签名后生成的页面列表。对于每个生成的页面，都提供了源模板的名称。 |
 | `spawnedPagesDeleted` | 字符串数组 | 签名后删除的生成页面列表。对于每个生成的页面，都提供了源模板的名称。 |
 | `spawnedPagesModified` | 字符串数组 | 签名后修改的生成页面列表。对于每个生成的页面，都提供了源模板的名称。 |
 
-## 示例
+### 示例
 
 此示例将修改信息写回控制台。
 
@@ -15771,22 +16407,24 @@ for( var i = 0; i < spawnedPages.length; i++ )
 console.println( sigMods.numPagesDeleted );
 ```
 
-## signatureGetSeedValue
+## `signatureGetSeedValue`
 
 | 6.0 | | | | |
+| :--- | :--- | :--- | :--- | :--- |
 
 返回一个 SeedValue 通用对象，其中包含签名字段的种子值属性。种子值用于控制签名的属性，包括签名外观、签名原因和签名人。
-另请参阅 signatureSetSeedValue。
 
-## 参数
+另请参阅 `signatureSetSeedValue`。
+
+### 参数
 
 无
 
-## 返回值
+### 返回值
 
 一个 SeedValue 通用对象。
 
-## 示例
+### 示例
 
 以下示例说明如何访问签名字段的种子值。
 
@@ -15801,42 +16439,44 @@ var certSpec = seedValue.certspec;
 console.println( "Issuer:" + certSpec.issuer);
 ```
 
-## signatureInfo
+## `signatureInfo`
 
 | 5.0 | | Ⓢ | | |
+| :--- | :--- | :--- | :--- | :--- |
 
 返回一个 SignatureInfo 对象，其中包含签名的属性。该对象是在调用此方法时获取的签名快照。安全处理程序可以指定特定于该安全处理程序的额外属性。
 
-**注意：**（安全 Ⓢ）：对调用此方法的时间没有限制，但是，指定的安全处理程序 oSig 可能并非始终可用；有关详细信息，请参阅方法 security.getHandler。
+**注意：**（安全 Ⓢ）：对调用此方法的时间没有限制，但是，指定的安全处理程序 `oSig` 可能并非始终可用；有关详细信息，请参阅方法 `security.getHandler`。
 
-签名处理程序的某些属性，例如证书（SignatureInfo 对象的一个属性），在签名验证之前可能返回空值。因此，应在 signatureValidate 之后再次调用 signatureInfo。
+签名处理程序的某些属性，例如证书（SignatureInfo 对象的一个属性），在签名验证之前可能返回空值。因此，应在 `signatureValidate` 之后再次调用 `signatureInfo`。
 
+### Acrobat JavaScript 脚本参考
 
+#### 字段方法
 
-## Acrobat JavaScript 脚本参考
-### 字段方法
+### 参数
 
-# signatureInfo
+| 参数 | 描述 |
+| :--- | :--- |
+| `oSig` | （可选）用于检索签名属性的安全处理器对象。如果未指定，则根据用户首选项确定安全处理器：通常是用于创建签名的处理器。 |
 
-# 参数
+### 返回值
 
-| oSig | （可选）用于检索签名属性的安全处理器对象。如果未指定，则根据用户首选项确定安全处理器：通常是用于创建签名的处理器。 |
+一个包含签名属性的 SignatureInfo 对象。此对象类型也用于对签名字段进行签名、对 FDF 对象进行签名，或与 `FDF.signatureValidate` 方法一起使用。
 
-# 返回值
-
-一个包含签名属性的 SignatureInfo 对象。此对象类型也用于对签名字段进行签名、对 FDF 对象进行签名，或与 FDF.signatureValidate 方法一起使用。
-
-# 示例
+### 示例
 
 以下示例展示了如何访问签名信息属性。
 
-```
+
+
+```javascript
 // get all info
-var f = getField( "Signature1" );
+var f = getField("Signature1");
 f.signatureValidate();
 var s = f.signatureInfo();
-console.println( "Signature Attributes:" );
-for(i in s) console.println( i + " = " + s[i] );
+console.println("Signature Attributes:");
+for (i in s) console.println(i + " = " + s[i]);
 
 // get particular info
 var f = this.getField("Signature1"); // uses the ppklite sig handler
@@ -15853,413 +16493,446 @@ console.println("contact info = " + Info.contactInfo);
 var certificate = Info.certificates[0];
 
 // common name of the signer
-console.println("subjectCN = " +  certificate.subjectCN);
-console.println("serialNumber = " +  certificate.serialNumber);
+console.println("subjectCN = " + certificate.subjectCN);
+console.println("serialNumber = " + certificate.serialNumber);
 
 // Display some information about this the distinguished name of signer
 console.println("subjectDN.cn = " + certificate.subjectDN.cn);
-console.println("subjectDN.o = " +  certificate.subjectDN.o);
+console.println("subjectDN.o = " + certificate.subjectDN.o);
 ```
 
-# signatureSetSeedValue
+# `signatureSetSeedValue`
 
-设置在对签名字段进行签名时使用的属性。这些属性存储在签名字段中，在字段被签名、签名被清除或调用 `resetForm` 时不会更改。使用 `signatureGetSeedValue` 可获取属性设置。
+设置在对签名字段进行签名时使用的属性。这些属性存储在签名字段中，在字段被签名、签名被清除或调用`resetForm`时不会更改。使用`signatureGetSeedValue`可获取属性设置。
 
-**注意：**（安全性 ⓘ）：此方法可在批处理、应用程序初始化、控制台或菜单事件期间执行。另请参阅[特权上下文与非特权上下文](https://example.com)。从 Acrobat 7.0 开始，通过菜单事件执行 JavaScript 不再具有特权，详情请参阅[通过菜单执行 JavaScript](https://example.com)。无法为作者签名设置种子值。作者签名是指 [SignatureInfo 对象](https://example.com)的 mdp 属性值为 `allowNone`、`default` 或 `defaultAndComments` 的签名。在 Adobe Reader 中不允许使用。
+> **注意：**（安全性 ⓘ）：此方法可在批处理、应用程序初始化、控制台或菜单事件期间执行。另请参阅[特权上下文与非特权上下文](https://example.com)。从 Acrobat 7.0 开始，通过菜单事件执行 JavaScript 不再具有特权，详情请参阅[通过菜单执行 JavaScript](https://example.com)。无法为作者签名设置种子值。作者签名是指[SignatureInfo 对象](https://example.com)的`mdp`属性值为`allowNone`、`default`或`defaultAndComments`的签名。在 Adobe Reader 中不允许使用。
 
-# 参数
+## 参数
 
-| oSigSeedValue | 一个包含签名种子值属性的 [SeedValue 通用对象](https://example.com)。 |
+| `oSigSeedValue` | 一个包含签名种子值属性的[SeedValue 通用对象](https://example.com)。 |
+|---|---|
 
-# 返回值
+## 返回值
 
 无
 
-# SeedValue 通用对象
+## SeedValue 通用对象
 
-一个传递给 `field.signatureSetSeedValue` 并由 `field.signatureGetSeedValue` 返回的通用 JS 对象，代表一个签名种子值。它具有以下属性：
+一个传递给`field.signatureSetSeedValue`并由`field.signatureGetSeedValue`返回的通用 JS 对象，代表一个签名种子值。它具有以下属性：
 
 | 属性 | 类型 | 访问权限 | 描述 |
 |---|---|---|---|
-| `certspec` | 对象 | R/W | 一个种子值 [CertificateSpecifier 通用对象](https://example.com)。 |
+| `certspec` | 对象 | R/W | 一个种子值[CertificateSpecifier 通用对象](https://example.com)。 |
 | `filter` | 字符串 | R/W | 签名时要使用的安全处理器的与语言无关的名称。 |
-| **flags** | 数字 | R/W | 控制此对象中哪些属性是关键的（1，必需）和非关键的（0，可选）的标志。该值应设置为以下值的逻辑或：<br>1：如果 filter 是关键的，<br>2：如果 subFilter 是关键的，<br>4：如果 version 是关键的，<br>8：如果 reasons 字段是关键的。<br>如果此字段不存在，则所有属性的解释都是可选的。 |
-| **legalAttestations** | 字符串数组 | R/W | （版本 7.0）用户在创建 MDP 签名时允许使用的法律声明列表。 |
-| **mdp** | 字符串 | R/W | （版本 7.0）签名字段时要使用的修改检测和预防 (MDP) 设置。值为唯一标识符，在标题为“修改检测和预防 (MDP) 值”的表中描述。<br>请注意，**allowAll** 会导致签名不使用 MDP，从而使其成为用户签名而非作者签名。 |
-| **reasons** | 字符串数组 | R/W | 用户签名时允许使用的原因列表。 |
-| **subFilter** | 字符串数组 | R/W | 可用于签名的可接受格式的数组。有关已知格式的列表，请参阅签名信息对象的 subFilter 属性。 |
-| **timeStampspec** | 对象 | R/W | （版本 7.0）种子值时间戳说明符对象。 |
-| **version** | 数字 | R/W | 签名所需的签名格式字典的最低版本。 |
+| `flags` | 数字 | R/W | 控制此对象中哪些属性是关键的（1，必需）和非关键的（0，可选）的标志。该值应设置为以下值的逻辑或：<br>1：如果`filter`是关键的，<br>2：如果`subFilter`是关键的，<br>4：如果`version`是关键的，<br>8：如果`reasons`字段是关键的。<br>如果此字段不存在，则所有属性的解释都是可选的。 |
+| `legalAttestations` | 字符串数组 | R/W | （版本 7.0）用户在创建 MDP 签名时允许使用的法律声明列表。 |
+| `mdp` | 字符串 | R/W | （版本 7.0）签名字段时要使用的修改检测和预防（MDP）设置。值为唯一标识符，在标题为“修改检测和预防（MDP）值”的表中描述。<br>请注意，`allowAll`会导致签名不使用 MDP，从而使其成为用户签名而非作者签名。 |
+| `reasons` | 字符串数组 | R/W | 用户签名时允许使用的原因列表。 |
+| `subFilter` | 字符串数组 | R/W | 可用于签名的可接受格式的数组。有关已知格式的列表，请参阅签名信息对象的`subFilter`属性。 |
+| `timeStampspec` | 对象 | R/W | （版本 7.0）种子值时间戳说明符对象。 |
+| `version` | 数字 | R/W | 签名所需的签名格式字典的最低版本。 |
 
 # CertificateSpecifier 通用对象
 
-此通用 JS 对象包含签名种子值的证书说明符属性。用于 SeedValue 通用对象的 **certSpec** 属性中。此对象包含以下属性：
+此通用 JS 对象包含签名种子值的证书说明符属性。用于 SeedValue 通用对象的`certSpec`属性中。此对象包含以下属性：
 
 | 属性 | 类型 | 访问权限 | 描述 |
-| :--- | :--- | :--- | :--- |
-| **subject** | 证书对象数组 | R/W | 可用于签名的证书对象数组。<br>**注意：** 如果指定了此属性，则签名证书必须与此数组中的某个证书完全匹配。 |
-| **issuer** | 证书对象数组 | R/W | 可用于签名的证书对象数组。**注意**：如果指定了此属性，则签名证书必须由一个与此数组中某个证书完全匹配的证书颁发。 |
-| **oid** | 字符串数组 | R/W | 包含策略 OID 的字符串数组，这些 OID 必须存在于签名证书中。此属性仅在 **issuer** 属性存在时适用。 |
-| **url** | 字符串 | R/W | 如果找不到匹配的凭证，则可用于注册新凭证的 URL。 |
-| **flags** | 数字 | R/W | 控制此对象中哪些属性是关键的（必需）和非关键的（可选）的位标志。该值应设置为以下值的逻辑或：如果 subject 是关键的则为 1，如果 issuer 是关键的则为 2，如果 oid 是关键的则为 4。如果此字段不存在，则所有属性的解释都是可选的。 |
+|---|---|---|---|
+| `subject` | 证书对象数组 | R/W | 可用于签名的证书对象数组。<br>**注意：**如果指定了此属性，则签名证书必须与此数组中的某个证书完全匹配。 |
+| `issuer` | 证书对象数组 | R/W | 可用于签名的证书对象数组。**注意：**如果指定了此属性，则签名证书必须由一个与此数组中某个证书完全匹配的证书颁发。 |
+| `oid` | 字符串数组 | R/W | 包含策略 OID 的字符串数组，这些 OID 必须存在于签名证书中。此属性仅在`issuer`属性存在时适用。 |
+| `url` | 字符串 | R/W | 如果找不到匹配的凭证，则可用于注册新凭证的 URL。 |
+| `flags` | 数字 | R/W | 控制此对象中哪些属性是关键的（必需）和非关键的（可选）的位标志。该值应设置为以下值的逻辑或：如果`subject`是关键的则为 1，如果`issuer`是关键的则为 2，如果`oid`是关键的则为 4。如果此字段不存在，则所有属性的解释都是可选的。 |
 
 # 种子值时间戳说明符对象
 
 种子值时间戳说明符对象的属性如下：
 
 | 属性 | 类型 | 访问权限 | 描述 |
-| :--- | :--- | :--- | :--- |
-| **url** | 字符串 | R/W | 提供符合 RFC 3161 时间戳的时间戳服务器的 URL。 |
-| **flags** | 数字 | R/W | 控制此属性是关键的（必需）还是非关键的（可选）的位标志。0 表示非关键，1 表示关键。默认值为 0。 |
+|---|---|---|---|
+| `url` | 字符串 | R/W | 提供符合 RFC 3161 时间戳的时间戳服务器的 URL。 |
+| `flags` | 数字 | R/W | 控制此属性是关键的（必需）还是非关键的（可选）的位标志。0 表示非关键，1 表示关键。默认值为 0。 |
 
 # 示例 1
 
-将签名处理器设置为 PPKMS，格式设置为 "adbe.pkcs7.sha1"。
+将签名处理器设置为 PPKMS，格式设置为`"adbe.pkcs7.sha1"`。
 
-```
-var f = this.getField( "sig0" );
+```javascript
+var f = this.getField("sig0");
 
-f.signatureSetSeedValue( {
+f.signatureSetSeedValue({
     filter: "Adobe.PPKMS",
     subFilter: ["adbe.pkcs7.sha1"],
-    flags: 0x03 } );
+    flags: 0x03
+});
 ```
 
 # 示例 2
 
-将签名处理器设置为 PPKLite，签名者证书的颁发者设置为 caCert。两者都是必需的种子值，如果任一约束未满足，签名将失败。
+将签名处理器设置为 PPKLite，签名者证书的颁发者设置为`caCert`。两者都是必需的种子值，如果任一约束未满足，签名将失败。
 
-```
+```javascript
 var caCert = security.importFromFile("Certificate", "/C/CA.cer");
 f.signatureSetSeedValue({
     filter: "Adobe.PPKLite",
     certspec: {
         issuer: [caCert],
         url: "http://www.ca.com/enroll.html",
-        flags : 0x02
+        flags: 0x02
     },
     flags: 0x01
 });
 ```
 
-# signatureSign
+# `signatureSign`
 
-使用指定的安全处理器对字段进行签名。另请参阅 `security.getHandler` 和 `securityHandler.login`。
+使用指定的安全处理器对字段进行签名。另请参阅`security.getHandler`和`securityHandler.login`。
 
 > **注意：**（安全性(S)）此方法只能在批处理、控制台、菜单或应用程序初始化事件期间执行。另请参阅特权上下文与非特权上下文。事件对象包含对 Acrobat JavaScript 事件的讨论。
+
 从 Acrobat 7.0 开始，通过菜单事件执行 JavaScript 不再具有特权，详情请参阅通过菜单执行 JavaScript。
-如果签名字段已被签名，则无法对其签名。使用 `resetForm` 可清除签名字段。
+
+如果签名字段已被签名，则无法对其签名。使用`resetForm`可清除签名字段。
+
 在 Adobe Reader 中不可用。
 
-# 参数
+## 参数
 
-| oSig | 指定用于签名的 `SecurityHandler` 对象。如果指定的处理器不支持签名操作，则会引发异常。某些安全处理器要求用户在签名前必须登录。如果未指定 `oSig`，则此方法将根据用户首选项选择处理器，或者如果 `bUI` 为 `true`，则提示用户进行选择。 |
-| oInfo | （可选）一个指定签名可写属性的 `SignatureInfo` 对象。另请参阅 `signatureInfo`。 |
-| cDIPath | （可选）应用签名后要保存文件的设备无关路径。如果未指定，则文件将保存回其原始位置。 |
+| `oSig` | 指定用于签名的`SecurityHandler`对象。如果指定的处理器不支持签名操作，则会引发异常。某些安全处理器要求用户在签名前必须登录。如果未指定`oSig`，则此方法将根据用户首选项选择处理器，或者如果`bUI`为`true`，则提示用户进行选择。 |
+|---|---|
+| `oInfo` | （可选）一个指定签名可写属性的`SignatureInfo`对象。另请参阅`signatureInfo`。 |
+| `cDIPath` | （可选）应用签名后要保存文件的设备无关路径。如果未指定，则文件将保存回其原始位置。 |
 
-## signatureSign
+### `signatureSign` 参数
 
-| **bUI** | （可选，版本 6.0）签名时安全处理程序是否应显示用户界面。如果为 **true**，则 **oInfo** 和 **cDIPath** 将用作签名对话框中的默认值。如果为 **false**（默认值），则签名将在没有任何用户界面的情况下进行。 |
-| **cLegalAttest** | （可选，版本 6.0）创建作者签名时可以提供一个字符串。作者签名是指 [SignatureInfo Object](javascript:void(0)) 的 **mdp** 属性值不是 **allowAll** 的签名。创建作者签名时，会扫描文档中的法律警告，并将这些警告嵌入文档中。调用者可以通过首先调用 **doc.getLegalWarnings** 来确定发现了哪些法律警告。如果要嵌入警告，作者可能希望提供一份证明，说明为何将这些警告应用于文档。 |
+| `bUI` | （可选，版本 6.0）签名时安全处理程序是否应显示用户界面。如果为`true`，则`oInfo`和`cDIPath`将用作签名对话框中的默认值。如果为`false`（默认值），则签名将在没有任何用户界面的情况下进行。 |
+|---|---|
+| `cLegalAttest` | （可选，版本 6.0）创建作者签名时可以提供一个字符串。作者签名是指[SignatureInfo Object](javascript:void(0))的`mdp`属性值不是`allowAll`的签名。创建作者签名时，会扫描文档中的法律警告，并将这些警告嵌入文档中。调用者可以通过首先调用`doc.getLegalWarnings`来确定发现了哪些法律警告。如果要嵌入警告，作者可能希望提供一份证明，说明为何将这些警告应用于文档。 |
 
-**返回值**
+## 返回值
 
-如果签名成功应用，则返回 **true**，否则返回 **false**。
+如果签名成功应用，则返回`true`，否则返回`false`。
 
-**示例 1**
+## 示例 1
 
 以下示例使用 PPKLite 签名处理程序对“Signature”字段进行签名：
 
-```
-var myEngine = security.getHandler( "Adobe.PPKLite" );
-myEngine.login( "dps017", "/c/profile/dps.pfx" );
+```javascript
+var myEngine = security.getHandler("Adobe.PPKLite");
+myEngine.login("dps017", "/c/profile/dps.pfx");
 var f = this.getField("Signature");
 
 // 签名字段
-f.signatureSign( myEngine,
-    { password: "dps017",        // 提供密码
-      location: "San Jose, CA",  // ... 见下方注释
-      reason: "I am approving this document",
-      contactInfo: "dpsmith@adobe.com",
-      appearance: "Fancy"});
-```
-
-**注意：** 在上面的示例中，提供了密码。这可能是必要的，也可能不必要，具体取决于 **Password Timeout** 是否已过期。**Password Timeout** 可以通过 **securityHandler.setPasswordTimeout** 以编程方式设置。
-
-**示例 2**
-
-以下示例说明了如何签名作者签名字段。
-
-```
-var myEngine = security.getHandler( "Adobe.PPKLite" );
-myEngine.login( "dps017", "/c/profile/dps.pfx" );
-
-var f = this.getField( "AuthorSigFieldName" );
-var s = { reason: "I am the author of this document",
-          mdp: "allowNone" };
-f.signatureSign({
-oSig: myEngine,
-oInfo: s,
-bUI: false,
-cLegalAttest: "Fonts are not embedded to reduce file size"
+f.signatureSign(myEngine, {
+    password: "dps017",        // 提供密码
+    location: "San Jose, CA",  // ... 见下方注释
+    reason: "I am approving this document",
+    contactInfo: "dpsmith@adobe.com",
+    appearance: "Fancy"
 });
 ```
 
-## signatureValidate
+> **注意：**在上面的示例中，提供了密码。这可能是必要的，也可能不必要，具体取决于`Password Timeout`是否已过期。`Password Timeout`可以通过`securityHandler.setPasswordTimeout`以编程方式设置。
+
+## 示例 2
+
+以下示例说明了如何签名作者签名字段。
+
+```javascript
+var myEngine = security.getHandler("Adobe.PPKLite");
+myEngine.login("dps017", "/c/profile/dps.pfx");
+
+var f = this.getField("AuthorSigFieldName");
+var s = {
+    reason: "I am the author of this document",
+    mdp: "allowNone"
+};
+f.signatureSign({
+    oSig: myEngine,
+    oInfo: s,
+    bUI: false,
+    cLegalAttest: "Fonts are not embedded to reduce file size"
+});
+```
+
+## `signatureValidate`
 
 | 5.0 | Ⓓ | | | |
+|---|---|---|---|---|
 
-验证并返回 **signature** 字段中签名的有效性状态。此过程可能计算成本高昂，并根据用于签名的签名处理程序，可能需要相当长的时间。
+验证并返回`signature`字段中签名的有效性状态。此过程可能计算成本高昂，并根据用于签名的签名处理程序，可能需要相当长的时间。
 
-**注意：** 此方法可以随时调用，没有限制，但是参数 **oSig** 并不总是可用；详情请参见 **security.getHandler**。
+> **注意：**此方法可以随时调用，没有限制，但是参数`oSig`并不总是可用；详情请参见`security.getHandler`。
 
 ### 参数
 
-| oSig | （可选）用于验证签名的安全处理程序。该值可以是 SecurityHandler 对象，也可以是 SignatureParameters 通用对象。如果未指定此处理程序，则该方法将使用签名的 handlerName 属性返回的安全处理程序。 |
-| bUI | （可选，版本 6.0）当为 **true** 时，允许在必要时显示用户界面来验证数据文件。如果未指定验证处理程序，则可以使用用户界面来选择一个。默认值为 **false**。 |
+| `oSig` | （可选）用于验证签名的安全处理程序。该值可以是`SecurityHandler`对象，也可以是`SignatureParameters`通用对象。如果未指定此处理程序，则该方法将使用签名的`handlerName`属性返回的安全处理程序。 |
+|---|---|
+| `bUI` | （可选，版本 6.0）当为`true`时，允许在必要时显示用户界面来验证数据文件。如果未指定验证处理程序，则可以使用用户界面来选择一个。默认值为`false`。 |
 
 ### 返回值
 
 返回签名的有效性状态。有效性值如下：
 
-- -1：不是签名字段
-- 0：签名为空白
-- 1：状态未知
-- 2：签名无效
-- 3：文档签名有效，但签名者身份无法验证
-- 4：文档签名有效且签名者身份有效。
+- `-1`：不是签名字段
+- `0`：签名为空白
+- `1`：状态未知
+- `2`：签名无效
+- `3`：文档签名有效，但签名者身份无法验证
+- `4`：文档签名有效且签名者身份有效。
 
-请参阅 SignatureInfo 对象的 **status** 和 **statusText** 属性。
+请参阅 SignatureInfo 对象的`status`和`statusText`属性。
 
 ## SignatureParameters 通用对象
 
-一个通用对象，具有以下属性，用于指定 **field.signatureValidate** 进行验证时使用的安全处理程序：
+一个通用对象，具有以下属性，用于指定`field.signatureValidate`进行验证时使用的安全处理程序：
 
 | 属性 | 描述 |
 |---|---|
-| oSecHdr | 用于验证此签名的安全处理程序对象 |
-| bAltSecHdr | 如果为 `true`，则可以使用基于用户偏好设置选择的备用安全处理程序来验证签名。默认值为 `false`，表示使用签名的 `handlerName` 属性返回的安全处理程序来验证签名。如果提供了 `oSecHdr`，则不使用此参数。 |
+| `oSecHdr` | 用于验证此签名的安全处理程序对象 |
+| `bAltSecHdr` | 如果为`true`，则可以使用基于用户偏好设置选择的备用安全处理程序来验证签名。默认值为`false`，表示使用签名的`handlerName`属性返回的安全处理程序来验证签名。如果提供了`oSecHdr`，则不使用此参数。 |
 
 ### 示例
 
-```
-var f = this.getField("Signature1") // 获取签名字段
+```javascript
+var f = this.getField("Signature1"); // 获取签名字段
 var status = f.signatureValidate();
 var sigInfo = f.signatureInfo();
-if ( status < 3 )
+
+if (status < 3)
     var msg = "Signature not valid! " + sigInfo.statusText;
 else
     var msg = "Signature valid! " + sigInfo.statusText;
+
 app.alert(msg);
 ```
 
-## FullScreen 对象
+# FullScreen 对象
 
 | 5.0 | P | | | |
+|---|---|---|---|---|
 
-用于全屏（演示模式）首选项和属性的接口。要获取 **fullScreen** 对象，请使用 **app.fs**。
+用于全屏（演示模式）首选项和属性的接口。要获取`fullScreen`对象，请使用`app.fs`。
 
-### FullScreen 属性
+## FullScreen 属性
 
-#### backgroundColor
+### `backgroundColor`
 
-全屏模式下屏幕的背景颜色。详情请参阅 [颜色数组](https://acrobat.com/en-us/guides/developer/latest/en/api/Color_Arrays.html)。
+全屏模式下屏幕的背景颜色。详情请参阅[颜色数组](https://acrobat.com/en-us/guides/developer/latest/en/api/Color_Arrays.html)。
 
 类型：颜色数组
+
 访问权限：可读/可写。
 
-##### 示例
+#### 示例
 
-```
+```javascript
 app.fs.backgroundColor = color.ltGray;
 ```
 
-#### clickAdvances
+### `clickAdvances`
 
 鼠标单击页面上任意位置是否会使命令查看器前进一页。
 
 类型：布尔值
+
 访问权限：可读/可写。
 
-#### cursor
+### `cursor`
 
 确定全屏模式下鼠标指针的行为。便捷光标对象定义了所有有效的光标行为：
 
 | 光标行为 | 关键字 |
-| :--- | :--- |
+|---|---|
 | 始终隐藏 | `cursor.hidden` |
 | 延迟后隐藏 | `cursor.delay` |
 | 可见 | `cursor.visible` |
 
 类型：数字
+
 访问权限：可读/可写。
 
-##### 示例
+#### 示例
 
-```
+```javascript
 app.fs.cursor = cursor.visible;
 ```
 
-#### defaultTransition
+### `defaultTransition`
 
-全屏模式下前进页面时使用的默认过渡效果。使用 `transitions` 获取查看器支持的有效过渡效果名称列表。
-**无过渡效果**相当于 `app.fs.defaultTransition = "";`
+全屏模式下前进页面时使用的默认过渡效果。使用`transitions`获取查看器支持的有效过渡效果名称列表。
+
+**无过渡效果**相当于`app.fs.defaultTransition = "";`
 
 类型：数字
+
 访问权限：可读/可写。
 
-##### 示例
+#### 示例
 
 将文档置于演示模式
 
-```
+
+
+```javascript
 app.fs.defaultTransition = "WipeDown";
 app.fs.isFullScreen = true;
 ```
 
-#### escapeExits
+#### `escapeExits`
 
 Escape 键是否可用于退出全屏模式。
 
 类型：布尔值
+
 访问权限：可读/可写。
 
-#### isFullScreen
+#### `isFullScreen`
 
 将 Acrobat 查看器置于全屏模式而非普通查看模式。这仅在 Acrobat 查看器窗口中打开有文档时才有效。
 
 **注意：** 在 Web 浏览器中查看的 PDF 文档无法置于全屏模式。
 
 类型：布尔值
+
 访问权限：可读/可写。
 
 ##### 示例
 
-```
+```javascript
 app.fs.isFullScreen = true;
 ```
 
-在上面的示例中，Adobe Acrobat 查看器被设置为全屏模式。如果 **isFullScreen** 之前为 **false**，则将设置默认查看模式。默认查看模式定义为启动全屏模式之前 Acrobat 应用程序所在的原始模式。
+在上面的示例中，Adobe Acrobat 查看器被设置为全屏模式。如果 `isFullScreen` 之前为 `false`，则将设置默认查看模式。默认查看模式定义为启动全屏模式之前 Acrobat 应用程序所在的原始模式。
 
-#### loop
+#### `loop`
 
 在全屏模式下，当发生页面前进（由鼠标单击、键盘和/或计时器生成）时，文档是否会循环回到文档开头。
 
 类型：布尔值
+
 访问权限：可读/可写。
 
-#### timeDelay
+#### `timeDelay`
 
-全屏模式下页面自动前进前的默认秒数。请参阅 useTimer 以激活/停用自动翻页。
+全屏模式下页面自动前进前的默认秒数。请参阅 `useTimer` 以激活/停用自动翻页。
 
 类型：数字
+
 访问权限：可读/可写。
 
 ##### 示例
 
-```
+```javascript
 app.fs.timeDelay = 5;        // 延迟 5 秒
 app.fs.useTimer = true;       // 激活自动翻页
 app.fs.usePageTiming = true;  // 允许页面覆盖
 app.fs.isFullScreen = true;   // 进入全屏模式
 ```
 
-#### transitions
+#### `transitions`
 
-一个字符串数组，表示查看器中实现的的有效过渡效果名称。**无过渡效果**相当于将 defaultTransition 设置为空字符串：
+一个字符串数组，表示查看器中实现的有效过渡效果名称。**无过渡效果**相当于将 `defaultTransition` 设置为空字符串：
 
-```
+```javascript
 app.fs.defaultTransition = "";
 ```
 
 类型：数组
+
 访问权限：只读。
 
 ##### 示例
 
 此脚本会生成当前支持的过渡效果名称列表。
 
-#### usePageTiming
+#### `usePageTiming`
 
-自动翻页是否会遵循全屏模式下为各个页面指定的值。请使用 [setPageTransitions](javascript:void(0)) 设置各个页面的过渡属性。
+自动翻页是否会遵循全屏模式下为各个页面指定的值。请使用 `setPageTransitions` 设置各个页面的过渡属性。
 
 类型：布尔值
+
 访问权限：可读/可写。
 
-#### useTimer
+#### `useTimer`
 
-全屏模式下是否启用自动翻页。请使用 [timeDelay](javascript:void(0)) 设置跳转到下一页之前的默认时间间隔。
+全屏模式下是否启用自动翻页。请使用 `timeDelay` 设置跳转到下一页之前的默认时间间隔。
 
 类型：布尔值
+
 访问权限：可读/可写。
 
 ## Global 对象
 
-这是一个静态 JavaScript 对象，允许您在文档之间共享数据，并使数据在会话之间持久化。此类数据称为 *持久化全局数据*。文档之间的全局数据共享和通知通过 *订阅* 机制完成，该机制允许您监控全局数据变量并在文档之间报告其值的更改。
+这是一个静态 JavaScript 对象，允许您在文档之间共享数据，并使数据在会话之间持久化。此类数据称为*持久化全局数据*。文档之间的全局数据共享和通知通过*订阅*机制完成，该机制允许您监控全局数据变量并在文档之间报告其值的更改。
 
 ### 创建全局属性
 
-您可以通过向全局对象添加属性来指定全局数据。属性类型可以是字符串、布尔值或数字。
+您可以通过向 `global` 对象添加属性来指定全局数据。属性类型可以是字符串、布尔值或数字。
 
 例如，要添加一个名为“radius”的变量并允许所有文档脚本访问此变量，脚本只需定义该属性：
 
-```
+```javascript
 global.radius = 8;
 ```
 
-全局变量“radius”现在在整个当前查看器会话的所有文档中都是已知的。假设查看器中打开了两个文件 A.pdf 和 B.pdf，并且全局声明是在 A.pdf 中做出的。在任一文件（A.pdf 或 B.pdf）中，您都可以使用 **global.radius** 计算球体的体积：
+全局变量“radius”现在在整个当前查看器会话的所有文档中都是已知的。假设查看器中打开了两个文件 A.pdf 和 B.pdf，并且全局声明是在 A.pdf 中做出的。在任一文件（A.pdf 或 B.pdf）中，您都可以使用 `global.radius` 计算球体的体积：
 
-```
+```javascript
 var V = (4/3) * Math.PI * Math.pow(global.radius, 3);
 ```
 
-在任一文件中，您都会得到相同的结果 2144.66058。如果 **global.radius** 的值发生变化，并再次执行脚本，则 **V** 的值也会相应变化。
-
-
+在任一文件中，您都会得到相同的结果 2144.66058。如果 `global.radius` 的值发生变化，并再次执行脚本，则 `V` 的值也会相应变化。
 
 Acrobat JavaScript 脚本参考 全局方法
 
 ## 删除全局属性
 
-要从 **global** 对象中删除变量或属性，请使用 **delete** 操作符来移除已定义的属性。有关 JavaScript 保留关键字 **delete** 的信息，请参阅 [Core JavaScript 1.5 文档](https://docs.oracle.com/javase/1.5/docs/guide/extensions/security.html)。
-例如，要移除 **global.radius** 属性，请调用以下脚本：
+要从 `global` 对象中删除变量或属性，请使用 `delete` 操作符来移除已定义的属性。有关 JavaScript 保留关键字 `delete` 的信息，请参阅 [Core JavaScript 1.5 文档](https://docs.oracle.com/javase/1.5/docs/guide/extensions/security.html)。
 
-```
+例如，要移除 `global.radius` 属性，请调用以下脚本：
+
+```javascript
 delete global.radius
 ```
 
 ## 全局方法
 
-### setPersistent
+### `setPersistent`
 
 3.01 ⊕
 
 控制指定变量是否在 Acrobat 的多次调用之间保持持久化。
+
 持久化的全局数据仅适用于布尔型、数字型或字符串型的变量。Acrobat 6.0 将全局持久化变量的最大大小限制为 2-4k。超过此限制的任何字符串数据都将被丢弃。
-持久化的全局变量在应用程序退出时存储在用户 **文件夹级别 JavaScript** 文件夹的 **glob.js** 文件中，并在应用程序启动时重新加载。对于 Acrobat 6.0 或更高版本，此文件的大小限制为 2-4k。
-建议为 Acrobat 构建脚本的 JavaScript 开发人员在指定持久化全局变量时使用命名约定。例如，你可以将所有变量命名为 **"myCompany_name"**。这将防止与整个文档中其他持久化全局变量名发生冲突。
+
+持久化的全局变量在应用程序退出时存储在用户**文件夹级别 JavaScript**文件夹的 `glob.js` 文件中，并在应用程序启动时重新加载。对于 Acrobat 6.0 或更高版本，此文件的大小限制为 2-4k。
+
+建议为 Acrobat 构建脚本的 JavaScript 开发人员在指定持久化全局变量时使用命名约定。例如，你可以将所有变量命名为 `"myCompany_name"`。这将防止与整个文档中其他持久化全局变量名发生冲突。
 
 #### 参数
 
 | 参数 | 描述 |
 | :--- | :--- |
-| **cVariable** | 要设置持久化的变量（全局属性）。 |
-| **bPersist** | 当为 **true** 时，该属性将存在于多个 Acrobat 查看器会话中。当为 **false**（默认值）时，该属性可在文档间访问，但不能跨 Acrobat 查看器会话访问。 |
+| `cVariable` | 要设置持久化的变量（全局属性）。 |
+| `bPersist` | 当为 `true` 时，该属性将存在于多个 Acrobat 查看器会话中。当为 `false`（默认值）时，该属性可在文档间访问，但不能跨 Acrobat 查看器会话访问。 |
 
 #### 返回值
 
 无
 
-#### 例如，要使 "radius" 属性持久化并可供其他文档访问，你可以使用：
+#### 示例
 
-```
-global.radius = 8;                   // 声明 radius 为全局变量
-global.setPersistent("radius", true);// 现在将其设为持久化
+要使 `"radius"` 属性持久化并可供其他文档访问，你可以使用：
+
+```javascript
+global.radius = 8;                    // 声明 radius 为全局变量
+global.setPersistent("radius", true); // 现在将其设为持久化
 ```
 
 上面定义的体积计算现在将在查看器会话之间，或者在 `global.radius` 的值被更改之前，产生相同的结果。
 
-### subscribe
+### `subscribe`
 
 | 5.0 |  |  |  |
 
@@ -16269,8 +16942,8 @@ global.setPersistent("radius", true);// 现在将其设为持久化
 
 | 参数 | 描述 |
 | :--- | :--- |
-| **cVariable** | 全局属性。 |
-| **fCallback** | 属性更改时要调用的函数。 |
+| `cVariable` | 全局属性。 |
+| `fCallback` | 属性更改时要调用的函数。 |
 
 #### 返回值
 
@@ -16281,25 +16954,31 @@ global.setPersistent("radius", true);// 现在将其设为持久化
 假设有两个文件 `setRadius.pdf` 和 `calcVolume.pdf` 在 Acrobat 或 Reader 中打开。
 
 - 在 `setRadius.pdf` 中，有一个按钮，其代码为：
-  `global.radius = 2;`
-- 在 `calcVolume.pdf` 中，有一个名为 **subscribe** 的文档级 JavaScript：
+
+  ```javascript
+  global.radius = 2;
   ```
+
+- 在 `calcVolume.pdf` 中，有一个名为 `subscribe` 的文档级 JavaScript：
+
+  ```javascript
   // 在“高级 > JavaScript > 文档 JavaScript”中
   global.subscribe("radius", RadiusChanged);
-  function RadiusChanged(x)         // 回调函数
-  {
-      var V = (4/3) * Math.PI * Math.pow(x,3);
+
+  function RadiusChanged(x) {         // 回调函数
+      var V = (4/3) * Math.PI * Math.pow(x, 3);
       this.getField("MyVolume").value = V; // 将值放入文本字段
   }
   ```
-- 在查看器中同时打开这两个文件，现在，点击 `setRadius.pdf` 文件中的按钮会立即更新 `calcVolume.pdf` 中的文本字段 "MyVolume"，值为 33.51032（由 `global.radius = 2` 决定）。
+
+- 在查看器中同时打开这两个文件，现在，点击 `setRadius.pdf` 文件中的按钮会立即更新 `calcVolume.pdf` 中的文本字段 `"MyVolume"`，值为 33.51032（由 `global.radius = 2` 决定）。
 
 回调函数的语法如下：
 
-```
+```javascript
 function fCallback(newval) {
-// newval 是你订阅的全局变量的新值。
-< 处理全局变量新值的代码 >
+    // newval 是你订阅的全局变量的新值。
+    < 处理全局变量新值的代码 >
 }
 ```
 
@@ -16331,29 +17010,47 @@ function fCallback(newval) {
 
 ### Identity 属性
 
-**注意：**（安全🔒）：**Identity** 对象属性仅在批处理、控制台、菜单和应用程序初始化事件期间可访问，以保护用户隐私。另请参阅 特权与非特权上下文。
-从 Acrobat 7.0 开始，通过菜单事件执行 JavaScript 不再具有特权，详情请参阅 通过菜单执行 JavaScript。
+**注意：**（安全🔒）：`Identity` 对象属性仅在批处理、控制台、菜单和应用程序初始化事件期间可访问，以保护用户隐私。另请参阅特权与非特权上下文。
 
-#### corporation
+从 Acrobat 7.0 开始，通过菜单事件执行 JavaScript 不再具有特权，详情请参阅通过菜单执行 JavaScript。
+
+#### `corporation`
+
 用户在身份首选项面板中输入的公司名称。
-类型：字符串                      访问权限：R/W。
 
-#### email
+类型：字符串
+
+访问权限：R/W。
+
+#### `email`
+
 用户在身份首选项面板中输入的电子邮件地址。
-类型：字符串                      访问权限：R/W。
 
-#### loginName
+类型：字符串
+
+访问权限：R/W。
+
+#### `loginName`
+
 操作系统注册的登录名。
-类型：字符串                      访问权限：R。
 
-#### name
+类型：字符串
+
+访问权限：R。
+
+#### `name`
+
 用户在身份首选项面板中输入的用户名。
-类型：字符串                      访问权限：R/W。
 
-**示例**
+类型：字符串
+
+访问权限：R/W。
+
+##### 示例
+
 以下内容可在控制台中执行，或者，也许在文件夹级别 JavaScript 中执行。
 
-```
+```javascript
 console.println("Your name is " + identity.name);
 console.println("Your e-mail is " + identity.email);
 ```
@@ -16362,61 +17059,83 @@ console.println("Your e-mail is " + identity.email);
 
 5.0
 
-这是一个不可创建的对象，由 Search 对象和 Catalog 对象的各种方法返回。**index** 对象表示一个 Catalog 生成的索引。你使用此对象来使用 Catalog 执行各种索引操作。你可以通过搜索查找索引的状态。
+这是一个不可创建的对象，由 Search 对象和 Catalog 对象的各种方法返回。`index` 对象表示一个 Catalog 生成的索引。你使用此对象来使用 Catalog 执行各种索引操作。你可以通过搜索查找索引的状态。
 
 ### Index 属性
 
-#### available
+#### `available`
+
 索引是否可供选择和搜索。如果网络连接断开、CD-ROM 未插入，或者索引管理员将索引关闭以进行维护，则索引可能不可用。
-类型：布尔值 访问权限：R。
 
-#### name
-索引管理员在索引时指定的索引名称。另请参见 **search.indexes**，它返回搜索引擎当前访问的索引对象数组。
-类型：字符串 访问权限：R。
+类型：布尔值
 
-#### 示例
+访问权限：R。
+
+#### `name`
+
+索引管理员在索引时指定的索引名称。另请参见 `search.indexes`，它返回搜索引擎当前访问的索引对象数组。
+
+类型：字符串
+
+访问权限：R。
+
+##### 示例
+
 此示例枚举所有索引并将其名称写入控制台。
 
-```
+```javascript
 for (var i = 0; i < search.indexes.length; i++) {
     console.println("Index[" + i + "] = " + search.indexes[i].name);
 }
 ```
 
-#### path
-索引所在的依赖于设备的路径。有关路径的精确语法，请参阅 PDF 参考文档第 3.10.1 节“文件规范字符串”。
-类型：字符串 访问权限：R。
+#### `path`
 
-#### selected
-索引是否参与搜索。如果为 **true**，则索引将作为查询的一部分进行搜索；如果为 **false**，则不会。设置或取消设置此属性相当于在索引列表对话框中勾选选择状态。
+索引所在的依赖于设备的路径。有关路径的精确语法，请参阅 PDF 参考文档第 3.10.1 节“文件规范字符串”。
+
+类型：字符串
+
+访问权限：R。
+
+#### `selected`
+
+索引是否参与搜索。如果为 `true`，则索引将作为查询的一部分进行搜索；如果为 `false`，则不会。设置或取消设置此属性相当于在索引列表对话框中勾选选择状态。
+
 类型：布尔值
+
 访问权限：R/W。
 
 ### Index 方法
 
-#### build
+#### `build`
 
 | 6.0 |  | S | X | X | P |
 
-使用 Catalog 插件构建与 **index** 对象关联的索引。此方法不会构建新索引。
+使用 Catalog 插件构建与 `index` 对象关联的索引。此方法不会构建新索引。
+
 索引构建在与索引文件相同的位置。如果索引已存在，则重新扫描包含的目录以查找更改并更新索引。如果索引不存在，则会弹出 UI，并且可以通过 UI 定义和构建新索引。
+
 如果 Catalog 处于空闲状态，则立即开始索引构建。否则，它将与 Catalog 一起排队。
-**注意：**（安全(S), 版本 7.0）此方法只能在批处理或控制台事件期间执行。另请参阅 特权与非特权上下文。事件对象包含了 Acrobat JavaScript 事件的讨论。
+
+**注意：**（安全(S), 版本 7.0）此方法只能在批处理或控制台事件期间执行。另请参阅特权与非特权上下文。事件对象包含了 Acrobat JavaScript 事件的讨论。
 
 #### 参数
 
-**cExpr**
+##### `cExpr`
+
 （可选）索引构建操作完成后要评估的表达式。默认为无表达式。有关更多详细信息，请参阅 PDF 参考文档中的“JavaScript 操作”。
-**bRebuildAll**
-（可选）如果为 **true**，则执行全新构建。索引首先被删除，然后重新构建。默认为 **false**。
+
+##### `bRebuildAll`
+
+（可选）如果为 `true`，则执行全新构建。索引首先被删除，然后重新构建。默认为 `false`。
 
 #### 返回值
 
-一个 CatalogJob 通用对象。**CatalogJob** 对象可用于检查作业参数和状态。
+一个 CatalogJob 通用对象。`CatalogJob` 对象可用于检查作业参数和状态。
 
 #### 示例
 
-```
+```javascript
 /* 构建索引 */
 if (typeof catalog != "undefined") {
     var idx = catalog.getIndex("/c/mydocuments/index.pdx");
@@ -16425,47 +17144,55 @@ if (typeof catalog != "undefined") {
 }
 ```
 
-
-
 ## 链接对象
 
-此对象用于设置和获取链接的属性，以及设置链接的JavaScript动作。
+此对象用于设置和获取链接的属性，以及设置链接的 JavaScript 动作。
+
 `link` 对象可通过 `doc.addLink` 或 `doc.getLinks` 获取。另请参阅 `doc.removeLinks`。
 
 ## 链接属性
 
-### borderColor
+### `borderColor`
 
 | 6.0 | (D) |   | (X) |   |
 | --- | --- | --- | --- | --- |
 
 `link` 对象的边框颜色。有关定义颜色数组以及此属性如何使用颜色的信息，请参阅颜色数组。
-类型：数组 访问权限：R/W。
 
-### borderWidth
+类型：数组
+
+访问权限：R/W。
+
+### `borderWidth`
 
 | 6.0 | (D) |   | (X) |   |
 | --- | --- | --- | --- | --- |
 
 `link` 对象的边框宽度。
-类型：整数 访问权限：R/W。
 
-### highlightMode
+类型：整数
+
+访问权限：R/W。
+
+### `highlightMode`
 
 | 6.0 | (D) |   | (X) |   |
 | --- | --- | --- | --- | --- |
 
 当鼠标在链接的活动区域内按下或保持按下时使用的视觉效果。有效值为：
+
 - 无
 - 反转（默认值）
 - 轮廓
 - 按下
 
-类型：字符串 访问权限：R/W。
+类型：字符串
+
+访问权限：R/W。
 
 ## 链接方法
 
-### rect
+### `rect`
 
 | 6.0 | D |   | X |   |
 | --- | --- | --- | --- | --- |
@@ -16473,20 +17200,21 @@ if (typeof catalog != "undefined") {
 链接在页面上所在矩形的区域。包含四个数字的数组，即边界矩形在*旋转用户空间*中的坐标，按以下顺序列出：左上 x、左上 y、右下 x 和右下 y。
 
 类型：数组
+
 访问权限：R/W。
 
-### setAction
+### `setAction`
 
 | 6.0 |   |   | X |   |
 | --- | --- | --- | --- | --- |
 
-为 **link** 对象的 MouseUp 触发器设置指定的 JavaScript 动作。
+为 `link` 对象的 MouseUp 触发器设置指定的 JavaScript 动作。
 
 > **注意：** 此方法将覆盖为此链接已定义的任何动作。
 
 #### 参数
 
-| cScript | 要使用的 JavaScript 动作。 |
+| `cScript` | 要使用的 JavaScript 动作。 |
 | --- | --- |
 
 #### 返回值
@@ -16501,36 +17229,44 @@ if (typeof catalog != "undefined") {
 
 ## 标记对象属性
 
-### frame
+### `frame`
 
 | 6.0 |   |   |   |   |
 | --- | --- | --- | --- | --- |
 
 帧号，其中 0 表示媒体的开始。对于大多数播放器，标记具有帧或时间值，但不能同时拥有两者。
 
-类型：数字 访问权限：R。
+类型：数字
 
-### index
+访问权限：R。
+
+### `index`
 
 | 6.0 |   |   |   |   |
 | --- | --- | --- | --- | --- |
 
 分配给此标记的任意索引号。标记具有从 0 开始的顺序索引号，但这些索引号的顺序可能与标记在媒体中出现的顺序不同。
 
-类型：数字 访问权限：R。
+类型：数字
 
-### name
+访问权限：R。
+
+### `name`
 
 | 6.0 |   |   |   |   |
 | --- | --- | --- | --- | --- |
 
 此标记的名称。媒体剪辑中的每个标记都有一个唯一的名称。
 
-类型：字符串 访问权限：R。
+类型：字符串
+
+访问权限：R。
 
 ### 示例
 
 通过索引获取一个标记，然后将该标记的名称打印到控制台。
+
+
 
 ```javascript
 // 假设 player 是一个 MediaPlayer 对象
@@ -16565,7 +17301,8 @@ console.println( "名为 \"Chapter 1\" 的标记，出现在时间 "
 
 ## 标记集合对象
 
-MediaPlayer 的 **markers** 属性是一个标记集合对象，它表示当前加载到播放器中的媒体剪辑中找到的所有标记。标记是媒体剪辑中的一个命名位置，用于标识特定时间或帧号，类似于音频 CD 上的音轨或 DVD 上的章节。标记由媒体剪辑本身定义。
+`MediaPlayer` 的 `markers` 属性是一个标记集合对象，它表示当前加载到播放器中的媒体剪辑中找到的所有标记。标记是媒体剪辑中的一个命名位置，用于标识特定时间或帧号，类似于音频 CD 上的音轨或 DVD 上的章节。标记由媒体剪辑本身定义。
+
 构造函数为 `app.media.Markers`。
 
 ## 标记集合对象属性
@@ -16575,8 +17312,9 @@ MediaPlayer 的 **markers** 属性是一个标记集合对象，它表示当前�
 | 6.0 |   |   |   |   |
 | --- | --- | --- | --- | --- |
 
-此标记集合对象所属的 **MediaPlayer 对象**。
-类型：*MediaPlayer 对象* 访问权限：R。
+此标记集合对象所属的 `MediaPlayer 对象`。
+
+类型：`MediaPlayer 对象` 访问权限：R。
 
 ## 标记集合对象方法
 
@@ -16585,8 +17323,10 @@ MediaPlayer 的 **markers** 属性是一个标记集合对象，它表示当前�
 | 6.0 |   |   |   |   |
 | --- | --- | --- | --- | --- |
 
-`Markers.get()` 方法按名称、索引号、秒数时间或帧号查找标记，并返回表示所请求标记的 **标记对象**。对象参数应包含 `name`、`index`、`time` 或 `frame` 属性之一。标记名称也可以作为字符串直接传入。
+`Markers.get()` 方法按名称、索引号、秒数时间或帧号查找标记，并返回表示所请求标记的 `标记对象`。对象参数应包含 `name`、`index`、`time` 或 `frame` 属性之一。标记名称也可以作为字符串直接传入。
+
 如果传入时间或帧号，则返回在该时间或帧号处或之前最近的标记。
+
 如果时间或帧号在媒体中所有标记之前，则返回 `null`。
 
 #### 参数
@@ -16595,10 +17335,11 @@ MediaPlayer 的 **markers** 属性是一个标记集合对象，它表示当前�
 
 #### 返回值
 
-**标记对象** 或 **null**
+`标记对象` 或 `null`
+
 标记索引号从 0 开始顺序分配，它们不一定按时间或帧排序。特别要注意的是，这些值与 Windows Media Player 用于标记编号的值不同。要查找媒体剪辑中的所有可用标记，请从 `{index: 0}` 开始循环调用 `MediaPlayer.markers.get()`，并递增数字直到 `get()` 返回 `null`。
 
-#### 示例：
+#### 示例
 
 此示例计算媒体剪辑上的标记数量。
 
@@ -16610,7 +17351,7 @@ while ( (index = m.get( { index: i } ) ) != null ) i++;
 console.println("共有 " + i + " 个标记。");
 ```
 
-#### 示例：
+#### 示例
 
 ```javascript
 // 通过名称获取标记，两种不同的方式
@@ -16626,14 +17367,15 @@ var marker = player.markers.get({ frame: 43 });
 
 ## 媒体偏移对象
 
-媒体偏移对象表示 MediaClip 中的一个位置，可以是时间或帧数。
+媒体偏移对象表示 `MediaClip` 中的一个位置，可以是时间或帧数。
+
 此位置可以相对于一个命名的标记，也可以是绝对位置（即相对于媒体的开头）。
 
 媒体偏移对象可以指定为一个具有以下命名属性的对象，也可以简单地是一个数字，该数字将被解释为 `{time: number}`。
 
 一些媒体格式（例如 QuickTime）是基于时间的，而其他格式（例如 Flash）是基于帧的。指定时间或帧的媒体偏移必须与使用的媒体格式匹配。如果同时指定了时间和帧，则结果未定义：不正确的值可能被忽略，或者可能抛出 JavaScript 异常。
 
-媒体偏移对象被 **MediaPlayer.seek()**、**MediaPlayer.where()**、**MediaSettings.endAt** 和 **MediaSettings.startAt** 使用。
+媒体偏移对象被 `MediaPlayer.seek()`、`MediaPlayer.where()`、`MediaSettings.endAt` 和 `MediaSettings.startAt` 使用。
 
 ## 媒体偏移对象属性
 
@@ -16642,7 +17384,7 @@ var marker = player.markers.get({ frame: 43 });
 | 6.0 |   |   |   |   |
 | --- | --- | --- | --- | --- |
 
-帧号。如果同时存在 **marker** 属性，则此帧号相对于指定的标记，可以为正、负或零。否则，它相对于媒体的开始，不能为负。注意 {frame: 0} 表示媒体的开始。
+帧号。如果同时存在 `marker` 属性，则此帧号相对于指定的标记，可以为正、负或零。否则，它相对于媒体的开始，不能为负。注意 `{frame: 0}` 表示媒体的开始。
 
 类型：数字 访问权限：R/W。
 
@@ -16660,20 +17402,20 @@ var marker = player.markers.get({ frame: 43 });
 | 6.0 |   |   |   |   |
 | --- | --- | --- | --- | --- |
 
-以秒为单位的时间，或 **Infinity**。如果同时存在 **marker** 属性，则此时间相对于指定的标记，是一个非负值，但不能是 **Infinity**。否则，时间相对于媒体的开始，不能为负。注意偏移 {time: 0} 表示媒体的开始。
+以秒为单位的时间，或 `Infinity`。如果同时存在 `marker` 属性，则此时间相对于指定的标记，是一个非负值，但不能是 `Infinity`。否则，时间相对于媒体的开始，不能为负。注意偏移 `{time: 0}` 表示媒体的开始。
 
 类型：数字 访问权限：R/W。
 
 ### 示例
 
-以下是绝对和相对偏移的示例
+以下是绝对和相对偏移的示例。
 
 ```javascript
 { time: 5.4 } // 距离媒体开头 5.4 秒的偏移
 { marker: "Chapter 1", time: 17 } // "Chapter 1" 之后 17 秒
 ```
 
-这些偏移可用于 **MediaPlayer.seek()** 方法：
+这些偏移可用于 `MediaPlayer.seek()` 方法：
 
 ```javascript
 // 假设 player 是一个 MediaPlayer 对象
@@ -16683,27 +17425,25 @@ player.seek({ marker: "Chapter 1", time: 17 });
 
 ## MediaPlayer 对象
 
-MediaPlayer 对象表示多媒体播放器的一个实例，例如 QuickTime、Windows Media Player 或其他播放器。其 **settings** 和 **events** 属性允许您从 JavaScript 代码操作播放器并处理播放器触发的事件。MediaPlayer 不是 PDF 文件的一部分；它是在需要时在内存中创建的瞬态对象。
+`MediaPlayer` 对象表示多媒体播放器的一个实例，例如 QuickTime、Windows Media Player 或其他播放器。其 `settings` 和 `events` 属性允许您从 JavaScript 代码操作播放器并处理播放器触发的事件。`MediaPlayer` 不是 PDF 文件的一部分；它是在需要时在内存中创建的瞬态对象。
 
 ## MediaPlayer 对象属性
 
 ### annot
 
-**MediaPlayer.annot** 是对与 MediaPlayer 关联的 ScreenAnnot 的引用。此属性仅存在于连接到 ScreenAnnot 的 MediaPlayer 对象。该属性由 **app.media.addStockEvents()** 或间接调用 **addStockEvents()** 的方法（如 **app.media.openPlayer()**）设置。
+`MediaPlayer.annot` 是对与 `MediaPlayer` 关联的 `ScreenAnnot` 的引用。此属性仅存在于连接到 `ScreenAnnot` 的 `MediaPlayer` 对象。该属性由 `app.media.addStockEvents()` 或间接调用 `addStockEvents()` 的方法（如 `app.media.openPlayer()`）设置。
 
-*类型：ScreenAnnot 对象 访问权限：R/W。*
+类型：`ScreenAnnot 对象` 访问权限：R/W。
 
 ### defaultSize
 
-**MediaPlayer.defaultSize** 属性是一个只读对象，包含 MediaPlayer 的 MediaClip 的宽度和高度：
+`MediaPlayer.defaultSize` 属性是一个只读对象，包含 `MediaPlayer` 的 `MediaClip` 的宽度和高度：
 
 `{ width: number, height: number }`
 
-如果媒体播放器无法提供此值，则 defaultSize 为 **undefined**。
+如果媒体播放器无法提供此值，则 `defaultSize` 为 `undefined`。
 
-*类型：对象 访问权限：R。*
-
-
+类型：对象 访问权限：R。
 
 ## Acrobat JavaScript 脚本参考
 
@@ -16714,9 +17454,10 @@ MediaPlayer 对象表示多媒体播放器的一个实例，例如 QuickTime、W
 | 6.0 |  |  |  |  |
 | :--- | :--- | :--- | :--- | :--- |
 
-`MediaPlayer.doc` 是对拥有该 MediaPlayer 的 Doc 对象的引用。
+`MediaPlayer.doc` 是对拥有该 `MediaPlayer` 的 `Doc` 对象的引用。
 
 类型：对象
+
 访问：只读。
 
 ### events
@@ -16724,9 +17465,10 @@ MediaPlayer 对象表示多媒体播放器的一个实例，例如 QuickTime、W
 | 6.0 |  |  |  |  |
 | :--- | :--- | :--- | :--- | :--- |
 
-`MediaPlayer.events` 属性是一个 Events 对象，其中包含附加到 MediaPlayer 的事件监听器。详情请参阅 Events 对象。
+`MediaPlayer.events` 属性是一个 `Events` 对象，其中包含附加到 `MediaPlayer` 的事件监听器。详情请参阅 `Events` 对象。
 
-类型：Events 对象
+类型：`Events 对象`
+
 访问：读/写。
 
 ### 示例
@@ -16747,9 +17489,10 @@ player.open();
 | 6.0 |  |  |  |  |
 | :--- | :--- | :--- | :--- | :--- |
 
-如果媒体播放器已打开并拥有键盘焦点，`MediaPlayer.hasFocus` 属性为 true。
+如果媒体播放器已打开并拥有键盘焦点，`MediaPlayer.hasFocus` 属性为 `true`。
 
 类型：布尔值
+
 访问：只读。
 
 ### id
@@ -16757,9 +17500,10 @@ player.open();
 | 6.0 |  |  |  |  |
 | :--- | :--- | :--- | :--- | :--- |
 
-`MediaPlayer.id` 属性包含此播放器所使用的播放器软件的 ID。如果播放器尚未打开，则此值为 undefined。此播放器 ID 与实现此播放器的媒体播放器软件在 `PlayerInfo.id` 中找到的值相同。
+`MediaPlayer.id` 属性包含此播放器所使用的播放器软件的 ID。如果播放器尚未打开，则此值为 `undefined`。此播放器 ID 与实现此播放器的媒体播放器软件在 `PlayerInfo.id` 中找到的值相同。
 
 类型：布尔值
+
 访问：只读。
 
 ### 示例
@@ -16779,22 +17523,25 @@ player.id = vnd.adobe.swname:ADBE_MCI
 | 6.0 |  |  |  |  |
 | :--- | :--- | :--- | :--- | :--- |
 
-**MediaPlayer.innerRect** 属性是一个矩形数组，表示播放器在屏幕上的内部矩形。与 Acrobat JavaScript 中其他此类数组一样，坐标按 [左、上、右、下] 的顺序排列。该矩形*不*包括窗口标题栏或播放器边缘周围的其他此类控件，但如果存在控制器，则会包含播放器控制器。如果播放器未打开，则此值为 undefined。
+`MediaPlayer.innerRect` 属性是一个矩形数组，表示播放器在屏幕上的内部矩形。与 Acrobat JavaScript 中其他此类数组一样，坐标按 [左、上、右、下] 的顺序排列。该矩形不包括窗口标题栏或播放器边缘周围的其他此类控件，但如果存在控制器，则会包含播放器控制器。如果播放器未打开，则此值为 `undefined`。
 
-对于停靠的媒体播放器，此矩形位于设备空间中且为只读：如果您尝试设置它，将引发异常。请改用 **MediaPlayer.triggerGetRect()** 来使停靠的播放器调整大小。对于浮动的媒体播放器，矩形位于屏幕坐标中且为可写，但用户的安全设置可能会覆盖您在此处设置的值。例如，如果您尝试将浮动的媒体播放器移到屏幕外，它可能会被强制移回屏幕内。这不会引发异常。您可以在写入后读取此属性，以查看您的值是否被覆盖。
+对于停靠的媒体播放器，此矩形位于设备空间中且为只读：如果您尝试设置它，将引发异常。请改用 `MediaPlayer.triggerGetRect()` 来使停靠的播放器调整大小。对于浮动的媒体播放器，矩形位于屏幕坐标中且为可写，但用户的安全设置可能会覆盖您在此处设置的值。例如，如果您尝试将浮动的媒体播放器移到屏幕外，它可能会被强制移回屏幕内。这不会引发异常。您可以在写入后读取此属性，以查看您的值是否被覆盖。
 
 类型：数组
+
 访问：只读 或 读/写。
-另请参阅 **outerRect**。
+
+另请参阅 `outerRect`。
 
 ### isOpen
 
 | 6.0 |  |  |  |  |
 | :--- | :--- | :--- | :--- | :--- |
 
-**MediaPlayer.isOpen** 是一个布尔值，如果媒体播放器当前已打开，则为 **true**。使用 **MediaPlayer.open()** 和 **MediaPlayer.close()** 打开或关闭播放器。
+`MediaPlayer.isOpen` 是一个布尔值，如果媒体播放器当前已打开，则为 `true`。使用 `MediaPlayer.open()` 和 `MediaPlayer.close()` 打开或关闭播放器。
 
 类型：布尔值
+
 访问：只读。
 
 ### isPlaying
@@ -16802,36 +17549,40 @@ player.id = vnd.adobe.swname:ADBE_MCI
 | 6.0 |  |  |  |  |
 | :--- | :--- | :--- | :--- | :--- |
 
-**MediaPlayer.isPlaying** 属性在媒体当前正在播放时为 **true**。如果播放器未打开，或者媒体已暂停、停止、正在快进或倒带，或处于任何其他状态，则为 **false**。
+`MediaPlayer.isPlaying` 属性在媒体当前正在播放时为 `true`。如果播放器未打开，或者媒体已暂停、停止、正在快进或倒带，或处于任何其他状态，则为 `false`。
 
-类型：*布尔值*
-访问：*只读。*
+类型：布尔值
+
+访问：只读。
 
 ### markers
 
 | 6.0 |  |  |  |  |
 | :--- | :--- | :--- | :--- | :--- |
 
-**MediaPlayer.markers** 是当前媒体所有可用标记的集合。有关此属性的详细信息，请参阅 [Markers 对象](https://example.com)。
+`MediaPlayer.markers` 是当前媒体所有可用标记的集合。有关此属性的详细信息，请参阅 [Markers 对象](https://example.com)。
 
-类型：*Markers 对象*
-访问：*只读。*
+类型：`Markers 对象`
+
+访问：只读。
 
 ### 示例
 
-用法示例请参见 **MediaPlayer.seek()** 之后的 [示例 2](https://example.com)。
+用法示例请参见 `MediaPlayer.seek()` 之后的 [示例 2](https://example.com)。
 
 ### outerRect
 
 | 6.0 |  |  |  |  |
 | :--- | :--- | :--- | :--- | :--- |
 
-**MediaPlayer.outerRect** 是一个矩形数组，表示播放器在屏幕上的外部矩形。与 Acrobat JavaScript 中其他此类数组一样，坐标按 [左、上、右、下] 的顺序排列。此矩形包括任何播放器控制器、窗口标题栏以及播放器边缘周围的其他此类控件。如果播放器未打开，则此值为 **undefined**。
+`MediaPlayer.outerRect` 是一个矩形数组，表示播放器在屏幕上的外部矩形。与 Acrobat JavaScript 中其他此类数组一样，坐标按 [左、上、右、下] 的顺序排列。此矩形包括任何播放器控制器、窗口标题栏以及播放器边缘周围的其他此类控件。如果播放器未打开，则此值为 `undefined`。
 
-对于停靠的媒体播放器，此矩形位于设备空间中且为只读：如果您尝试设置它，将引发异常。请改用 **MediaPlayer.triggerGetRect()** 来使停靠的播放器调整大小。对于浮动的媒体播放器，矩形位于屏幕坐标中且为可写，但用户的安全设置可能会覆盖您在此处设置的值。例如，如果您尝试将浮动的媒体播放器移到屏幕外，它可能会被强制移回屏幕内。这不会引发异常。您可以在写入后读取此属性，以查看您的值是否被覆盖。
+对于停靠的媒体播放器，此矩形位于设备空间中且为只读：如果您尝试设置它，将引发异常。请改用 `MediaPlayer.triggerGetRect()` 来使停靠的播放器调整大小。对于浮动的媒体播放器，矩形位于屏幕坐标中且为可写，但用户的安全设置可能会覆盖您在此处设置的值。例如，如果您尝试将浮动的媒体播放器移到屏幕外，它可能会被强制移回屏幕内。这不会引发异常。您可以在写入后读取此属性，以查看您的值是否被覆盖。
 
-类型：*数组*
-访问：*只读 或 读/写。*
+类型：数组
+
+访问：只读 或 读/写。
+
 另请参阅 [innerRect](https://example.com)。
 
 ### page
@@ -16839,14 +17590,15 @@ player.id = vnd.adobe.swname:ADBE_MCI
 | 6.0 |  |  |  |  |
 | :--- | :--- | :--- | :--- | :--- |
 
-**MediaPlayer.page** 是停靠的媒体播放器所在的页码。对于未停靠的播放器，此值为 **undefined**。停靠的媒体播放器可以通过更改其 **page** 属性移动到另一页，这将触发一个 GetRect（参见 onGetRect）事件。
+`MediaPlayer.page` 是停靠的媒体播放器所在的页码。对于未停靠的播放器，此值为 `undefined`。停靠的媒体播放器可以通过更改其 `page` 属性移动到另一页，这将触发一个 `GetRect`（参见 `onGetRect`）事件。
 
 类型：数字
+
 访问：读/写。
 
 ### 示例
 
-在第 1 页（基数为零）播放一个媒体剪辑。媒体播放器在第 1 页上的放置位置与第 0 页上的 ScreenAnnot 相同。
+在第 1 页（基数为零）播放一个媒体剪辑。媒体播放器在第 1 页上的放置位置与第 0 页上的 `ScreenAnnot` 相同。
 
 ```javascript
 var player = app.media.openPlayer({
@@ -16857,18 +17609,19 @@ var player = app.media.openPlayer({
 player.page = 1;
 ```
 
-关于此同一示例的变体，请参见 onGetRect 和 triggerGetRect。
+关于此同一示例的变体，请参见 `onGetRect` 和 `triggerGetRect`。
 
 ### settings
 
 | 6.0 |  |  |  |  |
 | :--- | :--- | :--- | :--- | :--- |
 
-**MediaPlayer.settings** 包含用于创建 MediaPlayer 的所有设置。完整列表请参见 MediaSettings 对象。
+`MediaPlayer.settings` 包含用于创建 `MediaPlayer` 的所有设置。完整列表请参见 `MediaSettings` 对象。
 
-**注意：** 在 Acrobat 6.0 中，在播放器创建后更改 **MediaPlayer.settings** 中的属性不会产生任何效果。未来版本可能会更改此行为，使这些设置生效。为了兼容当前和未来版本，请避免在播放器打开时更改任何设置属性。
+**注意：** 在 Acrobat 6.0 中，在播放器创建后更改 `MediaPlayer.settings` 中的属性不会产生任何效果。未来版本可能会更改此行为，使这些设置生效。为了兼容当前和未来版本，请避免在播放器打开时更改任何设置属性。
 
-类型：MediaSettings 对象
+类型：`MediaSettings 对象`
+
 访问：读/写。
 
 ### uiSize
@@ -16876,16 +17629,19 @@ player.page = 1;
 | 6.0 |  |  |  |  |
 | :--- | :--- | :--- | :--- | :--- |
 
-**MediaPlayer.uiSize** 是一个数组，包含播放器控制器的尺寸，顺序与窗口矩形相同：[左、上、右、下]。这些值通常为正数或零。这些值不包括标题栏等窗口控件，仅包含控制器。
+`MediaPlayer.uiSize` 是一个数组，包含播放器控制器的尺寸，顺序与窗口矩形相同：[左、上、右、下]。这些值通常为正数或零。这些值不包括标题栏等窗口控件，仅包含控制器。
 
-此属性在 Ready 事件触发之前不可用（参见 onReady 和 afterReady）。与大多数 MediaPlayer 属性不同，允许在“on”事件方法（如 onReady）中读取它。
+此属性在 `Ready` 事件触发之前不可用（参见 `onReady` 和 `afterReady`）。与大多数 `MediaPlayer` 属性不同，允许在“on”事件方法（如 `onReady`）中读取它。
 
 类型：数组
+
 访问：只读。
 
 ### 示例
 
-获取播放器的 **uiSize**。此代码作为 Rendition 动作事件执行。
+
+
+获取播放器的`uiSize`。此代码作为 Rendition 动作事件执行。
 
 ```javascript
 var args = {
@@ -16903,11 +17659,12 @@ var player = app.media.openPlayer(args);
 | 6.0 |  |  |  |  |
 | :--- | :--- | :--- | :--- | :--- |
 
-**MediaPlayer.visible** 属性控制播放器是否可见。与 **MediaPlayer.settings.visible** 不同，此属性会立即生效。如果播放器未打开，读取此属性返回 **undefined**，设置它会引发异常。
+`MediaPlayer.visible`属性控制播放器是否可见。与`MediaPlayer.settings.visible`不同，此属性会立即生效。如果播放器未打开，读取此属性返回`undefined`，设置它会引发异常。
 
 设置此属性可能会触发事件。例如，如果播放器可见且拥有焦点，使其不可见将触发一个 Blur 事件。
 
 类型：布尔值
+
 访问：读/写。
 
 ### 示例
@@ -16929,13 +17686,13 @@ player.visible = false;
 
 如果媒体播放器已打开，则关闭它。如果播放器已关闭，则不执行任何操作（也不是错误）。
 
-**eReason** 参数应为 [app.media.closeReason](https://acrobat.adobe.com/devnet/acrobatlayer/apis/ReaderDC/API_ReaderDC/api_Acrobat_API_reference/apx_js_api/apx_js_media/apx_js_media_closeReason.html) 枚举中的一个值。此值会传递给 **close()** 方法触发的 Close 事件（参见 [onClose](https://acrobat.adobe.com/devnet/acrobatlayer/apis/ReaderDC/API_ReaderDC/api_Acrobat_API_reference/apx_js_api/apx_js_media/apx_js_media_onClose.html) 和 [afterClose](https://acrobat.adobe.com/devnet/acrobatlayer/apis/ReaderDC/API_ReaderDC/api_Acrobat_API_reference/apx_js_api/apx_js_media/apx_js_media_afterClose.html)）的 **event.media.closeReason** 属性。
+`eReason`参数应为[app.media.closeReason](https://acrobat.adobe.com/devnet/acrobatlayer/apis/ReaderDC/API_ReaderDC/api_Acrobat_API_reference/apx_js_api/apx_js_media/apx_js_media_closeReason.html)枚举中的一个值。此值会传递给`close()`方法触发的 Close 事件（参见[onClose](https://acrobat.adobe.com/devnet/acrobatlayer/apis/ReaderDC/API_ReaderDC/api_Acrobat_API_reference/apx_js_api/apx_js_media/apx_js_media_onClose.html)和[afterClose](https://acrobat.adobe.com/devnet/acrobatlayer/apis/ReaderDC/API_ReaderDC/api_Acrobat_API_reference/apx_js_api/apx_js_media/apx_js_media_afterClose.html)）的`event.media.closeReason`属性。
 
 如果播放器拥有键盘焦点，在 Close 事件之前会触发一个 Blur 事件（[onBlur](https://acrobat.adobe.com/devnet/acrobatlayer/apis/ReaderDC/API_ReaderDC/api_Acrobat_API_reference/apx_js_api/apx_js_media/apx_js_media_onBlur.html)/[afterBlur](https://acrobat.adobe.com/devnet/acrobatlayer/apis/ReaderDC/API_ReaderDC/api_Acrobat_API_reference/apx_js_api/apx_js_media/apx_js_media_afterBlur.html)）。其他事件，如 Status（[onStatus](https://acrobat.adobe.com/devnet/acrobatlayer/apis/ReaderDC/API_ReaderDC/api_Acrobat_API_reference/apx_js_api/apx_js_media/apx_js_media_onStatus.html)/[afterStatus](https://acrobat.adobe.com/devnet/acrobatlayer/apis/ReaderDC/API_ReaderDC/api_Acrobat_API_reference/apx_js_api/apx_js_media/apx_js_media_afterStatus.html)）和 Stop（[onStop](https://acrobat.adobe.com/devnet/acrobatlayer/apis/ReaderDC/API_ReaderDC/api_Acrobat_API_reference/apx_js_api/apx_js_media/apx_js_media_onStop.html)/[afterStop](https://acrobat.adobe.com/devnet/acrobatlayer/apis/ReaderDC/API_ReaderDC/api_Acrobat_API_reference/apx_js_api/apx_js_media/apx_js_media_afterStop.html)），也可能根据特定的媒体播放器而触发。
 
 #### 参数
 
-| **eReason** | **eReason** 是 [app.media.closeReason](https://acrobat.adobe.com/devnet/acrobatlayer/apis/ReaderDC/API_ReaderDC/api_Acrobat_API_reference/apx_js_api/apx_js_media/apx_js_media_closeReason.html) 枚举中的一个值。 |
+| `eReason` | `eReason`是[app.media.closeReason](https://acrobat.adobe.com/devnet/acrobatlayer/apis/ReaderDC/API_ReaderDC/api_Acrobat_API_reference/apx_js_api/apx_js_media/apx_js_media_closeReason.html)枚举中的一个值。 |
 | :--- | :--- |
 
 #### 返回值
@@ -16945,19 +17702,17 @@ player.visible = false;
 ### open
 
 | 6.0 |  |  |  |  |
-| :--- | :--- | :--- | :--- | :--- |
+| :--- | :--- | :--- | :--- |  |
 
-**MediaPlayer.open()** 方法尝试按照 **MediaPlayer.settings** 的指定打开媒体播放器。如果播放器已经打开，将引发异常。如果播放器之前已打开然后关闭，可以再次调用 **open()** 打开播放器。这会使用与之前相同的 JavaScript 对象，但会打开实际媒体播放器的一个新实例（例如，新播放器不会记住旧播放器的播放位置）。
+`MediaPlayer.open()`方法尝试按照`MediaPlayer.settings`的指定打开媒体播放器。如果播放器已经打开，将引发异常。如果播放器之前已打开然后关闭，可以再次调用`open()`打开播放器。这会使用与之前相同的 JavaScript 对象，但会打开实际媒体播放器的一个新实例（例如，新播放器不会记住旧播放器的播放位置）。
 
-对于停靠的播放器，在播放器打开时会触发一个 GetRect 事件（[onGetRect](https://acrobat.adobe.com/devnet/acrobatlayer/apis/ReaderDC/API_ReaderDC/api_Acrobat_API_reference/apx_js_api/apx_js_media/apx_js_media_onGetRect.html)）。如果 **MediaPlayer.settings.autoPlay** 为 **true**（默认情况下是），那么将开始播放并触发一个 Play 事件（[onPlay](https://acrobat.adobe.com/devnet/acrobatlayer/apis/ReaderDC/API_ReaderDC/api_Acrobat_API_reference/apx_js_api/apx_js_media/apx_js_media_onPlay.html)/[afterPlay](https://acrobat.adobe.com/devnet/acrobatlayer/apis/ReaderDC/API_ReaderDC/api_Acrobat_API_reference/apx_js_api/apx_js_media/apx_js_media_afterPlay.html)）。
+对于停靠的播放器，在播放器打开时会触发一个 GetRect 事件（[onGetRect](https://acrobat.adobe.com/devnet/acrobatlayer/apis/ReaderDC/API_ReaderDC/api_Acrobat_API_reference/apx_js_api/apx_js_media/apx_js_media_onGetRect.html)）。如果`MediaPlayer.settings.autoPlay`为`true`（默认情况下是），那么将开始播放并触发一个 Play 事件（[onPlay](https://acrobat.adobe.com/devnet/acrobatlayer/apis/ReaderDC/API_ReaderDC/api_Acrobat_API_reference/apx_js_api/apx_js_media/apx_js_media_onPlay.html)/[afterPlay](https://acrobat.adobe.com/devnet/acrobatlayer/apis/ReaderDC/API_ReaderDC/api_Acrobat_API_reference/apx_js_api/apx_js_media/apx_js_media_afterPlay.html)）。
 
-**open()** 方法可能会根据用户设置导致安全提示对话框。这也可能导致向其他媒体播放器、屏幕注释或其他对象触发事件。例如，如果另一个媒体播放器拥有键盘焦点，它将接收一个 Blur 事件（[onBlur](https://acrobat.adobe.com/devnet/acrobatlayer/apis/ReaderDC/API_ReaderDC/api_Acrobat_API_reference/apx_js_api/apx_js_media/apx_js_media_onBlur.html)/[afterBlur](https://acrobat.adobe.com/devnet/acrobatlayer/apis/ReaderDC/API_ReaderDC/api_Acrobat_API_reference/apx_js_api/apx_js_media/apx_js_media_afterBlur.html)）。
+`open()`方法可能会根据用户设置导致安全提示对话框。这也可能导致向其他媒体播放器、屏幕注释或其他对象触发事件。例如，如果另一个媒体播放器拥有键盘焦点，它将接收一个 Blur 事件（[onBlur](https://acrobat.adobe.com/devnet/acrobatlayer/apis/ReaderDC/API_ReaderDC/api_Acrobat_API_reference/apx_js_api/apx_js_media/apx_js_media_onBlur.html)/[afterBlur](https://acrobat.adobe.com/devnet/acrobatlayer/apis/ReaderDC/API_ReaderDC/api_Acrobat_API_reference/apx_js_api/apx_js_media/apx_js_media_afterBlur.html)）。
 
-如果 **bAllowSecurityUI** 为 **false**，那么 **open()** 永远不会显示安全提示，而是返回一个失败代码。
+如果`bAllowSecurityUI`为`false`，那么`open()`永远不会显示安全提示，而是返回一个失败代码。
 
-对于浮动窗口中的媒体播放器，会根据用户设置进行额外的安全检查。例如，用户可能指定所有浮动播放器窗口都需要标题栏。如果 **MediaPlayer.settings.floating** 包含用户不允许的选项，那么 **bAllowFloatOptionsFallback** 控制发生什么情况。如果它为 **false**，则不允许播放并返回错误代码。如果它为 **true**，那么 **MediaPlayer.settings.floating** 中的选项将根据需要进行更改以符合用户的安全设置，然后 **open()** 使用这些更改后的设置继续。
-
-
+对于浮动窗口中的媒体播放器，会根据用户设置进行额外的安全检查。例如，用户可能指定所有浮动播放器窗口都需要标题栏。如果`MediaPlayer.settings.floating`包含用户不允许的选项，那么`bAllowFloatOptionsFallback`控制发生什么情况。如果它为`false`，则不允许播放并返回错误代码。如果它为`true`，那么`MediaPlayer.settings.floating`中的选项将根据需要进行更改以符合用户的安全设置，然后`open()`使用这些更改后的设置继续。
 
 返回值是一个对象，该对象当前包含一个属性`code`，它是`app.media.openCode`枚举中的结果代码。如果你的 PDF 在未来版本的 Acrobat 中打开，此对象中可能会有额外的属性，或者在未来版本中添加了新的代码值。请务必优雅地处理任何此类值。
 
@@ -16965,8 +17720,8 @@ player.visible = false;
 
 | 参数 | 描述 |
 |---|---|
-| `bAllowSecurityUI` | （可选）默认值为**true**。请参阅上文对此参数的描述。 |
-| `bAllowFloatOptionsFallback` | （可选）默认值为**true**。请参阅上文对此参数的描述。 |
+| `bAllowSecurityUI` | （可选）默认值为`true`。请参阅上文对此参数的描述。 |
+| `bAllowFloatOptionsFallback` | （可选）默认值为`true`。请参阅上文对此参数的描述。 |
 
 ## 返回值
 
@@ -16976,7 +17731,7 @@ player.visible = false;
 
 有关用法示例，请参阅第 152 页的“示例 1”。
 
-## pause
+### pause
 
 | 6.0 | | | | |
 |---|---|---|---|---|
@@ -16985,19 +17740,19 @@ player.visible = false;
 
 如果媒体已暂停或已停止，或者播放尚未开始或已完成，`pause()`方法将无效。并非所有媒体播放器都支持`pause()`，也并非所有媒体格式都支持它；特别是，大多数流媒体格式不支持`pause()`。在这些情况下，播放器可能会抛出异常或静默忽略`pause()`。
 
-### 参数
+#### 参数
 
 无
 
-### 返回值
+#### 返回值
 
 无
 
-### 示例
+#### 示例
 
-有关用法示例，请参阅下面 `seek()` 方法后的“示例 2”。
+有关用法示例，请参阅下面`seek()`方法后的“示例 2”。
 
-## play
+### play
 
 | 6.0 |  |  |  |  |
 |---|---|---|---|---|
@@ -17006,24 +17761,24 @@ player.visible = false;
 
 如果媒体已在播放，它将继续播放且不会触发事件。如果它已暂停、倒带或快进，它将从当前位置恢复播放。如果它已停止，无论是在媒体开头还是结尾，播放都将从头开始。
 
-### 参数
+#### 参数
 
 无
 
-### 返回值
+#### 返回值
 
 无
 
-### 示例
+#### 示例
 
-有关用法示例，请参阅下面 `seek()` 方法后的“示例 2”。
+有关用法示例，请参阅下面`seek()`方法后的“示例 2”。
 
-## seek
+### seek
 
 | 6.0 |  |  |  |  |
 |---|---|---|---|---|
 
-将当前媒体的播放位置设置为包含在 `oMediaOffset` 中的 MediaOffset 对象描述的位置。
+将当前媒体的播放位置设置为包含在`oMediaOffset`中的 MediaOffset 对象描述的位置。
 
 如果媒体正在播放，它将在新位置继续播放。如果媒体已暂停，它将移动到新位置并保持暂停状态。如果媒体已停止，结果将因播放器而异。
 
@@ -17031,20 +17786,20 @@ player.visible = false;
 
 大多数（但不是所有）媒体播放器在查找完成时会触发 Seek 事件（`onSeek`/`afterSeek`）。
 
-查找操作可能在 `seek()` 方法执行期间或之后发生，具体取决于播放器。如果 `seek()` 在查找操作完成之前返回，并且你在查找完成之前调用了另一个播放器方法，结果将因播放器而异。
+查找操作可能在`seek()`方法执行期间或之后发生，具体取决于播放器。如果`seek()`在查找操作完成之前返回，并且你在查找完成之前调用了另一个播放器方法，结果将因播放器而异。
 
-### 参数
+#### 参数
 
-| oMediaOffset | 一个 MediaOffset 对象，其属性指示要设置的播放位置。 |
+| `oMediaOffset` | 一个 MediaOffset 对象，其属性指示要设置的播放位置。 |
 |---|---|
 
-### 返回值
+#### 返回值
 
 无
 
-### 示例 1
+#### 示例 1
 
-```
+```javascript
 // 倒带媒体片段
 player.seek({ time: 0 });
 
@@ -17055,11 +17810,11 @@ player.seek({ marker: "First" });
 player.seek({ marker: "One", time: 5 });
 ```
 
-### 示例 2
+#### 示例 2
 
-以下脚本随机播放（著名的）引言。媒体是一个音频剪辑（.wma），它确实支持标记和脚本，内容为（著名的）引言。**afterReady** 监听器计算标记的数量，每个引言开头有一个标记。每个引言结束时，还有一个嵌入的命令脚本，**afterScript** 监听器监视这些命令，如果是 "pause" 命令，则暂停播放器。
+以下脚本随机播放（著名的）引言。媒体是一个音频剪辑（.wma），它确实支持标记和脚本，内容为（著名的）引言。`afterReady`监听器计算标记的数量，每个引言开头有一个标记。每个引言结束时，还有一个嵌入的命令脚本，`afterScript`监听器监视这些命令，如果是 "pause" 命令，则暂停播放器。
 
-```
+```javascript
 var nMarkers=0;
 var events = new app.media.Events;
 events.add({
@@ -17097,72 +17852,74 @@ function randomQuote() {
 }
 ```
 
-动作由鼠标抬起按钮动作触发，例如
+动作由鼠标抬起按钮动作触发，例如：
 
-```
+```javascript
 try { randomQuote() } catch(e) {}
 ```
 
-## setFocus
+### setFocus
 
 | 6.0 |  |  |  |  |
 |---|---|---|---|---|
 
 将键盘焦点设置到媒体播放器并触发 Focus 事件（`onFocus`/`afterFocus`）。如果另一个播放器或 PDF 对象具有焦点，则该对象会收到 Blur 事件（`onBlur`/`afterBlur`）。如果媒体播放器已经拥有焦点，则不会发生任何事情。如果播放器未打开或不可见，将抛出异常。
 
-### 参数
+#### 参数
 
 无
 
-### 返回值
+#### 返回值
 
 无
 
-### 示例
+#### 示例
 
 有关用法示例，请参阅第 152 页的“示例 1”。
 
-## stop
+### stop
 
 | 6.0 |  |  |  |  |
 |---|---|---|---|---|
 
-停止当前媒体的播放（如果它正在播放或已暂停），并触发 Stop 事件（`onStop`/`afterStop`）。Stop 事件可能在 `stop()` 方法执行期间或之后发生，具体取决于播放器。如果媒体未播放或未暂停，则不执行任何操作。
+停止当前媒体的播放（如果它正在播放或已暂停），并触发 Stop 事件（`onStop`/`afterStop`）。Stop 事件可能在`stop()`方法执行期间或之后发生，具体取决于播放器。如果媒体未播放或未暂停，则不执行任何操作。
 
 如果播放器未打开，则抛出异常。
 
-播放停止后，播放器会将媒体位置设置为媒体的开头或结尾，具体取决于播放器。如果在之后调用 `MediaPlayer.play()`，播放将从媒体开头开始。
+播放停止后，播放器会将媒体位置设置为媒体的开头或结尾，具体取决于播放器。如果在之后调用`MediaPlayer.play()`，播放将从媒体开头开始。
 
-### 参数
-
-无
-
-### 返回值
+#### 参数
 
 无
 
-## triggerGetRect
+#### 返回值
+
+无
+
+### triggerGetRect
 
 | 6.0 |  |  |  |  |
 |---|---|---|---|---|
 
-触发 GetRect 事件（参见 **onGetRect**）以使停靠的媒体播放器调整大小。
+触发 GetRect 事件（参见`onGetRect`）以使停靠的媒体播放器调整大小。
 
-### 参数
-
-无
-
-### 返回值
+#### 参数
 
 无
 
-### 示例
+#### 返回值
 
-此示例类似于后面跟随 **onGetRect** 的示例。第 0 页有一系列（缩略图大小的）ScreenAnnots。下面是典型的 Rendition 动作或鼠标抬起按钮 JavaScript 动作，当动作执行时，媒体剪辑被调整大小并播放。
+无
 
-```
+#### 示例
+
+
+
+此示例类似于后面跟随`onGetRect`的示例。第 0 页有一系列（缩略图大小的）ScreenAnnots。下面是典型的 Rendition 动作或鼠标抬起按钮 JavaScript 动作，当动作执行时，媒体剪辑被调整大小并播放。
+
+```javascript
 var rendition = this.media.getRendition("Clip1");
-var annot = this.media.getAnnot({ nPage:0, cAnnotTitle:"ScreenClip1" });
+var annot = this.media.getAnnot({ nPage: 0, cAnnotTitle: "ScreenClip1" });
 var player = app.media.openPlayer({
     rendition: rendition,
     annot: annot,
@@ -17175,8 +17932,8 @@ var player = app.media.openPlayer({
             height *= 3;
             e.media.rect[0] = 36; // 移动到
             e.media.rect[1] = 36; // 左上角
-            e.media.rect[2] = e.media.rect[0]+width;
-            e.media.rect[3] = e.media.rect[1]+height;
+            e.media.rect[2] = e.media.rect[0] + width;
+            e.media.rect[3] = e.media.rect[1] + height;
             return e.media.rect; // 返回此矩形
         }
     }
@@ -17189,7 +17946,7 @@ player.triggerGetRect(); // 触发 onGetRect 事件
 | 6.0 |  |  |  |  |
 |---|---|---|---|---|
 
-以 **MediaOffset 对象**的形式报告当前媒体的播放位置。此对象包含 `time` 或 `frame` 属性之一，具体取决于媒体播放器和媒体类型。如果播放器未打开或不支持 **where()**，则抛出异常。
+以`MediaOffset`对象的形式报告当前媒体的播放位置。此对象包含`time`或`frame`属性之一，具体取决于媒体播放器和媒体类型。如果播放器未打开或不支持`where()`，则抛出异常。
 
 ### 参数
 
@@ -17197,11 +17954,11 @@ player.triggerGetRect(); // 触发 onGetRect 事件
 
 ### 返回值
 
-MediaOffset 对象
+`MediaOffset`对象
 
 ### 示例
 
-```
+```javascript
 // 播放位置（以秒为单位）是多少？
 // 此代码假定播放器支持使用 time 的 where()。
 var where = player.where();
@@ -17213,73 +17970,76 @@ var name = marker ? marker.name : "no marker";
 
 ## MediaReject 对象
 
-MediaReject 提供有关被 **Rendition.select()** 调用拒绝的 Rendition 的信息。它包括对原始 Rendition 的引用以及被拒绝的原因。在 **select()** 返回的 **MediaSelection 对象**中，**MediaSelection.rejects** 是一个 MediaReject 对象的数组。
+`MediaReject`提供有关被`Rendition.select()`调用拒绝的 Rendition 的信息。它包括对原始 Rendition 的引用以及被拒绝的原因。在`select()`返回的`MediaSelection`对象中，`MediaSelection.rejects`是一个`MediaReject`对象的数组。
 
 ### rendition
 
-| 6.0 | | | | |
+| 6.0 |  |  |  |  |
 |---|---|---|---|---|
 
-**MediaSelection.rendition** 是对在 **select()** 调用中被拒绝的 Rendition 的引用。
+`MediaSelection.rendition`是对在`select()`调用中被拒绝的 Rendition 的引用。
 
-类型：Rendition 对象 访问：R（只读）。
+类型：`Rendition`对象  
+访问：R（只读）。
 
 ### 示例
 
 获取被拒绝的呈现列表。该脚本作为 Rendition 动作执行。
 
-```
+```javascript
 selection = event.action.rendition.select(true);
-for ( var i=0; i<selection.rejects.length; i++)
+for (var i = 0; i < selection.rejects.length; i++)
     console.println("Rejected Renditions: "
         + selection.rejects[i].rendition.uiName);
 
 // 现在播放第一个可用的呈现。
-console.println( "Preparing to play " + selection.rendition.uiName);
+console.println("Preparing to play " + selection.rendition.uiName);
 var settings = selection.rendition.getPlaySettings();
 var args = {
-```
-
-
-
-rendition: selection.rendition,
-annot: this.media.getAnnot({ nPage: 0, cAnnotTitle: "myScreen" }),
-settings: settings
+    rendition: selection.rendition,
+    annot: this.media.getAnnot({ nPage: 0, cAnnotTitle: "myScreen" }),
+    settings: settings
 };
+
 app.media.openPlayer(args);
 ```
 
 ## MediaSelection 对象
 
-**Rendition.select()** 返回一个 MediaSelection 对象，该对象可用于创建一个用于播放的 MediaSettings 对象。
+`Rendition.select()`返回一个`MediaSelection`对象，该对象可用于创建一个用于播放的 MediaSettings 对象。
 
 ## MediaSelection 对象属性
 
 ### selectContext
 
 | 6.0 |  |  |  |  |
-| --- | --- | --- | --- | --- |
+|---|---|---|---|---|
 
-MediaSelection.**selectContext** 是一个可用于编写循环的值，该循环会重复调用 Rendition.**select()**，以基于你可以在 JavaScript 代码中测试的任何条件进行自定义选择。
+`MediaSelection.selectContext`是一个可用于编写循环的值，该循环会重复调用`Rendition.select()`，以基于你可以在 JavaScript 代码中测试的任何条件进行自定义选择。
 
-*类型: Object*		*访问权限: R.*
+类型：`Object`  
+访问权限：R。
 
-```
-function MyTestSelection( selection )
-{
+```javascript
+function MyTestSelection(selection) {
     // 此函数应根据你的意愿测试选择，并返回
     // true 以使用它，或返回 false 以拒绝它并尝试另一个。
 }
-function MyGetSelection( rendition )
-{
+
+function MyGetSelection(rendition) {
     var selection;
-    for( selection = rendition.select(); selection;
-            selection = rendition.select
-                    ({ oContext: selection.selectContext }))
-    {
-        if( MyTestSelection( selection ) )
+
+    for (
+        selection = rendition.select();
+        selection;
+        selection = rendition.select({
+            oContext: selection.selectContext
+        })
+    ) {
+        if (MyTestSelection(selection))
             break;
     }
+
     return selection;
 }
 ```
@@ -17287,136 +18047,139 @@ function MyGetSelection( rendition )
 ### players
 
 | 6.0 |  |  |  |  |
-| --- | --- | --- | --- | --- |
+|---|---|---|---|---|
 
-**MediaSelection.players** 是一个字符串数组，用于标识可用于播放 **MediaSelection.rendition** 的媒体播放器。如果没有找到可播放的 rendition，则 players 和 rendition 属性均为 **null**。
+`MediaSelection.players`是一个字符串数组，用于标识可用于播放`MediaSelection.rendition`的媒体播放器。如果没有找到可播放的 rendition，则`players`和`rendition`属性均为`null`。
 
-*类型:* 字符串数组
-*访问权限:* R.
+类型：字符串数组  
+访问权限：R。
 
 ### 示例
 
 获取将播放所选 rendition 的播放器列表。以下代码假定作为 Rendition 操作执行。
 
-```
+```javascript
 var selection = event.action.rendition.select();
-for ( var o in selection.players )
-    console.println( selection.players[o].id );
+
+for (var o in selection.players)
+    console.println(selection.players[o].id);
 ```
 
 ### rejects
 
 | 6.0 |  |  |  |  |
-| --- | --- | --- | --- | --- |
+|---|---|---|---|---|
 
-**MediaSelection.rejects** 是一个 **MediaReject 对象** 数组。这些是被返回此 MediaSelection 的 **Rendition.select()** 调用所拒绝的 Rendition。详情请参阅 **MediaReject 对象**。
+`MediaSelection.rejects`是一个`MediaReject`对象数组。这些是被返回此 MediaSelection 的`Rendition.select()`调用所拒绝的 Rendition。详情请参阅`MediaReject`对象。
 
-*类型:* *MediaReject 对象数组*
-*访问权限:* R.
+类型：`MediaReject`对象数组  
+访问权限：R。
 
 ### 示例
 
-有关示例，请参阅 **MediaReject.rendition** 后的 **示例**。
+有关示例，请参阅`MediaReject.rendition`后的**示例**。
 
 ### rendition
 
 | 6.0 |  |  |  |  |
-| --- | --- | --- | --- | --- |
+|---|---|---|---|---|
 
-**MediaSelection.rendition** 是所选的 rendition，如果没有可播放的则为 **null**。
+`MediaSelection.rendition`是所选的 rendition，如果没有可播放的则为`null`。
 
-*类型:* *Rendition 对象*
-*访问权限:* R.
+类型：`Rendition`对象  
+访问权限：R。
 
 ### 示例
 
 获取所选 rendition 的名称。此脚本从 Rendition 操作事件执行。
 
-```
+```javascript
 var selection = event.action.rendition.select();
-console.println( "Preparing to play " + selection.rendition.uiName);
+
+console.println("Preparing to play " + selection.rendition.uiName);
 ```
 
-### MediaSettings 对象
+## MediaSettings 对象
 
-MediaSettings 对象（出现在 **MediaPlayer.settings** 属性中）包含创建和打开 MediaPlayer 所需的设置。这些设置中许多都有默认值，但有些取决于要打开的播放器类型以及其他设置。详情请参阅每个 MediaSettings 属性的说明。
+MediaSettings 对象（出现在`MediaPlayer.settings`属性中）包含创建和打开 MediaPlayer 所需的设置。这些设置中许多都有默认值，但有些取决于要打开的播放器类型以及其他设置。详情请参阅每个 MediaSettings 属性的说明。
 
-Acrobat 和各种媒体播放器将尝试使用这些设置，但无法保证它们都会被遵守。例如，很少有播放器遵守 **MediaSettings.palindrome**。
+Acrobat 和各种媒体播放器将尝试使用这些设置，但无法保证它们都会被遵守。例如，很少有播放器遵守`MediaSettings.palindrome`。
 
 ## MediaSettings 对象属性
 
 ### autoPlay
 
-**MediaSettings.autoPlay** 属性指定媒体剪辑在播放器打开后是否应自动开始播放。如果你将 **autoPlay** 设置为 **false**，请使用 **MediaPlayer.play()** 开始播放。默认值为 **true**。
+`MediaSettings.autoPlay`属性指定媒体剪辑在播放器打开后是否应自动开始播放。如果你将`autoPlay`设置为`false`，请使用`MediaPlayer.play()`开始播放。默认值为`true`。
 
-*类型:* Boolean
-
-*访问权限:* R/W.
+类型：`Boolean`  
+访问权限：R/W。
 
 ### 示例
 
-请参阅 **afterReady** 和 **players** 后的示例。
+请参阅`afterReady`和`players`后的示例。
 
 ### baseURL
 
-**MediaSettings.baseURL** 是用于解析媒体剪辑中使用的任何相对 URL 的基础 URL，例如，如果媒体打开一个网页。没有默认值；如果未指定 baseURL，相对 URL 的解释将因媒体播放器而异，但在大多数情况下将不起作用。
+`MediaSettings.baseURL`是用于解析媒体剪辑中使用的任何相对 URL 的基础 URL，例如，如果媒体打开一个网页。没有默认值；如果未指定`baseURL`，相对 URL 的解释将因媒体播放器而异，但在大多数情况下将不起作用。
 
-*类型:* String
-
-*访问权限:* R/W.
+类型：`String`  
+访问权限：R/W。
 
 ### bgColor
 
-**MediaSettings.bgColor** 指定媒体播放器窗口的背景颜色。该数组可以是 Acrobat JavaScript 支持的任何颜色数组格式。
+`MediaSettings.bgColor`指定媒体播放器窗口的背景颜色。该数组可以是 Acrobat JavaScript 支持的任何颜色数组格式。
 
-如果未指定 bgColor，则默认值取决于窗口类型：
+如果未指定`bgColor`，则默认值取决于窗口类型：
 
--   停靠：白色
--   浮动：操作系统控制面板中指定的窗口背景色
--   全屏：用户 Acrobat 偏好设置中指定的全屏背景色
+- 停靠：白色
+- 浮动：操作系统控制面板中指定的窗口背景色
+- 全屏：用户 Acrobat 偏好设置中指定的全屏背景色
 
-*类型:* 颜色数组  *访问权限:* R/W.
+类型：颜色数组  
+访问权限：R/W。
 
 ### 示例
 
-```
+```javascript
 // 红色背景
-settings.bgColor = [ "RGB", 1, 0, 0 ];
+settings.bgColor = ["RGB", 1, 0, 0];
 ```
 
 ### bgOpacity
 
-| 6.0 | | | | |
-| --- | --- | --- | --- | --- |
+| 6.0 |  |  |  |  |
+|---|---|---|---|---|
 
-**MediaSettings.bgOpacity** 指定媒体播放器窗口的背景不透明度。值范围可以从 0.0（完全透明）到 1.0（完全不透明）。默认值为 1.0。
+`MediaSettings.bgOpacity`指定媒体播放器窗口的背景不透明度。值范围可以从 0.0（完全透明）到 1.0（完全不透明）。默认值为 1.0。
 
-*类型:* Number  *访问权限:* R/W.
+类型：`Number`  
+访问权限：R/W。
 
 ### endAt
 
-| 6.0 | | | | |
-| ---, | --- | --- | --- | --- |
+| 6.0 |  |  |  |  |
+|---|---|---|---|---|
 
-**MediaSettings.endAt** 定义播放的结束时间或帧。这可以是绝对时间或帧值，或者标记名称，或者标记加上时间或帧，如 [MediaOffset 对象](https://example.com) 下所述。播放在指定的时间或帧结束，或在媒体播放器能够停止的尽可能接近该点的位置结束。如果未指定 endAt，则默认值为媒体的结尾。
+`MediaSettings.endAt`定义播放的结束时间或帧。这可以是绝对时间或帧值，或者标记名称，或者标记加上时间或帧，如[MediaOffset 对象](https://example.com)下所述。播放在指定的时间或帧结束，或在媒体播放器能够停止的尽可能接近该点的位置结束。如果未指定`endAt`，则默认值为媒体的结尾。
 
-另请参阅 **startAt**。
+另请参阅`startAt`。
 
-*类型:* MediaOffset 对象  *访问权限:* R/W.
+类型：`MediaOffset`对象  
+访问权限：R/W。
 
 ### 示例
 
-以下脚本播放一个音频剪辑，从媒体的第3秒开始到第8秒结束。
+以下脚本播放一个音频剪辑，从媒体的第 3 秒开始到第 8 秒结束。
 
-```
+```javascript
 var player = app.media.openPlayer({
-        rendition: this.media.getRendition( "myAudio" ),
-        doc: this,
-        settings: {
-            startAt: 3,
-            endAt: 8
-        }
-    });
+    rendition: this.media.getRendition("myAudio"),
+    doc: this,
+    settings: {
+        startAt: 3,
+        endAt: 8
+    }
+});
 ```
 
 ## MediaSettings 对象属性
@@ -17424,28 +18187,30 @@ var player = app.media.openPlayer({
 ### data
 
 | 6.0 |  |  |  |  |
-| --- | --- | --- | --- | --- |
+|---|---|---|---|---|
 
-**MediaSettings.data**，通常称为 **MediaData 对象**，是媒体播放器可用于读取其媒体剪辑数据的对象，无论数据来自外部文件还是嵌入在 PDF 中。此对象的内容不能直接从 JavaScript 中使用。
+`MediaSettings.data`，通常称为`MediaData`对象，是媒体播放器可用于读取其媒体剪辑数据的对象，无论数据来自外部文件还是嵌入在 PDF 中。此对象的内容不能直接从 JavaScript 中使用。
 
-此数据对象可通过多种方式获得，从 **app.media.getAltTextData()**、**app.media.getURLData()**，或通过 **Rendition.getPlaySettings()** 间接获得。数据对象可能绑定到 rendition 的文档，因此如果文档关闭，它可能会变得不可用。
+此数据对象可通过多种方式获得，从`app.media.getAltTextData()`、`app.media.getURLData()`，或通过`Rendition.getPlaySettings()`间接获得。数据对象可能绑定到 rendition 的文档，因此如果文档关闭，它可能会变得不可用。
 
-*类型:* Object			*访问权限:* R.
+类型：`Object`  
+访问权限：R。
 
 ### 示例
 
-请参阅 **app.media.getURLData()** 后的示例。
+请参阅`app.media.getURLData()`后的示例。
 
 ### duration
 
 | 6.0 |  |  |  |  |
-| --- | --- | --- | --- | --- |
+|---|---|---|---|---|
 
-**MediaSettings.duration** 是播放所需的时间量（以秒为单位）。如果未指定，则默认为播放整个媒体，或者如果指定了 **startAt** 和 **endAt** 点，则播放它们之间的时间量。
+`MediaSettings.duration`是播放所需的时间量（以秒为单位）。如果未指定，则默认为播放整个媒体，或者如果指定了`startAt`和`endAt`点，则播放它们之间的时间量。
 
-请注意，duration 可能长于整个媒体长度或 **startAt** 和 **endAt** 点之间的差值。在这种情况下，播放继续到媒体结尾或 **endAt** 点，然后播放在该位置暂停，直到 duration 耗尽。
+请注意，`duration`可能长于整个媒体长度或`startAt`和`endAt`点之间的差值。在这种情况下，播放继续到媒体结尾或`endAt`点，然后播放在该位置暂停，直到`duration`耗尽。
 
-*类型:* Number			*访问权限:* R/W.
+类型：`Number`  
+访问权限：R/W。
 
 ### 示例
 
@@ -17453,23 +18218,29 @@ var player = app.media.openPlayer({
 
 如果此脚本从 Rendition 操作执行，则 rendition 可以通过 UI 指定，并且无需关闭播放器。
 
-```
+```javascript
 var rendition = this.media.getRendition("Clip");
-if ( player && player.isOpen )
-    try { player.close(app.media.closeReason.done); } catch(e) {};
+
+if (player && player.isOpen)
+    try {
+        player.close(app.media.closeReason.done);
+    } catch (e) {}
+
 var player = app.media.openPlayer({
     rendition: rendition,
     settings: { duration: Infinity }
 });
 ```
 
+
+
 ### floating
 
-MediaSettings.floating 是一个包含定义浮动窗口位置和样式的属性的对象。
+`MediaSettings.floating` 是一个包含定义浮动窗口位置和样式的属性的对象。
 
-除非 MediaSettings.windowType 的值为 app.media.windowType.floating，否则此对象将被忽略。
+除非 `MediaSettings.windowType` 的值为 `app.media.windowType.floating`，否则此对象将被忽略。
 
-*类型:* Object 	 *访问权限:* R.
+类型：Object　访问权限：R。
 
 #### floating 的属性
 
@@ -17477,16 +18248,14 @@ MediaSettings.floating 是一个包含定义浮动窗口位置和样式的属性
 
 | 属性 | 类型 | 描述 |
 | :--- | :--- | :--- |
-| **align** | Number | 指定浮动窗口相对于 over 属性指定的窗口的定位方式。**align** 的值是 app.media.align 的值之一。 |
-| **over** | Number | 指定浮动窗口相对于哪个窗口进行对齐。**over** 的值是 app.media.over 的值之一。 |
-| **canResize** | Number | 指定浮动窗口是否可以由用户调整大小。**canResize** 的值是 app.media.canResize 的值之一。 |
-| **hasClose** | Boolean | 如果为 **true**，浮动窗口应具有关闭窗口控制按钮。 |
-| **hasTitle** | Boolean | 如果为 **true**，应在标题栏中显示标题。 |
-| **title** | String | 如果 **hasTitle** 为 **true**，则显示此标题。 |
-| **ifOffScreen** | Number | 指定如果浮动窗口完全或部分位于屏幕外应采取的操作。ifOffScreen 的值是 app.media.ifOffScreen 的值之一。 |
-| **rect** | 四个数字的数组 | 指定浮动窗口位置和大小的屏幕坐标数组。如果未给出 **width** 和 **height**，则为必需项。 |
-
-
+| `align` | Number | 指定浮动窗口相对于 `over` 属性指定的窗口的定位方式。`align` 的值是 `app.media.align` 的值之一。 |
+| `over` | Number | 指定浮动窗口相对于哪个窗口进行对齐。`over` 的值是 `app.media.over` 的值之一。 |
+| `canResize` | Number | 指定浮动窗口是否可以由用户调整大小。`canResize` 的值是 `app.media.canResize` 的值之一。 |
+| `hasClose` | Boolean | 如果为 `true`，浮动窗口应具有关闭窗口控制按钮。 |
+| `hasTitle` | Boolean | 如果为 `true`，应在标题栏中显示标题。 |
+| `title` | String | 如果 `hasTitle` 为 `true`，则显示此标题。 |
+| `ifOffScreen` | Number | 指定如果浮动窗口完全或部分位于屏幕外应采取的操作。`ifOffScreen` 的值是 `app.media.ifOffScreen` 的值之一。 |
+| `rect` | 四个数字的数组 | 指定浮动窗口位置和大小的屏幕坐标数组。如果未给出 `width` 和 `height`，则为必需项。 |
 
 ## Acrobat JavaScript 脚本参考
 
@@ -17494,13 +18263,14 @@ MediaSettings.floating 是一个包含定义浮动窗口位置和样式的属性
 
 | 属性 | 类型 | 描述 |
 | :--- | :--- | :--- |
-| **width** | Number | 浮动窗口的宽度。如果未提供 **rect**，则此项为必填项。 |
-| **height** | Number | 浮动窗口的高度。如果未提供 **rect**，则此项为必填项。 |
+| `width` | Number | 浮动窗口的宽度。如果未提供 `rect`，则此项为必填项。 |
+| `height` | Number | 浮动窗口的高度。如果未提供 `rect`，则此项为必填项。 |
 
 **示例**
 
-```
-var rendition = this.media.getRendition( "myClip" );
+```javascript
+var rendition = this.media.getRendition("myClip");
+
 var floating = {
     align: app.media.align.topCenter,
     over: app.media.over.appWindow,
@@ -17512,6 +18282,7 @@ var floating = {
     width: 400,
     height: 300
 };
+
 var player = app.media.openPlayer({
     rendition: rendition,
     settings: {
@@ -17527,9 +18298,9 @@ var player = app.media.openPlayer({
 | :--- | :--- | :--- | :--- | :--- |
 |  |  |  |  |  |
 
-**MediaSettings.layout** 是从 `app.media.layout` 枚举中选择的值，它定义了内容是否以及如何调整大小以适应窗口。默认值因不同的媒体播放器而异。
+`MediaSettings.layout` 是从 `app.media.layout` 枚举中选择的值，它定义了内容是否以及如何调整大小以适应窗口。默认值因不同的媒体播放器而异。
 
-*类型：* Number *访问权限：* R/W。
+类型：Number　访问权限：R/W。
 
 ## monitor
 
@@ -17537,9 +18308,9 @@ var player = app.media.openPlayer({
 | :--- | :--- | :--- | :--- | :--- |
 |  |  |  |  |  |
 
-对于全屏媒体播放器，**MediaSettings.monitor** 决定将使用哪个显示监视器进行播放。这可以是一个 [Monitor 对象] 或一个 [Monitors 对象]。如果是数组，则使用第一个元素（即 Monitor 对象）。
+对于全屏媒体播放器，`MediaSettings.monitor` 决定将使用哪个显示监视器进行播放。这可以是一个 Monitor 对象或一个 Monitors 对象。如果是数组，则使用第一个元素（即 Monitor 对象）。
 
-类型：Monitor 或 Monitors 对象
+类型：Monitor 或 Monitors 对象  
 访问权限：R/W。
 
 **注意：** 仅使用 `rect` 属性 `MediaSettings.monitor.rect`（对于 Monitor 对象）或 `MediaSettings.monitor[0].rect`（对于 Monitors 对象）进行播放。
@@ -17550,12 +18321,12 @@ var player = app.media.openPlayer({
 
 通过表单按钮以全屏方式播放媒体剪辑。
 
-```
+```javascript
 var player = app.media.openPlayer({
     rendition: this.media.getRendition("Clip"),
     settings: {
         monitor: app.monitors.primary(),
-        windowType: app.media.windowType.fullScreen,
+        windowType: app.media.windowType.fullScreen
     }
 });
 ```
@@ -17564,13 +18335,13 @@ var player = app.media.openPlayer({
 
 ## monitorType
 
-| 6.0 | | | | |
+| 6.0 |  |  |  |  |
 | :--- | :--- | :--- | :--- | :--- |
 |  |  |  |  |  |
 
 `MediaSettings.monitorType` 是一个 `app.media.monitorType` 值，表示为浮动或全屏窗口选择的监视器类型。
 
-类型：Number
+类型：Number  
 访问权限：R/W。
 
 `monitor` 和 `monitorType` 属性有什么区别？`monitor` 属性通过定义其矩形区域来指定当前运行系统上的特定监视器。`monitorType` 指定监视器的通用类别，例如主监视器、次监视器、最佳色深监视器等。不使用 JavaScript 的 PDF 文件无法指定特定的监视器，但可以指定一个 `monitorType`。当在 `app.media.createPlayer()` 或 `app.media.openPlayer()` 的调用中指定了 `monitorType` 时，`media.js` 中的 JavaScript 代码会获取运行系统上可用的实际监视器列表，然后使用 `monitorType` 为播放选择其中一个监视器。在调用 `MediaPlayer.open()` 时，将使用此监视器矩形区域来选择实际的监视器。
@@ -17579,12 +18350,12 @@ var player = app.media.openPlayer({
 
 通过表单按钮在具有最佳色深的监视器上以全屏方式播放媒体剪辑。
 
-```
+```javascript
 var player = app.media.openPlayer({
     rendition: this.media.getRendition("Clip"),
     settings: {
         monitorType: app.media.monitorType.bestColor,
-        windowType: app.media.windowType.fullScreen,
+        windowType: app.media.windowType.fullScreen
     }
 });
 ```
@@ -17595,11 +18366,11 @@ var player = app.media.openPlayer({
 | :--- | :--- | :--- | :--- | :--- |
 |  |  |  |  |  |
 
-对于停靠式媒体播放器，**MediaSettings.page** 是播放器应停靠的文档页码。对于其他类型的媒体播放器，此属性将被忽略。
+对于停靠式媒体播放器，`MediaSettings.page` 是播放器应停靠的文档页码。对于其他类型的媒体播放器，此属性将被忽略。
 
-类型：Number
-访问权限：R/W。
-另请参见 **MediaPlayer.page**。
+类型：Number  
+访问权限：R/W。  
+另请参见 `MediaPlayer.page`。
 
 ## palindrome
 
@@ -17607,21 +18378,24 @@ var player = app.media.openPlayer({
 | :--- | :--- | :--- | :--- | :--- |
 |  |  |  |  |  |
 
-如果 **MediaSettings.palindrome** 为 **true**，媒体将正常播放一次，然后反向播放回到起点。如果指定了 **repeat**，那么这种正向和反向播放将重复该次数。每次完整的正向和反向播放计为一次重复。
+如果 `MediaSettings.palindrome` 为 `true`，媒体将正常播放一次，然后反向播放回到起点。如果指定了 `repeat`，那么这种正向和反向播放将重复该次数。每次完整的正向和反向播放计为一次重复。
 
-默认值为 **false**。
+默认值为 `false`。
 
-类型：Boolean
+类型：Boolean  
 访问权限：R/W。
-**注意：** 大多数媒体播放器不支持 palindrome 并会忽略此设置。
+
+**注意：** 大多数媒体播放器不支持 `palindrome` 并会忽略此设置。
 
 **示例**
 
-使用支持 palindrome 的 QuickTime 查看媒体剪辑。
+使用支持 `palindrome` 的 QuickTime 查看媒体剪辑。
 
-```
+```javascript
 var playerList = app.media.getPlayers().select({ id: /quicktime/i });
+
 var settings = { players: playerList, palindrome: true };
+
 var player = app.media.openPlayer({ settings: settings });
 ```
 
@@ -17633,20 +18407,22 @@ var player = app.media.openPlayer({ settings: settings });
 | :--- | :--- | :--- | :--- | :--- |
 |  |  |  |  |  |
 
-**MediaSettings.players** 是一个对象数组，代表可用于播放此 rendition 的媒体播放器。JavaScript 代码通常不直接访问此数组，而是将其从 **Rendition.select()** 传递到 **app.media.createPlayer()** 的 **settings** 对象中。
+`MediaSettings.players` 是一个对象数组，代表可用于播放此 rendition 的媒体播放器。JavaScript 代码通常不直接访问此数组，而是将其从 `Rendition.select()` 传递到 `app.media.createPlayer()` 的 `settings` 对象中。
 
-类型：Players 或 String 数组
+类型：Players 或 String 数组  
 访问权限：R/W。
 
 ## 示例
 
 列出可以播放此 rendition 的可用播放器。此脚本作为关联 rendition 的 Rendition 操作运行。
 
-```
-var player = app.media.openPlayer({ settings: {autoPlay: false} });
-console.println("players: " + player.settings.players.toSource() );
+```javascript
+var player = app.media.openPlayer({ settings: { autoPlay: false } });
+
+console.println("players: " + player.settings.players.toSource());
 
 // Sample output to the console:
+
 players: [{id:"vnd.adobe.swname:ADBE_MCI", rank:0},
 {id:"vnd.adobe.swname:AAPL_QuickTime", rank:0},
 {id:"vnd.adobe.swname:RNWK_RealPlayer", rank:0},
@@ -17655,164 +18431,178 @@ players: [{id:"vnd.adobe.swname:ADBE_MCI", rank:0},
 
 ## rate
 
-| 6.0 | | | | |
+| 6.0 |  |  |  |  |
 | :--- | :--- | :--- | :--- | :--- |
 |  |  |  |  |  |
 
-**MediaSettings.rate** 定义播放速率，其中 1 为正常播放，.5 为半速，2 为双倍速，-1 为正常反向速度，依此类推。
-许多播放器和媒体类型对其支持的速率值有限，会选择它们支持的最接近的播放速率。
-默认值为 1。
+`MediaSettings.rate` 定义播放速率，其中 1 为正常播放，.5 为半速，2 为双倍速，-1 为正常反向速度，依此类推。
 
-类型：Number
+许多播放器和媒体类型对其支持的速率值有限，会选择它们支持的最接近的播放速率。默认值为 1。
+
+类型：Number  
 访问权限：R/W。
 
 ## 示例
 
 以双倍速播放媒体剪辑。此脚本作为 Rendition 操作执行。
 
-```
+```javascript
 var player = app.media.createPlayer();
+
 player.settings.rate = 2;
+
 player.open();
 ```
 
 ## repeat
 
-| 6.0 | | | | |
+| 6.0 |  |  |  |  |
 | :--- | :--- | :--- | :--- | :--- |
 |  |  |  |  |  |
 
-**MediaSettings.repeat** 是媒体播放应自动重复的次数。默认值为 1，导致媒体播放一次。
-许多播放器仅支持 repeat 的整数值，但有些允许非整数值，例如 1.5。值为 **Infinity** 会持续播放媒体剪辑。
+`MediaSettings.repeat` 是媒体播放应自动重复的次数。默认值为 1，导致媒体播放一次。
+
+许多播放器仅支持 repeat 的整数值，但有些允许非整数值，例如 1.5。值为 `Infinity` 会持续播放媒体剪辑。
+
 默认值为 1。
 
-类型：Number
+类型：Number  
 访问权限：R/W。
 
 ## 示例
 
 从 Rendition 操作持续播放媒体剪辑。
 
-```
-var player = app.media.openPlayer({settings: { repeat: Infinity } });
+```javascript
+var player = app.media.openPlayer({ settings: { repeat: Infinity } });
 ```
 
 ## showUI
 
-| 6.0 | | | | |
+| 6.0 |  |  |  |  |
 | :--- | :--- | :--- | :--- | :--- |
 |  |  |  |  |  |
 
-**MediaSettings.showUI** 是一个布尔值，指定媒体播放器的控件是否应可见。
-默认值为 **false**。
+`MediaSettings.showUI` 是一个布尔值，指定媒体播放器的控件是否应可见。
 
-类型：Boolean
+默认值为 `false`。
+
+类型：Boolean  
 访问权限：R/W。
 
 ## 示例
 
 显示媒体播放器的控件。此脚本作为 Rendition 操作执行。
 
-```
+```javascript
 var player = app.media.createPlayer();
+
 player.settings.showUI = true;
+
 player.open();
 ```
 
 或
 
-```
-app.media.openPlayer( {settings: {showUI: true} });
+```javascript
+app.media.openPlayer({ settings: { showUI: true } });
 ```
 
 ## startAt
 
-| 6.0 | | | | |
+| 6.0 |  |  |  |  |
 | :--- | :--- | :--- | :--- | :--- |
 |  |  |  |  |  |
 
-**MediaSettings.startAt** 定义播放的开始时间或帧。这可以是一个绝对时间或帧值，或一个标记名称，或一个标记加上时间或帧，如 MediaOffset 下所述。播放从指定的时间或帧开始，或尽可能接近该点。如果未指定 startAt，默认值为媒体的开头。
+`MediaSettings.startAt` 定义播放的开始时间或帧。这可以是一个绝对时间或帧值，或一个标记名称，或一个标记加上时间或帧，如 MediaOffset 下所述。播放从指定的时间或帧开始，或尽可能接近该点。如果未指定 `startAt`，默认值为媒体的开头。
 
-类型：*MediaOffset 对象* 访问权限：R/W。
-另请参见 **endAt**。
+类型：MediaOffset 对象  
+访问权限：R/W。  
+另请参见 `endAt`。
 
 ## 示例
 
-参见 **endAt** 后面的示例。
+参见 `endAt` 后面的示例。
 
 ## visible
 
-| 6.0 | | | | |
+| 6.0 |  |  |  |  |
 | :--- | :--- | :--- | :--- | :--- |
 |  |  |  |  |  |
 
-**MediaSettings.visible** 是一个布尔值，指定播放器是否应可见。
+`MediaSettings.visible` 是一个布尔值，指定播放器是否应可见。
 
+默认值为 `true`。
 
-
-默认值为 **true**。
-
-类型：布尔值。访问权限：读/写。
+类型：布尔值  
+访问权限：读/写。
 
 ## 示例
 
 将停靠的媒体片段设置为仅播放音频。该脚本作为版面操作执行。
 
-```
+```javascript
 var args = {
     settings: {
         visible: false,
         windowType: app.media.windowType.docked
     }
 };
-app.media.openPlayer( args );
+
+app.media.openPlayer(args);
 ```
 
-另请参阅 **MediaPlayer.visible**。
+另请参阅 `MediaPlayer.visible`。
 
 ## volume
 
 | 6.0 |  |  |  |  |
-| --- | --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- | :--- |
+|  |  |  |  |  |
 
-**MediaSettings.volume** 指定播放音量。值为 0 表示静音，值为 100 表示正常（最大）音量；中间值表示中间音量。未来的媒体播放器可能允许大于 100 的值来表示比正常音量更大的音量，但目前没有。
+`MediaSettings.volume` 指定播放音量。值为 0 表示静音，值为 100 表示正常（最大）音量；中间值表示中间音量。未来的媒体播放器可能允许大于 100 的值来表示比正常音量更大的音量，但目前没有。
 
 默认值为 100。
 
-类型：数字。访问权限：读/写。
+类型：数字  
+访问权限：读/写。
 
 ## windowType
 
 | 6.0 |  |  |  |  |
-| --- | --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- | :--- |
+|  |  |  |  |  |
 
-**MediaSettings.windowType** 是从 `app.media.windowType` 枚举中选择的值，该枚举定义了 MediaPlayer 应在其中创建的窗口类型。
+`MediaSettings.windowType` 是从 `app.media.windowType` 枚举中选择的值，该枚举定义了 MediaPlayer 应在其中创建的窗口类型。
 
-如果使用低级函数 `doc.media.newPlayer()`，则 **windowType** 的默认值为 `app.media.windowType.docked`。
+如果使用低级函数 `doc.media.newPlayer()`，则 `windowType` 的默认值为 `app.media.windowType.docked`。
 
 如果使用 `App.media` 对象的高级函数 `createPlayer()` 或 `openPlayer()`，则默认值确定如下：
 
-- 如果提供了 `annot`（参见 `PlayerArgs` 对象的描述），则默认值为 `app.media.windowType.docked`
+- 如果提供了 `annot`（参见 `PlayerArgs` 对象的描述），则默认值为 `app.media.windowType.docked`。
 - 如果提供了 `settings.floating` 对象（参见 `PlayerArgs` 对象的描述），则默认值为 `app.media.windowType.floating`。
 - 否则，默认值为 undefined。
 
 ### Monitor 对象
 
-类型：数字。访问权限：读/写。
+类型：数字  
+访问权限：读/写。
 
 ## 示例
 
 以下脚本创建不同窗口类型的媒体播放器。该脚本作为版面操作执行，因此无需选择版面的规格。
 
-```
+```javascript
 // 在关联的 ScreenAnnot 中播放的停靠播放器
 app.media.openPlayer({
     settings: { windowType: app.media.windowType.docked }
 });
+
 // 在全屏模式下播放，另请参阅 monitor 和 monitorType
 app.media.openPlayer({
     settings: { windowType: app.media.windowType.fullScreen }
 });
+
 // 在浮动窗口中显示媒体片段，另请参阅 floating 属性
 var args = {
     settings: {
@@ -17820,18 +18610,21 @@ var args = {
         floating: {
             title: "A. C. Robat",
             width: 352,
-            height: 240,
+            height: 240
         }
     }
 };
-app.media.openPlayer( args );
+
+app.media.openPlayer(args);
 ```
+
+
 
 ### Monitor 对象
 
-Monitor 对象表示单个显示监视器。Monitor 对象可以从 `app.media.monitors` 获取，它返回一个包含所有连接到系统的监视器的数组。`app.media.monitors` 是一个 Monitors 对象，因此可以使用 Monitors 对象的方法根据不同的条件从多监视器系统中选择或过滤监视器。详情请参阅 Monitors 对象。
+Monitor 对象表示单个显示监视器。Monitor 对象可以从`app.media.monitors`获取，它返回一个包含所有连接到系统的监视器的数组。`app.media.monitors`是一个 Monitors 对象，因此可以使用 Monitors 对象的方法，根据不同的条件从多监视器系统中选择或过滤监视器。详情请参阅 Monitors 对象。
 
-Monitor 对象和 Monitors 对象用于 `MediaSettings.monitor`。
+Monitor 对象和 Monitors 对象用于`MediaSettings.monitor`。
 
 ## Monitor 对象属性
 
@@ -17840,18 +18633,19 @@ Monitor 对象和 Monitors 对象用于 `MediaSettings.monitor`。
 | 6.0 | | | | |
 | --- | --- | --- | --- | --- |
 
-`Monitor.colorDepth` 是监视器的颜色深度，即每像素的位数。
+`Monitor.colorDepth`是监视器的颜色深度，即每像素的位数。
 
-类型：数字。
+类型：数字。  
 访问权限：只读。
 
 **示例**
 
-获取主监视器，并检查其颜色深度。**Monitors.primary()** 方法用于选择主监视器。
+获取主监视器，并检查其颜色深度。`Monitors.primary()`方法用于选择主监视器。
 
-```
+```javascript
 var monitors = app.monitors.primary();
-console.println( "主监视器的颜色深度为 " + monitors[0].colorDepth );
+
+console.println("主监视器的颜色深度为 " + monitors[0].colorDepth);
 ```
 
 ### isPrimary
@@ -17859,19 +18653,21 @@ console.println( "主监视器的颜色深度为 " + monitors[0].colorDepth );
 | 6.0 | | | | |
 | --- | --- | --- | --- | --- |
 
-**Monitor.isPrimary** 是一个布尔值，对于主监视器为 **true**，对于所有其他监视器为 **false**。
+`Monitor.isPrimary`是一个布尔值，对于主监视器为`true`，对于所有其他监视器为`false`。
 
-类型：布尔值。
+类型：布尔值。  
 访问权限：只读。
 
 **示例**
 
 获取最宽的监视器，并查看它是否是主监视器。
 
-```
+```javascript
 var monitors = app.monitors.widest();
-var isIsNot = (monitors[0].isPrimary) ? "是" : "不是";
-console.println("最宽的监视器 "+isIsNot+" 主监视器。");
+
+var isIsNot = monitors[0].isPrimary ? "是" : "不是";
+
+console.println("最宽的监视器 " + isIsNot + " 主监视器。");
 ```
 
 ### rect
@@ -17879,10 +18675,11 @@ console.println("最宽的监视器 "+isIsNot+" 主监视器。");
 | 6.0 | | | | |
 | --- | --- | --- | --- | --- |
 
-**Monitor.rect** 是一个矩形，表示监视器在虚拟桌面坐标中的边界。
-虚拟桌面的原点是主监视器的左上角，因此主监视器的边界总是采用 [ 0, 0, right, bottom ] 的形式。辅助监视器的边界数组中可能有正值或负值，这取决于它们相对于主监视器的位置。
+`Monitor.rect`是一个矩形，表示监视器在虚拟桌面坐标中的边界。
 
-类型：矩形。
+虚拟桌面的原点是主监视器的左上角，因此主监视器的边界总是采用`[0, 0, right, bottom]`的形式。辅助监视器的边界数组中可能有正值或负值，这取决于它们相对于主监视器的位置。
+
+类型：矩形。  
 访问权限：只读。
 
 ### workRect
@@ -17890,306 +18687,310 @@ console.println("最宽的监视器 "+isIsNot+" 主监视器。");
 | 6.0 | | | | |
 | --- | --- | --- | --- | --- |
 
-Monitor.workRect 是一个矩形，表示监视器在虚拟桌面坐标中的工作区边界。有关这些坐标的信息，请参阅 **Monitor.rect**。
+`Monitor.workRect`是一个矩形，表示监视器在虚拟桌面坐标中的工作区边界。有关这些坐标的信息，请参阅`Monitor.rect`。
 
-工作区是监视器通常用于应用程序的区域，不包括任何停靠的工具栏、任务栏等。例如，在单个 800x600 显示器上运行 Windows，`Monitor.rect` 为 [ 0, 0, 800, 600 ]。如果标准的 Windows 任务栏高 30 像素且始终显示在屏幕底部，`Monitor.workRect` 为 [ 0, 0, 800, 570 ]。
+工作区是监视器通常用于应用程序的区域，不包括任何停靠的工具栏、任务栏等。例如，在单个 800x600 显示器上运行 Windows，`Monitor.rect`为`[0, 0, 800, 600]`。如果标准的 Windows 任务栏高 30 像素且始终显示在屏幕底部，`Monitor.workRect`为`[0, 0, 800, 570]`。
 
-类型：矩形。
+类型：矩形。  
 访问权限：只读。
 
-### Monitors 对象
+## Monitors 对象
 
-Monitors 对象是一个只读的 [Monitor 对象](https://example.com) 数组，每个元素代表一个显示监视器。
+Monitors 对象是一个只读的[Monitor 对象](https://example.com)数组，每个元素代表一个显示监视器。
 
-**app.monitors** 属性返回一个 Monitors 对象，其中包含连接到用户系统的每个监视器。JavaScript 代码可以遍历此数组以获取有关可用监视器的信息，并选择一个用于全屏或弹出式媒体播放器。
+`app.monitors`属性返回一个 Monitors 对象，其中包含连接到用户系统的每个监视器。JavaScript 代码可以遍历此数组，以获取有关可用监视器的信息，并选择一个用于全屏或弹出式媒体播放器。
 
 Monitors 还具有许多过滤方法，可根据各种条件选择一个或多个监视器。
 
-PDF 文件格式中提供的所有监视器选择选项都实现为对这些过滤方法的调用，这些方法在 `media.js` 中以 JavaScript 代码编写。
+PDF 文件格式中提供的所有监视器选择选项，都实现为对这些过滤方法的调用，这些方法在`media.js`中以 JavaScript 代码编写。
 
-所有 Monitors 过滤方法都不会修改原始的 Monitors 对象。它们各自返回一个新的 Monitors 对象，通常包含一个或多个 Monitor 对象。如果单个监视器比其他任何监视器都更符合过滤条件，则结果 Monitors 对象包含该监视器。如果多个监视器同样满足过滤条件（例如，对于 `bestColor()` 方法，如果有多个监视器具有相同的、最大的颜色深度），则结果包含所有这些监视器。
+所有 Monitors 过滤方法都不会修改原始的 Monitors 对象。它们各自返回一个新的 Monitors 对象，通常包含一个或多个 Monitor 对象。如果单个监视器比其他任何监视器都更符合过滤条件，则结果 Monitors 对象包含该监视器。如果多个监视器同样满足过滤条件（例如，对于`bestColor()`方法，如果有多个监视器具有相同的、最大的颜色深度），则结果包含所有这些监视器。
 
 一些过滤方法有一个可选的最小值或必需参数。如果指定了此参数，但没有监视器满足该最低要求，则结果 Monitors 对象为空。否则，如果原始 Monitors 对象不为空，结果将始终包含至少一个监视器。
 
 过滤方法中提到的高度、宽度或面积均以像素为单位，而不是物理尺寸。
 
-Monitors 对象实际上不是数组类型，但可以像使用带有编号元素和 length 属性的只读数组一样使用它。
+Monitors 对象实际上不是数组类型，但可以像使用带有编号元素和`length`属性的只读数组一样使用它。
 
-## Monitors 对象属性
+### Monitors 对象属性
 
-Monitors 对象的工作方式类似于数组，其中每个数组元素都是一个 [Monitor 对象](https://example.com)，代表单个监视器。**app.monitors** 返回的 Monitors 对象是未排序的，监视器未按任何特定顺序列出。可以使用标准的数组表示法访问 Monitors 对象的元素。
+Monitors 对象的工作方式类似于数组，其中每个数组元素都是一个[Monitor 对象](https://example.com)，代表单个监视器。`app.monitors`返回的 Monitors 对象是未排序的，监视器未按任何特定顺序列出。可以使用标准的数组表示法访问 Monitors 对象的元素。
 
-## Monitors 对象方法
+### Monitors 对象方法
 
-### bestColor
+#### bestColor
 
-| 6.0 |   |   |   |   |
+| 6.0 | | | | |
 | --- | --- | --- | --- | --- |
 
-**Monitors.bestColor()** 方法返回 **Monitors 对象** 的一个副本，过滤后仅包含颜色深度最大的监视器。
+`Monitors.bestColor()`方法返回 Monitors 对象的一个副本，过滤后仅包含颜色深度最大的监视器。
 
-如果指定了 **nMinColor**，并且最佳颜色深度小于 **nMinColor**，则返回一个空的 Monitors 数组。
+如果指定了`nMinColor`，并且最佳颜色深度小于`nMinColor`，则返回一个空的 Monitors 数组。
 
-#### 参数
+##### 参数
 
-| **nMinColor** | （可选）监视器所需的最小颜色深度。 |
+| `nMinColor` | （可选）监视器所需的最小颜色深度。 |
 | --- | --- |
 
-#### 返回值
+##### 返回值
 
-一个 **Monitors 对象**
+一个 Monitors 对象。
 
-#### 示例
+##### 示例
 
-```
+```javascript
 var monitors = app.monitors.bestColor(32);
-if (monitors.length == 0 )
+
+if (monitors.length == 0)
     console.println("找不到所需的监视器。");
 else
     console.println("找到至少一个监视器。");
 ```
 
-### bestFit
+#### bestFit
 
-| 6.0 |   |   |   |   |
+| 6.0 | | | | |
 | --- | --- | --- | --- | --- |
 
-**Monitors.bestFit()** 方法返回 **Monitors 对象** 的一个副本，过滤后仅包含满足指定像素宽度 **nWidth** 和高度 **nHeight** 的最小监视器。
+`Monitors.bestFit()`方法返回 Monitors 对象的一个副本，过滤后仅包含满足指定像素宽度`nWidth`和高度`nHeight`的最小监视器。
 
+##### 参数
 
+| `nWidth` | 最佳适配显示器的最小宽度。 |
+| `nHeight` | 最佳适配显示器的最小高度。 |
+| `bRequire` | （可选）如果没有显示器满足指定的宽度和高度，则当`bRequire`为`true`时返回一个空的 Monitors 数组，或者当`bRequire`为`false`或省略时返回一个包含最大显示器的 Monitors 数组。 |
 
-## Acrobat JavaScript 脚本参考
+##### 返回值
 
-### Monitors 对象方法
-
-**参数**
-
-| nWidth | 最佳适配显示器的最小宽度 |
-|---|---|
-| nHeight | 最佳适配显示器的最小高度。 |
-| bRequire | （可选）如果没有显示器满足指定的宽度和高度，则当 `bRequire` 为 `true` 时返回一个空的 Monitors 数组，或者当 `bRequire` 为 `false` 或省略时返回一个包含最大显示器的 Monitors 数组。 |
-
-**返回值**
-一个 Monitors 对象
+一个 Monitors 对象。
 
 ## desktop
 
-`Monitors.desktop()` 创建一个新的 Monitors 对象，其中包含一个代表整个虚拟桌面的显示器。在此 Monitor 对象中，`rect` 属性是原始 Monitors 对象中所有 `rect` 的并集，`workRect` 属性是原始 Monitors 对象中所有 `workRect` 的并集，`colorDepth` 是原始 Monitors 对象中找到的最小 `colorDepth` 值。
+`Monitors.desktop()`创建一个新的 Monitors 对象，其中包含一个代表整个虚拟桌面的显示器。在此 Monitor 对象中，`rect`属性是原始 Monitors 对象中所有`rect`的并集，`workRect`属性是原始 Monitors 对象中所有`workRect`的并集，`colorDepth`是原始 Monitors 对象中找到的最小`colorDepth`值。
 
-**参数**
-无
+### 参数
 
-**返回值**
-一个 Monitors 对象
+无。
 
-> 注意：`desktop()` 方法通常直接在 `app.monitors` 返回的 Monitors 对象上调用。如果该 Monitors 对象首先通过其任何其他方法进行筛选，则 `desktop()` 方法会对该显示器子集执行上述相同的计算。
+### 返回值
+
+一个 Monitors 对象。
+
+> 注意：`desktop()`方法通常直接在`app.monitors`返回的 Monitors 对象上调用。如果该 Monitors 对象首先通过其任何其他方法进行筛选，则`desktop()`方法会对该显示器子集执行上述相同的计算。
 
 ## document
 
-`Monitors.document()` 方法返回一个经过筛选的 Monitors 对象副本，包含显示指定文档对象参数 `doc` 所对应文档最大部分的显示器。
+`Monitors.document()`方法返回一个经过筛选的 Monitors 对象副本，包含显示指定文档对象参数`doc`所对应文档最大部分的显示器。
 
-如果该文档未出现在原始 Monitors 对象中的任何显示器上，则当 `bRequire` 为 `true` 时返回一个空的 Monitors 数组，或者当 `bRequire` 为 `false` 或省略时返回一个包含至少一个从原始数组中任意选择的显示器的 Monitors 数组。
+如果该文档未出现在原始 Monitors 对象中的任何显示器上，则当`bRequire`为`true`时返回一个空的 Monitors 数组，或者当`bRequire`为`false`或省略时返回一个包含至少一个从原始数组中任意选择的显示器的 Monitors 数组。
 
-**参数**
+### 参数
 
-| doc | 文档的对象 |
-| bRequire | （可选）一个布尔值。请参阅上方说明。 |
+| `doc` | 文档的对象。 |
+| `bRequire` | （可选）一个布尔值。请参阅上方说明。 |
 
-**返回值**
+### 返回值
 
-一个 Monitors 对象
+一个 Monitors 对象。
 
 ## filter
 
-`Monitors.filter()` 通过对列表中的每个显示器调用一个排序函数，返回一个经过筛选的 Monitors 对象副本。该排序函数接受一个 Monitor 参数并返回一个数字排名。`filter()` 的返回值是一个 Monitors 数组，包含排名最高的显示器（可以是单个显示器，也可以是多个并列的显示器）。
+`Monitors.filter()`通过对列表中的每个显示器调用一个排序函数，返回一个经过筛选的 Monitors 对象副本。该排序函数接受一个 Monitor 参数并返回一个数字排名。`filter()`的返回值是一个 Monitors 数组，包含排名最高的显示器（可以是单个显示器，也可以是多个并列的显示器）。
 
-**参数**
+### 参数
 
-| fnRanker | 一个（排序）函数，接受 Monitor 参数并返回一个数字排名 |
-| nMinRank | （可选）如果 `nMinRank` 未定义，`filter()` 始终至少包含原始列表中的一个显示器（除非原始列表为空）。如果指定了 `nMinRank`，则当没有显示器根据排序函数达到该排名时，`filter()` 返回一个空的 Monitors 数组。 |
+| `fnRanker` | 一个排序函数，接受 Monitor 参数并返回一个数字排名。 |
+| `nMinRank` | （可选）如果`nMinRank`未定义，`filter()`始终至少包含原始列表中的一个显示器（除非原始列表为空）。如果指定了`nMinRank`，则当没有显示器根据排序函数达到该排名时，`filter()`返回一个空的 Monitors 数组。 |
 
-**返回值**
+### 返回值
 
-一个 Monitors 对象
+一个 Monitors 对象。
 
-> 注意：大多数其他 Monitors 筛选函数是通过调用 `filter()` 来实现的。
+> 注意：大多数其他 Monitors 筛选函数是通过调用`filter()`来实现的。
 
-**示例：**
+### 示例
 
-这是来自 media.js 的 `Monitors.bestColor( minColor )` 的实现：
-返回一个包含具有最大颜色深度的显示器的 Monitors 对象。如果指定了 `minColor`，并且最佳颜色深度小于 `minColor`，则返回一个空的 Monitors 数组。
+这是来自`media.js`的`Monitors.bestColor(minColor)`的实现：返回一个包含具有最大颜色深度的显示器的 Monitors 对象。如果指定了`minColor`，并且最佳颜色深度小于`minColor`，则返回一个空的 Monitors 数组。
 
-```
-bestColor: function( minColor )
+```javascript
+bestColor: function(minColor)
 {
     return this.filter(
-        function( m ) { return m.colorDepth; }, minColor );
+        function(m) { return m.colorDepth; },
+        minColor
+    );
 }
 ```
 
-Acrobat JavaScript 脚本参考
-
 ## largest
 
-**`Monitors.largest()`** 返回一个经过筛选的 Monitors 对象副本，包含像素面积最大的显示器。
+`Monitors.largest()`返回一个经过筛选的 Monitors 对象副本，包含像素面积最大的显示器。
 
-**参数**
+### 参数
 
-| **nMinArea** | （可选）如果指定了可选参数 **nMinArea**（一个数字），当最大面积小于该值时，**`largest()`** 返回一个空的 Monitors 数组。 |
-|---|---|
+| `nMinArea` | （可选）如果指定了可选参数`nMinArea`（一个数字），当最大面积小于该值时，`largest()`返回一个空的 Monitors 数组。 |
+| --- | --- |
 
-**返回值**
+### 返回值
 
-一个 Monitors 对象
+一个 Monitors 对象。
 
 ## leastOverlap
 
-**`Monitors.leastOverlap()`** 方法返回一个经过筛选的 Monitors 对象副本，包含包含由 **rect** 参数指定的矩形最小部分的显示器。
+`Monitors.leastOverlap()`方法返回一个经过筛选的 Monitors 对象副本，包含包含由`rect`参数指定的矩形最小部分的显示器。
 
-**参数**
+### 参数
 
-| **rect** | 一个矩形，屏幕坐标系中的四个数字组成的数组。 |
-|---|---|
-| **maxOverlapArea** | （可选）如果指定了 **maxOverlapArea**，结果 Monitors 数组仅包含那些包含至少该面积的矩形的显示器，或者如果没有任何显示器包含那么多矩形面积，则返回一个空的 Monitors 数组。 |
+| `rect` | 一个矩形，屏幕坐标系中的四个数字组成的数组。 |
+| --- | --- |
+| `maxOverlapArea` | （可选）如果指定了`maxOverlapArea`，结果 Monitors 数组仅包含那些包含至少该面积的矩形的显示器，或者如果没有任何显示器包含那么多矩形面积，则返回一个空的 Monitors 数组。 |
 
-**返回值**
+### 返回值
 
-一个 Monitors 对象
+一个 Monitors 对象。
 
 ## mostOverlap
 
-`Monitors.mostOverlap()` 方法返回一个经过筛选的 Monitors 对象副本，包含包含由 `rect` 参数指定的矩形最大部分的显示器。
+`Monitors.mostOverlap()`方法返回一个经过筛选的 Monitors 对象副本，包含包含由`rect`参数指定的矩形最大部分的显示器。
 
-**参数**
+### 参数
 
 | 参数 | 描述 |
 | --- | --- |
 | `rect` | 一个矩形，屏幕坐标系中的四个数字组成的数组。 |
-| `minOverlapArea` | （可选）如果没有显示器的重叠面积至少达到该值，并且指定了 `minOverlapArea`，则返回一个空的 Monitors 数组；如果省略 `minOverlapArea`，则返回一个包含至少一个从原始数组中任意选择的显示器的 Monitors 数组。 |
+| `minOverlapArea` | （可选）如果没有显示器的重叠面积至少达到该值，并且指定了`minOverlapArea`，则返回一个空的 Monitors 数组；如果省略`minOverlapArea`，则返回一个包含至少一个从原始数组中任意选择的显示器的 Monitors 数组。 |
 
-**返回值**
+### 返回值
 
-一个 Monitors 对象
+一个 Monitors 对象。
 
 ## nonDocument
 
-`Monitors.nonDocument()` 方法返回一个经过筛选的 Monitors 对象副本，包含不显示或显示最少文档内容的显示器。
+`Monitors.nonDocument()`方法返回一个经过筛选的 Monitors 对象副本，包含不显示或显示最少文档内容的显示器。
 
-**参数**
+### 参数
 
 | 参数 | 描述 |
 | --- | --- |
-| `doc` | 目标文档的对象 |
-| `bRequire` | （可选）`bRequire` 是一个布尔值，决定当没有显示器完全避开文档时的返回值。如果为 `true`，`nonDocument()` 返回一个空数组；如果为 `false` 或省略，`nonDocument()` 返回一个包含至少一个从原始 Monitors 数组中任意选择的显示器的 Monitors 数组。 |
+| `doc` | 目标文档的对象。 |
+| `bRequire` | （可选）`bRequire`是一个布尔值，决定当没有显示器完全避开文档时的返回值。如果为`true`，`nonDocument()`返回一个空数组；如果为`false`或省略，`nonDocument()`返回一个包含至少一个从原始 Monitors 数组中任意选择的显示器的 Monitors 数组。 |
 
-**返回值**
+### 返回值
 
-一个 Monitors 对象
+一个 Monitors 对象。
 
 ## primary
 
-**`Monitors.primary()`** 返回一个经过筛选的 **Monitors 对象** 副本，通过移除所有辅助显示器进行筛选，仅保留主显示器（如果其存在于原始列表中）。
+`Monitors.primary()`返回一个经过筛选的 Monitors 对象副本，通过移除所有辅助显示器进行筛选，仅保留主显示器（如果其存在于原始列表中）。
 
 如果主显示器不在原始列表中，则返回一个包含至少一个从原始列表中任意选择的显示器的 Monitors 数组。
 
-**参数**
-无
+### 参数
 
-**返回值**
+无。
 
-一个 Monitors 对象
+### 返回值
 
-**示例**
+一个 Monitors 对象。
+
+### 示例
 
 获取主显示器，并检查其颜色深度。
 
-```
+```javascript
 var monitors = app.monitors.primary();
+
 // 请记住，monitors 对象中的每个元素都是一个 monitor 对象，
 // 此代码使用 monitor.colorDepth
-console.println( "主显示器的颜色深度为："
-    + monitors[0].colorDepth );
+
+console.println(
+    "主显示器的颜色深度为：" + monitors[0].colorDepth
+);
 ```
 
 ## secondary
 
-**`Monitors.secondary()`** 返回一个经过筛选的 **Monitors 对象** 副本，通过移除主显示器进行筛选，仅返回辅助显示器。
+`Monitors.secondary()`返回一个经过筛选的 Monitors 对象副本，通过移除主显示器进行筛选，仅返回辅助显示器。
 
 如果原始 Monitors 对象仅包含主显示器而没有辅助显示器，则返回原始列表。
 
-**参数**
-无
+### 参数
 
-**返回值**
+无。
 
-一个 Monitors 对象
+### 返回值
+
+一个 Monitors 对象。
 
 ## select
 
-**`Monitors.select()`** 返回一个经过筛选的 **Monitors 对象** 副本，筛选依据 **nMonitor**（一个监视器选择值，如 PDF 中所用，枚举于 `app.media.monitorType`）。
+`Monitors.select()`返回一个经过筛选的 Monitors 对象副本，筛选依据`nMonitor`（一个监视器选择值，如 PDF 中所用，枚举于`app.media.monitorType`）。
 
-当 `nMonitor` 为 `app.media.monitorType.document` 或 `app.media.monitorType.nonDocument` 时，需要 `doc` 参数；对于所有其他 `nMonitor` 值，则忽略该参数。
+当`nMonitor`为`app.media.monitorType.document`或`app.media.monitorType.nonDocument`时，需要`doc`参数；对于所有其他`nMonitor`值，则忽略该参数。
 
-这些选择值直接对应于各种 Monitors 筛选方法。**`select()`** 调用相应的筛选方法，然后，在大多数情况下，如果多个显示器匹配主要筛选条件，还会使用 **`primary()`** 作为决胜局进行筛选。详细信息请参阅 media.js 中的代码。
+这些选择值直接对应于各种 Monitors 筛选方法。`select()`调用相应的筛选方法，然后，在大多数情况下，如果多个显示器匹配主要筛选条件，还会使用`primary()`作为决胜局进行筛选。详细信息请参阅`media.js`中的代码。
 
-**参数**
+### 参数
 
 | 参数 | 描述 |
-| :--- | :--- |
-| **nMonitor** | 监视器类型，来自 `app.media.monitorType` 的一个数字。 |
-| **doc** | 一个文档对象。如果 **nMonitor** 为 `app.media.monitorType.document` 或 `app.media.monitorType.nonDocument`，则此参数是必需的；否则忽略。 |
+| --- | --- |
+| `nMonitor` | 监视器类型，来自`app.media.monitorType`的一个数字。 |
+| `doc` | 一个文档对象。如果`nMonitor`为`app.media.monitorType.document`或`app.media.monitorType.nonDocument`，则此参数是必需的；否则忽略。 |
 
-**返回值**
+### 返回值
 
-一个 Monitors 对象
+一个 Monitors 对象。
 
-**示例：**
+### 示例
 
+```javascript
+// 以下两种调用是等效的：
+
+settings.monitor =
+    app.monitors.select(app.media.monitorType.document, doc);
+
+settings.monitor =
+    app.monitors.document(doc).primary();
 ```
-    // 以下两种调用是等效的：
-    settings.monitor =
-    app.monitors().select( app.media.monitorType.document, doc );
-    settings.monitor = app.monitors().document(doc).primary();
-```
+
+
 
 ## tallest
 
-**`Monitors.tallest()`** 返回一个经过筛选的 Monitors 对象副本，仅包含像素高度最大的显示器。
+`Monitors.tallest()` 返回一个经过筛选的 Monitors 对象副本，仅包含像素高度最大的显示器。
 
-**参数**
+### 参数
 
 | 参数 | 描述 |
 | :--- | :--- |
-| **nMinHeight** | （可选）如果指定了 **nMinHeight** 且没有显示器的高度至少达到该值，则返回一个空的 Monitors 数组。 |
+| `nMinHeight` | （可选）如果指定了 `nMinHeight` 且没有显示器的高度至少达到该值，则返回一个空的 Monitors 数组。 |
 
-**返回值**
+### 返回值
 
-一个 Monitors 对象
-
-
+一个 Monitors 对象。
 
 ## widest
 
 | 6.0 | | | | |
 |-----|---|---|---|---|
 
-**Monitors.widest()** 返回 Monitors 对象的副本，该副本经过过滤，仅包含具有最大像素宽度的显示器。
+`Monitors.widest()` 返回 Monitors 对象的副本，该副本经过过滤，仅包含具有最大像素宽度的显示器。
 
-## Parameters
+### 参数
 
-**nMinWidth**（可选）如果指定了 nMinWidth，且没有任何显示器的宽度达到该值，则返回值为空的 Monitors 数组。
+`nMinWidth`（可选）如果指定了 `nMinWidth`，且没有任何显示器的宽度达到该值，则返回值为空的 Monitors 数组。
 
-## Returns
+### 返回值
 
-一个 Monitors 对象
+一个 Monitors 对象。
 
 ## OCG 对象
 
 OCG 对象代表 PDF 文件中的一个可选内容组。文件中的内容可以“属于”一个或多个可选内容组。属于一个或多个 OCG 的内容被称为“可选内容”，其可见性由其所属的 OCG 的开启/关闭状态决定。在最简单的情况下，可选内容属于单个 OCG，当 OCG 开启时内容可见，关闭时内容隐藏。更高级的可见性行为可以通过使用多个 OCG 和不同的可见性映射来实现。
 
-使用 **doc.getOCGs** 获取 PDF 文档的 OCG 对象数组。
+使用 `doc.getOCGs` 获取 PDF 文档的 OCG 对象数组。
 
-方法 **doc.addWatermarkFromFile** 和 **doc.addWatermarkFromText** 在 OCG 中添加水印。
+方法 `doc.addWatermarkFromFile` 和 `doc.addWatermarkFromText` 在 OCG 中添加水印。
 
 有关可选内容组的更多详细信息，请参阅 PDF 参考文档，第 4.10 节。
 
@@ -18208,17 +19009,17 @@ OCG 的 intent 数组可以包含任意字符串，但只有此对象中包含�
 
 | Property | Description |
 | :--- | :--- |
-| **design** | 在 OCG 对象中指定一个“设计”意图。 |
-| **view** | 在 OCG 对象中指定一个“视图”意图。 |
+| `design` | 在 OCG 对象中指定一个“设计”意图。 |
+| `view` | 在 OCG 对象中指定一个“视图”意图。 |
 
 ### states 对象
 
-**states** 对象用于设置 OCG 的初始状态，请参阅 [initState](#)。
+`states` 对象用于设置 OCG 的初始状态，请参阅 [initState](#)。
 
 | Property | Description |
 | :--- | :--- |
-| **on** | 指定 OCG 状态为“开启”。 |
-| **off** | 指定 OCG 状态为“关闭”。 |
+| `on` | 指定 OCG 状态为“开启”。 |
+| `off` | 指定 OCG 状态为“关闭”。 |
 
 ### initState
 
@@ -18226,14 +19027,16 @@ OCG 的 intent 数组可以包含任意字符串，但只有此对象中包含�
 
 此属性用于确定此 OCG 默认情况下是开启还是关闭。请参阅 [states 对象](#) 了解可能的值。
 
-**类型：** 布尔值 **访问权限：** 读/写。
+**类型：** 布尔值  
+**访问权限：** 读/写。
 
-**示例**
+#### 示例
 
 将 OCG 的初始状态设置为关闭。
 
-```
+```javascript
 var ocgs = this.getOCGs();
+
 ocgs[0].initState.constants.states.off;
 ```
 
@@ -18243,24 +19046,28 @@ ocgs[0].initState.constants.states.off;
 
 此属性用于确定此 OCG 是否被锁定。如果 OCG 被锁定，则无法通过用户界面切换其开启/关闭状态。
 
-**类型：** 布尔值 **访问权限：** 读/写。
+**类型：** 布尔值  
+**访问权限：** 读/写。
 
 ### name
 
 在此 OCG 的用户界面中看到的文本字符串。它可用于标识 OCG，尽管它不一定是唯一的。
 
-**注意：** 在 Acrobat 6.0 中，**name** 是只读的；对于 Acrobat 7.0，它是读/写的。
+**注意：** 在 Acrobat 6.0 中，`name` 是只读的；对于 Acrobat 7.0，它是读/写的。
 
-类型：字符串 访问权限：读/写。
+**类型：** 字符串  
+**访问权限：** 读/写。
 
-示例
+#### 示例
 
-```
+```javascript
 /* 切换水印 OCG */
+
 function ToggleWatermark(doc)
 {
     var ocgArray = doc.getOCGs();
-    for (var i=0; i < ocgArray.length; i++) {
+
+    for (var i = 0; i < ocgArray.length; i++) {
         if (ocgArray[i].name == "Watermark") {
             ocgArray[i].state = !ocgArray[i].state;
         }
@@ -18272,17 +19079,19 @@ function ToggleWatermark(doc)
 
 表示此 OCG 当前的开启/关闭状态。
 
-类型：布尔值 访问权限：读/写。
+**类型：** 布尔值  
+**访问权限：** 读/写。
 
-示例
+#### 示例
 
 开启给定文档中的所有 OCG。
 
-```
+```javascript
 function TurnOnOCGsForDoc(doc)
 {
     var ocgArray = doc.getOCGs();
-    for (var i=0; i < ocgArray.length; i++)
+
+    for (var i = 0; i < ocgArray.length; i++)
         ocgArray[i].state = true;
 }
 ```
@@ -18295,14 +19104,18 @@ function TurnOnOCGsForDoc(doc)
 |-----|---|---|---|---|
 
 返回此 OCG 的 intent 数组。
-OCG 只有在将其意图设置为 **constants.intents.view** 时，才会影响内容的可见性。
-另请参阅 **setIntent** 和 intents 对象。
 
-**参数**
-无
+OCG 只有在将其意图设置为 `constants.intents.view` 时，才会影响内容的可见性。
 
-**返回值**
-字符串数组。请参阅 constants.intents 了解可能的值。
+另请参阅 `setIntent` 和 intents 对象。
+
+#### 参数
+
+无。
+
+#### 返回值
+
+字符串数组。请参阅 `constants.intents` 了解可能的值。
 
 ### setAction
 
@@ -18310,20 +19123,26 @@ OCG 只有在将其意图设置为 **constants.intents.view** 时，才会影响
 |-----|---|---|---|---|
 
 注册一个 JavaScript 表达式，该表达式将在每次此 OCG 状态更改后被求值。
+
 **注意：** 此方法将覆盖为此 OCG 已定义的任何操作。
 
-**参数**
+#### 参数
 
-| **cExpr** | OCG 状态更改后要被求值的表达式。 |
+| 参数 | 描述 |
 | :--- | :--- |
+| `cExpr` | OCG 状态更改后要被求值的表达式。 |
 
-**返回值**
-无
+#### 返回值
 
-**示例**
+无。
 
-```
+#### 示例
+
+当给定的 OCG 发生变化时发出哔声。
+
+```javascript
 /* 当给定的 OCG 发生变化时发出哔声 */
+
 function BeepOnChange(ocg)
 {
     ocg.setAction("app.beep()");
@@ -18332,33 +19151,38 @@ function BeepOnChange(ocg)
 
 ### setIntent
 
-设置此 OCG 的 intent 数组。OCG 只有在此数组包含 constants.intents.view 时，才会影响内容的可见性。请参阅 intents 对象了解可能的值。
-另请参阅 getIntent 和 intents 对象。
+设置此 OCG 的 intent 数组。OCG 只有在此数组包含 `constants.intents.view` 时，才会影响内容的可见性。请参阅 intents 对象了解可能的值。
 
-**参数**
+另请参阅 `getIntent` 和 intents 对象。
 
-| **aIntentArray** | 用作此 OCG intent 数组的字符串数组。 |
+#### 参数
+
+| 参数 | 描述 |
 | :--- | :--- |
+| `aIntentArray` | 用作此 OCG intent 数组的字符串数组。 |
 
-**返回值**
+#### 返回值
 
-无
+无。
 
-**示例**
+#### 示例
 
 将文档中所有 OCG 的意图设置为同时包含 View 和 Design。
 
-```
+```javascript
 var ocgs = this.getOCGs();
-for (i=0; i < ocgs.length; i++) {
-    ocgs[i].setIntent( [ocgs[i].constants.intents.view,
-        ocgs[i].constants.intents.design]);
+
+for (i = 0; i < ocgs.length; i++) {
+    ocgs[i].setIntent([
+        ocgs[i].constants.intents.view,
+        ocgs[i].constants.intents.design
+    ]);
 }
 ```
 
 ## PlayerInfo 对象
 
-PlayerInfo 对象代表一个可用于媒体播放的媒体播放器。app.media.getPlayers() 函数返回一个 PlayerInfoList 对象，它是 PlayerInfo 对象的集合。
+PlayerInfo 对象代表一个可用于媒体播放的媒体播放器。`app.media.getPlayers()` 函数返回一个 PlayerInfoList 对象，它是 PlayerInfo 对象的集合。
 
 ### PlayerInfo 对象属性
 
@@ -18367,21 +19191,22 @@ PlayerInfo 对象代表一个可用于媒体播放的媒体播放器。app.media
 | 6.0 | | | | |
 |-----|---|---|---|---|
 
-PlayerInfo.id 代表一个媒体播放器插件和相关的媒体播放器。此字符串未本地化，不打算显示给用户。此字符串可在创建 MediaPlayer 时用于 MediaPlayer.settings.players 数组，并且在打开播放器后也可在 MediaPlayer.id 属性中找到。
+`PlayerInfo.id` 代表一个媒体播放器插件和相关的媒体播放器。此字符串未本地化，不打算显示给用户。此字符串可在创建 MediaPlayer 时用于 `MediaPlayer.settings.players` 数组，并且在打开播放器后也可在 `MediaPlayer.id` 属性中找到。
 
-类型：字符串 访问权限：只读。
+**类型：** 字符串  
+**访问权限：** 只读。
 
-#### 示例
+##### 示例
 
-列出所有播放 "video/mpeg" 的媒体播放器的播放器信息。
+列出所有播放 `"video/mpeg"` 的媒体播放器的播放器信息。
 
-```
+```javascript
 var playerInfoList = app.media.getPlayers("video/mpeg");
 
-for ( var i=0; i < playerInfoList.length; i++) {
-    console.println("id: " + playerInfoList[i].id)
-    console.println("name: " + playerInfoList[i].name)
-    console.println("version: " + playerInfoList[i].version)
+for (var i = 0; i < playerInfoList.length; i++) {
+    console.println("id: " + playerInfoList[i].id);
+    console.println("name: " + playerInfoList[i].name);
+    console.println("version: " + playerInfoList[i].version);
 }
 ```
 
@@ -18390,15 +19215,17 @@ for ( var i=0; i < playerInfoList.length; i++) {
 | 6.0 | | | | |
 |-----|---|---|---|---|
 
-**PlayerInfo.mimeTypes** 属性返回一个字符串数组，列出了此媒体播放器支持的 MIME 类型。
+`PlayerInfo.mimeTypes` 属性返回一个字符串数组，列出了此媒体播放器支持的 MIME 类型。
 
-类型：字符串数组 访问权限：只读。
+**类型：** 字符串数组  
+**访问权限：** 只读。
 
-#### 示例：
+##### 示例
 
-```
-var qtinfo = app.media.getPlayers().select({id: /quicktime/i }) [0];
-console.println( qtinfo.mimeTypes );
+```javascript
+var qtinfo = app.media.getPlayers().select({id: /quicktime/i})[0];
+
+console.println(qtinfo.mimeTypes);
 ```
 
 #### name
@@ -18406,18 +19233,20 @@ console.println( qtinfo.mimeTypes );
 | 6.0 | | | | |
 |-----|---|---|---|---|
 
-**PlayerInfo.name** 是媒体播放器的名称。此字符串根据 app.language 中找到的当前语言进行本地化。它适合在列表框等中显示，但不适用于在 JavaScript 代码中进行直接比较。
+`PlayerInfo.name` 是媒体播放器的名称。此字符串根据 `app.language` 中找到的当前语言进行本地化。它适合在列表框等中显示，但不适用于在 JavaScript 代码中进行直接比较。
 
-类型：字符串 访问权限：只读。
+**类型：** 字符串  
+**访问权限：** 只读。
 
 #### version
 
 | 6.0 | | | | |
 |-----|---|---|---|---|
 
-**PlayerInfo.version** 是一个包含媒体播放器版本号的字符串。对于大多数播放器，它是用户系统上安装的底层媒体播放器的版本号。此字符串采用点分十进制格式，例如 7.4.030.1170。
+`PlayerInfo.version` 是一个包含媒体播放器版本号的字符串。对于大多数播放器，它是用户系统上安装的底层媒体播放器的版本号。此字符串采用点分十进制格式，例如 7.4.030.1170。
 
-类型：字符串 访问权限：只读。
+**类型：** 字符串  
+**访问权限：** 只读。
 
 ### PlayerInfo 对象方法
 
@@ -18426,32 +19255,31 @@ console.println( qtinfo.mimeTypes );
 | 6.0 | | | | |
 |-----|---|---|---|---|
 
-PlayerInfo.canPlay() 检查媒体播放器是否可用于播放，同时考虑用户的安全设置。
+`PlayerInfo.canPlay()` 检查媒体播放器是否可用于播放，同时考虑用户的安全设置。
 
-如果参数 bRejectPlayerPrompt 为 true，那么如果使用此播放器会导致安全提示，则该方法返回 false。否则，如果允许播放（无论是否出现安全提示），则该方法返回 true。（此方法本身不会触发安全提示，但随后尝试创建媒体播放器可能会触发。）
+如果参数 `bRejectPlayerPrompt` 为 true，那么如果使用此播放器会导致安全提示，则该方法返回 false。否则，如果允许播放（无论是否出现安全提示），则该方法返回 true。（此方法本身不会触发安全提示，但随后尝试创建媒体播放器可能会触发。）
 
-**参数**
+##### 参数
 
-| oDoc | 一个文档对象 |
+| 参数 | 描述 |
 | :--- | :--- |
-| bRejectPlayerPrompt | 一个布尔值，如果为 true，则如果使用此播放器会导致安全提示，则该方法返回 false；如果为 false，则如果允许播放（无论是否出现安全提示），则返回 true。默认为 false。 |
+| `oDoc` | 一个文档对象。 |
+| `bRejectPlayerPrompt` | 一个布尔值，如果为 true，则如果使用此播放器会导致安全提示，则该方法返回 false；如果为 false，则如果允许播放（无论是否出现安全提示），则返回 true。默认为 false。 |
 
-**返回值**
+##### 返回值
 
-布尔值
+布尔值。
 
 #### honors
 
 | 7.0 | | | | |
 |-----|---|---|---|---|
 
-此方法询问播放器插件是否能够支持 args 参数中列出的所有设置、方法和事件。答案不保证正确，而是播放器插件在实际尝试打开媒体播放器之前的最佳猜测。例如，如果提供了 args.URL，则会检查协议（例如 "http://"），但 PlayerInfo.honors() 不会尝试实际打开该 URL。
+此方法询问播放器插件是否能够支持 `args` 参数中列出的所有设置、方法和事件。答案不保证正确，而是播放器插件在实际尝试打开媒体播放器之前的最佳猜测。例如，如果提供了 `args.URL`，则会检查协议（例如 `"http://"`），但 `PlayerInfo.honors()` 不会尝试实际打开该 URL。
 
-**注意：** Acrobat 6.0 兼容性：PlayerInfo.honors() 仅在 Acrobat 7 及更高版本上支持。Acrobat SDK 提供了 JavaScript 源代码，可以复制到 PDF 中以提供与 Acrobat 6 和 Acrobat 7 的兼容性。此代码使用针对 Acrobat 6 的硬编码测试，并在较新版本的 Acrobat 上调用 PlayerInfo.honors()。详情请参阅 [playerHonors 函数](#)。
+**注意：** Acrobat 6.0 兼容性：`PlayerInfo.honors()` 仅在 Acrobat 7 及更高版本上支持。Acrobat SDK 提供了 JavaScript 源代码，可以复制到 PDF 中以提供与 Acrobat 6 和 Acrobat 7 的兼容性。此代码使用针对 Acrobat 6 的硬编码测试，并在较新版本的 Acrobat 上调用 `PlayerInfo.honors()`。详情请参阅 [playerHonors 函数](#)。
 
-PlayerInfo.honors 和 HonorsArgs（参见 HonorsArgs 对象）类似于 PDF 格式中的 MH（“必须支持”）条目，其中一些可以在多媒体演绎的“演绎设置”面板的“播放要求”中设置。honors
-
-
+`PlayerInfo.honors` 和 HonorsArgs（参见 HonorsArgs 对象）类似于 PDF 格式中的 MH（“必须支持”）条目，其中一些可以在多媒体演绎的“演绎设置”面板的“播放要求”中设置。honors
 
 ## PlayerInfo 对象方法
 
@@ -18459,62 +19287,66 @@ PlayerInfo.honors 和 HonorsArgs（参见 HonorsArgs 对象）类似于 PDF 格�
 
 ### 参数
 
-| 参数 | 要测试的 HonorsArgs 对象。HonorsArgs 对象与 `app.media.openPlayer()` 方法使用的参数 PlayerArgs 对象非常相似。事实上，任何 PlayerArgs 对象都可以用作 HonorsArgs。HonorsArgs 还允许一些仅用于 `honors()` 的其他选项。 |
-| --- | --- |
+| 参数 | 描述 |
+| :--- | :--- |
+| `args` | 要测试的 HonorsArgs 对象。HonorsArgs 对象与 `app.media.openPlayer()` 方法使用的参数 PlayerArgs 对象非常相似。事实上，任何 PlayerArgs 对象都可以用作 HonorsArgs。HonorsArgs 还允许一些仅用于 `honors()` 的其他选项。 |
 
 ### 返回值
 
-布尔值，如果播放器插件能够支持 **args** 对象中的所有内容，则返回 **true**。
+布尔值，如果播放器插件能够支持 `args` 对象中的所有内容，则返回 true。
 
 ### 示例
 
 使用支持特定功能的播放器播放媒体片段。
 
 ```javascript
-function playWithRequirements( args )
+function playWithRequirements(args)
 {
-    var plugins = app.media.getPlayers( args.mimeType )
-    if( plugins )
-    {
-        for (var plugin in plugins)
-        {
-            if( plugin.honors(args) )
-            {
+    var plugins = app.media.getPlayers(args.mimeType);
+
+    if (plugins) {
+        for (var plugin in plugins) {
+            if (plugin.honors(args)) {
                 args.players = [plugin];
-                return app.media.openPlayer( args );
+                return app.media.openPlayer(args);
             }
         }
     }
 }
 ```
 
-使用具备以下能力的媒体播放器播放 http URL 上的 AVI 文件：它可以关闭自动播放、支持 pause 方法、seek 方法以及使用标记+时间偏移的 startAt 设置，并且支持 Ready 和 Close 事件。
+使用具备以下能力的媒体播放器播放 http URL 上的 AVI 文件：它可以关闭自动播放、支持 pause 方法、seek 方法以及使用标记和时间偏移的 startAt 设置，并且支持 Ready 和 Close 事件。
 
 ```javascript
 playWithRequirements({
-    mimeType: 'video/avi',
-    URL: 'http://www.foo.com/bar.avi',
-    settings:
-    {
+    mimeType: "video/avi",
+    URL: "http://www.foo.com/bar.avi",
+    settings: {
         autoPlay: false,
-        startAt: { marker: 'test', time: 1 },
+        startAt: {
+            marker: "test",
+            time: 1
+        }
     },
-    methods:
-    {
+    methods: {
         pause: [],
-        seek: [ { marker: 'test', time: 1 } ],
+        seek: [
+            {
+                marker: "test",
+                time: 1
+            }
+        ]
     },
-    events:
-    {
-        afterReady: doAfterReady( e ),
-        onClose: doOnClose( e ),
-    },
+    events: {
+        afterReady: doAfterReady(e),
+        onClose: doOnClose(e)
+    }
 });
 ```
 
 ## HonorsArgs 对象
 
-HonorsArgs 对象列出了在调用 `PlayerInfo.honors`（或 `playerHonors` —— 在本文讨论中，我们将使用 “PlayerInfo.honors” 来指代两者）时使用的设置、方法和事件。
+HonorsArgs 对象列出了在调用 `PlayerInfo.honors`（或 `playerHonors`——在本文讨论中，我们将使用 “PlayerInfo.honors” 来指代两者）时使用的设置、方法和事件。
 
 任何 PlayerArgs 对象（如在调用 `app.media.openPlayer` 时使用的对象）都可以用作 HonorsArgs 对象，或者可以从头构建一个 HonorsArgs 对象用于 `PlayerInfo.honors` 调用。
 
@@ -18525,12 +19357,10 @@ HonorsArgs 对象列出了在调用 `PlayerInfo.honors`（或 `playerHonors` —
 下面是 HonorsArgs 对象中允许的属性的完整列表。此说明大致采用 JavaScript 对象字面量的形式，但它显示的是每个属性的类型或描述，而不是实际的属性值：
 
 ```javascript
-args =
-{
+args = {
     mimeType: string,
     URL: string,
-    settings:
-    {
+    settings: {
         autoPlay: boolean,
         baseURL: string,
         bgColor: Acrobat color array,
@@ -18543,51 +19373,60 @@ args =
         showUI: boolean,
         startAt: MediaOffset,
         visible: boolean,
-        volume: number,
-    },
-    methods:
-    {
-        pause: [],
-        play: [],
-        seek: [ MediaOffset ],
-        stop: [],
-        where: [],
-    },
-    events:
-    {
-        Done: anything, onDone: anything, afterDone: anything,
-        Error: anything, onError: anything, afterError: anything,
-        Escape: anything, onEscape: anything, afterEscape: anything,
-        Pause: anything, onPause: anything, afterPause: anything,
-        Play: anything, onPlay: anything, afterPlay: anything,
-        Ready: anything, onReady: anything, afterReady: anything,
-        Script: anything, onScript: anything, afterScript: anything,
-        Seek: anything, onSeek: anything, afterSeek: anything,
-        Status: anything, onStatus: anything, afterStatus: anything,
-        Stop: anything, onStop: anything, afterStop: anything,
-    },
+```
+
+
+
+```javascript
+volume: number,
+
+},
+
+methods:
+{
+    pause: [],
+    play: [],
+    seek: [MediaOffset],
+    stop: [],
+    where: [],
+},
+
+events:
+{
+    Done: anything, onDone: anything, afterDone: anything,
+    Error: anything, onError: anything, afterError: anything,
+    Escape: anything, onEscape: anything, afterEscape: anything,
+    Pause: anything, onPause: anything, afterPause: anything,
+    Play: anything, onPlay: anything, afterPlay: anything,
+    Ready: anything, onReady: anything, afterReady: anything,
+    Script: anything, onScript: anything, afterScript: anything,
+    Seek: anything, onSeek: anything, afterSeek: anything,
+    Status: anything, onStatus: anything, afterStatus: anything,
+    Stop: anything, onStop: anything, afterStop: anything,
+},
+
 }
 ```
 
-任何 PlayerArgs 对象（如在调用 **app.media.openPlayer** 时使用的对象）都可以用作 HonorsArgs 对象，或者您可以从头构建一个 HonorsArgs 对象。
+任何`PlayerArgs`对象（如在调用`app.media.openPlayer`时使用的对象）都可以用作`HonorsArgs`对象，或者您可以从头构建一个`HonorsArgs`对象。
 
-对上述列表的补充说明。
+对上述列表的补充说明：
 
--   **mimeType**、**URL** 和 **settings** 属性与 PlayerArgs 中的对应属性相同。**mimeType** 属性是必需的；**playerInfo.honors** 不会尝试从 URL 的文件扩展名确定 MIME 类型。**URL** 可以是真实 URL，也可以是虚构的，只要其格式正确即可。有关这些属性的描述，请参阅 [MediaSettings 对象](MediaSettings Object)。
--   **methods** 属性列出了播放器针对给定 MIME 类型必须支持的 MediaPlayer 方法。每个 **methods** 属性的值是一个数组，包含将传递给该方法调用的参数。在 Acrobat 7 中，唯一有任何参数的播放器方法是 **seek**，它接受一个 MediaOffset 参数。有关这些属性的描述，请参阅 [MediaPlayer 对象](MediaPlayer Object)。
--   **events** 属性列出了播放器必须支持的事件。如上所示，每个事件可以用 **on** 或 **after** 前缀命名，也可以不带前缀。所有三种形式含义相同；如果播放器支持某个特定的 “on” 事件，那么它总是支持相应的 “after” 事件（因为对于所有播放器，“after” 事件的生成方式相同）。有关这些属性的描述，请参阅 [EventListener 对象](EventListener Object)。
+- `mimeType`、`URL`和`settings`属性与`PlayerArgs`中的对应属性相同。`mimeType`属性是必需的；`playerInfo.honors`不会尝试从 URL 的文件扩展名确定 MIME 类型。`URL`可以是真实 URL，也可以是虚构的，只要其格式正确即可。有关这些属性的描述，请参阅[MediaSettings 对象](MediaSettings Object)。
+- `methods`属性列出了播放器针对给定 MIME 类型必须支持的 MediaPlayer 方法。每个`methods`属性的值是一个数组，包含将传递给该方法调用的参数。在 Acrobat 7 中，唯一有任何参数的播放器方法是`seek`，它接受一个 MediaOffset 参数。有关这些属性的描述，请参阅[MediaPlayer 对象](MediaPlayer Object)。
+- `events`属性列出了播放器必须支持的事件。如上所示，每个事件可以用`on`或`after`前缀命名，也可以不带前缀。所有三种形式含义相同；如果播放器支持某个特定的“on”事件，那么它总是支持相应的“after”事件（因为对于所有播放器，“after”事件的生成方式相同）。有关这些属性的描述，请参阅[EventListener 对象](EventListener Object)。
 
-符号 **anything** 的字面意思就是如此：在 HonorsArgs 中，这些值只是占位符。因此，来自 PlayerArgs 的 **events** 对象可以在 HonorsArgs 中使用：
+符号`anything`的字面意思就是如此：在`HonorsArgs`中，这些值只是占位符。因此，来自`PlayerArgs`的`events`对象可以在`HonorsArgs`中使用：
 
 ```javascript
 events:
 {
-    afterReady: doAfterReady( e ),
-    onClose: doOnClose( e ),
+    afterReady: doAfterReady(e),
+    onClose: doOnClose(e),
 },
 ```
 
-或者，如果您从头编写 HonorsArgs，可以根据需要简化符号：
+或者，如果您从头编写`HonorsArgs`，可以根据需要简化符号：
 
 ```javascript
 events: { Ready: true, Close: true },
@@ -18595,33 +19434,34 @@ events: { Ready: true, Close: true },
 
 ## playerHonors 函数
 
-此函数以 JavaScript 源代码形式提供，可作为文档脚本复制到 PDF 文件中。它执行与 Acrobat 7 中 `PlayerInfo.honors` 方法相同的测试，但也适用于 Acrobat 6。
+此函数以 JavaScript 源代码形式提供，可作为文档脚本复制到 PDF 文件中。它执行与 Acrobat 7 中`PlayerInfo.honors`方法相同的测试，但也适用于 Acrobat 6。
 
-在 Acrobat 6 上运行时，**playerHonors** 使用硬编码的测试，这些测试与 Acrobat 6 附带的媒体播放器的能力相匹配。在 Acrobat 7 及更高版本上运行时，**playerHonors** 调用 **PlayerInfo.honors**。
+在 Acrobat 6 上运行时，`playerHonors`使用硬编码的测试，这些测试与 Acrobat 6 附带的媒体播放器的能力相匹配。在 Acrobat 7 及更高版本上运行时，`playerHonors`调用`PlayerInfo.honors`。
 
 ### 参数
 
-| **doc** | 一个 Doc 对象。 |
+| `doc` | 一个 Doc 对象。 |
 |---|---|
-| **info** | 一个 PlayerInfo 对象。 |
-| **args** | 要测试的 HonorsArgs 对象。 |
+| `info` | 一个 PlayerInfo 对象。 |
+| `args` | 要测试的 HonorsArgs 对象。 |
 
 ### 返回值
 
-布尔值，如果播放器插件能够支持 **args** 对象中的所有内容，则返回 `true`。
+布尔值，如果播放器插件能够支持`args`对象中的所有内容，则返回`true`。
 
 ### 示例
 
-这与 **PlayerInfo.honors** 示例相同，但使用了 **playerHonors** () JavaScript 函数。这适用于 Acrobat 6 和 7，前提是将 **playerHonors** 源代码的副本放入目标 PDF 中。
+这与`PlayerInfo.honors`示例相同，但使用了`playerHonors()` JavaScript 函数。这适用于 Acrobat 6 和 7，前提是将`playerHonors`源代码的副本放入目标 PDF 中。
 
 ```javascript
-function playWithRequirements( args ) {
-    var plugins = app.media.getPlayers( 'video/avi' )
-    if( plugins ) {
+function playWithRequirements(args) {
+    var plugins = app.media.getPlayers('video/avi');
+
+    if (plugins) {
         for (var plugin in plugins) {
-            if( playerHonors( doc, plugin, args ) ) {
+            if (playerHonors(doc, plugin, args)) {
                 args.players = [plugin];
-                return app.media.openPlayer( args );
+                return app.media.openPlayer(args);
             }
         }
     }
@@ -18631,15 +19471,15 @@ function playWithRequirements( args ) {
 ## canUseData
 
 | 6.0 |  |  |  |  |
-| --- | --- | --- | --- | --- |
+|---|---|---|---|---|
 |  |  |  |  |  |
 
-判断播放器是否可以使用其参数 `oData` 传递的指定数据进行播放。如果数据可用于播放，则返回 `true`，否则返回 `false`。
+判断播放器是否可以使用其参数`oData`传递的指定数据进行播放。如果数据可用于播放，则返回`true`，否则返回`false`。
 
 ### 参数
 
-| oData | `oData` 是一个 MediaData 对象（有关此对象的描述，请参阅 `MediaData.settings`）。此数据对象可通过多种方式获得，例如 `app.media.getAltTextData()`、`app.media.getURLData()` 或通过 `Rendition.getPlaySettings()` 间接获得。 |
-| --- | --- |
+| `oData` | `oData`是一个 MediaData 对象（有关此对象的描述，请参阅`MediaData.settings`）。此数据对象可通过多种方式获得，例如`app.media.getAltTextData()`、`app.media.getURLData()`或通过`Rendition.getPlaySettings()`间接获得。 |
+|---|---|
 |  |  |
 
 ### 返回值
@@ -18648,202 +19488,220 @@ function playWithRequirements( args ) {
 
 ## PlayerInfoList 对象
 
-`app.media.getPlayers()` 方法返回一个 PlayerInfoList，它是 PlayerInfo 对象的数组。
+`app.media.getPlayers()`方法返回一个 PlayerInfoList，它是 PlayerInfo 对象的数组。
 
-PlayerInfoList 有一个方法 `select()`，可用于使用 PlayerInfo 中的任何属性过滤列表。
+PlayerInfoList 有一个方法`select()`，可用于使用 PlayerInfo 中的任何属性过滤列表。
 
-当使用 `app.media.createPlayer()` 创建媒体播放器时，`settings.players` 属性（参见 PlayerArgs 对象）可以包含一个 PlayerInfoList，以将播放器创建限制为仅从列表中指定的播放器中选择。
+当使用`app.media.createPlayer()`创建媒体播放器时，`settings.players`属性（参见 PlayerArgs 对象）可以包含一个 PlayerInfoList，以将播放器创建限制为仅从列表中指定的播放器中选择。
 
 ### PlayerInfoList 对象属性
 
-PlayerInfoList 的工作方式类似于数组，其元素（即 PlayerInfo 对象）可以使用标准数组符号访问。PlayerInfoList 数组中的元素数量可以从 `length` 属性获得。
-
-
+PlayerInfoList 的工作方式类似于数组，其元素（即 PlayerInfo 对象）可以使用标准数组符号访问。PlayerInfoList 数组中的元素数量可以从`length`属性获得。
 
 ## PlayerInfoList 对象方法
 
-## select
+### select
 
-**PlayerInfoList.select**() 返回 PlayerInfoList 的一个副本，仅包含符合选择标准的播放器。如果没有播放器匹配，则返回一个空数组。
+`PlayerInfoList.select()`返回 PlayerInfoList 的一个副本，仅包含符合选择标准的播放器。如果没有播放器匹配，则返回一个空数组。
 
 对象参数可包含以下任何属性。任何指定的属性都是必须匹配的；省略的属性将匹配任何播放器。
 
-- id：字符串或正则表达式
-- name：字符串或正则表达式
-- version：字符串或正则表达式
+- `id`：字符串或正则表达式
+- `name`：字符串或正则表达式
+- `version`：字符串或正则表达式
 
-id、name 和 version 属性可以是用于精确匹配的字符串，也可以是正则表达式。
+`id`、`name`和`version`属性可以是用于精确匹配的字符串，也可以是正则表达式。
 
-## 参数
+### 参数
 
-| **对象** | (可选) 包含 **id**、**name** 或 **version** 属性的对象。这些属性的值可以是字符串或正则表达式。 |
+| 对象 | （可选）包含`id`、`name`或`version`属性的对象。这些属性的值可以是字符串或正则表达式。 |
 |---|---|
 
-## 返回值
+### 返回值
 
 [PlayerInfoList 对象](#)
 
-## 示例 1
+### 示例 1
 
 使用 QuickTime 查看媒体剪辑。
 
 ```javascript
-var playerList = app.media.getPlayers().select({ id: /quicktime/i });
+var playerList = app.media.getPlayers().select({id: /quicktime/i});
+
 // QuickTime 支持回文，所以让我们试试。
-var settings = { players: playerList, palindrome: true };
-var player = app.media.openPlayer({ settings: settings });
+
+var settings = {players: playerList, palindrome: true};
+
+var player = app.media.openPlayer({settings: settings});
 ```
 
-## 示例 2
+### 示例 2
 
 通过对其播放器 ID 进行模式匹配来选择 Flash 播放器。
 
 ```javascript
 var player = app.media.createPlayer();
-player.settings.players = app.media.getPlayers().select({ id:/flash/i});
+
+player.settings.players = app.media.getPlayers().select({id: /flash/i});
 
 player.open();
 ```
 
 ## 插件对象
 
-此对象提供对其所代表的插件信息的访问。**plugIn** 对象通过 **app.plugIns** 获取。
+此对象提供对其所代表的插件信息的访问。`plugIn`对象通过`app.plugIns`获取。
 
 ## 插件属性
 
-## certified
+### certified
 
-如果为 **true**，则该插件已通过 Adobe 认证。认证插件经过广泛测试，以确保不会发生应用程序和文档安全漏洞。用户可以将查看器配置为仅加载认证插件。
+如果为`true`，则该插件已通过 Adobe 认证。认证插件经过广泛测试，以确保不会发生应用程序和文档安全漏洞。用户可以将查看器配置为仅加载认证插件。
 
-类型：布尔值
-访问权限：只读 (R)。
+类型：布尔值  
+访问权限：只读（R）。
 
-## 示例
+### 示例
 
 获取未认证插件的数量。
 
 ```javascript
-var j=0; aPlugins = app.plugIns;
-for (var i=0; i < aPlugins.length; i++)
-    if (!aPlugins[i].certified) j++;
-console.println("Report: There are "+j+" uncertified plugins loaded.");
+var j = 0;
+aPlugins = app.plugIns;
+
+for (var i = 0; i < aPlugins.length; i++) {
+    if (!aPlugins[i].certified) {
+        j++;
+    }
+}
+
+console.println("Report: There are " + j + " uncertified plugins loaded.");
 ```
 
-## loaded
+### loaded
 
-如果为 **true**，则插件已被加载。
+如果为`true`，则插件已被加载。
 
-类型：布尔值
-访问权限：只读 (R)。
+类型：布尔值  
+访问权限：只读（R）。
 
-## name
+### name
 
 插件的名称。
 
-类型：字符串
-访问权限：只读 (R)。
+类型：字符串  
+访问权限：只读（R）。
 
-## 示例
+### 示例
 
 ```javascript
 // 获取插件对象数组
 var aPlugins = app.plugIns;
+
 // 获取插件数量
 var nPlugins = aPlugins.length;
+
 // 枚举所有插件的名称
-for (var i = 0; i < nPlugins; i++)
+for (var i = 0; i < nPlugins; i++) {
     console.println("Plugin \"" + i + " is " + aPlugins[i].name);
+}
 ```
 
-## path
+### path
 
-插件的设备无关路径。有关路径的确切语法，请参阅 [PDF Reference](https://www.example.com) 中的 *File Specification Strings*, Section 3.10.1。
+插件的设备无关路径。有关路径的确切语法，请参阅[PDF Reference](https://www.example.com)中的*File Specification Strings*，Section 3.10.1。
 
-类型：*字符串*
-访问权限：*只读 (R)*。
+类型：字符串  
+访问权限：只读（R）。
 
-## version
+### version
 
 插件的版本号。版本号的整数部分表示主版本，小数部分表示次版本和更新版本。例如，5.11 表示插件是主版本 5，次版本 1，更新版本 1。
 
-类型：*数字*
-访问权限：*只读 (R)*。
+类型：数字  
+访问权限：只读（R）。
 
 ## printParams 对象
 
 此对象控制影响通过 JavaScript 打印的任何文档的打印参数。更改此对象不会更改用户首选项或对文档进行任何永久性更改。
 
-在 Acrobat 6.0 版本中，`doc.print` 接受一个 `printParams` 对象作为其参数。您可以从 `doc.getPrintParams` 获取 `printParams` 对象。然后可以修改返回的对象。
+在 Acrobat 6.0 版本中，`doc.print`接受一个`printParams`对象作为其参数。您可以从`doc.getPrintParams`获取`printParams`对象。然后可以修改返回的对象。
 
-许多 `printParams` 属性接受整数常量作为值，您可以使用 `constants` 访问这些常量。例如：
+许多`printParams`属性接受整数常量作为值，您可以使用`constants`访问这些常量。例如：
 
 ```javascript
 // 获取默认打印机的 printParams 对象
 var pp = this.getPrintParams();
+
 // 设置一些属性
 pp.interactive = pp.constants.interactionLevel.automatic;
-pp.colorOverride = pp.colorOverrides.mono;
+pp.colorOverride = pp.constants.colorOverrides.mono;
+
 // 打印
 this.print(pp);
 ```
 
-`constants` 对象属性都是整数，并且都是只读访问。
+`constants`对象属性都是整数，并且都是只读访问。
 
 ## PrintParams 属性
 
-## binaryOK
+### binaryOK
 
 | 6.0 |  |  |  |
 |---|---|---|---|
+|  |  |  |  |
 
-如果支持到打印机的二进制通道，则为 `true`。默认值为 `true`。
+如果支持到打印机的二进制通道，则为`true`。默认值为`true`。
 
-类型：布尔值
-访问权限：读写 (R/W)。
+类型：布尔值  
+访问权限：读写（R/W）。
 
-## bitmapDPI
-
-6.0
-
-生成位图或光栅化透明度时使用的每英寸点数 (DPI)。有效范围是 1 到 9600。如果文档保护指定了最大打印分辨率，则使用两者中较低的值。默认值为 300。非法值将被视为 300。另见 gradientDPI。
-
-类型：整数
-访问权限：读写 (R/W)。
-
-## colorOverride
+### bitmapDPI
 
 6.0
 
-是否使用颜色覆盖。值为 constants colorOverrides 对象的属性。非法值将被视为默认值 auto。
+生成位图或光栅化透明度时使用的每英寸点数（DPI）。有效范围是 1 到 9600。如果文档保护指定了最大打印分辨率，则使用两者中较低的值。默认值为 300。非法值将被视为 300。另见`gradientDPI`。
+
+类型：整数  
+访问权限：读写（R/W）。
+
+### colorOverride
+
+6.0
+
+是否使用颜色覆盖。值为`constants.colorOverrides`对象的属性。非法值将被视为默认值`auto`。
 
 **注意：** 此属性仅在 Windows 平台上受支持。
 
-## colorOverrides 对象
+### colorOverrides 对象
 
 | 属性 | 描述 |
 |---|---|
-| **auto** | 让 Acrobat 决定颜色覆盖。这是默认值。 |
-| **gray** | 强制颜色为灰度。 |
-| **mono** | 强制颜色为单色。 |
+| `auto` | 让 Acrobat 决定颜色覆盖。这是默认值。 |
+| `gray` | 强制颜色为灰度。 |
+| `mono` | 强制颜色为单色。 |
 
-类型：整数常量
-访问权限：读写 (R/W)。
+类型：整数常量  
+访问权限：读写（R/W）。
 
-## 示例
+### 示例
 
 ```javascript
 var pp = this.getPrintParams();
+
 pp.colorOverride = pp.constants.colorOverrides.mono;
+
 this.print(pp);
 ```
+
+
 
 ## colorProfile
 
 6.0
 
-要使用的颜色配置文件。可以从 printColorProfiles 获取可用颜色空间的列表。默认值为 "Printer/PostScript Color Management"
+要使用的颜色配置文件。可以从`printColorProfiles`获取可用颜色空间的列表。默认值为`"Printer/PostScript Color Management"`。
 
-类型：字符串
+类型：字符串  
 访问权限：读写 (R/W)。
 
 ## constants
@@ -18851,25 +19709,25 @@ this.print(pp);
 | 6.0 | | | |
 |---|---|---|---|
 
-每个 **printParams** 对象实例都继承此属性，它是一个包装对象，用于保存各种常量值。**constants** 对象属性值都是整数，并且都是只读访问。这些值列在它们适用的 **printParams** 属性旁边。
+每个`printParams`对象实例都继承此属性，它是一个包装对象，用于保存各种常量值。`constants`对象属性值都是整数，并且都是只读访问。这些值列在它们适用的`printParams`属性旁边。
 
-**constants** 对象用于指定 **printParams** 对象某些其他属性的选项值，如下表所示：
+`constants`对象用于指定`printParams`对象某些其他属性的选项值，如下表所示：
 
-| 常量对象 | 包含用于 printParams 属性的常量值 |
+| 常量对象 | 包含用于`printParams`属性的常量值 |
 |---|---|
-| **colorOverrides** | **colorOverride** |
-| **fontPolicies** | **fontPolicy** |
-| **handling** | **pageHandling** |
-| **interactionLevel** | **interactive** |
-| **nUpPageOrders** | **nUpPageOrder** |
-| **printContents** | **printContent** |
-| **flagValues** | **flags** |
-| **rasterFlagValues** | **rasterFlags** |
-| **subsets** | **pageSubset** |
-| **tileMarks** | **tileMark** |
-| **usages** | **usePrinterCRD**<br>**useT1Conversion** |
+| `colorOverrides` | `colorOverride` |
+| `fontPolicies` | `fontPolicy` |
+| `handling` | `pageHandling` |
+| `interactionLevel` | `interactive` |
+| `nUpPageOrders` | `nUpPageOrder` |
+| `printContents` | `printContent` |
+| `flagValues` | `flags` |
+| `rasterFlagValues` | `rasterFlags` |
+| `subsets` | `pageSubset` |
+| `tileMarks` | `tileMark` |
+| `usages` | `usePrinterCRD`<br>`useT1Conversion` |
 
-类型：对象
+类型：对象  
 访问权限：只读 (R)。
 
 ## downloadFarEastFonts
@@ -18877,9 +19735,9 @@ this.print(pp);
 | 6.0 | | | |
 |---|---|---|---|
 
-当为 **true** 时，如果需要，将远东字体发送到打印机。如果打印机具有远东字体但错误地报告需要它们，则设置为 **false**。默认值为 **true**。
+当为`true`时，如果需要，将远东字体发送到打印机。如果打印机具有远东字体但错误地报告需要它们，则设置为`false`。默认值为`true`。
 
-类型：布尔值
+类型：布尔值  
 访问权限：读写 (R/W)。
 
 ## fileName
@@ -18887,20 +19745,22 @@ this.print(pp);
 | 6.0 | | | |
 |---|---|---|---|
 
-如果不为空，则是用于文件名的设备无关路径名，该文件名将替代将打印作业发送到打印机（打印到文件）。路径名可以相对于当前文档的位置。打印到文件时，如果交互级别（参见 **interactive**）设置为 **full**，则会降低到 **automatic**。默认值为空字符串。
+如果不为空，则是用于文件名的设备无关路径名，该文件名将替代将打印作业发送到打印机（打印到文件）。路径名可以相对于当前文档的位置。打印到文件时，如果交互级别（参见`interactive`）设置为`full`，则会降低到`automatic`。默认值为空字符串。
 
-**注意：** 打印到文件会产生适合打印机的输出，例如 Postscript 或 GDI 命令。
+**注意：** 打印到文件会产生适合打印机的输出，例如 PostScript 或 GDI 命令。
 
-**注意：** 当 **printerName** 为空字符串且 **fileName** 非空时，当前文档将作为 PostScript 文件保存到磁盘。
+**注意：** 当`printerName`为空字符串且`fileName`非空时，当前文档将作为 PostScript 文件保存到磁盘。
 
-类型：字符串
+类型：字符串  
 访问权限：读写 (R/W)。
 
 ## 示例
 
 ```javascript
 var pp = this.getPrintParams();
+
 pp.fileName = "/c/print/myDoc.prn";
+
 this.print(pp);
 ```
 
@@ -18910,8 +19770,11 @@ this.print(pp);
 
 ```javascript
 var pp = this.getPrintParams();
+
 pp.fileName = "/c/temp/myDoc.ps";
+
 pp.printerName = "";
+
 this.print(pp);
 ```
 
@@ -18920,34 +19783,37 @@ this.print(pp);
 | 6.0 | | | |
 |---|---|---|---|
 
-要打印的文档的第一个从 0 开始的页码。任何文档的第一页都是 0，无论页码标签如何。超出文档页面范围的值被视为 0。默认值为 0。另见 **lastPage**。
+要打印的文档的第一个从 0 开始的页码。任何文档的第一页都是 0，无论页码标签如何。超出文档页面范围的值被视为 0。默认值为 0。另见`lastPage`。
 
-类型：整数
+类型：整数  
 访问权限：读写 (R/W)。
 
 ## 示例
 
 ```javascript
 var pp = this.getPrintParams();
+
 pp.firstPage = 0;
+
 pp.lastPage = 9;
+
 this.print(pp);
 ```
 
+# Acrobat JavaScript 脚本参考
 
-
-## Acrobat JavaScript 脚本参考
-### PrintParams 属性
+## PrintParams 属性
 
 ## flags
 
 | 6.0 | | | |
 | :--- | :--- | :--- | :--- |
 
-用于控制打印的标志位字段。这些标志可以通过 `flagValues` 常量对象使用位运算进行设置或清除。
+用于控制打印的标志位字段。这些标志可以通过`flagValues`常量对象使用位运算进行设置或清除。
+
 可以设置零个或多个标志；不支持的标志将被忽略。标志默认为用户偏好设置中设置的值。
 
-## flagValues 对象
+### flagValues 对象
 
 **Reader** 列中出现 X 的地方，表示该属性在任何版本的 Adobe Reader 中均不可用。
 
@@ -18960,10 +19826,10 @@ this.print(pp);
 | `emitPostScriptXObjects` | X | 仅限 PostScript，在输出中包含 PostScript XObjects 的内容 |
 | `emitFormsAsPSForms` | X | 将 Form XObjects 转换为 PS 表单。默认为关闭。 |
 | `maxJP2KRes` | X | 使用 JPEG2000 图像的最大分辨率，而非最佳匹配分辨率。 |
-| `setPageSize` | | 启用 setPageSize，根据 PDF 页面大小选择纸张托盘 |
+| `setPageSize` | | 启用`setPageSize`，根据 PDF 页面大小选择纸张托盘 |
 | `suppressBG` | X | 不输出文档中的黑色生成 |
 | `suppressCenter` | | 不将页面居中 |
-| `suppressCJKFontSubst` | X | 在打印机上禁止 CJK 字体替换——当使用 `kAVEmitFontAllFonts` 时不适用 |
+| `suppressCJKFontSubst` | X | 在打印机上禁止 CJK 字体替换——当使用`kAVEmitFontAllFonts`时不适用 |
 | `suppressCropClip` | | 不输出裁剪框页面裁剪 |
 | `suppressRotate` | | 不旋转页面 |
 | `suppressTransfer` | X | 不输出文档中的传输函数 |
@@ -18971,20 +19837,25 @@ this.print(pp);
 
 | 属性 | Reader | 描述 |
 | :--- | :--- | :--- |
-| **useTrapAnnots** | X | 打印 TrapNet 和 PrinterMark 注释，即使选择“仅打印文档”。 |
-| **usePrintersMarks** | P | 打印 PrinterMark 注释，即使选择“仅打印文档”。 |
+| `useTrapAnnots` | X | 打印 TrapNet 和 PrinterMark 注释，即使选择“仅打印文档”。 |
+| `usePrintersMarks` | P | 打印 PrinterMark 注释，即使选择“仅打印文档”。 |
 
-类型：整数 访问：读/写。
+类型：整数  
+访问：读/写。
 
 ### 示例 1
 
 在“高级打印设置”对话框的输出选项中勾选“应用校样设置”复选框。
 
-```
+```javascript
 pp = getPrintParams();
+
 fv = pp.constants.flagValues;
+
 // 或者 pp.flags |= fv.applySoftProofSettings;
+
 pp.flags = pp.flags | fv.applySoftProofSettings;
+
 this.print(pp);
 ```
 
@@ -18992,10 +19863,13 @@ this.print(pp);
 
 在“打印”对话框中取消勾选“自动旋转和居中”（默认为选中状态）。
 
-```
+```javascript
 pp = getPrintParams();
+
 fv = pp.constants.flagValues;
+
 pp.flags |= (fv.suppressCenter | fv.suppressRotate);
+
 this.print(pp);
 ```
 
@@ -19003,599 +19877,665 @@ this.print(pp);
 
 在“高级打印设置”对话框的 PostScript 选项中勾选“输出底色去除/黑色生成”复选框。
 
-```
+```javascript
 pp = getPrintParams();
+
 fv = pp.constants.flagValues;
-pp.flags &= ~(fv.suppressBG | fv.suppressUCR)
-this.print(pp)
+
+pp.flags &= ~(fv.suppressBG | fv.suppressUCR);
+
+this.print(pp);
 ```
 
 ## fontPolicy
 
-设置字体策略。**fontpolicy** 属性的值通过 **constants fontPolicies 对象** 设置。默认值为 **pageRange**。
+设置字体策略。`fontpolicy`属性的值通过`constants.fontPolicies`对象设置。默认值为`pageRange`。
 
-类型：整数 访问：读/写。
+类型：整数  
+访问：读/写。
 
-## fontPolicies 对象
+### fontPolicies 对象
 
 | 属性 | 描述 |
-| :--- | :--- |
-| **everyPage** | 在每一页之前输出所需字体，在每一页之后释放所有字体。这会产生最大、最慢的打印作业，但要求打印机的内存最少。 |
-| **jobStart** | 在打印作业开始时输出所使用的所有字体，在打印作业结束时释放它们。这会产生最小、最快的打印作业，但要求打印机的内存最多。 |
-| **pageRange** | (默认) 在使用字体的第一页之前输出字体，在使用字体的最后一页之后释放字体。这也会产生最小、最快的打印作业，并且可以使用更少的内存。但是，由于页面顺序的原因，生成的打印作业必须按生成的顺序打印。 |
-| | **注意：** **pageRange** 可能是速度和内存之间的良好折衷方案，但如果后续要对 PostScript 页面进行程序化重排序，请不要使用它。 |
+|---|---|
+| `everyPage` | 在每一页之前输出所需字体，在每一页之后释放所有字体。这会产生最大、最慢的打印作业，但要求打印机的内存最少。 |
+| `jobStart` | 在打印作业开始时输出所使用的所有字体，在打印作业结束时释放它们。这会产生最小、最快的打印作业，但要求打印机的内存最多。 |
+| `pageRange` | （默认）在使用字体的第一页之前输出字体，在使用字体的最后一页之后释放字体。这也会产生最小、最快的打印作业，并且可以使用更少的内存。但是，由于页面顺序的原因，生成的打印作业必须按生成的顺序打印。 |
+| | **注意：** `pageRange`可能是速度和内存之间的良好折衷方案，但如果后续要对 PostScript 页面进行程序化重排序，请不要使用它。 |
 
 ## gradientDPI
 
-光栅化渐变时使用的每英寸点数。此值通常可以设置得低于 **bitmapDPI**，因为它影响眼睛不太敏感的区域。必须设置为 1 到 9600 之间的值。非法值将被视为 150。如果文档保护指定了最大打印分辨率，则使用两个值中较小的一个。默认值为 150。
+光栅化渐变时使用的每英寸点数。此值通常可以设置得低于`bitmapDPI`，因为它影响眼睛不太敏感的区域。必须设置为 1 到 9600 之间的值。非法值将被视为 150。如果文档保护指定了最大打印分辨率，则使用两个值中较小的一个。默认值为 150。
 
-类型：整数 访问：读/写。
+类型：整数  
+访问：读/写。
 
 ## interactive
 
-| 6.0 |  |  |  |
+| 6.0 | | | |
 | :--- | :--- | :--- | :--- |
 
-设置用户与打印作业之间的交互级别。**interactive** 属性的值通过 `constants.InteractionLevel` 对象设置。默认值为 **full**。
+设置用户与打印作业之间的交互级别。`interactive`属性的值通过`constants.InteractionLevel`对象设置。默认值为`full`。
 
-(安全 ®, 版本 7.0) 非交互式打印只能在批处理和控制台事件期间执行。通过将 **bUI** 设置为 **false** 或将 **interactive** 属性设置为 silent 可以实现非交互式打印，例如，
+（安全 ®, 版本 7.0）非交互式打印只能在批处理和控制台事件期间执行。通过将`bUI`设置为`false`或将`interactive`属性设置为`silent`可以实现非交互式打印，例如：
 
-```
+```javascript
 var pp = this.getPrintParams();
+
 pp.interactive = pp.constants.interactionLevel.silent;
 ```
 
-在批处理和控制台事件之外，**bUI** 和 **interactive** 的值将被忽略，并且总会显示打印对话框。
+在批处理和控制台事件之外，`bUI`和`interactive`的值将被忽略，并且总会显示打印对话框。
 
 **注意：** 另请参阅特权与非特权上下文。
 
-类型：*整数* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 访问：*读/写*。
+类型：整数  
+访问：读/写。
 
 ### InteractionLevel 对象
 
 | 属性 | 描述 |
-| :--- | :--- |
+|---|---|
 | `automatic` | 不显示打印对话框。在打印过程中会显示一个进度监视器和取消对话框，并在打印完成后自动移除。 |
 | `full` | 显示打印对话框，允许用户更改打印设置并要求用户按“确定”继续。在打印过程中会显示一个进度监视器和取消对话框，并在打印完成后自动移除。 |
 | `silent` | 不显示打印对话框。不显示进度或取消对话框。甚至不显示错误消息。 |
 
 #### 示例
 
-```
+```javascript
 var pp = this.getPrintParams();
+
 pp.interactive = pp.constants.interactionLevel.automatic;
+
 pp.printerName = "Adobe PDF";
+
 this.print(pp);
 ```
 
 ## lastPage
 
-| 6.0 |  |  |  |
+| 6.0 | | | |
 | :--- | :--- | :--- | :--- |
 
-要打印的文档的最后一个页码（从 0 开始）。术语“从 0 开始”意味着任何文档的第一页都是 0，无论页码标签如何。如果该值小于 **firstPage** 或超出文档的合法范围，则会恢复为默认值。默认值为文档的页数减一。
+要打印的文档的最后一个页码（从 0 开始）。术语“从 0 开始”意味着任何文档的第一页都是 0，无论页码标签如何。如果该值小于`firstPage`或超出文档的合法范围，则会恢复为默认值。默认值为文档的页数减一。
 
-类型：整数 访问：读/写。
+类型：整数  
+访问：读/写。
 
-示例请参见 **firstPage**。
+示例请参见`firstPage`。
 
 ## nUpAutoRotate
 
 | 7.0 | | | |
 | :--- | :--- | :--- | :--- |
 
-**nUpAutoRotate** 属性是一个布尔值，如果设置为 **true**，则在多页打印期间自动旋转每个页面以匹配页面方向到可用的纸张区域。默认值为 **false**，但 **nUpAutoRotate** 遵循打印设置。通过将 **pageHandling** 设置为 nUp 可获得多页打印。
+`nUpAutoRotate`属性是一个布尔值，如果设置为`true`，则在多页打印期间自动旋转每个页面以匹配页面方向到可用的纸张区域。默认值为`false`，但`nUpAutoRotate`遵循打印设置。通过将`pageHandling`设置为`nUp`可获得多页打印。
 
-类型：布尔值 访问：读/写。
+类型：布尔值  
+访问：读/写。
 
 ## nUpNumPagesH
 
 | 7.0 | | | |
 | :--- | :--- | :--- | :--- |
 
-在进行多页打印时，**nUpNumPagesH** 设置要在水平方向上布局的页面数。默认值为 2，但 **nUpNumPagesH** 遵循打印设置。
+在进行多页打印时，`nUpNumPagesH`设置要在水平方向上布局的页面数。默认值为 2，但`nUpNumPagesH`遵循打印设置。
 
-通过将 **pageHandling** 设置为 nUp 可获得多页打印。
-
-类型：整数 访问：读/写。
+通过将`pageHandling`设置为`nUp`可获得多页打印。
 
 ### 示例
 
 在本文档上执行多页打印，设置所需参数并打印。
 
-```
+```javascript
 pp = this.getPrintParams();
+
 pp.pageHandling = pp.constants.handling.nUp;
+
 pp.nUpPageOrders = pp.constants.nUpPageOrders.Vertical;
+
 pp.nUpNumPagesH = 3;
+
 pp.nUpNumPagesV = 3;
-pp.nUpPageBorder=true;
-pp.nUpAutoRotate=true;
+
+pp.nUpPageBorder = true;
+
+pp.nUpAutoRotate = true;
+
 this.print(pp);
 ```
 
 ## nUpNumPagesV
 
-| 7.0 |  |  |  |
+| 7.0 | | | |
 | :--- | :--- | :--- | :--- |
 
-在进行多页打印时，`nUpNumPagesV` 是要在垂直方向上布局的页面数。默认值为 2，但 `nUpNumPagesV` 遵循打印设置。
+在进行多页打印时，`nUpNumPagesV`是要在垂直方向上布局的页面数。默认值为 2，但`nUpNumPagesV`遵循打印设置。
 
-通过将 `pageHandling` 设置为 `nUp` 可获得多页打印。
+通过将`pageHandling`设置为`nUp`可获得多页打印。
 
-类型：整数            访问：读/写。
+类型：整数  
+访问：读/写。
 
-示例请参见 `nUpNumPagesH`。
+示例请参见`nUpNumPagesH`。
 
 ## nUpPageBorder
 
-| 7.0 |  |  |  |
+| 7.0 | | | |
 | :--- | :--- | :--- | :--- |
 
-`nUpPageBorder` 属性是一个布尔值，如果设置为 `true`，则在多页打印期间围绕每个页面绘制并打印页面边界。默认值为 `false`，但 `nUpPageBorder` 遵循打印设置。
+`nUpPageBorder`属性是一个布尔值，如果设置为`true`，则在多页打印期间围绕每个页面绘制并打印页面边界。默认值为`false`，但`nUpPageBorder`遵循打印设置。
 
-通过将 `pageHandling` 设置为 `nUp` 可获得多页打印。
+通过将`pageHandling`设置为`nUp`可获得多页打印。
 
-类型：布尔值            访问：读/写。
+类型：布尔值  
+访问：读/写。
 
-示例请参见 `nUpNumPagesH`。
+示例请参见`nUpNumPagesH`。
 
 ## nUpPageOrder
 
-| 7.0 |  |  |  |
+| 7.0 | | | |
 | :--- | :--- | :--- | :--- |
 
-在进行多页打印时，`nUpPageOrder` 属性决定多个页面在纸张上的布局方式。`nUpPageOrder` 属性的值通过 `constants.nUpPageOrders 对象` 设置。默认值为 `Horizontal`，但 `nUpPageOrder` 遵循打印设置。
+在进行多页打印时，`nUpPageOrder`属性决定多个页面在纸张上的布局方式。`nUpPageOrder`属性的值通过`constants.nUpPageOrders`对象设置。默认值为`Horizontal`，但`nUpPageOrder`遵循打印设置。
 
-通过将 `pageHandling` 设置为 `nUp` 可获得多页打印。
+通过将`pageHandling`设置为`nUp`可获得多页打印。
 
-类型：整数            访问：读/写。
+类型：整数  
+访问：读/写。
 
-
-
-# nUpPageOrders 对象
+## nUpPageOrders 对象
 
 | 属性 | 描述 |
-| :--- | :--- |
-| **Horizontal** | 页面从左到右、从上到下排列。 |
-| **HorizontalReversed** | 页面从右到左、从上到下排列。 |
-| **Vertical** | 页面从上到下、从左到右排列。 |
-| **VerticalReversed** | 页面从上到下、从右到左排列。 |
+|---|---|
+| `Horizontal` | 页面从左到右、从上到下排列。 |
+| `HorizontalReversed` | 页面从右到左、从上到下排列。 |
+| `Vertical` | 页面从上到下、从左到右排列。 |
+| `VerticalReversed` | 页面从上到下、从右到左排列。 |
 
-# 示例
+## 示例
 
 在此文档上执行多页打印，设置所需参数并打印。
 
-```
+```javascript
 pp = this.getPrintParams();
+
 pp.pageHandling = pp.constants.handling.nUp;
+
 pp.nUpPageOrders = pp.constants.nUpPageOrders.Horizontal;
+
 pp.nUpNumPagesH = 2;
+
 pp.nUpNumPagesV = 2;
-pp.nUpPageBorder=true;
+
+pp.nUpPageBorder = true;
+
 this.print(pp);
 ```
 
-# pageHandling
 
-接受四个值之一。**pageHandling** 属性的值通过 **constants handling** 对象设置。如果设置为非法值，则将其视为 **shrink**。默认值为 **shrink**。
 
-类型：整数 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 访问：读/写。
 
-# handling 对象
+# `pageHandling`
+
+接受四个值之一。`pageHandling` 属性的值通过 `constants handling` 对象设置。如果设置为非法值，则将其视为 `shrink`。默认值为 `shrink`。
+
+类型：整数　　访问：读/写。
+
+## `handling` 对象
 
 | 属性 | 读取器 | 描述 |
 | --- | --- | --- |
-| none |  | 不应用任何页面缩放。 |
-| fit |  | 页面放大或缩小以适合打印机纸张。 |
-| shrink |  | 小页面按原样打印，大页面缩小以适合打印机纸张。 |
-| tileAll | (X) | 所有页面均使用拼贴设置打印。此功能的一种用途是通过将拼贴缩放设置大于 1，将普通大小的页面转换为海报。 |
-| tileLarge | (X) | 小型或普通页面按原始尺寸打印，大型页面打印在多张纸上。 |
-| nUp |  | (版本 7.0) 重新缩放页面，以便在每个打印页面上打印多个页面。与多页打印相关的属性包括 [nUpAutoRotate](nUpAutoRotate)、[nUpNumPagesH](nUpNumPagesH)、[nUpNumPagesV](nUpNumPagesV)、[nUpPageBorder](nUpPageBorder) 和 [nUpPageOrder](nUpPageOrder)。 |
+| `none` |  | 不应用任何页面缩放。 |
+| `fit` |  | 页面放大或缩小以适合打印机纸张。 |
+| `shrink` |  | 小页面按原样打印，大页面缩小以适合打印机纸张。 |
+| `tileAll` | `(X)` | 所有页面均使用拼贴设置打印。此功能的一种用途是通过将拼贴缩放设置大于 1，将普通大小的页面转换为海报。 |
+| `tileLarge` | `(X)` | 小型或普通页面按原始尺寸打印，大型页面打印在多张纸上。 |
+| `nUp` |  | （版本 7.0）重新缩放页面，以便在每个打印页面上打印多个页面。与多页打印相关的属性包括 `nUpAutoRotate`、`nUpNumPagesH`、`nUpNumPagesV`、`nUpPageBorder` 和 `nUpPageOrder`。 |
 
-# 示例 1
+## 示例 1
 
-```
+```javascript
 var pp = this.getPrintParams();
+
 pp.pageHandling = pp.constants.handling.shrink;
+
 this.print(pp);
 ```
 
-# 示例 2
+## 示例 2
 
 在此文档上执行多页打印，设置所需参数并打印。
 
-```
+```javascript
 pp = this.getPrintParams();
+
 pp.pageHandling = pp.constants.handling.nUp;
+
 pp.nUpPageOrders = pp.constants.nUpPageOrders.Horizontal;
+
 pp.nUpNumPagesH = 2;
+
 pp.nUpNumPagesV = 2;
-pp.nUpPageBorder=true;
+
+pp.nUpPageBorder = true;
+
 this.print(pp);
 ```
 
-# pageSubset
+# `pageSubset`
 
-选择打印偶数页、奇数页或所有页面。**pageSubset** 的值通过 [constants subsets 对象](constants subsets Object) 设置。默认值为 **all**。
+选择打印偶数页、奇数页或所有页面。`pageSubset` 的值通过 [constants subsets 对象](constants subsets Object) 设置。默认值为 `all`。
 
-类型：整数 访问：读/写。
+类型：整数　访问：读/写。
 
-# Acrobat JavaScript 脚本参考
-PrintParams 属性
+## Acrobat JavaScript 脚本参考
 
-# subsets 对象
+### PrintParams 属性
+
+## `subsets` 对象
 
 | 属性 | 描述 |
 | :--- | :--- |
-| all | 打印页面范围内的所有页面。 |
-| even | 仅打印偶数页。此操作会忽略页面标签。文档被视为按页数从 1 到 n 编号。 |
-| odd | 仅打印奇数页。 |
+| `all` | 打印页面范围内的所有页面。 |
+| `even` | 仅打印偶数页。此操作会忽略页面标签。文档被视为按页数从 1 到 n 编号。 |
+| `odd` | 仅打印奇数页。 |
 
-# 示例
+## 示例
 
-```
+```javascript
 var pp = this.getPrintParams();
+
 pp.pageSubset = pp.constants.subsets.even;
+
 this.print(pp);
 ```
 
-# printAsImage
+# `printAsImage`
 
 | 6.0 | | | |
 | :--- | :--- | :--- | :--- |
 
-设置为 true 以将页面作为大型位图发送。这可能较慢且看起来更粗糙，但可以解决打印机 PostScript 解释器的问题。设置 bitmapDPI 以增加或减少位图的分辨率。如果交互（参见 interactive）为 full，将使用用户打印机首选项中的 printAsImage 设置。默认值为 false。
+设置为 `true` 以将页面作为大型位图发送。这可能较慢且看起来更粗糙，但可以解决打印机 PostScript 解释器的问题。设置 `bitmapDPI` 以增加或减少位图的分辨率。如果交互（参见 `interactive`）为 `full`，将使用用户打印机首选项中的 `printAsImage` 设置。默认值为 `false`。
 
-类型：布尔值
+类型：布尔值  
 访问：读/写。
 
-# printContent
+# `printContent`
 
 | 6.0 | | | |
 | :--- | :--- | :--- | :--- |
 
-设置打印作业的内容。printContent 属性的值通过 constants printContents 对象设置。默认值为 doc。
+设置打印作业的内容。`printContent` 属性的值通过 `constants printContents` 对象设置。默认值为 `doc`。
 
-类型：整数
+类型：整数  
 访问：读/写。
 
-# printContents 对象
+## `printContents` 对象
 
 | 属性 | 描述 |
 | :--- | :--- |
-| doc | 输出文档内容。不打印文档注释。 |
-| docAndComments | 输出文档内容和注释。 |
-| **formFieldsOnly** | 仅输出表单域内容。适用于打印到预印表单上。 |
+| `doc` | 输出文档内容。不打印文档注释。 |
+| `docAndComments` | 输出文档内容和注释。 |
+| `formFieldsOnly` | 仅输出表单域内容。适用于打印到预印表单上。 |
 
-**示例**
+## 示例
 
-```
+```javascript
 var pp = this.getPrintParams();
+
 pp.interactive = pp.constants.interactionLevel.silent;
+
 pp.printContent = pp.constants.printContents.formFieldsOnly;
+
 this.print(pp);
 ```
 
-# **printerName**
+# `printerName`
 
-设置或获取目标打印机的名称。**printerName** 属性是仅限 Windows 的功能；目前，无法在 Mac 上通过此属性设置目标打印机。默认情况下，**printerName** 设置为默认打印机的名称。如果将 **printerName** 设置为空字符串，将使用默认打印机。当 **printerName** 为空字符串且 **fileName** 为非空字符串时，当前文档将作为 PostScript 文件保存到磁盘。请参阅下方的 **示例 2**。
-另请参阅 **app.printerNames**。
+设置或获取目标打印机的名称。`printerName` 属性是仅限 Windows 的功能；目前，无法在 Mac 上通过此属性设置目标打印机。默认情况下，`printerName` 设置为默认打印机的名称。如果将 `printerName` 设置为空字符串，将使用默认打印机。当 `printerName` 为空字符串且 `fileName` 为非空字符串时，当前文档将作为 PostScript 文件保存到磁盘。请参阅下方的示例 2。  
+另请参阅 `app.printerNames`。
 
-*类型：字符串*		*访问：读/写。*
+类型：字符串　　访问：读/写。
 
-**示例 1**
+## 示例 1
 
-```
+```javascript
 var pp = this.getPrintParams();
+
 pp.printerName = "hp officejet d series";
+
 this.print(pp);
 ```
 
-**示例 2**
+## 示例 2
+
 将当前文档保存为 PostScript 文件。
 
-```
+```javascript
 var pp = this.getPrintParams();
+
 pp.fileName = "/c/temp/myDoc.ps";
+
 pp.printerName = "";
+
 this.print(pp);
 ```
 
-# **psLevel**
+# `psLevel`
 
-输出到 PostScript 打印机的 PostScript 级别。级别 0 表示使用打印机的 PostScript 级别。不支持级别 1。除 0 外，**psLevel** 当前的有效值为 2 和 3。如果打印机仅支持 PostScript 级别 1，则将 **printAsImage** 设置为 **true**。非法值视为 3。**psLevel** 的默认值为 3。
+输出到 PostScript 打印机的 PostScript 级别。级别 0 表示使用打印机的 PostScript 级别。不支持级别 1。除 0 外，`psLevel` 当前的有效值为 2 和 3。如果打印机仅支持 PostScript 级别 1，则将 `printAsImage` 设置为 `true`。非法值视为 3。`psLevel` 的默认值为 3。
 
-类型：整数
+类型：整数  
 访问：读/写。
 
-# rasterFlags
+# `rasterFlags`
 
 ![](img/bd576cc243b5a79128e24042df2f472f_509_0.png)
 
-一个标志位域。这些标志可通过 constants rasterFlagValues 对象使用位运算进行设置或清除。默认值由用户首选项设置。
+一个标志位域。这些标志可通过 `constants rasterFlagValues` 对象使用位运算进行设置或清除。默认值由用户首选项设置。
 
-类型：整数
+类型：整数  
 访问：读/写。
 
-# rasterFlagValues 对象
+## `rasterFlagValues` 对象
 
 | 属性 | 读取器 | 描述 |
 | :--- | :--- | :--- |
-| textToOutline | X | 转换为轮廓的文本可能会变粗（在小字体上尤其明显）。如果文本与透明度图形混合，在展平过程中可能会转换为轮廓，导致与未混合到图形中的文本不一致。在这种情况下，启用此选项将确保所有文本看起来一致。 |
-| strokesToOutline | X | 转换为轮廓的描边可能会变粗（在细描边上尤其明显）。如果描边与透明度图形混合，在展平过程中可能会转换为轮廓，导致与未混合到图形中的描边不一致。在这种情况下，启用此选项将确保所有描边看起来一致。 |
-| allowComplexClip | X | 选择此项以确保矢量图形和光栅化图形之间的边界紧密沿对象路径分布。选择此选项可减少当对象一部分被展平而另一部分仍为矢量形式时产生的接缝伪影。但是，选择此选项可能会导致路径过于复杂而打印机无法处理。 |
-| preserveOverprint | X | 如果打印分色且文档包含叠印对象，请选择此项。选择此选项通常会保留未参与透明度的对象的叠印，从而提高性能。此选项在打印合成时不生效。关闭此项可能会导致更一致的输出，因为无论是否参与透明度，所有叠印都将被展平。 |
+| `textToOutline` | X | 转换为轮廓的文本可能会变粗（在小字体上尤其明显）。如果文本与透明度图形混合，在展平过程中可能会转换为轮廓，导致与未混合到图形中的文本不一致。在这种情况下，启用此选项将确保所有文本看起来一致。 |
+| `strokesToOutline` | X | 转换为轮廓的描边可能会变粗（在细描边上尤其明显）。如果描边与透明度图形混合，在展平过程中可能会转换为轮廓，导致与未混合到图形中的描边不一致。在这种情况下，启用此选项将确保所有描边看起来一致。 |
+| `allowComplexClip` | X | 选择此项以确保矢量图形和光栅化图形之间的边界紧密沿对象路径分布。选择此选项可减少当对象一部分被展平而另一部分仍为矢量形式时产生的接缝伪影。但是，选择此选项可能会导致路径过于复杂而打印机无法处理。 |
+| `preserveOverprint` | X | 如果打印分色且文档包含叠印对象，请选择此项。选择此选项通常会保留未参与透明度的对象的叠印，从而提高性能。此选项在打印合成时不生效。关闭此项可能会导致更一致的输出，因为无论是否参与透明度，所有叠印都将被展平。 |
 
-# 示例 1
+## 示例 1
 
 在高级打印设置的透明度展平选项中，勾选“将所有文本转换为轮廓”复选框。
 
-```
+```javascript
 pp = getPrintParams();
+
 rf = pp.constants.rasterFlagValues;
+
 pp.rasterFlags |= rf.textToOutline;
+
 this.print(pp);
 ```
 
-# 示例 2
+## 示例 2
 
 在高级打印设置的透明度展平选项中，取消勾选“复杂裁剪区域”（默认为勾选）。
 
-```
+```javascript
 pp = getPrintParams();
+
 rf = pp.constants.rasterFlagValues;
+
 pp.rasterFlags = pp.rasterFlags & ~rf.allowComplexClip;
+
 // 或 pp.rasterFlags &= ~rf.allowComplexClip;
+
 this.print(pp);
 ```
 
-# reversePages
+# `reversePages`
 
 | 6.0 | | | |
 
-设置为 **true** 以按逆序（从后往前）打印页面。默认值为 **false**。
+设置为 `true` 以按逆序（从后往前）打印页面。默认值为 `false`。
 
-类型：布尔值 访问：读/写。
+类型：布尔值　访问：读/写。
 
-# tileLabel
-
-| 6.0 | | | (X) |
-
-为拼贴输出的每一页添加标签。带标签的页面指示行和列、文件名和打印日期。默认值为 **false**。
-
-类型：布尔值 访问：读/写。
-
-# tileMark
+# `tileLabel`
 
 | 6.0 | | | (X) |
 
-拼贴标记指示页面的切割位置和重叠区域。该值通过 constants.tileMarks 对象设置。如果设置为非法值，则将其视为 **none**。默认值为 **none**。
+为拼贴输出的每一页添加标签。带标签的页面指示行和列、文件名和打印日期。默认值为 `false`。
 
-类型：整数 访问：读/写。
+类型：布尔值　访问：读/写。
 
+# `tileMark`
 
+| 6.0 | | | (X) |
 
-## tileMarks 对象
+拼贴标记指示页面的切割位置和重叠区域。该值通过 `constants.tileMarks` 对象设置。如果设置为非法值，则将其视为 `none`。默认值为 `none`。
+
+类型：整数　访问：读/写。
+
+## `tileMarks` 对象
 
 | 属性 | 描述 |
 | :--- | :--- |
-| **none** | 无拼贴标记 |
-| **west** | 西式拼贴标记 |
-| **east** | 东式拼贴标记。 |
+| `none` | 无拼贴标记 |
+| `west` | 西式拼贴标记 |
+| `east` | 东式拼贴标记。 |
 
-## tileOverlap
+## `tileOverlap`
 
 拼贴页面的公共点数。值必须介于 0 到 144 之间。非法值将被视为 0。默认值为 0。
 
-类型：整数  访问权限：读写。
+类型：整数　访问权限：读写。
 
-## tileScale
+## `tileScale`
 
-拼贴页面的缩放量。未拼贴的页面不受此值影响。默认为未缩放（1.0）。较大的值会增加打印输出的大小（例如，2.0 是两倍大，0.5 是一半大）。**tileScale** 的值必须介于 0.01 到 99.99 之间。非法值将被视为默认值 1.0。
+拼贴页面的缩放量。未拼贴的页面不受此值影响。默认为未缩放（1.0）。较大的值会增加打印输出的大小（例如，2.0 是两倍大，0.5 是一半大）。`tileScale` 的值必须介于 0.01 到 99.99 之间。非法值将被视为默认值 1.0。
 
-类型：数字  访问权限：读写。
+类型：数字　访问权限：读写。
 
-## transparencyLevel
+## `transparencyLevel`
 
-一个从 1 到 100 的整数值，表示 Acrobat 为保留高级绘图运算符所付出的努力程度。值为 1 表示图像完全光栅化，这会导致图像质量较差但速度很快。值为 100 表示应尽可能多地保留，但可能导致打印速度缓慢。如果设置为非法值，则使用 75。进行光栅化时，会使用 **bitmapDPI** 和 **gradientDPI** 的值。默认值为 75。
+一个从 1 到 100 的整数值，表示 Acrobat 为保留高级绘图运算符所付出的努力程度。值为 1 表示图像完全光栅化，这会导致图像质量较差但速度很快。值为 100 表示应尽可能多地保留，但可能导致打印速度缓慢。如果设置为非法值，则使用 75。进行光栅化时，会使用 `bitmapDPI` 和 `gradientDPI` 的值。默认值为 75。
 
-类型：整数  访问权限：读写。
+类型：整数　访问权限：读写。
 
-## usePrinterCRD
+## `usePrinterCRD`
 
-取三个值之一。该值通过 **constants** usages 对象设置。另请参阅 [usePrinterCRD](https://example.com)；这两个属性使用相同的值，但解释方式不同。
+取三个值之一。该值通过 `constants usages` 对象设置。另请参阅 [usePrinterCRD](https://example.com)；这两个属性使用相同的值，但解释方式不同。
 
-类型：整数  访问权限：读写。
+类型：整数　访问权限：读写。
 
-### usages 对象
+### `usages` 对象
 
-| 属性 | usePrinterCRD 的描述 |
+| 属性 | `usePrinterCRD` 的描述 |
 | :--- | :--- |
-| **auto** | 让 Acrobat 决定是否应使用打印机的颜色渲染字典。Acrobat 维护着一份包含少量具有不正确 CRD 的打印机的列表。非法值将被视为 **auto**。默认值为 **auto**。 |
-| **use** | 使用打印机的颜色渲染字典。 |
-| **noUse** | 不使用打印机的颜色渲染字典。 |
+| `auto` | 让 Acrobat 决定是否应使用打印机的颜色渲染字典。Acrobat 维护着一份包含少量具有不正确 CRD 的打印机的列表。非法值将被视为 `auto`。默认值为 `auto`。 |
+| `use` | 使用打印机的颜色渲染字典。 |
+| `noUse` | 不使用打印机的颜色渲染字典。 |
 
-## useT1Conversion
+## `useT1Conversion`
 
-取三个值之一。**useT1Conversion** 属性的值通过 **constants** usages 对象设置。另请参阅 [usePrinterCRD](https://example.com)；这两个属性使用相同的值，但解释方式不同。
+取三个值之一。`useT1Conversion` 属性的值通过 `constants usages` 对象设置。另请参阅 [usePrinterCRD](https://example.com)；这两个属性使用相同的值，但解释方式不同。
 
 **注意：** 此属性仅在 Windows 平台上受支持。
 
-类型：整数  访问权限：读写。
+类型：整数　访问权限：读写。
 
-此属性使用 **usages 对象**的值，如下所示。
+此属性使用 `usages 对象`的值，如下所示。
 
-| 属性 | useT1Conversion 的描述 |
+| 属性 | `useT1Conversion` 的描述 |
 | :--- | :--- |
-| **auto** | 让 Acrobat 决定是否禁用将 Type 1 字体转换为更高效的打印机表示形式（例如，TrueType）。Acrobat 维护着一份包含少量在处理这些字体时存在问题的打印机的列表。非法值将被视为 **auto**。默认值为 **auto**。 |
-| **use** | 即使已知打印机在处理替代字体表示形式时存在问题，也允许转换 Type 1 字体。 |
-| **noUse** | 从不将 Type 1 字体转换为更高效的表示形式。 |
+| `auto` | 让 Acrobat 决定是否禁用将 Type 1 字体转换为更高效的打印机表示形式（例如，TrueType）。Acrobat 维护着一份包含少量在处理这些字体时存在问题的打印机的列表。非法值将被视为 `auto`。默认值为 `auto`。 |
+| `use` | 即使已知打印机在处理替代字体表示形式时存在问题，也允许转换 Type 1 字体。 |
+| `noUse` | 从不将 Type 1 字体转换为更高效的表示形式。 |
 
-## Rendition 对象
+# `Rendition` 对象
 
-Rendition 包含播放媒体剪辑所需的信息，包括嵌入的媒体数据（或 URL）和播放设置。它对应于 Acrobat 创作用户界面中的 Rendition。
-Rendition 是 MediaRendition 或 MediaSelector 的基类型。接受 Rendition 的函数可以接受这两种类型中的任何一种。本节描述的属性和方法对于 MediaRendition 和 MediaSelector 都可用。使用 **Rendition.type** 来区分 MediaRendition 和 MediaSelector。
+`Rendition` 包含播放媒体剪辑所需的信息，包括嵌入的媒体数据（或 URL）和播放设置。它对应于 Acrobat 创作用户界面中的 Rendition。
 
-## Rendition 对象属性
+`Rendition` 是 `MediaRendition` 或 `MediaSelector` 的基类型。接受 `Rendition` 的函数可以接受这两种类型中的任何一种。本节描述的属性和方法对于 `MediaRendition` 和 `MediaSelector` 都可用。使用 `Rendition.type` 来区分 `MediaRendition` 和 `MediaSelector`。
 
-### altText
+## `Rendition` 对象属性
 
-**rendition.altText** 属性是 Rendition 的替代文本字符串（如果未指定替代文本，则为空字符串）。此属性仅在 **rendition** 的 **type** 为 **app.media.renditionType.media**（即 MediaRendition）时可用。
-*类型：字符串*			访问权限：只读。
+### `altText`
 
-### 示例
+`rendition.altText` 属性是 Rendition 的替代文本字符串（如果未指定替代文本，则为空字符串）。此属性仅在 `rendition` 的 `type` 为 `app.media.renditionType.media`（即 `MediaRendition`）时可用。
 
-获取 Rendition 的 **altText**。
-参见 **app.media.getAltTextSettings ()** 后的示例。
+类型：字符串　　访问权限：只读。
+
+#### 示例
+
+获取 Rendition 的 `altText`。  
+参见 `app.media.getAltTextSettings()` 后的示例。
 
 ```javascript
 this.media.getRendition("myClip").altText;
 ```
 
-### doc
+### `doc`
 
-**Rendition.doc** 属性是对包含该 Rendition 的文档的引用。
-*类型：Doc*			访问权限：只读。
+`Rendition.doc` 属性是对包含该 Rendition 的文档的引用。
 
-### fileName
+类型：`Doc`　　访问权限：只读。
 
-如果媒体是嵌入的，则 rendition.fileName 属性返回空字符串；如果媒体不是嵌入的，则返回媒体的文件名或 URL。此属性仅在 rendition 的类型为 app.media.renditionType.media 时可用。
+### `fileName`
 
-类型：字符串
+如果媒体是嵌入的，则 `rendition.fileName` 属性返回空字符串；如果媒体不是嵌入的，则返回媒体的文件名或 URL。此属性仅在 `rendition` 的类型为 `app.media.renditionType.media` 时可用。
+
+类型：字符串  
 访问权限：只读。
 
-### type
+### `type`
 
-Rendition.type 是一个 app.media.renditionType 值，指示 Rendition 的类型。
+`Rendition.type` 是一个 `app.media.renditionType` 值，指示 Rendition 的类型。
 
-目前有两种类型：MediaRendition 和 RenditionList：
+目前有两种类型：`MediaRendition` 和 `RenditionList`：
 
-- 当 Rendition.type 等于 app.media.renditionType.media 时，Rendition 是 MediaRendition。MediaRendition 是一个单独的 Rendition，如其在 UI 的多媒体属性对话框的设置选项卡中所示。
-- 当 Rendition.type 等于 app.media.renditionType.selector 时，Rendition 是 RenditionList。RenditionList 是 MediaRendition 的数组。此列表即出现在 UI 的多媒体属性对话框的设置选项卡中的那个列表。
+- 当 `Rendition.type` 等于 `app.media.renditionType.media` 时，`Rendition` 是 `MediaRendition`。`MediaRendition` 是一个单独的 Rendition，如其在 UI 的多媒体属性对话框的设置选项卡中所示。
+- 当 `Rendition.type` 等于 `app.media.renditionType.selector` 时，`Rendition` 是 `RenditionList`。`RenditionList` 是 `MediaRendition` 的数组。此列表即出现在 UI 的多媒体属性对话框的设置选项卡中的那个列表。
 
-Acrobat 的未来版本可能会添加更多的 renditionType 值，因此 JavaScript 代码不应假设只会遇到现有的 app.media.renditionType 值。
+Acrobat 的未来版本可能会添加更多的 `renditionType` 值，因此 JavaScript 代码不应假设只会遇到现有的 `app.media.renditionType` 值。
 
-类型：数字
+类型：数字  
 访问权限：只读。
 
-### uiName
+### `uiName`
 
-Rendition.uiName 包含在 PDF 文件中其字典的 N 条目中找到的 Rendition 的名称。
+`Rendition.uiName` 包含在 PDF 文件中其字典的 N 条目中找到的 Rendition 的名称。
 
-类型：字符串
+类型：字符串  
 访问权限：只读。
 
-### 示例
+#### 示例
 
 以下代码作为 Rendition 动作执行。
 
-有关 event.action.rendition 的描述，请参阅 Event 对象。
+有关 `event.action.rendition` 的描述，请参阅 Event 对象。
 
 ```javascript
 console.println("Preparing to play \"" 
     + event.action.rendition.uiName + "\"");
 ```
 
+
+
+
+
 ## Rendition 对象方法
 
 ### getPlaySettings
 
-创建并返回一个 MediaSettings 对象，该对象可用于创建 MediaPlayer 对象。
-此方法仅对 MediaRendition 可用。
+创建并返回一个 `MediaSettings` 对象，该对象可用于创建 `MediaPlayer` 对象。
 
-### 参数
+此方法仅对 `MediaRendition` 可用。
 
-| **bGetData** | （可选）一个布尔值，如果为 **true**，MediaSettings 对象将返回 MediaData（参见 MediaSettings**.data**）。 |
+#### 参数
+
+| `bGetData` | （可选）一个布尔值，如果为 `true`，`MediaSettings` 对象将返回 `MediaData`（参见 `MediaSettings.data`）。 |
 | :--- | :--- |
 
-### 返回值
+#### 返回值
 
-一个 MediaSettings 对象
+一个 `MediaSettings` 对象。
 
-> **注意：** app.media.**getAltTextSettings**() 调用 **getPlaySettings** (false) 以获取显示替代文本的正确设置，参见 **media.js**。
+> **注意：** `app.media.getAltTextSettings()` 调用 `getPlaySettings(false)` 以获取显示替代文本的正确设置，参见 `media.js`。
 
-此 MediaSettings 对象包含以下属性：
+此 `MediaSettings` 对象包含以下属性：
 
-- autoPlay
-- baseURL（如果在 rendition 中指定）
-- bgColor
-- bgOpacity
-- data（如果 bGetData 为 true）
-- duration
-- endAt
-- layout
-- monitorType
-- palindrome
-- showUI
-- rate
-- repeat
-- startAt
-- visible
-- volume
-- windowType
+- `autoPlay`
+- `baseURL`（如果在 `rendition` 中指定）
+- `bgColor`
+- `bgOpacity`
+- `data`（如果 `bGetData` 为 `true`）
+- `duration`
+- `endAt`
+- `layout`
+- `monitorType`
+- `palindrome`
+- `showUI`
+- `rate`
+- `repeat`
+- `startAt`
+- `visible`
+- `volume`
+- `windowType`
 
-在当前版本的 Acrobat 中，所有这些属性都存在于设置对象中（除上述说明外），当未指定 **startAt** 等值时使用 **null**。将来可能会更改，只返回实际指定的值，其余使用默认值。
+在当前版本的 Acrobat 中，所有这些属性都存在于设置对象中（除上述说明外），当未指定 `startAt` 等值时使用 `null`。将来可能会更改，只返回实际指定的值，其余使用默认值。
 
-### 示例：
+#### 示例
 
 ```javascript
 // 获取此 Rendition 的 MediaSettings
+
 var settings = myRendition.getPlaySettings();
-if( settings.startAt !== null ) // 不要使用这种严格比较！
+
+if (settings.startAt !== null) // 不要使用这种严格比较！
+
 ...
-if( settings.startAt ) // 这样是可行的
+
+if (settings.startAt) // 这样是可行的
+
 ...
 ```
 
-用法示例请参见 app.media.getAltTextSettings() 和 app.media.openPlayer()。
+用法示例请参见 `app.media.getAltTextSettings()` 和 `app.media.openPlayer()`。
 
 ### select
 
-Rendition.select() 选择一个媒体播放器来播放 MediaRendition 或 RenditionSelector。如果 Rendition 是 RenditionSelector，select() 会检查其中包含的每个 MediaRendition，并选择最合适的一个。（有关 RenditionSelector 和 MediaRendition 的描述，请参阅 type。）
-返回值是一个 MediaSelection 对象，可用于创建 MediaSettings 对象。然后可以使用此对象创建 MediaPlayer 对象。
+`Rendition.select()` 选择一个媒体播放器来播放 `MediaRendition` 或 `RenditionSelector`。如果 `Rendition` 是 `RenditionSelector`，`select()` 会检查其中包含的每个 `MediaRendition`，并选择最合适的一个。（有关 `RenditionSelector` 和 `MediaRendition` 的描述，请参阅 `type`。）
 
-### 参数
+返回值是一个 `MediaSelection` 对象，可用于创建 `MediaSettings` 对象。然后可以使用此对象创建 `MediaPlayer` 对象。
 
-| bWantRejects | （可选）如果 bWantRejects 为 true，则生成的 MediaSelection 的 rejects 属性将包含有关在选择过程中被拒绝的媒体播放器的信息。 |
+#### 参数
+
+| 参数 | 描述 |
 | :--- | :--- |
-| oContext | （可选）oContext 是来自先前 Rendition.select() 调用的 MediaSelection.selectContext 值。此参数允许您编写一个循环，该循环重复调用 Rendition.select()，直到找到满足您想在 JavaScript 代码中测试的任何选择标准的媒体播放器。 |
+| `bWantRejects` | （可选）如果 `bWantRejects` 为 `true`，则生成的 `MediaSelection` 的 `rejects` 属性将包含有关在选择过程中被拒绝的媒体播放器的信息。 |
+| `oContext` | （可选）`oContext` 是来自先前 `Rendition.select()` 调用的 `MediaSelection.selectContext` 值。此参数允许您编写一个循环，该循环重复调用 `Rendition.select()`，直到找到满足您想在 JavaScript 代码中测试的任何选择标准的媒体播放器。 |
 
-### 返回值
+#### 返回值
 
-一个 MediaSelection 对象
+一个 `MediaSelection` 对象。
 
-### 示例 1
+#### 示例 1
 
-为此 Rendition 获取一个可用的 MediaSelection。
+为此 `Rendition` 获取一个可用的 `MediaSelection`。
 
 ```javascript
 var selection = rendition.select();
 ```
 
-### 示例 2
+#### 示例 2
 
-获取所选 Rendition 的名称。此脚本从 Rendition 动作事件执行。
+获取所选 `Rendition` 的名称。此脚本从 `Rendition` 动作事件执行。
 
 ```javascript
 var selection = event.action.rendition.select();
-console.println( "Preparing to play " + selection.rendition.uiName);
-```
 
-Acrobat JavaScript 脚本参考
+console.println("Preparing to play " + selection.rendition.uiName);
+```
 
 # RDN 通用对象
 
 ## testCriteria
 
-| 6.0 | | | | |
+| 6.0 |  |  |  |  |
 |---|---|---|---|---|
 
-此方法根据 PDF 文件中指定的任何标准（例如最小带宽）测试 Rendition，并返回一个布尔值，指示该 Rendition 是否满足所有这些标准。
+此方法根据 PDF 文件中指定的任何标准（例如最小带宽）测试 `Rendition`，并返回一个布尔值，指示该 `Rendition` 是否满足所有这些标准。
 
 **参数：** 无
 
-**返回值：** 布尔值
+**返回值：** 布尔值。
 
 ## RDN 通用对象
 
@@ -19603,15 +20543,15 @@ Acrobat JavaScript 脚本参考
 
 | 属性 | 类型 | 访问权限 | 描述 |
 |---|---|---|---|
-| c | 字符串 | 只读 | 国家或地区。必须是两个字符的大写 ISO 3166 标准字符串（例如 'US'） |
-| cn | 字符串 | 只读 | 通用名（例如 'John Smith'） |
-| o | 字符串 | 只读 | 组织名称（例如 'Adobe Systems Inc.'） |
-| ou | 字符串 | 只读 | 组织单位（例如 'Acrobat Engineering'） |
-| e | 字符串 | 只读 | 电子邮件地址（例如 'jsmith@adobe.com'） |
+| `c` | 字符串 | 只读 | 国家或地区。必须是两个字符的大写 ISO 3166 标准字符串（例如 `'US'`）。 |
+| `cn` | 字符串 | 只读 | 通用名（例如 `'John Smith'`）。 |
+| `o` | 字符串 | 只读 | 组织名称（例如 `'Adobe Systems Inc.'`）。 |
+| `ou` | 字符串 | 只读 | 组织单位（例如 `'Acrobat Engineering'`）。 |
+| `e` | 字符串 | 只读 | 电子邮件地址（例如 `'jsmith@adobe.com'`）。 |
 
-## Report 对象
+# Report 对象
 
-Report 对象允许用户使用 JavaScript 以编程方式生成适合报告的 PDF 文档。使用 `Report` 构造函数创建 `Report` 对象；例如，
+`Report` 对象允许用户使用 JavaScript 以编程方式生成适合报告的 PDF 文档。使用 `Report` 构造函数创建 `Report` 对象；例如：
 
 ```javascript
 var rep = new Report();
@@ -19619,164 +20559,181 @@ var rep = new Report();
 
 然后可以使用其属性和方法来编写和格式化报告。
 
-# Report 属性
+## Report 属性
 
-## absIndent
+### absIndent
 
-控制绝对缩进级别。建议尽可能仅使用 indent/outdent，因为这些调用能正确处理缩进溢出。
+控制绝对缩进级别。建议尽可能仅使用 `indent`/`outdent`，因为这些调用能正确处理缩进溢出。
 
 如果报告缩进超过了页面中间位置，则有效缩进将设置为中间位置。请注意，`divide` 会绘制一个小的波浪线以表示缩进过深。
 
-类型：数字                访问权限：可读写。
+类型：数字  
+访问权限：可读写。
 
-## color
+### color
 
 控制写入报告中的任何文本和任何分隔线的颜色。文本通过 `writeText` 写入报告，分隔线（水平线）使用 `divide` 写入。
 
-类型：颜色                访问权限：可读写。
+类型：颜色  
+访问权限：可读写。
 
-### 示例
+#### 示例
 
 ```javascript
 var rep = new Report();
+
 rep.size = 1.2;
+
 rep.color = color.blue;
+
 rep.writeText("Hello World!");
 ```
 
-## size
+### size
 
 控制由 `writeText` 创建的任何文本的大小。它是一个乘数。文本大小通过将 `size` 属性乘以给定样式的默认大小来确定。
 
-类型：数字                访问权限：可读写。
+类型：数字  
+访问权限：可读写。
 
-### 示例
+#### 示例
 
-编写一个 "Hello World!" 文档。
+编写一个 `"Hello World!"` 文档。
 
 ```javascript
 var rep = new Report();
+
 rep.size = 1.2;
+
 rep.writeText("Hello World!");
 ```
 
-## style
+### style
 
 | 6.0 | D | X | X |
+|---|---|---|---|
 
-此属性控制由 `writeText` 创建的文本的字体样式。**style** 的值为 `DefaultNoteText`、`NoteTitle`。
+此属性控制由 `writeText` 创建的文本的字体样式。`style` 的值为 `DefaultNoteText`、`NoteTitle`。
 
-### 示例
+#### 示例
 
 ```javascript
 var rep = new Report();
+
 rep.size = 1.2;
+
 rep.style = "DefaultNoteText";
+
 rep.writeText("Hello World!");
+
 rep.open("My Report");
 ```
 
-# Report 方法
+## Report 方法
 
-## breakPage
+### breakPage
 
 | 5.0 | D | X | X |
+|---|---|---|---|
 
 结束当前页面并开始新页面。
 
-### 参数
+#### 参数
 
-无
+无。
 
-### 返回值
+#### 返回值
 
-无
+无。
 
-## divide
+### divide
 
 | 5.0 | D | X | X |
+|---|---|---|---|
 
 在页面的当前位置绘制一条指定宽度的水平线。该线从当前缩进级别延伸到边界框的最右边缘。如果缩进级别超过了边界框的中间位置，该线会显示一个波浪线以示标记。
 
-### 参数
+#### 参数
 
-| **nWidth** | （可选）要使用的水平线宽度。 |
+| `nWidth` | （可选）要使用的水平线宽度。 |
 |---|---|
 
-### 返回值
+#### 返回值
 
-无
+无。
 
-## indent
+### indent
 
-将当前缩进标记增加 **nPoints** 或默认值。如果报告缩进超过了页面中间位置，则有效缩进将设置为中间位置。请注意，`divide` 会绘制一个小的波浪线以表示缩进过深。用法示例请参阅 `writeText`。
+将当前缩进标记增加 `nPoints` 或默认值。如果报告缩进超过了页面中间位置，则有效缩进将设置为中间位置。请注意，`divide` 会绘制一个小的波浪线以表示缩进过深。用法示例请参阅 `writeText`。
 
-### 参数
+#### 参数
 
-**nPoints** （可选）要增加的缩进标记的点数。
+`nPoints`（可选）要增加的缩进标记的点数。
 
-### 返回值
+#### 返回值
 
-无
+无。
 
-## outdent
+### outdent
 
-与 indent 相反；即将当前缩进标记减少 **nPoints** 或默认值。用法示例请参阅 `writeText`。
+与 `indent` 相反；即将当前缩进标记减少 `nPoints` 或默认值。用法示例请参阅 `writeText`。
 
-### 参数
+#### 参数
 
-**nPoints** （可选）要减少的缩进标记的点数。
+`nPoints`（可选）要减少的缩进标记的点数。
 
-### 返回值
+#### 返回值
 
-无
+无。
 
-## open
+### open
 
-结束报告生成，在 Acrobat 中打开报告，并返回一个可用于对报告执行进一步处理的 Doc 对象。
+结束报告生成，在 Acrobat 中打开报告，并返回一个可用于对报告执行进一步处理的 `Doc` 对象。
 
-### 参数
+#### 参数
 
-| cTitle | 报告标题。 |
+| `cTitle` | 报告标题。 |
 |---|---|
 
-### 返回值
+#### 返回值
 
-一个 Doc 对象。
+一个 `Doc` 对象。
 
-### 示例
+#### 示例
 
 ```javascript
 var docRep = rep.open("myreport.pdf");
+
 docRep.info.Title = "End of the month report: August 2000";
+
 docRep.info.Subject = "Summary of comments at the August meeting";
 ```
 
 更完整的示例请参阅 `writeText`。
 
-## save
+### save
 
 结束报告生成并将报告保存到指定路径。
 
-**注意：** (Security(S))：此方法只能在批处理或控制台事件期间执行。另请参阅特权与非特权上下文。Event 对象包含了对 Acrobat JavaScript 事件的讨论。
+**注意：**（`Security(S)`）：此方法只能在批处理或控制台事件期间执行。另请参阅特权与非特权上下文。`Event` 对象包含了对 Acrobat JavaScript 事件的讨论。
 
-### 参数
+#### 参数
 
-| cDIPath | 设备无关路径。 |
+| `cDIPath` | 设备无关路径。 |
 |---|---|
-| cFS | （可选）文件系统。cFS 的唯一值是 "CHTTP"；在这种情况下，cDIPath 参数应是一个 URL。此参数仅在 Web 服务器支持 WebDAV 时才相关。 |
+| `cFS` | （可选）文件系统。`cFS` 的唯一值是 `"CHTTP"`；在这种情况下，`cDIPath` 参数应是一个 URL。此参数仅在 Web 服务器支持 WebDAV 时才相关。 |
 
-### 返回值
+#### 返回值
 
-无
+无。
 
-### 示例 1
+#### 示例 1
 
 ```javascript
 rep.save("/c/myReports/myreport.pdf");
 ```
 
-### 示例 2
+#### 示例 2
 
 ```javascript
 rep.save({
@@ -19785,258 +20742,314 @@ rep.save({
 });
 ```
 
-## mail
+### mail
 
-| 5.0 | (D) | | (X) | (X) |
+| 5.0 | (D) |  | (X) | (X) |
+|---|---|---|---|---|
 
 结束报告生成并通过电子邮件发送报告。另请参阅 `mailGetAddrs`、`app.mailMsg`、`doc.mailForm` 和 `fdf.mail`。
 
-### 参数
+#### 参数
 
-| bUI | （可选）是否显示用户界面。如果为 **true**（默认值），则其余参数用于填充向用户显示的新建邮件撰写窗口。如果为 **false**，则 cTo 参数是必需的，所有其他参数是可选的。 |
+| 参数 | 描述 |
 |---|---|
-| cTo | （可选）以分号分隔的邮件收件人列表。 |
-| cCc | （可选）以分号分隔的邮件抄送收件人列表。 |
-| cBcc | （可选）以分号分隔的邮件密送收件人列表。 |
-| cSubject | （可选）邮件主题。长度限制为 64k 字节。 |
-| cMsg | （可选）邮件内容。长度限制为 64k 字节。 |
+| `bUI` | （可选）是否显示用户界面。如果为 `true`（默认值），则其余参数用于填充向用户显示的新建邮件撰写窗口。如果为 `false`，则 `cTo` 参数是必需的，所有其他参数是可选的。 |
+| `cTo` | （可选）以分号分隔的邮件收件人列表。 |
+| `cCc` | （可选）以分号分隔的邮件抄送收件人列表。 |
+| `cBcc` | （可选）以分号分隔的邮件密送收件人列表。 |
+| `cSubject` | （可选）邮件主题。长度限制为 64k 字节。 |
+| `cMsg` | （可选）邮件内容。长度限制为 64k 字节。 |
 
-### 返回值
+#### 返回值
 
-无
+无。
 
-## Report
+### Report
 
-| 5.0 | (D) | | (X) | (X) |
+| 5.0 | (D) |  | (X) | (X) |
+|---|---|---|---|---|
 
-一个构造函数。使用给定的介质和边界框（值以点或 1/72 英寸定义）创建新的 **Report** 对象。默认为 8.5 x 11 英寸的介质框，以及一个四边均从介质框缩进 0.5 英寸的边界框。
+一个构造函数。使用给定的介质和边界框（值以点或 1/72 英寸定义）创建新的 `Report` 对象。默认为 8.5 x 11 英寸的介质框，以及一个四边均从介质框缩进 0.5 英寸的边界框。
 
-### 参数
+#### 参数
 
-| aMedia | （可选）介质类型。 |
+| `aMedia` | （可选）介质类型。 |
 |---|---|
-| aBBox | （可选）边界框大小。 |
+| `aBBox` | （可选）边界框大小。 |
 
-### 返回值
+#### 返回值
 
-无
+无。
 
-## writeText
+### writeText
 
-| 5.0 | D | | X | X |
+| 5.0 | D |  | X | X |
+|---|---|---|---|---|
 
 将文本块写入报告。每次调用都保证在当前缩进标记处的新行开始。能正确换行罗马文、CJK 和 WGL4 文本。
 
-### 参数
+#### 参数
 
 | 字符串 | 要使用的文本块。 |
 |---|---|
 
-### 示例
+#### 示例
 
 ```javascript
 // 获取此文档中的注释，并按作者排序
+
 this.syncAnnotScan();
+
 annots = this.getAnnots({nSortBy: ANSB_Author});
 
 // 打开一个新报告
+
 var rep = new Report();
 
 rep.size = 1.2;
+
 rep.color = color.blue;
+
 rep.writeText("Summary of Comments: By Author");
+
 rep.color = color.black;
+
 rep.writeText(" ");
+
 rep.writeText("Number of Comments: " + annots.length);
+
 rep.writeText(" ");
 
 var msg = "\200 page %s: \"%s\"";
+
 var theAuthor = annots[0].author;
+
 rep.writeText(theAuthor);
+
 rep.indent(20);
+
 for (var i = 0; i < annots.length; i++) {
     if (theAuthor != annots[i].author) {
         theAuthor = annots[i].author;
+
         rep.writeText(" ");
+
         rep.outdent(20);
+
         rep.writeText(theAuthor);
+
         rep.indent(20);
     }
+
     rep.writeText(util.printf(msg, 1 + annots[i].page, annots[i].contents));
 }
 
 // 现在打开报告
+
 var docRep = rep.open("myreport.pdf");
+
 docRep.info.Title = "End of the month report: August 2000";
+
 docRep.info.Subject = "Summary of comments at the August meeting";
 ```
 
-更多 Report 对象的示例请参阅 Annots.js 文件。
-
-
+更多 `Report` 对象的示例请参阅 `Annots.js` 文件。
 
 ## 行通用对象
 
-此通用 JS 对象包含行中每一列的数据。它由 statement.getRow 返回。它包含以下属性：
+此通用 JS 对象包含行中每一列的数据。它由 `statement.getRow` 返回。它包含以下属性：
 
 | 属性 | 类型 | 访问权限 | 描述 |
 |---|---|---|---|
-| columnArray | Array | R | 一个列通用对象的数组。这等效于在创建此行对象时，对同一 statement 调用 statement.getColumnArray 所返回的结果。 |
-| column properties | any | R | 有一个属性对应于查询选择的每一列，包含该行中该列的数据。 |
+| `columnArray` | `Array` | R | 一个列通用对象的数组。这等效于在创建此行对象时，对同一 `statement` 调用 `statement.getColumnArray` 所返回的结果。 |
+| `column properties` | `any` | R | 有一个属性对应于查询选择的每一列，包含该行中该列的数据。 |
 
 ## ScreenAnnot 对象
 
-ScreenAnnot 是 PDF 文档中在显示屏幕上查看的一个矩形区域。ScreenAnnot 可能有关联的 Renditions 和 RenditionActions 用于多媒体播放。
+`ScreenAnnot` 是 PDF 文档中在显示屏幕上查看的一个矩形区域。`ScreenAnnot` 可能有关联的 `Renditions` 和 `RenditionActions` 用于多媒体播放。
 
 ## ScreenAnnot 对象属性
 
 ### altText
 
-annot.altText 属性是注释（annot）的替代文本字符串（如果未指定替代文本，则为空字符串）。
+`annot.altText` 属性是注释（`annot`）的替代文本字符串（如果未指定替代文本，则为空字符串）。
 
-类型：String 访问权限：R。
+类型：`String`  
+访问权限：R。
 
-### 示例
+#### 示例
 
-获取一个注释并将其 altText 写入调试控制台。
+获取一个注释并将其 `altText` 写入调试控制台。
 
 ```javascript
-var annot = this.media.getAnnot({ nPage:0, cAnnotTitle: "myScreen" });
-console.println( "annot.altText = " + annot.altText );
+var annot = this.media.getAnnot({
+    nPage: 0,
+    cAnnotTitle: "myScreen"
+});
+
+console.println("annot.altText = " + annot.altText);
 ```
 
 ### alwaysShowFocus
 
-通常，ScreenAnnot 会显示和隐藏一个焦点矩形以指示其是否具有键盘焦点。如果 **ScreenAnnot.alwaysShowFocus** 为 *true*，即使 ScreenAnnot 没有焦点，它也会显示焦点矩形。这用于停靠的多媒体播放，以便即使媒体播放器实际拥有键盘焦点，注释的焦点矩形也能保持可见。
+通常，`ScreenAnnot` 会显示和隐藏一个焦点矩形以指示其是否具有键盘焦点。如果 `ScreenAnnot.alwaysShowFocus` 为 `true`，即使 `ScreenAnnot` 没有焦点，它也会显示焦点矩形。这用于停靠的多媒体播放，以便即使媒体播放器实际拥有键盘焦点，注释的焦点矩形也能保持可见。
 
 此属性不会保存在 PDF 文件中；如果您更改它，更改仅影响当前会话。
 
-*类型：* Boolean *访问权限：* R/W。
+类型：`Boolean`  
+访问权限：R/W。
 
 ### display
 
-与 **Field.display** 相同，如 *Acrobat JavaScript Scripting Reference* 中所述。
+与 `Field.display` 相同，如 *Acrobat JavaScript Scripting Reference* 中所述。
+
 此属性不会保存在 PDF 文件中；如果您更改它，更改仅影响当前会话。
 
-*类型：* Integer *访问权限：* R/W。
+类型：`Integer`  
+访问权限：R/W。
 
-### 示例
+#### 示例
 
 隐藏注释。
 
 ```javascript
-var annot = this.media.getAnnot({ nPage:0, cAnnotTitle: "myScreen" });
+var annot = this.media.getAnnot({
+    nPage: 0,
+    cAnnotTitle: "myScreen"
+});
+
 annot.display = display.hidden;
 ```
 
+
+
+
+
 ### doc
 
-**ScreenAnnot.doc** 是对包含该 ScreenAnnot 的文档的引用。
+`ScreenAnnot.doc` 是对包含该 ScreenAnnot 的文档的引用。
 
-*类型：* Doc 对象 *访问权限：* R。
+类型：Doc 对象  
+访问权限：R。
 
 ### events
 
-**ScreenAnnot.events** 是一个 Events 对象，包含附加到 ScreenAnnot 的事件监听器。
+`ScreenAnnot.events` 是一个 Events 对象，包含附加到 ScreenAnnot 的事件监听器。
 
 此属性不会保存在 PDF 文件中；如果您更改它，更改仅影响当前会话。
 
-类型：Events 对象 访问权限：R/W。
+类型：Events 对象  
+访问权限：R/W。
 
 ### 示例
 
 创建一个简单的焦点事件监听器。
 
 ```javascript
-var annot = this.media.getAnnot({ nPage:0, cAnnotTitle: "myScreen" });
+var annot = this.media.getAnnot({ nPage: 0, cAnnotTitle: "myScreen" });
+
 var myFocusEvent = {
     onFocus: function () {
         console.println("Focusing...");
     }
 };
-annot.events.add( myFocusEvent );
+
+annot.events.add(myFocusEvent);
 ```
 
 此事件监听器可以在之后通过执行以下代码来移除。
 
 ```javascript
-annot.events.remove( myFocusEvent );
+annot.events.remove(myFocusEvent);
 ```
 
 ### extFocusRect
 
-当 ScreenAnnot 绘制焦点矩形时，该矩形通常仅围住 ScreenAnnot 本身。如果指定了 extFocusRect，那么 ScreenAnnot 会取其正常矩形与 extFocusRect 的并集，并使用生成的矩形来绘制焦点矩形。
+当 ScreenAnnot 绘制焦点矩形时，该矩形通常仅围住 ScreenAnnot 本身。如果指定了 `extFocusRect`，那么 ScreenAnnot 会取其正常矩形与 `extFocusRect` 的并集，并使用生成的矩形来绘制焦点矩形。
 
 此属性不会保存在 PDF 文件中；如果您更改它，更改仅影响当前会话。
 
-类型：长度为 4 的 Number 数组 访问权限：R/W。
+类型：长度为 4 的 Number 数组  
+访问权限：R/W。
 
 ### innerDeviceRect
 
-ScreenAnnot.innerDeviceRect 和 ScreenAnnot.outerDeviceRect 定义了 ScreenAnnot 在当前页面视图中出现时的内部和外部矩形。
+`ScreenAnnot.innerDeviceRect` 和 `ScreenAnnot.outerDeviceRect` 定义了 ScreenAnnot 在当前页面视图中出现时的内部和外部矩形。
 
-类型：长度为 4 的 Number 数组 访问权限：R。
+类型：长度为 4 的 Number 数组  
+访问权限：R。
 
 ### 示例
 
-获取 innerDeviceRect。
+获取 `innerDeviceRect`。
 
 ```javascript
-annot = this.media.getAnnot({ nPage:0, cAnnotTitle: "myScreen" });
-console.println("annot.innerDeviceRect = "
-    + annot.innerDeviceRect.toSource() );
+annot = this.media.getAnnot({ nPage: 0, cAnnotTitle: "myScreen" });
+
+console.println(
+    "annot.innerDeviceRect = " + annot.innerDeviceRect.toSource()
+);
 ```
 
 ### noTrigger
 
-如果 **ScreenAnnot.noTrigger** 为 **true**，则屏幕注释无法通过 Acrobat 用户界面触发。通常，单击屏幕注释会启动媒体播放器的播放；noTrigger 会抑制此行为。
+如果 `ScreenAnnot.noTrigger` 为 `true`，则屏幕注释无法通过 Acrobat 用户界面触发。通常，单击屏幕注释会启动媒体播放器的播放；`noTrigger` 会抑制此行为。
 
 此属性不会保存在 PDF 文件中；如果您更改它，更改仅影响当前会话。
 
-类型：Boolean 访问权限：R/W。
+类型：Boolean  
+访问权限：R/W。
 
 ### 示例
 
 使用表单按钮控制媒体剪辑，因此关闭与注释的交互。
 
 ```javascript
-annot = this.media.getAnnot({ nPage:0, cAnnotTitle: "myScreen" });
+annot = this.media.getAnnot({ nPage: 0, cAnnotTitle: "myScreen" });
+
 annot.noTrigger = true;
 ```
 
 ### outerDeviceRect
 
-ScreenAnnot.**innerDeviceRect** 和 ScreenAnnot.**outerDeviceRect** 定义了 ScreenAnnot 在当前页面视图中出现时的内部和外部矩形。
+`ScreenAnnot.innerDeviceRect` 和 `ScreenAnnot.outerDeviceRect` 定义了 ScreenAnnot 在当前页面视图中出现时的内部和外部矩形。
 
-类型：长度为 4 的 Number 数组 访问权限：R。
+类型：长度为 4 的 Number 数组  
+访问权限：R。
 
 ### page
 
-ScreenAnnot.**page** 是 ScreenAnnot 所在 PDF 文件的页码。
+`ScreenAnnot.page` 是 ScreenAnnot 所在 PDF 文件的页码。
 
-类型：Number 访问权限：R。
+类型：Number  
+访问权限：R。
 
 ### player
 
-ScreenAnnot.**player** 是对与 ScreenAnnot 关联的 MediaPlayer 的引用。此属性仅存在于连接到 MediaPlayer 的 ScreenAnnot 对象。该属性由 **MediaPlayer.open()** 或调用 open() 的方法（例如 **app.media.openPlayer()**）设置。
+`ScreenAnnot.player` 是对与 ScreenAnnot 关联的 MediaPlayer 的引用。此属性仅存在于连接到 MediaPlayer 的 ScreenAnnot 对象。该属性由 `MediaPlayer.open()` 或调用 `open()` 的方法（例如 `app.media.openPlayer()`）设置。
 
-类型：ScreenAnnot 访问权限：R/W。
+类型：ScreenAnnot  
+访问权限：R/W。
 
 ### rect
 
-ScreenAnnot.rect 是 ScreenAnnot 在默认用户坐标中的矩形。更改此属性会修改 PDF 文件，如果保存 PDF 文件，新设置将被保存。innerDeviceRect 和 outerDeviceRect 属性也会更新以反映新的矩形。
+`ScreenAnnot.rect` 是 ScreenAnnot 在默认用户坐标中的矩形。更改此属性会修改 PDF 文件，如果保存 PDF 文件，新设置将被保存。`innerDeviceRect` 和 `outerDeviceRect` 属性也会更新以反映新的矩形。
 
-类型：长度为 4 的 Number 数组 访问权限：R/W。
+类型：长度为 4 的 Number 数组  
+访问权限：R/W。
 
 ### 示例
 
 稍微调整注释的位置。
 
 ```javascript
-var annot = this.media.getAnnot({ nPage:0, cAnnotTitle: "myScreen" });
+var annot = this.media.getAnnot({ nPage: 0, cAnnotTitle: "myScreen" });
+
 var aRect = annot.rect;
+
 aRect[0] += 10;
 aRect[2] += 10;
+
 annot.rect = aRect;
 ```
 
@@ -20044,106 +21057,111 @@ annot.rect = aRect;
 
 ### hasFocus
 
-ScreenAnnot.hasFocus() 告知屏幕注释当前是否具有键盘焦点。
+`ScreenAnnot.hasFocus()` 告知屏幕注释当前是否具有键盘焦点。
 
 #### 参数
 
-无
+无。
 
 #### 返回值
 
-Boolean
+Boolean。
 
 ### setFocus
 
-ScreenAnnot.setFocus() 将键盘焦点设置为屏幕注释。如果安全，焦点将同步设置（在 setFocus 返回之前）。如果同步设置焦点不安全（例如在 on 事件方法内更改属性时），那么 **bAllowAsync** 决定会发生什么：如果为 **true**，焦点将在空闲时间异步设置；如果为 **false** 或省略，焦点将保持不变。
+`ScreenAnnot.setFocus()` 将键盘焦点设置为屏幕注释。如果安全，焦点将同步设置（在 `setFocus()` 返回之前）。如果同步设置焦点不安全（例如在 `on` 事件方法内更改属性时），那么 `bAllowAsync` 决定会发生什么：如果为 `true`，焦点将在空闲时间异步设置；如果为 `false` 或省略，焦点将保持不变。
 
-如果操作同步执行，返回值为 **true**；如果延迟异步执行，则返回 **false**。
+如果操作同步执行，返回值为 `true`；如果延迟异步执行，则返回 `false`。
 
 #### 参数
 
-| bAllowAsync | （可选）一个布尔值，决定在同步设置焦点不安全时 **setFocus()** 的行为。如果为 **true**，焦点将在空闲时间异步设置；如果为 **false** 或省略，焦点将保持不变。默认为 **false**。 |
+| `bAllowAsync` | （可选）一个布尔值，决定在同步设置焦点不安全时 `setFocus()` 的行为。如果为 `true`，焦点将在空闲时间异步设置；如果为 `false` 或省略，焦点将保持不变。默认为 `false`。 |
 |---|---|
 
 #### 返回值
 
-Boolean
+Boolean。
 
 ## Search 对象
 
-**search** 对象是一个静态对象，用于访问 Acrobat Search 插件提供的功能。必须安装此插件才能与 **search** 对象交互（参见 [available](#)）。
+`search` 对象是一个静态对象，用于访问 Acrobat Search 插件提供的功能。必须安装此插件才能与 `search` 对象交互（参见 [available](#)）。
 
-另请参阅 [Index 对象](#)，它由 **search** 对象的某些方法返回。
+另请参阅 [Index 对象](#)，它由 `search` 对象的某些方法返回。
 
 [query](#) 调用的结果显示在 Acrobat 的查找对话框中。
 
-> **注意：** Acrobat 7.0 索引与 Acrobat 5.0 及更早版本的搜索引擎不兼容。
-在 Acrobat 7.0 中，在 Mac 平台上无法搜索由 Acrobat 5.0 及更早版本创建的索引。
+> **注意：** Acrobat 7.0 索引与 Acrobat 5.0 及更早版本的搜索引擎不兼容。  
+> 在 Acrobat 7.0 中，在 Mac 平台上无法搜索由 Acrobat 5.0 及更早版本创建的索引。
 
 ### attachments
 
-确定是否应同时搜索基础文档的任何 PDF 文件附件。默认为 **false**。
-
-
+确定是否应同时搜索基础文档的任何 PDF 文件附件。默认为 `false`。
 
 在 Mac 平台上，当从 Safari 网页浏览器内搜索文档时，此属性会被忽略。因此，Safari 中不会搜索附件。
 
-类型：布尔值 访问权限：R/W。
+类型：布尔值  
+访问权限：R/W。
 
-## available
+### available
 
-如果已加载搜索插件且查询功能可用，则返回 **true**。脚本作者在执行查询或其他搜索对象操作之前，应检查此布尔值。
+如果已加载搜索插件且查询功能可用，则返回 `true`。脚本作者在执行查询或其他搜索对象操作之前，应检查此布尔值。
 
-类型：布尔值 访问权限：R。
+类型：布尔值  
+访问权限：R。
 
-### 示例
+#### 示例
 
 确保搜索对象存在且可用。
 
-```
+```javascript
 if (typeof search != "undefined" && search.available) {
     search.query("Cucumber");
 }
 ```
 
-## docInfo
+### docInfo
 
-是否在查询中搜索文档信息。默认值为 **false**。
+是否在查询中搜索文档信息。默认值为 `false`。
 
-类型：布尔值 访问权限：R/W。
+类型：布尔值  
+访问权限：R/W。
 
-## docText
+### docText
 
-是否在查询中搜索文档文本。默认值为 **true**。
+是否在查询中搜索文档文本。默认值为 `true`。
 
-类型：布尔值 访问权限：R/W。
+类型：布尔值  
+访问权限：R/W。
 
-## docXMP
+### docXMP
 
-是否在查询中搜索文档级别的 XMP 元数据。默认值为 **false**。
+是否在查询中搜索文档级别的 XMP 元数据。默认值为 `false`。
 
-类型：布尔值 访问权限：R/W。
+类型：布尔值  
+访问权限：R/W。
 
-# Acrobat JavaScript 脚本参考
-搜索属性
+# Acrobat JavaScript 脚本参考：搜索属性
 
 ## bookmarks
 
-是否在查询中搜索书签。默认值为 **false**。
+是否在查询中搜索书签。默认值为 `false`。
 
-类型：布尔值          访问权限：R/W。
+类型：布尔值  
+访问权限：R/W。
 
 ## ignoreAccents
 
-在搜索查询词时是否忽略重音符号和变音符号。默认值为 **false**。
+在搜索查询词时是否忽略重音符号和变音符号。默认值为 `false`。
 
-类型：布尔值          访问权限：R/W。
+类型：布尔值  
+访问权限：R/W。
 
 ## ignoreAsianCharacterWidth
 
-文档中的假名字符是否与搜索查询完全匹配。默认值为 **false**。
+文档中的假名字符是否与搜索查询完全匹配。默认值为 `false`。
 
-类型：布尔值          访问权限：R/W。
+类型：布尔值  
+访问权限：R/W。
 
 ## indexes
 
@@ -20151,140 +21169,138 @@ if (typeof search != "undefined" && search.available) {
 
 > **注意：**（安全[S]，版本 7.0）此属性只能在批处理或控制台事件期间访问。另请参阅[特权与非特权上下文](https://example.com)。[事件对象](https://example.com)包含了对 Acrobat JavaScript 事件的讨论。
 
-类型：数组          访问权限：R。
+类型：数组  
+访问权限：R。
 
 ### 示例
 
 列举所有索引并输出其名称。
 
-```
+```javascript
 for (var i = 0; i < search.indexes.length; i++) {
-    console.println("Index[" + i + "]=", search.indexes[i].name);
+    console.println(
+        "Index[" + i + "]=",
+        search.indexes[i].name
+    );
 }
 ```
 
-# Acrobat JavaScript 脚本参考
-搜索属性
+# Acrobat JavaScript 脚本参考：搜索属性
 
 ## jpegExif
 
-是否搜索 PDF 中与 JPEG 图像关联的 EXIF 数据。默认值为 **false**。
+是否搜索 PDF 中与 JPEG 图像关联的 EXIF 数据。默认值为 `false`。
 
-类型：布尔值
+类型：布尔值  
 访问权限：R/W。
 
 ## legacySearch
 
-如果已加载 Search5.api 插件，则返回 **true**。Search5.api 插件提供了搜索在 Acrobat 5.0（或更早版本）中使用 Acrobat Catalog 生成的索引的能力。请参阅 Acrobat 在线指南中有关搜索此类索引的部分。
+如果已加载 `Search5.api` 插件，则返回 `true`。`Search5.api` 插件提供了搜索在 Acrobat 5.0（或更早版本）中使用 Acrobat Catalog 生成的索引的能力。请参阅 Acrobat 在线指南中有关搜索此类索引的部分。
 
-类型：布尔值
+类型：布尔值  
 访问权限：R。
 
 ## markup
 
-是否在查询中搜索标记（注释）。默认值为 **false**。
+是否在查询中搜索标记（注释）。默认值为 `false`。
 
-类型：布尔值
+类型：布尔值  
 访问权限：R/W。
 
 ## matchCase
 
-搜索查询是否区分大小写。默认值为 **false**。
+搜索查询是否区分大小写。默认值为 `false`。
 
-类型：布尔值
+类型：布尔值  
 访问权限：R/W。
 
 ## matchWholeWord
 
-搜索是否仅查找查询中指定的完整单词。例如，当此选项设置为 **true** 时，如果您搜索 "stick" 一词，则不会高亮显示 "tick" 和 "sticky" 这两个词。默认值为 **false**。
+搜索是否仅查找查询中指定的完整单词。例如，当此选项设置为 `true` 时，如果您搜索 `"stick"` 一词，则不会高亮显示 `"tick"` 和 `"sticky"` 这两个词。默认值为 `false`。
 
-类型：布尔值
+类型：布尔值  
 访问权限：R/W。
 
-# Acrobat JavaScript 脚本参考
-
-搜索属性
+# Acrobat JavaScript 脚本参考：搜索属性
 
 ## maxDocs
 
 作为搜索查询一部分返回的最大文档数量。默认值为 100 个文档。
 
-*类型：* *整数*
-
-*访问权限：* *R/W*。
+类型：整数  
+访问权限：R/W。
 
 ## objectMetadata
 
-此属性决定是否应搜索对象级别的元数据。这与在 Acrobat 7.0 主菜单中单击 **工具** 并选择 **对象数据 -> 对象数据工具** 时可见的数据相同。
+此属性决定是否应搜索对象级别的元数据。这与在 Acrobat 7.0 主菜单中单击**工具**并选择**对象数据 -> 对象数据工具**时可见的数据相同。
 
-默认值为 **false**。
+默认值为 `false`。
 
-*类型：* *布尔值*
-
-*访问权限：* *R/W*。
+类型：布尔值  
+访问权限：R/W。
 
 ## proximity
 
-当执行包含 AND 布尔子句的搜索时，搜索查询是否会在结果排序中反映单词的邻近度。默认值为 **false**。有关邻近度的更深入讨论，请参阅 Acrobat 在线指南中有关搜索功能的部分。
+当执行包含 AND 布尔子句的搜索时，搜索查询是否会在结果排序中反映单词的邻近度。默认值为 `false`。有关邻近度的更深入讨论，请参阅 Acrobat 在线指南中有关搜索功能的部分。
 
-*类型：* *布尔值*
-
-*访问权限：* *R/W*。
+类型：布尔值  
+访问权限：R/W。
 
 ## proximityRange
 
-邻近度搜索的单词范围。仅当属性 **proximity** 设置为 **true** 时，才会使用此属性。有关邻近度的更深入讨论，请参阅 Acrobat 在线指南中有关搜索功能的部分。
+邻近度搜索的单词范围。仅当属性 `proximity` 设置为 `true` 时，才会使用此属性。有关邻近度的更深入讨论，请参阅 Acrobat 在线指南中有关搜索功能的部分。
 
 默认值为 900 个单词。此参数的有效值为任意非零正整数。
 
-*类型：* *整数*
-
-*访问权限：* *R/W*。
+类型：整数  
+访问权限：R/W。
 
 ## refine
 
-搜索查询是否将采用上一次查询的结果，并根据下一次查询细化结果。默认值为 **false**。有关细化查询的更深入讨论，请参阅 Acrobat 在线指南中有关搜索功能的部分。
+搜索查询是否将采用上一次查询的结果，并根据下一次查询细化结果。默认值为 `false`。有关细化查询的更深入讨论，请参阅 Acrobat 在线指南中有关搜索功能的部分。
 
-*类型：布尔值* 
-*访问权限：R/W。*
+类型：布尔值  
+访问权限：R/W。
 
 ## soundex
 
-执行搜索时，搜索查询是否考虑单词的发音（例如，MacMillan、McMillan、McMilon）。默认值为 **false**。有关 soundex 的更深入讨论，请参阅 Acrobat 在线指南中有关搜索功能的部分。
+执行搜索时，搜索查询是否考虑单词的发音（例如，MacMillan、McMillan、McMilon）。默认值为 `false`。有关 soundex 的更深入讨论，请参阅 Acrobat 在线指南中有关搜索功能的部分。
 
-**注意：** 从 Acrobat 6.0 开始，不建议使用此属性。此属性的值为 **false**，访问权限仅限于只读。
+> **注意：** 从 Acrobat 6.0 开始，不建议使用此属性。此属性的值为 `false`，访问权限仅限于只读。
 
-*类型：布尔值* 
-*访问权限：R。*
+类型：布尔值  
+访问权限：R。
 
 ## stem
 
-执行搜索时，搜索查询是否考虑单词的词干（例如，run、runs、running）。默认值为 **false**。有关词干的更深入讨论，请参阅 Acrobat 在线指南中有关搜索功能的部分。
+执行搜索时，搜索查询是否考虑单词的词干（例如，run、runs、running）。默认值为 `false`。有关词干的更深入讨论，请参阅 Acrobat 在线指南中有关搜索功能的部分。
 
-*类型：布尔值* 
-*访问权限：R/W。*
+类型：布尔值  
+访问权限：R/W。
 
 ## thesaurus
 
-搜索查询是否会查找*相似*的单词。例如，搜索 "embellish" 可能会得到 "enhanced"、"gracefully" 或 "beautiful"。默认值为 **false**。
+搜索查询是否会查找*相似*的单词。例如，搜索 `"embellish"` 可能会得到 `"enhanced"`、`"gracefully"` 或 `"beautiful"`。默认值为 `false`。
 
-**注意：** 从 Acrobat 6.0 开始，不建议使用此属性。此属性的值为 **false**，访问权限仅限于只读。
+> **注意：** 从 Acrobat 6.0 开始，不建议使用此属性。此属性的值为 `false`，访问权限仅限于只读。
 
-*类型：布尔值* 
-*访问权限：R。*
+类型：布尔值  
+访问权限：R。
 
 ## wordMatching
 
 查询中的单个单词将如何与文档中的单词匹配。可选值为：
 
-- MatchPhrase
-- MatchAllWords
-- MatchAnyWord
-- BooleanQuery（默认）
+- `MatchPhrase`
+- `MatchAllWords`
+- `MatchAnyWord`
+- `BooleanQuery`（默认）
 
-此属性仅在查询包含多个单词时相关。搜索活动文档时，**BooleanQuery** 选项会被忽略。
+此属性仅在查询包含多个单词时相关。搜索活动文档时，`BooleanQuery` 选项会被忽略。
 
-类型：字符串			访问权限：R/W。
+类型：字符串  
+访问权限：R/W。
 
 # 搜索方法
 
@@ -20294,9 +21310,9 @@ for (var i = 0; i < search.indexes.length; i++) {
 
 ### 参数
 
-| cDIPath | 指向用户硬盘上索引文件的设备无关路径。有关路径的确切语法，请参阅 [PDF 参考](https://example.com) 第 3.10.1 节中的“文件规范字符串”。 |
+| `cDIPath` | 指向用户硬盘上索引文件的设备无关路径。有关路径的确切语法，请参阅 [PDF 参考](https://example.com) 第 3.10.1 节中的“文件规范字符串”。 |
 |---|---|
-| bSelect | （可选）是否应选择该索引进行搜索。 |
+| `bSelect` | （可选）是否应选择该索引进行搜索。 |
 
 ### 返回值
 
@@ -20306,199 +21322,212 @@ for (var i = 0; i < search.indexes.length; i++) {
 
 将 Acrobat 的标准帮助索引添加到索引列表：
 
-```
-search.addIndex("/c/program files/adobe/acrobat 5.0/help/exchhelp.pdx", true);
+```javascript
+search.addIndex(
+    "/c/program files/adobe/acrobat 5.0/help/exchhelp.pdx",
+    true
+);
 ```
 
-## getIndexForPath
+
+
+
+
+## `getIndexForPath`
 
 搜索索引列表，并返回路径与指定路径对应的 `index` 对象。
 
 ### 参数
 
-| cDIPath | 指向用户硬盘上索引文件的设备无关路径。有关路径的确切语法，请参阅 [PDF 参考](https://www.adobe.com/devnet/pdf/pdf_reference_archive.html) 第 3.10.1 节中的“文件规范字符串”。 |
+| 参数 | 描述 |
 |---|---|
+| `cDIPath` | 指向用户硬盘上索引文件的设备无关路径。有关路径的确切语法，请参阅[PDF 参考](https://www.adobe.com/devnet/pdf/pdf_reference_archive.html)第 3.10.1 节中的“文件规范字符串”。 |
 
 ### 返回值
 
 路径与指定路径对应的[索引对象](https://www.adobe.com/devnet/pdf/pdf_reference_archive.html)。
 
-## query
+## `query`
 
 在指定的文档或索引中搜索指定的文本。与 `search` 对象关联的属性（例如 `matchCase`、`matchWholeWord`、`stem`）可能会影响结果。
 
 ### 参数
 
-| cQuery | 要搜索的文本。 |
+| 参数 | 描述 |
 |---|---|
-
-| cWhere | （可选）指定应在何处搜索文本。可选值为：`ActiveDoc`、`Folder`、`Index`、`ActiveIndexes`（*默认值*） |
-|---|---|
-
-| cDPIPath | （可选）指向用户计算机上文件夹或 Catalog 索引的设备无关路径。有关路径的确切语法，请参阅 [PDF 参考](https://www.adobe.com/devnet/pdf/pdf_reference_archive.html) 第 3.10.1 节中的“文件规范字符串”。当 `cWhere` 为 `Folder` 或 `Index` 时，此参数是必需的。 |
-|---|---|
+| `cQuery` | 要搜索的文本。 |
+| `cWhere` | （可选）指定应在何处搜索文本。可选值为：`ActiveDoc`、`Folder`、`Index`、`ActiveIndexes`（默认值）。 |
+| `cDPIPath` | （可选）指向用户计算机上文件夹或 Catalog 索引的设备无关路径。有关路径的确切语法，请参阅[PDF 参考](https://www.adobe.com/devnet/pdf/pdf_reference_archive.html)第 3.10.1 节中的“文件规范字符串”。当 `cWhere` 为 `Folder` 或 `Index` 时，此参数是必需的。 |
 
 ### 返回值
 
-无
+无。
 
+## Acrobat JavaScript 脚本参考
 
-
-**Acrobat JavaScript 脚本参考**
-安全对象
+### 安全对象
 
 ## 示例
 
 搜索单词“Acrobat”。
 
-| cWhere | 查询 |
+| `cWhere` | 查询 |
 |---|---|
-| **ActiveIndexes** | search.query("Acrobat"); // "ActiveIndexes" 是默认值。<br>search.query("Acrobat", "ActiveIndexes"); |
-| **ActiveDoc** | search.query("Acrobat", "ActiveDoc"); |
-| **Folder** | search.query("Acrobat", "Folder", "/c/myDocuments");<br>search.query("Acrobat", "Folder", app.getPath("user", "documents"));<br>search.query("Acrobat", "Folder", "//myserver/myDocuments"); |
-| **Index** | search.query("Acrobat", "Index", "/c/Myfiles/public/index.pdx"); |
+| `ActiveIndexes` | `search.query("Acrobat");` // "`ActiveIndexes`" 是默认值。<br>`search.query("Acrobat", "ActiveIndexes");` |
+| `ActiveDoc` | `search.query("Acrobat", "ActiveDoc");` |
+| `Folder` | `search.query("Acrobat", "Folder", "/c/myDocuments");`<br>`search.query("Acrobat", "Folder", `app.getPath("user", "documents")`);<br>`search.query("Acrobat", "Folder", "//myserver/myDocuments");` |
+| `Index` | `search.query("Acrobat", "Index", "/c/Myfiles/public/index.pdx");` |
 
-## removeIndex
+## `removeIndex`
 
-从索引列表中移除指定的**索引**对象。
+从索引列表中移除指定的 `index` 对象。
 
-## 参数
+### 参数
 
 | 参数 | 描述 |
 |---|---|
-| **index** | 要从索引列表中移除的[索引对象]。 |
+| `index` | 要从索引列表中移除的[索引对象]。 |
 
-## 返回值
+### 返回值
 
-无
+无。
 
 ## 安全对象
 
-安全对象是一个静态 JavaScript 对象，它公开了与安全相关的 PDF 功能，如加密和数字签名。安全功能通过[安全处理程序对象]执行，该对象使用 **getHandler** 方法从安全对象获取。
+安全对象是一个静态 JavaScript 对象，它公开了与安全相关的 PDF 功能，如加密和数字签名。安全功能通过[安全处理程序对象]执行，该对象使用 `getHandler` 方法从安全对象获取。
 
-**注意：** (Security(S))：安全对象可以无限制地使用，包括在 Adobe Reader 中。安全对象的方法和属性只能在批量、控制台或应用程序初始化事件期间执行，包括在 Adobe Reader 中，除非另有说明。另请参阅[特权与非特权上下文]。[事件对象]包含对 Acrobat JavaScript 事件的讨论。
+> **注意：**（Security(S)）：安全对象可以无限制地使用，包括在 Adobe Reader 中。安全对象的方法和属性只能在批量、控制台或应用程序初始化事件期间执行，包括在 Adobe Reader 中，除非另有说明。另请参阅[特权与非特权上下文]。[事件对象]包含对 Acrobat JavaScript 事件的讨论。
 
 ## 安全常量
 
 从 Acrobat 7.0 开始，安全对象上定义了多个便捷字符串常量。这些常量作为下面列出的包装器对象的属性保存。
 
-### HandlerName
+### `HandlerName`
 
 这些是用于确定使用哪个处理程序时使用的常量。
 
 | 属性 | 类型 | 访问权限 | 描述 |
 |---|---|---|---|
-| `StandardHandler` | String | R | 此值可以指定在基于标准（基于密码）安全处理程序的 SecurityPolicy 对象的 **handler** 属性中。 |
-| `PPKLiteHandler` | String | R | 此值可以指定在基于 PPKLite（基于证书）安全处理程序的 SecurityPolicy 对象的 **handler** 属性中。此值也可以传递给 **security.getHandler** 以创建新的安全上下文。 |
-| `APSHandler` | String | R | 这是在基于 Adobe Policy Server 安全处理程序的 SecurityPolicy 对象的 **handler** 属性中指定的值。此值也可以传递给 **security.getHandler** 以创建新的安全上下文。 |
+| `StandardHandler` | String | R | 此值可以指定在基于标准（基于密码）安全处理程序的 `SecurityPolicy` 对象的 `handler` 属性中。 |
+| `PPKLiteHandler` | String | R | 此值可以指定在基于 PPKLite（基于证书）安全处理程序的 `SecurityPolicy` 对象的 `handler` 属性中。此值也可以传递给 `security.getHandler` 以创建新的安全上下文。 |
+| `APSHandler` | String | R | 这是在基于 Adobe Policy Server 安全处理程序的 `SecurityPolicy` 对象的 `handler` 属性中指定的值。此值也可以传递给 `security.getHandler` 以创建新的安全上下文。 |
 
 ### 示例
 
-常量（字符串）`security.StandardHandler` 用于指定 SecurityPolicy 对象的 **handler** 属性。
+常量（字符串）`security.StandardHandler` 用于指定 `SecurityPolicy` 对象的 `handler` 属性。
 
-```
+```javascript
 security.getHandler(security.PPKLiteHandler, true);
 ```
 
-### EncryptTarget
+### `EncryptTarget`
 
 这些是用于确定策略加密哪些数据时使用的常量。
 
 | 属性 | 类型 | 访问权限 | 描述 |
 |---|---|---|---|
-| `EncryptTargetDocument` | String | R | 这是可用于 SecurityPolicy 对象的 **target** 属性的值之一。它用于在应用时加密整个文档的安全策略。 |
+| `EncryptTargetDocument` | String | R | 这是可用于 `SecurityPolicy` 对象的 `target` 属性的值之一。它用于在应用时加密整个文档的安全策略。 |
+| `EncryptTargetAttachments` | String | R | 这是可用于 `SecurityPolicy` 对象的 `target` 属性的值之一。它用于仅加密文档内嵌入的文件附件的安全策略。这意味着文档可以打开，但附件在未提供正确的安全身份验证的情况下无法打开。它用于电子信封工作流。 |
 
-| EncryptTargetAttachments | String | R | 这是可用于 SecurityPolicy 对象的 target 属性的值之一。它用于仅加密文档内嵌入的文件附件的安全策略。这意味着文档可以打开，但附件在未提供正确的安全身份验证的情况下无法打开。它用于电子信封工作流。 |
-
-```
+```javascript
 var filterOptions = { target: security.EncryptTargetAttachments };
-security.chooseSecurityPolicy( { oOptions: filterOptions } );
+
+security.chooseSecurityPolicy({ oOptions: filterOptions });
 ```
 
 ## 安全属性
 
-### handlers
+### `handlers`
 
 5.0
 
 返回一个数组，包含可用于加密或签名的可用安全处理程序的与语言无关的名称。
-另请参阅 getSecurityPolicies。
-从 Acrobat 6.0 开始，对此属性的访问不受限制，以允许查询有哪些处理程序可用。
-**向后兼容性说明：** 在 Acrobat 6.0 中，此调用返回三个处理程序："Adobe.PPKLite"、"Adobe.PPKMS" 和 "Adobe.AAB"。从 Acrobat 7.0 开始，Adobe.PPKMS 提供的所有功能已整合到 Adobe.PPKLite 中，因此 Adobe.PPKMS 不再作为单独的处理程序可用。
-从 Acrobat 7.0 开始，一个新的处理程序可用："Adobe.APS"。此处理程序仅用于在调用任何 [encryptUsingPolicy](https://example.com)、[getSecurityPolicies](https://example.com) 或 [chooseSecurityPolicy](https://example.com) 方法之前进行身份验证。目前没有其他有效用途。
-从 Acrobat 7.0 开始，安全对象上为每个处理程序定义了安全常量。（除了 "Adobe.AAB"，此处理程序可能在不久的将来被弃用，因此没有为其添加常量。）在通过 [getHandler](https://example.com) 创建新的处理程序实例或与处理程序列表进行比较时，应使用这些常量。
 
-类型：Array 访问权限：R。
+另请参阅 `getSecurityPolicies`。
+
+从 Acrobat 6.0 开始，对此属性的访问不受限制，以允许查询有哪些处理程序可用。
+
+**向后兼容性说明：** 在 Acrobat 6.0 中，此调用返回三个处理程序：`"Adobe.PPKLite"`、`"Adobe.PPKMS"` 和 `"Adobe.AAB"`。从 Acrobat 7.0 开始，Adobe.PPKMS 提供的所有功能已整合到 Adobe.PPKLite 中，因此 Adobe.PPKMS 不再作为单独的处理程序可用。
+
+从 Acrobat 7.0 开始，一个新的处理程序可用：`"Adobe.APS"`。此处理程序仅用于在调用任何 [`encryptUsingPolicy`](https://example.com)、[`getSecurityPolicies`](https://example.com) 或 [`chooseSecurityPolicy`](https://example.com) 方法之前进行身份验证。目前没有其他有效用途。
+
+从 Acrobat 7.0 开始，安全对象上为每个处理程序定义了安全常量。（除了 `"Adobe.AAB"`，此处理程序可能在不久的将来被弃用，因此没有为其添加常量。）在通过 [`getHandler`](https://example.com) 创建新的处理程序实例或与处理程序列表进行比较时，应使用这些常量。
+
+类型：`Array`。访问权限：`R`。
 
 ### 示例
 
 获取此系统上可用的安全处理程序列表：
 
+```javascript
+for (var i = 0; i < security.handlers.length; i++)
+    console.println(security.handlers[i]);
 ```
-for ( var i=0; i < security.handlers.length; i++ )
-    console.println(security.handlers[i])
-```
 
-控制台的输出可能是
+控制台的输出可能是：
 
-- Adobe.APS
-- Adobe.PPKLite
-- Adobe.PPKMS
-- Adobe.AAB
+- `Adobe.APS`
+- `Adobe.PPKLite`
+- `Adobe.PPKMS`
+- `Adobe.AAB`
 
-### validateSignaturesOnOpen
+### `validateSignaturesOnOpen`
 
 | 5.0 | ⓟ | Ⓢ | Ⓧ |
+|---|---|---|---|
 
 获取或设置用户级首选项，该首选项导致在打开文档时自动验证签名。
 
-> **注意：** (Security Ⓢ)：该属性在所有情况下都可用于获取值，但只能在批量、控制台、应用程序初始化和菜单事件期间设置新值。
-从 Acrobat 7.0 开始，通过菜单事件执行 JavaScript 不再具有特权，有关详细信息，请参阅[通过菜单执行 JavaScript](#)。
+> **注意：**（Security Ⓢ）：该属性在所有情况下都可用于获取值，但只能在批量、控制台、应用程序初始化和菜单事件期间设置新值。  
+> 从 Acrobat 7.0 开始，通过菜单事件执行 JavaScript 不再具有特权，有关详细信息，请参阅[通过菜单执行 JavaScript](#)。
 
-类型：Boolean 访问权限：R/W。
+类型：`Boolean`。访问权限：`R/W`。
 
 ## 安全方法
 
-### chooseRecipientsDialog
+### `chooseRecipientsDialog`
 
 | 6.0 | Ⓢ | Ⓧ |
+|---|---|---|
 
-打开一个对话框，允许用户选择收件人列表。返回一个通用 Group 对象数组，当使用 Doc 对象的 [encryptForRecipients](#) 或 [addRecipientListCryptFilter](#) 方法加密文档或数据时可以使用这些对象。
+打开一个对话框，允许用户选择收件人列表。返回一个通用 `Group` 对象数组，当使用 `Doc` 对象的 [`encryptForRecipients`](#) 或 [`addRecipientListCryptFilter`](#) 方法加密文档或数据时可以使用这些对象。
 
-> **注意：** 只能在控制台、菜单或应用程序初始化事件期间执行。
-从 Acrobat 7.0 开始，通过菜单事件执行 JavaScript 不再具有特权，有关详细信息，请参阅[通过菜单执行 JavaScript](#)。
-在 Reader 中不可用。
+> **注意：** 只能在控制台、菜单或应用程序初始化事件期间执行。  
+> 从 Acrobat 7.0 开始，通过菜单事件执行 JavaScript 不再具有特权，有关详细信息，请参阅[通过菜单执行 JavaScript](#)。  
+> 在 Reader 中不可用。
 
-**参数**
+### 参数
 
-| **oOptions** | 包含显示选项参数的 DisplayOptions 通用对象。 |
+| 参数 | 描述 |
+|---|---|
+| `oOptions` | 包含显示选项参数的 `DisplayOptions` 通用对象。 |
 
-**返回值**
+### 返回值
 
-一个通用 Group 对象数组。
-有关通用 Group 对象的描述，请参见 doc.encryptForRecipients。
+一个通用 `Group` 对象数组。
 
-**DisplayOptions 通用对象**
+有关通用 `Group` 对象的描述，请参见 `doc.encryptForRecipients`。
+
+### `DisplayOptions` 通用对象
 
 它包含以下属性：
 
-| **属性** | **描述** |
+| 属性 | 描述 |
 |---|---|
-| **bAllowPermGroups** | 控制是否可以为收件人列表中的条目设置权限。默认值为 true。 |
-| **bPlaintextMetadata** | 控制是否显示允许用户选择元数据是明文还是加密的复选框，以及默认值。如果未指定，则不显示复选框。如果指定，则显示复选框，并且默认值是此属性的值。 |
-| **cTitle** | 要在对话框中显示的标题。默认为“选择收件人”。 |
-| **cNote** | 要在对话框中显示的注释。默认不显示任何注释。 |
-| **bAllowImportFromFile** | 是否显示允许用户从文件导入收件人的选项。默认值为 true。 |
-| **bRequireEncryptionCert** | 如果为 true，则要求收件人包含一个加密证书。默认值为 true。 |
-| **bRequireEmail** | 如果为 true，则要求收件人包含电子邮件地址。默认值为 false。 |
-| **bUserCert** | 如果为 true，则会提示用户提供自己的证书，以便将其包含在收件人列表中。将此标志设置为 true 会导致提示，但不要求用户提供证书。 |
+| `bAllowPermGroups` | 控制是否可以为收件人列表中的条目设置权限。默认值为 `true`。 |
+| `bPlaintextMetadata` | 控制是否显示允许用户选择元数据是明文还是加密的复选框，以及默认值。如果未指定，则不显示复选框。如果指定，则显示复选框，并且默认值是此属性的值。 |
+| `cTitle` | 要在对话框中显示的标题。默认为“选择收件人”。 |
+| `cNote` | 要在对话框中显示的注释。默认不显示任何注释。 |
+| `bAllowImportFromFile` | 是否显示允许用户从文件导入收件人的选项。默认值为 `true`。 |
+| `bRequireEncryptionCert` | 如果为 `true`，则要求收件人包含一个加密证书。默认值为 `true`。 |
+| `bRequireEmail` | 如果为 `true`，则要求收件人包含电子邮件地址。默认值为 `false`。 |
+| `bUserCert` | 如果为 `true`，则会提示用户提供自己的证书，以便将其包含在收件人列表中。将此标志设置为 `true` 会导致提示，但不要求用户提供证书。 |
 
-**示例 1**
+### 示例 1
 
-检索带有权限的组
+检索带有权限的组：
 
-
-
+```javascript
 var oOptions = {
     bAllowPermGroups: true,
     bPlaintextMetadata: false,
@@ -20508,100 +21537,126 @@ var oOptions = {
     bRequireEncryptionCert: true,
     bRequireEmail: true
 };
-var groupArray = security.chooseRecipientsDialog( oOptions );
-console.println("Full name = "+ groupArray[0].userEntities[0].fullName);
 
-## 示例 2
+var groupArray = security.chooseRecipientsDialog(oOptions);
+
+console.println("Full name = " + groupArray[0].userEntities[0].fullName);
+```
+
+### 示例 2
 
 获取收件人列表以加密数据，然后可能在完成后通过邮件发送文档。
 
-```
-var oOptions = { bAllowPermGroups: false,
+```javascript
+var oOptions = {
+    bAllowPermGroups: false,
     cNote: "Select the list of recipients. "
-    + "Each person must have both an email address and a certificate.",
+        + "Each person must have both an email address and a certificate.",
     bRequireEmail: true,
     bUserCert: true
 };
-var oGroups = security.chooseRecipientsDialog( oOptions );
+
+var oGroups = security.chooseRecipientsDialog(oOptions);
+
 // Display the list of recipients in an alert
+
 // Build an email "to" mailList
+
 var numCerts = oGroups[0].userEntities.length;
+
 var cMsg = "The document will be encrypted for the following:\n";
 var mailList = new Array;
-for( var g=0; g<numCerts; ++g )
-{
+
+for (var g = 0; g < numCerts; ++g) {
     var ue = oGroups[0].userEntities[g];
     var oCert = ue.defaultEncryptCert;
-    if( oCert == null )
+
+    if (oCert == null)
         oCert = ue.certificates[0];
+
     cMsg += oCert.subjectCN + ", " + ue.email + "\n";
+
     var oRDN = oCert.subjectDN;
-    if( ue.email )
-    {
+
+    if (ue.email) {
         mailList[g] = ue.email;
+    } else if (oRDN.e) {
+        mailList[g] = oRDN.e;
     }
-    else
-        if ( oRDN.e )
-        {
-            mailList[g] = oRDN.e;
-        }
 }
-var result = app.alert( cMsg );
+
+var result = app.alert(cMsg);
 ```
 
-## 示例 3
+### 示例 3
 
-列出组数组中的所有条目
+列出组数组中的所有条目：
 
-```
-var groups = security.chooseRecipientsDialog( oOptions );
-for( g in groups ) {
-    console.println( "Group No. " + g );
+```javascript
+var groups = security.chooseRecipientsDialog(oOptions);
+
+for (g in groups) {
+    console.println("Group No. " + g);
+
     // Permissions
     var perms = groups[g].permissions;
-    console.println( "Permissions:" );
-    for(p in perms) console.println( p + " = " + eval("perms." +p));
+
+    console.println("Permissions:");
+
+    for (p in perms)
+        console.println(p + " = " + eval("perms." + p));
+
     // User Entities
-    for( u in groups[i].userEntities ) {
+    for (u in groups[i].userEntities) {
         var user = groups[g].userEntities[u];
-        console.println( "User No. " + u );
-        for(i in user) console.println( i + " = " + eval("user." +i));
+
+        console.println("User No. " + u);
+
+        for (i in user)
+            console.println(i + " = " + eval("user." + i));
     }
 }
 ```
 
-## chooseSecurityPolicy
+### `chooseSecurityPolicy`
 
-![](img/bd576cc243b5a79128e24042df2f472f_543_0.png)
+![chooseSecurityPolicy](img/bd576cc243b5a79128e24042df2f472f_543_0.png)
 
 打开一个对话框，允许用户从根据选项过滤的安全策略列表中进行选择。
 
-> 注意：（安全 S）仅在批处理、控制台、菜单或应用程序初始化事件期间可执行。在 Reader 中不可用。此方法将显示用户界面。
-
-从 Acrobat 7.0 开始，通过菜单事件执行 JavaScript 不再是特权操作，详情请参阅 [通过菜单执行 JavaScript](JavaScript Execution through the Menu)。
+> **注意：**（安全 S）仅在批处理、控制台、菜单或应用程序初始化事件期间可执行。在 Reader 中不可用。此方法将显示用户界面。  
+> 从 Acrobat 7.0 开始，通过菜单事件执行 JavaScript 不再是特权操作，详情请参阅[通过菜单执行 JavaScript](JavaScript Execution through the Menu)。
 
 ### 参数
 
-| oOptions | （可选）一个 [SecurityPolicyOptions 通用对象](SecurityPolicyOptions Generic Object)，包含用于过滤返回的安全策略列表的参数。如果未指定，则显示找到的所有策略。 |
+| 参数 | 描述 |
 |---|---|
+| `oOptions` | （可选）一个 [`SecurityPolicyOptions` 通用对象](SecurityPolicyOptions Generic Object)，包含用于过滤返回的安全策略列表的参数。如果未指定，则显示找到的所有策略。 |
 
 ### 返回值
 
-返回一个 [SecurityPolicy 对象](SecurityPolicy Object)，如果用户中止选择，则返回 null。
+返回一个 [`SecurityPolicy` 对象](SecurityPolicy Object)，如果用户中止选择，则返回 `null`。
 
 ### 示例
 
 在此示例中选择一个策略并显示其名称。
 
-```
+```javascript
 var options = { cHandler: security.APSHandler };
-var policy = security.chooseSecurityPolicy( options );
+
+var policy = security.chooseSecurityPolicy(options);
+
 console.println("The policy chosen was: " + policy.name);
 ```
 
-`security.APSHandler` 是 [安全常量](Security Constants) 之一。
+
+
+
+`security.APSHandler` 是[安全常量](Security Constants)之一。
 
 ## exportToFile
+
+### 版本
 
 6.0
 
@@ -20609,15 +21664,15 @@ console.println("The policy chosen was: " + policy.name);
 
 > 注意：（安全 S）：写入的数据必须是有效证书的数据；不能写入任意数据类型。此方法不会覆盖现有文件。
 
-另请参阅 `security.importFromFile`。
+另请参阅`security.importFromFile`。
 
 ### 参数
 
 | 参数 | 描述 |
 |---|---|
-| oObject | 要导出到磁盘的证书对象。 |
-| cDIPath | 设备无关的保存路径。 |
-|  | **注意：（安全 S）：参数 `cDIPath` 必须是安全路径，且必须以扩展名 .cer 结尾。** |
+| `oObject` | 要导出到磁盘的证书对象。 |
+| `cDIPath` | 设备无关的保存路径。 |
+|  | **注意：（安全 S）：参数`cDIPath`必须是安全路径，且必须以扩展名`.cer`结尾。** |
 
 ### 返回值
 
@@ -20625,134 +21680,156 @@ console.println("The policy chosen was: " + policy.name);
 
 ### 示例
 
-```
+```javascript
 var outPath = security.exportToFile(oCert, "/c/outCert.cer");
 ```
 
 ## getHandler
 
+### 版本
+
 5.0
 
-获取安全处理程序对象。调用者可以根据需要创建任意数量的新引擎，每次调用 `getHandler` 都会创建一个新引擎；但是，只有一个用户界面引擎。
+获取安全处理程序对象。调用者可以根据需要创建任意数量的新引擎，每次调用`getHandler`都会创建一个新引擎；但是，只有一个用户界面引擎。
 
 > 注意：（安全 S）：此方法可从批处理、控制台、应用程序初始化和菜单事件中使用。它在 Adobe Reader 中也可用。
 
-从 Acrobat 7.0 开始，通过菜单事件执行 JavaScript 不再是特权操作，详情请参阅 [通过菜单执行 JavaScript](JavaScript Execution through the Menu)。
+从 Acrobat 7.0 开始，通过菜单事件执行 JavaScript 不再是特权操作，详情请参阅[通过菜单执行 JavaScript](JavaScript Execution through the Menu)。
 
-**向后兼容性说明：** *从 Acrobat 7.0 开始，`Adobe.PPKMS` 不再作为单独的处理程序提供，因此使用 `cName` 为 "Adobe.PPKMS" 调用 `getHandler` 将返回与 `Adobe.PPKLite` 处理程序关联的引擎。*
+**向后兼容性说明：** 从 Acrobat 7.0 开始，`Adobe.PPKMS`不再作为单独的处理程序提供，因此使用`cName`为`"Adobe.PPKMS"`调用`getHandler`将返回与`Adobe.PPKLite`处理程序关联的引擎。
 
-## 参数
+### 参数
 
-| **cName** | 安全处理程序的与语言无关的名称，如 **handlers** 属性所返回的。（版本 7.0）从 Acrobat 7 开始，安全对象上为每个有效处理程序定义了常量字符串。请参阅安全常量，特别是 **HandlerName** 对象。 |
+| 参数 | 描述 |
 |---|---|
-| **bUIEngine** | （可选）如果为 **true**，则该方法返回与 Acrobat 用户界面关联的现有安全处理程序实例（因此，例如，用户可以通过用户界面登录）。如果为 **false**（默认值），则返回一个新引擎。 |
+| `cName` | 安全处理程序的与语言无关的名称，如`handlers`属性所返回的。（版本 7.0）从 Acrobat 7 开始，安全对象上为每个有效处理程序定义了常量字符串。请参阅安全常量，特别是`HandlerName`对象。 |
+| `bUIEngine` | （可选）如果为`true`，则该方法返回与 Acrobat 用户界面关联的现有安全处理程序实例（因此，例如，用户可以通过用户界面登录）。如果为`false`（默认值），则返回一个新引擎。 |
 
 ### 返回值
 
-由 **cName** 指定的 **SecurityHandler 对象**。如果处理程序不存在，则返回 **null** 对象。
+由`cName`指定的`SecurityHandler`对象。如果处理程序不存在，则返回`null`对象。
 
 ### 示例
 
-此代码选择 *Adobe.PPKLite SecurityHandler*。
+此代码选择`Adobe.PPKLite SecurityHandler`。
 
-```
+```javascript
 // validate signatures on open
 security.validateSignaturesOnOpen = true;
 
 // list all available signature handlers
 var a = security.handlers;
+
 for (var i = 0; i < a.length; i++)
-    console.println("a["+i+"] = "+a[i]);
+    console.println("a[" + i + "] = " + a[i]);
 
 // use "Adobe.PPKLite" handler engine for the UI
 var ppklite = security.getHandler(
     security.PPKLiteHandler, true);
+
 // login
 ppklite.login("dps017", "/C/profiles/DPSmith.pfx");
 ```
 
-另请参阅 **signatureSign** 后的示例，以了解此示例的后续内容。
+另请参阅`signatureSign`后的示例，以了解此示例的后续内容。
 
 ## getSecurityPolicies
 
-7.0  Ⓔ  Ⓡ
+### 版本
 
-返回当前可用的安全策略列表，根据指定的选项进行过滤。主安全策略列表将在过滤前更新。使用默认安全处理程序对象来检索最新策略。如果没有可用的策略或没有策略满足过滤限制，将返回 **null**。
+7.0 Ⓔ Ⓡ
 
-**注意：** 您可能能够通过在调用此函数之前对默认安全处理程序对象调用 `login()` 来检索更多策略。
+返回当前可用的安全策略列表，根据指定的选项进行过滤。主安全策略列表将在过滤前更新。使用默认安全处理程序对象来检索最新策略。如果没有可用的策略或没有策略满足过滤限制，将返回`null`。
+
+**注意：** 您可能能够通过在调用此函数之前对默认安全处理程序对象调用`login()`来检索更多策略。
+
 （安全 S）仅在控制台或应用程序初始化事件期间可执行。在 Reader 中不可用。
 
 ### 参数
 
 | 参数 | 描述 |
 |---|---|
-| **bUI** | （可选）控制是否可以显示用户界面的标志。默认值为 **false**。 |
-| **oOptions** | （可选）一个 **SecurityPolicyOptions 通用对象**，包含用于过滤返回的安全策略列表的参数。如果未指定，则返回找到的所有策略。 |
+| `bUI` | （可选）控制是否可以显示用户界面的标志。默认值为`false`。 |
+| `oOptions` | （可选）一个`SecurityPolicyOptions`通用对象，包含用于过滤返回的安全策略列表的参数。如果未指定，则返回找到的所有策略。 |
 
 ### 返回值
 
-一个 **SecurityPolicy 对象** 数组或 **null**。
+一个`SecurityPolicy`对象数组或`null`。
 
 ### SecurityPolicyOptions 通用对象
 
-`SecurityPolicyOptions` 对象具有以下属性：
+`SecurityPolicyOptions`对象具有以下属性：
 
 | 属性 | 描述 |
 |---|---|
-| **bFavorites** | 如果未传递，则不根据策略是否为收藏夹进行过滤。如果为 **true**，则仅返回收藏夹策略。如果为 **false**，则仅返回 *非* 收藏夹策略。 |
-| **cHandler** | 如果未传递，则不根据安全过滤器进行过滤。如果已定义，则仅返回与指定安全过滤器匹配的策略。有效值在 **安全常量** 中定义，请参阅 **HandlerName** 对象。只能传递单个值。 |
-| **cTarget** | 如果未传递，则不根据目标进行过滤。如果已定义，则仅返回与指定目标匹配的策略。有效值在 **安全常量** 中定义，请参阅 **EncryptTarget** 对象。只能传递单个值。 |
+| `bFavorites` | 如果未传递，则不根据策略是否为收藏夹进行过滤。如果为`true`，则仅返回收藏夹策略。如果为`false`，则仅返回非收藏夹策略。 |
+| `cHandler` | 如果未传递，则不根据安全过滤器进行过滤。如果已定义，则仅返回与指定安全过滤器匹配的策略。有效值在安全常量中定义，请参阅`HandlerName`对象。只能传递单个值。 |
+| `cTarget` | 如果未传递，则不根据目标进行过滤。如果已定义，则仅返回与指定目标匹配的策略。有效值在安全常量中定义，请参阅`EncryptTarget`对象。只能传递单个值。 |
 
 ### 示例 1
 
-在此示例中，检索收藏夹 PPKLite 策略列表并显示其名称。此示例使用 **security.PPKLiteHandler**，请参阅 **安全常量**。
+在此示例中，检索收藏夹 PPKLite 策略列表并显示其名称。此示例使用`security.PPKLiteHandler`，请参阅安全常量。
 
-```
-var options = { bFavorites:true, cHandler:security.PPKLiteHandler };
-var policyArray = security.getSecurityPolicies( { oOptions: options } );
-for( var i = 0; i < policyArray.length; i++)
-    console.println( policyArray[i].name );
+```javascript
+var options = {
+    bFavorites: true,
+    cHandler: security.PPKLiteHandler
+};
+
+var policyArray = security.getSecurityPolicies({
+    oOptions: options
+});
+
+for (var i = 0; i < policyArray.length; i++)
+    console.println(policyArray[i].name);
 ```
 
 ### 示例 2
 
-在此示例中，强制登录，检索 APS 策略列表，并显示其名称。此示例使用 **security.APSHandler**，请参阅 **安全常量**。
-
-
+在此示例中，强制登录，检索 APS 策略列表，并显示其名称。此示例使用`security.APSHandler`，请参阅安全常量。
 
 ## Acrobat JavaScript 脚本参考
-安全方法
+
+### 安全方法
 
 ```javascript
 var aps = security.getHandler(security.APSHandler, true);
+
 aps.login();
-var options = { cHandler: security.APSHandler };
+
+var options = {
+    cHandler: security.APSHandler
+};
+
 var policyArray = security.getSecurityPolicies({
     bUI: true,
     oOptions: options
 });
+
 for (var i = 0; i < policyArray.length; i++)
     console.println(policyArray[i].name);
 ```
 
 ## importFromFile
 
+### 版本
+
 | 版本 | 标记 | 状态 |
 |---|---|---|
 | 6.0 | Ⓐ | ✗ |
 
-读取原始数据文件并返回一个对象，其数据类型由 **cType** 指定。要导入的文件必须是一个有效的证书。
+读取原始数据文件并返回一个对象，其数据类型由`cType`指定。要导入的文件必须是一个有效的证书。
 
-相关方法：**security.exportToFile**
+相关方法：`security.exportToFile`
 
 ### 参数
 
 | 参数 | 描述 |
 |---|---|
-| cType | 此方法应返回的对象类型。唯一支持的类型是 "Certificate"。 |
-| cDIPath | （可选）当 **bUI** 为 **false** 时，此参数为必需参数，指定要打开的文件的设备无关路径。如果 **bUI** 为 **true**，这是在打开对话框中使用的种子路径。 |
-| bUI | （可选）如果应提示用户选择要导入的文件，则为 **true**。默认值为 **false**。 |
-| cMsg | （可选）如果 **bUI** 为 **true**，这是在打开对话框中使用的标题。如果未指定 **cMsg**，则对话框使用默认标题。 |
+| `cType` | 此方法应返回的对象类型。唯一支持的类型是`"Certificate"`。 |
+| `cDIPath` | （可选）当`bUI`为`false`时，此参数为必需参数，指定要打开的文件的设备无关路径。如果`bUI`为`true`，这是在打开对话框中使用的种子路径。 |
+| `bUI` | （可选）如果应提示用户选择要导入的文件，则为`true`。默认值为`false`。 |
+| `cMsg` | （可选）如果`bUI`为`true`，这是在打开对话框中使用的标题。如果未指定`cMsg`，则对话框使用默认标题。 |
 
 ### 返回值
 
@@ -20761,43 +21838,46 @@ for (var i = 0; i < policyArray.length; i++)
 ### 示例
 
 ```javascript
-var oMyCert = security.importFromFile("Certificate", "/c/myCert.cer");
+var oMyCert = security.importFromFile(
+    "Certificate",
+    "/c/myCert.cer"
+);
 ```
 
 ## SecurityPolicy 对象
 
-安全策略对象代表一组安全设置，用于对文档应用加密。它可以作为 [getSecurityPolicies](https://example.com) 和 [chooseSecurityPolicy](https://example.com) 的返回值获取。
+安全策略对象代表一组安全设置，用于对文档应用加密。它可以作为[`getSecurityPolicies`](https://example.com)和[`chooseSecurityPolicy`](https://example.com)的返回值获取。
 
 ## SecurityPolicy 属性
 
 | 属性 | 类型 | 访问权限 | 描述 |
 |---|---|---|---|
-| policyID | String | R | 这是一个生成的字符串，用于唯一标识安全策略。它并非为人类可读而设计。在新创建的 SecurityPolicy 对象上，可以将此属性设置为已知的 policyId，以强制任何使用此策略的方法在应用策略前检索正确的安全设置。 |
-| name | String | R | 这是用于用户界面的策略名称。可以本地化。 |
-| description | String | R | 这是用于用户界面的策略描述。可以本地化。 |
-| handler | String | R | 这是一个枚举值，代表实现此安全策略的安全处理程序。可能的值定义为 [Security Object](https://example.com) 中的 [安全常量](https://example.com)，特别是参见 [HandlerName](https://example.com) 对象。 |
-| target | String | R | 这是一个枚举值，代表要加密的目标数据。可能的值定义为 [Security Object](https://example.com) 中以 "EncryptTarget" 为前缀的 [安全常量](https://example.com)。参见 [EncryptTarget](https://example.com) 对象。 |
+| `policyID` | String | R | 这是一个生成的字符串，用于唯一标识安全策略。它并非为人类可读而设计。在新创建的`SecurityPolicy`对象上，可以将此属性设置为已知的`policyId`，以强制任何使用此策略的方法在应用策略前检索正确的安全设置。 |
+| `name` | String | R | 这是用于用户界面的策略名称。可以本地化。 |
+| `description` | String | R | 这是用于用户界面的策略描述。可以本地化。 |
+| `handler` | String | R | 这是一个枚举值，代表实现此安全策略的安全处理程序。可能的值定义为[Security Object](https://example.com)中的[安全常量](https://example.com)，特别是参见`HandlerName`对象。 |
+| `target` | String | R | 这是一个枚举值，代表要加密的目标数据。可能的值定义为[Security Object](https://example.com)中以`"EncryptTarget"`为前缀的[安全常量](https://example.com)。参见`EncryptTarget`对象。 |
 
 ## SecurityHandler 对象
 
-SecurityHandler 对象用于访问安全处理程序的功能，如签名、加密和目录。不同的安全处理程序将具有不同的属性和方法。本节记录了安全对象可能拥有的全部属性和方法。具体的 SecurityHandler 对象可能实现也可能不实现这些属性和方法。
+`SecurityHandler`对象用于访问安全处理程序的功能，如签名、加密和目录。不同的安全处理程序将具有不同的属性和方法。本节记录了安全对象可能拥有的全部属性和方法。具体的`SecurityHandler`对象可能实现也可能不实现这些属性和方法。
 
-SecurityHandler 对象可以使用 **security.getHandler** 方法获取。
+`SecurityHandler`对象可以使用`security.getHandler`方法获取。
 
-*Adobe.PPKLite* 签名的 JavaScript 接口在 Acrobat 5.0 中引入，其余 JavaScript 接口在 Acrobat 6.0 中引入。在 Acrobat 6.0 之前，Acrobat 不支持在第三方安全处理程序中启用 JavaScript。
+`Adobe.PPKLite`签名的 JavaScript 接口在 Acrobat 5.0 中引入，其余 JavaScript 接口在 Acrobat 6.0 中引入。在 Acrobat 6.0 之前，Acrobat 不支持在第三方安全处理程序中启用 JavaScript。
 
-并非所有安全处理程序都启用了 JavaScript。并非所有启用 JavaScript 的处理程序都启用了所有安全操作。第三方公钥安全处理程序可能支持 JavaScript，但仅当它们使用 Acrobat 6.0 中引入的新的 *PubSec* 编程接口时才支持。
+并非所有安全处理程序都启用了 JavaScript。并非所有启用 JavaScript 的处理程序都启用了所有安全操作。第三方公钥安全处理程序可能支持 JavaScript，但仅当它们使用 Acrobat 6.0 中引入的新的`PubSec`编程接口时才支持。
 
 由 Adobe 提供的启用 JavaScript 的处理程序包括：
 
--   *Adobe.PPKLite* 安全处理程序，支持签名和加密，在 Windows 操作系统上通过 Microsoft Active Directory 脚本接口 (ADSI) 提供目录访问；以及
--   *Adobe.AAB* 安全处理程序，提供本地地址簿和目录操作支持。
+- `Adobe.PPKLite`安全处理程序，支持签名和加密，在 Windows 操作系统上通过 Microsoft Active Directory 脚本接口（ADSI）提供目录访问；以及
+- `Adobe.AAB`安全处理程序，提供本地地址簿和目录操作支持。
 
-请注意，用于文档密码加密的标准安全处理程序通常不启用 JavaScript，但是从 Acrobat 7.0 开始，可以使用预定义策略通过标准安全进行加密。更多详细信息，请参见 **encryptUsingPolicy**。
+请注意，用于文档密码加密的标准安全处理程序通常不启用 JavaScript，但是从 Acrobat 7.0 开始，可以使用预定义策略通过标准安全进行加密。更多详细信息，请参见`encryptUsingPolicy`。
 
-同样从 Acrobat 7.0 开始，*Adobe.APS* 处理程序可用于通过 **encryptUsingPolicy** 方法进行加密。此处理程序还将通过目录服务提供目录，但由于不会从此目录返回证书，因此其通用用途有限。
+同样从 Acrobat 7.0 开始，`Adobe.APS`处理程序可用于通过`encryptUsingPolicy`方法进行加密。此处理程序还将通过目录服务提供目录，但由于不会从此目录返回证书，因此其通用用途有限。
 
-**注意：** (Security (S)): **SecurityHandler 对象**只能使用 Security Object 的 **getHandler** 方法创建。此方法仅可用于批处理、控制台、应用程序初始化和菜单事件，并且在 Adobe Reader 中可用。从 Acrobat 7.0 开始，通过菜单事件执行 JavaScript 不再具有特权，更多详细信息，请参见 **通过菜单执行 JavaScript**。
+**注意：**（Security（S））：`SecurityHandler`对象只能使用 Security Object 的`getHandler`方法创建。此方法仅可用于批处理、控制台、应用程序初始化和菜单事件，并且在 Adobe Reader 中可用。从 Acrobat 7.0 开始，通过菜单事件执行 JavaScript 不再具有特权，更多详细信息，请参见**通过菜单执行 JavaScript**。
 
 ## SecurityHandler 属性
 
@@ -20807,13 +21887,14 @@ SecurityHandler 对象可以使用 **security.getHandler** 方法获取。
 |---|---|
 | 5.0 | (S) |
 
-一个数组，包含指定安全处理程序可用的、用户配置的外观的与语言相关的名称。外观用于在签名签名字段时创建签名在页面上的视觉表示。使用 `field.signatureSign` 签名签名字段时，可以将外观名称指定为签名信息对象属性。
+一个数组，包含指定安全处理程序可用的、用户配置的外观的与语言相关的名称。外观用于在签名签名字段时创建签名在页面上的视觉表示。使用`field.signatureSign`签名签名字段时，可以将外观名称指定为签名信息对象属性。
 
-Acrobat 提供了一个标准签名外观模块，该模块被 Adobe 签名插件使用，也可以被第三方签名插件使用。此标准签名外观模块预配置了一个外观，用户可以配置它以包含更多外观。此属性不会返回这一个预配置外观的名称，该外观在用户界面中称为 *Standard Text*。
+Acrobat 提供了一个标准签名外观模块，该模块被 Adobe 签名插件使用，也可以被第三方签名插件使用。此标准签名外观模块预配置了一个外观，用户可以配置它以包含更多外观。此属性不会返回这一个预配置外观的名称，该外观在用户界面中称为`Standard Text`。
 
-如果安全处理程序不支持选择外观，则此属性将返回 null。
+如果安全处理程序不支持选择外观，则此属性将返回`null`。
 
-类型：Array
+类型：`Array`
+
 访问权限：R。
 
 ### digitalIDs
@@ -20824,36 +21905,45 @@ Acrobat 提供了一个标准签名外观模块，该模块被 Adobe 签名插�
 
 此方法返回与此安全处理程序当前选定的数字 ID 相关联的证书。
 
-类型：Object
+类型：`Object`
+
 访问权限：R。
 
 返回值是一个通用对象，具有以下属性：
 
 | 属性 | 类型 | 版本 | 描述 |
 |---|---|---|---|
-| **oEndUserSignCert** | Certificate Object | 6.0 | 与当前选定的数字 ID 相关联的证书，该证书将由此安全处理程序对象在签名时使用。如果没有当前选择，则该属性未定义。 |
-| **oEndUserCryptCert** | Certificate Object | 6.0 | 与当前选定的数字 ID 相关联的证书，该证书将用于使用此安全处理程序对象加密文档。如果没有当前选择，则该属性未定义。 |
-| **certs** | Array of Certificate Objects | 6.0 | 证书数组，对应于此安全处理程序对象可用的所有数字 ID 列表。 |
-| **stores** | Array of String identifying the Digital ID store | 6.0 | 字符串数组，每个 Certificate Object 对应一个字符串，标识存储数字 ID 的存储库。字符串值由安全处理程序决定。对于 *Adobe.PPKLite*，有效值为 'PKCS12' 和 'MSCAPI'。 |
+| `oEndUserSignCert` | Certificate Object | 6.0 | 与当前选定的数字 ID 相关联的证书，该证书将由此安全处理程序对象在签名时使用。如果没有当前选择，则该属性未定义。 |
+| `oEndUserCryptCert` | Certificate Object | 6.0 | 与当前选定的数字 ID 相关联的证书，该证书将用于使用此安全处理程序对象加密文档。如果没有当前选择，则该属性未定义。 |
+| `certs` | Array of Certificate Objects | 6.0 | 证书数组，对应于此安全处理程序对象可用的所有数字 ID 列表。 |
+| `stores` | Array of String identifying the Digital ID store | 6.0 | 字符串数组，每个 Certificate Object 对应一个字符串，标识存储数字 ID 的存储库。字符串值由安全处理程序决定。对于`Adobe.PPKLite`，有效值为`'PKCS12'`和`'MSCAPI'`。 |
 
 ## Acrobat JavaScript 脚本参考
-SecurityHandler 属性
 
-*Adobe.PPKLite* 安全处理程序返回当前所有可用的数字 ID，这些数字 ID 存在于以下任一存储库中：受密码保护的数字 ID 文件（包括 PKCS#12 和 APF），以及在 Windows 操作系统中，存在于 Windows (MCCAPI) 存储库中的 ID。
+### SecurityHandler 属性
 
-`oEndUserSignCert` 和 `oEndUserCryptCert` 属性都可以通过用户界面设置。`oEndUserSignCert` 也可以使用 `login` 方法设置。这意味着 `oEndUserCryptCert` 仅在使用通过 `getHandler` 方法获取的、且 `bUIEngine` 设置为 `true` 的安全处理程序对象时才会返回。
+`Adobe.PPKLite`安全处理程序返回当前所有可用的数字 ID，这些数字 ID 存在于以下任一存储库中：受密码保护的数字 ID 文件（包括 PKCS#12 和 APF），以及在 Windows 操作系统中，存在于 Windows（MCCAPI）存储库中的 ID。
+
+`oEndUserSignCert`和`oEndUserCryptCert`属性都可以通过用户界面设置。`oEndUserSignCert`也可以使用`login`方法设置。这意味着`oEndUserCryptCert`仅在使用通过`getHandler`方法获取的、且`bUIEngine`设置为`true`的安全处理程序对象时才会返回。
 
 **示例**
+
 ```javascript
 var sh = security.getHandler("Adobe.PPKMS", true);
+
 var ids = sh.digitalIDs;
+
 var oCert = ids.oEndUserSignCert;
+
 security.exportToFile(oCert, "/c/MySigningCert.cer");
 ```
 
+
+
+
 ### directories
 
-返回此安全处理程序可用的 `Directory Object` 数组。新的 `Directory Object` 可以使用 `newDirectory` 方法创建。
+返回此安全处理程序可用的`Directory Object`数组。新的`Directory Object`可以使用`newDirectory`方法创建。
 
 | 版本 | 状态 |
 |---|---|
@@ -20865,7 +21955,7 @@ security.exportToFile(oCert, "/c/MySigningCert.cer");
 |---|---|
 | 6.0 | Ⓢ |
 
-返回一个数组，包含指定安全处理程序可用的目录处理程序的、与语言无关的名称。例如，*Adobe.PPKMS* 安全处理程序有一个名为 *Adobe.PPKMS.ADSI* 的目录处理程序，它支持使用 *Microsoft Active Directory Script Interface* (ADSI) 进行查询。使用其 `info` 属性激活新的 `Directory Object` 时，需要有效的目录处理程序名称。
+返回一个数组，包含指定安全处理程序可用的目录处理程序的、与语言无关的名称。例如，`Adobe.PPKMS`安全处理程序有一个名为`Adobe.PPKMS.ADSI`的目录处理程序，它支持使用`Microsoft Active Directory Script Interface`（ADSI）进行查询。使用其`info`属性激活新的`Directory Object`时，需要有效的目录处理程序名称。
 
 ### isLoggedIn
 
@@ -20873,364 +21963,402 @@ security.exportToFile(oCert, "/c/MySigningCert.cer");
 |---|---|
 | 5.0 | Ⓢ |
 
-如果当前已登录到此 `SecurityHandler Object`，则返回 `true`。请参见 `login` 方法。
+如果当前已登录到此`SecurityHandler Object`，则返回`true`。请参见`login`方法。
 
-不同的安全处理程序将有自己的规则来确定此属性的值。*Adobe.PPKLite* 处理程序将在用户登录到配置文件时返回 `true`。
-
-
+不同的安全处理程序将有自己的规则来确定此属性的值。`Adobe.PPKLite`处理程序将在用户登录到配置文件时返回`true`。
 
 ## Adobe.PPKMS
 
-*类型：布尔值*
-*访问权限：R。*
+类型：布尔值  
+访问权限：R。
 
-（也称为凭据文件，实现为PKCS#12文件）。*Adobe.PPKMS* 总是返回 **true**。
+（也称为凭据文件，实现为PKCS#12文件）。`Adobe.PPKMS`总是返回`true`。
 
-# 示例
+## 示例
 
-```
+```javascript
 var ppklite = security.getHandler("Adobe.PPKLite", true);
-console.println( "Is logged in = " + ppklite.isLoggedIn ); // false
-ppklite.login( "dps017", "/C/signatures/DPSmith.pfx");
-console.println( "Is logged in = " + ppklite.isLoggedIn ); // true
+
+console.println("Is logged in = " + ppklite.isLoggedIn); // false
+
+ppklite.login("dps017", "/C/signatures/DPSmith.pfx");
+
+console.println("Is logged in = " + ppklite.isLoggedIn); // true
 ```
 
-# loginName
+## loginName
 
 | 5.0 |  | (S) |  |  |
 | :--- | :--- | :--- | :--- | :--- |
 
-与安全处理程序的当前选定签名数字ID关联的名称。这可能需要调用 **login** 方法来选择签名凭据。如果未选择签名凭据或安全处理程序不支持此属性，则返回值为 **null**。
+与安全处理程序的当前选定签名数字ID关联的名称。这可能需要调用`login`方法来选择签名凭据。如果未选择签名凭据或安全处理程序不支持此属性，则返回值为`null`。
 
-*类型：字符串*
-*访问权限：R。*
+类型：字符串  
+访问权限：R。
 
-# loginPath
-
-| 5.0 |  | (S) |  |  |
-| :--- | :--- | :--- | :--- | :--- |
-
-用于登录安全处理程序的用户配置文件的设备无关路径。如果没有人登录、安全处理程序不支持此属性或此属性与当前登录用户无关，则返回值为 null。
-
-*类型：字符串*
-*访问权限：R。*
-
-# name
+## loginPath
 
 | 5.0 |  | (S) |  |  |
 | :--- | :--- | :--- | :--- | :--- |
 
-安全处理程序的语言无关名称。Default Certificate、Windows Certificate和Entrust Security Handlers的示例值分别为 *Adobe.PPKLite*、*Adobe.PPKMS* 和 *Entrust.PPKEF*。所有安全处理程序都必须支持此属性。
+用于登录安全处理程序的用户配置文件的设备无关路径。如果没有人登录、安全处理程序不支持此属性或此属性与当前登录用户无关，则返回值为`null`。
 
-*类型：字符串*
-*访问权限：R。*
+类型：字符串  
+访问权限：R。
 
-# signAuthor
+## name
+
+| 5.0 |  | (S) |  |  |
+| :--- | :--- | :--- | :--- | :--- |
+
+安全处理程序的语言无关名称。Default Certificate、Windows Certificate和Entrust Security Handlers的示例值分别为`Adobe.PPKLite`、`Adobe.PPKMS`和`Entrust.PPKEF`。所有安全处理程序都必须支持此属性。
+
+类型：字符串  
+访问权限：R。
+
+## signAuthor
 
 | 6. | | Ⓢ | | |
 | :--- | :--- | :--- | :--- | :--- |
 
-安全处理程序是否能够生成经过认证的文档。经过认证的文档是同时使用字节范围签名和对象签名进行签名的文档。对象签名是通过遍历文档的对象树生成的，用于检测和防止对文档的修改。有关修改检测和防止设置的详细信息，请参阅SignatureInfo对象的mdp属性。
+安全处理程序是否能够生成经过认证的文档。经过认证的文档是同时使用字节范围签名和对象签名进行签名的文档。对象签名是通过遍历文档的对象树生成的，用于检测和防止对文档的修改。有关修改检测和防止设置的详细信息，请参阅`SignatureInfo`对象的`mdp`属性。
 
-*类型：布尔值*
-*访问权限：R。*
+类型：布尔值  
+访问权限：R。
 
-# signFDF
+## signFDF
 
 | 6.0 | | Ⓢ | | |
 | :--- | :--- | :--- | :--- | :--- |
 
 指示安全处理程序是否能够签署FDF文件。
 
-*类型：布尔值*
-*访问权限：R。*
+类型：布尔值  
+访问权限：R。
 
-# signInvisible
+## signInvisible
 
 | 5.0 | | Ⓢ | | |
 | :--- | :--- | :--- | :--- | :--- |
 
 安全处理程序是否能够生成不可见签名。
 
-*类型：布尔值*
-*访问权限：R。*
+类型：布尔值  
+访问权限：R。
 
-# signValidate
+## signValidate
 
 | 6.0 | | Ⓢ | | |
 | :--- | :--- | :--- | :--- | :--- |
 
 指示安全处理程序是否能够验证签名。
 
-*类型：布尔值*
-*访问权限：R。*
+类型：布尔值  
+访问权限：R。
 
-# signVisible
+## signVisible
 
 | 5.0 | | Ⓢ | | |
 | :--- | :--- | :--- | :--- | :--- |
 
 安全处理程序是否能够生成可见签名。
 
-*类型：布尔值*
-*访问权限：R。*
+类型：布尔值  
+访问权限：R。
 
-# uiName
+## uiName
 
 | 5.0 | | S | | |
 | :--- | :--- | :--- | :--- | :--- |
 
 安全处理程序的语言相关字符串。此字符串适用于用户界面。所有安全处理程序都必须支持此属性。
 
-*类型：字符串*
-*访问权限：R。*
+类型：字符串  
+访问权限：R。
 
-# 安全处理程序方法
+## 安全处理程序方法
 
-# login
+### login
 
 | 5.0 | | S | | |
 | :--- | :--- | :--- | :--- | :--- |
 
 此方法提供了一种机制，通过它可以访问和选择特定安全处理程序的数字ID。通过用户界面，可以选择一个“默认数字ID”，该数字ID可以是永久持久的，也可以在应用程序运行期间持续。如果通过UI进行了此类选择，则在使用数字ID之前可能不需要登录安全处理程序。
-参数通常特定于特定的处理程序。下面指定了Adobe.PPKLite和Adobe.PPKMS处理程序的行为。
-参数cPassword和cDIPath是为了向后兼容而提供的，也可以作为oParams对象的属性包含。从Acrobat 6.0开始，后一种方法是首选的调用约定。
-另请参阅logout、newUser和loginName。
 
-# 参数
+参数通常特定于特定的处理程序。下面指定了`Adobe.PPKLite`和`Adobe.PPKMS`处理程序的行为。
 
-| **cPassword** | （可选，版本5.0）访问受密码保护的数字ID所需的密码。*Adobe.PPKLite* 支持此参数用于访问数字ID文件和PKCS#11设备。 |
+参数`cPassword`和`cDIPath`是为了向后兼容而提供的，也可以作为`oParams`对象的属性包含。从Acrobat 6.0开始，后一种方法是首选的调用约定。
+
+另请参阅`logout`、`newUser`和`loginName`。
+
+### 参数
+
+| `cPassword` | （可选，版本5.0）访问受密码保护的数字ID所需的密码。`Adobe.PPKLite`支持此参数用于访问数字ID文件和PKCS#11设备。 |
 | :--- | :--- |
-| **cDIPath** | （可选，版本5.0）指向受密码保护的数字ID文件或PKCS#11库的设备无关路径。*Adobe.PPKLite* 支持此参数。 |
+| `cDIPath` | （可选，版本5.0）指向受密码保护的数字ID文件或PKCS#11库的设备无关路径。`Adobe.PPKLite`支持此参数。 |
 
-# LoginParameters 通用对象
+### LoginParameters通用对象
 
-此通用JS对象包含 `login` 方法的参数。它具有以下属性：
+此通用JS对象包含`login`方法的参数。它具有以下属性：
 
 | 属性 | 类型 | 版本 | 描述 |
 | :--- | :--- | :--- | :--- |
-| `cDIPath` | 字符串 | 5.0 | 指向包含数字ID或PKCS#11库的文件的路径。由Adobe.PPKLite安全处理程序支持。 |
-| `cPassword` | 字符串 | 6.0 | 用于验证用户身份的密码。此密码可用于访问受密码保护的数字ID文件或PKCS#11设备。由Adobe.PPKLite安全处理程序支持。请注意，Acrobat不保证此密码在内存中是混淆的。 |
+| `cDIPath` | 字符串 | 5.0 | 指向包含数字ID或PKCS#11库的文件的路径。由`Adobe.PPKLite`安全处理程序支持。 |
+| `cPassword` | 字符串 | 6.0 | 用于验证用户身份的密码。此密码可用于访问受密码保护的数字ID文件或PKCS#11设备。由`Adobe.PPKLite`安全处理程序支持。请注意，Acrobat不保证此密码在内存中是混淆的。 |
 | `cPFX` | 字符串 | 7.0 | （可选）用于登录的整个PFX（十六进制编码）。如果指定了此参数，则它优先于`cDIPath`。请注意，目前无法通过JS检索十六进制编码的PFX文件。这仅在内部使用。 |
 
 支持此方法的所有安全处理程序都应支持此属性。
 
-如果登录成功则返回 `true`，否则返回 `false`。
+如果登录成功则返回`true`，否则返回`false`。
 
 | 属性 | 类型 | 版本 | 描述 |
 | :--- | :--- | :--- | :--- |
-| **oEndUserSignCert** | 通用对象 | 6.0 | 选择一个数字ID用于执行最终用户签名。此属性的值是一个证书对象，或具有与证书对象相同属性名称的通用对象，用于定义被选择的证书。对于特定的处理程序，可能需要也可能不需要调用此方法。例如，如果登录到包含一个签名数字ID的PKCS#12文件（使用*Adobe.PPKLite*），则不需要选择签名凭据。所有安全处理程序都必须能够处理此对象的binary和SHA1Hash属性。如果`bUI`为`true`，则此对象可以为空。 |
-| **cMsg** | 字符串 | 6.0 | 如果`bUI`为`true`，则在登录对话框中显示的消息。 |
-| **cURI** | 字符串 | 7.0 | 用于连接到服务器的URI。仅由*Adobe.APS*处理程序支持。 |
-| **cUserId** | 字符串 | 7.0 | 连接到服务器时使用的用户名。仅由*Adobe.APS*处理程序支持。 |
-| **cDomain** | 字符串 | 7.0 | 连接到服务器时使用的域名。仅由*Adobe.APS*处理程序支持。 |
-| **iSlotID** | 整数 | 7.0 | 指定要登录的PKCS#11设备的插槽ID。此参数仅由*Adobe.PPKLite处理程序*支持。 |
-| **cTokenLabel** | 字符串 | 7.0 | 指定要登录的PKCS#11设备的令牌标签。此参数仅由*Adobe.PPKLite处理程序*支持。 |
+| `oEndUserSignCert` | 通用对象 | 6.0 | 选择一个数字ID用于执行最终用户签名。此属性的值是一个证书对象，或具有与证书对象相同属性名称的通用对象，用于定义被选择的证书。对于特定的处理程序，可能需要也可能不需要调用此方法。例如，如果登录到包含一个签名数字ID的PKCS#12文件（使用`Adobe.PPKLite`），则不需要选择签名凭据。所有安全处理程序都必须能够处理此对象的`binary`和`SHA1Hash`属性。如果`bUI`为`true`，则此对象可以为空。 |
+| `cMsg` | 字符串 | 6.0 | 如果`bUI`为`true`，则在登录对话框中显示的消息。 |
+| `cURI` | 字符串 | 7.0 | 用于连接到服务器的URI。仅由`Adobe.APS`处理程序支持。 |
+| `cUserId` | 字符串 | 7.0 | 连接到服务器时使用的用户名。仅由`Adobe.APS`处理程序支持。 |
+| `cDomain` | 字符串 | 7.0 | 连接到服务器时使用的域名。仅由`Adobe.APS`处理程序支持。 |
+| `iSlotID` | 整数 | 7.0 | 指定要登录的PKCS#11设备的插槽ID。此参数仅由`Adobe.PPKLite`处理程序支持。 |
+| `cTokenLabel` | 字符串 | 7.0 | 指定要登录的PKCS#11设备的令牌标签。此参数仅由`Adobe.PPKLite`处理程序支持。 |
 
-# 示例 1
+### 示例1
 
-```
+```javascript
 // 使用 "Adobe.PPKLite" 安全处理程序对象进行UI操作
-var ppklite = security.getHandler( security.PPKLiteHandler, true );
-var oParams = { cPassword: "dps017", cDIPath: "/C/DPSmith.pfx" }
-ppklite.login( oParams );
+
+var ppklite = security.getHandler(security.PPKLiteHandler, true);
+
+var oParams = { cPassword: "dps017", cDIPath: "/C/DPSmith.pfx" };
+
+ppklite.login(oParams);
+
 <..... 创建签名域并签名 ......>
+
 ppklite.logout();
 ```
 
-```
+```javascript
 // PPKLite - 已登录时使用UI选择凭据
-ppklite.login(
-{ oParams:
-    { oEndUserSignCert: {},
-      cMsg: "选择您的数字ID" },
-      bUI : true
-} );
+
+ppklite.login({
+  oParams: {
+    oEndUserSignCert: {},
+    cMsg: "选择您的数字ID"
+  },
+  bUI: true
+});
 
 // PPKLite - 登录并选择签名凭据
+
 var oCert = { SHA1Hash: "00000000" };
-ppklite.login(
-{ oParams:
-    { cDIPath: "/C/test/DPSmith.pfx",
-      cPassword: "dps017",
-      oEndUserSignCert: oCert,
-      cMsg: "选择您的数字ID"
-    },
-  bUI : true
+
+ppklite.login({
+  oParams: {
+    cDIPath: "/C/test/DPSmith.pfx",
+    cPassword: "dps017",
+    oEndUserSignCert: oCert,
+    cMsg: "选择您的数字ID"
+  },
+  bUI: true
 });
 ```
 
-# 示例 2
+### 示例2
 
-```
+```javascript
 // 使用 "Adobe.PPKMS" 安全处理程序对象
-var ppkms = security.getHandler( "Adobe.PPKMS" );
+
+var ppkms = security.getHandler("Adobe.PPKMS");
 
 // 选择签名时使用的凭据
+
 var oCert = myCerts[0];
-ppkms.login( { oParams: { oEndUserSignCert: oCert } } );
+
+ppkms.login({ oParams: { oEndUserSignCert: oCert } });
 ```
 
-# 示例 3
+### 示例3
 
-使用 *Adobe.APS* 安全处理程序对象。此示例使用 **security.APSHandler**，请参阅 [安全常量](https://example.com)。
+使用`Adobe.APS`安全处理程序对象。此示例使用`security.APSHandler`，请参阅[安全常量](https://example.com)。
 
-```
-var aps = security.getHandler( security.APSHandler, true );
+```javascript
+var aps = security.getHandler(security.APSHandler, true);
+
 var oParams = { cUserName: "acrobat", cPassword: "adobedon" };
-aps.login( oParams );
+
+aps.login(oParams);
+
 <..... 使用此处理程序和策略ID加密文档 .....>
+
 aps.logout();
 ```
 
-有关签署PDF文档的详细信息，请参阅 [signatureSign](https://example.com)。
+有关签署PDF文档的详细信息，请参阅[signatureSign](https://example.com)。
 
-# logout
+### logout
 
 | 5.0 | | Ⓐ | | |
 | :--- | :--- | :--- | :--- | :--- |
 
-为 **SecurityHandler Object** 注销。此方法由 *Adobe.PPKLite* 使用，不由 *Adobe.PPKMS* 使用。
+为`SecurityHandler Object`注销。此方法由`Adobe.PPKLite`使用，不由`Adobe.PPKMS`使用。
 
-另请参阅 [login](https://example.com) 方法。
+另请参阅[login](https://example.com)方法。
 
+### 参数
 
+无。
 
-# 参数
+### 返回值
 
-无
+从Acrobat 6.0开始，如果注销成功则返回`true`，否则返回`false`。早期的Acrobat版本不生成返回值。
 
-# 返回值
-
-从 Acrobat 6.0 开始，如果注销成功则返回 **true**，否则返回 **false**。早期的 Acrobat 版本不生成返回值。
-
-# newDirectory
+### newDirectory
 
 6.0
 
-返回一个新 **Directory Object**（目录对象）。必须使用其 **info** 属性激活目录对象，然后才能将其标记为持久化并用于搜索。现有的目录对象可以使用 **directories** 属性来发现。
+返回一个新的`Directory Object`（目录对象）。必须使用其`info`属性激活目录对象，然后才能将其标记为持久化并用于搜索。现有的目录对象可以使用`directories`属性来发现。
 
-# 参数
+### 参数
 
-无
+无。
 
-# 返回值
+### 返回值
 
-返回一个新 **Directory Object**（目录对象）。
+返回一个新的`Directory Object`（目录对象）。
 
-# newUser
+### newUser
 
 5.0
 
-此方法支持通过创建新的自签名凭证来注册 *Adobe.PPKLite* 和 *Adobe.PPKMS* 安全处理器。
+此方法支持通过创建新的自签名凭证来注册`Adobe.PPKLite`和`Adobe.PPKMS`安全处理程序。
 
-**注意：** (Security Ⓢ)：此方法不允许用户覆盖现有文件。
+**注意：**（Security Ⓢ）：此方法不允许用户覆盖现有文件。
 
-# 参数
+### 参数
 
 | 名称 | 描述 |
 |---|---|
-| **cPassword** | （可选）访问受密码保护的数字 ID 文件所需的密码。*Adobe.PPKMS* 会忽略此参数。 |
-| **cDIPath** | （可选）受密码保护的数字 ID 文件的设备独立路径。*Adobe.PPKMS* 会忽略此参数。**注意：** (Security Ⓢ)：从 Acrobat 6.0 开始，参数 **cDIPath** 必须是 **Safe Path**（安全路径）并以扩展名 **.pfx** 结尾。 |
-| **oRDN** | （可选）作为 **RDN Generic Object**（RDN 通用对象）的相对可分辨名称 (RDN)，包含证书的颁发者或主题名称。唯一必需的字段是 **cn**。如果提供国家/地区 **c**，则必须是两个字符，使用 ISO 3166 标准（例如，'US'）。 |
-| **oCPS** | （可选，版本 6.0）一个通用对象，包含将嵌入到证书策略扩展中的证书策略信息。该对象必须包含属性 **oid**，表示证书策略对象标识符。可能存在的其他属性是 **url** 和（用户）**notice**。url 是指向有关证书颁发所依据策略的详细信息的 URL，用户 **notice** 是同一信息的简写版本，嵌入在证书中。 |
-| **bUI** | （可选，版本 6.0）当设置为 **true** 时，可以使用用户界面进行注册。所有支持此方法的安全处理器都支持此参数。 |
-| **cStore** | （可选，版本 7.0）一个字符串，标识必须存储生成凭证的存储库。对于 *Adobe.PPKLite* 安全处理器，有效的存储标识符是 "PKCS12" 和 "MSCAPI"。如果省略此参数并提供了 **cDIPath**，则生成的凭证存储在 PKCS#12 文件中；否则存储在 CAPI 存储库中。 |
+| `cPassword` | （可选）访问受密码保护的数字ID文件所需的密码。`Adobe.PPKMS`会忽略此参数。 |
+| `cDIPath` | （可选）受密码保护的数字ID文件的设备独立路径。`Adobe.PPKMS`会忽略此参数。**注意：**（Security Ⓢ）：从Acrobat 6.0开始，参数`cDIPath`必须是`Safe Path`（安全路径）并以扩展名`.pfx`结尾。 |
+| `oRDN` | （可选）作为`RDN Generic Object`（RDN通用对象）的相对可分辨名称（RDN），包含证书的颁发者或主题名称。唯一必需的字段是`cn`。如果提供国家/地区`c`，则必须是两个字符，使用ISO 3166标准（例如，`'US'`）。 |
+| `oCPS` | （可选，版本6.0）一个通用对象，包含将嵌入到证书策略扩展中的证书策略信息。该对象必须包含属性`oid`，表示证书策略对象标识符。可能存在的其他属性是`url`和（用户）`notice`。`url`是指向有关证书颁发所依据策略的详细信息的URL，用户`notice`是同一信息的简写版本，嵌入在证书中。 |
+| `bUI` | （可选，版本6.0）当设置为`true`时，可以使用用户界面进行注册。所有支持此方法的安全处理程序都支持此参数。 |
+| `cStore` | （可选，版本7.0）一个字符串，标识必须存储生成凭证的存储库。对于`Adobe.PPKLite`安全处理程序，有效的存储标识符是`"PKCS12"`和`"MSCAPI"`。如果省略此参数并提供了`cDIPath`，则生成的凭证存储在PKCS#12文件中；否则存储在CAPI存储库中。 |
 
-# 返回值
+### 返回值
 
-如果成功返回 **true**，如果不成功则抛出异常。
+如果成功返回`true`，如果不成功则抛出异常。
 
-# 示例
+### 示例
 
-```
+```javascript
 // 创建一个新的 PPKLite 自签名凭证（Acrobat 5.0 语法）
+
 var ppklite = security.getHandler(security.PPKLiteHandler);
+
 var oRDN = { cn: "Fred NewUser", c: "US" };
-var oCPS = {oid: "1.2.3.4.5",
-    url: "http://www.myca.com/mycps.html",
-    notice: "This is a self generated certificate, hence the "
-            + "recipient must verify its authenticity through an out "
-            + "of band mechanism" };
-ppklite.newUser( "testtest", "/d/temp/FredNewUser.pfx", oRDN, oCPS);
+
+var oCPS = {
+  oid: "1.2.3.4.5",
+  url: "http://www.myca.com/mycps.html",
+  notice: "This is a self generated certificate, hence the "
+    + "recipient must verify its authenticity through an out "
+    + "of band mechanism"
+};
+
+ppklite.newUser("testtest", "/d/temp/FredNewUser.pfx", oRDN, oCPS);
 
 // 通用对象语法的替代方案，允许额外参数
+
 var oParams = {
-    cPassword : "myPassword",
-    cDIPath : "/d/temp/FredNewUser.pfx",
-    oRDN : oRDN,
-    oCPS : oCPS,
-    bUI : false
+  cPassword: "myPassword",
+  cDIPath: "/d/temp/FredNewUser.pfx",
+  oRDN: oRDN,
+  oCPS: oCPS,
+  bUI: false
 };
-ppklite.newUser( oParams );
+
+ppklite.newUser(oParams);
 
 // 使用现有签名字段中的证书创建 RDN
-var f = this.getField( "mySignature" );
+
+var f = this.getField("mySignature");
+
 f.signatureValidate();
+
 var sigInfo = f.signatureInfo();
+
 var certs = sigInfo.certificates;
+
 var oSubjectDN = certs[0].subjectDN;
+
 ppklite.newUser({
-    cPassword: "dps017",
-    cDIPPath: "/c/temp/DPSmith.pfx",
-    oRDN: oSubjectDN
+  cPassword: "dps017",
+  cDIPPath: "/c/temp/DPSmith.pfx",
+  oRDN: oSubjectDN
 });
 ```
 
-# setPasswordTimeout
+
+
+
+# `setPasswordTimeout`
 
 5.0
 
-设置两次签名之间密码过期前的秒数。此方法仅受 *Adobe.PPKLite* 安全处理器支持。对于此处理器，新用户的默认超时值为 0（始终需要密码）。
+设置两次签名之间密码过期前的秒数。此方法仅受`Adobe.PPKLite`安全处理器支持。对于此处理器，新用户的默认超时值为 0（始终需要密码）。
 
-# 参数
+## 参数
 
 | 名称 | 描述 |
 |---|---|
-| cPassword | 设置超时值所需的密码。 |
-| iTimeout | 超时值（以秒为单位）。设置为 0 表示始终过期（即始终需要密码）。设置为 0x7FFFFFFF 表示永不超时。 |
+| `cPassword` | 设置超时值所需的密码。 |
+| `iTimeout` | 超时值（以秒为单位）。设置为 0 表示始终过期（即始终需要密码）。设置为`0x7FFFFFFF`表示永不超时。 |
 
-# 返回值
+## 返回值
 
-如果用户未登录到 *Adobe.PPKLite* 安全处理器，或因任何其他原因失败，则抛出异常。
+如果用户未登录到`Adobe.PPKLite`安全处理器，或因任何其他原因失败，则抛出异常。
 
-# 示例
+## 示例
 
-此示例登录到 *PPKLite* 安全处理器，并将密码超时设置为 30 秒。如果密码超时已过期（在此示例中为 30 秒），签名者必须提供密码。如果密码尚未超时，则无需密码。
+此示例登录到`PPKLite`安全处理器，并将密码超时设置为 30 秒。如果密码超时已过期（在此示例中为 30 秒），签名者必须提供密码。如果密码尚未超时，则无需密码。
 
 ```
 var ppklite= security.getHandler( "Adobe.PPKLite" );
+
 ppklite.login( "dps017", "/d/profiles/DPSmith.pfx" );
+
 ppklite.setPasswordTimeout( "dps017", 30 );
 ```
 
-# SignatureInfo 对象
 
-一个包含数字签名属性的通用 JS 对象。所有处理器都支持某些属性，并且可以支持其他属性。SignatureInfo 对象由字段方法 **field.signatureValidate** 和 **field.signatureInfo** 返回，并传递给方法 **FDF.signatureSign** 和 **FDF.signatureValidate**。在签署对象时可以指定可写属性，参见 **field.signatureInfo** 和 **FDF.signatureSign**。
 
-# SignatureInfo 对象属性
+
+# `SignatureInfo` 对象
+
+一个包含数字签名属性的通用 JS 对象。所有处理器都支持某些属性，并且可以支持其他属性。`SignatureInfo` 对象由字段方法 `field.signatureValidate` 和 `field.signatureInfo` 返回，并传递给方法 `FDF.signatureSign` 和 `FDF.signatureValidate`。在签署对象时可以指定可写属性，参见 `field.signatureInfo` 和 `FDF.signatureSign`。
+
+# `SignatureInfo` 对象属性
 
 所有处理器都定义以下属性：
 
-### SignatureInfo 对象属性
+## `SignatureInfo` 对象属性
 
 | 属性 | 类型 | 访问 | 版本 | 描述 |
 | :--- | :--- | :--- | :--- | :--- |
-| **buildInfo** | Object | R | 6.0 | 一个包含签名软件构建和版本信息的对象。此对象的格式在本文档中未描述。可能会发布一份包含此信息的 Acrobat 技术说明。该技术说明的主题是签名构建属性字典。 |
-| **date** | Date Object | R | 5.0 | 创建签名的日期和时间，作为 JS 日期对象返回。 |
-| **dateTrusted** | Boolean | R | 7.0 | 此布尔值表示“日期”是否来自可信来源。如果此值不存在，则应假定日期来自不可信来源（例如签名者的计算机系统时间）。 |
-| **handlerName** | String | R | 5.0 | 在签名字典中指定为 Filter 属性的安全处理器的语言无关名称。这通常是创建签名的安全处理器的名称，也可以是创建者希望在验证签名时使用其名称的安全处理器。 |
-| **handlerUserName** | String | R | 5.0 | 与 **handlerName** 指定的安全处理器相对应的依赖于语言的名称。仅当指定的安全处理器可用时才可用。 |
-| **handlerUIName** | String | R | 5.0 | 与 **handlerName** 指定的安全处理器相对应的依赖于语言的名称。仅当指定的安全处理器可用时才可用。 |
+| `buildInfo` | Object | R | 6.0 | 一个包含签名软件构建和版本信息的对象。此对象的格式在本文档中未描述。可能会发布一份包含此信息的 Acrobat 技术说明。该技术说明的主题是签名构建属性字典。 |
+| `date` | Date Object | R | 5.0 | 创建签名的日期和时间，作为 JS 日期对象返回。 |
+| `dateTrusted` | Boolean | R | 7.0 | 此布尔值表示“日期”是否来自可信来源。如果此值不存在，则应假定日期来自不可信来源（例如签名者的计算机系统时间）。 |
+| `handlerName` | String | R | 5.0 | 在签名字典中指定为 Filter 属性的安全处理器的语言无关名称。这通常是创建签名的安全处理器的名称，也可以是创建者希望在验证签名时使用其名称的安全处理器。 |
+| `handlerUserName` | String | R | 5.0 | 与 `handlerName` 指定的安全处理器相对应的依赖于语言的名称。仅当指定的安全处理器可用时才可用。 |
+| `handlerUIName` | String | R | 5.0 | 与 `handlerName` 指定的安全处理器相对应的依赖于语言的名称。仅当指定的安全处理器可用时才可用。 |
 | `location` | String | R/W | 5.0 | 签名时用户指定的可选位置。这可以是物理位置（例如城市）或主机名。 |
-| `mdp` | String | R/W | 6.0 | 用于签署正在读取的字段或 FDF 对象的修改检测和防止 (MDP) 设置，或用于签名的 MDP 设置。值为：`allowNone`、`allowAll`、`default`、`defaultAndComments`。详细信息请参见修改检测和防止 (MDP) 值。默认值 **allowAll** 表示签名未使用 MDP，因此这不是作者签名。 |
+| `mdp` | String | R/W | 6.0 | 用于签署正在读取的字段或 FDF 对象的修改检测和防止（MDP）设置，或用于签名的 MDP 设置。值为：`allowNone`、`allowAll`、`default`、`defaultAndComments`。详细信息请参见修改检测和防止（MDP）值。默认值 `allowAll` 表示签名未使用 MDP，因此这不是作者签名。 |
 | `name` | String | R | 5.0 | 创建签名的用户名称。 |
-| `numFieldsAltered` | Number | R | 仅 5.0 | 已弃用。上一个签名与此签名之间更改的字段数量。仅用于签名字段。从 Acrobat 7.0 开始，应使用 signatureGetModifications 提供的功能。 |
-| `numFieldsFilledIn` | Number | R | 仅 5.0 | 已弃用。上一个签名与此签名之间填写的字段数量。仅用于签名字段。从 Acrobat 7.0 开始，应使用 signatureGetModifications 提供的功能。 |
+| `numFieldsAltered` | Number | R | 仅 5.0 | 已弃用。上一个签名与此签名之间更改的字段数量。仅用于签名字段。从 Acrobat 7.0 开始，应使用 `signatureGetModifications` 提供的功能。 |
+| `numFieldsFilledIn` | Number | R | 仅 5.0 | 已弃用。上一个签名与此签名之间填写的字段数量。仅用于签名字段。从 Acrobat 7.0 开始，应使用 `signatureGetModifications` 提供的功能。 |
 
-
-
-## SignatureInfo 对象属性
+## `SignatureInfo` 对象属性
 
 | 属性 | 类型 | 访问权限 | 版本 | 描述 |
 |---|---|---|---|---|
@@ -21239,15 +22367,15 @@ ppklite.setPasswordTimeout( "dps017", 30 );
 | `reason` | String | R/W | 5.0 | 用户指定的签名原因。 |
 | `revision` | Number | R | 5.0 | 此签名字段所对应的签名修订版本。仅用于签名字段。 |
 | `sigValue` | String | R | 7.0 | 签名的原始字节，以十六进制编码字符串形式表示。 |
-| `status` | Number | R | 5.0 | 签名的有效性状态，在上次调用 `signatureValidate` 时计算。<br><br>请参见第 568 页表格 "`status 和 idValidity 属性`" 中 status 属性的返回码。 |
+| `status` | Number | R | 5.0 | 签名的有效性状态，在上次调用 `signatureValidate` 时计算。<br><br>请参见第 568 页表格“`status` 和 `idValidity` 属性”中 `status` 属性的返回码。 |
 | `statusText` | String | R | 5.0 | 与语言相关的文本字符串，适用于用户显示，表示签名的有效性状态，在上次调用 `signatureValidate` 时计算。 |
-| `subFilter` | String | R/W | 6.0 | 签名时使用的格式。支持的值的完整列表请查阅 PDF 参考手册。<br><br>公钥签名使用的已知值包括 adbe.pkcs7.sha1、adbe.pkcs7.detached 和 adbe.x509.rsa_sha1。调用者必须知道特定的签名处理程序是否支持此格式，这一点很重要。 |
-| `timeStamp` | String | W | 7.0 | 用于获取签名时间戳的时间戳服务器 URL。获取时间戳仅支持 http(s) 方案/传输协议。这是一个只写属性。如果签名被盖上时间戳，在验证期间，属性 "dateTrusted" 将被设置为 `true`（前提是时间戳签名可信），并且 `verifyDate` 与签名日期将相同。 |
+| `subFilter` | String | R/W | 6.0 | 签名时使用的格式。支持的值的完整列表请查阅 PDF 参考手册。<br><br>公钥签名使用的已知值包括 `adbe.pkcs7.sha1`、`adbe.pkcs7.detached` 和 `adbe.x509.rsa_sha1`。调用者必须知道特定的签名处理程序是否支持此格式，这一点很重要。 |
+| `timeStamp` | String | W | 7.0 | 用于获取签名时间戳的时间戳服务器 URL。获取时间戳仅支持 HTTP(S) 方案/传输协议。这是一个只写属性。如果签名被盖上时间戳，在验证期间，属性 `dateTrusted` 将被设置为 `true`（前提是时间戳签名可信），并且 `verifyDate` 与签名日期将相同。 |
 | `verifyDate` | Date Object | R | 7.0 | 签名被验证的日期和时间（如果签名已被验证），以 JS 日期对象形式返回。 |
-| `verifyHandlerName` | String | R | 6.0 | 用于验证此签名的安全处理程序的语言无关名称。如果签名尚未验证，即 status 属性的值为 1，则此值为 `null`。 |
-| `verifyHandlerUIName` | String | R | 6.0 | 与 verifyHandlerName 指定的安全处理程序相对应的、与语言相关的名称。如果签名尚未验证，即 status 属性的值为 1，则此值为 null。 |
+| `verifyHandlerName` | String | R | 6.0 | 用于验证此签名的安全处理程序的语言无关名称。如果签名尚未验证，即 `status` 属性的值为 1，则此值为 `null`。 |
+| `verifyHandlerUIName` | String | R | 6.0 | 与 `verifyHandlerName` 指定的安全处理程序相对应的、与语言相关的名称。如果签名尚未验证，即 `status` 属性的值为 1，则此值为 `null`。 |
 
-## SignatureInfo 对象公钥安全处理程序属性
+# `SignatureInfo` 对象公钥安全处理程序属性
 
 公钥安全处理程序可以定义以下附加属性：
 
@@ -21258,16 +22386,16 @@ ppklite.setPasswordTimeout( "dps017", 30 );
 | `contactInfo` | String | R/W | 5.0 | 用户指定的、用于确定信任的联系信息。例如，文档收件人可用于联系作者以建立信任的电话号码。不推荐用于建立信任的可扩展解决方案。 |
 | `byteRange` | Array | R | 6.0 | 一个数字数组，指示此签名所涵盖的字节范围。 |
 | `docValidity` | Number | R | 6.0 | 签名的文档字节范围摘要部分的有效性状态，在上次调用 `signatureValidate` 时计算。所有 PDF 文档签名字段签名都包含一个字节范围摘要。返回码的详细信息请参见有效性值。 |
-| `idPrivValidity` | Number | R | 6.0 | 返回签名者身份的私密有效性。此值特定于处理程序。*Adobe.PPKLite* 和 *Adobe.PPKMS* 处理程序支持的值请参见私有有效性值。除非签名已被验证（即 status 属性的值为 1），否则此值为 0。 |
-| `idValidity` | Number | R | 6.0 | 以数字形式返回签名者身份的有效性。请参见第 568 页表格 "status 和 idValidity 属性" 中 **idValidity** 属性的返回码。 |
+| `idPrivValidity` | Number | R | 6.0 | 返回签名者身份的私密有效性。此值特定于处理程序。`Adobe.PPKLite` 和 `Adobe.PPKMS` 处理程序支持的值请参见私有有效性值。除非签名已被验证（即 `status` 属性的值为 1），否则此值为 0。 |
+| `idValidity` | Number | R | 6.0 | 以数字形式返回签名者身份的有效性。请参见第 568 页表格“`status` 和 `idValidity` 属性”中 `idValidity` 属性的返回码。 |
 | `objValidity` | Number | R | 6.0 | 签名的对象摘要部分的有效性状态，在上次调用 `signatureValidate` 时计算。对于 PDF 文档，签名字段作者签名和文档级应用程序权限签名包含对象摘要。所有 FDF 文件都使用对象摘要进行签名。返回码的详细信息请参见有效性值。 |
-| `revInfo` | Object | R | 7.0 | 一个包含两个属性的通用对象；"CRL" 和 "OCSP"。这两个属性都是字符串数组，其中每个字符串包含用于执行证书吊销检查的吊销信息的原始字节。这些字符串是十六进制编码的。对于 "CRL"，该字符串代表 CRL；而对于 "OCSP"，该字符串代表 OCSP 响应。仅当应用程序首选项中填充它们的选项开启时，才会填充这些属性，因为此数据可能变得非常大。 |
-| `trustFlags` | Number | R | 6.0 | 此数字中的位指示签名者被信任的用途。仅当 status 属性的值为 4 时，此值才有效。这些信任设置源自收件人信任数据库中的信任设置，例如 Acrobat 通讯簿（Adobe.AAB）。位分配如下：<br>- 1- 用于签名的信任<br>- 2- 用于文档认证的信任<br>- 3- 用于多媒体等动态内容的信任<br>- 4- Adobe 内部使用<br>- 5- PDF 文件中的 javascript 被信任可在正常 PDF 限制之外运行 |
+| `revInfo` | Object | R | 7.0 | 一个包含两个属性的通用对象：`CRL` 和 `OCSP`。这两个属性都是字符串数组，其中每个字符串包含用于执行证书吊销检查的吊销信息的原始字节。这些字符串是十六进制编码的。对于 `CRL`，该字符串代表 CRL；而对于 `OCSP`，该字符串代表 OCSP 响应。仅当应用程序首选项中填充它们的选项开启时，才会填充这些属性，因为此数据可能变得非常大。 |
+| `trustFlags` | Number | R | 6.0 | 此数字中的位指示签名者被信任的用途。仅当 `status` 属性的值为 4 时，此值才有效。这些信任设置源自收件人信任数据库中的信任设置，例如 Acrobat 通讯簿（`Adobe.AAB`）。位分配如下：<br>- 1 - 用于签名的信任<br>- 2 - 用于文档认证的信任<br>- 3 - 用于多媒体等动态内容的信任<br>- 4 - Adobe 内部使用<br>- 5 - PDF 文件中的 JavaScript 被信任可在正常 PDF 限制之外运行 |
 | `password` | String | W | 5.0 | 访问要用于签名的私钥时进行身份验证所需的密码。根据安全处理程序的策略，这可能是必需的，也可能不是。 |
 
-## status 和 idValidity 属性
+# `status` 和 `idValidity` 属性
 
-下表列出了 Signature Info 对象的 status 和 idValidity 属性返回的代码。
+下表列出了 `SignatureInfo` 对象的 `status` 和 `idValidity` 属性返回的代码。
 
 | 状态码 | 描述 |
 |---|---|
@@ -21278,79 +22406,74 @@ ppklite.setPasswordTimeout( "dps017", 30 );
 | 3 | 文档签名有效，但签名者的身份无法验证。 |
 | 4 | 文档签名有效，且签名者的身份有效。 |
 
-
-
 # 有效性值
 
-以下代码由 **docValidity** 和 **objValidity** 返回（参见 [SignatureInfo 对象公钥安全处理器属性](#)），允许比 **status** 属性更细粒度地理解签名的有效性。
+以下代码由 `docValidity` 和 `objValidity` 返回（参见[`SignatureInfo` 对象公钥安全处理程序属性](#signatureinfo-对象公钥安全处理程序属性)），允许比 `status` 属性更细粒度地理解签名的有效性。
 
 | 状态码 | 描述 |
-| --- | --- |
-| kDSSigValUnknown | 有效性尚未确定。 |
-| kDSSigValUnknownTrouble | 由于验证过程中遇到错误，无法确定有效性。 |
-| kDSSigValUnknownBytesNotReady | 无法确定有效性，因为并非所有字节都可用，例如在网页浏览器中查看文件时。即使字节并非立即可用，如果底层实现在字节未就绪时阻塞，也可能不返回此值。Adobe 不保证验证检查是否会阻塞，但 Acrobat 6.0 中的实现在验证 `docValidity` 时会阻塞，而在验证 `objValidity` 时不会阻塞。 |
-| kDSSigValInvalidTrouble | 此摘要的有效性未被计算，因为此签名中的格式或信息存在错误。有足够证据表明签名无效。 |
-| kDSSigValInvalidTrouble | 此摘要的有效性未被使用（例如，如果没有字节范围，则没有文档有效性）。 |
-| kDSSigValJustSigned | 签名刚刚签署，因此隐含有效。 |
-| kDSSigValFalse | 摘要或有效性无效 |
-| kDSSigValTrue | 摘要或有效性有效 |
+|---|---|
+| `kDSSigValUnknown` | 有效性尚未确定。 |
+| `kDSSigValUnknownTrouble` | 由于验证过程中遇到错误，无法确定有效性。 |
+| `kDSSigValUnknownBytesNotReady` | 无法确定有效性，因为并非所有字节都可用，例如在网页浏览器中查看文件时。即使字节并非立即可用，如果底层实现在字节未就绪时阻塞，也可能不返回此值。Adobe 不保证验证检查是否会阻塞，但 Acrobat 6.0 中的实现在验证 `docValidity` 时会阻塞，而在验证 `objValidity` 时不会阻塞。 |
+| `kDSSigValInvalidTrouble` | 此摘要的有效性未被计算，因为此签名中的格式或信息存在错误。有足够证据表明签名无效。 |
+| `kDSSigValInvalidTrouble` | 此摘要的有效性未被使用（例如，如果没有字节范围，则没有文档有效性）。 |
+| `kDSSigValJustSigned` | 签名刚刚签署，因此隐含有效。 |
+| `kDSSigValFalse` | 摘要或有效性无效。 |
+| `kDSSigValTrue` | 摘要或有效性有效。 |
 
 # 私有有效性值
 
-验证签名者身份的有效性特定于用于验证身份的处理器。此值可能包含有关身份的有用信息。身份在 **idPrivValidity** 属性中返回。此处显示了 Adobe.PPKMS 和 _Adobe.PPKLite_ 安全处理器的值。此值也映射到所有处理器通用的 **idValidity** 值。
+验证签名者身份的有效性特定于用于验证身份的处理器。此值可能包含有关身份的有用信息。身份在 `idPrivValidity` 属性中返回。此处显示了 `Adobe.PPKMS` 和 `Adobe.PPKLite` 安全处理器的值。此值也映射到所有处理器通用的 `idValidity` 值。
 
-| 状态码 | idValidity 映射 | 安全处理器 | 描述 |
+| 状态码 | `idValidity` 映射 | 安全处理器 | 描述 |
 | :--- | :--- | :--- | :--- |
-| **kIdUnknown** | 1 (unknown) | PPKMS, PPKLite | 有效性尚未确定。 |
-| **kIdTrouble** | 1 (unknown) | PPKMS, PPKLite | 由于错误（例如内部错误）无法确定有效性，或者无法构建链，或者无法检查基本策略。 |
-| **kIdInvalid** | 2 (invalid) | PPKMS, PPKLite | 证书无效：不是时间嵌套、签名无效、约束无效/不支持、扩展无效、链是循环的。 |
-| **kIdNotTimeValid** | 2 (invalid) | PPKMS, PPKLite | 证书超出其时间窗口（太早、太晚）。 |
-| **kIdRevoked** | 2 (invalid) | PPKMS | 证书已被吊销。 |
-| **kIdUntrustedRoot** | 1 (unknown) | PPKMS, PPKLite | 证书具有不受信任的根证书。 |
-| **kIdBrokenChain** | 2 (invalid) | PPKMS, PPKLite | 无法构建证书链到自签名根证书。 |
-| **kIdPathLenConstraint** | 2 (invalid) | PPKLite | 证书链已超过指定的长度限制。此限制在链中某个证书的基本约束扩展中指定。 |
-| **kIdCriticalExtension** | 1 (unknown) | PPKMS | 链中的某个证书具有无法识别的关键扩展。 |
-| **kIdJustSigned** | 4 (valid) | PPKMS, PPKLite | 刚刚由用户签署（类似于 kIdIsSelf） |
-| **kIdAssumedValid** | 3 (idunknown) | PPKMS | 证书对受信任的根有效，但无法检查吊销，并且_未被要求_。 |
-| **kIdIsSelf** | 4 (valid) | PPKMS, PPKLite | 证书是我的凭据（未进行进一步检查）。 |
-| kIdValid | 4 (valid) | PPKMS, PPKLite | 证书对受信任的根（在 Windows 或 Acrobat 通讯簿中）有效。 |
-| kIdRevocationUnknown | ? | PPKMS, PPKLite | 证书对受信任的根有效，但无法检查吊销，并且被用户要求。 |
+| `kIdUnknown` | 1 (unknown) | PPKMS, PPKLite | 有效性尚未确定。 |
+| `kIdTrouble` | 1 (unknown) | PPKMS, PPKLite | 由于错误（例如内部错误）无法确定有效性，或者无法构建链，或者无法检查基本策略。 |
+| `kIdInvalid` | 2 (invalid) | PPKMS, PPKLite | 证书无效：不是时间嵌套、签名无效、约束无效/不支持、扩展无效、链是循环的。 |
+| `kIdNotTimeValid` | 2 (invalid) | PPKMS, PPKLite | 证书超出其时间窗口（太早、太晚）。 |
+| `kIdRevoked` | 2 (invalid) | PPKMS | 证书已被吊销。 |
+| `kIdUntrustedRoot` | 1 (unknown) | PPKMS, PPKLite | 证书具有不受信任的根证书。 |
+| `kIdBrokenChain` | 2 (invalid) | PPKMS, PPKLite | 无法构建证书链到自签名根证书。 |
+| `kIdPathLenConstraint` | 2 (invalid) | PPKLite | 证书链已超过指定的长度限制。此限制在链中某个证书的基本约束扩展中指定。 |
+| `kIdCriticalExtension` | 1 (unknown) | PPKMS | 链中的某个证书具有无法识别的关键扩展。 |
+| `kIdJustSigned` | 4 (valid) | PPKMS, PPKLite | 刚刚由用户签署（类似于 `kIdIsSelf`）。 |
+| `kIdAssumedValid` | 3 (idunknown) | PPKMS | 证书对受信任的根有效，但无法检查吊销，并且未被要求。 |
+| `kIdIsSelf` | 4 (valid) | PPKMS, PPKLite | 证书是我的凭据（未进行进一步检查）。 |
+| `kIdValid` | 4 (valid) | PPKMS, PPKLite | 证书对受信任的根（在 Windows 或 Acrobat 通讯簿中）有效。 |
+| `kIdRevocationUnknown` | ? | PPKMS, PPKLite | 证书对受信任的根有效，但无法检查吊销，并且被用户要求。 |
 
-# 修改检测和防止 (MDP) 值
+# 修改检测和防止（MDP）值
 
-修改检测和防止 (MDP) 设置控制在签名失效前文档中允许发生哪些更改。更改记录在字节范围之外，对于签名字段，可以包括作为文档一部分增量保存的更改，或在打开文档时和验证签名之间在内存中发生的更改。MDP 设置只能应用于文档中的第一个签名。使用 MDP 将导致创建作者签名。MDP 具有以下四个值之一：
+修改检测和防止（MDP）设置控制在签名失效前文档中允许发生哪些更改。更改记录在字节范围之外，对于签名字段，可以包括作为文档一部分增量保存的更改，或在打开文档时和验证签名之间在内存中发生的更改。MDP 设置只能应用于文档中的第一个签名。使用 MDP 将导致创建作者签名。MDP 具有以下四个值之一：
 
-**allowAll**：允许对文档进行所有更改，而不会使签名失效。这导致 MDP 不用于签名。这是 Acrobat 4.0 到 5.1 的行为。
-
-**allowNone**：不允许对文档进行任何更改而不使签名失效。请注意，这也会锁定作者的签名。
-
-**default**：如果文档中存在表单字段，则允许填写表单字段，否则不允许对文档进行任何更改而不使签名失效。
-
-**defaultAndComments**：如果文档中存在表单字段，则允许填写表单字段，并允许添加、删除或修改注释（评论），否则不允许对文档进行任何更改而不使签名失效。请注意，注释可用于遮挡文档的某些部分，从而影响文档的视觉呈现。
+- `allowAll`：允许对文档进行所有更改，而不会使签名失效。这导致 MDP 不用于签名。这是 Acrobat 4.0 到 5.1 的行为。
+- `allowNone`：不允许对文档进行任何更改而不使签名失效。请注意，这也会锁定作者的签名。
+- `default`：如果文档中存在表单字段，则允许填写表单字段，否则不允许对文档进行任何更改而不使签名失效。
+- `defaultAndComments`：如果文档中存在表单字段，则允许填写表单字段，并允许添加、删除或修改注释（评论），否则不允许对文档进行任何更改而不使签名失效。请注意，注释可用于遮挡文档的某些部分，从而影响文档的视觉呈现。
 
 # SOAP 对象
 
 SOAP 对象允许从 JavaScript 向远程服务器发起远程过程调用或发送 XML 消息。
 
-SOAP 1.1 协议（参见 http://www.w3.org/TR/SOAP/）用于将 JavaScript 参数编组到远程过程调用（同步或异步），并将结果解组为 JavaScript 对象。SOAP 对象还能够与 Web 服务描述语言 (WSDL—参见 [http://www.w3.org/TR/wsdl](http://www.w3.org/TR/wsdl)) 描述的 Web 服务进行通信。
+SOAP 1.1 协议（参见 [http://www.w3.org/TR/SOAP/](http://www.w3.org/TR/SOAP/)）用于将 JavaScript 参数编组到远程过程调用（同步或异步），并将结果解组为 JavaScript 对象。SOAP 对象还能够与 Web 服务描述语言（WSDL—参见 [http://www.w3.org/TR/wsdl](http://www.w3.org/TR/wsdl)）描述的 Web 服务进行通信。
 
-**注意：** SOAP 方法 **connect**、**request** 和 **response** 仅适用于在 Acrobat Professional 和 Acrobat Standard 中打开的文档，以及在 Adobe Reader 6.0 或更高版本中打开的具有表单导出权限（**）的文档。
+**注意：** SOAP 方法 `connect`、`request` 和 `response` 仅适用于在 Acrobat Professional 和 Acrobat Standard 中打开的文档，以及在 Adobe Reader 6.0 或更高版本中打开的具有表单导出权限的文档。
 
 # SOAP 属性
 
-## wireDump
+## `wireDump`
 
 如果为 `true`，同步 SOAP 请求将导致 XML 请求和响应被转储到 JavaScript 控制台。这对于调试 SOAP 问题很有用。
 
-类型：Boolean \quad 访问权限：R/W。
+类型：Boolean；访问权限：R/W。
 
 # SOAP 方法
 
-## connect
+## `connect`
 
-接受 WSDL 文档的 URL (cURL)，并将其转换为具有与 Web 服务对应的可调用方法的 JavaScript 对象。
+接受 WSDL 文档的 URL（`cURL`），并将其转换为具有与 Web 服务对应的可调用方法的 JavaScript 对象。
 
-方法调用的参数和返回值遵守 SOAP . **request** 方法中指定的规则。
+方法调用的参数和返回值遵守 SOAP `request` 方法中指定的规则。
 
 ### 参数
 
@@ -21360,11 +22483,10 @@ SOAP 1.1 协议（参见 http://www.w3.org/TR/SOAP/）用于将 JavaScript 参�
 
 ### 返回值
 
-**SOAP . connect** 的结果值是一个 WSDL 服务代理对象，具有与 URL 处提供的 WSDL 文档中每个操作对应的 JavaScript 方法。方法所需的参数取决于你调用的 WSDL 操作以及该操作如何编码其参数。
+`SOAP.connect` 的结果值是一个 WSDL 服务代理对象，具有与 URL 处提供的 WSDL 文档中每个操作对应的 JavaScript 方法。方法所需的参数取决于你调用的 WSDL 操作以及该操作如何编码其参数。
 
-*   如果 WSDL 操作使用 SOAP RPC 编码（如 SOAP 1.1 规范第 7 节所述），则服务方法的参数与 WSDL 文档中的参数顺序相同。
-
-如果 WSDL 服务使用 SOAP document/literal 编码，则该函数将具有一个参数，指示请求消息。该参数可以是描述消息的 JavaScript 对象字面量，也可以是字符串或 ReadStream 对象，其中包含描述消息的 XML 片段。服务方法的返回值将与 WSDL 操作的返回值相对应。
+- 如果 WSDL 操作使用 SOAP RPC 编码（如 SOAP 1.1 规范第 7 节所述），则服务方法的参数与 WSDL 文档中的参数顺序相同。
+- 如果 WSDL 服务使用 SOAP document/literal 编码，则该函数将具有一个参数，指示请求消息。该参数可以是描述消息的 JavaScript 对象字面量，也可以是字符串或 `ReadStream` 对象，其中包含描述消息的 XML 片段。服务方法的返回值将与 WSDL 操作的返回值相对应。
 
 与每个 Web 服务方法对应的 JavaScript 函数对象将使用以下属性（如果设置了）。默认情况下，未设置任何属性。
 
@@ -21377,54 +22499,64 @@ SOAP 1.1 协议（参见 http://www.w3.org/TR/SOAP/）用于将 JavaScript 参�
 
 ### 异常
 
-`SOAPError`, `NetworkError`
+`SOAPError`、`NetworkError`
 
-参见 [关于异常的附加说明](http://www.whitemesa.com/interop.htm)。
+参见[关于异常的附加说明](http://www.whitemesa.com/interop.htm)。
 
 SOAP 错误将导致抛出 `SOAPError` 异常。如果在网络级别出现问题，例如端点不可用，将抛出 `NetworkError`。
 
 ### 示例
 
-需要一个服务 WSDL 文档 URL。可以从以下 URL 的 "Round 2 Interop Services - using SOAP 1.2" 部分获取：[http://www.whitemesa.com/interop.htm](http://www.whitemesa.com/interop.htm)。
+需要一个服务 WSDL 文档 URL。可以从以下 URL 的“Round 2 Interop Services - using SOAP 1.2”部分获取：[http://www.whitemesa.com/interop.htm](http://www.whitemesa.com/interop.htm)。
 
+```text
 ```
+
+
+
+
+```javascript
 var cURL = <从
+
           http://www.whitemesa.com/interop.htm 获取此服务的 URL>;
 
 // 连接到测试服务
+
 var service = SOAP.connect(cURL);
 
 // 将此服务支持的方法打印到控制台
-for(var i in service) console.println(i);
+
+for (var i in service) console.println(i);
 
 var cTestString = "This is my test string";
 
 // 调用 echoString 服务 -- 它是一个 RPC 编码方法
-```
 
-
-
-## Acrobat JavaScript 脚本参考
-SOAP 方法
-
-```javascript
 var result = service.echoString(cTestString);
 
 // 结果应与 cTestString 相同
+
 console.println(result + " == " + cTestString);
 
 // 调用 echoInteger 服务 -- JavaScript 不支持整数类型
+
 // 因此我们创建自己的整数对象。
-var oTestInt =
-{
+
+var oTestInt = {
     soapType: "xsd:int",
     soapValue: "10"
 };
+
 var result = service.echoInteger(oTestInt);
 
 // 结果应与 oTestInt.soapValue 相同
+
 console.println(result + " == " + oTestInt.soapValue);
 ```
+
+## Acrobat JavaScript 脚本参考
+
+### SOAP 方法
 
 这将产生以下输出：
 
@@ -21457,7 +22589,7 @@ This is my test string == This is my test string
 
 定位已通过 DNS 服务发现（DNS-SD）发布自身的网络服务。此方法可定位通过多播 DNS（mDNS）在本地网络链路上注册的服务，或通过单播 DNS 在企业网内定位的服务。服务定位的结果总是异步返回的，并且查询会持续进行（当服务变为可用和/或不可用时会收到通知），直到被停止。
 
-查询服务的结果是一组服务名称，这些名称可在需要时通过调用 resolveService 进行绑定。
+查询服务的结果是一组服务名称，这些名称可在需要时通过调用`resolveService`进行绑定。
 
 服务可以使用第三方 mDNS 响应器在本地网络链路上被定位，也可以（静态或动态地）注册到 DNS 服务器中，从而在企业网络环境中被定位。
 
@@ -21465,84 +22597,87 @@ This is my test string == This is my test string
 
 | 参数 | 描述 |
 | :--- | :--- |
-| **cType** | 要搜索的 DNS SRV 服务名称。<br>更多详情请参见 **cType**。 |
-| **oAsync** | 当定位到服务时将被调用的对象。<br>具体规范请参见 **oAsync**。 |
-| **aDomains** | （可选）一个域名数组，用于在其中进行查询。<br>详情请参见 **aDomains**。 |
+| `cType` | 要搜索的 DNS SRV 服务名称。<br>更多详情请参见`cType`。 |
+| `oAsync` | 当定位到服务时将被调用的对象。<br>具体规范请参见`oAsync`。 |
+| `aDomains` | （可选）一个域名数组，用于在其中进行查询。<br>详情请参见`aDomains`。 |
 
-请参阅[标准 Acrobat 异常..](https://example.com)
+请参阅[标准 Acrobat 异常..](https://example.com)。
 
 ### 返回值
 
 一个服务查询对象，用于管理查询的持续时间。查询将持续到满足以下条件之一：
 
-- 从 **queryServices()** 返回的服务查询对象被垃圾回收。
-- 从 **queryServices()** 返回的服务查询对象的 **stop()** 方法被调用。
+- 从`queryServices()`返回的服务查询对象被垃圾回收。
+- 从`queryServices()`返回的服务查询对象的`stop()`方法被调用。
 
 | 方法 | 描述 |
 | :--- | :--- |
-| **stop** | 导致查询终止。此方法可以从通知回调中调用，但操作不会立即停止，而是在空闲处理时间停止。 |
+| `stop` | 导致查询终止。此方法可以从通知回调中调用，但操作不会立即停止，而是在空闲处理时间停止。 |
 
 ### 异常
 
 标准 Acrobat 异常。
 
-### SOAP.queryServices 参数的附加说明
+### `SOAP.queryServices`参数的附加说明
 
-- **cType**
-  **cType** 参数指示要查询的 DNS SRV 服务名称。
-  一些可能的示例如下：
-  - "http"：定位 Web 服务器
-  - "ftp"：定位 FTP 服务器
+- `cType`
+
+  `cType`参数指示要查询的 DNS SRV 服务名称。一些可能的示例如下：
+
+  - `"http"`：定位 Web 服务器
+  - `"ftp"`：定位 FTP 服务器
   - 更多示例请参见 DNS SRV 服务名称注册表
-- **oAsync**
-  **oAsync** 对象是一个通知对象，当在网络上定位到服务或先前报告的服务被移除时，它将收到通知。在 **queryServices()** 方法返回之前，通知方法不会被调用，并且在空闲处理期间调用。**oAsync** 参数应实现以下方法：
+
+- `oAsync`
+
+  `oAsync`对象是一个通知对象，当在网络上定位到服务或先前报告的服务被移除时，它将收到通知。在`queryServices()`方法返回之前，通知方法不会被调用，并且在空闲处理期间调用。`oAsync`参数应实现以下方法：
 
 | 方法 | 描述 |
-|---|---|
-| **addServices** | 当定位到匹配查询的可用服务时调用此方法。参数是已添加服务的服务描述对象（见下文）的数组。 |
-| **removeServices** | 当先前通过调用 **addServices()** 通知方法引入的服务不再可用时调用此方法。参数是已移除服务的服务描述对象（见下文）的数组。 |
-| **注意** | 在 Acrobat 7.0 中，只有通过 mDNS（即在 "local." 域中）定位的服务才会动态更新。 |
+| :--- | :--- |
+| `addServices` | 当定位到匹配查询的可用服务时调用此方法。参数是已添加服务的服务描述对象（见下文）的数组。 |
+| `removeServices` | 当先前通过调用`addServices()`通知方法引入的服务不再可用时调用此方法。参数是已移除服务的服务描述对象（见下文）的数组。 |
+| 注意 | 在 Acrobat 7.0 中，只有通过 mDNS（即在 `"local."`域中）定位的服务才会动态更新。 |
 
-传递给 **addServices()** 和 **removeServices()** 的服务描述对象具有以下属性：
+传递给`addServices()`和`removeServices()`的服务描述对象具有以下属性：
 
 | 属性 | 描述 |
-|---|---|
-| **name** | 服务的 Unicode 显示名称。 |
-| **domain** | 服务被定位到的 DNS 域。如果服务是在本地网络链路上定位的，则域名将是 "local."。 |
-| **type** | 被定位服务的 DNS SRV 服务名称——这与传递给 **queryServices()** 的 **cType** 参数相同。当同一个通知回调用于多个查询时，这很有用。 |
+| :--- | :--- |
+| `name` | 服务的 Unicode 显示名称。 |
+| `domain` | 服务被定位到的 DNS 域。如果服务是在本地网络链路上定位的，则域名将是`"local."`。 |
+| `type` | 被定位服务的 DNS SRV 服务名称——这与传递给`queryServices()`的`cType`参数相同。当同一个通知回调用于多个查询时，这很有用。 |
 
-- **aDomains**
-  **aDomains** 参数指示查询应在其中进行的域名数组。唯一有效的域名是：
+- `aDomains`
+
+  `aDomains`参数指示查询应在其中进行的域名数组。唯一有效的域名是：
 
 | 域名 | 描述 |
-|---|---|
-| **ServiceDiscovery.local** | 使用多播 DNS（mDNS）在本地网络链路上搜索服务。这对于在 *临时* 网络环境中查找网络服务很有用，但网络服务只会位于当前网络路由器的范围内。 |
-| **ServiceDiscovery.DNS** | 使用单播 DNS 在默认 DNS 域中搜索服务。这对于在 DNS 服务器上下文中定位网络服务很有用，但通常需要 IS 协助来注册服务，且动态性较低。 |
+| :--- | :--- |
+| `ServiceDiscovery.local` | 使用多播 DNS（mDNS）在本地网络链路上搜索服务。这对于在*临时*网络环境中查找网络服务很有用，但网络服务只会位于当前网络路由器的范围内。 |
+| `ServiceDiscovery.DNS` | 使用单播 DNS 在默认 DNS 域中搜索服务。这对于在 DNS 服务器上下文中定位网络服务很有用，但通常需要 IS 协助来注册服务，且动态性较低。 |
 
 ### 示例
 
 此示例代码根据其运行位置将产生不同的输出。
 
 ```javascript
-var oNotifications =
-{
-    addServices: function(services)
-    {
-        for(var i = 0; i < services.length; i++)
-        console.println("ADD: "+ services[i].name + " in domain "
+var oNotifications = {
+    addServices: function(services) {
+        for (var i = 0; i < services.length; i++)
+            console.println("ADD: " + services[i].name + " in domain "
                 + services[i].domain);
     },
-    removeServices: function(services)
-    {
-        for(var i = 0; i < services.length; i++)
-        console.println("DEL: " + services[i].name + " in domain "
+
+    removeServices: function(services) {
+        for (var i = 0; i < services.length; i++)
+            console.println("DEL: " + services[i].name + " in domain "
                 + services[i].domain);
     }
 };
+
 SOAP.queryServices({
-    cType:"http",
-    oAsync:oNotifications,
-    aDomains:[ServiceDiscovery.local, ServiceDiscovery.DNS]
+    cType: "http",
+    oAsync: oNotifications,
+    aDomains: [ServiceDiscovery.local, ServiceDiscovery.DNS]
 });
 ```
 
@@ -21561,46 +22696,46 @@ ADD: Example.org Web Server in domain example.org.
 
 此方法允许将服务名称绑定到网络地址和端口以建立连接。连接信息是异步返回的，并且应被视为临时性的，因为服务的网络位置可能会随时间变化（例如，DHCP 租约到期或服务移动到新服务器）。
 
-## Acrobat JavaScript 脚本参考
-SOAP 方法
+### Acrobat JavaScript 脚本参考
+
+#### SOAP 方法
 
 ### 参数
 
 | 参数 | 描述 |
 | :--- | :--- |
-| **cType** | 要解析的 DNS SRV 服务名称。 |
-| **cDomain** | 服务被定位到的域。 |
-| **cService** | 要解析的服务名称。 |
-| **oAsync** | 当服务被解析时将被调用的对象。有关此参数的更多详情，请参见 oAsync。 |
+| `cType` | 要解析的 DNS SRV 服务名称。 |
+| `cDomain` | 服务被定位到的域。 |
+| `cService` | 要解析的服务名称。 |
+| `oAsync` | 当服务被解析时将被调用的对象。有关此参数的更多详情，请参见`oAsync`。 |
 
 ### 返回值
 
 一个服务查询对象，用于管理解析的持续时间。解析将持续到满足以下条件之一：
 
-- 从 `resolveService()` 返回的服务查询对象被垃圾回收。
-- `oAsync` 对象的 `resolve()` 方法被调用，表示操作已完成（通过解析服务、错误或超时）。
-- 从 `resolveService()` 返回的服务查询对象的 `stop()` 方法被调用。
+- 从`resolveService()`返回的服务查询对象被垃圾回收。
+- `oAsync`对象的`resolve()`方法被调用，表示操作已完成（通过解析服务、错误或超时）。
+- 从`resolveService()`返回的服务查询对象的`stop()`方法被调用。
 
 | 方法 | 描述 |
 | :--- | :--- |
-| **stop** | 导致解析终止。此方法可以从通知回调中调用，但操作不会立即停止，而是在空闲处理时间停止。 |
+| `stop` | 导致解析终止。此方法可以从通知回调中调用，但操作不会立即停止，而是在空闲处理时间停止。 |
 
 ### 异常
 
 标准 Acrobat 异常。
 
-### SOAP.resolveService 参数的附加说明
+### `SOAP.resolveService`参数的附加说明
 
-- **oAsync**
-  oAsync 对象是一个通知对象，当服务被解析时，它将被调用。在 resolveService() 方法返回之前，通知方法不会被调用，并且在空闲处理期间调用。oAsync 参数应实现以下方法：
+- `oAsync`
+
+  `oAsync`对象是一个通知对象，当服务被解析时，它将被调用。在`resolveService()`方法返回之前，通知方法不会被调用，并且在空闲处理期间调用。`oAsync`参数应实现以下方法：
 
 | 方法 | 描述 |
-|---|---|
-| **resolve** | 当服务被解析或无法解析时，此方法将使用两个参数（nStatus 和 oInfo）被调用。参数 nStatus 是一个状态，指示服务是否可以被解析（见下文）。如果服务成功解析，则 oInfo 对象（ServiceInfo 对象的一个实例，见下文）指定连接信息。 |
+| :--- | :--- |
+| `resolve` | 当服务被解析或无法解析时，此方法将使用两个参数（`nStatus`和`oInfo`）被调用。参数`nStatus`是一个状态，指示服务是否可以被解析（见下文）。如果服务成功解析，则`oInfo`对象（`ServiceInfo`对象的一个实例，见下文）指定连接信息。 |
 
-
-
-传递给 `resolve` 方法的 `nStatus` 参数的值是以下之一：
+传递给`resolve`方法的`nStatus`参数的值是以下之一：
 
 | 值 | 描述 |
 | :--- | :--- |
@@ -21608,30 +22743,30 @@ SOAP 方法
 | 1 | 服务在解析前超时。Acrobat 7 中的默认超时时间为 60 秒。 |
 | -1 | 尝试解析服务时出现网络错误。 |
 
-传递给 `resolve` 方法的 `ServiceInfo` 对象具有以下属性：
+传递给`resolve`方法的`ServiceInfo`对象具有以下属性：
 
 | 属性 | 描述 |
 | :--- | :--- |
-| **target** | 提供服务的机器的 IP 地址或 DNS 名称。 |
-| **port** | 提供服务的机器上的端口。 |
-| **info** | 一个包含服务提供的键/值对的对象。例如，在 HTTP 服务的情况下，`path` 属性将包含 Web 服务上的路径，因此服务 URL 将是 `http://<target>:<port>/<info["path"]>`）。 |
+| `target` | 提供服务的机器的 IP 地址或 DNS 名称。 |
+| `port` | 提供服务的机器上的端口。 |
+| `info` | 一个包含服务提供的键/值对的对象。例如，在 HTTP 服务的情况下，`path`属性将包含 Web 服务上的路径，因此服务 URL 将是`http://<target>:<port>/<info["path"]>`。 |
 
-## 示例
+### 示例
 
 此示例代码根据运行位置的不同会产生不同的输出。如果没有通过 DNS 服务发现公布的服务，此示例将不产生任何输出。
 
-```
-var oNotifications =
-{
-    resolve: function(status, info)
-    {
-        if(status == 0)
+```javascript
+var oNotifications = {
+    resolve: function(status, info) {
+        if (status == 0)
             console.println("RESOLVE: http://"
                 + info.target + ":" + info.port + "/"
                 + info.info.path);
-        else console.println("ERROR: " + status);
+        else
+            console.println("ERROR: " + status);
     }
 };
+
 SOAP.resolveService({
     cType: "http",
     cDomain: "local.",
@@ -21648,71 +22783,79 @@ RESOLVE: http://127.0.0.1:80/index.html
 
 ## request
 
+### 版本
+
 6.0
 
-发起远程过程调用 (RPC) 或向 SOAP HTTP 端点发送 XML 消息。该方法将等待端点回复（同步处理）或调用通知对象上的方法（异步处理）。
+发起远程过程调用（RPC）或向 SOAP HTTP 端点发送 XML 消息。该方法将等待端点回复（同步处理）或调用通知对象上的方法（异步处理）。
 
-## 参数
+### 参数
 
 | 参数 | 描述 |
 | :--- | :--- |
-| `cURL` | SOAP HTTP 端点的 URL。有关更多详细信息，请参阅下面的 `cURL`。 |
-| `oRequest` | 一个指定远程过程名称和参数或要发送的 XML 消息的对象。有关此对象的更多详细信息，请参阅 `oRequest`。 |
-| `oAsync` | （可选）一个指定方法调用将异步发生的对象。默认情况下，请求是同步发出的。有关更多详细信息，请参阅 `oAsync`。 |
-| `cAction` | （可选）在 SOAP 1.1 中，此参数作为 SOAPAction 头传递。在 SOAP 1.2 中，此参数作为 Content-Type 头中的 action 参数传递。默认情况下，action 是一个空字符串。有关其他注释，请参阅 `cAction`。 |
-| `bEncoded` | （可选）使用 SOAP 规范中描述的 SOAP 编码对请求进行编码。否则，使用字面编码。默认值为 `true`。 |
+| `cURL` | SOAP HTTP 端点的 URL。有关更多详细信息，请参阅下面的`cURL`。 |
+| `oRequest` | 一个指定远程过程名称和参数或要发送的 XML 消息的对象。有关此对象的更多详细信息，请参阅`oRequest`。 |
+| `oAsync` | （可选）一个指定方法调用将异步发生的对象。默认情况下，请求是同步发出的。有关更多详细信息，请参阅`oAsync`。 |
+| `cAction` | （可选）在 SOAP 1.1 中，此参数作为 SOAPAction 头传递。在 SOAP 1.2 中，此参数作为 Content-Type 头中的 action 参数传递。默认情况下，action 是一个空字符串。有关其他注释，请参阅`cAction`。 |
+| `bEncoded` | （可选）使用 SOAP 规范中描述的 SOAP 编码对请求进行编码。否则，使用字面编码。默认值为`true`。 |
 | `cNamespace` | （可选）当请求不使用 SOAP 编码时，用于消息架构的命名空间。默认情况下省略架构声明。 |
-| `oReqHeader` | （可选，版本 7.0）一个指定要包含在请求中的 SOAP 头的对象。默认情况下，发送仅包含 SOAP 主体的请求。有关此对象的更多详细信息，请参阅 `oReqHeader`。 |
-| `oRespHeader` | （可选，版本 7.0）一个将在方法完成时填充返回的 SOAP 头的对象。默认情况下不返回头。有关更多具体信息，请参阅 `oRespHeader`。 |
+| `oReqHeader` | （可选，版本 7.0）一个指定要包含在请求中的 SOAP 头的对象。默认情况下，发送仅包含 SOAP 主体的请求。有关此对象的更多详细信息，请参阅`oReqHeader`。 |
+| `oRespHeader` | （可选，版本 7.0）一个将在方法完成时填充返回的 SOAP 头的对象。默认情况下不返回头。有关更多具体信息，请参阅`oRespHeader`。 |
+| `cVersion` | （可选，版本 7.0）生成 XML 消息时使用的 SOAP 协议版本——1.1 或 1.2。默认使用`SOAPVersion.version_1_1`。有关更多详细信息，请参阅下面的`cVersion`。 |
+| `oAuthenticate` | （可选，版本 7.0）一个指定要使用的身份验证方案类型并提供凭据的对象。默认情况下，如果遇到 HTTP 身份验证，则显示一个交互式 UI。有关更多详细信息，请参阅`oAuthenticate`。 |
+| `cResponseStyle` | （可选，版本 7.0）生成响应对象时使用的消息描述样式——“JS”、“XML”或“Message”之一。默认值为“JS”。有关更详细的描述，请参阅`cResponseStyle`。 |
 
-**cVersion** （可选，版本 7.0）生成 XML 消息时使用的 SOAP 协议版本——1.1 或 1.2。默认使用 "SOAPVersion.version_1_1"。有关更多详细信息，请参阅下面的 **cVersion**。
+有关更多信息，请参阅[SOAP.request 参数的附加说明](https://example.com)。
 
-**oAuthenticate** （可选，版本 7.0）一个指定要使用的身份验证方案类型并提供凭据的对象。默认情况下，如果遇到 HTTP 身份验证，则显示一个交互式 UI。有关更多详细信息，请参阅 **oAuthenticate**。
+### 返回值
 
-**cResponseStyle** （可选，版本 7.0）生成响应对象时使用的消息描述样式——“JS”、“XML”或“Message”之一。默认值为“JS”。有关更详细的描述，请参阅 **cResponseStyle**。
+如果方法是同步调用的，则返回一个响应对象；如果方法是异步调用的，则不返回任何内容。有关对象描述，请参阅上面的`cResponseStyle`描述。
 
-有关更多信息，请参阅 [SOAP.request 参数的附加说明](https://example.com)。
+一个对象字面量。有关更多信息，请参阅[返回值的附加说明](https://example.com)。
 
-## 返回值
+### 异常
 
-如果方法是同步调用的，则返回一个响应对象；如果方法是异步调用的，则不返回任何内容。有关对象描述，请参阅上面的 **cResponseStyle** 描述。
+`SOAPError`、`NetworkError`
 
-一个对象字面量。有关更多信息，请参阅 [返回值的附加说明](https://example.com)。
+有关更多信息，请参阅[异常的附加说明](https://example.com)。
 
-## 异常
+SOAP 故障将导致抛出`SOAPError`。如果在网络层出现问题，例如端点不可用，则会抛出`NetworkError`。
 
-SOAPError, NetworkError
+### `SOAP.request`参数的附加说明
 
-有关更多信息，请参阅 [异常的附加说明](https://example.com)。
+- `cURL`
 
-SOAP 故障将导致抛出 **SOAPError**。如果在网络层出现问题，例如端点不可用，则会抛出 **NetworkError**。
+  参数`cURL`是 SOAP HTTP 端点的 URL。URL 方法必须是以下之一：
 
-## SOAP.request 参数的附加说明
+  - `http`—通过端口连接到 URI 上的服务器。例如，`http://serverName:portNumber/URI`
+  - `https`—通过端口连接到 URI 上的安全（SSL）服务器。例如，`https://serverName:portNumber/URI`
 
-- **cURL**
-  参数 **cURL** 是 SOAP HTTP 端点的 URL。URL 方法必须是以下之一
-  - http—通过端口连接到 URI 上的服务器。例如，`http://serverName:portNumber/URI`
-  - https—通过端口连接到 URI 上的安全 (SSL) 服务器。例如，`https://serverName:portNumber/URI`
-- **oRequest**
-  **oRequest** 参数是一个对象字面量，用于指定远程过程名称和要调用的参数。对象字面量使用远程过程的完全限定方法名称作为键。命名空间应与方法名称用冒号分隔；例如，如果方法的命名空间是 `<http://mydomain/methods>`，方法名称是 **echoString**()，则完全限定名称为 `<http://mydomain/methods:echoString>`。此键的值是一个对象字面量，每个键是方法的一个参数，每个键的值是方法相应参数的值。例如：
+- `oRequest`
 
-```
+  `oRequest`参数是一个对象字面量，用于指定远程过程名称和要调用的参数。对象字面量使用远程过程的完全限定方法名称作为键。命名空间应与方法名称用冒号分隔；例如，如果方法的命名空间是`<http://mydomain/methods>`，方法名称是`echoString()`，则完全限定名称为`<http://mydomain/methods:echoString>`。此键的值是一个对象字面量，每个键是方法的一个参数，每个键的值是方法相应参数的值。例如：
+
+```javascript
 oRequest: {
-    "http://soapinterop.org/:echoString":{inputString: "Echo!"}
+    "http://soapinterop.org/:echoString": {
+        inputString: "Echo!"
+    }
 }
 ```
+
+
+
 
 向远程过程传递参数时，JavaScript 类型会自动绑定到 SOAP 类型，如下表所示：
 
 | JavaScript 类型 | SOAP 类型 |
 | --- | --- |
-| String | xsd:string |
-| Number | xsd:float |
-| Date | xsd:dateTime |
-| Boolean | xsd:boolean |
-| [ReadStream 对象](http://) | SOAP-ENC:base64 |
-| Array | SOAP-ENC:Array |
-| Other | 无类型信息 |
+| `String` | `xsd:string` |
+| `Number` | `xsd:float` |
+| `Date` | `xsd:dateTime` |
+| `Boolean` | `xsd:boolean` |
+| [ReadStream 对象](http://) | `SOAP-ENC:base64` |
+| `Array` | `SOAP-ENC:Array` |
+| `Other` | 无类型信息 |
 
 **注意：** `xsd` 命名空间指 XML 架构数据类型命名空间 `<http://www.w3.org/2001/XMLSchema>`）。`SOAP-ENC` 命名空间指 SOAP 编码命名空间 `<http://schemas.xmlsoap.org/soap/encoding/>`）。
 
@@ -21720,110 +22863,103 @@ oRequest: {
 
 | 属性 | 描述 |
 | --- | --- |
-| `soapType` | 这是在生成 SOAP 消息时将用于该值的 SOAP 类型；当需要除上述自动数据类型绑定之外的数据类型时，这很有用。类型应使用 `<namespace>:<type>` 表示法进行命名空间限定，例如 `http://mydomain/types:myType`。但是，`xsd`（XML 架构数据类型命名空间）、`xsi`（XML 架构实例命名空间）和 SOAP-ENC（SOAP 编码命名空间）命名空间在 SOAP 消息中是隐式定义的，因此 `soapType` 可以使用这些，例如 `xsd:int` 表示 XML 架构数据类型整数类型。 |
-| **soapValue** | （版本 6.0）这是生成 SOAP 消息时将使用的值。它可能是一个字符串或一个 ReadStream 对象。**soapValue** 以*未转义*（即，不会被 XML 实体转义）的方式传递；例如，XML 消息中不会将“<”转换为“&lt;”。因此，**soapValue** 参数可以是原始 XML 片段，它将传递给 XML 消息。（版本 7.0）**soapValue** 属性以前可以是字符串或流。现在它也可以是节点数组，该数组将是请求消息中节点的有序子节点集。 |
-| **soapName** | 这是在生成 SOAP 消息时将使用的元素名称，而不是对象字面量中的键名。例如，JavaScript 不支持整数，但可以按照以下方式构造 SOAP 方法的整数参数：`var oIntParameter = { soapType: "xsd:int", soapValue: "1" };` 之后，**SOAP.request** 方法的 **oRequest** 参数可能是 `oRequest: { "http://soapinterop.org/:echoInteger": { inputInteger: oIntParameter } }`。**SOAP.request** 描述之后的示例 1 说明了此技术。 |
-| **soapAttributes** | （版本 7.0）一个指定在构建对应于请求节点的元素时要包含的 XML 属性的对象。对象键是属性名称，相应的值是属性值。 |
-
-
+| `soapType` | 这是在生成 SOAP 消息时将用于该值的 SOAP 类型；当需要除上述自动数据类型绑定之外的数据类型时，这很有用。类型应使用 `<namespace>:<type>` 表示法进行命名空间限定，例如 `http://mydomain/types:myType`。但是，`xsd`（XML 架构数据类型命名空间）、`xsi`（XML 架构实例命名空间）和 `SOAP-ENC`（SOAP 编码命名空间）命名空间在 SOAP 消息中是隐式定义的，因此 `soapType` 可以使用这些，例如 `xsd:int` 表示 XML 架构数据类型整数类型。 |
+| `soapValue` | （版本 6.0）这是生成 SOAP 消息时将使用的值。它可能是一个字符串或一个 ReadStream 对象。`soapValue` 以*未转义*（即，不会被 XML 实体转义）的方式传递；例如，XML 消息中不会将“<”转换为“&lt;”。因此，`soapValue` 参数可以是原始 XML 片段，它将传递给 XML 消息。（版本 7.0）`soapValue` 属性以前可以是字符串或流。现在它也可以是节点数组，该数组将是请求消息中节点的有序子节点集。 |
+| `soapName` | 这是在生成 SOAP 消息时将使用的元素名称，而不是对象字面量中的键名。例如，JavaScript 不支持整数，但可以按照以下方式构造 SOAP 方法的整数参数：`var oIntParameter = { soapType: "xsd:int", soapValue: "1" };` 之后，`SOAP.request` 方法的 `oRequest` 参数可能是 `oRequest: { "http://soapinterop.org/:echoInteger": { inputInteger: oIntParameter } }`。`SOAP.request` 描述之后的示例 1 说明了此技术。 |
+| `soapAttributes` | （版本 7.0）一个指定在构建对应于请求节点的元素时要包含的 XML 属性的对象。对象键是属性名称，相应的值是属性值。 |
 
 ## Acrobat JavaScript 脚本参考
+
 ### SOAP 方法
 
 | 属性 | 描述 |
 | --- | --- |
-| soapQName | （版本 7.0）一个对象，用于指定请求节点的带命名空间限定名（QName）。例如，在以下元素 `<ns:name xmlns:ns="urn:example.org">` 中，元素名称是一个由本地名（“local”）和命名空间（“urn:example.org”）组成的 QName。<br>此对象有两个属性：<br>| 属性 | 描述 |
-| --- | --- |
-| localName | 一个字符串，表示 QName 的本地名 |
-| nameSpace | 一个字符串，表示 QName 的命名空间。 |
-| soapAttachment | （版本 7.0）一个布尔值，表示节点的 soapValue 内容应按照 SwA 规范编码为附件。如果相应的 soapAttachment 属性为 true，则 soapValue 必须是流，否则将抛出异常。 |
-| soapParamOrder | （版本 7.0）一个数组，表示应按何种顺序将 RPC 参数发送到服务器。该数组是一组包含参数名的字符串。此值仅在 bEncoding 为 true 时适用。 |
-| oAsync | （版本 6.0）oAsync 对象字面量必须包含一个名为 response 的函数，该函数将在响应返回时使用两个参数（oResult 和 cURI）进行调用。oResult 与同步调用请求调用时返回的结果对象相同。cURI 是发出请求的端点的 URI。<br><br>（版本 7.0）oAsync 对象响应回调现在具有以下参数：<br>| 参数 | 描述 |
-| --- | --- |
-| response | 来自 SOAP 请求的响应对象。 |
-| uri | 发出 SOAP 请求的 URI。 |
-| exception | 如果发生错误，则是一个异常对象（参见下面的异常），否则为 null。 |
-| header | 一个响应 SOAP 头（参见 **oRespHeader** 参数的描述），如果没有响应头，则为 **null**。 |
-| cAction | **cAction** 参数是方法的 SOAPAction 头。SOAPAction 是一个 URN，写入 HTTP 头中，被防火墙和服务器用于过滤 SOAP 请求。SOAP 服务的 WSDL 文件或 SOAP 服务描述通常会描述所需的 SOAPAction 头（如果有）。 |
-| oReqHeader | **oReqHeader** 对象指定要包含在 SOAP 请求中的请求头。该对象的指定方式与 **oRequest** 对象相同，只是可以在请求描述中指定两个额外的属性：<br>| 属性 | 描述 |
-| --- | --- |
-| **soapActor** | SOAP 头应由其处理的接收者（或指定为 URI 的参与者）。默认情况下，头将由第一个处理请求的接收者处理。 |
-| **soapMustUnderstand** | 一个布尔值，表示如果接收者不理解此头类型，则无法解释请求体。默认情况下，理解头是可选的。 |
-| oRespHeader | **oRespHeader** 对象在函数同步调用时（否则头将传递给 **oAsync** 回调方法）在函数返回后填充。有关对象格式，请参见 **cResponseStyle** 参数的描述。 |
-| cVersion | **cVersion** 参数表示生成消息时使用的 SOAP 版本。**cVersion** 参数是以下之一：<br>| 值 | 描述 |
-| --- | --- |
-| **SOAPVersion.version_1_1** | （默认）使用 SOAP 1.1 协议编码消息。 |
-| **SOAPVersion.version_1_2** | 使用 SOAP 1.2 协议编码消息。 |
-| oAuthenticate | **oAuthenticate** 对象指定如何处理 HTTP 身份验证或指定用于 Web 服务安全的凭据。默认行为是向用户呈现一个用户界面，以处理 BASIC 和 DIGEST 身份验证模式的 HTTP 身份验证挑战。**oAuthenticate** 对象可以具有以下属性：<br>| 属性 | 描述 |
-| :--- | :--- |
-| **Username** | 一个字符串，包含用于身份验证的用户名。 |
-| **Password** | 一个字符串，包含要使用的身份验证凭据。 |
-| **UsePlatformAuth** | 一个布尔值，表示应使用平台身份验证。如果启用了平台身份验证，则忽略 **Username** 和 **Password**，并使用底层平台网络代码。这可能导致向用户显示身份验证 UI 和/或使用当前登录用户的凭据。默认为 **false**，仅在 Windows 平台上支持。 |
-| cResponseStyle | **cResponseStyle** 参数是一个枚举类型，表示返回值（对于 SOAP 主体）和 **oRespHeader** 对象（对于 SOAP 头）将如何构建：<br>| 属性 | 描述 |
-| :--- | :--- |
-| **SOAPMessageStyle.JS** | （默认）响应将是一个描述返回消息的 SOAP 主体（或 SOAP 头）的对象（这是 Acrobat 6.0 产生的结果）。当使用 SOAP 编码进行请求时推荐使用此选项，但在使用字面量编码时并不理想——使用 XML 或 Message 样式更好。 |
-| **SOAPMessageStyle.XML** | 响应将是一个流对象，其中包含作为 XML 片段的 SOAP 主体（或 SOAP 头）。如果响应有关联的任何附件，Stream 对象将有一个对象属性 **oAttachments**。对象键是附件部分的唯一名称，值必须是包含附件内容的 Stream 对象。 |
-| **SOAPMessageStyle.Message** | 响应将是一个描述与 XML 消息对应的 SOAP 主体（或 SOAP 头）的对象。这与 JS 响应样式在以下方面有所不同：<br>* XML 元素作为对象数组而不是单个对象返回，以维护顺序并允许同名元素。<br>* XML 属性使用 **soapAttributes** 属性保留。<br>* 命名空间被处理并返回在 **soapName** 和 **soapQName** 属性中。<br>* 元素的内容在 **soapValue** 属性中。 |
+| `soapQName` | （版本 7.0）一个对象，用于指定请求节点的带命名空间限定名（QName）。例如，在以下元素 `<ns:name xmlns:ns="urn:example.org">` 中，元素名称是一个由本地名（“local”）和命名空间（“urn:example.org”）组成的 QName。<br>此对象有两个属性： |
+| `localName` | 一个字符串，表示 QName 的本地名。 |
+| `nameSpace` | 一个字符串，表示 QName 的命名空间。 |
+| `soapAttachment` | （版本 7.0）一个布尔值，表示节点的 `soapValue` 内容应按照 SwA 规范编码为附件。如果相应的 `soapAttachment` 属性为 `true`，则 `soapValue` 必须是流，否则将抛出异常。 |
+| `soapParamOrder` | （版本 7.0）一个数组，表示应按何种顺序将 RPC 参数发送到服务器。该数组是一组包含参数名的字符串。此值仅在 `bEncoding` 为 `true` 时适用。 |
+| `oAsync` | （版本 6.0）`oAsync` 对象字面量必须包含一个名为 `response` 的函数，该函数将在响应返回时使用两个参数（`oResult` 和 `cURI`）进行调用。`oResult` 与同步调用请求调用时返回的结果对象相同。`cURI` 是发出请求的端点的 URI。<br><br>（版本 7.0）`oAsync` 对象响应回调现在具有以下参数： |
+| `response` | 来自 SOAP 请求的响应对象。 |
+| `uri` | 发出 SOAP 请求的 URI。 |
+| `exception` | 如果发生错误，则是一个异常对象（参见下面的异常），否则为 `null`。 |
+| `header` | 一个响应 SOAP 头（参见 `oRespHeader` 参数的描述），如果没有响应头，则为 `null`。 |
+| `cAction` | `cAction` 参数是方法的 SOAPAction 头。SOAPAction 是一个 URN，写入 HTTP 头中，被防火墙和服务器用于过滤 SOAP 请求。SOAP 服务的 WSDL 文件或 SOAP 服务描述通常会描述所需的 SOAPAction 头（如果有）。 |
+| `oReqHeader` | `oReqHeader` 对象指定要包含在 SOAP 请求中的请求头。该对象的指定方式与 `oRequest` 对象相同，只是可以在请求描述中指定两个额外的属性： |
+| `soapActor` | SOAP 头应由其处理的接收者（或指定为 URI 的参与者）。默认情况下，头将由第一个处理请求的接收者处理。 |
+| `soapMustUnderstand` | 一个布尔值，表示如果接收者不理解此头类型，则无法解释请求体。默认情况下，理解头是可选的。 |
+| `oRespHeader` | `oRespHeader` 对象在函数同步调用时（否则头将传递给 `oAsync` 回调方法）在函数返回后填充。有关对象格式，请参见 `cResponseStyle` 参数的描述。 |
+| `cVersion` | `cVersion` 参数表示生成消息时使用的 SOAP 版本。`cVersion` 参数是以下之一： |
+| `SOAPVersion.version_1_1` | （默认）使用 SOAP 1.1 协议编码消息。 |
+| `SOAPVersion.version_1_2` | 使用 SOAP 1.2 协议编码消息。 |
+| `oAuthenticate` | `oAuthenticate` 对象指定如何处理 HTTP 身份验证或指定用于 Web 服务安全的凭据。默认行为是向用户呈现一个用户界面，以处理 BASIC 和 DIGEST 身份验证模式的 HTTP 身份验证挑战。`oAuthenticate` 对象可以具有以下属性： |
+| `Username` | 一个字符串，包含用于身份验证的用户名。 |
+| `Password` | 一个字符串，包含要使用的身份验证凭据。 |
+| `UsePlatformAuth` | 一个布尔值，表示应使用平台身份验证。如果启用了平台身份验证，则忽略 `Username` 和 `Password`，并使用底层平台网络代码。这可能导致向用户显示身份验证 UI 和/或使用当前登录用户的凭据。默认为 `false`，仅在 Windows 平台上支持。 |
+| `cResponseStyle` | `cResponseStyle` 参数是一个枚举类型，表示返回值（对于 SOAP 主体）和 `oRespHeader` 对象（对于 SOAP 头）将如何构建： |
+| `SOAPMessageStyle.JS` | （默认）响应将是一个描述返回消息的 SOAP 主体（或 SOAP 头）的对象（这是 Acrobat 6.0 产生的结果）。当使用 SOAP 编码进行请求时推荐使用此选项，但在使用字面量编码时并不理想——使用 XML 或 Message 样式更好。 |
+| `SOAPMessageStyle.XML` | 响应将是一个流对象，其中包含作为 XML 片段的 SOAP 主体（或 SOAP 头）。如果响应有关联的任何附件，Stream 对象将有一个对象属性 `oAttachments`。对象键是附件部分的唯一名称，值必须是包含附件内容的 Stream 对象。 |
+| `SOAPMessageStyle.Message` | 响应将是一个描述与 XML 消息对应的 SOAP 主体（或 SOAP 头）的对象。这与 JS 响应样式在以下方面有所不同：<br>* XML 元素作为对象数组而不是单个对象返回，以维护顺序并允许同名元素。<br>* XML 属性使用 `soapAttributes` 属性保留。<br>* 命名空间被处理并返回在 `soapName` 和 `soapQName` 属性中。<br>* 元素的内容在 `soapValue` 属性中。 |
 
-ReadStream 对象是一个表示数据流的字面量对象。该字面量对象应包含一个名为 **read** 的函数，其形式如下：
+ReadStream 对象是一个表示数据流的字面量对象。该字面量对象应包含一个名为 `read` 的函数，其形式如下：
 
-```
+```javascript
 var readSteamObject = {
     read: function(nBytes) {...};
 }
 ```
 
-**read()** 方法接受要读取的字节数，并返回一个十六进制编码的字符串，其中包含来自流的数据。**read()** 方法返回一个零长度字符串以表示流结束。或者，你可以使用 **SOAP.streamFromString** 函数来创建读流。
+`read()` 方法接受要读取的字节数，并返回一个十六进制编码的字符串，其中包含来自流的数据。`read()` 方法返回一个零长度字符串以表示流结束。或者，你可以使用 `SOAP.streamFromString` 函数来创建读流。
 
 ### 关于返回值的附加说明
 
-如果没有 oAsync 参数（即同步请求），则 **request** 返回 SOAP 方法的结果。否则，不返回任何内容。结果中的 SOAP 类型映射到 JavaScript 类型，如下所示：
+如果没有 `oAsync` 参数（即同步请求），则 `request` 返回 SOAP 方法的结果。否则，不返回任何内容。结果中的 SOAP 类型映射到 JavaScript 类型，如下所示：
 
 | SOAP 类型 | JavaScript 类型 |
-|---|---|
-| xsd:string | String |
-| xsd:integer | Number |
-| xsd:float | Number |
-| xsd:dateTime | Date |
-| xsd:boolean | Boolean |
-| xsd:hexBinary | ReadStream 对象 |
-| xsd:base64Binary | ReadStream 对象 |
-| SOAP-ENC:base64 | ReadStream 对象 |
-| SOAP-ENC:Array | Array |
-| 无类型信息 | String |
+| --- | --- |
+| `xsd:string` | `String` |
+| `xsd:integer` | `Number` |
+| `xsd:float` | `Number` |
+| `xsd:dateTime` | `Date` |
+| `xsd:boolean` | `Boolean` |
+| `xsd:hexBinary` | ReadStream 对象 |
+| `xsd:base64Binary` | ReadStream 对象 |
+| `SOAP-ENC:base64` | ReadStream 对象 |
+| `SOAP-ENC:Array` | `Array` |
+| 无类型信息 | `String` |
 
 ### 关于异常的附加说明
 
-* SOAPError：当 SOAP 端点返回 SOAPFault 时，会抛出此异常。SOAPError 异常对象具有以下属性：
+* `SOAPError`：当 SOAP 端点返回 SOAPFault 时，会抛出此异常。`SOAPError` 异常对象具有以下属性：
 
-| 属性 | 描述 |
-|---|---|
-| **faultCode** | 一个字符串，表示此错误的 SOAP 故障代码。 |
-| **faultActor** | 一个字符串，表示生成错误的 SOAP 参与者。 |
-| **faultDetail** | 一个字符串，表示与错误相关的详细信息。 |
+  | 属性 | 描述 |
+  | --- | --- |
+  | `faultCode` | 一个字符串，表示此错误的 SOAP 故障代码。 |
+  | `faultActor` | 一个字符串，表示生成错误的 SOAP 参与者。 |
+  | `faultDetail` | 一个字符串，表示与错误相关的详细信息。 |
 
-* NetworkError：当底层 HTTPTransport 层出现故障或获取网络连接失败时，会抛出此异常。NetworkError 异常对象具有以下属性：
+* `NetworkError`：当底层 HTTPTransport 层出现故障或获取网络连接失败时，会抛出此异常。`NetworkError` 异常对象具有以下属性：
 
-| 属性 | 描述 |
-|---|---|
-| **statusCode** | HTTP 状态码，如果无法建立网络连接，则为 -1。 |
+  | 属性 | 描述 |
+  | --- | --- |
+  | `statusCode` | HTTP 状态码，如果无法建立网络连接，则为 -1。 |
 
 * 标准的 Acrobat 异常也可能被抛出。
 
-**注意：** 如果方法是异步调用的，则异常对象可能会传递给 **response()** 回调方法。
+**注意：** 如果方法是异步调用的，则异常对象可能会传递给 `response()` 回调方法。
 
 ### 示例 1
 
-需要一个服务 WSDL 文档 URL。可以从以下 URL 的“Round 2 Interop Services - using SOAP 1.2”部分获取：
-[http://www.whitemesa.com/interop.htm](http://www.whitemesa.com/interop.htm)。
+需要一个服务 WSDL 文档 URL。可以从以下 URL 的“Round 2 Interop Services - using SOAP 1.2”部分获取：[http://www.whitemesa.com/interop.htm](http://www.whitemesa.com/interop.htm)。
 
-```
+```javascript
 var cURL = <从
                  http://www.whitemesa.com/interop.htm 获取此服务的 URL>;
 
 var cTestString = "This is my test string";
 
 // 调用 echoString SOAP 方法 -- 它是一个 RPC 编码方法
+
 var response = SOAP.request(
 {
     cURL: cURL,
@@ -21834,40 +22970,42 @@ var response = SOAP.request(
     },
 ```
 
-
-
-## streamDecode
+## `streamDecode`
 
 | 6.0 |  |  |  |
-|---|---|---|---|
+| --- | --- | --- | --- |
 
 此函数允许使用指定的编码类型 `cEncoder` 对 `oStream` 对象进行解码。它返回一个 ReadStream 对象（参见 request），该对象已经过适当的解码。通常，当数据作为 SOAP 方法的一部分以 Base64 或 Hex 编码返回时，会使用此函数来访问这些数据。
 
 ### 参数
 
-| oStream | 使用指定编码类型进行解码的流对象。 |
-| cEncoder | 此字符串的可选值为 `"hex"`（十六进制编码）和 `"base64"`（Base64 编码）。 |
+| 参数 | 描述 |
+| --- | --- |
+| `oStream` | 使用指定编码类型进行解码的流对象。 |
+| `cEncoder` | 此字符串的可选值为 `"hex"`（十六进制编码）和 `"base64"`（Base64 编码）。 |
 
 ### 返回值
 
-ReadStream 对象
+ReadStream 对象。
 
-## streamDigest
+## `streamDigest`
 
 | 7.0 |  |  |  |
-|---|---|---|---|
+| --- | --- | --- | --- |
 
 此函数允许使用指定的编码类型 `cEncoder` 对 `oStream` 对象进行摘要计算。它返回一个 ReadStream 对象，该对象包含 `oStream` 的计算摘要。通常，这用于计算摘要以验证原始数据流的完整性，或作为 Web 服务身份验证方案的一部分。
 
 ### 参数
 
-| oStream | 使用指定消息摘要算法计算其摘要的流对象。 |
-| cEncoder | 使用的摘要算法。`cEncoder` 参数必须是以下值之一： |
+| 参数 | 描述 |
+| --- | --- |
+| `oStream` | 使用指定消息摘要算法计算其摘要的流对象。 |
+| `cEncoder` | 使用的摘要算法。`cEncoder` 参数必须是以下值之一： |
 
 | 摘要算法 | 描述 |
-|---|---|
-| StreamDigest.MD5 | 使用 MD5 摘要算法（参见 RFC 1321）对内容进行摘要 |
-| StreamDigest.SHA1 | 使用 SHA-1 摘要算法（参见 RFC 3174）对内容进行摘要 |
+| --- | --- |
+| `StreamDigest.MD5` | 使用 MD5 摘要算法（参见 RFC 1321）对内容进行摘要。 |
+| `StreamDigest.SHA1` | 使用 SHA-1 摘要算法（参见 RFC 3174）对内容进行摘要。 |
 
 ### 返回值
 
@@ -21877,82 +23015,94 @@ ReadStream 对象
 
 ```javascript
 var srcStm = SOAP.streamFromString("This is a string I want to digest");
+
 var digest = SOAP.streamDigest(srcStm, StreamDigest.SHA1);
 ```
 
-## streamEncode
+## `streamEncode`
 
 | 6.0 |  |  |  |
-|---|---|---|---|
+| --- | --- | --- | --- |
 
 此函数允许使用指定的编码类型 `cEncoder` 对 `oStream` 对象进行编码。它返回一个 ReadStream 对象（参见 request），该对象已应用适当的编码。通常，当数据作为 SOAP 方法的一部分必须以 Base64 或 Hex 编码传递时，会使用此函数。
 
 ### 参数
 
-| oStream | 使用指定编码类型进行编码的流对象。 |
-| cEncoder | 此字符串的可选值为 `"hex"`（十六进制编码）和 `"base64"`（Base64 编码）。 |
+| 参数 | 描述 |
+| --- | --- |
+| `oStream` | 使用指定编码类型进行编码的流对象。 |
+| `cEncoder` | 此字符串的可选值为 `"hex"`（十六进制编码）和 `"base64"`（Base64 编码）。 |
 
 ### 返回值
 
-ReadStream 对象
+ReadStream 对象。
 
-## streamFromString
+## `streamFromString`
 
 | 6.0 |  |  |  |
-|---|---|---|---|
+| --- | --- | --- | --- |
 
 此函数将字符串转换为 ReadStream 对象（参见 request）。通常，这用于将数据作为 SOAP 方法的一部分进行传递。
 
 ### 参数
 
-| cString | 要转换的字符串 |
-|---|---|
+| 参数 | 描述 |
+| --- | --- |
+| `cString` | 要转换的字符串。 |
 
 ### 返回值
 
-ReadStream 对象
+ReadStream 对象。
 
-## stringFromStream
+## `stringFromStream`
 
 | 6.0 |  |  |  |
-|---|---|---|---|
+| --- | --- | --- | --- |
 
 此函数将 ReadStream 对象（参见 request）转换为字符串。通常，这用于检查作为 SOAP 方法响应一部分返回的流对象的内容。
 
 ### 参数
 
-| oStream | 要转换的 ReadStream 对象。 |
-|---|---|
+| 参数 | 描述 |
+| --- | --- |
+| `oStream` | 要转换的 ReadStream 对象。 |
 
 ### 返回值
 
-字符串
+字符串。
 
 ## Sound 对象
 
 | 5.0 |  |  |  |
-|---|---|---|---|
+| --- | --- | --- | --- |
 
 此对象表示存储在文档中的声音。所有声音对象的数组可以从 `doc.sounds` 获取。另请参阅文档方法 `getSound`、`importSound` 和 `deleteSound`。
 
 ### Sound 属性
 
-### name
+### `name`
 
 与此声音对象关联的名称。
 
-类型：字符串 访问权限：R。
+类型：字符串。访问权限：R。
 
 ### 示例
 
 ```javascript
 console.println("Dumping all sound objects in this document.");
+
 var s = this.sounds;
+```
+
+
+
+
+```javascript
 for (var i = 0; i < this.sounds.length; i++)
     console.println("Sound[" + i + "]=" + s[i].name);
 ```
 
-### Sound 方法
+## Sound 方法
 
 ### play
 
@@ -21998,22 +23148,28 @@ for (var i = 0; i < this.sounds.length; i++)
 Span 对象用于表示富文本表单域或注释中的一段文本及其关联属性。表单域或注释的富文本值由一个 span 对象数组组成，这些对象代表注释的文本和格式。需要注意的是，span 对象是字段或注释富文本值的副本。要修改和重置富文本值以更新字段，请使用 `field.richValue`、`event.richValue`（以及 `richChange`、`richChangeEx`）或 `annot.richContents`。
 
 ---
+
 **上一内容（示例 2）：**
 
 此示例说明了如何设置 SOAP 头部并获取它。
 
 ```javascript
 var cURL = <URL of a Service>;
+
 var NS = "http://adobe.com/FEAT/:";
 var oHeader = {};
+
 oHeader[NS + "testSession"] =
 {
     soapType: "xsd:string",
     soapValue: "Header Test String"
 };
+
 var oResultHeader = {};
 var oRequest = {};
+
 oRequest[NS + "echoHeader"] = {};
+
 var response = SOAP.request(
 {
     cURL: cURL,
@@ -22024,7 +23180,7 @@ var response = SOAP.request(
 });
 ```
 
-# 示例 3
+### 示例 3
 
 此示例说明了 HTTP 身份验证的使用。
 
@@ -22034,6 +23190,7 @@ var oAuthenticator =
     Username: "myUserName",
     Password: "myPassword"
 };
+
 var response = SOAP.request(
 {
     cURL: cURL,
@@ -22047,26 +23204,26 @@ var response = SOAP.request(
 });
 ```
 
-# response
+## response
 
-| | | | F |
+|  |  |  | F |
 |---|---|---|---|
-| 6.0 | | | |
+| 6.0 |  |  |  |
 
 此方法启动远程过程调用（RPC）或向 SOAP HTTP 端点发送 XML 消息，而无需等待回复。
 
-# 参数
+### 参数
 
 | 参数 | 描述 |
 |---|---|
-| cURL | SOAP HTTP 端点的 URL。URL 方法必须是 http 或 https 之一。http—在端口上的 URI 连接到服务器。例如，http://serverName:portNumber/URI https—在端口上的 URI 连接到安全（SSL）服务器。例如，https://serverName:portNumber/URI 有关详细信息，请参见 `SOAP.request` 下的 `cURL`。 |
-| oRequest | 指定远程过程名称和参数或要发送的 XML 消息的对象。有关详细信息，请参见 **SOAP.request** 下的 **oRequest**。 |
-| cAction | （可选）此请求的 SOAP Action 头部，如 SOAP 规范所指定。默认情况下 SOAP Action 为空。有关详细信息，请参见 **SOAP.request** 下的 **cAction**。 |
-| bEncoded | （可选）使用 SOAP 规范中描述的 SOAP 编码对请求进行编码。默认值为 **true**。 |
-| cNamespace | （可选）当请求不使用 SOAP 编码（**bEncoded** 标志为 **false**）时，用于消息架构的命名空间。默认情况下没有命名空间。 |
-| oReqHeader | （可选，版本 7.0）指定要包含在请求中的 SOAP 头部的对象。默认情况下只发送带有 SOAP Body 的请求。有关详细信息，请参见 **SOAP.request** 下的 **oReqHeader**。 |
-| cVersion | （可选，版本 7.0）要使用的 SOAP 协议版本。默认使用 "SOAPVersion.version_1_1"。有关详细信息，请参见 **SOAP.request** 下的 **cVersion**。 |
-| oAuthenticate | （可选，版本 7.0）指定身份验证方案类型并提供凭据的对象。默认情况下，如果遇到 HTTP 身份验证，将显示交互式 UI。有关详细信息，请参见 **SOAP.request** 下的 **oAuthenticate**。 |
+| `cURL` | SOAP HTTP 端点的 URL。URL 方法必须是 http 或 https 之一。http—在端口上的 URI 连接到服务器。例如，http://serverName:portNumber/URI。https—在端口上的 URI 连接到安全（SSL）服务器。例如，https://serverName:portNumber/URI。有关详细信息，请参见 `SOAP.request` 下的 `cURL`。 |
+| `oRequest` | 指定远程过程名称和参数或要发送的 XML 消息的对象。有关详细信息，请参见 `SOAP.request` 下的 `oRequest`。 |
+| `cAction` | （可选）此请求的 SOAP Action 头部，如 SOAP 规范所指定。默认情况下 SOAP Action 为空。有关详细信息，请参见 `SOAP.request` 下的 `cAction`。 |
+| `bEncoded` | （可选）使用 SOAP 规范中描述的 SOAP 编码对请求进行编码。默认值为 `true`。 |
+| `cNamespace` | （可选）当请求不使用 SOAP 编码（`bEncoded` 标志为 `false`）时，用于消息架构的命名空间。默认情况下没有命名空间。 |
+| `oReqHeader` | （可选，版本 7.0）指定要包含在请求中的 SOAP 头部的对象。默认情况下只发送带有 SOAP Body 的请求。有关详细信息，请参见 `SOAP.request` 下的 `oReqHeader`。 |
+| `cVersion` | （可选，版本 7.0）要使用的 SOAP 协议版本。默认使用 `"SOAPVersion.version_1_1"`。有关详细信息，请参见 `SOAP.request` 下的 `cVersion`。 |
+| `oAuthenticate` | （可选，版本 7.0）指定身份验证方案类型并提供凭据的对象。默认情况下，如果遇到 HTTP 身份验证，将显示交互式 UI。有关详细信息，请参见 `SOAP.request` 下的 `oAuthenticate`。 |
 
 ### 返回值
 
@@ -22074,13 +23231,14 @@ var response = SOAP.request(
 
 ### 异常
 
-如果在网络级别出现问题，例如端点不可用，将抛出 **NetworkError**。
+如果在网络级别出现问题，例如端点不可用，将抛出 `NetworkError`。
 
 ### 示例
 
-请参见 **SOAP.request** 方法后的示例 1。
+请参见 `SOAP.request` 方法后的示例 1。
 
 ---
+
 **初始内容（示例 1）：**
 
 ```javascript
@@ -22099,6 +23257,7 @@ console.println(result + " == " + cTestString);
 
 // Call the echoInteger SOAP method -- JavaScript doesn't support
 // integers so we make our own integer object.
+
 var oTestInt =
 {
     soapType: "xsd:int",
@@ -22131,128 +23290,138 @@ console.println(result + " == " + oTestInt.soapValue);
 
 ```output
 This is my test string == This is my test string
+
 10 == 10
 ```
 
 ## Span 属性
 
-## 对齐方式
+### 对齐方式
 
 文本的水平对齐方式。一行文本的对齐方式由该行的第一个 span 决定。`alignment` 的值可以是：
 
--   左对齐
--   居中
--   右对齐
+- 左对齐
+- 居中
+- 右对齐
 
 默认值为 `left`。
 
-类型：字符串 访问权限：读/写。
+类型：字符串。访问权限：读/写。
 
 `superscript` 后面的示例展示了 `alignment` 的用法。
 
-## fontFamily
+### fontFamily
 
 用于绘制文本的字体族。它是一个字体族名称的数组，将按顺序进行搜索。数组中的第一个条目是要使用的字体的名称；第二个条目是一个可选的通用字体族名称，如果在第一个字体中未找到精确匹配项，则使用它。通用字体族名称有：
 
--   symbol、serif、sans-serif、cursive、monospace、fantasy
+- `symbol`、`serif`、`sans-serif`、`cursive`、`monospace`、`fantasy`
 
 默认通用字体族名称为 `sans-serif`。
 
-类型：数组 访问权限：读/写。
+类型：数组。访问权限：读/写。
 
-## 示例
+### 示例
 
 为富文本字段设置 `defaultStyle` 字体族。
 
-```
+```javascript
 f = this.getField("Text1");
 style = f.defaultStyle;
 
 // if Courier Std is not found on the user's system, use a monospace
-style.fontFamily = ["Courier Std", "monospace" ];
+style.fontFamily = ["Courier Std", "monospace"];
+
 f.defaultStyle = style;
 ```
 
-## fontStretch
+### fontStretch
 
 指定从字体族中使用正常、压缩或扩展的字形来绘制文本。`fontStretch` 的值可以是：
 
--   ultra-condensed、extra-condensed、condensed、semi-condensed、normal、semi-expanded、expanded、extra-expanded、ultra-expanded
+- `ultra-condensed`
+- `extra-condensed`
+- `condensed`
+- `semi-condensed`
+- `normal`
+- `semi-expanded`
+- `expanded`
+- `extra-expanded`
+- `ultra-expanded`
 
 默认值为 `normal`。
 
-类型：字符串 访问权限：读/写。
+类型：字符串。访问权限：读/写。
 
-## fontStyle
+### fontStyle
 
 指定文本使用斜体或倾斜字体绘制。
 
--   italic
--   normal
+- `italic`
+- `normal`
 
-默认值为 **normal**。
+默认值为 `normal`。
 
-类型：字符串 访问权限：读/写。
+类型：字符串。访问权限：读/写。
 
-## fontWeight
+### fontWeight
 
-用于绘制文本的字体的粗细。为了便于比较，normal 指小于 700，bold 指大于或等于 700。**fontWeight** 的值可以是：
+用于绘制文本的字体的粗细。为了便于比较，`normal` 指小于 700，`bold` 指大于或等于 700。`fontWeight` 的值可以是：
 
-100、200、300、400、500、600、700、800、900
+`100`、`200`、`300`、`400`、`500`、`600`、`700`、`800`、`900`
 
 默认值为 400。
 
-类型：数字 访问权限：读/写。
+类型：数字。访问权限：读/写。
 
-## text
+### text
 
 span 中的文本。
 
-类型：字符串 访问权限：读/写。
+类型：字符串。访问权限：读/写。
 
-`superscript` 后面的示例展示了 **text** 的用法。
+`superscript` 后面的示例展示了 `text` 的用法。
 
-## textColor
+### textColor
 
-用于绘制文本的 RGB 颜色。**textColor** 的值是一个颜色数组，请参阅颜色对象以了解颜色数组的描述。默认颜色为黑色。
+用于绘制文本的 RGB 颜色。`textColor` 的值是一个颜色数组，请参阅颜色对象以了解颜色数组的描述。默认颜色为黑色。
 
-类型：颜色数组 访问权限：读/写。
+类型：颜色数组。访问权限：读/写。
 
-`superscript` 后面的示例展示了 **textColor** 的用法。
+`superscript` 后面的示例展示了 `textColor` 的用法。
 
-## textSize
+### textSize
 
-文本的磅值。**textSize** 的值可以是 0 到 32767 之间的任何数字。文本大小为零意味着使用允许所有文本数据适应字段矩形的最大磅值。
+文本的磅值。`textSize` 的值可以是 0 到 32767 之间的任何数字。文本大小为零意味着使用允许所有文本数据适应字段矩形的最大磅值。
 
 默认文本大小为 12.0。
 
-类型：数字 访问权限：读/写。
+类型：数字。访问权限：读/写。
 
-**field.richValue** 后面的示例展示了 **textSize** 的用法。
+`field.richValue` 后面的示例展示了 `textSize` 的用法。
 
-## 删除线
+### 删除线
 
-如果 **strikethrough** 为 **true**，则文本将带有删除线绘制。默认值为 **false**。
+如果 `strikethrough` 为 `true`，则文本将带有删除线绘制。默认值为 `false`。
 
-类型：布尔值 访问权限：读/写。
+类型：布尔值。访问权限：读/写。
 
-## 下标
+### 下标
 
-指定文本为下标。如果为 **true**，则下标文本将以较小的磅值和降低的基线绘制。默认值为 **false**。
+指定文本为下标。如果为 `true`，则下标文本将以较小的磅值和降低的基线绘制。默认值为 `false`。
 
-类型：布尔值 访问权限：读/写。
+类型：布尔值。访问权限：读/写。
 
-## 上标
+### 上标
 
-指定文本为上标。如果为 **true**，则上标文本将以较小的磅值和升高的基线绘制。默认值为 **false**。
+指定文本为上标。如果为 `true`，则上标文本将以较小的磅值和升高的基线绘制。默认值为 `false`。
 
-类型：布尔值 访问权限：读/写。
+类型：布尔值。访问权限：读/写。
 
-## 示例
+### 示例
 
-使用各种属性将富文本写入富文本字段。有关更多详细信息和示例，请参阅 **field**.**richValue**。
+使用各种属性将富文本写入富文本字段。有关更多详细信息和示例，请参阅 `field.richValue`。
 
-```
+```javascript
 var f = this.getField("myRichField");
 
 // need an array to hold the span objects
@@ -22282,74 +23451,86 @@ spans[3].textColor = color.red;
 f.richValue = spans;
 ```
 
-## 下划线
+### 下划线
 
-如果 **underline** 为 **true**，则文本将带有下划线。默认值为 **false**。
+如果 `underline` 为 `true`，则文本将带有下划线。默认值为 `false`。
 
-类型：布尔值 访问权限：读/写。
+类型：布尔值。访问权限：读/写。
 
-`superscript` 后面的示例展示了 **underline** 的用法。
+`superscript` 后面的示例展示了 `underline` 的用法。
 
 ## Spell 对象
 
 此对象允许用户检查注释、表单域以及其他拼写域的拼写。要能够使用 `spell` 对象，用户必须已安装 Acrobat 拼写插件和拼写词典。
 
-**注意：** (Adobe Reader ❌) `spell` 对象在 Adobe Reader 7.0 之前的版本中不可用。在 Adobe Reader 7.0 中，所有属性和方法（`customDictionaryCreate`、`customDictionaryDelete` 和 `customDictionaryExport` 除外）均可访问。
+**注意：**（Adobe Reader ❌）`spell` 对象在 Adobe Reader 7.0 之前的版本中不可用。在 Adobe Reader 7.0 中，所有属性和方法（`customDictionaryCreate`、`customDictionaryDelete` 和 `customDictionaryExport` 除外）均可访问。
 
 ## Spell 属性
 
-## 可用性
+### 可用性
 
-如果 `spell` 对象可用，则返回 **true**。
+如果 `spell` 对象可用，则返回 `true`。
 
-**注意：** (Adobe Reader ❌) 对于 Adobe Reader，此属性仅在 Adobe Reader 7.0 或更高版本中可用。
+**注意：**（Adobe Reader ❌）对于 Adobe Reader，此属性仅在 Adobe Reader 7.0 或更高版本中可用。
 
-类型：布尔值 访问权限：读。
+类型：布尔值。访问权限：读。
 
-## 示例
+### 示例
 
-```
+```javascript
 console.println("Spell checking available: " + spell.available);
 ```
 
+
+
+
 ## dictionaryNames
 
-可用词典名称的数组。此数组的子集可以传递给 `check`、`checkText` 和 `checkWord`，以及 `spellDictionaryOrder`，以强制使用特定的词典或多个词典，并指定搜索顺序。
-可以通过在控制台中执行 `spell.dictionaryNames` 来获取用户安装的有效词典名称列表。
+可用词典名称的数组。此数组的子集可以传递给`check`、`checkText`和`checkWord`，以及`spellDictionaryOrder`，以强制使用特定的词典或多个词典，并指定搜索顺序。
 
-**注意：** (Adobe Reader [图标]) 对于 Adobe Reader，此属性仅在 Adobe Reader 7.0 或更高版本中可用。
+可以通过在控制台中执行`spell.dictionaryNames`来获取用户安装的有效词典名称列表。
 
-类型：数组 访问权限：读。
+**注意：**（Adobe Reader [图标]）对于 Adobe Reader，此属性仅在 Adobe Reader 7.0 或更高版本中可用。
+
+类型：数组  
+访问权限：读。
 
 ## dictionaryOrder
 
-用户在拼写首选项面板上指定的词典数组搜索顺序。如果已为文档设置了 `doc.spellDictionaryOrder` 数组，拼写插件将首先在该数组中搜索单词，然后搜索此词典数组。
+用户在拼写首选项面板上指定的词典数组搜索顺序。如果已为文档设置了`doc.spellDictionaryOrder`数组，拼写插件将首先在该数组中搜索单词，然后搜索此词典数组。
 
-**注意：** (Adobe Reader [图标]) 对于 Adobe Reader，此属性仅在 Adobe Reader 7.0 或更高版本中可用。
+**注意：**（Adobe Reader [图标]）对于 Adobe Reader，此属性仅在 Adobe Reader 7.0 或更高版本中可用。
 
-类型：数组 访问权限：读。
+类型：数组  
+访问权限：读。
 
 ## domainNames
 
-其他插件已向拼写插件注册的拼写域数组。此数组的子集可以传递给 `check` 以限制拼写检查的范围。
+其他插件已向拼写插件注册的拼写域数组。此数组的子集可以传递给`check`以限制拼写检查的范围。
+
 根据用户的安装，有效的域可以包括：
--   所有内容
--   表单域
--   所有表单域
--   注释
--   所有注释
 
-**注意：** (Adobe Reader [图标]) 对于 Adobe Reader，此属性仅在 Adobe Reader 7.0 或更高版本中可用。
+- 所有内容
+- 表单域
+- 所有表单域
+- 注释
+- 所有注释
 
-类型：数组 访问权限：读。
+**注意：**（Adobe Reader [图标]）对于 Adobe Reader，此属性仅在 Adobe Reader 7.0 或更高版本中可用。
+
+类型：数组  
+访问权限：读。
 
 ## languages
 
-此属性返回可用的 ISO 639-2/3166-1 语言/国家代码数组。此数组的子集可以传递给 `check`、`checkText`、`checkWord` 和 `customDictionaryCreate` 方法，以及 `doc.spellLanguageOrder` 属性，以强制使用特定的语言或多种语言，并指定搜索顺序。
+此属性返回可用的 ISO 639-2/3166-1 语言/国家代码数组。此数组的子集可以传递给`check`、`checkText`、`checkWord`和`customDictionaryCreate`方法，以及`doc.spellLanguageOrder`属性，以强制使用特定的语言或多种语言，并指定搜索顺序。
 
-注意：(Adobe Reader X) 对于 Adobe Reader，此属性仅在 Adobe Reader 7.0 或更高版本中可用。
+**注意：**（Adobe Reader X）对于 Adobe Reader，此属性仅在 Adobe Reader 7.0 或更高版本中可用。
 
-类型：数组 访问权限：读。根据用户的安装，有效的语言/国家代码可以包括：
+类型：数组  
+访问权限：读。
+
+根据用户的安装，有效的语言/国家代码可以包括：
 
 | 代码 | 描述 | 代码 | 描述 |
 | --- | --- | --- | --- |
@@ -22372,73 +23553,83 @@ console.println("Spell checking available: " + spell.available);
 
 列出所有可用的语言代码。
 
-
-
 **Acrobat JavaScript 脚本参考**
-## 拼写方法
 
-```
-console.println( spell.languages.toSource() );
+### 拼写方法
+
+```javascript
+console.println(spell.languages.toSource());
 ```
 
 ## languageOrder
 
 | 6.0 |   |   |   |   |
+| --- | --- | --- | --- | --- |
 
-此属性以 ISO 639-2、3166 语言代码数组的形式返回字典搜索顺序。这是用户在“拼写首选项”面板上指定的顺序。如果已为文档设置了 `doc.spellLanguageOrder` 数组，拼写插件将首先在该数组中搜索单词，然后再搜索此语言数组。
+此属性以 ISO 639-2、3166 语言代码数组的形式返回字典搜索顺序。这是用户在“拼写首选项”面板上指定的顺序。如果已为文档设置了`doc.spellLanguageOrder`数组，拼写插件将首先在该数组中搜索单词，然后再搜索此语言数组。
 
 **注意：**（Adobe Reader ⓧ）对于 Adobe Reader，此属性仅在 Adobe Reader 7.0 或更高版本中可用。
 
-类型：数组 访问：R。
+类型：数组  
+访问：R。
 
 ## 示例
 
 获取字典搜索顺序的列表。
 
-```
-console.println( spell.languageOrder.toSource() );
+```javascript
+console.println(spell.languageOrder.toSource());
 ```
 
 ## 拼写方法
 
-## addDictionary
+### addDictionary
 
 | ⓧ | Ⓟ |   | ⓧ |   |
+| --- | --- | --- | --- | --- |
 
-将字典添加到可用字典列表中。一个字典实际上由四个文件组成：`DDDxxxxx.hyp`、`DDDxxxxx.lex`、`DDDxxxxx.clx` 和 `DDDxxxxx.env`。`cFile` 参数必须是 `.hyp` 文件的设备无关路径。例如，`"/c/temp/testdict/TST.hyp"`。拼写功能将在 `TST.hyp` 文件的父目录中查找其他三个文件。所有四个文件名必须以相同的唯一 3 个字符开头以相互关联，并且即使在 Macintosh 上，它们也必须以点号和上述三个扩展名结尾。
+将字典添加到可用字典列表中。一个字典实际上由四个文件组成：`DDDxxxxx.hyp`、`DDDxxxxx.lex`、`DDDxxxxx.clx`和`DDDxxxxx.env`。`cFile`参数必须是`.hyp`文件的设备无关路径。例如，`"/c/temp/testdict/TST.hyp"`。拼写功能将在`TST.hyp`文件的父目录中查找其他三个文件。所有四个文件名必须以相同的唯一 3 个字符开头以相互关联，并且即使在 Macintosh 上，它们也必须以点号和上述三个扩展名结尾。
 
-**注意：** 从 Acrobat 6.0 开始，此方法不再支持。此方法的返回值始终为 **false**。请使用 `customDictionaryOpen` 方法。
+**注意：**从 Acrobat 6.0 开始，此方法不再支持。此方法的返回值始终为`false`。请使用`customDictionaryOpen`方法。
 
 ## 参数
 
-| cFile | 字典文件的设备无关路径。 |
-| cName | 拼写对话框中使用的字典名称，可用作 `check`、`checkText` 和 `checkWord` 的输入参数。 |
-| bShow（可选） | 当 **true**（默认值）时，拼写功能会将 **cName** 的值与 "User: " 组合，并在所有列表和菜单中显示该名称。例如，如果 **cName** 是 "Test"，拼写功能会向所有列表和菜单添加 "User: Test"。当为 **false** 时，拼写功能不会在任何列表或菜单中显示此自定义字典。 |
+| 参数 | 描述 |
+| --- | --- |
+| `cFile` | 字典文件的设备无关路径。 |
+| `cName` | 拼写对话框中使用的字典名称，可用作`check`、`checkText`和`checkWord`的输入参数。 |
+| `bShow`（可选） | 当`true`（默认值）时，拼写功能会将`cName`的值与 `"User: "` 组合，并在所有列表和菜单中显示该名称。例如，如果`cName`是`"Test"`，拼写功能会向所有列表和菜单添加`"User: Test"`。当为`false`时，拼写功能不会在任何列表或菜单中显示此自定义字典。 |
 
-返回
-**false**
+### 返回
 
-## addWord
+`false`
 
-| 5.0 | (P) | (S) | | |
+### addWord
 
-向字典中添加一个新词。另请参阅 `removeWord`。
+| 5.0 | (P) | (S) |   |   |
+| --- | --- | --- | --- | --- |
 
-**注意：**（安全 Ⓢ）：从 Acrobat 7.0 开始，此方法仅在控制台或批处理事件期间允许使用。另请参阅 `特权与非特权上下文`。在内部，拼写检查对象会扫描用户“非词汇”字典，并在该词被列出时将其移除。否则，该词将被添加到用户字典中。实际的字典并未被修改。
+向字典中添加一个新词。另请参阅`removeWord`。
+
+**注意：**（安全 Ⓢ）：从 Acrobat 7.0 开始，此方法仅在控制台或批处理事件期间允许使用。另请参阅`特权与非特权上下文`。在内部，拼写检查对象会扫描用户“非词汇”字典，并在该词被列出时将其移除。否则，该词将被添加到用户字典中。实际的字典并未被修改。
 
 **注意：**（Adobe Reader ⓧ）对于 Adobe Reader，此方法仅在 Adobe Reader 7.0 或更高版本中可用。
 
 ## 参数
 
-| **cWord** | 要添加的新词。 |
-| **cName** | （可选）字典名称或语言代码。可以使用 `dictionaryNames` 或 `languages` 获取当前已安装字典的数组。 |
+| 参数 | 描述 |
+| --- | --- |
+| `cWord` | 要添加的新词。 |
+| `cName` | （可选）字典名称或语言代码。可以使用`dictionaryNames`或`languages`获取当前已安装字典的数组。 |
 
-返回
-成功则为 **true**，否则为 **false**。
+### 返回
 
-## check
+成功则为`true`，否则为`false`。
 
-| 5.0 | | | | |
+### check
+
+| 5.0 |   |   |   |   |
+| --- | --- | --- | --- | --- |
 
 显示“拼写”对话框，允许用户更正表单字段、注释或其他对象中的拼写错误单词。
 
@@ -22446,28 +23637,32 @@ console.println( spell.languageOrder.toSource() );
 
 ## 参数
 
-| aDomain | （可选）应由拼写插件检查的文档对象数组，例如表单字段或批注。当您不提供域数组时，将使用 "EveryThing" 域。可以使用 `domainNames` 获取已注册域的数组。 |
-| aDictionary | （可选）拼写检查器应使用的字典名称或语言代码数组。数组中字典的顺序即为拼写检查器检查拼写错误单词的顺序。可以使用 `spell.dictionaryNames` 或 `spell.languages` 获取当前已安装字典的数组。当省略此参数时，将搜索 `spellDictionaryOrder` 列表，然后搜索 `dictionaryOrder` 列表。 |
+| 参数 | 描述 |
+| --- | --- |
+| `aDomain` | （可选）应由拼写插件检查的文档对象数组，例如表单字段或批注。当您不提供域数组时，将使用`"EveryThing"`域。可以使用`domainNames`获取已注册域的数组。 |
+| `aDictionary` | （可选）拼写检查器应使用的字典名称或语言代码数组。数组中字典的顺序即为拼写检查器检查拼写错误单词的顺序。可以使用`spell.dictionaryNames`或`spell.languages`获取当前已安装字典的数组。当省略此参数时，将搜索`spellDictionaryOrder`列表，然后搜索`dictionaryOrder`列表。 |
 
 ## 返回
 
-如果用户更改或忽略了所有标记的单词，则返回 **true**。当用户在检查完所有内容之前关闭对话框时，该方法返回 **false**。
+如果用户更改或忽略了所有标记的单词，则返回`true`。当用户在检查完所有内容之前关闭对话框时，该方法返回`false`。
 
 ## 示例
 
-```
+```javascript
 var dictionaries = ["de", "French", "en-GB"];
 var domains = ["All Form Fields", "All Annotations"];
-if (spell.check(domains, dictionaries))
+
+if (spell.check(domains, dictionaries)) {
     console.println("您的拼写得A。");
-else
+} else {
     console.println("请在提交前对本表单进行拼写检查。");
+}
 ```
 
-## checkText
+### checkText
 
-| 5.0 |  |  |  |  |
-|---|---|---|---|---|
+| 5.0 |   |   |   |   |
+| --- | --- | --- | --- | --- |
 
 显示拼写对话框，允许用户更正指定字符串中的拼写错误单词。
 
@@ -22475,8 +23670,10 @@ else
 
 ## 参数
 
-| cText | 要检查的字符串。 |
-| aDictionary | （可选）拼写检查器应使用的字典名称或语言代码数组。数组中字典的顺序即为拼写检查器检查拼写错误单词的顺序。可以使用 `spell.dictionaryNames` 或 `spell.languages` 获取当前已安装字典的数组。当省略此参数时，将搜索 `spellDictionaryOrder` 列表，然后搜索 `dictionaryOrder` 列表。 |
+| 参数 | 描述 |
+| --- | --- |
+| `cText` | 要检查的字符串。 |
+| `aDictionary` | （可选）拼写检查器应使用的字典名称或语言代码数组。数组中字典的顺序即为拼写检查器检查拼写错误单词的顺序。可以使用`spell.dictionaryNames`或`spell.languages`获取当前已安装字典的数组。当省略此参数时，将搜索`spellDictionaryOrder`列表，然后搜索`dictionaryOrder`列表。 |
 
 ## 返回
 
@@ -22484,15 +23681,15 @@ else
 
 ## 示例
 
-```
+```javascript
 var f = this.getField("Text Box");   // 一个表单文本框
-f.value = spell.checkText(f.value); // 让用户选择字典
+f.value = spell.checkText(f.value);  // 让用户选择字典
 ```
 
-## checkWord
+### checkWord
 
-| 5.0 | | | | |
-|---|---|---|---|---|
+| 5.0 |   |   |   |   |
+| --- | --- | --- | --- | --- |
 
 检查指定单词的拼写。
 
@@ -22500,19 +23697,22 @@ f.value = spell.checkText(f.value); // 让用户选择字典
 
 ## 参数
 
-| cWord | 要检查的单词。 |
-| aDictionary | （可选）拼写检查器应使用的字典名称或语言代码数组。数组中字典的顺序即为拼写检查器检查拼写错误单词的顺序。可以使用 `spell.dictionaryNames` 或 `spell.languages` 获取当前已安装字典的数组。当省略此参数时，将搜索 `spellDictionaryOrder` 列表，然后搜索 `dictionaryOrder` 列表。 |
+| 参数 | 描述 |
+| --- | --- |
+| `cWord` | 要检查的单词。 |
+| `aDictionary` | （可选）拼写检查器应使用的字典名称或语言代码数组。数组中字典的顺序即为拼写检查器检查拼写错误单词的顺序。可以使用`spell.dictionaryNames`或`spell.languages`获取当前已安装字典的数组。当省略此参数时，将搜索`spellDictionaryOrder`列表，然后搜索`dictionaryOrder`列表。 |
 
 ## 返回
 
-如果单词正确，则返回 `null` 对象；否则返回未知单词的替代拼写数组。
+如果单词正确，则返回`null`对象；否则返回未知单词的替代拼写数组。
 
 ## 示例 1
 
-```
+```javascript
 var word = "subpinna"; /* "subpoena" 的拼写错误 */
 var dictionaries = ["English"];
 var f = this.getField("Alternatives"); // 替代拼写列表框
+
 f.clearItems();
 f.setItems(spell.checkWord(word, dictionaries));
 ```
@@ -22521,16 +23721,16 @@ f.setItems(spell.checkWord(word, dictionaries));
 
 以下脚本遍历文档，并用波浪线注释标记任何拼写错误的单词。波浪线注释的内容包含建议的替代拼写。该脚本可以从控制台执行，作为文档内的鼠标弹起动作、菜单，或作为批处理序列执行。
 
-```
+```javascript
 var ckWord, numWords;
-for (var i = 0; i < this.numPages; i++)
-{
+
+for (var i = 0; i < this.numPages; i++) {
     numWords = this.getPageNumWords(i);
-    for (var j = 0; j < numWords; j++)
-    {
+
+    for (var j = 0; j < numWords; j++) {
         ckWord = spell.checkWord(this.getPageNthWord(i, j));
-        if (ckWord != null)
-        {
+
+        if (ckWord != null) {
             this.addAnnot({
                 page: i,
                 type: "Squiggly",
@@ -22543,28 +23743,28 @@ for (var i = 0; i < this.numPages; i++)
 }
 ```
 
-## customDictionaryClose
+### customDictionaryClose
 
-| 6.0 | | | | |
+| 6.0 |   |   |   |   |
+| --- | --- | --- | --- | --- |
 
-关闭使用 `customDictionaryOpen` 或 `customDictionaryCreate` 打开的自定义字典。
+关闭使用`customDictionaryOpen`或`customDictionaryCreate`打开的自定义字典。
 
 **注意：**（Adobe Reader）对于 Adobe Reader，此方法仅在 Adobe Reader 7.0 或更高版本中可用。
 
 ## 参数
 
-| cName | 打开或创建此字典时使用的字典名称。 |
+| 参数 | 描述 |
+| --- | --- |
+| `cName` | 打开或创建此字典时使用的字典名称。 |
 
 ## 返回
 
-成功则为 `true`，失败则为 `false`。
-
-
-
-Acrobat JavaScript 脚本参考
-拼写方法
+成功则为`true`，失败则为`false`。
 
 ## customDictionaryCreate
+
+### 版本
 
 6.0
 
@@ -22576,38 +23776,50 @@ Acrobat JavaScript 脚本参考
 
 | 参数 | 描述 |
 | :--- | :--- |
-| **cName** | 用于拼写对话框中的词典名称，也可用作 **check**、**checkText** 和 **checkWord** 方法的输入参数。 |
-| **cLanguage** | （可选）使用此参数将此词典与一种语言关联。可以从 spell.languages 属性获取可用语言列表。 |
-| **bShow** | （可选）如果为 **true**（默认值），拼写功能会将 **cName** 参数与 "User: " 结合，并在所有列表和菜单中显示该名称。例如，如果 **cName** 是 "Test"，拼写功能会将 "User: Test" 添加到所有列表和菜单中。当 **bShow** 为 **false** 时，拼写功能不会在任何列表或菜单中显示此自定义词典。 |
+| `cName` | 用于拼写对话框中的词典名称，也可用作`check`、`checkText`和`checkWord`方法的输入参数。 |
+| `cLanguage` | （可选）使用此参数将此词典与一种语言关联。可以从`spell.languages`属性获取可用语言列表。 |
+| `bShow` | （可选）如果为`true`（默认值），拼写功能会将`cName`参数与`"User: "`结合，并在所有列表和菜单中显示该名称。例如，如果`cName`是`"Test"`，拼写功能会将`"User: Test"`添加到所有列表和菜单中。当`bShow`为`false`时，拼写功能不会在任何列表或菜单中显示此自定义词典。 |
 
 ## 返回值
 
-成功返回 **true**，失败返回 **false**。如果用户没有对此目录的读写权限，此方法将失败。
+成功返回`true`，失败返回`false`。如果用户没有对此目录的读写权限，此方法将失败。
 
 ## 示例
 
-在 Acrobat 中打开此文档（Acrobat JavaScript 脚本参考），并在控制台中执行以下脚本。此脚本遍历书签，并提取每个书签的第一个单词。如果该单词已存在于词典中，则将其丢弃。未知的单词（假设是 Acrobat JavaScript 对象、属性或方法的名称）将被添加到一个名为 "JavaScript" 的新创建词典中。
+在 Acrobat 中打开此文档（Acrobat JavaScript 脚本参考），并在控制台中执行以下脚本。此脚本遍历书签，并提取每个书签的第一个单词。如果该单词已存在于词典中，则将其丢弃。未知的单词（假设是 Acrobat JavaScript 对象、属性或方法的名称）将被添加到一个名为`"JavaScript"`的新创建词典中。
 
-```
-spell.customDictionaryCreate("JavaScript",  "en", true);
-function GetJSTerms(bm,  nLevel)
-{
+```javascript
+spell.customDictionaryCreate("JavaScript", "en", true);
+
+function GetJSTerms(bm, nLevel) {
     var newWord = bm.name.match(re);
-    var ckWord = spell.checkWord( newWord[0] );
-    if ( ckWord != null )
-    {
-        var cWord = spell.addWord( newWord[0],  "JavaScript");
-        if ( cWord )  console.println( newWord[0] );
+    var ckWord = spell.checkWord(newWord[0]);
+
+    if (ckWord != null) {
+        var cWord = spell.addWord(newWord[0], "JavaScript");
+
+        if (cWord) {
+            console.println(newWord[0]);
+        }
     }
-    if (bm.children != null)
-        for (var i = 0; i < bm.children.length; i++)
+
+    if (bm.children != null) {
+        for (var i = 0; i < bm.children.length; i++) {
             GetJSTerms(bm.children[i], nLevel + 1);
+        }
+    }
 }
-console.println("\nAdding New words to the "JavaScript" "
+
+console.println("\nAdding New words to the \"JavaScript\" "
                 + "dictionary:");
+
 var re = /^\w+/;
 GetJSTerms(this.bookmarkRoot, 0);
 ```
+
+
+
+
 
 ## customDictionaryDelete
 
@@ -22615,26 +23827,27 @@ GetJSTerms(this.bookmarkRoot, 0);
 | :---: | :---: | :---: |
 | 6.0 | S | X |
 
-使用此方法关闭并删除通过 [customDictionaryOpen](#) 或 [customDictionaryCreate](#) 打开的自定义词典文件。
+使用此方法关闭并删除通过`customDictionaryOpen`或`customDictionaryCreate`打开的自定义词典文件。
 
 **注意：**（安全级别 S）：此方法仅允许在控制台、菜单或批处理事件期间使用。另请参阅[特权与非特权上下文](#)。
+
 从 Acrobat 7.0 开始，通过菜单事件执行 JavaScript 不再具有特权，详情请参阅[通过菜单执行 JavaScript](#)。
 
 ### 参数
 
 | 参数 | 描述 |
 | :--- | :--- |
-| **cName** | 要删除的词典名称。这是打开或创建此词典时使用的名称。 |
+| `cName` | 要删除的词典名称。这是打开或创建此词典时使用的名称。 |
 
 ### 返回值
 
-成功返回 `true`，失败返回 `false`。如果用户没有足够的文件系统权限，此方法将失败。
+成功返回`true`，失败返回`false`。如果用户没有足够的文件系统权限，此方法将失败。
 
 ### 示例
 
 删除一个自定义词典。
 
-```
+```javascript
 spell.customDictionaryDelete("JavaScript");
 ```
 
@@ -22644,30 +23857,33 @@ spell.customDictionaryDelete("JavaScript");
 | :---: | :---: | :---: |
 | 6.0 | S | X |
 
-此方法会将使用拼写方法 [customDictionaryOpen](#) 或 [customDictionaryCreate](#) 打开的自定义词典导出到新文件。
-系统会提示用户选择导出自定义词典的目录。自定义词典将使用词典名称和 [customDictionaryCreate](#) 中指定的语言作为 `.clam` 文件保存在那里。例如，如果词典名称是 "JavaScript"，并且创建时指定了 "en" 语言，则导出的文件名将是 JavaScript-eng.clam。
+此方法会将使用拼写方法`customDictionaryOpen`或`customDictionaryCreate`打开的自定义词典导出到新文件。
 
-导出的自定义词典可在后续的 `customDictionaryOpen` 调用中使用。
+系统会提示用户选择导出自定义词典的目录。自定义词典将使用词典名称和`customDictionaryCreate`中指定的语言作为`.clam`文件保存在那里。例如，如果词典名称是 "JavaScript"，并且创建时指定了 "en" 语言，则导出的文件名将是 JavaScript-eng.clam。
+
+导出的自定义词典可在后续的`customDictionaryOpen`调用中使用。
 
 **注意：**（安全级别 S）：此方法仅允许在控制台、菜单或批处理事件期间使用。
-另请参阅 `特权与非特权上下文`。
-从 Acrobat 7.0 开始，通过菜单事件执行 JavaScript 不再具有特权，详情请参阅 `通过菜单执行 JavaScript`。
+
+另请参阅`特权与非特权上下文`。
+
+从 Acrobat 7.0 开始，通过菜单事件执行 JavaScript 不再具有特权，详情请参阅`通过菜单执行 JavaScript`。
 
 ### 参数
 
 | 参数 | 描述 |
 | :--- | :--- |
-| **cName** | 打开或创建此词典时使用的词典名称。 |
+| `cName` | 打开或创建此词典时使用的词典名称。 |
 
 ### 返回值
 
-成功返回 **true**，失败返回 **false**。如果用户没有足够的文件系统权限，此方法将失败。
+成功返回`true`，失败返回`false`。如果用户没有足够的文件系统权限，此方法将失败。
 
 ### 示例
 
-导出一个自定义词典以分发给其他用户。然后可以将导出的词典发送给其他用户。（参见 `customDictionaryCreate` 后的示例。）
+导出一个自定义词典以分发给其他用户。然后可以将导出的词典发送给其他用户。（参见`customDictionaryCreate`后的示例。）
 
-```
+```javascript
 spell.customDictionaryExport("JavaScript");
 ```
 
@@ -22675,34 +23891,47 @@ spell.customDictionaryExport("JavaScript");
 
 | 6.0 | | | | |
 
-使用此方法将自定义导出词典添加到可用词典列表中。参见 `customDictionaryExport`。
+使用此方法将自定义导出词典添加到可用词典列表中。参见`customDictionaryExport`。
 
-**注意：** 可以使用 `customDictionaryCreate` 和 `customDictionaryExport` 方法创建自定义词典文件。
+**注意：** 可以使用`customDictionaryCreate`和`customDictionaryExport`方法创建自定义词典文件。
 
-**注意：** (Adobe Reader) 对于 Adobe Reader，此方法仅适用于 Adobe Reader 7.0 或更高版本。
+**注意：**（Adobe Reader）对于 Adobe Reader，此方法仅适用于 Adobe Reader 7.0 或更高版本。
 
 ### 参数
 
 | 参数 | 描述 |
 | :--- | :--- |
-| **cDIPath** | 自定义词典文件的设备无关路径。 |
-| **cName** | 用于拼写对话框中的词典名称，也可用作 `check`、`checkText` 和 `checkWord` 方法的输入参数。 |
-| **bShow** | （可选）如果为 `true`（默认值），拼写功能会将 `cName` 参数与 "User: " 结合，并在所有列表和菜单中显示该名称。例如，如果 `cName` 是 "Test"，拼写功能会将 "User: Test" 添加到所有列表和菜单中。当 `bShow` 为 `false` 时，拼写功能不会在任何列表或菜单中显示此自定义词典。 |
+| `cDIPath` | 自定义词典文件的设备无关路径。 |
+| `cName` | 用于拼写对话框中的词典名称，也可用作`check`、`checkText`和`checkWord`方法的输入参数。 |
+| `bShow` | （可选）如果为`true`（默认值），拼写功能会将`cName`参数与 "User: " 结合，并在所有列表和菜单中显示该名称。例如，如果`cName`是 "Test"，拼写功能会将 "User: Test" 添加到所有列表和菜单中。当`bShow`为`false`时，拼写功能不会在任何列表或菜单中显示此自定义词典。 |
 
 ### 返回值
 
-成功返回 `true`，失败返回 `false`。如果用户没有对该文件的读取权限，此方法将失败。
+成功返回`true`，失败返回`false`。如果用户没有对该文件的读取权限，此方法将失败。
 
 ### 示例
 
-此示例延续了 `customDictionaryCreate` 和 `customDictionaryExport` 后开始的示例。
-将自定义导出词典添加到可用词典列表中。用户将自定义导出词典放在任何具有读/写权限的文件夹中。一个特定的选择是用户 `dictionaries` 文件夹。此文件夹的位置可以通过 `app.getPath` 方法获得。
-`app.getPath("user", "dictionaries");`
-放置好导出词典后，可以通过添加一些文件夹级别的 JavaScript 使其自动列出。用户 `JavaScripts` 的路径可以通过执行以下命令获得
-`app.getPath("user", "javascript");`
-最后，在此文件夹中创建一个 `.js` 文件并添加以下行
-`var myDictionaries = app.getPath("user", "dictionaries");`
-`spell.customDictionaryOpen(myDictionaries, "JavaScripts", true);`
+此示例延续了`customDictionaryCreate`和`customDictionaryExport`后开始的示例。
+
+将自定义导出词典添加到可用词典列表中。用户将自定义导出词典放在任何具有读/写权限的文件夹中。一个特定的选择是用户`dictionaries`文件夹。此文件夹的位置可以通过`app.getPath`方法获得。
+
+```javascript
+app.getPath("user", "dictionaries");
+```
+
+放置好导出词典后，可以通过添加一些文件夹级别的 JavaScript 使其自动列出。用户`JavaScripts`的路径可以通过执行以下命令获得：
+
+```javascript
+app.getPath("user", "javascript");
+```
+
+最后，在此文件夹中创建一个`.js`文件并添加以下行：
+
+```javascript
+var myDictionaries = app.getPath("user", "dictionaries");
+spell.customDictionaryOpen(myDictionaries, "JavaScripts", true);
+```
+
 下次启动 Acrobat 时，"JavaScript" 词典将打开并可用。
 
 ## ignoreAll
@@ -22710,62 +23939,63 @@ spell.customDictionaryExport("JavaScript");
 | 6.0 | | | | |
 
 将单词添加到或从当前文档的拼写忽略词列表中移除。
+
 **注意：** 必须在查看器中打开文档，否则此方法将抛出异常。
-**注意：** (Adobe Reader) 对于 Adobe Reader，此方法仅适用于 Adobe Reader 7.0 或更高版本。
+
+**注意：**（Adobe Reader）对于 Adobe Reader，此方法仅适用于 Adobe Reader 7.0 或更高版本。
 
 ### 参数
 
 | 参数 | 描述 |
 | :--- | :--- |
-| **cWord** | 要从忽略列表中添加或移除的单词。 |
-| **bIgnore** | （可选）如果为 **true**（默认值），则将该单词添加到文档忽略词列表中；如果为 **false**，则将该单词从忽略列表中移除。 |
+| `cWord` | 要从忽略列表中添加或移除的单词。 |
+| `bIgnore` | （可选）如果为`true`（默认值），则将该单词添加到文档忽略词列表中；如果为`false`，则将该单词从忽略列表中移除。 |
 
 ### 返回值
 
-成功返回 **true**。如果在执行此方法时查看器中没有打开的文档，则会抛出异常。
+成功返回`true`。如果在执行此方法时查看器中没有打开的文档，则会抛出异常。
 
 ### 示例
 
-```
+```javascript
 var bIgnored = spell.ignoreAll("foo");
+
 if (bIgnored) console.println("\"foo\" will be ignored");
 ```
 
 ## removeDictionary
 
-移除通过 [addDictionary](#) 添加的用户词典。
+移除通过`addDictionary`添加的用户词典。
 
-**注意：** 从 Acrobat 6.0 开始，此方法不再支持。此方法的返回值始终为 **false**。请使用 [customDictionaryClose](#) 方法。
+**注意：** 从 Acrobat 6.0 开始，此方法不再支持。此方法的返回值始终为`false`。请使用`customDictionaryClose`方法。
 
 ### 参数
 
 | 参数 | 描述 |
 | :--- | :--- |
-| **cName** | 要移除的词典名称。必须与使用 `addDictionary` 时使用的名称相同。 |
+| `cName` | 要移除的词典名称。必须与使用`addDictionary`时使用的名称相同。 |
 
 ### 返回值
 
-**false**
+`false`
 
 ## removeWord
 
-从词典中移除一个单词。无法从使用 [customDictionaryCreate](#) 或 [customDictionaryExport](#) 创建的用户词典中移除单词。
+从词典中移除一个单词。无法从使用`customDictionaryCreate`或`customDictionaryExport`创建的用户词典中移除单词。
 
-另请参阅 [addWord](#)。
+另请参阅`addWord`。
 
 **注意：** 在内部，拼写检查对象会扫描用户词典，如果之前添加的单词存在，则将其移除。否则，该单词将被添加到用户的 "Not-A-Word" 词典中。实际词典并未被修改。
 
-
-
 ## Statement 对象
 
-使用 **statement** 对象来执行 SQL 更新和查询，并检索这些操作的结果。要创建一个 statement 对象，请使用 **connection.newStatement**。
+使用`statement`对象来执行 SQL 更新和查询，并检索这些操作的结果。要创建一个`statement`对象，请使用`connection.newStatement`。
 
 另请参阅：
 
-- Connection 对象
-- ADBC 对象
-- Column 泛型对象, ColumnInfo 泛型对象, Row 泛型对象, TableInfo 泛型对象
+- `Connection`对象
+- `ADBC`对象
+- `Column`泛型对象、`ColumnInfo`泛型对象、`Row`泛型对象、`TableInfo`泛型对象
 
 ## Statement 属性
 
@@ -22773,46 +24003,49 @@ if (bIgnored) console.println("\"foo\" will be ignored");
 
 查询返回的每一行结果中的列数。在更新操作的情况下，此属性为未定义。
 
-*类型：Number* &emsp; *访问：只读 (R)*
+*类型：Number* *访问：只读 (R)*
 
 ### rowCount
 
-更新操作影响的行数。它*不是*查询返回的行数。在查询上下文中，其值为未定义。
+更新操作影响的行数。它不是查询返回的行数。在查询上下文中，其值为未定义。
 
-*类型：Number* &emsp; *访问：只读 (R)*
+*类型：Number* *访问：只读 (R)*
 
 ## Statement 方法
 
 ### execute
 
-通过 Statement 对象的上下文执行一条 SQL 语句。失败时，**execute** 会抛出一个异常。
+通过`Statement`对象的上下文执行一条 SQL 语句。失败时，`execute`会抛出一个异常。
 
-**注意：** 如果一次 execute 操作既未失败也未返回所有数据，则不能保证客户端可以对该 statement 执行任何操作。
+**注意：** 如果一次`execute`操作既未失败也未返回所有数据，则不能保证客户端可以对该`statement`执行任何操作。
 
-**参数**
+### 参数
 
-| **参数** | **描述** |
+| 参数 | 描述 |
 |---|---|
-| cSQL | 要执行的 SQL 语句。 |
+| `cSQL` | 要执行的 SQL 语句。 |
 
-**返回值**
+### 返回值
 
 无。
 
-**示例**
+### 示例
 
 ```javascript
 statement.execute("Select * from ClientData");
 
 // 如果数据库表或列的名称包含空格，
 // 它们需要用转义引号括起来。例如：
+
 var execStr1 = "Select firstname, lastname, ssn from \"Employee Info\"";
 var execStr2 = "Select \"First Name\"  from \"Client Data\"";
+
 statement.execute(execStr1);
 statement.execute(execStr2);
 
 // 一个更简洁的解决方案是用单引号括起整个 SQL 字符串，
 // 然后表名和列名可以用双引号括起来。
+
 var execStr3 = 'Select "First Name","Second Name" from "Client Data" ';
 statement.execute(execStr3);
 
@@ -22825,121 +24058,140 @@ statement.execute(execStr3);
 
 **注意：** 一旦通过这些方法之一检索了一个列，后续尝试检索同一列的调用可能会失败。
 
-**参数**
+### 参数
 
-| **参数** | **描述** |
+| 参数 | 描述 |
 |---|---|
-| nColumn | 要从中获取数据的列。可以是列编号或字符串（所需列的名称，参见 ColumnInfo 泛型对象）。 |
-| nDesiredType | （可选）ADBC JavaScript 类型中哪种最能代表该列中的数据。 |
+| `nColumn` | 要从中获取数据的列。可以是列编号或字符串（所需列的名称，参见`ColumnInfo`泛型对象）。 |
+| `nDesiredType` | （可选）ADBC JavaScript 类型中哪种最能代表该列中的数据。 |
 
-**返回值**
+### 返回值
 
-一个代表指定列中数据的 Column 泛型对象，失败时返回 null。
+一个代表指定列中数据的`Column`泛型对象，失败时返回`null`。
 
 ### getColumnArray
 
-获取一个 **column** 对象的数组，结果集中的每一列对应一个对象。使用“最佳猜测”来决定 ADBC JavaScript 类型中哪种最能代表该列中的数据。
+获取一个`column`对象的数组，结果集中的每一列对应一个对象。使用“最佳猜测”来决定 ADBC JavaScript 类型中哪种最能代表该列中的数据。
 
 **注意：** 一旦通过这些方法之一检索了一个列，后续尝试检索同一列的调用可能会失败。
 
-**参数**
+### 参数
 
 无。
 
-**返回值**
+### 返回值
 
-一个 **column** 对象的数组，失败时返回 **null** 以及一个零长度数组。
+一个`column`对象的数组，失败时返回`null`以及一个零长度数组。
 
 ### getRow
 
-获取一个代表当前行的 Row 泛型对象。此对象包含来自每一列的信息。与 **getColumnArray** 类似，列数据以“最佳猜测”格式捕获。
+获取一个代表当前行的`Row`泛型对象。此对象包含来自每一列的信息。与`getColumnArray`类似，列数据以“最佳猜测”格式捕获。
 
-在调用 **getRow** 之前，应先调用 **nextRow**。在没有中间调用 **nextRow** 的情况下连续调用两次 **getRow**，第二次调用 **getRow** 将返回 **null**。
+在调用`getRow`之前，应先调用`nextRow`。在没有中间调用`nextRow`的情况下连续调用两次`getRow`，第二次调用`getRow`将返回`null`。
 
-**参数**
+### 参数
 
 无。
 
-**返回值**
+### 返回值
 
-一个 Row 泛型对象。
+一个`Row`泛型对象。
 
-**示例 1**
+### 示例 1
 
-每个 **Row** 对象都包含数据行中每一列的一个属性。考虑以下示例：
+每个`Row`对象都包含数据行中每一列的一个属性。考虑以下示例：
 
 ```javascript
 var execStr = "SELECT firstname, lastname, ssn FROM \"Employee Info\"";
+
 statement.execute(execStr);
 statement.nextRow();
+
 row = statement.getRow();
+
 console.println("The first name of the first person retrieved is: " + row.firstname.value);
 console.println("The last name of the first person retrieved is: " + row.lastname.value);
 console.println("The ssn of the first person retrieved is: " + row.ssn.value);
 ```
 
-**示例 2**
+### 示例 2
 
-如果列名包含空格，则上述访问行属性的语法（例如 **row.firstname.value**）将不起作用。或者，可以：
+如果列名包含空格，则上述访问行属性的语法（例如`row.firstname.value`）将不起作用。或者，可以：
 
 ```javascript
 Connect = ADBC.newConnection("Test Database");
+
 statement = Connect.newStatement();
+
 var execStr = 'Select "First Name", "Second Name" from "Client Data" ';
+
 statement.execute(execStr);
 statement.nextRow();
 
 // 填充此 PDF 文件
+
 this.getField("name.first").value = row["First Name"].value;
 this.getField("name.last").value = row["Second Name"].value;
 ```
 
 ### nextRow
 
-获取先前执行的查询生成的下一行数据。必须在调用 **execute** 之后调用此方法以获取第一行结果。
+获取先前执行的查询生成的下一行数据。必须在调用`execute`之后调用此方法以获取第一行结果。
 
-**参数**
+### 参数
 
 无。
 
-**返回值**
+### 返回值
 
-无。**失败**时抛出异常（例如，如果没有下一行）。
+无。失败时抛出异常（例如，如果没有下一行）。
 
-**示例**
+### 示例
 
-以下示例是创建一系列按钮和文档级 JavaScript 以浏览数据库并填充 PDF 表单的粗略大纲。对于下面定义的 **getNextRow** 按钮，使用 **nextRow()** 从数据库检索下一行，除非抛出异常（表示没有下一行），在这种情况下，我们重新连接到数据库，并再次使用 **nextRow()** 检索第一行数据。
+以下示例是创建一系列按钮和文档级 JavaScript 以浏览数据库并填充 PDF 表单的粗略大纲。对于下面定义的`getNextRow`按钮，使用`nextRow()`从数据库检索下一行，除非抛出异常（表示没有下一行），在这种情况下，我们重新连接到数据库，并再次使用`nextRow()`检索第一行数据。
 
 ```javascript
 /* 按钮脚本 */
+
 // getConnected 按钮
+
 if (getConnected())
     populateForm(statement.getRow());
 
 // getNextRow 按钮
+
 try {
     statement.nextRow();
 } catch (e) {
     getConnected();
 }
+
 var row = statement.getRow();
 populateForm(row);
 
 /* 文档级 JavaScript */
+
 // getConnected() 文档级 JS
+
 function getConnected()
 {
     try {
         ConnectADBCdemo = ADBC.newConnection("ADBCdemo");
+
         if (ConnectADBCdemo == null)
             throw "Could not connect";
+
         statement = ConnectADBCdemo.newStatement();
+
         if (statement == null)
             throw "Could not execute newStatement";
+
         if (statement.execute("Select * from ClientData"))
             throw "Could not execute the requested SQL";
+
         if (statement.nextRow())
             throw "Could not obtain next row";
+
         return true;
     } catch(e) {
         app.alert(e);
@@ -22948,7 +24200,9 @@ function getConnected()
 }
 
 // populateForm()
+
 /* 将数据库中的行数据映射到 PDF 文件中对应的文本字段。 */
+
 function populateForm(row)
 {
     this.getField("firstname").value = row.FirstName.value;
@@ -22962,50 +24216,51 @@ function populateForm(row)
 }
 ```
 
+
+
+
+
 ## TableInfo 泛型对象
 
-此泛型 JS 对象包含有关表的基本信息，由 connection.getTableList 返回。它包含以下属性。
+此泛型 JS 对象包含有关表的基本信息，由`connection.getTableList`返回。它包含以下属性。
 
-| **属性** | **类型** | **访问** | **描述** |
+| 属性 | 类型 | 访问 | 描述 |
 |---|---|---|---|
-| name | String | R | 表的标识名称。此字符串可用于 SQL 语句中，以标识 tableInfo 对象所关联的表。 |
-| description | String | R | 包含有关表的数据库相关信息的字符串。 |
+| `name` | `String` | R | 表的标识名称。此字符串可用于 SQL 语句中，以标识`tableInfo`对象所关联的表。 |
+| `description` | `String` | R | 包含有关表的数据库相关信息的字符串。 |
 
----
+## userWords
 
-# userWords
+获取用户已添加到字典或从字典中移除的单词数组。另请参阅`addWord`和`checkWord`。
 
-获取用户已添加到字典或从字典中移除的单词数组。另请参阅 `addWord` 和 `checkWord`。
+**注意：**（Adobe Reader）对于 Adobe Reader，此方法仅在 Adobe Reader 7.0 或更高版本中可用。
 
-**注意：** (Adobe Reader) 对于 Adobe Reader，此方法仅在 Adobe Reader 7.0 或更高版本中可用。
+### 参数
 
-**参数**
-
-| **参数** | **描述** |
+| 参数 | 描述 |
 |---|---|
-| cName | （可选）字典名称或语言代码。可以使用 `dictionaryNames` 或 `languages` 获取当前已安装字典的数组。如果未指定 `cName`，则使用当前默认字典。当前默认字典是 `Spelling` 首选项对话框中指定的第一个字典。 |
-| bAdded | （可选）当为 `true` 时，返回用户添加的单词数组。当为 `false` 时，返回用户移除的单词数组。默认值为 `true`。 |
+| `cName` | （可选）字典名称或语言代码。可以使用`dictionaryNames`或`languages`获取当前已安装字典的数组。如果未指定`cName`，则使用当前默认字典。当前默认字典是“Spelling”首选项对话框中指定的第一个字典。 |
+| `bAdded` | （可选）当为`true`时，返回用户添加的单词数组。当为`false`时，返回用户移除的单词数组。默认值为`true`。 |
 
-**返回值**
+### 返回值
 
 用户添加或移除的单词数组。
 
-**示例**
+### 示例
 
-列出添加到 "JavaScript" 字典中的单词。（请参阅 `customDictionaryCreate` 描述后的示例。）
+列出添加到“JavaScript”字典中的单词。（请参阅`customDictionaryCreate`描述后的示例。）
 
 ```javascript
 var aUserWords = spell.userWords({cName: "JavaScript"});
+
 aUserWords.toSource();
 ```
 
-
-
 ## 模板对象
 
-模板对象是文档中的命名页面。这些页面可以是隐藏或可见的，并且可以被复制或*生成*。它们通常用于动态创建内容（例如，在页面溢出时向发票添加页面）。
+模板对象是文档中的命名页面。这些页面可以是隐藏或可见的，并且可以被复制或生成。它们通常用于动态创建内容（例如，在页面溢出时向发票添加页面）。
 
-另请参阅文档对象 **templates** 属性，以及方法 **createTemplate**、**getTemplate** 和 **removeTemplate**。
+另请参阅文档对象`templates`属性，以及方法`createTemplate`、`getTemplate`和`removeTemplate`。
 
 ## 模板属性
 
@@ -23024,7 +24279,7 @@ aUserWords.toSource();
 
 ### name
 
-| 5.0 | | |
+| 5.0 |  |  |
 |---|---|---|
 
 模板的名称，该名称在创建模板时提供。
@@ -23042,60 +24297,72 @@ aUserWords.toSource();
 
 基于模板在文档中创建一个新页面。
 
-**参数**
+### 参数
 
-| nPage | （可选）新页面将被创建在其之后或之上（取决于 bOverlay 的值）的页码的从0开始的索引。默认值为 0。 |
+| 参数 | 描述 |
 |---|---|
-| bRename | （可选）是否应重命名页面上的表单字段。默认值为 true。 |
-| bOverlay | （可选）当为 true（默认值）时，模板将覆盖在指定页面上。当为 false 时，它将作为新页面插入到指定页面之前。要将页面附加到文档，请将 bOverlay 设置为 false，并将 nPage 设置为文档中的页数。**注意：** 对于经过认证的文档，或具有“高级表单功能权限”的文档，bOverlay 参数被禁用；这意味着对于这些类型的文档，无法覆盖模板。 |
-| oXObject | （可选，版本 6.0）此参数的值是之前调用 spawn 的返回值。 |
+| `nPage` | （可选）新页面将被创建在其之后或之上（取决于`bOverlay`的值）的页码的从 0 开始的索引。默认值为 0。 |
+| `bRename` | （可选）是否应重命名页面上的表单字段。默认值为`true`。 |
+| `bOverlay` | （可选）当为`true`（默认值）时，模板将覆盖在指定页面上。当为`false`时，它将作为新页面插入到指定页面之前。要将页面附加到文档，请将`bOverlay`设置为`false`，并将`nPage`设置为文档中的页数。**注意：**对于经过认证的文档，或具有“高级表单功能权限”的文档，`bOverlay`参数被禁用；这意味着对于这些类型的文档，无法覆盖模板。 |
+| `oXObject` | （可选，版本 6.0）此参数的值是之前调用`spawn`的返回值。 |
 
-**返回值**
+### 返回值
 
-在 Acrobat 6.0 之前，此方法不返回任何内容。现在，`spawn` 返回一个表示所生成页面页面内容的对象。此返回对象随后可用作后续调用 `spawn` 时可选参数 oXObject 的值。
+在 Acrobat 6.0 之前，此方法不返回任何内容。现在，`spawn`返回一个表示所生成页面页面内容的对象。此返回对象随后可用作后续调用`spawn`时可选参数`oXObject`的值。
 
-> **注意：** 重复生成同一页面可能导致文件大小大幅膨胀。为避免此文件大小膨胀问题，`spawn` 现在返回一个表示所生成页面页面内容的对象。此返回值可用作后续调用 `spawn` 方法以生成同一页面时 oXObject 参数的值。
+> **注意：**重复生成同一页面可能导致文件大小大幅膨胀。为避免此文件大小膨胀问题，`spawn`现在返回一个表示所生成页面页面内容的对象。此返回值可用作后续调用`spawn`方法以生成同一页面时`oXObject`参数的值。
 
-**示例 1**
+### 示例 1
 
 此示例生成所有模板并将它们逐一附加到文档末尾。
 
-```
+```javascript
 var a = this.templates;
+
 for (i = 0; i < a.length; i++)
     a[i].spawn(this.numPages, false, false);
 ```
 
-**示例 2（版本 6.0）**
+### 示例 2（版本 6.0）
 
-以下示例使用 oXObject 参数和返回值将同一模板生成 31 次。使用此技术可避免文件大小过度膨胀。
+以下示例使用`oXObject`参数和返回值将同一模板生成 31 次。使用此技术可避免文件大小过度膨胀。
 
-```
+```javascript
 var t = this.templates;
+
 var T = t[0];
+
 var XO = T.spawn(this.numPages, false, false);
-for (var i=0; i<30; i++) T.spawn(this.numPages, false, false, XO);
+
+for (var i = 0; i < 30; i++)
+    T.spawn(this.numPages, false, false, XO);
 ```
 
 ## 温度计对象
 
-此对象是一个组合了状态窗口/进度条的对象，用于向用户指示一个耗时较长的操作正在进行中。要获取一个 `thermometer` 对象，请使用 `app.thermometer`。
+此对象是一个组合了状态窗口/进度条的对象，用于向用户指示一个耗时较长的操作正在进行中。要获取一个`thermometer`对象，请使用`app.thermometer`。
 
 ### 示例
 
-以下是一个通用示例，说明如何使用 `thermometer` 对象的所有属性和方法。
+以下是一个通用示例，说明如何使用`thermometer`对象的所有属性和方法。
 
-```
-var t = app.thermometer;          // 获取温度计对象
+```javascript
+var t = app.thermometer; // 获取温度计对象
+
 t.duration = this.numPages;
+
 t.begin();
-for ( var i = 0; i < this.numPages; i++)
-{
+
+for (var i = 0; i < this.numPages; i++) {
     t.value = i;
+
     t.text = "正在处理第 " + (i + 1) + " 页";
-    if (t.cancelled) break;       // 如果操作被取消则中断
+
+    if (t.cancelled) break; // 如果操作被取消则中断
+
     ... 处理页面 ...
 }
+
 t.end();
 ```
 
@@ -23105,25 +24372,33 @@ t.end();
 
 用户是否希望取消当前操作。用户可以通过在 Windows 和 Unix 平台上按 Escape 键，在 Macintosh 平台上按 Command-句点键，向脚本表示终止操作的意愿。
 
-类型：布尔值                访问权限：只读。
+类型：布尔值
+
+访问权限：只读。
 
 ### duration
 
-设置对应于完整温度计显示的值。随后通过设置其 `value` 来填充温度计。默认持续时间为 100。
+设置对应于完整温度计显示的值。随后通过设置其`value`来填充温度计。默认持续时间为 100。
 
-类型：数字                 访问权限：可读/可写。
+类型：数字
+
+访问权限：可读/可写。
 
 ### value
 
-设置温度计的当前值并更新显示。允许的值范围从 0（空）到 `duration` 中设置的值。例如，如果温度计的持续时间为 10，则当前值必须在 0 到 10 之间（含端点）。如果值小于零，则设置为零。如果值大于持续时间，则设置为持续时间。
+设置温度计的当前值并更新显示。允许的值范围从 0（空）到`duration`中设置的值。例如，如果温度计的持续时间为 10，则当前值必须在 0 到 10 之间（含端点）。如果值小于零，则设置为零。如果值大于持续时间，则设置为持续时间。
 
-类型：数字 访问权限：可读/可写。
+类型：数字
+
+访问权限：可读/可写。
 
 ### text
 
 设置温度计显示的文本字符串。
 
-类型：字符串 访问权限：可读/可写。
+类型：字符串
+
+访问权限：可读/可写。
 
 ## 温度计方法
 
@@ -23132,27 +24407,38 @@ t.end();
 初始化温度计，并以当前值作为持续时间的百分比显示它。
 
 **参数**
+
 无
 
 **返回值**
+
 无
 
 **示例**
+
 统计当前文档中每页的单词数，报告累计总数并使用温度计跟踪进度。
 
-```
+```javascript
 var t = app.thermometer; // 获取温度计对象
+
 t.duration = this.numPages;
+
 t.begin();
-var cnt=0;
-for ( var i = 0; i < this.numPages; i++)
-{
+
+var cnt = 0;
+
+for (var i = 0; i < this.numPages; i++) {
     t.value = i;
+
     t.text = "正在处理第 " + (i + 1) + " 页";
+
     cnt += getPageNumWords(i);
+
     console.println("本文档共有 " + cnt + " 个单词。");
+
     if (t.cancelled) break;
 }
+
 t.end();
 ```
 
@@ -23161,9 +24447,11 @@ t.end();
 将温度计绘制为其当前值设置为温度计持续时间（满温度计）的状态，然后从显示中移除温度计。
 
 **参数**
+
 无
 
 **返回值**
+
 无
 
 ## TTS 对象
@@ -23171,88 +24459,100 @@ t.end();
 | 4.05 |  |  |  |
 |---|---|---|---|
 
-JavaScript **TTS** 对象允许用户将文本转换为语音。要能够使用 **TTS** 对象，用户的计算机上必须安装文本转语音引擎。文本转语音引擎将渲染文本为数字音频，然后“说出来”。它主要是考虑到无障碍性而实现的，但它也可能有许多其他应用，使 PDF 文档变得生动。
+JavaScript`TTS`对象允许用户将文本转换为语音。要能够使用`TTS`对象，用户的计算机上必须安装文本转语音引擎。文本转语音引擎将渲染文本为数字音频，然后“说出来”。它主要是考虑到无障碍性而实现的，但它也可能有许多其他应用，使 PDF 文档变得生动。
 
 这目前是一个仅限 Windows 的功能，需要在操作系统中安装 Microsoft 文本转语音引擎。
 
-**TTS** 对象在 Windows 和 Mac 平台上都存在（因为它是一个 JavaScript 对象）；然而，它在 Mac 上是禁用的。
+`TTS`对象在 Windows 和 Mac 平台上都存在（因为它是一个 JavaScript 对象）；然而，它在 Mac 上是禁用的。
 
-**注意：** Acrobat 5.0 通过直接与流行的屏幕阅读器集成，为残障用户提供了非常不同的无障碍性方法。4.05 版本中为 TTS 对象定义的一些特性和方法因此已被弃用，因为它们与屏幕阅读器冲突。然而，TTS 对象仍然保留，因为它本身仍然具有有用的功能，可能在多媒体文档中很受欢迎。
+**注意：**Acrobat 5.0 通过直接与流行的屏幕阅读器集成，为残障用户提供了非常不同的无障碍性方法。4.05 版本中为`TTS`对象定义的一些特性和方法因此已被弃用，因为它们与屏幕阅读器冲突。然而，`TTS`对象仍然保留，因为它本身仍然具有有用的功能，可能在多媒体文档中很受欢迎。
 
 ## TTS 属性
 
 ### available
 
-如果 TTS 对象可用并且可以使用文本转语音引擎，则为 **true**。
+如果`TTS`对象可用并且可以使用文本转语音引擎，则为`true`。
 
-*类型：布尔值*
+类型：布尔值
 
-*访问权限：只读。*
+访问权限：只读。
 
-**示例**
+#### 示例
 
-```
+```javascript
 console.println("文本转语音可用: " + tts.available);
 ```
 
 ### numSpeakers
 
-当前文本转语音引擎可用的不同说话者的数量。另请参阅 `speaker` 和 `getNthSpeakerName`。
+当前文本转语音引擎可用的不同说话者的数量。另请参阅`speaker`和`getNthSpeakerName`。
 
-类型：整数 访问权限：只读。
+类型：整数
+
+访问权限：只读。
 
 ### pitch
 
 设置说话者语音的基线音高。音高的有效范围是 0 到 10，其中 5 是该模式的默认值。
 
-类型：整数 访问权限：可读/可写。
+类型：整数
+
+访问权限：可读/可写。
 
 ### soundCues
 
 ![](img/bd576cc243b5a79128e24042df2f472f_622_0.png)
 
-已弃用。现在仅返回 **false**。
+已弃用。现在仅返回`false`。
 
-类型：布尔值 访问权限：可读/可写。
+类型：布尔值
+
+访问权限：可读/可写。
 
 ### speaker
 
-允许用户在执行文本转语音时指定具有不同音质的不同说话者。另请参阅 `numSpeakers` 和 `getNthSpeakerName`。
+允许用户在执行文本转语音时指定具有不同音质的不同说话者。另请参阅`numSpeakers`和`getNthSpeakerName`。
 
-类型：字符串 访问权限：可读/可写。
+类型：字符串
+
+访问权限：可读/可写。
 
 ### speechCues
 
 ![](img/bd576cc243b5a79128e24042df2f472f_622_1.png)
 
-已弃用。现在仅返回 **false**。
+已弃用。现在仅返回`false`。
 
-类型：布尔值 访问权限：可读/可写。
+类型：布尔值
+
+访问权限：可读/可写。
 
 ### speechRate
 
-设置文本转语音引擎朗读文本的速度。**speechRate** 的值以每分钟单词数表示。
+设置文本转语音引擎朗读文本的速度。`speechRate`的值以每分钟单词数表示。
 
-类型：整数 访问权限：可读/可写。
+类型：整数
+
+访问权限：可读/可写。
 
 ### volume
 
 设置语音的音量。有效值从 0（静音）到 10（最响）。
 
-类型：整数 访问权限：可读/可写。
+类型：整数
 
-
+访问权限：可读/可写。
 
 ## TTS 方法
 
 ### getNthSpeakerName
 
-获取当前已安装文本语音引擎中第 *n* 个说话者的名称（另请参阅 `numSpeakers` 和 `speaker`）。
+获取当前已安装文本语音引擎中第`n`个说话者的名称（另请参阅`numSpeakers`和`speaker`）。
 
 **参数**
 
 | 参数 | 描述 |
-| :--- | :--- |
+|---|---|
 | `nIndex` | 所需说话者名称的索引。 |
 
 **返回值**
@@ -23263,19 +24563,23 @@ console.println("文本转语音可用: " + tts.available);
 
 遍历所有可用的说话者。
 
-```
+```javascript
 for (var i = 0; i < tts.numSpeakers; i++) {
     var cSpeaker = tts.getNthSpeakerName(i);
+
     console.println("Speaker[" + i + "] = " + cSpeaker);
+
     tts.speaker = cSpeaker;
-    tts.qText ("Hello");
+
+    tts.qText("Hello");
+
     tts.talk();
 }
 ```
 
 ### pause
 
-立即暂停 TTS 对象上的文本到语音输出。可以通过 `resume` 恢复剩余队列文本的播放。
+立即暂停`TTS`对象上的文本到语音输出。可以通过`resume`恢复剩余队列文本的播放。
 
 **参数**
 
@@ -23292,7 +24596,7 @@ for (var i = 0; i < tts.numSpeakers; i++) {
 **参数**
 
 | 参数 | 描述 |
-| :--- | :--- |
+|---|---|
 | `nDuration` | 静音的时长，以毫秒为单位。 |
 
 **返回值**
@@ -23301,20 +24605,20 @@ for (var i = 0; i < tts.numSpeakers; i++) {
 
 ### qSound
 
-将指定的声音放入队列中，以便由 `talk` 执行。它接受一个参数 `cSound`，该参数来自可能的声音提示名称列表。这些名称直接映射到存储在 SoundCues 文件夹（如果存在）中的声音文件。
+将指定的声音放入队列中，以便由`talk`执行。它接受一个参数`cSound`，该参数来自可能的声音提示名称列表。这些名称直接映射到存储在 SoundCues 文件夹（如果存在）中的声音文件。
 
-```
+```javascript
 tts.qSound("DocPrint"); // 播放 DocPrint.wav
 ```
 
-SoundCues 文件夹应存在于查看器的程序级别，例如，C:\Program Files\Adobe\Acrobat 5.0\SoundCues。
+SoundCues 文件夹应存在于查看器的程序级别，例如，`C:\Program Files\Adobe\Acrobat 5.0\SoundCues`。
 
-**注意：** 仅限 Windows —— `qSound` 只能处理 22KHz、16 位 PCM .wav 文件。为了避免 MS SAPI 中的队列延迟问题，这些文件的长度应至少为一秒。如果声音持续时间少于一秒，应进行编辑并在末尾添加静音。
+**注意：**仅限 Windows —— `qSound`只能处理 22KHz、16 位 PCM`.wav`文件。为了避免 MS SAPI 中的队列延迟问题，这些文件的长度应至少为一秒。如果声音持续时间少于一秒，应进行编辑并在末尾添加静音。
 
 **参数**
 
 | 参数 | 描述 |
-| :--- | :--- |
+|---|---|
 | `cSound` | 要使用的声音提示名称。 |
 
 **返回值**
@@ -23323,12 +24627,12 @@ SoundCues 文件夹应存在于查看器的程序级别，例如，C:\Program Fi
 
 ### qText
 
-将文本放入队列中，以便由 `talk` 执行。
+将文本放入队列中，以便由`talk`执行。
 
 **参数**
 
 | 参数 | 描述 |
-| :--- | :--- |
+|---|---|
 | `cText` | 要转换为语音的文本。 |
 
 **返回值**
@@ -23337,13 +24641,13 @@ SoundCues 文件夹应存在于查看器的程序级别，例如，C:\Program Fi
 
 **示例**
 
-```
+```javascript
 tts.qText("Hello, how are you?");
 ```
 
 ### reset
 
-停止播放当前队列中的文本并清空队列。无法通过 `resume` 恢复文本的播放。此外，它会将 TTS 对象的所有属性重置为其默认值。
+停止播放当前队列中的文本并清空队列。无法通过`resume`恢复文本的播放。此外，它会将`TTS`对象的所有属性重置为其默认值。
 
 **参数**
 
@@ -23355,7 +24659,7 @@ tts.qText("Hello, how are you?");
 
 ### resume
 
-恢复已暂停的 TTS 对象上的文本播放。
+恢复已暂停的`TTS`对象上的文本播放。
 
 **参数**
 
@@ -23367,7 +24671,7 @@ tts.qText("Hello, how are you?");
 
 ### stop
 
-停止播放当前队列中的文本并清空队列。无法使用 `resume` 恢复文本的播放。
+停止播放当前队列中的文本并清空队列。无法使用`resume`恢复文本的播放。
 
 **参数**
 
@@ -23379,7 +24683,7 @@ tts.qText("Hello, how are you?");
 
 ### talk
 
-将队列中的所有内容发送到文本到语音引擎进行朗读。如果文本输出之前被暂停，`talk` 将恢复队列文本的播放。
+将队列中的所有内容发送到文本到语音引擎进行朗读。如果文本输出之前被暂停，`talk`将恢复队列文本的播放。
 
 **参数**
 
@@ -23391,14 +24695,15 @@ tts.qText("Hello, how are you?");
 
 **示例**
 
-```
+```javascript
 tts.qText("Hello there!");
+
 tts.talk();
 ```
 
 ## this 对象
 
-在 JavaScript 中，特殊关键字 **this** 指向当前对象。在 Acrobat 中，当前对象定义如下：
+在 JavaScript 中，特殊关键字`this`指向当前对象。在 Acrobat 中，当前对象定义如下：
 
 - 在对象方法中，它是该方法所属的对象。
 - 在构造函数中，它是正在被构建的对象。
@@ -23407,100 +24712,116 @@ tts.talk();
 
 例如，假设在 Plug-in 文件夹级别定义了以下函数：
 
-```
-function PrintPageNum(doc)
-{   /* 将当前页码打印到控制台。 */
+```javascript
+function PrintPageNum(doc) {
+    /* 将当前页码打印到控制台。 */
+
     console.println("Page = " + doc.page);
 }
 ```
 
 以下脚本将当前页码输出到控制台（两次），然后打印页面：
 
-```
+```javascript
 /* 必须传递文档对象。 */
+
 PrintPageNum(this);
+
 /* 与之前的调用相同。 */
+
 console.println("Page = " + this.pageNum);
+
 /* 打印当前页面。 */
+
 this.print(false, this.pageNum, this.pageNum);
 ```
 
 ## 变量和函数名冲突
 
-在脚本中定义的变量和函数都是 *this* 对象的成员。例如：
+在脚本中定义的变量和函数都是`this`对象的成员。例如：
 
-```
+```javascript
 var f = this.getField("Hello");
 ```
 
-等同于
+等同于：
 
-```
+```javascript
 this.f = this.getField("Hello");
 ```
 
-但变量 *f* 可以在脚本运行后的任何时候被垃圾回收。
+但变量`f`可以在脚本运行后的任何时候被垃圾回收。
 
 ## Util 对象
 
-Acrobat JavaScript 程序员应避免使用 **Doc 对象**的属性名和方法名作为变量名。在保留字 "var" 之后使用方法名将抛出异常，如下例所示：
+Acrobat JavaScript 程序员应避免使用**Doc 对象**的属性名和方法名作为变量名。在保留字`var`之后使用方法名将抛出异常，如下例所示：
 
-```
+```javascript
 var getField = 1; // TypeError: redeclaration of function getField
 ```
 
 使用属性名不会抛出异常，但如果属性引用一个对象，则可能无法更改该属性的值：
 
-```
+```javascript
 // "title" 将返回 "1"，但文档现在将被命名为 "1"。
+
 var title = 1;
 
 // 属性未更改，info 仍然是对象
+
 var info = 1; // "info" 将返回 [object Info]
 ```
 
 以下是避免变量名冲突的示例。
 
-```
+```javascript
 var f = this.getField("mySignature"); // 使用 ppklite 签名处理器
 
 // 使用 "Info" 而不是 "info" 以避免冲突
+
 var Info = f.signatureInfo();
 
 // 一些标准的 signatureInfo 属性
+
 console.println("name = " + Info.name);
 ```
 
+
+
+
+
 一个静态 JavaScript 对象，定义了许多用于字符串和日期格式化及解析的实用方法和便捷函数。
 
-### Util 方法
+## Util 方法
 
-#### iconStreamFromIcon
+### `iconStreamFromIcon`
 
 | 7.0 | | | | |
 |---|---|---|---|---|
 
 此方法将基于 XObject 的[图标通用对象](http://example.com)转换为[图标流通用对象](http://example.com)。
 
-**参数**
+#### 参数
 
 | 参数 | 描述 |
 | :--- | :--- |
 | `oIcon` | 要转换为图标流通用对象的图标通用对象。 |
 
-**返回值**
+#### 返回值
 
 [图标流通用对象](http://example.com)
 
-它允许通过 Doc . importIcon 或 doc . getIcon 获得的图标在像 app . addToolButton 这样的函数中使用，否则该函数只接受图标流通用对象作为输入参数。
+它允许通过`Doc.importIcon`或`doc.getIcon`获得的图标在像`app.addToolButton`这样的函数中使用，否则该函数只接受图标流通用对象作为输入参数。
 
-**示例**
+#### 示例
 
 将图标导入到文档级别的命名图标树中，并向应用程序添加一个工具按钮。
 
-```
+```javascript
 this.importIcon("myIcon", "/C/temp/myIcon.jpg", 0);
+
 var oIcon = util.iconStreamFromIcon(this.getIcon("myIcon"));
+
 app.addToolButton({
     cName: "myButton",
     oIcon: myIcon,
@@ -23510,20 +24831,21 @@ app.addToolButton({
 });
 ```
 
-#### printf
+### `printf`
 
-| 3.01 |  |  |  |
+| 3.01 | | | |
 | :--- | :--- | :--- | :--- |
 
-根据格式字符串将一个或多个值格式化为字符串。这类似于同名的 C 函数。此方法根据格式字符串 (cFormat) 将传入的参数转换并格式化为结果字符串。
+根据格式字符串将一个或多个值格式化为字符串。这类似于同名的 C 函数。此方法根据格式字符串（`cFormat`）将传入的参数转换并格式化为结果字符串。
+
 格式字符串由两种类型的对象组成：
 
-- 普通字符，它们被复制到结果字符串
-- 转换规范，每个转换规范都会对 printf() 的下一个连续参数进行转换和格式化。
+- 普通字符，它们被复制到结果字符串。
+- 转换规范，每个转换规范都会对`printf()`的下一个连续参数进行转换和格式化。
 
 每个转换规范的构造如下：
 
-```
+```text
 %[<,nDecSep>] [<cFlags>] [<nWidth>] [<.nPrecision>] cConvChar
 ```
 
@@ -23531,261 +24853,293 @@ app.addToolButton({
 
 | 组件 | 描述 |
 | :--- | :--- |
-| `nDecSep` | 前面有一个逗号字符 (,)，是 0 到 3 的数字，表示十进制/分隔符格式：<br>- 0 - 逗号分隔，句点作为小数点。<br>- 1 - 无分隔符，句点作为小数点。<br>- 2 - 句点分隔，逗号作为小数点。<br>- 3 - 无分隔符，逗号作为小数点。 |
-| `cFlags` | 仅对数字转换有效，由多个字符（任意顺序）组成，用于修改规范：<br>- `+` - 指定数字将始终带符号格式化。<br>- **空格** - 如果第一个字符不是符号，则在前面添加一个空格。<br>- `0` - 指定用前导零填充字段。<br>- `#` - 指定替代输出形式。对于 *f*，输出将始终包含小数点。 |
-| `nWidth` | 指定最小字段宽度的数字。转换后的参数将被格式化为至少具有此字符数宽度，包括符号和小数点，如果必要可以更宽。如果转换后的参数字符数少于字段宽度，则将在左侧填充以补足字段宽度。填充字符通常是空格，但如果存在零填充标志，则为 0。 |
-| `nPrecision` | 一个数字，前面有一个句点字符 (.)，指定浮点转换后小数点后的位数。 |
+| `nDecSep` | 前面有一个逗号字符（`,`），是 0 到 3 的数字，表示十进制/分隔符格式：<br>- 0 - 逗号分隔，句点作为小数点。<br>- 1 - 无分隔符，句点作为小数点。<br>- 2 - 句点分隔，逗号作为小数点。<br>- 3 - 无分隔符，逗号作为小数点。 |
+| `cFlags` | 仅对数字转换有效，由多个字符（任意顺序）组成，用于修改规范：<br>- `+` - 指定数字将始终带符号格式化。<br>- 空格 - 如果第一个字符不是符号，则在前面添加一个空格。<br>- `0` - 指定用前导零填充字段。<br>- `#` - 指定替代输出形式。对于 `f`，输出将始终包含小数点。 |
+| `nWidth` | 指定最小字段宽度的数字。转换后的参数将被格式化为至少具有此字符数宽度，包括符号和小数点，如果必要可以更宽。如果转换后的参数字符数少于字段宽度，则将在左侧填充以补足字段宽度。填充字符通常是空格，但如果存在零填充标志，则为 `0`。 |
+| `nPrecision` | 一个数字，前面有一个句点字符（`.`），指定浮点转换后小数点后的位数。 |
 | `cConvChar` | 以下之一：<br>- `d` - 整数，将参数解释为整数（必要时截断）。<br>- `f` - 浮点数，将参数解释为数字。<br>- `s` - 字符串，将参数解释为字符串。<br>- `x` - 十六进制，将参数解释为整数（必要时截断）并以无符号十六进制表示法格式化。 |
 
-**参数**
+#### 参数
 
 | 参数 | 描述 |
 | :--- | :--- |
 | `cFormat` | 要使用的格式字符串。 |
 
-**返回值**
+#### 返回值
 
-按指定格式格式化的结果字符串 (`cResult`)。
+按指定格式格式化的结果字符串（`cResult`）。
 
-**示例**
+#### 示例
 
-```
+```javascript
 var n = Math.PI * 100;
+
 console.clear();
+
 console.show();
+
 console.println(util.printf("Decimal format: %d", n));
+
 console.println(util.printf("Hex format: %x", n));
+
 console.println(util.printf("Float format: %.2f", n));
+
 console.println(util.printf("String format: %s", n));
 ```
 
-**输出**
+#### 输出
 
-```
+```text
 Decimal format: 314
+
 Hex format: 13A
+
 Float format: 314.16
+
 String format: 314.159265358979
 ```
 
+## `printd`
 
-
-# printd
-
-| 3.01 |  |  |  |
+| 3.01 | | | |
 |---|---|---|---|
 
-`printd` 方法使用 `cFormat` 参数指定的格式返回一个日期。
+`printd`方法使用`cFormat`参数指定的格式返回一个日期。
 
-## 参数
+### 参数
 
-cFormat
-一个表示所需日期和时间格式的字符串。该字符串是由支持的子字符串组成的模式，这些子字符串是日期和时间数据的占位符。受支持的日期和时间字符串在表格 [cFormat 字符串模式（当 bXFAPicture 设置为 false 时）](https://help.adobe.com/en_US/acrobat/acrobat_api_sdk/JavaScript/JS_API_Acrojs.pdf#1356800) 中给出。
+#### `cFormat`
 
-- (版本 5.0) 从 5.0 版本开始，`cFormat` 也可以是一个数字。有关 `cFormat` 支持的数字值，请参阅表格 [快速格式（当 bXFAPicture 设置为 false 时）](https://help.adobe.com/en_US/acrobat/acrobat_api_sdk/JavaScript/JS_API_Acrojs.pdf#1356800)。
-- (版本 7.0) 当 `bXFAPicture` 为 `true` 时，参数 `cFormat` 将使用 XFA Picture Clause 格式进行解释。
+一个表示所需日期和时间格式的字符串。该字符串是由支持的子字符串组成的模式，这些子字符串是日期和时间数据的占位符。受支持的日期和时间字符串在表格[ cFormat 字符串模式（当 bXFAPicture 设置为 false 时）](https://help.adobe.com/en_US/acrobat/acrobat_api_sdk/JavaScript/JS_API_Acrojs.pdf#1356800)中给出。
 
-oDate
-`oDate` 是要格式化的日期对象。
-日期对象可以从核心 JavaScript 的 `Date()` 构造函数或 `util.scand` 方法中获取。
+- （版本 5.0）从 5.0 版本开始，`cFormat`也可以是一个数字。有关`cFormat`支持的数字值，请参阅表格[快速格式（当 bXFAPicture 设置为 false 时）](https://help.adobe.com/en_US/acrobat/acrobat_api_sdk/JavaScript/JS_API_Acrojs.pdf#1356800)。
+- （版本 7.0）当`bXFAPicture`为`true`时，参数`cFormat`将使用 XFA Picture Clause 格式进行解释。
 
-bXFAPicture
-(可选，版本 7.0) 一个布尔值，如果为 `true`，则 `cFormat` 参数的值将使用 XFA Picture Clause 格式进行解释，该格式为本地化的时间和日期提供了广泛的支持。有关更多讨论，请参阅 [XFA Picture Clauses（当 bXFAPicture 设置为 true 时）](https://help.adobe.com/en_US/acrobat/acrobat_api_sdk/JavaScript/JS_API_Acrojs.pdf#1356800)。
-默认值为 `false`。
+#### `oDate`
 
-## 返回值
+`oDate`是要格式化的日期对象。
+
+日期对象可以从核心 JavaScript 的`Date()`构造函数或`util.scand`方法中获取。
+
+#### `bXFAPicture`
+
+（可选，版本 7.0）一个布尔值，如果为`true`，则`cFormat`参数的值将使用 XFA Picture Clause 格式进行解释，该格式为本地化的时间和日期提供了广泛的支持。有关更多讨论，请参阅[XFA Picture Clauses（当 bXFAPicture 设置为 true 时）](https://help.adobe.com/en_US/acrobat/acrobat_api_sdk/JavaScript/JS_API_Acrojs.pdf#1356800)。
+
+默认值为`false`。
+
+### 返回值
 
 格式化后的日期字符串。
 
-## cFormat 字符串模式（当 bXFAPicture 设置为 false 时）
+### `cFormat`字符串模式（当`bXFAPicture`设置为`false`时）
 
 | 字符串 | 效果 | 示例 | 版本 |
 |---|---|---|---|
-| mmmm | 月份全称 | September |  |
-| mmm | 月份缩写 | Sept |  |
-| mm | 带前导零的数字月份 | 09 |  |
-| m | 不带前导零的数字月份 | 9 |  |
-| dddd | 星期全称 | Wednesday |  |
-| ddd | 星期缩写 | Wed |  |
-| dd | 带前导零的数字日期 | 03 |  |
-| d | 不带前导零的数字日期 | 3 |  |
-| yyyy | 四位数年份 | 1997 |  |
-| yy | 两位数年份 | 97 |  |
-| HH | 带前导零的 24 小时制时间 | 09 |  |
-| H | 不带前导零的 24 小时制时间 | 9 |  |
-| hh | 带前导零的 12 小时制时间 | 09 |  |
-| h | 不带前导零的 12 小时制时间 | 9 |  |
-| MM | 带前导零的分钟 | 08 |  |
-| M | 不带前导零的分钟 | 8 |  |
-| ss | 带前导零的秒 | 05 |  |
-| s | 不带前导零的秒 | 5 |  |
-| tt | am/pm 指示符 | am |  |
-| t | 单字符 am/pm 指示符 | a |  |
-| j | 日本天皇纪年（缩写） | | 6.0 |
-| jj | 日本天皇纪年 | | 6.0 |
-| \ | 用作转义字符 | |  |
+| `mmmm` | 月份全称 | September | |
+| `mmm` | 月份缩写 | Sept | |
+| `mm` | 带前导零的数字月份 | 09 | |
+| `m` | 不带前导零的数字月份 | 9 | |
+| `dddd` | 星期全称 | Wednesday | |
+| `ddd` | 星期缩写 | Wed | |
+| `dd` | 带前导零的数字日期 | 03 | |
+| `d` | 不带前导零的数字日期 | 3 | |
+| `yyyy` | 四位数年份 | 1997 | |
+| `yy` | 两位数年份 | 97 | |
+| `HH` | 带前导零的 24 小时制时间 | 09 | |
+| `H` | 不带前导零的 24 小时制时间 | 9 | |
+| `hh` | 带前导零的 12 小时制时间 | 09 | |
+| `h` | 不带前导零的 12 小时制时间 | 9 | |
+| `MM` | 带前导零的分钟 | 08 | |
+| `M` | 不带前导零的分钟 | 8 | |
+| `ss` | 带前导零的秒 | 05 | |
+| `s` | 不带前导零的秒 | 5 | |
+| `tt` | am/pm 指示符 | am | |
+| `t` | 单字符 am/pm 指示符 | a | |
+| `j` | 日本天皇纪年（缩写） | | 6.0 |
+| `jj` | 日本天皇纪年 | | 6.0 |
+| `\` | 用作转义字符 | | |
 
-注意：(版本 7.0) 此格式字符串已弃用。请使用 XFA Picture Clause 格式。
+注意：（版本 7.0）此格式字符串已弃用。请使用 XFA Picture Clause 格式。
 
-注意：(版本 7.0) 此格式字符串已弃用。请使用 XFA Picture Clause 格式。
+注意：（版本 7.0）此格式字符串已弃用。请使用 XFA Picture Clause 格式。
 
-## 快速格式（当 bXFAPicture 设置为 false 时）
+### 快速格式（当`bXFAPicture`设置为`false`时）
 
 | 值 | 描述 | 示例 | 版本 |
 |---|---|---|---|
-| 0 | PDF 日期格式 | D:20000801145605+07'00' | 5.0 |
-| 1 | 通用格式 | 2000.08.01 14:56:05 +07'00' | 5.0 |
-| 2 | 本地化字符串 | 2000/08/01 14:56:05 | 5.0 |
+| `0` | PDF 日期格式 | D:20000801145605+07'00' | 5.0 |
+| `1` | 通用格式 | 2000.08.01 14:56:05 +07'00' | 5.0 |
+| `2` | 本地化字符串 | 2000/08/01 14:56:05 | 5.0 |
 
-## XFA Picture Clauses（当 bXFAPicture 设置为 true 时）
+### XFA Picture Clauses（当`bXFAPicture`设置为`true`时）
 
-文档 *XFA-Picture Clause 2.0 规范* 和 *XFA-Picture Clause Version 2.2 – CCIK 附录* 中专门介绍日期和时间图片的部分，提供了在 `bXFAPicture` 参数设置为 `true` 时构成 `util.printd` 的 `cFormat` 参数的字符串的文档。
+文档*XFA-Picture Clause 2.0 规范*和*XFA-Picture Clause Version 2.2 – CCIK 附录*中专门介绍日期和时间图片的部分，提供了在`bXFAPicture`参数设置为`true`时构成`util.printd`的`cFormat`参数的字符串的文档。
 
-请参阅 [Adobe 网页文档](https://acrobat.adobe.com/devnet/acrobat/learning/documents/AdobeAcrobatJavaScriptScriptingReference.pdf) 部分以获取这两个文档的链接。
+请参阅[Adobe 网页文档](https://acrobat.adobe.com/devnet/acrobat/learning/documents/AdobeAcrobatJavaScriptScriptingReference.pdf)部分以获取这两个文档的链接。
 
-## 示例 1
+### 示例 1
 
 要以长格式格式化当前日期，例如，可以使用以下脚本：
 
-```
+```javascript
 var d = new Date();
+
 console.println("Today is " + util.printd("mmmm dd, yyyy", d));
 ```
 
-## 示例 2 (版本 5.0)
+### 示例 2（版本 5.0）
 
-```
+```javascript
 // 以本地格式显示日期
-console.println(util.printd(2, new Date() ));
+
+console.println(util.printd(2, new Date()));
 ```
 
-## 示例 3 (版本 7.0)
+### 示例 3（版本 7.0）
 
 此示例演示了 XFA-Picture Clause。
 
-```
+```javascript
 // 在控制台中执行
+
 console.println(
-    util.printd("EEE, 'the' D 'of' MMMM, YYYY", new Date(), true));
+    util.printd("EEE, 'the' D 'of' MMMM, YYYY", new Date(), true)
+);
+
 // 在这一天的输出是
+
 Tue, the 13 of July, 2004
 ```
 
 与区域设置相关的 Picture Clause。通常，picture clause 的处理在环境区域设置中进行。但是，可以指定在特定的区域设置中进行图片处理。这在格式化或解析特定于区域设置且与环境区域设置不同的数据时非常有用。复合 picture clause 此扩展的语法为：
 
-```
+```text
 category-name(locale-name){picture-symbols}
 ```
 
-在控制台中执行的代码，
+在控制台中执行的代码：
 
-```
-util.printd("date(fr){DD MMMM, YYYY}", new Date(), true)
+```javascript
+util.printd("date(fr){DD MMMM, YYYY}", new Date(), true);
 ```
 
-在这一天产生输出，
+在这一天产生输出：
 
-```
+```text
 13 juillet, 2004
 ```
 
 XFA-Picture Clause 为中文、中文（台湾）、日文和韩文（CCJK）的时间和日期提供了广泛的支持。下面的示例是一个文本字段的自定义格式脚本，显示了为日文区域设置格式化的当前日期。
 
-```
-event.value = util.printd("date{ja}{ggYY/M/D}", new Date(), true)
+```javascript
+event.value = util.printd("date{ja}{ggYY/M/D}", new Date(), true);
 ```
 
-# printx
+## `printx`
 
-| 3.01 |  |  |  |
+| 3.01 | | | |
 | :--- | :--- | :--- | :--- |
 
-根据格式化字符串 `cFormat` 格式化源字符串 `cSource`。`cFormat` 的有效格式是任何可以包含特殊掩码字符的字符串：
+根据格式化字符串`cFormat`格式化源字符串`cSource`。`cFormat`的有效格式是任何可以包含特殊掩码字符的字符串：
 
 | 值 | 效果 |
 | :--- | :--- |
-| ? | 复制下一个字符。 |
-| X | 复制下一个字母数字字符，跳过其他任何字符。 |
-| A | 复制下一个字母字符，跳过其他任何字符。 |
-| 9 | 复制下一个数字字符，跳过其他任何字符。 |
-| * | 从该点开始复制源字符串的其余部分。 |
-| \ | 转义字符。 |
-| > | 大写转换，直到另行通知。 |
-| < | 小写转换，直到另行通知。 |
-| = | 保留大小写，直到另行通知（默认）。 |
+| `?` | 复制下一个字符。 |
+| `X` | 复制下一个字母数字字符，跳过其他任何字符。 |
+| `A` | 复制下一个字母字符，跳过其他任何字符。 |
+| `9` | 复制下一个数字字符，跳过其他任何字符。 |
+| `*` | 从该点开始复制源字符串的其余部分。 |
+| `\` | 转义字符。 |
+| `>` | 大写转换，直到另行通知。 |
+| `<` | 小写转换，直到另行通知。 |
+| `=` | 保留大小写，直到另行通知（默认）。 |
 
-## 参数
+### 参数
 
-| cFormat | 要使用的格式化字符串。 |
-| cSource | 要使用的源字符串。 |
+| 参数 | 描述 |
+| :--- | :--- |
+| `cFormat` | 要使用的格式化字符串。 |
+| `cSource` | 要使用的源字符串。 |
 
-## 返回值
+### 返回值
 
 格式化后的字符串。
 
-## 示例
+### 示例
 
 要将字符串格式化为美国电话号码，例如，使用以下脚本：
 
-```
+```javascript
 var v = "aaa14159697489zzz";
+
 v = util.printx("9 (999) 999-9999", v);
+
 console.println(v);
 ```
 
-# scand
+## `scand`
 
 | 4.0 | | | |
 |---|---|---|---|
 
-根据提供的格式字符串 `cFormat` 的规则，将提供的日期 `cDate` 转换为 JavaScript 日期对象。此例程比直接使用日期构造函数灵活得多。
+根据提供的格式字符串`cFormat`的规则，将提供的日期`cDate`转换为 JavaScript 日期对象。此例程比直接使用日期构造函数灵活得多。
 
-> 注意：对于输入的两位数年份，`scand` 按如下方式解决歧义：如果年份小于 50，则假定其在 21 世纪（即加上 2000）；如果大于或等于 50，则假定其在 20 世纪（加上 1900）。此启发式方法通常被称为 *日期边界*。
+> 注意：对于输入的两位数年份，`scand`按如下方式解决歧义：如果年份小于 50，则假定其在 21 世纪（即加上 2000）；如果大于或等于 50，则假定其在 20 世纪（加上 1900）。此启发式方法通常被称为*日期边界*。
 
-提供的日期 `cDate` 应与 `cFormat` 描述的格式相同。
+提供的日期`cDate`应与`cFormat`描述的格式相同。
 
-## 参数
+### 参数
 
-| `cFormat` | 用于格式化日期的规则。`cFormat` 使用与 `printd` 中相同的语法。 |
-|---|---|
+| 参数 | 描述 |
+| :--- | :--- |
+| `cFormat` | 用于格式化日期的规则。`cFormat`使用与`printd`中相同的语法。 |
 | `cDate` | 要转换的日期。 |
 
-## 返回值
+### 返回值
 
-转换后的 `date` 对象，如果转换失败则返回 `null`。
+转换后的`date`对象，如果转换失败则返回`null`。
 
-## 示例 1
+### 示例 1
 
-```
+```javascript
 /* 将当前日期转换为字符串。 */
+
 var cDate = util.printd("mm/dd/yyyy", new Date());
+
 console.println("Today's date: " + cDate);
+
 /* 将其解析回日期。 */
+
 var d = util.scand("mm/dd/yyyy", cDate);
+
 /* 以相反的顺序输出。 */
+
 console.println("Yet again: " + util.printd("yyyy mmm dd", d));
 ```
 
-## 示例 2
+### 示例 2
 
-如果转换失败，该方法将返回 `null`，如果用户输入的数据与预期不同，则可能发生这种情况。在这种情况下，只需测试返回值是否为 `null` 即可。
+如果转换失败，该方法将返回`null`，如果用户输入的数据与预期不同，则可能发生这种情况。在这种情况下，只需测试返回值是否为`null`即可。
 
-```
+```javascript
 var d = util.scand("mm/dd/yyyy", this.getField("myDate").value);
-    if ( d == null )
-        app.alert("Please enter a valid date of the form" +
-            " \"mm/dd/yyyy\".")
-    else {
-        console.println("You entered the date: "
-            + util.printd("mmmm dd, yyyy",d));
-    }
+
+if (d == null) {
+    app.alert(
+        "Please enter a valid date of the form" +
+        " \"mm/dd/yyyy\"."
+    );
+} else {
+    console.println(
+        "You entered the date: " +
+        util.printd("mmmm dd, yyyy", d)
+    );
+}
 ```
 
+## `spansToXML`
 
-
-## spansToXML
-
-此方法将一个[Span 对象](Span Objects)数组转换为符合 PDF 1.5 规范描述的 XML(XFA) 字符串。
+此方法将一个[Span 对象](Span Objects)数组转换为符合 PDF 1.5 规范描述的 XML（XFA）字符串。
 
 ### 参数
 
@@ -23795,62 +25149,76 @@ var d = util.scand("mm/dd/yyyy", this.getField("myDate").value);
 
 ### 返回值
 
-字符串
+字符串。
 
 ### 示例
 
 此示例获取一个富文本字段的值，将所有文本变为蓝色，将其转换为 XML 字符串，然后打印到控制台。
 
-```
+```javascript
 var f = getField("Text1");
+
 var spans = f.richValue;
-for(var index = 0; index < spans.length; index++)
+
+for (var index = 0; index < spans.length; index++) {
     spans[index].textColor = color.blue;
+}
+
 console.println(util.spansToXML(spans));
 ```
 
-## streamFromString
+## `streamFromString`
 
-此函数将一个字符串转换为 [ReadStream 对象](ReadStream Object)。
+此函数将一个字符串转换为[ReadStream 对象](ReadStream Object)。
 
 ### 参数
 
 | 参数 | 描述 |
 |---|---|
-| **cString** | 要转换为 ReadStream 对象的字符串。 |
-| **cCharSet** | （可选）**cString** 中字符串的编码。选项有：utf-8、utf-16、Shift-JIS、BigFive、GBK、UHC。默认为 utf-8。 |
+| `cString` | 要转换为 ReadStream 对象的字符串。 |
+| `cCharSet` | （可选）`cString`中字符串的编码。选项有：`utf-8`、`utf-16`、`Shift-JIS`、`BigFive`、`GBK`、`UHC`。默认为`utf-8`。 |
 
 ### 返回值
 
-字符串
+字符串。
 
 ### 示例
 
 此示例获取本文档中一个文本字段给出的响应，并将此响应附加到附加文档中。
 
-```
+```javascript
 var v = this.getField("myTextField").value;
+```
+
+
+
+
+```javascript
 var oFile = this.getDataObjectContents("MyNotes.txt");
+
 var cFile = util.stringFromStream(oFile, "utf-8");
+
 cFile += "\r\n" + v;
-oFile = util.streamFromString( cFile, "utf-8");
+
+oFile = util.streamFromString(cFile, "utf-8");
+
 this.setDataObjectContents("MyNotes.txt", oFile);
 ```
 
-此示例使用了 Doc.getDataObjectContents、util.stringFromStream 和 Doc.setDataObjectContents。
+此示例使用了`Doc.getDataObjectContents`、`util.stringFromStream`和`Doc.setDataObjectContents`。
 
-## stringFromStream
+## `stringFromStream`
 
 | 7.0 | | | |
 
-此函数将一个 ReadStream 对象转换为字符串。
+此函数将一个`ReadStream`对象转换为字符串。
 
 ### 参数
 
 | 参数 | 描述 |
 |---|---|
-| oStream | 要转换为字符串的 ReadStream 对象。 |
-| cCharSet | （可选）oStream 中字符串的编码。选项有：utf-8、utf-16、Shift-JIS、BigFive、GBK、UHC。默认为 utf-8。 |
+| `oStream` | 要转换为字符串的`ReadStream`对象。 |
+| `cCharSet` | （可选）`oStream`中字符串的编码。选项有：utf-8、utf-16、Shift-JIS、BigFive、GBK、UHC。默认为 utf-8。 |
 
 ### 返回值
 
@@ -23860,160 +25228,217 @@ this.setDataObjectContents("MyNotes.txt", oFile);
 
 假设本文档中嵌入了一个文本文件。此示例读取附件的内容，并在多行文本字段中显示它。
 
-```
+```javascript
 var oFile = this.getDataObjectContents("MyNotes.txt");
+
 var cFile = util.stringFromStream(oFile, "utf-8");
+
 this.getField("myTextField").value = cFile;
 ```
 
-此示例使用了 getDataObjectContents 来获取附加文档的文件流。
+此示例使用了`getDataObjectContents`来获取附加文档的文件流。
 
-## xmlToSpans
+## `xmlToSpans`
 
 | 6.0 | | | |
 
-此方法将一个符合 PDF 1.5 规范描述的 XML(XFA) 字符串转换为一个 Span 对象数组，该数组适用于指定为字段或注释的 richValue 或 richContents。
+此方法将一个符合 PDF 1.5 规范描述的 XML（XFA）字符串转换为一个`Span`对象数组，该数组适用于指定为字段或注释的`richValue`或`richContents`。
 
 ### 参数
 
 | 参数 | 描述 |
 |---|---|
-| 一个字符串 | 要转换为 Span 对象数组的 XML (XFA) 字符串。 |
+| 一个字符串 | 要转换为`Span`对象数组的 XML（XFA）字符串。 |
 
 ### 返回值
 
-Span 对象数组
+`Span`对象数组
 
 ### 示例
 
-从“Text1”获取富文本字符串，将其转换为 XML，然后再将其转换回 Span 对象数组并重新填充文本字段。
+从“Text1”获取富文本字符串，将其转换为 XML，然后再将其转换回`Span`对象数组并重新填充文本字段。
 
-```
+```javascript
 var f = getField("Text1");
+
 var spans = f.richValue;
+
 var str = util.spansToXML(spans);
+
 var spans = util.xmlToSpans(str);
+
 f.richValue = spans;
 ```
 
-## XFAObject 对象
+## `XFAObject` 对象
 
 6.0.2
 
-XFAObject 对象对应于 XFA 脚本参考中的 appModel。所有 XFA 文档都位于 http://partners.adobe.com/asn/tech/pdf/xmlformspec.jsp。XFAObject 对象由 XMLData.parse 和 XMLData.applyXPath 方法返回。
+`XFAObject`对象对应于 XFA 脚本参考中的`appModel`。所有 XFA 文档都位于 http://partners.adobe.com/asn/tech/pdf/xmlformspec.jsp。`XFAObject`对象由`XMLData.parse`和`XMLData.applyXPath`方法返回。
 
 ### 示例
 
 以下代码检测 PDF 文档是由 Adobe Designer 创建并具有 XML 表单，还是具有 Acrobat 表单。
 
-```
-if ( typeof xfa == "object" ) {
-    if ( this.dynamicXFAForm ) {
+```javascript
+if (typeof xfa == "object") {
+    if (this.dynamicXFAForm) {
         console.println("This is a dynamic XML form.");
-    else
+    } else {
         console.println("This is a static XML form.");
+    }
+} else {
+    console.println("This is an Acrobat Form.");
 }
-else  console.println("This is an Acrobat Form.");
 ```
 
-## XMLData 对象
+## `XMLData` 对象
 
-XMLData 是一个静态对象，允许创建表示 XML 文档树的 JavaScript 对象，并允许通过 XFA Data Dom 操作任意 XML 文档。在 XFA 中，有几个与 Data Dom 平行的其他 Dom，但出于 XMLData 对象的目的，仅使用 Data Dom。
+`XMLData`是一个静态对象，允许创建表示 XML 文档树的 JavaScript 对象，并允许通过 XFA Data Dom 操作任意 XML 文档。在 XFA 中，有几个与 Data Dom 平行的其他 Dom，但出于`XMLData`对象的目的，仅使用 Data Dom。
 
-`doc.dynamicXFAForm` 属性返回 `true` 的 PDF 文档可以使用 XMLData 对象，但不能使用该对象操作其表单字段，因为两个数据 DOM 是相互隔离的。
+`doc.dynamicXFAForm`属性返回`true`的 PDF 文档可以使用`XMLData`对象，但不能使用该对象操作其表单字段，因为两个数据 DOM 是相互隔离的。
 
-### XMLData 对象方法
+### `XMLData` 对象方法
 
-## applyXPath
+## `applyXPath`
 
 | 7.0 | | | |
-| --- | --- | --- | --- |
+|---|---|---|---|
 
-`applyXPath` 方法允许通过 XPath 表达式操作和查询 XML 文档。XPath 表达式求值为已知的四种类型之一：布尔值、数字、字符串、节点集。在 JavaScript 中，它们分别作为以下类型返回：Boolean、Number、String、Object。
+`applyXPath`方法允许通过 XPath 表达式操作和查询 XML 文档。XPath 表达式求值为已知的四种类型之一：布尔值、数字、字符串、节点集。在 JavaScript 中，它们分别作为以下类型返回：`Boolean`、`Number`、`String`、`Object`。
 
-如果返回一个对象，则该对象是 XFAObject 类型（参见 XFAObject 对象），它表示由单个节点开始的树，或由节点列表（树列表）开始的树。此对象的类型与 `XMLData.parse` 返回的类型相同。
+如果返回一个对象，则该对象是`XFAObject`类型（参见`XFAObject`对象），它表示由单个节点开始的树，或由节点列表（树列表）开始的树。此对象的类型与`XMLData.parse`返回的类型相同。
 
-有关 XPath 语言的详细信息，请参阅“参考”部分中 W3C 文档 XML Path Language (XPath) 的链接。
+有关 XPath 语言的详细信息，请参阅“参考”部分中 W3C 文档 XML Path Language（XPath）的链接。
 
-> 注意：XFA 提供了一种查询机制，即 SOM 表达式，类似于 XPath。XPath 在 XML 社区中被广泛使用，我们提供了额外的 `applyXPath` 方法，以便用户可以选择使用哪种查询机制。
+> 注意：XFA 提供了一种查询机制，即 SOM 表达式，类似于 XPath。XPath 在 XML 社区中被广泛使用，我们提供了额外的`applyXPath`方法，以便用户可以选择使用哪种查询机制。
 
 ### 参数
 
 | 参数 | 描述 |
 |---|---|
-| oXml | 一个表示 XML 文档树的 XFAObject 对象。注意：如果此参数的值是 nodeList XFA 对象而不是所需的 XML 树根节点，则会抛出异常。 |
-| cXPath | 一个字符串参数，包含要在文档树上执行的 XPATH 查询。 |
+| `oXml` | 一个表示 XML 文档树的`XFAObject`对象。注意：如果此参数的值是`nodeList` XFA 对象而不是所需的 XML 树根节点，则会抛出异常。 |
+| `cXPath` | 一个字符串参数，包含要在文档树上执行的 XPATH 查询。 |
 
 ### 返回值
 
-布尔值、数字、字符串或 XFAObject。
+布尔值、数字、字符串或`XFAObject`。
 
 ### 示例
 
-考虑以下 XML 数据字符串，“Robat”家族的家族树。方法 `XMLData.applyXPath` 可以返回布尔值、数字、字符串或 XFAObject。此示例说明了在从给定 XML 数据集中提取信息的过程中，每种返回类型的使用。
+考虑以下 XML 数据字符串，“Robat”家族的家族树。方法`XMLData.applyXPath`可以返回布尔值、数字、字符串或`XFAObject`。此示例说明了在从给定 XML 数据集中提取信息的过程中，每种返回类型的使用。
 
 ```xml
 var cXMLDoc = "<family name = 'Robat'>\
+
     <grandad id = 'm1' name = 'A.C.' gender='M'>\
+
         <child> m2 </child>\
+
         <personal>\
+
             <income>100000</income>\
+
         </personal>\
+
     </grandad>\
+
     <dad id = 'm2' name = 'Bob' gender='M'>\
+
         <parent> m1 </parent>\
+
         <spouse> m3 </spouse>\
+
         <child> m4 </child>\
+
         <child> m5 </child>\
+
         <child> m6 </child>\
+
         <personal>\
+
             <income>75000</income>\
+
         </personal>\
+
     </dad>\
+
     <mom id = 'm3' name = 'Mary' gender='F'>\
+
         <spouse> m2 </spouse>\
+
         <personal>\
+
             <income>25000</income>\
+
         </personal>\
+
     </mom>\
+
     <daughter id = 'm4' name = 'Sue' gender='F'>\
+
         <parent> m2 </parent>\
+
         <personal>\
+
             <income>40000</income>\
+
         </personal>\
+
     </daughter>\
+
     <son id = 'm5' name = 'Jim' gender='M'>\
+
         <parent> m2 </parent>\
+
         <personal>\
+
             <income>35000</income>\
+
         </personal>\
+
     </son>\
+
     <daughter id = 'm6' name = 'Megan' gender='F'>\
+
         <parent> m2 </parent>\
+
         <personal>\
+
             <income>30000</income>\
+
         </personal>\
+
     </daughter>\
+
 </family>";
-var myXML= XMLData.parse( cXMLDoc, false);
+
+var myXML = XMLData.parse(cXMLDoc, false);
 ```
 
-以下行说明了 XFAObject 的返回值。
+以下行说明了`XFAObject`的返回值。
 
-获取妈妈的数据
+获取妈妈的数据：
 
 ```javascript
-var a = XMLData.applyXPath(myXML, "//family/mom")
-a.saveXML('pretty');
+var a = XMLData.applyXPath(myXML, "//family/mom");
+
+a.saveXML("pretty");
 ```
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
+
 <mom id="m3" name="Mary" gender="F">
-    <spouse> m2 </spouse>
+
+    <spouse>m2</spouse>
+
     <personal>
+
         <income>25000</income>
+
     </personal>
+
 </mom>
 ```
 
@@ -24026,12 +25451,14 @@ a.personal.income.value = "20000"; // 更改收入
 
 ```javascript
 var b = XMLData.applyXPath(myXML, "//family/dad/@name");
-b.saveXML('pretty');
+
+b.saveXML("pretty");
 ```
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
-    name="Bob"
+
+name="Bob"
 ```
 
 ```javascript
@@ -24042,42 +25469,57 @@ var dadsName = b.value; // dadsName = "Bob"
 获取爸爸节点的所有属性。
 
 ```javascript
-var b = XMLData.applyXPath( myXML, "//family/dad/attribute::*" );
-for(var i=0; i < b.length; i++)
-    console.println(b.item(i).saveXML('pretty'))
+var b = XMLData.applyXPath(myXML, "//family/dad/attribute::*");
+
+for (var i = 0; i < b.length; i++) {
+    console.println(b.item(i).saveXML("pretty"));
+}
 ```
 
 上面的循环将以下内容输出到控制台。
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
+
 id="m2"
+
 <?xml version="1.0" encoding="UTF-8"?>
+
 name="Bob"
+
 <?xml version="1.0" encoding="UTF-8"?>
+
 gender="M"
 ```
 
-从中提取特定信息，我们有，
+从中提取特定信息，我们有：
 
 ```javascript
-console.println("For attribute 2, we have " + b.item(2).name + " = '" 
-    + b.item(2).value + "'.");
+console.println(
+    "For attribute 2, we have " +
+    b.item(2).name +
+    " = '" +
+    b.item(2).value +
+    "'."
+);
 ```
 
-其输出为
+其输出为：
+
 For attribute 2, we have gender = 'M'.
 
 获取爸爸的第二个孩子。
 
 ```javascript
-var c = XMLData.applyXPath(myXML, "//family/dad/child[position()=2] ");
-c.saveXML('pretty')
+var c = XMLData.applyXPath(myXML, "//family/dad/child[position()=2]");
+
+c.saveXML("pretty");
 ```
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
-<child> m5 </child>
+
+<child>m5</child>
 ```
 
 这是爸爸第二个孩子的 id。在下面的示例中，我们获取关于这个孩子的家族数据。
@@ -24086,303 +25528,413 @@ c.saveXML('pretty')
 
 ```javascript
 // 使用 XPath 方法计算 dadsName 的值。
-var dadsName = XMLData.applyXPath(myXML, "string(//family/dad/@name)")
+var dadsName = XMLData.applyXPath(
+    myXML,
+    "string(//family/dad/@name)"
+);
+
 // 这一行将 dadsName 赋值为 "Bob"。
 ```
 
-获取关于爸爸第二个孩子的家族信息。接下来的一行将 c = "m5"，此调用 applyXPath 的返回值是一个字符串。函数 normalize-space 将其参数转换为字符串并移除周围的空格。
-
-
+获取关于爸爸第二个孩子的家族信息。接下来的一行将`c`赋值为`"m5"`，此调用`applyXPath`的返回值是一个字符串。函数`normalize-space`将其参数转换为字符串并移除周围的空格。
 
 ## Acrobat JavaScript 脚本参考
 
-XMLData 对象方法
+`XMLData`对象方法：
 
-```
-var c = XMLData.applyXPath(myXML,
-    "normalize-space(//family/dad/child[2])");
-var d = "//*[id = '\" + c + "\"]";  // 注意：d= "//*[@id = 'm5']"
-XMLData.applyXPath(myXML, d ).saveXML('pretty'); // 显示我们已有的内容
+```javascript
+var c = XMLData.applyXPath(
+    myXML,
+    "normalize-space(//family/dad/child[2])"
+);
+
+var d = "//*[id = '" + c + "']";  // 注意：d = "//*[@id = 'm5']"
+
+XMLData.applyXPath(myXML, d).saveXML("pretty"); // 显示我们已有的内容
 ```
 
-```
+```xml
 <son id="m5" name="Jim" gender="M">
-  <parent> m2 </parent>
+
+  <parent>m2</parent>
+
   <personal>
+
     <income>35000</income>
+
   </personal>
+
 </son>
 ```
 
-现在获取 family 根节点的第6个子节点，并显示一些相关信息。这里使用了 XPath 函数 `name()` 和 `concat()`。
+现在获取`family`根节点的第 6 个子节点，并显示一些相关信息。这里使用了 XPath 函数`name()`和`concat()`。
 
-```
-var e = XMLData.applyXPath(myXML,
-    "concat(name(//family/child::*[position()=6]), '=',
-    //family/child::*[position()=6]/@name)" );
+```javascript
+var e = XMLData.applyXPath(
+    myXML,
+    "concat(name(//family/child::*[position()=6]), '=', " +
+    "//family/child::*[position()=6]/@name)"
+);
+
 console.println(e); // 输出为 "daughter=Megan"
 ```
 
-获取"Robat"家庭所有成员的姓名。
+获取“Robat”家庭所有成员的姓名。
 
-```
-e = XMLData.applyXPath(myXML,"//family/child::*" );
-for ( var i = 1; i <= e.length; i++ ) {
-    var str = "string(//family/child::*["+i+"]/@name)";
-    console.println(XMLData.applyXPath(myXML,str));
+```javascript
+e = XMLData.applyXPath(myXML, "//family/child::*");
+
+for (var i = 1; i <= e.length; i++) {
+    var str = "string(//family/child::*[" + i + "]/@name)";
+    console.println(XMLData.applyXPath(myXML, str));
 }
 ```
 
-输出为
-A.C.
-Bob
-Mary
-Sue
-Jim
+输出为：
+
+A.C.  
+Bob  
+Mary  
+Sue  
+Jim  
 Megan
 
 以下代码示例演示了布尔类型的返回值。
 
-```
-var f = XMLData.applyXPath( myXML, "//family/dad/@id = 'm2'" );
-if ( f == true ) console.println("爸爸的ID是'm2'");
-else console.println("爸爸的ID不是'm2'");
+```javascript
+var f = XMLData.applyXPath(
+    myXML,
+    "//family/dad/@id = 'm2'"
+);
+
+if (f == true) {
+    console.println("爸爸的 ID 是 'm2'");
+} else {
+    console.println("爸爸的 ID 不是 'm2'");
+}
 ```
 
 以下代码行演示了数值类型的返回值。
 
-```
+```javascript
 // 获取爸爸的收入
-g = XMLData.applyXPath( myXML, "number(//family/dad/personal/income)" );
+g = XMLData.applyXPath(
+    myXML,
+    "number(//family/dad/personal/income)"
+);
+
 // 将爸爸的薪水加倍，隐式转换为数字类型
-console.println("爸爸双倍的薪水是 " +
-    XMLData.applyXPath( myXML, "//family/dad/personal/income * 2" ) );
+console.println(
+    "爸爸双倍的薪水是 " +
+    XMLData.applyXPath(
+        myXML,
+        "//family/dad/personal/income * 2"
+    )
+);
 ```
 
-现在计算"Robat"家庭的总收入。
+现在计算“Robat”家庭的总收入。
 
-```
-console.println("A.C. Robat 家庭的总收入是 "
-    + XMLData.applyXPath( myXML, "sum(//income)" ) + "。");
+```javascript
+console.println(
+    "A.C. Robat 家庭的总收入是 " +
+    XMLData.applyXPath(myXML, "sum(//income)") +
+    "。"
+);
 ```
 
 上面这行代码会向控制台输出以下内容。
 
-```
+```text
 Total income of A.C. Robat's family is 305000.
 ```
 
 列出个人收入。
 
-```
-var g = XMLData.applyXPath( myXML, "//income")
-for ( var i =0; i< g.length; i++) console.println(g.item(i).value);
+```javascript
+var g = XMLData.applyXPath(myXML, "//income");
+
+for (var i = 0; i < g.length; i++) {
+    console.println(g.item(i).value);
+}
 ```
 
-# parse
+## `parse`
 
 | 7.0 | | | |
 
-**parse** 方法创建一个表示 XML 文档树的对象。**XMLData.parse** 的参数与 XFA Data Dom 中 **loadXML** 方法的参数相同。
+`parse`方法创建一个表示 XML 文档树的对象。`XMLData.parse`的参数与 XFA Data Dom 中`loadXML`方法的参数相同。
 
-**parse** 返回的 XFAObject 类型对象（参见 [XFAObject 对象](https://example.com)）代表一个以单个节点为根的树，或者一个以节点列表开始的树（一个树列表）。
+`parse`返回的`XFAObject`类型对象（参见[XFAObject 对象](https://example.com)）代表一个以单个节点为根的树，或者一个以节点列表开始的树（一个树列表）。
 
-# 参数
+### 参数
 
-| param1 | 包含 XML 文档的字符串。 |
-| param2 | （可选）一个布尔值，如果为 **true**，则应忽略 XML 文档的根节点。如果为 **false**，则不应忽略根节点。默认值为 **true**。 |
+| 参数 | 描述 |
+|---|---|
+| `param1` | 包含 XML 文档的字符串。 |
+| `param2` | （可选）一个布尔值，如果为`true`，则应忽略 XML 文档的根节点。如果为`false`，则不应忽略根节点。默认值为`true`。 |
 
-# 返回值
+### 返回值
 
-XFAObject
+`XFAObject`
 
-# 示例 1
+### 示例 1
 
-考虑在 **XMLData.applyXPath** 方法后的示例中首次引入的 XML 文档。
+考虑在`XMLData.applyXPath`方法后的示例中首次引入的 XML 文档。
 
-```
-var x = XMLData.parse( cXMLDoc, false );
-var y = x.family.name;           // 一个 XFAObject
-console.println(y.value);        // 控制台输出为 "Robat"
-获取关于 **dad** 的信息
-y = x.family.dad.id;             // 一个 XFAObject
-console.println(y.value);        // 控制台输出为 "m2"
 
-y = x.family.dad.name.value;     // y = "Bob"
-x.family.dad.name.value = "Robert";  // 将名字改为 "Robert"
-y = x.family.dad.name.value;     // y = "Robert"
 
-y = x.family.dad.personal.income.value;           // y = "75000"
-x.family.dad.personal.income.value = "80000";     // 给爸爸加薪
+```javascript
+var x = XMLData.parse(cXMLDoc, false);
+
+var y = x.family.name; // 一个 XFAObject
+
+console.println(y.value); // 控制台输出为 "Robat"
 ```
 
-XMLData 对象方法
+## 获取关于`dad`的信息
 
-示例 2
+```javascript
+y = x.family.dad.id; // 一个 XFAObject
+
+console.println(y.value); // 控制台输出为 "m2"
+
+y = x.family.dad.name.value; // y = "Bob"
+
+x.family.dad.name.value = "Robert"; // 将名字改为 "Robert"
+
+y = x.family.dad.name.value; // y = "Robert"
+
+y = x.family.dad.personal.income.value; // y = "75000"
+
+x.family.dad.personal.income.value = "80000"; // 给爸爸加薪
+```
+
+## `XMLData`对象方法
+
+### 示例 2
 
 创建一个简单的 XML 文档并对其进行操作。
 
-```
+```javascript
 x = XMLData.parse("<a> <c>A.</c><d>C.</d> </a>", false);
+
 x.saveXML("pretty");
 ```
 
-上面这行代码的输出是
+上面这行代码的输出是：
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
+
 <xfa:data xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/">
+
   <a>
+
     <c>A.</c>
+
     <d>C.</d>
+
   </a>
+
 </xfa:data>
 ```
 
 现在创建另一个简单文档。
 
-```
+```javascript
 y = XMLData.parse("<b>Roboto</b>", false);
+
 y.saveXML("pretty");
 ```
 
-这行代码的输出是
+这行代码的输出是：
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
+
 <xfa:data xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/">
+
   <b>Roboto</b>
+
 </xfa:data>
 ```
 
-将 **y** 追加到 **x** 上
+## 将`y`追加到`x`上
 
-```
+```javascript
 x.nodes.append(y.clone(true).nodes.item(0));
+
 x.saveXML("pretty");
 ```
 
-结果是
+结果是：
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
+
 <xfa:data xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/">
+
   <a>
+
     <c>A.</c>
+
     <d>C.</d>
+
   </a>
+
   <b>Roboto</b>
+
 </xfa:data>
 ```
 
-现在执行
+现在执行：
 
-```
+```javascript
 x.nodes.insert(y.clone(true).nodes.item(0), x.nodes.item(0));
-x.saveXML("pretty")
+
+x.saveXML("pretty");
 ```
 
-以获得
+以获得：
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
+
 <xfa:data xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/">
+
   <b>Roboto</b>
+
   <a>
+
     <c>A.</c>
+
     <d>C.</d>
+
   </a>
+
 </xfa:data>
 ```
 
-现在移除这两个节点。
+现在移除这两个节点：
 
-```
-x.nodes.remove( x.nodes.namedItem("b") );
-x.nodes.remove( x.nodes.namedItem("b") );
+```javascript
+x.nodes.remove(x.nodes.namedItem("b"));
+
+x.nodes.remove(x.nodes.namedItem("b"));
 ```
 
 现在，我们回到了原始的 XML 文档。
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
+
 <xfa:data xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/">
+
     <a>
+
         <c>A.</c>
+
         <d>C.</d>
+
     </a>
+
 </xfa:data>
 ```
 
-尝试执行以下代码行
+尝试执行以下代码行：
 
-```
-x.a.nodes.insert( y.clone(true).nodes.item(0), x.a.nodes.item(0));
+```javascript
+x.a.nodes.insert(y.clone(true).nodes.item(0), x.a.nodes.item(0));
+
 x.saveXML("pretty");
 ```
 
 产生以下输出：
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
+
 <xfa:data xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/">
+
     <a>
+
         <b>Roboto</b>
+
         <c>A.</c>
+
         <d>C.</d>
+
     </a>
+
 </xfa:data>
 ```
 
 现在移除刚刚插入的那个节点：
 
-```
-x.a.nodes.remove( x.a.nodes.namedItem("b"));
-```
-
-现在将 **y**，实际上是 **y** 的克隆，插入到元素 **a** 的第一个和第二个子节点之间
-
-```
-x.a.nodes.insert( y.clone(true).nodes.item(0), x.a.nodes.item(1));
+```javascript
+x.a.nodes.remove(x.a.nodes.namedItem("b"));
 ```
 
-这将产生以下结果
+现在将`y`，实际上是`y`的克隆，插入到元素`a`的第一个和第二个子节点之间：
 
+```javascript
+x.a.nodes.insert(y.clone(true).nodes.item(0), x.a.nodes.item(1));
 ```
+
+这将产生以下结果：
+
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
+
 <xfa:data xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/">
+
     <a>
+
         <c>A.</c>
+
         <b>Roboto</b>
+
         <d>C.</d>
+
     </a>
+
 </xfa:data>
 ```
 
 移除刚刚插入的那个节点：
 
-```
-x.a.nodes.remove( x.a.nodes.namedItem("b"));
-```
-
-最后，将 **y** 追加到 **a** 上
-
-```
-x.a.nodes.append( y.clone(true).nodes.item(0));
+```javascript
+x.a.nodes.remove(x.a.nodes.namedItem("b"));
 ```
 
-得到
+最后，将`y`追加到`a`上：
 
+```javascript
+x.a.nodes.append(y.clone(true).nodes.item(0));
 ```
+
+得到：
+
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
+
 <xfa:data xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/">
+
   <a>
+
     <c>A.</c>
+
     <d>C.</d>
+
     <b>Robat</b>
+
   </a>
+
 </xfa:data>
 ```
+
+
 
 # 新功能和更改
 
@@ -24390,17 +25942,17 @@ x.a.nodes.append( y.clone(true).nodes.item(0));
 
 ## Acrobat 7.0 更改
 
-“Acrobat 多媒体 JavaScript 参考”在 6.0.2 版本中作为独立文档出现，现已合并到“Acrobat JavaScript 脚本参考”中。有关所有多媒体 JavaScript 对象、属性和方法的列表，请参见第 662 页的“在 Acrobat 6.0.2 中引入”部分。
+`Acrobat 多媒体 JavaScript 参考`在 6.0.2 版本中作为独立文档出现，现已合并到`Acrobat JavaScript 脚本参考`中。有关所有多媒体 JavaScript 对象、属性和方法的列表，请参见第 662 页的“在 Acrobat 6.0.2 中引入”部分。
 
 通过菜单事件执行 JavaScript 不再具有特权。有关详细信息，请参见第 680 页的“通过菜单执行 JavaScript”段落进行详细讨论。
 
 现在支持在非特权上下文中执行特权代码。有关详细信息，请参见第 679 页的“特权与非特权上下文”。
 
-App 文件夹 JavaScript 文件现在是预编译的，以提高性能，参见“字节码提高性能”。
+`App` 文件夹 JavaScript 文件现在是预编译的，以提高性能，参见“字节码提高性能”。
 
-Adobe Reader 现在有一个控制台窗口。在 **编辑 > 首选项 > 常规 > JavaScript** 下有一个“在出现错误和消息时显示控制台”的偏好设置。除了错误和异常，控制台也可以通过 `console.show()` 以编程方式打开。有关更多细节，请参见控制台对象。
+Adobe Reader 现在有一个控制台窗口。在 **编辑 > 首选项 > 常规 > JavaScript** 下有一个“在出现错误和消息时显示控制台”的偏好设置。除了错误和异常，控制台也可以通过`console.show()`以编程方式打开。有关更多细节，请参见控制台对象。
 
-JavaScript 调试窗口的调试功能可以在 Windows 和 Macintosh 平台上的 Adobe Reader 中使用。为了在 Adobe Reader 中进行调试，需要安装 JavaScript 文件 `debugger.js`，并且需要相应地编辑 Windows 注册表。技术细节请参见 *Acrobat JavaScript 脚本指南*。
+JavaScript 调试窗口的调试功能可以在 Windows 和 Macintosh 平台上的 Adobe Reader 中使用。为了在 Adobe Reader 中进行调试，需要安装 JavaScript 文件`debugger.js`，并且需要相应地编辑 Windows 注册表。技术细节请参见 *Acrobat JavaScript 脚本指南*。
 
 ### 在 Acrobat 7.0 中引入
 
@@ -24408,9 +25960,7 @@ JavaScript 调试窗口的调试功能可以在 Windows 和 Macintosh 平台上�
 
 | | |
 | :--- | :--- |
-| Alerter 对象 | 方法：`dispatch` |
-
-
+| `Alerter` 对象 | 方法：`dispatch` |
 
 ## 新功能与变更
 
@@ -24418,8 +25968,8 @@ Acrobat 7.0 变更
 
 | 注释对象 | 属性：`callout`、`caretSymbol`<sup>a</sup>、`creationDate`<sup>a</sup>、`dash`<sup>b</sup>、`delay`<sup>b</sup>、`doCaption`、`intent`、`leaderExtend`、`leaderLength`、`lineEnding`、`opacity`<sup>b</sup>、`refType`、`richDefaults`<sup>a</sup>、`seqNum`<sup>b</sup>、`state`<sup>a</sup>、`stateModel`<sup>a</sup>、`style`、`subject`<sup>a</sup> |
 | 3D注释对象 | 属性：`activated`、`context3D`、`innerRect`、`name`、`page`、`rect` |
-| App对象 | 属性：`constants`；方法：`beginPriv`、`browseForDoc`、`endPriv`、`execDialog`、`launchURL`、`trustedFunction`、`trustPropagatorFunction` |
-| Dialog对象 | 方法：`enable`、`end`、`load`、`store` |
+| `App`对象 | 属性：`constants`；方法：`beginPriv`、`browseForDoc`、`endPriv`、`execDialog`、`launchURL`、`trustedFunction`、`trustPropagatorFunction` |
+| `Dialog`对象 | 方法：`enable`、`end`、`load`、`store` |
 
 ## 新功能与变更
 
@@ -24427,23 +25977,23 @@ Acrobat 7.0 变更
 
 | 对象 | 详情 |
 |---|---|
-| Doc对象 | **属性：** `docID`<sup>a</sup>、`dynamicXFAForm`、`external`、`hidden`、`mouseX`、`mouseY`、`noautocomplete`、`nocache`、`requiresFullSave`；**方法：** `addWatermarkFromFile`、`addWatermarkFromText`、`embedDocAsDataObject`、`encryptUsingPolicy`、`getAnnot3D`、`getAnnots3D`、`getDataObjectContents`、`getOCGOrder`、`openDataObject`、`removeScript`、`setDataObjectContents`、`setOCGOrder` |
-| Doc.media对象 | **方法：** `getOpenPlayers` |
-| Field对象 | **方法：** `signatureGetModifications` |
-| OCG对象 | **属性：** `constants`、`initState`、`locked`；**方法：** `getIntent`、`setIntent` |
-| PlayerInfo对象 | **方法：** `honors` |
+| `Doc`对象 | **属性：** `docID`<sup>a</sup>、`dynamicXFAForm`、`external`、`hidden`、`mouseX`、`mouseY`、`noautocomplete`、`nocache`、`requiresFullSave`；**方法：** `addWatermarkFromFile`、`addWatermarkFromText`、`embedDocAsDataObject`、`encryptUsingPolicy`、`getAnnot3D`、`getAnnots3D`、`getDataObjectContents`、`getOCGOrder`、`openDataObject`、`removeScript`、`setDataObjectContents`、`setOCGOrder` |
+| `Doc.media`对象 | **方法：** `getOpenPlayers` |
+| `Field`对象 | **方法：** `signatureGetModifications` |
+| `OCG`对象 | **属性：** `constants`、`initState`、`locked`；**方法：** `getIntent`、`setIntent` |
+| `PlayerInfo`对象 | **方法：** `honors` |
 
 ## 新功能与变更
 
 Acrobat 7.0 变更
 
-| printParams对象 | 属性：`nUpAutoRotate`、`nUpNumPagesH`、`nUpNumPagesV`、`nUpPageBorder`、`nUpPageOrder` |
-| Search对象 | 属性：`attachments`、`ignoreAccents`、`objectMetadata`、`proximityRange` |
-| Security对象 | Security常量；方法：`chooseSecurityPolicy`、`getSecurityPolicies` |
-| SecurityPolicy对象 | SecurityPolicy属性 |
-| SOAP对象 | 方法：`queryServices`、`resolveService`、`streamDigest` |
-| Util对象 | 方法：`iconStreamFromIcon`、`streamFromString`、`stringFromStream` |
-| XMLData对象 | 方法：`applyXPath`、`parse` |
+| `printParams`对象 | 属性：`nUpAutoRotate`、`nUpNumPagesH`、`nUpNumPagesV`、`nUpPageBorder`、`nUpPageOrder` |
+| `Search`对象 | 属性：`attachments`、`ignoreAccents`、`objectMetadata`、`proximityRange` |
+| `Security`对象 | `Security`常量；方法：`chooseSecurityPolicy`、`getSecurityPolicies` |
+| `SecurityPolicy`对象 | `SecurityPolicy`属性 |
+| `SOAP`对象 | 方法：`queryServices`、`resolveService`、`streamDigest` |
+| `Util`对象 | 方法：`iconStreamFromIcon`、`streamFromString`、`stringFromStream` |
+| `XMLData`对象 | 方法：`applyXPath`、`parse` |
 
 a. 在6.0版本中存在，在7.0版本中记录。
 b. 在5.0版本中存在，在7.0版本中记录。
@@ -24456,16 +26006,16 @@ b. 在5.0版本中存在，在7.0版本中记录。
 
 | 对象 | 变更 |
 | :--- | :--- |
-| App对象 | 方法：`addToolButton`、`execMenuItem`、`getPath`、`mailGetAddrs`、`openDoc` |
-| Console对象 | 控制台窗口现在在Adobe Reader中可用。 |
-| Doc对象 | 方法：`createTemplate`、`mailDoc`、`print`、`saveAs`、`submitForm` |
-| Field对象 | 方法：`signatureSetSeedValue` |
-| Index对象 | 方法：`build` |
-| OCG对象 | 属性：`name` |
-| printParams对象 | 属性：`pageHandling` |
-| Search对象 | 属性：`indexes` |
-| Security对象 | 属性：`handlers`；方法：`getHandler` |
-| SecurityHandler对象 | 属性：`digitalIDs`；方法：`login`、`newUser` |
+| `App`对象 | 方法：`addToolButton`、`execMenuItem`、`getPath`、`mailGetAddrs`、`openDoc` |
+| `Console`对象 | 控制台窗口现在在Adobe Reader中可用。 |
+| `Doc`对象 | 方法：`createTemplate`、`mailDoc`、`print`、`saveAs`、`submitForm` |
+| `Field`对象 | 方法：`signatureSetSeedValue` |
+| `Index`对象 | 方法：`build` |
+| `OCG`对象 | 属性：`name` |
+| `printParams`对象 | 属性：`pageHandling` |
+| `Search`对象 | 属性：`indexes` |
+| `Security`对象 | 属性：`handlers`；方法：`getHandler` |
+| `SecurityHandler`对象 | 属性：`digitalIDs`；方法：`login`、`newUser` |
 
 ## 新功能与变更
 
@@ -24473,9 +26023,9 @@ Acrobat 6.0 变更
 
 | 对象 | 详情 |
 |---|---|
-| SOAP对象 | 方法：`connect`、`request` |
-| Spell对象 | Spell对象在Adobe Reader 7.0或更高版本中不可用；方法：`addWord` |
-| Util对象 | 方法：`printd` |
+| `SOAP`对象 | 方法：`connect`、`request` |
+| `Spell`对象 | `Spell`对象在Adobe Reader 7.0或更高版本中不可用；方法：`addWord` |
+| `Util`对象 | 方法：`printd` |
 
 ## Acrobat 6.0 变更
 
@@ -24487,11 +26037,11 @@ Acrobat 6.0 变更
 
 | 对象 | 详情 |
 |---|---|
-| ADBC对象 | SQL类型 |
-| AlternatePresentation对象 | 属性：`active`、`type`；方法：`start`、`stop` |
-| Annot对象 | 属性：`borderEffectIntensity`、`borderEffectStyle`、`inReplyTo`、`richContents`、`toggleNoView`；方法：`getStateInModel`、`transitionToState` |
+| `ADBC`对象 | SQL类型 |
+| `AlternatePresentation`对象 | 属性：`active`、`type`；方法：`start`、`stop` |
+| `Annot`对象 | 属性：`borderEffectIntensity`、`borderEffectStyle`、`inReplyTo`、`richContents`、`toggleNoView`；方法：`getStateInModel`、`transitionToState` |
 
-### App对象
+### `App`对象
 
 **属性：**
 `fromPDFConverters`
@@ -24511,12 +26061,12 @@ Acrobat 6.0 变更
 `popUpMenuEx`
 `removeToolButton`
 
-### Bookmark对象
+### `Bookmark`对象
 
 **方法：**
 `setAction`
 
-### Catalog对象
+### `Catalog`对象
 
 **属性：**
 `isIdle`
@@ -24526,19 +26076,19 @@ Acrobat 6.0 变更
 `getIndex`
 `remove`
 
-### Certificate对象
+### `Certificate`对象
 
 **属性：**
 `keyUsage`
 `usage`
 
-### Collab对象
+### `Collab`对象
 
 **方法：**
 `addStateModel`
 `removeStateModel`
 
-### Connection对象
+### `Connection`对象
 
 **方法：**
 `close`
@@ -24549,12 +26099,12 @@ Acrobat 6.0 变更
 
 | 对象 | 类别 | 项目 |
 | :--- | :--- | :--- |
-| Dbg对象 | 属性： | **bps** |
-| | 方法： | **c**、**cb**、**q**、**sb**、**si**、**sn**、**so**、**sv** |
-| Directory对象 | 属性： | **info** |
-| | 方法： | **connect** |
-| DirConnection对象 | 属性： | **canList**、**canDoCustomSearch**、**canDoCustomUISearch**、**canDoStandardSearch**、**groups**、**name**、**uiName** |
-| | 方法： | **search**、**setOutputFields** |
+| `Dbg`对象 | 属性： | `bps` |
+| | 方法： | `c`、`cb`、`q`、`sb`、`si`、`sn`、`so`、`sv` |
+| `Directory`对象 | 属性： | `info` |
+| | 方法： | `connect` |
+| `DirConnection`对象 | 属性： | `canList`、`canDoCustomSearch`、`canDoCustomUISearch`、`canDoStandardSearch`、`groups`、`name`、`uiName` |
+| | 方法： | `search`、`setOutputFields` |
 
 ## 新功能与变更
 
@@ -24562,9 +26112,9 @@ Acrobat 6.0 变更
 
 | 对象 | 详情 |
 |---|---|
-| Doc对象 | 属性：`alternatePresentations`、`documentFileName`、`metadata`、`permStatusReady`；方法：`addLink`、`addRecipientListCryptFilter`、`addScript`、`encryptForRecipients`、`exportAsText`、`exportXFAData`、`getLegalWarnings`、`getLinks`、`getOCGs`、`getPrintParams`、`importXFAData`、`newPage`、`removeLinks`、`setAction`、`setPageAction`、`setPageTabOrder` |
-| Error对象 | 属性：`fileName`、`lineNumber`、`message`、`name`；方法：`toString` |
-| Event对象 | 属性：`fieldFull`、`richChange`、`richChangeEx`、`richValue` |
+| `Doc`对象 | 属性：`alternatePresentations`、`documentFileName`、`metadata`、`permStatusReady`；方法：`addLink`、`addRecipientListCryptFilter`、`addScript`、`encryptForRecipients`、`exportAsText`、`exportXFAData`、`getLegalWarnings`、`getLinks`、`getOCGs`、`getPrintParams`、`importXFAData`、`newPage`、`removeLinks`、`setAction`、`setPageAction`、`setPageTabOrder` |
+| `Error`对象 | 属性：`fileName`、`lineNumber`、`message`、`name`；方法：`toString` |
+| `Event`对象 | 属性：`fieldFull`、`richChange`、`richChangeEx`、`richValue` |
 
 ## 新功能与变更
 
@@ -24572,10 +26122,10 @@ Acrobat 6.0 变更
 
 | 对象 | 属性/方法 |
 |---|---|
-| FDF对象 | 属性：`deleteOption`、`isSigned`、`numEmbeddedFiles`；方法：`addContact`、`addEmbeddedFile`、`addRequest`、`close`、`mail`、`save`、`signatureClear`、`signatureSign`、`signatureValidate` |
-| Field对象 | 属性：`buttonFitBounds`、`comb`、`commitOnSelChange`、`defaultStyle`、`radiosInUnison`、`richText`、`richValue`、`rotation`；方法：`getLock`、`setLock`、`signatureGetSeedValue`、`signatureSetSeedValue` |
-| Index对象 | 方法：`build` |
-| Link对象 | 属性：`borderColor`、`borderWidth`、`highlightMode`、`rect`；方法：`setAction` |
+| `FDF`对象 | 属性：`deleteOption`、`isSigned`、`numEmbeddedFiles`；方法：`addContact`、`addEmbeddedFile`、`addRequest`、`close`、`mail`、`save`、`signatureClear`、`signatureSign`、`signatureValidate` |
+| `Field`对象 | 属性：`buttonFitBounds`、`comb`、`commitOnSelChange`、`defaultStyle`、`radiosInUnison`、`richText`、`richValue`、`rotation`；方法：`getLock`、`setLock`、`signatureGetSeedValue`、`signatureSetSeedValue` |
+| `Index`对象 | 方法：`build` |
+| `Link`对象 | 属性：`borderColor`、`borderWidth`、`highlightMode`、`rect`；方法：`setAction` |
 
 ## 新功能与变更
 
@@ -24583,9 +26133,9 @@ Acrobat 6.0 变更
 
 | 对象 | 属性/方法 |
 |---|---|
-| OCG对象 | 属性：`name`、`state`；方法：`setAction` |
-| printParams对象 | 属性：`binaryOK`、`bitmapDPI`、`colorOverride`、`colorProfile`、`constants`、`downloadFarEastFonts`、`fileName`、`firstPage`、`flags`、`fontPolicy`、`gradientDPI`、`interactive`、`lastPage`、`pageHandling`、`pageSubset`、`printAsImage`、`printContent`、`printerName`、`psLevel`、`rasterFlags`、`reversePages`、`tileLabel`、`tileMark`、`tileOverlap`、`tileScale`、`transparencyLevel`、`usePrinterCRD`、`useT1Conversion` |
-| Report对象 | 属性：`style` |
+| `OCG`对象 | 属性：`name`、`state`；方法：`setAction` |
+| `printParams`对象 | 属性：`binaryOK`、`bitmapDPI`、`colorOverride`、`colorProfile`、`constants`、`downloadFarEastFonts`、`fileName`、`firstPage`、`flags`、`fontPolicy`、`gradientDPI`、`interactive`、`lastPage`、`pageHandling`、`pageSubset`、`printAsImage`、`printContent`、`printerName`、`psLevel`、`rasterFlags`、`reversePages`、`tileLabel`、`tileMark`、`tileOverlap`、`tileScale`、`transparencyLevel`、`usePrinterCRD`、`useT1Conversion` |
+| `Report`对象 | 属性：`style` |
 
 ## 新功能与变更
 
@@ -24593,16 +26143,16 @@ Acrobat 6.0 变更
 
 | 对象 | 属性/方法 |
 |---|---|
-| Search对象 | 属性：`docInfo`、`docText`、`docXMP`、`bookmarks`、`ignoreAsianCharacterWidth`、`jpegExif`、`legacySearch`、`markup`、`matchWholeWord`、`wordMatching` |
-| Security对象 | 方法：`chooseRecipientsDialog`、`getSecurityPolicies`、`importFromFile` |
-| SecurityHandler对象 | 属性：`digitalIDs`、`directories`、`directoryHandlers`、`signAuthor`、`signFDF`；方法：`newDirectory` |
-| SOAP对象 | 属性：`wireDump`；方法：`connect`、`request`、`response`、`streamDecode`、`streamEncode`、`streamFromString`、`stringFromStream` |
+| `Search`对象 | 属性：`docInfo`、`docText`、`docXMP`、`bookmarks`、`ignoreAsianCharacterWidth`、`jpegExif`、`legacySearch`、`markup`、`matchWholeWord`、`wordMatching` |
+| `Security`对象 | 方法：`chooseRecipientsDialog`、`getSecurityPolicies`、`importFromFile` |
+| `SecurityHandler`对象 | 属性：`digitalIDs`、`directories`、`directoryHandlers`、`signAuthor`、`signFDF`；方法：`newDirectory` |
+| `SOAP`对象 | 属性：`wireDump`；方法：`connect`、`request`、`response`、`streamDecode`、`streamEncode`、`streamFromString`、`stringFromStream` |
 
 ## 新功能与变更
 
 Acrobat 6.0 变更
 
-**Span对象**
+**`Span`对象**
 
 属性：
 `alignment`
@@ -24618,7 +26168,7 @@ Acrobat 6.0 变更
 `superscript`
 `underline`
 
-**Spell对象**
+**`Spell`对象**
 
 属性：
 `languages`
@@ -24631,7 +26181,7 @@ Acrobat 6.0 变更
 `customDictionaryOpen`
 `ignoreAll`
 
-**Thermometer对象**
+**`Thermometer`对象**
 
 属性：
 `cancelled`
@@ -24643,14 +26193,12 @@ Acrobat 6.0 变更
 `begin`
 `end`
 
-**Util对象**
+**`Util`对象**
 
 方法：
 `printd`
 `spansToXML`
 `xmlToSpans`
-
-
 
 ## 新特性与变更
 
@@ -24664,25 +26212,25 @@ Acrobat 6.0 变更
 
 | 对象 | 变更 |
 |---|---|
-| App 对象 | 方法：<br>`addMenuItem`<br>`alert`<br>`listMenuItems`<br>`listToolbarButtons`<br>`response` |
-| Doc 对象 | 属性：<br>`layout`<br>`zoomType`<br>方法：<br>`createDataObject`<br>`exportAsFDF`<br>`exportAsXFDF`<br>`exportDataObject`<br>`flattenPages`<br>`getField` (参见扩展方法)<br>`getURL`<br>`importDataObject`<br>`importIcon`<br>`print`<br>`saveAs`<br>`spawnPageFromTemplate`<br>`submitForm` |
-| Event 对象 | 属性：<br>`changeEx` |
-| Field 对象 | 属性：<br>`name`<br>方法：<br>`buttonImportIcon`<br>`signatureInfo`<br>`signatureSign`<br>`signatureValidate` |
-| Global 对象 | 持久化全局数据仅适用于 Boolean、Number 或 String 类型的变量。Acrobat 6.0 已将全局持久化变量的最大大小从 32 k 减少到 2-4 k。超过此限制添加的任何字符串数据都将被丢弃。 |
-| Search 对象 | 方法：`query` |
-| SecurityHandler 对象 | 以下内容在 Acrobat 5.0 中作为 **PPKLite 签名处理程序对象**的属性和方法引入。在 Acrobat 6.0 中，它们成为 [SecurityHandler 对象](https://example.com/SecurityHandler_Object)的属性和方法。所有这些都有新的描述，并且有些具有额外的参数。<br><br>**注意：**使用 JavaScript 方法签名时，用户的数字签名配置文件必须是 `.pfx` 文件，而不是先前版本 Acrobat 中使用的 `.apf`。要将 `.apf` 配置文件转换为新的 `.pfx` 类型，请使用 UI（**高级 > 管理数字 ID > 我的数字 ID 文件 > 选择我的数字 ID 文件**）导入 `.apf` 配置文件。<br><br>属性：<br>* `appearances`<br>* `isLoggedIn`<br>* `loginName`<br>* `loginPath`<br>* `name`<br>* `signInvisible`<br>* `signVisible`<br>* `uiName`<br><br>方法：<br>* `login`<br>* `logout`<br>* `newUser`<br>* `setPasswordTimeout` |
-| Template 对象 | 方法：`spawn` |
+| `App` 对象 | 方法：<br>`addMenuItem`<br>`alert`<br>`listMenuItems`<br>`listToolbarButtons`<br>`response` |
+| `Doc` 对象 | 属性：<br>`layout`<br>`zoomType`<br>方法：<br>`createDataObject`<br>`exportAsFDF`<br>`exportAsXFDF`<br>`exportDataObject`<br>`flattenPages`<br>`getField` (参见扩展方法)<br>`getURL`<br>`importDataObject`<br>`importIcon`<br>`print`<br>`saveAs`<br>`spawnPageFromTemplate`<br>`submitForm` |
+| `Event` 对象 | 属性：<br>`changeEx` |
+| `Field` 对象 | 属性：<br>`name`<br>方法：<br>`buttonImportIcon`<br>`signatureInfo`<br>`signatureSign`<br>`signatureValidate` |
+| `Global` 对象 | 持久化全局数据仅适用于 Boolean、Number 或 String 类型的变量。Acrobat 6.0 已将全局持久化变量的最大大小从 32 k 减少到 2-4 k。超过此限制添加的任何字符串数据都将被丢弃。 |
+| `Search` 对象 | 方法：`query` |
+| `SecurityHandler` 对象 | 以下内容在 Acrobat 5.0 中作为 **PPKLite 签名处理程序对象**的属性和方法引入。在 Acrobat 6.0 中，它们成为 [SecurityHandler 对象](https://example.com/SecurityHandler_Object)的属性和方法。所有这些都有新的描述，并且有些具有额外的参数。<br><br>**注意：**使用 JavaScript 方法签名时，用户的数字签名配置文件必须是 `.pfx` 文件，而不是先前版本 Acrobat 中使用的 `.apf`。要将 `.apf` 配置文件转换为新的 `.pfx` 类型，请使用 UI（**高级 > 管理数字 ID > 我的数字 ID 文件 > 选择我的数字 ID 文件**）导入 `.apf` 配置文件。<br><br>属性：<br>* `appearances`<br>* `isLoggedIn`<br>* `loginName`<br>* `loginPath`<br>* `name`<br>* `signInvisible`<br>* `signVisible`<br>* `uiName`<br><br>方法：<br>* `login`<br>* `logout`<br>* `newUser`<br>* `setPasswordTimeout` |
+| `Template` 对象 | 方法：`spawn` |
 
 ### 扩展方法
 
-Acrobat 6.0 中已扩展 `doc.getField` 方法，使其能够检索单个小部件的 `field` 对象。有关小部件及其使用方式的讨论，请参阅 [从 JavaScript 访问字段](https://example.com/FieldAccess)。
+Acrobat 6.0 中已扩展`doc.getField`方法，使其能够检索单个小部件的`field`对象。有关小部件及其使用方式的讨论，请参阅 [从 JavaScript 访问字段](https://example.com/FieldAccess)。
 
 ### 在 Acrobat 6.0 中已弃用
 
 | 对象 | 详情 |
 | :--- | :--- |
-| **Search 对象** | 属性：`soundex`、`thesaurus` |
-| **Spell 对象** | 方法：`addDictionary`、`removeDictionary` |
+| **`Search` 对象** | 属性：`soundex`、`thesaurus` |
+| **`Spell` 对象** | 方法：`addDictionary`、`removeDictionary` |
 
 ### 在 Acrobat 6.0.2 中引入
 
@@ -24690,91 +26238,91 @@ Acrobat 6.0 中已扩展 `doc.getField` 方法，使其能够检索单个小部�
 
 | 对象 |
 | :--- |
-| **XFAObject 对象** |
+| **`XFAObject` 对象** |
 
 下表列出了多媒体插件的对象、属性和方法。在 Acrobat 6.0.2 中，多媒体 JavaScript 在单独的文档“Acrobat Multimedia JavaScript Reference”中进行了记录。
 
 | 对象 | 详情 |
 | :--- | :--- |
-| **App 对象** | 属性：`media`、`monitors` |
+| **`App` 对象** | 属性：`media`、`monitors` |
 
-### App.media 对象
+### `App.media` 对象
 
 属性：
-- align
-- canResize
-- closeReason
-- defaultVisible
-- ifOffScreen
-- layout
-- monitorType
-- openCode
-- over
-- pageEventNames
-- raiseCode
-- raiseSystem
-- renditionType
-- status
-- trace
-- version
-- windowType
+- `align`
+- `canResize`
+- `closeReason`
+- `defaultVisible`
+- `ifOffScreen`
+- `layout`
+- `monitorType`
+- `openCode`
+- `over`
+- `pageEventNames`
+- `raiseCode`
+- `raiseSystem`
+- `renditionType`
+- `status`
+- `trace`
+- `version`
+- `windowType`
 
 方法：
-- addStockEvents
-- alertFileNotFound
-- alertSelectFailed
-- argsDWIM
-- canPlayOrAlert
-- computeFloatWinRect
-- constrainRectToScreen
-- createPlayer
-- getAltTextData
-- getAltTextSettings
-- getAnnotStockEvents
-- getAnnotTraceEvents
-- getPlayers
-- getPlayerStockEvents
-- getPlayerTraceEvents
-- getRenditionSettings
-- getURLData
-- getURLSettings
-- getWindowBorderSize
-- openPlayer
-- removeStockEvents
-- startPlayer
+- `addStockEvents`
+- `alertFileNotFound`
+- `alertSelectFailed`
+- `argsDWIM`
+- `canPlayOrAlert`
+- `computeFloatWinRect`
+- `constrainRectToScreen`
+- `createPlayer`
+- `getAltTextData`
+- `getAltTextSettings`
+- `getAnnotStockEvents`
+- `getAnnotTraceEvents`
+- `getPlayers`
+- `getPlayerStockEvents`
+- `getPlayerTraceEvents`
+- `getRenditionSettings`
+- `getURLData`
+- `getURLSettings`
+- `getWindowBorderSize`
+- `openPlayer`
+- `removeStockEvents`
+- `startPlayer`
 
 | 对象 | 属性与方法 |
 |---|---|
-| Doc 对象 | 属性：<br>innerAppWindowRect<br>innerDocWindowRect<br>media<br>outerAppWindowRect<br>outerDocWindowRect<br>pageWindowRect |
-| Doc.media 对象 | 属性：<br>canPlay<br>方法：<br>deleteRendition<br>getAnnot<br>getAnnots<br>getRendition<br>newPlayer |
-| Event 对象 | 用于多媒体的新 Screen 类型以及相关的事件名称。 |
-| Events 对象 | 方法：<br>add<br>dispatch<br>remove |
-| EventListener 对象 | 方法：<br>`afterBlur`<br>`afterClose`<br>`afterDestroy`<br>`afterDone`<br>`afterError`<br>`afterEscape`<br>`afterEveryEvent`<br>`afterFocus`<br>`afterPause`<br>`afterPlay`<br>`afterReady`<br>`afterScript`<br>`afterSeek`<br>`afterStatus`<br>`afterStop`<br>`onBlur`<br>`onClose`<br>`onDestroy`<br>`onDone`<br>`onError`<br>`onEscape`<br>`onEveryEvent`<br>`onFocus`<br>`onGetRect`<br>`onPause`<br>`onPlay`<br>`onReady`<br>`onScript`<br>`onSeek`<br>`onStatus`<br>`onStop` |
-| Marker 对象 | 属性：<br>`frame`<br>`index`<br>`name`<br>`time` |
-| Markers 对象 | 属性：<br>`player`<br>方法：<br>`get` |
-| MediaOffset 对象 | 属性：frame、marker、time |
-| MediaPlayer 对象 | 属性：annot、defaultSize、doc、events、hasFocus、id、innerRect、isOpen、isPlaying、markers、outerRect、page、settings、uiSize、visible<br>方法：close、open、pause、play、seek、setFocus、stop、triggerGetRect、where |
-| MediaReject 对象 | 属性：rendition |
-| MediaSelection 对象 | 属性：selectContext、players、rejects、rendition |
+| `Doc` 对象 | 属性：<br>`innerAppWindowRect`<br>`innerDocWindowRect`<br>`media`<br>`outerAppWindowRect`<br>`outerDocWindowRect`<br>`pageWindowRect` |
+| `Doc.media` 对象 | 属性：<br>`canPlay`<br>方法：<br>`deleteRendition`<br>`getAnnot`<br>`getAnnots`<br>`getRendition`<br>`newPlayer` |
+| `Event` 对象 | 用于多媒体的新 Screen 类型以及相关的事件名称。 |
+| `Events` 对象 | 方法：<br>`add`<br>`dispatch`<br>`remove` |
+| `EventListener` 对象 | 方法：<br>`afterBlur`<br>`afterClose`<br>`afterDestroy`<br>`afterDone`<br>`afterError`<br>`afterEscape`<br>`afterEveryEvent`<br>`afterFocus`<br>`afterPause`<br>`afterPlay`<br>`afterReady`<br>`afterScript`<br>`afterSeek`<br>`afterStatus`<br>`afterStop`<br>`onBlur`<br>`onClose`<br>`onDestroy`<br>`onDone`<br>`onError`<br>`onEscape`<br>`onEveryEvent`<br>`onFocus`<br>`onGetRect`<br>`onPause`<br>`onPlay`<br>`onReady`<br>`onScript`<br>`onSeek`<br>`onStatus`<br>`onStop` |
+| `Marker` 对象 | 属性：<br>`frame`<br>`index`<br>`name`<br>`time` |
+| `Markers` 对象 | 属性：<br>`player`<br>方法：<br>`get` |
+| `MediaOffset` 对象 | 属性：`frame`、`marker`、`time` |
+| `MediaPlayer` 对象 | 属性：`annot`、`defaultSize`、`doc`、`events`、`hasFocus`、`id`、`innerRect`、`isOpen`、`isPlaying`、`markers`、`outerRect`、`page`、`settings`、`uiSize`、`visible`<br>方法：`close`、`open`、`pause`、`play`、`seek`、`setFocus`、`stop`、`triggerGetRect`、`where` |
+| `MediaReject` 对象 | 属性：`rendition` |
+| `MediaSelection` 对象 | 属性：`selectContext`、`players`、`rejects`、`rendition` |
 
-### MediaSettings 对象
+### `MediaSettings` 对象
 
-属性：autoPlay、baseURL、bgColor、bgOpacity、endAt、data、duration、floating、layout、monitor、monitorType、page、palindrome、players、rate、repeat、showUI、startAt、visible、volume、windowType
+属性：`autoPlay`、`baseURL`、`bgColor`、`bgOpacity`、`endAt`、`data`、`duration`、`floating`、`layout`、`monitor`、`monitorType`、`page`、`palindrome`、`players`、`rate`、`repeat`、`showUI`、`startAt`、`visible`、`volume`、`windowType`
 
-### Monitor 对象
+### `Monitor` 对象
 
-属性：colorDepth、isPrimary、rect、workRect
+属性：`colorDepth`、`isPrimary`、`rect`、`workRect`
 
-### Monitors 对象
+### `Monitors` 对象
 
-方法：bestColor、bestFit、desktop、document、filter、largest、leastOverlap、mostOverlap、nonDocument、primary、secondary、select、tallest、widest
+方法：`bestColor`、`bestFit`、`desktop`、`document`、`filter`、`largest`、`leastOverlap`、`mostOverlap`、`nonDocument`、`primary`、`secondary`、`select`、`tallest`、`widest`
 
 | 对象 | 详情 |
 |---|---|
-| PlayerInfo 对象 | 属性：id、mimeTypes、name、version<br>方法：canPlay、canUseData |
-| PlayerInfoList 对象 | 方法：select |
-| Rendition 对象 | 属性：altText、doc、fileName、type、uiName<br>方法：getPlaySettings、select、testCriteria |
-| ScreenAnnot 对象 | 属性：altText、alwaysShowFocus、display、doc、events、extFocusRect、innerDeviceRect、noTrigger、outerDeviceRect、page、player、rect<br>方法：hasFocus、setFocus |
+| `PlayerInfo` 对象 | 属性：`id`、`mimeTypes`、`name`、`version`<br>方法：`canPlay`、`canUseData` |
+| `PlayerInfoList` 对象 | 方法：`select` |
+| `Rendition` 对象 | 属性：`altText`、`doc`、`fileName`、`type`、`uiName`<br>方法：`getPlaySettings`、`select`、`testCriteria` |
+| `ScreenAnnot` 对象 | 属性：`altText`、`alwaysShowFocus`、`display`、`doc`、`events`、`extFocusRect`、`innerDeviceRect`、`noTrigger`、`outerDeviceRect`、`page`、`player`、`rect`<br>方法：`hasFocus`、`setFocus` |
 
 ## Acrobat 5.0 变更
 
@@ -24782,109 +26330,107 @@ Acrobat 6.0 中已扩展 `doc.getField` 方法，使其能够检索单个小部�
 
 | 对象 | 详情 |
 |---|---|
-| ADBC 对象 | 方法：`getDataSourceList`、`newConnection` |
-| Annot 对象 | 属性：`alignment`、`AP`、`arrowBegin`、`arrowEnd`、`author`、`contents`、`doc`、`fillColor`、`hidden`、`modDate`、`name`、`noView`、`page`、`point`、`points`、`popupRect`、`print`、`rect`、`readOnly`、`rotate`、`strokeColor`、`textFont`、`type`、`soundIcon`、`width`<br>方法：`destroy`、`getProps`、`setProps` |
-| App 对象 | 属性：`activeDocs`、`fs`、`plugIns`、`viewerVariation`<br>方法：`addMenuItem`、`addSubMenu`、`clearInterval`、`clearTimeOut`、`listMenuItems`、`listToolbarButtons`、`newDoc`、`openDoc`、`popUpMenu`、`setInterval`、`setTimeOut` |
-| Bookmark 对象 | 属性：`children`、`color`、`doc`、`name`、`open`、`parent`、`style`<br>方法：`createChild`、`execute`、`insertChild`、`remove` |
-| Color 对象 | 方法：`convert`、`equal` |
-| Connection 对象 | 方法：`newStatement`、`getTableList`、`getColumnList` |
-| Data 对象 | 属性：<br>`creationDate`<br>`modDate`<br>`MIMEType`<br>`name`<br>`path`<br>`size` |
-| Doc 对象 | 属性：<br>`bookmarkRoot`<br>`disclosed` (5.0.5)<br>`icons`<br>`info`<br>`layout`<br>`securityHandler`<br>`selectedAnnots`<br>`sounds`<br>`templates`<br>`URL`<br><br>方法：<br>`addAnnot`<br>`addField`<br>`addIcon`<br>`addThumbnails`<br>`addWeblinks`<br>`bringToFront`<br>`closeDoc`<br>`createDataObject`<br>`createTemplate`<br>`deletePages`<br>`deleteSound`<br>`exportAsXFDF`<br>`exportDataObject`<br>`extractPages`<br>`flattenPages`<br>`getAnnot`<br>`getAnnots`<br>`getDataObject`<br>`getIcon`<br>`getPageBox`<br>`getPageLabel` |
-
-
+| `ADBC` 对象 | 方法：`getDataSourceList`、`newConnection` |
+| `Annot` 对象 | 属性：`alignment`、`AP`、`arrowBegin`、`arrowEnd`、`author`、`contents`、`doc`、`fillColor`、`hidden`、`modDate`、`name`、`noView`、`page`、`point`、`points`、`popupRect`、`print`、`rect`、`readOnly`、`rotate`、`strokeColor`、`textFont`、`type`、`soundIcon`、`width`<br>方法：`destroy`、`getProps`、`setProps` |
+| `App` 对象 | 属性：`activeDocs`、`fs`、`plugIns`、`viewerVariation`<br>方法：`addMenuItem`、`addSubMenu`、`clearInterval`、`clearTimeOut`、`listMenuItems`、`listToolbarButtons`、`newDoc`、`openDoc`、`popUpMenu`、`setInterval`、`setTimeOut` |
+| `Bookmark` 对象 | 属性：`children`、`color`、`doc`、`name`、`open`、`parent`、`style`<br>方法：`createChild`、`execute`、`insertChild`、`remove` |
+| `Color` 对象 | 方法：`convert`、`equal` |
+| `Connection` 对象 | 方法：`newStatement`、`getTableList`、`getColumnList` |
+| `Data` 对象 | 属性：<br>`creationDate`<br>`modDate`<br>`MIMEType`<br>`name`<br>`path`<br>`size` |
+| `Doc` 对象 | 属性：<br>`bookmarkRoot`<br>`disclosed` (5.0.5)<br>`icons`<br>`info`<br>`layout`<br>`securityHandler`<br>`selectedAnnots`<br>`sounds`<br>`templates`<br>`URL`<br><br>方法：<br>`addAnnot`<br>`addField`<br>`addIcon`<br>`addThumbnails`<br>`addWeblinks`<br>`bringToFront`<br>`closeDoc`<br>`createDataObject`<br>`createTemplate`<br>`deletePages`<br>`deleteSound`<br>`exportAsXFDF`<br>`exportDataObject`<br>`extractPages`<br>`flattenPages`<br>`getAnnot`<br>`getAnnots`<br>`getDataObject`<br>`getIcon`<br>`getPageBox`<br>`getPageLabel` |
 
 ## 新功能与变更
 
 Acrobat 5.0 变更
 
-- getPageNthWord
-- getPageNthWordQuads
-- getPageRotation
-- getPageTransition
-- getSound
-- importAnXFDF
-- importDataObject
-- importIcon
-- importSound
-- importTextData
-- insertPages
-- movePage
-- print
-- removeDataObject
-- removeField
-- removeIcon
-- removeTemplate
-- removeThumbnails
-- removeWeblinks
-- replacePages
-- saveAs
-- selectPageNthWord
-- setPageBoxes
-- setPageLabels
-- setPageRotations
-- setPageTransitions
-- submitForm
-- syncAnnotScan
+- `getPageNthWord`
+- `getPageNthWordQuads`
+- `getPageRotation`
+- `getPageTransition`
+- `getSound`
+- `importAnXFDF`
+- `importDataObject`
+- `importIcon`
+- `importSound`
+- `importTextData`
+- `insertPages`
+- `movePage`
+- `print`
+- `removeDataObject`
+- `removeField`
+- `removeIcon`
+- `removeTemplate`
+- `removeThumbnails`
+- `removeWeblinks`
+- `replacePages`
+- `saveAs`
+- `selectPageNthWord`
+- `setPageBoxes`
+- `setPageLabels`
+- `setPageRotations`
+- `setPageTransitions`
+- `submitForm`
+- `syncAnnotScan`
 
 事件对象
 
 属性：
 
-- changeEx
-- keyDown
-- targetName
+- `changeEx`
+- `keyDown`
+- `targetName`
 
 字段对象
 
 属性：
 
-- buttonAlignX
-- buttonAlignY
-- buttonPosition
-- buttonScaleHow
-- buttonScaleWhen
-- currentValueIndices
-- doNotScroll
-- doNotSpellCheck
-- exportValues
-- fileSelect
-- multipleSelection
-- rect
-- strokeColor
-- submitName
-- valueAsString
+- `buttonAlignX`
+- `buttonAlignY`
+- `buttonPosition`
+- `buttonScaleHow`
+- `buttonScaleWhen`
+- `currentValueIndices`
+- `doNotScroll`
+- `doNotSpellCheck`
+- `exportValues`
+- `fileSelect`
+- `multipleSelection`
+- `rect`
+- `strokeColor`
+- `submitName`
+- `valueAsString`
 
 方法：
 
-- browseForFileToSubmit
-- buttonGetCaption
-- buttonGetIcon
-- buttonSetCaption
-- buttonSetIcon
-- checkThisBox
-- defaultIsChecked
-- isBoxChecked
-- isDefaultChecked
-- setAction
-- signatureInfo
-- signatureSign
-- signatureValidate
+- `browseForFileToSubmit`
+- `buttonGetCaption`
+- `buttonGetIcon`
+- `buttonSetCaption`
+- `buttonSetIcon`
+- `checkThisBox`
+- `defaultIsChecked`
+- `isBoxChecked`
+- `isDefaultChecked`
+- `setAction`
+- `signatureInfo`
+- `signatureSign`
+- `signatureValidate`
 
 全屏对象
 
 属性：
 
-- backgroundColor
-- clickAdvances
-- cursor
-- defaultTransition
-- escapeExits
-- isFullScreen
-- loop
-- timeDelay
-- transitions
-- usePageTiming
-- useTimer
+- `backgroundColor`
+- `clickAdvances`
+- `cursor`
+- `defaultTransition`
+- `escapeExits`
+- `isFullScreen`
+- `loop`
+- `timeDelay`
+- `transitions`
+- `usePageTiming`
+- `useTimer`
 
 Acrobat JavaScript 脚本参考					673
 
@@ -24908,69 +26454,69 @@ Acrobat 5.0 变更
 
 属性：
 
-- absIndent
-- color
-- absIndent
+- `absIndent`
+- `color`
+- `absIndent`
 
 方法：
 
-- breakPage
-- divide
-- indent
-- outdent
-- open
-- mail
-- Report
-- save
-- writeText
+- `breakPage`
+- `divide`
+- `indent`
+- `outdent`
+- `open`
+- `mail`
+- `Report`
+- `save`
+- `writeText`
 
 搜索对象
 
 属性：
 
-- available
-- indexes
-- markup
-- maxDocs
-- proximity
-- refine
-- soundex
-- stem
+- `available`
+- `indexes`
+- `markup`
+- `maxDocs`
+- `proximity`
+- `refine`
+- `soundex`
+- `stem`
 
 方法：
 
-- addIndex
-- getIndexForPath
-- query
-- removeIndex
+- `addIndex`
+- `getIndexForPath`
+- `query`
+- `removeIndex`
 
 安全对象
 
 属性：
 
-- handlers
-- validateSignaturesOnOpen
+- `handlers`
+- `validateSignaturesOnOpen`
 
 方法：
 
-- getHandler
+- `getHandler`
 
 新功能与变更
 
 Acrobat 5.0 变更
 
-| 拼写对象 | 属性：available、dictionaryNames、dictionaryOrder、domainNames；方法：addDictionary、addWord、check、checkText、checkWord、removeDictionary、removeWord、userWords |
-| 语句对象 | 属性：columnCount、rowCount；方法：execute、getColumn、getColumnArray、getRow、nextRow |
-| 模板对象 | 属性：hidden、name；方法：spawn |
+| 拼写对象 | 属性：`available`、`dictionaryNames`、`dictionaryOrder`、`domainNames`；方法：`addDictionary`、`addWord`、`check`、`checkText`、`checkWord`、`removeDictionary`、`removeWord`、`userWords` |
+| 语句对象 | 属性：`columnCount`、`rowCount`；方法：`execute`、`getColumn`、`getColumnArray`、`getRow`、`nextRow` |
+| 模板对象 | 属性：`hidden`、`name`；方法：`spawn` |
 
 ### 在 Acrobat 5.0 中修改
 
 - 控制台可以充当编辑器并执行 JavaScript 代码。
 - 以下属性和方法已被更改或增强：
 
-| 应用程序对象 | language、execMenuItem |
-| 文档对象 | exportAsFDF、print、submitForm |
-| 事件对象 | type |
+| 应用程序对象 | `language`、`execMenuItem` |
+| 文档对象 | `exportAsFDF`、`print`、`submitForm` |
+| 事件对象 | `type` |
 
 - 与事件对象相关的章节已大幅增强，以便更好地理解 Acrobat JavaScript 事件模型。
 
@@ -24986,7 +26532,7 @@ Acrobat 5.0 变更
 ### 在 Acrobat 5.05 中修改
 
 - 在快捷栏中添加了一个新符号，用于表示 Acrobat™ Approval™ 中缺少哪些方法。
-- 在文档对象中，添加了 disclosed 属性。
+- 在文档对象中，添加了 `disclosed` 属性。
 
 ### 在 Adobe 5.1 Reader 中修改
 
@@ -24997,9 +26543,9 @@ Acrobat 5.0 变更
 
 Adobe 5.1 Reader 对以下属性和方法的访问权限已更改：
 
-| 批注对象 | 属性：alignment、AP、arrowBegin、arrowEnd、author、contents、doc、fillColor、hidden、modDate、name、noView、page、point、points、popupRect、print、rect、readOnly、rotate、strokeColor、textFont、type、soundIcon、width；方法：destroy、getProps、setProps |
-| 文档对象 | 属性：selectedAnnots；方法：addAnnot、addField、exportAsFDF、exportAsXFDF、getAnnot、getAnnots、getNthTemplate、importAnFDF、importAnXFDF、importDataObject、mailDoc、mailForm、spawnPageFromTemplate、submitForm、syncAnnotScan |
-| 模板对象 | 方法：spawn |
+| 批注对象 | 属性：`alignment`、`AP`、`arrowBegin`、`arrowEnd`、`author`、`contents`、`doc`、`fillColor`、`hidden`、`modDate`、`name`、`noView`、`page`、`point`、`points`、`popupRect`、`print`、`rect`、`readOnly`、`rotate`、`strokeColor`、`textFont`、`type`、`soundIcon`、`width`；方法：`destroy`、`getProps`、`setProps` |
+| 文档对象 | 属性：`selectedAnnots`；方法：`addAnnot`、`addField`、`exportAsFDF`、`exportAsXFDF`、`getAnnot`、`getAnnots`、`getNthTemplate`、`importAnFDF`、`importAnXFDF`、`importDataObject`、`mailDoc`、`mailForm`、`spawnPageFromTemplate`、`submitForm`、`syncAnnotScan` |
+| 模板对象 | 方法：`spawn` |
 
 ## 安全与技术说明
 
@@ -25016,7 +26562,7 @@ Acrobat 采取的安全措施涉及所有将数据写入本地硬盘驱动器的
 
 对于许多相关方法，文件名必须具有与要保存的数据类型相匹配的扩展名；某些方法可能有禁止覆盖的限制。这些附加限制在文档中注明。
 
-通常，当路径被判定为“不安全”时，会抛出 `NotAllowedError`（参见[错误对象](https://example.com)）异常，并且方法会失败。
+通常，当路径被判定为“不安全”时，会抛出`NotAllowedError`（参见[错误对象](https://example.com)）异常，并且方法会失败。
 
 ### 特权上下文与非特权上下文
 
@@ -25024,7 +26570,7 @@ Acrobat 采取的安全措施涉及所有将数据写入本地硬盘驱动器的
 
 从 Acrobat 7.0 开始，菜单事件不再被视为特权事件，请参阅下文“通过菜单执行 JavaScript”段落。
 
-在 Acrobat 7.0 中，引入了受信任函数的概念。受信任函数允许特权代码（通常需要特权上下文才能执行的代码）在*非特权*上下文中执行。有关详细信息和示例，请参阅 `app.trustedFunction()`。
+在 Acrobat 7.0 中，引入了受信任函数的概念。受信任函数允许特权代码（通常需要特权上下文才能执行的代码）在*非特权*上下文中执行。有关详细信息和示例，请参阅`app.trustedFunction()`。
 
 1. 从版本 6.0 开始，此陈述有一个例外。只要文档经过文档作者认证用于嵌入式 JavaScript，安全受限方法就可以在非特权上下文中执行。有关安全性的更多详细信息，请参阅快捷栏[第 3 列](https://example.com)的描述。
 
@@ -25035,13 +26581,13 @@ Acrobat 采取的安全措施涉及所有将数据写入本地硬盘驱动器的
 从 Acrobat 7.0 开始，通过菜单事件执行 JavaScript 不再是特权操作。要通过菜单事件执行安全受限方法（Ⓢ），以下条件之一必须为真：
 
 1. 在 **编辑 > 首选项 > 常规 > JavaScript** 下，必须选中标记为“启用菜单项 JavaScript 执行权限”的项目。
-2. 该方法必须通过受信任的函数执行。有关详细信息和示例，请参阅 `app.trustedFunction()`。
+2. 该方法必须通过受信任的函数执行。有关详细信息和示例，请参阅`app.trustedFunction()`。
 
 还应查阅标题为[特权上下文与非特权上下文](Privileged versus Non-privileged Context)的段落。
 
 **字节码以提高性能**
 
-在 Acrobat 7.0 之前的版本中，JavaScript 文件 `AForm.js`、`ADBC.js`、`Annots.js`、`AnWizard.js`、`media.js` 和 `SOAP.js` 位于 App JavaScript 文件夹中。从 Acrobat 7.0 开始，这些文件将不会随 Acrobat Professional、Acrobat Standard 或 Adobe Reader 一起分发。取而代之的是使用预编译的字节码以提高性能。App 文件夹中的 `debugger.js` 文件不包含在字节码中。
+在 Acrobat 7.0 之前的版本中，JavaScript 文件`AForm.js`、`ADBC.js`、`Annots.js`、`AnWizard.js`、`media.js`和`SOAP.js`位于 App JavaScript 文件夹中。从 Acrobat 7.0 开始，这些文件将不会随 Acrobat Professional、Acrobat Standard 或 Adobe Reader 一起分发。取而代之的是使用预编译的字节码以提高性能。App 文件夹中的`debugger.js`文件不包含在字节码中。
 
 用户 JavaScript 文件夹中的文件不会包含在预编译的字节码文件中。
-Acrobat 建议用户将自己的 `.JS` 文件放在用户 JavaScript 文件夹中，与 `glob.js` 位于同一位置。设置菜单项（`addMenuItem`）的 JavaScript 代码应放在用户 JavaScript 文件夹中的 `config.js` 中。可以通过从控制台执行 `app.getPath("user", "javascript")` 以编程方式找到此文件夹的位置。
+Acrobat 建议用户将自己的`.JS`文件放在用户 JavaScript 文件夹中，与`glob.js`位于同一位置。设置菜单项（`addMenuItem`）的 JavaScript 代码应放在用户 JavaScript 文件夹中的`config.js`中。可以通过从控制台执行`app.getPath("user", "javascript")`以编程方式找到此文件夹的位置。

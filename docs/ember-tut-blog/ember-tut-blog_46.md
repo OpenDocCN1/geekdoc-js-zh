@@ -1,8 +1,10 @@
-# Ember.js 入门指南之四十新建、更新、删除记录
 
-前一篇介绍了查询方法，本篇介绍新建、更新、删除记录的方法。 本篇的示例代码创建在上一篇的基础上。对于整合[firebase](http://www.firebase.com)、创建`route`和`template`请参看上一篇，增加一个 controller：`ember g controller articles`。
 
-## 1，新建记录
+# Ember.js 入门指南之四十：新建、更新、删除记录
+
+前一篇介绍了查询方法，本篇介绍新建、更新、删除记录的方法。本篇的示例代码创建在上一篇的基础上。对于整合 [firebase](http://www.firebase.com)、创建`route`和`template`请参看上一篇，增加一个 controller：`ember g controller articles`。
+
+## 1. 新建记录
 
 创建新的记录使用`createRecord()`方法。比如下面的代码新建了一个`aritcle`记录。修改模板，在模板上增加几个`input`输入框用于输入`article`信息。
 
@@ -189,9 +191,9 @@ export default Ember.Controller.extend({
 
 ![firebase 数据截图](img/09e51b58e585bbd457a8c27800a4c57d.jpg)
 
-注意点：与这两个数据的关联是通过数据的`id`维护的。 那么如果我要通过`article`获取`user`的信息要怎么获取呢？
+注意点：与这两个数据的关联是通过数据的`id`维护的。那么如果我要通过`article`获取`user`的信息要怎么获取呢？
 
-直接以面向对象的方式获取既可。
+直接以面向对象的方式获取即可。
 
 ```js
 {{#each model as |item|}}
@@ -204,7 +206,7 @@ export default Ember.Controller.extend({
 {{/each}} 
 ```
 
-注意看助手`{{ item.author.username }}`。很像 EL 表达式吧！！ 前面提到过有两个方式设置两个模型的关联关系。下面的代码是第二种方式：
+注意看助手`{{ item.author.username }}`。很像 EL 表达式吧！！前面提到过有两个方式设置两个模型的关联关系。下面的代码是第二种方式：
 
 ```js
 //  其他代码省略……
@@ -240,9 +242,9 @@ article.set('author', store.findRecord('user', 1));
 
 这种方式可以直接动态根据 user 的 id 属性值获取到记录，再设置关联关系。新增介绍完了，接着介绍记录的更新。
 
-## 2，更新记录
+## 2. 更新记录
 
-更新相对于新增来说非常相似。请看下面的代码段： 首先在模板上增加更新的设置代码，修改子模板`articles/article.hbs`：
+更新相对于新增来说非常相似。请看下面的代码段：首先在模板上增加更新的设置代码，修改子模板`articles/article.hbs`：
 
 ```js
 <!--  app/templates/articles/article.hbs  -->
@@ -298,31 +300,34 @@ export default Ember.Controller.extend({
 
 由于`save`、`findRecord`方法返回值是一个`promises`对象，所以你还可以针对出错情况进行处理。比如下面的代码：
 
+
+
+
 ```js
-var user = this.store.createRecord('user', {  
-    //  ……
+var user = this.store.createRecord('user', {
+    // ……
 });
-user.save().then(function(fulfill) {  
-    //  保存成功
+user.save().then(function(fulfill) {
+    // 保存成功
 }).catch(function(error) {
-    //  保存失败
+    // 保存失败
 });
 
-this.store.findRecord('article', params).then(function(art) {  
-    //  ……
+this.store.findRecord('article', params).then(function(art) {
+    // ……
 }).catch(function(error) {
-    //  出错处理代码
-}); 
+    // 出错处理代码
+});
 ```
 
-具体代码我就不演示了，请读者自己编写测试吧！！
+具体代码我就不演示了，请读者自己编写测试吧！
 
-## 3，删除记录
+## 3. 删除记录
 
-既然有了新增那么通常就会有删除。记录的删除与修改非常类似，也是首先查询出要删除的数据，然后执行删除。
+既然有了新增，那么通常就会有删除。记录的删除与修改非常类似，也是首先查询出要删除的数据，然后执行删除。
 
 ```js
-//   app/controllers/articles.js
+// app/controllers/articles.js
 
 import Ember from 'ember';
 
@@ -330,16 +335,17 @@ export default Ember.Controller.extend({
 
     actions: {
 
-        //  表单提交，保存数据到 Store。Store 会自动更新到 firebase
+        // 表单提交，保存数据到 Store。Store 会自动更新到 firebase
         saveItem: function() {
             // 省略
         },
-        //  根据 id 属性值删除数据
-        delById : function(params) {
 
-            //  任意获取一个作为判断表单输入值
+        // 根据 id 属性值删除数据
+        delById: function(params) {
+
+            // 任意获取一个作为判断表单输入值
             if (params && confirm("你确定要删除这条数据吗？?")) {
-                //  执行删除
+                // 执行删除
                 this.store.findRecord('article', params).then(function(art) {
                     art.destroyRecord();
                     alert('删除成功！');
@@ -349,25 +355,24 @@ export default Ember.Controller.extend({
             } else {
                 return;
             }
-
         }
     }
-}); 
+});
 ```
 
 修改显示数据的模板，增加删除按钮，并传递数据的`id`值到`controller`。
 
 ```js
-<!--  app/templates/articles.hbs  -->
+<!-- app/templates/articles.hbs -->
 
-<div class="container">  
+<div class="container">
     <div class="row">
         <div class="col-md-4 col-xs-4">
             <ul class="list-group">
             {{#each model as |item|}}
                 <li class="list-group-item">
-                    <!--设置路由，路由的层级与 router.js 里定义的要一致 -->
-                     {{#link-to 'articles.article' item.id}}
+                    <!-- 设置路由，路由的层级与 router.js 里定义的要一致 -->
+                    {{#link-to 'articles.article' item.id}}
                         {{item.title}} -- <small>{{item.category}}</small> -- <small>{{item.author.username}}</small>
                     {{/link-to}}
                     <button {{action 'delById' item.id}}>删除</button>
@@ -376,15 +381,15 @@ export default Ember.Controller.extend({
             </ul>
         // ……省略其他代码
     </div>
-</div> 
+</div>
 ```
 
 ![截图](img/3e9638fe255eefe53d64db0b787a24f4.jpg)
 
-结果如上图，点击第二条数据删除按钮。弹出提示窗口，点击“确定”之后成功删除数据，并弹出“删除成功！”，到 firebase 后台查看数据，确实已经删除成功。 然而与此关联的 user 却没有删除，正常情况下也应该是不删除关联的 user 数据的。 最终结果只剩下一条数据：
+结果如上图，点击第二条数据删除按钮，弹出提示窗口。点击“确定”之后成功删除数据，并弹出“删除成功！”。到`firebase`后台查看数据，确实已经删除成功。然而与此关联的`user`却没有删除，正常情况下也应该是不删除关联的`user`数据的。最终结果只剩下一条数据：
 
 ![截图](img/226f7c55127bddb638f52230708595cf.jpg)
 
 到此，有关新增、更新、删除的方法介绍完毕。已经给出了详细的演示实例，我相信，如果你也亲自在自己的项目中实践过，那么掌握这几个方法是很容易的！
 
-博文完整代码放在[Github](https://github.com/ubuntuvim/my_emberjs_code)（博文经过多次修改，博文上的代码与 github 代码可能有出入，不过影响不大！），如果你觉得博文对你有点用，请在 github 项目上给我点个`star`吧。您的肯定对我来说是最大的动力！！
+博文完整代码放在[Github](https://github.com/ubuntuvim/my_emberjs_code)（博文经过多次修改，博文上的代码与 Github 代码可能有出入，不过影响不大！）。如果你觉得博文对你有点用，请在 Github 项目上给我点个`star`吧。您的肯定对我来说是最大的动力！！

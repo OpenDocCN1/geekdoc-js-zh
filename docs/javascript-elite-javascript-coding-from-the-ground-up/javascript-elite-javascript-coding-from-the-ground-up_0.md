@@ -1,12 +1,5 @@
+
 # JavaScript：从零开始的高级 JavaScript 编程
-
-
-
-![](img/00004.jpeg)
-
-
-
-
 
 ## 引言
 
@@ -26,12 +19,12 @@
 
 编程范式是一种根据其提供的特征对编程语言进行分类的模型。它是构建语言结构和元素的基本风格。编程语言的风格和能力由其范式定义。一种语言甚至可以实现多种范式。例如，Haskell 只使用单一范式来定义其本身，即函数式编程。JavaScript 支持函数式、面向对象和命令式编程风格。不同的编程范式包括：
 
-- 命令式 (Imperative)
-- 面向对象式 (Object-oriented)
-- 逻辑式 (Logic)
-- 符号式 (Symbolic)
-- 声明式 (Declarative)
-- 函数式 (Functional)
+- 命令式
+- 面向对象式
+- 逻辑式
+- 符号式
+- 声明式
+- 函数式
 
 为什么我们这么多范式？这个基础问题的答案是因为有很多问题需要解决，而不同的范式在处理特定问题组时效率更高。面向对象范式处理复杂性的良好方法，而通过使用函数范式可以避免并发问题。很容易理解，在大多数情况下，多范式语言会胜过单一范式语言。
 
@@ -43,7 +36,7 @@
 
 面向对象编程是一种编程语言模型，它关注的是对象而不是执行操作，关注的是数据而不是涉及的逻辑。在这样的编程风格中，程序员只关心对象的实现。在这里，对象可以是从人类到恐龙、从砖块到建筑，以及你能想到的任何东西。每个对象都有一组关联的数据，以及可以用于操作它的不同方法。例如，让我们把汽车比作对象。汽车有颜色、尺寸、座椅数量等作为其数据，而移动、停止和启动可以被视为与汽车相关的方法。
 
-程序中实现它时会出现大问题。我们首先识别将要使用的所有对象，以及它们彼此之间的关系；这被称为数据建模。第二步是将对象泛化为对象的类（class），它定义了与其关联的数据以及对象的不同方法/能力。
+程序中实现它时会出现大问题。我们首先识别将要使用的所有对象，以及它们彼此之间的关系；这被称为数据建模。第二步是将对象泛化为对象的类（`class`），它定义了与其关联的数据以及对象的不同方法/能力。
 
 面向对象编程的概念为我们带来了这些益处：
 
@@ -57,22 +50,18 @@
 在前面的章节中，我们简要学习了面向对象语言的不同概念。当我们直接关注其在感兴趣的语言（即 JavaScript，它是动态的）中的实现时，我们只关注继承和封装。那么，我们为什么不关心多态呢？JavaScript 作为一种动态类型编程语言，使得观察多态的效应变得困难得多，因为它在 C 或 C++ 等静态类型语言中更为明显。在 JavaScript 中讨论方法重载或函数重载没有意义，因为我们在编写代码时没有指定任何数据类型。因此，机器无法区分同一个函数的两个定义。在 JavaScript 中，许多概念都是通过函数实现的。面向对象编码也不例外。实例是函数的实现。
 
 ```javascript
-function child(name){
+function child(name) {
     // 此处编写代码
 } // child 是一个构造函数，因为我们将使用 “new” 关键字来调用它。
 ```
 
-现在，这看起来类似于 Java 等语言，我们使用 new 关键字来创建实例。
+现在，这看起来类似于 Java 等语言，我们使用 `new` 关键字来创建实例。
 
 ```javascript
 var aditya = new child("aditya"); // Aditya 是 child 的一个实例
 ```
 
-
-
-
-
-```
+```javascript
 alert(typeof(aditya)); //displays "object"
 ```
 
@@ -82,9 +71,9 @@ alert(typeof(aditya)); //displays "object"
 
 ```javascript
 var student = {
-    name: “ritesh”,
-    age: “19”,
-    branch: “cse”
+    name: "ritesh",
+    age: "19",
+    branch: "cse"
 };
 ```
 
@@ -93,13 +82,13 @@ var student = {
 第二种方法是使用构造函数模式。例如：
 
 ```javascript
-function student (name, age, branch) {
-this.name = name;
-this.age = age;
-this.branch = branch;
-} // student () 是构造函数，因为我们在下面使用了 new 关键字来调用它。
+function student(name, age, branch) {
+    this.name = name;
+    this.age = age;
+    this.branch = branch;
+} // student() 是构造函数，因为我们在下面使用了 new 关键字来调用它。
 
-var rahul = new student(“rahul”, 19 , “cse”) // Rahul 是我们从 student () 构造函数创建的一个新对象。
+var rahul = new student("rahul", 19, "cse"); // Rahul 是我们从 student() 构造函数创建的一个新对象。
 
 console.log(rahul.name); // Rahul
 console.log(student.branch); // cse
@@ -110,17 +99,17 @@ console.log(student.branch); // cse
 第三种也是最后一种方法是使用原型模式，正如方法名所示，我们直接将每个属性和方法添加到对象的原型上。例如：
 
 ```javascript
-function student ()
-{
-student.prototype.firstName = "Ritesh";
-student.prototype.lastName = "Kumar";
-student.prototype.age =19;
-student.prototype.branch = “cse”;
-student.prototype.fullName = function () {
-console.log (this.firstName + " " + this.lastName);
-};
+function student() {
+    student.prototype.firstName = "Ritesh";
+    student.prototype.lastName = "Kumar";
+    student.prototype.age = 19;
+    student.prototype.branch = "cse";
+    student.prototype.fullName = function() {
+        console.log(this.firstName + " " + this.lastName);
+    };
+}
 
-var ritest = new student () // 使用 new 关键字创建 student 的实例
+var ritest = new student(); // 使用 new 关键字创建 student 的实例
 
 console.log(ritesh.fullName()); // 这将在浏览器控制台中输出值“Ritesh Kumar”
 ```
@@ -138,10 +127,10 @@ console.log(ritesh.fullName()); // 这将在浏览器控制台中输出值“Rit
 JavaScript 中的实际实现使用了构造函数和原型方法的结合。例如：
 
 ```javascript
-function student (name, age, branch) {
+function student(name, age, branch) {
     this.name = name;
     this.age = age;
-    this.branch= branch;
+    this.branch = branch;
     this.marks = [];
 }
 ```
@@ -150,27 +139,27 @@ function student (name, age, branch) {
 
 ```javascript
 student.prototype = {
-    showName:function () {
+    showName: function() {
         return this.name;
     },
-    addMarks:function (mark) {
+    addMarks: function(mark) {
         this.marks.push(mark);
     }
-}
+};
 ```
 
 在这里我们完成了定义对象的代码编写。下一个任务是创建我们刚刚创建的对象实例。
 
 ```javascript
 // 对象的第一个实例
-rishabh = new student("rishabh", 20, “cse”);
+rishabh = new student("rishabh", 20, "cse");
 rishabh.addMarks(98); // 向 marks 数组中添加 98
-rishabh.showName();  //返回“rishabh”
+rishabh.showName(); // 返回“rishabh”
 
 // 另一个实例
-mitul = new student("Mitul", 19, “mechanical”);
+mitul = new student("Mitul", 19, "mechanical");
 mitul.addMarks(100); // 向 marks 数组中添加 100
-mitul.showName (); // 返回“mitul”
+mitul.showName(); // 返回“mitul”
 ```
 
 通过上面的示例，掌握封装的重要性和益处可能非常清晰了。我们将 `student` 的所有数据和功能封装到一个函数中，稍后创建了它的实例（`rishabh` 和 `mitul`），它们共享与学生相同的属性。这减少了重复为相似对象实例定义每个属性的所有工作。
@@ -187,12 +176,12 @@ mitul.showName (); // 返回“mitul”
 
 ```javascript
 var car = {
-    Color: “black”,
-    Seats: “4”
+    Color: "black",
+    Seats: "4"
 };
 
 // 继承 car 对象
-var myCar = Object.create (cars); // 现在 myCar 继承了 car 的属性
+var myCar = Object.create(car); // 现在 myCar 继承了 car 的属性
 console.log(myCar.color); // black
 ```
 
@@ -212,7 +201,7 @@ function inheritPrototype(child, parent) {
 
 ```javascript
 var audi = {
-    name = “audi”
+    name: "audi"
 };
 
 inheritPrototype(audi, car);
@@ -226,24 +215,21 @@ inheritPrototype(audi, car);
 
 如果你在全局作用域中使用它，它将引用 `window` 对象。`window` 对象是 JS 中唯一的全局可用对象。
 
-
-
-
 因此，在全局作用域执行 `console.log(this)` 的结果将返回 `window` 对象。
 
 为了更好地理解 `this`，让我们定义如下一个对象：
 
 ```javascript
 var obj = {
-  someProperty1: “Hi”,
-  someProperty2: function(name) {
-    // 在这里 ‘this’ 将作用域到 obj 对象，因为它是当前的局部作用域
-    // 在该作用域中存在 window 对象
-    return this.someProperty1 + name;
-  }
-}
+    someProperty1: "Hi",
+    someProperty2: function(name) {
+        // 在这里 ‘this’ 将作用域到 obj 对象，因为它是当前的局部作用域
+        // 在该作用域中存在 window 对象
+        return this.someProperty1 + name;
+    }
+};
 
-var myObj = obj.someProperty2(“ John”);
+var myObj = obj.someProperty2(" John");
 console.log(myObj); // === “Hi John”
 ```
 
@@ -255,13 +241,13 @@ console.log(myObj); // === “Hi John”
 
 ```javascript
 function obj(name) {
-  this.name = name;
-  this.someMethod = function() {
-    console.log(this.name);
-  }
+    this.name = name;
+    this.someMethod = function() {
+        console.log(this.name);
+    };
 }
 
-var myObj = new obj(“John”);
+var myObj = new obj("John");
 myObj.someMethod(); // === John
 ```
 
@@ -269,7 +255,7 @@ myObj.someMethod(); // === John
 
 ```javascript
 var obj = function() {
-  return this.a + this.b;
+    return this.a + this.b;
 };
 
 var myObj = Object(obj);
@@ -290,47 +276,57 @@ JSON 或 JavaScript Object Notation（JavaScript 对象表示法），最初由 
 
 JSON 是一种轻量级格式，人类容易理解，也便于机器解析。它是语言无关的，这意味着它不仅局限于用于 JavaScript，尽管 JSON 使用了 JavaScript 语法，但由于该格式仅为文本，它可以被任何编程语言读取和使用。它的文件扩展名为 `.json`。由于其易于解析的特性，JSON 广泛优于如 `XML` 等其他数据传输表示。
 
-## JSON 语法
+### JSON 语法
 
 JSON 语法与 JavaScript 语法相似，细微区别在于键（keys）必须是用双引号 “ ” 写的字符串，包含以下表示法：
 
 1. 交换的数据应该以名称（Name）和值（Value）成对的形式存在。每个名称都有一个对应的值，可以通过 JavaScript 对象通过其名称进行访问。
-   示例：`“name”: “Mark”`
+
+   示例：`"name": "Mark"`
 
 2. 对象被放在大括号 `{ }` 中。每个名称字段后跟着一个冒号 `:`，然后是它的值。每个键值对后面都跟着一个逗号 `,`，以防用户想要输入另一个键值对。
-   示例：`{ “name”: “Mark”, “age”: “20” }`
+
+   示例：`{ "name": "Mark", "age": "20" }`
 
 3. 这些对象的数组包含在方括号 `[ ]` 中，数组中的每个对象本身用逗号隔开。
-   示例：`[ { “name”: “Mark”, “age”: “20” }, { “name”: “Anthony”, “age”: “40”}]`
 
-## 数据类型
+   示例：`[ { "name": "Mark", "age": "20" }, { "name": "Anthony", "age": "40" } ]`
+
+### 数据类型
 
 JSON 可以具有以下数据类型的值：
 
 1. **Number（数字）** - 在 JSON 中，使用的数字必须是整数或浮点数。
-   示例：`{ “age”: 20 }`
+
+   示例：`{ "age": 20 }`
 
 2. **String（字符串）**
-   示例：`{ “firstName”: “Mark” }`
+
+   示例：`{ "firstName": "Mark" }`
 
 3. **Boolean（布尔值）**
-   示例：`{ “vegetarian”: true }`
+
+   示例：`{ "vegetarian": true }`
 
 4. **Array（数组）**
-   示例：`{ “children”: [“Henry”, “Emma”, “Joe”] }`
+
+   示例：`{ "children": ["Henry", "Emma", "Joe"] }`
 
 5. **另一个 JSON 对象**
-   示例：`{ “details”: { “lastName”: “Lucas”, “bankAccount”: “savings” } }`
+
+   示例：`{ "details": { "lastName": "Lucas", "bankAccount": "savings" } }`
 
 6. **Null（空）**
-   示例：`{ “middleName”: null }`
+
+   示例：`{ "middleName": null }`
 
 **注意：** 不要将 JSON 数据类型与 JavaScript 数据类型混淆。不要使用以下任何数据类型：
+
 1. 函数
 2. 日期
 3. `undefined`
 
-## JSON 中的对象
+### JSON 中的对象
 
 可以使用点 `.` 表示法按照如下方式访问 JSON 对象的值：
 
@@ -338,8 +334,8 @@ JSON 可以具有以下数据类型的值：
 
 ```javascript
 var fullName = {
-  “firstName”: “Mark”,
-  “lastName”: “Anthony”
+    "firstName": "Mark",
+    "lastName": "Anthony"
 };
 
 var firstname = fullName.firstName;
@@ -348,59 +344,60 @@ var firstname = fullName.firstName;
 另一种方法是使用方括号 `[ ]` 表示法：
 
 ```javascript
-var firstname = fullName[“firstName”];
+var firstname = fullName["firstName"];
 ```
 
 同样，我们可以通过逐层向下移动名称来访问嵌套的 JSON 对象。
 
 示例：
+
 ```javascript
 var fullName = {
-  “name”: {
-    “firstName”: “Mark”,
-    “lastName”: “Anthony”
-  },
-  “age”: 25,
-  “profession”: “Business”
-} // 注意：原文此处缺少闭合大括号，已在翻译中补全逻辑
+    "name": {
+        "firstName": "Mark",
+        "lastName": "Anthony"
+    },
+    "age": 25,
+    "profession": "Business"
+};
 
 var firstname = fullName.name.firstName;
 ```
-（注：此处根据上下文逻辑修正了示例代码的结构）
 
 值也可以通过点或方括号表示法通过简单等值所需的键来设置：
 
 示例：`fullName.name.firstName = "New"` 或 `fullName["name"]["firstName"] = "New"`
 
-## JSON 中的数组
+### JSON 中的数组
 
 同样，我们可以通过逐层向下移动名称来访问嵌套的 JSON 对象。
 
 示例：
+
 ```javascript
 var fullName = {
-  “name”: {
-    “firstName”: “Mark”,
-    “lastName”: “Anthony”
-  },
-  “age”: 25,
-  “profession”: “Business”
-}
+    "name": {
+        "firstName": "Mark",
+        "lastName": "Anthony"
+    },
+    "age": 25,
+    "profession": "Business"
+};
 
 var firstname = fullName.name.firstName;
 ```
 
-## JSON 方法
+### JSON 方法
 
 从服务器接收到客户端的 JSON 数据始终是字符串。由于我们需要 JavaScript 对象来访问键，因此使用 `JSON.parse()` 方法解析 JSON 数据。
 
-示例：`JSON.parse('{ “children”: { “Henry”, “Emma”, “Joe” } }’`
+示例：`JSON.parse('{ "children": { "Henry", "Emma", "Joe" } }')`
 
 **注意：** 必须是 JSON 格式以避免语法错误。
 
 同样，从客户端发送到服务器的 JSON 数据必须是字符串。由于我们的数据是 JavaScript 对象，我们需要将其转换为字符串。使用 `JSON.stringify()` 方法将 JSON 对象转换为字符串。
 
-示例：`JSON.stringify({ “children”: { “Henry”, “Emma”, “Joe” } });`
+示例：`JSON.stringify({ "children": { "Henry", "Emma", "Joe" } });`
 
 ## 第 4 章：同步与异步 JavaScript
 
@@ -411,9 +408,6 @@ var firstname = fullName.name.firstName;
 在编程术语中，同步行为意味着代码按照其编写的顺序执行，而异步意味着代码不一定按照其编写的顺序执行。
 
 让我们通过现实生活场景来理解这一点。
-
-
-
 
 想象一下你正在通过电话订披萨，但披萨店只有一个人能接听。如果你在你拨号时，也有人正在通过电话下单，你就会听到占线音。你必须等待当前的通话结束才能下订单，而在等待期间你不能做任何其他事情！这种场景展示了**同步（synchronous）**行为，即在当前任务完成之前，你无法进入下一个任务。
 
@@ -446,7 +440,7 @@ you
 ```javascript
 console.log('how');
 setImmediate(function() {
-console.log('are');
+    console.log('are');
 });
 console.log('you');
 ```
@@ -468,8 +462,8 @@ are
 假设你有一个非常长的循环。假设循环是：
 
 ```javascript
-for( var i = 0; i < 99999999; i++) {
-// 在这里执行某些任务
+for (var i = 0; i < 99999999; i++) {
+    // 在这里执行某些任务
 }
 ```
 
@@ -477,8 +471,8 @@ for( var i = 0; i < 99999999; i++) {
 
 ```javascript
 function longLoop(i) {
-// 在这里执行某些任务
-if( i < 99999999) setImmediate(longLoop, i + 1); // 增加 i 的值并再次调用函数以创建循环
+    // 在这里执行某些任务
+    if (i < 99999999) setImmediate(longLoop, i + 1); // 增加 i 的值并再次调用函数以创建循环
 }
 
 setImmediate(longLoop, 0); // 开始循环
@@ -494,9 +488,9 @@ JavaScript 中的 `Promises` 为管理异步请求提供了替代方案。另一
 
 你可以将 JavaScript 中的 `promises` 理解为你在现实生活中做出的承诺。例如，如果你的朋友承诺在今天结束前代你完成家庭作业呢？他要么已经为你做完了作业，要么没有完成。他的承诺只有几种固定的结果，对吧？同样，JavaScript 中的 `promises` 可以有三种状态：
 
--   **Pending（待定中）**：这意味着 `Promise` 仍在等待被履行。它可以有任何输出，例如“现在还没到深夜，你不知道朋友是否会完成你的作业。”
--   **Rejected（已拒绝）**：这意味着你已经得到了承诺的结果，且结果是负面的，比如“你的朋友终究没有帮你做作业。”
--   **Resolved（已解决）**：这意味着你已经得到了承诺的结果，且结果是正面的，产生了预期的输出。“你的朋友帮你做完作业了！”
+- **Pending（待定中）**：这意味着 `Promise` 仍在等待被履行。它可以有任何输出，例如“现在还没到深夜，你不知道朋友是否会完成你的作业。”
+- **Rejected（已拒绝）**：这意味着你已经得到了承诺的结果，且结果是负面的，比如“你的朋友终究没有帮你做作业。”
+- **Resolved（已解决）**：这意味着你已经得到了承诺的结果，且结果是正面的，产生了预期的输出。“你的朋友帮你做完作业了！”
 
 一旦承诺变为 Resolved 或 Rejected，就被认为已 **settled（已处理）**。
 
@@ -511,13 +505,13 @@ JavaScript 的 ECMAScript 5 或 ES5 标准（在本书出版时所有主要浏�
 **ES5 语法：**
 
 ```javascript
-new Promise( function(resolve, reject) { /* 执行任务 */ }).then(function() { } ).catch(function() { } );
+new Promise(function(resolve, reject) { /* 执行任务 */ }).then(function() { }).catch(function() { });
 ```
 
 **ES6 语法：**
 
 ```javascript
-new Promise( (resolve, reject) => { /* 执行任务 */ } ).then( () => {} ).catch( () => {} );
+new Promise((resolve, reject) => { /* 执行任务 */ }).then(() => {}).catch(() => {});
 ```
 
 作为回调函数参数的两个参数 `resolve` 和 `reject` 用于处理承诺。这两个参数本身都是函数。调用 `resolve()` 方法会将承诺状态设置为已解决，并调用作为 `then()` 方法参数的函数。调用 `reject()` 方法会将承诺状态设置为已拒绝，并调用作为 `.catch()` 方法参数的函数。
@@ -525,10 +519,10 @@ new Promise( (resolve, reject) => { /* 执行任务 */ } ).then( () => {} ).catc
 现在让我们之前的作业示例创建一个 promise：
 
 ```javascript
-var friendPromise = new Promise( function(resolve, reject) {
-/* 通常在这里有一个异步任务 */
-if( isHomeworkCompleted() ) resolve();
-else reject();
+var friendPromise = new Promise(function(resolve, reject) {
+    /* 通常在这里有一个异步任务 */
+    if (isHomeworkCompleted()) resolve();
+    else reject();
 });
 ```
 
@@ -544,12 +538,10 @@ else reject();
 现在让我们考虑上一节中编写示例代码并看看如何使用它：
 
 ```javascript
-friendPromise.then( function() {
-console.log( 'Promise fullfilled!' );
-
-}).catch( function() {
-
-console.log( 'Promise rejected :( ' );
+friendPromise.then(function() {
+    console.log('Promise fullfilled!');
+}).catch(function() {
+    console.log('Promise rejected :( ');
 });
 ```
 
@@ -560,19 +552,10 @@ console.log( 'Promise rejected :( ' );
 ```javascript
 console.log('Before');
 
-friendPromise.then( function() {
-```
-
-
-
-
-```javascript
-console.log( 'Promise settled' );
-
-}).catch( function() {
-
-console.log( 'Promise settled' );
-
+friendPromise.then(function() {
+    console.log('Promise settled');
+}).catch(function() {
+    console.log('Promise settled');
 });
 
 console.log('After');
@@ -594,31 +577,21 @@ Promise settled
 
 ```javascript
 var friendPromise = function() {
-
-return new Promise( function(resolve, reject) {
-
-/* 通常这里会包含一个异步任务 */
-
-if( isHomeworkCompleted() ) resolve();
-
-else reject();
-
-});
-
-}
+    return new Promise(function(resolve, reject) {
+        /* 通常这里会包含一个异步任务 */
+        if (isHomeworkCompleted()) resolve();
+        else reject();
+    });
+};
 ```
 
 现在我们可以像这样使用它：
 
 ```javascript
-friendPromise().then( function() {
-
-console.log( 'Promise settled' );
-
-}).catch( function() {
-
-console.log( 'Promise settled' );
-
+friendPromise().then(function() {
+    console.log('Promise settled');
+}).catch(function() {
+    console.log('Promise settled');
 });
 ```
 
@@ -630,27 +603,17 @@ console.log( 'Promise settled' );
 
 ```javascript
 var promiseSum = function() {
+    return new Promise(function(resolve, reject) {
+        var x = 5 + 5;
+        if (someCondition()) resolve(x + 5);
+        else reject(x * 5);
+    });
+};
 
-return new Promise( function(resolve, reject) {
-
-var x = 5 + 5;
-
-if( someCondition() ) resolve( x + 5 );
-
-else reject( x * 5 );
-
-});
-
-}
-
-promiseSum().then( function(y) {
-
-console.log( y ); // 如果 promise 成功完成，在控制台屏幕上打印‘15’
-
+promiseSum().then(function(y) {
+    console.log(y); // 如果 promise 成功完成，在控制台屏幕上打印‘15’
 }).catch(function(y) {
-
-console.log( y ); // 如果 promise 被拒绝，在控制台屏幕上打印‘50’
-
+    console.log(y); // 如果 promise 被拒绝，在控制台屏幕上打印‘50’
 });
 ```
 
@@ -662,29 +625,18 @@ console.log( y ); // 如果 promise 被拒绝，在控制台屏幕上打印‘50
 
 ```javascript
 var examplePromise = function() {
+    return new Promise(function(resolve, reject) {
+        resolve();
+    });
+};
 
-return new Promise( function(resolve, reject) {
-
-resolve();
-
-});
-
-}
-
-examplePromise().then( function() {
-
-return 5 + 7;
-
-}).then(function( y ) { // 链式调用
-
-console.log( y ); // 在控制台屏幕上打印‘12’
-
-return y + 15;
-
-}).then(function( y ) { // 链式调用
-
-console.log( y ); // 在控制台屏幕上打印‘27’
-
+examplePromise().then(function() {
+    return 5 + 7;
+}).then(function(y) { // 链式调用
+    console.log(y); // 在控制台屏幕上打印‘12’
+    return y + 15;
+}).then(function(y) { // 链式调用
+    console.log(y); // 在控制台屏幕上打印‘27’
 });
 ```
 
@@ -692,41 +644,25 @@ console.log( y ); // 在控制台屏幕上打印‘27’
 
 ```javascript
 var examplePromise = function() {
-
-return new Promise( function(resolve, reject) {
-
-resolve(7);
-
-});
-
-}
+    return new Promise(function(resolve, reject) {
+        resolve(7);
+    });
+};
 
 var someOtherPromise = function(x) {
+    return new Promise(function(resolve, reject) {
+        resolve(x * 10);
+    });
+};
 
-return new Promise( function(resolve, reject) {
-
-resolve( x * 10 );
-
-});
-
-}
-
-examplePromise().then( function(x) {
-
-console.log( x ); // 在控制台屏幕上打印‘7’
-
-return someOtherPromise(x); // 返回一个新的 promise
-
-}).then(function( y ) { // 链式调用
-
-console.log( y ); // 在控制台屏幕上打印‘70’
-
-return y + 15;
-
-}).then(function( y ) { // 链式调用
-
-console.log( y ); // 在控制台屏幕上打印‘85’
-
+examplePromise().then(function(x) {
+    console.log(x); // 在控制台屏幕上打印‘7’
+    return someOtherPromise(x); // 返回一个新的 promise
+}).then(function(y) { // 链式调用
+    console.log(y); // 在控制台屏幕上打印‘70’
+    return y + 15;
+}).then(function(y) { // 链式调用
+    console.log(y); // 在控制台屏幕上打印‘85’
 });
 ```
 
@@ -734,27 +670,22 @@ console.log( y ); // 在控制台屏幕上打印‘85’
 
 通用语法：
 
-`Promise.all( [ [ Promise1 [, Promise2 [, Promise3 [, Promise4 … ] ] ] ] ] );`
+`Promise.all([Promise1[, Promise2[, Promise3[, Promise4 … ]]]]);`
 
 当作为参数传递的所有 promise 都已就绪（settled），或者其中一个被拒绝时，该方法将返回单个 promise。结果 promise 的 `then()` 方法的函数参数是一个数组，包含了所有 promise 的 `resolve` 方法传递的值，并按照它们解析的顺序排列。
 
 让我们来看一个示例：
 
 ```javascript
-var promise1 = new Promise( function(resolve, reject) { resolve(9); });
+var promise1 = new Promise(function(resolve, reject) { resolve(9); });
+var promise2 = new Promise(function(resolve, reject) { resolve(8); });
+var promise3 = new Promise(function(resolve, reject) { resolve(7); });
+var promise4 = new Promise(function(resolve, reject) { resolve(6); });
 
-var promise2 = new Promise( function(resolve, reject) { resolve(8); });
+var result = Promise.all([promise1, promise2, promise3, promise4]);
 
-var promise3 = new Promise( function(resolve, reject) { resolve(7); });
-
-var promise4 = new Promise( function(resolve, reject) { resolve(6); });
-
-var result = Promise.all( [ promise1, promise2, promise3, promise4] );
-
-result.then( function(x) {
-
-console.log( x );
-
+result.then(function(x) {
+    console.log(x);
 });
 ```
 
@@ -767,28 +698,19 @@ console.log( x );
 现在让我们看看当修改上面的示例产生一个被拒绝的 promise 时会发生什么：
 
 ```javascript
-var promise1 = new Promise( function(resolve, reject) { resolve(9); });
-
-var promise2 = new Promise( function(resolve, reject) { resolve(8); });
-
-var promise3 = new Promise( function(resolve, reject) {
-
-reject(7); // 拒绝
-
+var promise1 = new Promise(function(resolve, reject) { resolve(9); });
+var promise2 = new Promise(function(resolve, reject) { resolve(8); });
+var promise3 = new Promise(function(resolve, reject) {
+    reject(7); // 拒绝
 });
+var promise4 = new Promise(function(resolve, reject) { resolve(6); });
 
-var promise4 = new Promise( function(resolve, reject) { resolve(6); });
+var result = Promise.all([promise1, promise2, promise3, promise4]);
 
-var result = Promise.all( [ promise1, promise2, promise3, promise4] );
-
-result.then( function(x) {
-
-console.log( x );
-
+result.then(function(x) {
+    console.log(x);
 }).catch(function(y) {
-
-console.log( y );
-
+    console.log(y);
 });
 ```
 
@@ -796,7 +718,7 @@ console.log( y );
 
 通用语法：
 
-`Promise.race( [ Promise1 [, Promise2 [, Promise3 [, Promise4 … ] ] ] );`
+`Promise.race([Promise1[, Promise2[, Promise3[, Promise4 … ]]]]);`
 
 ## 第六章：AJAX
 
@@ -818,17 +740,13 @@ AJAX 帮助 JavaScript 与 Web 服务器通信。现在你的网站不再是静�
 
 ### 步骤 1- 发起 HTTP 请求
 
-
-
-
-
 为了发送 HTTP 请求，我们需要一个能够处理请求所需功能的对象。由于我们已经知道 `JavaScript` 支持面向对象编程（OOPS），创建一个对象对我们来说并不是一项挑战性任务。我们需要处理的是不同浏览器支持的各种对象类型。微软的 `Internet Explorer` 支持 `ActiveX` 对象。其他浏览器如 `Chrome`、`Mozilla` 等支持 `XMLHttpRequest` 对象。同时，微软在其后的浏览器中也实现了 `XMLHttpRequest` 对象，但为了提高兼容性，我们也将考虑 `ActiveX` 对象。
 
 ```javascript
-//支持 XMLHttpRequest 对象的浏览器
+// 支持 XMLHttpRequest 对象的浏览器
 if (window.XMLHttpRequest) {
     requestObject = new XMLHttpRequest();
-//支持 ActiveX 对象的浏览器
+    // 支持 ActiveX 对象的浏览器
 } else if (window.ActiveXObject) {
     requestObject = new ActiveXObject("Microsoft.XMLHTTP");
 }
@@ -845,15 +763,15 @@ if (window.XMLHttpRequest) {
 你也可以这样定义函数：
 
 ```javascript
-requestObject.onreadystatechange = function(){
-    //处理响应的函数体
+requestObject.onreadystatechange = function() {
+    // 处理响应的函数体
 };
 ```
 
 现在我们已经准备好发送请求了。这可以通过调用我们创建对象的 `open()` 和 `send()` 方法来实现。
 
 ```javascript
-requestObject.open('GET’, ‘http://www/websiteExample.com/file-name’, true);
+requestObject.open('GET', 'http://www/websiteExample.com/file-name', true);
 requestObject.send();
 ```
 
@@ -922,29 +840,27 @@ if (requestObject.status === 200) {
 嵌套函数是“包含函数的函数”。让我们来看一下：
 
 ```javascript
-//函数 1 是外部函数
-function outer(){ // 定义函数 1
-    //函数 2 是内部函数
-    function inner(){ // 定义函数 2
+// 函数 1 是外部函数
+function outer() { // 定义函数 1
+    // 函数 2 是内部函数
+    function inner() { // 定义函数 2
     }
 }
-
 ```
 
 在上面的示例中，函数 2 (`inner()`) 位于函数 1 (`outer()`) 内部，因此被称为嵌套函数。同样，我们可以在外部函数内部有多个一个嵌套函数。
 
 ```javascript
-//函数 1 是外部函数
-function outer(){ // 定义函数 1
-    //函数 1 是内部函数
-    function inner1(){ // 定义函数 1
+// 函数 1 是外部函数
+function outer() { // 定义函数 1
+    // 函数 1 是内部函数
+    function inner1() { // 定义函数 1
     }
-    //函数 2 是内部函数
-    function inner2(){ // 定义函数 2
+    // 函数 2 是内部函数
+    function inner2() { // 定义函数 2
     }
-    .
-    //函数 N 是内部函数
-    function innerN(){ // 定义函数 N
+    // 函数 N 是内部函数
+    function innerN() { // 定义函数 N
     }
 }
 ```
@@ -952,14 +868,14 @@ function outer(){ // 定义函数 1
 内部函数对外部函数定义的变量或参数进行求值或计算的能力就是闭包。让我们来看一个非常基本的 JavaScript 代码示例。
 
 ```javascript
-//示例 1
-//定义变量 a = 5
+// 示例 1
+// 定义变量 a = 5
 var a = 5;
-//定义函数 add，将 5 加到 a 并返回值
-var add = function(val){
-a = a + val;// 将 val 加到 a
-return a;// 返回 a
-}
+// 定义函数 add，将 5 加到 a 并返回值
+var add = function(val) {
+    a = a + val; // 将 val 加到 a
+    return a; // 返回 a
+};
 var result = add(5); // 将使 result 等于 10
 ```
 
@@ -974,22 +890,19 @@ var result = add(5); // 将使 result 等于 10
 让我们进入一个更复杂的场景：
 
 ```javascript
-//示例 2
-//定义接收一个参数的函数 addTo
-var addTo = function(param_outer){
-//定义一个值为 10 的变量 sample
-var sample = 10;
-//定义接收另一个参数的函数 add
-var add = function(){
-return sample + param_outer;
-}
-//返回内部函数
-return add;
-}
+// 示例 2
+// 定义接收一个参数的函数 addTo
+var addTo = function(param_outer) {
+    // 定义一个值为 10 的变量 sample
+    var sample = 10;
+    // 定义接收另一个参数的函数 add
+    var add = function() {
+        return sample + param_outer;
+    };
+    // 返回内部函数
+    return add;
+};
 ```
-
-
-
 
 在这里，我们有一个嵌套函数 `add()`，它可以接收来自外部函数 `addTo()` 的参数。当用户带有某些参数调用 `addTo()` 时，他将获得该内部函数作为返回值，该函数反过来将执行加法并返回值。
 
@@ -1000,7 +913,7 @@ var test = addTo(10);
 在内部，`param_outer` 将等于 10，而 `add` 将取 `param_outer` 和 `sample` 的加值，并结果为 20。
 
 ```javascript
-var add = 20 ;
+var add = 20;
 ```
 
 当 `addTo()` 调用返回 `add` 时，`test` 的值将等于 `add` 的值，即 20。
@@ -1008,26 +921,18 @@ var add = 20 ;
 让我们来看一个更复杂的例子：
 
 ```javascript
-//Example 3
+// Example 3
+// 定义一个接收参数的函数 addTo()
+var addTo = function(param_outer) {
+    // 定义接收另一个参数的函数 add
+    var add = function(param_inner) {
+        return param_inner + param_outer;
+    };
+    // 返回内部函数
+    return add;
+};
 
-//定义一个接收参数的函数 addTo()
-
-var addTo = function(param_outer){
-
-//定义接收另一个参数的函数 add
-
-var add = function(param_inner){
-
-return param_inner + param_outer;
-
-}
-
-//返回内部函数
-
-return add;
-}
-
-var test = addTo(10); //value 将不是 20
+var test = addTo(10); // value 将不是 20
 ```
 
 在这里，`test` 将取内部函数的值并本身成为一个函数，它将保留一个由我们设置的变量 `param_outer`，等于 10。
@@ -1035,20 +940,16 @@ var test = addTo(10); //value 将不是 20
 所以，`test` 在内部看起来像这样：
 
 ```javascript
-//这仅仅是其内部形式的表示
-
-var test = function(param_inner){
-
-return param_inner + 10;
-
-}
+// 这仅仅是其内部形式的表示
+var test = function(param_inner) {
+    return param_inner + 10;
+};
 ```
 
 如果我们想给任何数字加 10，我们可以简单地写：
 
 ```javascript
-var x =10;
-
+var x = 10;
 var y = test(x);
 ```
 
@@ -1060,12 +961,9 @@ var y = test(x);
 
 ```javascript
 var addThree = addTo(3);
-
-var a = addThree(10);//a 将为 3 + 10 = 13   
-
-var a = addThree(20);//a 将为 3 + 20 = 23   
-
-var a = addThree(30);//a 将为 3 + 30 = 33
+var a = addThree(10); // a 将为 3 + 10 = 13
+var a = addThree(20); // a 将为 3 + 20 = 23
+var a = addThree(30); // a 将为 3 + 30 = 33
 ```
 
 ### 闭包的特性
@@ -1075,24 +973,16 @@ var a = addThree(30);//a 将为 3 + 30 = 33
 - 闭包提供了一种处理某些数据的安全方法，因为我们可以保存变量的引用并防止意外更改。
 
 ```javascript
-//Example 4
-
-//定义变量 a = 5
-
+// Example 4
+// 定义变量 a = 5
 var a = 5;
-
-//定义一个向 a 加 5 并返回值的函数 add
-
-var add = function(val){
-
-a = a + val;//将 val 加到 a
-
-return a;//返回 a
-}
-
-a = 10; //更新 a 的值
-
-var result = add(5); //将使 result 等于 15 而不是 10，因为在调用闭包之前 a 的值已更新，所以保存的引用被新引用更新了
+// 定义一个向 a 加 5 并返回值的函数 add
+var add = function(val) {
+    a = a + val; // 将 val 加到 a
+    return a; // 返回 a
+};
+a = 10; // 更新 a 的值
+var result = add(5); // 将使 result 等于 15 而不是 10，因为在调用闭包之前 a 的值已更新，所以保存的引用被新引用更新了
 ```
 
 闭包是强大的，但需要小心，因为更新的引用可能会让你的代码充满错误。始终确保仔细地使用这种能力。
@@ -1108,23 +998,17 @@ JavaScript 函数是一等对象。“一等对象”意味着它们可以在函
 回调是指作为参数传递给另一个函数的函数，并在包含该函数的体内执行执行。由于此类能力的应用场景有限，它们可以被称为回调模式。
 
 ```javascript
-//定义一个回调函数 sum()
+// 定义一个回调函数 sum()
+var sum = function(num1, num2) {
+    return num1 + num2;
+};
 
-var sum = function ( num1 , num2 ){
+// 定义一个使用 sum() 作为参数的函数
+var calling_func = function(a, b, callback) {
+    return callback(a, b); // 带有参数调用回调函数
+};
 
-return num1 + num2;
-
-}
-
-//定义一个使用 sum() 作为参数的函数
-
-var calling_func = function ( a , b , callback ){
-
-return callback ( a , b //带有参数调用回调函数
-
-}
-
-var sample = calling_func( 5 , 5 , sum);//new 将被赋值为 10
+var sample = calling_func(5, 5, sum); // new 将被赋值为 10
 ```
 
 让我们遍历上面的代码。首先，我们声明了一个简单的函数，相两个值并返回结果。接下来，我们定义了一个接收两个参数以及第三个参数“callback”的函数。回调本质上是一个变量，用于存储我们将传递的函数名并相应地执行它。它可以命名为任何名称。为了方便理解，我将其命名为 `callback`。
@@ -1136,27 +1020,18 @@ var sample = calling_func( 5 , 5 , sum);//new 将被赋值为 10
 回调函数不仅可以接受现有函数作为参数，还可以在参数中定义全新的函数。
 
 ```javascript
-//定义一个回调函数 sum()
+// 定义一个回调函数 sum()
+var sum = function(num1, num2) {
+    return num1 + num2;
+};
 
-var sum = function ( num1 , num2 ){
+// 定义一个使用 sum() 作为参数的函数
+var calling_func = function(a, b, callback) {
+    return callback(a, b); // 带有参数调用回调函数
+};
 
-return num1 + num2;
-
-}
-
-//定义一个使用 sum() 作为参数的函数
-
-var calling_func = function ( a , b , callback ){
-
-return callback ( a , b //带有参数调用回调函数
-
-}
-
-var sample = calling_func( 5 , 5 , sum);//new 将被赋值为 10
+var sample = calling_func(5, 5, sum); // new 将被赋值为 10
 ```
-
-
-
 
 在深入研究 `apply()`、`call()` 和 `bind()` 方法的细节之前，我们需要了解 JavaScript 中的关键字 `this`。
 
@@ -1164,7 +1039,7 @@ var sample = calling_func( 5 , 5 , sum);//new 将被赋值为 10
 
 `this` 关键字指向任何方法之外的全局对象。在接接的示例中，我们将看到 `this` 关键字在全局上下文中的作用范围。我们将在浏览器中使用 `console.log` 输出 `this` 关键字。
 
-```
+```javascript
 console.log(this);
 ```
 
@@ -1179,11 +1054,10 @@ console.log(this === window); // is true
 在这个示例中，我们将使用严格模式并检查 `this` 关键字的值。
 
 ```javascript
-function abc(){
-  'use strict'; // 严格模式
-  return this;
+function abc() {
+    'use strict'; // 严格模式
+    return this;
 }
-
 console.log(abc()); // undefined
 ```
 
@@ -1238,12 +1112,12 @@ text.apply(student2, ['How are you']); // How are you Ashok Mehta ?
 `call()` 方法具有以下语法：
 
 ```
-functionName.call (thisArgument, argument1, argument2, ....)
+functionName.call(thisArgument, argument1, argument2, ....)
 ```
 
 #### 参数
 
-让我们来看看传递给 `apply()` 方法（注：此处原文误应为 call）的参数。
+让我们来看看传递给 `call()` 方法的参数。
 
 - `thisArgument`：为调用 `functionName` 提供的 `this` 关键字的值。
   注意：与 `apply()` 方法一样，在非严格模式下工作时，`this` 关键字的值可能与函数执行时看到的原始值不符。原始类型值和全局对象再次被替换为 `undefined` 和 `null`。
@@ -1319,9 +1193,6 @@ var fruitsArray = [apple, mango, banana, orange];
 var arr = [10]; // 将创建一个名为 arr 值为 10 的数组
 ```
 
-
-
-
 相反，`var arr = Array(10);` 将创建一个名为 `arr` 的数组，它没有元素，但长度被设置为 10。
 
 ### 填充数组
@@ -1329,7 +1200,7 @@ var arr = [10]; // 将创建一个名为 arr 值为 10 的数组
 填充数组简单意味着在不同的索引处为数组赋值。默认情况下，单个值被填充在数组的第 0 个索引处，如下：
 
 ```javascript
-arr[0] = ‘0th value’;
+arr[0] = '0th value';
 ```
 
 我们也可以创建数组时对其进行填充，如下：
@@ -1347,9 +1218,8 @@ var fruitsArray = [apple, mango, banana, orange];
 例如（例：`var fruitsArray = [apple, mango, banana, orange];`
 
 ```javascript
-for(i = 0; i < fruitsArray.length; i++)
-{
-  console.log(fruitsArray[i]);
+for (i = 0; i < fruitsArray.length; i++) {
+    console.log(fruitsArray[i]);
 }
 ```
 
@@ -1362,68 +1232,86 @@ orange
 
 在这里，`.length` 是一个预定义的数组方法，用于确定数组的长度。它对于遍历数组非常有益。也可以通过 `forEach` 循环代替 `For` 循环获得上述输出，如下：
 
-例如（例：`fruitsArray.forEach(function(fruit){  console.log(fruit);  });`）
+例如（例：`fruitsArray.forEach(function(fruit) { console.log(fruit); });`）
 
 ### 有用的方法
 
 我们已经讨论了预定义的 `Array` 方法之一，即 `.length` 方法。还有许多其他方法。这些方法在 `Array` 对象上的定义如下：
 
 - `push()`：此方法用于向数组中添加元素。所有元素都会被添加到数组的末尾。
-例如（例：`var fruitsArray = [apple, mango, banana, orange];`
-```javascript
-fruitsArray.push(‘litchi’);
-```
-现在，结果 `fruitsArray` 将是 `[apple, mango, banana, orange, litchi]`
+
+  例如（例：`var fruitsArray = [apple, mango, banana, orange];`
+
+  ```javascript
+  fruitsArray.push('litchi');
+  ```
+
+  现在，结果 `fruitsArray` 将是 `[apple, mango, banana, orange, litchi]`
 
 - `pop()`：此方法用于从数组中删除最后一个元素，并返回被删除的元素。
-例如（例：`var fruitsArray = [apple, mango, banana, orange];`
-```javascript
-var removedFruit = fruitsArray.pop();
-```
-现在，结果 `fruitsArray` 将是 `[apple, mango, banana]`，且 `removedFruit` = `orange`。
+
+  例如（例：`var fruitsArray = [apple, mango, banana, orange];`
+
+  ```javascript
+  var removedFruit = fruitsArray.pop();
+  ```
+
+  现在，结果 `fruitsArray` 将是 `[apple, mango, banana]`，且 `removedFruit` = `orange`。
 
 - `concat()`：此方法用于将一个数组与另一个数组合并成新数组。
-例如（例：`var fruitsArray = [apple, mango, banana, orange];`
-`var carsArray = [honda, suzuki, toyota];`
-```javascript
-var fruitsAndCars = fruitsArray.concat(carsArray);
-```
-现在，结果 `fruitsAndCars` 将是 `[apple, mango, banana, orange, honda, suzuki, toyota];`
+
+  例如（例：`var fruitsArray = [apple, mango, banana, orange];`
+  `var carsArray = [honda, suzuki, toyota];`
+
+  ```javascript
+  var fruitsAndCars = fruitsArray.concat(carsArray);
+  ```
+
+  现在，结果 `fruitsAndCars` 将是 `[apple, mango, banana, orange, honda, suzuki, toyota];`
 
 - `sort()`：此方法用于升序排序数组。
-例如（例：`var fruitsArray = [apple, mango, banana, orange];`
-```javascript
-fruitsArray.sort();
-```
-现在，结果 `fruitsArray` 将是 `[apple, banana, mango, orange]`
+
+  例如（例：`var fruitsArray = [apple, mango, banana, orange];`
+
+  ```javascript
+  fruitsArray.sort();
+  ```
+
+  现在，结果 `fruitsArray` 将是 `[apple, banana, mango, orange]`
 
 - `reverse()`：此方法用于反转数组元素的顺序，即第一个元素变成最后一个元素，最后一个元素变成第一个元素。
-例如（例：`var fruitsArray = [apple, mango, banana, orange];`
-```javascript
-fruitsArray.reverse();
-```
-现在，结果 `fruitsArray` 将是 `[orange, banana, mango, apple]`
+
+  例如（例：`var fruitsArray = [apple, mango, banana, orange];`
+
+  ```javascript
+  fruitsArray.reverse();
+  ```
+
+  现在，结果 `fruitsArray` 将是 `[orange, banana, mango, apple]`
 
 - `indexOf(reqdElement, [fromIndex])`：此方法用于搜索数组中特定元素的索引。
-例如（例：`var fruitsArray = [apple, mango, banana, orange];`
-`fruitsArray.indexOf(‘mango’);` 将得到结果 1。
 
-如果数组中有多个同名的元素，我们还可以作为可选参数指定我们想要从哪个索引开始查找所需的元素。
-例如（例：`var fruitsArray = [apple, mango, banana, orange, mango];`
-`fruitsArray.indexOf(‘mango’, 2);` 将得到结果 4。
+  例如（例：`var fruitsArray = [apple, mango, banana, orange];`
+  `fruitsArray.indexOf('mango');` 将得到结果 1。
+
+  如果数组中有多个同名的元素，我们还可以作为可选参数指定我们想要从哪个索引开始查找所需的元素。
+
+  例如（例：`var fruitsArray = [apple, mango, banana, orange, mango];`
+  `fruitsArray.indexOf('mango', 2);` 将得到结果 4。
 
 ### 多维数组
 
 多维数组可以通过将一个数组嵌套在另一个数组中的方式创建，并为一个维度的每个元素填充另一个维度的每个元素。多维数组可以如下所示创建并填充：
 
 例如（例）：
+
 ```javascript
 var arr = new Array(5);
 for (i = 0; i < 5; i++) {
-  arr[i] = new Array(5);
-  for (j = 0; j < 5; j++) {
-    a[i][j] = i + j;
-  }
+    arr[i] = new Array(5);
+    for (j = 0; j < 5; j++) {
+        arr[i][j] = i + j;
+    }
 }
 ```
 
@@ -1447,7 +1335,7 @@ HTML 中的 `canvas` 元素负责显示许多图形元素，如绘制、动画�
 <canvas id="idCanvas" width="300" height="300"></canvas>
 ```
 
-起初，它看起来像 <img> 元素，缺少 `src` 和 `alt` 属性。`canvas` 元素的默认高度和宽度分别为 300px 和 150px。
+起初，它看起来像 `<img>` 元素，缺少 `src` 和 `alt` 属性。`canvas` 元素的默认高度和宽度分别为 300px 和 150px。
 
 ### JavaScript 在 canvas 中的作用
 
@@ -1461,7 +1349,7 @@ var canvas = document.getElementById("idCanvas");
 
 该方法有一个参数，用于定义上下文类型。
 
-例如（例：`getContext("2d")`
+例如（例：`getContext("2d")`）
 
 要在 JavaScript 中引入此方法，我们首先需要选择 canvas 并存储在变量中，就像之前那样。其次，我们需要使用同一个变量连接 `getContext` 方法。最后，我们将其存储在另一个变量中（通常命名为 `ctx`），我们将在项目的剩余部分用它操作 canvas 元素。
 
@@ -1473,14 +1361,11 @@ var ctx = canvas.getContext("2d");
 注意，`getContext` 方法是由我们创建的存储 canvas 的变量（`canvas`）连接的。现在上下文已经创建，我们就可以通过变量 `ctx` 轻松地为画布 设置不同的值。
 
 例如：
-1. `ctx.fillStyle="blue";`
+
+1. `ctx.fillStyle = "blue";`
 2. `ctx.fillRect(8, 8, 40, 40);`
 
 上述代码将在第 2 行指定的坐标处绘制矩形，并如第 1 行所示提供蓝色。
-
-
-
-
 
 ### 绘制矩形
 
@@ -1514,7 +1399,7 @@ var ctx = canvas.getContext("2d");
 ctx.fillStyle = "blue";
 ctx.fillRect(0,0,150,75);
 </script>
-</>
+</body>
 </HTML>
 ```
 
@@ -1532,20 +1417,21 @@ ctx.fillRect(0,0,150,75);
 
 1. `beginPath()` 方法：用于创建一个新路径。
 2. `path` 函数：
-- `CanvasRenderingContext2D.moveTo()`：将新创建路径的起始索引移动到 `(A, B)` 坐标。
-- `CanvasRenderingContext2D.bezierCurveTo()`：向路径中添加曲线（也称为三次贝塞尔曲线）。
-- `CanvasRenderingContext2D.lineTo()`：用直线将子路径与 `A, B` 坐标以及上一点连接起来。
-- `CanvasRenderingContext2D.arc()`：在路径上添加一个以 `(A, B)` 位置为中心、`radius` 为半径的弧。从 `startAngle` 开始并按方向在 `endAngle` 结束。
-- `CanvasRenderingContext2D.ellipse()`：在路径上添加一个以 `(A, B)` 位置为中心、`radiusX` 和 `radiusY` 为半径的椭圆，从 `startAngle` 开始并按方向在 `endAngle` 结束。
-- `CanvasRenderingContext2D.fill()`：用当前样式填充子路径。
-- `CanvasRenderingContext2D.rect()`：创建一个位于 `(A, B)` 的矩形路径，其大小由 `width` 和 `height` 决定。
-- `CanvasRenderingContext2D.quadraticCurveTo()`：向路径中添加二次贝塞尔曲线。
-- `CanvasRenderingContext2D.arcTo()`：向路径中添加一条弧，包括由直线连接的控制点。
+   - `CanvasRenderingContext2D.moveTo()`：将新创建路径的起始索引移动到 `(A, B)` 坐标。
+   - `CanvasRenderingContext2D.bezierCurveTo()`：向路径中添加曲线（也称为三次贝塞尔曲线）。
+   - `CanvasRenderingContext2D.lineTo()`：用直线将子路径与 `A, B` 坐标以及上一点连接起来。
+   - `CanvasRenderingContext2D.arc()`：在路径上添加一个以 `(A, B)` 位置为中心、`radius` 为半径的弧。从 `startAngle` 开始并按方向在 `endAngle` 结束。
+   - `CanvasRenderingContext2D.ellipse()`：在路径上添加一个以 `(A, B)` 位置为中心、`radiusX` 和 `radiusY` 为半径的椭圆，从 `startAngle` 开始并按方向在 `endAngle` 结束。
+   - `CanvasRenderingContext2D.fill()`：用当前样式填充子路径。
+   - `CanvasRenderingContext2D.rect()`：创建一个位于 `(A, B)` 的矩形路径，其大小由 `width` 和 `height` 决定。
+   - `CanvasRenderingContext2D.quadraticCurveTo()`：向路径中添加二次贝塞尔曲线。
+   - `CanvasRenderingContext2D.arcTo()`：向路径中添加一条弧，包括由直线连接的控制点。
 3. `closePath()`：关闭路径。
 4. `fill()`：通过 `fill()` 方法，我们可以绘制填充内容区域的实心形状。
 5. `stroke()`：通过 `stroke()` 方法，我们可以在形状周围绘制边框。
 
 遵循这些步骤将帮助你使用路径绘制你想象的任何形状：
+
 1. 创建新路径。
 2. 使用上述列出的绘制命令在路径中绘制。
 3. 绘制完成后关闭路径。
@@ -1557,6 +1443,7 @@ ctx.fillRect(0,0,150,75);
 本节展示了如何使用路径绘制三角形。查看下面的代码。
 
 HTML 代码：
+
 ```html
 <!DOCTYPE HTML>
 <HTML>
@@ -1568,17 +1455,18 @@ HTML 代码：
 ```
 
 JavaScript 代码：
+
 ```javascript
 function drawTriangle() {
-  var canvas = document.getElementById('idCanvas');
-  if (canvas.getContext) {
-    var ctx = canvas.getContext('2d');
-    ctx.beginPath();
-    ctx.moveTo(50, 75);
-    ctx.lineTo(95, 72);
-    ctx.lineTo(101, 26);
-    ctx.fill();
-  }
+    var canvas = document.getElementById('idCanvas');
+    if (canvas.getContext) {
+        var ctx = canvas.getContext('2d');
+        ctx.beginPath();
+        ctx.moveTo(50, 75);
+        ctx.lineTo(95, 72);
+        ctx.lineTo(101, 26);
+        ctx.fill();
+    }
 }
 ```
 
@@ -1589,29 +1477,25 @@ function drawTriangle() {
 ### 两个重要的属性
 
 为了在画布中为形状添加颜色和样式，我们必须考虑两个重要的属性：
+
 1. `fillStyle = "color"`
 2. `strokeStyle = "color"`
 
 `fillStyle` 属性在填充形状和上下文时设置样式。`strokeStyle` 属性设置形状边框的样式。注意引号内等号后面的 `"color"`。它代表你选择的颜色。此空间必须由字符串填充。颜色代表 CSS 颜色。颜色可以接受以下类型的值：
+
 - 预定义的颜色名称，如 `"red"`、`"blue"`、`"green"` 等。
 - 可以接受颜色的十六进制代码，例如。
 
-（注：原文后续部分似乎存在文本内容逻辑混乱或重复，已根据语意进行结构对齐处理）
-- Can accept Hex codes of colors, for example,（可以接受颜色的十六进制代码，例如）
-- Predefined colors name such as `"red"`, `"blue"`, `"green"` etc.（预定义的颜色名称，如 "red"、"blue"、"green" 等）
-- Color can accept values of the following type:（颜色可以接受以下类型的值：）
 
 
+# JavaScript 动画与内存管理
 
+## 颜色值类型
 
+颜色可以接受以下类型的值：
 
-```
-    }
-
-  }
-
-}
-```
+- 十六进制代码，例如 `#FF0000`
+- 预定义的颜色名称，如 `"red"`、`"blue"`、`"green"` 等
 
 结果截图：
 
@@ -1619,7 +1503,7 @@ function drawTriangle() {
 
 我们可以通过这种方式实现许多高级动画。
 
-### 事件处理
+## 事件处理
 
 JavaScript 中的动画可以根据用户的操作来触发。
 
@@ -1635,39 +1519,39 @@ JavaScript 中的动画可以根据用户的操作来触发。
 
 ### 鼠标常用事件
 
-● `onclick`: 当用户点击鼠标时执行给定的任务。
-● `oncontextmenu`: 当用户右键点击鼠标时执行特定任务。
-● `ondblclick`: 当用户双击鼠标时执行特定任务。
-● `onmouseover`: 当鼠标指针移动到元素上时执行特定任务。
-● `onmousemove`: 当鼠标指针在移动时执行特定任务。
-● `onmouseup`: 当用户从元素上释放鼠标键时执行特定任务。
+- `onclick`：当用户点击鼠标时执行给定的任务。
+- `oncontextmenu`：当用户右键点击鼠标时执行特定任务。
+- `ondblclick`：当用户双击鼠标时执行特定任务。
+- `onmouseover`：当鼠标指针移动到元素上时执行特定任务。
+- `onmousemove`：当鼠标指针在移动时执行特定任务。
+- `onmouseup`：当用户从元素上释放鼠标键时执行特定任务。
 
 ### 键盘常用事件
 
-● `onkeydown`: 当用户按下任何指定的按键时执行特定任务。
-● `onkeypress`: 当用户按下键时执行特定任务。
-● `onkeyup`: 当用户释放按键时执行特定任务。
+- `onkeydown`：当用户按下任何指定的按键时执行特定任务。
+- `onkeypress`：当用户按下键时执行特定任务。
+- `onkeyup`：当用户释放按键时执行特定任务。
 
-## 在 JavaScript 中使用 canvas 动画
+## 在 JavaScript 中使用 Canvas 动画
 
-在 canvas 上动画或移动任何之前绘制的形状的基本规则是：通过逻辑或硬编码的方式重新重绘它。
+在 Canvas 上动画或移动任何之前绘制的形状的基本规则是：通过逻辑或硬编码的方式重新重绘它。
 
 ### 简单动画步骤
 
 在本节中，我们将看到如何使用预定义方法创建帧并动画对象。
 
-### 创建帧的步骤
+#### 创建帧的步骤
 
-1. 使用 `clearReact()` 方法 -
-   当画布被这些形状填充时，你需要清除之前绘制的形状。`clearReact()` 方法有助于清除画布。
-2. 每次操作前保存。
+1. 使用 `clearRect()` 方法
+   当画布被这些形状填充时，你需要清除之前绘制的形状。`clearRect()` 方法有助于清除画布。
+2. 每次操作前保存
    当你创建一个新设置并希望之前绘制的形状保留在画布上时，在每次创建新帧时都必须保存原始状态。
 3. 添加动画
    在这一步中，完成了帧的实际渲染。
-4. 恢复过程。
+4. 恢复过程
    最后但同样重要的是，在你目前所做的一切之后，在创建新帧之前允许画布进行恢复。
 
-### 由你定义的动画
+#### 由你定义的动画
 
 在本节中，我们将检查一些控制动画的方法。
 
@@ -1675,16 +1559,17 @@ JavaScript 中的动画可以根据用户的操作来触发。
    每隔 `delay` 毫秒重复执行由 `method` 指定的方法。
 2. `setTimeout(method, delay)`
    执行由 `method` 指定的方法，延迟以毫秒为单位。
-3. `requestAnimationFrame(function callback)`
-   请求浏览器在下一次绘制之前调用指定的方法来更新动画，根据你的需求。
-4. `windowRequestAnimationFrame()`
+3. `requestAnimationFrame(callback)`
+   请求浏览器在下一次绘制之前调用指定的方法来更新动画。
+4. `window.requestAnimationFrame()`
    当画布准备绘制帧时，可以通过更平滑高效的方式完成动画。回调函数的通常为每秒 60 次，在后台运行时可能会降低频率。
 
-### 示例：
+### 示例
 
-在以下示例中，我们将使用 JavaScript 对 canvas 元素进行动画。
+在以下示例中，我们将使用 JavaScript 对 Canvas 元素进行动画。
 
 HTML 代码：
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -1695,25 +1580,27 @@ HTML 代码：
 ```
 
 CSS 代码：
+
 ```css
-html{
-height: 100%;
-width: 100%;
-margin: 0;
-padding: 0;
+html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
-body{
-height: 100%;
-width: 100%;
-margin: 0;
-padding: 0;
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
-canvas{
-position: absolute;
+canvas {
+  position: absolute;
 }
 ```
 
 JavaScript 代码：
+
 ```javascript
 const canvas = document.getElementById('idCanvas');
 const context = canvas.getContext('2d');
@@ -1728,70 +1615,73 @@ context.fillStyle = 'white';
 context.fillRect(0, 0, width, height);
 (function loop() {
   context.save();
-  context.translate(width/2, height/2);
+  context.translate(width / 2, height / 2);
   context.fillStyle = 'rgba(0,0,0,0.09)';
-  context.fillRect(-width/2, -height/2, width, height);
+  context.fillRect(-width / 2, -height / 2, width, height);
   let j = 0, k = 0;
   s += 0.001;
-  for( let i = 0; i < 512; i++ ) {
+  for (let i = 0; i < 512; i++) {
     const r = i * ((j / k) / 5);
     context.beginPath();
-    context.fillStyle = `hsl(${i%360}, 100%, 50%)`;
-    context.globalAlpha = r/(512 * ((2 / 3) / 5) / 2) + 0.1;
+    context.fillStyle = `hsl(${i % 360}, 100%, 50%)`;
+    context.globalAlpha = r / (512 * ((2 / 3) / 5) / 2) + 0.1;
     context.translate(Math.sin(i * s) * (i * j++), Math.cos(i * s) * (i * k++));
     context.fillRect(0, 0, r, r);
     context.closePath();
-    if( j > 2 ) j = 0;
+    if (j > 2) j = 0;
   }
   context.restore();
   requestAnimationFrame(loop);
 })();
 ```
 
+## 内存管理
 
+内存的高效利用一直是开发者的一大难题，而且未来也将如此。然而，在低级语言和高级语言中，内存管理的实现方式有所不同。高级语言隐式地实现（由语言自动完成），而低级语言则是显式实现（必须由程序员自己完成）。
 
-
-内存的高效利用一直是开发者的一大难题，而且未来也将如此。然而，在低级语言和高级语言中，第一步和第三有所不同。高级语言隐式地实现（由语言自动完成），而低级语言则是显式实现（必须由程序员自己完成）。
-
-## 内存分配
+### 内存分配
 
 内存主要可以通过两种方式分配：
 
-- **值初始化**：JavaScript 在声明值时分配内存。
+#### 值初始化
+
+JavaScript 在声明值时分配内存。
 
 ```javascript
-var number = 1234;//为类型为 number 的变量 `number` 分配内存
-var name = ‘John’; //为类型为 string 的变量 `name` 分配内存
+var number = 1234; // 为类型为 number 的变量 `number` 分配内存
+var name = 'John'; // 为类型为 string 的变量 `name` 分配内存
 var obj = {
-    x: ‘name’,
+    x: 'name',
     y: 8
-}//为对象 `obj` 及其包含的值分配内存
-var arr = [2, 3, 4, 5];//为数字数组分配内存
-function add5(num1){
-return num1+5;
-}//已分配内存
+}; // 为对象 `obj` 及其包含的值分配内存
+var arr = [2, 3, 4, 5]; // 为数字数组分配内存
+function add5(num1) {
+    return num1 + 5;
+} // 已分配内存
 ```
 
-- **函数调用**：某些函数调用也会导致为对象分配内存。
+#### 函数调用
+
+某些函数调用也会导致为对象分配内存。
 
 ```javascript
 var date = new Date(); // 为 date 对象分配内存
 ```
 
-## 垃圾回收
+### 垃圾回收
 
 如前所述，程序通过某些算法来寻找应用程序未使用且可以释放的内存块。在这里，我们将介绍两个最重要的垃圾回收算法及其局限性：
 
 - 引用计数垃圾回收
 - 标记-清除算法
 
-### 引用计数垃圾回收
+#### 引用计数垃圾回收
 
 许多流行语言（如 `PHP` 和 `Python`）都实现了这种算法。它基于这样一个想法：如果一个对象没有任何引用，就可以被释放。它将引用为零的对象视为应用程序不再使用的对象。
 
 ```javascript
-var obj = {obj1: {x:3}, c:3, d: 4};
-obj -----> obj1 //由于一个对象引用另一个，两者都无法被释放
+var obj = {obj1: {x: 3}, c: 3, d: 4};
+// obj -----> obj1 // 由于一个对象引用另一个，两者都无法被释放
 obj = 0; // 现在，没有对象引用 'obj1' 了，因此它可以被释放
 ```
 
@@ -1800,21 +1690,21 @@ obj = 0; // 现在，没有对象引用 'obj1' 了，因此它可以被释放
 当对象创建引用循环时，该算法往往会失效，如下例：
 
 ```javascript
-var obj1 = {}
-var obj2 = {}
+var obj1 = {};
+var obj2 = {};
 obj1.x = obj2;
 obj2.x = obj1;
 ```
 
-这在对象 `obj1` 和 `obj2` 之间创建了引用循环。假设这段代码片段是函数或任何局部作用域的一部分。当程序离开此作用域时，这两个对象都变得毫无用，因此由于不再被使用而应该被释放。引用计数算法无法释放这些对象占用的内存，因为它们都至少有一个引用指向。
+这在对象 `obj1` 和 `obj2` 之间创建了引用循环。假设这段代码片段是函数或任何局部作用域的一部分。当程序离开此作用域时，这两个对象都变得毫无用处，因此由于不再被使用而应该被释放。引用计数算法无法释放这些对象占用的内存，因为它们都至少有一个引用指向。
 
-### 标记-清除算法
+#### 标记-清除算法
 
 当单个对象无法被应用程序访问时，标记-清除算法会将该对象占用的内存返回空闲内存池。
 
 虽然引用循环问题在这种算法中不再存在，但可能会出现某些僵尸内存块未被释放的情况，因为算法认为它们是可访问的。
 
-## JavaScript 中导致内存泄漏的常见错误
+### JavaScript 中导致内存泄漏的常见错误
 
 - 意外的全局变量
 - 闭包
@@ -1840,8 +1730,8 @@ obj2.x = obj1;
 我们先从打印 0 到 10 的数字开始。使用循环时，代码看起来如下：
 
 ```javascript
-for(var i = 0; i <= 10; i++) {
-    console.log( i );
+for (var i = 0; i <= 10; i++) {
+    console.log(i);
 }
 ```
 
@@ -1849,9 +1739,9 @@ for(var i = 0; i <= 10; i++) {
 
 ```javascript
 function printNumbers(x) {
-console.log( x );
-X++; // 增加 x 的值
-if(x < 10)printNumbers(x);
+    console.log(x);
+    x++; // 增加 x 的值
+    if (x < 10) printNumbers(x);
 }
 printNumbers(0); // 调用一次函数以初始化过程
 ```
@@ -1864,13 +1754,13 @@ printNumbers(0); // 调用一次函数以初始化过程
 var number = 6;
 function getFactorial(x) {
     var r = 1;
-    for(var i = 1; i <= number; i++) {
+    for (var i = 1; i <= number; i++) {
         r = i * r;
     }
     return r;
 }
-var result = getFactorial( number );
-console.log( 'Factorial of ' + number + ' is ' + result );
+var result = getFactorial(number);
+console.log('Factorial of ' + number + ' is ' + result);
 ```
 
 现在，让我们看看通过递归来实现：
@@ -1878,28 +1768,29 @@ console.log( 'Factorial of ' + number + ' is ' + result );
 ```javascript
 var number = 6;
 function getFactorial(x) {
-    if(x == 1) return x;
-    return x * getFactorial( --x ); // 递归！
+    if (x == 1) return x;
+    return x * getFactorial(--x); // 递归！
 }
-var result = getFactorial( number );
-console.log( 'Factorial of ' + number + ' is ' + result );
+var result = getFactorial(number);
+console.log('Factorial of ' + number + ' is ' + result);
 ```
 
 这里发生的是，我们在每次进行递归调用之前将 `x` 的值减 1。我们检查“如果 `x` 的值为 1，则返回 `x`”。在 `x` 的值达到 1 之前，存在调用栈：
 
-调用 `getFactorial(6)`
-- 返回 `6 x getFactorial(5)`步骤 i
-- 返回 `5 x getFactorial(4)`步骤 ii
-- 返回 `4 x getFactorial(3)`步骤 iii
-- 返回 `3 x getFactorial(2)`步骤 iv
-- 返回 `2 x getFactorial(1)`步骤 v
+- 调用 `getFactorial(6)`
+- 返回 `6 * getFactorial(5)` 步骤 i
+- 返回 `5 * getFactorial(4)` 步骤 ii
+- 返回 `4 * getFactorial(3)` 步骤 iii
+- 返回 `3 * getFactorial(2)` 步骤 iv
+- 返回 `2 * getFactorial(1)` 步骤 v
 
 `getFactorial(1)` 因为检查返回 1，现在值按照上面的队列向上移动：
-- 控制移动到步骤 v 变为 `2 x 1` 或 `2`
-- 控制移动到步骤 iv 变为 `3 x 2` 或 `6`
-- 控制移动到步骤 iii 变为 `4 x 6` 或 `24`
-- 控制移动到步骤 ii 变为 `5 x 24` 或 `120`
-- 控制移动到步骤 i 变为 `6 x 120` 或 `720`
+
+- 控制移动到步骤 v 变为 `2 * 1` 或 `2`
+- 控制移动到步骤 iv 变为 `3 * 2` 或 `6`
+- 控制移动到步骤 iii 变为 `4 * 6` 或 `24`
+- 控制移动到步骤 ii 变为 `5 * 24` 或 `120`
+- 控制移动到步骤 i 变为 `6 * 120` 或 `720`
 
 最后，返回 6 的阶乘，即 720。
 
@@ -1911,20 +1802,14 @@ console.log( 'Factorial of ' + number + ' is ' + result );
 - 每次函数调用都会堆叠在内存中。非常长的递归链可能会耗尽 JavaScript 引擎分配的所有内存，从而导致不可预见的错误。不同的机器可能有不同的内存容量。
 - 递归比循环慢，因为每次迭代都必须调用新的函数。每次函数调用都会消耗一些时间。
 
-## 何时使用递归？
-
-
-
-
-
-# 递归
+### 何时使用递归？
 
 当循环出现分支或嵌套过深时，应该使用递归。使用递归可以让搜索动态结构、遍历图等操作变得简单易行。你永远不要为可以通过循环轻松解决的简单问题使用递归，因为循环的运行速度快得多且占用的内存更少。
 
-## JavaScript 中的性能
+### JavaScript 中的性能
 
 许多复杂算法都使用递归。这是一种非常强大的技术。JavaScript 编译器会将递归的每个函数调用压入栈。这可能是非常危险的，但在 `ES6` (`ECMAScript 6`) 中，情况将不再如此。递归将不再进行堆栈，而是导致代码的立即执行，这使得使用递归变得安全得多。
 
-## 结
+## 结语
 
 非常感谢下载《JavaScript: Elite JavaScript Coding from The Ground Up!》。我希望你在阅读这本书中获得的收获与我写这本书时的收获一样多。如果你喜欢这本书，请在 Amazon 上留下好评以示你的支持。我们非常感激你的反馈！

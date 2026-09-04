@@ -1,23 +1,24 @@
+
 # 13.13 assert 模块
 
 assert 模块是 Node 的内置模块，主要用于断言。如果表达式不符合预期，就抛出一个错误。该模块提供 11 个方法，但只有少数几个是常用的。
 
-*   assert()
-*   assert.ok()
-*   assert.equal()
-*   assert.notEqual()
-*   assert.deepEqual()
-*   assert.notDeepEqual()
-*   assert.strictEqual()
-*   assert.notStrictEqual()
-*   assert.throws()
-*   assert.doesNotThrow()
-*   assert.ifError()
-*   assert.fail()
+- `assert()`
+- `assert.ok()`
+- `assert.equal()`
+- `assert.notEqual()`
+- `assert.deepEqual()`
+- `assert.notDeepEqual()`
+- `assert.strictEqual()`
+- `assert.notStrictEqual()`
+- `assert.throws()`
+- `assert.doesNotThrow()`
+- `assert.ifError()`
+- `assert.fail()`
 
-## assert()
+## `assert()`
 
-assert 方法接受两个参数，当第一个参数对应的布尔值为 true 时，不会有任何提示，返回 undefined。当第一个参数对应的布尔值为 false 时，会抛出一个错误，该错误的提示信息就是第二个参数设定的字符串。
+`assert` 方法接受两个参数，当第一个参数对应的布尔值为 `true` 时，不会有任何提示，返回 `undefined`。当第一个参数对应的布尔值为 `false` 时，会抛出一个错误，该错误的提示信息就是第二个参数设定的字符串。
 
 ```js
 // 格式
@@ -34,22 +35,22 @@ var expected = add(1,2);
 assert( expected === 3, '预期 1 加 2 等于 3');
 ```
 
-上面代码不会有任何输出，因为 assert 方法的第一个参数是 true。
+上面代码不会有任何输出，因为 `assert` 方法的第一个参数是 `true`。
 
 ```js
 assert( expected === 4, '预期 1 加 2 等于 3')
 // AssertionError: 预期 1 加 2 等于 3
 ```
 
-上面代码会抛出一个错误，因为 assert 方法的第一个参数是 false。
+上面代码会抛出一个错误，因为 `assert` 方法的第一个参数是 `false`。
 
-## assert.ok()
+## `assert.ok()`
 
-ok 是 assert 方法的另一个名字，与 assert 方法完全一样。
+`ok` 是 `assert` 方法的另一个名字，与 `assert` 方法完全一样。
 
-## assert.equal()
+## `assert.equal()`
 
-equal 方法接受三个参数，第一个参数是实际值，第二个是预期值，第三个是错误的提示信息。
+`equal` 方法接受三个参数，第一个参数是实际值，第二个是预期值，第三个是错误的提示信息。
 
 ```js
 // 格式
@@ -74,11 +75,11 @@ assert.ok(expected == 3, '预期 1+2 等于 3');
 assert.equal(expected, 3, '预期 1+2 等于 3');
 ```
 
-equal 方法内部使用的是相等运算符（==），而不是严格运算符（===），进行比较运算。
+`equal` 方法内部使用的是相等运算符（`==`），而不是严格运算符（`===`），进行比较运算。
 
-## assert.notEqual()
+## `assert.notEqual()`
 
-notEqual 方法的用法与 equal 方法类似，但只有在实际值等于预期值时，才会抛出错误。
+`notEqual` 方法的用法与 `equal` 方法类似，但只有在实际值等于预期值时，才会抛出错误。
 
 ```js
 // 格式
@@ -99,11 +100,11 @@ assert.ok(expected != 4, '预期不等于 4');
 assert.notEqual(expected, 4, '预期不等于 4');
 ```
 
-notEqual 方法内部使用不相等运算符（!=），而不是严格不相等运算符（!==），进行比较运算。
+`notEqual` 方法内部使用不相等运算符（`!=`），而不是严格不相等运算符（`!==`），进行比较运算。
 
-## assert.deepEqual()
+## `assert.deepEqual()`
 
-deepEqual 方法用来比较两个对象。只要它们的属性一一对应，且值都相等，就认为两个对象相等，否则抛出一个错误。
+`deepEqual` 方法用来比较两个对象。只要它们的属性一一对应，且值都相等，就认为两个对象相等，否则抛出一个错误。
 
 ```js
 // 格式
@@ -123,9 +124,9 @@ var person2 = { "name":"john", "age":"21" };
 assert.deepEqual(person1, person2, '预期两个对象应该有相同的属性');
 ```
 
-## assert.notDeepEqual()
+## `assert.notDeepEqual()`
 
-notDeepEqual 方法与 deepEqual 方法正好相反，用来断言两个对象是否不相等。
+`notDeepEqual` 方法与 `deepEqual` 方法正好相反，用来断言两个对象是否不相等。
 
 ```js
 // 格式
@@ -146,9 +147,9 @@ var person2 = { "name":"jane", "age":"19" };
 assert.notDeepEqual(person1, person2, '预期两个对象不相等');
 ```
 
-## assert.strictEqual()
+## `assert.strictEqual()`
 
-strictEqual 方法使用严格相等运算符（===），比较两个表达式。
+`strictEqual` 方法使用严格相等运算符（`===`），比较两个表达式。
 
 ```js
 // 格式
@@ -161,9 +162,9 @@ assert.strictEqual(1, '1', '预期严格相等');
 // AssertionError: 预期严格相等
 ```
 
-## assert.notStrictEqual()
+## `assert.notStrictEqual()`
 
-assert.notStrictEqual 方法使用严格不相等运算符（!==），比较两个表达式。
+`assert.notStrictEqual` 方法使用严格不相等运算符（`!==`），比较两个表达式。
 
 ```js
 // 格式
@@ -175,9 +176,9 @@ var assert = require('assert');
 assert.notStrictEqual(1, true, '预期严格不相等');
 ```
 
-## assert.throws()
+## `assert.throws()`
 
-throws 方法预期某个代码块会抛出一个错误，且抛出的错误符合指定的条件。
+`throws` 方法预期某个代码块会抛出一个错误，且抛出的错误符合指定的条件。
 
 ```js
 // 格式
@@ -215,9 +216,9 @@ assert.throws(
 );
 ```
 
-## assert.doesNotThrow()
+## `assert.doesNotThrow()`
 
-doesNotThrow 方法与 throws 方法正好相反，预期某个代码块不抛出错误。
+`doesNotThrow` 方法与 `throws` 方法正好相反，预期某个代码块不抛出错误。
 
 ```js
 // 格式
@@ -232,9 +233,9 @@ assert.doesNotThrow(
 );
 ```
 
-## assert.ifError()
+## `assert.ifError()`
 
-ifError 方法断言某个表达式是否 false，如果该表达式对应的布尔值等于 true，就抛出一个错误。它对于验证回调函数的第一个参数十分有用，如果该参数为 true，就表示有错误。
+`ifError` 方法断言某个表达式是否 `false`，如果该表达式对应的布尔值等于 `true`，就抛出一个错误。它对于验证回调函数的第一个参数十分有用，如果该参数为 `true`，就表示有错误。
 
 ```js
 // 格式
@@ -254,9 +255,9 @@ sayHello('World', function(err, value){
 })
 ```
 
-## assert.fail()
+## `assert.fail()`
 
-fail 方法用于抛出一个错误。
+`fail` 方法用于抛出一个错误。
 
 ```js
 // 格式
@@ -273,4 +274,4 @@ assert.fail(21, 42, undefined, '###')
 // AssertionError: 21 ### 42
 ```
 
-该方法共有四个参数，但是不管参数是什么值，它总是抛出一个错误。如果 message 参数对应的布尔值不为 false，抛出的错误信息就是 message，否则错误信息就是“实际值 + 分隔符 + 预期值”。
+该方法共有四个参数，但是不管参数是什么值，它总是抛出一个错误。如果 `message` 参数对应的布尔值不为 `false`，抛出的错误信息就是 `message`，否则错误信息就是“实际值 + 分隔符 + 预期值”。

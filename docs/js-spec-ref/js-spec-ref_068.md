@@ -1,22 +1,5 @@
-# 8.2 PhantomJS
 
-*   概述
-*   REPL 环境
-*   webpage 模块
-    *   open()
-    *   evaluate()
-    *   includeJs()
-    *   render()
-    *   viewportSize，zoomFactor
-    *   onResourceRequested
-    *   onResourceReceived
-    *   system 模块
-    *   应用
-        *   过滤资源
-        *   截图
-        *   抓取图片
-        *   生成网页
-    *   参考链接
+# 8.2 PhantomJS
 
 ## 概述
 
@@ -268,20 +251,26 @@ page.render('capture.png');
 
 ### onResourceRequested
 
-onResourceRequested 属性用来指定一个回调函数，当页面请求一个资源时，会触发这个回调函数。它的第一个参数是 HTTP 请求的元数据对象，第二个参数是发出的网络请求对象。
+onResourceRequested 属性用来指定一个回调函数，当页面请请求一个资源时，会触发这个回调函数。它的第一个参数是 HTTP 请求的元数据对象，第二个参数是发出的网络请求对象。
 
 HTTP 请求包括以下字段。
 
 *   id：所请求资源的编号
+
 *   method：使用的 HTTP 方法
+
 *   url：所请求的资源 URL
+
 *   time：一个包含请求时间的 Date 对象
+
 *   headers：HTTP 头信息数组
 
 网络请求对象包含以下方法。
 
 *   abort()：终止当前的网络请求，这会导致调用 onResourceError 回调函数。
+
 *   changeUrl(newUrl)：改变当前网络请求的 URL。
+
 *   setHeader(key, value)：设置 HTTP 头信息。
 
 ```js
@@ -298,13 +287,23 @@ page.onResourceRequested = function(requestData, networkRequest) {
 onResourceReceived 属性用于指定一个回调函数，当网页收到所请求的资源时，就会执行该回调函数。它的参数就是服务器发来的 HTTP 回应的元数据对象，包括以下字段。
 
 *   id：所请求的资源编号
-*   url：所请求的资源的 URL r- time：包含 HTTP 回应时间的 Date 对象
+
+*   url：所请求的资源的 URL
+
+*   time：包含 HTTP 回应时间的 Date 对象
+
 *   headers：HTTP 头信息数组
-*   bodySize：解压缩后的收到的内容大小
+
+*   bodySize：解压缩后的收到的内容大体积
+
 *   contentType：接到的内容种类
+
 *   redirectURL：重定向 URL（如果有的话）
+
 *   stage：对于多数据块的 HTTP 回应，头一个数据块为 start，最后一个数据块为 end。
+
 *   status：HTTP 状态码，成功时为 200。
+
 *   statusText：HTTP 状态信息，比如 OK。
 
 如果 HTTP 回应非常大，分成多个数据块发送，onResourceReceived 会在收到每个数据块时触发回调函数。
@@ -433,9 +432,13 @@ page.open('http://slashdot.org', function (status) {
 上面代码中的几个属性和方法解释如下：
 
 *   settings.userAgent：指定 HTTP 请求的 userAgent 头信息，上面例子是手机浏览器的 userAgent。
+
 *   settings.viewportSize：指定浏览器窗口的大小，这里是 400x600。
+
 *   evaluate()：用来在网页上运行 Javascript 代码。在这里，我们抓取第一条新闻，然后修改背景颜色，并返回该条新闻的标题。
+
 *   clipRect：用来指定网页截图的大小，这里的截图左上角从网页的(0\. 0)坐标开始，宽 600 像素，高 700 像素。如果不指定这个值，就表示对整张网页截图。
+
 *   render()：根据 clipRect 的范围，在当前目录下生成以第一条新闻的名字命名的截图。
 
 ### 抓取图片
@@ -470,7 +473,11 @@ phantom.exit();
 ## 参考链接
 
 *   [Testing JavaScript with PhantomJS](http://net.tutsplus.com/tutorials/javascript-ajax/testing-javascript-with-phantomjs/)
+
 *   [Phantom Quick Start](https://github.com/ariya/phantomjs/wiki/Quick-Start)
+
 *   Ariya Hidayat, [Web Page Clipping with PhantomJS](http://ariya.ofilabs.com/2013/04/web-page-clipping-with-phantomjs.html)
+
 *   BenjaminBenBen, [Using PhantomJS WebServer](http://benjaminbenben.com/2013/07/28/phantomjs-webserver/)
+
 *   Ariya Hidayat, [Capturing Web Page Without Stylesheets](http://ariya.ofilabs.com/2013/06/capturing-web-page-without-stylesheets.html): 过滤 CSS 文件

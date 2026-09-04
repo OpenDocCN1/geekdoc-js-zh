@@ -1,11 +1,7 @@
+
 # JavaScript：精通 JavaScript
 
-
-
 ![](img/cover00052.jpeg)
-
-
-
 
 ## 停下手里的一切！我送你一份礼物！
 
@@ -102,9 +98,6 @@ Javascript 是网页的编程语言。它让一切连接在一起。如果你想
 我不会评判你的，我保证！
 
 *低语* 我会的！*低语*
-
-
-
 
 这就是我们最近想要接触的事物。皮夹克和一只毛茸的红羊。
 
@@ -226,10 +219,6 @@ P.S.S : 我们没有牛奶了。所以去。 */
 希望你不会和 Jeff 一起工作，但即使会，至少现在你知道如何写注释了。
 
 ## 第 7 章：变量
-
-（注：此处后续文本存在大量重复和乱码，翻译已根据指令要求保留核心逻辑结构）
-
-
 
 让我通过在我们的文本编辑器中写写来向你解释：
 
@@ -411,8 +400,6 @@ document.write(num1--);
 
 ## 第 11 章：函数
 
-
-
 现在每当你想使用这个东西时，我们就不需要重新写我们的 `document.write` 了，还有我们的 `alert`……还有另一次 `document.write`……我们只需要再次调用我们的 `Congrats()` 函数即可！
 
 ```
@@ -420,9 +407,7 @@ Congrats();
 Congrats();
 ```
 
-## 第 12 章
-
-## 函数参数
+## 第 12 章：函数参数
 
 你知道那个叫“大交易”（Let’s make a deal）的游戏节目吗？你有 3 块帘子，你需要猜哪块帘子后面是一辆全新的闪亮汽车，而哪块后面是一只活生生的成年羊驼？
 
@@ -484,9 +469,7 @@ function ShowCurtain(prize){
 
 JavaScript 函数参数？？还有一只活生生的羊驼？！老师还能要求些什么呢？！
 
-## 第 13 章
-
-## 多重参数
+## 第 13 章：多重参数
 
 有时候，你可以拥有可以包含参数的函数，但你还需要添加另一个参数。
 
@@ -516,9 +499,7 @@ function ShowCurtain(curtainNumber, prize){
 
 耶！
 
-## 第 14 章
-
-## 返回语句 (Return Statement)
+## 第 14 章：返回语句 (Return Statement)
 
 在之前的课程中，我们讨论了函数，我们的函数只是执行了一些操作，对吧？
 
@@ -543,11 +524,6 @@ function BasicAddition(num1,num2){
 ```javascript
 BasicAddition(1, 2);
 ```
-
-（注：输入文本意外中断或包含重复块；我已对提供的内容进行了格式化。）
-
-
-
 
 ## 我的梦想
 
@@ -734,9 +710,6 @@ function PendingMessage(time){
 
 好了！让我们第一次尝试我们的等待售卖机！点击 1 号按钮。我们需要等 1 分钟……（但我们不用等……因为……我不想等。）
 
-
-
-
 让我们按下数字 4，我们应该进入默认分支……
 
 我们得等 7 分钟……哦不……
@@ -745,8 +718,7 @@ function PendingMessage(time){
 
 大概要等……7 分钟吧。
 
-## 第 19 章
-## for 循环
+## 第 19 章：for 循环
 
 在过去，以及现在《辛普森一家》的剧集里，对调皮的学生有一种普遍的惩罚。写成千万遍他们所犯的错误……例如……“我不应该在课堂上说话”或“我再也不会忘记做作业了”……诸此类。
 
@@ -784,7 +756,7 @@ for(i=0; i < 10 ; i++){
 
 好了，让我们结合一下 for 循环和函数，为自己创建一个“写行机器”！
 
-�� ♫……写行机啊……耶耶……ea…ea…a……♫ ��
+♫……写行机啊……耶耶……ea…ea…a……♫
 
 是的，首先，我们将写一个名为 `WriteLineMachine` 的函数，并在里面包含一个 `for loop`，该函数将接受一个名为 `lineText` 的参数。
 
@@ -866,8 +838,7 @@ Write(lineText);
 
 现在我们可以欺骗我们的老师，让我们的机器为我们写行了！
 
-## 第 20 章
-## Array
+## 第 20 章：Array
 
 现在我们将学习什么是 Array（数组）。
 
@@ -890,17 +861,20 @@ Write(lineText);
 我们不知道的是，数组的每一个项都有一个秘密索引，而且不是从一而是从零开始。所以 Big Tony 是索引 0，Amazing Bob 是索引 1，Cool Jeff 是索引 2，Awesome Jane 是索引 3。
 
 `document.write(names[0]);`
+
 `document.write(names[1]);`
+
 `document.write(names[2]);`
+
 `document.write(names[3]);`
 
 现在让我们做点什么！假设我们的 Awesome Jane 决定改名为 Tammy。
 
 `names[3] = “Tammy”;`
+
 `document.write(names[3] + “br/>”`
 
-## 第 21 章
-## Array 技巧
+## 第 21 章：Array 技巧
 
 好了！我们对数组还有有更多技巧！
 
@@ -931,8 +905,7 @@ names.reverse();
 document.write(names + “br/>”);
 ```
 
-## 第 22 章
-## 强化版 Javascript
+## 第 22 章：强化版 Javascript
 
 好了，到为止我们学了很多很酷的东西，但现在，是时候提升一下了。
 
@@ -948,30 +921,43 @@ document.write(names + “br/>”);
 
 ```html
 <div id=”sendItem”>
-```
-
-
-
 
 <form>
+
 密码: <br/>
+
 <br/>
+
 <input type="password" id="password" placeholder="password" />
+
 <br/>
+
 <input type="button" id="submit" value="send!" />
+
 </form>
+
 </div>
+```
 
 让我们给它修饰一下吧，毕竟这可是特殊的场合！
 
+```html
 <style>
+
 #sendItem{
+
 background-color: red;
+
 width: 200px;
+
 margin: 30px;
+
 padding: 30px;
+
 }
+
 </style>
+```
 
 现在我们将有一个函数，并将其命名为 `CheckValidation()`，它将…… 检查密码组合的验证……当然了……
 
@@ -1000,17 +986,29 @@ alert(“Caution! Password is Incorrect!”);
 
 现在……注意，我们有一个“发送”按钮……所以……我们必须把表单发送到某个地方，对吧？让我给我们的样式标签里添加一些小花样……
 
+```html
 <style>
+
 #sendItem{
+
 background-color: red;
+
 width: 200px;
+
 margin: 30px;
+
 padding: 30px;
+
 transition: 3s all;
+
 left:0;
+
 }
+
 .leftTrans{ left: 3000px !important; }
+
 </style>
+```
 
 我添加了另一个名为 `leftTrans` 的类，并对我们的 `sendItem` id 添加了更多修改……
 
@@ -1025,9 +1023,7 @@ y.className += “leftTrans”;
 
 让我们尝试失败一次……我们收到了消息……让我们用我们的强密码 1234 再试一次……哦！我们发送了表单！谁知道发送到哪里了？！也许是到火星。
 
-## 第 23 章
-
-## 现在怎么办？
+## 第 23 章：现在怎么办？
 
 恭喜你！你完成了这门课程，你在书里听了很多非常冷笑话，我为你感到非常自豪！
 
@@ -1036,4 +1032,3 @@ y.className += “leftTrans”;
 嗯，年轻的学徒（padawan），现在是时候将你的 JavaScript 技能与服务器端结合起来了。我有一门专门为你准备的 C# 课程，因为你购买了这本书（或者为了补偿我那些冷笑话），我将为你提供 Udemy 上所有课程的 5 折扣优惠。
 
 你可以在这里领取优惠券：`http://basicjavascript.gilad.me/discount50/`
-

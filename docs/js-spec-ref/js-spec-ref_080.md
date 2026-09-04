@@ -1,20 +1,5 @@
-# 9.4 严格模式
 
-*   概述
-*   进入标志
-*   如何调用
-*   语法和行为改变
-    *   全局变量显式声明
-    *   静态绑定
-    *   增强的安全措施
-    *   禁止删除变量
-    *   显式报错
-    *   重名错误
-    *   禁止八进制表示法
-    *   arguments 对象的限制
-    *   函数必须声明在顶层
-    *   保留字
-    *   参考链接
+# 9.4 严格模式
 
 ## 概述
 
@@ -47,9 +32,9 @@
 
 （1） 针对整个脚本文件
 
-将"use strict"放在脚本文件的第一行，则整个脚本都将以“严格模式”运行。如果这行语句不在第一行，则无效，整个脚本以“正常模式”运行。如果不同模式的代码文件合并成一个文件，这一点需要特别注意。
+将"`use strict`"放在脚本文件的第一行，则整个脚本都将以“严格模式”运行。如果这行语句不在第一行，则无效，整个脚本以“正常模式”运行。如果不同模式的代码文件合并成一个文件，这一点需要特别注意。
 
-(严格地说，只要前面不是产生实际运行结果的语句，"use strict"可以不在第一行，比如直接跟在一个空的分号后面。)
+(严格地说，只要前面不是产生实际运行结果的语句，"`use strict`"可以不在第一行，比如直接跟在一个空的分号后面。)
 
 ```js
 <script>
@@ -71,7 +56,7 @@ console.log("这是正常模式。");
 
 （2）针对单个函数
 
-将“use strict”放在函数体的第一行，则整个函数以“严格模式”运行。
+将“`use strict`”放在函数体的第一行，则整个函数以“严格模式”运行。
 
 ```js
 function strict(){
@@ -411,7 +396,11 @@ function package(protected) { // 语法错误
 ## 参考链接
 
 *   MDN, [Strict mode](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Functions_and_function_scope/Strict_mode)
+
 *   Dr. Axel Rauschmayer, [JavaScript: Why the hatred for strict mode?](http://www.2ality.com/2011/10/strict-mode-hatred.html)
+
 *   Dr. Axel Rauschmayer，[JavaScript’s strict mode: a summary](http://www.2ality.com/2011/01/javascripts-strict-mode-summary.html)
+
 *   Douglas Crockford, [Strict Mode Is Coming To Town](http://www.yuiblog.com/blog/2010/12/14/strict-mode-is-coming-to-town/)
+
 *   [JavaScript Strict Mode Support](http://java-script.limewebs.com/strictMode/test_hosted.html)
